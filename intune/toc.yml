@@ -400,6 +400,8 @@
       href: kiosk-settings.md
     - name: Configure Android kiosk settings
       href: android-kiosk-settings.md
+    - name: Configure Android enterprise settings
+      href: android-enterprise-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
