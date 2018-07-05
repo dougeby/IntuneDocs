@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/04/2018
+ms.date: 06/29/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+## Week of June 25, 2018
+
+### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
+
+You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 ## Week of June 18, 2018
 
@@ -379,8 +384,8 @@ You'll also see:
 
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
-#### Protect on-premise Exchange data using Intune APP and CA <!-- 1056954 -->
-You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premise Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
+#### Protect on-premises Exchange data using Intune APP and CA <!-- 1056954 -->
+You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Mobile apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Week of March 26, 2018
 
@@ -828,7 +833,7 @@ IT admins can also customize which notifications users receive. For example, you
 
 #### Multiple connector support for SCEP and PFX certificate handling <!-- 1361755 -->
 
-Customers who use the on-premise NDES connector to deliver certificates to devices can now configure multiple connectors in a single tenant.
+Customers who use the on-premises NDES connector to deliver certificates to devices can now configure multiple connectors in a single tenant.
 
 This new capability supports the following scenario:
 
