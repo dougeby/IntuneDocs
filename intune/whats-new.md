@@ -64,7 +64,7 @@ Administrators can now configure a selective wipe of the organization's data as 
 #### Revoking an iOS app purchased through VPP <!-- 1777384 -->
 As the Microsoft Intune admin, you can revoke all the licenses for a selected iOS app purchased through the volume-purchase program (VPP). You can notify users when a user licensed app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app, you must change the assignment action to **Uninstall**. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload of Intune. For more information related to iOS VPP apps, see [How to manage iOS apps purchased through a volume-purchase program with Microsoft Intune](vpp-apps-ios.md).
 
-#### Updates to out-of-compliance messages in Company Portal app <-- 1832222 -->
+#### Updates to out-of-compliance messages in Company Portal app <!-- 1832222 -->
 We revised the messages that device users see when a device is out-of-compliance. Messages  retain their original meanings but have been updated with friendlier language and less technical jargon. We also refreeshed links to documentation and remediation steps to keep them up-to-date.
 The following before and after text is one example of the improvements in messaging you'll see:
 - **Before**: *This device hasn’t contacted the Intune service in the specified time period required by your IT admin. To resolve this issue, please open the company portal app on your device and click on the Check Compliance button.*
