@@ -118,6 +118,10 @@ The following tables describe what data is removed, and the effect of the **Remo
 
 Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
 
+### Android enterprise kiosk devices
+
+You can only factory reset Android kiosk devices. You can't remove company data from Android kiosk devices.
+
 
 ### macOS
 
@@ -154,7 +158,7 @@ If the device is on and connected, the **Remove company data** action propagates
 
 If you want to remove devices from the Intune portal, you can delete them from the specific device pane. The next time the device checks in, any company data on it will be removed.
 
-1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+1. Sign in to [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
 
 ### Automatically delete devices with cleanup rules

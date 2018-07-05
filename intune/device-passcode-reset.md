@@ -36,7 +36,7 @@ To create a new passcode for a device, use the **Remove passcode** action.
 
 - Android devices enrolled with a Work profile, version 8.0 and later
 - Android devices on version 6.0 or earlier
-- Android enterprise
+- Android enterprise kiosk devices
 - iOS 
  	 
 ## Unsupported platforms
