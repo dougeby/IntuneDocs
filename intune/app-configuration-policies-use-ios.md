@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -162,6 +162,9 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{username\}\}—for example, **John Doe**
 - \{\{serialnumber\}\}—for example, **F4KN99ZUG5V2** (for iOS devices)
 - \{\{serialnumberlast4digits\}\}—for example, **G5V2** (for iOS devices)
+
+## Monitor iOS  app configuration status per device 
+Once a configuration policy has been assigned, you can monitor iOS app configuration status for each managed device. From **Microsoft Intune** in the Azure portal, select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a blade for the device. On the device blade, select **App configuration**.  
 
 ## Next steps
 

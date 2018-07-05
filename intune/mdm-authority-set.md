@@ -58,10 +58,10 @@ Possible configurations are:
    A message indicates that you have successfully set your MDM authority to Intune.
 
 ### Workflow of Intune Administration UI
-When Android or Apple device management is enabled, Intune sends device and user information to integrate with these third party services to manage their respective devices.
+When Android or Apple device management is enabled, Intune sends device and user information to integrate with these third-party services to manage their respective devices.
 
 Scenarios that add a consent to share data are included when:
-- You enable Android for Work.
+- You enable Android work profiles.
 - You enable and upload Apple MDM push certificates.
 - You Enable any of the Apple services, such as Device Enrollment Program, School Manager, or Volume Purchasing Program.
 

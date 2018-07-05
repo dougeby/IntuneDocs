@@ -3,7 +3,7 @@
 
 title: Configure Microsoft Intune Wi-Fi settings for devices running Android 
 titleSuffix:
-description: Learn Intune  Wi-Fi configuration settings on devices running Android and Android for Work.
+description: Learn Intune  Wi-Fi configuration settings on devices running Android.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -25,15 +25,15 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Wi-Fi settings in Microsoft Intune for devices running Android and Android for Work  
+# Configure Wi-Fi settings in Microsoft Intune for devices running Android and Android work profiles  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running Android and Android for Work.
+This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running Android and Android work profiles.
 
 ## Wi-Fi settings for basic and enterprise profiles
 
-The following Wi-Fi settings are available for both Android and Android for Work devices:
+The following Wi-Fi settings are available for both Android and Android work profile devices:
 
 - **Network name** - Enter a name for this Wi-Fi connection. This is the name that users see when they browse the list of available connections on their device.
 - **SSID** - Short for service set identifier. This is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.

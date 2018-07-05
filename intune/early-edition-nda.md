@@ -97,6 +97,7 @@ Applies to Windows 10 and later, Windows Holographic for Business
 ### APIs to use 3rd party certification authorities <!-- 2184013 -->
 There will be a Java API that enables third-party certificate authorities to integrate with Intune and SCEP. Then, users can add the SCEP certificate to a profile, and apply it to devices using MDM.
 
+<<<<<<< HEAD:intune/early-edition-nda.md
 Currently, Intune supports [SCEP requests using Active Directory Certificate Services](certificates-scep-configure.md).
 
 ### Check for SCCM compliance <!-- 2192052 -->
@@ -135,17 +136,11 @@ In **Device Configuration**, a list of the existing profiles is shown. With this
 
 More on [device configuration profiles](device-profiles.md).
 
+=======
+>>>>>>> 68ddc8bc0617047fea66a0a9ad7896286f6492ce:intune/early-edition.md
 ### Corporate-owned, single use (COSU) support for Android devices <!-- 1630973 -->
 
 Intune will support highly managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device.
-
-### macOS support for Apple Device Enrollment Program <!-- 747651 -->
-
-Intune will support enrolling macOS devices into the Apple Device Enrollment Program (DEP). To do so:
-
-1. At deploy.apple.com, assign macOS serial numbers to an MDM server.
-2. Import the serial numbers into Intune.
-3. Create an enrollment program profile specific to macOS devices.
 
 ### Google name changes for Android for Work and Play for Work <!--842873 -->
 Intune will update "Android for Work" terminology to reflect Google branding changes.  The terms "Android for Work" and "Play for Work" will no longer be used. Different terminology will be used depending on the context:
