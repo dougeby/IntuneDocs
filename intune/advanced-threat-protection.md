@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 
 ms.topic: article
 ms.prod:
@@ -58,19 +58,19 @@ To use ATP with Intune, be sure you have the following configured, and ready to 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device compliance** > **Windows Defender ATP** > **Open the Windows Defender Advanced Threat Protection admin console**.
+3. Select **Device compliance** > **Windows Defender ATP** > **Open the Windows Defender Security Center**.
 
-    ![Alt text](./media/atp-device-compliance-open-windows-defender.png)
+    ![Select to open the Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
 
 4. In the **Windows Defender Security Center**:
     1. Select **Settings** > **Advanced features**.
     2. For **Microsoft Intune connection**, choose **On**:
 
-        ![Alt text](./media/atp-security-center-intune-toggle.png)
+        ![Enable the connection to Intune](./media/atp-security-center-intune-toggle.png)
 
     3. Select **Save preferences**.
 
-5. Go back to Intune, **Device compliance** > **Windows Defender ATP**. Set **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** to **On**.
+5. Go back to Intune, **Device compliance** > **Windows Defender ATP**. Set **Connect Windows devices version 10.0.15063 and above to Windows Defender ATP** to **On**.
 6. Select **Save**.
 
 You typically do this task once. So if ATP is already enabled in your Intune resource, then you don't need to do it again.
@@ -122,9 +122,9 @@ The compliance policy determines an acceptable level of risk on a device.
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Device Health** settings, set **Require the device to be at or under the Device Threat Level** to your preferred level:
+5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level:
 
-  - **Secured**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
+  - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.

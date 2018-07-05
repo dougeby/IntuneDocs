@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 Microsoft Intune supports devices running Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
-To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile. This upgrade profile upgrades the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can purchase the Commercial Suite to obtain the required license for the upgrade. For more information, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md).
+To manage devices that run Windows Holographic with Microsoft Intune, you must create an Edition Upgrade profile. This upgrade profile upgrades the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can buy the Commercial Suite to get the required license for the upgrade. For more information, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md).
 
 To help manage and customize your devices running Windows Holographic for Business, you can use the tasks in this article. For example, you can manage software updates, configure VPN settings, and more.
 
@@ -35,7 +35,7 @@ To help manage and customize your devices running Windows Holographic for Busine
 
 Azure Active Directory (AD) is a great resource to help manage and control your devices running Windows Holographic for Business. Using Intune and Azure AD, you can: 
 
-- **[Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: In Azure Active Directory (AD), you can add your work-owned Windows 10 devices, including devices running Windows Holographic for Business. This feature allows Azure AD to control the device. It helps ensure that your users are accessing your company resources from devices that meet your standards for security and compliance.
+- **[Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: In Azure Active Directory (AD), you can add your work-owned Windows 10 devices, including devices running Windows Holographic for Business. This feature allows Azure AD to control the device. It helps confirm that users are accessing the company resources from devices that meet your security and compliance standards.
 
   [Introduction to device management in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more details.
 
@@ -44,12 +44,20 @@ Azure Active Directory (AD) is a great resource to help manage and control your 
 ## Company Portal
 **[Configure the Company Portal app](company-portal-app.md)**
 
-Intune includes the Company Portal, which is where users access company data, enroll devices, install apps, contact your IT department, and more. You can customize the Company Portal app for your devices running Windows Holographic for Business.
+Intune provides the Company Portal app for users to access company data, enroll devices, install apps, contact their IT department, and more. You can customize the Company Portal app for your devices running Windows Holographic for Business.
+
+Using the Company Portal app, you can also run the following actions:
+
+- [Remove a device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows) using the Settings app or the Company Portal app
+- [Rename a device](/intune-user-help/rename-your-device-cpapp)
+- [Install apps](/intune-user-help/install-apps-cpapp-windows) on a device
+- [Sync devices manually](/intune-user-help/sync-your-device-manually-windows) from the Settings app or the Company Portal app
+
 
 ## Compliance policy
 **[Create a device compliance policy](compliance-policy-create-windows.md)**
 
-Compliance policies are rules and settings that devices must meet to be compliant. You can use these policies with conditional access to block access to company resources for devices that are not-compliant. In Intune, you can create compliance policies to allow or block access for devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
+Compliance policies are rules and settings that devices must meet to be compliant. Use these policies with conditional access to block access to company resources for devices that are not-compliant. In Intune, create compliance policies to allow or block access for devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
 
 See also **[Get started with compliance policies](device-compliance-get-started.md)**.
 
@@ -62,7 +70,7 @@ Using Intune, you can add apps to your devices running Windows Holographic for B
 - [Add apps you create](lob-apps-windows.md)
 - [Assign apps to groups](apps-deploy.md)
 
-Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal or deploy them from the Microsoft Store for Business. For more information about related areas, see the following:
+Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal, or deploy them from the Microsoft Store for Business. For more information about related areas, see the following articles:
 - To deploy Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md).
 - To deploy apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). 
 - To learn about app management with Microsoft Intune, see [What is app management in Microsoft Intune](app-management.md).
@@ -78,7 +86,7 @@ When using devices running Windows Holographic for Business, the following actio
 
 - **[Factory reset](devices-wipe.md#factory-reset)**: The **Factory reset** action removes the device from Intune, and restores the device back to its factory default settings. Use this action before giving the device to a new user, or when the device is lost or stolen.
 
-- **[Remove company data](devices-wipe.md#remove-company-data)**: The **Remove company data** action removes the device from Intune, and removes managed app data, settings, and email profiles that are assigned by Intune. The user's personal data stays on the device.
+- **[Remove company data](devices-wipe.md#remove-company-data)**: The **Remove company data** action removes the device from Intune. It also removes managed app data, settings, and email profiles assigned by Intune. The user's personal data stays on the device.
 
 - **[Sync devices to get the latest policies and actions](device-sync.md)**: The **Sync** action forces the device to immediately check in with Intune. When a device checks in, the device immediately receives any pending actions or policies that are assigned. This feature helps you validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
@@ -100,6 +108,10 @@ In your profiles, you can use OMA-URI to customize some settings, create device 
 
 To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
 
+#### [Configure kiosk mode](kiosk-settings.md#windows-holographic-for-business)
+
+Using the shared or guest PC features available in Intune, you can configure Windows Holographic for Business devices to run as a kiosk. These devices can run one app (single-app kiosk mode), or run multiple apps (multi-app kiosk mode).
+
 #### [Device restrictions](device-restrictions-windows-holographic.md)
 
 Device restrictions let you control different settings and features on your devices, including requiring a password, installing apps from [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), enabling Bluetooth, and more. These restrictions are created in an Intune profile. This profile can be applied to multiple devices running Windows Holographic for Business.
@@ -120,7 +132,7 @@ Intune includes a feature called update rings for Windows 10 devices. These upda
 ## Terms and conditions
 **[Set your company's terms and conditions for user access](terms-and-conditions-create.md)**
 
-Before users can enroll devices and access your company apps, including email, you can require that users accept your company's terms and conditions. In Intune, you can define how the terms and conditions are shown in the Company Portal, and also assign these terms and conditions to devices running Windows Holographic for Business.
+Before users enroll devices and access your company apps, including email, you can require that users accept your company's terms and conditions. In Intune, define how the terms and conditions are shown in the Company Portal, and also assign these terms and conditions to devices running Windows Holographic for Business.
 
 ## Windows Hello for Business
 **[Use Windows Hello for Business](windows-hello.md)**

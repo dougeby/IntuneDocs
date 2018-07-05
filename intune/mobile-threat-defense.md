@@ -46,10 +46,12 @@ For example, if a connected Mobile Threat Defense app reports to the Mobile Thre
 
 ## What data does Intune collect for Mobile Threat Defense?
 
-Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Thread Defense (MTD) providers to fetch, such as Lookout for Work. You can collect an app inventory from the users of iOS 11+ devices.
+If enabled, Intune collects app inventory information from both personal and corporate-owned devices and makes it available for Mobile Threat Defense (MTD) providers to fetch, such as Lookout for Work. You can collect an app inventory from the users of iOS devices.
+
+This service is opt-in; no app inventory information is shared by default. An Intune administrator must enable App Sync for iOS devices in the service settings before any app inventory information is shared.
 
 **App inventory**  
-Inventories from both corporate-owned iOS 11+ and personally owned devices are sent to your MTD service provider. Data in the app inventory includes:
+If you enable App Sync for iOS devices, inventories from both corporate and personally owned iOS devices are sent to your MTD service provider. Data in the app inventory includes:
 
  - App ID
  - App Version
@@ -57,8 +59,8 @@ Inventories from both corporate-owned iOS 11+ and personally owned devices are s
  - App Name
  - App Bundle Size
  - App Dynamic Size
- - App is validated or not
- - App is managed or not
+ - Whether the app is validated or not
+ - Whether the app is managed or not
 
 ## Sample scenarios
 
@@ -81,3 +83,4 @@ Learn how to protect access to company resource based on device, network, and ap
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

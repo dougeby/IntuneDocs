@@ -39,9 +39,7 @@
       "contributors_to_exclude": [
         "herohua"
       ],
-      "searchScope": [
-        "Intune"
-      ],
+      "searchScope": ["Intune"],
       "_op_documentIdPathDepotMapping": {
         "EndUser/": {
           "depot_name": "Azure.EndUser",

@@ -49,6 +49,8 @@ To enable device management, your users must enroll their devices by downloading
 
 ## Enable enrollment of Android for Work devices
 
+Android for Work is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android for Work provides additional management capabilities and privacy when people use their Android devices for work. Intune helps you deploy apps and company resources to Android for Work devices to ensure work and personal information is separate. When successfully deployed, apps and the data they access remain exclusively within the Android for Work environment on the device. For specific details about Android for Work, see [Android for Work requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+
 To enable management of the work profile on devices that [support Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012), you must add an Android for Work binding to Intune. If you want to enroll devices in Android for Work, but those devices were already enrolled as regular Android devices, you must unenroll the devices and then re-enroll them.
 
 If you're enrolling Android for Work devices by using a [Device Enrollment Manager](device-enrollment-manager-enroll.md) account, there is a limit of 10 devices that can be enrolled per account.
@@ -56,6 +58,8 @@ If you're enrolling Android for Work devices by using a [Device Enrollment Manag
 For more information, see [Data Intune sends to Google](data-intune-sends-to-google.md).
 
 ## Add Android for Work binding for Intune
+
+You must establish a binding between your Intune tenant and Google’s Play for Work service, which is an integral part of the Android for Work app distribution and management process. 
 
 > [!NOTE]
 > Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings in order to successfully complete.  Make sure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.
@@ -74,6 +78,9 @@ If you haven’t already, prepare for mobile device management by  [setting the 
   
    d. **Sign in to Google**<br>
    On Google's sign-in page, enter the Google account that will be associated with all Android for Work management tasks for this tenant. This is the Google account that your company's IT admins share to manage and publish apps in the Play for Work console. You can use an existing Google account or create a new one.  The account you choose must not be associated with a G-Suite domain.
+    
+    > [!Note]
+    > If you are using the Microsoft Edge browser, click **Sign-In** in the upper right corner to sign-in to your Google account.
 
    e. **Provide organization details**<br>
    Provide your company's name for **Organization name**. For **Enterprise mobility management (EMM) provider**, **Microsoft Intune** should be displayed. Agree to the Android for Work agreement, and then choose **Confirm**. Your request will be processed.

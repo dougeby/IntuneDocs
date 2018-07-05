@@ -43,8 +43,6 @@ Users can do the following tasks from the Company Portal website:
 
 -   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--	[Sync your device manually to get apps to install more quickly](sync-your-device-manually-cpwebsite.md)
-
 -   Find the company support's contact information, if you configured it
 
 -   See details about their device, including whether it is compliant with your company's or school's policies
