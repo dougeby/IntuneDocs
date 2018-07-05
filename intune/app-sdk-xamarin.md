@@ -40,7 +40,7 @@ The Microsoft Intune App SDK Xamarin Bindings let you incorporate Intune app pro
 ## What's supported?
 
 ### Developer machines
-* Windows
+* Windows (Visual Studio version 15.7+)
 * macOS
 
 ### Mobile app platforms
