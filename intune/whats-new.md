@@ -434,8 +434,7 @@ When you create a new VPN profile for iOS, there are now two options: **Cisco An
 Versions 1.3 and 1.4 of the macOS company portal did not successfully register Jamf devices with Intune. Version 1.4.2 of the macOS portal fixes this issue.
 
 
-## Week of April 9, 2018
-
+## Week of April 9, 2018  
 #### Updated help experience in Company Portal app for Android <!-- 1631531 -->
 
 We've updated the help experience in the Company Portal app for Android to align with best practices for the Android platform. Now when users encounter a problem in the app, they can tap **Menu** > **Help** and:
@@ -1027,6 +1026,25 @@ You can specify denied apps in Intune. If an app is denied, it is blocked from a
 
 ## Notices
 
+### Plan for Change: Intune moving to support iOS 10 and later in September <!-- 2454656 -->
+In September, Apple is expected to release iOS 12. Shortly after the release, we will move Intune enrollment, the Company Portal, and the managed browser to support iOS 10 and later.  
+
+#### How does this affect me?  
+Office 365 mobile apps are supported on iOS 10 and later, so you may have already upgraded your OS or devices. If so, this move will not affect you.  
+
+However, if you have any of the devices listed below, or want to enroll any of the devices listed below, be aware that they only support iOS 9 and earlier.  To continue to access the Intune Company Portal, you must upgrade these devices, by September, to devices that support iOS 10 or later:  
+
+* iPhone 4S  
+* iPod Touch  
+* iPad 2  
+* iPad (3rd Generation)  
+* iPad Mini (1st Generation)  
+
+Starting in July, MDM-enrolled devices with both iOS 9 and the Company Portal will receive a prompt to upgrade their OS or device. If you use app protection policies, you can also set the “Require minimum iOS operating system (Warning only)” access setting.  
+
+#### What do I need to do to prepare for this change?   
+Check for devices or users that are affected in your organization. In Intune in the Azure portal, go to Devices > All devices, and filter by OS.  Click Columns to surface details such as OS version. Request that your users upgrade their devices to a supported OS version before September.  
+
 ### Plan for Change: Intune moving to TLS 1.2
 Starting on October 31, 2018, Intune will support Transport Layer Security (TLS) protocol version 1.2 to provide best-in-class encryption, to ensure our service is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. Office communicated this change in MC128929.
 
@@ -1080,9 +1098,9 @@ You'll be able to enable security settings on Windows 10 devices using the new L
 We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
--   UI improvements throughout the website
--   Ability to share direct links to apps
-- Improved performance for large app catalogs
+* UI improvements throughout the website
+* Ability to share direct links to apps
+* Improved performance for large app catalogs
 
 You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
 
