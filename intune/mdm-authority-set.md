@@ -45,9 +45,11 @@ Possible configurations are:
 
 ## Set MDM authority to Intune
 
+If you haven't yet set the MDM authority, follow the steps below. To change from one MDM authority to another, see the [change MDM authority](#prepare-to-change-the-mdm-authority-to-configuration-manager) section below.
+
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select the orange banner to open the **Mobile Device Management Authority** setting.
+3. Select the orange banner to open the **Mobile Device Management Authority** setting. The orange banner is only displayed if you haven't yet set the MDM authority.
 4. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
    - **Intune MDM Authority**
    - **Configuration Manager MDM Authority**
