@@ -50,7 +50,7 @@ Before you can configure conditional access, verify the following:
 
 - The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it increases the load on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 
-- **Exchange ActiveSync** must be configured with certificate based authentication, or user credential entry.
+- **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
 - When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
 	- Either **enrolled** with Intune or is a domain joined PC.
@@ -60,7 +60,7 @@ Before you can configure conditional access, verify the following:
 
 - **Compliant** with device compliance policies deployed to that device.
 
-- If the device does not meet conditional access settings, the user is presented with one of the following messages when they log in:
+- If the device does not meet conditional access settings, the user is presented with one of the following messages when they sign in:
 	- If the device is not enrolled with Intune, or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
 	- If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
@@ -69,7 +69,7 @@ Before you can configure conditional access, verify the following:
 - Windows Phone 8.1 and later
 - Native email app on iOS.
 - EAS mail clients such as Gmail on Android 4 or later.
-- EAS mail clients **Android for Work devices:** Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android for Work devices. For conditional access to work with Android for Work, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as a required install.
+- EAS mail clients **Android work profile devices:** Only **Gmail** and **Nine Work** apps in the **work profile** are supported on Android work profile devices. For conditional access to work with Android work profiles, you must deploy an email profile for the Gmail or Nine Work app, and also deploy those apps as a required install.
 
 > [!NOTE]
 > Microsoft Outlook app for Android and iOS is not supported. 

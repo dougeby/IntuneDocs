@@ -45,9 +45,11 @@ Possible configurations are:
 
 ## Set MDM authority to Intune
 
+If you haven't yet set the MDM authority, follow the steps below. To change from one MDM authority to another, see the [change MDM authority](#prepare-to-change-the-mdm-authority-to-configuration-manager) section below.
+
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select the orange banner to open the **Mobile Device Management Authority** setting.
+3. Select the orange banner to open the **Mobile Device Management Authority** setting. The orange banner is only displayed if you haven't yet set the MDM authority.
 4. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
    - **Intune MDM Authority**
    - **Configuration Manager MDM Authority**
@@ -58,10 +60,10 @@ Possible configurations are:
    A message indicates that you have successfully set your MDM authority to Intune.
 
 ### Workflow of Intune Administration UI
-When Android or Apple device management is enabled, Intune sends device and user information to integrate with these third party services to manage their respective devices.
+When Android or Apple device management is enabled, Intune sends device and user information to integrate with these third-party services to manage their respective devices.
 
 Scenarios that add a consent to share data are included when:
-- You enable Android for Work.
+- You enable Android work profiles.
 - You enable and upload Apple MDM push certificates.
 - You Enable any of the Apple services, such as Device Enrollment Program, School Manager, or Volume Purchasing Program.
 
