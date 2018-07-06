@@ -32,7 +32,7 @@ Virtual private networks (VPNs) give your users secure remote access to your com
 
 For example, assume that you want to provision all iOS devices with the settings required to connect to a file share on the corporate network. You create a VPN profile that contains the settings to connect to the corporate network. Then you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks, and can connect with minimal effort.
 
-You can use Intune custom configuration polices to create VPN profiles for the following platforms:
+You can use Intune custom configuration policies to create VPN profiles for the following platforms:
 
 * Android 4 and later
 * Enrolled devices that run Windows 8.1 and later
@@ -45,7 +45,7 @@ You can use Intune custom configuration polices to create VPN profiles for the f
 
 You can create VPN profiles using the following connection types:
 
-|Connection type|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Connection type|Android<br>Android work profiles|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatic|No|No|No|No|No|Yes|
 |Check Point Capsule VPN|Yes|Yes|Yes|Yes|Yes|Yes|
@@ -73,21 +73,21 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 3. Select **Device configuration** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the VPN profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for VPN device settings:
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 and later**
-  - **Windows 10 and later**
+   - **Android**
+   - **Android enterprise**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 and later**
+   - **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **VPN**.
 7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
-  - [Android and Android for Work settings](vpn-settings-android.md)
-  - [iOS settings](vpn-settings-ios.md)
-  - [macOS settings](vpn-settings-macos.md)
-  - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
-  - [Windows 8.1 settings](vpn-settings-windows-8-1.md)
-  - [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
+   - [Android and Android work profile settings](vpn-settings-android.md)
+   - [iOS settings](vpn-settings-ios.md)
+   - [macOS settings](vpn-settings-macos.md)
+   - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
+   - [Windows 8.1 settings](vpn-settings-windows-8-1.md)
+   - [Windows 10 settings](vpn-settings-windows-10.md) (including Windows Holographic for Business)
 8. When you're done, **Create** your profile
 
 The profile is created and appears on the profiles list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).

@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -163,3 +163,7 @@ This feature supports:
 - iOS
 - macOS
 - Windows Phone 8.1
+
+## Manage and troubleshoot
+
+[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A list to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
