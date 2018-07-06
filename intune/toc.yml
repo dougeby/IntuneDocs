@@ -332,6 +332,8 @@
             href: app-protection-policy-settings-android.md
           - name: iOS settings
             href: app-protection-policy-settings-ios.md
+          - name: Access Actions
+            href: app-protection-policies-access-actions.md
           - name: Data transfer exceptions
             href: app-protection-policies-exception.md
         - name: Validate app protection policies
@@ -398,6 +400,8 @@
       href: kiosk-settings.md
     - name: Configure Android kiosk settings
       href: android-kiosk-settings.md
+    - name: Android enterprise kiosk settings
+      href: android-enterprise-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
