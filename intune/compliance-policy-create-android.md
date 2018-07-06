@@ -82,9 +82,9 @@ The following table describes how noncompliant settings are managed when a compl
 - **Threat scan on apps**: Require that the Android **Verify Apps** feature is enabled.
 
   > [!NOTE]
-  > On the legacy Android platform, this feature is a compliance setting. Intune can only check whether this setting is enabled at the device level. On devices with work profiles (Android for Work), this setting can be found as a configuration policy setting. This allows administrators to enable the setting for a device.
+  > On the legacy Android platform, this feature is a compliance setting. Intune can only check whether this setting is enabled at the device level. On devices with Android work profiles, this setting can be found as a configuration policy setting. This allows administrators to enable the setting for a device.
 
-  If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android for Work device restriction settings in Intune](device-restrictions-android-for-work.md).
+  If your enterprise uses Android work profiles, you can enable **Threat scan on apps** for your enrolled devices. Establish a device profile and require the system security setting. For more information, see [Android work profile device restriction settings in Intune](device-restrictions-android-for-work.md).
 
 - **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
   - **Not configured**

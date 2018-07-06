@@ -37,12 +37,13 @@ The **Restart** device action causes the device you choose to be restarted. The 
 
 - Windows - Supported on Windows 8.1 and later
 - Windows Phone - Supported on Windows Phone 8.1 and later
+- Android kiosk devices - Supported
 - iOS - Supported
 
     > [!Note]  
     > This command requires a supervised device and the **Device Lock** access right. The device restarts immediately. Passcode-locked iOS devices don't rejoin a Wi-Fi network after restart. After restart, the device might not be able to communicate with the server.
 - macOS - Not supported
-- Android - Not supported
+- Android and Android work profile devices - Not supported
 
 ## Restart a device
 
