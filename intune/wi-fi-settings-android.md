@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Wi-Fi settings in Microsoft Intune for devices running Android and Android work profiles  
+# Configure Wi-Fi settings in Microsoft Intune for devices running Android, Android work profiles, and Android kiosk devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -40,13 +40,13 @@ The following Wi-Fi settings are available for both Android and Android work pro
 - **Connect automatically** - Makes the device connect whenever it is in the range of this network.
 - **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
 
-## Wi-Fi settings for enterprise kiosk profiles only
+## Wi-Fi settings available for enterprise kiosk profiles
 - **Wi-Fi type**: These Wi-Fi type settings are only available when you choose **Profile type** > **Device Owner Only** > **Wi-Fi**.
     - **Open (no authentication)**
     - **WEP-Pre-shared key**: You must supply the password in the **Pre-shared key** box.
     - **WPA-Pre-shared key**: You must supply the password in the **Pre-shared key** box
 
-## Wi-Fi settings for enterprise work profiles only
+## Wi-Fi settings for Android legacy and enterprise work profiles only
 
 - **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
     - **EAP-TLS**
