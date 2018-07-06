@@ -705,7 +705,11 @@ This method should be called before the user is signed out of the application.  
 
 ### Are there any other ways that an application can be un-enrolled?
 
-> Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and sends a notification via the unenroll delegate method.
+Yes, the IT admin can send a selective wipe command to the application. This will deregister and unenroll the user, and it will wipe the user’s data. The SDK automatically handles this scenario and sends a notification via the unenroll delegate method.
+
+### Is there a sample app that demonstrates how to integrate the SDK?
+
+Yes! We just recently revamped our open-source sample app [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App). Wagr is now enabled for app protection policy using the Intune App SDK.
 
 ## Submit your app to the App Store
 
