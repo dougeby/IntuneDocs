@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,9 @@ Intune lets you add and assign these app types to your corporate devices:
 - **Apps written in-house (line-of-business)** - Where you upload a file that is downloaded to your users' devices.
 - **Apps that are built in** - Where you assign curated managed apps, such as Office 365 apps, to iOS and Android devices.
 - **Apps on the web** - Where Intune creates a shortcut to the web app on the device home screen.
+
+> [!NOTE]
+> New policies applied to a dynamic device group may take up to eight hours to propagate to all devices in the group.
 
 ## How do I assign a public store app?
 

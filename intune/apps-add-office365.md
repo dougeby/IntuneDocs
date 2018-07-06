@@ -52,7 +52,7 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 3. In the **Intune** pane, select **Mobile apps**.
 4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
 5. Select **Add**.
-6. In the **Add apps** pane, in the **App type** list, under **Office 365 Office**, select **Windows 10**.
+6. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
 
 You can now configure the app suite.
 
@@ -76,15 +76,15 @@ In this step, you provide information about the app suite. This information help
 2. In the **App Suite Information** pane, do the following:
 	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 	- **Suite Description**: Enter a description for the app suite. For example, you could list the apps you've selected to include.
-	- **Publisher**: Enter the name of the publisher of the app.
+	- **Publisher**: Microsoft appears as the publisher.
 	- **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app suite when they browse the company portal.
 	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-	- **Developer**: Optionally, enter the name of the app developer.
-	- **Owner**: Optionally, enter a name for the owner of this app, for example, *HR department*.
+	- **Developer**: Microsoft appears as the developer.
+	- **Owner**: Microsoft appears as the owner.
 	- **Notes**: Enter any notes that you want to associate with this app.
-	- **Logo**: Upload an icon that is displayed with the app when users browse the company portal.
+	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
 3. Select **OK**.
 
 ## Configure app settings
