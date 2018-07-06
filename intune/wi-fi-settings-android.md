@@ -46,7 +46,7 @@ The following Wi-Fi settings are available for both Android and Android work pro
     - **WEP-Pre-shared key**: You must supply the password in the **Pre-shared key** box.
     - **WPA-Pre-shared key**: You must supply the password in the **Pre-shared key** box
 
-## Wi-Fi settings for Android legacy and enterprise work profiles only
+## Wi-Fi settings for Android legacy and Android work profiles only
 
 - **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
     - **EAP-TLS**
