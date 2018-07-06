@@ -35,7 +35,7 @@ Use the information in this article to help you add macOS line-of-business apps 
 >[!NOTE]
 >While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
 >
->Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. 
+>Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. Conversion of other formats, such as *.dmg* to *.pkg* is not supported.
 
 Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
 

@@ -60,7 +60,7 @@ Enter your company's support infomation to provide your employee with a contact 
 |**Phone number** | 20 | This contact number is displayed on the **Contact IT** page to enable employees to contact you for support. |
 |**Email address**| 40 | This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format `alias@domainname.com`. |
 |**Website name**| 40 | This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Contact IT** page in the Company Portal. |
-|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format **https://www.contoso.com**. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal. |
+|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format `https://www.contoso.com`. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal. |
 | **Additional information**| 120 | Displayed on the **Contact IT** page. |
 
 
