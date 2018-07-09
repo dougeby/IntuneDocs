@@ -37,7 +37,7 @@ Think about all the different people in your organization. Every one of them tha
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Once you've opened the **Microsoft Intune** pane, select **Users**. On the **All Users** page, select **+ New user**.
 4. Enter details for the user, such as **Name** and **User name**. The domain name portion of the user name must either be the initial default domain name “contoso.onmicrosoft.com” domain name, or a verified, non-federated domain name such as “contoso.com.”
-5. Under **Groups**, choose the test group to add the user to.
+5. Under **Groups**, choose [a group](get-started-groups.md) to add the user to.
 6. Save the automatically generated user password so that you can use it to log in to a test device. You must give this password to users so that they can change it to a normal password that they can remember.
 7. On the **User** pane, select **Create**.
 
