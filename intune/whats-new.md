@@ -48,7 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### App management
 
-### Additional security settings for Windows installer <!-- 2282430 -->
+#### Additional security settings for Windows installer <!-- 2282430 -->
 You can allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You can direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you can enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. The functionality for these options are disabled by default. 
 
 #### Monitor iOS  app configuration status per device <!-- 880037 -->
