@@ -48,7 +48,7 @@ Each of these certificate types has its own prerequisites and infrastructure req
 	- iOS 8.0 and later
 	- macOS 10.11 and later
 	- Android 4.0 and later
-	- Android for Work
+	- Android work profile
 	- Windows 8.1 and later
 	- Windows Phone 8.1 and later
 	- Windows 10 and later
@@ -57,7 +57,7 @@ Each of these certificate types has its own prerequisites and infrastructure req
 
    - iOS 8.0 and later
    - Android 4.0 and later
-   - Android for Work
+   - Android work profile
    - Windows 10 (desktop and mobile) and later
 
    You can only use a **SCEP** certificate profile for devices running the following platforms:
@@ -89,7 +89,7 @@ Export the Trusted Root Certification Authorities (CA) certificate as a public c
 You import this certificate when you set up a trusted certificate profile.
 
 ## Step 3: Create trusted certificate profiles
-Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates is similar for each device platform.
+Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates are similar for each device platform.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
@@ -100,7 +100,7 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Currently, you can choose one of the following platforms for certificate settings:
 
 	- **Android**
-	- **Android for Work**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**

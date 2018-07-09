@@ -35,7 +35,7 @@ This article shows you the Intune settings you can use to configure VPN connecti
 You can configure VPN settings for the following platforms:
 
 - [Android](#android-vpn-settings)
-- [Android for Work](#android-for-work-vpn-settings)
+- [Android work profile devices](#android-for-work-vpn-settings)
 
 Depending on the settings you choose, not all the following values are configurable.
 
@@ -56,7 +56,7 @@ Depending on the settings you choose, not all the following values are configura
 - **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that is used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it prompts the user to trust the VPN server that they are connecting to while showing the fingerprint (The user manually verifies the fingerprint and chooses trust to connect).
 - **Enter key and value pairs for the Citrix VPN attributes** (Citrix only) - Enter key and value pairs, provided by Citrix, to configure the properties of the VPN connection.
 
-## Android for Work VPN settings
+## Android work profile device VPN settings
 
 **Connection name** - Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **IP address or FQDN** - Provide the IP address or fully qualified domain name of the VPN server that devices connect to. Examples: **192.168.1.1**, **vpn.contoso.com**.

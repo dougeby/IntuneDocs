@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Device restrictions for Android for Work in Microsoft Intune - Azure | Microsoft Docs
-description: On devices running Android for Work, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
+title: Device restrictions for Android work profiles in Microsoft Intune - Azure | Microsoft Docs
+description: On Android work profile devices, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Work device restriction settings in Intune
 
-This article lists the Microsoft Intune device restrictions settings that you can configure for devices running Android for Work.
+This article lists the Microsoft Intune device restrictions settings that you can configure for Android work profile devices.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -35,7 +35,7 @@ This article lists the Microsoft Intune device restrictions settings that you ca
 ### General Settings
 
 - **Copy and paste between work and personal profiles**: Controls copy and paste between work and personal apps. Choose **Block** to enabling blocking. Choose **Not configured** to disable blocking.
-- **Data sharing between work and personal profiles**: Control whether apps in the work profile can share with apps in the personal profile. This setting controls sharing actions within applications (for example, the **Share…** option in the Chrome browser app), and does not apply to copy/paste clipboard behavior. Unlike [app protection policy settings](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), device restriction settings are managed from the Intune portal, and use the Android for Work work profile partition to isolate managed apps. Choose from:
+- **Data sharing between work and personal profiles**: Control whether apps in the work profile can share with apps in the personal profile. This setting controls sharing actions within applications (for example, the **Share…** option in the Chrome browser app), and does not apply to copy/paste clipboard behavior. Unlike [app protection policy settings](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), device restriction settings are managed from the Intune portal, and use the Android work profile partition to isolate managed apps. Choose from:
   - **Default sharing restrictions**: The default sharing behavior of the device, which varies depending on the Android version. By default, sharing from the personal profile to the work profile is allowed. Also by default, sharing from the work profile to the personal profile is blocked. This setting prevents sharing of data from the work to the personal profile. Google does not provide a way to block sharing from the personal profile to work profile on devices running versions 6.0 and later.
   - **Apps in work profile can handle sharing request from personal profile**: Enables the built-in Android feature that allows sharing from the personal to work profile. When enabled, a sharing request from an app in the personal profile can share with apps in the work profile. This setting is the default behavior for Android devices running versions earlier than 6.0.
   - **Allow sharing across boundaries**: Enables sharing across the work profile boundary in both directions. When you select this setting, apps in the work profile can share data with unbadged apps in the personal profile. Use this setting carefully, as it allows managed apps in the work profile to share with apps on the unmanaged side of the device.
@@ -53,7 +53,7 @@ This article lists the Microsoft Intune device restrictions settings that you ca
 
    Prevents end users from manually adding or removing accounts in the work profile.
 
-   For example, when you deploy the Gmail app into an Android for Work profile, you can prevent end users from adding or removing accounts in this work profile.
+   For example, when you deploy the Gmail app into an Android work profile, you can prevent end users from adding or removing accounts in this work profile.
 
 - **Contact sharing via Bluetooth**: Enables access to work contacts from another device, such as a car, that is paired using Bluetooth. By default, this setting is not configured, and work profile contacts aren't shown. Select **Enable** to allow this sharing, and show work profile contacts. This setting applies to Android work profile devices on Android OS v6.0 and newer. Enabling this may allow certain Bluetooth devices to cache work contacts upon first connection. Disabling this policy after an initial pairing/sync may not remove work contacts from a Bluetooth device.
 
