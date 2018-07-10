@@ -67,10 +67,10 @@ For iOS, you will be able to configure actions for the following settings using 
 To use the **Device model(s)** setting, input a semi-colon separated list of iOS model identifiers. You can find an iOS model identifier under the Device Type column in [HockeyApp's support documentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Example input: *iPhone5,2; iPhone5,3*
 
-On end user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on what the device reports. You (the IT administrator) are encouraged to ensure that the intended behavior occurs by testing this setting to a variety of device manufacturers and models targeted to a small user group. Set one of the following actions: 
+On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. Matching depends entirely on what the device reports. You (the IT administrator) are encouraged to ensure that the intended behavior occurs by testing this setting to a variety of device manufacturers and models targeted to a small user group. Set one of the following actions: 
 - Allow specified (Block non-specified)
 - Allow specified (Wipe non-specified). 
-Note that the default value is **Not configured**.
+The default value is **Not configured**.
 
 **What happens if the IT admin inputs a different list of iOS model identifier(s) between policies targeted to the same apps for the same Intune user?**
 
@@ -90,10 +90,10 @@ For Android, you will be able to configure actions for the following settings us
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A; Manufacturer B; Google* 
 
-On end user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on what the device reports. You (the IT administrator) are encouraged ensure that the intended behavior occurs by testing this setting to a variety of device manufacturers and models targeted to a small user group. Set one of the following actions: 
+On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. Matching depends entirely on what the device reports. You (the IT administrator) are encouraged ensure that the intended behavior occurs by testing this setting to a variety of device manufacturers and models targeted to a small user group. Set one of the following actions: 
 - Allow specified (Block on non-specified) or 
 - Allow specified (Wipe on non-specified). 
-Note that the default value is **Not configured**.
+The default value is **Not configured**.
 
 **What happens if the IT admin inputs a different list of Android manufacturer(s) between policies targeted to the same apps for the same Intune user?**
 
