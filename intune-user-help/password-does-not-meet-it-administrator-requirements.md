@@ -42,7 +42,7 @@ For the steps needed to set your PIN or password, use the link that matches the 
 > [!NOTE]
 > If you have trouble determining how to make your password meet your company support's requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
-**PIN or password issue descriptions**
+## PIN or password issue descriptions
 
 | **Issue** | **Description** |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -53,3 +53,11 @@ For the steps needed to set your PIN or password, use the link that matches the 
 | **Password is too short.** | Your company support requires you to use a longer password with more characters. |
 | **Your password was used too recently.** | Your company support is preventing you from using previous passwords that you've used in the past. Choose a password that you haven't used before. |
 | **Password isn't complex enough to meet requirements.** | Your company support requires you to use more complex characters in your password. Try using characters like numbers, capital letters, and symbols like $, %, and #. This can also be true of other accounts on your device, so be sure to check any other work accounts to ensure that your password meets the requirements set up by IT for your device. |
+
+## Next steps
+
+For the steps needed to set your PIN or password, use the link that matches the type of device you have:
+
+- [Set your Android device PIN or password](set-your-pin-or-password-android.md)
+- [Set or change your iOS device passcode](set-or-change-your-passcode-ios.md)
+- [Set or change your Windows device password](set-or-change-your-password-windows.md)
