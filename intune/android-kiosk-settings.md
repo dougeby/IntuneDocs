@@ -4,8 +4,8 @@
 title: Kiosk settings for Android in Microsoft Intune - Azure | Microsoft Docs
 description: Configure your Android kios devices as single-app and multi-app kiosks. 
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
