@@ -44,6 +44,9 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1807 start -->
 
+### More sync opportunities in the Company Portal app for Windows <!-- 2683177 -->
+The Company Portal app for Windows is adding a device sync action to the Windows taskbar and Start menu jump lists. Click from either locations to quickly sync your devices and get access to corporate resources.  
+
 ### Reset device passcodes from Company Portal app for Windows 10 <!-- 2101282 --> 
 Your employees will soon be able to reset their device's PIN or passcode directly from the Company Portal app for Windows 10. This functionality will be available on both remote and local Intune-managed devices that support passcode resets. Depending on the type of device, a request made for a remote device will either remove the device's current passcode or create a temporary passcode. Users that request a reset for a local device will be redirected to the device's Settings app.  
 
