@@ -4,8 +4,8 @@
 title: Android kiosk settings in Microsoft Intune - Azure | Microsoft Docs
 description: Configure Android enterprsie kiosk devices. 
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
