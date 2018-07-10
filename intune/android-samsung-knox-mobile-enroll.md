@@ -83,22 +83,6 @@ To assign MDM Profiles to devices, supported Samsung Knox devices must be added 
 ## Assign an MDM profile to devices
 You must assign an MDM profile to added devices in the Knox Portal before they can be enrolled. [Visit the Samsung Knox Enrollment User Guide to learn about device configuration](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## Identify devices as corporate-owned
-You can identify devices enrolled using KME as corporate-owned. This must be done before enrolling the devices. This lets you perform additional management tasks and collect additional information such as the full phone number and an inventory of apps.
-
-Follow these steps to identify devices as corporate-owned:
-
-1. Export the list of devices from Knox Portal as a CSV file.
-
-2. Format the CSV file using IMEI or serial number as indicated [here](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number).
-
-3. In the Azure portal, upload the CSV file to **Device enrollment** > **Corporate device identifiers** > **Add**.
-
-Now identified devices that enroll will be marked as corporate-owned.
-
-> [!NOTE]
->Intune automatically assigns corporate-owned status to devices enrolled with [Device Enrollment Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) account.
-
 ## Configure how end users sign in
 
 For devices enrolled in Intune using KME, you can configure how an end user signs in as follows:
