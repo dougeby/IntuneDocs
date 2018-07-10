@@ -42,7 +42,7 @@ For the steps needed to set your PIN or password, use the link that matches the 
 > [!NOTE]
 > If you have trouble determining how to make your password meet your company support's requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 
-## PIN or password issue descriptions
+**PIN or password issue descriptions**
 
 | **Issue** | **Description** |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
