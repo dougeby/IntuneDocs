@@ -72,9 +72,6 @@ The following before and after text is one example of the improvements in messag
 #### Revoke iOS VPP app license <!-- 1863797 -->
 As the admin, you can reclaim an iOS VPP app license assigned to a user or device. Uninstalling an iOS VPP app will also allow you to reclaim the app license. Before uninstalling the app, the user or the device needs to be removed from the group to which the app is targeted. Removing the user or the device from the group avoids a reinstall of the app. Once these steps are complete, you can choose to assign the app license to another user or device. For more information about iOS VPP app licenses, see [Manage iOS volume-purchased apps in Microsoft Intune](vpp-apps-ios.md).
 
-#### Line-of-business (LOB) app support for macOS <!-- 1895847 -->
-Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
-
 ### Device configuration
 
 #### Select device categories by using the Access Work or School settings <!-- 1058963 eenotready --> 
