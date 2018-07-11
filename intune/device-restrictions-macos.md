@@ -55,5 +55,5 @@ To configure the list, click **Add**, then specify a name of your choice, option
 
 ### Unmarked email domains
 
-In the **Email Domain URL** field, add one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the iOS Mail app.
+In the **Email Domain URL** field, add one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the MacOS Mail app.
 
