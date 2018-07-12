@@ -61,7 +61,7 @@ Learn device restriction profile basics, and then read further articles for each
 	- [Windows 10 settings](device-restrictions-windows-10.md)
 	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
 	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
-	- [Android for Work settings](device-restrictions-android-for-work.md)
+	- [Android work profile settings](device-restrictions-android-for-work.md)
 8. When you're done, go back to the **Create profile** page, and click **Create**.
 
 The profile is created and appears on the profiles list page.

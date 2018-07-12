@@ -43,14 +43,14 @@ The specific enrollment restrictions that you can create include:
 - Maximum number of enrolled devices.
 - Device platforms that can enroll:
   - Android.
-  - Android for Work.
+  - Android work profile.
   - iOS.
   - macOS.
   - Windows.
-- Platform operating system version for iOS, Android, Android for Work, and Windows. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
+- Platform operating system version for iOS, Android, Android work profile, and Windows. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android, Android for Work, macOS only).
+- Restrict personally owned devices (iOS, Android, Android work profile, macOS only).
 
 ## Default restrictions
 
@@ -82,7 +82,7 @@ You can change the settings for a device type restriction by following these ste
 5. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
 6. Select **Save**.
 7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations**. Then select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
-    - Android and Android for Work support major.minor.rev.build.
+    - Android work profile support major.minor.rev.build.
     - iOS supports major.minor.rev.
     - Windows supports major.minor.rev.build for Windows 10 only.
   Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
@@ -92,9 +92,9 @@ You can change the settings for a device type restriction by following these ste
 
 
 >[!NOTE]
->- If you block personally owned Android devices from enrollment, personally owned Android for Work devices can still enroll.
->- By default, your Android for Work devices settings are the same as your settings for your Android devices. After you change your Android for Work settings, that's no longer the case.
->- If you block personal Android for Work enrollment, only corporate Android devices can enroll as Android for Work.
+>- If you block personally owned Android devices from enrollment, personally owned Android work profile devices can still enroll.
+>- By default, your Android work profile devices settings are the same as your settings for your Android devices. After you change your Android work profile settings, that's no longer the case.
+>- If you block personal Android work profile enrollment, only corporate Android devices can enroll as Android work profile.
 
 ## Set device limit restrictions
 

@@ -36,7 +36,7 @@ The built-in mail client is supported for most platforms. Most third-party email
 You can use email profiles to configure the native email client on the following device types:
 
 - Android Samsung Knox Standard 4.0 and later
-- Android for Work
+- Android work profile devices
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 - Windows 10 (desktop) and Windows 10 Mobile
@@ -53,7 +53,7 @@ Use the information in this article to learn the basics about configuring an ema
 4. On the **Create profile** pane, enter a **Name** and **Description** for the email profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply email settings. Currently, you can choose one of the following platforms for email device settings:
 	- **Android** (Samsung Android Knox Standard only)
-	- **Android for Work**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
@@ -61,7 +61,7 @@ Use the information in this article to learn the basics about configuring an ema
 	- **Windows 10 and later**
 6. From the **Profile** type drop-down list, choose **Email**.
 7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
-	- [Android for Work and Samsung Knox Standard settings](email-settings-android.md)
+	- [Android work profile and Samsung Knox Standard settings](email-settings-android.md)
 	- [iOS settings](email-settings-ios.md)
 	- [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
 	- [Windows 10 settings](email-settings-windows-10.md)
@@ -94,8 +94,8 @@ If the user has already configured an email account, the result of the Intune em
 - **Windows:** An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the user.
 - **Android Samsung Knox Standard** An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile.
 Since Android does not use host name to identify the profile, we recommend that you not create multiple email profiles to use on the same email address on different hosts, as these overwrite each other.
-- **Android for Work**
-Intune provides two Android for Work email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and install in the device work profile, so they can't result in duplicate profiles. Both apps support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate email profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
+- **Android work profiles**
+Intune provides two Android work profile email profiles, one for each of the Gmail and Nine Work email apps. These apps are available in the Google Play Store, and install in the device work profile, so they can't result in duplicate profiles. Both apps support connections to Exchange. To enable the email connectivity, deploy one of these email apps to your users' devices, and then create and deploy the appropriate email profile. Email apps such as Nine Work might not be free. Review the app’s licensing details or contact the app company with any questions.
 
 ### Update an email profile
 

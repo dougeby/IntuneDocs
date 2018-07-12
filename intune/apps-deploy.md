@@ -63,7 +63,7 @@ The following table lists the various options for assigning apps to users and de
 7. Select **Add Group** to open the **Add group** pane that is related to the app.
 8. For the specific app, select an **assignment type**:
    - **Available for enrolled devices**: Users install the app from the Company Portal app or website.
-   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. The **Android for Work App** type doesn't support this option. 
+   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. 
    - **Required**: The app is installed on devices in the selected groups.
    - **Uninstall**: The app is uninstalled from devices in the selected groups.
 

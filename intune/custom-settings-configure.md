@@ -44,7 +44,7 @@ Custom settings are configured differently for each platform. For example, to co
 5. From the **Platform** drop-down list, select the device platform to apply the custom settings. You can choose any of the following platforms:
 
     - **Android**
-	- **Android for Work**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
@@ -60,7 +60,7 @@ Custom settings are configured differently for each platform. For example, to co
 	- [Windows Phone 8.1 settings](custom-settings-windows-phone-8-1.md)
 	- [Windows 10 settings](custom-settings-windows-10.md)
 	- [Windows Holographic for Business settings](custom-settings-windows-holographic.md)
-	- [Android for Work settings](custom-settings-android-for-work.md)
+	- [Android work profile settings](custom-settings-android-for-work.md)
 
 8. When you're done, select **Create**.
 
