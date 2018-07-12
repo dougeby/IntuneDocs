@@ -181,3 +181,17 @@ You might need to delete devices from Azure AD due to communication issues or mi
 5. Select the user that's associated with the device that you want to delete.
 6.  Select **Devices**.
 7.  Remove devices as appropriate. For example, you might remove devices that are no longer in use, or devices that have inaccurate definitions.
+
+## Retire an Apple DEP device from Intune
+
+If you want to completely remove an Apple DEP device from management by Intune, follow these steps:
+
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **All devices** > choose the device > **Remove company data**.
+3. Chooose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose the token > **Devices** > choose the check box for the device > **Delete** > **Yes**.
+4. Visit deploy.apple.com and search for the device by its serial number.
+5. In the **Assigned to** menu, choose **Unassigned**.
+6. Choose **Reassign**.
+
+
+
