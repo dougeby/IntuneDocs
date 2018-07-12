@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/11/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,19 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+## Week of July 9, 2018
+
+### App management
+
+### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
+The Intune IT admin can enforce a specified list of Android manufacturers, and/or iOS models through Intune App Protection Policies. The IT admin can provide a semicolon separated list of manufacturers for Android policies and device models for iOS policies. Intune App Protection Policies are for Android and iOS only. There are be two separate actions that can be performed on this specified list:
+- A block from app access on devices that are not specified.
+- Or, a selective wipe of corporate data on devices that are not specified. 
+
+The user will be unable to access the targeted application if the requirements through the policy are not met. Based on settings, the user may either be blocked, or selectively wiped of their corporate data within the app. On iOS devices, this feature requires the participation of applications (such as WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for this feature to be enforced with the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. On Android, this feature requires the latest Company Portal. 
+
+On end-user devices, the Intune client will take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Mobile apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
+
 ## Week of July 2, 2018
 
 ### App management
