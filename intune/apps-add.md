@@ -47,7 +47,7 @@ The following table lists the specific app types and how you can add them in the
 | iOS store apps  | Store app  | Select **iOS** as the **app type**, search for the app, and select the app in Intune. |
 | Windows Phone 8.1 store apps  | Store app  | Select **Windows Phone 8.1** as the **app type**, and enter the Microsoft store URL for the app. |
 | Microsoft store apps  | Store app  | Select **Windows** as the **app type**, and enter the Microsoft store URL for the app. |
-| Android work apps | Store app  | Find and approve the Android work profile app from the Managed Google Play store.  |
+| Android work profile apps | Store app  | Find and approve the Android work profile app from the Managed Google Play store.  |
 | Office 365 apps for Windows 10  | Store app (Office 365) | Select **Windows 10** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app that you want to install.  |
 | Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
 | Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
