@@ -195,6 +195,7 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 5. In the **Assigned to** menu, choose **Unassigned**.
 
 6. Choose **Reassign**.
+
 ![Screenshot for Apple reassign](./media/devices-wipe/apple-reassign.png)
 
 ## Next steps
