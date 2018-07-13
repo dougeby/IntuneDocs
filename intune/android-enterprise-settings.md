@@ -56,7 +56,7 @@ Android kiosk profiles support the following configuration settings. When creati
 
 ## Kiosk settings
 
-- **Kiosk mode**: Defines whether the device can run only a single app or multiple apps. For more information, see [Kiosk settigns for Android devices](android-kiosk-settings.md).
+- **Kiosk mode**: Defines whether the device can run only a single app or multiple apps. For more information, see [Kiosk settings for Android devices](android-kiosk-settings.md).
     - **Single app kiosk**: Users can only access a single app.
     - **Multi-app kiosk**: Users can access a limited set of apps.
 
