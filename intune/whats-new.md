@@ -1104,7 +1104,7 @@ You'll be able to enable security settings on Windows 10 devices using the new L
 
 ### New user experience update for the Company Portal website <!--2000968-->
 
-We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+We’re introducing a new Company Portal website experience starting in August, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 
 * UI improvements throughout the website
