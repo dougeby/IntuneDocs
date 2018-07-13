@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-To create a new passcode for a device, use the **Remove passcode** action. This is a PIN reset for the work profile only. Device PIN resets are not supported for Android work profiles.
+To create a new passcode for a device, use the **Remove passcode** action. This action prompts a PIN reset for the work profile only. Device PIN resets aren't supported for Android work profiles.
 
 ## Work profile PIN reset supported platforms
 
@@ -61,7 +61,7 @@ For Android 8.0 Work profile devices, end users get notified to activate their r
 
 ## Resetting iOS passcodes
 
-Passcodes are removed from iOS devices. If there is a passcode compliance policy set, then the device prompts the user to set a new passcode in Settings. 
+Passcodes are removed from iOS devices. If there's a passcode compliance policy set, then the device prompts the user to set a new passcode in Settings. 
 
 ## Next steps
 
