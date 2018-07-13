@@ -64,5 +64,49 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |macOS|All apps installed on the device|All apps installed on the device|  
 |Android|Only managed apps|All apps installed on the device|  
 
+## Hardware device details
+
+### Windows and iOS device details:
+|Detail|Description|  
+|--------------|----------------------|  
+|Name|The name of the device.|
+|Management name||
+|UDID||
+|Intune Device ID|A GUID that uniquely identifies the device.|
+|Serial number|The device's serial number from the manufacturer.|
+|Shared device|If **Yes**, the device is shared by more than one user.|
+|User approved enrollment|If **Yes**, ????|
+|Operating system|The operating system used on the device.|
+|Operating system version|The version of the operating system on the device.|
+|Operating system language|The language set for the operating system on the device.|
+|Total storage space|The total storage space on the device (in gigabytes).|
+|Free storage space|The unused storage space on the device (in gigabytes).|
+
+
+### Windows, iOS, and macOS device details
+|Detail|Description|  
+|--------------|----------------------|  
+|IMEI|The device's International Mobile Equipment Identity.|
+|MEID|The device's mobile equipment identifier.|
+|Manufacturer|The manufacturer of the device.|
+|Model|The model of the device.|
+|Phone number|The phone number assigned to the device.|
+|Subscribe carrier|???|
+|Cellular technology|???|
+|Wi-Fi MAC|????|
+|ICCID|???|
+|Enrolled date|The date and time that the device was enrolled in Intune.|
+|Last contact|The date and time that the device last connected to Intune.|
+|Activation lock bypass code|The code that can be used to bypass the activation lock.|
+|Azure AD registered|If **Yes**, the device is registered with Azure Directory.|
+|Compliance|???|
+|EAS activated|If **Yes**, ???|
+|EAS activation ID|???|
+|EAS activation time|???|
+|Supervised|If **Yes**, ???|
+|Encrypted|If **Yes, ???|
+
+
+
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.
