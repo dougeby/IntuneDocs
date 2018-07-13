@@ -40,7 +40,7 @@ If you get an error while you’re using the Company Portal app on your Android 
 
 2. Connect your device to your computer with the USB cable. This is generally the same cable used to charge your device in a wall outlet.
 
-3. On the computer, look for a directory that has the name of your device. In that directory, find <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
+3. On the computer, look for a directory that has the name of your device. In that directory, find <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
 4. Select the files, and attach them to an email. Send this email to your company support.
 
