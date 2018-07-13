@@ -62,11 +62,17 @@ These issues may occur on all device platforms.
 
 #### Check number of devices enrolled and allowed
 
-1. See how many devices a user can have enrolled by going to **Device enrollment** > **Enrollment restrictions** > **Device limit restrictions**.
+Check to see that the user is not assigned more than the maximum number of devices by following these steps:
 
-2. See how many dvices the user actually has enrolled by going to **Users** > **All users** > select the user > **Devices**.
+1. In Intune, choose **Device enrollment** > **Enrollment restrictions** > **Device limit restrictions**. Note the value in the **Device limit** column.
 
-3. If the users enrolled devices already equals their device limit restriction, they can't enroll any more until [existing devices are removed](devices-wipe.md).
+2. In Intune, choose **Users** > **All users** > select the user > **Devices**. Note the number of devices.
+
+3. If the user's number of enrolled devices already equals their device limit restriction, they can't enroll any more until:
+    - [Existing devices are removed](devices-wipe.md), or
+    - You increase the device limit by [setting device restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+
+To avoid hitting device caps, be sure to remove stale device records.
 
 > [!NOTE]
 > 
