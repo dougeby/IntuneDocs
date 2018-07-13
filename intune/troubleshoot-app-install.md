@@ -26,13 +26,11 @@ ms.custom: intune-azure
 
 # Troubleshoot app installation issues
 
-Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view user information to address user help requests. The troubleshooting pane within Intune provides failure details.
-
-The Troubleshoot pane shows a variety of information, including details about managed apps on a user's device. Details about the issue and suggested remediation steps can help administrators and help desk operators troubleshoot problems. 
+Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view app information to address user help requests. The troubleshooting pane within Intune provides failure details, including details about managed apps on a user's device. Details about app installation issues can help administrators and help desk operators troubleshoot problems. 
 
 ## To review app troubleshooting details
 
-Intune provides app troubleshooting details based on the apps installed on a specific users device.
+Intune provides app troubleshooting details based on the apps installed on a specific user's device.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
