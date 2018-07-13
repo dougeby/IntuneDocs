@@ -40,7 +40,7 @@ This article shows you how to view all your devices, and their properties in the
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
-   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to also:
+   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to:
      - Remove company data
      - Delete the device
      - Remote lock the device
@@ -70,8 +70,8 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Detail|Description|  
 |--------------|----------------------|  
 |Name|The name of the device.|
-|Management name||
-|UDID||
+|Management name|???|
+|UDID|The device's Unique Device identifier.|
 |Intune Device ID|A GUID that uniquely identifies the device.|
 |Serial number|The device's serial number from the manufacturer.|
 |Shared device|If **Yes**, the device is shared by more than one user.|
