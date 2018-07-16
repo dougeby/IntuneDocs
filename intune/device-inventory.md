@@ -93,7 +93,7 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Phone number|The phone number assigned to the device.|
 |Subscribe carrier|???|
 |Cellular technology|???|
-|Wi-Fi MAC|????|
+|Wi-Fi MAC|???|
 |ICCID|???|
 |Enrolled date|The date and time that the device was enrolled in Intune.|
 |Last contact|The date and time that the device last connected to Intune.|
@@ -104,7 +104,7 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |EAS activation ID|???|
 |EAS activation time|???|
 |Supervised|If **Yes**, ???|
-|Encrypted|If **Yes, ???|
+|Encrypted|If **Yes**, ???|
 
 
 
