@@ -49,6 +49,7 @@ The **Sync** device action forces the selected device to immediately check in wi
 4. In the list of devices you manage, select a device, select **More**, and then select **Sync**.
 5. To confirm, select **Yes**.
 
+To see the status of the sync action, choose **Devices** > **Device actions**.
 
 ## Retryable error codes
 
@@ -71,4 +72,5 @@ When an administrator runs the **Sync** device action, iOS and Android apps that
 
 ## Next steps
 
-- To see the status of the sync action, select **Device actions**. 
+You can [check the details](device-inventory.md) of the device.
+ 
