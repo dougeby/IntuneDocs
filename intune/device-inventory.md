@@ -40,7 +40,7 @@ This article shows you how to view all your devices, and their properties in the
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
-   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to also:
+   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to:
      - Remove company data
      - Delete the device
      - Remote lock the device
@@ -63,6 +63,49 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |iOS|Only managed apps|All apps installed on the device|
 |macOS|All apps installed on the device|All apps installed on the device|  
 |Android|Only managed apps|All apps installed on the device|  
+
+## Hardware device details
+
+### Windows and iOS device details:
+|Detail|Description|  
+|--------------|----------------------|  
+|Name|The name of the device.|
+|Management name|The device name used only in the console. Changing this name won't change hte name on the device.|
+|UDID|The device's Unique Device identifier.|
+|Intune Device ID|A GUID that uniquely identifies the device.|
+|Serial number|The device's serial number from the manufacturer.|
+|Shared device|If **Yes**, the device is shared by more than one user.|
+|User approved enrollment|If **Yes**, then the device has user approved enrollment which lets admins manage certain security settings on the device.|
+|Operating system|The operating system used on the device.|
+|Operating system version|The version of the operating system on the device.|
+|Operating system language|The language set for the operating system on the device.|
+|Total storage space|The total storage space on the device (in gigabytes).|
+|Free storage space|The unused storage space on the device (in gigabytes).|
+
+
+### Windows, iOS, and macOS device details
+|Detail|Description|  
+|--------------|----------------------|  
+|IMEI|The device's International Mobile Equipment Identity.|
+|MEID|The device's mobile equipment identifier.|
+|Manufacturer|The manufacturer of the device.|
+|Model|The model of the device.|
+|Phone number|The phone number assigned to the device.|
+|Subscribe carrier|The device's wireless carrier.|
+|Cellular technology|The radio system used by the device.|
+|Wi-Fi MAC|The device's Media Access Control address.|
+|ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|
+|Enrolled date|The date and time that the device was enrolled in Intune.|
+|Last contact|The date and time that the device last connected to Intune.|
+|Activation lock bypass code|The code that can be used to bypass the activation lock.|
+|Azure AD registered|If **Yes**, the device is registered with Azure Directory.|
+|Compliance|The device's compliance state.|
+|EAS activated|If **Yes**, then the device is synchronized with an Exchange mailbox.|
+|EAS activation ID|The device's Exchange ActiveSync identifier.|
+|Supervised|If **Yes**, administrators have enhanced control over the device.|
+|Encrypted|If **Yes**, the data stored on the device is encrypted.|
+
+
 
 ## Next steps
 See what else you can do to [manage your devices](device-management.md) with Intune.
