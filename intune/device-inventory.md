@@ -70,12 +70,12 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Detail|Description|  
 |--------------|----------------------|  
 |Name|The name of the device.|
-|Management name|???|
+|Management name|The device name used only in the console. Changing this name won't change hte name on the device.|
 |UDID|The device's Unique Device identifier.|
 |Intune Device ID|A GUID that uniquely identifies the device.|
 |Serial number|The device's serial number from the manufacturer.|
 |Shared device|If **Yes**, the device is shared by more than one user.|
-|User approved enrollment|If **Yes**, ????|
+|User approved enrollment|If **Yes**, then the device has user approved enrollment which lets admins manage certain security settings on the device.|
 |Operating system|The operating system used on the device.|
 |Operating system version|The version of the operating system on the device.|
 |Operating system language|The language set for the operating system on the device.|
@@ -91,20 +91,19 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Manufacturer|The manufacturer of the device.|
 |Model|The model of the device.|
 |Phone number|The phone number assigned to the device.|
-|Subscribe carrier|???|
-|Cellular technology|???|
-|Wi-Fi MAC|???|
-|ICCID|???|
+|Subscribe carrier|The device's wireless carrier.|
+|Cellular technology|The radio system used by the device.|
+|Wi-Fi MAC|The device's Media Access Control address.|
+|ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|
 |Enrolled date|The date and time that the device was enrolled in Intune.|
 |Last contact|The date and time that the device last connected to Intune.|
 |Activation lock bypass code|The code that can be used to bypass the activation lock.|
 |Azure AD registered|If **Yes**, the device is registered with Azure Directory.|
-|Compliance|???|
-|EAS activated|If **Yes**, ???|
-|EAS activation ID|???|
-|EAS activation time|???|
-|Supervised|If **Yes**, ???|
-|Encrypted|If **Yes**, ???|
+|Compliance|The device's compliance state.|
+|EAS activated|If **Yes**, then the device is synchronized with an Exchange mailbox.|
+|EAS activation ID|The device's Exchange ActiveSync identifier.|
+|Supervised|If **Yes**, administrators have enhanced control over the device.|
+|Encrypted|If **Yes**, the data stored on the device is encrypted.|
 
 
 
