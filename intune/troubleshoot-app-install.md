@@ -6,7 +6,7 @@ keywords:
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +28,6 @@ ms.custom: intune-azure
 
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view app information to address user help requests. The troubleshooting pane within Intune provides failure details, including details about managed apps on a user's device. Details about the end-to-end lifecycle of an app are provided under each individual device in the **Managed Apps** pane. You can view installation issues, such as when the app was created, modified, targeted, and delivered to a device. 
 
-> [!Note]  
-> The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved). 
-
 ## To review app troubleshooting details
 
 Intune provides app troubleshooting details based on the apps installed on a specific user's device.
@@ -48,6 +45,7 @@ Intune provides app troubleshooting details based on the apps installed on a spe
 	![A selected app that shows installation failure details.](media/troubleshoot-app-install-03.png)
 
     > [!Note]  
+    > The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
     > Currently, Intune does not filter out apps based on the OS platform.
 
 The app installation error details will indicate the problem. You can use these details to determine the best action to take to resolve the problem. For more information about troubleshooting app installation issues, see [Error Codes For Troubleshooting App Installation Issues](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
