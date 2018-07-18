@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 8. Select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. For more information, see [How to create and assign app protection policies](app-protection-policies.md).
 
 >[!NOTE]
-> To use the **Device model(s)** setting, input a semi-colon separated list of model identifiers. 
+> To use the **Device model(s)** setting, input a semi-colon separated list of model identifiers. Avoid spaces in lists of multiple values. These values are not case sensitive. 
 
 ## Policy settings 
 
