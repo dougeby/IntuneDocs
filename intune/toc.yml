@@ -724,8 +724,6 @@
       href: app-wrapper-prepare-android.md
     - name: Intune App SDK for Android
       href: app-sdk-android.md
-    - name: Intune App SDK Cordova plugin
-      href: app-sdk-cordova.md
     - name: Intune App SDK Xamarin Bindings
       href: app-sdk-xamarin.md
   - name: Use the Intune Data Warehouse
