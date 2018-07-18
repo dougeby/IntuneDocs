@@ -3,12 +3,12 @@
 
 title: Configure Microsoft Intune Wi-Fi settings for devices running Android 
 titleSuffix:
-description: Learn Intune  Wi-Fi configuration settings on devices running Android and Android for Work.
+description: Learn Intune  Wi-Fi configuration settings on devices running Android.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 7/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,23 +25,28 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Wi-Fi settings in Microsoft Intune for devices running Android and Android for Work  
+# Configure Wi-Fi settings in Microsoft Intune for devices running Android, Android work profiles, and Android kiosk devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running Android and Android for Work.
+This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running Android and Android work profiles.
 
 ## Wi-Fi settings for basic and enterprise profiles
 
-The following Wi-Fi settings are available for both Android and Android for Work devices:
+The following Wi-Fi settings are available for both Android and Android work profile devices:
 
 - **Network name** - Enter a name for this Wi-Fi connection. This is the name that users see when they browse the list of available connections on their device.
 - **SSID** - Short for service set identifier. This is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.
 - **Connect automatically** - Makes the device connect whenever it is in the range of this network.
 - **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
 
+## Wi-Fi settings available for enterprise kiosk profiles
+- **Wi-Fi type**: These Wi-Fi type settings are only available when you choose **Profile type** > **Device Owner Only** > **Wi-Fi**.
+    - **Open (no authentication)**
+    - **WEP-Pre-shared key**: You must supply the password in the **Pre-shared key** box.
+    - **WPA-Pre-shared key**: You must supply the password in the **Pre-shared key** box
 
-## Wi-Fi settings for enterprise profiles only
+## Wi-Fi settings for Android legacy and Android work profiles only
 
 - **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
     - **EAP-TLS**

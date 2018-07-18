@@ -95,7 +95,7 @@ To use device compliance policies, the following are required:
 
 When a device is enrolled in Intune, the Azure AD registration process starts, and updates the device attributes into Azure AD. One key piece of information is the device compliance status. This compliance status is used by conditional access policies to block or allow access to e-mail and other corporate resources.
 
-[Azure AD registration process](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) provides more information.
+[Azure AD registration process](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more information.
 
 ### Assign a resulting device configuration profile status
 
@@ -147,7 +147,7 @@ If a device has multiple compliance policies, and the device has different compl
 
 When a device has multiple compliance policies, then the highest severity level of all the policies is assigned to that device.
 
-For example, say a device has three compliance polices assigned to it: one Unknown status (severity = 1), one Compliant status (severity = 3), and one InGracePeriod status (severity = 4). The InGracePeriod status has the highest severity level, so all three policies have the InGracePeriod compliance status.
+For example, say a device has three compliance policies assigned to it: one Unknown status (severity = 1), one Compliant status (severity = 3), and one InGracePeriod status (severity = 4). The InGracePeriod status has the highest severity level, so all three policies have the InGracePeriod compliance status.
 
 ## Ways to use device compliance policies
 
@@ -202,14 +202,14 @@ The main difference when using device compliance policies in the Azure portal:
 
 Device compliance policies created in the [classic portal](https://manage.microsoft.com) don't appear in the [Azure portal](https://portal.azure.com). However, they’re still targeted to users and manageable using the classic portal.
 
-To use the device compliance-related features in the Azure portal, you must create new device compliance policies in the Azure portal. If you assign a device compliance policy in the Azure portal to a user who is also assigned a device compliance policy from the classic portal, then the device compliance policies from the Azure portal takes precedence over the policies created in the classic portal.
+To use the device compliance-related features in the Azure portal, you must create new device compliance policies in the Azure portal. If you assign a device compliance policy in the Azure portal to a user who is also assigned a device compliance policy from the classic portal, then the device compliance policies from the Azure portal take precedence over the policies created in the classic portal.
 
 ## Next steps
 
 - Create a device compliance policy for the following platforms:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for work](compliance-policy-create-android-for-work.md)
+  - [Android work profile](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

@@ -35,12 +35,11 @@ Before you assign an app to a device or a group of users, you must first add the
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
-1. In the **Intune** pane, select **Mobile apps**.
-2. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
-3. Select **Add**.
-4. In the **Add App** pane, under the available **Store apps** types, select **Android**.
-5. To configure the app information, select **Configure**, and then provide the following information.  
-    Depending on the app you've chosen, some values might have been automatically filled in.
+3. In the **Intune** pane, select **Mobile apps**.
+4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
+5. Select **Add**.
+6. In the **Add App** pane, under the available **Store apps** types, select **Android**.
+7. To configure the app information, select **Configure**, and then provide the following information. For Android apps, navigate to the [Google Play store](https://play.google.com/store) and search for the app you want to deploy. Select the app and make a note app details. Depending on the app you've chosen, some values might have been automatically filled in.
 	- **Name**: Enter the name of the app as it is to be displayed in the company portal. Make sure that any app name that you use is unique. If an app name is duplicated, only one name is displayed to users in the company portal.
 	- **Description**: Enter a description for the app. This description is displayed to users in the company portal.
 	- **Publisher**: Enter the name of the publisher of the app.

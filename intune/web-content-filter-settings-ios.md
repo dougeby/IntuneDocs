@@ -63,7 +63,7 @@ If you do not specify any URLs, then end users cannot access any websites except
 ## Specific websites only
 
 1. On the **Web Content Filter** pane, for each web site you want to permit, configure the following settings:
-	- **URL** - Enter the URL of the website you want to permit, for example, **http://www.contoso.com**.
+	- **URL** - Enter the URL of the website you want to permit, for example, `https://www.contoso.com`.
 	- **Bookmark Path** - Enter the path to where you want to store the bookmark, for example **/Contoso/Business Apps**. If you don't add a path, the bookmark is added to the default bookmark folder on the device.
 	- **Title** - Enter a descriptive title for the bookmark.
 2. Click **Add** after you enter the information for each website.

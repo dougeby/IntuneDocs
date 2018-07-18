@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Assign Office 365 to macOS devices with Microsoft Intune
 
-The *Store app* type makes it easy for you to assign Office 365 apps to macOS devices. By using this app type, you can install Word, Excel, PowerPoint, Outlook, and OneNote. To help keep the apps more secure and up to date, the apps come with Microsoft AutoUpdate (MAU). The apps that you want are displayed as one app in the list of apps in the Intune console.
+This app type makes it easy for you to assign Office 365 2016 apps to macOS devices. By using this app type, you can install Word, Excel, PowerPoint, Outlook, and OneNote. To help keep the apps more secure and up to date, the apps come with Microsoft AutoUpdate (MAU). The apps that you want are displayed as one app in the list of apps in the Intune console.
 
 
 ## Before you start
@@ -75,7 +75,7 @@ In this step, configure the assignments for the app suite.
 2. In the **Office 365** pane, select **Assignments**.
 3. To add a group that will use the app suite, select **Add group**.  
     The **Add group** pane is displayed.
-4. Set the **Assignment type** to **Required**.
+4. Set the **Assignment type** to **Required** or **Available**.
 5. Assign the suite to the groups that you select. For more information, see [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
     >[!Note]
