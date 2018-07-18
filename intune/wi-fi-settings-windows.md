@@ -44,19 +44,19 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
     For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
-​
-- **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
-- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options:
-  - **Not configured**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
-  - **Open (no authentication)**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
+  - **Connect to this network, even when it is not broadcasting its SSID**: Choose **Yes** if want this configuration profile to automatically connect to your network, even when it is hidden (meaning its SSID is not broadcast publicly). Choose **No** if you do not want this configuration profile to connect to your network if the network is hidden.
+
+- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
+  - **Open (no authentication)**: Only use this option if the network is unsecured.
+  - **WPA/WPA2 - Personal
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
   - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
-- **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Validates against the FIPS 140-2 standard. The FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems. This standard helps protect sensitive but unclassified information stored digitally.
+<!--- **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Validates against the FIPS 140-2 standard. The FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems. This standard helps protect sensitive but unclassified information stored digitally.--->
 
 ## Enterprise settings
 
@@ -69,7 +69,13 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 ​
 - **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
 
-- **Single sign-on (SSO)**: NEED A DESCRIPTION, AND EXPLAIN WHAT "DISABLE" AND BOTH "ENABLE" OPTIONS DO.
+- **Single sign-on (SSO)**: This allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network logon. Your options are:
+  - **Disable** - Disables SSO behavior and the user needs to authenticate to the network separately.
+  - **Enable before user signs into device** - Uses SSO to authenticate to the network just prior to the user logon process.
+  - **Enable after user signs into device** - Uses SSO to authenticate to the network immediately after the user logon process completes.
+  
+   - **Maximum time to authenticate before timeout** - Indicates the maximum amount of time to wait before authenticating to the network, from 1-120 seconds.
+   - **Allow Windows to prompt user for additional authentication credentials** - Choose **Yes** to allow the Windows system to display prompts for the user to input additional credentials if the authentication method requires it. Choose **No** to suppress these prompts.
 
 #### Fast roaming settings
 
@@ -78,7 +84,8 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **Maximum time a PMK is stored in cache**: Enter the number of minutes a pairwise master key (PMK) is stored in the cache, from 5-1440 minutes.
   - **Maximum number of PMKs stored in cache**: Enter the number of keys stored in cache, from 1-255.
 
-- **Enable pre-authentication**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND  "NO" OPTIONS DO.
+- **Enable pre-authentication**: Pre-authentication allows the profile to authenticate to all access points for the network specified by the profile before connecting to them, in order to reconnect more quickly when moving between access points. Choose **Yes** to allow the profile to authenticate to all access points for this network that are within range. Choose **No** to require the user/device to authenticate to each access point separately.
+
   - **Maximum pre-authentication attempts**: Enter the number of tries to preauthenticate, from 1-16.
 
 #### Extensible Authentication Protocol (EAP)
