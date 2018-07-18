@@ -68,7 +68,7 @@ For each key and value in the configuration, set:
 You can choose the following options if you choose variable as the value type:
 - User Principal Name — for example, **John@contoso.com**
 - Mail — for example, **John@contoso.com**
-- Partian UPN — for example, **John**
+- Partial UPN — for example, **John**
 - Account ID — for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - Device ID — for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
 - User ID — for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
