@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -171,11 +171,11 @@ This feature is included in the device status reporting:
 1. Select **Device compliance** > **Policies**. A list of policies is shown, including the platform, if the policy is assigned, and more details.
 2. Select a policy > **Overview**. In this view, the policy assignment includes the following statuses:
 
-  - Succeeded
-  - Error
-  - Conflict
-  - Pending
-  - Not applicable
+  - Succeeded: Policy is applied
+  - Error: The policy failed to apply. This typically displays with an error code that links to an explanation. 
+  - Conflict: Two settings are applied to the same device, and Intune can't sort out the conflict. An administrator should review.
+  - Pending: The device hasn’t checked in with Intune to receive the policy yet. 
+  - Not applicable: The device can't receive the policy. For example, the policy updates a setting specific to iOS 11.1, but the device is using iOS 10. 
 
 3. To see details on the devices using this policy, select one of the statuses. For example, select **Succeeded**. In the next window, specific device details, including the device name and deployment status are listed.
 
@@ -185,4 +185,3 @@ Policy conflicts can occur when multiple Intune policies are applied to a device
 - If the conflicting settings are from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy. This happens even if the settings in the configuration policy are more secure.
 
 - If you have deployed multiple compliance policies, Intune uses the most secure of these policies.
-
