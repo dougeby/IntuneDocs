@@ -68,10 +68,10 @@ If you selected **Custom VPN** as the connection type, also configure the follow
 - **VPN identifier**: An identifier for the VPN app you're using, and is supplied by your VPN provider.
 - **Enter key and value pairs for the custom VPN attributes**: Add or import **Keys** and **Values** that customize your VPN connection. Again, these values are typically supplied by your VPN provider.
 
-## Apps (per-app VPN) settings
+## Automatic VPN settings
 
-- **Per-app VPN**: Enable this option to use URLs that enable the VPN connection when they are visited from the Safari browser. To configure per-app VPN, you must select **Certificates** as the authentication method in the base VPN settings.
-  - **Safari URLs that will trigger this VPN**: Select to add one or more web site URLs. When these URLs are visited, the VPN connection is enabled.
+- **Per-app VPN**: Choosing this option will enable per-app VPN, which allows the VPN connection to be triggered automatically when certain apps are opened. In addition to choosing this option, you will also need to associate the apps with this VPN profile. See the [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md) for more details. 
+  - **Safari URLs that will trigger this VPN**: Select to add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
 
 - **On-demand VPN**: Configure conditional rules that control when the VPN connection is initiated. For example, create a condition where the VPN connection is only used when a device is not connected to a company Wi-Fi network. Or, create a condition where, if a device can't access a DNS search domain you specify, then the VPN connection is not initiated.
 
