@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 Intune enables mobile device management (MDM) of iPads and iPhones to give users access to company email and apps.
 
-As an Intune admin, you can enable enrollment for iOS devices. You can allow users to enroll personally owned devices, known as "bring your own device" (BYOD) enrollment. You can also enable enrollment of company-owned devices.
+As an Intune admin, you can enable enrollment for iOS devices. You can let users enroll personally owned devices, known as "bring your own device" (BYOD) enrollment. You can also enable enrollment of company-owned devices.
 
 ## Prerequisites for iOS enrollment
 Before you can enable iOS devices, complete the following steps:
@@ -43,7 +43,7 @@ Before you can enable iOS devices, complete the following steps:
 You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
 
 ## Company-owned iOS devices
-For organizations that purchase devices for their users, Intune supports the following iOS company-owned device enrollment methods:
+For organizations that buy devices for their users, Intune supports the following iOS company-owned device enrollment methods:
 
 - Apple's Device Enrollment Program (DEP)
 - Apple School Manager
@@ -61,13 +61,13 @@ Apple School Manager is a device purchase and enrollment program for schools. Li
 ## Apple Configurator
 You can enroll iOS devices with Apple Configurator running on a Mac computer. To prepare devices, you USB-connect them and install an enrollment profile. You can enroll devices with Apple Configurator in two ways:
 - Setup Assistant enrollment - Factory resets the device, prepares it to run Setup Assistant, and installs the company's policies for the device’s new user.
-- Direct enrollment - Does not factory-reset the device and enrolls the device with a predefined policy. This method is for devices with no user affinity.
+- Direct enrollment - Doesn't factory-reset the device and enrolls the device with a predefined policy. This method is for devices with no user affinity.
 
 Learn more about [Apple Configurator enrollment](apple-configurator-setup-assistant-enroll-ios.md).
 
 ## Use the Company Portal on DEP-enrolled or Apple Configurator-enrolled devices
 
-Devices that are configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete a number of additional steps to complete the Setup Assistant and install the Company Portal app.
+Devices configured with user affinity can install and run the Company Portal app to download apps and manage devices. After users receive their devices, they must complete a number of additional steps to complete the Setup Assistant and install the Company Portal app.
 
 User affinity is required to support the following:
   - Mobile application management (MAM) apps
@@ -83,7 +83,7 @@ User affinity is required to support the following:
 
 ### About corporate-owned managed devices with no user affinity
 
-Devices that are configured with no user affinity do not support the Company Portal and should not have the app installed. The Company Portal is designed for users who have corporate credentials and require access to personalized corporate resources (e.g. email). Devices that are enrolled with no user affinity are not intended to have a dedicated user sign in. Kiosk, point of sale (POS), or shared-utility devices are typical use cases for devices that are enrolled with no user affinity.
+Devices that are configured with no user affinity do not support the Company Portal and should not have the app installed. The Company Portal is designed for users who have corporate credentials and require access to personalized corporate resources (like email). Devices that are enrolled with no user affinity aren't intended to have a dedicated user sign in. Kiosk, point of sale (POS), or shared-utility devices are typical use cases for devices that are enrolled with no user affinity.
 
 If user affinity is required, be sure that the device’s enrollment profile has **User Affinity** selected before enrolling the device. To change the affinity status on a device, you must retire the device and reenroll it.
 
