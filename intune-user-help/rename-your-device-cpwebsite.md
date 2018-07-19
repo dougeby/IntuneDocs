@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rename your device from the Company Portal website 
-description: Learn how to rename you device from the Company Portal website.
+description: Learn how to rename your device from the Company Portal website.
 keywords:
 author: lenewsad
 ms.author: lanewsad
