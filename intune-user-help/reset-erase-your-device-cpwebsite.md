@@ -48,7 +48,7 @@ After you reset a device, it no longer appears in the Company Portal. Previously
 
    ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
   
-   ![Zoomed in view of the More icon, highlighted with a red box.](./media/rename-reset-device-step3-more-1808.png)    
+   ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)    
 
 4. A message appears to warn that you are about to erase all content on your device. Tap **Reset** to confirm.  
 
