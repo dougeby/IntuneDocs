@@ -28,14 +28,14 @@ ms.custom: intune-azure
 
 Wi-Fi settings are used in a configuration profile that applies to devices running Windows 10 and later. Your options include:
 
-- **Basic**
-- **Enterprise**
+- Basic
+- Enterprise
 
 ## Before you begin
 
 [Create a device profile](device-profile-create.md).
 
-## Wi-Fi settings for basic and enterprise profiles
+## Settings for basic and enterprise profiles
 
 - **Wi-Fi name (SSID)**: Short for service set identifier. This value is the real name of the wireless network that devices connect to. However, users only see the **Connection name** you configure when they choose the connection.
 - **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
@@ -51,13 +51,13 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
   - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
-## ## Wi-Fi settings for basic profiles only
+## Settings for basic profiles only
 
 - **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
   - **Open (no authentication)**: Only use this option if the network is unsecured.
   - **WPA/WPA2-Personal**
 
-## Wi-Fi settings for enterprise profiles only
+## Settings for enterprise profiles only
 
 - **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign in. Your options are:
   - **Disable**: Disables SSO behavior. The user needs to authenticate to the network separately.
@@ -75,7 +75,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
   - **Maximum pre-authentication attempts**: Enter the number of tries to preauthenticate, from 1-16.
 
-- **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
+- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type to authenticate secured wireless connections. Your options:
 
   - **EAP-SIM**
   - **EAP-TLS**
@@ -91,7 +91,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 |Setting name|More information|Use when|
 |--------------|-------------|----------|
-|**Certificate server names**|Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**.|
+|**Certificate server names**|Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
 |**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
 |**Identity privacy (outer identity)**|Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
 
@@ -99,7 +99,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 | Setting name | More information | Use when |
 |---|---|---|
-| **Client certificate for client authentication (Identity certificate)**** |  Choose the SCEP certificate profile used to authenticate the connection. | EAP type is **EAP-TLS** |
+| **Client certificate for client authentication (Identity certificate)** |  Choose the SCEP certificate profile used to authenticate the connection. | EAP type is **EAP-TLS** |
 | **Authentication method** | Select the authentication method for the connection:<br><br>- **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:<br><br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br><br>- **Identity privacy (outer identity)**: Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** or * |
 
 ## Use an imported settings file
