@@ -38,7 +38,7 @@ Learn how to rename your enrolled, managed device from the Company Portal websit
 
    ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png)
 
-3. Select **Rename**. If the rename option is not visible at the top of your page, tap **More (…)** > **Rename**. 
+3. Select **Rename**. If the rename option isn't visible at the top of your page, select **More (…)** > **Rename**. 
 
    ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
 

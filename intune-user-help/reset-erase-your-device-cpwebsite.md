@@ -36,9 +36,7 @@ Learn how to reset a used, lost, or stolen device to factory default settings fr
 After you reset a device, it no longer appears in the Company Portal. Previously existing apps and files are erased and the device is restored to its factory default settings.
 
 > [!Note]
-> You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset. 
-
-To reset your device:
+> You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset.  
 
 1. Open the [Company Portal website](https://portal.manage.microsoft.com/helpdesk) and select the __Menu__ ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/media/CP_hamburger_menu.png) button > __Devices__.
 
@@ -46,7 +44,7 @@ To reset your device:
 
     ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png)
 
-3. Select **Reset**. If the reset option is not visible at the top of your page, tap **More (…)** > **Reset**. 
+3. Select **Reset**. If the reset option isn't visible at the top of your page, select **More (…)** > **Reset**. 
 
    ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
   
