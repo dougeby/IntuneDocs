@@ -83,8 +83,8 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 2. Open the **Certification Authority** console, right-click **Certificate Templates**, and select **Manage**.
 3. Locate the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
 
-  > [!NOTE]
-  > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
+    > [!NOTE]
+    > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
 
 4. On the **Compatibility** tab:
 
@@ -93,8 +93,8 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
 5. On the **General** tab, set **Template display name** to something meaningful to you.
 
-   > [!WARNING]
-   > **Template name** by default is the same as **Template display name** with *no spaces*. Note the template name, you need it later.
+    > [!WARNING]
+    > **Template name** by default is the same as **Template display name** with *no spaces*. Note the template name, you need it later.
 
 6. In **Request Handling**, select **Allow private key to be exported**.
 7. In **Cryptography**, confirm that the **Minimum key size** is set to 2048.
@@ -164,10 +164,10 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
 3. Enter the following properties:
 
-  - **Name** for the profile
-  - Optionally set a description
-  - **Platform** to deploy the profile to
-  - Set **Profile type** to **Trusted certificate**
+    - **Name** for the profile
+    - Optionally set a description
+    - **Platform** to deploy the profile to
+    - Set **Profile type** to **Trusted certificate**
 
 4. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
@@ -185,21 +185,21 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-  - **Name** for the profile
-  - Optionally set a description
-  - **Platform** to deploy the profile to
-  - Set **Profile type** to **PKCS certificate**
+    - **Name** for the profile
+    - Optionally set a description
+    - **Platform** to deploy the profile to
+    - Set **Profile type** to **PKCS certificate**
 
 4. Go to **Settings**, and enter the following properties:
 
-  - **Renewal threshold (%)**: Recommended is 20%.
-  - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
-	- **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.
-  - **Certification authority**: Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.
-  - **Certification authority name**: Lists the name of your Enterprise CA, such as "Contoso Certification Authority".
-  - **Certificate template name**: The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
-  - **Subject name format**: Set this option to **Common name** unless otherwise required.
-  - **Subject alternative name**: Set this option to **User principal name (UPN)** unless otherwise required.
+    - **Renewal threshold (%)**: Recommended is 20%.
+    - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
+    - **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.
+    - **Certification authority**: Displays the internal fully qualified domain name (FQDN) of your Enterprise CA.
+    - **Certification authority name**: Lists the name of your Enterprise CA, such as "Contoso Certification Authority".
+    - **Certificate template name**: The name of the template created earlier. Remember **Template name** by default is the same as **Template display name** with *no spaces*.
+    - **Subject name format**: Set this option to **Common name** unless otherwise required.
+    - **Subject alternative name**: Set this option to **User principal name (UPN)** unless otherwise required.
 
 5. Select **OK**, then **Create** to save your profile.
 6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
@@ -216,16 +216,16 @@ After importing the certificates to Intune, create a **PKCS imported certificate
 2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-  - **Name** for the profile
-  - Optionally set a description
-  - **Platform** to deploy the profile to
-  - Set **Profile type** to **PKCS imported certificate**
+    - **Name** for the profile
+    - Optionally set a description
+    - **Platform** to deploy the profile to
+    - Set **Profile type** to **PKCS imported certificate**
 
 4. Go to **Settings**, and enter the following properties:
 
-  - **Intended purpose**: The intended purpose of the certificates that are imported for this profile. An administrator may have imported certificates with different intended purposes (such as authentication, S/MIME signing, or S/MIME encryption). The intended purpose selected in the certificate profile matches the certificate profile with the right imported certificates.
-  - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
-  - **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.
+    - **Intended purpose**: The intended purpose of the certificates that are imported for this profile. An administrator may have imported certificates with different intended purposes (such as authentication, S/MIME signing, or S/MIME encryption). The intended purpose selected in the certificate profile matches the certificate profile with the right imported certificates.
+    - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
+    - **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.
 
 5. Select **OK**, then **Create** to save your profile.
 6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).

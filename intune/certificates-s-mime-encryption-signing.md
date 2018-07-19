@@ -44,7 +44,7 @@ Signing certificates in Intune use PKCS certificates. [Configure and use PKCS ce
 - Create a trusted root certificate profile for your devices. This step includes using trusted root and intermediate certificates for your certification authority, and then deploying the profile to devices.
 - Create a PKCS certificate profile using the certificate template you created. This profile issues signing certificates to devices, and deploys the PKCS certificate profile to devices.
 
-You can also import a signing certificate for a particular user. The signing certificate is deployed across any device a user enrolls. To import certificates into Intune, use the [PowerShell cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access). To deploy a PKCS certificate imported in  Intune to be used for email signing, follow the steps in [Configure and use PKCS certificates with Intune](certficates-pfx-configure.md). These steps include:
+You can also import a signing certificate for a specific user. The signing certificate is deployed across any device a user enrolls. To import certificates into Intune, use the [PowerShell cmdlets in GitHub](https://github.com/Microsoft/Intune-Resource-Access). To deploy a PKCS certificate imported in  Intune to be used for email signing, follow the steps in [Configure and use PKCS certificates with Intune](certficates-pfx-configure.md). These steps include:
 
 - Download and install the PFX Certificate Connector for Microsoft Intune. This connector delivers imported PKCS certificates to devices.
 - Import S/MIME email signing certificates to Intune.
