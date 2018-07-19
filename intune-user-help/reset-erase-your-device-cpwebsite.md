@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ After you reset a device, it no longer appears in the Company Portal. Previously
 > [!Note]
 > You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset.  
 
-1. Open the [Company Portal website](https://portal.manage.microsoft.com/helpdesk) and select the __Menu__ ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/media/CP_hamburger_menu.png) button > __Devices__.
+1. Open the [Company Portal website](https://portal.manage.microsoft.com/helpdesk) and select the __Menu__ button > __Devices__.
 
 2. Select the device you want to reset.
 
