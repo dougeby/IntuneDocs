@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-For devices that run Windows, you can import a Wi-Fi configuration profile that was previously exported to a file. For Windows 10 and later devices, you can [create a Wi-Fi profile](wi-fi-settings-windows.md) directly in Intune.
+For devices that run Windows, you can import a Wi-Fi configuration profile that was previously exported to a file. **For Windows 10 and later devices, you can [create a Wi-Fi profile](wi-fi-settings-windows.md) directly in Intune**.
 
 Applies to:  
 - Windows 8.1 and later
@@ -38,14 +38,14 @@ Applies to:
 
 ## Export Wi-Fi settings from a Windows device
 
-In Windows, use the **netsh wlan** utility to export an existing Wi-Fi profile to an XML file readable by Intune. The key must be exported in plain text to successfully use the profile.
+In Windows, use **netsh wlan** to export an existing Wi-Fi profile to an XML file readable by Intune. The key must be exported in plain text to successfully use the profile.
 
 On a Windows computer that already has the required WiFi profile installed, use the following steps:
 
 1. Create a local folder for the exported W-Fi- profiles, such as **c:\WiFi**.
 2. Open up a Command Prompt as an administrator.
 3. Run the `netsh wlan show profiles` command, and note the name of the profile you'd like to export. In this example, the profile name is **WiFiName**.
-4. Run the `netsh wlan export profile name="ProfileName" folder=c:\Wifi` command.This creates a Wi-Fi profile file named **Wi-Fi-WiFiName.xml** in your target folder.
+4. Run the `netsh wlan export profile name="ProfileName" folder=c:\Wifi` command. This creates a Wi-Fi profile file named **Wi-Fi-WiFiName.xml** in your target folder.
 
 ## Import the Wi-Fi settings into Intune
 
