@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -93,21 +93,21 @@ Sometimes, the same app is assigned to multiple groups but with different intent
 |User Available|User Not Available|Not Available|
 |User Available|User Uninstall|Uninstall|
 |User Not Available|User Uninstall|Uninstall
-|User Required|Device Required|Both exist, Gateway treats Required
-|User Required|Device Uninstall|Both exist, Gateway resolves Required
-|User Available|Device Required|Both exist, Gateway resolves Required (Required and Available)
-|User Available|Device Uninstall|Both exist, Gateway resolves Available.<br><br>App shows up in the Company Portal.<br><br>If the app is already installed (as a required app with previous intent), the app is uninstalled.<br><br>If the user selects **Install from the Company Portal**, the app is installed, and the uninstall intent is not honored.|
+|User Required|Device Required|Both exist, Intune treats Required
+|User Required|Device Uninstall|Both exist, Intune resolves Required
+|User Available|Device Required|Both exist, Intune resolves Required (Required and Available)
+|User Available|Device Uninstall|Both exist, Intune resolves Available.<br><br>App shows up in the Company Portal.<br><br>If the app is already installed (as a required app with previous intent), the app is uninstalled.<br><br>If the user selects **Install from the Company Portal**, the app is installed, and the uninstall intent is not honored.|
 |User Not Available|Device Required|Required|
 |User Not Available|Device Uninstall|Uninstall|
-|User Uninstall|Device Required|Both exist, Gateway resolves Required|
-|User Uninstall|Device Uninstall|Both exist, Gateway resolves Uninstall|
+|User Uninstall|Device Required|Both exist, Intune resolves Required|
+|User Uninstall|Device Uninstall|Both exist, Intune resolves Uninstall|
 |Device Required|Device Uninstall|Required|
 |User Required and Available|User Available|Required and Available|
 |User Required and Available|User Uninstall|Required and Available|
 |User Required and Available|User Not Available|Required and Available|
 |User Required and Available|Device Required|Both exist, Required and Available
 |User Required and Available|Device Not Available|Required and Available|
-|User Required and Available|Device Uninstall|Both exist, Gateway resolves Required (Required and Available)
+|User Required and Available|Device Uninstall|Both exist, Intune resolves Required (Required and Available)
 |User Not Available|Device Not Available|Not Available|
 |User Available|Device Not Available|Available|
 |User Required|Device Not Available|Required|
