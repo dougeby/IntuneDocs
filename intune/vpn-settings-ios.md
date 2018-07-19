@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -70,7 +70,7 @@ If you selected **Custom VPN** as the connection type, also configure the follow
 
 ## Automatic VPN settings
 
-- **Per-app VPN**: Choosing this option will enable per-app VPN, which allows the VPN connection to be triggered automatically when certain apps are opened. In addition to choosing this option, you will also need to associate the apps with this VPN profile. See the [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md) for more details. 
+- **Per-app VPN**: Choosing this option enables per-app VPN, which allows the VPN connection to be triggered automatically when certain apps are opened. In addition to choosing this option, you also need to associate the apps with this VPN profile. See the [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md) for more details. 
   - **Safari URLs that will trigger this VPN**: Select to add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
 
 - **On-demand VPN**: Configure conditional rules that control when the VPN connection is initiated. For example, create a condition where the VPN connection is only used when a device is not connected to a company Wi-Fi network. Or, create a condition where, if a device can't access a DNS search domain you specify, then the VPN connection is not initiated.
