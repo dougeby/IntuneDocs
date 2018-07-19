@@ -75,25 +75,11 @@ User affinity is required to support the following:
   -	Company Portal app
 
 **How users enroll corporate-owned iOS devices with user affinity**
-1. When users turn on their device, they are prompted to complete the Setup Assistant. During setup, users are prompted for their credentials. They must use the credentials (i.e. the unique personal name or UPN) that are associated with their subscription in Intune.
-
-2. During setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install the Company Portal. They can also provide the ID from the iOS settings menu after setup is finished.
-
-3. After completing setup, the iOS device must install the Company Portal app from the App Store.
-
-4. The user can now sign in to the Company Portal by using the UPN that they used when setting up the device.
-
-5. After logging in, the user is prompted to enroll their device. The first step is to identify their device. The app presents a list of iOS devices that have already been corporate enrolled and assigned to the user’s Intune account. They should choose the matching device.
-
-   If this device is not already corporate enrolled, they should choose **new device** to continue with the standard enrollment flow.
-
-6. On the next screen, the user must confirm the serial number of the new device. The user can tap the link **confirm the Serial Number** which will launch instructions to use the Settings app to verify the serial number. The user must then enter the last four characters of the serial number into the Company Portal app.
-
-   This step verifies that the device is the corporate device enrolled in Intune. If the serial number on the device does not match, the wrong device was selected. The user should go back to the previous screen and select a different device.
-
-7. After the serial number is verified, the Company Portal app redirects to the Company Portal website to finalize enrollment. Then the website prompts the user to return to the app.
-
-8. Enrollment is now complete. The user can now use this device with the full set of capabilities.
+1. When users turn on their device, they are prompted to complete the Setup Assistant. 
+2. After completing setup, users are prompted for an Apple ID. They must provide an Apple ID to allow the device to install Company Portal. 
+3. The iOS device automatically installs the Company Portal app from the App Store.
+4. Users should launch the Company Portal app and sign in using the credentials (like the unique personal name or UPN) that are associated with their subscription in Intune. 
+5. After logging in, enrollment is complete. Users can now use this device with the full set of capabilities.
 
 ### About corporate-owned managed devices with no user affinity
 
