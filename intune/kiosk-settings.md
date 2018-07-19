@@ -81,7 +81,7 @@ These settings control a web browser app on the kiosk. Be sure you deployed a we
 
   - **Navigation button**: Show (**Allow**), or hide (**Not configured**) the forward and back buttons. By default, the navigation buttons are Not configured.
 
-  - **End session button**: Show (**Allow**), or hide (**Not configured**) the end session button. When shown, and the user selects the button, the app prompts to confirm ending the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and navigates back to the default URL.
+  - **End session button**: Show (**Allow**), or hide (**Not configured**) the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and navigates back to the default URL.
 
     By default, the button is Not configured. 
 
