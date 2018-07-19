@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,71 +28,79 @@ ms.custom: intune-azure
 
 Wi-Fi settings are used in a configuration profile that applies to devices running Windows 10 and later. Your options include:
 
-- **Not configured**
-- **Basic**
-- **Enterprise**
+- Basic
+- Enterprise
 
 ## Before you begin
 
 [Create a device profile](device-profile-create.md).
 
-## Basic settings
+## Settings for basic and enterprise profiles
 
-- **Wi-Fi name (SSID)**: Enter the correct service set identifier name of the existing wireless network. When users connect, users see the **Connection name** on the devices.
+- **Wi-Fi name (SSID)**: Short for service set identifier. This value is the real name of the wireless network that devices connect to. However, users only see the **Connection name** you configure when they choose the connection.
 - **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
 - **Connect automatically when in range​**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
-  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
+  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use the preferred network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
-​
-- **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available​** property to **No**.
 
-- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options:
-  - **Not configured**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
-  - **Open (no authentication)**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
+  - **Connect to this network, even when it is not broadcasting its SSID**: Choose **Yes** for the configuration profile to automatically connect to your network, even when the network is hidden (meaning, its SSID isn't broadcast publicly). Choose **No** if you don't want this configuration profile to connect to your hidden network.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
   - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
-- **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Validates against the FIPS 140-2 standard. The FIPS 140-2 standard is required for all US federal government agencies that use cryptography-based security systems. This standard helps protect sensitive but unclassified information stored digitally.
+## Settings for basic profiles only
 
-## Enterprise settings
+- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
+  - **Open (no authentication)**: Only use this option if the network is unsecured.
+  - **WPA/WPA2-Personal**
 
-- **Wi-Fi name (SSID)**: Enter the correct service set identifier name of the existing wireless network. When users connect, users see the **Connection name** on the devices.
-- **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
-- **Connect automatically when in range​**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
-  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use this preferred network instead of this Wi-Fi network. Choose **No** to use the Wi-Fi network in this configuration profile.
+## Settings for enterprise profiles only
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set this property to **No**.
-​
-- **Connect to this network, even when it is not broadcasting its SSID**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND "NO" OPTIONS DO.
+- **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign in. Your options are:
+  - **Disable**: Disables SSO behavior. The user needs to authenticate to the network separately.
+  - **Enable before user signs into device**: Use SSO to authenticate to the network just before the user sign in process.
+  - **Enable after user signs into device**: Use SSO to authenticate to the network immediately after the user sign in process completes.
+  - **Maximum time to authenticate before timeout**: Enter the maximum number of seconds to wait before authenticating to the network, from 1-120 seconds.
+  - **Allow Windows to prompt user for additional authentication credentials**: Choosing **Yes** allows the Windows system to prompt the user for additional credentials if the authentication method requires it. Choose **No** to hide these prompts.
 
-- **Single sign-on (SSO)**: NEED A DESCRIPTION, AND EXPLAIN WHAT "DISABLE" AND BOTH "ENABLE" OPTIONS DO.
-
-#### Fast roaming settings
-
-- **Enable pairwise master key (PMK) caching**: Select **Yes** to cache the PMK used in authentication. This caching typically allows the authentication to the network to complete faster. Choose **No** to force the authentication handshake when connecting to the Wi-Fi network every time.
+- **Enable pairwise master key (PMK) caching**: Select **Yes** to cache the PMK used in authentication. This caching typically allows authentication to the network to complete faster. Choose **No** to force the authentication handshake when connecting to the Wi-Fi network every time.
 
   - **Maximum time a PMK is stored in cache**: Enter the number of minutes a pairwise master key (PMK) is stored in the cache, from 5-1440 minutes.
   - **Maximum number of PMKs stored in cache**: Enter the number of keys stored in cache, from 1-255.
 
-- **Enable pre-authentication**: NEED A DESCRIPTION, AND EXPLAIN WHAT "YES" AND  "NO" OPTIONS DO.
+- **Enable pre-authentication**: Pre-authentication allows the profile to authenticate to all access points for the network in the profile before connecting. When moving between access points, pre-authentication reconnects the user or devices more quickly. Choose **Yes** for the profile to authenticate to all access points for this network that are within range. Choose **No** to require the user or device to authenticate to each access point separately.
+
   - **Maximum pre-authentication attempts**: Enter the number of tries to preauthenticate, from 1-16.
 
-#### Extensible Authentication Protocol (EAP)
+- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type to authenticate secured wireless connections. Your options:
 
-- **EAP type**: Select the Extensible Authentication Protocol type that is configured on your Wi-Fi network. Your options:
-  - **EAP - SIM**
-  - **EAP - TLS**
-  - **EAP - TTLS**
-  - **Protected EAP (PEAP)**
+  - **EAP-SIM**
+  - **EAP-TLS**
+  - **EAP-TTLS**
+  - **Protected PEAP** (PEAP)
 
-- **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
-  - **None**: No proxy settings are configured.
-  - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
-  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
+### More options when you choose the EAP type
+
+> [!NOTE]
+> Currently, only SCEP certificate profiles are supported when using an EAP type. PKCS certificate profiles are not supported. Anytime a user is asked to enter a certificate, be sure to choose an SCEP certificate.
+
+#### Server Trust
+
+|Setting name|More information|Use when|
+|--------------|-------------|----------|
+|**Certificate server names**|Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
+|**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
+|**Identity privacy (outer identity)**|Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
+
+#### Client Authentication
+
+| Setting name | More information | Use when |
+|---|---|---|
+| **Client certificate for client authentication (Identity certificate)** |  Choose the SCEP certificate profile used to authenticate the connection. | EAP type is **EAP-TLS** |
+| **Authentication method** | Select the authentication method for the connection:<br><br>- **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:<br><br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br><br>- **Identity privacy (outer identity)**: Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** or * |
 
 ## Use an imported settings file
 
