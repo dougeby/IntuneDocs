@@ -45,7 +45,7 @@ You can easily drive users to enroll their devices into device management by dep
 **Compliance** – Some organizations need to comply with regulatory or other policies that call out specific MDM controls. For example, you need MDM to encrypt the entire device or to produce a report of all apps on the device.
 
 ## Common reasons to only manage the apps (MAM)
-MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a conditional access policy om Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
+MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a conditional access policy on Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
 
 **User experience** – MDM enrollment includes many warning prompts (enforced by the platform) that often result in the user deciding they would rather not access their email on their personal device after all. MAM is much less alarming to users, as they simply get a pop-up one time to let them know MAM protections are in place.
 

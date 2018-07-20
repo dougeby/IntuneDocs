@@ -33,7 +33,7 @@ Learn what updates have been made to the UI for apps that your end users will se
 
 ## Week of April 23, 2018
 #### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
-The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. 
+The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. 
 
 ![Screenshot of the Company Portal app dashboard showing the Fluent Design navigation view](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -90,7 +90,7 @@ If you've enabled [device group mapping](device-group-mapping.md), the Company P
 
 ## Week of November 13, 2017
 
-### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!---1417174--->
+### Improvements to device setup workflow in the Company Portal for iOS in version 2.9.0 <!-- 1417174 -->
 
 We've improved the device setup workflow in the Company Portal app for iOS. The language is more user-friendly and we've combined screens where possible. We have also made the language more specific to your company by using your company name throughout the setup text.
 
@@ -149,7 +149,7 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 |![02](./media/android_cp_enroll_02_before_1710.png)|![02](./media/android_cp_enroll_02_after_1710.png)|
 |![03](./media/android_cp_enroll_03_before_1710.png)|![03](./media/android_cp_enroll_03_after_1710.png)|
 
-Additional steps have been improved on Android for Work devices.
+Additional steps have been improved on Android work profile devices.
 
 |Before|After|
 |---|---|
@@ -435,7 +435,7 @@ These are the plans for ways we will be improving the user experience by updatin
 
 ### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
 
-We’re introducing a new Company Portal website experience in April, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+We’re introducing a new Company Portal website experience starting in August, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
 
 We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
 

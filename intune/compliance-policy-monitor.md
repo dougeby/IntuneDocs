@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -162,9 +162,26 @@ This report allows you to view, per compliance setting, the total number of devi
 
 When you click on the Setting compliance tile, then click on one of the device compliance policy settings, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device that was targeted by that device compliance policy setting.
 
+## View status of device policies
+
+You can check the different states of your policies, by platform. For example, you have a macOS compliance policy. You want to see the devices that are impacted by this policy, and know if there are conflicts or failures.
+
+This feature is included in the device status reporting:
+
+1. Select **Device compliance** > **Policies**. A list of policies is shown, including the platform, if the policy is assigned, and more details.
+2. Select a policy > **Overview**. In this view, the policy assignment includes the following statuses:
+
+  - Succeeded: Policy is applied
+  - Error: The policy failed to apply. This typically displays with an error code that links to an explanation. 
+  - Conflict: Two settings are applied to the same device, and Intune can't sort out the conflict. An administrator should review.
+  - Pending: The device hasn’t checked in with Intune to receive the policy yet. 
+  - Not applicable: The device can't receive the policy. For example, the policy updates a setting specific to iOS 11.1, but the device is using iOS 10. 
+
+3. To see details on the devices using this policy, select one of the statuses. For example, select **Succeeded**. In the next window, specific device details, including the device name and deployment status are listed.
+
 ## How Intune resolves policy conflicts
 Policy conflicts can occur when multiple Intune policies are applied to a device. If the policy settings overlap, Intune resolves any conflicts by using the following rules:
 
 - If the conflicting settings are from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy. This happens even if the settings in the configuration policy are more secure.
 
-- If you have deployed multiple compliance policies, Intune will use the most secure of these policies.
+- If you have deployed multiple compliance policies, Intune uses the most secure of these policies.

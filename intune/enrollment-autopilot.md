@@ -38,13 +38,9 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
 
 3. Choose **Import** to start importing the device information. Importing can take several minutes.
 
-## Synchronize devices
-Synchronize your registered devices into Intune so that you can configure them.
+4. After import is complete, choose **Device enrollment** > **Windows enrollment** > **Windows AutoPilot** > **Devices** > **Sync**. A message displays that the synchronization is in progress. The process might take a few minutes to complete, depending on how many devices are being synchronized.
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment**.
-2. Choose **Windows enrollment**, and in the **Windows AutoPilot** section, choose **Devices**.
-3. Click **Sync** to import your registered devices. A message displays that the synchronization is in progress.
-4. Refresh the view to see the new devices. The process might take a few minutes to complete, depending on how many devices are being synchronized.
+5. Refresh the view to see the new devices.
 
 ## Create an AutoPilot device group
 

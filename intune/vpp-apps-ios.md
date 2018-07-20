@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -139,8 +139,7 @@ The end-user will receive prompts for VPP app installation in a number of scenar
 
 ## Revoking app licenses and deleting tokens 
 
-<!-- 820863 -->  
-For a given device that has one or more iOS volume-purchase program (VPP) apps, you revoke all associated device-based app licenses for the device. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim a license, you must change the assignment type of the VPP app to **Uninstall**. If you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstallS the app from the device.
+You can revoke all associated iOS volume-purchase program (VPP) app licenses based on a given device, user, or app. You can notify users when an app is no longer assigned to them. Revoking an app license will not uninstall the related VPP app from the device. To uninstall a VPP app and reclaim an app license assigned to a user or device, you must change the assignment action to **Uninstall**. When you remove an app that was assigned to a user, Intune reclaims the user or device license and uninstalls the app from the device. The reclaimed license count will be reflected in **Licensed Apps** node in the **App** workload​ of Intune. Once an VPP app has been uninstall and the app license has been reclaimed, you can choose to assign the app license to another user or device. 
 
 >[!NOTE]
 >Intune will retrieve all user licensed iOS VPP apps licenses when an employee leaves the company and is no longer part of the AAD groups.

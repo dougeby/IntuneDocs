@@ -42,7 +42,7 @@ For example, you install a new Wi-Fi network named Contoso Wi-Fi and want to set
 Wi-Fi profiles support the following device platforms:
 
 - Android 4 and later
-- Android for Work
+- Android work profiles
 - iOS 8.0 and later
 - macOS (Mac OS X 10.11 and later)
 
@@ -60,7 +60,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 4. On the **Create profile** pane, enter a **Name** and **Description** for the Wi-Fi profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply Wi-Fi settings. Currently, you can choose one of the following platforms for Wi-Fi settings:
 	- **Android**
-	- **Android for Work**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
@@ -74,7 +74,7 @@ Use the information in this topic to learn the basics about configuring a Wi-Fi 
 
    The **Wi-Fi import** profile (for Windows 8.1 and later) lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
 1. Depending on the platform you chose, the settings you can configure is different. Go to one of the following topics for detailed settings for each platform:
-	- [Android and Android for Work settings](wi-fi-settings-android.md)
+	- [Android and Android work profile settings](wi-fi-settings-android.md)
 	- [iOS settings](wi-fi-settings-ios.md)
 	- [macOS settings](wi-fi-settings-macos.md)
 	- [Windows 8.1 and later settings](wi-fi-settings-import-windows-8-1.md) (including Windows Holographic for Business)

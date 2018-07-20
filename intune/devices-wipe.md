@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
-description: Remove company data on a device or do a factory reset on an Android, Android for work, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
+description: Remove company data on a device or do a factory reset on an Android, Android work profile, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -37,7 +37,7 @@ By using the **Remove company data** or **Factory reset** actions, you can remov
 
 ## Factory reset
 
-The **Factory reset** action restores a device to its factory default settings. The user data is kept or wiped depending on whether or not you choose the **Retain enrollment state and user account** checkbox.
+The **Factory reset** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
 
 |Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -114,9 +114,13 @@ The following tables describe what data is removed, and the effect of the **Remo
 |Azure AD unjoin|The Azure AD record is removed.|The Azure AD record is removed.|
 |Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.|Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 
-### Android for Work
+### Android work profile
 
-Removing company data from an Android for Work device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android for Work.
+Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
+
+### Android enterprise kiosk devices
+
+You can only factory reset Android kiosk devices. You can't remove company data from Android kiosk devices.
 
 
 ### macOS
@@ -157,6 +161,15 @@ If you want to remove devices from the Intune portal, you can delete them from t
 1. Sign in to [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the devices you want to delete > **Delete**.
 
+### Automatically delete devices with cleanup rules
+You can configure Intune to automatically delete devices that appear to be inactive, stale, or unresponsive. These cleanup rules continuously monitor your device inventory so that your device records stay current. Devices deleted in this way are removed from Intune management.
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **Device cleanup rules** > **Yes**.
+3. In the **Delete devices that haven’t checked in for this many days** box, enter a number between 90 and 270.
+4. Choose **Save**.
+
+
+
 ## Delete devices from the Azure Active Directory portal
 
 You might need to delete devices from Azure AD due to communication issues or missing devices. You can use the **Delete** action to remove device records from the Azure portal for devices that you know are unreachable and unlikely to communicate with Azure again. The **Delete** action doesn't remove a device from management.
@@ -168,3 +181,24 @@ You might need to delete devices from Azure AD due to communication issues or mi
 5. Select the user that's associated with the device that you want to delete.
 6.  Select **Devices**.
 7.  Remove devices as appropriate. For example, you might remove devices that are no longer in use, or devices that have inaccurate definitions.
+
+## Retire an Apple DEP device from Intune
+
+If you want to completely remove an Apple DEP device from management by Intune, follow these steps:
+
+1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
+2. Choose **Devices** > **All devices** > choose the device > **Remove company data**.
+![Screenshot for remove company data](./media/devices-wipe/remove-company-data.png)
+3. Choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose the token > **Devices** > choose the check box for the device > **Delete** > **Yes**.
+![Screenshot for delete device](./media/devices-wipe/delete-device.png)
+4. Visit [deploy.apple.com](http://deploy.apple.com) and search for the device by its serial number.
+5. In the **Assigned to** menu, choose **Unassigned**.
+
+6. Choose **Reassign**.
+
+    ![Screenshot for Apple reassign](./media/devices-wipe/apple-reassign.png)
+
+## Next steps
+
+If you want to reenroll a deleted device, see [Enrollment options](enrollment-options.md).
+

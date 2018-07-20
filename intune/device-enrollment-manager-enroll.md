@@ -39,7 +39,7 @@ Users must exist in the [Azure portal](https://portal.azure.com) to be added as 
 
 ## Example of a device enrollment manager scenario
 
-A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a device enrollment manager account and adds a restaurant supervisor to the DEM account. The supervisor now has DEM capabilities. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
+A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a new device enrollment manager account for the restaurant supervisor.  This account is separate from the supervisor's primary account, and used only for the purpose of enrolling shared devices with Intune. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
 
 Only users in the [Azure portal](https://portal.azure.com) can be device enrollment managers. The device enrollment manager user cannot be an Intune admin.
 
@@ -58,7 +58,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
   - Only the local device appears in the Company Portal app or website.
   - Users can’t use Apple Volume Purchase Program (VPP) apps with user licenses because of per-user Apple ID requirements for app management.
   - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator, Apple Device Enrollment Program (DEP), or Apple School Manager (ASM) to enroll devices.
-  - (Android only) There is a limit to the number of Android for Work devices that can be enrolled with a single DEM account. A maximum of 10 Android work profile devices may be enrolled per DEM account. This limitation does not apply to legacy Android enrollment.
+  - (Android only) There is a limit to the number of Android work profile devices that can be enrolled with a single DEM account. A maximum of 10 Android work profile devices may be enrolled per DEM account. This limitation does not apply to legacy Android enrollment.
   - Devices can install VPP apps if they have device licenses.
   - Each device requires a device license. Learn more about [user and device licenses](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
