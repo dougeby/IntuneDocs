@@ -573,11 +573,13 @@ For more information about how to create a MAM targeted app configuration policy
 
 ## Telemetry
 
-By default, the Intune App SDK for iOS logs telemetry data on the following usage events. All our data collection practices are compliant under GDPR. 
+By default, the Intune App SDK for iOS collects telemetry on the following types of events:
 
 * **App launch**: To help Microsoft Intune learn about MAM-enabled app usage by management type (MAM with MDM, MAM without MDM enrollment, and so on).
 
 * **Enrollment calls**: To help Microsoft Intune learn about success rate and other performance metrics of enrollment calls initiated from the client side.
+
+* **Intune actions**: To help diagnose issues and ensure Intune functionality, we collect information about Intune SDK actions.
 
 > [!NOTE]
 > If you choose not to send Intune App SDK telemetry data to Microsoft Intune from your mobile application, you must disable Intune App SDK telemetry capture. Set the property `MAMTelemetryDisabled` to YES in the IntuneMAMSettings dictionary.
