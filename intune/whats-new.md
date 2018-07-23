@@ -137,7 +137,7 @@ Intune has updated "Android for Work" terminology to reflect Google branding cha
 #### Rules for removing devices <!-- 1609459 -->
 New rules are available that let you automatically remove devices that haven't checked in for a number of days that you set. To see the new rule, go to the **Intune** pane, select **Devices**, and select **Device cleanup rules**.
 
-#### Corporate-owned, single (COSU) use support for Android devices <!-- 1630973 -->
+#### Corporate-owned, single use support for Android devices <!-- 1630973 -->
 
 Intune now supports highly-managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device. To set up Android kiosk, go to Intune > **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**. For more information, see [Set up enrollment of Android enterprise kiosk devices](android-kiosk-enroll.md).
 
