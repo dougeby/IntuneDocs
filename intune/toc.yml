@@ -461,7 +461,7 @@
       - name: PKCS
         href: certficates-pfx-configure.md
       - name: Use S/MIME to encrypt email
-        href: certificates-s-mime-encryption-signing.md
+        href: certificates-s-mime-encryption-sign.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
     - name: Configure Windows Information Protection settings

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -128,4 +128,4 @@ After you create a trusted certificate profile, create SCEP or PKCS certificate 
 
 ## Next steps
 [Assign device profiles](device-profile-assign.md)  
-[Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-signing.md)
+[Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)
