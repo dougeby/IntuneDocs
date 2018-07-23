@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/18/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,9 +34,9 @@ Kiosk profiles are used to configure Windows 10 devices to run one app, or run m
 2. Enter a **Kiosk configuration name** for your kiosk. This name identifies a group of applications, the layout of these apps on the start menu, and the users that are assigned to this kiosk configuration.
 3. Select the **Kiosk mode**. **Kiosk mode** Identifies the type of kiosk mode supported by the policy. Options include:
 
-  - **Not Configured** (default): The policy doesn't enable kiosk mode.
-  - **Single full-screen app kiosk**: The profile enables the device to run as a single user account, and locks it to a single Universal Windows Platform (UWP) app. So when the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
-  - **Multi-app kiosk**: The profile enables the device to run multiple Universal Windows Platform (UWP) apps, or Win32 apps. You can also assign different apps to different user accounts. Only the apps you add are available to the users. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for users by only accessing apps they need. And, also removing from their view the apps they don’t need.
+    - **Not Configured** (default): The policy doesn't enable kiosk mode.
+    - **Single full-screen app kiosk**: The profile enables the device to run as a single user account, and locks it to a single Universal Windows Platform (UWP) app. So when the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
+    - **Multi-app kiosk**: The profile enables the device to run multiple Universal Windows Platform (UWP) apps, or Win32 apps. You can also assign different apps to different user accounts. Only the apps you add are available to the users. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for users by only accessing apps they need. And, also removing from their view the apps they don’t need.
 
 #### Single full-screen app kiosks
 Enter the following settings:
@@ -75,21 +75,19 @@ These settings control a web browser app on the kiosk. Be sure you deployed a we
 
 1. Enter the following settings:
 
-  - **Default home page URL**: Enter the default URL the kiosk browser opens when the browser opens or restarts.
+    - **Default home page URL**: Enter the default URL the kiosk browser opens when the browser opens or restarts.
 
-  - **Home button**: Show (**Allow**), or hide (**Not configured**) the kiosk browser's home button. By default, the button is Not configured.
+    - **Home button**: Show (**Allow**), or hide (**Not configured**) the kiosk browser's home button. By default, the button is Not configured.
 
-  - **Navigation button**: Show (**Allow**), or hide (**Not configured**) the forward and back buttons. By default, the navigation buttons are Not configured.
+    - **Navigation button**: Show (**Allow**), or hide (**Not configured**) the forward and back buttons. By default, the navigation buttons are Not configured.
 
-  - **End session button**: Show (**Allow**), or hide (**Not configured**) the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and navigates back to the default URL.
+    - **End session button**: Show (**Allow**), or hide (**Not configured**) the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and navigates back to the default URL. By default, the button is Not configured. 
 
-    By default, the button is Not configured. 
+    - **Refresh browser when user exceeds idle time limit**: Enter the amount of session idle time in minutes until the kiosk browser restarts in a fresh state. The value is an int 1-1440 minutes. By default, the value is empty or blank, which means there is no idle timeout.
 
-  - **Refresh browser when user exceeds idle time limit**: Enter the amount of session idle time in minutes until the kiosk browser restarts in a fresh state. The value is an int 1-1440 minutes. By default, the value is empty or blank, which means there is no idle timeout.
+    - **Blocked websites**: List of blocked website URLs (with wildcard support). Use this setting to prevent the browser from opening specific sites. You can also **Import** a .csv file that contains a list. Or, create a .csv file (**Export**) that contains the sites you add.
 
-  - **Blocked websites**: List of blocked website URLs (with wildcard support). Use this setting to prevent the browser from opening specific sites. You can also **Import** a .csv file that contains a list. Or, create a .csv file (**Export**) that contains the sites you add.
-
-  - **Website exceptions**: List of exceptions to the blocked website URLs (with wildcard support). Use this setting to allow the browser to open specific sites. These exceptions are a subset of the blocked URLs. If a URL is in the blocked website list and the website exception list, then the exception takes effect.
+    - **Website exceptions**: List of exceptions to the blocked website URLs (with wildcard support). Use this setting to allow the browser to open specific sites. These exceptions are a subset of the blocked URLs. If a URL is in the blocked website list and the website exception list, then the exception takes effect.
 
     You can also **Import** a .csv file that contains a list. Or, create a .csv file (**Export**) that contains the sites you add.
 
