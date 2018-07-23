@@ -49,13 +49,13 @@ Use the email profile settings to configure your devices running iOS.
 - **Email address attribute from AAD**: Choose how the email address for the user is generated. Select **User principal name** (`user1@contoso.com` or `user1`) to use the full principal name as the email address, or **Primary SMTP address** (`user1@contoso.com`) to use the primary SMTP address to sign in to Exchange.
 - **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile. Azure multi-factor authentication is not supported.
   - If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
-- **SSL**: Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
-- **S/MIME**: Send outgoing email using S/MIME signing.
-  - If you selected **Certificate**, select a PKCS certificate profile you previously created to authenticate the Exchange connection.
+- **SSL**: **Enable** to use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
+- **S/MIME**: **Enable S/MIME** to send outgoing email using S/MIME signing. When enabled, you can also encrypt email to recipients who can receive encrypted email, and decrypt email received from senders.
+  - If you selected **Certificate**, select a PKCS certificate profile you previously created to authenticate the Exchange connection, and/or encrypt email exchanges.
 - **Amount of email to synchronize**: Choose the number of days of email that you want to synchronize. Or select **Unlimited** to synchronize all available email.
-- **Allow messages to be moved to other email accounts**: Allows users to move email messages between different accounts they have configured on their device.
-- **Allow email to be sent from third-party applications**: Allow the user to select this profile as the default account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.
-- **Synchronize recently used email addresses**: Allows users to synchronize the list of email addresses that have been recently used on the device with the server.
+- **Allow messages to be moved to other email accounts**: **Enable** allows users to move email messages between different accounts they have configured on their device.
+- **Allow email to be sent from third-party applications**: **Enable** allows the user to select this profile as the default account for sending email, and allow third-party applications to open email in the native email app, for example, to attach files to email.
+- **Synchronize recently used email addresses**: **Enable** allows users to synchronize the list of email addresses that have been recently used on the device with the server.
 
 ## Next steps
 [Configure email settings in Intune](email-settings-configure.md)
