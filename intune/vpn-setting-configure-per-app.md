@@ -150,21 +150,32 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Choose **Mobile apps**.
-3. Click **Apps**.
-4. Select the app from the list of apps.
-5. Click **Assignments.**
-6. Click **Add group**.
-7. Select **Required** for the **Assignment type** in the **Add group** pane.
-6. Select the group you defined earlier and select to **Make this app required**.
-8. Select your VPN definition for the **VPN**.
+3. Choose **Mobile apps**.
+4. Click **Apps**.
+5. Select the app from the list of apps.
+6. Click **Assignments.**
+7. Click **Add group**.
+8. Select **Required** for the **Assignment type** in the **Add group** pane.
+9. Select the group you defined earlier and select to **Make this app required**.
+10. Select your VPN definition for the **VPN**.
  
     > [!NOTE]  
     > Sometimes the VPN definition takes up to a minute to retrieve the value. Wait for 3-5 minutes before your click **Save**.
 
-9. Click **OK** and click **Save**.
+11. Click **OK** and click **Save**.
 
     ![Associate an app with the VPN](./media/vpn-per-app-app-to-vpn.png)
+
+An association between an app and a profile will be removed during the next device check-in, when the following conditions exist:
+- The app was targeted with required install intent.
+- Both the profile and the app are targeted to the same group.
+- You remove the Per App VPN configuration from the app assignment.
+
+An association between an app and a profile will still exist until the end-user requests a reinstall from the company portal, when the following conditions exist:
+- The app was targeted with available install intent.
+- Both the profile and the app are targeted to the same group.
+- The end user requested app install from the company portal which results in app and profile being installed on the device.
+- You remove the Per App VPN configuration from the app assignment.
 
 ## Verify the connection on the iOS device
 
