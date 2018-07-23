@@ -396,12 +396,12 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: Configure Kiosk settings
-      href: kiosk-settings.md
-    - name: Configure Android kiosk settings
+    - name: Android kiosk settings
       href: android-kiosk-settings.md
     - name: Android enterprise kiosk settings
       href: android-enterprise-settings.md
+    - name: Windows 10 kiosk settings
+      href: kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
