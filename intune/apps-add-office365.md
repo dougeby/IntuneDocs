@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,7 +66,7 @@ Select the Office apps that you want to assign to devices.
 3. Select **OK**.
 
 >[!IMPORTANT]
-> After you've created the app suite, you cannot edit its properties. To configure different properties, delete the app suite and create a new one.
+> After you've created the app suite, you can edit its properties. To configure different properties, delete the app suite and create a new one.
 
 ## Configure app information
 
@@ -104,7 +104,7 @@ In this step, configure installation options for the app suite. The settings app
 	- **Languages**: Office is automatically installed in any supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite.
 
 >[!IMPORTANT]
-> After you've created the app suite, you cannot edit its properties. To configure different properties, delete the app suite and create a new one.
+> After you've created the app suite, you can edit its properties. To configure different properties, delete the app suite and create a new one.
 
 ## Finish up
 
