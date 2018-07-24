@@ -44,9 +44,13 @@ Now when browsing or searching for apps in the Company Portal app for Windows, y
 
 The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations.  
 
-|Tiles view|Details view|
-|---|---|
-|![01](/intune/media/tiles-installed-view-cpapp-1807.png)|![01](/intune/media/details-installed-view-cpapp-1807.png)|  
+Example screenshot showing the Tiles view:  
+ 
+![Screenshot of the Intune Company Portal app for Windows showing the isntalled apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+Example screenshot showing the Details view:  
+
+![Screenshot of the Intune Company Portal app for Windows showing the installed apps in details view.](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## Week of April 23, 2018
 #### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
