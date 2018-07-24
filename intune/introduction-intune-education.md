@@ -32,9 +32,9 @@ Intune for Education enables your teachers and students to be productive while p
 
 ![Intune for Education console compared against Intune console.](./media/intune-azure-vs-intuneEDU.png)
 
-Intune for Education lets you manage Windows 10 devices using the full MDM capabilities available in Intune. Intune can also manage additional platforms, such as iOS and Android, and is designed to let you access the full set of policies in the same console.
+Intune for Education lets you manage Windows 10 and iOS devices using the full MDM capabilities available in Intune. The full device management experience lets you manage Windows, iOS, and Android devices.  
 
-Intune for Education can be used by itself, or in harmony with the [full device management experience available in Intune](introduction-intune.md). It can also be used alongside the rest of the tools available in [Microsoft Education](https://microsoft.com/education), which makes it easy for you to use Intune for Education with other useful educational tools from Microsoft.
+Intune for Education can be used by itself, or in harmony with the [full device management experience available in Intune](introduction-intune.md). It can also be used alongside the rest of the tools available in [Microsoft Education](https://microsoft.com/education), which makes it easy for you to use Intune for Education with other useful educational tools from Microsoft.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 
