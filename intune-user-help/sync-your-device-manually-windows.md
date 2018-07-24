@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ All Windows devices can be synced from the device Settings app, including:
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## Sync from Company Portal app for Windows
+## Sync directly from Company Portal app for Windows
 Complete these steps to manually sync any Windows 10 device running Creator's Update (version 1703) or later.
 
 1.  Open the Company Portal app on your device.
@@ -52,7 +52,7 @@ Complete these steps to manually sync any Windows 10 device running Creator's Up
 
     ![Screenshot home page of Company Portal app, Settings highlighted](./media/RS1_homePage_settings_04.png)  
     
-    ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)    
+    ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)  
 
 ## Sync from Settings App 
 Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.
