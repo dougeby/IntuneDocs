@@ -106,7 +106,7 @@ Next, get the ID and key values of your Azure AD application. The following valu
     > [!IMPORTANT]
     > Copy and save this key immediately, as it's not shown again. This key value is needed with your third-party CA implementation. Be sure to review their guidance on how they want the Application ID, Authentication Key, and Tenant ID configured.
 
-The **Tenant ID** is the domain text after the @ sign in your account. For example, if your account is **admin@name.onmicrosoft.com**, then your tenant ID is **name.onmicrosoft.com**.
+The **Tenant ID** is the domain text after the @ sign in your account. For example, if your account is `admin@name.onmicrosoft.com`, then your tenant ID is **name.onmicrosoft.com**.
 
 [Get application ID and authentication key](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) lists the steps, and provides more details.
 

@@ -1,6 +1,6 @@
 ---
 title: Use APIs to onboard 3rd party certificate authorities - Microsoft Intune - Azure | Microsoft Docs
-description: Use the SCEP GitHub solution for third party certificate authorities (CA) to issue SCEP certificates to devices in Microsoft Intune. This solution includes Java and C# APIs that validate, send success and failure notifications to Intune, and use SSL socket factory when communicating with Intune. Also view an overview of the steps to test your SCEP CA configuration.
+description: Add or integrate the SCEP GitHub solution for third party certificate authorities (CA) to issue SCEP certificates to devices in Microsoft Intune. This solution includes Java and C# APIs that validate, send success and failure notifications to Intune, and use SSL socket factory when communicating with Intune. Also view an overview of the steps to test your SCEP CA configuration.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -22,7 +22,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Integrate with Intune SCEP management solution
+# Use APIs to add third-party CAs for SCEP to Intune
 
 In Microsoft Intune, you can add third-party certificate authorities (CA), and have these CAs issue and validate certificates using the Simple Certificate Enrollment Protocol (SCEP) protocol. [Add third-party certification authority](certificate-authority-add-scep-overview.md) provides an overview of this feature, and describes the Administrator tasks in Intune.
 
@@ -71,13 +71,13 @@ Integrating the library into your products includes the following steps. These s
 5. Include the library in the project that builds your SCEP server
 6. Complete the following tasks on the SCEP Server:
 
-    - Allow the admin to configure the [Azure Application Identifier, Azure Application Key, and Tenant ID](scep-libraries-apis#onboard-scep-server-in-azure) (in this article) that the library uses for authentication. Administrators should be allowed to update the Azure Application Key.
+    - Allow the admin to configure the [Azure Application Identifier, Azure Application Key, and Tenant ID](#onboard-scep-server-in-azure) (in this article) that the library uses for authentication. Administrators should be allowed to update the Azure Application Key.
     - Identify SCEP requests that include an Intune-generated SCEP password
     - Use the **Validate Request API** library to validate Intune-generated SCEP passwords
     - Use the library notification APIs to notify Intune about certificates issued for SCEP requests that have the Intune-generated SCEP passwords. Also notify Intune about errors that can occur when processing these SCEP requests.
     - Confirm that the server logs enough information to help admins troubleshoot issues
 
-7. Complete [integration testing](scep-libraries-apis#integration-testing) (in this article), and address any issues
+7. Complete [integration testing](#integration-testing) (in this article), and address any issues
 8. Give written guidance to the customer that explains:
 
     - How the SCEP Server needs to be onboarded in the Azure portal
@@ -273,7 +273,7 @@ Throws:
 Validating and testing that your solution is properly integrated with Intune is a must. The following lists an overview of the steps:
 
 1. Set up an [Intune trial account](account-sign-up.md).
-2. Onboard the [SCEP Server in the Azure portal](scep-libraries-apis#onboard-scep-server-in-azure) (in this article).
+2. Onboard the [SCEP Server in the Azure portal](#onboard-scep-server-in-azure) (in this article).
 3. [Configure the SCEP Server](certificates-scep-configure.md) with the IDs and key created when onboarding your SCEP server.
 4. [Enroll devices](device-enrollment.md) to test the scenarios in the [scenario testing matrix](Intune-Resource-Access/src/CsrValidation/doc/TestMatrix.csv).
 5. [Create a Trusted Root Certificate profile](certificates-scep-configure.md) for your test Certificate Authority.
