@@ -115,6 +115,9 @@ If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal
 ### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
 A confirmation will be required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
 
+#### Additional security settings for Windows installer <!-- 2282430 -->
+You will be able to allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You will be able to direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you will be able to enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items will not be indexed and will not show up in the results in Cortana or file explorer. The functionality for these options will be disabled by default. 
+
 ### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate" <!-- 2404851 -->
 By default, Android devices enrolled using Samsung Knox Mobile Enrollment will be marked as **corporate** under **Device Ownership**. You won't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
 
