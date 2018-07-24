@@ -44,6 +44,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+## Week of July 16, 2018  
+
+### More opportunities to sync in the Company portal app for Windows  
+The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the app's **Settings** page and initiate your sync.  For the updated procedure, see [Sync your Windows device manually](sync-your-device-manually-windows.md#sync-from-device-taskbar-or-start-menu). For a look at the new functionality see [What's new in the UI](what's-new-app-ui.md).   
+
 ## Week of July 9, 2018
 
 ### App management
