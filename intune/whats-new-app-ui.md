@@ -34,11 +34,19 @@ Learn what updates have been made to the UI for apps that your end users will se
 ## Week of July 16, 2018  
 
 ### More opportunities to sync in the Company portal app for Windows  
-The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the app's **Settings** page and initiate your sync.  For the updated procedure, see [Sync your Windows device manually](sync-your-device-manually-windows.md#sync-from-device-taskbar-or-start-menu).
+The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  For the updated procedure, see [Sync your Windows device manually](sync-your-device-manually-windows.md#sync-from-device-taskbar-or-start-menu).
 
-![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)
+![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
+### New browsing experiences in the Company portal app for Windows  
 
+Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date and installation status.  
+
+The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations.  
+
+|Tiles view|Details view|
+|---|---|
+|![01](/intune/media/tiles-installed-view-cpapp-1807.png)|![01](/intune/media/details-installed-view-cpapp-1807.png)|  
 
 ## Week of April 23, 2018
 #### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->

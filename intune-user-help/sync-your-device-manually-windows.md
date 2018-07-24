@@ -44,7 +44,7 @@ All Windows devices can be synced from the device Settings app, including:
 * [Windows Phone 8.1](#windows-phone-81)    
 
 ## Sync directly from Company Portal app for Windows
-Complete these steps to manually sync any Windows 10 device running Creator's Update (version 1703) or later. These steps cover how to Sync from within the app and from the app's menu options.
+Complete these steps to manually sync any Windows 10 device running Creator's Update (version 1703) or later.
 
 1.  Open the Company Portal app on your device.
 
@@ -56,13 +56,13 @@ Complete these steps to manually sync any Windows 10 device running Creator's Up
 
 ## Sync from device taskbar or Start menu   
 
-You can also sync devices without having to navigate through the app. These steps are useful if you have the app pinned directly to you taskbar or Start menu, and want to quickly sync.  
+You can also sync devices without having to navigate through the app. This way is useful if you have the app pinned directly to your taskbar or Start menu, and want to quickly sync.  
 
 1. Find the Company Portal app icon in your taskbar or Start menu.
 2. Right-click the app's icon so its menu (also referred to as a jump list) appears.  
-![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)
+![Screenshot of the Windows taskbar on a device's desktop. Company Portal app icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)
 
-3. Select **Sync this device**. The Company Portal app opens to the app **Settings** page and initiates your sync.   
+3. Select **Sync this device**. The Company Portal app opens to the **Settings** page and initiates your sync.   
 
 
 ## Sync from Settings App 
