@@ -60,7 +60,8 @@ You can also sync devices without having to navigate through the app. This way i
 
 1. Find the Company Portal app icon in your taskbar or Start menu.
 2. Right-click the app's icon so its menu (also referred to as a jump list) appears.  
-![Screenshot of the Windows taskbar on a device's desktop. Company Portal app icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)
+
+    ![Screenshot of the Windows taskbar on a device's desktop. Company Portal app icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
 3. Select **Sync this device**. The Company Portal app opens to the **Settings** page and initiates your sync.   
 
