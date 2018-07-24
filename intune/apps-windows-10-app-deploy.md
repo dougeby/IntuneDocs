@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 Microsoft Intune currently support a variety of apps types and deployment scenarios on Windows 10 devices. After you've added an app to Intune, you can assign the app to users and devices. The following information provides more details related to the supported Windows 10 scenarios. Additionally, the following information provides key details to note when deploying apps to Windows. 
 
-Line-of-business (LOB) apps and Microsoft Store for Business apps are the app types supported on Windows 10 devices.
+Line-of-business (LOB) apps and Microsoft Store for Business apps are the app types supported on Windows 10 devices. The file extensions for Windows apps include **.msi**, **.appx**, **.appxbundle**, **.msix** and **.msixbundle**.  
 
 > [!Note]
 > The minimum needed Windows 10 update to deploy apps in device context is [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
