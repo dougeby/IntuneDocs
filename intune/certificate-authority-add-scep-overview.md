@@ -24,14 +24,14 @@ ms.custom: intune-azure
 
 # Add third-party certification authority in Intune using SCEP
 
-In Microsoft Intune, third-party certification authorities (CA) can be added. These CAs can deliver certificates to mobile devices using the Simple Certificate Enrollment Protocol (SCEP) protocol. This feature can issue new certificates and renew certificates on Windows, iOS, Android, and macOS devices.
+In Microsoft Intune, third-party certification authorities (CA) can be added. These CAs can deliver certificates to mobile devices using the Simple Certificate Enrollment Protocol (SCEP). This feature can issue new certificates and renew certificates on Windows, iOS, Android, and macOS devices.
 
 There are two parts to using this feature: open-source API, and the Intune administrator tasks.
 
 **Part 1 - Use an open-source API**  
 Microsoft created an API that integrates with Intune to validate certificates, send success or failure notifications, and use SSL, specifically SSL socket factory, to communicate with Intune.
 
-The API is available on the [Intune SCEP API public GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) for you to download, and use in your solutions. Use this API with third-party SCEP servers to run custom challenge validation against Intune before delivering the certificate to a device.
+The API is available on the [Intune SCEP API public GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) for you to download, and use in your solutions. Use this API with third-party SCEP servers to run custom challenge validation against Intune before delivering a certificate to a device.
 
 [Integrate with Intune SCEP management solution](scep-libraries-apis.md) provides more details on using the API, its methods, and testing the solution you build.
 
@@ -62,7 +62,7 @@ The following diagram shows a detailed flow of third-party SCEP integration with
 
 ### Validate third-party certification authority
 
-Before integrating third-party certification authorities with Intune, confirm that the CA you're using supports Intune. [Third-party CA partners](certificate-authority-add-scep-overview#third-party certification-authority-partners) (in this article) includes a list. You can also check your certification authority's guidance for more information. The CA may include setup instructions specific to their implementation.
+Before integrating third-party certification authorities with Intune, confirm that the CA you're using supports Intune. [Third-party CA partners](#third-party certification-authority-partners) (in this article) includes a list. You can also check your certification authority's guidance for more information. The CA may include setup instructions specific to their implementation.
 
 ### Authorize communication between CA and Intune
 
@@ -72,7 +72,7 @@ Be sure you have the required permissions to register an Azure AD app. [Required
 
 **Step 1: Create an Azure AD application**
 
-1. Sign in to the [Azure portal](portal.azure.com). 
+1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **Azure Active Directory** > **App registrations** > **New application registration**.
 3. Enter a name and sign-on URL. Select **Web app / API** for the application type.
 4. Select **Create**.
@@ -108,7 +108,7 @@ Next, get the ID and key values of your Azure AD application. The following valu
 
 The **Tenant ID** is the domain text after the @ sign in your account. For example, if your account is `admin@name.onmicrosoft.com`, then your tenant ID is **name.onmicrosoft.com**.
 
-[Get application ID and authentication key](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) lists the steps, and provides more details.
+[Get application ID and authentication key](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) lists the steps to get these values, and provides more details on Azure AD apps.
 
 ### Configure and deploy a SCEP certificate profile
 As the administrator, create a SCEP certificate profile to target to users or devices. Then, assign the profile.
@@ -131,7 +131,7 @@ If you're a third-party CA interested in integrating your product with Intune, r
 - [Intune SCEP API GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
 - [Intune SCEP API guidance for third party CAs](scep-libraries-apis.md)
 
-## Next steps
+## See also
 
 - [Configure certificate profiles](certificates-scep-configure.md)
 - [Intune SCEP API GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
