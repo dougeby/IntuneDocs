@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### App management
 
 ####  Windows apps file extensions <!-- 1884873 -->
-The file extensions for Windows apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. Select an app type that allows you to upload an app package file, select the **App package file**, and then enter an installation file with the appropriate extension.
+The file extensions for Windows apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix*, and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. Select an app type that allows you to upload an app package file, select the **App package file**, and then enter an installation file with the appropriate extension.
 
 #### Line-of-business (LOB) app support for macOS <!-- 1895847 -->
 Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
@@ -75,7 +75,7 @@ This update includes S/MIME email encryption using a new imported certificate pr
 Supported on: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
-When you create a new macOS compliance policy (**Device compliance **> **Policies** > **Create policy** > **Platform: macOS** > **System security**), there are some new **Firewall** settings available: 
+When you create a new macOS compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: macOS** > **System security**), there are some new **Firewall** settings available: 
 
 - **Firewall**: Configure how incoming connections are handled in your environment.
 - **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This setting also blocks all sharing services.
