@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2018
+ms.date: 07/23/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,14 +44,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
-## Week of July 16, 2018
+## Week of July 23, 2018
 
 ### App management
 
 ####  Windows apps file extensions <!-- 1884873 -->
 The file extensions for Windows apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. Select an app type that allows you to upload an app package file, select the **App package file**, and then enter an installation file with the appropriate extension.
 
-#### Line-of-business (LOB) app support for macOS <-- 1895847 -->
+#### Line-of-business (LOB) app support for macOS <!-- 1895847 -->
 Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
 
 #### iOS built-in app support for kiosk mode <!-- 2051098 -->
@@ -90,7 +90,7 @@ To create the profile, open **Device configuration** > **Profiles** > **Create P
 
 Applies to Windows 10 and later.
 
-#### Kiosk - obsolete is grayed out, and can't be changed <--! 2149998 eeready -->
+#### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 eeready -->
 The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
 
 To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
