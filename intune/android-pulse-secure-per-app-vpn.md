@@ -68,7 +68,7 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
 7. Choose **Settings** > **Configure**.
 3. On the **Custom OMA-URI Settings** pane, choose **Add**.
 	- Enter a setting name.
-	- For **OMA-URI**, specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, where *Name* is the VPN profile name you noted in Step 1. In this example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+	- For **OMA-URI**, specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, where *Name* is the connection name you noted in Step 1. In this example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
 	- For **Data type**, specify **String**.
 	- For **Value**, create a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter **com.microsoft.office.excel;com.android.chrome**.
 
