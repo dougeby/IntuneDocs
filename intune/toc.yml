@@ -525,6 +525,7 @@
     - name: Enforce compliance on Macs managed with Jamf Pro
       href: conditional-access-assign-jamf.md
   - name: Protect device data
+    href: device-protect.md
     items:
     - name: Privacy and personal data
       href: privacy-personal-data.md

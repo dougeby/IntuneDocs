@@ -32,19 +32,17 @@ ms.custom: intune-enduser
 
 Learn how to rename your enrolled, managed device from the Company Portal website. Rename a device from its generic or default model name, to one that will help you quickly identify it.  
 
-1. On the [Company Portal website](https://portal.manage.microsoft.com/helpdesk), select the __Menu__ button > __Devices__.
+1. On the [Company Portal website](https://portal.manage.microsoft.com/HelpDeskDialog), select the __Menu__ button > __My Devices__.
 
 2. Select the device you want to rename.
 
-   ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png)
+![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)  
 
-3. Select **Rename**. If the rename option isn't visible at the top of your page, select **More (…)** > **Rename**. 
+3. Select **Rename**.  
 
-   ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
-
-   ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)  
+   ![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)  
     
 
 4. In the box where your device's name appears, type a new name for your device. Then tap the **Rename** button. Your device now appears with the new name.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/HelpDeskDialog).

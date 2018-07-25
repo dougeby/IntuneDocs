@@ -31,6 +31,27 @@ Learn what updates have been made to the UI for apps that your end users will se
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## Week of July 16, 2018  
+
+### More opportunities to sync in the Company portal app for Windows   
+The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  
+
+![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
+
+### New browsing experiences in the Company portal app for Windows  
+
+Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date and installation status.  
+
+The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations.  
+
+Example screenshot showing the Tiles view:  
+ 
+![Screenshot of the Intune Company Portal app for Windows showing the isntalled apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+Example screenshot showing the Details view:  
+
+![Screenshot of the Intune Company Portal app for Windows showing the installed apps in details view.](/intune/media/details-installed-view-cpapp-1807.png) 
+
 ## Week of April 23, 2018
 #### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
 The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. 

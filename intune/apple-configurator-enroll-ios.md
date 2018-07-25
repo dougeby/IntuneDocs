@@ -140,7 +140,7 @@ Apps requiring user affiliation, including the Company Portal app used for insta
 ### Export the profile as .mobileconfig to iOS devices
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Apple Configurator** > **Profiles** >  choose the profile to export > **Export Profile**.
-2. Under **Direct enrollment**, choose **Download profile**, and save the file.
+2. Under **Direct enrollment**, choose **Download profile**, and save the file. An enrollment profile file is only valid for two weeks at which time you must re-create it.
 3. Transfer the file to a Mac computer running [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) to push directly as a management profile to iOS devices.
 4. Prepare the device with Apple Configurator by using the following steps:
     1. On a Mac computer, open Apple Configurator 2.0.

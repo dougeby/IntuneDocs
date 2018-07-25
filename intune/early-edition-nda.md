@@ -61,6 +61,20 @@ When a device enrollment manager (DEM) signs in to the Company Portal app for Wi
 ### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You'll be able to use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you create or edit an enrollment profile, specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
 
+
+### Bulk delete devices on devices blade <!-- 1793693 -->
+You'll be able to delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
+
+### New Wi-Fi device configuration profile for Windows 10 and later <!-- 1879077 -->
+Currently, you can import and export Wi-Fi profiles using XML files. You'll be able to create a Wi-Fi device configuration profile directly in Intune, just like some other platforms.
+
+To create the profile, open **Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Wi-Fi**. 
+
+Applies to Windows 10 and later.
+
+###  Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+
 ### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
 When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you currently download a configuration package, and add it to your configuration profile. In a future update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
 
@@ -79,6 +93,24 @@ If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal
 
 ### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
 A confirmation will be required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
+
+
+#### Additional security settings for Windows installer <!-- 2282430 -->
+You will be able to allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You will be able to direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you will be able to enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items will not be indexed and will not show up in the results in Cortana or file explorer. The functionality for these options will be disabled by default. 
+
+### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate" <!-- 2404851 -->
+By default, Android devices enrolled using Samsung Knox Mobile Enrollment will be marked as **corporate** under **Device Ownership**. You won't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
+
+### Toggle to show or not show the End Session button on a Kiosk browser <!-- 2455253 -->
+You'll be able to configure whether or not Kiosk browsers show the End Session button. You can see the control at **Device configuration** > **Kiosk (preview)** > **Kiosk Web Browser**. If turned on, when a user clicks the button, the app prompts for confirmation to end the session. When confirmed, the browser clears all browsing data and navigates back to the default URL.
+
+### Create an eSIM cellular configuration profile <!-- 2564077 -->
+In **Device configuration**, you'll be able to create an eSIM cellular profile. You can import a file that contains cellular activation codes provided by your mobile operator. You can then deploy these profiles to your eSIM LTE enabled Windows 10 devices, such as the Surface Pro LTE and other eSIM capable devices.
+
+Check to see if your [devices support eSIM profiles](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
+
+Applies to Windows 10 and later. 
+
 
 
 
