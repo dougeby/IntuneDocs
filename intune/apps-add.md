@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,7 @@ The following table lists the specific app types and how you can add them in the
 | Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
 | iOS LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an iOS installation file with the extension **.ipa**.  |
 | Windows Phone LOB apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter a Windows Phone installation file with the extension **.xap**.  |
-| Windows LOB apps | LOB app | Select **Line-of-business** app as the app type, select the **App package file**, and then enter a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**. |
+| Windows LOB apps | LOB app | Select **Line-of-business** app as the app type, select the **App package file**, and then enter a Windows installation file with the extension **.msi**, **.appx**, **.appxbundle**, **.msix** and **.msixbundle**. |
 | Built-in iOS app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
@@ -115,6 +115,9 @@ In addition to understanding web apps, store apps, and LOB apps, you should also
 - **Apple Volume Purchasing Program for Business (iOS and MacOS)**: The iOS App Store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company. For more information, see [Manage iOS volume-purchased apps](vpp-apps-ios.md).
 - **Android work profile**: How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. All apps you install for Android work profiles come from the Managed Google Play store. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 - **Microsoft Store for Business (Windows 10)**: Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps in the Azure portal. For more information, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
+
+    > [!NOTE]
+    > The file extensions for Windows apps include **.msi**, **.appx**, **.appxbundle**, **.msix** and **.msixbundle**.  
 
 ## Before you add apps
 Before you begin to add and assign apps, consider the following points:
