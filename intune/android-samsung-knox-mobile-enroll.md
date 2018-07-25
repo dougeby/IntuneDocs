@@ -37,9 +37,8 @@ To enable Intune enrollment using Samsung KME, you use both the Intune and Samsu
     1. [Create an MDM profile](#create-mdm-profile)
     2. [Add devices](#add-devices)
     3. [Assign an MDM profile to the devices](#assign-an-mdm-profile-to-devices)
-2. In the Azure portal, [identify devices as corporate-owned](#identify-devices-as-corporate-owned).
-3. In the Knox portal, [configure end user sign in](#configure-how-end-users-sign-in).
-4. [Distribute the devices](#distribute-devices).
+2. In the Knox portal, [configure end user sign in](#configure-how-end-users-sign-in).
+3. [Distribute the devices](#distribute-devices).
 
 
 A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
@@ -83,22 +82,6 @@ To assign MDM Profiles to devices, supported Samsung Knox devices must be added 
 
 ## Assign an MDM profile to devices
 You must assign an MDM profile to added devices in the Knox Portal before they can be enrolled. [Visit the Samsung Knox Enrollment User Guide to learn about device configuration](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
-
-## Identify devices as corporate-owned
-You can identify devices enrolled using KME as corporate-owned. This must be done before enrolling the devices. This lets you perform additional management tasks and collect additional information such as the full phone number and an inventory of apps.
-
-Follow these steps to identify devices as corporate-owned:
-
-1. Export the list of devices from Knox Portal as a CSV file.
-
-2. Format the CSV file using IMEI or serial number as indicated [here](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number).
-
-3. In the Azure portal, upload the CSV file to **Device enrollment** > **Corporate device identifiers** > **Add**.
-
-Now identified devices that enroll will be marked as corporate-owned.
-
-> [!NOTE]
->Intune automatically assigns corporate-owned status to devices enrolled with [Device Enrollment Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) account.
 
 ## Configure how end users sign in
 
