@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,20 @@ When a device enrollment manager (DEM) signs in to the Company Portal app for Wi
 
 ### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You'll be able to use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you create or edit an enrollment profile, specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
+
+
+### Bulk delete devices on devices blade <!-- 1793693 -->
+You'll be able to delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
+
+### New Wi-Fi device configuration profile for Windows 10 and later <!-- 1879077 -->
+Currently, you can import and export Wi-Fi profiles using XML files. You'll be able to create a Wi-Fi device configuration profile directly in Intune, just like some other platforms.
+
+To create the profile, open **Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Wi-Fi**. 
+
+Applies to Windows 10 and later.
+
+###  Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
 
 ### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
 When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you currently download a configuration package, and add it to your configuration profile. In a future update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
