@@ -60,7 +60,7 @@ Before you can enroll iOS devices with DEP, you need a DEP token (.p7m) file fro
 You use the Apple DEP portal to create a DEP token. You also use the DEP portal to assign devices to Intune for management.
 
 > [!NOTE]
-> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal. You can delete the DEP token again from the Azure portal.
+> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal.
 
 ### Step 1. Download the Intune public key certificate required to create the token.
 
