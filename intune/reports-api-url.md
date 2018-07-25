@@ -7,8 +7,8 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
+ms.date: 07/25/2018
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -31,7 +31,7 @@ You can use the Intune Data Warehouse API with an account with specific role-bas
 
 ## Authorization
 
-Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize access to web applications and web APIs in your Azure AD tenant. This guide is language independent, and describes how to send and receive HTTP messages without using any of our open-source libraries. The OAuth 2.0 authorization code flow is described in [section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1) of the OAuth 2.0 specification.
+Azure Active Directory (Azure AD) uses OAuth 2.0 to enable you to authorize access to web applications and web APIs in your Azure AD tenant. This guide is language independent, and describes how to send and receive HTTP messages without using any open-source libraries. The OAuth 2.0 authorization code flow is described in [section 4.1](https://tools.ietf.org/html/rfc6749#section-4.1) of the OAuth 2.0 specification.
 
 For more information, see [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -49,7 +49,7 @@ The URL contains the following elements:
 | location | msua06 | The base URL can be found by viewing the Data Warehouse API blade in the Azure portal. |
 | entity-collection | dates | The name of the OData entity collection. For more information on collections and entities in the data model, see [Data Model](reports-ref-data-model.md). |
 | api-version | beta | Version is the version of the API to access. For more information, see [Version](#API-version-information). |
-
+| maxhistorydays | 7 | The maximum number of days of history to retrieve. This parameter can be supplied to any collection, but will only take effect for collections that include `dateKey` as a part of their key property. See [DateKey Range Filters](reports-api-url.md#datekey-range-filters) for more information. |
 
 ## API version information
 
@@ -58,3 +58,26 @@ The current version of the API is: `beta`.
 ## OData query options
 
 The current version supports the following OData query parameters: `$filter, $orderby, $select, $skip,` and `$top`.
+
+## DateKey Range Filters
+
+`DateKey` range filters may be used to limit the amount of data to download for some of the collections with `dateKey` as a key property. The `DateKey` filter can be used to optimize service performance by providing the following `$filter` query parameter:
+
+1.	`DateKey` alone in the `$filter`, supporting the `lt/le/eq/ge/gt` operators and joining with the logic operator `and`, where they can be mapped to a begin date and/or end date.
+2.	`maxhistorydays` is supplied as custom query option.<br>
+
+## Filter examples
+
+> [!NOTE]
+> The the filter examples assume today is 2/21/2018.
+
+|                             Filter                             |           Performance Optimization           |                                          Description                                          |
+|:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
+|    `maxhistorydays=7`                                            |    Full                                      |    Return data with `DateKey` between 20180214 and 20180221.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Return data with `DateKey` equal to 20180214.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Return data with `DateKey` between 20180214 and 20180220.                                     |
+|    `maxhistorydays=7&$filter=Id gt 1`                            |    Partial, Id gt 1 will not be optimized    |    Return data with `DateKey` between 20180214 and 20180221, and Id greater than 1.             |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Return data with `DateKey` equal to 20180214. `maxhistorydays` is ignored.                            |
+|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost.                              |
+|    `$filter=DateKey ne 20180214`                                 |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost.                              |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost. `maxhistorydays` ignored.    |
