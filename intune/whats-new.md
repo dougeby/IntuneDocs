@@ -36,14 +36,98 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 <!-- Common categories:  
 ### App management
+### Device configuration
 ### Device enrollment
 ### Device management
-### Device configuration
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
 
 -->   
+## Week of July 16, 2018
+
+### App management
+
+####  Windows apps file extensions <!-- 1884873 -->
+The file extensions for Windows apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. Select an app type that allows you to upload an app package file, select the **App package file**, and then enter an installation file with the appropriate extension.
+
+#### Line-of-business (LOB) app support for macOS <-- 1895847 -->
+Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
+
+#### iOS built-in app support for kiosk mode <!-- 2051098 -->
+In addition to Store Apps and Managed Apps, you can now select a Built-In App (such as Safari) that runs in kiosk mode on an iOS device.
+
+#### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
+As the Microsoft Intune admin, you have greater ability to edit your Office 365 Pro Plus app deployments. Additionally, you no longer have to delete your deployments to change any of the suite’s properties. In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  
+
+
+### Device configuration
+
+#### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
+This update includes S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
+
+- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
+- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
+- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
+- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
+- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
+
+Supported on: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
+When you create a new macOS compliance policy (**Device compliance **> **Policies** > **Create policy** > **Platform: macOS** > **System security**), there are some new **Firewall** settings available: 
+
+- **Firewall**: Configure how incoming connections are handled in your environment.
+- **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This settings also blocks all sharing services.
+- **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests. The device continues to answer incoming requests for authorized apps.
+
+Applies to: macOS 10.12 and later
+
+#### New Wi-Fi device configuration profile for Windows 10 and later <!-- 1879077 -->
+Currently, you can import and export Wi-Fi profiles using XML files. With this update, you can create a Wi-Fi device configuration profile directly in Intune, just like some other platforms.
+
+To create the profile, open **Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Wi-Fi**. 
+
+Applies to Windows 10 and later.
+
+#### Kiosk - obsolete is grayed out, and can't be changed <--! 2149998 eeready -->
+The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
+
+To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
+
+Applies to Windows 10 and later, Windows Holographic for Business
+
+#### APIs to use 3rd party certification authorities <!-- 2184013 -->
+In this update, there is a Java API that enables third party certificate authorities to integrate with Intune and SCEP. Then, users can add the SCEP certificate to a profile, and apply it to devices using MDM.
+
+Currently, Intune supports [SCEP requests using Active Directory Certificate Services](certificates-scep-configure.md).
+
+#### Toggle to show or not show the End Session button on a Kiosk browser <!-- 2455253 -->
+You can now configure whether or not Kiosk browsers show the End Session button. You can see the control at **Device configuration** > **Kiosk (preview)** > **Kiosk Web Broswer**. If turned on, when a user clicks the button, the app prompts for confirmation to end the session. When confirmed, the browser clears all browsing data and navigates back to the default URL.
+
+#### Create an eSIM cellular configuration profile <!-- 2564077 -->
+In **Device configuration**, you can create an eSIM cellular profile. You can import a file that contains cellular activation codes provided by your mobile operator. You can then deploy these profiles to your eSIM LTE enabled Windows 10 devices, such as the Surface Pro LTE and other eSIM capable devices.
+
+Check to see if your [devices support eSIM profiles](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
+
+Applies to Windows 10 and later. 
+
+
+
+
+### Device enrollment
+
+#### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate". <!-- 2404851 -->
+By default, Android devices enrolled using Samsung Knox Mobile Enrollment are now marked as **corporate** under **Device Ownership**. You don't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
+
+### Device management
+
+#### Bulk delete devices on devices blade <!-- 1793693 -->
+
+You can now delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
+
+
+
 ## Week of July 9, 2018
 
 ### App management
