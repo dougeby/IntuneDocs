@@ -344,7 +344,7 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
     b.  Turn on the appropriate capabilities. For detailed information about each capability and how to determine the correct values, see [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in the iOS Developer Library.
 
-    c.  Note any IDs that you created during the process.
+    c.  Note any IDs that you created during the process. These may also be referred to as the `AppIdentifierPrefix` values.
 
     d.  Build and sign your app to be wrapped.
 
@@ -354,7 +354,7 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
     b.  Create a provisioning profile for your app. For instructions, see [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
-    c.  In your provisioning profile, enable the same entitlements that you have in your app. You will need to supply the same IDs that you specified during the development of your app.
+    c.  In your provisioning profile, enable the same entitlements that you have in your app. You will need to supply the same IDs (the `AppIdentifierPrefix` values) that you specified during the development of your app. 
 
     d.  Finish the provisioning profile wizard and download your file.
 
