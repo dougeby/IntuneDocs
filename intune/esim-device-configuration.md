@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/24/2018
+ms.date: 7/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,10 @@ ms.custom: intune-azure
 
 ---
 
-# Configure eSIM cellular profiles in Intune
+# Configure eSIM cellular profiles in Intune - Public preview
+
+> [!NOTE]
+> Microsoft would like to hear from you. Send questions, or start a discussion by emailing `eSIMonIntune@microsoft.com`.
 
 ## Introduction
 
@@ -55,17 +58,17 @@ This article guides you through these steps.
 
 The following devices have been announced as eSIM-capable, or are in-market today. Also, check if [your device supports eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
 
-- Samsung Galaxy Book
-- Surface Pro LTE
-- Asus Transformer Mini T103
+- Acer Swift 7
 - Asus NovoGo TP370QL
 - Asus TP401
-- Lenovo Miix 630
-- Lenovo T480
-- Acer Swift 7
+- Asus Transformer Mini T103
+- HP Elitebook G5
 - HP Envy x2
 - HP Probook G5
-- HP Elitebook G5
+- Lenovo Miix 630
+- Lenovo T480
+- Samsung Galaxy Book
+- Surface Pro LTE
 
 ## Step 1: Add cellular activation codes
 
@@ -105,15 +108,13 @@ When working with the csv file with the activation codes, be sure you or your mo
 
 Create a Device group that includes the eSIM capable devices. [Add groups](groups-add.md) lists the steps.
 
-## Step 3: Assign eSIM activation codes to devices
-
-Assign the profile to the Azure AD group that includes your eSIM devices.
-
 > [!NOTE]
 > - Only devices are targeted, users aren't targeted.
 > - We recommend creating a static Azure AD device group that includes your eSIM devices. Using a group confirms you target only eSIM devices.
 
-#### Assign steps
+## Step 3: Assign eSIM activation codes to devices
+
+Assign the profile to the Azure AD group that includes your eSIM devices.
 
 1. In the [Azure portal](https://portal.azure.com/), select **All Services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device configuration** > **eSIM cellular** > **Profiles**.
@@ -193,7 +194,7 @@ The eSIM profile is also removed when the device is unenrolled by the user, or w
 - Be sure your csv file is properly formatted. Confirm the file doesn't include duplicate codes, doesn't include multiple mobile operators, or doesn't include different data plans. Remember, each file must be unique to a mobile operator and cellular data plan.
 - Create a static device Azure AD group that only includes the eSIM devices that are targeted.
 - If there's an issue with the deployment status, check the following:
-  - **File format not proper**: See [Step 1: Add cellular activation codes](#step-1:-add-cellular-activation-codes) on how to properly format your file.
+  - **File format not proper**: See **Step 1: Add cellular activation codes** (in this article) on how to properly format your file.
   - **Cellular activation failure, contact mobile operator**: The activation code may not be activated within their network. Or, the profile download and cellular activation failed.
 
 ## Next steps
