@@ -38,18 +38,16 @@ After you reset a device, it no longer appears in the Company Portal. Previously
 > [!Note]
 > You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset.  
 
-1. Open the [Company Portal website](https://portal.manage.microsoft.com/helpdesk) and select the __Menu__ button > __Devices__.
+1. Open the [Company Portal website](https://portal.manage.microsoft.com/#helpdeskDeskDialog) and select the __Menu__ button > __My Devices__.
 
 2. Select the device you want to reset.
 
-    ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png)
+    ![A screenshot of the My Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3. Select **Reset**. If the reset option isn't visible at the top of your page, select **More (…)** > **Reset**. 
+3. The device will open in a popup window. Select **Reset**.  
 
-   ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
-  
-   ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)    
+ ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
 4. A message appears to warn that you are about to erase all content on your device. Tap **Reset** to confirm.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/#helpdeskDeskDialog).
