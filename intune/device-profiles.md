@@ -120,6 +120,13 @@ This feature supports:
 - macOS
 - Windows 8.1 (import only)
 
+## eSIM cellular
+
+[eSIM cellular profiles](esim-device-configuration.md) shows you how to enable and use eSIM on your managed devices for Internet and data access. After getting activation codes from your mobile operator, you can use Intune to import these activation codes, and then assign to your devices.
+
+This feature supports:
+- Windows 10 and later
+
 ## Education
 [Education settings - Windows 10](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
 
