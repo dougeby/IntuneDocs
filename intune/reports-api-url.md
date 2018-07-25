@@ -40,7 +40,10 @@ For more information, see [Authorize access to web applications using OAuth 2.0 
 The Data Warehouse API endpoints read the entities for each set. The API supports a **GET** HTTP verb, and a subset of query options.
 
 The URL for Intune uses the following format:  
-`https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}`
+`https://fef.{location}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity-collection}?api-version={api-version}`
+
+> [!NOTE]
+> In the above URL, replace  `{location}`, `{entity-collection}`, and `{api-version}` based on the details provided in the table below.
 
 The URL contains the following elements:
 
@@ -49,7 +52,7 @@ The URL contains the following elements:
 | location | msua06 | The base URL can be found by viewing the Data Warehouse API blade in the Azure portal. |
 | entity-collection | dates | The name of the OData entity collection. For more information on collections and entities in the data model, see [Data Model](reports-ref-data-model.md). |
 | api-version | beta | Version is the version of the API to access. For more information, see [Version](#API-version-information). |
-| maxhistorydays | 7 | The maximum number of days of history to retrieve. This parameter can be supplied to any collection, but will only take effect for collections that include `dateKey` as a part of their key property. See [DateKey Range Filters](reports-api-url.md#datekey-range-filters) for more information. |
+| maxhistorydays | 7 | (Optional) The maximum number of days of history to retrieve. This parameter can be supplied to any collection, but will only take effect for collections that include `dateKey` as a part of their key property. See [DateKey Range Filters](reports-api-url.md#datekey-range-filters) for more information. |
 
 ## API version information
 
