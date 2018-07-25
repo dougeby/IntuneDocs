@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 ## Introduction
 
-eSIM is an embedded SIM chip that isn't removed from your device. An eSIM lets you connect to the Internet over a cellular data connection on an eSIM-capable device, such as the [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). With an eSIM, you don't need to get a SIM card from your mobile operator, and you can quickly switch between mobile operators and data plans.
+eSIM is an embedded SIM chip, and lets you connect to the Internet over a cellular data connection on an eSIM-capable device, such as the [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). With an eSIM, you don't need to get a SIM card from your mobile operator, and you can quickly switch between mobile operators and data plans.
 
 For example, you have a cellular data plan for work, and another data plan with a different mobile operator for personal use. When traveling, you can get Internet access by finding mobile operators with data plans in that area.
 
@@ -197,3 +197,4 @@ The eSIM profile is also removed when the device is unenrolled by the user, or w
   - **Cellular activation failure, contact mobile operator**: The activation code may not be activated within their network. Or, the profile download and cellular activation failed.
 
 ## Next steps
+[Configure device profiles](device-profiles.md)
