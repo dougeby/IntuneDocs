@@ -29,7 +29,7 @@ ms.technology:
 
 Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is only available for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
 
-The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then device attempt to download and install the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
+The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
 This feature supports devices running iOS 10.3 and later.
 
@@ -38,7 +38,10 @@ This feature supports devices running iOS 10.3 and later.
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Software updates** > **Update policies for iOS** > **Create**.
 4. Enter a name and description for the policy.
-5. Select **Settings**. Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the days of the week, time zone, start time, and end time.
+5. Select **Settings**. 
+
+  Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the days of the week, time zone, start time, and end time.
+
 6. Select **OK** to save your changes. Select **Create** to create the policy.
 
 The profile is created and shown in the policy list. Apple MDM doesn't allow you to force a device to install updates by a certain time or date. 
@@ -49,16 +52,16 @@ The profile is created and shown in the policy list. Apple MDM doesn't allow you
 2. Choose an existing policy > **Properties**.
 3. Update the restricted time:
 
-  1. Choose the days of the week
-  2. Choose the time zone that this policy is applied
-  3. Enter the start and end time for the blacklisted hours
+    1. Choose the days of the week
+    2. Choose the time zone that this policy is applied
+    3. Enter the start and end time for the blacklisted hours
 
-  > [!NOTE]
-  > If the **Start time** and **End time** are both set to 12am, then the the maintenance time check is turned off.
+    > [!NOTE]
+    > If the **Start time** and **End time** are both set to 12am, then the the maintenance time check is turned off.
 
 ## Assign the policy to users
 
-Existing policies are assigned to groups, users, or devices. When they are assigned, the policy is applied.
+Existing policies are assigned to groups, users, or devices. When assigned, the policy is applied.
 
 1. In **Software updates**, select **Update policies for iOS**.
 2. Choose an existing policy > **Assignments**. 
@@ -69,5 +72,5 @@ The devices used by the users targeted by the policy are evaluated for update co
 
 ## Monitor device installation failures
 <!-- 1352223 -->
-**Software updates** > **Installation failures for iOS devices** shows a list of supervised iOS devices that are targeted by an update policy, attempted an update, and couldn't be updated. For each device, you can view the status on why the device hasn't been automatically updated. Healthy, up-to-date devices aren't shown in the list. "Up-to-date" devices include the latest update that the device itself supports.
+**Software updates** > **Installation failures for iOS devices** shows a list of supervised iOS devices targeted by an update policy, attempted an update, and couldn't be updated. For each device, you can view the status on why the device hasn't been automatically updated. Healthy, up-to-date devices aren't shown in the list. "Up-to-date" devices include the latest update that the device itself supports.
 
