@@ -56,7 +56,7 @@ To support Android work profile devices and Android kiosk devices, you must conn
 
 ## Disconnect your Android enterprise administrative account
 
-You can turn off Android enterprise enrollment and management. Choosing **Disconnect** in the Intune administration console removes all enrolled Android work profile devices and kiosk devices from enrollment. It also removes the relationship between the Android enterprise account and Intune.
+You can turn off Android enterprise enrollment and management. To do this, you must first retire any enrolled Android work profile devices. Then, choose **Disconnect** in the Intune administration console to remove all enrolled Android work profile devices and kiosk devices from enrollment. This also removes the relationship between the Android enterprise account and Intune.
 
 1. As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
 2. Choose **Device enrollment** > **Android enrollment** > **Managed Google Play** > **Disconnect**.
