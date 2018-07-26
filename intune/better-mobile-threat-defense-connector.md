@@ -37,7 +37,7 @@ You can configure conditional access policies based on Better Mobile risk assess
 
 The Better Mobile app is installed and run on mobile devices. This app captures file system, network stack, device, and application telemetry where available, and then sends the data to the Better Mobile cloud service to assess the device's risk for mobile threats.
 
-The Intune device compliance policy includes a rule for Better Mobile Threat Defense, which is based on the Better Mobile risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found noncompliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Better Mobile app installed in their devices to resolve the issue and regain access to corporate resources.
+The Intune device compliance policy includes a rule for Mobile Threat Defense, which is based on the Better Mobile risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled. If the device is found noncompliant, users are blocked access to corporate resources like Exchange Online and SharePoint Online. Users also receive guidance from the Better Mobile app installed in their devices to resolve the issue and regain access to corporate resources.
 
 ## Sample scenarios
 
