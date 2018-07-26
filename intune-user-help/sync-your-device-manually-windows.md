@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 When app installation speed is less than ideal, initiate a manual device sync. Manual syncs force your device to connect with Intune for the latest updates and communications. Installation speed may increase after the device sync is complete.
 
-Intune supports manual sync from the Company Portal app and from the device Settings app. 
+Intune supports manual sync from the Company Portal app, desktop taskbar or Start menu, and from the device Settings app. 
 
 Company Portal app functionality is supported on Windows 10 devices running the Creator's Update (1703) or later. 
 * [Sync from Company Portal app](#Sync-from-Company-Portal-app-for-Windows)  
@@ -55,7 +55,18 @@ Complete these steps to manually sync any Windows 10 device running Creator's Up
     ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)  
 
 ## Sync from Settings App 
-Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.
+Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.  
+
+## Sync from device taskbar or Start menu   
+
+You can also access the sync control outside of the app, from your device's desktop. This way is useful if you have the app pinned directly to your taskbar or Start menu, and want to quickly sync.  
+
+1. Find the Company Portal app icon in your taskbar or Start menu.  
+2. Right-click the app's icon so its menu (also referred to as a jump list) appears.  
+
+    ![Screenshot of the Windows taskbar on a device's desktop. Company Portal app icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
+
+3. Select **Sync this device**. The Company Portal app opens to the **Settings** page and initiates your sync.  
 
 ### Windows 10 desktop
 1. On your device, select **Start** > **Settings**.
