@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,19 +58,9 @@ The **Apps** page will introduce an **Installed** view that lets you see details
 ### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
 When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
 
-### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
-A future update will include an S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
-
-- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
-- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
-- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
-- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
-- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
-
-Supported on: Windows, Windows Phone 10, macOS, iOS, Android
-
 ### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You'll be able to use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you create or edit an enrollment profile, specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
+
 
 ### Bulk delete devices on devices blade <!-- 1793693 -->
 You'll be able to delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
@@ -82,25 +72,14 @@ To create the profile, open **Device configuration** > **Profiles** > **Create P
 
 Applies to Windows 10 and later.
 
-###  Windows line-of-business (LOB) apps file extension rename <!-- 1884873 -->
-The file extensions for Windows LOB apps will be renamed from *.appx* and *.appxbundle* to *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+###  Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
 
 ### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
 When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you currently download a configuration package, and add it to your configuration profile. In a future update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
 
 Applies to Windows 10 and later.
 
-### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
-The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) will be obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). The **Kiosk - Obsolete** feature will be grayed out, and the user interface can't be changed or updated. 
-
-To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
-
-Applies to Windows 10 and later, Windows Holographic for Business
-
-### APIs to use 3rd party certification authorities <!-- 2184013 -->
-There will be a Java API that enables third-party certificate authorities to integrate with Intune and SCEP. Then, users can add the SCEP certificate to a profile, and apply it to devices using MDM.
-
-Currently, Intune supports [SCEP requests using Active Directory Certificate Services](certificates-scep-configure.md).
 
 ### Check for SCCM compliance <!-- 2192052 -->
 A future update will include a new System Center Configuration Manager (SCCM) compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). SCCM sends signals to Intune compliance. Using the Intune setting, you can require all SCCM signals to return "compliant".
@@ -115,20 +94,9 @@ If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal
 ### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
 A confirmation will be required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
 
-### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate" <!-- 2404851 -->
-By default, Android devices enrolled using Samsung Knox Mobile Enrollment will be marked as **corporate** under **Device Ownership**. You won't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
 
-### Toggle to show or not show the End Session button on a Kiosk browser <!-- 2455253 -->
-You'll be able to configure whether or not Kiosk browsers show the End Session button. You can see the control at **Device configuration** > **Kiosk (preview)** > **Kiosk Web Browser**. If turned on, when a user clicks the button, the app prompts for confirmation to end the session. When confirmed, the browser clears all browsing data and navigates back to the default URL.
-
-### Create an eSIM cellular configuration profile <!-- 2564077 -->
-In **Device configuration**, you'll be able to create an eSIM cellular profile. You can import a file that contains cellular activation codes provided by your mobile operator. You can then deploy these profiles to your eSIM LTE enabled Windows 10 devices, such as the Surface Pro LTE and other eSIM capable devices.
-
-Check to see if your [devices support eSIM profiles](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
-
-Applies to Windows 10 and later. 
-
-
+#### Additional security settings for Windows installer <!-- 2282430 -->
+You will be able to allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You will be able to direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you will be able to enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items will not be indexed and will not show up in the results in Cortana or file explorer. The functionality for these options will be disabled by default. 
 
 
 <!-- 1806 start -->
@@ -136,14 +104,6 @@ Applies to Windows 10 and later.
 
 ### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
 On iOS devices, Intune admins will be able to block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user will receive a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, will be blocked and device users will not see them. Device users will only see the dialog message once. 
-
-### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
-When you create a new macOS compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: macOS** > **System security**), there will be some new **Firewall** settings available: 
-- **Firewall**: Configure how incoming connections are handled in your environment.
-- **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This setting also blocks all sharing services.
-- **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests. The device continues to answer incoming requests for authorized apps.
-
-Applies to: macOS 10.12 and later
 
 ### Require non-biometric passcode on app launch and timeout <!-- 1506985 -->
 
@@ -166,23 +126,11 @@ We’re adding new features, based on feedback from customers, to the Company Po
 The update is currently in preview. You can register to join the preview at http://aka.ms/webcpflighting
 
 
-### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
-As the Microsoft Intune admin, you will have greater ability to edit your Office 365 Pro Plus app deployments. In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  
-
 <!-- 1805 start -->
 
 ### Require non-biometric passcode on cold app launch and timeout <!-- 1506985 --> 
 
 By requiring a non-biometric passcode on cold app launch and after admin-specified timeout, Intune will provide improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings will affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings will enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Mobile apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings.
-
-### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
-The Intune IT admin will be able to enforce a specified list of Android manufacturers, and/or iOS models through Intune App Protection Policies. The IT admin can provide a semicolon separated list of manufacturers for Android policies and device models for iOS policies. Intune App Protection Policies are for Android and iOS only. There will be two separate actions that can be performed on this specified list:
-- A block from app access on devices that are not specified.
-- Or, a selective wipe of corporate data on devices that are not specified. 
-
-The user will be unable to access the targeted application if the requirements through the policy are not met. Based on settings, the user may either be blocked, or selectively wiped of their corporate data within the app. On iOS devices, this feature requires the participation of applications (i.e WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for the minimum version settings to be enforced for the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. On Android, this feature requires the latest Company Portal. 
-
-On end-user devices, the Intune client would take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Mobile apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md).
 
 
 <!-- 1803 start -->

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/18/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -100,7 +100,7 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 | Setting name | More information | Use when |
 |---|---|---|
 | **Client certificate for client authentication (Identity certificate)** |  Choose the SCEP certificate profile used to authenticate the connection. | EAP type is **EAP-TLS** |
-| **Authentication method** | Select the authentication method for the connection:<br><br>- **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:<br><br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br><br>- **Identity privacy (outer identity)**: Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** or * |
+| **Authentication method** | Select the authentication method for the connection:<br><br>- **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:<br><br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br><br>- **Identity privacy (outer identity)**: Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** |
 
 ## Use an imported settings file
 
