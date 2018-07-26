@@ -1,11 +1,11 @@
 ---
-title: Use third-party CAa with SCEP in Microsoft Intune - Azure | Microsoft Docs
-description: In Microsoft Intune, you can add a vendor or third-party certificate authority (CA) to issue certificates to mobile devices using the SCEP protocol. In this overview, an Azure Active Directory (AAD) application gives Microsoft Intune permissions to validate certificates. Then, use the application ID, authentication key, and tenant ID of the AAD application in the setup of your SCEP server to issue certificates. 
+title: Use third-party CA with SCEP in Microsoft Intune - Azure | Microsoft Docs
+description: In Microsoft Intune, you can add a vendor or 3rd party certificate authority (CA) to issue certificates to mobile devices using the SCEP protocol. In this overview, an Azure Active Directory (Azure AD) application gives Microsoft Intune permissions to validate certificates. Then, use the application ID, authentication key, and tenant ID of the AAD application in the setup of your SCEP server to issue certificates. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Add third-party certification authority in Intune using SCEP
+# Add partner certification authority in Intune using SCEP
 
 In Microsoft Intune, third-party certification authorities (CA) can be added. These CAs can deliver certificates to mobile devices using the Simple Certificate Enrollment Protocol (SCEP). This feature can issue new certificates and renew certificates on Windows, iOS, Android, and macOS devices.
 
@@ -36,9 +36,9 @@ The API is available on the [Intune SCEP API public GitHub repository](http://gi
 [Integrate with Intune SCEP management solution](scep-libraries-apis.md) provides more details on using the API, its methods, and testing the solution you build.
 
 **Part 2 - Create the application and profile**  
-Using an Azure Active Directory (AAD) application, you can delegate rights to Intune to handle SCEP requests coming from devices. The AAD application includes application ID and authentication key values that are used within the API solution the developer creates. Administrators can then create and deploy SCEP certificates profiles using Intune. You can also view reports on the deployment status on the devices.
+Using an Azure Active Directory (Azure AD) application, you can delegate rights to Intune to handle SCEP requests coming from devices. The Azure AD application includes application ID and authentication key values that are used within the API solution the developer creates. Administrators can then create and deploy SCEP certificates profiles using Intune. You can also view reports on the deployment status on the devices.
 
-This article provides an overview of this feature from an Administrator-perspective, including creating the Azure Active Directory (AAD) application.
+This article provides an overview of this feature from an Administrator-perspective, including creating the Azure AD application.
 
 ## Overview
 
@@ -62,7 +62,7 @@ The following diagram shows a detailed flow of third-party SCEP integration with
 
 ### Validate third-party certification authority
 
-Before integrating third-party certification authorities with Intune, confirm that the CA you're using supports Intune. [Third-party CA partners](#third-party certification-authority-partners) (in this article) includes a list. You can also check your certification authority's guidance for more information. The CA may include setup instructions specific to their implementation.
+Before integrating third-party certification authorities with Intune, confirm that the CA you're using supports Intune. [Third-party CA partners](#third-party-certification-authority-partners) (in this article) includes a list. You can also check your certification authority's guidance for more information. The CA may include setup instructions specific to their implementation.
 
 ### Authorize communication between CA and Intune
 
