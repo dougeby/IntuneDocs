@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -273,9 +273,9 @@ Validating and testing that your solution is properly integrated with Intune is 
 1. Set up an [Intune trial account](account-sign-up.md).
 2. Onboard the [SCEP Server in the Azure portal](#onboard-scep-server-in-azure) (in this article).
 3. [Configure the SCEP Server](certificates-scep-configure.md) with the IDs and key created when onboarding your SCEP server.
-4. [Enroll devices](device-enrollment.md) to test the scenarios in the [scenario testing matrix](Intune-Resource-Access/src/CsrValidation/doc/TestMatrix.csv).
+4. [Enroll devices](device-enrollment.md) to test the scenarios in the [scenario testing matrix](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv).
 5. [Create a Trusted Root Certificate profile](certificates-scep-configure.md) for your test Certificate Authority.
-6. Create SCEP profiles to test the scenarios listed in the [scenario testing matrix](Intune-Resource-Access/src/CsrValidation/doc/TestMatrix.csv).
+6. Create SCEP profiles to test the scenarios listed in the [scenario testing matrix](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv).
 7. [Assign the profiles](device-profile-assign.md) to users that enrolled their devices.
 8. Wait for the devices to sync with Intune. Or, manually [sync the devices](device-sync.md).
 9. Confirm the Trusted Root Certificate and SCEP [profiles are deployed to the devices](device-profile-monitor.md).
