@@ -53,7 +53,7 @@ Example screenshot showing the Details view:
 ![Screenshot of the Intune Company Portal app for Windows showing the installed apps in details view.](/intune/media/details-installed-view-cpapp-1807.png) 
 
 ## Week of April 23, 2018
-#### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
+### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->
 The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. 
 
 ![Screenshot of the Company Portal app dashboard showing the Fluent Design navigation view](./media/1804_WindowsCP_Fluent_01.png)
@@ -61,7 +61,7 @@ The Intune Company Portal app for Windows 10 has been updated with the [Fluent D
 
 ## Week of April 2, 2018
 
-#### User experience update for the Company Portal app for iOS <!-- 1412866 -->
+### User experience update for the Company Portal app for iOS <!-- 1412866 -->
 We've released a major user experience update to the Company Portal app for iOS. The update features a complete visual redesign that includes a modernized look and feel. We've maintained the functionality of the app, but increased its usability and accessibility.  
 
 You'll also see:
@@ -76,7 +76,7 @@ You'll also see:
 |*Combined with previous step*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-#### Improvements to the language in the Company Portal app for Windows <!---1683758--->
+### Improvements to the language in the Company Portal app for Windows <!-- 1683758 -->
 We've improved the language in the Company Portal for Windows 10 to be more user-friendly and specific to your company.
 
 |Before|After|
@@ -86,7 +86,7 @@ We've improved the language in the Company Portal for Windows 10 to be more user
 
 ## Week of March 12, 2018
 
-#### Company Portal for Android visual updates <!--976944 -->
+### Company Portal for Android visual updates <!-- 976944 -->
 
 We've updated the Company Portal app for Android to follow Android's [Material Design](https://material.io/) guidelines.
 
@@ -103,7 +103,7 @@ We've updated the Company Portal app for Android to follow Android's [Material D
 
 ## Week of November 27, 2017
 
-### New "Device Categories" step in guided setup for the Company Portal app for Windows 10 <!---1335292--->
+### New "Device Categories" step in guided setup for the Company Portal app for Windows 10 <!-- 1335292 -->
 
 If you've enabled [device group mapping](device-group-mapping.md), the Company Portal app for Windows 10 now walks your users through selecting a device category after enrolling their device.
 
@@ -139,14 +139,14 @@ The Settings page in the Company Portal app for Windows 10 has been updated to m
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### Search improvements to the Company Portal apps and website <!--1418189-->
+### Search improvements to the Company Portal apps and website <!-- 1418189 -->
 The Company Portal apps now use searches across app categories, names, and descriptions. The results are sorted in decreasing order of relevance. These updates are also available on the [Company Portal website](https://portal.manage.microsoft.com).
 
 We're still fine-tuning the way relevance is tracked, so please let us know how it's working using the "Feedback" link at the bottom of the Company Portal website.
 
 ## Week of October 16, 2017
 
-### Search improvements to the Company Portal website <!--1331697-->
+### Search improvements to the Company Portal website <!-- 1331697 -->
 We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
 
 iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
@@ -160,7 +160,7 @@ This release fixes a known issue with how the iOS Company Portal displays icons 
 
 ## Week of October 2, 2017
 
-#### Improvements to device setup workflow in Company Portal <!--1490692-->
+### Improvements to device setup workflow in Company Portal <!-- 1490692 -->
 We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
 
 |Before|After|
@@ -189,7 +189,7 @@ We've also updated the conditional access email activation screen.
 
 ## Week of September 11, 2017
 
-### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
+### Easier-to-understand phrasing for the Company Portal app for Android <!-- 1396349 -->  
 
 The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end-users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
 
@@ -204,7 +204,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 
 ## August 2017
 
-### iOS 11 Mail app will support OAuth <!---1196951--->
+### iOS 11 Mail app will support OAuth <!-- 1196951 -->
 
 Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
@@ -237,7 +237,7 @@ Intune Mobile Application Management (MAM) dialog boxes will be updated to a mod
 ![modern interface](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!---1287448--->
+### Updates to the "Device Details" page on the Company Portal app for Windows 10 <!-- 1287448 -->
 
 The Company Portal app for Windows 10 is moving the __Category__ tag from below the title to a property on the __Device Details__ page.
 
