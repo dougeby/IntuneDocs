@@ -58,7 +58,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
     > Samsung Knox devices automatically require a 4-digit PIN during MDM enrollment. Native Android devices may automatically require a PIN to become compliant with conditional access.
 
 - **Minimum password length** - Enter the minimum length of password a user must configure (between 4 and 16 characters).
-- **Maximum minutes of inactivity until screen locks** - Specifies the number of minutes of inactivity before the device automatically locks.
+- **Maximum minutes of inactivity until screen locks** - Specifies the maximum number of minutes of inactivity until the screen locks. This setting is ignored if the new time is longer than what’s currently on the device. If the property is set to “immediately,” the device will use the minimum possible value per device.
 - **Number of sign-in failures before wiping device** - Specifies the number of sign-in failures to allow before the device is wiped.
 - **Password expiration (days)** - Specifies the number of days before the device password must be changed.
 -  **Required password type** - Specifies the required password complexity level, and whether biometric devices can be used. Choose from:
