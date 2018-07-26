@@ -128,4 +128,5 @@ After you create a trusted certificate profile, create SCEP or PKCS certificate 
 
 ## Next steps
 [Assign device profiles](device-profile-assign.md)  
-[Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)
+[Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)  
+[Use third-party certificate authority](certificate-authority-add-scep-overview.md)

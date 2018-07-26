@@ -462,6 +462,8 @@
         href: certficates-pfx-configure.md
       - name: Use S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
+      - name: Use third-party certificate authority with SCEP
+        href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
     - name: Configure Windows Information Protection settings
@@ -714,6 +716,8 @@
         href: custom-settings-android-for-work.md
 - name: Developer guidance
   items:
+  - name: API to add third-party certificate authority
+    href: scep-libraries-apis.md
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
