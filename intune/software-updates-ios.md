@@ -40,7 +40,7 @@ This feature supports devices running iOS 10.3 and later.
 4. Enter a name and description for the policy.
 5. Select **Settings**. 
 
-  Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the days of the week, time zone, start time, and end time.
+    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the days of the week, time zone, start time, and end time.
 
 6. Select **OK** to save your changes. Select **Create** to create the policy.
 
@@ -57,7 +57,7 @@ The profile is created and shown in the policy list. Apple MDM doesn't allow you
     3. Enter the start and end time for the blacklisted hours
 
     > [!NOTE]
-    > If the **Start time** and **End time** are both set to 12am, then the the maintenance time check is turned off.
+    > If the **Start time** and **End time** are both set to 12am, then the maintenance time check is turned off.
 
 ## Assign the policy to users
 
