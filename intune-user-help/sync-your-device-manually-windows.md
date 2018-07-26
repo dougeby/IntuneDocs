@@ -54,9 +54,6 @@ Complete these steps to manually sync any Windows 10 device running Creator's Up
     
     ![Screenshot settings page of Company Portal app, Sync button highlighted](./media/RS1_settingspage_sync05.png)  
 
-## Sync from Settings App 
-Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.  
-
 ## Sync from device taskbar or Start menu   
 
 You can also access the sync control outside of the app, from your device's desktop. This way is useful if you have the app pinned directly to your taskbar or Start menu, and want to quickly sync.  
@@ -67,6 +64,9 @@ You can also access the sync control outside of the app, from your device's desk
     ![Screenshot of the Windows taskbar on a device's desktop. Company Portal app icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
 3. Select **Sync this device**. The Company Portal app opens to the **Settings** page and initiates your sync.  
+
+## Sync from Settings App 
+Complete these steps to manually sync your Microsoft HoloLens, Windows 10 desktop, Windows 10 Mobile, or Windows Phone 8.1 devices from the Settings app.  
 
 ### Windows 10 desktop
 1. On your device, select **Start** > **Settings**.
