@@ -396,12 +396,12 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: Configure Kiosk settings
-      href: kiosk-settings.md
-    - name: Configure Android kiosk settings
+    - name: Android kiosk settings
       href: android-kiosk-settings.md
     - name: Android enterprise kiosk settings
       href: android-enterprise-settings.md
+    - name: Windows 10 kiosk settings
+      href: kiosk-settings.md
     - name: Configure email settings
       href: email-settings-configure.md
       items:
@@ -439,7 +439,9 @@
         href: wi-fi-settings-ios.md
       - name: macOS
         href: wi-fi-settings-macos.md
-      - name: Windows 8.1 & Windows 10
+      - name: Windows 10
+        href: wi-fi-settings-windows.md
+      - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
     - name: Education
       items:
@@ -458,6 +460,10 @@
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
+      - name: Use S/MIME to encrypt email
+        href: certificates-s-mime-encryption-sign.md
+      - name: Use third-party certificate authority with SCEP
+        href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
     - name: Configure Windows Information Protection settings
@@ -710,6 +716,8 @@
         href: custom-settings-android-for-work.md
 - name: Developer guidance
   items:
+  - name: API to add third-party certificate authority
+    href: scep-libraries-apis.md
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
