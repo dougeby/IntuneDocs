@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -264,54 +264,8 @@ After you specify each app name and bundle ID, choose **Add** to append it to th
 - **Import** - Import a comma-separated values (.csv) file containing a list of app names, and their associated bundle IDs.
 - **Export** - Export the app names, and associated bundle IDs you have configured to a comma-separated values (.csv) file.
 
-### Bundle ID reference for built-in iOS apps
-
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## Kiosk (supervised only)
--   **App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, or **Store App** to specify the URL to an app in the store. No other apps are allowed to run on the device. For more help, see "How to specify URLs to app stores" later in this topic.
+-   **App that runs in kiosk mode** - Choose **Managed App** to select an app you've added to Intune, **Store App** to specify the URL to an app in the store, or **Built-In App** to specify the bundle ID of the built-in app. For more information, see [Bundle ID reference for built-in iOS apps](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) and [How to specify the URL to an app in the store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Assistive touch** - Enable or disable the **Assistive Touch** accessibility setting, which helps the user perform on-screen gestures that might be difficult for them to perform.
     -   **Invert colors** - Enable or disable the Invert Colors accessibility setting, which adjusts the display to help users with visual impairments.
     -   **Mono audio** - Enable or disable the accessibility setting Mono audio.
@@ -332,6 +286,51 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 >[!NOTE]
 > Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. For more information about the Apple Configurator tool, see your Apple documentation.
 >If the iOS app that you specify is installed after you assign the profile, the device will not enter kiosk mode until after it is restarted.
+
+## Bundle ID reference for built-in iOS apps
+
+This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+
+| Bundle ID                   | App Name     | Publisher |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calculator   | Apple     |
+| com.apple.mobilecal         | Calendar     | Apple     |
+| com.apple.camera            | Camera       | Apple     |
+| com.apple.mobiletimer       | Clock        | Apple     |
+| com.apple.compass           | Compass      | Apple     |
+| com.apple.MobileAddressBook | Contacts     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Find Friends | Apple     |
+| com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Health       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
+| com.apple.Music             | Music        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | Notes        | Apple     |
+| com.apple.Numbers           | Numbers      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Photos       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Reminders    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Settings     | Apple     |
+| com.apple.stocks            | Stocks       | Apple     |
+| com.apple.tips              | Tips         | Apple     |
+| com.apple.videos            | Videos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Weather      | Apple     |
 
 ## Safari
 -   **Safari (supervised only)** - Specify whether the Safari browser can be used on the device.

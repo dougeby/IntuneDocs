@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/14/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,7 +76,7 @@ The following device restriction settings are supported on devices running Windo
 
 ## Kiosk - Obsolete
 
-These settings are moving, and are removed in an upcoming release. To use the new settings, see [Kiosk settings](kiosk-settings.md#windows-holographic-for-business).
+These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings](kiosk-settings.md#windows-holographic-for-business).
 
 A kiosk device typically runs a specific app. Users are prevented from accessing any features or functions on the device outside of the kiosk app.
 

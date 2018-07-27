@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,9 +65,6 @@ Select the Office apps that you want to assign to devices.
     Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them.
 3. Select **OK**.
 
->[!IMPORTANT]
-> After you've created the app suite, you cannot edit its properties. To configure different properties, delete the app suite and create a new one.
-
 ## Configure app information
 
 In this step, you provide information about the app suite. This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
@@ -102,9 +99,6 @@ In this step, configure installation options for the app suite. The settings app
 	- **Automatically accept the app end user license agreement**: Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite.
-
->[!IMPORTANT]
-> After you've created the app suite, you cannot edit its properties. To configure different properties, delete the app suite and create a new one.
 
 ## Finish up
 

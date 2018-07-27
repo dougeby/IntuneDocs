@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,6 +88,13 @@ The following table describes how noncompliant settings are managed when a compl
 ### Encryption
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
+
+### Device Security
+Firewall protects devices from unauthorized network access. You can use Firewall to control connections on a per-application basis. 
+
+- **Firewall**: **Enable** to help protect devices from unauthorized access. Enabling this feature allows you to handle incoming internet connections, and use stealth mode. **Not configured** (default) leaves the firewall turned off, and network traffic is allowed (not blocked).
+- **Incoming connections**: **Block** all incoming network connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This settings also blocks all sharing services, including screen sharing, remote access, iTunes music sharing, and more. **Not configured** (default) allows incoming connections and sharing services. 
+- **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests, which can be made my malicious users. When enabled, the device continues to answer incoming requests for authorized apps. **Not configured** (default) leaves stealth mode turned off.
 
 ## Assign user groups
 
