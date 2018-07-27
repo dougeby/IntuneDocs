@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -257,7 +257,7 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Kiosk (Preview) - Obsolete
 
-These settings are moving, and are removed in an upcoming release. To use the new settings, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
+These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
 
 A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device outside of any kiosk apps.
 
