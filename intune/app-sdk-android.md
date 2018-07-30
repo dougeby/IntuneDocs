@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 05/16/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -488,7 +488,20 @@ No additional manifest values need to be configured.
 
 Authority and NonBrokerRedirectURI may be specified if necessary.
 
-The Intune SDK team will require your app's Application ID (Client ID). This can be found through the [Azure portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. The Intune SDK team can be reached at msintuneappsdk@microsoft.com.
+Register your app with Azure AD using the following steps.
+
+In the Azure portal:
+1.	Go to **Azure Active Directory** blade.
+2.	Select the **App registration** set up for the application.
+3.	In **Settings** under the **API Access** heading, select **Required permission**. 
+4.	Click **+ Add**.
+5.	Click **Select an API**. 
+6.	In the search box enter **Microsoft Mobile Application Management**.
+7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
+8.	Select **Read and Write the User’s App Management Data**.
+9.	Click **Done**.
+
+See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
 
 Also see the requirements for [Conditional Access](#conditional-access) below.
 
@@ -1502,7 +1515,7 @@ The following is guidance for requiring user prompt on app launch for an automat
 > The benefits of **default enrollment** include a simplified method of obtaining policy from APP-WE service for an app on the device.
 
 ### General Requirements
-* The Intune SDK team will require your app's Application ID. A way to find this is through the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
+* Ensure your app is registered with the Intune Mobile Application Management service by following the steps at [Common ADAL configurations #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
 
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin app developers who wish to require Intune app protection policies for app use on a end user device.

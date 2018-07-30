@@ -2,12 +2,12 @@
 # required metadata
 
 title: Reset your device from the Company Portal website | Microsoft Docs
-description:
+description: Learn how to reset your device to its factory settings from the Company Portal website.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,27 +31,23 @@ ms.custom: intune-enduser
 
 # Reset your device from the Company Portal website
 
-If your device gets lost or stolen, you might want to reset it to its factory default settings to prevent unauthorized access to your data. You can reset your device remotely by using the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). The Company Portal website is a web page that you can use to manage computers and devices that you have enrolled in Intune. You can use this website to do most of the same tasks that you can do when using your Company Portal app.
+Learn how to reset a used, lost, or stolen device to factory default settings from the Company Portal website.  
 
-If you reset your device, it will no longer be listed in the Company Portal, and the device will be reset to its factory default settings.
+After you reset a device, it no longer appears in the Company Portal. Previously existing apps and files are erased and the device is restored to its factory default settings.
 
 > [!Note]
-> You can also perform the following steps from another device that you've enrolled by opening the Company Portal app on that device and going through similar steps to complete the reset. 
+> You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset.  
 
-To reset your device:
+1. Open the [Company Portal website](https://portal.manage.microsoft.com/#helpdeskDeskDialog) and select the __Menu__ button > __My Devices__.
 
-1. On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button, then select __My Devices__.
+2. Select the device you want to reset.
 
-2. On the __My Devices__ page, select the name of the device you want to rename.
+    ![A screenshot of the My Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+3. The device will open in a popup window. Select **Reset**.  
 
-3. The device will open in a popup window. Tap the **Reset** button.
+ ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
+4. A message appears to warn that you are about to erase all content on your device. Tap **Reset** to confirm.  
 
-4. A warning message will appear to let you know that you are about to erase all content on your device by resetting it to the factory default settings. Tap **Reset** to confirm that this is what you want to do.
-
-Your device has now been reset.
-
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/#helpdeskDeskDialog).

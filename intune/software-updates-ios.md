@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Configure iOS software update policies in Microsoft Intune
-titlesuffix:
-description: Configure update policies for iOS to force supervised iOS devices to automatically install the latest available software update.
+title: Configure iOS software update policies in Microsoft Intune - Azure | Microsoft Docs
+description: In Microsoft Intune, create or add a configuration policy to restrict when software updates are automatically installed on iOS devices managed or supervised by Intune. You can choose the date and time when updates aren't installed. You can also assign this policy to groups, users, or devices, and check for any installation failures. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/19/2018
+ms.date: 07/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,49 +18,59 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer:
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Configure iOS update policies in Microsoft Intune
+# Configure iOS update policies in Intune
 
-Software update policies let you force supervised iOS devices running iOS 10.3 and later to automatically install the latest available OS update. This feature is only available for supervised devices. You have the option to configure the days and times when you do not want devices to install the update. 
+Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is only available for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
 
-When the device checks in, about every 8 hours, if there is an update available and it is not during a restricted time, the device will attempt to download and install the latest OS update. There is no user interaction needed to update the device. The policy would not prevent a user from updating the OS.
+The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
-## Configure the iOS update policy
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Software updates** > **iOS Update Policies**.
-4. On the policies pane, choose **Create**, and then enter a name and description for the policy.
-5. Select **Settings** > **Configure**, and enter the details for when iOS devices are not be forced to install the latest update. You can configure the days of the week, time zone, start time, and end time.
-6. Choose **OK** to save this configuration. You are now back in the **Create update policy** pane. Choose **Create** to create the policy and save your settings.
+This feature supports devices running iOS 10.3 and later.
 
-The profile is created and appears on the iOS update policies list pane. Apple MDM does not allow for the ability to enforce that the device install the update by a certain time or date. 
+## Configure the policy
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+3. Select **Software updates** > **Update policies for iOS** > **Create**.
+4. Enter a name and description for the policy.
+5. Select **Settings**. 
+
+    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the days of the week, time zone, start time, and end time.
+
+6. Select **OK** to save your changes. Select **Create** to create the policy.
+
+The profile is created and shown in the policy list. Apple MDM doesn't allow you to force a device to install updates by a certain time or date. 
 
 ## Change the restricted times for the policy
 
-1.	On the **Software updates** blade, choose **iOS Update Policies**.
-2.	Select the iOS update policy that you want to update.
-3.	Select **Properties** and update the restricted times information.
-4.	Choose the days of the week
-5.	Time zone that this policy will be applied in
-6.	Start and end time for the blacklisted hours
+1. In **Software updates**, select **Update policies for iOS**.
+2. Choose an existing policy > **Properties**.
+3. Update the restricted time:
 
-## Assign an iOS update policy to users
+    1. Choose the days of the week
+    2. Choose the time zone that this policy is applied
+    3. Enter the start and end time for the blacklisted hours
 
-To assign an iOS update policy to users, choose a policy that you have configured. Existing policies are found in the **Software updates** > **iOS Update Policies** pane.
+    > [!NOTE]
+    > If the **Start time** and **End time** are both set to 12am, then the maintenance time check is turned off.
 
-1. Choose the policy you want to assign to users and choose **Assignments**. The pane where you can select Azure Active Directory security groups and assign them to the policy is opened.
-2. Choose **Selected groups** to open the pane that displays the Azure AD security groups. Determine who has access to the policy by assigning the groups to include, as well as exclude.
-3. Choose **Save** to deploy the policy to users.
+## Assign the policy to users
 
-You have applied the policy to your users or devices. The devices used by the users who are targeted by the policy are evaluated for update compliance. This policy also supports userless devices.
+Existing policies are assigned to groups, users, or devices. When assigned, the policy is applied.
 
-## Monitor iOS device installation failures
+1. In **Software updates**, select **Update policies for iOS**.
+2. Choose an existing policy > **Assignments**. 
+3. Select the Azure Active Directory groups, users, or devices to include or exclude from this policy.
+4. Choose **Save** to deploy the policy to your groups.
+
+The devices used by the users targeted by the policy are evaluated for update compliance. This policy also supports userless devices.
+
+## Monitor device installation failures
 <!-- 1352223 -->
-The **Installation Failures for iOS Devices** report is available from the **Software updates** pane. In the report, you can view a list of supervised iOS devices that were targeted by an iOS update policy, attempted an update, and could not be updated. For each device, you can view a status for why the device has not been automatically updated. Healthy, up-to-date devices will not show up in the list. We define up-to-date as the latest update that the device itself can support.
+**Software updates** > **Installation failures for iOS devices** shows a list of supervised iOS devices targeted by an update policy, attempted an update, and couldn't be updated. For each device, you can view the status on why the device hasn't been automatically updated. Healthy, up-to-date devices aren't shown in the list. "Up-to-date" devices include the latest update that the device itself supports.
 

@@ -465,4 +465,6 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 | 0x0FFFFFFFF | Unknown_Error  | We are unable to complete your request because a server-side error occurred. Please try again. |
 
 ## Next steps
-[Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md).
+
+- [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md)
+- [Add a 3rd party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)

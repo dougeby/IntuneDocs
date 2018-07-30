@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 8. Select the **Action** you want to take if users do not meet your requirements. In some cases, multiple actions can be configured for a single setting. For more information, see [How to create and assign app protection policies](app-protection-policies.md).
 
 >[!NOTE]
-> To use the **Device model(s)** setting, input a semi-colon separated list of model identifiers. 
+> To use the **Device model(s) or Device manufacturer(s)** setting, input a semi-colon separated list of model identifiers. Avoid spaces in lists of multiple values. These values are not case sensitive. 
 
 ## Policy settings 
 
@@ -87,7 +87,10 @@ For Android, you will be able to configure actions for the following settings us
 -  Device manufacturer(s)
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
-Example input: *Manufacturer A; Manufacturer B; Google* 
+Example input: *Manufacturer A; Manufacturer B* 
+
+>[!NOTE]
+> These are some common manufacturers reported from devices using Intune, and can be used as input: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk
 
 On end-user devices, the Intune client would take action based on a simple matching of device model strings specified in Intune for Application Protection Policies. Matching depends entirely on what the device reports. You (the IT administrator) are encouraged ensure that the intended behavior occurs by testing this setting based on a variety of device manufacturers and models, and targeted to a small user group. The default value is **Not configured**.<br>
 Set one of the following actions: 
