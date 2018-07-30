@@ -72,15 +72,23 @@ Before you can bypass Activation Lock on devices, you must enable it by followin
 ## How to use Activation Lock bypass
 
 >[!IMPORTANT]
->After you bypass the Activation Lock on a device, if the Find My iPhone app is opened, a new Activation Lock is automatically applied. Because of this, **you should be in physical possession of the device before you follow this procedure**.
+>After you bypass the Activation Lock on a device, if the Find My iPhone app is started, a new Activation Lock is automatically applied. Because of this, **you should be in physical possession of the device before you follow this procedure**.
 
-The Intune **Bypass Activation Lock** remote device action removes the activation lock from an iOS device without the user’s Apple ID and password. Once you bypass the activation lock, the device turns on activation lock again when the Find My iPhone app launches. Only bypass the activation lock if you have physical access to the device.
+The Intune **Bypass Activation Lock** remote device action removes the Activation Lock from an iOS device without requiring the user’s Apple ID and password. After you bypass the Activation Lock, the device turns on Activation Lock again when the Find My iPhone app starts. Bypass the Activation Lock only if you have physical access to the device.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** blade, choose **Devices**.
-4. On the **Devices** blade, choose **All devices**.
-5. From the list of devices you manage, choose a supervised iOS device, choose **...More**, and then choose the **Bypass Activation Lock** device remote action.
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services** > **Intune**.
+3. On the **Intune** blade, select **Devices**.
+4. On the **Devices** blade, select **All devices**.
+5. On the list of devices that you manage, select the **Bypass Activation Lock** device remote action.
+6. Go to the device's “Hardware” section, and then copy the **Activation Lock bypass code** value under **Conditional Access**.
+
+    >[!NOTE]
+    >Copy the bypass code before you do a factory reset on the device. If you reset the device settings before you copy the code, the code is removed from Azure.
+
+7.	Go to the **Overview** blade for the device, and then select **Factory reset**.
+8.	After the device is reset, you are prompted for the *Apple ID* and *password*. Leave the *ID* field blank, and then enter the **bypass code** for the *password*. This removes the account from the device. 
+
 
 ## Next steps
 
