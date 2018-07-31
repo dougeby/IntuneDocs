@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
 
-Per-App VPN is currently available for the following providers:
+Per-app VPN is currently available for the following providers:
 
  - Check Point Remote Access VPN
  - Cisco AnyConnect
@@ -40,7 +40,7 @@ Per-App VPN is currently available for the following providers:
  - SonicWall
  - Palo Alto Networks GlobalProtect
 
-## Prerequisites for Per-App VPN
+## Prerequisites for per-app VPN
 
 > [!IMPORTANT]
 > Your VPN vendor may have other specific requirements for per-app VPN, such as specific hardware or licensing. Be sure to check with their documentation, and meet those prerequisites before setting up per-app VPN in Intune.
@@ -114,9 +114,9 @@ The trusted root certificate profile allows the iOS to automatically trust the V
 
     ![Create a SCEP certificate profile](./media/vpn-per-app-create-scep-cert.png)
 
-## Create a Per-App VPN profile
+## Create a per-app VPN profile
 
-The VPN profile contains the SCEP certificate carrying the client credentials, the connection information to the VPN, and the Per APP VPN flag to enable the Per App VPN feature for use by the iOS application.
+The VPN profile contains the SCEP certificate carrying the client credentials, the connection information to the VPN, and the per-app VPN flag to enable the per-app VPN feature for use by the iOS application.
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
@@ -141,7 +141,7 @@ The VPN profile contains the SCEP certificate carrying the client credentials, t
 6. Click **OK**.
 7. Click **Create**.
 
-    ![Create a Per-App VPN profile](./media/vpn-per-app-create-vpn-profile.png)
+    ![Create a per-app VPN profile](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## Associate an app with the VPN profile
@@ -169,22 +169,22 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 An association between an app and a profile will be removed during the next device check-in, when the following conditions exist:
 - The app was targeted with required install intent.
 - Both the profile and the app are targeted to the same group.
-- You remove the Per App VPN configuration from the app assignment.
+- You remove the per-app VPN configuration from the app assignment.
 
 An association between an app and a profile will still exist until the end-user requests a reinstall from the company portal, when the following conditions exist:
 - The app was targeted with available install intent.
 - Both the profile and the app are targeted to the same group.
 - The end user requested app install from the company portal which results in app and profile being installed on the device.
-- You remove the Per App VPN configuration from the app assignment.
+- You remove the per-app VPN configuration from the app assignment.
 
 ## Verify the connection on the iOS device
 
-With your Per-App VPN set-up and associated with your app, verify the connection works from a device.
+With your per-app VPN set-up and associated with your app, verify the connection works from a device.
 
 ### Before you attempt to connect
 
  - Make sure you’re running iOS 9 or later.
- - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the Per-App VPN experience.  
+ - Make sure you deploy *all* of the above mentioned policies to the same group of users. Failure to do so will most definitely break the per-app VPN experience.  
  - Makes sure you have the supported third-party VPN app installed. The following VPN apps are supported:
     - Check Point Capsule Connect
     - Cisco AnyConnect
@@ -193,7 +193,7 @@ With your Per-App VPN set-up and associated with your app, verify the connection
     - Pulse Secure
     - SonicWall Mobile Connect
 
-### Connect using the Per-App VPN
+### Connect using the per-app VPN
 
 Verify the zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
 
@@ -207,7 +207,7 @@ Verify the connection on an iOS device.
 2. Tap on **Connect**.  
 The VPN successfully connects without any extra prompts.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 
