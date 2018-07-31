@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -1131,6 +1131,16 @@ You can specify denied apps in Intune. If an app is denied, it is blocked from a
 
 
 ## Notices
+
+### Plan for Change: Change Password at Next Auth added to Intune<!-- 1873216 -->
+In the September service release, Intune plans to integrate Apple’s newly-released **Change Password at Next Auth** setting for devices running macOS versions 10.13 and newer. Before this setting, MDM providers can't verify that the device passcode was changed to be compliant. Intune’s configuration and compliance policies only validate that the next time a device password is changed, that it's marked as compliant. When this new Apple feature is added, your macOS users will receive a request to update their password, even if their password is compliant.
+
+#### How does this affect me?
+This impacts environments with a macOS device policy using Intune or a hybrid MDM. Now that the Apple has this **Change Password at New Auth** setting, Intune can force users to update their password when a password policy is pushed. If you block company resources until the device is marked compliant, then your end users may be blocked from accessing company resources, such as email or SharePoint sites, until they reset their password. In the future, all updates to configuration and compliance password policies force targeted users to update their passwords.
+
+#### What do I need to do to prepare for this change?
+Let your helpdesk know. If you don't want to enforce this macOS device policy, we recommend you un-assign or delete your existing macOS policy. Customer research suggests most customers aren't affected by this change. Most end users update their password after receiving a request to enroll with a password, or reset their password to remain compliant.
+
 
 ### Plan for Change: Intune moving to support iOS 10 and later in September <!-- 2454656 -->
 In September, Apple is expected to release iOS 12. Shortly after the release, we will move Intune enrollment, the Company Portal, and the managed browser to support iOS 10 and later.  
