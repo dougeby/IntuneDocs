@@ -129,7 +129,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > Multifactor authentication (MFA) doesn't work during DEP enrollment if you have profile properties set to **Enroll with User Affinity**. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+    > Multifactor authentication doesn’t work during DEP enrollment if you have profile properties set to **Enroll with User Affinity** and **Authenticate with Company Portal instead of Apple Setup Assistant** set to **No**. After enrollment, MFA works as expected on devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
