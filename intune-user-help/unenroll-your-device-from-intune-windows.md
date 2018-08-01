@@ -5,7 +5,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 08/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ Remove a registered, Windows device from Intune when you no longer want or need 
 After it's removed, you'll be unable to access school or work resources from the device. Windows devices that can be removed from Intune include:  
 * Windows 10 devices 
 * Windows 8.1 computer
-* WIndows 8.1 mobile device
+* Windows 8.1 mobile device
  
 For more information about what happens after you remove your device from Intune management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
