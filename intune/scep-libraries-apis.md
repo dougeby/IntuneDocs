@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,9 +43,15 @@ Using Intune, administrators create SCEP profiles, and then assign these profile
 - The Trusted Root Certificate of the Certificate Authority
 - Certificate attributes, and more
 
-Devices that check-in with Intune are assigned the SCEP profile, and are configured with these parameters. A dynamically generated SCEP challenge password is created by Intune, and then assigned to the device.
+Devices that check-in with Intune are assigned the SCEP profile, and are configured with these parameters. A dynamically-generated SCEP challenge password is created by Intune, and then assigned to the device.
 
-This challenge contains the dynamically generated challenge password and details about the parameters expected in the certificate signing request (CSR) that the device issues to the SCEP server. It also includes the challenge expiration time. Intune encrypts the information, signs the encrypted blob, and then packages these details into the SCEP challenge password.
+This challenge contains:
+
+- The dynamically-generated challenge password
+- The details on the parameters expected in the certificate signing request (CSR) that the device issues to the SCEP server
+- The challenge expiration time
+
+Intune encrypts this information, signs the encrypted blob, and then packages these details into the SCEP challenge password.
 
 Devices contacting the SCEP server to request a certificate then give this SCEP challenge password. The SCEP server sends the CSR and encrypted SCEP challenge password to Intune for validation.  This challenge password and CSR must pass validation for the SCEP server to issue a certificate to the device. When an SCEP challenge is validated, the following checks happen:
 
