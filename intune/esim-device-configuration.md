@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
 
 ## Introduction
 
-eSIM is an embedded SIM chip, and lets you connect to the Internet over a cellular data connection on an eSIM-capable device, such as the [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). With an eSIM, you don't need to get a SIM card from your mobile operator, and you can quickly switch between mobile operators and data plans.
+eSIM is an embedded SIM chip, and lets you connect to the Internet over a cellular data connection on an eSIM-capable device, such as the [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro). With an eSIM, you don't need to get a SIM card from your mobile operator. As a global traveler, you can also switch between mobile operators and data plans to always stay connected.
 
 For example, you have a cellular data plan for work, and another data plan with a different mobile operator for personal use. When traveling, you can get Internet access by finding mobile operators with data plans in that area.
 
