@@ -98,10 +98,10 @@ The following enrollments are marked as corporate by Intune, but since they do n
 The following personal enrollment methods will also be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
 
-- [MDM enrollment only]( https://docs.microsoft.com/en-us/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
+- [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 ### Specify machine name patterns in an AutoPIlot profile <!--1849855-->
-You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/en-us/windows/client-management/mdm/accounts-csp) during AutoPilot enrollment. You'll need to specify this in the AutoPilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
+You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during AutoPilot enrollment. You'll need to specify this in the AutoPilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
 Applies to: Windows Insider 1809 or later build (while in preview).
 
 ### iOS version number and build number are shown <!-- 1892471 -->
