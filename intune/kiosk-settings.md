@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,18 @@ Kiosk profiles are used to configure Windows 10 devices to run one app, or run m
 
 ## Kiosk settings
 
-1. Select **Add** to create a kiosk environment.
-2. Enter a **Kiosk configuration name** for your kiosk. This name identifies a group of applications, the layout of these apps on the start menu, and the users that are assigned to this kiosk configuration.
-3. Select the **Kiosk mode**. **Kiosk mode** Identifies the type of kiosk mode supported by the policy. Options include:
+1. In the [Azure portal](https://portal.azure.com), select **All Services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create Profile**.
+3. Enter the following properties:
+
+   - **Name**: Enter a descriptive name for the new profile.
+   - **Description**: Enter a description for the profile. This is optional, but recommended.
+   - **Platform**: Select **Windows 10 and later**
+   - **Profile type**: Select **Kiosk (Preview)**
+   
+4. Select **Kiosk** > **Add**.
+5. Enter a **Kiosk configuration name** for your kiosk. This name identifies a group of applications, the layout of these apps on the start menu, and the users that are assigned to this kiosk configuration.
+6. Select the **Kiosk mode**. **Kiosk mode** identifies the type of kiosk mode supported by the policy. Options include:
 
     - **Not Configured** (default): The policy doesn't enable kiosk mode.
     - **Single full-screen app kiosk**: The profile enables the device to run as a single user account, and locks it to a single Universal Windows Platform (UWP) app. So when the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
