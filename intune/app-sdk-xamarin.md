@@ -57,20 +57,6 @@ Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intu
 
 ## Prerequisites
 
-* **[Android only]** The latest Microsoft Intune Company Portal app must be installed on the device.
-
-## Get started
-
-1. Read the [license terms](https://components.xamarin.com/license/microsoft.intune.mam) for the Microsoft Intune MAM Xamarin Component.
-
-2.	Download the Intune App SDK Xamarin Component folder from [GitHub](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) or [Nuget.org](https://www.nuget.org/profiles/msintuneappsdk) and extract it. Both files downloaded from step 1 and step 3 should be in the same directory level.
-
-3.	In the command line as an administrator, run `Xamarin.Component.exe install <.xam> file`.
-
-4.	In Visual Studio, right-click **components** in your previously created Xamarin project.
-
-5.	Select **Edit Components** and add the Intune App SDK component you’ve downloaded locally to your computer.
-
 Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK Xamarin Bindings, you agree to such license terms. If you do not accept them, do not use the software.
 
 ## Enabling Intune app protection polices in your iOS mobile app
