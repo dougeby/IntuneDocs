@@ -41,7 +41,7 @@ Kiosk profiles are used to configure Windows 10 devices to run one app, or run m
    
 4. Select **Kiosk** > **Add**.
 5. Enter a **Kiosk configuration name** for your kiosk. This name identifies a group of applications, the layout of these apps on the start menu, and the users that are assigned to this kiosk configuration.
-6. Select the **Kiosk mode**. **Kiosk mode** Identifies the type of kiosk mode supported by the policy. Options include:
+6. Select the **Kiosk mode**. **Kiosk mode** identifies the type of kiosk mode supported by the policy. Options include:
 
     - **Not Configured** (default): The policy doesn't enable kiosk mode.
     - **Single full-screen app kiosk**: The profile enables the device to run as a single user account, and locks it to a single Universal Windows Platform (UWP) app. So when the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
