@@ -759,7 +759,7 @@
       href: reports-ref-data-model.md
       items:
       - name: Data Warehouse collections
-        href: intune-data-warehouse-tables.md 
+        href: intune-data-warehouse-collections.md 
       - name: Data Warehouse collections (beta)
         items:  
         - name: User lifetime representation in the Intune Data Warehouse
