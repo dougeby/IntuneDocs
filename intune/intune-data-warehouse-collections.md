@@ -1,8 +1,8 @@
 ---
 # required metadata
-title:  Intune Date Warehouse Tables
+title:  Intune Date Warehouse Collections
 titlesuffix: Microsoft Intune 
-description: Use the Intune Data Warehouse tables to better understand the Data Warehouse API.
+description: The Intune Data Warehouse collections provide details related to the Data Warehouse API.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -24,9 +24,9 @@ ms.suite: ems
 ms.custom: intune
 ---
 
-#  Intune Data Warehouse Tables
+#  Intune Data Warehouse Collections
 
-The following Intune Data Warehouse tables provides the properties, descriptions, and examples for V1 tables of the Data Warehouse API entities. 
+The following Intune Data Warehouse collections provides the properties, descriptions, and examples for v1.0 collections of the Data Warehouse API entities. 
 
 ## AppRevisions
 The **AppRevision** entity lists all the versions of apps.
@@ -196,7 +196,7 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 | JailBroken                 | Whether the device is jail broken or rooted.                                                                                                                                         |
 | DeviceCategoryKey          | Key of device category attribute for this device.                                                                                                                                    |
 ## deviceRegistrationStates
-The **DeviceRegistrationStates** entity represents the registration type referenced by other data warehouse tables. 
+The **DeviceRegistrationStates** entity represents the registration type referenced by other data warehouse collections. 
 
 |           Property          |                                     Description                                     |
 |:---------------------------:|:-----------------------------------------------------------------------------------:|
