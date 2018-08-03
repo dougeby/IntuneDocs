@@ -61,6 +61,13 @@ Also in a future update:
 ### Lock the Company Portal in single app mode until user sign-in <!--1067692 --> 
 You’ll have the option to run Company Portal in Single App mode if you authenticate a user through the Company Portal instead of Setup Assistant during DEP enrollment. This option locks the device immediately after Setup Assistant completes so that a user must sign in to access the device. This process makes sure that the device completes onboarding and is not orphaned in a state without any user tied.
 
+### Scope tags for policies <!—1081974 eeready-->
+
+You’ll be able to create scope tags to limit access to Intune resources. Add a scope tag to a role assignment and then add the scope tag to a configuration profile. The role will only have access to resources with configuration profiles that have matching scope tags (or no scope tag).
+To create a scope tag, choose **Intune roles** > **Scope (Tags)** > **Create**.
+To add a scope tag to a role assignment, choose **Intune roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
+To add a scope tag to a configuration profile, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)**.
+
 ### Assign a user and friendly name to an AutoPilot device <!--1346521 -->
 A future public preview will let admins assign a user to a single Autopilot device.  Admins will also be able to give friendly names to greet the user when setting up their device with Autopilot.
 
@@ -90,7 +97,7 @@ After a restriction is turned on, Intune will check to make sure that each each 
 - The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers]( corporate-identifiers-add.md)**).
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management]https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
+- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
 Unauthorized enrollments will be blocked.
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
@@ -149,7 +156,6 @@ You'll be able to configure Windows 10 VPN profiles to dynamically register the 
 ### Restricts apps, and block access to company resources on iOS and Android for Work devices <!-- 2451462 -->
 In **Device compliance** > **Policies** > **Create policy** > **Android for Work** > **System Security**, there will be a new **Restricted applications** setting. This new setting uses a compliance policy to block access to company resources if certain apps are installed on the device. The device is considered non-compliant until the restricted apps are removed from the device.
 Applies to: 
-- Android for Work
 - iOS
 
 ### Export Azure classic portal compliance policies to .csv file <!-- 2469637 -->
