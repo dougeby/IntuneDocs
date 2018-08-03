@@ -97,7 +97,7 @@ After a restriction is turned on, Intune will check to make sure that each each 
 - The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers]( corporate-identifiers-add.md)**).
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management]https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
+- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
 Unauthorized enrollments will be blocked.
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
