@@ -81,7 +81,7 @@ You can change the settings for a device type restriction by following these ste
 4. Under **Device Type Restrictions**, choose the restriction that you want to set.
 5. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
 6. Select **Save**.
-7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations**. Then select the minimum and maximum **Versions** for the platforms listed. Supported versions include:
+7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations**. Then select the minimum and maximum **Versions** for the platforms listed. Supported version formats include:
     - Android work profile support major.minor.rev.build.
     - iOS supports major.minor.rev.
     - Windows supports major.minor.rev.build for Windows 10 only.
