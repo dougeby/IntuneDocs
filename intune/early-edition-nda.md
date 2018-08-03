@@ -61,7 +61,7 @@ Also in a future update:
 ### Lock the Company Portal in single app mode until user sign-in <!--1067692 --> 
 You’ll have the option to run Company Portal in Single App mode if you authenticate a user through the Company Portal instead of Setup Assistant during DEP enrollment. This option locks the device immediately after Setup Assistant completes so that a user must sign in to access the device. This process makes sure that the device completes onboarding and is not orphaned in a state without any user tied.
 
-### Scope tags for policies <!—1081974 eeready-->
+### Scope tags for policies <!--1081974 eeready-->
 
 You’ll be able to create scope tags to limit access to Intune resources. Add a scope tag to a role assignment and then add the scope tag to a configuration profile. The role will only have access to resources with configuration profiles that have matching scope tags (or no scope tag).
 To create a scope tag, choose **Intune roles** > **Scope (Tags)** > **Create**.
