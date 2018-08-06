@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Microsoft Intune device restriction settings for Android
-titlesuffix:
-description: Learn the Intune settings you can use to control device settings and functionality on devices running Android.
+title: Device restriction settings for Android in Microsoft Intune - Azure | Microsoft Docs
+description: See a list of all the Android device settings you can control and restrict in Microsoft Intune. Use these settings to control the password, access Google Play, allow or prohibit apps, control the browser settings, block apps, backup to the Google cloud, and control the message, voice, data roaming, Wi-Fi, and Bluetooth connection options.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-# Microsoft Intune Android and Samsung Knox Standard device restriction settings 
+# Android and Samsung Knox Standard device restriction settings - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -58,7 +57,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
     > Samsung Knox devices automatically require a 4-digit PIN during MDM enrollment. Native Android devices may automatically require a PIN to become compliant with conditional access.
 
 - **Minimum password length** - Enter the minimum length of password a user must configure (between 4 and 16 characters).
-- **Maximum minutes of inactivity until screen locks** - Specifies the maximum number of minutes of inactivity until the screen locks. This setting is ignored if the new time is longer than what’s currently on the device. If the property is set to “immediately”, the device uses the minimum possible value per device.
+- **Maximum minutes of inactivity until screen locks** - Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. On a device, an end user can’t set a time value greater than the configured time in the profile. An end user can set a lower time value. For example, if the profile is set to 15 minutes, an end user can set the value to 5 minutes. An end user can’t set the value to 30 minutes. 
 - **Number of sign-in failures before wiping device** - Specifies the number of sign-in failures to allow before the device is wiped.
 - **Password expiration (days)** - Specifies the number of days before the device password must be changed.
 -  **Required password type** - Specifies the required password complexity level, and whether biometric devices can be used. Choose from:
