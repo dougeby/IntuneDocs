@@ -62,10 +62,12 @@ Applies to: Windows 10 and later (1809 and later)
 A future update will support the following iOS VPN clients: 
 - F5 Access (version 3.0.1 and higher)
 - Citrix SSO
-- Palo Alto Networks GlobalProtect (version 5.0 and higher) 
+- Palo Alto Networks GlobalProtect (version 5.0 and higher)
 Also in a future update:
-- Existing **F5 Access** connection types will be renamed to **F5 Access Legacy** (per iOS branding updates)
-- Existing **GlobalProtect** connection types will be renamed to **Legacy Palo Alto Networks GlobalProtect** (per iOS branding updates). Existing profiles with these connection types continue to work with the legacy VPN client. If you're using Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN, or Legacy Palo Alto Networks GlobalProtect with iOS, you should move to the new apps. Do this as soon as possible to ensure that VPN access is available for iOS devices as they update to iOS 12.
+- Existing **F5 Access** connection types will be renamed to **F5 Access Legacy** (per F5 branding updates)
+- Existing **Palo Alto Networks GlobalProtect** connection types will be renamed to **Legacy Palo Alto Networks GlobalProtect** (per Palo Alto branding updates). 
+
+Existing profiles with these connection types continue to work with the legacy VPN client. If you're using Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN, or Legacy Palo Alto Networks GlobalProtect with iOS, you should move to the new apps. Do this as soon as possible to ensure that VPN access is available for iOS devices as they update to iOS 12.
 
 ### Lock the Company Portal in single app mode until user sign-in <!--1067692 --> 
 You’ll have the option to run Company Portal in Single App mode if you authenticate a user through the Company Portal instead of Setup Assistant during DEP enrollment. This option locks the device immediately after Setup Assistant completes so that a user must sign in to access the device. This process makes sure that the device completes onboarding and is not orphaned in a state without any user tied.
