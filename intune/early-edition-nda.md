@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/02/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,6 +43,15 @@ This page is updated periodically. Check back for additional updates.
 ## Intune in the Azure portal
 
 <!-- 1808 start -->
+
+### Windows Hello will target users and devices <!-- 1106609 -->
+When you create a [Windows Hello for Business](windows-hello.md) policy, it applies to all users within the organization (tenant-wide). With this update, the policy can also be applied to specific users or specific devices using a device configuration policy (**Device Configuration** > **Profiles** > **Create profile** > **Identity Protection** > **Windows Hello for Business**).
+
+In Intune in the Azure portal, the Windows Hello configuration and settings will exist in both **Device enrollment** and **Device configuration**. **Device enrollment** targets the entire organization (tenant-wide), and supports Windows AutoPilot (OOBE). **Device configuration** targets devices and users using a policy that's applied during check-in.
+
+Applies to:  
+- Windows 10 and later
+- Windows Holographic for Business
 
 ### Control S-mode on Windows 10 and later devices - public preview <!-- 1958649 -->
 You'll be able to create a device configuration profile that switches a Windows 10 device out of S-mode, or prevent users from switching the device out of S-mode. This feature will be in Intune > **Device configuration** > **Profiles** >  **Windows 10 and later** > **Edition upgrade and mode switch**.
