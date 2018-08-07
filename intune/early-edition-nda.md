@@ -68,7 +68,7 @@ To create a scope tag, choose **Intune roles** > **Scope (Tags)** > **Create**.
 To add a scope tag to a role assignment, choose **Intune roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
 To add a scope tag to a configuration profile, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)**.
 
-### Assign a user and friendly name to an AutoPilot device <!--1346521 -->
+### Assign a user and friendly name to an Autopilot device <!--1346521 -->
 A future public preview will let admins assign a user to a single Autopilot device.  Admins will also be able to give friendly names to greet the user when setting up their device with Autopilot.
 
 Applies to: Windows Insider 1809 or later build (while in preview).
@@ -93,7 +93,7 @@ To see this feature, choose **Device enrollment** > **Device restrictions**.
 Turning on this restriction has no effect on devices already enrolled.
 After a restriction is turned on, Intune will check to make sure that each each new Windows enrollment request has been authorized as a corporate enrollment. The following methods qualify as being authorized as a corporate enrollment:
 - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
-- The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
+- The device enrolls through [Windows Autopilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers]( corporate-identifiers-add.md)**).
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
 - The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
@@ -106,16 +106,16 @@ The following personal enrollment methods will also be blocked:
 
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
-### Specify machine name patterns in an AutoPIlot profile <!--1849855-->
-You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during AutoPilot enrollment. You'll need to specify this in the AutoPilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
+### Specify machine name patterns in an Autopilot profile <!--1849855-->
+You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. You'll need to specify this in the Autopilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
 Applies to: Windows Insider 1809 or later build (while in preview).
 
 ### iOS version number and build number are shown <!-- 1892471 -->
 In **Device compliance** > **Device compliance**, the iOS operating system version is shown. In a future update, the build number will also be shown.
 When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By showing the build number, you can easily check if a vulnerability update is installed.
 
-### For Windows AutoPilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
-A public preview will include new Windows AutoPilot profile options for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires  Company Branding to be configured in Azure Active Directory. 
+### For Windows Autopilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
+A public preview will include new Windows Autopilot profile options for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires  Company Branding to be configured in Azure Active Directory. 
 Applies to:  Windows Insider 1809 or later build (while in preview).
 
 ### Delay when iOS software updates are shown on the device <!-- 1949583 -->
