@@ -175,7 +175,7 @@ Compliance policies created in the Azure classic portal will be deprecated.  Whe
 
 ### Change terminology to "retire" and "wipe" <!-- 2175759 -->
 To be consistent with the Graph API, the Intune user interface and documentation will change the following terms:
-- **Remove company data** will be changed to "retire"
+- **Remove company data** will be changed to **retire**
 - **Factory reset** will be changed to **wipe**
 
 
