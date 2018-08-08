@@ -173,6 +173,13 @@ Compliance policies created in the Azure classic portal will be deprecated.  Whe
 > [!IMPORTANT]
 > When the Azure classic portal retires, you can't access your policies, including not being able to see them. So, be sure to export them, and recreate them in the Azure portal before the Azure classic portal retires.
 
+### Change terminology to "retire" and "wipe" <!-- 2175759 -->
+To be consistent with the Graph API, the Intune user interface and documentation will change the following terms:
+- **Remove company data** will be changed to **retire**
+- **Factory reset** will be changed to **wipe**
+
+
+
 <!-- 1807 start -->
 
 ### More sync opportunities in the Company Portal app for Windows <!-- 2683177 -->
