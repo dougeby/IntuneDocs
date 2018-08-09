@@ -2,13 +2,13 @@
 # required metadata
 
 title: Resolving threats found by Lookout for Work on Android | Microsoft Docs
-description: Learn how to fix a threat found by Lookout for Work on Android.
+description: Learn how to fix a threat found on an Android device by the Lookout for Work app.
 keywords:
 author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,28 +30,36 @@ ms.custom: intune-enduser
 
 ---
 
-# Resolve a threat found by Lookout for Work
+# Resolve a threat found by Lookout for Work  
 
-Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
+The Lookout for Work app is a Mobile Threat Defender service that identifies potential threats on your Android devices. These threats are reported to the Company Portal app, and appear there as unresolved, noncompliant issues. As long as these threats are present, you may be unable to:
 
-![Lookout for Work found a threat on your device](./media/lookout-threat-found-android.png)
+* Connect to corporate e-mail
+* Connect to corporate Wi-Fi
+* Connect to SharePoint Online
+* Sync corporate files with OneDrive
+* Access company apps
 
-To fix the issue, open the Lookout for Work app, and follow the instructions shown in the app.
+This article describes how to recognize Lookout for Work threat alerts and what to do to resolve them. 
 
-## What you might see if your enrolled device is blocked from accessing email or files
+## Troubleshoot virus or security threat  
+Regain access to your company's resources when the Lookout for Work app detects a security or virus threat.  
 
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
+1. If a virus or security threat is detected, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).  
 
-![Lookout for Work error message with link to Company Portal website](./media/mtd-go-to-device-management-portal-android.png)
+    ![Example screenshot of a Lookout for Work error message, with a link to Company Portal website and blue OK button.](./media/mtd-go-to-device-management-portal-android.png)
 
-Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), where you will see instructions on how to fix the issue.
+2. Select your device.  
+3. Click the warning banner that appears below your device. The banner will surface instructions to fix the issue.      
 
-## Example of an app that Lookout for Work sees as a threat
+    ![Example screenshot of the Company Portal device page, showing the Lookout for Work warning banner.](./media/CP-lookout-virus-banner-1808.png)  
 
-If you have installed an app that Lookout for Work thinks is a threat, you'll see a screen that is similar to this one:
+## Troubleshoot an app threat  
 
-![example of Lookout for Work virus alert message](./media/lookout-virus-alert-android.png)
+If you install an app that Lookout for Work identifies as a threat, you'll receive a message like the one shown in the screenshot below.  
 
-After you uninstall the app, you regain access to your company email and data right away. If you ignore the request to uninstall the app, you will lose access to your email and data until you uninstall the app.
+![Example screenshot showing a Lookout Virus Alert message over the Lookout for Work app interface. Shows three buttons: "Close," "More Info," and "Uninstall."](./media/lookout-virus-alert-android.png)  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+To regain the access you've lost to your company email and data, uninstall the questionable app. As long as the app is on your device, you'll be unable to access company resources.    
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk).  

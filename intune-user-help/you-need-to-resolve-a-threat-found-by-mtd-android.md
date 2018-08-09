@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Resolving threats found by Mobile Threat Defense apps on Android | Microsoft Docs
-description: Learn how to resolve threats using Mobile Threat Defense apps for Android.
+title: Resolve a security or app threat found by Mobile Threat Defense apps for Android devices
+description: Learn how to resolve threats using the Mobile Threat Defense apps for Android devices.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,20 +30,23 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by a Mobile Threat Defense app
 
-Mobile Threat Defense has found a potential threat on your Android device, and you must fix the issue to regain access to your company or school email, apps, and files. Depending on how your company has set up Mobile Threat Defense, you will use one of the following apps to resolve these kinds of issues.
+Mobile Threat Defense apps detect and alert you to potential threats on your devices. Some organizations integrate a Mobile Threat Defense service with an MDM provider, like Intune. When integrated, the Mobile Threat Defense service reports the threats (such as suspicious apps, networks, and OS vulnerabilities) and makes them visible in the Company Portal app. You can then view and begin to troubleshoot them.
+
+Threats appear to you in the Company Portal as unresolved, noncompliant issues. If the threats are classified as risky enough, then your company will revoke your access to its corporate resources. As long as these threats are present on your device, you may be unable to:  
+
+* Connect to corporate e-mail
+* Connect to corporate Wi-Fi
+* Connect to SharePoint Online
+* Sync corporate files with OneDrive
+* Access company apps
+
+Below are the Android-specific Mobile Threat Defense services that your organization could have set up. Select an app to read more about its behavior.  
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 * [Symantec Endpoint Protection Mobile](you-need-to-resolve-a-threat-found-by-skycure-android.md)
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
-* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
+* [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)  
 
-To resolve the issue, open the Mobile Threat Defense app, and follow the instructions shown in the app.
+  Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk)  
 
-**Example of an app that Mobile Threat Defense sees as a threat**
-
-If you have installed an app that Mobile Threat Defense thinks is a threat, you will see a screen that tells you what the threatening app is. If you see something like this, tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
-
-After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
-
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
 

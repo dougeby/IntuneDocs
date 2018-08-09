@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 
 # Lock your device from Company Portal app for Windows 10
 
-Remotely lock a lost or stolen device from the Company Portal app for Windows 10. If supported on your device, the Company Portal app will lock your device's screen--no matter where it is. A passcode will be required to unlock it.
+Remotely lock a lost or stolen device from the Company Portal app for Windows 10. If supported on your device, this setting locks your device's screen, no matter where the device is. A person must enter the correct passcode before the device can be unlocked and used again.
 
 Remote lock is supported on devices running:
 

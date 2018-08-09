@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/23/2017
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,48 +30,52 @@ ms.custom: intune-enduser
 
 # How to reset your device passcode from the Company Portal website
 
-If you lose your device PIN or password for a device that you have enrolled in Intune, you can use the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) to reset it. You can use the Company Portal website to manage computers and devices that you have enrolled in Intune and to do most of the same tasks that you can do when you use your Company Portal app.
+If you lose your device PIN or password, you can use the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) to reset it.  
 
-> [!NOTE]
-> It's possible that you won't see the Reset Passcode button on the Company Portal website if you use a corporate enrolled device. If you do not, you need to contact your company support to reset the passcode for you.
+If you're using a corporate-enrolled device, you may not see the option to reset your device passcode. Contact your company support to reset the passcode for you.
 
-To reset your passcode:
-
-1. On the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/intune/media/CP_hamburger_menu.png), then select __My Devices__.
-
-2. On the __My Devices__ page, select the name of the device whose passcode you want to reset.
-
-   ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
-
-3. The device will open in a popup window. Select the **Reset Passcode** button.
-
-   ![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
-
-4. A banner will appear asking you to confirm that you want to reset your passcode, and that your device will sign you out after it does this. You will then need to wait 5 minutes before signing in again.
-
-   ![The reset passcode banner with its warning about resetting device passcode and how the user will be logged out. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup.png)
-
-5. Select **Sign out**, and you will receive one final message letting you know about the removal of the passcode from the device. If you do not have the device with you, do not remove the passcode, as whomever has physical access to the device will be able to access most of the information on it - personal or corporate. 
-
-   ![The second reset passcode banner with its warning about resetting device passcode and how the passcode will be removed from the device. It also advises how to set a new passcode by going to device settings to do so.](./media/iwp-reset-passcode-2nd-popup.png)
-
-   Different devices have different types of passcodes.
-
-   **Android**: Removes the existing passcode and creates a temporary passcode with both letters and numbers 
-  
    > [!NOTE]
-   > You cannot reset the passcode for devices with Android 7.0 and later. You must reset these devices to factory settings if you forget your passcode.
+   > You cannot reset the passcode for devices with Android 7.0 and later. If you forget a passcode, you must reset tje device to factory settings if you forget your passcode. 
 
-   **iOS**: Removes the existing passcode and does not create a temporary passcode. If you're using the Touch ID fingerprint         scanner for opening your device or making purchases, you need to set it up again.
+## Reset your passcode
 
-   **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode with both letters and numbers. If you're        using Windows Hello facial recognition to log in, it will still be supported.
+1.  Open the[Company Portal website and select the __Menu__ button > __Devices__.  
+
+2. Select the device that needs a passcode reset.  
+
+    ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png) 
+
+3. Select **Reset Passcode**. If the passcode option isn't visible at the top of your page, select **More (…)** > **Reset Passcode**.   
+
+   ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)   
+
+    ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)  
+
+4. When prompted, click **Sign out**. When prompted again, sign back in. You must sign back in to the Compay Portal website within five minutes, or the Company Portal will not reset the device passcode.  
+
+   ![Example screenshots showing a prompt to sign out of the Company Portal. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup-1808.png)
+
+5. A message appears to warn you that the existing device passcode is about to be removed. Click Reset passcode to confirm.  
+    > [!WARNING]
+    > After you reset your passcode, anyone who has physical access to the device will be able to access most personal and corporate information on it. If you don't currently have the device in your possession, don't reset the passcode.  
+
+   ![Example screenshot showing second reset passcode message. Includes link to learn more about setting a new passcode in the documentation, and individual buttons to reset passcode and cancel.](./media/iwp-reset-passcode-popup-1808.png) 
+
+6. Enter the temporary passwrd to unlock your device and set a new passcode. You can find the temporary password for Windows and Android devices in the Company Portal, under the device's details. See the section [Set up a new passcode](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) for more OS-specific passcode descriptions.  
+7. On your device, go to **Settings** and change the temporary passcode. 
+
+6. A flag appears in the top right of the page. Click to read the notification and confirm that the password was successfully reset.  
+
+## Set up a new passcode  
+
+This section describes the passocde reset and the temporary password behavior for each device platform.  
+
+**Android**: Removes the existing passcode and creates a temporary passcode made up of letters and numbers.
+
+**iOS**: Removes the existing passcode and does not create a temporary passcode. If you use the Touch ID fingerprint scanner to open your device or make purchases, you must set it up again.  
+
+**Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode made up of letters and numbers. If set up, Windows Hello facial recognition will still work with the device.
 	
-   **Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode with numbers
+**Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode made up of numbers.  
 
-   For Android and Windows devices, the temporary password will appear in the **Device Details**. 
-
-6. Unlock your device and set a new passcode, or change the temporary passcode by going to your device **Settings**.
-
-To see a notification confirming that your password was reset successfully, click the notification flag at the top right of the Company Portal website.
-
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk).  
