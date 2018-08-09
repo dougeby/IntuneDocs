@@ -112,9 +112,9 @@ After a restriction is turned on, Intune will check to make sure that each each 
 Unauthorized enrollments will be blocked. The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 The following personal enrollment methods will also be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 ### Specify machine name patterns in an Autopilot profile <!--1849855-->
@@ -172,6 +172,13 @@ Applies to:
 Compliance policies created in the Azure classic portal will be deprecated.  When this happens, you can review and delete any existing policies; you can't update them. You can export the policies as a comma-separated file (.csv file). Then, use the details in the file to recreate these policies in Intune Azure portal.
 > [!IMPORTANT]
 > When the Azure classic portal retires, you can't access your policies, including not being able to see them. So, be sure to export them, and recreate them in the Azure portal before the Azure classic portal retires.
+
+### Change terminology to "retire" and "wipe" <!-- 2175759 -->
+To be consistent with the Graph API, the Intune user interface and documentation will change the following terms:
+- **Remove company data** will be changed to **retire**
+- **Factory reset** will be changed to **wipe**
+
+
 
 <!-- 1807 start -->
 
