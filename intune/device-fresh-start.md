@@ -41,6 +41,6 @@ The **Fresh Start** device action removes any apps that are installed on a Windo
     * Keep the device enrolled in mobile device management 
     * Keep the contents of the device user's Home folder, and only remove apps and settings  
   > [!IMPORTANT]
- > If you do not retain user data, the device will be restored to its out-of-box state. It will be unenrolled from Azure AD and mobile   device management.  
+ > If you do not retain user data, the device will be restored to its out-of-box state. It will be unenrolled from Azure AD and mobile device management.  
 5. Click **OK**.   
 6. To see the status of this action, go back to **Devices** and click **Device actions**.  
