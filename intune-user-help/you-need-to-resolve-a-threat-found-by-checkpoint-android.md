@@ -51,7 +51,7 @@ Because the app is integrated with your company's MDM provider, you'll also see 
 
   ![Example screenshot of the Company Portal device page, showing the Lookout for Work warning banner.](./media/CP-lookout-virus-banner-1808.png)  
 
-Select the warning banner that appears below the affected device. SandBlast Mobile Protect will open and instruct you how to eliminate the threat.    
+Select the warning banner that appears below the affected device. You will be instructed to open SandBlast Mobile Protect to eliminate the threat.    
 
 ## Troubleshoot an app threat  
 
