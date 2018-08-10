@@ -34,11 +34,11 @@ Learn how to create and assign Microsoft Intune app protection policies to your 
 
 ## Before you begin
 
-If you're looking for instructions in the Intune classic portal, see [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
-
-App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What is Microsoft Intune app protection policies](app-protection-policy.md).
+App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What are Microsoft Intune app protection policies?](app-protection-policy.md).
 
 If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+For information about adding your organization's line-of-business (LOB) apps to Microsoft Intune to prepare for app protection policies, see [Add apps to Microsoft Intune](apps-add.md).
 
 ##  Create an app protection policy
 1. In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
