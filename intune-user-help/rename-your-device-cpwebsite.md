@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 Rename an enrolled, managed device from the Company Portal website. Change a device's generic or default model name to a name that you can quickly identify.
 
-1. Open the[Company Portal website and select the __Menu__ button > __Devices__.  
+1. Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
 
 2. Select the device you want to rename.
 
