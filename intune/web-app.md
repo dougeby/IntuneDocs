@@ -49,7 +49,11 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
 6. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
 7. Select **Configure**.
 8. In the **App information** pane, add the following information:
-	- **Name**: Enter the name of the app as it is to be displayed in the company portal.
+	- **Name**:  Enter the name of the app as it is to be displayed in the company portal. 
+	
+        > [!NOTE]
+        > If you change the name of the app through the Intune azure portal after you have deployed and installed the app, the app will no longer be able to be targeted using commands.
+	
 	- **Description**: Enter a description for the app. This description is displayed to users in the company portal.
 	- **Publisher**: Enter the name of the publisher of this app.
 	- **App URL**: Enter the URL of the website that hosts the app that you want to assign.
