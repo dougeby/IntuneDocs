@@ -105,8 +105,8 @@
 ## [Using your macOS device](using-your-macos-device-with-intune.md)
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
-### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
-
+### [Enroll a company-provided macOS device](enroll-company-device-macos.md)  
+### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)  
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
