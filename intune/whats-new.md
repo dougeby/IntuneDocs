@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,11 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+
+## Week of August 14, 2018
+
+### macOS support for Apple Device Enrollment Program <!-- 747651 -->
+Intune now supports enrolling macOS devices into the Apple Device Enrollment Program (DEP). For more information, see [Automatically enroll macOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-macos.md).
 
 ## Week of July 23, 2018
 
