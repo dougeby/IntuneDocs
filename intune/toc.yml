@@ -201,6 +201,9 @@
         href: apple-configurator-enroll-ios.md
     - name: Set up macOS enrollment
       href: macos-enroll.md
+      items:
+      - name: Device Enrollment Program
+        href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Troubleshoot device enrollment
