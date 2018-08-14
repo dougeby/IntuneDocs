@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # How to reset your device passcode from the Company Portal website
 
-If you lose your device PIN or password, you can use the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) to reset it.  
+If you lose your device PIN or password, you can use the [Company Portal website](https://portal.manage.microsoft.com) to reset it.  
 
 If you're using a corporate-enrolled device, you may not see the option to reset your device passcode. Contact your company support to reset the passcode for you.
 
@@ -39,7 +39,7 @@ If you're using a corporate-enrolled device, you may not see the option to reset
 
 ## Reset your passcode
 
-1.  Open the[Company Portal website and select the __Menu__ button > __Devices__.  
+1.  Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
 
 2. Select the device that needs a passcode reset.  
 
@@ -53,22 +53,29 @@ If you're using a corporate-enrolled device, you may not see the option to reset
 
 4. When prompted, click **Sign out**. When prompted again, sign back in. You must sign back in to the Compay Portal website within five minutes, or the Company Portal will not reset the device passcode.  
 
+   > [!NOTE]
+   > You must sign back in to confirm your identity. This is to prevent malicious attempts to reset your device passcode.
+
    ![Example screenshots showing a prompt to sign out of the Company Portal. The buttons for user input are Sign Out and Cancel.](./media/iwp-reset-passcode-popup-1808.png)
 
-5. A message appears to warn you that the existing device passcode is about to be removed. Click Reset passcode to confirm.  
+5. A message appears to warn you that the existing device passcode is about to be removed. Click **Reset passcode** to confirm.  
     > [!WARNING]
     > After you reset your passcode, anyone who has physical access to the device will be able to access most personal and corporate information on it. If you don't currently have the device in your possession, don't reset the passcode.  
 
-   ![Example screenshot showing second reset passcode message. Includes link to learn more about setting a new passcode in the documentation, and individual buttons to reset passcode and cancel.](./media/iwp-reset-passcode-popup-1808.png) 
+   ![Example screenshot showing second reset passcode message. Includes link to learn more about setting a new passcode in the documentation, and individual buttons to reset passcode and cancel.](./media/iwp-reset-passcode-popup2-1808.png) 
 
-6. Enter the temporary passwrd to unlock your device and set a new passcode. You can find the temporary password for Windows and Android devices in the Company Portal, under the device's details. See the section [Set up a new passcode](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) for more OS-specific passcode descriptions.  
+6. If you're resetting the passcode for an iOS device, its existing passcode will be removed. For Windows or Android devices, you will be issued a temporary passcode to unlock the device and set a new passcode. 
+
+   > [!NOTE]
+   > You can find the temporary password for Windows and Android devices in the Company Portal, under the device's details page. See the section [Set up a new passcode](reset-your-passcode-cpwebsite.md#set-up-a-new-passcode) for more OS-specific passcode descriptions.  
+   
 7. On your device, go to **Settings** and change the temporary passcode. 
 
-6. A flag appears in the top right of the page. Click to read the notification and confirm that the password was successfully reset.  
+8. A flag appears in the top right of the Company Portal website. Click to read the notification and confirm that the password was successfully reset.  
 
 ## Set up a new passcode  
 
-This section describes the passocde reset and the temporary password behavior for each device platform.  
+This section describes the passcode reset and the temporary password behavior for each device platform.  
 
 **Android**: Removes the existing passcode and creates a temporary passcode made up of letters and numbers.
 
