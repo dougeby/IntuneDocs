@@ -1142,6 +1142,17 @@ You can specify denied apps in Intune. If an app is denied, it is blocked from a
 
 ## Notices
 
+### Take action: Please update your Android device restriction or compliance policy password settings in Intune
+Intune will be removing the available password type “device default” for Android 4.4 and higher devices. Due to differences in Android platforms and device defaults, that policy is often treated as optional by the device. To clear up confusion on when this setting is enforced on Android, we’ll remove this setting from the UI in an upcoming release. 
+#### How does this affect me?
+- If your intent is to require a password on the devices, we recommend instead of using “device default” you edit your Android platform profile(s) to clearly articulate the required password type.
+- If your intent is to let your end user to decide on whether to create a password, select the “Not configured” button. 
+When we remove this setting from the UI, if the setting is still set, you will be prompted to choose a value other than “Device default” on your next edit of the profile.
+What do I need to do to prepare for this change?
+Review the password settings in your Android and Android enterprise device restriction and compliance policies. These are listed under System security for Compliance policies and under either Device password or Work profile settings for Device restrictions. Additional information has a link to more details and screenshots for where these settings are configured.
+####Additional information
+https://aka.ms/PasswordSettings 
+
 ### Plan for Change: Change Password at Next Auth added to Intune<!-- 1873216 -->
 In the September service release, Intune plans to integrate Apple’s newly-released **Change Password at Next Auth** setting for devices running macOS versions 10.13 and newer. Before this setting, MDM providers can't verify that the device passcode was changed to be compliant. Intune’s configuration and compliance policies only validate that the next time a device password is changed, that it's marked as compliant. When this new Apple feature is added, your macOS users will receive a request to update their password, even if their password is compliant.
 
