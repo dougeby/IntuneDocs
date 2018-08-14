@@ -177,19 +177,14 @@ You will need the following to distribute apps wrapped by Intune:
 
 3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
-4.  Open the **IntuneMAMPackager** folder and save its contents to your macOS computer. You are now ready to run the App Wrapping Tool.
-
-> [!NOTE]
-> The Intune MAM Packager may get mounted separately on your macOS computer and may result in a "file not found" error when running the wrapping commands. As such, moving the contents of the IntuneMAMPackager folder will allow for the path to the packager to be found during wrapping.
-
 ## Run the App Wrapping Tool
 
 ### Use terminal
 
-Open the macOS Terminal program and navigate to the folder where you saved the app wrapping tool files. The executable tool is named IntuneMAMPackager and is located in IntuneMAMPackager/Contents/MacOS. Run the command as follows:
+Open the macOS Terminal and run the following command:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]

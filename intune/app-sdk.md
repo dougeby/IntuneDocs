@@ -1,4 +1,4 @@
---
+---
 # required metadata
 
 title: Benefits of Intune App SDK 
