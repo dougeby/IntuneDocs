@@ -43,7 +43,7 @@ The remote lock setting works for:
 * Windows 10 Mobile (if the device already had a passcode set)
 * Windows Phone 8.1 (if the device already had a passcode set)  
 
-1. On the [Company Portal website](https://portal.manage.microsoft.com/helpdesk), select the __Menu__ button > __Devices__.  
+1. On the [Company Portal website](https://portal.manage.microsoft.com), select the __Menu__ button > __Devices__.  
 
 2. Select the device you want to lock.  
 
