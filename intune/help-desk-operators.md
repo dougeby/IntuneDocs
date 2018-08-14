@@ -67,7 +67,7 @@ You can use the **Troubleshoot** pane to review user information.
 | 2.   | User selection  | The name of the currently selected user. Click **Change user** to choose a new user.       |
 | 3.   | User status  | Displays the status of the user's Intune license, number of devices, each device compliance, number of apps, and app compliance.       |
 | 4.   | User information  | Use the list to select the details to review in the pane. <br>You can select: <ul><li>Mobile apps<li>App protection policies<li>Compliance policies<li> Configuration policies</ul>      |
-| 5.   | Group membership  | Yadda       |
+| 5.   | Group membership  | Shows the current groups the selected user is a member of.       |
 
 ## Mobile apps reference
 
