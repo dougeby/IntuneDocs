@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,8 +56,8 @@ Before running the tool, review [Security considerations for running the App Wra
 
 - Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
-    > [!NOTE]
-    > The Android APK Signature Scheme v2 is not supported by the Intune App Wrapping Tool for Android. If that’s what you’re looking to do - please do the V2 signing of the app manually after using the wrapper.
+> [!NOTE]
+> The Intune App Wrapping Tool does not support Google's v2 and upcoming v3 signature schemes for app signing. After you have wrapped the .apk file using the Intune App Wrapping Tool, the recommendation is to use [Google's provided Apksigner tool]( https://developer.android.com/studio/command-line/apksigner). This will ensure that once your app gets to end user devices, it can be launched properly by Android standards. 
 
 - (Optional) Enable Multidex within the input app. Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX files are a part of the compilation of an Android app. In this scenario, best practice would be to enable Multidex within the app itself. In certain organizations, this may require working with whoever compiles the app (ie. the app build team). 
 
