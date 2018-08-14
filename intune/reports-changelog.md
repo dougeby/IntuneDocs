@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,18 @@ ms.custom: intune-classic
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
+
+## 1808
+_Released August 2018_
+
+### v1.0 Collections  
+
+You can now use the v1.0 version of the Intune Data Warehouse by setting the query parameter `api-version=v1.0`. Updates to collections in the Data Warehouse are additive in nature and do not break existing scenarios.
+
+### Enrollment Failure Collection Released to Beta
+
+The new `Enrollment Failure` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
+
 
 ## 1805
 _Released May 2018_

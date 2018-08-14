@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,10 @@ Enter your company's support infomation to provide your employee with a contact 
 
 
 ## Company branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background.		
+You can customize your Company Portal with your company logo, company name, theme color and background image.		
+
+> [!NOTE]
+> Background image is not supported on all platforms. Support is being added for Company Portal for Android and iOS.
 
 ### Theme color
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
