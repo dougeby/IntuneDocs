@@ -415,7 +415,8 @@ Use the following security and privacy best practices when you use the App Wrapp
 This feature is an integration with the Citrix MDX app wrapper for iOS. The integration is simply an additional, optional command-line flag, `-citrix` to the general Intune App Wrapping Tools.
 
 ### Requirements
-* To use the `-citrix` flag, you will also need to install the [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) on the same macOS machine. The downloads are found on [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) and are restricted to Citrix customers only after signing in. Make sure this is installed in the default location: `/Applications/Citrix/MDXToolkit`. 
+
+To use the `-citrix` flag, you will also need to install the [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) on the same macOS machine. The downloads are found on [Citrix XenMobile Downloads](https://www.citrix.com/downloads/xenmobile/) and are restricted to Citrix customers only after signing in. Make sure this is installed in the default location: `/Applications/Citrix/MDXToolkit`. 
 
 > [!NOTE] 
 > Support for Intune and Citrix integration is limited to iOS 10+ devices only.
