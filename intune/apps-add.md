@@ -172,7 +172,7 @@ Intune will automatically reinstall, update, or remove a required app based on t
 
 ## App installation errors
 
-For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install#app-installation-errors).
+For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install.md#app-installation-errors).
 
 ## Next steps
 
