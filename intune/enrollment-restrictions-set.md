@@ -103,14 +103,14 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management](sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
- - [Automatic MDM enrollment](windows-enroll#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](azure/active-directory/device-management-azuread-joined-devices-frx.md).
-- [Automatic MDM enrollment](windows-enroll#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows setup]( azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
  
 The following personal enrollment methods will also be blocked:
-- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings]( azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
 - [MDM enrollment only]( https://docs.microsoft.com/en-us/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 
