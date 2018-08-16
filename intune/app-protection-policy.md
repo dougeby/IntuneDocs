@@ -51,7 +51,7 @@ App protection policies can be configured for app running on devices that are:
 - **Not enrolled in any mobile device management solution:**  The devices in this category are typically employee owned devices that are not managed or enrolled in Intune or other MDM solutions.
 
 > [!IMPORTANT]
-> You can create mobile app management policies for Office mobile apps that connect to Office 365 services. App protection policies are not supported for apps that connect to on-premises Exchange or SharePoint services.
+> You can create mobile app management policies for Office mobile apps that connect to Office 365 services. Additionally, you can now use Intune app protection policies and conditional access to protect access to on-premises Exchange data with Outlook Mobile. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx). App protection policies are not supported for other apps that connect to on-premises Exchange or SharePoint services.
 
 **The important benefits of using App protection policies are**
 
