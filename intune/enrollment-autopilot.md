@@ -71,10 +71,11 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
     - **Language (Region)***: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **Automatically configure keyboard***: If a **Language (Region)** is selected, skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard***: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
-    - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
+    - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user.
+    - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during provisioning. Names must be 15 characters or less, and can contain letters, numbers, and hyphens. Names must not contain only numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Alternatively, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
 
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
