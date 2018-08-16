@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -103,7 +103,7 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management]( sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through [automatic enrollment from SCCM for co-management](sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
  - [Automatic MDM enrollment](windows-enroll#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](azure/active-directory/device-management-azuread-joined-devices-frx.md).
