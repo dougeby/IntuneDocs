@@ -153,6 +153,10 @@ You can delete an iOS Volume Purchasing Program (VPP) token using the console. T
 <!-- 820870 -->  
 To revoke the license of all VPP apps for a given VPP token, you must first revoke all app licenses associated with the token, then delete the token.
 
+## Renewing app licenses
+
+You can renew an Apple VPP token in Intune by downloading a new certificate from Apple and updating the existing token in Intune. The certificate needs to be renewed annually.
+
 ## Further information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
