@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,15 +42,15 @@ The specific enrollment restrictions that you can create include:
 
 - Maximum number of enrolled devices.
 - Device platforms that can enroll:
-  - Android.
-  - Android work profile.
-  - iOS.
-  - macOS.
-  - Windows.
+  - Android
+  - Android work profile
+  - iOS
+  - macOS
+  - Windows
 - Platform operating system version for iOS, Android, Android work profile, and Windows. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android, Android work profile, macOS only).
+- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows only).
 
 ## Default restrictions
 
@@ -73,28 +73,46 @@ Default restrictions are automatically provided for both device type and device 
 
 ## Set device type restrictions
 
-You can change the settings for a device type restriction by following these steps:
+You can change the settings for a device type restriction by following the steps below. These restrictions don't effect on devices that have already been enrolled. Devices enrolled with [Intune PC agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature.
 
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions**.
-4. Under **Device Type Restrictions**, choose the restriction that you want to set.
-5. Under the restriction name (**All Users** for the default restriction), select **Platforms**. Choose **Allow** or **Block** for each platform listed.
-6. Select **Save**.
-7. Under the restriction name (**All Users** for the default restriction), select **Platform Configurations**. Then select the minimum and maximum **Versions** for the platforms listed. Supported version formats include:
+4. Under **Device Type Restrictions** > choose the restriction that you want to set > **Properties** > **Select platforms**. Choose **Allow** or **Block** for each platform listed.
+    ![Screen cap for allowing or blocking a platform](media/enrollment-restrictions-set/platform-allow-block.png)
+5. Choose **OK**.
+6. Choose **Configure platforms**.
+    ![Screen cap for configuring platforms](media/enrollment-restrictions-set/configure-platforms.png)
+7. Choose the minimum and maximum **Versions** for the platforms listed. Supported version formats include:
     - Android work profile support major.minor.rev.build.
-    - iOS supports major.minor.rev.
+    - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
     - Windows supports major.minor.rev.build for Windows 10 only.
-  Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
-8. Specify whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
-    ![Device restrictions workspace with the default device platform configurations showing personally owned settings configured](media/device-restrictions-platform-configurations.png)
-9. Select **Save**.
+8. Choose whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
+9. Choose **OK**.
 
+### Android device type restrictions
+- If you block personally owned Android devices from enrollment, personally owned Android work profile devices can still enroll.
+- By default, your Android work profile devices settings are the same as your settings for your Android devices. After you change your Android work profile settings, that's no longer the case.
+- If you block personal Android work profile enrollment, only corporate Android devices can enroll as Android work profile.
 
->[!NOTE]
->- If you block personally owned Android devices from enrollment, personally owned Android work profile devices can still enroll.
->- By default, your Android work profile devices settings are the same as your settings for your Android devices. After you change your Android work profile settings, that's no longer the case.
->- If you block personal Android work profile enrollment, only corporate Android devices can enroll as Android work profile.
+### Windows device type restrictions
+After the Windows platform device type restriction is set to **Block**, Intune checks to make sure that each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.
+
+The following methods qualify as being authorized as a Windows corporate enrollment:
+ - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
+- The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
+- The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
+- The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
+- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+ 
+The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
+ - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md).
+ 
+The following personal enrollment methods will also be blocked:
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md).
+- [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
+
 
 ## Set device limit restrictions
 
