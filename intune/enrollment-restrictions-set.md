@@ -79,10 +79,10 @@ You can change the settings for a device type restriction by following the steps
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions**.
 4. Under **Device Type Restrictions** > choose the restriction that you want to set > **Properties** > **Select platforms**. Choose **Allow** or **Block** for each platform listed.
-    ![Platform allow or block screen cap](media/enrollment-restrictions-set/platform-allow-block.png)
+    ![Screen cap for allowing or blocking a platform](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Choose **OK**.
 6. Choose **Configure platforms**.
-    ![Configure platforms screen cap](media/enrollment-restrictions-set/configure-platforms.png)
+    ![Screen cap for configuring platforms](media/enrollment-restrictions-set/configure-platforms.png)
 7. Choose the minimum and maximum **Versions** for the platforms listed. Supported version formats include:
     - Android work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
@@ -96,7 +96,7 @@ You can change the settings for a device type restriction by following the steps
 - If you block personal Android work profile enrollment, only corporate Android devices can enroll as Android work profile.
 
 ### Windows device type restrictions
-After the Windows platform device type restriction is set to **Block**, Intune checks to make sure that each each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.
+After the Windows platform device type restriction is set to **Block**, Intune checks to make sure that each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.
 
 The following methods qualify as being authorized as a Windows corporate enrollment:
  - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
