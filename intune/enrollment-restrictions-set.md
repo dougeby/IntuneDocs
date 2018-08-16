@@ -35,9 +35,6 @@ As an Intune administrator, you can create and manage enrollment restrictions th
 >[!NOTE]
 >Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
 
->[!NOTE]
->The group-assigned enrollment restrictions and priority functionality mentioned in this article are in the process of being rolled out across the Intune customer base. Until this rollout is complete, you might not have access to the group and priority features.
-
 The specific enrollment restrictions that you can create include:
 
 - Maximum number of enrolled devices.
