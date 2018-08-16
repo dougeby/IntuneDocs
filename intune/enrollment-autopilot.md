@@ -74,6 +74,7 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
     - **Automatically configure keyboard***: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
+    - **Hide change acount options (Windows Insider only)**: Choose **Hide** to prevent change account options from displaying on the company sign in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user.
     - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during provisioning. Names must be 15 characters or less, and can contain letters, numbers, and hyphens. Names must not contain only numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Alternatively, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
 
