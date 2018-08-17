@@ -178,7 +178,8 @@ To be consistent with the Graph API, the Intune user interface and documentation
 - **Remove company data** will be changed to **retire**
 - **Factory reset** will be changed to **wipe**
 
-
+### Delete Jamf devices <!-- 2653306 -->
+You will be able to delete JAMF-managed devices by going to **Devices** > choose the Jamf device > **Delete**.
 
 <!-- 1807 start -->
 
