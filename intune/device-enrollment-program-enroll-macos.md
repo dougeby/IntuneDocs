@@ -149,9 +149,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     |          <strong>Zoom</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
     |          <strong>Siri</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
     |     <strong>Diagnostic Data</strong>     |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |     <strong>FileVault</strong>           |  |
-    |     <strong>iCloud Diagnostics</strong>  |  |
-    |     <strong>Registration</strong>        |  |
+    |     <strong>FileVault</strong>           | Choose **Hide** to prevent the FileVault screen from displaying during the Setup Assistant. |
+    |     <strong>iCloud Diagnostics</strong>  | Choose **Hide** to prevent the iCloud Diagnostics screen from displaying during the Setup Assistant. |
+    |     <strong>Registration</strong>        | Choose **Hide** to prevent the Registration screen from showing up during the Setup Assistant. |
 
 
 10. Choose **OK**.
