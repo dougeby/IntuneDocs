@@ -53,7 +53,7 @@ For more information about the App Wrapping Tool for app protection policies on 
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |No - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes|
+|**iOS** |Yes|Yes|
 |**Android**|No - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|Yes|
 
 ## Intune App SDK
