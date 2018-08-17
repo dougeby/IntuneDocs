@@ -144,14 +144,14 @@ Now that you've installed your token, you can create an enrollment profile for D
     |         <strong>Restore</strong>         |                                                                If enabled, Setup Assistant prompts for iCloud backup during activation.                                                                 |
     |   <strong>iCloud and Apple ID</strong>   |                         If enabled, Setup Assistant prompts the user to sign in an Apple ID and the Apps & Data screen will allow the device to be restored from iCloud backup.                         |
     |  <strong>Terms and Conditions</strong>   |                                                   If enabled, Setup Assistant prompts users to accept Apple's terms and conditions during activation.                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |          <strong>Zoom</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |          <strong>Siri</strong>           |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |     <strong>Diagnostic Data</strong>     |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
-    |     <strong>FileVault</strong>           | Choose **Hide** to prevent the FileVault screen from displaying during the Setup Assistant. |
-    |     <strong>iCloud Diagnostics</strong>  | Choose **Hide** to prevent the iCloud Diagnostics screen from displaying during the Setup Assistant. |
-    |     <strong>Registration</strong>        | Choose **Hide** to prevent the Registration screen from showing up during the Setup Assistant. |
+    |        <strong>Touch ID</strong>         |                                                                 Choose **Show** to display the Touch ID screeen during the Setup Assistant.                                                                 |
+    |        <strong>Apple Pay</strong>        |                                                                 Choose **Show** to display the Apple Pay screeen during the Setup Assistant.                                                                 |
+    |          <strong>Zoom</strong>           |                                                                 Choose **Show** to display the Zoom screeen during the Setup Assistant.                                                                 |
+    |          <strong>Siri</strong>           |                                                                 Choose **Show** to display the Siri screeen during the Setup Assistant.                                                                 |
+    |     <strong>Diagnostic Data</strong>     |                                                                 Choose **Show** to display the Diagnostics Data screeen during the Setup Assistant.                                                                 |
+    |     <strong>FileVault</strong>           | Choose **Show** to display the FileVault screeen during the Setup Assistant. |
+    |     <strong>iCloud Diagnostics</strong>  | Choose **Show** to display the iCloud Diagnostics screen during the Setup Assistant. |
+    |     <strong>Registration</strong>        | Choose **Show** to display the Registration screen during the Setup Assistant. |
 
 
 10. Choose **OK**.
