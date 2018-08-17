@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -100,8 +100,8 @@ For more information about this section, see [Manage apps](app-management.md).
 - **App licenses**: View, assign, and monitor volume-purchased apps from the app stores. For more information, see:
     - [iOS volume-purchased program (VPP) apps](vpp-apps-ios.md).
     - [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md).
-- **Discovered Apps**: View all apps that were assigned by Intune and installed on a device.
-- **App Install Status**: View the status of an app assignment that you created.
+- **Discovered Apps**: View all apps that were assigned by Intune and installed on a device. For more information, see [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **App Install Status**: View the status of an app assignment that you created. For more information, see [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **App protection status**: View the status of an app protection policy for a user that you select.
 - **Audit logs**: View the Intune app-related activity of all IT admins.
 
