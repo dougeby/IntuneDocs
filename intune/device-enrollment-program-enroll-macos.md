@@ -159,8 +159,8 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>iCloud Diagnostics</strong> | Give the user the option to send iCloud diagnostic data to Apple. |
     | <strong>Registration</strong>| Require the user to register the device. |
     | <strong>Android Migration</strong> | Give the user the option to migrate data from an Android device. |
-    | <strong>Display Tone</strong> |  |
-    | <strong>Privacy</strong> | |
+    | <strong>Display Tone</strong> | Give the user the option to turn on True Tone Display. |
+    | <strong>Privacy</strong> | Display the Privacy screen to the user. |
     | <strong>iCloud Storage</strong> | Give the user the option to use iCloud storage. |
    
 
