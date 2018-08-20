@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,6 +66,12 @@ The graphs show the number of apps for the following status:
 | **Install Pending**   | The number of apps that are in the process of being installed. |
 | **Not Applicable**           | The number of apps for which status is not applicable.            |
 
+> [!NOTE]
+> The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
+>    - A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
+>    - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
+>    - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
+ 
 ### Device install status
 
 A device status list is shown when you select **Device install status** in the **Monitor** section of the menu. The details table includes the following columns:

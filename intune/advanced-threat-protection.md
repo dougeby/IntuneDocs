@@ -50,7 +50,7 @@ This article shows you how to:
 
 To use ATP with Intune, be sure you have the following configured, and ready to use:
 
-- Licensed tenant for Enterprise Mobility + Security E5 and Windows E5 (or Microsoft 365 Enterprise E5)
+- Licensed tenant for Enterprise Mobility + Security E3 and Windows E5 (or Microsoft 365 Enterprise E5)
 - Microsoft Intune environment, with [Intune managed](windows-enroll.md) Windows 10 devices that are also Azure AD joined
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) and access to the Windows Defender Security Center (ATP portal)
 

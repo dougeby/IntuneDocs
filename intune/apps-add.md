@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -125,6 +125,9 @@ Before you begin to add and assign apps, consider the following points:
 - When you add and assign an app from a store, your users must have an account with that store to be able to install the app.
 - Some apps or items that you assign might depend on built-in iOS apps. For example, if you assign a book in the iOS store, the iBooks app must be present on the device. If you have removed the iBooks built-in app, you cannot use Intune to reinstate it.
 
+> [!IMPORTANT]
+> If you change the name of the app through the Intune azure portal after you have deployed and installed the app, the app will no longer be able to be targeted using commands.
+
 ## Cloud storage space
 All apps that you create by using the software installer installation type (for example, a line-of-business app) are packaged and uploaded to Intune cloud storage. A trial subscription of Intune includes 2 gigabytes (GB) of cloud-based storage that is used to store managed apps and updates. A full subscription does not limit the total amount of storage space.
 
@@ -166,6 +169,10 @@ Intune will automatically reinstall, update, or remove a required app based on t
 - If a required app install fails or somehow the app is not present on the device, Intune evaluates compliance and reinstalls the app when this schedule elapses.  
 - An admin targets an app as available to a user group and an end user installs the app from the company portal on the device. Later, the admin updates the app from v1 to v2. Intune will update the app when this schedule elapses, provided that any previous version of the app is still present on the device.
 - If the admin deploys uninstall intent and the app is present on the device and failed to uninstall, Intune evaluates compliance and uninstalls the app when this schedule elapses.   
+
+## App installation errors
+
+For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install.md#app-installation-errors).
 
 ## Next steps
 

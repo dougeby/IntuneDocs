@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,9 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune enables you to manage macOS devices. To enable device management, your users must enroll their devices by going to the [Company Portal website](http://portal.manage.microsoft.com), and following the prompts. Once macOS devices are under management, you can [create custom settings for macOS devices](custom-settings-macos.md). More capabilities are coming soon.
+Intune lets you manage macOS devices to give users access to company email and apps.
+
+As an Intune admin, you can set up enrollment for company-owned macOS devices and personally owned macOS devices ("bring your own device" or BYOD). 
 
 ## Prerequisites
 
@@ -44,27 +46,25 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 
-## User-owned iOS devices (BYOD)
+## User-owned macOS devices (BYOD)
 
-You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the macOS Company Portal app from the App Store, and follow enrollment instructions in the app.
-
-## Company-owned iOS devices
-For organizations that purchase devices for their users, Intune supports enrolling company-owned macOS devices with a [device enrollment manager](device-enrollment-manager-enroll.md) account.
-
-## Set up macOS enrollment
-
-By default, Intune already allows enrollment of macOS devices.
-
-To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
-
-## Tell your users how to enroll their devices to access company resources
-
-Tell your end users to go to the [Company Portal website](https://portal.manage.microsoft.com) and follow the prompts to enroll their devices. You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+You can let users enroll their personal devices for Intune management, known as "bring your own device" or BYOD. After you've completed the prerequisites and assigned users licenses, your users can enroll their devices by:
+- going to the [Company Portal website](https://portal.manage.microsoft.com) or
+- downloading the Company Portal app.
+You can also send them a link to online enrollment steps: [Enroll your macOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 For information about other end-user tasks, see these articles:
 
 - [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
 - [Using your macOS device with Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## Company-owned macOS devices
+For organizations that purchase devices for their users, Intune supports the following macOS company-owned device enrollment methods:
+- [Apple's Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): Organizations can purchase macOS devices through Apple's Device Enrollment Program (DEP). DEP lets you deploy an enrollment profile “over the air” to bring devices into management.
+- [Device enrollment manager (DEM)](device-enrollment-manager-enroll.md): You can use a DEM account to enroll up to 1,000 devices.
+
+## Block macOS enrollment
+By default, Intune lets macOS devices enroll. To block macOS devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 ## Enroll virtual macOS machines for testing
 
@@ -84,3 +84,7 @@ User Approved MDM enrollment is a type of macOS enrollment that you can use to m
 To be user approved, the end user must, after enrolling using the macOS Company Portal, manually provide approval by using System Preferences. Instructions to do this are provided by the macOS Company Portal for users on macOS 10.13.2 and later.
 
 To find out if a device is User Approved, go to the Intune portal and then choose **Devices** > **All devices**> choose the device > **Hardware**. Check the **User Approved** field.
+
+## Next steps
+
+After macOS devices are enrolled, you can [create custom settings for macOS devices](custom-settings-macos.md).

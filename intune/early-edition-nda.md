@@ -62,10 +62,12 @@ Applies to: Windows 10 and later (1809 and later)
 A future update will support the following iOS VPN clients: 
 - F5 Access (version 3.0.1 and higher)
 - Citrix SSO
-- Palo Alto Networks GlobalProtect (version 5.0 and higher) 
+- Palo Alto Networks GlobalProtect (version 5.0 and higher)
 Also in a future update:
-- Existing **F5 Access** connection types will be renamed to **F5 Access Legacy** (per iOS branding updates)
-- Existing **GlobalProtect** connection types will be renamed to **Legacy Palo Alto Networks GlobalProtect** (per iOS branding updates). Existing profiles with these connection types continue to work with the legacy VPN client. If you're using Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN, or Legacy Palo Alto Networks GlobalProtect with iOS, you should move to the new apps. Do this as soon as possible to ensure that VPN access is available for iOS devices as they update to iOS 12.
+- Existing **F5 Access** connection types will be renamed to **F5 Access Legacy** (per F5 branding updates)
+- Existing **Palo Alto Networks GlobalProtect** connection types will be renamed to **Legacy Palo Alto Networks GlobalProtect** (per Palo Alto branding updates). 
+
+Existing profiles with these connection types continue to work with the legacy VPN client. If you're using Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN, or Legacy Palo Alto Networks GlobalProtect with iOS, you should move to the new apps. Do this as soon as possible to ensure that VPN access is available for iOS devices as they update to iOS 12.
 
 ### Lock the Company Portal in single app mode until user sign-in <!--1067692 --> 
 You’ll have the option to run Company Portal in Single App mode if you authenticate a user through the Company Portal instead of Setup Assistant during DEP enrollment. This option locks the device immediately after Setup Assistant completes so that a user must sign in to access the device. This process makes sure that the device completes onboarding and is not orphaned in a state without any user tied.
@@ -77,7 +79,7 @@ To create a scope tag, choose **Intune roles** > **Scope (Tags)** > **Create**.
 To add a scope tag to a role assignment, choose **Intune roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
 To add a scope tag to a configuration profile, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)**.
 
-### Assign a user and friendly name to an AutoPilot device <!--1346521 -->
+### Assign a user and friendly name to an Autopilot device <!--1346521 -->
 A future public preview will let admins assign a user to a single Autopilot device.  Admins will also be able to give friendly names to greet the user when setting up their device with Autopilot.
 
 Applies to: Windows Insider 1809 or later build (while in preview).
@@ -102,30 +104,29 @@ To see this feature, choose **Device enrollment** > **Device restrictions**.
 Turning on this restriction has no effect on devices already enrolled.
 After a restriction is turned on, Intune will check to make sure that each each new Windows enrollment request has been authorized as a corporate enrollment. The following methods qualify as being authorized as a corporate enrollment:
 - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
-
-- The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
+- The device enrolls through [Windows Autopilot](enrollment-autopilot.md).
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers]( corporate-identifiers-add.md)**).
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
 - The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
-Unauthorized enrollments will be blocked.
-The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
+
+Unauthorized enrollments will be blocked. The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 The following personal enrollment methods will also be blocked:
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
-### Specify machine name patterns in an AutoPIlot profile <!--1849855-->
-You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during AutoPilot enrollment. You'll need to specify this in the AutoPilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
+### Specify machine name patterns in an Autopilot profile <!--1849855-->
+You'll be able to specify a computer name template to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. You'll need to specify this in the Autopilot profile located at **Device enrollment** > **Windows enrollment** > **Windows Autopilot Deployment service** > **Profiles**. Only alphanumeric and hyphen characters can be used.
 Applies to: Windows Insider 1809 or later build (while in preview).
 
 ### iOS version number and build number are shown <!-- 1892471 -->
 In **Device compliance** > **Device compliance**, the iOS operating system version is shown. In a future update, the build number will also be shown.
 When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By showing the build number, you can easily check if a vulnerability update is installed.
 
-### For Windows AutoPilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
-A public preview will include new Windows AutoPilot profile options for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires  Company Branding to be configured in Azure Active Directory. 
+### For Windows Autopilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
+A public preview will include new Windows Autopilot profile options for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires  Company Branding to be configured in Azure Active Directory. 
 Applies to:  Windows Insider 1809 or later build (while in preview).
 
 ### Delay when iOS software updates are shown on the device <!-- 1949583 -->
@@ -171,6 +172,14 @@ Applies to:
 Compliance policies created in the Azure classic portal will be deprecated.  When this happens, you can review and delete any existing policies; you can't update them. You can export the policies as a comma-separated file (.csv file). Then, use the details in the file to recreate these policies in Intune Azure portal.
 > [!IMPORTANT]
 > When the Azure classic portal retires, you can't access your policies, including not being able to see them. So, be sure to export them, and recreate them in the Azure portal before the Azure classic portal retires.
+
+### Change terminology to "retire" and "wipe" <!-- 2175759 -->
+To be consistent with the Graph API, the Intune user interface and documentation will change the following terms:
+- **Remove company data** will be changed to **retire**
+- **Factory reset** will be changed to **wipe**
+
+### Delete Jamf devices <!-- 2653306 -->
+You will be able to delete JAMF-managed devices by going to **Devices** > choose the Jamf device > **Delete**.
 
 <!-- 1807 start -->
 

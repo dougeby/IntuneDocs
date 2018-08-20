@@ -36,11 +36,7 @@ App-based conditional access with app protection policies rely on applications u
 To block access to these apps, we recommend the following:
 
 * Set up ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
-* For **SharePoint Online**, disable non-modern authentication in the SharePoint Online service using the PowerShell commandlet [Set-SPOTenant](https://technet.microsoft.com/library/fp161390.aspx) to set the legacy authentication protocols property to false:
-
-```
- Set-SPOTenant -LegacyAuthProtocolsEnabled $false
-```
+* For **Exchange and SharePoint Online**, use Azure Active Directory Conditional Access and use the PowerShell commandlet Set-SPOTenant for SharePoint online. For detailed instructions, see [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
 
 
 >[!IMPORTANT]

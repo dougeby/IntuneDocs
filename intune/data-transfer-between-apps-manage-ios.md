@@ -76,7 +76,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 |Third-party MDM provider| Configuration Key | Value Type | Configuration Value|
 | ------- | ---- | ---- | ---- |
-|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
+|Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
 |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
 |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
