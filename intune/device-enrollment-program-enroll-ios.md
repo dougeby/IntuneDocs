@@ -175,7 +175,7 @@ Now that you've installed your token, you can create an enrollment profile for D
   - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
-    | Setup Assistant screen settings | If you choose **Show**, during set up the device will |
+    | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
