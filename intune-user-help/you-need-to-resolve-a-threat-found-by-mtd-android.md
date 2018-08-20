@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by a Mobile Threat Defense app
 
-Mobile Threat Defense apps detect and alert you to potential threats on your devices. Some organizations integrate a Mobile Threat Defense service with an MDM provider, like Intune. When integrated, the Mobile Threat Defense service reports the threats (such as suspicious apps, networks, and OS vulnerabilities) and makes them visible in the Company Portal app. You can then view and begin to troubleshoot them.
+Mobile Threat Defense apps detect and alert you to potential threats on your devices. Some organizations integrate a Mobile Threat Defense service with an MDM provider, like Intune. When integrated, the Mobile Threat Defense service reports the threats (such as suspicious apps, networks, and OS vulnerabilities) and notifies you in the Company Portal app. You can then find details about the threat and remediation steps in the Mobile Threat Defense app.
 
 Threats appear to you in the Company Portal as unresolved, noncompliant issues. If the threats are classified as risky enough, then your company will revoke your access to its corporate resources. As long as these threats are present on your device, you may be unable to:  
 

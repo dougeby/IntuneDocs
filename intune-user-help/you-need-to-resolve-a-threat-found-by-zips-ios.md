@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2019
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by Zimperium zIPS
 
-Zimperium zIPS is a Mobile Threat Defender service that identifies potential threats on your iOS devices. These threats are reported to the Company Portal app, and appear as unresolved,noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
+Zimperium zIPS is a Mobile Threat Defender service that identifies potential threats on your iOS devices. These threats are reported to the Company Portal app, and appear as unresolved, noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
 
 * Connect to corporate e-mail
 * Connect to corporate Wi-Fi
@@ -45,11 +45,9 @@ If a virus or security threat is detected, Ziperium zIPS will enforce restrictio
 
 Ziperium zIPS will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.
 
-Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app.  
+Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Zimperium zIPS to fix the virus or security threat.  
 
-  ![Example screenshot of the Company Portal device page, showing the Lookout for Work warning banner.](./media/CP-lookout-virus-banner-1808.png)  
-
-Select the warning banner that appears below the affected device. Zimperium zIPS will open and instruct you how to eliminate the threat.  
+  ![Example screenshot of the Company Portal device page, showing the Zimperium zIPS warning.](./media/CP-lookout-virus-banner-1808.png)  
 
 ## Resolve an app threat
 

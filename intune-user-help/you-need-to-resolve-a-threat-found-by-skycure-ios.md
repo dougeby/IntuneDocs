@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by Symantec Endpoint Protection Mobile
 
-Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service that identifies potential threats on your Android devices. These threats are reported to the Company Portal app, and appear as unresolved,noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
+Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service that identifies potential threats on your Android devices. These threats are reported to the Company Portal app, and appear as unresolved, noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
 
 * Connect to corporate e-mail
 * Connect to corporate Wi-Fi
@@ -53,9 +53,9 @@ Regain access to your company's resources when SEP Mobile detects a security or 
     ![Example screenshot of a Lookout for Work error message, with a link to Company Portal website and blue OK button.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Select your device.  
-3. Click the warning banner that appears below your device. The banner will surface instructions to fix the issue.      
+3. Read the warning that appears below your device. It will instruct you to open SEP Mobile to fix the virus or security threat.    
 
-    ![Example screenshot of the Company Portal device page, showing the Lookout for Work warning banner.](./media/CP-lookout-virus-banner-1808.png)
+    ![Example screenshot of the Company Portal device page, showing the SEP Mobile warning.](./media/CP-lookout-virus-banner-1808.png)
 
 ### App threat detected 
 
