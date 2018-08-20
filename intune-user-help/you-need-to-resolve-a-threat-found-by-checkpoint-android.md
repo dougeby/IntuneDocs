@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/07/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by SandBlast Mobile Protect
 
-SandBlast Mobile Protect is a Mobile Threat Defender service that identifies and assesses potential threats on your Android devices. It then reports the threats so that you can view them from the Company Portal app. Threats appear to you in the app as unresolved, noncompliant issues. As long as these threats are present, you may be unable to:   
+SandBlast Mobile Protect is a Mobile Threat Defender service that identifies potential threats on your Android devices. It reports threats that you can then view from the Company Portal app. Threats appear to you in the app as unresolved, noncompliant issues. As long as these threats are present, you might not be able to:   
 
 * Connect to corporate e-mail
 * Connect to corporate Wi-Fi
@@ -47,7 +47,7 @@ If a virus or security threat is detected, SandBlast Mobile Protect app will act
 
 However, SandBlast Mobile Protect will also prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.
 
-Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Sandblast Mobile Protect to fix thhe virus or security threat.
+Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Sandblast Mobile Protect to fix the virus or security threat.
 
   ![Example screenshot of the Company Portal device page, showing the SandBlast Mobile Protect warning.](./media/CP-lookout-virus-banner-1808.png)  
 

@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ If you're using a corporate-enrolled device, you may not see the option to reset
 
     ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. When prompted, click **Sign out**. When prompted again, sign back in. You must sign back in to the Compay Portal website within five minutes, or the Company Portal will not reset the device passcode.  
+4. When prompted, click **Sign out**. When prompted again, sign back in. You must sign back in to the Company Portal website within five minutes, or the Company Portal will not reset the device passcode.  
 
    > [!NOTE]
    > You must sign back in to confirm your identity. This is to prevent malicious attempts to reset your device passcode.

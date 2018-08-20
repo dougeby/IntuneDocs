@@ -32,7 +32,9 @@ ms.custom: intune-enduser
 
 Enroll your macOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
-Before you're allowed to access proprietary data from a coporate or personal device, organizations often require your device to be managed. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings. This articles describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet organizational requirements.
+Before you're allowed to access proprietary data from a corporate or personal device, organizations often require your device to be managed. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings.  
+
+This article describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet your organization's requirements.
 
 ## What to expect from the Company Portal app
 
@@ -59,13 +61,13 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 
 4. The __Devices__ page, will show either a list of managed devices, or a banner. What you see depends on if you already have a managed device. 
     * To add a device that's not listed, select the banner that reads, **Tap here to tell us which device you're using or add a new device.**
-    * If you don't have any devices, the banner reads, **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
+    * If you don't have any devices, the banner reads: **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
 
      ![A screenshot of the Devices page, with a red square around the banner option to highlight  where to click.](./media/CP-enroll-MACOS-1808.png)  
 5.  Complete the step below that matches the message you currently see in the Company Portal.  
     * If you're adding a device for the first time, you'll be prompted to download the Company Portal app on your device. Click **Download** to continue.  
 
-         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  
+         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  
 
     * If you already have a managed macOS device, you'll receive a prompt with a list of your currently managed macOS devices. Select **My device isn't listed here** > **Download** to download the Company Portal app on the device you're adding.  
 
