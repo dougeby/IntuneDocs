@@ -55,9 +55,9 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. Go to the top left-corner of the page and click the **Menu** > **Devices**.  
+3. Go to the top left-corner of the page and click **Menu** > **Devices**.  
 
-4. The __Devices__ page, will show either a list of managed devices, or a banner. What you see depends on if you already have a managed device, macOS, or other device. 
+4. The __Devices__ page, will show either a list of managed devices, or a banner. What you see depends on if you already have a managed device. 
     * To add a device that's not listed, select the banner that reads, **Tap here to tell us which device you're using or add a new device.**
     * If you don't have any devices, the banner reads, **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
 
@@ -67,13 +67,13 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 
          ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  
 
-    * If you already have a managed device, you'll receive a prompt with a list of your currently managed devices. Select **My device isn't listed here** > **Download** to download the Company Portal app on your device.  
+    * If you already have a managed macOS device, you'll receive a prompt with a list of your currently managed macOS devices. Select **My device isn't listed here** > **Download** to download the Company Portal app on the device you're adding.  
 
          ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select *My device isn't listed here* or a specific device from the middle of the page. A blue Download button appears at the bottom left of the prompt, and a gray Cancel button appears at the bottom right](./media/cp-mac-os-device-isnt-here-1808.png)  
 
 6. Your device will check to make sure that the installation file **CompanyPortal.pkg** is safe to open. After it's complete, open the installer and complete the installation.  
 
-7. When the installer has finished, go to the **Launchpad** and open the **Applications** folder > **Company Portal**.  
+7. When the installer has finished, go to the **Launchpad** and open **Company Portal**.  
 
 8. Your macOS device will prompt you to confirm that you want to open the Company Portal app. Click **Open**.  
 
