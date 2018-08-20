@@ -90,7 +90,7 @@ If you selected **Custom VPN** as the connection type, configure the following s
     - Disconnect
 
 ## Proxy settings
-If you're using a proxy, configurate the following. These settings are not applicable to Zscaler VPN connections.
+If you're using a proxy, configure the following settings. Proxy settings are not available for Zscaler VPN connections.  
 
 - **Automatic configuration script**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
 - **Address**: Enter the IP address of fully qualified host name of the proxy server.
