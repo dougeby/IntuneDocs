@@ -34,8 +34,8 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 
 ## Before you start
 
->[!IMPORTANT]
->This method of installing Office is supported only if no other versions of Microsoft Office are installed on the device.
+> [!IMPORTANT]
+> If there are .msi Office apps on the end-user device, you must use the **Remove MSI** feature to safely uninstall these apps. Otherwise, the Intune delivered Office 365 apps will fail to install.
 
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 - Intune supports adding Office apps from the Office 365 suite only.
@@ -96,6 +96,7 @@ In this step, configure installation options for the app suite. The settings app
 		- **Monthly (Targeted)**
 		- **Semi-Annual**
 		- **Semi-Annual (Targeted)**
+	- **Remove other versions of Office (MSI) from ened user devices**: This feature will allow you to remove all pre-existing Office (MSI) from end user machines. This is not limited to the apps selected for installation in **Configure App Suite**, as it will remove all Office (MSI) apps from the end user device.
 	- **Automatically accept the app end user license agreement**: Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite.
