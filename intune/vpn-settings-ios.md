@@ -63,7 +63,7 @@ Actual settings depend on the VPN connection type you select.
     > - **Cisco Legacy AnyConnect VPN** profiles are for the [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x, and older versions
     > - **Cisco AnyConnect VPN** profiles are for the [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x, and newer versions
 
-* **Excluded URLs**: When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. If you enable strict enforcement,include your company's Azure AD domain name. This ensures that users can continue to sign in and receive MDM policies.
+* **Excluded URLs**: When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. If you enable strict enforcement, include your company's Azure AD domain name. This ensures that users can continue to sign in and receive MDM policies.
 
 - **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use, depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.   
 
