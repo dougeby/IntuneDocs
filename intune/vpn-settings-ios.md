@@ -34,11 +34,11 @@ Depending on the settings you choose, not all values in the following list are c
 
 ## Base VPN settings
 Actual settings depend on the VPN connection type you select. 
-- **Connection name**: Enter a name for this connection. End users see this name when they browse their device for a list of available VPN connections.
+- **Connection name**: End users see this name when they browse their device for a list of available VPN connections.
 - **Custom domain name**: This static domain prepopulates the sign-in field within the Zscaler app. If you skip this field, the user's Azure Active Directory domain is used instead."
 - **IP address or FQDN**: The IP address or fully qualified domain name (FQDN) of the VPN server that devices connect with. For example, enter **192.168.1.1** or **vpn.contoso.com**. 
-- **Enable strict enforcement**: Prevent users from accessing network resources until successfully logged into the Zscaler app.
-- **Organization's cloud name**: Cloud name is provided by Zscaler.
+- **Enable strict enforcement**: When enabled, prevents users from accessing network resources until they are successfully signed into the Zscaler app.
+- **Organization's cloud name**: Type in the name of the cloud where your organization is provisioned. Look in the URL you use to sign in to Zscaler to find the name.  
 - **Authentication method**: Choose how devices authenticate to the VPN server. 
   - **Certificates**: Under **Authentication certificate**, select an existing SCEP or PKCS certificate profile to authenticate the connection. [Configure certificates](certificates-configure.md) provides some guidance about certificate profiles.
   - **Username and password**: End users must enter a username and password to sign in to the VPN server.  
@@ -48,22 +48,19 @@ Actual settings depend on the VPN connection type you select.
   
 - **Connection type**: Select the VPN connection type from the following list of vendors:
   - **Check Point Capsule VPN**
-  - **Cisco AnyConnect**
-  - **Cisco Legacy AnyConnect**
+  - **Cisco AnyConnect**: Applicable to [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x and later.
+  - **Cisco Legacy AnyConnect**: Applicable to [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x and earlier.
   - **SonicWall Mobile Connect**
   - **F5 Edge Client**
   - **Palo Alto Networks GlobalProtect**
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix**
-  - **Zscaler**
-  - **Custom VPN**
+  - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+  - **Custom VPN**  
 
-    > [!NOTE]
-    > - **Cisco Legacy AnyConnect VPN** profiles are for the [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x, and older versions
-    > - **Cisco AnyConnect VPN** profiles are for the [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x, and newer versions
 
-* **Excluded URLs**: When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. If you enable strict enforcement, include your company's Azure AD domain name. This ensures that users can continue to sign in and receive MDM policies.
+* **Excluded URLs**: When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. If you enable strict enforcement,make sure to include your company's Azure AD domain name in the list. This step ensures that users can continue to sign in and receive MDM policies.
 
 - **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use, depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.   
 
