@@ -152,7 +152,11 @@ Now that you've installed your token, you can create an enrollment profile for D
     |     <strong>FileVault</strong>           | Choose **Show** to display the FileVault screen during the Setup Assistant. |
     |     <strong>iCloud Diagnostics</strong>  | Choose **Show** to display the iCloud Diagnostics screen during the Setup Assistant. |
     |     <strong>Registration</strong>        | Choose **Show** to display the Registration screen during the Setup Assistant. |
-
+    |     <strong>Android Migration</strong>        | Choose **Show** to display the Android Migration screen during the Setup Assistant. |
+    |     <strong>Display Tone</strong>        | Choose **Show** to display the Display Tone screen during the Setup Assistant. |
+    |     <strong>Privacy</strong>        | Choose **Show** to display the Privacy screen during the Setup Assistant. |
+    |     <strong>iCloud Storage</strong>        | Choose **Show** to display the iCloud Storage screen during the Setup Assistant. |
+   
 
 10. Choose **OK**.
 
