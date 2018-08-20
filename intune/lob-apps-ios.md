@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,6 +76,9 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 2. Select **Add** to upload the app to Intune.
 
 The app that you created now appears in the list of apps. From the list, you can assign the apps to groups that you choose. For help, see [How to assign apps to groups](apps-deploy.md).
+
+> [!NOTE]
+> Provisioning profiles for iOS LOB apps have a 30 day notice before they will expire.
 
 ## Step 5: Update a line-of-business app
 
