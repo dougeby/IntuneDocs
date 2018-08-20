@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -99,6 +99,15 @@ In this step, configure installation options for the app suite. The settings app
 	- **Automatically accept the app end user license agreement**: Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite.
+
+### Office 365 ProPlus version
+When assigning the Office 365 ProPlus apps to Windows 10 devices using Intune, you can select the version of Office. In the Azure portal, select **Microsoft Intune** > **Apps** > **Add App**. Then, select **Office 365 ProPlus Suite (Windows 10)** from the **Type** dropdown list. Select **App Suite Settings** to display the associated blade. Set the **Update Channel** to a value, such as **Monthly**. Optionally, remove any other version of Office (msi) from end-user devices by selecting **Yes**. Select **Specific** to install a specific version of Office for the selected channel on end user devices. At this point, you can select the **Specific version** of Office to use. 
+
+The available versions will change over time. Therefore, when creating a new deployment, the versions available may be newer and not have certain older versions available. Current deployments will continue to deploy the older version, but the version list will be continually updated per channel. 
+
+For devices that update their pinned version (or update any other properties) and are deployed as available, the reporting status will show as **Installed** if they installed the previous version until the device check-in occurs. When the device check-in happens, the status will temporarily change to **Unknown**, however it will not be shown to the user. When the user initiates the install for the newer available version, the user will see the status changed to **Installed**. 
+
+For more information, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
 ## Finish up
 
