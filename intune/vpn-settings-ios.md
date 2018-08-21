@@ -35,7 +35,7 @@ Depending on the settings you choose, not all values in the following list are c
 ## Base VPN settings
 The actual settings you see from the list below are determined by the VPN connection type you select.  
 - **Connection name**: End users see this name when they browse their device for a list of available VPN connections.
-- **Custom domain name**: Prepopulate the Zscaler app's sign-in field with the domain your users belong to. For example, if a username is **Joe@contoso.net**, the domain **contoso.net** would statically appear in the field when the app opens.  If you do not type in a domain, the domain portion of the UPN in Azure Active Directory will be used.
+- **Custom domain name**: Prepopulate the Zscaler app's sign-in field with the domain your users belong to. For example, if a username is **Joe@contoso.net**, the domain **contoso.net** would statically appear in the field when the app opens. If you do not type in a domain name, the domain portion of the UPN in Azure Active Directory will be used.
 - **IP address or FQDN**: The IP address or fully qualified domain name (FQDN) of the VPN server that devices connect with. For example, enter **192.168.1.1** or **vpn.contoso.com**. 
 - **Enable strict enforcement**: When enabled, prevents users from accessing network resources until they are successfully signed into the Zscaler app.
 - **Organization's cloud name**: Type in the name of the cloud where your organization is provisioned. Look in the URL you use to sign in to Zscaler to find the name.  
@@ -57,8 +57,7 @@ The actual settings you see from the list below are determined by the VPN connec
   - **Cisco (IPSec)**
   - **Citrix**
   - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
-  - **Custom VPN**  
-
+  - **Custom VPN**    
 
 * **Excluded URLs**: When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. If you enable strict enforcement,make sure to include your company's Azure AD domain name in the list. This step ensures that users can continue to sign in and receive MDM policies.
 
