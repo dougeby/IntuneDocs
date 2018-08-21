@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM capabilities. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM options. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
 
 Users must exist in the [Azure portal](https://portal.azure.com) to be added as device enrollment managers. For optimal security, the DEM user shouldn't also be an Intune admin.
 
@@ -79,7 +79,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 ## Permissions for DEM
 
 Global or Intune Service Administrator Azure AD roles are required to
-- perform tasks that are related to DEM enrollment in the Admin Portal
+- complete tasks that are related to DEM enrollment in the Admin Portal
 - see all DEM users despite RBAC permissions being listed and available under the custom User role.
 
 A user without the Global Administrator or Intune Service Administrator role assigned, but who has read permissions for the Device Enrollment Managers role, can see only the DEM users they created. RBAC role support for these features will be announced in the future.
@@ -87,12 +87,12 @@ A user without the Global Administrator or Intune Service Administrator role ass
 
 ## Remove a device enrollment manager
 
-Removing a device enrollment manager doesn't affect enrolled devices. When a device enrollment manager is removed:
+When a device enrollment manager is removed:
 
 -   Enrolled devices are unaffected and continue to be fully managed.
--   The removed device enrollment manager account credentials remain valid.
--   The removed device enrollment manager still can't wipe or retire devices.
--   The removed device enrollment manager can only enroll a number of devices up to the per-user limit configured by the Intune admin.
+-   The removed DEM account credentials are still valid.
+-   The removed DEM still can't wipe or retire devices.
+-   The removed DEM can only enroll a number of devices up to the per-user limit configured by the Intune admin.
 
 **To remove a device enrollment manager**
 
