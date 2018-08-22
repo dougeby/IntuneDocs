@@ -35,8 +35,8 @@ You can integrate Windows Hello for Business (formerly Microsoft Passport for Wo
 
 Intune integrates with Hello for Business in two ways:
 
--   An Intune policy created under **Device enrollment** in Intune in the Azure portal targets the entire organization (tenant-wide). It supports the Windows AutoPilot out-of-box-experience (OOBE) and is applied during when a device enrolls. 
--  An identity protection profile created under **Device configuration** in Intune in the Azure portal targets assigned users and devices, and is applied during check-in. 
+-   An Intune policy can be created under **Device enrollment**. This policy targets the entire organization (tenant-wide). It supports the Windows AutoPilot out-of-box-experience (OOBE) and is applied when a device enrolls. 
+-  An identity protection profile can be created under **Device configuration**. This profile targets assigned users and devices, and is applied during check-in. 
 
 Use this article to create a default Windows Hello for Business policy that targets your entire organization. To create an identity protection profile that is applied to select user and device groups, see [Configure an identity protection profile](identity-protection-configure.md).  
 
@@ -64,7 +64,7 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 4. On the **All Users** pane, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
 
-5. On the **All Users** pane, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
+5. On the **All Users** pane, click **Settings** and then choose from the following options for **Configure Windows Hello for Business**:
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.

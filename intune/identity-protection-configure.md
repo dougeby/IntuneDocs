@@ -28,24 +28,24 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Identify protection profiles control how Windows Hello for Business is provisioned and configured on managed Windows 10 devices. Create this profile to configure:  
+Identity protection profiles control how Windows Hello for Business is provisioned and configured on managed Windows 10 devices. Create this profile to configure:  
 * Windows Hello for Business availability for devices and users.
 * Device pin requirements.
-* Gestures users can and cannot use to sign in to their devices.  
+* Gestures users can and can't use to sign in to their devices.  
 
  You can assign this profile to select user and device groups, or to all users and to all devices. Groups receive the identity protection profile when they check-in to Intune.    
 
 Use the information in this article to create an identity protection profile. Then [assign your profile](device-profile-assign.md) to user and device groups.
 
-## Create a device profile containing identity protection settings
+## Create a device profile with identity protection settings
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Device configuration** > **Profiles** > **Create profile**.
-4. Enter a **Name** and **Description** for the identitiy protection profile.
+4. Enter a **Name** and **Description** for the identity protection profile.
 5. From the **Platform** drop-down list, select **Windows 10 and later**. Windows Hello for Business is only supported on devices running Windows 10 and later.
 6. From the **Profile type** drop-down list, choose **Identity protection**.
-7. On the Windows Hello for Business pane, choose from the following for Configure Windows Hello for Business:
+7. On the Windows Hello for Business pane, choose from the following options for Configure Windows Hello for Business:
     * Disabled. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
     * Enabled. Select this setting if you want to configure Windows Hello for Business settings.
     * Not configured. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.  
@@ -63,7 +63,7 @@ Use the information in this article to create an identity protection profile. Th
 
 	 - **Required**. Users must include at least one of the character types in their PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 
-	 - **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)<br>Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
+	 - **Not allowed** (default). Users must not use these character types in their PIN. (This behavior also occurs if the setting isn't configured.)<br>Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
 
    - **PIN expiration (days)**. It's a good practice to specify an expiration period for a PIN, after which users must change it. The default is 41 days.
 
@@ -74,7 +74,7 @@ Use the information in this article to create an identity protection profile. Th
    
    - **Use a Trusted Platform Module (TPM)**. A TPM chip provides an additional layer of data security. Choose one of the following values:  
 	 - **Enable**. Only devices with an accessible TPM can provision Windows Hello for Business.
-	 - **Not configured**. All devices can provision Windows Hellow for Business, even if there is not a usable TPM. Devices will first try to use a TPM. If a TPMis unavailable, devices can use software encryption.  
+	 - **Not configured**. All devices can provision Windows Hello for Business, even when there's no usable TPM. Devices will first try to use a TPM, but if one is unavailable, devices can use software encryption.  
 
    - **Allow biometric authentication**. Enables biometric authentication, such as facial recognition or fingerprint, as an alternative to a PIN for Windows Hello for Business. Users must still configure a work PIN in case biometric authentication fails. Choose from:
 
