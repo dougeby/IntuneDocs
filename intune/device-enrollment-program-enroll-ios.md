@@ -137,7 +137,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     >    - prompt users to reset their expired passwords during enrollment
     >These are not supported when authenticating with Apple Setup Assistant.
 
-6. If you chose **Enroll with User Affinity**, you have the option to lock the device in Single App Mode (the Company Portal) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
+6. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
 
 7. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
