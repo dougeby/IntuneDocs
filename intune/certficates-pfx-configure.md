@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,8 @@ ms.custom: intune-azure
 ---
 # Configure and use PKCS certificates with Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+> [!IMPORTANT]
+> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
 
 Certificates authenticate and secure access to your corporate resources, such as a VPN or your WiFi network. This article shows you how to export a PKCS certificate, and then add the certificate to an Intune profile.
 
