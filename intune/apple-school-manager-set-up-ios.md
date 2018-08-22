@@ -99,8 +99,13 @@ Now that you've installed your token, you can create an enrollment profile for A
 
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >Multifactor authentication (MFA) doesn't work during enrollment on Apple School Manager devices if you have profile properties set to **Use with User Affinity** and you aren't using a Company Portal. After enrollment, MFA works as expected on these devices. Devices can't prompt users who need to change their password when they first sign in. Additionally, users with expired passwords aren't prompted to reset their password during enrollment. Users must use a different device to reset the password.
+    > [!NOTE]
+    > If you want do any of the following, set **Authenticate with Company Portal instead of Apple Setup Assistant** to **Yes**.
+    >    - use multifactor authentication
+    >    - prompt users who need to change their password when they first sign in
+    >    - prompt users to reset their expired passwords during enrollment
+    >
+    >These are not supported when authenticating with Apple Setup Assistant.
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.

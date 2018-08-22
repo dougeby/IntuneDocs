@@ -135,7 +135,8 @@ Now that you've installed your token, you can create an enrollment profile for D
     >    - use multifactor authentication
     >    - prompt users who need to change their password when they first sign in
     >    - prompt users to reset their expired passwords during enrollment
-    >These are not supported when authenticating with Apple Setup Assistant.
+    >
+    > These are not supported when authenticating with Apple Setup Assistant.
 
 6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
