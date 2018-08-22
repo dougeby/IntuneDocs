@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,9 @@ ms.custom: intune-azure
 ---
 
 # S/MIME email signing and encryption in Intune
+
+> [!IMPORTANT]
+> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
 
 S/MIME provides an extra level of security to your email communications by using encryption and decryption. Microsoft Intune can use S/MIME to sign and encrypt emails to mobile devices running iOS, Windows, Windows Phone, Android, and macOS.
 

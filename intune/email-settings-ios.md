@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,6 +27,9 @@ ms.custom: intune-azure
 # Email profile settings for iOS devices - Intune
 
 Use the email profile settings to configure your devices running iOS.
+
+> [!IMPORTANT]
+> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
 
 ## Email settings
 
