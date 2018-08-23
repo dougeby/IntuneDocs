@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -155,7 +155,7 @@ To revoke the license of all VPP apps for a given VPP token, you must first revo
 
 ## Renewing app licenses
 
-You can renew an Apple VPP token in Intune by downloading a new certificate from Apple and updating the existing token in Intune. The certificate needs to be renewed annually.
+You can renew an Apple VPP token by downloading a new token from Apple Volume Purchase Program portal and updating the existing token in Intune. The certificate must be renewed annually.
 
 ## Further information
 
