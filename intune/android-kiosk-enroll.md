@@ -131,7 +131,8 @@ For Android 6 and later devices, you can use the token to enroll the device. And
 
 On Android 7 and later devices, you can scan the QR code from the enrollment profile to enroll the device.
 
-**Note:** Browser zoom can cause devices not to be able to scan QR code. Increasing browser zoom resolves the issue.
+> [!Note]
+> Browser zoom can cause devices to not be able to scan QR code. Increasing the browser zoom resolves the issue.
 
 1. To launch a QR read on the Android device, tap multiple times on the first screen you see after a factory reset.
 2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.
