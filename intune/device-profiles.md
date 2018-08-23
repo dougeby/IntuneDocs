@@ -83,6 +83,10 @@ This feature supports:
 ## Identity protection
 [Identity protection](identity-protection-configure.md) controls the Windows Hello for Business experience on Windows 10 and Windows 10 Mobile devices. Configure these settings to make Windows Hello for Business available to users and devices, and to specify requirements for device PINs and gestures.  
 
+This feature supports:  
+- Windows 10 and later
+- Windows Holographic for Business  
+
 ## Kiosk
 
 [Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other features on your kiosk, including a start menu and a web browser.

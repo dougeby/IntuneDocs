@@ -37,6 +37,10 @@ Identity protection profiles control how Windows Hello for Business is provision
 
 Use the information in this article to create an identity protection profile. Then [assign your profile](device-profile-assign.md) to user and device groups.
 
+Applies to:  
+- Windows 10 and later
+- Windows Holographic for Business  
+
 ## Create a device profile with identity protection settings
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
