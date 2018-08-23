@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 08/23/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -67,7 +67,7 @@ The **AppTypes** entity lists the installation source of an app.
 | 2         | Managed   Android store app (MAM) | An   Android store app that has management enabled. |
 | 3         | iOS   store app                   | An   iOS store app.                                 |
 | 4         | iOS   LOB app                     | An   iOS line-of-business app.                      |
-| 5         | Managed   iOS store app (MAM?)    | An   iOSstore app that is management enabled.       |
+| 5         | Managed   iOS store app (MAM)     | An   iOSstore app that is management enabled.       |
 | 6         | O365   Pro Plus Suite             | The   Office 365 Pro Plus Suite for Windows 10.     |
 | 7         | Web   app                         | A   web app.                                        |
 | 8         | Windows   Phone 8.1 store app     | A   Windows phone 8.1 store app.                    |
@@ -295,7 +295,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 255          | Unknown           | Unknown   device type                                 |
 
 ## deviceEnrollmentType
-The **DeviceEnrollmentType** entity indicates how a device was enrolled. The enrollment type captures the method of enrollment. Examples list the different enrollment types and what they mean.
+The **deviceEnrollmentType** entity indicates how a device was enrolled. The enrollment type captures the method of enrollment. Examples list the different enrollment types and what they mean.
 
 |         Property         |                                    Description                                    |
 |:------------------------:|:---------------------------------------------------------------------------------:|
@@ -322,7 +322,7 @@ The **DeviceEnrollmentType** entity indicates how a device was enrolled. The enr
 
 
 ## intuneManagementExtension
-The **IntuneManagementExtension** lists the **IntuneManagementExtension** health on each Windows 10 device per day. The data is retained for the last 60 days.
+The **intuneManagementExtension** lists the **intuneManagementExtension** health on each Windows 10 device per day. The data is retained for the last 60 days.
 
 |       Property      |                          Description                          | Example |
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
@@ -348,8 +348,8 @@ The **IntuneManagementExtensionVersion** entity lists all the versions used by *
 | ExtensionVersionKey | Unique identifier of the IntuneManagementExtension   version. | 1       |
 | ExtensionVersion    | The 4 digit version number.                                   | 1.0.2.0 |
 
-## mamApplicationInstances
-The **MamApplicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
+## applicationInstances
+The **applicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
 
 |                                      Property                                      |                                                      Description                                                      |                Example               |
 |:----------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
@@ -372,8 +372,8 @@ The **MamApplicationInstance** entity lists managed Mobile Application Managemen
 | DeletedDateUtc                                                                     | Date and time in UTC when IsDeleted changed to True.                                                                  | 11/23/2016 0:00                      |
 | RowLastModifiedDateTimeUtc                                                         | Date and time in UTC when this MAM app instance was last   modified in the data warehouse.                            | 11/23/2016 0:00                      |
 
-## mamApplications
-The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
+## applications
+The **application** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
 
 |                               Property                               |                                    Description                                    |                Example               |
 |:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|:------------------------------------:|
@@ -387,8 +387,8 @@ The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed
 | DeletedDateUTC                                                       | Date and time in UTC when IsDeleted changed to True.                              | 11/23/2016 0:00                      |
 | RowLastModifiedDateTimeUTC                                           | Date and time in UTC when this MAM app was last modified   in the data warehouse. | 11/23/2016 0:00                      |
 
-## mamCheckins
-The **MamCheckin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service.
+## checkins
+The **checkin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service.
 
 > [!NOTE]
 > When an app instance checks in multiple times a day, the data warehouse stores it as single check-in.
@@ -404,8 +404,8 @@ The **MamCheckin** entity represents data gathered when a Mobile Application Man
 | EffectiveAppliedPolicyKey | Represents the effective applied policy associated with   the MAM app that has checked in. An effective applied policy results from   merging all policies relevant to a particular app and user. | 5/2/1900 0:00   |
 | LastCheckInDate           | Date and time when this MAM app last checked in. Value can   be null.                                                                                                                             | 11/23/2016 0:00 |
 
-## mamDeviceHealth
-The **MamDeviceHealth** entity represents devices that have Mobile Application Management (MAM) policies deployed to them even if they are jailbroken.
+## deviceHealth
+The **deviceHealth** entity represents devices that have Mobile Application Management (MAM) policies deployed to them even if they are jailbroken.
 
 |          Property          |                                                                           Description                                                                           |              Example              |
 |:--------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------:|
@@ -414,8 +414,8 @@ The **MamDeviceHealth** entity represents devices that have Mobile Application M
 | DeviceHealthName           | Represents the status of the device.   Not available - no information on this device.   Healthy - device is not jailbroken.   Unhealthy - device is jailbroken. | Not   Available Healthy Unhealthy |
 | RowLastModifiedDateTimeUtc | Date and time in UTC when this specific MAM Device Health was last modified in the data warehouse.                                                              | 11/23/2016 0:00                   |
 
-## mamPlatforms
-The **MamPlatform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
+## platforms
+The **platform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
 
 |          Property          |                                     Description                                     |                   Example                   |
 |:--------------------------:|:-----------------------------------------------------------------------------------:|:-------------------------------------------:|
@@ -426,7 +426,7 @@ The **MamPlatform** entity lists platform names and types on which a Mobile Appl
 
 
 ## managementAgentTypes
-The **ManagementAgentTypes** entity represents the agents used to manage a device.
+The **managementAgentTypes** entity represents the agents used to manage a device.
 
 |         Property        |                                       Description                                       |
 |:-----------------------:|:---------------------------------------------------------------------------------------:|
