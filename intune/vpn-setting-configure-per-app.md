@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,7 @@ Per-app VPN is currently available for the following providers:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## Prerequisites for per-app VPN
 
@@ -192,6 +193,7 @@ With your per-app VPN set-up and associated with your app, verify the connection
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler App
 
 ### Connect using the per-app VPN
 
