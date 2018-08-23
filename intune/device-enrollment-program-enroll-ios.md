@@ -163,6 +163,14 @@ Now that you've installed your token, you can create an enrollment profile for D
 11. Choose **Setup Assistant Settings** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
+    | Department settings | Description |
+    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
+    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation. |
+
+  You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
+  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
     |------------------------------------------|------------------------------------------|
