@@ -28,8 +28,8 @@ ms.custom: intune
 
 The following Intune Data Warehouse collections provides the properties, descriptions, and examples for v1.0 collections of the Data Warehouse API entities. 
 
-## AppRevisions
-The **AppRevision** entity lists all the versions of apps.
+## appRevisions
+The **appRevision** entity lists all the versions of apps.
 
 |          Property          |                                      Description                                      |                Example               |
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
@@ -50,7 +50,7 @@ The **AppRevision** entity lists all the versions of apps.
 | RowLastModifiedDateTimeUTC | Date and time in UTC when this app   version was last modified in the data warehouse. | 11/23/2016 0:00                      |
 
 ## AppTypes
-The **AppTypes** entity lists the installation source of an app.
+The **AppType** entity lists the installation source of an app.
 
 |   Property  |        Description        |
 |:-----------:|:-------------------------:|
@@ -137,7 +137,7 @@ The following table summarizes the assignment status of compliance policies to d
 |    InGracePeriod    |       Device is non-compliant but still has access to corporate resources[SA1]     |
 
 ## dates
-The **Date** entity represents dates that are referenced across multiple data warehouse entities.
+The **date** entity represents dates that are referenced across multiple data warehouse entities.
 
 |     Property    |                       Description                      |    Example    |
 |:---------------:|:------------------------------------------------------:|:-------------:|
@@ -196,7 +196,7 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 | JailBroken                 | Whether the device is jail broken or rooted.                                                                                                                                         |
 | DeviceCategoryKey          | Key of device category attribute for this device.                                                                                                                                    |
 ## deviceRegistrationStates
-The **DeviceRegistrationStates** entity represents the registration type referenced by other data warehouse collections. 
+The **DeviceRegistrationState** entity represents the registration type referenced by other data warehouse collections. 
 
 |           Property          |                                     Description                                     |
 |:---------------------------:|:-----------------------------------------------------------------------------------:|
@@ -215,8 +215,8 @@ The **DeviceRegistrationStates** entity represents the registration type referen
 |    NotRegisteredPendingEnrollment    |    Not registered pending enrollment                                                                                                                                               |
 |    Unknown                           |    Unknown state                                                                                                                                                                   |
 
-## Devices
-The **Devices** entity lists all enrolled devices under management and their corresponding properties.
+## devices
+The **device** entity lists all enrolled devices under management and their corresponding properties.
 
 |          Property          |                                                                                       Description                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -258,7 +258,7 @@ The **Devices** entity lists all enrolled devices under management and their cor
 
 
 ## deviceTypes
-The **DeviceTypes** entity represents the device type referenced by other data warehouse entities. The device type typically describes either the device model, manufacturer, or a combination of both.
+The **deviceType** entity represents the device type referenced by other data warehouse entities. The device type typically describes either the device model, manufacturer, or a combination of both.
 
 |    Property    |                                  Description                                 |
 |:--------------:|:----------------------------------------------------------------------------:|
@@ -294,7 +294,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 101          | Palm              | Palm   device                                         |
 | 255          | Unknown           | Unknown   device type                                 |
 
-## deviceEnrollmentType
+## deviceEnrollmentTypes
 The **deviceEnrollmentType** entity indicates how a device was enrolled. The enrollment type captures the method of enrollment. Examples list the different enrollment types and what they mean.
 
 |         Property         |                                    Description                                    |
@@ -321,7 +321,7 @@ The **deviceEnrollmentType** entity indicates how a device was enrolled. The enr
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Windows 10 Azure AD Join using   Device Auth.                                            |
 
 
-## intuneManagementExtension
+## intuneManagementExtensions
 The **intuneManagementExtension** lists the **intuneManagementExtension** health on each Windows 10 device per day. The data is retained for the last 60 days.
 
 |       Property      |                          Description                          | Example |
@@ -332,7 +332,7 @@ The **intuneManagementExtension** lists the **intuneManagementExtension** health
 | ExtensionVersionKey | Unique identifier of the IntuneManagementExtension   version. | 1       |
 | ExtensionStateKey   | Unique identifier of health state.                            | 2       |
 
-## intuneManagementExtensionHealthState
+## intuneManagementExtensionHealthStates
 The **IntuneManagementExtensionHealthState** lists all possible health states of the **IntuneManagementExtension**.
 
 |      Property     |                   Description                  | Example |
@@ -340,7 +340,7 @@ The **IntuneManagementExtensionHealthState** lists all possible health states of
 | ExtensionStateKey | Unique   identifier of health state.           | 2       |
 | ExtensionState    | Health   state of a IntuneManagementExtension. | Healthy |
 
-## intuneManagementExtensionVersion
+## intuneManagementExtensionVersions
 The **IntuneManagementExtensionVersion** entity lists all the versions used by **IntuneManagementExtension**.
 
 |       Property      |                          Description                          | Example |
@@ -426,7 +426,7 @@ The **platform** entity lists platform names and types on which a Mobile Applica
 
 
 ## managementAgentTypes
-The **managementAgentTypes** entity represents the agents used to manage a device.
+The **managementAgentType** entity represents the agents used to manage a device.
 
 |         Property        |                                       Description                                       |
 |:-----------------------:|:---------------------------------------------------------------------------------------:|
@@ -451,7 +451,7 @@ The **managementAgentTypes** entity represents the agents used to manage a devic
 | 64                    | GoogleCloudDevicePolicyController |  The device is managed by Google's CloudDPC.                                 |
 
 ## managementStates
-The **ManagementStates** entity provides details on the state of the device. Detail can be useful in the cases where remote actions are applied, the device is jailbroken, or rooted.
+The **ManagementState** entity provides details on the state of the device. Detail can be useful in the cases where remote actions are applied, the device is jailbroken, or rooted.
 
 |       Property      |                                     Description                                    |
 |:-------------------:|:----------------------------------------------------------------------------------:|
@@ -498,7 +498,7 @@ Represents a mobile app install status for a given target device type using Mobi
 | Count              | Total count.                                                                                                                  |
 
 ## ownerTypes
-The **EnrollmentTypes** entity indicates whether a device is corporate, personally owned, or unknown.
+The **ownerType** entity indicates whether a device is corporate, personally owned, or unknown.
 
 |    Property   |                                                                                     Description                                                                                    |           Example          |
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
@@ -574,7 +574,7 @@ The following table lists the number of users in the succeeded, pending, failed,
 | Error     | Number of unique Devices in error state.                                                      | 10                  |
 
 
-## userDeviceAssociation
+## userDeviceAssociations
 The **UserDeviceAssociation** entity contains user device associations in your organization.
 
 |        Name        |                                             Description                                            |     Example     |
@@ -586,9 +586,9 @@ The **UserDeviceAssociation** entity contains user device associations in your o
 | EndedDateTimeUTC   | Date and time in UTC when IsDeleted changed to True.                                               | 6/23/2017 0:00  |
 
 ## users
-The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
+The **user** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
-The **User** entity collection contains user data. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
+The **user** entity collection contains user data. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
 
 |          Property          |                                                                                                           Description                                                                                                          |                Example               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
@@ -602,8 +602,8 @@ The **User** entity collection contains user data. These records include user st
 | IsCurrent                  | Indicates whether this record represents the latest state   of the user. Multiple records may exist for a single user but only one of   them represents the current state.                                                     | True/False                           |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when the record was last modified in   the data warehouse                                                                                                                                                 | 11/23/2016 0:00                      |
 
-## VppProgramTypes 
-The **VppProgramTypes** entity lists possible VPP program types for an app.
+## vppProgramTypes 
+The **vppProgramType** entity lists possible VPP program types for an app.
 
 |      Property      |          Description         |
 |:------------------:|:----------------------------:|
