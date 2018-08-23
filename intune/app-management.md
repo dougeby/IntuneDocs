@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,23 +43,22 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 ## App management capabilities by platform
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Add and assign apps to devices and users|Yes|Yes|Yes|Yes|
-|Assign apps to devices not enrolled with Intune|Yes|Yes|No|No|
-|Use app configuration policies to control the startup behavior of apps|No|Yes|No|No|
-|Use mobile app provisioning policies to renew expired apps|No|Yes|No|No|
-|Protect company data in apps with app protection policies|Yes|Yes|No|No<sup>1</sup>|
-|Remove only corporate data from an installed app (app selective wipe)|Yes|Yes|Yes|Yes|
-|Monitor app assignments|Yes|Yes|Yes|Yes|
-|Assign and track volume-purchased apps from an app store|No|No|No|Yes|
-|Mandatory install of apps on devices (required)<sup>2</sup>|Yes|Yes|Yes|Yes|
-|Optional installation on devices from the Company Portal (available installation)|Yes|Yes|Yes|Yes|
-|Install shortcut to an app on the web (web link)|Yes|Yes|Yes|Yes|
-|In-house (line-of-business) apps|Yes|Yes|No|Yes|
-|Apps from a store|Yes|Yes|Yes|Yes|
-|Update apps|Yes|Yes|Yes|Yes|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Add and assign   apps to devices and users | Yes | Yes | Yes | Yes | Yes |
+| Assign apps to   devices not enrolled with Intune | Yes | Yes | No | No | No |
+| Use app   configuration policies to control the startup behavior of apps | No | Yes | No | No | No |
+| Use mobile app   provisioning policies to renew expired apps | No | Yes | No | No | No |
+| Protect company   data in apps with app protection policies | Yes | Yes | No | No1 | No |
+| Remove only   corporate data from an installed app (app selective wipe) | Yes | Yes | No | Yes | Yes |
+| Monitor app   assignments | Yes | Yes | Yes | Yes | Yes |
+| Assign and   track volume-purchased apps from an app store | No | No | No | Yes | No |
+| Mandatory   install of apps on devices (required)2 | Yes | Yes | Yes | Yes | Yes |
+| Optional   installation on devices from the Company Portal (available installation) | Yes | Yes | Yes | Yes | Yes |
+| Install   shortcut to an app on the web (web link) | Yes | Yes | Yes | Yes | Yes |
+| In-house   (line-of-business) apps | Yes | Yes | Yes | Yes | No |
+| Apps from a   store | Yes | Yes | No | Yes | Yes |
+| Update apps | Yes | Yes | No | Yes | Yes |
 
 <sup>1</sup> Consider using [Windows Information Protection](windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
 
@@ -100,8 +99,8 @@ For more information about this section, see [Manage apps](app-management.md).
 - **App licenses**: View, assign, and monitor volume-purchased apps from the app stores. For more information, see:
     - [iOS volume-purchased program (VPP) apps](vpp-apps-ios.md).
     - [Microsoft Store for Business volume-purchased apps](windows-store-for-business.md).
-- **Discovered Apps**: View all apps that were assigned by Intune and installed on a device.
-- **App Install Status**: View the status of an app assignment that you created.
+- **Discovered Apps**: View all apps that were assigned by Intune and installed on a device. For more information, see [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **App Install Status**: View the status of an app assignment that you created. For more information, see [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **App protection status**: View the status of an app protection policy for a user that you select.
 - **Audit logs**: View the Intune app-related activity of all IT admins.
 

@@ -44,7 +44,7 @@ You can define conditions that gate access to your corporate data based on locat
 
 ## Conditional access with Intune
 
-Intune adds mobile device compliance and app management policies to support the EMS Conditional Access solution.
+Conditional access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. 
 
 ![Intune and conditional access when using EMS](./media/intune-with-ca-1.png)
 

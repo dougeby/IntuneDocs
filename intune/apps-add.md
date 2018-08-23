@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -169,6 +169,10 @@ Intune will automatically reinstall, update, or remove a required app based on t
 - If a required app install fails or somehow the app is not present on the device, Intune evaluates compliance and reinstalls the app when this schedule elapses.  
 - An admin targets an app as available to a user group and an end user installs the app from the company portal on the device. Later, the admin updates the app from v1 to v2. Intune will update the app when this schedule elapses, provided that any previous version of the app is still present on the device.
 - If the admin deploys uninstall intent and the app is present on the device and failed to uninstall, Intune evaluates compliance and uninstalls the app when this schedule elapses.   
+
+## App installation errors
+
+For details about Intune app installation errors, see [App installation errors](troubleshoot-app-install.md#app-installation-errors).
 
 ## Next steps
 
