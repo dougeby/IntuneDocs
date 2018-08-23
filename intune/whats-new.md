@@ -54,9 +54,6 @@ Intune now supports enrolling macOS devices into the Apple Device Enrollment Pro
 
 ### App management
 
-####  Windows apps file extensions <!-- 1884873 -->
-The file extensions for Windows apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix*, and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. Select an app type that allows you to upload an app package file, select the **App package file**, and then enter an installation file with the appropriate extension.
-
 #### Line-of-business (LOB) app support for macOS <!-- 1895847 -->
 Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
 
