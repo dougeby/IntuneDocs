@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2018
+ms.date: 8/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ Identity protection profiles control how Windows Hello for Business is provision
 
 Use the information in this article to create an identity protection profile. Then [assign your profile](device-profile-assign.md) to user and device groups.
 
-Applies to:  
+This feature applies to device running:  
 - Windows 10 and later
 - Windows Holographic for Business  
 
@@ -51,8 +51,7 @@ Applies to:
 6. From the **Profile type** drop-down list, choose **Identity protection**.
 7. On the Windows Hello for Business pane, choose from the following options for Configure Windows Hello for Business:
     * Disabled. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
-    * Enabled. Select this setting if you want to configure Windows Hello for Business settings.
-    * Not configured. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.  
+    * Enabled. Select this setting if you want to configure Windows Hello for Business settings.  
 
 8. If you selected **Enabled** in the previous step, configure the required settings that are applied to targeted enrolled Windows 10 and Windows 10 Mobile devices and users.
 
@@ -86,8 +85,7 @@ Applies to:
 	 - **Not configured** (default). Windows Hello for Business prevents biometric authentication (for all account types).
 
    - **Use enhanced anti-spoofing, when available**. Configures whether the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).
-       - **Enable**. Windows requires all users to use anti-spoofing for facial features when that is supported.
-       - **Disabled**. Windows blocks the use of anti-spoofing.
+       - **Enable**. Windows requires all users to use anti-spoofing for facial features when that is supported.  
        - **Not configured** (default). Windows honors the anti-spoofing configurations on the device.
 
    - **Certificate for on-premise resources**. 
