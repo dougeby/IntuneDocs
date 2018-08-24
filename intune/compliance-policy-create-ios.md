@@ -115,7 +115,7 @@ For details about email profile, see [Configure access to corporate email using 
 ### Restricted applications 
 You can restrict apps by adding their bundle IDs to the policy. Then if a device has the app installed, the device will be marked as noncompliant. 
 - **App name**: Enter a user-friendly name to help you identify the bundle ID. 
-- **App Bundle ID**: Enter the unique bundle identifier assigned by the app provider. To find bundle IDs for some common apps, see [Bundle ID reference for built-in iOS apps](https://docs.microsoft.com/en-us/intune/home-screen-settings-ios#bundle-id-reference-for-built-in-ios-apps).  
+- **App Bundle ID**: Enter the unique bundle identifier assigned by the app provider. To find the bundle ID, see [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
 
 ## Assign user groups
 
