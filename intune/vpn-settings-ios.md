@@ -72,6 +72,8 @@ If you selected **Custom VPN** as the connection type, configure the following s
 ## Automatic VPN settings
 
 - **Per-app VPN**: Choosing this option enables per-app VPN, which allows the VPN connection to be triggered automatically when certain apps are opened. In addition to choosing this option, you also need to associate the apps with this VPN profile. See the [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md) for more details. 
+  - The **Per-app VPN** setting is only available for Pulse Secure and Custom VPN.
+  - When using iOS **per-app VPN** profiles with Pulse Secure or a Custom VPN, you can choose to use app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). Set the `ProviderType` value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.If you are not sure which value to use, consult your VPN provider's documentation. 
   - **Safari URLs that will trigger this VPN**: Select to add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
 
 - **On-demand VPN**: Configure conditional rules that control when the VPN connection is initiated. For example, create a condition where the VPN connection is only used when a device is not connected to a company Wi-Fi network. Or, create a condition where, if a device can't access a DNS search domain you specify, then the VPN connection is not initiated.

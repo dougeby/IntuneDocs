@@ -195,6 +195,9 @@ With your per-app VPN set-up and associated with your app, verify the connection
     - SonicWall Mobile Connect
     - Zscaler App
 
+    > [!NOTE]
+    > As the admin, if you are using the Pulse Secure VPN app, you can choose to use app-layer or packet-layer tunneling. Set the `ProviderType` value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.
+
 ### Connect using the per-app VPN
 
 Verify the zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
