@@ -2,7 +2,7 @@
 	"redirections": [
 
 		{
-			"source_path": "what-happens-if-you-reset-your-device-cpwebsite.md",
+			"source_path": "intune-user-help/what-happens-if-you-reset-your-device-cpwebsite.md",
 			"redirect_url":"/intune-user-help/what-happens-if-you-reset-your-device-using-the-company-portal-windows",
 			"redirect_document_id": false
 		},
