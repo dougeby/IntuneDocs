@@ -61,7 +61,7 @@ You must create an enrollment profile so that you can enroll your kiosk devices.
 1. Go to the [Intune portal](https://portal.azure.com) and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
     - **Name**: Type a name that you'll use when assigning the profile to the dynamic device group.
-    - **Token expiration date**: The date when the token expires. Google enforces a maximum of 30 days.
+    - **Token expiration date**: The date when the token expires. Google enforces a maximum of 90 days.
 3. Choose **Create** to save the profile.
 
 ### Create a device group
