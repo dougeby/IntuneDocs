@@ -112,6 +112,11 @@ For details about email profile, see [Configure access to corporate email using 
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
 
+### Restricted applications 
+You can restrict apps by adding their bundle IDs to the policy. Then if a device has the app installed, the device will be marked as noncompliant. 
+- **App name**: Enter a user-friendly name to help you identify the bundle ID. 
+- **App Bundle ID**: Enter the unique bundle identifier assigned by the app provider. To find bundle IDs for some common apps, see [Bundle ID reference for built-in iOS apps](https://docs.microsoft.com/en-us/intune/home-screen-settings-ios#bundle-id-reference-for-built-in-ios-apps).  
+
 ## Assign user groups
 
 1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
