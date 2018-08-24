@@ -33,7 +33,7 @@ ms.custom: intune-enduser
 If your organization requires you to install the Intune Company Portal app on your Android device, you might wonder why. This article describes both the purpose and features of the app&mdash;and how they protect the work and school data that you access and store on your device.
 
 ## Gets your device managed
-The Company Portal app helps you get your device managed (also referred to as "enrolled") in your organization's device management system. Before you connect to your organization's network or access proprietary information, your school or workplace wants to make sure that you're using a secure, trusted device. To access these resources, your device will need to meet your organization's device policies. Policy settings are configured by your organization's IT admin in their device management system. Then they're pushed to your device over-the-air.
+The Company Portal app helps you get your device managed (also referred to as "enrolled") in your organization's device management system. Before you connect to your organization's network, your school or workplace wants to make sure that you're using a secure, trusted device. To access these resources, your device will need to meet your organization's device policies. Policy settings are configured by your organization's IT admin in their device management system. Then they're pushed to your device over-the-air.
 
 The Company Portal app walks you through enrollment to get your device managed. It configures the settings on your device to meet your organization's policies. In some cases, the app will prompt you to make changes to your device.
 
@@ -49,10 +49,10 @@ During enrollment, the Company Portal app requires you to connect to your work o
 Organizations sometimes require you to install work or security apps, such as Microsoft Office or Mobile Threat Defense. If apps are required or made available, you'll find them in the Company Portal app or through your organization's private store.
 
 ## Lets you remotely reset a lost or stolen device (if device supports it)
-If a device is lost or stolen, you can sign in to the Company Portal app on any other device, and if supported, reset your phone to factory settings. This feature is helpful if your device contains propriatery work data and you fear that it could become compromised. Because it's enrolled in management, your company's support or IT admin can also help reset it.  
+If a device is lost or stolen, you can sign in to the Company Portal app on any other device, and reset your phone to factory settings. This feature is helpful if your device contains proprietary work data that you don't want anyone else to access. Because the device is enrolled in management, your company's support or IT admin can also help reset it.  
 
 ## Notifies you of policy updates and requirements
-The Company Portal app on your device checks in, or syncs, with your organization's mobile device management provider every eight hours. If you want to check in more frequently, you or company support can initiate a manual sync. During check-in the app will:
+The Company Portal app on your device checks in, or syncs, with your organization's mobile device management provider every eight hours. If you want to check in more frequently, you or company support can initiate a manual sync. During check-in, the app will:
 * Download any policy or app updates that your company support makes available.
 * Send hardware inventory updates. These updates do not contain personal information.
 * Send any company app inventory updates. These updates do not contain personal information.
@@ -66,7 +66,7 @@ When you enroll your device in the Company Portal app, your company support or I
 
 * Remove all company-related data. Your organization might remove company-related data from your device if you leave the company, or if your device becomes unmanaged. Your personal data and settings are not removed, and will remain on the device.  
 
-* Set requirements for your device, such as requiring you to have a device password or PIN. In this case, you'll get app notifications that you device is not compliant. Your company support might also limit the number of times you can enter an incorrect password on your device. Excessive, failed password attempts might result in your device being locked.  
+* Set requirements for your device, such as requiring you to have a device password or PIN. In this case, you'll get app notifications that your device is not compliant. Your company support might also limit the number of times you can enter an incorrect password on your device. Excessive, failed password attempts might result in your device being locked.  
 
 * Require you to accept terms and conditions.  
 
