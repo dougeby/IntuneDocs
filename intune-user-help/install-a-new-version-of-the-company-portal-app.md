@@ -32,10 +32,10 @@ ms.custom: intune-enduser
 # How to update the Company Portal app
 
 This article describes how to update your version of the Company Portal app when:  
-* There is a newer version of the Company Portal app available.
+* There's a newer version of the Company Portal app available.
 * Your version of the Company Portal app is no longer supported.
 
-These steps describe how to update the app on Android, iOS and Windows devices.    
+These steps describe how to update the app on Android, iOS, and Windows devices.    
 
 ## Update the Intune Company Portal app on your Android device
 
