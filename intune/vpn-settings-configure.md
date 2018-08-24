@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,7 @@ You can create VPN profiles using the following connection types:
 |IKEv2|No|No|No|No|No|Yes|
 |L2TP|No|No|No|No|No|Yes|
 |PPTP|No|No|No|No|No|Yes|
+|Zscaler|No|Yes|No|No|No|No|
 |Custom VPN|No|Yes|Yes|No|No|No|
 
 > [!IMPORTANT]
