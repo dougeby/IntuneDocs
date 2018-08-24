@@ -35,7 +35,7 @@ Learn how to get your new, macOS device automatically managed in Intune. Company
 To begin, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant.   
 
 ## What is Apple DEP?
-If you're given a company-owned device, it might have been purchased from the Apple Device Enrollment Program (DEP). Some organizations buy large amounts of iOS or macOS devices through DEP. Devices can then be integrated, configured, and managed within a preferred mobile device management provider, such as Intune. If you're an administrator and want more more information about Apple DEP, see [Automatically enroll macOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-macos.md).  
+If you're given a company-owned device, it might have been purchased from the Apple Device Enrollment Program (DEP). Some organizations buy large amounts of iOS or macOS devices through DEP. Devices can then be integrated, configured, and managed within a preferred mobile device management provider, such as Intune. If you're an administrator and want more more information about Apple DEP, see [Automatically enroll macOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## Set up your macOS device  
 Complete the following steps to enroll your macOS device in management. If you're using your own device, rather than a company-owned device, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-macos-cp.md). 
