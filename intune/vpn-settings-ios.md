@@ -50,11 +50,14 @@ The actual settings you see from the list below are determined by the VPN connec
   - **Cisco AnyConnect**: Applicable to [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x and later.
   - **Cisco Legacy AnyConnect**: Applicable to [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x and earlier.
   - **SonicWall Mobile Connect**
-  - **F5 Edge Client**
+  - **F5 Access Legacy**
   - **Palo Alto Networks GlobalProtect**
   - **Pulse Secure**
   - **Cisco (IPSec)**
-  - **Citrix**
+  - **Citrix SSO**
+  - **F5 Access**
+  - **Legacy Palo Alto Networks GlobalProtect**
+  - **Citrix VPN**
   - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
   - **Custom VPN**    
 
