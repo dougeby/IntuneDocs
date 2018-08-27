@@ -25,7 +25,7 @@ ms.custom: intune-azure
 
 ---
 
-## Wi-Fi settings for Windows 10 and later devices in Intune
+# Wi-Fi settings for Windows 10 and later devices in Intune
 
 Wi-Fi settings are used in a configuration profile that applies to devices running Windows 10 and later. Your options include:
 
