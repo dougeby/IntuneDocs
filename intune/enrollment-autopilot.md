@@ -76,7 +76,7 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
     - **Hide change acount options (Windows Insider only)**: Choose **Hide** to prevent change account options from displaying on the company sign in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user.
-    - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during provisioning. Names must be 15 characters or less, and can contain letters, numbers, and hyphens. Names must not contain only numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Alternatively, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
+    - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during provisioning. Names must be 15 characters or less, and can contain letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Alternatively, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
 
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
@@ -109,7 +109,9 @@ To see alerts for unassigned devices, in [Intune in the Azure portal](https://ak
 
 ## Assign a user to a specific Autopilot device
 
-You can assign a user to a specific Autopilot device. This assignment associates a user from Azure Active Directory with the device. Only licensed Intune users can be assigned in this manner.
+You can assign a user to a specific Autopilot device. This assignment pre-fills a user from Azure Active Directory in the [company-branded](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sign-in page during Windows setup. It also lets you set a custom greeting name. This does not pre-fill or modify Windows logon. Only licensed Intune users can be assigned in this manner.
+
+Prerequisite: Azure Active Directory Company Portal has been configured.
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
     ![Screenshot of Assign user](media/enrollment-autopilot/assign-user.png)
