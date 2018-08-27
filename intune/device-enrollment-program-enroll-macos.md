@@ -111,7 +111,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 
-    ![Create a profile screen shot.](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![Create a profile screenshot.](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -134,13 +134,14 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Department settings | Description |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
-    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation. |
+    | <strong>Department Phone</strong> | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
-    You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-    - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-    - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
+  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+
 
     | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
     |------------------------------------------|------------------------------------------|
@@ -158,6 +159,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>iCloud Diagnostics</strong> | Give the user the option to send iCloud diagnostic data to Apple. |
     | <strong>Registration</strong>| Require the user to register the device. |
 
+   
 
 10. Choose **OK**.
 
@@ -179,7 +181,7 @@ You must assign an enrollment program profile to devices before they can enroll.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list.
 2. Choose **Devices** > choose devices in the list > **Assign profile**.
-3. Under **Assign profile**, choose a profile for the devices and then choose **Assign**.
+3. Under **Assign profile**, choose a profile for the devices > **Assign**.
 
 ### Assign a default profile
 
@@ -211,4 +213,4 @@ You have enabled management and syncing between Apple and Intune, and assigned a
 
 ## Next steps
 
-After enrolling macOS devices you can start [managing them](device-management.md).
+After enrolling macOS devices, you can start [managing them](device-management.md).

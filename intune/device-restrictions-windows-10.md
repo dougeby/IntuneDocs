@@ -55,6 +55,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
 - **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
+- **Require users to connect to network during device setup (Windows Insider only)** - Choose **Require** to require that the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
 
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.

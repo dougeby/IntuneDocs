@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 8/27/2018
 
 ms.topic: article
 ms.prod:
@@ -77,27 +77,15 @@ You typically do this task once. So if ATP is already enabled in your Intune res
 
 ## Onboard devices using a configuration profile
 
-Windows Defender includes an onboard configuration package that is installed on devices. When installed, the package communicates with [Windows Defender ATP services](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to scan files, detect threats, and report the risk to Windows Defender ATP. Using Intune, you can create a configuration profile that uses this configuration package. Then, assign this profile to devices you're onboarding for the first time.
+When an end-user enrolls in Intune, you can push different settings to the device using a configuration profile. This also applies to Windows Defender ATP.
 
-Once you onboard a device using configuration package, then you don't need to do it again. This is typically a one-time task.
+Windows Defender includes an onboard configuration package that communicates with [Windows Defender ATP services](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) to scan files, detect threats, and report the risk to Windows Defender ATP.
 
-You can also onboard devices using a [group policy or System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
+When you onboard, Intune gets an auto-generated configuration package from Windows Defender ATP. When the profile is pushed or deployed to the device, this configuration package is also pushed to the device. This allows Windows Defender ATP to monitor the device for the threats.
 
-The next steps show you how to onboard using Intune.
+Once you onboard a device using configuration package, then you don't need to do it again. You can also onboard devices using a [group policy or System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-windows-defender-advanced-threat-protection).
 
-#### Download configuration package
-
-1. In the [Windows Defender Security Center](https://securitycenter.windows.com), select **Settings** > **Onboarding**.
-2. Enter the following settings:
-  - **Operating system**: Windows 10
-  - **Onboard a machine** > **Deployment method**: Mobile Device Management / Microsoft Intune
-3. Select **Download package**, and save the **WindowsDefenderATPOnboardingPackage.zip** file. Extract the file.
-
-This zip file includes **WindowsDefenderATP.onboarding**, which you need in the next steps.
-
-#### Create the ATP configuration profile
-
-This profile uses the onboarding package you downloaded in the previous steps.
+### Create the configuration profile
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
@@ -106,10 +94,9 @@ This profile uses the onboarding package you downloaded in the previous steps.
 5. For **Profile type**, select **Windows Defender ATP (Windows 10 Desktop)**.
 6. Configure the settings:
 
-  - **Onboard Configuration Package**: Browse and select the **WindowsDefenderATP.onboarding** file you downloaded. This file enables a setting so devices can report to the Windows Defender ATP service.
-  - **Sample sharing for all files**: Allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis.
-  - **Expedite telemetry reporting frequency**: For devices that are at high risk, enable this setting so it reports telemetry to the Windows Defender ATP service more frequently.
-  - **Offboard Configuration Package**: If you want to remove, or "offload" Windows Defender ATP monitoring, you can download an Offload package in the [Windows Defender Security Center](https://securitycenter.windows.com), and add it. Otherwise, skip this property.
+  - **Windows Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
+  - **Sample sharing for all files**: **Enable** allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis. **Not configured** doesn't share any samples to Windows Defender ATP.
+  - **Expedite telemetry reporting frequency**: For devices that are at high risk, **Enable** this setting so it reports telemetry to the Windows Defender ATP service more frequently.
 
     [Onboard Windows 10 machines using System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) has more details on these Windows Defender ATP settings.
 

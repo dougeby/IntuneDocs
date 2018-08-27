@@ -70,11 +70,13 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
     - **Self-deploying (preview)**: (Windows 10 Insider Preview Build 17672 or later) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to provision the device.
 4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
-    - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Language (Region)***: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard***: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose whether or not to show the EULA to users.
     - **Privacy settings**: Choose whether or not to show privacy settings to users.
-    - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user. 
+    - **Hide change acount options (Windows Insider only)**: Choose **Hide** to prevent change account options from displaying on the company sign in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **User account type**: Choose whether or not the user's account type is an **Administrator** or **Standard** user.
+    - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during provisioning. Names must be 15 characters or less, and can contain letters, numbers, and hyphens. Names must not contain only numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Alternatively, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
 
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
@@ -103,6 +105,20 @@ After you've created an AutoPilot deployment profile, you can edit certain parts
 You can view an alert to see how many devices from the AutoPilot program don't have AutoPilot deployment profiles assigned. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows AutoPilot devices and detailed information about them.
 
 To see alerts for unassigned devices, in [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Overview** > **Unassigned devices**.  
+
+
+## Assign a user to a specific Autopilot device
+
+You can assign a user to a specific Autopilot device. This assignment associates a user from Azure Active Directory with the device. Only licensed Intune users can be assigned in this manner.
+
+1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
+    ![Screenshot of Assign user](media/enrollment-autopilot/assign-user.png)
+2. Choose an Azure user licensed to use Intune and choose **Select**.
+    ![Screenshot of select user](media/enrollment-autopilot/select-user.png)
+3. In the **User Friendly Name** box, type a friendly name or just accept the default. This is the friendly name that displays when the user signs in during Windows setup.
+    ![Screenshot of friendly name](media/enrollment-autopilot/friendly-name.png)
+4. Choose **Ok**.
+
 
 ## Delete AutoPilot devices
 

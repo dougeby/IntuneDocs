@@ -138,9 +138,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-
-6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you have the option to use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device without the user providing an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and will prompt for an Apple ID.
-
+6. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
 
 7. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
@@ -164,19 +162,21 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 11. Choose **OK**.
 
-12. Choose **Setup Assistant Settings** to configure the following profile settings:
+12. Choose **Setup Assistant customization** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
+
     | Department settings | Description |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
-    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation. |
+    |    <strong>Department Phone</strong>     | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
   You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
-| Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
+
+    | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
