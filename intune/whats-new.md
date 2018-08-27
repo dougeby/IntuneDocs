@@ -45,6 +45,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->   
 
+
+## Week of August 27, 2018
+
+### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
+You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
+
+
 ## Week of August 14, 2018
 
 ### macOS support for Apple Device Enrollment Program <!-- 747651 -->
@@ -1192,22 +1199,6 @@ We recommend that you proactively remove TLS 1.0 and 1.1 dependencies in your en
 
 **Additional Information**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### Plan for Change: New Windows 10 Setting for Kiosk Configuration in Intune <!-- 1560072 -->
-We’re changing how and where you configure Windows 10 1709 and later (RS3 and later) desktops, in the Intune Azure portal.
-
-#### How does this affect me? 
-Our records indicate that you are using the Windows 10 > Device Restrictions > Kiosk (preview) setting. This will be renamed in May, to Windows 10 > Device Restrictions > Kiosk (obsolete) in the UI to indicate that it is no longer recommended for use. It will, however, continue to function until the July update to Intune. Then, it will be made obsolete in the backend and will no longer work. As an alternative, we’re releasing a new Device configuration profile in May: Windows 10 > Kiosk, containing the settings to configure Kiosks on Windows 10 RS4 and later.
-
-#### What do I need to do to prepare for this change?  
-When Intune releases the May service update around the end of May, we’ll share instructions for you to test and verify that you are able to migrate your Kiosk configuration from Windows 10 RS3 to Windows 10 RS4. Use these instructions to configure your devices as Kiosks using the new device configuration profile for Kiosks.
-
-#### How does this affect me?
-This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration. Now, you’ll just have one blade to go to in Azure – the Intune blade – to manage groups, policies, apps, and any mobile device management.
-
-#### What do I need to do to prepare for this change?
-Please tag Intune as a favorite instead of the Intune App Protection service blade and ensure you’re familiar with the App protection policy workflow in the Mobile app blade within Intune. We’ll redirect for a short period of time and then remove the App Protection blade. Remember, all App Protection policies are already over in Intune and you can modify any of your conditional access policies by following the documentation here: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Additional Information**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
 Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
