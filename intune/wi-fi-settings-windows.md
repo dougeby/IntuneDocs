@@ -7,10 +7,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology:
 
 # optional metadata
@@ -59,10 +60,10 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 ## Settings for enterprise profiles only
 
-- **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign in. Your options are:
+- **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign-in. Your options are:
   - **Disable**: Disables SSO behavior. The user needs to authenticate to the network separately.
-  - **Enable before user signs into device**: Use SSO to authenticate to the network just before the user sign in process.
-  - **Enable after user signs into device**: Use SSO to authenticate to the network immediately after the user sign in process completes.
+  - **Enable before user signs into device**: Use SSO to authenticate to the network just before the user sign-in process.
+  - **Enable after user signs into device**: Use SSO to authenticate to the network immediately after the user sign-in process completes.
   - **Maximum time to authenticate before timeout**: Enter the maximum number of seconds to wait before authenticating to the network, from 1-120 seconds.
   - **Allow Windows to prompt user for additional authentication credentials**: Choosing **Yes** allows the Windows system to prompt the user for additional credentials if the authentication method requires it. Choose **No** to hide these prompts.
 
@@ -82,25 +83,33 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **EAP-TTLS**
   - **Protected PEAP** (PEAP)
 
-### More options when you choose the EAP type
+    - **EAP-TLS**, **EAP-TTLS**, and **PEAP** additional settings
 
-> [!NOTE]
-> Currently, only SCEP certificate profiles are supported when using an EAP type. PKCS certificate profiles are not supported. Anytime a user is asked to enter a certificate, be sure to choose an SCEP certificate.
+      - **Server Trust**  
 
-#### Server Trust
+        **Certificate server names**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.  
 
-|Setting name|More information|Use when|
-|--------------|-------------|----------|
-|**Certificate server names**|Enter one or more common names used in the certificates issued by your trusted certificate authority (CA). If you enter this information, you can bypass the dynamic trust dialog shown on user devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
-|**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
-|**Identity privacy (outer identity)**|Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
+        **Root certificate for server validation**: Use with **EAP-TLS**, **EAP-TTLS**, or **PEAP** EAP types. Choose the trusted root certificate profile used to authenticate the connection.  
 
-#### Client Authentication
+        **Identity privacy (outer identity)**: Use with **PEAP** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.  
 
-| Setting name | More information | Use when |
-|---|---|---|
-| **Client certificate for client authentication (Identity certificate)** |  Choose the SCEP certificate profile used to authenticate the connection. | EAP type is **EAP-TLS** |
-| **Authentication method** | Select the authentication method for the connection:<br><br>- **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:<br><br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br><br>- **Identity privacy (outer identity)**: Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** |
+      - **Client Authentication**
+
+        **Client certificate for client authentication (Identity certificate)**: Use with **EAP-TLS** EAP type. Choose the SCEP certificate profile used to authenticate the connection.
+
+        **Authentication method**: Use with **EAP-TTLS** EAP type. Select the authentication method for the connection:  
+
+          - **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.
+          - **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:
+
+            - **Unencrypted password (PAP)**
+            - **Challenge Handshake (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP Version 2 (MS-CHAP v2)**
+
+        **Identity privacy (outer identity)**: Use with **EAP-TTLS** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+- **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Choose **Yes** when validating against the FIPS 140-2 standard. This standard is required for all US federal government agencies that use cryptography-based security systems to protect sensitive but unclassified information stored digitally. Choose **No** to not be FIPS-compliant.
 
 ## Use an imported settings file
 
