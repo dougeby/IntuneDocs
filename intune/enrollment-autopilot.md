@@ -111,6 +111,8 @@ To see alerts for unassigned devices, in [Intune in the Azure portal](https://ak
 
 You can assign a user to a specific Autopilot device. This assignment pre-fills a user from Azure Active Directory in the [company-branded](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sign-in page during Windows setup. It also lets you set a custom greeting name. This does not pre-fill or modify Windows logon. Only licensed Intune users can be assigned in this manner.
 
+Prerequisite: Azure Active Directory Company Portal has been configured.
+
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
     ![Screenshot of Assign user](media/enrollment-autopilot/assign-user.png)
 2. Choose an Azure user licensed to use Intune and choose **Select**.
