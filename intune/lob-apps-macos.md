@@ -32,14 +32,15 @@ ms.custom: intune-azure
 
 Use the information in this article to help you add macOS line-of-business apps to Microsoft Intune. You must download an external tool to pre-process your *.pkg* files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your *.pkg* files must take place on a macOS device.
 
->[!NOTE]
->While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
->
->Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. Conversion of other formats, such as *.dmg* to *.pkg* is not supported.
+> [!NOTE]
+> While users of macOS devices can remove some of the built-in macOS apps like Stocks, and Maps, you cannot use Intune to redeploy those apps. If end users delete these apps, they must go to the app store, and manually re install them.
 
-## Step 1 - Pre-process your software setup file
+## Before your start
 
-Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Microsoft Intune.
+You must download an external tool to pre-process your *.pkg* files before you can upload your line-of-business file to Microsoft Intune. The pre-processing of your *.pkg* files must take place on a macOS device. Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Microsoft Intune.
+
+> [!IMPORTANT]
+> Only *.pkg* files may be used to upload macOS LOB apps to Microsoft Intune. Conversion of other formats, such as *.dmg* to *.pkg* is not supported.
 
 1. Download and run the [Intune App Wrapping Tool for Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
 
@@ -59,7 +60,7 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     This command will extract the detected parameters and version for the created *.intunemac* file.
 
-## Step 2 - Specify the software setup file
+## Step 1 - Specify the software setup file
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
@@ -68,14 +69,14 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
 5. Above the list of apps, choose **Add**.
 6. In the **Add App** pane, choose **Line-of-business app**.
 
-## Step 3 - Configure the app package file
+## Step 2 - Configure the app package file
 
 1. On the **Add app** pane, choose **App package file**.
 2. On the **App package file** pane, choose the browse button, and select an macOS installation file with the extension *.intunemac*.
 3. When you are finished, choose **OK**.
 
 
-## Step 4 - Configure app information
+## Step 3 - Configure app information
 
 1. On the **Add app** pane, choose **App information**.
 2. On the **App information** pane, add the details for your app. Depending on the app you have chosen, some of the values in this pane might have been automatically filled-in:
@@ -93,7 +94,7 @@ Use the Intune App Wrapping Tool for Mac to enable Mac apps to be managed by Mic
 	- **Logo** - Upload an icon that is associated with the app. This is the icon that is displayed with the app when users browse the company portal.
 3. When you are finished, choose **OK**.
 
-## Step 5 - Finish up
+## Step 4 - Finish up
 
 1. On the **Add app** pane, verify that the details for your app is correct.
 2. Choose **Add**, to upload the app to Intune.
@@ -103,7 +104,7 @@ The app you have created appears in the apps list where you can assign it to the
 > [!NOTE]
 > If the *.pkg* file contains multiple apps or app installers, then Microsoft Intune will only report that the *app* is successfully installed when all installed apps are detected on the device.
 
-## Step 6 - Update a line-of-business app
+## Step 5 - Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
