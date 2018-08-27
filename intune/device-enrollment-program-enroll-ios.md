@@ -115,7 +115,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 
-    ![Create a profile screen shot.](./media/device-enrollment-program-enroll-ios/image04.png)
+    ![Create a profile screenshot.](./media/device-enrollment-program-enroll-ios/image04.png)
 
 3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -124,7 +124,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 4. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the Company Portal for services like installing apps. If using ADFS and the enrollment profile has **Authenticate with Company Portal instead of Setup Assistant** set to **No**, [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) is required.
 
-    - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
+    - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this option for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
 5. If you chose **Enroll with User Affinity**, you have the option to let users authenticate with Company Portal instead of the Apple Setup Assistant.
 
@@ -138,7 +138,11 @@ Now that you've installed your token, you can create an enrollment profile for D
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
+
+6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you have the option to use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device without the user providing an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and will prompt for an Apple ID.
+
+
+7. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
     ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -152,15 +156,15 @@ Now that you've installed your token, you can create an enrollment profile for D
      > [!NOTE]
      > A device enrolled without supervision can only be reset to supervised by using the Apple Configurator. Resetting the device in this manner requires connecting an iOS device to a Mac with a USB cable. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3).
 
-7. Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you cannot change this setting without factory resetting the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
+8. Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you cannot change this setting without factory resetting the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
 
-8. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+9. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-9. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
+10. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-10. Choose **OK**.
+11. Choose **OK**.
 
-11. Choose **Setup Assistant Settings** to configure the following profile settings:
+12. Choose **Setup Assistant Settings** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
     | Department settings | Description |
@@ -169,10 +173,10 @@ Now that you've installed your token, you can create an enrollment profile for D
     |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
   You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
-| Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
+| Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
@@ -186,9 +190,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Diagnostic Data</strong> | Display the **Diagnostics** screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
 
 
-12. Choose **OK**.
+13. Choose **OK**.
 
-13. To save the profile, choose **Create**.
+14. To save the profile, choose **Create**.
 
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
@@ -197,7 +201,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    ![Screenshot of Enrollment Program Devices node selected and Sync link being chosen.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. After an Enrollment Program device is deleted from Intune portal without being unassigned from the Apple MDM server in the DEP portal, it won't be re-imported to Intune until the full sync is run.   
+   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. After an Enrollment Program device is deleted from Intune portal without being unassigned from the Apple MDM server in the DEP portal, it won't be reimported to Intune until the full sync is run.   
    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.   
 
 
@@ -209,7 +213,7 @@ You must assign an enrollment program profile to devices before they can enroll.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list.
 2. Choose **Devices** > choose devices in the list > **Assign profile**.
-3. Under **Assign profile**, choose a profile for the devices and then choose **Assign**.
+3. Under **Assign profile**, choose a profile for the devices > **Assign**.
 
 ### Assign a default profile
 
