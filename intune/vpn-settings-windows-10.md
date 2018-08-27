@@ -48,7 +48,7 @@ Depending on the settings you choose, not all values may be configurable.
   - **Import**: Browse to a comma-separated file that contains a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
   - **Export**: Exports the list of servers to a comma-separated-values (csv) file
 
-- **Register IP addresses with internal DNS**: Select **Enable** to configure the Windows 10 VPN profile to dynamically register the IP addresses assigned to the VPN interface with the internal DNS, or select **Disable** to not register not dynamically register the IP addresses.
+- **Register IP addresses with internal DNS**: Select **Enable** to configure the Windows 10 VPN profile to dynamically register the IP addresses assigned to the VPN interface with the internal DNS, or select **Disable** to not dynamically register the IP addresses.
 
 - **Connection type**: Select the VPN connection type from the following list of vendors:
 
