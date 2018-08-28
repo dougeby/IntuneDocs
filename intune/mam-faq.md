@@ -141,7 +141,7 @@ IT administrators can deploy an app protection policy that requires app data to 
 - **What gets encrypted?**<br></br> Only data marked as "corporate" is encrypted according to the IT administrator's app protection policy. Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account). For line-of-business apps managed by the Intune App Wrapping Tool, all app data is considered "corporate."
 
 **How does Intune remotely wipe data?**<br></br>
-Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using factory reset or remove company data](devices-wipe.md#factory-reset). For more information about selective wipe using MAM, see [Remove company data](devices-wipe.md#remove-company-data) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
+Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using factory reset or remove company data](devices-wipe.md#factory-reset). For more information about selective wipe using MAM, see [Remove company data](devices-wipe.md#retire) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
 - **What is factory reset?**<br></br> [Factory reset](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]

@@ -41,7 +41,7 @@ This article shows you how to view all your devices, and their properties in the
 3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
    - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. You can perform the following actions on the device:
-      - [Retire](devices-wipe.md#remove-company-data)
+      - [Retire](devices-wipe.md#retire)
 	    - [Wipe](devices-wipe.md#factory-reset)
 	    - [Remote lock](device-remote-lock.md)
 	    - [Synchronize device](device-sync.md)
@@ -73,7 +73,7 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Detail|Description|  
 |--------------|----------------------|  
 |Name|The name of the device.|
-|Management name|The device name used only in the console. Changing this name won't change hte name on the device.|
+|Management name|The device name used only in the console. Changing this name won't change the name on the device.|
 |UDID|The device's Unique Device identifier.|
 |Intune Device ID|A GUID that uniquely identifies the device.|
 |Serial number|The device's serial number from the manufacturer.|
