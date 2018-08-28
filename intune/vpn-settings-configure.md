@@ -55,7 +55,6 @@ You can create VPN profiles using the following connection types:
 |Palo Alto Networks GlobalProtect|No|Yes|No|No|No|Yes|
 |Pulse Secure|Yes|Yes|Yes|Yes|Yes|Yes|
 |Cisco (IPSec)|No|Yes|No|No|No|No|
-|Cisco SSO|No|Yes|No|No|No|No|
 |Citrix|Yes (Android only)|Yes|No|No|No|Yes|
 |IKEv2|No|No|No|No|No|Yes|
 |L2TP|No|No|No|No|No|Yes|
