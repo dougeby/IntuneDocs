@@ -399,6 +399,8 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
+    - name: Configure identity protection
+      href: identity-protection-configure.md
     - name: Android kiosk settings
       href: android-kiosk-settings.md
     - name: Android enterprise kiosk settings
