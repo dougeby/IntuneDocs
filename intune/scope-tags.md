@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 Scope tags let you filter policies with custom tags that you create.
 
-For example, create a scope tag called “Engineering Department” and assign it to configuration profiles related to the engineering department. Then, assign that same tag to an “Engineering Administrators” role. They'll only see the policies with the “Engineering Department” tag.
+For example, create a scope tag called “Engineering Department” and assign it to configuration profiles related to the engineering department. Assign that same tag to an “Engineering Administrators” role. They'll only see the policies with the “Engineering Department” tag.
 
 ## To create a scope tag
 
