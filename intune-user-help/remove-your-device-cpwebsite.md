@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -47,4 +47,4 @@ To remove your device:
 
 4. Read the warning message, and then tap **Remove** to remove your device from the Company Portal.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

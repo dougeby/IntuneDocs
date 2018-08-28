@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/11/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,41 +30,62 @@ ms.custom: intune-enduser
 
 # Enroll your macOS device in Intune with the Company Portal app
 
-Getting access to your organization’s apps, data, and resources makes it easier for you to do your job. Your organization is using Intune to [manage access to those resources](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md), which requires you to download the Company Portal app for macOS. These instructions will work for macOS devices on OS X El Capitan 10.11+.
+Enroll your macOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
+
+Organizations often require you to get your device managed before you can access proprietary data from it. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings.  
+
+This article describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet your organization's requirements.
+
+## What to expect from the Company Portal app
+
+During initial setup, the app requires that you authenticate yourself with your organization. It then informs you of any device settings you must make. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
+
+After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. App protection policies like this one are common in organizations, and often require you to uninstall untrusted apps before you can regain access.
+
+If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, the Company Portal app will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
+
+To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
+
+## Get your device managed  
+Use the following steps to enroll macOS devices running OS X El Capitan 10.11 and later.   
 
 
-1. On your __Dock__, find __Safari__ and open a new window, then open the [Company Portal website](https://portal.manage.microsoft.com).
+1. To access the Company Portal website, open a new window in __Safari__, and go to https://portal.manage.microsoft.com.  
 
-2. Log into the Company Portal website with your work or school account.
+2. Sign in to the Company Portal website with your work or school account.
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. After logging in, click on the **Menu** in the top left corner of the page and select **My Devices**.
+3. Go to the top left-corner of the page and click **Menu** > **Devices**.  
 
-   ![A screenshot of the landing page for the web portal with the web portal showing that no apps can be installed yet, with a My Devices button underneath.](./media/macOS_enroll_001_landing_page.png)
+4. The __Devices__ page, will show either a list of managed devices, or a banner. What you see depends on if you already have a managed device. 
+    * To add a device that's not listed, select the banner that reads, **Tap here to tell us which device you're using or add a new device.**
+    * If you don't have any devices, the banner reads: **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
 
-4. On the __My Devices__ page, you will either see a list of enrolled devices or simply a banner. This depends on if you already have a device enrolled, macOS or otherwise. To enroll a device that is not listed, select the banner that says __If your device is listed, tap here to identify it. You can also tap here to enroll your device if it is not listed__. If you don't have any enrolled devices, the banner will read **You don't have any devices enrolled. Enroll this one by tapping here.**
+     ![A screenshot of the Devices page, with a red square around the banner option to highlight  where to click.](./media/CP-enroll-MACOS-1808.png)  
+5.  Complete the step below that matches the message you currently see in the Company Portal.  
+    * If you're adding a device for the first time, you'll be prompted to download the Company Portal app on your device. Click **Download** to continue.  
 
-    ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  
 
-5. Download the Company Portal app to your macOS device to continue enrolling.
+    * If you already have a managed macOS device, you'll receive a prompt with a list of your currently managed macOS devices. Select **My device isn't listed here** > **Download** to download the Company Portal app on the device you're adding.  
 
-    ![The notice that prompts a user to download the macOS Company Portal app. This notice has the text listed in the step above a button that says "Download" in the bottom right corner.](./media/macOS_enroll_IWP_CP_app_notice.png)
+         ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select *My device isn't listed here* or a specific device from the middle of the page. A blue Download button appears at the bottom left of the prompt, and a gray Cancel button appears at the bottom right](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Your Mac will check to make sure that the download of **CompanyPortal.pkg** is safe to open. Open the installer and go through the install process.
+6. Your device will check to make sure that the installation file **CompanyPortal.pkg** is safe to open. After it's complete, open the installer and complete the installation.  
 
-7. When the installer has finished, open your **Applications** folder or the **Launchpad**, then open **Company Portal**.
+7. When the installer has finished, go to the **Launchpad** and open **Company Portal**.  
 
-8. Your Mac will show you a message that says, **"CompanyPortal" is an application downloaded from the Internet. Are you sure you want to open it?** Click **Open**.
+8. Your macOS device will prompt you to confirm that you want to open the Company Portal app. Click **Open**.  
 
-   > [!NOTE]
-   > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. If your computer refuses to open the Company Portal app, try [turning off Gatekeeper](https://support.apple.com/HT202491) and then opening the app.
+   > [!TIP]
+   > Intune needs access to your computer to make sure that your device is secure enough to access your organization's resources. If your computer refuses to open the Company Portal app, [turn off Gatekeeper](https://support.apple.com/HT202491). Then open the app.
 
-9. The first screen you see in the Company Portal app prompts you to **Sign In** with the same work or school account you used to log in to the Company Portal website.
+9. The first screen you see in the Company Portal app prompts you to **Sign In**. Use the same work or school account you used to sign in to the Company Portal website.
 
-10. The Company Portal confirms your account information, then shows you your **Device Enrollment** and **Device Compliance** statuses. There will be yellow triangles letting you know that you have actions you need to take to make sure your Mac is safe for use at work. Click **Begin** to start [enrolling your device into management](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+10. The Company Portal confirms your account information, displays your **Device Enrollment** and **Device Compliance** statuses. Yellow triangles highlight the actions you need to take to secure your macOS device for school or work. Click **Begin** to start enrollment. Learn [what your organization can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) when you enroll a device.
 
-11. Your Mac will begin enrolling into management. You might be prompted to provide your computer's login information during this time. This may take a few minutes to enroll. During this time, you can do other things on your computer. A message appears once you've completed Company Access Setup to let you know you're done.
+11. You might be prompted to provide your computer's login information. It may take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
 
-Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
