@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -57,4 +57,4 @@ If you install an app that's seen as a threat to your device, you'll receive a n
 
 To resolve, select the app from the list of threats in Zimperium zIPS. Then follow the on-screen instructions to remove and uninstall the app.    
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk). 
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). 

@@ -88,4 +88,4 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 
 11. You might be prompted to provide your computer's login information. It may take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
 
-Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://portal.manage.microsoft.com/help).  
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -58,5 +58,5 @@ If you install an app that Lookout for Work identifies as a threat, you'll recei
 ![Example screenshot showing a list of Active and Resolved app Threats detected by Lookout for Work.](./media/ios-lfw-threat-example.png)    
 Select the app name shown at the top of your screen. Then follow the instructions to remove and uninstall the app. As long as the app is on your device, you'll be unable to access company resources.    
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com/helpdesk).  
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
