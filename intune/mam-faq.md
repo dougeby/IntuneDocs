@@ -147,7 +147,7 @@ Intune can wipe app data in three different ways: full device wipe, selective wi
   >[!NOTE]
   > Factory reset can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
-- **What is selective wipe for MDM?**<br></br> See [Remove devices - Remove company data](devices-wipe.md#remove-company-data) to read about removing company data.
+- **What is selective wipe for MDM?**<br></br> See [Remove devices - Remove company data](devices-wipe.md#retire) to read about removing company data.
 
 - **What is selective wipe for MAM?**<br></br> Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
