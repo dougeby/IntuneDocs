@@ -69,8 +69,8 @@ Resetting to factory settings restores all company and personal data and setting
 ### User self-removal from Intune management
 Users can remove their [Android, Apple, or Windows](https://docs.microsoft.com/en-us/intune-user-help/unenroll-your-device-from-intune-android.md) personal device from Intune management without admin assistance.   
 
-### Remove company data
-Removing the company data removes Intune provisioned data like company applications, data about apps that Intune is managing, policy settings, and email profiles that are provisioned through Intune. This action leaves the user’s personal data on the device.
+### Retire
+The **Retire** aciton removes Intune provisioned data like company applications, data about apps that Intune is managing, policy settings, and email profiles that are provisioned through Intune. This action leaves the user’s personal data on the device.
 
 ### Delete a tenant from Microsoft Intune
 
