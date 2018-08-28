@@ -40,4 +40,4 @@ You've already got an email account with your organization or company, and now y
 
 3.  Wait a short time for new email settings to be applied to your device automatically.
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

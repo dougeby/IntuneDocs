@@ -45,4 +45,4 @@ If you have a desktop device, the following instructions describe how to encrypt
 
 2.  Choose **Turn on BitLocker**, and then follow the instructions to encrypt each of your drives.
 
-Still need help? Contact your company support. For contact information, see the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, see the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

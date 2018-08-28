@@ -66,4 +66,4 @@ If you followed the steps above, but still can't access your work or school emai
 
 If you see a message that says <strong>We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.</strong>, then you should try to re-enter your username and password. If it still doesn't work, you should check with your company support for the website that you need to provide in the <strong>Management endpoint</strong> text box. This is a website that probably looks like <strong>www.yourcompany.onmicrosoft.com</strong>.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

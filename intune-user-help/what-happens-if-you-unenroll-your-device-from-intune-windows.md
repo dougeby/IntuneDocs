@@ -92,4 +92,4 @@ When you remove your Windows RT device, the following happens:
 
 -   Any settings that were changed on your device when you added it (for example, disabling the camera or requiring a certain password length) no longer apply.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

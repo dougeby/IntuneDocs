@@ -46,4 +46,4 @@ Install apps on your device from the Company Portal app for Windows.
 
  Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal. For specific information about the Office suite for Windows devices see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

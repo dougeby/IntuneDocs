@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Resolving threats found by Zimperium zIPS on Android | Microsoft Docs
-description: Learn how to fix threats found on your Android device.
+title: Resolving threats found by Zimperium zIPS on Android
+description: Learn how to fix security and app threats found on your Android device.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,22 +28,33 @@ ms.custom: intune-enduser
 
 ---
 
-# You need to resolve a threat found by Zimperium zIPS
+# Resolve a threat found by Zimperium zIPS
 
-Zimperium zIPS has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see depends on the issue that Zimperium zIPS has found on your device.
+Zimperium zIPS is a Mobile Threat Defender service that identifies potential threats on your Android devices. These threats are reported to the Company Portal app, and appear as unresolved, noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
 
-To fix the issue, open the Zimperium zIPS app, and follow the instructions shown in it.
+* Connect to corporate e-mail
+* Connect to corporate Wi-Fi
+* Connect to SharePoint Online
+* Sync corporate files with OneDrive
+* Access company apps
 
-## What you might see if your enrolled device is blocked from accessing email or files
+This article describes how to recognize Zimperium zIPS threat alerts and what to do to resolve them. 
 
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, a message from Zimperium zIPS alerts you to take action.
+## Troubleshoot virus or security threat  
+When a virus or security threat is detected, Zimperium zIPS will enforce restrictions according to your organization's access policies. You company's access policies could prevent you from accessing your work's network, apps, and email from your device.  
 
-Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), where you can follow instructions on how to fix the issue.
+Zimperium zIPS will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.
 
-## Example of an app that Zimperium zIPS sees as a threat
+Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Zimperium zIPS to fix the virus or security threat.  
 
-If you have installed an app that Zimperium zIPS sees as a threat, the app alerts you that an untrustworthy app is installed on your device.
+  ![Example screenshot of the Company Portal device page, showing the Zimperium zIPS warning.](./media/CP-lookout-virus-banner-1808.png)  
 
-When this happens, uninstall the app to regain access to your company email and data right away. If do not uninstall the app, you will lose access to your email and data until you do uninstall the app.
+Select the warning banner that appears below the affected device. Zimperium zIPS will open and tell you how to eliminate the threat.  
 
-Still need help? Contact your IT admin. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+## Resolve an app threat
+
+If you install an app that's seen as a threat to your device, you'll receive a notification within Zimperium zIPS. If the affected app remains on your device, you'll be unable to access company resources.  
+
+To resolve, select the app from the list of threats in Zimperium zIPS. Then follow the on-screen instructions to remove and uninstall the app.    
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). 

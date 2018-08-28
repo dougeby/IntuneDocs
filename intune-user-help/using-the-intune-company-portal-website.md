@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,15 +29,15 @@ ms.custom: intune-enduser
 ---
 
 # Using the Intune Company Portal website
-The [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) is a webpage that end users can use to manage computers and devices that they have enrolled in Intune.
+Use the [Company Portal website](https://portal.manage.microsoft.com) to view, edit, add, and remove your managed devices.
 
-Users can do the following tasks from the Company Portal website:
+From the Company Portal website, you can take any of the following actions:
 
 -   [Rename your device](rename-your-device-cpwebsite.md)
 
 -   [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset (erase) your device](reset-erase-your-device-cpwebsite.md)
+-   [Reset your device](reset-erase-your-device-cpwebsite.md)
 
 -   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
@@ -45,8 +45,8 @@ Users can do the following tasks from the Company Portal website:
 
 -   Find the company support's contact information, if you configured it
 
--   See details about their device, including whether it is compliant with your company's or school's policies
+-   Check compliance status
 
--   Remotely manage their PC (works only for PCs)
+-   Remotely manage a PC
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
