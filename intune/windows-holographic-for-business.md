@@ -84,7 +84,7 @@ Intune has some built-in actions that allow IT administrators to do different ta
 
 When using devices running Windows Holographic for Business, the following actions can be used: 
 
-- **[Factory reset](devices-wipe.md#factory-reset)**: The **Factory reset** action removes the device from Intune, and restores the device back to its factory default settings. Use this action before giving the device to a new user, or when the device is lost or stolen.
+- **[Wipe](devices-wipe.md#wipe)**: The **Wipe** action removes the device from Intune, and restores the device back to its factory default settings. Use this action before giving the device to a new user, or when the device is lost or stolen.
 
 - **[Retire](devices-wipe.md#retire)**: The **Retire** action removes the device from Intune. It also removes managed app data, settings, and email profiles assigned by Intune. The user's personal data stays on the device.
 

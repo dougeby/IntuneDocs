@@ -122,7 +122,7 @@ When you delete a policy, or you remove a device from a group that has a deploye
     - Allow Wi-Fi tethering
     - Allow automatic connection to free Wi-Fi hotspots
     - Allow Wi-Fi hotspot reporting
-    - Allow factory reset
+    - Allow wipe
     - Allow Bluetooth
     - Allow NFC
     - Allow Wi-Fi

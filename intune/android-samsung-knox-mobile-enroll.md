@@ -93,7 +93,7 @@ For devices enrolled in Intune using KME, you can configure how an end user sign
 
 > [!NOTE]
 >
->When user association is defined, only the associated user can enroll the device using KME. This is true even after a factory-reset of the device. When no user association is defined in the Knox Portal, any user with a valid Intune license can enroll the device using KME .
+>When user association is defined, only the associated user can enroll the device using KME. This is true even after a wipe reset of the device. When no user association is defined in the Knox Portal, any user with a valid Intune license can enroll the device using KME .
 >
 
 ## Distribute devices

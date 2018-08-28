@@ -124,7 +124,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
     - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
-6. Choose **Device Management Settings** and Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables macOS settings that allow the management profile to be removed from the **System Preferences** menu or through the **Terminal**. After device enrollment, you cannot change this setting without factory resetting the device.
+6. Choose **Device Management Settings** and Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables macOS settings that allow the management profile to be removed from the **System Preferences** menu or through the **Terminal**. After device enrollment, you cannot change this setting without wiping the device.
 
     ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -191,7 +191,7 @@ You can pick a default macOS and iOS profile to be applied to all devices enroll
 2. Choose **Set Default Profile**, choose a profile in the drop-down list, and then choose **Save**. This profile will be applied to all devices that enroll with the token.
 
 ## Distribute devices
-You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is wiped.
 
 ## Renew a DEP token  
 1. Go to deploy.apple.com.  

@@ -117,7 +117,7 @@ For Android 5.1 and later devices that support NFC, you can provision your devic
 
 For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **aft#setup** enrollment method.
 
-1. Turn on your factory reset device.
+1. Turn on your wiped device.
 2. On the **Welcome** screen, select your language.
 3. Connect to your **Wifi** and then choose **NEXT**.
 4. Accept the Google Terms and conditions and then choose **NEXT**.
@@ -134,7 +134,7 @@ On Android 7 and later devices, you can scan the QR code from the enrollment pro
 > [!Note]
 > Browser zoom can cause devices to not be able to scan QR code. Increasing the browser zoom resolves the issue.
 
-1. To launch a QR read on the Android device, tap multiple times on the first screen you see after a factory reset.
+1. To launch a QR read on the Android device, tap multiple times on the first screen you see after a wipe.
 2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.
 3. Use the QR reader to scan the enrollment profile QR code and then follow the on-screen prompts to enroll.
 

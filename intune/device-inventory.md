@@ -42,7 +42,7 @@ This article shows you how to view all your devices, and their properties in the
 
    - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. You can perform the following actions on the device:
       - [Retire](devices-wipe.md#retire)
-	    - [Wipe](devices-wipe.md#factory-reset)
+	    - [Wipe](devices-wipe.md#wipe)
 	    - [Remote lock](device-remote-lock.md)
 	    - [Synchronize device](device-sync.md)
 	    - [Reset passcode](device-passcode-reset.md)

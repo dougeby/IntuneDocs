@@ -35,7 +35,7 @@ By using the **Retire** or **Wipe** actions, you can remove devices from Intune 
 > [!NOTE]
 > Before you remove a user from Azure Active Directory (Azure AD), use the **Wipe** or **Retire** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer wipe or retire those devices.
 
-## Factory reset
+## Wipe
 
 The **Wipe** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
 
@@ -50,7 +50,7 @@ MDM policies will be reapplied the next time the device connects to Intune.
 
 A wipe is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Wipe**. Data on the device cannot be recovered.
 
-### Factory reset a device
+### Wiping a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
