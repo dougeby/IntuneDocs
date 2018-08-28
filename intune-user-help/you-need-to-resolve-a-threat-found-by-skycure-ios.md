@@ -42,11 +42,7 @@ Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service th
 
 This article describes how to recognize SEP Mobile threat alerts and what to do to resolve them. 
 
-## How to resolve   
-
-Regain access to your company's resources when SEP Mobile detects a security or app threat.  
-
-### Virus or security threat is detected  
+## Resolve virus or security threat  
 
 1. When you attempt to access company email or websites, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).
 
@@ -55,7 +51,7 @@ Regain access to your company's resources when SEP Mobile detects a security or 
 2. Select your device.  
 3. Read the warning that appears below your device. It will instruct you to open SEP Mobile to fix the virus or security threat.    
 
-### App threat detected 
+## Resolve an app threat  
 
 If you install an app that's seen as a threat to your device, you'll receive a notification within the SEP Mobile app. If the affected app remains on your device, you'll be unable to access company resources.  
 
