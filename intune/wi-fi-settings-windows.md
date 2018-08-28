@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -95,11 +95,11 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
       - **Client Authentication**
 
-        **Client certificate for client authentication (Identity certificate)**: Use with **EAP-TLS** EAP type. Choose the SCEP certificate profile used to authenticate the connection.
+        **Client certificate for client authentication (Identity certificate)**: Use with **EAP-TLS** EAP type. Choose the certificate profile used to authenticate the connection.
 
         **Authentication method**: Use with **EAP-TTLS** EAP type. Select the authentication method for the connection:  
 
-          - **Certificates**: Select the SCEP client certificate that is the identity certificate presented to the server.
+          - **Certificates**: Select the client certificate that is the identity certificate presented to the server.
           - **Username and Password**: Enter a **Non-EAP method (inner identity)** method for authentication. Your options:
 
             - **Unencrypted password (PAP)**
