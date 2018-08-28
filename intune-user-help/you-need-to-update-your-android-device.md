@@ -34,4 +34,4 @@ ms.custom: intune-enduser
 
 Update your Android device by tapping **Settings** > **About phone**. In the __Settings__ section, tap __Check for Updates__ and install the available update.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -59,4 +59,4 @@ When a new version is available, you see the "update" option when you're looking
     > If you are unable to access the Microsoft Store, contact your company support.
 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

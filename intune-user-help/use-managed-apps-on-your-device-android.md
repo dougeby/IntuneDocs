@@ -75,4 +75,4 @@ Some common apps that your IT department might manage are:
 
 -   Microsoft Word, Excel, and PowerPoint
 
-Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

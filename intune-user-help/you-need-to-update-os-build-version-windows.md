@@ -39,4 +39,4 @@ Your work or school wants to ensure that devices accessing their resources are s
 
 If your Windows version is newer than what your company supports, you need to [try some different steps to fix the issue](your-windows-version-isnt-yet-supported.md)
 
-Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -33,4 +33,4 @@ When you encrypt a device, you are wrapping the information on it in a layer of 
 
 BitLocker is software that encrypts your drive and helps to protect your data. Follow [these instructions](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) on how to enable BitLocker on Windows 10 devices.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

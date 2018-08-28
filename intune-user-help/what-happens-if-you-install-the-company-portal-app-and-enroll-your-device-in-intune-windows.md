@@ -80,4 +80,4 @@ About every eight hours, enrolled devices will:
 
 -   Send any company app inventory updates.
 
-If you have questions, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+If you have questions, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
