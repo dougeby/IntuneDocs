@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,13 @@ If you want to report a bug that is not listed here, [open a support request](ge
 If you want to request a new feature for Intune, consider filing a report on [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
 
 ## Migration
+
+### Export Azure classic portal compliance policies to recreate these policies in the Intune Azure portal
+
+Compliance policies created in the Azure classic portal will be deprecated. You can review and delete any existing compliance policies, however you can't update them. If you need to migrate any compliance policies to the current Intune Azure portal, you can export the policies as a comma-separated file (.csv file). Then, use the details in the file to recreate these policies in the Intune Azure portal.
+
+> [!IMPORTANT]
+> When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
 
 ### Intune legacy PC client features are only available in the Silverlight console
 
