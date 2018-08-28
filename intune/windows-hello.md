@@ -7,7 +7,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,10 @@ You can integrate Windows Hello for Business (formerly Microsoft Passport for Wo
 
 Intune integrates with Hello for Business in two ways:
 
--   You can use an Intune policy to control which gestures users can and cannot use to sign in.
+-   An Intune policy can be created under **Device enrollment**. This policy targets the entire organization (tenant-wide). It supports the Windows AutoPilot out-of-box-experience (OOBE) and is applied when a device enrolls. 
+-  An identity protection profile can be created under **Device configuration**. This profile targets assigned users and devices, and is applied during check-in. 
+
+Use this article to create a default Windows Hello for Business policy that targets your entire organization. To create an identity protection profile that is applied to select user and device groups, see [Configure an identity protection profile](identity-protection-configure.md).  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -61,7 +64,7 @@ Intune integrates with Hello for Business in two ways:
 
 4. On the **All Users** pane, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
 
-5. On the **All Users** pane, click **Settings** and then choose from the following for **Configure Windows Hello for Business**:
+5. On the **All Users** pane, click **Settings** and then choose from the following options for **Configure Windows Hello for Business**:
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.

@@ -61,7 +61,7 @@ You must create an enrollment profile so that you can enroll your kiosk devices.
 1. Go to the [Intune portal](https://portal.azure.com) and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
     - **Name**: Type a name that you'll use when assigning the profile to the dynamic device group.
-    - **Token expiration date**: The date when the token expires. Google enforces a maximum of 30 days.
+    - **Token expiration date**: The date when the token expires. Google enforces a maximum of 90 days.
 3. Choose **Create** to save the profile.
 
 ### Create a device group
@@ -115,7 +115,7 @@ For Android 5.1 and later devices that support NFC, you can provision your devic
 
 ### Enroll by using a token
 
-For Android 6 and later devices, you can use the token to enroll the device.
+For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **aft#setup** enrollment method.
 
 1. Turn on your factory reset device.
 2. On the **Welcome** screen, select your language.
@@ -130,6 +130,9 @@ For Android 6 and later devices, you can use the token to enroll the device.
 ### Enroll by using a QR code
 
 On Android 7 and later devices, you can scan the QR code from the enrollment profile to enroll the device.
+
+> [!Note]
+> Browser zoom can cause devices to not be able to scan QR code. Increasing the browser zoom resolves the issue.
 
 1. To launch a QR read on the Android device, tap multiple times on the first screen you see after a factory reset.
 2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.

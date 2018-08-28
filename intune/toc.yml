@@ -399,6 +399,8 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
+    - name: Configure identity protection
+      href: identity-protection-configure.md
     - name: Android kiosk settings
       href: android-kiosk-settings.md
     - name: Android enterprise kiosk settings
@@ -586,6 +588,11 @@
         items:
         - name: Pradeo and Intune integration
           href: pradeo-mtd-connector-integration.md
+      - name: Set up Better Mobile
+        href: better-mobile-threat-defense-connector.md
+        items:
+        - name: Better Mobile and Intune integration
+          href: better-mobile-mtd-connector-integration.md
       - name: Set up Intune for MTD
         items:
         - name: Add MTD apps
