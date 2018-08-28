@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 Enroll your macOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
-Before you're allowed to access proprietary data from a corporate or personal device, organizations often require your device to be managed. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings.  
+Organizations often require you to get your device managed before you can access proprietary data from it. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. To get continuous access to work or school information from your device, you must configure your device to match policy settings.  
 
 This article describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet your organization's requirements.
 

@@ -31,13 +31,11 @@ ms.custom: intune-enduser
 
 # Set up access to your company resources
 
-# Set up access to your company resources
-
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
-Before you're allowed to access proprietary data from a coporate or personal device, organizations often require your device to be managed. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. 
+Organizations often require you to get your device managed before you can access proprietary data from it. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. 
 
-To get continuous access to your work or school information from your device, you must configure your device to match policy settings. This articles describes how the Intune Company Portal app for iOS helps you enroll, configure, and maintain your device to meet organizational requirements.
+To get continuous access to your work or school information from your device, you must configure your device to match policy settings. This article describes how the Intune Company Portal app for iOS helps you enroll, configure, and maintain your device to meet organizational requirements.
 
 > [!NOTE]
 > If you're trying to access company email in the Mail app, it's likely that you were prompted to manage your device to keep it secure. Follow the instructions below to get access to your email and other company resources on your iOS device.
@@ -74,7 +72,7 @@ To learn more about enrollment, see [What happens when I install the Company Por
 |![Terms and conditions page.](./media/ios-05-cp-enroll-1802.png)|Read and **Accept All** of the Terms and Conditions.|
 |![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-06-cp-enroll-1802.png)|Tap on **Begin** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
 |![What can my company see screen.](./media/ios-07-cp-enroll-1802.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
-|![What's next screen.](./media/ios-08-cp-enroll-1802.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app and the Company Portal app to complete this process. Tap **Continue**.|
+|![What's next screen.](./media/ios-08-cp-enroll-1802.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app, and the Company Portal app to complete this process. Tap **Continue**.|
 |![Loading screen after tapping Next on What's next.](./media/ios-09-cp-enroll-1802.png)|Wait for this screen to load.|
 |![Switched out to Safari for enrolling.](./media/ios-7-cp-enroll-1711.png)|You're sent to Safari to get management information for your device.|
 |![System prompt to ask for Settings app to be opened.](./media/ios-8-cp-enroll-1711.png)|Tap **Allow** to open the Settings app to download the configuration profile. You install this to let your company manage corporate information on your device.|
