@@ -84,9 +84,9 @@ The Intune **Bypass Activation Lock** remote device action removes the Activatio
 6. Go to the device's “Hardware” section, and then copy the **Activation Lock bypass code** value under **Conditional Access**.
 
     >[!NOTE]
-    >Copy the bypass code before you do a factory reset on the device. If you reset the device settings before you copy the code, the code is removed from Azure.
+    >Copy the bypass code before you wipe the device. If you reset the device settings before you copy the code, the code is removed from Azure.
 
-7.	Go to the **Overview** blade for the device, and then select **Factory reset**.
+7.	Go to the **Overview** blade for the device, and then select **Wipe**.
 8.	After the device is reset, you are prompted for the *Apple ID* and *password*. Leave the *ID* field blank, and then enter the **bypass code** for the *password*. This removes the account from the device. 
 
 
