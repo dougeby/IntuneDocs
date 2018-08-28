@@ -186,4 +186,4 @@ Apple School Manager devices managed by Intune must be assigned an enrollment pr
 
 ## Distribute devices to users
 
-You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your Apple School devices enroll. You can now distribute devices to users. When an iOS Apple School Manager device is turned on, it is enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is factory reset.
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your Apple School devices enroll. You can now distribute devices to users. When an iOS Apple School Manager device is turned on, it is enrolled for management by Intune. If the device has been activated and is in use, the profile cannot be applied until the device is wiped.
