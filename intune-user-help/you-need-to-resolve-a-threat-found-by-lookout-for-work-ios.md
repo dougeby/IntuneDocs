@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,9 +50,7 @@ Regain access to your company's resources when the Lookout for Work app detects 
     ![Example screenshot of a Lookout for Work error message, with a link to Company Portal website and blue OK button.](./media/mtd-go-to-device-management-portal-android.png)  
 
 2. Select your device.  
-3. Read the warning that appears below your device. It will instruct you to open Lookout for Work to fix the virus or security threat.     
-
-    ![Example screenshot of the Company Portal device page, showing the Lookout for Work warning.](./media/CP-lookout-virus-banner-1808.png)  
+3. Read the warning that appears below your device. It will instruct you to open Lookout for Work to fix the virus or security threat.   
 
 ## Troubleshoot an app threat   
 If you install an app that Lookout for Work identifies as a threat, you'll receive a message like the one shown in the screenshot below.  

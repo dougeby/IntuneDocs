@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/07/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,8 +54,6 @@ Regain access to your company's resources when SEP Mobile detects a security or 
 
 2. Select your device.  
 3. Read the warning that appears below your device. It will instruct you to open SEP Mobile to fix the virus or security threat.    
-
-    ![Example screenshot of the Company Portal device page, showing the SEP Mobile warning.](./media/CP-lookout-virus-banner-1808.png)
 
 ### App threat detected 
 

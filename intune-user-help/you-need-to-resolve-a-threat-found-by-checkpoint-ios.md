@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,12 +43,7 @@ This article describes how to recognize Sandblast Mobile Protect threat alerts a
 ## Troubleshoot virus or security threat  
 If a virus or security threat is detected, SandBlast Mobile Protect app acts according to your organization's access policies. Access policies could prevent you from accessing your work's network, apps, and email.  
 
-![Example screenshot of a SEP Mobile app alert message.](./media/skycure-list-of-potential-issues-android.png)  
-SandBlast Mobile Protect will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.
-
-Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Sandblast Mobile Protect to fix the virus or security threat.  
-
-  ![Example screenshot of the Company Portal device page, showing the Sandblast Mobile Protect warning.](./media/CP-lookout-virus-banner-1808.png)  
+SandBlast Mobile Protect will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.  
 
 ## Troubleshoot an app threat  
 

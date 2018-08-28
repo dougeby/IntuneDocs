@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/20/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,11 +43,7 @@ This article describes how to recognize Zimperium zIPS threat alerts and what to
 ## Troubleshoot virus or security threat  
 If a virus or security threat is detected, Zimperium zIPS will enforce restrictions according to your organization's access policies. You company's access policies could prevent you from accessing your work's network, apps, and email from your device.  
 
-Zimperium zIPS will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.
-
-Because the app is integrated with your company's MDM provider, you'll also see a warning about restricted access in the Company portal app. The warning instructs you to open Zimperium zIPS to fix the virus or security threat.  
-
-  ![Example screenshot of the Company Portal device page, showing the Zimperium zIPS warning.](./media/CP-lookout-virus-banner-1808.png)  
+Zimperium zIPS will prompt you to take action to regain the access you've lost. Select the threat and follow the instructions within the app to resolve it.  
 
 ## Resolve an app threat
 

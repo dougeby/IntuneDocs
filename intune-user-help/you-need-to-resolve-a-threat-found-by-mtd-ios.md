@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ Threats appear to you in the Company Portal as unresolved, noncompliant issues. 
 * Sync corporate files with OneDrive
 * Access company apps
 
-Below are the iOS-specific Mobile Threat Defense services that your organization could have set up. Select an app to read more about its behavior. 
+Below are the iOS-specific Mobile Threat Defense services that your organization might have set up. Select an app to read more about its behavior. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
