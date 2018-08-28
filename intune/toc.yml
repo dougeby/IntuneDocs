@@ -609,6 +609,8 @@
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Scope tags
+    href: scope-tags.md
   - name: Manage operating system versions
     href: manage-os-versions.md
   - name: Manage software updates
