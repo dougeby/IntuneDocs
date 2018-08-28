@@ -37,29 +37,29 @@ By using the **Retire** or **Wipe** actions, you can remove devices from Intune 
 
 ## Factory reset
 
-The **Factory reset** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
+The **Wipe** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
 
-|Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
+|Wipe action|**Retain enrollment state and user account**|Removed from Intune management|Description|
 |:-------------:|:------------:|:------------:|------------|
-|**Factory Reset**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
-|**Factory Reset**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
+|**Wipe**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
+|**Wipe**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
 
 The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
 
 MDM policies will be reapplied the next time the device connects to Intune.
 
-A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
+A wipe is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Wipe**. Data on the device cannot be recovered.
 
 ### Factory reset a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices** > **All devices**.
-4. Select the name of the device that you want to factory reset.
-5. In the pane that shows the device name, select **Factory reset**.
+4. Select the name of the device that you want to wipe.
+5. In the pane that shows the device name, select **Wipe**.
 6. For Windows 10 version 1709 or later, you also have the **Retain enrollment state and user account** option. 
     
-    |Retained during a factory reset|Not retained|
+    |Retained during a wipe |Not retained|
     | -------------|------------|
     |User accounts associated with the device|User files|
     |Machine state \(domain join, Azure AD-joined)| User-installed apps \(store and Win32 apps)|
@@ -70,9 +70,9 @@ A factory reset is useful for resetting a device before you give the device to a
     |User autologon|| 
     
          
-7. To confirm the factory reset, select **Yes**.
+7. To confirm the wipe, select **Yes**.
 
-If the device is on and connected, the **Factory reset** action propagates across all device types in less than 15 minutes.
+If the device is on and connected, the **Wipe** action propagates across all device types in less than 15 minutes.
 
 ## Retire
 
@@ -116,7 +116,7 @@ The following tables describe what data is removed, and the effect of the **Reti
 
 ### Android work profile
 
-Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
+Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Wipe is not supported for Android work profiles.
 
 ### Android enterprise kiosk devices
 

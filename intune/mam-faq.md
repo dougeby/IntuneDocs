@@ -143,9 +143,9 @@ IT administrators can deploy an app protection policy that requires app data to 
 **How does Intune remotely wipe data?**<br></br>
 Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using wipe or reture](devices-wipe.md). For more information about selective wipe using MAM, see [the Retire action](devices-wipe.md#retire) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
-- **What is factory reset?**<br></br> [Factory reset](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+- **What is wipe?**<br></br> [Wipe](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
-  > Factory reset can only be achieved on devices enrolled with Intune mobile device management (MDM).
+  > Wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
 - **What is selective wipe for MDM?**<br></br> See [Remove devices - retire](devices-wipe.md#retire) to read about removing company data.
 
