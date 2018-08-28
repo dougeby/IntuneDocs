@@ -55,4 +55,4 @@ When you unenroll your device from Intune, here's what happens:
 
 -   Company email access may be removed from the device.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

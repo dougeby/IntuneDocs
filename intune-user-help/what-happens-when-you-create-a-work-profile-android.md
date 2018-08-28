@@ -50,4 +50,4 @@ When you create a work profile:
 
 For the steps to create a work profile, see [Create a work profile and enroll your device](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

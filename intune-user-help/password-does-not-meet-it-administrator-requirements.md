@@ -40,7 +40,7 @@ For the steps needed to set your PIN or password, use the link that matches the 
 - [Set or change your Windows device password](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> If you have trouble determining how to make your password meet your company support's requirements, contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+> If you have trouble determining how to make your password meet your company support's requirements, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## PIN or password issue descriptions
 

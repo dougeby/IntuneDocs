@@ -53,4 +53,4 @@ The Device Enrollment Program is offered by Apple to make it easier for companie
 6. Agree to the **Terms and Conditions** and decide whether you want to send diagnostic information to Apple.
 7. Once you complete your enrollment, your device may prompt you to take more actions. Some of these steps might be entering your password for email access or setting up a passcode.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
