@@ -35,6 +35,9 @@ There are two types of conditional access with Intune: device-based conditional 
 
 The below information helps you understand how to use the Intune mobile *device* compliance capabilities and the Intune mobile *application* management (MAM) capabilities. 
 
+> [!NOTE]
+> Conditional access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution.
+
 ## Device-based conditional access
 
 Intune and Azure Active Directory work together to make sure only managed and compliant devices are allowed access to email, Office 365 services, Software as a service (SaaS) apps, and [on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). Additionally, you can set a policy in Azure Active Directory to only enable computers that are domain-joined, or mobile devices that are enrolled in Intune to access Office 365 services.
@@ -93,7 +96,7 @@ If the EAS record is brand new, and Intune is not aware of it, Intune issues a c
 
 #### What’s the Intune role?
 
-Intune evaluates and manage the device state.
+Intune evaluates and manages the device state.
 
 #### What’s the Exchange server role?
 
@@ -112,7 +115,7 @@ Users can be allowed or denied access when trying to access corporate Wi-Fi or V
 
 ### Conditional access based on device risk
 
-Intune partnered with Mobile Threat Defense vendors that provides a security solution to detect malwares, Trojans, and other threats on mobile devices.
+Intune partners with Mobile Threat Defense vendors that provide a security solution to detect malware, Trojans, and other threats on mobile devices.
 
 #### How the Intune and Mobile Threat Defense integration works
 
@@ -124,13 +127,13 @@ The Intune and mobile threat defense integration plays a factor at the condition
 
 ### Conditional access for Windows PCs
 
-Conditional access for PCs provide similar capabilities available for mobile devices. Let’s talk about the ways you can use conditional access when managing PCs with Intune.
+Conditional access for PCs provides capabilities similar to those available for mobile devices. Let’s talk about the ways you can use conditional access when managing PCs with Intune.
 
 #### Corporate-owned
 
--   **On premises AD domain joined:** This has been the most common conditional access deployment option for organizations, whose are reasonable comfortable with the fact they’re already managing their PCs through AD group policies and/or with System Center Configuration Manager.
+-   **On premises AD domain joined:** This option is commonly used by organizations who are reasonably comfortable with how they’re already managing their PCs through AD group policies and/or System Center Configuration Manager.
 
--   **Azure AD domain joined and Intune management:** This scenario is typically geared to Choose Your Own Device (CYOD), and roaming laptop scenarios where these devices are rarely connected to corporate-network. The device joins to the Azure AD and gets enrolled to Intune, which removes any dependency on on-premises AD, and domain controllers. This can be used as a conditional access criteria when accessing corporate resources.
+-   **Azure AD domain joined and Intune management:** This scenario is typically geared to Choose Your Own Device (CYOD), and roaming laptop scenarios where these devices are rarely connected to the corporate network. The device joins to the Azure AD and gets enrolled to Intune, which removes any dependency on on-premises AD, and domain controllers. This can be used as a conditional access criteria when accessing corporate resources.
 
 -   **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to be a domain-joined PC:
 

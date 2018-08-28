@@ -66,7 +66,7 @@ See this [overview of School Data Sync](https://support.office.com/article/Overv
 
 ## How user and device licenses affect access to services
 * Each **user** that you assign a user software license to may access and use the online services and related software (including System Center software) to manage applications and up to 15 devices.
-* Each **device** that you assign a device software license to may access and use the online services and related software (including System Center software) for use by any number of users.
+* You can purchase licenses for any devices separately from user licenses. Device licenses do not need to be assigned to the devices. Each device that accesses and uses the online services and related software (including System Center software) must have a device license.
 * If a device is used by more than one user, each requires a device software license or all users require a user software license.
 
 ## Understanding the type of licenses you have purchased

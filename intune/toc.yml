@@ -586,6 +586,11 @@
         items:
         - name: Pradeo and Intune integration
           href: pradeo-mtd-connector-integration.md
+      - name: Set up Better Mobile
+        href: better-mobile-threat-defense-connector.md
+        items:
+        - name: Better Mobile and Intune integration
+          href: better-mobile-mtd-connector-integration.md
       - name: Set up Intune for MTD
         items:
         - name: Add MTD apps

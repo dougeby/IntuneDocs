@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-To get the location of a lost or stolen iOS device on a map, use the **Locate device** action. The device must be a corporate-owned iOS device, enrolled through the device enrollment program, and be in supervised mode. Before you use this action, be sure the device is in [lost mode](device-lost-mode.md).
+To get the location of a lost or stolen iOS device on a map, use the **Locate device** action. The device must be in supervised mode. Before you use this action, be sure the device is in [lost mode](device-lost-mode.md).
 
 ## Supported platforms
 

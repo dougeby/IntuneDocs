@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -61,6 +61,7 @@ Choose the section that corresponds to your MTD provider:
   - [Check Point SandBlast Mobile](#configure-check-point-sandblast-mobile-apps)
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
+  - [Better Mobile](#configure-better-mobile-apps)
 
 ### Configure Lookout for Work apps
 
@@ -134,6 +135,16 @@ Choose the section that corresponds to your MTD provider:
 
     - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Pradeo app store URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) in **step 12** under the **Configure app information** section.
 
+### Configure Better Mobile apps
+
+ - **Android**
+
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Active Shield app store URL](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise) on **step 7**.
+
+ - **iOS**
+
+    - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [ActiveShield app store URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) in **step 12** under the **Configure app information** section.
+
 ## Configure your MTD apps with an iOS app configuration policy
 
 ### Lookout for Work app configuration policy
@@ -182,6 +193,22 @@ Choose the section that corresponds to your MTD provider:
 <string>{{serialnumber}}</string>
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
+</dict>
+```
+
+### Better Mobile app configuration policy
+
+- See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Better Mobile iOS app configuration policy.
+    - On **step 8**, use the option **Enter XML data**, copy the content below and paste it into the configuration policy body. Replace the `https://client.bmobi.net` URL with the appropriate console URL.
+
+```
+<dict>
+<key>better_server_url</key>
+<string>https://client.bmobi.net</string>
+<key>better_udid</key>
+<string>{{aaddeviceid}}</string>
+<key>better_user</key>
+<string>{{userprincipalname}}</string>
 </dict>
 ```
 
