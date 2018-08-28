@@ -188,7 +188,7 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the device > **Retire**.
-![Screenshot for remove company data](./media/devices-wipe/remove-company-data.png)
+![Screenshot for retire](./media/devices-wipe/retire.png)
 3. Choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose the token > **Devices** > choose the check box for the device > **Delete** > **Yes**.
 ![Screenshot for delete device](./media/devices-wipe/delete-device.png)
 4. Visit [deploy.apple.com](http://deploy.apple.com) and search for the device by its serial number.
