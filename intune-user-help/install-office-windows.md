@@ -37,4 +37,4 @@ There are many ways you can install the Office suite on to your Windows 10 devic
 
 When your company makes Office available, you should only install one version of Office. If you try to install both, you'll remove the one you had installed first.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

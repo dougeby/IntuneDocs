@@ -36,4 +36,4 @@ Microsoft automatically collects certain data about our products and services. W
 
 If you wish to turn off the collection of usage data on your iOS device, open **Settings**, tap **Company Portal**, and then turn off **Usage Data**. For macOS devices, open the **Company Portal** menu > **Preferences**, then uncheck **Allow Microsoft to collect usage data**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -48,4 +48,4 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 2.  Select a password timeout value.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

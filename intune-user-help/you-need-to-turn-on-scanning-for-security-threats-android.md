@@ -39,4 +39,4 @@ To enable the scans on your device, go to **Settings** > **Google** > **Security
 
 On some Samsung devices, you may find the setting in **Settings** > **Google** > **Security** > **Google Play Protect**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog). 
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). 

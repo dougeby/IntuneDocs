@@ -68,4 +68,4 @@ Complete the following steps to enroll your macOS device in management. If you'r
 ## Get the Company Portal app      
 Go to the App Store to get the Intune Company Portal app on your device. The app lets you monitor, sync, add, and remove your device from management, and install apps.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
