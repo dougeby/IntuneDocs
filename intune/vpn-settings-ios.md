@@ -50,16 +50,19 @@ The actual settings you see from the list below are determined by the VPN connec
   - **Cisco AnyConnect**: Applicable to [Cisco AnyConnect](https://itunes.apple.com/app/cisco-anyconnect/id1135064690) app version 4.0.7x and later.
   - **Cisco Legacy AnyConnect**: Applicable to [Cisco Legacy AnyConnect](https://itunes.apple.com/app/cisco-legacy-anyconnect/id392790924) app version 4.0.5x and earlier.
   - **SonicWall Mobile Connect**
-  - **F5 Access Legacy**
-  - **Palo Alto Networks GlobalProtect**
+  - **F5 Access Legacy**: Applicable to F5 Access app version 2.1 and earlier.
+  - **Palo Alto Networks GlobalProtect**Applicable to Palo Alto Networks GlobalProtect app version 5.0 and later.
   - **Pulse Secure**
   - **Cisco (IPSec)**
   - **Citrix SSO**
-  - **F5 Access**
-  - **Legacy Palo Alto Networks GlobalProtect**
+  - **F5 Access**: Applicable to F5 Access app version 3.0 and later.
+  - **Palo Alto Networks GlobalProtect (Legacy)**: Applicable to Palo Alto Networks GlobalProtect app version 4.1 and earlier.
   - **Citrix VPN**
   - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
   - **Custom VPN**    
+
+    > [!NOTE]
+    > Cisco, Citrix, F5, and Palo Alto have announced that their old clients will not work on the upcoming release of iOS 12. Consider migrating to the new apps as soon as possible. For more information, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
 
 * **Excluded URLs** (Zscaler only): When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. 
 
