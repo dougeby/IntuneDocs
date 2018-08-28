@@ -196,7 +196,7 @@ With your per-app VPN set-up and associated with your app, verify the connection
     - Zscaler App
 
     > [!NOTE]
-    > As the admin, if you are using the Pulse Secure VPN app, you can choose to use app-layer or packet-layer tunneling. Set the `ProviderType` value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.
+    > If you are using the Pulse Secure VPN app, you can choose to use app-layer or packet-layer tunneling. Set the **ProviderType** value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.
 
 ### Connect using the per-app VPN
 
