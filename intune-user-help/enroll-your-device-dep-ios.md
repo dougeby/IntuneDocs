@@ -41,7 +41,7 @@ To begin setup, power on your device and sign in with your work or school creden
 Your organization might have purchased their devices through something called the *Apple Device Enrollment Program* (DEP). Apple DEP lets organizations buy large amounts of iOS or macOS devices. Organizations can then configure and manage those devices within their preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple DEP, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
 ## Set up your iOS device  
-If you're using your own iOS device, rather than a org-provided one, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-ios.md).  
+If you're using your own iOS device, rather than an org-provided one, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-ios.md).  
 
 1. Turn on your iOS device. 
 2. After you select your **Language**, connect your device to Wi-Fi.
