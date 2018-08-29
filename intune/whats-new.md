@@ -59,6 +59,8 @@ We’ve added new features, based on feedback from customers, to the Company Por
 - Improved performance for large app catalogs
 - Increased accessibility for all users  
 
+The [Intune Company Portal website documentation](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes. To view an example of the app enhancements, see [UI updates for Intune end-user apps](whats-new-app-ui.md).  
+
 ### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
 
