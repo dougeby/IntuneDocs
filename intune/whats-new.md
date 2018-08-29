@@ -103,10 +103,9 @@ Applies to Windows 10 and later.
 #### Require users to connect during device setup <!--2311457-->
 You can now set device profiles to require that the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
 
-#### Restricts apps, and block access to company resources on iOS and Android for Work devices <!-- 2451462 -->
+#### Restricts apps, and block access to company resources on iOS and Android Enterprise devices <!-- 2451462 -->
 In **Device compliance** > **Policies** > **Create policy** > **iOS** > **System Security**, there is a new **Restricted applications** setting. This new setting uses a compliance policy to block access to company resources if certain apps are installed on the device. The device is considered non-compliant until the restricted apps are removed from the device.
-Applies to: 
-- iOS
+Applies to: iOS
 
 #### Modern VPN support updates for iOS <!-- 2459928, 1819876, and 2650856 -->
 This update adds support the following iOS VPN clients: 
