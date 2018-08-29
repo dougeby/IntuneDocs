@@ -37,4 +37,4 @@ Every company sets a limit to the number of devices that each person can use to 
 2. Remove one of your devices from the [MyApps portal](https://myapps.microsoft.com) and select **Profile** in the top-right corner of the page. 
 3. Contact your company support to see if they can increase the number of devices you're allowed to register. 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

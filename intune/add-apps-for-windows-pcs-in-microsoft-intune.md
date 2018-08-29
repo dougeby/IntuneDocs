@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,6 +37,8 @@ Use the information in this topic to learn how to add apps to Intune before you 
 
 To install apps to PCs, they must be capable of being installed silently, with no user interaction. If this is not the case, the installation will fail.
 
+## Additional security settings for Windows installer
+You can allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue.​ You can direct the Windows installer to use elevated permissions when it installs any program on a system.​ Additionally, you can enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. The functionality for these options are disabled by default. 
 
 ## Add the app
 You use the Intune Software Publisher to configure the properties of the app and upload it to your cloud storage space by using the following procedure:

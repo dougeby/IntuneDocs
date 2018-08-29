@@ -39,4 +39,4 @@ Sometimes installing an app can fail, especially if your device isn't up-to-date
 
 To update, tap **Settings** > **General** > **Software Update**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

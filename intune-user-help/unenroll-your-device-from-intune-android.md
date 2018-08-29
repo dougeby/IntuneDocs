@@ -54,4 +54,4 @@ To remove all data that the Company Portal app for Android stores on your device
 -	Clear app data in Applications -> Click on app -> button "Clear data"
 -	Delete the folder '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -37,4 +37,4 @@ To keep the data on your Android device more secure, your company support can se
 
 2.  Specify the password timeout value.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

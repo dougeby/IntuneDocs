@@ -4,8 +4,6 @@
 
 ## [What information can my company see with Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Reset my device](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [Updating my password](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
@@ -66,7 +64,7 @@
 ### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
-### [Enroll your Device Enrollment Program iOS device](enroll-your-device-dep-ios.md)
+### [Enroll your organization-provided iOS device](enroll-your-device-dep-ios.md)
 
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
@@ -105,8 +103,8 @@
 ## [Using your macOS device](using-your-macos-device-with-intune.md)
 ### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
-### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)
-
+### [Enroll your organization-provided macOS device](enroll-company-device-macos.md)  
+### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)  
 ### [Fixing common issues with macOS](troubleshoot-your-device-macos.md)
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
