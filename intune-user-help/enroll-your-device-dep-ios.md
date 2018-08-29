@@ -35,10 +35,10 @@ Learn how to get your new iOS device managed in Intune.
 
 The iOS devices that are provided to you by work or school are often preconfigured before you receive them. Your organization will send these preconfigured settings to your device after you turn it on and sign in for the first time. After your device completes setup, you'll receive access to your work or school resources.  
 
-To begin management setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant. 
+To begin setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant. 
 
 ## What is Apple DEP?
-If your organization provided you with a device, they might have purchased it through something called the *Apple Device Enrollment Program* (DEP). Some organizations buy large amounts of iOS or macOS devices through Apple DEP. Apple DEP then lets the organization configure and manage these devices within a preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple DEP, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+Your organization might have purchased their devices through something called the *Apple Device Enrollment Program* (DEP). Apple DEP lets organizations buy large amounts of iOS or macOS devices. Organizations can then configure and manage those devices within their preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple DEP, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
 ## Set up your iOS device  
 If you're using your own iOS device, rather than a org-provided one, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-ios.md).  
