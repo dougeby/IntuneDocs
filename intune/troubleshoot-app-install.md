@@ -6,7 +6,7 @@ keywords:
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ Intune provides app troubleshooting details based on the apps installed on a spe
 
     > [!Note]  
     > The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
-    > Currently, Intune does not filter out apps based on the OS platform.
+    > If an installation failure occurs for a required app, either you or your helpdesk will be able to sync the device and retry the app install.
 
 The app installation error details will indicate the problem. You can use these details to determine the best action to take to resolve the problem. For more information about troubleshooting app installation issues, see [Error Codes For Troubleshooting App Installation Issues](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
 
@@ -54,6 +54,8 @@ The app installation error details will indicate the problem. You can use these 
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## App installation errors
+
+The following error messages and descriptions provide details about both Android and iOS installation errors. 
 
 ### Android errors
 
