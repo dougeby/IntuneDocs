@@ -120,8 +120,9 @@ For more information about iOS 12 and VPN profiles, see the [Microsoft Intune Su
 
 #### Export Azure classic portal compliance policies to recreate these policies in the Intune Azure portal <!-- 2469637 -->
 Compliance policies created in the Azure classic portal will be deprecated. You can review and delete any existing compliance policies, however you can't update them. If you need to migrate any compliance policies to the current Intune Azure portal, you can export the policies as a comma-separated file (*.csv* file). Then, use the details in the file to recreate these policies in the Intune Azure portal.
-    > [!IMPORTANT]
-    > When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
+
+> [!IMPORTANT]
+> When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
 
 #### Better Mobile - New Mobile Threat Defense partner <!-- 22662717 -->
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense solution that integrates with Microsoft Intune.
