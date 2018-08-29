@@ -399,6 +399,8 @@
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
+    - name: Configure identity protection
+      href: identity-protection-configure.md
     - name: Android kiosk settings
       href: android-kiosk-settings.md
     - name: Android enterprise kiosk settings
@@ -607,6 +609,8 @@
       href: windows-hello.md
   - name: Manage roles
     href: role-based-access-control.md
+  - name: Scope tags
+    href: scope-tags.md
   - name: Manage operating system versions
     href: manage-os-versions.md
   - name: Manage software updates

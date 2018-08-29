@@ -40,7 +40,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 | **Method** |	**Reset Required** |	[**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)	|	**Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| |	Devices are factory reset during enrollment. |	Associates each device with a user.| Users can’t unenroll devices.	| |
+| |	Devices are wiped during enrollment. |	Associates each device with a user.| Users can’t unenroll devices.	| |
 |**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
@@ -101,7 +101,7 @@ Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a factory reset. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 

@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,7 @@ This feature supports:
 - iOS 
 - macOS
 
+
 ## Device restrictions
 [Device restrictions](device-restrictions-configure.md) controls security, hardware, data sharing, and more settings on the devices. For example, create a device restriction profile that prevents iOS device users from using the device camera. 
 
@@ -78,6 +79,13 @@ To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft In
 
 This feature supports:
 - Windows 10 and later
+
+## Identity protection
+[Identity protection](identity-protection-configure.md) controls the Windows Hello for Business experience on Windows 10 and Windows 10 Mobile devices. Configure these settings to make Windows Hello for Business available to users and devices, and to specify requirements for device PINs and gestures.  
+
+This feature supports:  
+- Windows 10 and later
+- Windows Holographic for Business  
 
 ## Kiosk
 
