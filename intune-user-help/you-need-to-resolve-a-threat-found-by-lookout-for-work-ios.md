@@ -2,13 +2,13 @@
 # required metadata
 
 title: Resolving threats found by Lookout for Work on iOS | Microsoft Docs
-description: Learn how to fix a threat found by Lookout for Work on iOS.
+description: Learn how to fix a threat found on your iOS device by the Lookout for Work app.
 keywords:
 author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/03/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,29 +30,33 @@ ms.custom: intune-enduser
 
 ---
 
-# Resolve a threat found by Lookout for Work
+# Resolve a threat found by Lookout for Work  
 
-Lookout for Work has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files.
+The Lookout for Work app is a Mobile Threat Defender service that identifies potential threats on your iOS device. These threats are reported to the Company Portal app, and appear there as unresolved, noncompliant issues. As long as these threats are present, you may be unable to:
 
-To resolve the issue, open the Lookout for Work app, and follow the instructions shown in the app.
+* Connect to corporate e-mail
+* Connect to corporate Wi-Fi
+* Connect to SharePoint Online
+* Sync corporate files with OneDrive
+* Access company apps
 
-## What you might see if your enrolled device is blocked from accessing email or files
+This article describes how to recognize Lookout for Work threat alerts and what to do to resolve them. 
 
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
+## Troubleshoot virus or security threat  
+Regain access to your company's resources when the Lookout for Work app detects a security or app threat.  
 
-![Lookout for Work error message with link to Company Portal website](./media/mtd-go-to-device-management-portal-android.png)
+1. If a virus or security threat is detected, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).  
 
-Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), where you will see instructions on how to fix the issue.
+    ![Example screenshot of a Lookout for Work error message, with a link to Company Portal website and blue OK button.](./media/mtd-go-to-device-management-portal-android.png)  
 
-## Example of an app that Lookout for Work sees as a threat
+2. Select your device.  
+3. Read the warning that appears below your device. It will instruct you to open Lookout for Work to fix the virus or security threat.   
 
-If you have installed an app that Lookout for Work thinks is a threat, you see a screen that is similar to this one:
+## Troubleshoot an app threat   
+If you install an app that Lookout for Work identifies as a threat, you'll receive a message like the one shown in the screenshot below.  
 
-![example of Lookout for Work virus alert message](./media/ios-lfw-threat-example.png)
+![Example screenshot showing a list of Active and Resolved app Threats detected by Lookout for Work.](./media/ios-lfw-threat-example.png)    
+Select the app name shown at the top of your screen. Then follow the instructions to remove and uninstall the app. As long as the app is on your device, you'll be unable to access company resources.    
 
-If you see something like this, tap the app name shown at the top of your screen, and follow the instructions to remove the threat.
-
-After you uninstall the app, you regain access to your email and other company or school data right away. If you ignore the request to uninstall the app, you will lose access to your company email and data until you uninstall the app.
-
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

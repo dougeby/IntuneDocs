@@ -54,7 +54,7 @@ Some devices will give you a choice between encrypting the entire device or just
 
 ### Downgrade your version of Android
 
-If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog) for contact information.
+If your device offers you the option to downgrade to Android 6.0+, then do so. There is a risk of data loss if you should try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. You can get contact information for your company support at the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information.
 
 ## Specific manufacturer issues
 

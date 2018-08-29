@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,27 +32,32 @@ ms.custom: intune-enduser
 
 # Resolve a threat found by Symantec Endpoint Protection Mobile
 
-Symantec Endpoint Protection Mobile has found a potential threat on your device, and you must fix the issue to regain access to your company or school email, apps, and files. The message that you see might look something like this one:
+Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service that identifies potential threats on your Android devices. These threats are reported to the Company Portal app, and appear as unresolved, noncompliant issues. If your device is identified as being noncompliant, you may be unable to:
 
-![Skycure found a threat on your device](./media/lookout-threat-found-android.png)
+* Connect to corporate e-mail
+* Connect to corporate Wi-Fi
+* Connect to SharePoint Online
+* Sync corporate files with OneDrive
+* Access company apps
 
-To fix the issue, open the Symantec Endpoint Protection Mobile app, and follow the instructions shown in the app.
+This article describes how to recognize SEP Mobile threat alerts and what to do to resolve them. 
 
-## What you might see if your enrolled device is blocked from accessing email or files
+## Resolve virus or security threat  
 
-If there is a virus or other security threat on your enrolled device, and you try to access your company email or files, you might see a message like this one:
+1. When you attempt to access company email or websites, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).
 
-![Skycure error message with link to Company Portal website](./media/skycure-list-of-potential-issues-android.png)
+    ![Example screenshot of a Lookout for Work error message, with a link to Company Portal website and blue OK button.](./media/mtd-go-to-device-management-portal-android.png)  
 
-Tap the **device management portal** link to go to the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog), where you will see instructions on how to fix the issue.
+2. Select your device.  
+3. Read the warning that appears below your device. It will instruct you to open SEP Mobile to fix the virus or security threat.     
 
-## Example of an app that Symantec Endpoint Protection Mobile sees as a threat
+    ![Example screenshot of the Company Portal device page, showing the SEP Mobile warning.](./media/CP-lookout-virus-banner-1808.png)
 
-If you have installed an app that Symantec Endpoint Protection Mobile thinks is a threat, you'll see a screen that is similar to this one:
+## Resolve an app threat  
 
-![example of Skycure virus alert message](./media/skycure-virus-alert-android.png)
+If you install an app that's seen as a threat to your device, you'll receive a notification within the SEP Mobile app. If the affected app remains on your device, you'll be unable to access company resources.  
 
-After you uninstall the app, you regain access to your company email and data right away. If you ignore the request to uninstall the app, you will lose access to your email and data until you uninstall the app.
+To resolve, select the app from the list of threats in SEP Mobile. Then follow the on-screen instructions to remove and uninstall the app.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

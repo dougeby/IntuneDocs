@@ -35,4 +35,4 @@ Microsoft automatically collects certain data about our products and services. W
 
 If you wish to turn off the collection of usage data on your Windows device, find the **Usage Data** setting in the Company Portal app.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

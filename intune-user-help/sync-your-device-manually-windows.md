@@ -155,4 +155,4 @@ These instructions apply to HoloLens devices running the Windows 10 Anniversary 
 
     ![Choosing the Sync icon](./media/wp81-3-sync-tap-sync-button.png)
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

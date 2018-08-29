@@ -34,4 +34,4 @@ ms.custom: intune-enduser
 
 Update your iOS device by tapping **Settings** > **General** > **Software Update**.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -50,4 +50,4 @@ To email logs to your company support:
 3.  Tap **Send Email & Upload Logs**.
 4.  After the upload is complete, tap your email app. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you encountered.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

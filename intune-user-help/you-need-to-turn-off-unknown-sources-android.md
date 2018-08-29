@@ -36,4 +36,4 @@ If you see the message, â€œInstallation from Unknown sources must be disabled,â€
 
 After you turn off **Unknown sources**, it may take a few minutes before you can continue to use your Android device to access company or school data.
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
