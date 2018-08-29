@@ -55,6 +55,7 @@ The actual settings you see from the list below are determined by the VPN connec
   - **Palo Alto Networks GlobalProtect (Legacy)**: Applicable to Palo Alto Networks GlobalProtect app version 4.1 and earlier.
   - **Palo Alto Networks GlobalProtect**: Applicable to Palo Alto Networks GlobalProtect app version 5.0 and later.
   - **Pulse Secure**
+  - **Cisco (IPSec)**
   - **Citrix VPN**
   - **Citrix SSO**
   - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
