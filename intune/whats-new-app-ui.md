@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,12 +31,32 @@ Learn what updates have been made to the UI for apps that your end users will se
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## Week of August 27, 2018  
+
+### New user experience update for the Company Portal website <!--2000968 -->  
+We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site&ndash;such as device details, feedback and support, and device overview&ndash;have received a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
+
+Updates you'll see include:  
+
+- Streamlined workflows across all device platforms
+- Improved device identification and enrollment flows
+- More helpful error messages
+- Friendlier language, less tech jargon
+- Ability to share direct links to apps
+- Improved performance for large app catalogs
+- Increased accessibility for all users  
+
+|Updated|Previous|
+|---|---|
+|![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
+|![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|  
+
 ## Week of July 16, 2018  
 
 ### More opportunities to sync in the Company portal app for Windows   
 The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  
 
-![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
+![Screenshot of the Windows task bar on a device's desktop. Company Portal app program icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
 ### New browsing experiences in the Company portal app for Windows  
 
@@ -46,7 +66,7 @@ The **Apps** page's **Installed** view lets you see details about completed and 
 
 Example screenshot showing the Tiles view:  
  
-![Screenshot of the Intune Company Portal app for Windows showing the isntalled apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![Screenshot of the Intune Company Portal app for Windows showing the installed apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 Example screenshot showing the Details view:  
 
@@ -464,12 +484,7 @@ We’ve added some new features, based on feedback from customers like you, that
 -	Ability to share direct links to apps
 - Improved performance for large app catalogs
 
-You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end-user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.
-
-|Updated|Previous|
-|---|---|
-|![The updated device page shows the device cleanly aligned above device information, no longer popping up above the full list.](./media/iwp-device-after-1803.png)|![The previous version of the device page.](./media/iwp-device-before-1803.png)|
-|![The updated app install page shows the app cleanly above a description and various install information, including publish date, version, and type of app.](./media/iwp-app-install-after-1803.png)|![The previous version of the app install page.](./media/iwp-app-install-before-1803.png)|
+You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end-user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.  
 
 ### UI updates to the Company Portal website <!--1313244 part 2-->
 
