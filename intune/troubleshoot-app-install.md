@@ -28,9 +28,6 @@ ms.custom: intune-azure
 
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view app information to address user help requests. The troubleshooting pane within Intune provides failure details, including details about managed apps on a user's device. Details about the end-to-end lifecycle of an app are provided under each individual device in the **Managed Apps** pane. You can view installation issues, such as when the app was created, modified, targeted, and delivered to a device. 
 
-> [!NOTE]
-> If an installation failure occurs for a required app, either you or the helpdesk will be able to sync the device and retry the app install.
-
 ## To review app troubleshooting details
 
 Intune provides app troubleshooting details based on the apps installed on a specific user's device.
@@ -49,7 +46,7 @@ Intune provides app troubleshooting details based on the apps installed on a spe
 
     > [!Note]  
     > The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
-    > Currently, Intune does not filter out apps based on the OS platform.
+    > If an installation failure occurs for a required app, either you or your helpdesk will be able to sync the device and retry the app install.
 
 The app installation error details will indicate the problem. You can use these details to determine the best action to take to resolve the problem. For more information about troubleshooting app installation issues, see [Error Codes For Troubleshooting App Installation Issues](https://blogs.technet.microsoft.com/intunesupport/2018/05/15/error-codes-for-troubleshooting-app-installation-issues).
 
