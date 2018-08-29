@@ -56,7 +56,7 @@ Updates you'll see include:
 ### More opportunities to sync in the Company portal app for Windows   
 The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  
 
-![Screenshot of the Windows taskbaron a device's desktop. Company Portal app progam icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
+![Screenshot of the Windows task bar on a device's desktop. Company Portal app program icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
 ### New browsing experiences in the Company portal app for Windows  
 
@@ -66,7 +66,7 @@ The **Apps** page's **Installed** view lets you see details about completed and 
 
 Example screenshot showing the Tiles view:  
  
-![Screenshot of the Intune Company Portal app for Windows showing the isntalled apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![Screenshot of the Intune Company Portal app for Windows showing the installed apps in tile view.](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 Example screenshot showing the Details view:  
 
