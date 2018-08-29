@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/29/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -49,8 +49,8 @@ The **appRevision** entity lists all the versions of apps.
 | IsCurrent                  | Indicates whether this App version   is current or not in the data warehouse.         | True/False                           |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when this app   version was last modified in the data warehouse. | 11/23/2016 0:00                      |
 
-## AppTypes
-The **AppType** entity lists the installation source of an app.
+## appTypes
+The **appType** entity lists the installation source of an app.
 
 |   Property  |        Description        |
 |:-----------:|:-------------------------:|
@@ -203,9 +203,6 @@ The **DeviceRegistrationState** entity represents the registration type referenc
 | deviceRegistrationStateID   | Unique identifier for registration state                                            |
 | deviceRegistrationStateKey  | Unique identifier of the registration state in the data   warehouse - surrogate key |
 | deviceRegistrationStateName | Registration state                                                                  |
-
-|               Property               |                                                                                     Description                                                                                    |
-|:------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    NotRegistered                     |    Not registered                                                                                                                                                                  |
 |    Registered                        |       Registered                                                                                                                                                                   |
 |    Revoked                           |       State means the IT administrator has blocked the client, and the client can   be unblocked. A device can also be in the Revoked state after it is wiped or   retired.        |
@@ -312,7 +309,6 @@ The **deviceEnrollmentType** entity indicates how a device was enrolled. The enr
 | 2                | DeviceEnrollmentManager            | User enrollment with a device   enrollment manager account.                              |
 | 3                | AppleBulkWithUser                  | Apple bulk enrollment with user   challenge. (DEP, Apple Configurator)                   |
 | 4                | AppleBulkWithoutUser               | Apple bulk enrollment without user challenge.   (DEP, Apple Configurator, Mobile Config) |
-|                  |                                    |                                                                                          |
 | 5                | WindowsAzureADJoin                 | Windows 10 Azure AD Join.                                                                |
 | 6                | WindowsBulkUserless                | Windows 10 Bulk enrollment through   ICD with certificate.                               |
 | 7                | WindowsAutoEnrollment              | Windows 10 automatic enrollment.   (Add work account)                                    |
@@ -380,9 +376,7 @@ The **application** entity lists Line-of-Business (LOB) apps that are managed th
 | mamApplicationKey                                                    | Unique identifier of the MAM app in the data warehouse.                           | 123                                  |
 | mamApplicationName                                                   | Name of the MAM app.                                                              | "Word"                               |
 | mamApplicationId                                                     | Application ID of the MAM app.                                                    | b66bc706-ffff-7437-0340-032819502773 |
-| IsDeleted                                                            | Indicates whether this MAM app record has been   updated.                         | True/False                           |
-| True- MAM   app has a new record with updated fields in this table.  |                                                                                   |                                      |
-| False- the   latest record for this MAM app.                         |                                                                                   |                                      |
+| IsDeleted                                                            | Indicates whether this MAM app record has been updated. True- MAM   app has a new record with updated fields in this table. False- the   latest record for this MAM app.                         | True                           |
 | StartDateInclusiveUTC                                                | Date and time in UTC when this MAM app was created in the   data warehouse.       | 11/23/2016 0:00                      |
 | DeletedDateUTC                                                       | Date and time in UTC when IsDeleted changed to True.                              | 11/23/2016 0:00                      |
 | RowLastModifiedDateTimeUTC                                           | Date and time in UTC when this MAM app was last modified   in the data warehouse. | 11/23/2016 0:00                      |
