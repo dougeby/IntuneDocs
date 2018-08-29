@@ -142,10 +142,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
     ![Screenshot of install company portal with vpp.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
-<<<<<<< HEAD
-=======
 7. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
->>>>>>> 0b3f56c315ca51fb05005b516b0c8f42c4f6209d
 
 8. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
