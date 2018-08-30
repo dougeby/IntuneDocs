@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,6 +55,7 @@ ms.custom: intune-azure
        -  [Device features](device-features-configure.md)
        -  [Device restrictions](device-restrictions-configure.md)
        -  [Endpoint protection](endpoint-protection-configure.md)
+       -  [Identity protection](identity-protection-configure.md)  
        -  [Kiosk](kiosk-settings.md)
        -  [Email](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)

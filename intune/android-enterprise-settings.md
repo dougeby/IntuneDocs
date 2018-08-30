@@ -38,14 +38,14 @@ Android kiosk profiles support the following configuration settings. When creati
     - **Auto grant**: Permissions are automatically granted.
     - **Auto deny**: Permissions are automatically denied.
 - **Volume changes**: Choose **Block** to prevent users from changing the device's volume.
-- **Factory reset**: Choose **Block** to prevent users from factory resetting the device.
+- **Wipe**: Choose **Block** to prevent users from wiping the device.
 - **Safe boot**: Choose **Block** to prevent users from rebooting the device into safe mode.
 - **Status bar**: Choose **Block** to prevent users from access the status bar, including notifications and quick settings.
 - **Wi-Fi setting changes**: Choose **Block** to prevent users from changing wi-fi configurations created by the device owner. Users can create their own wi-fi configurations.
 - **Wi-Fi access point configuration**: Choose **Block** to prevent users from creating or editing any wi-fi configurations.
 - **Debugging features**: Choose **Allow** to let users use debugging features.
 - **Microphone adjustment**: Choose **Block** to prevent users from adjusting the volume of or muting the microphone.
-- **Factory reset protection emails**: Choose **Google account email addresses** to define  email addresses (separate with semi colons) that can unlock the device after a factory reset. If an email is not specified, anyone can unlock the device after a factory reset.
+- **Wipe protection emails**: Choose **Google account email addresses** to define  email addresses (separate with semi colons) that can unlock the device after a wipe. If an email is not specified, anyone can unlock the device after a wipe.
 - **Network escape hatch**: Choose **Enable** to let turn on the network escape hatch feature. If a network connection can't be made at boot time, the escape hatch prompts the user to temporarily connect to a network in order to refresh the device policy. After applying the policy, the temporary network is forgotten and the device continues booting. This prevents being unable to connect to a network if there is no suitable network in the last policy and the device boots into an app in lock task mode, or the user is unable to reach device settings.
 - **Allow installation from unknown sources**: Choose **Allow** to let users install from unknown sources.
 - **System update**: Choose an option to define how the device handles over the air updates:

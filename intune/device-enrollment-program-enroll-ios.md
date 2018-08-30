@@ -138,13 +138,13 @@ Now that you've installed your token, you can create an enrollment profile for D
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-
 6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you have the option to use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device without the user providing an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and will prompt for an Apple ID.
 
     ![Screenshot of install company portal with vpp.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
+7. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
 
-7. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
+8. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 
     ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -158,27 +158,29 @@ Now that you've installed your token, you can create an enrollment profile for D
      > [!NOTE]
      > A device enrolled without supervision can only be reset to supervised by using the Apple Configurator. Resetting the device in this manner requires connecting an iOS device to a Mac with a USB cable. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3).
 
-8. Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you cannot change this setting without factory resetting the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
+9. Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you cannot change this setting without wiping the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
 
-9. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+10. Choose whether or not you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-10. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
+11. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-11. Choose **OK**.
+12. Choose **OK**.
 
-12. Choose **Setup Assistant Settings** to configure the following profile settings:
+13. Choose **Setup Assistant customization** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
+
     | Department settings | Description |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
-    |    <strong>Department Phone</strong>     |                                                          Appears when the user clicks the <strong>Need Help</strong> button during activation. |
+    |    <strong>Department Phone</strong>     | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
   You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
-| Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
+
+    | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
@@ -192,9 +194,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Diagnostic Data</strong> | Display the **Diagnostics** screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
 
 
-13. Choose **OK**.
+14. Choose **OK**.
 
-14. To save the profile, choose **Create**.
+15. To save the profile, choose **Create**.
 
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
@@ -225,7 +227,7 @@ You can pick a default profile to be applied to all devices enrolling with a spe
 2. Choose **Set Default Profile**, choose a profile in the drop-down list, and then choose **Save**. This profile will be applied to all devices that enroll with the token.
 
 ## Distribute devices
-You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is factory reset.
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is wiped.
 
 See [Enroll your iOS device in Intune with the Device Enrollment Program](/intune-user-help/enroll-your-device-dep-ios).
 

@@ -40,7 +40,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Copy and paste (Samsung Knox only)** - Allows copy and paste functions on the device.
 - **Clipboard sharing between apps (Samsung Knox only)** - Allows use of the clipboard to copy and paste between apps.
 - **Diagnostic data submission (Samsung Knox only)** - Stops the user from submitting diagnostic data from the device.
-- **Factory reset (Samsung Knox only)** - Allows the user to perform a factory reset on the device.
+- **Wipe (Samsung Knox only)** - Allows the user to perform a [wipe](devices-wipe.md) on the device.
 - **Geolocation (Samsung Knox only)** - Allows the device to utilize location information.
 - **Power off (Samsung Knox only)** - Allows the user to power off the device.<br>If disabled, **Number of sign-in failures before wiping device** cannot be set.
 - **Screen capture (Samsung Knox only)** - Lets the user capture the screen contents as an image.

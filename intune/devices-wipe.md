@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Remove company data on devices using Microsoft Intune - Azure | Microsoft Docs
-description: Remove company data on a device or do a factory reset on an Android, Android work profile, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
+title: Retire or wipe devices using Microsoft Intune - Azure | Microsoft Docs
+description: Retire or wipe a device on an Android, Android work profile, iOS, macOS, or Windows device using Microsoft Intune. Also delete a device from Azure Active Directory.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/10/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,40 +26,40 @@ ms.custom: intune-azure
 
 ---
 
-# Remove devices by using factory reset, removing company data, or manually unenrolling the device
+# Remove devices by using wipe, retire, or manually unenrolling the device
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-By using the **Remove company data** or **Factory reset** actions, you can remove devices from Intune that are no longer needed, being repurposed, or missing. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
+By using the **Retire** or **Wipe** actions, you can remove devices from Intune that are no longer needed, being repurposed, or missing. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.
 
 > [!NOTE]
-> Before you remove a user from Azure Active Directory (Azure AD), use the **Factory reset** or **Remove company data** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer issue a factory reset or remove company data for those devices.
+> Before you remove a user from Azure Active Directory (Azure AD), use the **Wipe** or **Retire** actions for all devices that are associated with that user. If you remove users that have managed devices from Azure AD, Intune can no longer wipe or retire those devices.
 
-## Factory reset
+## Wipe
 
-The **Factory reset** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
+The **Wipe** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
 
-|Factory reset action|**Retain enrollment state and user account**|Removed from Intune management|Description|
+|Wipe action|**Retain enrollment state and user account**|Removed from Intune management|Description|
 |:-------------:|:------------:|:------------:|------------|
-|**Factory Reset**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
-|**Factory Reset**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
+|**Wipe**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
+|**Wipe**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
 
 The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
 
 MDM policies will be reapplied the next time the device connects to Intune.
 
-A factory reset is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Factory reset**. Data on the device cannot be recovered.
+A wipe is useful for resetting a device before you give the device to a new user, or when the device has been lost or stolen. Be careful about selecting **Wipe**. Data on the device cannot be recovered.
 
-### Factory reset a device
+### Wiping a device
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices** > **All devices**.
-4. Select the name of the device that you want to factory reset.
-5. In the pane that shows the device name, select **Factory reset**.
+4. Select the name of the device that you want to wipe.
+5. In the pane that shows the device name, select **Wipe**.
 6. For Windows 10 version 1709 or later, you also have the **Retain enrollment state and user account** option. 
     
-    |Retained during a factory reset|Not retained|
+    |Retained during a wipe |Not retained|
     | -------------|------------|
     |User accounts associated with the device|User files|
     |Machine state \(domain join, Azure AD-joined)| User-installed apps \(store and Win32 apps)|
@@ -70,17 +70,17 @@ A factory reset is useful for resetting a device before you give the device to a
     |User autologon|| 
     
          
-7. To confirm the factory reset, select **Yes**.
+7. To confirm the wipe, select **Yes**.
 
-If the device is on and connected, the **Factory reset** action propagates across all device types in less than 15 minutes.
+If the device is on and connected, the **Wipe** action propagates across all device types in less than 15 minutes.
 
-## Remove company data
+## Retire
 
-The **Remove company data** action removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. The device is removed from Intune management. This happens the next time the device checks in and receives the remote **Remove company data** action.
+The **Retire** action removes managed app data (where applicable), settings, and email profiles that were assigned by using Intune. The device is removed from Intune management. This happens the next time the device checks in and receives the remote **Retire** action.
 
-**Remove company data** leaves the user's personal data on the device.  
+**Retire** leaves the user's personal data on the device.  
 
-The following tables describe what data is removed, and the effect of the **Remove company data** action on data that remains on the device after company data is removed.
+The following tables describe what data is removed, and the effect of the **Retire** action on data that remains on the device after company data is removed.
 
 ### iOS
 
@@ -116,11 +116,11 @@ The following tables describe what data is removed, and the effect of the **Remo
 
 ### Android work profile
 
-Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Factory reset is not supported for Android work profiles.
+Removing company data from an Android work profile device removes all data, apps, and settings in the work profile on that device. The device is retired from management with Intune. Wipe is not supported for Android work profiles.
 
 ### Android enterprise kiosk devices
 
-You can only factory reset Android kiosk devices. You can't remove company data from Android kiosk devices.
+You can only wipe kiosk devices. You can't retire Android kiosk devices.
 
 
 ### macOS
@@ -143,16 +143,16 @@ You can only factory reset Android kiosk devices. You can't remove company data 
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|Certificates are removed and revoked.|Not supported.|Certificates are removed and revoked.|
 |Email|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows.|Not supported.|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows. Removes mail accounts that were provisioned by Intune.|
-|Azure AD unjoin|No.|No.|The Azure AD record is removed.|Not applicable. On Windows 10, you can't remove company data for Azure AD-joined devices.|
+|Azure AD unjoin|No.|No.|The Azure AD record is removed.|Not applicable. On Windows 10, you can't retire Azure AD-joined devices.|
 
-### Remove company data
+### Retire
 
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. In the **Devices** pane, select **All devices**.
-3. Select the name of the device from which you want to remove company data.
-4. In the pane that shows the device name, select **Remove company data**. To confirm, select **Yes**.
+3. Select the name of the device that you want to retire.
+4. In the pane that shows the device name, select **Retire**. To confirm, select **Yes**.
 
-If the device is on and connected, the **Remove company data** action propagates across all device types in less than 15 minutes.
+If the device is on and connected, the **Retire** action propagates across all device types in less than 15 minutes.
 
 ## Delete devices from the Intune portal
 
@@ -187,8 +187,8 @@ You might need to delete devices from Azure AD due to communication issues or mi
 If you want to completely remove an Apple DEP device from management by Intune, follow these steps:
 
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
-2. Choose **Devices** > **All devices** > choose the device > **Remove company data**.
-![Screenshot for remove company data](./media/devices-wipe/remove-company-data.png)
+2. Choose **Devices** > **All devices** > choose the device > **Retire**.
+![Screenshot for retire](./media/devices-wipe/retire.png)
 3. Choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose the token > **Devices** > choose the check box for the device > **Delete** > **Yes**.
 ![Screenshot for delete device](./media/devices-wipe/delete-device.png)
 4. Visit [deploy.apple.com](http://deploy.apple.com) and search for the device by its serial number.

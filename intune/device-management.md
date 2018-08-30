@@ -61,8 +61,8 @@ The actions available depend on the device platform, and the configuration of th
 
 - [View device inventory](device-inventory.md)
 - Run the remote device actions:
-	- [Remove company data](devices-wipe.md#remove-company-data)
-	- [Factory reset](devices-wipe.md#factory-reset)
+	- [Retire](devices-wipe.md#retire)
+	- [Wipe](devices-wipe.md#wipe)
 	- [Remote lock](device-remote-lock.md)
 	- [Reset passcode](device-passcode-reset.md)
 	- [Bypass Activation Lock](device-activation-lock-bypass.md) (iOS only)

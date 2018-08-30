@@ -40,11 +40,14 @@ This article shows you how to view all your devices, and their properties in the
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 3. Select **Devices** > **All devices** > select one of your listed devices to open its details:
 
-   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. Select **More** to:
-     - Remove company data
-     - Delete the device
-     - Remote lock the device
-     - Erase
+   - **Overview** shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. You can perform the following actions on the device:
+      - [Retire](devices-wipe.md#retire)
+	    - [Wipe](devices-wipe.md#wipe)
+	    - [Remote lock](device-remote-lock.md)
+	    - [Synchronize device](device-sync.md)
+	    - [Reset passcode](device-passcode-reset.md)
+	    - [Restart](device-restart.md) (Windows only)
+	    - [Fresh Start](device-fresh-start.md) (Windows only)
      - Start a remote assistance session
    - Use **Properties** to assign a [device category you create](device-group-mapping.md), and change ownership of the device to a personal device, or a corporate device.
    - **Hardware** includes many details about the device, including the device ID, the operating system and version, storage space, the model and manufacturer, conditional access settings, and more details.
@@ -70,7 +73,7 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |Detail|Description|  
 |--------------|----------------------|  
 |Name|The name of the device.|
-|Management name|The device name used only in the console. Changing this name won't change hte name on the device.|
+|Management name|The device name used only in the console. Changing this name won't change the name on the device.|
 |UDID|The device's Unique Device identifier.|
 |Intune Device ID|A GUID that uniquely identifies the device.|
 |Serial number|The device's serial number from the manufacturer.|
