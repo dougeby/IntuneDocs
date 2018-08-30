@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -157,9 +157,17 @@ To revoke the license of all VPP apps for a given VPP token, you must first revo
 
 You can renew an Apple VPP token by downloading a new token from Apple Volume Purchase Program portal and updating the existing token in Intune.
 
-## Further information
+## Deleting an iOS VPP app
+
+Currently, you cannot delete an iOS VPP app from Microsoft Intune.
+
+## Additional information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+
+Apple provides direct assistance to create and renew VPP tokens. For more information, see [Distribute content to your users with the Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) as part of Apple's documentation. 
+
+If **Assigned to external MDM** is indicated in the Intune portal, then you (the Admin) must remove the VPP token from the 3rd party MDM before using the VPP token in Intune.
 
 ## Frequently asked questions
 
