@@ -37,7 +37,7 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps** > **App protection Policies**.
+3. In the **Intune** pane, select **Client apps** > **App protection Policies**.
 4. Click **Add a policy** (You can also edit an existing policy). 
 5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
 6. By scrolling down in the Settings pane, you will see a section titled **Access Actions** with an editable table.
