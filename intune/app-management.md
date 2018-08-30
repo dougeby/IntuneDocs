@@ -71,11 +71,11 @@ You can find most app-related information in the **Mobile Apps** workload, which
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
-3. In the **Microsoft Intune** pane, select **Mobile apps**.
+3. In the **Microsoft Intune** pane, select **Client apps**.
 
     ![The "Mobile apps" workload pane](./media/apps-workload.png)
 
-The next four sections describe the options available in the **Mobile apps** pane.
+The next four sections describe the options available in the **Client apps** pane.
 
 ### Manage
 - **Apps**: Select this option to add, view, assign, and monitor the apps that your workforce uses. For more information, see:

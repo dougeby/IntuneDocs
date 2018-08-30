@@ -60,7 +60,7 @@ To set an Android kiosk device for multiple apps, follow these main steps:
 
 1. Browse to the [Managed Home Screen page on Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) and sign in with the same account you use for other managed Google Play apps.
 2. Choose **Approve**.
-3. Go to the [Intune portal](https://portal.azure.com) and choose **Mobile apps** > **Managed Google Play** > **Sync**.
+3. Go to the [Intune portal](https://portal.azure.com) and choose **Client apps** > **Managed Google Play** > **Sync**.
 4. Choose **Apps** > **Managed Home Screen** > **Assignments** > **Add group**.
 5. Under **Assignment type**, choose **Required**.
 6. Choose **Included groups** > **Select groups to include** > choose the device group that you created for your kiosk devices > **Select** > **OK** > **OK** > **Save**.
@@ -70,13 +70,13 @@ To set an Android kiosk device for multiple apps, follow these main steps:
 For each app that you want to be available on the kiosk devices, follow these steps:
 
 1. [Add the app to Intune](store-apps-android.md).
-2. Choose **Mobile apps** > **Apps** > choose the app > **Assignments** > **Add group**.
+2. Choose **Client apps** > **Apps** > choose the app > **Assignments** > **Add group**.
 3. Under **Assignment type**, choose **Required**.
 4. Choose **Included groups** > **Select groups to include** > choose the device group that you created for your kiosk devices > **Select** > **OK** > **OK** > **Save**.
 
 ### Add web links that can be used in kiosk mode
 
-1. Go to the [Intune portal](https://portal.azure.com) and choose **Mobile apps** > **Apps** > **Add**.
+1. Go to the [Intune portal](https://portal.azure.com) and choose **Client apps** > **Apps** > **Add**.
 2. Under **App type**, choose **Web link**.
 3. Choose **Configure** and provide the required information. You don't need to add a Logo image because it will be automatically retrieved from the web site's favicon.ico.
 4. Choose **OK** > **Add**.

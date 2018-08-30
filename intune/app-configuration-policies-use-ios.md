@@ -51,7 +51,7 @@ Once you have selected the included groups for your application configuration po
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Choose the **Mobile apps** workload.
+3. Choose the **Client apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
     - **Name** - The name of the profile that appears in the Azure portal.
