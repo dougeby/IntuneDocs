@@ -137,6 +137,8 @@ When you create an app configuration file, you can specify one or more of the fo
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### Supported XML PList data types
@@ -162,6 +164,7 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{username\}\}—for example, **John Doe**
 - \{\{serialnumber\}\}—for example, **F4KN99ZUG5V2** (for iOS devices)
 - \{\{serialnumberlast4digits\}\}—for example, **G5V2** (for iOS devices)
+- \{\{aaddeviceid\}\}—for example, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## Monitor iOS  app configuration status per device 
 Once a configuration policy has been assigned, you can monitor iOS app configuration status for each managed device. From **Microsoft Intune** in the Azure portal, select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a blade for the device. On the device blade, select **App configuration**.  
