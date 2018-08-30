@@ -32,8 +32,8 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune supports the enrollment of iOS devices using [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) running on a Mac computer. Enrolling with Apple Configurator requires that you USB-connect each iOS device to a Mac computer to set up corporate enrollment. You can enroll devices into Intune with Apple Configurator in two ways:
-- **Setup Assistant enrollment** - Factory resets the device and prepares it to enroll during Setup Assistant.
-- **Direct enrollment** - Does not factory reset the device and enrolls the device through iOS settings. This method only supports devices with **no user affinity**.
+- **Setup Assistant enrollment** - Wipes the device and prepares it to enroll during Setup Assistant.
+- **Direct enrollment** - Does not wipe the device and enrolls the device through iOS settings. This method only supports devices with **no user affinity**.
 
 Apple Configurator enrollment methods can't be used with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
@@ -139,7 +139,7 @@ The devices are now ready for corporate enrollment. Turn off the devices and dis
 After users receive their devices, they must complete Setup Assistant. Devices configured with user affinity can install and run the Company Portal app to download apps and manage devices.
 
 ## Direct enrollment
-When you directly enroll iOS devices with Apple Configurator, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for directly enrolled devices. This method does not do a factory reset of the device.
+When you directly enroll iOS devices with Apple Configurator, you can enroll a device without acquiring the device's serial number. You can also name the device for identification purposes before Intune captures the device name during enrollment. The Company Portal app is not supported for directly enrolled devices. This method does not wipe the device.
 
 Apps requiring user affiliation, including the Company Portal app used for installing line-of-business apps, cannot be installed.
 
