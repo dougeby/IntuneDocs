@@ -47,7 +47,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ## Week of August 27, 2018
 
-<<<<<<< HEAD
 ### App management
 
 #### Packet tunnel support for iOS per-app VPN profiles for custom and Pulse Secure connection types <!-- 1520957 -->
