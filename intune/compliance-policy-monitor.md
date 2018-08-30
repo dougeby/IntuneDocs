@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -69,7 +69,7 @@ Descriptions of the different device compliance policy states:
 
   - Learn more about [Actions for noncompliant devices](actions-for-noncompliance.md).
 
-- **Not evaluated**: NEED A DESCRIPTION
+- **Not evaluated**: An initial state for newly enrolled devices. Or, devices that aren't assigned compliance policy and don't have a trigger to check for compliance.
 
 - **Not-compliant:** The device failed to apply one or more device compliance policy settings. Or, the user hasn’t complied with the policies.
 
