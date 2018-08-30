@@ -184,7 +184,7 @@ When you remove the device from the Azure AD group, the eSIM profile is also rem
 2. Go to the Azure AD group, and remove the device from the group.
 3. When the removed device contacts Intune, the updated policy is evaluated, and the eSIM profile removed.
 
-The eSIM profile is also removed when the device is unenrolled by the user, or when the [remove company data](devices-wipe.md#remove-company-data) or [reset device remote action](devices-wipe.md#factory-reset) runs on the device.
+The eSIM profile is also removed when the device is [retired](devices-wipe.md#retire) or unenrolled by the user, or when the [reset device remote action](devices-wipe.md#wipe) runs on the device.
 
 > [!NOTE]
 > Removing the profile may not stop billing. Contact your mobile operator to check the billing status for your device.
