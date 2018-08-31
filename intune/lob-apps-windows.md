@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,19 +36,15 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload, select **Manage** > **Apps**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.
 6. In the **Add app** pane, select **Line-of-business app**.
 
 ## Step 2: Configure the app package file
 
 1. In the **Add app** pane, select **App package file**.
-2. In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension of **.msi**, **.appx**, **.appxbundle**, **.msix** or **.msixbundle**.
-
-    > [!NOTE]
-    > The file extensions for Windows apps include **.msi**, **.appx**, **.appxbundle**, **.msix** and **.msixbundle**.  
-
+2. In the **App package file** pane, select the browse button. Then select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.
 3. When you're finished, select **OK**.
 
 

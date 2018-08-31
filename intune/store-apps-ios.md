@@ -43,8 +43,8 @@ You can assign apps by using this method only if they are free of charge in the 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. In the **Apps** pane, select **Add**.
 6. In the **App type** list, under the **Store app** types, select **iOS**.
 7. Select **Search the App Store**.

@@ -96,7 +96,7 @@ Apps managed by the Intune App SDK are able to send SMS messages.
 
 ### App install report updated to include Install Pending status <!-- 1249446 -->  
 
-The **App install status** report, accessible for each app through the **App** list in the **Mobile apps** workload, now contains an **Install Pending** count for Users and Devices.
+The **App install status** report, accessible for each app through the **App** list in the **Client apps** workload, now contains an **Install Pending** count for Users and Devices.
 
 ### iOS 11 app inventory API for Mobile Threat Detection <!-- 1391759 -->
 
