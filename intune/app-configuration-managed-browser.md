@@ -113,7 +113,7 @@ SSO in the Intune Managed Browser requires your device to be registered by the M
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3.  On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
+3.  On the **Client apps** blade of the Manage list, choose **App configuration policies**.
 4.  On the **App configuration policies** blade, choose **Add**.
 5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
 6.  For **Device enrollment** type, choose **Managed apps**.
@@ -131,7 +131,7 @@ SSO in the Intune Managed Browser requires your device to be registered by the M
 
 You assign the settings to Azure AD groups of users. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Mobile apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
+1. On the **Client apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
 3. On the next blade, choose **Assignments**.
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.

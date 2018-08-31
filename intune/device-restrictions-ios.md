@@ -86,7 +86,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - Pair with Apple Watch 
 
 > [!NOTE]
-> Apple confirmed that certain settings will move to supervised-only in 2018. We recommend taking this into consideration when using these settings instead of waiting for Apple to migrate them to supervised-only:
+> Apple confirmed that certain settings will move to supervised-only in 2019. We recommend taking this into consideration when using these settings instead of waiting for Apple to migrate them to supervised-only:
 > - App installation by end users
 > - App removal
 > - FaceTime
@@ -96,6 +96,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 > - iCloud documents and data
 > - Multiplayer gaming
 > - Add Game Center friends
+> - Siri
 
 ## Password
 -   **Password** - Require the end user to enter a password to access the device.

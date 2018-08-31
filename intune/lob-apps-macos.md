@@ -64,8 +64,8 @@ You must download an external tool to pre-process your *.pkg* files before you c
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Mobile apps**.
-4. In the **Mobile apps** workload, choose **Manage** > **Apps**.
+3. On the **Intune** pane, choose **Client apps**.
+4. In the **Client apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.
 6. In the **Add App** pane, choose **Line-of-business app**.
 

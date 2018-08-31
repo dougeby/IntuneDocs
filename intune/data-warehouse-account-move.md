@@ -47,7 +47,7 @@ Some trend charts in your view of the Azure portal will reset. You may back up t
 3. Save the report locally.
  
 ### App Protection reports  
-1. In the Azure portal, navigate to **Microsoft Intune** -> **Mobile Apps** -> **App protection status**.
+1. In the Azure portal, navigate to **Microsoft Intune** -> **Client Apps** -> **App protection status**.
 2. Click the download icon ( ⤓ ) to save each report.
 
 ### Device Configuration charts 

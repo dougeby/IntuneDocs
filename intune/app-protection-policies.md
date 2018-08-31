@@ -41,7 +41,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 For information about adding your organization's line-of-business (LOB) apps to Microsoft Intune to prepare for app protection policies, see [Add apps to Microsoft Intune](apps-add.md).
 
 ##  Create an app protection policy
-1. In the **Mobile apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
+1. In the **Client apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Choose **Add a policy**.
 
    ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
@@ -129,7 +129,7 @@ In many organizations it’s common to allow end users to use both Intune Mobile
 
 Because Intune app protection policies are targeted to a user’s identity, the protection settings for a user traditionally apply to both enrolled (MDM managed) and non-enrolled devices (no MDM). Therefore, you can target an Intune app protection policy to either Intune enrolled or un-enrolled iOS and Android devices. You can have one protection policy for un-managed devices in which strict data loss prevention (DLP) controls are in place, and a separate protection policy for MDM managed devices, where the DLP controls may be a little more relaxed. 
 
-To create these policies, browse to **Mobile apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
+To create these policies, browse to **Client apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
 
 For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
