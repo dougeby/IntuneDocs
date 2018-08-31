@@ -87,8 +87,8 @@ This feature applies to:
 When you create an iOS VPN device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **iOS** platform > **VPN** profile type), there are several connection types, including Cisco, Citrix, and more. This update adds Zscaler as a connection type. 
 [VPN settings for devices running iOS](vpn-settings-ios.md) lists the available connection types.
 
-#### PKCS certificate profiles and FIPS mode for Enterprise Wi-Fi profiles for Windows 10 <!-- 1879077 eeready -->
-You can use PKCS certificates and to enable Federal Information Processing Standards (FIPS) mode for Enterprise Wi-Fi profiles for Windows 10 in the Intune Azure portal. Be sure FIPS mode is enabled on your Wi-Fi infrastructure if you enable it in your Wi-Fi profiles.
+#### FIPS mode for Enterprise Wi-Fi profiles for Windows 10 <!-- 1879077 eeready -->
+You can now enable Federal Information Processing Standards (FIPS) mode for Enterprise Wi-Fi profiles for Windows 10 in the Intune Azure portal. Be sure FIPS mode is enabled on your Wi-Fi infrastructure if you enable it in your Wi-Fi profiles.
 [Wi-Fi settings for Windows 10 and later devices in Intune](wi-fi-settings-windows.md) shows you how to create a Wi-Fi profile.
 
 #### Control S-mode on Windows 10 and later devices - public preview <!-- 1958649 -->
