@@ -59,8 +59,8 @@ Before you start, get a VPP token from Apple and upload it to your Intune accoun
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Mobile apps**.
-1.  In the **Mobile apps** workload, choose **Setup** > **iOS VPP Tokens**.
+3. On the **Intune** pane, choose **Client apps**.
+1.  In the **Client apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens pane, click **Create**.
 3.  On the **New VPP Token** pane, specify the following information:
 	- **VPP token file** - Ensure you have signed for the Volume Purchase Program for Business or the Volume Purchase Program for Education. Then, download the Apple VPP token for your account and select it here.

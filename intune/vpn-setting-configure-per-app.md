@@ -151,7 +151,7 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Choose **Mobile apps**.
+3. Choose **Client apps**.
 4. Click **Apps**.
 5. Select the app from the list of apps.
 6. Click **Assignments.**

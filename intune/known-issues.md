@@ -63,7 +63,7 @@ You cannot view status information for policies that were migrated from the Azur
 ### Multiple app install prompts for certain VPP apps
 You may see multiple app install prompts for certain VPP apps which are already installed on end user devices. This issue occurs if you have the **Automatic app updates** option set to **On** for the VPP token that you have uploaded to the Intune Azure portal.    
 
-To workaround this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Mobile apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
+To workaround this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Client apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
 
 This is a known issue in the current release. We have an upcoming fix which will resolve this issue. When the fix is implemented, your users will no longer see multiple app install prompts.
 

@@ -87,7 +87,7 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3.	On the **Intune** pane, choose **Mobile apps** > **iOS VPP tokens** under **Setup**.
+3.	On the **Intune** pane, choose **Client apps** > **iOS VPP tokens** under **Setup**.
 4.  On the list of VPP tokens pane, select **Create**.
 5. On the **Create VPP token** pane, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
@@ -108,7 +108,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1.	On the **Intune** pane, choose **Mobile apps** > **Apps** under **Manage**.
+1.	On the **Intune** pane, choose **Client apps** > **Apps** under **Manage**.
 2.	On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
 3.	On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
 5.	For each group you selected, choose the following settings:

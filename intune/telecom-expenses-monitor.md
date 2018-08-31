@@ -112,9 +112,9 @@ These categories will be shown to users during enrollment. Depending on which ca
 
 Follow these steps to create the Datalert app in Intune for each platform. iOS is used as an example in these steps.
 
-1. On the **Intune** pane of the [Azure portal](https://portal.azure.com), choose **Mobile apps**.
+1. On the **Intune** pane of the [Azure portal](https://portal.azure.com), choose **Client apps**.
 
-2. On the **Mobile apps** pane, choose **Manage** > **Apps**.
+2. On the **Client apps** pane, choose **Manage** > **Apps**.
 
 3. Select **Add** to add an app.
 
