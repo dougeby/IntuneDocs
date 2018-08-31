@@ -34,7 +34,7 @@ For example, create a scope tag called “Engineering Department” and assign i
 
 ## To create a scope tag
 
-Choose **Intune roles** > **Scope (tags)** > **Create**.
+Choose **Roles** > **Scope (tags)** > **Create**.
 
 ## To add a scope tag to a configuration profile
 
@@ -42,7 +42,7 @@ Choose **Device configuration** > **Profiles** > choose a profile > **Properties
 
 ## To assign a scope tag to a role
 
-Choose **Intune roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
+Choose **Roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
 
 ## Next steps
 

@@ -57,7 +57,7 @@ This capability will be more relevant after you've added more content, like grou
 
 ## Using services
 
-Whenever you open Intune or any other service in Azure, the service is displayed in a **pane**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Mobile apps**, all appear in a full screen pane. When you select the workload, it opens that pane in the full page. Other panes slide out from the right side of the pane when they open, and collapse underneath the main pane that they came from.
+Whenever you open Intune or any other service in Azure, the service is displayed in a **pane**. Some of the first workloads you use in Intune, like **Users**, **Groups**, and **Client apps**, all appear in a full screen pane. When you select the workload, it opens that pane in the full page. Other panes slide out from the right side of the pane when they open, and collapse underneath the main pane that they came from.
 
 ## Next steps
 

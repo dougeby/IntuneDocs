@@ -84,7 +84,7 @@ The following roles are built into Intune and you can assign them to groups with
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Intune roles**, then select **All roles**.
+3. On the **Intune** pane, choose **Roles** > **All roles**.
 1. On the **Intune roles - All roles** pane, choose the built-in role you want to assign.
 
 2. On the <*role name*> - **Overview** pane, choose **Manage**, then **Assignments**.
@@ -119,17 +119,15 @@ You can create a custom role that includes any permissions required for a specif
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-3. Choose **Intune**, the Intune Dashboard opens, choose **Intune roles**.
+3. Choose **Intune** > **Roles** > **All roles** > **Add custom**.
 
-4. On the **Intune roles** pane, choose **All roles**, choose **Add custom**.
+4. On the **Add Custom Role** pane, enter a name and description for the new role, then click **Permissions**.
 
-5. On the **Add Custom Role** pane, enter a name and description for the new role, then click **Permissions**.
+5. On the **Permissions** pane, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
-3. On the **Permissions** pane, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
+6. When you are done, choose **OK**.
 
-4. When you are done, choose **OK**.
-
-5. On the **Add Custom Role** pane, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** pane.
+7. On the **Add Custom Role** pane, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** pane.
 
 ### To assign a custom role
 

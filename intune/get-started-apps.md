@@ -44,7 +44,7 @@ Intune lets you add and assign these app types to your corporate devices:
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select **Mobile Apps**, then select **Apps**.
+3. Select **Client Apps**, then select **Apps**.
 4. Select **Add**, then select **iOS** as the **App type**.
 5. Choose **Select app** to display the **Search the App Store** pane.
 6. In the text box, search for an app to assign to the device. Choose the app, then click **Select**.

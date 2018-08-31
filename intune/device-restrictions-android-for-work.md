@@ -47,7 +47,7 @@ This article lists the Microsoft Intune device restrictions settings that you ca
   - **Auto grant**
   - **Auto deny**
 
-	The grant state for permissions can be further defined for specific apps by using an App Configuration policy for an individual app (under **Mobile Apps** > **App configuration policies**).
+	The grant state for permissions can be further defined for specific apps by using an App Configuration policy for an individual app (under **Client Apps** > **App configuration policies**).
 
 - **Add and remove accounts**
 
