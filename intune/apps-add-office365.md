@@ -50,8 +50,8 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. Select **Add**.
 6. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
 

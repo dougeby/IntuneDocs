@@ -1,7 +1,7 @@
 
 1. Sign in to the [Azure portal](https://portal.azure.com).  
 2. Select **All Services** > **Intune**. Intune is in the **Monitoring + Management** section.  
-3. Select **Mobile Apps** > **Apps**.
+3. Select **Client Apps** > **Apps**.
 4. Find and select your app in the list of apps.  
 5. In the **Overview** blade, select **Properties**.  
 6. Select **App package file**.  

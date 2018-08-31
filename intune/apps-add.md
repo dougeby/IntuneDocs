@@ -58,7 +58,7 @@ The following table lists the specific app types and how you can add them in the
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
 
-You can add an app in Microsoft Intune by selecting **Mobile apps** > **Apps** > **Add**. The **Add app** pane is displayed and allows you to select the **App type**. 
+You can add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane is displayed and allows you to select the **App type**. 
 
 >[!TIP]
 > An LOB app is one that you add from an app installation file. For example, to install an iOS LOB app, you add the application by selecting **Line-of-business app** as the **App type** in the **Add app** pane. You then select the app package file (extension .ipa). These types of apps are typically written in-house.
@@ -144,8 +144,8 @@ When you add an app to Intune, you are given the option to select the category y
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Setup**, select **App categories**.  
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Setup**, select **App categories**.  
     The **App categories** pane displays a list of current categories. 
 5. Do either of the following:
 	- To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
