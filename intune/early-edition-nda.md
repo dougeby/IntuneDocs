@@ -118,10 +118,10 @@ Based on feedback from customers, the way updates are made to on-premises connec
 ### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
 When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
 
-### Check for SCCM compliance <!-- 2192052 -->
-A future update will include a new System Center Configuration Manager (SCCM) compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). SCCM sends signals to Intune compliance. Using the Intune setting, you can require all SCCM signals to return "compliant".
+### Check for Configuration Manager compliance <!-- 2192052 -->
+A future update will include a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). Configuration Manager sends signals to Intune compliance. Using the Intune setting, you can require all Configuration Manager signals to return "compliant".
 
-For example, you require all software updates to be installed on devices. In SCCM, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device will be non-compliant in Intune.
+For example, you require all software updates to be installed on devices. In Configuration Manager, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device will be non-compliant in Intune.
 
 Applies to Windows 10 and later
 
