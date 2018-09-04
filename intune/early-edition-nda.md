@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 09/4/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - August 2018
+# The early edition for Microsoft Intune - September 2018
 
 > [!Note]
 > NDA notification: The following changes are under development for Intune. This information is shared under NDA on a very limited basis. Do not post any of this information on social media or public websites such as Twitter, UserVoice, Reddit, and so on. 
@@ -42,9 +42,54 @@ This page is updated periodically. Check back for additional updates.
  
 ## Intune in the Azure portal
 
+<!-- 1809 start -->
+
+### User account access of Intune apps on managed Android and iOS devices <!-- ! 1248496  -->
+
+As the Microsoft Intune admin, you'll be able to control which user accounts are added to Microsoft Office applications on managed devices. You'll be able to limit access to only allowed organization user accounts and block personal accounts on enrolled devices. 
+
+### Create DNS suffixes in VPN configuration profiles on devices running Windows 10 <!-- 1333668 -->
+When you create a VPN device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** platform > **VPN** profile type), you enter some DNS settings. You'll also be able too enter multiple **DNS suffixes** in Intune. When using DNS suffixes, you can search for a network resource using its short name, instead of the fully qualified domain name (FQDN). This update also lets you change the order of the DNS suffixes in Intune.
+[Windows 10 VPN settings](vpn-settings-windows-10.md#dns-settings) lists the current DNS settings.
+Applies to: Windows 10 devices
+
+### Support for always-on VPN for Android enterprise work profiles <!-- 1333705 -->
+You'll be able to use Always-on VPN connections on Android enterprise devices with managed work profiles. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
+The Always-on VPN setting will be in **Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **Device restrictions** under **Work Profiles Only** for Profile type > **Connectivity** settings. 
+
+### Outlook Mobile app configuration policy <!--1828527 -->
+You'll be able to create an Outlook Mobile app configuration policy for iOS. Additional configuration settings will be added as they are enabled for the Outlook Mobile app.
+
+### Remotely lock noncompliant devices <!-- 2064495 -->
+When a device isn't compliant, you'll be able to create an action on the compliance policy that locks the device remotely. In Intune > **Device compliance**, create a new policy, or select an existing policy. Select **Actions for noncompliance** > **Add**, and choose to remotely lock the device.
+Supported on: 
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile 
+- Windows Phone 8.1 and later 
+
+### Intune APP data transfer settings on iOS MDM enrolled devices <!-- 2244713 -->
+You'll be able to separate the control of Intune APP data transfer settings on iOS MDM enrolled devices from specifying the enrolled user's identity. Admins not using the IntuneMAMUPN will not observe a behavior change. When this functionality is available, admins using the IntuneMAMUPN to control data transfer behavior on enrolled devices should review the new settings and update their APP settings as needed.
+
+### Use a pre-shared key in a Windows 10 Wi-Fi profile <!-- 2662938 -->
+You'll be able to use a pre-shared key (PSK) with the WPA/WPA2-Personal security protocol to authenticate a Wi-Fi configuration profile for Windows 10.
+Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
+
+### Autopilot device sync frequency increasing to every 12 hours <!-- 2753673 -->
+Autopilot devices will synchronize every 12 hours instead of every 24 hours.
+
+### Apply Autopilot profile to enrolled Win 10 devices not already registered for Autopilot <!-- 1558983 -->
+You can apply Autopilot profiles to enrolled Win 10 devices that have not already been registered for Autopilot. In the Autopilot profile, choose the **Convert all targeted devices to Autopilot** option to automatically register non-Autopilot devices with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will provision it. 
+
+### Create and assign multiple Enrollment Status  Page profiles to Azure AD groups <!-- 2526564-->
+You'll be able to create and assign multiple Enrollment Status Page profiles to Azure ADD groups.
+
+### Intune landing page updates and node rename <!--2867309 -->
+Updates to the Intune landing page will include new and changed monitoring tiles and charts for better data visualization. The **Mobile apps** node will change to **Client apps**.
+
+
 <!-- 1808 start -->
-
-
 
 ### Apple VPP token used by another MDM <!-- 1488946 -->
 Intune will detect and show details if an Apple volume-purchased program (VPP) token is in use by both Intune and another MDM.
@@ -55,16 +100,6 @@ When security updates are released, Apple typically leaves the version number as
 
 ### Retired devices in the device compliance dashboard <!-- 1981119 -->
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
-
-### New user experience update for the Company Portal website <!--2000968 -->
-New features will be added, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
-- Streamlined workflows across all device platforms
-- Improved device identification and enrollment flows
-- More helpful error messages
-- Friendlier language, less tech jargon
-- Ability to share direct links to apps
-- Improved performance for large app catalogs
-- Increased accessibility for all users
 
 ### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
 When you create a macOS enrollment profile, you'll be able to configure it to skip any of the following screens when a user goes through the Setup Assistant:
@@ -80,22 +115,8 @@ Based on feedback from customers, the way updates are made to on-premises connec
 
 <!-- 1807 start -->
 
-### More sync opportunities in the Company Portal app for Windows <!-- 2683177 -->
-The Company Portal app for Windows is adding a device sync action to the Windows taskbar and Start menu jump lists. Click from either locations to quickly sync your devices and get access to corporate resources.  
-
-### Reset device passcodes from Company Portal app for Windows 10 <!-- 2101282 --> 
-Your employees will soon be able to reset their device's PIN or passcode directly from the Company Portal app for Windows 10. This functionality will be available on both remote and local Intune-managed devices that support passcode resets. Depending on the type of device, a request made for a remote device will either remove the device's current passcode or create a temporary passcode. Users that request a reset for a local device will be redirected to the device's Settings app.  
-
-### New browsing experiences in the Company portal app for Windows <!-- 2317227 -->  
-When browsing or searching for apps in the Company Portal app for Windows, you'll be able to toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date, and installation status.  
-
-The **Apps** page will introduce an **Installed** view that lets you see details about completed and in-progress app installations. Want to share feedback or thoughts on the new changes? Send us your feedback in the Company Portal app.
-
 ### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
 When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
-
-### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
-You'll be able to use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you create or edit an enrollment profile, specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
 
 ### Check for SCCM compliance <!-- 2192052 -->
 A future update will include a new System Center Configuration Manager (SCCM) compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). SCCM sends signals to Intune compliance. Using the Intune setting, you can require all SCCM signals to return "compliant".
@@ -111,52 +132,29 @@ If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal
 A confirmation will be required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
 
 #### Additional security settings for Windows installer <!-- 2282430 -->
-You will be able to allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You will be able to direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you will be able to enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items will not be indexed and will not show up in the results in Cortana or file explorer. The functionality for these options will be disabled by default. 
+You'll be able to allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You'll be able to direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you'll be able to enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items will not be indexed and will not show up in the results in Cortana or file explorer. The functionality for these options will be disabled by default. 
 
 <!-- 1806 start -->
 
 ### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
 On iOS devices, Intune admins will be able to block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user will receive a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, will be blocked and device users will not see them. Device users will only see the dialog message once. 
 
-### Require non-biometric passcode on app launch and timeout <!-- 1506985 -->
-
-By requiring a non-biometric passcode on app launch and after admin-specified timeout, Intune will provide improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings will affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings will enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Mobile apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings.
-
 ### Office 365 Pro Plus language packs <!-- 1833450 -->
-As the Intune admin, you will be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
-
-### Preview a new user experience update for the Company Portal website <!--2000968 -->
-We’re adding new features, based on feedback from customers, to the Company Portal website/iOS app catalog. You'll experience a significant improvement in existing functionality and usability from your Android, iOS, and Windows devices. Areas of the site--such as device details, feedback and support, and device overview--will receive a new, modern, responsive design. You'll also see:
-
-- Streamlined workflows across all device platforms
-- Improved device identification and enrollment flows
-- More helpful error messages
-- Friendlier language, less tech jargon
-- Ability to share direct links to apps
-- Improved performance for large app catalogs
-- Increased accessibility for all users
-
-The update is currently in preview. You can register to join the preview at http://aka.ms/webcpflighting
+As the Intune admin, you'll be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Mobile apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
 
 <!-- 1805 start -->
 
-### Require non-biometric passcode on cold app launch and timeout <!-- 1506985 --> 
+### Require non-biometric after specified timeout <!-- 1506985 --> 
 
-By requiring a non-biometric passcode on cold app launch and after admin-specified timeout, Intune will provide improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings will affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings will enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Mobile apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings.
+By requiring a non-biometric PIN after admin-specified timeout, Intune will provide improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings will affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings will enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Mobile apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings.
 
 <!-- 1803 start -->
-
-### Ability to deploy required line-of-business (LOB) apps to All Users on Windows 10 Desktop devices <!-- 1627835 RS4 -->
-Customers will be able to deploy required line-of-business Windows 10 apps to install in device contexts. This will enable these apps to be available to all users on the device. This is only applicable on Windows 10 Desktop devices.
 
 ### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
 
 The Help and Feedback experience on the Company Portal app for Android will be updated to align with best practices for Android apps. The Company Portal app for Android will be updated over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
-<!-- the following are present prior to 1801 -->
 
-### App Protection Policies  <!-- 679615 -->
-Intune App Protection Policies will offer the ability to create global, default policies to quickly enable protection across all users in the entire tenant.
 
 <!-- the following are present prior to 1711 -->
 
