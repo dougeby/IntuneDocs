@@ -113,7 +113,7 @@ SSO in the Intune Managed Browser requires your device to be registered by the M
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3.  On the **Mobile apps** blade of the Manage list, choose **App configuration policies**.
+3.  On the **Client apps** blade of the Manage list, choose **App configuration policies**.
 4.  On the **App configuration policies** blade, choose **Add**.
 5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
 6.  For **Device enrollment** type, choose **Managed apps**.
@@ -131,7 +131,7 @@ SSO in the Intune Managed Browser requires your device to be registered by the M
 
 You assign the settings to Azure AD groups of users. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Mobile apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
+1. On the **Client apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
 3. On the next blade, choose **Assignments**.
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
@@ -190,7 +190,7 @@ Using the procedure to create an Edge or Managed Browser app configuration, supp
 
 |                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | The value for this configuration is a list of bookmarks. Each bookmark consists of the bookmark title, and the bookmark URL. Separate the title, and URL with the <strong>&#124;</strong> character.<br><br>Example:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## How to specify allowed and blocked URLs for a protected browser
 
@@ -198,7 +198,7 @@ Using the procedure to create an Edge or Managed Browser app configuration, supp
 
 |Key|Value|
 |-|-|
-|Choose from:<br><ul><li>Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specify blocked URLs (all other sites can be accessed):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|Choose from:<br><ul><li>Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Specify blocked URLs (all other sites can be accessed):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe **&#124;** character.<br><br>Examples:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >Do not specify both keys. If both keys are targeted to the same user, the allow key is used, as it's the most restrictive option.

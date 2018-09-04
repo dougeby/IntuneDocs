@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -83,7 +83,10 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **EAP-TTLS**
   - **Protected PEAP** (PEAP)
 
-    - **EAP-TLS**, **EAP-TTLS**, and **PEAP** additional settings
+    **EAP-TLS, EAP-TTLS, and PEAP additional settings**:
+    
+    > [!NOTE]
+    > Currently, only SCEP certificate profiles are supported when using an EAP type. PKCS certificate profiles are not supported. Anytime a user is asked to enter a certificate, be sure to choose an SCEP certificate.
 
       - **Server Trust**  
 
