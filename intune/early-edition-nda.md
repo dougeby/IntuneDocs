@@ -57,8 +57,8 @@ Applies to: Windows 10 devices
 You'll be able to use Always-on VPN connections on Android enterprise devices with managed work profiles. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
 The Always-on VPN setting will be in **Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **Device restrictions** under **Work Profiles Only** for Profile type > **Connectivity** settings. 
 
-### Outlook Mobile app configuration policy <!--1828527 -->
-You'll be able to create an Outlook Mobile app configuration policy for iOS. Additional configuration settings will be added as they are enabled for the Outlook Mobile app.
+### Outlook for iOS and Android app configuration policy <!--1828527 -->
+You'll be able to create an Outlook for iOS and Android app configuration policy for iOS. Additional configuration settings will be added as they are enabled for Outlook for iOS and Android.
 
 ### Remotely lock noncompliant devices <!-- 2064495 -->
 When a device isn't compliant, you'll be able to create an action on the compliance policy that locks the device remotely. In Intune > **Device compliance**, create a new policy, or select an existing policy. Select **Actions for noncompliance** > **Add**, and choose to remotely lock the device.
