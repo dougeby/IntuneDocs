@@ -43,8 +43,8 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**.  
     Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. In the **Apps** pane, select **Add**.
 6. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
 7. Select **Configure**.

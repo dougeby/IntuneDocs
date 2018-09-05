@@ -45,8 +45,8 @@ Before you begin adding Office 365 to macOS devices, understand the following de
 Add Office 365 from the **Apps** pane.
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All Services** > **Monitoring + Management** > **Intune**.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Manage**, select **Apps**. 
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Manage**, select **Apps**. 
 5. Select **Add**.
 6. In the **App type** list, in the **Office 365 Suite** group, select **macOS**.
 7. To get information about the app suite, select **App Suite Information**.  

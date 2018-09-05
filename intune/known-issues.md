@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,6 +38,13 @@ If you want to request a new feature for Intune, consider filing a report on [Us
 
 ## Migration
 
+### Export Azure classic portal compliance policies to recreate these policies in the Intune Azure portal
+
+Compliance policies created in the Azure classic portal will be deprecated. You can review and delete any existing compliance policies, however you can't update them. If you need to migrate any compliance policies to the current Intune Azure portal, you can export the policies as a comma-separated file (.csv file). Then, use the details in the file to recreate these policies in the Intune Azure portal.
+
+> [!IMPORTANT]
+> When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
+
 ### Intune legacy PC client features are only available in the Silverlight console
 
 The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
@@ -56,7 +63,7 @@ You cannot view status information for policies that were migrated from the Azur
 ### Multiple app install prompts for certain VPP apps
 You may see multiple app install prompts for certain VPP apps which are already installed on end user devices. This issue occurs if you have the **Automatic app updates** option set to **On** for the VPP token that you have uploaded to the Intune Azure portal.    
 
-To workaround this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Mobile apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
+To workaround this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Client apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
 
 This is a known issue in the current release. We have an upcoming fix which will resolve this issue. When the fix is implemented, your users will no longer see multiple app install prompts.
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,7 @@ Per-app VPN is currently available for the following providers:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## Prerequisites for per-app VPN
 
@@ -150,7 +151,7 @@ After adding your VPN profile, associate the app and Azure AD group to the profi
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Choose **Mobile apps**.
+3. Choose **Client apps**.
 4. Click **Apps**.
 5. Select the app from the list of apps.
 6. Click **Assignments.**
@@ -192,6 +193,10 @@ With your per-app VPN set-up and associated with your app, verify the connection
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler App
+
+    > [!NOTE]
+    > If you are using the Pulse Secure VPN app, you can choose to use app-layer or packet-layer tunneling. Set the **ProviderType** value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.
 
 ### Connect using the per-app VPN
 

@@ -116,7 +116,9 @@ The Personal Identification Number (PIN) is a passcode used to verify that the c
 
     - **The PIN is shared among apps of the same publisher to improve usability:** On iOS, one app PIN is shared amongst all apps **of the same app publisher**. On Android, one app PIN is shared amongst all apps.
     - **The 'Recheck the access requirements after (minutes)' behaviour after a device reboot:** A "PIN timer" tracks the number of minutes of inactivity that determine when to show the Intune app PIN next. On iOS, the PIN timer is unaffected by device reboot. Thus, device restart has no effect on the number of minutes the user has been inactive from an iOS app with Intune PIN policy. On Android, the PIN timer is reset on device reboot. As such, Android apps with Intune PIN policy will likely prompt for an app PIN regardless of the 'Recheck the access requirements after (minutes)' setting value **after a device reboot**.  
-    - **The rolling nature of the timer associated with the PIN:** Once a PIN is entered to access an app (app A), and the app leaves the foreground (main input focus) on the device, the PIN timer gets reset for that PIN. Any app (app B) that shares this PIN will not prompt the user for PIN entry because the timer has reset. The prompt will show up again once the 'Recheck the access requirements after (minutes)' value is met again. 
+    - **The rolling nature of the timer associated with the PIN:** Once a PIN is entered to access an app (app A), and the app leaves the foreground (main input focus) on the device, the PIN timer gets reset for that PIN. Any app (app B) that shares this PIN will not prompt the user for PIN entry because the timer has reset. The prompt will show up again once the 'Recheck the access requirements after (minutes)' value is met again.
+
+For iOS devices, even if the PIN is shared between apps from different publishers, the prompt will show up again when the **Recheck the access requirements after (minutes)** value is met again for the app that is not the main input focus. So, for example, a user has app _A_ from publisher _X_ and app _B_ from publisher _Y_, and those two apps share the same PIN. The user is focused on app _A_ (foreground), and app _B_ is minimized. After the **Recheck the access requirements after (minutes)** value is met and the user switches to app _B_, the PIN would be required.
 
       >[!NOTE] 
       > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
@@ -141,13 +143,13 @@ IT administrators can deploy an app protection policy that requires app data to 
 - **What gets encrypted?**<br></br> Only data marked as "corporate" is encrypted according to the IT administrator's app protection policy. Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account). For line-of-business apps managed by the Intune App Wrapping Tool, all app data is considered "corporate."
 
 **How does Intune remotely wipe data?**<br></br>
-Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using factory reset or remove company data](devices-wipe.md#factory-reset). For more information about selective wipe using MAM, see [Remove company data](devices-wipe.md#remove-company-data) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
+Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using wipe or reture](devices-wipe.md). For more information about selective wipe using MAM, see [the Retire action](devices-wipe.md#retire) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
-- **What is factory reset?**<br></br> [Factory reset](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
+- **What is wipe?**<br></br> [Wipe](devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
-  > Factory reset can only be achieved on devices enrolled with Intune mobile device management (MDM).
+  > Wipe can only be achieved on devices enrolled with Intune mobile device management (MDM).
 
-- **What is selective wipe for MDM?**<br></br> See [Remove devices - Remove company data](devices-wipe.md#remove-company-data) to read about removing company data.
+- **What is selective wipe for MDM?**<br></br> See [Remove devices - retire](devices-wipe.md#retire) to read about removing company data.
 
 - **What is selective wipe for MAM?**<br></br> Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [How to wipe only corporate data from apps](apps-selective-wipe.md).
 

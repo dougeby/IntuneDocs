@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,9 +87,9 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-1.	On the **Intune** pane, choose **Mobile apps** > **iOS VPP tokens** under **Setup**.
-2.  On the list of VPP tokens pane, select **Create**.
-4. On the **Create VPP token** pane, specify the following information:
+3.	On the **Intune** pane, choose **Client apps** > **iOS VPP tokens** under **Setup**.
+4.  On the list of VPP tokens pane, select **Create**.
+5. On the **Create VPP token** pane, specify the following information:
 	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
 	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
 	- **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
@@ -97,9 +97,10 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
 
 	- **Type of VPP account** - Choose from **Business** or **Education**.
-	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune updates all apps purchased for the specified token through the Intune service when the device checks-in.
-detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
-4. When you are done, select **Create**.
+	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in.
+        > [!NOTE]
+		> Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
+6. When you are done, select **Create**.
 
 The token is displayed in the list of tokens pane.
 
@@ -107,7 +108,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1.	On the **Intune** pane, choose **Mobile apps** > **Apps** under **Manage**.
+1.	On the **Intune** pane, choose **Client apps** > **Apps** under **Manage**.
 2.	On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
 3.	On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
 5.	For each group you selected, choose the following settings:
@@ -157,9 +158,17 @@ To revoke the license of all VPP apps for a given VPP token, you must first revo
 
 You can renew an Apple VPP token by downloading a new token from Apple Volume Purchase Program portal and updating the existing token in Intune.
 
-## Further information
+## Deleting an iOS VPP app
+
+Currently, you cannot delete an iOS VPP app from Microsoft Intune.
+
+## Additional information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
+
+Apple provides direct assistance to create and renew VPP tokens. For more information, see [Distribute content to your users with the Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) as part of Apple's documentation. 
+
+If **Assigned to external MDM** is indicated in the Intune portal, then you (the Admin) must remove the VPP token from the 3rd party MDM before using the VPP token in Intune.
 
 ## Frequently asked questions
 

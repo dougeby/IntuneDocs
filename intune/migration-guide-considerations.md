@@ -31,9 +31,9 @@ ms.suite: ems
 
 There are special migration considerations that may apply depending on your existing MDM provider environment.
 
-## Factory reset for Apple’s Device Enrollment Program (DEP)
+## Wipe for Apple’s Device Enrollment Program (DEP)
 
-The Apple Device Enrollment Program (DEP) sets device configurations that cannot be removed by the end user. To retain the advanced management features of DEP, the device must be returned to the out-of-box (new) state by a factory reset to enroll it into Intune.
+The Apple Device Enrollment Program (DEP) sets device configurations that cannot be removed by the end user. To retain the advanced management features of DEP, the device must be returned to the out-of-box (new) state by wiping it to enroll it into Intune.
 
 To continue using DEP to manage the devices in Intune, [set up iOS device enrollment with Device Enrollment Program](device-enrollment-program-enroll-ios.md).
 

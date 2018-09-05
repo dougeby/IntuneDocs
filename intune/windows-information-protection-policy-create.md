@@ -67,8 +67,8 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **All Services** > **Intune**.
-3. Select **Mobile apps** on the **Microsoft Intune** blade.
-4. Select **App protection policies** on the **Mobile apps** blade.
+3. Select **Client apps** on the **Microsoft Intune** blade.
+4. Select **App protection policies** on the **Client apps** blade.
 5. Select **Add a policy** to display the **Add a policy** blade.
 6. Add the following values:
     - **Name:** Type a name (required) for your new policy.
@@ -79,8 +79,8 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 
 ## To add recommended apps to your protected apps list
 
-1. Select **Mobile apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Mobile apps** blade.
+1. Select **Client apps** on the **Microsoft Intune** blade.
+2. Select **App protection policies** on the **Client apps** blade.
 3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
 4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
@@ -91,8 +91,8 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 ## Add a Store app to your protected apps list
 
 **To add a Store app**
-1. Select **Mobile apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Mobile apps** blade.
+1. Select **Client apps** on the **Microsoft Intune** blade.
+2. Select **App protection policies** on the **Client apps** blade.
 3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
 4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
@@ -104,8 +104,8 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 ## Add a desktop app to your protected apps list
 
 **To add a desktop app**
-1. Select **Mobile apps** on the **Microsoft Intune** blade.
-2. Select **App protection policies** on the **Mobile apps** blade.
+1. Select **Client apps** on the **Microsoft Intune** blade.
+2. Select **App protection policies** on the **Client apps** blade.
 3. On the **App protection policies** blade, choose the policy you want to modify. The **Intune App Protection** blade is displayed.
 4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
@@ -154,7 +154,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 1. Open the [Azure portal](https://portal.azure.com). Choose **All services**. Type **Intune** in the text box filter.
 
-3. Choose **Intune** > **Mobile Apps**.
+3. Choose **Intune** > **Client Apps**.
 
 4. Choose **App protection status** > **Reports** > **Windows Information Protection learning**.  
 

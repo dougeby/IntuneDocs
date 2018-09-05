@@ -41,8 +41,8 @@ In earlier versions of the Intune console, Intune provided several default manag
 To add a built-in app to your available apps in Microsoft Intune, do the following:
 1. Sign in to the Azure portal.
 2. To display the Microsoft Intune pane, select **More Services** > **Monitoring + Management** > **Intune**.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** pane, under **Manage**, select **Apps**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** pane, under **Manage**, select **Apps**.
 5. Select **Add**.
 6. In the **Add** app pane, in the **App type** list, select **Built-In app**.
 7. Select **Select app**.

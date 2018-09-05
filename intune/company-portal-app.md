@@ -35,7 +35,7 @@ The Microsoft Intune company portal is where users access company data and can d
 > [!Tip]		
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.		
 
-Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Mobile apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
+Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Client apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
 
 > [!Note]		
 > The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.	

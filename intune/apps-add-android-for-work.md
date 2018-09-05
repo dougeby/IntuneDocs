@@ -64,18 +64,18 @@ Make sure you have configured Intune and Android work profiles to work together 
 
 ## Sync a Managed Google Play app with Intune
 
-If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Mobile apps** workload, force an immediate sync as follows:
+If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Client apps** workload, force an immediate sync as follows:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** pane, select **Mobile apps**.
-4. In the **Mobile apps** workload pane, under **Setup**, select **Managed Google Play**.
+3. In the **Intune** pane, select **Client apps**.
+4. In the **Client apps** workload pane, under **Setup**, select **Managed Google Play**.
 5. In the **Managed Google Play** pane, choose **Refresh**.  
     The page updates the time and status of the last sync.
-6. In the **Mobile apps** workload pane, select **Apps**.  
+6. In the **Client apps** workload pane, select **Apps**.  
     The newly available Managed Google Play app is displayed.
 
-When the app is displayed in the **App licenses** node of the **Mobile apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
+When the app is displayed in the **App licenses** node of the **Client apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
 
 After you assign the app, it is installed on the devices that you've targeted. The user of the device is not asked to approve the installation.
 
