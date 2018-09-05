@@ -110,13 +110,18 @@ The following table summarizes the assignment status of compliance policies to d
 | complianceStatus   | Compliance status of devices with   mdmStatusKey       |
 | complianceStateKey | Compliance key to match device and   compliance status |
 | complianceStateID  | The ID to match this compliance   state                |
+
+### Example
+
+|      Property      |                       Description                      |
+|:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Unknown.                                                                        |
 |    Compliant       |    Compliant.                                                                      |
 |    Noncompliant    |       Device is non-compliant and is blocked from corporate resources.             |
 |    Conflict        |    Conflict with other rules.                                                      |
 |    Error           |       Error.                                                                       |
 |    ConfigManager   |    Managed by Config Manager.                                                      |
-|    InGracePeriod   |       Device is non-compliant but still has access to corporate resources[SA1]     |
+|    InGracePeriod   |       Device is non-compliant but still has access to corporate resources          |
 
 ## dates
 The **date** entity represents dates that are referenced across multiple data warehouse entities.
