@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 09/04/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -90,21 +90,6 @@ The following table summarizes the assignment status of compliance policies to d
 |    Error      |    Number of   devices that failed to communicate with Intune or Azure AD, and returned an   error message.                                                                          |    3     |
 
 ## compliancePolicyStatusDevicePerPolicyActivities
-
-|      Property     |                                                Description                                               |   Example  |
-|:-----------------:|:--------------------------------------------------------------------------------------------------------:|:----------:|
-| Compliant         | Number of devices that have returned a compliant state for   this policy.                                | ‘4’        |
-| dateKey           | Date key when the summary was   created for the compliance policy.                                       | ‘20180552’ |
-| Error             | Number of devices that have returned an error state for   this policy.                                   | ‘3’        |
-| inGracePeriod     | Number of devices that are not   compliant but that are in the grace-period defined by the admin.        | ‘12’       |
-| IsMostRecentDay   | Whether the data for this date is the most recent day   possible.                                        | ‘false’    |
-| nonCompliant      | Number of devices that have returned a noncompliant state   for this policy.                             | ‘12’       |
-| notApplicable     | Number of devices that this policy is not applicable   for.                                              | ‘131’      |
-| policyKey         | Unique Key to represent the policy in the data warehouse.                                                | ‘1321’     |
-| policyPlatformKey | Key for the platform type of the   compliance policy for which the summary was created.                  | ‘1’        |
-| unknown           | Number of devices that are offline   or failed to communicate with Intune or Azure AD for other reasons. | 0          |
-
-## compliancePolicyStatusDevicePerPolicyActivities
 The following table summarizes the assignment status of compliance policies to devices on a per policy and a per policy type basis. It lists the count of devices found in each compliance state for each assigned compliance policy.
 
 |      Property     |                                                                                      Description                                                                                     |  Example |
@@ -179,6 +164,16 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 | Error     | Number of unique Devices in error state.                                                      | 10       |
 | Failed    | Number of unique Devices in failed state.                                                     | 2        |
 
+## deviceConfigurationProfileUserActivities 
+The **DeviceConfigurationProfileUserActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The **DeviceConfigurationProfileUserActivity** entity lists how many users are in which state on a given day over the last 30 days. 
+
+| Property  | Description  | Example  |
+|------------|----------------------------------------------------------------------------------------------|-----------|
+| DateKey  | Date Key when the Device Configuration Profile check-in was recorded in the data warehouse.  | 20160703  |
+| Pending  | Number of unique Users in pending state.  | 123  |
+| Succeeded  | Number of unique Users in success state.  | 12  |
+| Error  | Number of unique Users in error state.  | 10  |
+| Failed  | Number of unique Users in failed state.  | 2  |
 
 ## devicePropertyHistories
 
@@ -344,81 +339,6 @@ The **IntuneManagementExtensionVersion** entity lists all the versions used by *
 | ExtensionVersionKey | Unique identifier of the IntuneManagementExtension   version. | 1       |
 | ExtensionVersion    | The 4 digit version number.                                   | 1.0.2.0 |
 
-## applicationInstances
-The **applicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
-
-|                                      Property                                      |                                                      Description                                                      |                Example               |
-|:----------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
-| ApplicationInstanceKey                                                             | Unique identifier of the MAM app instance in the data   warehouse - surrogate key.                                    | 123                                  |
-| UserId                                                                             | User Id of the user who has this MAM app installed.                                                                   | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationInstanceId                                                           | Unique identifier of the MAM app instance - similar to   ApplicationInstanceKey, but the identifier is a natural key. | b66bc706-ffff-7437-0340-032819502773 |
-| MamApplicationId                                                                   | Application ID of this MAM app                                                                                        | com.microsoft.groupies-daily.        |
-| ApplicationVersion                                                                 | Application version of this MAM app.                                                                                  | 2                                    |
-| CreatedDate                                                                        | Date when this record of the MAM app instance was created.   Value can be null.                                       | 11/23/2016 0:00                      |
-| Platform                                                                           | Platform of the device on which this MAM app is installed.                                                            | 2                                    |
-| PlatformVersion                                                                    | Platform version of the device on which this MAM app is   installed.                                                  | 2.2                                  |
-| SdkVersion                                                                         | The MAM SDK version that this MAM app was wrapped with.                                                               | 3.2                                  |
-| MamDeviceId                                                                        | Device ID of the device on which this MAM app is   installed.                                                         | b66bc706-ffff-7437-0340-032819502773 |
-| MamDeviceType                                                                      | Device type of the device with which MAM Application   Instance is associated with.                                   | iPhone                               |
-| MamDeviceName                                                                      | Device name of the device on which this MAM app is   installed.                                                       | "MyDevice"                           |
-| IsDeleted                                                                          | Indicates whether this MAM app instance record has been   updated.                                                    | True/False                           |
-| True- this   MAM app instance has a new record with updated fields in this table.  |                                                                                                                       |                                      |
-| False -   the latest record for this MAM app instance.                             |                                                                                                                       |                                      |
-| StartDateInclusiveUtc                                                              | Date and time in UTC when this MAM app instance was   created in the data warehouse.                                  | 11/23/2016 0:00                      |
-| DeletedDateUtc                                                                     | Date and time in UTC when IsDeleted changed to True.                                                                  | 11/23/2016 0:00                      |
-| RowLastModifiedDateTimeUtc                                                         | Date and time in UTC when this MAM app instance was last   modified in the data warehouse.                            | 11/23/2016 0:00                      |
-
-## applications
-The **application** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
-
-|                               Property                               |                                    Description                                    |                Example               |
-|:--------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|:------------------------------------:|
-| mamApplicationKey                                                    | Unique identifier of the MAM app in the data warehouse.                           | 123                                  |
-| mamApplicationName                                                   | Name of the MAM app.                                                              | "Word"                               |
-| mamApplicationId                                                     | Application ID of the MAM app.                                                    | b66bc706-ffff-7437-0340-032819502773 |
-| IsDeleted                                                            | Indicates whether this MAM app record has been updated. True- MAM   app has a new record with updated fields in this table. False- the   latest record for this MAM app.                         | True                           |
-| StartDateInclusiveUTC                                                | Date and time in UTC when this MAM app was created in the   data warehouse.       | 11/23/2016 0:00                      |
-| DeletedDateUTC                                                       | Date and time in UTC when IsDeleted changed to True.                              | 11/23/2016 0:00                      |
-| RowLastModifiedDateTimeUTC                                           | Date and time in UTC when this MAM app was last modified   in the data warehouse. | 11/23/2016 0:00                      |
-
-## checkins
-The **checkin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service.
-
-> [!NOTE]
-> When an app instance checks in multiple times a day, the data warehouse stores it as single check-in.
-
-|          Property         |                                                                                            Description                                                                                            |     Example     |
-|:-------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------:|
-| DateKey                   | Date Key when the MAM app check-in was recorded in the   data warehouse.                                                                                                                          | 20160703        |
-| ApplicationInstanceKey    | Key of the app instance associated with this MAM app   check-in.                                                                                                                                  | 5/2/1900 0:00   |
-| UserKey                   | Key of the user associated with this MAM app check-in.                                                                                                                                            | 1/12/1900 0:00  |
-| MamApplicationKey         | Key of the MAM app that has checked in.                                                                                                                                                           | 1/10/1900 0:00  |
-| DeviceHealthKey           | Key of DeviceHealth associated with this MAM app check-in.                                                                                                                                        | 1/2/1900 0:00   |
-| PlatformKey               | Represents the platform of the device associated with this   MAM app check-in.                                                                                                                    | 1/1/1900 0:00   |
-| EffectiveAppliedPolicyKey | Represents the effective applied policy associated with   the MAM app that has checked in. An effective applied policy results from   merging all policies relevant to a particular app and user. | 5/2/1900 0:00   |
-| LastCheckInDate           | Date and time when this MAM app last checked in. Value can   be null.                                                                                                                             | 11/23/2016 0:00 |
-
-## deviceHealth
-The **deviceHealth** entity represents devices that have Mobile Application Management (MAM) policies deployed to them even if they are jailbroken.
-
-|          Property          |                                                                           Description                                                                           |              Example              |
-|:--------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------:|
-| DeviceHealthKey            | Unique identifier of the device and its associated health   in the data warehouse - surrogate key.                                                              | 1/1/1900 0:00                     |
-| DeviceHealth               | Unique identifier of the device and its associated health   - similar to DeviceHealthKey, but the identifier is a natural key.                                  | 1/1/1900 0:00                     |
-| DeviceHealthName           | Represents the status of the device.   Not available - no information on this device.   Healthy - device is not jailbroken.   Unhealthy - device is jailbroken. | Not   Available Healthy Unhealthy |
-| RowLastModifiedDateTimeUtc | Date and time in UTC when this specific MAM Device Health was last modified in the data warehouse.                                                              | 11/23/2016 0:00                   |
-
-## platforms
-The **platform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
-
-|          Property          |                                     Description                                     |                   Example                   |
-|:--------------------------:|:-----------------------------------------------------------------------------------:|:-------------------------------------------:|
-| PlatformKey                | Unique identifier of the platform in the data warehouse -   surrogate key.          | 123                                         |
-| Platform                   | Unique identifier of the platform - similar to   PlatformKey, but is a natural key. | 123                                         |
-| PlatformName               | Platform   name                                                                     | Not Available  None  Windows  IOS  Android  |
-| RowLastModifiedDateTimeUtc | Date and time in UTC when this platform was last modified   in the data warehouse.  | 11/23/2016 0:00                             |
-
-
 ## managementAgentTypes
 The **managementAgentType** entity represents the agents used to manage a device.
 
@@ -470,7 +390,7 @@ The **ManagementState** entity provides details on the state of the device. Deta
 | 10                | RetireCanceled | Retire   command has been canceled.                                                                             |
 | 11                | Discovered     | The   device is newly discovered by Intune, once it checks in for the first time it   moves to -Managed- state. |
 
-## mobileAppInstallState
+## mobileAppInstallStates
 The MobileAppInstallState entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
 
 |       Property      |                        Description                       |
@@ -514,8 +434,8 @@ The **Policy** entity lists device configuration profiles, app configuration pro
 | DeletedDateUTC             | Date and time in UTC when IsDeleted changed to True.                                                                                                   | 11/23/2016 0:00                      |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when the policy was last modified in   the data warehouse.                                                                        | 11/23/2016 0:00                      |
 
-## PolicyDeviceActivity
-The following table lists the number of devices in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The **PolicyDeviceActivity** entity lists how many devices are in which state on a given day over the last 30 days.
+## policyDeviceActivities
+The following table lists the number of devices in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The **policyDeviceActivity** entity lists how many devices are in which state on a given day over the last 30 days.
 
 |  Property |                                           Description                                           |        Example        |
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
@@ -567,6 +487,22 @@ The following table lists the number of users in the succeeded, pending, failed,
 | PolicyKey | Policy Key, can be joined with Policy to get the   policyName.                                | Windows 10 baseline |
 | Error     | Number of unique Devices in error state.                                                      | 10                  |
 
+## termsAndConditions
+A **termsAndConditions** entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. The contents of  T&C policies are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+
+|    Property        |    Description    |    Example        |
+|----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
+|    termsAndConditionsKey    |    A key corresponding to an entry in the   ‘userTermsAndConditionsAcceptances’ collection    |    123    |
+|    termsAndCondidionsId    |    The ID for this termsAndConditions entry    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
+|    termsAndConditionsVersion    |    The version of this terms and conditions entry    |    1    |
+|    name    |    The name of this termsAndConditions entry.        |    Intune terms of use     |
+|    description    |    The description for these terms and conditions.     |         |
+|    title    |    The title for these terms and conditions.     |    Device management corporate policy        |
+|    summaryOfTerms    |    The summary of terms given to the user.     |    I agree to the terms and conditions.    |
+|    termsAndConditionsBodyText    |    The body of text for these terms and conditions.       |    * Device encryption   * Enforcement of 6 digits PIN    |
+|    isDeleted    |    True or false value for whether this value is   deleted.     |    False    |
+|    startDateInclusiveUTC    |    The start date of these terms and conditions.     |    8/23/2018 4:01:34 AM    |
+|    endDateEclusiveUTC    |    The end date of these terms and conditions.     |    12/31/9999 12:00:00 AM    |
 
 ## userDeviceAssociations
 The **UserDeviceAssociation** entity contains user device associations in your organization.
@@ -593,8 +529,18 @@ The **user** entity collection contains user data. These records include user st
 | DisplayName                | Display name of the user.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Specifies if this user is Intune licensed or not.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indicates whether all of the user's licenses have expired   and whether the user was therefore removed from Intune. For a single record,   this flag does not change. Instead, a new record is created for a new user   state. | True/False                           |
-| IsCurrent                  | Indicates whether this record represents the latest state   of the user. Multiple records may exist for a single user but only one of   them represents the current state.                                                     | True/False                           |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when the record was last modified in   the data warehouse                                                                                                                                                 | 11/23/2016 0:00                      |
+
+## userTermsAndConditionsAcceptances
+A **userTermsAndConditionsAcceptance** entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
+
+|    Property    |    Description    |    Example    |
+|-------------------------------|--------------------------------------------------------------------------------|----------------------------|
+|    dateKey    |    A key corresponding to a date values in the   ‘dates’ collection.     |    20180823    |
+|    userKey    |    A user key mapping to a user in the ‘users’   collection.     |    20000    |
+|    termsAndConditionsKey    |    A key corresponding to an entry in the   ‘termsAndConditions’ collection    |    1    |
+|    acceptedDateTimeUTC    |    The time that the user accepted these terms and   conditions    |    8/23/2018 4:01:34 AM    |
+|    lastModifiedDateTimeUTC    |    The last time that this entry was modified.     |    8/23/2018 4:01:34 AM    |
 
 ## vppProgramTypes 
 The **vppProgramType** entity lists possible VPP program types for an app.
