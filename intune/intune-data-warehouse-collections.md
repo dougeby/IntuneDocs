@@ -113,7 +113,7 @@ The following table summarizes the assignment status of compliance policies to d
 
 ### Example
 
-|      Property      |                       Description                      |
+|  complianceStatus  |                       Description                      |
 |:------------------:|:------------------------------------------------------:|
 |    Unknown         |    Unknown.                                                                        |
 |    Compliant       |    Compliant.                                                                      |
