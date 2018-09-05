@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,9 +42,9 @@ The Data Warehouse provides you access to more information about your mobile env
 > [!Note]
 > If you are a using hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune, you want to retrieve your data from SCCM. The Intune Data Warehouse only contains Intune data. You can use an SCCM Power BI dashboard for your custom reports. For more information, see "[Announcing the Power BI solution template for System Center Configuration Manager]( https://powerbi.microsoft.com/blog/sccm-solution-template)" and "[Power BI content for Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page)."
 
-
 > [!Important]  
-> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
+> You can now use the v1.0 version of the Intune Data Warehouse by setting the query parameter `api-version=v1.0`. Updates to collections in the Data Warehouse are additive in nature and do not break existing scenarios.<br><br>
+> You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
 
 **Next steps**
 
