@@ -41,9 +41,7 @@
       "feedback_product_url": "https://microsoftintune.uservoice.com/",  
       "searchScope": ["Intune"]
     },
-  
-  
-      "contributors_to_exclude": [
+    "contributors_to_exclude": [
         "herohua",
         "fenxu"
       ],
