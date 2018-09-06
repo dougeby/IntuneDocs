@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Benefits of Intune App SDK 
 titlesuffix: Microsoft Intune
 description: The Intune App SDK is available for both the iOS and Android platforms, and enables mobile app management features with Microsoft Intune.
@@ -15,14 +13,8 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
-#ms.tgt_pltfrm:
 ms.custom: intune-classic
 
 ---

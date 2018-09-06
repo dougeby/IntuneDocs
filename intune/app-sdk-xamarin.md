@@ -5,8 +5,8 @@ title: Microsoft Intune App SDK Xamarin Bindings
 description: The Intune App SDK Xamarin Bindings enable Intune app protection policy in iOS and Android apps built with Xamarin. 
 keywords: sdk, Xamarin, intune
 author: Erikre
-manager: dougeby
 ms.author: erikre
+manager: dougeby
 ms.date: 06/08/2018
 ms.topic: article
 ms.prod:
