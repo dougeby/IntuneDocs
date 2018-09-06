@@ -83,10 +83,48 @@ Autopilot devices will synchronize every 12 hours instead of every 24 hours.
 You can apply Autopilot profiles to enrolled Win 10 devices that have not already been registered for Autopilot. In the Autopilot profile, choose the **Convert all targeted devices to Autopilot** option to automatically register non-Autopilot devices with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will provision it. 
 
 ### Create and assign multiple Enrollment Status  Page profiles to Azure AD groups <!-- 2526564-->
-You'll be able to create and assign multiple Enrollment Status Page profiles to Azure ADD groups.
+You'll be able to create and assign multiple Enrollment Status Page profiles to Azure AAD user groups.
 
 ### Intune landing page updates and node rename <!--2867309 -->
 Updates to the Intune landing page will include new and changed monitoring tiles and charts for better data visualization. The **Mobile apps** node will change to **Client apps**.
+
+### Increased end user access using the Company portal app <!-- 772203 -->
+End users will be able to access key account actions, such as password reset and their AAD profile, from the Company portal app.
+
+### Issue SCEP certificates to user-less devices <!-- 1744554 -->
+Currently, certificates are issued to users. You will be able to issue SCEP certificates to devices, including user-less devices such as kiosks (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **SCEP certificate** for profile). 
+Other updates will include:
+- The **Subject** property in an SCEP profile is now a custom textbox and can include new variables. 
+- The **Subject alternative name (SAN)** property in an SCEP profile is now a table format and can include new variables. In the table, an admin can add an attribute and fill out the value in a custom textbox. The SAN will support the following attributes: 
+  - DNS
+  - Email address
+  - UPN
+  These new variables can be added with static text in a custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+  > [!NOTE]
+  > Curly brackets, semicolons, and pipe symbols “ { } ; | ” will not work in the static text of the SAN. Curly brackets must only enclose one of the new device certificate variables to be accepted for either `Subject` or `Subject alternative name`. 
+New device certificate variables:  
+```
+"{{AAD_Device_ID}}",
+"{{Device_Serial}}",
+"{{Device_IMEI}}",
+"{{SerialNumber}}",
+"{{IMEINumber}}",
+"{{AzureADDeviceId​}}",
+"{{WiFiMacAddress}}",
+"{{IMEI}}",
+"{{DeviceName}}",
+"{{FullyQualifiedDomainName}}",
+"{{MEID}}",
+```
+
+> [!NOTE]
+>  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+>  -  When specifying device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device. 
+
+[Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile) lists the current variables when creating an SCEP configuration profile. 
+
+Applies to: Windows 10 and later and iOS, supported for Wi-Fi
+
 
 
 <!-- 1808 start -->
@@ -101,17 +139,16 @@ When security updates are released, Apple typically leaves the version number as
 ### Retired devices in the device compliance dashboard <!-- 1981119 -->
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
 
-### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
-When you create a macOS enrollment profile, you'll be able to configure it to skip any of the following screens when a user goes through the Setup Assistant:
-- Android Migration
-- Display Tone
-- Privacy
-- iCloudStorage
 
 ### Change in the update process for on-premises connectors <!-- 2277554 -->
 Based on feedback from customers, the way updates are made to on-premises connectors will be changed. After you initially install an on-premises connector, updates will happen automatically. This change will begin with the new PFX Certificate Connector for Microsoft Intune and will subsequently roll out to other types of on-premises connectors. 
 
-
+### Windows 10 and later Kiosk profile improvements in the Azure portal <!-- 2748224 eeready -->
+The Windows 10 Kiosk device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Kiosk preview** for profile type) will be improved: 
+- Currently, you can create multiple kiosk profiles on the same device. With this update, Intune will support only one kiosk profile per device. If you still need multiple kiosk profiles on a single device, you can use a Custom URI.
+-In a **Multi-app kiosk** profile, you can select the application tile size and order for the **Start menu layout** in the application grid. If you prefer more customization, you can continue to upload an XML file.
+- The Kiosk Browser settings are moving into the **Kiosk** settings. Currently, the **Kiosk web browser** settings have their own category in the Azure portal.
+Applies to: Windows 10 and later
 
 <!-- 1807 start -->
 
