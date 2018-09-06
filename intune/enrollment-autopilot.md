@@ -80,7 +80,7 @@ AutoPilot deployment profiles are used to configure the AutoPilot devices.
 
 6. Choose **Create** to create the profile. The AutoPilot deployment profile is now available to assign to devices.
 
-*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (Windows 10 Insider Preview Build 17672 or later).
+*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (requires the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)).
 
 
 ## Assign an AutoPilot deployment profile to a device group
@@ -111,7 +111,7 @@ To see alerts for unassigned devices, in [Intune in the Azure portal](https://ak
 
 You can assign a user to a specific Autopilot device. This assignment pre-fills a user from Azure Active Directory in the [company-branded](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sign-in page during Windows setup. It also lets you set a custom greeting name. This does not pre-fill or modify Windows logon. Only licensed Intune users can be assigned in this manner.
 
-Prerequisite: Azure Active Directory Company Portal has been configured.
+Prerequisites: Azure Active Directory Company Portal has been configured and the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/).
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
     ![Screenshot of Assign user](media/enrollment-autopilot/assign-user.png)
