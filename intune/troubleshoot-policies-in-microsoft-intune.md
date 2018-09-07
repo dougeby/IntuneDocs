@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot policies in Microsfot Intune - Azure | Microsoft Docs
+title: Troubleshoot policies in Microsoft Intune - Azure | Microsoft Docs
 description: Common problems or issues and resolutions when using policies in Microsoft Intune
 keywords:
 author: MandiOhlinger
