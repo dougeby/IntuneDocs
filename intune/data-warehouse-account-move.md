@@ -65,8 +65,6 @@ Some trend charts in your view of the Azure portal will reset. You may back up t
 ## Device Enrollment charts
 1. In the Azure portal, navigate to **Microsoft Intune** -> **DeviceEnrollment**.
 2. Using Microsoft [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer), download the data behind the charts.
-    - For enrollment status, see 
-    - For top enrollment failures this week, 
     - For enrollment status, copy this [enrollment status query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends()/content) and paste it into [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
     - For top enrollment failures this week, copy this [enrollment failures query](https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentTopFailures(period=null)/content) and paste it into [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
