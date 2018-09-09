@@ -8,7 +8,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 05/30/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -22,7 +22,7 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic; get-started
 
 ---
 

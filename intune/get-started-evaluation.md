@@ -9,7 +9,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/23/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,7 +23,7 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; get-started
 ---
 
 # What can Intune do for my company?

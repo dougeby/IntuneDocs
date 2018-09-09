@@ -9,7 +9,7 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,7 +23,7 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 #ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; get-started
 
 ---
 
