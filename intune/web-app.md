@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,6 +66,8 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
 
 > [!Note]
 > Users must add the Intune widget to their home screen to display web apps that have been assigned to Android devices.
+>
+> Currently, deployment of Intune web apps to iOS devices is associated with the management profile and cannot be removed manually. You can change the deployment type to **Uninstall** in the Intune portal, at which point the web app can be removed automatically. However, if you remove the deployment before changing the app assignment intent to **Uninstall**, the web app will be permanently in place on the device until the device is un-enrolled from Intune.
 
 ## Next steps
 
