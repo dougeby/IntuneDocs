@@ -7,7 +7,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,6 +58,8 @@ Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intu
 ## Prerequisites
 
 Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK Xamarin Bindings, you agree to such license terms. If you do not accept them, do not use the software.
+
+The SDK relies on [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). The configuration values are communicated to the SDK via AndroidManifest metadata. Read our documentation on [configuring ADAL for your app](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 
 ## Enabling Intune app protection polices in your iOS mobile app
 1. Add the [Microsoft.Intune.MAM.Xamarin.iOS NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) to your Xamarin.iOS project.
@@ -123,8 +125,18 @@ You have completed the basic steps of building the component into your app. Now 
 The following is guidance for ensuring Xamarin-based Android LOB apps can be used only by Intune protected users on their device. 
 
 ### General Requirements
-* The Intune SDK team will require your app's Application ID. This can be found in the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. A good way to reach out to the Intune SDK team is through emailing msintuneappsdk@microsoft.com.
-	 
+* Register your app's Application ID. This can be found in the [Azure Portal](https://portal.azure.com/), under **All Applications**, in the column for **Application ID**. In the Azure portal:
+1.	Go to **Azure Active Directory** blade.
+2.	Select the **App registration** set up for the application.
+3.	In **Settings** under the **API Access** heading, select **Required permission**. 
+4.	Click **+ Add**.
+5.	Click **Select an API**. 
+6.	In the search box, enter **Microsoft Mobile Application Management**.
+7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
+8.	Select **Read and Write the User’s App Management Data**.
+9.	Click **Done**.
+10.	Click **Grant permissions**, then click **Yes**. 
+	
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
