@@ -8,7 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -22,7 +22,7 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic; get-started
 
 ---
 

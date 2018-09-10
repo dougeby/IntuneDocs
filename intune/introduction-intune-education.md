@@ -8,7 +8,7 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -22,7 +22,7 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; get-started
 
 ---
 
