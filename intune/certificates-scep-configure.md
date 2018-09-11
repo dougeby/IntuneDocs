@@ -85,7 +85,7 @@ Before you can configure certificate profiles, complete the following steps. The
 Create a domain user account to use as the NDES service account. You enter this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
 #### Step 2 - Configure certificate templates on the certification authority
-In this task, you:
+In this step, you:
 
 - Configure a certificate template for NDES
 - Publish the certificate template for NDES
@@ -148,7 +148,7 @@ Configure the CA to allow the requester to enter the validity period:
 3. Validate that the template published by viewing it under the **Certificate Templates** folder.
 
 #### Step 3 - Configure prerequisites on the NDES server
-In this task, you:
+In this step, you:
 
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group
@@ -159,7 +159,7 @@ In this task, you:
    1. In the Wizard, select **Active Directory Certificate Services** to gain access to the AD CS Role Services. Select the **Network Device Enrollment Service**, uncheck **Certification Authority**, and then complete the wizard.
 
       > [!TIP]
-      > In **Installation progress**, do not check **Close**. Instead, select the **Configure Active Directory Certificate Services on the destination server** link. The **AD CS Configuration** wizard opens, which you use for the next task. After AD CS Configuration opens, you can close the Add Roles and Features wizard.
+      > In **Installation progress**, do not check **Close**. Instead, select the **Configure Active Directory Certificate Services on the destination server** link. The **AD CS Configuration** wizard opens, which you use for the next step. After AD CS Configuration opens, you can close the Add Roles and Features wizard.
 
    2. When NDES is added to the server, the wizard also installs IIS. Ensure IIS has the following configurations:
 
@@ -184,7 +184,7 @@ In this task, you:
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### Step 4 - Configure NDES for use with Intune
-In this task, you:
+In this step, you:
 
 - Configure NDES for use with the issuing CA
 - Bind the server authentication (SSL) certificate in IIS
@@ -193,7 +193,7 @@ In this task, you:
 1. On the NDES Server, open the AD CS Configuration wizard, and then make the following updates:
 
     > [!TIP]
-    > If you clicked the link in the previous task, this wizard is already open. Otherwise, open Server Manager to access the post-deployment configuration for Active Directory Certificate Services.
+    > If you clicked the link in the previous step, this wizard is already open. Otherwise, open Server Manager to access the post-deployment configuration for Active Directory Certificate Services.
 
    - In **Role Services**, select the **Network Device Enrollment Service**
    - In **Service Account for NDES**, enter the NDES Service Account
@@ -205,7 +205,7 @@ In this task, you:
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    To update this key, identify the certificate template's **Purpose** (found on its **Request Handling** tab). Then, update the corresponding registry entry  by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified in Task 1. The following table maps the certificate template purpose to the values in the registry:
+    To update this key, identify the certificate template's **Purpose** (found on its **Request Handling** tab). Then, update the corresponding registry entry  by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified in Step 2. The following table maps the certificate template purpose to the values in the registry:
 
     |Certificate template Purpose (On the Request Handling tab)|Registry value to edit|Value seen in the Intune admin console for the SCEP profile|
     |---|---|---|
@@ -232,7 +232,7 @@ In this task, you:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
 
-    If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Task 1.
+    If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Step 1.
 
 ##### Install and bind certificates on the NDES Server
 
@@ -281,7 +281,7 @@ In this task, you:
 4. Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
 #### Step 5 - Enable, install, and configure the Intune certificate connector
-In this task, you:
+In this step, you:
 
 - Enable support for NDES in Intune.
 - Download, install, and configure the Certificate Connector on the server hosting the Network Device Enrollment Service (NDES) role a server in your environment. To increase the scale of the NDES implementation in your organization, you can install multiple NDES servers with a Microsoft Intune Certificate Connector on each NDES server.
@@ -302,7 +302,7 @@ In this task, you:
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
 
-6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Task 3.
+6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Step 4.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
 
