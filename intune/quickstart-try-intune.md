@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: Quickstart: Try Microsoft Intune for free
 titlesuffix: 
 description: In this quickstart, you will create a free trial subscription, understand supported configurations and networking requirements, and configure your domain name.
@@ -24,7 +23,7 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-#Customer intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
+#Customer.intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
 ---
 
 # Quickstart: Try Microsoft Intune for free 
@@ -101,4 +100,4 @@ For more information about domain names, see [Managing customer domain names in 
 In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Add users and assign licenses](quickstart-add-users-licenses.md)
+> [Quickstart: Add users and assign licenses](what-is-intune.md)
