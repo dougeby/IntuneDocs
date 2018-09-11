@@ -500,6 +500,7 @@ In the Azure portal:
 7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
 8.	Select **Read and Write the User’s App Management Data**.
 9.	Click **Done**.
+10. Click **Grant permissions**, then click **Yes**. 
 
 See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
 
