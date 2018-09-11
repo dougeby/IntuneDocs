@@ -45,6 +45,8 @@
     href: get-started-enroll.md
   - name: Assign apps
     href: get-started-apps.md
+  - name: Create and assign a custom role
+    href: quickstart-create-custom-role.md
 - name: Scenario implementation guides
   items:
   - name: Protect Exchange Online
