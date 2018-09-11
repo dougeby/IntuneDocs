@@ -1,3 +1,14 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Device Management
+  tocHref: /intune/
+  topicHref: /intune/index
+  items:
+  - name: Intune
+    tocHref: /enterprise-mobility-security/intune/index
+    topicHref: /device-mgmt/index
+- name: Device Management
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+  - name: Azure Active Directory
+    tocHref: /azure/active-directory/
+    topicHref: /azure/active-directory/
