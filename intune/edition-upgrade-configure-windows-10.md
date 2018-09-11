@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Upgrade Windows 10 devices with Microsoft Intune - Azure | Microsoft Docs
-description: Create a device profile in Microsoft Intune to upgrade Windows 10 devices to newer versions. Also see the supported upgrade paths for Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic, and Mobile. 
+title: Upgrade or use S mode on Windows 10 devices with Microsoft Intune - Azure | Microsoft Docs
+description: Create a device profile in Microsoft Intune to upgrade Windows 10 devices to different editions. For example, you can upgrade from Windows 10 Professional to Windows 10 Enterprise. You can also enable or switch out of S mode on a device using the configuration profile. Also see the supported upgrade paths for Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic, and Mobile. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,23 +19,23 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Configure Windows 10 edition upgrade profile in Intune
+# Use a configuration profile to upgrade Windows 10, or switch from S mode in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Configure an upgrade profile in Intune to automatically upgrade devices that run Windows 10 edition to a different edition. Also see the supported upgrade paths.
 
 ## Before you begin
-Before you upgrade devices to the latest version, you need one of the following:
+Before you upgrade devices to the latest version, you need the following prerequisites:
 
-- A valid product key to install the updated Windows version on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys, or a Microsoft license file that contains the licensing information to install the updated Windows version on all devices that you target with the policy (for Windows 10 Mobile and Windows 10 Holographic editions).
-- The Windows 10 devices you assign the policy are enrolled in Microsoft Intune. You cannot use the edition upgrade policy with PCs that run the Intune PC client software.
+- A valid product key to install the updated Windows version on all devices that you target with the policy (for Windows 10 Desktop editions). You can use either Multiple Activation Keys (MAK) or Key Management Server (KMS) keys. For Windows 10 Mobile and Windows 10 Holographic editions, you can use a Microsoft license file that includes the licensing information to install the updated Windows version on all devices that you target with the policy.
+- The Windows 10 devices you assign the policy are enrolled in Microsoft Intune. You can't use the edition upgrade policy with PCs that run the Intune PC client software.
 
 ## Supported upgrade paths
 The following table lists the supported upgrade paths for the Windows 10 edition upgrade profile.
@@ -126,25 +126,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## Create a device profile containing device restriction settings
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device configuration**, select **Profiles**, and then select **Create Profile**.
-4. Enter a **Name** and **Description** for the edition upgrade profile.
-5. From the **Platform** drop-down list, choose **Windows 10 and later**.
-6. From the **Profile type** drop-down list, choose **Edition upgrade**.
-7. In the **Edition Upgrade** properties, enter the following settings:
-   - **Edition to upgrade to** - From the drop-down list, select the version of Windows 10 Desktop, Windows 10 Holographic, or Windows 10 Mobile that you're upgrading the targeted devices to.
-   - **Product Key** - Enter the product key that you received from Microsoft, which can be used to upgrade all targeted Windows 10 Desktop devices. 
-    After you create a policy that contains a product key, the key cannot be updated, and is hidden for security reasons. To change the product key, enter the entire key again.
-   - **License File** - Choose **Browse** to select the license file you received from Microsoft. This license file contains license information for the Windows Holographic or Windows 10 Mobile edition you are upgrading the targeted devices to.
-8. When done, select **Create** to save your changes.
+## Upgrade the edition
+
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create Profile**.
+3. Enter a **Name** and **Description** for the profile. For example, enter something like `Windows 10 edition upgrade`
+4. For **Platform**, select **Windows 10 and later**.
+5. For **Profile type**, select **Edition upgrade**.
+6. In the **Edition Upgrade** properties, enter the following settings:
+
+   - **Edition to upgrade to**: Select the Windows 10 edition that you're upgrading to. The devices targeted by this policy are upgraded to the edition you choose.
+   - **Product Key**: Enter the product key that you received from Microsoft. After you create the policy with the product key, the key can't be updated, and is hidden for security reasons. To change the product key, enter the entire key again.
+   - **License File**: For **Windows 10 Holographic for Business** or **Windows 10 Mobile edition**, choose **Browse** to select the license file you received from Microsoft. This license file includes license information the editions you're upgrading the targeted devices to.
+
+7. Select **OK** to save your changes. Select **Create** to create the profile.
+
+## Switch out of S mode
+
+[Windows 10 S mode](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) is designed for security and performance. If your devices only run apps from the Microsoft Store, then you can use S mode to help keep your devices secure. If your devices require apps that aren't available in the Microsoft Store, then you switch out of S mode. Switching out of S mode is one way. And once you switch out of S mode, you can't go back to Windows 10 S mode.
+
+The following steps show how to create a profile that controls S mode on Windows 10 (1809 or later) devices.
+
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create Profile**.
+3. Enter a **Name** and **Description** for the profile. For example, enter something like `Windows 10 switch off S mode`
+4. For **Platform**, select **Windows 10 and later**.
+5. For **Profile type**, select **Edition upgrade**.
+6. Select **Mode switch (Windows Insider only)**, and set the **Switch out of S mode** property. Your options:
+
+    - **No configuration**: An S mode device remains in S mode. An end user can switch the device out of S mode.
+    - **Keep in S mode**: Disables the end user from switching the device out of S mode.
+    - **Switch**: Switches the device out of S mode.
+
+7. Select **OK** to save your changes. Select **Create** to create the profile.
 
 The profile is created and is listed in the profiles.
 
 ## Next steps
 
-To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+[Assign this profle](device-profile-assign.md) to your groups.
 
 >[!NOTE]
->If you later remove the policy assignment, the version of Windows on the device is not reverted, and continues to function normally.
+>If you remove the policy assignment later, the version of Windows on the device is not reverted, and continues to function normally.
