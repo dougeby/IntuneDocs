@@ -143,7 +143,7 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 
 ## Switch out of S mode
 
-[Windows 10 S mode](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) is designed for security and performance. If your devices only run apps from the Microsoft Store, then you can use S mode to help keep your devices secure. If your devices require apps that aren't available in the Microsoft Store, then you switch out of S mode. Switching out of S mode is one way. And once you switch, you can't go back to Windows 10 in S mode.
+[Windows 10 S mode](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) is designed for security and performance. If your devices only run apps from the Microsoft Store, then you can use S mode to help keep your devices secure. If your devices require apps that aren't available in the Microsoft Store, then you switch out of S mode. Switching out of S mode is one way. And once you switch out of S mode, you can't go back to Windows 10 S mode.
 
 The following steps show how to create a profile that controls S mode on Windows 10 (1809 or later) devices.
 
@@ -154,9 +154,9 @@ The following steps show how to create a profile that controls S mode on Windows
 5. For **Profile type**, select **Edition upgrade**.
 6. Select **Mode switch (Windows Insider only)**, and set the **Switch out of S mode** property. Your options:
 
-    - **No configuration**: NEED A DESCRIPTION
-    - **Keep in S mode**: NEED A DESCRIPTION
-    - **Switch**: NEED A DESCRIPTION
+    - **No configuration**: An S mode device remains in S mode. An end user can switch the device out of S mode.
+    - **Keep in S mode**: Disables the end user from switching the device out of S mode.
+    - **Switch**: Switches the device out of S mode.
 
 7. Select **OK** to save your changes. Select **Create** to create the profile.
 
