@@ -40,7 +40,7 @@ By the way, DEP enrollment does not work with the [device enrollment manager](de
 ## What is supervised mode?
 Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it is especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
 
-Support for unsupervied DEP devies was deprecated in iOS 11. In iOS 11 and later, DEP configured devices should always be supervised. The DEP is_supervised flag will be ignored in a future iOS release.
+Support for unsupervised DEP devices was deprecated in iOS 11. In iOS 11 and later, DEP configured devices should always be supervised. The DEP is_supervised flag will be ignored in a future iOS release.
 
 <!--
 **Steps to enable enrollment programs from Apple**
