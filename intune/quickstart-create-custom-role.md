@@ -22,7 +22,7 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 
 ## Create a custom role
 
-When you create a custom role you can set permissions for a wide range of actions. For the security operations role, we'll set a few Read permissions so that the operator can review a device's configurations and policies.
+When you create a custom role, you can set permissions for a wide range of actions. For the security operations role, we'll set a few Read permissions so that the operator can review a device's configurations and policies.
 
 1. In Intune, choose **Roles** > **All roles** > **Add**.
 ![Browser](media/quickstart-create-custom-role/add-custom-role.png)
