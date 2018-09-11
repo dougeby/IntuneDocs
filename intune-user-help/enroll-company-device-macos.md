@@ -72,6 +72,6 @@ Download the Intune Company Portal app for macOS on your device. The app lets yo
 3. When prompted, open the .pkg file and complete the installation steps.
 4. Open the Company Portal app and sign in.
 5. Find your device and click **Register**.
-6. Click **Continue** > **Done**. Your device should now appear in the Company Portal app as a coporate and compliant device.
+6. Click **Continue** > **Done**. Your device should now appear in the Company Portal app as a corporate and compliant device.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
