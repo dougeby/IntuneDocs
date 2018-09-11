@@ -55,7 +55,7 @@ Complete the following steps to enroll your macOS device in management. If you'r
 5. After you're connected to Wi-Fi, the **Remote Management** screen appears. Remote management enables your organization's administrator to remotely configure your device with company-required accounts, settings, apps, and networks. Read through the remote management explanation to help you understand how your device is managed. Then click **Continue**.  
 
    ![Screenshot of macOS device Setup Assistant Remote Management screen, with text explaining remote management and a link to documentation for more information. Also shows a Back button and Continue button.](./media/macos-dep-remote-management-1-1808.png)  
-6. When prompted, sign in with your work or school account. After your authenticated, your device will install a management profile. The profile configures and enables your access to your organization's resources.  
+6. When prompted, sign in with your work or school account. After you're authenticated, your device will install a management profile. The profile configures and enables your access to your organization's resources.  
 7. Read about the Apple data & privacy icon so that you can later identify when personal information is being collected. Then click **Continue**.  
 
    ![Screenshot of macOS device Setup Assistant Data & Privacy screen, showing an illustration of two people shaking hands, and describing Apple's use of personal information. Also shows a Back and Continue button.](./media/macos-dep-apple-data-privacy-1808.png)  
@@ -68,7 +68,7 @@ Complete the following steps to enroll your macOS device in management. If you'r
 ## Get the Company Portal app      
 Download the Intune Company Portal app for macOS on your device. The app lets you monitor, sync, add, and remove your device from management, and install apps. These steps also describe how to register your device with Company Portal.
 1. Go to https://macadmins.software.
-2.	Find **Intune Company Portal Standalone Installer** and click the icon shown in the **Worlwide Download** column.
+2.	Find **Intune Company Portal Standalone Installer** and click the icon shown in the **Worldwide Download** column.
 3. When prompted, open the .pkg file and complete the installation steps.
 4. Open the Company Portal app and sign in.
 5. Find your device and click **Register**.
