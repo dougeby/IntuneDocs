@@ -12,7 +12,7 @@ ms.author: erikje
 
 # Quickstart: Create and assign a custom role
 
-In this quickstart, you'll create a custom role with specific permissions for a helpdesk operator dedicated to lost passwords and devices. Then you'll assign the roll to a group of such operators. By creating custom roles like this one, you can control access to all parts of your mobile device management system.
+In this quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the roll to a group of such operators. By creating custom roles like this one, you can control access to all parts of your mobile device management system.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
@@ -22,31 +22,25 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 
 ## Create a custom role
 
-Include a sentence or two to explain only what is needed to complete the
-procedure.
+When you create a custom role you can set permissions for a wide range of actions. For the security operations role, we'll set a few Read permissions so that the operator can review a device's configurations and policies.
 
 1. In Intune, choose **Roles** > **All roles** > **Add**.
 ![Browser](media/quickstart-create-custom-role/add-custom-role.png)
-2. Under **Add custom role**, in the **Name** box, enter *Remote device helpdesk*.
-3. In the **Description** box, enter *This role lets a helpdesk operator help locate lost devices and reset forgotten passcodes*.
-4. Choose **Configure** > **Remote tasks**.
-5. Set the following permissions to **Yes**:
-    - **Disable lost mode**
-    - **Enable lost mode**
-    - **Locate device**
-    - **Play lost mode sound**
-    - **Remote lock**
-    - **Reset passcode**
-    - **Wipe**
-6. Choose **OK** > **OK** > **Create**.
+2. Under **Add custom role**, in the **Name** box, enter *Security operations*.
+3. In the **Description** box, enter *This role lets a security operator monitor device configuration and compliance information.*.
+4. Choose **Configure** > **Corporate device identifiers** > **Yes** next to **Read** > **OK**.
+5. Choose **Device compliance policies** > **Yes** next to **Read** > **OK**.
+6. Choose **Device configurations** > **Yes** next to **Read** > **OK**.
+7. Choose **Organization** > **Yes** next to **Read** > **OK**.
+8. Choose **OK** > **Create**.
 
 ## Assign the custom role to a group
 
-Before your helpdesk operator can enjoy the new permissions, you must assign the role to a group that contains the helpdesk user.
+Before your security operator can enjoy the new permissions, you must assign the role to a group that contains the security user.
 
 1. In Intune, choose **Roles** > **All roles** > **Remote device helpdesk**.
 2. Under **Intune roles**, choose **Assignments** > **Assign**.
-3. In the **Assignment name** box, enter *Helpdesk ops*.
+3. In the **Assignment name** box, enter *Sec ops*.
 4. Choose **Member (Groups)** > **Add**.
 5. Choose a group that contains your helpdesk operators who will handle remote devices.
 6. Choose **Select** > **OK**.
@@ -59,4 +53,4 @@ To delete the custom role, choose **Roles** > **All roles** > choose the ellipse
 
 ## Next steps
 
-After you've created and assigned a custom role, helpdesk personnel can remotely help users such as by [resetting the device passcode](device-passcode-reset.md).
+After you've created and assigned a custom role, you can learn more about [security compliance issues](device-compliance-get-started.md).
