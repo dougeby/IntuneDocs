@@ -27,7 +27,7 @@ ms.custom: intune-azure
 #Customer intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
 ---
 
-# Quickstart: Getting started with Microsoft Intune 
+# Quickstart: Try Microsoft Intune for free 
 
 Microsoft Intune helps you protect your workforce's corporate data by managing devices and apps. In this quickstart, you will create a free subscription to try Intune in a test environment.
 
@@ -35,22 +35,22 @@ Intune provides mobile device management (MDM) and mobile app management (MAM) f
 
 ## Prerequisites
 Before setting up Microsoft Intune, review the following requirements:
-    - [Supported operating systems and browsers](supported-devices-browsers.md) 
-    - [Network configuration requirements and bandwidth](network configuration requirements and bandwidth.md)
+
+   - [Supported operating systems and browsers](supported-devices-browsers.md) 
+   - [Network configuration requirements and bandwidth](network configuration requirements and bandwidth.md)
 
 ## Sign up for a Microsoft Intune free trial
 
 Trying out Intune is free. If you already have a work or school account, **sign in** with that account and add Intune to your subscription. Otherwise, you can **sign up** for a new account to use Intune for your organization.
 
 > [!IMPORTANT]
-> >You can't combine an existing work or school account after you sign up for a new account.
+> You can't combine an existing work or school account after you sign up for a new account.
 
-1. Sign up for a free Intune trial subscription by visiting the [Microsoft Intune Trial](https://go.microsoft.com/fwlink/?linkid=2019088) page and fill out the form.
+1. Go to the [Microsoft Intune Trial](https://go.microsoft.com/fwlink/?linkid=2019088) page and fill out the form.
 
     ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-full-browser.png)
 
-    > [!NOTE]
-    > If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Country or region**. We use your regional information to deliver the right services. This setting can't be changed later.
+    If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Country or region**. We use your regional information to deliver the right services. This setting can't be changed later.
 
 2. Create an account using your company name followed by **.onmicrosoft.com**. 
 
