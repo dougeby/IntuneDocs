@@ -44,9 +44,9 @@ For information about adding your organization's line-of-business (LOB) apps to 
 1. In the **Client apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Choose **Add a policy**.
 
-<div width='200'>
+<span width='200'>
    ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
-</div>
+</span>
 
 3. Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
@@ -74,13 +74,15 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 1. In the **App protection policies** pane, select a policy.
 
-1. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
+2. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
 
+<p width='200'>
    ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
+</p>
 
-2.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+3.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
 
-    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png =300)
 
 You've now created a policy and deployed it to users.
 
