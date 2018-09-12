@@ -44,7 +44,9 @@ For information about adding your organization's line-of-business (LOB) apps to 
 1. In the **Client apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Choose **Add a policy**.
 
+<div width='200'>
    ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
+</div>
 
 3. Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
