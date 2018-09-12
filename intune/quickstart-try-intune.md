@@ -37,7 +37,7 @@ Intune provides mobile device management (MDM) and mobile app management (MAM) f
 Before setting up Microsoft Intune, review the following requirements:
 
    - [Supported operating systems and browsers](supported-devices-browsers.md) 
-   - [Network configuration requirements and bandwidth](network configuration requirements and bandwidth.md)
+   - [Network configuration requirements and bandwidth](network-bandwidth-use.md)
 
 ## Sign up for a Microsoft Intune free trial
 
@@ -50,13 +50,13 @@ Trying out Intune is free. If you already have a work or school account, **sign 
 
     ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-full-browser.png)
 
-    If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Country or region**. We use your regional information to deliver the right services. This setting can't be changed later.
+    If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Country or region**. Azure uses your regional information to deliver the right services. This setting can't be changed later.
 
 2. Create an account using your company name followed by **.onmicrosoft.com**. 
 
     ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-user-id.png)
 
-    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that later in the Office 365 Admin Portal later in this article.
+    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal discribed later in this article.
 
 3. View your new account information at the end of the sign-up process.
 
@@ -75,26 +75,29 @@ Trying out Intune is free. If you already have a work or school account, **sign 
 
 When you sign up for a trial, you will also receive an email message that contains your account information and the email address that you provided during the sign-up process. This email confirms your trial is active.
 
-## Configure a custom domain name
+## Configure your custom domain name (Optional)
 
-As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Office 365 Admin Portal.
+As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Office 365 Admin Portal. You will add, verify and configure your custom domain name.  
 
 > [!IMPORTANT]
 > You cannot rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
 
-1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign into your administrator account.
+1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign in using your administrator account.
 
-2. In the navigation pane, choose **Setup** > **Domains**.
+2. In the navigation pane, choose **Setup** > **Domains** > **Add domain**.
 
-3. Choose **Add domain**, and type your custom domain name. Then, select **Next**.
+3. Type your custom domain name. Then, select **Next**.
 
    ![Screenshot of Office 365 Admin Center with Settings > Domains selected and a new domain name being added](./media/domain-custom-add.png)
 
-4. The **Verify domain** dialog box opens giving you the values to create the TXT record in your DNS hosting provider.
-	- **GoDaddy users**: Office 365 Management portal redirects you to GoDaddy's sign-in page. After you enter your credentials and accept the domain change permission agreement, the TXT record is created automatically. You can alternatively [create the TXT record](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
-	- **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) to create the TXT record.
+4. Verify that you are the owner of the domain that you entered in the previous. 
+    
+    Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address then what was provided when the domain was registered.
 
-For more information about domain names, see [Managing customer domain names in your Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-manage).
+   ![Screenshot of Office 365 Admin Center - Verify the domain name being added](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > For TXT record verification details related to GoDaddy, see [Create DNS records at GoDaddy for Office 365](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a). For TXT record verification details related to Register.com, see (https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify).
 
 ## Next steps
 
