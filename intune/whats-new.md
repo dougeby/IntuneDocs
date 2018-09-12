@@ -1293,6 +1293,30 @@ You can specify denied apps in Intune. If an app is denied, it is blocked from a
 
 ## Notices
 
+### Plan for Change: Move to Intune on Azure for your Mobile Device Management <!—2683117-->
+
+Since launching on Azure over a year ago, Intune has added hundreds of new customer-requested and market-leading service capabilities, and now offers far more capabilities than those offered through [hybrid]( https://aka.ms/hybrid_MDM) Mobile Device Management (MDM). Intune on Azure provides a more integrated, streamlined administrative experience for your enterprise mobility needs.
+
+As a result, we see that most Enterprise Mobility + Security (EMS) customers choose Intune on Azure over hybrid MDM. The number of customers using hybrid MDM continues to decrease as more customers move to the cloud. Therefore, on September 1, 2019, we will retire the hybrid MDM service offering. Please plan your migration to Intune on Azure for your MDM needs. We have tools, case studies, and other resources to help with this migration.
+
+Note: this change does not affect on-premises System Center Configuration Manager (ConfigMgr) or [co-management]( https://aka.ms/Intune_comanagement) for Windows 10 devices. If you are unsure whether you are using hybrid MDM, go to the Administration workspace of the ConfigMgr console, expand Cloud Services, and click Microsoft Intune Subscriptions. If you have a Microsoft Intune subscription setup, your tenant is configured for hybrid MDM.
+
+#### How does this affect me?
+-	Microsoft will support your hybrid MDM usage for the next year. We will continue to release major bug fixes and ensure existing functionality is supported on OS versions, such as enrollment on iOS 12. We will not invest in new features for hybrid MDM.
+-	We do not expect any end user impact to this change, provided you migrate to Intune on Azure before the end of the hybrid MDM offering.
+-	Licensing remains as is; Intune on Azure licenses are included with hybrid MDM.
+-	We will begin to block the onboarding of new hybrid MDM customers starting in November 2018.
+-	On September 1, 2019, any remaining hybrid MDM devices will no longer receive policy, apps, or security updates.
+
+#### What do I need to do to prepare for this change?
+-	Start planning your migration for MDM from the ConfigMgr console to Azure. Many customers, including Microsoft IT, have gone through this process. Read this [case study]( https://aka.ms/Intune_MSFT) sharing best practices and lessons learned from Microsoft’s own migration.  
+-	Review [tools]( https://aka.ms/hybrid_tools) and [documentation]( https://aka.ms/intune_migrate) we’ve created to simplify the process of moving from hybrid MDM to Intune on Azure. Many customers, including some of our largest and smallest, have successfully used these tools and guidance to migrate.
+-	Contact your partner of record or Fast Track for assistance. [FastTrack for Microsoft 365]( https://aka.ms/hybrid_fasttrack) can assist in your migration from hybrid MDM to Intune on Azure. More information on how to open this specific type of FastTrack ticket is included in the Additional Information link.
+
+#### Additional Information
+[Intune Support Blog post](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)
+
+
 ### Plan for Change: New Intune support experience for Premier customers 
 As a Microsoft Premier customer, you can currently use the Microsoft Premier Online (MPO) portal (premier.microsoft.com) and Intune on Azure (portal.azure.com) to create support requests for Intune. Starting on December 3, 2018, to continue enhancing the Premier support experience, you will be able to create support requests only in Intune on Azure.
 
@@ -1320,7 +1344,7 @@ Intune will be removing the available password type “device default” for And
 When we remove this setting from the UI, if the setting is still set, you will be prompted to choose a value other than “Device default” on your next edit of the profile.
 What do I need to do to prepare for this change?
 Review the password settings in your Android and Android enterprise device restriction and compliance policies. These are listed under System security for Compliance policies and under either Device password or Work profile settings for Device restrictions. Additional information has a link to more details and screenshots for where these settings are configured.
-####Additional information
+#### Additional information
 https://aka.ms/PasswordSettings 
 
 ### Plan for Change: Change Password at Next Auth added to Intune<!-- 1873216 -->
