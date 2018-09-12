@@ -44,9 +44,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
 1. In the **Client apps** workload, select **App protection policies** from the **Manage** section. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Choose **Add a policy**.
 
-<span width='200'>
-   ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png)
-</span>
+   ![Screenshot of the 'Add a policy' blade](./media/app-protection-add-policy.png =200x)
 
 3. Type a name for the policy, add a brief description, and select the platform type for your policy. If needed, you can create more than one policy for each platform.
 
@@ -71,18 +69,15 @@ When you finish creating a policy as described in the previous procedure, it is 
 
 ## Deploy a policy to users
 
-
 1. In the **App protection policies** pane, select a policy.
 
 2. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
 
-<p width='200'>
    ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
-</p>
 
 3.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
 
-    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png =300)
+    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png =300x200)
 
 You've now created a policy and deployed it to users.
 
@@ -134,7 +129,7 @@ Because Intune app protection policies are targeted to a user’s identity, the 
 
 To create these policies, browse to **Client apps** > **App protection policies** in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
 
-![Screenshot of the Add an policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
+![Screenshot of the Add an policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png =300x)
 
 For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
