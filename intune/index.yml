@@ -81,7 +81,8 @@ sections:
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/BuV9Ntszwb8]"
-
+  - type: paragraph
+    text: ' '    
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]"
 

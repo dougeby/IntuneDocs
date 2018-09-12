@@ -3,7 +3,7 @@
 
 title: Microsoft Intune documentation
 titlesuffix: 
-description: View a documentation guide to Microsoft Intune.
+description: View the documentation guide for Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -28,7 +28,7 @@ ms.custom: get-started
 ---
 
 
-# Microsoft Intune - Documentation guide
+# Microsoft Intune documentation guide
 
 Use the following table to quickly find and understand the major areas of Microsoft Intune.
 
