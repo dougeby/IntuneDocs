@@ -24,7 +24,6 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-#Customer intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
 
 ---
 
