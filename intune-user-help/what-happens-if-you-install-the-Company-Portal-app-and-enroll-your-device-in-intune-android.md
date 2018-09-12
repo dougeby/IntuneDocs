@@ -30,17 +30,17 @@ ms.custom: intune-enduser
 
 # What happens if you install the Company Portal app and enroll your Android device in Intune?
 
-If your organization requires you to install the Intune Company Portal app on your Android device, you might wonder why. This article describes both the purpose and features of the app&mdash;and how they protect the work and school data that you access and store on your device.
+If your organization requires you to install the Intune Company Portal app on your Android device, you might wonder why. This article describes both the purpose and features of the app&mdash;and how it protects the work and school data that you access and store on your device.
 
 ## Gets your device managed
-The Company Portal app helps get your device managed (also referred to as "enrolled") in your organization's device management system. Before you connect to your organization's network, your school or workplace wants to make sure that you're using a secure, trusted device. To access work or school resources, your device will need to follow your organization's device policies. 
+The Company Portal app helps get your device managed (also referred to as *enrolled*) in your organization's device management system. Before you connect to your organization's network, your school or workplace wants to make sure that you have a secure, trusted device. To access work or school resources, your device will need to follow your organization's device policies. 
 
-Your company support or IT admin configures these policies in their company-wide device management system. Then they send the policies over-the-air, to your managed device.
+Your company support or IT admin configures these policies in their company-wide device management system. After you power on your device, you'll receive these policies. 
 
 Examples of some of the policies that your organization might require are:
 * Setting up a password or PIN
 * Restricting access after a set number of sign-in attempts
-* Ensuring that you're not using a jailbroken device
+* Ensuring that you're not using a jailbroken or rooted device
 * Installing work-required apps
 
 The Company Portal app will walk you through each step of enrollment, and will configure your device settings to meet your organization's requirements. In some cases, the app will ask or notify you to make changes.
@@ -51,7 +51,7 @@ During enrollment, the Company Portal app requires you to connect to your work o
 Organizations sometimes require you to install work or security apps, such as Microsoft Office or Mobile Threat Defense. If these apps are required or made available to you, you'll find them in the Company Portal app.
 
 ## Lets you remotely reset a lost or stolen device (if device supports it)
-If a device is lost or stolen, you can sign in to the Company Portal app on any other device, and reset your phone to factory settings. This feature is helpful if your missing device contains proprietary work data that you don't want anyone else to access. Because the device is enrolled in management, your company support or IT admin can also help reset it.  
+If a device is lost or stolen, you can sign in to the Company Portal app or Company Portal website on any other device, and reset your phone to factory settings. This feature is helpful if your missing device contains proprietary work data that you don't want anyone else to access. Because the device is enrolled in management, your company support or IT admin can also help reset it.  
 
 ## Notifies you of policy updates and requirements
 The Company Portal app will check in, or sync, with your organization's mobile device management provider every eight hours. If you want to check in more frequently, you or your company support can initiate a manual sync. During check-in, the app will:  
@@ -72,7 +72,7 @@ When you enroll your device in the Company Portal app, your company support or I
 
 * Require you to accept terms and conditions.  
 
-* Disable the camera. The purpose of this policy is to prevent you from photographing proprietary information, and also to remove distractions from school environments. Schools might disable cameras on classroom devices so that students cannot share tests materials.  
+* Disable the camera. The purpose of this policy is to prevent you from photographing proprietary information, and also to remove distractions from school environments. Schools might disable cameras on classroom devices so that students cannot share test materials.  
 
 * Require that all data on the device is encrypted. If lost or stolen, this policy helps protect the data on your device. It also protects data that is shared between devices or apps.  
 
