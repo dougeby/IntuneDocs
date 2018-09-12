@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -128,7 +128,7 @@ The configuration must include following properties:
     - TENANT="The Tenant Id obtained during the onboarding process"
     - PROVIDER_NAME_AND_VERSION="Information used to identify your product and its version"
     
-If your solution requires a proxy either with authentication or without you can add these properties:
+If your solution requires a proxy either with authentication or without authentication, then you can add the following properties:
 
     - PROXY_HOST="The host the proxy is hosted on."
     - PROXY_PORT="The port the proxy is listening on."
