@@ -1,5 +1,6 @@
 ---
 # required metadata
+
 title: Quickstart: Try Microsoft Intune for free
 titlesuffix: 
 description: In this quickstart, you will create a free trial subscription, understand supported configurations and networking requirements, and configure your domain name.
@@ -23,14 +24,15 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-#Customer.intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
+#Customer intent: As an administrator, I want to create a free subscription to try Intune in a test environment. 
+
 ---
 
 # Quickstart: Try Microsoft Intune for free 
 
 Microsoft Intune helps you protect your workforce's corporate data by managing devices and apps. In this quickstart, you will create a free subscription to try Intune in a test environment.
 
-Intune provides mobile device management (MDM) and mobile app management (MAM) from a secure cloud-based service that is administered using the Microsoft Azure portal. Using Intune, you ensure your workforce's corporate resources (data, devices, or apps) are correctly configured, accessed, and updated, all while remaining compliant with your company's policies and requirements.
+Intune provides mobile device management (MDM) and mobile app management (MAM) from a secure cloud-based service that is administered using the Microsoft Azure portal. Using Intune, you ensure your workforce's corporate resources (data, devices, and apps) are correctly configured, accessed, and updated, meeting your company's compliance policies and requirements. 
 
 ## Prerequisites
 Before setting up Microsoft Intune, review the following requirements:
