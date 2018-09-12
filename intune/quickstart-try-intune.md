@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quickstart: Try Microsoft Intune for free
+title: Quickstart - Try Microsoft Intune for free
 titlesuffix: 
 description: In this quickstart, you will create a free trial subscription, understand supported configurations and networking requirements, and configure your domain name.
 keywords:
