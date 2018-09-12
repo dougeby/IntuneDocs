@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,14 +36,6 @@ This article describes how to update your version of the Company Portal app when
 * Your version of the Company Portal app is no longer supported.
 
 These steps describe how to update or get the latest version of the app on Android, iOS, and Windows devices.    
-
-# How to update the Intune Company Portal app
-
-This article describes how to update your version of the Company Portal app when:  
-* There's a newer version of the Company Portal app available.
-* Your version of the Company Portal app is no longer supported.
-
-These steps describe how to update the app on Android, iOS, and Windows devices.    
 
 ## Update the Company Portal app on your Android device  
 
