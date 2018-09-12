@@ -127,6 +127,13 @@ The configuration must include following properties:
     - AAD_APP_KEY="The Azure Application Key obtained during the onboarding process"
     - TENANT="The Tenant Id obtained during the onboarding process"
     - PROVIDER_NAME_AND_VERSION="Information used to identify your product and its version"
+    
+If your solution requires a proxy either with authentication or without you can add these properties:
+
+    - PROXY_HOST="The host the proxy is hosted on."
+    - PROXY_PORT="The port the proxy is listening on."
+    - PROXY_USER="The username to use if proxy uses basic authentication."
+    - PROXY_PASS="The password to use if proxy uses basic authentication."
 
 Throws:
 
