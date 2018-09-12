@@ -45,7 +45,7 @@ Google Play Store alerts you when a new version of the Company Portal is availab
 
 When a new version is available, an **Update** option appears in your list of installed apps, next to the Company Portal app.  
 
-1. Open the App Store and search for **intune**.  
+1. Open the App Store and search for **Intune**.  
 2. When you find the app, tap **Update**.  
 
 ## Update the Company Portal app on your Windows device
