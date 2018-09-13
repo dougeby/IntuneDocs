@@ -32,7 +32,7 @@ ms.custom: intune-azure; get-started
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-As an IT admin, you can use Microsoft Intune to manage the mobile apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
+As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
 - There are a wide range of device platforms and app types.
 - You might need to manage apps on both company devices and users' personal devices.
 - You must ensure that your network and your data remain secure.
@@ -73,7 +73,7 @@ You can find most app-related information in the **Client Apps** workload, which
     Intune is located in the **Monitoring + Management** section.
 3. In the **Microsoft Intune** pane, select **Client apps**.
 
-    ![The "Mobile apps" workload pane](./media/apps-workload.png)
+    ![The "Client apps" workload pane](./media/apps-workload.png)
 
 The next four sections describe the options available in the **Client apps** pane.
 
