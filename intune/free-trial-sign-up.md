@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 09/13/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -110,4 +110,4 @@ There are two portals that you might use:
 In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Add users and assign licenses](what-is-intune.md)
+> [Get started managing users](get-started-users.md)
