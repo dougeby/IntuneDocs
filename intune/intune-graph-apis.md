@@ -167,7 +167,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 - **Enable Access** setting: __Read Microsoft Intune apps__
 
 - Permits read access to the following entity properties and status:
-    - Mobile Apps
+    - Client Apps
     - Mobile App Categories
     - App Protection Policies
     - App Configurations
@@ -180,7 +180,7 @@ At this time, all Intune permission scopes require administrator access.  This m
 
 - Also permits changes to the following entities:
 
-    - Mobile Apps
+    - Client Apps
     - Mobile App Categories
     - App Protection Policies
     - App Configurations

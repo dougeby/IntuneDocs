@@ -132,7 +132,7 @@ Follow these steps to create the Datalert app in Intune for each platform. iOS i
 
 #### Assign the Datalert app to the corporate device group
 
-1. From the **Mobile apps - Apps** pane, select the iOS Datalert app that you created in the previous step.
+1. From the **Client apps - Apps** pane, select the iOS Datalert app that you created in the previous step.
 
 2. On the **Apps** pane, choose **Manage** > **Assignments**.
 
