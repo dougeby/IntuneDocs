@@ -48,7 +48,7 @@ To selectively remove company app data, create a wipe request by using the steps
 
 	![Screenshot of the Microsoft Intune pane](./media/apps-selective-wipe01.png)
 
-3.  On the **Mobile apps pane**, choose **App selective wipe**.
+3.  On the **Client apps pane**, choose **App selective wipe**.
 
 4.  Choose  **New wipe request**. The **New wipe request** pane opens.
 
@@ -66,7 +66,7 @@ The service creates and tracks a separate wipe request for each protected app on
 
 You can have a summarized report that shows the overall status of the wipe request, and includes the number of pending requests and failures. To get more details, follow these steps:
 
-1.  On the **Mobile Apps - App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
+1.  On the **Client Apps - App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
 	![Screenshot of the wipe request status in the App selective wipe pane](./media/wipe-request-status-1.png)
 
@@ -79,7 +79,7 @@ Additionally, you are able to see the device name, and its device type, which ca
 
 Wipes with pending status are displayed until you manually delete them. To manually delete a wipe request:
 
-1.  On the **Mobile Apps - App selective wipe** pane.
+1.  On the **Client Apps - App selective wipe** pane.
 
 2.  From the list, right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 
