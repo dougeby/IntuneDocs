@@ -4,8 +4,8 @@
 title: RBAC with Microsoft Intune
 description: Learn how Role-Based Access Control (RBAC) lets you control who can perform actions and make changes in Microsoft Intune.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
