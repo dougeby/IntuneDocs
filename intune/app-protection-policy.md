@@ -109,7 +109,7 @@ The MDM solution:
 
 -   Helping protect  company data from leaking to consumer apps and services
 
--   Applying restrictions (save-as, clipboard, PIN, etc.) to mobile apps
+-   Applying restrictions (save-as, clipboard, PIN, etc.) to client apps
 
 -   Wipe company data from apps without removing those apps from the device
 

@@ -53,7 +53,7 @@ To add a built-in app to your available apps in Microsoft Intune, do the followi
 ## Configure app information
 
 You can modify information about the built-in app. This information helps you to identify the app in Intune and helps users find the app in the company portal.
-1. In the **Mobile apps - Apps** pane, select the built-in app that you want to modify.  
+1. In the **Client apps - Apps** pane, select the built-in app that you want to modify.  
     A pane for the built-in app is displayed.
 2. Under **Manage**, select the **Properties** option.
 3. To modify the built-in app information, select the **Configure** option.

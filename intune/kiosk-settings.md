@@ -50,7 +50,7 @@ Kiosk profiles are used to configure Windows 10 devices to run one app, or run m
 #### Single full-screen app kiosks
 Enter the following settings:
 
-- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Mobile Apps](apps-add.md).
+- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Client Apps](apps-add.md).
 
     See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
@@ -67,7 +67,7 @@ Apps in this mode are available on the Start menu. These apps are the only apps 
 Enter the following settings:
 
 - **Add Win32 App**: A Win32 app is a traditional desktop app. Enter the **App name**, and the **Identifier**. The **Identifier** is the fully qualified pathname of the executable, with respect to the device.
-- **Add managed apps**: Select an existing managed app you added using [Mobile Apps in Intune](apps-add.md).
+- **Add managed apps**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md).
 - **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 - **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
 - **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
@@ -80,7 +80,7 @@ Enter the following settings:
 
 ## Kiosk web browser settings
 
-These settings control a web browser app on the kiosk. Be sure you deployed a web browser app to the kiosk devices using [Mobile Apps](apps-add.md).
+These settings control a web browser app on the kiosk. Be sure you deployed a web browser app to the kiosk devices using [Client Apps](apps-add.md).
 
 1. Enter the following settings:
 
@@ -120,7 +120,7 @@ Apps in this mode are available on the Start menu. These apps are the only apps 
 
 Enter the following settings:
 
-- **Add managed apps**: Select an existing managed app you added using [Mobile Apps in Intune](apps-add.md).
+- **Add managed apps**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md).
 - **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
 - **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
 - **User account type**: Add one or more user accounts that can use the apps you add. The supported options include: 
