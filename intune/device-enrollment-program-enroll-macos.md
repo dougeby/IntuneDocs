@@ -35,7 +35,7 @@ This article helps you set up macOS device enrollment for devices purchased thro
 
 To set up DEP enrollment, you use both the Intune and Apple DEP portals. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
-By the way, DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md).
+DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md) or [Apple School Manager](apple-school-manager-set-up-ios.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
