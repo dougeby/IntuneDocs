@@ -27,8 +27,13 @@ ms.custom: get-started
 
 ---
 
-
 # Microsoft Intune documentation guide
+
+This topic, as well as the entire Microsoft Intune documentation set, is continuously updated. If you have suggestions you'd like to see, leave feedback at the end of this topic. We'd appreciate hearing from you.
+
+The documentation reflects the layout of Microsoft Intune in the Azure portal (shown below), so that it is easier to find the information you need.
+
+![Azure portal workloads](./media/azure-portal-workloads.png)
 
 Use the following table to quickly find and understand the major areas of Microsoft Intune.
 

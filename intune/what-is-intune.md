@@ -69,14 +69,6 @@ Check the [Azure portal](https://docs.microsoft.com/azure/azure-preview-portal-s
 
 The [Azure portal](https://portal.azure.com) is where you can find the Microsoft Intune service. There are several services in Azure, many of which you may not use on a regular basis. For a quick guide to customize your portal experience, see [Getting started with Intune in the Azure portal](get-started-azure.md).
 
-## The Microsoft Intune documentation
-
-This topic, as well as the entire Microsoft Intune documentation set, is continuously updated. If you have suggestions you'd like to see, leave feedback in the topic comments. We'd love to hear from you.
-
-The documentation reflects the layout of Microsoft Intune in the Azure portal (shown below), so that it is easier to find the information you need.
-
-![Azure portal workloads](./media/azure-portal-workloads.png)
-
 ## What's new?
 
 To learn about the latest capabilities of Microsoft Intune, see [What's New](whats-new.md).
