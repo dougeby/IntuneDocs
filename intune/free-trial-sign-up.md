@@ -97,7 +97,7 @@ As mentioned above, if your organization has its own custom domain that you want
    ![Screenshot of Office 365 Admin Center - Verify the domain name being added](./media/domain-custom-verify.png)
 
    > [!NOTE]
-   > For TXT record verification details related to GoDaddy, see [Create DNS records at GoDaddy for Office 365](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a). For TXT record verification details related to Register.com, see [Create DNS records at Register.com for Office 365](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify).
+   > For TXT record verification details, see [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
 
 ## Admin experiences
 
