@@ -6,13 +6,6 @@
     href: what-is-intune.md
   - name: What is Intune for Education?
     href: introduction-intune-education.md
-  - name: Intune features in Azure
-    href: ui-changes.md
-    items:
-    - name: Changes to groups
-      href: groups-get-started.md
-    - name: Legacy Intune PC client
-      href: intune-legacy-pc-client.md
   - name: Sign up for a free trial
     href: free-trial-sign-up.md
   - name: What's new
@@ -20,10 +13,6 @@
     items:
     - name: What's new in the app UI
       href: whats-new-app-ui.md
-    - name: What's new archive (Azure portal)
-      href: whats-new-archive.md
-    - name: What's new archive (classic portal)
-      href: whats-new-archive-classic.md
   - name: Service description
     href: microsoft-intune-service-description.md
   - name: Known issues
@@ -803,5 +792,19 @@
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
+  - name: Archive
+    items:
+      - name: What's new archive
+      - items:
+        - name: What's new archive (Azure portal)
+          href: whats-new-archive.md
+        - name: What's new archive (classic portal)
+          href: whats-new-archive-classic.md
+      - name: Intune classic features in Azure
+        href: ui-changes.md
+      - name: Intune classic groups
+        href: groups-get-started.md
+      - name: Legacy Intune PC client
+        href: intune-legacy-pc-client.md
   - name: Glossary
     href: intune-glossary.md
