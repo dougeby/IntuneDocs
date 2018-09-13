@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ Learn how to create and assign Microsoft Intune app protection policies to your 
 
 ## Before you begin
 
-App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What are Microsoft Intune app protection policies?](app-protection-policy.md).
+App protection policies can be applied to apps running on devices that may or may not be managed by Intune. For a more detailed description of how app protection policies work and the scenarios supported by Intune app protection policies, see [What are Microsoft Intune app protection policies?](app-protection-policy.md)
 
 If you're looking for a list of MAM supported apps, see [MAM apps list](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
@@ -62,22 +62,20 @@ For information about adding your organization's line-of-business (LOB) apps to 
    > [!TIP]
    > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
 
-7. Choose **OK** to save this configuration. You are now back in the **Add a policy** pane. Choose **Create** to create the policy and save your settings.
-8. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade.
-9. Choose **Create** to create the policy and save your settings.
+7. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade.
+8. Choose **Create** to create the policy and save your settings.
 
 When you finish creating a policy as described in the previous procedure, it is not deployed to any users. To deploy a policy, see [Deploy a policy to users](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## Deploy a policy to users
 
-
 1. In the **App protection policies** pane, select a policy.
 
-1. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
+2. In the **Policy** pane, choose  **Assignments**, which opens the **Intune App Protection - Assignments** pane. Choose **Select groups to include** in the **Assignments** pane to open the **Select groups to include** pane.
 
    ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
 
-2.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+3.  A list of user groups is displayed on the **Add user group** pane. This list shows all the security groups in your **Azure Active Directory**. Select the user groups you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
 
     ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
@@ -129,12 +127,14 @@ In many organizations it’s common to allow end users to use both Intune Mobile
 
 Because Intune app protection policies are targeted to a user’s identity, the protection settings for a user traditionally apply to both enrolled (MDM managed) and non-enrolled devices (no MDM). Therefore, you can target an Intune app protection policy to either Intune enrolled or un-enrolled iOS and Android devices. You can have one protection policy for un-managed devices in which strict data loss prevention (DLP) controls are in place, and a separate protection policy for MDM managed devices, where the DLP controls may be a little more relaxed. 
 
-To create these policies, browse to **Client apps** > **App protection** policies in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
+To create these policies, browse to **Client apps** > **App protection policies** in the Intune console, and click **Add a policy**. You can also edit an existing app protection policy. If you want the app protection policy to apply to both managed and un-managed devices, confirm that the **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set the **Target to all app types** option to **No**. 
 
-For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+![Screenshot of the Add an policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
+
+For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
-> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
+> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:
