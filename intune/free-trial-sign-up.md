@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Sign up for a 30-day free trial of Microsoft Intune
-titleSuffix: Microsoft Intune
-description: Learn how to sign up for a 30-day free trial of Microsoft Intune.
+title: Quickstart - Try Microsoft Intune for free
+titlesuffix: 
+description: In this quickstart you will create a free trial subscription, understand supported configurations and networking requirements, and optionally configure your domain name.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2018
-ms.topic: conceptual
+ms.date: 09/13/2018
+ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -20,48 +20,94 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: get-started
+ms.custom: intune-azure
 
 ---
 
-# Sign up for a Microsoft Intune free trial
+# Quickstart: Try Microsoft Intune for free 
 
+Microsoft Intune helps you protect your workforce's corporate data by managing devices and apps. In this quickstart, you will create a free subscription to try Intune in a test environment.
 
-This article walks you through signing up for a trial of Intune standalone for the Azure portal.
+Intune provides mobile device management (MDM) and mobile app management (MAM) from a secure cloud-based service that is administered using the Microsoft Azure portal. Using Intune, you ensure your workforce's corporate resources (data, devices, and apps) are correctly configured, accessed, and updated, meeting your company's compliance policies and requirements. 
 
-1. Visit the [Intune Sign up](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) page and fill out the form to sign up for a trial subscription.
-2. If you have a work or school account and want to use that for your Intune trial, follow [these sign-in instructions](/intune/account-sign-up) instead.
+## Prerequisites
+Before setting up Microsoft Intune, review the following requirements:
 
-* If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Where's your company located?**.
+   - [Supported operating systems and browsers](supported-devices-browsers.md) 
+   - [Network configuration requirements and bandwidth](network-bandwidth-use.md)
 
-2. At the end of the sign-up process, you get a message with your new account information. <br/> 
+## Sign up for a Microsoft Intune free trial
 
-![Image of your account information](./media/2-end-of-sign-up-process.png) <br/>
+Trying out Intune is free for 30 days. If you already have a work or school account, **sign in** with that account and add Intune to your subscription. Otherwise, you can **sign up** for a new account to use Intune for your organization.
 
-At this point, if you click **You're ready to go**, you are taken to the Office 365 Admin Center, where you can add users to your test environment. <br/><br/>However, if you want to go directly into the Intune Azure portal, open a new browser window, and enter **https://portal.azure.com** in the address bar. You are taken to the Azure sign-in page where you can use the credentials you were given to sign in. Use this address whenever you want to sign into your Intune trial. <br/> ![Image of the Azure portal sign-in page](./media/azure-portal-signin.png)
+> [!IMPORTANT]
+> You can't combine an existing work or school account after you sign up for a new account.
 
-The first time you sign on to the Intune [Azure portal](https://portal.azure.com), you may not see Intune on your Azure dashboard. To add the Intune service to your Azure dashboard:
-1. Choose **All services >** in the list of Azure services to the left of the dashboard, and enter **Intune** in the search box.
-2. Choose **Intune** from the list, and select the star to add the service to the list of services.<br/> ![Image of selecting Microsoft Intune within the Azure portal](./media/azure-add-intune1.png)
-3. Then choose **Intune** in the list of services to open the Intune dashboard.
+1. Go to the [Microsoft Intune Trial](https://go.microsoft.com/fwlink/?linkid=2019088) page and fill out the form.
 
-When you sign up for a trial, you will also receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your trial is active.
+    ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-full-browser.png)
 
-## Keeping the admin experiences straight
+    If most of your IT operations and users are in a different locale than you, you may want to select that locale under **Country or region**. Azure uses your regional information to deliver the right services. This setting can't be changed later.
+
+2. Create an account using your company name followed by **.onmicrosoft.com**. 
+
+    ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-user-id.png)
+
+    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal discribed later in this article.
+
+3. View your new account information at the end of the sign-up process.
+
+    ![Image of your account information](./media/intune-end-of-sign-up-process.png) 
+
+## Sign in to the Azure portal
+
+1. Open a new browser window and enter **https://portal.azure.com** in the address bar. 
+2. Use the credentials you were given in the steps above to sign in.
+
+    ![Image of the Azure portal sign-in page](./media/azure-portal-signin.png)
+
+3. To view Microsoft Intune in the Azure port, select **All services** from the sidebar on the left side of the page.
+4. Search for **Microsoft Intune** in the filter box and select it.
+5. Select the **star** to add Intune to the bottom of the list of your favorite services and open the Intune dashboard.
+
+When you sign up for a trial, you will also receive an email message that contains your account information and the email address that you provided during the sign-up process. This email confirms your trial is active.
+
+## Configure your custom domain name (Optional)
+
+As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Office 365 Admin Portal. You will add, verify and configure your custom domain name.  
+
+> [!IMPORTANT]
+> You cannot rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
+
+1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign in using your administrator account.
+
+2. In the navigation pane, choose **Setup** > **Domains** > **Add domain**.
+
+3. Type your custom domain name. Then, select **Next**.
+
+   ![Screenshot of Office 365 Admin Center with Settings > Domains selected and a new domain name being added](./media/domain-custom-add.png)
+
+4. Verify that you are the owner of the domain that you entered in the previous. 
+    
+    Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address then what was provided when the domain was registered.
+
+   ![Screenshot of Office 365 Admin Center - Verify the domain name being added](./media/domain-custom-verify.png)
+
+   > [!NOTE]
+   > For TXT record verification details, see [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
+
+## Admin experiences
 
 There are two portals that you might use:
-- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
-- The Office 365 Admin center ([portal.office.com](https://portal.office.com)) where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
+- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
+- The Office 365 Admin center ([portal.office.com](https://portal.office.com)) is where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
 
 ## Next steps
 
-### Integration with other products
-Learn more about using your Azure Active Directory user accounts with Intune:
-- [Identity requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
-- [Directory synchronization requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
-- [Multi-factor authentication requirements](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
 
-Learn more about using [Intune with System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
+> [!div class="nextstepaction"]
+> [Get started managing users](get-started-users.md)
