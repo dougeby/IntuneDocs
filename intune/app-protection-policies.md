@@ -131,10 +131,10 @@ To create these policies, browse to **Client apps** > **App protection policies*
 
 ![Screenshot of the Add an policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
 
-For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
-> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
+> For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:
