@@ -45,13 +45,13 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 
 ## What’s in the SDK
 
-The Intune App SDK for iOS includes a static library, resource files, API headers, a debug settings .plist file, and a configurator tool. Mobile apps might simply include the resource files and statically link to the libraries for most policy enforcement. Advanced Intune APP features are enforced through APIs.
+The Intune App SDK for iOS includes a static library, resource files, API headers, a debug settings .plist file, and a configurator tool. Client apps might simply include the resource files and statically link to the libraries for most policy enforcement. Advanced Intune APP features are enforced through APIs.
 
 This guide covers the use of the following components of the Intune App SDK for iOS:
 
-* **libIntuneMAM.a**: The Intune App SDK static library. If your app does not use extensions, link this library to your project to enable your app for Intune mobile application management.
+* **libIntuneMAM.a**: The Intune App SDK static library. If your app does not use extensions, link this library to your project to enable your app for Intune client application management.
 
-* **IntuneMAM.framework**: The Intune App SDK framework. Link this framework to your project to enable your app for Intune mobile application management. Use the framework instead of the static library if your app uses extensions, so that your project does not create multiple copies of the static library.
+* **IntuneMAM.framework**: The Intune App SDK framework. Link this framework to your project to enable your app for Intune client application management. Use the framework instead of the static library if your app uses extensions, so that your project does not create multiple copies of the static library.
 
 * **IntuneMAMResources.bundle**: A resource bundle that has resources that the SDK relies on.
 
