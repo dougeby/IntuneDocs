@@ -796,17 +796,17 @@
       href: troubleshoot-exchange-connector.md
   - name: Archive
     items:
-      - name: What's new archive
-      - items:
-        - name: What's new archive (Azure portal)
-          href: whats-new-archive.md
-        - name: What's new archive (classic portal)
-          href: whats-new-archive-classic.md
-      - name: Intune classic features in Azure
-        href: ui-changes.md
-      - name: Intune classic groups
-        href: groups-get-started.md
-      - name: Legacy Intune PC client
-        href: intune-legacy-pc-client.md
+    - name: What's new archive
+      items:
+      - name: What's new archive (Azure portal)
+        href: whats-new-archive.md
+      - name: What's new archive (classic portal)
+        href: whats-new-archive-classic.md
+    - name: Intune classic features in Azure
+      href: ui-changes.md
+    - name: Intune classic groups
+      href: groups-get-started.md
+    - name: Legacy Intune PC client
+      href: intune-legacy-pc-client.md
   - name: Glossary
     href: intune-glossary.md
