@@ -22,6 +22,8 @@
 - name: Quickstarts
   href: get-started-evaluation.md
   items:
+  - name: Try Microsoft Intune for free
+    href: free-trial-sign-up.md    
   - name: Navigating the Azure portal
     href: get-started-azure.md
   - name: Create a user
