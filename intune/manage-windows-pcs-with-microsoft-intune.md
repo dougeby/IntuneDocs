@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Manage PCs with client software 
-titlesuffix: Microsoft Intune
+title: Manage PCs with client software in Microsoft Intune - Azure | Microsoft Docs
 description: Manage Windows PCs by installing the Intune client software.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/013/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -63,6 +62,9 @@ The following are software requirements for installing the client software:
 |Administrative permissions|The account that installs the client software must have local administrator permissions on that device.|
 |Windows Installer 3.1|The PC must have, at a minimum, Windows Installer 3.1.<br /><br />To view the version of Windows Installer on a PC:<br /><br />  On the PC, right-click **%windir%\System32\msiexec.exe**, and then click **Properties**.<br /><br />You can download the latest version of Windows Installer from [Windows Installer Redistributables](http://go.microsoft.com/fwlink/?LinkID=234258) on the Microsoft Developer Network website.|
 |Remove incompatible client software|Before you install the Intune client software, uninstall any Configuration Manager, Operations Manager, and Service Manager client software from that PC.|
+
+> [!WARNING]
+> Microsoft announced that [Windows 7 support ends on January 14th 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). On this date, Intune also deprecates support for devices running Windows 7. Existing policies and profiles are still applied to these devices. But, any devices running Windows 7 won’t use new security settings, features, or enhancements. Microsoft strongly recommends that you move to Windows 10 to prevent any service or support interruptions. 
 
 ## Deploying the Intune software client
 As an Intune admin, you can make the Intune software client available to users in a variety of ways. For guidance, see [Install the Intune software client on Windows PCs](install-the-windows-pc-client-with-microsoft-intune.md).
