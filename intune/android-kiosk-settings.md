@@ -81,7 +81,7 @@ For each app that you want to be available on the kiosk devices, follow these st
 3. Choose **Configure** and provide the required information. You don't need to add a Logo image because it will be automatically retrieved from the web site's favicon.ico.
 4. Choose **OK** > **Add**.
 
-Be sure you deployed a web browser app to the kiosk devices using [Mobile Apps](apps-add.md).
+Be sure you deployed a web app to the kiosk devices. For more informtaion, see [Add web apps to Microsoft Intune](web-app.md).
 
 ### Create a multi-app kiosk profile
 

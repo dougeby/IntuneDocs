@@ -81,4 +81,4 @@ The Better Mobile app authorization process follows:
 
 ## Next steps
 
--   [Set up Better Mobile apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+-   [Set up Better Client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
