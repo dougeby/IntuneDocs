@@ -129,6 +129,18 @@ However, there are some limitations to be aware of, like:
 
 -   You cannot provision company Wi-Fi and VPN settings on these devices.
 
+## App Protection Global Policy
+
+If a OneDrive administrator browses to **admin.office.com** and selects **Device** access, they have the ability to set **Mobile application management** controls to the OneDrive and SharePoint client apps. 
+
+The settings, made available to the OneDrive Admin console, configure a special Intune app protection policy called the **Global** policy. This global policy is applicable to all users in your tenant, and has no way to control the policy targeting. 
+
+Once enabled, the OneDrive and SharePoint apps for iOS and Android will be protected with the selected settings by default. An IT Pro may edit this policy in the Intune console once created and add more targeted apps and modify any policy setting. 
+
+By default, there can only be one **Global** policy per tenant. However, the [Intune Graph APIs](intune-graph-apis.md) can be used to create extra global policies per tenant, but is not recommended. Creating extra global polices isn’t recommended because troubleshooting the implementation of such a policy can become complicated.
+
+While the **Global** policy applies to all users in your tenant, any standard Intune app protection policy will override these settings.
+
 
 ## Multi-identity
 
