@@ -28,16 +28,17 @@ ms.custom: intune-azure
 
 # Create a security baseline in Intune
 
-Security baselines is available in Microsoft Intune on devices running Windows 10 and later. This feature includes many Intune settings to help secure and protect your users and devices. It also automatically sets these settings to values recommended by Microsoft. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
+Security baselines are available in Microsoft Intune on devices running Windows 10 and later. This feature includes many Intune settings to help secure and protect your users and devices. It also automatically sets these settings to values recommended by Microsoft. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
 
-The goal of using security baselines is to provide an end-to-end secure workflow when working with different services, including Windows Defender and Microsoft 365. Some of the benefits include:
+The goal of using security baselines is to provide an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
-- A security baseline includes the best practices and recommendations on settings that impact security. Intune partners with Advanced Threat Protection (ATP) and other services to provide guidance and recommendations.
+- A security baseline includes the best practices and recommendations on settings that impact security. Intune partners with the same Windows security team that creates Group Policy security baselines to offer their extensive experience for guidance and recommendations.
 - If you're brand new to Intune, and not sure where to start, then security baselines gives you an advantage. You can quickly create and deploy a secure profile to help protect your organization's resources and data.
+- If you're currently using Group Policy, migrating to Intune for management is much easier with these baselines natively built into Intune's modern management platform.
 
 Security baselines creates a configuration profile in Intune. This profile includes all the settings in the baseline. You then apply or assign this profile to your users, groups, and devices.
 
-After the profile is assigned, you can also monitor the profile, and monitor the baseline. For example, you can see which devices match the baseline, or don't match the baseline.
+After the profile is assigned, you can monitor the profile, and monitor the baseline. For example, you can see which devices match the baseline, or don't match the baseline.
 
 This topic shows you how to use security baselines to create a profile, assign the profile, and monitor the profile.
 
@@ -50,7 +51,7 @@ This topic shows you how to use security baselines to create a profile, assign t
 
     INSERT IMAGE
 
-3. Select the **MDM Security Baseline** > **Create profile**.
+3. Select the baseline you'd like to use, for example: **MDM Security Baseline for October 2018** > **Create profile**.
 4. In **Basics**, enter the following properties:
 
     - **Name**: Enter a name for your security baselines profile. For example, enter `Windows 10 MDM baseline - Oct 2018`.
