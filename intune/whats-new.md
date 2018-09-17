@@ -746,7 +746,34 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
-### Plan for Change: Move to Intune on Azure for your Mobile Device Management <!—2683117-->
+### Plan for Change: Intune will move to support macOS 10.12 and higher in December <!--2970975--> 
+
+Apple has just released macOS 10.14. Subsequently, Intune will move to support macOS 10.12 and higher in December 2018. 
+
+### How does this affect me?
+
+Starting in December, end users on devices with macOS 10.11 and prior won’t be able to use the Company Portal to enroll into Intune. They will need to upgrade their device to macOS 10.12 or higher and upgrade the Company Portal app to the latest version to continue to receive support and new features. 
+
+macOS versions 10.12 and higher are currently supported on: 
+- MacBook (late 2009 or newer). 
+- iMac (late 2009 or newer)
+- MacBook Air (late 2010 or newer).  
+- MacBook Pro (late 2010 or newer). 
+- Mac Mini (late 2010 or newer). 
+- Mac Pro (late 2010 or newer). 
+
+After December, end users who have devices other than the ones listed above will not be able to access the latest version of the Company Portal app for macOS. Existing enrolled devices running unsupported versions below macOS 10.12 will continue to be managed and listed in the Intune Admin Console.
+
+### What do I need to do to prepare for this change?
+
+Request your end users to upgrade their devices to a supported OS version before December 2018. 
+- Check your Intune reporting in the Intune on Azure console, to see what devices or users may be affected. Go to Devices > All devices and filter by OS. You can add in additional columns to help identify who in your organization has devices running macOS 10.11. 
+- If you are using hybrid mobile device management (MDM), go to Assets and Compliance > Devices in the Configuration Manager console, right-click the columns to add the Operating System and Client Version columns, and sort by OS. Note that hybrid MDM is now deprecated, and you should move to Intune on Azure as soon as possible. 
+ 
+Additional Information
+[https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
+ 
+### Plan for Change: Move to Intune on Azure for your Mobile Device Management <!--2683117-->
 
 Since launching on Azure over a year ago, Intune has added hundreds of new customer-requested and market-leading service capabilities, and now offers far more capabilities than those offered through [hybrid]( https://aka.ms/hybrid_MDM) Mobile Device Management (MDM). Intune on Azure provides a more integrated, streamlined administrative experience for your enterprise mobility needs.
 

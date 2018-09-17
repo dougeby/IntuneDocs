@@ -60,6 +60,9 @@ The Always-on VPN setting will be in **Device configuration** > **Profiles** > *
 ### Outlook for iOS and Android app configuration policy <!--1828527 -->
 You'll be able to create an Outlook for iOS and Android app configuration policy for iOS. Additional configuration settings will be added as they are enabled for Outlook for iOS and Android.
 
+###  Windows line-of-business (LOB) app file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You will be able to add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane will be displayed which will allow you to select the **App type**. For Windows LOB apps, you will select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+
 ### Remotely lock noncompliant devices <!-- 2064495 -->
 When a device isn't compliant, you'll be able to create an action on the compliance policy that locks the device remotely. In Intune > **Device compliance**, create a new policy, or select an existing policy. Select **Actions for noncompliance** > **Add**, and choose to remotely lock the device.
 Supported on: 
