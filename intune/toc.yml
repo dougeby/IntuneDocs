@@ -28,6 +28,8 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: get-started-groups.md
+  - name: Set up auto enrollment
+    href: quickstart-setup-auto-enrollment.md
   - name: Assign policies
     href: get-started-policies.md
   - name: Enroll devices
