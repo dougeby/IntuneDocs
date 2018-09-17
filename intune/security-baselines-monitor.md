@@ -36,6 +36,8 @@ This topic walks you through both monitoring options.
 
 ## Monitor the baseline and your devices
 
+Monitoring the baseline gives you insight into the security state of your devices based on Microsoft's recommendations.
+
 1. In the [Azure portal](https://portal.azure.com/), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Security Baselines** > **MDM Security Baseline**.
 3. In **Overview**, the graph shows how many devices are impacted by the baseline, and the different statuses:
@@ -44,10 +46,10 @@ This topic walks you through both monitoring options.
 
   The following status are available:
 
-  - **Matches baseline**: **CONFIRM DESCRIPTION**All the settings in the baseline match the Microsoft-recommended settings. 
-  - **Does not match baseline**: **CONFIRM DESCRIPTION**At least one setting in the baseline doesn't match the Microsoft-recommended settings.
-  - **Misconfigured**: **NEED DESCRIPTION**
-  - **Not applicable**: **NEED DESCRIPTION**
+  - **Matches baseline**: All the settings in the baseline match the Microsoft-recommended settings. 
+  - **Does not match baseline**: At least one setting in the baseline doesn't match the Microsoft-recommended settings.
+  - **Misconfigured**: At least one setting is not properly configured. This means the setting is in a conflict, error, or pending state.
+  - **Not applicable**: At least one setting is not applicable, and thus is not applied.
 
 4. Select one of that statuses that has devices. For example, select the **Device does not match baseline** status:
 
@@ -58,6 +60,8 @@ This topic walks you through both monitoring options.
     INSERT IMAGE
 
 ## Monitor the profile
+
+Monitoring the profile gives you insight into the deployment state of your devices, but not the security state based on Microsoft's baseline recommendations.
 
 1. In Intune, select **Security Baselines** > **MDM Security Baseline** > **Profiles created**.
 2. Select a profile. In **Overview**, the images shows you how many devices have this profile assigned: 
