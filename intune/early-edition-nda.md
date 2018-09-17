@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,9 @@ The Always-on VPN setting will be in **Device configuration** > **Profiles** > *
 ### Outlook for iOS and Android app configuration policy <!--1828527 -->
 You'll be able to create an Outlook for iOS and Android app configuration policy for iOS. Additional configuration settings will be added as they are enabled for Outlook for iOS and Android.
 
+###  Windows line-of-business (LOB) app file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You will be able to add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane will be displayed which will allow you to select the **App type**. For Windows LOB apps, you will select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+
 ### Remotely lock noncompliant devices <!-- 2064495 -->
 When a device isn't compliant, you'll be able to create an action on the compliance policy that locks the device remotely. In Intune > **Device compliance**, create a new policy, or select an existing policy. Select **Actions for noncompliance** > **Add**, and choose to remotely lock the device.
 Supported on: 
@@ -75,6 +78,9 @@ You'll be able to separate the control of Intune APP data transfer settings on i
 ### Use a pre-shared key in a Windows 10 Wi-Fi profile <!-- 2662938 -->
 You'll be able to use a pre-shared key (PSK) with the WPA/WPA2-Personal security protocol to authenticate a Wi-Fi configuration profile for Windows 10.
 Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
+
+### App Protection Policy (APP) settings for web data <!-- 2662995 eeready -->
+APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
 
 ### Autopilot device sync frequency increasing to every 12 hours <!-- 2753673 -->
 Autopilot devices will synchronize every 12 hours instead of every 24 hours.
