@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,6 +75,9 @@ You'll be able to separate the control of Intune APP data transfer settings on i
 ### Use a pre-shared key in a Windows 10 Wi-Fi profile <!-- 2662938 -->
 You'll be able to use a pre-shared key (PSK) with the WPA/WPA2-Personal security protocol to authenticate a Wi-Fi configuration profile for Windows 10.
 Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
+
+### App Protection Policy (APP) settings for web data <!-- 2662995 eeready -->
+APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
 
 ### Autopilot device sync frequency increasing to every 12 hours <!-- 2753673 -->
 Autopilot devices will synchronize every 12 hours instead of every 24 hours.
