@@ -9,7 +9,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/17/2017
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,9 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 >[!IMPORTANT]
 > For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
+
+>[!NOTE]
+>For information about troubleshooting Microsoft Intune related issues, see the [Troubleshoot section](help-desk-operators.md) of the Intune documentation.
 
 ## Create an online support ticket
 
@@ -90,3 +93,4 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Troubleshoot Intune issues](help-desk-operators.md)

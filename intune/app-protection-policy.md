@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -129,7 +129,7 @@ However, there are some limitations to be aware of, like:
 
 -   You cannot provision company Wi-Fi and VPN settings on these devices.
 
-## App Protection Global Policy
+## App protection Global policy
 
 If a OneDrive administrator browses to **admin.office.com** and selects **Device** access, they have the ability to set **Mobile application management** controls to the OneDrive and SharePoint client apps. 
 
