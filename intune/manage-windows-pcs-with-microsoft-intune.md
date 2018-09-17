@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/013/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,7 +64,7 @@ The following are software requirements for installing the client software:
 |Remove incompatible client software|Before you install the Intune client software, uninstall any Configuration Manager, Operations Manager, and Service Manager client software from that PC.|
 
 > [!WARNING]
-> Microsoft announced that [Windows 7 support ends on January 14th 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). On this date, Intune also deprecates support for devices running Windows 7. Existing policies and profiles are still applied to these devices. But, any devices running Windows 7 won’t use new security settings, features, or enhancements. Microsoft strongly recommends that you move to Windows 10 to prevent any service or support interruptions. 
+> Microsoft announced that [Windows 7 support ends on January 14th 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). On this date, Intune also retires support for devices running Windows 7. Microsoft strongly recommends that you move to Windows 10 to prevent any service or support disruptions. 
 
 ## Deploying the Intune software client
 As an Intune admin, you can make the Intune software client available to users in a variety of ways. For guidance, see [Install the Intune software client on Windows PCs](install-the-windows-pc-client-with-microsoft-intune.md).
