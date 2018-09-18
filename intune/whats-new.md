@@ -803,7 +803,7 @@ As a Microsoft Premier customer, you can currently use the Microsoft Premier Onl
 #### How does this affect me?
 After December 3, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you will not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Support requests created in the MPO portal cannot be viewed in the Azure portal, so you should stop creating support requests in MPO.  
 
-If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
+If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
 
 Note that only users with Global Administrator, Intune Service Administrator, and Service Support Administrator roles can create support tickets in the Azure portal.
 
