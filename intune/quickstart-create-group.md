@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quickstart - Use a group to manage users
+title: Quickstart - Create a group to manage users
 titlesuffix: 
 description: In this quickstart you will use Intune to create a group based on existing users.
 keywords:
@@ -27,9 +27,9 @@ ms.custom: intune-azure
 
 ---
 
-# Quickstart: Use groups to manage users
+# Quickstart: Create a group to manage users
 
-In this quickstart, you will use Intune to create a group based on existing users. Groups are used to manage your users and control your employees' access to your company resources. These resources can be part of your company's intranet or external resources, such as SharePoint sites, SaaS apps, or web apps.
+In this quickstart, you will use Intune to create a group based on an existing user. Groups are used to manage your users and control your employees' access to your company resources. These resources can be part of your company's intranet or can be external resources, such as SharePoint sites, SaaS apps, or web apps.
 
 >[!NOTE]
 >Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience.
@@ -37,11 +37,11 @@ In this quickstart, you will use Intune to create a group based on existing user
 ## Prerequisites
 
 - If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
-- [Quickstart - Create a user in Intune](quickstart-create-user.md) - Before starting this quickstart, you should follow the steps to create a user and assign a license to it using Intune.
+- Before starting this quickstart, complete the following: [Quickstart - Create a user in Intune](quickstart-create-user.md).
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal  by choosing **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 
 ## Create a group
 1. Once you've opened the **Microsoft Intune** pane, select **Groups** > **New group**.
@@ -49,16 +49,17 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 3. Set the **Name** to "Contoso Testers" and add a **Description** for the group.
 4. Set the **Membership type** as **Assigned**. 
 5. Click **Members** and select **Members** for the group from the existing list.
-    > [!NOTE]
-    > Completing [Quickstart - Create a user in Intune](quickstart-create-user.md) is required before starting this quickstart.
+
+    ![Screenshot of creating a group in Microsoft Intune](./media/quickstart-use-groups-01.png)
+
 6. Click **Select**.
 7. Click **Create**.
 
-If you've successfully created a group, it will appear in the list of **All groups**. If it doesn't appear, look for a message at the top right of the window for details.
+If you've successfully created a group, it will appear in the list of **All groups**. 
 
 ## Next steps
 
-In this quickstart, you used Intune to created a group based on existing users.
+In this quickstart, you used Intune to created a group based on an existing user.
 
 > [!div class="nextstepaction"]
 > [Quickstart - Create and assign a custom role in Intune](quickstart-create-custom-role.md)
