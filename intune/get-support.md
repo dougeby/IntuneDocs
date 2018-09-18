@@ -6,10 +6,10 @@ title: How to get support for Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Get online and telephone support for Microsoft Intune paid and trial subscriptions.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 09/17/2017
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,6 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 
 # optional metadata
 
-#ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: cacamp
@@ -36,20 +35,30 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 >[!IMPORTANT]
 > For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
+> 
+> For information about troubleshooting issues related to Microsoft Intune, see the [Troubleshoot section](help-desk-operators.md) of the Intune documentation.
 
->[!NOTE]
->For information about troubleshooting Microsoft Intune related issues, see the [Troubleshoot section](help-desk-operators.md) of the Intune documentation.
+
+As an IT admin, you can use the **Help + Support** option to file an on-line support ticket for Intune from the Azure portal. To create a support ticket, your account must have one of the following roles in Azure Active Directory: 
+
+- Intune administrator 
+- Global administrator 
+- Service administrator  
+
+For details, see [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+
+
+## Get context-sensitive help 
+After you  sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune. 
+
+If the common solutions don't help, you can select **support request** to create a **New support request**. When you select *New support request*, you open the **Basics** blade of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket). 
 
 ## Create an online support ticket
 
-As an IT admin, you can file a support ticket from the Azure portal by using the following steps:
->[!NOTE]
->You must be an Intune Service Administrator or Global Administrator to create an online support ticket. For details, see [Assigning administrator roles](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
-1. Log on to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, choose the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+   	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
-	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
-
-2. On the Azure Help and support page, select **New support request**.
+2. On the Azure *Help _+_ support* page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
 
@@ -81,13 +90,20 @@ As an IT admin, you can file a support ticket from the Azure portal by using the
    - **Time**
    - **Supplemental data**
 
-     Choose **Next**.
+   Choose **Next**.
 
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
 
 >[!IMPORTANT]
 >If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
+
+## View support requests
+You can view a support request from within the Azure portal. To do so:
+
+1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+
+2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
