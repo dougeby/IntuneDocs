@@ -37,7 +37,7 @@ In this quickstart, you will use Intune to create a group based on an existing u
 ## Prerequisites
 
 - If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
-- Before starting this quickstart, complete the following: [Quickstart - Create a user in Intune](quickstart-create-user.md).
+- Before starting this quickstart, complete the [create a user](quickstart-create-user.md) quickstart.
 
 ## Sign in to Intune
 
@@ -62,4 +62,4 @@ If you've successfully created the group, it will appear in the list of **All gr
 In this quickstart, you used Intune to created a group based on an existing user.
 
 > [!div class="nextstepaction"]
-> [Quickstart - Create and assign a custom role in Intune](quickstart-create-custom-role.md)
+> [Quickstart - Set up automatic enrollment](quickstart-setup-auto-enrollment.md)
