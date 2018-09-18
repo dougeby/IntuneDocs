@@ -55,7 +55,7 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 6. Click **Select**.
 7. Click **Create**.
 
-If you've successfully created a group, it will appear in the list of **All groups**. 
+If you've successfully created the group, it will appear in the list of **All groups**. 
 
 ## Next steps
 
