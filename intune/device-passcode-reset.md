@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 09/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,28 +23,41 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+#SME:ileanawu
 ---
 
 # Reset or remove a device passcode in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-To create a new passcode for a device, use the **Remove passcode** action. This action prompts a PIN reset for the work profile only. Device PIN resets aren't supported for Android work profiles.
+This document discusses both device level passcode reset as well as work profile passcode reset on Android enterprise (formerly called Android for Work, or AfW) devices. It is important to note this distinction as requirements for each can vary. A device level passcode reset resets the passcode for the entire device. A work profile passcode reset resets the passcode only for the user’s work profile on Android enterprise devices.
 
-## Work profile PIN reset supported platforms
+## Supported platforms for device level passcode reset
 
-- Android devices enrolled with a work profile, version 8.0 and later 
-- Android devices on version 6.0 or earlier
-- Android enterprise kiosk devices
-- iOS 
- 	 
-## Unsupported platforms
+| Platform | Supported? |
+| ---- | ---- |
+| Android devices on version 6.x or earlier | Yes |
+| Android enterprise devices in kiosk mode | Yes |
+| iOS devices | Yes |
+| Android devices enrolled with a work profile, version 7.0 and earlier | No |
+| Android devices on version 7.0 or later | No |
+| macOS | No |
+| Windows | No |
 
-- Android devices enrolled with a Work profile, version 7.0 and earlier
-- Android devices on version 7.0 or later
-- macOS
-- Windows
+For Android devices, this effectively means that device level passcode reset is only supported on devices running 6.x or earlier, or on Android enterprise devices running in Kiosk mode. This is because Google removed support for resetting an Android 7 device’s passcode/password from within a Device Administrator granted app and applies to all MDM vendors.
+
+## Supported platforms for Android enterprise work profile passcode reset
+
+| Platform | Supported? |
+| ---- | ---- |
+| Android enterprise devices enrolled with a work profile and running version 8.0 and later | Yes |
+| Android enterprise devices enrolled with a work profile and running version 7.x and earlier | No |
+| Android devices running version 7.x and earlier | No |
+| iOS | No |
+| macOS | No |
+| iOS | No |
+
+To create a new work profile passcode, use the Reset Passcode action. This action prompts a passcode reset and creates a new, temporary passcode for the work profile only. 
 
 ## Reset a passcode
 
@@ -53,15 +66,16 @@ To create a new passcode for a device, use the **Remove passcode** action. This 
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, select a device, and choose **...More**. Then choose the **Remove passcode** device remote action.
 
-## Resetting Android work profile passcodes
+## Reset Android work profile passcodes
 
-Supported Android work profile devices receive a new managed profile unlock password or a managed profile challenge for the end user. 
+Supported Android Enterprise devices enrolled with a work profile receive a new managed profile unlock password or a managed profile challenge for the end user.
 
-For Android 8.0 Work profile devices, end users get notified to activate their reset passcode right after enrollment is completed. The notification is displayed if a Work profile password is required and set. Once their passcode is entered, the notification is dismissed.
+For Android Enterprise devices running version 8.x or later and enrolled with a work profile, end users get notified to activate their reset passcode right after enrollment is completed. The notification is displayed if a work profile password is required and set. Once their passcode is entered, the notification is dismissed.
 
-## Resetting iOS passcodes
 
-Passcodes are removed from iOS devices. If there's a passcode compliance policy set, then the device prompts the user to set a new passcode in Settings. 
+## Remove iOS passcodes
+
+Instead of being reset, passcodes are removed from iOS devices. If there's a passcode compliance policy set, the device will prompt the user to set a new passcode in Settings.
 
 ## Next steps
 
