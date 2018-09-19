@@ -142,7 +142,7 @@ Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/w
 #### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
 
-### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
+#### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
 A confirmation is now required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
 
 #### Block Windows personal device enrollments <!-- 1849498 -->
@@ -157,8 +157,6 @@ There are [new Windows Autopilot profile options](enrollment-autopilot.md#create
 Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
 
 
-#### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
-You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
 
 ### Device management
 
@@ -171,7 +169,7 @@ To be consistent with the Graph API, the Intune user interface and documentation
 - **Factory reset** will be changed to **wipe**
 
 #### Confirmation dialog if admin tries to delete MDM Push Certificate <!-- 297909500-->
-If anyone tries to delete an Apple MDM Push certificate, a confirmation dialog box displayss the number of related iOS and macOS devices. If the certificate is deleted, these devices will need to be re-enrolled.
+If anyone tries to delete an Apple MDM Push certificate, a confirmation dialog box displays the number of related iOS and macOS devices. If the certificate is deleted, these devices will need to be re-enrolled.
 
 ### Additional security settings for Windows installer <!-- 2282430 -->
 You can allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue.​ You can direct the Windows installer to use elevated permissions when it installs any program on a system.​ Additionally, you can enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. The functionality for these options are disabled by default. 
@@ -773,29 +771,6 @@ Request your end users to upgrade their devices to a supported OS version before
 Additional Information
 [https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
  
-### Plan for Change: Move to Intune on Azure for your Mobile Device Management <!--2683117-->
-
-Since launching on Azure over a year ago, Intune has added hundreds of new customer-requested and market-leading service capabilities, and now offers far more capabilities than those offered through [hybrid]( https://aka.ms/hybrid_MDM) Mobile Device Management (MDM). Intune on Azure provides a more integrated, streamlined administrative experience for your enterprise mobility needs.
-
-As a result, we see that most Enterprise Mobility + Security (EMS) customers choose Intune on Azure over hybrid MDM. The number of customers using hybrid MDM continues to decrease as more customers move to the cloud. Therefore, on September 1, 2019, we will retire the hybrid MDM service offering. Please plan your migration to Intune on Azure for your MDM needs. We have tools, case studies, and other resources to help with this migration.
-
-Note: this change does not affect on-premises System Center Configuration Manager (ConfigMgr) or [co-management]( https://aka.ms/Intune_comanagement) for Windows 10 devices. If you are unsure whether you are using hybrid MDM, go to the Administration workspace of the ConfigMgr console, expand Cloud Services, and click Microsoft Intune Subscriptions. If you have a Microsoft Intune subscription setup, your tenant is configured for hybrid MDM.
-
-#### How does this affect me?
--	Microsoft will support your hybrid MDM usage for the next year. We will continue to release major bug fixes and ensure existing functionality is supported on OS versions, such as enrollment on iOS 12. We will not invest in new features for hybrid MDM.
--	We do not expect any end user impact to this change, provided you migrate to Intune on Azure before the end of the hybrid MDM offering.
--	Licensing remains as is; Intune on Azure licenses are included with hybrid MDM.
--	We will begin to block the onboarding of new hybrid MDM customers starting in November 2018.
--	On September 1, 2019, any remaining hybrid MDM devices will no longer receive policy, apps, or security updates.
-
-#### What do I need to do to prepare for this change?
--	Start planning your migration for MDM from the ConfigMgr console to Azure. Many customers, including Microsoft IT, have gone through this process. Read this [case study]( https://aka.ms/Intune_MSFT) sharing best practices and lessons learned from Microsoft’s own migration.  
--	Review [tools]( https://aka.ms/hybrid_tools) and [documentation]( https://aka.ms/intune_migrate) we’ve created to simplify the process of moving from hybrid MDM to Intune on Azure. Many customers, including some of our largest and smallest, have successfully used these tools and guidance to migrate.
--	Contact your partner of record or Fast Track for assistance. [FastTrack for Microsoft 365]( https://aka.ms/hybrid_fasttrack) can assist in your migration from hybrid MDM to Intune on Azure. More information on how to open this specific type of FastTrack ticket is included in the Additional Information link.
-
-#### Additional Information
-[Intune Support Blog post](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/)
-
 
 ### Plan for Change: New Intune support experience for Premier customers 
 As a Microsoft Premier customer, you can currently use the Microsoft Premier Online (MPO) portal (premier.microsoft.com) and Intune on Azure (portal.azure.com) to create support requests for Intune. Starting on December 3, 2018, to continue enhancing the Premier support experience, you will be able to create support requests only in Intune on Azure.
@@ -872,34 +847,13 @@ We recommend that you proactively remove TLS 1.0 and 1.1 dependencies in your en
 **Additional Information**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
 
-### Plan for Change: Change in support for the Microsoft Intune App SDK for Cordova plugin
-Intune is ending support for the [Microsoft Intune App SDK Cordova Plugin](app-sdk-cordova.md) on May 1, 2018. We recommend that you use the Intune App Wrapping Tool instead, to prepare your Cordova based apps for manageability and availability in Intune. When this change takes effect, the Microsoft Intune APP SDK for Cordova plugin will no longer be maintained or receive updates. App developers will not be able to use this plugin. Intune plans to continue supporting apps built with Cordova. However, any apps built with the Microsoft Intune APP SDK for Cordova plugin will experience reduced functionality in Intune. After wrapping with the Intune App Wrapping Tool, apps can be deployed to end users as they normally would be. For Cordova-based Android apps that are released to the Google Play Store:
-- End users will be prompted for credentials to receive Intune policy on first launch.
-- Apps should be released to the app store targeted for Intune users, for example “Contoso App for Intune”.
-
-For more information about the App Wrapping Tool, see [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and [App Wrapping Tool for Android](app-wrapper-prepare-android.md). For any issues or questions, contact [msintuneappsdk@microsoft.com](mailto:msintuneappsdk@microsoft.com).
-
 ### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
 Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
-
-### Direct access to Apple enrollment scenarios <!--951869-->
-For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Intune classic portal. Intune accounts created before January 2017 require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. If your existing account cannot access the Azure portal, we strongly recommend creating a trial account to test out the new experience.
 
 ## What's coming
 
 ### Local device security option settings <!-- 1251887 -->
 You'll be able to enable security settings on Windows 10 devices using the new Local Device Security Option settings. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
-
-### New user experience update for the Company Portal website <!--2000968-->
-
-We’re introducing a new Company Portal website experience starting in August, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
-We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
-
-* UI improvements throughout the website
-* Ability to share direct links to apps
-* Improved performance for large app catalogs
-
-You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app. You can see a sample image for this on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
