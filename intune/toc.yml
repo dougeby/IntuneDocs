@@ -27,7 +27,7 @@
   - name: Create a user
     href: quickstart-create-user.md
   - name: Create a group
-    href: get-started-groups.md
+    href: quickstart-create-group.md
   - name: Set up auto enrollment
     href: quickstart-setup-auto-enrollment.md
   - name: Assign policies
