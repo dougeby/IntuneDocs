@@ -12,13 +12,13 @@ ms.author: erikje
 
 # Quickstart: Create and assign a custom role
 
-In this quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the roll to a group of such operators. By creating custom roles like this one, you can control access to all parts of your mobile device management system.
+In this Intune quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the role to a group of such operators. By creating custom roles like this one, you can control access to all parts of your mobile device management system.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
+Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
 
 ## Create a custom role
 
@@ -27,16 +27,16 @@ When you create a custom role, you can set permissions for a wide range of actio
 1. In Intune, choose **Roles** > **All roles** > **Add**.
 ![Browser](media/quickstart-create-custom-role/add-custom-role.png)
 2. Under **Add custom role**, in the **Name** box, enter *Security operations*.
-3. In the **Description** box, enter *This role lets a security operator monitor device configuration and compliance information.*.
+3. In the **Description** box, enter *This role lets a security operator monitor device configuration and compliance information.*
 4. Choose **Configure** > **Corporate device identifiers** > **Yes** next to **Read** > **OK**.
 5. Choose **Device compliance policies** > **Yes** next to **Read** > **OK**.
 6. Choose **Device configurations** > **Yes** next to **Read** > **OK**.
 7. Choose **Organization** > **Yes** next to **Read** > **OK**.
 8. Choose **OK** > **Create**.
 
-## Assign the custom role to a group
+## Assign the role to a group
 
-Before your security operator can enjoy the new permissions, you must assign the role to a group that contains the security user.
+Before your security operator can use the new permissions, you must assign the role to a group that contains the security user.
 
 1. In Intune, choose **Roles** > **All roles** > **Remote device helpdesk**.
 2. Under **Intune roles**, choose **Assignments** > **Assign**.
@@ -49,7 +49,7 @@ Before your security operator can enjoy the new permissions, you must assign the
 
 ## Clean up resources
 
-To delete the custom role, choose **Roles** > **All roles** > choose the ellipses next to the role > **Delete**.
+If you don't want to use the new custom role any more, you can delete it. Choose **Roles** > **All roles** > choose the ellipses next to the role > **Delete**.
 
 ## Next steps
 
