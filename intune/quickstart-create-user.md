@@ -48,11 +48,13 @@ After you've created a user, you must use the [Office 365 portal](http://go.micr
    > This uses one of your licenses for this user. If you are using your live environment, you can turn off using this license later to reassign it to a real user.
 5. Choose **Save**.
 
-
 ## Clean up resources
 
-To delete the user, choose **Users** > **All users** > choose the user in the list > **Delete user** > **Yes**.
+If you don't need this user any more, you can delete it by choosing **Users** > **All users** > choose the user in the list > **Delete user** > **Yes**.
 
 ## Next steps
 
-The user can now enroll in Intune as described in [Enroll your Windows device in Intune](device-compliance-get-started.md).
+In this quickstart, you created a user and assigned a license to it. You can now set up Intune to automatically enroll this user the next time they sign in to a device.
+
+> [!div class="nextstepaction"]
+> [Set up auto enrollment](quickstart-setup-auto-enrollment.md)
