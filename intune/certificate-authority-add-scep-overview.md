@@ -125,6 +125,7 @@ When you unenroll or wipe the device, the certificates are removed. The certific
 The following third-party certification authorities support Intune:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub open-source version](https://github.com/agerbergt/intune-ejbca-connector)
 
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 
