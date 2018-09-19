@@ -29,6 +29,7 @@ When you create a custom role, you can set permissions for a wide range of actio
 2. Under **Add custom role**, in the **Name** box, enter *Security operations*.
 3. In the **Description** box, enter *This role lets a security operator monitor device configuration and compliance information.*
 4. Choose **Configure** > **Corporate device identifiers** > **Yes** next to **Read** > **OK**.
+![Browser](media/quickstart-create-custom-role/corp-device-id-read.png)
 5. Choose **Device compliance policies** > **Yes** next to **Read** > **OK**.
 6. Choose **Device configurations** > **Yes** next to **Read** > **OK**.
 7. Choose **Organization** > **Yes** next to **Read** > **OK**.
@@ -47,7 +48,7 @@ Before your security operator can use the new permissions, you must assign the r
 7. Choose **Scope (Groups)** > **Select groups to include** > choose a group that includes all employees normally assigned security policies or profiles.
 8. Choose **Select** > **OK** > **OK**.
 
-Now everyone in the group is a member of the *Secerity operations* role and can review the following information about a device: corporate device identifiers, device compliance policies, device configurations, and organization information.
+Now everyone in the group is a member of the *Security operations* role and can review the following information about a device: corporate device identifiers, device compliance policies, device configurations, and organization information.
 
 ## Clean up resources
 
