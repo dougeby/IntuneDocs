@@ -2,13 +2,13 @@
 # required metadata
 
 title: Quickstart - Create a group to manage users
-titlesuffix: 
-description: In this quickstart you will use Intune to create a group based on existing users.
+titlesuffix: Microsoft Intune
+description: In this quickstart you will use Microsoft Intune to create a group based on existing users.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2018
+ms.date: 09/19/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
