@@ -12,7 +12,7 @@ ms.author: erikje
 
 # Quickstart: Create and assign a custom role
 
-In this Intune quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the role to a group of such operators. By creating custom roles like this one, you can control access to all parts of your mobile device management system.
+In this Intune quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the role to a group of such operators. There are several default roles that you can use right away. But by creating custom roles like this one, you have precise access control to all parts of your mobile device management system.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
@@ -44,8 +44,10 @@ Before your security operator can use the new permissions, you must assign the r
 4. Choose **Member (Groups)** > **Add**.
 5. Choose a group that contains your helpdesk operators who will handle remote devices.
 6. Choose **Select** > **OK**.
-7. Choose **Scope (Groups)** > **Select groups to include** > choose the same group as before.
+7. Choose **Scope (Groups)** > **Select groups to include** > choose a group that includes all employees normally assigned security policies or profiles.
 8. Choose **Select** > **OK** > **OK**.
+
+Now everyone in the group is a member of the *Secerity operations* role and can review the following information about a device: corporate device identifiers, device compliance policies, device configurations, and organization information.
 
 ## Clean up resources
 
@@ -53,4 +55,7 @@ If you don't want to use the new custom role any more, you can delete it. Choose
 
 ## Next steps
 
-After you've created and assigned a custom role, you can learn more about [security compliance issues](device-compliance-get-started.md).
+In this quickstart, you created a custom security operations role and assigned it to a group. You can learn more about security issues in the following article.
+
+> [!div class="nextstepaction"]
+> [Get started with device compliance policies](device-compliance-get-started.md)
