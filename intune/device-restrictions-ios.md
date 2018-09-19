@@ -119,7 +119,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 
 -   **Control Center access while device locked** - Allow the user to access the control center app when the device is locked.
 -   **Notifications while device locked** - Allow the user to access the notifications view without unlocking the device.
--   **Passbook while device locked** - Allow the user to access the Passbook app while the device is locked.
+-   **Wallet notifications while device locked** - Allow the user to access the Wallet app while the device is locked.
 -   **Today view while device locked** - Allow the user to see the Today view when the device is locked.
 
 ## App Store, Doc Viewing, Gaming
