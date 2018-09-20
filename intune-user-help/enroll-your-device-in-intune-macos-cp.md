@@ -7,7 +7,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -84,8 +84,14 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 
 9. The first screen you see in the Company Portal app prompts you to **Sign In**. Use the same work or school account you used to sign in to the Company Portal website.
 
-10. The Company Portal confirms your account information, displays your **Device Enrollment** and **Device Compliance** statuses. Yellow triangles highlight the actions you need to take to secure your macOS device for school or work. Click **Begin** to start enrollment. Learn [what your organization can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) when you enroll a device.
+10. The Company Portal confirms your account information, and shows your **Device Enrollment** and **Device Compliance** statuses. Yellow triangles highlight the actions you need to take to secure your macOS device for school or work. Click **Begin** to start enrollment. 
 
-11. You might be prompted to provide your computer's login information. It may take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
+11. If prompted, type in your computer's logon information.  
+
+It might take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
+
+## Unverified Passcode Profile
+After you install the profiles for your macOS device, the passcode profile might shown an **Unverified** status. As long as the management profile appears as **Verified**, there is no security risk. The passcode profile is a sub-profile that inherits the security of the management profile. Both are delivered securely over your company's mobile device management (MDM) connection.
+
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
