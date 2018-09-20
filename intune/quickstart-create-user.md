@@ -16,10 +16,6 @@ In this quickstart, you'll create a user and then assign a license to it. When u
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
-## Prerequisites
-
-- [Create a group](get-started-groups.md) that you'll assign the user to.
-
 ## Sign in to Intune
 
 Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.

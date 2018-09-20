@@ -31,13 +31,14 @@ ms.custom: intune-azure
 
 In this quickstart, you will use Intune to create a group based on an existing user. Groups are used to manage your users and control your employees' access to your company resources. These resources can be part of your company's intranet or can be external resources, such as SharePoint sites, SaaS apps, or web apps.
 
+If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
+
 >[!NOTE]
 >Intune provides pre-created **All Users** and **All Devices** groups in the console with built-in optimizations for your convenience.
 
 ## Prerequisites
 
-- If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
-- Before starting this quickstart, complete the [create a user](quickstart-create-user.md) quickstart.
+- To complete this quickstart, you must [create a user](quickstart-create-user.md).
 
 ## Sign in to Intune
 

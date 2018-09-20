@@ -18,7 +18,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
-- [Create a group](get-started-groups.md) that contains the specific users that you want to automatically enroll.
+- To complete this quickstart, you must [create a user](quickstart-create-user.md) and [create a group](get-started-groups.md).
 
 ## Sign in to Intune
 
