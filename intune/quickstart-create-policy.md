@@ -35,8 +35,7 @@ In this quickstart, you'll create a device compliance policy for a Windows 10 de
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
-- [Create a group](get-started-groups.md).
-- [Create a user](quickstart-create-user.md).
+- To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
 
 
 ## Sign in to Intune
