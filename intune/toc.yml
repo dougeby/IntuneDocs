@@ -27,7 +27,7 @@
   - name: Create a user
     href: quickstart-create-user.md
   - name: Create a group
-    href: get-started-groups.md
+    href: quickstart-create-group.md
   - name: Set up auto enrollment
     href: quickstart-setup-auto-enrollment.md
   - name: Assign policies
@@ -774,6 +774,8 @@
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
+  - name: Microsoft Intune documentation guide
+    href: intune-documentation.md  
   - name: Troubleshoot
     items:
     - name: Help users troubleshoot problems
