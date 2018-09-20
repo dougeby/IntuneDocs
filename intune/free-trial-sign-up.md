@@ -75,6 +75,21 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
 When you sign up for a trial, you will also receive an email message that contains your account information and the email address that you provided during the sign-up process. This email confirms your trial is active.
 
+## Set the MDM authority to Intune
+
+The mobile device management (MDM) authority setting determines how you manage your devices. As an IT admin, you must set an MDM authority before users can enroll devices for management.
+
+To set the MDM authority to Intune, follow these steps.
+
+1. Open a new browser window and enter **https://portal.azure.com** in the address bar. 
+2. Choose **All services** > **Microsoft Intune**.
+3. Select the orange banner to open the **Mobile Device Management Authority** setting. 
+
+    > [!NOTE]
+    > The orange banner is only displayed if you haven't yet set the MDM authority.
+
+4. Under **Mobile Device Management Authority**, set your MDM authority to **Intune MDM Authority**.
+
 ## Configure your custom domain name (Optional)
 
 As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Office 365 Admin Portal. You will add, verify and configure your custom domain name.  
