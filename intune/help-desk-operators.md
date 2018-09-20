@@ -71,7 +71,9 @@ You can use the **Troubleshoot** pane to review user information.
 
 ## Client apps reference
 
-The apps that are running on devices or devices owned by users managed by Intune and Azure Active Directory (AD).
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
 ### Properties
 
@@ -115,7 +117,7 @@ An app protection policy is available to mobile apps that integrate with Enterpr
 
 ## App protection policies reference
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. This gives a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 ### Properties
 
@@ -263,11 +265,11 @@ When you choose a failure row, more details are provided.
 | Error | Details |
 |-------------|----------|
 | iOS Timeout or Failure | A timeout between the device and Intune due to the user taking too long to complete enrollment. |
-| User not found or licensed | This is either due to the user missing a license or having been removed from the service. |
+| User not found or licensed | The user is missing a license or has been removed from the service. |
 | Device already enrolled | Someone attempted to enroll a device by using the Company Portal on a device that is still enrolled by another user. |
-| Not onboarded into Intune | This was an attempt to enroll when the Intune mobile device management (MDM) authority was not yet configured. |
-| Enrollment authorization failed | This was likely due to incompatibility with an older version of company portal attempting to enroll. |
-| Device not supported | This was due to the device not meeting minimum requirements for Intune enrollment. |
+| Not onboarded into Intune | An enrollment was attempted when the Intune mobile device management (MDM) authority wasn't configured. |
+| Enrollment authorization failed | An enrollment was attempted using an old version of company portal. |
+| Device not supported | The device doesn't meet the minimum requirements for Intune enrollment. |
 | Enrollment restrictions not met | This enrollment was blocked due to an admin configured enrollment restriction. |
 | Device cap reached | This enrollment was blocked due to an admin configured device limit restriction. |
 | Apple onboarding | All iOS devices were blocked from enrolling at this time due to a missing or expired Apple MDM push certificate within Intune. |
