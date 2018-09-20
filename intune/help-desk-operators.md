@@ -50,7 +50,7 @@ In the troubleshooting pane, choose **Select user** to view user information. Us
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** pane, choose **Troubleshoot**.
 4. Click **Select** to select a user to troubleshoot.
-5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting pane. The following tables explains the information.
+5. Select a user by typing the name or email address. Click **Select**. The troubleshooting information for the user shows in the Troubleshooting pane. The following table explains the information.
 
 > [!Note]  
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
@@ -93,7 +93,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | Device name        | The name of the type of device.                                                                                                     |
 | Managed by         | The timestamp the policy was modified.                                                                                              |
 | Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
-| Ownership          | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Intune compliant   | The name of the type of device.                                                                                                     |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | OS                 | The operating system installed on the device.                                                                                       |
@@ -102,15 +102,15 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection status
 
-An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. This gives a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | App name    | The name of the application                                                           |
 | Device name | The name of the type of device.                                                       |
 | Device type | The name of the type of device.                                                       |
-| Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
 ## App protection policies reference
@@ -125,7 +125,7 @@ The table summarizes app protection policies status for devices managed by Intun
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Name        | The name of the application.                                                                                                        |
 | Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
-| Platform    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Enrollment  | The name of the type of device.                                                                                                     |
 | Last Update | The timestamp the policy was modified.                                                                                              |
 
@@ -138,7 +138,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | Device Name        | The name of the type of device.                                                                                                     |
 | Managed By         | The timestamp the policy was modified.                                                                                              |
 | Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
-| Ownership          | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Intune compliant   | The name of the type of device.                                                                                                     |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
@@ -159,7 +159,7 @@ The properties of the compliance policies.
 | Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | Name          | The name of the application.                                                                                                        |
 | OS            | The operating system installed on the device.                                                                                       |
-| Policy Type   | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
 | Last Modified | The name of the type of device.                                                                                                     |
 
 ### Devices
@@ -171,7 +171,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | Device name        | The name of the type of device.                                                                                                     |
 | Managed by         | The timestamp the policy was modified.                                                                                              |
 | Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
-| Ownership          | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
 | Intune compliant   | The name of the type of device.                                                                                                     |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | OS                 | The operating system installed on the device.                                                                                       |
@@ -180,15 +180,15 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. This gives a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | App name    | The name of the application                                                           |
 | Device name | The name of the type of device.                                                       |
 | Device type | The name of the type of device.                                                       |
-| Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
 ## Configuration policies reference
@@ -204,7 +204,7 @@ The properties of the configuration policies.
 | Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | Name          | The name of the application.                                                                                                        |
 | OS            | The operating system installed on the device.                                                                                       |
-| Policy Type   | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Last Modified | The name of the type of device.                                                                                                     |
 
 ### Devices
@@ -216,7 +216,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | Device name        | The name of the type of device.                                                                                                     |
 | Managed by         | The timestamp the policy was modified.                                                                                              |
 | Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
-| Ownership          | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**.                                               |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Intune compliant   | The name of the type of device.                                                                                                     |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
 | OS                 | The operating system installed on the device.                                                                                       |
@@ -226,15 +226,15 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 
 ### App protection policies
 
-An app protection policy is available to mobile apps that integrate with EMS technologies. This gives a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
 | Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | App name    | The name of the application                                                           |
 | Device name | The name of the type of device.                                                       |
 | Device type | The name of the type of device.                                                       |
-| Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
 ## Enrollment failure reference
@@ -250,7 +250,7 @@ The Enrollment Failures table lists enrollment attempts that failed. A device li
 
 ### Failure details
 
-When you chooose a failure row, more details are provided.
+When you choose a failure row, more details are provided.
 
 | Section | Description |
 |-------------|----------|
@@ -262,16 +262,16 @@ When you chooose a failure row, more details are provided.
 
 | Error | Details |
 |-------------|----------|
-| iOS Timeout or Failure | This is a timeout between the device and Intune due to the user taking too long to complete enrollment. |
+| iOS Timeout or Failure | A timeout between the device and Intune due to the user taking too long to complete enrollment. |
 | User not found or licensed | This is either due to the user missing a license or having been removed from the service. |
-| Device already enrolled | This was an attempt to enroll via Company Portal on a device that is still enrolled by another user. |
+| Device already enrolled | Someone attempted to enroll a device by using the Company Portal on a device that is still enrolled by another user. |
 | Not onboarded into Intune | This was an attempt to enroll when the Intune mobile device management (MDM) authority was not yet configured. |
 | Enrollment authorization failed | This was likely due to incompatibility with an older version of company portal attempting to enroll. |
 | Device not supported | This was due to the device not meeting minimum requirements for Intune enrollment. |
 | Enrollment restrictions not met | This enrollment was blocked due to an admin configured enrollment restriction. |
 | Device cap reached | This enrollment was blocked due to an admin configured device limit restriction. |
 | Apple onboarding | All iOS devices were blocked from enrolling at this time due to a missing or expired Apple MDM push certificate within Intune. |
-| Device not preregistered | This device was not pre-registered as corporate and all personal enrollments were blocked by an admin. |
+| Device not preregistered | The device wasn't pre-registered as corporate and all personal enrollments were blocked by an admin. |
 | Feature not supported | The user was likely attempting to enroll via a method not compatible with your Intune configuration. |
 
 ## Collect available data from mobile device
