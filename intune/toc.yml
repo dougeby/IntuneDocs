@@ -140,6 +140,8 @@
   - name: Enroll devices
     href: device-enrollment.md
     items:
+    - name: Enrollment method capabilities
+      href: enrollment-method-capab.md
     - name: Enrollment options
       href: enrollment-options.md
       items:
