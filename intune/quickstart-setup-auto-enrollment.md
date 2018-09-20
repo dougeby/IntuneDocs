@@ -18,7 +18,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
-- To complete this quickstart, you must [create a user](quickstart-create-user.md) and [create a group](get-started-groups.md).
+- To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
 
 ## Sign in to Intune
 
@@ -30,7 +30,7 @@ For this example, you'll use MDM enrollment so that both corporate and bring-you
 
 1. In Azure, choose **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune** > **Some**.
 ![Browser](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. Choose **Select groups** > **TestGroup1** > **Select**.
+2. Choose **Select groups** > **Contoso Testers** > **Select**.
 3. Use the default values for the following URLs:
     - MDM terms of use URL
     - MDM discovery URL

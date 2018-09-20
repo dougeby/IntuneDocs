@@ -26,8 +26,8 @@ People must have a user account to enroll in Intune device management.
 
 1. In Intune, choose **Users** > **All users** > **New user**.
 ![Browser](media/quickstart-create-user/create-user.png)
-2. In the **Name** box, enter *John Doe*.
-3. In the **User name** box, enter *john@contoso.onmicrosoft.com*.
+2. In the **Name** box, enter *Dewey Kellum*.
+3. In the **User name** box, enter *Dewey@contoso.onmicrosoft.com*.
 4. Choose **Groups** > **Everyone** > **Select**.
 5. Choose **Show password** and make a note of the automatically generated password so that you can sign in to a test device.
 6. Choose **Create**.
