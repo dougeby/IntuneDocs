@@ -237,6 +237,43 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Policies    | The type of device ownership. This can be **Company**, **Personal**, and **Unknown**. |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
+## Enrollment failure reference
+
+The Enrollment Failures table lists enrollment attempts that failed. A device listed in the below table may have subsequently enrolled successfully during another attempt. Some failed attempts may not be listed. Mitigation information isn't available for all failures.
+
+| Table column | Description |
+|-------------|----------|
+| Enrollment start | The start time when the user first began enrolling. |
+| OS | The device's operating system. |
+| OS version | The device's operating system version. |
+| Failure | The reason for the failure. |
+
+### Failure details
+
+When you chooose a failure row, more details are provided.
+
+| Section | Description |
+|-------------|----------|
+| Failure details | A more detailed explanation of the failure. |
+| Potential remediations | Suggested steps to resolve the error. Some failures may not have remediations. |
+| Resources (Optional) | Links for further reading or areas in the portal to take action. |
+
+### Enrollment errors
+
+| Error | Details |
+|-------------|----------|
+| iOS Timeout or Failure | This is a timeout between the device and Intune due to the user taking too long to complete enrollment. |
+| User not found or licensed | This is either due to the user missing a license or having been removed from the service. |
+| Device already enrolled | This was an attempt to enroll via Company Portal on a device that is still enrolled by another user. |
+| Not onboarded into Intune | This was an attempt to enroll when the Intune mobile device management (MDM) authority was not yet configured. |
+| Enrollment authorization failed | This was likely due to incompatibility with an older version of company portal attempting to enroll. |
+| Device not supported | This was due to the device not meeting minimum requirements for Intune enrollment. |
+| Enrollment restrictions not met | This enrollment was blocked due to an admin configured enrollment restriction. |
+| Device cap reached | This enrollment was blocked due to an admin configured device limit restriction. |
+| Apple onboarding | All iOS devices were blocked from enrolling at this time due to a missing or expired Apple MDM push certificate within Intune. |
+| Device not preregistered | This device was not pre-registered as corporate and all personal enrollments were blocked by an admin. |
+| Feature not supported | The user was likely attempting to enroll via a method not compatible with your Intune configuration. |
+
 ## Collect available data from mobile device
 
 Use the following resources to help collect device data when troubleshooting user's device issues:
