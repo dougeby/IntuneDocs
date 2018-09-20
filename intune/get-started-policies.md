@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Get started with policies in Microsoft Intune - Azure | Microsoft Docs
-description: Create policies to help protect corporate data and manage the devices end users use to access company resources. Then, assign the policies to groups.
+title: "Quickstart: Add a device compliance policy for a Windows 10 device"
+description: Use this quickstart to create policies to help protect corporate data and manage the devices end users use to access company resources. Then, assign the policies to groups.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2018
-ms.topic: article
+ms.date: 09/21/2018
+ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -24,60 +24,41 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+
 ---
 
-# Get started with creating policies
+# Quickstart: Add a device compliance policy for a Windows 10 device
+An Intune device compliance policy for Windows specifies the rules and settings that Windows devices must meet to be considered compliant. You can use these policies with [conditional access](https://docs.microsoft.com/intune/conditional-access) to allow or block access to company resources. You can also get device reports and take actions for non-compliance.
 
-Intune policies are a great way to enroll devices, and make sure they comply with your corporate policies. Compliance policies help manage specialized device types, such as corporate-owned kiosks, and personal (Bring Your Own) devices, tablets, and user-less devices.
+In this quickstart, you'll create a device compliance policy for a Windows 10 device and then assign a device group to the policy.
 
-![Compliance dashboard with little data](/intune/media/generic-compliance-dashboard.png)
+If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
-Mobile devices can be managed using compliance policies, including:
+## Prerequisites
+- [Create a group](get-started-groups.md).
+- [Create a user](quickstart-create-user.md).
 
-* Regulate the number of devices a user enrolls in Intune
-* Manage device settings, such as device-level encryption, password length, and camera usage
-* Deliver apps, email profiles, VPN profiles, and more
-* Evaluate device-level criteria for security compliance policies
 
-Compliance policies are created for each platform, such as iOS, Android, Windows, and more. For this exercise, use iOS. The following policies are available for iOS devices:
+## Sign in to Intune
+Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
 
-* PIN or password configuration
-* Device encryption
-* Jailbroken device
-* Email profile
-* Minimum OS version
-* Maximum OS version
+## Create a device compliance policy
+1. Select **Device compliance** > **Policies** > **Create Policy**.
+2. Enter **Windows 10 compliance** in **Name** and **Sample compliance policy for Windows 10** for **Description**.
+3. For the **Platform**, select **Windows 10 and later**.
+4. In **Settings**, select **System Security**, and then set **Require a password to unlock mobile devices** to **Require**. When finished setting up your policy, select **OK**.
+   ![Compliance policy](/intune/media/quickstart-create-policy/compliance-policy.png)
+5. Close the **Windows 10 compliance policy** pane. 
+6. On the **Create policy** pane, select **Create**. This step creates the policy, and lists your policy in **Device compliance** > **Policies**.
+7. Select your new policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
+8. Choose **Selected groups** to see your existing Azure AD security groups. Select **TestGroup1**, and choose **Save** to deploy the policy to users in the group.
 
-## Create a policy
+To be compliant with the new corporate policy, after a few minutes, enrolled device prompts for an updated password. You can manually check for the update in the **Company Portal app for iOS**. Open the Company Portal app, select the device name, and then select **Sync**.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device compliance** > **Policies** > **Create Policy**.
-4. Enter a policy **Name** and a **Description**. 
-5. For the **Platform**, select **iOS**.
-6. In **Settings**, select **System Security**, and then set **Require a password to unlock mobile devices** to **Require**. 
-
-    You can also set other rules, such as: 
-    - **Minimum password length**
-    - **Required password type**
-    - **Number of non-alphanumeric characters in password**
-    
-    When finished setting up your policy, select **OK**.
-  
-7. Go back to **Create policy**, and select **Create**. This step creates the policy, and lists your policy in **Device compliance** > **Policies**.
-8. Select your new policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-Choose Selected groups to see your existing Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
-
-To be compliant with the new corporate policy, after a few minutes, your enrolled device prompts for an updated password. You can manually check for the update in the **Company Portal app for iOS**. Open the Company Portal app, select the device name, and then select **Sync**.
-
-> [!NOTE]
-> New policies applied to a dynamic device group may take up to eight hours to apply to all devices in the group.
+## Clean up resources
+When no longer needed, delete the policy. To do so, select the **Windows 10 compliance** policy and click **Delete**. 
 
 ## Next steps
-
-[Get started enrolling devices](get-started-enroll.md) - Learn the enrollment experience by going through a full enrollment experience of an iOS device.
-
-## Learn more
-
-* [Monitor Intune Device compliance policies](compliance-policy-monitor.md)
-* [Common ways to use conditional access policies with Intune](conditional-access-intune-common-ways-use.md)
+In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment.
+> [!div class="nextstepaction"]
+> [Set up auto enrollment](quickstart-setup-auto-enrollment.md)
