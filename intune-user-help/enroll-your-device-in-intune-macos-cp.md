@@ -91,7 +91,7 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 It might take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
 
 ## Unverified Passcode Profile
-After you install the profiles for your macOS device, the passcode profile might shown an **Unverified** status. As long as the management profile appears as **Verified**, there is no security risk. The passcode profile is a sub-profile that inherits the security of the management profile. Both are delivered securely over your company's mobile device management (MDM) connection.
+After you install the profiles for your macOS device, the passcode profile might show an **Unverified** status. As long as the management profile appears as **Verified**, there is no security risk. The passcode profile is a sub-profile that inherits the security of the management profile. Both are delivered securely over your company's mobile device management (MDM) connection.
 
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
