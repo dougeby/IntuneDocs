@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 
 * You will need a Mac OS computer that runs OS X 10.8.5 or later and has the Xcode 9 or later installed.
 
-* Your app must be targeted for iOS 9.3.5 or above.
+* Your app must be targeted for iOS 10 or above.
 
 * Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
 
