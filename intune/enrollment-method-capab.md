@@ -9,7 +9,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 09/21/2018
-ms.topic: garticle
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
