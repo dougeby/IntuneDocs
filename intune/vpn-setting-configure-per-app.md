@@ -172,11 +172,11 @@ An association between an app and a profile will be removed during the next devi
 - Both the profile and the app are targeted to the same group.
 - You remove the per-app VPN configuration from the app assignment.
 
-An association between an app and a profile will still exist until the end-user requests a reinstall from the company portal, when the following conditions exist:
+An association between an app and a profile will persist until the end-user requests a reinstall from the company portal, when the following conditions exist:
 - The app was targeted with available install intent.
 - Both the profile and the app are targeted to the same group.
 - The end user requested app install from the company portal which results in app and profile being installed on the device.
-- You remove the per-app VPN configuration from the app assignment.
+- You remove or change the per-app VPN configuration from the app assignment.
 
 ## Verify the connection on the iOS device
 
