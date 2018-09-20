@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 09/20/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+
+## Week of September 17, 2018
+
+### App management
+
+### Remove duplication of app protection status tiles <!-- 3083391 -->
+The **User status for iOS** and the **User status for Android** tiles are currently present in both the **Client Apps - Overview** page, as well as the **Client Apps - App protection status** page. The status tiles will be removed from the **Client Apps - Overview** page to remove this duplication. 
 
 ## Week of August 27, 2018
 
