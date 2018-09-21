@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 09/20/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,13 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+
+## Week of September 17, 2018
+
+### App management
+
+### Remove duplication of app protection status tiles <!-- 3083391 -->
+The **User status for iOS** and the **User status for Android** tiles were present in both the **Client Apps - Overview** page, as well as the **Client Apps - App protection status** page. The status tiles have been removed from the **Client Apps - Overview** page to avoid duplication. 
 
 ## Week of August 27, 2018
 
@@ -810,26 +817,6 @@ This impacts environments with a macOS device policy using Intune or a hybrid MD
 
 #### What do I need to do to prepare for this change?
 Let your helpdesk know. If you don't want to enforce this macOS device policy, we recommend you un-assign or delete your existing macOS policy. Customer research suggests most customers aren't affected by this change. Most end users update their password after receiving a request to enroll with a password, or reset their password to remain compliant.
-
-
-### Plan for Change: Intune moving to support iOS 10 and later in September <!-- 2454656 -->
-In September, Apple is expected to release iOS 12. Shortly after the release, we will move Intune enrollment, the Company Portal, and the managed browser to support iOS 10 and later.  
-
-#### How does this affect me?  
-Office 365 mobile apps are supported on iOS 10 and later, so you may have already upgraded your OS or devices. If so, this move will not affect you.  
-
-However, if you have any of the devices listed below, or want to enroll any of the devices listed below, be aware that they only support iOS 9 and earlier.  To continue to access the Intune Company Portal, you must upgrade these devices, by September, to devices that support iOS 10 or later:  
-
-* iPhone 4S  
-* iPod Touch  
-* iPad 2  
-* iPad (3rd Generation)  
-* iPad Mini (1st Generation)  
-
-Starting in July, MDM-enrolled devices with both iOS 9 and the Company Portal will receive a prompt to upgrade their OS or device. If you use app protection policies, you can also set the “Require minimum iOS operating system (Warning only)” access setting.  
-
-#### What do I need to do to prepare for this change?   
-Check for devices or users that are affected in your organization. In Intune in the Azure portal, go to Devices > All devices, and filter by OS.  Click Columns to surface details such as OS version. Request that your users upgrade their devices to a supported OS version before September.  
 
 ### Plan for Change: Intune moving to TLS 1.2
 Starting on October 31, 2018, Intune will support Transport Layer Security (TLS) protocol version 1.2 to provide best-in-class encryption, to ensure our service is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. Office communicated this change in MC128929.
