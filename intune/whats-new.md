@@ -50,7 +50,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### App management
 
 ### Remove duplication of app protection status tiles <!-- 3083391 -->
-The **User status for iOS** and the **User status for Android** tiles are currently present in both the **Client Apps - Overview** page, as well as the **Client Apps - App protection status** page. The status tiles will be removed from the **Client Apps - Overview** page to remove this duplication. 
+The **User status for iOS** and the **User status for Android** tiles were present in both the **Client Apps - Overview** page, as well as the **Client Apps - App protection status** page. The status tiles have been removed from the **Client Apps - Overview** page to avoid duplication. 
 
 ## Week of August 27, 2018
 
