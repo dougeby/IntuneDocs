@@ -86,7 +86,7 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
 
 10. The Company Portal confirms your account information, and shows your **Device Enrollment** and **Device Compliance** statuses. Yellow triangles highlight the actions you need to take to secure your macOS device for school or work. Click **Begin** to start enrollment. 
 
-11. If prompted, type in your computer's logon information.  
+11. If prompted, type in your computer's sign-in information.  
 
 It might take a few minutes to enroll your device in management. During this time, you can do other things on your device. You'll receive a message after you've completed Company Access Setup to let you know you're done.  
 
