@@ -95,6 +95,6 @@ When you view the installed mobile device management (MDM) profiles for your mac
 
 The management profile establishes that there is a secure connection. The other profiles are subprofiles, and inherit the security traits from the management one. Thus, both types of profiles are delivered over the same, secure MDM connection. 
 
-Additionally, because subprofiles don't require individual verification, they are more quickly delivered to devices.
+Also, because subprofiles don't require individual verifications, they're more quickly delivered to devices.
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
