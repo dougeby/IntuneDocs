@@ -510,8 +510,6 @@
     items:
     - name: Common ways to use conditional access
       href: conditional-access-intune-common-ways-use.md
-    - name: Tutorial: Protect Office 365 email
-      href: tutorial-protect-email-on-enrolled-devices.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
     - name: Install Exchange service connector
