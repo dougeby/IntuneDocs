@@ -140,8 +140,6 @@
   - name: Enroll devices
     href: device-enrollment.md
     items:
-    - name: Enrollment method capabilities
-      href: enrollment-method-capab.md
     - name: Enrollment options
       href: enrollment-options.md
       items:
@@ -161,6 +159,8 @@
         href: device-group-mapping.md
     - name: Set up Windows enrollment
       items:
+      - name: Enrollment method capabilities
+        href: enrollment-method-capab.md
       - name: Windows enrollment
         href: windows-enroll.md
       - name: Bulk enroll
