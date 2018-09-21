@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,6 +31,8 @@ ms.custom: intune-azure
 
 This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
+> [!NOTE]
+> You must use Office 365 ProPlus licenses to activate Office 365 ProPlus apps deployed through Microsoft Intune. Currently, Office 365 Business edition is not supported by Intune.
 
 ## Before you start
 
