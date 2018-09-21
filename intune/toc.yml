@@ -510,6 +510,8 @@
     items:
     - name: Common ways to use conditional access
       href: conditional-access-intune-common-ways-use.md
+    - name: Create a conditional access policy
+      href: create-conditional-access-intune.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
     - name: Install Exchange service connector
