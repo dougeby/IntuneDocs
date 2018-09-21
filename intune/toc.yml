@@ -160,7 +160,7 @@
     - name: Set up Windows enrollment
       items:
       - name: Enrollment method capabilities
-      href: enrollment-method-capab.md
+        href: enrollment-method-capab.md
       - name: Windows enrollment
         href: windows-enroll.md
       - name: Bulk enroll
