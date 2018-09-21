@@ -50,7 +50,7 @@ If you don't need this user any more, you can delete it by choosing **Users** > 
 
 ## Next steps
 
-In this quickstart, you created a user and assigned a license to it. You can now set up Intune to automatically enroll this user the next time they sign in to a device.
+In this quickstart, you created a user and assigned a license to it. You can now assign that user to a group.
 
 > [!div class="nextstepaction"]
-> [Set up auto enrollment](quickstart-setup-auto-enrollment.md)
+> [Create a group](quickstart-create-group.md)
