@@ -27,8 +27,7 @@ ms.custom: intune-azure; get-started
 ---
 
 # What can Intune do for my company?
-
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
+Microsoft Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
 
 ![High-level architectural diagram for Microsoft Intune](/intune/media/intunearchitecture.svg)
 

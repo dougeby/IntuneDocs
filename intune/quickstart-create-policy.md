@@ -56,7 +56,7 @@ Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an
 When no longer needed, delete the policy. To do so, select the **Windows 10 compliance** policy and click **Delete**. 
 
 ## Next steps
-In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment. A few minutes after the device is enrolled for a user in the group assigned to the policy, the device will prompt for an updated password.   
+In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment. 
  
 > [!div class="nextstepaction"]
 > [Set up auto enrollment](quickstart-setup-auto-enrollment.md)
