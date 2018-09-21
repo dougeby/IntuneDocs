@@ -43,34 +43,34 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
    
    ![Create an email profile for iOS](media/quickstart-email-profile/ios-create-profile.png)
 
-1. Under **Name**, enter a descriptive name for the new profile. For this example, enter **iOS require work email**.
-2. Enter the following profile information:
-  - For **Description**, enter **Require iOS devices to use work email**.
-  - For **Platform**, select **iOS**.
-  - For **Profile type**, select **Email**.
+3. Under **Name**, enter a descriptive name for the new profile. For this example, enter **iOS require work email**.
+4. Enter the following profile information:
+   - For **Description**, enter **Require iOS devices to use work email**.
+   - For **Platform**, select **iOS**.
+   - For **Profile type**, select **Email**.
     
      ![Create an email profile for iOS](media/quickstart-email-profile/ios-email-profile-name.png)
 
 5. Select **Settings**, and enter the following settings (leave the defaults for other settings):
-  - **Email server**: For this quickstart, enter **outlook.office365.com**. This setting specifies the Exchange location (URL) of the email server that the iOS mail app will use to connect to email.
-  - **Account name**: Enter **Company Email**.
-  - **Username attribute from AAD**: This name is the attribute Intune gets from Azure Active Directory (Azure AD). Intune dynamically generates the username for this profile using this name. For this quickstart, we’ll assume that we want the **User Principal Name** to be used as the username for the profile (for example, user1@contoso.com).
-  - **Email address attribute from AAD**: This setting is the email address from Azure AD that will be used to sign in to Exchange. For this quickstart, select **User Principal Name**.
-  - **Authentication method**: For this quickstart, select **Username and password**. (You can also choose **Certificate** if you’ve already set up a certificate for Intune.)
+   - **Email server**: For this quickstart, enter **outlook.office365.com**. This setting specifies the Exchange location (URL) of the email server that the iOS mail app will use to connect to email.
+   - **Account name**: Enter **Company Email**.
+   - **Username attribute from AAD**: This name is the attribute Intune gets from Azure Active Directory (Azure AD). Intune dynamically generates the username for this profile using this name. For this quickstart, we’ll assume that we want the **User Principal Name** to be used as the username for the profile (for example, user1@contoso.com).
+   - **Email address attribute from AAD**: This setting is the email address from Azure AD that will be used to sign in to Exchange. For this quickstart, select **User Principal Name**.
+   - **Authentication method**: For this quickstart, select **Username and password**. (You can also choose **Certificate** if you’ve already set up a certificate for Intune.)
     
      ![Create an email profile for iOS](media/quickstart-email-profile/ios-email-profile.png)
 
-8.	Select **OK**.
-9.	Select **Create**. The new profile appears on the profiles list with the dashboard displayed so you can monitor how the profile has been assigned to iOS devices and iOS users.
-10.	Select **Assignments**.
-11.	Select the **Include** tab, and then select **All Users & All Devices**. 
-12.	Select **Save**.
+6. Select **OK**.
+7. Select **Create**. The new profile appears on the profiles list with the dashboard displayed so you can monitor how the profile has been assigned to iOS devices and iOS users.
+8. Select **Assignments**.
+9. Select the **Include** tab, and then select **All Users & All Devices**. 
+10. Select **Save**.
 
 ## Clean up resources
 If you don’t intend to use the profile you created for additional tutorials or testing, you can delete it now.
-1.	In Intune, select **Device configuration**, and then select **Profiles**.
-2.	Select the test profile you created, **iOS require work email**.
-3.	Select the ellipses (**...**) next to the profile, and then select **Delete**.
+1. In Intune, select **Device configuration**, and then select **Profiles**.
+2. Select the test profile you created, **iOS require work email**.
+3. Select the ellipses (**...**) next to the profile, and then select **Delete**.
 
 ## Next steps
 
