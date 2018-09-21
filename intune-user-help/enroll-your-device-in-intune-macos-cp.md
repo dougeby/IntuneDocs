@@ -93,8 +93,8 @@ It might take a few minutes to enroll your device in management. During this tim
 ## Unverified profiles
 When you view the installed mobile device management (MDM) profiles for your macOS device, some profiles might show an **Unverified** status. As long as the **Management profile** shows a **Verified** status, you don’t need to be concerned.  
 
-The management profile establishes that there is a secure connection. The other profiles are sub-profiles, and inherit the security traits from the management profile. Thus, both types of profiles are delivered over the same, secure MDM connection. 
+The management profile establishes that there is a secure connection. The other profiles are subprofiles, and inherit the security traits from the management one. Thus, both types of profiles are delivered over the same, secure MDM connection. 
 
-In addition, because the sub-profiles don't require individual verification, they are more quickly installed and and distributed to devices.
+Additionally, because subprofiles don't require individual verification, they are more quickly delivered to devices.
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
