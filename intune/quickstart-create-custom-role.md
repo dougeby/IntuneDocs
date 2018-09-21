@@ -6,7 +6,7 @@ author: ErikjeMS
 
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/15/2018
+ms.date: 09/21/2018
 ms.author: erikje
 ---
 
@@ -15,6 +15,10 @@ ms.author: erikje
 In this Intune quickstart, you'll create a custom role with specific permissions for a security operations department. Then you'll assign the role to a group of such operators. There are several default roles that you can use right away. But by creating custom roles like this one, you have precise access control to all parts of your mobile device management system.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
+
+## Prerequisites
+
+- To complete this quickstart, you must [create a group](quickstart-create-group.md).
 
 ## Sign in to Intune
 
@@ -43,9 +47,9 @@ Before your security operator can use the new permissions, you must assign the r
 2. Under **Intune roles**, choose **Assignments** > **Assign**.
 3. In the **Assignment name** box, enter *Sec ops*.
 4. Choose **Member (Groups)** > **Add**.
-5. Choose a group that contains your helpdesk operators who will handle remote devices.
+5. Choose the **Contoso Testers** group.
 6. Choose **Select** > **OK**.
-7. Choose **Scope (Groups)** > **Select groups to include** > choose a group that includes all employees normally assigned security policies or profiles.
+7. Choose **Scope (Groups)** > **Select groups to include** > **Contoso Testers**.
 8. Choose **Select** > **OK** > **OK**.
 
 Now everyone in the group is a member of the *Security operations* role and can review the following information about a device: corporate device identifiers, device compliance policies, device configurations, and organization information.
