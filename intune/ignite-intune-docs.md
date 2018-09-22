@@ -4,10 +4,10 @@
 title: Welcome to Ignite
 description: 
 keywords:
-author: 
-ms.author: 
-manager: dougeby
-ms.date: 9/13/2018
+author: dougeby
+ms.author: dougeby
+manager: angrobe
+ms.date: 9/21/2018
 
 ms.topic: article
 ms.prod:
