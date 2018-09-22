@@ -17,11 +17,11 @@ audience: ITPro
 
 # What is device management? 
 
-Users have many devices from which they open and share personal files, visit websites, and install apps and games. These same users are also employees and students, and want to use their devices to access work and school resources, such as email and OneNote. *Device management* enables organizations to protect and secure their resources and data. Using a device management provider, organization's can make sure that only authorized individuals and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their phone, because they know that their device meets their organization's security requirements.
+A key task of any Administrator is to protect and secure an organization's resources and data. This task is device management. Users have many devices from which they open and share personal files, visit websites, and install apps and games. These same users are also employees and students, and want to use their devices to access work and school resources, such as email and OneNote. *Device management* enables organizations to protect and secure their resources and data. 
 
-As an organization, you might ask - **What should we use to protect our resources?**
+Using a device management provider, organization's can make sure that only authorized individuals and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their phone, because they know that their device meets their organization's security requirements. As an organization, you might ask - **What should we use to protect our resources?**
 
-Microsoft Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
+This is where Microsoft Intune comes in. Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
 
 - Support a diverse mobile environment&mdash;manage iOS, Android, Windows, and macOS devices securely
 - Make sure devices and apps are compliant with your organization's security requirements
@@ -35,10 +35,10 @@ Many organizations, such as Microsoft, use Intune to secure proprietary data tha
 
 It's common for people to have multiple devices that use different platforms. For example, an employee might use Surface Pro for work, and an Android mobile device in their personal life. And, it's common for a person to access organizational resources, such as Microsoft Outlook and SharePoint, from these multiple devices.
 
-With [Intune](https://docs.microsoft.com/intune/introduction-intune), you can manage multiple devices per person, and the different platforms running on each device, including iOS, macOS, Android, and Windows. Intune separates policies and settings by device platform, so it's easy to manage and view devices of a specific platform.
+With [Intune](https://docs.microsoft.com/intune/introduction-intune), you can manage multiple devices per person, and the different platforms that run on each device, including iOS, macOS, Android, and Windows. Intune separates policies and settings by device platform, so it's easy to manage and view devices of a specific platform.
 
 
-**[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. Some scenarios include protecting email using on-premises Exchange, access Office 365 safely and securely, and using personal devices to access organizational resources.
+**[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. Some scenarios include protecting email using on-premises Exchange, providing access to Office 365 safely and securely, and how to safely allow the use of personal devices to access organizational resources.
 
 **[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. You'll find scenarios about:  
 - Protecting email with on-premises Exchange
@@ -59,7 +59,7 @@ A key task of any device management solution is to provide security and protecti
 
 ## Choose the device management solution that's right for you
 
-There are a couple of ways to approach device management. First, you can manage entire devices by using all the features built into Intune. This is called **Mobile device management (MDM)**. In this approach, users "enroll" their devices, and use certificates to communicate with Intune. As an IT admin, you can push apps on devices, restrict devices to a specific operating system, block personal devices, and more. If a device is ever lost or stolen, you can also remove all data from the device. 
+There are a couple of ways to approach device management. First, you can manage all aspects of devices by using all the features built into Intune. This is called **Mobile device management (MDM)**. In this approach, users "enroll" their devices, and use certificates to communicate with Intune. As an IT admin, you can push apps on devices, restrict devices to a specific operating system, block personal devices, and more. If a device is ever lost or stolen, you can also remove all data from the device. 
 
 In the second approach, you manage apps on devices. This is called **Mobile application management (MAM)**. In this approach, users can use their personal devices to access organizational resources. When opening an app, such as email or SharePoint, users are prompted for additional authentication. If a device is ever lost or stolen, you can remove all organization data from the device. 
 
