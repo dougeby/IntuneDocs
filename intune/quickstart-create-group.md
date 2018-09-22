@@ -60,7 +60,7 @@ If you've successfully created the group, it will appear in the list of **All gr
 
 ## Next steps
 
-In this quickstart, you used Intune to created a group based on an existing user.
+In this quickstart, you used Intune to create a group based on an existing user.
 
 > [!div class="nextstepaction"]
 > [Quickstart - Set up automatic enrollment](quickstart-setup-auto-enrollment.md)

@@ -50,14 +50,13 @@ Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an
 5. Close the **Windows 10 compliance policy** pane. 
 6. On the **Create policy** pane, select **Create**. This step creates the policy, and lists your policy in **Device compliance** > **Policies**.
 7. Select your new policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-8. Choose **Selected groups** to see your existing Azure AD security groups. Select **TestGroup1**, and choose **Save** to deploy the policy to users in the group.
-
-To be compliant with the new corporate policy, after a few minutes, enrolled device prompts for an updated password. You can manually check for the update in the **Company Portal app for iOS**. Open the Company Portal app, select the device name, and then select **Sync**.
+8. Choose **Selected groups** to see your existing Azure AD security groups. Select **Contoso Testers**, and choose **Save** to deploy the policy to users in the group. If you didn't create this group in [create a group](quickstart-create-group.md), you can use the group of your choice. 
 
 ## Clean up resources
 When no longer needed, delete the policy. To do so, select the **Windows 10 compliance** policy and click **Delete**. 
 
 ## Next steps
-In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment.
+In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment. 
+ 
 > [!div class="nextstepaction"]
 > [Set up auto enrollment](quickstart-setup-auto-enrollment.md)
