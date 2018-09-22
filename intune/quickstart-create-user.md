@@ -6,7 +6,7 @@ author: ErikjeMS
 
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/15/2018
+ms.date: 09/21/2018
 ms.author: erikje
 ---
 
