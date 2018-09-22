@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 09/21/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune

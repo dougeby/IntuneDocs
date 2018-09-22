@@ -36,7 +36,7 @@
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
     href: quickstart-email-profile.md
-- name: Scenario implementation guides
+- name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online
     href: exchange-online-protect.md
@@ -50,6 +50,8 @@
     href: byod-technology-decisions.md
 - name: Concepts
   items:
+  - name: What is device management?
+    href: what-is-device-management.md  
   - name: Navigating the Azure portal
     href: get-started-azure.md  
   - name: High-level architecture

@@ -4,10 +4,10 @@
 title: Welcome to Ignite
 description: 
 keywords:
-author: 
-ms.author: 
-manager: dougeby
-ms.date: 9/13/2018
+author: dougeby
+ms.author: dougeby
+manager: angrobe
+ms.date: 9/21/2018
 
 ms.topic: article
 ms.prod:
@@ -42,6 +42,7 @@ We've updated and created some new quickstarts. Complete the following quickstar
 - [Assign policies](get-started-policies.md): Create a device compliance policy for a Windows 10 device and assign a group to the policy.
 - [Set up auto enrollment](quickstart-setup-auto-enrollment.md): Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
 - [Create and assign a custom role](quickstart-create-custom-role.md): Create and assign a custom role with specific permissions for a security operations department. 
+- [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
 
 ## Learn
 - [Intune What’s New](whats-new.md)
