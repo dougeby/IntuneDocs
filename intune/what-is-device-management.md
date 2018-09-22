@@ -37,9 +37,6 @@ It's common for people to have multiple devices that use different platforms. Fo
 
 With Intune, you can manage multiple devices per person, and the different platforms that run on each device, including iOS, macOS, Android, and Windows. Intune separates policies and settings by device platform, so it's easy to manage and view devices of a specific platform.
 
-
-**[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. Some scenarios include protecting email using on-premises Exchange, providing access to Office 365 safely and securely, and how to safely allow the use of personal devices to access organizational resources.
-
 **[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. You'll find scenarios about:  
 - Protecting email with on-premises Exchange
 - Accessing Office 365 safely and securely
