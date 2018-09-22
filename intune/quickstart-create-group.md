@@ -63,4 +63,4 @@ If you've successfully created the group, it will appear in the list of **All gr
 In this quickstart, you used Intune to create a group based on an existing user.
 
 > [!div class="nextstepaction"]
-> [Quickstart - Set up automatic enrollment](quickstart-setup-auto-enrollment.md)
+> [Create a device compliance policy](quickstart-create-policy.md)

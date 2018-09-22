@@ -28,14 +28,10 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
-  - name: Set up auto enrollment
+  - name: Create a policy
+    href: quickstart-create-policy.md
+  - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
-  - name: Assign policies
-    href: get-started-policies.md
-  - name: Enroll devices
-    href: get-started-enroll.md
-  - name: Assign apps
-    href: get-started-apps.md
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile

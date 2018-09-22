@@ -42,9 +42,9 @@ You can follow the intended order of the __Getting Started__ quickstarts using t
 - [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
 - [Assign policies](get-started-policies.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
 - [Set up auto enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
-- [Add and assign apps](get-started-apps.md) - Add and assign apps to devices
 - [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
-
+- [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## Prerequisites
 
 Before you start, you must have an Intune admin and tenant account activated. Create a free subscription to [try Intune for free](free-trial-sign-up.md) in a test environment. Current subscribers can also complete these activities in your live tenant. These getting started articles assume that you're working on test devices.
