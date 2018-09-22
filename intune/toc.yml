@@ -50,6 +50,8 @@
     href: byod-technology-decisions.md
 - name: Concepts
   items:
+  - name: What is device management?
+    href: what-is-device-management.md  
   - name: Navigating the Azure portal
     href: get-started-azure.md  
   - name: High-level architecture
