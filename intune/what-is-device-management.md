@@ -62,7 +62,7 @@ In the second approach, you manage apps on devices. This is called **Mobile appl
 
 You can also use a combination of [MDM and MAM](https://docs.microsoft.com/intune/byod-technology-decisions) together.
 
-When you setup Intune, you also choose to work solely in the Azure portal to manage devices, or use Intune and Microsoft 365 together to manage devices. See how Microsoft IT chose a modern device management approach, and lessons learned in the [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) Microsoft IT case study. 
+When you set up Intune, you also choose to work solely in the Azure portal to manage devices, or use Intune and Microsoft 365 together to manage devices. See how Microsoft IT chose a modern device management approach, and lessons learned in the [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) Microsoft IT case study. 
 
 ## Simplify IT tasks using the Device Management dashboard
 
