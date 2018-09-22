@@ -40,7 +40,7 @@ You can follow the intended order of the __Getting Started__ quickstarts using t
 - [Try Intune for free](free-trial-sign-up.md) - Create a free subscription to try Intune in a test environment.    
 - [Create a user](quickstart-create-user.md) - Add a user to Intune to allow them to access company resources on mobile devices.
 - [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
-- [Assign policies](get-started-policies.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
+- [Create a policy](quickstart-create-policy.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
 - [Set up auto enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
 - [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
 - [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
