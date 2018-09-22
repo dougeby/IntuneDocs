@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Microsoft Intune documentation - Ignite special edition
+# Microsoft Intune documentation &#40;Ignite special edition&#41;
 Welcome to Microsoft Ignite 2018! We're so glad you came to see us. While here at Microsoft Ignite 2018, check out some of the Intune resources we put together for you.
 
 ## Try our hands-on labs at Ignite!
