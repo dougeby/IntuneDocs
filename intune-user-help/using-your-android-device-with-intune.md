@@ -2,12 +2,12 @@
 # required metadata
 
 title: Using your Android device with Intune | Microsoft Docs
-description: List of links to tasks that end users can do on their Android mobile device when the device is enrolled in Intune
+description: List of links for troubleshooting and managing Intune-enrolled Android devices
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,13 +29,13 @@ ms.custom: intune-enduser
 ---
 
 
-# Using your Android device with Intune
+# Using your Android device with Intune Company Portal
 
-There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+This article lists tasks and information specific to the Company Portal for Android, and will help you troubleshoot and manage your Android device. Click any link to see more details, steps, and screenshots. 
 
 ## Supported versions
 
-Intune currently supports Android 4.4 and later. This includes Samsung Knox 4.4 and later devices.
+The Company Portal currently supports Android 4.4 and later. Support for Samsung Knox 4.4 and later devices is also included.
 
 ## Enrolling into Intune and installing the Company Portal
 
