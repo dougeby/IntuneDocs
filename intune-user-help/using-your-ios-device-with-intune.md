@@ -29,11 +29,11 @@ ms.custom: intune-enduser
 ---
 
 # Using your iOS device with Intune Company Portal
-This article lists tasks and information specific to the Company Portal app for iOS, and can help you troubleshoot and manage your iOS device. Click any link to see more details, steps, and screenshots.
+This article lists tasks and information specific to the Company Portal for iOS. Use it to help you troubleshoot and manage your iOS device. Click any link to see more details, steps, and screenshots.
 
 ## Supported versions
 
-Intune currently supports iOS 9.0 and later.
+The Company Portal for iOS currently supports iOS 9.0 and later.
 
 ## Enrolling into Intune and installing the Company Portal
 
