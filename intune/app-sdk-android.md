@@ -502,7 +502,7 @@ In the Azure portal:
 9.	Click **Done**.
 10. Click **Grant permissions**, then click **Yes**. 
 
-See [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
+See [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
 
 Also see the requirements for [Conditional Access](#conditional-access) below.
 
@@ -1515,7 +1515,7 @@ The following is guidance for requiring user prompt on app launch for an automat
 > The benefits of **default enrollment** include a simplified method of obtaining policy from APP-WE service for an app on the device.
 
 ### General Requirements
-* Ensure your app is registered with the Intune Mobile Application Management service by following the steps at [Common ADAL configurations #2](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
+* Ensure your app is registered with the Intune Mobile Application Management service by following the steps at [Common ADAL configurations #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations).
 
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin app developers who wish to require Intune app protection policies for app use on an end user device.

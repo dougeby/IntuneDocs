@@ -4812,6 +4812,12 @@
 		   "source_path": "intune/early-edition.md",
 		   "redirect_url": "/intune/whats-new",
 		   "redirect_document_id": false
-	   }
+	   }, 
+
+		{
+			"source_path": "intune/get-started-policies.md",
+			"redirect_url": "/intune/quickstart-create-policy",
+			"redirect_document_id": false}
+	   
 	]
 }

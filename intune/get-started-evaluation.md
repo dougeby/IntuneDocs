@@ -3,12 +3,12 @@
 
 title: Getting started with Microsoft Intune
 titleSuffix: 
-description: Go through a series of short hands-on exercises to learn about Intune.
+description: Go through a series of short hands-on quickstarts to learn about Intune.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -27,27 +27,27 @@ ms.custom: intune-azure; get-started
 ---
 
 # What can Intune do for my company?
-
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
+Microsoft Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
 
 ![High-level architectural diagram for Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-We understand that getting started with managing mobile devices can be difficult, since there are many different decisions that you'll need to make on behalf of your company. These exercises take you through some tasks that help you understand how Intune can be used to protect your company resources.
+We understand that getting started with managing mobile devices can be difficult, since there are many different decisions that you'll need to make on behalf of your company. The following quickstarts help you get started with Intune, and complete some common tasks, in a minimal amount of time.
 
-## What are the exercises?
+## Quickstarts
 
-You can follow the intended order of the __Getting Started__ hands-on activities using the table of contents on the left side of the page. These tasks are:
+You can follow the intended order of the __Getting Started__ quickstarts using the table of contents on the left side of the page.
 
-* [Get started with using Azure](get-started-azure.md) - Understand the anatomy of the Azure portal and how to make changes to the page you see.
-* [Get started with managing users](get-started-users.md) - Add a user to Intune to allow them to access company resources on mobile devices.
-* [Get started with groups](get-started-groups.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
-* [Get started with policies](get-started-policies.md) - Create policies to prevent users from doing unauthorized things with their devices.
-* [Get started enrolling devices](get-started-enroll.md) - Learn the enrollment experience by going through a full enrollment experience of an iOS device.
-* [Get started with adding apps](get-started-apps.md) - Find and add apps to devices to make it possible for your employees to get work done.
-
+- [Try Intune for free](free-trial-sign-up.md) - Create a free subscription to try Intune in a test environment.    
+- [Create a user](quickstart-create-user.md) - Add a user to Intune to allow them to access company resources on mobile devices.
+- [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
+- [Create a policy](quickstart-create-policy.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
+- [Set up auto enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
+- [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
+- [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## Prerequisites
 
-Before you start, you must have an Intune admin and tenant account activated. You can sign up for those accounts [here](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Current subscribers can also complete these activities in your live tenant. These getting started articles assume that you're working on test devices.
+Before you start, you must have an Intune admin and tenant account activated. Create a free subscription to [try Intune for free](free-trial-sign-up.md) in a test environment. Current subscribers can also complete these activities in your live tenant. These getting started articles assume that you're working on test devices.
 
 You also need to make sure that you are the global admin for your organization to complete all of the Get Started tasks.
 
