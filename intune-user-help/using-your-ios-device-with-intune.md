@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +28,8 @@ ms.custom: intune-enduser
 
 ---
 
-# Using your iOS device with Intune
-
-There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+# Using your iOS device with Intune Company Portal
+This article lists tasks and information specific to the Company Portal app for iOS, and can help you troubleshoot and manage your iOS device. Click any link to see more details, steps, and screenshots.
 
 ## Supported versions
 
