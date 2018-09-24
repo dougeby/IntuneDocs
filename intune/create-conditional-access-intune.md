@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Quickstart - Create an email device profile for iOS
+title: Set up device-based conditional access with Intune
 titlesuffix: Microsoft Intune
-description: Learn how to use Microsoft Intune to create an email device profile so iOS devices can securely connect to company email.
+description: Learn how to create a device-based conditional access policy based on Microsoft Intune device compliance and mobile app management.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -27,14 +27,14 @@ ms.custom: intune-azure
 
 ---
 
-# Set up device-based conditional access with Intune
+# Create a device-based conditional access policy
 
-With Intune, you can enhance conditional access in Azure Active Directory by adding mobile device compliance and mobile app management to the access controls. Once you’ve created an Intune compliance policy that defines the requirements for devices to be compliant, you can use a device’s compliance status to either allow or block access to your apps and services. 
+With Intune, you can enhance conditional access in Azure Active Directory by adding mobile device compliance to the access controls. Once you’ve created an Intune compliance policy that defines the requirements for devices to be compliant, you can use a device’s compliance status to either allow or block access to your apps and services. You can do this by creating a conditional access policy that uses the setting **Require device to be marked as compliant**. 
 
-A conditional access policy specifies the app or services you want to protect, the conditions under which the apps or services can be accessed, and the users to whom the policy applies. Conditional access is an Azure AD feature that is configurable in Azure Active Directory, but you can also set up these same policies from within the Intune portal, as shown below.
+A conditional access policy specifies the app or services you want to protect, the conditions under which the apps or services can be accessed, and the users to whom the policy applies. Conditional access is an Azure AD premium feature that is configurable in Azure Active Directory, but you can also set up these same policies from within the Intune portal, as shown below. 
 
-> [!NOTE]
-> Conditional access requires an Azure Active Directory Premium license.
+> [!IMPORTANT]
+> Before you set up conditional access, you'll need to set up Intune device compliance policies to evaluate devices based on whether they meet specific requirements. See [Get started with device compliance policies in Intune](device-compliance-get-started.md).
 
 1.	In the Intune portal, select **Conditional access** > **Policies** > **New policy**.
    
@@ -80,7 +80,7 @@ A conditional access policy specifies the app or services you want to protect, t
      > f you want to protect both **Modern authentication** clients and **Exchange ActiveSync clients**, create two separate conditional access policies, one for each client type. Although Exchange ActiveSync supports modern authentication, the only condition that is supported by Exchange ActiveSync is platform. Other conditions, including multi-factor authentication, are not supported. To effectively protect access to Exchange Online from Exchange ActiveSync, create a conditional access policy that specifies the cloud app Office 365 Exchange Online and the client app Exchange ActiveSync with Apply policy only to supported platforms selected.
 
 9.	Select **Done**.
-10.	Under **Access controls**, select **Grant**. This is where you specify what happens based on the conditions you’ve set up. You can selection from the following:
+10.	Under **Access controls**, select **Grant**. This is where you specify what happens based on the conditions you’ve set up.  You can selection from the following:
   - **Block access**: The users specified in this policy will be denied access to the apps under the conditions you’ve specified.
   - **Grant access**: The users specified in this policy will be granted access, but you can require any of the following further actions:
      - **Require multi-factor authentication**: The user will need to complete additional security requirements, like a phone call or text.
