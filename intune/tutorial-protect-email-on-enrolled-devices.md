@@ -35,7 +35,7 @@ In this tutorial, you will learn how to:
   - Set a conditional access policy to require iOS devices to enroll in Intune and use the approved Outlook mobile app to access Office 365 Exchange Online email.
 
 ## Prerequisites
-  - Create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](intune/quickstart-email-profile.md).
+  - Create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
   - If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Sign in to Intune
