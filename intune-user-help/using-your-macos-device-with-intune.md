@@ -30,11 +30,11 @@ ms.custom: intune-enduser
 
 # Using your macOS device with Intune Company Portal
 
-This article lists tasks and information specific to the Company Portal for macOS, and can help you troubleshoot and manage your macOS device. Click any link to see more details, steps, and screenshots. 
+This article lists tasks and information specific to the Company Portal for macOS. Use it to help you troubleshoot and manage your macOS device. Click any link to see more details, steps, and screenshots. 
 
 ## Supported versions
 
-The Intune Company Portal for macOS currently supports OS X El Capitan 10.11 and later for macOS devices.
+The Company Portal for macOS currently supports OS X El Capitan 10.11 and later for macOS devices.
 
 ## Enrolling into Intune and installing the Company Portal
 
