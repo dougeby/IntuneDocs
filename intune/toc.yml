@@ -25,16 +25,18 @@
   - name: Try Intune for free
     href: free-trial-sign-up.md    
   - name: Create a user
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: Create a group
-    href: get-started-groups.md
-  - name: Assign policies
-    href: get-started-policies.md
-  - name: Enroll devices
-    href: get-started-enroll.md
-  - name: Assign apps
-    href: get-started-apps.md
-- name: Scenario implementation guides
+    href: quickstart-create-group.md
+  - name: Create a policy
+    href: quickstart-create-policy.md
+  - name: Set up automatic enrollment
+    href: quickstart-setup-auto-enrollment.md
+  - name: Create and assign a custom role
+    href: quickstart-create-custom-role.md
+  - name: Create an email device profile
+    href: quickstart-email-profile.md
+- name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online
     href: exchange-online-protect.md
@@ -48,6 +50,8 @@
     href: byod-technology-decisions.md
 - name: Concepts
   items:
+  - name: What is device management?
+    href: what-is-device-management.md  
   - name: Navigating the Azure portal
     href: get-started-azure.md  
   - name: High-level architecture
