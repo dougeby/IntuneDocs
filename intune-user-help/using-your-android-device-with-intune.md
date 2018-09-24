@@ -31,7 +31,7 @@ ms.custom: intune-enduser
 
 # Using your Android device with Intune Company Portal
 
-This article lists tasks and information specific to the Company Portal for Android, and will help you troubleshoot and manage your Android device. Click any link to see more details, steps, and screenshots. 
+This article lists tasks and information specific to the Company Portal for Android. Use it to help you troubleshoot and manage your Android device. Click any link to see more details, steps, and screenshots. 
 
 ## Supported versions
 
