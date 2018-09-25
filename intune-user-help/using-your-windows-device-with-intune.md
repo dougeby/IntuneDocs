@@ -2,13 +2,13 @@
 # required metadata
 
 title: Using your Windows device with Intune | Microsoft Docs
-description: List of links to tasks that users can do on their Windows device when their device is enrolled in Intune
+description: Find links to troubleshoot or manage your Windows devices from the Company Portal
 keywords:
 author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,29 +29,29 @@ ms.custom: intune-enduser
 
 ---
 
-# Using your Windows device with Intune
+# Using your Windows device with Intune Company Portal
 
-There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+This article lists tasks and information specific to the Company Portal for Windows. Use it to help you troubleshoot and manage your Windows devices. Click any link to see more details, steps, and screenshots.  
 
 ## Supported versions
 
-Intune currently supports the following versions of Windows.
+The Company Portal currently supports the following versions of Windows.
 
 * Windows 10 (Home, Pro, Education, S, and Enterprise versions)
 * Windows Phone 8.1 and later
 * Windows 8.1 RT
 * Windows 8.1
 
-There are some other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens), that are supported by Intune as well. These are not listed here because they are for very specific uses.
+Other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens), are also supported by in the Company Portal. These versions are not covered in this article because they are for very specific uses.
 
-## Enrolling into Intune and installing the Company Portal
+## Enrolling your device and installing the Company Portal
 
 - [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
 - [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [What info can your company see when you enroll your device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Reset (erase) your lost or stolen device](reset-erase-your-device-cpwebsite.md)
 
-## Things you can do when your device is enrolled in Intune
+## Things you can do after your device is enrolled in management
 
 - [Encrypt your device](encrypt-your-device-windows.md)
 - [Set or change your password](set-or-change-your-password-windows.md)
