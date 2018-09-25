@@ -110,6 +110,15 @@ For more information, see [What is device compliance](device-compliance.md).
 
 <!-- ## Enrollment -->
 
+## Conditional access
+
+### Conditional access settings from Intune do not show up in new console
+
+After your tenant has been migrated to the Azure portal, your conditional access settings will continue to be applied; however, they will not appear in the Azure Intune portal. 
+
+If you would like to view and manage those settings in the Azure portal, you will need to remove the old settings from the classic portal and recreate them in the Azure portal. 
+
+For more information see [Best practices for conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/best-practices).
 
 ## Data protection
 
