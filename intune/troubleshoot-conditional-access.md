@@ -50,6 +50,7 @@ You can view these conditions for each device in the Azure portal and in the dev
   - Make sure the device is using the latest version of the Company Portal app.
   - Restart the device.
   - See if the problem persists on different networks (e.g. cellular, Wi-Fi, etc.).
+
   If the problem remains, contact Microsoft Support as described in [get support for Microsoft Intune](get-support.md).
 - Certain Android devices might appear to be encrypted, however the Company Portal app recognizes these devices as not encrypted, thus marking them as noncompliant. In this scenario, the user will see a notification in the Company Portal app asking them to set a start-up passcode for the device. After tapping the notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen, then tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted. 
   > [!NOTE]
@@ -78,5 +79,5 @@ If you encounter a device that is not compliant but continues to have access, ta
   - Use this PowerShell cmdlet to get a list of all mobile devices for a mailbox: "Get-ActiveSyncDeviceStatistics -mailbox mbx'. If the device isn’t listed, it isn’t accessing Exchange.
   - If the device is listed, use the Get-CASmailbox -identity:’upn’ | fl cmdlet to get detailed information about its access state, and provide that information to Microsoft Support.
 
-### Next steps
+## Next steps
 If this information doesn't help you, you can also [get support for Microsoft Intune](get-support.md).
