@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,13 @@ Device-based conditional access policies for Exchange online and other Office 36
 -   Learn more about [Intune device compliance](device-compliance.md).
 
 -   Learn more about [protecting e-mail, Office 365, and other services using conditional access with Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+
+> [!NOTE]
+> On Android devices, when you enable Device Based Access for Sharepoint Online, users must enable the **Enable Browser Access** option on the enrolled device as follows:
+1. Launch the **Company Portal app**.
+2. Go to the **Settings** page from the triple dots (...) or the hardware menu button.
+3. Press the **Enable Browser Access** button. 
+4. In the Chrome browser, sign out of Office 365 and restart Chrome.
 
 ### Conditional access for Exchange on-premises
 
