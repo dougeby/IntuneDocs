@@ -60,7 +60,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
    To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes.
 
    > [!TIP]
-   > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies.
+   > These policy settings are enforced only when using apps in the work context. When end users use the app to do a personal task, they aren't affected by these policies. Note that when you create a new file it is considered a personal file. 
 
 7. Choose **OK** to save this configuration. You're now back in the **Add a policy** blade.
 8. Choose **Create** to create the policy and save your settings.
