@@ -185,6 +185,9 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 	![Image showing Enable conditional access policy UI comparison between the Intune and Azure portals](./media/reassign-ca-17.png)
 
+> [!NOTE]
+> If you configure **Device platforms**, saving the policy will fail with the error "Policy configuration is not supported." Exchange ActiveSync cannot identify the platform being used by the connecting device. Therefore, configuring specific device platforms is unsupported when creating a policy for Exchange ActiveSync devices.
+
 ## Disable conditional access policies in the Intune classic portal
 
 After you have reassigned your conditional access policies in the Azure portal, it's important to gradually disable the conditional access policies previously created in the Intune classic portal. Additionally, you might need to use the same security group to apply the conditional access policies created in the Azure portal.
