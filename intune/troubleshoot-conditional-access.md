@@ -120,7 +120,7 @@ If these troubleshooting procedures don't resolve your issue, there is informati
 ### Exchange Connector logs
 
 #### General log information
-To view Exchange Connector logs use the [Service Trace Viewer Tool](https://docs.microsoft.com/en-us/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe). This tool requires that you download the Windows Server SDK.
+To view Exchange Connector logs use the [Service Trace Viewer Tool](https://docs.microsoft.com/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe). This tool requires that you download the Windows Server SDK.
 
 >[!NOTE]
 >The logs are located in C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. The logs are contained in a series of 30 log files starting with *Connector0.log* and stopping at *Connector29.log*. Logs rollover from one to another after 10MB of data has accumulated in a log. Once the logs get to Connector29, they will start over at Connector0 again, overwriting previous log files.

@@ -89,7 +89,7 @@ For devices enrolled in Intune using KME, you can configure how an end user sign
 
 - **Without user name association:** In the Knox Portal under **Device details**, leave the **User ID** and **Password** fields blank for the added devices. This requires the end user to enter both user name and password when enrolling to Intune.
 
-- **With user name association:** In the Knox Portal under **Device details**, provide a **User ID** (such as a user name for the assigned user or a [Device Enrollment Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll) account) for the added devices. This prepopulates the user name and requires the end user to enter a password when enrolling to Intune.
+- **With user name association:** In the Knox Portal under **Device details**, provide a **User ID** (such as a user name for the assigned user or a [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) account) for the added devices. This prepopulates the user name and requires the end user to enter a password when enrolling to Intune.
 
 > [!NOTE]
 >
