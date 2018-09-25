@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Fix common issues with your iOS device | Microsoft Docs
-description: Find out ways to solve common issues with your iOS device.
+title: Fix common issues with your macOS device | Microsoft Docs
+description: Troubleshoot common problems for macOS devices in Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,10 +30,10 @@ ms.custom: intune-enduser
 
 # Fix common issues with your macOS device
 
-Sometimes issues can occur with your macOS device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend you reach out to your company support through their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+Troubleshoot common macOS problems that come up during and after enrollment. If you don't see the problem you're experiencing listed below, reach out to your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
-- [Updating your macOS device](you-need-to-update-your-macos-device.md)
-- [Errors you might see if you use Jamf Self Service](device-little-different-jamf.md)
-- [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [I need to update my macOS device](you-need-to-update-your-macos-device.md)
+- [My Jamf-managed device is not compliant](device-little-different-jamf.md)
+- [I can't find the serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [I've been asked to identify my device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

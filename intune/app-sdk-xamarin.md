@@ -140,7 +140,7 @@ The following is guidance for ensuring Xamarin-based Android LOB apps can be use
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
-1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > The term "client id" is the same as the term "application id" from the Azure Portal tied to your app. 
 * To enable SSO, "Common ADAL configuration" #2 is what is needed.

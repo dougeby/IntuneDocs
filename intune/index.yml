@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 09/02/2018
+  ms.date: 09/13/2018
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
@@ -28,8 +28,8 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: What is Intune?
-    - href: get-started-evaluation.md
-      html: <p>See how Intune works with this simple tutorial.</p>
+    - href: free-trial-sign-up.md
+      html: <p>Try Intune with this simple tutorial.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: Get started
@@ -68,12 +68,12 @@ sections:
       title: Windows AutoPilot Deployment Program support in Microsoft Intune
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
-    - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
-      title: "[Blog] Security enhancements in the Intune service "
+    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/12/support-tip-intune-support-for-ios-12/
+      title: "[Blog] Support Tip: Intune Support for iOS 12"
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-    - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: "[Blog] Troubleshooting Portal makes diagnosing and resolving end user issues easier"
+    - href: https://blogs.technet.microsoft.com/intunesupport/2018/09/04/coming-soon-new-intune-support-experience-for-premier-customers/
+      title: "[Blog] New Intune support experience for Premier customers"
       image: 
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     
@@ -81,8 +81,23 @@ sections:
   items:
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/BuV9Ntszwb8]"
+  - type: paragraph
+    text: ' '    
   - type: markdown
     text: ">[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]"
+
+- title: Free Intune Training
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 1
+    items: 
+    - href: https://www.pluralsight.com/courses/windows-10-configuring-intune-creators
+      title: "Windows 10 Configuring: Plan and Implement Microsoft Intune"
+      image:
+        src: https://docs.microsoft.com/en-us/media/logos/logo_pluralsight.svg        
+
 - title: Planning articles 
   items:
   - type: list
