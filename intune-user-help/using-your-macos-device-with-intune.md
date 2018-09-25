@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Using your iOS or macOS device with Intune | Microsoft Docs
-description: List of links to tasks that you can do on your iOS or macOS mobile device when the device is enrolled in Intune
+title: Using your macOS device with Intune | Microsoft Docs
+description: Find links to troubleshoot or manage your macOS mobile device from the Company Portal app
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,13 +28,13 @@ ms.custom: intune-enduser
 
 ---
 
-# Using your macOS device with Intune
+# Using your macOS device with Intune Company Portal
 
-There are a number of things you can do with Intune to make your work life easier. Here's a list of the most common things you might be asked to do by your company.
+This article lists tasks and information specific to the Company Portal for macOS. Use it to help you troubleshoot and manage your macOS device. Click any link to see more details, steps, and screenshots. 
 
 ## Supported versions
 
-Intune currently supports OS X El Capitan 10.11 and later for macOS devices.
+The Company Portal for macOS currently supports OS X El Capitan 10.11 and later for macOS devices.
 
 ## Enrolling into Intune and installing the Company Portal
 
