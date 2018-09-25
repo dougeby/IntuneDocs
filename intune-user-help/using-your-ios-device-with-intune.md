@@ -33,7 +33,7 @@ This article lists tasks and information specific to the Company Portal for iOS.
 
 ## Supported versions
 
-The Company Portal for iOS currently supports iOS 9.0 and later.
+The Company Portal for iOS currently supports iOS 10.0 and later.
 
 ## Enrolling into Intune and installing the Company Portal
 

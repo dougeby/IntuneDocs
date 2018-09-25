@@ -204,7 +204,7 @@ Intune manages mobile devices to secure corporate data and allow end users to wo
 
 | **Device platform** | **OS Versions** |
 |:---:|:---:|
-| iOS - iPhone | 9.0+ |                
+| iOS - iPhone | 10.0+ |                
 | iOS - iPad | 8.0+ |               
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10 tablet | 10+ |
