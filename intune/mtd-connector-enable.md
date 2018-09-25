@@ -50,7 +50,7 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 	![MTD setup in Intune Azure portal](./media/enable-mtd-connector-1.png)
 
-7. Enable the toggle options according to your organization's requirements.
+7. Enable the toggle options according to your organization's requirements. Toggle options visible will vary depending on the MTD partner.
 
 ## MTD toggle options
 
