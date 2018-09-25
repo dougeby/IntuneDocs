@@ -58,7 +58,7 @@ You can create protected browser policies for the following device types:
 
 -   Devices that run Android 4 and later
 
--   Devices that run iOS 8.0 and later
+-   Devices that run iOS 10.0 and later
 
 >[!IMPORTANT]
 >The Intune Managed Browser app on Android app supports only devices running Android 4.4 and later. The Intune Managed Browser app on iOS supports only devices running iOS 10.0 and later.
