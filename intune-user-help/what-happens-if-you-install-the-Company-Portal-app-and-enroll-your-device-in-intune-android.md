@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ If your organization requires you to install the Intune Company Portal app on yo
 ## Gets your device managed
 The Company Portal app helps get your device managed (also referred to as *enrolled*) in your organization's device management system. Before you connect to your organization's network, your school or workplace wants to make sure that you have a secure, trusted device. To access work or school resources, your device will need to follow your organization's device policies. 
 
-Your company support or IT admin configures these policies in their company-wide device management system. After you power on your device, you'll receive these policies. 
+Your company support or IT admin configures these policies in their company-wide device management system. After you enroll your device, you'll receive these policies. 
 
 Examples of some of the policies that your organization might require are:
 * Setting up a password or PIN
