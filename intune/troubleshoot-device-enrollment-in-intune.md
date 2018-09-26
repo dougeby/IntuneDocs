@@ -357,6 +357,7 @@ Examples will be added soon about what to look for in these log files.
 **Issue**: An enrolling device may get stuck in either of two screens:
 - Awaiting final configuration from “Microsoft”
 - Guided Access app unavailable. Please contact your administrator.
+
 This issue can happen if:
 - there's a temporary outage with Apple services, or
 - iOS enrollment is set to use VPP tokens as shown in the table but there's something wrong with the VPP token.
