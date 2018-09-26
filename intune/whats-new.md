@@ -50,9 +50,6 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Microsoft 365 Device Management administration center <!-- 3078424 -->
 One of the promises of Microsoft 365 is simplified administration, and over the years we’ve integrated the back-end Microsoft 365 services to deliver end-to-end scenarios such as Intune and Azure AD conditional access. The new [Microsoft 365 administration center](http://devicemanagement.microsoft.com) is the place to consolidate, simplify, and integrate the admin experience. The specialist workspace for Device Management provides easy access to all of the device and app management information and tasks that your organization needs. We expect this to become the primary cloud workspace for enterprise end user computing teams.
 
-### Windows 10 app deployment using Intune <!-- 2309001 -->
-Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. ​Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the Cloud. This feature is currently in public preview.
-
 ### Support for more third-party certification authorities (CA) <!-- 3093107 -->
 By using the Simple Certificate Enrollment Protocol (SCEP), you can now issue new certificates and renew certificates on mobile devices using Windows, iOS, Android, and macOS.
 
