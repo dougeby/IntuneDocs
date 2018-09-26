@@ -341,6 +341,59 @@ For more information, see [Best practices for securing Active Directory Federati
 Examples will be added soon about what to look for in these log files.
 
 
+### User’s iOS device is stuck on an enrollment screen for more than 10 minutes
+
+**Issue**: An enrolling device may get stuck in either of two screens:
+- Awaiting final configuration from “Microsoft”
+- Guided Access app unavailable. Please contact your administrator.
+This can happen if there is a temporary outage with Apple services or if iOS enrollment is set to use VPP tokens showing in the table but there is something wrong with the VPP token.
+| Enrollment settings | Value |
+| ---- | ---- |
+| Platform | iOS |
+| User Affinity | Enroll with User Affinity |
+|Authenticate with Company Portal instead of Apple Setup Assistant | Yes |
+| Install Company Portal with VPP | Use token: token address |
+| Run Company Portal in Single App Mode until authentication | Yes |
+
+**Resolution**: To fix the problem, you must determine if there is something wrong with the VPP token and fix it, identify which devices are affected, wipe the affected devices, and then tell the user to restart the enrollment process.
+
+#### Determine if there is something wrong with the VPP token
+1. Go to **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > token name > **Profiles** > profile name > **Manage** > **Properties**.
+2. Review the properties to see if any errors similar to the following appear:
+    - This token has expired.
+    - This token is out of Company Portal licenses.
+    - This token is being used by another service.
+    - This token is being used by another tenant.
+    - This token was deleted.
+3. Fix the issues for the token.
+
+#### Identify which devices are blocked by the VPP token
+1. Go to **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > token name > **Devices**.
+2. Filter the **Profile status** column by **Blocked**.
+3. Make a note of the serial numbers for all the devices that are **Blocked**.
+
+#### Remotely wipe the blocked devices
+After you’ve fixed the issues with the VPP token, you must wipe the devices that are blocked.
+1. Go to **Intune** > **Devices** > **All devices** > **Columns** > **Serial number** > **Apply**. 
+2. For each blocked device, choose it in the **All devices** list and then choose **Wipe** > **Yes**.
+
+#### Tell the users to restart the enrollment process
+After you've wiped the blocked devices, you can tell the users to restart the enrollment process.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
