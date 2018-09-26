@@ -158,9 +158,7 @@ The following table lists errors that end users might see while enrolling Androi
 |Error message|Issue|Resolution|
 |---|---|---|
 |**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority.
-For example, they'll see this error if both of the following are true:
-- Intune has been set as the mobile device management authority
-- They're using a System Center 2012 R2 Configuration Manager license.<br><br>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
+For example, they'll see this error if both of the following are true:<ol><li>Intune has been set as the mobile device management authority</li><li>They're using a System Center 2012 R2 Configuration Manager license.</li></ol>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
 |**IT admin needs to set MDM authority**<br>Looks like your IT admin hasn't set an MDM authority. Get help from your IT admin or try again later.|The mobile device management authority hasn't been defined.|The mobile device management authority hasn't been set in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set).|
 
 
