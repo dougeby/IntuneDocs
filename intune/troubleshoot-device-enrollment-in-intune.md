@@ -56,7 +56,7 @@ Your managed device users can collect enrollment and diagnostic logs for you to 
 These issues may occur on all device platforms.
 
 ### Device cap reached
-**Issue:** A user receives an error on their device during enrollment, such as a **Company Portal Temporarily Unavailable** error on an iOS device, and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
+**Issue:** A user receives an error during enrollment (like **Company Portal Temporarily Unavailable**) and the DMPdownloader.log on Configuration Manager contains the error **DeviceCapReached**.
 
 **Resolution:**
 
@@ -102,7 +102,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 
 1.  Verify that the MDM Authority has been [set appropriately](mdm-authority-set.md).
     
-2.  Verify that the user’s credentials have synced correctly with Azure Active Directory by checking that the user's UPN matches the Active Directory information in the Office 365 portal.
+2.  Verify that the user’s credentials have synced correctly with Azure Active Directory (check that the user's UPN matches the Active Directory information in the Office 365 portal).
     If the UPN does not match the Active Directory information:
 
     1.  Turn off DirSync on the local server.
@@ -138,10 +138,15 @@ To avoid hitting device caps, be sure to remove stale device records.
 **Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
 
 ### Unable to sign in or enroll devices when you have multiple verified domains
-**Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
+**Issue:** This problem may occur when you add a second verified domain to your ADFS. Users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
-<strong>Resolution:</strong> Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+<strong>Resolution:</strong> Microsoft Office 365 Customers are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix if they:
+- use single sign-on (SSO) through AD FS 2.0, and
+- have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com).
+
+
+There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## Android issues
@@ -152,7 +157,10 @@ The following table lists errors that end users might see while enrolling Androi
 
 |Error message|Issue|Resolution|
 |---|---|---|
-|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br><br>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority.
+For example, they'll see this error if both of the following are true:
+- Intune has been designated as the mobile device management authority
+- they are using a System Center 2012 R2 Configuration Manager license.<br><br>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
 |**IT admin needs to set MDM authority**<br>Looks like your IT admin has not set an MDM authority. Get help from your IT admin or try again later.|The mobile device management authority has not been defined.|The mobile device management authority has not been designated in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set).|
 
 
@@ -174,7 +182,7 @@ Tell your users to start the Company Portal app manually. Once the app restarts,
 
 **Resolution #2:**
 
-Tell your users to try upgrading to Android 6.0. The deactivation issue doesn't occur on Android 6.0 devices. To check if an update is available, users can go to **Settings** > **About device** > **Download updates manually**, and follow the prompts on the device.
+Tell your users to try upgrading to Android 6.0. The deactivation issue doesn't occur on Android 6.0 devices. To check if an update is available, go to **Settings** > **About device** > **Download updates manually**, and follow the prompts.
 
 **Resolution #3:**
 
@@ -210,11 +218,13 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution:**
 
-1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you are using.
+1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service that you are using.
 
-2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
+2.  Confirm that the device isn't already enrolled with another MDM provider.
 
-3.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+3. Confirm that the device doesn't already have a management profile installed.
+
+4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
 
 ### Android certificate issues
 
@@ -227,7 +237,7 @@ The user might be able to retrieve the missing certificate by following the inst
 
 **Resolution 2**:
 
-If users still see the missing certificate error after entering their corporate credentials and getting redirected for federated login, an intermediate certificate may be missing from your Active Directory Federation Services (AD FS) server.
+After entering their corporate credentials and getting redirected for federated login, users might still see the missing certificate error. In this case, the error may mean that an intermediate certificate is missing from your Active Directory Federation Services (AD FS) server
 
 The certificate error occurs because Android devices require intermediate certificates to be included in an [SSL Server hello](https://technet.microsoft.com/library/cc783349.aspx). Currently, a default AD FS server or WAP - AD FS Proxy server installation sends only the AD FS service SSL certificate in the SSL server hello response to an SSL Client hello.
 
@@ -266,10 +276,17 @@ The following table lists errors that end users might see while enrolling iOS de
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|No enrollment policy found|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](ios-enroll.md).|
 |DeviceCapReached|Too many mobile devices are enrolled already.|The user must remove one of their currently enrolled mobile devices from the Company Portal before enrolling another. See the instructions for the type of device you're using: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. If the steps to get an APNs certificate weren't performed, or if the APNs certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attemps will fail and this message will appear if:
+- The steps to get an APNs certificate weren't performed, or
+- The APNs certificate has expired.
+<br /><br />Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. If the steps to get an APNs certificate weren't performed, or if the APNs certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you are trying to enroll is not supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
-|UserLicenseTypeInvalid|The device cannot be enrolled because the user's account is not yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br /><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|UserLicenseTypeInvalid|The device cannot be enrolled because the user's account is not yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority.
+For example, they'll see this error if both of the following are true:
+- Intune has been designated as the mobile device management authority
+- they are using a System Center 2012 R2 Configuration Manager license.
+<br /><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |MdmAuthorityNotDefined|The mobile device management authority has not been defined.<br /><br />|The mobile device management authority has not been designated in Intune.<br /><br />Review item #1 in the "Step 6: Enroll mobile devices and install an app" section in [Get started with a 30-day trial of Microsoft Intune](free-trial-sign-up.md).|
 
 ### Devices are inactive or the admin console cannot communicate with them
@@ -308,7 +325,7 @@ Enrolling Device Enrollment Program devices with user affinity requires WS-Trust
 
 For more information, see [Get-AdfsEndpoint documentation](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-For more information, see [Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). If you need additional assistance in determining if WS-Trust 1.3 Username/Mixed is enabled in your identity federation provider, contact Microsoft Support if you use ADFS, or your 3rd party identity vendor.
+For more information, see [Best practices for securing Active Directory Federation Services](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs). If you need additional assistance in determining if WS-Trust 1.3 Username/Mixed is enabled in your identity federation provider, contact Microsoft Support if you use ADFS, or your third party identity vendor.
 
 
 ### Profile installation failed
@@ -346,7 +363,7 @@ Examples will be added soon about what to look for in these log files.
 **Issue**: An enrolling device may get stuck in either of two screens:
 - Awaiting final configuration from “Microsoft”
 - Guided Access app unavailable. Please contact your administrator.
-This can happen if there is a temporary outage with Apple services or if iOS enrollment is set to use VPP tokens showing in the table but there is something wrong with the VPP token.
+This issue can happen if there is a temporary outage with Apple services or if iOS enrollment is set to use VPP tokens showing in the table but there is something wrong with the VPP token.
 | Enrollment settings | Value |
 | ---- | ---- |
 | Platform | iOS |
@@ -398,11 +415,11 @@ After you've wiped the blocked devices, you can tell the users to restart the en
 ### Mobile devices disappear
 **Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
 
-**Resolution:** This may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
+**Resolution:** This issue may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
 
 #### Check how device was removed
 
-1.  In the Configuration Manager admin console select **Monitoring** &gt; **System Status** &gt; **Status Message Queries**.
+1.  In the Configuration Manager admin console, select **Monitoring** &gt; **System Status** &gt; **Status Message Queries**.
 
 2.  Right-click **Collection Member Resources Manually Deleted** and select **Show Messages**.
 
@@ -425,14 +442,17 @@ A list of iOS enrollment errors is provided in our documentation, in [Troublesho
 
 |Error message|Issue|Resolution|
 |---|---|---|
-|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, if Intune has been designated as the mobile device management authority, and they are using a System Center 2012 R2 Configuration Manager license, they will see this error.<br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account does not have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority.
+For example, they'll see this error if both of the following are true:
+- Intune has been designated as the mobile device management authority
+- they are using a System Center 2012 R2 Configuration Manager license.<br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
 
 
 
 ### The machine is already enrolled - Error hr 0x8007064c
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
 
-This may be because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
+This failure may occur because the computer had been previously enrolled, or has the cloned image of a computer that had been enrolled. The account certificate of the previous account is still present on the computer.
 
 
 
