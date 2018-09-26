@@ -38,7 +38,7 @@ When a user contacts support with a technical issue with Intune, the help desk o
 - User status
 - Assignments
 - Compliance issues
-- Device not
+- Device not responding
 - Device not getting VPN or Wi-Fi settings
 - App installation failure
 
