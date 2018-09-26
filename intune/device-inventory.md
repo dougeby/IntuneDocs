@@ -69,44 +69,38 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 
 ## Hardware device details
 
-### Windows and iOS device details:
-|Detail|Description|  
-|--------------|----------------------|  
-|Name|The name of the device.|
-|Management name|The device name used only in the console. Changing this name won't change the name on the device.|
-|UDID|The device's Unique Device identifier.|
-|Intune Device ID|A GUID that uniquely identifies the device.|
-|Serial number|The device's serial number from the manufacturer.|
-|Shared device|If **Yes**, the device is shared by more than one user.|
-|User approved enrollment|If **Yes**, then the device has user approved enrollment which lets admins manage certain security settings on the device.|
-|Operating system|The operating system used on the device.|
-|Operating system version|The version of the operating system on the device.|
-|Operating system language|The language set for the operating system on the device.|
-|Total storage space|The total storage space on the device (in gigabytes).|
-|Free storage space|The unused storage space on the device (in gigabytes).|
-
-
-### Windows, iOS, and macOS device details
-|Detail|Description|  
-|--------------|----------------------|  
-|IMEI|The device's International Mobile Equipment Identity.|
-|MEID|The device's mobile equipment identifier.|
-|Manufacturer|The manufacturer of the device.|
-|Model|The model of the device.|
-|Phone number|The phone number assigned to the device.|
-|Subscribe carrier|The device's wireless carrier.|
-|Cellular technology|The radio system used by the device.|
-|Wi-Fi MAC|The device's Media Access Control address.|
-|ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|
-|Enrolled date|The date and time that the device was enrolled in Intune.|
-|Last contact|The date and time that the device last connected to Intune.|
-|Activation lock bypass code|The code that can be used to bypass the activation lock.|
-|Azure AD registered|If **Yes**, the device is registered with Azure Directory.|
-|Compliance|The device's compliance state.|
-|EAS activated|If **Yes**, then the device is synchronized with an Exchange mailbox.|
-|EAS activation ID|The device's Exchange ActiveSync identifier.|
-|Supervised|If **Yes**, administrators have enhanced control over the device.|
-|Encrypted|If **Yes**, the data stored on the device is encrypted.|
+|Detail|Description|Platform| 
+|--------------|----------------------|----|  
+|Name|The name of the device.|Windows, iOS|
+|Management name|The device name used only in the console. Changing this name won't change the name on the device.|Windows, iOS|
+|UDID|The device's Unique Device identifier.|Windows, iOS|
+|Intune Device ID|A GUID that uniquely identifies the device.|Windows, iOS|
+|Serial number|The device's serial number from the manufacturer.|Windows, iOS|
+|Shared device|If **Yes**, the device is shared by more than one user.|Windows, iOS|
+|User approved enrollment|If **Yes**, then the device has user approved enrollment which lets admins manage certain security settings on the device.|Windows, iOS|
+|Operating system|The operating system used on the device.|Windows, iOS|
+|Operating system version|The version of the operating system on the device.|Windows, iOS|
+|Operating system language|The language set for the operating system on the device.|Windows, iOS|
+|Total storage space|The total storage space on the device (in gigabytes).|Windows, iOS|
+|Free storage space|The unused storage space on the device (in gigabytes).|Windows, iOS|
+|IMEI|The device's International Mobile Equipment Identity.|Windows, iOS, Android|
+|MEID|The device's mobile equipment identifier.|Windows, iOS, Android|
+|Manufacturer|The manufacturer of the device.|Windows, iOS, Android|
+|Model|The model of the device.|Windows, iOS, Android|
+|Phone number|The phone number assigned to the device.|Windows, iOS, Android|
+|Subscribe carrier|The device's wireless carrier.|Windows, iOS, Android|
+|Cellular technology|The radio system used by the device.|Windows, iOS, Android|
+|Wi-Fi MAC|The device's Media Access Control address.|Windows, iOS, Android|
+|ICCID|The Integrated Circuit Card Identifier, which is a SIM card's unique identification number.|Windows, iOS, Android|
+|Enrolled date|The date and time that the device was enrolled in Intune.|Windows, iOS, Android|
+|Last contact|The date and time that the device last connected to Intune.|Windows, iOS, Android|
+|Activation lock bypass code|The code that can be used to bypass the activation lock.|Windows, iOS, Android|
+|Azure AD registered|If **Yes**, the device is registered with Azure Directory.|Windows, iOS, Android|
+|Compliance|The device's compliance state.|Windows, iOS, Android|
+|EAS activated|If **Yes**, then the device is synchronized with an Exchange mailbox.|Windows, iOS, Android|
+|EAS activation ID|The device's Exchange ActiveSync identifier.|Windows, iOS, Android|
+|Supervised|If **Yes**, administrators have enhanced control over the device.|Windows, iOS, Android|
+|Encrypted|If **Yes**, the data stored on the device is encrypted.|Windows, iOS, Android|
 
 
 
