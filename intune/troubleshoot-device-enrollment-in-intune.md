@@ -279,8 +279,7 @@ The following table lists errors that end users might see while enrolling iOS de
 |APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you're trying to enroll isn't supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
-|UserLicenseTypeInvalid|The device cannot be enrolled because the user's account isn't yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority.
-For example, they'll see this error if both of the following are true:<ol><li>Intune has been designated as the mobile device management authority</li><li>they are using a System Center 2012 R2 Configuration Manager license.</li></ol><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|UserLicenseTypeInvalid|The device cannot be enrolled because the user's account isn't yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority. For example, they'll see this error if both of the following are true:<ol><li>Intune has been designated as the mobile device management authority</li><li>they are using a System Center 2012 R2 Configuration Manager license.</li></ol><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |MdmAuthorityNotDefined|The mobile device management authority has not been defined.<br /><br />|The mobile device management authority has not been designated in Intune.<br /><br />Review item #1 in the "Step 6: Enroll mobile devices and install an app" section in [Get started with a 30-day trial of Microsoft Intune](free-trial-sign-up.md).|
 
 ### Devices are inactive or the admin console cannot communicate with them
@@ -401,25 +400,14 @@ After you’ve fixed the issues with the VPP token, you must wipe the devices th
 #### Tell the users to restart the enrollment process
 After you've wiped the blocked devices, you can tell the users to restart the enrollment process.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
-**Issue:** After successfully enrolling a mobile device to Configuration Manager it disappears from the mobile device collection, but the device still has the Management Profile and is listed in CSS Gateway.
+**Issue:** After successfully enrolling a mobile device to Configuration Manager, it disappears from the mobile device collection. However, the device still has the Management Profile and is listed in CSS Gateway.
 
-**Resolution:** This issue may occur because you have a custom process removing non-domain-joined devices, or because the  user has retired the device from the subscription. To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
+**Resolution:** This issue may occur because:
+- You have a custom process removing non-domain-joined devices, or 
+- the user has retired the device from the subscription.
+To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
 
 #### Check how device was removed
 
@@ -446,10 +434,7 @@ A list of iOS enrollment errors is provided in our documentation, in [Troublesho
 
 |Error message|Issue|Resolution|
 |---|---|---|
-|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority.
-For example, they'll see this error if both of the following are true:
-- Intune has been designated as the mobile device management authority
-- they are using a System Center 2012 R2 Configuration Manager license.<br>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
+|**IT admin needs to assign license for access**<br>Your IT admin has not given you access to use this app. Get help from your IT admin or try again later.|The device cannot be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the designated mobile device management authority. For example, they'll see this error if both of the following are true: <ol><li>Intune has been designated as the mobile device management authority</li><li>They are using a System Center 2012 R2 Configuration Manager license.</li></ol>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
 
 
 
