@@ -4728,14 +4728,7 @@
 			"redirect_url": "/intune/app-sdk-xamarin",
 			"redirect_document_id": true
 		},
-
-
-
-
-
-
-
-		{
+        {
 			"source_path": "intune/deploy-use/configure-certificate-infrastructure.md",
 			"redirect_url": "/intune/app-sdk-xamarin",
 			"redirect_document_id": true
@@ -4898,25 +4891,6 @@
 			"redirect_url": "/intune/users-add",
 			"redirect_document_id": true
 		},
-		{
-			"source_path": ".md",
-			"redirect_url": "",
-			"redirect_document_id": true
-		},			{
-			"source_path": ".md",
-			"redirect_url": "",
-			"redirect_document_id": true
-		},			{
-			"source_path": ".md",
-			"redirect_url": "",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": ".md",
-			"redirect_url": "",
-			"redirect_document_id": true
-		},	
-
 		{
 			"source_path": "intune/users-permissions-add.md",
 			"redirect_url": "/intune/users-add",
