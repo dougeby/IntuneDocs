@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/24/2016
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,17 +30,26 @@ ms.custom: intune-enduser
 
 
 # Use managed apps on your Android device
+Managed apps are configured to meet your organization's security requirements, and protect work and school data. These apps are made available to you on your device to install or use automatically. 
 
-Managed apps are apps that your company support can set up to help protect company data that you can access in that app. When you access company data in a managed app on your Android device, you may notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
+Before you receive and install a managed app, your organization configures its permissions. They might restrict app functionality or user interactions to protect app data from being shared or seen by unauthorized individuals. For example, an organization could block the use of copy and paste while in the app. Or they could restrict you from saving data to your device's local storage.
 
-Different managed apps can also work together on your device to allow you to do your daily tasks, while keeping corporate data protected. For example, if you open a company file in one managed app, and another managed app is required to view that file, the managed app that allows you to view the file opens automatically. If a required app is not available, certain actions, like opening a document or accessing a web link from within a managed document, might not be available.
+To further protect files and data, your organization might configure several managed apps to work together. For example:
+1. You connect to your organization's network in a managed browser app, such as Microsoft Edge.
+2. You click a link to open your peer's presentation file.
+3. An appropriate managed app, such as Microsoft PowerPoint, opens the file.
 
-When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
+Organizations can require you to use a managed app to do something, such as open a work file, or access a web link. If you don't have the app, you might not be able to continue your task. Some managed apps are made available for you to install, but are not required.
+
+## How do I know I'm using a managed app?
+When you open data in a managed app, you receive a message similar to the example screenshot below. 
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
 ## How do I get managed apps?
-You get managed apps in a couple of different ways:
+After you register you device with the Company Portal, you might notice that some managed apps are already installed on your device. To see if your organization has made other apps available to you:  
+* Go to the Company Portal app or website to search, view, and install managed apps.
+* Install an app from the Google Play store. Sign in to the app with your work or school account.
 
 -   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your company support might install it on your device. To learn about enrolling, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 
