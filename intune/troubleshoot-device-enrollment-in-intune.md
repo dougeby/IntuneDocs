@@ -113,7 +113,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 
     4.  Turn on DirSync again and check if the user is now synced properly.
 
-3.  In a scenario where you are using System Center Configuration Manager with Intune, verify that the user has a valid Cloud User ID:
+3.  In a scenario where you're using System Center Configuration Manager with Intune, verify that the user has a valid Cloud User ID:
 
     1.  Open SQL Management Studio.
 
@@ -218,7 +218,7 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution:**
 
-1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service that you are using.
+1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service that you're using.
 
 2.  Confirm that the device isn't already enrolled with another MDM provider.
 
@@ -276,12 +276,12 @@ The following table lists errors that end users might see while enrolling iOS de
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |NoEnrollmentPolicy|No enrollment policy found|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](ios-enroll.md).|
 |DeviceCapReached|Too many mobile devices are enrolled already.|The user must remove one of their currently enrolled mobile devices from the Company Portal before enrolling another. See the instructions for the type of device you're using: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attemps will fail and this message will appear if:
+|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul> <br /><br />Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<br/>
 - The steps to get an APNs certificate weren't performed, or
 - The APNs certificate has expired.
-<br /><br />Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
-|AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. If the steps to get an APNs certificate weren't performed, or if the APNs certificate has expired, then enrollment attempts will fail, and this message will appear.<br /><br />For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
-|DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you are trying to enroll is not supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
+<br /><br />For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
+|DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you're trying to enroll is not supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
 |UserLicenseTypeInvalid|The device cannot be enrolled because the user's account is not yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority.
 For example, they'll see this error if both of the following are true:
 - Intune has been designated as the mobile device management authority
@@ -333,7 +333,7 @@ For more information, see [Best practices for securing Active Directory Federati
 
 ### Troubleshooting steps for failed profile installation
 
-1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you are using.
+1.  Confirm that the user has been assigned an appropriate license for the version of the Intune service you're using.
 
 2.  Confirm that the device is not already enrolled with another MDM provider or that it does not already have a management profile installed.
 
