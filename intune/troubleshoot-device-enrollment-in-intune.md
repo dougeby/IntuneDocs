@@ -160,7 +160,7 @@ The following table lists errors that end users might see while enrolling Androi
 |**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority.
 For example, they'll see this error if both of the following are true:
 - Intune has been set as the mobile device management authority
-- they are using a System Center 2012 R2 Configuration Manager license.<br><br>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
+- They're using a System Center 2012 R2 Configuration Manager license.<br><br>For more information, see [Assign Intune licenses to your user accounts](/intune/licenses-assign).
 |**IT admin needs to set MDM authority**<br>Looks like your IT admin hasn't set an MDM authority. Get help from your IT admin or try again later.|The mobile device management authority hasn't been defined.|The mobile device management authority hasn't been set in Intune. See information about how to [set the mobile device management authority](/intune/mdm-authority-set).|
 
 
@@ -171,7 +171,7 @@ For example, they'll see this error if both of the following are true:
 - They show a Management State of **Unhealthy** in the administrator console.
 - Users who are protected by conditional access policies might lose access to corporate resources.
 
-Samsung has confirmed that the Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When Company Portal is in a deactivated state, it can't run in the background and therefore can't contact the Intune service.
+Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When the Company Portal is in a deactivated state, it can't run in the background and can't contact the Intune service.
 
 **Resolution #1:**
 
@@ -249,7 +249,7 @@ To fix the issue, import the certificates into the Computers Personal Certificat
 4.	Choose the **Certification Path** tab to see the certificate’s parent certificate/s.
 5.	On each parent certificate, choose **View Certificate**.
 6.	Choose **Details** > **Copy to file…**.
-7.	Follow the wizard prompts to export or save the public key of the parent certificate to the desired file location.
+7.	Follow the wizard prompts to export or save the public key of the parent certificate to the a file location of your choice.
 8.	Right-click **Certificates** > **All Tasks** > **Import**.
 9.	Follow the wizard prompts to import the parent certificate(s) to **Local Computer\Personal\Certificates**.
 10.	Restart the AD FS servers.
@@ -276,10 +276,10 @@ The following table lists errors that end users might see while enrolling iOS de
 |-------------|-----|----------|
 |NoEnrollmentPolicy|No enrollment policy found|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](ios-enroll.md).|
 |DeviceCapReached|Too many mobile devices are enrolled already.|The user must remove one of their currently enrolled mobile devices from the Company Portal before enrolling another. See the instructions for the type of device you're using: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
-|APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
-|AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
-|DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you're trying to enroll isn't supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
-|UserLicenseTypeInvalid|The device can't be enrolled because the user's account isn't yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true:<ol><li>Intune has been set as the mobile device management authority</li><li>they are using a System Center 2012 R2 Configuration Manager license.</li></ol>Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|APNSCertificateNotValid|There's a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to contact enrolled iOS devices. Enrollment will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't completed, or</li><li>The APNs certificate has expired.</li></ul>Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+|AccountNotOnboarded|There's a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to contact enrolled iOS devices. Enrollment will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't completed, or</li><li>The APNs certificate has expired.</li></ul>For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
+|DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you're trying to enroll isn't supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Make sure that your user's device is running iOS version 8.0 or later.|
+|UserLicenseTypeInvalid|The device can't be enrolled because the user's account isn't yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true:<ol><li>Intune has been set as the mobile device management authority</li><li>they'e using a System Center 2012 R2 Configuration Manager license.</li></ol>Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |MdmAuthorityNotDefined|The mobile device management authority hasn't been defined.<br /><br />|The mobile device management authority hasn't been set in Intune.<br /><br />Review item #1 in the "Step 6: Enroll mobile devices and install an app" section in [Get started with a 30-day trial of Microsoft Intune](free-trial-sign-up.md).|
 
 ### Devices are inactive or the admin console can't communicate with them
@@ -291,7 +291,7 @@ The following table lists errors that end users might see while enrolling iOS de
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 
-When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there is no contact, it automatically tries to sync with Intune to reconnect (users will see the **Trying to sync…** message).
+When users start the iOS Company Portal app, it can tell if their device has lost contact with Intune. If it detects that there's no contact, it automatically tries to sync with Intune to reconnect (users will see the **Trying to sync…** message).
 
   ![Trying to sync notification](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
@@ -361,8 +361,8 @@ Examples will be added soon about what to look for in these log files.
 - Awaiting final configuration from “Microsoft”
 - Guided Access app unavailable. Please contact your administrator.
 This issue can happen if:
-- there is a temporary outage with Apple services, or
-- iOS enrollment is set to use VPP tokens as shown in the table but there is something wrong with the VPP token.
+- there's a temporary outage with Apple services, or
+- iOS enrollment is set to use VPP tokens as shown in the table but there's something wrong with the VPP token.
 | Enrollment settings | Value |
 | ---- | ---- |
 | Platform | iOS |
@@ -372,12 +372,12 @@ This issue can happen if:
 | Run Company Portal in Single App Mode until authentication | Yes |
 
 **Resolution**: To fix the problem, you must:
-1. Determine if there is something wrong with the VPP token and fix it.
+1. Determine if there's something wrong with the VPP token and fix it.
 2. Identify which devices are blocked.
 3. Wipe the affected devices.
 4. Tell the user to restart the enrollment process.
 
-#### Determine if there is something wrong with the VPP token
+#### Determine if there's something wrong with the VPP token
 1. Go to **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > token name > **Profiles** > profile name > **Manage** > **Properties**.
 2. Review the properties to see if any errors similar to the following appear:
     - This token has expired.
@@ -430,7 +430,7 @@ A list of iOS enrollment errors is provided in our documentation, in [Troublesho
 
 |Error message|Issue|Resolution|
 |---|---|---|
-|**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true: <ol><li>Intune has been set as the mobile device management authority</li><li>They are using a System Center 2012 R2 Configuration Manager license.</li></ol>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
+|**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true: <ol><li>Intune has been set as the mobile device management authority</li><li>They're using a System Center 2012 R2 Configuration Manager license.</li></ol>See information about [how to assign Intune licenses to your user accounts](https://docs.microsoft.com/intune/licenses-assign).|
 
 
 
@@ -464,19 +464,19 @@ The account certificate of the previous account is still present on the computer
 |--------------|--------------------|----------------------------------------|
 |0x80CF0437 |The clock on the client computer isn't set to the correct time.|Make sure that the clock and the time zone on the client computer are set to the correct time and time zone.|
 |0x80240438, 0x80CF0438, 0x80CF402C|can't connect to the Intune service. Check the client proxy settings.|Verify that Intune supports the proxy configuration on the client computer. Verify that the client computer has Internet access.|
-|0x80240438, 0x80CF0438|Proxy settings in Internet Explorer and Local System are not configured.|can't connect to the Intune service. Check the client proxy settings.Verify that Intune supports the proxy configuration on the client computer. Verify that the client computer has Internet access.|
+|0x80240438, 0x80CF0438|Proxy settings in Internet Explorer and Local System aren't configured.|can't connect to the Intune service. Check the client proxy settings.Verify that Intune supports the proxy configuration on the client computer. Verify that the client computer has Internet access.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|Enrollment package is out of date.|Download and install the current client software package from the Administration workspace.|
 |0x80043002, 0x80CF3002|Account is in maintenance mode.|You can't enroll new client computers when the account is in maintenance mode. To view your account settings, sign in to your account.|
 |0x80043003, 0x80CF3003|Account is deleted.|Verify that your account and subscription to Intune is still active. To view your account settings, sign in to your account.|
 |0x80043005, 0x80CF3005|The client computer has been retired.|Wait a few hours, remove any older versions of the client software from the computer, and then retry the client software installation.|
-|0x80043006, 0x80CF3006|The maximum number of seats allowed for the account has been reached.|Your organization must purchase additional seats before you can enroll more client computers in the service.|
-|0x80043007, 0x80CF3007|Could not find the certificate file in the same folder as the installer program.|Extract all files before you start the installation. Do not rename or relocate any of the extracted files: all files must exist in the same folder or the installation will fail.|
+|0x80043006, 0x80CF3006|The maximum number of seats allowed for the account has been reached.|Your organization must buy additional seats before you can enroll more client computers in the service.|
+|0x80043007, 0x80CF3007|Couldn't find the certificate file in the same folder as the installer program.|Extract all files before you start the installation. Do not rename or relocate any of the extracted files: all files must exist in the same folder or the installation will fail.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|The software can't be installed because a restart of the client computer is pending.|Restart the computer and then retry the client software installation.|
 |0x80070032|One or more prerequisites for installing the client software weren't found on the client computer.|Make sure that all required updates are installed on the client computer and then retry the client software installation.|
 |0x80043008, 0x80CF3008|Failed to start the Microsoft Online Management Updates service.|Contact Microsoft Support as described in [How to get support for Microsoft Intune](get-support.md).|
 |0x80043009, 0x80CF3009|The client computer is already enrolled into the service.|You must retire the client computer before you can re-enroll it in the service.|
 |0x8004300B, 0x80CF300B|The client software installation package can't run because the version of Windows that is running on the client isn't supported.|Intune doesn't support the version of Windows that is running on the client computer.|
-|0xAB2|The Windows Installer could not access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
+|0xAB2|The Windows Installer couldn't access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|The connection to the service endpoint terminated.|Trial or paid account is suspended. Create a new trial or paid account and re-enroll.|
 
 
