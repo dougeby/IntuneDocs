@@ -273,17 +273,14 @@ If the Server certificate is installed correctly, you see all check marks in the
 The following table lists errors that end users might see while enrolling iOS devices in Intune.
 
 |Error message|Issue|Resolution|
-|-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|-------------|-----|----------|
 |NoEnrollmentPolicy|No enrollment policy found|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](ios-enroll.md).|
 |DeviceCapReached|Too many mobile devices are enrolled already.|The user must remove one of their currently enrolled mobile devices from the Company Portal before enrolling another. See the instructions for the type of device you're using: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
 |APNSCertificateNotValid|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>Review the information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |AccountNotOnboarded|There is a problem with the certificate that lets the mobile device communicate with your company’s network.<br /><br />|The Apple Push Notification Service (APNs) provides a channel to reach out to enrolled iOS devices. Enrollment attempts will fail and this message will appear if:<ul><li>The steps to get an APNs certificate weren't performed, or</li><li>The APNs certificate has expired.</li></ul>For more information, review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|The user might have tried to enroll using a non-iOS device. The mobile device type that you're trying to enroll isn't supported.<br /><br />Confirm that device is running iOS version 8.0 or later.<br /><br />|Ensure that your user's device is running iOS version 8.0 or later.|
 |UserLicenseTypeInvalid|The device cannot be enrolled because the user's account isn't yet a member of a required user group.<br /><br />|Before users can enroll their devices, they must be members of the right user group. This message means that they have the wrong license type for the designated mobile device management authority.
-For example, they'll see this error if both of the following are true:
-- Intune has been designated as the mobile device management authority
-- they are using a System Center 2012 R2 Configuration Manager license.
-<br /><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
+For example, they'll see this error if both of the following are true:<ol><li>Intune has been designated as the mobile device management authority</li><li>they are using a System Center 2012 R2 Configuration Manager license.</li></ol><br />Review the following articles for more information:<br /><br />Review [Set up iOS and Mac management with Microsoft Intune](ios-enroll.md) and information about how to set up users in [Sync Active Directory and add users to Intune](users-add.md) and [organizing users and devices](groups-add.md).|
 |MdmAuthorityNotDefined|The mobile device management authority has not been defined.<br /><br />|The mobile device management authority has not been designated in Intune.<br /><br />Review item #1 in the "Step 6: Enroll mobile devices and install an app" section in [Get started with a 30-day trial of Microsoft Intune](free-trial-sign-up.md).|
 
 ### Devices are inactive or the admin console cannot communicate with them
@@ -364,7 +361,9 @@ Examples will be added soon about what to look for in these log files.
 **Issue**: An enrolling device may get stuck in either of two screens:
 - Awaiting final configuration from “Microsoft”
 - Guided Access app unavailable. Please contact your administrator.
-This issue can happen if there is a temporary outage with Apple services or if iOS enrollment is set to use VPP tokens showing in the table but there is something wrong with the VPP token.
+This issue can happen if:
+- there is a temporary outage with Apple services, or
+- iOS enrollment is set to use VPP tokens as shown in the table but there is something wrong with the VPP token.
 | Enrollment settings | Value |
 | ---- | ---- |
 | Platform | iOS |
@@ -373,7 +372,11 @@ This issue can happen if there is a temporary outage with Apple services or if i
 | Install Company Portal with VPP | Use token: token address |
 | Run Company Portal in Single App Mode until authentication | Yes |
 
-**Resolution**: To fix the problem, you must determine if there is something wrong with the VPP token and fix it, identify which devices are affected, wipe the affected devices, and then tell the user to restart the enrollment process.
+**Resolution**: To fix the problem, you must:
+1. Determine if there is something wrong with the VPP token and fix it.
+2. Identify which devices are blocked.
+3. Wipe the affected devices.
+4. Tell the user to restart the enrollment process.
 
 #### Determine if there is something wrong with the VPP token
 1. Go to **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > token name > **Profiles** > profile name > **Manage** > **Properties**.
