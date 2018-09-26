@@ -129,7 +129,7 @@ To avoid hitting device caps, be sure to remove stale device records.
         -   To see Specific Users, use the following query, where %testuser1% represents username@domain.com for the user you want to look up:
             `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        After writing the query choose **!Execute**.
+        After writing the query, choose **!Execute**.
         Once the results have been returned, look for the clouduser ID.  If no ID is found, the user isn't licensed to use Intune.
 
 ### Unable to create policy or enroll devices if the company name contains special characters
@@ -141,7 +141,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 **Issue:** When you add a second verified domain to your ADFS, users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
 
 
-<strong>Resolution:</strong> Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. See [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) for more information.
+<strong>Resolution:</strong> Microsoft Office 365 customers who use single sign-on (SSO) through AD FS 2.0 and have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com) are required to deploy a separate instance of the AD FS 2.0 Federation Service for each suffix. There is now a [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) that works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## Android issues
