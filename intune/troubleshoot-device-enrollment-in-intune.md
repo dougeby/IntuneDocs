@@ -361,6 +361,7 @@ Examples will be added soon about what to look for in these log files.
 This issue can happen if:
 - there's a temporary outage with Apple services, or
 - iOS enrollment is set to use VPP tokens as shown in the table but there's something wrong with the VPP token.
+
 | Enrollment settings | Value |
 | ---- | ---- |
 | Platform | iOS |
