@@ -34,7 +34,7 @@ Managed apps are configured to meet your organization's security requirements, a
 
 Before you receive and install a managed app, your organization configures its permissions. They might restrict app functionality or user interactions to protect app data from being shared or seen by unauthorized individuals. For example, an organization could block the use of copy and paste while in the app. Or they could restrict you from saving data to your device's local storage.
 
-To further protect files and data, your organization might configure several managed apps to work together. For example:
+To maximize data protection, your organization might configure several managed apps to work together. For example:
 1. You connect to your organization's network in a managed browser app, such as Microsoft Edge.
 2. You click a link to open your peer's presentation file.
 3. An appropriate managed app, such as Microsoft PowerPoint, opens the file.
@@ -42,18 +42,15 @@ To further protect files and data, your organization might configure several man
 Organizations can require you to use a managed app to do something, such as open a work file, or access a web link. If you don't have the app, you might not be able to continue your task. Some managed apps are made available for you to install, but are not required.
 
 ## How do I know I'm using a managed app?
-When you open data in a managed app, you receive a message similar to the example screenshot below. 
+When you first access work or school data in a managed app, you'll receive a message similar to the example screenshot below. The message prompts you to restart the app to continue.
 
-![open-managed-apps-message](./media/managed-apps-message.png)
+![Screenshot of the the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
 
 ## How do I get managed apps?
-After you register you device with the Company Portal, you might notice that some managed apps are already installed on your device. To see if your organization has made other apps available to you:  
-* Go to the Company Portal app or website to search, view, and install managed apps.
-* Install an app from the Google Play store. Sign in to the app with your work or school account.
-
--   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your company support might install it on your device. To learn about enrolling, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
-
--   You install an app from the Play Store, and then sign in with your corporate user account that is managed by Intune.
+After you register your device with the Company Portal, there are three ways to get managed apps.
+* Your organization automatically imstalls apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
+* You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 
 ## What can my company support manage in an app?
 Here are some examples of options that your company support can manage in an app, and that can affect your interactions with company data on your device:
