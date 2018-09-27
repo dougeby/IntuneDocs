@@ -31,7 +31,7 @@ ms.custom: intune-azure
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup, the enrollment status page displays installation status information on the end user's device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. The status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, as well as prevent users from using the device until all the assigned applications and profiles are installed.
+During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. The status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, create profiles to target specific user groups, and prevent users from using the device until all the assigned applications and profiles are installed.
  
 ## Turn on default enrollment status page for all users
 
@@ -62,22 +62,22 @@ For device preparation, the enrollment status page tracks Trusted Platform Modul
 
 ### Device setup
 
-For device setup, the enrollment status page tracks the following items if they are assigned to All Devices:
+For device setup, the enrollment status page tracks the following items if they're assigned to All Devices:
 - Security policies
     - One configuration service provider (CSP) for all enrollments.
-    - Actual CSPs configured by Intune are not tracked here.
+    - Actual CSPs configured by Intune aren't tracked here.
 - Applications
     - Per machine Line-of-business (LoB) MSI apps.
     - LoB store apps with installation context = Device.
     - Offline store and LoB store apps with installation context = Device.
-- Connectivity profiles (VPN and Wi-Fi) are not tracked yet, so these will always say "0 of 0".
-- Certificates are not tracked yet, so these will always say "0 of 0".
+- Connectivity profiles (VPN and Wi-Fi) aren't tracked yet, so always say "0 of 0".
+- Certificates aren't tracked yet, so always say "0 of 0".
 
 ### Account setup
 For account setup, the enrollment status page tracks the following items:
 - Security policies
     - One CSP for all enrollments.
-    - Actual CSPs configured by Intune are not tracked here.
+    - Actual CSPs configured by Intune aren't tracked here.
 - Applications
     - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
     - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
