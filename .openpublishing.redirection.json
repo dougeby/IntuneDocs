@@ -4731,7 +4731,7 @@
         {
 			"source_path": "intune/deploy-use/configure-certificate-infrastructure.md",
 			"redirect_url": "/intune/app-sdk-xamarin",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/custom%20settings-macos.md",
