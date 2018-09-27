@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,7 +81,8 @@ If you have more than one UPN suffix, you need to create one CNAME for each doma
 Changes to DNS records might take up to 72 hours to propagate. You cannot verify the DNS change in Intune until the DNS record propagates.
 
 **Step 2: Verify CNAME** (optional)<br>
-In the Azure portal, choose **More Services** > **Monitoring + Management** > **Intune**. On the Intune blade, choose **Enroll devices** > **Windows Enrollment**. Enter the company website URL in the **Specify a verified domain name** box, and then choose **Test Auto-Detection**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **CNAME Validation**.
+2. In the **Domain** box, enter the company website and then choose **Test**.
 
 ## Tell users how to enroll Windows devices
 Tell your users how to enroll their Windows devices and what to expect after they're brought into management.
