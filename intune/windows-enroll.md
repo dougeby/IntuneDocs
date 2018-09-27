@@ -52,7 +52,7 @@ Organizations that can use automatic enrollment can also configure [bulk enroll 
 
 ## Multi-user support
 
-Devices that run the Windows 10 Creators Update, and are Azure Active Directory domain-joined, are now supported for multi-user management by Intune. When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Users can't currently use the Company Portal for self-service scenarios like installing apps.
+Intune supports multi-management for devices that run the Windows 10 Creator's update and are Azure Active Directory domain-joined. When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Users can't currently use the Company Portal for self-service scenarios like installing apps.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
