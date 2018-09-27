@@ -42,7 +42,7 @@ The **Logout current user** action logs out the current user on a shared iPad de
 - macOS - Not supported
 - Android - Not supported
 
-## How to logout the current user
+## How to log out the current user
 
 1.  Sign into the Azure portal.
 2.  Choose **More Services** > **Monitoring + Management** > **Intune**.
