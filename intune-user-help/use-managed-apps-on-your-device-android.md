@@ -46,6 +46,15 @@ When you first access work or school data in a managed app, you'll receive a mes
 
 ![Screenshot of the the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
 
+## Commonly managed apps  
+Examples of commonly required or available managed apps within schools and workplaces are:
+
+-   Intune Managed Browser
+
+-   Microsoft Azure Information Protection Viewer
+
+-   Microsoft Word, Excel, and PowerPoint
+
 ## How do I get managed apps?
 After you register your device with the Company Portal, there are three ways to get managed apps.
 * Your organization automatically imstalls apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
@@ -53,32 +62,24 @@ After you register your device with the Company Portal, there are three ways to 
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 
 ## What can my company support manage in an app?
-Here are some examples of options that your company support can manage in an app, and that can affect your interactions with company data on your device:
+The following list describes what your company support can manage in an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
 -   Access to specific websites
 
--   Transfers of data between apps
+-   Ability to share and transfer data between apps
 
--   Saving files
+-   How and where you save files
 
--   Copy and paste operations
+-   Copy and paste functionality
 
 -   PIN access requirements
 
--   Your sign in, using company credentials
+-   Your signin, using company credentials
 
--   Ability to back up to the cloud
+-   Ability to back up data to the cloud
 
 -   Ability to take screenshots
 
 -   Data encryption requirements
-
-Some common apps that your IT department might manage are:
-
--   Intune Managed Browser
-
--   Microsoft Azure Information Protection Viewer
-
--   Microsoft Word, Excel, and PowerPoint
 
 Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
