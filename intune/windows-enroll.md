@@ -57,7 +57,7 @@ Devices that run the Windows 10 Creators Update, and are Azure Active Directory 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
 ## Simplify Windows enrollment without Azure AD Premium
-To simplify user enrollment, you can create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. If you don't create a DNS CNAME resource record, users trying to connect to Intune must enter the Intune server name during enrollment.
+To simplify enrollment, create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. Otherwise, users trying to connect to Intune must enter the Intune server name during enrollment.
 
 **Step 1: Create CNAME** (optional)<br>
 Create CNAME DNS resource records for your company’s domain. For example, if your company’s website is contoso.com, you would create a CNAME in DNS that redirects EnterpriseEnrollment.contoso.com to enterpriseenrollment-s.manage.microsoft.com.
@@ -69,7 +69,7 @@ Although creating CNAME DNS entries is optional, CNAME records make enrollment e
 |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hour|
 |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 hour|
 
-If you have more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com. For example, users at Contoso use the following as their email/UPN:
+If the company uses more than one UPN suffix, you need to create one CNAME for each domain name and point each one to EnterpriseEnrollment-s.manage.microsoft.com. For example, users at Contoso use the following formats as their email/UPN:
 
 - name@contoso.com
 - name@us.contoso.com
