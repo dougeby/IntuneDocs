@@ -44,7 +44,7 @@ Organizations can require you to use a managed app to do something, such as open
 ## How do I know I'm using a managed app?
 When you first access work or school data in a managed app, you'll receive a message similar to the example screenshot below. The message prompts you to restart the app to continue.
 
-![Screenshot of the the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
+![Screenshot of the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
 
 ## Commonly managed apps  
 Examples of commonly required or available managed apps within schools and workplaces are:
@@ -57,12 +57,12 @@ Examples of commonly required or available managed apps within schools and workp
 
 ## How do I get managed apps?
 After you register your device with the Company Portal, there are three ways to get managed apps.
-* Your organization automatically imstalls apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+* Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 * Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 
 ## What can my company support manage in an app?
-The following list describes what your company support can manage in an app. These settings affect how you view, access, and otherwise use work or school data on your device:
+The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
 -   Access to specific websites
 
@@ -74,7 +74,7 @@ The following list describes what your company support can manage in an app. The
 
 -   PIN access requirements
 
--   Your signin, using company credentials
+-   How you sign in, using company credentials
 
 -   Ability to back up data to the cloud
 
