@@ -44,7 +44,7 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
 
 ## Create an AutoPilot device group
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups** > **New group**.
 2. In the **Group** blade:
     1. For **Group type**, choose **Security**.
     2. Type a **Group name** and **Group description**.
@@ -59,17 +59,16 @@ You can add Windows AutoPilot devices by importing a CSV file with their informa
     After adding the **Advanced rule** code, choose **Save**.
 5. Choose **Create**.
 
-
-
 ## Create an AutoPilot deployment profile
 AutoPilot deployment profiles are used to configure the AutoPilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. Type a **Name** and optional **Description**.
-3. For **Deployment mode**, choose one of these two options:
+3. If you want all devices in the assigned groups to automatically convert to Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**. All non-Autopilot devices in assigned groups will register with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will provision it. After a device is registered in this way, disabling this option or removing the profile assignment won't remove the device from the Autopilot deployment service. You must instead [remove the device directly](enrollment-autopilot#delete-autopilot-devices).
+4. For **Deployment mode**, choose one of these two options:
     - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to provision the device.
     - **Self-deploying (preview)**: (requires the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/)) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to provision the device.
-4. In the **Join to Azure AD as** box, choose **Azure AD joined**.
-5. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
+5. In the **Join to Azure AD as** box, choose **Azure AD joined**.
+6. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
     - **Language (Region)***: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **Automatically configure keyboard***: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose whether or not to show the EULA to users.
