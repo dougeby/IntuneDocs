@@ -113,11 +113,17 @@ You can assign a user to a specific Autopilot device. This assignment pre-fills 
 Prerequisites: Azure Active Directory Company Portal has been configured and the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/).
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
+
     ![Screenshot of Assign user](media/enrollment-autopilot/assign-user.png)
+
 2. Choose an Azure user licensed to use Intune and choose **Select**.
+
     ![Screenshot of select user](media/enrollment-autopilot/select-user.png)
+
 3. In the **User Friendly Name** box, type a friendly name or just accept the default. This string is the friendly name that displays when the user signs in during Windows setup.
+
     ![Screenshot of friendly name](media/enrollment-autopilot/friendly-name.png)
+
 4. Choose **Ok**.
 
 
