@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 5/17/2017
+ms.date: 9/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,13 +33,25 @@ ms.custom: intune-azure
  
 During device setup, the enrollment status page displays installation status information on the end user's device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. The status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, as well as prevent users from using the device until all the assigned applications and profiles are installed.
  
+## Turn on default enrollment status page for all users
+
 To turn on the enrollment status page for all your end users, follow the steps below.
  
 1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
 2.  In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
 3.  For **Show app and profile installation progress**, choose **Yes**.
 4.  Choose the other settings that you want to turn on and then choose **Save**.
- 
+
+## Create enrollment status page profile to target specific users
+
+1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)** > **Create profile**.
+2. Provide a **Name** and **Description**.
+3. Choose **Create**.
+4. Choose the new profile in the **Enrollment Status Page** list.
+5. Choose **Assignments** > **Select groups** > choose the groups that you want to adopt this profile > **Select** > **Save**.
+6. Choose **Settings** > choose the settings you want to apply to this profile > **Save**.
+
+
 ## Enrollment status page tracking information
 
 The status page tracks information for device preparation, device setup, and account setup.
