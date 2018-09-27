@@ -134,7 +134,7 @@ You can delete Windows AutoPilot devices that aren't enrolled.
 4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 
 ## Using AutoPilot in other portals
-If you aren't interested in mobile device management, you can use Autopilot in Microsoft Store for Business, for example. While using other portals is an option, we recommend that you only use Intune to manage your AutoPilot deployments. When you use Intune and another portal, Intune isn't able to:
+If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your AutoPilot deployments. When you use Intune and another portal, Intune isn't able to:
 - Display changes to profiles created in Intune, but edited in another portal
 - Synchronize profiles created in another portal
 - Display changes to profile assignments done in another portal
