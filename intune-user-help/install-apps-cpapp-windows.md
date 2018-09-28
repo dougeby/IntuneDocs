@@ -37,7 +37,7 @@ Install apps on your device from the Company Portal app for Windows.
 2. Find and install apps from any of the following sections of the Company Portal app:
     * **Apps**: Select from a list of your organization's featured apps. 
     * **Show all**: Within the **Apps** section, click **Show all** to view all available apps.
-    * **Search for apps**: A static search bar sits in the navigation menu on the left side of the app. Type in the name of an app to find out if it is available to you.
+    * **Search for apps**: A static search bar sits in the navigation menu on the left side of the app. Type in the name of an app to find out if it's available to you.
     * **All apps**: View, sort, and filter all available apps.
 3. Select an app to install.
 4. On the Apps details page, click **Install**. After installation is done, the page will show an **Installed** status.
