@@ -44,7 +44,7 @@ Install apps on your device from the Company Portal app for Windows.
 ![The Company Portal app for Windows 10, app details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
 ![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
- Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal. For specific information about the Office suite for Windows devices see [Installing Office 365 on your Windows device](./install-office-windows.md).
+ Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
 ## Share apps with others
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
@@ -58,6 +58,6 @@ Share and recommend apps to your work or school contacts. The following steps de
 
     ![An example screenshot of the Company Portal app for Windows 10, Share pop-up page. Page says "Learn about <example app name> in the Company Portal app." It shows one contact and 2 apps to choose from to send the link, and a "Get apps in Store" link. ](./media/1808_ShareApps_CP_Windows.png) 
 
-After you share, the recepient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
+After you share, the recipient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
