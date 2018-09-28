@@ -4728,6 +4728,169 @@
 			"redirect_url": "/intune/app-sdk-xamarin",
 			"redirect_document_id": true
 		},
+        {
+			"source_path": "intune/deploy-use/configure-certificate-infrastructure.md",
+			"redirect_url": "/intune/app-sdk-xamarin",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/custom%20settings-macos.md",
+			"redirect_url": "/intune/custom-settings-macos",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/deploy-use/custom-configurations-for-vpn-profiles.md",
+			"redirect_url": "/intune/custom-settings-configure",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/deploy-use/prepare-android-apps-for-mobile-app-management.md",
+			"redirect_url": "/intune/app-wrapper-prepare-android",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/deploy-use/protect-windows-devices-with-multi-factor-authentication.md",
+			"redirect_url": "/intune/multi-factor-authentication",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/deploy-use/retire-apps.md",
+			"redirect_url": "/intune/apps-inc-exl-assignments",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune-user-help/device-compliance-state-is-unknown.md",
+			"redirect_url": "/intune-user-help/intune-user-help/use-managed-devices-to-get-work-done",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-mac-os-x.md",
+			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
+			"redirect_document_id": false
+		},						
+		{
+			"source_path": "intune-user-help/enroll-your-rt-windows.md",
+			"redirect_url": "/intune-user-help/enroll-your-w81-or-rt81-windows",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-android.md",
+			"redirect_url": "/intune-user-help/reset-erase-your-device-cpwebsite",
+			"redirect_document_id": false
+		},				
+		{
+			"source_path": "intune-user-help/reset-erase-your-lost-or-stolen-device-windows.md",
+			"redirect_url": "/intune-user-help/reset-erase-your-device-cpwebsite",
+			"redirect_document_id": false
+		},				
+		{
+			"source_path": "intune-user-help/wait-while-your-device-is-being-evaluated.md",
+			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
+			"redirect_document_id": false
+		},								
+		{
+			"source_path": "intune/eula/how-microsoft-intune-helps-you-comply-with-security-and-privacy-requirements.md",
+			"redirect_url": "/intune/microsoft-intune-service-description",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/application-rollout.md",
+			"redirect_url": "/intune/app-management",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/enterprise-rollout.md",
+			"redirect_url": "/intune/planning-guide-rollout-plan",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/operations-and-maintenance.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/get-started/pilot.md",
+			"redirect_url": "/intune/planning-guide",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/policy-rollout.md",
+			"redirect_url": "/intune/planning-guide-rollout-plan",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/project-scope.md",
+			"redirect_url": "/intune/planning-guide-deployment-goals",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/proof-of-concept.md",
+			"redirect_url": "/intune/planning-guide",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/get-started/rollout-phases-for-microsoft-intune-deployment.md",
+			"redirect_url": "/intune/planning-guide-rollout-plan",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune/understand-explore/common-microsoft-intune-evaluation-tasks.md",
+			"redirect_url": "/intune/get-started-evaluation",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/understand-explore/frequently-asked-questions-for-microsoft-intune.md",
+			"redirect_url": "/intune/introduction-intune",
+			"redirect_document_id": false
+		},			{
+			"source_path": "intune-azure/conditional-access/get-started.md",
+			"redirect_url": "/intune/conditional-access",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-azure/conditional-access/how-to.md",
+			"redirect_url": "/intune/conditional-access",
+			"redirect_document_id": false
+		},	
+		{
+			"source_path": "intune-azure/configure-devices/device-features-for-ios.md",
+			"redirect_url": "/intune/device-profiles",
+			"redirect_document_id": false
+		},			{
+			"source_path": "intune-azure/configure-devices/device-features-for-macos.md",
+			"redirect_url": "/intune/device-profiles",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-azure/enroll-devices/decide-how-to-enroll-ios-devices.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune-azure/enroll-devices/enroll-ios-device-enrollment-program-devices.md",
+			"redirect_url": "/intune/device-enrollment-program-enroll-ios",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "enroll-devices/enroll-ios-devices-with-apple-configurator-using-setup-assistant.md",
+			"redirect_url": "/intune/apple-configurator-enroll-ios",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-azure/enroll-devices/get-started.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune-azure/manage-devices/how-to.md",
+			"redirect_url": "/intune/device-management",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune-azure/manage-users/how-to.md",
+			"redirect_url": "/intune/users-add",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "intune/users-permissions-add.md",
 			"redirect_url": "/intune/users-add",

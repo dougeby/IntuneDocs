@@ -8,8 +8,8 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 09/20/2019
-ms.topic: conceptual
+ms.date: 09/20/2018
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
