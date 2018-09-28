@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/07/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,5 +45,19 @@ Install apps on your device from the Company Portal app for Windows.
 ![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
  Depending on the size of your company, there may be multiple versions of Office available for download from the Company Portal. For specific information about the Office suite for Windows devices see [Installing Office 365 on your Windows device](./install-office-windows.md).
+
+## Share apps with others
+Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
+
+1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/menus).  
+
+    ![The Company Portal app for Windows 10, front page, showing a list of Apps and devices. The clickable "Share" context menu is visible on top of the example app's icon. ](./media/1808_ShareContext_CP_Windows.png)  
+
+2. Select **Share**.
+3. Choose from individual contacts or select another program, such as OneNote, to send to a group. If you don't see an app you want to use, select **Get apps in Store** to see other available apps.  
+
+    ![An example screenshot of the Company Portal app for Windows 10, Share pop-up page. Page says "Learn about <example app name> in the Company Portal app." It shows one contact and 2 apps to choose from to send the link, and a "Get apps in Store" link. ](./media/1808_ShareApps_CP_Windows.png) 
+
+After you share, the recepient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
