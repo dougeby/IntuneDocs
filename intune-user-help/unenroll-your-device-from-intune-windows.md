@@ -57,8 +57,8 @@ Complete the following steps to remove a Windows 10 device from Intune.
 2. On the **Home** page, go down to the **My Devices** section.
 3. Right-click or press and hold the device you want to remove.
 4. Select **Remove**.
-![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename," "Remove," and "Check access" actions.](./media/1808_DeviceContextMenu_Windows_CP.png)
-5. To confirm device removal, select **Remove** to confirm.  
+![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)
+1. To confirm device removal, select **Remove** to confirm.  
 
 ### Remove in device Settings app
 1. Open the Settings app. 
