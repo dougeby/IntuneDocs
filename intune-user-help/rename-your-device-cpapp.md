@@ -42,11 +42,11 @@ To rename a device:
 4. Type in the new name and click **Rename**. The device name updates immediately in the app. 
 
 ## Rename device from device context menu
-1. On the **Home** page of the Company Portal app, go to the **My Devices** section.
+1. On the **Home** page of the Company Portal app, go down to **My Devices**.
 2. Right-click or press and hold the device you want to rename.
-3. Click **Rename**.
+3. Select **Rename**.
  ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_DeviceContextMenu_Windows_CP.png)
-4. Type in the new name and click **Rename**. The device name updates immediately in the app.
+4. Type in the new name and select **Rename**. The device name updates immediately in the app.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
