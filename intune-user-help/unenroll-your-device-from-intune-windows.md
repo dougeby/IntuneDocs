@@ -58,11 +58,11 @@ Complete the following steps to remove a Windows 10 device from management.
 3. Right-click or press and hold the device you want to remove.
 4. Select **Remove**.  
 
-![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)  
+    ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)  
 
 5. In the confirmation, click Learn More to read how your access to work and school resources might change. To confirm device removal, select **Remove**.   
 
- ![Example screenshot of the Company Portal app for Windows, Home page. Rename field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RemoveDevice_Popup.png)  
+     ![Example screenshot of the Company Portal app for Windows, Home page. Rename field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RemoveDevice_Popup.png)  
 
 
 ### Remove in device Settings app
