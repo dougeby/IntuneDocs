@@ -29,21 +29,24 @@ ms.custom: intune-azure
 
 # Tutorial: Protect Office 365 email on enrolled devices
 
-Learn about setting up device compliance policies with conditional access to make sure that iOS devices can access Office 365 Exchange Online email only if they’re managed by Intune. An Intune iOS device compliance policy determines the rules and settings that iOS devices must meet to be compliant, and conditional access policies allow or block access based on the compliance status of devices that try to access Exchange Online.
-In this tutorial, you will learn how to: 
-  - Set up an Intune device compliance policy to evaluate the compliance status of a device.
-  - Set a conditional access policy to require iOS devices to enroll in Intune and use the approved Outlook mobile app to access Office 365 Exchange Online email.
+Learn about setting up Intune device compliance policies with Azure AD conditional access to make sure that iOS devices can access Office 365 Exchange Online email only if they’re managed by Intune and using an approved email app. 
+In this tutorial, you'll learn how to: 
+  - Create an Intune iOS device compliance policy to set the conditions that a device must meet to be considered compliant. 
+  - Create an Azure AD conditional access policy that requires iOS devices to be enrolled in Intune, compliant with Intune policies, and using the approved Outlook mobile app to access Office 365 Exchange Online email.
 
 ## Prerequisites
-  - Create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
-  - If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
+  - You'll need the following subscriptions for this tutorial:
+    - Azure Active Directory Premium. [Get a free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+    - Intune subscription. [Get a free trial](free-trial-sign-up.md).
+    - Office 365 Business subscription that includes Exchange. [Get a free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938)
+  - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**.
+Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**.
 
 ## Create a device compliance policy for iOS
-Set up an Intune device compliance policy to set up the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Note that compliance policies are platform-specific, so you need a separate compliance policy for each device platform you want to evaluate.
+Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Note that compliance policies are platform-specific, so you need a separate compliance policy for each device platform you want to evaluate.
 
 1.	In Intune, select **Device compliance** > **Policies** > **Create Policy**.
 2.	In **Name**, enter **iOS compliance policy test**. 
@@ -77,17 +80,17 @@ Set up an Intune device compliance policy to set up the conditions that a device
 Now we’ll create a conditional access policy that requires all device platforms to be enrolled in Intune and compliant with our Intune compliance policy before they can access Exchange Online. We will also require the Outlook app for email access. Conditional access policies are configurable in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.
 1.	In Intune, select **Conditional access** > **Policies** > **New policy**.
 2.  In **Name**, enter **Test policy for Office 365 email**. 
-3.	Under **Assignments**, select **Users and groups**. 
+3.	Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
 
-   - On the **Include** tab, select **All users**, and then select **Done**.
-
-4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we’ll do the following:
+4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll do the following:
  
-    a. On the **Include** tab, select **Select apps**, and then choose **Select**. 
+    a. On the **Include** tab, choose **Select apps**.
+    
+    b. Choose **Select**. 
 
-    b. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
+    c. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
 
-    c. Select **Done**.
+    d. Select **Done**.
   
      ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
@@ -105,11 +108,9 @@ Now we’ll create a conditional access policy that requires all device platform
 
     a. Under **Configure**, select **Yes**.
 
-    b. Select **Mobile apps and desktop clients**.
+    b. For this tutorial, select **Mobile apps and desktop clients** and **Modern authentication clients** (which refers to apps like Outlook for iOS and Outlook for Android). Clear all other check boxes.
  
-    c. Select **Modern authentication clients** (which refers to apps like Outlook for iOS and Outlook for Android).
- 
-    e. Select **Done**.
+    c. Select **Done**, and then select **Done** again.
     
      ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
@@ -123,7 +124,7 @@ Now we’ll create a conditional access policy that requires all device platform
 
     d. Under **For multiple controls**, select **Require all the selected controls** so that both requirements you selected are enforced when a device tries to access email.
 
-    a. Choose **Select**.
+    e. Choose **Select**.
      
      ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
@@ -134,13 +135,18 @@ Now we’ll create a conditional access policy that requires all device platform
 9.	Select **Create**.
 
 ## Try it out
-With the policies you’ve just created, any iOS device that attempts to sign in to Office 365 email will be required to enroll in Intune and use the Outlook mobile app for iOS. You can test this by opening the native email app on an iOS device and attempting to sign in to Office 365 email by using credentials from your test tenant. You’ll be prompted to enroll the device and install the Outlook mobile app.
+With the policies you’ve just created, any iOS device that attempts to sign in to Office 365 email will be required to enroll in Intune and use the Outlook mobile app for iOS. You can test this by attempting to use the native email app on an iOS device to sign in to Office 365 email by using credentials from your test tenant.  You’ll be prompted to enroll the device and install the Outlook mobile app.
+1. To test on an iPhone, go to **Settings** > **Passwords & Accounts** > **Add Account** > **Exchange**.
+2. Enter the email address for a user in your test tenant, and then press **Next**.
+3. Press **Sign In**.
+4. Enter the test user's password, and press **Sign in**.
+5. A message appears that says your device must be managed to access the resource, along with an option to enroll. 
 
 ## Clean up resources
 When no longer needed, you can remove the test policies.
 1. Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
 2. Select **Device Compliance** > **Policies**.
-3. In the **Policy Name** list, select the context menu (**...**) for your test policy, and then **Delete**. Select **OK** to confirm.
+3. In the **Policy Name** list, select the context menu (**...**) for your test policy, and then select **Delete**. Select **OK** to confirm.
 4. Select **Conditional Access** > **Policies**.
 5. In the **Policy Name** list, select the context menu (**...**) for your test policy, and then select **Delete**. Select **Yes** to confirm.
 
