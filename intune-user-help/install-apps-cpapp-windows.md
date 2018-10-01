@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/28/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,14 +33,16 @@ ms.custom: intune-enduser
 Install apps on your device from the Company Portal app for Windows.
 
 1. Open the Company Portal app and sign in with your work or school account.
-![The Company Portal app for Windows 10 home page.](./media/RS1_AppDetailsPage_Installed_03.png)
+![The Company Portal app for Windows 10 home page.](./media/RS1_AppDetailsPage_Installed_03.png)  
 2. Find and install apps from any of the following sections of the Company Portal app:
-    * **Apps**: Select from a list of your organization's featured apps. 
-    * **Show all**: Within the **Apps** section, click **Show all** to view all available apps.
-    * **Search for apps**: A static search bar sits in the navigation menu on the left side of the app. Type in the name of an app to find out if it's available to you.
-    * **All apps**: View, sort, and filter all available apps.
-3. Select an app to install.
-4. On the Apps details page, click **Install**. After installation is done, the page will show an **Installed** status.
+    * **Home**: Select from a list of your organization's featured apps. 
+    * **Show all**: rom the **Home page** > **Apps** section, click **Show all** to view all available apps.
+    * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.
+    * **Installed apps**: Select this page in the navigation pane to see all installed apps on your device.
+    * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
+    * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.
+3. Select an app to install.  
+4. On the 8apps details page, click **Install**. After installation is done, you'll see an **Installed** status.
 ![The Company Portal app for Windows 10, app details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
 ![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
