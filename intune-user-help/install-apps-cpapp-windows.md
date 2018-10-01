@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Installing apps from Company Portal app for Windows
-description:
+title: Installing apps from Intune Company Portal app for Windows
+description: Learn how to install and share apps from the Company Portal app
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -29,8 +29,10 @@ ms.custom: intune-enduser
 
 ---
 
-# Install apps on your device
+# Install and share apps on your device
 Install apps on your device from the Company Portal app for Windows.
+
+## Install apps
 
 1. Open the Company Portal app and sign in with your work or school account.
 ![The Company Portal app for Windows 10 home page.](./media/RS1_AppDetailsPage_Installed_03.png)  
@@ -51,7 +53,7 @@ Install apps on your device from the Company Portal app for Windows.
 ## Share apps with others
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
 
-1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/menus).  
+1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
 
     ![The Company Portal app for Windows 10, front page, showing a list of Apps and devices. The clickable "Share" context menu is visible on top of the example app's icon. ](./media/1808_ShareContext_CP_Windows.png)  
 
