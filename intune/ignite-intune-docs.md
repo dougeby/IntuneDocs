@@ -50,7 +50,7 @@ We've updated and created some new quickstarts. Complete the following quickstar
 
 ## Contribute to docs
 - [Become an Intune docs contributor](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Top Intune doc contributors this month](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-09-30&type=c)  
+- [Top Intune doc contributors this month](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2018-10-31&type=c)  
 
 ## Start using Intune
 - [Licenses that include Intune](licenses.md)
