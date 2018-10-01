@@ -38,12 +38,12 @@ After you unregister the device, you'll lose device access to school or work res
 * Windows 8.1 computer
 * Windows 8.1 mobile device
  
-For more information about what happens after you remove your device from management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+For more information about what happens after you remove your device from management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).  
 
 ## Remove your Windows 10 device
-Complete the following steps to remove a Windows 10 device from Intune.
+Complete the following steps to remove a Windows 10 device from management.
 
-### Remove in Company Portal app > **My Devices** page  
+### Remove in Company Portal app, **My Devices** page  
 
 1. Open the Company Portal app.
 2. In **My Devices**, select the device you want to remove.
@@ -51,14 +51,19 @@ Complete the following steps to remove a Windows 10 device from Intune.
 4. Select **Remove**. 
 5. To confirm device removal, select **Remove device**.  
 
-### Remove in Company Portal app > device context menu  
+### Remove in Company Portal app, device context menu  
 
 1. Open the Company Portal app
 2. On the **Home** page, go down to the **My Devices** section.
 3. Right-click or press and hold the device you want to remove.
-4. Select **Remove**.
-![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)
-1. To confirm device removal, select **Remove** to confirm.  
+4. Select **Remove**.  
+
+![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)  
+
+5. In the confirmation, click Learn More to read how your access to work and school resources might change. To confirm device removal, select **Remove**.   
+
+ ![Example screenshot of the Company Portal app for Windows, Home page. Rename field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RemoveDevice_Popup.png)  
+
 
 ### Remove in device Settings app
 1. Open the Settings app. 
