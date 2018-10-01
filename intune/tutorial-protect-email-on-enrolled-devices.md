@@ -35,10 +35,10 @@ In this tutorial, you'll learn how to:
   - Create an Azure AD conditional access policy that requires iOS devices to be enrolled in Intune, compliant with Intune policies, and using the approved Outlook mobile app to access Office 365 Exchange Online email.
 
 ## Prerequisites
-  - You'll need the following subscriptions for this tutorial:
-    - Azure Active Directory Premium. [Get a free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-    - Intune subscription. [Get a free trial](free-trial-sign-up.md).
-    - Office 365 Business subscription that includes Exchange. [Get a free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938)
+  - You'll need a test tenant with the following subscriptions for this tutorial:
+    - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+    - Intune subscription ([free trial](free-trial-sign-up.md))
+    - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
   - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 
 ## Sign in to Intune
@@ -53,25 +53,22 @@ Set up an Intune device compliance policy to set the conditions that a device mu
 3.	In **Description**, enter **iOS compliance policy test**.
 4.	Under **Platform**, select **iOS**. 
 5.	Select **Settings** > **Email**. 
+   1.  Next to **Require mobile devices to have a managed email profile**, select **Require**.
+   2. Select **OK**.
 
-    a. Next to **Require mobile devices to have a managed email profile**, select **Require**.
-
-    b. Select **OK**.
-
-     ![Set the email compliance policy to require a managed email profile](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
+    ![Set the email compliance policy to require a managed email profile](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
 6.	Select **Device Health**. Next to **Jailbroken devices**, select **Block**, and then select **OK**.
-7.	Select **System Security** and enter **Password** settings. For this tutorial, select the following generally recommended settings:
-
-   - For **Require a password to unlock mobile devices**, select **Require**.
-   - For **Simple passwords**, select **Block**.
-   - For **Minimum password length**, enter **4**.
-   - For **Required password type**, choose **Alphanumeric**.
-   - For **Maximum minutes after screen lock before password is required**, choose **Immediately**.
-   - For **Password expiration (days)**, enter **41**.
-   - For **Number of previous passwords to prevent reuse**, enter **5**.
+7.	Select **System Security** and enter **Password** settings. For this tutorial, select the following generally recommended settings:     
+    - For **Require a password to unlock mobile devices**, select **Require**.
+    - For **Simple passwords**, select **Block**.
+    - For **Minimum password length**, enter **4**.
+    - For **Required password type**, choose **Alphanumeric**.
+    - For **Maximum minutes after screen lock before password is required**, choose **Immediately**.
+    - For **Password expiration (days)**, enter **41**.
+    - For **Number of previous passwords to prevent reuse**, enter **5**.
  
-     ![Set password settings for the email compliance policy](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
+    ![Set password settings for the email compliance policy](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
 8.	Select **OK**, and then select **OK** again.
 9.	Select **Create**.
@@ -83,54 +80,39 @@ Now we’ll create a conditional access policy that requires all device platform
 3.	Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
 
 4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll do the following:
- 
-    a. On the **Include** tab, choose **Select apps**.
-    
-    b. Choose **Select**. 
-
-    c. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
-
-    d. Select **Done**.
+   1. On the **Include** tab, choose **Select apps**.
+   2. Choose **Select**. 
+   3. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
+   4. Select **Done**.
   
-     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
+    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
-
-    a. Under **Configure**, select **Yes**.
-
-    b. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
-
-    c. Select **Done** again.
+   1. Under **Configure**, select **Yes**.
+   2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+   3. Select **Done** again.
    
-     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
+    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
 6.	Under **Assignments**, select **Conditions** > **Client apps**.
-
-    a. Under **Configure**, select **Yes**.
-
-    b. For this tutorial, select **Mobile apps and desktop clients** and **Modern authentication clients** (which refers to apps like Outlook for iOS and Outlook for Android). Clear all other check boxes.
- 
-    c. Select **Done**, and then select **Done** again.
+    1. Under **Configure**, select **Yes**.
+    2. For this tutorial, select **Mobile apps and desktop clients** and **Modern authentication clients** (which refers to apps like Outlook for iOS and Outlook for Android). Clear all other check boxes.
+    3. Select **Done**, and then select **Done** again.
     
-     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
+    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
 7.	Under **Access controls**, select **Grant**. 
-
-    a. On the **Grant** pane, select **Grant access**.
-
-    b. Select **Require device to be marked as compliant**. 
-
-    c. Select **Require approved client app**.
-
-    d. Under **For multiple controls**, select **Require all the selected controls** so that both requirements you selected are enforced when a device tries to access email.
-
-    e. Choose **Select**.
+    1. On the **Grant** pane, select **Grant access**.
+    2. Select **Require device to be marked as compliant**. 
+    3. Select **Require approved client app**.
+    4. Under **For multiple controls**, select **Require all the selected controls** so that both requirements you selected are enforced when a device tries to access email.
+    5. Choose **Select**.
      
-     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
+    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
 8.	Under **Enable policy**, select **On**.
      
-     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
+    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
 9.	Select **Create**.
 
