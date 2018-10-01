@@ -36,13 +36,13 @@ Install apps on your device from the Company Portal app for Windows.
 ![The Company Portal app for Windows 10 home page.](./media/RS1_AppDetailsPage_Installed_03.png)  
 2. Find and install apps from any of the following sections of the Company Portal app:
     * **Home**: Select from a list of your organization's featured apps. 
-    * **Show all**: rom the **Home page** > **Apps** section, click **Show all** to view all available apps.
+    * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.
     * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.
     * **Installed apps**: Select this page in the navigation pane to see all installed apps on your device.
     * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
     * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.
 3. Select an app to install.  
-4. On the 8apps details page, click **Install**. After installation is done, you'll see an **Installed** status.
+4. On the apps details page, click **Install**. After installation is done, you'll see an **Installed** status.
 ![The Company Portal app for Windows 10, app details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
 ![The Company Portal app for Windows 10, app details page, Installed status showing.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
