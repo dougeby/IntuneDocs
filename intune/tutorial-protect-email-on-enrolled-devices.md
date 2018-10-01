@@ -53,8 +53,8 @@ Set up an Intune device compliance policy to set the conditions that a device mu
 3.	In **Description**, enter **iOS compliance policy test**.
 4.	Under **Platform**, select **iOS**. 
 5.	Select **Settings** > **Email**. 
-   1.  Next to **Require mobile devices to have a managed email profile**, select **Require**.
-   2. Select **OK**.
+    1.  Next to **Require mobile devices to have a managed email profile**, select **Require**.
+    2. Select **OK**.
 
     ![Set the email compliance policy to require a managed email profile](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
@@ -80,17 +80,17 @@ Now we’ll create a conditional access policy that requires all device platform
 3.	Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
 
 4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll do the following:
-   1. On the **Include** tab, choose **Select apps**.
-   2. Choose **Select**. 
-   3. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
-   4. Select **Done**.
+    1. On the **Include** tab, choose **Select apps**.
+    2. Choose **Select**. 
+    3. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
+    4. Select **Done**.
   
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
-   1. Under **Configure**, select **Yes**.
-   2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
-   3. Select **Done** again.
+    1. Under **Configure**, select **Yes**.
+    2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+    3. Select **Done** again.
    
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
