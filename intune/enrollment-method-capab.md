@@ -35,7 +35,7 @@ Intune lets you manage your workforce’s devices and apps and how they access y
 ## Best practices by enrollment method
 | **Best practices** | **[Azure AD joined](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD joined with Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Commonly used in EDU|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Commonly used in EDU|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Devices can be used as shared devices|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Personal devices must access company resources|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|
 |Self-servicing of apps|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|
