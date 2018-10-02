@@ -2,12 +2,12 @@
 # required metadata
 
 title: Device restrictions for Android work profiles in Microsoft Intune - Azure | Microsoft Docs
-description: On Android work profile devices, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
+description: On Android Enterprise profile devices, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/25/2018
+ms.date: 10/2/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Work device restriction settings in Intune
 
-This article lists the Microsoft Intune device restrictions settings that you can configure for Android work profile devices.
+This article lists the Microsoft Intune device restrictions settings that you can configure for Android Enterprise profile devices.
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -109,6 +109,31 @@ This article lists the Microsoft Intune device restrictions settings that you ca
    > [!Note]
    > This setting only works for devices that are Android O and above.
 
+## Connectivity
+
+- **Always-on VPN**: Choose **Enable** to set a VPN client to automatically connect and reconnect to the VPN. Always-on VPN connections stay connected or immediately connect when the user locks their device, the device restarts, or the wireless network changes. 
+
+  Choose **Not configured** to disable always-on VPN for all VPN clients. 
+
+  > [!IMPORTANT]
+  > Be sure to deploy only one Always On VPN policy to a single device. Deploying multiple Always VPN policies to a single device isn't supported.
+
+- **VPN client**: Choose a VPN client that supports Always On. Your options:
+  - Cisco AnyConnect
+  - F5 Access
+  - Palo Alto Networks GlobalProtect
+  - Pulse Secure
+  - Custom
+    - **Package ID**: Enter the package ID of the app in the Google Play store. For example, if the URL for the app in the Play store is `https://play.google.com/store/details?id=com.contosovpn.android.prod`, then the package ID is `com.contosovpn.android.prod`.
+
+    > [!IMPORTANT]
+    >  - The VPN client you choose must be installed on the device, and it must support per-app VPN in work profiles. Otherwise, an error occurs. 
+    >  - You do need to approve the VPN client app in the **Managed Google Play Store**, sync the app to Intune, and deploy the app to the device. After you do this, then the app is installed in the user's work profile.
+
+- **Lockdown mode**: **Enable** to force all network traffic to use the VPN tunnel. If a connection to the VPN isn't established, then the device won't have network access.
+
+  Choose **Not configured** to allow traffic to flow through the VPN tunnel or through the mobile network.
+
 ## Next step
 
-To save and assign the profile to users and devices, see [Configure device restriction settings](device-restrictions-configure.md).
+[Assign profiles](device-profile-assign.md) to users and devices.
