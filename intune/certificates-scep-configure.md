@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,8 +24,6 @@ ms.custom: intune-azure
 ---
 
 # Configure and use SCEP certificates with Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article shows how to configure your infrastructure, then create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Intune.
 
@@ -353,6 +351,113 @@ To validate that the service is running, open a browser, and enter the following
 5. From the **Profile** type drop-down list, select **SCEP certificate**.
 6. On the **SCEP Certificate** pane, configure the following settings:
 
+   - **Certificate type**: Choose **User** for user certificates. Choose **Device** for user-less devices, such as kiosks. **Device** certificates are available for the following platforms:  
+     - iOS
+     - Windows 8.1 and later
+     - Windows 10 and later
+
+   - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
+
+        **User certificate type**  
+
+        You can include the user's email address in the subject name. Choose from:
+
+        - **Not configured**
+        - **Common name**
+        - **Common name including email**
+        - **Common name as email**
+        - **IMEI (International Mobile Equipment Identity)**
+        - **Serial number**
+        - **Custom**: When you select this option, a **Custom** text box is also shown. Use this field to enter a custom subject name format, including variables. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
+
+            - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
+            - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
+            - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
+            - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
+
+                To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
+            By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
+
+        **Device certificate type**  
+
+        When you use the **Device** certificate type, you can also use the following device certificate variables for the value:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId​}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        These variables can be added with static text in a custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
+        >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+
+
+   - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
+
+        **User certificate type**  
+
+        The following attributes are available:
+
+        - Email address
+        - User principal name (UPN)
+
+            For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If a client certificate is used to authenticate to a Network Policy Server, set the subject alternative name to the UPN. 
+
+        **Device certificate type**  
+
+        A table format text box that you can customize. The following attributes are available:
+
+        - DNS
+        - Email address
+        - User principal name (UPN)
+
+        With the **Device** certificate type, you can use the following device certificate variables for the value:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId​}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        These variables can be added with static text in the custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
+        >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+
    - **Certificate validity period**: If you ran the `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` command on the issuing CA, which allows a custom validity period, you can enter the amount of remaining time before the certificate expires.<br>You can enter a value that is lower than the validity period in the certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can enter a value of one year, but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
    - **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Enter where the key to the certificate is stored. Choose from one of the following values:
      - **Enroll to Trusted Platform Module (TPM) KSP if present, otherwise Software KSP**
@@ -360,40 +465,17 @@ To validate that the service is running, open a browser, and enter the following
      - **Enroll to Passport, otherwise fail (Windows 10 and later)**
      - **Enroll to Software KSP**
 
-   - **Subject name format**: From the list, select how Intune automatically creates the subject name in the certificate request. If the certificate is for a user, you can also include the user's email address in the subject name. Choose from:
-     - **Not configured**
-     - **Common name**
-     - **Common name including email**
-     - **Common name as email**
-     - **IMEI (International Mobile Equipment Identity)**
-     - **Serial number**
-     - **Custom**: When you select this option, another drop-down field is displayed. Use this field to enter a custom subject name format. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
-       - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
-       - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
-       - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
-       - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
-
-          To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
-
-       By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
-
-- **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate is used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
-- **Key usage**: Enter the key usage options for the certificate. Your options:
-  - **Key encipherment**: Allow key exchange only when the key is encrypted
-  - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
-- **Key size (bits)**: Select the number of bits contained in the key
-- **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
-- **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile.
-- **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
-- **Enrollment Settings**
-  - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
-  - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP.
-  - Select **OK**, and **Create** your profile.
+   - **Key usage**: Enter the key usage options for the certificate. Your options:
+     - **Key encipherment**: Allow key exchange only when the key is encrypted
+     - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
+   - **Key size (bits)**: Select the number of bits contained in the key
+   - **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
+   - **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile.
+   - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
+   - **Enrollment Settings**
+     - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
+     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP.
+     - Select **OK**, and **Create** your profile.
 
 The profile is created and appears on the profiles list pane.
 

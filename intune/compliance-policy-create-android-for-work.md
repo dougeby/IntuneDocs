@@ -4,10 +4,10 @@
 title: Create Android work profile compliance policy in Microsoft Intune - Azure | Microsoft Docs
 description: Create or configure a Microsoft Intune device compliance policy for Android work profile devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -118,7 +118,11 @@ If your enterprise uses Android work profiles, you can enable **Threat scan on a
 - **Block apps from unknown sources**: You don't have to configure this setting as Android work profile devices always restrict installation from unknown sources.
 - **Company portal app runtime integrity**: Checks if the Company Portal app has the default runtime environment installed, is properly signed, is not in debug-mode, and is installed from a known source.
 - **Block USB debugging on device**: You don't have to configure this setting because USB debugging is already disabled on Android work profile devices.
-- **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the `YYYY-MM-DD` format.
+- **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that are not at least at this patch level are noncompliant. The date must be entered in the *YYYY-MM-DD* format.
+- **Restricted apps**: You can restrict apps by adding their bundle IDs to the policy. Then if a device has the app installed, the device will be marked as noncompliant. 
+   - **App name**: Enter a user-friendly name to help you identify the bundle ID. 
+   - **App Bundle ID**: Enter the unique bundle identifier for the app provider. For Android, the app bundle ID is taken from the store URL for the app. For example, if the URL to the app in the store is *https://play.google.com/store/apps/details?id=com.Slack*, the App Bundle ID = *com.Slack*.
+
 
 ## Assign user groups
 

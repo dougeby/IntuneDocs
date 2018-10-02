@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,10 +45,10 @@ Depending on the settings you choose, not all values may be configurable.
   - **Description**: Enter a descriptive name for the server, such as **Contoso VPN server**
   - **IP address or FQDN**: Enter the IP address or fully qualified domain name of the VPN server that devices connect to, such as **192.168.1.1** or **vpn.contoso.com**
   - **Default server**: Enables this server as the default server that devices use to establish the connection. Set only one server as the default.
-  - **Import**: Browse to a comma-separated file that contains a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
+  - **Import**: Browse to a comma-separated file that includes a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
   - **Export**: Exports the list of servers to a comma-separated-values (csv) file
 
-- **Register IP addresses with internal DNS**: Select **Enable** to configure the Windows 10 VPN profile to dynamically register the IP addresses assigned to the VPN interface with the internal DNS, or select **Disable** to not dynamically register the IP addresses.
+- **Register IP addresses with internal DNS**: Select **Enable** to configure the Windows 10 VPN profile to dynamically register the IP addresses assigned to the VPN interface with the internal DNS. Select **Disable** to not dynamically register the IP addresses.
 
 - **Connection type**: Select the VPN connection type from the following list of vendors:
 
@@ -64,12 +64,12 @@ Depending on the settings you choose, not all values may be configurable.
   - **PPTP**
 
   When you choose a VPN connection type, you may also be asked for the following settings:  
-    - **Always On**: Enable to automatically connect to the VPN connection when the following happens: 
+    - **Always On**: **Enable** to automatically connect to the VPN connection when the following events happen: 
       - Users sign into their devices
       - The network on the device changes
       - The screen on the device turns back on after being turned off 
 
-    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced capabilities, such as zero-touch experience, on-demand VPN, and per-app VPN.
+    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
     - **Remember credentials at each logon**: Choose to cache the authentication credentials.
     - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
     - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
@@ -119,7 +119,7 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## Conditional Access
 
-- **Conditional access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client attempts to communicate with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
+- **Conditional access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client communicates with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
 
 - **Single sign-on (SSO) with alternate certificate**: For device compliance, use a certificate different from the VPN authentication certificate for Kerberos authentication. Enter the certificate with the following settings:
 
@@ -129,14 +129,24 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## DNS Settings
 
-**Domain and servers for this VPN connection**: Add domain and DNS server for the VPN to use. You can choose which DNS servers the VPN connection uses after the connection is established. For each server, enter:
+- **DNS suffix search list**: In **DNS suffixes**, enter a DNS suffix, and **Add**. You can add multiple suffixes.
+
+  When using DNS suffixes, you can search for a network resource using its short name, instead of the fully qualified domain name (FQDN). When searching using the short name, the suffix is automatically determined by the DNS server. For example, `utah.contoso.com` is in the DNS suffix list. You ping `DEV-comp`. In this scenario, it resolves to `DEV-comp.utah.contoso.com`.
+
+  DNS suffixes are resolved in the order listed, and the order can be changed. For example, `colorado.contoso.com` and `utah.contoso.com` are in the DNS suffix list, and both have a resource called `DEV-comp`. Since `colorado.contoso.com` is first in the list, it resolves as `DEV-comp.colorado.contoso.com`.
+  
+  To change the order, click the dots to the left of the DNS suffix, and then drag the suffix to the top:
+
+  ![Select the three dots, and click-and-drag to move the dns suffix](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **Domain and servers for this VPN connection**: Add domain and DNS server for the VPN to use. You can choose which DNS servers the VPN connection uses after the connection is established. For each server, enter:
 - **Domain**
 - **DNS Server**
 - **Proxy**
 
 ## Proxy settings
 
-- **Automatic configuration script**: Use a file to configure the proxy server. Enter the **Proxy server URL**, such as `http://proxy.contoso.com`, that contains the configuration file.
+- **Automatic configuration script**: Use a file to configure the proxy server. Enter the **Proxy server URL**, such as `http://proxy.contoso.com`, that includes the configuration file.
 - **Address**: Enter the proxy server address, such as an IP address or `vpn.contoso.com`
 - **Port number**: Enter the TCP port number used by your proxy server
 - **Bypass proxy for local addresses**: If you don't want to use a proxy server for local addresses, then choose Enable. This setting applies if your VPN server requires a proxy server for the connection.
