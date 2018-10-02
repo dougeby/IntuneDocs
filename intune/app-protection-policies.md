@@ -5,8 +5,8 @@ title: Create and deploy app protection policies
 titleSuffix: Microsoft Intune
 description: Learn how to create and assign Microsoft Intune app protection policies.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/12/2018
 ms.topic: article

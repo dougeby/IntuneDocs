@@ -5,8 +5,8 @@ title: Conditional access with Microsoft Intune
 titlesuffix:
 description: Learn how Intune conditional access is commonly used for device-based and app-based conditional access.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: conceptual
