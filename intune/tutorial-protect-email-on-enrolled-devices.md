@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Tutorial - Secure Office 365 email on enrolled devices
+title: Tutorial - Protect Exchange Online email on Intune-managed devices
 titlesuffix: Microsoft Intune
-description: Learn how to use device compliance policies and conditional access to protect email by requiring iOS devices to be managed by Intune.
+description: Learn to secure Exchange Online with iOS Intune compliance policies and Azure AD conditional access to require managed devices and the Outlook app.
 keywords:
 author: msmimart
 ms.author: mimart
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Tutorial: Protect Office 365 email on enrolled devices
+# Tutorial: Protect Exchange Online email on managed devices
 
 Learn about using device compliance policies with conditional access to make sure that iOS devices can access Exchange Online email only if they're managed by Intune and using an approved email app. 
 In this tutorial, you'll learn how to: 

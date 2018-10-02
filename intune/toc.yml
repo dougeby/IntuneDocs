@@ -38,6 +38,10 @@
     href: get-started-apps.md
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
+- name: Tutorials
+  items:
+  - name: Protect email on managed devices
+    href: tutorial-protect-email-on-enrolled-devices.md
 - name: Scenario implementation guides
   items:
   - name: Protect Exchange Online
