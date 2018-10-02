@@ -120,8 +120,8 @@ The Personal Identification Number (PIN) is a passcode used to verify that the c
 
 For iOS devices, even if the PIN is shared between apps from different publishers, the prompt will show up again when the **Recheck the access requirements after (minutes)** value is met again for the app that is not the main input focus. So, for example, a user has app _A_ from publisher _X_ and app _B_ from publisher _Y_, and those two apps share the same PIN. The user is focused on app _A_ (foreground), and app _B_ is minimized. After the **Recheck the access requirements after (minutes)** value is met and the user switches to app _B_, the PIN would be required.
 
-      >[!NOTE] 
-      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
+  >[!NOTE] 
+  > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **How does the Intune PIN work with built-in app PINs for Outlook and OneDrive?**<br></br>
 The Intune PIN works based on an inactivity-based timer (aka the value of 'Recheck the access requirements after (minutes)'). As such, Intune PIN prompts show up independently from the built-in app PIN prompts for Outlook and OneDrive which often are tied to app launch by default. If the user receives both PIN prompts at the same time, the expected behavior should be that the Intune PIN takes precedence. 

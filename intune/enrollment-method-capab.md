@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Intune capabilities by enrollment method
+title: Intune capabilities by enrollment method for Windows devices
 titlesuffix: Microsoft Intune
-description: See which capabilities each enrollment method supports.
+description: See which capabilities each enrollment method supports for Windows devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Capabilities by enrollment method
+# Capabilities by enrollment method for Windows devices
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Intune lets you manage your workforce’s devices and apps and how they access your company data. The devices must first be enrolled in the Intune service. There are several methods to enroll your workforce’s devices. Each method has different best practices and capabilities, as shown in the tables below.
@@ -35,7 +35,7 @@ Intune lets you manage your workforce’s devices and apps and how they access y
 ## Best practices by enrollment method
 | **Best practices** | **[Azure AD joined](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD joined with Autopilot](enrollment-autopilot.md)** |**[Bulk](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Commonly used in EDU|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+|Commonly used in EDU|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Devices can be used as shared devices|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Personal devices must access company resources|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|
 |Self-servicing of apps|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|

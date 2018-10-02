@@ -28,16 +28,14 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
-  - name: Set up auto enrollment
+  - name: Create a policy
+    href: quickstart-create-policy.md
+  - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
-  - name: Assign policies
-    href: get-started-policies.md
-  - name: Enroll devices
-    href: get-started-enroll.md
-  - name: Assign apps
-    href: get-started-apps.md
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
+  - name: Create an email device profile
+    href: quickstart-email-profile.md
 - name: Tutorials
   items:
   - name: Protect email on managed devices
@@ -56,6 +54,8 @@
     href: byod-technology-decisions.md
 - name: Concepts
   items:
+  - name: What is device management?
+    href: what-is-device-management.md  
   - name: Navigating the Azure portal
     href: get-started-azure.md  
   - name: High-level architecture
@@ -148,8 +148,6 @@
   - name: Enroll devices
     href: device-enrollment.md
     items:
-    - name: Enrollment method capabilities
-      href: enrollment-method-capab.md
     - name: Enrollment options
       href: enrollment-options.md
       items:
@@ -169,6 +167,8 @@
         href: device-group-mapping.md
     - name: Set up Windows enrollment
       items:
+      - name: Enrollment method capabilities
+        href: enrollment-method-capab.md
       - name: Windows enrollment
         href: windows-enroll.md
       - name: Bulk enroll

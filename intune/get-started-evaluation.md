@@ -8,8 +8,8 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 09/20/2019
-ms.topic: conceptual
+ms.date: 09/20/2018
+ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -27,8 +27,7 @@ ms.custom: intune-azure; get-started
 ---
 
 # What can Intune do for my company?
-
-Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
+Microsoft Intune is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected.
 
 ![High-level architectural diagram for Microsoft Intune](/intune/media/intunearchitecture.svg)
 
@@ -41,11 +40,11 @@ You can follow the intended order of the __Getting Started__ quickstarts using t
 - [Try Intune for free](free-trial-sign-up.md) - Create a free subscription to try Intune in a test environment.    
 - [Create a user](quickstart-create-user.md) - Add a user to Intune to allow them to access company resources on mobile devices.
 - [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
-- [Assign policies](get-started-policies.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
+- [Create a policy](quickstart-create-policy.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
 - [Set up auto enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
-- [Add and assign apps](get-started-apps.md) - Add and assign apps to devices
 - [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
-
+- [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## Prerequisites
 
 Before you start, you must have an Intune admin and tenant account activated. Create a free subscription to [try Intune for free](free-trial-sign-up.md) in a test environment. Current subscribers can also complete these activities in your live tenant. These getting started articles assume that you're working on test devices.
