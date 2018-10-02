@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using protected browser policies with Microsoft Intune
+# Manage Internet access using protected browser policies with Microsoft Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
