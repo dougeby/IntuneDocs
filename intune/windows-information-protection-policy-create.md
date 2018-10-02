@@ -5,8 +5,8 @@ title: Create and deploy Windows Information Protection (WIP) app protection pol
 titlesuffix: Microsoft Intune
 description: Create and deploy Windows Information Protection (WIP) app protection policy with Microsoft Intune
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/04/2018
 ms.topic: article

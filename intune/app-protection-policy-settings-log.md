@@ -5,8 +5,8 @@ title: Review app protection policy logs
 titlesuffix: Microsoft Intune
 description: Learn about the settings you can review in the app protection logs.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
