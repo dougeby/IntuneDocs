@@ -5,8 +5,8 @@ title: Windows Information Protection settings in Microsoft Intune
 titleSuffix:
 description: Learn about the Microsoft Intune settings you can use to manage Windows Information Protection.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 1/18/2018
 ms.topic: article

@@ -5,8 +5,8 @@ title: Set up Symantec integration with Microsoft Intune
 titlesuffix:
 description: How to set up the Symantec Endpoint Protection Mobile solution with Microsoft Intune to control mobile device access to your corporate resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
