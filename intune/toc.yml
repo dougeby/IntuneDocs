@@ -36,7 +36,11 @@
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
     href: quickstart-email-profile.md
-- name: Scenario implementation guides 
+- name: Tutorials
+  items:
+  - name: Protect email on managed devices
+    href: tutorial-protect-email-on-enrolled-devices.md
+- name: Scenario implementation guides
   items:
   - name: Protect Exchange Online
     href: exchange-online-protect.md
