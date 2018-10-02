@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
+  
 
 ## Week of September 24, 2018
 
@@ -52,6 +53,17 @@ One of the promises of Microsoft 365 is simplified administration, and over the 
 
 ### Support for more third-party certification authorities (CA) <!-- 3093107 -->
 By using the Simple Certificate Enrollment Protocol (SCEP), you can now issue new certificates and renew certificates on mobile devices using Windows, iOS, Android, and macOS.
+
+### Intune moves to support iOS 10 and later <!-- 2454656 -->  
+Intune enrollment, the Company Portal, and the managed browser now only support iOS devices running iOS 10 and later. To check for devices or users that are affected in your organization, go to Intune in the Azure portal > **Devices** > **All devices**. Filter by OS and then click **Columns** to surface OS version details. Ask these users to upgrade their devices to a supported OS version.  
+
+If you have any of the devices listed below, or want to enroll any of the devices listed below, be aware that they only support iOS 9 and earlier.  To continue to access the Intune Company Portal, you must upgrade these devices to devices that support iOS 10 or later:  
+
+* iPhone 4S 
+* iPod Touch  
+* iPad 2 
+* iPad (3rd Generation) 
+* iPad Mini (1st Generation)  
 
 ## Week of September 17, 2018
 
