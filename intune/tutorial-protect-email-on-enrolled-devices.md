@@ -29,10 +29,10 @@ ms.custom: intune-azure
 
 # Tutorial: Protect Office 365 email on enrolled devices
 
-Learn about setting up Intune device compliance policies with Azure AD conditional access to make sure that iOS devices can access Office 365 Exchange Online email only if they’re managed by Intune and using an approved email app. 
+Learn about using device compliance policies with conditional access to make sure that iOS devices can access Exchange Online email only if they're managed by Intune and using an approved email app. 
 In this tutorial, you'll learn how to: 
   - Create an Intune iOS device compliance policy to set the conditions that a device must meet to be considered compliant. 
-  - Create an Azure AD conditional access policy that requires iOS devices to be enrolled in Intune, compliant with Intune policies, and using the approved Outlook mobile app to access Office 365 Exchange Online email.
+  - Create an Azure Active Directory (Azure AD) conditional access policy that requires iOS devices to enroll in Intune, comply with Intune policies, and use the approved Outlook mobile app to access Exchange Online email.
 
 ## Prerequisites
   - You'll need a test tenant with the following subscriptions for this tutorial:
@@ -46,7 +46,7 @@ In this tutorial, you'll learn how to:
 Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**.
 
 ## Create the iOS device compliance policy
-Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Note that compliance policies are platform-specific, so you need a separate compliance policy for each device platform you want to evaluate.
+Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Compliance policies are platform-specific, so you need a separate compliance policy for each device platform you want to evaluate.
 
 1.	In Intune, select **Device compliance** > **Policies** > **Create Policy**.
 2.	In **Name**, enter **iOS compliance policy test**. 
@@ -60,7 +60,7 @@ Set up an Intune device compliance policy to set the conditions that a device mu
     ![Set the email compliance policy to require a managed email profile](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
 6.	Select **Device Health**. Next to **Jailbroken devices**, select **Block**, and then select **OK**.
-7.	Select **System Security** and enter **Password** settings. For this tutorial, select the following generally recommended settings:
+7.	Select **System Security** and enter **Password** settings. For this tutorial, select the following recommended settings:
      
     - For **Require a password to unlock mobile devices**, select **Require**.
     - For **Simple passwords**, select **Block**.
@@ -76,12 +76,12 @@ Set up an Intune device compliance policy to set the conditions that a device mu
 9.	Select **Create**.
 
 ## Create the conditional access policy
-Now we’ll create a conditional access policy that requires all device platforms to be enrolled in Intune and compliant with our Intune compliance policy before they can access Exchange Online. We will also require the Outlook app for email access. Conditional access policies are configurable in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.
+Now we’ll create a conditional access policy that requires all device platforms to enroll in Intune and comply with our Intune compliance policy before they can access Exchange Online. We will also require the Outlook app for email access. Conditional access policies are configurable in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.
 1.	In Intune, select **Conditional access** > **Policies** > **New policy**.
 1.  In **Name**, enter **Test policy for Office 365 email**. 
 3.	Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
 
-4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll do the following:
+4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll select it by following these steps:
      
     1. On the **Include** tab, choose **Select apps**.
     2. Choose **Select**. 
@@ -111,7 +111,7 @@ Now we’ll create a conditional access policy that requires all device platform
     1. On the **Grant** pane, select **Grant access**.
     2. Select **Require device to be marked as compliant**. 
     3. Select **Require approved client app**.
-    4. Under **For multiple controls**, select **Require all the selected controls** so that both requirements you selected are enforced when a device tries to access email.
+    4. Under **For multiple controls**, select **Require all the selected controls**. This setting ensures that both requirements you selected are enforced when a device tries to access email.
     5. Choose **Select**.
      
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
@@ -123,7 +123,7 @@ Now we’ll create a conditional access policy that requires all device platform
 9.	Select **Create**.
 
 ## Try it out
-With the policies you’ve just created, any iOS device that attempts to sign in to Office 365 email will be required to enroll in Intune and use the Outlook mobile app for iOS. You can test this by attempting to use the native email app on an iOS device to sign in to Office 365 email by using credentials from your test tenant.  You’ll be prompted to enroll the device and install the Outlook mobile app.
+With the policies you’ve created, any iOS device that attempts to sign in to Office 365 email will be required to enroll in Intune and use the Outlook mobile app for iOS. To test this scenario on an iOS device, try signing in to Exchange Online using credentials for a user in your test tenant. You’ll be prompted to enroll the device and install the Outlook mobile app.
 1. To test on an iPhone, go to **Settings** > **Passwords & Accounts** > **Add Account** > **Exchange**.
 2. Enter the email address for a user in your test tenant, and then press **Next**.
 3. Press **Sign In**.
@@ -131,7 +131,7 @@ With the policies you’ve just created, any iOS device that attempts to sign in
 5. A message appears that says your device must be managed to access the resource, along with an option to enroll. 
 
 ## Clean up resources
-When no longer needed, you can remove the test policies.
+When the test polices are no longer needed, you can remove them.
 1. Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
 2. Select **Device Compliance** > **Policies**.
 3. In the **Policy Name** list, select the context menu (**...**) for your test policy, and then select **Delete**. Select **OK** to confirm.
@@ -139,4 +139,4 @@ When no longer needed, you can remove the test policies.
 5. In the **Policy Name** list, select the context menu (**...**) for your test policy, and then select **Delete**. Select **Yes** to confirm.
 
  ## Next steps 
-In this tutorial, you created policies to require any iOS device that attempts to sign in to Office 365 email to enroll in Intune and use Outlook mobile app for iOS. To learn about using Intune with conditional access to protect other apps and services, including Exchange ActiveSync clients for Office 365 Exchange Online, see [Set up conditional access](conditional-access.md).
+In this tutorial, you created policies that require iOS devices to enroll in Intune and use the Outlook app when attempting to access Exchange Online email. To learn about using Intune with conditional access to protect other apps and services, including Exchange ActiveSync clients for Office 365 Exchange Online, see [Set up conditional access](conditional-access.md).
