@@ -5,7 +5,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,13 +43,14 @@ For more information about what happens after you remove your device from manage
 ## Remove your Windows 10 device
 Complete the following steps to remove a Windows 10 device from management.
 
-### Remove in Company Portal app, **My Devices** page  
+### Remove in Company Portal app, **Home** page  
 
 1. Open the Company Portal app.
-2. In **My Devices**, select the device you want to remove.
+2. On the **Home page**, go down to the **My Devices** section.
+3. Select the device you want to remove.
 3. In the top, right-corner of the app, select the **See more** icon.
 4. Select **Remove**. 
-5. To confirm device removal, select **Remove device**.  
+5. To confirm device removal, select **Remove**.  
 
 ### Remove in Company Portal app, device context menu  
 
@@ -79,8 +80,8 @@ Complete the following steps to remove a Windows 8.1 computer from Intune.
 3.  Under **Turn on device management,** select **Turn off**.
 4.  On the popup window that opens, select **Turn off**.
 
-## Remove your Windows 8.1 mobile device
-Complete the following steps to remove a Windows 8.1 mobile device from Intune.
+## Remove your Windows 8.1 phone
+Complete the following steps to remove a Windows 8.1 phone from Intune.
 
 1.  Go to **Settings** > **Workplace**.
 2.  Tap the workplace account that you want to unenroll.
