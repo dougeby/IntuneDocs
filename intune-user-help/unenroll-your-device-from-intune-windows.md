@@ -1,11 +1,11 @@
 ---
-title: Remove your Windows device from Intune
-description: Describes how to remove a Windows device from Intune
+title: Remove your Windows device from Intune management
+description: Describes how to remove a Windows device from Intune management
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/01/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,32 +27,46 @@ ms.custom: intune-enduser
 
 ---
 
-# Remove your Windows device from Intune management
+# Remove your Windows device from management
 
-Remove a registered, Windows device from Intune when you no longer want or need to:  
+Remove a registered, Windows device from management when you no longer want or need to:  
 * Use your device for work or school. 
 * Access work or school email, apps, or other resources.
 
-After it's removed, you'll be unable to access school or work resources from the device. Windows devices that can be removed from Intune include:  
+After you unregister the device, you'll lose device access to school or work resources. You can remove the following Windows devices from management.  
 * Windows 10 devices 
 * Windows 8.1 computer
-* Windows 8.1 mobile device
+* Windows 8.1 phone
  
-For more information about what happens after you remove your device from Intune management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+For more information about what happens after you remove your device from management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).  
 
 ## Remove your Windows 10 device
-Complete the following steps to remove a Windows 10 device from Intune.
+Complete the following steps to remove a Windows 10 device from management.
 
-### Via the Company Portal app
+### Remove in Company Portal app, **Home** page  
 
 1. Open the Company Portal app.
-2. Sign in using your work or school credentials.
-3. In **My Devices**, select the device you want to remove.
-4. In the top, right-corner of the app, select the **See more** icon.
-5. Select **Remove**. 
-6. To confirm device removal, select **Remove device**.
+2. On the **Home page**, go down to the **My Devices** section.
+3. Select the device you want to remove.
+3. In the top, right-corner of the app, select the **See more** icon.
+4. Select **Remove**. 
+5. To confirm device removal, select **Remove**.  
 
-### Via device Settings app
+### Remove in Company Portal app, device context menu  
+
+1. Open the Company Portal app
+2. On the **Home** page, go down to the **My Devices** section.
+3. Right-click or press and hold the device you want to remove.
+4. Select **Remove**.  
+
+    ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)  
+
+5. In the confirmation, click Learn More to read how your access to work and school resources might change. To confirm device removal, select **Remove**.   
+
+     ![Example screenshot of the Company Portal app for Windows, Home page. Rename field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RemoveDevice_Popup.png)  
+
+
+### Remove in device Settings app
 1. Open the Settings app. 
 2. Go to **Accounts** > **Access work or school**.
 3. Select the connected account that you want to remove > **Disconnect**.
@@ -66,14 +80,15 @@ Complete the following steps to remove a Windows 8.1 computer from Intune.
 3.  Under **Turn on device management,** select **Turn off**.
 4.  On the popup window that opens, select **Turn off**.
 
-## Remove your Windows 8.1 mobile device
-Complete the following steps to remove a Windows 8.1 mobile device from Intune.
+## Remove your Windows 8.1 phone
+Complete the following steps to remove a Windows 8.1 phone from Intune.
 
 1.  Go to **Settings** > **Workplace**.
 2.  Tap the workplace account that you want to unenroll.
 3.  Tap **Delete** at the bottom of the screen.
 4.  On the **Delete account** dialog box, tap **Delete**.  
-## Removing your personal information after removing the Company Portal
+## Removing your personal information after removing the Company Portal  
+
 There are two kinds of data that the Company Portal stores on your Windows device:
 
 -	**Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
