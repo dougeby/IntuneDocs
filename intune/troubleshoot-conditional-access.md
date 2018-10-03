@@ -4,8 +4,8 @@
 title: Troubleshoot conditional access
 description: What to do when your users fail to get access to resources through Intune conditional access.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: conceptual
