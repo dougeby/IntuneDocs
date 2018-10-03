@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using protected browser policies with Microsoft Intune
+# Manage Internet access using protected browser policies with Microsoft Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
