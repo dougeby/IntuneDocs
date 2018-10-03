@@ -772,9 +772,9 @@ Also see the requirements for [Conditional Access](#conditional-access) below.
 
 ### Conditional Access
 Conditional Access (CA) is an Azure Active Directory
-[feature](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer)
+[feature](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)
 which can be used to control access to AAD resources.  [Intune
-administrators can define CA rules](https://docs.microsoft.com/en-us/intune/conditional-access)
+administrators can define CA rules](https://docs.microsoft.com/intune/conditional-access)
 which allow resource access only from devices or apps which are
 managed by Intune. In order to ensure that your app is able to access
 resources when appropriate, it is necessary to follow the steps
