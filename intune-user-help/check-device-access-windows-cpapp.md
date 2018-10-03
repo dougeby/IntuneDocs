@@ -56,11 +56,11 @@ When your device loses access, the Company Portal app's **Device details*** page
 4. The status updates to show either:
     a. Can access <organization> resources
     b. Can't access <organization> resources
-6. If your device can't' access resources, select the device.
+6. If your device can't access resources, select the device.
 7. On the **Device details** page:  
     a. Review the message and list of affected settings.  
     b. Click **More** for more details.  
     c. If you need help resolving the setting on your device, click **How to resolve this**. This link opens the relevant article on Docs.Microsoft.com.   
-8. After you've made adjustments, check access again to confirm the device's status.  
+8. After you've configured the settings, check access again to confirm the device's status.  
 
 Need more help? Find your company support's contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
