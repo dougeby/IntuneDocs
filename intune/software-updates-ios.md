@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,11 @@ ms.technology:
 
 # Configure iOS update policies in Intune
 
-Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is available only for supervised devices. When configuring a policy, you can add the days and times during which you don't want devices to install an update. 
+Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is available only for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
 
 The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
-This feature supports devices that are running iOS 10.3 and later versions. The Delay setting is available in iOS 11.3 and later versions and in macOS 10.13.4.
+This feature supports devices that run iOS 10.3 and later versions. The Delay setting is available in iOS 11.3 and later, and in macOS 10.13.4.
 
 ## Configure the policy
 1. Sign in to the [Azure portal](https://portal.azure.com).
