@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The Microsoft Intune company portal is where users access company data and can d
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Client apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
 
 > [!Note]		
-> The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.	
+> If you are using Azure Government, app logs are offered to the end user to decide how they will share when they initiate the process to get help with an issue. However, if you are not using Azure Government, the Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the process to get help with an issue. Sending the app logs to Microsoft will make it easier to troubleshoot and resolve issues. 
 
 ## Company information and privacy statement		
 The company name is displayed as the Company Portal title. The privacy statement is displayed when a user clicks on the privacy link.
