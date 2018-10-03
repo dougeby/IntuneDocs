@@ -36,7 +36,7 @@ Remove a registered, Windows device from management when you no longer want or n
 After you unregister the device, you'll lose device access to school or work resources. You can remove the following Windows devices from management.  
 * Windows 10 devices 
 * Windows 8.1 computer
-* Windows 8.1 mobile device
+* Windows 8.1 phone
  
 For more information about what happens after you remove your device from management, see [What happens if you remove your device from Intune](what-happens-if-you-unenroll-your-device-from-intune-windows.md).  
 
