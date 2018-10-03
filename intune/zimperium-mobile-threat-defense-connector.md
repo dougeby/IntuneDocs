@@ -5,8 +5,8 @@ title: Zimperium MTD connector with Intune
 titleSuffix: Intune on Azure
 description: Learn about integrating Intune with Zimperium Mobile Threat Defense to control mobile device access to your corporate resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
