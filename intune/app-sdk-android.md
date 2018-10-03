@@ -241,8 +241,8 @@ be available to Gradle's dependency resolution (as described
 above). Javassist is used solely at build time when running the
 plugin. No Javassist code will be added to your app.
 
-[!NOTE] You must be using version 3.0 or newer of the Android Gradle plugin and
-Gradle 4.1 or newer.
+> [!NOTE]
+> You must be using version 3.0 or newer of the Android Gradle plugin and Gradle 4.1 or newer.
 
 ### Command Line Build Tool
 If your build uses Gradle, skip to the [next section](#class-and-method-replacements).
