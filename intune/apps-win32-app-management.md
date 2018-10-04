@@ -127,55 +127,55 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     > [!NOTE]
     > In the **Detection rules** pane, you can choose to add multiple rules. The conditions for **all** rules must be met to detect the app.
 
-- **Manually configure detection rules** - You can select one of the following rule types:
-    1.	**MSI** – Verify based on MSI version check. This option can only be added once. When you choose this rule type, you have two settings:
-        - **MSI product code** – Add a valid MSI product code for the app.
-        - **MSI product version check** – Select **Yes** to verify the MSI product version in addition to the MSI product code.
-    2.	**File** – Verify based on file or folder detection, date, version, or size.
-        - **Path** – The full path of the folder containing the file or folder to detect.
-        - **File or folder** - The file or folder to detect.
-        - **Detection method** – Select the type of detection method used to validate the presence of the app.
-        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to expand any path environment variables in the 32-bit context on 64-bit clients. Select **No** (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+    - **Manually configure detection rules** - You can select one of the following rule types:
+        1.	**MSI** – Verify based on MSI version check. This option can only be added once. When you choose this rule type, you have two settings:
+            - **MSI product code** – Add a valid MSI product code for the app.
+            - **MSI product version check** – Select **Yes** to verify the MSI product version in addition to the MSI product code.
+        2.	**File** – Verify based on file or folder detection, date, version, or size.
+            - **Path** – The full path of the folder containing the file or folder to detect.
+            - **File or folder** - The file or folder to detect.
+            - **Detection method** – Select the type of detection method used to validate the presence of the app.
+            - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to expand any path environment variables in the 32-bit context on 64-bit clients. Select **No** (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+            
+            **Examples of file-based detection**
+            1.	Check for file existence.
+         
+                ![Screenshot of detection rule pane - file existence](./media/apps-win32-app-03.png)
         
-    **Examples of file-based detection**
-    1.	Check for file existence.
- 
-    ![Screenshot of detection rule pane - file existence](./media/apps-win32-app-03.png)
-
-    2.	Check for folder existence.
- 
-    ![Screenshot of detection rule pane - folder existence](./media/apps-win32-app-04.png)
-
-    3. **Registry** – Verify based on value, string, integer, or version.
-    - **Key path** – The full path of the registry entry containing the value to detect.
-    - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
-    - **Detection method** – Select the type of detection method used to validate the presence of the app.
-    - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to search the 32-bit registry on 64-bit clients. Select **No** (default) search the 64-bit registry on 64-bit clients. 32-bit clients will always search the 32-bit registry.
+            2.	Check for folder existence.
+         
+                ![Screenshot of detection rule pane - folder existence](./media/apps-win32-app-04.png)
+        
+            3. **Registry** – Verify based on value, string, integer, or version.
+            - **Key path** – The full path of the registry entry containing the value to detect.
+            - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
+            - **Detection method** – Select the type of detection method used to validate the presence of the app.
+            - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to search the 32-bit registry on 64-bit clients. Select **No** (default) search the 64-bit registry on 64-bit clients. 32-bit clients will always search the 32-bit registry.
+            
+            **Examples for registry-based detection**
+            1.	Check for registry key exists.
+         
+                ![Screenshot of detection rule pane - registry key exists](./media/apps-win32-app-05.png)    
+            
+            2.	Check for registry value exists (**Not available in preview**).
+        
+                ![Screenshot of detection rule pane - registry value exists](./media/apps-win32-app-06.png)    
+        
+            3.	Check for registry value string equals.
+        
+                ![Screenshot of detection rule pane - registry value string equals](./media/apps-win32-app-07.png)    
+     
+    - **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
     
-    **Examples for registry-based detection**
-    1.	Check for registry key exists.
- 
-    ![Screenshot of detection rule pane - registry key exists](./media/apps-win32-app-05.png)    
+        1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
+        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end-user's credentials. Select **No** (default) to run the script in the system context.
+        3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
     
-    2.	Check for registry value exists (**Not available in preview**).
-
-    ![Screenshot of detection rule pane - registry value exists](./media/apps-win32-app-06.png)    
-
-    3.	Check for registry value string equals.
-
-    ![Screenshot of detection rule pane - registry value string equals](./media/apps-win32-app-07.png)    
- 
-- **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
-
-    1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
-    2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end-user's credentials. Select **No** (default) to run the script in the system context.
-    3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
-
-    Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
-
-    > [!NOTE]
-    > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
-
+        Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
+    
+        > [!NOTE]
+        > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
+    
 3.	Once you have added your rule(s), select **Add** > **OK**.
 
 ### Step 7: Configure app return codes
