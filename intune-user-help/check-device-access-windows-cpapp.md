@@ -32,7 +32,7 @@ ms.custom: intune-enduser
 
 Verify that your device has access to work or school resources. 
 
-Organizations enforce requirements&ndash;such as encryption, password, and secure startup&ndash; to make sure that only secure, trusted devices access their data. Managed devices must meet and maintain these requirements to access an organization's resources.
+Organizations enforce requirements&ndash;such as encryption and password limits&ndash; to make sure only secure, trusted devices access their data. Managed devices must meet and maintain these requirements to access an organization's resources.
 
 When your device loses access, the Company Portal app's **Device details** page alerts you to the settings you need to adjust. It also provides information to help you resolve them. After you resolve these settings, you can **Check access** to confirm your device's status.
 
@@ -50,7 +50,7 @@ When your device loses access, the Company Portal app's **Device details** page 
 2. If your device can't access resources:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these link aren't available, you'll see your IT department's contact information.
+    c. Under certain settings, you'll see the options **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png) 
 
@@ -72,7 +72,7 @@ When your device loses access, the Company Portal app's **Device details** page 
 2. On the **Device details** page:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details. 
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these link aren't available, you'll see your IT department's contact information.
+    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png)  
 3. After you've updated the settings, click **Check access** at the bottom of the page.  
