@@ -61,7 +61,7 @@ Complete the steps in this article to check access from the Company Portal app f
 
     ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
 
-2. Right-click or press and hold a device until the context menu appears.  
+2. Right-click or press and hold a device to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
 
     ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename", "Remove", and "Check access" actions.](./media/1809_DeviceContextMenu_Windows_CP.png)  
 3. Select **Check access**. The app syncs your device with your organization's current requirements and checks to make sure your device matches. This check can take a few minutes.  
@@ -71,7 +71,7 @@ Complete the steps in this article to check access from the Company Portal app f
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Context_Menu_Alert2.png) 
 
 5. If your device can't access resources, select the device.
-2. On the **Device details** page:  
+6. On the **Device details** page:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
     c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
