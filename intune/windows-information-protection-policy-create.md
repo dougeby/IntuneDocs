@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,19 +51,27 @@ You must understand a few concepts when adding a WIP policy:
 
 ## Prerequisites
 
-You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).
+You must configure the MAM provider before you can create a WIP app protection policy. Learn more about [how to configure your MAM provider with Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> WIP does not support multi-identity, only one managed identity can exist at a time.
 
 Additionally, you need to have the following license and update:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP does not support multi-identity, only one managed identity can exist at a time.
+
+
+
 
 ## To add a WIP app protection policy
 
 After you set up Intune in your organization, you can create a WIP-specific policy.
+
+> [!TIP]  
+> For related information about creating WIP policies for Intune, including available settings and how to configure them, see [Create a Windows Information Protection (WIP) policy with MAM using the Azure portal for Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) in the Windows Security documentation library. 
+
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
 2. Choose **All Services** > **Intune**.
@@ -97,7 +105,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
 6. From the list, select **Store apps**.
-7. Enter values for **Name**, **Pubisher**, **Product Name**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
+7. Enter values for **Name**, **Publisher**, **Product Name**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
 9. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
 10. Click **Save**.
 
@@ -110,7 +118,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
 4. Choose **Protected apps** from the **Intune App Protection** blade. The **Protected apps** blade opens showing you all apps that are already included in the list for this app protection policy.
 5. Select **Add apps**. The **Add apps** information shows you a filtered list of apps. The list at the top of the blade allows you to change the list filter.
 6. From the list, select **Desktop apps**.
-7. Enter values for **Name**, **Pubisher**, **Product Name**, **File**, **Min Version**, **Max Version**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
+7. Enter values for **Name**, **Publisher**, **Product Name**, **File**, **Min Version**, **Max Version**, and **Action**. Be sure to set the **Action** value to **Allow**, so that the app will have access to your corporate data.
 9. Click **OK**. The **Protected apps** blade is updated showing all selected apps.
 10. Click **Save**.
 
@@ -129,7 +137,7 @@ When working with WIP-enabled apps and WIP-unknown apps, we recommend that you s
 ### What are the protection modes?
 
 #### Block
-WIP looks for inappropriate data sharing practices and stops the user from completing the action. This can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
+WIP looks for inappropriate data sharing practices and stops the user from completing the action. Blocked actions can include sharing info across non-corporate-protected apps, and sharing corporate data between other people and devices outside of your organization.
 
 #### Allow Overrides
 WIP looks for inappropriate data sharing, warning users when they do something deemed potentially unsafe. However, this mode lets the user override the policy and share the data, logging the action to your audit log.
