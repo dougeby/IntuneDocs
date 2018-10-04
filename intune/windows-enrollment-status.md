@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 9/28/2018
+ms.date: 10/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. The status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, create profiles to target specific user groups, and prevent users from using the device until all the assigned applications and profiles are installed.
+During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. A status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, create profiles to target specific user groups, and prevent users from using the device until all the assigned applications and profiles are installed.
  
 ## Turn on default enrollment status page for all users
 
