@@ -59,7 +59,7 @@ Complete the steps in this article to check access from the Company Portal app f
 
      * **How to resolve this** opens a relevant help article, if available.  
      * **Resolve** redirects you to the setting on your device.  
-     * **Sync** evalutes your device to make sure it matches your organization's requirements.  
+     * **Sync** evaluates your device to make sure it matches your organization's requirements.  
      * **Contact IT** redirects you to your IT team's contact information.   
  
 6. After you've updated the settings, click **Check access** to confirm your device's status.  
@@ -89,7 +89,7 @@ Complete the steps in this article to check access from the Company Portal app f
 
      * **How to resolve this** opens a relevant help article, if available.  
      * **Resolve** redirects you to the setting on your device.  
-     * **Sync** evalutes your device to make sure it matches your organization's requirements.  
+     * **Sync** evaluates your device to make sure it matches your organization's requirements.  
      * **Contact IT** redirects you to your IT team's contact information.    
 
 7. After you've updated the settings, click **Check access** at the bottom of the page.  
