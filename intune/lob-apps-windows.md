@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,11 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 1. In the **Add app** pane, select **App package file**.
 2. In the **App package file** pane, select the browse button. Then select a Windows installation file with the extension **.msi**, **.appx**, or **.appxbundle**.
-3. When you're finished, select **OK**.
+
+    > [!NOTE]
+    > The file extensions for Windows apps include **.msi**, **.appx**, **.appxbundle**, **.msix**, and **.msixbundle**.  
+
+1. When you're finished, select **OK**.
 
 
 ## Step 3: Configure app information
