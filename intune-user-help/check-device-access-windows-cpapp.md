@@ -48,20 +48,23 @@ Complete the steps in this article to check access from the Company Portal app f
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Check Access button.](./media/1809_CheckAccess_Checking_Status.png) 
 
 The status updates to let you know that the device **Can access your organization's resources** or **Cannot access your organization's resources**.  
-    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png)  
+
+   ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png)  
    
-5. If your device can't access resources, review the message at the top of the page. Click **More** to expand the problem details. Click **Less** to collapse the details.  
+5. If your device can't access resources, review the alert at the top of the page. Click **More** to expand its details. Click **Less** to collapse them.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png)  
 
-If available for the setting, the message might show additional help links and remediation actions. Select one or more of these options to start troubleshooting right away. The resolve, sync, and contact actions, described below, are only visible when using the Company Portal app on the affected device.  
+6. When available, the message shows additional help links and remediation actions. Select one or more of these options to start troubleshooting right away. The resolve, sync, and contact actions&ndash;described below&ndash;are only visible when using Company Portal on the affected device.  
+
      * **How to resolve this** opens a relevant help article, if available.  
      * **Resolve** redirects you to the setting on your device.  
      * **Sync** evalutes your device to make sure it matches your organization's requirements.  
      * **Contact IT** redirects you to your IT team's contact information.   
+ 
 6. After you've updated the settings, click **Check access** to confirm your device's status.  
 
-    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png) 
+    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png)  
 
 ## Check access from device context menu  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
@@ -77,16 +80,21 @@ If available for the setting, the message might show additional help links and r
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Context_Menu_Alert2.png) 
 
-5. If your device can't access resources, select the device.
-6. On the **Device details** page:  
-    a. Review the message and list of affected settings at the top of the page.  
-    b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
+5. If your device can't access resources, select the device.  
+6. On the **Device details** page, review the alert at the top of the page. Click **More** to expand its details. Click **Less** to collapse them.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png)  
+
+6. When available, the message shows additional help links and remediation actions. Select one or more of these options to start troubleshooting right away. The resolve, sync, and contact actions&ndash;described below&ndash;are only visible when using Company Portal on the affected device.  
+
+     * **How to resolve this** opens a relevant help article, if available.  
+     * **Resolve** redirects you to the setting on your device.  
+     * **Sync** evalutes your device to make sure it matches your organization's requirements.  
+     * **Contact IT** redirects you to your IT team's contact information.    
+
 7. After you've updated the settings, click **Check access** at the bottom of the page.  
 
-    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png) 
+    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Check access action.](./media/1809_CheckAccess_Device_details_button.png) 
 
 
 Need more help? Find your company support's contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
