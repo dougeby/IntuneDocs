@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 9/28/2018
+ms.date: 10/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.custom: intune-azure
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. The status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users, create profiles to target specific user groups, and prevent users from using the device until all the assigned applications and profiles are installed.
+During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. A status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users or create profiles to target specific user groups.  You can set profiles to show installation progress, block usage until installation completes, allow resets, and so on.
  
 ## Turn on default enrollment status page for all users
 
@@ -81,9 +81,10 @@ For account setup, the enrollment status page tracks the following items:
 - Applications
     - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
     - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
-    - LoB store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member with installation context = User.
-    - Online store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User.
-    - Offline store apps that are assigned to All Devices, All Users, or a user group in which the user enrolling device is a member with installation context = User.
+    - LoB store apps, online store apps, and offline store apps that are assigned to any of the following:
+        - All Devices
+        - All Users
+        - a user group in which the user enrolling the device is a member with installation context set to User.
 - Connectivity profiles
     - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 - Certificates
