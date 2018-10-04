@@ -39,7 +39,7 @@ When your device loses access, the Company Portal app's **Device details** page 
 ## Check access from Device details page  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
 
-    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_select_device.png) 
+    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
 2. Select a device.  
 3. On the **Device details** page, select **Check access**. The app syncs your device with your organization's current requirements and checks to make sure your device matches them. This check can take a few minutes. 
 
@@ -50,14 +50,14 @@ When your device loses access, the Company Portal app's **Device details** page 
 2. If your device can't access resources:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
+    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png) 
 
 ## Check access from device context menu
 1. Open the Company Portal app for Windows and go to **My Devices**.  
 
-    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_select_device.png) 
+    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
 
 2. Right-click or press and hold a device until the context menu appears.  
 
@@ -71,8 +71,8 @@ When your device loses access, the Company Portal app's **Device details** page 
 5. If your device can't access resources, select the device.
 2. On the **Device details** page:  
     a. Review the message and list of affected settings at the top of the page.  
-    b. Click **More** to expand the problem details. Click **Less** to collapse the details. 
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
+    b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
+    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png)  
 3. After you've updated the settings, click **Check access** at the bottom of the page.  
