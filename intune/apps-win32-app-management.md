@@ -42,9 +42,9 @@ You can download the [Microsoft Intune Win32 App Packaging Tool](https://github.
 |    **Command-line   parameter**    |    **Description**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Help    |
-|    `-c <setup_folder>`     |    Setup   folder for all setup files.    |
-|   ` -s <setup_file>`     |    Setup   file (e.g. setup.exe or setup.msi)    |
-|    `-o <output_file>`     |    Output   folder for the generated .intunewin   file.    |
+|    `-c <setup_folder>`     |    Setup folder for all setup files.    |
+|   ` -s <setup_file>`     |    Setup file (such as *setup.exe* or *setup.msi*).    |
+|    `-o <output_file>`     |    Output folder for the generated *.intunewin* file.    |
 |    `-q`       |    Quiet   mode    |
 
 ### Example commands
