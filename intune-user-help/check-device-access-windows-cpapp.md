@@ -50,7 +50,7 @@ When your device loses access, the Company Portal app's **Device details** page 
 2. If your device can't access resources:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
-    c. Under certain settings, you'll see the options **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
+    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png) 
 
