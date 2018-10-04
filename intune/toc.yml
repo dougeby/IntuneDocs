@@ -269,6 +269,8 @@
           href: apps-add-office365-macos.md
       - name: Build your app (LOB)
         items:
+        - name: Win32 app management
+          href: apps-win32-app-management.md
         - name: Android LOB apps
           href: lob-apps-android.md
         - name: iOS LOB apps
