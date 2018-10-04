@@ -79,4 +79,5 @@ When your device loses access, the Company Portal app's **Device details** page 
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png) 
 
+
 Need more help? Find your company support's contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
