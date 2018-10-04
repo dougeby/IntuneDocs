@@ -34,9 +34,9 @@ Verify that your device has access to work or school resources.
 
 Organizations enforce requirements&ndash;such as encryption and password limits&ndash; to make sure only secure, trusted devices access their data. Managed devices must meet and maintain these requirements to access the organization's resources.
 
-When your device loses access to these resources, the Company Portal app's **Device details** page alerts you. It also lists the settings you need to adjust, and provides information to help you resolve them. After they're resolved, **Check access** to confirm that you can access resources again.
+The **Check access** action evaluates your device's settings and its access status. The **Device details** page lists the settings you need to adjust to regain access. 
 
-Complete the steps in this article to check access from the Company Portal app for Windows.
+Complete the steps in this article to check access from the Company Portal app for Windows.  
 
 ## Check access from Device details page  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
@@ -59,6 +59,9 @@ If available for the setting, the message might show additional help links and r
      * **Resolve** redirects you to the setting on your device.  
      * **Sync** evalutes your device to make sure it matches your organization's requirements.  
      * **Contact IT** redirects you to your IT team's contact information.   
+6. After you've updated the settings, click **Check access** to confirm your device's status.  
+
+    ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png) 
 
 ## Check access from device context menu  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
@@ -81,7 +84,7 @@ If available for the setting, the message might show additional help links and r
     c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png)  
-3. After you've updated the settings, click **Check access** at the bottom of the page.  
+7. After you've updated the settings, click **Check access** at the bottom of the page.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Status section.](./media/1809_CheckAccess_Device_details_status1.png) 
 
