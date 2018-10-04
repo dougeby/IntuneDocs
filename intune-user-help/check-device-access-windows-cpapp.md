@@ -2,7 +2,7 @@
 # required metadata
 
 title: Check device access | Microsoft Docs
-description: Check device access to find out if your device is compliant and able to access work or school resources.
+description: Check device access to find out if your device meets requirements, and is able to access work or school resources.
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -32,9 +32,11 @@ ms.custom: intune-enduser
 
 Verify that your device has access to work or school resources. 
 
-Organizations enforce requirements&ndash;such as encryption and password limits&ndash; to make sure only secure, trusted devices access their data. Managed devices must meet and maintain these requirements to access an organization's resources.
+Organizations enforce requirements&ndash;such as encryption and password limits&ndash; to make sure only secure, trusted devices access their data. Managed devices must meet and maintain these requirements to access the organization's resources.
 
-When your device loses access, the Company Portal app's **Device details** page alerts you to the settings you need to adjust. It also provides information to help you resolve them. After you resolve these settings, you can **Check access** to confirm your device's status.
+When your device loses access to these resources, the Company Portal app's **Device details** page alerts you. It also lists the settings you need to adjust, and provides information to help you resolve them. After they're resolved, **Check access** to confirm that you can access resources again.
+
+Complete the steps in this article to check access from the Company Portal app for Windows.
 
 ## Check access from Device details page  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
@@ -50,11 +52,11 @@ When your device loses access, the Company Portal app's **Device details** page 
 2. If your device can't access resources:  
     a. Review the message and list of affected settings at the top of the page.  
     b. Click **More** to expand the problem details. Click **Less** to collapse the details.  
-    c. Under certain settings, you'll see **How to resolve this** or **Resolve**. Click either link to, respectively, open the relevant help article or Settings app on your device. If these links aren't available, you'll see your IT department's contact information.  
+    c. Some settings offer additional options to help you fix the problem. Click **How to resolve this** or **Resolve** to, respectively, open the relevant help article or Settings app on your device. The **Resolve** setting is only visible when using the Company Portal app on the affected device. If these links aren't available, and you need additional help, contact your IT support team.  
 
     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the alert at the top of the page.](./media/1809_CheckAccess_Device_details_alert1.png) 
 
-## Check access from device context menu
+## Check access from device context menu  
 1. Open the Company Portal app for Windows and go to **My Devices**.  
 
     ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
