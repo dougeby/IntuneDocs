@@ -16,7 +16,6 @@
 ### [Encrypt your device](encrypt-your-device-android.md)
 ### [Set your PIN or password](set-your-pin-or-password-android.md)
 ### [What happens when I reset my device?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
-### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Set lock time](set-the-amount-of-time-before-your-device-is-locked-android.md)
 ### [Install VPN](install-your-companys-virtual-private-network-VPN-android.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-android.md)
@@ -69,7 +68,6 @@
 ### [Use managed apps on your device](use-managed-apps-on-your-device-ios.md)
 ### [Set or change your passcode](set-or-change-your-passcode-ios.md)
 ### [What happens if you reset your device using the Company Portal?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Unenroll your device](unenroll-your-device-from-intune-ios.md)
 #### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Manually sync your device](sync-your-device-manually-ios.md)
@@ -123,17 +121,14 @@
 #### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
 #### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
 #### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
-### [Install apps from Company Portal app for Windows](install-apps-cpapp-windows.md)
-### [Reset your device](reset-erase-your-device-cpwebsite.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
-### [Set or change your password](set-or-change-your-password-windows.md)
-### [Rename your device from Company Portal app](rename-your-device-cpapp.md)
+### [Set or change device password](set-or-change-your-password-windows.md)
 ### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
 ### [What happens if you unenroll your device?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
-### [Remotely lock devices from your Windows 10 device](remote-lock-your-device-cp-app.md) 
+
 
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
 ### [Resolve access point restrictions](resolve-access-point-restrictions.md)
@@ -151,6 +146,11 @@
 #### [I need to enable UAC](you-need-to-enable-uac-windows.md)
 #### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
+
+## Using the Intune Company Portal app for Windows
+### [Install apps from Company Portal](install-apps-cpapp-windows.md)
+### [Remote lock device](remote-lock-your-device-cp-app.md)  
+### [Rename your device](rename-your-device-cpapp.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
