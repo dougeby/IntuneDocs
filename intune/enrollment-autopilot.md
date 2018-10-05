@@ -60,10 +60,6 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
     After adding the **Advanced rule** code, choose **Save**.
 5. Choose **Create**.  
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b3f63876ccd44910bfe4d4f9e1e6ae424e3541e4
 ## Create an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
@@ -147,7 +143,7 @@ You can delete Windows Autopilot devices that aren't enrolled.
 4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 
 ## Using Autopilot in other portals
-If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your Autopilot deployments. When you use Intune and another portal, Intune isn't able to:
+If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your Autopilot deployments. When you use Intune and another portal, Intune isn't able to:  
 
 - Display changes to profiles created in Intune, but edited in another portal
 - Synchronize profiles created in another portal
