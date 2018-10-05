@@ -17,8 +17,9 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 
 ---
 
-# Enroll Windows devices by using the Windows Autopilot
+# Enroll Windows devices by using the Windows Autopilot  
 The Windows Autopilot simplifies enrolling devices. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+
 
 ## Prerequisites
 - [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
@@ -57,7 +58,8 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
     - If you want to create a group that includes all of your Autopilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     After adding the **Advanced rule** code, choose **Save**.
-5. Choose **Create**.
+5. Choose **Create**.  
+
 
 ## Create an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.
@@ -100,8 +102,10 @@ After you've created an Autopilot deployment profile, you can edit certain parts
 > [!NOTE]
 > Changes to the profile are applied to devices assigned to that profile. However, the updated profile won't be applied to a device that has already enrolled in Intune until after the device is reset and reenrolled.
 
-## Alerts for Windows Autopilot unassigned devices  <!-- 163236 -->
+## Alerts for Windows Autopilot unassigned devices  <!-- 163236 -->  
+
 Alerts will show how many Autopilot program devices don't have Autopilot deployment profiles. Use the information in the alert to create profiles and assign them to the unassigned devices. When you click the alert, you see a full list of Windows Autopilot devices and detailed information about them.
+
 
 To see alerts for unassigned devices, in [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Overview** > **Unassigned devices**.  
 
@@ -141,6 +145,7 @@ You can delete Windows Autopilot devices that aren't enrolled.
 
 ## Using Autopilot in other portals
 If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your Autopilot deployments. When you use Intune and another portal, Intune isn't able to:
+
 - Display changes to profiles created in Intune, but edited in another portal
 - Synchronize profiles created in another portal
 - Display changes to profile assignments done in another portal

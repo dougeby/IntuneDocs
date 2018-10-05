@@ -5,8 +5,8 @@ title: Migrate conditional access to Azure portal
 titlesuffix: Microsoft Intune
 description: Reassign the conditional access policies you previously created in the Intune classic portal to the Azure portal.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: article

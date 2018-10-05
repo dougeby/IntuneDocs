@@ -5,8 +5,8 @@ title: Set up your Lookout integration with Microsoft Intune
 titlesuffix:
 description: Learn about integrating Intune with Lookout Mobile Threat Defense to control mobile device access to your corporate resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
