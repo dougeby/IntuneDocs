@@ -31,14 +31,13 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Using a browser protected with Intune policy (Microsoft Edge or Intune Managed Browser), you can ensure corporate websites are always accessed with safeguards in place.  When configured with Intune, protected browesrs can take advantage of the following:
+Using a browser protected with Intune policy (Microsoft Edge or Intune Managed Browser), you can ensure corporate websites are always accessed with safeguards in place.  When configured with Intune, protected browsers can take advantage of the following:
 
-	1. Application protection policies 
-	2. Conditional Access
-	3. Single sign-on
-	4. Application configuration settings 
-	5. Azure application proxy integration
-
+- Application protection policies.
+- Conditional access.
+- Single sign-on.
+- Application configuration settings.
+- Azure application proxy integration.
 
 ## Getting started
 
