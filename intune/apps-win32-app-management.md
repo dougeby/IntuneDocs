@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -96,7 +96,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 3.	When you're finished, select **OK**.
 
 ### Step 4: Configure app installation details
-1.	In the **Properties** pane of the app, select **Program** to configure the app installation and removal commands for the app.
+1.	In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
 2.	Add the complete installation command line to install the app. 
 
     For example, if your app filename is **MyApp123**, add the following:
@@ -111,7 +111,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 ### Step 5: Configure app requirements
 
-1.	In the **Properties** pane of the app, select **Requirements** to configure the requirements that devices must meet before the app is installed.
+1.	In the **Add app** pane, select **Requirements** to configure the requirements that devices must meet before the app is installed.
 2.	In the **Requirements** pane, configure the following information. Some of the values in this pane might be automatically filled in.
     - **Operating system architecture**: Choose the architectures need to install the app.
     - **Minimum operating system**: Select the minimum operating system needed to install the app.
@@ -123,7 +123,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 ### Step 6: Configure app detection rules
 
-1.	In the **Properties** pane of the app, select **Detection rules** to configure the rules to detect the presence of the app.
+1.	In the **Add app** pane, select **Detection rules** to configure the rules to detect the presence of the app.
 2.	In **Rules format** field, select how the presence of the app will be detected. You can choose to either manually configure the detection rules or use a custom script to detect the presence of the app. You must choose at least one detection rule. 
 
     > [!NOTE]
@@ -148,7 +148,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
          
                 ![Screenshot of detection rule pane - folder existence](./media/apps-win32-app-04.png)
         
-            3. **Registry** – Verify based on value, string, integer, or version.
+        3. **Registry** – Verify based on value, string, integer, or version.
             - **Key path** – The full path of the registry entry containing the value to detect.
             - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
             - **Detection method** – Select the type of detection method used to validate the presence of the app.
@@ -156,7 +156,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
             
             **Examples for registry-based detection**
             1.	Check for registry key exists.
-         
+            
                 ![Screenshot of detection rule pane - registry key exists](./media/apps-win32-app-05.png)    
             
             2.	Check for registry value exists (**Not available in preview**).
@@ -182,7 +182,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 ### Step 7: Configure app return codes
 
-1.	In the **Properties** pane of the app, select **Return codes** to add the return codes used to specify either app installation retry behavior or post-installation behavior. Return code entries are added by default during app creation. However, you can add additional return codes or change existing return codes. 
+1.	In the **Add app** pane, select **Return codes** to add the return codes used to specify either app installation retry behavior or post-installation behavior. Return code entries are added by default during app creation. However, you can add additional return codes or change existing return codes. 
 2.	In the **Return codes** pane, add additional return codes, or modify existing return codes.
     - **Failed** – The return value that indicate an app installation failure.
     - **Hard reboot** – The hard reboot return code does not allow next  Win32 apps to be installed on the client without reboot. 
