@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Set up access to your company resources | Microsoft Docs
+title: Set up iOS device access to your company resources | Microsoft Docs
 description: Describes how to get your iOS device managed by Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,36 +29,36 @@ ms.custom: intune-enduser
 ---
 
 
-# Set up access to your company resources
+# Set up iOS device access to your company resources
 
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
-Organizations often require you to get your device managed before you can access proprietary data from it. After a device becomes managed, organizations can push policies and apps to the device through their mobile device management provider. 
+Before you're allowed to access proprietary data from a coporate or personal device, you're required to get your device managed. After your device becomes managed, your organization will assign policies and apps to the device through their mobile device management (MDM) provider. 
 
-To get continuous access to your work or school information from your device, you must configure your device to match policy settings. This article describes how the Intune Company Portal app for iOS helps you enroll, configure, and maintain your device to meet organizational requirements.
+To maintain access to work or school information from your device, you must configure your device to match your organization's preferred settings. This article describes how Company Portal helps you enroll, configure, and maintain your device to meet these requirements.
 
 > [!NOTE]
-> If you're trying to access company email in the Mail app, it's likely that you were prompted to manage your device to keep it secure. Follow the instructions below to get access to your email and other company resources on your iOS device.
+> If you tried to access company email in the Mail app, and received a prompt to get your device managed, you're in the right place. Follow the instructions below to get access to your email and other company resources on your iOS device.
 
 ## What to expect from the Company Portal app
 
 ### Security
-During initial setup, the app requires that you authenticate yourself with your organization. It then informs you of any device settings you must make. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
+During initial setup, the app requires that you authenticate yourself with your organization. It then informs you of any device settings you must update. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.    
 
 ### Protection
-After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. App protection policies like this one are common in organizations, and often require you to uninstall untrusted apps before you can regain access.
+After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. App protection policies like this one are common in organizations. They often require you to uninstall the untrusted app before you can regain access.
 
 ### Setting notifications
 If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, the Company Portal app will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
 
-To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md). 
+To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios). 
 
 ## Before you start
 
-- Once you begin, make sure that you finish the entire process. If you pause for more than a few minutes, setup may end and require you to start over.  
-    - If this process should fail, return to the Company Portal app and try again.  
+- Once you begin enrollment, make sure that you finish the entire process. If you pause for more than a few minutes, setup may end and require you to start over.  
+- If this process should fail, return to the Company Portal app and try again.  
 - Check that your Wi-Fi is working, and that Safari works on your device.
-- Download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md).  
 
 
 ## Using the Company Portal app to set up access to company resources
@@ -72,11 +72,11 @@ To learn more about enrollment, see [What happens when I install the Company Por
 |![Terms and conditions page.](./media/ios-05-cp-enroll-1802.png)|Read and **Accept All** of the Terms and Conditions.|
 |![Set up company access screen. Both management and settings are currently in need of resolution.](./media/ios-06-cp-enroll-1802.png)|Tap on **Begin** to begin the process of making your device able to access company resources. If you can't do this right now, you can **Postpone** the process, but it means you won't be able to get email, documents, and more.|
 |![What can my company see screen.](./media/ios-07-cp-enroll-1802.png)|You can **Learn more** about what your company can see by tapping the link at the bottom. Otherwise, tap **Continue**.|
-|![What's next screen.](./media/ios-08-cp-enroll-1802.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app, and the Company Portal app to complete this process. Tap **Continue**.|
+|![What's next screen.](./media/ios-08-cp-enroll-1802.png)|This screen walks you through what's happening in the setup. You'll spend time in Safari, the Settings app, and the Company Portal app. Tap **Continue**.|
 |![Loading screen after tapping Next on What's next.](./media/ios-09-cp-enroll-1802.png)|Wait for this screen to load.|
-|![Switched out to Safari for enrolling.](./media/ios-7-cp-enroll-1711.png)|You're sent to Safari to get management information for your device.|
+|![Switched out to Safari for enrolling.](./media/ios-cp-sent-to-safari-1808.png)|You're sent to Safari to get management information for your device.|
 |![System prompt to ask for Settings app to be opened.](./media/ios-8-cp-enroll-1711.png)|Tap **Allow** to open the Settings app to download the configuration profile. You install this to let your company manage corporate information on your device.|
-|![Profile opens device settings.](./media/ios-9-cp-enroll-1711.png)|Tap **Install**.|
+|![Scressnhot of the Install Profile screen in device settings.](./media/ios-9-cp-enroll-1711.png)|Tap **Install**.|
 |![Installing profile modal dialog from bottom of screen.](./media/ios-10-cp-enroll-1711.png)|Tap **Install**.|
 |![Profile is installing loading screen.](./media/ios-11-cp-enroll-1711.png)|Wait for this screen to load.|
 |![Profile management warning screen.](./media/ios-12-cp-enroll-1711.png)|This warning, written by Apple, lets you know more about what types of actions could be taken on a device under management. Find out more about [what information your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
@@ -97,4 +97,4 @@ To learn more about enrollment, see [What happens when I install the Company Por
 > [!Note]
 > You may have a few more steps to complete before your device is fully managed. Find out more about [enrolling your device using telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is using Apple's Device Enrollment Program, find out more [here](enroll-your-device-dep-ios.md).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
