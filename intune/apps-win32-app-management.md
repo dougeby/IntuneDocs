@@ -20,22 +20,24 @@ ms.custom: intune-azure
 
 # Intune Standalone - Win32 app management (Public Preview)
 
-Intune standalone will allow greater Win32 app management capabilities. While it is possible to continue to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This document provides an overview of the Intune Win32 app management feature, troubleshooting information, known issues and future backlog items.
+Intune standalone will allow greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This document provides an overview of the Intune Win32 app management feature and troubleshooting information.
 
 ## Prerequisites for public preview
 
-- Support for Windows 10 RS1 (1607) and above
-    - Enterprise 
-    - Pro (in preview)
-    - Edu (in preview) 
-- Windows 10 client needs to be domain-joined to an Azure Active Directory configured with Intune Auto enroll
-- Deploy Win32 apps to small number of users and devices for public preview. Content size is capped at 8GB.
+- Windows 10 client needs to be: 
+    - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
+    - enrolled in Intune (MDM-managed)
+- Windows application size is capped at 8GB per app in the public preview. 
+
+> [!NOTE]
+> We are currently testing Pro and Education editions of Windows 10 version 1607 and will be happy to hear your feedback.
+
 
 ## Prepare the Win32 app content for upload
 
-Use the [Microsoft Intune Win32 App Packaging Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
+Use the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
 
-You can download the [Microsoft Intune Win32 App Packaging Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
+You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
 
 ### Available command-line parameters 
 
