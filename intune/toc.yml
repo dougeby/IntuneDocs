@@ -269,6 +269,8 @@
           href: apps-add-office365-macos.md
       - name: Build your app (LOB)
         items:
+        - name: Win32 app management
+          href: apps-win32-app-management.md
         - name: Android LOB apps
           href: lob-apps-android.md
         - name: iOS LOB apps
@@ -318,6 +320,8 @@
         href: company-portal-app.md
       - name: Configure the Managed Browser
         href: app-configuration-managed-browser.md
+      - name: Configure Outlook
+        href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
       - name: Selectively wipe apps

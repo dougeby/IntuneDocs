@@ -78,7 +78,7 @@ Windows Information Protection (WIP) policies will be able to be deployed withou
 As the Microsoft Intune admin, you'll be able to upload a custom brand image which will be displayed as a background image on user's profile page in the Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
 
 ### Group Windows Autopilot-enrolled devices by correlator ID <!-- 2075110 -->
-Intune will support grouping Windows devices by a correlator ID when enrolled using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. Intune will automatically set the [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) to equal "OfflineAutopilotprofile-<correlator ID>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID via the enrollmentprofileName attribute for offline Autopilot enrollments. 
+Intune will support grouping Windows devices by a correlator ID when enrolled using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. Intune will automatically set the [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) to equal "OfflineAutopilotprofile-\<correlator ID\>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID via the enrollmentprofileName attribute for offline Autopilot enrollments. 
 
 
 ### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
@@ -102,7 +102,7 @@ Azure Active Directory will have a terms of use feature that you can use instead
 ### Intune will maintain the Office localized language when updating Office on end users machines <!-- 2971030 -->
 When Intune installs Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations. 
 
-<!-- 1809 start -->
+<!-- 1809 start -->  
 
 ### Intune APP data transfer settings on iOS MDM enrolled devices <!-- 2244713 -->
 You'll be able to separate the control of Intune APP data transfer settings on iOS MDM enrolled devices from specifying the enrolled user's identity. Admins not using the IntuneMAMUPN will not observe a behavior change. When this functionality is available, admins using the IntuneMAMUPN to control data transfer behavior on enrolled devices should review the new settings and update their APP settings as needed.
@@ -121,8 +121,7 @@ Autopilot devices will synchronize every 12 hours instead of every 24 hours.
 Updates to the Intune landing page will include new and changed monitoring tiles and charts for better data visualization. The **Mobile apps** node will change to **Client apps**.
 
 ### Increased end-user access using the Company portal app <!-- 772203 -->
-End users will be able to access key account actions, such as password reset and their AAD profile, from the Company portal app.
-
+End users will be able to access key account actions, such as password reset and their AAD profile, from the Company portal app.  
 
 <!-- 1808 start -->
 
