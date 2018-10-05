@@ -50,7 +50,7 @@ Install apps on your device from the Company Portal app for Windows.
 
  Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
-## Share apps with others
+## Share apps with others  
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
 
 1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
