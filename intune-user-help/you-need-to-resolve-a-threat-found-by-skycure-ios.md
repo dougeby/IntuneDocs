@@ -40,13 +40,9 @@ Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service th
 * Sync corporate files with OneDrive
 * Access company apps
 
-This article describes how to recognize SEP Mobile threat alerts and what to do to resolve them. 
+This article describes how to regain access to your company's resources when SEP Mobile detects a security or app threat.  
 
-## How to resolve   
-
-Regain access to your company's resources when SEP Mobile detects a security or app threat.  
-
-### Virus or security threat is detected  
+## Virus or security threat is detected  
 
 1. When you attempt to access company email or websites, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).
 
@@ -57,7 +53,7 @@ Regain access to your company's resources when SEP Mobile detects a security or 
 
     ![Example screenshot of the Company Portal device page, showing the SEP Mobile warning.](./media/CP-lookout-virus-banner-1808.png)
 
-### App threat detected 
+## App threat detected 
 
 If you install an app that's seen as a threat to your device, you'll receive a notification within the SEP Mobile app. If the affected app remains on your device, you'll be unable to access company resources.  
 
