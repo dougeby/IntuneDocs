@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,9 +40,9 @@ Symantec Endpoint Protection (SEP) Mobile is a Mobile Threat Defender service th
 * Sync corporate files with OneDrive
 * Access company apps
 
-This article describes how to recognize SEP Mobile threat alerts and what to do to resolve them. 
+This article describes how to regain access to your company's resources when SEP Mobile detects a security or app threat.  
 
-## Resolve virus or security threat  
+## Virus or security threat is detected  
 
 1. When you attempt to access company email or websites, you'll receive a message like the one shown in the screenshot below. Tap the **device management portal** link to open the [Company Portal website](https://portal.manage.microsoft.com/devices).
 
@@ -51,11 +51,13 @@ This article describes how to recognize SEP Mobile threat alerts and what to do 
 2. Select your device.  
 3. Read the warning that appears below your device. It will instruct you to open SEP Mobile to fix the virus or security threat.    
 
-## Resolve an app threat  
+    ![Example screenshot of the Company Portal device page, showing the SEP Mobile warning.](./media/CP-lookout-virus-banner-1808.png)
+
+## App threat detected 
 
 If you install an app that's seen as a threat to your device, you'll receive a notification within the SEP Mobile app. If the affected app remains on your device, you'll be unable to access company resources.  
 
 To resolve, select the app from the list of threats in SEP Mobile. Then follow the on-screen instructions to remove and uninstall the app.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). 
+Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 

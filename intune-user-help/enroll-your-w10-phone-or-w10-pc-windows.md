@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll your Windows 10 device in Intune | Microsoft Docs
-description: Describes how to enroll a Windows 10 mobile or desktop device in Intune
+title: Enroll your Windows 10 device in Intune management | Microsoft Docs
+description: Describes how to get a Windows 10 mobile or desktop device managed in Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

@@ -129,7 +129,6 @@
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
 
-
 ### [Fixing common issues with Windows](troubleshoot-your-device-windows.md)
 ### [Resolve access point restrictions](resolve-access-point-restrictions.md)
 #### [My Windows 10 device won't enroll](troubleshoot-your-windows-10-device-windows.md)
@@ -147,10 +146,11 @@
 #### [I need to update Windows](you-need-to-update-os-build-version-windows.md)
 #### [I need to turn on Windows Defender](turn-on-defender-windows.md)
 
-## Using the Intune Company Portal app for Windows
-### [Install apps from Company Portal](install-apps-cpapp-windows.md)
-### [Remote lock device](remote-lock-your-device-cp-app.md)  
-### [Rename your device](rename-your-device-cpapp.md)
+## Using the Intune Company Portal app for Windows 
+### [Check device access](check-device-access-windows-cpapp.md)
+### [Install apps from Company Portal app](install-apps-cpapp-windows.md) 
+### [Remote lock device from Company Portal app](remote-lock-your-device-cp-app.md)   
+### [Rename your device from Company Portal app](rename-your-device-cpapp.md) 
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
