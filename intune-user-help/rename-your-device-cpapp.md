@@ -36,19 +36,26 @@ Rename a device to make it easier to recognize from other devices. The Company P
 
 ## Rename device from **Device details** page  
 To rename a device:
-1. Open the Company Portal app.
-2. In the **My devices** section, select the device you want to rename.
-3. On the **Device details** page, go to the top, right-corner and select the **Rename** pencil icon. 
-4. Type in the new name and click **Rename**. The device name updates immediately in the app. 
+1. Open the Company Portal app and go to **My devices**.  
+
+    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Select the device you want to rename.
+3. On the **Device details** page, go to the top, right-corner and select the **Rename** pencil icon.  
+
+     ![Example screenshot of the Company Portal app for Windows, Device details page, highlighting the Rename pencil icon.](./media/1809_Rename_CPapp_Windows_icon.png) 
+4. Type in the new name and click **Rename**. The device name updates immediately in the app.  
+
+     ![Example screenshot of the Company Portal app for Windows, Device details page, Rename popup field.](./media/1808_RenameApp_Popup.png)  
 
 ## Rename device from device context menu
-1. On the **Home** page of the Company Portal app, go down to **My Devices**.
-2. Right-click or press and hold the device you want to rename.
+1. On the **Home** page of the Company Portal app, go to **My Devices**.
+
+    ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
+2. Right-click or press and hold a device to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+
+    ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename", "Remove", and "Check access" actions.](./media/1809_DeviceContextMenu_Windows_CP.png)    
 3. Select **Rename**.  
-
-     ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename" and "Remove" actions.](./media/1808_oldDeviceContextMenu_Windows_CP.png)  
-
-4. Type in the new name and select **Rename**. The device name updates immediately in the app.  
+4. Type in a new name and select **Rename**. The device name updates immediately in the app.  
 
      ![Example screenshot of the Company Portal app for Windows, Home page. Rename popup field appears over device where user can type in new name and click Rename or Cancel.](./media/1808_RenameApp_Popup.png)  
 

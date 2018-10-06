@@ -44,7 +44,112 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->   
-  
+
+## Week of October 1, 2018
+
+### App management
+
+#### User account access of Intune apps on managed Android and iOS devices <!-- 1248496 -->
+As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. 
+
+#### Outlook Mobile app configuration policy <!--1828527 -->
+You can now create an Outlook Mobile app configuration policy for iOS and Android. Additional configuration settings will be added as they are enabled for the Outlook Mobile app.
+
+#### Office 365 Pro Plus language packs <!-- 1833450 -->
+As the Intune admin, you will be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
+
+####  Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
+The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix* and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
+
+#### Windows 10 app deployment using Intune <!-- 2309001 -->
+Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. ​Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the cloud. This feature is currently in public preview and we expect to add significant new capabilities to the feature over the next few months. 
+
+
+### Device configuration
+
+#### Create DNS suffixes in VPN configuration profiles on devices running Windows 10<!-- 1333668 -->
+When you create a VPN device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** platform > **VPN** profile type), you enter some DNS settings. With this update, you can also enter multiple **DNS suffixes** in Intune. When using DNS suffixes, you can search for a network resource using its short name, instead of the fully qualified domain name (FQDN). This update also lets you change the order of the DNS suffixes in Intune.
+[Windows 10 VPN settings](vpn-settings-windows-10.md#dns-settings) lists the current DNS settings.
+Applies to: Windows 10 devices
+
+#### Support for always-on VPN for Android enterprise work profiles <!-- 1333705 -->
+In this update, you can use Always-on VPN connections on Android enterprise devices with managed work profiles. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
+You can enable Always-on VPN in **Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **Device restrictions** > **Connectivity** settings.
+
+#### Issue SCEP certificates to user-less devices <!-- 1744554 -->
+Currently, certificates are issued to users. With this update, SCEP certificates can be issued to devices, including user-less devices such as kiosks (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **SCEP certificate** for profile). 
+Other updates include:
+- The **Subject** property in an SCEP profile is now a custom textbox and can include new variables. 
+- The **Subject alternative name (SAN)** property in an SCEP profile is now a table format and can include new variables. In the table, an admin can add an attribute and fill out the value in a custom textbox. The SAN will support the following attributes: 
+  - DNS
+  - Email address
+  - UPN
+
+  These new variables can be added with static text in a custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+
+  > [!NOTE]
+  > Curly brackets, semicolons, and pipe symbols “ { } ; | ” will not work in the static text of the SAN. Curly brackets must only enclose one of the new device certificate variables to be accepted for either `Subject` or `Subject alternative name`. 
+
+New device certificate variables:  
+
+```
+"{{AAD_Device_ID}}",
+"{{Device_Serial}}",
+"{{Device_IMEI}}",
+"{{SerialNumber}}",
+"{{IMEINumber}}",
+"{{AzureADDeviceId​}}",
+"{{WiFiMacAddress}}",
+"{{IMEI}}",
+"{{DeviceName}}",
+"{{FullyQualifiedDomainName}}",
+"{{MEID}}",
+```
+
+> [!NOTE]
+>  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+>  -  When specifying device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device. 
+
+[Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile) lists the current variables when creating an SCEP configuration profile. 
+
+Applies to: Windows 10 and later and iOS, supported for Wi-Fi
+
+#### Remotely lock uncompliant devices <!-- 2064495 -->
+When a device is not compliant, you can create an action on the compliance policy that locks the device remotely. In Intune > **Device compliance**, create a new policy, or select an existing policy > **Properties**. Select **Actions for noncompliance** > **Add**, and choose to remotely lock the device.
+Supported on: 
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile 
+- Windows Phone 8.1 and later 
+
+#### Windows 10 and later Kiosk profile improvements in the Azure portal <!-- 2748224 -->
+This update includes the following improvements to the Windows 10 Kiosk device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Kiosk preview** for profile type): 
+- Currently, you can create multiple kiosk profiles on the same device. With this update, Intune will support only one kiosk profile per device. If you still need multiple kiosk profiles on a single device, you can use a Custom URI.
+- In a **Multi-app kiosk** profile, you can select the application tile size and order for the **Start menu layout** in the application grid. If you prefer more customization, you can continue to upload an XML file.
+- The Kiosk Browser settings are moving into the **Kiosk** settings. Currently, the **Kiosk web browser** settings have their own category in the Azure portal.
+Applies to: Windows 10 and later
+
+
+
+
+### Device enrollment
+
+#### Apply Autopilot profile to enrolled Win 10 devices not already registered for Autopilot <!-- 1558983 -->
+You can apply Autopilot profiles to enrolled Win 10 devices that have not already been registered for Autopilot. In the Autopilot profile, choose the **Convert all targeted devices to Autopilot** option to automatically register non-Autopilot devices with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will provision it.
+
+#### Create and assign multiple Enrollment Status  Page profiles to Azure AD groups <!-- 2526564 -->
+You can now [create and assign](windows-enrollment-status.md) multiple Enrollment Status Page profiles to Azure ADD groups.
+
+### Device management
+
+#### Restricts apps, and block access to company resources on Android devices <!-- 2451462  -->  
+In **Device compliance** > **Policies** > **Create policy** > **Android** > **System Security**, there is a new setting under the *Device Security* section, named **Restricted apps**. The **Restricted apps** setting uses a compliance policy to block access to company resources if certain apps are installed on the device. The device is considered non-compliant until the restricted apps are removed from the device.
+Applies to: 
+- Android
+
+
+
 
 ## Week of September 24, 2018
 
@@ -110,11 +215,11 @@ This feature applies to:
 - Windows 10 and later
 - Windows Holographic for Business
 
-#### Zscaler is an available connection for VPN profiles on iOS <!-- 1769858 eeready -->
+#### Zscaler is an available connection for VPN profiles on iOS <!-- 1769858 -->
 When you create an iOS VPN device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **iOS** platform > **VPN** profile type), there are several connection types, including Cisco, Citrix, and more. This update adds Zscaler as a connection type. 
 [VPN settings for devices running iOS](vpn-settings-ios.md) lists the available connection types.
 
-#### FIPS mode for Enterprise Wi-Fi profiles for Windows 10 <!-- 1879077 eeready -->
+#### FIPS mode for Enterprise Wi-Fi profiles for Windows 10 <!-- 1879077 -->
 You can now enable Federal Information Processing Standards (FIPS) mode for Enterprise Wi-Fi profiles for Windows 10 in the Intune Azure portal. Be sure FIPS mode is enabled on your Wi-Fi infrastructure if you enable it in your Wi-Fi profiles.
 [Wi-Fi settings for Windows 10 and later devices in Intune](wi-fi-settings-windows.md) shows you how to create a Wi-Fi profile.
 
@@ -221,7 +326,7 @@ The enhanced jailbreak detection setting states now appears in all compliance re
 
 ### Role-based access control
 
-#### Scope tags for policies <!--1081974 eeready-->
+#### Scope tags for policies <!--1081974 -->
 You can [create scope tags](scope-tags.md) to limit access to Intune resources. Add a scope tag to a role assignment and then add the scope tag to a configuration profile. The role will only have access to resources with configuration profiles that have matching scope tags (or no scope tag).
 
 ## Week of August 14, 2018
@@ -277,7 +382,7 @@ To create the profile, open **Device configuration** > **Profiles** > **Create P
 
 Applies to Windows 10 and later.
 
-#### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 eeready -->
+#### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
 The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
 
 To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
@@ -466,7 +571,7 @@ The Company Portal branding page has a new layout, messages, and tooltips.
 
 ### Device configuration
 
-#### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 eeready ! -->
+#### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 ! -->
 With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
 
 - iOS
@@ -490,7 +595,7 @@ With this update, the graphical user chart is back, and shown in the Azure porta
 #### Support for Windows Autopilot enrollment without user authentication <!-- 1165118 wnready -->
 Intune now supports Windows Autopilot enrollment without user authentication. This is a new option in the Windows Autopilot deployment profile "Autopilot Deployment mode" set to "Self-Deploying".  The device must be running Windows 10 Insider Preview Build 17672 or later and possess a TPM 2.0 chip to successfully complete this type of enrollment. Since no user authentication is required, you should only assign this option to devices that you have physical control over.
 
-#### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 eeready -->
+#### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 -->
 A new configuration setting is available to set the language and region for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.
 
 #### New setting for configuring device keyboard <!-- 1821768 -->
@@ -509,7 +614,7 @@ Applies to: Android devices 6.0 and higher, with the updated Company Portal app
 #### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
 You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device configuration** > **Profiles** > **Create profile** > **Platform** = **Windows 10 or later** > **Profile type** = **Device restrictions** > **Configure** > **Windows Spotlight** > **Consumer features**. 
 
-#### Uninstall the latest from Windows 10 software updates <!-- 1732948 eeready -->
+#### Uninstall the latest from Windows 10 software updates <!-- 1732948 -->
 Should you discover a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
 
 #### Search all devices for IMEI and serial number <!-- 1793685 -->
@@ -589,7 +694,7 @@ If an end user uninstalls a required app, Intune automatically reinstalls the ap
 
 ### Device configuration
 
-####  Device profile chart and status list show all devices in a group <!-- 1449153 eeready -->
+####  Device profile chart and status list show all devices in a group <!-- 1449153 -->
 When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
 
 With this update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) only shows the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
@@ -639,7 +744,7 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
-####  Block camera and screen captures on Android for Work <!-- 1098977 eeready-->
+####  Block camera and screen captures on Android for Work <!-- 1098977 -->
 Two new properties are available to block when you configure device restrictions for Android devices: 
 - Camera: Blocks access to all cameras on the device
 - Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
@@ -658,7 +763,7 @@ Devices enrolled using the macOS Company Portal are considered "Not User Approve
 
 ### Device management
 
-#### Advanced Threat Protection (ATP) and Intune are fully integrated <!-- EEready 1629303 -->
+#### Advanced Threat Protection (ATP) and Intune are fully integrated <!-- 1629303 -->
 
 [Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) conditional access policy can then block access to different apps within your organization.
 
@@ -714,7 +819,7 @@ The Intune Company Portal app for Windows 10 has been updated with the [Fluent D
 
 ## Week of April 16, 2018
 
-#### Use Cisco AnyConnect client for iOS <!-- EEready 1333708 -->
+#### Use Cisco AnyConnect client for iOS <!-- 1333708 -->
 
 When you create a new VPN profile for iOS, there are now two options: **Cisco AnyConnect** and **Cisco Legacy AnyConnect**. Cisco AnyConnect profiles support 4.0.7x and newer versions. Existing iOS Cisco AnyConnect VPN profiles are labeled **Cisco Legacy AnyConnect**, and continue to work with Cisco AnyConnect 4.0.5x and older versions, as they do today.
 
