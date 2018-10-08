@@ -47,9 +47,9 @@ Company Portal currently supports devices running the following versions of Wind
 * Windows 8.1 RT
 * Windows 8.1
 
-Other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens),are supported in the Company Portal. However, these versions are not covered in this article because they are for very specific uses.
+Other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens), are supported in the Company Portal. However, these versions are not covered in this article because they are for very specific uses.
 
-## Setup your device in the Company Portal
+## Set up your device in the Company Portal
 - [Get my Windows device managed in Company Portal](enroll-your-device-in-intune-windows.md)
 - [What does it mean to get my device *managed*?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [What info can my company see on my device?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
