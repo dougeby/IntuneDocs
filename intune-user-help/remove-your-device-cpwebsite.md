@@ -46,6 +46,6 @@ To remove your device:
 
     ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)   
 
-4. A message appears to warn you that you are about to remove your device. Select **Remove* to confirm.  
+4. A message appears to warn you that you are about to remove your device. Select **Remove** to confirm.  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
