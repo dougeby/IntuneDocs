@@ -52,9 +52,6 @@ Depending on the app type, the app can be installed on a Windows 10 device in on
 - **Device Context**: When an app is deployed in device context, the managed app will be installed directly to the device by Intune.
     - Only modern line-of-business apps and Online licensed Microsoft store for business apps can be deployed in device context and will only support the Required intent.
 
-> [!Note]
-> Deploying MSI over MDM in device context is not supported yet on Windows 10 devices.
-
 When an app is deployed in device context, the installation will only succeed when targeted to a device that supports device context. In addition, deploying in device context supports the following conditions:
 - If an app is deployed in device context and targeted to a user, the installation will fail with the following status and error displayed in the admin console:
     - Status: Failed.
