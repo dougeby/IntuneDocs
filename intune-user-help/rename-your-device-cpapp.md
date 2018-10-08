@@ -49,7 +49,7 @@ Complete the following step to remove a device from the **Device details** page 
      ![Example screenshot of the Company Portal app for Windows, Device details page, Rename popup field.](./media/1808_RenameApp_Popup.png)  
 
 ## Rename device from device context menu  
-Complete the following step to remove a device from its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+Complete the following step to remove a device through the [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) actions.  
 
 1. On the **Home** page of the Company Portal app, go to **My Devices**.
 
