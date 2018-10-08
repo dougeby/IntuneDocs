@@ -35,7 +35,7 @@ Rename a device to make it easier to recognize from other devices. The Company P
 * Android  
 
 ## Rename device from **Device details** page  
-Complete the following step to remove a device from the **Device details** page in the app.  
+Complete the following step to remove a device from the Company Portal **Device details** page. 
 
 1. Open the Company Portal app and go to **My devices**.  
 
