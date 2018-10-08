@@ -41,7 +41,7 @@ Remote lock is supported on devices running:
   * Windows Phone 8.1 (if the device already had a passcode set) 
   
 ## Remote lock device
-Complate the following steps to lock your device from the Company app.  
+Complete the following steps to lock your device from the Company app.  
 
 1. From the **Home** page of the Company Portal app, go to **My Devices** and select the device that you want to lock.
 
@@ -50,7 +50,7 @@ Complate the following steps to lock your device from the Company app.
 
    ![Screenshot of Company Portal app, Device details page, highlighting Remote lock icon.](./media/1804_remote_lock_Windows_CPapp_05.png)  
 
-3. Select **Lock** to confirm that you want to lock the device. The app will attempt to lock your device and redirect you to the Home page.  
+3. Select **Lock** to confirm that you want to lock the device. The app will try to lock your device and redirect you to the **Home** page.  
 
 
    ![Screenshot of Company Portal app, Device details page, Remote lock confirmation prompt.](./media/1804_remote_lock_Windows_CPapp_06.png)  
