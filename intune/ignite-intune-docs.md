@@ -7,7 +7,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 
 ms.topic: article
 ms.prod:
@@ -50,7 +50,7 @@ We've updated and created some new quickstarts. Complete the following quickstar
 
 ## Contribute to docs
 - [Become an Intune docs contributor](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Top Intune doc contributors this month](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2018-10-31&type=c)  
+- [Top Intune doc contributors this month](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
 
 ## Start using Intune
 - [Licenses that include Intune](licenses.md)
