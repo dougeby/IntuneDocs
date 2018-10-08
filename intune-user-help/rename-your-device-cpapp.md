@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,8 @@ Rename a device to make it easier to recognize from other devices. The Company P
 * Android  
 
 ## Rename device from **Device details** page  
-To rename a device:
+Complete the following step to remove a device from the **Device details** page in the app.  
+
 1. Open the Company Portal app and go to **My devices**.  
 
     ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
@@ -47,11 +48,13 @@ To rename a device:
 
      ![Example screenshot of the Company Portal app for Windows, Device details page, Rename popup field.](./media/1808_RenameApp_Popup.png)  
 
-## Rename device from device context menu
+## Rename device from device context menu  
+Complete the following step to remove a device from its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+
 1. On the **Home** page of the Company Portal app, go to **My Devices**.
 
     ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
-2. Right-click or press and hold a device to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
+2. Right-click or press and hold a device to open its context menu.  
 
     ![Example screenshot of the Company Portal app for Windows, Home page. Device context menu is visible in the **My Devices** section of the page and shows "Rename", "Remove", and "Check access" actions.](./media/1809_DeviceContextMenu_Windows_CP.png)    
 3. Select **Rename**.  
