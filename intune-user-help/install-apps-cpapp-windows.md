@@ -2,7 +2,7 @@
 # required metadata
 
 title: Installing apps from Intune Company Portal app for Windows
-description: Learn how to install and share apps from the Company Portal app
+description: Learn how to install and share apps from the Company Portal app for Windows
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -48,9 +48,9 @@ Install apps on your device from the Company Portal app for Windows.
 3. Select an app.   
 4. On the apps details page, click **Install**. After installation is done, you'll see an **Installed** status.  
 
-![The Company Portal app for Windows 10, select app, App details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
-
-![The Company Portal app for Windows 10, app details page, "Installed" status showing after app is installed. Install button changes to read Reinstall.](./media/RS1_AppDetailsPage_Installed_01.png)    
+    ![The Company Portal app for Windows 10, select app, App details page.](./media/RS1_AppDetailsPage_Installed_02.png)  
+    
+    ![The Company Portal app for Windows 10, app details page, "Installed" status showing after app is installed. Install button changes to read Reinstall.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
  Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
