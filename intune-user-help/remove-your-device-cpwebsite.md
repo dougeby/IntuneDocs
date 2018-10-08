@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,18 +33,19 @@ If you decide you no longer want your device to be managed by your company or or
 
 To remove your device:
 
-1. On the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980), tap the __menu__ button ![A small image of the menu button, three horizontal bars stacked in parallel.](/Intune/whats-new/media/CP_hamburger_menu.png), then select __My Devices__.
+1. On the [Company Portal website](https://portal.manage.microsoft.com), select the __Menu__ button > __Devices__.  
 
-   ![An image of the Company Portal website with an expanded side menu on the left side of the screen, with Home, All Apps, My Devices, Helpdesk, and Sign out buttons.](/media/iwp-expanded-sidebar.png)
+2. Select the device you want to remove.  
 
-2. On the __My Devices__ page, select the name of the device you want to remove.
+    ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png) 
 
-    ![A screenshot of the My Device page, with a couple of unidentified devices above the banner prompt to enroll unlisted devices or identify unidentified ones.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Select **Remove**. If the remove option isn't visible at the top of your page, select **More (…)** > **Remove**.  
 
-3. The device will open in a popup window. Tap the **Remove** button.
+   ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
+  
 
-   ![All options for a selected device on the Company Portal website, including Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/iwp-screen-with-all-options.png)
+    ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)   
 
-4. Read the warning message, and then tap **Remove** to remove your device from the Company Portal.
+4. A message appears to warn you that you are about to remove your device. Select **Remove* to confirm.  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
