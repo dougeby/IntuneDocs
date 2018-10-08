@@ -5,8 +5,8 @@ title: Pradeo Mobile Threat Defense connector with Intune
 titleSuffix: Intune on Azure
 description: Set up Pradeo Mobile Threat Defense connector with Intune.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/27/2018
 ms.topic: article

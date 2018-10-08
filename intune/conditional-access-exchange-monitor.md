@@ -5,8 +5,8 @@ title: Monitor Exchange conditional access in Microsoft Intune
 titlesuffix:
 description: Monitor conditional access compliance for on-premises Exchange and Exchange Online through the Intune Azure portal.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article

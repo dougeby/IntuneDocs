@@ -5,8 +5,8 @@ title: Symantec connector with Microsoft Intune
 titlesuffix:
 description: Learn about integrating Intune with Symantec Endpoint Protection Mobile to control mobile device access to your corporate resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article

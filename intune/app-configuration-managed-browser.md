@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using a policy-protected browser
+# Manage Internet access using protected browser policies with Microsoft Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -41,10 +41,24 @@ Using a browser protected with Intune policy (Microsoft Edge or Intune Managed B
 
 ## Getting started
 
-A policy-enabled browser (Microsoft Edge or Intune Managed Browser) can be downloaded from public app stores for use in your organization. 
+You can apply these settings to:
+
+- Devices that are enrolled with Intune
+- Enrolled with another MDM product
+- Unmanaged devices
+
+If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
+While Managed Browser or Edge are not managed by Intune, they cannot access data from other Intune-managed applications. 
+
+The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.
+
+You can create protected browser policies for the following device types:
+
+-   Devices that run Android 4 and later
+
+-   Devices that run iOS 10.0 and later
 
 >[!IMPORTANT]
->As of October 2017, the Intune Managed Browser app on Android app supports only devices running Android 4.4 and later. The Intune Managed Browser app on iOS will support only devices running iOS 9.0 and later.
 >Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
     
 

@@ -2,12 +2,12 @@
 # required metadata
 
 title: Enroll your Windows 10 device in Intune | Microsoft Docs
-description: Enroll a Windows 10 1607 or higher device into Intune
+description: Enroll a Windows 10, version 1607 or higher, device into Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/22/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
