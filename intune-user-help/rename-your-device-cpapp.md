@@ -37,7 +37,7 @@ Rename a device to make it easier to recognize from other devices. The Company P
 ## Rename device from **Device details** page  
 Complete the following step to remove a device from the Company Portal **Device details** page. 
 
-1. Open the Company Portal app and go to **My devices**.  
+1. Open the Company Portal app and go to **My Devices**.  
 
     ![Example screenshot of the Company Portal app for Windows, Home page, highlighting the My Devices section.](./media/1809_CheckAccess_Context_Select_Device.png)  
 2. Select the device you want to rename.
