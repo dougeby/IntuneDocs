@@ -246,7 +246,7 @@ Using an elevated command prompt, run one of the following commands.
     wmic product where name="Windows Intune" call uninstall
 
 > [!TIP]
-> Client unenrollment will leave a stale sever-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
+> Client unenrollment will leave a stale server-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
 
 ### Check the unenrollment status
 
