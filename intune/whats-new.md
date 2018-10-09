@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/09/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -48,6 +48,9 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of October 1, 2018
 
 ### App management
+
+#### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
+On iOS devices, Intune admins can block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user receives a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, are blocked and device users will not see them. Device users will only see the dialog message once. 
 
 #### User account access of Intune apps on managed Android and iOS devices <!-- 1248496 -->
 As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. 
