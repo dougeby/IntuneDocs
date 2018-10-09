@@ -151,5 +151,13 @@ If you aren't interested in mobile device management, you can use Autopilot in o
 - Synchronize profile assignments done in another portal
 - Display changes to the device list that were made in another portal
 
+## Windows Autopilot redeploy
+
+If you're upgrading old Windows versions that don't support Autopilot registration, you can use an offline Autopilot profile. Autopilot can help during a clean install of Windows 10 1809 or greater. As part of the offline profile, you can specify a correlator ID. 
+
+WARNING: Because the correlator ID is not pre-listed in Intune, users can choose to enroll under any correlator ID they want. If the user creates a correlator ID matching an Autopilot or Apple DEP profile name, the device will be added to any dynamic Azure AD device group based off the enrollmentProfileName attribute. To avoid this conflict:
+- Always create dynamic group rules matching against the *entire* enrollmentProfileName value
+- Never name Autopilot or Apple DEP profiles beginning with "OfflineAutopilotprofile-".
+
 ## Next steps
 After you configure Windows Autopilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
