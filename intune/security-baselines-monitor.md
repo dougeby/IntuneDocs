@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger 
 ms.author: mandia
 manager: dougeby
-ms.date: 9/12/2018
+ms.date: 10/9/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -44,12 +44,12 @@ Monitoring the baseline gives you insight into the security state of your device
 
     INSERT IMAGE WITH DEVICES
 
-  The following status are available:
+    The following status are available:
 
-  - **Matches baseline**: All the settings in the baseline match the Microsoft-recommended settings. 
-  - **Does not match baseline**: At least one setting in the baseline doesn't match the Microsoft-recommended settings.
-  - **Misconfigured**: At least one setting is not properly configured. This means the setting is in a conflict, error, or pending state.
-  - **Not applicable**: At least one setting is not applicable, and thus is not applied.
+    - **Matches baseline**: All the settings in the baseline match the Microsoft-recommended settings. 
+    - **Does not match baseline**: At least one setting in the baseline doesn't match the Microsoft-recommended settings.
+    - **Misconfigured**: At least one setting is not properly configured. This means the setting is in a conflict, error, or pending state.
+    - **Not applicable**: At least one setting is not applicable, and thus is not applied.
 
 4. Select one of that statuses that has devices. For example, select the **Device does not match baseline** status:
 
@@ -58,6 +58,10 @@ Monitoring the baseline gives you insight into the security state of your device
 5. A list of all the devices with that status is shown. You can select a specific device to get more details:
 
     INSERT IMAGE
+
+> [!NOTE]
+> When a property is set to **Not configured** in the baseline, the setting is ignored, and no restrictions are enforced. The property isn't shown in any reporting.
+
 
 ## Monitor the profile
 
