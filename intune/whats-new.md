@@ -880,7 +880,7 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 Apple has just released macOS 10.14. Subsequently, Intune will move to support macOS 10.12 and higher in December 2018. 
 
-### How does this affect me?
+#### How does this affect me?
 
 Starting in December, end users on devices with macOS 10.11 and prior won’t be able to use the Company Portal to enroll into Intune. They will need to upgrade their device to macOS 10.12 or higher and upgrade the Company Portal app to the latest version to continue to receive support and new features. 
 
@@ -894,14 +894,14 @@ macOS versions 10.12 and higher are currently supported on:
 
 After December, end users who have devices other than the ones listed above will not be able to access the latest version of the Company Portal app for macOS. Existing enrolled devices running unsupported versions below macOS 10.12 will continue to be managed and listed in the Intune Admin Console.
 
-### What do I need to do to prepare for this change?
+#### What do I need to do to prepare for this change?
 
-Request your end users to upgrade their devices to a supported OS version before December 2018. 
+- Request your end users to upgrade their devices to a supported OS version before December 2018. 
 - Check your Intune reporting in the Intune on Azure console, to see what devices or users may be affected. Go to Devices > All devices and filter by OS. You can add in additional columns to help identify who in your organization has devices running macOS 10.11. 
 - If you are using hybrid mobile device management (MDM), go to Assets and Compliance > Devices in the Configuration Manager console, right-click the columns to add the Operating System and Client Version columns, and sort by OS. Note that hybrid MDM is now deprecated, and you should move to Intune on Azure as soon as possible. 
  
-Additional Information
-[https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
+#### Additional Information
+For more information, see [Enroll your macOS device in Intune with the Company Portal app](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
  
 
 ### Plan for Change: New Intune support experience for Premier customers 
@@ -910,9 +910,9 @@ As a Microsoft Premier customer, you can currently use the Microsoft Premier Onl
 #### How does this affect me?
 After December 3, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you will not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Support requests created in the MPO portal cannot be viewed in the Azure portal, so you should stop creating support requests in MPO.  
 
-If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see Move from Hybrid Mobile Device Management to Intune on Azure.
+If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
 
-Note that only users with Global Administrator, Intune Service Administrator and Service Support Administrator roles can create support tickets in the Azure portal.
+Note that only users with Global Administrator, Intune Service Administrator, and Service Support Administrator roles can create support tickets in the Azure portal.
 
 #### What can I do to prepare for this change?
 - Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
@@ -921,7 +921,8 @@ Note that only users with Global Administrator, Intune Service Administrator and
 - Click on Additional Information for more information and helpful links.
 
 #### Additional Information
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+For more information, see the [Microsoft Intune support team blog post](https://aka.ms/IntuneSupport_MPO_to_Azure).
+
 
 ### Take action: Please update your Android device restriction or compliance policy password settings in Intune
 Intune will be removing the available password type “device default” for Android 4.4 and higher devices. Due to differences in Android platforms and device defaults, that policy is often treated as optional by the device. To clear up confusion on when this setting is enforced on Android, we’ll remove this setting from the UI in an upcoming release. 
