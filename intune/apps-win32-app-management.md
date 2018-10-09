@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,10 +24,11 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 
 ## Prerequisites for public preview
 
+- Windows 10 version 1607 or later (Enterprise)
 - Windows 10 client needs to be: 
     - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
     - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8GB per app in the public preview. 
+- Windows application size is capped at 8GB per app in the public preview 
 
 > [!NOTE]
 > We are currently testing Pro and Education editions of Windows 10 version 1607 and will be happy to hear your feedback.

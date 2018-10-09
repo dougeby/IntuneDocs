@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -212,7 +212,7 @@ Additionally, apps can override these Azure AD settings at runtime. To do this, 
 
 ### If your app does not use ADAL
 
-If your app does not use ADAL, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD. You do not have to specify any values for the ADAL settings listed above.
+As mentioned above, the Intune App SDK uses [Azure Active Directory Authentication Library](https://github.com/AzureAD/azure-activedirectory-library-for-objc) for its authentication and conditional launch scenarios. It also relies on ADAL to register the user identity with the MAM service for management without device enrollment scenarios. If **your app does not use ADAL for its own authentication mechanism**, the Intune App SDK will provide default values for ADAL parameters and handle authentication against Azure AD. You do not have to specify any values for the ADAL settings listed above. Any authentication mechanism, if it exists, used by your app will be shown on top of the ADAL prompts. 
 
 ## Configure settings for the Intune App SDK
 
