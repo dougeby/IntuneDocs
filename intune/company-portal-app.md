@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ Enter your company's support infomation to provide your employee with a contact 
 
 
 ## Company branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background.		
+You can customize your Company Portal with your company logo, company name, theme color and background. In order to quickly preview branding configuration without a test device, you can to go to [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Note that the logo you upload will be used for email templates.		
 
 ### Theme color
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
