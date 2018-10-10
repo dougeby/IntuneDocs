@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -131,7 +131,10 @@ To create these policies, browse to **Client apps** > **App protection policies*
 
 ![Screenshot of the Add an policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
 
-For iOS apps to be considered "Managed," the **IntuneMAMUPN** configuration policy setting needs to be deployed for each app. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+For iOS, additional app configuration settings are required to target APP settings to apps on Intune enrolled devices:
+- **IntuneMAMUPN** must be configured for all MDM managed applications.  For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** must be configured for all 3rd Party and LOB MDM managed applications. The **IntuneMAMDeviceID** should be configured to the device ID token. For example, `key=IntuneMAMDeviceID, value={{deviceID}}`. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+- If only the **IntuneMAMDeviceID** is configured, the Intune APP will consider the device as unmanaged.  
 
 > [!NOTE]
 > For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
