@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 10/09/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
