@@ -49,6 +49,9 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### App management
 
+#### Access to key profile properties using the company portal app <!-- 772203 -->
+End users can now access key account properties and actions, such as password reset, from the Company portal app. 
+
 #### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
 On iOS devices, Intune admins can block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user receives a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, are blocked and device users will not see them. Device users will only see the dialog message once. 
 
@@ -67,6 +70,11 @@ The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.app
 #### Windows 10 app deployment using Intune <!-- 2309001 -->
 Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. ​Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the cloud. This feature is currently in public preview and we expect to add significant new capabilities to the feature over the next few months. 
 
+#### End user device and app content menu <!-- 2771453 -->
+End users can now use the context menu on device and apps to trigger common actions like renaming a device or checking compliance. 
+
+#### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
+End users will now be able to trigger app and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
 
 ### Device configuration
 
@@ -143,6 +151,9 @@ You can apply Autopilot profiles to enrolled Win 10 devices that have not alread
 
 #### Create and assign multiple Enrollment Status  Page profiles to Azure AD groups <!-- 2526564 -->
 You can now [create and assign](windows-enrollment-status.md) multiple Enrollment Status Page profiles to Azure ADD groups.
+
+#### Migration from Device Enrollment Program to Apple Business Manager in Intune <!--2748613-->
+Apple Business Manager (ABM) works in Intune and you can upgrade your account from Device Enrollment Program (DEP) to ABM. The process in Intune is the same. To upgrade your Apple account from DEP to ABM, go to [ https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817).
 
 ### Device management
 

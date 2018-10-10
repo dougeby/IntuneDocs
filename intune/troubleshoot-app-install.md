@@ -3,10 +3,10 @@ title: Troubleshoot app installation issues
 titlesuffix: Microsoft Intune
 description: Use the Microsoft Intune troubleshooting pane to help you troubleshoot app installation issues.
 keywords:
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
