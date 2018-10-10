@@ -49,7 +49,7 @@ Intune integrates with other services that focus on security, including Windows 
 In Intune, we aim to accomplish this goal by publishing a set of Microsoft recommended “Security baselines” (**Intune** > **Security baselines**).  An administrator will be able to create security policies directly from these baselines, and then deploy them to their users. They can also customize the best practice recommendations to meet the needs of their organization. Intune makes sure that devices stay in compliance with these baselines, and notifies administrators of users or devices that aren't in compliance.
 
 ### Remove ability for admins to wipe personal devices and reset passcodes <!-- 2934699 -->
-To ease user fears about company admins having the ability to wipe their personal devices, the [wipe](devices-wipe.md#wipe) and [Reset passcode](device-passcode-reset.md) remote actions will no longer apply to personal devices. Switch the device ownership type to corporate to enable these actions for devices your organization owns.
+To ease user fears about company admins having the ability to wipe their personal devices, the [wipe](devices-wipe.md#wipe) and [Reset passcode](device-passcode-reset.md) remote actions will no longer apply to personal devices. Users can reset their passcodes and wipe their devices from any device using the Company Portal Website.
 
 ### Autopilot support for hybrid Azure Active Directory joined devices <!-- 1048100 -->
 You'll be able to set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature.
