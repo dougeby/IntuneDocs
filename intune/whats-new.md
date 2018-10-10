@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### App management
 
-#### Increased end user access using the Company portal app <!-- 772203 -->
+#### Access to key profile properties using the company portal app <!-- 772203 -->
 End users can now access key account properties and actions, such as password reset, from the Company portal app. 
 
 #### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
