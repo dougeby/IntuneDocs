@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### App management
 
-### Increased end user access using the Company portal app <!-- 772203 -->
+#### Increased end user access using the Company portal app <!-- 772203 -->
 End users can now access key account properties and actions, such as password reset, from the Company portal app. 
 
 #### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
@@ -70,10 +70,10 @@ The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.app
 #### Windows 10 app deployment using Intune <!-- 2309001 -->
 Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. ​Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the cloud. This feature is currently in public preview and we expect to add significant new capabilities to the feature over the next few months. 
 
-### End user device and app content menu <!-- 2771453 -->
+#### End user device and app content menu <!-- 2771453 -->
 End users can now use the context menu on device and apps to trigger common actions like renaming a device or checking compliance. 
 
-### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
+#### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
 End users will now be able to trigger app and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
 
 ### Device configuration
