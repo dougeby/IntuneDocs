@@ -25,11 +25,11 @@ ms.custom: intune-azure
 
 # Manage and use Windows Holographic and HoloLens devices with Intune
 
-Microsoft Intune includes many features to help manage devicees that run Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Using Intune, you can confirm that devices are compliant with your organization's rules, you can deploy and manage apps on the device, and you customize the device by adding a VPN or WiFi profile. Another key feature is to use the device as a Kiosk, and run a specific app, or a specific set of apps.
+Microsoft Intune includes many features to help manage devices that run Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Using Intune, you can confirm that devices are compliant with your organization's rules, and you customize the device by adding a VPN or WiFi profile. Another key feature is to use the device as a Kiosk, and run a specific app, or a specific set of apps.
 
-To help manage and customize your devices running Windows Holographic for Business, you can use the tasks in this article. For example, you can manage software updates, enable Windows Hello for Business, and more.
+The tasks in this article help you manage, customize, and secure your devices running Windows Holographic for Business, including software updates and using Windows Hello for Business.
 
-To manage devices that run Windows Holographic with Intune, you must create an Edition Upgrade profile. This upgrade profile upgrades the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can buy the Commercial Suite to get the required license for the upgrade. For more information, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md).
+To use Windows Holographic devices with Intune, create an Edition Upgrade profile. This upgrade profile upgrades the devices from Windows Holographic to Windows Holographic for Business. For the Microsoft HoloLens, you can buy the Commercial Suite to get the required license for the upgrade. For more information, see [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md).
 
 ## Azure Active Directory
 
