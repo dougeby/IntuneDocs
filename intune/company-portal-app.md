@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -86,3 +86,30 @@ Upload your company logo to make it visible throughout the Intune user experienc
 |**Show company name next to logo**| Select this option to show the company name you entered next to the uploaded logo. |
 
 After you save your changes, you can choose **Preview your settings in the Intune Web Portal** at the top of the blade to see how your configurations will look.
+
+## Windows Company Portal keyboard shortcuts
+
+End users can trigger naivation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+
+The following keyboard shortcuts are available in the Windows Company Portal app.
+
+| Area | Description | Keyboard shortcut |
+|:------------------:|:--------------:|:-----------------:|
+| Navigation menu | Navigation | Ctrl+M |
+|  | Home | Ctrl+H |
+|  | All apps | Ctrl+A |
+|  | Installed apps | Ctrl+I |
+|  | Send feedback | Ctrl+F |
+|  | My profile | Ctrl+U |
+|  | Settings | Ctrl+T |
+| Home - Device tile | Rename | F2 |
+|  | Remove | Ctrl+D or Delete |
+|  | Check access | Ctrl+M or F9 |
+| Device details | Rename | F2 |
+|  | Remove | Ctrl+D or Delete |
+|  | Check access | Ctrl+M or F9 |
+| App details | Install | Ctrl+I |
+
+## Next steps
+
+- [Manually add the Windows 10 Company Portal app by using Microsoft Intune](store-apps-company-portal-app.md)
