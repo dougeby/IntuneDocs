@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,9 @@ ms.custom: intune-azure
 Use app configuration policies in Microsoft Intune to supply settings to Android work profile apps. The app developer must expose Android managed app configuration settings in order to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!Note]  
-> Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
+> Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.<p></p>
+> As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.
+> For Microsoft Word, Microsoft Excel, Microsoft PowerPoint, you must use Android 16.0.9327.1000 and later.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
@@ -74,6 +76,14 @@ You can choose the following options if you choose variable as the value type:
 - User ID — for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
 - User Name —for example, **John Doe**
 
+### Allow only configured organization accounts in multi-identity apps 
+ For Android devices, use the following key/value pairs:
+ | **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Values** | <ul><li>One or more <code>;</code> delimited UPNs.</li><li>Only account(s) allowed are the managed user account(s) defined by this key.</li><li> For Intune enrolled devices, the <code>{{userprincipalname}}</code> token may be used to represent the enrolled user account.</li></ul> |
+
+   > [!NOTE]
+   > You must use Outlook for Android 2.2.222 or later when allowing only configured organization accounts with multi-identity. 
 
 ## Enter the JSON editor
 
