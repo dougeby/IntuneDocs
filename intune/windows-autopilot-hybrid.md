@@ -29,7 +29,8 @@ ms.custom: intune-azure
  
 
 ## Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
-You can use Windows Autopilot to set up Intune enrollment for hybrid Azure Active Directory joined devices.
+You can use Windows Autopilot to set up Intune enrollment for hybrid Azure Active Directory joined devices. To do so, follow the steps below.
+
 ## Set up hybrid Azure Active Directory devices
 1.	Follow the steps in the [Tutorial: Configure hybrid Azure Active Directory join for managed domans](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
 2.	Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
@@ -38,19 +39,28 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 **Prerequisites**
 - Azure Active Directory Premium subscription ([trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune subscription
+
 ### Configure automatic MDM enrollment
 1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
+
    ![Screenshot of the Azure portal](./media/auto-enroll-azure-main.png)
+
 2. Select **Mobility (MDM and MAM)**.
+
    ![Screenshot of the Azure portal](./media/auto-enroll-mdm.png)
+
 3. Select **Microsoft Intune**.
+
    ![Screenshot of the Azure portal](./media/auto-enroll-intune.png)
+
 4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
    - **Some** - Select the **Groups** with the users that you want to be set up by using Windows Autopilot on Hybrid Active Directory joined devices.
    - **All** - Use this option if you want all users to be set up using Windows Autopilot on Hybrid Active Directory joined devices.
       > [!IMPORTANT]
       > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
+
    ![Screenshot of the Azure portal](./media/auto-enroll-scope.png)
+
 5. Use the default values for the following URLs:
     - **MDM Terms of use URL**
     - **MDM Discovery URL**
