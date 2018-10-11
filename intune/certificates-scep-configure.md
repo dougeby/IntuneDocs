@@ -41,9 +41,11 @@ The NDES server must be domain joined to the domain that hosts the CA, and not b
 
   - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS is not required, but you can issue and revoke certificates when it's enabled.
 
-- **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
+- **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
   - Allows devices to receive certificates using an Internet connection.
   - Is a security recommendation when devices connect through the Internet to receive and renew certificates.
+  
+- **Azure AD Application Proxy** (optional): The Azure AD Application Proxy can be used instead of a dedicated Web Application Proxy (WAP) Server to publish the NDES Server to the Internet. For more information, see [How to provide secure remote access to on-premises applications](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### Additional
 
