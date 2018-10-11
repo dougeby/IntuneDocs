@@ -30,7 +30,7 @@ ms.custom: intune-azure
 # Tutorial: Protect Exchange Online email on managed devices
 
 Learn about using app protection policies with conditional access to protect Exchange Online, even when devices aren't enrolled in a device management solution like Intune. In this tutorial, you'll learn how to: 
-  - Create an Intune app protection policy for the Outlook app. You'll limit what the user can do with app data by preventing "Save As" and restriction cut, copy, and paste actions. 
+  - Create an Intune app protection policy for the Outlook app. You'll limit what the user can do with app data by preventing "Save As" and restrict cut, copy, and paste actions. 
   - Create Azure Active Directory (Azure AD) conditional access policies that allow only the Outlook app to access company email in Exchange Online. You'll also require multi-factor authentication (MFA) for Modern authentication clients, like Outlook for iOS and Android.
 
 ## Prerequisites
@@ -38,7 +38,6 @@ Learn about using app protection policies with conditional access to protect Exc
     - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
     - Intune subscription ([free trial](free-trial-sign-up.md))
     - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 
 ## Sign in to Intune
 
