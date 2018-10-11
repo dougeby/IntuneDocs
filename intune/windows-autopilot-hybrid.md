@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
  
 
-## Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
+# Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
 You can use Windows Autopilot to set up Intune enrollment for hybrid Azure Active Directory joined devices. To do so, follow the steps below.
 
 ## Set up hybrid Azure Active Directory devices
@@ -68,7 +68,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 6. Choose **Save**.
 By default, two-factor authentication isn't enabled for the service. However, two-factor authentication is recommended when registering a device. To enable two-factor authentication, configure a two-factor authentication provider in Azure AD and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 ## Install the connector
-Download [ODJConnectorSetupMSI.msi]( tp://download.microsoft.com/download/1/E/B/1EB59BBC-4C33-459B-8A1C-DD3EF98D7B51/ODJConnectorSetupMsi.msi) to a computer running Windows Server 2016 that has access to the Internet and your on-premise Azure Active Directory.
+Download [ODJConnectorSetupMSI.msi]( tp://download.microsoft.com/download/1/E/B/1EB59BBC-4C33-459B-8A1C-DD3EF98D7B51/ODJConnectorSetupMsi.msi) to a computer running Windows Server 2016 that has access to the Internet and your on-premises Azure Active Directory.
 ## Create a dynamic device group
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups** > **New group**.
 2. In the **Group** blade:
