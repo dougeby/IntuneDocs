@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 ## Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
 You can use Windows Autopilot to set up Intune enrollment for hybrid Azure Active Directory joined devices.
-Set up hybrid Azure Active Directory devices
+## Set up hybrid Azure Active Directory devices
 1.	Follow the steps in the [Tutorial: Configure hybrid Azure Active Directory join for managed domans](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
 2.	Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 ## Enable Windows 10 automatic enrollment
