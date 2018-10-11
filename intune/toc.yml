@@ -40,6 +40,8 @@
   items:
   - name: Protect email on managed devices
     href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Protect email on unmanaged devices
+    href: tutorial-protect-email-on-unmanaged-devices.md
 - name: Scenario implementation guides
   items:
   - name: Protect Exchange Online
