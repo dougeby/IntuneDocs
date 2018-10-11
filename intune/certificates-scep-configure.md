@@ -45,7 +45,7 @@ The NDES server must be domain joined to the domain that hosts the CA, and not b
   - Allows devices to receive certificates using an Internet connection.
   - Is a security recommendation when devices connect through the Internet to receive and renew certificates.
   
-- **Azure AD Application Proxy** (optional): The Azure AD Application Proxy can be used instead of a dedicated Web Application Proxy (WAP) Server to publish the NDES Server to the Internet. The Azure AD Application Proxy is built on Azure and gives you a massive amount of network bandwidth and server infrastructure to have better protection against DDOS attacks and superb availability. Furthermore there is no need to open external firewall ports to your on premises network and no perimeter server is required. All traffic is originated inbound. 
+- **Azure AD Application Proxy** (optional): The Azure AD Application Proxy can be used instead of a dedicated Web Application Proxy (WAP) Server to publish the NDES Server to the Internet. For more information, see [How to provide secure remote access to on-premises applications](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### Additional
 
