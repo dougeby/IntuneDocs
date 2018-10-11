@@ -46,8 +46,8 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 3. Select **Microsoft Intune**.
    ![Screenshot of the Azure portal](../media/auto-enroll-intune.png)
 4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
-   - **Some** - Select the **Groups** containing the users that you want to be set up by using Windows Autopilot on Hybrid Active Directory joined devices.
-   - **All** - Use this if you want all users to be set up using Windows Autopilot on Hybrid Active Directory joined devices.
+   - **Some** - Select the **Groups** with the users that you want to be set up by using Windows Autopilot on Hybrid Active Directory joined devices.
+   - **All** - Use this option if you want all users to be set up using Windows Autopilot on Hybrid Active Directory joined devices.
       > [!IMPORTANT]
       > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
    ![Screenshot of the Azure portal](../media/auto-enroll-scope.png)
@@ -56,7 +56,7 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
     - **MDM Discovery URL**
     - **MDM Compliance URL**
 6. Choose **Save**.
-By default, two-factor authentication is not enabled for the service. However, two-factor authentication is recommended when registering a device. To enable two-factor authentication, configure a two-factor authentication provider in Azure AD and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+By default, two-factor authentication isn't enabled for the service. However, two-factor authentication is recommended when registering a device. To enable two-factor authentication, configure a two-factor authentication provider in Azure AD and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 ## Install the connector
 Download [ODJConnectorSetupMSI.msi]( tp://download.microsoft.com/download/1/E/B/1EB59BBC-4C33-459B-8A1C-DD3EF98D7B51/ODJConnectorSetupMsi.msi) to a computer running Windows Server 2016 that has access to the Internet and your on-premise Azure Active Directory.
 ## Create a dynamic device group
@@ -112,7 +112,7 @@ It will take around 15 minutes for the dynamic device group’s profile status t
 1. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. Then select **Create Profile**.
 2. Enter the following properties:
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. (This is optional, but recommended.)
+   - **Description**: Enter a description for the profile.
    - **Platform**: Choose **Windows 10 and later**.
    - **Profile type**: Choose **Domain Join**.
 3.  Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
