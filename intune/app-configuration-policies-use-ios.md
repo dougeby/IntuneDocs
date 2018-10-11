@@ -102,8 +102,10 @@ Microsoft Intune provides configuration settings that are unique to an app. You 
 The \{\{ and \}\} characters are used by token types only and must not be used for other purposes.
 
 ### Allow only configured organization accounts in multi-identity apps 
- For Android devices, use the following key/value pairs:
- | **Key** | IntuneMAMAllowedAccountsOnly |
+
+For Android devices, use the following key/value pairs:
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Values** | <ul><li>**Enabled**: The only account allowed is the managed user account defined by the [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) key.</li><li>**Disabled** (or any value that is not a case insensitive match to **Enabled**): Any account is allowed.</li></ul> |
 

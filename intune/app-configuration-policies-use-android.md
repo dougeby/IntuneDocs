@@ -35,7 +35,7 @@ Use app configuration policies in Microsoft Intune to supply settings to Android
 
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.<p></p>
-> As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.
+> As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.<p></p>
 > For Microsoft Word, Microsoft Excel, Microsoft PowerPoint, you must use Android 16.0.9327.1000 and later.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
@@ -77,8 +77,10 @@ You can choose the following options if you choose variable as the value type:
 - User Name —for example, **John Doe**
 
 ### Allow only configured organization accounts in multi-identity apps 
- For Android devices, use the following key/value pairs:
- | **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+
+For Android devices, use the following key/value pairs:
+
+| **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Values** | <ul><li>One or more <code>;</code> delimited UPNs.</li><li>Only account(s) allowed are the managed user account(s) defined by this key.</li><li> For Intune enrolled devices, the <code>{{userprincipalname}}</code> token may be used to represent the enrolled user account.</li></ul> |
 
