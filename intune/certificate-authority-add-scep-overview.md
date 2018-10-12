@@ -126,6 +126,7 @@ The following third-party certification authorities support Intune:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub open-source version](https://github.com/agerbergt/intune-ejbca-connector)
+- [EverTrust](https://evertrust.fr/en/products/)
 
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 
