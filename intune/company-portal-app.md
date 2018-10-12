@@ -95,7 +95,7 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 
 | Area | Description | Keyboard shortcut |
 |:------------------:|:--------------:|:-----------------:|
-| Navigation menu | Navigation | Ctrl+M |
+| Navigation menu | Navigation | Alt+M |
 |  | Home | Alt+H |
 |  | All apps | Alt+A |
 |  | Installed apps | Alt+I |
