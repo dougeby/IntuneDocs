@@ -92,7 +92,7 @@ Any app that has been integrated with the [Intune App SDK](/intune/app-sdk) or w
 Intune marks all data in the app as either "corporate" or "personal." Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account).
 
 **What are the additional requirements to use Skype for Business?**<br></br>
-See [Skype for Business](https://products.office.com/skype-for-business/it-pros) license requirements. Also, for onprem (but are not hybrid) details about Skype for Business (SfB) and Exchange, see [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910).
+See [Skype for Business](https://products.office.com/skype-for-business/it-pros) license requirements. For on-prem (but not hybrid) details about Skype for Business (SfB) and Exchange, see [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910).
 
 ## App protection features
 
