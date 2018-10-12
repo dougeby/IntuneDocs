@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,11 @@ ms.technology:
 
 # Configure iOS update policies in Intune
 
-Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is only available for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
+Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is available only for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
 
 The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
-This feature supports devices running iOS 10.3 and later.
+This feature supports devices that run iOS 10.3 and later versions. The delay setting is available in iOS 11.3 and later versions.
 
 ## Configure the policy
 1. Sign in to the [Azure portal](https://portal.azure.com).
@@ -40,7 +40,7 @@ This feature supports devices running iOS 10.3 and later.
 4. Enter a name and description for the policy.
 5. Select **Settings**. 
 
-    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. To opt-out of setting a software update delay, enter 0. These update settings will only apply to supervised iOS devices.
+    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. To opt-out of setting a software update delay, enter 0. These update settings will apply only to supervised iOS devices.
 
 6. Select **OK** to save your changes. Select **Create** to create the policy.
 
