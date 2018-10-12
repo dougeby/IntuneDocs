@@ -408,13 +408,14 @@ To validate that the service is running, open a browser, and enter the following
         "{{MEID}}",
         ```
 
-        These variables can be added with static text in a custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+        These variables can be added with static text in a custom value textbox. For example, the common name can be added as `CN = {{DeviceName}}text`.
 
         > [!IMPORTANT]
-        >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
+        >  - In the static text of the subject, curly brackets **{ }** not enclosing a variable will resolve to an error. 
         >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
         >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
         >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail. 
 
 
    - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
@@ -433,8 +434,6 @@ To validate that the service is running, open a browser, and enter the following
         A table format text box that you can customize. The following attributes are available:
 
         - DNS
-        - Email address
-        - User principal name (UPN)
 
         With the **Device** certificate type, you can use the following device certificate variables for the value:  
 
@@ -452,13 +451,14 @@ To validate that the service is running, open a browser, and enter the following
         "{{MEID}}",
         ```
 
-        These variables can be added with static text in the custom value textbox. For example, the DNS attribute can be added as `DNS = {{AzureADDeviceId}}.domain.com`.
+        These variables can be added with static text in the custom value textbox. For example, the DNS attribute can be added as `DNS name = {{AzureADDeviceId}}.domain.com`.
 
         > [!IMPORTANT]
         >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
         >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
         >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
         >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject alternative name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail.  
 
    - **Certificate validity period**: If you ran the `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` command on the issuing CA, which allows a custom validity period, you can enter the amount of remaining time before the certificate expires.<br>You can enter a value that is lower than the validity period in the certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can enter a value of one year, but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
    - **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Enter where the key to the certificate is stored. Choose from one of the following values:
