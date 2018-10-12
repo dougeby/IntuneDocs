@@ -96,12 +96,12 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 | Area | Description | Keyboard shortcut |
 |:------------------:|:--------------:|:-----------------:|
 | Navigation menu | Navigation | Ctrl+M |
-|  | Home | Ctrl+H |
-|  | All apps | Ctrl+A |
-|  | Installed apps | Ctrl+I |
-|  | Send feedback | Ctrl+F |
-|  | My profile | Ctrl+U |
-|  | Settings | Ctrl+T |
+|  | Home | Alt+H |
+|  | All apps | Alt+A |
+|  | Installed apps | Alt+I |
+|  | Send feedback | Alt+F |
+|  | My profile | Alt+U |
+|  | Settings | Alt+T |
 | Home - Device tile | Rename | F2 |
 |  | Remove | Ctrl+D or Delete |
 |  | Check access | Ctrl+M or F9 |
