@@ -44,13 +44,13 @@ Before you run the App Wrapping Tool, you need to fulfill some general prerequis
 
 * Download the [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) from GitHub.
 
-* A macOS computer that runs OS X 10.8.5 or later and has the Xcode toolset version 5 or later installed.
+* A macOS computer that runs OS X 10.8.5 or later and has the Xcode toolset version 9 or later installed.
 
 * The input iOS app must be developed and signed by your company or an independent software vendor (ISV).
 
   * The input app file must have the extension **.ipa** or **.app**.
 
-  * The input app must be compiled for iOS 8.0. or later.
+  * The input app must be compiled for iOS 10 or later.
 
   * The input app cannot be encrypted.
 

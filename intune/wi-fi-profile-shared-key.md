@@ -75,7 +75,7 @@ The next time each device checks in, the policy is applied, and a Wi-Fi profile 
 
 ## Android or Windows Wi-Fi profile example
 
-The following example includes the XML code for an Android or Windows Wi-Fi profile. 
+The following example includes the XML code for an Android or Windows Wi-Fi profile. The example is provided to show proper format and provide more details. It's only an example, and isn't intended as a recommended configuration for your environment.
 
 > [!IMPORTANT]
 >
@@ -127,7 +127,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 ```
 
 ## EAP-based Wi-Fi profile example
-The following example includes the XML code for an EAP-based Wi-Fi profile:
+The following example includes the XML code for an EAP-based Wi-Fi profile: The example is provided to show proper format and provide more details. It's only an example, and isn't intended as a recommended configuration for your environment.
+
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
