@@ -1100,7 +1100,7 @@ Improvements to the device overview now display enrolled devices but excludes de
 <!-- 961134, 1104426, 1281327, 1333543 -->
 In this release, we’ve made the following improvements to the inventory information collected by devices you manage:
  
--   For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
+-   For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
 -   When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
 -   We’ve made improvements to the filter used by the **Last Check-in Date** item.
 -   In the device list, you can now display the phone number of corporate owned devices.
@@ -1129,9 +1129,9 @@ In this release, we’ve added new settings for the [Windows 10 device restricti
 <!--1459533 -->    
 In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
  
-Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
-Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
-Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
+-   Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
+-   Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
+-   Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
 For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
 
 
