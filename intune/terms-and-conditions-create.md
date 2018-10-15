@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2018
+ms.date: 10/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,11 @@ ms.custom: intune-azure
 As an Intune admin, you can require that users accept your company's terms and conditions before they can use the Company Portal to enroll their devices and access resources like company apps and email. Configuration of terms and conditions is optional.
 
 You can create multiple sets of terms and assign them to different groups, such as to support different languages.
+
+There are two ways to create your company terms and conditions:
+- by using Intune as described in this article.
+- by using the [Azure Active Directory terms of use feature](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)
+To learn which method is best for you, check out the [Choosing the right Terms solution for your organization blog post](https://go.microsoft.com/fwlink/?linkid=2010506&clcid=0x409). 
 
 ## Create terms and conditions
 Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
