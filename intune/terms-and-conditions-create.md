@@ -61,7 +61,7 @@ Complete these steps to create terms and conditions. The display name and descri
    ![Screenshot of end-user terms and conditions acceptance screen with summary of terms](./media/terms-summary-create.png)
 
    - **Title**: The name for your terms that users see in the Company Portal above the **Summary**.
-   - **Summary of Terms**: Text that explains what it means when users accept the terms. For example, "By enrolling your device, you are agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
+   - **Summary of Terms**: Text that explains what it means when users accept the terms. For example, "By enrolling your device, you're agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
 
 5. Choose **Ok** > **Create**.
@@ -82,7 +82,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 1. In the Azure portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
 2. In the list of terms and conditions, choose the terms you want to assign > **Manage** > **Assignments**.
 ![Screenshot of the Azure portal's Assign Group pane showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
-3. Choose **Select groups to include** > choose the groups you want to assign the terms > **Select**. Dynamic groups cannot be assigned Terms and Conditions.
+3. Choose **Select groups to include** > choose the groups you want to assign the terms > **Select**. Dynamic groups can't be assigned Terms and Conditions.
 4. In the **Assigned Groups** pane, choose **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions need to be accepted only once. Users with multiple devices don't have to accept on each device.
 
 
@@ -96,7 +96,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 You can edit your terms and conditions and manage their versions. Each time you make a significant change to your terms and conditions, you should:
 - increase the version number
 - require users to accept the new terms and conditions
-Keep the current version number if, for example, you are fixing typos or changing formatting.
+Keep the current version number if, for example, you're fixing typos or changing formatting.
 
 1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**.
 
