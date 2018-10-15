@@ -58,5 +58,5 @@ Intune lets you manage your workforce’s devices and apps and how they access y
 
 ## Next steps
 
-[Enrollment options](enrollment-options.md)
+[Set up enrollment for Windows ](intune/windows-enroll.md)
 
