@@ -80,17 +80,17 @@ The following example shows the terms and conditions in the admin console and th
 You can assign terms and conditions to groups of user who must accept them before using the Company Portal.
 
 1. In the Azure portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
-2. In the list of terms and conditions, select the terms you want to assign, and then select **Manage** > **Assignments**.
+2. In the list of terms and conditions, choose the terms you want to assign > **Manage** > **Assignments**.
 ![Screenshot of the Azure portal's Assign Group pane showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
-3. Click **Select groups to include** and select the groups you want to assign the terms, and then click **Select**. Dynamic groups cannot be assigned Terms and Conditions.
-4. In the **Assigned Groups** pane, click **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions need to be accepted only once. Users with multiple devices don't have to accept on each device.
+3. Choose **Select groups to include** > choose the groups you want to assign the terms > **Select**. Dynamic groups cannot be assigned Terms and Conditions.
+4. In the **Assigned Groups** pane, choose **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions need to be accepted only once. Users with multiple devices don't have to accept on each device.
 
 
 ## Monitor terms and conditions
 
 1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**. 
 1. On the Intune pane, choose **Device enrollment** > **Terms and Conditions**.
-2. In the list of terms and conditions, select the terms you want to view acceptance for, and then select **Acceptance Reporting**.
+2. In the list of terms and conditions, choose the terms you want to view acceptance for > **Acceptance Reporting**.
 
 ## Work with multiple versions of terms and conditions
 You can edit your terms and conditions and manage their versions. Each time you make a significant change to your terms and conditions, you should:
@@ -102,7 +102,7 @@ Keep the current version number if, for example, you are fixing typos or changin
 
 2. On the Intune pane, choose **Device enrollment** > **Terms and Conditions** > choose the terms and conditions you want to modify > **Properties**.
 
-4. On the **Properties** pane, select **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, click **Require users to re-accept, and increment the version number to**
+4. On the **Properties** pane, choose **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, choose **Require users to re-accept, and increment the version number to**
 
 4.  Choose **OK** > **Save**.
 
