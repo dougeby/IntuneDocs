@@ -65,8 +65,8 @@ On iOS devices, Intune admins can block the use of 3rd-party keyboards when acce
 #### User account access of Intune apps on managed Android and iOS devices <!-- 1248496 -->
 As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. 
 
-#### Outlook Mobile app configuration policy <!--1828527 -->
-You can now create an Outlook Mobile app configuration policy for iOS and Android. Additional configuration settings will be added as they are enabled for the Outlook Mobile app.
+#### Outlook iOS and Android app configuration policy <!--1828527 -->
+You can now create an Outlook iOS and Android app configuration policy for iOS and Android for on-premises users that leverage Basic authentication with the ActiveSync protocol. Additional configuration settings will be added as they are enabled for the Outlook for iOS and Android.
 
 #### Office 365 Pro Plus language packs <!-- 1833450 -->
 As the Intune admin, you will be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
@@ -161,6 +161,9 @@ You can now [create and assign](windows-enrollment-status.md) multiple Enrollmen
 
 #### Migration from Device Enrollment Program to Apple Business Manager in Intune <!--2748613-->
 Apple Business Manager (ABM) works in Intune and you can upgrade your account from Device Enrollment Program (DEP) to ABM. The process in Intune is the same. To upgrade your Apple account from DEP to ABM, go to [ https://support.apple.com/en-us/HT208817]( https://support.apple.com/en-us/HT208817).
+
+### Alert and enrollment status tabs on the Device enrollment overview page <!--2748656-->
+Alerts and enrollment failures now appear on separate tabs on the Device enrollment overview page.
 
 ### Device management
 
