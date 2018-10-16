@@ -32,7 +32,7 @@ ms.custom: intune-azure; get-started
 This report tells you where in the Company Portal enrollment users are abandoning the enrollment process.
 
 To see the report, choose **Intune** > **Device enrollment** > **Company portal abandonment**.
-Using this abandonment information, you can update your onboarding documents to help users complete enrollment. For example, if many users are quitting at the Terms of Use, you can investigate that area to see what you can do to make it more intuitive for users.
+Using this abandonment information, you can update your onboarding documents to help users complete enrollment. For example, if many users are quitting at the Terms of Use, you might investigate that area and make it more intuitive for users.
 
 ## What is abandonment?
 
@@ -54,7 +54,7 @@ You can filter the date range, operating system, and enrollment section by choos
 
 ### Number and percentage tiles
 
-At the top of the report you can see the number and percentage of abandoned reports in relation to all enrollments.
+At the top of the report, you can see the number and percentage of abandoned reports in relation to all enrollments.
 
 -	Initiated enrollments: The number of enrollments attempted.
 -	Abandoned enrollments: The number of attempted enrollments that didn’t result in a fully enrolled and compliant device.
