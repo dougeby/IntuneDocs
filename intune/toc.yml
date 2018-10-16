@@ -206,7 +206,7 @@
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Abandonment report
-      href: enrollment-report-cp-abandon.md
+      href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
