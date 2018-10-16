@@ -32,9 +32,9 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
 During device setup, the Enrollment Status Page displays installation information on the device. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
-- show installation progress
-- block usage until installation completes
-- specify what a user can do if device setup fails.
+- Show installation progress.
+- Block usage until installation completes.
+- Specify what a user can do if device setup fails.
 
 You can also set the priority order for each profile to account for conflicting profile assignments ot the same user or device.
 
