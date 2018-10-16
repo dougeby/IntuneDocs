@@ -47,7 +47,7 @@ You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://githu
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    Setup folder for all setup files.    |
 |   ` -s <setup_file>`     |    Setup file (such as *setup.exe* or *setup.msi*).    |
-|    `-o <output_file>`     |    Output folder for the generated *.intunewin* file.    |
+|    `-o <output_folder>`     |    Output folder for the generated *.intunewin* file.    |
 |    `-q`       |    Quiet   mode    |
 
 ### Example commands
