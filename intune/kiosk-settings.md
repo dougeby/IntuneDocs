@@ -26,9 +26,11 @@ ms.custom: intune-azure
 
 # Kiosk settings for Windows 10 (and later) in Intune
 
-Kiosk profiles are used to configure Windows 10 devices to run one app, or run multiple apps. When you create a kiosk profile, you also choose if there's a start menu shown, if a web browser is installed, and more.
+On Windows 10 devices, you can use Intune to run these devices as a kiosk. The kiosk can run one app, or run many apps. You can also show and customize a start menu, add different apps, including Win32 apps, add a specific home page to a web browser, and more. 
 
-Intune support one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](custom-settings-windows-10.md).
+Use this steps in this article to create a single-app kiosk, or multi-app kiosk in Intune.
+
+Intune supports one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](custom-settings-windows-10.md).
 
 ## Kiosk settings
 
@@ -37,7 +39,7 @@ Intune support one kiosk profile per device. If you need multiple kiosk profiles
 3. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. This is optional, but recommended.
+   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Select **Windows 10 and later**
    - **Profile type**: Select **Kiosk (Preview)**
 
@@ -54,8 +56,8 @@ When you choose single app kiosk mode, enter the following settings:
 
 - **User logon type**: The apps you add run as the user account you enter. Your options:
 
-  - **Auto logon (Windows 10 version 1803 and later)**: The end user isn't prompted to enter any credentials, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Local user account**: Enter the local (to the device) user account or the Azure AD account (Azure AD domain\user@contoso.com) to run the apps. For kiosks in public-facing environments, a user with the least privilege (such as the local standard user account) should be used.
+  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to logon, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Local user account**: Enter the local (to the device) user account. The account you enter is used to sign in to the kiosk.
 
 - **Application type**: Select **Store app**.
 
@@ -71,17 +73,17 @@ When you choose single app kiosk mode, enter the following settings:
 
   - **Default home page URL**: Enter the default URL shown when the kiosk browser opens or when the browser restarts. For example, enter `http://bing.com` or `http://www.contoso.com`.
 
-  - **Home button**: **Show** or **hide** the kiosk browser's home button. By default, the button is not shown.
+  - **Home button**: **Show** or **hide** the kiosk browser's home button. By default, the button isn't shown.
 
-  - **Navigation buttons**: **Show** or **hide** the forward and back buttons. By default, the navigation buttons are not shown.
+  - **Navigation buttons**: **Show** or **hide** the forward and back buttons. By default, the navigation buttons aren't shown.
 
-  - **End session button**: **Show** or **hide** the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and then opens the default URL. By default, the button is not shown.
+  - **End session button**: **Show** or **hide** the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and then opens the default URL. By default, the button isn't shown.
 
-  - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there is no idle timeout.
+  - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there isn't any idle timeout.
 
   - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `contoso.com*` to open. By default, all websites are allowed.
 
-    To allow specific websites, upload a .csv file that contains a list of the allowed websites. If you don't add a .csv file, all websites are allowed.
+    To allow specific websites, upload a .csv file that includes a list of the allowed websites. If you don't add a .csv file, all websites are allowed.
 
   Select **OK** to save your changes.
 
@@ -95,23 +97,23 @@ When you choose multi app kiosk mode, enter the following settings:
 
 - **User logon type**: The apps you add run as the user account you enter. Your options:
 
-  - **Auto logon (Windows 10 version 1803 and later)**: The end user isn't prompted to enter any credentials, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Local user account**: **Add** the local (to the device) user account or the Azure AD account (Azure AD domain\user@contoso.com) to run the apps. For kiosks in public-facing environments with auto logon enabled, enter a user type with least privileges.
-  - **Azure AD user or group (Windows 10 version 1803 and later)**: Select **Add** to choose Azure AD users or groups from the list. You can select multiple users and group. Choose **Select** to save your changes.
+  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to logon, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Local user account**: **Add** the local (to the device) user account. The account you enter is used to sign in to the kiosk.
+  - **Azure AD user or group (Windows 10 version 1803 and later)**: Select **Add** to choose Azure AD users or groups from the list. You can select multiple users and groups. Choose **Select** to save your changes.
   - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-- **Applications**: Add the apps to run on the kiosk device. Remember, you can add multiple apps.
+- **Applications**: Add the apps to run on the kiosk device. Remember, you can add several apps.
 
-  - **Add store app**: Add an app from the Microsoft Store for Business. If you don't have any apps listed, then you can purchase apps, and [add them to Intune](store-apps-windows.md). For example, you can add Kiosk Browser, Excel, OneNote, and more.
+  - **Add store app**: Add an app from the Microsoft Store for Business. If you don't have any apps listed, then you can buy apps, and [add them to Intune](store-apps-windows.md). For example, you can add Kiosk Browser, Excel, OneNote, and more.
 
-  - **Add Win32 App**: A Win32 app is a traditional desktop app, such as Visual Studio Code or Google Chrome. Enter the following:
+  - **Add Win32 App**: A Win32 app is a traditional desktop app, such as Visual Studio Code or Google Chrome. Enter the following properties:
 
     - **Application name**: Required. Enter a name for the application.
     - **Local path**: Required. Enter the path to the executable, such as `C:\Program Files (x86)\Microsoft VS Code\Code.exe` or `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Application user model ID (AUMID)**: Optional. Enter the Application user model ID (AUMID) of the Win32 app. This setting determine the start layout of the tile on the desktop. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Application user model ID (AUMID)**: Optional. Enter the Application user model ID (AUMID) of the Win32 app. This setting determines the start layout of the tile on the desktop. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
     - **Tile size**: Required. Choose a Small, Medium, Wide, or Large app tile size.
   
-  - **Add by AUMID**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md). Use this option to add Windows apps, such as Notepad or Calculator. Enter the following: 
+  - **Add by AUMID**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md). Use this option to add Windows apps, such as Notepad or Calculator. Enter the following properties: 
 
     - **Application name**: Required. Enter a name for the application.
     - **Application user model ID (AUMID)**: Required. Enter the Application user model ID (AUMID) of the Windows app. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
@@ -128,23 +130,23 @@ When you choose multi app kiosk mode, enter the following settings:
 
   - **Default home page URL**: Enter the default URL shown when the kiosk browser opens or when the browser restarts. For example, enter `http://bing.com` or `http://www.contoso.com`.
 
-  - **Home button**: **Show** or **hide** the kiosk browser's home button. By default, the button is not shown.
+  - **Home button**: **Show** or **hide** the kiosk browser's home button. By default, the button isn't shown.
 
-  - **Navigation buttons**: **Show** or **hide** the forward and back buttons. By default, the navigation buttons are not shown.
+  - **Navigation buttons**: **Show** or **hide** the forward and back buttons. By default, the navigation buttons aren't shown.
 
-  - **End session button**: **Show** or **hide** the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and then opens the default URL. By default, the button is not shown.
+  - **End session button**: **Show** or **hide** the end session button. When shown, the user selects the button, and the app prompts to end the session. When confirmed, the browser clears all browsing data (cookies, cache, and so on), and then opens the default URL. By default, the button isn't shown.
 
-  - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there is no idle timeout.
+  - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there isn't any idle timeout.
 
   - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `contoso.com*` to open. By default, all websites are allowed.
 
-    To allow specific websites, upload a .csv file that contains a list of the allowed websites. If you don't add a .csv file, all websites are allowed.
+    To allow specific websites, upload a .csv file that includes a list of the allowed websites. If you don't add a .csv file, all websites are allowed.
 
   Select **OK** to save your changes.
 
 - **Use alternative Start layout**: Choose **Yes** to enter an XML file that describes how the apps appear on the start menu, including the order of the apps. Use this option if you require more customization in your start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
 
-- **Windows Taskbar**: Choose to **Show** or **hide** the taskbar. By default, the taskbar is not shown.
+- **Windows Taskbar**: Choose to **Show** or **hide** the taskbar. By default, the taskbar isn't shown.
 
 ## Windows Holographic for Business
 
@@ -153,24 +155,24 @@ On Windows Holographic for Business devices, you can configure these devices to 
 #### Single full-screen app kiosks
 Enter the following settings:
 
-- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Mobile Apps](apps-add.md).
+- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Client Apps](apps-add.md).
 
     See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) to get the ID.
 
-- **User account type**: Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account log in associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
+- **User logon type**: Select **Local user accounts** to enter the local (to the device) user account, or a Microsoft Account (MSA) account associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
 
 #### Multi-app kiosks
 Apps in this mode are available on the start menu. These apps are the only apps the user can open.
 
 Enter the following settings:
 
-- **Add managed apps**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md).
-- **Add app by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
-- **Start menu layout**: Enter an XML file that describes how the apps appear on the start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
+- **Add managed apps**: Select an existing managed app you added using [Client Apps](apps-add.md).
+- **Add by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+- **Use alternative Start layout**: Enter an XML file that describes how the apps appear on the start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
 - **User account type**: Add one or more user accounts that can use the apps you add. The supported options include: 
   - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
-  - **Azure AD users**: Requires user credentials to sign in to the device. Use the `domain\user@tenant.com` format.
-  - **Local User Accounts**: Requires user credentials to sign in to the device. 
+  - **Azure AD user or group (Windows 10, version 1803 and later**: Requires user credentials to sign in to the device. Use the `domain\user@tenant.com` format.
+  - **Local user accounts**: **Add** the local (to the device) user account. The account you enter is used to sign in to the kiosk.
 
 When the account signs in, only the apps defined in the configuration are available.
 
