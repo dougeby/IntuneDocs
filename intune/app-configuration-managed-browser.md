@@ -292,18 +292,7 @@ For a list of the settings stored in the app logs, see [Review app protection lo
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
-
 -   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
--   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
-
--   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
-
--   The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
-
--   To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
-
-### Turn off usage data
-Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
 ## Next steps
 
