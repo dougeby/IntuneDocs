@@ -59,7 +59,7 @@ To turn on the enrollment status page, follow the steps below.
 
 ## Set the enrollment status page priority
 
-A device or user might be in multiple  groups and thus have multiple enrollment status page profiles. To deal with such conflicts, you can set the priorities for each profile. If someone has more than one enrollment status page profile, only the profile with the highest priority will be applied.
+A device or user might be in multiple groups and have multiple enrollment status page profiles. To deal with such conflicts, you can set the priorities for each profile. If someone has more than one enrollment status page profile, only the profile with the highest priority will be applied.
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
 2. Hover over the profile in the list.
