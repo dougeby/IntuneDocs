@@ -31,25 +31,36 @@ ms.custom: intune-azure
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup, the enrollment status page displays installation information on the device. Some applications, profiles, and certificates might not be fully installed by the time a user is enrolled. A status page can help users understand the status of their device during and after enrollment. You can turn on the status page for all your users or create profiles to target specific user groups.  You can set profiles to show installation progress, block usage until installation completes, allow resets, and so on.
+During device setup, the Enrollment Status Page displays installation information on the device. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
+- show installation progress
+- block usage until installation completes
+- specify what a user can do if device setup fails.
+You can also set the priority order for each profile to account for conflicting profile assignments ot the same user or device.
+
  
 ## Turn on default enrollment status page for all users
 
-To turn on the enrollment status page for all your end users, follow the steps below.
+To turn on the enrollment status page, follow the steps below.
  
-1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
-2.  In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
-3.  For **Show app and profile installation progress**, choose **Yes**.
-4.  Choose the other settings that you want to turn on and then choose **Save**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+2. In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
+3. For **Show app and profile installation progress**, choose **Yes**.
+4. Choose the other settings that you want to turn on and then choose **Save**.
 
-## Create enrollment status page profile to target specific users
+## Create enrollment status page profile and assign to a group
 
-1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)** > **Create profile**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)** > **Create profile**.
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
 4. Choose the new profile in the **Enrollment Status Page** list.
 5. Choose **Assignments** > **Select groups** > choose the groups that you want to adopt this profile > **Select** > **Save**.
 6. Choose **Settings** > choose the settings you want to apply to this profile > **Save**.
+
+## Set the enrollment status page priority
+
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+2. Hover over the profile in the list.
+3. Using the three vertical dots, drag the profile to the desired position on the list.
 
 
 ## Enrollment status page tracking information
@@ -70,8 +81,9 @@ For device setup, the enrollment status page tracks the following items if they'
     - Per machine Line-of-business (LoB) MSI apps.
     - LoB store apps with installation context = Device.
     - Offline store and LoB store apps with installation context = Device.
-- Connectivity profiles (VPN and Wi-Fi) aren't tracked yet, so always say "0 of 0".
-- Certificates aren't tracked yet, so always say "0 of 0".
+- Connectivity profiles
+    - VPN or Wi-Fi profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
+- Certificate profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
 
 ### Account setup
 For account setup, the enrollment status page tracks the following items:
