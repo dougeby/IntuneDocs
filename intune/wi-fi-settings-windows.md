@@ -56,18 +56,18 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
   - **Unrestricted**: Default. The connection isn't metered and there are no restrictions on traffic.
   - **Fixed**: Use this option if the network is configured with fixed limit for network traffic. After this limit is reached, network access is prohibited.
-  - **Variable**: Used this option if network traffic is costed per byte.
+  - **Variable**: Used this option if network traffic is charged per byte (cost per byte).
 
 - **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
   - **Open (no authentication)**: Only use this option if the network is unsecured.
-  - **WPA/WPA2-Personal**: This is a more secure option, and is commonly-used for Wi-Fi connectivity. For more security, you can also enter a pre-shared key password or network key. 
+  - **WPA/WPA2-Personal**: A more secure option, and is commonly used for Wi-Fi connectivity. For more security, you can also enter a pre-shared key password or network key. 
 
-    - **Pre-shared key**: Optional. Shown when you choose **WPA/WPA2-Personal** as the security type. When your organization's network is setup, you enter the password or network key. Enter this password or network key. Enter a string between 8-64 characters. If your password or network key is 64 characters, enter hexadecimal characters.
+    - **Pre-shared key** (PSK): Optional. Shown when you choose **WPA/WPA2-Personal** as the security type. When your organization's network is set up or configured, a password or network key is also configured. Enter this password or network key for the PSK value. Enter a string between 8-64 characters. If your password or network key is 64 characters, enter hexadecimal characters.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
-  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
+  - **Automatically configure**: Enter the URL pointing to a proxy autoconfiguration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
 ## Enterprise profile
 
@@ -80,9 +80,15 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 - **Connect automatically when in range**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
   - **Connect to more preferred network if available**: If the devices are in range of a more preferred network, then choose **Yes** to use the preferred network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available​** property to **No**.
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available** property to **No**.
 
   - **Connect to this network, even when it is not broadcasting its SSID**: Choose **Yes** for the configuration profile to automatically connect to your network, even when the network is hidden (meaning, its SSID isn't broadcast publicly). Choose **No** if you don't want this configuration profile to connect to your hidden network.
+
+- **Metered Connection Limit**: An administrator can choose how the network's traffic is metered. Applications can then adjust their network traffic behavior based on this setting. Your options:
+
+  - **Unrestricted**: Default. The connection isn't metered and there are no restrictions on traffic.
+  - **Fixed**: Use this option if the network is configured with fixed limit for network traffic. After this limit is reached, network access is prohibited.
+  - **Variable**: Used this option if network traffic is costed per byte.
 
 - **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign-in. Your options are:
   - **Disable**: Disables SSO behavior. The user needs to authenticate to the network separately.
