@@ -39,7 +39,7 @@ Possible configurations are:
 - **Intune Hybrid** - integration of the Intune cloud solution with System Center Configuration Manager. You configure Intune by using the Configuration Manager console. [Set the MDM authority in Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
 
     > [!Important]
-    >Onboarding of new hybrid MDM customers will be blocked starting in November 2018. For more information, see the [MC146431 Plan for Change blog](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/).
+    >Onboarding of new hybrid MDM customers will be turned off in an upcoming release. For more information, see the [MC146431 Plan for Change blog](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/).
 
 - **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Office 365 Admin Center. Includes a subset of the capabilities that are available with Intune Standalone. Set the MDM authority in Office 365 Admin Center.
 
@@ -70,12 +70,12 @@ Scenarios that add a consent to share data are included when:
 - You enable and upload Apple MDM push certificates.
 - You Enable any of the Apple services, such as Device Enrollment Program, School Manager, or Volume Purchasing Program.
 
-In each case, the consent is strictly related to running a mobile device management service, such as confirming that an IT Admin has authorized Google or Apple devices to enroll. Documentation to address what information is shared when the new workflows go live is available from the following locations:
+In each case, the consent is strictly related to running a mobile device management service. For example, confirming that an IT Admin has authorized Google or Apple devices to enroll. Documentation to address what information is shared when the new workflows go live is available from the following locations:
 - [Data Intune sends to Google](https://aka.ms/Data-intune-sends-to-google)
 - [Data Intune sends to Apple](https://aka.ms/data-intune-sends-to-apple)
 
 ## Key Considerations
-After you switch to the new MDM authority, there will likely be transition time (up to eight hours) before the device checks in and synchronizes with the service. You're required to configure settings in the new MDM authority (hybrid) to ensure that enrolled devices will continue to be managed and protected after the change. 
+After you switch to the new MDM authority, there will likely be transition time (up to eight hours) before the device checks in and synchronizes with the service. You're required to configure settings in the new MDM authority (hybrid) to make sure that enrolled devices will continue to be managed and protected after the change. 
 - Devices must connect with the service after the change so that the settings from the new MDM authority (Intune standalone) replace the existing settings on the device.
 - After you change the MDM authority, some of the basic settings (such as profiles) from the previous MDM authority (Intune standalone) will remain on the device for up to seven days or until the device connects to the service for the first time. It's recommended that you configure apps and settings (policies, profiles, apps, etc.) in the new MDM authority (hybrid) as soon as possible and deploy the setting to the user groups that contains users who have existing enrolled devices. As soon as a device connects to the service after the change in MDM authority, it will receive the new settings from the new MDM authority and prevent gaps in management and protection.
 - When the same device categories exist in both Intune and Configuration Manager, any device category assignments for devices are not carried over after you switch to the new MDM authority. To continue using device categories, migrated devices have to be manually added to the appropriate collections after the MDM authority is changed and the devices display in the Configuration Manager console.
@@ -138,7 +138,7 @@ The MDM authority can't be changed back to Unknown. The MDM authority is used by
   > [!IMPORTANT]    
   > Between the time when you change the MDM authority and when the renewed APNs certificate is uploaded to the new authority, new device enrollments and device check-in for iOS devices fail. Therefore, it's important that you review and upload the APNs certificate to the new authority as soon as possible after the change in MDM authority.
 
-- Users can quickly change to the new MDM authority by manually starting a check-in from the device to the service. Users can easily do this change by using the Company Portal app and initiating a device compliance check.
+- Users can quickly change to the new MDM authority by manually starting a check-in from the device to the service. Users can easily make this change by using the Company Portal app and initiating a device compliance check.
 - To validate that things are working correctly after devices have checked-in and synchronized with the service after the change in MDM authority, look for the devices the Configuration Manager console. The devices that were previously managed by Intune are now displayed as managed devices in the Configuration Manager console.    
 - There is an interim period when a device is offline during the change in MDM authority and when that device checks in to the service. To help ensure that the device remains protected and functional during this interim period, the following profiles remain on the device for up to seven days (or until the device connects with the new MDM authority and receives new settings that overwrite the existing ones):
     - E-mail profile
