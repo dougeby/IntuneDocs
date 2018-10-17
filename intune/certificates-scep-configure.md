@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/1/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -101,7 +101,10 @@ In this step, you:
 
    The template must have the following configurations:
 
-   - Enter a friendly **Template display name** for the template.
+   - In **General**:
+   
+       - Confirm that the **Publish certificate in Active Directory** property is **not** checked.
+       - Enter a friendly **Template display name** for the template.
 
    - In **Subject Name**, select **Supply in the request**. (Security is enforced by the Intune policy module for NDES).
 
