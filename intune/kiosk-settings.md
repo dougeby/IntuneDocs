@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/16/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -150,31 +150,50 @@ When you choose multi app kiosk mode, enter the following settings:
 
 ## Windows Holographic for Business
 
-On Windows Holographic for Business devices, you can configure these devices to run in single-app kiosk mode, or multi-app kiosk mode.
+On Windows Holographic for Business devices, you can configure these devices to run in single-app kiosk mode, or multi-app kiosk mode. Some features aren't supported on Windows Holographic for Business.
 
 #### Single full-screen app kiosks
-Enter the following settings:
+When you choose single app kiosk mode, enter the following settings:
 
-- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Client Apps](apps-add.md).
+- **User logon type**: Select **Local user account** to enter the local (to the device) user account, or a Microsoft Account (MSA) account associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
 
-    See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) to get the ID.
+- **Application type**: Select **Store app**.
 
-- **User logon type**: Select **Local user accounts** to enter the local (to the device) user account, or a Microsoft Account (MSA) account associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
+- **App to run in kiosk mode**: Choose **Add a store app**, and select an app from the list.
+
+    Don't have any apps listed? Add some using the steps at [Client Apps](apps-add.md).
+
+    Select **OK** to save your changes.
 
 #### Multi-app kiosks
-Apps in this mode are available on the start menu. These apps are the only apps the user can open.
+Apps in this mode are available on the start menu. These apps are the only apps the user can open. When you choose multi app kiosk mode, enter the following settings:
 
-Enter the following settings:
+- **Target Windows 10 in S mode devices**: Choose **No**. S mode is not supported on Windows Holographic for Business.
 
-- **Add managed apps**: Select an existing managed app you added using [Client Apps](apps-add.md).
-- **Add by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
-- **Use alternative Start layout**: Enter an XML file that describes how the apps appear on the start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
-- **User account type**: Add one or more user accounts that can use the apps you add. The supported options include: 
-  - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
-  - **Azure AD user or group (Windows 10, version 1803 and later**: Requires user credentials to sign in to the device. Use the `domain\user@tenant.com` format.
+- **User logon type**: Add one or more user accounts that can use the apps you add. Your options: 
+
+  - **Auto logon**: Not supported on Windows Holographic for Business.
   - **Local user accounts**: **Add** the local (to the device) user account. The account you enter is used to sign in to the kiosk.
+  - **Azure AD user or group (Windows 10, version 1803 and later)**: Requires user credentials to sign in to the device. Select **Add** to choose Azure AD users or groups from the list. You can select multiple users and groups. Choose **Select** to save your changes.
+  - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-When the account signs in, only the apps defined in the configuration are available.
+- **Applications**: Add the apps to run on the kiosk device. Remember, you can add several apps.
+
+  - **Add Store apps**: Select an existing app you added using [Client Apps](apps-add.md). If you don't have any apps listed, then you can buy apps, and [add them to Intune](store-apps-windows.md).
+  - **Add Win32 app**: Not supported on Windows Holographic for Business.
+  - **Add by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps). Use this option to add Windows apps. Enter the following properties: 
+
+    - **Application name**: Required. Enter a name for the application.
+    - **Application user model ID (AUMID)**: Required. Enter the Application user model ID (AUMID) of the Windows app. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Tile size**: Required. Choose a Small, Medium, Wide, or Large app tile size.
+
+- **Kiosk browser settings**: Not supported on Windows Holographic for Business.
+
+- **Use alternative Start layout**: Choose **Yes** to enter an XML file that describes how the apps appear on the start menu, including the order of the apps. Use this option if you require more customization in your start menu. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
+
+- **Windows Taskbar**: Not supported on Windows Holographic for Business.
+
+
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
