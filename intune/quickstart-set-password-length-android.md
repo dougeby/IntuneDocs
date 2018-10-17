@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Quickstart - Set the required password length for Android devices
+title: Quickstart - Set a required password length for Android devices
 titlesuffix: Microsoft Intune
-description: In this quickstart you will use Microsoft Intune to set the length of the password required for Android devices.
+description: In this quickstart you will use Microsoft Intune to set a length of the password required for Android devices.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Quickstart: Set the required password length for Android devices
+# Quickstart: Set a required password length for Android devices
 
 In this quickstart, you will use Microsoft Intune to require your workforce's Android users to enter a password of a specific length before access is granted to information on their Android devices. 
 
