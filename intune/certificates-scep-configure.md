@@ -101,7 +101,9 @@ In this step, you:
 
    The template must have the following configurations:
 
-   - Enter a friendly **Template display name** for the template.
+   - In **General**, ensure that the **Publish certificate in Active Directory** checkbox is NOT checked.
+
+   - In **General**, enter a friendly **Template display name** for the template.
 
    - In **Subject Name**, select **Supply in the request**. (Security is enforced by the Intune policy module for NDES).
 
