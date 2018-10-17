@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 
 ms.topic: article
 ms.prod:
@@ -158,7 +158,7 @@ For devices that comply to policy rules, you can give those devices access to em
 You can also use device compliance policies without any conditional access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted. When you use compliance policies without conditional access, there are no access restrictions to company resources.
 
 ## Ways to deploy device compliance policies
-You can deploy compliance policy to users in user groups or devices in device groups. When a compliance policy is deployed to a user, all of the user's devices are checked for compliance.
+You can deploy compliance policy to users in user groups or devices in device groups. When a compliance policy is deployed to a user, all of the user's devices are checked for compliance. On Windows 10 version 1803 and newer devices, it's recommended to deploy to device groups *if* the primary user didn't enroll the device. Using device groups in this scenario helps with compliance reporting.
 
 The default **Compliance policy settings** (Azure portal > Device compliance) include:
 
