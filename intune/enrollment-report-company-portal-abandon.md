@@ -63,7 +63,7 @@ At the top of the report, you can see the number and percentage of abandoned rep
 
 ### Line graph
 
-The line graph shows the daily abandonments for each of the four core enrollment categories:
+The line graph shows the daily abandonments for each of the four core enrollment sections:
 
 -	Setup checklist
 -	Platform screens
@@ -72,7 +72,8 @@ The line graph shows the daily abandonments for each of the four core enrollment
 
 ### User abandonment actions
 
-The following tables show the list of user actions that qualify as abandonment.
+The following tables show the list of user actions that qualify as abandonment. To see examples of enrollment screens, you can watch the [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) and [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) enrollment videos. 
+
 
 #### Setup checklist section
 
