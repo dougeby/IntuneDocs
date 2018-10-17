@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -82,7 +82,7 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
 1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open the **Certification Authority** console, right-click **Certificate Templates**, and select **Manage**.
-3. Locate the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
+3. Find the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
 
     > [!NOTE]
     > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
@@ -106,92 +106,91 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
     > For iOS certificate templates, go to the **Extensions** tab, update **Key Usage**, and confirm that **Signature is proof of origin** isn't selected.
 
 10. In **Security**, add the Computer Account for the server where you install the Microsoft Intune Certificate Connector. Allow this account **Read** and **Enroll** permissions.
-11. Select **Apply**, then **OK** to save the certificate template.
-12. Close the **Certificate Templates Console**.
-13. From the **Certification Authority** console, right-click **Certificate Templates**, **New**, **Certificate Template to Issue**. Choose the template that you created in the previous steps, and select **OK**.
-14. For the server to manage certificates on behalf of Intune-enrolled devices and users, use the following steps:
+11. Select **Apply** > **OK** to save the certificate template. Close the **Certificate Templates Console**.
+12. In the **Certification Authority** console, right-click **Certificate Templates** > **New** > **Certificate Template to Issue**. Choose the template that you created in the previous steps. Select **OK**.
+13. For the server to manage certificates on behalf of Intune-enrolled devices and users, use the following steps:
 
     1. Right-click the Certification Authority, choose **Properties**.
     2. On the security tab, add the Computer account of the server where you run the connectors (**Microsoft Intune Certificate Connector** or **PFX Certificate Connector for Microsoft Intune**). Grant **Issue and Manage Certificates** and **Request Certificates** Allow permissions to the computer account.
 
-15. Sign out of the Enterprise CA.
+14. Sign out of the Enterprise CA.
 
 ## Download, install, and configure the certificate connectors
 
 ### Microsoft Intune Certificate Connector
 
-![ConnectorDownload][ConnectorDownload]
+> [!IMPORTANT] 
+> The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA).
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device configuration**, and then select **Certification Authority**.
-4. Select **Add**, and then download the Microsoft Intune Certificate Connector. Save the download to a location where you can access it from the server where you're going to install it.
-5. After the download completes, sign in to the server. Then:
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Certification Authority** > **Add**.
+3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
+
+    ![ConnectorDownload][ConnectorDownload]
+
+4. After the download completes, sign in to the server. Then:
 
     1. Be sure .NET 4.5 Framework or higher is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
     2. Run the installer (NDESConnectorSetup.exe), and accept the default location. It installs the connector to `\Program Files\Microsoft Intune\NDESConnectorUI`. In Installer Options, select **PFX Distribution**. Continue and complete the installation.
     3. By default, the connector service runs under the local system account. If a proxy is required to access the internet, confirm that the local service account can access the proxy settings on the server.
 
-6. The NDES Connector opens the **Enrollment** tab. To enable the connection to Intune, **Sign In**, and enter an account with global administrative permissions.
-7. On the **Advanced** tab, we recommend leaving **Use this computer's SYSTEM account (default)** selected.
-8. **Apply**, and then **Close**.
-9. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few moments, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
+5. The NDES Connector opens the **Enrollment** tab. To enable the connection to Intune, **Sign In**, and enter an account with global administrative permissions.
+6. On the **Advanced** tab, it's recommended to leave **Use this computer's SYSTEM account (default)** selected.
+7. **Apply** > **Close**
+8. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few moments, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
 
 > [!NOTE]
 > TLS 1.2 support is included with the Microsoft Intune Certificate Connector. So if the server with the Microsoft Intune Certificate Connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
 
 ### PFX Certificate Connector for Microsoft Intune
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device configuration**, and then select **Certification Authority**.
-4. Select **Add**, and then download the PFX Certificate Connector for Microsoft Intune. Save the download to a location where you can access it from the server where you're going to install it.
-5. After the download completes, sign in to the server. Then:
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Certification Authority** > **Add**
+3. Download and save the PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
+4. After the download completes, sign in to the server. Then:
 
     1. Be sure .NET 4.6 Framework or higher is installed, as it's required by the PFX Certificate Connector for Microsoft Intune. If .NET 4.6 Framework isn't installed, the installer installs it automatically.
     2. Run the installer (PfxCertificateConnectorBootstrapper.exe), and accept the default location. It installs the connector to `Program Files\Microsoft Intune\PFXCertificateConnector`.
     3. The connector service runs under the local system account. If a proxy is required for internet access, then confirm that the local service account can access the proxy settings on the server.
 
-6. The PFX Certificate Connector for Microsoft Intune opens the **Enrollment** tab after installation. To enable the connection to Intune, **Sign In**, and enter an account with Azure global administrator or Intune administrator permissions.
-7. Close the window.
-8. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few moments, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
+5. The PFX Certificate Connector for Microsoft Intune opens the **Enrollment** tab after installation. To enable the connection to Intune, **Sign In**, and enter an account with Azure global administrator or Intune administrator permissions.
+6. Close the window.
+7. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few moments, a green check mark displays, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
 
 ## Create a trusted certificate profile
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
 
    ![NavigateIntune][NavigateIntune]
 
-3. Enter the following properties:
+2. Enter the following properties:
 
     - **Name** for the profile
     - Optionally set a description
     - **Platform** to deploy the profile to
     - Set **Profile type** to **Trusted certificate**
 
-4. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
+3. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
    > [!NOTE]
    > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
 
    ![ProfileSettings][ProfileSettings]
 
-5. Select **OK**, and then **Create** to save your profile.
-6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
+4. Select **OK** > **Create** to save your profile.
+5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Create a PKCS certificate profile
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
-3. Enter the following properties:
+1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+2. Enter the following properties:
 
     - **Name** for the profile
     - Optionally set a description
     - **Platform** to deploy the profile to
     - Set **Profile type** to **PKCS certificate**
 
-4. Go to **Settings**, and enter the following properties:
+3. Go to **Settings**, and enter the following properties:
 
     - **Renewal threshold (%)**: Recommended is 20%.
     - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
@@ -202,8 +201,8 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
     - **Subject name format**: Set this option to **Common name** unless otherwise required.
     - **Subject alternative name**: Set this option to **User principal name (UPN)** unless otherwise required.
 
-5. Select **OK**, then **Create** to save your profile.
-6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
+4. Select **OK** > **Create** to save your profile.
+5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Create a PKCS imported certificate profile
 
@@ -213,23 +212,22 @@ To import certificates into Intune, you can use the [PowerShell cmdlets provided
 
 After importing the certificates to Intune, create a **PKCS imported certificate** profile, and assign it to Azure Active Directory groups.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
-3. Enter the following properties:
+1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
+2. Enter the following properties:
 
     - **Name** for the profile
     - Optionally set a description
     - **Platform** to deploy the profile to
     - Set **Profile type** to **PKCS imported certificate**
 
-4. Go to **Settings**, and enter the following properties:
+3. Go to **Settings**, and enter the following properties:
 
     - **Intended purpose**: The intended purpose of the certificates that are imported for this profile. An administrator may have imported certificates with different intended purposes (such as authentication, S/MIME signing, or S/MIME encryption). The intended purpose selected in the certificate profile matches the certificate profile with the right imported certificates.
     - **Certificate validity period**: If you didn't change the certificate template, this option may be set to one year.
     - **Key storage provider (KSP)**: For Windows, select where to store the keys on the device.
 
-5. Select **OK**, then **Create** to save your profile.
-6. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
+4. Select **OK** > **Create** to save your profile.
+5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Next steps
 [Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md).
