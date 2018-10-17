@@ -537,7 +537,7 @@ In the enrollment program tokens list, there is a new column showing the number 
 
 ### Device management
 
-#### Google name changes for Android for Work and Play for Work <!--842873 -->
+#### Google name changes for and Play for Work <!--842873 -->
 Intune has updated "Android for Work" terminology to reflect Google branding changes. The terms "Android for Work" and "Play for Work" are no longer be used. Different terminology is used depending on the context:
 - "Android enterprise" refers to the overall modern Android management stack.
 - "Work profile" or "Profile Owner" refers to BYOD devices managed with work profiles.
@@ -710,8 +710,8 @@ Intune admins can set an application launch requirement to enforce a passcode in
 #### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Microsoft Intune will provide the capability to install macOS LOB apps from the Azure portal. You will be able to add a macOS LOB app to Intune after it has been pre-processed by the tool available in GitHub. In the Azure portal, choose **Client apps** from the **Intune** blade. On the **Client apps** blade, choose **Apps** > **Add**. On the **Add App** blade, select **Line-of-business app**. 
 
-#### Built-in All Users and All Devices Group for Android for Work (AFW) app assignment <!-- 1813073 -->
-You can leverage the built-in **All Users** and **All Devices** groups for AFW app assignment. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
+#### Built-in All Users and All Devices Group for Android Enterprise work profile app assignment <!-- 1813073 -->
+You can leverage the built-in **All Users** and **All Devices** groups for Android Enterprise work profile app assignment. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
 
 #### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
 If an end user uninstalls a required app, Intune automatically reinstalls the app within 24 hours rather than waiting for the 7-day re-evaluation cycle.
@@ -739,10 +739,10 @@ With this update, admins can enable Always On for Windows 10 VPN profiles direct
 
 For education profiles, new settings are available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
 
-#### Show caller ID in personal profile - Android for Work <!--1098984 -->
+#### Show caller ID in personal profile - Android Enterprise work profile <!--1098984 -->
 When using a personal profile on a device, end users may not see the caller ID details from a work contact. 
 
-With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+With this update, there is a new setting in **Android Enterprise** > **Device restrictions** > **Work profile settings**:
 - Display work contact caller-id in personal profile
 
 When enabled (not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. 
@@ -768,12 +768,12 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
-####  Block camera and screen captures on Android for Work <!-- 1098977 -->
+####  Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
 Two new properties are available to block when you configure device restrictions for Android devices: 
 - Camera: Blocks access to all cameras on the device
 - Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
 
-Applies to Android for Work.
+Applies to Android Enterprise work profiles.
 
 
 ### Device enrollment
@@ -848,7 +848,7 @@ The Intune Company Portal app for Windows 10 has been updated with the [Fluent D
 When you create a new VPN profile for iOS, there are now two options: **Cisco AnyConnect** and **Cisco Legacy AnyConnect**. Cisco AnyConnect profiles support 4.0.7x and newer versions. Existing iOS Cisco AnyConnect VPN profiles are labeled **Cisco Legacy AnyConnect**, and continue to work with Cisco AnyConnect 4.0.5x and older versions, as they do today.
 
 > [!NOTE]
-> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android for Work, and macOS platforms.
+> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android Enterprise work profiles, and macOS platforms.
 
 #### Jamf-enrolled macOS devices can now register with Intune <!-- 2370684 -->
 
