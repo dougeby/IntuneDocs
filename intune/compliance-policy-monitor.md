@@ -144,6 +144,8 @@ The **Device compliance** > **Setting compliance** report shows you, per complia
 ![See a list of all the settings in the different policies](./media/compliance-policy-monitor/idc-10.png)
 
 When you select a specific setting, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device targeted by that setting.
+  > [!NOTE]
+  > Windows 10 devices that are Azure AD joined may show System Account as a non-compliant user. This is expected behavior and does not affect overall device compliance. 
 
 ## View status of device policies
 
