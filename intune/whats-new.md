@@ -537,7 +537,7 @@ In the enrollment program tokens list, there is a new column showing the number 
 
 ### Device management
 
-#### Google name changes for and Play for Work <!--842873 -->
+#### Google name changes for Android for Work and Play for Work <!--842873 -->
 Intune has updated "Android for Work" terminology to reflect Google branding changes. The terms "Android for Work" and "Play for Work" are no longer be used. Different terminology is used depending on the context:
 - "Android enterprise" refers to the overall modern Android management stack.
 - "Work profile" or "Profile Owner" refers to BYOD devices managed with work profiles.
