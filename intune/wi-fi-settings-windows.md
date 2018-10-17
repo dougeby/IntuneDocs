@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,29 +36,53 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 [Create a device profile](device-profile-create.md).
 
-## Settings for basic and enterprise profiles
+## Basic profile
+
+- **Wi-Fi type**: Choose **Basic**. 
 
 - **Wi-Fi name (SSID)**: Short for service set identifier. This value is the real name of the wireless network that devices connect to. However, users only see the **Connection name** you configure when they choose the connection.
-- **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
-- **Connect automatically when in range​**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
-  - **Connect to more preferred network if available​**: If the devices are in range of a more preferred network, then choose **Yes** to use the preferred network. Choose **No** to use the Wi-Fi network in this configuration profile.
 
-    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available​** property to **No**.
+- **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
+
+- **Connect automatically when in range**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
+
+  - **Connect to more preferred network if available**: If the devices are in range of a more preferred network, then choose **Yes** to use the preferred network. Choose **No** to use the Wi-Fi network in this configuration profile.
+
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available** property to **No**.
 
   - **Connect to this network, even when it is not broadcasting its SSID**: Choose **Yes** for the configuration profile to automatically connect to your network, even when the network is hidden (meaning, its SSID isn't broadcast publicly). Choose **No** if you don't want this configuration profile to connect to your hidden network.
+
+- **Metered Connection Limit**: An administrator can choose how the network's traffic is metered. Applications can then adjust their network traffic behavior based on this setting. Your options:
+
+  - **Unrestricted**: Default. The connection isn't metered and there are no restrictions on traffic.
+  - **Fixed**: Use this option if the network is configured with fixed limit for network traffic. After this limit is reached, network access is prohibited.
+  - **Variable**: Used this option if network traffic is costed per byte.
+
+- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
+  - **Open (no authentication)**: Only use this option if the network is unsecured.
+  - **WPA/WPA2-Personal**: This is a more secure option, and is commonly-used for Wi-Fi connectivity. For more security, you can also enter a pre-shared key password or network key. 
+
+    - **Pre-shared key**: Optional. Shown when you choose **WPA/WPA2-Personal** as the security type. When your organization's network is setup, you enter the password or network key. Enter this password or network key. Enter a string between 8-64 characters. If your password or network key is 64 characters, enter hexadecimal characters.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
   - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
-## Settings for basic profiles only
+## Enterprise profile
 
-- **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
-  - **Open (no authentication)**: Only use this option if the network is unsecured.
-  - **WPA/WPA2-Personal**
+- **Wi-Fi type**: Choose **Enterprise**. 
 
-## Settings for enterprise profiles only
+- **Wi-Fi name (SSID)**: Short for service set identifier. This value is the real name of the wireless network that devices connect to. However, users only see the **Connection name** you configure when they choose the connection.
+
+- **Connection name**: Enter a user-friendly name for this Wi-Fi connection. The text you enter is the name users see when they browse the available connections on their device.
+
+- **Connect automatically when in range**: When **Yes**, devices connect automatically when they're in range of this network. When **No**, devices don't automatically connect.
+  - **Connect to more preferred network if available**: If the devices are in range of a more preferred network, then choose **Yes** to use the preferred network. Choose **No** to use the Wi-Fi network in this configuration profile.
+
+    For example, you create a **ContosoCorp** Wi-Fi network, and use **ContosoCorp** within this configuration profile. You also have a **ContosoGuest** Wi-Fi network within range. When your corporate devices are within range, you want them to automatically connect to **ContosoCorp**. In this scenario, set the **Connect to more preferred network if available​** property to **No**.
+
+  - **Connect to this network, even when it is not broadcasting its SSID**: Choose **Yes** for the configuration profile to automatically connect to your network, even when the network is hidden (meaning, its SSID isn't broadcast publicly). Choose **No** if you don't want this configuration profile to connect to your hidden network.
 
 - **Single sign-on (SSO)**: Allows you to configure single sign-on (SSO), where credentials are shared for computer and Wi-Fi network sign-in. Your options are:
   - **Disable**: Disables SSO behavior. The user needs to authenticate to the network separately.
@@ -111,6 +135,11 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
             - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
         **Identity privacy (outer identity)**: Use with **EAP-TTLS** EAP type. Enter the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+- **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
+  - **None**: No proxy settings are configured.
+  - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
+  - **Automatically configure**: Enter the URL pointing to a proxy auto-configuration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
 
 - **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Choose **Yes** when validating against the FIPS 140-2 standard. This standard is required for all US federal government agencies that use cryptography-based security systems to protect sensitive but unclassified information stored digitally. Choose **No** to not be FIPS-compliant.
 
