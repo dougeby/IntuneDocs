@@ -47,7 +47,7 @@ Intune supports one kiosk profile per device. If you need multiple kiosk profile
 
     - **Not Configured** (default): The policy doesn't enable kiosk mode.
     - **Single app, full-screen kiosk**: The device runs as a single user account, and locks it to a single Store app. So when the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
-    - **Multi app kiosk**: The device runs multiple Store apps, Win32 apps, or Application User Model ID (AUMID) apps. Only the apps you add are available on the device.
+    - **Multi app kiosk**: The device runs multiple Store apps, Win32 apps, or inbox Windows apps by specifying Application User Model ID (AUMID). Only the apps you add are available on the device.
 
         The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for users by only accessing apps they need. And, also removing from their view the apps they don’t need.
 
@@ -67,7 +67,7 @@ When you choose single app kiosk mode, enter the following settings:
 
     Select **OK** to save your changes.
 
-- **Kiosk browser settings**: These settings control a web browser app on the kiosk. Be sure you deploy a web browser app to the kiosk devices using [Client Apps](apps-add.md).
+- **Kiosk browser settings**: These settings control a web browser app on the kiosk. Be sure you obtain the [Kiosk broswer](https://businessstore.microsoft.com/en-us/store/details/kiosk-browser/9NGB5S5XG2KP) app from the Store to make it available in [Client Apps](apps-add.md), and assign it to the kiosk devices.
 
   Enter the following settings:
 
@@ -81,7 +81,7 @@ When you choose single app kiosk mode, enter the following settings:
 
   - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there isn't any idle timeout.
 
-  - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `contoso.com*` to open. By default, all websites are allowed.
+  - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `http://contoso.com*` to open. By default, all websites are allowed.
 
     To allow specific websites, upload a .csv file that includes a list of the allowed websites. If you don't add a .csv file, all websites are allowed.
 
@@ -93,7 +93,7 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
 When you choose multi app kiosk mode, enter the following settings:
 
-- **Target Windows 10 in S mode devices**: Choose **Yes** to allow store apps and AUMID apps (excludes Win32 apps) in the kiosk profile. Choose **No** to allow store apps, Win32 apps, and AUMID apps in the kiosk profile. When you choose **No**, this kiosk profile isn't deployed to S-mode devices.
+- **Target Windows 10 in S mode devices**: Choose **Yes** to allow store apps and AUMID apps (excludes Win32 apps) in the kiosk profile. Choose **No** to allow store apps, Win32 apps, and AUMID apps in the kiosk profile. When you choose **No**, this kiosk profile will not deploy to S-mode devices.
 
 - **User logon type**: The apps you add run as the user account you enter. Your options:
 
@@ -113,7 +113,7 @@ When you choose multi app kiosk mode, enter the following settings:
     - **Application user model ID (AUMID)**: Optional. Enter the Application user model ID (AUMID) of the Win32 app. This setting determines the start layout of the tile on the desktop. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
     - **Tile size**: Required. Choose a Small, Medium, Wide, or Large app tile size.
   
-  - **Add by AUMID**: Select an existing managed app you added using [Client Apps in Intune](apps-add.md). Use this option to add Windows apps, such as Notepad or Calculator. Enter the following properties: 
+  - **Add by AUMID**: Use this option to add inbox Windows apps, such as Notepad or Calculator. Enter the following properties: 
 
     - **Application name**: Required. Enter a name for the application.
     - **Application user model ID (AUMID)**: Required. Enter the Application user model ID (AUMID) of the Windows app. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
@@ -155,9 +155,7 @@ On Windows Holographic for Business devices, you can configure these devices to 
 #### Single full-screen app kiosks
 Enter the following settings:
 
-- **Universal Windows Platform (UWP) app identifier**: Enter the **Application user model ID (AUMID)** of the kiosk app. Or select an existing managed app you added using [Client Apps](apps-add.md).
-
-    See [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) to get the ID.
+- **Universal Windows Platform (UWP) app identifier**: Select an existing managed app you added in [Client Apps](apps-add.md).
 
 - **User logon type**: Select **Local user accounts** to enter the local (to the device) user account, or a Microsoft Account (MSA) account associated with the kiosk app. **Autologon** user account types aren't supported on Windows Holographic for Business.
 
@@ -167,7 +165,7 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 Enter the following settings:
 
 - **Add managed apps**: Select an existing managed app you added using [Client Apps](apps-add.md).
-- **Add by AUMID**: Enter the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+- **Add by AUMID**: To add inbox Windows apps add the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 - **Use alternative Start layout**: Enter an XML file that describes how the apps appear on the start menu, including the order of the apps. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
 - **User account type**: Add one or more user accounts that can use the apps you add. The supported options include: 
   - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
