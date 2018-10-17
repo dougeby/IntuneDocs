@@ -296,7 +296,7 @@ In this step, you:
 ##### Download, install, and configure the certificate connector
 
 > [!IMPORTANT] 
-> The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA).
+> The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA). It **must** also be installed on the same server as the Network Device Enrollment Service (NDES) role.
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device configuration** > **Certification Authority** > **Add**
