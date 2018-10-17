@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quickstart - Set the required password length on Android devices
+title: Quickstart - Set the required password length for Android devices
 titlesuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to set the length of the password required for Android devices.
 keywords:
@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Quickstart: Set the required password length on Android devices
+# Quickstart: Set the required password length for Android devices
 
 In this quickstart, you will use Microsoft Intune to require your workforce's Android users to enter a password of a specific length before access is granted to information on their Android devices. 
 
@@ -36,16 +36,12 @@ In this quickstart, you will use Microsoft Intune to require your workforce's An
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
-## Prerequisites
-
-- To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
-
 ## Sign in to Intune
 
 Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 
 ## Create a device compliance policy
-1. Once you've opened the **Microsoft Intune** pane, select **Device compliance** > **Policies** > **Create Policy**.
+1. Once you've opened the **Microsoft Intune** blade, select **Device compliance** > **Policies** > **Create Policy**.
 2. Add **Android compliance** as the  **Name**. Also, add a **Description**.
 3. For **Platform**, select **Android**. 
 4. Select **Settings** > **System Security** to display the Android **System Security** blade.
