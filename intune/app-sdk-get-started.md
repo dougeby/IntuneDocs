@@ -22,7 +22,7 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune
 
 ---
 
@@ -166,9 +166,9 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 
 	* If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](/intune-classic/deploy-use/ios-mam-policy-settings) and [Android app protection policies](/intune-classic/deploy-use/android-mam-policy-settings).
+* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
 
-* **Troubleshoot**: If you run into any issues while manually testing your app's user experience, check out the [Troubleshooting MAM](/intune-classic/troubleshoot/troubleshoot-mam). This article offers help for common issues, dialogs, and error messages that may be experienced in Intune-managed apps. 
+* **Troubleshoot**: If you run into any issues while manually testing your app's installation user experience, see [Troubleshoot app installation issues](troubleshoot-app-install.md). 
 
 ### Badge your app (optional)
 
