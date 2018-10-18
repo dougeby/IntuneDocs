@@ -7,7 +7,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -83,7 +83,7 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
     -   WinPhoneCompanyPortal.ps1 – A PowerShell script you can use to sign the Company Portal app file so it can be deployed to Windows Phone 8.1 devices
 
-    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Microsoft Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Microsoft Store for Business](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Microsoft Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Microsoft Store for Business](windows-store-for-business.md).
 
 2.  **Download the Windows Phone SDK**
     Download the Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) and install the SDK to your computer. This SDK is needed to generate an application enrollment token.
@@ -129,7 +129,7 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
     -   `-EnterpriseId` - The enterprise ID. Either this argument or 'AetxPath' must be provided. If this argument is not provided, the enterprise ID is read from the AETX file. For example, 1000000001
 
-6.  Deploy the Windows Phone 8.1 Company Portal (SSP.appx) app. For guidance, see [How to add Windows Phone line-of-business (LOB) apps](lob-apps-windows-phone.md) ([classic portal](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune)).
+6.  Deploy the Windows Phone 8.1 Company Portal (SSP.appx) app. For guidance, see [How to add Windows Phone line-of-business (LOB) apps](lob-apps-windows-phone.md).
 
 ## How to renew the Symantec enterprise code-signing certificate
 
