@@ -30,6 +30,8 @@
     href: quickstart-create-group.md
   - name: Create a policy
     href: quickstart-create-policy.md
+  - name: Set device password length
+    href: quickstart-set-password-length-android.md  
   - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
   - name: Create and assign a custom role
@@ -205,6 +207,8 @@
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abandonment report
+      href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
