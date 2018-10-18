@@ -54,7 +54,7 @@ The first step in setting up Windows Autopilot is to add the Windows devices to 
 
     ![Screenshot of Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-4. Under **Add Windows Autopilot devices**, browse to the CSV file you just saved.
+4. Under **Add Windows Autopilot devices**, browse to the CSV file you saved.
 
     ![Screenshot of Adding Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
