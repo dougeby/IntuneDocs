@@ -250,7 +250,7 @@ You can now enable Federal Information Processing Standards (FIPS) mode for Ente
 #### Control S-mode on Windows 10 and later devices - public preview <!-- 1958649 -->
 With this feature update, you can create a device configuration profile that switches a Windows 10 device out of S-mode, or prevent users from switching the device out of S-mode. This feature is in Intune > **Device configuration** > **Profiles** >  **Windows 10 and later** > **Edition upgrade and mode switch**.
 [Introducing Windows 10 in S mode](https://www.microsoft.com/windows/s-mode) provides more information on S mode.
-Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 
 #### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
@@ -259,7 +259,7 @@ Applies to Windows 10 and later.
 
 #### Require users to connect during device setup <!--2311457-->
 You can now set device profiles to require that the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
-Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 
 #### Restricts apps, and block access to company resources on iOS and Android Enterprise devices <!-- 2451462 -->
@@ -293,7 +293,7 @@ You now have the option to run the Company Portal in Single App mode if you auth
 
 #### Assign a user and friendly name to an Autopilot device <!--1346521 -->
 You can now [assign a user to a single Autopilot device](enrollment-autopilot.md). Admins will also be able to give friendly names to greet the user when setting up their device with Autopilot.
-Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 #### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
 You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
@@ -305,12 +305,12 @@ A confirmation is now required to delete a Volume Purchase Program (VPP) token i
 You can [block Windows personal devices](enrollment-restrictions-set.md#set-device-type-restrictions) from enrolling with [mobile device management](windows-enroll.md) in Intune. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature. This feature is rolling out over the next couple weeks so you might not see it immediately in the user interface.
 
 #### Specify machine name patterns in an Autopilot profile <!--1849855-->
-You can [specify a computer name template](enrollment-autopilot.md#create-an-autopilot-deployment-profile) to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
+You can [specify a computer name template](enrollment-autopilot.md#create-an-autopilot-deployment-profile) to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 
 #### For Windows Autopilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
 There are [new Windows Autopilot profile options](enrollment-autopilot.md#create-an-autopilot-deployment-profile) for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires Company Branding to be configured in Azure Active Directory. 
-Applies to: the most recent [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/) build (while in preview).
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 
 
@@ -341,7 +341,7 @@ We’ve added new features, based on feedback from customers, to the Company Por
 - Improved performance for large app catalogs
 - Increased accessibility for all users  
 
-The [Intune Company Portal website documentation](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes. To view an example of the app enhancements, see [UI updates for Intune end-user apps](whats-new-app-ui.md).  
+The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes. To view an example of the app enhancements, see [UI updates for Intune end-user apps](whats-new-app-ui.md).  
 
 ### Monitor and troubleshoot
 
@@ -500,7 +500,7 @@ As the admin, you can reclaim an iOS VPP app license assigned to a user or devic
 ### Device configuration
 
 #### Select device categories by using the Access Work or School settings <!-- 1058963 eenotready --> 
-If you've enabled [device group mapping](https://docs.microsoft.com/en-us/intune/device-group-mapping), users on Windows 10 will now be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school**. 
+If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will now be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school**. 
 
 #### Use sAMAccountName as the account username for email profiles <!-- 1500307 -->
 You can use the on-premises **sAMAccountName** as the account username for email profiles for Android, iOS, and Windows 10. You can also get the domain from the `domain` or `ntdomain` attribute in Azure Active Directory (Azure AD). Or, enter a custom static domain.
@@ -710,8 +710,8 @@ Intune admins can set an application launch requirement to enforce a passcode in
 #### Line-of-business (LOB) app support for macOS <!-- 1473977 -->
 Microsoft Intune will provide the capability to install macOS LOB apps from the Azure portal. You will be able to add a macOS LOB app to Intune after it has been pre-processed by the tool available in GitHub. In the Azure portal, choose **Client apps** from the **Intune** blade. On the **Client apps** blade, choose **Apps** > **Add**. On the **Add App** blade, select **Line-of-business app**. 
 
-#### Built-in All Users and All Devices Group for Android for Work (AFW) app assignment <!-- 1813073 -->
-You can leverage the built-in **All Users** and **All Devices** groups for AFW app assignment. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
+#### Built-in All Users and All Devices Group for Android Enterprise work profile app assignment <!-- 1813073 -->
+You can leverage the built-in **All Users** and **All Devices** groups for Android Enterprise work profile app assignment. For more information, see [Include and exclude app assignments in Microsoft Intune](apps-inc-exl-assignments.md).
 
 #### Intune will reinstall required apps that are uninstalled by users <!-- 1947010 -->
 If an end user uninstalls a required app, Intune automatically reinstalls the app within 24 hours rather than waiting for the 7-day re-evaluation cycle.
@@ -739,10 +739,10 @@ With this update, admins can enable Always On for Windows 10 VPN profiles direct
 
 For education profiles, new settings are available under the **Printers** category: **Printers**, **Default printer**, **Add new printers**.
 
-#### Show caller ID in personal profile - Android for Work <!--1098984 -->
+#### Show caller ID in personal profile - Android Enterprise work profile <!--1098984 -->
 When using a personal profile on a device, end users may not see the caller ID details from a work contact. 
 
-With this update, there is a new setting in **Android for Work** > **Device restrictions** > **Work profile settings**:
+With this update, there is a new setting in **Android Enterprise** > **Device restrictions** > **Work profile settings**:
 - Display work contact caller-id in personal profile
 
 When enabled (not configured), the work contact caller details are displayed in the personal profile. When blocked, the work contact caller number is not displayed in the personal profile. 
@@ -768,12 +768,12 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
-####  Block camera and screen captures on Android for Work <!-- 1098977 -->
+####  Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
 Two new properties are available to block when you configure device restrictions for Android devices: 
 - Camera: Blocks access to all cameras on the device
 - Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
 
-Applies to Android for Work.
+Applies to Android Enterprise work profiles.
 
 
 ### Device enrollment
@@ -839,7 +839,7 @@ The Company Portal app for macOS devices was updated to improve how users report
 For more information see [Send errors for macOS](/intune-user-help/send-errors-macos).
 
 #### Intune adapts to Fluent Design System in the Company Portal app for Windows 10 <!-- 1195010 WNready -->
-The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
+The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
 ## Week of April 16, 2018
 
@@ -848,7 +848,7 @@ The Intune Company Portal app for Windows 10 has been updated with the [Fluent D
 When you create a new VPN profile for iOS, there are now two options: **Cisco AnyConnect** and **Cisco Legacy AnyConnect**. Cisco AnyConnect profiles support 4.0.7x and newer versions. Existing iOS Cisco AnyConnect VPN profiles are labeled **Cisco Legacy AnyConnect**, and continue to work with Cisco AnyConnect 4.0.5x and older versions, as they do today.
 
 > [!NOTE]
-> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android for Work, and macOS platforms.
+> This change only applies to iOS. There continues to be only one Cisco AnyConnect option for Android, Android Enterprise work profiles, and macOS platforms.
 
 #### Jamf-enrolled macOS devices can now register with Intune <!-- 2370684 -->
 
