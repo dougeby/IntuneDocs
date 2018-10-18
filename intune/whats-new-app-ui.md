@@ -34,7 +34,7 @@ Learn what updates have been made to the UI for apps that your end users will se
 ## Week of August 27, 2018  
 
 ### New user experience update for the Company Portal website <!--2000968 -->  
-We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site&ndash;such as device details, feedback and support, and device overview&ndash;have received a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
+We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site&ndash;such as device details, feedback and support, and device overview&ndash;have received a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
 
 Updates you'll see include:  
 
