@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,12 +25,11 @@ ms.custom: intune-azure
 
 ---
 
-# Wi-Fi settings for Windows 10 and later devices in Intune
+# Add Wi-Fi settings for Windows 10 and later devices in Intune
 
-Wi-Fi settings are used in a configuration profile that applies to devices running Windows 10 and later. Your options include:
+You can create a profile with specific WiFi settings, and then deploy this profile to your Windows 10 and later devices. Microsoft Intune offers many features, including authenticating to your network, using a pre-shared key, and more.
 
-- Basic
-- Enterprise
+This article describes these settings.
 
 ## Before you begin
 
@@ -68,6 +67,8 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
   - **None**: No proxy settings are configured.
   - **Manually configure**: Enter the **Proxy server IPaddress** and its **Port number**.
   - **Automatically configure**: Enter the URL pointing to a proxy autoconfiguration (PAC) script. For example, enter `http://proxy.contoso.com/proxy.pac`.
+
+Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
 
 ## Enterprise profile
 
@@ -149,9 +150,17 @@ Wi-Fi settings are used in a configuration profile that applies to devices runni
 
 - **Force Wi-Fi profile to be compliant with the Federal Information Processing Standard (FIPS)**: Choose **Yes** when validating against the FIPS 140-2 standard. This standard is required for all US federal government agencies that use cryptography-based security systems to protect sensitive but unclassified information stored digitally. Choose **No** to not be FIPS-compliant.
 
+Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
+
 ## Use an imported settings file
 
 For any settings not available in Intune, you can export Wi-Fi settings from another Windows device. This export creates an XML file with all the settings. Then, import this file in to Intune, and use it as the Wi-Fi profile. See [Export and import Wi-Fi settings for Windows devices](wi-fi-settings-import-windows-8-1.md).
 
 ## Next steps
-[Configure Wi-Fi settings in Intune](wi-fi-settings-configure.md)
+
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+
+## More resources
+
+- See the settings available for [Windows 8.1](wi-fi-settings-import-windows-8-1.md).
+- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms
