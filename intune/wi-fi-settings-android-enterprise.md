@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Configure Wi-Fi settings for Android devices in Microsoft Intune - Azure | Microsoft Docs
+title: Configure Wi-Fi settings for Android Enterprise and kiosk devices - Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Create or add a WiFi device configuration profile for Android. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune.
+description: Create or add a WiFi device configuration profile for Android Enterprise and Android Kiosk. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune. For kiosk devices, also enter the Pre-shared key of your network.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -25,11 +25,9 @@ ms.custom: intune-azure
 
 ---
 
-# Add Wi-Fi settings for devices running Android in Microsoft Intune
+# Add Wi-Fi settings for devices running Android Enterprise and Android kiosk in Microsoft Intune
 
-You can create a profile with specific WiFi settings, and then deploy this profile to your Android devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
-
-These Wi-Fi settings are separated in to two categories: Basic settings and Enterprise-level settings.
+You can create a profile with specific WiFi settings, and then deploy this profile to your Android Enterprise and Android kiosk devices. Microsoft Intune offers many features, including authenticating to your network, using a pre-shared key, and more.
 
 This article describes these settings.
 
@@ -37,7 +35,25 @@ This article describes these settings.
 
 [Create a device profile](device-profile-create.md).
 
-## Basic profile
+## Device owner only - kiosk
+
+Select this option if using an Android Enterprise device as a kiosk.
+
+- **Network name**: Enter a name for this Wi-Fi connection. This value is the name that users see when they browse the list of available connections on their device.
+- **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to. However, users only see the **network name** you configured when they choose the connection.
+- **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
+- **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
+- **Wi-Fi type**: Select the security protocol to authenticate to the Wi-Fi network. Your options:
+
+  - **Open (no authentication)**: Only use this option if the network is unsecured.
+  - **WEP-Pre-shared key**: Enter the password in **Pre-shared key**. When your organization's network is set up or configured, a password or network key is also configured. Enter this password or network key for the PSK value.
+  - **WPA-Pre-shared key**: Enter the password in **Pre-shared key**. When your organization's network is set up or configured, a password or network key is also configured. Enter this password or network key for the PSK value.
+
+Select **OK** to save your changes.
+
+## Work profile only
+
+### Basic settings
 
 - **Wi-Fi type**: Choose **Basic**.
 - **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to.
@@ -108,6 +124,5 @@ The profile is created, but it's not doing anything. Next, [assign this profile]
 
 ## More resources
 
+- See the settings available for Android devices at [Wi-Fi settings for devices running Android](wi-fi-settings-android.md).
 - [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.
-
-- Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and Android kiosk](wi-fi-settings-android-enterprise.md).
