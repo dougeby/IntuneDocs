@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/12/2018
+ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ In this tutorial, you'll learn how to:
 > * Create an Autopilot device group
 > * Create an Autopilot deployment profile
 > * Assign the Autopilot deployment profile to the device group
-> * Distribute Windows devices to users and instruct them on how to enroll
+> * Distribute Windows devices to users
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
@@ -40,13 +40,13 @@ For an overview of Autopilot benefits, scenarios, and prerequisites, see [Overvi
 
 ## Add devices
 
-The first step in setting up Windows Autopilot is to add the Windows devices to Intune. All you have to do is create a CSV file as explained below and upload it to Intune.
+The first step in setting up Windows Autopilot is to add the Windows devices to Intune. All you have to do is create a CSV file and import it into Intune.
 
-1. In any text editor, create a list of comma separated values (CSV) that identify the Windows devices. Use the following format:
+1. In any text editor, create a list of comma-separated values (CSV) that identify the Windows devices. Use the following format:
     
     *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
     
-    The first three items are required, but the order id is optional.
+    The first three items are required, but the order ID is optional.
 
 2. Save the CSV file.
 
@@ -82,7 +82,7 @@ After creating a device group, you must create a deployment profile so that you 
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. For **Name**, enter *Autopilot Profile*. For **Description**, enter *Test profile for Autopilot devices*.
-3. Set **Convert all targeted devices to Autopilot** to **Yes**. This makes sure that all devices in the list get registered register with the Autopilot deployment service. Allow 48 hours for the registration to be processed.
+3. Set **Convert all targeted devices to Autopilot** to **Yes**. This setting makes sure that all devices in the list get registered with the Autopilot deployment service. Allow 48 hours for the registration to be processed.
 4. For **Deployment mode**, choose **User-driven**. Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
 5. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 6. Choose **Out-of-box experience (OOBE)**, configure the following options and leave others set to the default, and then choose **Save**:
