@@ -38,6 +38,10 @@
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
     href: quickstart-email-profile.md
+- name: Tutorials
+  items:
+  - name: Use Autopilot to enroll devices
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online

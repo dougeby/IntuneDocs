@@ -116,5 +116,10 @@ If you don't want to use Autopilot devices any more, you can delete them.
 4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
 
 ## Next steps
-For more information about other options available for Windows Autopilot, see the [in-depth Autopilot enrollment article](enrollment-autopilot.md).
+
+You can find more information about other options available for Windows Autopilot.
+
+> [!div class="nextstepaction"]
+> [In-depth Autopilot enrollment article](enrollment-autopilot.md)
+
 
