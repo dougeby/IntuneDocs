@@ -104,6 +104,10 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
 
 ## Next steps
 
-Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and Android kiosk](wi-fi-settings-android-enterprise.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
 
-[Wi-Fi settings overview](wi-fi-settings-configure.md)
+## More resources
+
+- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.
+
+- Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and Android kiosk](wi-fi-settings-android-enterprise.md).

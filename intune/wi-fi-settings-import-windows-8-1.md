@@ -61,11 +61,15 @@ On a Windows computer that already has the required WiFi profile installed, use 
 4. In **Platform**, select **Windows 8.1 and later**.
 5. In **Profile type**, select **Wi-Fi import**.
 6. Configure the following settings:
-  - **Connection name**: Enter a name for the Wi-Fi connection. This name is displayed to end users when they browse available Wi-Fi networks.
-  - **Profile XML**: Select the browse button, and choose the XML file that contains the Wi-Fi profile settings you want to import.
-  - **File contents**: Shows the XML code for the configuration profile you selected.
+    - **Connection name**: Enter a name for the Wi-Fi connection. This name is displayed to end users when they browse available Wi-Fi networks.
+    - **Profile XML**: Select the browse button, and choose the XML file that contains the Wi-Fi profile settings you want to import.
+    - **File contents**: Shows the XML code for the configuration profile you selected.
 7. When you're done, select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
 
 ## Next steps
+
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+
+## More resources
 
 [Wi-Fi settings overview](wi-fi-settings-configure.md), including other available platforms.

@@ -54,7 +54,7 @@ This article describes these settings.
 - **Proxy settings**: Your options:
   - **None**: No proxy settings are configured.
   - **Manual**: Enter the **Proxy server address** as an IP address, and its **Port number**.
-  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
+  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `http://proxy.contoso.com`) that contains the configuration file.
 
 ## Enterprise profiles
 
@@ -126,10 +126,14 @@ This article describes these settings.
 - **Proxy settings**: Your options:
   - **None**: No proxy settings are configured.
   - **Manual**: Enter the **Proxy server address** as an IP address, and its **Port number**.
-  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
+  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `http://proxy.contoso.com`) that contains the configuration file.
 
 Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
 
 ## Next steps
+
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+
+## More resources
 
 [Wi-Fi settings overview](wi-fi-settings-configure.md), including other available platforms.

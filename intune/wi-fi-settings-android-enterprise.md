@@ -120,6 +120,9 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
 
 ## Next steps
 
-Also see the setting available for Android devices at [Wi-Fi settings for devices running Android](wi-fi-settings-android.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
 
-[Wi-Fi settings overview](wi-fi-settings-configure.md)
+## More resources
+
+- See the settings available for Android devices at [Wi-Fi settings for devices running Android](wi-fi-settings-android.md).
+- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.

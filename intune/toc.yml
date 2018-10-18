@@ -443,7 +443,7 @@
       items:
       - name: Android
         href: wi-fi-settings-android.md
-      - name: Android Enterprise & Kiosk
+      - name: Android Enterprise & kiosk
         href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
