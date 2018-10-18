@@ -109,7 +109,7 @@ Review the following information to prepare for the change to the MDM authority:
 4. Select the user collection to contain all of the users that continue to be managed by the new hybrid MDM authority.
 5. Click **Next** and complete the wizard. The MDM authority is now changed to **Configuration Manager**.
 6. Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) using the same Intune tenant and confirm that the MDM authority has been changed to **Set to Configuration Manager**.
-7. After changing the MDM authority to Configuration manager, you can set up [iOS enrollment](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) and [Android enrollment](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-android).
+7. After changing the MDM authority to Configuration manager, you can set up [iOS enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) and [Android enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. In the Configuration Manager console, configure and deploy new settings and apps from the new MDM authority (hybrid).
 
 The next time devices connect to the service, it synchronizes and receives the new settings from the new MDM authority.

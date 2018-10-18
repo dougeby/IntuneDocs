@@ -28,10 +28,7 @@ ms.custom: intune-azure
 
 # Enforce compliance on Macs managed with Jamf Pro
 
-|Applies to: Intune in the Azure portal |
-|--|
-|Looking for documentation about Intune in the classic portal? [Go here](/intune/introduction-intune?toc=/intune-classic/toc.json).|
-| |
+Applies to: Intune in the Azure portal
 
 You can use Azure Active Directory and Microsoft Intune's conditional access policies ensure that your end users are compliant with organizational requirements. You can apply these policies to Macs that are [managed with Jamf Pro](conditional-access-integrate-jamf.md). This requires access to both the Intune and Jamf Pro consoles.
 
