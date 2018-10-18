@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -59,4 +59,4 @@ When no longer needed, delete the policy. To do so, select the **Windows 10 comp
 In this quickstart, you've created and assigned a simple device compliance policy. To enroll a Windows 10 device that will receive the policy, continue to the quickstart to set up auto enrollment. 
  
 > [!div class="nextstepaction"]
-> [Set up automatic enrollment](quickstart-setup-auto-enrollment.md)
+> [Set device password length](quickstart-set-password-length-android.md)
