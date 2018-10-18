@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Microsoft Intune Wi-Fi settings for devices running iOS
+title: Configure Wi-Fi settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Learn Intune Wi-Fi configuration settings on devices running iOS
+description: Create or add a WiFi device configuration profile for iOS devices. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,63 +26,110 @@ ms.custom: intune-azure
 
 ---
 
-# Wi-Fi settings for iOS devices in Microsoft Intune
+# Add Wi-Fi settings for iOS devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+You can create a profile with specific WiFi settings, and then deploy this profile to your iOS devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
 
-This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running iOS.
+These Wi-Fi settings are separated in to two categories: Basic settings and Enterprise-level settings.
 
-## Wi-Fi settings for basic and enterprise profiles
+This article describes these settings.
 
-- **Network name** - Enter a name for this Wi-Fi connection. This is the name that users see when they browse the list of available connections on their device.
-- **SSID** - Short for service set identifier. This is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.
-- **Connect automatically** - Makes the device connect whenever it is in the range of this network.
-- **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
-- **Pre-shared key** - 
-- **Proxy settings** - Choose from:
-    - **None** - No proxy settings are configured.
-    - **Manual** - Enter the **Proxy server address** (as an IP address), and it's associated **Port number**.
-    - **Automatic** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) which contains the configuration file.
+## Before you begin
 
-## Wi-Fi settings for basic profiles only
+[Create a device profile](device-profile-create.md).
 
-- **Security type** - Select the security protocol to use to authenticate to the Wi-Fi network from:
-    - **Open (no authentication)** - Only use this option if the network is unsecured.
-    - **WPA/WPA2 - Personal**
-    - **WEP**
+## Basic profiles
 
-## Wi-Fi settings for enterprise profiles only
+- **Wi-Fi type**: Choose **Basic**.
+- **Network name**: Enter a name for this Wi-Fi connection. This value is the name that users see when they browse the list of available connections on their device.
+- **SSID**: Short for **service set identifier**. This property is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.
+- **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
+- **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
+- **Security type**: Select the security protocol to authenticate to the Wi-Fi network. Your options:
 
-- **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
-    - **EAP-FAST**
-    - **EAP-SIM**
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **LEAP**
-    - **PEAP**
+  - **Open (no authentication)**: Only use this option if the network is unsecured.
+  - **WPA/WPA2 - Personal**: Enter the password in **Pre-shared key**. When your organization's network is set up or configured, a password or network key is also configured. Enter this password or network key for the PSK value.
+  - **WEP**
 
-### Further options when you choose an EAP type
+- **Proxy settings**: Your options:
+  - **None**: No proxy settings are configured.
+  - **Manual**: Enter the **Proxy server address** as an IP address, and its **Port number**.
+  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
 
+## Enterprise profiles
 
-|Setting name|More information|Use when|
-|--------------|-------------|----------|
-|**Protected Access Credential (PAC) Settings**|Select to use protected access credentials to establish an authenticated tunnel between the client and the authentication server. Select one of:<br>- **Use PAC** - Use an existing PAC file is used if present.<br>- **Use and Provision PAC** - Provision the PAC file to your devices.<br>- **Use and Provision PAC Anonymously** - Provision the PAC file to your devices and ensure that the PAC file is provisioned without authenticating the server.|EAP type is **EAP-FAST**|
+- **Wi-Fi type**: Choose **Enterprise**.
+- **SSID**: Short for **service set identifier**. This property is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.
+- **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
+- **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
 
-#### Server Trust
+- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections. Your options:
 
+  - **EAP-FAST**: Enter the **Protected Access Credential (PAC) Settings**. This option uses protected access credentials to create an authenticated tunnel between the client and the authentication server. Your options:
+    - **Do not use (PAC)**
+    - **Use (PAC)**: If an existing PAC file exists, use it.
+    - **Use and Provision PAC**: Create and add the PAC file to your devices.
+    - **Use and Provision PAC Anonymously**: Create and add the PAC file to your devices without authenticating to the server.
 
-|Setting name|More information|Use when|
-|--------------|-------------|----------|
-|**Certificate server names**|Specify one or more common names used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on user's devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**.|
-|**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
-|**Identity privacy (outer identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
+  - **EAP-SIM**
 
+  - **EAP-TLS**: Also enter:
 
-#### Client Authentication
+    - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
+    - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
 
+      Select **OK** to save your changes.
 
-| Setting name | More information | Use when |
-|---|---|---|
-| **Client certificate for client authentication (Identity certificate)**** |  Choose the SCEP or PKCS certificate profile used to authenticate the connection.  |    EAP type is **EAP-TLS**    |
-| **Authentication method** | Select the authentication method for the connection:<br>- **Certificates** to select the SCEP or PKCS the client certificate that is the identity certificate presented to the server.<br><br>- **Username and Password** to specify a different method for authentication. <br><br>If you selected **Username and Password**, configure:<br><br>-  **Non-EAP method (inner identity)**, then select how you authenticate the connection from:<br>- **None**<br>- **Unencrypted password (PAP)**<br>- **Challenge Handshake Authentication Protocol (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP Version 2 (MS-CHAP v2)**<br>The available options depend on the EAP type you selected.<br><br>**and**<br><br>- **Identity privacy (outer identity)** - Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is **EAP-TTLS** or * |
+    - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
+      Select **OK** to save your changes.
+
+  - **EAP-TTLS**: Also enter:
+
+    - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
+    - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+
+      Select **OK** to save your changes.
+
+    - **Client Authentication** - Choose an **Authentication method**. Your options:
+
+      - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
+        - **Non-EAP method (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
+
+          Your options: **Unencrypted password (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)**, or **Microsoft CHAP Version 2 (MS-CHAP v2)**
+
+      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+
+        Select **OK** to save your changes.
+
+      - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+  - **LEAP**
+
+  - **PEAP**: Also enter:
+
+    - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
+    - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+
+      Select **OK** to save your changes.
+
+    - **Client Authentication** - Choose an **Authentication method**. Your options:
+
+      - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. 
+
+      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+
+        Select **OK** to save your changes.
+
+      - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+- **Proxy settings**: Your options:
+  - **None**: No proxy settings are configured.
+  - **Manual**: Enter the **Proxy server address** as an IP address, and its **Port number**.
+  - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
+
+Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
+
+## Next steps
+
+[Wi-Fi settings overview](wi-fi-settings-configure.md), including other available platforms.
