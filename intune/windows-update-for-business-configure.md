@@ -40,7 +40,7 @@ By using Windows Update for Business, you simplify the update management experie
   - Windows Insider &#8208; Slow
   - Release Windows Insider 
       
-  For details on the available servicing channels, see [Overview for Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  For details on the available servicing channels, see [Overview for Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. Use these settings to stage your update roll-out so you can review progress along the way.
 - **Pausing**: Postpone the installation of updates if you discover an issue at any point during the update rollout.
 - **Maintenance window**: Configure the hours in which updates can be installed.

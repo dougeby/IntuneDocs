@@ -69,4 +69,4 @@ Each workload has a menu item that pre-filters the category of audit events asso
 
 ## Use Graph API to retrieve audit events
 For details about how to use the graph API to retrieve up to one year of audit events, see 
-[List auditEvents](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).
+[List auditEvents](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).
