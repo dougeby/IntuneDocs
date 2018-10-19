@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ---
  
 
-# Deploy hybrid Azure AD joined devicces using Intune and Windows Autopilot
+# Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory joined devices. To do so, follow the steps below.
 
 ## Prerequisites
@@ -37,16 +37,16 @@ You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory
     - Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 The devices to be enrolled must also:
-1. Be runninng Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+1. Be running Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 2. Have access to both the internet and your Active Directory.
 3. Got through the Out-of-Box-Experience (OOBE).
 
-## Increase the numberr of computer accounts that a user ccan  create in a domain
+## Increase the number of computer accounts that a user can create in a domain
 
-1. Open a command prompt on your domain coontroller and run **adsiedit**.
-2. Expand the AD DS/LDS folder node > right-click thhe node that begins with **DC** > **Properties**.
+1. Open a command prompt on your domain controller and run **adsiedit**.
+2. Expand the AD DS/LDS folder node > right-click the node that begins with **DC** > **Properties**.
 3. Choose **ms-DS-MachiineAccountQuota** > **Edit**.
-4. In the **Value** box, enter the number of hybrid Active Directory joined devices tthat yhou want to deploy using this feature. The maximum 2,147,483,647.
+4. In the **Value** box, enter the number of hybrid Active Directory joined devices that you want to deploy using this feature. The maximum 2,147,483,647.
 5. Choose **OK** > **OK** > close **ADSI Edit**.
 
 
@@ -108,9 +108,9 @@ Choose one of the following ways to enroll your Autopilot  devices:
 
 For more information, see [Create an Autopilot deployment profile](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
 
-### Register Autopilot devices that are not enrolled
+### Register Autopilot devices that aren't enrolled
 
-If your devices are not yet enrolled, you can register them yourself. For more information, see [](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
+If your devices aren't yet enrolled, you can register them yourself. For more information, see [](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
 
 ### Register devices from an OEM
 
