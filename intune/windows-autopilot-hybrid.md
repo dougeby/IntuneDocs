@@ -28,20 +28,30 @@ ms.custom: intune-azure
 ---
  
 
-# Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
-You can use Windows Autopilot to set up Intune enrollment for hybrid Azure Active Directory joined devices. To do so, follow the steps below.
+# Deploy hybrid Azure AD joined devicces using Intune and Windows Autopilot
+You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory joined devices. To do so, follow the steps below.
 
-## Set up hybrid Azure Active Directory devices
-1.	Follow the steps in the [Tutorial: Configure hybrid Azure Active Directory join for managed domans](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
-2.	Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
+## Prerequisites
+
+1. Successfully configure [hybrid Azure Active Directory join for managed domains](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+    - Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
+
+The devices to be enrolled must also:
+1. Be runninng Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+2. Have access to both the internet and your Active Directory.
+3. Got through the Out-of-Box-Experience (OOBE).
+
+## Increase the numberr of computer accounts that a user ccan  create in a domain
+
+1. Open a command prompt on your domain coontroller and run **adsiedit**.
+2. Expand the AD DS/LDS folder node > right-click thhe node that begins with **DC** > **Properties**.
+3. Choose **ms-DS-MachiineAccountQuota** > **Edit**.
+4. In the **Value** box, enter the number of hybrid Active Directory joined devices tthat yhou want to deploy using this feature. The maximum 2,147,483,647.
+5. Choose **OK** > **OK** > close **ADSI Edit**.
+
+
 ## Enable Windows 10 automatic enrollment
-Automatic enrollment lets users enroll their Windows 10 devices in Intune. To enroll, users add their work account to their personally owned devices or join corporate-owned devices to Azure Active Directory. In the background, the device registers and joins Azure Active Directory. Once registered, the device is managed with Intune.
 
-### Prerequisites
-- Azure Active Directory Premium subscription ([trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845))
-- Microsoft Intune subscription
-
-### Configure automatic MDM enrollment
 1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
 
    ![Screenshot of the Azure portal](./media/auto-enroll-azure-main.png)
@@ -57,8 +67,6 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 4. Configure **MDM User scope**. Specify which users’ devices should be managed by Microsoft Intune. These Windows 10 devices can automatically enroll for management with Microsoft Intune.
    - **Some** - Select the **Groups** with the users that you want to be set up by using Windows Autopilot on Hybrid Active Directory joined devices.
    - **All** - Use this option if you want all users to be set up using Windows Autopilot on Hybrid Active Directory joined devices.
-      > [!IMPORTANT]
-      > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
 
    ![Screenshot of the Azure portal](./media/auto-enroll-scope.png)
 
@@ -67,9 +75,14 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
     - **MDM Discovery URL**
     - **MDM Compliance URL**
 6. Choose **Save**.
-By default, two-factor authentication isn't enabled for the service. However, two-factor authentication is recommended when registering a device. To enable two-factor authentication, configure a two-factor authentication provider in Azure AD and configure your user accounts for multi-factor authentication. See [Getting started with the Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
-## Install the connector
-Download [ODJConnectorSetupMSI.msi]( tp://download.microsoft.com/download/1/E/B/1EB59BBC-4C33-459B-8A1C-DD3EF98D7B51/ODJConnectorSetupMsi.msi) to a computer running Windows Server 2016 that has access to the Internet and your on-premises Azure Active Directory.
+
+## Download and install the Intune Connector for Active Directory
+
+The Intune Connector for Active Directory needs to be installed on a computer running Windows Server 2016 that has access to the Internet and your Active Directory.
+
+1. In Intune in the Azure portal, choose **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory** > **Add connector**. 
+2. Follow the instructions to download  the connector.
+
 ## Create a dynamic device group
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups** > **New group**.
 2. In the **Group** blade:
@@ -85,41 +98,50 @@ Download [ODJConnectorSetupMSI.msi]( tp://download.microsoft.com/download/1/E/B/
 5. Choose **Create**.  
 
 ## Register the Autopilot devices
-You can add Windows Autopilot devices by importing a CSV file with their information.
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > **Import**.
+Choose one of the following ways to enroll your Autopilot  devices:
 
-    ![Screenshot of Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device.png)
+### Register Autopilot devices that are already enrolled
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The file should list the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices.
+1. Create an Autopilot deployment profile with **Convert all targeted devices to Autopilot** set to **Yes**. 
+2. Assign the profile to a group containing the members that you want to automatically register with Autopilot.
 
-    ![Screenshot of Adding Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
+For more information, see [Create an Autopilot deployment profile](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
 
-3. Choose **Import** to start importing the device information. Importing can take several minutes.
+### Register Autopilot devices that are not enrolled
 
-4. After import is complete, choose **Device enrollment** > **Windows enrollment** > **Windows Autopilot** > **Devices** > **Sync**. A message displays that the synchronization is in progress. The process might take a few minutes to complete, depending on how many devices are being synchronized.
+If your devices are not yet enrolled, you can register them yourself. For more information, see [](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
 
-5. Refresh the view to see the new devices.
+### Register devices from an OEM
+
+If you're buying new devies, some OEMs can register the devices for you. For more information, see the [Windows Autopilot page](http://aka.ms/WindowsAutopilot).
+
 
 ## Create and assign an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.
+
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. Type a **Name** and optional **Description**.
-3. If you want all devices in the assigned groups to automatically convert to Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**. All non-Autopilot devices in assigned groups will register with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will enroll it. After a device is registered in this way, disabling this option or removing the profile assignment won't remove the device from the Autopilot deployment service. You must instead [remove the device directly](enrollment-autopilot.md#delete-autopilot-devices).
-4. For **Deployment mode**, choose **User-driven**.
-5. In the **Join to Azure AD as** box, choose **Hybrid Azure AD joined**.
-6. Choose **Out-of-box experience (OOBE)**, configure the options as needed, and then choose **Save**.
-7. Choose **Create** to create the profile. 
-8. In the profile blade, choose **Assignments**.
-9. Choose **Select groups**, then in the **Select groups** blade, choose the dynamic device group that created earlier, then choose **Select**.
+3. For **Deployment mode**, choose **User-driven**.
+4. In the **Join to Azure AD as** box, choose **Hybrid Azure AD joined**.
+5. Choose **Out-of-box experience (OOBE)**, configure the options as needed, and then choose **Save**.
+6. Choose **Create** to create the profile. 
+7. In the profile blade, choose **Assignments**.
+8. Choose **Select groups** > in the **Select groups** blade, choose the device group > **Select**.
+
 It will take around 15 minutes for the dynamic device group’s profile status to change from **Not assigned** to **Assigning** and finally to **Assigned**.
+
 ## Turn on the enrollment status page
+
 1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
 2.  In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
 3.  For **Show app and profile installation progress**, choose **Yes**.
 4. For **Block device use until all apps and profiles are installed**, choose **Yes**.
-5.  Choose **Save**.
-## Create a Domain Join profile and assign it to the dynamic device group
+5. Configure the other options as needed.
+6.  Choose **Save**.
+
+## Create and assign a Domain Join profile
+
 1. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. Then select **Create Profile**.
 2. Enter the following properties:
    - **Name**: Enter a descriptive name for the new profile.
@@ -128,8 +150,4 @@ It will take around 15 minutes for the dynamic device group’s profile status t
    - **Profile type**: Choose **Domain Join**.
 3.  Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
 4. Choose **OK** > **Create**. The profile is created, and appears in the list.
-## Install the latest Windows Insider build on the device
-1.	Download and install the [Windows Insider Preview]( https://www.microsoft.com/software-download/windowsinsiderpreviewiso) to the device.
-2.	Follow the instructions on the device.
-
 
