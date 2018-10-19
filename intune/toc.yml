@@ -40,7 +40,7 @@
     href: quickstart-email-profile.md
 - name: Tutorials
   items:
-  - name: Use Autopilot to enroll devices
+  - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Scenario implementation guides 
   items:
