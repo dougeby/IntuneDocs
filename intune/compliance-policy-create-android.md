@@ -62,8 +62,8 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. For **Platform**, select **Android**. 
-6. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
+4. For **Platform**, select **Android**. 
+5. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
 
 ## Device health
 
@@ -104,6 +104,7 @@ The following table describes how noncompliant settings are managed when a compl
   - **At least alphabetic** 
   - **At least alphanumeric**
   - **At least alphanumeric with symbols**
+
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Password expiration (days)**: Select the number of days before the password expires and the user must create a new password.
 - **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
@@ -114,7 +115,9 @@ The following table describes how noncompliant settings are managed when a compl
 
 ### Device Security
 
-- **Block apps from unknown sources**: Choose to **block** devices with "Security > Unknown Sources" enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+- **Block apps from unknown sources**: Choose to **block** devices with "Security > Unknown Sources" enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+
+  To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy. 
 
   > [!IMPORTANT]
   > Side-loading applications require that the **Block apps from unknown sources** setting is enabled. Enforce this compliance policy only if you're not side-loading Android apps on devices.
@@ -168,4 +171,5 @@ You've applied the policy to users. The devices used by the users targeted by th
 
 ## Next steps
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
-[Monitor Intune Device compliance policies](compliance-policy-monitor.md)
+[Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
+[Compliance policy settings for Android Enterprise](compliance-policy-create-android-for-work.md)

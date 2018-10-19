@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Add a device compliance policy for Android work profile devices in Intune
+# Add a device compliance policy for Android Enterprise devices in Intune
 
 Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a password length. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md). 
 
@@ -50,7 +50,7 @@ The following table describes how noncompliant settings are managed when a compl
 | **Maximum OS version** | Quarantined |
 | **Windows health attestation** |Not applicable |
 
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)+
+**Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
 
 **Quarantined** = The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
 
@@ -60,8 +60,8 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. For **Platform**, select **Android enterprise**. 
-6. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
+4. For **Platform**, select **Android enterprise**. 
+5. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
 
 ## Device health
 
@@ -80,9 +80,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 #### Threat scan on apps
 
-On Android Enterprise devices, the **Threat scan on apps** setting is a configuration policy. 
-
-See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+On Android Enterprise devices, the **Threat scan on apps** setting is a configuration policy. See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
 
 ## Device properties settings
 
@@ -103,6 +101,7 @@ See [Android Enterprise device restriction settings](device-restrictions-android
   - **At least alphabetic**
   - **At least alphanumeric**
   - **At least alphanumeric with symbols**
+
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
 - **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
@@ -115,7 +114,9 @@ See [Android Enterprise device restriction settings](device-restrictions-android
 
 ### Device Security
 
-- **Block apps from unknown sources**: Choose to **block** devices with "Security > Unknown Sources" enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+- **Block apps from unknown sources**: Choose to **block** devices with "Security > Unknown Sources" enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+
+  To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy. 
 
   > [!IMPORTANT]
   > Side-loading applications require that the **Block apps from unknown sources** setting is enabled. Enforce this compliance policy only if you're not side-loading Android apps on devices.
@@ -163,4 +164,5 @@ You've applied the policy to users. The devices used by the users targeted by th
 
 ## Next steps
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
-[Monitor Intune Device compliance policies](compliance-policy-monitor.md)
+[Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
+[Compliance policy settings for Android](compliance-policy-create-android.md)
