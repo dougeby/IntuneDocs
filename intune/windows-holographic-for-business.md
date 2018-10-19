@@ -74,7 +74,7 @@ Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices
 - To deploy Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md).
 
     > [!NOTE]
-    > Intune allows a maximum package size to 8 GB to support the larger holographic apps that are being created for the HoloLens. This package size is only available for the LOB apps uploaded to Intune. Apps from the store will be managed via the current store deployment workflow. 
+    > Intune allows a maximum package size to 8 GB. This package size is only available for the LOB apps uploaded to Intune.
 
 - To deploy apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). 
 - To learn about app management with Microsoft Intune, see [What is app management in Microsoft Intune](app-management.md).
