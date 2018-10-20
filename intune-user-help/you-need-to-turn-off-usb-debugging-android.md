@@ -34,6 +34,6 @@ _USB debugging_ is a mode that lets Android devices communicate to computers wit
 
 You can turn off USB debugging by going to **Settings** > **Developer options**, and turn off **USB debugging**.
 
-After you turn off **USB debugging**, wait a few minutes, then you should be able to to use your Android device to access company or school data as usual.
+After you turn off **USB debugging**, wait a few minutes, then you should be able to use your Android device to access company or school data as usual.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
