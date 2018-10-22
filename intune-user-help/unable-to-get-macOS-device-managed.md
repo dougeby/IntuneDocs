@@ -34,7 +34,7 @@ ms.custom: intune-enduser
 
 If you receive either of the following messages while trying to get your macOS device managed, contact your company support.
 
-**Message 1**: *We’re having trouble getting your device managed. This problem could be caused if you using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else. Learn how to resolve these problems or contact your company support.*
+**Message 1**: *We’re having trouble getting your device managed. This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else. Learn how to resolve these problems or contact your company support.*
 
 **Message 2**: *It looks like you're using a virtual machine. Make sure you've fully configured your virtual machine, including serial number and hardware model. If this isn't a virtual machine, please contact support.*  
 
@@ -42,10 +42,10 @@ Your device might not be able to be managed for one of the following reasons:
 
 * A macOS virtual machine (VM) isn't configured correctly   
 
-* Your organization enforces certain restrictions that requires the device to be corporate-owned or have a registered device serial number   
+* Your organization requires that the device is corporate-owned or has a registered device serial number   
 
 * The device is already managed, and is assigned to someone else in your organization  
 
-Your company support or IT admin will help you identify which problem applies to your device, and will help to resolve it.  
+Your company support or IT admin will help you identify amd resolve the problem that applies to your device.  
 
 To find your company support's contact information, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
