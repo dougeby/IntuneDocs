@@ -482,6 +482,8 @@
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
+      - name: Remove SCEP or PKCS certificates
+        href: remove-certificates.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts

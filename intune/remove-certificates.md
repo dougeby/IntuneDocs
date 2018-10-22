@@ -1,0 +1,145 @@
+---
+# required metadata
+
+title: Remove SCEP or PKCS certificates in Microsoft Intune - Azure | Microsoft Docs
+titleSuffix:
+description: Administrators can use the wipe or retire action to remove certificates from Microsoft Intune. There are some scenarios where the certificates are automatically removed, such as unenrolling a device or removing a compliance policy. There are some scenarios where certificates automatically remain on the device, such as when the Intune license is lost or removed. See the different ways for Android, Android Enterprise, iOS, macOS, and Windows devices.
+keywords:
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 10/22/2018
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.suite: ems
+#ms.tgt_pltfrm:
+ms.custom: intune-azure
+
+---
+
+# Remove SCEP and PKCS certificates in Microsoft Intune
+
+In Microsoft Intune, you can add SCEP and PKCS certificates to devices. These certificates can also be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. There are some other scenarios where certificates are automatically removed, and some scenarios where certificates stay on the device.
+
+This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
+
+## Windows devices
+
+#### SCEP certificates
+
+- A SCEP certificate is revoked *and* removed when:
+
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Device is removed from Azure Active Directory (AD) group
+  - Compliance policy is removed from the group assignment
+  - Configuration profile is removed from the group assignment
+
+- A SCEP certificate is revoked when:
+  - Administrator changes or updates the SCEP profile
+
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Compliance policy is removed from the group assignment
+
+- SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+
+#### PKCS certificates
+
+
+## iOS devices
+
+#### SCEP certificates
+
+- A SCEP certificate is revoked *and* removed when:
+
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Device is removed from Azure Active Directory (AD) group
+  - Compliance policy is removed from the group assignment
+  - Configuration profile is removed from the group assignment
+
+- A SCEP certificate is revoked when:
+  - Administrator changes or updates the SCEP profile
+
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Compliance policy is removed from the group assignment
+
+- SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+
+#### PKCS certificates
+
+
+## Android & Android Enterprise devices
+
+#### SCEP certificates
+
+- A SCEP certificate is revoked *and* removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+
+- A SCEP certificate is revoked when:
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Device is removed from Azure Active Directory (AD) group
+  - Compliance policy is removed from the group assignment
+  - Configuration profile is removed from the group assignment
+  - Administrator removes the user or group from Azure Active Directory (AD)
+  - Administrator changes or updates the SCEP profile
+
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+
+#### PKCS certificates
+
+
+## macOS certificates
+
+#### SCEP certificates
+
+- A SCEP certificate is revoked *and* removed when:
+  - An end user unenrolls
+  - Administrator runs [retire](devices-wipe.md#retire) action
+  - Device is removed from Azure Active Directory (AD) group
+  - Compliance policy is removed from the group assignment
+  - Configuration profile is removed from the group assignment
+
+- A SCEP certificate is revoked when:
+  - Administrator changes or updates the SCEP profile
+
+- SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+
+> [!NOTE]
+> Using the [wipe](devices-wipe.md#wipe) action to factory reset macOS devices is not supported.
+
+#### PKCS certificates
