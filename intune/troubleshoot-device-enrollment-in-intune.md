@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -398,6 +398,33 @@ After you’ve fixed the issues with the VPP token, you must wipe the devices th
 
 #### Tell the users to restart the enrollment process
 After you've wiped the blocked devices, you can tell the users to restart the enrollment process.
+
+## macOS issues
+
+### macOS enrollment errors
+**Error message:** It looks like you're using a virtual machine. Make sure you've fully configured your virtual machine, including serial number and hardware model. If this isn't a virtual machine, please contact support.  
+
+**Issue:** This message could be a result of any of the following reasons:  
+* A macOS virtual machine (VM) isn't configured correctly  
+* You've enabled device restrictions that require the device to be corporate-owned or have a registered device serial number in Intune  
+* The device has already been enrolled and is still assigned to someone else in Intune  
+
+**Resolution:** First, check with your user to determine which of the issues affects their device. Then complete the most relevant of the following solutions:
+* If the user is enrolling a VM for testing, make sure it's been fully configured so that Intune can recognize its serial number and hardware model. Learn more about how to [set up VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
+* If your organization enabled enrollment restrictions to block personally-owned macOS devices, you must manually [add the personal device's serial number](corporate-identifiers-add.md#manually-enter-corporate-identifiers) to Intune.  
+* Your organization might've wiped the device since it's last owner, but it's possible that it wasn't properly reset or removed through Company Portal for macOS. To clean up the stale device record from Intune:  
+
+1. Go to [Intune in the Azure portal](portal.azure.com) and sign in with your administrative credentials.
+2. Go to Intune > **Devices** > **All devices**.  
+3. Find the device with the enrollment problem. Search by device name or MAC/HW Address to narrow your results.
+4. Select the device > **Delete**. Delete all other entries associated with the device.  
+
+
+
+
+|Error message|Issue|Resolution|
+|-------------|-----|----------|
+||* The virtual machine hasn't been set up properly  * Device restrictions|Check that all enrollment prerequisites, like the Apple Push Notification Service (APNs) certificate, have been set up and that "iOS as a platform" is enabled. For instructions, see [Set up iOS and Mac device management](ios-enroll.md).|
 
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
