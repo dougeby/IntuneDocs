@@ -242,6 +242,8 @@
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Synchronize device
       href: device-sync.md
     - name: Examine device inventory
@@ -524,8 +526,6 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
-    - name: Install Exchange service connector
-      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal

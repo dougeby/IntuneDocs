@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Windows device compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later devices. Check for compliance on the the minimum and maximum operating system, set password restrictions and length, require bitlocker, check for third (3rd) party AV solutions, set the acceptable threat level, and enable encypryption on data storage, including Surface Hub and Windows Holographic for Business.
+description: Create or configure a Microsoft Intune device compliance policy for Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later devices. Check for compliance on the minimum and maximum operating system, set password restrictions and length, require bitlocker, check for third (3rd) party AV solutions, set the acceptable threat level, and enable encypryption on data storage, including Surface Hub and Windows Holographic for Business.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
