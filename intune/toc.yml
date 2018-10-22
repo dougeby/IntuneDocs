@@ -38,6 +38,10 @@
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
     href: quickstart-email-profile.md
+- name: Tutorials
+  items:
+  - name: Use Autopilot to enroll Windows devices
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online
@@ -447,6 +451,8 @@
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Android Enterprise & kiosk
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
