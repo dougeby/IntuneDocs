@@ -37,16 +37,28 @@ You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory
     - Make sure to [verify the registration by using the Get-MsolDevice cmdlt]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 The devices to be enrolled must also:
-- Be running Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+- Be running Windows 10 with the [October 2018 update]git(https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Have access to both the internet and your Active Directory.
 - Got through the Out-of-Box-Experience (OOBE).
 
 ## Increase the number of computer accounts that a user can create in a domain
 
 1. Open a command prompt on your domain controller and run **adsiedit**.
+
+    ![Screenshot of command prompt](media/windows-autopilot-hybrid/commandpromptadsiedit.png)
+
 2. Expand the AD DS/LDS folder node > right-click the node that begins with **DC** > **Properties**.
+
+    ![Screenshot ADSI Edit](media/windows-autopilot-hybrid/adsieditproperties.png)
+
 3. Choose **ms-DS-MachiineAccountQuota** > **Edit**.
+
+    ![Screenshot ADSI Edit](media/windows-autopilot-hybrid/adsiedit02.png)
+
 4. In the **Value** box, enter the number of hybrid Active Directory joined devices that you want to deploy using this feature. The maximum 2,147,483,647.
+
+    ![Screenshot ADSI Edit](media/windows-autopilot-hybrid/integerattributeeditor.png)
+
 5. Choose **OK** > **OK** > close **ADSI Edit**.
 
 
