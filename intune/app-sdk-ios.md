@@ -177,7 +177,7 @@ Follow the steps below to link your app to the ADAL binaries:
 
 1. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) on how to download ADAL using Git submodules or CocoaPods.
 
-2. Add the the ADAL framework (option 1) or static library (option 2) to your project.
+2. Add the ADAL framework (option 1) or static library (option 2) to your project.
 
 3. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
