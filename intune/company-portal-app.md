@@ -65,7 +65,7 @@ Enter your company's support infomation to provide your employee with a contact 
 
 
 ## Company identity branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background. Note that the logo you upload will be used for email templates.		
+You can customize your Company Portal with your company logo, company name, theme color and background. 	
 
 ### Theme color and logo in the Company Portal
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
@@ -92,7 +92,7 @@ Display a brand image that reflects your company brand. Support for a brand imag
 
 |Field name|More information|
 |---|---|
-|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 2 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
 The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
 
