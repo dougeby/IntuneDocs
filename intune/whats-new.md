@@ -43,7 +43,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->   
+-->     
 ## Week of October 15, 2018
 
 ### PIN prompt when you change fingerprints or face ID on an iOS device  <!-- 2637704  -->
