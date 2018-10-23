@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -55,7 +55,7 @@ To remove all data that the Company Portal app for Android stores on your device
 -	Delete the folder '\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal'
 
 ## Uninstall the Company Portal app  
-Company Portal is a device management app, so it can't be uninstalled until you [unenroll your device from its management](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). After that's complete, tap and hold the Company Portal app icon until you see **Uninstall**. Tap Uninstall to remove the app from your device.  
+Company Portal is a device management app, so it can't be uninstalled until you [unenroll your device from its management](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). After that's complete, tap and hold the Company Portal app icon until you see **Uninstall**. Tap **Uninstall** to remove the app from your device.  
 
 Alternatively, tap **Settings** > **Apps** > **Compay Portal** > **Uninstall**.  
 
