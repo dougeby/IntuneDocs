@@ -57,7 +57,7 @@ To create a scope tag, choose **Intune roles** > **Scope (Tags)** > **Create**.
 To add a scope tag to a role assignment, choose **Intune roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
 To add a scope tag to a configuration profile, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)**.
 
-## Tenant Health dashboard <!-- 1124854 -->
+### Tenant Health dashboard <!-- 1124854 -->
 The Tenant Status page in Intune will provide you with tenant status information in a single place. The page is divided into 4 sections:  
 - **Tenant Details**: Contains information, such as your MDM Authority, the total enrolled devices in your tenant, and your license counts. This section also provides the current service release for your tenant.
 - **Connector Status**: Contains information for configured connectors, such as Apple VPP, Windows Store for Business, and Certificate connectors. Based on their current state, the connectors are flagged as *Healthy*, *Warning*, or *Unhealthy*.
