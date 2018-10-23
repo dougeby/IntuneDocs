@@ -60,18 +60,18 @@ The settings shown in the following list are determined by the VPN connection ty
   - **Custom VPN**    
 
     > [!NOTE]
-    > Cisco, Citrix, F5, and Palo Alto have announced that their legacy clients will not work on the upcoming release of iOS 12. You should migrate to the new apps as soon as possible. For more information, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
+    > Cisco, Citrix, F5, and Palo Alto have announced that their legacy clients don't work on iOS 12. You should migrate to the new apps as soon as possible. For more information, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
 
 * **Excluded URLs** (Zscaler only): When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. 
 
 - **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use, depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.
 
-- **Enable network access control (NAC)**: This setting is a placeholder for VPN clients, such as Citrix, to allow the NAC ID to be in the VPN profile. When you choose **I agree**, the ID isn't included in the VPN profile until VPN clients update their programs to support this feature. Currently, there aren't any VPN clients or NAC partner solutions that support the NAC ID.
+- **Enable network access control (NAC)**: This setting is a placeholder for VPN clients, such as Citrix, to allow a device ID to be in the VPN profile for use with network access control (NAC). When you choose **I agree**, this device ID is included in the VPN profile. Currently, there aren't any VPN clients or NAC partner solutions that support this new ID, so devices will be allowed to connect to the VPN regardless of compliance status. We will update this document when our partners add support for the ID.
 
   Important details:  
 
   - When this setting is enabled, the VPN is disconnected every 24 hours.
-  - The device ID is part of the profile, but it can't be seen in Intune, or in the profile. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft. The VPN client, such as Citrix, can get the ID, and query Intune to confirm the device is enrolled, and if the VPN profile is compliant or not compliant.
+  - The device ID is part of the profile, but it can't be seen in Intune, or in the profile. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft. Once this is suppored by VPN partners, the VPN client, such as Citrix SSO, can get the ID, and query Intune to confirm the device is enrolled and if the VPN profile is compliant or not compliant.
   - To remove this setting, recreate the profile, and don't select **I agree**. Then, reassign the profile.
 
 ## Custom VPN settings
