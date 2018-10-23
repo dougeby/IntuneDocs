@@ -150,7 +150,7 @@ Select the history button to view the support incidents that you've created.
 
 - Only the support cases that you open by using the pilot workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console that is part of the pilot. These cases have numbers that are eight digits long.  
 
-- Cases that you opened before joining the pilot are unchanged. To view them, you must use a help and support view that isn't part of the pilot. These cases have numbers that start with **117** or **118** and are 15 digits long.  To view a support case that was opened before you joined the pilot, see [View support requests](#view-support-requests#).
+- Cases that you opened before joining the pilot are unchanged. To view them, you must use a help and support view that isn't part of the pilot. These cases have numbers that start with **117** or **118** and are 15 digits long.  To view a support case that was opened before you joined the pilot, see [View support requests](#view-support-requests).
 
 
 ## Additional resources
