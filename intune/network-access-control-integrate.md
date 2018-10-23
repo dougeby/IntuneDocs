@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ Intune integrates with network access control partners to help organizations sec
 
 ## How do Intune and NAC solutions help protect your organization resources?
 
-NAC solutions check the device enrollment and compliance state with Intune to make access control decisions. If the device isn't enrolled, or is enrolled and not compliant with Intune device compliance policies, then then device should be redirected to Intune for enrollment and/or for a device compliance check.
+NAC solutions check the device enrollment and compliance state with Intune to make access control decisions. If the device isn't enrolled, or is enrolled and not compliant with Intune device compliance policies, then the device should be redirected to Intune for enrollment, or for a device compliance check.
 
 ### Example
 
@@ -59,10 +59,23 @@ The following list is an overview on how NAC integration works when integrated w
 3. Configure the NAC partner solution for certificate authentication.
 4. User connects to corporate Wi-Fi access point or makes a VPN connection request.
 5. NAC partner solution forwards the device information to Intune, and asks Intune about the device enrollment and compliance state.
-6. If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
-7. The device attempts to reverify its compliance and/or the enrollment state.
+6. If the device isn't compliant or isn't enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
+7. The device tries to reverify its compliance and enrollment state when applicable.
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
+
+## Use NAC on your iOS devices
+
+When you create an [iOS VPN profile](vpn-settings-ios.md), you can allow Network Access Control (NAC). This feature includes the NAC ID of the device in the VPN profile. The NAC partner solution, such as Citrix, can then get the ID, and confirm if the VPN profile is compliant or not compliant.
+
+Currently, there aren’t any NAC partner solutions or VPN clients that support network access control.
+
+To use this feature, be sure:
+
+- Install the latest version of your NAC partner solution in your environment. Some VPN clients don't support this feature yet. 
+- In the [iOS VPN profile](vpn-settings-ios.md), choose to enable network access control. This setting includes the ID information in the VPN profile.
+- Know that if the VPN is connected when the device checks in, a security feature causes the VPN profile to disconnect.
+
 
 ## Next steps
 

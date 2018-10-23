@@ -40,6 +40,8 @@
     href: quickstart-email-profile.md
 - name: Tutorials
   items:
+  - name: Protect email on managed devices
+    href: tutorial-protect-email-on-enrolled-devices.md
   - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Scenario implementation guides 
@@ -179,8 +181,6 @@
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Autopilot and hybrid devices
-        href: windows-autopilot-hybrid.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
@@ -246,6 +246,8 @@
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Synchronize device
       href: device-sync.md
     - name: Examine device inventory
@@ -486,6 +488,8 @@
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
+      - name: Remove SCEP or PKCS certificates
+        href: remove-certificates.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts
@@ -528,8 +532,6 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
-    - name: Install Exchange service connector
-      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal

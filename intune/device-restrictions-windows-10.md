@@ -29,6 +29,9 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+> [!Note]
+> Not all options are avaiable on all editions of Windows
+
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
@@ -407,3 +410,6 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **Message sync (mobile only)** - Disable Messaging Everywhere and text message backup and restore.
 - **MMS (mobile only)** - Disable the MMS send/receive functionality on the device.
 - **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
+
+## More Information
+For additional technical details on each setting and what editons of Windows are suppprted, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

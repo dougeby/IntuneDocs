@@ -72,7 +72,7 @@ The current version supports the following OData query parameters: `$filter, $or
 ## Filter examples
 
 > [!NOTE]
-> The the filter examples assume today is 2/21/2018.
+> The filter examples assume today is 2/21/2018.
 
 |                             Filter                             |           Performance Optimization           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|

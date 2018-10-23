@@ -36,7 +36,7 @@ Use app configuration policies in Microsoft Intune to supply settings to Android
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.<p></p>
 > As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.<p></p>
-> For Microsoft Word, Microsoft Excel, Microsoft PowerPoint, you must use Android 16.0.9327.1000 and later.
+> For Microsoft Word, Microsoft Excel, Microsoft PowerPoint, you must use app version 16.0.9327.1000 and later.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.

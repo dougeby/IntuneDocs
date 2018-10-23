@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,28 +64,48 @@ Enter your company's support infomation to provide your employee with a contact 
 | **Additional information**| 120 | Displayed on the **Contact IT** page. |
 
 
-## Company branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background. In order to quickly preview branding configuration without a test device, you can to go to [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Note that the logo you upload will be used for email templates.		
+## Company identity branding customization		
+You can customize your Company Portal with your company logo, company name, theme color and background. 	
 
-### Theme color
+### Theme color and logo in the Company Portal
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
 
 |Field name|More information|
 |---|---|
-|**Color type**| Select a theme color to apply to the Company Portal. You can choose from a standard color, or enter a specific hex code. |
-|**Choose color** or **Hex color code**| Select a theme color to apply to the Company Portal. You can choose from a standard color, or enter a specific hex code. These options are provided based on the **Color type** you select.  |
+|**Select a standard color or enter a six-digit hex code**| Choose **Standard** to visual select a color. Choose **Custom** to select a specific color based on a hex code value.|
+|**Choose theme color**| Select a theme color to apply to the Company Portal. You can choose from a standard color, or enter a specific hex code. |
+|**Display**| Select whether to display the **Company logo and name**, the **Company logo only**, or the **Company name only**. |
+|**Upload your company logo**|You can upload your company logo to show in your Company Portal. Note the text color is automatically chosen to provide the highest level of contrast. For the best appearance, upload a logo with a transparent background.<p><ul><li>Max image size: 400px x 400px</li><li>Maximum file size: 750KB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
-### Company logo
-Upload your company logo to make it visible throughout the Intune user experience.
+After you upload the logo, the preview area will show the logo with the theme color. If you chose to display your company name, it will be shown in black or white in the Company Portal, and it will be chosen automatically to provide the highest level of contrast based on your theme color. The preview area on the screen will not show your company’s name. 
+
+### Logo to use on white or light backgrounds
+Choose a logo that will look best on white or light backgrounds.
 
 |Field name|More information|
 |---|---|
-|**Show company logo**|When you enable this option, you can upload your company logo to show in your Company Portal. You can upload two logos: one logo that is displayed when the Company Portal background is white, and one logo that is displayed when the Company Portal background uses your selected theme color. |
-|**Upload a logo to use on theme color backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 400 pixels and be 750 KB or less in size. |
-|**Upload logo to use on light backgrounds**| This option is available if you have chosen to show the company logo. The logo must be a .png or .jpg file type and have a maximum resolution of 400 x 400 pixels and be 750 KB or less in size. |
-|**Show company name next to logo**| Select this option to show the company name you entered next to the uploaded logo. |
+|**Upload your logo**| This option is available if you have chosen to show the company logo. For the best appearance, upload a logo with a transparent background.<p><ul><li>Max image size: 400px x 400px</li><li>Maximum file size: 750KB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
-After you save your changes, you can choose **Preview your settings in the Intune Web Portal** at the top of the blade to see how your configurations will look.
+### Brand image for Company Portal
+
+Display a brand image that reflects your company brand. Support for a brand image is being added to the Company Portal apps, but may not be visible on all platforms.
+
+|Field name|More information|
+|---|---|
+|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+
+The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
+
+- Reach out to your marketing or art department. They may already have an approved set of branded brand images. They may also be able to help you optimize images as needed. 
+
+- Consider both landscape and portrait composition. The image should have sufficient background surrounding the focal point. The image may be cropped differently based on device size and orientation. 
+
+- Avoid using a generic, stock image. The image should reflect your company’s brand and feel familiar to users. If you don’t have one, it’s better to not use one than use a generic one that has no meaning to your user. 
+
+- Remove unnecessary metadata. Image file can come with metadata such as camera profile, geo location, title, caption, and so on. Use an image optimization tool to strip out this information to maintain quality while meeting file size limit. 
+
+After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
+
 
 ## Windows Company Portal keyboard shortcuts
 
