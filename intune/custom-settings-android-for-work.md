@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune custom profile settings for Android work profiles
-titlesuffix: Microsoft Intune
-description: Learn how to create Microsoft Intune custom profile settings for Android work profile devices.
+title: Add custom settings to Android Enterprise devices in Microsoft Intune - Azure | Microsoft Docs
+description: Add or create a custom profile for Android Enterprise devices to create  in Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,35 +26,76 @@ ms.custom: intune-azure
 
 ---
 
-# Create Intune custom profile settings for Android work profile devices
+# Use custom settings for Android Enterprise devices in Microsoft Intune
 
-Use the Intune Android work profile custom configuration policy to assign OMA-URI settings that can be used to control features on Android work profile devices. These are standard settings that many mobile device manufacturers use to control device features.
+Using Microsoft Intune, you can add or create custom settings for your Android Enterprise devices. For settings that aren't built in to Intune, you can also use this custom profile.
 
-This capability is intended to allow you to assign Android settings that are not configurable with Intune policies. Intune supports a limited number of Android custom policies at present. See the examples in this article to find out which policies you can configure.
+Android Enterprise custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to control features on Android Enterprise devices. These settings are typically used by mobile device manufacturers to control features on the device.
 
-## Create a custom profile
+Intune supports a limited number of Android custom profiles.
 
-1. Use the instructions in [How to configure custom device settings](custom-settings-configure.md) to get started. For **Platform** choose **Android enterprise** and for **Profile type** choose **Custom**.
-2. On the **Custom OMA-URI Settings** blade, choose **Add** to add a new setting.
-3. On the **Add Row** blade, configure the following:
-	- **Name** - Enter a unique name for the Android work profile custom settings to help you identify it in the Azure portal.
-	- **Description** - Provide a description that gives an overview of the Android custom policy and other relevant information that helps you to locate it.
-	- **OMA-URI** - Enter the OMA-URI you want to supply a setting for.
-	- **Data type** - Select the data type in which you will specify this OMA-URI setting. Choose from **String**, **String (XML file)**, **Date and time**, **Integer**, **Floating point**, **Boolean**, or **Base64 (file)**.
-	- **Value** - Specify the value to associate with the OMA-URI that you specified previously. The method you use to supply this value will vary according to the data type you selected. For example, if you chose **Date and time**, you'll select the value from a date picker.
-4. When you have finished, choose OK to return to the **Custom OMA-URI Settings**, and then add more settings, or choose **Create** to create the custom profile.
+This article shows you how to create a custom profile for Android Enterprise devices. It also provides an example of a custom profile that blocks copy-and-paste.
 
+## Create the profile
+
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create profile**.
+3. Enter the following settings:
+
+    - **Name**: Enter a name for the profile, such as `android enterprise custom profile`
+    - **Description**: Enter a description for the profile
+    - **Platform**: Choose **Android Enterprise**
+	- **Profile type**: Choose **Custom**
+
+4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
+
+    - **Name**: Enter a unique name for the OMA-URI setting so you can easily find it.
+    - **Description**: Enter a description that gives an overview of the setting, and any other important details.
+    - **OMA-URI**: Enter the OMA-URI you want to supply a setting.
+    - **Data type**: Choose the data type you'll use for this OMA-URI setting. Your options:
+
+      - String
+      - String (XML file)
+      - Date and time
+      - Integer
+      - Floating point
+      - Boolean
+      - Base64 (file)
+
+    - **Value**: Enter the data value you want to associate with the OMA-URI you entered. The value depends on the data type you selected. For example, if you choose **Date and time**, select the value from a date picker.
+
+5. Select **OK** to save your changes. Continue to add more settings as needed.
+6. When finished, choose **OK** > **Create** to create the Intune profile. When complete, your profile is shown in the **Device configuration - Profiles** list.
 
 ## Example
 
-In this example, you'll create a custom profile that can be used to restrict whether copy and paste actions between work and personal apps are allowed on Android work profile devices.
+In this example, you create a custom profile that restricts copy and paste actions between work and personal apps on Android Enterprise devices.
 
-1. Use the procedure in this article to create a custom profile for Android work profile devices using the following values:
-	- **Name** - Enter "Block copy and paste" or text of your own choosing.
-	- **Description** - Enter "Blocks copy/paste between work and personal apps" or text of your own choosing.
-	- **OMA-URI** - Enter **./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste**.
-	- **Data type** - Select **Boolean** to indicate that the value for this OMA-URI is either **True** or **False**.
-	- **Value** - Select **True**.
-2. You should end up with a setting looking similar to this image.
-![Block copy and paste for Android work profile.](./media/custom-policy-afw-copy-paste.png)
-3. Now, when you assign this custom profile to Android work profile devices you manage, copy and paste will be blocked between apps in the work, and personal profiles.
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create profile**.
+3. Enter the following settings:
+
+    - **Name**: Enter a name for the profile, such as `android ent block copy paste custom profile`.
+    - **Description**: Enter a description for the profile.
+    - **Platform**: Choose **Android Enterprise**.
+	- **Profile type**: Choose **Custom**.
+
+4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
+
+    - **Name**: Enter something like `Block copy and paste`.
+    - **Description**: Enter something like `Blocks copy/paste between work and personal apps`.
+    - **OMA-URI**: Enter `./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste`.
+    - **Data type**: Choose **Boolean** so the value for this OMA-URI is **True** or **False**.
+    - **Value**: Choose **True**.
+
+5. After you enter the settings, your environment should like similar to the following image:
+
+    ![Block copy and paste for Android work profile.](./media/custom-policy-afw-copy-paste.png)
+
+When you assign this profile to Android Enterprise devices you manage, copy and paste is blocked between apps in the work and personal profiles.
+
+## Next steps
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md).
+
+See how to [create the profile on Android devices](custom-settings-android.md).
