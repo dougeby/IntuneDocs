@@ -64,6 +64,19 @@ The following list is an overview on how NAC integration works when integrated w
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
 
+## Use NAC on your iOS devices
+
+When you create an [iOS VPN profile](vpn-settings-ios.md), you can allow Network Access Control (NAC). This feature includes the NAC ID of the device in the VPN profile. The NAC partner solution, such as Citrix, can then get the ID, and confirm if the VPN profile is compliant or not compliant.
+
+Currently, there aren’t any NAC partner solutions or VPN clients that support network access control.
+
+To use this feature, be sure:
+
+- Install the latest version of your NAC partner solution in your environment. Some VPN clients don't support this feature yet. 
+- In the [iOS VPN profile](vpn-settings-ios.md), choose to enable network access control. This setting includes the ID information in the VPN profile.
+- Know that if the VPN is connected when the device checks in, a security feature causes the VPN profile to disconnect.
+
+
 ## Next steps
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
