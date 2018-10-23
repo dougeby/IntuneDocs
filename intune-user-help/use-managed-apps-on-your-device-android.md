@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/26/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,14 +49,14 @@ When you first access work or school data in a managed app, you'll receive a mes
 ## Commonly managed apps  
 Examples of commonly required or available managed apps within schools and workplaces are:
 
--   Intune Managed Browser
+-   Microsoft Edge
 
--   Microsoft Azure Information Protection Viewer
+-   Microsoft Outlook
 
 -   Microsoft Word, Excel, and PowerPoint
 
 ## How do I get managed apps?
-After you register your device with the Company Portal, there are three ways to get managed apps.
+First, you'll need to install the Company Portal and, if required, get your device managed. After that, there are three ways you can get managed apps.
 * Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
 * Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
@@ -64,22 +64,26 @@ After you register your device with the Company Portal, there are three ways to 
 ## What can my company support manage in an app?
 The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
--   Access to specific websites
+* Access to specific websites  
 
--   Ability to share and transfer data between apps
+* Access to internal company websites using Edge and the Azure Active Directory proxy  
 
--   How and where you save files
+* Minimum version of app, version of OS
 
--   Copy and paste functionality
+* Ability to share and transfer data between apps  
 
--   PIN access requirements
+* How and where you save files  
 
--   How you sign in, using company credentials
+* Copy and paste functionality  
 
--   Ability to back up data to the cloud
+* PIN access requirements  
 
--   Ability to take screenshots
+* How you sign in, using company credentials  
 
--   Data encryption requirements
+* Ability to back up data to the cloud  
+
+* Ability to take screenshots  
+
+* Data encryption requirements  
 
 Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
