@@ -5,8 +5,8 @@ title: Check Point SandBlast MTD with Microsoft Intune
 titlesuffix:
 description: How to set up CheckPoint SandBlast Mobile Threat Defense (MTD) with Intune to control mobile device access to your corporate resources.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article

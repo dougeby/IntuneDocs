@@ -28,16 +28,18 @@ ms.custom: intune-azure
 ---
 
 # Tutorial: Protect Exchange Online email on managed devices
-
 Learn about using device compliance policies with conditional access to make sure that iOS devices can access Exchange Online email only if they're managed by Intune and using an approved email app. 
+
 In this tutorial, you'll learn how to: 
-  - Create an Intune iOS device compliance policy to set the conditions that a device must meet to be considered compliant. 
-  - Create an Azure Active Directory (Azure AD) conditional access policy that requires iOS devices to enroll in Intune, comply with Intune policies, and use the approved Outlook mobile app to access Exchange Online email.
+> [!div class="checklist"]
+> * Create an Intune iOS device compliance policy to set the conditions that a device must meet to be considered compliant.
+> * Create an Azure Active Directory (Azure AD) conditional access policy that requires iOS devices to enroll in Intune, comply with Intune policies, and use the approved Outlook mobile app to access Exchange Online email.
+
+If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
   - You'll need a test tenant with the following subscriptions for this tutorial:
     - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune subscription ([free trial](free-trial-sign-up.md))
     - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
   - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 

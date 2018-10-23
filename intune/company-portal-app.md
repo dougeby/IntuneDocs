@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The Microsoft Intune company portal is where users access company data and can d
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Client apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
 
 > [!Note]		
-> The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.	
+> If you are using Azure Government, app logs are offered to the end user to decide how they will share when they initiate the process to get help with an issue. However, if you are not using Azure Government, the Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the process to get help with an issue. Sending the app logs to Microsoft will make it easier to troubleshoot and resolve issues. 
 
 ## Company information and privacy statement		
 The company name is displayed as the Company Portal title. The privacy statement is displayed when a user clicks on the privacy link.
@@ -65,7 +65,7 @@ Enter your company's support infomation to provide your employee with a contact 
 
 
 ## Company branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background.		
+You can customize your Company Portal with your company logo, company name, theme color and background. In order to quickly preview branding configuration without a test device, you can to go to [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Note that the logo you upload will be used for email templates.		
 
 ### Theme color
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
@@ -86,3 +86,30 @@ Upload your company logo to make it visible throughout the Intune user experienc
 |**Show company name next to logo**| Select this option to show the company name you entered next to the uploaded logo. |
 
 After you save your changes, you can choose **Preview your settings in the Intune Web Portal** at the top of the blade to see how your configurations will look.
+
+## Windows Company Portal keyboard shortcuts
+
+End users can trigger naivation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+
+The following keyboard shortcuts are available in the Windows Company Portal app.
+
+| Area | Description | Keyboard shortcut |
+|:------------------:|:--------------:|:-----------------:|
+| Navigation menu | Navigation | Alt+M |
+|  | Home | Alt+H |
+|  | All apps | Alt+A |
+|  | Installed apps | Alt+I |
+|  | Send feedback | Alt+F |
+|  | My profile | Alt+U |
+|  | Settings | Alt+T |
+| Home - Device tile | Rename | F2 |
+|  | Remove | Ctrl+D or Delete |
+|  | Check access | Ctrl+M or F9 |
+| Device details | Rename | F2 |
+|  | Remove | Ctrl+D or Delete |
+|  | Check access | Ctrl+M or F9 |
+| App details | Install | Ctrl+I |
+
+## Next steps
+
+- [Manually add the Windows 10 Company Portal app by using Microsoft Intune](store-apps-company-portal-app.md)

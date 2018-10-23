@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 10/09/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -72,7 +72,7 @@ The current version supports the following OData query parameters: `$filter, $or
 ## Filter examples
 
 > [!NOTE]
-> The the filter examples assume today is 2/21/2018.
+> The filter examples assume today is 2/21/2018.
 
 |                             Filter                             |           Performance Optimization           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|

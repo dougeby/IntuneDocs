@@ -4,8 +4,8 @@ title: How to integrate Windows Hello for Business with Microsoft Intune
 titleSuffix:
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 08/28/2018
 ms.topic: article
@@ -56,7 +56,7 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 ## Create a Windows Hello for Business policy
 
-1. In the the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
+1. In the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune pane, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
 

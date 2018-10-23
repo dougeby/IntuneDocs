@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Microsoft Intune Wi-Fi settings for devices running Android 
+title: Configure Wi-Fi settings for Android devices in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Learn Intune  Wi-Fi configuration settings on devices running Android.
+description: Create or add a WiFi device configuration profile for Android. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/6/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,52 +25,89 @@ ms.custom: intune-azure
 
 ---
 
-# Configure Wi-Fi settings in Microsoft Intune for devices running Android, Android work profiles, and Android kiosk devices
+# Add Wi-Fi settings for devices running Android in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+You can create a profile with specific WiFi settings, and then deploy this profile to your Android devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
 
-This article shows you the Wi-Fi settings you can configure in Microsoft Intune for devices running Android and Android work profiles.
+These Wi-Fi settings are separated in to two categories: Basic settings and Enterprise-level settings.
 
-## Wi-Fi settings for basic and enterprise profiles
+This article describes these settings.
 
-The following Wi-Fi settings are available for both Android and Android work profile devices:
+## Before you begin
 
-- **Network name** - Enter a name for this Wi-Fi connection. This is the name that users see when they browse the list of available connections on their device.
-- **SSID** - Short for service set identifier. This is the real name of the wireless network that devices connect to. However, users only see the network name you configured when they choose the connection.
-- **Connect automatically** - Makes the device connect whenever it is in the range of this network.
-- **Hidden network** - Prevents this network from being shown in the list of available networks on the device.
+[Create a device profile](device-profile-create.md).
 
-## Wi-Fi settings available for enterprise kiosk profiles
-- **Wi-Fi type**: These Wi-Fi type settings are only available when you choose **Profile type** > **Device Owner Only** > **Wi-Fi**.
-    - **Open (no authentication)**
-    - **WEP-Pre-shared key**: You must supply the password in the **Pre-shared key** box.
-    - **WPA-Pre-shared key**: You must supply the password in the **Pre-shared key** box
+## Basic profile
 
-## Wi-Fi settings for Android legacy and Android work profiles only
+- **Wi-Fi type**: Choose **Basic**.
+- **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to.
+- **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
+- **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
 
-- **EAP type** - Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections from:
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **PEAP**
+## Enterprise profile
 
-### Further options when you choose an EAP type
+- **Wi-Fi type**: Choose **Enterprise**.
+- **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to.
+- **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
+- **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
+- **EAP type**: Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections. Your options: 
 
-#### Server Trust
+  - **EAP-TLS**: Also enter:
 
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
 
+      Select **OK** to save your changes.
 
-|Setting name|More information|Use when|
-|-------------|---------------|-----------|
-|**Certificate server names**|Specify one or more common names used in the certificates issued by your trusted certificate authority (CA). If you provide this information, you can bypass the dynamic trust dialog that is displayed on user's devices when they connect to this Wi-Fi network.|EAP type is **EAP-TLS** or **EAP-TTLS**|
-|**Root certificate for server validation**|Choose the trusted root certificate profile used to authenticate the connection. |EAP type is **EAP-TLS**, **EAP-TTLS**, or **PEAP**|
-|**Identity privacy (outer identity)**|Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.|EAP type is **PEAP**|
+    - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
+      Select **OK** to save your changes.
 
-#### Client Authentication
+  - **EAP-TTLS**: Also enter:
 
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
 
-|                                     Setting name                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       More information                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                            Use when                            |
-|--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| <strong>Client certificate for client authentication (Identity certificate)</strong> |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Choose the SCEP or PKCS certificate profile used to authenticate the connection.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |              EAP type is <strong>EAP-TLS</strong>              |
-|                        <strong>Authentication method</strong>                        | Select the authentication method for the connection:<br>- <strong>Certificates</strong> to select the SCEP or PKCS the client certificate that is the identity certificate presented to the server.<br><br>- <strong>Username and Password</strong> to specify a different method for authentication. <br><br>If you selected <strong>Username and Password</strong>, configure:<br><br>-  <strong>Non-EAP method (inner identity)</strong>, then select how you authenticate the connection from:<br>- <strong>None</strong><br>- <strong>Unencrypted password (PAP)</strong><br>- <strong>Challenge Handshake Authentication Protocol (CHAP)</strong><br>- <strong>Microsoft CHAP (MS-CHAP)</strong><br>- <strong>Microsoft CHAP Version 2 (MS-CHAP v2)</strong><br>The available options depend on the EAP type you selected.<br><br><strong>and</strong><br><br>- <strong>Identity privacy (outer identity)</strong> - Specify the text sent in response to an EAP identity request. This text can be any value. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel. | EAP type is <strong>EAP-TTLS</strong> or <strong>PEAP</strong> |
+      Select **OK** to save your changes.
 
+    - **Client Authentication** - Choose an **Authentication method**. Your options:
+
+      - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
+        - **Non-EAP method (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
+
+          Your options: **Unencrypted password (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)**, or **Microsoft CHAP Version 2 (MS-CHAP v2)**
+
+      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+
+        Select **OK** to save your changes.
+
+      - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+  - **PEAP**: Also enter:
+
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+
+      Select **OK** to save your changes.
+
+    - **Client Authentication** - Choose an **Authentication method**. Your options:
+
+      - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
+        - **Non-EAP method for authentication (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
+
+          Your options: **None** or **Microsoft CHAP Version 2 (MS-CHAP v2)**
+
+      - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
+
+        Select **OK** to save your changes.
+
+      - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
+
+Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
+
+## Next steps
+
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+
+## More resources
+
+- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.
+
+- Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and Android kiosk](wi-fi-settings-android-enterprise.md).

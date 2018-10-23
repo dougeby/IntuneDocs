@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,6 +48,9 @@ The configuration settings are used whenever the app checks for them. Typically,
 You have two options for how to use app configurations with Intune:
  - **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider.
  - **Managed apps** - An app is managed without device enrollment.
+
+> [!NOTE]
+> As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.
 
 ## Apps that support app configuration
 

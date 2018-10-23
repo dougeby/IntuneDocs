@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,8 +25,6 @@ ms.custom: intune-azure
 
 # Configure and use SCEP certificates with Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
 This article shows how to configure your infrastructure, then create and assign Simple Certificate Enrollment Protocol (SCEP) certificate profiles with Intune.
 
 ## Configure on-premises infrastructure
@@ -36,16 +34,18 @@ This article shows how to configure your infrastructure, then create and assign 
 - **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For details, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune does not support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
+- **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune doesn't support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
 The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
 - **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**NDESConnectorSetup.exe**). Then you can run **NDESConnectorSetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector.
 
-  - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS is not required, but you can issue and revoke certificates when it's enabled.
+  - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
-- **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2  or later as a Web Application Proxy (WAP) server. This configuration:
+- **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
   - Allows devices to receive certificates using an Internet connection.
   - Is a security recommendation when devices connect through the Internet to receive and renew certificates.
+  
+- **Azure AD Application Proxy** (optional): The Azure AD Application Proxy can be used instead of a dedicated Web Application Proxy (WAP) Server to publish the NDES Server to the Internet. For more information, see [How to provide secure remote access to on-premises applications](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### Additional
 
@@ -69,7 +69,7 @@ We recommend publishing the NDES server through a proxy, such as the [Azure AD a
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server.|
-|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA, and assign it to devices by using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to devices using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
@@ -101,7 +101,10 @@ In this step, you:
 
    The template must have the following configurations:
 
-   - Enter a friendly **Template display name** for the template.
+   - In **General**:
+   
+       - Confirm the **Publish certificate in Active Directory** property is **not** checked.
+       - Enter a friendly **Template display name** for the template.
 
    - In **Subject Name**, select **Supply in the request**. (Security is enforced by the Intune policy module for NDES).
 
@@ -115,7 +118,7 @@ In this step, you:
      > [!NOTE]
      > To revoke certificates, the NDES service account needs *Issue and Manage Certificates* rights for each certificate template used by a certificate profile.
 
-3. Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you have the option to configure the CA to allow the requester to enter a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the remainder of this step.
+3. Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you can configure the CA to allow the requester to enter a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the rest of this step.
 
    > [!IMPORTANT]
    > iOS and macOS always use the value set in the template, regardless of other configurations you make.
@@ -137,7 +140,7 @@ Example template configuration:
 
 Configure the CA to allow the requester to enter the validity period:
 
-1. On the CA run the following commands:
+1. On the CA, run the following commands:
    - **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
    - **net stop certsvc**
    - **net start certsvc**
@@ -159,21 +162,25 @@ In this step, you:
    1. In the Wizard, select **Active Directory Certificate Services** to gain access to the AD CS Role Services. Select the **Network Device Enrollment Service**, uncheck **Certification Authority**, and then complete the wizard.
 
       > [!TIP]
-      > In **Installation progress**, do not check **Close**. Instead, select the **Configure Active Directory Certificate Services on the destination server** link. The **AD CS Configuration** wizard opens, which you use for the next step. After AD CS Configuration opens, you can close the Add Roles and Features wizard.
+      > In **Installation progress**, don't check **Close**. Instead, select the **Configure Active Directory Certificate Services on the destination server** link. The **AD CS Configuration** wizard opens, which you use for the next step. After AD CS Configuration opens, you can close the Add Roles and Features wizard.
 
-   2. When NDES is added to the server, the wizard also installs IIS. Ensure IIS has the following configurations:
+   2. When NDES is added to the server, the wizard also installs IIS. Confirm IIS has the following configuration:
 
-   3. **Web Server** > **Security** > **Request Filtering**
+       - **Web Server** > **Security** > **Request Filtering**
 
-   4. **Web Server** > **Application Development** > **ASP.NET 3.5**. Installing ASP.NET 3.5 installs .NET Framework 3.5. When installing .NET Framework 3.5, install both the core **.NET Framework 3.5** feature and **HTTP Activation**.
+       - **Web Server** > **Application Development** > **ASP.NET 3.5** 
 
-   5. **Web Server** > **Application Development** > **ASP.NET 4.5**. Installing ASP.NET 4.5 installs .NET Framework 4.5. When installing .NET Framework 4.5, install the core **.NET Framework 4.5** feature, **ASP.NET 4.5**, and the **WCF Services** > **HTTP Activation** feature.
+            Installing ASP.NET 3.5 installs .NET Framework 3.5. When installing .NET Framework 3.5, install both the core **.NET Framework 3.5** feature and **HTTP Activation**.
 
-   6. **Management Tools** > **IIS 6 Management Compatibility** > **IIS 6 Metabase Compatibility**
+       - **Web Server** > **Application Development** > **ASP.NET 4.5** 
 
-   7. **Management Tools** > **IIS 6 Management Compatibility** > **IIS 6 WMI Compatibility**
+            Installing ASP.NET 4.5 installs .NET Framework 4.5. When installing .NET Framework 4.5, install the core **.NET Framework 4.5** feature, **ASP.NET 4.5**, and the **WCF Services** > **HTTP Activation** feature.
 
-   8. On the server, add the NDES service account as a member of the **IIS_IUSR** group.
+       - **Management Tools** > **IIS 6 Management Compatibility** > **IIS 6 Metabase Compatibility**
+
+       - **Management Tools** > **IIS 6 Management Compatibility** > **IIS 6 WMI Compatibility**
+
+       - On the server, add the NDES service account as a member of the **IIS_IUSR** group.
 
 2. In an elevated command prompt, run the following command to set the SPN of the NDES Service account:
 
@@ -227,7 +234,7 @@ In this step, you:
 
     ![IIS max URL and query length](./media/SCEP_IIS_max_URL.png)
 
-5. Restart the server. Running **iisreset** on the server is not sufficient to finalize these changes.
+5. Restart the server. Do not use **iisreset**; it doesn't finalize these changes.
 6. Browse to `http://*FQDN*/certsrv/mscep/mscep.dll`. You should see an NDES page similar to the following:
 
     ![Test NDES](./media/SCEP_NDES_URL.png)
@@ -241,7 +248,7 @@ In this step, you:
     > [!TIP]
     > After you bind the SSL certificate in IIS, install a client authentication certificate. This certificate can be issued by any CA that is trusted by the NDES Server. Although it's not a best practice, you can use the same certificate for both server and client authentication as long as the certificate has both Enhance Key Usages (EKUs). Review the following steps for information about these authentication certificates.
 
-   1. After you get the server authentication certificate, open **IIS Manager**, and select the **Default Web Site**. In the **Actions** pane, select **Bindings** .
+   1. After you get the server authentication certificate, open **IIS Manager**, and select the **Default Web Site**. In the **Actions** pane, select **Bindings**.
 
    2. Select **Add**, set **Type** to **https**, and then confirm the port is **443**. Only port 443 is supported for standalone Intune.
 
@@ -252,13 +259,13 @@ In this step, you:
       > - A **Subject Name** with an external public server name
       > - A **Subject Alternative Name** that includes the internal server name
 
-2. On your NDES Server, request and install a **client authentication** certificate from your internal CA, or a public certificate authority. This can be the same certificate as the server authentication certificate if that certificate has both capabilities.
+2. On your NDES Server, request and install a **client authentication** certificate from your internal CA, or a public certificate authority. This certificate can be the same certificate as the server authentication certificate if that certificate has both capabilities.
 
     The client authentication certificate must have the following properties:
 
     - **Enhanced Key Usage**: This value must include **Client Authentication**
 
-    - **Subject Name**: This value must be equal to the DNS name of the server where you are installing the certificate (the NDES Server)
+    - **Subject Name**: The value must be equal to the DNS name of the server where you're installing the certificate (the NDES Server)
 
 ##### Configure IIS request filtering
 
@@ -288,13 +295,16 @@ In this step, you:
 
 ##### Download, install, and configure the certificate connector
 
-![ConnectorDownload](./media/certificates-download-connector.png)
+> [!IMPORTANT] 
+> The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA). It **must** also be installed on the same server as the Network Device Enrollment Service (NDES) role.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device configuration**, and then select **Certification Authority**.
-4. Select **Add**, and **Download the connector file**. Save the download to a location where you can access it from the server where you're going to install it.
-5. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device configuration** > **Certification Authority** > **Add**
+3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
+
+    ![ConnectorDownload](./media/certificates-download-connector.png)
+
+4. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
 
     1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
     2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
@@ -302,34 +312,34 @@ In this step, you:
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
 
-6. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Step 4.
+5. When prompted for the client certificate for the Certificate Connector, choose **Select**, and select the **client authentication** certificate you installed on your NDES Server in Step 4.
 
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
 
     > [!IMPORTANT]
     > The Intune Certificate Connector can't be enrolled on a device with Internet Explorer Enhanced Security Configuration enabled. To use the Intune Certificate Connector, [disable IE Enhanced security configuration](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
-7. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
+6. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 
     > [!TIP]
     > If you close the wizard before launching the Certificate Connector UI, you can reopen it by running the following command:
     >
     > <install_Path>\NDESConnectorUI\NDESConnectorUI.exe
 
-8. In the **Certificate Connector** UI:
+7. In the **Certificate Connector** UI:
 
     Select **Sign In**, and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
 
     > [!IMPORTANT]
     > The user account must be assigned a valid Intune license. If the user account does not have a valid Intune license, then NDESConnectorUI.exe fails.
 
-    If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**, and then enter the proxy server name, port, and account credentials to connect.
+    If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**. Then enter the proxy server name, port, and account credentials to connect.
 
     Select the **Advanced** tab, and then enter credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority. **Apply** your changes.
 
     You can now close the Certificate Connector UI.
 
-9. Open a command prompt, enter **services.msc**, and then **Enter**. Right-click the **Intune Connector Service**, and **Restart**.
+8. Open a command prompt, enter **services.msc**, and then **Enter**. Right-click the **Intune Connector Service** > **Restart**.
 
 To validate that the service is running, open a browser, and enter the following URL. It should return a **403** error:
 
@@ -340,18 +350,126 @@ To validate that the service is running, open a browser, and enter the following
 
 ## Create a SCEP certificate profile
 
-1. In the Azure portal, open Microsoft Intune.
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the SCEP certificate profile.
 4. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can select one of the following platforms for device restriction settings:
    - **Android**
+   - **Android Enterprise**
    - **iOS**
    - **macOS**
    - **Windows Phone 8.1**
    - **Windows 8.1 and later**
    - **Windows 10 and later**
 5. From the **Profile** type drop-down list, select **SCEP certificate**.
-6. On the **SCEP Certificate** pane, configure the following settings:
+6. Enter the following settings:
+
+   - **Certificate type**: Choose **User** for user certificates. Choose **Device** for user-less devices, such as kiosks. **Device** certificates are available for the following platforms:  
+     - iOS
+     - Windows 8.1 and later
+     - Windows 10 and later
+
+   - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
+
+        **User certificate type**  
+
+        You can include the user's email address in the subject name. Choose from:
+
+        - **Not configured**
+        - **Common name**
+        - **Common name including email**
+        - **Common name as email**
+        - **IMEI (International Mobile Equipment Identity)**
+        - **Serial number**
+        - **Custom**: When you select this option, a **Custom** text box is also shown. Use this field to enter a custom subject name format, including variables. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
+
+            - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
+            - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
+            - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
+            - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distinguished names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
+
+                To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
+
+            By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
+
+        **Device certificate type**  
+
+        When you use the **Device** certificate type, you can also use the following device certificate variables for the value:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId​}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        These variables can be added with static text in a custom value textbox. For example, the common name can be added as `CN = {{DeviceName}}text`.
+
+        > [!IMPORTANT]
+        >  - In the static text of the subject, curly brackets **{ }** not enclosing a variable will resolve to an error. 
+        >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail. 
+
+
+   - **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
+
+        **User certificate type**  
+
+        The following attributes are available:
+
+        - Email address
+        - User principal name (UPN)
+
+            For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If a client certificate is used to authenticate to a Network Policy Server, set the subject alternative name to the UPN. 
+
+        **Device certificate type**  
+
+        A table format text box that you can customize. The following attributes are available:
+
+        - DNS
+
+        With the **Device** certificate type, you can use the following device certificate variables for the value:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId​}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        These variables can be added with static text in the custom value textbox. For example, the DNS attribute can be added as `DNS name = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
+        >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject alternative name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail.  
 
    - **Certificate validity period**: If you ran the `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` command on the issuing CA, which allows a custom validity period, you can enter the amount of remaining time before the certificate expires.<br>You can enter a value that is lower than the validity period in the certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can enter a value of one year, but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
    - **Key storage provider (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Enter where the key to the certificate is stored. Choose from one of the following values:
@@ -360,40 +478,17 @@ To validate that the service is running, open a browser, and enter the following
      - **Enroll to Passport, otherwise fail (Windows 10 and later)**
      - **Enroll to Software KSP**
 
-   - **Subject name format**: From the list, select how Intune automatically creates the subject name in the certificate request. If the certificate is for a user, you can also include the user's email address in the subject name. Choose from:
-     - **Not configured**
-     - **Common name**
-     - **Common name including email**
-     - **Common name as email**
-     - **IMEI (International Mobile Equipment Identity)**
-     - **Serial number**
-     - **Custom**: When you select this option, another drop-down field is displayed. Use this field to enter a custom subject name format. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
-       - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
-       - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
-       - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
-       - **CN={{OnPrem_Distinguished_Name}}**: A sequence of relative distingushed names separated by comma, such as `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          To use the `{{OnPrem_Distinguished_Name}}` variable, be sure to sync the `onpremisesdistingishedname` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called `onPremisesSamAccountName`. Intune can substitute that variable as part of a certificate issuance request in the subject of a SCEP certificate.  The samAccountName attribute is the user logon name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user logon name format is: `DomainName\testUser`, or only `testUser`.
-
-          To use the `{{onPremisesSamAccountName}}` variable, be sure to sync the `onPremisesSamAccountName` user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
-
-       By using a combination of one or many of these variables and static strings, you can create a custom subject name format, such as: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In this example, you created a subject name format that, in addition to the CN and E variables, uses strings for Organizational Unit, Organization, Location, State, and Country values. [CertStrToName function](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describes this function, and its supported strings.
-
-- **Subject alternative name**: Enter how Intune automatically creates the values for the subject alternative name (SAN) in the certificate request. For example, if you select a user certificate type, you can include the user principal name (UPN) in the subject alternative name. If the client certificate is used to authenticate to a Network Policy Server, you must set the subject alternative name to the UPN.
-- **Key usage**: Enter the key usage options for the certificate. Your options:
-  - **Key encipherment**: Allow key exchange only when the key is encrypted
-  - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
-- **Key size (bits)**: Select the number of bits contained in the key
-- **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
-- **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile.
-- **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
-- **Enrollment Settings**
-  - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
-  - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP.
-  - Select **OK**, and **Create** your profile.
+   - **Key usage**: Enter the key usage options for the certificate. Your options:
+     - **Key encipherment**: Allow key exchange only when the key is encrypted
+     - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
+   - **Key size (bits)**: Select the number of bits contained in the key
+   - **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
+   - **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile.
+   - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
+   - **Enrollment Settings**
+     - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
+     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP.
+     - Select **OK**, and **Create** your profile.
 
 The profile is created and appears on the profiles list pane.
 

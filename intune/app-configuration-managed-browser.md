@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Manage web access with the Managed Browser app 
+title: Manage web access with a policy-protected browser 
 titlesuffix: Microsoft Intune
-description: Deploy the Managed Browser application to restrict web browsing and the transfer of web data to other apps.
+description: Use a policy-protected browser to restrict web browsing and web data transferring.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -20,26 +20,45 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: maxles
+ms.reviewer: ilwu
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using protected browser policies with Microsoft Intune  
+# Manage Internet access using an Microsoft Intune policy-protected browser
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Protected browsers include Microsoft Edge and the Intune Managed Browser. Edge and Managed Browser are web browsing apps that you can download from public app stores for use in your organization. When configured with Intune, protected browsers can be:
-- Used to access corporate sites and SaaS apps with Single Sign-On via the MyApps service, while keeping web data protected.
-- Pre-configured with a list of URLs and domains to restrict which sites the user can navigate to in the corporate context.
-- Pre-configured with a homepage, and bookmarks you specify.
+Using a browser protected with Intune policy (Microsoft Edge or Intune Managed Browser), you can ensure corporate websites are always accessed with safeguards in place.  When configured with Intune, protected browsers can take advantage of the following:
+
+- Application protection policies.
+- Conditional access.
+- Single sign-on.
+- Application configuration settings.
+- Azure application proxy integration.
+
+## Getting started
+
+Microsoft Edge and the Intune Managed Browser are web browser apps that you and your end users can download from public app stores for use in your organization. 
+
+Operating system requirements for browser policies:
+- Android 4 and later, or
+- iOS 8.0 and later.
+
+Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
+
+>[!NOTE]
+>The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.
+
+
+## Application protection policies for protected browsers
 
 Because Edge and Managed Browser have integration with the Intune SDK, you can also apply app protection policies to them, including:
-- Controlling the use of cut, copy, and paste
-- Preventing screen captures
-- Ensuring that links to content that users select open only in other managed apps.
+- Controlling the use of cut, copy, and paste.
+- Preventing screen captures.
+- Ensuring corporate links open only within managed apps and browsers.
 
 For details, see [What are app protection policies?](app-protection-policy.md)
 
@@ -49,22 +68,10 @@ You can apply these settings to:
 - Enrolled with another MDM product
 - Unmanaged devices
 
-If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
+>[!NOTE]
+>If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
 While Managed Browser or Edge are not managed by Intune, they cannot access data from other Intune-managed applications. 
 
-The Managed Browser does not support the Secure Sockets Layer version 3 (SSLv3) cryptographic protocol.
-
-You can create protected browser policies for the following device types:
-
--   Devices that run Android 4 and later
-
--   Devices that run iOS 10.0 and later
-
->[!IMPORTANT]
->Earlier versions of Android and iOS will be able to continue using the Managed Browser, but will be unable to install new versions of the app and might not be able to access all of the app capabilities. We encourage you to update these devices to a supported operating system version.
-
-
-Microsoft Edge and the Intune Managed Browser support opening web content from [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ## Conditional Access for protected browsers
 
@@ -91,7 +98,7 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 8. In the **Assignments** section, select **Users and groups** and then choose the users or groups you would like to assign this policy. 
 
     > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
+    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
 
 9. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
 
@@ -99,16 +106,19 @@ Once the above policy is configured, users will be forced to use the Intune Mana
 
 The Managed Browser does not support classic Conditional Access policies. For more information, see [Migrate classic policies in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  Single Sign-on to Azure AD-connected web apps in the Intune Managed Browser
+##  Single Sign-on to Azure AD-connected web apps in policy-protected browsers
 
-The Intune Managed Browser application on iOS and Android can now take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of the Intune Managed Browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
+Microsoft Edge and Intune Managed Browser on iOS and Android can take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of a policy-protected browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
 
-SSO in the Intune Managed Browser requires your device to be registered by the Microsoft Authenticator app on iOS or the Intune Company Portal on Android. Users with the Authenticator app or Intune Company Portal will be prompted to register their device when they navigate to an Azure AD-connected web app in the Intune Managed Browser, if their device has not already been registered by another application. Once the device is registered with the account managed by Intune, that account will have SSO enabled for Azure AD-connected web apps. 
+SSO requires your device to be registered by the Microsoft Authenticator app on iOS or the Intune Company Portal on Android. Users with the Authenticator app or Intune Company Portal will be prompted to register their device when they navigate to an Azure AD-connected web app in a policy-protected browser, if their device has not already been registered by another application. Once the device is registered with the account managed by Intune, that account will have SSO enabled for Azure AD-connected web apps. 
 
 > [!NOTE]
 > Device registration is a simple check-in with the Azure AD service. It does not require full device enrollment and does not give IT any additional privileges on the device.
 
 ## Create a protected browser app configuration
+
+>[!IMPORTANT]
+>For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy]( app-protection-policy.md)
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
@@ -123,8 +133,6 @@ SSO in the Intune Managed Browser requires your device to be registered by the M
 11. On the **Add configuration policy** blade, choose **Add**.
 12. The new configuration is created, and displayed on the **App configuration** blade.
 
->[!IMPORTANT]
->Currently, the Managed Browser relies on auto-enrollment. For app configurations to apply, another application on the device must already be managed by Intune app protection policies.
 
 ## Assign the configuration settings you created
 
@@ -284,18 +292,7 @@ For a list of the settings stored in the app logs, see [Review app protection lo
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
-
 -   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
--   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
-
--   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
-
--   The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
-
--   To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
-
-### Turn off usage data
-Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
 ## Next steps
 

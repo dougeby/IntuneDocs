@@ -30,6 +30,8 @@
     href: quickstart-create-group.md
   - name: Create a policy
     href: quickstart-create-policy.md
+  - name: Set device password length
+    href: quickstart-set-password-length-android.md  
   - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
   - name: Create and assign a custom role
@@ -42,7 +44,9 @@
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: Protect email on unmanaged devices
     href: tutorial-protect-email-on-unmanaged-devices.md
-- name: Scenario implementation guides
+  - name: Use Autopilot to enroll Windows devices
+    href: tutorial-use-autopilot-enroll-devices.md
+- name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online
     href: exchange-online-protect.md
@@ -242,6 +246,8 @@
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
     - name: Synchronize device
       href: device-sync.md
     - name: Examine device inventory
@@ -275,6 +281,8 @@
           href: apps-add-office365-macos.md
       - name: Build your app (LOB)
         items:
+        - name: Win32 app management
+          href: apps-win32-app-management.md
         - name: Android LOB apps
           href: lob-apps-android.md
         - name: iOS LOB apps
@@ -324,6 +332,8 @@
         href: company-portal-app.md
       - name: Configure the Managed Browser
         href: app-configuration-managed-browser.md
+      - name: Configure Outlook
+        href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
       - name: Selectively wipe apps
@@ -379,6 +389,8 @@
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android Enterprise
+        href: device-restrictions-android-for-work.md        
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -393,8 +405,6 @@
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android work profile
-        href: device-restrictions-android-for-work.md
     - name: Configure endpoint protection
       href: endpoint-protection-configure.md
       items:
@@ -443,6 +453,8 @@
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Android Enterprise & kiosk
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
@@ -493,7 +505,7 @@
     items:
     - name: Create Android policy
       href: compliance-policy-create-android.md
-    - name: Create Android work profile policy
+    - name: Create Android Enterprise profile policy
       href: compliance-policy-create-android-for-work.md
     - name: Create a policy to enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
@@ -518,8 +530,6 @@
       href: conditional-access-intune-common-ways-use.md
     - name: Install Exchange on-premises connector
       href: exchange-connector-install.md
-    - name: Install Exchange service connector
-      href: exchange-service-connector-configure.md
     - name: Create and assign conditional access policy
       href: conditional-access-exchange-create.md
     - name: Reassign conditional access policies from Intune classic portal
@@ -705,7 +715,7 @@
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android work profile
+      - name: Android Enterprise
         href: custom-settings-android-for-work.md
 - name: Developer guidance
   items:

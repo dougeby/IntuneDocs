@@ -51,7 +51,7 @@ All methods, except those in which users install the Intune client software them
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**.
 
-   ![Download the Intune PC client](./media/https://docs.microsoft.com/en-us/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Download the Intune PC client](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 
@@ -246,7 +246,7 @@ Using an elevated command prompt, run one of the following commands.
     wmic product where name="Windows Intune" call uninstall
 
 > [!TIP]
-> Client unenrollment will leave a stale sever-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
+> Client unenrollment will leave a stale server-side record for the affected client. The unenrollment process is asynchronous, and there are nine agents to uninstall, so it may take up to 30 mins to complete.
 
 ### Check the unenrollment status
 

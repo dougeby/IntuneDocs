@@ -5,8 +5,8 @@ title: How to monitor app protection policies
 titleSuffix: Microsoft Intune
 description: Monitor the compliance status of mobile app management policies in Intune.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -30,9 +30,6 @@ ms.custom: intune-azure
 # How to monitor app protection policies
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-**If you are not in the Azure portal**, this topic explains [how to create app protection policies](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) in the Intune classic portal.
-
-
 Monitor the compliance status of the mobile app management (MAM) policies that you've applied to users at the Intune app protection pane on the [Azure portal](https://portal.azure.com). Find information about the users affected by the MAM policies, its compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status:
@@ -42,6 +39,9 @@ There are three different places to monitor the compliance status:
 -   Detailed view
 
 -   Reporting view
+
+> [!NOTE]
+> For information about creating app protection policies, see [How to create and assign app protection policies](app-protection-policies.md).
 
 ## Summary view
 

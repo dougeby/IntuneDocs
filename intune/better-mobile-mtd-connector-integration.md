@@ -5,8 +5,8 @@ title: Set up the Better Mobile integration with Intune
 titleSuffix: Intune on Azure
 description: "Better Mobile connector integration with Intune"
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 7/25/2018
 ms.topic: article

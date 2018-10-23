@@ -5,8 +5,8 @@ title: Quickstart - Create an email device profile for iOS
 titlesuffix: Microsoft Intune
 description: Learn how to use Microsoft Intune to create an email device profile so iOS devices can securely connect to company email.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/21/2018
 ms.topic: quickstart
