@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,12 @@ ms.custom: intune-azure
 In Microsoft Intune, you can add SCEP and PKCS certificates to devices. These certificates can also be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. There are some other scenarios where certificates are automatically removed, and some scenarios where certificates stay on the device.
 
 This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
+
+> [!NOTE]
+> To remove and revoke certificates for a user that's being removed from Active Directory (AD) or Azure AD, be sure to follow the steps in order:
+>
+>    1. Wipe or retire the user's device
+>    2. Remove the user from AD or Azure AD
 
 ## Windows devices
 
@@ -59,6 +65,25 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator removes the user or group from Azure AD
 
 #### PKCS certificates
+
+- A PKCS certificate is revoked *and* removed when:
+
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- PKCS certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+  - Administrator changes or updates the PKCS profile
+  - Configuration profile is removed from the group assignment
+  - Compliance policy is removed from the group assignment 
 
 
 ## iOS devices
@@ -90,6 +115,26 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
 
 #### PKCS certificates
 
+- A PKCS certificate is revoked *and* removed when:
+
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- A PKCS certificate is removed when:
+  - Compliance policy is removed from the group assignment
+  - Configuration profile is removed from the group assignment
+  
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- PKCS certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+  - Administrator changes or updates the PKCS profile
 
 ## Android & Android Enterprise devices
 
@@ -119,6 +164,24 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
 
 #### PKCS certificates
 
+- A PKCS certificate is revoked *and* removed when:
+
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- Root certificate is removed when:
+  - An end user unenrolls
+  - Administrator runs [wipe](devices-wipe.md#wipe) action
+  - Administrator runs [retire](devices-wipe.md#retire) action
+
+- PKCS certificates **stay** on the device (certificates aren't revoked nor removed) when:
+  - An end user loses the Intune license
+  - Administrator withdraws the Intune license
+  - Administrator removes the user or group from Azure AD
+  - Administrator changes or updates the PKCS profile
+  - Configuration profile is removed from the group assignment
+  - Compliance policy is removed from the group assignment 
 
 ## macOS certificates
 
@@ -143,3 +206,6 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
 > Using the [wipe](devices-wipe.md#wipe) action to factory reset macOS devices is not supported.
 
 #### PKCS certificates
+
+PKCS certificates are not supported on macOS.
+
