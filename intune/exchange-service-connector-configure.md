@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,11 +27,12 @@ ms.custom: intune-azure
 ---
 
 # Configure the Exchange service connector for Intune and Exchange Online
-
 This article shows you how to connect the Microsoft Intune service to Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager.
 
+With the **Service to Service Connector** ou can manage both Exchange ActiveSync (EAS) and Intune managed devices from a single administrative console.  The connector is not required to enable Conditional Access for Exchange Online.
+
 ## Service to Service Connector requirements
-The **Service to Service Connector** supports only Exchange Online or Exchange Online Dedicated and has no requirements for an on-premises infrastructure.
+The **Service to Service Connector** supports only Exchange Online or Exchange Online Dedicated and has no requirements for an on-premises infrastructure. 
 
 
 |              Requirement               |                                                                                                            More information                                                                                                            |
@@ -72,5 +73,4 @@ After you have successfully configured the Exchange Service to Service Connector
 
 You can also check the **Connection status** and the time and date of the last successful synchronization attempt.
 
-## Next steps
-[Monitor Exchange conditional access in Microsoft Intune](conditional-access-exchange-monitor.md)
+ 
