@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,10 @@ In Microsoft Intune, you can add SCEP and PKCS certificates to devices. These ce
 This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
 
 > [!NOTE]
-> To effectively remove and revoke certificates for a user being removed from AD or AAD, here is the order of operations to complete: 
+> To remove and revoke certificates for a user that's being removed from Active Directory (AD) or Azure AD, be sure to follow the steps in order:
+>
 >    1. Wipe or retire the user's device
->    2. Then remove user from AD/AAD
+>    2. Remove the user from AD or Azure AD
 
 ## Windows devices
 
