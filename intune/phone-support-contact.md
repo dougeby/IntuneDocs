@@ -3,7 +3,7 @@
 
 title: Contact assisted phone support for Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Lists the the phone numbers for Microsoft Intune phone support.
+description: Lists the phone numbers for Microsoft Intune phone support.
 keywords: business hours
 author: dougeby
 ms.author: dougeby
