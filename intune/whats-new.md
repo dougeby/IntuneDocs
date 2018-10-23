@@ -61,6 +61,9 @@ You can configure your Win32 apps to be installed in user context for individual
 #### Windows Win32 apps and PowerShell scripts <!-- 2617330 -->
 End users are no longer required to be logged in on the device to install Win32 apps or execute PowerShell scripts. 
 
+#### Troubleshooting client app installation <!-- 1363711 -->
+You can troubleshoot the installation success of client apps by reviewing the column labeled **App install** in the **Troubleshoot** blade. To view the **Troubleshoot** blade, in the Intune portal, select **Troubleshoot** under **Help and support**.
+
 ### Device configuration
 
 #### Network access control support on iOS VPN clients <!-- 1333693 wnready -->
