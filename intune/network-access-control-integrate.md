@@ -66,15 +66,12 @@ The following list is an overview on how NAC integration works when integrated w
 
 ## Use NAC on your iOS devices
 
-When you create an [iOS VPN profile](vpn-settings-ios.md), you can allow Network Access Control (NAC). This feature includes the NAC ID of the device in the VPN profile. The NAC partner solution, such as Citrix, can then get the ID, and confirm if the VPN profile is compliant or not compliant.
+Network access control is not currently supported for the following VPN clients on iOS:
+-	Cisco AnyConnect
+-	F5 Access
+-	Citrix SSO  
 
-Currently, there aren’t any NAC partner solutions or VPN clients that support network access control.
-
-To use this feature, be sure:
-
-- Install the latest version of your NAC partner solution in your environment. Some VPN clients don't support this feature yet. 
-- In the [iOS VPN profile](vpn-settings-ios.md), choose to enable network access control. This setting includes the ID information in the VPN profile.
-- Know that if the VPN is connected when the device checks in, a security feature causes the VPN profile to disconnect.
+We are working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
 
 
 ## Next steps
