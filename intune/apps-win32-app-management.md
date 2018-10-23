@@ -110,6 +110,8 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
     > [!NOTE]
     > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
+    >
+    > End users are not required to be logged in on the device to install Win32 apps.
 
 4.	When you're finished, select **OK**.
 
@@ -234,7 +236,6 @@ Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\Intun
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
 - Check OS Version – Windows 10 1607 and above.  
-- Is AAD user logged on to the client machine?
 - Check Windows 10 SKU - Windows 10 S, or Windows versions running with S-mode enabled, do not support MSI installation.
 
 ## Next steps
