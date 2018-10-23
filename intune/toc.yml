@@ -181,8 +181,6 @@
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Autopilot and hybrid devices
-        href: windows-autopilot-hybrid.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
