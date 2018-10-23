@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/24/2016
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: maxles
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -30,49 +30,60 @@ ms.custom: intune-enduser
 
 
 # Use managed apps on your Android device
+Managed apps are configured to meet your organization's security requirements, and protect work and school data. These apps are made available to you on your device to install or use automatically. 
 
-Managed apps are apps that your company support can set up to help protect company data that you can access in that app. When you access company data in a managed app on your Android device, you may notice that the app works a little differently than what you expect. For example, you might not be able to copy and paste protected company data, or you might not be able to save that data to certain locations.
+Before you receive and install a managed app, your organization configures its permissions. They might restrict app functionality or user interactions to protect app data from being shared or seen by unauthorized individuals. For example, an organization could block the use of copy and paste while in the app. Or they could restrict you from saving data to your device's local storage.
 
-Different managed apps can also work together on your device to allow you to do your daily tasks, while keeping corporate data protected. For example, if you open a company file in one managed app, and another managed app is required to view that file, the managed app that allows you to view the file opens automatically. If a required app is not available, certain actions, like opening a document or accessing a web link from within a managed document, might not be available.
+To maximize data protection, your organization might configure several managed apps to work together. For example:
+1. You connect to your organization's network in a managed browser app, such as Microsoft Edge.
+2. You click a link to open your peer's presentation file.
+3. An appropriate managed app, such as Microsoft PowerPoint, opens the file.
 
-When you access company data in a managed app, you see a message like the one below, which lets you know that the app you are opening is managed.
+Organizations can require you to use a managed app to do something, such as open a work file, or access a web link. If you don't have the app, you might not be able to continue your task. Some managed apps are made available for you to install, but are not required.
 
-![open-managed-apps-message](./media/managed-apps-message.png)
+## How do I know I'm using a managed app?
+When you first access work or school data in a managed app, you'll receive a message similar to the example screenshot below. The message prompts you to restart the app to continue.
 
-## How do I get managed apps?
-You get managed apps in a couple of different ways:
+![Screenshot of the message that appears when a user opens a managed app on their device. Message says, "Your organization is not protecting its data in this app. You need to restart the app to continue," followed by an OK button.](./media/managed-apps-message.png)
 
--   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your company support might install it on your device. To learn about enrolling, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+## Commonly managed apps  
+Examples of commonly required or available managed apps within schools and workplaces are:
 
--   You install an app from the Play Store, and then sign in with your corporate user account that is managed by Intune.
+-   Microsoft Edge
 
-## What can my company support manage in an app?
-Here are some examples of options that your company support can manage in an app, and that can affect your interactions with company data on your device:
-
--   Access to specific websites
-
--   Transfers of data between apps
-
--   Saving files
-
--   Copy and paste operations
-
--   PIN access requirements
-
--   Your sign in, using company credentials
-
--   Ability to back up to the cloud
-
--   Ability to take screenshots
-
--   Data encryption requirements
-
-Some common apps that your IT department might manage are:
-
--   Intune Managed Browser
-
--   Microsoft Azure Information Protection Viewer
+-   Microsoft Outlook
 
 -   Microsoft Word, Excel, and PowerPoint
+
+## How do I get managed apps?
+First, you'll need to install the Company Portal and, if required, get your device managed. After that, there are three ways you can get managed apps.
+* Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
+* You install an app from the Google Play store, and then sign in to the app with your work or school account.  
+
+## What can my company support manage in an app?
+The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
+
+* Access to specific websites  
+
+* Access to internal company websites using Edge and the Azure Active Directory proxy  
+
+* Minimum version of app, version of OS
+
+* Ability to share and transfer data between apps  
+
+* How and where you save files  
+
+* Copy and paste functionality  
+
+* PIN access requirements  
+
+* How you sign in, using company credentials  
+
+* Ability to back up data to the cloud  
+
+* Ability to take screenshots  
+
+* Data encryption requirements  
 
 Contact your company support for more information about the managed apps on your device. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
