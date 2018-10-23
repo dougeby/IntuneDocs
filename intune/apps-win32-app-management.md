@@ -108,6 +108,9 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     For example:
     `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
+    > [!NOTE]
+    > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of the Windows 10 device.
+
 4.	When you're finished, select **OK**.
 
 ### Step 5: Configure app requirements
