@@ -47,7 +47,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ## Week of October 22, 2018
 
 ### New Intune Support Experience in the Microsoft 365 Device Management portal
-We are piloting a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquires.  
+We are piloting a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquiries.  
 
 In addition to issue-specific guidance, you can also use the new case creation workflow to open a support case by email or phone.  
 
