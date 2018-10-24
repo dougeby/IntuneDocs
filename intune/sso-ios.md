@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Use single sign-on iOS device in Microsoft Intune
 
-Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, this authentication requires the user to enter the same credentials multiple times, which is frustrating. To improve the user experience, developers can create apps that use single sign-on, reducing the number of times a user must enter credentials.
+Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, this authentication requires the user to enter the same credentials multiple times, which is frustrating. To improve the user experience, developers can create apps that use single sign-on (SSO), reducing the number of times a user must enter credentials.
 
 This article shows you how to turn on single sign-on for iOS devices using a device configuration profile in Microsoft Intune.
 
@@ -34,7 +34,7 @@ This article shows you how to turn on single sign-on for iOS devices using a dev
 
 Be sure you have an app coded to look for the user credential store in the single sign-on payload on the iOS device.
 
-## Configure Intune for iOS device single sign-on
+## Create the SSO profile
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Choose **Device configuration** > **Profiles** > **Create profile**.
