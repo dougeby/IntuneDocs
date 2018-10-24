@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Use custom settings for Android devices in Microsoft Intune
 
-Using Microsoft Intune, you can add or create custom settings for your Android devices. For settings that aren't built in to Intune, you can also use this custom profile.
+Using Microsoft Intune, you can add or create custom settings for your Android devices using a "custom profile". Custom profiles are a feature in Intune. They are designed to add device settings and features that aren't built in to Intune.
 
 Android custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features on Android devices. These settings are typically used by mobile device manufacturers to control features on the device.
 

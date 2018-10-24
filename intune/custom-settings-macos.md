@@ -27,14 +27,14 @@ ms.custom: intune-azure
 
 # Use custom settings for macOS devices in Microsoft Intune
 
-Using Microsoft Intune, you can add or create custom settings for your macOS devices. For settings that aren't built in to Intune, you can also use this custom profile.
+Using Microsoft Intune, you can add or create custom settings for your macOS devices using a "custom profile". Custom profiles are a feature in Intune. They are designed to add device settings and features that aren't built in to Intune.
 
 When using macOS devices, there are two ways to get custom settings into Intune:
 
-- [Apple Configurator tool](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
+- [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-You can use these tools to export settings to a configuration profile. In Intune, you import this file, and then assign the profile to your macOS users and devices. Once assigned, the settings are distributed, and also creates a baseline or standard for macOS in your organization.
+You can use these tools to export settings to a configuration profile. In Intune, you import this file, and then assign the profile to your macOS users and devices. Once assigned, the settings are distributed, and also create a baseline or standard for macOS in your organization.
 
 This article shows you how to create a custom profile for macOS devices. It also provides some guidance on using Apple Configurator and Apple Profile Manager.
 
