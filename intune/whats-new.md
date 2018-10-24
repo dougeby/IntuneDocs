@@ -53,18 +53,7 @@ In addition to issue-specific guidance, you can also use the new case creation w
 
 For customers who are part of the pilot, this new experience replaces the current Help and Support experience of a static set of pre-selected options that are based on the area of the console you are in when you open Help and Support.  
 
-*This new Help and Support experience is a pilot that is available in the Device Management portal to some but not all tenants. New tenants will be added as we expand the pilot program.*  
-
-#### How does this affect me?
-If you are in the pilot, the new experience replaces the previous Support and Help experience when you use the Device Management portal. The experience for Intune is like the *Need help?* experience in the Office 365 and Microsoft 365 Admin Centers but has been tailored to the Intune service to provide accurate self-help content or help you open support request to contact our support teams.
- 
- 
-#### What do I need to do to prepare for this change? 
-If you are in the pilot, this new experience is rolled out to your account automatically and there are no admin actions necessary.  
-  
-If you have existing support cases, they remain in the same state as before the pilot, and there is no change in how you work on them with your assigned Support Engineer.  
-- You can view your existing cases under Help and Support in the [Azure Portal](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/managesupportrequest) or from the locations you have used in the past. Cases that were opened before you joined the pilot have a case number that starts with 117 or 118 and are 15 digits long.  
-- New cases have 8-digit case numbers. You can view these cases from the new Help and Support blade, or from the **Need Help?** button in Office, or when you select the clock icon at the top of the tool.  
+*This new Help and Support experience is a pilot that is available in the Device Management portal to some but not all tenants. Participants for this pilot are randomly selected from the available Intune tenants. New tenants will be added as we expand the pilot program.*  
 
 For more information, see [Help and Support pilot](get-support.md#help-and-support-pilot) in How to get support for Microsoft Intune.  
 
