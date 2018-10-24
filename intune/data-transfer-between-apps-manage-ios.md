@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ App protection policies can be used with the iOS **Open in management** feature 
 
 -   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only Policy Managed apps**. The Open-In behavior in a Policy Managed app will only present other Policy Managed apps as an option for sharing. If a user tries to send a policy protected file as an attachment from OneDrive in the native mail, that file will be unreadable.
 
--   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed  automatically. To allow data transfer between apps with app protection policies, enable the **Allow app to transfer data to only managed apps** setting. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune.   
+-   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. To specify how you want to allow data transfer to other apps, enable the **Allow app to transfer data to other apps** setting and choose your preferred level of sharing. To specify how you want to allow an app to receive data from other apps, enable the **Allow app to receive data from other apps** seeting and choose your perferred level of receiving data. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data relocation settings](app-protection-policy-settings-ios.md#data-relocation-settings).   
 
 -   **Devices managed by a third party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
 To make sure that apps that you deploy using your third party MDM solution are also associated with the app protection policies you have configured in Intune, you must configure the user UPN setting as described in the [Configure user UPN setting](#configure-user-upn-setting-for-third-party-emm) walkthrough.  When apps are deployed with the user UPN setting, the app protection policies are applied to the app when the end user signs-in using their work account.

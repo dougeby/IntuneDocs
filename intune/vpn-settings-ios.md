@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: VPN settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: View the available virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
+title: Add VPN settings to iOS devices in Microsoft Intune - Azure | Microsoft Docs
+description: Add or create a VPN configuration profile using virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,20 +24,18 @@ ms.custom: intune-azure
 
 ---
 
-# Configure VPN settings in Microsoft Intune for devices running iOS
+# Configure VPN settings on iOS devices in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-This article shows you the Intune settings you can use to configure VPN connections on devices running iOS.
-
-Depending on the settings you choose, not all values in the following list are configurable.
+Microsoft Intune includes many VPN settings that can be deployed to your iOS devices. These settings are used to create and configure VPN connections to your organization's network. This article describes these settings. Some settings are only available for some VPN clients, such as Citrix, Zscaler, and more.
 
 ## Base VPN settings
-The actual settings you see from the list below are determined by the VPN connection type you select.  
+
+The settings shown in the following list are determined by the VPN connection type you choose.  
+
 - **Connection name**: End users see this name when they browse their device for a list of available VPN connections.
-- **Custom domain name** (Zscaler only): Prepopulate the Zscaler app's sign-in field with the domain your users belong to. For example, if a username is **Joe@contoso.net**, the domain **contoso.net** would statically appear in the field when the app opens. If you do not type in a domain name, the domain portion of the UPN in Azure Active Directory will be used.
-- **IP address or FQDN**: The IP address or fully qualified domain name (FQDN) of the VPN server that devices connect with. For example, enter **192.168.1.1** or **vpn.contoso.com**. 
-- **Organization's cloud name** (Zscaler only): Type in the name of the cloud where your organization is provisioned. Look in the URL you use to sign in to Zscaler to find the name.  
+- **Custom domain name** (Zscaler only): Prepopulate the Zscaler app's sign-in field with the domain your users belong to. For example, if a username is `Joe@contoso.net`, then the `contoso.net` domain statically appears in the field when the app opens. If you don't enter a domain name, then the domain portion of the UPN in Azure Active Directory (AD) is used.
+- **IP address or FQDN**: The IP address or fully qualified domain name (FQDN) of the VPN server that devices connect with. For example, enter `192.168.1.1` or `vpn.contoso.com`.
+- **Organization's cloud name** (Zscaler only): Enter the cloud name where your organization is provisioned. The URL you use to sign in to Zscaler has the name.  
 - **Authentication method**: Choose how devices authenticate to the VPN server. 
   - **Certificates**: Under **Authentication certificate**, select an existing SCEP or PKCS certificate profile to authenticate the connection. [Configure certificates](certificates-configure.md) provides some guidance about certificate profiles.
   - **Username and password**: End users must enter a username and password to sign in to the VPN server.  
@@ -58,34 +56,42 @@ The actual settings you see from the list below are determined by the VPN connec
   - **Cisco (IPSec)**
   - **Citrix VPN**
   - **Citrix SSO**
-  - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure Active Directory account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+  - **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure AD account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
   - **Custom VPN**    
 
     > [!NOTE]
-    > Cisco, Citrix, F5, and Palo Alto have announced that their legacy clients will not work on the upcoming release of iOS 12. You should migrate to the new apps as soon as possible. For more information, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
+    > Cisco, Citrix, F5, and Palo Alto have announced that their legacy clients don't work on iOS 12. You should migrate to the new apps as soon as possible. For more information, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806&clcid=0x409).
 
 * **Excluded URLs** (Zscaler only): When connected to the Zscaler VPN, the listed URLs are accessible outside the Zscaler cloud. 
 
-- **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use, depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.   
+- **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use, depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.
+
+- **Enable network access control (NAC)**: This setting is a placeholder for VPN clients, such as Citrix, to allow a device ID to be in the VPN profile for use with network access control (NAC). When you choose **I agree**, this device ID is included in the VPN profile. Currently, there aren't any VPN clients or NAC partner solutions that support this new ID, so devices will be allowed to connect to the VPN regardless of compliance status. We will update this document when our partners add support for the ID.
+
+  Important details:  
+
+  - When this setting is enabled, the VPN is disconnected every 24 hours.
+  - The device ID is part of the profile, but it can't be seen in Intune, or in the profile. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft. Once this is suppored by VPN partners, the VPN client, such as Citrix SSO, can get the ID, and query Intune to confirm the device is enrolled and if the VPN profile is compliant or not compliant.
+  - To remove this setting, recreate the profile, and don't select **I agree**. Then, reassign the profile.
 
 ## Custom VPN settings
 
 If you selected **Custom VPN** as the connection type, configure the following settings. These settings are also visible for Zscaler and Citrix connections.
 
 - **VPN identifier**: An identifier for the VPN app you're using, and is supplied by your VPN provider.
-- **Enter key/value pairs for your organization's custom VPN attributes**: Add or import **Keys** and **Values** that customize your VPN connection. Again, these values are typically supplied by your VPN provider.
+- **Enter key/value pairs for your organization's custom VPN attributes**: Add or import **Keys** and **Values** that customize your VPN connection. Remember, these values are typically supplied by your VPN provider.
 
 ## Automatic VPN settings
 
-- **Per-app VPN**: Choosing this option enables per-app VPN, which allows the VPN connection to be triggered automatically when certain apps are opened. In addition to choosing this option, you also need to associate the apps with this VPN profile. See the [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md) for more details. 
-  - The **Provider Type** setting is only available for Pulse Secure and Custom VPN.
-  - When using iOS **per-app VPN** profiles with Pulse Secure or a Custom VPN, you can choose to use app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). Set the **ProviderType** value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.If you are not sure which value to use, consult your VPN provider's documentation. 
-  - **Safari URLs that will trigger this VPN**: Select to add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
+- **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. For more information, see [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md).
+  - **Provider Type**: Only available for Pulse Secure and Custom VPN.
+  - When using iOS **per-app VPN** profiles with Pulse Secure or a Custom VPN, choose app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). Set the **ProviderType** value to **app-proxy** for app-layer tunneling, or **packet-tunnel** for packet-layer tunneling. If you're not sure which value to use, check your VPN provider's documentation.
+  - **Safari URLs that will trigger this VPN**: Add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
 
-- **On-demand VPN**: Configure conditional rules that control when the VPN connection is initiated. For example, create a condition where the VPN connection is only used when a device is not connected to a company Wi-Fi network. Or, create a condition where, if a device can't access a DNS search domain you specify, then the VPN connection is not initiated.
+- **On-demand VPN**: Configure conditional rules that control when the VPN connection is started. For example, create a condition where the VPN connection is only used when a device isn't connected to a company Wi-Fi network. Or, create a condition where, if a device can't access a DNS search domain you enter, then the VPN connection isn't initiated.
 
   - **SSIDs or DNS search domains**: Select whether this condition uses wireless network **SSIDs**, or **DNS search domains**. Choose **Add** to configure one or more SSIDs or search domains.
-  - **URL string probe**: Optional. Enter a URL that the rule uses as a test. If the device where this profile is installed can access this URL without redirection, then the VPN connection is initiated, and the device connects to the target URL. The user does not see the URL string probe site. A URL string probe example is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.
+  - **URL string probe**: Optional. Enter a URL that the rule uses as a test. If the device with this profile accesses this URL without redirection, then the VPN connection is initiated. And, the device connects to the target URL. The user doesn't see the URL string probe site. A URL string probe example is the address of an auditing Web server that checks device compliance before connecting the VPN. Another possibility is that the URL tests the ability of the VPN to connect to a site before connecting the device to the target URL through the VPN.
   - **Domain action**: Choose one of the following items:
     - Connect if needed
     - Never connect
@@ -96,9 +102,10 @@ If you selected **Custom VPN** as the connection type, configure the following s
     - Disconnect
 
 ## Proxy settings
-If you're using a proxy, configure the following settings. Proxy settings are not available for Zscaler VPN connections.  
 
-- **Automatic configuration script**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **http://proxy.contoso.com**) that contains the configuration file.
+If you're using a proxy, configure the following settings. Proxy settings aren't available for Zscaler VPN connections.  
+
+- **Automatic configuration script**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `http://proxy.contoso.com`) that includes the configuration file.
 - **Address**: Enter the IP address of fully qualified host name of the proxy server.
 - **Port number**: Enter the port number associated with the proxy server.
 
