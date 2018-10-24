@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -125,8 +125,9 @@ End users will be able to access key account actions, such as password reset and
 ### Apple VPP token used by another MDM <!-- 1488946 -->
 Intune will detect and show details if an Apple volume-purchased program (VPP) token is in use by both Intune and another MDM.
 
-### iOS version number and build number are shown <!-- 1892471 -->
-In **Device compliance** > **Device compliance**, the iOS operating system version is shown. In a future update, the build number will also be shown.
+### iOS and macOS version numbers and build numbers are shown <!-- 1892471 -->
+In **Device compliance** > **Device compliance**, the iOS and macOS operating system versions is shown. In a future update, the build number will also be shown for both platforms.
+
 When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By showing the build number, you can easily check if a vulnerability update is installed.
 
 ### Retired devices in the device compliance dashboard <!-- 1981119 -->
