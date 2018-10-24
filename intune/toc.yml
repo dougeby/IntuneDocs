@@ -179,7 +179,7 @@
         href: windows-bulk-enroll.md
       - name: Enrollment status page
         href: windows-enrollment-status.md
-      - name: Windows AutoPilot Deployment Program
+      - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
     - name: Set up Android enrollment
       items:
@@ -211,6 +211,8 @@
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abandonment report
+      href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
@@ -486,6 +488,8 @@
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
+      - name: Remove SCEP or PKCS certificates
+        href: remove-certificates.md
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts
