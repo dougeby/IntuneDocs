@@ -99,6 +99,9 @@ With this update, you can use a pre-shared key (PSK) with the WPA/WPA2-Personal 
 
 Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
 
+#### Use Gatekeeper on macOS devices for compliance <!-- 2504381 -->
+This update includes the macOS Gatekeeper to evaluate devices for compliance. To set the Gatekeeper property, [Add a device compliance policy for macOS devices](compliance-policy-create-mac-os.md).
+
 
 ### Device enrollment
 
