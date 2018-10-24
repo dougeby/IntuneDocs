@@ -71,7 +71,7 @@ The following sections provide more details about each of the single sign-on fie
 
    You also have the choice to overwrite the realm with the text you type in the **Realm** text box.
 
-   For example, Contoso might have several subregions such as Europe, Asia, and North America. They might want their users in Asia to use the SSO payload, and the app requires the UPN in the form *username@asia.contoso.com*. In this case, if you select **User Principal Name**, by default the realm for each user is taken from AAD that may be just *contoso.com*. So for users in Asia specially, you can create this payload and overwrite the realm with the value *asia.contoso.com*. Now the end user's UPN becomes *username@asia.contoso.com* and not *username@contoso.com*.
+   For example, Contoso might have several subregions such as Europe, Asia, and North America. They might want their users in Asia to use the SSO payload, and the app requires the UPN in the form username@asia.contoso.com. In this case, if you select **User Principal Name**, by default the realm for each user is taken from AAD that may be just *contoso.com*. So for users in Asia specially, you can create this payload and overwrite the realm with the value *asia.contoso.com*. Now the end user's UPN becomes username@asia.contoso.com and not username@contoso.com.
 
 - If you select **Device ID**, Intune automatically selects the Intune Device ID.
 
