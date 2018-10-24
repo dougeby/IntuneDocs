@@ -1,12 +1,16 @@
 ---
 title: Add Win32 apps to Microsoft Intune
 titlesuffix:
-description: Learn how to add and manage Win32 apps to Microsoft Intune.
+description: Learn how to add, deliver, and manage Win32 apps with Microsoft Intune. This topic provides an overview of the Intune Win32 app delivery and management capabilities, as well as Win32 app troubleshooting information. 
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
+<<<<<<< HEAD
+ms.date: 10/23/2018
+=======
 ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +24,7 @@ ms.custom: intune-azure
 
 # Intune Standalone - Win32 app management (Public Preview)
 
-Intune standalone will allow greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This document provides an overview of the Intune Win32 app management feature and troubleshooting information.
+Intune standalone will allow greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This topic provides an overview of the Intune Win32 app management feature and troubleshooting information.
 
 ## Prerequisites for public preview
 
