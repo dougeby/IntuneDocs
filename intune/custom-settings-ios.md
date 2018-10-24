@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ When using iOS devices, there are two ways to get custom settings into Intune:
 - [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12)
 - [Apple Profile Manager](https://support.apple.com/profile-manager)
 
-You can use these tools to export settings to a configuration profile. In Intune, you import this profile, and then assign this profile to your iOS users and devices. Once assigned, the settings are distributed, and also create a baseline or standard for iOS in your organization.
+You can use these tools to export settings to a configuration profile. In Intune, you import this file, and then assign the profile to your iOS users and devices. Once assigned, the settings are distributed, and also create a baseline or standard for iOS in your organization.
 
 This article shows you how to create a custom profile for iOS devices. It also provides some guidance on using Apple Configurator and Apple Profile Manager.
 

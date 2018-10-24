@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,8 +54,8 @@ This article shows you:
 4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
 
     - **Name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
-    - **Description**: Enter a description for the setting.
-    - **OMA-URI** (case sensitive): Enter the OMA-URI you want to supply a setting.
+    - **Description**: Enter a description that gives an overview of the setting, and any other important details.
+    - **OMA-URI** (case sensitive): Enter the OMA-URI you want to use as a setting.
     - **Data type**: Choose the data type you'll use for this OMA-URI setting. Your options:
 
         - String
@@ -85,7 +85,7 @@ There's a complete list of all configuration service providers (CSPs) that Windo
 
 Not all settings are compatible with all Windows 10 versions. [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) tells you which versions are supported for each CSP.
 
-Additionally, Intune doesn't support all the settings listed in [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). To find out if Intune supports the setting you want, open the article for that setting. Each setting page shows it’s supported operation. To work with Intune, the setting must support the **Add** or **Replace** operations.
+Additionally, Intune doesn't support all the settings listed in [Configuration service provider reference](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference). To find out if Intune supports the setting you want, open the article for that setting. Each setting page shows its supported operation. To work with Intune, the setting must support the **Add** or **Replace** operations.
 
 ## Next steps
 

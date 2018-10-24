@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 Using Microsoft Intune, you can add or create custom settings for your Android Enterprise devices using a "custom profile". Custom profiles are a feature in Intune. They are designed to add device settings and features that aren't built in to Intune.
 
-Android Enterprise custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to control features on Android Enterprise devices. These settings are typically used by mobile device manufacturers to control features on the device.
+Android Enterprise custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to control features on Android Enterprise devices. These settings are typically used by mobile device manufacturers to control these features.
 
 Intune supports a limited number of Android custom profiles.
 
@@ -51,7 +51,7 @@ This article shows you how to create a custom profile for Android Enterprise dev
 
     - **Name**: Enter a unique name for the OMA-URI setting so you can easily find it.
     - **Description**: Enter a description that gives an overview of the setting, and any other important details.
-    - **OMA-URI**: Enter the OMA-URI you want to supply a setting.
+    - **OMA-URI**: Enter the OMA-URI you want to use as a setting.
     - **Data type**: Choose the data type you'll use for this OMA-URI setting. Your options:
 
       - String
@@ -63,6 +63,8 @@ This article shows you how to create a custom profile for Android Enterprise dev
       - Base64 (file)
 
     - **Value**: Enter the data value you want to associate with the OMA-URI you entered. The value depends on the data type you selected. For example, if you choose **Date and time**, select the value from a date picker.
+
+    After you add some settings, you can select **Export**. **Export** creates a list of all the values you added in a comma-separated values (.csv) file.
 
 5. Select **OK** to save your changes. Continue to add more settings as needed.
 6. When finished, choose **OK** > **Create** to create the Intune profile. When complete, your profile is shown in the **Device configuration - Profiles** list.

@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -48,7 +48,7 @@ This article shows you how to create a custom profile for Windows Phone 8.1 devi
 
     - **Name**: Enter a unique name for the OMA-URI setting to help you identify it in the list of settings.
     - **Description**: Enter a description that gives an overview of the setting, and any other relevant information to help you locate the profile.
-    - **OMA-URI** (case sensitive): Enter the OMA-URI you want to supply a setting.
+    - **OMA-URI** (case sensitive): Enter the OMA-URI you want to use as a setting.
     - **Data type**: Choose the data type you'll use for this OMA-URI setting. Your options:
 
         - String
