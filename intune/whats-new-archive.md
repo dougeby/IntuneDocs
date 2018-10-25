@@ -1105,7 +1105,7 @@ In this release, we’ve made the following improvements to the inventory inform
 -   We’ve made improvements to the filter used by the **Last Check-in Date** item.
 -   In the device list, you can now display the phone number of corporate owned devices.
 Additionally, you can use the filter pane to search for devices by phone number.
- 
+
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
 
 ### Conditional access support for macOS devices 
@@ -1215,7 +1215,7 @@ Intune has updated the troubleshooting display and added to the information that
 - Mobile apps
 - Compliance policies
 - Configuration profiles
- 
+
 In addition, the **Devices** table now includes **Azure AD join type** and **Azure AD compliant** columns. For more information, see [help users troubleshoot problems](help-desk-operators.md).
 
 
