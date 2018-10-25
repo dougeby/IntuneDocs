@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,8 +26,6 @@ ms.custom: intune-azure
 ---
 
 # Add a device compliance policy for macOS devices with Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 An Intune macOS device compliance policy determines the rules and settings that macOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
 
@@ -95,6 +93,17 @@ Firewall protects devices from unauthorized network access. You can use Firewall
 - **Firewall**: **Enable** to help protect devices from unauthorized access. Enabling this feature allows you to handle incoming internet connections, and use stealth mode. **Not configured** (default) leaves the firewall turned off, and network traffic is allowed (not blocked).
 - **Incoming connections**: **Block** all incoming network connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This settings also blocks all sharing services, including screen sharing, remote access, iTunes music sharing, and more. **Not configured** (default) allows incoming connections and sharing services. 
 - **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests, which can be made my malicious users. When enabled, the device continues to answer incoming requests for authorized apps. **Not configured** (default) leaves stealth mode turned off.
+
+### Gatekeeper
+
+**Allow apps downloaded from these locations**: Allows supported applications to be installed on your devices from different locations. Your location options:
+
+- **Not configured**: Default. The gatekeepr option has no impact on compliance or non-compliance. 
+- **Mac App Store**: Only install apps for the Mac app store. Apps can't be installed from third parties nor identified developers. If a user selects Gatekeeper to install apps outside the Mac App Store, then the device is considered not compliant.
+- **Mac App Store and identified developers**: Install apps for the Mac app store and from identified developers. macOS checks the identity of developers, and does some other checks to verify app integrity. If a user selects Gatekeeper to install apps outside these options, then the device is considered not compliant.
+- **Anywhere**: Apps can be installed from anywhere, and by any developer. This option is the least secure.
+
+For more details in Apple documentation, see [Gatekeeper on macOS](https://support.apple.com/HT202491).
 
 ## Assign user groups
 
