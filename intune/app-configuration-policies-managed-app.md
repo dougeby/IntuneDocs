@@ -55,13 +55,13 @@ Intune can generate certain tokens and send them to the managed application. For
 
 Intune supports the following token types in the configuration settings. Other custom key/value pairs are not supported.
 
-- \{\{userprincipalname\}\}—for example, **John@contoso.com**
-- \{\{mail\}\}—for example, **John@contoso.com**
-- \{\{partialupn\}\}—for example, **John**
-- \{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}—for example, **John Doe**
-- \{\{PrimarySMTPAddress\}\}—for example, **testuser@ad.domain.com** 
+- \{\{userprincipalname\}\}—for example, John@contoso.com
+- \{\{mail\}\}—for example, John@contoso.com
+- \{\{partialupn\}\}—for example, John
+- \{\{accountid\}\}—for example, fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\}—for example, 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\}—for example, John Doe
+- \{\{PrimarySMTPAddress\}\}—for example, testuser@ad.domain.com
 
 
 > [!Note]  
