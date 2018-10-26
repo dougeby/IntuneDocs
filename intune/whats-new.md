@@ -99,6 +99,10 @@ With this update, you can use a pre-shared key (PSK) with the WPA/WPA2-Personal 
 
 Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
 
+#### Remove PKCS and SCEP certificates from your devices <!-- 3218390 -->
+In some scenarios, PKCS and SCEP certificates remained on devices, even when removing a policy from a group, deleting a configuration or compliance deployment, or an admin updating an existing SCEP or PKCS profile. 
+This update changes the behavior. There are some scenarios where PKCS and SCEP certificates are removed from devices, and some scenarios where these certificates remain on the device. 
+See [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) for these scenarios.
 
 ### Device enrollment
 
@@ -117,8 +121,6 @@ Azure Active Directory has a terms of use feature that you can use instead of ex
 Intune now supports grouping Windows devices by a correlator ID when enrolled using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. Intune will automatically set the [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) to equal "OfflineAutopilotprofile-<correlator ID>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID via the enrollmentprofileName attribute for offline Autopilot enrollments. For more information, see [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices).
 
 
-
-
 ### Intune apps
 
 #### Intune will support a maximum package size of 8 GB for LOB apps <!-- 1727158 -->
@@ -129,6 +131,9 @@ As the Microsoft Intune admin, you can upload a custom brand image which will be
 
 #### Intune will maintain the Office localized language when updating Office on end users machines <!-- 2971030 -->
 When Intune installs Office on your end user's machines, end users automatically get the same language packs that they had with previous .MSI Office installations. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
+
+### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
+A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
 
 
 ## Week of October 15, 2018
