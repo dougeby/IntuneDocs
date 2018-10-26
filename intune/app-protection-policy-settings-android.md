@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -64,6 +64,7 @@ There are two categories of policy settings: data relocation settings and access
   | com.android.webview |[Webview](https://developer.android.com/reference/android/webkit/WebView.html), which is necessary for many apps including Outlook.|
   | com.google.android.tts | Google Text-to-speech |
   | com.android.providers.settings | Android system settings |
+  | com.android.settings | Android system settings |
   | com.azure.authenticator | Azure Authenticator app, which is required for successful authentication in many scenarios. |
   | com.microsoft.windowsintune.companyportal | Intune Company Portal|
 
