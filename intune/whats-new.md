@@ -67,7 +67,7 @@ You can troubleshoot the installation success of client apps by reviewing the co
 ### Device configuration
 
 #### Network access control support on iOS VPN clients <!-- 1333693 wnready -->
-With this update, there's a new setting to enable Network Access Control (NAC) when your create a VPN configuration profile for Cisco AnyConnect, F5 Access, and Citrix SSO for iOS. This setting allows the NAC ID of the device to be included in the VPN profile. Currently, there aren't any VPN clients or NAC partner solutions that support this new NAC ID, but we will keep you informed when they do.
+With this update, there's a new setting to enable Network Access Control (NAC) when your create a VPN configuration profile for Cisco AnyConnect, F5 Access, and Citrix SSO for iOS. This setting allows the NAC ID of the device to be included in the VPN profile. Currently, there aren't any VPN clients or NAC partner solutions that support this new NAC ID, but we will keep you informed through our [support blog post](ttps://aka.ms/iOS12_and_vpn) when they do.
 
 To use NAC, you'll need to:
 1. Opt in to allow Intune to include device IDs in VPN profiles
@@ -103,6 +103,10 @@ Currently, you must import a Wi-Fi profile, or create a custom profile to use a 
 In some scenarios, PKCS and SCEP certificates remained on devices, even when removing a policy from a group, deleting a configuration or compliance deployment, or an admin updating an existing SCEP or PKCS profile. 
 This update changes the behavior. There are some scenarios where PKCS and SCEP certificates are removed from devices, and some scenarios where these certificates remain on the device. 
 See [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) for these scenarios.
+
+#### Use Gatekeeper on macOS devices for compliance <!-- 2504381 -->
+This update includes the macOS Gatekeeper to evaluate devices for compliance. To set the Gatekeeper property, [Add a device compliance policy for macOS devices](compliance-policy-create-mac-os.md).
+
 
 ### Device enrollment
 
