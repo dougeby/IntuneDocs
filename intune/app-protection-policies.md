@@ -56,7 +56,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
 
 6. Choose **Configure required settings** on the **Add a policy** blade to open **Settings**.
 
-   There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps. The access polices determine how the end user accesses the apps in a work context.
+   There are two categories of policy settings, **Data relocation** and **Access**.  Data relocation policies are applicable to data movement in and out of the apps. The access policies determine how the end user accesses the apps in a work context.
    To get you started, the policy settings have default values. If the default values meet your requirements, you don't have to make any changes.
 
    > [!TIP]
