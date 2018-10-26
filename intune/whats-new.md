@@ -55,6 +55,9 @@ In some scenarios, PKCS and SCEP certificates remained on devices, even when rem
 This update changes the behavior. There are some scenarios where PKCS and SCEP certificates are removed from devices, and some scenarios where these certificates remain on the device. 
 See [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) for these scenarios.
 
+### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
+A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
+
 ## Week of October 15, 2018
 
 ### PIN prompt when you change fingerprints or face ID on an iOS device  <!-- 2637704  -->
