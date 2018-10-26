@@ -72,9 +72,13 @@ If you want to go ahead and assign this profile to groups, see [How to assign de
 
 ## Further information
 
-### Remove an email profile
+## Remove an email profile
 
-If you want to remove an email profile from a device, edit the assignment and remove any groups of which the device is a member. You cannot remove an email profile in this way if it is the only email profile on a device.
+Email profiles are assigned to device groups, not user groups. There are different ways to remove an email profile from a device, even when there's only one email profile on the device:
+
+- **Option 1**: Open the email profile (**Device configuration** > **Profiles**), and choose **Assignments**. The **Include** tab shows the groups that are assigned the profile. Right-click the group > **Remove**. Be sure to **Save** your changes.
+
+- **Option 2**: [Wipe or retire the device](devices-wipe.md). You can use these actions to selectively or fully remove data and settings.
 
 ### Securing email access
 
