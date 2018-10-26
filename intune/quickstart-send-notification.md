@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Quickstart - Send notifications to non-compliant devices
+title: Quickstart - Send notifications to noncompliant devices
 titlesuffix: Microsoft Intune
-description: In this quickstart you will use Microsoft Intune to send email notifications to non-compliant devices.
+description: In this quickstart you will use Microsoft Intune to send email notifications to noncompliant devices.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -27,23 +27,22 @@ ms.custom: intune-azure
 
 ---
 
-# Quickstart: Send notifications to non-compliant devices
+# Quickstart: Send notifications to noncompliant devices
 
-In this quickstart, you will use Microsoft Intune to send an email notification to the members of your workforce that have non-compliant devices.
+In this quickstart, you will use Microsoft Intune to send an email notification to the members of your workforce that have noncompliant devices.
 
-By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device is not compliant, **actions for noncompliance** also give you flexibility to decide what to do. For example, you can give users a grace period to be compliant before blocking non-compliant devices.
+By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device is not compliant, Intune allows you to add actions for noncompliance, which gives you flexibility to decide what to do. For example, you can give users a grace period to be compliant before blocking noncompliant devices.
 
 One of the actions you can take when devices don't meet compliance is to send email to those end users. You can also customize an email notification before sending it to end users. Specifically, you can customize the recipients, subject, and message body, including company logo, and contact information. Intune will also include details about the noncompliant device in the email notification.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
-- To complete this quickstart, you need at least one device compliance policy. To create a device compliance policy, see [Quickstart: Add a device compliance policy](quickstart-create-policy.md). For more information, see [Noncompliant message and actions with Microsoft Intune](actions-for-noncompliance.md).
 - When using device compliance policies to block devices from corporate resources, Azure AD conditional access must be set up. See [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) or [common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md) for guidance.
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). Intune is located in the Azure portal by choosing **All services** > **Intune**.
 
 ## Create a notification message template
 
@@ -52,9 +51,9 @@ To send email to your users, create a notification message template. When a devi
 1. Select **Device compliance** > **Notifications**.
 2. Select **Create notification**. Enter the following information:
 
-   - **Name**: Admin
-   - **Subject**: Device compliance
-   - **Message**: Your device is currently not meeting our organizations compliance requirements.
+   - **Name**: *Contoso Admin*
+   - **Subject**: *Device compliance*
+   - **Message**: *Your device is currently not meeting our organizations compliance requirements.*
    - **Email header – Include company logo**: Set to **Enabled** to show your organization's logo.
    - **Email footer – Include company name**: Set to **Enabled** to show your organization's name.
    - **Email footer – Include contact information**: Set to **Enabled** to show your organization's contact information.
@@ -64,23 +63,23 @@ To send email to your users, create a notification message template. When a devi
 3. Once you're done adding the information, choose **Create**. The Notification message template is ready to use.
 
     > [!NOTE]
-    > You can also edit a Notification template previously created.
+    > You can also edit a Notification template that was previously created.
 
 For details about setting your company name, company contact information, and company logo, see [Company information and privacy statement](company-portal-app.md#company-information-and-privacy-statement), [Support information](company-portal-app.md#support-information), and [Company branding customization](company-portal-app.md#company-branding-customization). 
 
 ## Add actions for noncompliance
 
-When you create a device compliance policy, Intune automatically creates an action for noncompliance. When a device isn't meeting your compliance policy, this action marks the device as not compliant. You can customize how long the device is marked as not compliant. This action can't be removed.
+When you create a device compliance policy, Intune automatically creates an action for noncompliance. When a device isn't meeting your compliance policy, this automatically created action marks the device as noncompliant. You can customize how long the device is marked as noncompliant. This action can't be removed.
 
-You can also add another action when you create a compliance policy, or update an existing policy. 
+You can also add another action when you create a compliance policy, or update an existing compliance policy. 
 
 1. In the [Azure portal](https://portal.azure.com), open **Microsoft Intune** > **Device compliance**.
 2. Select **Policies** > **Create Policy**.
 3. Enter the following information:
 
-   - **Name**: Windows 10 compliance
-   - **Description**: Windows 10 compliance policy
-   - **Message**: Your device is currently not meeting our organizations compliance requirements.
+   - **Name**: *Windows 10 compliance*
+   - **Description**: *Windows 10 compliance policy*
+   - **Message**: *Your device is currently not meeting our organizations compliance requirements.*
    - **Platform**: Windows 10 and later
 4. Select **Settings** > **System Security** to display the device security-related settings.
 5. Set **Require a password to unlock mobile devices** to **Require**. This setting specifies whether to require users to enter a password before access is granted to information on their mobile devices. 
