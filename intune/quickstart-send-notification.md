@@ -42,7 +42,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). Intune is located in the Azure portal by choosing **All services** > **Intune**.
+Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). Intune is located in the Azure portal by choosing **All services** > **Intune**.
 
 ## Create a notification message template
 
