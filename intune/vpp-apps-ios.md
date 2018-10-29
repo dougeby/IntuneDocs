@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -97,7 +97,7 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
 
 	- **Type of VPP account** - Choose from **Business** or **Education**.
-	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
+	- **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
 	
         > [!NOTE]
 		> Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
