@@ -186,13 +186,13 @@ Intune app protection policies for access will be applied in a specific order on
 
 When dealing with different types of settings, an Intune App SDK version requirement would take precedence, then an app version requirement, followed by the iOS operating system version requirement. Then, any warnings for all types of settings in the same order are checked. We recommend the Intune App SDK version requirement be configured only upon guidance from the Intune product team for essential blocking scenarios.
 
-## App protection policies - Policy Refresh
-- Apps check-in to the APP service every 30 minutes
-- 30 minute threshold is based on a timer
-    - If the app is active at 30 minutes it’ll check in at 30 minutes
-    - If the app is sleeping at 30 minutes it’ll check in on next focus 
-- If there’s no policy assigned to a user, check-in will occur every 8 hours
-- If there’s no Intune license is assigned, check-in will occur every 24 hours
+## App protection policies - Policy refresh
+- Apps check in to the APP service every 30 minutes.
+- The 30-minute threshold is based on a timer.
+    - If the app is active at 30 minutes, it checks in at 30 minutes.
+    - If the app is sleeping at 30 minutes, it checks in on the next focus.
+- If no policy is assigned to a user, check-in occurs every eight hours.
+- If no Intune license is assigned, check-in occurs every 24 hours.
 
 
 ## See also
