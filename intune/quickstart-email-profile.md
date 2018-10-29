@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -74,7 +74,7 @@ If you don’t intend to use the profile you created for additional tutorials or
 
 ## Next steps
 
-In this quickstart, you created an email profile for iOS devices. Now you can use this profile to determine whether an iOS device is compliant by creating a compliance policy that marks as noncompliant any iOS devices that don't match the profile. For further protection, you can create a conditional access policy that blocks noncompliant iOS devices from accessing email.
+In this quickstart, you created an email profile for iOS devices. Now you can use this profile to determine whether an iOS device is compliant by creating a compliance policy that marks as noncompliant any iOS devices that don't match the profile. For further protection, you can create a conditional access policy that blocks noncompliant iOS devices from accessing email. For more information about device compliance policies, see [Get started with device compliance policies in Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Get started with device compliance policies in Intune](device-compliance-get-started.md)
+> [Quickstart: Send notifications to noncompliant devices](quickstart-send-notification.md)

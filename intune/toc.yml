@@ -38,6 +38,8 @@
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
     href: quickstart-email-profile.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md    
 - name: Tutorials
   items:
   - name: Protect email on managed devices
