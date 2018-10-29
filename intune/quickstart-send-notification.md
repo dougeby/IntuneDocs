@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -94,11 +94,17 @@ You can also add another action when you create a compliance policy, or update a
 11. Select **Message template** > **Contoso Admin** > **Select** to select the message template you created earlier in this topic.
 12. Select **OK** > **OK** > **Save** to save your changes.
 
-To assign the policy to a group.
+## Assign the policy
+
+You can assign the compliance policy to a specific group of users or to all users. When Intune recognizes that a device is noncompliant, the user will be notified that they must update their device to meet the compliance policy. The following steps allow you to assign the policy.
 
 1. Select the **Windows 10 compliance** policy that you created earlier.
 2. Select **Assignments**.
-3. In the **Assign to** drop-down box, select **All Users**. This will select all **Windows 10 and later** users because the compliance policy has been targeted to this platform.
+3. In the **Assign to** drop-down box, select **All Users**. This will select all users. Any user that has a **Windows 10 and later** device that doesn't meet this compliance policy will be notified.
+
+    > [!NOTE]
+    > You can include and exclude groups when assign compliancy policies.
+
 4. Click **Save**.
 
 When you've successfully created and saved the policy, it will appear in the list of **Device complice - Policies**. Notice in the list that **Assigned** is set to **Yes**.
