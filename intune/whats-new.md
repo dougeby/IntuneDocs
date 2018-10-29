@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2018
+ms.date: 10/29/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -43,8 +43,10 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->     
-## Week of October 22, 2018
+-->  
+  
+  
+## Week of October 29, 2018
 
 ### New Intune Support Experience in the Microsoft 365 Device Management portal
 We are piloting a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquiries.  
@@ -58,6 +60,20 @@ For customers who are part of the pilot, this new experience replaces the curren
 For more information, see [Help and Support pilot](get-support.md#help-and-support-pilot) in How to get support for Microsoft Intune.  
 
 
+## Week of October 22, 2018
+
+### Remove an email profile from a device, even when there's only one email profile <!-- 1818139 -->
+Previously, you couldn't remove an email profile from a device *if* it's the only email profile. With this update, this behavior changes. Now, you can remove an email profile, even if it's the only email profile on the device. 
+See [Add email settings to devices using Intune](email-settings-configure.md) for details.
+
+### Remove PKCS and SCEP certificates from your devices <!-- 3218390 -->
+In some scenarios, PKCS and SCEP certificates remained on devices, even when removing a policy from a group, deleting a configuration or compliance deployment, or an admin updating an existing SCEP or PKCS profile. 
+This update changes the behavior. There are some scenarios where PKCS and SCEP certificates are removed from devices, and some scenarios where these certificates remain on the device. 
+See [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) for these scenarios.
+
+### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
+A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
+>>>>>>> 31829875b0fac95de0206ba2cad6e6e8f56362f1
 
 ## Week of October 15, 2018
 
