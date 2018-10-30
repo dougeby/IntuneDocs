@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 10/24/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -46,17 +46,99 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 -->     
 ## Week of October 22, 2018
 
-### Remove an email profile from a device, even when there's only one email profile <!-- 1818139 -->
+
+### App management
+
+#### Require non-biometric PIN after a specified timeout <!-- 1506985 -->
+By requiring a non-biometric PIN after an admin-specified timeout, Intune provides improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Client apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings. For information about access settings, see [iOS settings](app-protection-policy-settings-ios.md#access-settings) and [Android settings](app-protection-policy-settings-android.md#access-settings).
+
+#### Intune APP data transfer settings on iOS MDM enrolled devices <!-- 2244713 -->
+You can separate the control of Intune APP data transfer settings on iOS MDM enrolled devices from specifying the enrolled user's identity, also known as the User Principal Name (UPN). Admins not using the IntuneMAMUPN will not observe a behavior change. When this functionality is available, admins using the IntuneMAMUPN to control data transfer behavior on enrolled devices should review the new settings and update their APP settings as needed.
+
+#### Windows 10 Win32 apps <!-- 2617325 -->
+You can configure your Win32 apps to be installed in user context for individual users, versus installing the app for all users of the device.
+
+#### Windows Win32 apps and PowerShell scripts <!-- 2617330 -->
+End users are no longer required to be logged in on the device to install Win32 apps or execute PowerShell scripts. 
+
+#### Troubleshooting client app installation <!-- 1363711 -->
+You can troubleshoot the installation success of client apps by reviewing the column labeled **App install** in the **Troubleshoot** blade. To view the **Troubleshoot** blade, in the Intune portal, select **Troubleshoot** under **Help and support**.
+
+### Device configuration
+
+#### Network access control support on iOS VPN clients <!-- 1333693 wnready -->
+With this update, there's a new setting to enable Network Access Control (NAC) when your create a VPN configuration profile for Cisco AnyConnect, F5 Access, and Citrix SSO for iOS. This setting allows the NAC ID of the device to be included in the VPN profile. Currently, there aren't any VPN clients or NAC partner solutions that support this new NAC ID, but we will keep you informed through our [support blog post](ttps://aka.ms/iOS12_and_vpn) when they do.
+
+To use NAC, you'll need to:
+1. Opt in to allow Intune to include device IDs in VPN profiles
+2. Update your NAC provider software/firmware, using guidance directly from your NAC provider
+
+For information on this setting within an iOS VPN profile, see [Add VPN settings on iOS devices in Microsoft Intune](vpn-settings-ios.md). For more information on network access control, see [Network access control (NAC) integration with Intune](network-access-control-integrate.md). 
+
+Applies to: iOS
+
+#### Remove an email profile from a device, even when there's only one email profile <!-- 1818139 -->
 Previously, you couldn't remove an email profile from a device *if* it's the only email profile. With this update, this behavior changes. Now, you can remove an email profile, even if it's the only email profile on the device. 
 See [Add email settings to devices using Intune](email-settings-configure.md) for details.
 
-### Remove PKCS and SCEP certificates from your devices <!-- 3218390 -->
+#### PowerShell scripts and AAD <!-- 2309469 -->
+PowerShell scripts in Intune can be targeted to AAD device security groups.
+
+#### New "Required password type" default setting for Android, Android enterprise<!-- 2649963 -->
+When you create a new compliance policy (**Intune** > **Device compliance** > **Policies** > **Create policy** > **Android** or **Android enterprise** for Platform > System Security), the default value for **Required password type** changes:
+
+From: Device default
+To: At least numeric
+
+Applies to: Android, Android Enterprise
+
+To see these settings, go to [Android](compliance-policy-create-android.md) and [Android Enterprise](compliance-policy-create-android-for-work.md).
+
+#### Use a pre-shared key in a Windows 10 Wi-Fi profile <!-- 2662938 -->
+With this update, you can use a pre-shared key (PSK) with the WPA/WPA2-Personal security protocol to authenticate a Wi-Fi configuration profile for Windows 10. You can also specify the cost configuration for a metered network for devices on Windows 10 October 2018 update.
+
+Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
+
+#### Remove PKCS and SCEP certificates from your devices <!-- 3218390 -->
 In some scenarios, PKCS and SCEP certificates remained on devices, even when removing a policy from a group, deleting a configuration or compliance deployment, or an admin updating an existing SCEP or PKCS profile. 
 This update changes the behavior. There are some scenarios where PKCS and SCEP certificates are removed from devices, and some scenarios where these certificates remain on the device. 
 See [Remove SCEP and PKCS certificates in Microsoft Intune](remove-certificates.md) for these scenarios.
 
+#### Use Gatekeeper on macOS devices for compliance <!-- 2504381 -->
+This update includes the macOS Gatekeeper to evaluate devices for compliance. To set the Gatekeeper property, [Add a device compliance policy for macOS devices](compliance-policy-create-mac-os.md).
+
+
+### Device enrollment
+
+#### Enrollment abandonment report <!-- 1382924 -->
+A new report that provides details on abandoned enrollments is available under **Device enrollment** > **Monitor**. For more information, see [Company portal abandonment report](enrollment-report-company-portal-abandon.md).
+
+#### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
+You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
+
+#### New Azure Active Directory terms of use feature <!-- 2870393 -->
+Azure Active Directory has a terms of use feature that you can use instead of existing Intune terms and conditions. The Azure AD terms of use feature provides more flexibility on which terms to show and when to show them, better localization support, more control in how terms are rendered and improved reporting. The Azure AD terms of use feature does require Azure Active Directory Premium P1 which is also part of the Enterprise Mobility + Security E3 suite. To learn more, see the [Manage your company's terms and conditions for user access article](terms-and-conditions-create.md).
+
+### Device management
+
+### Group Windows Autopilot-enrolled devices by correlator ID <!-- 2075110 -->
+Intune now supports grouping Windows devices by a correlator ID when enrolled using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. Intune will automatically set the [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) to equal "OfflineAutopilotprofile-<correlator ID>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID via the enrollmentprofileName attribute for offline Autopilot enrollments. For more information, see [Windows Autopilot for existing devices](enrollment-autopilot.md#windows-autopilot-for-existing-devices).
+
+
+### Intune apps
+
+#### Intune will support a maximum package size of 8 GB for LOB apps <!-- 1727158 -->
+Intune increased the maximum package size to 8 GB for Line-of-business (LOB) apps. For more information, see [Add apps to Microsoft Intune](apps-add.md).
+
+#### Add custom brand image for Company Portal app <!-- 1916266 -->
+As the Microsoft Intune admin, you can upload a custom brand image which will be displayed as a background image on the user's profile page in the iOS Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+
+#### Intune will maintain the Office localized language when updating Office on end users machines <!-- 2971030 -->
+When Intune installs Office on your end user's machines, end users automatically get the same language packs that they had with previous .MSI Office installations. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
+
 ### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
 A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
+
 
 ## Week of October 15, 2018
 

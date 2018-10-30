@@ -64,49 +64,17 @@ The Tenant Status page in Intune will provide you with tenant status information
 - **Intune Service Health**: Contains active incidents or outages for your tenant. The information in this section is retrieved directly from the Office Message Center ([https://portal.office.com](https://portal.office.com)).
 - **Intune News**: Contains active messages for your tenant, which include things like notifications that your tenant has received the latest Intune features. The information in this section is retrieved directly from the Office Message Center ([https://portal.office.com](https://portal.office.com)).
 
-### Enrollment abandonment report <!-- 1382924 -->
-A new report that provides details on abandoned enrollments will be available under **Device enrollment** > **Monitor**.
 
 ### Deployed WIP policies without user enrollment <!-- 1434452 -->
 Windows Information Protection (WIP) policies will be able to be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From the Intune in the Azure portal, select **Mobile app** > **App selective wipe**.
-
-
-### Add custom brand image for Company Portal app <!-- 1916266 -->
-As the Microsoft Intune admin, you'll be able to upload a custom brand image which will be displayed as a background image on user's profile page in the Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-### Group Windows Autopilot-enrolled devices by correlator ID <!-- 2075110 -->
-Intune will support grouping Windows devices by a correlator ID when enrolled using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. Intune will automatically set the [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) to equal "OfflineAutopilotprofile-\<correlator ID\>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID via the enrollmentprofileName attribute for offline Autopilot enrollments. 
-
 
 ### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
 Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile** > **OAuth**. If this setting is turnd on, two things will happen:
 1. Devices that are already targeted will be issued a new profile.
 2. End users will be prompted for their credentials again.
 
-### New "Required password type" default setting for Android, Android enterprise<!-- 2649963 -->
-When you create a new compliance policy (**Intune** > **Device compliance** > **Policies** > **Create policy** > **Android** or **Android enterprise** for Platform > System Security), the default value for **Required password type** will change:
-Current default: Device default
-New default: At least numeric
-Applies to: Android, Android Enterprise
-
-### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
-You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**.
-
-### New Azure Active Directory terms of use feature <!-- 2870393 -->
-Azure Active Directory will have a terms of use feature that you can use instead of existing Intune terms and conditions. The Azure AD terms of use feature provides more flexibility on which terms to show and when to show them, better localization support, more control in how terms are rendered and improved reporting. The Azure AD terms of use feature does require Azure Active Directory Premium P1 which is also part of the Enterprise Mobility + Security E3 suite.
-
-
-### Intune will maintain the Office localized language when updating Office on end users machines <!-- 2971030 -->
-When Intune installs Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations. 
 
 <!-- 1809 start -->  
-
-### Intune APP data transfer settings on iOS MDM enrolled devices <!-- 2244713 -->
-You'll be able to separate the control of Intune APP data transfer settings on iOS MDM enrolled devices from specifying the enrolled user's identity. Admins not using the IntuneMAMUPN will not observe a behavior change. When this functionality is available, admins using the IntuneMAMUPN to control data transfer behavior on enrolled devices should review the new settings and update their APP settings as needed.
-
-### Use a pre-shared key in a Windows 10 Wi-Fi profile <!-- 2662938 -->
-You'll be able to use a pre-shared key (PSK) with the WPA/WPA2-Personal security protocol to authenticate a Wi-Fi configuration profile for Windows 10.
-Currently, you must import a Wi-Fi profile, or create a custom profile to use a pre-shared key. [Wi-Fi settings for Windows 10](wi-fi-settings-windows.md) lists the current settings. 
 
 ### App Protection Policy (APP) settings for web data <!-- 2662995 -->
 APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
@@ -156,12 +124,6 @@ If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal
 
 ### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
 On iOS devices, Intune admins will be able to block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user will receive a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, will be blocked and device users will not see them. Device users will only see the dialog message once. 
-
-<!-- 1805 start -->
-
-### Require non-biometric after specified timeout <!-- 1506985 --> 
-
-By requiring a non-biometric PIN after admin-specified timeout, Intune will provide improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings will affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings will enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Mobile apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings.
 
 <!-- 1803 start -->
 
