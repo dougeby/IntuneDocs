@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Enroll devices by using a device enrollment manager account
 
-Organizations can enroll up to 1,000 mobile devices with a single Azure Active Directory account by using a device enrollment manager (DEM) user account. DEM is an Intune permission that can be applied to an AAD user account and lets the user to enroll up to 1,000 devices.  This is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices.
+You can enroll up to 1,000 mobile devices with a single Azure Active Directory account by using a device enrollment manager (DEM) account. DEM is an Intune permission that can be applied to an AAD user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices.
 
 ## Limitations of devices that are enrolled with a DEM account
 
@@ -52,10 +52,10 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
 ## Permissions for DEM
 
 Global Administrator or Intune Service Administrator Azure AD roles are required to
-- asssign DEM permission to an Azure AD user account
+- assign DEM permission to an Azure AD user account
 - see all DEM users
 
-If a user doesnt' have the Global Administrator or Intune Service Administrator role assigned to, them but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll be able to see only the DEM users they've created.
+If a user doesn't have the Global Administrator or Intune Service Administrator role assigned to them, but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll can see only the DEM users they've created.
 
 
 ## Remove device enrollment manager permissions
