@@ -44,6 +44,17 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->     
+## Week of October 29, 2018
+
+### Intune app protection policies <!-- 2984657 -->
+Intune app protection policies allow you to configure various data protection settings for Intune protected apps, such as Microsoft Outlook and Microsoft Word. We’ve change the look and feel of these settings for both [iOS](app-protection-policy-settings-ios) and [Android](app-protection-policy-settings-android) to make it easier to find individual settings. There are three categories of policy settings:
+- **Data relocation** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
+- **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
+- **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.  
+  
+The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow. 
+
+
 ## Week of October 22, 2018
 
 ### Remove an email profile from a device, even when there's only one email profile <!-- 1818139 -->
