@@ -55,7 +55,7 @@ Global Administrator or Intune Service Administrator Azure AD roles are required
 - assign DEM permission to an Azure AD user account
 - see all DEM users
 
-If a user doesn't have the Global Administrator or Intune Service Administrator role assigned to them, but has read permissions enabled for the Device Enrollment Managers role assigned to them, they’ll can see only the DEM users they've created.
+If a user doesn't have the Global Administrator or Intune Service Administrator role assigned to them, but has read permissions enabled for the Device Enrollment Managers role assigned to them, they can see only the DEM users they've created.
 
 
 ## Remove device enrollment manager permissions
