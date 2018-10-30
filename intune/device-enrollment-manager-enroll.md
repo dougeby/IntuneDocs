@@ -34,29 +34,15 @@ Organizations can use Intune to manage large numbers of mobile devices with a si
 
 Users must exist in the [Azure portal](https://portal.azure.com) to be added as device enrollment managers. For optimal security, the DEM user shouldn't also be an Intune admin.
 
->[!NOTE]
->The DEM enrollment method can't be used with these other enrollment methods: [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md), or [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md).
-
-## Example of a device enrollment manager scenario
-
-A restaurant wants to provide 50 point-of-sale tablets for its wait staff, and order monitors for its kitchen staff. The employees never need to access company data or sign in as users. The Intune admin creates a new device enrollment manager account for the restaurant supervisor.  This account is separate from the supervisor's primary account and is used only for enrolling shared devices with Intune. The supervisor can now enroll the 50 tablets devices by using the DEM credentials.
-
-Only users in the [Azure portal](https://portal.azure.com) can be device enrollment managers. The device enrollment manager user can't be an Intune admin.
-
-The DEM user can:
-
--   Enroll up to 1000 devices in Intune
--   Sign in to the Company Portal to get company apps
--   Configure access to company data by deploying role-specific apps to the tablets
-
 ## Limitations of devices that are enrolled with a DEM account
 
 Devices that are enrolled with a device enrollment manager account have the following limitations:
 
   - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin can do unenroll.
   - Only the local device appears in the Company Portal app or website.
-  - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator, Apple Device Enrollment Program (DEP), or Apple School Manager (ASM) to enroll devices. This means that you can't put the device in supervised mode and thus won't have access to some configuration options.
+  - (iOS only) If you use DEM to enroll iOS devices, you can't use the [Apple Configurator with Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator with direct enrollment](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md), or [Device Enrollment Program (DEP)](device-enrollment-program-enroll-ios.md) to enroll devices. This means that you can't put the device in supervised mode and thus won't have access to some configuration options.
   - (Android only) There's a limit to the number of Android work profile devices that can be enrolled with a single DEM account. Up to 10 Android work profile devices may be enrolled per DEM account. This limitation doesn't apply to legacy Android enrollment.
+  - Devices can install VPP apps if they have Apple VPP device licenses.
   
 
 
