@@ -10,7 +10,6 @@
  ms.custom: include file
 ---
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Device compliance** > **Policies** > **Create Policy**.
-4. Enter a **Name** and **Description**.
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+2. Select **Device compliance** > **Policies** > **Create Policy**.
+3. Enter a **Name** and **Description**.
