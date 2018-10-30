@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 ms.custom: intune-classic
 ---
 
-# The early edition for Microsoft Intune - October 2018
+# The early edition for Microsoft Intune - November 2018
 
 > [!Note]
 > NDA notification: The following changes are under development for Intune. This information is shared under NDA on a very limited basis. Do not post any of this information on social media or public websites such as Twitter, UserVoice, Reddit, and so on. 
@@ -41,6 +41,46 @@ This page is updated periodically. Check back for additional updates.
 -->
  
 ## Intune in the Azure portal
+
+<!-- 1811 start -->
+
+### Uninstalling apps on corporate-owned supervised iOS devices <!-- 1281677 -->
+You will be able to remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
+
+### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
+Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile** > **OAuth**. If this setting is turned on, two things will happen:
+1. Devices that are already targeted will be issued a new profile.
+2. End users will be prompted for their credentials again.
+
+### Track installation of Office ProPlus <!--2620217-->
+You'll be able to track the installation progress of [Office ProPlus](apps-add-office365.md) using the [Enrollment Status Page](windows-enrollment-status.md).
+
+### macOS Device Enrollment Program support for Apple School Manager accounts <!--3006133-->
+Intune will support using the Device Enrollment Program on macOS devices for Apple School Manager accounts.
+
+### Temporarily pause kiosk mode on Android devices to make changes <!-- 3041935 -->
+When using Android devices in multi-app kiosk mode, an IT administrator may need to make changes to the device. A new multi-app kiosk setting that will allow an IT Administrator to temporarily pause kiosk-mode using a PIN, and get access to the entire device.
+To see the current kiosk settings, see [Android kiosk settings](android-kiosk-settings.md).
+
+### Set custom background in Managed Home Screen app  <!-- 3041945 -->
+We'll be adding a setting that lets you customize the background appearance of the Managed Home Screen app on Android Enterprise, multi-app, kiosk mode devices.  To configure the **Custom URL background**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
+
+### Enable virtual home button on Android Enterprise kiosk devices  <!-- 3042021 -->
+A new setting will allow users to tap a soft-key button on their device to switch between the Managed Home Screen app and other assigned apps on their multi-app kiosk device. This setting is particularly helpful in scenarios where a user's kiosk app does not respond appropriately to the "back" button. You'll be able to configure this setting for corporate-owned, single use Android devices. To enable or disable the **Virtual home button**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
+
+### App protection policy assignment save and apply <!-- 3104570 -->
+You will have better control over your app protection policy assignments. By saving and applying your app protection policy assignments, only the intended users are directly impacted by an app protection assignment policy.
+
+### New Microsoft Edge browser settings for Windows 10 and later <!-- 3174639 -->
+A new setting will be added to help control and manage the Microsoft Edge browser on your devices. For a list of the current settings, see [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#edge-browser).
+
+### Select apps tracked on the Enrollment Status Page<!-- 2531007 -->
+You'll be able to choose which apps are tracked on the Enrollment Status Page.
+
+
+
+
+
 
 <!-- 1810 start -->
 
@@ -79,15 +119,6 @@ Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choo
 ### App Protection Policy (APP) settings for web data <!-- 2662995 -->
 APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
 
-### Autopilot device sync frequency increasing to every 12 hours <!-- 2753673 -->
-Autopilot devices will synchronize every 12 hours instead of every 24 hours.
-
-### Intune landing page updates and node rename <!--2867309 -->
-Updates to the Intune landing page will include new and changed monitoring tiles and charts for better data visualization. The **Mobile apps** node will change to **Client apps**.
-
-### Increased end-user access using the Company portal app <!-- 772203 -->
-End users will be able to access key account actions, such as password reset and their AAD profile, from the Company portal app.  
-
 <!-- 1808 start -->
 
 ### Apple VPP token used by another MDM <!-- 1488946 -->
@@ -107,9 +138,6 @@ Based on feedback from customers, the way updates are made to on-premises connec
 
 <!-- 1807 start -->
 
-### Improved Company Portal app experience for device enrollment manager users <!-- 675800 -->
-When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to load all DEM-enrolled devices.  
-
 ### Check for Configuration Manager compliance <!-- 2192052 -->
 A future update will include a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10**). Configuration Manager sends signals to Intune compliance. Using the Intune setting, you can require all Configuration Manager signals to return "compliant".
 
@@ -119,17 +147,6 @@ Applies to Windows 10 and later
 
 ### Alerts for expiring VPP token or Company Portal license running low <!-- 2237572 -->
 If you use the Volume Purchase Program (VPP) to pre-provision the Company Portal during DEP enrollment, Intune will alert you when the VPP token is about to expire and when the licenses for the Company Portal are running low.
-
-<!-- 1806 start -->
-
-### 3rd-party keyboards can be blocked by APP settings on iOS <!-- 1248481 -->
-On iOS devices, Intune admins will be able to block the use of 3rd-party keyboards when accessing organization data in policy protected apps. When the Application Protection Policy (APP) is set to block 3rd-party keyboards, the device user will receive a message the first time they interact with corporate data when using a 3rd-party keyboard. All options, other than the native keyboard, will be blocked and device users will not see them. Device users will only see the dialog message once. 
-
-<!-- 1803 start -->
-
-### Updating the Help and Feedback experience on Company Portal app for Android <!--1631531 -->
-
-The Help and Feedback experience on the Company Portal app for Android will be updated to align with best practices for Android apps. The Company Portal app for Android will be updated over the next few months to divide the **Help and Feedback** menu item to distinct **Help** and **Send Feedback** menu items. The **Help** page will feature a **Frequently Asked Questions** section and **Email Support** button to lead end users to upload logs to Microsoft and send email to company support describing the issue. **Send Feedback** will lead the user through a standard Microsoft feedback submission, which will prompt the user to choose whether, "I like something," "I don't like something," or "I have an idea."
 
 
 

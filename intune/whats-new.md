@@ -44,7 +44,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->     
-## Week of October 22, 2018
+## Week of October 29, 2018
 
 
 ### App management
