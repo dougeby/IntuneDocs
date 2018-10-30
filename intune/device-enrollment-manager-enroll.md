@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM options. Each enrolled device uses a single license. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
+Organizations can use Intune to manage large numbers of mobile devices with a single user account. The *device enrollment manager* (DEM) account is a special user account that can enroll up to 1,000 devices. You add existing users to the DEM account to give them the special DEM options. We recommend that you use devices enrolled through this account as shared devices rather than personal ("BYOD") devices.  
 
 Users must exist in the [Azure portal](https://portal.azure.com) to be added as device enrollment managers. For optimal security, the DEM user shouldn't also be an Intune admin.
 
@@ -53,19 +53,11 @@ The DEM user can:
 
 Devices that are enrolled with a device enrollment manager account have the following limitations:
 
-  - No per-user access. Because devices don't have an assigned user, the device has no email or company data access. VPN configurations, for example, could still be used to provide device apps with access to data.
   - The DEM user can't unenroll DEM-enrolled devices on the device itself by using the Company Portal. The Intune admin can do unenroll.
   - Only the local device appears in the Company Portal app or website.
-  - Users can’t use Apple Volume Purchase Program (VPP) apps with user licenses because of per-user Apple ID requirements for app management.
   - (iOS only) If you use DEM to enroll iOS devices, you can't use the Apple Configurator, Apple Device Enrollment Program (DEP), or Apple School Manager (ASM) to enroll devices. This means that you can't put the device in supervised mode and thus won't have access to some configuration options.
   - (Android only) There's a limit to the number of Android work profile devices that can be enrolled with a single DEM account. Up to 10 Android work profile devices may be enrolled per DEM account. This limitation doesn't apply to legacy Android enrollment.
-  - Devices can install VPP apps if they have device licenses.
-  - An Intune device license isn't required to use DEM. Learn more about [user and device licenses](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
-
-
-> [!NOTE]
-> You can deploy company apps to devices that are managed by the device enrollment manager. Deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.
-> To improve performance, viewing the Company Portal app on a DEM device shows only the local device. Remote management of other DEM devices can only be done from the Intune admin console.
+  
 
 
 ## Add a device enrollment manager
