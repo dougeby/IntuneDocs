@@ -136,6 +136,19 @@ As the Microsoft Intune admin, you can upload a custom brand image which will be
 #### Intune will maintain the Office localized language when updating Office on end users machines <!-- 2971030 -->
 When Intune installs Office on your end user's machines, end users automatically get the same language packs that they had with previous .MSI Office installations. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
 
+### Monitor and troubleshoot
+
+#### New Intune Support Experience in the Microsoft 365 Device Management portal <!-- 3076965 -->
+We are piloting a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquiries.  
+
+In addition to issue-specific guidance, you can also use the new case creation workflow to open a support case by email or phone.  
+
+For customers who are part of the pilot, this new experience replaces the current Help and Support experience of a static set of pre-selected options that are based on the area of the console you are in when you open Help and Support.  
+
+*This new Help and Support experience is a pilot that is available in the Device Management portal to some but not all tenants. Participants for this pilot are randomly selected from the available Intune tenants. New tenants will be added as we expand the pilot program.*  
+
+For more information, see [Help and Support pilot](get-support.md#help-and-support-pilot) in How to get support for Microsoft Intune.  
+
 ### PowerShell module for Intune – Preview available <!-- wnready 951068 -->
 A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
 

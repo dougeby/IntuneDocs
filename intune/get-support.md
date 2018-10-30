@@ -9,7 +9,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -101,6 +101,64 @@ You can view a support request from within the Azure portal. To do so:
 1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
+
+
+## Help and Support pilot
+*The following information applies only when you use the Device Management portal and are part of the Help and Support pilot. Participants for this pilot are randomly selected from the available Intune tenants.*  
+
+The Help and Support pilot for Intune is a new experience that is available in the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) to some but not all tenants. This new experience is similar to that seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the previous Help and Support experience when accessed from some locations of the Device Management console.  
+
+In the Device Management portal, you access the new experience when you select **Help and Support** from any blade under **All services** > **Device Management**, except for the **Troubleshooting** blade. When you access Help and Support from other locations like **Troubleshooting**, by using the **?** option in the upper right of the console banner, or when you select **Help + Support** from the left pane list of services, you access the original experience.  
+
+In the new experience, you gain access to the **Need help?** view, as seen in the following image:  
+![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
+
+In this view you can do the following actions:
+
+1. [Specify details](#specify-details-about-an-issue) about the specific problem you want help with  
+2. [View context-sensitive help](#view-context-sensitive-help) and related solutions that are based on the details you specified  
+3. [Get support](#get-support), using either email or the phone  
+4. [View support cases](#view-support-cases) you have previously opened using this new workflow  
+
+### Specify details about an issue
+When you open Help and Support from a location that is supported by the pilot, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information than can help to solve the issue.
+
+The following are examples of queries you might submit:
+  
+- *Can’t restore iOS device*  
+- *Can’t create conditional access policy*  
+
+![Specify the issue on the Need Help? page](./media/get-support/describe-the-issue.png)
+
+
+### View context-sensitive help
+After you select an offered choice or submit your own query, context-sensitive results appear under **View solutions**. These results include both Intune specific self-help guidance and additional results returned from a web-search based on the query criteria.  
+![View-results](./media/get-support/view-results.png)
+
+### Get support  
+If the self-help or web-based guidance doesn’t help you resolve the issue, you can use the console to open an email or phone support issue.  
+On the **Need help?** page, select the option you want to use.  
+
+- For an email request, provide your email address and optionally, you can add attachments to your submission. Select **Send** to open the request.  
+
+  ![Email request](./media/get-support/email-support.png)
+  
+- For a phone request, provide your phone number. Optionally, you can include your email address and add attachments to your submission. Select Call me to submit the request.  
+
+   ![Phone request](./media/get-support/phone-support.png)
+
+### View support cases
+Select the history button to view the support incidents that you've created.  
+
+![View support cases](./media/get-support/view-support-tickets.png)
+
+- Only the support cases that you open by using the pilot workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console that is part of the pilot. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
+
+- Cases that you opened before joining the pilot are unchanged. To view them, you must use a help and support view that isn't part of the pilot. These cases have numbers that start with **117** or **118** and are 15 digits long.  To view a support case that was opened before you joined the pilot, use the Azure portal. To do so:
+
+    1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the *?* icon in the upper-right corner of the portal, and then select *Help + support* to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+
+    2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
