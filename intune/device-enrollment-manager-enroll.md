@@ -60,10 +60,6 @@ Devices that are enrolled with a device enrollment manager account have the foll
   - (Android only) There's a limit to the number of Android work profile devices that can be enrolled with a single DEM account. Up to 10 Android work profile devices may be enrolled per DEM account. This limitation doesn't apply to legacy Android enrollment.
   
 
-> [!NOTE]
-> You can deploy company apps to devices that are managed by the device enrollment manager. Deploy the Company Portal app as a **Required Install** to the device enrollment manager's user account.
-> To improve performance, viewing the Company Portal app on a DEM device shows only the local device. Remote management of other DEM devices can only be done from the Intune admin console.
-
 
 ## Add a device enrollment manager
 
