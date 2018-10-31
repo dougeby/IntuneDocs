@@ -55,5 +55,5 @@ Your company cannot see your personal information when you enroll a device with 
 
 -  Phone number: for **Corporate**-owned devices, your full phone number can be seen. For **Personal**-owned devices, just the last four digits of your phone number are visible to your company. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
 -  Location: your company can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
-- App inventory: if your company uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- App inventory: if your company uses Mobile Threat Defense, they will be able to view more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Network information: some information about network connections for Android devices may be available to your company support. For example, if your company requires devices to remain within a certain building, your device would identify the network where it is connected. 
