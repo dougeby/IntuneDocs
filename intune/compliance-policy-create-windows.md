@@ -173,6 +173,9 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
 
+  > [!NOTE]
+  > The **Encryption of data storage on a device** setting generically checks for the presence of encryption on the device. For a more robust encryption setting, consider using **Require BitLocker**, which leverages Windows Device Health Attestation to validate Bitlocker status at the TPM level.
+
 #### Device Security
 
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
