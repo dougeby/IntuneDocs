@@ -79,7 +79,7 @@ You'll be able to choose which apps are tracked on the Enrollment Status Page.
 
 ### Intune app protection policies UI update <!-- 3251427 -->
 
-Intune App protection policies allow you to configure various data protection settings for Intune protected apps, such as Microsoft Outlook and Word. We’re changing the setting and button labels to make each easier to understand. The controls will be changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls, while the labels will also be updated for clarity. The settings will also be reformatted, so the setting and its label are side by side in the control, providing better navigation. The default settings and number of settings will remain the same, but this change will allow the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies.
+Intune App protection policies allow you to configure various data protection settings for Intune protected apps, such as Microsoft Outlook and Word. We’re changing the setting and button labels to make each easier to understand. The controls will be changed from **yes**/**no** controls to primarily **block**/**allow** and **disable**/**enable** controls, while the labels will also be updated for clarity. The settings will also be reformatted, so the setting and its label are side by side in the control, providing better navigation. The default settings and number of settings will remain the same, but this change will allow the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies.
 
 
 
