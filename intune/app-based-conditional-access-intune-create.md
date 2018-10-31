@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,14 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article describes on how to set up app-based conditional access policies for apps that are part of the list of approved apps. The list of approved apps consists of apps that were tested by Microsoft.
+Set up app-based conditional access policies for apps that are part of the list of approved apps. The list of approved apps consists of apps that were tested by Microsoft.
 
 > [!IMPORTANT]
-> This article walks through the steps to add an app-based conditional access policy. Note that you can use the same steps when adding apps such as SharePoint Online, Microsoft Teams, and Microsoft Exchange Online from the list of approved apps.
+> This article walks through the steps to add an app-based conditional access policy. You can use the same steps when add apps like SharePoint Online, Microsoft Teams, and Microsoft Exchange Online from the list of approved apps.
 
 ## Create app-based conditional access policies in Azure AD workload
 
-IT admins can create app-based conditional access policies from the Azure AD workload. This gives convenience so you don't need to switch between the Azure and the Intune workloads.
+IT admins can create app-based conditional access policies from the Azure AD workload. This access means you don't need to switch between the Azure and the Intune workloads.
 
 > [!IMPORTANT]
 > You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
@@ -56,7 +56,7 @@ IT admins can create app-based conditional access policies from the Azure AD wor
 5. Choose **Require approved client app**, choose **Select**, then choose **Create** to save the new policy.
 
 ## Next steps
-[Block apps that do not have modern authentication](app-modern-authentication-block.md)
+[Block apps that don't have modern authentication](app-modern-authentication-block.md)
 
 ### See also
 
