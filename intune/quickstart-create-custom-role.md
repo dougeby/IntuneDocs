@@ -43,7 +43,7 @@ When you create a custom role, you can set permissions for a wide range of actio
 
 Before your security operator can use the new permissions, you must assign the role to a group that contains the security user.
 
-1. In Intune, choose **Roles** > **All roles** > **Remote device helpdesk**.
+1. In Intune, choose **Roles** > **All roles** > **Security operations**.
 2. Under **Intune roles**, choose **Assignments** > **Assign**.
 3. In the **Assignment name** box, enter *Sec ops*.
 4. Choose **Member (Groups)** > **Add**.
