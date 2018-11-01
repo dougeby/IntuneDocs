@@ -48,7 +48,7 @@ This page is updated periodically. Check back for additional updates.
 You will be able to remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
 ### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
-Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile** > **OAuth**. If this setting is turned on, two things will happen:
+Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile**. In the create profile blade, you can enable or disable **OAuth**. If this setting is turned on, two things will happen:
 1. Devices that are already targeted will be issued a new profile.
 2. End users will be prompted for their credentials again.
 
