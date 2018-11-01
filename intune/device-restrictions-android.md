@@ -44,7 +44,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Geolocation (Samsung Knox only)** - Allows the device to utilize location information.
 - **Power off (Samsung Knox only)** - Allows the user to power off the device.<br>If disabled, **Number of sign-in failures before wiping device** cannot be set.
 - **Screen capture (Samsung Knox only)** - Lets the user capture the screen contents as an image.
-- **Voice assistant (Samsung Knox only)** - Allows the use of voice assistant software on the device.
+- **Voice assistant (Samsung Knox only)** - Allows the use of S Voice service and app on the device. This does not apply to Bixby or the voice assistant for accessibility that reads the screen content aloud.
 - **YouTube (Samsung Knox only)** - Allows the use of the YouTube app on the device.
 - **Shared devices (Samsung Knox only)** - Configure a managed Samsung Knox Standard device as shared. In this mode, end users can sign in and out of the device with their Azure AD credentials. The device remains managed whether it’s in use or not.<br>When used in conjunction with a SCEP certificate profile, this feature allows end users to share a device with the same set of apps for all users, but with their own SCEP user cert.  When users sign out, all app data is cleared.  This feature is limited to LOB apps only.
 - **Block date and time changes (Samsung Knox)** - Prevent the user from changing the date and time settings on the device. 
