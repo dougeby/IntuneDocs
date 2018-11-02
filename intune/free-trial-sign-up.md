@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -86,12 +86,14 @@ To set the MDM authority to Intune, follow these steps.
 
 1. Open a new browser window and enter **https://portal.azure.com** in the address bar. 
 2. Choose **All services** > **Microsoft Intune**.
-3. Select the orange banner to open the **Mobile Device Management Authority** setting. 
+3. Select the banner indicating that you haven't enabled device management, or if you don't immediately see the banner, select **Device enrollment**. The **Choose MDM Authority** blade will be displayed if you haven't enabled device management yet.
 
     > [!NOTE]
     > The orange banner is only displayed if you haven't yet set the MDM authority.
 
-4. Under **Mobile Device Management Authority**, set your MDM authority to **Intune MDM Authority**.
+    ![Image of the Choose MDM Authority blade](./media/choose-mdm-authority.png) 
+
+4. Under **Choose MDM Authority**, set your MDM authority to **Intune MDM Authority**.
 
 For more information about the MDM authority, see [Set the mobile device management authority](mdm-authority-set.md).
 
@@ -130,4 +132,4 @@ There are two portals that you might use:
 In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
 
 > [!div class="nextstepaction"]
-> [Create a user](get-started-users.md)
+> [Create a user](quickstart-create-user.md)
