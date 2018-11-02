@@ -501,7 +501,7 @@ A **termsAndConditions** entity represents the metadata and contents of a given 
 |    description    |    The description for these terms and conditions.     |         |
 |    title    |    The title for these terms and conditions.     |    Device management corporate policy        |
 |    summaryOfTerms    |    The summary of terms given to the user.     |    I agree to the terms and conditions.    |
-|    termsAndConditionsBodyText    |    The body of text for these terms and conditions.       |    * Device encryption   * Enforcement of 6 digits PIN    |
+|    termsAndConditionsBodyText    |    The body of text for these terms and conditions.       |    *Device encryption* Enforcement of 6 digits PIN    |
 |    isDeleted    |    True or false value for whether this value is   deleted.     |    False    |
 |    startDateInclusiveUTC    |    The start date of these terms and conditions.     |    8/23/2018 4:01:34 AM    |
 |    endDateEclusiveUTC    |    The end date of these terms and conditions.     |    12/31/9999 12:00:00 AM    |
