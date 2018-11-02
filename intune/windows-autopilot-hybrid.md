@@ -70,7 +70,7 @@ The devices to be enrolled must also:
 
 The Intune Connector for Active Directory creates Autopilot enrolling computers in the On-Premise Active directory domain. The computer hosting Intune Connector must have the right to create the computer objects within the domain. 
 
-On some domains, computers are not granted the rights to create computers. Or maybe Admins do not want to increase the Domain-wide computer account limit. In these situations, the rights can be specifically delegated to the organizational unit where Hybrid Azure AD joined devices are created.
+On some domains, computers are not granted the rights to create computers. Or maybe Admins do not want to increase the Domain-wide computer account limit. In these situations, the rights can be delegated to the organizational unit where Hybrid Azure AD joined devices are created.
 
 The organizational unit granted the right to create computers must match:
 - the organizational unit entered in the Domain Join profile
@@ -88,7 +88,7 @@ The organizational unit granted the right to create computers must match:
 
     ![Screenshot of delegate control](media/windows-autopilot-hybrid/object-types-computers.png)
 
-5. In the **Select Users, Computers, or Groups** dialog box, in the **Enter the objet names to select** box, enter the name of the computer where the Connector is installed.
+5. In the **Select Users, Computers, or Groups** dialog box, in the **Enter the object names to select** box, enter the name of the computer where the Connector is installed.
 
     ![Screenshot of delegate control](media/windows-autopilot-hybrid/enter-object-names.png)
 
