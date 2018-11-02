@@ -25,6 +25,12 @@ The Windows Autopilot simplifies enrolling devices. Building and maintaining cus
 - [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
+## How to get the CSV for Import in InTune
+
+See the understanding powershell cmdlet for more information how to use it.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
+
 ## Add devices
 
 You can add Windows Autopilot devices by importing a CSV file with their information.
