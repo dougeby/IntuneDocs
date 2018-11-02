@@ -42,7 +42,7 @@ The devices to be enrolled must also:
 - Have access to your Active Directory (VPN connection not supported).
 - Go through the Out-of-Box Experience (OOBE).
 
-## Enable Windows 10 automatic enrollment
+## Set up Windows 10 automatic enrollment
 
 1. Sign in to the [Azure portal](https://portal.azure.com), and select **Azure Active Directory**.
 
@@ -109,7 +109,7 @@ The organizational unit granted the right to create computers must match:
 
     ![Screenshot of delegate control](media/windows-autopilot-hybrid/full-control.png)
 
-## Download and install the Intune Connector for Active Directory
+## Install the Intune Connector
 
 The Intune Connector for Active Directory needs to be installed on a computer running Windows Server 2016 that has access to the Internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the connector on a server that is not running any other Intune connecters.
 
@@ -209,3 +209,6 @@ It will take around 15 minutes for the device profile status to change from **No
 4. Choose **OK** > **Create**. The profile is created, and appears in the list.
 5. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
 
+## Next steps
+
+After you configure Windows Autopilot, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](device-management.md)
