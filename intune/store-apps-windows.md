@@ -58,7 +58,7 @@ You can add a Microsoft Store app to Intune by doing the following:
 8. Select **OK**.
 9. Select **Add**.
 
-The app you have created is displayed in the apps list, where you can assign it to the groups that you select. 
+The app you have created is displayed in the apps list, where you can assign it to the groups that you select. Microsoft Store apps can only be assigned to groups with the assignment type **Available for enrolled devices** (users install the app from the Company Portal app or website).
 
 ## Next steps
 - [Assign apps to groups](apps-deploy.md)
