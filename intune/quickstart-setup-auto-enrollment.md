@@ -18,6 +18,8 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
+- Microsoft Intune subscription - [sign up for a free trial account](free-trial-sign-up.md)
+- Azure Active Directory Premium subscription - [sign up for a free trial subscription](https://azure.microsoft.com/trial/get-started-active-directory/)
 - To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
 
 ## Sign in to Intune
