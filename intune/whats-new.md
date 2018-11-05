@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/5/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -44,6 +44,14 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->     
+## Week of November 5, 2018
+
+### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
+
+Intune's iOS email profiles support iOS 12 Open Authorization (OAuth). To see this feature, create a new profile (**Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Email** for profile type), or update an existing iOS email profile. If you enable OAuth in a profile that's already deployed to users, then users are prompted to reauthenticate, and download their email again.
+
+[iOS email profiles](email-settings-ios.md) has more information on using OAuth in an email profile.
+
 ## Week of October 29, 2018
 
 
