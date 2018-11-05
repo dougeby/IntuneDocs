@@ -53,7 +53,7 @@ Use the email profile settings to configure your devices running iOS.
 - **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile. Azure multi-factor authentication isn't supported.
   - If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created that is used to authenticate the Exchange connection.
 - **SSL**: **Enable** uses Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
-- **OAuth**: **Enable** uses Open Authorization (OAuth) communication when sending emails, receiving emails, and communicating with Exchange. When using OAuth, be sure to:
+- **OAuth**: **Enable** uses Open Authorization (OAuth) communication when sending emails, receiving emails, and communicating with Exchange. If your OAuth server uses certificate authentication, choose **Certificate** as the **Authentication method**, and include the certificate with the profile. Otherwise, choose **Username and password** as the **Authentication method**. When using OAuth, be sure to:
 
   - Confirm your email solution supports OAuth before targeting this profile to your users. Office 365 Exchange online support OAuth. On-premises Exchange and other partner or third-party solutions may not support OAuth. On-premises Exchange can be configured for Modern Authentication (see the [Announcing Hybrid Modern Authentication for Exchange On-Premises](https://blogs.technet.microsoft.com/exchange/2017/12/06/announcing-hybrid-modern-authentication-for-exchange-on-premises/) blog post).
 
