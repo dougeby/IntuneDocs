@@ -28,12 +28,12 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
+  - name: Set up automatic enrollment
+    href: quickstart-setup-auto-enrollment.md
   - name: Create a policy
     href: quickstart-create-policy.md
   - name: Set device password length
     href: quickstart-set-password-length-android.md  
-  - name: Set up automatic enrollment
-    href: quickstart-setup-auto-enrollment.md
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
