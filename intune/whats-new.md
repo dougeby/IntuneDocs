@@ -121,6 +121,10 @@ Azure Active Directory has a terms of use feature that you can use instead of ex
 
 ### Autopilot support for hybrid Azure Active Directory joined devices (Preview) <!-- 1048100-->
 You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
+This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
+
+### Android Device Owner mode support <!--3188762-->
+For Samsung Knox Mobile Enrollment, Intune now supports enrolling devices to the Android Device Owner mode of management. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
 
 ### Device management
 

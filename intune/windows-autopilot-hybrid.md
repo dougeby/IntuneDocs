@@ -31,6 +31,9 @@ ms.custom: intune-azure
 # Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot (Preview)
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory joined devices. To do so, follow the steps below.
 
+> [!NOTE]
+> This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
+
 ## Prerequisites
 
 - Successfully configure [hybrid Azure Active Directory join devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
