@@ -59,7 +59,6 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 	- **Description**: Enter a description for the app. The description appears in the company portal.
 	- **Publisher**: Enter the name of the publisher of the app.
 	- **Minimum Operating System**: From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
-	- **Ignore app version**: Set to **Yes** if the app developer automatically updates the app.
 	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
