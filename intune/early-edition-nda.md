@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -117,10 +117,10 @@ APP policy settings for web content on both Android and iOS devices will be upda
 ### Apple VPP token used by another MDM <!-- 1488946 -->
 Intune will detect and show details if an Apple volume-purchased program (VPP) token is in use by both Intune and another MDM.
 
-### iOS and macOS version numbers and build numbers are shown <!-- 1892471 -->
-In **Device compliance** > **Device compliance**, the iOS and macOS operating system versions is shown. In a future update, the build number will also be shown for both platforms.
+### iOS and macOS version numbers and build numbers are available in compliance policies <!-- 1892471 -->
+In **Device compliance** > **Device compliance**, the iOS and macOS operating system versions are shown, and available to use in compliance policies. In a future update, the build number will also be configurable for both platforms.
 
-When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By showing the build number, you can easily check if a vulnerability update is installed.
+When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By using the build number in a compliance policy, you can easily check if a vulnerability update is installed.
 
 ### Retired devices in the device compliance dashboard <!-- 1981119 -->
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
