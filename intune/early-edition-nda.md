@@ -106,11 +106,6 @@ The Tenant Status page in Intune will provide you with tenant status information
 ### Deployed WIP policies without user enrollment <!-- 1434452 -->
 Windows Information Protection (WIP) policies will be able to be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From the Intune in the Azure portal, select **Mobile app** > **App selective wipe**.
 
-### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
-Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile** > **OAuth**. If this setting is turnd on, two things will happen:
-1. Devices that are already targeted will be issued a new profile.
-2. End users will be prompted for their credentials again.
-
 
 <!-- 1809 start -->  
 
