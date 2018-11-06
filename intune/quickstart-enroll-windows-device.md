@@ -29,11 +29,9 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 - Microsoft Intune subscription - [sign up for a free trial account](free-trial-sign-up.md)
 - To complete this quickstart, you must complete the steps to [setup automatic enrollment in Intune](quickstart-setup-auto-enrollment.md).
 
-## Sign in to Intune
+## Confirm your Windows 10 Desktop version
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
-
-## Windows 10 Desktop devices
+Before enrolling your Windows 10 Desktop, you must confirm the version of Windows that you have installed.
 
 1. Right-click the Windows **Start** icon and select **Settings** to display Windows Settings options.
 
@@ -46,20 +44,24 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
     > [!TIP]
     > You can also type the phrase "About your PC" into the **search bar**, then select **About your PC**.
 
-3. In the window you will see a list of Windows 10 for your PC. Within this list, locate the **Version**.
+3. In the **Settings** window you will see a list of **Windows specifications** for your PC. Within this list, locate the **Version**.
+
+4. Confirm that the Windows 10 **Version** is **1607 or higher**.
 
     > [!IMPORTANT]
     > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-your-w10-device-your-account.md).
 
-4. Return to Windows Settings and select **Accounts**.
+## Enroll Windows 10 Desktop
+
+1. Return to Windows Settings and select **Accounts**.
 
    ![Screenshot of your system settings - Accounts](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-03.png)
 
-5. Select **Access work or school** > **Connect**.
+2. Select **Access work or school** > **Connect**.
 
     ![Select Access work school account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-4. Sign in to Intune with your work or school account, and then select **Next**.
+3. Sign in to Intune with your work or school account, and then select **Next**. If you followed the [create a user and assign a license] quickstart, you can sign in with the user account that you created.
 
     > [!NOTE]
     > If you setting up an ".onmicrosoft.com", the user account will have **.onmicrosoft.com** as part of the account address. 
@@ -68,16 +70,23 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 
     You’ll see a message indicating that your company or school is registering your device.
 
-6. When you see the **You’re all set!** screen, select **Close**. You’re done.
+4. When you see the **You’re all set!** screen, select **Close**. You’re done.
 
    ![Select close on the "You're all set!" screen](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-7. You will now see the added account as part of the **Access work or school** settings.
+5. You will now see the added account as part of the **Access work or school** settings.
 
    ![Screenshot of newly added account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
 
-> [!TIP]
-> If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+
+## Confirm your enrollment in Intune
+
+1. Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
+2. Select **Devices** to view the enrolled devices in Intune.
+3. Verify that you have an additional device enrolled within Intune.
+
+   ![Screenshot Intune enrolled devices](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-08.png)
 
 ## Clean up resources
 
