@@ -65,4 +65,4 @@ Once you have successfully created the group, it will appear in the list of **Al
 In this quickstart, you used Intune to create a group based on an existing user.
 
 > [!div class="nextstepaction"]
-> [Create a device compliance policy](quickstart-create-policy.md)
+> [Quickstart: Set up automatic enrollment for Windows 10 devices](quickstart-setup-auto-enrollment.md)
