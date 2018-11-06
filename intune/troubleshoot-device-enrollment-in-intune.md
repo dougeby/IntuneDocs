@@ -417,10 +417,10 @@ After you've wiped the blocked devices, you can tell the users to restart the en
 * If the device is still assigned to another user in Intune, its former owner did not use the Company Portal app to remove or reset it.  
 To clean up the stale device record from Intune:  
 
-1. Go to [Intune in the Azure portal](https://portal.manage.microsoft.com) and sign in with your administrative credentials.
-2. Go to Intune > **Devices** > **All devices**.  
-3. Find the device with the enrollment problem. Search by device name or MAC/HW Address to narrow your results.
-4. Select the device > **Delete**. Delete all other entries associated with the device.  
+    1. Go to [Intune in the Azure portal](https://portal.manage.microsoft.com) and sign in with your administrative credentials.
+    2. Go to Intune > **Devices** > **All devices**.  
+    3. Find the device with the enrollment problem. Search by device name or MAC/HW Address to narrow your results.
+    4. Select the device > **Delete**. Delete all other entries associated with the device.  
 
 ## Issues when using System Center Configuration Manager with Intune
 ### Mobile devices disappear
