@@ -5,7 +5,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,13 +31,13 @@ This article shows how to configure your infrastructure, then create and assign 
 
 - **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
 
-- **Certification Authority** (CA): An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For details, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
+- **Certification Authority** (CA): Must be a Microsoft Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For details, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **NDES Server**: On a server that runs Windows Server 2012 R2 or later, you must set up the Network Device Enrollment Service (NDES). Intune doesn't support using NDES when it runs on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host the Network Device Enrollment Service.
-The NDES server must be domain joined to the domain that hosts the CA, and not be on the same server as the CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
+- **NDES Server**: On a Windows Server 2012 R2 or later, set up the Network Device Enrollment Service (NDES) server role. Intune doesn't support using NDES on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host NDES.
+The NDES server must be joined to a domain within the same forest as the Enterprise CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Use the Azure portal to download the **Certificate Connector** installer (**NDESConnectorSetup.exe**). Then you can run **NDESConnectorSetup.exe** on the server hosting the Network Device Enrollment Service (NDES) role where you want to install the Certificate Connector.
+- **Microsoft Intune Certificate Connector**: Download the **Certificate Connector** installer (**NDESConnectorSetup.exe**) from the Intune administration portal. You'll run this installer on the server with the NDES role.  
 
   - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
@@ -56,29 +56,29 @@ For more information, see [Plan certificates for WAP](https://docs.microsoft.com
 
 ### Network requirements
 
-From the Internet to perimeter network, allow port 443 from all hosts/IP addresses on the internet to the NDES server.
+If you don't use a reverse proxy, such as WAP or Azure AD App Proxy, then allow TCP traffic on port 443 from all hosts/IP addresses on the internet to the NDES server.
 
-From the perimeter network to trusted network, allow all ports and protocols needed for domain access on the domain-joined NDES server. The NDES server needs access to the certificate servers, DNS servers, Configuration Manager servers, and domain controllers.
+Allow all ports and protocols necessary between the NDES server and any supporting infrastructure. For example, the NDES server needs to communicate with the CA, DNS servers, Configuration Manager servers, domain controllers, and possibly other services within your environment.
 
-We recommend publishing the NDES server through a proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx), or a third-party proxy.
+We highly recommend publishing the NDES server through a reverse proxy, such as the [Azure AD application proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [Web Access Proxy](https://technet.microsoft.com/library/dn584107.aspx), or a third-party proxy.
 
-### Certificates and templates
+### Certificates and templates  
 
 |Object|Details|
 |----------|-----------|
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
-|**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server.|
+|**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server. If the certificate has the client and server authentication key usages set (**Enhanced Key Usages**), then you can use the same certificate.|
 |**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to devices using the Trusted CA certificate profile.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
 |Name|Details|
 |--------|-----------|
-|**NDES service account**|Enter a domain user account to use as the NDES Service account.|
+|**NDES service account**|Enter a domain user account to use as the NDES Service account. |
 
 ## Configure your infrastructure
-Before you can configure certificate profiles, complete the following steps. These steps require knowledge of Windows Server 2012 R2 and later, and Active Directory Certificate Services (ADCS):
+Before you can configure certificate profiles, complete the following steps. These steps require knowledge of Windows Server 2012 R2 or later, and Active Directory Certificate Services (ADCS):
 
 #### Step 1 - Create an NDES service account
 
@@ -155,7 +155,7 @@ In this step, you:
 
 - Add NDES to a Windows Server and configure IIS to support NDES
 - Add the NDES Service account to the IIS_IUSR group
-- Set the SPN for the NDES Service account
+- Set the service principal name (SPN) for the NDES Service account
 
 1. On the server that hosts NDES, sign in as an **Enterprise Administrator**, and then use the [Add Roles and Features Wizard](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11)) to install NDES:
 
@@ -180,7 +180,7 @@ In this step, you:
 
        - **Management Tools** > **IIS 6 Management Compatibility** > **IIS 6 WMI Compatibility**
 
-       - On the server, add the NDES service account as a member of the **IIS_IUSR** group.
+       - On the server, add the NDES service account as a member of the local **IIS_IUSR** group.
 
 2. In an elevated command prompt, run the following command to set the SPN of the NDES Service account:
 
@@ -246,7 +246,7 @@ In this step, you:
 1. On your NDES Server, request and install a **server authentication** certificate from your internal CA or public CA. You then bind this SSL certificate in IIS.
 
     > [!TIP]
-    > After you bind the SSL certificate in IIS, install a client authentication certificate. This certificate can be issued by any CA that is trusted by the NDES Server. Although it's not a best practice, you can use the same certificate for both server and client authentication as long as the certificate has both Enhance Key Usages (EKUs). Review the following steps for information about these authentication certificates.
+    > After you bind the SSL certificate in IIS, install a client authentication certificate. This certificate can be issued by any CA that is trusted by the NDES Server. The same certificate can be used if the certificate has the client and server authentication key usages set (**Enhanced Key Usages**). Review the following steps for information about these authentication certificates.
 
    1. After you get the server authentication certificate, open **IIS Manager**, and select the **Default Web Site**. In the **Actions** pane, select **Bindings**.
 
@@ -317,7 +317,7 @@ In this step, you:
     After you select the client authentication certificate, you are returned to the **Client Certificate for Microsoft Intune Certificate Connector** surface. Although the certificate you selected is not shown, select **Next** to view the properties of that certificate. Select **Next**, and then **Install**.
 
     > [!IMPORTANT]
-    > The Intune Certificate Connector can't be enrolled on a device with Internet Explorer Enhanced Security Configuration enabled. To use the Intune Certificate Connector, [disable IE Enhanced security configuration](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
+    > Internet Explorer Enhanced Security Configuration [must be disabled on the NDES server](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) hosting the Intune Certificate Connector.
 
 6. After the wizard completes, but before closing the wizard, **Launch the Certificate Connector UI**.
 
@@ -328,7 +328,7 @@ In this step, you:
 
 7. In the **Certificate Connector** UI:
 
-    Select **Sign In**, and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission.
+    Select **Sign In**, and enter your Intune service administrator credentials, or credentials for a tenant administrator with the global administration permission. After you sign-in, the Intune Certificate Connector downloads a certificate from Intune. This certificate is used for authentication between the connector and Intune.
 
     > [!IMPORTANT]
     > The user account must be assigned a valid Intune license. If the user account does not have a valid Intune license, then NDESConnectorUI.exe fails.
