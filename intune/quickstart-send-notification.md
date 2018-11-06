@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 11/06/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -42,7 +42,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). Intune is located in the Azure portal by choosing **All services** > **Intune**.
+Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). 
 
 ## Create a notification message template
 
@@ -67,11 +67,13 @@ To send email to your users, create a notification message template. When a devi
 
 For details about setting your company name, company contact information, and company logo, see [Company information and privacy statement](company-portal-app.md#company-information-and-privacy-statement), [Support information](company-portal-app.md#support-information), and [Company branding customization](company-portal-app.md#company-branding-customization). 
 
-## Add actions for noncompliance
+## Add a noncompliance policy
 
 When you create a device compliance policy, Intune automatically creates an action for noncompliance. When a device isn't meeting your compliance policy, this automatically created action marks the device as noncompliant. You can customize how long the device is marked as noncompliant. This action can't be removed.
 
 You can also add another action when you create a compliance policy, or update an existing compliance policy. 
+
+The following steps will create a compliance policy for Windows 10 devices.
 
 1. In the [Azure portal](https://portal.azure.com), open **Microsoft Intune** > **Device compliance**.
 2. Select **Policies** > **Create Policy**.
@@ -114,4 +116,4 @@ When you've successfully created and saved the policy, it will appear in the lis
 In this quickstart, you used Intune to create and assign a compliance policy for your workforce's Windows 10 devices to require a password of at least six characters in length.
 
 > [!div class="nextstepaction"]
-> [Use Autopilot to enroll Windows devices](tutorial-use-autopilot-enroll-devices.md)
+> [Quickstart: Create and assign a custom role](quickstart-create-custom-role.md)
