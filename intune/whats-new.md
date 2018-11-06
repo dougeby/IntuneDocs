@@ -44,6 +44,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->     
+
+## Week of November 5, 2018
+
+### Network Access Control (NAC) support for Citrix SSO for iOS <!-- 3259404 -->
+
+Citrix released an update to NetScaler Gateway to allow Network Access Control (NAC) for Citrix SSO for iOS in Intune. You can use NAC within a VPN profile in Intune, and then push this profile to your iOS devices. 
+
+[Configure VPN settings on iOS devices](vpn-settings-ios.md#base-vpn-settings) provides more information on using NAC, including some requirements. 
+
 ## Week of October 29, 2018
 
 
