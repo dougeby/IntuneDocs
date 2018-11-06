@@ -70,11 +70,11 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 
     You’ll see a message indicating that your company or school is registering your device.
 
-4. When you see the **You’re all set!** screen, select **Close**. You’re done.
+4. When you see the **You’re all set!** screen, select **Done**. You’re done.
 
    ![Select close on the "You're all set!" screen](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-5. You will now see the added account as part of the **Access work or school** settings.
+5. You will now see the added account as part of the **Access work or school** settings on your Windows Desktop.
 
    ![Screenshot of newly added account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
 
