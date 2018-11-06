@@ -63,4 +63,4 @@ To reconfigure Intune automatic enrollment, check out [Set up enrollment for Win
 In this quickstart, you learned how to set up auto-enrollment for Windows 10 devices. You can learn about other ways to enroll devices across all platforms. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
 
 > [!div class="nextstepaction"]
-> [What is device enrollment? article](device-enrollment.md)
+> [Quickstart: Enroll your Windows 10 device](quickstart-enroll-windows-device.md)
