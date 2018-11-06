@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,3 +37,6 @@ Troubleshoot common macOS problems that come up during and after enrollment. If 
 - [My Jamf-managed device is not compliant](device-little-different-jamf.md)
 - [I can't find the serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 - [I've been asked to identify my device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [I got an error while enrolling a macOS virtual machine](unable-to-get-macOS-device-managed.md)  
+- [I got a message that my macOS device serial number is restricted](unable-to-get-macOS-device-managed.md)  
+- [My device might already be assigned to someone else](unable-to-get-macOS-device-managed.md)  
