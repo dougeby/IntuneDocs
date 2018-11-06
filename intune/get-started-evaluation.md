@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,13 +35,14 @@ We understand that getting started with managing mobile devices can be difficult
 
 ## Quickstarts
 
-You can follow the intended order of the __Getting Started__ quickstarts using the table of contents on the left side of the page.
+You can follow the intended order of the **Getting Started** quickstarts using the table of contents on the left side of the page.
 
 - [Try Intune for free](free-trial-sign-up.md) - Create a free subscription to try Intune in a test environment.    
 - [Create a user](quickstart-create-user.md) - Add a user to Intune to allow them to access company resources on mobile devices.
 - [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps that they can access.
-- [Create a policy](quickstart-create-policy.md) - Create a device compliance policy for a Windows 10 device and assign a group to the policy.
-- [Set up auto enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
+- [Set up automatic enrollment](quickstart-setup-auto-enrollment.md) - Set up Microsoft Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
+- [Enroll your device](quickstart-enroll-windows-device.md) - Take the role of an Intune user and enroll your device into Microsoft Intune. Then, return to Intune and confirm the enrolled device.
+- [Create a compliance policy](quickstart-create-policy.md) - Create a device compliance policy and assign a group to the policy.
 - [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
 - [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
 <!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
