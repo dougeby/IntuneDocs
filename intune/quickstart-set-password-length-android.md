@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Quickstart: Create a password conmpliance policy for Android devices
+# Quickstart: Create a password compliance policy for Android devices
 
 In this quickstart, you will use Microsoft Intune to require your workforce's Android users to enter a password of a specific length before access is granted to information on their Android devices. 
 
