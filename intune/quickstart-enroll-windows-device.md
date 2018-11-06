@@ -20,7 +20,7 @@ In this quickstart, you'll enroll your Windows 10 device into Microsoft Intune.
 Enrolling your devices into Microsoft Intune allows your Windows 10 devices to get access to your organization’s secure data, including email, files, and other resources. This is true for both Windows 10 desktop and Windows 10 Mobile devices. Enrolling your devices helps secure this access for both you and your organization, and helps keep your work data separate from your personal data.
 
 > [!TIP]
-> Find out what happens when you [enroll your device in Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and what that means for the [information on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Find out what happens when you [enroll your device in Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and what that means for the [information on your device](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
@@ -49,7 +49,7 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 3. In the window you will see a list of Windows 10 for your PC. Within this list, locate the **Version**.
 
     > [!IMPORTANT]
-    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](enroll-your-w10-device-your-account.md).
+    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-your-w10-device-your-account.md).
 
 4. Return to Windows Settings and select **Accounts**.
 
@@ -77,11 +77,11 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
    ![Screenshot of newly added account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
 
 > [!TIP]
-> If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+> If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## Clean up resources
 
-To unenroll your Windows device, see [Remove your Windows device from management](unenroll-your-device-from-intune-windows.md).
+To unenroll your Windows device, see [Remove your Windows device from management](/intune-user-help/unenroll-your-device-from-intune-windows.md).
 
 ## Next steps
 
