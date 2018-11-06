@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -15,7 +15,7 @@ ms.technology:
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 
 # optional metadata
-
+  
 #audience:
 #ms.devlang:
 ms.reviewer: erikre
@@ -176,8 +176,8 @@ When dealing with different types of settings, an app version requirement would 
 **What happens if I add or remove a fingerprint or face to my device?**
 Intune app protection policies allow control over app access to only the Intune licensed user. One of the ways to control access to the app is to require either Apple's Touch ID or Face ID on supported devices. Intune implements a behavior where if there is any change to the device's biometric database, Intune prompts the user for a PIN when the next inactivity timeout value is met. Changes to biometric data include the addition or removal of a fingerprint, or face. If the Intune user does not have a PIN set, they are led to set up an Intune PIN.
  
-The intent of this is to continue keeping your organization's data within the app secure and protected at the app level. This feature is only available for iOS, and requires the participation of applications that integrate the Intune APP SDK for iOS, version 8.1.1 or later. Integration of the SDK is necessary so that the behavior can be enforced on the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. Some apps that participate include WXP, Outlook, Managed Browser, and Yammer. 
-
+The intent of this is to continue keeping your organization's data within the app secure and protected at the app level. This feature is only available for iOS, and requires the participation of applications that integrate the Intune APP SDK for iOS, version 9.0.1 or later. Integration of the SDK is necessary so that the behavior can be enforced on the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. Some apps that participate include WXP, Outlook, Managed Browser, and Yammer. 
+  
 **I am able to use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to "managed apps only" or "no apps." Doesn't this leak data?**<br></br>
 Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, Intune _**encrypts "corporate" data before it is shared outside the app**_. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
 
@@ -185,6 +185,15 @@ Intune app protection policy cannot control the iOS share extension without mana
 Intune app protection policies for access will be applied in a specific order on end user devices as they try to access a targeted app from their corporate account. In general, a wipe would take precedence, followed by a block, then a dismissible warning. For example, if applicable to the specific user/app, a minimum iOS operating system setting that warns a user to update their iOS version will be applied after the minimum iOS operating system setting that blocks the user from access. So, in the scenario where the IT admin configures the min iOS operating system to 11.0.0.0 and the min iOS operating system (Warning only) to 11.1.0.0, while the device trying to access the app was on iOS 10, the end user would be blocked based on the more restrictive setting for min iOS operating system version that results in blocked access.
 
 When dealing with different types of settings, an Intune App SDK version requirement would take precedence, then an app version requirement, followed by the iOS operating system version requirement. Then, any warnings for all types of settings in the same order are checked. We recommend the Intune App SDK version requirement be configured only upon guidance from the Intune product team for essential blocking scenarios.
+
+## App protection policies - Policy refresh
+- Apps check in to the APP service every 30 minutes.
+- The 30-minute threshold is based on a timer.
+    - If the app is active at 30 minutes, it checks in at 30 minutes.
+    - If the app is sleeping at 30 minutes, it checks in on the next focus.
+- If no policy is assigned to a user, check-in occurs every eight hours.
+- If no Intune license is assigned, check-in occurs every 24 hours.
+
 
 ## See also
 - [Implement your Intune plan](planning-guide-onboarding.md)

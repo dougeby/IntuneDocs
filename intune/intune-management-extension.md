@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ The Intune management extension supplements the in-box Windows 10 MDM capabiliti
 
 ## Prerequisites
 The Intune management extension has the following prerequisites:
-- Devices must be joined to Azure AD. This does not include Hybrid AD joined devices.
+- Devices must be joined to Azure AD. The Intune management extension supports Azure Active Directory joined, Hybrid Domain joined and Co-Managed enrolled Windows devices.
 - Devices must run Windows 10, version 1607 or later.
 - Automatic MDM enrollment must be [enabled in Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), and devices must be auto-enrolled to Intune.
 
@@ -61,7 +61,8 @@ The Intune management extension has the following prerequisites:
 
 > [!NOTE]
 > - PowerShell scripts can't be applied to computer groups.
-> - PowerShell scripts are executed on devices only when an Azure Active Directory (AD) user is signed in to the device.
+> - End users are not required to be logged in on the device to execute PowerShell scripts. 
+> - PowerShell scripts in Intune can be targeted to AAD device security groups.
 
 The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported. 
  

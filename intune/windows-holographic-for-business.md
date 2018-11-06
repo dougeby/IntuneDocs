@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,12 +72,16 @@ Using Intune, you can add apps to your devices running Windows Holographic for B
 
 Microsoft Intune can deploy Universal Windows Apps to Microsoft HoloLens devices running Windows Holographic for Business. You can directly upload your app packages in the Intune Azure portal, or deploy them from the Microsoft Store for Business. For more information about related areas, see the following articles:
 - To deploy Line-of-Business (LOB) apps using the Intune Azure portal, see [How to add Windows line-of-business apps to Microsoft Intune](lob-apps-windows.md).
+
+    > [!NOTE]
+    > Intune allows a maximum package size to 8 GB. This package size is only available for the LOB apps uploaded to Intune.
+
 - To deploy apps using the Microsoft Store for Business, see [How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md). 
 - To learn about app management with Microsoft Intune, see [What is app management in Microsoft Intune](app-management.md).
 - To learn more about developing apps for Microsoft HoloLens, see [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps). 
 
 > [!NOTE]
-> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+> HoloLens devices running Windows 10 Holographic for Business 1607 don't support online-licensed apps from the Microsoft Store for Business. To learn more, see [Install apps on HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
 
 ## Device actions
 Intune has some built-in actions that allow IT administrators to do different tasks, locally on the device, or remotely using Intune in the Azure portal. Users can also issue a remote command from the Intune Company Portal to personally owned devices that are enrolled in Intune.

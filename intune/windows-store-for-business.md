@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 11/01/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -93,4 +93,15 @@ When you assign a Microsoft Store for Business app, a license is used by each us
 * Reduce the scope of the current assignment, targeting only the users you have sufficient licenses for.
 * Buy more copies of the app from the Microsoft Store for Business.
 
+## Remove apps
 
+To remove an app that is synced from the Microsoft Store for Business, you need to log into the Microsoft Store for Business and refund the app.
+
+![Screenshot of remove app details](./media/microsoft-store-for-business-01.png)
+
+> [!NOTE]
+> Removing an app's visibility in the private store won’t keep Intune from syncing them. You must refund the app.
+
+## Next steps
+
+- [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md)

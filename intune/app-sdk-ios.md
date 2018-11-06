@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ The Microsoft Intune App SDK for iOS lets you incorporate Intune app protection 
 
 * Your app must be targeted for iOS 10 or above.
 
-* Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
+* Review the [Intune App SDK for iOS License Terms](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK for iOS, you agree to such license terms.  If you do not accept them, do not use the software.
 
 * Download the files for the Intune App SDK for iOS on [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
@@ -177,7 +177,7 @@ Follow the steps below to link your app to the ADAL binaries:
 
 1. Download the [Azure Active Directory Authentication Library (ADAL) for Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) from GitHub, then follow the [instructions](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) on how to download ADAL using Git submodules or CocoaPods.
 
-2. Add the the ADAL framework (option 1) or static library (option 2) to your project.
+2. Add the ADAL framework (option 1) or static library (option 2) to your project.
 
 3. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 

@@ -76,7 +76,7 @@ To send email to your users, create a notification message template. When a devi
 
    ![Example of a compliant notification message in Intune](./media/actionsfornoncompliance-1.PNG)
 
-4. Once you're done adding the information, choose **Create**. The Notification message template is ready to use.
+4. Once you're done adding the information, choose **Create**. The Notification message template is ready to use. Note that the logo you upload as part of the Company Portal branding will be used for email templates. For more information about Company Portal branding, see [Company identity branding customization](company-portal-app.md#company-identity-branding-customization).	
 
 > [!NOTE]
 > You can also edit a Notification template previously created.

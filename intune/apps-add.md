@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -135,7 +135,7 @@ All apps that you create by using the software installer installation type (for 
 Requirements for cloud storage space are as follows:
 
 - All app installation files must be in the same folder.
-- The maximum file size for any file that you upload is 2 GB.
+- The maximum file size for any file that you upload is 8 GB.
 
 ## Create and edit categories for apps
 

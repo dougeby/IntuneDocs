@@ -28,7 +28,7 @@ ms.custom: intune-azure
 # Set up a telecom expense management service in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune enables you to manage telecom expenses incurred from data usage on corporate-owned mobile devices. To enable this capability, Intune has integrated with the third-party software developer Saaswedo’s Datalert telecom expense management solution. Datalert is real-time telecom expense management software that lets you manage telecom data usage. It helps you avoid costly and unexpected data and roaming overages for your Intune-managed devices.
+Intune enables you to manage telecom expenses incurred from data usage on corporate-owned mobile devices. To enable this capability, Intune has integrated with the third-party software developer Saaswedo’s [Datalert telecom expense management](http://datalert.biz/get-started) solution. Datalert is real-time telecom expense management software that lets you manage telecom data usage. It helps you avoid costly and unexpected data and roaming overages for your Intune-managed devices.
 
 Intune's integration with Datalert enables you centrally set, monitor, and enforce roaming and domestic data usage limits. Automated alerts are triggered when the limits exceed defined thresholds. You can configure the service to apply different actions to individuals or groups of end users (like disabling roaming or exceeding the threshold). Reports that provide data usage and monitoring information are available from the Datalert management console.
 
@@ -64,19 +64,31 @@ Before you start, make sure that you already have an Intune and a Datalert telec
 
 2. On the Datalert management console, go to the **Settings** tab, and then to **MDM configuration**.
 
-3. Select **Unblock** to enable you to enter the settings on the page.
+3. Select **Unblock** at the bottom of the page, which enables you to modify settings on the page.
 
-4. For **Server MDM**, choose **Microsoft Intune**.
+4. In the **Intune / Datalert Connection** section, choose **Microsoft Intune** for **Server MDM**.    
 
-5. For **Azure AD domain**, enter your Azure tenant ID, and then select the **Connection** button.
+5. For **Azure AD domain**, enter your Azure tenant ID, and then select **Connection**.
 
-    Selecting **Connection** makes the Datalert service check in with Intune to ensure that there are no pre-existing Datalert connections with Intune. After a few seconds, a Microsoft log-in page appears, followed by the Datalert Azure authentication.
+    When you select **Connection**, the Datalert service checks in with Intune to ensure there are no pre-existing Datalert connections with Intune. After a few seconds, a Microsoft login page appears, followed by the Datalert Azure authentication.
 
-6. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert “thank you” page, which closes after a few seconds. Datalert validates the connection, and displays green check marks beside a list of items that it validated. If the validation fails, you see a message in red and should contact Datalert Support for help.
+6. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert **thank you** page, which closes after a few seconds. Datalert validates the connection, and displays green check marks next to a list of items that it validated. If the validation fails, you see a message in red and should contact Datalert Support for help.
 
     The following screenshot shows the green check marks that you can expect to see once the connection is successful.
 
-   ![Datalert page showing successful connection](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Datalert page showing successful connection](./media/tem-datalert-connection.png)
+
+7. In the **Datalert App / ADAL Consent** section, set the switch to **On**. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert **thank you** page, which closes after a few seconds. Datalert validates the connection, and displays green check marks next to a list of items that it validated. If the validation fails, you see a message in red and should contact Datalert Support for help.    
+
+    The following screenshot shows the green check marks that you can expect to see once the connection is successful.
+
+   ![Datalert page showing successful connection](./media/tem-datalert-adal-consent.png)
+
+8. In the **MDM Profiles management (optional)** section, set the switch to **On** to allow Datalert to read the available profiles in Intune to help you to setup policies. On the Microsoft authentication page, select **Accept**. You are redirected to a Datalert **thank you** page, which closes after a few seconds. Datalert validates the connection, and displays green check marks next to a list of items that it validated. If the validation fails, you see a message in red and should contact Datalert Support for help.    
+
+    The following screenshot shows the green check marks that you can expect to see once the connection is successful.
+
+   ![Datalert page showing successful connection](./media/tem-datalert-mdm-profiles.png)
 
 ### Step 2: Check that the telecom expense management feature is Active in Intune
 

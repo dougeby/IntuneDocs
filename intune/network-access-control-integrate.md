@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,7 @@ Intune integrates with network access control partners to help organizations sec
 
 ## How do Intune and NAC solutions help protect your organization resources?
 
-NAC solutions check the device enrollment and compliance state with Intune to make access control decisions. If the device isn't enrolled, or is enrolled and not compliant with Intune device compliance policies, then then device should be redirected to Intune for enrollment and/or for a device compliance check.
+NAC solutions check the device enrollment and compliance state with Intune to make access control decisions. If the device isn't enrolled, or is enrolled and not compliant with Intune device compliance policies, then the device should be redirected to Intune for enrollment, or for a device compliance check.
 
 ### Example
 
@@ -59,14 +59,24 @@ The following list is an overview on how NAC integration works when integrated w
 3. Configure the NAC partner solution for certificate authentication.
 4. User connects to corporate Wi-Fi access point or makes a VPN connection request.
 5. NAC partner solution forwards the device information to Intune, and asks Intune about the device enrollment and compliance state.
-6. If the device is not compliant or not enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
-7. The device attempts to reverify its compliance and/or the enrollment state.
+6. If the device isn't compliant or isn't enrolled, the NAC partner solution instructs the user to enroll or fix the device compliance.
+7. The device tries to reverify its compliance and enrollment state when applicable.
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
+
+## Use NAC on your iOS devices
+
+Network access control is not currently supported for the following VPN clients on iOS:
+-	Cisco AnyConnect
+-	F5 Access
+-	Citrix SSO  
+
+We are working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
+
 
 ## Next steps
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [Integrate HP Aruba Clear Pass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Integrate HP Aruba ClearPass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Integrate Squadra security Removable Media Manager (secRMM) with Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

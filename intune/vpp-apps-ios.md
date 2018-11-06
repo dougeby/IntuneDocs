@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,10 +75,9 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 * Before you start to use Apple VPP with Intune, remove any existing VPP user accounts created with other mobile device management (MDM) vendors. Intune does not synchronize those user accounts into Intune as a security measure. Intune only synchronizes data from the Apple VPP service that Intune created.
 * Intune supports adding up to 256 VPP tokens.
 * Apple's Device Enrollment Profile (DEP) program automates mobile device management (MDM) enrollment. Using DEP, you can configure enterprise devices without touching them. You can enroll in the DEP program using the same program agent account that you used with Apple's VPP. The Apple Deployment Program ID is unique to programs listed under the [Apple Deployment Programs](https://deploy.apple.com) website and cannot be used to log in to Apple services such as the iTunes store.
-* When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device. Ensure that when you set up a device for a new Intune user, you configure it with that user's unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can be used on up to five devices.
-* A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 * When you assign VPP apps using the user licensing model to users or devices (with user affinity), each Intune user needs to be associated with a unique Apple ID or an email address when they accept the Apple terms and conditions on their device.
-Ensure that when you set up a device for a new Intune user, you configure it with that users unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can used on up to five devices.
+* Ensure that when you set up a device for a new Intune user, you configure it with that user's unique Apple ID or email address. The Apple ID or email address and Intune user form a unique pair and can be used on up to five devices.
+* A VPP token is only supported for use on one Intune account at a time. Do not reuse the same VPP token for multiple Intune tenants.
 
 >[!IMPORTANT]
 >After you have imported the VPP token to Intune, do not import the same token to any other device management solution. Doing so might result in the loss of license assignment and user records.
@@ -97,7 +96,7 @@ Ensure that when you set up a device for a new Intune user, you configure it wit
 	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
 
 	- **Type of VPP account** - Choose from **Business** or **Education**.
-	- **Automatic app updates** - Choose from **On** to **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
+	- **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
 	
         > [!NOTE]
 		> Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.

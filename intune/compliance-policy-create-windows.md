@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Windows device compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later devices. Check for compliance on the the minimum and maximum operating system, set password restrictions and length, require bitlocker, check for third (3rd) party AV solutions, set the acceptable threat level, and enable encypryption on data storage, including Surface Hub and Windows Holographic for Business.
+description: Create or configure a Microsoft Intune device compliance policy for Windows Phone 8.1, Windows 8.1 and later, and Windows 10 and later devices. Check for compliance on the minimum and maximum operating system, set password restrictions and length, require bitlocker, check for third (3rd) party AV solutions, set the acceptable threat level, and enable encypryption on data storage, including Surface Hub and Windows Holographic for Business.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -123,8 +123,6 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
 
-To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
-
 ### Device properties
 
 - **Minimum OS version**: Enter the minimum allowed version in the **major.minor.build.CU number** format. To get the correct value, open a command prompt, and type `ver`. The `ver` command returns the version in the following format:
@@ -175,6 +173,9 @@ To set up Windows Defender ATP (Advanced Threat Protection) as your defense thre
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
 
+  > [!NOTE]
+  > The **Encryption of data storage on a device** setting generically checks for the presence of encryption on the device. For a more robust encryption setting, consider using **Require BitLocker**, which leverages Windows Device Health Attestation to validate Bitlocker status at the TPM level.
+
 #### Device Security
 
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
@@ -187,6 +188,8 @@ To set up Windows Defender ATP (Advanced Threat Protection) as your defense thre
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it is determined to be noncompliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+  
+  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
 
 ## Windows Holographic for Business
 

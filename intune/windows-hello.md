@@ -56,7 +56,7 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 ## Create a Windows Hello for Business policy
 
-1. In the the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
+1. In the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
 
 2. On the Intune pane, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
 

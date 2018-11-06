@@ -135,9 +135,9 @@ When you delete a profile, or you remove a device from a group that has the prof
 ## I changed a device restriction profile, but the changes haven't taken effect
 Windows Phone devices do not allow security policies set using MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8 then try to reduce it to 4. The more restrictive profile has already been applied to the device.
 
-Depending on the device platform, if you want to change the profile to a less secure value, then reset security policies. For example, in Windows, on the desktop, swipe in from right, and select **Settings** > **Control Panel**. Select the **User Accounts** applet.
+If you want to change the profile to a less secure value, then reset security policies. For example, in Windows 8.1, on the desktop, swipe in from right, and select **Settings** > **Control Panel**. Select the **User Accounts** applet. In the left-hand navigation menu, there is a **Reset Security Policies** link (toward the bottom). Select it, and then choose **Reset Policies**.
 
-In the left-hand navigation menu, there is a **Reset Security Policies** link (toward the bottom). Select it, and then choose **Reset Policies**. Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired, and re-enrolled back into the service to apply a less restrictive profile.
+Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, and Windows 10, may need to be retired, and re-enrolled back into the service to apply a less restrictive profile.
 
 ## Next steps
 Need extra help? See [How to get support for Microsoft Intune](get-support.md).
