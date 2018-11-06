@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -411,10 +411,10 @@ After you've wiped the blocked devices, you can tell the users to restart the en
 
 **Resolution:** First, check with your user to determine which of the issues affects their device. Then complete the most relevant of the following solutions:
 * If the user is enrolling a VM for testing, make sure it's been fully configured so that Intune can recognize its serial number and hardware model. Learn more about how to [set up VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
-* If your organization enabled enrollment restrictions to block personal macOS devices, you must manually [add the personal device's serial number](corporate-identifiers-add.md#manually-enter-corporate-identifiers) to Intune.  
+* If your organization turned on enrollment restrictions that block personal macOS devices, you must manually [add the personal device's serial number](corporate-identifiers-add.md#manually-enter-corporate-identifiers) to Intune.  
 * If the device is still assigned to another user in Intune, its former owner did not use the Company Portal app to remove or reset it. To clean up the stale device record from Intune:  
 
-1. Go to [Intune in the Azure portal](portal.azure.com) and sign in with your administrative credentials.
+1. Go to [Intune in the Azure portal](https://portal.manage.microsoft.com) and sign in with your administrative credentials.
 2. Go to Intune > **Devices** > **All devices**.  
 3. Find the device with the enrollment problem. Search by device name or MAC/HW Address to narrow your results.
 4. Select the device > **Delete**. Delete all other entries associated with the device.  
