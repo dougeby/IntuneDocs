@@ -33,7 +33,9 @@
   - name: Enroll your Windows 10 device
     href: quickstart-enroll-windows-device.md
   - name: Create a device compliance policy
-    href: quickstart-set-password-length-android.md  
+    href: quickstart-set-password-length-android.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md       
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
