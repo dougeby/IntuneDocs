@@ -18,8 +18,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
-- Microsoft Intune subscription - [sign up for a free trial account](free-trial-sign-up.md)
-- Azure Active Directory Premium subscription - [sign up for a free trial subscription](https://azure.microsoft.com/trial/get-started-active-directory/)
+- Microsoft Intune subscription - [sign up for a free trial account](free-trial-sign-up.md).
 - To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
 
 ## Sign in to Intune
@@ -28,16 +27,16 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 
 ## Set up Windows 10 automatic enrollment
 
-For this example, you'll use MDM enrollment so that both corporate and bring-your-own-devices can be automatically enrolled.
+For this example, you'll use MDM enrollment so that both corporate and bring-your-own-devices can be automatically enrolled. You will sign up for a free Azure Active Directory Premium subscription.
 
 1. In Azure, choose **Azure Active Directory** > **Mobility (MDM and MAM)**.
-2. Confirm that you have setup and activated the Azure Active Directory free Premium trail to allow auto enrollment. 
+2. Select **Get a free Premium trial to use this feature**. Selecting this option will allow auto enrollment using the Azure Active Directory free Premium trial. 
 
     ![Select the Azure Active Directory free Premium trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    Choose the **Entrerprise Mobility + Security E5** free trail option. In addition, you must choose to **Activate** the free trial.
+    Choose the **Entrerprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
 
-    ![Choose the Entrerprise Mobility + Security E5 free trail](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+    ![Choose the Entrerprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
 3. Select **Microsoft Intune**. 
 

@@ -15,7 +15,7 @@ ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 
 # Quickstart: Enroll your Windows 10 device
 
-In this quickstart, you'll enroll your Windows 10 device into Microsoft Intune.
+In this quickstart, you'll first take the role of an Intune user and enroll your Windows 10 device into Microsoft Intune. Then, you return to Intune and confirm the enrolled device.
 
 Enrolling your devices into Microsoft Intune allows your Windows 10 devices to get access to your organization’s secure data, including email, files, and other resources. This is true for both Windows 10 desktop and Windows 10 Mobile devices. Enrolling your devices helps secure this access for both you and your organization, and helps keep your work data separate from your personal data.
 
@@ -72,21 +72,19 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 
 4. When you see the **You’re all set!** screen, select **Done**. You’re done.
 
-   ![Select close on the "You're all set!" screen](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
-
 5. You will now see the added account as part of the **Access work or school** settings on your Windows Desktop.
 
-   ![Screenshot of newly added account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
+   ![Screenshot of newly added account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
     If you followed the previous steps, but still can’t access your work or school email account and files, follow the steps in [Troubleshooting steps to follow if you see Access work or school](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
-## Confirm your enrollment in Intune
+## Confirm your device enrollment in Intune
 
 1. Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
 2. Select **Devices** to view the enrolled devices in Intune.
 3. Verify that you have an additional device enrolled within Intune.
 
-   ![Screenshot Intune enrolled devices](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-08.png)
+   ![Screenshot Intune enrolled devices](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)
 
 ## Clean up resources
 
