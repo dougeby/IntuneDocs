@@ -1,11 +1,11 @@
 ---
-title: Quickstart - Enroll your Windows 10 Desktop device
+title: Quickstart - Enroll your Windows 10 Desktop device in Microsoft Intune
 description: Quickstart - Use the Company Portal to enroll your Windows 10 Desktop device into Microsoft Intune.
 services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 11/06/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
