@@ -59,7 +59,7 @@ Use the email profile settings to configure your devices running iOS.
 
     If the email profile uses Oauth, and the email service doesn't support it, then the **Re-Enter password** option appears broken. For example, nothing happens when the user selects **Re-Enter password** in Apple's device settings.
 
-  - When OAuth is enabled, end users have a different “Modern Authentication” email sign-in experience that supports multi-factor authentication (MFA). The [Mobile Iron blog](https://www.mobileiron.com/blog/ios-12-what-enterprises-oauth-know) provides details on the user experience on iOS 12 devices.
+  - When OAuth is enabled, end users have a different “Modern Authentication” email sign-in experience that supports multi-factor authentication (MFA). 
 
   - Some organizations disable the end user’s ability to do [self-service application access](https://docs.microsoft.com/azure/active-directory/manage-apps/manage-self-service-access). In this scenario, the Modern Authentication sign-in may fail until an Administrator creates the “iOS Accounts” enterprise app, and grant users access to the app in Azure AD.
 
