@@ -412,4 +412,4 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 - **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
 
 ## More Information
-For additional technical details on each setting and what editons of Windows are suppprted, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+For additional technical details on each setting and what editions of Windows are suppported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)

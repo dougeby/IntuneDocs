@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -98,6 +98,7 @@ Devices managed by Intune or by users managed by Intune or Azure AD.
 | Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
 | Intune compliant   | The name of the type of device.                                                                                                     |
 | Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
 | OS                 | The operating system installed on the device.                                                                                       |
 | OS version         | The Operating System version number of the device.                                                                                  |
 | Last check-in      | The name of the type of device.                                                                                                     |

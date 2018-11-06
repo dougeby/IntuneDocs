@@ -160,7 +160,7 @@ You can also use device compliance policies without any conditional access. When
 ## Ways to deploy device compliance policies
 You can deploy compliance policy to users in user groups or devices in device groups. When a compliance policy is deployed to a user, all of the user's devices are checked for compliance. On Windows 10 version 1803 and newer devices, it's recommended to deploy to device groups *if* the primary user didn't enroll the device. Using device groups in this scenario helps with compliance reporting.
 
-The default **Compliance policy settings** (Azure portal > Device compliance) include:
+A set of built-in **Compliance policy settings** (Azure portal > Device compliance) get evaluated on all Intune-enrolled devices. These include:
 
 - **Mark devices with no compliance policy assigned as**: This property has two values:
 
@@ -178,7 +178,7 @@ The default **Compliance policy settings** (Azure portal > Device compliance) in
 
 - **Compliance status validity period (days)**: Enter the time period that devices report the status for all received compliance policies. Devices that don't return the status within this time period are treated as noncompliant. The default value is 30 days.
 
-All devices have a **Default Device Compliance Policy** (Azure portal > Device compliance > Policy compliance). Use this default policy to monitor these settings.
+All devices have a **Built-in Device Compliance Policy** (Azure portal > Device compliance > Policy compliance). Use this built-in policy to monitor these settings.
 
 To learn the time it takes for mobile devices to get a policy after the policy is deployed, see [Troubleshooting device profiles](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

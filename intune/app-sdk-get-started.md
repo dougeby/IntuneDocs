@@ -44,7 +44,7 @@ You _**must**_ first register your app with Microsoft Intune and agree to the re
 
 Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). There, the app's icon will be displayed to show that it supports Intune app protection policies.
 
-To begin the registration process, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
+To begin the registration process, and if you are not already working with a Microsoft contact, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 We will use the email addresses listed in your questionnaire response to reach out and continue the registration process. Additionally, we use your registration email address to contact you if we have any concerns.
 
@@ -144,8 +144,8 @@ Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate
 #### iOS
 
 - **CFBundleShortVersionString**  
-    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.​
-  - **CFBundleVersion**  
+    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.
+- **CFBundleVersion**  
     The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
 
 #### Android

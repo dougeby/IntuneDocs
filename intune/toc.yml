@@ -28,12 +28,14 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
+  - name: Set up automatic enrollment
+    href: quickstart-setup-auto-enrollment.md
+  - name: Enroll your Windows 10 device
+    href: quickstart-enroll-windows-device.md
   - name: Create a policy
     href: quickstart-create-policy.md
   - name: Set device password length
     href: quickstart-set-password-length-android.md  
-  - name: Set up automatic enrollment
-    href: quickstart-setup-auto-enrollment.md
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
@@ -181,8 +183,10 @@
         href: windows-bulk-enroll.md
       - name: Enrollment status page
         href: windows-enrollment-status.md
-      - name: Windows AutoPilot Deployment Program
+      - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
+      - name: Hybrid Active Directory with Autopilot
+        href: windows-autopilot-hybrid.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
@@ -213,6 +217,8 @@
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abandonment report
+      href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
