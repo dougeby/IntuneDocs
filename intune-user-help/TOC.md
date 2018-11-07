@@ -107,11 +107,13 @@
 #### [My version of macOS isn't yet supported](your-macos-version-isnt-yet-supported.md)
 #### [Updating your macOS device](you-need-to-update-your-macos-device.md)
 #### [Submit Company Portal errors](send-errors-macos.md)
+#### [Device assigned to someone else](unable-to-get-macOS-device-managed.md)
 #### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-macos.md)
 #### [This device is a little different](device-little-different-jamf.md)
 #### [Locate your serial number](how-do-i-find-the-serial-number-on-my-device-macos.md)
 #### [Identify your device](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 #### [Device limit has been reached](device-limit-wpj-macos.md)
+#### [Trouble getting macOS VM managed](unable-to-get-macOS-device-managed.md) 
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
