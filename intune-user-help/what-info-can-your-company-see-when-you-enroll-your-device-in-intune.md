@@ -47,7 +47,7 @@ Your organization cannot see your personal information when you enroll a device 
 - Device model, like Google Pixel
 - Device manufacturer, like Microsoft
 - Operating system and version, like iOS 12.0.1
-- App names, like Microsoft Word: On personal devices, your organization can only see your managed app inventory. On corporate-owned devices, you organization can see all of your app inventory.
+- App names, like Microsoft Word: On personal devices, your organization can only see your managed app inventory. On corporate-owned devices, your organization can see all of your app inventory.
 - Device owner
 - Device name
 - Device serial number
@@ -56,7 +56,7 @@ Your organization cannot see your personal information when you enroll a device 
 **What your organization might be able to see:**
 
 -  Phone number: For **corporate**-owned devices, your full phone number can be seen. For **personal**-owned devices, just the last four digits of your phone number are visible to your organization. You can see the **Ownership Type** for each individual device  by opening that device's **Device Details** page.
-- Device storage space: If you can't install a required app, your organization might look at your device's stoage space to figure out if space is too low.  
+- Device storage space: If you can't install a required app, your organization might look at your device's storage space to figure out if space is too low.  
 -  Location: Your organization can never see your device's location, except if you have an iOS device that is supervised and has gotten lost. [How do I know?](https://go.microsoft.com/fwlink/?linkid=853816)
 - App inventory: If your organization uses Mobile Threat Defense, they will be able to view what more details about the apps that are on your iOS device. Find out more about [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Network information: Swome information about network connections for Android devices may be available to your organization support. For example, if your organization requires devices to remain within a certain building, your device would identify the network where it is connected. 
+- Network information: Some information about network connections for Android devices may be available to your organization support. For example, if your organization requires devices to remain within a certain building, your device would identify the network where it is connected. 
