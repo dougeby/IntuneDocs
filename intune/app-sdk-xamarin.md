@@ -80,15 +80,12 @@ The SDK relies on [ADAL](https://azure.microsoft.com/documentation/articles/acti
       ```csharp
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
-      
-Apps can determine the result of an enrollment attempt by implementing the EnrollmentRequestWithStatus method in a subclass of IntuneMAMEnrollmentDelegate and setting the IntuneMAMEnrollmentManager's Delegate property to an instance of that class. Please refer to our [sample Xamarin.iOS application](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) for an example.
+      Apps can determine the result of an enrollment attempt by implementing the EnrollmentRequestWithStatus method in a subclass of IntuneMAMEnrollmentDelegate and setting the IntuneMAMEnrollmentManager's Delegate property to an instance of that class. Please refer to our [sample Xamarin.iOS application](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) for an example.
 
-Upon a successful enrollment, apps can determine the UPN of the enrolled account (if previously unknown) by querying the following property: 
-
+      Upon a successful enrollment, apps can determine the UPN of the enrolled account (if previously unknown) by querying the following property: 
       ```csharp
-      string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
-      ```
-      
+       string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
+      ```      
 > [!NOTE] 
 > There is no remapper for iOS. Integrating into a Xamarin.Forms app should be the same as for a regular Xamarin.iOS project. 
 
