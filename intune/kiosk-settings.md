@@ -82,8 +82,15 @@ When you choose single app kiosk mode, enter the following settings:
   - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there isn't any idle timeout.
 
   - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `http://contoso.com*` to open. By default, all websites are allowed.
+ 
+   To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. Intune supports * (asterisk) as a wild card.
 
-    To allow specific websites, upload a .csv file that includes a list of the allowed websites. If you don't add a .csv file, all websites are allowed. Intune supports * (asterisk) as a wild card. Add each allowed website as a separate line in your .csv file. Don't use comma character as a separator.
+   Your sample file should look similar to the following list:
+
+   `http://bing.com`  
+   `https://bing.com`  
+   `http://contoso.com/*`  
+   `https://contoso.com/*`  
 
   Select **OK** to save your changes.
 
