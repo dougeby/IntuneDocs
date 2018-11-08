@@ -83,14 +83,14 @@ When you choose single app kiosk mode, enter the following settings:
 
   - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `http://contoso.com*` to open. By default, all websites are allowed.
  
-   To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. Intune supports * (asterisk) as a wild card.
+      To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. Intune supports * (asterisk) as a wild card.
 
-   Your sample file should look similar to the following list:
+      Your sample file should look similar to the following list:
 
-   `http://bing.com`  
-   `https://bing.com`  
-   `http://contoso.com/*`  
-   `https://contoso.com/*`  
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Select **OK** to save your changes.
 
