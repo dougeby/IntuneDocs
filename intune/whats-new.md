@@ -1028,6 +1028,21 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
+### Plan for change: Performance updates to Intune for Education <!--1750215-->
+We’re adding some updates to Intune for Education to increase speed and reliability when you assign settings to your users or devices. As part of this change, towards the end of November, we’ll be moving your policies or settings assignments to new groups.
+
+#### How does this affect me?
+
+As an Intune for Education customer, you have two dynamic Azure Active Directory (Azure AD) groups: “All Users” and “All Devices”. With these updates, these “All Users” and “All devices” Azure AD groups will not be visible in the Intune for Education console. They will, however, still be visible in the Intune on Azure console and will be renamed as “All Users (Obsolete, do not use)” and “All Devices (Obsolete, do not use)”.
+
+When the updates roll out, you will no longer need to use Azure AD groups to assign apps and settings in Intune. Instead, we will move your Settings assignments to new groups in the Intune for Education console that we’ll create for you that will still show up as “All Users” and “All Devices” as before. These changes are in the backend, so you will not notice anything different in the Intune for Education console. There is no impact anticipated to your end users or enrolled devices. 
+
+#### What do I need to do to prepare for this change?
+You do not need to do anything while we move your policy assignments. If you currently assign policies in the Intune for Education console, continue doing so.
+
+If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
+
+
 ### Plan for Change: Intune will move to support macOS 10.12 and higher in December <!--2970975--> 
 
 Apple has just released macOS 10.14. Subsequently, Intune will move to support macOS 10.12 and higher in December 2018. 
