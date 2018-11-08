@@ -36,7 +36,7 @@ You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory
 
 ## Prerequisites
 
-- Successfully configure [hybrid Azure Active Directory join devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+- Successfully configure [hybrid Azure Active Directory join devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
     - Make sure to [verify the registration by using the Get-MsolDevice cmdlet]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 The devices to be enrolled must also:
