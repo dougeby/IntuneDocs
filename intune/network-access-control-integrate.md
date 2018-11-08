@@ -64,9 +64,10 @@ The following list is an overview on how NAC integration works when integrated w
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
 
-## Use NAC on your iOS devices  
+## Use NAC for VPN on your iOS devices  
+NAC for Cisco Legacy AnyConnect, F5 Access Legacy, and Citrix VPN is supported without needing to enable NAC in the VPN profile.
 
-NAC for Citrix SSO is supported. To enable NAC for Citrix SSO for iOS:
+NAC for Citrix SSO is also supported. To enable NAC for Citrix SSO for iOS:
 - Use NetScaler Gateway 12.0.59 or higher.  
 - Users must have Citrix SSO 1.1.6 or later installed.
 - [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
