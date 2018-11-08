@@ -78,13 +78,13 @@ The settings shown in the following list are determined by the VPN connection ty
 
   - Confirm you're using NetScaler Gateway 12.0.59 or higher.
   - Confirm your users have Citrix SSO 1.1.6 or later installed on their devices.
-  - Integrate NetScaler with Intune for NAC, as described in the [Integrating Microsoft Intune/ Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix deployment guide.
+  - Integrate NetScaler with Intune for NAC, as described in the [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix deployment guide.
   - Enable NAC in the VPN profile.
 
   Important details:  
 
   - When NAC is enabled, the VPN is disconnected every 24 hours.
-  - The device ID is part of the profile, but it can't be seen in Intune, or in the profile. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft. Once this is suppored by VPN partners, the VPN client, such as Citrix SSO, can get the ID, and query Intune to confirm the device is enrolled and if the VPN profile is compliant or not compliant.
+  - The device ID is part of the profile, but it can't be seen in Intune. This ID isn't stored by Microsoft anywhere, and isn't shared by Microsoft. Once this is suppored by VPN partners, the VPN client, such as Citrix SSO, can get the ID, and query Intune to confirm the device is enrolled and if the VPN profile is compliant or not compliant.
   - To remove this setting, recreate the profile, and don't select **I agree**. Then, reassign the profile.
 
 ## Automatic VPN settings
