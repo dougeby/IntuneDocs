@@ -114,4 +114,4 @@ When you've successfully created and saved the policy, it will appear in the lis
 In this quickstart, you used Intune to create and assign a compliance policy for your workforce's Windows 10 devices to require a password of at least six characters in length.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create and assign a custom role](quickstart-create-custom-role.md)
+> [Quickstart: Add and assign a client app](quickstart-add-assign-app.md)

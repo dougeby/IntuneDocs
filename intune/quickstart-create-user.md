@@ -60,4 +60,4 @@ If you don't need this user any more, you can delete the user by navigating to t
 In this quickstart, you created a user and assigned a license to the user. You can now assign that user to a group.
 
 > [!div class="nextstepaction"]
-> [Create a group](quickstart-create-group.md)
+> [Quickstart: Create a group to manage users](quickstart-create-group.md)

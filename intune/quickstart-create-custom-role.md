@@ -63,4 +63,4 @@ If you don't want to use the new custom role any more, you can delete it. Choose
 In this quickstart, you created a custom security operations role and assigned it to a group. You can learn more about security issues in the following article.
 
 > [!div class="nextstepaction"]
-> [Get started with device compliance policies](device-compliance-get-started.md)
+> [Quickstart: Create an email device profile for iOS](quickstart-create-custom-role.md)

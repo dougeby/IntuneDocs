@@ -132,4 +132,4 @@ There are two portals that you might use:
 In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
 
 > [!div class="nextstepaction"]
-> [Create a user](quickstart-create-user.md)
+> [Quickstart: Create a user and assign a license to it](quickstart-create-user.md)

@@ -68,4 +68,4 @@ When no longer needed, delete the policy. To do so, select the compliance policy
 In this quickstart, you used Intune to create a compliance policy for your workforce's Android devices to require a password of at least six characters in length.
 
 > [!div class="nextstepaction"]
-> [Send notifications to noncompliant devices](quickstart-send-notification.md)
+> [Quickstart: Send notifications to noncompliant devices](quickstart-send-notification.md)
