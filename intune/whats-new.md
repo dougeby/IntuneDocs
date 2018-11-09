@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/5/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -56,6 +56,8 @@ Intune's iOS email profiles support iOS 12 Open Authorization (OAuth). To see th
 You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
 This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
+### App Protection Policy (APP) settings for web data <!-- 2662995  -->
+APP policy settings for web content on both Android and iOS devices have been updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
 
 ## Week of October 29, 2018
 
