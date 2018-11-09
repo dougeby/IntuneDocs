@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -44,14 +44,20 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 ### Role-based access control
 
 -->     
-
 ## Week of November 5, 2018
+
+### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
+
+Intune's iOS email profiles support iOS 12 Open Authorization (OAuth). To see this feature, create a new profile (**Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Email** for profile type), or update an existing iOS email profile. If you enable OAuth in a profile that's already deployed to users, then users are prompted to reauthenticate, and download their email again.
+
+[iOS email profiles](email-settings-ios.md) has more information on using OAuth in an email profile.
 
 ### Autopilot support for hybrid Azure Active Directory joined devices (Preview) <!-- 1048100-->
 You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
 This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
-
+### App Protection Policy (APP) settings for web data <!-- 2662995  -->
+APP policy settings for web content on both Android and iOS devices have been updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
 
 ## Week of October 29, 2018
 
@@ -142,7 +148,10 @@ Intune app protection policies allow you to configure various data protection se
 - **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
 - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.  
   
-The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow. 
+The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow.
+
+### New Intune device subscription SKU !--3312071-->
+To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA), and Open and Cloud Solution Provider (CSP).
 
 ### Intune apps
 

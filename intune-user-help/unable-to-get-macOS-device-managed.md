@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,6 @@ Your device might not be able to be managed for one of the following reasons:
 
 * The device is already managed, and is assigned to someone else in your organization  
 
-Your company support or IT admin will help you identify amd resolve the problem that applies to your device.  
+Your company support or IT admin will help you identify and resolve the problem that applies to your device.  
 
 To find your company support's contact information, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
