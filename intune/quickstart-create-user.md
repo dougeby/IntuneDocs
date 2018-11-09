@@ -57,7 +57,9 @@ If you don't need this user any more, you can delete the user by navigating to t
 
 ## Next steps
 
-In this quickstart, you created a user and assigned a license to the user. You can now assign that user to a group.
+In this quickstart, you created a user and assigned a license to the user. For more information about adding users to Intune, see [Add users and grant administrative permission to Intune](users-add.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Create a group to manage users](quickstart-create-group.md)

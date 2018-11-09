@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/08/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -106,7 +106,9 @@ If your business needs require that you assign the Company Portal app to your wo
 
 ## Next steps
 
-In this quickstart, you added the app to Intune, assigned the app to a group, and installed the app on the enrolled Windows 10 Desktop device. 
+In this quickstart, you added apps to Intune, assigned the apps to a group, and installed the apps on the enrolled Windows 10 Desktop device. For more information about managing apps in Intune, see [What is Microsoft Intune app management?](app-management.md)
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Create and assign an app protection policy](quickstart-create-assign-app-policy.md)

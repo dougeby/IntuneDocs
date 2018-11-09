@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/08/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -87,7 +87,9 @@ You now have assigned the app protection policy.
 
 ## Next steps
 
-In this quickstart, you created and assigned an app protection policy. Users of the app that have this policy assigned will not be able to cut, copy, or paste any content between the assigned app and other non-managed apps on the device. This type of protection will help protect your organization’s data.
+In this quickstart, you created and assigned an app protection policy. Users of the app that have this policy assigned will not be able to cut, copy, or paste any content between the assigned app and other non-managed apps on the device. This type of protection will help protect your organization’s data. For more information about app protection policies in Intune, see [What are app protection policies?](app-protection-policy.md)
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Create and assign a custom role](quickstart-create-custom-role.md)
