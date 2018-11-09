@@ -34,9 +34,9 @@ For this example, you'll use MDM enrollment so that both corporate and bring-you
 
     ![Select the Azure Active Directory free Premium trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    Choose the **Entrerprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
+    Choose the **Enterprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
 
-    ![Choose the Entrerprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+    ![Choose the Enterprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
 3. Select **Microsoft Intune**. 
 
