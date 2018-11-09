@@ -53,24 +53,18 @@ To require MFA when a device is enrolled, follow these steps:
 >Do not configure **Device based access rules** for Microsoft Intune enrollment.
 
 1. Sign in to your [Microsoft Azure portal](https://portal.azure.com) with your credentials.
-2. In the portal, choose **Azure Active Directory**.
-2. In **Azure Active Directory**, choose **Manage** > **Enterprise applications**.
-3. In **Enterprise applications**, choose **Manage** > **All applications**. You see a list of all Azure apps that you manage.
-3. From the list, choose **Microsoft Intune enrollment**.
-4. In **Microsoft Intune Enrollment**, choose **Security** > **Conditional access**.
-5. Choose **New policy**.
-6. In **New** policy, type a descriptive name for the policy.
-7. In the **Assignments** section, choose **Users and groups**.
-8. In **Users and groups**, choose the users or groups that will receive this policy, then choose **Done**.
-9. In the **Assignments** section, choose **Cloud apps**.
-10. On the **Include** tab of **Cloud apps**, choose **Select apps**, then choose **Select** > **Microsoft Intune Enrollment**, and then choose **Done**.
-11. In the **Assignments** section, choose **Conditions**.
-12. In **Conditions**, you do not need to configure any settings for MFA.
-13. In the **Access controls** section, choose **Grant**.
-14. In **Grant**, choose **Grant access**, and then select **Require multi-factor authentication**.
-	Do not select **Require device to be marked as compliant** because a device cannot be evaluated for compliance until it is enrolled.
-15. Choose **Select**.
-16. In **New policy**, choose **Enable policy** > **On**, and then choose **Create**.
+2. In the portal, go to **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. In **Azure Active Directory** under Security, choose **[Conditional access](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Choose **New policy**.
+5. In **New** policy, type a descriptive name for the policy.
+6. In the **Assignments** section, choose **Users and groups**.
+7. In **Users and groups**, choose **Select users or groups**, and check **Users and groups**. Then select the users and /or groups that will receive this policy, then choose **Done**.
+8. In the **Assignments** section, choose **Cloud apps**.
+9. On the **Include** tab of **Cloud apps**, choose **Select apps**, then choose **Select** > **Microsoft Intune Enrollment**, and then choose **Done**.
+10. In the **Assignments** section, for **Conditions** you do not need to configure any settings for MFA.
+11. In the **Access controls** section, choose **Grant**.
+12. In **Grant**, choose **Grant access**, and then select **Require multi-factor authentication**. Do not select **Require device to be marked as compliant** because a device cannot be evaluated for compliance until it is enrolled. Then choose **Select**.
+13. In **New policy**, choose **Enable policy** > **On**, and then choose **Create**.
 
 
 

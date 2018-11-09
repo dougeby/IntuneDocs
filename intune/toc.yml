@@ -28,12 +28,14 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
-  - name: Create a policy
-    href: quickstart-create-policy.md
-  - name: Set device password length
-    href: quickstart-set-password-length-android.md  
   - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
+  - name: Enroll your Windows 10 device
+    href: quickstart-enroll-windows-device.md
+  - name: Create a device compliance policy
+    href: quickstart-set-password-length-android.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md       
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile

@@ -52,6 +52,11 @@ Intune's iOS email profiles support iOS 12 Open Authorization (OAuth). To see th
 
 [iOS email profiles](email-settings-ios.md) has more information on using OAuth in an email profile.
 
+### Autopilot support for hybrid Azure Active Directory joined devices (Preview) <!-- 1048100-->
+You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
+This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
+
+
 ## Week of October 29, 2018
 
 
@@ -126,10 +131,6 @@ You'll be able to assign Autopilot profiles to the All devices virtual group. To
 
 #### New Azure Active Directory terms of use feature <!-- 2870393 -->
 Azure Active Directory has a terms of use feature that you can use instead of existing Intune terms and conditions. The Azure AD terms of use feature provides more flexibility on which terms to show and when to show them, better localization support, more control in how terms are rendered and improved reporting. The Azure AD terms of use feature does require Azure Active Directory Premium P1 which is also part of the Enterprise Mobility + Security E3 suite. To learn more, see the [Manage your company's terms and conditions for user access article](terms-and-conditions-create.md).
-
-### Autopilot support for hybrid Azure Active Directory joined devices (Preview) <!-- 1048100-->
-You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
-This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
 ### Android Device Owner mode support <!--3188762-->
 For Samsung Knox Mobile Enrollment, Intune now supports enrolling devices to the Android Device Owner mode of management. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
@@ -1030,6 +1031,21 @@ To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Notices
+
+### Plan for change: Performance updates to Intune for Education <!--1750215-->
+We’re adding some updates to Intune for Education to increase speed and reliability when you assign settings to your users or devices. As part of this change, towards the end of November, we’ll be moving your policies or settings assignments to new groups.
+
+#### How does this affect me?
+
+As an Intune for Education customer, you have two dynamic Azure Active Directory (Azure AD) groups: “All Users” and “All Devices”. With these updates, these “All Users” and “All devices” Azure AD groups will not be visible in the Intune for Education console. They will, however, still be visible in the Intune on Azure console and will be renamed as “All Users (Obsolete, do not use)” and “All Devices (Obsolete, do not use)”.
+
+When the updates roll out, you will no longer need to use Azure AD groups to assign apps and settings in Intune. Instead, we will move your Settings assignments to new groups in the Intune for Education console that we’ll create for you that will still show up as “All Users” and “All Devices” as before. These changes are in the backend, so you will not notice anything different in the Intune for Education console. There is no impact anticipated to your end users or enrolled devices. 
+
+#### What do I need to do to prepare for this change?
+You do not need to do anything while we move your policy assignments. If you currently assign policies in the Intune for Education console, continue doing so.
+
+If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
+
 
 ### Plan for Change: Intune will move to support macOS 10.12 and higher in December <!--2970975--> 
 
