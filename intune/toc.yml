@@ -35,7 +35,11 @@
   - name: Create a device compliance policy
     href: quickstart-set-password-length-android.md
   - name: Send notifications to noncompliant devices
-    href: quickstart-send-notification.md       
+    href: quickstart-send-notification.md  
+  - name: Add and assign an app
+    href: quickstart-add-assign-app.md  
+  - name: Create and assign an app protection policy
+    href: quickstart-create-assign-app-policy.md         
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
