@@ -52,17 +52,17 @@ Use the following steps create an app protection policy:
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **App protection policies** > **Create Policy**. 
 2. Enter the following details: 
 
-    - **Name**: Pilot - *Windows 10 prevent content copy*
+    - **Name**: *Windows 10 content protection*
     - **Description**: *Users associated with this policy will not be able to cut, copy, or paste any content between the assigned app and other non-managed apps on the device.*
     - **Platform**: *Windows 10*
     - **Enrollment state**: *With enrollment*
 
 3. Select **Protected apps** to choose the apps that must adhere to this policy.
 4. Click **Add apps**.
-5. Under **Recommended apps**, find and select **Microsoft OneNote**.
+5. Under **Recommended apps**, select **Word Mobile**.
 5. Click **OK** > **OK**. 
 6. Select **Required settings** to configure the app.
-7. Click **Block** to set the Windows Information Protection mode. Selecting this option will block enterprise data from leaving the protected app.
+7. Click **Allow Overrides** to set the Windows Information Protection mode. Selecting this option will block enterprise data from leaving the protected app.
 8. Click **OK** > **Create**.
 
 You’ll now see the app protection policy in Intune.
@@ -74,7 +74,7 @@ After you've created an app protection policy in Intune, you can assign to group
 Use the following steps to assign the app protection policy:
 
 1.	In [Intune](https://aka.ms/intuneportal), select **Intune** > **Client apps** > **App protection policies**. 
-2.	Select the app protection policy you created earlier. In this quickstart, the policy is **Windows 10 prevent content copy**.
+2.	Select the app protection policy you created earlier. In this quickstart, the policy is **Windows 10 content protection**.
 3.	Select **Assignments**.
 4.	Click **Select groups to include** in the **Include** tab.
 5.	Select **Contoso Testers** as the group to include.

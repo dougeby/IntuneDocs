@@ -40,13 +40,6 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
     - [Create a group](quickstart-create-group.md)
     - [Enroll a device](quickstart-setup-auto-enrollment.md)
 
-## Locate an app from the Microsoft store
-
-1. In a browser, navigate to the Microsoft store:
-    [https://www.microsoft.com/store/collections/essentialapps/pc](https://www.microsoft.com/store/collections/essentialapps/pc)
-2. Find and select the **Microsoft To-Do** app. 
-3. Copy and save the URL of the **Microsoft To-Do** app. You'll use the URL later in this quickstart.
-
 ## Sign in to Intune
 
 Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
@@ -58,17 +51,20 @@ An app can be included so that Intune can manage aspects of the app.
 Use the following steps to add an app to Intune:
 
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **Apps** > **Add**. 
-2. Select **Windows** in the **Store app** section of the **App type** dropdown box.
-3. Select **App information** to configure the app.
-4. Enter **Contoso's To-Do** as the **Name**.
-5. Enter **The To-Do list app.** as the **Description**.
-6. Enter **Microsoft** as the publisher.
-7. Enter the URL that you [previously saved during this quickstart](quickstart-add-assign-app.md#locate-an-app-from-the-microsoft-store) in the **Appstore URL** box.
+2. Select **Windows 10** in the **Office 365 Suite** section of the **App type** dropdown box.
+3. Select **Configure App Suite** to select the Office apps to be assigned to the Intune user.
+4. Click **OK** to accept the default selected apps.
+5. Select **App Suite Information**.
+6. Enter **Microsoft Office 365 app suite** as the **Suite Name**.
+7. Enter **The Microsoft Office 365 app suite.** as the **Suite Description**.
+8. Click **Yes** next to **Display this as a featured app in the Company Portal**.
+9. Click **OK**.
 
     ![Screenshot of adding app information](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Click **Yes** next to **Display this as a featured app in the Company Portal**. 
-9. Click **OK** > **Add**.
+8. Select **App Suite Settings**.
+9. In the **Update Channel** dropdown box, select **Monthly**.
+10. Click **OK** > **Add**.
 
 ## Assign the app to a group
 
@@ -87,7 +83,7 @@ Use the following steps to assign an app to a group:
 
 You now have assigned the app to the **Contoso Testers** group.
 
-## Verify the app on the enrolled device
+## Install the app on the enrolled device
 
 You must install and use the Company Portal app to install the **Contoso's To-Do** app made available by Intune. Use the following steps to verify that the app is available to the user of the enrolled device.
 
@@ -98,16 +94,19 @@ You must install and use the Company Portal app to install the **Contoso's To-Do
 
 2. From the **Start** menu, open the **Microsoft Store**. Then, find the **Company Portal** app and install it.
 3. Launch the **Company Portal** app.
-4. Find the app that you added using Intune. In this quickstart you added the **Contoso's To-Do** app.
-5. Click **View in Microsoft Store**.
-6. Click **Install**.  **Install on my devices**.
-7. Install the app to your current Windows 10 Desktop device.
+4. Click the app that you added using Intune. In this quickstart you added the **Microsoft Office 365 app suite** app.
+
+    > [!NOTE]
+    > If you did not successfully assign any apps to the Intune user, you will see the following message:
+    > *Your IT administrator did not make any apps available to you.*
+
+5. Click **Install**.
 
 If your business needs require that you assign the Company Portal app to your workforce, you can manually assign the Windows 10 Company Portal app directly from Intune. For more information see, [Manually add the Windows 10 Company Portal app by using Microsoft Intune](store-apps-company-portal-app.md).
 
 ## Next steps
 
-In this quickstart, you locateed an app from the Microsoft store, added the app to Intune, assigned the app to a group, and verified the availability of the app on the enrolled Windows 10 Desktop device. 
+In this quickstart, you added the app to Intune, assigned the app to a group, and installed the app on the enrolled Windows 10 Desktop device. 
 
 > [!div class="nextstepaction"]
 > [Quickstart: Create and assign an app protection policy](quickstart-create-assign-app-policy.md)
