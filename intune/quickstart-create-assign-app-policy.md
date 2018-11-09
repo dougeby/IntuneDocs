@@ -52,10 +52,10 @@ Use the following steps create an app protection policy:
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **App protection policies** > **Create Policy**. 
 2. Enter the following details: 
 
-    - Name: Pilot - *Windows 10 prevent content copy*
-    - Description: *Users associated with this policy will not be able to cut, copy, or paste any content between the assigned app and other non-managed apps on the device.*
-    - Platform: *Windows 10*
-    - Enrollment state: *With enrollment*
+    - **Name**: Pilot - *Windows 10 prevent content copy*
+    - **Description**: *Users associated with this policy will not be able to cut, copy, or paste any content between the assigned app and other non-managed apps on the device.*
+    - **Platform**: *Windows 10*
+    - **Enrollment state**: *With enrollment*
 
 3. Select **Protected apps** to choose the apps that must adhere to this policy.
 4. Click **Add apps**.
