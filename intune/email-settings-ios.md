@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/5/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ Use the email profile settings to configure your devices running iOS.
 
     The default action is to add an application using the [Application Access Panel](https://docs.microsoft.com/azure/active-directory/user-help/active-directory-saas-access-panel-introduction) **Add App** feature **without business approval**. For more information, see [assign users to applications](https://docs.microsoft.com/azure/active-directory/manage-apps/ways-users-get-assigned-to-applications).
 
-  > [NOTE]
+  > [!NOTE]
   > When you enable OAuth, the following happens:  
   > 1. Devices that are already targeted are issued a new profile.
   > 2. End users are prompted to enter their credentials again.
