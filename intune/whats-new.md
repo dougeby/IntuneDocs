@@ -167,7 +167,7 @@ When Intune installs Office on your end user's machines, end users automatically
 ### Monitor and troubleshoot
 
 #### New Intune Support Experience in the Microsoft 365 Device Management portal <!-- 3076965 -->
-We are rolling out a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquiries.  
+We are rolling out a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user inquiries.  
 
 In addition to issue-specific guidance, you can also use the new case creation workflow to open a support case by email or phone.  
 
@@ -644,7 +644,7 @@ You can use the on-premises **sAMAccountName** as the account username for email
 
 To use this feature, you must sync the `sAMAccountName` attribute from your on-premises Active Directory environment to Azure AD.
 
-Applies to [Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
+Applies to [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
 
 #### See device configuration profiles in conflict <!-- 1556983 -->
 In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
@@ -701,7 +701,7 @@ You can control mobile device access to corporate resources using conditional ac
 
 ## Week of June 18, 2018
 
-### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+### Microsoft Edge mobile support for Intune app protection policies <!-- 1817882 -->
 
 The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
 
@@ -810,7 +810,7 @@ To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **De
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Edge when it is managed.
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
 
 ## Week of May 14, 2018
 
