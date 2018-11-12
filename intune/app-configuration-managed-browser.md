@@ -27,7 +27,7 @@ ms.custom: intune-azure
 
 ---
 
-# Manage Internet access using an Microsoft Intune policy-protected browser
+# Manage Internet access using a Microsoft Intune policy-protected browser
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -88,7 +88,7 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 
 5. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** blade is displayed.
 6. Click **Yes** under **Configure** to apply the policy to specific client apps.
-7. Verify that **Browser** is select as a client app.
+7. Verify that **Browser** is selected as a client app.
 
     ![Azure AD - Managed Browser - Select client apps](./media/managed-browser-conditional-access-02.png)
 
