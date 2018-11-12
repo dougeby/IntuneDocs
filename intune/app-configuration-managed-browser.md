@@ -55,7 +55,7 @@ Earlier versions of Android and iOS will be able to continue using the Managed B
 
 ## Application protection policies for protected browsers
 
-Because Edge and Managed Browser have integration with the Intune SDK, you can also apply app protection policies to them, including:
+Because Microsoft Edge and Managed Browser have integration with the Intune SDK, you can also apply app protection policies to them, including:
 - Controlling the use of cut, copy, and paste.
 - Preventing screen captures.
 - Ensuring corporate links open only within managed apps and browsers.
@@ -70,7 +70,7 @@ You can apply these settings to:
 
 >[!NOTE]
 >If users install the Managed Browser from the app store and Intune does not manage it, it can be used as a basic web browser, with support for Single Sign-On through the Microsoft MyApps site. Users are taken directly to the MyApps site, where they can see all of their provisioned SaaS applications.
-While Managed Browser or Edge are not managed by Intune, they cannot access data from other Intune-managed applications. 
+While Managed Browser or Microsoft Edge are not managed by Intune, they cannot access data from other Intune-managed applications. 
 
 
 ## Conditional Access for protected browsers
@@ -156,30 +156,30 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 - Set up your internal applications through the Azure AD Application Proxy.
     - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
-- Users of the Managed Browser or Edge app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
+- Users of the Managed Browser or Microsoft Edge app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
 
     > [!NOTE]
-    > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser and Edge.
+    > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser and Microsoft Edge.
 
 
 #### Step 1: Enable automatic redirection to a protected browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
 
 #### Step 2: Assign an app configuration policy assigned for the protected browser.
-This procedure configures the Managed Browser or Edge app to use app proxy redirection. Using the procedure to create an Edge or Managed Browser app configuration, supply the following key and value pair:
+This procedure configures the Managed Browser or Microsoft Edge app to use app proxy redirection. Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
 
 | Key                                                             | Value    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-For more information about how the Managed Browser, Edge, and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
+For more information about how the Managed Browser, Microsoft Edge, and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
 > [!NOTE]
-> Edge uses the same key and value pairs as the Managed Browser. 
+> Microsoft Edge uses the same key and value pairs as the Managed Browser. 
 
 ## How to configure the homepage for a protected browser
 
-This setting allows you to configure the homepage that users see when they start a protected browser or create a new tab. Using the procedure to create an Edge or Managed Browser app configuration, supply the following key and value pair:
+This setting allows you to configure the homepage that users see when they start a protected browser or create a new tab. Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
 
 |                                Key                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -187,13 +187,13 @@ This setting allows you to configure the homepage that users see when they start
 
 ## How to configure bookmarks for a protected browser
 
-This setting allows you to configure a set of bookmarks that is available to users of Edge or the Managed Browser.
+This setting allows you to configure a set of bookmarks that is available to users of Microsoft Edge or the Managed Browser.
 
 - These bookmarks cannot be deleted or modified by users
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
 - If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
-Using the procedure to create an Edge or Managed Browser app configuration, supply the following key and value pair:
+Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
 
 |                                Key                                 |                                                                                                                                                                                                                                                         Value                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -201,7 +201,7 @@ Using the procedure to create an Edge or Managed Browser app configuration, supp
 
 ## How to specify allowed and blocked URLs for a protected browser
 
-Using the procedure to create an Edge or Managed Browser app configuration, supply the following key and value pair:
+Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
 
 |Key|Value|
 |-|-|
