@@ -48,7 +48,7 @@ Android Enterprise (formerly known as Android for Work) supports including and e
 
 ### Device management
 
-### Export all devices into CSV files in IE, Edge, or Chrome <!-- 2258071 -->
+### Export all devices into CSV files in IE, Microsoft Edge, or Chrome <!-- 2258071 -->
 In **Devices** > **All devices**, you can **Export** the devices into a CSV formatted list. Internet Explorer (IE) users with >10,000 devices can successfully export their devices into multiple files. Each file has up to 10,000 devices.
 
 Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
@@ -298,8 +298,8 @@ A drill-in report for each status category lists the individual PCs that need at
 - **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
-#### New settings for the Edge browser <!--1469166 -->
-[Two new settings](device-restrictions-windows-10.md#microsoft-edge-browser) are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**.
+#### New settings for the Microsoft Edge browser <!--1469166 -->
+[Two new settings](device-restrictions-windows-10.md#microsoft-edge-browser) are now available for devices with the Microsoft Edge browser: **Path to favorites file** and **Changes to Favorites**.
 
 ### App management
 
@@ -1289,7 +1289,7 @@ In this release, we've added new settings for the Windows 10 device restriction 
 -  Privacy
 -  Search
 -  Windows Spotlight
--  Edge browser
+-  Microsoft Edge browser
 
 For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 
