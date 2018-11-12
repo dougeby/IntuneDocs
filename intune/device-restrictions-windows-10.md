@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!Note]
-> Not all options are avaiable on all editions of Windows
+> Not all options are available on all editions of Windows
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
@@ -141,7 +141,7 @@ You can add apps that should have a different privacy behavior from what you def
 - **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
--	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
+-	**Toast notifications on locked screen** – Block alert messages from showing on the device lock screen.
 -	**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.
 
 ## App Store
@@ -180,7 +180,7 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
 - 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
 - 	**Block access to About flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
-- 	**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.
+- 	**WebRtc localhost ip address** - Block the users localhost IP address from showing when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
@@ -240,7 +240,27 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Start
 
-- **Unpin apps from task bar** - Stop the user from unpinning apps from the Start menu.
+- **Start menu layout** - To customize the start menu on desktop devices, you can upload an XML file that includes your customizations, including the order the apps are listed, and more. Users cannot change the Start menu layout you enter.
+- **Pin websites to tiles in Start menu** - Import images from Microsoft Edge that are shown as links in the Windows Start menu for desktop devices.
+- **Unpin apps from task bar** - Choose **Block** to stop the user from unpinning apps from the Start menu.
+- **Fast user switching** - Choose **Block** to prevent switching between users that are logged on simultaneously without logging off.
+- **Most used apps** - Choose **Block** to hide the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
+- **Recently added apps** - Choose **Block** to hide recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
+- **Start screen mode** - Choose how the start screen is shown. Choose to show it as **Full screen** or **Non-full screen**.
+- **Recently opened items in Jump Lists** - Choose **Block** to hide recent jump lists from being shown on the start menu and taskbar. It also disables the corresponding toggle in the Settings app.
+- **App list** - Choose how the Settings app is shown. Your options: 
+  - Collapse
+  - Collapse and disable the Settings app 
+  - Removes and disables the Settings app
+- **Power button** - Choose **Block** to hide the power button from showing in the start menu.
+- **User Tile** - Choose **Block** to hide the user tile from showing in the start menu.
+  - **Lock** - Choose **Block** to hide the `Lock` option from showing in the user tile in the start menu.
+  - **Sign out** - Choose **Block** to hide the `Sign out` option from showing in the user tile in the start menu.
+- **Shut Down** - Choose **Block** to hide the `Update and shut down` and `Shut down` options from showing in the power button in the start menu.
+- **Sleep** - Choose **Block** to hide the `Sleep` option from showing in the power button in the start menu.
+- **Hibernate** - Choose **Block** to hide the `Hibernate` option from showing in the power button in the start menu.
+- **Switch Account** - Choose **Block** to hide the `Switch account` from showing in the user tile in the start menu.
+- **Restart Options** -  Choose **Block** to hide the `Update and restart` and `Restart` options from showing in the power button in the start menu.
 - **Documents on Start** - Hide or show the Documents folder in the Windows Start menu.
 - **Downloads on Start** - Hide or show the Downloads folder in the Windows Start menu.
 - **File Explorer on Start** - Hide or show the File Explorer app in the Windows Start menu.
