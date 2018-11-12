@@ -3,7 +3,7 @@
 
 title: Quickstart - Add and assign a client app
 titlesuffix: Microsoft Intune
-description: In this quickstart you will use Microsoft Intune to add an assign a client app.
+description: In this quickstart you will use Microsoft Intune to add and assign a client app.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -35,10 +35,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
-- To complete this quickstart, you must:
-    - [Create a user](quickstart-create-user.md)
-    - [Create a group](quickstart-create-group.md)
-    - [Enroll a device](quickstart-setup-auto-enrollment.md)
+- To complete this quickstart, you must [create a user](quickstart-create-user.md), [create a group](quickstart-create-group.md), and [enroll a device](quickstart-setup-auto-enrollment.md).
 
 ## Sign in to Intune
 

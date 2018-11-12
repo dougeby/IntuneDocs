@@ -35,11 +35,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
-- To complete this quickstart, you must:
-    - [Create a user](quickstart-create-user.md)
-    - [Create a group](quickstart-create-group.md)
-    - [Enroll a device](quickstart-setup-auto-enrollment.md)
-    - [Add and assign an app](quickstart-add-assign-app.md)
+- To complete this quickstart, you must [create a user](quickstart-create-user.md), [create a group](quickstart-create-group.md), [enroll a device](quickstart-setup-auto-enrollment.md), and [add and assign an app](quickstart-add-assign-app.md).
 
 ## Sign in to Intune
 
