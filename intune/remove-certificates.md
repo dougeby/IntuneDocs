@@ -136,7 +136,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator removes the user or group from Azure AD
   - Administrator changes or updates the PKCS profile
 
-## Android & Android Enterprise devices
+## Android KNOX devices
 
 #### SCEP certificates
 
@@ -182,6 +182,11 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator changes or updates the PKCS profile
   - Configuration profile is removed from the group assignment
   - Compliance policy is removed from the group assignment 
+  
+  
+> [!NOTE]
+> Android for work devices are not validated for the above scenarios. 
+> Android legacy devices (any non-Samsung, non-work profile device) are not enabled for certificate removal. 
 
 ## macOS certificates
 
