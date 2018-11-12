@@ -400,12 +400,15 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 
 ## Cloud Printer
 
-- **Printer discovery URL** -Endpoint for discovering cloud printers.
-- **Printer access authority URL** - Authentication endpoint for acquiring OAuth tokens.
-- **Azure native client app GUID** - GUID of a client application authorized to retrieve OAuth tokens from the OAuthAuthority.
-- **Print service resource URI** - OAuth resource URI for print service as configured in Azure portal.
-- **Maximum printers to query (Mobile only)** - Maximum number of printers that should be queried from a discovery endpoint.
-- **Printer discovery service resource URI** - OAuth resource URI for printer discovery service as configured in the Azure portal.
+- **Printer discovery URL** - Enter the URL for discovering cloud printers.
+- **Printer access authority URL** - Enter the Authentication endpoint URL to get OAuth tokens. For example, enter something like `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **Azure native client app GUID** - Enter the GUID of a client application authorized to get OAuth tokens from the OAuthAuthority.
+- **Print service resource URI** - Enter the OAuth resource URI for print service configured in the Azure portal. For example, enter something like `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Maximum printers to query (Mobile only)** - Enter the maximum number of printers that you want to be queried. For example, enter `10`.
+- **Printer discovery service resource URI** - Enter the OAuth resource URI for printer discovery service configured in the Azure portal. For example, enter something like `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to Windows devices.
 
 ## Local Printer
 - **Printers** - List of local printers that have been added.
