@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,14 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 > [!Note]
-> Not all options are avaiable on all editions of Windows
+> Not all options are available on all editions of Windows
 
 ## General
 - **Screen capture (mobile only)** - Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)** - Allow copy and paste actions between apps on the device.
 - **Manual unenrollment** - Lets the user manually delete the workplace account from the device.
-   - This policy setting is not applied if the computer is Azure Active Directory joined and auto-enrollment is enabled. 
-   - This policy setting does not apply to computers running Windows 10 Home.
+   - This policy setting isn't applied if the computer is Azure AD joined and auto-enrollment is enabled. 
+   - This policy setting doesn't apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)** - Stops the user from manually installing root certificates, and intermediate CAP certificates.
 
 - **Camera** - Allow or block use of the camera on the device.
@@ -56,9 +56,9 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Device discovery** - Block a device from being discovered by other devices.
 - **Task Switcher (mobile only)** - Blocks the task switcher on the device.
 - **SIM card error dialog (mobile only)** - Blocks an error message from displaying on the device if no SIM card is detected.
-- **Ink Workspace** - Block users from accessing the ink workspace. When this setting is not configured, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
+- **Ink Workspace** - Block users from accessing the ink workspace. When set to **Not configured**, the ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
 - **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
-- **Require users to connect to network during device setup (Windows Insider only)** - Choose **Require** to require that the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
+- **Require users to connect to network during device setup (Windows Insider only)** - Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
 
 ## Password
 - 	**Password** - Require the end user to enter a password to access the device.
@@ -75,14 +75,14 @@ For devices running Windows 10 Mobile: After sign-in fails the number of times y
 
 ## Personalization
 
-- **Desktop background picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change this.
+- **Desktop background picture URL (Desktop only)** - Enter the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change the picture.
 
 ## Privacy
 
 -	**Input personalization** – Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
 -	**Automatic acceptance of the pairing and privacy user consent prompts** – Allow Windows to automatically accept pairing and privacy consent messages when running apps.
-- **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
-- **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
+- **Publish user activities**: **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
 You can define information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -103,8 +103,8 @@ You can define information that all apps on the device can access. You can defin
 - **Phone** - Define whether this app can access the phone.
 - **Radios** - Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
 - **Tasks** - Define whether this app can access your tasks.
-- **Trusted devices** - Define whether this app can use trusted devices (hardware you've already connected or that comes with this PC, tablet, or phone). For example: TVs, projectors, and so on.
-- **Feedback and diagnostics** - Define whether this app can access diagnostic information.
+- **Trusted devices** - Choose if this app can use trusted devices (hardware you've already connected or that comes with this PC, tablet, or phone). For example: TVs, projectors, and so on.
+- **Feedback and diagnostics** - Choose if this app can access diagnostic information.
 - **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
 
 ## Per-app privacy exceptions
@@ -141,7 +141,7 @@ You can add apps that should have a different privacy behavior from what you def
 - **Locked screen picture URL (Desktop only)** - Specify the URL to a picture in JPEG format that will be used as the Windows lock screen wallpaper. Users can't change this.
 -	**User configurable screen timeout (mobile only)** – Lets users configure the amount of time 
 -	**Cortana on locked screen (desktop only)** – Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
--	**Toast notifications on locked screen** – Block alert messages from being displayed on the device lock screen.
+-	**Toast notifications on locked screen** – Block alert messages from showing on the device lock screen.
 -	**Screen timeout (mobile only)** - Specifies the time in seconds after the screen locks, when it will turn off.
 
 ## App Store
@@ -151,7 +151,7 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.
 - 	**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
 - 	**Shared user app data** - Allows apps to share data between different users on the same device.
-- 	**Use private store only** - Enable this to only allow end users to download apps from your private store.
+- 	**Use private store only** - Enable to only allow end users to download apps from your private store.
 - 	**Store originated app launch** - Used to disable all apps that were pre-installed on the device, or downloaded from the Microsoft Store.
 - 	**Install app data on system volume** - Stops apps from storing data on the system volume of the device.
 - 	**Install apps on system drive** - Stops apps from storing data on the system drive of the device.
@@ -161,7 +161,7 @@ You can add apps that should have a different privacy behavior from what you def
 ## Edge Browser
 
 - 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
-- 	**Address bar dropdown (desktop only)** – Use this to stop Edge from displaying a list of suggestions in a drop-down list when you type. This helps to minimize network bandwidth use between Edge and Microsoft services.
+- 	**Address bar dropdown (desktop only)** – Stops Edge from showing a list of suggestions in a drop-down list when you type. This option helps to minimize network bandwidth use between Edge and Microsoft services.
 -	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
 - 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
@@ -180,12 +180,12 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
 - 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
 - 	**Block access to About flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
-- 	**WebRtc localhost ip address** - Block the users localhost IP address from being displayed when making phone calls using the web RTC protocol.
+- 	**WebRtc localhost ip address** - Block the users localhost IP address from showing when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
 - 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
 -	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
 -  **Favorites List** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
--  **Restrict changes to Favorites** - Set this to **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
+-  **Restrict changes to Favorites** - **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 
@@ -240,7 +240,27 @@ You can add apps that should have a different privacy behavior from what you def
 
 ## Start
 
-- **Unpin apps from task bar** - Stop the user from unpinning apps from the Start menu.
+- **Start menu layout** - To customize the start menu on desktop devices, you can upload an XML file that includes your customizations, including the order the apps are listed, and more. Users cannot change the Start menu layout you enter.
+- **Pin websites to tiles in Start menu** - Import images from Microsoft Edge that are shown as links in the Windows Start menu for desktop devices.
+- **Unpin apps from task bar** - Choose **Block** to stop the user from unpinning apps from the Start menu.
+- **Fast user switching** - Choose **Block** to prevent switching between users that are logged on simultaneously without logging off.
+- **Most used apps** - Choose **Block** to hide the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
+- **Recently added apps** - Choose **Block** to hide recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
+- **Start screen mode** - Choose how the start screen is shown. Choose to show it as **Full screen** or **Non-full screen**.
+- **Recently opened items in Jump Lists** - Choose **Block** to hide recent jump lists from being shown on the start menu and taskbar. It also disables the corresponding toggle in the Settings app.
+- **App list** - Choose how the Settings app is shown. Your options: 
+  - Collapse
+  - Collapse and disable the Settings app 
+  - Removes and disables the Settings app
+- **Power button** - Choose **Block** to hide the power button from showing in the start menu.
+- **User Tile** - Choose **Block** to hide the user tile from showing in the start menu.
+  - **Lock** - Choose **Block** to hide the `Lock` option from showing in the user tile in the start menu.
+  - **Sign out** - Choose **Block** to hide the `Sign out` option from showing in the user tile in the start menu.
+- **Shut Down** - Choose **Block** to hide the `Update and shut down` and `Shut down` options from showing in the power button in the start menu.
+- **Sleep** - Choose **Block** to hide the `Sleep` option from showing in the power button in the start menu.
+- **Hibernate** - Choose **Block** to hide the `Hibernate` option from showing in the power button in the start menu.
+- **Switch Account** - Choose **Block** to hide the `Switch account` from showing in the user tile in the start menu.
+- **Restart Options** -  Choose **Block** to hide the `Update and restart` and `Restart` options from showing in the power button in the start menu.
 - **Documents on Start** - Hide or show the Documents folder in the Windows Start menu.
 - **Downloads on Start** - Hide or show the Downloads folder in the Windows Start menu.
 - **File Explorer on Start** - Hide or show the File Explorer app in the Windows Start menu.
@@ -274,7 +294,7 @@ A kiosk device typically runs one app, or a specific set of apps. Users are prev
 #### Single app kiosks
 Enter the following settings:
 
-- **User account** - Enter the local (to the device) user account, an AD domain account, or an Azure AD account login associated with the kiosk app.
+- **User account** - Enter the local (to the device) user account, an AD domain account, or an Azure AD account associated with the kiosk app.
   - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
   - Domain account: Enter as `domain\accountname`
   - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
@@ -305,7 +325,7 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 
   [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
 
-- **Assigned users** - Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account login associated with the kiosk app.
+- **Assigned users** - Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account associated with the kiosk app.
 
     For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
@@ -353,9 +373,9 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 ## Network proxy
 
 - 	**Automatically detect proxy settings** - When enabled, the device attempts to find the path to a PAC script.
-- 	**Use proxy script** - Select this if you want to specify a path to a PAC script to configure the proxy server.
+- 	**Use proxy script** - Select this option to enter a path to a PAC script to configure the proxy server.
 	- 	**Setup script address URL** - Enter the URL of a PAC script you want to use to configure the proxy server.
-- 	**Use manual proxy server** - Select this if you want to manually provide proxy server information.
+- 	**Use manual proxy server** - Select this option to manually enter proxy server information.
 	- 	**Address** - Enter the name, or IP address of the proxy server.
 	- 	**Port number** - Enter the port number of your proxy server.
 	- 	**Proxy exceptions** - Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
@@ -407,9 +427,9 @@ If the files on the drive are read-only, Defender cannot remove any malware foun
 
 ## Messaging
 
-- **Message sync (mobile only)** - Disable Messaging Everywhere and text message backup and restore.
+- **Message sync (mobile only)** - Disable Messaging Everywhere and text message back up and restore.
 - **MMS (mobile only)** - Disable the MMS send/receive functionality on the device.
 - **RCS (mobile only)** - Disable the Rich Communication Services send/receive functionality on the device.
 
 ## More Information
-For additional technical details on each setting and what editions of Windows are suppported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+For additional technical details on each setting and what editions of Windows are supported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
