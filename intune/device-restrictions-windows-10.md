@@ -158,38 +158,38 @@ You can add apps that should have a different privacy behavior from what you def
 - 	**Game DVR (desktop only)** - Configures whether recording and broadcasting of games is allowed.
 - 	**Apps from the store only** - Configures whether users can install apps from places other than the app store.
 
-## Edge Browser
+## Microsoft Edge Browser
 
-- 	**Microsoft Edge browser (mobile only)** - Allow the use of the Edge web browser on the device.
-- 	**Address bar dropdown (desktop only)** – Stops Edge from showing a list of suggestions in a drop-down list when you type. This option helps to minimize network bandwidth use between Edge and Microsoft services.
--	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Edge.
-- 	**Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
+- 	**Microsoft Edge browser (mobile only)** - Allow the use of the Microsoft Edge web browser on the device.
+- 	**Address bar dropdown (desktop only)** – Stops Microsoft Edge from showing a list of suggestions in a drop-down list when you type. This option helps to minimize network bandwidth use between Microsoft Edge and Microsoft services.
+-	**Sync favorites between Microsoft browsers (desktop only)** – Lets Windows synchronize favorites between Internet Explorer and Microsoft Edge.
+- 	**Send do-not-track headers** - Configures the Microsoft Edge browser to send do not track headers to websites that users visit.
 - 	**Cookies** - Lets the browser save internet cookies to the device.
-- 	**JavaScript** - Allows scripts, such as Javascript, to run in the Edge browser.
+- 	**JavaScript** - Allows scripts, such as Javascript, to run in the Microsoft Edge browser.
 - 	**Pop-ups** - Blocks pop-up windows in the browser (Applies to Windows 10 desktop only).
 - 	**Search suggestions** - Lets your search engine suggest sites as you type search phrases.
 - 	**Send intranet traffic to Internet Explorer** - Lets users open intranet websites in Internet Explorer (Windows 10 desktop only).
 - 	**Autofill** - Allow users to change autocomplete settings in the browser (Windows 10 desktop only).
-- 	**Password Manager** - Enable or disable the Edge Password Manager feature.
+- 	**Password Manager** - Enable or disable the Microsoft Edge Password Manager feature.
 - 	**Enterprise mode site list location** - Specifies where to find the list of web sites that open in Enterprise mode. Users cannot edit this list.<br>(Windows 10 desktop only).
-- 	**Developer tools** - Prevent the end user from opening the Edge developer tools.
-- 	**Extensions** - Allow the end user to install Edge extensions on the device.
+- 	**Developer tools** - Prevent the end user from opening the Microsoft Edge developer tools.
+- 	**Extensions** - Allow the end user to install Microsoft Edge extensions on the device.
 - 	**InPrivate browsing** - Prevent the end user from opening InPrivate browsing sessions.
--	**Show first run page** – Stops the introduction page from appearing the first time you run Edge.
-	-	**First run URL** – Specifies the URL of a page that is displayed the first time a user runs Edge (Windows 10 Mobile only).
-- 	**Homepages** - Add a list of sites that you want to use as home pages in the Edge browser (desktop only).
-- 	**Changes to start page** – Lets users change the start pages displayed when Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Edge starts.
-- 	**Block access to About flags** - Prevent the end user from accessing the about:flags page in Edge that contains developer and experimental settings.
+-	**Show first run page** – Stops the introduction page from appearing the first time you run Microsoft Edge.
+	-	**First run URL** – Specifies the URL of a page that is displayed the first time a user runs Microsoft Edge (Windows 10 Mobile only).
+- 	**Homepages** - Add a list of sites that you want to use as home pages in the Microsoft Edge browser (desktop only).
+- 	**Changes to start page** – Lets users change the start pages displayed when Microsoft Edge is opened. Use the Homepages setting to create the page, or list of pages that is opened when Microsoft Edge starts.
+- 	**Block access to About flags** - Prevent the end user from accessing the about:flags page in Microsoft Edge that contains developer and experimental settings.
 - 	**WebRtc localhost ip address** - Block the users localhost IP address from showing when making phone calls using the web RTC protocol.
 - 	**Default search engine** - Specify the default search engine to be used. End users can change this value at any time.
-- 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Edge.
--	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Edge.
+- 	**Clear browsing data on exit** – Clears history, and browsing data when the user exits Microsoft Edge.
+-	**Live Tile data collection** – Stops Windows collecting information from the Live Tile when users pin a site to the start menu from Microsoft Edge.
 -  **Favorites List** - Defines the path to the favorites file. For example, http://contoso.com/favorites.html.
 -  **Restrict changes to Favorites** - **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. 
 
 ## Windows Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge** - Enable Edge SmartScreen for accessing site and file downloads.
+- **SmartScreen for Microsoft Edge** - Enable Microsoft Edge SmartScreen for accessing site and file downloads.
 - **Malicious site access** - Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
 - **Unverified file download** - Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
 

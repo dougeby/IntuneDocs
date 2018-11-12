@@ -299,7 +299,7 @@ A drill-in report for each status category lists the individual PCs that need at
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
 #### New settings for the Edge browser <!--1469166 -->
-[Two new settings](device-restrictions-windows-10.md#edge-browser) are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**.
+[Two new settings](device-restrictions-windows-10.md#microsoft-edge-browser) are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**.
 
 ### App management
 
