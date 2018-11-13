@@ -28,12 +28,18 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
-  - name: Create a policy
-    href: quickstart-create-policy.md
-  - name: Set device password length
-    href: quickstart-set-password-length-android.md  
   - name: Set up automatic enrollment
     href: quickstart-setup-auto-enrollment.md
+  - name: Enroll your Windows 10 device
+    href: quickstart-enroll-windows-device.md
+  - name: Create a device compliance policy
+    href: quickstart-set-password-length-android.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md  
+  - name: Add and assign an app
+    href: quickstart-add-assign-app.md  
+  - name: Create and assign an app protection policy
+    href: quickstart-create-assign-app-policy.md         
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
   - name: Create an email device profile
@@ -179,8 +185,10 @@
         href: windows-bulk-enroll.md
       - name: Enrollment status page
         href: windows-enrollment-status.md
-      - name: Windows AutoPilot Deployment Program
+      - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
+      - name: Hybrid Active Directory with Autopilot
+        href: windows-autopilot-hybrid.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
@@ -211,6 +219,8 @@
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abandonment report
+      href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Manage devices
@@ -486,6 +496,8 @@
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
+      - name: Remove SCEP or PKCS certificates
+        href: remove-certificates.md        
     - name: Configure Windows Information Protection settings
       href: windows-information-protection-configure.md
     - name: Manage PowerShell scripts
@@ -626,41 +638,6 @@
     href: manage-os-versions.md
   - name: Manage software updates
     href: windows-update-for-business-configure.md
-  - name: Manage PCs with software agent
-    href: manage-windows-pcs-with-microsoft-intune.md
-    items:
-    - name: Compare PC management
-      href: pc-management-comparison.md
-    - name: Install the PC client
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Common PC management tasks
-      href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-      items:
-      - name: PC policies
-        href: use-policies-to-simplify-windows-pc-management.md
-      - name: View inventory
-        href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-      - name: Retire PCs
-        href: retire-a-windows-pc-with-microsoft-intune.md
-      - name: Link PCs to users
-        href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-      - name: Remote assistance
-        href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-    - name: Policies to protect Windows PCs
-      href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-      items:
-      - name: Software updates
-        href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-      - name: Windows Firewall
-        href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-      - name: Endpoint Protection
-        href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-    - name: Add apps for Intune client PCs
-      href: add-apps-for-windows-pcs-in-microsoft-intune.md
-    - name: Manage license agreements
-      href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-    - name: Resolve policy conflicts
-      href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Manage Windows Holographic
     href: windows-holographic-for-business.md
     items:
@@ -703,18 +680,18 @@
           href: android-pulse-secure-per-app-vpn.md
         - name: Allow/block apps for Samsung Knox Standard
           href: samsung-knox-apps-allow-block.md
+      - name: Android Enterprise
+        href: custom-settings-android-for-work.md
       - name: iOS
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md
       - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android Enterprise
-        href: custom-settings-android-for-work.md
+      - name: Windows Phone 8.1
+        href: custom-settings-windows-phone-8-1.md
 - name: Developer guidance
   items:
   - name: API to add third-party certificate authority
@@ -830,5 +807,40 @@
       href: groups-get-started.md
     - name: Legacy Intune PC client
       href: intune-legacy-pc-client.md
+    - name: Manage PCs with software agent
+      href: manage-windows-pcs-with-microsoft-intune.md
+      items:
+      - name: Compare PC management
+        href: pc-management-comparison.md
+      - name: Install the PC client
+        href: install-the-windows-pc-client-with-microsoft-intune.md
+      - name: Common PC management tasks
+        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+        items:
+        - name: PC policies
+          href: use-policies-to-simplify-windows-pc-management.md
+        - name: View inventory
+          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+        - name: Retire PCs
+          href: retire-a-windows-pc-with-microsoft-intune.md
+        - name: Link PCs to users
+          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+        - name: Remote assistance
+          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+      - name: Policies to protect Windows PCs
+        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+        items:
+        - name: Software updates
+          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+        - name: Windows Firewall
+          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+        - name: Endpoint Protection
+          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+      - name: Add apps for Intune client PCs
+        href: add-apps-for-windows-pcs-in-microsoft-intune.md
+      - name: Manage license agreements
+        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+      - name: Resolve policy conflicts
+        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossary
     href: intune-glossary.md

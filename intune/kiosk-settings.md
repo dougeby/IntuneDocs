@@ -82,8 +82,15 @@ When you choose single app kiosk mode, enter the following settings:
   - **Refresh browser after idle time**: Enter the amount of idle time (1-1440 minutes) until the kiosk browser restarts in a fresh state. Idle time is the number of minutes since the user’s last interaction. By default, the value is empty or blank, which means there isn't any idle timeout.
 
   - **Allowed websites**: Use this setting to allow specific websites to open. In other words, use this feature to restrict or prevent websites on the device. For example, you can allow all websites at `http://contoso.com*` to open. By default, all websites are allowed.
+ 
+      To allow specific websites, upload a file that includes a list of the allowed websites on separate lines. If you don't add a file, all websites are allowed. Intune supports * (asterisk) as a wild card.
 
-    To allow specific websites, upload a .csv file that includes a list of the allowed websites. If you don't add a .csv file, all websites are allowed. Intune supports * (asterisk) as a wild card.
+      Your sample file should look similar to the following list:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Select **OK** to save your changes.
 
@@ -110,7 +117,7 @@ When you choose multi app kiosk mode, enter the following settings:
 
     - **Application name**: Required. Enter a name for the application.
     - **Local path**: Required. Enter the path to the executable, such as `C:\Program Files (x86)\Microsoft VS Code\Code.exe` or `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Application user model ID (AUMID)**: Optional. Enter the Application user model ID (AUMID) of the Win32 app. This setting determines the start layout of the tile on the desktop. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Application user model ID (AUMID)**: Enter the Application user model ID (AUMID) of the Win32 app. This setting determines the start layout of the tile on the desktop. To get this ID, see [find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
     - **Tile size**: Required. Choose a Small, Medium, Wide, or Large app tile size.
   
   - **Add by AUMID**: Use this option to add inbox Windows apps, such as Notepad or Calculator. Enter the following properties: 

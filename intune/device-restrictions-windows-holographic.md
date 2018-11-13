@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device restrictions for Windows Holographic for Business in Microsoft Intune - Azure | Microsoft Docs
-description: Read about and configure device restriction settings in Microsoft Intune for Windows Holographic for Business, including unenrollment, geolocation, passwords, install apps from app store, cookies and pop ups in Edge, Windows Defender, search, cloud and storage, bluetooth connectivity, system time, and usage data in Azure.
+description: Read about and configure device restriction settings in Microsoft Intune for Windows Holographic for Business, including unenrollment, geolocation, passwords, install apps from app store, cookies and pop ups in Microsoft Edge, Windows Defender, search, cloud and storage, bluetooth connectivity, system time, and usage data in Azure.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -46,17 +46,17 @@ The following device restriction settings are supported on devices running Windo
 - 	**Trusted app installation** - Allows apps signed with a trusted certificate to be sideloaded.
 - 	**Developer unlock** - Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
 
-## Edge Browser
+## Microsoft Edge Browser
 
 - 	**Cookies** - Lets the browser save internet cookies to the device.
 - 	**Pop-ups** - Blocks pop-up windows in the browser (applies to Windows 10 desktop only).
 - 	**Search suggestions** - Lets your search engine suggest sites as you type search phrases.
-- 	**Password Manager** - Enable or disable the Edge Password Manager feature.
-- **Send do-not-track headers** - Configures the Edge browser to send do not track headers to websites that users visit.
+- 	**Password Manager** - Enable or disable the Microsoft Edge Password Manager feature.
+- **Send do-not-track headers** - Configures the Microsoft Edge browser to send do not track headers to websites that users visit.
 
 ## Windows Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge** - Enable Edge SmartScreen for accessing site and file downloads.
+- **SmartScreen for Microsoft Edge** - Enable Microsoft Edge SmartScreen for accessing site and file downloads.
 
 ## Search
 - **Search location** -Specify if search can use location. information

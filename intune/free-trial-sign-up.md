@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
     ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-user-id.png)
 
-    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal discribed later in this article.
+    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal described later in this article.
 
 3. View your new account information at the end of the sign-up process.
 
@@ -75,20 +75,27 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
 When you sign up for a trial, you will also receive an email message that contains your account information and the email address that you provided during the sign-up process. This email confirms your trial is active.
 
+> [!TIP]
+> When working with the Azure portal, you may have better results working with a browser in regular mode, rather than private mode.
+
 ## Set the MDM authority to Intune
 
-The mobile device management (MDM) authority setting determines how you manage your devices. As an IT admin, you must set an MDM authority before users can enroll devices for management.
+After signing in to the Azure portal and selecting Intune, you may see an orange banner indicating that you haven't yet set the MDM authority. The mobile device management (MDM) authority setting determines how you manage your devices. The MDM authority must be set before users can enroll devices for management.
 
 To set the MDM authority to Intune, follow these steps.
 
 1. Open a new browser window and enter **https://portal.azure.com** in the address bar. 
 2. Choose **All services** > **Microsoft Intune**.
-3. Select the orange banner to open the **Mobile Device Management Authority** setting. 
+3. Select the banner indicating that you haven't enabled device management, or if you don't immediately see the banner, select **Device enrollment**. The **Choose MDM Authority** blade will be displayed if you haven't enabled device management yet.
 
     > [!NOTE]
     > The orange banner is only displayed if you haven't yet set the MDM authority.
 
-4. Under **Mobile Device Management Authority**, set your MDM authority to **Intune MDM Authority**.
+    ![Image of the Choose MDM Authority blade](./media/choose-mdm-authority.png) 
+
+4. Under **Choose MDM Authority**, set your MDM authority to **Intune MDM Authority**.
+
+For more information about the MDM authority, see [Set the mobile device management authority](mdm-authority-set.md).
 
 ## Configure your custom domain name (Optional)
 
@@ -122,7 +129,9 @@ There are two portals that you might use:
 
 ## Next steps
 
-In this quickstart, you've created a free subscription to try Intune in a test environment and optionally configured a custom domain name. To learn more about Microsoft Intune, continue to the next quickstart to add users and assign licenses.
+In this quickstart, you've created a free subscription to try Intune in a test environment. For more information about setting up Intune, see [Set up Intune](setup-steps.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Create a user](get-started-users.md)
+> [Quickstart: Create a user and assign a license to it](quickstart-create-user.md)

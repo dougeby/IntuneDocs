@@ -167,7 +167,7 @@ The **DeviceConfigurationProfileDeviceActivity** entity lists the number of devi
 | Failed    | Number of unique Devices in failed state.                                                     | 2        |
 
 ## deviceConfigurationProfileUserActivities 
-The **DeviceConfigurationProfileUserActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The **DeviceConfigurationProfileUserActivity** entity lists how many users are in which state on a given day over the last 30 days. 
+The **DeviceConfigurationProfileUserActivity** entity lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The **DeviceConfigurationProfileUserActivity** entity lists how many users are in which state on a given day over the last 30 days. 
 
 | Property  | Description  | Example  |
 |------------|----------------------------------------------------------------------------------------------|-----------|
@@ -501,7 +501,7 @@ A **termsAndConditions** entity represents the metadata and contents of a given 
 |    description    |    The description for these terms and conditions.     |         |
 |    title    |    The title for these terms and conditions.     |    Device management corporate policy        |
 |    summaryOfTerms    |    The summary of terms given to the user.     |    I agree to the terms and conditions.    |
-|    termsAndConditionsBodyText    |    The body of text for these terms and conditions.       |    * Device encryption   * Enforcement of 6 digits PIN    |
+|    termsAndConditionsBodyText    |    The body of text for these terms and conditions.       |    *Device encryption* Enforcement of 6 digits PIN    |
 |    isDeleted    |    True or false value for whether this value is   deleted.     |    False    |
 |    startDateInclusiveUTC    |    The start date of these terms and conditions.     |    8/23/2018 4:01:34 AM    |
 |    endDateEclusiveUTC    |    The end date of these terms and conditions.     |    12/31/9999 12:00:00 AM    |

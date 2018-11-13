@@ -6,7 +6,7 @@ author: ErikjeMS
 
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 11/05/2018
 ms.author: erikje
 ---
 
@@ -18,6 +18,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Prerequisites
 
+- Microsoft Intune subscription - [sign up for a free trial account](free-trial-sign-up.md).
 - To complete this quickstart, you must first [create a user](quickstart-create-user.md) and [create a group](quickstart-create-group.md).
 
 ## Sign in to Intune
@@ -26,17 +27,33 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator o
 
 ## Set up Windows 10 automatic enrollment
 
-For this example, you'll use MDM enrollment so that both corporate and bring-your-own-devices can be auto-enrolled.
+For this example, you'll use MDM enrollment so that both corporate and bring-your-own-devices can be automatically enrolled. You will sign up for a free Azure Active Directory Premium subscription.
 
-1. In Azure, choose **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune** > **Some**.
-![Browser](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. Choose **Select groups** > **Contoso Testers** > **Select**.
-3. Use the default values for the following URLs:
-    - MDM terms of use URL
-    - MDM discovery URL
-    - MDM compliance URL
-4. Choose **Save**.
-5. Sign in as a user in the group on a Windows 10 device and follow the prompts.
+1. In Azure, choose **Azure Active Directory** > **Mobility (MDM and MAM)**.
+2. Select **Get a free Premium trial to use this feature**. Selecting this option will allow auto enrollment using the Azure Active Directory free Premium trial. 
+
+    ![Select the Azure Active Directory free Premium trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
+
+    Choose the **Enterprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
+
+    ![Choose the Enterprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+
+3. Select **Microsoft Intune**. 
+
+    ![Choose Microsoft Intune from the list](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
+
+4. Select **Some** from the **MDM user scope** to use MDM auto-enrollment to manage enterprise data on your employees' Windows devices. MDM auto-enrollment will be configured for AAD joined devices and bring your own device scenarios.
+
+    ![Select 'Some' from the Configure list](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
+
+5. Choose **Select groups** > **Contoso Testers** > **Select** as the assigned group.
+
+    ![Select the group to enroll](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
+
+6. Select **Some** from the **MAM Users scope** to manage data on your workforce's devices.
+7. Choose **Select groups** > **Contoso Testers** > **Select** as the assigned group. 
+8. Use the default values for the remaining configuration values.
+9. Choose **Save**.
 
 ## Clean up resources
 
@@ -44,7 +61,9 @@ To reconfigure Intune automatic enrollment, check out [Set up enrollment for Win
 
 ## Next steps
 
-In this quickstart, you learned how to set up auto-enrollment for Windows 10 devices. You can learn about other ways to enroll devices across all platforms.
+In this quickstart, you learned how to set up auto-enrollment for Windows 10 devices. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [What is device enrollment? article](device-enrollment.md)
+> [Quickstart: Enroll your Windows 10 device](quickstart-enroll-windows-device.md)
