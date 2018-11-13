@@ -49,7 +49,7 @@ If testing shows that your app protection policy behavior isn't as expected, che
 2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Client apps** > **Monitor** >  **App protection status**, and then select the **Assigned users** tile. 
 4. On the **App reporting** page, select **Select user** to bring up a list of users who have been [assigned an app protection policy](app-protection-policies.md#deploy-a-policy-to-users).  
-5. Select a user from the list, or search for and select a user, then choose **Select user**. At the top of the **App reporting** pane, you can see whether the user is licensed for app protection. You can also see whether the user has a license for O365 and the app status for all of the user's devices.
+5. Search for and select a user from the list, then choose **Select user**. At the top of the **App reporting** pane, you can see whether the user is licensed for app protection. You can also see whether the user has a license for O365 and the app status for all of the user's devices.
 
 
 
