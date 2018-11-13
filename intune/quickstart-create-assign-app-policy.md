@@ -3,7 +3,7 @@
 
 title: Quickstart - Create and assign an app protection policy
 titlesuffix: Microsoft Intune
-description: In this quickstart you will use Microsoft Intune to create an assign and app protection policy.
+description: In this quickstart you will use Microsoft Intune to create and assign and app protection policy.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -29,17 +29,13 @@ ms.custom: intune-azure
 
 # Quickstart: Create and assign an app protection policy
 
-In this quickstart, you will use Intune to create an assign an app protection policy to a client app on an end user's device. Intune uses app protection policies to confirm that your apps are meeting your organization’s data protection requirements.
+In this quickstart, you will use Intune to create and assign an app protection policy to a client app on an end user's device. Intune uses app protection policies to confirm that your apps are meeting your organization’s data protection requirements.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
 
-- To complete this quickstart, you must:
-    - [Create a user](quickstart-create-user.md)
-    - [Create a group](quickstart-create-group.md)
-    - [Enroll a device](quickstart-setup-auto-enrollment.md)
-    - [Add and assign an app](quickstart-add-assign-app.md)
+- To complete this quickstart, you must [create a user](quickstart-create-user.md), [create a group](quickstart-create-group.md), [enroll a device](quickstart-setup-auto-enrollment.md), and [add and assign an app](quickstart-add-assign-app.md).
 
 ## Sign in to Intune
 
