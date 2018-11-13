@@ -97,14 +97,15 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 1. Add the latest version of the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project. This will provide you with the necessary references to Intune enable your application.
 
-2. Read and follow the [Intune App SDK for Android Developers Guide](https://docs.microsoft.com/intune/app-sdk-android) fully, paying special attention to:
+2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to:
+
     1. The [entire class and method replacements section](https://docs.microsoft.com/intune/app-sdk-android#class-and-method-replacements). 
-    2. The [MAMApplication section](https://docs.microsoft.com/intune/app-sdk-android#mamapplication). Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
-    3. The [ADAL integration section](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) if your app performs authentication against AAD. 
-    4. The [MAM-WE enrollment section](https://docs.microsoft.com/intune/app-sdk-android#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
+    2. The [MAMApplication section](app-sdk-android.md#mamapplication). Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
+    3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) if your app performs authentication against AAD. 
+    4. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
 
 > [!NOTE]
-> When attempting to find equivalent APIs from the [Intune App SDK for Android Developers Guide](https://docs.microsoft.com/intune/app-sdk-android) in the `Microsoft.Intune.MAM.Xamarin.Android` Bindings or when converting code snippets from the guide, be aware that Xamarin's bindings generator modifies the Android APIs in the following notable ways:
+> When attempting to find equivalent APIs from the [Intune App SDK for Android Developers Guide](app-sdk-android.md) in the `Microsoft.Intune.MAM.Xamarin.Android` Bindings or when converting code snippets from the guide, be aware that Xamarin's bindings generator modifies the Android APIs in the following notable ways:
 > * All identifiers are converted to Pascal case (com.foo.bar -> Com.Foo.Bar)
 > * All get/set operations are converted to property operations (e.g. Foo.getBar() -> Foo.Bar, Foo.setBar("zap") -> Foo.Bar = "zap")
 > * All interfaces have the character 'I' prepended on the name (FooInterface -> IFooInterface)
