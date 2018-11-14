@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -129,6 +129,10 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 |  | Remove | Ctrl+D or Delete |
 |  | Check access | Ctrl+M or F9 |
 | App details | Install | Ctrl+I |
+
+End users will also be able to see the available shortcuts in the Windows Company Portal app.
+
+    ![Screenshot of the available shortcuts in the Windows Company Portal app](media/company-portal-app/company-portal-app-01.png)
 
 ## Next steps
 
