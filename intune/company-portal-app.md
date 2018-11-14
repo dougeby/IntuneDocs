@@ -132,7 +132,7 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 
 End users will also be able to see the available shortcuts in the Windows Company Portal app.
 
-    ![Screenshot of the available shortcuts in the Windows Company Portal app](media/company-portal-app/company-portal-app-01.png)
+![Screenshot of the available shortcuts in the Windows Company Portal app](media/company-portal-app/company-portal-app-01.png)
 
 ## Next steps
 
