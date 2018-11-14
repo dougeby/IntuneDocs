@@ -52,7 +52,7 @@ Fields marked with an asterisk (*) are mandatory.
 | **Privacy statement URL** |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format `<https://www.contoso.com>`. |
 
 ## Support information		
-Enter your company's support infomation to provide your employee with a contact for Intune-related questions.  		
+Enter your company's support information to provide your employee with a contact for Intune-related questions.  		
 
 |Field name|Max length|More information|
 |---|---|---|
@@ -109,7 +109,7 @@ After you save your changes, you can choose **Preview your settings** in the Int
 
 ## Windows Company Portal keyboard shortcuts
 
-End users can trigger naivation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+End users can trigger navigation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
 
 The following keyboard shortcuts are available in the Windows Company Portal app.
 
