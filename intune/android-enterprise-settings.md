@@ -1,6 +1,6 @@
 ---
 # required metadata
-
+redirect_url: /device-restrictions-android-for-work.md#kiosk-settings
 title: Android kiosk settings in Microsoft Intune - Azure | Microsoft Docs
 description: Configure Android enterprsie kiosk devices. 
 keywords:
@@ -15,7 +15,7 @@ ms.technology:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX
 #audience:
 #ms.devlang:
 ms.suite: ems
@@ -56,7 +56,7 @@ Android kiosk profiles support the following configuration settings. When creati
 
 ## Kiosk settings
 
-- **Kiosk mode**: Defines whether the device can run only a single app or multiple apps. For more information, see [Kiosk settings for Android devices](android-kiosk-settings.md).
+- **Kiosk mode**: Defines whether the device can run only a single app or multiple apps. 
     - **Single app kiosk**: Users can only access a single app.
     - **Multi-app kiosk**: Users can access a limited set of apps.
 
@@ -80,6 +80,3 @@ Android kiosk profiles support the following configuration settings. When creati
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
-
-
-
