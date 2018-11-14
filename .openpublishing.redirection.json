@@ -3,12 +3,12 @@
 
 		{
 			"source_path": "intune/android-enterprise-settings.md",
-			"redirect_url":"/intune/device-restrictions-android-for-work.md#kiosk-settings",
+			"redirect_url":"/intune/device-restrictions-android-for-work#kiosk-settings",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/android-kiosk-settings.md",
-			"redirect_url":"/intune/device-restrictions-android.md#kiosk",
+			"redirect_url":"/intune/device-restrictions-android#kiosk",
 			"redirect_document_id": false
 		},		
 		{
