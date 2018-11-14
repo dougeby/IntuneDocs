@@ -61,5 +61,5 @@ Follow these steps to approve the Intune Company Portal:
 5.  Select **Keep approved when app requests new permissions**, then click **Save.**
 
 ## Next steps for Android work profiles
-- [Deploy Android work profile apps](store-apps-android.md)
+- [Deploy Android work profile apps](apps-add-android-for-work.md)
 - [Add Android work profile configuration policies](device-profiles.md)
