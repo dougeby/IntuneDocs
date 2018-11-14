@@ -57,7 +57,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 ## Create a device compliance policy
 
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]4. For **Platform**, select **iOS**. 
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+4. For **Platform**, select **iOS**. 
 5. Choose **Settings Configure**, and enter the **Email**, **Device Health**, **Device Properties**, and **System Security** settings described in this topic. When you're done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
