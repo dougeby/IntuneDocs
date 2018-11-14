@@ -1,7 +1,6 @@
 ---
 # required metadata
 
-redirect_url: device-restrictions-android.md#kiosk
 title: Kiosk settings for Android in Microsoft Intune - Azure | Microsoft Docs
 description: Configure your Android kios devices as single-app and multi-app kiosks. 
 keywords:
