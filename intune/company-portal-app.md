@@ -106,6 +106,15 @@ The right brand image can enhance the user’s trust in Company Portal by presen
 
 After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
 
+### Brand image examples
+
+The following image shows an example iPad branding image:
+
+![Screenshot of example iPad branding image](media/company-portal-app/company-portal-app-02.png)
+
+The following image shows an example iPhone branding image:
+
+![Screenshot of example iPhone branding image](media/company-portal-app/company-portal-app-03.png)
 
 ## Windows Company Portal keyboard shortcuts
 
