@@ -33,7 +33,7 @@ ms.custom: intune-azure
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.		
 
 > [!Tip]		
-> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.		
+> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps. Note that users must have an Intune license assigned to access the Company Portal website.
 
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Client apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
 
