@@ -1,6 +1,6 @@
 ---
 # required metadata
-redirect_url: /device-restrictions-android-for-work.md#kiosk-settings
+redirect_url: device-restrictions-android-for-work.md#kiosk-settings
 title: Android kiosk settings in Microsoft Intune - Azure | Microsoft Docs
 description: Configure Android enterprsie kiosk devices. 
 keywords:
