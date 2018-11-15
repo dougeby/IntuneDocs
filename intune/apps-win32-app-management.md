@@ -6,11 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-<<<<<<< HEAD
 ms.date: 10/23/2018
-=======
-ms.date: 10/19/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +56,13 @@ You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://githu
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    This command will show usage information for the tool.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    This command will generate the `.intunewin` file from the specified source folder and setup file. For the MSI setup file, this tool will retrieve required information for Intune. If `-q` is specified, the command will run in quiet mode, and if the output file already exists, it will be overwritten. Also, if the output folder does not exist, it will be created automatically.    |
+
+When generating an *.intunewin* file, put any files you need to reference into a sub-folder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
+
+    Setup source folder:** *c:\testapp\v1.0*
+    **License file:** *c:\testapp\v1.0\licenses\license.txt*
+
+Refer to the *license.txt* file by using the relative path *licenses\license.txt*.
 
 ## Create, assign, and monitor a Win32 app
 
