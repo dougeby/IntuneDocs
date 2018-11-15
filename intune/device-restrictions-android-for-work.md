@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2018
+ms.date: 11/15/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -103,7 +103,7 @@ You can configure a device to run one app, or many apps. When a device is in kio
   >   - [Added as a client app](apps-add-android-for-work.md) in Intune
   >   - [Assigned to the device group](apps-deploy.md) created for your kiosk devices
   > 
-  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app.
+  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configiration profile are shown as icons on the the **Managed Home Screen** app. 
 
   - Choose **Add**, and select your apps from the list.
 
@@ -111,9 +111,9 @@ You can configure a device to run one app, or many apps. When a device is in kio
 
     You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your kiosk devices](apps-deploy.md).
 
-  - **Virtual home button**: Choose **Enable** to show a home key on the kiosk device. When selected, it returns the user to the device's home screen so users can easily switch between apps. **Disable** doesn't show a home key, and users may have to use the back button to switch between apps.
-  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. The administrator continues to select the back button until a **leave kiosk mode?** message is shown, and then enters the PIN. When done making changes, the administrator selects the Managed Home screen app, and relocks the device into multi-app kiosk mode. **Disable** doesn't give the ability to pause kiosk mode.
-    - **Leave kiosk mode code**: Enter a 4-6 digit PIN. The administrator enters the PIN to temporarily pause kiosk mode.
+  - **Virtual home button**: Choose **Enable** to show a home button on the kiosk device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. The administrator continues to select the back button until a message similar to **leave kiosk mode** is shown. Then, the administrator enters the **Leave kiosk mode code** PIN. When done making changes, the administrator selects the Managed Home screen app, and relocks the device into multi-app kiosk mode. **Disable** doesn't give the ability to pause kiosk mode.
+    - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
   - **Set custom URL background**: Enter a URL to customize the background screen on the kiosk device.
 
 ### Device password settings
