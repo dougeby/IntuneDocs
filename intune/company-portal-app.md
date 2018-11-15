@@ -104,7 +104,7 @@ The right brand image can enhance the user’s trust in Company Portal by presen
 
 - Remove unnecessary metadata. Image file can come with metadata such as camera profile, geo location, title, caption, and so on. Use an image optimization tool to strip out this information to maintain quality while meeting file size limit. 
 
-After a brand image is added or changed in Intune, the end user may not see the change on iOS devices until after the Company Portal has recognized the chnage on start up and then has been restarted. 
+After a brand image is added or changed in Intune, the end user may not see the change on iOS devices until the Company Portal has recognized the change on start up, and then has been restarted to display the brand image. 
 
 ### Brand image examples
 
