@@ -88,7 +88,7 @@ Choose a logo that will look best on white or light backgrounds.
 
 ### Brand image for Company Portal
 
-Display a brand image that reflects your company brand. Support for a brand image is being added to the Company Portal apps, but may not be visible on all platforms.
+Display a brand image that reflects your company brand. After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
 
 |Field name|More information|
 |---|---|
@@ -104,8 +104,17 @@ The right brand image can enhance the user’s trust in Company Portal by presen
 
 - Remove unnecessary metadata. Image file can come with metadata such as camera profile, geo location, title, caption, and so on. Use an image optimization tool to strip out this information to maintain quality while meeting file size limit. 
 
-After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
+After a brand image is added or changed in Intune, the end user may not see the change on iOS devices until the Company Portal has recognized the change on start up, and then has been restarted to display the brand image. 
 
+### Brand image examples
+
+The following image shows an example iPad branding image:
+
+![Screenshot of example iPhone branding image](media/company-portal-app/company-portal-app-03.png)
+
+The following image shows an example iPhone branding image:
+
+![Screenshot of example iPad branding image](media/company-portal-app/company-portal-app-02.png)
 
 ## Windows Company Portal keyboard shortcuts
 
