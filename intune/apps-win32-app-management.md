@@ -59,7 +59,7 @@ You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://githu
 
 When generating an *.intunewin* file, put any files you need to reference into a sub-folder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
 
-**Setup source folder:** *c:\testapp\v1.0*
+**Setup source folder:** *c:\testapp\v1.0*<br>
 **License file:** *c:\testapp\v1.0\licenses\license.txt*
 
 Refer to the *license.txt* file by using the relative path *licenses\license.txt*.
