@@ -239,7 +239,7 @@ You can add apps that should have a different privacy behavior from what you def
 - **Developer tools**: **Block** prevents end users from opening the Microsoft Edge developer tools. **Not configured** allows users to open the developer tools.
 - **Extensions**: **Not configured** allows end users to install Microsoft Edge extensions on the device. **Block** prevents the installation.
 - **Sideloading developer extensions**: **Block** prevents Microsoft Edge from sideloading, which installs and runs unverified extensions using the **Load extensions** feature. **Not configured** uses the OS default, which may allow sideloading.
-- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN)](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) lists provides some guidance.
+- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) lists provides some guidance.
 
   You can also **Import** a CSV file that includes the package family names.
 
@@ -506,4 +506,4 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 
 ## More Information
 
-For additional technical details on each setting and what editions of Windows are supported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider)
+For additional technical details on each setting and what editions of Windows are supported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
