@@ -413,6 +413,8 @@
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
+    - name: Delivery optimization
+      href: delivery-optimization-windows.md
     - name: Configure endpoint protection
       href: endpoint-protection-configure.md
       items:
