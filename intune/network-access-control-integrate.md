@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/16/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -68,10 +68,10 @@ The following list is an overview on how NAC integration works when integrated w
 NAC for Cisco Legacy AnyConnect, F5 Access Legacy, and Citrix VPN is supported without needing to enable NAC in the VPN profile.
 
 NAC for Citrix SSO is also supported. To enable NAC for Citrix SSO for iOS:
-- Use NetScaler Gateway 12.0.59 or higher.  
+- Use Citrix Gateway 12.0.59 or higher.  
 - Users must have Citrix SSO 1.1.6 or later installed.
 - [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
-- Set the **Enable Network Access Control (NAC)** setting in the VPN profile to **Yes**.
+- On the Base VPN settings configuration, for **Enable Network Access Control (NAC)**, select the check-box for **I agree**.
 
 When you use Citrix SSO for iOS, the VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
 
