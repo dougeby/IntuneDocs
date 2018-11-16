@@ -91,7 +91,7 @@ The SDK relies on [Active Directory Authentication Library (ADAL)](https://azure
 
 ## Enabling Intune app protection policies in your Android mobile app
 
-For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [class and method replacements table](app-sdk-android.md#class-and-method-replacements.md) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`. The ADAL configuration values are communicated to the SDK via AndroidManifest metadata. Read our documentation on [configuring ADAL for your app](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [class and method replacements table](app-sdk-android.md#class-and-method-replacements) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`. The ADAL configuration values are communicated to the SDK via AndroidManifest metadata. Read our documentation on [configuring ADAL for your app](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
 
 ### Xamarin.Android integration
 
@@ -99,7 +99,7 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to:
 
-    1. The [entire class and method replacements section](app-sdk-android#class-and-method-replacements.md). 
+    1. The [entire class and method replacements section](app-sdk-android.md#class-and-method-replacements). 
     2. The [MAMApplication section](app-sdk-android.md#mamapplication). Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
     3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) if your app performs authentication against AAD. 
     4. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
