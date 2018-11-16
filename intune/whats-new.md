@@ -49,7 +49,7 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 ### Network Access Control (NAC) support for Citrix SSO for iOS <!-- 3259404 -->
 
-Citrix released an update to NetScaler Gateway to allow Network Access Control (NAC) for Citrix SSO for iOS in Intune. You can opt in to include a device ID within a VPN profile in Intune, and then push this profile to your iOS devices. You will need to install the latest update to NetScaler Gateway to use this functionality.
+Citrix released an update to Citrix Gateway to allow Network Access Control (NAC) for Citrix SSO for iOS in Intune. You can opt in to include a device ID within a VPN profile in Intune, and then push this profile to your iOS devices. You will need to install the latest update to Citrix Gateway to use this functionality.
 
 [Configure VPN settings on iOS devices](vpn-settings-ios.md#base-vpn-settings) provides more information on using NAC, including some additional requirements. 
 
