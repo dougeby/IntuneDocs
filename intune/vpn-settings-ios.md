@@ -74,11 +74,11 @@ The settings shown in the following list are determined by the VPN connection ty
 
 - **Enable network access control (NAC)** (Citrix SSO only): When you choose **I agree**, the device ID is included in the VPN profile. This ID can be used for authentication to the VPN to allow or prevent network access.
 
-  **When using Citrix SSO with Citrix NetScaler**, be sure to:
+  **When using Citrix SSO with Gateway**, be sure to:
 
-  - Confirm you're using NetScaler Gateway 12.0.59 or higher.
+  - Confirm you're using Citrix Gateway 12.0.59 or higher.
   - Confirm your users have Citrix SSO 1.1.6 or later installed on their devices.
-  - Integrate NetScaler with Intune for NAC, as described in the [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix deployment guide.
+  - Integrate Citrix Gateway with Intune for NAC, as described in the [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) Citrix deployment guide.
   - Enable NAC in the VPN profile.
 
   Important details:  
