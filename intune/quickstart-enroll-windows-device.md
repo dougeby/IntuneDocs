@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -92,7 +92,9 @@ To unenroll your Windows device, see [Remove your Windows device from management
 
 ## Next steps
 
-In this quickstart, you learned how to enroll a Windows 10 device into Intune. You can learn about other ways to enroll devices across all platforms. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
+In this quickstart, you learned how to enroll a Windows 10 device into Intune. You can learn about other ways to enroll devices across all platforms. For more information about using devices with Intune, see [Use managed devices to get work done](/intune-user-help/use-managed-devices-to-get-work-done.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Set a required password length for Android devices](quickstart-set-password-length-android.md)

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/5/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure; get-started
 # What's new in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Learn what’s new each week in Microsoft Intune. You can also find out about [upcoming changes](#whats-coming), [important notices](#notices) about the service, and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
+Learn what’s new each week in Microsoft Intune. You can also find upcoming changes, [important notices](#notices), and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
 
 > [!Note]
 > For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -45,13 +45,15 @@ Learn what’s new each week in Microsoft Intune. You can also find out about [u
 
 -->     
 
-## Week of November 5, 2018
+## Week of November 12, 2018
 
 ### Network Access Control (NAC) support for Citrix SSO for iOS <!-- 3259404 -->
 
 Citrix released an update to Citrix Gateway to allow Network Access Control (NAC) for Citrix SSO for iOS in Intune. You can opt in to include a device ID within a VPN profile in Intune, and then push this profile to your iOS devices. You will need to install the latest update to Citrix Gateway to use this functionality.
 
 [Configure VPN settings on iOS devices](vpn-settings-ios.md#base-vpn-settings) provides more information on using NAC, including some additional requirements. 
+
+## Week of November 5, 2018
 
 ### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
 
@@ -64,7 +66,6 @@ You can now set up hybrid Azure Active Directory joined devices by using Autopil
 This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
 ## Week of October 29, 2018
-
 
 ### App management
 
@@ -132,9 +133,6 @@ This update includes the macOS Gatekeeper to evaluate devices for compliance. To
 #### Enrollment abandonment report <!-- 1382924 -->
 A new report that provides details on abandoned enrollments is available under **Device enrollment** > **Monitor**. For more information, see [Company portal abandonment report](enrollment-report-company-portal-abandon.md).
 
-#### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
-You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
-
 #### New Azure Active Directory terms of use feature <!-- 2870393 -->
 Azure Active Directory has a terms of use feature that you can use instead of existing Intune terms and conditions. The Azure AD terms of use feature provides more flexibility on which terms to show and when to show them, better localization support, more control in how terms are rendered and improved reporting. The Azure AD terms of use feature does require Azure Active Directory Premium P1 which is also part of the Enterprise Mobility + Security E3 suite. To learn more, see the [Manage your company's terms and conditions for user access article](terms-and-conditions-create.md).
 
@@ -152,7 +150,10 @@ Intune app protection policies allow you to configure various data protection se
 - **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
 - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.  
   
-The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow. 
+The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow.
+
+### New Intune device subscription SKU !--3312071-->
+To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA), and Open and Cloud Solution Provider (CSP).
 
 ### Intune apps
 
@@ -168,7 +169,7 @@ When Intune installs Office on your end user's machines, end users automatically
 ### Monitor and troubleshoot
 
 #### New Intune Support Experience in the Microsoft 365 Device Management portal <!-- 3076965 -->
-We are rolling out a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user enquiries.  
+We are rolling out a new Help and Support experience for Intune in the [Microsoft 365 Device Management portal]( http://devicemanagement.microsoft.com). The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user inquiries.  
 
 In addition to issue-specific guidance, you can also use the new case creation workflow to open a support case by email or phone.  
 
@@ -645,7 +646,7 @@ You can use the on-premises **sAMAccountName** as the account username for email
 
 To use this feature, you must sync the `sAMAccountName` attribute from your on-premises Active Directory environment to Azure AD.
 
-Applies to [Andoid](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
+Applies to [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
 
 #### See device configuration profiles in conflict <!-- 1556983 -->
 In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
@@ -702,7 +703,7 @@ You can control mobile device access to corporate resources using conditional ac
 
 ## Week of June 18, 2018
 
-### Edge mobile support for Intune app protection policies <!-- 1817882 -->
+### Microsoft Edge mobile support for Intune app protection policies <!-- 1817882 -->
 
 The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
 
@@ -811,7 +812,7 @@ To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **De
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Edge when it is managed.
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
 
 ## Week of May 14, 2018
 
