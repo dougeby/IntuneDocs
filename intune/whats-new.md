@@ -44,6 +44,15 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+## Week of November 12, 2018
+
+### Network Access Control (NAC) support for Citrix SSO for iOS <!-- 3259404 -->
+
+Citrix released an update to Citrix Gateway to allow Network Access Control (NAC) for Citrix SSO for iOS in Intune. You can opt in to include a device ID within a VPN profile in Intune, and then push this profile to your iOS devices. You will need to install the latest update to Citrix Gateway to use this functionality.
+
+[Configure VPN settings on iOS devices](vpn-settings-ios.md#base-vpn-settings) provides more information on using NAC, including some additional requirements. 
+
 ## Week of November 5, 2018
 
 ### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
@@ -56,11 +65,7 @@ Intune's iOS email profiles support iOS 12 Open Authorization (OAuth). To see th
 You can now set up hybrid Azure Active Directory joined devices by using Autopilot. Devices must be joined to your organization's network to use the hybrid Autopilot feature. For more information, see [Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot](windows-autopilot-hybrid.md).
 This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
-### App Protection Policy (APP) settings for web data <!-- 2662995  -->
-APP policy settings for web content on both Android and iOS devices have been updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links.  
-
 ## Week of October 29, 2018
-
 
 ### App management
 
