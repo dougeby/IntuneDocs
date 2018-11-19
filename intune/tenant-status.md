@@ -40,8 +40,7 @@ This section also provides basic information about your available licenses and h
 Connector status is a one-stop location to review the status of all available connectors for Intune.  
 
 Connectors are:
-- **Connections you configure to external services**. For example, the *
-Apple Volume Purchase Program* service or the *Windows Autopilot* service.  Status for this type of connector is based on the last successful synchronization time.
+- **Connections you configure to external services**. For example, the *Apple Volume Purchase Program* service or the *Windows Autopilot* service.  Status for this type of connector is based on the last successful synchronization time.
 - **Certificates or credentials that are required to connect to an external unmanaged service**, like *Apple Push Notification Services* (APNS) certificates. Status for this type of connector is based on the expiry timestamp of the certificate or credential.  
 
 By default, only five connectors display. You can select **See all connectors** to expand this list to view all available connectors, including connectors you haven't configured for use.  
