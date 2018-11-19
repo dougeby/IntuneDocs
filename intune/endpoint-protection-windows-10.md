@@ -102,7 +102,7 @@ These settings are applicable to specific network types, including **Domain (wor
 
 ## Windows Defender SmartScreen settings
 
-Supported on the following Windows 10 editions with Edge installed:
+Supported on the following Windows 10 editions with Microsoft Edge installed:
 - Home
 - Professional
 - Business

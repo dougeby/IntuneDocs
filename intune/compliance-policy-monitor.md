@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -92,9 +92,7 @@ It shows you more details on the devices in that state, including operating syst
 
 ![Dashboard image shows more details on the device in that specific state](./media/compliance-policy-monitor/drill-down-details.png)
 
-If you want to see all the devices owned by a specific user, you can filter the chart report by typing the user’s e-mail:
-
-![Filter on the email address to show all the devices for that specific user](./media/compliance-policy-monitor/idc-3.png)
+If you want to see all the devices owned by a specific user, you can also filter the chart report by typing the user’s e-mail.
 
 #### Filter and columns
 

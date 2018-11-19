@@ -47,11 +47,6 @@ This page is updated periodically. Check back for additional updates.
 ### Uninstalling apps on corporate-owned supervised iOS devices <!-- 1281677 -->
 You will be able to remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
-### Support for iOS 12 OAuth in iOS email profiles <!--2155106 -->
-Intune's iOS email profiles will support iOS 12 OAuth. To see this feature, choose **Intune** > **Device Configuration** > **Profiles** > **Create profile**. In the create profile blade, you can enable or disable **OAuth**. If this setting is turned on, two things will happen:
-1. Devices that are already targeted will be issued a new profile.
-2. End users will be prompted for their credentials again.
-
 ### Track installation of Office ProPlus <!--2620217-->
 You'll be able to track the installation progress of [Office ProPlus](apps-add-office365.md) using the [Enrollment Status Page](windows-enrollment-status.md).
 
@@ -72,7 +67,7 @@ A new setting will allow users to tap a soft-key button on their device to switc
 You will have better control over your app protection policy assignments. By saving and applying your app protection policy assignments, only the intended users are directly impacted by an app protection assignment policy.
 
 ### New Microsoft Edge browser settings for Windows 10 and later <!-- 3174639 -->
-A new setting will be added to help control and manage the Microsoft Edge browser on your devices. For a list of the current settings, see [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#edge-browser).
+A new setting will be added to help control and manage the Microsoft Edge browser on your devices. For a list of the current settings, see [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ### Select apps tracked on the Enrollment Status Page<!-- 2531007 -->
 You'll be able to choose which apps are tracked on the Enrollment Status Page.
