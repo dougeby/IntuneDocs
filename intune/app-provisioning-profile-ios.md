@@ -53,7 +53,7 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 3. In the **Create profile** pane, configure the following values:
 	- **Name** - Provide a name for this mobile provisioning profile.
 	- **Description** - Optionally, provide a description for the policy.
-	- **Upload profile file** - Choose **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension **.mobileprovision**) that you downloaded from the Apple Developer website.
+	- **Upload profile file** - Choose **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the Apple Developer website.
 4. When you are done, choose **Create**.
 
 ## Next steps
