@@ -51,7 +51,7 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 
 - **Block password proximity requests**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Not configured** allows these password requests.
 
-- **Block password sharing**: **Block** prevents sharing passwords between devices. **Not configured** allows passwords to be shared.
+- **Block password sharing**: **Block** prevents sharing passwords between devices using AirDrop. **Not configured** allows passwords to be shared.
 
 
 ## Restricted apps
