@@ -118,9 +118,10 @@ You can configure a device to run one app, or many apps. When a device is in kio
     2. Select the button, and enter the **Leave kiosk mode code** PIN.
     3. When done making changes, select the Managed Home screen app. This step relocks the device into multi-app kiosk mode. 
     
-    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit Kiosk" button, then a message states that a passcode is required to use this feature.
+    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit Kiosk" button, then a message states that a passcode is required.
     
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
+ 
   - **Set custom URL background**: Enter a URL to customize the background screen on the kiosk device.
 
 ### Device password settings
