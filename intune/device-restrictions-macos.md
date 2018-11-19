@@ -42,7 +42,7 @@ This article shows you the Microsoft Intune device restrictions settings that yo
   - **Password expiration (days)** - Specify how many days elapse before the user must change the password (**1** to **255** days).
   - **Prevent reuse of previous passwords** - Specify the number of previously used passwords that cannot be reused (**1** to **24**).
 
-- **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
+- **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on macOS. Choosing **Block** also does the following:
 
   - Users aren't prompted to use a saved password in Safari or in any apps.
   - Automatic Strong Passwords are disabled, and strong passwords aren't suggested to users.
