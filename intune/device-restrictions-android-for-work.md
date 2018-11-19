@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -112,7 +112,14 @@ You can configure a device to run one app, or many apps. When a device is in kio
     You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your kiosk devices](apps-deploy.md).
 
   - **Virtual home button**: Choose **Enable** to show a home button on the kiosk device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
-  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. The administrator continues to select the back button until a button that says, "Exit Kiosk" appears. Then, the administrator clicks on this button and enters the **Leave kiosk mode code** PIN. When done making changes, the administrator selects the Managed Home screen app, and relocks the device into multi-app kiosk mode. **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button and pushes the "Exit Kiosk" button that appears, then a pop-up will appear detailing that a passcode is required to use this feature. 
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator does the following: 
+  
+    1. Continue to select the back button until the "Exit Kiosk" button is shown. 
+    2. Select the button, and enter the **Leave kiosk mode code** PIN.
+    3. When done making changes, select the Managed Home screen app. This step relocks the device into multi-app kiosk mode. 
+    
+    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit Kiosk" button, then a message states that a passcode is required to use this feature.
+    
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
   - **Set custom URL background**: Enter a URL to customize the background screen on the kiosk device.
 
