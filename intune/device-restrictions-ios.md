@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -129,7 +129,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
   **Not configured** allows these features.
 
 - **Block password proximity requests (supervised only)**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Not configured** allows these password requests.
-- **Block password sharing (supervised only)**: **Block** prevents sharing passwords between devices. **Not configured** allows passwords to be shared.
+- **Block password sharing (supervised only)**: **Block** prevents sharing passwords between devices using AirDrop. **Not configured** allows passwords to be shared.
 
 <sup>1</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
 
