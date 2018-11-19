@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
