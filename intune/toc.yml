@@ -763,9 +763,9 @@
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Help and support
   items:
-- name: Resources
   - name: Tenant status
     href: tenant-status.md  
+- name: Resources
   items:
   - name: Microsoft Intune documentation guide
     href: intune-documentation.md  
