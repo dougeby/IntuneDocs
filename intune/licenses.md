@@ -23,6 +23,7 @@ ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 #ms.devlang:
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 

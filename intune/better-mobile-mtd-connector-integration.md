@@ -22,6 +22,7 @@ ms.assetid:
 #ms.devlang:
 #ms.reviewer: [ALIAS]
 #ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
 
