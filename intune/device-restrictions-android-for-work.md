@@ -116,7 +116,7 @@ You can configure a device to run one app, or many apps. When a device is in kio
   
     1. Continue to select the back button until the "Exit Kiosk" button is shown. 
     2. Select the button, and enter the **Leave kiosk mode code** PIN.
-    3. When done making changes, select the Managed Home screen app. This step relocks the device into multi-app kiosk mode. 
+    3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
     
     **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit Kiosk" button, then a message states that a passcode is required.
     
@@ -147,7 +147,7 @@ You can configure a device to run one app, or many apps. When a device is in kio
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
 
-## Work profile only settings
+## Work profile only 
 
 ### Work profile settings
 
