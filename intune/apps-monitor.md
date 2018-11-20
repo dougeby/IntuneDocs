@@ -72,7 +72,7 @@ The graphs show the number of apps for the following status:
 >    - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
 >    - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
 > 
-> Also, be aware that Android apps deployed as **Available with or without enrollment** only report app installation status for enrolled devices. This information will not be available for devices not enrolled in Intune.
+> Also, be aware that Android apps deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
 
 ### Device install status
 
