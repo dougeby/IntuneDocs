@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Quickstart - Set up automatic enrollment in Intune
 description: Quickstart - Set up automatic enrollment for Windows 10 devices in Intune.
 services: microsoft-intune
@@ -8,6 +10,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune-classic
+
 ---
 
 # Quickstart: Set up automatic enrollment for Windows 10 devices

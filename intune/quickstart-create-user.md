@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Quickstart - Create a user in Intune
 description: Quickstart - Create a user in Intune.
 services: microsoft-intune
@@ -8,6 +10,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # Quickstart: Create a user and assign a license to it

@@ -21,6 +21,7 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 #ms.devlang:
 ms.reviewer: travisj
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
 

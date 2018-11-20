@@ -20,6 +20,7 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ---

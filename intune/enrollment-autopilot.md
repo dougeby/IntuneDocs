@@ -15,6 +15,17 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune-classic
+
 ---
 
 # Enroll Windows devices by using the Windows Autopilot  

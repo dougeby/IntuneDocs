@@ -22,6 +22,7 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 #ms.devlang:
 ms.reviewer: cacamp
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 

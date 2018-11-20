@@ -21,6 +21,7 @@ ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 #ms.devlang:
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

@@ -21,6 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
