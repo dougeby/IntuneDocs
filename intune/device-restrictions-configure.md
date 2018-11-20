@@ -65,7 +65,11 @@ Learn device restriction profile basics, and then read further articles for each
 
 7. When you're done, go back to the **Create profile** page, and select **Create**.
 
-The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
+The profile is created and appears on the profiles list page. 
+
+## Next step
+
+After the profile is created, it's ready to be assigned. See [assign device profiles](device-profile-assign.md) for the steps. 
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
