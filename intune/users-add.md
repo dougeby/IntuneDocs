@@ -22,6 +22,7 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 #ms.devlang:
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
 
