@@ -22,6 +22,7 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
