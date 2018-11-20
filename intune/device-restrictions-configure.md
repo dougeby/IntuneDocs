@@ -16,14 +16,7 @@ ms.technology:
 # optional metadata
 
 #ROBOTS:
-#audience:
-#ms.devlang:
-ms.suite: ems
-#ms.tgt_pltfrm:
-ms.custom: intune-azure
-
----
-
+#audien
 # Configure device restriction settings in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -46,6 +39,7 @@ Learn device restriction profile basics, and then read further articles for each
 4. Enter a **Name** and **Description** for the device restriction profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:
 	- **Android**
+	- **Android enterprise**
 	- **iOS**
 	- **macOS**
 	- **Windows Phone 8.1**
@@ -54,6 +48,7 @@ Learn device restriction profile basics, and then read further articles for each
 6. From the **Profile type** drop-down list, choose **Device restrictions**. If you want to create a device restrictions profile for Windows 10 Team devices like a Surface Hub, choose **Device restrictions (Windows 10 Team)**.
 7. Depending on the platform you chose, the settings you can configure are different. Go to one of the following topics for detailed settings for each platform:
 	- [Android settings](device-restrictions-android.md)
+	- [Android enterprise settings](device-restrictions-android-for-work.md)
 	- [iOS settings](device-restrictions-ios.md)
 	- [macOS settings](device-restrictions-macos.md)
 	- [Windows Phone 8.1 settings](device-restrictions-windows-phone-8-1.md)
@@ -61,7 +56,6 @@ Learn device restriction profile basics, and then read further articles for each
 	- [Windows 10 settings](device-restrictions-windows-10.md)
 	- [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
 	- [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
-	- [Android work profile settings](device-restrictions-android-for-work.md)
 8. When you're done, go back to the **Create profile** page, and click **Create**.
 
 The profile is created and appears on the profiles list page.
