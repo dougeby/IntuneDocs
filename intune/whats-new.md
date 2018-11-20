@@ -518,17 +518,6 @@ An updated version of the Intune App SDK for Android is available to support the
 
 ### Device configuration
 
-#### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 -->
-This update includes S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
-
-- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
-- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
-- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
-- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
-- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
-
-Supported on: Windows, Windows Phone 10, macOS, iOS, Android
-
 #### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
 When you create a new macOS compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: macOS** > **System security**), there are some new **Firewall** settings available: 
 
