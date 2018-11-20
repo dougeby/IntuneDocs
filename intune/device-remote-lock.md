@@ -21,6 +21,7 @@ ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 #ms.devlang:
 #ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

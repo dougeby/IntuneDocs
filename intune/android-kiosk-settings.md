@@ -19,6 +19,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -52,7 +53,7 @@ If a kiosk device's restriction profile is set to **Kiosk mode** = **multi-app k
 
 To set an Android kiosk device for multiple apps, follow these main steps:
 
-1. [Import and deploy the Managed Home Screen app from managed Google Play](#import-and -deploy-the-managed-home-screen-app)
+1. [Import and deploy the Managed Home Screen app from managed Google Play](#import-and-deploy-the-managed-home-screen-app)
 2. [Add and assign apps that can be used in kiosk mode](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. (Optional) [Add web links that can be used in kiosk mode](#add-web-links-that-can-be-used-in-kiosk-mode)
 

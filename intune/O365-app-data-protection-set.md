@@ -22,6 +22,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.devlang:
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

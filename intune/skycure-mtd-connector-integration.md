@@ -22,6 +22,7 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 #ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

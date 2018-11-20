@@ -22,6 +22,7 @@ ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 #ms.devlang:
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

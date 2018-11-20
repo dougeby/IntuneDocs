@@ -15,6 +15,17 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid:
 
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune-classic
+
 ---
 
 # Protect devices with Microsoft Intune

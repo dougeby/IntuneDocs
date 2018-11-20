@@ -21,6 +21,7 @@ ROBOTS:
 #ms.devlang:
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
