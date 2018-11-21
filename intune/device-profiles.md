@@ -66,6 +66,7 @@ This feature supports:
 This feature supports:
 
 - Android
+- Android enterprise
 - iOS
 - macOS
 - Windows 10
