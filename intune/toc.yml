@@ -624,6 +624,11 @@
           href: mtd-device-compliance-policy-create.md
         - name: Enable MTD in Intune
           href: mtd-connector-enable.md
+    - name: Security baselines
+      href: security-baselines.md
+      items:
+      - name: Monitor and reporting
+        href: security-baselines-monitor.md
     - name: Windows Defender ATP
       href: advanced-threat-protection.md        
     - name: Network access control
