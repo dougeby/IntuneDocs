@@ -62,6 +62,6 @@ If you selected **Custom VPN**, configure these further settings:
 
 ## Proxy settings
 
-- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `**http://proxy.contoso.com**`) which contains the configuration file.
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example **`http://proxy.contoso.com`**) which contains the configuration file.
 - **Address** - Enter the proxy server address (as an IP address).
 - **Port number** - Enter the port number associated with the proxy server.
