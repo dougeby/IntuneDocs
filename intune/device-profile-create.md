@@ -43,7 +43,7 @@ ms.custom: intune-azure
    - **Platform**: Select the platform type:  
 
        - **Android**
-       - **Android work profiles**
+       - **Android enterprise**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**
