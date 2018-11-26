@@ -313,7 +313,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.MapsMaps          |              | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
 | com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Music        | Apple     |
 | com.apple.news              | News         | Apple     |
