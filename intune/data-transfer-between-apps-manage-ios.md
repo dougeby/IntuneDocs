@@ -8,11 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-<<<<<<< HEAD
-ms.date: 11/21/2018
-=======
 ms.date: 11/28/2018
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +30,6 @@ ms.custom: intune-azure
 ---
 
 # How to manage data transfer between iOS apps in Microsoft Intune
-<<<<<<< HEAD
 
 To help protect company data, restrict file transfers to only the apps that you manage. You can manage iOS apps in the following ways:
 
@@ -43,46 +38,19 @@ To help protect company data, restrict file transfers to only the apps that you 
 -   Deploy and manage apps through the **MDM channel**, which requires devices to enroll in a Mobile Device Management (MDM) solution. The apps you deploy can be **policy-managed** apps or other managed apps.
 
 The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Set *Open in management* restrictions in configuration settings and then deploy them using your MDM solution.  When a user installs the deployed app, the restrictions you set are applied.
-=======
-## Manage iOS apps
-To protect your company data, make sure that file transfers are restricted to apps that you manage. You can manage iOS apps in the following ways:
-
--   Prevent company data loss by configuring an app protection policy for the apps, which we'll refer to as **policy-managed** apps. See [all the Intune-managed apps you can manage with app protection policy](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)
-
--   You can also deploy and manage apps through the **MDM channel**. This method requires that the devices are enrolled in the MDM solution. These apps can be **policy-managed** apps or other managed apps.
-
-The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Open in management restrictions are set in configuration settings and deployed using your MDM solution. When the user installs the deployed app, the restrictions you set are applied.
-
-## Using app protection with iOS apps
-App protection policies can be used with the iOS **Open in management** feature to protect company data in the following ways:
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 
 ##  Use app protection with iOS apps
 Use App protection policies with the iOS **Open in management** feature to protect company data in the following ways:
 
-<<<<<<< HEAD
 -   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only Policy Managed apps**. The *Open-In* behavior in a Policy Managed app presents only other Policy Managed apps as options for sharing. If a user tries to send a policy protected file as an attachment from OneDrive in the native mail app, that file is unreadable.
 
--   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. To specify how you want to allow data transfer to other apps, enable **Allow app to transfer data to other apps** and then choose your preferred level of sharing. To specify how you want to allow an app to receive data from other apps, enable **Allow app to receive data from other apps** and then choose your preferred level of receiving data. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data relocation settings](app-protection-policy-settings-ios.md#data-relocation-settings).   
+-   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. To specify how you want to allow data transfer to other apps, enable **Allow app to transfer data to other apps** and then choose your preferred level of sharing. To specify how you want to allow an app to receive data from other apps, enable **Allow app to receive data from other apps** and then choose your preferred level of receiving data. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data relocation settings](app-protection-policy-settings-ios.md#data-protection-settings).   
 
 -   **Devices managed by a third-party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
 To make sure that apps you deploy using a third-party MDM solution are also associated with your Intune app protection policies, configure the user UPN setting as described in the following section, [Configure user UPN setting](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). When apps deploy with the user UPN setting, the app protection policies apply to the app when the user signs-in using their work account.
 
 ## Configure user UPN setting for Microsoft Intune or third-party EMM
 Configuring the user UPN setting is **required** for devices that are managed by Intune or a third-party EMM solution. The UPN configuration works with the app-protection policies you deploy from Intune. The following procedure is a general flow on how to configure the UPN setting and the resulting user experience:
-=======
--   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. 
-    - To specify how you want to allow data to transfer to other apps, enable the **Allow app to transfer data to other apps** setting. Then, choose your preferred level of sharing. 
-    - To specify how you want to allow an app to receive data from other apps, enable the **Allow app to receive data from other apps** setting. Then, choose your preferred level of receiving data.  
-
-    You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data protection settings](app-protection-policy-settings-ios.md#data-protection-settings).  
-
--   **Devices managed by a third party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
-To make sure that apps that you deploy using your third-party MDM solution are also associated with the app protection policies you have configured in Intune, you must configure the user UPN setting as described in [Configure user UPN setting](#configure-user-upn-setting-for-third-party-emm). When apps deploy with the user UPN setting, the app protection policies apply to the app when the user signs in using their work account.
-
-## Configure user UPN setting for Microsoft Intune or third-party EMM
-Configuring the user UPN setting is **required** for devices that are managed by Intune or a third-party EMM solution. The procedure described below is a general flow on how to configure the UPN setting and the resulting user experience:
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 
 1.  In the [Azure portal](https://portal.azure.com), [create and assign an app protection policy](app-protection-policies.md) for iOS. Configure policy settings per your company requirements and select the iOS apps that should have this policy.
 
@@ -123,38 +91,22 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 3.  The user tries to open a document from native mail in Microsoft Word.
 
-<<<<<<< HEAD
 4.  When the Word app launches, the user is prompted to sign in with their work account. The account the user enters must match the account you specified in the app configuration settings for the Microsoft Word app.
-=======
-4.  When the Word app launches, the end user is prompted to sign in using their work account. This work account that the end user enters when prompted should match the account you specified in the app configuration settings for the Microsoft Word app.
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 
     > [!NOTE]
     > The user can add and use their personal accounts with Word. App protection policies don't apply when the user uses Word outside of a work-context. 
 
-<<<<<<< HEAD
 5.  After sign-in, app protection policy settings apply to the Word app.
 
 6.  Now the data transfer succeeds and the document is tagged with a corporate identity in the app.  The data is treated in a work context and  policy settings apply. 
-=======
-5.  When the sign-in is successful, the app protection policy settings are applied to the Word app.
-
-6.  Now the data transfer succeeds and the document is tagged with a corporate identity in the app. The data is treated in a work context and the policy settings are applied accordingly.
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 
 ### Validate user UPN setting for third-party EMM
 
 After configuring the user UPN setting, validate the iOS app's ability to receive and comply to Intune app protection policy.
 
-<<<<<<< HEAD
 For example, the **Require app PIN** policy setting is easy to test. When the policy setting equals **Yes**, the user should see a prompt to set or enter a PIN before they can access company data.
 
 First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. For more information on how to test app protection policy, See [Validate app protection policies](app-protection-policies-validate.md).
-=======
-For example, the **Require app PIN** policy setting is easy to visually test on a device. If the policy setting is **Yes**, the end user should see a prompt to set or enter a PIN when they try to access company data.
-
-First, [create, and assign an app protection policy](app-protection-policies.md) to the iOS app. For more information on how to test app protection policy, see [Validate app protection policies](app-protection-policies-validate.md). 
->>>>>>> a7e7997e360815e6e154355119a4b3217aae4b5d
 
 
 ### See also
