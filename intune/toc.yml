@@ -756,13 +756,12 @@
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
-  - name: Settings lists
-    href: settings.md
-  - name: Resources
+- name: Settings lists
+  href: settings.md
+- name: Resources
   items:
   - name: Microsoft Intune documentation guide
     href: intune-documentation.md  
-
   - name: Archive
     items:
     - name: What's new archive
