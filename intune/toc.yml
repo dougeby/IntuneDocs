@@ -632,8 +632,6 @@
           href: windows-information-protection-policy-create.md
         - name: Manage data transfer between iOS apps
           href: data-transfer-between-apps-manage-ios.md
-  - name: Settings resource 
-    href: settings.md
   - name: Educate users
     href: end-user-educate.md
     items:
@@ -758,7 +756,9 @@
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
-- name: Resources
+  - name: Settings lists
+    href: settings.md
+  - name: Resources
   items:
   - name: Microsoft Intune documentation guide
     href: intune-documentation.md  
