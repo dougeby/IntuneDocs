@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,10 +78,14 @@ New policies you create aren't deployed to any users until you explicitly do so.
 
    ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
 
-3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. 
 
     ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
 
+4.  After you include and exclude groups, select **Save** to save the configuration and deploy the policy to users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.   
+ 
+     ![Screenshot showing the save and discard options](./media/save-assignment.png)
+  
 You've now created a policy and deployed it to users.
 
 Only users with assigned Microsoft Intune licenses are affected by the policy. Users in the selected security group that don’t have an assigned Intune license aren't affected.
@@ -113,9 +117,13 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 2.  In the *Intune App Protection* pane, select **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
 
-3.  To add a new user group to the policy, on the **Include** tab choose **Select groups to include**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+3.  To add a new user group to the policy, on the *Include* tab choose **Select groups to include**, and select the user group. Choose **Select** to add the group. 
 
-4.  To delete a user group, on the **Exclude** tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.
+4.  To exclude a user group, on the *Exclude* tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.  
+
+5.  To delete groups that were added previously, on either the *Include* or *Exclude* tabs, select the ellipsis (...) and select **Delete**. 
+
+5.  After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
 
 ### To change policy settings
 
