@@ -106,7 +106,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
     -   **Minimum password length** - Specify the minimum number of characters in the password.
     -   **Number of sign-in failures before wiping device** - Specify the number of unique bad password attempts before this setting wipes the device.
     -   **Maximum minutes after screen lock before password is required**<sup>1</sup> - Specify how long the device can remain idle before the user must reenter their password.
-    -   **Maximum minutes of inactivity until screen locks**<sup>1</sup> - Specify the maximum minutes of inactivity until screen locks. Ignored by device if new time is longer than what's currently set on device. If set to Immediately, devices will use the minimum possible value per device.
+    -   **Maximum minutes of inactivity until screen locks**<sup>1</sup> - Enter the maximum minutes of inactivity until the screen locks. If the time you enter is longer than what's currently set on the device, then this value is ignored by the device. When set to **Immediately**, devices use the minimum possible value per device.
     -   **Password expiration (days)** - Specify the number of days before the device password must be changed.
     -   **Prevent reuse of previous passwords** - Specify the number of previously used passwords that the device remembers.
     -   **Fingerprint unlock** - Allow using a fingerprint to unlock compatible devices.
