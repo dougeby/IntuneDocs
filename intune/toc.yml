@@ -632,6 +632,8 @@
           href: windows-information-protection-policy-create.md
         - name: Manage data transfer between iOS apps
           href: data-transfer-between-apps-manage-ios.md
+  - name: Settings resource
+    href: settings.md
   - name: Educate users
     href: end-user-educate.md
     items:
