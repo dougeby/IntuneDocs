@@ -26,4 +26,4 @@ search.appverid: MET150
 ms.custom: intune-azure
 ---
 # Settings resource for Microsoft Intune
-Placeholder text
+Placeholder text 
