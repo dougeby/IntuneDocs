@@ -811,5 +811,5 @@
       href: data-leak-prevention.md
     - name: Compare MDM and MAM
       href: byod-technology-decisions.md
-    - name: Glossary
-      href: intune-glossary.md
+  - name: Glossary
+    href: intune-glossary.md
