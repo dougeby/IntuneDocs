@@ -22,6 +22,7 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 #ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

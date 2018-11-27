@@ -21,6 +21,7 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 #ms.devlang:
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
 

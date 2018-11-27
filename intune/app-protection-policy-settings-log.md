@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 #ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -29,7 +30,15 @@ ms.custom: intune-azure
 
 # Review client app protection logs
 
-Learn about the settings you can review in the app protection logs. Access logs by enabling Intune Diagnostics Mode for an application on a mobile client. The following table shows the name and an explanation of the settings recorded in the log.
+Learn about the settings you can review in the app protection logs. Access logs by enabling Intune Diagnostics on a mobile client. 
+
+The process to enable and collect logs varies by platform:
+- **Android devices** - Use the *Company Portal*. See [Email logs to your company support](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
+- **iOS deices** - Use a Managed Browser, or *Microsoft Edge* to collect logs. For details, see the Intune support team blog [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser). 
+- **Windows 10 devices** - Use *MDMDiag* and event logs. See, [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) in the Windows client management content, and the blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
+
+
+The following table lists the name and an explanation of the settings recorded in the log.
 
 ## App protection policy settings
 

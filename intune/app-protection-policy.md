@@ -22,6 +22,7 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 #ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
 
@@ -70,9 +71,9 @@ There are additional benefits to using MDM with App protection policies, and com
 
 
 ### Supported platforms for app protection policies
-Intune app protection policies platform support aligns with Office mobile application platform support. For details, see the **Mobile apps** section of [Office System Requirements](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+Intune app protection policies platform support aligns with Office mobile application platform support for Android and iOS devices. For details, see the **Mobile apps** section of [Office System Requirements](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Windows devices are currently not supported. However, when you enroll Windows 10 devices with Intune, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Windows devices are currently not supported. However, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## How app protection policies protect app data
@@ -151,7 +152,9 @@ While the **Global** policy applies to all users in your tenant, any standard In
 
 Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while app protection policies apply only when the apps are used in the work context.
 
-For example, consider a user who starts the OneDrive app by using their work account. In the work context, they can't move files to a personal storage location. Later, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.
+For an example of personal context, consider a user who starts a new document in Word, this is considered personal context so Intune App Protection policies are not applied. Once the document is saved on the corporate OneDrive account then it will be consieered corporatte context and Intune App Protection polices will be applied.
+
+For an example of work context, consider a user who starts the OneDrive app by using their work account. In the work context, they can't move files to a personal storage location. Later, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.
 
 - Learn more about the apps that support [MAM and multi-identity](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) with Intune.
 

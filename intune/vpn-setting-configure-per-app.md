@@ -21,6 +21,7 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 #ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

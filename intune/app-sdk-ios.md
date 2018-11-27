@@ -21,6 +21,7 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: 
 
@@ -131,7 +132,7 @@ To enable the Intune App SDK, follow these steps:
 
 4. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
 
-   1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
+   1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the **first** group.
 
    2. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
 
@@ -145,7 +146,7 @@ To enable the Intune App SDK, follow these steps:
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app.
+      > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
 5. Include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Be sure to save your changes before proceeding to the next step.
 

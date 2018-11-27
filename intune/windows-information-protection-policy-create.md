@@ -22,6 +22,7 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 #ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
