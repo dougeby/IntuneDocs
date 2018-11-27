@@ -21,6 +21,7 @@ ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 #ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
 

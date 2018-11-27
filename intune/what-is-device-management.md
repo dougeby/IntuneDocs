@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Device management in Microsoft 365
 description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune provides mobile device management and mobile application management for your organization, including common scenarios, and using Intune to deploy Microsoft 365 in your environment. 
 author: MandiOhlinger 
@@ -13,6 +15,18 @@ ms.technology:
 ms.custom: microsoft-intune 
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
 audience: ITPro
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # What is device management? 

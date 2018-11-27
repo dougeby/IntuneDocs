@@ -21,6 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

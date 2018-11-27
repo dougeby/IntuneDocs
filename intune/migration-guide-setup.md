@@ -21,6 +21,7 @@ ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
 

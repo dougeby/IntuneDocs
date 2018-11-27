@@ -22,6 +22,7 @@ ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
