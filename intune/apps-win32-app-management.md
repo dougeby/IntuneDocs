@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 11/21/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -184,7 +184,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     - **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
     
         1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
-        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end-user's credentials. Select **No** (default) to run the script in the system context.
+        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end user's credentials. Select **No** (default) to run the script in the system context.
         3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
     
         Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
@@ -198,7 +198,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 1.	In the **Add app** pane, select **Return codes** to add the return codes used to specify either app installation retry behavior or post-installation behavior. Return code entries are added by default during app creation. However, you can add additional return codes or change existing return codes. 
 2.	In the **Return codes** pane, add additional return codes, or modify existing return codes.
-    - **Failed** – The return value that indicate an app installation failure.
+    - **Failed** – The return value that indicates an app installation failure.
     - **Hard reboot** – The hard reboot return code does not allow next  Win32 apps to be installed on the client without reboot. 
     - **Soft reboot** – The soft reboot return code allows the next Win32 app to be installed without requiring a client reboot. Reboot is necessary to complete installation of the current application.
     - **Retry** – The retry return code agent will attempt to install the app three times. It will wait for 5 minutes between each attempt. 
@@ -226,15 +226,19 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 At this point you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 
+## Delivery Optimization
+
+Windows 10 RS3 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## Install required and available apps on devices
 
-The end-user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
+The end user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
 
 ![Screenshot example of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
 
-The following image notifies the end-user that app changes are being made to the device.
+The following image notifies the end user that app changes are being made to the device.
 
-![Screenshot example of notifying the end-user that app changes are being made to the device](./media/apps-win32-app-09.png)    
+![Screenshot example of notifying the end user that app changes are being made to the device](./media/apps-win32-app-09.png)    
 
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 

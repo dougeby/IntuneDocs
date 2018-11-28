@@ -56,7 +56,6 @@ Intune will support using the Device Enrollment Program on macOS devices for App
 
 ### Temporarily pause kiosk mode on Android devices to make changes <!-- 3041935 -->
 When using Android devices in multi-app kiosk mode, an IT administrator may need to make changes to the device. A new multi-app kiosk setting that will allow an IT Administrator to temporarily pause kiosk-mode using a PIN, and get access to the entire device.
-To see the current kiosk settings, see [Android kiosk settings](android-kiosk-settings.md).
 
 ### Set custom background in Managed Home Screen app  <!-- 3041945 -->
 We'll be adding a setting that lets you customize the background appearance of the Managed Home Screen app on Android Enterprise, multi-app, kiosk mode devices.  To configure the **Custom URL background**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
