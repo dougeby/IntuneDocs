@@ -60,10 +60,10 @@ End users can now use context menu on device and apps to trigger common actions 
 We're adding a setting that lets you customize the background appearance of the Managed Home Screen app on Android Enterprise, multi-app, kiosk mode devices.  To configure the **Custom URL background**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
 To see the kiosk settings, see [Android Enterprise device restrictions](device-restrictions-android-for-work.md).
 
-#### App protection policy assignment save and apply <!-- 3104570   -->
+#### App protection policy assignment save and apply <!-- 3104570 -->
 You now have better control over your [app protection policy assignments](app-protection-policies.md#deploy-a-policy-to-users). When you select *Assignments* to set or edit the assignments of a policy, you must **Save** your configuration before the change applies. Use **Discard** to clear all changes you make without saving any changes to the Include or Exclude lists.  By requiring Save or Discard, only the users you intend are assigned an app protection policy. 
 
-###  New apps support with app protection policies <!-- 3330037  -->
+#### New apps support with app protection policies <!-- 3330037 -->
 You can now manage the following apps with [Intune app protection policies](app-protection-policies.md):
 - Stream (iOS)
 - To DO (Android, iOS)
@@ -107,14 +107,6 @@ To see the kiosk settings, see [Android Enterprise device restrictions](device-r
 #### Enable virtual home button on Android Enterprise kiosk devices  <!-- 3042021 -->
 A new setting will allow users to tap a soft-key button on their device to switch between the Managed Home Screen app and other assigned apps on their multi-app kiosk device. This setting is particularly helpful in scenarios where a user's kiosk app does not respond appropriately to the "back" button. You'll be able to configure this setting for corporate-owned, single use Android devices. To enable or disable the **Virtual home button**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
 To see the kiosk settings, see [Android Enterprise device restrictions](device-restrictions-android-for-work.md).
-
-
-### Intune apps
-### Monitor and troubleshoot
-### Role-based access control
-
-
-
 
 ## Week of November 12, 2018
 
