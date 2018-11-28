@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,8 +72,10 @@ You can monitor the run status of PowerShell scripts for users and devices in th
 In **PowerShell scripts**, select the script to monitor, choose **Monitor**, and then choose one of the following reports:
    - **Device status**
    - **User status**
+
 ## Troubleshoot PowerShell scripts
-Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
+
+Agent logs on the client machine are typically in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can use [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) to view these log files. 
 
 ![Screenshot the Agent logs](./media/apps-win32-app-10.png)  
 
