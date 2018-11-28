@@ -345,10 +345,6 @@
         href: education-settings-configure.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
-    - name: Android kiosk settings
-      href: android-kiosk-settings.md
-    - name: Android enterprise kiosk settings
-      href: android-enterprise-settings.md
     - name: Windows 10 kiosk settings
       href: kiosk-settings.md      
     - name: Configure custom device settings
