@@ -48,29 +48,14 @@ This page is updated periodically. Check back for additional updates.
 ### Uninstalling apps on corporate-owned supervised iOS devices <!-- 1281677 -->
 You will be able to remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
-### Track installation of Office ProPlus <!--2620217-->
-You'll be able to track the installation progress of [Office ProPlus](apps-add-office365.md) using the [Enrollment Status Page](windows-enrollment-status.md).
-
 ### macOS Device Enrollment Program support for Apple School Manager accounts <!--3006133-->
 Intune will support using the Device Enrollment Program on macOS devices for Apple School Manager accounts.
-
-### Temporarily pause kiosk mode on Android devices to make changes <!-- 3041935 -->
-When using Android devices in multi-app kiosk mode, an IT administrator may need to make changes to the device. A new multi-app kiosk setting that will allow an IT Administrator to temporarily pause kiosk-mode using a PIN, and get access to the entire device.
 
 ### Set custom background in Managed Home Screen app  <!-- 3041945 -->
 We'll be adding a setting that lets you customize the background appearance of the Managed Home Screen app on Android Enterprise, multi-app, kiosk mode devices.  To configure the **Custom URL background**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
 
-### Enable virtual home button on Android Enterprise kiosk devices  <!-- 3042021 -->
-A new setting will allow users to tap a soft-key button on their device to switch between the Managed Home Screen app and other assigned apps on their multi-app kiosk device. This setting is particularly helpful in scenarios where a user's kiosk app does not respond appropriately to the "back" button. You'll be able to configure this setting for corporate-owned, single use Android devices. To enable or disable the **Virtual home button**, go to Intune in the Azure portal > Device configuration. Select a current device configuration profile or create a new one to edit its kiosk settings.
-
-### App protection policy assignment save and apply <!-- 3104570 -->
-You will have better control over your app protection policy assignments. By saving and applying your app protection policy assignments, only the intended users are directly impacted by an app protection assignment policy.
-
 ### New Microsoft Edge browser settings for Windows 10 and later <!-- 3174639 -->
 A new setting will be added to help control and manage the Microsoft Edge browser on your devices. For a list of the current settings, see [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#microsoft-edge-browser).
-
-### Select apps tracked on the Enrollment Status Page<!-- 2531007 -->
-You'll be able to choose which apps are tracked on the Enrollment Status Page.
 
 ### Intune app protection policies UI update <!-- 3251427 -->
 
@@ -111,11 +96,6 @@ APP policy settings for web content on both Android and iOS devices will be upda
 
 ### Apple VPP token used by another MDM <!-- 1488946 -->
 Intune will detect and show details if an Apple volume-purchased program (VPP) token is in use by both Intune and another MDM.
-
-### iOS and macOS version numbers and build numbers are available in compliance policies <!-- 1892471 -->
-In **Device compliance** > **Device compliance**, the iOS and macOS operating system versions are shown, and available to use in compliance policies. In a future update, the build number will also be configurable for both platforms.
-
-When security updates are released, Apple typically leaves the version number as-is, but updates the build number. By using the build number in a compliance policy, you can easily check if a vulnerability update is installed.
 
 ### Retired devices in the device compliance dashboard <!-- 1981119 -->
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
