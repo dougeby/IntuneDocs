@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Create a security baseline in Intune
 
-Security baselines is a feature in preview that'sw available for devices running Windows 10 and later. This feature includes many Intune settings to help secure and protect your users and devices. It also automatically sets these settings to values recommended by security teams. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
+Security baselines is a feature in preview that's available for devices running Windows 10 and later. This feature includes many Intune settings to help secure and protect your users and devices. It also automatically sets these settings to values recommended by security teams. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
 
 The goal of using security baselines is to provide an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
@@ -40,9 +40,12 @@ Security baselines create a configuration profile in Intune. This profile includ
 
 After the profile is assigned, you can monitor the profile, and monitor the baseline. For example, you can see which devices match the baseline, or don't match the baseline.
 
+  > [!NOTE]
+  > While security baselines is in preview, Microsoft does not recommend using profiles in a production environment, as the baselines may change over the course of the preview.
+
 This article shows you how to use security baselines to create a profile, assign the profile, and monitor the profile.
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature, including using security baselines on Windows server environments.
+[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature.
 
 ## Create the profile
 
@@ -82,6 +85,9 @@ After the profile is created, it's ready to be assigned to your users, devices, 
 
     > [!TIP]
     > Notice that you can also **Exclude** groups. If you apply a policy to **All Users**, considering excluding the administrator groups. In case something happens, you and your administrators don’t want to get locked out.
+
+  > [!NOTE]
+  > While security baselines is in preview, Microsoft does not recommend using profiles in a production environment, as the baselines may change over the course of the preview.
 
 4. **Save** your changes.
 
