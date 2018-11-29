@@ -36,7 +36,7 @@ This article helps you set up macOS device enrollment for devices purchased thro
 
 To set up enrollment, you use both the Intune and Apple DEP portals. You create enrollment profiles containing settings that applied to devices during enrollment.
 
-Neither DEP enrollment nor Apple School Manager work with the [device enrollment manager](device-enrollment-manager-enroll.md).
+Neither DEP enrollment or Apple School Manager work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -137,11 +137,11 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>Department Phone</strong> | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
   You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
-    | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
+    | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
