@@ -1029,7 +1029,7 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
-### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 ->
+### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 -->
 To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector. This change will begin with the December service update and be completed with the February 2019 service update.
 
 #### How does this affect me?
