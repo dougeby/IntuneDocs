@@ -215,7 +215,7 @@
     - name: Set up macOS enrollment
       href: macos-enroll.md
       items:
-      - name: Device Enrollment Program
+      - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
