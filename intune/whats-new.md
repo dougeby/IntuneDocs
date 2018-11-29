@@ -1029,6 +1029,27 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
+### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 ->
+To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector. This change will begin with the December service update and be completed with the February 2019 service update.
+
+#### How does this affect me?
+You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. With the December update to the Intune service, to make this clear in the console, we’ll disable the button to set up new connectors. Then, in February 2019, all existing Exchange Online to Intune connectors will be disabled.
+
+If you use these connectors in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in February. There is no anticipated impact to your end users during this change.
+
+#### What can I do to prepare for this change?
+
+If you have the Service to Service connector set up and have Exchange Active Sync Only devices, switch to other methods of managing your devices. You have the following options:
+
+- Enroll devices in Mobile Device Management (MDM)
+- Use Intune App Protection Policies to manage your devices
+- Use Exchange controls as outlined in documentation here. 
+
+#### Additional Information
+[Configure the Exchange service connector for Intune and Exchange Online](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
+
 ### Plan for change: Performance updates to Intune for Education <!--1750215-->
 We’re adding some updates to Intune for Education to increase speed and reliability when you assign settings to your users or devices. As part of this change, towards the end of November, we’ll be moving your policies or settings assignments to new groups.
 
