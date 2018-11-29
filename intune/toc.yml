@@ -1,9 +1,10 @@
+- name: Microsoft Intune documentation
+  href: index.yml
 - name: Overview
-  href: introduction-intune.md
   expanded: true
   items:
-  - name: What is the Azure portal?
-    href: what-is-intune.md
+  - name: What is Intune?
+    href: what-is-intune.md    
   - name: What is Intune for Education?
     href: introduction-intune-education.md
   - name: Sign up for a free trial

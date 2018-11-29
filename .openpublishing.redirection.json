@@ -58,7 +58,7 @@
 		},
 		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
@@ -68,22 +68,22 @@
 		},		
 		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/mobile-device-management-trial-guide-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
@@ -1871,7 +1871,7 @@
 		{
 			"source_path": "intune/introduction/what-is-microsoft-intune.md",
 			"redirect_url": "/intune/what-is-intune",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/introduction/whats-new.md",
@@ -3810,13 +3810,13 @@
 		},		
 		{
 			"source_path": "intune/get-started/get-started.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/get-started/get-started.md",
-			"redirect_url": "/intune/introduction-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/what-is-intune",
+			"redirect_document_id": false
 		},		
 		{
 			"source_path": "intune/get-started/mobile-device-management-capabilities-in-microsoft-intune.md",
@@ -4390,7 +4390,12 @@
 		},
 		{
 			"source_path": "intune/understand-explore/introduction-to-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/introduction-intune.md",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": true
 		},
 		{
@@ -4465,8 +4470,8 @@
 		},
 		{
 			"source_path": "intune-classic/understand-explore/introduction-to-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-intune",
-			"redirect_document_id": true
+			"redirect_url": "/intune/what-is-intune",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/introduction-to-intune-education.md",
@@ -4805,7 +4810,7 @@
 		},
 		{
 			"source_path": "intune/get-started/operations-and-maintenance.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},		
 		{
@@ -4840,7 +4845,7 @@
 		},
 		{
 			"source_path": "intune/understand-explore/frequently-asked-questions-for-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-intune",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},			{
 			"source_path": "intune-azure/conditional-access/get-started.md",
