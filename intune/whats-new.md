@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -61,7 +61,10 @@ We're adding a setting that lets you customize the background appearance of the 
 To see the kiosk settings, see [Android Enterprise device restrictions](device-restrictions-android-for-work.md).
 
 #### App protection policy assignment save and apply <!-- 3104570 -->
-You now have better control over your [app protection policy assignments](app-protection-policies.md#deploy-a-policy-to-users). When you select *Assignments* to set or edit the assignments of a policy, you must **Save** your configuration before the change applies. Use **Discard** to clear all changes you make without saving any changes to the Include or Exclude lists.  By requiring Save or Discard, only the users you intend are assigned an app protection policy. 
+You now have better control over your [app protection policy assignments](app-protection-policies.md#deploy-a-policy-to-users). When you select *Assignments* to set or edit the assignments of a policy, you must **Save** your configuration before the change applies. Use **Discard** to clear all changes you make without saving any changes to the Include or Exclude lists.  By requiring Save or Discard, only the users you intend are assigned an app protection policy.
+
+#### New Microsoft Edge browser settings for Windows 10 and later <!-- 3174639 -->
+This update includes new settings to help control and manage the Microsoft Edge browser on your devices. For a list of these settings, see [Device restriction for Windows 10 (and newer)](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 #### New apps support with app protection policies <!-- 3330037 -->
 You can now manage the following apps with [Intune app protection policies](app-protection-policies.md):
@@ -97,6 +100,11 @@ You can now search for Autopilot devices by serial number. To do so, choose **De
 #### Track installation of Office ProPlus <!--2620217 -->
 Users can track the installation progress of [Office ProPlus](apps-add-office365.md) using the [Enrollment Status Page](windows-enrollment-status.md). For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
 
+#### Alerts for expiring VPP token or Company Portal license running low <!-- 2237572 -->
+If you are using Volume Purchase Program (VPP) to pre-provision the Company Portal during DEP enrollment, Intune will alert you when the VPP token is about to expire and when the licenses for the Company Portal are running low. For more information, see [Automatically enroll macOS devices with Apple School Manager or Device Enrollment Program](device-enrollment-program-enroll-macos.md).
+
+### New Intune device subscription SKU <!--3312071-->
+To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA), and Open and Cloud Solution Provider (CSP).
 
 ### Device management
 
@@ -1164,34 +1172,6 @@ What do I need to do to prepare for this change?
 Review the password settings in your Android and Android enterprise device restriction and compliance policies. These are listed under System security for Compliance policies and under either Device password or Work profile settings for Device restrictions. Additional information has a link to more details and screenshots for where these settings are configured.
 #### Additional information
 https://aka.ms/PasswordSettings 
-
-### Plan for Change: Change Password at Next Auth added to Intune<!-- 1873216 -->
-In the September service release, Intune plans to integrate Apple’s newly-released **Change Password at Next Auth** setting for devices running macOS versions 10.13 and newer. Before this setting, MDM providers can't verify that the device passcode was changed to be compliant. Intune’s configuration and compliance policies only validate that the next time a device password is changed, that it's marked as compliant. When this new Apple feature is added, your macOS users will receive a request to update their password, even if their password is compliant.
-
-#### How does this affect me?
-This impacts environments with a macOS device policy using Intune or a hybrid MDM. Now that Apple has this **Change Password at New Auth** setting, Intune can force users to update their password when a password policy is pushed. If you block company resources until the device is marked compliant, then your end users may be blocked from accessing company resources, such as email or SharePoint sites, until they reset their password. In the future, all updates to configuration and compliance password policies force targeted users to update their passwords.
-
-#### What do I need to do to prepare for this change?
-Let your helpdesk know. If you don't want to enforce this macOS device policy, we recommend you un-assign or delete your existing macOS policy. Customer research suggests most customers aren't affected by this change. Most end users update their password after receiving a request to enroll with a password, or reset their password to remain compliant.
-
-### Plan for Change: Intune moving to TLS 1.2
-Starting on October 31, 2018, Intune will support Transport Layer Security (TLS) protocol version 1.2 to provide best-in-class encryption, to ensure our service is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. Office communicated this change in MC128929.
-
-The Company Portal will also move to support TLS 1.2 on October 31, 2018.
-
-#### How does this affect me?
-As of October 31, 2018, Intune will no longer support TLS protocol versions 1.0 or 1.1. All client-server and browser-server combinations should use TLS version 1.2 to ensure connection without issues to Intune. Note that this change will impact end-user devices that are no longer supported by Intune but are still receiving policy through Intune, and that cannot use TLS version 1.2. This includes devices such as those running Android 4.3 and earlier. For a list of affected devices and browsers, see Additional Information below.
-
-After October 31, 2018, if you experience an issue related to the use of an old TLS version, you will be required to update to TLS 1.2 or to a device that supports TLS 1.2 as part of the resolution.
-
-#### What do I need to do to prepare for this change?
-We recommend that you proactively remove TLS 1.0 and 1.1 dependencies in your environments and disable TLS 1.0 and 1.1 at the operating system level where possible. Begin planning your migration to TLS 1.2 today. Check the support blog post below for the list of devices that are not supported by Intune today but might still be receiving policy, and that will not be able to communicate using TLS version 1.2. You might need to notify those end users that they’ll lose access to corporate resources.
-
-**Additional Information**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### Plan for Change: Use Intune on Azure now for your MDM management <!-- 1227338 -->
-Over a year ago, we announced [public preview of Intune on Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) and followed up six months ago with [general availability of the new admin experience](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) for Intune. Starting on August 31, 2018, we will turn off mobile device management (MDM) in the classic Silverlight console for those customers using Intune standalone. Instead, you can use [Intune on Azure](https://aka.ms/Intune_on_Azure) for your MDM needs. If you're still using the classic console for MDM, please stop and familiarize yourself with Intune on Azure. We do not expect any end user impact with this change. Classic PC management will remain in Silverlight. You can learn more about this change and how it affects you [here](https://aka.ms/Intune_on_Azure_mdm).
 
 ### Apple to require updates for Application Transport Security <!--748318-->
 Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
