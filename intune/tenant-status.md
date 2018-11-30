@@ -29,7 +29,7 @@ Use the Tenant Status page as a centralized hub to stay current on important det
 
 To view the dashboard, in the Azure portal go to **Intune > Tenant Status**.  Tenant Status appears under the **Help and support group**.  
 
-The page is divided into four areas:
+The page is divided into four areas: 
 
 ## Tenant Details
 Tenant details provide at-a-glance information about your tenant. View details like your tenant name and location, your MDM Authority, and your tenants service release number. The service release number is a link that opens the *What’s new in Intune* article on Microsoft docs, where you can read about the latest features and updates to the Intune service.  
