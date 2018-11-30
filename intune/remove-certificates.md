@@ -48,8 +48,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator runs [wipe](devices-wipe.md#wipe) action
   - Administrator runs [retire](devices-wipe.md#retire) action
   - Device is removed from Azure Active Directory (AD) group
-  - Compliance policy is removed from the group assignment
-  - Configuration profile is removed from the group assignment
+  - Certificate profile is removed from the group assignment
 
 - A SCEP certificate is revoked when:
   - Administrator changes or updates the SCEP profile
@@ -58,7 +57,6 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - An end user unenrolls
   - Administrator runs [wipe](devices-wipe.md#wipe) action
   - Administrator runs [retire](devices-wipe.md#retire) action
-  - Compliance policy is removed from the group assignment
 
 - SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
   - An end user loses the Intune license
@@ -83,8 +81,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator withdraws the Intune license
   - Administrator removes the user or group from Azure AD
   - Administrator changes or updates the PKCS profile
-  - Configuration profile is removed from the group assignment
-  - Compliance policy is removed from the group assignment 
+  - Certificate profile is removed from the group assignment
 
 
 ## iOS devices
@@ -97,8 +94,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator runs [wipe](devices-wipe.md#wipe) action
   - Administrator runs [retire](devices-wipe.md#retire) action
   - Device is removed from Azure Active Directory (AD) group
-  - Compliance policy is removed from the group assignment
-  - Configuration profile is removed from the group assignment
+  - Certificate profile is removed from the group assignment
 
 - A SCEP certificate is revoked when:
   - Administrator changes or updates the SCEP profile
@@ -107,7 +103,6 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - An end user unenrolls
   - Administrator runs [wipe](devices-wipe.md#wipe) action
   - Administrator runs [retire](devices-wipe.md#retire) action
-  - Compliance policy is removed from the group assignment
 
 - SCEP certificates **stay** on the device (certificates aren't revoked nor removed) when:
   - An end user loses the Intune license
@@ -123,8 +118,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator runs [retire](devices-wipe.md#retire) action
 
 - A PKCS certificate is removed when:
-  - Compliance policy is removed from the group assignment
-  - Configuration profile is removed from the group assignment
+  - Certificate profile is removed from the group assignment
   
 - Root certificate is removed when:
   - An end user unenrolls
@@ -148,8 +142,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
 - A SCEP certificate is revoked when:
   - Administrator runs [retire](devices-wipe.md#retire) action
   - Device is removed from Azure Active Directory (AD) group
-  - Compliance policy is removed from the group assignment
-  - Configuration profile is removed from the group assignment
+  - Certificate profile is removed from the group assignment
   - Administrator removes the user or group from Azure Active Directory (AD)
   - Administrator changes or updates the SCEP profile
 
@@ -181,8 +174,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - Administrator withdraws the Intune license
   - Administrator removes the user or group from Azure AD
   - Administrator changes or updates the PKCS profile
-  - Configuration profile is removed from the group assignment
-  - Compliance policy is removed from the group assignment 
+  - Certificate profile is removed from the group assignment
   
   
 > [!NOTE]
@@ -197,8 +189,7 @@ This article lists some common scenarios, and the impact on PKCS and SCEP certif
   - An end user unenrolls
   - Administrator runs [retire](devices-wipe.md#retire) action
   - Device is removed from Azure Active Directory (AD) group
-  - Compliance policy is removed from the group assignment
-  - Configuration profile is removed from the group assignment
+  - Certificate profile is removed from the group assignment
 
 - A SCEP certificate is revoked when:
   - Administrator changes or updates the SCEP profile
