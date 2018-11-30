@@ -489,7 +489,7 @@ To validate that the service is running, open a browser, and enter the following
    - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
    - **Enrollment Settings**
      - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
-     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP including "/certsrv/mscep/mscep.dll". E.G.: "https://ndes.contoso.com/certsrv/mscep/mscep.dll" 
+     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP, including "/certsrv/mscep/mscep.dll". E.G.: "https://ndes.contoso.com/certsrv/mscep/mscep.dll" 
      - Select **OK**, and **Create** your profile.
 
 The profile is created and appears on the profiles list pane.
