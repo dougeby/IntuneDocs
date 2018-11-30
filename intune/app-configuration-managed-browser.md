@@ -180,7 +180,12 @@ For more information about how the Managed Browser, Microsoft Edge, and Azure AD
 
 ## How to configure the homepage for a protected browser
 
-This setting allows you to configure the homepage that users see when they start a protected browser or create a new tab. Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
+This setting allows you to configure the homepage that users see when they start a protected browser or create a new tab. 
+- This setting will show the web page in Managed Browser.  Edge will display a homepage shortcut instead.
+- The homepage shortcut icon appears as an icon beneath the search control.  It cannot be edited or deleted.
+- The homepage shortcut will display your organization's name to distinguish it.  It will always appear as the first icon.
+
+Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
 
 |                                Key                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
