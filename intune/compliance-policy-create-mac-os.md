@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,7 +54,8 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. For **Platform**, select **macOS**. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
+4. For **Platform**, select **macOS**. 
+5. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings described in this article. When you're done, select **OK**, and **Create**.
 
 ## Device Health
 
@@ -64,6 +65,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade appears. The end user can choose to upgrade their device, and then get access to company resources.
 - **Maximum OS version**: When a device is using an OS version later than the version specified in the rule, access to company resources is blocked. The user is asked to contact their IT admin. Until there is a rule change to allow the OS version, this device can't access company resources.
+- **Minimum OS build version**: When Apple publishes security updates, the build number is typically updated, not the OS version. Use this feature to enter a minimum allowed build number on the device.
+- **Maximum OS build version**: When Apple publishes security updates, the build number is typically updated, not the OS version. Use this feature to enter a maximum allowed build number on the device.
 
 ## System security settings
 
