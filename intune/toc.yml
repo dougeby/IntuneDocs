@@ -215,7 +215,7 @@
     - name: Set up macOS enrollment
       href: macos-enroll.md
       items:
-      - name: Device Enrollment Program
+      - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
@@ -413,6 +413,8 @@
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
+    - name: Delivery optimization
+      href: delivery-optimization-windows.md
     - name: Configure endpoint protection
       href: endpoint-protection-configure.md
       items:
@@ -422,10 +424,6 @@
         href: endpoint-protection-windows-10.md
     - name: Configure identity protection
       href: identity-protection-configure.md
-    - name: Android kiosk settings
-      href: android-kiosk-settings.md
-    - name: Android enterprise kiosk settings
-      href: android-enterprise-settings.md
     - name: Windows 10 kiosk settings
       href: kiosk-settings.md
     - name: Configure email settings
