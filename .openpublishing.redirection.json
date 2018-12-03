@@ -2,8 +2,18 @@
 	"redirections": [
 
 		{
+			"source_path": "intune/android-enterprise-settings.md",
+			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/android-kiosk-settings.md",
+			"redirect_url": "/intune/device-restrictions-android#kiosk",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune-user-help/what-happens-if-you-reset-your-device-cpwebsite.md",
-			"redirect_url":"/intune-user-help/what-happens-if-you-reset-your-device-using-the-company-portal-windows",
+			"redirect_url": "/intune-user-help/what-happens-if-you-reset-your-device-using-the-company-portal-windows",
 			"redirect_document_id": false
 		},
 		{
