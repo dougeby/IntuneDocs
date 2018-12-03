@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ Use the Intune management extension to upload PowerShell scripts in Intune to ru
 
 End-user computing is going through a digital transformation. Classic, traditional IT focuses on a single device platform, business-owned devices, users that work from the office, and a variety of manual, reactive IT processes. The modern workplace uses many platforms that are user and business owned, allows users to work from anywhere, and provides automated and proactive IT processes.
 
-MDM services, such as Microsoft Intune, can manage mobile and desktop devices running Windows 10. The built-in Windows 10 management client communicates with Intune to run enterprise management tasks. There are some tasks that you might need, such as advanced device configuration, troubleshooting, and legacy Win32 app management that's currently not available in Windows 10 MDM. For these capabilities, you can run the Intune software client on your Windows 10 devices. [Compare managing Windows PCs as computers or mobile devices](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison).
+MDM services, such as Microsoft Intune, can manage mobile and desktop devices running Windows 10. The built-in Windows 10 management client communicates with Intune to run enterprise management tasks. There are some tasks that you might need, such as advanced device configuration, troubleshooting, and legacy Win32 app management that's currently not available in Windows 10 MDM. For these capabilities, you can run the Intune software client on your Windows 10 devices. [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md) is a great resource.
 
 The Intune management extension supplements the in-box Windows 10 MDM features. You can create PowerShell scripts to run on the Windows 10 devices. For example, you can create a PowerShell script that installs a legacy Win32 app, uploads the script to Intune, assigns the script to an Azure Active Directory (AD) group, and runs the script. You can then monitor the run status of the script from start to finish.
 
@@ -44,8 +44,7 @@ The Intune management extension has the following prerequisites:
 
 - Devices must be joined to Azure AD and [auto-enrolled](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and comanaged enrolled Windows devices. GPO-enrolled devices aren't supported.
 - Devices must run Windows 10 version 1607 or later.
-- The Intune management extension agent is installed when a PowerShell script deploys to a user, and when the user is signed in using the Azure AD account.
-- PowerShell scripts should be assigned to a user group, not a device group.
+- The Intune management extension agent is installed when a PowerShell script or a Win32 app is deployed to a user or device security group.
 
 ## Create a PowerShell script policy 
 
@@ -71,7 +70,7 @@ The Intune management extension has the following prerequisites:
 > - End users aren't required to sign in to the device to execute PowerShell scripts.
 > - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
 
-The Intune management extension synchronizes to Intune once every hour. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
+The Intune management extension client checks once every hour with Intune. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
 
 ## Monitor run status for PowerShell scripts
 
@@ -100,11 +99,9 @@ The PowerShell scripts don't run at every sign-in. They run only after reboots, 
   2. Select the joined account > **Info**.
   3. Under **Advanced Diagnostic Report**, select **Create Report**.
   4. Open the `MDMDiagReport` in a web browser, and go to the **Enrolled configuration sources** section.
-  5. Look for the **MDMDeviceWithAAD** property. If this property doesn't exist, then your device isn't auto enrolled. Hybrid Azure AD joined devices aren't supported.
+  5. Look for the **MDMDeviceWithAAD** property. If this property doesn't exist, then your device isn't auto enrolled.
 
     [Enable Windows 10 automatic enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) includes the steps.
-
-- Be sure the PowerShell script is assigned to a user group, not a device group. Assigning to device groups isn't supported.
 
 #### Issue: The PowerShell scripts do not run
 
