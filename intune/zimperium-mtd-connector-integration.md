@@ -22,6 +22,7 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 #ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -34,7 +35,7 @@ Complete the following steps to integrate the Zimperium Mobile Threat Defense so
 ## Before you begin
 
 > [!NOTE]
-> The following steps are to be completed in the [Zimperium MTD console](https://staging2-console.zimperium.com).
+> The following steps are to be completed in the [Zimperium MTD console](https://sso.zimperium.com/signon/aad/).
 
 Before starting the process of integrating Zimperium with Intune, make sure you have the following subscription and credentials:
 
@@ -66,7 +67,7 @@ The Zimperium app authorization process follows:
 
 ## To set up Zimperium integration
 
-1.  Go to [Zimperium MTD console](https://staging2-console.zimperium.com) and sign in with your credentials.
+1.  Go to [Zimperium MTD console](https://sso.zimperium.com/signon/aad/) and sign in with your credentials.
 
 2.  Choose **Management** from the left menu.
 

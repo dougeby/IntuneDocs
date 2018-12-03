@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 #ms.devlang:
 ms.reviewer: davidra
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -64,14 +65,23 @@ The following list is an overview on how NAC integration works when integrated w
 8. Once the device is enrolled and compliant, NAC partner solution gets the state from Intune.
 9. Connection is successfully established which allows the device access to corporate resources.
 
-## Use NAC on your iOS devices
+## Use NAC for VPN on your iOS devices  
+NAC for Cisco Legacy AnyConnect, F5 Access Legacy, and Citrix VPN is supported without needing to enable NAC in the VPN profile.
 
-Network access control is not currently supported for the following VPN clients on iOS:
+NAC for Citrix SSO is also supported. To enable NAC for Citrix SSO for iOS:
+- Use Citrix Gateway 12.0.59 or higher.  
+- Users must have Citrix SSO 1.1.6 or later installed.
+- [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
+- On the Base VPN settings configuration, for **Enable Network Access Control (NAC)**, select the check-box for **I agree**.
+
+When you use Citrix SSO for iOS, the VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
+
+
+**Network access control is not currently supported for the following VPN clients on iOS**:
 -	Cisco AnyConnect
 -	F5 Access
--	Citrix SSO  
 
-We are working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
+We're working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
 
 
 ## Next steps

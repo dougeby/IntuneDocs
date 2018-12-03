@@ -22,6 +22,7 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
  
@@ -65,6 +66,16 @@ A device or user might be in multiple groups and have multiple enrollment status
 2. Hover over the profile in the list.
 3. Using the three vertical dots, drag the profile to the desired position on the list.
 
+## Block access to a device until a specific application is installed
+
+You can specify which apps need to be installed before the user can access the desktop.
+
+1. In Intune, choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+2. Choose a profile > **Settings**.
+3. Choose **Yes** for **Show app and profile installation progress**.
+4. Choose **Yes** for **Block device use until all apps and profiles are installed**.
+5. Choose **Selected** for **Block device use until these required apps are installed if they are assigned to the user/device**.
+ 6. Choose **Select apps** > choose the apps > **Select** > **Save**.
 
 ## Enrollment status page tracking information
 

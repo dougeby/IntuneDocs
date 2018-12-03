@@ -22,6 +22,7 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -143,7 +144,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Screenshot of install company portal with vpp.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
-    This feature runs best with iOS 11.3.1 and later. Using older versions may take a long time to install.
+    This feature is only supported for iOS 11.3.1 and later.
 
 8. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 

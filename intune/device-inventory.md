@@ -21,6 +21,7 @@ ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 #ms.devlang:
 #ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -51,7 +52,7 @@ This article shows you how to view all your devices, and their properties in the
      - Start a remote assistance session
    - Use **Properties** to assign a [device category you create](device-group-mapping.md), and change ownership of the device to a personal device, or a corporate device.
    - **Hardware** includes many details about the device, including the device ID, the operating system and version, storage space, the model and manufacturer, conditional access settings, and more details.
-   - **Discovered apps** lists all the apps that Intune found installed on the device, and the app versions. You can also **Export** the app list into a .csv file.
+   - **Discovered apps** lists all the apps that Intune found installed on the device, and the app versions. You can also **Export** the app list into a .csv file. This list is updated every 7 days.
    - **Device compliance** lists all assigned compliance policies, and if the device is compliant or not compliant.
    - **Device configuration** shows all device configuration policies assigned to the device, and if the policy succeeded or failed.
 
@@ -66,8 +67,10 @@ Intune collects an app list only on corporate-owned devices. Apps aren't checked
 |iOS|Only managed apps|All apps installed on the device|
 |macOS|All apps installed on the device|All apps installed on the device|  
 |Android|Only managed apps|All apps installed on the device|  
+|Android Enterprise|Only managed apps|Only apps installed in the Work Profile|  
 
 ## Hardware device details
+Depending on the carrier used by the devices, not all details might be collected
 
 |Detail|Description|Platform| 
 |--------------|----------------------|----|  

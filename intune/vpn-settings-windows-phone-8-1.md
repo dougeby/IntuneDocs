@@ -20,6 +20,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -98,7 +99,7 @@ Refer to each manufacturer's VPN documentation for more information about how to
 ## Proxy settings
 
 - **Automatically detect proxy settings** - If your VPN server requires a proxy server for the connection, specify whether you want devices to automatically detect the connection settings. For more information, see your Windows Server documentation.
-- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `**http://proxy.contoso.com**`) which contains the configuration file.
+- **Automatic configuration script** - Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `http://proxy.contoso.com`) which contains the configuration file.
 - **Use proxy server** - Enable this option if you want to manually enter the proxy server settings.
     - **Address** - Enter the proxy server address (as an IP address).
     - **Port number** - Enter the port number associated with the proxy server.

@@ -15,6 +15,18 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # Tutorial: Use Autopilot to enroll Windows devices in Intune

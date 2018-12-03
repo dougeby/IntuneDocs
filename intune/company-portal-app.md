@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 #ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -33,7 +34,7 @@ ms.custom: intune-azure
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.		
 
 > [!Tip]		
-> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps.		
+> When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps. Note that users must have an Intune license assigned to access the Company Portal website.
 
 Customizing the Company Portal helps provide a familiar and helpful experience for your end users. To do it, from the **Client apps** workload, choose  **Setup** > **Company Portal Branding**, then configure the required settings.	
 
@@ -52,7 +53,7 @@ Fields marked with an asterisk (*) are mandatory.
 | **Privacy statement URL** |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format `<https://www.contoso.com>`. |
 
 ## Support information		
-Enter your company's support infomation to provide your employee with a contact for Intune-related questions.  		
+Enter your company's support information to provide your employee with a contact for Intune-related questions.  		
 
 |Field name|Max length|More information|
 |---|---|---|
@@ -72,7 +73,7 @@ Apply a theme color to the Company Portal. Select a standard color or enter a si
 
 |Field name|More information|
 |---|---|
-|**Select a standard color or enter a six-digit hex code**| Choose **Standard** to visual select a color. Choose **Custom** to select a specific color based on a hex code value.|
+|**Select a standard color or enter a six-digit hex code**| Choose **Standard** to visually select a color. Choose **Custom** to select a specific color based on a hex code value.|
 |**Choose theme color**| Select a theme color to apply to the Company Portal. You can choose from a standard color, or enter a specific hex code. |
 |**Display**| Select whether to display the **Company logo and name**, the **Company logo only**, or the **Company name only**. |
 |**Upload your company logo**|You can upload your company logo to show in your Company Portal. Note the text color is automatically chosen to provide the highest level of contrast. For the best appearance, upload a logo with a transparent background.<p><ul><li>Max image size: 400px x 400px</li><li>Maximum file size: 750KB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
@@ -88,28 +89,37 @@ Choose a logo that will look best on white or light backgrounds.
 
 ### Brand image for Company Portal
 
-Display a brand image that reflects your company brand. Support for a brand image is being added to the Company Portal apps, but may not be visible on all platforms.
+Display a brand image that reflects your company brand. After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
 
 |Field name|More information|
 |---|---|
-|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p>*Note*: The image may be displayed differently for different platforms.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
 The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
 
-- Reach out to your marketing or art department. They may already have an approved set of branded brand images. They may also be able to help you optimize images as needed. 
+- Reach out to your marketing or art department. They may already have an approved set of brand images. They may also be able to help you optimize images as needed. 
 
-- Consider both landscape and portrait composition. The image should have sufficient background surrounding the focal point. The image may be cropped differently based on device size and orientation. 
+- Consider both landscape and portrait composition. The image should have sufficient background surrounding the focal point. The image may be cropped differently based on device size, orientation, and platform. 
 
 - Avoid using a generic, stock image. The image should reflect your company’s brand and feel familiar to users. If you don’t have one, it’s better to not use one than use a generic one that has no meaning to your user. 
 
 - Remove unnecessary metadata. Image file can come with metadata such as camera profile, geo location, title, caption, and so on. Use an image optimization tool to strip out this information to maintain quality while meeting file size limit. 
 
-After you save your changes, you can choose **Preview your settings** in the Intune Web Portal at the top of the blade to see how your configurations will look. Note that you will only be able to preview brand image on an iOS device and not the Intune Web Portal. 
+After a brand image is added or changed in Intune, the end user may not see the change on iOS devices until the Company Portal has recognized the change on start up, and then has been restarted to display the brand image. 
 
+### Brand image examples
+
+The following image shows an example iPad branding image:
+
+![Screenshot of example iPhone branding image](media/company-portal-app/company-portal-app-03.png)
+
+The following image shows an example iPhone branding image:
+
+![Screenshot of example iPad branding image](media/company-portal-app/company-portal-app-02.png)
 
 ## Windows Company Portal keyboard shortcuts
 
-End users can trigger naivation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+End users can trigger navigation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
 
 The following keyboard shortcuts are available in the Windows Company Portal app.
 
@@ -129,6 +139,10 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 |  | Remove | Ctrl+D or Delete |
 |  | Check access | Ctrl+M or F9 |
 | App details | Install | Ctrl+I |
+
+End users will also be able to see the available shortcuts in the Windows Company Portal app.
+
+![Screenshot of the available shortcuts in the Windows Company Portal app](media/company-portal-app/company-portal-app-01.png)
 
 ## Next steps
 

@@ -19,6 +19,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -204,3 +205,5 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+You can also create kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) devices.

@@ -22,6 +22,7 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 #ms.devlang:
 #ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
 
@@ -48,7 +49,6 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
 
 ## macOS enrollment methods
-
 | **Method** |  **Reset Required** |  **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./macos-enroll.md)|
@@ -62,7 +62,11 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**[BYOD](#bring-your-own-device)** | No |	Yes |	No | [More information](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |Yes |Yes |No | [More information](enrollment-autopilot.md)]
 |**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
+|**Co-management** |No |Yes |No | [More information](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |No |Yes |No | [More information](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## Android enrollment methods
 

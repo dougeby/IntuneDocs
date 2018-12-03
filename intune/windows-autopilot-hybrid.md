@@ -22,6 +22,7 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
  
@@ -116,12 +117,13 @@ The organizational unit granted the right to create computers must match:
 
 The Intune Connector for Active Directory needs to be installed on a computer running Windows Server 2016 that has access to the Internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the connector on a server that is not running any other Intune connectors.
 
-1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
-2. Follow the instructions to download the connector.
-3. Open the downloaded connector setup file to install the connector (ODJConnectorBootstrapper.exe).
-4. At the end of setup, choose **Configure**.
-5. Choose **Sign In**.
-6. Enter user Global Administrator or Intune Administrator role credentials.
+1. Make sure that you have a language pack installed and configured as described in [Intune Connector (Preview) language requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
+2. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
+3. Follow the instructions to download the connector.
+4. Open the downloaded connector setup file to install the connector (ODJConnectorBootstrapper.exe).
+5. At the end of setup, choose **Configure**.
+6. Choose **Sign In**.
+7. Enter user Global Administrator or Intune Administrator role credentials.
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** and confirm the connection status is **Active**.
 
 ### Configure web proxy settings

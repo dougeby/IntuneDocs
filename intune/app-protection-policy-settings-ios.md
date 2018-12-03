@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 #ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -34,7 +35,7 @@ The policy settings described in this article can be [configured](app-protection
 
 There are three categories of policy settings: *Data relocation*, *Access requirements*, and *Conditional launch*. In this article, the term ***policy-managed apps*** refers to apps that are configured with app protection policies.
 
-##  Data relocation settings
+##  Data protection settings
 
 | Setting | How to use |  
 |------|------| 
@@ -51,7 +52,7 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 
 
 > [!NOTE]
-> None of the data relocation settings control the Apple managed open-in feature on iOS devices. To use manage Apple open-in, see [Manage data transfer between iOS apps with Microsoft Intune](data-transfer-between-apps-manage-ios.md).
+> None of the data protection settings control the Apple managed open-in feature on iOS devices. To use manage Apple open-in, see [Manage data transfer between iOS apps with Microsoft Intune](data-transfer-between-apps-manage-ios.md).
 
 ## Data transfer exemptions
 

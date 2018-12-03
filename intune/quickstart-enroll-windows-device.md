@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Quickstart - Enroll your Windows 10 Desktop device in Microsoft Intune
 description: Quickstart - Use the Company Portal to enroll your Windows 10 Desktop device into Microsoft Intune.
 services: microsoft-intune
@@ -11,6 +13,18 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # Quickstart: Enroll your Windows 10 device

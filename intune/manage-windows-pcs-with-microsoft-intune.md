@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,6 +20,7 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 #ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
 
@@ -30,7 +31,7 @@ ms.custom: intune-classic-keep
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible.
+> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible. For more information, see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md) 
 
 Intune provides a comprehensive solution for organizations to manage mobile devices. Intune can manage Windows PCs as mobile devices using the modern device management capabilities built in to the Windows 10 operating system. To meet your organization’s management needs, Intune can also manage Windows PCs as computers with the Intune software client. This management method uses traditional computer management capabilities in the legacy Windows operating system.
 
@@ -44,7 +45,7 @@ Intune supports management of Windows PCs as computers using the software client
 
 ## Requirements for Intune PC client management
 
-**Hardware**:
+**Hardware**:  
 The following are minimum hardware requirements for installing the Intune client software:
 
 |Requirement|More information|
@@ -53,7 +54,7 @@ The following are minimum hardware requirements for installing the Intune client
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
 |Disk space|200 MB available disk space before the client software is installed.|
 
-**Software**:
+**Software**:  
 The following are software requirements for installing the client software:
 
 |Requirement|More information|
