@@ -92,7 +92,7 @@ To see the current settings, see [Endpoint protection settings for Windows 10](e
 ### Intune app PIN <!-- 2298397 -->
 As the IT admin, you'll be able to configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting will be available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. This feature will be available on iOS and Android devices. This setting supports a positive integer value.
 
-## New Windows 10 Update settings <!-- 2626030 2512994 -->
+### New Windows 10 Update settings <!-- 2626030 2512994 -->
 For your Windows 10 Update Rings, you'll be able to:
 - restore the original auto update settings on a Windows 10 machine on machines running the *October 2018 Update*
 - configure a new Software updates setting that lets you block or allow your users to pause update installation from the *Settings* of their machines. 
