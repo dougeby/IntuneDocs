@@ -80,6 +80,13 @@ You can now manage the following apps with [Intune app protection policies](app-
 Use app protection policies to protect corporate data and control data transfer for these apps, like other Intune policy managed apps. 
 Note: If Flow is not yet visible in the console, you add Flow when you create or edit and app protection policies. To do so, use the **+ More apps** option, and then specify the *App ID* for Flow in the input field. For Android use *com.microsoft.flow*,  and for iOS use *com.microsoft.procsimo*.
 
+#### Intune app protection policies UI update <!-- 3251427 -->
+We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
+
+- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
+- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
+
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies.
 
 ### Device configuration
 
