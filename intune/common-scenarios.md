@@ -31,7 +31,7 @@ ms.custom: intune-classic; get-started
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals.  This is important whether you're brand new to enterprise mobility or migrating from another product.  
+Before diving into implementation tasks, it's important to align your company’s enterprise mobility stakeholders around the business goals of using Intune. Stakeholder alignment is important, whether you are new to enterprise mobility or migrating from another product.  
 
 The needs around enterprise mobility are dynamically evolving, and Microsoft's approach to addressing them is sometimes different from other solutions in the market. The best way to align around business goals is to express your goals in terms of the scenarios you want to enable for your employees, partners, and IT department.  
 
@@ -48,9 +48,9 @@ Following are short introductions to the six most common scenarios that rely on 
 Most enterprise mobility strategies begin with a plan to enable secure access to email for employees with mobile devices that connect to the Internet. Many organizations still have on-premises data and application servers, such as Microsoft Exchange, that are hosted on their corporate network.
 
 
-Intune and Microsoft Enterprise Mobility + Security (EMS) provide a uniquely integrated [conditional access solution](conditional-access.md) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can do this all without deploying another gateway machine to the edge of your corporate network.
+Intune and Microsoft Enterprise Mobility + Security (EMS) provide a uniquely integrated [conditional access solution](conditional-access.md) for Exchange Server, which ensures that no mobile app can access email until that device is enrolled with Intune. You can implement this type of email access without deploying another gateway machine to the edge of your corporate network.
 
-Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This is typically done using [Intune-managed certificates](certificates-configure.md) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. 
+Intune also supports enabling access to mobile apps that require secure access to on-premises data, such as line-of-business app servers. This type of access is typically done using [Intune-managed certificates](certificates-configure.md) for access control, combined with a standard VPN gateway or proxy in the perimeter such as Microsoft Azure Active Directory Application Proxy. 
 
 In these cases, the only way to access corporate data is to enroll the device into management. Once the devices are enrolled, the management system ensures that they are compliant with your policies before they can access corporate data. Additionally, Intune’s [App Wrapping Tool and App SDK](apps-prepare-mobile-application-management.md) can help contain the accessed data within your line-of-business app, so that it can’t pass corporate data to consumer apps or services.
 
@@ -100,7 +100,7 @@ Then the employee launches the Intune Company Portal app to access the optional 
 ## Issue limited-use shared tablets to your employees
 Employees are increasingly making use of mobile technologies. For example, shared tablets are now commonly used by retail store employees.  Whether they're used to process a sale or instantly check inventory, tablets help create great customer interactions.
 
-Simplicity of the user experience is critical in this case. For this reason, tablets are usually handed to employees in a limited-use mode, such that a single line-of-business app is the only thing that the employee can interact with. Intune enables you to bulk provision, secure, and centrally manage these shared [iOS and Android](device-profiles.md) devices that can be configured to run in this limited-use mode.
+Simplicity of the user experience is critical in this case. For this reason, tablets are usually provided to employees in a limited-use mode, such that a single line-of-business app is the only thing that the employee can interact with. Intune enables you to bulk provision, secure, and centrally manage these shared [iOS and Android](device-profiles.md) devices that can be configured to run in this limited-use mode.
 
 <!-- Learn more about how to plan and deploy Intune to support shared tablets. -->
 
