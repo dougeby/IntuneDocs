@@ -50,6 +50,10 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 ### App management
 
+#### Uninstalling apps on corporate-owned supervised iOS devices <!-- 1281677 -->
+
+You can remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
+
 #### Downloading Intune Win32 app content <!-- 2617320 -->
 Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
