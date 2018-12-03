@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,8 +30,6 @@ ms.custom: intune-azure; get-started
 
 # What are Microsoft Intune device profiles?
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
 Microsoft Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. Some profile examples include: 
 
 - A WiFi profile that gives different devices access to your corporate WiFi
@@ -40,6 +38,7 @@ Microsoft Intune includes settings and features that you can enable or disable o
 This article provides an overview of the different profiles you can create for your devices. Use these profiles to allow and or prevent some features on the devices.
 
 ## Before you begin
+
 To see the available features, open the [Azure portal](https://portal.azure.com), and open your Intune resource. 
 
 **Device configuration** includes the following options:
@@ -61,42 +60,61 @@ This feature supports:
 - iOS 
 - macOS
 
-
 ## Device restrictions
+
 [Device restrictions](device-restrictions-configure.md) controls security, hardware, data sharing, and more settings on the devices. For example, create a device restriction profile that prevents iOS device users from using the device camera. 
 
 This feature supports:
 
 - Android
+- Android enterprise
 - iOS
 - macOS
 - Windows 10
 - Windows 10 Team
 
+## Delivery optimization
+
+[Delivery optimization](delivery-optimization-windows.md) provides a better experience to delivery software updates. These settings are replacing the **Software Updates** > **Windows 10 update ring** settings.
+
+Use these settings to control how software updates are downloaded to devices in your organization. For example, you can let users get their own updates, or get updates using the delivery optimization cloud services in a device profile.
+
+This feature supports:
+
+- Windows 10 and later
+
 ## Endpoint protection
+
 [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md) configures BitLocker and Windows Defender settings for Windows 10 devices.
 
 To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft Intune, see [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
 
 This feature supports:
+
 - Windows 10 and later
 
 ## Identity protection
+
 [Identity protection](identity-protection-configure.md) controls the Windows Hello for Business experience on Windows 10 and Windows 10 Mobile devices. Configure these settings to make Windows Hello for Business available to users and devices, and to specify requirements for device PINs and gestures.  
 
 This feature supports:  
+
 - Windows 10 and later
 - Windows Holographic for Business  
 
 ## Kiosk
 
-[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run multiple apps. You can also customize other features on your kiosk, including a start menu and a web browser.
+[Kiosk settings](kiosk-settings.md) profile configures a device to run one app, or run many apps. You can also customize other features on your kiosk, including a start menu and a web browser.
 
 This feature supports:
+
 - Windows 10 and later
 
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+
 ## Email
-[Email settings](email-settings-configure.md) profile creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help ensure consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
+
+[Email settings](email-settings-configure.md) creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help with consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
 
 This feature supports: 
 
@@ -106,6 +124,7 @@ This feature supports:
 - Windows 10
 
 ## VPN
+
 [VPN settings](vpn-settings-configure.md) assigns VPN profiles to users and devices in your organization, so they can easily and securely connect to the network. 
 
 Virtual private networks (VPNs) give users secure remote access to your company network. Devices use a VPN connection profile to start a connection with your VPN server. 
@@ -120,6 +139,7 @@ This feature supports:
 - Windows 10
 
 ## Wi-Fi
+
 [Wi-Fi settings](wi-fi-settings-configure.md) assigns wireless network settings to users and devices. When you assign a WiFi profile, users get access to your corporate WiFi without having to configure it themselves. 
 
 This feature supports: 
@@ -131,30 +151,34 @@ This feature supports:
 
 ## eSIM cellular - Public preview
 
-[eSIM cellular profiles](esim-device-configuration.md) provides the ability to configure cellular data plans on your managed devices for internet and data access.  After getting activation codes from your mobile operator, you can use Intune to import these activation codes, and then assign to your eSIM capable devices.
+[eSIM cellular profiles](esim-device-configuration.md) lets administrators configure cellular data plans on your managed devices for internet and data access. After getting activation codes from your mobile operator, use Intune to import these activation codes, and then assign to your eSIM capable devices.
 
 This feature supports:
 - Windows 10 Fall Creators Update and later
 
 ## Education
+
 [Education settings - Windows 10](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
 
-[Education settings - iOS](education-settings-configure-ios-shared.md) uses the iOS Classroom app to guide learning, and control student devices in the classroom. You can configure iPad devices to multiple students can share a single device.
+[Education settings - iOS](education-settings-configure-ios-shared.md) uses the iOS Classroom app to guide learning, and control student devices in the classroom. You can configure iPad devices so many students can share a single device.
 
 ## Edition upgrade
+
 [Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
 
 This feature supports: 
 - Windows 10 and later
 
 ## Update policies
+
 [iOS update policies](software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
 
 This feature supports:
 - iOS
 
 ## Certificates
-[Certificates](certificates-configure.md) configures trusted, SCEP, and PKCS certificates that can be assigned to devices, and used to authenticate WiFi, VPN, and email profiles.
+
+[Certificates](certificates-configure.md) configures trusted, SCEP, and PKCS certificates that are assigned to devices, and used to authenticate WiFi, VPN, and email profiles.
 
 This feature supports: 
 
@@ -165,13 +189,15 @@ This feature supports:
 - Windows 10
 
 ## Windows Information Protection profile
-[Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps to protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. It does this without requiring changes to your environment or other apps.
+
+[Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. Using Windows Information Protection doesn't require shanges to your environment or other apps.
 
 This feature supports:
 - Windows 10 and later
 
 ## Custom profile
-[Custom settings](custom-settings-configure.md) includes the ability to assign device settings that are not built-into Intune. For example, on Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator. 
+
+[Custom settings](custom-settings-configure.md) lets administrators assign device settings that aren't built-into Intune. For example, on Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator. 
 
 This feature supports:
 
@@ -182,4 +208,4 @@ This feature supports:
 
 ## Manage and troubleshoot
 
-[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A list to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
+[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
