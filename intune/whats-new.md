@@ -227,9 +227,6 @@ Intune app protection policies allow you to configure various data protection se
   
 The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow.
 
-### New Intune device subscription SKU !--3312071-->
-To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available in Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Program (MPSA), and Open and Cloud Solution Provider (CSP).
-
 ### Intune apps
 
 #### Intune will support a maximum package size of 8 GB for LOB apps <!-- 1727158 -->
