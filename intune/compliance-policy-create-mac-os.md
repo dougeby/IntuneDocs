@@ -99,7 +99,7 @@ Firewall protects devices from unauthorized network access. You can use Firewall
 
 **Allow apps downloaded from these locations**: Allows supported applications to be installed on your devices from different locations. Your location options:
 
-- **Not configured**: Default. The gatekeepr option has no impact on compliance or non-compliance. 
+- **Not configured**: Default. The gatekeeper option has no impact on compliance or non-compliance. 
 - **Mac App Store**: Only install apps for the Mac app store. Apps can't be installed from third parties nor identified developers. If a user selects Gatekeeper to install apps outside the Mac App Store, then the device is considered not compliant.
 - **Mac App Store and identified developers**: Install apps for the Mac app store and from identified developers. macOS checks the identity of developers, and does some other checks to verify app integrity. If a user selects Gatekeeper to install apps outside these options, then the device is considered not compliant.
 - **Anywhere**: Apps can be installed from anywhere, and by any developer. This option is the least secure.
