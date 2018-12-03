@@ -743,21 +743,9 @@ No additional manifest values need to be configured.
 
 Authority and NonBrokerRedirectURI may be specified if necessary.
 
-Register your app with Azure AD using the following steps.
-
-In the Azure portal:
-1.  Go to **Azure Active Directory** blade.
-2.  Select the **App registration** set up for the application.
-3.  In **Settings** under the **API Access** heading, select **Required permission**. 
-4.  Click **+ Add**.
-5.  Click **Select an API**. 
-6.  In the search box, enter **Microsoft Mobile Application Management**.
-7.  Select **Microsoft Mobile Application Management** in the list of APIs and click select.
-8.  Select **Read and Write the User’s App Management Data**.
-9.  Click **Done**.
-10. Click **Grant permissions**, then click **Yes**. 
-
-See [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
+Register your app with Azure AD using the following steps:
+* See [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
+* Ensure the steps to give your Android app permissions to the app protection policy (APP) service are followed. Use the instructions in the [getting started with the Intune SDK guide](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) under "Give your app access to the Intune app protection service (optional)". 
 
 Also see the requirements for [Conditional Access](#conditional-access) below.
 
