@@ -7,7 +7,7 @@ keywords: what is Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/29/2018
+ms.date: 12/03/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
