@@ -343,6 +343,8 @@
         href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
+      - name: MAM FAQ
+        href: mam-faq.md         
       - name: Selectively wipe apps
         href: apps-selective-wipe.md
       - name: Use app protection policies
@@ -369,8 +371,6 @@
           href: windows-information-protection-policy-create.md
         - name: Manage data transfer between iOS apps
           href: data-transfer-between-apps-manage-ios.md
-    - name: MAM FAQ
-      href: mam-faq.md          
   - name: Configure devices
     href: device-profiles.md
     items:
