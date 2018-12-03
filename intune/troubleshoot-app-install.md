@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,6 +87,20 @@ The following error messages and descriptions provide details about both Android
 |    The user rejected the   offer to update the app. (0x87D13B63)    |    The   end-user clicked cancel during the update process.     |
 |    Unknown error   (0x87D103E8)    |    An   unknown app installation error occurred. This is the resulting error when the   other error have not occurred.    |
 
+### Other installation errors
+
+|    Error message/code    |    Description    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF,   0x80CF201C (client error)    |    To install this app, you must have a sideloading-enabled   system.       Make sure that the app package is signed with a trusted signature   and installed on a domain-joined device that has the **AllowAllTrustedApps**   policy enabled, or a device that has a Windows Sideloading license with the **AllowAllTrustedApps**   policy enabled.    |
+|    0x80073CF0    |    The package could not be opened.   Possible causes:   - The package is unsigned.   - The publisher name does not match the signing   certificate subject.   Check the **AppxPackagingOM** event log for more   information.    |
+|    0x80073CF3    |    The package failed update, dependency, or conflict   validation    Possible causes:   - The incoming package conflicts with an installed   package.   - A specified package dependency is not found.   - The package does not support the correct processor   architecture.   Check the **AppXDeployment-Server** event log for more   information.    |
+|    0x80073CFB    |    The provided package is already installed, and   reinstallation of the package is blocked.   You could receive this error if you are installing a   package that is not identical to the package that is already installed.   Confirm the digital signature is also part of the package. When a package is   rebuilt or re-signed, that package is no longer bitwise identical to the previously   installed package. Two possible options to fix this error are as follows:   - Increment the version number of the app, then rebuild   and re-sign the package.   - Remove the old package for every user on the system   before you install the new package.    |
+|    0x87D1041C    |    Application installation succeeded but application is not   detected.   The app was deployed successfully by Intune, then   subsequently uninstalled (possibly by the end user). Instruct the user to   reinstall the app from the company portal. Required apps will be reinstalled   automatically when the device next checks in.    |
+
+
+## Troubleshooting apps from the Microsoft Store
+
+The information in the topic [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) helps you troubleshoot common problems you might encounter when installing apps from the Microsoft Store, whether by using Intune, or by any other means.
 
 ## Next steps
 
