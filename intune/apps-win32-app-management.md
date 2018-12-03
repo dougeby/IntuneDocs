@@ -31,10 +31,6 @@ Intune standalone will allow greater Win32 app management capabilities. While it
     - enrolled in Intune (MDM-managed)
 - Windows application size is capped at 8 GB per app in the public preview 
 
-> [!NOTE]
-> We are currently testing Pro and Education editions of Windows 10 version 1607 and will be happy to hear your feedback.
-
-
 ## Prepare the Win32 app content for upload
 
 Use the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
