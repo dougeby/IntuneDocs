@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 # Windows 10 (and newer) delivery optimization settings in Microsoft Intune
 
-This article lists and describes all the delivery optimization settings you can configure for Windows 10 devices. These settings are added to a device configuration profile, and then assigned or deployed to your devices using Microsoft Intune.
+This article lists and describes all the delivery optimization settings you can configure for Windows 10 devices. These settings are added to a device configuration profile, and then assigned or deployed to your devices using Microsoft Intune. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization).
 
 ## Settings
 
