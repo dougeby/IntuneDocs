@@ -127,7 +127,7 @@ You can change the settings for a device limit restriction by following these st
 6. Select **Save**.
 
 
-Users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
+During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

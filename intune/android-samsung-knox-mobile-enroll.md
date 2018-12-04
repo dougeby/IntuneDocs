@@ -126,6 +126,8 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 
 - **Device Owner support:** Intune supports enrolling devices to only kiosk mode using Android enterprise. Other Android enterprise device owner modes will be supported as they become available in Intune.
 
+- **No work profile support:** KME is a corporate device enrollment method and devices enrolled in Android work profile ensure work and personal data are separate on personal devices. So, device enrollment to work profile using KME is not a supported scenario in Intune.
+
 - **Factory reset to enroll to Android enterprise:** If repurposing devices that have already been set up, devices need to be factory reset when enrolling to Android enterprise.
 
 - **Updates using Google Play account:** Google Play account is not necessary for enrolling the device to Microsoft Intune. But future updates to the Intune Company Portal app may require a Google Play account on the device. Google Play account is not required when enrolling to Google Device Owner.
