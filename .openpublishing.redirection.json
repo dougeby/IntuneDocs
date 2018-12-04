@@ -3080,8 +3080,8 @@
 		},
 		{
 			"source_path": "intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-device-app-lifecycles",
-			"redirect_document_id": true
+			"redirect_url": "/intune/device-lifecycle",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md",
@@ -4490,9 +4490,14 @@
 		},
 		{
 			"source_path": "intune-classic/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune.md",
-			"redirect_url": "/intune/introduction-device-app-lifecycles",
+			"redirect_url": "/intune/device-lifecycle",
 			"redirect_document_id": true
 		},
+		{
+			"source_path": "intune/introduction-device-app-lifecycles.md",
+			"redirect_url": "/intune/device-lifecycle",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune-classic/deploy-use/overview-of-device-lifecycle-in-microsoft-intune.md",
 			"redirect_url": "/intune/device-lifecycle",

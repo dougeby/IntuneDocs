@@ -70,13 +70,10 @@
     href: get-started-azure.md  
   - name: High-level architecture
     href: high-level-architecture.md
-  - name: Device and app lifecycles
-    href: introduction-device-app-lifecycles.md
-    items:
-    - name: Device lifecycle
-      href: device-lifecycle.md
-    - name: App lifecycle
-      href: app-lifecycle.md
+  - name: Device lifecycle
+    href: device-lifecycle.md
+  - name: App lifecycle
+    href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
   - name: MAM FAQ
