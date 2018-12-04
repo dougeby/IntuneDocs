@@ -4415,14 +4415,19 @@
 		},
 		{
 			"source_path": "intune/understand-explore/intune-glossary.md",
-			"redirect_url": "/intune/intune-glossary",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/understand-explore/intune-glossary.md",
-			"redirect_url": "/intune/intune-glossary",
+			"redirect_url": "/intune/what-is-intune",
+			"redirect_document_id": false
+		},	
+		{
+			"source_path": "intune/intune-glossary.md",
+			"redirect_url": "/intune/what-is-intune",
 			"redirect_document_id": true
-		},		
+		},				
 		{
 			"source_path": "intune/understand-explore/mam-faq.md",
 			"redirect_url": "/intune/mam-faq",
