@@ -1,9 +1,10 @@
+- name: Microsoft Intune documentation
+  href: index.yml
 - name: Overview
-  href: introduction-intune.md
   expanded: true
   items:
-  - name: What is the Azure portal?
-    href: what-is-intune.md
+  - name: What is Intune?
+    href: what-is-intune.md    
   - name: What is Intune for Education?
     href: introduction-intune-education.md
   - name: Sign up for a free trial
@@ -60,8 +61,6 @@
     href: data-outside-protect.md
   - name: Prevent data leaks on non-managed devices
     href: data-leak-prevention.md
-  - name: Compare MDM and MAM
-    href: byod-technology-decisions.md
 - name: Concepts
   items:
   - name: What is device management?
@@ -79,8 +78,8 @@
       href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
-  - name: MAM FAQ
-    href: mam-faq.md
+  - name: Compare MDM and MAM
+    href: byod-technology-decisions.md    
   - name: Policy & profile FAQ
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Plan deployment
@@ -344,6 +343,8 @@
         href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
+      - name: MAM FAQ
+        href: mam-faq.md         
       - name: Selectively wipe apps
         href: apps-selective-wipe.md
       - name: Use app protection policies
@@ -765,8 +766,6 @@
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
-  - name: Microsoft Intune documentation guide
-    href: intune-documentation.md  
   - name: Troubleshoot
     items:
     - name: Help users troubleshoot problems
