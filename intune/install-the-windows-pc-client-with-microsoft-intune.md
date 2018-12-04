@@ -264,4 +264,4 @@ The unenrollment process does not remove the OnlineManagement folder. Wait 30 mi
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### Next steps
-[Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client)
+[Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
