@@ -113,6 +113,10 @@ In the **Apple token** box, browse to the certificate (.pem) file, choose **Open
 
 Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
+> [!NOTE]
+> Devices will be blocked if there are not enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert whne a token is about to expire or licenses are running low.
+ 
+
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 

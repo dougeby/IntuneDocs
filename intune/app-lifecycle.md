@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -59,6 +59,6 @@ Intune gives you many ways to help protect the data in your apps. The main metho
 
 Eventually, it's likely that apps that you deployed become outdated and need to be removed. Intune makes it easy to [retire apps from service](device-management.md).
 
-## Next steps:
+## Next steps
 
 - Learn about [app management in Microsoft Intune](app-management.md)
