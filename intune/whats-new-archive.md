@@ -235,10 +235,10 @@ We've improved the language in the Company Portal for Windows 10 to be more user
 #### New additions to our docs about user privacy <!-- 1440709 -->
 As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
 
-- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**: [Remove your iOS device from Intune](intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**: [Remove your Windows device from Intune](intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## February 2018
 
