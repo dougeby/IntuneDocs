@@ -104,7 +104,7 @@
 		{
 			"source_path": "intune-classic/understand-explore/sign-up-for-30-day-trial-microsoft-intune.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": false
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune-classic/deploy-use/Release-notes-for-Microsoft-Intune.md",
@@ -158,8 +158,8 @@
 		},
 		{
 			"source_path": "intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md",
-			"redirect_url": "https://docs.microsoft.com/intune/end-user-educate",
-			"redirect_document_id": true
+			"redirect_url": "/intune/end-user-educate",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "IntuneDocs/whats-new/whats-coming-in-intune.md",
@@ -521,7 +521,7 @@
 		{
 			"source_path": "intune/deploy-use/account-portal-merged-with-Office-365.md",
 			"redirect_url": "/intune/free-trial-sign-up#admin-experiences",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/configure-and-deploy-lookout-for-work-apps.md",
@@ -556,12 +556,12 @@
 		{
 			"source_path": "intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy.md",
 			"redirect_url": "/intune/mobile-threat-defense",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/enable-lookout-mtp-connection-in-intune.md",
 			"redirect_url": "/intune/mobile-threat-defense",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md",
@@ -591,12 +591,12 @@
 		{
 			"source_path": "intune/deploy-use/restrict-access-based-on-device-network-app-risk.md",
 			"redirect_url": "/intune/mobile-threat-defense",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/set-up-your-subscription-with-lookout-mtp.md",
 			"redirect_url": "/intune/mobile-threat-defense",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/whats-new-in-microsoft-intune.md",
@@ -711,7 +711,7 @@
 		{
 			"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/manage-applications-without-enrolling-devices.md",
@@ -756,7 +756,7 @@
 		{
 			"source_path": "intune/understand-explore/start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/use-multi-identity.md",
@@ -1876,7 +1876,7 @@
 		{
 			"source_path": "intune/introduction/sign-up-free-trial-microsoft-intune.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/introduction/ui-changes-in-microsoft-intune.md",
@@ -2721,7 +2721,7 @@
 		{
 			"source_path": "intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md",
 			"redirect_url": "/intune/end-user-educate",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/deploy-use/how-your-android-users-get-their-apps.md",
@@ -4381,22 +4381,22 @@
 		{
 			"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md",
 			"redirect_url": "/intune/free-trial-sign-up",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/understand-explore/introduction-to-intune-education.md",
