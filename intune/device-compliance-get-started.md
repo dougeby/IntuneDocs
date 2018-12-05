@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 
 ms.topic: article
 ms.prod:
@@ -47,6 +47,9 @@ Compliance requirements are essentially rules, such as requiring a device PIN, o
 - Require the device to be at, or under the Mobile Threat Defense level
 
 You can also use device compliance policies to monitor the compliance status in your devices.
+
+> [!IMPORTANT]
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
