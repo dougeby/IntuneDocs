@@ -54,7 +54,7 @@ This article shows you how to use security baselines to create a profile, assign
 
     ![See a list of the currently available security baselines](./media/security-baselines/available-baselines.png)
 
-3. Select the baseline you'd like to use, for example: **PREVIEW: MDM Security Baseline for October 2018 (beta)** > **Create profile**.
+3. Select the baseline you'd like to use.
 4. In **Basics**, enter the following properties:
 
     - **Name**: Enter a name for your security baselines profile. For example, enter `Windows 10 MDM baseline - Oct 2018`.
@@ -76,7 +76,7 @@ The profile is created. But, it's not doing anything yet. Next, assign the profi
 
 After the profile is created, it's ready to be assigned to your users, devices, and groups. Once assigned, the profile and its settings are applied to the users, devices, and groups you choose.
 
-1. In Intune, select **Security Baselines** > **PREVIEW: MDM Security Baseline for October 2018 (beta)** > **Profiles created**.
+1. In Intune, select **Security Baselines** > choose a baseline > **Profiles created**.
 2. Select your profile > **Assignments**.
 
     ![Choose your profile, and click assignments](./media/security-baselines/assignments.png)
