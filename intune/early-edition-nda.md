@@ -74,9 +74,6 @@ A new page will be added to the Windows Company Portal App. The help and support
 When using trusted network detection, you'll be able to prevent VPN profiles from automatically creating a VPN connection when the user is already on a trusted network. You'll be able to add DNS suffixes to enable trusted network detection on devices running Windows 10 and later (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **VPN** for profile type).
 [Windows 10 VPN settings](vpn-settings-windows-10.md) lists the current VPN settings.
 
-### Support for Android corporate-owned, fully managed devices <!-- 574342 -->
-Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**.
-
 ### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
 The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
