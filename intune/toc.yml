@@ -841,5 +841,3 @@
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Resolve policy conflicts
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-  - name: Glossary
-    href: intune-glossary.md
