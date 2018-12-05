@@ -273,15 +273,6 @@ When you choose a failure row, more details are provided.
 | Enrollment authorization failed | An enrollment was attempted using an old version of company portal. |
 | Device not supported | The device doesn't meet the minimum requirements for Intune enrollment. |
 | Enrollment restrictions not met | This enrollment was blocked due to an admin configured enrollment restriction. |
-| Device version too low | The admin has configured an enrollment restriction requiring a higher device version. |
-| Device version too high | The admin has configured an enrollment restriction requiring a lower device version. |
-| Device cannot be enrolled as personal | The admin has configured an enrollment restriction to block personal enrollments and the failed device wasn't predefined as corporate. |
-| Device platform blocked | The admin has configured an enrollment restriction that blocks this device's platform. |
-| Bulk token expired | The bulk token in the provisioning package has expired. |
-| Autopilot device or details not found | The Autopilot device wasn't found when attempting to enroll. |
-| Autopilot profile not  found or not assigned | The device doesn't have an active Autopilot profile. |
-| Autopilot enrollment method unexpected | The device attempted to enroll by using a non-allowed method. |
-| Autopilot device removed | The device attempting to enroll has been removed from Autopilot for this account. |
 | Device cap reached | This enrollment was blocked due to an admin configured device limit restriction. |
 | Apple onboarding | All iOS devices were blocked from enrolling at this time due to a missing or expired Apple MDM push certificate within Intune. |
 | Device not preregistered | The device wasn't pre-registered as corporate and all personal enrollments were blocked by an admin. |
