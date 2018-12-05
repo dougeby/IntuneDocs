@@ -227,10 +227,6 @@
   - name: Set device compliance
     href: device-compliance-get-started.md
     items:
-    - name: Create Android policy
-      href: compliance-policy-create-android.md
-    - name: Create Android Enterprise profile policy
-      href: compliance-policy-create-android-for-work.md
     - name: Create a policy to enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
@@ -272,8 +268,6 @@
     - name: Device restrictions
       href: device-restrictions-configure.md
       items:
-      - name: Android
-        href: device-restrictions-android.md
       - name: Android Enterprise
         href: device-restrictions-android-for-work.md        
       - name: iOS
@@ -295,8 +289,6 @@
     - name: Email settings
       href: email-settings-configure.md
       items:
-      - name: Android
-        href: email-settings-android.md
       - name: iOS
         href: email-settings-ios.md
       - name: Windows Phone 8.1
@@ -306,8 +298,6 @@
     - name: VPN settings
       href: vpn-settings-configure.md
       items:
-      - name: Android
-        href: vpn-settings-android.md
       - name: iOS
         href: vpn-settings-ios.md
       - name: Configure Per-App VPN for iOS devices
@@ -323,8 +313,6 @@
     - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
-      - name: Android
-        href: wi-fi-settings-android.md
       - name: Android Enterprise & kiosk
         href: wi-fi-settings-android-enterprise.md
       - name: iOS
@@ -744,6 +732,64 @@
       href: troubleshoot-exchange-connector.md
 - name: Settings lists
   href: settings.md
+  - name: Android compliance and configuration
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-android.md
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-android.md
+      - name: Email
+        href: email-settings-android.md#android-samsung-knox
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS imported certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-android.md#android-vpn-settings
+      - name: Wi-Fi
+        href: wi-fi-settings-android.md
+      - name: Custom
+        href: custom-settings-android.md
+  - name: Android Enterprise compliance and configuration settings
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-android-for-work.md
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-android-for-work.md
+      - name: Email
+        href: email-settings-android.md#android-enterprise
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS imported certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-android.md#android-for-work-vpn-settings
+      - name: Wi-Fi
+        href: wi-fi-settings-android-enterprise.md
+      - name: Custom
+        href: custom-settings-android-for-work.md
+  - name: iOS compliance and configuration settings
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-ios.md
+    - name: Configuration profile settings
+      items:
+      - name: Device features
+        href: 
+      - name: Device restrictions
+        href: 
 - name: Resources
   items:
   - name: Microsoft Intune documentation guide
