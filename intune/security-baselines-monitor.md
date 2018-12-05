@@ -38,8 +38,11 @@ This article walks you through both monitoring options.
 
 When you monitor the baseline, you get insight into the security state of your devices based on Microsoft's recommendations.
 
+> [!NOTE]
+> After a baseline is first assigned, reports may take up to 24 hours to update. After that, they may take up to 6 hours to update.
+
 1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
-2. Select **Security Baselines (preview)** > **PREVIEW: MDM Security Baseline for October 2018 (beta)**.
+2. Select a baseline.
 3. In **Overview**, the graph shows how many devices are impacted by the baseline, and the different statuses:
 
     ![Check the status of the devices](./media/security-baselines-monitor/overview.png)
