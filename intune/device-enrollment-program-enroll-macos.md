@@ -2,13 +2,13 @@
 # required metadata
 
 title: Enroll macOS devices - Device Enrollment Program or Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: 
 description: Learn how to enroll corporate-owned macOS devices using the Device Enrollment Program.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 

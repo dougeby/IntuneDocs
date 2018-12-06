@@ -2,6 +2,7 @@
 # required metadata
 
 title: Early edition
+titlesuffix: Microsoft Intune
 description:
 keywords:
 author: ErikjeMS  
@@ -23,7 +24,7 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 ---
 
 # The early edition for Microsoft Intune - December 2018
