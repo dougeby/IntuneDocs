@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set up Apple School Manager Program enrollment for iOS devices
+title: Apple School Manager Program enrollment for iOS devices
 titleSuffix: Microsoft Intune
 description: Learn how to set up Apple School Manager program enrollment for corporate-owned iOS devices with Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,8 +24,8 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
 ms.custom: seodec18
+
 ---
 
 # Set up iOS device enrollment with Apple School Manager
