@@ -25,9 +25,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.custom: seodec18
 ---
 
-# Manage your company's terms and conditions for user access
+# Terms and conditions for user access
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

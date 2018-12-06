@@ -3,7 +3,7 @@
 
 title: Enroll devices using a device enrollment manager account
 titlesuffix: "Microsoft Intune"
-description: Use the device enrollment manager account to enroll devices in Intune. "
+description: Use the device enrollment manager account to enroll devices in Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -25,9 +25,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.custom: seodec18
 ---
 
-# Enroll devices by using a device enrollment manager account
+# Enroll devices in Intune by using a device enrollment manager account
 
 You can enroll up to 1,000 mobile devices with a single Azure Active Directory account by using a device enrollment manager (DEM) account. DEM is an Intune permission that can be applied to an AAD user account and lets the user enroll up to 1,000 devices. A DEM account is useful for scenarios where devices are enrolled and prepared before handing them out to the users of the devices.
 
