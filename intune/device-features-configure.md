@@ -37,7 +37,7 @@ Intune includes many features and settings that help administrators control iOS 
 - Give users a secure single sign-on experience to share credentials between apps
 - Filter web sites that use adult language and allow or block specific web sites
 
-These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" so you can create and customize these settings for your organization's needs. After you configure these features in a profile, you can then push or deploy the profile to iOS and macOS devices in your organization.
+These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you can then push or deploy the profile to iOS and macOS devices in your organization.
 
 This article shows you how to create a device configuration profile. You can also see all the available settings for [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) devices.
 
@@ -48,7 +48,7 @@ This article shows you how to create a device configuration profile. You can als
 3. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. This is optional, but recommended.
+   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Select your platform:
      - **iOS**
      - **macOS**

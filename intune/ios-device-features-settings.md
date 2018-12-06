@@ -43,13 +43,13 @@ This feature allows iOS users to print to known AirPrint printers.
 1. In **Settings**, select **AirPrint**. Enter the following properties of the AirPrint server:
 
     - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
-    - **Path**: This is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
+    - **Path**: The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
     - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
     - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
 2. Select **Add**. The AirPrint server is added to the list. You can add many AirPrint servers.
 
-    You can also **Import** a comma separated file (.csv) with this information. After you create the list, you can also **Export** your list of AirPrint servers.
+    You can also **Import** a comma-separated file (.csv) with this information. After you create the list, you can also **Export** your list of AirPrint servers.
 
 3. When finished, select **OK** to save your list.
 
@@ -74,13 +74,13 @@ These settings configure the app layout and folders on the dock and home screens
 
 Use the **Dock** settings to add up to six items or folders to the dock of the iOS screen. Many devices support fewer items. For example, iPhone devices support up to four items. In this case, only the first four items you add are shown on the device.
 
-1. In **Settings**, select **Home Screen Layout (supervised only)** > **Dock** > **Add**. You can add up to **6** items (apps and folders combined) for the device dock.
+1. In **Settings**, select **Home Screen Layout (supervised only)** > **Dock** > **Add**. You can add up to **six** items (apps and folders combined) for the device dock.
 2. In **Type**, choose to add an **App** or a **Folder**.
 
     - **Add an app**: Choose this option to add apps to the dock on the screen. Enter:
 
       - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-      - **App Bundle ID**: Enter the bune ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
+      - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
 
       Select **OK** to save your changes.
 
@@ -93,7 +93,7 @@ Use the **Dock** settings to add up to six items or folders to the dock of the i
 
           - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-          - **App Bundle ID**: Enter the bune ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
+          - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
 
       3. Choose **Add**. You can add up to **20** pages for the device dock.
       4. Select **OK** to save your changes.
@@ -125,7 +125,7 @@ Add the pages you want shown on the home screen, and the apps you want shown on 
     - **Add an app**: Choose this option to add apps to a page on the screen. Enter:
 
       - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-      - **App Bundle ID**: Enter the bune ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
+      - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
 
       Select **OK** to save your changes.
 
@@ -138,7 +138,7 @@ Add the pages you want shown on the home screen, and the apps you want shown on 
 
           - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
-          - **App Bundle ID**: Enter the bune ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
+          - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) for some examples.
 
       3. Choose **Add**.
       4. Select **OK** to save your changes.
@@ -155,7 +155,7 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
-Chose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
+Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
 1. In **Settings**, select **App Notifications (supervised only)** > **Add**:
 
@@ -168,19 +168,19 @@ Chose how installed apps on iOS devices send notifications. These settings suppo
     - **Publisher**: Enter the publisher of the app you're adding. This name is used for your reference in the Azure portal. It *isn't* shown on the device.
     - **Notifications**: **Enable** or **Disable** the app from sending notifications to the device.
        - **Show in Notification Center**: **Enable** allows the app to show notifications in the device Notification Center. **Disable** prevents the app from showing notifications in the Notification Center.
-       - **Show in Lock Screen**: **Enable** to see notifications from the app on the device lock screen. **Disable** prevents the app from showing notifications on the lock screen.
+       - **Show in Lock Screen**: Select **Enable** to see notifications from the app on the device lock screen. **Disable** prevents the app from showing notifications on the lock screen.
        - **Alert type**: When the device is unlocked from, choose how the notification is shown. Your options:
          - **None**: No notification is shown.
          - **Banner**: A banner is briefly shown with the notification.
          - **Modal**: The notification is shown and the user must manually dismiss it before continuing to use the device.
-       - **Badge on app icon**: **Enable** to add a badge to the app icon. The badge means the app sent a notification.
-       - **Sounds**: **Enable** to play a sound when a notification is delivered.
+       - **Badge on app icon**: Select **Enable** to add a badge to the app icon. The badge means the app sent a notification.
+       - **Sounds**: Select **Enable** to play a sound when a notification is delivered.
 
 3. Select **OK** to save your changes. Continue adding the apps you want. When finished, select **OK**.
 
 ## Shared device configuration settings
 
-Use these settings to show a custom message or text on the login window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
+Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
 
 These settings support supervised devices running iOS 9.3 and later.
 
@@ -189,7 +189,7 @@ These settings support supervised devices running iOS 9.3 and later.
 
     - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp`. 
 
-	  The text you enter is shown on the login window and lock screen on the device.
+	  The text you enter is shown on the sign in window and lock screen on the device.
 
     - **Lock screen footnote**: If the device is lost or stolen, enter a note that might help get the device returned. For example, enter something like `If found, call Contoso at ...`.
 
@@ -197,11 +197,11 @@ These settings support supervised devices running iOS 9.3 and later.
 
 ## Single sign-on settings
 
-Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeteadly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO), and reduce the number of times a user must enter credentials.
+Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
 
 To use single sign-on, be sure you have:
 
-- An app coded to look for the user credential store in the single sign-on payload on the iOS device.
+- An app that's coded to look for the user credential store in single sign-on on the device.
 - Intune configured for iOS device single sign-on.
 
 1. In **Settings**, select **Single sign-on**:
@@ -232,22 +232,22 @@ To use single sign-on, be sure you have:
     - **Realm**: Enter the domain part of the URL. For example, enter `contoso.com`.
     - **URL prefixes that will use Single Sign On**: **Add** any URLs in your organization that require user single sign-on authentication.
 
-        For example, when a user connects to any of these sites, the iOS device uses the single sign-on credentials. The user doesn't need to enter any additional credentials. However, if you have multi-factor authentication enabled, users are required to enter the second authentication.
+        For example, when a user connects to any of these sites, the iOS device uses the single sign-on credentials. The user doesn't need to enter any additional credentials. If multi-factor authentication is enabled, then users are required to enter the second authentication.
 
         > [!NOTE]
         > These URLs must be properly formatted FQDN. Apple requires these to be in the `http://<yourURL.domain>` format.
 
-        The URL matching patterns must begin with either `http://` or `https://`. A simple string match is ran, so the `http://www.contoso.com/` URL prefix doesn't match `http://www.contoso.com:80/`. With iOS 10.0 or later, a single wildcard \* may be used to enter all matching values. For example, `http://*.contoso.com/` matches both `http://store.contoso.com/` and `http://www.contoso.com`.
+        The URL matching patterns must begin with either `http://` or `https://`. A simple string match is run, so the `http://www.contoso.com/` URL prefix doesn't match `http://www.contoso.com:80/`. With iOS 10.0 or later, a single wildcard \* may be used to enter all matching values. For example, `http://*.contoso.com/` matches both `http://store.contoso.com/` and `http://www.contoso.com`.
 
         The `http://.com` and `https://.com` patterns match all HTTP and HTTPS URLs, respectively.
 
     - **Apps that will use Single Sign On**: **Add** apps on end users' devices that can use single sign-on.
 
-        The `AppIdentifierMatches` array must contain strings that match app bundle IDs. These strings may be exact matches, such as `com.contoso.myapp`, or enter a prefix match on the bundle ID using the \* wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string, such as `com.contoso.*`. When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
+        The `AppIdentifierMatches` array must include strings that match app bundle IDs. These strings may be exact matches, such as `com.contoso.myapp`, or enter a prefix match on the bundle ID using the \* wildcard character. The wildcard character must appear after a period character (.), and may appear only once, at the end of the string, such as `com.contoso.*`. When a wildcard is included, any app whose bundle ID begins with the prefix is granted access to the account.
 
         Use **App Name** to enter a user-friendly name to help you identify the bundle ID.
 
-    - **Credential renewal certificate**: If using certificates for authentication (not passwords), select the existing SCEP or PFX certificate as the authentication certificate. Typically, this is the same certificate that's deployed to the user for other profiles, such as VPN, Wi-Fi, or email.
+    - **Credential renewal certificate**: If using certificates for authentication (not passwords), select the existing SCEP or PFX certificate as the authentication certificate. Typically, this certificate is the same certificate that's deployed to the user for other profiles, such as VPN, Wi-Fi, or email.
 
 3. When finished, select **OK** to save your changes.
 
@@ -258,7 +258,7 @@ These settings control browser URL access on iOS devices.
 1. In **Settings**, select **Web Content Filter (supervised only)**.
 2. Choose the **Filter Type**. Your options:
 
-    - **Configure URLs**: Use Apple’s built-in web filter that looks for adult terms, including profanity and sexually explicit language. This feature evaluates each web page as it's loaded, and attempts to identify and block unsuitable content. You can also configure URLs that aren't checked by the filter, or URLs that are blocked, regardless of the filter settings.
+    - **Configure URLs**: Use Apple’s built-in web filter that looks for adult terms, including profanity and sexually explicit language. This feature evaluates each web page as it's loaded, and identifies and blocks unsuitable content. You can also add URLs that you don't want checked by the filter. Or, block specific URLs, regardless of Apple's filter settings.
 
       - **Permitted URLs**: **Add** the URLs you want to allow. These URLs bypass Apple's web filter.
 

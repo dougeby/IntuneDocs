@@ -45,7 +45,7 @@ Intune includes some built-in settings to allow macOS users to print to AirPrint
 
 2. Select **Add**. The AirPrint server is added to the list. You can add many AirPrint servers.
 
-    You can also **Import** a comma separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
+    You can also **Import** a comma-separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
 
 3. When finished, select **OK** to save your list.
 
