@@ -56,6 +56,17 @@ On Windows 10 and later devices, you'll be able to create a VPN configuration pr
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
+### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 eeready -->
+S/MIME email encryption using a new imported certificate profile will be supported (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
+
+- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
+- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
+- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
+- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
+- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
+
+Supported on: Windows, Windows Phone 10, macOS, iOS, Android
+
 ### Help and Support page in the Windows Company Portal App <!-- 1488939 -->
 A new page will be added to the Windows Company Portal App. The help and support page will provide Helpdesk contact information. Also, end users will be able to send Company Portal logs in the event that they are having issues. The page also provides an FAQ section to assist end users.
 
