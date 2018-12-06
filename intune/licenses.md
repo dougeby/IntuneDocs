@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune licenses
+title: Licenses available for Microsoft Intune
 description: Intune is available with these licenses
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 
 ---
 
