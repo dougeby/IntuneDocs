@@ -28,11 +28,11 @@ ms.custom: seodec18
 
 ---
 
-# Enable iOS device enrollment with Apple School Manager
+# Set up iOS device enrollment with Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article helps you enable iOS device enrollment for devices purchased through the [Apple School Manager](https://school.apple.com/) program. Using Intune with Apple School Manager, you can enroll large numbers of iOS devices without ever touching them. When a student or teacher turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
+You can set up Intune to enroll iOS devices purchased through the [Apple School Manager](https://school.apple.com/) program. Using Intune with Apple School Manager, you can enroll large numbers of iOS devices without ever touching them. When a student or teacher turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable Apple School Manager enrollment, you use both the Intune and Apple School Manager portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 

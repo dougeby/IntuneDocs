@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article helps you set up macOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com) or [Apple School Manager](https://school.apple.com/). You can use either of these enrollments for large numbers of devices without ever touching them. You can ship macOS devices directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into Intune management.
+You can set up Intune enrollment for macOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com) or [Apple School Manager](https://school.apple.com/). You can use either of these enrollments for large numbers of devices without ever touching them. You can ship macOS devices directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into Intune management.
 
 To set up enrollment, you use both the Intune and Apple DEP portals. You create enrollment profiles containing settings that applied to devices during enrollment.
 
