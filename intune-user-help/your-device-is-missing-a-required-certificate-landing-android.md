@@ -33,7 +33,7 @@ ms.custom: intune-enduser; seodec18
 
 ## What's a certificate?
 
-[Cryptography](https://technet.microsoft.com/library/cc962030.aspx) is the science of providing security for information. Traditionally, cryptography has been used to pass coded messages to [ensure that communication is kept secret](https://technet.microsoft.com/library/cc962019.aspx). In its simpliest form, cryptography substitutes or transposes letters to create a coded message into an unreadable, scrambled, or hidden message. Only someone with a decoding key, or _certificate_, can convert the coded message back into its original, readable form. Your Android device uses certificates with Intune to make sure that communications between your device and your organizational resources, such as email and documents, are kept safe from one end, through the air, to the other.
+[Cryptography](https://technet.microsoft.com/library/cc962030.aspx) is the science of providing security for information. Traditionally, cryptography has been used to pass coded messages to [ensure that communication is kept secret](https://technet.microsoft.com/library/cc962019.aspx). In its simplist form, cryptography substitutes or transposes letters to create a coded message into an unreadable, scrambled, or hidden message. Only someone with a decoding key, or _certificate_, can convert the coded message back into its original, readable form. Your Android device uses certificates with Intune to make sure that communications between your device and your organizational resources, such as email and documents, are kept safe from one end, through the air, to the other.
 
 ## Fixing certificate issues
 
@@ -43,6 +43,6 @@ If your Android device isn’t enrolled in Intune, and it’s missing a certain 
 
 The first step you should try is to see if your device is [missing a certificate that usually comes preinstalled on it](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-If this doesn't work, your company support could [require you to install a second certificate for additional security](your-device-is-missing-an-IT-required-certificate-android.md).
+If resolving certificate issues doesn't work, your company support could [require you to install a second certificate for additional security](your-device-is-missing-an-IT-required-certificate-android.md).
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
