@@ -3,7 +3,7 @@
 
 title: Early edition
 titlesuffix: Microsoft Intune
-description:
+description: Microsoft Intune early edition
 keywords:
 author: ErikjeMS  
 ms.author: erikje
