@@ -2,8 +2,8 @@
 # required metadata
 
 title: Add corporate identifiers to Intune
-titlesuffix: "Microsoft Intune"
-description: Learn how to add corporate identifiers (enrollment method, IMEI and serial numbers) to Microsoft Intune.
+titlesuffix: 
+description: Learn how to add corporate identifiers (enrollment method, IMEI, and serial numbers) to Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.custom: seodec18
 ---
 
 # Identify devices as corporate-owned

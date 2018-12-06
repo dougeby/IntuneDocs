@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a design
+title: Create your Microsoft Intune design
 titlesuffix: Microsoft Intune
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
@@ -24,7 +24,7 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom:
+ms.custom: seodec18
 
 ---
 
