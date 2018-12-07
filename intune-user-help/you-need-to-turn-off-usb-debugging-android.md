@@ -2,12 +2,13 @@
 # required metadata
 
 title: You need to turn off USB debugging | Microsoft Docs
-description:
+titlesuffix: Microsoft Intune
+description: You need to turn off USB debugging on our device.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +25,7 @@ ROBOTS:
 #ms.reviewer: chrisbal
 #ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-enduser
+ms.custom: intune-enduser; seodec18
 
 ---
 

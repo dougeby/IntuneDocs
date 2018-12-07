@@ -26,10 +26,11 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
+ms.custom: seodec18
 
 ---
 
-# Supported operating systems and browsers
+# Supported operating systems and browsers in Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
