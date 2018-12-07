@@ -150,7 +150,7 @@ In your Device Configuration, there are more detailed error codes and error mess
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
 
 #### Disable checks on device restart <!--1805490 -->
-Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
+Intune gives you control to [manage software updates](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
 
 #### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
 You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
