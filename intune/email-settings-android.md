@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Email settings for Android & Android work profile devices in Microsoft Intune
-description: Create a device configuration email profile that uses Exchange servers, and retrieves attributes from Azure Active Directory. You can also enable SSL or SMIME, authenticate users with certificates or username/password, and synchronize email and schedules on Android and Android work profile devices using Microsoft Intune.
+title: Android & Android Enterprise email settings in Microsoft Intune - Azure | Microsoft Docs
+description: Create a device configuration email profiles that use Exchange servers, and retrieve attributes from Azure Active Directory. Enable SSL or SMIME, authenticate users with certificates or username/password, and synchronize email and schedules on Android and Android work profile devices using Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -25,14 +25,18 @@ ms.custom: seodec18
 
 ---
 
-# Email profile settings for devices running Android and Android Enterprise - Intune
+# Android and Android Enterprise device settings to configure email, authentication, and synchronization in Intune
 
-Use the email profile settings to configure your devices running Android.
+This article lists and describes the different email settings you can control on Android and Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to configure an email server, use SSL to encrypt emails, and more.
 
 As an Intune administrator, you can create and assign email settings to the following Android devices:
 
 - Android Samsung Knox Standard
 - Android Enterprise
+
+## Before you begin
+
+[Create a device configuration profile](email-settings-configure.md).
 
 ## Android (Samsung Knox)
 

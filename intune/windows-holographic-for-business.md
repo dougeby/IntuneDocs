@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,11 +20,11 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure, seodec18
 
 ---
 
-# Manage and use Windows Holographic and HoloLens devices with Intune
+# Manage and use different device management features on Windows Holographic and HoloLens devices with Intune
 
 Microsoft Intune includes many features to help manage devices that run Windows Holographic for Business, such as the [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Using Intune, you can confirm that devices are compliant with your organization's rules, and you can customize the device by adding a VPN or WiFi profile. Another key feature is to use the device as a Kiosk, and run a specific app, or a specific set of apps.
 
@@ -36,9 +36,9 @@ To use Windows Holographic devices with Intune, create an Edition Upgrade profil
 
 Azure Active Directory (AD) is a great resource to help manage and control your devices running Windows Holographic for Business. Using Intune and Azure AD, you can: 
 
-- **[Set up Azure Active Directory joined devices](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: In Azure Active Directory (AD), you can add your work-owned Windows 10 devices, including devices running Windows Holographic for Business. This feature allows Azure AD to control the device. It helps confirm that users are accessing the company resources from devices that meet your security and compliance standards.
+- **[Join devices to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: In Azure Active Directory (AD), you can add your work-owned Windows 10 devices, including devices running Windows Holographic for Business. This feature allows Azure AD to control the device. It helps confirm that users are accessing the company resources from devices that meet your security and compliance standards.
 
-  [Introduction to device management in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more details.
+  [Device management in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) provides more details.
 
 - **[Bulk enrollment for Windows devices](windows-bulk-enroll.md)**: You can join large numbers of new Windows devices to Azure Active Directory (AD) and Intune. This feature is called bulk enrollment, and uses provisioning packages. These packages join the devices running Windows Holographic for Business to your Azure AD tenant, and enrolls them in Intune.
 
@@ -53,7 +53,6 @@ Using the Company Portal app, you can also run the following actions:
 - [Rename a device](/intune-user-help/rename-your-device-cpapp)
 - [Install apps](/intune-user-help/install-apps-cpapp-windows) on a device
 - [Sync devices manually](/intune-user-help/sync-your-device-manually-windows) from the Settings app or the Company Portal app
-
 
 ## Compliance policy
 **[Create a device compliance policy](compliance-policy-create-windows.md)**
