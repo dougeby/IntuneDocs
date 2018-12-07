@@ -123,6 +123,9 @@ You'll be able to create a configuration profile that sets endpoint protection s
 To see the current Windows 10 edition settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
+### Intune device reporting fields <!-- 2748738 -->
+Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
+
 ### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal <!-- 2809362 -->
 When you create a configuration profile for iOS devices, you'll be able to add **Shared Device Configuration** settings to show specific text on the lock screen. This includes the following changes: 
 
