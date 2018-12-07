@@ -107,4 +107,4 @@ For more information about end-user tasks, see [Resources about the end-user exp
 
 ## Next steps
 
-- [Considerations when managing Windows devices using Intune on Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Considerations when managing Windows devices using Intune on Azure](intune-legacy-pc-client.md).

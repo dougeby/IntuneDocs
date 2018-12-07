@@ -1570,7 +1570,7 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 * Restricting mobile device enrollment does not restrict PC client enrollment.  
 * For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
 
-Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices).
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](device-enrollment.md).
 
 ### View all actions on managed devices <!--677150-->
 A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action. See [What is device management?](device-management.md).
