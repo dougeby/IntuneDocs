@@ -48,7 +48,7 @@ Compliance policies created in the Azure classic portal will be deprecated. You 
 
 ### Intune legacy PC client features are only available in the Silverlight console
 
-The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](intune-legacy-pc-client.md).
 
 ### Groups created by Intune during migration might affect functionality of other Microsoft products
 

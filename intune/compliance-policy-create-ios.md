@@ -79,7 +79,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Select the email profile that must be managed by Intune**: If the **Email account must be managed by Intune** setting is selected, choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
-For details about email profile, see [Configure access to corporate email using email profiles with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
+For details about email profile, see [Configure access to corporate email using email profiles with Microsoft Intune](email-settings-configure.md).
 
 ## Device health
 
