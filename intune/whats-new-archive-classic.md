@@ -46,7 +46,7 @@ The Managed Browser is receiving updated icons for both the Android and iOS vers
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
-#### Sign-in progress indicator in Android Company Portal <!--953374-->
+#### Sign in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-app-ui.md).
 
@@ -62,7 +62,7 @@ New, more specific error messages will now be displayed within the Company Porta
 
 #### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
-New improvements for app installs started in the Windows 10 Company Portal app include:
+New improvements for app install started in the Windows 10 Company Portal app include:
 -	Faster install progress reporting for MSI packages
 -	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
 -	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
@@ -113,9 +113,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 #### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
-We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
-You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](whats-new-app-ui.md) page.
+You can find screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device on the [What's new in app UI](whats-new-app-ui.md) page.
 
 #### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
