@@ -36,7 +36,7 @@ ms.custom: seodec18
 
 Before setting up Microsoft Intune, review the supported operating systems and browsers.
 
-For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) and [Intune network bandwidth usage](network-bandwidth-use.md)).
+For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) and [Intune network bandwidth usage](network-bandwidth-use.md).
 
 ## Intune supported operating systems
 
