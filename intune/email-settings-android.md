@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Email settings for Android & Android work profile devices in Microsoft Intune - Azure | Microsoft Docs
+title: Email settings for Android & Android work profile devices in Microsoft Intune
 description: Create a device configuration email profile that uses Exchange servers, and retrieves attributes from Azure Active Directory. You can also enable SSL or SMIME, authenticate users with certificates or username/password, and synchronize email and schedules on Android and Android work profile devices using Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 

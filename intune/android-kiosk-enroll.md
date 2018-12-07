@@ -25,10 +25,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
-# Set up enrollment of Android enterprise kiosk devices
+# Set up Intune enrollment of Android enterprise kiosk devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
