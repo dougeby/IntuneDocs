@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Check Point SandBlast MTD with Microsoft Intune
-titlesuffix:
+title: Integrate Check Point SandBlast MTD
+titlesuffix: Microsoft Intune
 description: How to set up CheckPoint SandBlast Mobile Threat Defense (MTD) with Intune to control mobile device access to your corporate resources.
 keywords:
 author: brenduns

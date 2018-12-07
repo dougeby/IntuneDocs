@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up iOS device enrollment - Apple Configurator-Setup Assistant
+title: iOS device enrollment - Apple Configurator-Setup Assistant
 titleSuffix: Microsoft Intune
 description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant.
 keywords:

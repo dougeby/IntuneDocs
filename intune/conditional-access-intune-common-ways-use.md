@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Conditional access with Microsoft Intune
-titlesuffix:
+title: Conditional access scenarios 
+titlesuffix: Microsoft Intune
 description: Learn how Intune conditional access is commonly used for device-based and app-based conditional access.
 keywords:
 author: brenduns
