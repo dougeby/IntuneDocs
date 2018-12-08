@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Early edition
-titlesuffix: Microsoft Intune
+title: Early edition - Microsoft Intune
+titlesuffix: 
 description: Microsoft Intune early edition
 keywords:
 author: ErikjeMS  
