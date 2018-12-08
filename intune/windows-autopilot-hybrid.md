@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enrollment for hybrid Active Directory joined devices using Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Intune.
+title: Enrollment for hybrid Active Directory joined devices - Windows Autopilot
+titleSuffix: 
+description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje

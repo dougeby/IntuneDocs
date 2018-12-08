@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Upgrade Windows Holographic to Windows Holographic for Business
+title: Upgrade to Windows Holographic for Business
 titleSuffix: Microsoft Intune
 description: Learn how to ugrade devices running Windows Holographic to Window Holographic for Business
 keywords:
