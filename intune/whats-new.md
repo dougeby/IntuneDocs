@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,11 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 -->     
 
 ## Week of December 10, 2018
+
+### App management
+
+#### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
+The Intune App SDK for Android now uses 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
 ### Microsoft Auto Update version 4.50 required for macOS devices <!-- 3503442 -->
 To continue receiving updates for the Company Portal and other Office applications, macOS devices managed by Intune must upgrade to Microsoft Auto Update 4.5.0. Users might already have this version for their Office apps.
