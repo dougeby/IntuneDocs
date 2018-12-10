@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,14 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+## Week of December 10, 2018
+
+### App management
+
+#### Updates for Application Transport Security <!-- 748318 -->
+
+Microsoft Intune supports Transport Layer Security (TLS) 1.2+ to provide best-in-class encryption, to ensure Intune is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. In order to meet this requirement, the iOS and macOS company portals will enforce Apple's updated Application Transport Security (ATS) requirements, which also require TLS 1.2+. ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS and macOS Company Portal apps. For more information, see the [Intune support blog](https://aka.ms/compportalats).
 
 ## Week of November 26, 2018
 
