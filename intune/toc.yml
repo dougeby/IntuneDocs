@@ -486,9 +486,9 @@
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: Use S/MIME to encrypt email
+      - name: S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
-      - name: Use third-party certificate authority with SCEP
+      - name: Third-party CAs with SCEP
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
