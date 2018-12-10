@@ -53,11 +53,12 @@ If the common solutions don't help, you can select **support request** to create
 ## Create an online support ticket
 
 1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
-   	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
+
+   ![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
 2. On the Azure **Help + support** page, select **New support request**.
 
-	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
+   ![Screenshot of Azure portal help and support page with New support request link highlighted](media/azure-support-ticket-link.png)
 
 3. On the **Basics** tab, for most Intune technical support issues, choose the following options:
    - **Issue type**: **Technical**
@@ -65,12 +66,20 @@ If the common solutions don't help, you can select **support request** to create
    - **Service**: **Microsoft Intune**
    - **Problem type**: Choose your problem type from the drop-down menu.
    - **Problem subtype**: Choose the problem subtype from the drop-down menu.
-   - **Subject**: Briefly describe the issue that you are having.    
+   - **Subject**: Briefly describe the issue that you are having.
+
+   ![Screenshot of the basics tab on the Help + support - New support request page](./media/get-support/help-new-support-case-basics.png)
 
    Choose **Next: Solutions** to continue.
 4. On the **Solutions** tab, review the recommended steps that might help you solve your problem without filing a ticket. If you still want to create a support request after looking through the steps, click **Next: Details**.
+
+   ![Screenshot of the solutions tab on the Help + support - New support request page](./media/get-support/help-new-support-case-solutions.png)
 5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
+
+   ![Screenshot of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
 6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
+
+   ![Screenshot of the review + create tab on the Help + support - New support request page](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
