@@ -128,7 +128,7 @@ In this view you can do the following actions:
 4. [View support cases](#view-support-cases) you have previously opened using this new workflow  
 
 ### Specify details about an issue
-When you open Help and Support from a location that is supported by the new experience, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information than can help to solve the issue.
+When you open Help and Support from a location that is supported by the new experience, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information that can help to solve the issue.
 
 The following are examples of queries you might submit:
   
