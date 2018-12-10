@@ -27,7 +27,9 @@ ms.custom: intune-azure; seodec18
 
 # Email profile settings for iOS devices - Intune
 
-In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more. This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy email settings to your iOS devices.
+In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more. 
+
+This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
 
 ## Email settings
 
@@ -77,4 +79,4 @@ In Microsoft Intune, you can create and configure email to connect to an email s
 
 ## Next steps
 
-Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
+Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
