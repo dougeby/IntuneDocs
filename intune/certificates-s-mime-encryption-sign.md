@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: S/MIME email signing and encryption - Azure | Micrososft Docs
-description: Use or enable S/MIME to sign and encrypt emails in Microsoft Intune
+title: Sign and encrypt email using S/MIME - Microsoft Intune - Azure | Micrososft Docs
+description: Learn how to use email digital certificates in Microsoft Intune to sign and encrypt emails on devices. These certificates are called S/MIME and are configured using device configuration profiles. Signing and encryption certificates use PKCS, or private certificates, and use a connector to import certificates.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,26 +21,25 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 ---
 
-# S/MIME email signing and encryption in Intune
+# S/MIME overview to sign and encrypt email in Intune
 
-> [!IMPORTANT]
-> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
-
-S/MIME provides an extra level of security to your email communications by using encryption and decryption. Microsoft Intune can use S/MIME to sign and encrypt emails to mobile devices running iOS, Windows, Windows Phone, Android, and macOS.
+Email certificates, also known as S/MIME certificate, provide an extra level of security to your email communications by using encryption and decryption. Microsoft Intune can use S/MIME certificates to sign and encrypt emails to mobile devices running iOS, Windows, Windows Phone, Android, and macOS.
 
 On iOS devices, you can create an Intune-managed email profile that uses S/MIME and certificates to sign and encrypt incoming and outgoing emails. For other platforms, S/MIME may or may not be supported. If it's supported, you can install certificates that use S/MIME signing and encryption. Then, an end user can enable S/MIME in their email application.
 
-For more information about S/MIME email signing and encryption, see [S/MIME for message signing and encryption](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+For more information about S/MIME email signing and encryption with Exchange, see [S/MIME for message signing and encryption](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+This article provides an overview of using S/MIME certificates to sign and encrypt emails on your devices.
 
 ## Signing certificates
 
 Certificates used for signing allow the client email app to communicate securely with the email server.
 
-To use signing certificates, create a template on your certificate authority that focuses on signing. On Microsoft Active Directory Certification Authority, [Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) lists the steps to create certificate templates.
+To use signing certificates, create a template on your certificate authority (CA) that focuses on signing. On Microsoft Active Directory Certification Authority, [Configure the server certificate template](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) lists the steps to create certificate templates.
 
 Signing certificates in Intune use PKCS certificates. [Configure and use PKCS certificates](certficates-pfx-configure.md) describes how to deploy and use PKCS certificate in your Intune environment. These steps include:
 
@@ -76,3 +75,10 @@ To deploy a PKCS certificate imported in Intune used for email encryption, follo
 ## S/MIME email profiles
 
 Once you have created S/MIME signing and encryption certificate profiles, you can [enable S/MIME for iOS native mail](email-settings-ios.md).
+
+## Next steps
+
+- [Use SCEP certificates](certificates-scep-configure.md)
+- [Use PKCS certificates](certficates-pfx-configure.md)
+- [Use a partner CA](certificate-authority-add-scep-overview.md)
+- [Issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md)

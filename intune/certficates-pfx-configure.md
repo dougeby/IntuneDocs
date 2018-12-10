@@ -1,11 +1,11 @@
 ---
-title: Use PKCS certificates with Microsoft Intune - Azure | Micrososft Docs
-description: Add or create Public Key Cryptography Standards certificates with Microsoft Intune, including the steps to export a root certificate, configure the certificate template, download and install the Microsoft Intune Certificate Connector (NDES), create a device configuration profile, create a PKCS Certificate profile in Azure and your Certificate Authority.
+title: Use private and public key certificates in Microsoft Intune - Azure | Micrososft Docs
+description: Add or create Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, including the steps to export a root certificate, configure the certificate template, download and install the Microsoft Intune Certificate Connector (NDES), create a device configuration profile, create a PKCS Certificate profile in Azure and your Certificate Authority.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,16 +21,15 @@ ms.reviewer:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 
 ---
 # Configure and use PKCS certificates with Intune
 
-> [!IMPORTANT]
-> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
+Certificates authenticate and secure access to your corporate resources, such as a VPN or your WiFi network. Certificates that use a private key and a public  key, also known as PKCS certificates, are commonly used in many organizations. Microsoft Intune includes built-in features and settings to use PKCS certificates to secure access and authenticate users to your organizations resources. These settings are pushed (or deployed) to devices using device configuration profiles in Intune.
 
-Certificates authenticate and secure access to your corporate resources, such as a VPN or your WiFi network. This article shows you how to export a PKCS certificate, and then add the certificate to an Intune profile.
+This article lists the requirements to use PKCS certificates, shows you how to export a PKCS certificate, and then add the certificate to an Intune device configuration profile.
 
 ## Requirements
 
@@ -79,7 +78,7 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
    For more information, see [Certutil tasks for managing certificates](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
-## Configure certificate templates on the certification authority
+## Configure certificate templates on the CA
 
 1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open the **Certification Authority** console, right-click **Certificate Templates**, and select **Manage**.
@@ -90,8 +89,8 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 
 4. On the **Compatibility** tab:
 
-  - Set **Certification Authority** to **Windows Server 2008 R2**
-  - Set **Certificate recipient** to **Windows 7 / Server 2008 R2**
+    - Set **Certification Authority** to **Windows Server 2008 R2**
+    - Set **Certificate recipient** to **Windows 7 / Server 2008 R2**
 
 5. On the **General** tab, set **Template display name** to something meaningful to you.
 
@@ -123,7 +122,7 @@ To authenticate with VPN, WiFi, or other resources, a root, or intermediate CA c
 > [!IMPORTANT] 
 > The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA).
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**.
 2. Select **Device configuration** > **Certification Authority** > **Add**.
 3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
 
