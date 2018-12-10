@@ -48,7 +48,7 @@ As an IT admin, you can use the **Help + Support** option to file an on-line sup
 ## Get context-sensitive help
 After you sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune.
 
-If the common solutions don't help, you can select **support request** to create a new support request that opens to the **Basics** blade of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket).
+If the common solutions don't help, you can select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket).
 
 ## Create an online support ticket
 
