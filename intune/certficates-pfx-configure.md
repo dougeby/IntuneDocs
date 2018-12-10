@@ -27,7 +27,7 @@ ms.custom: intune-azure; seodec18
 ---
 # Configure and use PKCS certificates with Intune
 
-Certificates authenticate and secure access to your corporate resources, such as a VPN or a WiFi network. Certificates that use a private key and a public  key, also known as PKCS certificates, are used in many organizations. Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. These settings are pushed (or deployed) to devices using device configuration profiles in Intune.
+Certificates authenticate and secure access to your corporate resources, such as a VPN or a WiFi network. Certificates that use a private and public key pair, also known as PKCS certificates, are used in many organizations. Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. These settings are pushed (or deployed) to devices using device configuration profiles in Intune.
 
 This article lists the requirements to use PKCS certificates, shows you how to export a PKCS certificate, and add the certificate to an Intune device configuration profile.
 
@@ -231,6 +231,9 @@ After importing the certificates to Intune, create a **PKCS imported certificate
 5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Next steps
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
 [Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
 
 [NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"

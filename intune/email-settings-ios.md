@@ -31,6 +31,10 @@ In Microsoft Intune, you can create and configure email to connect to an email s
 
 This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
 
+## Before you begin
+
+[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
+
 ## Email settings
 
 - **Email server**: Enter the host name of your Exchange server.
@@ -78,5 +82,7 @@ This article lists and describes all the email settings available for devices ru
 - **Synchronize recently used email addresses**: **Enable** allows users to synchronize the list of email addresses that have been recently used on the device with the server.
 
 ## Next steps
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
