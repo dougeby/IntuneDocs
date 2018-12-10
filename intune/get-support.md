@@ -55,7 +55,7 @@ If the common solutions don't help, you can select **support request** to create
 1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
    	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
-2. On the Azure *Help _+_ support* page, select **New support request**.
+2. On the Azure **Help + support** page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
 
