@@ -2,7 +2,7 @@
 
 ### Apple
 - Apple iOS 10.0 and later
-- Mac OS X 10.11 and later (in December 2018, the supported version will change to 10.12 and later)
+- Mac OS X 10.12 and later
 
 ### Google
 - Android 4.4 and later (including Samsung Knox Standard 4.4 and higher)
