@@ -98,7 +98,7 @@ Once you onboard a device using configuration package, then you don't need to do
   - **Windows Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
   
     > [!NOTE] 
-    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you.
+    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you, and the **Windows Defender ATP client configuration package type** setting will not be available.
   
   - **Sample sharing for all files**: **Enable** allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis. **Not configured** doesn't share any samples to Windows Defender ATP.
   - **Expedite telemetry reporting frequency**: For devices that are at high risk, **Enable** this setting so it reports telemetry to the Windows Defender ATP service more frequently.
