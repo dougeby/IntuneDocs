@@ -65,18 +65,19 @@ If the common solutions don't help, you can select **support request** to create
    - **Service**: **Microsoft Intune**
    - **Problem type**: Choose your problem type from the drop-down menu.
    - **Problem subtype**: Choose the problem subtype from the drop-down menu.
-   - **Subject**: Briefly describe the issue that you are having.
-<!--   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
-     >[!IMPORTANT]
-     >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
-     >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
--->
+   - **Subject**: Briefly describe the issue that you are having.    
+
    Choose **Next: Solutions** to continue.
 4. On the **Solutions** tab, review the recommended steps that might help you solve your problem without filing a ticket. If you still want to create a support request after looking through the steps, click **Next: Details**.
 5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
 6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
 <!--
+  - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
+     >[!IMPORTANT]
+     >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
+     >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
+
 4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
 
    - **Severity**
