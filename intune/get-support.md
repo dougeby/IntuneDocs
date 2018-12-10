@@ -36,41 +36,47 @@ Microsoft provides global technical, pre-sales, billing, and subscription suppor
 
 >[!IMPORTANT]
 > For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
-> 
+>
 > For information about troubleshooting issues related to Microsoft Intune, see the [Troubleshoot section](help-desk-operators.md) of the Intune documentation.
 
-As an IT admin, you can use the **Help + Support** option to file an on-line support ticket for Intune from the Azure portal. To create a support ticket, your account must be assigned one of the following [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal): 
+As an IT admin, you can use the **Help + Support** option to file an on-line support ticket for Intune from the Azure portal. To create a support ticket, your account must be assigned one of the following [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal):
 
-- Intune administrator 
-- Global administrator 
+- Intune administrator
+- Global administrator
 - Service administrator  
 
+## Get context-sensitive help
+After you sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune.
 
-## Get context-sensitive help 
-After you  sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune. 
-
-If the common solutions don't help, you can select **support request** to create a new support request that opens to the **Basics** blade of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket). 
+If the common solutions don't help, you can select **support request** to create a new support request that opens to the **Basics** blade of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket).
 
 ## Create an online support ticket
 
-1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
    	![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
 2. On the Azure *Help _+_ support* page, select **New support request**.
 
 	![Screenshot of Azure portal help and support page with New support request link highlighted](./media/azure-support-ticket-link.png)
 
-3. On the **Basics** blade, for most Intune technical support issues, choose the following options:
+3. On the **Basics** tab, for most Intune technical support issues, choose the following options:
    - **Issue type**: **Technical**
+   - **Subscription**: <*your subscription*>
    - **Service**: **Microsoft Intune**
-   - **Support plan**: **Technical support - included**  (for Intune technical issues, support is complimentary) or **Premier**
-    
+   - **Problem type**: Choose your problem type from the drop-down menu.
+   - **Problem subtype**: Choose the problem subtype from the drop-down menu.
+   - **Subject**: Briefly describe the issue that you are having.
+<!--   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
      >[!IMPORTANT]
      >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
      >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
+-->
+   Choose **Next: Solutions** to continue.
+4. On the **Solutions** tab, review the recommended steps that might help you solve your problem without filing a ticket. If you still want to create a support request after looking through the steps, click **Next: Details**.
+5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
+6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
-     Choose **Next** to continue.
-
+<!--
 4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
 
    - **Severity**
@@ -92,19 +98,18 @@ If the common solutions don't help, you can select **support request** to create
 
 5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
 6. Choose **Create** to submit your support request.
-
+-->
 >[!IMPORTANT]
 >If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
 
 ## View support requests
 You can view a support request from within the Azure portal. To do so:
 
-1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the <strong>?</strong> icon in the upper-right corner of the portal, and then select <strong>Help + support</strong> to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
-
-## New Help and Support experience 
+## New Help and Support experience
 *The following information applies only when you use the Device Management portal and are part of the rollout of the new Help and Support experience. Participants for this rollout are randomly selected from the available Intune tenants.*  
 
 The update to Help and Support for Intune is a new experience that is available in the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) to some but not all tenants. This new experience is similar to that seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the previous Help and Support experience when accessed from some locations of the Device Management console.  
@@ -131,12 +136,11 @@ The following are examples of queries you might submit:
 
 ![Specify the issue on the Need Help? page](./media/get-support/describe-the-issue.png)
 
-
 ### View context-sensitive help
 After you select an offered choice or submit your own query, context-sensitive results appear under **View solutions**. These results include both Intune specific self-help guidance and additional results returned from a web-search based on the query criteria.  
 ![View-results](./media/get-support/view-results.png)
 
-### Get support  
+### Get support
 If the self-help or web-based guidance doesn’t help you resolve the issue, you can use the console to open an email or phone support issue.  
 On the **Need help?** page, select the option you want to use.  
 
