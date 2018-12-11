@@ -47,9 +47,9 @@ A conditional access policy specifies the app or services you want to protect, t
   
    - **All users**: Select this option to apply the policy to all users and groups, including internal and guest users.
   
-   - **Select users and groups**: Select this option and specify one or more of the following:
+   - **Select users and groups**: Select this option and specify one or more of the following options:
   
-      a. **All guest users**: Select this option to include or exclude external guest users (e.g. partners, external collaborators)
+      a. **All guest users**: Select this option to include or exclude external guest users (for example, partners, external collaborators)
        
       b. **Directory roles**: Select one or more Azure AD roles to include or exclude users who are assigned these roles.
       
@@ -82,14 +82,14 @@ A conditional access policy specifies the app or services you want to protect, t
       > If you want to protect both **Modern authentication** clients and **Exchange ActiveSync clients**, create two separate conditional access policies, one for each client type. Although Exchange ActiveSync supports modern authentication, the only condition that is supported by Exchange ActiveSync is platform. Other conditions, including multi-factor authentication, are not supported. To effectively protect access to Exchange Online from Exchange ActiveSync, create a conditional access policy that specifies the cloud app Office 365 Exchange Online and the client app Exchange ActiveSync with Apply policy only to supported platforms selected.
 
 9.	Select **Done**.
-10.	Under **Access controls**, select **Grant**. This is where you specify what happens based on the conditions you’ve set up.  You can selection from the following:
+10.	Under **Access controls**, select **Grant**. Configure what happens based on the conditions you’ve set up.  You can select from the following options:
    - **Block access**: The users specified in this policy will be denied access to the apps under the conditions you’ve specified.
    - **Grant access**: The users specified in this policy will be granted access, but you can require any of the following further actions:
       - **Require multi-factor authentication**: The user will need to complete additional security requirements, like a phone call or text.
       - **Require device to be marked as compliant**: The device must be Intune compliant. If the device is noncompliant, the user will be given the option to enroll the device in Intune. 
       - **Require Hybrid Azure AD joined device**: Devices must be Hybrid Azure AD joined.
       - **Require approved client app**: The device must use approved client apps. 
-      - **For multiple controls**: Select **Require all the selected controls** so that all of the requirements above will be enforced when a device attempts to access the app.
+      - **For multiple controls**: Select **Require all the selected controls** so that all of the requirements above are enforced when a device attempts to access the app.
     
      ![Access controls Grant settings](media/create-conditional-access-intune/create-ca-grant-access-settings.png)
  
