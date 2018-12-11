@@ -68,7 +68,7 @@ OData defines an abstract data model and a protocol that let any client access i
 
 Learn more about working with Azure AD by reading the [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-Find OData resources at [odata.org](http://www.odata.org).
+Find OData resources at [odata.org](https://www.odata.org).
   
 Review the OData Version 4.0 standard at [OData Version 4.0]
-(http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+(https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
