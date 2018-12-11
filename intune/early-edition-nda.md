@@ -57,7 +57,7 @@ On Windows 10 and later devices, you'll be able to create a VPN configuration pr
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
-### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 eeready -->
+### Use S/MIME to encrypt and sign multiple devices for a user <!-- 1333642 eeready -->
 S/MIME email encryption using a new imported certificate profile will be supported (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 
 - The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
