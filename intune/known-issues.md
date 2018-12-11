@@ -33,9 +33,9 @@ ms.custom: intune-azure
 
 Use this article to learn about any known issues in Microsoft Intune.
 
-If you want to report a bug that is not listed here, [open a support request](get-support.md).
+If you want to report a bug that isn't listed here, [open a support request](get-support.md).
 
-If you want to request a new feature for Intune, consider filing a report on [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) site.
+If you want to request a new feature for Intune, consider filing a [Microsoft Intune Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) report.
 
 ## Migration
 
@@ -48,13 +48,13 @@ Compliance policies created in the Azure classic portal will be deprecated. You 
 
 ### Intune legacy PC client features are only available in the Silverlight console
 
-The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+The ability to manage Windows 10 in the Intune on Azure portal is available via Windows MDM enrollment. For more information, see [Intune on Azure console and legacy Intune PC Client](intune-legacy-pc-client.md).
 
 ### Groups created by Intune during migration might affect functionality of other Microsoft products
 
 When you migrate from Intune to the Azure portal, you might see a new group named **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. This group contains all users in your Azure Active Directory, not only Intune licensed users. This usage can cause issues with other Microsoft products if you expect some existing or new users to not be a member of any groups.
 
-### Status blades for migrated policies do not work
+### Status blades for migrated policies don't work
 
 You cannot view status information for policies that were migrated from the Azure classic portal in the Azure portal. However, you can continue to view reports for these policies in the classic portal. To view status information for migrated configuration policies, recreate them in the Azure portal.
 
@@ -62,11 +62,11 @@ You cannot view status information for policies that were migrated from the Azur
 
 
 ### Multiple app install prompts for certain VPP apps
-You may see multiple app install prompts for certain VPP apps which are already installed on end user devices. This issue occurs if you have the **Automatic app updates** option set to **On** for the VPP token that you have uploaded to the Intune Azure portal.    
+You may see multiple app install prompts for certain VPP apps, which are already installed on end user devices. This issue occurs if you have the **Automatic app updates** option set to **On** for the VPP token that you have uploaded to the Intune Azure portal.    
 
-To workaround this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Client apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
+To work around this issue, you can disable the **Automatic app updates** option for the VPP token. To do this, in the Azure portal open Microsoft Intune. From Intune, select **Client apps** > **iOS VPP tokens**. Next, select the VPP Token which has deployed the affected app and select **Edit** > **Automatic app updates** > **Off** > **Save**. Alternatively, you can stop the deployment of the affected app as a VPP app, which will stop the prompts.    
 
-This is a known issue in the current release. We have an upcoming fix which will resolve this issue. When the fix is implemented, your users will no longer see multiple app install prompts.
+This is a known issue in the current release. We have an upcoming fix that will resolve this issue. When the fix is implemented, your users will no longer see multiple app install prompts.
 
 ### iOS volume-purchased apps only available in default Intune tenant language
 iOS volume-purchased apps are displayed, and can be assigned only for the same country code as your Intune account. Intune only syncs apps from the same iTunes locale as the Intune tenant account country code. For example, if you purchase an app only available in a U.S. store, but your Intune account is German, Intune does not show that app.

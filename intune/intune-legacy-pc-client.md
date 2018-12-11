@@ -57,7 +57,7 @@ For Windows 7, which can’t be managed by using MDM, we will continue to suppor
 
 ## MDM Capabilities
 
-For a detailed comparison between PC Client and MDM capabilities, see [Compare managing Windows PCs as computers or mobile devices](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison). MDM updates will continue to bring new management capabilities to MDM-enrolled, Windows 10 devices, inclusive of evaluating options for Win 32 apps. View the [What’s New](https://docs.microsoft.com/intune/whats-new) for the latest release additions to the service.
+For a detailed comparison between PC Client and MDM capabilities, see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md). MDM updates will continue to bring new management capabilities to MDM-enrolled, Windows 10 devices, inclusive of evaluating options for Win 32 apps. View the [What’s New](https://docs.microsoft.com/intune/whats-new) for the latest release additions to the service.
 
 ## Switch from PC Client to MDM
 

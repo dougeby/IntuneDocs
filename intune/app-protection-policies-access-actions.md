@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Selectively wipe data using app protection policy access actions
+title: Wipe data using app protection policy access actions
 titleSuffix: Microsoft Intune
 description: Learn how to selectively wipe data using app protection policy access actions in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 ---
 
 # Selectively wipe data using app protection policy access actions in Intune
