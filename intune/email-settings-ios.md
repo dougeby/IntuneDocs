@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,9 +25,9 @@ ms.custom: intune-azure; seodec18
 
 ---
 
-# Email profile settings for iOS devices - Intune
+# Email profile settings for iOS devices in Intune
 
-In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more. 
+In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more.
 
 This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
 
@@ -74,8 +74,20 @@ This article lists and describes all the email settings available for devices ru
   > 1. Devices that are already targeted are issued a new profile.
   > 2. End users are prompted to enter their credentials again.
 
-- **S/MIME**: **Enable S/MIME** to send outgoing email using S/MIME signing. When enabled, you can also encrypt email to recipients who can receive encrypted email, and decrypt email received from senders.
-  - If you select **Certificate**, choose an existing PKCS certificate profile to authenticate the Exchange connection, and/or encrypt email exchanges.
+- **S/MIME**: **Enable S/MIME** to send outgoing email using S/MIME, which is an email certificate. When enabled, you can also encrypt email to recipients who can receive encrypted email, and decrypt email received from senders.
+
+  When you use S/MIME certificates with an email message, it helps users who receive that message be certain that what they see in their inbox is the exact message that started with the sender. It also helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender.
+
+  - **S/MIME signing enabled**: Choose **Enable** to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender. **Disable** doesn't digitally sign the message.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change S/MIME signing behavior. **Disable** prevents users from changing the S/MIME signing you configured. Available in iOS 12 and newer.
+  - **S/MIME Signing Cert**: Select an existing PKCS or SCEP certificate that's used for signing email message exchanges, and authenticating the Exchange connection.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the signing certificate. **Disable** prevents users from changing the signing certificate, and forces users to use the certificate you configured. Available in iOS 12 and newer.
+  - **Encrypt by default**: **Enable** encrypts all messages as the default behavior. **Disable** doesn't encrypt all messages as the default behavior.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the default encryption behavior. **Disable** prevents users from changing the encryption default behavior, and forces users to use the setting you configured. Available in iOS 12 and newer.
+  - **Force per-message encryption**: Choose **Enable** to show the per-message encryption option when creating a new email. Users can then choose to opt in or opt out of per-message encryption. **Disable** prevents the per-message encryption option from showing.
+    If the **Encrypt by default** setting is enabled, enabling per-message encryption allows users to opt out of encryption per message. If the **Encrypt by default** setting is disabled, enabling per-message encryption allows users to opt in to encryption per message.
+  - **S/MIME Encryption Cert**: Select an existing PKCS or SCEP certificate that's used for encrypting email message exchanges.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the encryption certificate. **Disable** prevents users from changing the encryption certificate, and forces users to use the certificate you configured. Available in iOS 12 and newer.
 - **Amount of email to synchronize**: Choose the number of days of email that you want to synchronize. Or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts**: **Enable** allows users to move email messages between different accounts the users configured on their devices.
 - **Allow email to be sent from third-party applications**: **Enable** allows users to select this profile as the default account for sending email. It allows third-party applications to open email in the native email app, such as attaching files to email.
