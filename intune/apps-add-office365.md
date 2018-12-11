@@ -125,8 +125,6 @@ The following tables list common error codes you might encounter and their meani
 
 ### Status for Office CSP
 
-||||
-|-|-|-|
 |Status|Phase|Description|
 |1460 (ERROR_TIMEOUT)|Download|Failed to download the Office Deployment Tool|	 
 |13 (ERROR_INVALID_DATA)|-|Cannot verify the signature of the downloaded Office Deployment Tool|
@@ -141,8 +139,6 @@ The following tables list common error codes you might encounter and their meani
 
 ### Office Deployment Tool error codes
 
-|||||
-|-|-|-|-|
 |Scenario|Return code|UI|Note|
 |Uninstall effort when there is no active Click-to-Run installation|-2147418113, 0x8000ffff or 2147549183|Error Code: 30088-1008<br>Error Code: 30125-1011 (404)|Office Deployment Tool|
 |Install when there is MSI version installed|1603|-|Office Deployment Tool|
