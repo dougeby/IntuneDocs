@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 11/30/2018
+ms.date: 12/10/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,19 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+## Week of December 10, 2018
+
+### App management
+
+#### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
+The Intune App SDK for Android now uses 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
+
+### Microsoft Auto Update version 4.50 required for macOS devices <!-- 3503442 -->
+To continue receiving updates for the Company Portal and other Office applications, macOS devices managed by Intune must upgrade to Microsoft Auto Update 4.5.0. Users might already have this version for their Office apps.
+
+### Intune requires macOS 10.12 or later <!-- 2827778 -->
+Intune now requires macOS version 10.12 or later. Devices using prior macOS versions can't use the Company Portal to enroll into Intune. To receive support and new features, users must upgrade their device to macOS 10.12 or later and upgrade the Company Portal to the latest version.
 
 ## Week of November 26, 2018
 
@@ -99,6 +112,23 @@ To use this feature, see [iOS](compliance-policy-create-ios.md#device-health) an
 Delivery optimization is a new configuration profile for Windows 10 and later. This feature provides a more streamlined experience to deliver software updates to devices in your organization. This update also helps you deliver the settings in new and existing update rings using a configuration profile.
 To configure a delivery optimization configuration profile, see [Windows 10 (and newer) delivery optimization settings](delivery-optimization-windows.md).
 
+#### New device restriction settings added to iOS and macOS devices <!-- 2827760 -->
+This update includes new settings for your iOS and macOS devices that are released with iOS 12:
+
+**iOS settings**: 
+- General: Block app removal (supervised only)​
+- General: Block USB Restricted mode (supervised only)​
+- General: Force automatic date and time (supervised only)​​
+- Password: Block password AutoFill (supervised only)​
+- Password: Block password proximity requests (supervised only)​
+- Password: Block password sharing (supervised only)
+
+**macOS settings**: 
+- Password: Block password AutoFill
+- Password: Block password proximity requests
+- Password: Block password sharing
+
+To learn more about these settings, see [iOS](device-restrictions-ios.md) and [macOS](device-restrictions-macos.md) device restriction settings.
 
 ### Device enrollment
 
