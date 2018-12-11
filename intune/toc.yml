@@ -49,6 +49,8 @@
   items:
   - name: Protect email on managed devices
     href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Protect email on unmanaged devices
+    href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Scenario implementation guides 
