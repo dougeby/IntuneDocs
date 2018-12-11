@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 10/02/2018
+ms.date: 12/11/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
