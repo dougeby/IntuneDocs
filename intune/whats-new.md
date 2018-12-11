@@ -1182,35 +1182,6 @@ You do not need to do anything while we move your policy assignments. If you cur
 
 If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
 
-
-### Plan for Change: Intune will move to support macOS 10.12 and higher in December <!--2970975--> 
-
-Apple has just released macOS 10.14. Subsequently, Intune will move to support macOS 10.12 and higher in December 2018. 
-
-#### How does this affect me?
-
-Starting in December, end users on devices with macOS 10.11 and prior won’t be able to use the Company Portal to enroll into Intune. They will need to upgrade their device to macOS 10.12 or higher and upgrade the Company Portal app to the latest version to continue to receive support and new features. 
-
-macOS versions 10.12 and higher are currently supported on: 
-- MacBook (late 2009 or newer). 
-- iMac (late 2009 or newer)
-- MacBook Air (late 2010 or newer).  
-- MacBook Pro (late 2010 or newer). 
-- Mac Mini (late 2010 or newer). 
-- Mac Pro (late 2010 or newer). 
-
-After December, end users who have devices other than the ones listed above will not be able to access the latest version of the Company Portal app for macOS. Existing enrolled devices running unsupported versions below macOS 10.12 will continue to be managed and listed in the Intune Admin Console.
-
-#### What do I need to do to prepare for this change?
-
-- Request your end users to upgrade their devices to a supported OS version before December 2018. 
-- Check your Intune reporting in the Intune on Azure console, to see what devices or users may be affected. Go to Devices > All devices and filter by OS. You can add in additional columns to help identify who in your organization has devices running macOS 10.11. 
-- If you are using hybrid mobile device management (MDM), go to Assets and Compliance > Devices in the Configuration Manager console, right-click the columns to add the Operating System and Client Version columns, and sort by OS. Note that hybrid MDM is now deprecated, and you should move to Intune on Azure as soon as possible. 
- 
-#### Additional Information
-For more information, see [Enroll your macOS device in Intune with the Company Portal app](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp).
- 
-
 ### Plan for Change: New Intune support experience for Premier customers 
 12/4/18 Update: We are trying to make this process better for you so support request creation in MPO will not be disabled on December 3 but on a later date instead. We'll let you know through the Message Center and update this post soon to share timelines for this change.
 
@@ -1244,28 +1215,3 @@ Review the password settings in your Android and Android enterprise device restr
 #### Additional information
 https://aka.ms/PasswordSettings 
 
-### Apple to require updates for Application Transport Security <!--748318-->
-Apple has announced that they will enforce specific requirements for Application Transport Security (ATS). ATS is used to enforce stricter security on all app communications over HTTPS. This change impacts Intune customers using the iOS Company Portal apps. We'll keep our [Intune support blog](https://aka.ms/compportalats) with details.
-
-### Plan for Change: Intune moving to TLS 1.2
-Starting on October 31, 2018, Intune will support Transport Layer Security (TLS) protocol version 1.2 to provide best-in-class encryption, to ensure our service is more secure by default, and to align with other Microsoft services such as Microsoft Office 365. Office communicated this change in MC128929.
-
-The Company Portal will also move to support TLS 1.2 on October 31, 2018.
-
-#### How does this affect me?
-As of October 31, 2018, Intune will no longer support TLS protocol versions 1.0 or 1.1. All client-server and browser-server combinations should use TLS version 1.2 to ensure connection without issues to Intune. Note that this change will impact end-user devices that are no longer supported by Intune but are still receiving policy through Intune, and that cannot use TLS version 1.2. This includes devices such as those running Android 4.3 and earlier. For a list of affected devices and browsers, see Additional Information below.
-
-After October 31, 2018, if you experience an issue related to the use of an old TLS version, you will be required to update to TLS 1.2 or to a device that supports TLS 1.2 as part of the resolution.
-
-#### What do I need to do to prepare for this change?
-We recommend that you proactively remove TLS 1.0 and 1.1 dependencies in your environments and disable TLS 1.0 and 1.1 at the operating system level where possible. Begin planning your migration to TLS 1.2 today. Check the support blog post below for the list of devices that are not supported by Intune today but might still be receiving policy, and that will not be able to communicate using TLS version 1.2. You might need to notify those end users that they’ll lose access to corporate resources.
-
-**Additional Information**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-
-## See also
-* [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
-* [What's new in the Company Portal UI](whats-new-app-ui.md)
-* [What's new in previous months](whats-new-archive.md)
