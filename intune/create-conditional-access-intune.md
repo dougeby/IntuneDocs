@@ -8,7 +8,7 @@ keywords:
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -31,10 +31,12 @@ ms.custom: intune-azure
 
 With Intune, you can enhance conditional access in Azure Active Directory by adding mobile device compliance to the access controls. Once you’ve created an Intune compliance policy that defines the requirements for devices to be compliant, you can use a device’s compliance status to either allow or block access to your apps and services. You can do this by creating a conditional access policy that uses the setting **Require device to be marked as compliant**. 
 
-A conditional access policy specifies the app or services you want to protect, the conditions under which the apps or services can be accessed, and the users to whom the policy applies. Conditional access is an Azure AD premium feature that is configurable in Azure Active Directory, but you can also set up these same policies from within the Intune portal, as shown below. 
+A conditional access policy specifies the app or services you want to protect, the conditions under which the apps or services can be accessed, and the users to whom the policy applies. Conditional access is an Azure AD premium feature that is configurable in Azure Active Directory, but you can also set up these same policies from within the Intune portal. 
 
 > [!IMPORTANT]
 > Before you set up conditional access, you'll need to set up Intune device compliance policies to evaluate devices based on whether they meet specific requirements. See [Get started with device compliance policies in Intune](device-compliance-get-started.md).
+
+## Create conditional access policy
 
 1.	In the Intune portal, select **Conditional access** > **Policies** > **New policy**.
    
@@ -48,12 +50,12 @@ A conditional access policy specifies the app or services you want to protect, t
    - **Select users and groups**: Select this option and specify one or more of the following:
   
       a. **All guest users**: Select this option to include or exclude external guest users (e.g. partners, external collaborators)
-      
+       
       b. **Directory roles**: Select one or more Azure AD roles to include or exclude users who are assigned these roles.
       
       c. **Users and groups**: Select this option to search for and select individual users or groups you want include or exclude.
      
-       > [!TIP]
+       > [!TIP]  
        > Test the policy against a smaller group of users to make sure it works as expected.
 4.	Select **Done**.
 5.	Under **Assignments**, select **Cloud apps**. 
@@ -77,7 +79,7 @@ A conditional access policy specifies the app or services you want to protect, t
      ![Create a new conditional access policy](media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]
-       > If you want to protect both **Modern authentication** clients and **Exchange ActiveSync clients**, create two separate conditional access policies, one for each client type. Although Exchange ActiveSync supports modern authentication, the only condition that is supported by Exchange ActiveSync is platform. Other conditions, including multi-factor authentication, are not supported. To effectively protect access to Exchange Online from Exchange ActiveSync, create a conditional access policy that specifies the cloud app Office 365 Exchange Online and the client app Exchange ActiveSync with Apply policy only to supported platforms selected.
+      > If you want to protect both **Modern authentication** clients and **Exchange ActiveSync clients**, create two separate conditional access policies, one for each client type. Although Exchange ActiveSync supports modern authentication, the only condition that is supported by Exchange ActiveSync is platform. Other conditions, including multi-factor authentication, are not supported. To effectively protect access to Exchange Online from Exchange ActiveSync, create a conditional access policy that specifies the cloud app Office 365 Exchange Online and the client app Exchange ActiveSync with Apply policy only to supported platforms selected.
 
 9.	Select **Done**.
 10.	Under **Access controls**, select **Grant**. This is where you specify what happens based on the conditions you’ve set up.  You can selection from the following:
@@ -85,7 +87,7 @@ A conditional access policy specifies the app or services you want to protect, t
    - **Grant access**: The users specified in this policy will be granted access, but you can require any of the following further actions:
       - **Require multi-factor authentication**: The user will need to complete additional security requirements, like a phone call or text.
       - **Require device to be marked as compliant**: The device must be Intune compliant. If the device is noncompliant, the user will be given the option to enroll the device in Intune. 
-      - **Require Hybrid Azure AD joined device**:
+      - **Require Hybrid Azure AD joined device**: Devices must be Hybrid Azure AD joined.
       - **Require approved client app**: The device must use approved client apps. 
       - **For multiple controls**: Select **Require all the selected controls** so that all of the requirements above will be enforced when a device attempts to access the app.
     
