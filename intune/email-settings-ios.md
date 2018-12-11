@@ -2,12 +2,12 @@
 # required metadata
 
 title: Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: Create a device configuration email profile that that uses Exchange servers, and retrieves attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using Microsoft Intune.
+description: See a list of all the email settings you can configure and add to iOS devices in Microsoft Intune, including using Exchange servers, and getting attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using device configuration profiles in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,16 +21,19 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 ---
 
 # Email profile settings for iOS devices - Intune
 
-Use the email profile settings to configure your devices running iOS.
+In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more. 
 
-> [!IMPORTANT]
-> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
+This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
+
+## Before you begin
+
+[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
 
 ## Email settings
 
@@ -79,4 +82,7 @@ Use the email profile settings to configure your devices running iOS.
 - **Synchronize recently used email addresses**: **Enable** allows users to synchronize the list of email addresses that have been recently used on the device with the server.
 
 ## Next steps
-[Configure email settings in Intune](email-settings-configure.md)
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
