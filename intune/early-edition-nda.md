@@ -83,7 +83,7 @@ Currently, you can configure Shared PC settings on Windows 10 desktop devices us
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 ### Intune policies update authentication method and Company Portal app installation  <!-- 1927359 -->
-Intune will no longer support the Company Portal app when it is installed from the App store, on certain devices. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
+On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, Intune will no longer support the Company Portal when it is manually installed by end users from the app store. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
 * Apple configurator
 * Apple Business Manager
 * Apple School Manager
