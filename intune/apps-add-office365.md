@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -125,29 +125,31 @@ The following tables list common error codes you might encounter and their meani
 
 ### Status for Office CSP
 
-|Status|Phase|Description|
-|1460 (ERROR_TIMEOUT)|Download|Failed to download the Office Deployment Tool|	 
-|13 (ERROR_INVALID_DATA)|-|Cannot verify the signature of the downloaded Office Deployment Tool|
-|Error code from CertVerifyCertificateChainPolicy|-|Failed certification check for the downloaded Office Deployment Tool|	 
-|997|WIP|Installing|
-|0|After installation|Installation succeeded|	 
-|1603 (ERROR_INSTALL_FAILURE)|-|Failed any prerequisite check, such as:<ul><li>SxS (Tried to install when 2016 MSI is installed)</li><li>Version mismatch</li><li>Others</li></ul>|	 
-|0x8000ffff (E_UNEXPECTED)|-|Tried to uninstall when there is no Click-to-Run Office on the machine|	 
-|17002|-|Failed to complete the scenario (install). Possible reasons:<ul><li>Installation canceled by user</li><li>Installation canceled by another installation</li><li>Out of disk space during installation</li><li>Unknown language ID</li></ul>|
-|17004|-|Unknown SKUs|	 
+| Status | Phase | Description |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | Download | Failed to download the Office Deployment Tool |
+| 13 (ERROR_INVALID_DATA) | - | Cannot verify the signature of the downloaded Office Deployment Tool |
+| Error code from CertVerifyCertificateChainPolicy | - | Failed certification check for the downloaded Office Deployment Tool |
+| 997 | WIP | Installing |
+| 0 | After installation | Installation succeeded |
+| 1603 (ERROR_INSTALL_FAILURE) | - | Failed any prerequisite check, such as:SxS (Tried to install when 2016 MSI is installed)Version mismatchOthers |
+| 0x8000ffff (E_UNEXPECTED) | - | Tried to uninstall when there is no Click-to-Run Office on the machine |
+| 17002 | - | Failed to complete the scenario (install). Possible reasons:Installation canceled by userInstallation canceled by another installationOut of disk space during installationUnknown language ID |
+| 17004 | - | Unknown SKUs |
 
 
 ### Office Deployment Tool error codes
 
-|Scenario|Return code|UI|Note|
-|Uninstall effort when there is no active Click-to-Run installation|-2147418113, 0x8000ffff or 2147549183|Error Code: 30088-1008<br>Error Code: 30125-1011 (404)|Office Deployment Tool|
-|Install when there is MSI version installed|1603|-|Office Deployment Tool|
-|Installation canceled by user, or by another installation|17002|-|Click-to-Run|
-|Try to install 64-bit on a device that has 32-bit installed.|1603|-|Office Deployment Tool return code|
-|Try to install an unknown SKU (not a legitimate use case for Office CSP since we should only pass in valid SKUs)|17004|-|Click-to-Run|
-|Lack of space|17002|-|Click-to-Run|
-|The Click-to-Run client failed to start (unexpected)|17000|-|Click-to-Run|
-|The Click-to-Run client failed to queue scenario (unexpected)|17001|-|Click-to-Run|
+| Scenario | Return code | UI | Note |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| Uninstall effort when there is no active Click-to-Run installation | -2147418113, 0x8000ffff or 2147549183 | Error Code: 30088-1008Error Code: 30125-1011 (404) | Office Deployment Tool |
+| Install when there is MSI version installed | 1603 | - | Office Deployment Tool |
+| Installation canceled by user, or by another installation | 17002 | - | Click-to-Run |
+| Try to install 64-bit on a device that has 32-bit installed. | 1603 | - | Office Deployment Tool return code |
+| Try to install an unknown SKU (not a legitimate use case for Office CSP since we should only pass in valid SKUs) | 17004 | - | Click-to-Run |
+| Lack of space | 17002 | - | Click-to-Run |
+| The Click-to-Run client failed to start (unexpected) | 17000 | - | Click-to-Run |
+| The Click-to-Run client failed to queue scenario (unexpected) | 17001 | - | Click-to-Run |
 
 ## Next steps
 
