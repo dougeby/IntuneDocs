@@ -89,7 +89,7 @@ When an app developer updates permissions with a new version of the app, the per
 
 Periodically visit the managed Google Play console to check for new permissions. You can configure Google Play to send you or others an email when new permissions are required for an approved app. If you assign an app and observe that it isn't installed on devices, check for new permissions following these steps:
 
-1. Go to [Google Play](http://play.google.com/work).
+1. Go to [Google Play](https://play.google.com/work).
 2. Sign in with the Google account that you used to publish and approve the apps.
 3. Select the **Updates** tab, and check to see whether any apps require an update.  
     Any listed apps require new permissions and are not assigned until they are applied.

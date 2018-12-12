@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/09/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -137,7 +137,7 @@ The App SDK plugin is distributed as part of the SDK as
 **GradlePlugin/com.microsoft.intune.mam.build.jar**. For Gradle to be
 able to find the plugin, it must be added to the buildscript
 classpath. The plugin depends on
-[Javassist](http://jboss-javassist.github.io/javassist/), which must
+[Javassist](https://jboss-javassist.github.io/javassist/), which must
 also be added. To add these to the classpath, add the following to
 your root `build.gradle`
 
@@ -237,7 +237,7 @@ If you answer 'yes' to both of those questions, then you must include that libra
 #### Dependencies
 
 The gradle plugin has a dependency on
-[Javassist](http://jboss-javassist.github.io/javassist/), which must
+[Javassist](https://jboss-javassist.github.io/javassist/), which must
 be available to Gradle's dependency resolution (as described
 above). Javassist is used solely at build time when running the
 plugin. No Javassist code will be added to your app.
@@ -439,7 +439,7 @@ The Azure Active Directory Authentication Library ([ADAL](https://azure.microsof
 
 Logging should be initialized early to get the most value out of logged data. `Application.onMAMCreate()` is typically the best place to initialize logging.
 
-To receive MAM logs in your app, create a [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
+To receive MAM logs in your app, create a [Java Handler](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
 
 ```java
 /**
@@ -1006,7 +1006,7 @@ The registered user account's status may change when an enrollment notification 
 
 ## Protecting Backup data
 
-As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html).
+As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](https://developer.android.com/guide/topics/data/backup.html).
 
 ### Auto Backup for Apps
 
