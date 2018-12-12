@@ -52,7 +52,7 @@ Depending on the settings you choose, not all values may be configurable.
   - **Description**: Enter a descriptive name for the server, such as **Contoso VPN server**
   - **IP address or FQDN**: Enter the IP address or fully qualified domain name (FQDN) of the VPN server that devices connect to, such as **192.168.1.1** or **vpn.contoso.com**
   - **Default server**: Enables this server as the default server that devices use to establish the connection. Set only one server as the default.
-  - **Import**: Browse to a comma-separated file that includes a list of servers in the format: description, IP address, or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
+  - **Import**: Browse to a comma-separated file that includes a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
   - **Export**: Exports the list of servers to a comma-separated-values (csv) file
 
 - **Register IP addresses with internal DNS**: Select **Enable** to configure the Windows 10 VPN profile to dynamically register the IP addresses assigned to the VPN interface with the internal DNS. Select **Disable** to not dynamically register the IP addresses.
