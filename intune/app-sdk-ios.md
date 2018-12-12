@@ -489,7 +489,7 @@ When sharing documents via the `UIActivityViewController` and `UIDocumentInterac
 
 6. Configure the `NSExtensionActivationRule` to support a single file and all types from the application’s `CFBundleDocumentTypes` prefixed with `com.microsoft.intune.mam`. For example, if the application supports public.text and public.image, the activation rule would be:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -505,7 +505,7 @@ When sharing documents via the `UIActivityViewController` and `UIDocumentInterac
 
 If your app already contains Share or Action extensions, then their `NSExtensionActivationRule` will have to be modified to allow the Intune types. For each type supported by the extension, add an additional type prefixed with `com.microsoft.intune.mam`. For example, if the existing activation rule is:  
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -522,7 +522,7 @@ If your app already contains Share or Action extensions, then their `NSExtension
 
 It should be changed to:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,

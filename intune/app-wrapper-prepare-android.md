@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,12 +76,12 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 
 2. From the folder where you installed the tool, import the App Wrapping Tool PowerShell module:
 
-   ```
+   ```PowerShell
    Import-Module .\IntuneAppWrappingTool.psm1
    ```
 
 3. Run the tool by using the **invoke-AppWrappingTool** command, which has the following usage syntax:
-   ```
+   ```PowerShell
    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
    ```
@@ -104,18 +104,18 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 
 - To see detailed usage information for the tool, enter the command:
 
-    ```
+    ```PowerShell
     Help Invoke-AppWrappingTool
     ```
 
 **Example:**
 
 Import the PowerShell module.
-```
+```PowerShell
 Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
 ```
 Run the App Wrapping Tool on the native app HelloWorld.apk.
-```
+```PowerShell
 invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped\HelloWorld_wrapped.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\mykeystorefile" -keyAlias mykeyalias -SigAlg SHA1withRSA -Verbose
 ```
 
@@ -173,12 +173,16 @@ These instructions are specific to all Android and Xamarin apps who wish to requ
 > * To enable SSO, "Common ADAL configuration" #2 is what is needed.
 
 2. Enable default enrollment by putting the following value in the manifest:
-   ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
+   ```
    > [!NOTE] 
    > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
 
 3. Enable MAM policy required by putting the following value in the manifest:
-   ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+   ```xml
+   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+   ```
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 

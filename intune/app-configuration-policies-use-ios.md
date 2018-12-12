@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -104,14 +104,14 @@ The \{\{ and \}\} characters are used by token types only and must not be used f
 
 ### Allow only configured organization accounts in multi-identity apps 
 
-For Android devices, use the following key/value pairs:
+For iOS devices, use the following key/value pairs:
 
 | **Key** | IntuneMAMAllowedAccountsOnly |
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Values** | <ul><li>**Enabled**: The only account allowed is the managed user account defined by the [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) key.</li><li>**Disabled** (or any value that is not a case insensitive match to **Enabled**): Any account is allowed.</li></ul> |
+| **Values** | <ul><li>**Enabled**: The only account allowed is the managed user account defined by the [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) key.</li><li>**Disabled** (or any value that is not a case insensitive match to **Enabled**): Any account is allowed.</li></ul> |.
 
    > [!NOTE]
-   > You must use OneDrive for iOS 10.34 or later and Outlook for iOS 2.99.0 or later when allowing only configured organization accounts with multi-identity.
+   > You must use OneDrive for iOS 10.34 or later and Outlook for iOS 2.99.0 or later and the app must be targeted with [Intune app protection policies](app-protection-policy.md) when allowing only configured organization accounts with multi-identity.
 
 ## Enter XML data
 
@@ -127,7 +127,7 @@ To learn more about XML property lists:
 
 When you create an app configuration file, you can specify one or more of the following values by using this format:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>
