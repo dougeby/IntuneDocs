@@ -65,7 +65,7 @@ To access Help and Support, use the following:
 - **In the Azure Portal:**
    - Select **Help and Support** from any Intune blade or page
 
-   Selecting either the **?** icon from the upper-right corner, or **Help + Support** from the left-side navigation opens *Help + Support for Azure, which isn't tailored to Intune.   
+   Selecting either the **?** icon from the upper-right corner, or **Help + Support** from the left-side navigation pane from any location in the Azure portal opens *Help + Support* for Azure, which isn't tailored to Intune.   
 
 WIth the new experience, you gain access to the **Need help?** view, as seen in the following image from the Device Management dashboard:  
 ![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
@@ -108,9 +108,9 @@ Select the history button to view the support incidents that you've created.
 
 ![View support cases](./media/get-support/view-support-tickets.png)
 
-- Only the support cases that you open by using the new workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console that is part of the new experience. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
+- Only the support cases that you open by using the new workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console or from an Intune blade in the Azure portal. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
 
-- Cases that you opened before your account was added to the new help and support experience are unchanged. To view them, you must use a help and support view that isn't part of the new experience rollout. These cases have numbers that start with **117** or **118** and are 15 digits long.  To view a support case that was opened before you were added to the new experience, use the Azure portal. To do so:
+- Cases that you opened when not using the Intune Help and Support experience are unchanged. To view them, you must use a help and support view that isn't part of the Intune experience, or Device Management dashboard. These cases have numbers that start with **117** or **118** and are 15 digits long. To view them:
 
     1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the *?* icon in the upper-right corner of the portal, and then select *Help + support* to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
