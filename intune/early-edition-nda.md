@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Early edition
-description:
+title: Early edition - Microsoft Intune
+titlesuffix: 
+description: Microsoft Intune early edition
 keywords:
 author: ErikjeMS  
 ms.author: erikje
@@ -23,7 +24,7 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 ---
 
 # The early edition for Microsoft Intune - December 2018
@@ -56,7 +57,7 @@ On Windows 10 and later devices, you'll be able to create a VPN configuration pr
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
-### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 eeready -->
+### Use S/MIME to encrypt and sign multiple devices for a user <!-- 1333642 eeready -->
 S/MIME email encryption using a new imported certificate profile will be supported (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 
 - The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
@@ -82,7 +83,7 @@ Currently, you can configure Shared PC settings on Windows 10 desktop devices us
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 ### Intune policies update authentication method and Company Portal app installation  <!-- 1927359 -->
-Intune will no longer support the Company Portal app when it is installed from the App store, on certain devices. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
+On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, Intune will no longer support the Company Portal when it is manually installed by end users from the app store. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
 * Apple configurator
 * Apple Business Manager
 * Apple School Manager
@@ -120,6 +121,9 @@ To choose which screens to skip, go to **Device enrollment** > **Apple enrollmen
 ### Some BitLocker settings support Windows 10 Pro edition<!-- 2727036 -->
 You'll be able to create a configuration profile that sets endpoint protection settings on Windows 10 devices, including BitLocker. This adds support for Windows 10 Professional edition for some BitLocker settings. 
 To see the current Windows 10 edition settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
+
+### Intune device reporting fields <!-- 2748738 -->
 Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
 ### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal <!-- 2809362 -->

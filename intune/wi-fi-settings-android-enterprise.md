@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Configure Wi-Fi settings for Android Enterprise and kiosk devices - Microsoft Intune - Azure | Microsoft Docs
-titleSuffix:
+title: Wi-Fi settings for Android Enterprise and kiosk devices
+titleSuffix: Microsoft Intune
 description: Create or add a WiFi device configuration profile for Android Enterprise and Android Kiosk. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune. For kiosk devices, also enter the Pre-shared key of your network.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 

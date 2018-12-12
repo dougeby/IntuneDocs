@@ -42,7 +42,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 
 - [Configure domains](custom-domain-name-configure.md)
 - [Set the MDM Authority](mdm-authority-set.md)
-- [Create groups](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Create groups](groups-add.md)
 - [Configure the Company Portal](company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
