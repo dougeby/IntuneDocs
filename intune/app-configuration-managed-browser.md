@@ -266,6 +266,19 @@ Use the following information to learn about the allowed formats and wildcards t
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
+## Opening links within the Intune Managed Browser vs. Microsoft Edge 
+
+Both the Intune Managed Browser and Microsoft Edge are now considered policy managed browsers/protected browsers. Today, existing app protection policies result in web links from Intune managed apps to open in a specific browser depending on your scenario and platform. 
+
+On Android: 
+* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy managed browser required.  
+* Microsoft Edge if only Microsoft Edge is on the device and is targeted with policy.
+* Managed Browser if only Managed Browser is on the device and is targeted with policy. 
+
+On iOS, for apps that have integrated the Intune SDK for iOS v. 9.0.9+: 
+* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy managed browser required **or** Microsoft Edge if Microsoft Edge is installed and has recieved policy. 
+* Microsoft Edge if only Microsoft Edge is on the device, is targeted with, and has recieved policy. 
+* Managed Browser if only Managed Browser is on the device, is targeted with, and has recieved policy.
 
 ## How to access to managed app logs using the Managed Browser on iOS
 

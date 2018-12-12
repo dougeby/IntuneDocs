@@ -64,9 +64,9 @@ The following table lists the various options for assigning apps to users and de
 7. Select **Add Group** to open the **Add group** pane that is related to the app.
 8. For the specific app, select an **assignment type**:
    - **Available for enrolled devices**: Assign the app to groups of users who can install the app from the Company Portal app or website.
-   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. 
-   - **Required**: The app is installed on devices in the selected groups.
-   - **Uninstall**: The app is uninstalled from devices in the selected groups.
+   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. Users must be assigned an Intune license, see [Intune Licenses](licenses.md).
+   - **Required**: The app is installed on devices in the selected groups. Some platforms may have additional prompts for the end user to acknowledge before app installation begins.
+   - **Uninstall**: The app is uninstalled from devices in the selected groups if Intune has previously installed the application onto the device via an "Available for enrolled devices" or "Required" assignment using the same deployment. Web links cannot be removed after deployment.
 
      > [!NOTE]
      > **For iOS apps only**: If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
