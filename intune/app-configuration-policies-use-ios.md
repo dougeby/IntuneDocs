@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -127,7 +127,7 @@ To learn more about XML property lists:
 
 When you create an app configuration file, you can specify one or more of the following values by using this format:
 
-```
+```xml
 <dict>
   <key>userprincipalname</key>
   <string>{{userprincipalname}}</string>
