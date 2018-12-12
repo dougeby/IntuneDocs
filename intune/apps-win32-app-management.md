@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -180,15 +180,17 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     - **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
     
         1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
-        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end user's credentials. Select **No** (default) to run the script in the system context.
+
+        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+
         3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
     
-        Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
-    
-        > [!NOTE]
-        > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
-    
-3.	Once you have added your rule(s), select **Add** > **OK**.
+            Intune agent checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
+
+            > [!NOTE]
+            > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
+
+        4.	Once you have added your rule(s), select **Add** > **OK**.
 
 ### Step 7: Configure app return codes
 
