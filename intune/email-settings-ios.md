@@ -74,9 +74,9 @@ This article lists and describes all the email settings available for devices ru
   > 1. Devices that are already targeted are issued a new profile.
   > 2. End users are prompted to enter their credentials again.
 
-- **S/MIME**: **Enable S/MIME** to enable users to sign and/or encrypt email in the iOS native mail application. 
+- **S/MIME**: **Enable S/MIME** to allow users to sign and/or encrypt email in the iOS native mail application. 
 
-  When you use S/MIME with an email message, you ensure the authenticity of the sender, and the integrity and confidentiality of the message.
+  When you use S/MIME with an email message, you confirm the authenticity of the sender, and the integrity and confidentiality of the message.
 
   - **S/MIME signing enabled**: Choose **Enable** to allow users to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender. **Disable** doesn't allow users to digitally sign the message.
     - **Allow user to change setting**: Choose **Enable** to allow users to change S/MIME signing behavior. **Disable** prevents users from changing the S/MIME signing setting you configured. Available in iOS 12 and newer.
