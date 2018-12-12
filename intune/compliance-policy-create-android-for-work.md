@@ -92,7 +92,7 @@ On Android Enterprise devices, the **Threat scan on apps** setting is a configur
 
 ### Password
 
-- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. This setting is applied at the device level. If you only need to require a password at the work profile level then use a configuration policy, see [Android Enterprise Device Setting](device-restrictions-android-for-work.md)
 - **Minimum password length**: Enter the minimum number of digits or characters the user's password must have.
 - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
   - **Device Default**
