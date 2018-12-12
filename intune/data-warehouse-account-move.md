@@ -83,4 +83,4 @@ Customer X requests an account move to begin on 1/06/2018. In response to the re
 ## Next steps
 
  - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
- - Read the [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).
