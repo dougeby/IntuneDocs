@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,6 +19,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -61,6 +62,9 @@ As you dig in to this reporting, you can also see any specific compliance polici
 
 The chart shows the compliance states for all Intune enrolled devices. The device compliance states are kept in two different databases: Intune and Azure Active Directory. 
 
+> [!IMPORTANT]
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
 Descriptions of the different device compliance policy states:
 
 - **Compliant**: The device successfully applied one or more device compliance policy settings.
@@ -92,9 +96,7 @@ It shows you more details on the devices in that state, including operating syst
 
 ![Dashboard image shows more details on the device in that specific state](./media/compliance-policy-monitor/drill-down-details.png)
 
-If you want to see all the devices owned by a specific user, you can filter the chart report by typing the user’s e-mail:
-
-![Filter on the email address to show all the devices for that specific user](./media/compliance-policy-monitor/idc-3.png)
+If you want to see all the devices owned by a specific user, you can also filter the chart report by typing the user’s e-mail.
 
 #### Filter and columns
 

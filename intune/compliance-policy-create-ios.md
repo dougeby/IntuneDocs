@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 #ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -58,7 +59,8 @@ The following table describes how noncompliant settings are managed when a compl
 ## Create a device compliance policy
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. For **Platform**, select **iOS**. Choose **Settings Configure**, and enter the **Email**, **Device Health**, **Device Properties**, and **System Security** settings. When you're done, select **OK**, and **Create**.
+4. For **Platform**, select **iOS**. 
+5. Choose **Settings Configure**, and enter the **Email**, **Device Health**, **Device Properties**, and **System Security** settings described in this topic. When you're done, select **OK**, and **Create**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,7 +79,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Select the email profile that must be managed by Intune**: If the **Email account must be managed by Intune** setting is selected, choose **Select** to specify the Intune email profile. The email profile must be present on the device.
 
-For details about email profile, see [Configure access to corporate email using email profiles with Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
+For details about email profile, see [Configure access to corporate email using email profiles with Microsoft Intune](email-settings-configure.md).
 
 ## Device health
 
@@ -92,6 +94,8 @@ For details about email profile, see [Configure access to corporate email using 
 
 - **Minimum OS required**: When a device does not meet the minimum OS version requirement, it is reported as noncompliant. A link with information on how to upgrade is shown. The user can choose to upgrade their device. After that, they can access company resources.
 - **Maximum OS version allowed**: When a device uses an OS version later than the version specified in the rule, access to company resources is blocked. The user is then asked to contact their IT admin. Until there is a change in rule to allow the OS version, this device cannot access company resources.
+- **Minimum OS build version**: When Apple publishes security updates, the build number is typically updated, not the OS version. Use this feature to enter a minimum allowed build number on the device. This compliance check supports devices running iOS 8.0 and newer. 
+- **Maximum OS build version**: When Apple publishes security updates, the build number is typically updated, not the OS version. Use this feature to enter a maximum allowed build number on the device. This compliance check supports devices running iOS 8.0 and newer.
 
 ## System security
 

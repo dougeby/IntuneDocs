@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 #ms.devlang:
 ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -62,7 +63,9 @@ Once you have successfully created the group, it will appear in the list of **Al
 
 ## Next steps
 
-In this quickstart, you used Intune to create a group based on an existing user.
+In this quickstart, you used Intune to create a group based on an existing user. For more information about adding groups to Intune, see [Add groups to organize users and devices](groups-add.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Set up automatic enrollment for Windows 10 devices](quickstart-setup-auto-enrollment.md)

@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Quickstart - Set up automatic enrollment in Intune
 description: Quickstart - Set up automatic enrollment for Windows 10 devices in Intune.
 services: microsoft-intune
@@ -8,6 +10,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune-classic
+
 ---
 
 # Quickstart: Set up automatic enrollment for Windows 10 devices
@@ -34,9 +48,9 @@ For this example, you'll use MDM enrollment so that both corporate and bring-you
 
     ![Select the Azure Active Directory free Premium trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
 
-    Choose the **Entrerprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
+    Choose the **Enterprise Mobility + Security E5** free trial option. In addition, you must choose to **Activate** the free trial.
 
-    ![Choose the Entrerprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+    ![Choose the Enterprise Mobility + Security E5 free trial](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
 
 3. Select **Microsoft Intune**. 
 
@@ -46,12 +60,14 @@ For this example, you'll use MDM enrollment so that both corporate and bring-you
 
     ![Select 'Some' from the Configure list](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
 
-5. Choose **Select groups** > **Contoso Testers** > **Select**.
+5. Choose **Select groups** > **Contoso Testers** > **Select** as the assigned group.
 
     ![Select the group to enroll](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
 
-6. Use the default values for the remaining configuration values.
-7. Choose **Save**.
+6. Select **Some** from the **MAM Users scope** to manage data on your workforce's devices.
+7. Choose **Select groups** > **Contoso Testers** > **Select** as the assigned group. 
+8. Use the default values for the remaining configuration values.
+9. Choose **Save**.
 
 ## Clean up resources
 
@@ -59,7 +75,9 @@ To reconfigure Intune automatic enrollment, check out [Set up enrollment for Win
 
 ## Next steps
 
-In this quickstart, you learned how to set up auto-enrollment for Windows 10 devices. You can learn about other ways to enroll devices across all platforms. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
+In this quickstart, you learned how to set up auto-enrollment for Windows 10 devices. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
 > [Quickstart: Enroll your Windows 10 device](quickstart-enroll-windows-device.md)

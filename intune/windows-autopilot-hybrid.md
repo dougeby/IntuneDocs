@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Intune.
+title: Enrollment for hybrid Active Directory joined devices - Windows Autopilot
+titleSuffix: 
+description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,8 +22,9 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
  
 ---
  
@@ -36,7 +37,7 @@ You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory
 
 ## Prerequisites
 
-- Successfully configure [hybrid Azure Active Directory join devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains).
+- Successfully configure [hybrid Azure Active Directory join devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
     - Make sure to [verify the registration by using the Get-MsolDevice cmdlet]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 The devices to be enrolled must also:
@@ -71,9 +72,9 @@ The devices to be enrolled must also:
 
 ## Increase the computer account limit in the Organizational Unit
 
-The Intune Connector for Active Directory creates Autopilot enrolling computers in the On-Premise Active directory domain. The computer hosting Intune Connector must have the right to create the computer objects within the domain. 
+The Intune Connector for Active Directory creates Autopilot enrolled computers in the On-Premises Active directory domain. The computer hosting the Intune Connector must have the rights to create the computer objects within the domain. 
 
-On some domains, computers are not granted the rights to create computers. Or maybe Admins do not want to increase the Domain-wide computer account limit. In these situations, the rights can be delegated to the organizational unit where Hybrid Azure AD joined devices are created.
+On some domains, computers are not granted the rights to create computers. Additionally, domains have a built in limit (default of 10) that applies to all users and computers that aren't delegated rights to create Computer Objects. Therefore, the rights need to be delegated to computers hosting the Intune connector on the organizational unit where Hybrid Azure AD joined devices are created.
 
 The organizational unit granted the right to create computers must match:
 - the organizational unit entered in the Domain Join profile
@@ -114,14 +115,15 @@ The organizational unit granted the right to create computers must match:
 
 ## Install the Intune Connector
 
-The Intune Connector for Active Directory needs to be installed on a computer running Windows Server 2016 that has access to the Internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the connector on a server that is not running any other Intune connecters.
+The Intune Connector for Active Directory needs to be installed on a computer running Windows Server 2016 that has access to the Internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the connector on a server that is not running any other Intune connectors.
 
-1. In Intune in the Azure portal, choose **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
-2. Follow the instructions to download  the connector.
-3. Open the downloaded connector setup file to install the connector (ODJConnectorBootstrapper.exe).
-4. At the end of setup, choose **Configure**.
-5. Choose **Sign In**.
-6. Enter user Global Administrator or Intune Administrator role credentials.
+1. Make sure that you have a language pack installed and configured as described in [Intune Connector (Preview) language requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
+2. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
+3. Follow the instructions to download the connector.
+4. Open the downloaded connector setup file to install the connector (ODJConnectorBootstrapper.exe).
+5. At the end of setup, choose **Configure**.
+6. Choose **Sign In**.
+7. Enter user Global Administrator or Intune Administrator role credentials.
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** and confirm the connection status is **Active**.
 
 ### Configure web proxy settings
@@ -130,7 +132,7 @@ If you have a web proxy in your networking environment, follow the instructions 
 
 
 ## Create a device group
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Groups** > **New group**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Groups** > **New group**.
 2. In the **Group** blade:
     1. For **Group type**, choose **Security**.
     2. Type a **Group name** and **Group description**.
@@ -181,7 +183,7 @@ After Autopilot devices are enrolled, their device names change to the hostname 
 ## Create and assign an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.
 
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
 2. Type a **Name** and optional **Description**.
 3. For **Deployment mode**, choose **User-driven**.
 4. In the **Join to Azure AD as** box, choose **Hybrid Azure AD joined (Preview)**.
@@ -194,21 +196,21 @@ It will take around 15 minutes for the device profile status to change from **No
 
 ## Turn on the enrollment status page (optional)
 
-1.  In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
-2.  In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
-3.  For **Show app and profile installation progress**, choose **Yes**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+2. In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
+3. For **Show app and profile installation progress**, choose **Yes**.
 4. Configure the other options as needed.
-5.  Choose **Save**.
+5. Choose **Save**.
 
 ## Create and assign a Domain Join profile
 
-1. In **Microsoft Intune**, choose **Device configuration** > **Profiles** > **Create Profile**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device configuration** > **Profiles** > **Create Profile**.
 2. Enter the following properties:
    - **Name**: Enter a descriptive name for the new profile.
    - **Description**: Enter a description for the profile.
    - **Platform**: Choose **Windows 10 and later**.
    - **Profile type**: Choose **Domain Join (Preview)**.
-3.  Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
+3. Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
 4. Choose **OK** > **Create**. The profile is created, and appears in the list.
 5. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
 

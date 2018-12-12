@@ -22,11 +22,13 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 #ms.devlang:
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.custom: seodec18
 ---
 
-# Manage your company's terms and conditions for user access
+# Terms and conditions for user access
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,6 +20,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -32,15 +33,27 @@ ms.custom: intune-azure
 This article shows you the Microsoft Intune device restrictions settings that you can configure for devices running macOS.
 
 ## Password
-- 	**Password** - Require the end user to enter a password to access the device.
-	- 	**Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
-	- 	**Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, for example "**?**".
-	- 	**Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).
-	- 	**Simple passwords** - Allow the use of simple passwords such as **0000** or **1234**.
-	- 	**Maximum minutes after screen lock before password is required** - Specify how long the computer must be inactive before a password is required to unlock it.
-	- 	**Maximum minutes of inactivity until screen locks** - Specify the length of time that the computer must be idle before the screen locks.
-	- 	**Password expiration (days)** - Specify how many days elapse before the user must change the password (**1** to **255** days).
-	- 	**Prevent reuse of previous passwords** - Specify the number of previously used passwords that cannot be reused (**1** to **24**).
+- **Password** - Require the end user to enter a password to access the device.
+  - **Required password type** - Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
+  - **Number of non-alphanumeric characters in password** - Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, for example "**?**".
+  - **Minimum password length** - Enter the minimum length of password a user must configure (between **4** and **16** characters).
+  - **Simple passwords** - Allow the use of simple passwords such as **0000** or **1234**.
+  - **Maximum minutes after screen lock before password is required** - Specify how long the computer must be inactive before a password is required to unlock it.
+  - **Maximum minutes of inactivity until screen locks** - Specify the length of time that the computer must be idle before the screen locks.
+  - **Password expiration (days)** - Specify how many days elapse before the user must change the password (**1** to **255** days).
+  - **Prevent reuse of previous passwords** - Specify the number of previously used passwords that cannot be reused (**1** to **24**).
+
+- **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on macOS. Choosing **Block** also does the following:
+
+  - Users aren't prompted to use a saved password in Safari or in any apps.
+  - Automatic Strong Passwords are disabled, and strong passwords aren't suggested to users.
+
+  **Not configured** allows these features.
+
+- **Block password proximity requests**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Not configured** allows these password requests.
+
+- **Block password sharing**: **Block** prevents sharing passwords between devices using AirDrop. **Not configured** allows passwords to be shared.
+
 
 ## Restricted apps
 

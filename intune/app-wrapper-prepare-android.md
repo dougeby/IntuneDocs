@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
@@ -32,7 +33,7 @@ ms.custom: intune-classic
 
 Use the Microsoft Intune App Wrapping Tool for Android to change the behavior of your in-house Android apps by restricting features of the app without changing the code of the app itself.
 
-The tool is a Windows command-line application that runs in PowerShell and creates a wrapper around your Android app. After the app is wrapped, you can change the app’s functionality by configuring [mobile application management policies](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) in Intune.
+The tool is a Windows command-line application that runs in PowerShell and creates a wrapper around your Android app. After the app is wrapped, you can change the app’s functionality by configuring [mobile application management policies](app-protection-policies.md) in Intune.
 
 
 Before running the tool, review [Security considerations for running the App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, go to the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) on GitHub.
@@ -49,7 +50,7 @@ Before running the tool, review [Security considerations for running the App Wra
 
 -   The app must be developed by or for your company. You cannot use this tool on apps downloaded from the Google Play Store.
 
--   To run the App Wrapping Tool, you must install the latest version of the [Java Runtime Environment](http://java.com/download/) and then ensure that the Java path variable has been set to C:\ProgramData\Oracle\Java\javapath in your Windows environment variables. For more help, see the [Java documentation](http://java.com/download/help/).
+-   To run the App Wrapping Tool, you must install the latest version of the [Java Runtime Environment](https://java.com/download/) and then ensure that the Java path variable has been set to C:\ProgramData\Oracle\Java\javapath in your Windows environment variables. For more help, see the [Java documentation](https://java.com/download/help/).
 
     > [!NOTE]
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
@@ -146,7 +147,7 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 -   Import the output application to Intune on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more about the Java keytool.
 
--   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, set up the environment to be secure by using [Internet Protocol Security (IPsec)](http://wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/kb/887429).
+-   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, set up the environment to be secure by using [Internet Protocol Security (IPsec)](https://wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/kb/887429).
 
 -   Ensure that the application is coming from a trusted source.
 

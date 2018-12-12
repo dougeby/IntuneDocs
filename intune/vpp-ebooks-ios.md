@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 #ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -38,7 +39,7 @@ Microsoft Intune helps you synchronize, manage, and assign books that you purcha
 The procedures to manage books are similar to [managing VPP apps](vpp-apps-ios.md).
 
 ## Manage volume-purchased books for iOS devices
-You buy multiple licenses for iOS books through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased book use.
+You buy multiple licenses for iOS books through the [Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased book use.
 
 ## Before you start
 Before you start, get a VPP token from Apple and upload it to your Intune account. Additionally:

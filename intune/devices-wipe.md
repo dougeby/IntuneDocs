@@ -21,6 +21,7 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 #ms.devlang:
 #ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -86,7 +87,7 @@ The following tables describe what data is removed, and the effect of the **Reti
 
 |Data type|iOS|
 |-------------|-------|
-|Company apps and associated data installed by Intune|Apps are uninstalled. Company app data is removed.<br /><br />App data from Microsoft apps that use mobile app management is removed. The app is not removed.|
+|Company apps and associated data installed by Intune|**Apps installed using Company Portal:** all app data and the apps are removed. These apps include apps originally installed from App Store and later managed as company apps. <br /><br /> **Microsoft apps that use mobile app management and were installed from App Store:** Personal app data is removed. Company app data and the apps are not removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|

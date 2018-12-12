@@ -22,6 +22,7 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -113,7 +114,7 @@ If you haven't added the Company Portal app to the **Allowed apps** or **Exempt 
 
 ### What it means
 
-Add the Company Portal the **Allowed apps** or **Exempt apps** list in the Windows Information Protection (WIP) app protection policy. For more information, see [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
+Add the Company Portal the **Allowed apps** or **Exempt apps** list in the Windows Information Protection (WIP) app protection policy. For more information, see [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](windows-information-protection-policy-create.md).
 
 ### See also
 [What to tell your end users about using Intune](end-user-educate.md)

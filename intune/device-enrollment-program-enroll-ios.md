@@ -22,16 +22,17 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
 # Automatically enroll iOS devices with Apple's Device Enrollment Program
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article helps you enable iOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
+YOu can set up Intune to enroll iOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
@@ -112,6 +113,10 @@ In the **Apple token** box, browse to the certificate (.pem) file, choose **Open
 
 Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
+> [!NOTE]
+> Devices will be blocked if there are not enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert whne a token is about to expire or licenses are running low.
+ 
+
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 
@@ -143,7 +148,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     ![Screenshot of install company portal with vpp.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. If you chose a token for **Install Company Portal with VPP**, you have the option to lock the device in Single App Mode (specifically, the Company Portal app) immediately after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
-    This feature runs best with iOS 11.3.1 and later. Using older versions may take a long time to install.
+    This feature is only supported for iOS 11.3.1 and later.
 
 8. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
 

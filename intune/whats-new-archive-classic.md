@@ -21,6 +21,7 @@ ROBOTS: noindex,nofollow
 #ms.devlang:
 #ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
@@ -45,13 +46,13 @@ The Managed Browser is receiving updated icons for both the Android and iOS vers
 
 The Company Portal is also receiving updated icons for the Android, iOS, and Windows versions of the app to improve consistency with other apps in EM+S. These icons will be gradually released across platforms from April to late May.
 
-#### Sign-in progress indicator in Android Company Portal <!--953374-->
+#### Sign in progress indicator in Android Company Portal <!--953374-->
 
 An update to the Android Company Portal app shows a sign-in progress indicator when the user launches or resumes the app. The indicator progresses through new statuses, beginning with "Connecting...", then "Signing in...", then "Checking for security requirements..." before allowing the user to access the app. You can see the new screens for the Company Portal app for Android on the [what's new in Intune app UI page](whats-new-app-ui.md).
 
 #### Block apps from accessing SharePoint Online <!-- 679339 -->
 
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
+You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](app-based-conditional-access-intune-create.md). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
 #### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
@@ -61,7 +62,7 @@ New, more specific error messages will now be displayed within the Company Porta
 
 #### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
-New improvements for app installs started in the Windows 10 Company Portal app include:
+New improvements for app install started in the Windows 10 Company Portal app include:
 -	Faster install progress reporting for MSI packages
 -	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
 -	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
@@ -70,7 +71,7 @@ You can see the new progress bar on the [what's new in Intune app UI page](whats
 
 #### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](/intune-classic/deploy-use/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
 ### What's new in the public preview of Intune in the Azure portal<!--736542-->
 
@@ -112,9 +113,9 @@ The existing mobile application management (MAM) administration roles (Contrib
 
 #### Improved sign in experience across Company Portal apps for all platforms <!--User Story 1132123-->
 
-We are announcing a change that is coming in the next few months that will improve the sign in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
+We are announcing a change that is coming in the next few months that will improve the sign-in experience for the Intune Company Portal apps for Android, iOS, and Windows. The new user experience will automatically appear across all platforms for the Company Portal app when Azure AD makes this change. In addition, users can now sign in to the Company Portal from another device with a generated, single-use code. This is especially useful in cases when users need to sign in without credentials.
 
-You can find screenshots of the previous sign in experience, the new sign in experience with credentials, and the new sign in experience from another device on the [What's new in app UI](whats-new-app-ui.md) page.
+You can find screenshots of the previous sign-in experience, the new sign-in experience with credentials, and the new sign-in experience from another device on the [What's new in app UI](whats-new-app-ui.md) page.
 
 #### Plan for change: Intune is changing the Intune Partner Portal experience <!-- 1050016 -->
 
@@ -144,7 +145,7 @@ You can now control mobile device access to corporate resources using conditiona
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+You can configure EMS conditional access policies based on Symantec Endpoint Protection Mobile (Skycure) risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Symantec Endpoint Protection Mobile connector](skycure-mobile-threat-defense-connector.md).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 
@@ -173,7 +174,7 @@ If you need to download and sideload the Windows 10 Company Portal app, you can 
 
 The iOS 10.3 release started rolling out on March 27, 2017 to iOS users. All existing Intune MDM and MAM scenarios are compatible with the latest version of Apple’s OS. We anticipate all existing Intune features currently available for managing iOS devices will continue to work as your users upgrade their devices and apps to iOS 10.3.
 
-There are currently no known issues to share. If you run into any issues with iOS 10.3, please feel free to reach out to the [Intune support team](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune).
+There are currently no known issues to share. If you run into any issues with iOS 10.3, please feel free to reach out to the [Intune support team](get-support.md).
 
 #### Improved support for Android users based in China <!--720444-->
 
@@ -216,7 +217,7 @@ Once a tenant enters the migration process for grouping and targeting, Intune wi
 Similarly, if the IT Admin changes which Intune group is targeted by a Corporate Device Enrollment profile, Intune will create new dynamic group reflecting the new profile assignment, but will not remove the dynamic group created for the old assignment.
 
 ### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
-The default behavior for enrolling Windows 10 desktops is changing. New enrollments will follow the typical MDM agent enrollment flow rather than through the PC agent. The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding Windows 10 desktop computers as mobile devices. This will not impact currently enrolled PCs, and your organization can still manage Windows 10 desktops using the PC agent [if you prefer](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+The default behavior for enrolling Windows 10 desktops is changing. New enrollments will follow the typical MDM agent enrollment flow rather than through the PC agent. The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding Windows 10 desktop computers as mobile devices. This will not impact currently enrolled PCs, and your organization can still manage Windows 10 desktops using the PC agent [if you prefer](manage-windows-pcs-with-microsoft-intune.md).
 
 #### Improving mobile app management support for selective wipe <!--581242-->
 End users will be given additional guidance on how to regain access to work or school data if that data is automatically removed due to the "Offline interval before app data is wiped" policy.<!--, or the removal of the Intune Company Portal on Android.-->
@@ -238,7 +239,7 @@ Beginning in March, the Company Portal app for Android will follow [material des
 You can find before and after images on the [UI updates page](whats-new-app-ui.md).
 
 ### Associate multiple management tools with the Microsoft Store for Business <!--926135-->
-If you are using more than one management tool to deploy Microsoft Store for Business apps, previously, you could only associate one of these with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
+If you are using more than one management tool to deploy Microsoft Store for Business apps, previously, you could only associate one of these with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. For details, see [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](windows-store-for-business.md).
 
 ## What's new in the public preview of Intune in the Azure portal <!--736542-->
 
@@ -255,20 +256,20 @@ You can find what's new in the Intune preview in Azure [here](whats-new.md).
 ### New Capabilities
 
 #### In-console reports for MAM without enrollment <!--677961-->
-New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune here](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
+New app protection reports have been added for both enrolled devices and devices that have not been enrolled. Find out more about how you can [monitor mobile app management policies with Intune](app-protection-policies-monitor.md).
 
 #### Android 7.1.1 support <!--694397-->
 Intune now fully supports and manages Android 7.1.1.
 
 #### Resolve issue where iOS devices are inactive, or the admin console cannot communicate with them <!--unknown-->
-When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](/intune-classic/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them).
+When users’ devices lose contact with Intune, you can give them new troubleshooting steps to help them regain access to company resources. See [Devices are inactive, or the admin console cannot communicate with them](troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them).
 
 ### Notices
 
 #### Defaulting to managing Windows desktop devices through Windows settings <!--663050-->
 The default behavior for enrolling Windows 10 desktops is changing. New enrollments will follow the typical MDM agent enrollment flow rather than through the PC agent.
 
-The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding Windows 10 desktop computers as mobile devices. This will not impact currently enrolled PCs, and your organization can still manage Windows 10 desktops using the PC agent [if you prefer](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+The Company Portal website will provide Windows 10 desktop users with enrollment instructions that guide them through the process of adding Windows 10 desktop computers as mobile devices. This will not impact currently enrolled PCs, and your organization can still manage Windows 10 desktops using the PC agent [if you prefer](manage-windows-pcs-with-microsoft-intune.md).
 
 #### Improving mobile app management support for selective wipe <!--581242-->
 End users will be given additional guidance on how to regain access to work or school data if that data is automatically removed due to the "Offline interval before app data is wiped" policy.<!--, or the removal of the Intune Company Portal on Android.-->
@@ -305,7 +306,7 @@ In early calendar year 2017, we will be migrating our full admin experience onto
 The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](/intune/what-is-intune).
 
 __Telecom expense management integration in public preview of Azure portal__ <!--747605-->
-We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com/). To enable this feature in your trial tenant, please [contact Microsoft support](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com/). To enable this feature in your trial tenant, please [contact Microsoft support](get-support.md).
 
 ### New Capabilities
 
@@ -317,7 +318,7 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 * Restricting mobile device enrollment does not restrict PC client enrollment.
 * For iOS only, there is one additional option to block the enrollment of personally owned devices.
 
-Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](/intune-classic/deploy-use/manage-corporate-owned-devices).
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](device-enrollment.md).
 
 ### Notices
 

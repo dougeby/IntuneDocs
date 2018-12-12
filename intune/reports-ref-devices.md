@@ -20,6 +20,7 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ---
@@ -317,7 +318,7 @@ The **DevicePropertyHistory** entity has the same properties as the devices tabl
 
 ## MdmDeviceInventoryHistories
 
-The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](device-inventory.md).
 
 | Property  | Description |
 |---------|------------|

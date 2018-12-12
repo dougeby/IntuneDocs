@@ -1,4 +1,6 @@
 ---
+# required metadata
+
 title: Quickstart - Create a user in Intune
 description: Quickstart - Create a user in Intune.
 services: microsoft-intune
@@ -8,6 +10,18 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # Quickstart: Create a user and assign a license to it
@@ -57,7 +71,9 @@ If you don't need this user any more, you can delete the user by navigating to t
 
 ## Next steps
 
-In this quickstart, you created a user and assigned a license to the user. You can now assign that user to a group.
+In this quickstart, you created a user and assigned a license to the user. For more information about adding users to Intune, see [Add users and grant administrative permission to Intune](users-add.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Create a group](quickstart-create-group.md)
+> [Quickstart: Create a group to manage users](quickstart-create-group.md)

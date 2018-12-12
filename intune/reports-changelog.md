@@ -20,6 +20,7 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ---
@@ -96,4 +97,4 @@ You can now build reports and data visualizations using the user device associat
 
 ## Next steps
  - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
- - Read the [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

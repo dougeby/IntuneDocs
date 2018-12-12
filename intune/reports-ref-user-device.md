@@ -2,12 +2,12 @@
 # required metadata
 title: User Device Association - Intune Data Warehouse
 titlesuffix: Microsoft Intune 
-description: A list of changes in the Intune Data Warehouse API.
+description: The UserDeviceAssociation entity contains user device associations in your organization.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,8 +20,9 @@ ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic; seodec18
 ---
 # User Device Association
 

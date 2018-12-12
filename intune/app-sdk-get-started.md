@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
 
@@ -111,9 +112,6 @@ Microsoft Intune collects data on usage statistics for your app.
 
 	* If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- iOS and Android line-of-business app version number is visible <!-- 1380712 -->
-
 ## Line-of-business app version numbers
 
 Line-of-business apps in Intune now display the version number for iOS and Android apps. The number displays in the Azure portal in the app list and in the app overview blade. End users can see the app number in the Company Portal app and in the web portal.
@@ -169,6 +167,23 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 * **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
 
 * **Troubleshoot**: If you run into any issues while manually testing your app's installation user experience, see [Troubleshoot app installation issues](troubleshoot-app-install.md). 
+
+### Give your app access to the Intune app protection service (optional)
+
+If your app is using its own custom Azure Active Directory (AAD) settings for authentication, then the following steps should be taken for both public store apps, as well as internal LOB apps. The steps **do not need to be taken if your app is using the Intune SDK default client ID**. 
+
+Once you have registered your app within an Azure tenant, and it is showing up under **All Applications**, you must give your app access to the Intune app protection service (previously known as MAM service). In the Azure portal:
+
+1.	Go to **Azure Active Directory** blade.
+2.	Select the **App registration** set up for the application.
+3.	In **Settings** under the **API Access** heading, select **Required permission**. 
+4.	Click **+ Add**.
+5.	Click **Select an API**. 
+6.	In the search box, enter **Microsoft Mobile Application Management**.
+7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
+8.	Select **Read and Write the User’s App Management Data**.
+9.	Click **Done**.
+10.	Click **Grant permissions**, then click **Yes**. 
 
 ### Badge your app (optional)
 

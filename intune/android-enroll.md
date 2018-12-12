@@ -22,9 +22,10 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 #ms.devlang:
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
 # Enroll Android devices

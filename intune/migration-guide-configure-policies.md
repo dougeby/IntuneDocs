@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure device compliance and app management policies during an Intune migration
+title: Configure device and app compliance during an Intune migration
 titlesuffix: Microsoft Intune
 description: This article provides the necessary steps to configure device compliance and app management policies during a Microsoft Intune migration.
 keywords:
@@ -22,8 +22,9 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-#ms.custom:
+ms.custom: seodec18
 
 ---
 

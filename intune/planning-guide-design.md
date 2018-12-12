@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Create a design
+title: Create your Microsoft Intune design
 titlesuffix: Microsoft Intune
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
@@ -22,8 +22,9 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 #ms.devlang:
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom:
+ms.custom: seodec18
 
 ---
 
@@ -406,7 +407,7 @@ Conditional access is used to allow only compliant devices to access email and o
 
 For online access, decide what platforms, and user groups will be targeted by conditional access policies. Also, determine whether you need to install or configure the Intune service-to-service connector for Exchange Online or Exchange on-premises. Learn more how to install and configure the Intune service-to-service connectors: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange on-premises](exchange-connector-install.md)
 

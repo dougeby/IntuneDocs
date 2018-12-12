@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ROBOTS: NOINDEX,NOFOLLOW
 #ms.devlang:
 ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -48,7 +49,7 @@ Android Enterprise (formerly known as Android for Work) supports including and e
 
 ### Device management
 
-### Export all devices into CSV files in IE, Edge, or Chrome <!-- 2258071 -->
+### Export all devices into CSV files in IE, Microsoft Edge, or Chrome <!-- 2258071 -->
 In **Devices** > **All devices**, you can **Export** the devices into a CSV formatted list. Internet Explorer (IE) users with >10,000 devices can successfully export their devices into multiple files. Each file has up to 10,000 devices.
 
 Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
@@ -149,7 +150,7 @@ In your Device Configuration, there are more detailed error codes and error mess
    Enable this to prevent the computer from responding to probing requests. The computer still answers incoming requests for authorized apps. Unexpected requests, such as ICMP (ping), are ignored.
 
 #### Disable checks on device restart <!--1805490 -->
-Intune gives you control to [manage software updates]](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
+Intune gives you control to [manage software updates](windows-update-for-business-configure.md). With this update, the <strong>Restart checks</strong> property is available, and enabled by default. To skip the typical checks that occur when you restart a device (such as active users, battery levels, and so on), select <strong>Skip</strong>.
 
 #### New Windows 10 Insider Preview channels available for deployment rings <!-- 1746293 -->
 You now have the option to select the following Windows 10 Insider Preview servicing channels when you create a Windows 10 deployment ring:
@@ -234,10 +235,10 @@ We've improved the language in the Company Portal for Windows 10 to be more user
 #### New additions to our docs about user privacy <!-- 1440709 -->
 As part of our effort to give end users more control over their data and privacy, we've published updates to our docs that explain how to view and remove data stored locally by the Company Portal apps. You can find these updates at:
 
-- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android.md)
-- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
-- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios.md)
-- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows.md)
+- **Android**: [How to remove your Android device from Intune](/intune-user-help/unenroll-your-device-from-intune-android)
+- **Android, if the user has declined terms of use**: [Remove your device management if you declined "Terms of Use"](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios)
+- **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows)
 
 ## February 2018
 
@@ -298,8 +299,8 @@ A drill-in report for each status category lists the individual PCs that need at
 - **Publish user activities**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in the task switcher.
 - **Local activities only**: Set this to **Block** to prevent shared experiences and discovery of recently used resources in task switcher based only on local activity.
 
-#### New settings for the Edge browser <!--1469166 -->
-[Two new settings](device-restrictions-windows-10.md#edge-browser) are now available for devices with the Edge browser: **Path to favorites file** and **Changes to Favorites**.
+#### New settings for the Microsoft Edge browser <!--1469166 -->
+[Two new settings](device-restrictions-windows-10.md#microsoft-edge-browser) are now available for devices with the Microsoft Edge browser: **Path to favorites file** and **Changes to Favorites**.
 
 ### App management
 
@@ -1054,7 +1055,7 @@ Once in sustaining mode, these apps will only receive critical security updates.
 
 ### Block unsupported Samsung Knox device enrollment  <!-- 1490695 -->
 
-The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid Knox activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support Knox while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung Knox Standard policy settings](/intune/supported-devices-browsers.md#intune-supported-web-browsers).
+The Company Portal app only attempts to enroll supported Samsung Knox devices. To avoid Knox activation errors that prevent MDM enrollment, device enrollment is only attempted if the device appears in the [list of devices published by Samsung](https://www.samsungknox.com/knox-supported-devices/knox-workspace). Samsung devices can have model numbers that support Knox while others that don't. Verify Knox compatibility with your device reseller before purchase and deployment. You can find the full list of verified devices in the [Android and Samsung Knox Standard policy settings](supported-devices-browsers.md#intune-supported-web-browsers).
 
 ### End of support for Android 4.3 and lower <!-- 1171126, 1326920 -->
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force-retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
@@ -1075,7 +1076,7 @@ The Company Portal app for Windows 10 allows users to refresh the data in the ap
 
 ### Inform end users what device information can be seen for iOS <!--739894-->
 
-We have added  **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
+We have added **Ownership Type** to the Device Details screen on the Company Portal app for iOS. This will allow users to find out more about privacy directly from this page from the Intune end user docs. They will also be able to locate this information on the About screen.
 
 ### Allow end users to access the Company Portal app for Android without enrollment <!---1169910--->
 
@@ -1175,7 +1176,7 @@ Intune now supports restricting iOS and Android enrollment by operating system v
 ### Restrict Android, iOS, and macOS device personally owned device enrollment  <!--- 1333272,  1333275, 1245709 --->
 Intune can restrict personal device enrollment by white-listing corporate device IMEI numbers. Intune has now expanded this functionality to iOS, Android, and macOS using device serial numbers. By uploading the serial numbers to Intune, you can predeclare devices as corporate-owned. Using enrollment restrictions, you can block personally owned (BYOD) devices, allowing enrollment only for corporate-owned devices. Learn more about [device enrollment restrictions](enrollment-restrictions-set.md).
 
-To import serial numbers, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file (no header, two columns for serial number and details like IMEI numbers).  To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS. 
+To import serial numbers, go **Device enrollment** > **Corporate device identifiers** and click **Add** and then upload a .CSV file (no header, two columns for serial number and details like IMEI numbers). To restrict personally owned devices, go **Device enrollment** > **Enrollment restrictions**. Under **Device Type Restrictions**, select the **Default** and then select **Platform Configurations**. You can **Allow** or **Block** personally owned devices for iOS, Android, and macOS.
 
 
 ### New device action to force devices to sync with Intune <!-- 711369 -->
@@ -1289,7 +1290,7 @@ In this release, we've added new settings for the Windows 10 device restriction 
 -  Privacy
 -  Search
 -  Windows Spotlight
--  Edge browser
+-  Microsoft Edge browser
 
 For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 
@@ -1569,7 +1570,7 @@ Intune is adding new enrollment restrictions that control which mobile device pl
 * Restricting mobile device enrollment does not restrict PC client enrollment.  
 * For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
 
-Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](https://docs.microsoft.com/intune-classic/deploy-use/manage-corporate-owned-devices).
+Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](device-enrollment.md).
 
 ### View all actions on managed devices <!--677150-->
 A new __Device Actions__ report shows who has performed remote actions like factory reset on devices, and additionally shows the status of that action. See [What is device management?](device-management.md).

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Enroll macOS devices - Device Enrollment Program
-titleSuffix: Microsoft Intune
+title: Enroll macOS devices - Device Enrollment Program or Apple School Manager
+titleSuffix: 
 description: Learn how to enroll corporate-owned macOS devices using the Device Enrollment Program.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,20 +22,21 @@ ms.assetid:
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 
-# Automatically enroll macOS devices with Apple's Device Enrollment Program
+# Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article helps you set up macOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can set up DEP enrollment for large numbers of devices without ever touching them. You can ship macOS devices directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into Intune management.
+You can set up Intune enrollment for macOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com) or [Apple School Manager](https://school.apple.com/). You can use either of these enrollments for large numbers of devices without ever touching them. You can ship macOS devices directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into Intune management.
 
-To set up DEP enrollment, you use both the Intune and Apple DEP portals. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
+To set up enrollment, you use both the Intune and Apple DEP portals. You create enrollment profiles containing settings that applied to devices during enrollment.
 
-DEP enrollment does not work with the [device enrollment manager](device-enrollment-manager-enroll.md) or [Apple School Manager](apple-school-manager-set-up-ios.md).
+Neither DEP enrollment or Apple School Manager work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -46,19 +47,19 @@ DEP enrollment does not work with the [device enrollment manager](device-enrollm
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## Prerequisites
-- Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
+- Devices purchased in [Apple School Manager](https://school.apple.com/) or [Apple's Device Enrollment Program](http://deploy.apple.com)
 - A list of serial numbers or a purchase order number. 
 - [MDM Authority](mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## Get an Apple DEP token
 
-Before you can enroll macOS devices with DEP, you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about DEP devices that your corporation owns. It also lets Intune upload enrollment profiles to Apple and to these profiles to devices.
+Before you can enroll macOS devices with DEP or Apple School Manager, you need a DEP token (.p7m) file from Apple. This token lets Intune sync information about the devices that your organization owns. It also lets Intune upload enrollment profiles to Apple and to these profiles to devices.
 
-You use the Apple DEP portal to create a DEP token. You also use the DEP portal to assign devices to Intune for management.
+You use the Apple portal to create a token. You also use the Apple portal to assign devices to Intune for management.
 
 > [!NOTE]
-> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple DEP token. You can delete the DEP token again from the Azure portal.
+> If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple token. You can delete the token again from the Azure portal.
 
 ### Step 1. Download the Intune public key certificate required to create the token.
 
@@ -70,15 +71,14 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
    ![Screenshot of Enrollment Program Token pane in Apple Certificates workspace to download public key.](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple Device Enrollment Program portal.
+3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple portal.
 
 
 ### Step 2. Use your key to download a token from Apple.
 
-1. Choose **Create a token for Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
-2.  In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**.
-
-3. On the **Manage Servers** page, choose **Add MDM Server**.
+1. Choose **Create a token for Apple's Device Enrollment Program** or **Create a token via Apple School Manager** to open the appropriate Apple portal, and sign in with your company Apple ID. You can use this Apple ID to renew your token.
+2.  For DEP, in the Apple portal, choose **Get Started** for **Device Enrollment Program** > **Manage Servers** > **Add MDM Server**.
+3.  For Apple School Manage, in the Apple portal, choose **MDM Servers** > **Add MDM Server**.
 4. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It is not the name or URL of the Microsoft Intune server.
 
 5. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
@@ -93,9 +93,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 8. For **Choose Action**, choose **Assign to Server**, choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**. The Apple portal assigns the specified devices to the Intune server for management and then displays **Assignment Complete**.
 
-   In the Apple portal, go to **Deployment Programs** &gt; **Device Enrollment Program** &gt; **View Assignment History** to see a list of devices and their MDM server assignment.
-
-### Step 3. Save the Apple ID used to create this token.
+### Step 3. Save the Apple ID used to create this token
 
 In Intune in the Azure portal, provide the Apple ID for future reference.
 
@@ -106,7 +104,7 @@ In the **Apple token** box, browse to the certificate (.pem) file, choose **Open
 
 ## Create an Apple enrollment profile
 
-Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
+Now that you've installed your token, you can create an enrollment profile for devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
@@ -139,11 +137,11 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Department Phone</strong> | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
   You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
-  - If you choose **Hide**, the screen won't be displayed during set up. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during set up. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
-    | Setup Assistant screen settings | If you choose **Show**, during set up the device will... |
+    | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode unless the device is secured or has access controlled in some other manner (that is, kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
@@ -191,7 +189,7 @@ You can pick a default macOS and iOS profile to be applied to all devices enroll
 2. Choose **Set Default Profile**, choose a profile in the drop-down list, and then choose **Save**. This profile will be applied to all devices that enroll with the token.
 
 ## Distribute devices
-You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your DEP devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is wiped.
+You have enabled management and syncing between Apple and Intune, and assigned a profile to let your devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is wiped.
 
 ## Renew a DEP token  
 1. Go to deploy.apple.com.  

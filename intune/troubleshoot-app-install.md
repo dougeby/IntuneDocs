@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,6 +20,7 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 #ms.devlang:
 ms.reviewer: mghadial
 #ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -86,6 +87,19 @@ The following error messages and descriptions provide details about both Android
 |    The user rejected the   offer to update the app. (0x87D13B63)    |    The   end-user clicked cancel during the update process.     |
 |    Unknown error   (0x87D103E8)    |    An   unknown app installation error occurred. This is the resulting error when the   other error have not occurred.    |
 
+### Other installation errors
+
+|    Error message/code    |    Description    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF,   0x80CF201C (client error)    |    To install this app, you must have a sideloading-enabled system. Make sure that the app package is signed with a trusted signature and installed on a domain-joined device that has the **AllowAllTrustedApps** policy enabled, or a device that has a Windows Sideloading license with the **AllowAllTrustedApps** policy enabled. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    The package could not be opened. Possible causes:<ul><li> The package is unsigned.</li><li> The publisher name does not match the signing certificate subject.</li></ul> Check the **AppxPackagingOM** event log for information. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    The package failed update, dependency, or conflict validation. Possible causes:<ul><li> The incoming package conflicts with an installed package.</li><li> A specified package dependency is not found.</li><li> The package does not support the correct processor architecture.</li></ul> Check the **AppXDeployment-Server** event log for information. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    The provided package is already installed, and reinstallation of the package is blocked. You could receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<ul><li> Increment the version number of the app, then rebuild and re-sign the package.</li><li> Remove the old package for every user on the system before you install the new package.</li></ul> For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    Application installation succeeded but application is not detected. The app was deployed successfully by Intune, then subsequently uninstalled. Reasons for the app being uninstalled include:<ul><li> The end user uninstalled the app.</li><li> The identity information in the package does not match what device reports for bad apps.</li><li>For self-updating MSIs, the product version does not match the information of the app after it is updated outside of Intune.</li></ul> Instruct the user to reinstall the app from the company portal. Note that required apps will be reinstalled automatically when the device next checks in.    |
+
+## Troubleshooting apps from the Microsoft Store
+
+The information in the topic [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) helps you troubleshoot common problems you might encounter when installing apps from the Microsoft Store, whether by using Intune, or by any other means.
 
 ## Next steps
 

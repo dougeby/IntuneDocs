@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll iOS devices - Apple Configurator-Setup Assistant
+title: iOS device enrollment - Apple Configurator-Setup Assistant
 titleSuffix: Microsoft Intune
 description: Learn how to use the Apple Configurator to enroll corporate-owned iOS devices with Setup Assistant.
 keywords:
@@ -22,12 +22,14 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 
-# Enroll iOS devices with Apple Configurator
+# Set up iOS device enrollment with Apple Configurator
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

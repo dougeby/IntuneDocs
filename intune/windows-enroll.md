@@ -22,6 +22,7 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 #ms.devlang:
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -106,4 +107,4 @@ For more information about end-user tasks, see [Resources about the end-user exp
 
 ## Next steps
 
-- [Considerations when managing Windows devices using Intune on Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Considerations when managing Windows devices using Intune on Azure](intune-legacy-pc-client.md).

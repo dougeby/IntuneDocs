@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Choose how to enroll iOS devices in Intune
+title: Enroll iOS devices in Intune
 titlesuffix: Microsoft Intune
 description: Set up enrollment of iOS devices in Microsoft Intune.
 keywords:
@@ -22,9 +22,10 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
 # Enroll iOS devices in Intune

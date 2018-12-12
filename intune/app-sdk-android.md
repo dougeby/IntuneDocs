@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 
@@ -136,7 +137,7 @@ The App SDK plugin is distributed as part of the SDK as
 **GradlePlugin/com.microsoft.intune.mam.build.jar**. For Gradle to be
 able to find the plugin, it must be added to the buildscript
 classpath. The plugin depends on
-[Javassist](http://jboss-javassist.github.io/javassist/), which must
+[Javassist](https://jboss-javassist.github.io/javassist/), which must
 also be added. To add these to the classpath, add the following to
 your root `build.gradle`
 
@@ -236,7 +237,7 @@ If you answer 'yes' to both of those questions, then you must include that libra
 #### Dependencies
 
 The gradle plugin has a dependency on
-[Javassist](http://jboss-javassist.github.io/javassist/), which must
+[Javassist](https://jboss-javassist.github.io/javassist/), which must
 be available to Gradle's dependency resolution (as described
 above). Javassist is used solely at build time when running the
 plugin. No Javassist code will be added to your app.
@@ -438,7 +439,7 @@ The Azure Active Directory Authentication Library ([ADAL](https://azure.microsof
 
 Logging should be initialized early to get the most value out of logged data. `Application.onMAMCreate()` is typically the best place to initialize logging.
 
-To receive MAM logs in your app, create a [Java Handler](http://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
+To receive MAM logs in your app, create a [Java Handler](https://docs.oracle.com/javase/7/docs/api/java/util/logging/Handler.html) and add it to the `MAMLogHandlerWrapper`. This will invoke `publish()` on the application handler for every log message.
 
 ```java
 /**
@@ -742,21 +743,9 @@ No additional manifest values need to be configured.
 
 Authority and NonBrokerRedirectURI may be specified if necessary.
 
-Register your app with Azure AD using the following steps.
-
-In the Azure portal:
-1.  Go to **Azure Active Directory** blade.
-2.  Select the **App registration** set up for the application.
-3.  In **Settings** under the **API Access** heading, select **Required permission**. 
-4.  Click **+ Add**.
-5.  Click **Select an API**. 
-6.  In the search box, enter **Microsoft Mobile Application Management**.
-7.  Select **Microsoft Mobile Application Management** in the list of APIs and click select.
-8.  Select **Read and Write the User’s App Management Data**.
-9.  Click **Done**.
-10. Click **Grant permissions**, then click **Yes**. 
-
-See [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
+Register your app with Azure AD using the following steps:
+* See [here](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) for information about registering an application with Azure AD. 
+* Ensure the steps to give your Android app permissions to the app protection policy (APP) service are followed. Use the instructions in the [getting started with the Intune SDK guide](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) under "Give your app access to the Intune app protection service (optional)". 
 
 Also see the requirements for [Conditional Access](#conditional-access) below.
 
@@ -1017,7 +1006,7 @@ The registered user account's status may change when an enrollment notification 
 
 ## Protecting Backup data
 
-As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](http://developer.android.com/guide/topics/data/backup.html).
+As of Android Marshmallow (API 23), Android has two ways for an app to back up its data. Each option is available to your app and requires different steps to ensure that Intune data protection is correctly implemented. You can review the table below on corresponding actions required for correct data protection behavior.  You can read more about the backup methods in the [Android API guide](https://developer.android.com/guide/topics/data/backup.html).
 
 ### Auto Backup for Apps
 
@@ -1817,9 +1806,8 @@ These instructions are specific to all Android and Xamarin app developers who wi
    ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
-
-> [!NOTE]
-    > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
+   >
+   > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
 3. Enable MAM policy required by putting the following value in the manifest:
 ```xml

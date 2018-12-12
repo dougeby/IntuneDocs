@@ -1,13 +1,26 @@
 ---
+# required metadata
+
 title: Quickstart - Create and assign a custom role in Intune
 description: Quickstart - Create and assign a custom role for a remote device manager.
 services: microsoft-intune
 author: ErikjeMS
-
 ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+#ms.tgt_pltfrm:
+ms.custom: intune
+
 ---
 
 # Quickstart: Create and assign a custom role
@@ -60,7 +73,9 @@ If you don't want to use the new custom role any more, you can delete it. Choose
 
 ## Next steps
 
-In this quickstart, you created a custom security operations role and assigned it to a group. You can learn more about security issues in the following article.
+In this quickstart, you created a custom security operations role and assigned it to a group. For more information about roles in Intune, see [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md)
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Get started with device compliance policies](device-compliance-get-started.md)
+> [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md)

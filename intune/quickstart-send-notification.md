@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 #ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -111,7 +112,9 @@ When you've successfully created and saved the policy, it will appear in the lis
 
 ## Next steps
 
-In this quickstart, you used Intune to create and assign a compliance policy for your workforce's Windows 10 devices to require a password of at least six characters in length.
+In this quickstart, you used Intune to create and assign a compliance policy for your workforce's Windows 10 devices to require a password of at least six characters in length. For more information about creating compliance policies for Windows devices, see [Add a device compliance policy for Windows devices in Intune](compliance-policy-create-windows.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Create and assign a custom role](quickstart-create-custom-role.md)
+> [Quickstart: Add and assign a client app](quickstart-add-assign-app.md)

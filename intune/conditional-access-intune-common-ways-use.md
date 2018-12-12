@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Conditional access with Microsoft Intune
-titlesuffix:
+title: Conditional access scenarios 
+titlesuffix: Microsoft Intune
 description: Learn how Intune conditional access is commonly used for device-based and app-based conditional access.
 keywords:
 author: brenduns
@@ -22,8 +22,9 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 #ms.devlang:
 #ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure; get-started; seodec18
 
 ---
 
@@ -50,7 +51,7 @@ Device-based conditional access policies for Exchange online and other Office 36
 
 -   Learn more about [Intune device compliance](device-compliance.md).
 
--   Learn more about [protecting e-mail, Office 365, and other services using conditional access with Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Learn more about [protecting e-mail, Office 365, and other services using conditional access with Intune](app-based-conditional-access-intune.md).
 
 > [!NOTE]
 > On Android devices, when you enable Device Based Access for Sharepoint Online, users must enable the **Enable Browser Access** option on the enrolled device as follows:
@@ -130,7 +131,7 @@ When mobile devices have the Mobile Threat Defense agent installed, the agent ca
 
 The Intune and mobile threat defense integration plays a factor at the conditional access decisions based on device risk.
 
--   Learn more about [Intune mobile threat defense](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense).
+-   Learn more about [Intune mobile threat defense](mobile-threat-defense.md).
 
 ### Conditional access for Windows PCs
 

@@ -21,6 +21,7 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 #ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -42,7 +43,7 @@ ms.custom: intune-azure
    - **Platform**: Select the platform type:  
 
        - **Android**
-       - **Android work profiles**
+       - **Android enterprise**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**

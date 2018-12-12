@@ -1,13 +1,13 @@
 ---
 # required metadata
-title: Application
+title: Reference for Application entities
 titlesuffix: Microsoft Intune
 description: Reference topic for the Application category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,8 +20,9 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 ---
 
 # Reference for application entities

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 #ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -59,7 +60,7 @@ Additionally, you can synchronize, manage, and assign books you purchased from t
 
 ### Supports Apple Volume Purchase Program volume-purchased apps for iOS devices
 
-Purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](http://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](http://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+Purchase multiple licenses for iOS apps through the [Apple Volume Purchase Program for Business](https://www.apple.com/business/vpp/) or the [Apple Volume Purchase Program for Education](https://volume.itunes.apple.com/us/store). This process involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP token to Intune.  You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
 
 ### Supports Business-to-Business volume-purchased apps for iOS devices
 

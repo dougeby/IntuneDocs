@@ -22,6 +22,7 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 #ms.devlang:
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -70,7 +71,7 @@ Default restrictions are automatically provided for both device type and device 
 
 ## Set device type restrictions
 
-You can change the settings for a device type restriction by following the steps below. These restrictions don't effect on devices that have already been enrolled. Devices enrolled with [Intune PC agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature.
+You can change the settings for a device type restriction by following the steps below. These restrictions don't effect on devices that have already been enrolled. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature.
 
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
@@ -104,11 +105,11 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
- - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
-- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows Settings](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
+ - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
 The following personal enrollment methods will also be blocked:
-- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
+- [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Add Work Account from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*.
 - [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) option from Windows Settings.
 
 \* These won't be blocked if registered with Autopilot.
@@ -126,7 +127,7 @@ You can change the settings for a device limit restriction by following these st
 6. Select **Save**.
 
 
-Users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
+During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

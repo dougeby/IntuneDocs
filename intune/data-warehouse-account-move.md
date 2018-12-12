@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,6 +20,7 @@ ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: 
 ---
@@ -82,4 +83,4 @@ Customer X requests an account move to begin on 1/06/2018. In response to the re
 ## Next steps
 
  - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
- - Read the [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

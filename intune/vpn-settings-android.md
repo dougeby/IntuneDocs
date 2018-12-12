@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure VPN settings for Android devices in Microsoft Intune - Azure | Microsoft Docs
-description: When creating a VPN configuration profile for Android and Android for work devices, enter the connection name, the IP address or FQDN of the VPN server, choose how users authenticate with the VPN server, and then choose Citrix, SonicWall, Check Point Capsule, Pulse Secure, and Edge connection types.
+description: When creating a VPN configuration profile for Android and Android for work devices, enter the connection name, the IP address or FQDN of the VPN server, choose how users authenticate with the VPN server, and then choose Citrix, SonicWall, Check Point Capsule, Pulse Secure, and Microsoft Edge connection types.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -19,6 +19,7 @@ ms.technology:
 #audience:
 #ms.devlang:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 

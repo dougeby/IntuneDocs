@@ -22,6 +22,7 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 #ms.devlang:
 #ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -72,7 +73,7 @@ Before you can configure conditional access, verify the following:
 - EAS mail clients **Android work profile devices:** Only **Gmail** and **Nine Work for Android Enterprise** in the **work profile** are supported on Android work profile devices. For conditional access to work with Android work profiles, you must deploy an email profile for the Gmail or Nine Work for Android Enterprise app, and also deploy those apps as a required installation.
 
 > [!NOTE]
-> Microsoft Outlook app for Android and iOS is not supported. 
+> Microsoft Outlook for Android and iOS is not supported via the Exchange on-premises connector. If you want to leverage Azure Active Directory Conditional Access policies and Intune App Protection Policies with Outlook for iOS and Android for your on-premises mailboxes, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### Support for PCs
 

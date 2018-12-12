@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: How to categorize devices into groups in Intune
+title: Categorize devices into groups in Intune
 titleSuffix: "Microsoft Intune"
 description: Learn how to categorize devices into groups for easier management.
 keywords:
@@ -22,16 +22,17 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 #ms.devlang:
 #ms.reviewer: jieyang
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
-# Categorize devices into groups for easier management
+# Categorize devices into groups
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use Microsoft Intune device categories to automatically add devices to groups based on categories that you define. This makes it easier for you to manage those devices.
+To make managing devices easier, you can use Microsoft Intune device categories to automatically add devices to groups based on categories that you define.
 
 Device categories use the following workflow:
 1. Create categories that users can choose from when they enroll their device.

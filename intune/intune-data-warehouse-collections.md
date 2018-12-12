@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -20,6 +20,7 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 #ms.devlang:
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
 ---

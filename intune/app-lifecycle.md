@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 12/04/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -21,6 +21,7 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 #ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: apps; get-started
 
@@ -30,17 +31,17 @@ ms.custom: apps; get-started
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app. By understanding these phases, you'll have a the details you need to get started with app management in Intune.
+The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app. By understanding these phases, you'll have the details you need to get started with app management in Intune.
 
 ![The app lifecycle](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Add
 
-The first step in app deployment is to add the apps, which you want to manage and assign, to Intune. While you can work with many different app types, the basic procedures are the same. With  Intune you can add different app types, including apps written in-house (line-of-business), apps from the store, apps that are built-in, and apps on the web. For more information about each of these app types, see [How to add an app to Microsoft Intune](apps-add.md). 
+The first step in app deployment is to add the apps, which you want to manage and assign, to Intune. While you can work with many different app types, the basic procedures are the same. With  Intune you can add different app types, including apps written in-house (line-of-business), apps from the store, apps that are built in, and apps on the web. For more information about each of these app types, see [How to add an app to Microsoft Intune](apps-add.md). 
 
 ## Deploy
 
-After you've added the app to Intune, you can then [assign it to users and devices that you manage](apps-deploy.md). Intune makes this process easy, and after the app is deployed, you can [monitor the success](apps-monitor.md) of the deployment from the Intune  within the Azure portal. Additionally, in some app stores, such as the [Apple](vpp-apps-ios.md) and [Windows](windows-store-for-business.md) app stores, you can purchase app licenses in bulk for your company. Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
+After you've added the app to Intune, you can then [assign it to users and devices that you manage](apps-deploy.md). Intune makes this process easy, and after the app is deployed, you can [monitor the success](apps-monitor.md) of the deployment from the Intune within the Azure portal. Additionally, in some app stores, such as the [Apple](vpp-apps-ios.md) and [Windows](windows-store-for-business.md) app stores, you can purchase app licenses in bulk for your company. Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
 
 ## Configure
 
@@ -58,6 +59,6 @@ Intune gives you many ways to help protect the data in your apps. The main metho
 
 Eventually, it's likely that apps that you deployed become outdated and need to be removed. Intune makes it easy to [retire apps from service](device-management.md).
 
-## Next steps:
+## Next steps
 
 - Learn about [app management in Microsoft Intune](app-management.md)

@@ -22,6 +22,7 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 #ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ---
@@ -62,13 +63,15 @@ The following table lists the various options for assigning apps to users and de
 6. In the **Manage** section of the menu, select **Assignments**.
 7. Select **Add Group** to open the **Add group** pane that is related to the app.
 8. For the specific app, select an **assignment type**:
-   - **Available for enrolled devices**: Users install the app from the Company Portal app or website.
+   - **Available for enrolled devices**: Assign the app to groups of users who can install the app from the Company Portal app or website.
    - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. 
    - **Required**: The app is installed on devices in the selected groups.
    - **Uninstall**: The app is uninstalled from devices in the selected groups.
 
      > [!NOTE]
      > **For iOS apps only**: If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
+     >
+     > **For Android apps only**: If you deploy an Android app as **Available with or without enrollment**, reporting status will only be available on enrolled devices.
 
 9. To select the groups of users that are affected by this app assignment, select **Included Groups**.
 10. After you have selected one or more groups to include, select **Select**.

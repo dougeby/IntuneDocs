@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Get ready to configure app protection policies for Windows 10 
+title: Configure app protection policies for Windows 10 
 titleSuffix: Microsoft Intune
 description: Setup mobile application management (MAM) provider in Azure AD.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,8 +22,9 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 #ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 

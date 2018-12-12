@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -22,6 +22,7 @@ ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 #ms.devlang:
 ms.reviewer:
 ms.suite: ems
+search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
@@ -65,7 +66,9 @@ When no longer needed, delete the policy. To do so, select the compliance policy
 
 ## Next steps
 
-In this quickstart, you used Intune to create a compliance policy for your workforce's Android devices to require a password of at least six characters in length.
+In this quickstart, you used Intune to create a compliance policy for your workforce's Android devices to require a password of at least six characters in length. For more information about creating compliance policies, see [Get started with device compliance policies in Intune](device-compliance-get-started.md).
+
+To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Send notifications to noncompliant devices](quickstart-send-notification.md)
+> [Quickstart: Send notifications to noncompliant devices](quickstart-send-notification.md)
