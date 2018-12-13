@@ -373,9 +373,9 @@
   - name: Configure devices
     href: device-profiles.md
     items:
-    - name: Configure device profiles
+    - name: Device profiles
       href: device-profile-create.md
-    - name: Configure device features
+    - name: Device features for iOS and macOS
       href: device-features-configure.md
       items:
       - name: AirPrint for iOS and MacOS
@@ -386,7 +386,7 @@
         href: home-screen-settings-ios.md
       - name: App notifications for iOS
         href: app-notification-settings-ios.md
-      - name: Shared devices for iOS
+      - name: Lock screen message for iOS
         href: shared-device-settings-ios.md
       - name: Configure Intune for iOS device single sign-on
         href: sso-ios.md

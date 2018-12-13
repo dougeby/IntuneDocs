@@ -40,7 +40,7 @@ Intune provides several ways to monitor the properties of apps that you manage a
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
 > [!NOTE]
-> Android Store apps that are deployed as **Available** do not report their installation status.
+> Android Store apps that are deployed as **Available** and Android LOB apps deployed as **Available with or without enrollment** do not report their installation status.
 
 ## App overview pane
 
