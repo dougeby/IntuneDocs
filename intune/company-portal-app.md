@@ -93,7 +93,7 @@ Display a brand image that reflects your company brand. After you save your chan
 
 |Field name|More information|
 |---|---|
-|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p>*Note*: The image may be displayed differently for different platforms.<p><ul><li>Recommended image width: Greater than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p>*Note*: The image may be displayed differently for different platforms.<p><ul><li>Recommended image width: Less than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
 The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
 
