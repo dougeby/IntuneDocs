@@ -3,7 +3,7 @@
 
 title: Set up an enrollment status page
 titleSuffix: Microsoft Intune
-description: Greet your users who are enrolling Windows 10 devices.
+description: Set up a greeting page for users enrolling Windows 10 devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -25,14 +25,14 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
- 
+ms.custom: seodec18 
 ---
  
 # Set up an enrollment status page
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup, the Enrollment Status Page displays installation information on the device. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
+During device setup using Intune, the Enrollment Status Page displays installation information on the device. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
@@ -66,6 +66,16 @@ A device or user might be in multiple groups and have multiple enrollment status
 2. Hover over the profile in the list.
 3. Using the three vertical dots, drag the profile to the desired position on the list.
 
+## Block access to a device until a specific application is installed
+
+You can specify which apps need to be installed before the user can access the desktop.
+
+1. In Intune, choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+2. Choose a profile > **Settings**.
+3. Choose **Yes** for **Show app and profile installation progress**.
+4. Choose **Yes** for **Block device use until all apps and profiles are installed**.
+5. Choose **Selected** for **Block device use until these required apps are installed if they are assigned to the user/device**.
+ 6. Choose **Select apps** > choose the apps > **Select** > **Save**.
 
 ## Enrollment status page tracking information
 

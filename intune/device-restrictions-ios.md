@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -287,7 +287,7 @@ To add apps, you can:
 - **Auto lock**: **Allow** automatic locking of the device. **Not configured** disables this feature.
 - **Ringer switch**: **Allow** the ringer (mute) switch on the device. **Not configured** disables this feature.
 - **Screen rotation**: **Allow** changing the screen orientation when the user rotates the device. **Not configured** disables this feature.
-- **Screen sleep button**: **Allow** the screen sleep wake button on the device. **Not configured** disables this feature.
+- **Screen sleep button**: Choose **Allow** to disable the screen sleep wake button on the device. **Not configured** enables this feature.
 - **Touch**: **Block** disables the touchscreen on the device. **Not configured** allows the user to use the touchscreen.
 - **Volume buttons**: **Allow** using the volume buttons on the device. **Not configured** disables the volume buttons.
 - **Assistive touch control**: **Allow** let users use the assistive touch function. **Not configured** disables this feature.

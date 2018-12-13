@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Decide how to prepare apps for mobile application management with Microsoft Intune 
+title: Prepare apps for mobile application management with Microsoft Intune 
 description: The information in this topic helps you decide when you should use the App wrapping tool and the App SDK to enable your custom line-of-business apps to use the mobile app management policies.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,7 +23,7 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 
 ---
 
@@ -40,7 +40,7 @@ You don't need the source code to use the tool, but you do need signing credenti
 
 The App Wrapping Tool does **not** support apps in the Apple App Store or Google Play Store. It also doesn't support certain features that require developer integration (see the following feature comparison table).
 
-For more information about the App Wrapping Tool for app protection policies on devices that are not enrolled in Intune, see [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
+For more information about the App Wrapping Tool for app protection policies on devices that are not enrolled in Intune, see [Protect line-of-business apps and data on devices not enrolled in Microsoft Intune](apps-add.md).
 
 ### Reasons to use the App Wrapping Tool
 * Your app does not have built-in data protection features
@@ -122,4 +122,4 @@ To learn more about app protection policies and Intune, see the following topics
 
   - [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
   - [iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
-  - [Use the SDK to enable apps for mobile application management](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [Use the SDK to enable apps for mobile application management](app-sdk.md)

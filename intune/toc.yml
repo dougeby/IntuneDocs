@@ -1,9 +1,10 @@
+- name: Microsoft Intune documentation
+  href: index.yml
 - name: Overview
-  href: introduction-intune.md
   expanded: true
   items:
-  - name: What is the Azure portal?
-    href: what-is-intune.md
+  - name: What is Intune?
+    href: what-is-intune.md    
   - name: What is Intune for Education?
     href: introduction-intune-education.md
   - name: Sign up for a free trial
@@ -48,6 +49,8 @@
   items:
   - name: Protect email on managed devices
     href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Protect email on unmanaged devices
+    href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Concepts
@@ -58,28 +61,14 @@
     href: get-started-azure.md  
   - name: High-level architecture
     href: high-level-architecture.md
-  - name: Device and app lifecycles
-    href: introduction-device-app-lifecycles.md
-    items:
-    - name: Device lifecycle
-      href: device-lifecycle.md
-    - name: App lifecycle
-      href: app-lifecycle.md
-  - name: Compare MDM and MAM
-    href: byod-technology-decisions.md
+  - name: Device lifecycle
+    href: device-lifecycle.md
+  - name: App lifecycle
+    href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
-  - name: Manage operating system versions
-    href: manage-os-versions.md
-  - name: Manage Windows Holographic
-    href: windows-holographic-for-business.md
-    items:
-    - name: Upgrade Windows Holographic
-      href: holographic-upgrade.md    
-  - name: Windows Information Protection settings
-    href: windows-information-protection-configure.md  
-  - name: MAM FAQ
-    href: mam-faq.md
+  - name: Compare MDM and MAM
+    href: byod-technology-decisions.md    
   - name: Policy & profile FAQ
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Plan deployment
@@ -220,7 +209,7 @@
     - name: Set up macOS enrollment
       href: macos-enroll.md
       items:
-      - name: Device Enrollment Program
+      - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
