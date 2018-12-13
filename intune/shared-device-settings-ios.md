@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Shared device configuration settings to display messages on the iOS device lock screen
+# Add custom messages to lock screen on iOS devices using Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
