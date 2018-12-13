@@ -48,7 +48,7 @@ As an IT admin, you can use the **Help and Support** option to file an on-line s
 
 ## Help and support experience
 > [!TIP]   
-> In January of 2019, a new Help and support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help and support experience](#azure-help-+-support-experience), in this article.  
+> In January of 2019, a new Help and support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help + support experience](#azure-help-+-support-experience), in this article.  
 
 The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
@@ -65,7 +65,7 @@ To access Help and support, use the following:
 - **In the Azure Portal:**
    - Select **Help and support** from any Intune blade or page
 
-   Selecting either the **?** icon from the upper-right corner, or **Help + support** from the left-side navigation pane from any location in the Azure portal opens *Help + support* for Azure. For the best experience, use* Help and support* from the Intune blade.  
+   Selecting either the **?** icon from the upper-right corner, or **Help + support** from the left-side navigation pane from any location in the Azure portal opens *Help + support* for Azure. For the best experience, use *Help and support* from the Intune blade.  
 
 WIth the new experience, you gain access to the **Need help?** view, as seen in the following image from the Device Management dashboard:  
 ![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
@@ -118,7 +118,7 @@ Select the history button to view the support incidents that you've created.
 
 
 ## Azure Help + support experience
-The following information describes the Azure Help and Support experience which remains accessible from the Azure portal when you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the portal. Beginning in January of 2019, you cannot access the Azure *Help + support* experience from *Help and support* as found on the Intune blades.   
+The following information describes the Azure Help + support experience which remains accessible from the Azure portal when you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the Azure portal. Beginning in January of 2019, you cannot access the Azure *Help + support* experience from *Help and support* as found on the Intune blades.  
 
 ### Create an online support ticket
 
