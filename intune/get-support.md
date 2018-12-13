@@ -48,14 +48,14 @@ As an IT admin, you can use the **Help and Support** option to file an on-line s
 
 ## Help and Support experience
 > [!TIP]   
-> In January of 2019, a new Help and Support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Deprecated Help and Support experinece](#deprecated-help-and-support-experience), in this article.  
+> In January of 2019, a new Help and Support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help and Support experience](#azure-help-and-support-experience), in this article.  
 
 The Help and Support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
 ![Intune blades](./media/get-support/intune-blades.png)
 
 
-This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the [previous Help and Support experience](#deprecated-help-and-support-experience). 
+This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the [previous Help and Support experience](#azure-help-and-support-experience). 
 
 To access Help and Support, use the following:  
 - **Device Management Dashboard:**
@@ -117,8 +117,8 @@ Select the history button to view the support incidents that you've created.
     2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
 
-## Deprecated Help and Support experience
-The following information describes the Help and Support experience for Intune that is deprecated beginning in January of 2019. Use this information until your tenant has the new support experience available. 
+## Azure Help and Support experience
+The following information describes the Azure Help and Support experience which remains accessible from the Azure portal when you use the left navigation pane **Help and Support**, or use the **?** option in the upper-right corner of the portal. Access to this experience from Intune specific blades in the Azure portal is replaced with a new [help and support experience](#help-and-support-experience) beginning in January of 2019. 
 
 ### Get context-sensitive help
 After you sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune.
