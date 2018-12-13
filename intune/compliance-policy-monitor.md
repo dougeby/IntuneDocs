@@ -73,7 +73,7 @@ Descriptions of the different device compliance policy states:
 
   - Learn more about [Actions for noncompliant devices](actions-for-noncompliance.md).
 
-- **Not evaluated**: An initial state for newly enrolled devices. Or, devices that aren't assigned compliance policy and don't have a trigger to check for compliance.
+- **Not evaluated**: An initial state for newly enrolled devices. Some other possible reasons for this state are devices that aren't assigned compliance policy and don't have a trigger to check for compliance, devices that have not checked in since the compliance policy was last updated, devices not associated to a specifc user, and devices enrolled with a DEM account.
 
 - **Not-compliant:** The device failed to apply one or more device compliance policy settings. Or, the user hasn’t complied with the policies.
 
