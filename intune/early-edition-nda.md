@@ -76,7 +76,7 @@ When using trusted network detection, you'll be able to prevent VPN profiles fro
 [Windows 10 VPN settings](vpn-settings-windows-10.md) lists the current VPN settings.
 
 ### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
-The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
+The Intune App SDK for Android will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
 ### Enabled Shared PC settings in Intune profile <!-- 1907917 -->
 Currently, you can configure Shared PC settings on Windows 10 desktop devices using a custom OMA-URI setting. A new profile will be added to configure Shared PC settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
