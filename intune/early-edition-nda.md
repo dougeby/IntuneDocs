@@ -121,6 +121,9 @@ To choose which screens to skip, go to **Device enrollment** > **Apple enrollmen
 ### Some BitLocker settings support Windows 10 Pro edition<!-- 2727036 -->
 You'll be able to create a configuration profile that sets endpoint protection settings on Windows 10 devices, including BitLocker. This adds support for Windows 10 Professional edition for some BitLocker settings. 
 To see the current Windows 10 edition settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+
+### Intune device reporting fields <!-- 2748738 -->
 Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
 ### Intune device reporting fields <!-- 2748738 -->
