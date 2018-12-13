@@ -41,7 +41,7 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Diagnostic data submission**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in  **Diagnostics and Usage** (device Settings). To use this setting, the device must be in supervised mode (iOS 9.3.2+). **Not configured** allows the user to change these device settings.
 - **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. **Not configured** lets the user capture the screen contents as an image.
   - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. To use this setting, the device must be in supervised mode (iOS 9.3+). **Not configured** allows the Apple Classroom app to view the screen.
-  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** prevents this feature.
+  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** prevents this feature.
 - **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** allows TLS certificates.
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** allows users to change these settings.
@@ -205,7 +205,7 @@ To add apps to these lists, you can:
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
-- Import a CSV file with details about the app, including the URL. Use the <app url>, <app name>, <app publisher> format. Or, Export an existing list that includes the restricted apps list in the same format.
+- Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
 > [!IMPORTANT]
 > Device profiles that use the restricted app settings must be assigned to groups of users.
@@ -225,7 +225,7 @@ To add apps to these lists, you can:
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
-- Import a CSV file with details about the app, including the URL. Use the <app url>, <app name>, <app publisher> format. Or, Export an existing list that includes the restricted apps list in the same format.
+- Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
 ## Wireless
 
@@ -304,7 +304,7 @@ To add apps, you can:
 - **Touch**: **Block** disables the touchscreen on the device. **Not configured** allows the user to use the touchscreen.
 - **Volume buttons**: **Allow** using the volume buttons on the device. **Not configured** disables the volume buttons.
 - **Assistive touch control**: **Allow** let users use the assistive touch function. **Not configured** disables this feature.
-- **Invert colors control**: **Allow** invert colors adjustments to let users adjust the invert colors function. **Not configured** disables this feature.
+- **Invert colors control**: **Allow** invert color changes to let users adjust the invert colors function. **Not configured** disables this feature.
 - **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. This feature reads text that the user selects out loud. **Not configured** disables this feature.
 - **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Not configured** prevents voiceover changes.
 - **Zoom control**: **Allow** zoom changes by the user. **Not configured** prevents zoom changes.
