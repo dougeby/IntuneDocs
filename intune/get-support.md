@@ -46,26 +46,26 @@ As an IT admin, you can use the **Help and Support** option to file an on-line s
 - Service administrator  
 
 
-## Help and Support experience
+## Help and support experience
 > [!TIP]   
-> In January of 2019, a new Help and Support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help and Support experience](#azure-help-and-support-experience), in this article.  
+> In January of 2019, a new Help and support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help and support experience](#azure-help-+-support-experience), in this article.  
 
-The Help and Support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
+The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
 ![Intune blades](./media/get-support/intune-blades.png)
 
 
-This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the [previous Help and Support experience](#azure-help-and-support-experience). 
+This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the [previous Help and support experience](#azure-help-+-and-support-experience). 
 
-To access Help and Support, use the following:  
+To access Help and support, use the following:  
 - **Device Management Dashboard:**
-   - Select any available option for **Help and Support**
+   - Select any available option for **Help and support**
    - Select the **?** icon in the upper-right corner of the portal
 
 - **In the Azure Portal:**
-   - Select **Help and Support** from any Intune blade or page
+   - Select **Help and support** from any Intune blade or page
 
-   Selecting either the **?** icon from the upper-right corner, or **Help + Support** from the left-side navigation pane from any location in the Azure portal opens *Help + Support* for Azure, which isn't tailored to Intune.   
+   Selecting either the **?** icon from the upper-right corner, or **Help + support** from the left-side navigation pane from any location in the Azure portal opens *Help + support* for Azure. For the best experience, use* Help and support* from the Intune blade.  
 
 WIth the new experience, you gain access to the **Need help?** view, as seen in the following image from the Device Management dashboard:  
 ![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
@@ -78,7 +78,7 @@ In this view you can do the following actions:
 4. [View support cases](#view-support-cases) you have previously opened using this new workflow  
 
 ### Specify details about an issue
-When you open Help and Support from a location that is supported by the new experience, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information that can help to solve the issue.
+When you open Help and support from a location that is supported by the new experience, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information that can help to solve the issue.
 
 The following are examples of queries you might submit:
   
@@ -108,22 +108,17 @@ Select the history button to view the support incidents that you've created.
 
 ![View support cases](./media/get-support/view-support-tickets.png)
 
-- Only the support cases that you open by using the new workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console or from an Intune blade in the Azure portal. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
+- Only the support cases that you open by using the new workflow are visible from within this workflow. To view them, use a Help and support view from the Device Management console or from an Intune blade in the Azure portal. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
 
-- Cases that you opened when not using the Intune Help and Support experience are unchanged. To view them, you must use a help and support view that isn't part of the Intune experience, or Device Management dashboard. These cases have numbers that start with **117** or **118** and are 15 digits long. To view them:
+- Cases that you opened when not using the Intune Help and support experience are unchanged. To view them, you must use a Help and support view that isn't part of the Intune experience, or Device Management dashboard. These cases have numbers that start with **117** or **118** and are 15 digits long. To view them:
 
     1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the *?* icon in the upper-right corner of the portal, and then select *Help + support* to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
     2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
 
-## Azure Help and Support experience
-The following information describes the Azure Help and Support experience which remains accessible from the Azure portal when you use the left navigation pane **Help and Support**, or use the **?** option in the upper-right corner of the portal. Access to this experience from Intune specific blades in the Azure portal is replaced with a new [help and support experience](#help-and-support-experience) beginning in January of 2019. 
-
-### Get context-sensitive help
-After you sign in to the Azure portal and open Intune, you can select **Help and support** from any Intune blade in the Azure portal to view solutions to common problems for that area of Intune.
-
-If the common solutions don't help, you can select **support request** to create a new support request that opens to the **Basics** tab of the Azure *Help + support* page. To continue and create a support ticket, go to *step 3* in the following procedure, [Create an online support ticket](#create-an-online-support-ticket).
+## Azure Help + support experience
+The following information describes the Azure Help and Support experience which remains accessible from the Azure portal when you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the portal. Beginning in January of 2019, you cannot access the Azure *Help + support* experience from *Help and support* as found on the Intune blades.   
 
 ### Create an online support ticket
 
