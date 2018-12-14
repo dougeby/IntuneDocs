@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,14 +34,17 @@ ms.custom: intune-azure
 
 App-based conditional access with app protection policies rely on applications using [modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), which is an implementation of OAuth2. Most current Office mobile and desktop applications use modern authentication. However, there are third-party apps and older Office apps that user other authentication methods, like basic authentication, and forms-based authentication.
 
-To block access to these apps, we recommend the following methods:
+## Block apps
 
-* Set up ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
-* For **Exchange and SharePoint Online**, use Azure Active Directory Conditional Access and use the PowerShell commandlet Set-SPOTenant for SharePoint online. For detailed instructions, see [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+To block access to apps that do not use modern authentication, we recommend the following methods:
+
+- Set up ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
+- For **Exchange and SharePoint Online**, use Azure Active Directory Conditional Access and use the PowerShell commandlet Set-SPOTenant for SharePoint online. For detailed instructions, see [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
 
 
 >[!IMPORTANT]
 >App-based CA must not be used with Azure Active Directory (Azure AD) certificate-based authentication. You can only have one of these configured at a time.
 
-### See also
-[App-based conditional access with Intune](app-based-conditional-access-intune.md)
+## Next steps
+
+- [App-based conditional access with Intune](app-based-conditional-access-intune.md)

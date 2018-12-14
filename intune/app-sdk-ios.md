@@ -607,7 +607,7 @@ The app is responsible for setting the identities appropriately, whether or not 
 
 At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied. The diagrams below show how the effective identities are determined.
 
-  ![Intune App SDK iOS: linked frameworks and libraries](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: Identity determination process](./media/ios-thread-identities.png)
 
 ### Thread queues
 
