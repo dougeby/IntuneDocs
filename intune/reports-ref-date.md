@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 The **Date** category contains the **Date** entity used to define date references in the data model.
 
-**Date**
+##Date
 
 The **Date** entity represents dates that are referenced across multiple data warehouse entities.
 
@@ -55,3 +55,6 @@ The **Date** entity represents dates that are referenced across multiple data wa
 | CalendarQuarter |                    Calendar quarter                    |          3           |
 |  CalendarYear   |                     Calendar year                      |         2016         |
 
+## Next steps
+
+- Learn more about the [Intune Data Warehouse](reports-nav-create-intune-reports.md).

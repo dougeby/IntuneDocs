@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ search.appverid: MET150
 ms.custom: seodec18
 ---
 
-# Reference for policy entities
+# Reference for Policy entities
 
 The **Policy** category contains entities for mobile devices that track information such as:
 
