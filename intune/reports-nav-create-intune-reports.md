@@ -34,6 +34,8 @@ Use the Intune Data Warehouse to build reports that provide insight into your en
 -	App and OS versions breakdown so you can review that status of mobile devices
 -	Enrollment and device compliance trends so you can smoothly roll out policy updates
 
+## Data Warehouse benefits
+
 The Data Warehouse provides you access to more information about your mobile environment than the Azure portal. With the Intune Data Warehouse you can access:
 
   -  Historical Intune data

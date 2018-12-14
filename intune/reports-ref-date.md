@@ -29,7 +29,7 @@ ms.custom: intune-classic
 
 The **Date** category contains the **Date** entity used to define date references in the data model.
 
-##Date
+## Date
 
 The **Date** entity represents dates that are referenced across multiple data warehouse entities.
 

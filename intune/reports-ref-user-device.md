@@ -28,7 +28,7 @@ ms.custom: intune-classic; seodec18
 
 The **UserDeviceAssociation** entity contains user device associations in your organization.
 
-## *UserDeviceAssociation
+## UserDeviceAssociation
 
 
 |        Name        |                                           Description                                            |        Example         |
