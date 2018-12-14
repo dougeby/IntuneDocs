@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/14/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -55,7 +55,7 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
 2. Create an account using your company name followed by **.onmicrosoft.com**. 
 
-    ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-user-id.png)
+    ![Screenshot of the Microsoft Intune Trial account new credential process](./media/account-sign-up-site-user-id.png)
 
     If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal described later in this article.
 

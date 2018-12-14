@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -600,12 +600,12 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(
 SaveLocation service, String username);
 ```
 
-... where `service` is one of the following SaveLocations:
+The `service` parameter must be one of the following `SaveLocation` values:
 
 
-    * `SaveLocation.ONEDRIVE_FOR_BUSINESS`
-    * `SaveLocation.LOCAL`
-    * `SaveLocation.SHAREPOINT`
+- `SaveLocation.ONEDRIVE_FOR_BUSINESS`
+- `SaveLocation.LOCAL`
+- `SaveLocation.SHAREPOINT`
 
 The previous method of determining whether a user’s policy allowed them to save data to various locations was `getIsSaveToPersonalAllowed()` within the same **AppPolicy** class. This function is now **deprecated** and should not be used, the following invocation is equivalent to `getIsSaveToPersonalAllowed()`:
 
