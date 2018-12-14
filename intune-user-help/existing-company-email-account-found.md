@@ -37,10 +37,10 @@ You might have had mobile device access to your work or school email account *be
 
 These steps will ensure that your device meets your company's security requirements, and that your emails remain secure.
 
-1.  On your device, go to **Settings** and find your connected accounts. Setting names will very across devices. For example:
- * On an iOS device, select **Password & Accounts**.
- * On an Android device, select **Cloud and accounts** > **Accounts**.
- * On a Windows device, select **Accounts** > **Email & accounts**.
+1.  On your device, go to **Settings** and find your connected accounts. Specific setting names and locations for connected accounts will very across devices and platform versions. For example:
+  * On an iOS device, select **Password & Accounts**.
+  * On an Android device, select **Cloud and accounts** > **Accounts**.
+  * On a Windows device, select **Accounts** > **Email & accounts**.
  
 2. Select and remove your work email account.
 
