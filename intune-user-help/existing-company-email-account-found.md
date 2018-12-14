@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,14 +30,23 @@ ms.custom: intune-enduser
 
 # An existing company email account was found
 
-You've already got an email account with your organization or company, and now you want to access that account on your mobile device. Your company support needs your help to keep your email access secure on its journey from the person who sent it to your device. Your current email may have worked, but taking these steps will keep your information safer.
+If you had access to your work email account from your mobile device *before* getting your device managed, we recommend that you:
+* Disconnect the existing work email account from your device.
+* Resync device settings from the Company Portal app.  
 
-1.  Find the **Settings** for your device and remove the connection you previously set up to your company email.  For example, on an iOS device, tap **Settings** > **Mail** > **Accounts**. Select your work email account then tap **Delete**.
+1.  On your device, go to **Settings** and find your connected accounts. Setting names will very across devices. For example:
+ * On an iOS device, select **Password & Accounts**.
+ * On an Android device, select **Cloud and accounts** > **Accounts**.
+ * On a Windows device, select **Accounts** > **Email & accounts**.
+ 
+2. Select and remove your work email account.
 
-2.  Exit **Settings** and open the Company Portal app on your device.  
+3. Open the Company Portal app on your device.  
 
-3. Go to **Device** and select the device you want to update.
+4. Under your list of devices, select the device you want to update.
 
-4. Select **Check Settings**. Within a few moments, your device updates with the new email settings.
+5. Select **Check device settings** or **Check access**, depending on your device's platform. Within a few moments, your device will sync your new email settings.
+
+6. Sign in to your work or school email account.
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
