@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -130,7 +130,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 11. Follow the instructions from the Apple developer site above on how to create a CSR file. Save the CSR file to your macOS computer.
 
-    ![Request a certificate from a Certificate Authority in Keychain Access](./media/iOS-signing-cert-6.png)
+    ![Enter information for the certificate that you are requesting](./media/iOS-signing-cert-6.png)
 
 12. Return to the Apple developer site. Click **Continue**. Then upload the CSR file.
 
@@ -146,7 +146,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 16. An informational window appears. Scroll to the bottom and look under the **Fingerprints** label. Copy the **SHA1** string (blurred out) to use as the argument for "-c" for the App Wrapping Tool.
 
-    ![Add your certificate to a keychain](./media/iOS-signing-cert-9.png)
+    ![iPhone information - Fingerprints SHA1 string](./media/iOS-signing-cert-9.png)
 
 
 
