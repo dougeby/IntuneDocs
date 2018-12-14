@@ -30,7 +30,8 @@ ms.custom: intune-enduser
 
 # An existing company email account was found
 
-If you had access to your work email account from your mobile device *before* getting your device managed, we recommend that you:
+If you had access to your work or school emails from your mobile device *before* you got your device managed, we recommend that you:
+
 * Disconnect the existing work email account from your device.
 * Resync device settings from the Company Portal app.  
 
