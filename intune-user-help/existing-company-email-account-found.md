@@ -30,10 +30,12 @@ ms.custom: intune-enduser
 
 # An existing company email account was found
 
-If you had access to your work or school emails from your mobile device *before* you got your device managed, we recommend that you:
+You might have had mobile device access to your work or school email account *before* you got your device managed. If your device is now managed, we recommend that you:
 
 * Disconnect the existing work email account from your device.
 * Resync device settings from the Company Portal app.  
+
+These steps will ensure that your device meets your company's security requirements, and that your emails remain secure.
 
 1.  On your device, go to **Settings** and find your connected accounts. Setting names will very across devices. For example:
  * On an iOS device, select **Password & Accounts**.
