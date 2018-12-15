@@ -25,7 +25,7 @@ search.appverid: MET150
 ms.custom: intune-classic
 ---
 
-# Data Warehouse data model
+# Microsoft Intune Data Warehouse data model
 
 The Intune Data Warehouse samples data daily to provide a historical view of your continually changing environment of mobile devices. The view is composed of related entities in time.
 

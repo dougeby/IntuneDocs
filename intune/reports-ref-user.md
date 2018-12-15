@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ search.appverid: MET150
 ms.custom: intune-classic
 ---
 
-# Reference for user entity
+# Reference for User entity
 
 The **User** category contains the **User** entity that defines user properties in the data model.
 
