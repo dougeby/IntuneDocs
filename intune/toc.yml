@@ -774,13 +774,13 @@
         href: device-restrictions-windows-10-teams.md
       - name: Domain join
         href: 
-      - name: NEED: Edition upgrade and mode switch
+      - name: NEED-Edition upgrade and mode switch
         href: edition-upgrade-configure-windows-10.md
       - name: Email
         href: email-settings-windows-10.md
       - name: Endpoint protection
         href: endpoint-protection-windows-10.md
-      - name: NEED: Identity protection
+      - name: NEED-Identity protection
         href: identity-protection-configure.md
       - name: Kiosk
         href: kiosk-settings.md
@@ -794,11 +794,11 @@
         href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
       - name: VPN
         href: vpn-settings-windows-10.md
-      - name: NEED: Windows Defender ATP (Windows 10 Desktop)
+      - name: NEED-Windows Defender ATP (Windows 10 Desktop)
         href: advanced-threat-protection.md
       - name: Wi-Fi
         href: wi-fi-settings-windows.md
-      - name: NEED: Education profile
+      - name: NEED-Education profile
         href: education-settings-configure.md
       - name: Custom
         href: custom-settings-windows-10.md
