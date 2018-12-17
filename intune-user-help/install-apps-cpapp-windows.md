@@ -70,7 +70,7 @@ After you share, the recipient will receive a link and a message to view the app
 
 ## Available apps  
 
-Your organization selects apps for you that they think are appropriate and useful at work or school. These apps are the only ones you'll find in the Company Portal.  
+Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.  
 
 Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
 

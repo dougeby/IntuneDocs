@@ -48,7 +48,7 @@ You get managed apps in a couple of different ways:
 Your company support might sometimes purchase multiple licenses for an app you install. If you see a message asking you to accept the Apple Volume Purchase Program agreement, this is normal, and you can accept it. If you don’t accept it, you won’t be able to install the app.
 
 # Available apps   
- Your organization selects apps for you that they think are appropriate and useful at work or school. These apps are the only ones you'll find in the Company Portal.   
+ Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.   
 
  Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for iOS, you'll have access to iOS apps, but not Android apps.   
 

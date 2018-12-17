@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -62,7 +62,7 @@ First, you'll need to install the Company Portal and, if required, get your devi
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 
  ## Available apps   
- Your organization selects apps for you that they think are appropriate and useful at work or school. These apps are the only ones you'll find in the Company Portal.   
+ Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.   
 
  Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Android, you'll have access to Android apps, but not iOS apps.   
 
