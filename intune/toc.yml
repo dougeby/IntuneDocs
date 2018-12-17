@@ -248,19 +248,19 @@
     - name: Device features (iOS and MacOS)
       href: device-features-configure.md
       items:
-      - name: AirPrint for iOS and MacOS
+      - name: DEL-AirPrint for iOS and MacOS
         href: air-print-settings-ios-macos.md
-      - name: AirPlay for iOS
+      - name: DEL-AirPlay for iOS
         href: airplay-settings-ios.md
-      - name: Home screen layout for iOS
+      - name: DEL-Home screen layout for iOS
         href: home-screen-settings-ios.md
-      - name: App notifications for iOS
+      - name: DEL-App notifications for iOS
         href: app-notification-settings-ios.md
-      - name: Shared devices for iOS
+      - name: DEL-Shared devices for iOS
         href: shared-device-settings-ios.md
-      - name: Single sign-on for iOS
+      - name: DEL-Single sign-on for iOS
         href: sso-ios.md
-      - name: Web filter for iOS
+      - name: DEL-Web filter for iOS
         href: web-content-filter-settings-ios.md
     - name: Device restrictions
       href: device-restrictions-configure.md
@@ -634,8 +634,6 @@
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Help and support
   items:
-  - name: Tenant status
-    href: tenant-status.md  
   - name: Troubleshoot
     items:
     - name: Help users troubleshoot problems
