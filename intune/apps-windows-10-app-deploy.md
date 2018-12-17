@@ -54,7 +54,7 @@ Depending on the app type, the app can be installed on a Windows 10 device in on
     - Modern line-of-business apps and Microsoft store for business apps (both online and offline) can be deployed in user context and will support both the Required and Available intent.
     - Win32 apps built as **User Mode** or **Dual Mode** can be deployed in user context and will support both **Required** and **Available** intent. 
 - **Device Context**: When an app is deployed in device context, the managed app will be installed directly to the device by Intune.
-    - Only modern line-of-business apps and Online licensed Microsoft store for business apps can be deployed in device context and will only support the Required intent.
+    - Only modern line-of-business apps and offline licensed Microsoft Store for Business apps can be deployed in device context and will only support the Required intent.
     - Win32 apps built as **Machine Mode** or **Dual Mode** can be deployed in user context and will support only the **Required** intent.
 
 > [!NOTE]
