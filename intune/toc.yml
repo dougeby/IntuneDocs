@@ -662,6 +662,7 @@
       href: troubleshoot-exchange-connector.md
 - name: Settings lists
   href: settings.md
+  items:
   - name: Android
     items:
     - name: Compliance policy settings
