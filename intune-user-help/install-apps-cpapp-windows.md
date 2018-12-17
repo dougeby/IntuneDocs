@@ -70,12 +70,12 @@ After you share, the recipient will receive a link and a message to view the app
 
 ## Available apps  
 
-Your organization selects apps that they think are appropriate and useful for you at work or school. These apps are the ones you'll find in Company Portal.  
+Your organization selects apps for you that they think are appropriate and useful at work or school. These apps are the only ones you'll find in the Company Portal.  
 
-Appa availability is also determined by your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not to iOS apps.  
+Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
 
 ## Request an app for work or school  
-If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You can also find them on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll also find them on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
