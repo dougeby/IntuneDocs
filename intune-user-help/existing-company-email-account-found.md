@@ -37,10 +37,7 @@ You might have had mobile device access to your work or school email account *be
 
 These steps will ensure that your device meets your company's security requirements, and that your emails remain secure.
 
-1.  On your device, go to **Settings** and find your connected accounts. Specific setting names and locations for connected accounts will differ across devices and platform versions. For example:
-   * On an iOS device, select **Password & Accounts**.
-   * On an Android device, select **Cloud and accounts** > **Accounts**.
-   * On a Windows device, select **Accounts** > **Email & accounts**.
+1.  On your device, go to **Settings** and find your connected accounts. On an iOS 11 device, for example, select **Password & Accounts**.
  
 2. Select and remove your work email account.
 
@@ -48,7 +45,7 @@ These steps will ensure that your device meets your company's security requireme
 
 4. Under your list of devices, select the device you want to update.
 
-5. Select **Check device settings** or **Check access**, depending on your device's platform. Within a few moments, your device will sync your new email settings.
+5. Select **Check settings**. Within a few moments, your device will sync your new email settings.
 
 6. Sign in to your work or school email account.
 
