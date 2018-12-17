@@ -27,9 +27,9 @@ ms.custom: intune-azure; seodec18
 
 # Windows 10 (and later) device settings to run as a dedicated kiosk using Intune
 
-On Windows 10 devices, you can use Intune to run devices as a kiosk, sometimes known as a dedicated device. A device in kiosk mode can run one app, or run many apps. You can also show and customize a start menu, add different apps, including Win32 apps, add a specific home page to a web browser, and more. 
+On Windows 10 devices, use Intune to run devices as a kiosk, sometimes known as a dedicated device. A device in kiosk mode can run one app, or run many apps. You can show and customize a start menu, add different apps, including Win32 apps, add a specific home page to a web browser, and more. 
 
-This article lists and describes the different settings you can control on Windows 10 and later devices. As part of your mobile device management (MDM) solution, use these settings to configure your Windows 10 and later devices to run in kiosk mode.
+This article lists and describes the different settings you can control on Windows 10 and later devices. As part of your mobile device management (MDM) solution, use these settings to configure your Windows 10 devices to run in kiosk mode.
 
 Intune supports one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](custom-settings-windows-10.md).
 
@@ -61,7 +61,7 @@ When you choose single app kiosk mode, enter the following settings:
 
 - **User logon type**: The apps you add run as the user account you enter. Your options:
 
-  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to logon, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to sign in, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
   - **Local user account**: Enter the local (to the device) user account. The account you enter is used to sign in to the kiosk.
 
 - **Application type**: Select **Store app**.
@@ -72,7 +72,7 @@ When you choose single app kiosk mode, enter the following settings:
 
     Select **OK** to save your changes.
 
-- **Kiosk browser settings**: These settings control a web browser app on the kiosk. Be sure you get the [Kiosk broswer app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) from the Store, add it to Intune as a [Client App](apps-add.md), and then assign the app to the kiosk devices.
+- **Kiosk browser settings**: These settings control a web browser app on the kiosk. Be sure you get the [Kiosk browser app](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) from the Store, add it to Intune as a [Client App](apps-add.md), and then assign the app to the kiosk devices.
 
   Enter the following settings:
 
@@ -109,7 +109,7 @@ When you choose multi app kiosk mode, enter the following settings:
 
 - **User logon type**: The apps you add run as the user account you enter. Your options:
 
-  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to logon, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Auto logon (Windows 10 version 1803 and later)**: For kiosks in public-facing environments that don't require the user to sign in, similar to a guest account. This setting uses the [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
   - **Local user account**: **Add** the local (to the device) user account. The account you enter is used to sign in to the kiosk.
   - **Azure AD user or group (Windows 10 version 1803 and later)**: Select **Add** to choose Azure AD users or groups from the list. You can select multiple users and groups. Choose **Select** to save your changes.
   - **HoloLens visitor**: The visitor account is a guest account that doesn't require any user credentials or authentication, as described in [shared PC mode concepts](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
@@ -180,7 +180,7 @@ When you choose single app kiosk mode, enter the following settings:
 #### Multi-app kiosks
 Apps in this mode are available on the start menu. These apps are the only apps the user can open. When you choose multi app kiosk mode, enter the following settings:
 
-- **Target Windows 10 in S mode devices**: Choose **No**. S mode is not supported on Windows Holographic for Business.
+- **Target Windows 10 in S mode devices**: Choose **No**. S mode isn't supported on Windows Holographic for Business.
 
 - **User logon type**: Add one or more user accounts that can use the apps you add. Your options: 
 
