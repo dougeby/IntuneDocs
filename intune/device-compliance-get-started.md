@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 
 ms.topic: article
 ms.prod:
@@ -178,7 +178,7 @@ A set of built-in **Compliance policy settings** (Azure portal > Device complian
   Enabling this setting requires devices to:
   - Enable location services at the OS level
   - Allow the company portal to use location services
-  - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant. Evaluation is triggered by either opening the Company Portal app or physically moving the device 500 meters or more.
+  - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant. Evaluation is triggered by either opening the Company Portal app or physically moving the device 500 meters or more. If the device doesn't move 500 meters in 72 hours, the user needs to open the Company Portal app for enhanced jail break evaluation.
 
 - **Compliance status validity period (days)**: Enter the time period that devices report the status for all received compliance policies. Devices that don't return the status within this time period are treated as noncompliant. The default value is 30 days.
 
