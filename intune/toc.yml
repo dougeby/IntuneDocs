@@ -278,19 +278,19 @@
     - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
-      - name: MOVE: Android Enterprise & kiosk
+      - name: MOVE-Android Enterprise & kiosk
         href: wi-fi-settings-android-enterprise.md
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
     - name: Education settings
       items:
-      - name: MOVE: iOS shared devices
+      - name: MOVE-iOS shared devices
         href: education-settings-configure-ios-shared.md
-      - name: MOVE: Windows 10
+      - name: MOVE-Windows 10
         href: education-settings-configure.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
-    - name: MOVE: Custom device settings
+    - name: MOVE-Custom device settings
       href: custom-settings-configure.md
     - name: Assign profiles
       href: device-profile-assign.md
