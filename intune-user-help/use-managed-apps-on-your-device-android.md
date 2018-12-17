@@ -69,8 +69,6 @@ First, you'll need to install the Company Portal and, if required, get your devi
  ## Request an app for work or school   
  If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
-   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)   
-
 ## What can my company support manage in an app?  
 The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
