@@ -659,7 +659,6 @@
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
 - name: Settings lists
-  href: settings.md
   items:
   - name: Android
     items:
