@@ -87,7 +87,7 @@ The following tables describe what data is removed, and the effect of the **Reti
 
 |Data type|iOS|
 |-------------|-------|
-|Company apps and associated data installed by Intune|**Apps installed using Company Portal:** all app data and the apps are removed. These apps include apps originally installed from App Store and later managed as company apps. <br /><br /> **Microsoft apps that use mobile app management and were installed from App Store:** Personal app data is removed. Company app data and the apps are not removed.|
+|Company apps and associated data installed by Intune|**Apps installed using Company Portal:** all app data and the apps are removed. These apps include apps originally installed from App Store and later managed as company apps. <br /><br /> **Microsoft apps that use mobile app management and were installed from App Store:** Company app data is removed. Personal app data and the apps are not removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|
