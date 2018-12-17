@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,16 @@ You get managed apps in a couple of different ways:
 -   You install an app from the App Store, and then sign in with your corporate user account that is managed by Intune.
 
 Your company support might sometimes purchase multiple licenses for an app you install. If you see a message asking you to accept the Apple Volume Purchase Program agreement, this is normal, and you can accept it. If you don’t accept it, you won’t be able to install the app.
+
+# Available apps   
+ Your organization selects apps for you that they think are appropriate and useful at work or school. These apps are the only ones you'll find in the Company Portal.   
+
+ Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for iOS, you'll have access to iOS apps, but not Android apps.   
+
+ ## Request an app for work or school   
+ If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)   
 
 ### What can my company support manage in an app?
 Here are some examples of options that your company support can manage in an app, and that can affect your interactions with company data on your device:
