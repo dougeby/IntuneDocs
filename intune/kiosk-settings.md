@@ -2,12 +2,12 @@
 # required metadata
 
 title: Kiosk settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Configure your Windows 10 (and later) devices as single-app and multi-app kiosks, including customizing the start menu, adding apps, the task bar, and configuring a web browser. Also configure Windows Holographic for Business devices as multip-app kiosks in Microsoft Intune. 
+description: Configure your Windows 10 (and later) devices as single-app and multi-app kiosks, customize the start menu, add apps, show the task bar, and configure a web browser. Also configure Windows Holographic for Business devices as multip-app kiosks in Microsoft Intune. 
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,28 +21,32 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 ---
 
-# Kiosk settings for Windows 10 (and later) in Intune
+# Windows 10 (and later) device settings to run as a dedicated kiosk using Intune
 
-On Windows 10 devices, you can use Intune to run these devices as a kiosk. The kiosk can run one app, or run many apps. You can also show and customize a start menu, add different apps, including Win32 apps, add a specific home page to a web browser, and more. 
+On Windows 10 devices, you can use Intune to run devices as a kiosk, sometimes known as a dedicated device. A device in kiosk mode can run one app, or run many apps. You can also show and customize a start menu, add different apps, including Win32 apps, add a specific home page to a web browser, and more. 
 
-Use this steps in this article to create a single-app kiosk, or multi-app kiosk in Intune.
+This article lists and describes the different settings you can control on Windows 10 and later devices. As part of your mobile device management (MDM) solution, use these settings to configure your Windows 10 and later devices to run in kiosk mode.
 
 Intune supports one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](custom-settings-windows-10.md).
 
+## Before you begin
+
+[Create a device configuration profile](device-profile-create.md).
+
 ## Kiosk settings
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services**, filter on **Intune**, and select **Microsoft Intune**.
+1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Microsoft Intune**.
 2. Select **Device configuration** > **Profiles** > **Create Profile**.
 3. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Select **Windows 10 and later**
-   - **Profile type**: Select **Kiosk (Preview)**
+   - **Profile type**: Select **Kiosk**
 
 4. Select a **kiosk mode**. **Kiosk mode** identifies the type of kiosk mode supported by the policy. Options include:
 
@@ -200,8 +204,6 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 - **Use alternative Start layout**: Choose **Yes** to enter an XML file that describes how the apps appear on the start menu, including the order of the apps. Use this option if you require more customization in your start menu. [Customize and export start layout](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) provides some guidance, and includes a specific XML file for Windows Holographic for Business devices.
 
 - **Windows Taskbar**: Not supported on Windows Holographic for Business.
-
-
 
 ## Next steps
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
