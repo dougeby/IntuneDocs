@@ -45,7 +45,7 @@ Troubleshoot app problems in the Company Portal app for Windows 10. If you run i
    ![Screenshot of the Share screen, highlighting the Mail app icon.](./media/1811_Mail_Logs_Windows_CPapp.png)  
 
 
-   ![Screenshot of the prepoulated email that opens in the Mail app.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+   ![Screenshot of the prepopulated email that opens in the Mail app.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 
 If your company needs additional information about app or device activity, you might also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md).  
 
