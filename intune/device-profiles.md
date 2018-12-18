@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/17/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -52,11 +52,12 @@ To see the available features, open the [Azure portal](https://portal.azure.com)
 
 [Create device profiles](device-profile-create.md) provides step-by-step guidance to create a profile. 
 
-## Device features - iOS and macOS
+## Device features
 
 [Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and lock screen messages.
 
 This feature supports:
+
 - iOS 
 - macOS
 
@@ -193,7 +194,18 @@ This feature supports:
 [Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. Using Windows Information Protection doesn't require changes to your environment or other apps.
 
 This feature supports:
+
 - Windows 10 and later
+
+## Shared multi-user device
+
+[Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a policy that deletes inactive credentials from Windows HoloLens devices to save space.
+
+These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
+
+This feature supports:
+
+- Windows Holographic for Business
 
 ## Custom profile
 
