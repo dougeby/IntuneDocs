@@ -54,7 +54,7 @@ To see the available features, open the [Azure portal](https://portal.azure.com)
 
 ## Device features
 
-[Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and shared device configurations.
+[Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and lock screen messages.
 
 This feature supports:
 
@@ -220,4 +220,4 @@ This feature supports:
 
 ## Manage and troubleshoot
 
-[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
+[Manage your profiles](device-profile-monitor.md) by checking the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) includes a Q&A to work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
