@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -127,6 +127,10 @@ Virtual private networks (VPNs) give your users secure remote access to your com
 #### [Configure Wi-Fi](wi-fi-settings-configure.md)
 
 You can also create a Wi-Fi profile in Intune to assign wireless network settings to your Windows Holographic for Business devices. When you assign a Wi-Fi profile, your end users get corporate network access, without any network configuration. For example, you can create a Wi-Fi network dedicated to only your Windows Holographic for Business devices.
+
+## [Shared devices](shared-user-device-settings-windows-holographic.md)
+
+Devices that run Windows Holographic for Business, such as the Microsoft HoloLens, can have multiple users. Intune includes settings to control different features on these shared devices, such as power management, using the local storage, and account management. The configuration profiles can also be applied to devices with different operating systems. For example, the devices group can have devices that run RS2 and RS3 in the same group.
 
 ## Software updates
 **[Manage software updates](windows-update-for-business-configure.md)**
