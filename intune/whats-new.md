@@ -296,7 +296,7 @@ For customers who are part of the rollout, this new experience replaces the curr
 
 *This new Help and Support experience is being rolled out to some but not all tenants and is available in the Device Management portal. Participants for this new experience are randomly selected from the available Intune tenants. New tenants will be added as we expand the rollout.*  
 
-For more information, see [New Help and Support experience](get-support.md#new-help-and-support-experience) in How to get support for Microsoft Intune.  
+For more information, see [Help and Support experience](get-support.md#help-and-support-experience) in How to get support for Microsoft Intune.  
 
 ### PowerShell module for Intune – Preview available <!-- 951068 -->
 A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 

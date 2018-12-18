@@ -373,9 +373,9 @@
   - name: Configure devices
     href: device-profiles.md
     items:
-    - name: Configure device profiles
+    - name: Device profiles
       href: device-profile-create.md
-    - name: Configure device features
+    - name: Device features for iOS and macOS
       href: device-features-configure.md
       items:
       - name: AirPrint for iOS and MacOS
@@ -386,7 +386,7 @@
         href: home-screen-settings-ios.md
       - name: App notifications for iOS
         href: app-notification-settings-ios.md
-      - name: Shared devices for iOS
+      - name: Lock screen message for iOS
         href: shared-device-settings-ios.md
       - name: Configure Intune for iOS device single sign-on
         href: sso-ios.md
@@ -488,9 +488,9 @@
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: Use S/MIME to encrypt email
+      - name: S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
-      - name: Use third-party certificate authority with SCEP
+      - name: Third-party CAs with SCEP
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
