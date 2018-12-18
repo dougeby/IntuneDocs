@@ -385,7 +385,7 @@ To validate that the service is running, open a browser, and enter the following
         - **Serial number**
         - **Custom**: When you select this option, a **Custom** text box is also shown. Use this field to enter a custom subject name format, including variables. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
 
-            - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
+            - **CN={{UserName}}**: The user principal name of the user, such as janedoe@contoso.com
             - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
             - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
             - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
