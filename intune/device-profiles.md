@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Device profiles in Microsoft Intune - Azure | Microsoft Docs
-description: Overview of the different Microsoft Intune device profiles, including features, restrictions, email, wifi, VPN, education, certificates, upgrade Windows 10, BitLocker and Windows defender, Windows Information Protection, and custom device configuration settings in the Azure portal. Use these profile to manage and protect data and devices in your company.
+title: Device features and settings in Microsoft Intune - Azure | Microsoft Docs
+description: Overview of the different Microsoft Intune device profiles, including features, restrictions, email, wifi, VPN, education, certificates, upgrade Windows 10, BitLocker and Windows defender, Windows Information Protection, administrative templates, and custom device configuration settings in the Azure portal. Use these profiles to manage and protect data and devices in your company.
 keywords:
 author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure; get-started
 
 # What are Microsoft Intune device profiles?
 
-Microsoft Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. Some profile examples include: 
+Microsoft Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are managed using profiles. Some profile examples include:
 
 - A WiFi profile that gives different devices access to your corporate WiFi
 - A VPN profile that gives different devices access to your VPN server within your corporate network
@@ -52,11 +52,22 @@ To see the available features, open the [Azure portal](https://portal.azure.com)
 
 [Create device profiles](device-profile-create.md) provides step-by-step guidance to create a profile. 
 
+## Administrative templates
+
+[Administrative templates](administrative-templates-windows.md) includes hundreds of settings that you can configure for Internet Explorer, OneDrive, remote desktop, Word, Excel, and other Office programs, and much more.
+
+These templates give administrators an easy and simplied view of settings similar to group-policy, but they are 100% cloud-based. 
+
+This feature supports:
+
+- Windows 10 and later
+
 ## Device features - iOS and macOS
 
 [Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and shared device configurations.
 
 This feature supports:
+
 - iOS 
 - macOS
 

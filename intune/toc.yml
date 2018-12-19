@@ -375,6 +375,8 @@
     items:
     - name: Configure device profiles
       href: device-profile-create.md
+    - name: Administrative templates
+      href: administrative-templates-windows.md
     - name: Configure device features
       href: device-features-configure.md
       items:
