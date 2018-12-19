@@ -2,7 +2,7 @@
 # required metadata
 title: Intune Data Warehouse Change log 
 titlesuffix: Microsoft Intune
-description: A list of changes in the Intune Data Warehouse API.
+description: This topic provides a list of changes for the Microsoft Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre

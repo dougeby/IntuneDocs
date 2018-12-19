@@ -210,7 +210,7 @@ It will take around 15 minutes for the device profile status to change from **No
    - **Description**: Enter a description for the profile.
    - **Platform**: Choose **Windows 10 and later**.
    - **Profile type**: Choose **Domain Join (Preview)**.
-3. Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
+3. Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** in DN format (optional). 
 4. Choose **OK** > **Create**. The profile is created, and appears in the list.
 5. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
 
