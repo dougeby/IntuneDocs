@@ -52,7 +52,7 @@ This article lists the steps to create a profile, and gives an overview of the d
     - **Overview**: Lists the status of your profiles, and provides additional details on the profiles you assigned to users and devices.
     - **Manage**: Create device profiles, upload custom [PowerShell scripts](intune-management-extension.md) to run within the profile, and add data plans to devices using [eSIM](esim-device-configuration.md).
     - **Monitor**: Check the status of a profile for success or failure, and also view logs on your profiles.
-    - **Setup**: Add a SCEP or PFX certificate authority, or enable [Telecom Expense Management](telecom-expenses-monitor.md.md) in the profile.
+    - **Setup**: Add a SCEP or PFX certificate authority, or enable [Telecom Expense Management](telecom-expenses-monitor.md) in the profile.
 
 3. Select **Profiles** > **Create Profile**. Enter the following properties:
 
@@ -74,7 +74,7 @@ This article lists the steps to create a profile, and gives an overview of the d
        - [Custom](custom-settings-configure.md)
        - [Delivery optimization](delivery-optimization-windows.md)
        - [Device features](device-features-configure.md)
-       - [Device restrictions](device-restrictions-configure.md)       - 
+       - [Device restrictions](device-restrictions-configure.md)
        - [Edition upgrade and mode switch](edition-upgrade-configure-windows-10.md)
        - [Education](education-settings-configure.md)
        - [Email](email-settings-configure.md)
@@ -90,7 +90,7 @@ This article lists the steps to create a profile, and gives an overview of the d
        - [Windows Defender ATP](advanced-threat-protection.md)
        - [Windows Information Protection](windows-information-protection-configure.md)
 
-     For example, if you select **iOS** for the platform, your options look similar to the following:
+     For example, if you select **iOS** for the platform, your profile type options look similar to the following:
 
      ![Create iOS profile in Intune](./media/create-device-profile.png)
 
