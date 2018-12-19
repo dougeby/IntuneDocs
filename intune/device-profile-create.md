@@ -39,7 +39,7 @@ ms.custom: intune-azure
 3. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. (This is optional, but recommended.)
+   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Select the platform type:  
 
        - **Android**
@@ -51,7 +51,7 @@ ms.custom: intune-azure
        - **Windows 10 and later**
 
    - **Profile type**: Select the type you want to create. The list depends on the platform you choose.
-   - **Settings**: The following topics describe the settings for each profile type:
+   - **Settings**: The following articles describe the settings for each profile type:
 
        -  [Device features](device-features-configure.md)
        -  [Device restrictions](device-restrictions-configure.md)
