@@ -3,7 +3,7 @@
 
 title: Add an Android line-of-business app to Microsoft Intune
 titlesuffix:
-description: Learn about adding an Android line-of-business app to Microsoft Intune.
+description: Learn about how to add a Android line-of-business (LOB) app to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
