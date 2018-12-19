@@ -33,6 +33,9 @@ ms.custom: intune-azure
 
 After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the app to users and devices. It is important to note that you can assign an app to a device whether or not the device is managed by Intune. 
 
+> [!NOTE]
+> The Available deployment intent is not supported for device groups, only user groups are supported.
+
 The following table lists the various options for assigning apps to users and devices:
 
 ||||
