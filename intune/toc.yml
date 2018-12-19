@@ -375,6 +375,8 @@
     items:
     - name: Device profiles
       href: device-profile-create.md
+    - name: Administrative templates
+      href: administrative-templates-windows.md
     - name: Device features for iOS and macOS
       href: device-features-configure.md
       items:
