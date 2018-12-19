@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,10 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Create the profile
-1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
 
-2. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. Then select **Create Profile**.
+1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+
+2. Select **Device configuration** > **Profiles** > **Create Profile**.
 
 3. Enter the following properties:
 
