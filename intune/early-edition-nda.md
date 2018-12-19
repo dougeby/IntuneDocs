@@ -53,7 +53,7 @@ For Android devices in a non-enrolled App Protection Policy Without Enrollment (
 On Windows 10 and later devices, you'll be able to create a VPN configuration profile that includes a list of DNS servers to resolve domains, such as contoso.com. This will include new settings for name resolution (**Device configuration** > **Profiles** > **Create profile** > Choose **Windows 10 and later** for platform > Choose **VPN** for profile type > **DNS settings** >**Add**): 
 
 - **Automatically connect**: When **Enabled**, the device automatically connects to the VPN when a device contacts a domain you enter, such as contoso.com.
-- **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects or the VPN profile is removed. The rule stays until it's manually removed, which can be done using PowerShell.
+- **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects. The rule stays until the VPN profile is removed or until the rule is manually removed, which can be done using PowerShell.
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
