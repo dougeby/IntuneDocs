@@ -193,7 +193,7 @@ This badge indicates to IT administrators, end-users, and potential Intune custo
 
 The badge is a briefcase icon and can be seen in the samples below:
 
-![Badge example 1](./media/badge-example-1.png) ![Badge example 2](./media/badge-example-2.png)
+![Intune app protection policies - Badge example 1](./media/badge-example-1.png) ![Intune app protection policies - Badge example 2](./media/badge-example-2.png)
 
 **What you'll need to badge your app**:
 

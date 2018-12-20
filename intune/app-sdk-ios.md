@@ -548,11 +548,11 @@ SUBQUERY (
 
 Old UI:
 
-![Old sharing UI](./media/sharing-UI-old.png)
+![Sharing data - iOS old sharing UI](./media/sharing-UI-old.png)
 
 New UI:
 
-![New sharing UI](./media/sharing-UI-new.png)
+![Sharing data - iOS new sharing UI](./media/sharing-UI-new.png)
 
 ## Enable targeted configuration (APP/MAM app config) for your iOS applications
 
