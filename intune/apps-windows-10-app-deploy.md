@@ -3,7 +3,7 @@
 
 title: Windows 10 app deployment using Microsoft Intune
 titlesuffix: 
-description: Learn about Windows 10 app scenarios available with Microsoft Intune.
+description: Learn about Windows 10 app deployment scenarios available with Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
