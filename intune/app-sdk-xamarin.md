@@ -155,8 +155,11 @@ These instructions are a requirement for .NET/Xamarin apps who wish to require I
 ## Potential Compilation Errors
 These are some of the most commonly seen compilation errors when developing a Xamarin based application.
 
-* [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): ``'member' : cannot override inherited member 'inherited member' because it is sealed``
-* [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): ``'function1' : cannot change access modifiers when overriding 'access' inherited member 'function2'``
+* [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): This error is commonly seen in this form
+``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+When the remapper modifies the inheritance of Xamarin classes, some functions will be made `sealed` and a new MAM variant is added to override instead. Simply rename you overrides as described [here](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). For instance `MainActivity.OnCreate()` would be renamed to `MainActivity.OnMAMCreate()`
+
+* [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): This error is commonly seen in this form ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. As the remapper tool changes the inheritance of some of the Xamarin classes, some of the member functions will be changed to `public`. If you override any of these functions, you may need to change those overrides to be `public` as well.
 
 ## Support
 If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
