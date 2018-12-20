@@ -114,7 +114,7 @@ The following list provides the common list of actions:
 
 In some cases, such as the **Min OS version** setting, you can configure the setting to perform all applicable actions based on different version numbers. 
 
-![Screenshot of the Intune app protection access actions - Min OS version](./media/apps-selective-wipe-access-actions05.png)
+![Screenshot of app protection access actions - Min OS version](./media/apps-selective-wipe-access-actions05.png)
 
 Once a setting is fully configured, the row will appear in a read-only view and be available to be edited at any time. In addition, the row will appear to have a dropdown available for selection in the **Setting** column. Settings that have already been configured and do not allow multiple actions will not be available for selection in the dropdown.
 
