@@ -117,12 +117,10 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
+2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMActivity` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
 
 > [!NOTE]
 > Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
-
-You have completed the basic steps of building the component into your app. Now you can follow the steps included in the Xamarin Android sample app. We have provided two samples, one for Xamarin.Forms and another for Android.
 
 ## Requiring Intune app protection policies in order to use your Xamarin-based Android LOB app (optional) 
 
@@ -153,8 +151,12 @@ These instructions are specific to all Android and Xamarin apps who wish to requ
 These instructions are a requirement for .NET/Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
 1. Follow all the steps defined in the ADAL documentation under [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android).
-> [!NOTE] 
-> The version that .NET ADAL will be releasing next (3.17.4) is expected to contain the fix required to make this work.
+
+## Potential Compilation Errors
+These are some of the most commonly seen compilation errors when developing a Xamarin based application.
+
+* [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): ``'member' : cannot override inherited member 'inherited member' because it is sealed``
+* [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): ``'function1' : cannot change access modifiers when overriding 'access' inherited member 'function2'``
 
 ## Support
 If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
