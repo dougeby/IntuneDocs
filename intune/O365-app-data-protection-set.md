@@ -3,7 +3,7 @@
 
 title: Data management of Office 365 apps in Microsoft Intune
 titlesuffix: 
-description: Learn about data management of Office 365 apps in Microsoft Intune.
+description: Learn about data management and protection of Office 365 apps in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
