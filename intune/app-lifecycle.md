@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2018
+ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ ms.custom: apps; get-started
 
 The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you remove the app. By understanding these phases, you'll have the details you need to get started with app management in Intune.
 
-![A graphic of the app lifecycle - Add, deploy, configure, protect and retire.](./media/app-lifecycle.png "the Intune app lifecycle")
+![The app lifecycle - Add, deploy, configure, protect and retire.](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Add
 
