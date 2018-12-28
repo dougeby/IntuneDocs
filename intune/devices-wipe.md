@@ -199,6 +199,10 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 
     ![Screenshot for Apple reassign](./media/devices-wipe/apple-reassign.png)
 
+## Fresh Start
+
+Applicable for Windows 10 devices, read more about [fresh start](https://docs.microsoft.com/en-us/intune/device-fresh-start)
+
 ## Next steps
 
 If you want to reenroll a deleted device, see [Enrollment options](enrollment-options.md).
