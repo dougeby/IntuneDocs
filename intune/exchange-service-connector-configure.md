@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Intune Exchange connector for Exchange Online
-titleSuffix: 
+title: Intune Exchange connector for Exchange Online | Microsoft Intune
 description: Connect Intune to Office 365 Exchange service to support Exchange ActiveSync mobile device management (MDM).
 keywords:
 author: brenduns
