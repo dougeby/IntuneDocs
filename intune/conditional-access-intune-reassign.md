@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Migrate conditional access to Azure portal
-titlesuffix: Microsoft Intune
+title: Migrate conditional access to Azure portal | Microsoft Intune
 description: Reassign the conditional access policies you previously created in the Intune classic portal to the Azure portal.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 001/02/2019
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
