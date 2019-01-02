@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ You must also create an Exchange Online user account that is used by the Intune 
 
 ## Set up the Service to Service Connector
 
-1. Sign in to the [Azure portal](http://portal.azure.com) with a user account that has Exchange admin rights, permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements), a valid Intune license, and the Global Administrator role. Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
+1. Sign in to the [Azure portal](https://portal.azure.com) with a user account that has Exchange admin rights, permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements), a valid Intune license, and the Global Administrator role. Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
