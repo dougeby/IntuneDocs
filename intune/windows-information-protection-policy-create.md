@@ -154,7 +154,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 1.  From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
 
-	![Learning Mode screen-shot](./media/learning-mode-sc1.png)
+	![Screenshot of the Learning Mode pane](./media/learning-mode-sc1.png)
 
 1.  Select a setting and then choose **Save**.
 

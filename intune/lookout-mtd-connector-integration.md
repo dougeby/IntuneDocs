@@ -81,11 +81,11 @@ Use the following steps to gather the information you need to give to the Lookou
 
 3. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
-   ![screenshot of the Lookout console with the connectors tab open, and Intune option highlighted](./media/lookout_mtp_setup-intune-connector.png)
+   ![Image of the Lookout console with the Intune option on the connectors tab](./media/lookout_mtp_setup-intune-connector.png)
 
 4. Go **Connectors** > **Connection Settings** and specify the **Heartbeat Frequency** in minutes.
 
-   ![screenshot of the connection settings tab with showing heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
+   ![Image of the connection settings tab with heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
 
 ## Configure enrollment groups
 1. As a best practice, create an Azure AD security group in the [Azure AD management portal](https://manage.windowsazure.com) containing a small number of users to test Lookout integration.
@@ -99,7 +99,7 @@ Use the following steps to gather the information you need to give to the Lookou
 
 	>[!IMPORTANT]
 	> The  **Display Name** is case-sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
-	>![screenshot of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
+	>![Image of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
 
 	>[!NOTE] 
 	>The best practice is to use the default (5 minutes) for the increment of time to check for new devices. Current limitations, **Lookout cannot validate group display names:** Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group. **Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
@@ -119,7 +119,7 @@ In the **Error Management** option, enter the email address that should receive 
 ## Configure enrollment settings
 In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
 
-![Lookout enrollment settings](./media/lookout-console-enrollment-settings.png)
+![Lookout enrollment settings on the System module](./media/lookout-console-enrollment-settings.png)
 
 ## Configure email notifications
 If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com) with the user account that should receive notifications. On the **Preferences** tab of the **System** module, choose the threat levels that should  notifications and set them to **ON**. Save your changes.

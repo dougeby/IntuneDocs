@@ -56,11 +56,11 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![Malicious apps detected](./media/Maliciousapps_blocked_Zimperium.png)
+![Conceptual image of Malicious apps detected](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Access granted on remediation:**
 
-![Malicious apps detected access granted](./media/maliciousapps_unblocked_Zimperium.png)
+![Conceptual image of access granted after remediation](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### Control access based on threat to network
 
