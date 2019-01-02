@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Symantec connector with Microsoft Intune
-titlesuffix:
+title: Symantec connector with Microsoft Intune | Microsoft Intune
 description: Learn about integrating Intune with Symantec Endpoint Protection Mobile to control mobile device access to your corporate resources.
 keywords:
 author: brenduns
@@ -72,11 +71,11 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![Malicious apps detected](./media/symantec-arch-1.png)
+![Conceptual image of Malicious apps detected](./media/symantec-arch-1.png)
 
 **Access granted on remediation:**
 
-![Access granted on remediation after malicious apps detected](./media/symantec-arch-2.png)
+![Image of Access granted on remediation after malicious apps detected](./media/symantec-arch-2.png)
 
 ### Control access based on threat to network
 
