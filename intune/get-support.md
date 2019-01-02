@@ -2,8 +2,7 @@
 # required metadata
 
 
-title: How to get support for Microsoft Intune
-titlesuffix: Microsoft Intune
+title: How to get support for Microsoft Intune | Microsoft Intune
 description: Get online and telephone support for Microsoft Intune paid and trial subscriptions.
 keywords:
 author: brenduns

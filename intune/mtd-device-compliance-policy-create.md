@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Create MTD device compliance policy with Microsoft Intune
-titlesuffix:
+title: Create MTD device compliance policy with Microsoft Intune | Microsoft Intune
 description: Create an Intune device compliance policy that uses your MTD partner threat levels to determine if a mobile device can access company resources.
 keywords:
 author: brenduns
