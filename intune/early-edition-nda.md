@@ -68,9 +68,6 @@ When you create a macOS enrollment profile, you will be able to configure it to 
 - Privacy
 - iCloudStorage
 
-#### Win32 app information in app troubleshooting blade <!-- 2617342 -->
-You will be able to collect failure log files for a Win32 app installation from the Intune app troubleshooting blade.
-
 ### Assign Autopilot profiles to the All devices virtual group <!--2715522  -->
 You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
 
