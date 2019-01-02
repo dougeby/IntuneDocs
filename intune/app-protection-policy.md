@@ -80,14 +80,14 @@ Windows devices are currently not supported. However, you can use Windows Inform
 
 #### Apps without app protection policies
 
-![Image that shows data can move freely between apps when there are no App protection policies in place](./media/apps-without-protection-policies.png)
+![Conceptual image for data movement between apps with no policies in place](./media/apps-without-protection-policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The arrows in the preceding diagram show unrestricted data movement between both corporate and personal apps, and to storage locations.
 
 
 ### Data protection with app protection policies
 
-![Image that shows how company data is protected when App protection policies are applied ](./media/apps-with-protection-policies.png)
+![Conceptual image that shows company data being protected by policies](./media/apps-with-protection-policies.png)
 
 
 You can use App protection policies to prevent company data from saving to the local storage of the device. You can also restrict data movement to other apps that aren't protected by App protection policies. App protection policy settings include:
