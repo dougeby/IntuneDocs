@@ -79,7 +79,7 @@ A root certificate is removed when:
 PKCS certificates *stay* on the device (certificates aren't revoked or removed) when:
 - A user loses the Intune license.
 - An administrator withdraws the Intune license.
-- A administrator removes the user or group from Azure AD.
+- An administrator removes the user or group from Azure AD.
 - An administrator changes or updates the PKCS profile.
 - A certificate profile is removed from the group assignment.
 
@@ -149,7 +149,7 @@ A SCEP certificate is revoked when:
 A root certificate is removed when:
 - A user unenrolls.
 - An administrator runs the [wipe](devices-wipe.md#wipe) action.
-- A administrator runs the [retire](devices-wipe.md#retire) action.
+- An administrator runs the [retire](devices-wipe.md#retire) action.
 
 SCEP certificates *stay* on the device (certificates aren't revoked or removed) when:
 - A user loses the Intune license.
@@ -162,7 +162,7 @@ A PKCS certificate is revoked *and* removed when:
 
 - A user unenrolls.
 - An administrator runs the [wipe](devices-wipe.md#wipe) action.
-- A administrator runs the [retire](devices-wipe.md#retire) action.
+- An administrator runs the [retire](devices-wipe.md#retire) action.
 
 A root certificate is removed when:
 - A user unenrolls.
