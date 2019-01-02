@@ -53,7 +53,7 @@ NAC works with conditional access to provide access control decisions. For more 
 
 The following list is an overview on how NAC integration works when integrated with Intune. The first three steps, 1-3, explain the onboarding process. Once the NAC solution is integrated with Intune, steps 4-9 describe the ongoing operation.
 
-![How NAC works with Intune](./media/ca-intune-common-ways-2.png)
+![Conceptual image of how NAC works with Intune](./media/ca-intune-common-ways-2.png)
 
 1. Register the NAC partner solution with Azure Active Directory (AAD), and grant delegated permissions to the Intune NAC API.
 2. Configure the NAC partner solution with the appropriate settings including the Intune discovery URL.
