@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android app protection policy settings
+title: Android app protection policy settings | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: This topic describes the app protection policy settings for Android devices.
 keywords:

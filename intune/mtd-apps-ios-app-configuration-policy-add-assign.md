@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Add and assign MTD apps to Microsoft Intune
-titleSuffix:
+title: Add and assign MTD apps to Microsoft Intune | Microsoft Intune
 description: Use Intune to add Mobile Threat Defense (MTD) apps, Microsoft Authenticator app, and iOS configuration policy in the Azure portal.
 keywords:
 author: brenduns
