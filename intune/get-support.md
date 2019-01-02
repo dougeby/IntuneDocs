@@ -53,11 +53,11 @@ If the common solutions don't help, you can select **support request** to create
 
 1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
-   ![Screenshot of Azure portal help and support question mark link with the Help + support link highlighted](./media/azure-get-support.png)
+   ![Image of the question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
 2. On the Azure **Help + support** page, select **New support request**.
 
-   ![Screenshot of Azure portal help and support page with New support request link highlighted](media/azure-support-ticket-link.png)
+   ![Image of New support request link highlighted on the help and support page](media/azure-support-ticket-link.png)
 
 3. On the **Basics** tab, for most Intune technical support issues, choose the following options:
    - **Issue type**: **Technical**
@@ -67,18 +67,18 @@ If the common solutions don't help, you can select **support request** to create
    - **Problem subtype**: Choose the problem subtype from the drop-down menu.
    - **Subject**: Briefly describe the issue that you are having.
 
-   ![Screenshot of the basics tab on the Help + support - New support request page](./media/get-support/help-new-support-case-basics.png)
+   ![Image of the basics tab on the Help + support - New support request page](./media/get-support/help-new-support-case-basics.png)
 
    Choose **Next: Solutions** to continue.
 4. On the **Solutions** tab, review the recommended steps that might help you solve your problem without filing a ticket. If you still want to create a support request after looking through the steps, click **Next: Details**.
 
-   ![Screenshot of the solutions tab on the Help + support - New support request page](./media/get-support/help-new-support-case-solutions.png)
+   ![Image of the solutions tab on the Help + support - New support request page](./media/get-support/help-new-support-case-solutions.png)
 5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
 
-   ![Screenshot of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
+   ![Image of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
 6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
-   ![Screenshot of the review + create tab on the Help + support - New support request page](./media/get-support/help-new-support-case-create.png)
+   ![Image of the review + create tab on the New support request page](./media/get-support/help-new-support-case-create.png)
 
 <!--
   - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
@@ -147,7 +147,7 @@ The following are examples of queries you might submit:
 
 ### View context-sensitive help
 After you select an offered choice or submit your own query, context-sensitive results appear under **View solutions**. These results include both Intune specific self-help guidance and additional results returned from a web-search based on the query criteria.  
-![View-results](./media/get-support/view-results.png)
+![Image of the View-results pane](./media/get-support/view-results.png)
 
 ### Get support
 If the self-help or web-based guidance doesn’t help you resolve the issue, you can use the console to open an email or phone support issue.  
@@ -155,16 +155,16 @@ On the **Need help?** page, select the option you want to use.
 
 - For an email request, provide your email address and optionally, you can add attachments to your submission. Select **Send** to open the request.  
 
-  ![Email request](./media/get-support/email-support.png)
+  ![Image of the Email request pane](./media/get-support/email-support.png)
   
 - For a phone request, provide your phone number. Optionally, you can include your email address and add attachments to your submission. Select Call me to submit the request.  
 
-   ![Phone request](./media/get-support/phone-support.png)
+   ![Image of the Phone request pane](./media/get-support/phone-support.png)
 
 ### View support cases
 Select the history button to view the support incidents that you've created.  
 
-![View support cases](./media/get-support/view-support-tickets.png)
+![Image of the View support cases pane](./media/get-support/view-support-tickets.png)
 
 - Only the support cases that you open by using the new workflow are visible from within this workflow. To view them, use a Help and Support view from the Device Management console that is part of the new experience. These cases have numbers that are eight digits long. You can also view these cases from the Microsoft 365 admin center.  
 
