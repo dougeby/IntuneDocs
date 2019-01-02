@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 001/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ If you’re ready to move to the Azure portal, follow the steps in this topic to
 			- Gradually remove users from the security groups that have conditional access policies targeted to them in the Intune classic portal.
 			- After you have confirmed the new policy is working for those users, you can disable the policy in the Intune classic portal. 
 <br /><br />
-- If you have your conditional access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the Azure portal**.
+- If you have your conditional access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the Azure portal**.
 
 ### To verify your device-based conditional access policies in the Intune classic portal
 

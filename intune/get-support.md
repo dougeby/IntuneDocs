@@ -9,7 +9,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -122,7 +122,7 @@ You can view a support request from within the Azure portal. To do so:
 ## New Help and Support experience
 *The following information applies only when you use the Device Management portal and are part of the rollout of the new Help and Support experience. Participants for this rollout are randomly selected from the available Intune tenants.*  
 
-The update to Help and Support for Intune is a new experience that is available in the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) to some but not all tenants. This new experience is similar to that seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the previous Help and Support experience when accessed from some locations of the Device Management console.  
+The update to Help and Support for Intune is a new experience that is available in the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) to some but not all tenants. This new experience is similar to that seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the previous Help and Support experience when accessed from some locations of the Device Management console.  
 
 In the Device Management portal, you access the new experience when you select **Help and Support** from any blade under **All services** > **Device Management**, except for the **Troubleshooting** blade. When you access Help and Support from other locations like **Troubleshooting**, by using the **?** option in the upper right of the console banner, or when you select **Help + Support** from the left pane list of services, you access the original experience.  
 
@@ -178,5 +178,5 @@ Select the history button to view the support incidents that you've created.
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
-- [Volume licensing](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Volume licensing](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Troubleshoot Intune issues](help-desk-operators.md)
