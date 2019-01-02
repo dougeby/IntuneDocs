@@ -153,7 +153,7 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 4. Under the **Assignments** section, choose **Users and groups** to target the new conditional access policy.
 
-	![Image showing a user group UI comparison between the Intune and Azure portals](./media/reassign-ca-12.png)
+	![Image showing a user group UI comparison between the Azure and Intune portals](./media/reassign-ca-12.png)
 
 	> [!IMPORTANT] 
 	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
@@ -171,7 +171,7 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 8. On the **Conditions** blade, choose **Client apps**, and then choose the applicable client app. If you have chosen to block clients that aren’t supported by Intune, use the **Apply policy only to supported platforms** option.
 
-	![Image showing a client apps UI comparison between the Intune and Azure portals](./media/reassign-ca-15.png)
+	![Image showing a client apps UI comparison between the Azure and Intune portals](./media/reassign-ca-15.png)
 
 9. When you have finished choosing the client app, click **Done** twice.
 
