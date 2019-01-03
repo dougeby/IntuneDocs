@@ -56,7 +56,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![Malicious apps detected](./media/pradeo_maliciousapps_blocked.png)
+![Conceptual image of Malicious apps detected](./media/pradeo_maliciousapps_blocked.png)
 
 **Access granted on remediation:**
 
@@ -72,7 +72,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and protect a
 
 **Access granted on remediation:**
 
-![Access granted on remediation](./media/pradeo_network_wifi_unblocked.png)
+![Conceptual image of Access granted on remediation](./media/pradeo_network_wifi_unblocked.png)
 
 ### Control access to SharePoint Online based on threat to network
 
@@ -84,7 +84,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 **Access granted on remediation:**
 
-![Access granted on remediation for Sharepoint example](./media/pradeo_network_spo_unblocked.png)
+![Conceptual image of Access granted on remediation for Sharepoint example](./media/pradeo_network_spo_unblocked.png)
 
 ## Supported platforms
 

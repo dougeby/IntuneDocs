@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Set up Microsoft Intune on-premises Exchange connector
-titleSuffix:
+title: Set up Microsoft Intune on-premises Exchange connector | Microsoft Intune
 description: Use the on-premises Exchange connector to manage device access to Exchange mailboxes based on Intune enrollment and Exchange Active Sync (EAS).
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,7 +75,7 @@ You must create an Active Directory user account that is used by the on-premises
 
 ## Download the on-premises Exchange connector software installation package
 
-1. On a supported Windows Server operating system for the on-premises Exchange connector, open the [Azure portal](http://portal.azure.com) and sign in with a user account that is an administrator in the on-premises Exchange server, and that has a license to use Exchange Server.
+1. On a supported Windows Server operating system for the on-premises Exchange connector, open the [Azure portal](https://portal.azure.com) and sign in with a user account that is an administrator in the on-premises Exchange server, and that has a license to use Exchange Server.
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
