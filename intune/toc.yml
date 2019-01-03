@@ -696,6 +696,10 @@
         href: custom-settings-windows-holographic.md
       - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
+- name: Help and support
+  items:
+  - name: Tenant status
+    href: tenant-status.md  
 - name: Developer guidance
   items:
   - name: API to add third-party certificate authority
