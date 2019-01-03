@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Send logs to your company support for Windows 10 devices | Microsoft Docs
-description: Enroll a Windows 10 1511+ device into Intune
+title: Get help and support in Company Portal for Windows 10  | Microsoft Docs
+description: Send logs, contact helpdesk, and read FAQs on the Company Portal Help & support page.  
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,26 +21,40 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
 
 ---
 
-# Send logs to your company support from the Company Portal app for Windows 10
+# Get help and support in Company Portal for Windows 10
 
-If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+Visit the Company Portal Help & support page to start troubleshooting your app and access problems. From Help & support you can:  
 
-> [!Note]		
-> The Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
+* Get help with app problems
+* View helpdesk contact details
+* Find answers to your frequenly asked questions (FAQs) 
+* Report app problems to Microsoft
 
-1. Open the **Company Portal** app.
-2. Select the **Settings** gear, then **Send Logs**.
-3. **Share** will open. Select **Mail**. This will create an email message with the Company Portal logs attached that can be sent to your company support.
+   ![Example screenshot of the Company Portal app for Windows 10, Help & support page, highlighting each section title.](./media/1812_UCP_Help_Support_sections.png)  
 
-   ![The Send Logs dialog from the Company Portal app's Settings page. The link to click says "Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal."](./media/w10-share-logs-after-1711.png)
+## Get help with app problems
 
-You may also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md) to give your company support more help in trying to troubleshoot any issues they may find.
+Email your organization about any problems you experience in Company Portal. Select **Get Help** to start describing the problem. Your organization will use your description, and the diagnostic log ID included in the email, to troubleshoot the problem. For the step-by-step procedure, see [Send logs to your company support from the Company Portal app for Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
+
+## View helpdesk contact details  
+Use your organization's helpdesk details, such as phone number, emails, and website to quickly troubleshoot work or school access.  
+
+## Find answers to your frequently asked questions (FAQs)  
+We've put together a list of FAQs to help answer or troubleshoot your enrollment and access concerns. Select any topic to view its help article on Microsoft.docs.com.  
+
+# Report app problems to Microsoft  
+When you select **Report problem to Microsoft**, you'll go to the **Send feedback** page. From there, you can:
+
+* Report a problem or bug that you see in the app  
+* Send a suggestion or idea you have for the app  
+* Leave a review for the app in Microsoft Store   
+
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
