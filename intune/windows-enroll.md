@@ -74,7 +74,7 @@ If the company uses more than one UPN suffix, you need to create one CNAME for e
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 The Contoso DNS admin should create the following CNAMEs:
 

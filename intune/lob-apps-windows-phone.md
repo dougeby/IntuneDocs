@@ -3,7 +3,7 @@
 
 title: Add a Windows Phone line-of-business app to Microsoft Intune 
 titlesuffix: 
-description: Learn about adding a Windows Phone line-of-business app to Intune.
+description: Learn how to add a Windows Phone line-of-business (LOB) app using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre

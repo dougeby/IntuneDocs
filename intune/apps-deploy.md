@@ -3,7 +3,7 @@
 
 title: Assign apps to groups in Microsoft Intune
 titlesuffix:
-description: Learn how to assign an Intune app to groups of users or devices.
+description: Learn how to assign an Intune app to groups of users or devices using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -32,6 +32,9 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the app to users and devices. It is important to note that you can assign an app to a device whether or not the device is managed by Intune. 
+
+> [!NOTE]
+> The Available deployment intent is not supported for device groups, only user groups are supported.
 
 The following table lists the various options for assigning apps to users and devices:
 
