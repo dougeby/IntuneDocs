@@ -105,7 +105,7 @@ After you create update rings, you assign them to groups of devices. By using up
    
    - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
 
-     A setting of *Reset to default* will restore the original auto update settings on Windows 10 machines that run the *October 2018 Update* or later.
+     A setting of *Reset to default* will restore the original auto update settings on Windows 10 machines that run the *October 2018 Update* or later.  
 
      - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
 
