@@ -26,13 +26,13 @@ ms.custom: intune-azure
 
 ---
 
-# Add custom messages to lock screen on iOS devices using Microsoft Intune
+# Add custom messages to lock screen and login window on iOS devices using Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article shows you the Microsoft Intune settings you can use to show information on the iOS device lock screen.
+This article shows you the Microsoft Intune settings you can use to show information on the iOS device lock screen and login window. 
 
-Use these settings to show a custom message or text on the sign-in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
+Use these settings to show a custom message or text on the login window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
 
 These settings support supervised devices running iOS 9.3 and later.
 
@@ -44,13 +44,13 @@ These settings support supervised devices running iOS 9.3 and later.
 4. In **Platform**, select **iOS**. In **Profile type**, select **Device features**.
 5. In **Settings**, select **Lock Screen Message (supervised only)**. Configure the following settings:
 
-    - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp`.
+    - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `123xyz`.
 
-        The text you enter is shown on the sign-in window and lock screen on the device.
+        The text you enter is shown on the login window and lock screen on the device.
 
-    - **Lock screen footnote**: If the device is lost or stolen, enter a note that might help get the device returned. For example, enter something like `If found, call Contoso at ...`.
+    - **Lock screen footnote**: If the device is lost or stolen, enter a note that might help get the device returned. You can enter any text you want in the field. For example, enter something like `If found, call Contoso at ...`.
 
-    Variables can also be used for these settings. For example, to show the serial number, enter `Serial Number {{serialNumber}}`. On the lock screen, the text shows similar to `Serial Number 123456789ABC`. When entering variables, be sure to use curly brackets `{{ }}`. [App configuration tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includes a list of variables that can be used. You can also use `deviceName` or any other device-specific value.
+    Device tokens can also be used to add device-specific information to these fields. For example, to show the serial number, enter `Serial Number: {{serialnumber}}`. On the lock screen, the text shows similar to `Serial Number 123456789ABC`. When entering variables, be sure to use curly brackets `{{ }}`. [App configuration tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includes a list of variables that can be used. You can also use `deviceName` or any other device-specific value.
 
 6. When finished, select **OK** > **OK** > **Create**. Your profile is shown in the list.
 
