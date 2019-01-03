@@ -49,7 +49,7 @@ Use your organization's helpdesk details, such as phone number, emails, and webs
 ## Find answers to your frequently asked questions (FAQs)  
 We've put together a list of FAQs to help answer or troubleshoot your enrollment and access concerns. Select any topic to view its help article on Microsoft.docs.com.  
 
-# Report app problems to Microsoft  
+## Report app problems to Microsoft  
 When you select **Report problem to Microsoft**, you'll go to the **Send feedback** page. From there, you can:
 
 * Report a problem or bug that you see in the app  
