@@ -7,7 +7,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
