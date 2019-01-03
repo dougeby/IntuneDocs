@@ -30,14 +30,16 @@ ms.custom: intune-enduser
 
 # Get help and support in Company Portal for Windows 10
 
-Visit the Company Portal Help & support page to start troubleshooting your app and access problems. From Help & support you can:  
+Visit the Company Portal Help & support page to start troubleshooting your app and access problems.   
+
+From Help & support you can:  
 
 * Get help with app problems
 * View helpdesk contact details
 * Find answers to your frequently asked questions (FAQs) 
 * Report app problems to Microsoft
 
-   ![Example screenshot of the Company Portal app for Windows 10, Help & support page, highlighting each section title.](./media/1812_UCP_Help_Support_sections.png)  
+![Example screenshot of the Company Portal app for Windows 10, Help & support page, highlighting each section title.](./media/1812_UCP_Help_Support_sections.png)  
 
 ## Get help with app problems
 
