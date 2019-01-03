@@ -34,7 +34,7 @@ Visit the Company Portal Help & support page to start troubleshooting your app a
 
 * Get help with app problems
 * View helpdesk contact details
-* Find answers to your frequenly asked questions (FAQs) 
+* Find answers to your frequently asked questions (FAQs) 
 * Report app problems to Microsoft
 
    ![Example screenshot of the Company Portal app for Windows 10, Help & support page, highlighting each section title.](./media/1812_UCP_Help_Support_sections.png)  
