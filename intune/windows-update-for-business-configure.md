@@ -82,16 +82,12 @@ After you create update rings, you assign them to groups of devices. By using up
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
 2. Select **Software updates** > **Windows 10 Update Rings** > **Create**.
 3. Enter a name, a description (optional), and then choose **Configure**.
-4. In **Settings**, enter the following information:
+4. In **Settings**, enter the following information:  
 
+   **Update Settings**  
    - **Servicing channel**: Set the channel from which the device receives Windows updates.
    - **Microsoft product updates**: Choose to scan for app updates from Microsoft Update.
    - **Windows drivers**: Choose to exclude Windows Update drivers during updates.
-   - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
-
-   - **Restart checks**: Enabled by default. When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.
-
    - **Quality update deferral period (days)**: Enter the number of days for which quality updates are deferred. You can defer receiving these Quality Updates up to 30 days from their release.
 
      Quality Updates are typically fixes and improvements to existing Windows functionality, and are published the second Tuesday of every month. Quality Updates through Windows Update for Business only receive these updates (the 'B' release), although other updates may be released at any time by Microsoft. You can define if, and how long, you defer receiving Quality Updates after they're available on Windows Update. For more information, see [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
@@ -103,8 +99,17 @@ After you create update rings, you assign them to groups of devices. By using up
      For example:
      **If the Servicing channel is set to Semi-Annual Channel (Targeted), and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. The device doesn't receive the update until February - 30 days later.
 
-     **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.
+     **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.  
 
+   **User experience settings**
+   
+   - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
+
+   - **Restart checks**: Enabled by default. When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.
+
+   - **Block user from pausing Windows updates**: Allowed by default. Use this setting to block or allow your users to pause update installation from the *Settings* of their machines. 
+      
    - **Delivery optimization download mode**: Choose the method for which devices download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. When done, select **OK**. In **Create Update Ring**, select **Create**.
