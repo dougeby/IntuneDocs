@@ -36,6 +36,9 @@ A line-of-business (LOB) app is an app that you add to Intune from an app instal
 > [!Note]
 > For more information about LOB apps from the Managed Google Play store, see [Working with a line-of-business app from the Managed Google Play store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
 
+> [!Note]
+> For Android for Work devices, follow [this article](https://docs.microsoft.com/en-us/intune/apps-add-android-for-work). 
+
 ## Step 1: Specify the software setup file
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
