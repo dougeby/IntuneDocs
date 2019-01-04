@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Add iOS device restrictions settings in Microsoft Intune - Azure | Microsoft Docs
+title: iOS device settings in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Add, configure, or create settings on iOS devices to set password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for back up and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
+description: Add, configure, or create settings on iOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for back up and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod:
-ms.service: microsoft-intune
+ms.service: microsoft-intune; seodec18
 ms.technology:
 
 # optional metadata
@@ -26,9 +26,14 @@ ms.custom: intune-azure
 
 ---
 
-# iOS device restrictions settings list in Microsoft Intune
+# iOS device settings to allow or restrict features using Intune
 
-This article lists and describes all the device restriction settings you can configure for iOS devices. These settings are added to a device configuration profile, and then assigned or deployed to your iOS devices using Microsoft Intune.
+This article lists and describes the different settings you can control on iOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
+
+These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
+
+## Before you begin
+[Create a device configuration profile](device-restrictions-configure.md).
 
 ## General
 
@@ -36,7 +41,7 @@ This article lists and describes all the device restriction settings you can con
   - **Diagnostic data submission**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in  **Diagnostics and Usage** (device Settings). To use this setting, the device must be in supervised mode (iOS 9.3.2+). **Not configured** allows the user to change these device settings.
 - **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. **Not configured** lets the user capture the screen contents as an image.
   - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. To use this setting, the device must be in supervised mode (iOS 9.3+). **Not configured** allows the Apple Classroom app to view the screen.
-  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** prevents this feature.
+  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** prevents this feature.
 - **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** allows TLS certificates.
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** allows users to change these settings.
@@ -151,7 +156,15 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store.
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** allows the user to download books with the "Erotica" category.
 - **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing non-corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, You want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
+  - **Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
+  
+    To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
+  
 - **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** allows any document to be viewed in corporate managed apps.
+  - **Allow unmanaged apps to read from managed contacts accounts (supervised only)**: When set to **Allow**, users can add any person's iContacts app contact information into Outlook. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.
+  
+    To use this setting, set the **Viewing non-corporate documents in corporate apps** setting to **Block**.
+  
 - **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. It stops managed apps from sending data using Airdrop. 
 - **Adding Game Center friends (supervised only)**: **Block** prevents users from adding Game Center friends. **Not configured** allows the user to add friends in Game Center.
 - **Game Center (supervised only)**: **Block** the use of the Game Center app. **Not configured** allows using the Game Center app on the device.
@@ -192,7 +205,7 @@ To add apps to these lists, you can:
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
-- Import a CSV file with details about the app, including the URL. Use the <app url>, <app name>, <app publisher> format. Or, Export an existing list that includes the restricted apps list in the same format.
+- Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
 > [!IMPORTANT]
 > Device profiles that use the restricted app settings must be assigned to groups of users.
@@ -212,7 +225,7 @@ To add apps to these lists, you can:
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
-- Import a CSV file with details about the app, including the URL. Use the <app url>, <app name>, <app publisher> format. Or, Export an existing list that includes the restricted apps list in the same format.
+- Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
 ## Wireless
 
@@ -291,7 +304,7 @@ To add apps, you can:
 - **Touch**: **Block** disables the touchscreen on the device. **Not configured** allows the user to use the touchscreen.
 - **Volume buttons**: **Allow** using the volume buttons on the device. **Not configured** disables the volume buttons.
 - **Assistive touch control**: **Allow** let users use the assistive touch function. **Not configured** disables this feature.
-- **Invert colors control**: **Allow** invert colors adjustments to let users adjust the invert colors function. **Not configured** disables this feature.
+- **Invert colors control**: **Allow** invert color changes to let users adjust the invert colors function. **Not configured** disables this feature.
 - **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. This feature reads text that the user selects out loud. **Not configured** disables this feature.
 - **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Not configured** prevents voiceover changes.
 - **Zoom control**: **Allow** zoom changes by the user. **Not configured** prevents zoom changes.
@@ -374,4 +387,6 @@ In **Domain URL**, add one or more URLs to the list. Users can only save web pas
 
 ## Next steps
 
-[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md) its status.
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+You can also set device restrictions and settings on [macOS](device-restrictions-macos.md) devices.
