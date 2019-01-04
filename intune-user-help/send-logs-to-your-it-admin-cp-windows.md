@@ -2,7 +2,7 @@
 # required metadata
 
 title: Send logs to your company support for Windows 10 devices | Microsoft Docs
-description: Send diagnostic logs to help company support fix app problems
+description: Send error details to help company support fix your app problems
 keywords:
 author: lenewsad
 ms.author: lanewsad
