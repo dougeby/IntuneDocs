@@ -66,12 +66,12 @@ If you have a company-owned device, your organization might require that Company
 
 Complete the steps below to disable Company Portal as a device administrator. The actual names of each setting might vary on your Android device.  
 
-**Android steps, option 1**:
-1.) Select Settings > Security > Additional Security Settings > Device Administrators.
-2.) Deselect Company Portal.  
+**Android steps, option 1**:  
+1. Select **Settings** > **Security** > **Additional Security Settings** > **Device Administrators**.  
+2. Clear the **Company Portal** selection.  
 
-**Android steps, option 2**:
-1.) Select Settings > Lock screen and security > Other security settings > Device admin apps.
-2.) Deselect Company Portal.    
+**Android steps, option 2**:  
+1. Select **Settings** > **Lock screen and security** > **Other security settings** > **Device admin apps**.  
+2. Clear the **Company Portal** selection.    
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980)
