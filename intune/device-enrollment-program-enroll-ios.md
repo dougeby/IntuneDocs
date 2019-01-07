@@ -198,7 +198,15 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Zoom</strong> | Give the user to the option to zoom the display when they set up the device. |
     | <strong>Siri</strong> | Give the user the option to set up Siri. |
     | <strong>Diagnostic Data</strong> | Display the **Diagnostics** screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
-
+    | <strong>Display Tone</strong> | Give the user the option to turn on Display Tone. |
+    | <strong>Privacy</strong> | Display the Privacy screen to the user. |
+    | <strong>Android Migration</strong> | Give the user the option to migrate date from an Android device. |
+    | <strong>iMessage and FaceTime</strong> | Give the user the option to set up  iMessage and FaceTime. |
+    | <strong>Onboarding</strong> | Display onboarding informational screens for user education, such as Cover Sheet and Multitasking and Control Center. |
+    | <strong>Watch Migration</strong> | Give the user the option to migrate data from a watch device. |
+    | <strong>Screen Time</strong> | Display the Screen Time screen. |
+    | <strong>Software Update</strong> | Display the mandatory software update screen. |
+    | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
 
 14. Choose **OK**.
 
