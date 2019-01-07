@@ -3,7 +3,7 @@
 
 title: Add an iOS line-of-business app to Microsoft Intune
 titlesuffix:
-description: Learn about adding an iOS line-of-business app to Microsoft Intune.
+description: Learn about how to add an iOS line-of-business (LOB) app to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre

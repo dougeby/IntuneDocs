@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Review app protection policy logs
+title: Review app protection policy logs | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Learn about the settings you can review in the app protection logs.
 keywords:

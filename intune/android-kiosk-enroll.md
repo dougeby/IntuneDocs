@@ -32,7 +32,7 @@ ms.custom: seodec18
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supports kiosk-style devices with its Corporate-Owned, Single-Use solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
+Android supports kiosk-style devices with its [Dedicated Devices](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use) solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
 
 Intune helps you deploy apps and settings to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

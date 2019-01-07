@@ -57,7 +57,7 @@ Microsoft Intune supports Transport Layer Security (TLS) 1.2+ to provide best-in
 #### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
 The Intune App SDK for Android now uses 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
-### Microsoft Auto Update version 4.50 required for macOS devices <!-- 3503442 -->
+### Microsoft Auto Update version 4.5.0 required for macOS devices <!-- 3503442 -->
 To continue receiving updates for the Company Portal and other Office applications, macOS devices managed by Intune must upgrade to Microsoft Auto Update 4.5.0. Users might already have this version for their Office apps.
 
 ### Intune requires macOS 10.12 or later <!-- 2827778 -->
@@ -97,13 +97,6 @@ You can now manage the following apps with [Intune app protection policies](app-
 Use app protection policies to protect corporate data and control data transfer for these apps, like other Intune policy managed apps. 
 Note: If Flow is not yet visible in the console, you add Flow when you create or edit and app protection policies. To do so, use the **+ More apps** option, and then specify the *App ID* for Flow in the input field. For Android use *com.microsoft.flow*,  and for iOS use *com.microsoft.procsimo*.
 
-#### Intune app protection policies UI update <!-- 3251427 -->
-We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
-
-- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
-- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
-
-The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies.
 
 ### Device configuration
 

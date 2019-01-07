@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Manage operating system versions with Microsoft Intune
+title: Manage operating system versions with Microsoft Intune | Microsoft Intune
 description: Learn how to manage operating system versions across platforms with Microsoft Intune. 
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -67,13 +67,12 @@ For details, see [Get started with device compliance](https://docs.microsoft.com
 Intune app protection policies and mobile application management (MAM) access settings let you to specify the minimum operating system version at the app layer. This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.
  
 You have two different options: 
+- **Warn** -   Warn informs the end user that they should upgrade if they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is allowed for the app and organizational data.
+  ![Image of the Android update warning dialog](./media/os-version-update-warning.png) 
 
-|Warn  |Block  |
-|---------|---------|
-|Warn informs the end user that they should upgrade if they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is allowed for the app and organizational data.|Block informs the end user that they must upgrade when they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is not allowed for app and organizational data.|
-|![Android update warning dialog](./media/os-version-update-warning.png)    |![App access blocked dialog](./media/os-version-access-blocked.png)          |
+- **Block** - Block informs the end user that they must upgrade when they open an app with an application protection policy or MAM access settings on a device with an operating system version below the specified version. Access is not allowed for app and organizational data.
+  ![Image of the App access blocked dialog](./media/os-version-access-blocked.png)
 
- 
 ### In practice
 Organizations are using app protection policy settings today when apps are opened or resumed as a way to educate end users about the need to keep their apps current. An example configuration is that end users are warned on current version minus one and blocked on current version minus two.
  
