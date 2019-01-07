@@ -69,6 +69,17 @@
     href: common-scenarios.md
   - name: Compare MDM and MAM
     href: byod-technology-decisions.md    
+  - name: Manage operating system versions
+    href: manage-os-versions.md
+  - name: Manage Windows Holographic
+    href: windows-holographic-for-business.md
+    items:
+    - name: Upgrade Windows Holographic
+      href: holographic-upgrade.md    
+  - name: Windows Information Protection settings
+    href: windows-information-protection-configure.md  
+  - name: MAM FAQ
+    href: mam-faq.md
   - name: Policy & profile FAQ
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Plan deployment
@@ -227,9 +238,6 @@
     - name: Create a policy to enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
-      href: compliance-policy-create-ios.md
-    - name: Create macOS policy
-      href: compliance-policy-create-mac-os.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
     - name: Location-based policy
@@ -248,120 +256,50 @@
     - name: Device features (iOS and MacOS)
       href: device-features-configure.md
       items:
-      - name: AirPrint for iOS and MacOS
+      - name: DEL-AirPrint for iOS and MacOS
         href: air-print-settings-ios-macos.md
-      - name: AirPlay for iOS
+      - name: DEL-AirPlay for iOS
         href: airplay-settings-ios.md
-      - name: Home screen layout for iOS
+      - name: DEL-Home screen layout for iOS
         href: home-screen-settings-ios.md
-      - name: App notifications for iOS
+      - name: DEL-App notifications for iOS
         href: app-notification-settings-ios.md
-      - name: Shared devices for iOS
+      - name: DEL-Shared devices for iOS
         href: shared-device-settings-ios.md
-      - name: Configure Intune for iOS device single sign-on
+      - name: DEL-Single sign-on for iOS
         href: sso-ios.md
-      - name: Web filter settings for iOS
+      - name: DEL-Web filter for iOS
         href: web-content-filter-settings-ios.md
     - name: Device restrictions
       href: device-restrictions-configure.md
-      items:
-      - name: Android
-        href: device-restrictions-android.md
-      - name: Android Enterprise
-        href: device-restrictions-android-for-work.md        
-      - name: iOS
-        href: device-restrictions-ios.md
-      - name: macOS
-        href: device-restrictions-macos.md
-      - name: Windows 8.1
-        href: device-restrictions-windows-8-1.md
-      - name: Windows Phone 8.1
-        href: device-restrictions-windows-phone-8-1.md
-      - name: Windows 10
-        href: device-restrictions-windows-10.md
-      - name: Windows 10 Team
-        href: device-restrictions-windows-10-teams.md
-      - name: Windows Holographic for Business
-        href: device-restrictions-windows-holographic.md
     - name: Delivery optimization
       href: delivery-optimization-windows.md
     - name: Email settings
       href: email-settings-configure.md
-      items:
-      - name: Android
-        href: email-settings-android.md
-      - name: iOS
-        href: email-settings-ios.md
-      - name: Windows Phone 8.1
-        href: email-settings-windows-phone-8-1.md
-      - name: Windows 10
-        href: email-settings-windows-10.md
     - name: VPN settings
       href: vpn-settings-configure.md
       items:
-      - name: Android
-        href: vpn-settings-android.md
-      - name: iOS
-        href: vpn-settings-ios.md
-      - name: Configure Per-App VPN for iOS devices
+      - name: Per-app VPN for Android
+        href: android-pulse-secure-per-app-vpn.md
+      - name: Per-App VPN for iOS
         href: vpn-setting-configure-per-app.md
-      - name: macOS
-        href: vpn-settings-macos.md
-      - name: Windows 8.1
-        href: vpn-settings-windows-8-1.md
-      - name: Windows Phone 8.1
-        href: vpn-settings-windows-phone-8-1.md
-      - name: Windows 10
-        href: vpn-settings-windows-10.md
     - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
-      - name: Android
-        href: wi-fi-settings-android.md
-      - name: Android Enterprise & kiosk
+      - name: MOVE-Android Enterprise & kiosk
         href: wi-fi-settings-android-enterprise.md
-      - name: iOS
-        href: wi-fi-settings-ios.md
-      - name: macOS
-        href: wi-fi-settings-macos.md
-      - name: Windows 10
-        href: wi-fi-settings-windows.md
-      - name: Windows 8.1
-        href: wi-fi-settings-import-windows-8-1.md
+      - name: Wi-Fi with a pre-shared key
+        href: wi-fi-profile-shared-key.md
     - name: Education settings
       items:
-      - name: iOS shared devices
+      - name: MOVE-iOS shared devices
         href: education-settings-configure-ios-shared.md
-      - name: Windows 10
+      - name: MOVE-Windows 10
         href: education-settings-configure.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
-    - name: Windows 10 kiosk settings
-      href: kiosk-settings.md      
-    - name: Configure custom device settings
+    - name: MOVE-Custom device settings
       href: custom-settings-configure.md
-      items:
-      - name: Wi-Fi profile with a pre-shared key
-        href: wi-fi-profile-shared-key.md
-      - name: Android
-        href: custom-settings-android.md
-        items:
-        - name: Per-app VPN profile
-          href: android-pulse-secure-per-app-vpn.md
-        - name: Allow/block apps for Samsung Knox Standard
-          href: samsung-knox-apps-allow-block.md
-      - name: Android Enterprise
-        href: custom-settings-android-for-work.md
-      - name: iOS
-        href: custom-settings-ios.md
-      - name: macOS
-        href: custom-settings-macos.md
-      - name: Windows 10
-        href: custom-settings-windows-10.md
-      - name: Windows Holographic for Business
-        href: custom-settings-windows-holographic.md
-      - name: Windows Phone 8.1
-        href: custom-settings-windows-phone-8-1.md      
     - name: Assign profiles
       href: device-profile-assign.md
     - name: Monitor profiles
@@ -465,11 +403,6 @@
         href: advanced-threat-protection.md    
       - name: Endpoint protection
         href: endpoint-protection-configure.md
-        items:
-        - name: macOS
-          href: endpoint-protection-macos.md
-        - name: Windows 10
-          href: endpoint-protection-windows-10.md    
     - name: Network access control
       href: network-access-control-integrate.md
     - name: Windows Hello
@@ -495,7 +428,7 @@
       href: identity-protection-configure.md          
     - name: Software updates and upgrades
       items:
-      - name: Windows 10 edition upgrade settings
+      - name: Windows 10 upgrade
         href: edition-upgrade-configure-windows-10.md
       - name: Windows Update for Business settings
         href: windows-update-for-business-configure.md      
@@ -734,7 +667,186 @@
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
 - name: Settings lists
-  href: settings.md
+  items:
+  - name: Android
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-android.md
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-android.md
+      - name: Email
+        href: email-settings-android.md#android-samsung-knox
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS imported certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-android.md#android-vpn-settings
+      - name: Wi-Fi
+        href: wi-fi-settings-android.md
+      - name: Custom
+        href: custom-settings-android.md
+        items:
+        - name: Allow/block apps for Samsung Knox Standard
+          href: samsung-knox-apps-allow-block.md
+  - name: Android Enterprise
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-android-for-work.md
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-android-for-work.md
+      - name: Email
+        href: email-settings-android.md#android-enterprise
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS imported certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-android.md#android-for-work-vpn-settings
+      - name: Wi-Fi
+        href: wi-fi-settings-android-enterprise.md
+      - name: Custom
+        href: custom-settings-android-for-work.md
+  - name: iOS
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-ios.md
+    - name: Configuration profile settings
+      items:
+      - name: Device features
+        href: ios-device-features-settings.md
+      - name: Device restrictions
+        href: device-restrictions-ios.md
+      - name: Email
+        href: email-settings-ios.md
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-ios.md
+      - name: Wi-Fi
+        href: wi-fi-settings-ios.md
+      - name: Custom
+        href: custom-settings-ios.md
+  - name: macOS
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-mac-os.md
+    - name: Configuration profile settings
+      items:
+      - name: Device features
+        href: macos-device-features-settings.md
+      - name: Device restrictions
+        href: device-restrictions-macos.md
+      - name: Endpoint protection
+        href: endpoint-protection-macos.md
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: VPN
+        href: vpn-settings-macos.md
+      - name: Wi-Fi
+        href: wi-fi-settings-macos.md
+      - name: Custom
+        href: custom-settings-macos.md
+  - name: Windows 10 and later
+    items:
+    - name: Compliance policy settings
+      href: 
+    - name: Configuration profile settings
+      items:
+      - name: Administrative templates
+        href: 
+      - name: Device restrictions
+        href: device-restrictions-windows-10.md
+      - name: Device restrictions (Windows 10 Team)
+        href: device-restrictions-windows-10-teams.md
+      - name: Domain join
+        href: 
+      - name: NEED-Edition upgrade and mode switch
+        href: edition-upgrade-configure-windows-10.md
+      - name: Email
+        href: email-settings-windows-10.md
+      - name: Endpoint protection
+        href: endpoint-protection-windows-10.md
+      - name: NEED-Identity protection
+        href: identity-protection-configure.md
+      - name: Kiosk
+        href: kiosk-settings.md
+      - name: Network boundary
+        href: 
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: PKCS certificate
+        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+      - name: VPN
+        href: vpn-settings-windows-10.md
+      - name: NEED-Windows Defender ATP (Windows 10 Desktop)
+        href: advanced-threat-protection.md
+      - name: Wi-Fi
+        href: wi-fi-settings-windows.md
+      - name: NEED-Education profile
+        href: education-settings-configure.md
+      - name: Custom
+        href: custom-settings-windows-10.md
+  - name: Windows Holographic for Business
+    items:
+    - name: Device restrictions
+      href: device-restrictions-windows-holographic.md
+    - name: Custom
+      href: custom-settings-windows-holographic.md
+  - name: Windows 8.1
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-windows-8-1.md
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: VPN
+        href: vpn-settings-windows-8-1.md
+      - name: Wi-Fi import
+        href: wi-fi-settings-import-windows-8-1.md
+  - name: Windows Phone 8.1
+    items:
+    - name: Compliance policy settings
+      href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+    - name: Configuration profile settings
+      items:
+      - name: Device restrictions
+        href: device-restrictions-windows-phone-8-1.md
+      - name: Email
+        href: email-settings-windows-phone-8-1.md
+      - name: Trusted certificate
+        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+      - name: SCEP certificate
+        href: certificates-scep-configure.md#create-a-scep-certificate-profile
+      - name: VPN
+        href: vpn-settings-windows-phone-8-1.md
+      - name: Custom
+        href: custom-settings-windows-phone-8-1.md
 - name: Resources
   items:
   - name: Microsoft Intune documentation guide
