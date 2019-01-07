@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -87,7 +87,7 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 >[!NOTE]
 >The next time you open OneDrive for Business, you may be asked to set a PIN if your IT requires one. After you set and confirm the PIN, you can continue on to OneDrive for Business.
 
-![Image of prompt for PIN](./media/pin-prompt-android.png)
+![Image of prompt to set and confirm the PIN](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
