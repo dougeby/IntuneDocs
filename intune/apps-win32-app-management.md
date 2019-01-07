@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,13 +72,13 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
 4.	In the **Add** app pane, select **Windows app (Win32) - preview** from the provided drop-down list.
 
-    ![Screenshot Add app - Add type dropdown box](./media/apps-win32-app-01.png)
+    ![Screenshot of the Add app blade - Add type dropdown box](./media/apps-win32-app-01.png)
 
 ### Step 2: Upload the app package file
 
 1.	In the **Add app** pane, select **App package file** to select a file. The App package file pane will be displayed.
 
-    ![Screenshot App package file](./media/apps-win32-app-02.png)
+    ![Screenshot of the App package file blade](./media/apps-win32-app-02.png)
 
 2.	In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension *.intunewin*.
 3.	When you're finished, select **OK**.
@@ -180,15 +180,17 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     - **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
     
         1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
-        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end user's credentials. Select **No** (default) to run the script in the system context.
+
+        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+
         3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
     
-        Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
-    
-        > [!NOTE]
-        > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
-    
-3.	Once you have added your rule(s), select **Add** > **OK**.
+            Intune agent checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
+
+            > [!NOTE]
+            > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
+
+        4.	Once you have added your rule(s), select **Add** > **OK**.
 
 ### Step 7: Configure app return codes
 
@@ -230,16 +232,16 @@ Windows 10 RS3 and above clients will download Intune Win32 app content using a 
 
 The end user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
 
-![Screenshot example of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
+![Screenshot of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
 
 The following image notifies the end user that app changes are being made to the device.
 
-![Screenshot example of notifying the end user that app changes are being made to the device](./media/apps-win32-app-09.png)    
+![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Screenshot the Agent logs](./media/apps-win32-app-10.png)    
+![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
 
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.

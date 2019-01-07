@@ -75,7 +75,7 @@ The Pradeo app authorization process follows:
 
 4.  In the **EMM (Enterprise mobility management - Intune** window, under **Step 1**, choose the **Pradeo Connector** button. 
 
-    ![Pradeo EMM Intune window](./media/pradeo_setup.png)
+    ![Screenshot of the Pradeo EMM Intune window](./media/pradeo_setup.png)
 
 5. In the Microsoft Intune connection window, enter your Intune credentials.
 

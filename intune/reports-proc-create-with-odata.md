@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -109,7 +109,7 @@ You now have a visual that shows the distribution of manufacturers of devices wi
 You can add a filter to your treemap so that you can answer additional questions using your app.
 
 
-1. To add a filter, select the report canvas, and then select the **Slicer icon** (![Treemap with data](media/reports-create-slicer.png)) under **Visualizations**.
+1. To add a filter, select the report canvas, and then select the **Slicer icon** (![Treemap with data model and supported relationships](media/reports-create-slicer.png)) under **Visualizations**.
 2. Find the **ownerTypes** table and drag the **ownerTypeName** data field under the **Filters** section in the **Visualizations** panel.  
 
    Under the devices table, there's a data field called **OwnerTypeKey** that contains a code as to whether a device is company-owned or personal. Since you would like to show friendly names in this filter, look for the **ownerTypes** table and drag the **ownerTypeName**. This example shows how the data model supports relationships between tables.

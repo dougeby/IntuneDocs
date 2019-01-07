@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -318,7 +318,7 @@ The **DevicePropertyHistory** entity has the same properties as the devices tabl
 
 ## MdmDeviceInventoryHistories
 
-The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](device-inventory.md).
 
 | Property  | Description |
 |---------|------------|

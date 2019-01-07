@@ -3,12 +3,12 @@
 
 title: Assign apps to groups in Microsoft Intune
 titlesuffix:
-description: Learn how to assign an Intune app to groups of users or devices.
+description: Learn how to assign an Intune app to groups of users or devices using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,20 +33,22 @@ ms.custom: intune-azure
 
 After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the app to users and devices. It is important to note that you can assign an app to a device whether or not the device is managed by Intune. 
 
+> [!NOTE]
+> The Available deployment intent is not supported for device groups, only user groups are supported.
+
 The following table lists the various options for assigning apps to users and devices:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Devices enrolled with Intune**|**Devices not enrolled with Intune**|
-|Assign to users|Yes|Yes|
-|Assign to devices|Yes|No|
-|Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies)|Yes|Yes|
-|Assign apps as Available|Yes|Yes|
-|Assign apps as Required|Yes|No|
-|Uninstall apps|Yes|No|
-|Receive app updates from Intune|Yes|No|
-|End users install available apps from the Company Portal app|Yes|No|
-|End users install available apps from the web-based Company Portal|Yes|Yes|
+|   | Devices enrolled with Intune | Devices not enrolled with Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Assign to users | Yes | Yes |
+| Assign to devices | Yes | No |
+| Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies) | Yes | Yes |
+| Assign apps as Available | Yes | Yes |
+| Assign apps as Required | Yes | No |
+| Uninstall apps | Yes | No |
+| Receive app updates from Intune | Yes | No |
+| End users install available apps from the Company Portal app | Yes | No |
+| End users install available apps from the web-based Company Portal | Yes | Yes |
 
 > [!NOTE]
 > Currently, you can assign iOS and Android apps (line-of-business and store-purchased apps) to devices that aren't enrolled with Intune.
@@ -64,9 +66,9 @@ The following table lists the various options for assigning apps to users and de
 7. Select **Add Group** to open the **Add group** pane that is related to the app.
 8. For the specific app, select an **assignment type**:
    - **Available for enrolled devices**: Assign the app to groups of users who can install the app from the Company Portal app or website.
-   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. 
-   - **Required**: The app is installed on devices in the selected groups.
-   - **Uninstall**: The app is uninstalled from devices in the selected groups.
+   - **Available with or without enrollment**: Assign this app to groups of users whose devices are not enrolled with Intune. Apps from Managed Google Play don't support this option. Users must be assigned an Intune license, see [Intune Licenses](licenses.md).
+   - **Required**: The app is installed on devices in the selected groups. Some platforms may have additional prompts for the end user to acknowledge before app installation begins.
+   - **Uninstall**: The app is uninstalled from devices in the selected groups if Intune has previously installed the application onto the device via an "Available for enrolled devices" or "Required" assignment using the same deployment. Web links cannot be removed after deployment.
 
      > [!NOTE]
      > **For iOS apps only**: If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
@@ -87,9 +89,8 @@ The app is now assigned to the groups that you selected. For more information ab
 
 Sometimes, the same app is assigned to multiple groups but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
 
-||||
-|-|-|-|
-|**Group 1 intent**|**Group 2 intent**|**Resulting intent**|
+| Group 1 intent | Group 2 intent | Resulting intent |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |User Required|User Available|Required and Available|
 |User Required|User Not Available|Required|
 |User Required|User Uninstall|Required|

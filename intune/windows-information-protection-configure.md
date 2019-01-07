@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Windows Information Protection settings in Microsoft Intune
-titleSuffix:
+title: Windows Information Protection settings in Microsoft Intune | Microsoft Intune
 description: Learn about the Microsoft Intune settings you can use to manage Windows Information Protection.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +39,7 @@ This Intune policy manages the list of apps protected by Windows Information Pro
 >[!NOTE]
 > To use the Windows 10 Company Portal app with Windows Information Protection, you must add the Company Portal app under the Windows Information Protection mode of **Exempt**. 
 
-### Next steps
+## Next steps
 For more information, see:
 -  [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 - [Create a Windows Information Protection (WIP) policy using the classic console for Microsoft Intune](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/create-wip-policy-using-intune)

@@ -7,7 +7,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,10 +40,10 @@ The steps below will help you get the required certificate and sign the apps. Yo
 
 
 1. **Register as a Microsoft developer**<br>
-   [Register as a Microsoft developer](http://go.microsoft.com/fwlink/?LinkId=268442) using the corporate account information you used when logging in to purchase your company account. This request will need to be authorized by a company officer before you receive a code-signing certificate.
+   [Register as a Microsoft developer](https://go.microsoft.com/fwlink/?LinkId=268442) using the corporate account information you used when logging in to purchase your company account. This request will need to be authorized by a company officer before you receive a code-signing certificate.
 
 2. **Get a company Symantec certificate**<br>
-  Purchase a certificate from the [Symantec website](http://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated when you registered as a Microsoft developer will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
+  Purchase a certificate from the [Symantec website](https://go.microsoft.com/fwlink/?LinkId=268441) using your Symantec ID. After you purchase the certificate, the corporate approver whom you designated when you registered as a Microsoft developer will receive an email asking for approval of the certificate request. For more information about the Symantec certificate requirement, see the [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) Windows device enrollment FAQ.
 
 3.  **Import certificates**<br>
     Once the request has been approved, you will receive an email containing instructions for importing certificates. Follow the instructions in the email to import the certificates.
@@ -51,14 +51,14 @@ The steps below will help you get the required certificate and sign the apps. Yo
 4.  **Verify certificates imported**<br>
     To verify that the certificates have been imported correctly, go to the **Certificates** snap-in, right-click **Certificates**, and select **Find Certificates**. In the **Contains** field, enter “Symantec”, and click **Find Now**. The certificates you imported should appear in the results.
 
-    ![Find the Symantec certificate](./media/wit.gif)
+    ![The certificate results are listed in the Find Certificates dialog box](./media/wit.gif)
 
 5. **Export a signing certificate**<br>
     Having verified that the certificates are present, you can export the .pfx file to sign the company portal. Select the Symantec certificate with **Intended purpose** “code-signing.” Right-click the code-signing certificate and select **Export**.
 
     ![Export the signing certificate](./media/wit-walk-cert2.gif)
 
-    In the **Certificate Export Wizard**, select **Yes, export the private key** and then click **Next**. **Select Personal Information Exchange –PKCS #12 (.PFX)** and check **Include all the certificates in the certification path if possible**. Complete the wizard. For more information, see [How to Export a Certificate with the Private Key](http://go.microsoft.com/fwlink/?LinkID=203031).
+    In the **Certificate Export Wizard**, select **Yes, export the private key** and then click **Next**. **Select Personal Information Exchange –PKCS #12 (.PFX)** and check **Include all the certificates in the certification path if possible**. Complete the wizard. For more information, see [How to Export a Certificate with the Private Key](https://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Upload the app to Intune**<br>
     Upload the signed app file and your code-signing certificate to make the app available to your end users.
@@ -78,36 +78,36 @@ You can deploy the Company Portal app to Windows devices, including Windows Phon
 
 1.  **Download the Company Portal**
 
-    To deploy the Company Portal app using Intune, you can download the [Microsoft Intune Company Portal App for Windows Phone 8.1](http://go.microsoft.com/fwlink/?LinkId=615799) from the Download Center and run the self-extracting (.exe) file. This file contains two files:
+    To deploy the Company Portal app using Intune, you can download the [Microsoft Intune Company Portal App for Windows Phone 8.1](https://go.microsoft.com/fwlink/?LinkId=615799) from the Download Center and run the self-extracting (.exe) file. This file contains two files:
 
     -   CompanyPortal.appx– The Company Portal installation app for Windows Phone 8.1
 
     -   WinPhoneCompanyPortal.ps1 – A PowerShell script you can use to sign the Company Portal app file so it can be deployed to Windows Phone 8.1 devices
 
-    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Microsoft Store for Business](http://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Microsoft Store for Business](windows-store-for-business.md).
+    Alternatively, you can download the Windows Phone 8.1 Company Portal (offline licensed package) or the Windows 10 Company Portal (offline licensed package) from the [Microsoft Store for Business](https://businessstore.microsoft.com/). The Company Portal app will need to be acquired with an offline license and the appropriate package downloaded for offline use. Windows 8 and Windows Phone 8 platform listings in the selection refer to their 8.1 counterparts. For details about how to do this with Intune, see [Manage apps you purchased from the Microsoft Store for Business](windows-store-for-business.md).
 
 2.  **Download the Windows Phone SDK**
-    Download the Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) and install the SDK to your computer. This SDK is needed to generate an application enrollment token.
+    Download the Windows Phone SDK 8.0](https://go.microsoft.com/fwlink/?LinkId=615570) and install the SDK to your computer. This SDK is needed to generate an application enrollment token.
 
 3.  **Generate an AETX file**
     Generate an application enrollment token (.aetx) file from the Symantec PFX file using AETGenerator.exe, part of Windows Phone SDK 8.0. For instructions on how to create an AETX file, see [How to generate an application enrollment token for Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx)
 
 4.  **Download the Windows SDK for Windows 8.1**
-    Download and install the [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) (http://go.microsoft.com/fwlink/?LinkId=613525). Note that the PowerShell script included with the Company Portal app uses the default install location, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. If you install elsewhere, you must include the location in a cmdlet parameter.
+    Download and install the [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=613525) (https://go.microsoft.com/fwlink/?LinkId=613525). Note that the PowerShell script included with the Company Portal app uses the default install location, `${env:ProgramFiles(x86)}\Windows Kits\8.1`. If you install elsewhere, you must include the location in a cmdlet parameter.
 
 5.  **Code-sign the app using PowerShell**
     As an administrator, open **Windows PowerShell** on the host computer installed with the Windows SDK, the Symantec Enterprise Mobile Code Signing Certificate, navigate to the Sign-WinPhoneCompanyPortal.ps1 file and run the script.
 
     **Example 1**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -AetxPath 'C:\signing\cert.aetx'
     ```
     This example signs the CompanyPortal.appx at C:\temp\ and produces the CompanyPortalEnterpriseSigned.appx. It would use PFX password 1234 and read the publisher ID from the PFX file. It reads the enterprise ID from the cert.aetx file as well.
 
     **Example 2**
 
-    ```
+    ```PowerShell
     .\Sign-WinPhoneCompanyPortal.ps1 -InputAppx 'C:\temp\CompanyPortal.appx' -OutputAppx 'C:\temp\CompanyPortalEnterpriseSigned.appx' -PfxFilePath 'C:\signing\cert.pfx' -PfxPassword '1234' -PublisherId 'OID.0.9.2342.19200300.100.1.1=1000000001, CN="Test, Inc.", OU=Test 1' -EnterpriseId 1000000001
     ```
     This example signs the CompanyPortal.appx at C:\temp\ and produces the CompanyPortalEnterpriseSigned.appx. It would use PFX password 1234 and use the publisher ID specified.
@@ -138,7 +138,7 @@ The Symantec certificate used to deploy Windows and Windows Phone mobile apps mu
 
 1.  Look for a renewal email sent from Symantec approximately 14 days prior to certificate expiration. This email contains directions from Symantec about renewing your enterprise certificate.
 
-    For additional information about Symantec certificates, visit [www.symantec.com](http://www.symantec.com) or call 1-877-438-8776 or 1-650-426-3400.
+    For additional information about Symantec certificates, visit [www.symantec.com](https://www.symantec.com) or call 1-877-438-8776 or 1-650-426-3400.
 
 2.  Go to the website (example: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)) and login with the Symantec Publisher ID and email addressed associated with the certificate. Remember to use the same machine for starting the renewal that you’ll use to download the certificate.
 
@@ -165,7 +165,7 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
 1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
-![Image of Windows 10 all devices and Architecture X86 Package details for Download](./media/Win10CP-all-devices.png)
+![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
 4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
 
 ![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
@@ -174,7 +174,7 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
    ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
    2. Place the nine dependencies packages in the Dependencies folder.  
    If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
-   ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and deploy this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
+   ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
 6. Return to Intune, then upload the Company Portal app as a new app. Deploy it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  

@@ -385,7 +385,7 @@ To validate that the service is running, open a browser, and enter the following
         - **Serial number**
         - **Custom**: When you select this option, a **Custom** text box is also shown. Use this field to enter a custom subject name format, including variables. Custom format supports two variables: **Common Name (CN)** and **Email (E)**. **Common Name (CN)** can be set to any of the following variables:
 
-            - **CN={{UserName}}**: The user principle name of the user, such as janedoe@contoso.com
+            - **CN={{UserName}}**: The user principal name of the user, such as janedoe@contoso.com
             - **CN={{AAD_Device_ID}}**: An ID assigned when you register a device in Azure Active Directory (AD). This ID is typically used to authenticate with Azure AD.
             - **CN={{SERIALNUMBER}}**: The unique serial number (SN) typically used by the manufacturer to identify a device
             - **CN={{IMEINumber}}**: The International Mobile Equipment Identity (IMEI) unique number used to identify a mobile phone
@@ -489,7 +489,7 @@ To validate that the service is running, open a browser, and enter the following
    - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
    - **Enrollment Settings**
      - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
-     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issues certificates via SCEP.
+     - **SCEP Server URLs**: Enter one or more URLs for the NDES Servers that issue certificates via SCEP. For example, enter something similar to `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Select **OK**, and **Create** your profile.
 
 The profile is created and appears on the profiles list pane.

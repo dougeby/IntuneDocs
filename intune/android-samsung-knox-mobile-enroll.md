@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment
+title: Automatically enroll Android devices using Samsung's Knox Mobile Enrollment
 titlesuffix: Microsoft Intune
 description: Learn how to enroll Android devices using Samsung KME
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager:
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
 
 ---
 

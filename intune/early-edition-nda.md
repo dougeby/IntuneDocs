@@ -1,8 +1,9 @@
 ---
 # required metadata
 
-title: Early edition
-description:
+title: Early edition - Microsoft Intune
+titlesuffix: 
+description: Microsoft Intune early edition
 keywords:
 author: ErikjeMS  
 ms.author: erikje
@@ -23,7 +24,7 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: seodec18
 ---
 
 # The early edition for Microsoft Intune - December 2018
@@ -52,11 +53,11 @@ For Android devices in a non-enrolled App Protection Policy Without Enrollment (
 On Windows 10 and later devices, you'll be able to create a VPN configuration profile that includes a list of DNS servers to resolve domains, such as contoso.com. This will include new settings for name resolution (**Device configuration** > **Profiles** > **Create profile** > Choose **Windows 10 and later** for platform > Choose **VPN** for profile type > **DNS settings** >**Add**): 
 
 - **Automatically connect**: When **Enabled**, the device automatically connects to the VPN when a device contacts a domain you enter, such as contoso.com.
-- **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects or the VPN profile is removed. The rule stays until it's manually removed, which can be done using PowerShell.
+- **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects. The rule stays until the VPN profile is removed or until the rule is manually removed, which can be done using PowerShell.
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
-### Use S/MIME to encrypt and sign a user's multiple devices  <!-- 1333642 eeready -->
+### Use S/MIME to encrypt and sign multiple devices for a user <!-- 1333642 eeready -->
 S/MIME email encryption using a new imported certificate profile will be supported (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 
 - The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
@@ -74,18 +75,15 @@ A new page will be added to the Windows Company Portal App. The help and support
 When using trusted network detection, you'll be able to prevent VPN profiles from automatically creating a VPN connection when the user is already on a trusted network. You'll be able to add DNS suffixes to enable trusted network detection on devices running Windows 10 and later (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **VPN** for profile type).
 [Windows 10 VPN settings](vpn-settings-windows-10.md) lists the current VPN settings.
 
-### Support for Android corporate-owned, fully managed devices <!-- 574342 -->
-Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**.
-
 ### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
-The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
+The Intune App SDK for Android will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
 ### Enabled Shared PC settings in Intune profile <!-- 1907917 -->
 Currently, you can configure Shared PC settings on Windows 10 desktop devices using a custom OMA-URI setting. A new profile will be added to configure Shared PC settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 ### Intune policies update authentication method and Company Portal app installation  <!-- 1927359 -->
-Intune will no longer support the Company Portal app when it is installed from the App store, on certain devices. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
+On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, Intune will no longer support the Company Portal when it is manually installed by end users from the app store. This change is only relevant when you authenticate with Apple Setup Assistant during enrollment. This change also only affects iOS devices enrolled through:  
 * Apple configurator
 * Apple Business Manager
 * Apple School Manager
@@ -123,6 +121,12 @@ To choose which screens to skip, go to **Device enrollment** > **Apple enrollmen
 ### Some BitLocker settings support Windows 10 Pro edition<!-- 2727036 -->
 You'll be able to create a configuration profile that sets endpoint protection settings on Windows 10 devices, including BitLocker. This adds support for Windows 10 Professional edition for some BitLocker settings. 
 To see the current Windows 10 edition settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+
+### Intune device reporting fields <!-- 2748738 -->
+Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
+
+### Intune device reporting fields <!-- 2748738 -->
 Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
 ### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal <!-- 2809362 -->

@@ -49,6 +49,8 @@
   items:
   - name: Protect email on managed devices
     href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Protect email on unmanaged devices
+    href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
 - name: Concepts
@@ -65,6 +67,8 @@
     href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
+  - name: Compare MDM and MAM
+    href: byod-technology-decisions.md    
   - name: Manage operating system versions
     href: manage-os-versions.md
   - name: Manage Windows Holographic
@@ -227,6 +231,10 @@
   - name: Set device compliance
     href: device-compliance-get-started.md
     items:
+    - name: Create Android policy
+      href: compliance-policy-create-android.md
+    - name: Create Android Enterprise profile policy
+      href: compliance-policy-create-android-for-work.md
     - name: Create a policy to enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
@@ -902,7 +910,5 @@
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
       href: data-leak-prevention.md
-    - name: Compare MDM and MAM
-      href: byod-technology-decisions.md
   - name: Glossary
     href: intune-glossary.md

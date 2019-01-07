@@ -2,12 +2,12 @@
 # required metadata
 title: User Device Association - Intune Data Warehouse
 titlesuffix: Microsoft Intune 
-description: A list of changes in the Intune Data Warehouse API.
+description: The UserDeviceAssociation entity contains user device associations in your organization.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,11 +22,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic; seodec18
 ---
-# User Device Association
+# Reference for User Device Association entity
 
 The **UserDeviceAssociation** entity contains user device associations in your organization.
+
+## UserDeviceAssociation
 
 
 |        Name        |                                           Description                                            |        Example         |
@@ -37,3 +39,6 @@ The **UserDeviceAssociation** entity contains user device associations in your o
 |     IsDeleted      | Indicates that the user unenrolled that device, and that the association is not current anymore. |       True/False       |
 |  EndedDateTimeUTC  |              Date and time in UTC when IsDeleted changed to <strong>True</strong>.               | 06/23/2017 12:00:00 AM |
 
+## Next steps
+
+- Learn more about the [Intune Data Warehouse](reports-nav-create-intune-reports.md).
