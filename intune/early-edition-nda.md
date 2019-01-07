@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -58,10 +58,7 @@ Intune will support fully managed Android devices, a corporate-owned "device own
 ### Deployment of online licensed Microsoft Store for Business apps <!-- 16726660  -->
 You will be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
 
-### Retire noncompliant devices  <!-- 1827291   -->
-We will be adding a new compliance action to retire a noncompliant device. Retiring a noncompliant device removes all company data from it, and also removes the device from being managed by Intune. This action runs when the configured value in days is reached. The minimum value is 30 days. 
-
-## Configure profile to skip some screens during Setup Assistant <!-- 2276470  -->
+### Configure profile to skip some screens during Setup Assistant <!-- 2276470  -->
 When you create a macOS enrollment profile, you will be able to configure it to skip any of the following screens when a user goes through the Setup Assistant:
 - Android Migration
 - Display Tone
