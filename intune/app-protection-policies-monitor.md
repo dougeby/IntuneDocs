@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/07/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -49,20 +49,16 @@ There are three different places to monitor the compliance status:
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** pane, choose **Client apps**.
-4. In the **Client apps** workload, choose **Monitor** > **App protection status**, to see the summary view:
+4. In the **Client apps** workload, choose **App protection status** from the **Monitor** section, to see the summary view:
 
 ![Summary tile on the Intune mobile application management pane](./media/app-protection-user-status-summary.png)
 
--   **Users**: The total number of users in your company who are using an app which is associated with a policy in a work context.
+-   **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
+-   **Flagged users**: The number of users who are experiencing issues. Jailbroken devices are reported under **Flagged users**.
+-   **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
 
--   **MANAGED BY POLICY**: The number of users who have used an app who have a policy assigned to them in a work context.
-
--   **NO POLICY**: The number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
 	> [!NOTE]
 	> If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy assigned to them.
-
-- **Flagged users**: The number of users who are experiencing issues. Currently, only users with jailbroken devices are reported under **Flagged users**.
-
 
 ## Detailed view
 You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), and the **Flagged users** tile.
@@ -84,7 +80,7 @@ You can search for a single user and check the compliance status for that user. 
 
 To see the reporting for a user, follow these steps:
 
-1.  To select a user, choose the **Summary** tile.
+1.  To select a user, choose the **User status** summary tile.
 
 	![Screenshot highlighting the Summary tile on the Intune mobile application management, Settings blade](./media/MAM-reporting-6.png)
 
@@ -99,18 +95,24 @@ The detailed view shows the error message, the app that was accessed when the er
 
 ## Reporting view
 
-You can find the same reports from the Detailed view, and additional reports to help you with the MAM policy compliance status:
+You can find the same reports from the **App protection status** blade.
 
-![Screenshot highlighting 2 reports available in the Settings pane](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune provides additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields are available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
--   **App protection user report:** It outlines the same information you can find at the **User status** report under the Detailed view section above.
+Additional reports are available to help you with the MAM policy compliance status. To view these reports, select **Client apps** > **App protection status** > **Reports**. 
 
--   **App protection app report:** It provides two different app protection statuses that admins can select before generating the report. The statuses can be protected or unprotected.
+The **Reports** blade provides several reports based on user and app, including the following:
+
+
+-   **User report**: This report outlines the same information you can find at the **User status** report under the Detailed view section above.
+
+-   **App report**: This report provides two different app protection statuses that admins can select before generating the report. The statuses can be protected or unprotected.
 
     -   User status for managed MAM activity (Protected): This report outlines the activity of each managed MAM app, on a per user basis.
 
         -   It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
-<br></br>
+<br><br>
     -   User status for unmanaged MAM activity (Unprotected): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
 
         -   These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
@@ -124,7 +126,7 @@ You can find the same reports from the Detailed view, and additional reports to 
 Once the **App protection user report** data shows up, you can aggregate data by the following:
 
 - **Validation result:** The data shows up grouped by app protection status, which can be failure, warning or success.
-- **App name:** The data shows up grouped by apps (the actual app name) with failure, warning or success.
+- **App name:** The data shows up grouped by apps (the actual app name) with failure, warning, or success.
 
 ## Export app protection activities to CSV
 
