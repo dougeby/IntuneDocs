@@ -5,21 +5,11 @@
   items:
   - name: What is Intune?
     href: what-is-intune.md    
-  - name: What is Intune for Education?
-    href: introduction-intune-education.md
-  - name: Sign up for a free trial
-    href: free-trial-sign-up.md
   - name: What's new
     href: whats-new.md
     items:
     - name: What's new in the app UI
       href: whats-new-app-ui.md
-  - name: Service description
-    href: microsoft-intune-service-description.md
-  - name: Known issues
-    href: known-issues.md
-  - name: Get support
-    href: get-support.md
 - name: Quickstarts
   href: get-started-evaluation.md
   items:
@@ -56,7 +46,9 @@
 - name: Concepts
   items:
   - name: What is device management?
-    href: what-is-device-management.md  
+    href: what-is-device-management.md
+  - name: What is Intune for Education?
+    href: introduction-intune-education.md      
   - name: Navigating the Azure portal
     href: get-started-azure.md  
   - name: High-level architecture
@@ -82,56 +74,56 @@
     href: mam-faq.md
   - name: Policy & profile FAQ
     href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
-- name: Plan deployment
+- name: How-to guides
   items:
-  - name: Planning guide
-    href: planning-guide.md
+  - name: Plan deployment
     items:
-    - name: Determine goals and objectives
-      href: planning-guide-deployment-goals.md
-    - name: Identify scenarios
-      href: planning-guide-scenarios.md
-    - name: Determine requirements
-      href: planning-guide-requirements.md
-    - name: Develop a rollout plan
-      href: planning-guide-rollout-plan.md
-    - name: Develop a communication plan
-      href: planning-guide-communication-plan.md
-    - name: Develop a support plan
-      href: planning-guide-support-plan.md
-    - name: Design
-      href: planning-guide-design.md
-    - name: Implement
-      href: planning-guide-onboarding.md
-    - name: Test and validate
-      href: planning-guide-test-validation.md
-    - name: Additional resources
-      href: planning-guide-resources.md
-  - name: Migration guide
-    href: migration-guide.md
-    items:
-    - name: Prepare Intune
-      href: migration-guide-prepare.md
+    - name: Planning guide
+      href: planning-guide.md
       items:
-      - name: Basic setup
-        href: migration-guide-setup.md
-      - name: Configure device and app management policies
-        href: migration-guide-configure-policies.md
-      - name: Configure app protection policies
-        href: migration-guide-app-protection-policies.md
-      - name: Migration considerations
-        href: migration-guide-considerations.md
-    - name: Migration campaign
-      href: migration-guide-campaign.md
+      - name: Determine goals and objectives
+        href: planning-guide-deployment-goals.md
+      - name: Identify scenarios
+        href: planning-guide-scenarios.md
+      - name: Determine requirements
+        href: planning-guide-requirements.md
+      - name: Develop a rollout plan
+        href: planning-guide-rollout-plan.md
+      - name: Develop a communication plan
+        href: planning-guide-communication-plan.md
+      - name: Develop a support plan
+        href: planning-guide-support-plan.md
+      - name: Design
+        href: planning-guide-design.md
+      - name: Implement
+        href: planning-guide-onboarding.md
+      - name: Test and validate
+        href: planning-guide-test-validation.md
+      - name: Additional resources
+        href: planning-guide-resources.md
+    - name: Migration guide
+      href: migration-guide.md
       items:
-      - name: Plan communications
-        href: migration-guide-communication-plan.md
-      - name: Drive adoption
-        href: migration-guide-drive-adoption.md
-      - name: Typical migration cycle
-        href: migration-guide-cycle.md
-- name: How-To Guides
-  items:
+      - name: Prepare Intune
+        href: migration-guide-prepare.md
+        items:
+        - name: Basic setup
+          href: migration-guide-setup.md
+        - name: Configure device and app management policies
+          href: migration-guide-configure-policies.md
+        - name: Configure app protection policies
+          href: migration-guide-app-protection-policies.md
+        - name: Migration considerations
+          href: migration-guide-considerations.md
+      - name: Migration campaign
+        href: migration-guide-campaign.md
+        items:
+        - name: Plan communications
+          href: migration-guide-communication-plan.md
+        - name: Drive adoption
+          href: migration-guide-drive-adoption.md
+        - name: Typical migration cycle
+          href: migration-guide-cycle.md
   - name: Set up Intune
     href: setup-steps.md
     items:
@@ -248,7 +240,7 @@
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
-  - name: Use features and settings
+  - name: Configure devices
     href: device-profiles.md
     items:
     - name: Device profiles
@@ -333,7 +325,7 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
-    - name: Allow or block access
+    - name: Conditional access
       href: conditional-access.md
       items:
       - name: Common ways to use conditional access
@@ -567,79 +559,79 @@
       href: data-apple-sends-to-intune.md
     - name: Data Google sends to Intune
       href: data-google-sends-to-intune.md
-- name: Developer guidance
-  items:
-  - name: API to add third-party certificate authority
-    href: scep-libraries-apis.md
-  - name: Protect apps with Intune App SDK
-    href: app-sdk.md
+  - name: Developer guidance
     items:
-    - name: Get started with Intune App SDK
-      href: app-sdk-get-started.md
-    - name: Prepare LOB apps for app protection
-      href: apps-prepare-mobile-application-management.md
-    - name: App Wrapping Tool for iOS
-      href: app-wrapper-prepare-ios.md
-    - name: Intune App SDK for iOS
-      href: app-sdk-ios.md
-    - name: App Wrapping Tool for Android
-      href: app-wrapper-prepare-android.md
-    - name: Intune App SDK for Android
-      href: app-sdk-android.md
-    - name: Intune App SDK Xamarin Bindings
-      href: app-sdk-xamarin.md
-  - name: Use the Intune Data Warehouse
-    href: reports-nav-create-intune-reports.md
-    items:
-    - name: Change log for the Data Warehouse
-      href: reports-changelog.md
-    - name: Connect to the Data Warehouse with Power BI
-      href: reports-proc-get-a-link-powerbi.md
-    - name: Create a report from the OData feed with Power BI
-      href: reports-proc-create-with-odata.md
-  - name: Report using Intune Data Warehouse API
-    href: reports-nav-intune-data-warehouse.md
-    items:
-    - name: Get data from the Data Warehouse API with a REST client
-      href: reports-proc-data-rest.md
-    - name: Data Warehouse API endpoint
-      href: reports-api-url.md
-    - name: Data Warehouse application-only authentication
-      href: data-warehouse-app-only-auth.md      
-    - name: Data Warehouse data model
-      href: reports-ref-data-model.md
+    - name: API to add third-party certificate authority
+      href: scep-libraries-apis.md
+    - name: Protect apps with Intune App SDK
+      href: app-sdk.md
       items:
-      - name: Data Warehouse collections
-        href: intune-data-warehouse-collections.md 
-      - name: Data Warehouse collections (beta)
-        items:  
-        - name: User lifetime representation in the Intune Data Warehouse
-          href: reports-ref-user-timeline.md
-        - name: Reference for application entities
-          href: reports-ref-application.md
-        - name: Reference for current user entity
-          href: reports-ref-current-user.md
-        - name: Reference for date entity
-          href: reports-ref-date.md
-        - name: Reference for devices entities
-          href: reports-ref-devices.md
-        - name: Reference for Intune management extension entity
-          href: reports-ref-intunemanagementextension.md
-        - name: Reference for mobile app management (MAM) entities
-          href: reports-ref-mobile-app-management.md
-        - name: Reference for policy entities
-          href: reports-ref-policy.md
-        - name: Reference for user device association entity
-          href: reports-ref-user-device.md
-        - name: Reference for user entity
-          href: reports-ref-user.md
-    - name: Move your Intune Data Warehouse account data
-      href: data-warehouse-account-move.md
-  - name: Use Azure AD to access Intune APIs in Microsoft Graph
-    href: intune-graph-apis.md
-    items:
-    - name: Intune API reference
-      href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+      - name: Get started with Intune App SDK
+        href: app-sdk-get-started.md
+      - name: Prepare LOB apps for app protection
+        href: apps-prepare-mobile-application-management.md
+      - name: App Wrapping Tool for iOS
+        href: app-wrapper-prepare-ios.md
+      - name: Intune App SDK for iOS
+        href: app-sdk-ios.md
+      - name: App Wrapping Tool for Android
+        href: app-wrapper-prepare-android.md
+      - name: Intune App SDK for Android
+        href: app-sdk-android.md
+      - name: Intune App SDK Xamarin Bindings
+        href: app-sdk-xamarin.md
+    - name: Use the Intune Data Warehouse
+      href: reports-nav-create-intune-reports.md
+      items:
+      - name: Change log for the Data Warehouse
+        href: reports-changelog.md
+      - name: Connect to the Data Warehouse with Power BI
+        href: reports-proc-get-a-link-powerbi.md
+      - name: Create a report from the OData feed with Power BI
+        href: reports-proc-create-with-odata.md
+    - name: Report using Intune Data Warehouse API
+      href: reports-nav-intune-data-warehouse.md
+      items:
+      - name: Get data from the Data Warehouse API with a REST client
+        href: reports-proc-data-rest.md
+      - name: Data Warehouse API endpoint
+        href: reports-api-url.md
+      - name: Data Warehouse application-only authentication
+        href: data-warehouse-app-only-auth.md      
+      - name: Data Warehouse data model
+        href: reports-ref-data-model.md
+        items:
+        - name: Data Warehouse collections
+          href: intune-data-warehouse-collections.md 
+        - name: Data Warehouse collections (beta)
+          items:  
+          - name: User lifetime representation in the Intune Data Warehouse
+            href: reports-ref-user-timeline.md
+          - name: Reference for application entities
+            href: reports-ref-application.md
+          - name: Reference for current user entity
+            href: reports-ref-current-user.md
+          - name: Reference for date entity
+            href: reports-ref-date.md
+          - name: Reference for devices entities
+            href: reports-ref-devices.md
+          - name: Reference for Intune management extension entity
+            href: reports-ref-intunemanagementextension.md
+          - name: Reference for mobile app management (MAM) entities
+            href: reports-ref-mobile-app-management.md
+          - name: Reference for policy entities
+            href: reports-ref-policy.md
+          - name: Reference for user device association entity
+            href: reports-ref-user-device.md
+          - name: Reference for user entity
+            href: reports-ref-user.md
+      - name: Move your Intune Data Warehouse account data
+        href: data-warehouse-account-move.md
+    - name: Use Azure AD to access Intune APIs in Microsoft Graph
+      href: intune-graph-apis.md
+      items:
+      - name: Intune API reference
+        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Help and support
   items:
   - name: Troubleshoot
@@ -666,189 +658,197 @@
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
-- name: Settings lists
+  - name: Known issues
+    href: known-issues.md
+  - name: Get support
+    href: get-support.md      
+- name: Reference
   items:
-  - name: Android
+  - name: Settings lists
     items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-android.md
-    - name: Configuration profile settings
+    - name: Android
       items:
-      - name: Device restrictions
-        href: device-restrictions-android.md
-      - name: Email
-        href: email-settings-android.md#android-samsung-knox
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: PKCS imported certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-      - name: PKCS certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
-      - name: VPN
-        href: vpn-settings-android.md#android-vpn-settings
-      - name: Wi-Fi
-        href: wi-fi-settings-android.md
-      - name: Custom
-        href: custom-settings-android.md
+      - name: Compliance policy settings
+        href: compliance-policy-create-android.md
+      - name: Configuration profile settings
         items:
-        - name: Allow/block apps for Samsung Knox Standard
-          href: samsung-knox-apps-allow-block.md
-  - name: Android Enterprise
-    items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-android-for-work.md
-    - name: Configuration profile settings
+        - name: Device restrictions
+          href: device-restrictions-android.md
+        - name: Email
+          href: email-settings-android.md#android-samsung-knox
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS imported certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+        - name: PKCS certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-android.md#android-vpn-settings
+        - name: Wi-Fi
+          href: wi-fi-settings-android.md
+        - name: Custom
+          href: custom-settings-android.md
+          items:
+          - name: Allow/block apps for Samsung Knox Standard
+            href: samsung-knox-apps-allow-block.md
+    - name: Android Enterprise
       items:
-      - name: Device restrictions
-        href: device-restrictions-android-for-work.md
-      - name: Email
-        href: email-settings-android.md#android-enterprise
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: PKCS imported certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-      - name: PKCS certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
-      - name: VPN
-        href: vpn-settings-android.md#android-for-work-vpn-settings
-      - name: Wi-Fi
-        href: wi-fi-settings-android-enterprise.md
-      - name: Custom
-        href: custom-settings-android-for-work.md
-  - name: iOS
-    items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-ios.md
-    - name: Configuration profile settings
+      - name: Compliance policy settings
+        href: compliance-policy-create-android-for-work.md
+      - name: Configuration profile settings
+        items:
+        - name: Device restrictions
+          href: device-restrictions-android-for-work.md
+        - name: Email
+          href: email-settings-android.md#android-enterprise
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS imported certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
+        - name: PKCS certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-android.md#android-for-work-vpn-settings
+        - name: Wi-Fi
+          href: wi-fi-settings-android-enterprise.md
+        - name: Custom
+          href: custom-settings-android-for-work.md
+    - name: iOS
       items:
-      - name: Device features
-        href: ios-device-features-settings.md
-      - name: Device restrictions
-        href: device-restrictions-ios.md
-      - name: Email
-        href: email-settings-ios.md
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: PKCS certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
-      - name: VPN
-        href: vpn-settings-ios.md
-      - name: Wi-Fi
-        href: wi-fi-settings-ios.md
-      - name: Custom
-        href: custom-settings-ios.md
-  - name: macOS
-    items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-mac-os.md
-    - name: Configuration profile settings
+      - name: Compliance policy settings
+        href: compliance-policy-create-ios.md
+      - name: Configuration profile settings
+        items:
+        - name: Device features
+          href: ios-device-features-settings.md
+        - name: Device restrictions
+          href: device-restrictions-ios.md
+        - name: Email
+          href: email-settings-ios.md
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-ios.md
+        - name: Wi-Fi
+          href: wi-fi-settings-ios.md
+        - name: Custom
+          href: custom-settings-ios.md
+    - name: macOS
       items:
-      - name: Device features
-        href: macos-device-features-settings.md
-      - name: Device restrictions
-        href: device-restrictions-macos.md
-      - name: Endpoint protection
-        href: endpoint-protection-macos.md
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: VPN
-        href: vpn-settings-macos.md
-      - name: Wi-Fi
-        href: wi-fi-settings-macos.md
-      - name: Custom
-        href: custom-settings-macos.md
-  - name: Windows 10 and later
-    items:
-    - name: Compliance policy settings
-      href: 
-    - name: Configuration profile settings
+      - name: Compliance policy settings
+        href: compliance-policy-create-mac-os.md
+      - name: Configuration profile settings
+        items:
+        - name: Device features
+          href: macos-device-features-settings.md
+        - name: Device restrictions
+          href: device-restrictions-macos.md
+        - name: Endpoint protection
+          href: endpoint-protection-macos.md
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-macos.md
+        - name: Wi-Fi
+          href: wi-fi-settings-macos.md
+        - name: Custom
+          href: custom-settings-macos.md
+    - name: Windows 10 and later
       items:
-      - name: Administrative templates
+      - name: Compliance policy settings
         href: 
-      - name: Device restrictions
-        href: device-restrictions-windows-10.md
-      - name: Device restrictions (Windows 10 Team)
-        href: device-restrictions-windows-10-teams.md
-      - name: Domain join
-        href: 
-      - name: NEED-Edition upgrade and mode switch
-        href: edition-upgrade-configure-windows-10.md
-      - name: Email
-        href: email-settings-windows-10.md
-      - name: Endpoint protection
-        href: endpoint-protection-windows-10.md
-      - name: NEED-Identity protection
-        href: identity-protection-configure.md
-      - name: Kiosk
-        href: kiosk-settings.md
-      - name: Network boundary
-        href: 
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: PKCS certificate
-        href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
-      - name: VPN
-        href: vpn-settings-windows-10.md
-      - name: NEED-Windows Defender ATP (Windows 10 Desktop)
-        href: advanced-threat-protection.md
-      - name: Wi-Fi
-        href: wi-fi-settings-windows.md
-      - name: NEED-Education profile
-        href: education-settings-configure.md
-      - name: Custom
-        href: custom-settings-windows-10.md
-  - name: Windows Holographic for Business
-    items:
-    - name: Device restrictions
-      href: device-restrictions-windows-holographic.md
-    - name: Custom
-      href: custom-settings-windows-holographic.md
-  - name: Windows 8.1
-    items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
-    - name: Configuration profile settings
+      - name: Configuration profile settings
+        items:
+        - name: Administrative templates
+          href: 
+        - name: Device restrictions
+          href: device-restrictions-windows-10.md
+        - name: Device restrictions (Windows 10 Team)
+          href: device-restrictions-windows-10-teams.md
+        - name: Domain join
+          href: 
+        - name: NEED-Edition upgrade and mode switch
+          href: edition-upgrade-configure-windows-10.md
+        - name: Email
+          href: email-settings-windows-10.md
+        - name: Endpoint protection
+          href: endpoint-protection-windows-10.md
+        - name: NEED-Identity protection
+          href: identity-protection-configure.md
+        - name: Kiosk
+          href: kiosk-settings.md
+        - name: Network boundary
+          href: 
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: PKCS certificate
+          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-10.md
+        - name: NEED-Windows Defender ATP (Windows 10 Desktop)
+          href: advanced-threat-protection.md
+        - name: Wi-Fi
+          href: wi-fi-settings-windows.md
+        - name: NEED-Education profile
+          href: education-settings-configure.md
+        - name: Custom
+          href: custom-settings-windows-10.md
+    - name: Windows Holographic for Business
       items:
       - name: Device restrictions
-        href: device-restrictions-windows-8-1.md
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: VPN
-        href: vpn-settings-windows-8-1.md
-      - name: Wi-Fi import
-        href: wi-fi-settings-import-windows-8-1.md
-  - name: Windows Phone 8.1
-    items:
-    - name: Compliance policy settings
-      href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
-    - name: Configuration profile settings
-      items:
-      - name: Device restrictions
-        href: device-restrictions-windows-phone-8-1.md
-      - name: Email
-        href: email-settings-windows-phone-8-1.md
-      - name: Trusted certificate
-        href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-      - name: SCEP certificate
-        href: certificates-scep-configure.md#create-a-scep-certificate-profile
-      - name: VPN
-        href: vpn-settings-windows-phone-8-1.md
+        href: device-restrictions-windows-holographic.md
       - name: Custom
-        href: custom-settings-windows-phone-8-1.md
+        href: custom-settings-windows-holographic.md
+    - name: Windows 8.1
+      items:
+      - name: Compliance policy settings
+        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+      - name: Configuration profile settings
+        items:
+        - name: Device restrictions
+          href: device-restrictions-windows-8-1.md
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-8-1.md
+        - name: Wi-Fi import
+          href: wi-fi-settings-import-windows-8-1.md
+    - name: Windows Phone 8.1
+      items:
+      - name: Compliance policy settings
+        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+      - name: Configuration profile settings
+        items:
+        - name: Device restrictions
+          href: device-restrictions-windows-phone-8-1.md
+        - name: Email
+          href: email-settings-windows-phone-8-1.md
+        - name: Trusted certificate
+          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
+        - name: SCEP certificate
+          href: certificates-scep-configure.md#create-a-scep-certificate-profile
+        - name: VPN
+          href: vpn-settings-windows-phone-8-1.md
+        - name: Custom
+          href: custom-settings-windows-phone-8-1.md
 - name: Resources
   items:
+  - name: Service description
+    href: microsoft-intune-service-description.md  
   - name: Microsoft Intune documentation guide
     href: intune-documentation.md  
   - name: Archive
