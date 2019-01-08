@@ -92,7 +92,6 @@ There are two categories of policy settings: data protection settings and access
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
 
-<<<<<<< HEAD
 ##  Access requirements
 | Setting | How to use | Default value |
 |------|------|------|
@@ -108,6 +107,7 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 |<ul><ui> **App PIN when device PIN is set** | If set to **Disable**, an app PIN isn't needed on an MDM enrolled device that has a device PIN set.   | **Enable** |
 | **Work or school account credentials for access** | Choose **Require** to require the user to sign in with their work or school account instead of entering a PIN for app access. When set to **Require**, and PIN or biometric prompts are turned on, both corporate credentials and either the PIN or biometric prompts are shown. | **Not required** |
 | **Recheck the access requirements after (minutes of inactivity)** | Configure the number of minutes of inactivity that must pass before the app requires the user to again specify the access requirements.  <br><br>**Note:** *On Android, the PIN is shared with all Intune-managed apps. The PIN timer is reset once the app leaves the foreground on the device. The user won't have to enter a PIN on any Intune-managed app that shares its PIN for the duration of the timeout defined in this setting.*| **30** |
+<<<<<<< HEAD
 =======
 ##  Access settings
 
@@ -119,6 +119,8 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 | **Block screen capture and Android Assistant** | Select **Yes** to block screen capture and the **Android Assistant** capabilities of the device when using this app. Choosing **Yes** will also blur the App-switcher preview image when using this app with a work or school account. <br><br>Default value = **No** |
 
 >>>>>>> 43d8ce913a55bb1c38277e19cff82e47971c1940
+=======
+>>>>>>> b3162d52a3a2f4ed980ded7f037b0bbc4f7b2008
 
 > [!NOTE]  
 > To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](mam-faq.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
