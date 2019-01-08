@@ -206,8 +206,6 @@ Intune will detect and show details if an Apple volume-purchased program (VPP) t
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
 
 
-### Change in the update process for on-premises connectors <!-- 2277554 -->
-Based on feedback from customers, the way updates are made to on-premises connectors will be changed. After you initially install an on-premises connector, updates will happen automatically. This change will begin with the new PFX Certificate Connector for Microsoft Intune and will subsequently roll out to other types of on-premises connectors. 
 
 <!-- 1807 start -->
 
