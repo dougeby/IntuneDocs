@@ -67,7 +67,7 @@ First, you'll need to install the Company Portal and, if required, get your devi
  Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Android, you'll have access to Android apps, but not iOS apps.   
 
  ## Request an app for work or school   
- If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app, in the **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app's **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## What can my company support manage in an app?  
 The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
