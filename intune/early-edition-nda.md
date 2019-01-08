@@ -52,8 +52,8 @@ You will be able to delete managed Google Play apps from Microsoft Intune. To de
 ### Managed Google Play app type <!-- 1352580 -->
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you will be able to now browse, search, approve, sync and assign approved managed Google Play apps within Intune. You will no longer need to browse to the managed Google Play console separately, and you will no longer have to reauthenticate. In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
 
-### Support for Android corporate-owned, fully managed devices <!-- 1574342  -->
-Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, you will go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**.
+### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
+Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, you will go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**. Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
 ### Deployment of online licensed Microsoft Store for Business apps <!-- 16726660  -->
 You will be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
@@ -117,8 +117,9 @@ When using trusted network detection, you'll be able to prevent VPN profiles fro
 ### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
 The Intune App SDK for Android will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
-### Enabled Shared PC settings in Intune profile <!-- 1907917 -->
+### Enabled Shared PC settings in Intune profile <!-- 1907917, 1063203 -->
 Currently, you can configure Shared PC settings on Windows 10 desktop devices using a custom OMA-URI setting. A new profile will be added to configure Shared PC settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
+
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 ### Intune policies update authentication method and Company Portal app installation  <!-- 1927359 -->
