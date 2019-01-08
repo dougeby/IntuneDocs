@@ -50,7 +50,7 @@ For the step-by-step procedure, see [Send logs to your company support from the 
 ## View helpdesk contact details  
 Use your organization's helpdesk details, such as phone number, emails, and website to quickly troubleshoot work or school access.  
 
-## Find answers to your frequently asked questions (FAQs)  
+## Find answers to frequently asked questions  
 We've put together a list of FAQs to help answer or troubleshoot your enrollment and access concerns. Select any topic to view its help article on Microsoft.docs.com.  
 
 ## Report app problems to Microsoft  
