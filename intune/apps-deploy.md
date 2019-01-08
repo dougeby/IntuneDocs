@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,18 +38,17 @@ After you've [added an app](apps-add.md) to Microsoft Intune, you can assign the
 
 The following table lists the various options for assigning apps to users and devices:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Devices enrolled with Intune**|**Devices not enrolled with Intune**|
-|Assign to users|Yes|Yes|
-|Assign to devices|Yes|No|
-|Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies)|Yes|Yes|
-|Assign apps as Available|Yes|Yes|
-|Assign apps as Required|Yes|No|
-|Uninstall apps|Yes|No|
-|Receive app updates from Intune|Yes|No|
-|End users install available apps from the Company Portal app|Yes|No|
-|End users install available apps from the web-based Company Portal|Yes|Yes|
+|   | Devices enrolled with Intune | Devices not enrolled with Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Assign to users | Yes | Yes |
+| Assign to devices | Yes | No |
+| Assign wrapped apps or apps that incorporate the Intune SDK (for app protection policies) | Yes | Yes |
+| Assign apps as Available | Yes | Yes |
+| Assign apps as Required | Yes | No |
+| Uninstall apps | Yes | No |
+| Receive app updates from Intune | Yes | No |
+| End users install available apps from the Company Portal app | Yes | No |
+| End users install available apps from the web-based Company Portal | Yes | Yes |
 
 > [!NOTE]
 > Currently, you can assign iOS and Android apps (line-of-business and store-purchased apps) to devices that aren't enrolled with Intune.
@@ -90,9 +89,8 @@ The app is now assigned to the groups that you selected. For more information ab
 
 Sometimes, the same app is assigned to multiple groups but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
 
-||||
-|-|-|-|
-|**Group 1 intent**|**Group 2 intent**|**Resulting intent**|
+| Group 1 intent | Group 2 intent | Resulting intent |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |User Required|User Available|Required and Available|
 |User Required|User Not Available|Required|
 |User Required|User Uninstall|Required|

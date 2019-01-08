@@ -86,11 +86,11 @@ To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **Summary** tile.
 
-	![Screenshot highlighting the Summary tile on the Intune mobile application management, Settings blade](./media/MAM-reporting-6.png)
+	![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** pane that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Screenshot highlighting the Select user option on the App reporting pane](./media/MAM-reporting-2.png)
+    ![Screenshot of the Select user option on the App reporting pane](./media/MAM-reporting-2.png)
 
 3. Select the user from the list. You can see the details of the compliance status for that user.
 
@@ -117,7 +117,7 @@ You can find the same reports from the Detailed view, and additional reports to 
 
         -   All apps are checked in, but aren't getting any MAM policies.
 
-![Screenshot showing a user's App reporting blade with a table of details for 3 registered apps](./media/MAM-reporting-4.png)
+![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
 
 ## Table grouping
 
@@ -134,7 +134,7 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
-	![Screenshot highlighting the App protection download link on the Intune mobile application management pane](./media/app-protection-report-csv-2.png)
+	![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
 
 2. Choose Yes to save your report, then choose Save As and select the folder you want to save the report in.
 

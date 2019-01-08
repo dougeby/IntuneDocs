@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,13 +72,13 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
 4.	In the **Add** app pane, select **Windows app (Win32) - preview** from the provided drop-down list.
 
-    ![Screenshot Add app - Add type dropdown box](./media/apps-win32-app-01.png)
+    ![Screenshot of the Add app blade - Add type dropdown box](./media/apps-win32-app-01.png)
 
 ### Step 2: Upload the app package file
 
 1.	In the **Add app** pane, select **App package file** to select a file. The App package file pane will be displayed.
 
-    ![Screenshot App package file](./media/apps-win32-app-02.png)
+    ![Screenshot of the App package file blade](./media/apps-win32-app-02.png)
 
 2.	In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension *.intunewin*.
 3.	When you're finished, select **OK**.
@@ -232,16 +232,16 @@ Windows 10 RS3 and above clients will download Intune Win32 app content using a 
 
 The end user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
 
-![Screenshot example of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
+![Screenshot of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
 
 The following image notifies the end user that app changes are being made to the device.
 
-![Screenshot example of notifying the end user that app changes are being made to the device](./media/apps-win32-app-09.png)    
+![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Screenshot the Agent logs](./media/apps-win32-app-10.png)    
+![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
 
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.

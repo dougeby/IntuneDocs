@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Android app protection policy settings
+title: Android app protection policy settings | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: This topic describes the app protection policy settings for Android devices.
 keywords:
@@ -92,6 +92,7 @@ There are two categories of policy settings: data protection settings and access
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
 
+<<<<<<< HEAD
 ##  Access requirements
 | Setting | How to use | Default value |
 |------|------|------|
@@ -107,6 +108,17 @@ For more information, see [Data transfer policy exceptions for apps](app-protect
 |<ul><ui> **App PIN when device PIN is set** | If set to **Disable**, an app PIN isn't needed on an MDM enrolled device that has a device PIN set.   | **Enable** |
 | **Work or school account credentials for access** | Choose **Require** to require the user to sign in with their work or school account instead of entering a PIN for app access. When set to **Require**, and PIN or biometric prompts are turned on, both corporate credentials and either the PIN or biometric prompts are shown. | **Not required** |
 | **Recheck the access requirements after (minutes of inactivity)** | Configure the number of minutes of inactivity that must pass before the app requires the user to again specify the access requirements.  <br><br>**Note:** *On Android, the PIN is shared with all Intune-managed apps. The PIN timer is reset once the app leaves the foreground on the device. The user won't have to enter a PIN on any Intune-managed app that shares its PIN for the duration of the timeout defined in this setting.*| **30** |
+=======
+##  Access settings
+
+| Setting | How to use |  
+|------|------| 
+| **Require PIN for access** | Select **Yes** to require a PIN to use this app. The user is prompted to set up this PIN the first time they run the app in a work or school context. <br><br> Default value = **Yes**.<br><br> Configure the following settings for PIN strength: <br> <ul><li>**Select Type:** Set a requirement for either numeric or passcode type PINs before accessing an app that has app protection policies applied. Numeric requirements involve only numbers, while a passcode can be defined with at least 1 alphabetical letter **or** at least 1 special character. <br><br> Default value = **Numeric**<br><br> **Note:** Special characters allowed include the special characters and symbols on the Android English language keyboard.</li></ul>  <ul><li>**Number of attempts before PIN reset:** Specify the number of tries the user has to successfully enter their PIN before they must reset it. <br><br> Default value = **5** </li> <br> <li> **Allow simple PIN:** Select **Yes** to allow users to use simple PIN sequences like *1234*, *1111*, *abcd* or *aaaa*. Select **No** to prevent them from using simple sequences. <br><br>Default value = **Yes** <br><br>**Note:** If Passcode type PIN is configured, and Allow simple PIN is set to Yes, the user needs at least one letter **or** at least one special character in their PIN. If Passcode type PIN is configured, and Allow simple PIN is set to No, the user needs at least one number **and** one letter **and** at least one special character in their PIN.* </li> <br> <li>  **PIN length:** Specify the minimum number of digits in a PIN sequence. <br><br>Default value = **4** </li> <br> <li> **Allow fingerprint instead of PIN (Android 6.0+):** Select **Yes** to allow the user to use [fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) instead of a PIN for app access. <br><br>Default value = **Yes** <br><br>**Note:** This feature supports generic controls for biometric on Android devices. OEM-specific biometric settings, like* Samsung Pass, *are not supported.* <br><br>On Android, you can let the user prove their identity by using [Android fingerprint authentication](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) instead of a PIN. When the user tries to use this app with their work or school account, they are prompted to provide their fingerprint identity instead of entering a PIN. <br><br> Android work profiles require registering a separate fingerprint for the **Allow fingerprint instead of PIN** policy to be enforced. This policy takes effect only for policy-managed apps installed in the Android work profile. The separate fingerprint must be registered with the device after the Android work profile is created by enrolling in the Company Portal. For more information about work profile fingerprints using Android work profiles, see [Lock your work profile](https://support.google.com/work/android/answer/7029958).| 
+| **Require corporate credentials for access** | Choose **Yes** to require the user to sign in with their work or school account instead of entering a PIN for app access. When set to **Yes**, and PIN or biometric prompts are turned on, both corporate credentials and either the PIN or biometric prompts are shown. <br><br>Default value = **No** |
+| **Recheck the access requirements after (minutes)** | Configure the following setting: <ul><li>**Timeout**: This is the number of minutes before the access requirements (defined earlier in the policy) are rechecked. For example, an admin turns on PIN and Blocks rooted devices in the policy, a user opens an Intune-managed app, must enter a PIN, and must be using the app on a non-rooted device. When using this setting, the user won't have to enter a PIN or undergo another root-detection check on any Intune-managed app for a period of time equal to the configured value.  <br><br>This policy setting format supports a positive whole number. <br><br> Default value = **30 minutes** <br><br> **Note:** On Android, the PIN is shared with all Intune-managed apps. The PIN timer is reset once the app leaves the foreground on the device. The user won't have to enter a PIN on any Intune-managed app that shares its PIN for the duration of the timeout defined in this setting.* <br><br></li> |
+| **Block screen capture and Android Assistant** | Select **Yes** to block screen capture and the **Android Assistant** capabilities of the device when using this app. Choosing **Yes** will also blur the App-switcher preview image when using this app with a work or school account. <br><br>Default value = **No** |
+
+>>>>>>> 43d8ce913a55bb1c38277e19cff82e47971c1940
 
 > [!NOTE]  
 > To learn more about how multiple Intune app protection settings configured in the Access section to the same set of apps and users work on Android, see [Intune MAM frequently asked questions](mam-faq.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
