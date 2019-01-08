@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +28,9 @@ ms.custom: intune-azure
 
 # Remove SCEP and PKCS certificates in Microsoft Intune
 
-In Microsoft Intune, you can add Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificates to devices. These certificates can also be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. In other scenarios, certificates are automatically removed or stay on the device.
+In Microsoft Intune, you can add Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificates to devices. These certificates can also be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. 
 
-This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
+There are some other scenarios where certificates are automatically removed, and some scenarios where certificates stay on the device. This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
 
 > [!NOTE]
 > To remove and revoke certificates for a user who's being removed from on-premises Active Directory or Azure Active Directory (Azure AD), follow these steps in order:
