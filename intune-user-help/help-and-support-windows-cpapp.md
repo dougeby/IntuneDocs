@@ -43,7 +43,9 @@ From **Help & support** you can:
 
 ## Get help with app problems
 
-Email your organization about any problems you experience in Company Portal. Select **Get Help** to start describing the problem. Your organization will use your description, and the diagnostic log ID included in the email, to troubleshoot the problem. For the step-by-step procedure, see [Send logs to your company support from the Company Portal app for Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
+Email your organization about any problems you experience in Company Portal. Select **Get Help** to start describing the problem. Your organization will use the information you provide to troubleshoot the problem. If more help is needed to determine the problem, your organization will use the diagnostic ID&ndash;automatically included in the email&ndash;to reach out to Microsoft's support team.  
+
+For the step-by-step procedure, see [Send logs to your company support from the Company Portal app for Windows 10](send-logs-to-your-it-admin-cp-windows.md).  
 
 ## View helpdesk contact details  
 Use your organization's helpdesk details, such as phone number, emails, and website to quickly troubleshoot work or school access.  
