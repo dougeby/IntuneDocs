@@ -35,7 +35,7 @@ Device features let you control a range of settings and features on iOS and macO
 - AirPrint and AirPlay settings
 - Home screen layout
 - Notifications from apps
-- Shared device configuration
+- Lock Screen Message
 - Setting up single sign-on
 - Filtering web content
 
@@ -49,7 +49,7 @@ This article shows you the basics on configuring iOS device feature profiles. Th
 4. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. (This is optional, but recommended.)
+   - **Description**: Enter a description for the profile. (This setting is optional, but recommended.)
    - **Platform**: Select your platform type:
      - **iOS**
      - **macOS**
@@ -60,7 +60,7 @@ This article shows you the basics on configuring iOS device feature profiles. Th
      - [AirPlay settings for iOS](airplay-settings-ios.md)
      - [Home screen layout settings for iOS](home-screen-settings-ios.md)
      - [App notification settings for iOS](app-notification-settings-ios.md)
-     - [Shared device configuration settings for iOS](shared-device-settings-ios.md)
+     - [Lock Screen Message settings for iOS](shared-device-settings-ios.md)
      - [Configure Intune for iOS device single sign-on](sso-ios.md)
      - [Web content filter settings for iOS](web-content-filter-settings-ios.md)
 
