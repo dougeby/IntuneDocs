@@ -148,7 +148,6 @@ The following information describes the Azure Help + support experience which re
    ![Screenshot of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
 6. Review the information, verify that it's correct, and then choose **Create** to submit your support request.
 
-
    ![Image of the review + create tab on the New support request page](./media/get-support/help-new-support-case-create.png)
 
 <!--
@@ -188,7 +187,6 @@ You can view a support request from within the Azure portal. To do so:
 1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
-
 
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
