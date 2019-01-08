@@ -105,7 +105,7 @@ You will need the following to distribute apps wrapped by Intune:
 
 4. Click **Certificates, IDs & Profiles**.
 
-   ![Apple Developer portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer portal - Certificates, IDs & Profiles](./media/iOS-signing-cert-1.png)
 
 5. Click the ![Apple Developer portal plus sign](./media/iOS-signing-cert-2.png) in the top right corner to add an iOS certificate.
 

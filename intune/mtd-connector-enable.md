@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Enable Mobile Threat Defense connector in Microsoft Intune
-titleSuffix: 
+title: Enable Mobile Threat Defense connector in Microsoft Intune | Microsoft Intune
 description: Enable the connector between your Mobile Threat Defense (MTD) partner and Microsoft Intune.
 keywords:
 author: brenduns

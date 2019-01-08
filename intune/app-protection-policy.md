@@ -80,14 +80,14 @@ Windows devices are currently not supported. However, you can use Windows Inform
 
 #### Apps without app protection policies
 
-![Image that shows data can move freely between apps when there are no App protection policies in place](./media/apps-without-protection-policies.png)
+![Conceptual image for data movement between apps with no policies in place](./media/apps-without-protection-policies.png)
 
 When apps are used without restrictions, company and personal data can get intermingled. Company data can end up in locations like personal storage or transferred to apps beyond your purview and result in data loss. The arrows in the preceding diagram show unrestricted data movement between both corporate and personal apps, and to storage locations.
 
 
 ### Data protection with app protection policies
 
-![Image that shows how company data is protected when App protection policies are applied ](./media/apps-with-protection-policies.png)
+![Conceptual image that shows company data being protected by policies](./media/apps-with-protection-policies.png)
 
 
 You can use App protection policies to prevent company data from saving to the local storage of the device. You can also restrict data movement to other apps that aren't protected by App protection policies. App protection policy settings include:
@@ -152,7 +152,7 @@ While the **Global** policy applies to all users in your tenant, any standard In
 
 Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while app protection policies apply only when the apps are used in the work context.
 
-For an example of personal context, consider a user who starts a new document in Word, this is considered personal context so Intune App Protection policies are not applied. Once the document is saved on the corporate OneDrive account then it will be consieered corporatte context and Intune App Protection polices will be applied.
+For an example of personal context, consider a user who starts a new document in Word, this is considered personal context so Intune App Protection policies are not applied. Once the document is saved on the corporate OneDrive account then it will be considered corporate context and Intune App Protection polices will be applied.
 
 For an example of work context, consider a user who starts the OneDrive app by using their work account. In the work context, they can't move files to a personal storage location. Later, when they use OneDrive with their personal account, they can copy and move data from their personal OneDrive without restrictions.
 

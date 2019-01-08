@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
