@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Windows Holographic Business shared device settings - Microsoft Intune - Azure | Microsoft Docs
-description: Add and use Windows Holographic for Business to configure devices that are shared, or used by multiple users in Microsoft Intune. See a list of all the settings and what they do on the devices, including Microsoft HoloLens. Control guest accounts, manage accounts and delete inactive accounts, allow or prevent saving to local storage, set power and sleep options, choose when updates are installed, and use devices in education environments in a device configuration profile.
+title: Windows 10 shared device settings - Microsoft Intune - Azure | Microsoft Docs
+description: Add and use Windows 10 to configure devices that are shared, or used by multiple users in Microsoft Intune. See a list of all the settings and what they do on the devices, including Microsoft Surface. Control guest accounts, manage accounts and delete inactive accounts, allow or prevent saving to local storage, set power and sleep options, choose when updates are installed, and use devices in education environments in a device configuration profile.
 keywords:
 author: MandiOhlinger
 
@@ -28,13 +28,13 @@ ms.custom: intune-azure; seodec18
 
 ---
 
-# Windows Holographic for Business settings to manage shared devices using Intune
+# Windows 10 and later settings to manage shared devices using Intune
 
-Windows Holographic for Business devices, such as the Microsoft HoloLens, can be used by multiple users. Devices that have multiple users are called shared devices, and are a part of mobile device management (MDM) solutions.
+Windows 10 and later devices, such as the Microsoft Surface, can be used by multiple users. Devices that have multiple users are called shared devices, and are a part of mobile device management (MDM) solutions.
 
-Using Microsoft Intune, users can sign in to these shared devices with a guest account. As they use the device, they only get access to features you allow. As the Intune administrator, you can configure access, choose when accounts are deleted, control power management settings, and more for your shared Windows Holographic for Business devices.
+Using Microsoft Intune, users can sign in to these shared devices with a guest account. As they use the device, they only get access to features you allow. As the Intune administrator, you can configure access, choose when accounts are deleted, control power management settings, and more for your shared Windows 10 devices.
 
-This article lists and describes the settings you use in a Windows Holographic for Business device configuration profile. When the profile is created in Intune, you then deploy or assign the profile to device groups in your organization. You can also assign this profile to a device group with mixed device types and OS versions.
+This article lists and describes the settings you use in a Windows 10 and later device configuration profile. When the profile is created in Intune, you then deploy or assign the profile to device groups in your organization. You can also assign this profile to a device group with mixed device types and OS versions.
 
 For more information on this feature, see [Control access, accounts, and power features on shared PC or multi-user devices](shared-user-device-settings.md).
 
@@ -43,9 +43,6 @@ For more information on this feature, see [Control access, accounts, and power f
 [Create the profile](shared-user-device-settings.md).
 
 ## Shared multi-user device settings
-
-> [!NOTE]
-> Microsoft HoloLens devices only support the **Account management** settings. If you configure any of the other settings, including **Shared PC mode**, it has no impact on Microsoft HoloLens devices.
 
 - **Shared PC mode**: Choose **Enable** to turn on shared PC mode. In this mode, only one user signs in to the device at a time. Another user can't sign in until the first user signs out. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 - **Guest account**: Choose to create a Guest option on the sign-in screen. Guest accounts don't require any user credentials or authentication. This setting creates a new local account each time it's used. Your options:
@@ -58,9 +55,6 @@ For more information on this feature, see [Control access, accounts, and power f
     - **Stop delete threshold(%)**: Enter a percentage (0-100) of disk space. When the total disk/storage space meets the value you enter, the deleting stops.
 
   Set to **Disable** to keep the local, AD, and Azure AD accounts created by guests.
-
-  > [!NOTE]
-  > Microsoft HoloLens devices only support the **Account management** settings.
 
 - **Local Storage**: Choose **Enabled** to prevent users from saving and viewing files on the device's hard drive. Choose **Disabled** to allow users to see and save files locally using File Explorer. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 - **Power Policies**: When set to **Enabled**, users can't turn off hibernate, can't override all sleep actions (such as closing the lid), and can't change the power settings. When set to **Disabled**, users can hibernate the device, can close the lid to sleep the device, and change the power settings. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.

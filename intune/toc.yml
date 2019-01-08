@@ -500,8 +500,13 @@
         href: remove-certificates.md        
     - name: Windows Information Protection settings
       href: windows-information-protection-configure.md
-    - name: Shared multi-user device
-      href: shared-user-device-settings-windows-holographic.md
+    - name: Shared multi-user devices
+      href: shared-user-device-settings.md
+      items:
+      - name: Windows 10
+        href: shared-user-device-settings-windows.md
+      - name: Windows Holographic for Business
+        href: shared-user-device-settings-windows-holographic.md
     - name: Manage PowerShell scripts
       href: intune-management-extension.md
     - name: Monitor telecom expenses
