@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 12/10/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,130 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+
+## Week of January 7, 2019
+
+### App management
+
+#### Intune app PIN <!-- 2298397 -->
+As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](app-protection-policy-settings-ios.md) and [Android](app-protection-policy-settings-android.md) devices, this feature supports a positive integer value.
+
+#### Intune app protection policies UI update <!-- 3251427-->
+We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
+- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
+- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md#access-requirements) and [Android settings](app-protection-policy-settings-android.md#access-requirements).
+
+
+### Device configuration
+
+#### Use S/MIME to encrypt and sign multiple devices for a user  <!-- 1333642 -->
+This update includes S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
+- The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
+- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
+- The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
+- On other platforms, you may need to manually configure the mail app to enable S/MIME.  
+- Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
+For more information on this feature, see [S/MIME overview to sign and encrypt email](certificates-s-mime-encryption-sign.md).
+Supported on: Windows, Windows Phone 10, macOS, iOS, Android
+
+#### New options to automatically connect and persist rules when using DNS settings on Windows 10 and later devices <!-- 1333665, 2999078 -->
+On Windows 10 and later devices, you can create a VPN configuration profile that includes a list of DNS servers to resolve domains, such as contoso.com. This update includes new settings for name resolution (**Device configuration** > **Profiles** > **Create profile** > Choose **Windows 10 and later** for platform > Choose **VPN** for profile type > **DNS settings** >**Add**): 
+- **Automatically connect**: When **Enabled**, the device automatically connects to the VPN when a device contacts a domain you enter, such as contoso.com.
+- **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects. The rule stays until the VPN profile is removed or until the rule is manually removed, which can be done using PowerShell.
+[Windows 10 VPN settings](vpn-settings-windows-10.md) describes the settings. 
+
+#### Use trusted network detection for VPN profiles on Windows 10 devices <!-- 1500165 -->​
+​When using trusted network detection, you can prevent VPN profiles from automatically creating a VPN connection when the user is already on a trusted network. With this update, you can add DNS suffixes to enable trusted network detection on devices running Windows 10 and later (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **VPN** for profile type).
+​[Windows 10 VPN settings](vpn-settings-windows-10.md) lists the current VPN settings.​
+
+#### Manage Windows Holographic for Business devices used by multiple users <!-- 1907917, 1063203 -->
+Currently, you can configure shared PC settings on Windows 10 and Windows Holographic for Business devices using a custom OMA-URI setting. With this update, a new profile is added to configure shared device settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
+To learn more about this feature, go to [Intune settings to manage shared devices](shared-user-device-settings.md).
+Applies to: Windows 10 and later, Windows Holographic for Business
+
+#### New Windows 10 Update settings <!--2626030  2512994  -->
+For your [Windows 10 Update Rings](windows-update-for-business-configure.md), you can configure:
+- **Automatic update behavior** - Use a new option, *Reset to default* to restore the original auto update settings on a Windows 10 machine on machines running the *October 2018 Update*
+- **Block user from pausing Windows updates** - Configure a new Software updates setting that lets you block or allow your users to pause update installation from the *Settings* of their machines. 
+
+#### iOS email profiles can use S/MIME signing and encryption <!-- 2662949 -->
+You can create an email profile that includes different settings. This update includes S/MIME settings that can be used for signing and encrypting email communications on iOS devices (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > **Email** for profile type).
+[iOS email configuration settings](email-settings-ios.md) lists the settings.
+
+#### Some BitLocker settings support Windows 10 Pro edition<!-- 2727036 -->​
+You can create a configuration profile that sets endpoint protection settings on Windows 10 devices, including BitLocker. This update adds support for Windows 10 Professional edition for some BitLocker settings. ​
+To see these protection settings, go to [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+
+#### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal<!-- 2809362 -->
+When you create a configuration profile for iOS devices, you can add **Shared Device Configuration** settings to show specific text on the lock screen. This update includes the following changes: 
+- The **Shared Device Configuration** settings in the Azure portal are renamed to "Lock Screen Message (supervised only)" (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > Choose **Device features** for profile type > **Lock Screen Message**).
+- When adding lock screen messages, you can insert a serial number, a device name, or another device-specific value as a variable in **Asset tag information** and **Lock screen footnote**. For example, you can enter `Device name: {{devicename}}` or `Serial number is {{serialnumber}}` using curly brackets. [iOS tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lists the available tokens that can be used.
+[Settings to display messages on the lock screen](shared-device-settings-ios.md) lists the settings.
+
+#### New App Store, Doc Viewing, Gaming device restriction settings added to iOS devices <!-- 2827760-->
+In **Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**, the following settings are added: 
+Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)
+Allow unmanaged apps to read from managed contacts accounts (supervised only)
+To see these settings, go to [iOS device restrictions](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+#### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->
+​This update includes several new features on Android Enterprise devices when running as device owner. To use these features, go to **Device Configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Android Enterprise** > In **Profile type**, choose **Device owner only** > **Device Restrictions**.​
+​New features include: ​
+​- Disable system notifications from showing, including incoming calls, system alerts, system errors, and more​
+- Suggests skip starting tutorials and hints for apps that are opened the first time​
+- Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more​
+​To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).​
+
+#### Android enterprise device owner devices can use Always On VPN connections <!-- 3202194 -->
+In this update, you can use Always-on VPN connections on Android enterprise device owner devices. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
+You can enable Always-on VPN in **Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **Device restrictions** for Device Owner Only > **Connectivity** settings. 
+To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+
+#### New setting to end processes in Task manager on Windows 10 devices <!-- 3285177 --> 
+This update includes a new setting to end processes using Task Manager on Windows 10 devices. Using a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Windows 10** > In **Profile type**, choose **Device restrictions** > **General** settings), you choose to allow or prevent this setting.
+To see these settings, go to [Windows 10 device restriction settings](device-restrictions-windows-10.md).
+Applies to: Windows 10 and later
+
+
+### Device enrollment
+
+#### More detailed enrollment restriction failure messaging <!-- 3111564 -->
+More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#configuration-policies-reference).
+
+#### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509 -->
+In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: 
+Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
+
+
+### Monitor and troubleshoot
+
+#### Tenant Status dashboard  <!-- 1124854 -->
+The new [Tenant Status page](tenant-status.md) provides a single location where you can view status and related details for your tenant.  The dashboard is divided into four areas:
+- **Tenant Details** - Displays information that includes your Tenant name and location, your MDM Authority, the total enrolled devices in your tenant, and your license counts. This section also lists the current service release for your tenant.
+- **Connector Status** - Displays information about available connectors you have configured and can also list those which you have not yet enabled.  
+   Based on the current state of each connector,  they are flagged as Healthy, Warning, or Unhealthy. Select a connector to drill through and view details or configure additional information for it.
+-  **Intune Service Health** - Displays details about active incidents or outages for your tenant. The information in this section is retrieved directly from the Office Message Center.
+-  **Intune News** - Displays active messages for your tenant. Messages include things like notifications when your tenant receives the latest Intune features.  The information in this section is retrieved directly from the Office Message Center.
+
+#### New help and support experience in Company Portal for Windows 10 <!-- 1488939-->
+The new Company Portal Help & support page helps users troubleshoot and request help for app and access problems. From the new page, they can email error and diagnostic log details and find their organization's Helpdesk details. They'll also find a FAQ section with links to the relevant Intune documentation. 
+
+#### New Help and Support experience for Intune   <!-- #3307080 -->
+We are rolling out the new Help and Support experience to all tenants over the next few days. This new experience is available for Intune and can be accessed when using the Intune blades in the [Azure portal](https://portal.azure.com/).
+The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user inquires. 
+In addition to issue-specific guidance, you use the new case creation workflow to open a support case by email or phone. 
+This new experience replaces the previous Help and Support experience of a static set of pre-selected options that are based on the area of the console you are in when you open Help and Support. 
+For more information, see [How to get support for Microsoft Intune](get-support.md).
+
+### Role-based access control
+
+#### Scope tags for apps <!-- 1081941 -->
+You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. For more information, see [Use scope tags to filter policies](scope-tags.md).
+
+
 
 ## Week of December 10, 2018
 
@@ -252,7 +376,7 @@ Azure Active Directory has a terms of use feature that you can use instead of ex
 For Samsung Knox Mobile Enrollment, Intune now supports enrolling devices to the Android Device Owner mode of management. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
 
 ### Device management
-#### New settings for Software Updates   <!-- 1907869  wnready -->  
+#### New settings for Software Updates   <!-- 1907869 -->  
 - You can now configure some notifications to alert end-users about restarts that are required to finish installation of the latest software updates.   
 - You can now configure a restart warning prompt for restarts that happen outside of work hours, which supports BYOD scenarios.
 
