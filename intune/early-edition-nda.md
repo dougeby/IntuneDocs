@@ -205,7 +205,7 @@ You can now configure additional settings for Outlook for iOS and Android using 
 - Block external images
 
 > [!NOTE]
-> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
+> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access requirements](app-protection-policy-settings-ios.md#access-requirements) and [Android Access requirements](app-protection-policy-settings-android.md#access-requirements).
 
 ### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
 Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
