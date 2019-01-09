@@ -188,7 +188,6 @@ You can view a support request from within the Azure portal. To do so:
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
-
 ## Additional resources
 - [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)

@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/07/2018
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,10 +52,10 @@ You will be able to delete managed Google Play apps from Microsoft Intune. To de
 ### Managed Google Play app type <!-- 1352580 -->
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you will be able to now browse, search, approve, sync and assign approved managed Google Play apps within Intune. You will no longer need to browse to the managed Google Play console separately, and you will no longer have to reauthenticate. In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
 
-### Support for Android corporate-owned, fully managed devices <!-- 1574342  -->
-Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, you will go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**.
+### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
+Intune will support fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. To set up Android fully managed devices, you will go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**. Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
-### Deployment of online licensed Microsoft Store for Business apps <!-- 16726660  -->
+### Deployment of online licensed Microsoft Store for Business apps <!-- 1672660  -->
 You will be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
 
 ### Configure profile to skip some screens during Setup Assistant <!-- 2276470  -->
@@ -96,7 +96,7 @@ On Windows 10 and later devices, you'll be able to create a VPN configuration pr
 
 [Windows 10 VPN settings](vpn-settings-windows-10.md) describes the current list of settings. 
 
-### Use S/MIME to encrypt and sign multiple devices for a user <!-- 1333642 eeready -->
+### Use S/MIME to encrypt and sign multiple devices for a user <!-- 1333642 -->
 S/MIME email encryption using a new imported certificate profile will be supported (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 
 - The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
@@ -117,8 +117,9 @@ When using trusted network detection, you'll be able to prevent VPN profiles fro
 ### The Intune App SDK will support 256-bit encryption keys <!-- 1832174 -->
 The Intune App SDK for Android will use 256-bit encryption keys when encryption is enabled by App Protection Policies. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions.
 
-### Enabled Shared PC settings in Intune profile <!-- 1907917 -->
+### Enabled Shared PC settings in Intune profile <!-- 1907917, 1063203 -->
 Currently, you can configure Shared PC settings on Windows 10 desktop devices using a custom OMA-URI setting. A new profile will be added to configure Shared PC settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
+
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 ### Intune policies update authentication method and Company Portal app installation  <!-- 1927359 -->
@@ -145,8 +146,6 @@ For your Windows 10 Update Rings, you'll be able to:
 - restore the original auto update settings on a Windows 10 machine on machines running the *October 2018 Update*
 - configure a new Software updates setting that lets you block or allow your users to pause update installation from the *Settings* of their machines. 
 
-
-
 ### iOS email profiles can use S/MIME signing and encryption <!-- 2662949 -->
 You'll be able to create an email profile that includes different settings. This includes S/MIME settings that can be used for signing and encrypting email communications on iOS devices (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > **Email** for profile type).
 
@@ -162,7 +161,7 @@ You'll be able to create a configuration profile that sets endpoint protection s
 To see the current Windows 10 edition settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 
 ### Intune device reporting fields <!-- 2748738 -->
-Intune will provide additional device reporting fields, including Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
+Intune will provide additional device reporting fields, including App Registration Id, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
 
 ### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal <!-- 2809362 -->
 When you create a configuration profile for iOS devices, you'll be able to add **Shared Device Configuration** settings to show specific text on the lock screen. This includes the following changes: 
@@ -193,6 +192,20 @@ To see the current settings, go to [Android Enterprise device restriction settin
 This update includes a new setting to end processes using Task Manager on Windows 10 devices. Using a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Windows 10** > In **Profile type**, choose **Device restrictions** > **General** settings), you choose to allow or prevent this setting.
 To see the current settings, go to [Windows 10 device restriction settings](device-restrictions-windows-10.md).
 Applies to: Windows 10 and later
+
+### Additional settings for Outlook <!-- 3301182 -->
+You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
+- Only allow work or school accounts to be used in Outlook in iOS and Android
+- Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
+- Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
+- Allow contacts to be saved
+- Configure External Recipients MailTips
+- Configure **Focused Inbox**
+- Require biometrics to access Outlook for iOS 
+- Block external images
+
+> [!NOTE]
+> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-settings) and [Android Access Settings](app-protection-policy-settings-android.md#access-settings).
 
 ### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
 Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
@@ -243,8 +256,6 @@ Intune will detect and show details if an Apple volume-purchased program (VPP) t
 In a future update, retired devices will be removed from the device compliance dashboard. This will change your compliance numbers.
 
 
-### Change in the update process for on-premises connectors <!-- 2277554 -->
-Based on feedback from customers, the way updates are made to on-premises connectors will be changed. After you initially install an on-premises connector, updates will happen automatically. This change will begin with the new PFX Certificate Connector for Microsoft Intune and will subsequently roll out to other types of on-premises connectors. 
 
 <!-- 1807 start -->
 
