@@ -109,9 +109,6 @@ This update includes a new BitLocker setting to allow standard users (non-admini
 To see the current settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 
 
-### Intune device reporting fields <!-- 2748738 -->
-Intune will provide additional device reporting fields, including App Registration Id, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
-
 ### Additional settings for Outlook <!-- 3301182 -->
 You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
 - Only allow work or school accounts to be used in Outlook in iOS and Android
