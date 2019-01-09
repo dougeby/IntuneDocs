@@ -43,7 +43,7 @@ The Intune management extension supplements the in-box Windows 10 MDM features. 
 
 The Intune management extension has the following prerequisites:
 
-- Devices must be joined or registered to Azure AD and Azure AD must be configured for [auto-enrollment into Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and comanaged enrolled Windows devices.
+- Devices must be joined or registered to Azure AD and Azure AD is configured for [auto-enrollment into Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and comanaged enrolled Windows devices.
 - Devices must run Windows 10 version 1607 or later.
 - The Intune management extension agent is installed when a PowerShell script or a Win32 app is deployed to a user or device security group.
 
