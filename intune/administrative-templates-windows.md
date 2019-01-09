@@ -2,6 +2,8 @@
 # required metadata
 
 title: Use templates for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
+[!NOTE]
+Administrative Templates only works for standalone devices. Support for SCCM co-managed devices will be coming shortly.
 description: Use Administrative templates in Microsoft Intune to create groups of settings for Windows 10 devices. Use these settings in a device configuration profile to control Office programs, secure features in Internet Explorer, control access to OneDrive, use remote desktop features, enable AutoPlay, set power management settings, use HTTP printing, use different user logon options, and control the event log size.
 keywords:
 author: MandiOhlinger
