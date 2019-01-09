@@ -67,9 +67,7 @@ The Intune management extension has the following prerequisites:
 3. Select one or more groups that include the users whose devices receive the script. **Select** to assign the policy to the selected groups.
 
 > [!NOTE]
-> - PowerShell scripts can't be applied to computer groups.
 > - End users aren't required to sign in to the device to execute PowerShell scripts.
-> - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
 
 The Intune management extension client checks once every hour with Intune. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
 
