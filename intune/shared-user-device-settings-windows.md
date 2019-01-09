@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/07/2019
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,13 @@ ms.custom: intune-azure; seodec18
 
 # Windows 10 and later settings to manage shared devices using Intune
 
-Windows 10 and later devices, such as the Microsoft Surface, can be used by multiple users. Devices that have multiple users are called shared devices, and are a part of mobile device management (MDM) solutions.
+Windows 10 and later devices, such as the Microsoft Surface, can be used by many users. Devices that have multiple users are called shared devices, and are a part of mobile device management (MDM) solutions.
 
-Using Microsoft Intune, users can sign in to these shared devices with a guest account. As they use the device, they only get access to features you allow. As the Intune administrator, you can configure access, choose when accounts are deleted, control power management settings, and more for your shared Windows 10 devices.
+Using Microsoft Intune, end-users can sign in to these shared devices with a guest account. As they use the device, they only get access to features you allow. As the Intune administrator, you configure access, choose when accounts are deleted, control power management settings, and more for your shared Windows 10 devices.
 
-This article lists and describes the settings you use in a Windows 10 and later device configuration profile. When the profile is created in Intune, you then deploy or assign the profile to device groups in your organization. You can also assign this profile to a device group with mixed device types and OS versions.
+This article lists and describes the settings you use in a Windows 10 (and later) device configuration profile. When the profile is created in Intune, you deploy or assign the profile to device groups in your organization. You can also assign this profile to device groups with mixed device types and OS versions.
 
-For more information on this feature, see [Control access, accounts, and power features on shared PC or multi-user devices](shared-user-device-settings.md).
+For more information on this feature in Intune, see [Control access, accounts, and power features on shared PC or multi-user devices](shared-user-device-settings.md). For more information on the Windows CSP, see [SharedPC CSP](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp).
 
 ## Before your begin
 
@@ -59,10 +59,13 @@ For more information on this feature, see [Control access, accounts, and power f
 - **Local Storage**: Choose **Enabled** to prevent users from saving and viewing files on the device's hard drive. Choose **Disabled** to allow users to see and save files locally using File Explorer. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 - **Power Policies**: When set to **Enabled**, users can't turn off hibernate, can't override all sleep actions (such as closing the lid), and can't change the power settings. When set to **Disabled**, users can hibernate the device, can close the lid to sleep the device, and change the power settings. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 - **Sleep time out (in seconds)**: Enter the number of inactive seconds (0-100) before the device goes into sleep mode. If you don't set a time, the device goes to sleep after 60 minutes.
-- **Sign-in when PC wakes**: Set to **Enabled** to require the user to sign in with a password when device comes out of sleep mode. Choose **Disabled** so users don't have to enter their username and password. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
+- **Sign-in when PC wakes**: Set to **Enabled** to require users to sign in with a password when device comes out of sleep mode. Choose **Disabled** so users don't have to enter their username and password. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 - **Maintenance start time(in minutes from midnight)**: Enter the time in minutes (0-1440) when automatic maintenance tasks, such as Windows Update, run. The default start time is midnight, or zero (`0`) minutes. Change the start time by entering a start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120`. If you want maintenance to begin at 8 PM, enter `1200`.
 - **Education policies**: Choose **Enabled** to use the recommended settings for devices used in schools, which are more restrictive. Choose **Disabled** so the default and recommended education policies aren't used. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 
+  For more information on what the education policies do, see [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
 ## Next steps
 
-[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+- [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+- See the settings for [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md).

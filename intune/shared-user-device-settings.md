@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/07/2019
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -36,11 +36,13 @@ Devices that have multiple users are called shared devices, and are a common par
 - Windows 10 Enterprise and newer
 - Windows Holographic for Business, such as the HoloLens
 
-Users can sign in to these shared devices with a guest account. After users sign in, the credentials are cached. As they use the device, users only get access to features you allow. For example, you choose when the device goes in to sleep mode, if users can see and save files locally, enable or disable power management settings, and more. You also control if the guest account deletes when the user signs off, or delete inactive accounts when a threshold is reached.
+For example, schools have devices that are typically used by many students. With this setting, the school Intune administrator can turn on the Shared PC feature to allow one user at a time. Students can't switch between different signed-in accounts on the device. When the student signs out, you also choose to remove all user-specific settings.
+
+End users can sign in to these shared devices with a guest account. After users sign in, the credentials are cached. As they use the device, end-users only get access to features you allow. For example, you choose when the device goes in to sleep mode, if users can see and save files locally, enable or disable power management settings, and more. You also control if the guest account deletes when the user signs-off, or delete inactive accounts when a threshold is reached.
 
 This article shows you how to create a configuration profile, and includes links to the available settings with their descriptions.
 
-When the profile is created in Intune, you then deploy or assign the profile to device groups in your organization. You can also assign this profile to a device group with mixed device types and operating system (OS) versions.
+When the profile is created in Intune, you deploy or assign the profile to device groups in your organization. You can also assign this profile to device groups with mixed device types and operating system (OS) versions.
 
 ## Create the profile
 

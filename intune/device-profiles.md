@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -259,12 +259,13 @@ This feature supports:
 
 ## Shared multi-user device
 
-[Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a policy that deletes inactive credentials from Windows HoloLens devices to save space.
+[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a policy that deletes inactive credentials from Windows HoloLens devices to save space.
 
 These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
 
 This feature supports:
 
+- Windows 10 and later
 - Windows Holographic for Business
 
 ## Custom profile
