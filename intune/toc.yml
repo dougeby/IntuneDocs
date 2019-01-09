@@ -4,14 +4,15 @@
   expanded: true
   items:
   - name: What is Intune?
-    href: what-is-intune.md    
+    href: what-is-intune.md 
+  - name: What can Intune do for my company?
+    href: get-started-evaluation.md   
   - name: What's new
     href: whats-new.md
     items:
     - name: What's new in the app UI
       href: whats-new-app-ui.md
 - name: Quickstarts
-  href: get-started-evaluation.md
   items:
   - name: Try Intune for free
     href: free-trial-sign-up.md    
