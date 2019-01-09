@@ -145,8 +145,8 @@ The following information describes the Azure Help + support experience which re
    ![Image of the solutions tab on the Help + support - New support request page](./media/get-support/help-new-support-case-solutions.png)
 5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
 
-   ![Screenshot of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
-6. Review the information, verify that it's correct, and then choose **Create** to submit your support request.
+   ![Image of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
+6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
 
    ![Image of the review + create tab on the New support request page](./media/get-support/help-new-support-case-create.png)
 
