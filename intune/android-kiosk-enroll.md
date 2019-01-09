@@ -117,7 +117,7 @@ For Android 5.1 and later devices that support NFC, you can provision your devic
 
 ### Enroll by using a token
 
-For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **aft#setup** enrollment method.
+For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **afw#setup** enrollment method.
 
 1. Turn on your wiped device.
 2. On the **Welcome** screen, select your language.

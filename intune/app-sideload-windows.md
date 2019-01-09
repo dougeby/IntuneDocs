@@ -51,7 +51,7 @@ The steps below will help you get the required certificate and sign the apps. Yo
 4.  **Verify certificates imported**<br>
     To verify that the certificates have been imported correctly, go to the **Certificates** snap-in, right-click **Certificates**, and select **Find Certificates**. In the **Contains** field, enter “Symantec”, and click **Find Now**. The certificates you imported should appear in the results.
 
-    ![Find the Symantec certificate](./media/wit.gif)
+    ![The certificate results are listed in the Find Certificates dialog box](./media/wit.gif)
 
 5. **Export a signing certificate**<br>
     Having verified that the certificates are present, you can export the .pfx file to sign the company portal. Select the Symantec certificate with **Intended purpose** “code-signing.” Right-click the code-signing certificate and select **Export**.
@@ -165,7 +165,7 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
 1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
-![Image of Windows 10 all devices and Architecture X86 Package details for Download](./media/Win10CP-all-devices.png)
+![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
 4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
 
 ![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
@@ -174,7 +174,7 @@ You can manually deploy the Windows 10 Company Portal app directly from Intune, 
    ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
    2. Place the nine dependencies packages in the Dependencies folder.  
    If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
-   ![The Windows app dependency for this software installer was not found in the application folder. You can continue to create and deploy this application but it will not run until the missing Windows app dependency is provided.](./media/Win10CP-error-message.png)
+   ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
 6. Return to Intune, then upload the Company Portal app as a new app. Deploy it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  

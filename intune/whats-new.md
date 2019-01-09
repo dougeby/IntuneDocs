@@ -97,13 +97,6 @@ You can now manage the following apps with [Intune app protection policies](app-
 Use app protection policies to protect corporate data and control data transfer for these apps, like other Intune policy managed apps. 
 Note: If Flow is not yet visible in the console, you add Flow when you create or edit and app protection policies. To do so, use the **+ More apps** option, and then specify the *App ID* for Flow in the input field. For Android use *com.microsoft.flow*,  and for iOS use *com.microsoft.procsimo*.
 
-#### Intune app protection policies UI update <!-- 3251427 -->
-We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
-
-- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
-- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
-
-The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies.
 
 ### Device configuration
 
@@ -189,7 +182,7 @@ This feature is rolling out across the user base over the next few days. Therefo
 ### App management
 
 #### Require non-biometric PIN after a specified timeout <!-- 1506985 -->
-By requiring a non-biometric PIN after an admin-specified timeout, Intune provides improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Client apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings. For information about access settings, see [iOS settings](app-protection-policy-settings-ios.md#access-settings) and [Android settings](app-protection-policy-settings-android.md#access-settings).
+By requiring a non-biometric PIN after an admin-specified timeout, Intune provides improved security for Mobile Application Management (MAM) enabled apps by restricting the use of biometric identification for access to corporate data. The settings affect users who rely on Touch ID (iOS), Face ID (iOS), Android Biometric, or other future biometric authentication methods to access their APP/MAM-enabled applications. These settings enable Intune admins to have more granular control over user access, eliminating cases where a device with multiple fingerprints or other biometric access methods can reveal corporate data to an incorrect user. In the Azure portal, open **Microsoft Intune**. Select **Client apps** > **App protection policies** > **Add a policy** > **Settings**. Locate the **Access** section for specific settings. For information about access settings, see [iOS settings](app-protection-policy-settings-ios.md#access-requirements) and [Android settings](app-protection-policy-settings-android.md#access-requirements).
 
 #### Intune APP data transfer settings on iOS MDM enrolled devices <!-- 2244713 -->
 You can separate the control of Intune APP data transfer settings on iOS MDM enrolled devices from specifying the enrolled user's identity, also known as the User Principal Name (UPN). Admins not using the IntuneMAMUPN will not observe a behavior change. When this functionality is available, admins using the IntuneMAMUPN to control data transfer behavior on enrolled devices should review the new settings and update their APP settings as needed.
