@@ -36,7 +36,7 @@ The Windows Autopilot simplifies enrolling devices in Intune. Building and maint
 - [Windows automatic enrollment enabled](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
-## How to get the CSV for Import in InTune
+## How to get the CSV for Import in Intune
 
 See the understanding powershell cmdlet for more information how to use it.
 
