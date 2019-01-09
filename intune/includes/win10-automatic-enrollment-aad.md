@@ -29,6 +29,8 @@ Automatic enrollment lets users enroll their Windows 10 devices in Intune. To en
 
       > [!IMPORTANT]
       > If both **MAM user scope** and automatic MDM enrollment (**MDM user scope**) are enabled for a group, only MAM is enabled. Only MAM is added for users in that group when they workplace join personal device. Devices are not automatically MDM enrolled.
+> [!NOTE]
+> MAM user scope must be set to a user group or collection.
 
    ![Screenshot of the Azure portal](../media/auto-enroll-scope.png)
 
