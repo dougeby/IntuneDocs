@@ -246,7 +246,7 @@
       href: compliance-policy-monitor.md
   - name: Configure devices
     items:
-    - name: Configuring device using profiles
+    - name: Configure devices using profiles
       href: device-profiles.md    
     - name: Device profiles
       href: device-profile-create.md
