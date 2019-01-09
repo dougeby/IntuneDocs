@@ -165,7 +165,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 
 ### Role-based access control
 
-#### Scope tags for apps <-- 1081941 -->
+#### Scope tags for apps <!-- 1081941 -->
 You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. For more information, see [Use scope tags to filter policies](scope-tags.md).
 
 
