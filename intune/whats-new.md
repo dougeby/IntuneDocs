@@ -52,7 +52,7 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### App management
 
 #### Intune app PIN <!-- 2298397 -->
-As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](app-protection-policy-settings-ios.md#access-settings) and [Android](app-protection-policy-settings-android.md#access-settings) devices, this feature supports a positive integer value.
+As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](app-protection-policy-settings-ios.md) and [Android](app-protection-policy-settings-android.md) devices, this feature supports a positive integer value.
 
 #### Intune app protection policies UI update <!-- 3251427-->
 We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
@@ -137,7 +137,10 @@ Applies to: Windows 10 and later
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
 More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#configuration-policies-reference).
 
-
+#### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509 -->
+In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: 
+Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 
 
 ### Monitor and troubleshoot
@@ -151,7 +154,7 @@ The new [Tenant Status page](tenant-status.md) provides a single location where 
 -  **Intune News** - Displays active messages for your tenant. Messages include things like notifications when your tenant receives the latest Intune features.  The information in this section is retrieved directly from the Office Message Center.
 
 #### New help and support experience in Company Portal for Windows 10 <!-- 1488939-->
-The new Company Portal Help & support page helps users troubleshoot and request help for app and access problems. From the new page, they can email error and diagnostic log details and find their organization's Helpdesk details. They'll also find a FAQ section with links to the relevant Intune documentation. For more information and screenshots, see [Get help and support in Company Portal for Windows 10](./intune-user-help/help-and-support-windows-cpapp.md).
+The new Company Portal Help & support page helps users troubleshoot and request help for app and access problems. From the new page, they can email error and diagnostic log details and find their organization's Helpdesk details. They'll also find a FAQ section with links to the relevant Intune documentation. 
 
 #### New Help and Support experience for Intune   <!-- #3307080 -->
 We are rolling out the new Help and Support experience to all tenants over the next few days. This new experience is available for Intune and can be accessed when using the Intune blades in the [Azure portal](https://portal.azure.com/).

@@ -108,10 +108,6 @@ When you enable BitLocker settings on Windows 10 devices (**Device configuration
 This update includes a new BitLocker setting to allow standard users (non-administrators) to enable encryption. 
 To see the current settings, see [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
 
-### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509 -->
-In addition to the screens you can currently skip, you'll be able to set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: 
-Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
-To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 
 ### Intune device reporting fields <!-- 2748738 -->
 Intune will provide additional device reporting fields, including App Registration Id, Android manufacturer, model, and security patch version, as well as iOS model. In Intune, these fields will be available by selecting **Client apps** > **App protection status** and choosing **App Protection Report: iOS, Android**. In addition, these parameters will help you configure the **Allow** list for device manufacturer (Android), the **Allow** list for device model (Android and iOS), and the minimum Android security patch version setting. 
