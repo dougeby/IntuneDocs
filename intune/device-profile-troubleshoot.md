@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -77,11 +77,11 @@ Other changes, such as revising the contact information in the company portal, d
 ## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
 If two or more policies are assigned to the same user or device, then which settings apply occur at the individual setting level:
 
--   Compliance policy settings always have precedence over configuration policy settings
+- Compliance policy settings always have precedence over configuration policy settings
 
--   If a compliance policy is evaluated against the same setting in a different compliance policy, then the most restrictive compliance policy setting applies.
+- If a compliance policy is evaluated against the same setting in a different compliance policy, then the most restrictive compliance policy setting applies.
 
--   If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict displays in the Azure portal. In this scenario, manually resolve these conflicts.
+- If a configuration policy setting conflicts with a setting in a different configuration policy, this conflict displays in the Azure portal. In this scenario, manually resolve these conflicts.
 
 ## What happens when app protection policies conflict with each other? Which one is applied to the app?
 Conflict values are the most restrictive settings available in an app protection policy, except for the number entry fields (like PIN attempts before reset). The number entry fields are set the same as the values, as if you created a MAM policy in the console by using the recommended settings option.
@@ -100,38 +100,41 @@ When you delete a profile, or you remove a device from a group that has the prof
 
 - Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.
 - All other profile types:  
-	- **Windows and Android devices**: Settings are not removed from the device
-	- **Windows Phone 8.1 devices**: The following settings are removed:  
-		- Require a password to unlock mobile devices
-		- Allow simple passwords
-		- Minimum password length
-		- Required password type
-		- Password expiration (days)
-		- Remember password history
-		- Number of repeated sign-in failures to allow before the device is wiped
-		- Minutes of inactivity before password is required
-		- Required password type – minimum number of character sets
-		- Allow camera
-		- Require encryption on mobile device
-		- Allow removable storage
-		- Allow web browser
-		- Allow application store
-		- Allow screen capture
-		- Allow geolocation
-		- Allow Microsoft account
-		- Allow copy and paste
-		- Allow Wi-Fi tethering
-		- Allow automatic connection to free Wi-Fi hotspots
-		- Allow Wi-Fi hotspot reporting
-		- Allow wipe
-		- Allow Bluetooth
-		- Allow NFC
-		- Allow Wi-Fi
 
-	- **iOS**: All settings are removed, except:
-		- Allow voice roaming
-		- Allow data roaming
-		- Allow automatic synchronization while roaming
+  - **Windows and Android devices**: Settings are not removed from the device
+  - **Windows Phone 8.1 devices**: The following settings are removed:  
+  
+    - Require a password to unlock mobile devices
+    - Allow simple passwords
+    - Minimum password length
+    - Required password type
+    - Password expiration (days)
+    - Remember password history
+    - Number of repeated sign-in failures to allow before the device is wiped
+    - Minutes of inactivity before password is required
+    - Required password type – minimum number of character sets
+    - Allow camera
+    - Require encryption on mobile device
+    - Allow removable storage
+    - Allow web browser
+    - Allow application store
+    - Allow screen capture
+    - Allow geolocation
+    - Allow Microsoft account
+    - Allow copy and paste
+    - Allow Wi-Fi tethering
+    - Allow automatic connection to free Wi-Fi hotspots
+    - Allow Wi-Fi hotspot reporting
+    - Allow wipe
+    - Allow Bluetooth
+    - Allow NFC
+    - Allow Wi-Fi
+
+  - **iOS**: All settings are removed, except:
+  
+    - Allow voice roaming
+    - Allow data roaming
+    - Allow automatic synchronization while roaming
 
 ## I changed a device restriction profile, but the changes haven't taken effect
 Windows Phone devices do not allow security policies set using MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8 then try to reduce it to 4. The more restrictive profile has already been applied to the device.
@@ -140,13 +143,13 @@ If you want to change the profile to a less secure value, then reset security po
 
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, and Windows 10, may need to be retired, and re-enrolled back into the service to apply a less restrictive profile.
 
-## Some settings in my Windows 10 profile are returning "Not Applicable"
-When Windows 10 settings return "Not Applicable", it means that specific setting is not supported on that particular version/edition of Windows. This can occur for two reasons:
+## Some settings in a Windows 10 profile return "Not Applicable"
+Some settings on Windows 10 devices may show as "Not Applicable". When this happens, that specific setting isn't supported on the version or edition of Windows on the device. This can occur for the following reasons:
 
-	- The setting is only available for newer versions of Windows than the current OS on the client
-	- The setting is only available for specific Windows Editions/SKUs (Home, Pro, Enterprise, Education)
+- The setting is only available for newer versions of Windows, and not the current operating system (OS) on the device.
+- The setting is only available for specific Windows editions or specific SKUs, such as Home, Professional, Enterprise, and Education.
 
-To understand a settings version and SKU requirements, visit the Configuration Service Provider (CSP) reference https://docs.microsoft.com/en-us/windows/client-management/mdm/configuration-service-provider-reference 
+To learn more about the version and SKU requirements for the different settings, see the [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## Next steps
 Need extra help? See [How to get support for Microsoft Intune](get-support.md).
