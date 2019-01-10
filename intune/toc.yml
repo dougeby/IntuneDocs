@@ -373,9 +373,11 @@
   - name: Configure devices
     href: device-profiles.md
     items:
-    - name: Configure device profiles
+    - name: Device profiles
       href: device-profile-create.md
-    - name: Configure device features
+    - name: Administrative templates
+      href: administrative-templates-windows.md
+    - name: Device features for iOS and macOS
       href: device-features-configure.md
       items:
       - name: AirPrint for iOS and MacOS
@@ -386,13 +388,13 @@
         href: home-screen-settings-ios.md
       - name: App notifications for iOS
         href: app-notification-settings-ios.md
-      - name: Shared devices for iOS
+      - name: Lock screen message for iOS
         href: shared-device-settings-ios.md
       - name: Configure Intune for iOS device single sign-on
         href: sso-ios.md
       - name: Web filter settings for iOS
         href: web-content-filter-settings-ios.md
-    - name: Configure device restrictions
+    - name: Device restrictions
       href: device-restrictions-configure.md
       items:
       - name: Android
@@ -415,18 +417,18 @@
         href: device-restrictions-windows-holographic.md
     - name: Delivery optimization
       href: delivery-optimization-windows.md
-    - name: Configure endpoint protection
+    - name: Endpoint protection
       href: endpoint-protection-configure.md
       items:
       - name: macOS
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: Configure identity protection
+    - name: Identity protection
       href: identity-protection-configure.md
     - name: Windows 10 kiosk settings
       href: kiosk-settings.md
-    - name: Configure email settings
+    - name: Email settings
       href: email-settings-configure.md
       items:
       - name: Android
@@ -437,7 +439,7 @@
         href: email-settings-windows-phone-8-1.md
       - name: Windows 10
         href: email-settings-windows-10.md
-    - name: Configure VPN settings
+    - name: VPN settings
       href: vpn-settings-configure.md
       items:
       - name: Android
@@ -454,7 +456,7 @@
         href: vpn-settings-windows-phone-8-1.md
       - name: Windows 10
         href: vpn-settings-windows-10.md
-    - name: Configure Wi-Fi settings
+    - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
       - name: Android
@@ -469,7 +471,7 @@
         href: wi-fi-settings-windows.md
       - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
-    - name: Configure eSIM cellular profiles
+    - name: eSIM cellular profiles
       href: esim-device-configuration.md
     - name: Education
       items:
@@ -477,27 +479,34 @@
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
         href: education-settings-configure.md
-    - name: Configure Windows 10 edition upgrade settings
+    - name: Windows 10 edition upgrade settings
       href: edition-upgrade-configure-windows-10.md
-    - name: Configure iOS update policies
+    - name: iOS update policies
       href: software-updates-ios.md
-    - name: Configure certificates
+    - name: Certificates
       href: certificates-configure.md
       items:
       - name: SCEP
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: Use S/MIME to encrypt email
+      - name: S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
-      - name: Use third-party certificate authority with SCEP
+      - name: Third-party CAs with SCEP
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
       - name: Remove SCEP or PKCS certificates
         href: remove-certificates.md        
-    - name: Configure Windows Information Protection settings
+    - name: Windows Information Protection settings
       href: windows-information-protection-configure.md
+    - name: Shared multi-user devices
+      href: shared-user-device-settings.md
+      items:
+      - name: Windows 10
+        href: shared-user-device-settings-windows.md
+      - name: Windows Holographic for Business
+        href: shared-user-device-settings-windows-holographic.md
     - name: Manage PowerShell scripts
       href: intune-management-extension.md
     - name: Monitor telecom expenses
@@ -511,17 +520,17 @@
   - name: Set device compliance
     href: device-compliance-get-started.md
     items:
-    - name: Create Android policy
+    - name: Android policy
       href: compliance-policy-create-android.md
-    - name: Create Android Enterprise profile policy
+    - name: Android Enterprise profile policy
       href: compliance-policy-create-android-for-work.md
-    - name: Create a policy to enable Google Play Protect
+    - name: Enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Create iOS policy
+    - name: iOS policy
       href: compliance-policy-create-ios.md
-    - name: Create macOS policy
+    - name: macOS policy
       href: compliance-policy-create-mac-os.md
-    - name: Create Windows policy
+    - name: Windows policy
       href: compliance-policy-create-windows.md
     - name: Location-based policy
       href: use-network-locations.md
@@ -692,6 +701,10 @@
         href: custom-settings-windows-holographic.md
       - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
+- name: Help and support
+  items:
+  - name: Tenant status
+    href: tenant-status.md  
 - name: Developer guidance
   items:
   - name: API to add third-party certificate authority
