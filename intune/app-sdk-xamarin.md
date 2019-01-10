@@ -62,6 +62,8 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 The SDK relies on [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
+If your application is already configured to use ADAL or MSAL, and has its own custom client ID used to authenticate with Azure Active Directory, ensure the steps to give your Xamarin app permissions to the Intune Mobile Application Management (MAM) service are followed. Use the instructions in the "[Give your app access to the Intune app protection service](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" section of the [getting started with the Intune SDK guide](app-sdk-get-started.md).
+
 ## Enabling Intune app protection polices in your iOS mobile app
 1. Add the [Microsoft.Intune.MAM.Xamarin.iOS NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) to your Xamarin.iOS project.
 2.	Follow the general steps required for integrating the Intune App SDK into an iOS mobile app. You can begin with step 3 of the integration instructions from the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). You can skip the final step in that section of running the IntuneMAMConfigurator, as this tool is included in the Microsoft.Intune.MAM.Xamarin.iOS package and will be run automatically at build time.
@@ -127,9 +129,6 @@ You have completed the basic steps of building the component into your app. Now 
 ## Requiring Intune app protection policies in order to use your Xamarin-based Android LOB app (optional) 
 
 The following is guidance for ensuring Xamarin-based Android LOB apps can be used only by Intune protected users on their device. 
-
-### General Requirements
-* Ensure the steps to give your Xamarin app permissions to the app protection policy (APP) service are followed. Use the instructions in the [getting started with the Intune SDK guide](app-sdk-get-started.md#next-steps-after-integration) under "Give your app access to the Intune app protection service (optional)". 
 	
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
