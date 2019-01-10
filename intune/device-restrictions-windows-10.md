@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,16 +21,97 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 ---
 
-# Windows 10 (and newer) device restriction settings in Microsoft Intune
+# Windows 10 (and newer) device settings to allow or restrict features using Intune
 
-This article lists and describes all the device restriction settings you can configure for Windows 10 devices. These settings are added to a device configuration profile, and then assigned or deployed to your devices using Microsoft Intune.
+This article lists and describes all the different settings you can control on Windows 10 and newer devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, customize the lock screen, use Windows Defender, and more.
+
+These settings are added to a device configuration profile in Intune, and then assigned or deployed to your Windows 10 devices.
 
 > [!Note]
 > Not all options are available on all editions of Windows
+
+## Before you begin
+
+[Create a device configuration profile](device-restrictions-configure.md).
+
+## App Store
+
+- **App store (mobile only)**: Enable or block use of the app store on Windows 10 Mobile devices.
+- **Auto-update apps from store**: Allows apps installed from the Microsoft Store to be automatically updated.
+- **Trusted app installation**: Allows apps signed with a trusted certificate to be sideloaded.
+- **Developer unlock**: Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
+- **Shared user app data**: Allows apps to share data between different users on the same device.
+- **Use private store only**: Enable to only allow end users to download apps from your private store.
+- **Store originated app launch**: Used to disable all apps that were pre-installed on the device, or downloaded from the Microsoft Store.
+- **Install app data on system volume**: Stops apps from storing data on the system volume of the device.
+- **Install apps on system drive**: Stops apps from storing data on the system drive of the device.
+- **Game DVR (desktop only)**: Configures whether recording and broadcasting of games is allowed.
+- **Apps from the store only**: Configures whether users can install apps from places other than the app store.
+
+## Cellular and Connectivity
+
+- **Cellular data channel**: Stop users from using data, like browsing the web, when they're connected to a cellular network. 
+- **Data roaming**: Allow roaming between networks when accessing data.
+- **VPN over the cellular network**: Controls whether the device can access VPN connections when connected to a cellular network.
+- **VPN roaming over the cellular network**: Controls whether the device can access VPN connections when roaming on a cellular network.
+- **Bluetooth**: Controls whether the user can enable and configure Bluetooth on the device.
+- **Bluetooth discoverability**: Lets the device be discovered by other Bluetooth-enabled devices.
+- **Bluetooth pre-pairing**: Lets you configure specific Bluetooth devices to automatically pair with a host device.
+- **Bluetooth advertising**: Lets the device receive advertisements over Bluetooth.
+- **Connected devices service**: Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
+- **NFC**: Lets the user enable and configure Near Field Communications (NFC) features on the device.
+- **Wi-Fi**: Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
+- **Automatically connect to Wi-Fi hotspots**: Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
+- **Manual Wi-Fi configuration**: Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
+- **Wi-Fi scan interval**: Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
+- **Bluetooth allowed services**: Specify as hex strings, a list of allowed Bluetooth services and profiles.
+
+## Cloud and Storage
+
+- **Microsoft account**: Lets the user associate a Microsoft account with the device.
+- **Non-Microsoft account**: Lets users add email accounts to the device that aren't associated with a Microsoft account.
+- **Settings synchronization for Microsoft account**: Allow device and app settings that are associated with a Microsoft account to synchronize between devices.
+
+## Cloud Printer
+
+- **Printer discovery URL**: Enter the URL for finding cloud printers.
+- **Printer access authority URL**: Enter the Authentication endpoint URL to get OAuth tokens. For example, enter something like `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **Azure native client app GUID**: Enter the GUID of a client application allowed to get OAuth tokens from the OAuthAuthority.
+- **Print service resource URI**: Enter the OAuth resource URI for print service configured in the Azure portal. For example, enter something like `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Maximum printers to query (Mobile only)**: Enter the maximum number of printers that you want to be queried. For example, enter `10`.
+- **Printer discovery service resource URI**: Enter the OAuth resource URI for printer discovery service configured in the Azure portal. For example, enter something like `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to Windows devices.
+
+## Control Panel and Settings
+
+- **Settings app**: Block access to the Windows settings app.
+  - **System**: Blocks access to the system area of the settings app.
+    - **Power and sleep settings modification (desktop only)**: Prevents the end user from changing power and sleep settings on the device.
+  - **Devices**: Blocks access to the devices area of the settings app.
+  - **Network Internet**: Blocks access to the network and internet area of the settings app.
+  - **Personalization**: Blocks access to the personalization area of the settings app.
+  - **Accounts**: Blocks access to the accounts area of the settings app.
+  - **Time and Language**: Blocks access to the time and language area of the settings app.
+    - **System Time modification**: Prevents the end user from changing the device date and time.
+    - **Region settings modification (desktop only)**: Prevents the end user from changing the region settings on the device.
+    - **Language settings modification (desktop only)**: Prevents the user from changing the language settings on the device.
+  - **Gaming**: Blocks access to the Gaming app in Settings.
+  - **Ease of Access**: Blocks access to the ease of access area of the settings app.
+  - **Privacy**: Blocks access to the privacy area of the settings app.
+  - **Update and Security**: Blocks access to the updates and security area of the settings app.
+
+## Display
+
+- **Turn on GDI scaling for apps**
+- **Turn off GDI scaling for apps**
+
+  GDI DPI Scaling lets apps that aren't DPI aware to become per-monitor DPI aware. Enter the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to turn on and turn off on an app, scaling is turned off for the app.
 
 ## General
 
@@ -60,81 +141,58 @@ This article lists and describes all the device restriction settings you can con
 - **Ink Workspace**: Block users from accessing the ink workspace. **Not configured** turns on the ink workspace, and the user is allowed to use it above the lock screen.
 - **Automatic redeployment**: Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
 - **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
+- **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
 
-## Password
+## Kiosk (Preview) - Obsolete
 
-- **Password**: Require the end user to enter a password to access the device.
-  - **Required password type**: Specifies whether the password must be numeric only, or alphanumeric.
-  - **Minimum password length**: Applies to Windows 10 Mobile only.
-  - **Number of sign-in failures before wiping device**: For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign in fails the number of times that you specified. If the device isn't BitLocker enabled, then this setting doesn't apply. For devices running Windows 10 Mobile: After sign in fails the number of times you specify, the device is wiped.
-  - **Maximum minutes of inactivity until screen locks**: Specifies the length of time a device must be idle before the screen is locked.
-  - **Password expiration (days)**: Specifies the length of time after which the device password must be changed.
-  - **Prevent reuse of previous passwords**: Specifies the number of previously used passwords that are remembered by the device.
-  - **Require password when device returns from idle state (Mobile only)**: Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
-  - **Simple passwords**: Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
-- **Encryption**: Enable encryption on targeted devices.
+These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
 
-## Personalization
+A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device.
 
-- **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change the picture.
+- **Kiosk mode**: Identifies the type of kiosk mode supported by the policy. Options include:
 
-## Privacy
+  - **Not Configured** (default): The policy doesn't enable kiosk mode on the device.
+  - **Single app kiosk**: The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
+  - **Multi-app kiosk**: The profile enables the device to run many apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need, and removing from their view the apps they don’t need.
 
-- **Input personalization**: Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
-- **Automatic acceptance of the pairing and privacy user consent prompts**: Allow Windows to automatically accept pairing and privacy consent messages when running apps.
-- **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the task switcher.
-- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity.
+#### Single app kiosks
 
-You can configure information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
+Enter the following settings:
 
-### Exceptions
+- **User account**: Enter the local (to the device) user account, an AD domain account, or an Azure AD account associated with the kiosk app.
+  - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
+  - Domain account: Enter as `domain\accountname`
+  - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
 
-- **Account information**: Define whether this app can access the user name, picture, and other contact info.
-- **Background apps**: Define whether this app can run in the background.
-- **Calendar**: Define whether this app can access the calendar.
-- **Call history**: Define whether this app can access my call history.
-- **Camera**: Define whether this app can access the camera.
-- **Contacts**: Define whether this app can access contacts.
-- **Email**: Define whether this app can access and send email.
-- **Location**: Define whether this app can access location information.
-- **Messaging**: Define whether this app can read or send text or MMS messages.
-- **Microphone**: Define whether this app can use the microphone.
-- **Motion**: Define whether this app can access device motion information.
-- **Notifications**: Define whether this app can access notifications.
-- **Phone**: Define whether this app can access the phone.
-- **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
-- **Tasks**: Define whether this app can access your tasks.
-- **Trusted devices**: Choose if this app can use trusted devices, which is hardware you've already connected, or hardware that comes with the device. For example, use TVs, projectors, and so on as trusted devices.
-- **Feedback and diagnostics**: Choose if this app can access diagnostic information.
-- **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. If using an Azure AD account for kiosk mode, be sure to enter `AzureAD\user@yourorganization.com`.
 
-## Per-app privacy exceptions
+- **Application user model ID (AUMID) of app**: Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-You can add apps that should have a different privacy behavior from what you defined in “Default privacy”.
+#### Multi-app kiosks
 
-- **Package Name**: App package family name.
-- **App Name**: The name of the app.
+[Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) use a kiosk configuration that lists the allowed apps, and other settings. 
 
-### Exceptions
+Use the **Add** button to create a kiosk configuration (or select an existing configuration). Then, enter the following settings:
 
-- **Account information**: Define whether this app can access the user name, picture, and other contact info.
-- **Background apps**: Define whether this app can run in the background.
-- **Calendar**: Define whether this app can access the calendar.
-- **Call history**: Define whether this app can access my call history.
-- **Camera**: Define whether this app can access the camera.
-- **Contacts**: Define whether this app can access contacts.
-- **Email**: Define whether this app can access and send email.
-- **Location**: Define whether this app can access location information.
-- **Messaging**: Define whether this app can read or send text or MMS messages.
-- **Microphone**: Define whether this app can use the microphone.
-- **Motion**: Define whether this app can access device motion information.
-- **Notifications**: Define whether this app can access notifications.
-- **Phone**: Define whether this app can access the phone.
-- **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
-- **Tasks**: Define whether this app can access your tasks.
-- **Trusted devices**: Choose if this app can use trusted devices, which is hardware you've already connected, or hardware that comes with device. For example, use TVs, projectors, and so on as trusted devices.
-- **Feedback and diagnostics**: Define whether this app can access diagnostic information.
-- **Sync with devices**: Choose if this app can automatically share and sync info with wireless devices that don't explicitly pair with the device.
+- **Kiosk configuration name**: Enter a friendly name used to identify the configuration.
+
+- **Kiosk apps**: Enter the apps that are available on the Start menu. The apps you add are the only apps the user can open.
+
+  - **App Type**: Choose the type of the kiosk app:
+    - **Win32 App**: A traditional desktop app. You need the fully qualified pathname of the executable, with respect to the device.
+    - **UWP App**: A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+  - **Identifier**: Enter the fully qualified pathname for the executable file (Win32 apps), or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
+
+- **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
+
+- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
+
+  [Create a Windows 10 kiosk that runs apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
+
+- **Assigned users**: Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account associated with the kiosk app.
+
+    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
 ## Locked screen experience
 
@@ -145,19 +203,11 @@ You can add apps that should have a different privacy behavior from what you def
 - **Toast notifications on locked screen**: Block alert messages from showing on the device lock screen.
 - **Screen timeout (mobile only)**: Specifies the time in seconds after the screen locks, when it will turn off.
 
-## App Store
+## Messaging
 
-- **App store (mobile only)**: Enable or block use of the app store on Windows 10 Mobile devices.
-- **Auto-update apps from store**: Allows apps installed from the Microsoft Store to be automatically updated.
-- **Trusted app installation**: Allows apps signed with a trusted certificate to be sideloaded.
-- **Developer unlock**: Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
-- **Shared user app data**: Allows apps to share data between different users on the same device.
-- **Use private store only**: Enable to only allow end users to download apps from your private store.
-- **Store originated app launch**: Used to disable all apps that were pre-installed on the device, or downloaded from the Microsoft Store.
-- **Install app data on system volume**: Stops apps from storing data on the system volume of the device.
-- **Install apps on system drive**: Stops apps from storing data on the system drive of the device.
-- **Game DVR (desktop only)**: Configures whether recording and broadcasting of games is allowed.
-- **Apps from the store only**: Configures whether users can install apps from places other than the app store.
+- **Message sync (mobile only)**: Disable Messaging Everywhere and text message backup and restore.
+- **MMS (mobile only)**: Disable the MMS send/receive functionality on the device.
+- **RCS (mobile only)**: Disable the Rich Communication Services send/receive functionality on the device.
 
 ## Microsoft Edge Browser
 
@@ -190,7 +240,7 @@ You can add apps that should have a different privacy behavior from what you def
   > [!IMPORTANT]
   > This setting requires you to enable the **Configure the Enterprise Mode Site List** setting, the **Send all intranet sites to Internet Explorer 11** setting, or both settings.
 
-- **Microsoft compatibility list**: **Block** prevents the Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Edge properly display sites with known compatibility issues. **Not configured** allows using a Microsoft compatibility list.
+- **Microsoft compatibility list**: **Block** prevents the Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Microsoft Edge properly display sites with known compatibility issues. **Not configured** allows using a Microsoft compatibility list.
 - **Preload Start pages and New Tab page**: Choose **Block** to prevent Microsoft Edge from preloading start pages and the new tab page. Preloading minimizes the time to start Microsoft Edge, and load a new tab. **Not configured** uses the OS default behavior, which may be to preload these pages.
 - **Prelaunch Start pages and New Tab page**: Choose **Block** to prevent Microsoft Edge from pre-launching the start pages and new tab page. Pre-launching helps the performance of Microsoft Edge, and minimizes the time required to start Microsoft Edge. **Not configured** uses the OS default behavior, which may be to prelaunch these pages.
 
@@ -246,58 +296,130 @@ You can add apps that should have a different privacy behavior from what you def
 
 - **JavaScript**: Choose **Block** to prevent Java scripts in the browser from running on the device. **Not configured** allows scripts, such as Javascript, to run in the Microsoft Edge browser.
 
-## Windows Defender Smart Screen
+## Network proxy
 
-- **SmartScreen for Microsoft Edge**: Enable Microsoft Edge SmartScreen for accessing site and file downloads.
-- **Malicious site access**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
-- **Unverified file download**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
+- **Automatically detect proxy settings**: When enabled, the device tries to find the path to a PAC script.
+- **Use proxy script**: Select this option to enter a path to a PAC script to configure the proxy server.
+  - **Setup script address URL**: Enter the URL of a PAC script you want to use to configure the proxy server.
+- **Use manual proxy server**: Select this option to manually enter proxy server information.
+  - **Address**: Enter the name, or IP address of the proxy server.
+  - **Port number**: Enter the port number of your proxy server.
+  - **Proxy exceptions**: Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
+  - **Bypass proxy server for local address**: If you don't want to use the proxy server for local addresses on your intranet, enable this option.
+
+## Password
+
+- **Password**: Require the end user to enter a password to access the device.
+  - **Required password type**: Specifies whether the password must be numeric only, or alphanumeric.
+  - **Minimum password length**: Applies to Windows 10 Mobile only.
+  - **Number of sign-in failures before wiping device**: For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign in fails the number of times that you specified. If the device isn't BitLocker enabled, then this setting doesn't apply. For devices running Windows 10 Mobile: After sign in fails the number of times you specify, the device is wiped.
+  - **Maximum minutes of inactivity until screen locks**: Specifies the length of time a device must be idle before the screen is locked.
+  - **Password expiration (days)**: Specifies the length of time after which the device password must be changed.
+  - **Prevent reuse of previous passwords**: Specifies the number of previously used passwords that are remembered by the device.
+  - **Require password when device returns from idle state (Mobile only)**: Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
+  - **Simple passwords**: Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
+- **Encryption**: Enable encryption on targeted devices.
+
+## Per-app privacy exceptions
+
+You can add apps that should have a different privacy behavior from what you defined in “Default privacy”.
+
+- **Package Name**: App package family name.
+- **App Name**: The name of the app.
+
+### Exceptions
+
+- **Account information**: Define whether this app can access the user name, picture, and other contact info.
+- **Background apps**: Define whether this app can run in the background.
+- **Calendar**: Define whether this app can access the calendar.
+- **Call history**: Define whether this app can access my call history.
+- **Camera**: Define whether this app can access the camera.
+- **Contacts**: Define whether this app can access contacts.
+- **Email**: Define whether this app can access and send email.
+- **Location**: Define whether this app can access location information.
+- **Messaging**: Define whether this app can read or send text or MMS messages.
+- **Microphone**: Define whether this app can use the microphone.
+- **Motion**: Define whether this app can access device motion information.
+- **Notifications**: Define whether this app can access notifications.
+- **Phone**: Define whether this app can access the phone.
+- **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
+- **Tasks**: Define whether this app can access your tasks.
+- **Trusted devices**: Choose if this app can use trusted devices, which is hardware you've already connected, or hardware that comes with device. For example, use TVs, projectors, and so on, as trusted devices.
+- **Feedback and diagnostics**: Define whether this app can access diagnostic information.
+- **Sync with devices**: Choose if this app can automatically share and sync info with wireless devices that don't explicitly pair with the device.
+
+## Personalization
+
+- **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change the picture.
+
+## Printer
+
+- **Printers**: List of local printers that have been added.
+- **Default printer**: Set the default printer.
+- **User access to add new printers**: Allow or block use of local printers.
+
+## Privacy
+
+- **Input personalization**: Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
+- **Automatic acceptance of the pairing and privacy user consent prompts**: Allow Windows to automatically accept pairing and privacy consent messages when running apps.
+- **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the task switcher.
+- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity.
+
+You can configure information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
+
+### Exceptions
+
+- **Account information**: Define whether this app can access the user name, picture, and other contact info.
+- **Background apps**: Define whether this app can run in the background.
+- **Calendar**: Define whether this app can access the calendar.
+- **Call history**: Define whether this app can access my call history.
+- **Camera**: Define whether this app can access the camera.
+- **Contacts**: Define whether this app can access contacts.
+- **Email**: Define whether this app can access and send email.
+- **Location**: Define whether this app can access location information.
+- **Messaging**: Define whether this app can read or send text or MMS messages.
+- **Microphone**: Define whether this app can use the microphone.
+- **Motion**: Define whether this app can access device motion information.
+- **Notifications**: Define whether this app can access notifications.
+- **Phone**: Define whether this app can access the phone.
+- **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
+- **Tasks**: Define whether this app can access your tasks.
+- **Trusted devices**: Choose if this app can use trusted devices. Trusted devices is hardware you've already connected, or hardware that comes with the device. For example, use TVs, projectors, and so on as trusted devices.
+- **Feedback and diagnostics**: Choose if this app can access diagnostic information.
+- **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
+
+## Projection
+
+- **User input from wireless display receivers**: Blocks user input from wireless display receivers.
+- **Projection to this PC**: Stops other devices from finding the PC for projection.
+- **Require PIN for pairing**: Require a PIN when connecting to a projection device.
+
+## Reporting and Telemetry
+
+- **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
+  - Security
+  - Basic
+  - Enhanced
+  - Full
+- **Send Microsoft Edge browsing data to Microsoft 365 Analytics**: To use this feature, set the **Share usage data** settings to **Enhanced** or **Full**. This feature controls what data Microsoft Edge sends to Microsoft 365 Analytics for enterprise devices with a configured commercial ID. Your options:
+  - **Not configured**: Uses the OS default, which may not send any browsing history data
+  - **Only send intranet data**: Allows the administrator to send intranet data history
+  - **Only send internet data**: Allows the administrator to send internet data history
+  - **Send intranet and internet data**: Allows the administrator to send intranet and internet data history
+- **Telemetry proxy server**: Enter the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if there isn't a proxy entered when this policy is enabled, the Connected User Experiences and Telemetry data isn't sent and stays on the local device.
+
+  Example formats:
+
+  ```
+  IPv4: 192.246.246.106:100
+  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100
+  FQDN: www.contoso.com:345
+  ```
 
 ## Search
 
 - **Safe Search (mobile only)**: Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
 - **Display web results in search**: Block or allow web results to appear in searches made on the device.
-
-## Cloud and Storage
-
-- **Microsoft account**: Lets the user associate a Microsoft account with the device.
-- **Non-Microsoft account**: Lets users add email accounts to the device that aren't associated with a Microsoft account.
-- **Settings synchronization for Microsoft account**: Allow device and app settings that are associated with a Microsoft account to synchronize between devices.
-
-## Cellular and Connectivity
-
-- **Cellular data channel**: Stop users from using data, like browsing the web, when they're connected to a cellular network. 
-- **Data roaming**: Allow roaming between networks when accessing data.
-- **VPN over the cellular network**: Controls whether the device can access VPN connections when connected to a cellular network.
-- **VPN roaming over the cellular network**: Controls whether the device can access VPN connections when roaming on a cellular network.
-- **Bluetooth**: Controls whether the user can enable and configure Bluetooth on the device.
-- **Bluetooth discoverability**: Lets the device be discovered by other Bluetooth-enabled devices.
-- **Bluetooth pre-pairing**: Lets you configure specific Bluetooth devices to automatically pair with a host device.
-- **Bluetooth advertising**: Lets the device receive advertisements over Bluetooth.
-- **Connected devices service**: Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
-- **NFC**: Lets the user enable and configure Near Field Communications features on the device.
-- **Wi-Fi**: Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
-- **Automatically connect to Wi-Fi hotspots**: Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
-- **Manual Wi-Fi configuration**: Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
-- **Wi-Fi scan interval**: Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
-- **Bluetooth allowed services**: Specify as hex strings, a list of allowed Bluetooth services and profiles.
-
-## Control Panel and Settings
-
-- **Settings app**: Block access to the Windows settings app.
-  - **System**: Blocks access to the system area of the settings app.
-    - **Power and sleep settings modification (desktop only)**: Prevents the end user from changing power and sleep settings on the device.
-  - **Devices**: Blocks access to the devices area of the settings app.
-  - **Network Internet**: Blocks access to the network and internet area of the settings app.
-  - **Personalization**: Blocks access to the personalization area of the settings app.
-  - **Accounts**: Blocks access to the accounts area of the settings app.
-  - **Time and Language**: Blocks access to the time and language area of the settings app.
-    - **System Time modification**: Prevents the end user from changing the device date and time.
-    - **Region settings modification (desktop only)**: Prevents the end user from changing the region settings on the device.
-    - **Language settings modification (desktop only)**: Prevents the user from changing the language settings on the device.
-  - **Gaming**: Blocks access to the Gaming app in Settings.
-  - **Ease of Access**: Blocks access to the ease of access area of the settings app.
-  - **Privacy**: Blocks access to the privacy area of the settings app.
-  - **Update and Security**: Blocks access to the updates and security area of the settings app.
 
 ## Start
 
@@ -333,63 +455,22 @@ You can add apps that should have a different privacy behavior from what you def
 - **Settings on Start**: Hide or show the Settings app in the Windows Start menu.
 - **Videos on Start**: Hide or show the folder for videos in the Windows Start menu.
 
-## Display
+## Windows Defender Smart Screen
 
-- **Turn on GDI scaling for apps**
-- **Turn off GDI scaling for apps**
+- **SmartScreen for Microsoft Edge**: Enable Microsoft Edge SmartScreen for accessing site and file downloads.
+- **Malicious site access**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
+- **Unverified file download**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
 
-  GDI DPI Scaling lets apps that aren't DPI aware to become per-monitor DPI aware. Enter the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to turn on and turn off on an app, scaling is turned off for the app.
+## Windows Spotlight
 
-## Kiosk (Preview) - Obsolete
-
-These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
-
-A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device.
-
-- **Kiosk mode**: Identifies the type of kiosk mode supported by the policy. Options include:
-
-  - **Not Configured** (default): The policy doesn't enable kiosk mode on the device.
-  - **Single app kiosk**: The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
-  - **Multi-app kiosk**: The profile enables the device to run many apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need, and removing from their view the apps they don’t need.
-
-#### Single app kiosks
-
-Enter the following settings:
-
-- **User account**: Enter the local (to the device) user account, an AD domain account, or an Azure AD account associated with the kiosk app.
-  - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
-  - Domain account: Enter as `domain\accountname`
-  - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
-
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. If using an Azure AD account for kiosk mode, be sure to enter `AzureAD\user@yourorganization.com`.
-
-- **Application user model ID (AUMID) of app**: Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-#### Multi-app kiosks
-
-[Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) use a kiosk configuration that lists the allowed apps, and other settings. 
-
-Use the **Add** button to create a kiosk configuration (or select an existing configuration). Then, enter the following settings:
-
-- **Kiosk configuration name**: Enter a friendly name used to identify the configuration.
-
-- **Kiosk apps**: Enter the apps that are available on the Start menu. The apps you add are the only apps the user can open.
-
-  - **App Type**: Choose the type of the kiosk app:
-    - **Win32 App**: A traditional desktop app. You need the fully qualified pathname of the executable, with respect to the device.
-    - **UWP App**: A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-  - **Identifier**: Enter the fully qualified pathname for the executable file (Win32 apps), or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
-
-- **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
-
-- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
-
-  [Create a Windows 10 kiosk that runs apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
-
-- **Assigned users**: Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account associated with the kiosk app.
-
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
+- **Windows Spotlight**: Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings aren't available:
+  - **Windows Spotlight on lock screen**: Stop Windows Spotlight from displaying information on the device lock screen.
+  - **Third-party suggestions in Windows Spotlight**: Stop Windows Spotlight from suggesting content that is not published by Microsoft.
+  - **Consumer Features**: Lets you block consumer features like Start menu suggestions, and membership notifications.
+  - **Windows Tips**: Lets you block pop-up tips from displaying in Windows.
+  - **Windows Spotlight in action center**: Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
+  - **Windows Spotlight personalization**: Stops Windows Spotlight from personalizing results based on the usage of a device.
+  - **Windows welcome experience**: Block the Windows welcome experience that shows the user information about new, or updated features.
 
 ## Windows Defender Antivirus
 
@@ -431,80 +512,6 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 - **File extensions to exclude from scans and real-time protection**: Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions aren't included in any real-time or scheduled scans.
 - **Processes to exclude from scans and real-time protection**: Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes aren't included in any real-time, or scheduled scans.
 
-## Network proxy
-
-- **Automatically detect proxy settings**: When enabled, the device tries to find the path to a PAC script.
-- **Use proxy script**: Select this option to enter a path to a PAC script to configure the proxy server.
-  - **Setup script address URL**: Enter the URL of a PAC script you want to use to configure the proxy server.
-- **Use manual proxy server**: Select this option to manually enter proxy server information.
-  - **Address**: Enter the name, or IP address of the proxy server.
-  - **Port number**: Enter the port number of your proxy server.
-  - **Proxy exceptions**: Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
-  - **Bypass proxy server for local address**: If you don't want to use the proxy server for local addresses on your intranet, enable this option.
-
-## Windows Spotlight
-
-- **Windows Spotlight**: Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings aren't available:
-  - **Windows Spotlight on lock screen**: Stop Windows Spotlight from displaying information on the device lock screen.
-  - **Third-party suggestions in Windows Spotlight**: Stop Windows Spotlight from suggesting content that is not published by Microsoft.
-  - **Consumer Features**: Lets you block consumer features like Start menu suggestions, and membership notifications.
-  - **Windows Tips**: Lets you block pop-up tips from displaying in Windows.
-  - **Windows Spotlight in action center**: Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
-  - **Windows Spotlight personalization**: Stops Windows Spotlight from personalizing results based on the usage of a device.
-  - **Windows welcome experience**: Block the Windows welcome experience that shows the user information about new, or updated features.
-
-## Projection
-
-- **User input from wireless display receivers**: Blocks user input from wireless display receivers.
-- **Projection to this PC**: Stops other devices from finding the PC for projection.
-- **Require PIN for pairing**: Require a PIN when connecting to a projection device.
-
-## Cloud Printer
-
-- **Printer discovery URL**: Enter the URL for finding cloud printers.
-- **Printer access authority URL**: Enter the Authentication endpoint URL to get OAuth tokens. For example, enter something like `https://login.microsoftonline.com/your Azure AD Tenant ID`.
-- **Azure native client app GUID**: Enter the GUID of a client application allowed to get OAuth tokens from the OAuthAuthority.
-- **Print service resource URI**: Enter the OAuth resource URI for print service configured in the Azure portal. For example, enter something like `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Maximum printers to query (Mobile only)**: Enter the maximum number of printers that you want to be queried. For example, enter `10`.
-- **Printer discovery service resource URI**: Enter the OAuth resource URI for printer discovery service configured in the Azure portal. For example, enter something like `http://MopriaDiscoveryService/CloudPrint`.
-
-> [!TIP]
-> After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to Windows devices.
-
-## Local Printer
-
-- **Printers**: List of local printers that have been added.
-- **Default printer**: Set the default printer.
-- **User access to add new printers**: Allow or block use of local printers.
-
-## Reporting and Telemetry
-
-- **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
-  - Security
-  - Basic
-  - Enhanced
-  - Full
-- **Send Microsoft Edge browsing data to Microsoft 365 Analytics**: To use this feature, set the **Share usage data** settings to **Enhanced** or **Full**. This feature controls what data Microsoft Edge sends to Microsoft 365 Analytics for enterprise devices with a configured commercial ID. Your options:
-  - **Not configured**: Uses the OS default, which may not send any browsing history data
-  - **Only send intranet data**: Allows the administrator to send intranet data history
-  - **Only send internet data**: Allows the administrator to send internet data history
-  - **Send intranet and internet data**: Allows the administrator to send intranet and internet data history
-- **Telemetry proxy server**: Enter the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if there isn't a proxy entered when this policy is enabled, the Connected User Experiences and Telemetry data isn't sent and stays on the local device.
-
-  Example formats:
-
-  ```
-  IPv4: 192.246.246.106:100
-  IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100
-  FQDN: www.contoso.com:345
-  ```
-
-## Messaging
-
-- **Message sync (mobile only)**: Disable Messaging Everywhere and text message backup and restore.
-- **MMS (mobile only)**: Disable the MMS send/receive functionality on the device.
-- **RCS (mobile only)**: Disable the Rich Communication Services send/receive functionality on the device.
-
-## More Information
+## Next steps
 
 For additional technical details on each setting and what editions of Windows are supported, see [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)
