@@ -94,33 +94,32 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 ## What policies does this wizard set?
 
-|     |       | |
-|----|--------|-|
-|**Name**|Manage Office 365 apps| |
-| **Description**|Created by Manage Office 365 apps wizard| |
-| |  | |
-| **Setting name** |**iOS policy value** | **Android policy value** |
-|Prevent iTunes and iCloud backups| No | N/A |
-|Prevent Android backups |N/A | No|
-|Allow app to transfer data to other apps | All apps | All apps|
-|Allow app to receive data from other apps| All apps | All apps|
-|Prevent "Save As" | No | No|
-|Restrict cut, copy, and paste with other apps | Any app | Any app |
-|Restrict web content to display in a corporate managed browser | No| No|
-|Encrypt app data | When device is locked | Yes|
-|Disable contacts sync | No| No|
-|Disable printing | No | No|
-|Require PIN for access | No | Yes|
-|Number of attempts before PIN reset | N/A |5|
-|Allow simple PIN | N/A |Yes|
-|PIN length | N/A | 4|
-|Allow fingerprint instead of PIN | N/A | Yes |
-|Require corporate credentials for access | No | No|
-|Block managed apps from running on jailbroken or rooted devices | No | No|
-|Recheck the access requirements after (minutes) - Timeout | 30 | 30|
-|Recheck the access requirements after (minutes) - Offline grace period | 720 |720|
-|Offline interval (days) before app data is wiped | 90 | 90|
-|Block screen capture (Android devices only) | N/A | No |
+**Name**: Manage Office 365 apps<br>
+**Description**: Created by Manage Office 365 apps wizard
+
+| Setting name | iOS policy value | Android policy value |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| Prevent iTunes and iCloud backups | No | N/A |
+| Prevent Android backups | N/A | No |
+| Allow app to transfer data to other apps | All apps | All apps |
+| Allow app to receive data from other apps | All apps | All apps |
+| Prevent "Save As" | No | No |
+| Restrict cut, copy, and paste with other apps | Any app | Any app |
+| Restrict web content to display in a corporate managed browser | No | No |
+| Encrypt app data | When device is locked | Yes |
+| Disable contacts sync | No | No |
+| Disable printing | No | No |
+| Require PIN for access | No | Yes |
+| Number of attempts before PIN reset | N/A | 5 |
+| Allow simple PIN | N/A | Yes |
+| PIN length | N/A | 4 |
+| Allow fingerprint instead of PIN | N/A | Yes |
+| Require corporate credentials for access | No | No |
+| Block managed apps from running on jailbroken or rooted devices | No | No |
+| Recheck the access requirements after (minutes) - Timeout | 30 | 30 |
+| Recheck the access requirements after (minutes) - Offline grace period | 720 | 720 |
+| Offline interval (days) before app data is wiped | 90 | 90 |
+| Block screen capture (Android devices only) | N/A | No |
 
 ### Why is an app PIN policy only configured for Android devices?
 Encryption works differently on iOS and Android.
