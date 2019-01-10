@@ -93,7 +93,7 @@ If one profile is assigned to the app and takes effect, and then a second one is
 ## What happens when iOS custom policies conflict?
 Intune does not evaluate the payload of Apple Configuration files or a custom Open Mobile Alliance Uniform Resource Identifier (OMA-URI) profile. It merely serves as the delivery mechanism.
 
-When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. If a custom profile and its settings conflicts, then the settings are applied randomly.
+When you assign a custom profile, ensure that the configured settings do not conflict with compliance, configuration, or other custom policies. If a custom profile and its settings conflict, then the settings are applied randomly.
 
 ## What happens when a profile is deleted or no longer applicable?
 When you delete a profile, or you remove a device from a group that has the profile, the profile and settings are removed from the device according to the following lists:
@@ -144,9 +144,9 @@ If you want to change the profile to a less secure value, then reset security po
 Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, and Windows 10, may need to be retired, and re-enrolled back into the service to apply a less restrictive profile.
 
 ## Some settings in a Windows 10 profile return "Not Applicable"
-Some settings on Windows 10 devices may show as "Not Applicable". When this happens, that specific setting isn't supported on the version or edition of Windows on the device. This can occur for the following reasons:
+Some settings on Windows 10 devices may show as "Not Applicable". When this happens, that specific setting isn't supported on the version or edition of Windows running on the device. This message can occur for the following reasons:
 
-- The setting is only available for newer versions of Windows, and not the current operating system (OS) on the device.
+- The setting is only available for newer versions of Windows, and not the current operating system (OS) version on the device.
 - The setting is only available for specific Windows editions or specific SKUs, such as Home, Professional, Enterprise, and Education.
 
 To learn more about the version and SKU requirements for the different settings, see the [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
