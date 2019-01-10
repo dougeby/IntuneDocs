@@ -94,11 +94,9 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 
 ## What policies does this wizard set?
 
-|     |       | |
-|----|--------|-|
-|**Name**|Manage Office 365 apps| |
-| **Description**|Created by Manage Office 365 apps wizard| |
-| |  | |
+**Name**: Manage Office 365 apps
+**Description**: Created by Manage Office 365 apps wizard
+
 | **Setting name** |**iOS policy value** | **Android policy value** |
 |Prevent iTunes and iCloud backups| No | N/A |
 |Prevent Android backups |N/A | No|
