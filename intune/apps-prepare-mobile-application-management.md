@@ -103,7 +103,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Block screen capture (Android only)|X|X|
 |Support for MAM without device enrollment|X|X|
 |Full Wipe|X|X|
-|Selective Wipe <br></br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Selective Wipe <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
 |Targeted Application Configuration|X||
 |Support for Multi-Identity|X||
@@ -120,6 +120,6 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 
 To learn more about app protection policies and Intune, see the following topics:
 
-  - [Android app wrapping tool](app-wrapper-prepare-android.md)</br>
-  - [iOS app wrapping tool](app-wrapper-prepare-ios.md)</br>
+  - [Android app wrapping tool](app-wrapper-prepare-android.md)<br>
+  - [iOS app wrapping tool](app-wrapper-prepare-ios.md)<br>
   - [Use the SDK to enable apps for mobile application management](app-sdk.md)
