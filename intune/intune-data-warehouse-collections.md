@@ -400,6 +400,7 @@ The **EnrollmentFailureReason** entity indicates a more detailed reason for a de
 | FeatureNotSupported              | The user was attempting to access a feature that is not yet released for all customers or is not compatible with your Intune configuration.                                                            |
 | UserAbandonment                  | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)                                                                                           |
 | APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
+
 ## intuneManagementExtensions
 The **intuneManagementExtension** lists the **intuneManagementExtension** health on each Windows 10 device per day. The data is retained for the last 60 days.
 
