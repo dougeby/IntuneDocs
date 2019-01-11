@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,6 +30,13 @@ ms.custom: intune-classic
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
+
+## 1812 
+_Released December 2018_
+
+### Enrollment Failure Collection Released to v1.0 
+
+The Enrollment Failure collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentActivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmentEventStatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentFailureCategories), and [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentFailureReasons).
 
 ## 1808
 _Released August 2018_
