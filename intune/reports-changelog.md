@@ -36,7 +36,7 @@ _Released December 2018_
 
 ### Enrollment Failure Collection Released to v1.0 
 
-The Enrollment Failure collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentActivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmentEventStatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentFailureCategories), and [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentFailureReasons).
+The Enrollment Failure collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), and [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## 1808
 _Released August 2018_
