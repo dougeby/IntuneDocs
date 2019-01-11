@@ -71,14 +71,15 @@ You can now [enroll your fully managed devices](android-dedicated-devices-fully-
 This public preview includes a core set of features for the Android fully managed solution set. We want to hear about your experience using the preview features using any of your current communication channels to the team (like [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
 
 This preview supports the following features for Android fully managed devices:
-- Device enrollment for users 
-- Device configuration for user groups 
-- Apps and app configuration policies for user groups
+- Device enrollment using NFC, token entry, QR code and Zero Touch
+- Device configuration for user groups
+- App distribution and configuration for user groups
+
 
 When using these preview features, keep the following in mind:
 - Features in preview aren't recommended for mission-critical or production deployments. 
 - Preview features are implemented to Microsoft Intune production standards. However, not all Intune features are available for use with Android fully managed user devices. Preview features are clearly labeled with “(preview)” in the Intune console. 
-- 24x7 on-call support is available for preview features based on customer impact. If customer impact is determined to be small, customer support will be downgraded to business-hours only.
+- The preview features are fully supported through the usual Intune support channels.
 - Enrolling Android fully managed devices using Samsung Knox Mobile Enrollment isn't supported in preview. 
 - Use of the Intune Company Portal app isn't supported on Android fully managed devices. 
 - Intune features like Conditional Access, app protection policies, and certificate deployment aren't supported in preview. 
