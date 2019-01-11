@@ -45,7 +45,10 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+## Week of January 14, 2019
 
+### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
+Intune now supports fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. For more information, see [Set up Intune enrollment of Android fully managed devices](android-fully-managed-enroll.md) and [Enroll your dedicated devices or fully managed devices](android-dedicated-devices-fully-managed-enroll.md).  Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
 ## Week of January 7, 2019
 
