@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Android & Android Enterprise email settings in Microsoft Intune - Azure | Microsoft Docs
-description: Create a device configuration email profiles that use Exchange servers, and retrieve attributes from Azure Active Directory. Enable SSL or SMIME, authenticate users with certificates or username/password, and synchronize email and schedules on Android and Android work profile devices using Microsoft Intune.
+title: Android email settings in Microsoft Intune - Azure | Microsoft Docs
+description: Create a device configuration email profiles that use Exchange servers, and retrieve attributes from Azure Active Directory. Enable SSL or SMIME, authenticate users with certificates or username/password, and synchronize email and schedules on Android Samsung Knox devices using Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,27 +25,26 @@ ms.custom: seodec18
 
 ---
 
-# Android and Android Enterprise device settings to configure email, authentication, and synchronization in Intune
+# Android device settings to configure email, authentication, and synchronization in Intune
 
-This article lists and describes the different email settings you can control on Android and Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to configure an email server, use SSL to encrypt emails, and more.
+This article lists and describes the different email settings you can control on Android Samsung Knox devices in Intune. As part of your mobile device management (MDM) solution, use these settings to configure an email server, use SSL to encrypt emails, and more.
 
-As an Intune administrator, you can create and assign email settings to the following Android devices:
+As an Intune administrator, you can create and assign email settings to Android Samsung Knox Standard devices.
 
-- Android Samsung Knox Standard
-- Android Enterprise
+To learn more about email profiles in Intune, see [configure email settings](email-settings-configure.md).
 
 ## Before you begin
 
-[Create a device configuration profile](email-settings-configure.md).
+[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
 
 ## Android (Samsung Knox)
 
-- **Email server**: Enter the host name of your Exchange server.
+- **Email server**: Enter the host name of your Exchange server. For example, enter `outlook.office365.com`.
 - **Account name**: Enter the display name for the email account. This name is shown to users on their devices.
-- **Username attribute from AAD**: This name is the attribute Intune gets from Azure Active Directory (AAD). Intune dynamically generates the username that's used by this profile. Your options:
+- **Username attribute from AAD**: This name is the attribute Intune gets from Azure Active Directory (Azure AD). Intune dynamically generates the username that's used by this profile. Your options:
   - **User Principal Name**: Gets the name, such as `user1` or `user1@contoso.com`
   - **User name**: Gets only the name, such as `user1`
-  - **sAM Account Name**: Requires the domain, such as `domain\user1`. sAM account name can only be used with Android devices. Android Enterprise isn't supported.
+  - **sAM Account Name**: Requires the domain, such as `domain\user1`. sAM account name is only used with Android devices.
 
     Also enter:  
     - **User domain name source**: Choose **AAD** (Azure Active Directory) or **Custom**.
@@ -56,7 +55,9 @@ As an Intune administrator, you can create and assign email settings to the foll
       When choosing to use **Custom** attributes, enter:
       - **Custom domain name to use**: Enter a value that Intune uses for the domain name, such as `contoso.com` or `contoso`
 
-- **Email address attribute from AAD**: Choose how the email address for the user is generated. Select **User principal name** (`user1@contoso.com` or `user1`) to use the full principal name as the email address, or **Primary SMTP address** (`user1@contoso.com`) to use the primary SMTP address to sign in to Exchange.
+- **Email address attribute from AAD**: This name is the email attribute Intune gets from Azure AD. Intune dynamically generates the email address that's used by this profile. Your options:
+  - **User principal name**:  Uses the full principal name, such as `user1@contoso.com` or `user1`, as the email address.
+  - **Primary SMTP address**: Uses the primary SMTP address, such as `user1@contoso.com`, to sign in to Exchange.
 
 - **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
   - If you select **Certificate**, select a client SCEP or PKCS certificate profile that you previously created to authenticate the Exchange connection.
@@ -74,25 +75,13 @@ As an Intune administrator, you can create and assign email settings to the foll
 
 ### Content sync settings
 
-- **Content type to sync**: Select the content types that you want to synchronize to devices from:
-  - **Contacts**
-  - **Calendar**
-  - **Tasks**
-
-## Android Enterprise
-
-- **Email app**: Select either **Gmail** or **Nine Work**
-- **Email server**: The host name of your Exchange server.
-- **Username attribute from AAD**: This name is the attribute in Active Directory (AD) or Azure AD, that is used to generate the username for this email profile. Select **Primary SMTP Address**, such as user1@contoso.com or **User Principal Name**, such as user1 or user1@contoso.com.
-- **Email address attribute from AAD**: How the email address for the user on each device is generated. Select **User Principal Name** to use the full principal name as the email address or **User name**.
-- **Authentication method**: Select either **Username and Password** or **Certificates** as the authentication method used by the email profile.
-  - If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created to authenticate the Exchange connection.
-- **SSL**: Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
-- **Amount of email to synchronize**: Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
-- **Content type to sync** (Nine Work only): Select the content types that you want to synchronize to devices from:
-  - **Contacts**
-  - **Calendar**
-  - **Tasks**
+- **Content type to sync**: Choose which data you want to synchronize on the devices. Your options:
+  - **Contacts**: Choose **Enable** to allow end users to sync contacts to their devices.
+  - **Calendar**: Choose **Enable** to allow end users to sync the calendar to their devices.
+  - **Tasks**: Choose **Enable** to allow end users to sync any tasks to their devices.
 
 ## Next steps
-[Configure email settings in Intune](email-settings-configure.md)
+
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+You can also create email profiles for [Android Enterprise - work profile](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md).
