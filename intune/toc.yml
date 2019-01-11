@@ -200,7 +200,7 @@
       - name: Set up Android fully managed enrollment
         href: android-fully-managed-enroll.md
       - name: Enroll Android kiosk or fully managed devices
-        href: android-dedicated-device-fully-managed-enroll.md
+        href: android-dedicated-devices-fully-managed-enroll.md
       - name: Manage Android work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 

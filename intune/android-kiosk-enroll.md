@@ -102,7 +102,7 @@ Replacing or revoking a token/QR code won't have any effect on devices that are 
 
 ## Enroll the dedicated devices
 
-You can now [enroll your dedicated devices](android-kiosk-fully-managed-enroll.md).
+You can now [enroll your dedicated devices](android-dedicated-devices-fully-managed-enroll.md).
 
 ## Managing apps on Android dedicated devices
 
