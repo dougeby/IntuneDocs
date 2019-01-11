@@ -32,7 +32,7 @@ ms.custom: intune-azure
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-To support Android work profile devices and Android kiosk devices, you must connect your Intune tenant account to your Android enterprise account. 
+To support [Android work profile](android-work-profile-enroll.md), [Android fully managed](android-fully-managed-enroll.md), and [Android dedicated devices](android-kiosk-enroll.md), you must connect your Intune tenant account to your Android enterprise account.  
 
 > [!NOTE]
 > Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings.  Make sure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.

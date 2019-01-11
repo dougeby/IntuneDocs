@@ -195,8 +195,12 @@
         href: connect-intune-android-enterprise.md
       - name: Set up Android work profile enrollment
         href: android-work-profile-enroll.md
-      - name: Set up Android kiosk enrollment
+      - name: Set up Android dedicated device enrollment
         href: android-kiosk-enroll.md
+      - name: Set up Android fully managed enrollment
+        href: android-fully-managed-enroll.md
+      - name: Enroll Android kiosk or fully managed devices
+        href: android-dedicated-device-fully-managed-enroll.md
       - name: Manage Android work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 
