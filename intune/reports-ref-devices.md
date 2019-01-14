@@ -48,7 +48,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | DeviceTypeKey |Unique identifier of the device type in the data warehouse - surrogate key |
 | DeviceTypeName |Device type |
 
-## Example
+### Example
 
 | deviceTypeID  | Name | Description |
 |---------|------------|--------|
@@ -83,7 +83,7 @@ The **ClientRegistrationStateTypes** entity represents the registration type ref
 | clientRegisterationStateKey |Unique identifier of the registration state in the data warehouse - surrogate key |
 | clientRegisterationStateName |Registration state |
 
-## Example
+### Example
 
 | ClientRegisterationStateID  | Name | Description |
 |---------|------------|--------|
@@ -97,6 +97,93 @@ The **ClientRegistrationStateTypes** entity represents the registration type ref
 | 7 |NotRegisteredPendingEnrollment |Not registered pending enrollment |
 | 8 |Unknown |Unknown state |
 
+## enrollmentActivities 
+The **EnrollmentActivity** entity indicates the activity of a device enrollment.
+
+| Property                      | Description                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Key of the date when this enrollment activity was recorded.               |
+| deviceEnrollmentTypeKey       | Key of the type of the enrollment.                                        |
+| deviceTypeKey                 | Key of the type of device.                                                |
+| enrollmentEventStatusKey      | Key of the status indicating the success or failure of the enrollment.    |
+| enrollmentFailureCategoryKey  | Key of the enrollment failure category (if the enrollment failed).        |
+| enrollmentFailureReasonKey    | Key of the enrollment failure reason (if the enrollment failed).          |
+| osVersion                     | The operating system version of the device.                               |
+| count                         | Total count of enrollment activities matching the classifications above.  |
+
+## enrollmentEventStatuses 
+The **EnrollmentEventStatus** entity indicates the result of a device enrollment.
+
+| Property                   | Description                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Unique identifier of the enrollment status in the data warehouse (surrogate key)  |
+| enrollmentEventStatusName  | The name of the enrollment status. See examples below.                            |
+
+### Example
+
+| enrollmentEventStatusName  | Description                            |
+|----------------------------|----------------------------------------|
+| Success                    | A successful device enrollment         |
+| Failed                     | A failed device enrollment             |
+| Not Available              | The enrollment status is unavailable.  |
+
+## enrollmentFailureCategories 
+The **EnrollmentFailureCategory** entity indicates why a device enrollment failed. 
+
+| Property                       | Description                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Unique identifier of the enrollment failure category in the data warehouse (surrogate key)  |
+| enrollmentFailureCategoryName  | The name of the enrollment failure category. See examples below.                            |
+
+### Example
+
+| enrollmentFailureCategoryName   | Description                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Not Applicable                  | The enrollment failure category is not applicable.                                                            |
+| Not Available                   | The enrollment failure category is not available.                                                             |
+| Unknown                         | Unknown error.                                                                                                |
+| Authentication                  | Authentication failed.                                                                                        |
+| Authorization                   | Call was authenticated, but not authorized to enroll.                                                         |
+| AccountValidation               | Failed to validate the account for enrollment. (Account blocked, enrollment not enabled)                      |
+| UserValidation                  | User could not be validated. (User does not exist, missing license)                                           |
+| DeviceNotSupported              | Device is not supported for mobile device management.                                                         |
+| InMaintenance                   | Account is in maintenance.                                                                                    |
+| BadRequest                      | Client sent a request that is not understood/supported by the service.                                        |
+| FeatureNotSupported             | Feature(s) used by this enrollment are not supported for this account.                                        |
+| EnrollmentRestrictionsEnforced  | Enrollment restrictions configured by admin blocked this enrollment.                                          |
+| ClientDisconnected              | Client timed out or enrollment was aborted by enduser.                                                        |
+| UserAbandonment                 | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)  |
+
+## enrollmentFailureReasons  
+The **EnrollmentFailureReason** entity indicates a more detailed reason for a device enrollment failure within a given failure category.  
+
+| Property                     | Description                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Unique identifier of the enrollment failure reason in the data warehouse (surrogate key)  |
+| enrollmentFailureReasonName  | The name of the enrollment failure reason. See examples below.                            |
+
+### Example
+
+| enrollmentFailureReasonName      | Description                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Not Applicable                   | The enrollment failure reason is not applicable.                                                                                                                                                       |
+| Not Available                    | The enrollment failure reason is not available.                                                                                                                                                        |
+| Unknown                          | Unknown Error.                                                                                                                                                                                         |
+| UserNotLicensed                  | The user was not found in Intune or does not have a valid license.                                                                                                                                     |
+| UserUnknown                      | User is not known to Intune.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Only one user can enroll a device. This device was previously enrolled by another user.                                                                                                                |
+| EnrollmentOnboardingIssue        | Intune mobile device management (MDM) authority is not configured yet.                                                                                                                                 |
+| AppleChallengeIssue              | The iOS management profile installation was delayed or failed.                                                                                                                                         |
+| AppleOnboardingIssue             | An Apple MDM push certificate is required to enroll into Intune.                                                                                                                                       |
+| DeviceCap                        | The user attempted to enroll more devices than maximum allowed.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Intune enrollment service failed to authorize this request.                                                                                                                                            |
+| UnsupportedDeviceType            | This device does not meet minimum requirements for Intune enrollment.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | This device failed to enroll due to a configured enrollment restriction rule.                                                                                                                          |
+| BulkDeviceNotPreregistered       | This device’s international mobile equipment identifier (IMEI) or serial number wasn’t found.  Without this identifier, devices are recognized as personal-owned devices which are currently blocked.  |
+| FeatureNotSupported              | The user was attempting to access a feature that is not yet released for all customers or is not compatible with your Intune configuration.                                                            |
+| UserAbandonment                  | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)                                                                                           |
+| APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
+
 ## EnrollmentTypes
 
 The **EnrollmentTypes** entity indicates how a device was enrolled. The enrollment type captures the method of enrollment. Examples list the different enrollment types and what they mean.
@@ -107,7 +194,7 @@ The **EnrollmentTypes** entity indicates how a device was enrolled. The enrollme
 | managementStateKey |Unique identifier of the management state in the data warehouse - surrogate key. |
 | managementStateName |Indicates the state of the remote action applied to this device. |
 
-## Example
+### Example
 
 | enrollmentTypeID  | Name | Description |
 |---------|------------|--------|
@@ -142,7 +229,7 @@ The **MdmStatuses** entity indicates compliance state of the device.
 | ComplianceStatus |Compliance state of the device, Should have one of the values from the table below | 
 
 
-## Example
+### Example
 
 | MdmStatusID  | ComplianceStatus | Description |
 |---------|------------|--------|
@@ -163,7 +250,7 @@ The **ManagementStates** entity provides details on the state of the device. Det
 | managementStateKey | Unique identifier of the management state in the data warehouse - surrogate key. |
 | managementStateName | Indicates the state of the remote action applied to this device. |
 
-## Example
+### Example
 
 | managementStateID  | Name | Description |
 |---------|------------|--------|
@@ -190,7 +277,7 @@ The **WorkPlaceJoinStateTypes** entity represents the Azure Active Directory Wor
 | WorkPlaceJoinStateKey | Unique identifier of the work place join state in the data warehouse - surrogate key |
 | WorkPlaceJoinStateName | Work place join state |
 
-## Example
+### Example
 
 | workPlaceJoinStateID  | Name | Description |
 |---------|------------|--------|
@@ -214,7 +301,7 @@ The **ManagementAgentTypes** entity represents the agents used to manage a devic
 | ManagementAgentTypeKey | Unique identifier of the management agent type in the data warehouse - surrogate key. |
 | ManagementAgentTypeName |Indicates what kind of agent is used to manage the device. |
 
-## Example
+### Example
 
 | ManagementAgentTypeID  | Name | Description |
 |---------|------------|--------|
