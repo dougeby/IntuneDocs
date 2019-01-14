@@ -4,10 +4,10 @@
 title: Configure Windows Update for Business in Microsoft Intune - Azure | Microsoft Docs
 description: Update the Software Update settings in a profile to creating an update ring, review compliance, and pause updates in Windows Update for Business settings using Microsoft Intune on Windows 10 devices.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -113,7 +113,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
    - **Block user from pausing Windows updates**: Allowed by default. Use this setting to block or allow your users to pause update installation from the *Settings* of their machines. 
       
-   - **Delivery optimization download mode**: Choose the method for which devices download Windows updates. For details, see [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Delivery optimization download mode**: Delivery optimization is no longer configured as a Windows 10 Update Ring, as part of Software Updates. Previous configurations remain available in the console. You can remove them by editing them to be Not configured, but they cannot otherwise be modified. To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization]( delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile. 
 
 5. When done, select **OK**. In **Create Update Ring**, select **Create**.
 
