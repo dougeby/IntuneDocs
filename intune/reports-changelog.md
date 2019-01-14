@@ -47,7 +47,7 @@ You can now use the v1.0 version of the Intune Data Warehouse by setting the que
 
 ### Enrollment Activities Collection Released to Beta
 
-The new `Enrollment Failure` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
+The new `Enrollment Activities` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
 
 
 ## 1805
