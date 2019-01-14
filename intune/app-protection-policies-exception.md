@@ -5,8 +5,8 @@ title: Data transfer policy exceptions for apps
 titleSuffix: Microsoft Intune
 description: Create exceptions to the Intune Mobile Application Management (MAM) data transfer policy.
 keywords:
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 03/28/2018
 ms.topic: article
