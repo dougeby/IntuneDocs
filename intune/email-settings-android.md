@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,11 +74,12 @@ As an Intune administrator, you can create and assign email settings to the foll
 
 ### Content sync settings
 
-- **Content type to sync**: Select the content types that you want to synchronize to devices from:
+- **Content type to sync**: Select the content types that you want to synchronize on the devices. **Not configured** disables this setting. When set to **Not configured**, if an end user enables synchronization on the device, synchronization is disabled again when the device syncs with Intune, as the policy is reinforced. 
+
+  You can sync the following content: 
   - **Contacts**
   - **Calendar**
   - **Tasks**
-
 
 ## Android Enterprise
 
@@ -94,9 +95,6 @@ As an Intune administrator, you can create and assign email settings to the foll
   - **Contacts**
   - **Calendar**
   - **Tasks**
-
-[!Note]
-For the "Content type to Sync" in the Samsung Knox email profile the setting: "Not Configured" is equal to Disabled. If the user tries to Enable the synchronization on the device, it will be Disabled once again when the device sync with Intune and the policy is reinforced.
 
 ## Next steps
 [Configure email settings in Intune](email-settings-configure.md)
