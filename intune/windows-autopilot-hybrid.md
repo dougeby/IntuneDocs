@@ -123,6 +123,9 @@ The Intune Connector for Active Directory needs to be installed on a computer ru
 7. Enter user Global Administrator or Intune Administrator role credentials.
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** and confirm the connection status is **Active**.
 
+ > [!NOTE]
+ > After you **Sign In** in the Connector, it might take a couple minutes for it to show up in [Intune](https://aka.ms/intuneportal). Beware that the Connector will only show if it's able to sucessfully communicate with the Intune service.
+
 ### Configure web proxy settings
 
 If you have a web proxy in your networking environment, follow the instructions here so that the Intune Connector for Active Directory works properly: [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
