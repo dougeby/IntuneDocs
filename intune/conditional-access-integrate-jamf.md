@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/12/2019
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -88,51 +88,9 @@ To connect Intune with Jamf Pro you:
 
 After you configure integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
 
-## Information shared from Jamf Pro to Intune
 
-Jamf Pro captures inventory information about managed macOS devices. Jamf Pro reports the following information to Intune:
-
-* Device Azure AD ID
-* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
-* OS Version
-* User Azure AD ID
-* Encrypted (FileVault 2)
-* Gatekeeper Status
-* Password: minimum number of character sets
-* Password expiration (days)
-* Password Type - simple, alphanumeric, or unknown
-* Prevent Auto Login
-* Required Passcode Length
-* Password: number of previous passwords to prevent reuse
-* System Integrity Protection
-* Last Check-In Time
-* Architecture Type
-* Available RAM Slots
-* Battery Capacity
-* Boot ROM
-* Bus Speed
-* Cache Size
-* Device Name
-* Domain Join
-* Jamf ID
-* MAC address
-* Make
-* Model
-* Model Identifier
-* NIC Speed
-* Number of Cores
-* Number of Processors
-* OS
-* Platform
-* Processor Speed
-* Processor Type
-* Secondary MAC Address
-* Serial Number
-* SMC Version
-* Total RAM
-* UDID
-* User Email
 
 ## Next steps
 
 - [Apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md)
+- [Data Jamf sends to Intune](data-jamf-sends-to-intune.md)
