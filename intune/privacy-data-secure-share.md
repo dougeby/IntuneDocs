@@ -68,8 +68,8 @@ For information about data shared with certain third parties, see the following 
 - [Data Intune sends to Google](data-intune-sends-to-google.md)
 - [Data Apple sends to Intune](data-apple-sends-to-intune.md)
 - [Data Google sends to Intune](data-google-sends-to-intune.md)
-- [Information shared from Jamf Pro to Intune](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
-
+- [Data Jamf Pro sends to Intune](data-jamf-sends-to-intune.md)
+o
 ### System Center Configuration Manager data sharing
 
 Microsoft Intune does not share any data with the System Center Configuration Manager. System Center Configuration Manager is an on-premise product deployed, managed, and operated directly by the customer. The diagnostics and usage data that is collected by Configuration Manager are only to improve the installation experience, quality, and security of future releases.
