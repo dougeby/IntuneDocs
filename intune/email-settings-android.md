@@ -91,7 +91,9 @@ As an Intune administrator, you can create and assign email settings to the foll
   - If you selected **Certificate**, select a client SCEP or PKCS certificate profile that you previously created to authenticate the Exchange connection.
 - **SSL**: Use Secure Sockets Layer (SSL) communication when sending emails, receiving emails, and communicating with the Exchange server.
 - **Amount of email to synchronize**: Choose the number of days of email that you want to synchronize, or select **Unlimited** to synchronize all available email.
-- **Content type to sync** (Nine Work only): Select the content types that you want to synchronize to devices from:
+- **Content type to sync** (Nine Work only): Select the content types that you want to synchronize on the devices. **Not configured** disables this setting. When set to **Not configured**, if an end user enables synchronization on the device, synchronization is disabled again when the device syncs with Intune, as the policy is reinforced. 
+
+  You can sync the following content: 
   - **Contacts**
   - **Calendar**
   - **Tasks**
