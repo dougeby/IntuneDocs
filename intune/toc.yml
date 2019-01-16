@@ -279,8 +279,6 @@
     - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
-      - name: MOVE-Android Enterprise & kiosk
-        href: wi-fi-settings-android-enterprise.md
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
     - name: Education settings
