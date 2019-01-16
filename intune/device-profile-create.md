@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,14 +32,15 @@ ms.custom: intune-azure
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## Create the profile
-1. In the [Azure portal](https://portal.azure.com), select **All Services**, and search for **Microsoft Intune**.
 
-2. In **Microsoft Intune**, select **Device configuration**, and select **Profiles**. Then select **Create Profile**.
+1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+
+2. Select **Device configuration** > **Profiles** > **Create Profile**.
 
 3. Enter the following properties:
 
    - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. (This is optional, but recommended.)
+   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Select the platform type:  
 
        - **Android**
@@ -51,7 +52,7 @@ ms.custom: intune-azure
        - **Windows 10 and later**
 
    - **Profile type**: Select the type you want to create. The list depends on the platform you choose.
-   - **Settings**: The following topics describe the settings for each profile type:
+   - **Settings**: The following articles describe the settings for each profile type:
 
        -  [Device features](device-features-configure.md)
        -  [Device restrictions](device-restrictions-configure.md)

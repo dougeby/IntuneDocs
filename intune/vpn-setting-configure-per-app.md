@@ -38,9 +38,9 @@ Per-app VPN is currently available for the following providers:
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Palo Alto Networks
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Zscaler Private Access
 
 ## Prerequisites for per-app VPN
 
@@ -191,10 +191,12 @@ With your per-app VPN set-up and associated with your app, verify the connection
     - Check Point Capsule Connect
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Zscaler App
+    - Zscaler
 
     > [!NOTE]
     > If you are using the Pulse Secure VPN app, you can choose to use app-layer or packet-layer tunneling. Set the **ProviderType** value to **app-proxy** for app-layer tunneling or **packet-tunnel** for packet-layer tunneling.

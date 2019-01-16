@@ -92,7 +92,7 @@ The relationship is displayed in a From column to a To column. In this example, 
 
 A treemap chart shows hierarchical data as boxes with in boxes. Each branch of the hierarchy is a box contains smaller boxes showing subbranches. You can use Power BI desktop to create a treemap of your Intune data.
 
-![Visualizations > treemap](media/reports-create-03-treemap.png)
+![Power BI treemap visualizations](media/reports-create-03-treemap.png)
 
 1. Select a chart type. Select **Treemap**.
 2. In the data model, find the **devices** table.

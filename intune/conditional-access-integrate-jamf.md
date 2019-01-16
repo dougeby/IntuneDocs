@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/04/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 Applies to: Intune in the Azure portal
 
-If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end users' Macs, you can use Microsoft Intune compliance policies with Azure Active Directory conditional access to ensure that devices in your organization are compliant.
+If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end-users Macs, you can use Microsoft Intune compliance policies with Azure Active Directory conditional access to ensure that devices in your organization are compliant.
 
 ## Prerequisites
 
@@ -42,42 +42,39 @@ You need the following to configure conditional access with Jamf Pro:
 
 ## Connecting Intune to Jamf Pro
 
-You can connect Intune with Jamf Pro by:
+To connect Intune with Jamf Pro you:
 
-1. Creating a new application in Azure
-2. Enabling Intune to integrate with Jamf Pro
+1. Create a new application in Azure
+2. Enable Intune to integrate with Jamf Pro
 3. Configure conditional access in Jamf Pro
 
-## Create a new application in Azure Active Directory
+## Create an application in Azure Active Directory
 
-1. Open **Azure Active Directory** > **App Registrations**.
-2. Click **+New application registration**.
+1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory** > **App Registrations**.
+2. Select **+New application registration**.
 3. Enter a **display name**, such as **Jamf Conditional Access**.
 4. Select **Web app / API**.
 5. Specify the **Sign-On URL** using your Jamf Pro instance URL.
-6. Click **Create application**.
-7. Save the newly-created **Application ID**, then open **Settings** and navigate to **API Access** > **Keys** to create a new Application Key. Enter a **Description**, how long to wait before it **Expires**, then save the Application Key.
+6. Select **Create**. The application is created and the portal presents the application details.
+7. Save a copy of the **Application ID** for the new application. You specify this ID in a later procedure. Next, select **Settings** and go to **API Access** > **Keys**.
+8. On the *Keys* pane, specify a **Description**, how long to wait before it **Expires**, and then select **Save** to generate the Application Key (Value).
 
    > [!IMPORTANT]
    > The Application Key is only shown once during this process. Be sure to save it somewhere where you can easily retrieve it.
 
-8. Open **Settings**, then navigate to **API Access** > **Required Permissions** and delete all permissions.
-
-   > [!NOTE]
-   > Add a new required permission. The application can have only work properly if it has the single required permission.
-
-9. Select **Microsoft Intune API** and click **Select**.
-10. Choose **Send device attributes to Microsoft Intune** and click **Select**.
-11. Click the **Grant Permissions** button after saving the required permissions for the application.
+8. On the *Settings* pane for the app, navigate to **API Access** > **Required Permissions**. Select any existing permissions and then click **Delete** and delete all permissions. Deleting existing permissions is necessary as you add a new permission, and the application only works if it has the single required permission.  
+9. To assign a new permission, select **+Add** > **Select an API** > **Microsoft Intune API**, and then click **Select**.
+10. On the *Enable Access* pane, select **Send device attributes to Microsoft Intune** and then click **Select**, and then **Done**.
+11. On the *Required permissions* pane, select **Grant Permissions** and then **Yes** to apply the required permissions to the application.
 
     > [!NOTE]
     > If the Application Key expires, you must create a new Application Key in Microsoft Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old key and new key active to prevent service disruptions.
 
 ## Enable Intune to integrate with Jamf Pro
 
-1. In the Microsoft Azure portal, open **Microsoft Intune** > **Device Compliance** > **Partner device management**.
-2. Enable the Compliance Connector for Jamf by pasting the Application ID into the **Jamf Azure Active Directory App ID** field.
-3. Click **Save**.
+1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Intune** > **Device Compliance** > **Partner device management**.
+2. Enable the Compliance Connector for Jamf by pasting the Application ID you saved during the previous procedure into the **Jamf Azure Active Directory App ID** field.
+3. Select **Save**.
 
 ## Configure Microsoft Intune Integration in Jamf Pro
 
@@ -85,57 +82,15 @@ You can connect Intune with Jamf Pro by:
 **Microsoft Intune Integration** tab.
 2. Select the checkbox for **Enable Microsoft Intune Integration**.
 3. Provide the required information about your Azure tenant, including **Location**, **Domain name**, and the **Application ID** and **Application Key** you saved from the previous steps.
-4. Click **Save**. Jamf Pro will test your settings and verify your success.
+4. Select **Save**. Jamf Pro tests your settings and verify your success.
 
 ## Set up compliance policies and register devices
 
-After you finish configuring integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
+After you configure integration between Intune and Jamf, you need to [apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md).
 
-## Information shared from Jamf Pro to Intune
 
-Jamf Pro captures inventory information about managed macOS devices. Jamf Pro reports the following information to Intune:
-
-* Device Azure AD ID
-* JAMF Inventory State (inventory state of a computer checked in with Jamf Pro within the last 24 hours)
-* OS Version
-* User Azure AD ID
-* Encrypted (FileVault 2)
-* Gatekeeper Status
-* Password: minimum number of character sets
-* Password expiration (days)
-* Password Type - simple, alphanumeric, or unknown
-* Prevent Auto Login
-* Required Passcode Length
-* Password: number of previous passwords to prevent reuse
-* System Integrity Protection
-* Last Check-In Time
-* Architecture Type
-* Available RAM Slots
-* Battery Capacity
-* Boot ROM
-* Bus Speed
-* Cache Size
-* Device Name
-* Domain Join
-* Jamf ID
-* MAC address
-* Make
-* Model
-* Model Identifier
-* NIC Speed
-* Number of Cores
-* Number of Processors
-* OS
-* Platform
-* Processor Speed
-* Processor Type
-* Secondary MAC Address
-* Serial Number
-* SMC Version
-* Total RAM
-* UDID
-* User Email
 
 ## Next steps
 
 - [Apply compliance policies to Jamf-managed devices](conditional-access-assign-jamf.md)
+- [Data Jamf sends to Intune](data-jamf-sends-to-intune.md)

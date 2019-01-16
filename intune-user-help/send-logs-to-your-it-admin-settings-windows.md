@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,11 @@ ms.custom: intune-enduser
 
 # Send logs to your company support from the Settings app for Windows 10
 
-If you get an error while you’re using your Windows 10 device that is managed by your company, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+Use the Settings app to troubleshoot Company Portal for Windows 10. If you run into a problem while using the app on your Windows 10 device, you can email your support team for help. Events and errors that occur in the Company Portal app are saved on your device in a special document called a _diagnostic log_. They can contain additional insights about the error, and when exported are useful to support teams.
 
-1. Open the Windows **Settings** app by going to the **Start menu** and selecting the **Settings** button. You can also search for "settings" in the search bar.
+1. To open the **Settings** app, go to the **Start** menu > **Settings**. You can also search for *settings* in the search bar.
 2. Go to **Accounts** > **Access work or school**.
-3. Select "Export your management log files."
+3. Select **Export your management log files**.
 
    ![The "Access work or school screen", which presents the Export option underneath the "Related settings" heading.](./media/w10-export-logs.png)
 
