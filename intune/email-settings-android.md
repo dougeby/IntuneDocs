@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,7 +75,9 @@ To learn more about email profiles in Intune, see [configure email settings](ema
 
 ### Content sync settings
 
-- **Content type to sync**: Choose which data you want to synchronize on the devices. Your options:
+- **Content type to sync**: Select the content types that you want to synchronize on the devices. **Not configured** disables this setting. When set to **Not configured**, if an end user enables synchronization on the device, synchronization is disabled again when the device syncs with Intune, as the policy is reinforced. 
+
+  You can sync the following content:  
   - **Contacts**: Choose **Enable** to allow end users to sync contacts to their devices.
   - **Calendar**: Choose **Enable** to allow end users to sync the calendar to their devices.
   - **Tasks**: Choose **Enable** to allow end users to sync any tasks to their devices.

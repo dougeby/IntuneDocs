@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ running on your local machine references the Intune Data Warehouse API when the 
      `https://www.getpostman.com/oauth2/callback`. You will use the callback for client authentication step when authenticating to Azure AD.
 4.  Select **Create**.
 
-     ![Intune Data Warehouse API](./media/reports-get_rest_data_client_overview.png)
+     ![Intune Data Warehouse client app](./media/reports-get_rest_data_client_overview.png)
 
 5. Note the **Application ID** of this app. You will use the ID in the next section.
 
@@ -140,7 +140,7 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 
 12. Select **Request Token**.
 
-    ![Information for the token](./media/reports-postman_getnewtoken.png)
+    ![Information for the access token](./media/reports-postman_getnewtoken.png)
 
 13. Type your credentials in the Active AD authorization page. The list of tokens in Postman now contains the token named `Bearer`.
 14. Select **Use Token**. The list of headers contains the new key value of Authorization and the value `Bearer <your-authorization-token>`.
@@ -150,7 +150,7 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 1.	Select **Send**.
 2.	The return data appears in the Postman response body.
 
-    ![Postman 200OK](./media/reports-postman_200OK.png)
+    ![Postman client status equals 200 OK](./media/reports-postman_200OK.png)
 
 ## Create a REST client (C#) to get data from the Intune Data Warehouse
 
@@ -167,7 +167,7 @@ The following sample contains a simple REST client. The code uses the **httpClie
 6. Select **I Accept** to accept the NuGet package license.
 7. Open `Program.cs` from the Solution Explorer.
 
-    ![Project in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Progam.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Replace the code in Program.cs with the following code:  
    ```csharp

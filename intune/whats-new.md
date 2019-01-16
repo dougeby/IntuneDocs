@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,19 @@ Intune provides additional device reporting fields, including App Registration I
 
 
 ### Device configuration
+
+#### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
+
+Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
+
+- Administrative templates include about 300 settings that can be managed in Intune. Previously, these settings only existed in the group policy editor.
+- Administrative templates are available in public preview.
+- Administrative templates are moving from **Device configuration** > **Administrative templates** to **Device configuration** > **Profiles** > **Create profile** > in **Platform**, choose **Windows 10 and later** > in **Profile type**, choose **Administrative templates**.
+- Reporting is enabled
+
+To read more about this feature, go to [Windows 10 templates to configure group policy settings](administrative-templates-windows.md).
+
+Applies to: Windows 10 and later
 
 #### Use S/MIME to encrypt and sign multiple devices for a user  <!-- 1333642 -->
 This update includes S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
@@ -164,7 +177,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 ### Role-based access control
 
 #### Scope tags for apps <!-- 1081941 -->
-You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. For more information, see [Use scope tags to filter policies](scope-tags.md).
+You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Apps purchased using Apple Volume Purchase Program (VPP) cannot be assigned scope tags.  For more information, see [Use scope tags to filter policies](scope-tags.md).
 
 
 

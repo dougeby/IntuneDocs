@@ -126,8 +126,9 @@
         - name: Typical migration cycle
           href: migration-guide-cycle.md
   - name: Set up Intune
-    href: setup-steps.md
     items:
+    - name: Steps to set up Intune
+      href: setup-steps.md    
     - name: Supported configurations
       href: supported-devices-browsers.md
       items:
@@ -152,8 +153,9 @@
     - name: Use scope tags
       href: scope-tags.md
   - name: Enroll devices
-    href: device-enrollment.md
     items:
+    - name: What is device enrollment?
+      href: device-enrollment.md    
     - name: Device management capabilities
       href: device-management-capabilities.md
     - name: Enrollment options
@@ -222,8 +224,9 @@
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Set device compliance
-    href: device-compliance-get-started.md
     items:
+    - name: Device compliance overview
+      href: device-compliance-get-started.md    
     - name: Create Android policy
       href: compliance-policy-create-android.md
     - name: Create Android Enterprise profile policy
@@ -242,8 +245,9 @@
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
   - name: Configure devices
-    href: device-profiles.md
     items:
+    - name: Configure devices using profiles
+      href: device-profiles.md    
     - name: Device profiles
       href: device-profile-create.md
     - name: Device features (iOS and MacOS)
@@ -294,8 +298,9 @@
     - name: Troubleshoot profiles
       href: device-profile-troubleshoot.md
   - name: Protect device data
-    href: device-protect.md
     items:
+    - name: Device protection overview
+      href: device-protect.md    
     - name: Privacy and personal data
       href: privacy-personal-data.md
       items:
@@ -422,8 +427,9 @@
       - name: iOS update policies
         href: software-updates-ios.md
   - name: Manage apps
-    href: app-management.md
     items:
+    - name: What is Intune app management?
+      href: app-management.md    
     - name: Add apps
       href: apps-add.md
       items:
@@ -532,8 +538,9 @@
         - name: Manage data transfer between iOS apps
           href: data-transfer-between-apps-manage-ios.md
   - name: Educate users
-    href: end-user-educate.md
     items:
+    - name: How to educate your end users
+      href: end-user-educate.md    
     - name: Company Portal messages
       href: end-user-company-portal-messages.md
     - name: App protection on Android
