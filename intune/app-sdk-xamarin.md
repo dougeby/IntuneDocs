@@ -62,6 +62,8 @@ Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xama
 
 The SDK relies on [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
+If your application is already configured to use ADAL or MSAL, and has its own custom client ID used to authenticate with Azure Active Directory, ensure the steps to give your Xamarin app permissions to the Intune Mobile Application Management (MAM) service are followed. Use the instructions in the "[Give your app access to the Intune app protection service](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" section of the [getting started with the Intune SDK guide](app-sdk-get-started.md).
+
 ## Enabling Intune app protection polices in your iOS mobile app
 1. Add the [Microsoft.Intune.MAM.Xamarin.iOS NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) to your Xamarin.iOS project.
 2.	Follow the general steps required for integrating the Intune App SDK into an iOS mobile app. You can begin with step 3 of the integration instructions from the [Intune App SDK for iOS Developer Guide](app-sdk-ios.md#build-the-sdk-into-your-mobile-app). You can skip the final step in that section of running the IntuneMAMConfigurator, as this tool is included in the Microsoft.Intune.MAM.Xamarin.iOS package and will be run automatically at build time.
@@ -117,19 +119,14 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMCreate` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
+2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMActivity` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
 
 > [!NOTE]
 > Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
 
-You have completed the basic steps of building the component into your app. Now you can follow the steps included in the Xamarin Android sample app. We have provided two samples, one for Xamarin.Forms and another for Android.
-
 ## Requiring Intune app protection policies in order to use your Xamarin-based Android LOB app (optional) 
 
 The following is guidance for ensuring Xamarin-based Android LOB apps can be used only by Intune protected users on their device. 
-
-### General Requirements
-* Ensure the steps to give your Xamarin app permissions to the app protection policy (APP) service are followed. Use the instructions in the [getting started with the Intune SDK guide](app-sdk-get-started.md#next-steps-after-integration) under "Give your app access to the Intune app protection service (optional)". 
 	
 ### Working with the Intune SDK
 These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
@@ -153,8 +150,15 @@ These instructions are specific to all Android and Xamarin apps who wish to requ
 These instructions are a requirement for .NET/Xamarin apps who wish to require Intune app protection policies for use on a end user device.
 
 1. Follow all the steps defined in the ADAL documentation under [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android).
-> [!NOTE] 
-> The version that .NET ADAL will be releasing next (3.17.4) is expected to contain the fix required to make this work.
+
+## Potential Compilation Errors
+These are some of the most commonly seen compilation errors when developing a Xamarin based application.
+
+* [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239): This error is commonly seen in this form
+``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
+When the remapper modifies the inheritance of Xamarin classes, some functions will be made `sealed` and a new MAM variant is added to override instead. Simply rename you overrides as described [here](https://docs.microsoft.com/en-us/intune/app-sdk-android#renamed-methods). For instance `MainActivity.OnCreate()` would be renamed to `MainActivity.OnMAMCreate()`
+
+* [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): This error is commonly seen in this form ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. As the remapper tool changes the inheritance of some of the Xamarin classes, some of the member functions will be changed to `public`. If you override any of these functions, you may need to change those overrides to be `public` as well.
 
 ## Support
 If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the Github issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 

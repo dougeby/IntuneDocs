@@ -609,6 +609,7 @@
       - name: Data Warehouse data model
         href: reports-ref-data-model.md
         items:
+
         - name: Data Warehouse collections
           href: intune-data-warehouse-collections.md 
         - name: Data Warehouse collections (beta)

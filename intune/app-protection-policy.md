@@ -5,8 +5,8 @@ title: What are app protection policies
 titleSuffix: Microsoft Intune
 description: Learn how Microsoft Intune app protection policies help protect your company data and prevent data loss.
 keywords:
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: conceptual
