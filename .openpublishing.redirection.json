@@ -1,6 +1,5 @@
 {
 	"redirections": [
-
 		{
 			"source_path": "intune/airplay-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings",
