@@ -120,8 +120,8 @@ When you create a configuration profile for iOS devices, you can add **Shared De
 
 #### New App Store, Doc Viewing, Gaming device restriction settings added to iOS devices <!-- 2827760-->
 In **Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**, the following settings are added: 
-Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)
-Allow unmanaged apps to read from managed contacts accounts (supervised only)
+Allow managed apps to write contacts to unmanaged contacts accounts 
+Allow unmanaged apps to read from managed contacts accounts 
 To see these settings, go to [iOS device restrictions](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->

@@ -234,6 +234,7 @@
     - name: Create a policy to enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
     - name: Create iOS policy
+      href: compliance-policy-create-ios.md
     - name: Create Windows policy
       href: compliance-policy-create-windows.md
     - name: Location-based policy
@@ -252,25 +253,12 @@
       href: device-profile-create.md
     - name: Device features (iOS and MacOS)
       href: device-features-configure.md
-      items:
-      - name: DEL-AirPrint for iOS and MacOS
-        href: air-print-settings-ios-macos.md
-      - name: DEL-AirPlay for iOS
-        href: airplay-settings-ios.md
-      - name: DEL-Home screen layout for iOS
-        href: home-screen-settings-ios.md
-      - name: DEL-App notifications for iOS
-        href: app-notification-settings-ios.md
-      - name: DEL-Shared devices for iOS
-        href: shared-device-settings-ios.md
-      - name: DEL-Single sign-on for iOS
-        href: sso-ios.md
-      - name: DEL-Web filter for iOS
-        href: web-content-filter-settings-ios.md
     - name: Device restrictions
       href: device-restrictions-configure.md
     - name: Delivery optimization
       href: delivery-optimization-windows.md
+    - name: Edition upgrade and mode switch
+      href: edition-upgrade-configure-windows-10.md
     - name: Email settings
       href: email-settings-configure.md
     - name: VPN settings
@@ -283,16 +271,10 @@
     - name: Wi-Fi settings
       href: wi-fi-settings-configure.md
       items:
-      - name: MOVE-Android Enterprise & kiosk
-        href: wi-fi-settings-android-enterprise.md
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
     - name: Education settings
-      items:
-      - name: MOVE-iOS shared devices
-        href: education-settings-configure-ios-shared.md
-      - name: MOVE-Windows 10
-        href: education-settings-configure.md
+      href: education-settings-configure.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: MOVE-Custom device settings
@@ -424,10 +406,8 @@
       href: esim-device-configuration.md
     - name: Identity protection
       href: identity-protection-configure.md          
-    - name: Software updates and upgrades
+    - name: Software updates
       items:
-      - name: Windows 10 upgrade
-        href: edition-upgrade-configure-windows-10.md
       - name: Windows Update for Business settings
         href: windows-update-for-business-configure.md      
       - name: iOS update policies
@@ -610,7 +590,7 @@
         - name: Device restrictions
           href: device-restrictions-android.md
         - name: Email
-          href: email-settings-android.md#android-samsung-knox
+          href: email-settings-android.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -637,7 +617,7 @@
         - name: Device restrictions
           href: device-restrictions-android-for-work.md
         - name: Email
-          href: email-settings-android.md#android-enterprise
+          href: email-settings-android-enterprise.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -701,19 +681,17 @@
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings
-        href: 
+        href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Configuration profile settings
         items:
-        - name: Administrative templates
-          href: 
         - name: Device restrictions
           href: device-restrictions-windows-10.md
         - name: Device restrictions (Windows 10 Team)
           href: device-restrictions-windows-10-teams.md
-        - name: Domain join
-          href: 
-        - name: NEED-Edition upgrade and mode switch
-          href: edition-upgrade-configure-windows-10.md
+        - name: NEED-Domain join
+          href: edition-upgrade-windows-settings.md
+        - name: Edition upgrade and mode switch
+          href: edition-upgrade-windows-settings.md
         - name: Email
           href: email-settings-windows-10.md
         - name: Endpoint protection
@@ -722,8 +700,8 @@
           href: identity-protection-configure.md
         - name: Kiosk
           href: kiosk-settings.md
-        - name: Network boundary
-          href: 
+        - name: NEED-Network boundary
+          href: edition-upgrade-windows-settings.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -736,8 +714,10 @@
           href: advanced-threat-protection.md
         - name: Wi-Fi
           href: wi-fi-settings-windows.md
-        - name: NEED-Education profile
-          href: education-settings-configure.md
+        - name: Education
+          href: education-settings-windows.md
+        - name: NEED-Shared multi-user device
+          href: edition-upgrade-windows-settings.md
         - name: Custom
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
@@ -869,6 +849,12 @@
       href: ui-changes.md
     - name: Intune classic groups
       href: groups-get-started.md
+    - name: iOS education settings
+      items:
+      - name: iPad
+        href: education-settings-configure-ios.md
+      - name: Shared iPads
+        href: education-settings-configure-ios-shared.md
     - name: Legacy Intune PC client
       href: intune-legacy-pc-client.md
     - name: Manage PCs with software agent
