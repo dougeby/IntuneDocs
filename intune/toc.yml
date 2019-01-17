@@ -761,8 +761,8 @@
           href: device-restrictions-windows-10.md
         - name: Device restrictions (Windows 10 Team)
           href: device-restrictions-windows-10-teams.md
-        - name: Domain join
-          href: NEED-edition-upgrade-windows-settings.md
+        - name: NEED-Domain join
+          href: edition-upgrade-windows-settings.md
         - name: Edition upgrade and mode switch
           href: edition-upgrade-windows-settings.md
         - name: Email
@@ -773,8 +773,8 @@
           href: identity-protection-configure.md
         - name: Kiosk
           href: kiosk-settings.md
-        - name: Network boundary
-          href: NEED-edition-upgrade-windows-settings.md
+        - name: NEED-Network boundary
+          href: edition-upgrade-windows-settings.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -789,8 +789,8 @@
           href: wi-fi-settings-windows.md
         - name: Education
           href: education-settings-windows.md
-        - name: Shared multi-user device
-          href: NEED-edition-upgrade-windows-settings.md
+        - name: NEED-Shared multi-user device
+          href: edition-upgrade-windows-settings.md
         - name: Custom
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
