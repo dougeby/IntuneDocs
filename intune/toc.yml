@@ -762,7 +762,7 @@
         - name: Device restrictions (Windows 10 Team)
           href: device-restrictions-windows-10-teams.md
         - name: Domain join
-          href: NEED-
+          href: NEED-edition-upgrade-windows-settings.md
         - name: Edition upgrade and mode switch
           href: edition-upgrade-windows-settings.md
         - name: Email
@@ -774,7 +774,7 @@
         - name: Kiosk
           href: kiosk-settings.md
         - name: Network boundary
-          href: NEED-
+          href: NEED-edition-upgrade-windows-settings.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -790,7 +790,7 @@
         - name: Education
           href: education-settings-windows.md
         - name: Shared multi-user device
-          href: NEED-
+          href: NEED-edition-upgrade-windows-settings.md
         - name: Custom
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
