@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Getting started with Microsoft Intune
+title: What can Microsoft Intune do for my company
 titleSuffix: 
-description: Go through a series of short hands-on quickstarts to learn about Intune.
+description: Common business problems that Microsoft Intune helps solve.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

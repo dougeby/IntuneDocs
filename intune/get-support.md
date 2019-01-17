@@ -26,7 +26,6 @@ search.appverid: MET150
 ms.custom: intune-classic
 
 ---
-
 # How to get support for Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
