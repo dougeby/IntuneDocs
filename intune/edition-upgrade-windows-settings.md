@@ -52,3 +52,5 @@ For more information on this feature, see [Upgrade Windows 10 editions or enable
 - **Switch**: Switches the device out of S mode.
 
 ## Next steps
+
+The profile is created, but it's not doing anything yet. Next, be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
