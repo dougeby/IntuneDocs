@@ -95,6 +95,7 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 ## Enabling Intune app protection policies in your Android mobile app
 
 1. Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
+    1. For a Xamarin.Forms app, add the [Microsoft.Intune.MAM.Remapper.Tasks NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) to your Xamarin.Android project. 
 2. Follow the general steps required for integrating the Intune App SDK into an Android mobile app while referring to this document for additional details.
 
 ### Xamarin.Android integration
@@ -164,8 +165,6 @@ For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continu
             LoadApplication(new App());
         }
 ```
-
-1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
 > [!NOTE]
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to restart Visual Studio when the Remapper is added to the project for IntelliSense to correctly recognize the changes.
