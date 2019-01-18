@@ -113,8 +113,6 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
-2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMActivity` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
-
 > [!NOTE]
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to restart Visual Studio when the Remapper is added to the project for IntelliSense to correctly recognize the changes.
 
