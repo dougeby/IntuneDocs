@@ -122,7 +122,7 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 2.  Add a call to `Xamarin.Forms.Forms.Init(Context, Bundle)` in the `OnMAMActivity` function of the `MAMApplication` class you created in step 2.2 above. This is needed because with Intune management your application can be started while in the background.
 
 > [!NOTE]
-> Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
+> The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to restart Visual Studio when the Remapper is added to the project for IntelliSense to correctly recognize the changes.
 
 ## Potential Compilation Errors
 These are some of the most commonly seen compilation errors when developing a Xamarin based application.
