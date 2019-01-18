@@ -124,33 +124,6 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 > [!NOTE]
 > Because this operation re-writes a dependency that Visual Studio uses for Intellisense auto-completion, you may need to restart Visual Studio after the first time the remapper runs to get Intellisense to correctly recognize the changes. 
 
-## Requiring Intune app protection policies in order to use your Xamarin-based Android LOB app (optional) 
-
-The following is guidance for ensuring Xamarin-based Android LOB apps can be used only by Intune protected users on their device. 
-	
-### Working with the Intune SDK
-These instructions are specific to all Android and Xamarin apps who wish to require Intune app protection policies for use on a end user device.
-
-1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
-> [!NOTE] 
-> The term "client id" is the same as the term "application id" from the Azure Portal tied to your app. 
-* To enable SSO, "Common ADAL configuration" #2 is what is needed.
-
-2. Enable default enrollment by putting the following value in the manifest:
-```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
-
-3. Enable MAM policy required by putting the following value in the manifest:
-```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> This forces apps to download the Company Portal on the device and complete the default enrollment flow before use.
-
-### Working with ADAL
-These instructions are a requirement for .NET/Xamarin apps who wish to require Intune app protection policies for use on a end user device.
-
-1. Follow all the steps defined in the ADAL documentation under [Brokered Authentication for Android](https://github.com/AzureAD/azure-activedirectory-library-for-dotnet/tree/dev/adal#brokered-authentication-for-android).
-
 ## Potential Compilation Errors
 These are some of the most commonly seen compilation errors when developing a Xamarin based application.
 
