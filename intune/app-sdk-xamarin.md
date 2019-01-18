@@ -101,6 +101,9 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 
 A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin.Android app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin.Android app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
 
+#### Renamed Methods
+In many cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (suffixed with `MAM`) that you should override instead. For example, when deriving from `MAMActivity`, instead of overriding `OnCreate()` and calling `base.OnCreate()`, `Activity` must override `OnMAMCreate()` and call `base.OnMAMCreate()`.
+
 #### MAM Application
 Your app must define an `Android.App.Application` class that inherits from `MAMApplication`. Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
 ```csharp
