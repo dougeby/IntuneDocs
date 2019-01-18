@@ -114,6 +114,21 @@ Your app must define an `Android.App.Application` class that inherits from `MAMA
         : base(handle, transfer) { }
 ```
 
+#### Enable features that require app participation
+Example: Determine if PIN is required for the app
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
+```
+Example: Determine the primary Intune user
+```csharp
+IMAMUserInfo info = MAMComponents.Get<IMAMUserInfo>();
+return info?.PrimaryUser;
+```
+Example: Determine if saving to device or cloud storage is permitted
+```csharp
+MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
+```
+
 ### Xamarin.Forms integration
 
 For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package to perform MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
