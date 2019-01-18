@@ -92,7 +92,7 @@ This article lists and describes the different settings you can control on Andro
 
 ### Kiosk settings
 
-You can configure a device to run one app, or many apps. When a device is in kiosk mode, only the apps you add are available.
+You can configure a device to run one app, or many apps. When a device is in kiosk mode, only the apps you add are available. These settings apply to Android dedicated devices but not to Android fully managed dedicated devices.
 
 **Kiosk mode**: Choose if the device will run one app or multiple apps.
 
