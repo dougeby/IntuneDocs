@@ -109,7 +109,20 @@ For Xamarin-based Android apps not using a UI framework, you need to read and fo
 
 ### Xamarin.Forms integration
 
-**In addition to performing all of the steps above**, for `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package. This package accomplishes class replacement for you by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes like `FormsAppCompatActivity` and `FormsApplicationActivity` so you can continue to use those classes by providing overrides for the MAM equivalent functions like `OnMAMCreate` and `OnMAMResume`. To use it, do the following:
+For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package to perform MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
+
+For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
+
+```csharp
+    public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+    {
+        protected override void OnMAMCreate(Bundle savedInstanceState)
+        {
+            base.OnMAMCreate(savedInstanceState);
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            LoadApplication(new App());
+        }
+```
 
 1.  Add the [Microsoft.Intune.MAM.Remapper.Tasks](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) NuGet package to your project. This will automatically add the Intune APP SDK Xamarin bindings if you have not already included them.
 
