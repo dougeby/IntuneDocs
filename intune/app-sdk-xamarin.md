@@ -103,13 +103,13 @@ A complete overview for integrating the Intune App SDK can be found in the [Micr
 
 #### MAM Application
 Your app must define an `Android.App.Application` class that inherits from `MAMApplication`. Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
-	```csharp
-	    [Application]
-	    class TaskrApp : MAMApplication
-	    {
-		public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
-		    : base(handle, transfer) { }
-	```
+```csharp
+    [Application]
+    class TaskrApp : MAMApplication
+    {
+    public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
+        : base(handle, transfer) { }
+```
 
 ### Xamarin.Forms integration
 
