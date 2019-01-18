@@ -94,18 +94,12 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 
 ## Enabling Intune app protection policies in your Android mobile app
 
-For Xamarin-based Android apps not using a UI framework, you need to read and follow the [Intune App SDK for Android Developer Guide](app-sdk-android.md). For your Xamarin-based Android app, you need to replace class, methods, and activities with their MAM equivalent based on the [class and method replacements table](app-sdk-android.md#class-and-method-replacements) included in the guide. If your app doesn’t define an `android.app.Application` class, you need to create one and ensure that you inherit from `MAMApplication`. The ADAL configuration values are communicated to the SDK via AndroidManifest metadata. Read our documentation on [configuring ADAL for your app](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal).
+1. Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
+2. Follow the general steps required for integrating the Intune App SDK into an Android mobile app while referring to this document for additional details.
 
 ### Xamarin.Android integration
 
-1. Add the latest version of the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project. This will provide you with the necessary references to Intune enable your application.
-
-2. Read and follow the [Intune App SDK for Android Developers Guide](app-sdk-android.md) fully, paying special attention to:
-
-    1. The [entire class and method replacements section](app-sdk-android.md#class-and-method-replacements). 
-    2. The [MAMApplication section](app-sdk-android.md#mamapplication). Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
-    3. The [ADAL integration section](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) if your app performs authentication against AAD. 
-    4. The [MAM-WE enrollment section](app-sdk-android.md#app-protection-policy-without-device-enrollment) if you plan on obtaining policy from the MAM service in your application.
+A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin.Android app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin.Android app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
 
 ### Xamarin.Forms integration
 
