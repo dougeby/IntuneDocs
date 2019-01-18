@@ -101,6 +101,16 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 
 A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin.Android app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin.Android app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
 
+#### MAM Application
+Your app must define an `Android.App.Application` class that inherits from `MAMApplication`. Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
+	```csharp
+	    [Application]
+	    class TaskrApp : MAMApplication
+	    {
+		public TaskrApp(IntPtr handle, JniHandleOwnership transfer)
+		    : base(handle, transfer) { }
+	```
+
 ### Xamarin.Forms integration
 
 For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package to perform MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
