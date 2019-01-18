@@ -95,7 +95,7 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 ## Enabling Intune app protection policies in your Android mobile app
 
 1. Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
-    1. For a Xamarin.Forms app, add the [Microsoft.Intune.MAM.Remapper.Tasks NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) to your Xamarin.Android project. 
+	1. For a Xamarin.Forms app, add the [Microsoft.Intune.MAM.Remapper.Tasks NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) to your Xamarin.Android project as well. 
 2. Follow the general steps required for integrating the Intune App SDK into an Android mobile app while referring to this document for additional details.
 
 ### Xamarin.Android integration
@@ -152,6 +152,9 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ### Xamarin.Forms integration
 
 For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package to perform MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
+
+> [!NOTE]
+> The Xamarin.Forms integration is to be done in addition to the Xamarin.Android integration detailed above.
 
 For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
 
