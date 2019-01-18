@@ -143,6 +143,11 @@ public override void OnMAMCreate()
     ...
 ```
 
+#### MAM Enrollment Manager
+```csharp
+IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
+```
+
 ### Xamarin.Forms integration
 
 For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Remapper` package to perform MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
