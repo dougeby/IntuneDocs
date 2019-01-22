@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,11 +33,11 @@ This article shows you all the Microsoft Intune education Take a Test app settin
 
 These settings are added to a device configuration profile, and then assigned or deployed to your devices using Microsoft Intune.
 
-[Take a Test app in Intune](email-settings-configure.md) provides more information on this feature.
+[Take a Test app in Intune](education-settings-configure.md) provides more information on this feature.
 
 ## Before you begin
 
-[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
+[Create a device configuration profile](education-settings-configure.md#create-a-device-profile).
 
 ## Take a test settings
 
@@ -56,4 +56,4 @@ These settings are added to a device configuration profile, and then assigned or
 
 ## Next steps
 
-[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+The profile is created, but it may not be doing anything yet. Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).

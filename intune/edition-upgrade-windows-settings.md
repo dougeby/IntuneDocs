@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/17/2019
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,4 +53,6 @@ For more information on this feature, see [Upgrade Windows 10 editions or enable
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
+The profile is created, but it may not be doing anything yet. Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
+
+You can also create edition upgrade profiles for [Windows Holographic for Business](holographic-upgrade.md) devices.

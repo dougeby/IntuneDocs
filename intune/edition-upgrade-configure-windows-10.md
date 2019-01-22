@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/17/2019
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -39,6 +39,7 @@ This feature applies to:
 
 - Windows 10 and later
 - Windows 10 1809 or later for S mode
+- Windows Holographic for Business
 
 These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you can then push or deploy the profile to Windows 10 devices in your organization. When you deploy the profile, Intune automatically upgrades the devices or enables S mode.
 
@@ -96,7 +97,7 @@ The following table lists the supported upgrade paths for the Windows 10 edition
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
 2. Select **Device configuration** > **Profiles** > **Create Profile**.
 3. Enter the following properties:
 
@@ -107,13 +108,17 @@ The following table lists the supported upgrade paths for the Windows 10 edition
         - **Windows 10 and later**
 
     - **Profile type**: Select **Edition upgrade**.
-    - **Settings**: Enter the edition to upgrade to, and choose to enable S mode.
+    - **Settings**: Enter the settings you want to configure. For a list of all settings, and what they do, see:
 
-        - [Windows 10 upgrade and S mode settings](edition-upgrade-windows-settings.md) describes these settings.
+        - [Windows 10 upgrade and S mode](edition-upgrade-windows-settings.md)
+        - [Windows Holographic for Business](holographic-upgrade.md)
 
-4. Select **OK** > **Create** to save your changes. The profile is created and shown in the list.
+4. Select **OK** > **Create** to save your changes. 
+
+The profile is created and shown in the list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 ## Next steps
 
-- Review the upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md) devices.
-- [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md) its status.
+After the profile is created, it's ready to be assigned. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+View the upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md) and [Windows Holographic for Business](holographic-upgrade.md) devices.
