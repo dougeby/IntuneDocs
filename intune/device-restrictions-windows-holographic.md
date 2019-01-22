@@ -84,7 +84,7 @@ This article lists and describes the different settings you can control on Windo
 
 ## Kiosk - Obsolete
 
-These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings](kiosk-settings.md#windows-holographic-for-business).
+These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings](kiosk-settings-holographic.md).
 
 A kiosk device typically runs a specific app. Users are prevented from accessing any features or functions on the device outside of the kiosk app.
 
