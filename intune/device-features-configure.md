@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -43,21 +43,27 @@ This article shows you how to create a device configuration profile. You can als
 
 ## Create a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**.
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-   - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-   - **Platform**: Select your platform:
-     - **iOS**
-     - **macOS**
-   - **Profile type**: Select **Device features**.
-   - **Settings**: The settings depend on the platform you choose. For a list of all settings, and what they do, see [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) device feature settings.
+    - **Name**: Enter a descriptive name for the new profile.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Select your platform:
+        - **iOS**
+        - **macOS**
+    - **Profile type**: Select **Device features**.
+    - **Settings**: Enter the settings you want to configure. For a list of all settings, and what they do, see:
+
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
 4. When you're done, select **OK**, and choose **Create** to save your changes.
 
+The profile is created and shown in the list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
 ## Next steps
 
-- View all the settings for [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) devices.
-- Assign this profile to groups; see [assign device profiles](device-profile-assign.md).
+After the profile is created, it's ready to be assigned. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+View all the device feature settings for [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) devices.

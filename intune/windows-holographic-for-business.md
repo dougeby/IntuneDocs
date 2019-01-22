@@ -112,7 +112,7 @@ In your profiles, you can use OMA-URI to customize some settings, create device 
 
 To configure OMA-URI (Open Mobile Alliance Uniform Resource Identifier) settings, you can create a custom profile in Intune. Use the OMA-URI settings to control different features on your Windows Holographic for Business devices, such as enabling VPN, or checking for updates on Microsoft Update.
 
-#### [Configure kiosk mode](kiosk-settings.md#windows-holographic-for-business)
+#### [Configure kiosk mode](kiosk-settings-holographic.md)
 
 Using the shared or guest PC features available in Intune, you can configure Windows Holographic for Business devices to run as a kiosk. These devices can run one app (single-app kiosk mode), or run multiple apps (multi-app kiosk mode).
 
