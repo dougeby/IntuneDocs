@@ -42,7 +42,7 @@ This feature applies to:
 
 These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you can then push or deploy the profile to Windows 10 devices in your organization. When you deploy the profile, Intune automatically upgrades the devices or enables S mode.
 
-This article list the supported upgrade paths, and shows you how to create the device configuration profile. You can also see all the available upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md).
+This article lists the supported upgrade paths, and shows you how to create the device configuration profile. You can also see all the available upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md).
 
 > [!NOTE]
 > If you remove the policy assignment later, the version of Windows on the device isn't reverted. The device continues to run normally.

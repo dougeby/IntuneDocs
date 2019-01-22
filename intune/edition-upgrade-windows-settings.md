@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 10 upgrade and S mode settings in Microsoft Intune - Azure | Microsoft Docs
-description: See a list of all the settings, and what they when upgrading a Windows 10 edition on a device, or enable S mode on a device using a device configuration profile in Microsoft Intune.
+description: See a list of all the settings, and what they do when upgrading a Windows 10 edition on a device, or enable S mode on a device using a device configuration profile in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia

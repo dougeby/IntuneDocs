@@ -178,7 +178,7 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 3. Select **OK** to save your changes. Continue adding the apps you want. When finished, select **OK**.
 
-## Shared device configuration settings
+## Lock screen message settings
 
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
 
@@ -329,5 +329,6 @@ The following list shows the bundle ID of some common built-in iOS apps. To find
 
 ## Next steps
 
-- View all the settings for [macOS](macos-device-features-settings.md) devices.
-- Assign this profile to groups; see [assign device profiles](device-profile-assign.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+You can also create device feature profiles for [macOS](macos-device-features-settings.md) devices.

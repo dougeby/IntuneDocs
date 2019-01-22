@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 10 education settings in Microsoft Intune - Azure | Microsoft Docs
-description: See a list of all the education settings for Windows 10 devices. Use these settings a device configuration profile to use a device with the Take a Test app, choose how users or students sign in, monitor the screen during the test, an dmore in Intune.
+description: See a list of all the education settings for Windows 10 devices. Use these settings in a device configuration profile with the Take a Test app, choose how users or students sign in, monitor the screen during the test, and more in Intune.
 keywords:
 author: lenewsad
 ms.author: lanewsad

@@ -47,13 +47,16 @@ This article shows you how to create a device configuration profile. You can als
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-   - **Name**: Enter a descriptive name for the new profile.
-   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-   - **Platform**: Select your platform:
-     - **iOS**
-     - **macOS**
-   - **Profile type**: Select **Device features**.
-   - **Settings**: The settings depend on the platform you choose. For a list of all settings, and what they do, see [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) device feature settings.
+    - **Name**: Enter a descriptive name for the new profile.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Select your platform:
+        - **iOS**
+        - **macOS**
+    - **Profile type**: Select **Device features**.
+    - **Settings**: Enter the settings you want to configure. For a list of all settings, and what they do, see:
+
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
 4. When you're done, select **OK**, and choose **Create** to save your changes.
 

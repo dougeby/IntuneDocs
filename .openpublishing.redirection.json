@@ -17,7 +17,7 @@
 		},		
 		{
 			"source_path": "intune/shared-device-settings-ios.md",
-			"redirect_url": "/intune/ios-device-features-settings#shared-device-configuration-settings",
+			"redirect_url": "/intune/ios-device-features-settings#lock-screen-message-settings",
 			"redirect_document_id": false
 		},		
 		{
@@ -1729,7 +1729,7 @@
 		},
 		{
 			"source_path": "intune/configure-devices/shared-device-settings-for-ios.md",
-			"redirect_url": "/intune/ios-device-features-settings#shared-device-configuration-settings",
+			"redirect_url": "/intune/ios-device-features-settings#lock-screen-message-settings",
 			"redirect_document_id": true
 		},
 		{

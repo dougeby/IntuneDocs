@@ -66,9 +66,6 @@
     href: manage-os-versions.md
   - name: Manage Windows Holographic
     href: windows-holographic-for-business.md
-    items:
-    - name: Upgrade Windows Holographic
-      href: holographic-upgrade.md    
   - name: Windows Information Protection settings
     href: windows-information-protection-configure.md  
   - name: MAM FAQ
@@ -255,6 +252,8 @@
       href: device-profiles.md    
     - name: Device profiles
       href: device-profile-create.md
+    - name: Administrative templates
+      href: administrative-templates-windows.md
     - name: Device features (iOS and MacOS)
       href: device-features-configure.md
     - name: Device restrictions
@@ -265,6 +264,8 @@
       href: edition-upgrade-configure-windows-10.md
     - name: Email settings
       href: email-settings-configure.md
+    - name: Kiosk settings
+      href: kiosk-settings.md
     - name: VPN settings
       href: vpn-settings-configure.md
       items:
@@ -279,9 +280,11 @@
         href: wi-fi-profile-shared-key.md
     - name: Education settings
       href: education-settings-configure.md
+    - name: Shared multi-user devices
+      href: shared-user-device-settings.md      
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
-    - name: MOVE-Custom device settings
+    - name: Custom device settings
       href: custom-settings-configure.md
     - name: Assign profiles
       href: device-profile-assign.md
@@ -692,20 +695,16 @@
           href: device-restrictions-windows-10.md
         - name: Device restrictions (Windows 10 Team)
           href: device-restrictions-windows-10-teams.md
-        - name: NEED-Domain join
-          href: edition-upgrade-windows-settings.md
         - name: Edition upgrade and mode switch
           href: edition-upgrade-windows-settings.md
         - name: Email
           href: email-settings-windows-10.md
         - name: Endpoint protection
           href: endpoint-protection-windows-10.md
-        - name: NEED-Identity protection
-          href: identity-protection-configure.md
+        - name: Identity protection
+          href: identity-protection-windows-settings.md
         - name: Kiosk
-          href: kiosk-settings.md
-        - name: NEED-Network boundary
-          href: edition-upgrade-windows-settings.md
+          href: kiosk-settings-windows.md
         - name: Trusted certificate
           href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
@@ -714,20 +713,24 @@
           href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
-        - name: NEED-Windows Defender ATP (Windows 10 Desktop)
-          href: advanced-threat-protection.md
         - name: Wi-Fi
           href: wi-fi-settings-windows.md
         - name: Education
           href: education-settings-windows.md
-        - name: NEED-Shared multi-user device
-          href: edition-upgrade-windows-settings.md
+        - name: Shared multi-user device
+          href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions
         href: device-restrictions-windows-holographic.md
+        - name: Shared multi-user device
+          href: shared-user-device-settings-windows-holographic.md   
+      - name: Edition upgrade and mode switch
+        href: holographic-upgrade.md
+      - name: Kiosk
+        href: kiosk-settings-holographic.md             
       - name: Custom
         href: custom-settings-windows-holographic.md
     - name: Windows 8.1
