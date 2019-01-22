@@ -32,7 +32,7 @@ Intune-managed apps are enabled with a rich set of mobile application protection
 > [!NOTE]
 > For your client line-of-business apps, you can incorporate mobile app management using the [Intune App Software Development Kit](app-sdk.md) (SDK), or the [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and the [App Wrapping Tool for Android](app-wrapper-prepare-android.md). 
 
-The following tables provide a lists of support partner and Microsoft apps that are commonly used with Microsoft Intune. 
+The following tables provide details of supported partner and Microsoft apps that are commonly used with Microsoft Intune. 
 
 ## Partner apps 
 
