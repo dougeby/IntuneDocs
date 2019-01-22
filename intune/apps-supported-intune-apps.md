@@ -25,9 +25,12 @@ Intune-managed apps are enabled with a rich set of mobile application protection
 - Restrict copy-and-paste and save-as functions
 - Configure web links to open inside the secure Microsoft browser
 - Enable multi-identity use and app-level conditional access
-- Intune-managed apps give you the choice to apply data loss prevention policies without managing the user's device. Enable app protection without requiring enrollment, or on devices managed with 3rd party EMM tools. 
+- Apply data loss prevention policies without managing the user's device
+- Enable app protection without requiring enrollment
+- Enable app protection on devices managed with 3rd party EMM tools
 
-Incorporate mobile app management in your mobile and line-of-business apps using the Intune App software development kit and app wrapping tool. 
+> [!NOTE]
+> For your client line-of-business apps, you can incorporate mobile app management using the [Intune App Software Development Kit](app-sdk.md) (SDK), or the [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and the [App Wrapping Tool for Android](app-wrapper-prepare-android.md). 
 
 The following tables provide a lists of support partner and Microsoft apps that are commonly used with Microsoft Intune. 
 
