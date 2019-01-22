@@ -725,8 +725,8 @@
       items:
       - name: Device restrictions
         href: device-restrictions-windows-holographic.md
-        - name: Shared multi-user device
-          href: shared-user-device-settings-windows-holographic.md   
+      - name: Shared multi-user device
+        href: shared-user-device-settings-windows-holographic.md   
       - name: Edition upgrade and mode switch
         href: holographic-upgrade.md
       - name: Kiosk
