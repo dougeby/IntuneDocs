@@ -60,7 +60,7 @@ Depending on the settings you choose, not all the following values are configura
 - **Fingerprint** (Check Point Capsule VPN only): Enter a string, such as **Contoso Fingerprint Code**, to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that has the same fingerprint when connecting. If the device doesn’t have the fingerprint, it prompts the user to trust the VPN server while showing the fingerprint. The user manually verifies the fingerprint, and chooses trust to connect.
 - **Enter key and value pairs for the Citrix VPN attributes** (Citrix only): Enter key and value pairs, provided by Citrix. These values configure the properties of the VPN connection.
 
-## Android for work VPN settings
+## Android enterprise VPN settings
 
 - **Connection name**: Enter a name for this connection. End users see this name when they browse their device for the available VPN connections.
 - **IP address or FQDN**: Enter the IP address or fully qualified domain name (FQDN) of the VPN server that devices connect. For example, enter **192.168.1.1** or **vpn.contoso.com**.
@@ -75,7 +75,7 @@ Depending on the settings you choose, not all the following values are configura
   - **Check Point Capsule VPN**
   - **Cisco AnyConnect**
   - **SonicWall Mobile Connect**
-  - **F5 Edge Client**
+  - **F5 Access**
   - **Pulse Secure**
 
 ## Next steps
