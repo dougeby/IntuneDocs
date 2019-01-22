@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,12 +56,12 @@ Additionally, related sets and Offline Licensed apps synced from the Microsoft S
 
 ## Associate your Microsoft Store for Business account with Intune
 Before you enable synchronization in the Intune console, you must configure your store account to use Intune as a management tool:
-1. Ensure that you sign into the Business Store using the same tenant account you use to sign into Intune.
-2. In the Business Store, choose **Settings** > **Management tools**.
-3. On the Management tools page, choose **Add a management tool**, and choose **Microsoft Intune**.
+1. Ensure that you sign into the [Microsoft Store for Business](https://www.microsoft.com/business-store) using the same tenant account you use to sign into Intune.
+2. In the Business Store, choose the **Manage** tab, select **Settings**, and choose the **Distribute** tab.
+3. If you don't specifically have **Microsoft Intune** available as a mobile device management tool, choose **Add management tool** to add **Microsoft Intune**. If you don't have **Microsoft Intune** activated as your mobile device management tool, click **Activate** next to **Microsoft Intune**. Note that you should activate **Microsoft Intune** rather than **Microsoft Intune Enrollment**.
 
 > [!NOTE]
-> You could previously only associate one management tool to assign apps with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager.
+> You could previously only associate one management tool to assign apps with the Microsoft Store for Business. You can now associate multiple management tools with the store, for example, Intune and Configuration Manager. 
 
 You can now continue, and set up synchronization in the Intune console.
 
@@ -96,12 +96,12 @@ When you assign a Microsoft Store for Business app, a license is used by each us
 
 ## Remove apps
 
-To remove an app that is synced from the Microsoft Store for Business, you need to log into the Microsoft Store for Business and refund the app.
+To remove an app that is synced from the Microsoft Store for Business, you need to log into the Microsoft Store for Business and refund the app. The process is the same whether the app is free or not. For a free app, the store will refund $0. The example below shows a refund for a free app. 
 
 ![Screenshot of remove app details](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Removing an app's visibility in the private store won’t keep Intune from syncing them. You must refund the app.
+> Removing an app's visibility in the private store won’t keep Intune from syncing the app. You must refund the app to fully remove the app.
 
 ## Next steps
 
