@@ -47,6 +47,12 @@ This article shows you how to use security baselines to create a profile, assign
 
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature.
 
+## Prerequisites
+
+Security baselines work the same way on Microsoft Intune MDM managed and Configuration Manager co-managed devices. Co-managed devices require you to switch over the **Device configuration** workload. 
+  
+  [Learn more about switching co-management workloads here](https://docs.microsoft.com/en-us/sccm/comanage/overview#workloads)
+
 ## Create the profile
 
 1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
