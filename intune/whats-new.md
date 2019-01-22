@@ -151,10 +151,6 @@ Applies to: Windows 10 and later
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
 More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#configuration-policies-reference).
 
-#### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509 -->
-In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: 
-Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
-To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 
 
 ### Monitor and troubleshoot
@@ -1278,6 +1274,57 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
+### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
+We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 
+
+#### How does this affect me?
+This impacts you if you have or plan to have devices running macOS 10.14.2 and greater. Now that the Apple has introduced the "Change Password at New Auth" setting, Intune can force users to update their password to one that is compliant when a password policy is pushed. Your macOS users will receive a request to update their password when we integrate this new Apple feature, even if their password is already compliant. Note that if a password is already compliant and you don’t have a requirement against repeating passwords, then end users will be able to update to their existing password. End users will only see a request to update their password when they try to authenticate or log in to their device. 
+If you block company resources until the device is marked compliant, then know that your end users on devices with macOS 10.14.2 may be blocked from accessing company resources such as email or SharePoint sites until they reset their password. In the future, all updates to configuration and compliance password policies will force targeted users to update their passwords. 
+Our customer research prior to implementing this change indicated most customers will not be affected by this change, since end users will typically update their password after receiving a request to enroll with a password or reset their password to remain compliant
+
+#### What can I do to prepare for this change?
+You may want to let your helpdesk know. We’ll update this What’s New page when this change is rolled out. If you do not want this macOS device password policy to be enforced, we recommend you un-assign or delete your existing macOS policy.
+
+
+### Reminder: Intune support experience for Premier customers now in Azure instead of MPO <!--2828727-->
+We shared in MC147649 in September, that we would remove the ability to create Intune support requests from the Microsoft Premier Online (MPO) portal (premier.microsoft.com) in December. Now, after a slight delay, at the end of January, you will be redirected to create support requests only in Intune on Azure. 
+
+
+#### How does this affect me?
+After the end of January, to continue enhancing the Premier support experience, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you’ll not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Note that support requests created in the MPO portal cannot be viewed in the Azure portal. 
+
+The Azure portal has a new support experience as we announced recently in MC171941. More information about this can be found at [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) and at the Additional Information link.
+
+If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is [deprecated](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+Note that only users with Global Administrator, Intune Service Administrator and Service Support Administrator roles can create support tickets in the Azure portal.
+
+#### What can I do to prepare for this change?
+- Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
+- Notify your helpdesk and update documentation if necessary.
+- If you have users without Global administrator or Intune Service Administrator roles currently creating support requests in MPO, assign them the Service Support Administrator role in Azure Active Directory, so they can continue to create support tickets in the Azure portal.
+
+#### Additional Information
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### Plan for Change: User experience update to Intune Company Portal app for iOS
+We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
+
+#### How does this affect me?
+This user experience update, while maintaining current iOS Company Portal functionality, will feature:
+- A home page with native iOS look and feel 
+- Filtering capabilities on content listings and search including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
+- Ability to search ebooks
+- Search history for apps and ebooks
+If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You will also have the opportunity to provide feedback directly to the Intune team.  
+
+#### What can I do to prepare for this change?
+You do not need to take any action; these changes will be released in an upcoming iOS CP app release. 
+
+#### Additional Information
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 -->
 To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector. This change will begin with the December service update and be completed with the February 2019 service update.
 
@@ -1312,27 +1359,6 @@ When the updates roll out, you will no longer need to use Azure AD groups to ass
 You do not need to do anything while we move your policy assignments. If you currently assign policies in the Intune for Education console, continue doing so.
 
 If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
-
-### Plan for Change: New Intune support experience for Premier customers 
-12/4/18 Update: We are trying to make this process better for you so support request creation in MPO will not be disabled on December 3 but on a later date instead. We'll let you know through the Message Center and update this post soon to share timelines for this change.
-
-As a Microsoft Premier customer, you can currently use the Microsoft Premier Online (MPO) portal (premier.microsoft.com) and Intune on Azure (portal.azure.com) to create support requests for Intune. Starting on December 3, 2018, to continue enhancing the Premier support experience, you will be able to create support requests only in Intune on Azure.
-
-#### How does this affect me?
-After December 3, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you will not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Support requests created in the MPO portal cannot be viewed in the Azure portal, so you should stop creating support requests in MPO.  
-
-If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
-
-Note that only users with Global Administrator, Intune Service Administrator, and Service Support Administrator roles can create support tickets in the Azure portal.
-
-#### What can I do to prepare for this change?
-- Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
-- Notify your helpdesk and update documentation if necessary.
-- If you have users without Global administrator or Intune Service Administrator roles currently creating support requests in MPO, assign them the Service Support Administrator role in Azure Active Directory, so they can continue to create support tickets in the Azure portal.
-- Click on Additional Information for more information and helpful links.
-
-#### Additional Information
-For more information, see the [Microsoft Intune support team blog post](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
 ### Take action: Please update your Android device restriction or compliance policy password settings in Intune
