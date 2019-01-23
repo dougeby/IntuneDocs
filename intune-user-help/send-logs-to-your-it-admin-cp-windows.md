@@ -2,12 +2,12 @@
 # required metadata
 
 title: Send logs to your company support for Windows 10 devices | Microsoft Docs
-description: Enroll a Windows 10 1511+ device into Intune
+description: Email error and log details to help company support fix app problems
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,26 +21,44 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: priyar
+ms.reviewer: scottduf
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
 
 ---
 
-# Send logs to your company support from the Company Portal app for Windows 10
+# Email your company support about problem from Company Portal for Windows
 
-If you get an error while you’re using the Company Portal app on your Windows 10 device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+Troubleshoot your app problems in the Company Portal app for Windows 10. If you run into a problem while on your Windows 10 device, you can email your support team for help. 
+
+When you request help, a prepopulated email opens where you can describe the problem in detail. It also includes a diagnostic log ID. If your support team can't resolve the problem based on your description, they'll contact Microsoft for help. Microsoft will need the diagnostic ID to reference the app's logs.   
+
 
 > [!Note]		
-> The Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
+> After you click **Get help**, the Company Portal will automatically send your logs to Microsoft's support team. This step is a proactive one that makes it easier to troubleshoot and resolve problems that are escalated to Microsoft support. As mentioned above, Microsoft's support team can pull up logs using the diagnostic ID in your email.  
+
+## What is a diagnostic log?
+
+Events and errors that occur in the Company Portal app are saved on your device in a special document called a _diagnostic log_. Logs can reveal:  
+* When a problem happened.  
+* The steps leading up to the problem.  
+* The state of the app when the problem appeared.   
+
+## Steps to get help  
 
 1. Open the **Company Portal** app.
-2. Select the **Settings** gear, then **Send Logs**.
-3. **Share** will open. Select **Mail**. This will create an email message with the Company Portal logs attached that can be sent to your company support.
+2. Select **Help & support** > **Get help**.  
 
-   ![The Send Logs dialog from the Company Portal app's Settings page. The link to click says "Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal."](./media/w10-share-logs-after-1711.png)
+   ![Screenshot of the Help & support page, highlighting the left navigation bar and Get Help section.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-You may also need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md) to give your company support more help in trying to troubleshoot any issues they may find.
+3. When the **Share** screen appears, select **Mail**. The **Mail** app will create an email message for you. Type in a description of the problem you experienced so that the support team has an idea of what to look for.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+   ![Screenshot of the Share screen, highlighting the Mail app icon.](./media/1811_Mail_Logs_Windows_CPapp.png)  
+
+
+   ![Screenshot of the prepopulated email that opens in the Mail app.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
+
+If your company needs additional information about app or device activity, you might need to send [logs from the Settings app](send-logs-to-your-it-admin-settings-windows.md).  
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

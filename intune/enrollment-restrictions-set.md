@@ -71,7 +71,7 @@ Default restrictions are automatically provided for both device type and device 
 
 ## Set device type restrictions
 
-You can change the settings for a device type restriction by following the steps below. These restrictions don't effect on devices that have already been enrolled. Devices enrolled with [Intune PC agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) can't be blocked with this feature.
+You can change the settings for a device type restriction by following the steps below. These restrictions don't effect on devices that have already been enrolled. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature.
 
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
@@ -85,6 +85,8 @@ You can change the settings for a device type restriction by following the steps
     - Android work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
     - Windows supports major.minor.rev.build for Windows 10 only.
+> [!Note]
+> Windows 10 does not provide the build number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
 8. Choose whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 9. Choose **OK**.
 
@@ -102,7 +104,7 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device is registered with Windows Autopilot but is not an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
  - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
@@ -127,7 +129,7 @@ You can change the settings for a device limit restriction by following these st
 6. Select **Save**.
 
 
-Users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
+During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

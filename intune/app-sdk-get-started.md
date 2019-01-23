@@ -163,6 +163,8 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 	* If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step. The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.
 
 	* If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+	
+	* If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Office Admin Portal website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
 
@@ -193,7 +195,7 @@ This badge indicates to IT administrators, end-users, and potential Intune custo
 
 The badge is a briefcase icon and can be seen in the samples below:
 
-![Badge example 1](./media/badge-example-1.png) ![Badge example 2](./media/badge-example-2.png)
+![Intune app protection policies - Badge example 1](./media/badge-example-1.png) ![Intune app protection policies - Badge example 2](./media/badge-example-2.png)
 
 **What you'll need to badge your app**:
 

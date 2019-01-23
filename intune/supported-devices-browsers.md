@@ -26,16 +26,19 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
+ms.custom: seodec18
 
 ---
 
-# Supported operating systems and browsers
+# Supported operating systems and browsers in Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Before setting up Microsoft Intune, review the supported operating systems and browsers.
 
-For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) and [Intune network bandwidth usage](network-bandwidth-use.md) ([classic portal](/intune-classic/get-started/network-bandwidth-use)).
+For help installing Intune on your device, see [using managed devices to get work done](/intune-user-help/company-portal-frequently-asked-questions) and [Intune network bandwidth usage](network-bandwidth-use.md).
+
+For more information on configuration service provider support, visit the [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## Intune supported operating systems
 
@@ -92,11 +95,11 @@ The following list of Samsung device models do not support Knox. They are enroll
 
 ### Windows PC software client
 
-An [Intune software client](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
+An [Intune software client](manage-windows-pcs-with-microsoft-intune.md) can be deployed and installed on Windows PCs as an alternate enrollment method. This functionality is only available using the Intune classic portal. You can use the Intune software client to manage Windows 7 and later PCs with the exception of Windows 10 Home edition.
 
 <!--  ### Exchange ActiveSync management
 
-You can manage [Exchange ActiveSync devices](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
+You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-management-with-exchange-activesync-and-intune) from the Intune console. This option provides a limited set of management capabilities when compared to the other methods. See [Capabilities of built-in Mobile Device Management in Office 365](https://support.office.com/article/Capabilities-of-built-in-Mobile-Device-Management-for-Office-365-a1da44e5-7475-4992-be91-9ccec25905b0) for a list of supported devices.  -->
 
 ## Intune supported web browsers
 

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Enroll Android enterprise kiosk devices in Intune
+title: Setup Intune enrollment for Android enterprise dedicated devices
 titlesuffix: "Microsoft Intune"
-description: Learn how to enroll Android enterprise kiosk devices in Intune.
+description: Learn how to enroll Android enterprise dedicated devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 1/15/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,39 +25,39 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
 ---
 
-# Set up enrollment of Android enterprise kiosk devices
+# Set up Intune enrollment of Android enterprise dedicated devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android supports kiosk-style devices with its Corporate-Owned, Single-Use solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
+Android supports corporate-owned, single-use, kiosk-style devices with its dedicated devices solution set. Such devices are used for a single purpose, such as digital signage, ticket printing, or inventory management, to name just a few. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
 
-Intune helps you deploy apps and settings to Android kiosk devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and settings to Android dedicated devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Devices that you manage in this way are enrolled in Intune without a user account and aren't associated with any end user. They're not intended for personal use applications or apps that have a strong requirement for user-specific account data such as Outlook or Gmail.
 
 ## Device requirements
 
-Devices must meet these requirements to be managed as an Android enterprise kiosk device:
+Devices must meet these requirements to be managed as an Android enterprise dedicated device:
 
 - Android OS version 5.1 and above.
 - Devices must run a distribution of Android that has Google Mobile Services (GMS) connectivity. Devices must have GMS available and must be able to connect to GMS.
 
-## Set up Android kiosk management
+## Set up Android dedicated device management
 
-To set up Android kiosk management, follow these steps:
+To set up Android dedicated device management, follow these steps:
 
 1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](mdm-authority-set.md) for instructions. You set this item only once, when you're first setting up Intune for mobile device management.
 2. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
 3. [Create an enrollment profile.](#create-an-enrollment-profile)
 4. [Create a device group](#create-a-device-group).
-5. [Enroll the kiosk devices](#enroll-the-kiosk-devices).
+5. [Enroll the dedicated devices](#enroll-the-dedicated-devices).
 
 ### Create an enrollment profile
 
-You must create an enrollment profile so that you can enroll your kiosk devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS and version of the device, you can use either the token or QR code to [enroll the kiosk device](#enroll-the-kiosk-devices).
+You must create an enrollment profile so that you can enroll your dedicated devices. When the profile is created, it provides you with an enrollment token (random string) and a QR code. Depending on the Android OS and version of the device, you can use either the token or QR code to [enroll the dedicated device](#enroll-the-dedicated-devices).
 
 1. Go to the [Intune portal](https://portal.azure.com) and choose **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**.
 2. Choose **Create** and fill out the required fields.
@@ -100,81 +100,20 @@ Replacing or revoking a token/QR code won't have any effect on devices that are 
 4. To replace the token, choose **Replace token**.
 5. To revoke the token, choose **Revoke token**.
 
-## Enroll the kiosk devices
+## Enroll the dedicated devices
 
-After you've created the enrollment profile and dynamic device group, you can enroll your kiosk devices. How you enroll your Android devices depends on the operating system.
+You can now [enroll your dedicated devices](android-dedicated-devices-fully-managed-enroll.md).
 
-| Enrollment method | Minimum Android OS version supported |
-| ----- | ----- |
-| Near Field Communication | 5.1 |
-| Token entry | 6.0 |
-| QR code | 7.0 |
-| Zero Touch | 8.0, on participating manufacturers |
+## Managing apps on Android dedicated devices
 
-### Enroll by using Near Field Communication (NFC)
-
-For Android 5.1 and later devices that support NFC, you can provision your devices by creating a specially formatted NFC tag. You can use your own app or any NFC tag creator tool. For more information, see [Google's Android Management API documentation](https://developers.google.com/android/management/provision-device#nfc_method).
-
-### Enroll by using a token
-
-For Android 6 and later devices, you can use the token to enroll the device. Android 6.1 and later versions can also leverage QR code scanning when using the **aft#setup** enrollment method.
-
-1. Turn on your wiped device.
-2. On the **Welcome** screen, select your language.
-3. Connect to your **Wifi** and then choose **NEXT**.
-4. Accept the Google Terms and conditions and then choose **NEXT**.
-5. On the Google sign-in screen, enter **afw#setup** instead of a Gmail account, and then choose **NEXT**.
-6. Choose **INSTALL** for the **Android Device Policy** app.
-7. Continue installation of this policy.  Some devices may require additional terms acceptance. 
-8. On the **Enroll this device** screen, allow your device to scan the QR code or choose to enter the token manually.
-9. Follow the on-screen prompts to complete enrollment. 
-
-### Enroll by using a QR code
-
-On Android 7 and later devices, you can scan the QR code from the enrollment profile to enroll the device.
-
-> [!Note]
-> Browser zoom can cause devices to not be able to scan QR code. Increasing the browser zoom resolves the issue.
-
-1. To launch a QR read on the Android device, tap multiple times on the first screen you see after a wipe.
-2. For Android 7 and 8 devices, you'll be prompted to install a QR reader. Android 9 and later devices already have a QR reader installed.
-3. Use the QR reader to scan the enrollment profile QR code and then follow the on-screen prompts to enroll.
-
-### Enroll by using Google Zero Touch
-
-To use Google's Zero Touch system, the device must support it and be affiliated with a supplier that is part of the service.  For more information, see [Google’s Zero Touch program website](https://www.android.com/enterprise/management/zero-touch/). 
-
-
-1. Create a new Configuration in the Zero Touch console.
-2. Choose **Microsoft Intune** from the EMM DPC dropdown.
-3. In Google’s Zero Touch console, copy/paste the following JSON into the DPC extras field. Replace the *YourEnrollmentToken* string with the enrollment token you created as part of your enrollment profile. Be sure to surround the enrollment token with double quotes.
-
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
-4. Choose **Apply**.
-
-## Managing apps on Android kiosk devices
-
-Only apps that have Assignment type [set to Required](apps-deploy.md#to-assign-an-app) can be installed on Android kiosk devices. Apps are installed from the managed Google Play store in the same manner as Android work profile devices.
+Only apps that have Assignment type [set to Required](apps-deploy.md#to-assign-an-app) can be installed on Android dedicated devices. Apps are installed from the managed Google Play store in the same manner as Android work profile devices.
 
 Apps are automatically updated on managed devices when the app developer publishes an update to Google Play.
 
-To remove an app from Android kiosk devices, you can do either of the following:
--	Delete the Required app deployment.
--	Create an uninstall deployment for the app.
-
+To remove an app from Android dedicated devices, you can do either of the following:
+-   Delete the Required app deployment.
+-   Create an uninstall deployment for the app.
 
 ## Next steps
-- [Deploy Android kiosk apps](apps-deploy.md)
-- [Add Android kiosk configuration policies](device-profiles.md)
+- [Deploy Android apps](apps-deploy.md)
+- [Add Android configuration policies](device-profiles.md)

@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Set up Intune enrollment for hybrid Active Directory joined devices using Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Intune.
+title: Enrollment for hybrid Active Directory joined devices - Windows Autopilot
+titleSuffix: 
+description: Use Windows Autopilot to enroll hybrid Active Directory joined devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,16 +24,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
  
 ---
  
 
 # Deploy hybrid Azure AD joined devices using Intune and Windows Autopilot (Preview)
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory joined devices. To do so, follow the steps below.
-
-> [!NOTE]
-> This feature is rolling out across the user base over the next few days. Therefore, you might not be able to follow these steps until it rolls out to your account.
 
 ## Prerequisites
 
@@ -74,7 +71,7 @@ The devices to be enrolled must also:
 
 The Intune Connector for Active Directory creates Autopilot enrolled computers in the On-Premises Active directory domain. The computer hosting the Intune Connector must have the rights to create the computer objects within the domain. 
 
-On some domains, computers are not granted the rights to create computers. Or maybe Admins do not want to increase the Domain-wide computer account limit. In these situations, the rights can be delegated to the organizational unit where Hybrid Azure AD joined devices are created.
+On some domains, computers are not granted the rights to create computers. Additionally, domains have a built in limit (default of 10) that applies to all users and computers that aren't delegated rights to create Computer Objects. Therefore, the rights need to be delegated to computers hosting the Intune connector on the organizational unit where Hybrid Azure AD joined devices are created.
 
 The organizational unit granted the right to create computers must match:
 - the organizational unit entered in the Domain Join profile
@@ -125,6 +122,9 @@ The Intune Connector for Active Directory needs to be installed on a computer ru
 6. Choose **Sign In**.
 7. Enter user Global Administrator or Intune Administrator role credentials.
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** and confirm the connection status is **Active**.
+
+ > [!NOTE]
+ > After you **Sign In** in the Connector, it might take a couple minutes for it to show up in [Intune](https://aka.ms/intuneportal). Beware that the Connector will only show if it's able to sucessfully communicate with the Intune service.
 
 ### Configure web proxy settings
 
@@ -210,7 +210,7 @@ It will take around 15 minutes for the device profile status to change from **No
    - **Description**: Enter a description for the profile.
    - **Platform**: Choose **Windows 10 and later**.
    - **Profile type**: Choose **Domain Join (Preview)**.
-3. Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and **Organizational unit** (optional). 
+3. Choose **Settings** and provide a **Computer name prefix**, **Domain name**, and (optional) **Organizational unit** in [DN format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 4. Choose **OK** > **Create**. The profile is created, and appears in the list.
 5. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
 

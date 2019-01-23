@@ -2,12 +2,12 @@
 # required metadata
 title: Intune Data Warehouse Change log 
 titlesuffix: Microsoft Intune
-description: A list of changes in the Intune Data Warehouse API.
+description: This topic provides a list of changes for the Microsoft Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,6 +31,13 @@ ms.custom: intune-classic
 
 Keep current on updates to the Intune Data Warehouse.
 
+## 1812 
+_Released December 2018_
+
+### Enrollment Activities Collection Released to v1.0 
+
+The Enrollment Activities collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), and [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
+
 ## 1808
 _Released August 2018_
 
@@ -38,9 +45,9 @@ _Released August 2018_
 
 You can now use the v1.0 version of the Intune Data Warehouse by setting the query parameter `api-version=v1.0`. Updates to collections in the Data Warehouse are additive in nature and do not break existing scenarios.
 
-### Enrollment Failure Collection Released to Beta
+### Enrollment Activities Collection Released to Beta
 
-The new `Enrollment Failure` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
+The new `Enrollment Activities` collection is released to beta. You can use this collection to understand how your enrollment is proceeding by viewing the most common failures. 
 
 
 ## 1805
@@ -97,4 +104,4 @@ You can now build reports and data visualizations using the user device associat
 
 ## Next steps
  - Learn [what’s new each week in Intune](whats-new.md). You can also find out about upcoming changes, important notices about the service, and information about past releases.
- - Read the [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Read the [Microsoft Intune Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

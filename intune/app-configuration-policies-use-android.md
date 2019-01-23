@@ -67,13 +67,17 @@ For each key and value in the configuration, set:
 ### Supported variables for configuration values
 
 You can choose the following options if you choose variable as the value type:
-- User Principal Name — for example, **John@contoso.com**
-- Mail — for example, **John@contoso.com**
-- Partial UPN — for example, **John**
-- Account ID — for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- Device ID — for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
-- User ID — for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- User Name —for example, **John Doe**
+
+| Option | Example |
+|----|----|
+| Mail | john@contoso.com |
+| User Principal Name | john@contoso.com |
+| Partial UPN | john |
+| Domain | contoso.com |
+| User name | John Doe |
+| Account ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| User ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Device ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### Allow only configured organization accounts in multi-identity apps 
 

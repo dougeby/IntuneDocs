@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Assign apps to Android work profile devices 
+title: Assign Managed Google Play apps to Android enterprise devices 
 titlesuffix: Microsoft Intune
-description: Understand how to synchronize and assign apps to Android work profile devices from the Managed Google Play store.
+description: Understand how to synchronize and assign apps to Android enterprise devices from the Managed Google Play store.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,11 +28,11 @@ ms.custom: intune-classic
 
 ---
 
-# Assign apps to Android work profile devices with Intune
+# Assign Managed Google Play apps to Android enterprise devices with Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android enterprise is a program for Android work profile devices and kiosk devices. For Android work profile devices, Android enterprise is a set of features and services that separate personal apps and data from work apps and data. Android enterprise provides additional management options and privacy when people use their Android devices for work. Intune helps you deploy apps and settings to Android work profile devices to make sure work and personal information are separate. All apps you install on Android work profile devices come from the Managed Google Play store. How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
+Android enterprise is a program for Android work profile devices, dedicated/kiosk devices, and fully managed devices. For Android work profile devices, Android enterprise is a set of features and services that separate personal apps and data from work apps and data. Android enterprise provides additional management options and privacy when people use their Android devices for work. Intune helps you deploy apps and settings to Android work profile devices to make sure work and personal information are separate. All apps you install on Android work profile devices come from the Managed Google Play store. How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 
 Additionally, if you have created your own line-of-business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.
@@ -61,7 +61,7 @@ Make sure you have configured Intune and Android work profiles to work together 
 
     ![Options for handling new app permission requests](media/approve-app-settings.png)
 
-    The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## Sync a Managed Google Play app with Intune
 
@@ -89,7 +89,7 @@ When an app developer updates permissions with a new version of the app, the per
 
 Periodically visit the managed Google Play console to check for new permissions. You can configure Google Play to send you or others an email when new permissions are required for an approved app. If you assign an app and observe that it isn't installed on devices, check for new permissions following these steps:
 
-1. Go to [Google Play](http://play.google.com/work).
+1. Go to [Google Play](https://play.google.com/work).
 2. Sign in with the Google account that you used to publish and approve the apps.
 3. Select the **Updates** tab, and check to see whether any apps require an update.  
     Any listed apps require new permissions and are not assigned until they are applied.

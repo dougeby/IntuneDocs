@@ -130,6 +130,7 @@
 ### [What happens if you reset your device?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Turn off Microsoft usage data collection](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sync your device manually](sync-your-device-manually-windows.md)
+### [Get help and support](help-support-windows-cpapp.md)
 
 ### [Troubleshoot common problems for Windows](troubleshoot-your-device-windows.md)
 #### [Resolve access point restrictions](resolve-access-point-restrictions.md)

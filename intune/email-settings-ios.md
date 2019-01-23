@@ -2,12 +2,12 @@
 # required metadata
 
 title: Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
-description: Create a device configuration email profile that that uses Exchange servers, and retrieves attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using Microsoft Intune.
+description: See a list of all the email settings you can configure and add to iOS devices in Microsoft Intune, including using Exchange servers, and getting attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using device configuration profiles in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,16 +21,19 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 
 ---
 
-# Email profile settings for iOS devices - Intune
+# Email profile settings for iOS devices in Intune
 
-Use the email profile settings to configure your devices running iOS.
+In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more.
 
-> [!IMPORTANT]
-> We’re making some improvements to the S/MIME feature described in this article. As a result, the S/MIME feature is temporarily removed in Intune. When this feature is released, we’ll remove this note.
+This article lists and describes all the email settings available for devices running iOS. You can create a device configuration profile to push or deploy these email settings to your iOS devices.
+
+## Before you begin
+
+[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
 
 ## Email settings
 
@@ -71,12 +74,32 @@ Use the email profile settings to configure your devices running iOS.
   > 1. Devices that are already targeted are issued a new profile.
   > 2. End users are prompted to enter their credentials again.
 
-- **S/MIME**: **Enable S/MIME** to send outgoing email using S/MIME signing. When enabled, you can also encrypt email to recipients who can receive encrypted email, and decrypt email received from senders.
-  - If you select **Certificate**, choose an existing PKCS certificate profile to authenticate the Exchange connection, and/or encrypt email exchanges.
+- **S/MIME**: **Enable S/MIME** to allow users to sign and/or encrypt email in the iOS native mail application. 
+
+  When you use S/MIME with an email message, you confirm the authenticity of the sender, and the integrity and confidentiality of the message.
+
+  - **S/MIME signing enabled**: Choose **Enable** to allow users to digitally sign outgoing email for the account you entered. Signing helps users who receive messages be certain that the message came from the specific sender, and not from someone pretending to be the sender. **Disable** doesn't allow users to digitally sign the message.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change S/MIME signing behavior. **Disable** prevents users from changing the S/MIME signing setting you configured. Available in iOS 12 and newer.
+
+  - **S/MIME Signing Cert**: Select an existing PKCS or SCEP certificate profile that's used for signing email messages.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the signing certificate. **Disable** prevents users from changing the signing certificate, and forces users to use the certificate you configured. Available in iOS 12 and newer.
+
+  - **Encrypt by default**: **Enable** encrypts all messages as the default behavior. **Disable** doesn't encrypt all messages as the default behavior.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the default encryption behavior. **Disable** prevents users from changing the encryption default behavior, and forces users to use the setting you configured. Available in iOS 12 and newer.
+
+  - **Force per-message encryption**: Per-message encryption allows users to choose which emails are encrypted before being sent. Choose **Enable** to show the per-message encryption option when creating a new email. Users can then choose to opt in or opt out of per-message encryption. **Disable** prevents the per-message encryption option from showing.
+
+    If the **Encrypt by default** setting is enabled, enabling per-message encryption allows users to opt out of encryption per message. If the **Encrypt by default** setting is disabled, enabling per-message encryption allows users to opt in to encryption per message.
+
+  - **S/MIME Encryption Cert**: Select an existing PKCS or SCEP certificate profile that's used for encrypting email messages.
+    - **Allow user to change setting**: Choose **Enable** to allow users to change the encryption certificate. **Disable** prevents users from changing the encryption certificate, and forces users to use the certificate you configured. Available in iOS 12 and newer.
 - **Amount of email to synchronize**: Choose the number of days of email that you want to synchronize. Or select **Unlimited** to synchronize all available email.
 - **Allow messages to be moved to other email accounts**: **Enable** allows users to move email messages between different accounts the users configured on their devices.
 - **Allow email to be sent from third-party applications**: **Enable** allows users to select this profile as the default account for sending email. It allows third-party applications to open email in the native email app, such as attaching files to email.
 - **Synchronize recently used email addresses**: **Enable** allows users to synchronize the list of email addresses that have been recently used on the device with the server.
 
 ## Next steps
-[Configure email settings in Intune](email-settings-configure.md)
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.

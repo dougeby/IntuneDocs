@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ ms.custom: intune-classic
 
 ---
 
-# Intune App SDK overview
+# Microsoft Intune App SDK overview
 The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. You'll find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize the APIs to customize your app behavior for features that require your app participation.
 
 Once you have enabled your app for app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.
@@ -72,4 +72,8 @@ App protection without device enrollment allows the Microsoft Intune service to 
 ### On-demand application VPN connections with Citrix mVPN 
 You can manage devices and apps with a combination of Citrix XenMobile MDX and Microsoft Intune. This combination means that you can manage apps with Intune app protection policy while using Citrix’s mVPN technology. The integration with Citrix is available for the Intune App SDK for iOS and Android, and with the Intune App Wrapping Tool for iOS and Android (with the -citrix flag).
  
-To learn more about Citrix MDX, see [About the MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html), and the [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).
+To learn more about Citrix MDX, see [About the MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Citrix MDX app wrapper for iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html), and the [Citrix MDX app wrapper for Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).
+
+## Next steps
+
+- Learn about [app protection policies](app-protection-policy.md).

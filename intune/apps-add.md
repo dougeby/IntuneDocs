@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,7 +19,7 @@ search.appverid: MET150
 ms.custom: intune-azure
 ---
 
-# Add apps to Microsoft Intune
+# Add apps to Microsoft Intune 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 

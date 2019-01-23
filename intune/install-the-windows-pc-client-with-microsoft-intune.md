@@ -31,7 +31,7 @@ ms.custom: intune
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible.
+> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client as described below. However, Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible. For more information see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md) 
 
 
 Windows PCs can be enrolled by installing the Intune client software. The Intune client software can be installed by using the following methods:
@@ -265,4 +265,4 @@ The unenrollment process does not remove the OnlineManagement folder. Wait 30 mi
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### Next steps
-[Manage devices with Microsoft Intune](device-management.md)
+[Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

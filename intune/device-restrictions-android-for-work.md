@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Device restrictions for Android work profiles in Microsoft Intune - Azure | Microsoft Docs
-description: On Android Enterprise profile devices, you can restrict some settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, using fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. 
+title: Android Enterprise device settings in Microsoft Intune - Azure | Microsoft Docs
+description: On Android Enterprise or Android for Work devices, restrict settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a kiosk to run one app, or multiple apps.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,13 +21,17 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure, seodec18
 
 ---
 
-# Work device restriction settings in Intune
+# Android Enterprise device settings to allow or restrict features using Intune
 
-This article lists the Microsoft Intune device restrictions settings that you can configure for Android Enterprise profile devices.
+This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps in kiosk-mode, control security, and more.
+
+## Before you begin
+
+[Create a device configuration profile](device-restrictions-configure.md).
 
 ## Device owner only
 
@@ -78,13 +82,17 @@ This article lists the Microsoft Intune device restrictions settings that you ca
   - **Wi-Fi only**
   - **Always**
 
+- **Notification windows**: When set to **Disable**, window notifications, including toasts, incoming calls, outgoing calls, system alerts, and system errors are not shown on the device. When set to **Not configured**, the operating system default is used, which may be to show notifications.
+- **Skip first use hints**: Choose **Enable** to hide or skip suggestions from apps to step through tutorials or read any introductory hints when the app starts. When set to **Not configured**, the operating system default is used, which may be to show these suggestions when the app starts.
+
+
 ### System security settings
 
 - **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
 
 ### Kiosk settings
 
-You can configure a device to run one app, or many apps. When a device is in kiosk mode, only the apps you add are available.
+You can configure a device to run one app, or many apps. When a device is in kiosk mode, only the apps you add are available. These settings apply to Android dedicated devices but not to Android fully managed dedicated devices.
 
 **Kiosk mode**: Choose if the device will run one app or multiple apps.
 
@@ -128,6 +136,7 @@ You can configure a device to run one app, or many apps. When a device is in kio
 ### Device password settings
 
 - **Keyguard**: Choose **Disable** to prevent uses from using Keyguard lock screen feature on the device. **Not configured** allows the user to use the Keyguard features.
+- **Disabled keyguard features**: When keyguard is enabled on the device, choose which features to disable. For example, when **Secure camera** is checked, the camera feature is disabled on the device. Any features not checked are enabled on the device.
 - **Required password type**: Define the type of password required for the device. Your options:
   - **At least numeric**
   - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed.
@@ -147,6 +156,32 @@ You can configure a device to run one app, or many apps. When a device is in kio
 - **Add new users**: Choose **Block** to prevent users from adding new users. Each user has a personal space on the device for custom Home screens, accounts, apps, and settings. **Not configured** allows users to add other users to the device.
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
+
+### Connectivity
+
+- **Always-on VPN**: Choose **Enable** to set a VPN client to automatically connect and reconnect to the VPN. Always-on VPN connections stay connected or immediately connect when the user locks their device, the device restarts, or the wireless network changes. 
+
+  Choose **Not configured** to disable always-on VPN for all VPN clients.
+
+  > [!IMPORTANT]
+  > Be sure to deploy only one Always On VPN policy to a single device. Deploying multiple Always VPN policies to a single device isn't supported.
+
+- **VPN client**: Choose a VPN client that supports Always On. Your options:
+  - Cisco AnyConnect
+  - F5 Access
+  - Palo Alto Networks GlobalProtect
+  - Pulse Secure
+  - Custom
+    - **Package ID**: Enter the package ID of the app in the Google Play store. For example, if the URL for the app in the Play store is `https://play.google.com/store/details?id=com.contosovpn.android.prod`, then the package ID is `com.contosovpn.android.prod`.
+
+  > [!IMPORTANT]
+  >  - The VPN client you choose must be installed on the device, and it must support per-app VPN in work profiles. Otherwise, an error occurs. 
+  >  - You do need to approve the VPN client app in the **Managed Google Play Store**, sync the app to Intune, and deploy the app to the device. After you do this, then the app is installed in the user's work profile.
+  >  - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
+
+- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. If a connection to the VPN isn't established, then the device won't have network access.
+
+  Choose **Not configured** to allow traffic to flow through the VPN tunnel or through the mobile network.
 
 ## Work profile only 
 
@@ -249,9 +284,9 @@ These password settings apply to personal profiles on devices that use a work pr
   > [!IMPORTANT]
   >  - The VPN client you choose must be installed on the device, and it must support per-app VPN in work profiles. Otherwise, an error occurs. 
   >  - You do need to approve the VPN client app in the **Managed Google Play Store**, sync the app to Intune, and deploy the app to the device. After you do this, then the app is installed in the user's work profile.
-  >  - There are known issues when using per-app VPN with F5 Access for Android 3.0.3. See [F5's release notes for F5 Access for Android 3.0.3](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-3.html#relnotes_known_issues_f5_access_android) for more information.
+  >  - There may be known issues when using per-app VPN with F5 Access for Android 3.0.4. See [F5's release notes for F5 Access for Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) for more information.
 
-- **Lockdown mode**: **Enable** to force all network traffic to use the VPN tunnel. If a connection to the VPN isn't established, then the device won't have network access.
+- **Lockdown mode**: Choose **Enable** to force all network traffic to use the VPN tunnel. If a connection to the VPN isn't established, then the device won't have network access.
 
   Choose **Not configured** to allow traffic to flow through the VPN tunnel or through the mobile network.
 

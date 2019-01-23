@@ -5,10 +5,10 @@ title: Create and deploy app protection policies
 titleSuffix: Microsoft Intune
 description: Learn how to create and assign Microsoft Intune app protection policies.
 keywords:
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -76,11 +76,11 @@ New policies you create aren't deployed to any users until you explicitly do so.
 
 2. In the ***Intune App Protection** pane, select **Assignments** to open the **Intune App Protection - Assignments** pane. On the *Include* tab, select **Select groups to include**. 
 
-   ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
+   ![Screenshot of the Assignments pane with Select groups to include menu](./media/app-protection-policy-add-users.png)
 
 3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. 
 
-    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+    ![Screenshot of the Add user group pane with list of Azure AD users](./media/azure-ad-user-group-list.png)
 
 4.  After you include and exclude groups, select **Save** to save the configuration and deploy the policy to users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.   
  
@@ -142,7 +142,7 @@ Because Intune app protection policies target a user’s identity, the protectio
 
 To create these policies, browse to **Client apps** > **App protection policies** in the Intune console, and then select **Create Policy**. You can also edit an existing app protection policy. To have the app protection policy apply to both managed and un-managed devices, confirm that **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set **Target to all app types**  to **No**. 
 
-![Screenshot of the Add a policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
+![Screenshot of the Add a policy blade with Target to all app types](./media/app-protection-policies-target-all.png)
 
 For iOS, additional app configuration settings are required to target APP settings to apps on Intune enrolled devices:
 - **IntuneMAMUPN** must be configured for all MDM managed applications. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).

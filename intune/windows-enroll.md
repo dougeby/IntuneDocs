@@ -74,7 +74,7 @@ If the company uses more than one UPN suffix, you need to create one CNAME for e
 
 - name@contoso.com
 - name@us.contoso.com
-- name@eu.constoso.com\
+- name@eu.contoso.com
 
 The Contoso DNS admin should create the following CNAMEs:
 
@@ -107,4 +107,4 @@ For more information about end-user tasks, see [Resources about the end-user exp
 
 ## Next steps
 
-- [Considerations when managing Windows devices using Intune on Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Considerations when managing Windows devices using Intune on Azure](intune-legacy-pc-client.md).

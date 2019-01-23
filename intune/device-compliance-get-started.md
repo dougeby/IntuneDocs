@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/17/2018
 
 ms.topic: article
 ms.prod:
@@ -47,6 +47,9 @@ Compliance requirements are essentially rules, such as requiring a device PIN, o
 - Require the device to be at, or under the Mobile Threat Defense level
 
 You can also use device compliance policies to monitor the compliance status in your devices.
+
+> [!IMPORTANT]
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -97,21 +100,6 @@ To use device compliance policies, the following are required:
 When a device is enrolled in Intune, the Azure AD registration process starts, and updates the device attributes into Azure AD. One key piece of information is the device compliance status. This compliance status is used by conditional access policies to block or allow access to e-mail and other corporate resources.
 
 [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more information.
-
-### Assign a resulting device configuration profile status
-
-If a device has multiple configuration profiles, and the device has different compliance statuses for two or more of the assigned configuration profiles, then a single resulting compliance status is assigned. This assignment is based on a conceptual severity level assigned to each compliance status. Each compliance status has the following severity level:
-
-|Status  |Severity  |
-|---------|---------|
-|Pending     |1|
-|Succeeded     |2|
-|Failed     |3|
-|Error     |4|
-
-When a device has multiple configuration profiles, then the highest severity level of all the profiles is assigned to that device.
-
-For example, say a device has three profiles assigned to it: one Pending status (severity = 1), one Succeeded status (severity = 2), and one Error status (severity = 4). The Error status has the highest severity level, so all three profiles have the Error compliance status.
 
 ### Assign an InGracePeriod status
 
@@ -175,7 +163,7 @@ A set of built-in **Compliance policy settings** (Azure portal > Device complian
   Enabling this setting requires devices to:
   - Enable location services at the OS level
   - Allow the company portal to use location services
-  - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant. Evaluation is triggered by either opening the Company Portal app or physically moving the device 500 meters or more.
+  - Evaluate and report its jailbreak status to Intune at least once every 72 hours. Otherwise, the device is marked not compliant. Evaluation is triggered by either opening the Company Portal app or physically moving the device 500 meters or more. If the device doesn't move 500 meters in 72 hours, the user needs to open the Company Portal app for enhanced jail break evaluation.
 
 - **Compliance status validity period (days)**: Enter the time period that devices report the status for all received compliance policies. Devices that don't return the status within this time period are treated as noncompliant. The default value is 30 days.
 
