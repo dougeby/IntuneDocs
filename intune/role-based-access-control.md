@@ -68,7 +68,7 @@ You can assign built-in roles to groups without further configuration. You can't
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Can't make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
-- **Intune Role Administrator**: Manages custom Intune roles and adds assignments for built-in Intune roles. It is the only Intune role that can assign permissions to Administrators.
+- **Intune Role Administrator**: Manages custom Intune roles and adds assignments for built-in Intune roles. It's the only Intune role that can assign permissions to Administrators.
 - **School Administrator**: Manages Windows 10 devices in [Intune for Education](introduction-intune-education.md), and can take the following actions: 
 
     |Permission|Operation|
@@ -99,7 +99,7 @@ You can assign built-in roles to groups without further configuration. You can't
 
 9. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
 <br></br>
-10. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
+10. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 
 ### Intune RBAC table
 
@@ -126,7 +126,7 @@ You can create a custom role that includes any permissions required for a specif
 
 5. On the **Permissions** pane, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
-6. When you are done, choose **OK**.
+6. When you're done, choose **OK**.
 
 7. On the **Add Custom Role** pane, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** pane.
 
@@ -144,7 +144,7 @@ You can create a custom role that includes any permissions required for a specif
 
 6. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
 
-7. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
+7. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 
 ## Next steps
 
