@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/26/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ This article shows you the Intune settings you can use to configure VPN connecti
 You can configure VPN settings for the following platforms:
 
 - [Android](#android-vpn-settings)
-- [Android enterprise](#android-entrprise-vpn-settings)
+- [Android enterprise](#android-enterprise-vpn-settings)
 
 Depending on the settings you choose, not all the following values are configurable.
 
