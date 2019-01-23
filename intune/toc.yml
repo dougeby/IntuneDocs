@@ -60,7 +60,7 @@
     href: app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
-  - name: Compare MDM and MAM
+  - name: Technology decisions for BYOD with EMS
     href: byod-technology-decisions.md    
   - name: Manage operating system versions
     href: manage-os-versions.md
@@ -554,7 +554,7 @@
       href: data-apple-sends-to-intune.md
     - name: Data Google sends to Intune
       href: data-google-sends-to-intune.md
-  - name: Help and support
+  - name: Get help and support
     items:
     - name: Troubleshoot
       items:
