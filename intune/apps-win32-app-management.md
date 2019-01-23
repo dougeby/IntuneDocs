@@ -238,13 +238,13 @@ The following image notifies the end user that app changes are being made to the
 
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
+## Toast notifications for Win32 apps 
+If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
+
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
-
-### Toast notifications for Win32 apps 
-If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
 
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
