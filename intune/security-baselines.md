@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger 
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -51,7 +51,7 @@ This article shows you how to use security baselines to create a profile, assign
 
 Security baselines work the same way on Microsoft Intune MDM managed and Configuration Manager co-managed devices. Co-managed devices require you to switch over the **Device configuration** workload. 
   
-  [Learn more about switching co-management workloads here](https://docs.microsoft.com/en-us/sccm/comanage/overview#workloads)
+[Co-management workloads](https://docs.microsoft.com/sccm/comanage/overview#workloads) provides more information.
 
 ## Create the profile
 
