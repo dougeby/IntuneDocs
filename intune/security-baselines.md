@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger 
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,12 @@ After the profile is assigned, you can monitor the profile, and monitor the base
 This article shows you how to use security baselines to create a profile, assign the profile, and monitor the profile.
 
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature.
+
+## Prerequisites
+
+Security baselines work the same way on Microsoft Intune MDM managed and Configuration Manager co-managed devices. Co-managed devices require you to switch over the **Device configuration** workload. 
+  
+[Co-management workloads](https://docs.microsoft.com/sccm/comanage/overview#workloads) provides more information.
 
 ## Create the profile
 
