@@ -101,21 +101,6 @@ When a device is enrolled in Intune, the Azure AD registration process starts, a
 
 [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more information.
 
-### Assign a resulting device configuration profile status
-
-If a device has multiple configuration profiles, and the device has different compliance statuses for two or more of the assigned configuration profiles, then a single resulting compliance status is assigned. This assignment is based on a conceptual severity level assigned to each compliance status. Each compliance status has the following severity level:
-
-|Status  |Severity  |
-|---------|---------|
-|Pending     |1|
-|Succeeded     |2|
-|Failed     |3|
-|Error     |4|
-
-When a device has multiple configuration profiles, then the highest severity level of all the profiles is assigned to that device.
-
-For example, say a device has three profiles assigned to it: one Pending status (severity = 1), one Succeeded status (severity = 2), and one Error status (severity = 4). The Error status has the highest severity level, so all three profiles have the Error compliance status.
-
 ### Assign an InGracePeriod status
 
 The InGracePeriod status for a compliance policy is a value. This value is determined by the combination of a device’s grace period, and a device’s actual status for that compliance policy.
