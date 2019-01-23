@@ -113,7 +113,7 @@ After you create update rings, you assign them to groups of devices. By using up
 
    - **Block user from pausing Windows updates**: Allowed by default. Use this setting to block or allow your users to pause update installation from the *Settings* of their machines. 
       
-   - **Delivery optimization download mode**: Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they cannot otherwise be modified. To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile. 
+   - **Delivery optimization download mode**: Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they cannot otherwise be modified. To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile. 
 
 5. When done, select **OK**. In **Create Update Ring**, select **Create**.
 
