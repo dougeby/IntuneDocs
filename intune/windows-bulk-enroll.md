@@ -3,7 +3,7 @@ title: Bulk enrollment for Windows 10
 titlesuffix: Microsoft Intune
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
