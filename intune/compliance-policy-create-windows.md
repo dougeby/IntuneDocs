@@ -157,7 +157,11 @@ See [Health Attestation CSP](https://docs.microsoft.com/windows/client-managemen
 
 Applies only to co-managed devices running Windows 10 and later. Intune-only devices return a not available status.
 
-- **Require device compliance from System Center Configuration Manager**: Choose **Require** to force all settings (configuration items) in System Center Configuration Manager to be compliant. When **Not configured**, Intune doesn't check for any of the SCCM settings for compliance.
+- **Require device compliance from System Center Configuration Manager**: Choose **Require** to force all settings (configuration items) in System Center Configuration Manager to be compliant. 
+
+  For example, you require all software updates to be installed on devices. In Configuration Manager, this requirement has the “Installed” state. If any programs on the device are in an unknown state, then the device is non-compliant in Intune.
+  
+  When **Not configured**, Intune doesn't check for any of the Configuration Manager settings for compliance.
 
 ### System security settings
 
