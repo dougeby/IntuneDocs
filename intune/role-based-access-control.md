@@ -51,11 +51,11 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 	> To be assigned an Intune role, the user must have an Intune license.
 
 	> [!TIP]
-	> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
+	> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 
 ## Roles created in the Intune classic portal
 
-Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You need to re-assign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
+Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You must reassign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
 
 > [!IMPORTANT]
 > You might need to keep the Intune Service Administrator access in the classic portal if your admins still need access to manage PCs using Intune.
@@ -93,11 +93,13 @@ You can assign built-in roles to groups without further configuration. You can't
 
 6. On the custom role pane, choose **Assign**.
 
-7. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment, and then choose the following:
-	- **Members** - Select a group that contains the user you want to give the permissions to.
-	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
+7. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment.
+
+8. For **Members**, choose a group that contains the user you want to give the permissions to.
+
+9. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
 <br></br>
-8. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
+10. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
 
 ### Intune RBAC table
 
@@ -136,11 +138,13 @@ You can create a custom role that includes any permissions required for a specif
 
 3. On the custom role pane, choose **Assign**.
 
-4. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment, and then choose the following:
-	- **Members** - Select a group that contains the user you want to give the permissions to.
-	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
-<br></br>
-5. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
+4. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment.
+
+5. For **Members**, choose a group that contains the user you want to give the permissions to.
+
+6. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
+
+7. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
 
 ## Next steps
 
