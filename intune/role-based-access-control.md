@@ -48,7 +48,7 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
-	> Members of Intune roles require an Intune license.
+	> To be assigned an Intune role, the user must have an Intune license.
 
 	> [!TIP]
 	> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. Refer to [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) for more details.
@@ -58,49 +58,46 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You need to re-assign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
 
 > [!IMPORTANT]
-> You might need to keep the Intune Service Administrator access in the classic portal if your admins still need access to manage PC’s using with Intune.
+> You might need to keep the Intune Service Administrator access in the classic portal if your admins still need access to manage PCs using Intune.
 
 ## Built-in roles
 
-The following roles are built into Intune and you can assign them to groups with no further configuration:
+You can assign built-in roles to groups without further configuration. You can't delete or edit a built-in role.
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
-- **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Cannot make changes to Intune.
+- **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Can't make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
-- **Intune Role Administrator**: Manages custom Intune roles and add assignments for built-in Intune roles. It is the only Intune role that can assign permissions to Administrators.
+- **Intune Role Administrator**: Manages custom Intune roles and adds assignments for built-in Intune roles. It is the only Intune role that can assign permissions to Administrators.
 - **School Administrator**: Manages Windows 10 devices in [Intune for Education](introduction-intune-education.md), and can take the following actions: 
 
-|Permission|Operation|
-|---|---|
-|Audit Data|Read|
-|DeviceConfigurations|Assign, Create, Delete, Read, Update|
-|Device Enrollment Managers|Read, Update|
-|Managed Devices|Read, Update<!--, Delete [To be added in 1803]-->|
-|Mobile apps|Assign, Create, Delete, Read, Update|
-|Reports|Read|
-|Remote Actions|Clean PC, Reboot, Remote Lock, Retire, Sync Devices, Wipe|
-|Organization|Read|
+    |Permission|Operation|
+    |---|---|
+    |Audit Data|Read|
+    |DeviceConfigurations|Assign, Create, Delete, Read, Update|
+    |Device Enrollment Managers|Read, Update|
+    |Managed Devices|Read, Update<!--, Delete [To be added in 1803]-->|
+    |Mobile apps|Assign, Create, Delete, Read, Update|
+    |Reports|Read|
+    |Remote Actions|Clean PC, Reboot, Remote Lock, Retire, Sync Devices, Wipe|
+    |Organization|Read|
 
 ### To assign a built-in role
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. On the **Intune** pane, choose **Roles** > **All roles**.
-1. On the **Intune roles - All roles** pane, choose the built-in role you want to assign.
+4. On the **Intune roles - All roles** pane, choose the built-in role you want to assign.
 
-2. On the <*role name*> - **Overview** pane, choose **Manage**, then **Assignments**.
+5. On the <*role name*> - **Overview** pane, choose **Manage**, then **Assignments**.
 
-	> [!NOTE]
-	> You cannot delete or edit the built-in roles
+6. On the custom role pane, choose **Assign**.
 
-3. On the custom role pane, choose **Assign**.
-
-4. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment, and then choose the following:
+7. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment, and then choose the following:
 	- **Members** - Select a group that contains the user you want to give the permissions to.
 	- **Scope** - Select a group containing the users who the member above will be allowed to manage.
 <br></br>
-5. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
+8. When you are done, click **OK**. The new assignment is displayed in the list of assignments.
 
 ### Intune RBAC table
 
