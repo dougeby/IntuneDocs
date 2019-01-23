@@ -57,7 +57,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 1. Open a browser and sign in to the [Intune portal](https://aka.ms/intuneportal). If you are new to Intune, use your free trial subscription.
 
-    ![Screenshot of the Microsoft Intune portal](media/tutorial-walkthough-intune-portal-01.png)
+    ![Screenshot of the Microsoft Intune portal](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-01.png)
 
     When you open Intune or any other service in Azure, the service is displayed in a pane. Some of the first workloads you use in Intune, like **Devices**, **Client apps**, **Users**, and **Groups**, all appear in a full screen pane. A workload is simply a sub-area of a services. When you select the workload, it opens that pane in the full page. Other panes slide out from the right side of the pane when they open, and close to reveal the previous pane. A pane is also referred to as a blade. 
 
@@ -65,13 +65,13 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 2. From the [Intune](https://aka.ms/intuneportal) overview pane, select **Device enrollment** to display details about the enrolled devices in your Intune tenant. If you are starting with a new Intune tenant, you will not have any enrolled devices yet. 
 
-    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal-02.png)
+    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-02.png)
     
     Intune lets you manage your workforce’s devices and apps and how they access your company data. To use this mobile device management (MDM), the devices must first be enrolled in the Intune service. When a device is enrolled, it is issued an MDM certificate. This certificate is used to communicate with the Intune service. For more information about device enrollment, see [What is device enrollment?](device-enrollment.md)
 
 3. From [Intune](https://aka.ms/intuneportal), select **Device compliance** to display details about compliance for devices managed by Intune.
 
-    ![Screenshot of the device compliance pane](media/tutorial-walkthough-intune-portal-03.png)
+    ![Screenshot of the device compliance pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-03.png)
     
     Compliance requirements are essentially rules, such as requiring a device PIN, or requiring device encryption. Device compliance policies define these rules and settings that a device must follow to be considered compliant. To use device compliance, you must have:
     - An Intune and an Azure Active Directory (AD) Premium subscription
@@ -83,51 +83,51 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 4. From [Intune](https://aka.ms/intuneportal), select **Device configuration** to display details about device profiles in Intune. 
 
-    ![Screenshot of the device configuration pane](media/tutorial-walkthough-intune-portal-04.png)
+    ![Screenshot of the device configuration pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-04.png)
     
     Microsoft Intune includes settings and features you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices, different platforms, including iOS, Android, and Windows, and then use Intune to apply the profile to devices in your organization.   
 
 5. From [Intune](https://aka.ms/intuneportal), select **Devices** to display details about your Intune tenant's enrolled devices. If you are starting with a new Intune enlistment, you will not have any enrolled devices yet. 
 
-    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal-05.png)
+    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-05.png)
     
     The device pane not only provides the number of enrolled devices, and also provides some basic details about your Intune tenant. Once you have enrolled devices, you can click **All deivces** to display a list of devices for your Intune tenant. 
 
 6. From [Intune](https://aka.ms/intuneportal), select **Client apps** to display app installation status.
 
-    ![Screenshot of the client apps pane](media/tutorial-walkthough-intune-portal-06.png)
+    ![Screenshot of the client apps pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-06.png)
     
     As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune. Intune offers a range of capabilities to help you get the apps you need on the devices you want to run them on. 
 
 7. From [Intune](https://aka.ms/intuneportal), select **Conditional access** to display details about access policies.
 
-    ![Screenshot of the conditional access pane](media/tutorial-walkthough-intune-portal-07.png)
+    ![Screenshot of the conditional access pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-07.png)
 
     Conditional access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. In this topic, learn about device-based and app-based conditional access, and find common scenarios for using conditional access with Intune.
 
 8. From [Intune](https://aka.ms/intuneportal), select **Users** to display details about .
 
-    ![Screenshot of the Users pane](media/tutorial-walkthough-intune-portal-08.png)
+    ![Screenshot of the Users pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-08.png)
 
 
 
 9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about .
 
-    ![Screenshot of the Groups pane](media/tutorial-walkthough-intune-portal-09.png)
+    ![Screenshot of the Groups pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-09.png)
 
 
 10. From [Intune](https://aka.ms/intuneportal), select **Help and support** to display details about .
 
-    ![Screenshot of the Help and support pane](media/tutorial-walkthough-intune-portal-10.png)
+    ![Screenshot of the Help and support pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-10.png)
 
 
 11. From [Intune](https://aka.ms/intuneportal), select **Tenant Status** to display details about .
 
-    ![Screenshot of the Tenant Status pane](media/tutorial-walkthough-intune-portal-11.png)
+    ![Screenshot of the Tenant Status pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-11.png)
 
 12. From [Intune](https://aka.ms/intuneportal), select **Troubleshoot** to reach a shortcut on troubleshooting tips, requesting support, or checking the status of Intune. This information is specifc the Intune user you select.
 
-    ![Screenshot of the Troubleshoot pane](media/tutorial-walkthough-intune-portal-12.png)
+    ![Screenshot of the Troubleshoot pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-12.png)
 
 
 ## Configure the Azure portal
