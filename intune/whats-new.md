@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,6 +45,16 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+## Week of January 21, 2019
+
+### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
+When you create a macOS enrollment profile, you can configure it to skip any of the following screens when a user goes through the Setup Assistant:
+- Android Migration
+- Display Tone
+- Privacy
+- iCloudStorage
+
+
 ## Week of January 14, 2019
 
 ### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
