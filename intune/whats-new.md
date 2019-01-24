@@ -47,13 +47,11 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 -->     
 ## Week of January 21, 2019
 
-### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
-When you create a macOS enrollment profile, you can configure it to skip any of the following screens when a user goes through the Setup Assistant:
-- Android Migration
-- Display Tone
-- Privacy
-- iCloudStorage
-
+### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509  -->
+In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
+If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
+This feature is starting to roll out but will take a few days to be available to all customers.
 
 ## Week of January 14, 2019
 
