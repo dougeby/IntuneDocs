@@ -388,6 +388,11 @@
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md    
+      - name: Security baselines
+        href: security-baselines.md
+        items:
+        - name: Monitor your baselines
+          href: security-baselines-monitor.md
       - name: Endpoint protection
         href: endpoint-protection-configure.md
     - name: Network access control
