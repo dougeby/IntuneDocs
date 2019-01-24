@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ If this information does not solve your problem, see [How to get support for Mic
 
 ## Common IT administrator issues
 
-These are common issues an IT administrator may experience with using Intune app protection policy.
+These are common issues an IT administrator may experience when using Intune app protection policies.
 
 | Issue | Description | Resolution |
 | -- | -- | -- |
@@ -52,11 +52,11 @@ These are common issues an IT administrator may experience with using Intune app
 
 Common end-user issues are broken down in the following categories:
 
-* **Normal usage scenarios**: An end-user might experience these scenarios on apps that have Intune app protection policy. These are not actual issues, but may be perceived as bugs or errors.
+* **Normal usage scenarios**: An end-user might experience these scenarios on apps that have an Intune app protection policy. These are not actual issues, but may be perceived as bugs or errors.
 
-* **Normal usage dialogs**: These are usage dialogs an end-user might see in apps that have Intune app protection policy. These messages and dialogs do **not** indicate an error or bug.
+* **Normal usage dialogs**: These are usage dialogs an end-user might see in apps that have an Intune app protection policy. These messages and dialogs do **not** indicate an error or bug.
 
-* **Error messages and dialogs**: These are error messages and dialogs an end-user might see on apps that have Intune app protection policy. These often indicate an error was made by the IT administrator or a bug with Intune app protection.
+* **Error messages and dialogs**: These are error messages and dialogs an end-user might see on apps that have an Intune app protection policy. These often indicate an error was made by the IT administrator or a bug with Intune app protection.
 
 ### Normal usage scenarios
 
@@ -69,19 +69,19 @@ Android | Why does the end-user **need to install the Company Portal app**, even
 
 Platform | Message or dialog | Explanation |
 --- | --- | --- |
-iOS, Android | **Sign-in**: To protect its data, your organization needs to manage this app. To complete this action, sign in with your work or school account. | The end-user must sign in with their work or school account in order to use this app, which requires app protection policy. In order for policy to apply, the user must authenticate against Azure Active Directory.
-iOS, Android |**Restart Required**: Your organization is now protecting its data in this app. You need to restart the app to continue. | The app has just received Intune app protection policy and must restart in order for the policy to apply.
-iOS, Android |**Action Not Allowed**: Your organization only allows you to open work or school data in this app. | The IT administrator has set the **Allow app to receive data from other apps** to **Managed apps only**. Therefore, the end-user can only transfer data into this app from other apps that have app protection policy.
-iOS, Android |**Action Not Allowed**: Your organization only allows you to transfer its data to other managed apps. | The IT administrator has set the **Allow app to transfer data to other apps** to **Managed apps only**. Therefore, the end-user can only transfer data out of this app to other apps that have app protection policy.
+iOS, Android | **Sign-in**: To protect its data, your organization needs to manage this app. To complete this action, sign in with your work or school account. | The end-user must sign in with their work or school account in order to use this app, which requires an app protection policy. In order for the policy to apply, the user must authenticate against Azure Active Directory.
+iOS, Android |**Restart Required**: Your organization is now protecting its data in this app. You need to restart the app to continue. | The app has just received an Intune app protection policy and must restart in order for the policy to apply.
+iOS, Android |**Action Not Allowed**: Your organization only allows you to open work or school data in this app. | The IT administrator has set the **Allow app to receive data from other apps** to **Managed apps only**. Therefore, the end-user can only transfer data into this app from other apps that have an app protection policy.
+iOS, Android |**Action Not Allowed**: Your organization only allows you to transfer its data to other managed apps. | The IT administrator has set the **Allow app to transfer data to other apps** to **Managed apps only**. Therefore, the end-user can only transfer data out of this app to other apps that have an app protection policy.
 iOS, Android |**Wipe Alert**: Your organization has removed its data associated with this app. To continue, restart the app. | The IT administrator has initiated an app wipe using Intune app protection.
-Android | **Company Portal required**: To use your work or school account with this app, you must install the Intune Company Portal app. Tap “Go to store” to continue. | On Android, much of app protection functionality is built into the Company Portal app. **Device enrollment is not required even though the Company Portal app is always required**. For app protection without enrollment, the end-user just needs to have the Company Portal app installed on the device.
+Android | **Company Portal required**: To use your work or school account with this app, you must install the Intune Company Portal app. Click “Go to store” to continue. | On Android, much of app protection functionality is built into the Company Portal app. **Device enrollment is not required even though the Company Portal app is always required**. For app protection without enrollment, the end-user just needs to have the Company Portal app installed on the device.
 
 ### Error messages and dialogs on iOS
 
 Error message or dialog | Cause | Remediation |
 -- | --- | --- |
-**App Not Set Up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect required app protection policy for the app. |Make sure an iOS app protection policy is deployed to the user's security group and targets this app.
-**Welcome to the Intune Managed Browser**: This app works best when managed by Microsoft Intune. You can always use this app to browse the web, and when it is managed by Microsoft Intune you gain access to additional data protection features. | Failure to detect required app protection policy for the Intune Managed Browser app. <br><br>The user can still use the app to browse the web, but the app is not managed by Intune. | Make sure an iOS app protection policy is deployed to the user's security group and targets the Intune Managed Browser app.
+**App Not Set Up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect a required app protection policy for the app. |Make sure an iOS app protection policy is deployed to the user's security group and targets this app.
+**Welcome to the Intune Managed Browser**: This app works best when managed by Microsoft Intune. You can always use this app to browse the web, and when it is managed by Microsoft Intune you gain access to additional data protection features. | Failure to detect a required app protection policy for the Intune Managed Browser app. <br><br>The user can still use the app to browse the web, but the app is not managed by Intune. | Make sure an iOS app protection policy is deployed to the user's security group and targets the Intune Managed Browser app.
 **Sign-in Failed**: We can't sign you in right now. Please try again later. | Failure to enroll the user with the MAM service after the user attempts to sign in with their work or school account. | Make sure an iOS app protection policy is deployed to the user's security group and targets this app.
 **Account Not Set Up**: Your organization has not set up your account to access work or school data. Please contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Office portal](http://portal.office.com).
 **Device Non-Compliant**: This app cannot be used because you are using a jailbroken device. Contact your IT administrator for help. | Intune detected the user is on a jailbroken device. | Reset the device to default factory settings. Follow [these instructions](https://support.apple.com/HT201274) from the Apple support site.
@@ -96,7 +96,7 @@ Error message or dialog | Cause | Remediation |
 
 Dialog/Error message | Cause | Remediation |
 -- | --- | --- |
-**App not set up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect required app protection policy for the app. |Make sure an Android app protection policy is deployed to the user's security group and targets this app.
+**App not set up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect a required app protection policy for the app. |Make sure an Android app protection policy is deployed to the user's security group and targets this app.
 **Failed app launch**: There was an issue launching your app. Try updating the app or the Intune Company Portal app. If you need help, contact your IT administrator. | Intune detected valid app protection policy for the app, but the app is crashing during MAM initialization. | Make sure the app version is up-to-date. <br><br> Make sure the Intune Company Portal app is installed and up-to-date on the device. <br><br> If the error persists, use the Company Portal app to send logs to Intune or create a [support ticket](get-support.md#create-an-online-support-ticket).
 **No apps found**: There are no apps on this device that your organization allows to open this content. Contact your IT administrator for help. | The user tried to open work or school data with another app, but Intune cannot find any other managed apps that are allowed to open the data. | Make sure an Android app protection policy is deployed to the user's security and targets at least one other MAM-enabled app that can open the data in question.
 **Sign-in failed**: Try to sign in again. If this problem persists, contact your IT administrator for help. | Failure to authenticate the account with which the user attempted to sign in. | Make sure the user signs in with the work or school account that is already enrolled with the Intune MAM service (the first work or school account that was successfully signed into in this app). <br><br> Clear the app's data. <br><br> Make sure the app version is up-to-date. <br><br> Make sure the Company Portal version is up-to-date.
