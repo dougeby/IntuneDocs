@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ This article lists these settings, and describes what each setting does.
 
 ## Before you begin
 
-[Create an iOS device configuration profile](device-features-configure.md).
+[Create an iOS device configuration profile](device-features-configure.md#create-a-device-profile).
 
 ## AirPrint settings
 
@@ -280,6 +280,20 @@ These settings control browser URL access on iOS devices.
       If you don't enter any URLs, then end users can't access any websites except for `microsoft.com`, `microsoft.net`, and `apple.com`. These URLs are automatically allowed by Intune.
 
       Select **OK** to save your changes.
+
+## Wallpaper settings
+
+Add a custom .png, jpg, or .jpeg image to your iOS devices. For example, use a company logo on the lock screen.
+
+- **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
+  - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.
+  - **Lock screen**: Adds the image to the lock screen.
+  - **Home screen**: Adds the image to the home screen.
+  - **Lock screen and Home screen**: Uses the same image on the lock screen and home screen.
+- **Wallpaper Image**: Upload an existing .png, jpg, or .jpeg image you want to use. Be sure the file size is less than 750 KB. 
+
+> [!TIP]
+> To display different images on the lock screen and home screen, create a profile with the lock screen image. Create another profile with the home screen image. Assign both profiles to your iOS user or device groups.
 
 ## Bundle IDs for built-in iOS apps
 
