@@ -1,6 +1,40 @@
 {
 	"redirections": [
-
+		{
+			"source_path": "intune/airplay-settings-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/web-content-filter-settings-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings#web-content-filter-settings",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/sso-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings#single-sign-on-settings",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/shared-device-settings-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings#lock-screen-message-settings",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/app-notification-settings-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings#app-notifications-settings",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/home-screen-settings-ios.md",
+			"redirect_url": "/intune/ios-device-features-settings#home-screen-layout-settings",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/air-print-settings-ios-macos.md",
+			"redirect_url": "/intune/ios-device-features-settings#airprint-settings",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune/android-enterprise-settings.md",
 			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
@@ -1480,17 +1514,17 @@
 		},
 		{
 			"source_path": "intune/configure-devices/air-print-settings-for-ios-and-macos.md",
-			"redirect_url": "/intune/air-print-settings-ios-macos",
+			"redirect_url": "/intune/ios-device-features-settings#airprint-settings",
 			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune/configure-devices/airplay-settings-for-ios-devices.md",
-			"redirect_url": "/intune/airplay-settings-ios",
+			"redirect_url": "/intune/ios-device-features-settings",
 			"redirect_document_id": true
 		},
 		{
 			"source_path": "intune/configure-devices/app-notification-settings-for-ios.md",
-			"redirect_url": "/intune/app-notification-settings-ios",
+			"redirect_url": "/intune/ios-device-features-settings#app-notifications-settings",
 			"redirect_document_id": true
 		},
 		{
@@ -1605,7 +1639,7 @@
 		},
 		{
 			"source_path": "intune/configure-devices/home-screen-settings-for-ios.md",
-			"redirect_url": "/intune/home-screen-settings-ios",
+			"redirect_url": "/intune/ios-device-features-settings#home-screen-layout-settings",
 			"redirect_document_id": true
 		},
 		{
@@ -1695,7 +1729,7 @@
 		},
 		{
 			"source_path": "intune/configure-devices/shared-device-settings-for-ios.md",
-			"redirect_url": "/intune/shared-device-settings-ios",
+			"redirect_url": "/intune/ios-device-features-settings#lock-screen-message-settings",
 			"redirect_document_id": true
 		},
 		{
