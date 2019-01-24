@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -99,9 +99,9 @@ You deployed a security baseline, but the deployment status shows an error. The 
 
 ### MDM diagnostic information
 
-At this point, you know the problematic setting. The goal is to find out why this setting is causing an error or conflict. 
+Now you know the problematic setting. The next step is to find out why this setting is causing an error or conflict. 
 
-On Windows 10 devices, there's a built-in MDM diagnostic information report. This report includes default values, current values, lists the policy, shows if it's deployed to the device or the user, and more. Use this report to help determine see why the setting is causing a conflict or error.
+On Windows 10 devices, there's a built-in MDM diagnostic information report. This report includes default values, current values, lists the policy, shows if it's deployed to the device or the user, and more. Use this report to help determine why the setting is causing a conflict or error.
 
 1. On the device, go to **Settings** > **Accounts** > **Access work or school**.
 2. Select the account > **Info** > **Advanced Diagnostic Report** > **Create report**.
