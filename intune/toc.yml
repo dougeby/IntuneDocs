@@ -573,6 +573,8 @@
         href: troubleshoot-app-install.md          
       - name: Audit logs for Intune activities
         href: monitor-audit-logs.md
+      - name: Review logs with Azure Monitor
+        href: review-logs-using-azure-monitor.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
       - name: Troubleshoot email profiles
@@ -846,7 +848,7 @@
       href: intune-graph-apis.md
       items:
       - name: Intune API reference
-        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
   - name: Microsoft Intune documentation guide
