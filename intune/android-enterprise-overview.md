@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -72,7 +72,7 @@ App protection policies applied are fully supported in the work profile and in t
 
 VPN support is similar to Android VPN profiles. The same VPN providers and basic configuration options are available for Android enterprise management with two differences:
 
--  **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android enterprise VPN settings](vpn-settings-android.md#android-for-work-vpn-settings).
+-  **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android enterprise VPN settings](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 -  **App-specific VPN** – App-specific VPN can be configured in Intune if the VPN provider supports:
     - configuration for app-specific VPN

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ This article lists and describes the different settings you can control on Windo
 
 ## Before you begin
 
-[Create a device configuration profile](device-restrictions-configure.md).
+[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## General
 
@@ -84,7 +84,7 @@ This article lists and describes the different settings you can control on Windo
 
 ## Kiosk - Obsolete
 
-These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings](kiosk-settings.md#windows-holographic-for-business).
+These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings](kiosk-settings-holographic.md).
 
 A kiosk device typically runs a specific app. Users are prevented from accessing any features or functions on the device outside of the kiosk app.
 
@@ -109,3 +109,7 @@ Enter the following settings:
 ## Reporting and Telemetry
 
 - **Share usage data**: Select level of diagnostic data submission.
+
+## Next steps
+
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
