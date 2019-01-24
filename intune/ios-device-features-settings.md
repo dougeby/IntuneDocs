@@ -283,14 +283,14 @@ These settings control browser URL access on iOS devices.
 
 ## Wallpaper settings
 
-Add a custom .png, jpg, or .jpeg image to your iOS devices. For example, use a company logo on the lock screen.
+Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use a company logo on the lock screen.
 
 - **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
   - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.
   - **Lock screen**: Adds the image to the lock screen.
   - **Home screen**: Adds the image to the home screen.
   - **Lock screen and Home screen**: Uses the same image on the lock screen and home screen.
-- **Wallpaper Image**: Upload an existing .png, jpg, or .jpeg image you want to use. Be sure the file size is less than 750 KB. 
+- **Wallpaper Image**: Upload an existing .png, .jpg, or .jpeg image you want to use. Be sure the file size is less than 750 KB. You can also **remove** an image that you added.
 
 > [!TIP]
 > To display different images on the lock screen and home screen, create a profile with the lock screen image. Create another profile with the home screen image. Assign both profiles to your iOS user or device groups.
