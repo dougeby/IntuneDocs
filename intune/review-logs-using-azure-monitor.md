@@ -2,7 +2,7 @@
 # required metadata
 
 title: Store audit logs in Azure monitor using Microsoft Intune - Azure | Microsoft Docs
-description: Use Diagnostic Settings to send audit logs and operational logs in Microsoft Intune to Azure storage account, event hubs, or log analytics. Choose how long you want to keep the data, and see some estimated costs for different size tenants.
+description: Use Diagnostics Settings to send audit logs and operational logs in Microsoft Intune to Azure storage account, event hubs, or log analytics. Choose how long you want to keep the data, and see some estimated costs for different size tenants.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Send log data to storage, event hubs, or log analytics in Intune (preview)
 
-Microsoft Intune includes built-in logs that provide information about your environment. **Audit logs** show details on different events or tasks that happen in Intune. **Operational logs (preview)** show details on users and devices that successfully (or failed) to enroll.
+Microsoft Intune includes built-in logs that provide information about your environment. **Audit Logs** show details on different events or tasks that happen in Intune. **Operational Logs (preview)** show details on users and devices that successfully (or failed) to enroll.
 
 These logs can also be sent to Azure Monitor services, including storage accounts, event hubs, and log analytics. Specifically, you can:
 
@@ -37,9 +37,9 @@ These logs can also be sent to Azure Monitor services, including storage account
 * Integrate Intune logs with your own custom log solutions by streaming them to an event hub.
 * Send Intune logs to Log Analytics to enable rich visualizations, monitoring, and alerting on the connected data.
 
-These features are part of the **Diagnostic Settings** in Intune. 
+These features are part of the **Diagnostics Settings** in Intune. 
 
-This article shows you how to use **Diagnostic Settings** to send log data to different services, gives examples and estimates of costs, and answers some common questions.
+This article shows you how to use **Diagnostics Settings** to send log data to different services, gives examples and estimates of costs, and answers some common questions.
 
 ## Prerequisites
 
