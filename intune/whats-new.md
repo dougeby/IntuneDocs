@@ -47,13 +47,16 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 -->     
 ## Week of January 21, 2019
 
+
+## Device enrollment
+
 ### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
 When you create a macOS enrollment profile, you can configure it to skip any of the following screens when a user goes through the Setup Assistant:
 - Android Migration
 - Display Tone
 - Privacy
 - iCloudStorage
-
+For more information, see [Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager](device-enrollment-program-enroll-macos.md).
 
 ## Week of January 14, 2019
 
