@@ -388,6 +388,11 @@
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md    
+      - name: Security baselines
+        href: security-baselines.md
+        items:
+        - name: Monitor your baselines
+          href: security-baselines-monitor.md
       - name: Endpoint protection
         href: endpoint-protection-configure.md
     - name: Network access control
@@ -568,6 +573,8 @@
         href: troubleshoot-app-install.md          
       - name: Audit logs for Intune activities
         href: monitor-audit-logs.md
+      - name: Review logs with Azure Monitor
+        href: review-logs-using-azure-monitor.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
       - name: Troubleshoot email profiles
