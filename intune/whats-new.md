@@ -53,6 +53,7 @@ When you create a macOS enrollment profile, you can configure it to skip any of 
 - Display Tone
 - Privacy
 - iCloudStorage
+
 This feature is starting to roll out but will take a few days to be available to all customers.
 
 ## Week of January 14, 2019
