@@ -59,7 +59,7 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
 
-### Additional settings for Outlook <!-- 3301182  -->
+#### Additional settings for Outlook <!-- 3301182  -->
 You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
 Only allow work or school accounts to be used in Outlook in iOS and Android
 Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
@@ -72,7 +72,7 @@ Block external images
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-settings) and [Android Access Settings](app-protection-policy-settings-android.md#access-settings).
 
-### Delete Android Enterprise apps <!-- 1352553 -->
+#### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
 
 ### Device configuration
@@ -120,6 +120,12 @@ To see the current list of settings, go to [Android Enterprise device settings t
 
 Applies to: Android Enterprise Device Owner
 
+#### Intune app protection policies UI update <!-- 3251427 -->
+We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
+- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
+- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
+
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md#access-requirements) and [Android settings](app-protection-policy-settings-android.md#access-requirements).
 
 ### Device management
 #### Deployed WIP policies without user enrollment <!-- 1434452 -->
