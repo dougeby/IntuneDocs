@@ -149,6 +149,9 @@ To choose which screens to skip, go to **Device enrollment** > **Apple enrollmen
 If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
 This feature is starting to roll out but will take a few days to be available to all customers.
 
+#### Android Enterprise APP-WE app deployment <!-- 1171203 -->
+For Android devices in a non-enrolled App Protection Policy Without Enrollment (APP-WE) deployment scenario, you can now use managed Google Play to deploy store apps and LOB apps to users. Specifically, you can provide end users with an app catalog and installation experience that no longer requires end users to loosen the security posture of their devices by allowing installations from unknown sources. In addition, this deployment scenario will provide an improved end user experience.
+
 ## Week of January 14, 2019
 
 ### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
