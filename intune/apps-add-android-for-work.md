@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-classic
 
 ---
 
-# Assign Managed Google Play apps to Android enterprise devices with Intune
+# Add Managed Google Play apps to Android enterprise devices with Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -112,7 +112,7 @@ Alternatively, you can configure Google Play to automatically reapprove app perm
 5. In the **Apps** node of the store, verify that the app you've published is displayed.  
     The app is automatically approved to be synchronized with Intune.
 
-## Delete Android Enterprise apps 
+## Delete Managed Google Play apps 
 When necessary, you can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
 
 ## Next steps
