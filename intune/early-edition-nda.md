@@ -55,12 +55,6 @@ The **managed Google Play** app type will allow you to specifically add [managed
 ### Deployment of online licensed Microsoft Store for Business apps <!-- 1672660  -->
 You will be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
 
-### Configure profile to skip some screens during Setup Assistant <!-- 2276470  -->
-When you create a macOS enrollment profile, you will be able to configure it to skip any of the following screens when a user goes through the Setup Assistant:
-- Android Migration
-- Display Tone
-- Privacy
-- iCloudStorage
 
 <!-- 1812 start -->
 

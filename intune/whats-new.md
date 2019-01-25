@@ -77,8 +77,8 @@ This update includes a new BitLocker setting to allow standard users (non-admini
 ​
 To see the settings, go to [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).​
 
-#### Check for SCCM compliance <!-- 2192052  eepublished  -->
-This update includes a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** > **Configuration Manager Compliance**). Configuration Manager sends signals to Intune compliance. Using this setting, you can require all SCCM signals to return "compliant".
+#### Check for Configuration Manager compliance <!-- 2192052  eepublished  -->
+This update includes a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** > **Configuration Manager Compliance**). Configuration Manager sends signals to Intune compliance. Using this setting, you can require all Configuration Manager signals to return "compliant".
 
 For example, you require all software updates to be installed on devices. In Configuration Manager, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device is non-compliant in Intune.
 
@@ -105,16 +105,6 @@ To see the current list of settings, go to [Android Enterprise device settings t
 Applies to: Android Enterprise Device Owner
 
 
-### Device enrollment
-
-#### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
-When you create a macOS enrollment profile, you can configure it to skip any of the following screens when a user goes through the Setup Assistant:
-- Android Migration
-- Display Tone
-- Privacy
-- iCloudStorage
-For more information, see [Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager](device-enrollment-program-enroll-macos.md).
-
 ### Device management
 #### Deployed WIP policies without user enrollment <!-- 1434452 -->
 Windows Information Protection (WIP) policies can be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From Intune in the Azure portal, select **Client app** > **App selective wipe**.
@@ -128,7 +118,11 @@ Intune has built-in audit logging that tracks events as changes are made. This u
 
 [Send log data to storage, event hubs, or log analytics in Intune](review-logs-using-azure-monitor.md) provides more information on this feature.
 
-
+### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509  -->
+In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
+If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
+This feature is starting to roll out but will take a few days to be available to all customers.
 
 ## Week of January 14, 2019
 
