@@ -446,7 +446,7 @@
           items:
           - name: Manually add Company Portal app
             href: store-apps-company-portal-app.md
-        - name: Android work profile apps
+        - name: Managed Google Play apps
           href: apps-add-android-for-work.md
         - name: Office 365 apps for Windows 10
           href: apps-add-office365.md
