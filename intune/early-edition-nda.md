@@ -47,9 +47,6 @@ This page is updated periodically. Check back for additional updates.
 <!-- 1901 start -->
 
 
-### Managed Google Play app type <!-- 1352580 -->
-The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you will be able to now browse, search, approve, sync and assign approved managed Google Play apps within Intune. You will no longer need to browse to the managed Google Play console separately, and you will no longer have to reauthenticate. In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
-
 ### Deployment of online licensed Microsoft Store for Business apps <!-- 1672660  -->
 You will be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
 
