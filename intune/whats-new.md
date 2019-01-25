@@ -77,7 +77,7 @@ You can delete managed Google Play apps from Microsoft Intune. To delete a manag
 
 ### Device configuration
 
-#### Use Microsoft-recommended settings with Security Baselines <!-- 2055484   -->
+#### Use Microsoft-recommended settings with Security Baselines (Public Preview) <!-- 2055484   -->
 Intune integrates with other services that focus on security, including Windows Defender ATP and Office 365 ATP. Customers are asking for a common strategy and a cohesive set of end-to-end security workflows across the Microsoft 365 services. Our goal is to align strategies to build solutions that bridge security operations and common administrator tasks. 
 In Intune, we aim to accomplish this goal by publishing a set of Microsoft recommended “Security baselines” (**Intune** > **Security baselines**).  An administrator can create security policies directly from these baselines, and then deploy them to their users. You can also customize the best practice recommendations to meet the needs of your organization. Intune makes sure that devices stay in compliance with these baselines, and notifies administrators of users or devices that aren't in compliance.
 
