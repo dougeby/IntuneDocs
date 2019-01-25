@@ -105,16 +105,6 @@ To see the current list of settings, go to [Android Enterprise device settings t
 Applies to: Android Enterprise Device Owner
 
 
-### Device enrollment
-
-#### Configure profile to skip some screens during Setup Assistant <!-- 2276470 -->
-When you create a macOS enrollment profile, you can configure it to skip any of the following screens when a user goes through the Setup Assistant:
-- Android Migration
-- Display Tone
-- Privacy
-- iCloudStorage
-For more information, see [Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager](device-enrollment-program-enroll-macos.md).
-
 ### Device management
 #### Deployed WIP policies without user enrollment <!-- 1434452 -->
 Windows Information Protection (WIP) policies can be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From Intune in the Azure portal, select **Client app** > **App selective wipe**.
