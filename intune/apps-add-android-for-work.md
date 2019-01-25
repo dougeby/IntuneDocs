@@ -42,7 +42,36 @@ Additionally, if you have created your own line-of-business (LOB) apps, you can 
 
 Make sure you have configured Intune and Android work profiles to work together in the **Device enrollment** workload of the Azure portal. For more information, see [Enroll Android devices](android-work-profile-enroll.md).
 
-## Synchronize an app from the Managed Google Play store
+>[!NOTE]
+>When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser.
+
+## Managed Google Play app type 
+The **managed Google Play** app type will allow you to specifically add [Managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate. 
+
+> [!NOTE]
+> If you prefer to synchronize a Managed Google Play app with Intune, see [Synchronize a Managed Google Play app with Intune](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
+
+## Add a Managed Google Play app using Intune
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services** > **Intune**.  
+    Intune is located in the **Monitoring + Management** section.
+3. In the **Intune** pane, select **Client apps** > **Apps**.
+5. In the **Apps** pane, select **Add**.
+6. In the **App type** dropdown box, select **Managed Google Play**.
+7. Select **Managed Google Play - Approve apps** to serach for approved Managed Google Play apps.
+8. Click on each app that you want to include. Then, c
+9. Click **Approve** to approve the Managed Google Play app and click **Approve** to accept the app permissions. 
+10. Click **OK** to include the app(s).
+11. Click **Add** on the **App app** pane to sync with the Managed Google Play servcie.
+
+## Synchronize a Managed Google Play app with Intune (Alternative)
+If you prefer to synchronize a Managed Google Play app with Intune rather than adding it directly using Intune, use the following steps.
+
+> [!IMPORTANT]
+> The information provided below is an alternative method to adding a Managed Google Play app using Intune as described above.
+
+### Synchronize an app from the Managed Google Play store
 
 1. Go to the [Managed Google Play store](https://play.google.com/work). Sign in with the same account you used to configure the connection between Intune and Android enterprise.
 2. Search the store and select the app you want to assign by using Intune.
@@ -63,7 +92,7 @@ Make sure you have configured Intune and Android work profiles to work together 
 
     The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
-## Sync a Managed Google Play app with Intune
+### Sync a Managed Google Play app with Intune
 
 If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Client apps** workload, force an immediate sync as follows:
 
@@ -76,7 +105,9 @@ If you have approved an app from the store and don't see it in the **Licensed ap
 6. In the **Client apps** workload pane, select **Apps**.  
     The newly available Managed Google Play app is displayed.
 
-When the app is displayed in the **App licenses** node of the **Client apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps). You can assign the app to groups of users only.
+## Assigning the Managed Google Play app
+
+When the app is displayed in the **App licenses** node of the **Client apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps) by assigning the the app to groups of users.
 
 After you assign the app, it is installed on the devices that you've targeted. The user of the device is not asked to approve the installation.
 
