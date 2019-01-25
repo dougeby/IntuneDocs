@@ -46,8 +46,6 @@ This page is updated periodically. Check back for additional updates.
 
 <!-- 1901 start -->
 
-### Android Enterprise apps <!-- 1352553  -->
-You will be able to delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, you will open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, you will select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
 
 ### Managed Google Play app type <!-- 1352580 -->
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you will be able to now browse, search, approve, sync and assign approved managed Google Play apps within Intune. You will no longer need to browse to the managed Google Play console separately, and you will no longer have to reauthenticate. In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
@@ -76,20 +74,6 @@ If users install the Company Portal app from the App store, and then try to enro
 In addition, the **Identify your device** screen in the Company Portal app will soon become obsolete.  
 To install Company Portal on already-enrolled DEP devices, you will need to go to Intune > Client apps, and push it as a managed app with app configuration policies. Details about how to do these steps will be outlined in future docs.
 
-
-### Additional settings for Outlook <!-- 3301182 -->
-You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
-- Only allow work or school accounts to be used in Outlook in iOS and Android
-- Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
-- Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-- Allow contacts to be saved
-- Configure External Recipients MailTips
-- Configure **Focused Inbox**
-- Require biometrics to access Outlook for iOS 
-- Block external images
-
-> [!NOTE]
-> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access requirements](app-protection-policy-settings-ios.md#access-settings) and [Android Access requirements](app-protection-policy-settings-android.md#access-settings).
 
 ### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
 Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
