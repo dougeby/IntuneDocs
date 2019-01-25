@@ -3,7 +3,7 @@ title: Bulk enrollment for Windows 10
 titlesuffix: Microsoft Intune
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
@@ -51,8 +51,7 @@ Azure AD users are standard users on these devices and receive assigned Intune p
    - **Description** - An optional description of the project
    ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
-4. Enter a unique name for your devices. Names can include a serial number (%%SERIAL%%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
-
+4. Enter a unique name for your devices. Names can include a serial number (%SERIAL%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
    ![Screenshot of specifying name and product key in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
 5. Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 01/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,114 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+## Week of January 21, 2019
 
+### App management
+
+#### Toast notifications for Win32 apps <!-- 3136566   -->
+You can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
+
+#### Intune app protection policies UI update <!-- 3251427  -->
+We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
+- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
+- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
+
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
+
+#### Additional settings for Outlook <!-- 3301182  -->
+You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
+Only allow work or school accounts to be used in Outlook in iOS and Android
+Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
+Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
+Allow contacts to be saved
+Configure external recipients MailTips
+Configure **Focused Inbox**
+Require biometrics to access Outlook for iOS 
+Block external images
+> [!NOTE]
+> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-settings) and [Android Access Settings](app-protection-policy-settings-android.md#access-settings).
+
+#### Delete Android Enterprise apps <!-- 1352553 -->
+You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
+
+#### Managed Google Play app type <!-- 1352580 -->
+The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.  In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
+
+### Device configuration
+
+#### Use Microsoft-recommended settings with Security Baselines (Public Preview) <!-- 2055484   -->
+Intune integrates with other services that focus on security, including Windows Defender ATP and Office 365 ATP. Customers are asking for a common strategy and a cohesive set of end-to-end security workflows across the Microsoft 365 services. Our goal is to align strategies to build solutions that bridge security operations and common administrator tasks. 
+In Intune, we aim to accomplish this goal by publishing a set of Microsoft recommended “Security baselines” (**Intune** > **Security baselines**).  An administrator can create security policies directly from these baselines, and then deploy them to their users. You can also customize the best practice recommendations to meet the needs of your organization. Intune makes sure that devices stay in compliance with these baselines, and notifies administrators of users or devices that aren't in compliance.
+
+To learn more about security baselines, see [Create a Windows 10 security baseline in Intune](security-baselines-monitor.md).
+
+This feature applies to:
+Windows 10 and later
+
+#### Non-Administrators can enable BitLocker on Windows 10 devices joined to Azure AD<!-- 2147379   -->​
+When you enable BitLocker settings on Windows 10 devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Endpoint protection** for profile type > **Windows Encryption**), you add BitLocker settings. ​
+​
+This update includes a new BitLocker setting to allow standard users (non-administrators) to enable encryption. ​
+​
+To see the settings, go to [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).​
+
+#### Check for Configuration Manager compliance <!-- 2192052  eepublished  -->
+This update includes a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** > **Configuration Manager Compliance**). Configuration Manager sends signals to Intune compliance. Using this setting, you can require all Configuration Manager signals to return "compliant".
+
+For example, you require all software updates to be installed on devices. In Configuration Manager, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device is non-compliant in Intune.
+
+[Configuration Manager Compliance](compliance-policy-create-windows.md#configuration-manager-compliance) describes this setting.
+
+Applies to: 
+Windows 10 and later
+
+#### Customize wallpaper on supervised iOS devices using a device configuration profile <!-- 2809324   -->
+When you create a device configuration profile for iOS devices, you can customize some features (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device features** for profile type). This update includes new **Wallpaper** settings that allow an Administrator to use a .png, .jpg, or .jpeg image on the home screen or lock screen. These wallpaper settings apply only to supervised devices. 
+
+For a list of these settings, see [iOS device feature settings](ios-device-features-settings.md).
+
+#### Windows 10 kiosk is generally available <!-- 3594661  -->
+In this update, the Kiosk feature on Windows 10 and later devices is generally available (GA). To see all the settings you can add and configure, see [Kiosk settings for Windows 10 (and later)](kiosk-settings.md).
+
+#### Contact Sharing via Bluetooth is removed in Device Restrictions > Device Owner for Android Enterprise <!-- 3598396   -->
+When you create a device restrictions profile for Android Enterprise devices, there is a **Contact Sharing via Bluetooth** setting. In this update, the **Contact Sharing via Bluetooth** setting is removed (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Restrictions > Device owner** for profile type > **General**). 
+
+The **Contact Sharing via Bluetooth** setting isn't supported for Android Enterprise Device Owner management. So when this setting is removed, it won't impact any devices or tenants, even if this setting is enabled and configured in your environment.
+
+To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
+
+Applies to: Android Enterprise Device Owner
+
+#### Intune app protection policies UI update <!-- 3251427 -->
+We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
+- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
+- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
+
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
+
+### Device management
+#### Deployed WIP policies without user enrollment <!-- 1434452 -->
+Windows Information Protection (WIP) policies can be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From Intune in the Azure portal, select **Client app** > **App selective wipe**.
+
+### Monitor and troubleshoot
+
+#### New operational logs, and ability to send logs to Azure Monitor services <!-- 3762211  -->
+Intune has built-in audit logging that tracks events as changes are made. This update includes new logging features, including: 
+- Operational logs (preview) that show details on users and devices that enrolled, including success and failed attempts.
+- The audit logs and operational logs can be sent to Azure Monitor, including storage accounts, event hubs, and log analytics. These services allow you to store, use analytics such as Splunk and QRadar, and get visualizations of your logging data.
+
+[Send log data to storage, event hubs, or log analytics in Intune](review-logs-using-azure-monitor.md) provides more information on this feature.
+
+### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509  -->
+In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
+To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
+If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
+This feature is starting to roll out but will take a few days to be available to all customers.
+
+## Week of January 14, 2019
+
+### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
+Intune now supports fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. For more information, see [Set up Intune enrollment of Android fully managed devices](android-fully-managed-enroll.md) and [Enroll your dedicated devices or fully managed devices](android-dedicated-devices-fully-managed-enroll.md).  Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
 ## Week of January 7, 2019
 
@@ -120,8 +227,8 @@ When you create a configuration profile for iOS devices, you can add **Shared De
 
 #### New App Store, Doc Viewing, Gaming device restriction settings added to iOS devices <!-- 2827760-->
 In **Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**, the following settings are added: 
-Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)
-Allow unmanaged apps to read from managed contacts accounts (supervised only)
+Allow managed apps to write contacts to unmanaged contacts accounts 
+Allow unmanaged apps to read from managed contacts accounts 
 To see these settings, go to [iOS device restrictions](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->
@@ -148,10 +255,6 @@ Applies to: Windows 10 and later
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
 More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#configuration-policies-reference).
 
-#### Skip more Setup Assistant screens on an iOS DEP device <!-- 2687509 -->
-In addition to the screens you can currently skip, you can set iOS DEP devices to skip the following screens in the Setup Assistant when a user enrolls the device: 
-Display Tone, Privacy, Android Migration, Home Button, iMessage & FaceTime, Onboarding, Watch Migration, Appearance, Screen Time, Software Update, SIM Setup.
-To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 
 
 ### Monitor and troubleshoot
@@ -1275,6 +1378,57 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
+### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
+We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 
+
+#### How does this affect me?
+This impacts you if you have or plan to have devices running macOS 10.14.2 and greater. Now that the Apple has introduced the "Change Password at New Auth" setting, Intune can force users to update their password to one that is compliant when a password policy is pushed. Your macOS users will receive a request to update their password when we integrate this new Apple feature, even if their password is already compliant. Note that if a password is already compliant and you don’t have a requirement against repeating passwords, then end users will be able to update to their existing password. End users will only see a request to update their password when they try to authenticate or log in to their device. 
+If you block company resources until the device is marked compliant, then know that your end users on devices with macOS 10.14.2 may be blocked from accessing company resources such as email or SharePoint sites until they reset their password. In the future, all updates to configuration and compliance password policies will force targeted users to update their passwords. 
+Our customer research prior to implementing this change indicated most customers will not be affected by this change, since end users will typically update their password after receiving a request to enroll with a password or reset their password to remain compliant
+
+#### What can I do to prepare for this change?
+You may want to let your helpdesk know. We’ll update this What’s New page when this change is rolled out. If you do not want this macOS device password policy to be enforced, we recommend you un-assign or delete your existing macOS policy.
+
+
+### Reminder: Intune support experience for Premier customers now in Azure instead of MPO <!--2828727-->
+We shared in MC147649 in September, that we would remove the ability to create Intune support requests from the Microsoft Premier Online (MPO) portal (premier.microsoft.com) in December. Now, after a slight delay, at the end of January, you will be redirected to create support requests only in Intune on Azure. 
+
+
+#### How does this affect me?
+After the end of January, to continue enhancing the Premier support experience, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you’ll not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Note that support requests created in the MPO portal cannot be viewed in the Azure portal. 
+
+The Azure portal has a new support experience as we announced recently in MC171941. More information about this can be found at [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) and at the Additional Information link.
+
+If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is [deprecated](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+Note that only users with Global Administrator, Intune Service Administrator and Service Support Administrator roles can create support tickets in the Azure portal.
+
+#### What can I do to prepare for this change?
+- Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
+- Notify your helpdesk and update documentation if necessary.
+- If you have users without Global administrator or Intune Service Administrator roles currently creating support requests in MPO, assign them the Service Support Administrator role in Azure Active Directory, so they can continue to create support tickets in the Azure portal.
+
+#### Additional Information
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### Plan for Change: User experience update to Intune Company Portal app for iOS
+We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
+
+#### How does this affect me?
+This user experience update, while maintaining current iOS Company Portal functionality, will feature:
+- A home page with native iOS look and feel 
+- Filtering capabilities on content listings and search including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
+- Ability to search ebooks
+- Search history for apps and ebooks
+If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You will also have the opportunity to provide feedback directly to the Intune team.  
+
+#### What can I do to prepare for this change?
+You do not need to take any action; these changes will be released in an upcoming iOS CP app release. 
+
+#### Additional Information
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 -->
 To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector. This change will begin with the December service update and be completed with the February 2019 service update.
 
@@ -1309,27 +1463,6 @@ When the updates roll out, you will no longer need to use Azure AD groups to ass
 You do not need to do anything while we move your policy assignments. If you currently assign policies in the Intune for Education console, continue doing so.
 
 If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
-
-### Plan for Change: New Intune support experience for Premier customers 
-12/4/18 Update: We are trying to make this process better for you so support request creation in MPO will not be disabled on December 3 but on a later date instead. We'll let you know through the Message Center and update this post soon to share timelines for this change.
-
-As a Microsoft Premier customer, you can currently use the Microsoft Premier Online (MPO) portal (premier.microsoft.com) and Intune on Azure (portal.azure.com) to create support requests for Intune. Starting on December 3, 2018, to continue enhancing the Premier support experience, you will be able to create support requests only in Intune on Azure.
-
-#### How does this affect me?
-After December 3, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you will not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Support requests created in the MPO portal cannot be viewed in the Azure portal, so you should stop creating support requests in MPO.  
-
-If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is deprecated, and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification).
-
-Note that only users with Global Administrator, Intune Service Administrator, and Service Support Administrator roles can create support tickets in the Azure portal.
-
-#### What can I do to prepare for this change?
-- Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
-- Notify your helpdesk and update documentation if necessary.
-- If you have users without Global administrator or Intune Service Administrator roles currently creating support requests in MPO, assign them the Service Support Administrator role in Azure Active Directory, so they can continue to create support tickets in the Azure portal.
-- Click on Additional Information for more information and helpful links.
-
-#### Additional Information
-For more information, see the [Microsoft Intune support team blog post](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
 ### Take action: Please update your Android device restriction or compliance policy password settings in Intune

@@ -26,7 +26,6 @@ search.appverid: MET150
 ms.custom: intune-classic
 
 ---
-
 # How to get support for Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
@@ -47,7 +46,7 @@ As an IT admin, you can use the **Help and Support** option to file an on-line s
 
 ## Help and support experience
 > [!TIP]   
-> In January of 2019, a new Help and support experience is rolling out to all tenants. If your tenant does not yet have this new experience, you can find information about the previous experience in [Azure Help + support experience](#azure-help-+-support-experience), in this article.  
+> A new Help and support experience is available for all tenants. If you do not see this new experience in your tenant, clear your browser's cache and reload the page.
 
 The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
