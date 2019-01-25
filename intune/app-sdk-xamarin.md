@@ -96,16 +96,16 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 
 1. Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
 	1. For a Xamarin.Forms app, add the [Microsoft.Intune.MAM.Remapper.Tasks NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) to your Xamarin.Android project as well. 
-2. Follow the general steps required for integrating the Intune App SDK into an Android mobile app while referring to this document for additional details.
+2. Follow the general steps required for [integrating the Intune App SDK](app-sdk-android.md) into an Android mobile app while referring to this document for additional details.
 
 ### Xamarin.Android integration
 
-A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin.Android app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin.Android app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
+A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
 
-#### Renamed Methods
+#### [Renamed Methods](app-sdk-android.md#renamed-methods)
 In many cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (suffixed with `MAM`) that you should override instead. For example, when deriving from `MAMActivity`, instead of overriding `OnCreate()` and calling `base.OnCreate()`, `Activity` must override `OnMAMCreate()` and call `base.OnMAMCreate()`.
 
-#### MAM Application
+#### [MAM Application](app-sdk-android.md#mamapplication)
 Your app must define an `Android.App.Application` class that inherits from `MAMApplication`. Be sure that your subclass is properly decorated with the `[Application]` attribute and overrides the `(IntPtr, JniHandleOwnership)` constructor.
 ```csharp
     [Application]
@@ -115,7 +115,7 @@ Your app must define an `Android.App.Application` class that inherits from `MAMA
         : base(handle, transfer) { }
 ```
 
-#### Enable features that require app participation
+#### [Enable features that require app participation](app-sdk-android.md#enable-features-that-require-app-participation)
 Example: Determine if PIN is required for the app
 ```csharp
 MAMPolicyManager.GetPolicy(currentActivity).IsPinRequired;
@@ -130,7 +130,7 @@ Example: Determine if saving to device or cloud storage is permitted
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
-#### Register for notifications from the SDK
+#### [Register for notifications from the SDK](app-sdk-android.md#register-for-notifications-from-the-sdk)
 Your app must register for notifications from the SDK by creating a `MAMNotificationReceiver` and registering it with `MAMNotificationReceiverRegistry`. This is done by providing the receiver and the type of notification desired in `App.OnMAMCreate`, as the example below illustrates:
 ```csharp
 public override void OnMAMCreate()
@@ -144,7 +144,7 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### MAM Enrollment Manager
+#### [MAM Enrollment Manager](app-sdk-android.md#mam-enrollment-manager)
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
@@ -156,7 +156,7 @@ For `Xamarin.Forms` applications we have provided the `Microsoft.Intune.MAM.Rema
 > [!NOTE]
 > The Xamarin.Forms integration is to be done in addition to the Xamarin.Android integration detailed above.
 
-For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
+Once the Remapper is added to your project you will need to perform the MAM equivalent replacements. For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
 
 ```csharp
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
@@ -168,13 +168,10 @@ For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continu
             LoadApplication(new App());
         }
 ```
-
-If you do not perform the replacement for the MAM equivalents you may encounter the following complication error: 
+If the replacements are not made then you may encounter the following compilation errors until you make the replacements:
 * [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239). This error is commonly seen in this form
 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
 This is expected because when the Remapper modifies the inheritance of Xamarin classes, certain functions will be made `sealed` and a new MAM variant is added to override instead.
-
-Another compiler error you may encounter when adding the Remapper to your Forms project is:
 * [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): This error is commonly seen in this form ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. When the Remapper changes the inheritance of some of the Xamarin classes, certain member functions will be changed to `public`. If you override any of these functions, you will need to change those the access modifiers for those overrides to be `public` as well.
 
 > [!NOTE]
