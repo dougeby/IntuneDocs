@@ -120,7 +120,7 @@ The Intune Connector for Active Directory needs to be installed on a computer ru
 4. Open the downloaded connector setup file to install the connector (ODJConnectorBootstrapper.exe).
 5. At the end of setup, choose **Configure**.
 6. Choose **Sign In**.
-7. Enter user Global Administrator or Intune Administrator role credentials.
+7. Enter user Global Administrator or Intune Administrator role credentials. The user account must have an assigned Intune license.
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** and confirm the connection status is **Active**.
 
  > [!NOTE]
