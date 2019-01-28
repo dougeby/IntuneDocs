@@ -131,8 +131,9 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
 
 ### Device management
-#### Deployed WIP policies without user enrollment <!-- 1434452 -->
-Windows Information Protection (WIP) policies can be deployed without requiring MDM users to enroll their Windows 10 device. This configuration allows companies to protect their corporate documents based on the WIP configuration, while allowing the user to maintain management of their own Windows devices. Once documents are protected with a WIP policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP policy will become unusable. From Intune in the Azure portal, select **Client app** > **App selective wipe**.
+
+#### Selective wipe support for WIP Without Enrollment devices <!-- 1434452 -->
+Windows Information Protection Without Enrollment (WIP-WE) allows customers to protect their corporate data on Windows 10 devices without the need for full MDM enrollment. Once documents are protected with a WIP-WE policy, the protected data can be selectively wiped by an Intune administrator. By selecting the user and device, and sending a wipe request, all data that was protected via the WIP-WE policy will become unusable. From the Intune in the Azure portal, select **Mobile app** > **App selective wipe**.
 
 ### Monitor and troubleshoot
 
