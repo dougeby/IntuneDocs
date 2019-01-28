@@ -37,7 +37,7 @@ During device setup using Intune, the Enrollment Status Page displays installati
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
 
-You can also set the priority order for each profile to account for conflicting profile assignments ot the same user or device.
+You can also set the priority order for each profile to account for conflicting profile assignments to the same user or device.
 
  
 ## Turn on default enrollment status page for all users
