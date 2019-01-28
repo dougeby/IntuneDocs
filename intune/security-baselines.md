@@ -35,7 +35,7 @@ This feature applies to:
 - Windows 10 version 1809 and later
 
 > [!NOTE]
-> While security baselines is in preview, Microsoft doesn't recommend using profiles in a production environment, as the baselines may change over the course of the preview.
+> While security baselines is in preview, Microsoft doesn't recommend using profiles in a production environment, as the baselines may change over the course of the preview and they will not convert to the latest supported profiles after the feature is generally released.
 
 The goal of using security baselines is to provide an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
