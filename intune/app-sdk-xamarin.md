@@ -144,7 +144,7 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### [MAM Enrollment Manager](app-sdk-android.md#mam-enrollment-manager)
+#### [MAM Enrollment Manager](app-sdk-android.md#mamenrollmentmanager)
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 ```
