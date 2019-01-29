@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -129,7 +129,7 @@ This feature supports:
 - Android enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 and later
 - Windows 10 Team
 
 ## Delivery optimization
@@ -180,7 +180,7 @@ This feature supports:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 and later
 
 ## VPN
 
@@ -195,7 +195,7 @@ This feature supports:
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 and later
 
 ## Wi-Fi
 
@@ -207,6 +207,7 @@ This feature supports:
 - iOS
 - macOS
 - Windows 8.1 (import only)
+- Windows 10 and later
 
 ## eSIM cellular - Public preview
 
@@ -247,7 +248,7 @@ This feature supports:
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 and later
 
 ## Windows Information Protection profile
 
