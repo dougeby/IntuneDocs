@@ -72,7 +72,7 @@ The organizational unit that's granted the rights to create computers must match
 - The organizational unit that's entered in the Domain Join profile.
 - If no profile is selected, the computer's domain name for your domain.
 
-1. Open **Active Directory Users and Computers** (DSA.msc).
+1. Open **Active Directory Users and Computers (DSA.msc)**.
 
 1. Right-click the organizational unit that you'll use to create hybrid Azure AD-joined computers, and then select **Delegate Control**.
 
@@ -120,7 +120,7 @@ The Intune Connector for Active Directory must be installed on a computer that's
 8. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)**, and then confirm that the connection status is **Active**.
 
 > [!NOTE]
-> After you sign in to the Connector, it might take a couple of minutes for it to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
+> After you sign in to the Connector, it might take a couple of minutes to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
 
 ### Configure web proxy settings
 
@@ -166,7 +166,7 @@ If your devices aren't yet enrolled, you can register them yourself. For more in
 
 If you're buying new devices, some OEMs can register the devices for you. For more information, see the [Windows Autopilot page](http://aka.ms/WindowsAutopilot).
 
-When your Autopilot devices are *registered* (and before they're enrolled into Intune), they're displayed in three places (with names set to their serial numbers):
+When your Autopilot devices are *registered*, before they're enrolled into Intune, they're displayed in three places (with names set to their serial numbers):
 - The **Autopilot Devices** pane in the Intune in the Azure portal. Select **Device enrollment** > **Windows enrollment** > **Devices**.
 - The **Azure AD devices** pane in the Intune in the Azure portal. Select **Devices** > **Azure AD Devices**.
 - The **Azure AD All Devices** pane in Azure Active Directory in the Azure portal by selecting **Devices** > **All Devices**.
@@ -177,7 +177,7 @@ After your Autopilot devices are *enrolled*, they're displayed in four places:
 - The **Azure AD All Devices** pane in Azure Active Directory in the Azure portal. Select **Devices** > **All Devices**.
 - The **All Devices** pane in the Intune in the Azure portal. Select **Devices** > **All Devices**.
 
-After your Autopilot devices are enrolled, their names change to the hostname of the device. By default, the hostname begins with *DESKTOP-*.
+After your Autopilot devices are enrolled, their names become the hostname of the device. By default, the hostname begins with *DESKTOP-*.
 
 
 ## Create and assign an Autopilot deployment profile
