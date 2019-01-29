@@ -2,10 +2,10 @@
 title: Use SCEP certificates with Microsoft Intune - Azure | Microsoft Docs
 description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. Also, see the different event IDs and their descriptions, and the diagnostic codes for the Intune connector service.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,7 +17,7 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -70,7 +70,7 @@ We highly recommend publishing the NDES server through a reverse proxy, such as 
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server. If the certificate has the client and server authentication key usages set (**Enhanced Key Usages**), then you can use the same certificate.|
-|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
@@ -563,5 +563,6 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 
 ## Next steps
 
-- [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md)
-- [Add a 3rd party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)
+- [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web Service](certificates-symantec-configure.md)
+- [Add a 3rd-party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)
+- For additional assistance, use the [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) guide.

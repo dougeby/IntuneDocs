@@ -142,7 +142,7 @@ When you choose multi app kiosk mode, enter the following settings:
 
 - **Use alternative Start layout**: Choose **Yes** to enter an XML file that describes how the apps appear on the start menu, including the order of the apps. Use this option if you require more customization in your start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
 
-- **Windows Taskbar**: Choose to **Show** or **hide** the taskbar. By default, the taskbar isn't shown.
+- **Windows Taskbar**: Choose to **Show** or **hide** the taskbar. By default, the taskbar isn't shown. Icons, such as the Wi-Fi icon, are shown, but the settings can't be changed by end users.
 
 ## Next steps
 
