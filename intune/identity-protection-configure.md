@@ -4,10 +4,10 @@
 title: Use a PIN to sign in to Windows 10 devices using Microsoft Intune - Azure | Microsoft Docs
 description: Use Windows Hello for Business to allow users to sign in to devices using a PIN, a fingerprint, and more. Create an identity protection configuration profile in Intune for Windows 10 devices with these settings, and assign the profile to user groups and device groups.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -65,7 +65,7 @@ This article shows you how to create a device configuration profile. For a list 
 
 4. When you're done, select **OK** > **Create** to save your changes.
 
-The profile is created and appears in the profiles list. Next, [assign](device-profile-assign.md) this profile to groups.
+The profile is created and appears in the profiles list. Next, [assign](device-profile-assign.md) this profile to user and device groups to meet your needs.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

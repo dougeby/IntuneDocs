@@ -2,8 +2,8 @@
 title: Use private and public key certificates in Microsoft Intune - Azure | Micrososft Docs
 description: Add or create Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, including the steps to export a root certificate, configure the certificate template, download and install the Microsoft Intune Certificate Connector (NDES), create a device configuration profile, create a PKCS Certificate profile in Azure and your Certificate Authority.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -17,7 +17,7 @@ ms.assetid:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer:
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:

@@ -4,8 +4,8 @@
 title: Configure iOS software update policies in Microsoft Intune - Azure | Microsoft Docs
 description: In Microsoft Intune, create or add a configuration policy to restrict when software updates are automatically installed on iOS devices managed or supervised by Intune. You can choose the date and time when updates aren't installed. You can also assign this policy to groups, users, or devices, and check for any installation failures. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -18,7 +18,7 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+#ms.reviewer: tisilver
 #ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
