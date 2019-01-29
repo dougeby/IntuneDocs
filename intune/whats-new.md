@@ -126,13 +126,6 @@ To see the current list of settings, go to [Android Enterprise device settings t
 
 Applies to: Android Enterprise Device Owner
 
-#### Intune app protection policies UI update <!-- 3251427 -->
-We’ve changed the labels for settings a nd buttons for Intune app protection to make each easier to understand. Some of the changes include:  
-- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
-- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
-
-The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
-
 ### Device management
 
 #### Selective wipe support for WIP Without Enrollment devices <!-- 1434452 -->
