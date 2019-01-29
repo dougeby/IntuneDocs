@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -29,9 +29,11 @@ ms.custom: intune-azure; get-started
 # What's new in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Learn what’s new each week in Microsoft Intune. You can also find upcoming changes, [important notices](#notices), and information about [past releases](whats-new-archive.md). Some features may roll out over several weeks and might not be available to all customers in the first week.
+Learn what’s new each week in Microsoft Intune. You can also find upcoming changes, [important notices](#notices), and information about [past releases](whats-new-archive.md). 
 
 > [!Note]
+> Some features may roll out over several weeks and might not be available to all customers in the first week.
+>
 > For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -62,14 +64,15 @@ The default settings and number of settings remain the same, but this change all
 
 #### Additional settings for Outlook <!-- 3301182  -->
 You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
-Only allow work or school accounts to be used in Outlook in iOS and Android
-Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
-Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-Allow contacts to be saved
-Configure external recipients MailTips
-Configure **Focused Inbox**
-Require biometrics to access Outlook for iOS 
-Block external images
+- Only allow work or school accounts to be used in Outlook in iOS and Android
+- Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
+- Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
+- Allow contacts to be saved (available soon)
+- Configure external recipients MailTips (available soon)
+- Configure **Focused Inbox** (available soon)
+- Require biometrics to access Outlook for iOS (available soon) 
+- Block external images (Visible in the Intune console, but not a recognized setting yet – available soon)
+
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
 
@@ -145,6 +148,9 @@ In addition to the screens you can currently skip, you can set iOS DEP devices t
 To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
 This feature is starting to roll out but will take a few days to be available to all customers.
+
+#### Android Enterprise APP-WE app deployment <!-- 1171203 -->
+For Android devices in a non-enrolled App Protection Policy Without Enrollment (APP-WE) deployment scenario, you can now use managed Google Play to deploy store apps and LOB apps to users. Specifically, you can provide end users with an app catalog and installation experience that no longer requires end users to loosen the security posture of their devices by allowing installations from unknown sources. In addition, this deployment scenario will provide an improved end user experience.
 
 ## Week of January 14, 2019
 
