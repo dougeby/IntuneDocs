@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,9 +33,9 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 
 ## Prepare the Win32 app content for upload
 
-Use the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
+Use the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
 
-You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
+You can download the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
 
 ### Available command-line parameters 
 
@@ -81,6 +81,10 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     ![Screenshot of the App package file blade](./media/apps-win32-app-02.png)
 
 2.	In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension *.intunewin*.
+
+    > [!IMPORTANT]
+    > Be sure to use the latest version of the Microsoft Win32 Content Prep Tool. If you don't use the latest version, you will see a warning indicating that the app was packaged using an older version of the Microsoft Win32 Content Prep Tool. 
+
 3.	When you're finished, select **OK**.
 
 ### Step 3: Configure app information
