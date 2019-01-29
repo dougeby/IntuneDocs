@@ -33,9 +33,9 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 
 ## Prepare the Win32 app content for upload
 
-Use the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The tool converts application installation files into the *.intunewin* format. The tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
+Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) to pre-process Win32 apps. The tool converts application installation files into the *.intunewin* format. The tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
 
-You can download the [Microsoft Win32 Content Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
+You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub.
 
 ### Available command-line parameters 
 
