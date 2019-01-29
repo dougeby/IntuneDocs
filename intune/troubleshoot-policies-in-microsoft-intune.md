@@ -139,7 +139,7 @@ Other MDM devices, such as Android, iOS, and Windows Phone 8.1, may need to be r
 
 ## PCs using the Intune software client - classic portal
 
-> !NOTE
+> [!NOTE]
 > This section applies to the classic portal. 
 
 ### Microsoft Intune policy-related errors in policyplatform.log
