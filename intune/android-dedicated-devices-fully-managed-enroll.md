@@ -32,12 +32,12 @@ ms.custom: seodec18
 
 After you've set up your [Android dedicated devices](android-kiosk-enroll.md) or [fully managed devices](android-fully-managed-enroll.md) in Intune, you can enroll the devices. How you enroll your Android devices depends on the operating system.
 
-| Enrollment method | Minimum Android OS version for dedicated devices | Minimum Android OS version for fully managed devices |
-| ----- | ----- | ----- |
-| Near Field Communication | 5.1 | 6.0 |
-| Token entry | 6.0 | 6.0 |
-| QR code | 7.0 | 7.0 |
-| Zero Touch  | 8.0\* | 8.0\* |
+| Enrollment method | Minimum Android OS version for dedicated and fully managed devices |
+| ----- | ----- |
+| Near Field Communication | 5.1 |
+| Token entry | 6.0 |
+| QR code | 7.0 |
+| Zero Touch  | 8.0\* |
 
 \* On participating manufacturers.
 

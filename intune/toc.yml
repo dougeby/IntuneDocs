@@ -388,6 +388,11 @@
             href: mtd-connector-enable.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md    
+      - name: Security baselines
+        href: security-baselines.md
+        items:
+        - name: Monitor your baselines
+          href: security-baselines-monitor.md
       - name: Endpoint protection
         href: endpoint-protection-configure.md
     - name: Network access control
@@ -441,7 +446,7 @@
           items:
           - name: Manually add Company Portal app
             href: store-apps-company-portal-app.md
-        - name: Android work profile apps
+        - name: Managed Google Play apps
           href: apps-add-android-for-work.md
         - name: Office 365 apps for Windows 10
           href: apps-add-office365.md
@@ -568,6 +573,8 @@
         href: troubleshoot-app-install.md          
       - name: Audit logs for Intune activities
         href: monitor-audit-logs.md
+      - name: Review logs with Azure Monitor
+        href: review-logs-using-azure-monitor.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
       - name: Troubleshoot email profiles
@@ -841,11 +848,37 @@
       href: intune-graph-apis.md
       items:
       - name: Intune API reference
-        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
+        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Resources
   items:
-  - name: Service description
-    href: microsoft-intune-service-description.md   
+  - name: Microsoft Intune documentation guide
+    href: intune-documentation.md  
+  - name: Troubleshoot
+    items:
+    - name: Help users troubleshoot problems
+      href: help-desk-operators.md
+    - name: Troubleshoot company resource access problems
+      href: troubleshoot-company-resource-access-problems.md      
+    - name: Troubleshoot app installation problems
+      href: troubleshoot-app-install.md    
+    - name: Troubleshoot mobile application management
+      href: troubleshoot-mam.md             
+    - name: Audit logs for Intune activities
+      href: monitor-audit-logs.md
+    - name: Review app protection logs
+      href: app-protection-policy-settings-log.md
+    - name: Troubleshoot email profiles
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Troubleshoot software updates
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Troubleshoot endpoint protection
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Troubleshoot policies
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Troubleshoot conditional access
+      href: troubleshoot-conditional-access.md
+    - name: Troubleshoot Exchange connectors
+      href: troubleshoot-exchange-connector.md
   - name: Archive
     items:
     - name: What's new archive
