@@ -34,7 +34,7 @@ ms.custom: seodec18
 
 As an Intune admin, you can require that users accept your company's terms and conditions before using the Company Portal to:
 - enroll devices
-- access resources like company apps and email.
+- access resources like company apps and email.    
 Configuration of terms and conditions is optional.
 
 You can create multiple sets of terms and assign them to different groups, such as to support different languages.

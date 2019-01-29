@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune; seodec18
@@ -327,12 +327,16 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Contacts     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Files        | Apple     |
 | com.apple.mobileme.fmf1     | Find Friends | Apple     |
 | com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Health       | Apple     |
+| com.apple.Home              | Home         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
@@ -350,8 +354,10 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | Settings     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tips         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | Videos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
