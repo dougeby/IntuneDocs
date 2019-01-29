@@ -33,6 +33,7 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 > [!Note]
 > Some features may roll out over several weeks and might not be available to all customers in the first week.
+>
 > For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
