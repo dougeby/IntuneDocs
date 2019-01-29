@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -19,23 +19,23 @@ search.appverid: MET150
 ms.custom: intune-azure
 ---
 
-# Intune Standalone - Win32 app management (Public Preview)
+# Intune Standalone - Win32 app management
 
 Intune standalone will allow greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This topic provides an overview of the Intune Win32 app management feature and troubleshooting information.
 
-## Prerequisites for public preview
+## Prerequisites
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
     - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
     - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8 GB per app in the public preview 
+- Windows application size is capped at 8 GB per app
 
 ## Prepare the Win32 app content for upload
 
-Use the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
+Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) to pre-process Win32 apps. The tool converts application installation files into the *.intunewin* format. The tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
 
-You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
+You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub.
 
 ### Available command-line parameters 
 
@@ -70,7 +70,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 1.	Sign in to the [Azure portal](https://portal.azure.com/).
 2.	Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
-4.	In the **Add** app pane, select **Windows app (Win32) - preview** from the provided drop-down list.
+4.	In the **Add** app pane, select **Windows app (Win32)** from the provided drop-down list.
 
     ![Screenshot of the Add app blade - Add type dropdown box](./media/apps-win32-app-01.png)
 
@@ -81,6 +81,10 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     ![Screenshot of the App package file blade](./media/apps-win32-app-02.png)
 
 2.	In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension *.intunewin*.
+
+    > [!IMPORTANT]
+    > Be sure to use the latest version of the Microsoft Win32 Content Prep Tool. If you don't use the latest version, you will see a warning indicating that the app was packaged using an older version of the Microsoft Win32 Content Prep Tool. 
+
 3.	When you're finished, select **OK**.
 
 ### Step 3: Configure app information
@@ -169,7 +173,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
             
                 ![Screenshot of detection rule pane - registry key exists](./media/apps-win32-app-05.png)    
             
-            2.	Check for registry value exists (**Not available in preview**).
+            2.	Check if registry value exists.
         
                 ![Screenshot of detection rule pane - registry value exists](./media/apps-win32-app-06.png)    
         
