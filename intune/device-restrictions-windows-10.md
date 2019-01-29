@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -425,7 +425,7 @@ You can configure information that all apps on the device can access. You can de
 
 - **Start menu layout**: To customize the start menu on desktop devices, you can upload an XML file that includes your customizations, including the order the apps are listed, and more. Users can't change the Start menu layout you enter.
 - **Pin websites to tiles in Start menu**: Import images from Microsoft Edge that are shown as links in the Windows Start menu for desktop devices.
-- **Unpin apps from task bar**: Choose **Block** to stop the user from unpinning apps from the Start menu.
+- **Unpin apps from task bar**: Choose **Block** to stop the user from unpinning apps from the task bar.
 - **Fast user switching**: Choose **Block** to prevent switching between users that are logged on simultaneously without logging off.
 - **Most used apps**: Choose **Block** to hide the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
 - **Recently added apps**: Choose **Block** to hide recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
