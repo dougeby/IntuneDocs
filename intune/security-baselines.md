@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,7 +35,7 @@ This feature applies to:
 - Windows 10 version 1809 and later
 
 > [!NOTE]
-> While security baselines is in preview, Microsoft doesn't recommend using profiles in a production environment, as the baselines may change over the course of the preview and they will not convert to the latest supported profiles after the feature is generally released.
+> While security baselines is in preview, Microsoft doesn't recommend using profiles in a production environment, as the baselines may change over the course of the preview. When security baselines are generally available, existing profiles won't convert to the latest supported profiles.
 
 The goal of using security baselines is to provide an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
