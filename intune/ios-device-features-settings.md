@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -180,9 +180,14 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 ## Lock screen message settings
 
+> [!NOTE]
+> Variables aren't validated in the UI. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{Devicename}}` instead of `{{devicename}}`, then the literal string is shown instead of the device’s unique name.
+
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
 
-These settings support supervised devices running iOS 9.3 and later.
+This feature supports supervised devices running:
+
+- iOS 9.3 and later
 
 1. In **Settings**, select **Shared device configuration (supervised only)**.
 2. Enter the following settings:
