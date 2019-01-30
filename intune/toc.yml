@@ -38,6 +38,8 @@
     href: quickstart-email-profile.md
 - name: Tutorials
   items:
+  - name: Walkthough Microsoft Intune in the Azure portal
+    href: tutorial-walkthough-intune-portal.md
   - name: Protect email on managed devices
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: Protect email on unmanaged devices
