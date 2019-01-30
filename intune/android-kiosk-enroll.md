@@ -106,7 +106,7 @@ You can now [enroll your dedicated devices](android-dedicated-devices-fully-mana
 
 ## Managing apps on Android dedicated devices
 
-Only apps that have Assignment type [set to Required](apps-deploy.md#to-assign-an-app) can be installed on Android dedicated devices. Apps are installed from the managed Google Play store in the same manner as Android work profile devices.
+Only apps that have Assignment type [set to Required](apps-deploy.md#assign-an-app) can be installed on Android dedicated devices. Apps are installed from the managed Google Play store in the same manner as Android work profile devices.
 
 Apps are automatically updated on managed devices when the app developer publishes an update to Google Play.
 

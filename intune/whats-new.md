@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -64,14 +64,15 @@ The default settings and number of settings remain the same, but this change all
 
 #### Additional settings for Outlook <!-- 3301182  -->
 You can now configure additional settings for Outlook for iOS and Android using Intune.  The settings include the following:
-Only allow work or school accounts to be used in Outlook in iOS and Android
-Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
-Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-Allow contacts to be saved
-Configure external recipients MailTips
-Configure **Focused Inbox**
-Require biometrics to access Outlook for iOS 
-Block external images
+- Only allow work or school accounts to be used in Outlook in iOS and Android
+- Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
+- Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
+- Allow contacts to be saved (available soon)
+- Configure external recipients MailTips (available soon)
+- Configure **Focused Inbox** (available soon)
+- Require biometrics to access Outlook for iOS (available soon) 
+- Block external images (Visible in the Intune console, but not a recognized setting yet – available soon)
+
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
 
@@ -128,13 +129,6 @@ To see the current list of settings, go to [Android Enterprise device settings t
 
 Applies to: Android Enterprise Device Owner
 
-#### Intune app protection policies UI update <!-- 3251427 -->
-We’ve changed the labels for settings a nd buttons for Intune app protection to make each easier to understand. Some of the changes include:  
-- Controls are changed from **yes** / **no** controls to primarily **block** / **allow ** and **disable** / **enable** controls. The labels are also updated.  
-- Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
-
-The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
-
 ### Device management
 
 #### Selective wipe support for WIP Without Enrollment devices <!-- 1434452 -->
@@ -154,6 +148,9 @@ In addition to the screens you can currently skip, you can set iOS DEP devices t
 To choose which screens to skip, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Setup Assistant customization** > choose **Hide** for any screens that you want to skip > **OK**.
 If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server. Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
 This feature is starting to roll out but will take a few days to be available to all customers.
+
+#### Android Enterprise APP-WE app deployment <!-- 1171203 -->
+For Android devices in a non-enrolled App Protection Policy Without Enrollment (APP-WE) deployment scenario, you can now use managed Google Play to deploy store apps and LOB apps to users. Specifically, you can provide end users with an app catalog and installation experience that no longer requires end users to loosen the security posture of their devices by allowing installations from unknown sources. In addition, this deployment scenario will provide an improved end user experience.
 
 ## Week of January 14, 2019
 
