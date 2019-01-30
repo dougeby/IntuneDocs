@@ -67,7 +67,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 9. For future reference, in Intune in the Azure portal, provide the Apple ID used to create this token.
 
-![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/device-enrollment-program-enroll-ios/image03.png)
+    ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/device-enrollment-program-enroll-ios/image03.png)
 
 10. In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**, and then choose **Create**. 
 
@@ -118,7 +118,7 @@ You've set up management and syncing between Apple and Intune, and assigned a pr
 
 If you don't want to use Autopilot devices anymore, you can delete them.
 
-1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+- If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
 <!--ask tiffany how to do this-->
 
