@@ -85,7 +85,7 @@ To authenticate with VPN, WiFi, or other resources, a root or intermediate CA ce
 3. Find the **User** certificate template, right-click it, and choose **Duplicate Template**. **Properties of New Template** opens.
 
     > [!NOTE]
-    > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
+    > For S/MIME email signing and encryption scenarios, many administrators use separate certificates for signing and encryption. If you're using Microsoft Active Directory Certificate Services, you can use the **Exchange Signature Only** template for S/MIME email signing certificates, and the **Exchange User** template for S/MIME encryption certificates.  If you're using a 3rd-party certification authority, it's suggested to review their guidance to set up signing and encryption templates.
 
 4. On the **Compatibility** tab:
 
@@ -139,6 +139,7 @@ To authenticate with VPN, WiFi, or other resources, a root or intermediate CA ce
 6. On the **Advanced** tab, it's recommended to leave **Use this computer's SYSTEM account (default)** selected.
 7. **Apply** > **Close**
 8. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Authority**). After a few moments, a green check mark is shown, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
+9. If you have a web proxy in your networking environment, you might need additional configurations to enable the connector to work. For more information, see [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in the Azure Active Directory documentation.
 
 > [!NOTE]
 > TLS 1.2 support is included with the Microsoft Intune Certificate Connector. So if the server with the Microsoft Intune Certificate Connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
