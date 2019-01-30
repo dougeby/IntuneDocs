@@ -70,6 +70,9 @@ The following devices have been announced as eSIM-capable, or are in-market toda
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## Step 1: Add cellular activation codes
 
