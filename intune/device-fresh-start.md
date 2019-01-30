@@ -4,8 +4,8 @@
 title: Reset Windows 10 devices with Microsoft Intune - Azure | Microsoft Docs
 description: Use Fresh Start to remove or uninstall apps on Windows 10 PCs by using Microsoft Intune. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -39,11 +39,12 @@ The **Fresh Start** device action removes any apps that are installed on a PC ru
 3. Click **Fresh Start**. 
 4. Select **Retain user data on this device** to:
    * Keep the device Azure AD joined
-    * Keep the device enrolled in mobile device management 
+    * Device is enrolled into mobile device management again when when an Azure Active Directory enabled user signs into the device.
     * Keep the contents of the device user's Home folder, and remove apps and settings  
   > [!IMPORTANT]
- > If you do not retain user data, the device will be restored to its out-of-box state. It will be unenrolled from Azure AD and mobile 
- > device management. 
+ > If you do not retain user data, the device will be restored to its out-of-box state. 
+ > BYOD devices will be unenrolled from Azure AD and mobile device management.
+ > Azure AD joined devices will be enrolled into mobile device management again when an Azure Active Directory enabled user signs into the device.
  
 5. Click **OK**.   
 6. To see the status of this action, go back to **Devices** and click **Device actions**.  
