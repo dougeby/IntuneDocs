@@ -46,6 +46,8 @@
     href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Use Autopilot to enroll Windows devices
     href: tutorial-use-autopilot-enroll-devices.md
+  - name: Use the DEP to enroll iOS devices 
+    href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Concepts
   items:
   - name: What is device management?
