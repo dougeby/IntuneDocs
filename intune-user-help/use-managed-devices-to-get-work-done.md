@@ -42,7 +42,7 @@ Get Company Portal by either:
 - Going to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) that your company support set up.
 
 ## What's the difference between the app and the website?
-Each Company Portal app&ndash;for Windows 10, iOS, macOS, and Android&ndash; integrates seamlessly with your device's respective platform. The website is accessible from any device and provides the same, universal experience for users, no matter what device they're using. 
+Each Company Portal app&ndash;for Windows 10, iOS, macOS, and Android&ndash; integrates seamlessly with your device's respective platform. The website is accessible from any device and gives you the same, universal experience no matter what device you're using. 
 
 You'll find Company Portal guidance specific to your device's platform, starting with enrollment steps, under the following links:  
 
