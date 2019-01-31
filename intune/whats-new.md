@@ -1392,29 +1392,6 @@ Our customer research prior to implementing this change indicated most customers
 #### What can I do to prepare for this change?
 You may want to let your helpdesk know. We’ll update this What’s New page when this change is rolled out. If you do not want this macOS device password policy to be enforced, we recommend you un-assign or delete your existing macOS policy.
 
-
-### Reminder: Intune support experience for Premier customers now in Azure instead of MPO <!--2828727-->
-We shared in MC147649 in September, that we would remove the ability to create Intune support requests from the Microsoft Premier Online (MPO) portal (premier.microsoft.com) in December. Now, after a slight delay, at the end of January, you will be redirected to create support requests only in Intune on Azure. 
-
-
-#### How does this affect me?
-After the end of January, to continue enhancing the Premier support experience, you will be not be able to create support requests in MPO.  When you try to do this, you’ll see a prompt that you’ll not be able to dismiss, to be redirected to Intune on Azure. Here, you can create a support request which will be routed to Intune-dedicated Microsoft Support, to diagnose and resolve your issue in a timely manner. Note that support requests created in the MPO portal cannot be viewed in the Azure portal. 
-
-The Azure portal has a new support experience as we announced recently in MC171941. More information about this can be found at [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) and at the Additional Information link.
-
-If you use hybrid mobile device management (hybrid MDM) or use co-management, you can continue to use MPO to create support requests for ConfigMgr but use the Azure portal to create support requests for Intune. As a reminder, hybrid MDM is [deprecated](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures), and you should plan to move to Intune on Azure as soon as possible. For more information, see [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
-
-Note that only users with Global Administrator, Intune Service Administrator and Service Support Administrator roles can create support tickets in the Azure portal.
-
-#### What can I do to prepare for this change?
-- Stop using MPO and use Intune on Azure to create and manage all your Intune support requests.  
-- Notify your helpdesk and update documentation if necessary.
-- If you have users without Global administrator or Intune Service Administrator roles currently creating support requests in MPO, assign them the Service Support Administrator role in Azure Active Directory, so they can continue to create support tickets in the Azure portal.
-
-#### Additional Information
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
-
-
 ###Plan for Change: Update to iOS setting for supervised devices in the Intune console  
 With the February update to the Intune service, the 'Enabling restrictions in the device settings' setting for supervised iOS devices is being renamed to “Screen Time (supervised only)”. After this change, end user experience will change based on iOS version.
 
