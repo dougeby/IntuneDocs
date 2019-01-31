@@ -42,16 +42,9 @@ Get Company Portal by either:
 - Going to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) that your company support set up.
 
 ## What's the difference between the app and the website?
-There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
+Each Company Portal app&ndash;for Windows 10, iOS, macOS, and Android&ndash; integrates seamlessly with your device's respective platform. The website is accessible from any device and provides the same, universal experience for users, no matter what device they're using. 
 
-- Enroll your devices into management
-- See the status of your devices
-- Download recommended and required apps for your organization
-- Rename your device
-- Reset your device's PIN or password
-- Contact your IT department for help
-
-To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
+You'll find Company Portal guidance specific to your device's platform, starting with enrollment steps, under the following links:  
 
 - [Using your Android device](using-your-android-device-with-intune.md)
 - [Using your iOS device](using-your-ios-device-with-intune.md)
