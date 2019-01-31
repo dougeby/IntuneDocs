@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Tutorial - Walkthough Intune in the Azure portal
+title: Tutorial - Walkthrough Intune in the Azure portal
 titleSuffix: Microsoft Intune
 description: In this tutorial, you will tour Microsoft Intune to better understand how to accomplish tasks.
 keywords:
@@ -57,7 +57,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 1. Open a browser and sign in to the [Intune portal](https://aka.ms/intuneportal). If you are new to Intune, use your free trial subscription.
 
-    ![Screenshot of the Microsoft Intune portal](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-01.png)
+    ![Screenshot of the Microsoft Intune portal](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-01.png)
 
     When you open Intune or any other service in Azure, the service is displayed in a pane. Some of the first workloads you may use in Intune include **Devices**, **Client apps**, **Users**, and **Groups**. A workload is simply a sub-area of a service. When you select the workload, it opens that pane as a full page. Other panes slide out from the right side of the pane when they open, and close to reveal the previous pane. A pane is also referred to as a blade. 
 
@@ -65,7 +65,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 2. From [Intune](https://aka.ms/intuneportal), select **Device enrollment** to display details about the enrolled devices in your Intune tenant. If you are starting with a new Intune tenant, you will not have any enrolled devices yet. 
 
-    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-02.png)
+    ![Screenshot of the device enrollment pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-02.png)
     
     Intune lets you manage your workforce’s devices and apps, including how they access your company data. To use this mobile device management (MDM) service, the devices must first be enrolled in Intune. When a device is enrolled, it is issued an MDM certificate. This certificate is used to communicate with the Intune service. 
 
@@ -73,7 +73,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 3. From [Intune](https://aka.ms/intuneportal), select **Device compliance** to display details about compliance for devices managed by Intune. You will see details similar to the following image.
 
-    ![Screenshot of the device compliance pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-03.png)
+    ![Screenshot of the device compliance pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
     Compliance requirements are essentially rules, such as requiring a device PIN, or requiring device encryption. Device compliance policies define the rules and settings that a device must follow to be considered compliant. To use device compliance, you must have:
     - An Intune and an Azure Active Directory (AD) Premium subscription
@@ -85,7 +85,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 4. From [Intune](https://aka.ms/intuneportal), select **Device configuration** to display details about device profiles in Intune. 
 
-    ![Screenshot of the device configuration pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-04.png)
+    ![Screenshot of the device configuration pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
     Intune includes settings and features that you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS, Android, and Windows. Then, you can use Intune to apply the profile to devices in your organization.   
 
@@ -93,49 +93,49 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
 5. From [Intune](https://aka.ms/intuneportal), select **Devices** to display details about your Intune tenant's enrolled devices. If you are starting with a new Intune enlistment, you will not have any enrolled devices yet. 
 
-    ![Screenshot of the device enrollment pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-05.png)
+    ![Screenshot of the device enrollment pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-05.png)
     
     The **Devices** pane provides details about your tenant's enrolled devices. You can click **All devices** to display a list of devices for your Intune tenant. 
 
 6. From [Intune](https://aka.ms/intuneportal), select **Client apps** to display app installation status.
 
-    ![Screenshot of the client apps pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-06.png)
+    ![Screenshot of the client apps pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-06.png)
     
     As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune. Intune offers a range of capabilities to help you get the apps you need on the devices you want. For more information about adding and assigning apps, see [Add apps to Microsoft Intune](apps-add.md) and [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
 7. From [Intune](https://aka.ms/intuneportal), select **Conditional access** to display details about access policies.
 
-    ![Screenshot of the conditional access pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-07.png)
+    ![Screenshot of the conditional access pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
     Conditional access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based conditional access, and find common scenarios for using conditional access with Intune, see [What's conditional access?](conditional-access.md)
 
 8. From [Intune](https://aka.ms/intuneportal), select **Users** to display details about the users that you have included in Intune. These users are your company's workforce. 
  
-    ![Screenshot of the Users pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-08.png)
+    ![Screenshot of the Users pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-08.png)
 
     You can add users directly to Intune or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions to access Intune. For more information, see [Add users and grant administrative permission to Intune](users-add.md).
 
 9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about the Azure Active Directory (AD) groups included in Intune. As an Intune admin, you use group to manage devices and users. 
 
-    ![Screenshot of the Groups pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-09.png)
+    ![Screenshot of the Groups pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 
     You can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. For example, you can set policies for many users or deploy apps to a set of devices. For more information about groups, see [Add groups to organize users and devices](groups-add.md).
 
 10. From [Intune](https://aka.ms/intuneportal), select **Help and support** to request help. As an IT admin, you can use the **Help and Support** option to search and view solutions, as well as file an on-line support ticket for Intune. 
 
-    ![Screenshot of the Help and support pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-10.png)
+    ![Screenshot of the Help and support pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-10.png)
 
     To create a support ticket, your account must be assigned as an administrator role in Azure Active Directory. Administrator roles include, **Intune administrator**, **Global administrator**, and **Service administrator**. For more information, see [How to get support for Microsoft Intune](get-support.md).
 
 11. From [Intune](https://aka.ms/intuneportal), select **Tenant Status** to display details about your Intune tenant.
 
-    ![Screenshot of the Tenant Status pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-11.png)
+    ![Screenshot of the Tenant Status pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-11.png)
 
     Tenant status details include connector status, Intune service health, and Intune news. If there are any issues with your tenant or Intune itself, you will find details in the **Tenant Status** pane. For more information, see [Intune Tenant Status](tenant-status.md).
 
 12. From [Intune](https://aka.ms/intuneportal), select **Troubleshoot** to reach a shortcut on troubleshooting tips, requesting support, or checking the status of Intune. This information is specific the Intune user you select.
 
-    ![Screenshot of the Troubleshoot pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-12.png)
+    ![Screenshot of the Troubleshoot pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-12.png)
 
 For more information about troubleshooting within Intune, see [Use the troubleshooting portal to help users at your company](help-desk-operators.md).
 
