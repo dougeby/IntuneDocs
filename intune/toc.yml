@@ -254,35 +254,35 @@
       href: device-profiles.md    
     - name: Device profiles
       href: device-profile-create.md
-    - name: Administrative templates (Windows)
+    - name: Administrative templates
       href: administrative-templates-windows.md
-    - name: Device features (iOS and macOS)
+    - name: Device features
       href: device-features-configure.md
     - name: Restrict device settings and features
       href: device-restrictions-configure.md
-    - name: Deliver updates (Windows)
+    - name: Deliver updates
       href: delivery-optimization-windows.md
-    - name: Upgrade editions and S mode (Windows)
+    - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
     - name: Configure email
       href: email-settings-configure.md
-    - name: Enable kiosk mode (Windows)
+    - name: Enable kiosk mode
       href: kiosk-settings.md
-    - name: Add VPN
+    - name: Add a VPN
       href: vpn-settings-configure.md
       items:
       - name: Per-app VPN for Android
         href: android-pulse-secure-per-app-vpn.md
       - name: Per-App VPN for iOS
         href: vpn-setting-configure-per-app.md
-    - name: Add wireless Wi-Fi network
+    - name: Add a wireless Wi-Fi network
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
-    - name: Education Take a Test app (Windows)
+    - name: Education Take a Test app
       href: education-settings-configure.md
-    - name: Shared multi-user devices (Windows)
+    - name: Shared multi-user devices
       href: shared-user-device-settings.md      
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
