@@ -1,10 +1,15 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/get-started-apps.md",
+			"redirect_url": "/intune/apps-add",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/airplay-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings",
 			"redirect_document_id": false
-		},
+		},		
 		{
 			"source_path": "intune/web-content-filter-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings#web-content-filter-settings",
