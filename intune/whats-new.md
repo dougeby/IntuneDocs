@@ -86,6 +86,9 @@ You can delete managed Google Play apps from Microsoft Intune. To delete a manag
 #### Managed Google Play app type <!-- 1352580 -->
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.  In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
 
+### Default Android PIN keyboard <!-- 3802457 -->
+For end users who have set an Intune App Protection Policy (APP) PIN on their Android devices with PIN type of 'Numeric', they will now see the default Android keyboard instead of the fixed Android keyboard UI that was previously designed. This change was made to be consistent when using default keyboards on both Android and iOS, for both PIN types of 'Numeric' and/or 'Passcode'. For more information about end user Access settings on Android, such as APP PIN, see [Android access requirements](app-protection-policy-settings-android.md#access-requirements).
+
 ### Device configuration
 
 #### Use Microsoft-recommended settings with Security Baselines (Public Preview) <!-- 2055484   -->
