@@ -110,7 +110,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
     Conditional access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based conditional access, and find common scenarios for using conditional access with Intune, see [What's conditional access?](conditional-access.md)
 
 8. From [Intune](https://aka.ms/intuneportal), select **Users** to display details about the users that you have included in Intune. These users are your company's workforce. 
-9. 
+ 
     ![Screenshot of the Users pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-08.png)
 
     You can add users directly to Intune or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions to access Intune. For more information, see [Add users and grant administrative permission to Intune](users-add.md).
@@ -125,7 +125,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
     ![Screenshot of the Help and support pane](media/tutorial-walkthough-intune-portal/tutorial-walkthough-intune-portal-10.png)
 
-To create a support ticket, your account must be assigned as an administrator role in Azure Active Directory. Administrator roles include, **Intune administrator**, **Global administrator**, and **Service administrator**. For more information, see [How to get support for Microsoft Intune](get-support.md).
+    To create a support ticket, your account must be assigned as an administrator role in Azure Active Directory. Administrator roles include, **Intune administrator**, **Global administrator**, and **Service administrator**. For more information, see [How to get support for Microsoft Intune](get-support.md).
 
 11. From [Intune](https://aka.ms/intuneportal), select **Tenant Status** to display details about your Intune tenant.
 
