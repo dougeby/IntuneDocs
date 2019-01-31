@@ -180,23 +180,25 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 ## Lock screen message settings
 
-> [!NOTE]
-> Variables aren't validated in the UI. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{Devicename}}` instead of `{{devicename}}`, then the literal string is shown instead of the device’s unique name.
-
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
 
 This feature supports supervised devices running:
 
 - iOS 9.3 and later
 
-1. In **Settings**, select **Shared device configuration (supervised only)**.
+1. In **Settings**, select **Lock Screen Message (supervised only)**.
 2. Enter the following settings:
 
-    - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp`. 
+    - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp` or `Serial Number: {{serialnumber}}`. 
 
 	  The text you enter is shown on the sign in window and lock screen on the device.
 
-    - **Lock screen footnote**: If the device is lost or stolen, enter a note that might help get the device returned. For example, enter something like `If found, call Contoso at ...`.
+    - **Lock screen footnote**: If the device is lost or stolen, enter a note that might help get the device returned. You can enter any text you want. For example, enter something like `If found, call Contoso at ...`.
+
+    Device tokens can also be used to add device-specific information to these fields. For example, to show the serial number, enter `Serial Number: {{serialnumber}}`. On the lock screen, the text shows similar to `Serial Number 123456789ABC`. When entering variables, be sure to use curly brackets `{{ }}`. [App configuration tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includes a list of variables that can be used. You can also use `deviceName` or any other device-specific value.
+
+    > [!NOTE]
+    > Variables aren't validated in the UI. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{Devicename}}` instead of `{{devicename}}`, then the literal string is shown instead of the device’s unique name.
 
 3. When finished, select **OK** to save your changes.
 
@@ -289,6 +291,8 @@ These settings control browser URL access on iOS devices.
 ## Wallpaper settings
 
 Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use a company logo on the lock screen.
+
+You may experience unexpected behavior when a profile with no image is assigned to devices with an existing image. For example, you create a profile without an image. This profile is assigned to devices that already have an image. In this scenario, the image may change to the device default, or the original image may stay on the device. This behavior is controlled and limited by Apple's MDM platform.
 
 - **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
   - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.
