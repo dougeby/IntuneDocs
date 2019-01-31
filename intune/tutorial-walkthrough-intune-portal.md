@@ -27,7 +27,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ---
 
-# Tutorial: Walkthrough Microsoft Intune in the Azure portal
+# Tutorial: Walkthrough of Microsoft Intune in the Azure portal
 
 [Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contains over a 100 services to assist you with a variety of cloud computing scenarios and possibilities. Microsoft Intune is one of several services available in Azure. Intune helps you ensure that your company's devices, apps, and data meet your company's security requirements. You have the control to set which requirements need to be checked and what happens when those requirements aren't met. The [Azure portal](https://portal.azure.com) is where you can find the Microsoft Intune service. Understanding the features available in Intune will help you accomplish various Mobile Device Management (MDM) and Mobile Application Management (MAM) tasks.
 
