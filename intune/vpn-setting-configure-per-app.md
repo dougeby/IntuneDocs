@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Set up per-app Virtual Private Network (VPN) in Intune for iOS devices
 
-You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, an end-user automatically connects through your VPN when accessing corporate documents.
+You can specify which managed apps can use your Virtual Private Network (VPN) on iOS devices managed by Intune. When you create a per-app VPN in Intune, a user automatically connects through your VPN when accessing corporate documents.
 
 Check your VPN provider's documentation to see if your VPN supports per-app VPN.
 
@@ -144,7 +144,7 @@ An association between an app and a profile will be removed during the next devi
 - Both the profile and the app are targeted to the same group.
 - You remove the per-app VPN configuration from the app assignment.
 
-An association between an app and a profile will persist until the end-user requests a reinstall from the company portal, when all of the following conditions exist:
+An association between an app and a profile will persist until the user requests a reinstall from the company portal, when all of the following conditions exist:
 - The app was targeted with available install intent.
 - Both the profile and the app are targeted to the same group.
 - The end user requested app install from the company portal which results in app and profile being installed on the device.
