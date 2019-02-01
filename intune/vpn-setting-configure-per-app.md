@@ -60,7 +60,7 @@ Export the certificate and add the CA.
 
 Create or choose an existing group in Azure Active Directory (Azure AD) for the users or devices that will use per-app VPN.
 
-To create a new group, see [Add groups to organize users and devices](groups_add.md).
+To create a new group, see [Add groups to organize users and devices](groups-add.md).
 
 ## Create a trusted certificate profile
 
