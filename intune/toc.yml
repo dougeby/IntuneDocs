@@ -698,7 +698,7 @@
           href: wi-fi-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
-    - name: Security baselines settings
+    - name: Security baselines
       items:
       - name: Windows security baseline settings
         href: security-baseline-settings-windows.md
