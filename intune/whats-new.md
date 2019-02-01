@@ -1454,12 +1454,12 @@ You do not need to take any action; these changes will be released in an upcomin
 
 
 ### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 -->
-To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector. This change will begin with the December service update and be completed with the February 2019 service update.
+To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector.
 
 #### How does this affect me?
-You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. With the December update to the Intune service, to make this clear in the console, we’ll disable the button to set up new connectors. Then, in February 2019, all existing Exchange Online to Intune connectors will be disabled.
+You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. With the February update to the Intune service, to make this clear in the console, we’ll disable the button to set up new connectors. Then, in March 2019, all existing Exchange Online to Intune connectors will be disabled.
 
-If you use these connectors in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in February. There is no anticipated impact to your end users during this change.
+If you use these connectors in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in March. There is no anticipated impact to your end users during this change.
 
 #### What can I do to prepare for this change?
 
