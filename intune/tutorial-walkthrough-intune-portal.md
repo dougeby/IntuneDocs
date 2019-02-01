@@ -29,7 +29,7 @@ ms.custom: intune-azure
 
 # Tutorial: Walkthrough of Microsoft Intune in the Azure portal
 
-[Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contains over a 100 services to assist you with a variety of cloud computing scenarios and possibilities. Microsoft Intune is one of several services available in Azure. Intune helps you ensure that your company's devices, apps, and data meet your company's security requirements. You have the control to set which requirements need to be checked and what happens when those requirements aren't met. The [Azure portal](https://portal.azure.com) is where you can find the Microsoft Intune service. Understanding the features available in Intune will help you accomplish various Mobile Device Management (MDM) and Mobile Application Management (MAM) tasks.
+Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure) contains over 100 services to assist you with a variety of cloud computing scenarios and possibilities. Microsoft Intune is one of several services available in Azure. Intune helps you ensure that your company's devices, apps, and data meet your company's security requirements. You have the control to set which requirements need to be checked and what happens when those requirements aren't met. The [Azure portal](https://portal.azure.com) is where you can find the Microsoft Intune service. Understanding the features available in Intune will help you accomplish various Mobile Device Management (MDM) and Mobile Application Management (MAM) tasks.
 
 In this tutorial, you will:
 > [!div class="checklist"]
@@ -76,7 +76,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
     ![Screenshot of the device compliance pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
     Compliance requirements are essentially rules, such as requiring a device PIN, or requiring device encryption. Device compliance policies define the rules and settings that a device must follow to be considered compliant. To use device compliance, you must have:
-    - An Intune and an Azure Active Directory (AD) Premium subscription
+    - An Intune and an Azure Active Directory (Azure AD) Premium subscription
     - Devices running a supported platform
     - Devices must be enrolled in Intune
     - Devices that are enrolled to either one user or no primary user.
@@ -115,7 +115,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
     You can add users directly to Intune or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions to access Intune. For more information, see [Add users and grant administrative permission to Intune](users-add.md).
 
-9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about the Azure Active Directory (AD) groups included in Intune. As an Intune admin, you use group to manage devices and users. 
+9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about the Azure Active Directory (Azure AD) groups included in Intune. As an Intune admin, you use group to manage devices and users. 
 
     ![Screenshot of the Groups pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 
