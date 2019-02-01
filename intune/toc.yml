@@ -230,19 +230,19 @@
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Set device compliance
     items:
-    - name: Device compliance overview
+    - name: Compliance overview
       href: device-compliance-get-started.md    
-    - name: Create Android policy
+    - name: Android compliance
       href: compliance-policy-create-android.md
-    - name: Create Android Enterprise profile policy
+    - name: Android Enterprise compliance
       href: compliance-policy-create-android-for-work.md
-    - name: Create a policy to enable Google Play Protect
+    - name: Enable Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Create iOS policy
+    - name: iOS compliance
       href: compliance-policy-create-ios.md
-    - name: Create Windows policy
+    - name: Windows compliance
       href: compliance-policy-create-windows.md
-    - name: Location-based policy
+    - name: Location-based compliance
       href: use-network-locations.md
     - name: Evaluate policy
       href: policy-evaluate.md
@@ -250,39 +250,39 @@
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
       href: compliance-policy-monitor.md
-  - name: Configure devices
+  - name: Configure device settings
     items:
-    - name: Configure devices using profiles
+    - name: Device configuration overview
       href: device-profiles.md    
     - name: Device profiles
       href: device-profile-create.md
     - name: Administrative templates
       href: administrative-templates-windows.md
-    - name: Device features (iOS and MacOS)
+    - name: Device features
       href: device-features-configure.md
-    - name: Device restrictions
+    - name: Restrict device settings and features
       href: device-restrictions-configure.md
-    - name: Delivery optimization
+    - name: Deliver updates
       href: delivery-optimization-windows.md
-    - name: Edition upgrade and mode switch
+    - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
-    - name: Email settings
+    - name: Configure email
       href: email-settings-configure.md
-    - name: Kiosk settings
+    - name: Enable kiosk mode
       href: kiosk-settings.md
-    - name: VPN settings
+    - name: Add a VPN
       href: vpn-settings-configure.md
       items:
       - name: Per-app VPN for Android
         href: android-pulse-secure-per-app-vpn.md
       - name: Per-App VPN for iOS
         href: vpn-setting-configure-per-app.md
-    - name: Wi-Fi settings
+    - name: Add a wireless Wi-Fi network
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
-    - name: Education settings
+    - name: Education Take a Test app
       href: education-settings-configure.md
     - name: Shared multi-user devices
       href: shared-user-device-settings.md      
@@ -294,7 +294,7 @@
       href: device-profile-assign.md
     - name: Monitor profiles
       href: device-profile-monitor.md
-    - name: Troubleshoot profiles
+    - name: Common questions and answers
       href: device-profile-troubleshoot.md
   - name: Protect device data
     items:
@@ -853,6 +853,8 @@
       items:
       - name: Intune API reference
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Graph APIs used to configure devices
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
   - name: Microsoft Intune documentation guide
