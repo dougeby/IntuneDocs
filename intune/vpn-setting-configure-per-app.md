@@ -39,7 +39,7 @@ Some VPNs allow username and password authentication with per-app VPN; however, 
 
 ## Per-app VPN with Zscaler
 
-Zcaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. As a result, you can skip the certificate profile instructions below if you're using ZPA. If you have per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first, and remote access will be limited to the associated apps.
+Zcaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. As a result, you can skip the certificate profile instructions below if you're using ZPA. If you have a per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first, and remote access will be limited to the associated apps.
 
 ## Prerequisites for per-app VPN
 
@@ -144,10 +144,10 @@ An association between an app and a profile will be removed during the next devi
 - Both the profile and the app are targeted to the same group.
 - You remove the per-app VPN configuration from the app assignment.
 
-An association between an app and a profile will persist until the user requests a reinstall from the company portal, when all of the following conditions exist:
+An association between an app and a profile will persist until the user requests a reinstall from Company Portal, when all of the following conditions exist:
 - The app was targeted with available install intent.
 - Both the profile and the app are targeted to the same group.
-- The end user requested app install from the company portal which results in app and profile being installed on the device.
+- The end user requested app install from Company Portal, which results in app and profile being installed on the device.
 - You remove or change the per-app VPN configuration from the app assignment.
 
 ## Verify the connection on the iOS device
@@ -163,7 +163,7 @@ With your per-app VPN set-up and associated with your app, verify the connection
 
 Verify the zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
 
- - The device does not ask you to trust the VPN server. That is, the user doesn't see the **Dynamic Trust** dialog box.
+ - The device doesn't ask you to trust the VPN server. That is, the user doesn't see the **Dynamic Trust** dialog box.
  - The user doesn't have to type credentials.
  - The user's device is connected to the VPN when the user opens one of the associated apps.
 
