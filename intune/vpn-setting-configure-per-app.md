@@ -35,11 +35,11 @@ Check your VPN provider's documentation to see if your VPN supports per-app VPN.
 
 The following instructions will help you create a seamless per-app VPN experience. For most VPNs that support per-app VPN, this means the user only needs to open one of the associated apps to connect to the VPN.
 
-Some VPNs allow username and password authentication with per-app VPN; however, this experience is not seamless because the user needs to enter a username and password on the first connection if the client is set to remember the user's credentials, or on every connection if the client is not set to cache the user's credentials. Using certificate-based authentication is the only way to have a truly seamless experience.
+Some VPNs allow username and password authentication with per-app VPN; however, this experience isn't seamless because users need to enter a username and password to connect to the VPN.
 
 ## Per-app VPN with Zscaler
 
-Zcaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication, so no separate certificate profiles are needed to set up per-app VPN with Zscaler. If you're using ZPA, you can skip the certificate profile instructions below. Also, when using Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first, and remote access will be limited to the associated apps.
+Zcaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. As a result, you can skip the certificate profile instructions below if you're using ZPA. If you have per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first, and remote access will be limited to the associated apps.
 
 ## Prerequisites for per-app VPN
 
@@ -58,7 +58,7 @@ Export the certificate and add the CA.
 
 ## Create a group for your VPN users
 
-Create or choose an existing group in Azure Active Directory (Azure AD) to contain the members who have access to the per-App VPN.
+Create or choose an existing group in Azure Active Directory (Azure AD) for the users or devices that will use per-app VPN.
 
 To create a new group, see [Add groups to organize users and devices](groups_add.md).
 
@@ -88,7 +88,7 @@ See one of the following topics for help configuring and assigning the client au
 - [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
 
-Be sure to configure the certificate for cient authentication. This can be set directly in SCEP certificate profiles by choosing **Client authentication** in the **Extended key usage** list. For PKCS, this needs to be set in the certificate template in the CA.
+Be sure to configure the certificate for cient authentication. You can set this directly in SCEP certificate profiles by choosing **Client authentication** in the **Extended key usage** list. For PKCS, you need set this in the certificate template in the CA.
 
     ![Create a SCEP certificate profile](./media/vpn-per-app-create-scep-cert.png)
 
