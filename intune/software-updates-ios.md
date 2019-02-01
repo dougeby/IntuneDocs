@@ -42,10 +42,8 @@ This feature supports devices that run iOS 10.3 and later versions. The delay se
 5. Select **Settings**. 
 
     Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. When the delay expires, users get a notification to update to the earliest version of OS that was available when the delay was triggered. To opt-out of setting a software update delay, enter 0. These update settings will apply only to supervised iOS devices.
-    > [!NOTE]
-    > If iOS 12.a is available on **January 1** and you have **Delay OS Updates** set to **5 days**, that particular
-    > version will not appear as an available update on any end user devices assigned to that profile.
-    > On the **sixth day** following release, that update will appear as available and all end users are free to initiate an update.
+  
+    For example, if iOS 12.a is available on **January 1** and you have **Delay OS Updates** set to **5 days**, that particular version will not appear as an available update on any end user devices assigned to that profile. On the **sixth day** following release, that update will appear as available and all end users are free to initiate an update.
 
 
 6. Select **OK** to save your changes. Select **Create** to create the policy.
