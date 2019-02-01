@@ -35,11 +35,11 @@ Check your VPN provider's documentation to see if your VPN supports per-app VPN.
 
 The following instructions will help you create a seamless per-app VPN experience. For most VPNs that support per-app VPN, this means the user only needs to open one of the associated apps to connect to the VPN.
 
-Some VPNs allow username and password authentication with per-app VPN; however, this experience isn't seamless because users need to enter a username and password to connect to the VPN.
+Some VPNs allow username and password authentication with per-app VPN. However, this experience isn't seamless because users need to enter a username and password to connect to the VPN.
 
 ## Per-app VPN with Zscaler
 
-Zcaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. As a result, you can skip the certificate profile instructions below if you're using ZPA. If you have a per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first, and remote access will be limited to the associated apps.
+Zscaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) for authentication. As a result, you can skip the certificate profile instructions below if you're using ZPA. If you have a per-app VPN profile set up for Zscaler, opening one of the associated apps doesn't automatically connect to ZPA; instead, the user needs to sign into the Zscaler app first. After logging in, remote access is limited to the associated apps.
 
 ## Prerequisites for per-app VPN
 
