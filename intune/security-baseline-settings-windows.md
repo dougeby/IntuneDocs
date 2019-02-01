@@ -30,7 +30,7 @@ ms.custom: intune-azure
 
 # Windows security baseline settings for Intune
 
-View the [Windows security baseline settings](secuirty-baselines.md) that are supported by Microsoft Intune. 
+View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune. 
 
 
 ## Above Lock  
