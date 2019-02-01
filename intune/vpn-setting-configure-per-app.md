@@ -88,7 +88,7 @@ See one of the following topics for help configuring and assigning the client au
 - [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
 
-Be sure to configure the certificate for cient authentication. You can set this directly in SCEP certificate profiles by choosing **Client authentication** in the **Extended key usage** list. For PKCS, you need set this in the certificate template in the CA.
+Be sure to configure the certificate for client authentication. You can set this directly in SCEP certificate profiles by choosing **Client authentication** in the **Extended key usage** list. For PKCS, you need set this in the certificate template in the CA.
 
     ![Create a SCEP certificate profile](./media/vpn-per-app-create-scep-cert.png)
 
