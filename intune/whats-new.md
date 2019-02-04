@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -48,6 +48,13 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+## Week of February 4, 2019
+
+### App management
+
+#### Intune macOS Company Portal Dark Mode <!-- 3300524 eeready -->
+The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors that reflect that mode.
+
 ## Week of January 21, 2019
 
 ### App management
