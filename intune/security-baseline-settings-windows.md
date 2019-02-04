@@ -7,7 +7,7 @@ description: Windows security baseline settings suported by Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 2-1-2019
+ms.date: 02/04/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,9 +28,9 @@ ms.custom: intune-azure
 ---
 
 
-# Windows security baseline settings for Intune
+# Windows security baseline settings for Intune  
 
-View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune. 
+View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune.  
 
 
 ## Above Lock  
@@ -60,7 +60,7 @@ For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/win
 ) in the Windows documentation.  
 
 - **Auto play default auto run behavior**  
-  This setting affects the default behavior for Autorun commands. Autorun commands are generally stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run.
+  This setting affects the default behavior for Autorun commands. Autorun commands are stored in autorun.inf files and can launch installation programs or other routines. When *Enabled*, Administrators can change the default autorun behavior on a device that runs Windows Vista or later. Behavior can be set to: a) completely disable autorun commands, or b) revert back to pre-Windows Vista behavior of automatically executing the autorun command. When set to *Disabled* or *Not Configured*, devices that run Windows Vista or later prompt the user as to whether an autorun command should run.
   - **Default**: Do not execute  
   
 - **Auto play mode**  
@@ -99,11 +99,11 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 ## Browser  
 For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
 
-- **Require SmartScreen for Microsoft Edge**  </br>
+- **Require SmartScreen for Microsoft Edge**  
   Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users cannot disable (turn off) Windows Defender SmartScreen. Enabling this policy turns off Windows Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Windows defender SmartScreen on or off.  
   - **Default**: Yes  
   
-- **Block malicious site access**  </br>
+- **Block malicious site access**  
   By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.
   - **Default**: Yes  
   
@@ -123,7 +123,7 @@ For more information, see [Policy CSP - Browser](https://docs.microsoft.com/wind
 For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in the Windows documentation.  
 
 - **Block Internet download for web publishing and online ordering wizards**  
-  This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards. These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry. If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed. If you disable or do not configure this policy setting, a list of providers is downloaded when the user uses the web publishing or online ordering wizards. See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.  
+  This policy setting specifies whether Windows should download a list of providers for the web publishing and online ordering wizards. These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry. If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed. If you disable or do not configure this policy setting, a list of providers is downloaded when the user uses the web publishing or online ordering wizards. For more information including details on specifying service providers in the registry, see the documentation for the web publishing and online ordering wizards.  
   - **Default**: Enabled  
 
 - **Block downloading of print drivers over HTTP**  
@@ -142,7 +142,7 @@ For more information, see [Policy CSP - CredentialsDelegation](https://docs.micr
 ## Credentials UI  
 For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.  
 
-- **Enumerate administrators**  </br>
+- **Enumerate administrators**    
   This policy setting controls whether administrator accounts are displayed when a user attempts to elevate a running application. By default, administrator accounts are not displayed when the user attempts to elevate a running application. If you enable this policy setting, all local administrator accounts on the PC will be displayed so the user can choose one and enter the correct password. If you disable this policy setting, users will always be required to type a user name and password to elevate.  
 
   - **Default**: Disabled  
@@ -151,7 +151,7 @@ For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.co
 For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in the Windows documentation.  
 
-- **Block direct memory access**  </br>
+- **Block direct memory access**   
   This policy setting allows you to block direct memory access (DMA) for all hot pluggable PCI downstream ports until a user logs into Windows. Once a user logs in, Windows will enumerate the PCI devices connected to the host plug PCI ports. Every time the user locks the machine, DMA will be blocked on hot plug PCI ports with no children devices until the user logs in again. Devices that were already enumerated when the machine was unlocked will continue to function until unplugged. This policy setting is only enforced when BitLocker or device encryption is enabled.
   
   - **Default**: Yes  
@@ -166,7 +166,7 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   - **Default**: Enable with UEFI lock 
 
 - **Enable virtualization based security**  </br>
-  Turns on virtualization based security (VBS) at the next reboot. Virtualization based security uses the Windows Hypervisor to provide support for security services.
+  Turns on virtualization based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.
   - **Default**: Yes  
 
 - **Enable secure boot with DMA**  
@@ -241,7 +241,7 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
        *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
-    Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of 5 means that a user cannot set their new password to their current password or any of their previous four passwords.
+    Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. This means that with a setting of 1 the user cannot reuse their current password when choosing a new password, while a setting of *5* means that a user cannot set their new password to their current password or any of their previous four passwords.
     - **Default**: 24  
 
 - **Prevent slide show**  
@@ -272,14 +272,14 @@ For more information, see [Policy CSP - EventLogService](https://docs.microsoft.
 For more information, see [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentation.  
 
 - **Block Windows Spotlight**  
-  Allows IT admins to turn off all Windows Spotlight Features - Window spotlight on lock screen, Windows Tips, Microsoft consumer features and other related features.
+  Allows IT admins to turn off all Windows Spotlight Features - Window spotlight on lock screen, Windows Tips, Microsoft consumer features, and other related features.
   - **Default**: Yes  
   
   - **Block third-party suggestions in Windows Spotlight**  
     Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
      - **Default**: Yes  
   - **Block consumer specific features**  
-    Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install and redirect tiles.
+    Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
     - **Default**: Yes  
 
 
@@ -306,7 +306,6 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
 
 - **Scan incoming mail messages**  
-
   Allows or disallows scanning of email.
   - **Default**: Disabled  
   
@@ -315,7 +314,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disable  
   
 - **Defender sample submission consent type**  
-  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
+  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
   - **Default**: Disable  
   
 - **Signature update interval (in hours)**  
@@ -355,7 +354,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disabled 
   
 - **Internet Explorer internet zone include local path when uploading files to server**  </br>
-  This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+  This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you do not configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.
   - **Default**: Disabled 
   
 - **Internet Explorer disable processes in enhanced protected mode**  
@@ -423,11 +422,11 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   Internet Explorer allows scripts to programmatically open, resize, and reposition windows of various types. The Window Restrictions security feature restricts popup windows and prohibits scripts from displaying windows in which the title and status bars are not visible to the user or obfuscate other Windows' title and status bars. If you enable this policy setting, scripted windows are restricted for all processes. If you disable or do not configure this policy setting, scripted windows are not restricted.
   - **Default**: Enabled   
   
-- **Internet Explorer restricted zone run Active X controls and plugins**  </br>
+- **Internet Explorer restricted zone run Active X controls and plugins**  
   This policy setting allows you to manage whether ActiveX controls and plug-ins can be run on pages from the specified zone. If you enable this policy setting, controls and plug-ins can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow the controls or plug-in to run. If you disable this policy setting, controls and plug-ins are prevented from running. If you do not configure this policy setting, controls and plug-ins are prevented from running.
   - **Default**: Disable  
   
-- **Internet Explorer restricted zone script Active X controls marked safe for scripting**  </br>
+- **Internet Explorer restricted zone script Active X controls marked safe for scripting**  
   This policy setting allows you to manage whether an ActiveX control marked safe for scripting can interact with a script. If you enable this policy setting, script interaction can occur automatically without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow script interaction. If you disable this policy setting, script interaction is prevented from occurring. If you do not configure this policy setting, script interaction is prevented from occurring.
   - **Default**: Disable  
   
@@ -472,7 +471,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disable  
   
 - **Internet Explorer auto complete**  </br>
-  This AutoComplete feature can remember and suggest User names and passwords on Forms. If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords". If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords. If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab and click the Settings button.
+  This Auto-Complete feature can remember and suggest User names and passwords on Forms. If you enable this setting, the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms will be turned on. You have to decide whether to select "prompt me to save passwords". If you disable this setting the user cannot change "User name and passwords on forms" or "prompt me to save passwords". The Auto Complete feature for User names and passwords on Forms is turned off. The user also cannot opt to be prompted to save passwords. If you do not configure this setting, the user has the freedom of turning on Auto complete for User name and passwords on forms and the option of prompting to save passwords. To display this option, the users open the Internet Options dialog box, click the Contents Tab, and click the Settings button.
   - **Default**: Disable  
   
 - **Internet Explorer internet zone allow VBscript to run**  </br>
@@ -616,7 +615,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for logon options. If you enable this policy setting, you can choose from the following logon options. Anonymous logon to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic logon only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session. Automatic logon with current user name and password to attempt logon using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the logon uses the user's network user name and password for logon. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password. If you disable this policy setting, logon is set to Automatic logon only in Intranet zone. If you do not configure this policy setting, logon is set to Automatic logon only in Intranet zone.
+  This policy setting allows you to manage settings for log on options. If you enable this policy setting, you can choose from the following log on options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If Windows NT Challenge Response is supported by the server, the log on uses the user's network user name and password for log on. If Windows NT Challenge Response is not supported by the server, the user is queried to provide the user name and password. If you disable this policy setting, logon is set to Automatic log on only in Intranet zone. If you do not configure this policy setting, log on is set to Automatic log on only in Intranet zone.
   - **Default**: Prompt  
   
 - **Internet Explorer restricted zone allow vbscript to run**  </br>  
@@ -647,7 +646,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation. If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes. If you disable or do not configure this policy setting, the Web Browser Control will not block automatic prompting of ActiveX control installation for all processes.
   - **Default**: Enabled  
   
-- **Internet Explorer internet zone scriptlets
+- **Internet Explorer internet zone scriptlets**
   This policy setting allows you to manage whether the user can run scriptlets. If you enable this policy setting, the user can run scriptlets. If you disable this policy setting, the user cannot run scriptlets. If you do not configure this policy setting, the user can enable or disable scriptlets.
   - **Default**: Disable  
   
@@ -716,7 +715,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disable  
   
 - **Internet Explorer internet zone navigate windows and frames across different domains**  </br>
-  This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users cannot open windows and frames to access applications from different domains. If you do not configure this policy setting, users can open windows and frames from othe domains and access applications from other domains.
+  This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from othe domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users cannot open windows and frames to access applications from different domains. If you do not configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
   - **Default**: Disable  
   
 - **Internet Explorer internet zone updates to status bar via script**  
@@ -724,7 +723,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   - **Default**: Disabled  
   
 - **Internet Explorer restricted zone include local path when uploading files to server**  </br> 
-  This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you do not configure this policy setting, the user can choose whether path information is sent when he or she is uploading a file via an HTML form. By default, path information is sent.
+  This policy setting controls whether or not local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you do not configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.
   - **Default**: Disabled  
   
 - **Internet Explorer processes restrict file download**  </br> 
@@ -836,7 +835,7 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   - **Default**: Yes
   
 - **Prevent anonymous enumeration of SAM accounts**  
-  This security setting determines what additional permissions will be granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: Enabled: Do not allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources. Disabled: No additional restrictions. Rely on default permissions. Default on workstations: Enabled. Default on server:Enabled.
+  This security setting determines what additional permissions will be granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that does not maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: Enabled: Do not allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources. Disabled: No additional restrictions. Rely on default permissions. Default on workstations: Enabled. Default on server: Enabled.
   - **Default**: Yes
   
 - **Allow remote calls to security accounts manager**  
@@ -891,7 +890,7 @@ For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/wi
   - **Default**: Enabled
   
 - **Network IPv6 source routing protection level**  
- - **Default**: Highest protection
+  - **Default**: Highest protection
 
 - **Network ICMP redirects override OSPF generated**  
   - **Default**: Disabled
@@ -940,7 +939,7 @@ For more information, see [Policy CSP - RemoteDesktopServices](https://docs.micr
   - *Client Compatible*: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that do not support 128-bit encryption.  
   - *Low*: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.  
   
-  If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy. Important FIPS compliance can be configured through the System cryptography. Use FIPS compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
+  If you disable or do not configure this setting, the encryption level to be used for remote connections to RD Session Host servers is not enforced through Group Policy. Important FIPS compliance can be configured through the System cryptography. Use FIPS-compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS-compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.
   - **Default**: High
   
 ## Remote Management  
@@ -975,11 +974,14 @@ For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft
 For more information, see [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) in the Windows documentation.  
 
 - **RPC unauthenticated client options**  
-  This policy setting controls how the RPC server runtime handles unauthenticated RPC clients connecting to RPC servers. This policy setting impacts all RPC applications. In a domain environment this policy setting should be used with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller. If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. If you do not configure this policy setting, it remains disabled. The RPC server runtime will behave as though it was enabled with the value of "Authenticated" used for Windows Client and the value of "None" used for Server SKUs that support this policy setting. If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client will be considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting. -- "None" allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied. -- "Authenticated" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them. -- "Authenticated without exceptions" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. No exceptions are allowed. Note: This policy setting will not be applied until the system is rebooted.
+  This policy setting controls how the RPC server runtime handles unauthenticated RPC clients connecting to RPC servers. This policy setting impacts all RPC applications. In a domain environment, this policy setting should be used with caution as it can impact a wide range of functionality including group policy processing itself. Reverting a change to this policy setting can require manual intervention on each affected machine. This policy setting should never be applied to a domain controller. If you disable this policy setting, the RPC server runtime uses the value of "Authenticated" on Windows Client, and the value of "None" on Windows Server versions that support this policy setting. If you do not configure this policy setting, it remains disabled. The RPC server runtime will behave as though it was enabled with the value of "Authenticated" used for Windows Client and the value of "None" used for Server SKUs that support this policy setting. If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client will be considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting.  
+  - *None* allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied. 
+  - *Authenticated* allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them. 
+  - *Authenticated without exceptions" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. No exceptions are allowed. Note: This policy setting will not be applied until the system is rebooted.
   - **Default**: Authenticated
 
 ## Search 
-For more information, see [Policy CSP - Search](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-search) in the Windows documentation.  
+For more information, see [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in the Windows documentation.  
 
 - **Disable indexing encrypted items**  
   Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files. When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified. When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are a lot of WIP protected media files on the device.
@@ -1004,7 +1006,11 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
 For more information, see [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in the Windows documentation.  
 
 - **System boot start driver initialization**  
-  This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver: - Good: The driver has been signed and has not been tampered with. - Bad: The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized. - Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver. - Unknown: This driver has not been attested to by your malware detection application and has not been classified by the Early Launch Antimalware boot-start driver. If you enable this policy setting you will be able to choose which boot-start drivers to initialize the next time the computer is started. If you disable or do not configure this policy setting, the boot start drivers determined to be Good, Unknown or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application does not include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized. 
+  This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver: - Good: The driver has been signed and has not been tampered with.  
+  - *Bad* - The driver has been identified as malware. It is recommended that you do not allow known bad drivers to be initialized. - Bad, but required for boot: The driver has been identified as malware, but the computer cannot successfully boot without loading this driver. 
+  - *Unknown* - This driver has not been attested to by your malware detection application and has not been classified by the Early Launch Antimalware boot-start driver.  
+
+  If you enable this policy setting, you will be able to choose which boot-start drivers to initialize the next time the computer is started. If you disable or do not configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application does not include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
   - **Default**: Good unknown and bad critical
 
 ## Wi-Fi  
@@ -1015,18 +1021,22 @@ For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows
   - **Default**: Yes  
 
 - **Block Automatically connecting to Wi-Fi hotspots**  
-  Allow or disallow the device to automatically connect to Wi-Fi hotspots.
+  Allow or disallow the device to automatically connect to Wi-Fi hotspots.  
   - **Default**: Yes  
   
 ## Windows Connection Manager  
 For more information, see [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in the Windows documentation.  
 
 - **Block connection to non-domain networks**  
-  This policy setting prevents computers from connecting to both a domain based network and a non-domain based network at the same time. If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances: Automatic connection attempts When the computer is already connected to a domain based network, all automatic connection attempts to non-domain networks are blocked. When the computer is already connected to a non-domain based network, automatic connection attempts to domain based networks are blocked. Manual connection attempts When the computer is already connected to either a non-domain based network or a domain based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed. When the computer is already connected to either a non-domain based network or a domain based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked. If this policy setting is not configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
+  This policy setting prevents computers from connecting to both a domain-based network and a non-domain based network at the same time. If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances: 
+  - Automatic connection attempts When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked. When the computer is already connected to a non-domain based network, automatic connection attempts to domain-based networks are blocked. 
+  - Manual connection attempts When the computer is already connected to either a non-domain based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed. When the computer is already connected to either a non-domain based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.  
+
+  If this policy setting is not configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
   - **Default**: Enabled
   
 ## Windows Defender  
-For more information, see [Policy CSP - Defender](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
+For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
 
 - **Scan incoming mail messages**  
   Allows or disallows scanning of email.
@@ -1057,7 +1067,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/en-
   - **Default**: Block
   
 - **Network protection type**  
-  This policy allows you to turn network protection on (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center. If you enable this policy with the ""Audit"" option, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Windows Defender Security Center. If you disable this policy, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Windows Defender Security Center. If you do not configure this policy, network blocking will be disabled by default.
+  This policy allows you to turn on network protection (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the ""Block"" option, users/apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Windows Defender Security Center. If you enable this policy with the ""Audit"" option, users/apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Windows Defender Security Center. If you disable this policy, users/apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Windows Defender Security Center. If you do not configure this policy, network blocking will be disabled by default.
   - **Default**: Enable
   
 - **Defender schedule scan day**  
@@ -1077,7 +1087,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/en-
   - **Default**: Block
   
 - **Scan removable drives during a full scan**  
-  Allows Windows Defender to scan for malicious and unwanted software in removable drives (e.g. flash drives) during a full scan. Windows Defender Antivirus scans all files on USB devices before execution.
+  Allows Windows Defender to scan for malicious and unwanted software in removable drives (for example, flash drives) during a full scan. Windows Defender Antivirus scans all files on USB devices before execution.
   - **Default**: Yes  
   
 - **Scan archive files**  
@@ -1109,7 +1119,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/en-
   - **Default**: Not Configured
 
 - **Real-time monitoring**  
-  Defender require real time monitoring.
+  Defender require real-time monitoring.
   - **Default**: Yes
   
 - **Office apps executable content creation or launch type**  
