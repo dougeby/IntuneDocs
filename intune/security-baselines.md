@@ -4,10 +4,10 @@
 title: Use security baselines in Microsoft Intune - Azure | Microsoft Docs
 description: Add or configure recommended group security settings to protect user and data on devices using Microsoft Intune for mobile device management. Enable bitlocker, configure Windows Defender Advanced Threat Protection, control Internet Explorer, use Smart Screen, set local security policies, require a password, block internet downloads, and more.
 keywords:
-author: MandiOhlinger 
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Create a Windows 10 security baseline in Intune
 
-Security baselines is a feature in preview that's available for devices running Windows 10 and later. This feature includes many Intune settings to help secure and protect your users and devices. It also automatically sets these settings to values recommended by security teams. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
+Security baselines is a feature in preview that's available for devices running Windows 10 and later. This feature includes many settings supported by Intune that you can use to help secure and protect your users and devices. It also automatically sets these settings to values recommended by security teams. For example, the baseline automatically enables BitLocker, automatically requires a password to unlock a device, automatically disables basic authentication, and more.
 
 This feature applies to:
 
@@ -99,6 +99,12 @@ After the profile is created, it's ready to be assigned to your users, devices, 
 
 As soon as you save, the profile is pushed to devices when they check in with Intune. So, it can happen immediately.
 
+## Available security baselines  
+
+The following security baselines are avaialable for use with Intune.
+- **Preview: MDM Security Baseline**
+  - Version: [October 2018](security-baseline-settings-windows.md)
+
 ## Q & A
 
 #### Why these settings?
@@ -122,5 +128,5 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 - Migrating from on-premises Active Directory group policies to a pure cloud solution using Azure Active Directory (AD) with Microsoft Intune is a journey. To help, there are companion GPOs published for hybrid AD and Azure AD-joined devices. These devices can get MDM settings from the cloud (Intune) and group policy settings from on-premises domain controllers as needed.
 
 ## Next steps
-
-Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
+- View the [Windows security baseline settings](security-baseline-settings-windows.md) supported by Intune.  
+- Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
