@@ -698,6 +698,10 @@
           href: wi-fi-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
+    - name: Security baselines
+      items:
+      - name: Windows security baseline settings
+        href: security-baseline-settings-windows.md
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings

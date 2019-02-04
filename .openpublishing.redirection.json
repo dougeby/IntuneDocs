@@ -1,9 +1,17 @@
 {
 	"redirections": [
 		{
+
+			"source_path": "intune-user-help/using-your-macos-device-with-intune.md",
+			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
+			"redirect_document_id": false
+			
+		},
+		{
 			"source_path": "intune/get-started-apps.md",
 			"redirect_url": "/intune/apps-add",
 			"redirect_document_id": true
+
 		},
 		{
 			"source_path": "intune/airplay-settings-ios.md",

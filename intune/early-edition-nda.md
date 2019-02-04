@@ -81,7 +81,7 @@ Reporting is enabled
 Applies to: Windows 10 and later
 
 ### Intune macOS Company Portal Dark Mode <!-- 3300524 -->
-The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors the reflect that mode.
+The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors that reflect that mode.
 
 <!-- 1809 start -->  
 
