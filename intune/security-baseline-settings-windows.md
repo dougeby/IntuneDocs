@@ -1132,7 +1132,7 @@ For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.micros
 
 - **Ink Workspace**  
   Specifies whether to allow the user to access the ink workspace. 0 - access to ink workspace is disabled. The feature is turned off. 1 - ink workspace is enabled (feature is turned on), but the user cannot access it above the lock screen. 2 (default) - ink workspace is enabled (feature is turned on), and the user is allowed to use it above the lock screen.
-  - **Default**: Disabled
+  - **Default**: Enabled
  
 ## Windows PowerShell  
 For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in the Windows documentation.  
