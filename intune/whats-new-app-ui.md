@@ -35,7 +35,7 @@ Learn what updates have been made to the UI for apps that your end users will se
 ## Week of November 12, 2018
 
 ### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
-End users will now be able to trigger app and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+End users will now be able to trigger app and device actions in the Windows Company Portal [using keyboard shortcuts (accelerators)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
 
 ## Week of October 22, 2018
 
