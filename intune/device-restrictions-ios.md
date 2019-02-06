@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/06/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune; seodec18
@@ -33,7 +33,8 @@ This article lists and describes the different settings you can control on iOS d
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
 ## Before you begin
-[Create a device configuration profile](device-restrictions-configure.md).
+
+[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## General
 
@@ -46,7 +47,13 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** allows users to change these settings.
   This feature also applies to settings accessible from the iOS settings app, such as Mail, Contacts, Calendar, Twitter, and more. This feature doesn't apply to apps with account settings that aren't configurable from the iOS settings app, such as the Microsoft Outlook app.
-- **Enabling restrictions in the device settings (supervised only)**: Choose **Block** to prevent users from enabling restrictions in the device settings. **Not configured** allows the user to configure device restrictions (such as parental controls) on the device.
+- **Screen time (supervised only)**: Choose **Block** to prevent users from setting their own restrictions in the device settings. **Not configured** allows the user to configure device restrictions (such as parental controls) on the device.
+
+  This setting was renamed from **Enabling restrictions in the device settings**. Impact of this change: 
+  
+  - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. This is the same; and there are no changes for end users.
+  - iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings (Settings > General > Screen Time), including content and privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore (Settings > General > Device Management > Management Profile > Restrictions). These settings are in **Screen Time**. 
+  
 - **Use of the erase all content and settings option on the device (supervised only)**: Choose **Block** so users can't use the erase all content and settings option on the device (supervised only). **Not configured** gives users access to these settings.
 - **Device name modification (supervised only)**: Choose **Block** so the device name can't be changed. **Not configured** allows the user to change the name of the device.
 - **Notification settings modification (supervised only)**: Choose **Block** so the notification settings can't be changed. **Not configured** allows the user to change the device notification settings.
@@ -61,6 +68,16 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
 - **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Not configured** keeps it enabled.
 - **Block VPN creation (supervised only)**: **Block** prevents users from creating VPN configuration settings. **Not configured** lets users create VPNs on the device.
+- **Defer software updates (supervised only)**: When set to **Not configured**, software updates are shown on the device as Apple releases them. For example, if iOS 12.3 releases on April 1, then the update is shown on the device around April 1. 
+
+  **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
+
+  - **Delay visibility of software updates**: Enter a value from 0-90 days. To opt-out of setting a software update delay, enter `0` (zero). When the delay expires, users get a notification to update to the earliest version of OS available when the delay was triggered.
+
+    For example, if iOS 12.a is available on **January 1**, and **Delay visibility** is set to **5 days**, then iOS 12.a isn't shown as an available update on end user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
+
+    This setting applies to:  
+      - iOS 11.3 and later versions
 
 ## Configurations requiring supervision
 
@@ -189,6 +206,19 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - **Changes to the Find My Friends app settings (supervised only)**: **Block** prevents changes to the Find My Friends app settings. **Not configured** allows the user to change settings for the Find My Friends app.
 - **Spotlight search to return results from internet (supervised only)**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** allows Spotlight search connect to the Internet to provide search results.
 - **Block removal of system apps from device (supervised only)**: Choosing **Block** disables the ability to remove system apps from the device. **Not configured** allows users to remove system apps.
+
+#### Safari
+
+- **Safari**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
+- **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
+- **Cookies**: Choose how cookies are handled on the device. Your options:
+  - Allow
+  - Block all cookies
+  - Allow cookies from visited web sites
+  - Allow cookies from current web site
+- **JavaScript**: **Block** prevents Java scripts in the browser from running on the device. **Not configured** allows Java scripts.
+- **Fraud warnings**: **Require** fraud warnings to be shown in the web browser on the device. **Not configured** disables this feature.
+- **Pop-ups**: **Block** to disable the pop-up blocker in the web browser. **Not configured** allows the pop-up blocker.
 
 ## Restricted apps
 
@@ -363,19 +393,6 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Weather      | Apple     |
-
-## Safari
-
-- **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
-- **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
-- **Cookies**: Choose how cookies are handled on the device. Your options:
-  - Allow
-  - Block all cookies
-  - Allow cookies from visited web sites
-  - Allow cookies from current web site
-- **JavaScript**: **Block** prevents Java scripts in the browser from running on the device. **Not configured** allows Java scripts.
-- **Fraud warnings**: **Require** fraud warnings to be shown in the web browser on the device. **Not configured** disables this feature.
-- **Pop-ups**: **Block** to disable the pop-up blocker in the web browser. **Not configured** allows the pop-up blocker.
 
 ## Domains
 
