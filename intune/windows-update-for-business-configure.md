@@ -101,9 +101,9 @@ After you create update rings, you assign them to groups of devices. By using up
 
      **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.  
      
-     - **Set feature update uninstall period (2 - 60 days**: Specifies the period a feature update can be uninstalled. 
+   - **Set feature update uninstall period (2 - 60 days)**: Specifies the period a feature update can be uninstalled. 
      
-     More information about Windows Update servicing model: https://docs.microsoft.com/en-us/windows/windows-10/release-information
+     F_or more information about the Windows Update servicing model, see_ https://docs.microsoft.com/windows/windows-10/release-information
 
    **User experience settings**
    
