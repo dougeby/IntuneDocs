@@ -28,56 +28,87 @@ ms.custom: intune-azure
 
 # iOS device settings to allow or restrict features using Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
 This article lists and describes the different settings you can control on iOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
 ## Before you begin
 
-[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
+[Create a device restrictions configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## General
 
-- **Share usage data**: Choose **Block** to prevent the device from sending diagnostic and usage data to Apple. **Not configured** allows this data to be sent.
-  - **Diagnostic data submission**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in  **Diagnostics and Usage** (device Settings). To use this setting, the device must be in supervised mode (iOS 9.3.2+). **Not configured** allows the user to change these device settings.
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. **Not configured** lets the user capture the screen contents as an image.
-  - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. To use this setting, the device must be in supervised mode (iOS 9.3+). **Not configured** allows the Apple Classroom app to view the screen.
-  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** prevents this feature.
-- **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** allows TLS certificates.
-- **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** lets the user choose to trust apps that aren't downloaded from the app store.
-- **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** allows users to change these settings.
-  This feature also applies to settings accessible from the iOS settings app, such as Mail, Contacts, Calendar, Twitter, and more. This feature doesn't apply to apps with account settings that aren't configurable from the iOS settings app, such as the Microsoft Outlook app.
-- **Screen time (supervised only)**: Choose **Block** to prevent users from setting their own restrictions in the device settings. **Not configured** allows the user to configure device restrictions (such as parental controls) on the device.
+- **Share usage data**: Choose **Block** to prevent the device from sending diagnostic and usage data to Apple. **Not configured** (default) allows this data to be sent.
+  - **Diagnostics submission settings modification (supervised only)**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in **Diagnostics and Usage** (device Settings). **Not configured** (default) allows the user to change these device settings.
 
-  This setting was renamed from **Enabling restrictions in the device settings**. Impact of this change: 
+    This feature applies to:  
+    - iOS 9.3.2 and later
+
+- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. **Not configured** (default) lets the user capture the screen contents as an image.
+  - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Not configured** (default) allows the Apple Classroom app to view the screen.
+
+    This feature applies to:  
+    - iOS 9.3 and later
+
+  - **Unprompted screen observation by Classroom app (supervised only)**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** (default) prevents this feature.
+- **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** (default) allows TLS certificates.
+- **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** (default) lets the user choose to trust apps that aren't downloaded from the app store.
+- **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** (default) allows users to change these settings.
+
+  This feature also applies to settings accessible from the iOS settings app, such as Mail, Contacts, Calendar, Twitter, and more. This feature doesn't apply to apps with account settings that aren't configurable from the iOS settings app, such as the Microsoft Outlook app.
+
+- **Screen time (supervised only)**: Choose **Block** to prevent users from setting their own restrictions in the device settings. **Not configured** (default) allows the user to configure device restrictions (such as parental controls) on the device.
+
+  This setting was renamed from **Enabling restrictions in the device settings**. Impact of this change:  
   
   - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. This is the same; and there are no changes for end users.
-  - iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings (Settings > General > Screen Time), including content and privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore (Settings > General > Device Management > Management Profile > Restrictions). These settings are in **Screen Time**. 
+  - iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings (Settings > General > Screen Time), including content and privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore (Settings > General > Device Management > Management Profile > Restrictions). These settings are in **Screen Time**.
   
-- **Use of the erase all content and settings option on the device (supervised only)**: Choose **Block** so users can't use the erase all content and settings option on the device (supervised only). **Not configured** gives users access to these settings.
-- **Device name modification (supervised only)**: Choose **Block** so the device name can't be changed. **Not configured** allows the user to change the name of the device.
-- **Notification settings modification (supervised only)**: Choose **Block** so the notification settings can't be changed. **Not configured** allows the user to change the device notification settings.
-- **Wallpaper modification (supervised only)**: **Block** prevents the wallpaper from being changed. **Not configured** allows the user to change the wallpaper on the device.
-- **Enterprise app trust settings modification (supervised only)**: **Block** prevents the user from changing the enterprise app trust settings on supervised devices. **Not configured** allows the user to trust apps that aren't downloaded from the app store.
-- **Configuration profile changes (supervised only)**: **Block** prevents configuration profile changes on the device. **Not configured** allows the user to install configuration profiles.
+- **Use of the erase all content and settings option on the device (supervised only)**: Choose **Block** so users can't use the erase all content and settings option on the device (supervised only). **Not configured** (default) gives users access to these settings.
+- **Device name modification (supervised only)**: Choose **Block** so the device name can't be changed. **Not configured** (default) allows the user to change the name of the device.
+- **Notification settings modification (supervised only)**: Choose **Block** so the notification settings can't be changed. **Not configured** (default) allows the user to change the device notification settings.
+- **Wallpaper modification (supervised only)**: **Block** prevents the wallpaper from being changed. **Not configured** (default) allows the user to change the wallpaper on the device.
+- **Enterprise app trust settings modification (supervised only)**: **Block** prevents the user from changing the enterprise app trust settings on supervised devices. **Not configured** (default) allows the user to trust apps that aren't downloaded from the app store.
+- **Configuration profile changes (supervised only)**: **Block** prevents configuration profile changes on the device. **Not configured** (default) allows the user to install configuration profiles.
 - **Activation Lock (supervised only)**: Choose **Allow** to enable Activation Lock on supervised iOS devices. Activation Lock makes it harder for a lost or stolen device to be reactivated.
-- **Block app removal (supervised only)**: Choose **Block** to prevent users from removing apps. **Not configured** allows users to remove apps from the device.
-- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode blocks USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** allows USB Restricted mode.
+- **Block app removal (supervised only)**: Choose **Block** to prevent users from removing apps. **Not configured** (default) allows users to remove apps from the device.
+- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode blocks USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
 - **Force automatic date and time (supervised only)**: **Require** forces supervised devices to set the Date & Time automatically. The device's time zone is updated when the device has cellular connections or has Wi-Fi with location services enabled.
-- **Require students to request permission to leave Classroom course (supervised only)**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. Only available in iOS 11.3+. **Not configured** doesn't force the student to ask for permission.
+- **Require students to request permission to leave Classroom course (supervised only)**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. **Not configured** (default) doesn't force the student to ask for permission.
+
+  This feature applies to:  
+  - iOS 11.3 and later
+
+- **Allow Classroom to lock to an app and lock the device without prompting (supervised only)**: **Enable** allows teacher to lock apps or lock the device without prompting the student. **Not configured** (default) prevents teachers from locking apps or devices without prompting the student.
+
+  This feature applies to:  
+  - iOS 11.0 and later
+
+- **Automatically join Classroom classes without prompting (supervised only)**: **Enables** automatically allows students to join a class without prompting the teacher. **Not configured** (default) prompts the teacher that students want to join the class.
+
+  This feature applies to:  
+  - iOS 11.0 and later
+
 - **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
-- **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Not configured** keeps it enabled.
-- **Block VPN creation (supervised only)**: **Block** prevents users from creating VPN configuration settings. **Not configured** lets users create VPNs on the device.
-- **Defer software updates (supervised only)**: When set to **Not configured**, software updates are shown on the device as Apple releases them. For example, if iOS 12.3 releases on April 1, then the update is shown on the device around April 1. 
+- **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Not configured** (default) keeps it enabled.
+- **Block VPN creation (supervised only)**: **Block** prevents users from creating VPN configuration settings. **Not configured** (default) lets users create VPNs on the device.
+- **Modifying eSIM settings (supervised only)**: **Block** prevents users from removing or adding a cellular plan to the eSIM on the device. **Not configured**(default) allows users to change these settings.
+
+  This feature applies to:  
+  - iOS 12.1 and later
+
+- **Defer software updates (supervised only)**: When set to **Not configured**(default), software updates are shown on the device as Apple releases them. For example, if an iOS update gets released by Apple on a specific date, then that update will naturally show up on the device.
 
   **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
 
-  - **Delay visibility of software updates**: Enter a value from 0-90 days. To opt-out of setting a software update delay, enter `0` (zero). When the delay expires, users get a notification to update to the earliest version of OS available when the delay was triggered.
+  - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of OS available when the delay was triggered.
 
     For example, if iOS 12.a is available on **January 1**, and **Delay visibility** is set to **5 days**, then iOS 12.a isn't shown as an available update on end user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
 
     This setting applies to:  
-      - iOS 11.3 and later versions
+    - iOS 11.3 and later
 
 ## Configurations requiring supervision
 
@@ -143,16 +174,20 @@ iOS supervised mode can only be enabled during initial device setup through Appl
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
   - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint.
-- **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** allows passcodes to be added, changed, or removed.
-  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** allows the user update the TouchID fingerprints on the device.
+- **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** (default) allows passcodes to be added, changed, or removed.
+  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device.
 - **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
   - Users aren't prompted to use a saved password in Safari or in any apps.
   - Automatic Strong Passwords are disabled, and strong passwords aren't suggested to users.
 
-  **Not configured** allows these features.
+  **Not configured** (default) allows these features.
 
-- **Block password proximity requests (supervised only)**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Not configured** allows these password requests.
-- **Block password sharing (supervised only)**: **Block** prevents sharing passwords between devices using AirDrop. **Not configured** allows passwords to be shared.
+- **Block password proximity requests (supervised only)**: Choose **Block** so a user’s device doesn't request passwords from nearby devices. **Not configured** (default) allows these password requests.
+- **Block password sharing (supervised only)**: **Block** prevents sharing passwords between devices using AirDrop. **Not configured** (default) allows passwords to be shared.
+- **Require Touch ID or Face ID authentication for password or credit card information AutoFill (supervised only)**: When set to **Require**, users must authenticate using TouchID or FaceID before passwords or credit card information can be auto filled in Safari and other apps. **Not configured** (default) allows users to control this feature in the device settings.
+
+  This feature applies to:  
+  - iOS 11.0 and later
 
 <sup>1</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
 
@@ -259,29 +294,38 @@ To add apps to these lists, you can:
 
 ## Wireless
 
-- **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** allows data roaming when the device is on a cellular network.
-- **Global background fetch while roaming**: **Block** prevents using the global background fetch feature when roaming over the cellular network. **Not configured** allows the device to fetch data, such as email, when it's roaming on a cellular network.
-- **Voice dialing**: Choose **Block** to prevent users from using the voice dialing feature on the device. **Not configured** allows voice dialing on the device.
-- **Voice roaming**: Choose **Block** to prevent voice roaming over the cellular network. **Not configured** allows voice roaming when the device is on a cellular network.
-- **Changes to app cellular data usage settings (supervised only)**: Choose **Block** to prevent changes to the app cellular data usage settings. **Not configured** allows the user to control which apps are allowed to use cellular data.
-- **Personal Hotspot**: **Block** prevents the device from being used as a personal hotspot. This setting might not be compatible with some carriers. **Not configured** allows this feature.
-- **Join Wi-Fi networks only using configuration profiles (supervised only)**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** allows the device to use other Wi-Fi networks.
+- **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** (default) allows data roaming when the device is on a cellular network.
+- **Global background fetch while roaming**: **Block** prevents using the global background fetch feature when roaming over the cellular network. **Not configured** (default) allows the device to fetch data, such as email, when it's roaming on a cellular network.
+- **Voice dialing**: Choose **Block** to prevent users from using the voice dialing feature on the device. **Not configured** (default) allows voice dialing on the device.
+- **Voice roaming**: Choose **Block** to prevent voice roaming over the cellular network. **Not configured** (default) allows voice roaming when the device is on a cellular network.
+- **Changes to app cellular data usage settings (supervised only)**: Choose **Block** to prevent changes to the app cellular data usage settings. **Not configured** (default) allows the user to control which apps are allowed to use cellular data.
+- **Changes to cellular plan settings (supervised only)**: **Block** prevent users from changing any settings in the their cellular plan. **Not configured** (default) allows users to make changes.
+
+  This feature applies to:  
+  - iOS 11.0 and later
+
+- **Personal Hotspot**: **Block** prevents the device from being used as a personal hotspot. This setting might not be compatible with some carriers. **Not configured** (default) allows this feature.
+- **Join Wi-Fi networks only using configuration profiles (supervised only)**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** (default) allows the device to use other Wi-Fi networks.
 - **Cellular usage rules (managed apps only)**: Define the data types that managed apps can use when on cellular networks. Your options:
   - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.
   - **Block use of cellular data when roaming**: Block using cellular data when roaming for **All managed apps** or **Choose specific apps**.
 
 ## Connected Devices
 
-- **AirDrop (supervised only)**: **Block** prevents using AirDrop on the device. **Not configured** allows using the AirDrop feature to exchange content with nearby devices.
-- **Apple Watch pairing (supervised only)**: **Block** prevents pairing with an Apple Watch. **Not configured** allows the device to pair with an Apple Watch.
+- **AirDrop (supervised only)**: **Block** prevents using AirDrop on the device. **Not configured** (default) allows using the AirDrop feature to exchange content with nearby devices.
+- **Apple Watch pairing (supervised only)**: **Block** prevents pairing with an Apple Watch. **Not configured** (default) allows the device to pair with an Apple Watch.
 - **Wrist detection for paired Apple watch**: **Require** forces a paired Apple watch to use wrist detection. When required, the Apple Watch won't display notifications when it's not being worn. 
-- **Bluetooth modification (supervised only)**: **Block** stops the end user from changing Bluetooth settings on the device. **Not configured** allows the user to change these settings.
-- **Host pairing to control the devices an iOS device can pair with (supervised only)**: **Not configured** allows host pairing to let the administrator control which devices an iOS device can pair with. **Block** prevents host pairing.
-- **Require AirPlay outgoing requests pairing password**: **Require** a pairing password when the user uses AirPlay to stream content to other Apple devices. **Not configured** allows the user to stream content using AirPlay without entering a password.
-- **Block AirPrint (supervised only)**: Choose **Block** to prevent using the AirPrint feature on the device. **Not configured** allows the user to use AirPrint.
-  - **Block storage of AirPrint credentials in Keychain (supervised only)**: **Block** prevents using Keychain storage for username and password on the device. **Not configured** allows storing the AirPrint username and password in the Keychain app.
+- **Bluetooth modification (supervised only)**: **Block** stops the end user from changing Bluetooth settings on the device. **Not configured** (default) allows the user to change these settings.
+- **Host pairing to control the devices an iOS device can pair with (supervised only)**: **Not configured** (default) allows host pairing to let the administrator control which devices an iOS device can pair with. **Block** prevents host pairing.
+- **Require AirPlay outgoing requests pairing password**: **Require** a pairing password when the user uses AirPlay to stream content to other Apple devices. **Not configured** (default) allows the user to stream content using AirPlay without entering a password.
+- **Block AirPrint (supervised only)**: Choose **Block** to prevent using the AirPrint feature on the device. **Not configured** (default) allows the user to use AirPrint.
+  - **Block storage of AirPrint credentials in Keychain (supervised only)**: **Block** prevents using Keychain storage for username and password on the device. **Not configured** (default) allows storing the AirPrint username and password in the Keychain app.
   - **Require a trusted TLS certificate for AirPrint (supervised only)**: **Require** forces the device to use trusted certificates for TLS printing communication.
-  - **Block iBeacon discovery of AirPrint printers (supervised only)**: **Block** prevents malicious AirPrint Bluetooth beacons from phishing for network traffic. **Not configured** allows advertising AirPrint printers on the device.
+  - **Block iBeacon discovery of AirPrint printers (supervised only)**: **Block** prevents malicious AirPrint Bluetooth beacons from phishing for network traffic. **Not configured** (default) allows advertising AirPrint printers on the device.
+- **Block setting up new nearby devices (supervised only)**: **Block** disables the prompt to setup new devices that are nearby. **Not configured** (default) allows prompts for users to connect to other nearby Apple devices.
+
+  This feature applies to:  
+  - iOS 11.0 and later
 
 ## Keyboard and Dictionary
 
@@ -410,6 +454,6 @@ In **Domain URL**, add one or more URLs to the list. Users can only save web pas
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also set device restrictions and settings on [macOS](device-restrictions-macos.md) devices.
+You can also restrict device features and settings on [macOS](device-restrictions-macos.md) devices.
