@@ -47,13 +47,13 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - macOS 10.13 and later
 
-- **Defer software updates (supervised only)**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if a macOS update gets released by Apple on a specific date, then that update will naturally show up on the device.
+- **Defer software updates (supervised only)**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if a macOS update gets released by Apple on a specific date, then that update naturally shows up on the device around the release date.
 
   **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
 
   - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of the OS available when the delay was triggered.
 
-    For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update on user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
+    For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update on devices. On the **sixth day** following the release, that update is available, and end users can install it.
 
     This feature applies to:  
     - macOS 10.13.4 and later
@@ -86,7 +86,7 @@ These settings are added to a device configuration profile in Intune, and then a
 In the restricted apps list, you can configure one of the following lists:
 
 - A **Prohibited apps** list: List the apps not managed by Intune that users aren't allowed to install and run. Users aren't prevented from installing a prohibited app, but if they do, it's reported to the administrator.
-- An **Approved apps** list: List the apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list, but if they do, it's reported to the administrator.
+- An **Approved apps** list: List the apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But, if they do, it's reported to the administrator.
 
 To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).
 
