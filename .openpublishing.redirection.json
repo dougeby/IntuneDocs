@@ -14,10 +14,15 @@
 
 		},
 		{
+			"source_path": "intune/get-started-azure.md",
+			"redirect_url": "/intune/tutorial-walkthrough-intune-portal",
+			"redirect_document_id": true
+		},		
+		{
 			"source_path": "intune/airplay-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings",
 			"redirect_document_id": false
-		},		
+		},				
 		{
 			"source_path": "intune/web-content-filter-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings#web-content-filter-settings",
