@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,6 @@ This article lists and describes the different settings you can control on Andro
 - **Wi-Fi setting changes**: Choose **Block** to prevent users from changing Wi-Fi settings created by the device owner. Users can create their own Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
 - **Wi-Fi access point configuration**: Choose **Block** to prevent users from creating or changing any Wi-Fi configurations. **Not configured** allows users to change the Wi-Fi settings on the device.
 - **Bluetooth configuration**: Choose **Block** to prevent users from configuring Bluetooth on the device. **Not configured** allows using Bluetooth on the device.
-- **Contact sharing via Bluetooth**: Choose **Block** to prevent access to work contacts from another device, such as a car system when an Android device is paired using Bluetooth. **Not configured** allows access to work contacts on another Bluetooth device that's paired to the Android device.
 - **Tethering and access to hotspots**: Choose **Block** to prevent tethering and access to portable hotspots. **Not configured** allows tethering and access to portable hotspots.
 - **USB storage**: Choose **Allow** to access USB storage on the device. **Not configured** prevents access to USB storage.
 - **USB file transfer**: Choose **Block** to prevent transferring files over USB. **Not configured** allows transferring files.

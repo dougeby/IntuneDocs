@@ -156,7 +156,7 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>FileVault</strong> | Give the user the option to set up FileVault encryption. |
     | <strong>iCloud Diagnostics</strong> | Give the user the option to send iCloud diagnostic data to Apple. |
     | <strong>Registration</strong>| Require the user to register the device. |
-
+    
    
 
 10. Choose **OK**.

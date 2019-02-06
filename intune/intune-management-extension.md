@@ -43,7 +43,7 @@ The Intune management extension supplements the in-box Windows 10 MDM features. 
 
 The Intune management extension has the following prerequisites:
 
-- Devices must be joined to Azure AD and [auto-enrolled](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and comanaged enrolled Windows devices. GPO-enrolled devices aren't supported.
+- Devices must be joined or registered to Azure AD and Azure AD is configured for [auto-enrollment into Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and comanaged enrolled Windows devices.
 - Devices must run Windows 10 version 1607 or later.
 - The Intune management extension agent is installed when a PowerShell script or a Win32 app is deployed to a user or device security group.
 
@@ -67,9 +67,9 @@ The Intune management extension has the following prerequisites:
 3. Select one or more groups that include the users whose devices receive the script. **Select** to assign the policy to the selected groups.
 
 > [!NOTE]
-> - PowerShell scripts can't be applied to computer groups.
 > - End users aren't required to sign in to the device to execute PowerShell scripts.
 > - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
+> - PowerShell scripts in Intune can be targeted to Azure AD user security groups.
 
 The Intune management extension client checks once every hour with Intune. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
 

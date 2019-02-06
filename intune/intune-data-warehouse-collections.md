@@ -507,7 +507,10 @@ The **ownerType** entity indicates whether a device is corporate, personally own
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Unique identifier of the owner type.                                                                                                                                               |                            |
 | ownerTypeKey  | Unique identifier of the owner type in the data warehouse   - surrogate key.                                                                                                       |                            |
-| ownerTypeName | Represents the owner type of the devices:  Company  -   Device is enterprise owned.  Personal -   Device is personally owned (BYOD).   Unknown  -   No information on this device. | Company   Personal Unknown |
+| ownerTypeName | Represents the owner type of the devices:  Corporate  -   Device is enterprise owned.  Personal -   Device is personally owned (BYOD).   Unknown  -   No information on this device. | Corporate   Personal Unknown |
+
+> [!Note]  
+> For the `ownerTypeName` filter in AzureAD when creating Dynamic Groups for devices, you need to set the value `deviceOwnership` as `Company`. For more information, see [Rules for devices](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## policies
 The **Policy** entity lists device configuration profiles, app configuration profiles, and compliance policies. You can assign the policies with Mobile Device Management (MDM) to a group in your enterprise.

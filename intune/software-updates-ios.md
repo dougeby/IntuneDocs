@@ -4,8 +4,8 @@
 title: Configure iOS software update policies in Microsoft Intune - Azure | Microsoft Docs
 description: In Microsoft Intune, create or add a configuration policy to restrict when software updates are automatically installed on iOS devices managed or supervised by Intune. You can choose the date and time when updates aren't installed. You can also assign this policy to groups, users, or devices, and check for any installation failures. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -18,7 +18,7 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+#ms.reviewer: tisilver
 #ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -41,7 +41,10 @@ This feature supports devices that run iOS 10.3 and later versions. The delay se
 4. Enter a name and description for the policy.
 5. Select **Settings**. 
 
-    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. To opt-out of setting a software update delay, enter 0. These update settings will apply only to supervised iOS devices.
+    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. When the delay expires, users get a notification to update to the earliest version of OS that was available when the delay was triggered. To opt-out of setting a software update delay, enter 0. These update settings will apply only to supervised iOS devices.
+  
+    For example, if iOS 12.a is available on **January 1** and you have **Delay OS Updates** set to **5 days**, that particular version will not appear as an available update on any end user devices assigned to that profile. On the **sixth day** following release, that update will appear as available and all end users are free to initiate an update.
+
 
 6. Select **OK** to save your changes. Select **Create** to create the policy.
 
@@ -52,7 +55,7 @@ The profile is created and shown in the policy list. Apple MDM doesn't allow you
 1. In **Software updates**, select **Update policies for iOS**.
 2. Choose an existing policy > **Properties**.
 3. Update the restricted time:
-
+    
     1. Choose the days of the week
     2. Choose the time zone that this policy is applied
     3. Enter the start and end time for the blacklisted hours

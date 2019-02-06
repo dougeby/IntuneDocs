@@ -113,9 +113,6 @@ To learn more about iOS enrollment, see:
 - [Decide how to enroll iOS devices](enrollment-method-choose-ios.md)
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-direct-enroll-ios.md)
 
-## Mobile device management with Exchange ActiveSync and Intune
-Mobile devices that aren't enrolled, but that connect to Exchange ActiveSync (EAS), can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
-
 ## Mobile device cleanup after MDM certificate expiration
 
 The MDM certificate is renewed automatically when mobile devices are communicating with the Intune service. If mobile devices are wiped, or they fail to communicate with the Intune service for some period of time, the MDM certificate is not renewed. The device is removed from the Azure portal 180 days after the MDM certificate expires.

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -75,6 +75,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Microsoft account**: Lets the user associate a Microsoft account with the device.
 - **Non-Microsoft account**: Lets users add email accounts to the device that aren't associated with a Microsoft account.
 - **Settings synchronization for Microsoft account**: Allow device and app settings that are associated with a Microsoft account to synchronize between devices.
+- **Microsoft Account sign-in assistant**: Choose **Disable** to prevent end users from controlling the Microsoft Sign-in Assistant service (wlidsvc), such as manually stopping or starting the service. When set to **Not configured**, the wlidsvc NT service uses the operating system (OS) default, which may allow end users to start and stop the service. This service is used by the OS to allow users to sign in to their Microsoft account.
 
 ## Cloud Printer
 
@@ -197,7 +198,7 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 ## Locked screen experience
 
 - **Action center notifications (mobile only)**: Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- **Locked screen picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that's used as the Windows lock screen wallpaper. Users can't change this setting.
+- **Locked screen picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that's used as the Windows lock screen wallpaper. This setting locks the image. The image can't be changed afterwards.
 - **User configurable screen timeout (mobile only)**: Lets users configure the amount of time 
 - **Cortana on locked screen (desktop only)**: Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
 - **Toast notifications on locked screen**: Block alert messages from showing on the device lock screen.
@@ -318,7 +319,6 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
   - **Prevent reuse of previous passwords**: Specifies the number of previously used passwords that are remembered by the device.
   - **Require password when device returns from idle state (Mobile only)**: Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
   - **Simple passwords**: Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
-- **Encryption**: Enable encryption on targeted devices.
 
 ## Per-app privacy exceptions
 
@@ -425,7 +425,7 @@ You can configure information that all apps on the device can access. You can de
 
 - **Start menu layout**: To customize the start menu on desktop devices, you can upload an XML file that includes your customizations, including the order the apps are listed, and more. Users can't change the Start menu layout you enter.
 - **Pin websites to tiles in Start menu**: Import images from Microsoft Edge that are shown as links in the Windows Start menu for desktop devices.
-- **Unpin apps from task bar**: Choose **Block** to stop the user from unpinning apps from the Start menu.
+- **Unpin apps from task bar**: Choose **Block** to stop the user from unpinning apps from the task bar.
 - **Fast user switching**: Choose **Block** to prevent switching between users that are logged on simultaneously without logging off.
 - **Most used apps**: Choose **Block** to hide the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
 - **Recently added apps**: Choose **Block** to hide recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
