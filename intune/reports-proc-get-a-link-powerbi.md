@@ -56,7 +56,7 @@ The Power BI file (pbix) contains connection information for your tenant and a s
 > [!Important]  
 > Each Power BI file (pbix) may be different depending on tenant location. If you are managing multiple Intune tenants, then be sure to use the file downloaded from the Azure portal while logged in to that tenant.  
 
-1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
+1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
 3.  Select **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
 4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second to get your tenant data.
@@ -67,7 +67,7 @@ The Power BI file (pbix) contains connection information for your tenant and a s
 
 With a client authenticated to Azure AD, the OData URL connects to the RESTful endpoint in the Data Warehouse API that exposes the data model to your reporting client. Follow these instructions to use Power BI Desktop to connect and create your own reports. You are not limited to Power BI Desktop, but can use your favorite analytic tool with the OData URL provided the client supports OAUTH2.0 authentication and the OData v4.0 standard.
 
-1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
+1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
 3. Retrieve the custom feed URL from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
 4. Open **Power BI Desktop**.
