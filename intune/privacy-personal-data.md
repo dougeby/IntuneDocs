@@ -4,8 +4,8 @@
 title: Privacy and personal data in Intune
 description: Learn what personal data is collected and processed in Intune.
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: article
