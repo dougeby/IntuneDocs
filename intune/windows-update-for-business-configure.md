@@ -103,7 +103,7 @@ After you create update rings, you assign them to groups of devices. By using up
      
    - **Set feature update uninstall period (2 - 60 days)**: Specifies the period a feature update can be uninstalled. 
      
-     F_or more information about the Windows Update servicing model, see_ https://docs.microsoft.com/windows/windows-10/release-information
+     For more information about the Windows Update servicing model, see [Windows 10 - Release information](https://docs.microsoft.com/windows/windows-10/release-information).
 
    **User experience settings**
    
