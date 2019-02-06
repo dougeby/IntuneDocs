@@ -74,7 +74,7 @@ The Intune management extension has the following prerequisites:
       | No | 32-bit  | 32-bit PS host supported | Runs only in 32-bit PS host, which works on 32-bit and 64-bit architectures. |
       | Yes | 64-bit | Runs script in 64-bit PS host for 64-bit architectures. When ran on 32-bit, the script runs in a 32-bit PS host. | Runs script in 32-bit PS host. If this setting changes to 64-bit, the script opens (it doesn't run) in a 64-bit PS host, and reports the results. When ran on 32-bit, the script runs in 32-bit PS host. |
 
-    ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
+    ![Add and use PowerShell scripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
 
 5. Select **OK** > **Create** to save the script.
 
@@ -82,7 +82,7 @@ The Intune management extension has the following prerequisites:
 
 1. In **PowerShell scripts**, select the script to assign, and then choose **Manage** > **Assignments**.
 
-    ![Add PowerShell script pane](./media/mgmt-extension-assignments.png)
+    ![Assign or deploy PowerShell script to device groups in Microsoft Intune](./media/mgmt-extension-assignments.png)
 
 2. Choose **Select Groups** to list available Azure AD groups. 
 3. Select one or more groups that include the users whose devices receive the script. **Select** to assign the policy to the selected groups.
@@ -107,7 +107,7 @@ In **PowerShell scripts**, select the script to monitor, choose **Monitor**, and
 
 Agent logs on the client machine are typically in `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can use [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) to view these log files. 
 
-![Screenshot the Agent logs](./media/apps-win32-app-10.png)  
+![Screenshot or sample cmtrace agent logs in Microsoft Intune](./media/apps-win32-app-10.png)  
 
 ## Delete a script
 
