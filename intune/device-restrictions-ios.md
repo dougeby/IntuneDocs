@@ -86,7 +86,7 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.0 and later
 
-- **Automatically join Classroom classes without prompting (supervised only)**: **Enables** automatically allows students to join a class without prompting the teacher. **Not configured** (default) prompts the teacher that students want to join the class.
+- **Automatically join Classroom classes without prompting (supervised only)**: **Enable** automatically allows students to join a class without prompting the teacher. **Not configured** (default) prompts the teacher that students want to join the class.
 
   This feature applies to:  
   - iOS 11.0 and later
@@ -94,16 +94,16 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
 - **Limit ad tracking**: Choose **Limit** to disable the device advertising identifier. **Not configured** (default) keeps it enabled.
 - **Block VPN creation (supervised only)**: **Block** prevents users from creating VPN configuration settings. **Not configured** (default) lets users create VPNs on the device.
-- **Modifying eSIM settings (supervised only)**: **Block** prevents users from removing or adding a cellular plan to the eSIM on the device. **Not configured**(default) allows users to change these settings.
+- **Modifying eSIM settings (supervised only)**: **Block** prevents users from removing or adding a cellular plan to the eSIM on the device. **Not configured** (default) allows users to change these settings.
 
   This feature applies to:  
   - iOS 12.1 and later
 
-- **Defer software updates (supervised only)**: When set to **Not configured**(default), software updates are shown on the device as Apple releases them. For example, if an iOS update gets released by Apple on a specific date, then that update will naturally show up on the device.
+- **Defer software updates (supervised only)**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if an iOS update gets released by Apple on a specific date, then that update naturally shows up on the device around the release date.
 
   **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
 
-  - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of OS available when the delay was triggered.
+  - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of the OS available when the delay was triggered.
 
     For example, if iOS 12.a is available on **January 1**, and **Delay visibility** is set to **5 days**, then iOS 12.a isn't shown as an available update on end user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
 
@@ -146,7 +146,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - Pair with Apple Watch 
 
 > [!NOTE]
-> Apple confirmed that certain settings will move to supervised-only in 2019. We recommend taking this into consideration when using these settings instead of waiting for Apple to migrate them to supervised-only:
+> Apple confirmed that certain settings move to supervised-only in 2019. We recommend taking this into consideration when using these settings, instead of waiting for Apple to migrate them to supervised-only:
 > - App installation by end users
 > - App removal
 > - FaceTime
@@ -160,7 +160,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 
 ## Password
 
-- **Password**: Require the end user to enter a password to access the device. Not configured allows users to access the device without entering a password.
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** allows users to access the device without entering a password.
   - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`.
   - **Required password type**: Choose the type of password your organization require. Your options:
     - **Device default**
@@ -175,8 +175,11 @@ iOS supervised mode can only be enabled during initial device setup through Appl
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
   - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint.
 - **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** (default) allows passcodes to be added, changed, or removed.
+
   - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device.
+
 - **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
+
   - Users aren't prompted to use a saved password in Safari or in any apps.
   - Automatic Strong Passwords are disabled, and strong passwords aren't suggested to users.
 
@@ -207,7 +210,7 @@ iOS supervised mode can only be enabled during initial device setup through Appl
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** allows store purchases within a running app.
 - **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store.
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** allows the user to download books with the "Erotica" category.
-- **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing non-corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, You want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
+- **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing non-corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
   - **Allow managed apps to write contacts to unmanaged contacts accounts**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
@@ -299,7 +302,7 @@ To add apps to these lists, you can:
 - **Voice dialing**: Choose **Block** to prevent users from using the voice dialing feature on the device. **Not configured** (default) allows voice dialing on the device.
 - **Voice roaming**: Choose **Block** to prevent voice roaming over the cellular network. **Not configured** (default) allows voice roaming when the device is on a cellular network.
 - **Changes to app cellular data usage settings (supervised only)**: Choose **Block** to prevent changes to the app cellular data usage settings. **Not configured** (default) allows the user to control which apps are allowed to use cellular data.
-- **Changes to cellular plan settings (supervised only)**: **Block** prevent users from changing any settings in the their cellular plan. **Not configured** (default) allows users to make changes.
+- **Changes to cellular plan settings (supervised only)**: **Block** prevents users from changing any settings in the cellular plan. **Not configured** (default) allows users to make changes.
 
   This feature applies to:  
   - iOS 11.0 and later

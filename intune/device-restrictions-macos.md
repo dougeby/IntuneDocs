@@ -51,7 +51,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
   **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
 
-  - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of OS available when the delay was triggered.
+  - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of the OS available when the delay was triggered.
 
     For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update on user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
 
