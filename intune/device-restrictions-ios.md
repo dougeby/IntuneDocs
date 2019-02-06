@@ -47,7 +47,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification (supervised only)**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** allows users to change these settings.
   This feature also applies to settings accessible from the iOS settings app, such as Mail, Contacts, Calendar, Twitter, and more. This feature doesn't apply to apps with account settings that aren't configurable from the iOS settings app, such as the Microsoft Outlook app.
-- **Screen time (supervised only)**: Choose **Block** to prevent users from setting their own restrictions in Screen Time within device settings. **Not configured** allows the user to configure device restrictions (such as parental controls or content and privacy restrictions) on the device.
+- **Screen time (supervised only)**: Choose **Block** to prevent users from setting their own restrictions in Screen Time (device settings). **Not configured** allows the user to configure device restrictions (such as parental controls or content, and privacy restrictions) on the device.
 
   This setting was renamed from **Enabling restrictions in the device settings**. Impact of this change: 
   
