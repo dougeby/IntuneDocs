@@ -169,10 +169,10 @@ Once the Remapper is added to your project you will need to perform the MAM equi
         }
 ```
 If the replacements are not made then you may encounter the following compilation errors until you make the replacements:
-* [Compiler Error CS0239](https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0239). This error is commonly seen in this form
+* [Compiler Error CS0239](https://docs.microsoft.com/dotnet/csharp/misc/cs0239). This error is commonly seen in this form
 ``'MainActivity.OnCreate(Bundle)': cannot override inherited member 'MAMAppCompatActivityBase.OnCreate(Bundle)' because it is sealed``.
 This is expected because when the Remapper modifies the inheritance of Xamarin classes, certain functions will be made `sealed` and a new MAM variant is added to override instead.
-* [Compiler Error CS0507](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0507): This error is commonly seen in this form ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. When the Remapper changes the inheritance of some of the Xamarin classes, certain member functions will be changed to `public`. If you override any of these functions, you will need to change those the access modifiers for those overrides to be `public` as well.
+* [Compiler Error CS0507](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0507): This error is commonly seen in this form ``'MyActivity.OnRequestPermissionsResult()' cannot change access modifiers when overriding 'public' inherited member ...``. When the Remapper changes the inheritance of some of the Xamarin classes, certain member functions will be changed to `public`. If you override any of these functions, you will need to change those the access modifiers for those overrides to be `public` as well.
 
 > [!NOTE]
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to reload and rebuild the project when the Remapper is added for IntelliSense to correctly recognize the changes.
