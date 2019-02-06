@@ -71,7 +71,7 @@ These settings are added to a device configuration profile in Intune, and then a
     For example, if iOS 12.a is available on **January 1**, and **Delay visibility** is set to **5 days**, then iOS 12.a isn't shown as an available update on end user devices. On the **sixth day** following the release, that update is available, and all end users can install it.
 
     This setting applies to:  
-    iOS 11.3 and later versions.
+      - iOS 11.3 and later versions
 
 ## Configurations requiring supervision
 
