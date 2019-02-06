@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -59,17 +59,15 @@ You must also create an Exchange Online user account that is used by the Intune 
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-3. Choose **Intune** to open the Microsoft Intune dashboard. Choose **Conditional access**, and then under **Setup**, choose **Exchange service connector**.
+3. Choose **Intune** to open the Microsoft Intune dashboard. select **Exchange access**, and then under **Setup** select **Exchange online connector**.
 
-4.  On the **Conditional access - Exchange service connector** page, choose **Set Up Service to Service Connector**. 
-   
-     ![Image showing selecting the Set Up Service to Service Connector link](media/exchange_service_connector.png)
+4.  On the **Exchange access - Exchange online connector** page, choose **Set Up Service to Service Connector**. 
 
 The Service to Service Connector automatically configures and synchronizes your Exchange Online or new Exchange Online Dedicated environment.
 
 ## Validate your Exchange connection
 
-After you have successfully configured the Exchange Service to Service Connector, validate the Exchange Connector Server information on the **Conditional access - Exchange service connector** page.
+After you have successfully configured the Exchange Service to Service Connector, validate the Exchange Connector Server information on the **Exchange access - Exchange online connector** page.
 
 You can also check the **Connection status** and the time and date of the last successful synchronization attempt.
 
