@@ -80,12 +80,12 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.3 and later
 
-- **Allow Classroom to lock to an app and lock the device without prompting (supervised only)**: **Enable** allows teacher to lock apps or lock the device without prompting the student. **Not configured** (default) prevents teachers from locking apps or devices without prompting the student.
+- **Allow Classroom to lock to an app and lock the device without prompting (supervised only)**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Locking apps means the device can only access teacher specified apps. **Not configured** (default) prevents teachers from locking apps or devices using the Classroom app without prompting the student. 
 
   This feature applies to:  
   - iOS 11.0 and later
 
-- **Automatically join Classroom classes without prompting (supervised only)**: **Enable** automatically allows students to join a class without prompting the teacher. **Not configured** (default) prompts the teacher that students want to join the class.
+- **Automatically join Classroom classes without prompting (supervised only)**: **Enable** automatically allows students to join a class that is in the Classroom app without prompting the teacher. **Not configured** (default) prompts the teacher that students want to join a class that is in the Classroom app.
 
   This feature applies to:  
   - iOS 11.0 and later
