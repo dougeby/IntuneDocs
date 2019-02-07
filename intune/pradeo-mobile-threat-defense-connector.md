@@ -25,7 +25,7 @@ ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 --- 
 
 # Pradeo Mobile Threat Defense connector with Intune

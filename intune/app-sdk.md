@@ -17,7 +17,7 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune App SDK overview

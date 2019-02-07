@@ -23,7 +23,7 @@ ms.suite: ems
 search.appverid:
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # iOS device feature settings in Intune

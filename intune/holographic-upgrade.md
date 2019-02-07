@@ -22,7 +22,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Upgrade devices running Windows Holographic to Windows Holographic for Business

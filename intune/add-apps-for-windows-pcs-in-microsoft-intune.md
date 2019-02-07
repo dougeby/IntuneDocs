@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add apps for Windows PCs that run the Intune software client

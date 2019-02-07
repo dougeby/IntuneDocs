@@ -26,7 +26,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Submit errors to the right people for your managed macOS device

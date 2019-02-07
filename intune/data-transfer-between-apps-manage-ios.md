@@ -25,7 +25,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to manage data transfer between iOS apps in Microsoft Intune
