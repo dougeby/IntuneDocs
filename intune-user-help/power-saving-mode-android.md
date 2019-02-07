@@ -25,7 +25,7 @@ ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Outlook won't sync managed email when battery optimization for Android is turned on

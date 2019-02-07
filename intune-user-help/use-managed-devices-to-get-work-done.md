@@ -24,7 +24,7 @@ ms.reviewer: robstack
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Use managed devices to access work or school resources

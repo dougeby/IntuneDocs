@@ -25,7 +25,7 @@ ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Enrollment options for devices managed by Intune

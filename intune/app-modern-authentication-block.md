@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Block apps that do not use modern authentication (ADAL)

@@ -25,7 +25,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll your macOS device in Intune with the Company Portal app

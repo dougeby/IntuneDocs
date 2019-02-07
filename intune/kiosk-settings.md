@@ -22,7 +22,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune

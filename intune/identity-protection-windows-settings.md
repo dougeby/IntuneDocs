@@ -22,7 +22,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Windows 10 (and newer) device settings to enable Windows Hello for Business in Intune

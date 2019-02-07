@@ -26,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # How to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy

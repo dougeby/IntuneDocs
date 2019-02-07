@@ -25,7 +25,7 @@ ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune classic groups in the Azure portal
