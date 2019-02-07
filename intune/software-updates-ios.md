@@ -23,7 +23,7 @@ ms.technology:
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add iOS software update policies in Intune

@@ -26,7 +26,7 @@ ms.reviewer: aiwang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Installing Office 365 on your Windows 10 device
