@@ -24,7 +24,7 @@ ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # High-level architecture for Microsoft Intune

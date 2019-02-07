@@ -26,6 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll Windows devices in Intune by using the Windows Autopilot  

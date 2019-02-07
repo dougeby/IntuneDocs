@@ -22,7 +22,7 @@ ms.technology:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 # Intune Tenant Status page
 Use the Tenant Status page as a centralized hub to stay current on important details about your tenant, license availability and use, connector status, and important communications about the Intune service.  

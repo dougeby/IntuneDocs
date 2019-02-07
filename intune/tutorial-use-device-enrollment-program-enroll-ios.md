@@ -15,6 +15,7 @@ ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
+ms.collection: M365-identity-device-management
 ---
 
 # Tutorial: Use the Device Enrollment Program to enroll iOS devices in Intune
