@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Windows update settings for Intune  
 
-View the Windows 10 Update settings you can [configure and manage](windows-uupdate-for-business-configure.md) with Microsoft Intune.  
+View the Windows 10 Update settings you can [configure and manage](windows-update-for-business-configure.md) with Microsoft Intune.  
 
 When you configure settings for Windows 10 update rings in Intune, you're configuring the Windows Update settings.  When a Windows update setting has a Windows 10 version dependency, the version dependency is noted in the settings details.  
 
