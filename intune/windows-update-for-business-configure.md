@@ -167,73 +167,7 @@ The Azure classic portal also has a limited number of other Windows 10 updates s
 2. Delete the update settings in the classic portal. After you migrate to the Azure portal, and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values, there is a conflict. There isn't an easy way to know because the setting configured in the classic portal doesn't display in the Azure portal.  
 
 ## Next steps
-[Windows update settings supported by Intune](windows-update-settings.md)
+[Windows update settings supported by Intune](windows-update-settings.md)  
+
 [Intune compliance reports for updates](windows-update-compliance-reports.md)
 
-
-
-
-<!-- Moving out  
-
-## Update compliance reporting
-You can view update compliance in Intune or by using a free solution called Update Compliance.
-
-### Review update compliance in Intune 
-
-Review a policy report to view the deployment status for the Windows 10 update rings that you have configured.
-
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
-2. Select **Software updates** > **Overview**. You can see general information about the status of any update rings you assigned.
-3. Open one of the following reports:
-
-   **For all deployment rings**:  
-   1. On the **Software updates** > **Windows 10 Update Rings**
-   2. In the **Monitor section**, choose **Per update ring deployment state**.
-
-   **For specific deployment rings**:  
-   1. In **Software updates** > **Windows 10 Update Rings**, choose the deployment ring to review.
-   2. In the **Monitor** section, choose from the following reports to view more detailed information about the update ring:
-      - **Device status**
-      - **User status**
-
-### Review update compliance using OMS
-You can monitor Windows 10 update rollouts by using a free solution called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
-
-In Intune, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](custom-settings-windows-10.md).   
-
-The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-
-For example, you can use the following values in **Add or edit OMA-URI Setting**:
-
-- **Setting Name**: Windows Analytics Commercial ID
-- **Setting Description**: Configuring commercial ID for Windows Analytics solutions
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Data Type**: String
-- **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
-
-
-> [!NOTE]
-> For more information about MS DM Server, see [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
-
-## Pause updates
-You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality automatically expires and the device scans Windows Updates for applicable updates. Following this scan, you can pause the updates again.
-
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
-2. Select **Software updates** > **Windows 10 Update Rings**.
-3. In the list of update rings, choose the ring you want to pause, and then, choose **...** > **Pause Quality** > or **Pause Feature**, depending on the type of updates you want to pause.
-
-> [!IMPORTANT]
-> When you issue a pause command, devices receive this command the next time they check into the service. It's possible that before they check in, they might install a scheduled update.
-> Additionally, if a targeted device is turned off when you issue the pause command, when you turn it on, it might download and install scheduled updates before it checks in with Intune.
-
-## Uninstall the latest from Windows 10 software updates 
-If there's a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling triggers a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options:
-
-1. In Intune, select **Software updates**.
-2. Select **Windows 10 Update Rings** > select an existing update ring > **Uninstall**.
-
-> [!NOTE]
-> On Windows 10 machines, after the quality update is successfully rolled back, end-users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.
-
--->
