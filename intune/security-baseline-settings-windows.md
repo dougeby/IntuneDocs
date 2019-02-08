@@ -7,7 +7,7 @@ description: Windows security baseline settings suported by Intune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,6 +33,10 @@ ms.collection: M365-identity-device-management
 
 View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune.  
 
+> [!NOTE]  
+> The Windows security baseline settings are in Preview. While in Preview, the list of available settings, and order in which this content presents those settings, will vary with what is available in the portal.  
+>  
+> When the baseline settings are out of Preview, this content will update with the non-preview list of security baseline settings that Intune supports.  
 
 ## Above Lock  
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
@@ -170,11 +174,12 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   Turns on virtualization based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.
   - **Default**: Yes  
 
+<!-- not yet available 
 - **Enable secure boot with DMA**  
   Among the commands that follow, you can choose settings for Secure Boot and Secure Boot with DMA. In most situations, we recommend that you choose Secure Boot. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled. In contrast, with Secure Boot with DMA, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
   
   - **Default**: Yes  
-  
+  -->
 - **Launch system guard**  
   - **Default**: Enabled  
 
@@ -187,11 +192,11 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
     - **Remove matching hardware devices**  
       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      - **Default**: *No default configuration*
+      - **Default**: Yes
   
     - **Hardware device identifiers that are blocked**  </br>
       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      - **Default**: *No default configuration*  
+      - **Default**: Yes  
   
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or do not configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.
@@ -305,7 +310,7 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
-
+<!-- not yet available 
 - **Scan incoming mail messages**  
   Allows or disallows scanning of email.
   - **Default**: Disabled  
@@ -321,7 +326,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
 - **Signature update interval (in hours)**  
   Defender signature update interval in hours
   - **Default**: Disabled  
-  
+ -->
 - **Internet Explorer internet zone access to data sources**  
   This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to be loaded in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you do not configure this policy setting, users cannot load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
   - **Default**: Disable  
@@ -958,12 +963,12 @@ For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft
   This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication. If you enable this policy setting, the WinRM client does not use Digest authentication. If you disable or do not configure this policy setting, the WinRM client uses Digest authentication.
   - **Default**: Enabled
   
-- **Block client digest authentication**  
-  This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- **Unencrypted traffic**  
+  This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.  
   - **Default**: Disabled
   
-- **Block client digest authentication**  
-  TThis policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- **Client unencrypted traffic**  
+  This policy setting allows you to manage whether the Windows Remote Management (WinRM) client sends and receives unencrypted messages over the network. If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network. If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
   - **Default**: Disabled
   
 - **Client basic authentication**  
