@@ -423,7 +423,9 @@
     - name: Software updates
       items:
       - name: Windows Update for Business settings
-        href: windows-update-for-business-configure.md      
+        href: windows-update-for-business-configure.md    
+      - name: Windows Update compliance reports
+        href: windows-update-compliance-reports.md         
       - name: iOS update policies
         href: software-updates-ios.md
   - name: Manage apps
@@ -736,6 +738,8 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
+      - href: windows-update-settings.md
+        name: Windows update settings
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions
