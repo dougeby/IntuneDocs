@@ -194,8 +194,8 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 #### Device Security
 
-- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
-- **AntiSpyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
+- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
+- **AntiSpyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
 
 ### Windows Defender ATP
 
