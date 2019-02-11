@@ -155,9 +155,9 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 ### Before you start
 
 - Set up your internal applications through the Azure AD Application Proxy.
-    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#get-started). 
+    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
 - You must be using minimum version 1.2.0 of the Managed Browser app.
-- Users of the Managed Browser or Microsoft Edge app have an [Intune app protection policy]( app-protection-policy.md) assigned to the app.
+- Users of the Managed Browser or Microsoft Edge app have an [Intune app protection policy](app-protection-policy.md) assigned to the app.
 
     > [!NOTE]
     > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser and Microsoft Edge.
