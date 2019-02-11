@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Selectively wipe data using app protection policy access actions in Intune

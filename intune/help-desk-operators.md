@@ -23,6 +23,7 @@ ms.reviewer: sumitp
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 # Use the troubleshooting portal to help users at your company
 

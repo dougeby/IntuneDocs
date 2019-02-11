@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -24,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
+ms.collection: M365-identity-device-management
 ---
 
 # What's new in Microsoft Intune
@@ -48,6 +49,13 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+## Week of February 4, 2019
+
+### App management
+
+#### Intune macOS Company Portal Dark Mode <!-- 3300524 eeready -->
+The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors that reflect that mode.
+
 ## Week of January 21, 2019
 
 ### App management
@@ -290,7 +298,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 ### Role-based access control
 
 #### Scope tags for apps <!-- 1081941 -->
-You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Apps purchased using Apple Volume Purchase Program (VPP) cannot be assigned scope tags.  For more information, see [Use scope tags to filter policies](scope-tags.md).
+You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (but support will come in the future). For more information, see [Use scope tags to filter policies](scope-tags.md).
 
 
 

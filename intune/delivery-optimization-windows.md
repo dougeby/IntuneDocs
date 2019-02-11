@@ -21,7 +21,7 @@ ms.technology:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Windows 10 (and newer) delivery optimization settings in Microsoft Intune

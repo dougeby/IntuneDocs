@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/12/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,176 +23,151 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Manage software updates in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Windows as a Service is the way to update Windows 10 devices. With Windows 10, new Feature Updates and Quality Updates include the contents of all previous updates. As long as you've installed the latest update, you know your Windows 10 devices are up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
+Use Intune to define update rings that specify how and when Windows as a Service updates your Windows 10 devices. Update rings are policies you that you assign to groups of devices. By using update rings, you can create an update strategy that mirrors your business needs. For more information, see [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
-By using Windows Update for Business, you simplify the update management experience. You don’t need to approve individual updates for groups of devices. You can manage risk in your environments by configuring an update rollout strategy. And Windows Update makes sure that updates are installed at the right time. Microsoft Intune provides the ability to configure update settings on devices, and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. Use Intune to configure and manage **Windows 10 update rings**. An update ring includes a group of settings that configure when and how Windows 10 updates get installed. For example, you can configure the following settings:
+With Windows 10, new Feature Updates and Quality Updates include the contents of all previous updates. As long as you've installed the latest update, you know your Windows 10 devices are up-to-date. Unlike with previous versions of Windows, you now must install the entire update instead of part of an update.
 
-- **Windows 10 Servicing Channel**: Choose the servicing channel from which you want groups of devices to receive updates. The following channels are available: 
-  - Semi&#8208;Annual Channel
-  - Semi&#8208;Annual Channel (Targeted)
-  - Windows Insider &#8208; Fast
-  - Windows Insider &#8208; Slow
-  - Release Windows Insider 
-      
-  For details on the available servicing channels, see [Overview for Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Deferral Settings**: Configure update deferral settings to delay update installations for groups of devices. Use these settings to stage your update roll-out so you can review progress along the way.
-- **Pausing**: If there's an issue during the update rollout, you can postpone the update installation. 
-- **Maintenance window**: Configure the hours in which updates can be installed.
-- **Update type**: Choose the types of updates that get installed. For example, Quality Updates, Feature Updates, or drivers.
-- **Installation behavior**: Configures how the update gets installed. For example, does the device automatically restart after the installation?
-- **Peer downloading**: You choose to configure peer downloading. If configured, when a device has finished downloading an update, other devices can download the update from that device. This setting speeds up the download process.
 
-After you create update rings, you assign them to groups of devices. By using update rings, you can create an update strategy that mirrors your business needs. For more information, see [Manage updates using Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
+By using Windows Update for Business, you simplify the update management experience. You don’t need to approve individual updates for groups of devices. You can manage risk in your environments by configuring an update rollout strategy. Intune provides the ability to [configure update settings](windows-update-settings.md) on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. This collection of settings that configures when Windows 10 updates get installed is called a *Windows 10 update ring*.
 
-## Before you start
+Windows 10 update rings support [scope tags](scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
 
-- To update Windows 10 PCs, they must be running at least Windows 10 Pro with the Windows Anniversary update.
+## Prerequisites  
 
-- Windows Update supports the following Windows 10 versions:
+The following prerequisites must be met to use Windows updates for Windows 10 devices in Intune.  
+
+- Windows 10 PCs must run at least Windows 10 Pro with the Windows Anniversary update or later (version 1607 or later)
+- Windows Update supports the following Windows 10 editions:
   - Windows 10
   - Windows 10 Team (for Surface Hub devices)
-  - [Windows Holographic for Business](#windows-holographic-for-business-support)
+  - Windows Holographic for Business  
 
+    Windows Holographic for Business supports a subset of settings for Windows updates, including:
+    - **Automatic update behavior**
+    - **Microsoft product updates**
+    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options  
+
+    For more information, see [Manage Windows Holographic](windows-holographic-for-business.md)  
+  
   Devices running Windows 10 Mobile aren't supported.
 
-- On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to at least **Basic**.
+- On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to **Basic**, **Enhanced**, or **Full**.  
 
-    ![Windows setting for diagnostic and usage data](./media/telemetry-basic.png)
+  You can configure this setting manually or use an Intune device restriction profile for Windows 10 and later. To use the device restriction profile, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).  
 
-    You can configure this setting manually, or use an Intune profile for Windows 10 and later (**Device restrictions** > **Reporting and Telemetry** > Set **Share usage data** to at least **Basic**). For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).
-
-- The Azure classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If any of these settings are configured when you migrate to the Azure portal, we strongly recommend that you:
-
-  1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting isn't supported in the Azure portal because it's no longer applicable to the latest Windows 10 builds. You can configure the other settings, and other Windows 10 updates settings, when you create update rings.
-
-   > [!NOTE]
-   > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings are applied. If you migrate any of these settings, and edit the migrated policy from the Azure portal, these settings are removed from the policy.
-
-  2. Delete the update settings in the classic portal. After you migrate to the Azure portal, and add the same settings to an update ring, delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values, there is a conflict. There isn't an easy way to know because the setting configured in the classic portal isn't in the Azure portal.
+- If you use the Azure classic portal, [migrate your settings to the Azure portal](#migrate-update-settings-to-the-azure-portal).  
 
 ## Create and assign update rings
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
-2. Select **Software updates** > **Windows 10 Update Rings** > **Create**.
-3. Enter a name, a description (optional), and then choose **Configure**.
-4. In **Settings**, enter the following information:  
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
+3. Select **Software updates** > **Windows 10 Update Rings** > **Create**.
+4. Enter a name, a description (optional), and then choose **Configure**.
+5. In **Settings**, configure settings for your business needs. For information about the available settings, see [Windows update settings](windows-update-settings.md).  
+6. When done, select **OK**. In **Create Update Ring**, select **Create**. The new update ring is displayed in the list of update rings.
+7. To assign the ring, in the list of update rings, select a ring, and then on the \<ring name> tab, choose **Assignments**.
+8. Use the **Include** and **Exclude** tabs to define which groups this Ring is assigned to, and then select **Save** to complete the assignment.
 
-   **Update Settings**  
-   - **Servicing channel**: Set the channel from which the device receives Windows updates.
-   - **Microsoft product updates**: Choose to scan for app updates from Microsoft Update.
-   - **Windows drivers**: Choose to exclude Windows Update drivers during updates.
-   - **Quality update deferral period (days)**: Enter the number of days for which quality updates are deferred. You can defer receiving these Quality Updates up to 30 days from their release.
+## Manage your Windows 10 Update rings
+In the portal, you can select a Windows 10 Update Ring to open its **Overview** pane. From this pane you can view the rings assignment status and take additional actions to manage the ring. 
+### To view an updates rings Overview pane: 
+1. Sign in to the Azure portal.
+2. Navigate to **Intune** > **Software updates** > **Windows 10 Update Rings**.
+3. Select the update ring you want to view or manage.  
 
-     Quality Updates are typically fixes and improvements to existing Windows functionality, and are published the second Tuesday of every month. Quality Updates through Windows Update for Business only receive these updates (the 'B' release), although other updates may be released at any time by Microsoft. You can define if, and how long, you defer receiving Quality Updates after they're available on Windows Update. For more information, see [Deploy updates using Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
+In addition to viewing assignment status, you can select the following actions from the top of the Overview pane to manage the update ring:  
+- [Delete](#delete)  
+- [Pause](#pause)  
+- [Resume](#resume)  
+- [Extend](#extend)  
+- [Uninstall](#uninstall)  
 
-   - **Feature update deferral period (days)**: Enter the number of days for which Feature Updates are deferred. You can defer receiving Feature Updates up to 180 days from their release.
+![Available actions](./media/windows-update-for-business-configure/overview-actions.png)
 
-     Feature Updates are typically new features for Windows. After you configure the **Servicing channel** setting, you can define if, and how long, you defer receiving Feature Updates after they're available on Windows Update.
+### Delete  
+Select **Delete** to stop enforcing the settings of the selected Windows 10 update ring. Deleting a ring removes its configuration from Intune so that Intune no longer applies and enforces those settings.  
 
-     For example:
-     **If the Servicing channel is set to Semi-Annual Channel (Targeted), and the deferral period is 30 days**: Let's say that Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. The device doesn't receive the update until February - 30 days later.
+Deleting a ring from Intune doesn't modify the settings on devices that were assigned the update ring.  Instead, the device retains its current settings. This is because devices do not maintain a historical record of what settings were previously in place, and because the device might receive settings from additional update rings that remain active.  
 
-     **If the Servicing channel is set to Semi-Annual Channel, and the deferral period is 30 days**: Let's say the Feature Update X is first publicly available on Windows Update as a Semi-Annual Channel (Targeted) in January. Four months later, in April, Feature Update X is released to Semi-Annual Channel. The device receives the Feature Update 30 days following this Semi-Annual Channel release, and updates in May.  
-     
-   - **Set feature update uninstall period (2 - 60 days)**: Specifies the period a feature update can be uninstalled. 
-     
-     For more information about the Windows Update servicing model, see [Windows 10 - Release information](https://docs.microsoft.com/windows/windows-10/release-information).
+#### To delete a ring  
+1. While viewing the overview page for an Update Ring, select **Delete**.  
+2. Select **OK**.  
 
-   **User experience settings**
-   
-   - **Automatic update behavior**: Choose how automatic updates are installed, when to restart or reboot. For details, see  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+### Pause  
+Select **Pause** to prevent assigned devices from receiving Feature Updates or Quality Updates for up to 35 days from the time you pause the ring. After the maximum days have passed, pause functionality automatically expires and the device scans Windows Updates for applicable updates. Following this scan, you can pause the updates again. 
+If you resume a paused update ring, and then pause that ring again, the pause period resets to 35 days.  
 
-     A setting of *Reset to default* will restore the original auto update settings on Windows 10 machines that run the *October 2018 Update* or later.  
+ #### To pause a ring  
+1. While viewing the overview page for an Update Ring, select **Pause**.  
+2. Select either **Feature** or **Quality** to pause that type of update, and then select **OK**.  
+3. After pausing one update type, you can select Pause again to pause the other update type.  
 
-     - **Automatic behavior frequency**: If you select **Auto install and restart at scheduled time** for the update behavior, then this setting is shown. Use this setting to schedule when updates are installed, including the week, the day, and the time.
+When an update type is paused, the Overview pane for that ring displays how many days remain before that update type resumes.
 
-   - **Restart checks**: Enabled by default. When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.
+> [!IMPORTANT]  
+> After you issue a pause command, devices receive this command the next time they check into the service. It's possible that before they check in, they might install a scheduled update. Additionally, if a targeted device is turned off when you issue the pause command, when you turn it on, it might download and install scheduled updates before it checks in with Intune.
 
-   - **Block user from pausing Windows updates**: Allowed by default. Use this setting to block or allow your users to pause update installation from the *Settings* of their machines. 
-      
-   - **Delivery optimization download mode**: Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they cannot otherwise be modified. To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile. 
+### Resume  
+While an update ring is paused, you can select **Resume** to restore Feature and Quality updates for that ring to active operation. After you resume an update ring, you can pause that ring again.  
 
-5. When done, select **OK**. In **Create Update Ring**, select **Create**.
+#### To resume a ring  
+1. While viewing the overview page for a paused Update Ring, select **Resume**.  
+2. Select from the available options to resume either **Feature** or **Quality** updates, and then select **OK**.  
+3. After resuming one update type, you can select Resume again to resume the other update type.  
 
-The new update ring is displayed in the list of update rings.
+### Extend  
+While an update ring is paused, you can select **Extend** to reset the pause period for both Feature and Quality updates for that update ring to 35 days.  
 
-1. To assign the ring, in the list of update rings, select a ring, and then on the <*ring name*> tab, choose **Assignments**.
-2. On the next tab, choose **Select groups to include**, and then choose the groups to which you want to assign this ring.
-3. When finished, choose **Select** to complete the assignment.
+#### To Extend the pause period for a ring  
+1. While viewing the overview page for a paused Update Ring, select **Extend**. 
+2. Select from the available options to resume either **Feature** or **Quality** updates, and then select **OK**.  
+3. After extending the pause for one update type, you can select Extend again to extend the other update type.  
 
-## Update compliance reporting
-You can view update compliance in Intune or by using a free solution called Update Compliance.
+### Uninstall  
+An Intune administrator can use **Uninstall** to uninstall (roll back) the latest *feature* update or the latest *quality* update for an active or paused update ring. After uninstalling one type, you can then uninstall the other type. Intune does not support or manage the ability of users to uninstall updates.  
 
-### Review update compliance in Intune 
-<!-- 1352223 -->
-Review a policy report to view the deployment status for the Windows 10 update rings that you have configured.
+For Uninstall to be successful:  
+- A device must run the Windows 10 April 2018 update (version 1803) or later.  
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
-2. Select **Software updates** > **Overview**. You can see general information about the status of any update rings you assigned.
-3. Open one of the following reports:
+A device must have installed the latest update. Because updates are cumulative, devices that install the latest update will have the most recent feature and quality update. An example of when you might use this option is to roll back the last update should you discover a breaking issue on your Windows 10 machines.  
 
-   **For all deployment rings**:  
-   1. On the **Software updates** > **Windows 10 Update Rings**
-   2. In the **Monitor section**, choose **Per update ring deployment state**.
+Consider the following when you use Uninstall:  
+- Uninstalling a feature or quality update is only available for the servicing channel the device is on.  
 
-   **For specific deployment rings**:  
-   1. In **Software updates** > **Windows 10 Update Rings**, choose the deployment ring to review.
-   2. In the **Monitor** section, choose from the following reports to view more detailed information about the update ring:
-      - **Device status**
-      - **User status**
+- Using uninstall for Feature or Quality updates triggers a policy to restore the previous update on your Windows 10 machines.  
 
-### Review update compliance using OMS
-You can monitor Windows 10 update rollouts by using a free solution called Update Compliance. For details, see [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor). When you use this solution, you can deploy a commercial ID to any of your Intune managed Windows 10 devices for which you want to report update compliance.
+- On a Windows 10 device, after a quality update is successfully rolled back, end-users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.  
 
-In Intune, you can use the OMA-URI settings of a custom policy to configure the commercial ID. For details, see [Intune policy settings for Windows 10 devices in Microsoft Intune](custom-settings-windows-10.md).   
+- For Feature updates specifically, the time you can uninstall the feature update is limited from 2-60 days, as configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)**. You can't roll back a feature update thats been installed on a device after the feature update has been installed for longer than the configured uninstall period.  
 
-The OMA-URI (case sensitive) path for configuring the commercial ID is:
- ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+  For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they have removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command prior to exceeding the 20-day uninstall period.  
 
-For example, you can use the following values in **Add or edit OMA-URI Setting**:
+For more information about Windows Update policies, see [Update CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp) in the Windows client management documentation.  
 
-- **Setting Name**: Windows Analytics Commercial ID
-- **Setting Description**: Configuring commercial ID for Windows Analytics solutions
-- **OMA-URI** (case sensitive): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Data Type**: String
-- **Value**: <*Use the GUID shown on the Windows Telemetry tab in your OMS workspace*>
+#### To uninstall the latest Windows 10 update  
+1. While viewing the overview page for a paused Update Ring, select **Uninstall**.  
+2. Select from the available options to uninstall either **Feature** or **Quality** updates, and then select **OK**.  
+3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.  
 
-![OMA-URI Setting - Edit Row](./media/commID-edit.png)
+## Migrate update settings to the Azure portal  
+The Azure classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured when you migrate to the Azure portal, we strongly recommend that you do the following:  
 
-> [!NOTE]
-> For more information about MS DM Server, see [DMClient configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/dmclient-csp).
+1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting isn't supported in the Azure portal because it's no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.  
 
-## Pause updates
-You can pause a device from receiving Feature Updates or Quality Updates for a period of up to 35 days from the time you pause the updates. After the maximum days have passed, pause functionality automatically expires and the device scans Windows Updates for applicable updates. Following this scan, you can pause the updates again.
+   > [!NOTE]  
+   > Windows 10 updates settings created in the classic portal are not displayed in the Azure portal after migration. However, these settings are applied. If you migrate any of these settings, and edit the migrated policy from the Azure portal, these settings are removed from the policy.  
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
-2. Select **Software updates** > **Windows 10 Update Rings**.
-3. In the list of update rings, choose the ring you want to pause, and then, choose **...** > **Pause Quality** > or **Pause Feature**, depending on the type of updates you want to pause.
+2. Delete the update settings in the classic portal. After you migrate to the Azure portal, and add the same settings to an update ring, you must delete the settings in the classic portal to avoid any potential policy conflicts. For example, when the same setting is configured with different values, there is a conflict. There isn't an easy way to know because the setting configured in the classic portal doesn't display in the Azure portal.  
 
-> [!IMPORTANT]
-> When you issue a pause command, devices receive this command the next time they check into the service. It's possible that before they check in, they might install a scheduled update.
-> Additionally, if a targeted device is turned off when you issue the pause command, when you turn it on, it might download and install scheduled updates before it checks in with Intune.
+## Next steps
+[Windows update settings supported by Intune](windows-update-settings.md)  
 
-### Uninstall the latest from Windows 10 software updates 
-If there's a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling triggers a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options:
+[Intune compliance reports for updates](windows-update-compliance-reports.md)
 
-1. In Intune, select **Software updates**.
-2. Select **Windows 10 Update Rings** > select an existing update ring > **Uninstall**.
-
-> [!NOTE]
-> On Windows 10 machines, after the quality update is successfully rolled back, end-users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.
-
-## Windows Holographic for Business Support
-
-Windows Holographic for Business supports the following settings:
-
-- **Automatic update behavior**
-- **Microsoft product updates**
-- **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options

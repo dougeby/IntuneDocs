@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated
@@ -86,9 +86,9 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 1. After you've successfully signed in, you see the **Azure Dashboard**.
 
-1. Choose **All services** from the left menu, then type **Intune** in the text box filter.
+1. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-1. Choose **Intune**, you see the **Intune Dashboard**.
+1. Choose **Intune**, you see the **Intune Dashboard**.
 
 1. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
 

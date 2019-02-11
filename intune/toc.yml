@@ -54,8 +54,6 @@
     href: what-is-device-management.md
   - name: What is Intune for Education?
     href: introduction-intune-education.md      
-  - name: Navigating the Azure portal
-    href: get-started-azure.md  
   - name: High-level architecture
     href: high-level-architecture.md
   - name: Device lifecycle
@@ -425,7 +423,9 @@
     - name: Software updates
       items:
       - name: Windows Update for Business settings
-        href: windows-update-for-business-configure.md      
+        href: windows-update-for-business-configure.md    
+      - name: Windows Update compliance reports
+        href: windows-update-compliance-reports.md         
       - name: iOS update policies
         href: software-updates-ios.md
   - name: Manage apps
@@ -698,6 +698,10 @@
           href: wi-fi-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
+    - name: Security baselines
+      items:
+      - name: Windows security baseline settings
+        href: security-baseline-settings-windows.md
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings
@@ -734,6 +738,8 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
+      - href: windows-update-settings.md
+        name: Windows update settings
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions

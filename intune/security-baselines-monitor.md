@@ -4,8 +4,8 @@
 title: Check the success or failure of security baselines in Microsoft Intune - Azure | Microsoft Docs
 description: Check the error, conflict and success status when deploying security baselines to users and devices in Microsoft Intune MDM. See how to troubleshoot using client logs, and the report features in Intune.
 keywords:
-author: MandiOhlinger 
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -23,7 +23,7 @@ ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Monitor the security baseline and profile in Microsoft Intune

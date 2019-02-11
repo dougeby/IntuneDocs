@@ -25,7 +25,7 @@ ms.reviewer: shburbid
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Turn on your Windows Defender Firewall

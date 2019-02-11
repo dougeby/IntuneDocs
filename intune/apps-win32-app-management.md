@@ -17,6 +17,7 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Intune Standalone - Win32 app management

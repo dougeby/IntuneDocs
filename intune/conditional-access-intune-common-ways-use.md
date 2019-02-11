@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started; seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # What are common ways to use conditional access with Intune?
