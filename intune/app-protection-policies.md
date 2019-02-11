@@ -57,7 +57,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
 6. On the **Add a policy** blade, select **Configure required settings** to open **Settings**.
 
    There are three categories of policy settings:
-   - **Data relocation** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
+   - **Data protection** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
    - **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
    - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.
 
