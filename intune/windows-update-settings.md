@@ -43,7 +43,7 @@ Update settings control what bits a device will download, and when. Refer to the
 - **Windows reference documentation**: [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
 Set the channel (branch) from which the device receives Windows updates. Different channels can use different deferral periods before updates are delivered.  
 
-For example, the *Semi-Annual Channel (targeted)* has a six-month deferral. This means if you use this channel with no additional deferrals from this body of settings, the device installs the update six-months after its release.  
+For example, the *Semi-Annual Channel* has a six-month deferral. This means if you use this channel with no additional deferrals from this body of settings, the device installs the update six-months after its release.  
 
 Supported update channels:  
 
@@ -127,7 +127,7 @@ Refer to the Windows reference documentation for full disclose of the following 
     **Default**: 8 AM  
   
   - **Active hours end**: Specify an end time for suppressing reboots due to update installations.  
-    **Windows reference documentation**:  Update/ActiveHoursEnd  
+    **Windows reference documentation**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
     **Default**: 5 PM  
 
 - **Auto install and restart at maintenance time** - Updates download automatically and then install during Automatic Maintenance when the device isn't in use or running on battery power. When restart is required, the device restarts when not being used. (This is the default for unmanaged devices.)  
@@ -148,7 +148,7 @@ Refer to the Windows reference documentation for full disclose of the following 
   **Windows reference documentation**:  [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
   - **Automatic behavior frequency**: Use this setting to schedule when updates are installed, including the week, the day, and the time.  
-    **Default**: Every week  s
+    **Default**: Every week
 
   - **Scheduled install day**:  Specify on which day of the week you want updates to install.  
     **Default**: Any Day  
