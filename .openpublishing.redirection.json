@@ -5077,7 +5077,11 @@
 			"source_path": "intune/quickstart-create-policy.md",
 			"redirect_url": "/intune/quickstart-set-password-length-android",
 			"redirect_document_id": false
-		}		
-	   
+		},
+		{
+			"source_path": "intune/known-issues.md",
+			"redirect_url": "https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess",
+			"redirect_document_id": false	 
+		}			
 	]
 }
