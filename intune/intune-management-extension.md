@@ -56,13 +56,10 @@ The Intune management extension has the following prerequisites:
 1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
 2. Select **Device configuration** > **PowerShell scripts** > **Add**.
 3. Enter the following properties:
-
     - **Name**: Enter a name for the PowerShell script. 
     - **Description**: Enter a description for the PowerShell script. This setting is optional, but recommended. 
     - **Script location**: Browse to the PowerShell script. The script must be less than 200 KB (ASCII).
-
 4. Choose **Configure**, and enter the following properties:
-
     - **Run this script using the logged on credentials**: Select **Yes** to run the script with the user's credentials on the device. Choose **No** (default) to run the script in the system context. Select **Yes** unless the script is required to run in the system context.
     - **Enforce script signature check**: Select **Yes** if the script must be signed by a trusted publisher. Select **No** (default) if there isn't a requirement for the script to be signed. 
     - **Run script in 64-bit PowerShell host**: Select **Yes** to run the script in a 64-bit PowerShell (PS) host on a 64-bit client architecture. Select **No** (default) runs the script in a 32-bit PowerShell host.
@@ -75,7 +72,6 @@ The Intune management extension has the following prerequisites:
       | Yes | 64-bit | Runs script in 64-bit PS host for 64-bit architectures. When ran on 32-bit, the script runs in a 32-bit PS host. | Runs script in 32-bit PS host. If this setting changes to 64-bit, the script opens (it doesn't run) in a 64-bit PS host, and reports the results. When ran on 32-bit, the script runs in 32-bit PS host. |
 
     ![Add and use PowerShell scripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
-
 5. Select **OK** > **Create** to save the script.
 
 ## Assign the policy
