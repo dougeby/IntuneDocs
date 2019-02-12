@@ -25,9 +25,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
-# The early edition for Microsoft Intune - January 2019
+# The early edition for Microsoft Intune - February 2019
 
 > [!Note]
 > NDA notification: The following changes are under development for Intune. This information is shared under NDA on a very limited basis. Do not post any of this information on social media or public websites such as Twitter, UserVoice, Reddit, and so on. 

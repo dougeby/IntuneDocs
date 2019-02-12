@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/31/2017
+ms.date: 02/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # App-based conditional access with Intune
@@ -72,13 +72,13 @@ In this example, the admin has applied app protection policies to the Outlook ap
 
 3. The broker app gets installed on the device.
 
-4. The broker app starts the Azure AD registration process which creates a device record in Azure AD. This is not the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
+4. The broker app starts the Azure AD registration process, which creates a device record in Azure AD. This isn't the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
 
-5. The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized to be used by the user.
+5. The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized for use by the user.
 
 6. The broker app sends the App Client ID to Azure AD as part of the user authentication process to check if it’s in the policy approved list.
 
-7. Azure AD allows the user to authenticate and use the app based on the policy approved list. If the app is not on the list, Azure AD denies access to the app.
+7. Azure AD allows the user to authenticate and use the app based on the policy approved list. If the app isn't on the list, Azure AD denies access to the app.
 
 8. The Outlook app communicates with Outlook Cloud Service to initiate communication with Exchange Online.
 

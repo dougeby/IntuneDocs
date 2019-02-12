@@ -23,7 +23,7 @@ ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Create a Windows 10 security baseline in Intune

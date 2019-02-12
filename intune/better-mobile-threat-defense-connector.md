@@ -25,7 +25,7 @@ ms.assetid:
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 --- 
 
 # Better Mobile Threat Defense connector with Intune

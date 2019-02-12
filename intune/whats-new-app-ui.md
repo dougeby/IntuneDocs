@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 # UI updates for Intune end-user apps
 Learn what updates have been made to the UI for apps that your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
@@ -35,7 +35,7 @@ Learn what updates have been made to the UI for apps that your end users will se
 ## Week of November 12, 2018
 
 ### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
-End users will now be able to trigger app and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
+End users will now be able to trigger app and device actions in the Windows Company Portal [using keyboard shortcuts (accelerators)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
 
 ## Week of October 22, 2018
 

@@ -25,7 +25,7 @@ ms.reviewer: mghadial
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot mobile application management
@@ -40,9 +40,9 @@ These are common issues an IT administrator may experience when using Intune app
 
 | Issue | Description | Resolution |
 | -- | -- | -- |
-| Policy not applied to Skype for Business | App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices. | Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype. |
+| Policy not applied to Skype for Business | App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices. | Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype. |
 | Office app policy not applied | App protection policies are not applying to any [supported Office App](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) for any user. | Confirm that the user is licensed for Intune and the Office apps are targeted by a deployed app protection policy. It can take up to 8 hours for a newly deployed app protection policy to be applied. |
-| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure Portal. | The following user roles have access to the Azure Portal: <ul><li>Global administrator, which you can set up in the [Office Portal](http://portal.office.com/)</li><li>Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
+| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure Portal. | The following user roles have access to the Azure Portal: <ul><li>Global administrator, which you can set up in the [Office Portal](https://portal.office.com/)</li><li>Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
 |User accounts missing from app protection policy reports | Admin console reports do not show user accounts to which app protection policy was recently deployed. | If a user is newly targeted by an app protection policy, it can take up to 24 hours for that user to show up in reports as a targeted user. |
 | Policy changes not working | Changes and updates to app protection policy can take up to 8 hours to apply. | If applicable, the end-user can log out of the app and log back in to force sync with service. |
 | App protection policy not working with DEP | App protection policy is not applying to Apple DEP devices. | Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP. <br><br>Refer to [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md) for more information on iOS DEP enrollment.|

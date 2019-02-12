@@ -23,13 +23,15 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Configure the Exchange service connector for Intune and Exchange Online
 This article shows you how to connect the Microsoft Intune service to Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager.
 
 With the **Service to Service Connector** you can manage both Exchange ActiveSync (EAS) and Intune managed devices from a single administrative console.  The connector is not required to enable Conditional Access for Exchange Online.
+
+When planning a rollout of Conditional Access, it is often important to understand which users and number of user will have the new experience. The Office 365 Admin Center provides this in the form of an Exchange Online email app usage report as part of the Activity Reports feature of that portal. These reports can be used to understand mobile email adoption in your environment before and after the deployment of Conditional Access.
 
 ## Service to Service Connector requirements
 The **Service to Service Connector** supports only Exchange Online or Exchange Online Dedicated and has no requirements for an on-premises infrastructure. 

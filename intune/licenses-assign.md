@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Assign licenses to users so they can enroll devices in Intune

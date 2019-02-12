@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Manage PowerShell scripts in Intune for Windows 10 devices
@@ -51,7 +51,7 @@ The Intune management extension has the following prerequisites:
 
 1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
 2. Select **Device configuration** > **PowerShell scripts** > **Add**.
-3. Enter a **Name** and **Description** for the PowerShell script. For **Script location**, browse to the PowerShell script. The script must be less than 200 KB (ASCII) or 100 KB (Unicode) in size.
+3. Enter a **Name** and **Description** for the PowerShell script. For **Script location**, browse to the PowerShell script. The script must not be larger than 200 KB in size.
 4. Choose **Configure**. Then choose to run the script with the user's credentials on the device (**Yes**), or system context (**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
   ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
 5. Choose if the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 
