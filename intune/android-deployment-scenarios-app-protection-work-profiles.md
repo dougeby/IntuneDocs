@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -139,3 +139,4 @@ For example, customers in or have users in China can't use Android device manage
 Using Intune, both APP-WE and Android Enterprise work profiles are available for your Android BYOD program. To choose APP-WE or work profiles depends upon your business and usage requirements. In summary, use work profiles if you need MDM activities on managed devices, such as certificate deployment, app push, and so on. Use APP-WE if you don’t want or can’t manage devices, and are using only Intune APP-enabled apps.
 
 ## Next steps
+[Start using app protection policies](app-protection-policy.md), or [enroll your devices](android-enroll.md).
