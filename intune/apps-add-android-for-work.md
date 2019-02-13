@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Assign Managed Google Play apps to Android enterprise devices 
+title: Assign Managed Google Play apps to Android enterprise devices
 titlesuffix: Microsoft Intune
 description: Understand how to synchronize and assign apps to Android enterprise devices from the Managed Google Play store.
 keywords:
@@ -45,8 +45,8 @@ Make sure you have configured Intune and Android work profiles to work together 
 >[!NOTE]
 >When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser.
 
-## Managed Google Play app type 
-The **managed Google Play** app type will allow you to specifically add [Managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate. 
+## Managed Google Play app type
+The **managed Google Play** app type will allow you to specifically add [Managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.
 
 > [!NOTE]
 > If you prefer to synchronize a Managed Google Play app with Intune, see [Synchronize a Managed Google Play app with Intune](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
@@ -59,11 +59,12 @@ The **managed Google Play** app type will allow you to specifically add [Managed
 3. In the **Intune** pane, select **Client apps** > **Apps**.
 5. In the **Apps** pane, select **Add**.
 6. In the **App type** dropdown box, select **Managed Google Play**.
-7. Select **Managed Google Play - Approve apps** to serach for approved Managed Google Play apps.
-8. Click on each app that you want to include. Then, c
-9. Click **Approve** to approve the Managed Google Play app and click **Approve** to accept the app permissions. 
-10. Click **OK** to include the app(s).
-11. Click **Add** on the **App app** pane to sync with the Managed Google Play servcie.
+7. Select **Managed Google Play - Approve** to open the managed Google Play catalog.
+8. Use the search box to searchfor apps that you want to include.
+9. Click **Approve** to approve the app in managed Google Play and click **Approve** to accept the app permissions.
+10. Select **Keep approved when app requests new permissions** in the Approval Settings window and then click **Save**. If you do not choose this option, you will need to manually approve any new permissions if the app developer publishes an update.  This will cause installations and updates of the app to stop until permissions are approved. For this reason, it is recommended to select the option to automatically approve new permissions. 
+11. Click **OK** to include the app(s) you have approved.
+12. Click **Sync** on the **App app** pane to sync with the Managed Google Play service.
 
 ## Synchronize a Managed Google Play app with Intune (Alternative)
 If you prefer to synchronize a Managed Google Play app with Intune rather than adding it directly using Intune, use the following steps.
@@ -79,8 +80,8 @@ If you prefer to synchronize a Managed Google Play app with Intune rather than a
     In the following example, the Microsoft Excel app has been chosen.
 
     ![The Approve button in the Managed Google Play store](media/approve.png)
-    
-   A window for the app opens asking you to give permissions for the app to perform various operations. 
+
+   A window for the app opens asking you to give permissions for the app to perform various operations.
 
 4. Select **Approve** to accept the app permissions and continue.
 
@@ -90,7 +91,7 @@ If you prefer to synchronize a Managed Google Play app with Intune rather than a
 
     ![Options for handling new app permission requests](media/approve-app-settings.png)
 
-    The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
+    The app is approved, and it is displayed in your IT admin console. Next, you can [sync the Android work profile app with Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune).
 
 ### Sync a Managed Google Play app with Intune
 
@@ -125,7 +126,7 @@ Periodically visit the managed Google Play console to check for new permissions.
 3. Select the **Updates** tab, and check to see whether any apps require an update.  
     Any listed apps require new permissions and are not assigned until they are applied.
 
-Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis. 
+Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis.
 
 ## Working with a line-of-business app from the Managed Google Play store
 
@@ -143,10 +144,9 @@ Alternatively, you can configure Google Play to automatically reapprove app perm
 5. In the **Apps** node of the store, verify that the app you've published is displayed.  
     The app is automatically approved to be synchronized with Intune.
 
-## Delete Managed Google Play apps 
+## Delete Managed Google Play apps
 When necessary, you can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
 
 ## Next steps
 
-- [Assign apps to groups](apps-deploy.md) 
-
+- [Assign apps to groups](apps-deploy.md)
