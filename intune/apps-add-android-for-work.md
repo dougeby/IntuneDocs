@@ -60,7 +60,7 @@ The **managed Google Play** app type will allow you to specifically add [Managed
 5. In the **Apps** pane, select **Add**.
 6. In the **App type** dropdown box, select **Managed Google Play**.
 7. Select **Managed Google Play - Approve** to open the managed Google Play catalog.
-8. Use the search box to searchfor apps that you want to include.
+8. Use the search box to search for apps that you want to include.
 9. Click **Approve** to approve the app in managed Google Play and click **Approve** to accept the app permissions.
 10. Select **Keep approved when app requests new permissions** in the Approval Settings window and then click **Save**. If you do not choose this option, you will need to manually approve any new permissions if the app developer publishes an update.  This will cause installations and updates of the app to stop until permissions are approved. For this reason, it is recommended to select the option to automatically approve new permissions. 
 11. Click **OK** to include the app(s) you have approved.
