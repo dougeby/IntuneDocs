@@ -83,8 +83,7 @@ Work profiles are the core Android Enterprise deployment scenario and the only s
 
 This feature applies to:
 
-- Android 5.X
-- Android 6.0 and later
+- Android 5.0 and later devices with Google Mobile Services
 
 A work profile includes the following features:
 
@@ -118,9 +117,9 @@ For more information, see [deploy Outlook for iOS and Android app configuration 
 
 There are several enterprise mobility scenarios where using Intune APP is the best recommendation.
 
-#### Older devices running Android 4.4-5.0 are being used
+#### Older devices running Android 4.4-5.1 are being used
 
-Officially, any Android device 5.0 or above supports work profiles, and is eligible to be managed in that way. However, Android 5.0 and 5.1 devices from some OEMs don't support work profiles.
+Officially, any Android device 5.0 or above with Google Mobile Services supports work profiles, and is eligible to be managed in that way. However, some Android 5.0 and 5.1 devices from some OEMs don't support work profiles.
 
 If using versions that don't support work profiles, and to ensure DLP for organization data on devices, you must use Intune APP features.
 
