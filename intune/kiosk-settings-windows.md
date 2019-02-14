@@ -60,7 +60,7 @@ Runs only one app on the device.
 
 - **Application type**: Select the application type. Your options:
 
-  - **Add Microsoft Edge browser**: Select **Microsoft Edge browser**, and choose the **kiosk mode type**:
+  - **Add Microsoft Edge browser**: Select **Microsoft Edge browser**, and choose the **Edge kiosk mode type**:
 
     - **Digital/Interactive signage**: Opens a URL full screen, and only shows the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
     - **Public browsing (InPrivate)**: Runs a limited multi-tab version of Microsoft Edge. Users can browse publically or end their browsing session.
