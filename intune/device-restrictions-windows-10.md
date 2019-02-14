@@ -144,56 +144,6 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
 - **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
 
-## Kiosk (Preview) - Obsolete
-
-These settings are read-only, and can't be changed. To configure kiosk mode, see [Kiosk settings in Windows 10 and later](kiosk-settings.md).
-
-A kiosk device typically runs one app, or a specific set of apps. Users are prevented from accessing any features or functions on the device.
-
-- **Kiosk mode**: Identifies the type of kiosk mode supported by the policy. Options include:
-
-  - **Not Configured** (default): The policy doesn't enable kiosk mode on the device.
-  - **Single app kiosk**: The profile enables the device to only run one app. When the user signs in, a specific app starts. This mode also restricts the user from opening new apps, or changing the running app.
-  - **Multi-app kiosk**: The profile enables the device to run many apps. Only the apps you add are available to the user. The benefit of a multi-app kiosk, or fixed-purpose device, is to provide an easy-to-understand experience for individuals by only accessing apps they need, and removing from their view the apps they don’t need.
-
-#### Single app kiosks
-
-Enter the following settings:
-
-- **User account**: Enter the local (to the device) user account, an AD domain account, or an Azure AD account associated with the kiosk app.
-  - Local account: Enter as `devicename\accountname`, `.\accountname`, or `accountname`
-  - Domain account: Enter as `domain\accountname`
-  - Azure AD account: Enter as `AzureAD\emailaddress`. Be sure to enter "AzureAD", as it’s a fixed domain name. Then, follow with the Azure AD email address. For example, enter `AzureAD\user@contoso.onmicrosoft.com`.
-
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. If using an Azure AD account for kiosk mode, be sure to enter `AzureAD\user@yourorganization.com`.
-
-- **Application user model ID (AUMID) of app**: Enter the AUMID of the kiosk app. To learn more, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-#### Multi-app kiosks
-
-[Multi-app kiosks](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) use a kiosk configuration that lists the allowed apps, and other settings. 
-
-Use the **Add** button to create a kiosk configuration (or select an existing configuration). Then, enter the following settings:
-
-- **Kiosk configuration name**: Enter a friendly name used to identify the configuration.
-
-- **Kiosk apps**: Enter the apps that are available on the Start menu. The apps you add are the only apps the user can open.
-
-  - **App Type**: Choose the type of the kiosk app:
-    - **Win32 App**: A traditional desktop app. You need the fully qualified pathname of the executable, with respect to the device.
-    - **UWP App**: A Universal Windows app. You need the [AUMID for the app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-  - **Identifier**: Enter the fully qualified pathname for the executable file (Win32 apps), or the [app's AUMID](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP apps).
-
-- **Taskbar**: Choose to **Enable** (show) the taskbar, or keep it **Not configured** (hidden) on the kiosk.
-
-- **Start menu layout**: Enter an XML file that describes how the apps appear on the Start menu. [Customize and export Start layout](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) provides some guidance, and sample XML.
-
-  [Create a Windows 10 kiosk that runs apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) provides more details on using and creating XML files.
-
-- **Assigned users**: Add one or more user accounts that can use the apps you add. When the account signs in, only the apps defined in the configuration are available. The account may be local to the device or an Azure AD account associated with the kiosk app.
-
-    For kiosks in public-facing environments with auto logon enabled, a user type with the least privilege (such as the local standard user account) should be used. To configure an Azure Active Directory (AD) account for kiosk mode, use the `domain\user@tenant.com` format.
 
 ## Locked screen experience
 
@@ -217,18 +167,18 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 The available settings change depending on what you choose. Your options:
 
 - **No** (default): Microsoft Edge isn't running in kiosk mode. All Microsoft Edge settings are available for you to change and configure.
-- **Digital/Interactive signage (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
-- **InPrivate Public browsing (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Runs a limited multi-tab version of Microsoft Edge.
-- **Normal mode (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a full-version of Microsoft Edge with all browsing features.
-- **Public browsing (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a multi-tab version of Microsoft Edge InPrivate with a tailored experience for kiosks that run in full-screen mode.
+- **Digital/Interactive signage (single app kiosk)**: Filters Edge settings that are applicable for Digital/Interactive signage Edge Kiosk mode for use only on Windows 10 single-app kiosks. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
+- **InPrivate Public browsing (single app kiosk)**: Filters Edge settings that are applicable for InPrivate Public Browsing Edge Kiosk mode for use on Windows 10 single-app kiosks. Runs a multi-tab version of Microsoft Edge.
+- **Normal mode (multi-app kiosk)**: Filters Edge settings that are applicable for Normal Edge Kiosk mode. Runs a full-version of Microsoft Edge with all browsing features.
+- **Public browsing (multi-app kiosk)**: Filters Edge settings that are applicable for Public browsing on a Windows 10 multi-app kiosk.  Runs a multi-tab version of Microsoft Edge InPrivate.
 
 > [!TIP]
 > For more information on what these options do, see [Microsoft Edge kiosk mode configuration types](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 This device restrictions profile is directly related to the kiosk profile you create using the [Windows kiosk settings](kiosk-settings-windows.md). To summarize:
 
-1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. This profile runs the device in the kiosk mode you chose.
-2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same kiosk mode type as your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
+1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. Select Microsoft Edge as the application and set the Edge Kiosk Mode in the Kiosk profile.
+2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same Edge kiosk mode type as selected in your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
 
     [Supported kiosk mode settings](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is a great resource.
 
