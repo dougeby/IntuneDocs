@@ -58,9 +58,6 @@ You'll be able to rename an enrolled Windows 10 device (RS4 or later). To do, ch
 ### Assign SCEP certificates to a userless macOS device    <!-- 2340521   -->
 You'll be able to assign Simple Certificate Enrollment Protocol (SCEP) certificates to a userless macOS device, and associate the certificate with Wi-Fi or VPN profiles. This expands on the existing support we already have to [assign certificates to userless devices that run Windows, iOS, and Android](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
-### Find out which devices support eSIM <!-- 2432018 -->
-There will be a new **eSIM Inventory** field on the Hardware page for devices. To see the filed, choose **Intune** > **Devices** > choose a device > **Hardware**.
-
 ### Intune conditional access UI update   <!-- 2432313  -->
 We're making improvements to the UI for conditional access in the Intune console. These include:
 - Replace the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for conditional access which remains an Azure AD technology.
