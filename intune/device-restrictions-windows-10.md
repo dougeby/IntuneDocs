@@ -217,18 +217,18 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 The available settings change depending on what you choose. Your options:
 
 - **No** (default): Microsoft Edge isn't running in kiosk mode. All Microsoft Edge settings are available for you to change and configure.
-- **Digital/Interactive signage (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
-- **InPrivate Public browsing (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Runs a limited multi-tab version of Microsoft Edge.
-- **Normal mode (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a full-version of Microsoft Edge with all browsing features.
-- **Public browsing (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a multi-tab version of Microsoft Edge InPrivate with a tailored experience for kiosks that run in full-screen mode.
+- **Digital/Interactive signage (single app kiosk)**: Filters Edge settings that are applicable for Digital/Interactive signage Edge Kiosk mode for use only on Windows 10 single-app kiosks. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
+- **InPrivate Public browsing (single app kiosk)**: Filters Edge settings that are applicable for InPrivate Public Browsing Edge Kiosk mode for use on Windows 10 single-app kiosks. Runs a multi-tab version of Microsoft Edge.
+- **Normal mode (multi-app kiosk)**: Filters Edge settings that are applicable for Normal Edge Kiosk mode. Runs a full-version of Microsoft Edge with all browsing features.
+- **Public browsing (multi-app kiosk)**: Filters Edge settings that are applicable for Public browsing on a Windows 10 multi-app kiosk.  Runs a multi-tab version of Microsoft Edge InPrivate.
 
 > [!TIP]
 > For more information on what these options do, see [Microsoft Edge kiosk mode configuration types](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 This device restrictions profile is directly related to the kiosk profile you create using the [Windows kiosk settings](kiosk-settings-windows.md). To summarize:
 
-1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. This profile runs the device in the kiosk mode you chose.
-2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same kiosk mode type as your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
+1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. Select Microsoft Edge as the application and set the Edge Kiosk Mode in the Kiosk profile.
+2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same Edge kiosk mode type as selected in your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
 
     [Supported kiosk mode settings](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is a great resource.
 
