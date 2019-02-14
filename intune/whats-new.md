@@ -258,6 +258,7 @@ To see these settings, go to [iOS device restrictions](device-restrictions-ios.m
 - Suggests skip starting tutorials and hints for apps that are opened the first time​.
 - Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more​.
 ​
+
 To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).​
 
 #### Android enterprise device owner devices can use Always On VPN connections <!-- 3202194 -->
