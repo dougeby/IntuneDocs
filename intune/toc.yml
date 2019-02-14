@@ -228,6 +228,45 @@
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Manage devices
+    href: device-management.md
+    items:
+    - name: Device management capabilities
+      href: device-management-capabilities.md
+    - name: Bypass activation lock
+      href: device-activation-lock-bypass.md
+    - name: Manage Windows Fresh Start
+      href: device-fresh-start.md
+    - name: Locate lost iOS device
+      href: device-locate.md
+    - name: Enable iOS lost mode
+      href: device-lost-mode.md
+    - name: Turn on iOS supervised mode
+      href: device-supervised-mode.md
+    - name: Lock device
+      href: device-remote-lock.md
+    - name: Reset passcode
+      href: device-passcode-reset.md
+    - name: Restart device
+      href: device-restart.md
+    - name: Logout current user
+      href: device-logout-user.md
+    - name: Remove user
+      href: device-remove-user.md
+    - name: Erase device
+      href: device-erase.md
+    - name: Remote control mobile devices
+      href: device-profile-android-teamviewer.md
+    - name: Windows 10 PIN reset
+      href: device-windows-pin-reset.md
+    - name: Install Exchange service connector
+      href: exchange-service-connector-configure.md
+    - name: Synchronize device
+      href: device-sync.md
+    - name: Examine device inventory
+      href: device-inventory.md
+    - name: Remove devices
+      href: devices-wipe.md
   - name: Set device compliance
     items:
     - name: Compliance overview
