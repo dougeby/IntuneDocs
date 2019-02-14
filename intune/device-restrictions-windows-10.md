@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/13/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,7 +36,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Before you begin
 
-[Create a device configuration profile](device-restrictions-configure.md).
+[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## App Store
 
@@ -212,6 +212,31 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 
 ## Microsoft Edge Browser
 
+### Use Microsoft Edge kiosk mode
+
+The available settings change depending on what you choose. Your options:
+
+- **No** (default): Microsoft Edge isn't running in kiosk mode. All Microsoft Edge settings are available for you to change and configure.
+- **Digital/Interactive signage (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
+- **InPrivate Public browsing (single app kiosk)**: Enables kiosk mode to run only the Microsoft Edge app. Runs a limited multi-tab version of Microsoft Edge.
+- **Normal mode (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a full-version of Microsoft Edge with all browsing features.
+- **Public browsing (multi-app kiosk)**: Enables kiosk mode on device that can run Microsoft Edge, and other apps. Runs a multi-tab version of Microsoft Edge InPrivate with a tailored experience for kiosks that run in full-screen mode.
+
+> [!TIP]
+> For more information on what these options do, see [Microsoft Edge kiosk mode configuration types](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+
+This device restrictions profile is directly related to the kiosk profile you create using the [Windows kiosk settings](kiosk-settings-windows.md). To summarize:
+
+1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. This profile runs the device in the kiosk mode you chose.
+2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same kiosk mode type as your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
+
+    [Supported kiosk mode settings](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is a great resource.
+
+> [!IMPORTANT] 
+> Be sure to assign this Microsoft Edge profile to the same devices as your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)).
+
+CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+
 ### Start experience
 
 - **Start Microsoft Edge with**: Choose which pages open when Microsoft Edge starts. Your options:
@@ -230,6 +255,12 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
 - **User can change Home button**: **Allow** lets users change the home button. The user's changes override any administrator settings to the home button.​ **Not configured** uses the OS default behavior on the device, which may block users from changing how administrator configured the home button.
 - **Show First Run Experience page**: **Block** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, like those enrolled in zero emissions configurations, to block this page. **Not configured** shows the introduction page.
   - **First Run Experience URL**: Enter the page URL to show the first time a user runs Microsoft Edge (Windows 10 Mobile only).
+- **Refresh browser after idle time**: Enter the number of idle minutes until the browser is refreshed, from 0-1440 minutes. Default is `5` minutes. When set to `0` (zero), the browser doesn't refresh after being idle.
+
+  This setting is only available when running in [InPrivate Public browsing (single-app kiosk)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
+
 - **Pop-ups**: Choose **Block** to stop pop-up windows in the browser. Applies to Windows 10 desktop only. **Not configured** allows pop-ups in the web browser.
 - **Send intranet traffic to Internet Explorer**: **Allow** lets users open intranet websites in Internet Explorer instead of Microsoft Edge (Windows 10 desktop only). **Not configured** allows users to use Microsoft Edge.
 - **Enterprise mode site list location**: Enter the URL that includes a list of web sites that open in Enterprise mode. Users can't change this list. Applies to Windows 10 desktop only.
@@ -261,6 +292,11 @@ Use the **Add** button to create a kiosk configuration (or select an existing co
   - Yahoo
   - Custom value
 - **Search suggestions**: **Not configured** lets your search engine suggest sites as you type search phrases in the address bar. **Block** prevents this feature.
+- **Allow changes to search engine**: **Yes** (default) allows users to add new search engines, or change the default search engine in Microsoft Edge. Choose **No** to prevent users from customizing the search engine.
+
+  This setting is only available when running in [Normal mode (multi-app kiosk)](#use-microsoft-edge-kiosk-mode).
+
+  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
 ### Privacy and security
 
