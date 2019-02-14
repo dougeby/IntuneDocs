@@ -251,7 +251,9 @@ To see these settings, go to [iOS device restrictions](device-restrictions-ios.m
 
 #### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->
 ​This update includes several new features on Android Enterprise devices when running as device owner. To use these features, go to **Device Configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Android Enterprise** > In **Profile type**, choose **Device owner only** > **Device Restrictions**.​
+
 ​New features include: ​
+
 ​- Disable system notifications from showing, including incoming calls, system alerts, system errors, and more​
 - Suggests skip starting tutorials and hints for apps that are opened the first time​
 - Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more​
