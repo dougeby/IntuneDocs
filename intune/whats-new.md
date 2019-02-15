@@ -48,7 +48,15 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->     
+-->    
+ 
+## Week of February 18, 2019
+
+### Monitor
+
+#### Power BI Compliance app <!-- 1455231 doc-work-item -->
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a Power BI Pro license to share reports.* 
+
 ## Week of February 4, 2019
 
 ### App management
