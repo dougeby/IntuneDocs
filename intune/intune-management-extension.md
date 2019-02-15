@@ -35,9 +35,9 @@ Use the Intune management extension to upload PowerShell scripts in Intune to ru
 
 End-user computing is going through a digital transformation. Classic, traditional IT focuses on a single device platform, business-owned devices, users that work from the office, and a variety of manual, reactive IT processes. The modern workplace uses many platforms that are user and business owned, allows users to work from anywhere, and provides automated and proactive IT processes.
 
-MDM services, such as Microsoft Intune, can manage mobile and desktop devices running Windows 10. The built-in Windows 10 management client communicates with Intune to run enterprise management tasks. There are some tasks that you might need, such as advanced device configuration, troubleshooting, and legacy Win32 app management that's currently not available in Windows 10 MDM. For these capabilities, you can run the Intune software client on your Windows 10 devices. [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md) is a great resource.
+MDM services, such as Microsoft Intune, can manage mobile and desktop devices running Windows 10. The built-in Windows 10 management client communicates with Intune to run enterprise management tasks. There are some tasks that you might need, such as advanced device configuration and troubleshooting. For Win32 app management, you can use the [Win32 app management](apps-win32-app-management.md) feature on your Windows 10 devices.
 
-The Intune management extension supplements the in-box Windows 10 MDM features. You can create PowerShell scripts to run on the Windows 10 devices. For example, you can create a PowerShell script that installs a legacy Win32 app, uploads the script to Intune, assigns the script to an Azure Active Directory (AD) group, and runs the script. You can then monitor the run status of the script from start to finish.
+The Intune management extension supplements the in-box Windows 10 MDM features. You can create PowerShell scripts to run on the Windows 10 devices. For example, you can create a PowerShell script that does advanced device configurations, uploads the script to Intune, assigns the script to an Azure Active Directory (AD) group, and runs the script. You can then monitor the run status of the script from start to finish.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ The Intune management extension has the following prerequisites:
 
 1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
 2. Select **Device configuration** > **PowerShell scripts** > **Add**.
-3. Enter a **Name** and **Description** for the PowerShell script. For **Script location**, browse to the PowerShell script. The script must be less than 200 KB (ASCII) or 100 KB (Unicode) in size.
+3. Enter a **Name** and **Description** for the PowerShell script. For **Script location**, browse to the PowerShell script. The script must not be larger than 200 KB in size.
 4. Choose **Configure**. Then choose to run the script with the user's credentials on the device (**Yes**), or system context (**No**). By default, the script runs in the system context. Select **Yes** unless the script is required to run in the system context. 
   ![Add PowerShell script pane](./media/mgmt-extension-add-script.png)
 5. Choose if the script must be signed by a trusted publisher (**Yes**). By default, there is no requirement for the script to be signed. 

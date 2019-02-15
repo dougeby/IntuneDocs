@@ -91,7 +91,6 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Allow app to receive data from other apps|X|X|
 |Restrict cut, copy, and paste with other apps|X|X|
 |Require simple PIN for access|X|X|
-|Replace built-in app PIN with Intune PIN|X||
 |Specify the number of attempts before PIN reset|X|X|
 |Allow fingerprint instead of PIN|X|X|
 |Allow facial recognition instead of PIN (iOS only)|X|X|
@@ -102,8 +101,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Specify the offline grace period|X|X|
 |Block screen capture (Android only)|X|X|
 |Support for MAM without device enrollment|X|X|
-|Full Wipe|X|X|
-|Selective Wipe <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Full Wipe of app data|X|X|
+|Selective Wipe of work ad school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
 |Targeted Application Configuration|X||
 |Support for Multi-Identity|X||
