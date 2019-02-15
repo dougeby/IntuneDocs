@@ -251,11 +251,15 @@ To see these settings, go to [iOS device restrictions](device-restrictions-ios.m
 
 #### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->
 ​This update includes several new features on Android Enterprise devices when running as device owner. To use these features, go to **Device Configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Android Enterprise** > In **Profile type**, choose **Device owner only** > **Device Restrictions**.​
+
 ​New features include: ​
-​- Disable system notifications from showing, including incoming calls, system alerts, system errors, and more​
-- Suggests skip starting tutorials and hints for apps that are opened the first time​
-- Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more​
-​To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).​
+
+- Disable system notifications from showing, including incoming calls, system alerts, system errors, and more.
+- Suggests skip starting tutorials and hints for apps that are opened the first time​.
+- Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more​.
+​
+
+To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).​
 
 #### Android enterprise device owner devices can use Always On VPN connections <!-- 3202194 -->
 In this update, you can use Always-on VPN connections on Android enterprise device owner devices. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
