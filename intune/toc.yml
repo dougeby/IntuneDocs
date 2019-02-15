@@ -371,7 +371,8 @@
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
       - name: Create and assign conditional access policy
-        href: conditional-access-exchange-create.md
+      - name: Device-based conditional access policy
+        href: create-conditional-access-intune.md
       - name: Reassign conditional access policies from Intune classic portal
         href: conditional-access-intune-reassign.md
       - name: App-based conditional access

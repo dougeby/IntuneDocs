@@ -102,7 +102,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Block screen capture (Android only)|X|X|
 |Support for MAM without device enrollment|X|X|
 |Full Wipe of app data|X|X|
-|Selective Wipe of work ad school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Selective Wipe of work and school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
 |Targeted Application Configuration|X||
 |Support for Multi-Identity|X||
