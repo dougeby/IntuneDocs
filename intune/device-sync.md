@@ -52,6 +52,8 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 To see the status of the sync action, choose **Devices** > **Device actions**.
 
+You can find standard Intune policy check-in frequencies in the [Frequently asked questions about Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md##frequently-asked-questions-about-intune-policies).
+
 ## Retryable error codes
 
 When an administrator runs the **Sync** device action, iOS and Android apps that failed and raised a retryable error code are still available to the device. However, apps that raised a nonretryable error code must wait seven days before they're available to the device.
