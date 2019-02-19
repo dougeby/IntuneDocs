@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -250,6 +250,8 @@ If needed, you can suppress showing end user toast notifications per app assignm
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
+
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
