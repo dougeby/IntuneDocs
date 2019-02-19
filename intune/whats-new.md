@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,16 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+## Week of February 19, 2019
+
+#### macOS users are prompted to update their password <!-- 1873216 -->
+
+On macOS devices, end users are prompted to update their password. This prompt happens whenever a user runs a task that requires authentication, such as signing in to the device. Users also prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access.  
+
+Applies to:  
+macOS
+
 ## Week of February 4, 2019
 
 ### App management
