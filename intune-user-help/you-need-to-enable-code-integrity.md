@@ -30,16 +30,16 @@ ms.collection: M365-identity-device-management
 
 # Enable code integrity
 
-Your organization might require your PC to be enabled with a threat protection feature called *code integrity*. Code integrity checks the drivers and system files on your device for signs of corruption or malicious software. For code integrity to work on your device, another security feature called (*Secure Boot*)[https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot] must also be enabled. 
+Your organization might require your PC to be enabled with a threat protection feature called *code integrity*. Code integrity checks the drivers and system files on your device for signs of corruption or malicious software. For code integrity to work on your device, another security feature called [*Secure Boot*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) must also be enabled. 
 
 If your PC isn't compliant because code integrity is disabled, you should contact your organization's IT support team. They'll help you enable Secure Boot, which will turn on code integrity the next time your device restarts.  
 
-If you identify yourself as an advanced device user and want to try the steps on your own, see (Re-enable Secure Boot)[https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot]
+If you identify yourself as an advanced device user and want to try the steps on your own, see [Re-enable Secure Boot](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
 ## Additional resources for IT administrators  
-If you're an Intune administrator and want to learn more about Intune's device health, compliance settings, see (Add a device compliance policy for Windows 10 devices in Intune)[intune/compliance-policy-create-windows.md#windows-10-and-later-policy-settings]. 
+If you're an Intune administrator and want to learn more about Intune's device health, compliance settings, see [Add a device compliance policy for Windows 10 devices in Intune](intune/compliance-policy-create-windows.md#windows-10-and-later-policy-settings). 
 
-For a detailed look at the compliance actions you can take in Intune, see the (HealthAttestation CSP)[https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results].  
+For a detailed look at the compliance actions you can take in Intune, see the [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## Next steps  
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
