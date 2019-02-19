@@ -64,19 +64,20 @@ For Win32 apps, you can select the **Collect logs** option when your Win32 app i
 > [!IMPORTANT]
 > The **Collect logs** option will not be enabled when the Win32 app has been successfully installed on the device.<p>Before you can collect Win32 app log information, the Intune management extension must be installed on the Windows client. The Intune management extension is installed when a PowerShell script or a Win32 app is deployed to a user or device security group. For more information, see [Intune Management extension - Prerequisites](intune-management-extension.md#prerequisites).
 
-<image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="300" />
-
 ### Collect log file
 
 To collect your Win32 app installation logs, first follow the steps provided in the section [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details). Then, continue with the following steps:
 
 1. Click the **Collect logs** option on the **Installation details** blade.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
 2. Provide file paths with log file names to begin the log file collection process and click **OK**.
     
     > [!NOTE]
     > Log collection will take less than two hours. Supported file types: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, and .evtl*. A maximum of 25 file paths are allowed.
 
-3. Once the log files have been collected, you can select the **logs** link to doload the log files.
+3. Once the log files have been collected, you can select the **logs** link to download the log files.
 
     > [!NOTE]
     > A notification will be displayed indicating the success of the app log collection.
@@ -93,7 +94,7 @@ There are specific requirements that must be followed to collect log files:
 - You can specify environment variables when specifying log files​.
 - Only exact file extensions are allowed, such as:
   *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, .etl*
-- The maxium log file to upload is 60 MB or 25 files, whichever occurs first. 
+- The maximum log file to upload is 60 MB or 25 files, whichever occurs first. 
 
 #### Win32 log collection functionality
 
@@ -102,7 +103,7 @@ Log file collection functionality adheres to the following conditions:
 - Win32 app install log collection is enabled for apps that meet the required, available, and uninstall app assignment intent.
 - Log files are zipped and encrypted before they are saved in storage.
 - Stored logs are encrypted to protect any PII information contained in the logs​.
-- Log path folders for MSI based apps will not be prompted for your (admin) action.
+- Log path folders for MSI-based apps will not be prompted for your (admin) action.
 - You will always be prompted for log folder paths for *setup.exe* and script-based installer apps delivered via the Intune management extension.
 - Log content size is capped at 60MB.
 - Log files older than 24 hours will be removed from storage. 
