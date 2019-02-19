@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -34,8 +34,6 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 > [!Note]
 > Some features may roll out over several weeks and might not be available to all customers in the first week.
->
-> For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -48,14 +46,21 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Monitor and troubleshoot
 ### Role-based access control
 
--->    
- 
+-->     
+
 ## Week of February 18, 2019
 
-### Monitor
+#### macOS users are prompted to update their password <!-- 1873216 -->
+
+Intune is enforcing the **ChangeAtNextAuth** setting on macOS devices. This setting impacts end-users and devices that have compliance password policies or device restriction password profiles. End users are prompted once to update their password. This prompt happens whenever a user first runs a task that requires authentication, such as signing in to the device. Users can also be prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access. 
+
+Any new or existing password policy changes by the administrator prompts end users again to update their password.
+
+Applies to:  
+macOS
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a Power BI Pro license to share reports.* 
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a [Power BI Pro license](https://powerbi.microsoft.com/pricing/) to share reports.*
 
 ## Week of February 4, 2019
 
@@ -1407,6 +1412,13 @@ To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Notices
+
+###  Upcoming change to the Intune Data Warehouse API
+We will be making two changes during the 1903 timeframe:
+- Beta Filter Deprecation<br>
+    Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
+- 1.0 changes reflecting back to beta<br>
+    Changes made to our v1.0 collections will now be reflected in beta.  
 
 ### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
 We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 

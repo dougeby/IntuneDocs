@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,23 +32,12 @@ ms.collection: M365-identity-device-management
 
 Keep current on updates to the Intune Data Warehouse.
 
-## 1903
-_Release for March 2019_
-
-### Beta Filter Deprecation 
-
-Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
-
-### V1.0 changes reflecting back to beta 
-
-Changes made to our v1.0 collections will now be reflected in beta.  
-
 ## 1902 
 _Released February 2019_
 
 ### Power BI Compliance app 
 
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a Power BI Pro license to share reports.* 
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a [Power BI Pro license](https://powerbi.microsoft.com/pricing/) to share reports.* For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
 
 ## 1812 
 _Released December 2018_

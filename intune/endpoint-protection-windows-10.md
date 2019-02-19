@@ -218,11 +218,11 @@ Supported on the following Windows 10 editions:
   - **User creation of recovery password**: Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.  
   - **User creation of recovery key**: Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.
   - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: Choose **Enable** to store the BitLocker recovery information in Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in Azure AD.
-  - **BitLocker recovery Information to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure AD. Your options:
+  - **Save BitLocker recovery information to Azure Active Directory**: Choose **Enable** to store the BitLocker recovery information in Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in Azure AD.
+  - **BitLocker recovery Information stored to Azure Active Directory**: Configure what parts of BitLocker recovery information are stored in Azure AD. Your options:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.
+  - **Store recovery information in Azure Active Directory before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.
 
 ### BitLocker removable data-drive settings
 
