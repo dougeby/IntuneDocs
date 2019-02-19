@@ -57,14 +57,14 @@ The app installation error details will indicate the problem. You can use these 
 
 ## Win32 app installation troubleshooting
 
-Select the Win32 app use the steps provided in the section [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details).
+Select the Win32 app by following the steps provided in the [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details) section.
 
-Specifically for Win32 apps, you can select the **Collect logs** option when your Win32 app installation failures. 
+For Win32 apps, you can select the **Collect logs** option when your Win32 app installation failures. 
 
-> [!NOTE]
-> The **Collect logs** option will be disabled if the Win32 app has been successfully installed on the device.
+> [!IMPORTANT]
+> The **Collect logs** option will not be enabled when the Win32 app has been successfully installed on the device.<p>Before you can collect Win32 app log information, the Intune management extension must be installed on the Windows client. The Intune management extension is installed when a PowerShell script or a Win32 app is deployed to a user or device security group. For more information, see [Intune Management extension - Prerequisites](intune-management-extension.md#prerequisites).
 
-![Win32 app installation details - Collect log option](media/troubleshoot-app-install-04.png)
+<image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="300" />
 
 ### Collect log file
 
@@ -89,11 +89,11 @@ There are specific requirements that must be followed to collect log files:
 - You cannot specify subfolders as valid log file paths.​
 - You can specify a specific folder to fetch logs (for e.g. c:\foo\foo.txt)​.
 - You can specify other supported folder paths for log collection, such as the following:
-    - %PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
 - You can specify environment variables when specifying log files​.
 - Only exact file extensions are allowed, such as:
-    - .log, .txt, .dmp, .cab, .zip, .xml, .evtx, .etl
-- The maxium log file to upload is 60 MB or 25 files, whichever comes first. 
+  *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, .etl*
+- The maxium log file to upload is 60 MB or 25 files, whichever occurs first. 
 
 #### Win32 log collection functionality
 
