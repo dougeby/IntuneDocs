@@ -37,7 +37,7 @@ _Released February 2019_
 
 ### Power BI Compliance app 
 
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a [Power BI Pro license](https://powerbi.microsoft.com/pricing/) to share reports.* For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can edit, view or share pre-created reports without any setup and without leaving your web browser. You can also create more compliance related reports with the datasets included online. **Note**: *Power BI requires that one user has a [Power BI Pro license](https://powerbi.microsoft.com/pricing/) to share or edit reports.* For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
 
 ## 1812 
 _Released December 2018_
