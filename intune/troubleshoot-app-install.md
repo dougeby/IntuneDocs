@@ -57,9 +57,7 @@ The app installation error details will indicate the problem. You can use these 
 
 ## Win32 app installation troubleshooting
 
-Select the Win32 app by following the steps provided in the [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details) section.
-
-For Win32 apps, you can select the **Collect logs** option when your Win32 app installation failures. 
+Select the Win32 app that was deployed using the Intune management extension. You can select the **Collect logs** option when your Win32 app installation fails. 
 
 > [!IMPORTANT]
 > The **Collect logs** option will not be enabled when the Win32 app has been successfully installed on the device.<p>Before you can collect Win32 app log information, the Intune management extension must be installed on the Windows client. The Intune management extension is installed when a PowerShell script or a Win32 app is deployed to a user or device security group. For more information, see [Intune Management extension - Prerequisites](intune-management-extension.md#prerequisites).
@@ -79,6 +77,8 @@ To collect your Win32 app installation logs, first follow the steps provided in 
 
 3. Once the log files have been collected, you can select the **logs** link to download the log files.
 
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
     > [!NOTE]
     > A notification will be displayed indicating the success of the app log collection.
 
@@ -87,28 +87,14 @@ To collect your Win32 app installation logs, first follow the steps provided in 
 There are specific requirements that must be followed to collect log files:
 
 - You must specify the complete log file path. ​
-- You cannot specify subfolders as valid log file paths.​
-- You can specify a specific folder to fetch logs (for e.g. c:\foo\foo.txt)​.
-- You can specify other supported folder paths for log collection, such as the following:
+- You can specify environment variables for log collection, such as the following:<br>
   *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
-- You can specify environment variables when specifying log files​.
-- Only exact file extensions are allowed, such as:
-  *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, .etl*
+- Only exact file extensions are allowed, such as:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
 - The maximum log file to upload is 60 MB or 25 files, whichever occurs first. 
-
-#### Win32 log collection functionality
-
-Log file collection functionality adheres to the following conditions:
-
 - Win32 app install log collection is enabled for apps that meet the required, available, and uninstall app assignment intent.
-- Log files are zipped and encrypted before they are saved in storage.
 - Stored logs are encrypted to protect any PII information contained in the logs​.
-- Log path folders for MSI-based apps will not be prompted for your (admin) action.
-- You will always be prompted for log folder paths for *setup.exe* and script-based installer apps delivered via the Intune management extension.
-- Log content size is capped at 60MB.
-- Log files older than 24 hours will be removed from storage. 
-- Only the latest app logs from the client will be proved.
-- Windows Notification Service is used to wake up the device to collect app logs.
+- While opening support tickets for Win32 app failures, attach the related failure logs using the steps provided above.
 
 ## App installation errors
 
