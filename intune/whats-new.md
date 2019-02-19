@@ -54,7 +54,7 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 #### macOS users are prompted to update their password <!-- 1873216 -->
 
-On macOS devices, end users are prompted to update their password. This prompt happens whenever a user runs a task that requires authentication, such as signing in to the device. Users also prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access.  
+On macOS devices targeted with compliance password policies or device restriction password policies, end users are prompted once to update their password. This prompt happens whenever a user first runs a task that requires authentication, such as signing in to the device. Users could also be prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access. In the future, users will be prompted once again whenever you change these password policies. 
 
 Applies to:  
 macOS
