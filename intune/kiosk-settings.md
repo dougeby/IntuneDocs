@@ -73,6 +73,6 @@ The profile is created, and shown in the profiles list. Next, [assign](device-pr
 
 You can create kiosk profiles for devices that run the following platforms:
 - [Android](device-restrictions-android.md#kiosk)
-- [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings)
+- [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 and later](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

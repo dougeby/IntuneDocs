@@ -194,4 +194,4 @@ Select **OK** to save your changes.
 
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also create kiosk profiles for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), and [Windows Holographic for Business](kiosk-settings-holographic.md) devices.
+You can also create kiosk profiles for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [Windows Holographic for Business](kiosk-settings-holographic.md) devices.
