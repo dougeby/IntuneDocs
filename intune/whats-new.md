@@ -917,7 +917,7 @@ To create the profile, open **Device configuration** > **Profiles** > **Create P
 Applies to Windows 10 and later.
 
 #### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
-The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
+The Kiosk (preview) feature (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
 
 To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
 
