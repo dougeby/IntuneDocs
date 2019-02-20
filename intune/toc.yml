@@ -151,7 +151,7 @@
       href: mdm-authority-set.md
     - name: Manage roles
       - items:
-      - name: Role-based-access control
+      - name: Role-based access control
         href: role-based-access-control.md
       - name: Use scope tags
         href: scope-tags.md
