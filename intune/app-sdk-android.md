@@ -1943,47 +1943,34 @@ Below is the complete list of allowed style attributes, the UI elements they con
 
 ## Default enrollment (optional)
 
-
 The following is guidance for requiring user prompt on app launch for an automatic APP-WE service enrollment (we call this **default enrollment** in this section), requiring Intune app protection policies to allow only Intune protected users to use your SDK-integrated Android LOB app. It also covers how to enable SSO for your SDK-integrated Android LOB app. This is **not** supported for store apps that can be used by non-Intune users.
 
 > [!NOTE] 
 > The benefits of **default enrollment** include a simplified method of obtaining policy from APP-WE service for an app on the device.
 
-### General Requirements
-* Ensure your app is registered with the Intune Mobile Application Management service by following the steps at [Common ADAL configurations #2](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations).
+> [!NOTE] 
+> **Default enrollment** is sovereign cloud aware.
 
-### Working with the Intune SDK
-These instructions are specific to all Android and Xamarin app developers who wish to require Intune app protection policies for app use on an end user device.
+Enable default enrollment with the following steps:
 
-1. Configure ADAL using the steps defined in the [Intune SDK for Android guide](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
-   > [!NOTE] 
-   > The term "client id" tied to your app is the same as the term "application id" from the Azure Portal. 
-2. To enable SSO, "Common ADAL configuration" #2 is what is needed.
-
-3. Enable default enrollment by putting the following value in the manifest:
-   ```xml
+1. If your app integrates ADAL or you need to enable SSO, 
+   [configure ADAL](#configure-azure-active-directory-authentication-library-adal)
+   following [common ADAL configuration](#common-adal-configurations) #2. If not, you may skip this step.
+   
+2. Enable default enrollment by putting the following value in the manifest:
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
    > [!NOTE] 
-   > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts can arise.
+   > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
-4. Enable MAM policy required by putting the following value in the manifest:
-   ```xml
+3. Enable MAM policy required by putting the following value in the manifest:
+   ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
-   >
-   > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
-3. Enable MAM policy required by putting the following value in the manifest:
-
-   ```xml
-   <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
-   ```
-
-> [!NOTE] 
-> This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 
 ## Limitations
 
@@ -1996,9 +1983,10 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 
 ### Policy enforcement limitations
 
-* **Screen Capture**: The SDK is unable to enforce a new screen capture setting value in Activities that have already gone through Activity.onCreate. This can result in a period of time where the app has been configured to disable screenshots but screenshots can still be taken.
-
-* **Using Content Resolvers**: The "transfer or receive" Intune policy may block or partially block the use of a content resolver to access the content provider in another app. This will cause ContentResolver methods to return null or throw a failure value (for example, `openOutputStream` will throw `FileNotFoundException` if blocked). The app can determine whether a failure to write data through a content resolver was caused by policy (or would be caused by policy) by making the call:
+* **Using Content Resolvers**: The "transfer or receive" Intune policy may block or partially block the use of a content resolver to
+access the content provider in another app. This will cause `ContentResolver` methods to return null or throw a failure value (for
+example, `openOutputStream` will throw `FileNotFoundException` if blocked). The app can determine whether a failure to write data
+through a content resolver was caused by policy (or would be caused by policy) by making the call:
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
@@ -2026,7 +2014,7 @@ app itself implemented these methods from the Android base classes.
 ### Robolectric
 Testing MAM SDK behavior under Robolectric is not supported. There are
 known issues running the MAM SDK under Robelectric due to behaviors
-present under Robelectric which do not accurately mimic those on real
+present under Robolectric that do not accurately mimic those on real
 devices or emulators.
 
 If you need to test your application under Roboelectric, the
