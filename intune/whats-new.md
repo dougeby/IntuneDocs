@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/04/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -34,8 +34,6 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 > [!Note]
 > Some features may roll out over several weeks and might not be available to all customers in the first week.
->
-> For information on new functionality in hybrid mobile device management (MDM), check out the [hybrid What’s New page](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
 
@@ -49,6 +47,18 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 ### Role-based access control
 
 -->     
+
+## Week of February 19, 2019
+
+#### macOS users are prompted to update their password <!-- 1873216 -->
+
+Intune is enforcing the **ChangeAtNextAuth** setting on macOS devices. This setting impacts end-users and devices that have compliance password policies or device restriction password profiles. End users are prompted once to update their password. This prompt happens whenever a user first runs a task that requires authentication, such as signing in to the device. Users can also be prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access. 
+
+Any new or existing password policy changes by the administrator prompts end users again to update their password.
+
+Applies to:  
+macOS
+
 ## Week of February 4, 2019
 
 ### App management
