@@ -106,7 +106,7 @@ You can configure a device to run one app, or run many apps. When a device is in
 
 - **Multi-app dedicated device**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
-  > [IMPORTANT]
+  > [!IMPORTANT]
   > For multi-app dedicated devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
   >   - [Added as a client app](apps-add-android-for-work.md) in Intune
   >   - [Assigned to the device group](apps-deploy.md) created for your dedicated devices
