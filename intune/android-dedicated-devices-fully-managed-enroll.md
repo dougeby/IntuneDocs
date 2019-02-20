@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Enroll Android dedicated devices or fully managed devices in Intune
+title: Enroll Android Enterprise dedicated devices or fully managed devices in Intune
 titlesuffix: "Microsoft Intune"
-description: Learn how to enroll Android enterprise dedicated devices or fulluy managed devices in Intune.
+description: Learn how to enroll Android Enterprise dedicated devices or fully managed devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
@@ -29,9 +29,9 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# Enroll your Android dedicated devices or fully managed devices (Preview)
+# Enroll your Android Enterprise dedicated devices or fully managed devices (Preview)
 
-After you've set up your [Android dedicated devices](android-kiosk-enroll.md) or [fully managed devices](android-fully-managed-enroll.md) in Intune, you can enroll the devices. How you enroll your Android devices depends on the operating system.
+After you've set up your [Android Enterprise dedicated devices](android-kiosk-enroll.md) or [fully managed devices](android-fully-managed-enroll.md) in Intune, you can enroll the devices. How you enroll your Android Enterprise devices depends on the operating system.
 
 | Enrollment method | Minimum Android OS version for dedicated and fully managed devices |
 | ----- | ----- |
