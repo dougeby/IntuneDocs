@@ -150,9 +150,11 @@
     - name: Set the MDM authority
       href: mdm-authority-set.md
     - name: Manage roles
-      href: role-based-access-control.md
-    - name: Use scope tags
-      href: scope-tags.md
+      - items:
+      - name: Role-based-access control
+        href: role-based-access-control.md
+      - name: Use scope tags
+        href: scope-tags.md
   - name: Enroll devices
     items:
     - name: What is device enrollment?
