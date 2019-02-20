@@ -39,7 +39,7 @@ Some profile examples include:
 - Allow or prevent access to bluetooth on the device.
 - Create a WiFi or VPN profile that gives different devices access to your corporate network.
 - Manage software updates, including when they are installed.
-- Run an Android device a dedicated kiosk device that can run one app, or run many apps.
+- Run an Android device as dedicated kiosk device that can run one app, or run many apps.
 
 This article lists the steps to create a profile, and gives an overview of the different types of profiles you can create. Use these profiles to allow or prevent some features on the devices.
 
@@ -169,7 +169,7 @@ This feature supports:
 
 - Windows 10 and later
 
-Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## Email
 
