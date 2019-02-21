@@ -48,4 +48,4 @@ The **Restart** device action lets you rename a corporate-owned Windows device t
 
 ## Next steps
 
-- To see the status of the **Rename** device action, check the **Overview** page for the device.
+To see the status of the **Rename** device action, check the **Overview** page for the device.
