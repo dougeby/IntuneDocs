@@ -110,7 +110,7 @@ In Intune in the Azure portal, provide the Apple ID for future reference.
 ### Step 4. Upload your token and choose scope tags.
 
 1. In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**.
-2. If you want to include [scope tags](scope-tags.md) with this DEP token, choose **Scope (tags)**, and select the scope tags that you want.
+2. If you want to apply [scope tags](scope-tags.md) to this DEP token, choose **Scope (tags)**, and select the scope tags that you want. Scope tags applied to a token will be inherited by profiles and devices added to this token.
 3. Choose **Create**.
 
 With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
