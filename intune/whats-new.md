@@ -1410,32 +1410,6 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
-### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
-We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 
-
-#### How does this affect me?
-This impacts you if you have or plan to have devices running macOS 10.14.2 and greater. Now that the Apple has introduced the "Change Password at New Auth" setting, Intune can force users to update their password to one that is compliant when a password policy is pushed. Your macOS users will receive a request to update their password when we integrate this new Apple feature, even if their password is already compliant. Note that if a password is already compliant and you don’t have a requirement against repeating passwords, then end users will be able to update to their existing password. End users will only see a request to update their password when they try to authenticate or log in to their device. 
-If you block company resources until the device is marked compliant, then know that your end users on devices with macOS 10.14.2 may be blocked from accessing company resources such as email or SharePoint sites until they reset their password. In the future, all updates to configuration and compliance password policies will force targeted users to update their passwords. 
-Our customer research prior to implementing this change indicated most customers will not be affected by this change, since end users will typically update their password after receiving a request to enroll with a password or reset their password to remain compliant
-
-#### What can I do to prepare for this change?
-You may want to let your helpdesk know. We’ll update this What’s New page when this change is rolled out. If you do not want this macOS device password policy to be enforced, we recommend you un-assign or delete your existing macOS policy.
-
-###Plan for Change: Update to iOS setting for supervised devices in the Intune console  
-With the February update to the Intune service, the 'Enabling restrictions in the device settings' setting for supervised iOS devices is being renamed to “Screen Time (supervised only)”. After this change, end user experience will change based on iOS version.
-
-####How does this affect me?
-After the setting for “Enabling restrictions in the device settings (supervised only)” is renamed to “Screen Time (supervised only)”, here’s the experience for supervised devices (devices enrolled with Apple’s enrollment programs): 
-
-For devices on iOS 11.4 and prior: This setting can be used to prevent users from modifying device restrictions as before. End users will not see a change in experience.
- 
-For devices on iOS 12 and later: End users will no longer see the Restrictions tab under Settings > General > Device Management > Management Profile > Restrictions.
-Instead, this will be a part of Settings > General > Screen Time. Configuring this setting to “Block” will block users from changing Screen Time settings on their devices, which also  includes content and privacy restrictions.
-
-####What can I do to prepare for this change?
-Update your end user guidance to note the change in experience for devices that are upgraded to iOS 12 and later versions.
-
-
 ###Plan for Change: Workflow changes for iOS 12 enrollment in Intune
 Apple has announced some changes related to iOS devices enrolling into Mobile Device Management (MDM) services. The change will likely be seen in the spring 2019 release of iOS as well as all future iOS releases.
 
