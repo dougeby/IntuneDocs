@@ -3,7 +3,7 @@
 
 title: How to monitor app protection policies 
 titleSuffix: Microsoft Intune
-description: Monitor the compliance status of mobile app management policies in Intune.
+description: This topic describes how to monitor the compliance status of mobile app management policies in Intune.
 keywords:
 author: Erikre
 ms.author: erikre

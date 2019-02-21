@@ -3,7 +3,7 @@
 
 title: iOS app protection policy settings | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: This topic describes the app protection policy settings for iOS devices.
+description: This topic describes the iOS app protection policy (APP) settings for iOS devices.
 keywords:
 author: Erikre
 ms.author: erikre

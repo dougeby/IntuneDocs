@@ -3,7 +3,7 @@
 
 title: Configure app protection policies for Windows 10 
 titleSuffix: Microsoft Intune
-description: Setup mobile application management (MAM) provider in Azure AD.
+description: This topic describes how to configure app protection policies (APP) for Windows 10 devices.
 keywords:
 author: Erikre
 ms.author: erikre
