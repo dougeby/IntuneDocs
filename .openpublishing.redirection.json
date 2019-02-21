@@ -55,7 +55,7 @@
 		},		
 		{
 			"source_path": "intune/android-enterprise-settings.md",
-			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
+			"redirect_url": "/intune/device-restrictions-android-for-work#dedicated-device-settings",
 			"redirect_document_id": false
 		},
 		{
