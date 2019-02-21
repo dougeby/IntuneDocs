@@ -27,7 +27,7 @@ ms.collection: M365-identity-device-management
 
 # Android Enterprise device settings to allow or restrict features using Intune
 
-This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps dedicated devices, control security, and more.
+This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps on dedicated devices, control security, and more.
 
 ## Before you begin
 
@@ -91,11 +91,11 @@ This article lists and describes the different settings you can control on Andro
 
 ### Dedicated device settings
 
-You can configure a device to run one app, or run many apps. When a device is in dedicated device mode, only the apps you add are available. These settings apply to Android dedicated devices. They don't apply to Android fully managed dedicated devices.
+Use these settings to configure a kiosk-style experience on your dedicated devices. You can configure a device to run one app, or run many apps. When a device is set with kiosk mode, only the apps you add are available. These settings apply to Android Enterprise dedicated devices. They don't apply to Android Enterprise fully managed devices.
 
-**Dedicated device mode**: Choose if the device runs one app or runs multiple apps.
+**Kiosk mode**: Choose if the device runs one app or runs multiple apps.
 
-- **Single app dedicated device**: Users can only access a single app on the device. When the device starts, only the specific app starts. Users are restricted from opening new apps or from changing the running app.
+- **Single app**: Users can only access a single app on the device. When the device starts, only the specific app starts. Users are restricted from opening new apps or from changing the running app.
 
   **Steps**
   1. Choose **Select a managed app**, and select the managed Google Play app from the list. 
@@ -104,7 +104,7 @@ You can configure a device to run one app, or run many apps. When a device is in
 
   2. Choose **OK** > **OK** to add the app.
 
-- **Multi-app dedicated device**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
+- **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
   > [!IMPORTANT]
   > For multi-app dedicated devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
@@ -120,15 +120,15 @@ You can configure a device to run one app, or run many apps. When a device is in
     You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
 
   - **Virtual home button**: Choose **Enable** to show a home button on the dedicated device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
-  - **Leave dedicated device mode**: Choose **Enable** to allow Administrators to temporarily pause dedicated device mode to update the device. To use this feature, the administrator: 
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator: 
   
-    1. Continues to select the back button until the "Exit dedicated device" button is shown. 
-    2. Selects the button, and enters the **Leave dedicated device mode code** PIN.
-    3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app dedicated device mode. 
+    1. Continues to select the back button until the "Exit kiosk" button is shown. 
+    2. Selects the button, and enters the **Leave kiosk mode code** PIN.
+    3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
     
-    **Disable** doesn't give the ability to pause dedicated device mode. If the administrator continues to select the back button, and selects the "Exit dedicated device" button, then a message states that a passcode is required.
+    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
     
-    - **Leave dedicated device mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause dedicated device mode.
+    - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
  
   - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
 
