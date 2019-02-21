@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Windows 10 templates to configure group policy settings in Microsoft Intune
+# Use Windows 10 templates to configure group policy settings in Microsoft Intune
 
 When managing devices in your organization, you want to create a group of settings that are applied to different device groups. For example, you have several device groups. For GroupA, you want to assign a specific set of settings. For GroupB, you want to assign a different set of settings. You also want a simple view of the settings you can configure.
 
