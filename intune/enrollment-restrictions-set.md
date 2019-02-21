@@ -134,6 +134,16 @@ During BYOD enrollments, users see a notification that tells them when they've m
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
+Device limit restrictions do not apply for the following Windows corporate enrollment types:
+
+- Co-managed enrollments
+- GPO enrollments
+- Azure Active Directory joined enrollments
+- Bulk Azure Active Directory joined enrollments
+- Autopilot enrollments
+
+You can set device limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+
 ## Change enrollment restriction priority
 
 Priority is used when a user exists in multiple groups that are assigned restrictions. Users are subject only to the highest priority restriction assigned to a group that they are in. For example, Joe is in group A assigned to priority 5 restrictions and also in group B assigned to priority 2 restrictions. Joe is subject only to the priority 2 restrictions.
