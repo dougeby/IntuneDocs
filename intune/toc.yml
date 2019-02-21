@@ -249,6 +249,8 @@
       href: device-remote-lock.md
     - name: Reset passcode
       href: device-passcode-reset.md
+    - name: Rename device
+      href: device-rename.md
     - name: Restart device
       href: device-restart.md
     - name: Logout current user
