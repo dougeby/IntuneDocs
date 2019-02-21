@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2019
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,11 +34,8 @@ ms.collection: M365-identity-device-management
 You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users from the Intune app protection pane in the [Azure portal](https://portal.azure.com). Additionally, you can find information about the users affected by MAM policies, MAM policy compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status of MAM policies:
-
 -   Summary view
-
 -   Detailed view
-
 -   Reporting view
 
 > [!NOTE]
@@ -53,9 +50,10 @@ There are three different places to monitor the compliance status of MAM policie
 
 ![Summary tile on the Intune mobile application management pane](./media/app-protection-user-status-summary.png)
 
--   **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
--   **Flagged users**: The number of users who are experiencing issues. Jailbroken devices are reported under **Flagged users**.
--   **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
+- **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
+- **Flagged users**: The number of users who are experiencing issues. Jailbroken devices are reported under **Flagged users**.
+- **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
+- **Top Protected iOS Apps**: The top protected and unprotected iOS Apps.
 
 	> [!NOTE]
 	> If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy assigned to them.
