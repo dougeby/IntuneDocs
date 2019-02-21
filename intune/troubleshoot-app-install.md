@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/14/2019
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view app information to address user help requests. The troubleshooting pane within Intune provides failure details, including details about managed apps on a user's device. Details about the end-to-end lifecycle of an app are provided under each individual device in the **Managed Apps** pane. You can view installation issues, such as when the app was created, modified, targeted, and delivered to a device. 
 
-## To review app troubleshooting details
+## App troubleshooting details
 
 Intune provides app troubleshooting details based on the apps installed on a specific user's device.
 
@@ -54,6 +54,47 @@ The app installation error details will indicate the problem. You can use these 
 
 > [!Note]  
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+
+## Win32 app installation troubleshooting
+
+Select the Win32 app that was deployed using the Intune management extension. You can select the **Collect logs** option when your Win32 app installation fails. 
+
+> [!IMPORTANT]
+> The **Collect logs** option will not be enabled when the Win32 app has been successfully installed on the device.<p>Before you can collect Win32 app log information, the Intune management extension must be installed on the Windows client. The Intune management extension is installed when a PowerShell script or a Win32 app is deployed to a user or device security group. For more information, see [Intune Management extension - Prerequisites](intune-management-extension.md#prerequisites).
+
+### Collect log file
+
+To collect your Win32 app installation logs, first follow the steps provided in the section [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details). Then, continue with the following steps:
+
+1. Click the **Collect logs** option on the **Installation details** blade.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Provide file paths with log file names to begin the log file collection process and click **OK**.
+    
+    > [!NOTE]
+    > Log collection will take less than two hours. Supported file types: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, and .evtl*. A maximum of 25 file paths are allowed.
+
+3. Once the log files have been collected, you can select the **logs** link to download the log files.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > A notification will be displayed indicating the success of the app log collection.
+
+#### Win32 log collection requirements
+
+There are specific requirements that must be followed to collect log files:
+
+- You must specify the complete log file path. ​
+- You can specify environment variables for log collection, such as the following:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Only exact file extensions are allowed, such as:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- The maximum log file to upload is 60 MB or 25 files, whichever occurs first. 
+- Win32 app install log collection is enabled for apps that meet the required, available, and uninstall app assignment intent.
+- Stored logs are encrypted to protect any PII information contained in the logs​.
+- While opening support tickets for Win32 app failures, attach the related failure logs using the steps provided above.
 
 ## App installation errors
 

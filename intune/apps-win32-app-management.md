@@ -254,6 +254,8 @@ Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\Intun
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
 
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
 - Check OS Version – Windows 10 1607 and above.  
