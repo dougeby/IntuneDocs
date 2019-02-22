@@ -69,7 +69,7 @@ There are new app installation error messages related to the following:
 
 In Intune, select **Client apps** > **Apps** > "App name" > **Device install status**. New error messages will be available in the **Status details** column.
 
-### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 wnready -->
+#### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 wnready -->
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 ### Device configuration
@@ -141,7 +141,7 @@ To see the available settings, go to [Device settings to allow or restrict featu
 Applies to:  
 Android Enterprise
 
-### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313 eeready wnready -->
+#### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313 eeready wnready -->
 For iOS devices, you can set Safari settings and configure Software Updates. In this update, these settings are moving to different parts of the Intune UI:
 
 - The Safari settings moved from **Safari** (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type) to **[Built-in Apps](device-restrictions-ios.md#built-in-apps)**.
