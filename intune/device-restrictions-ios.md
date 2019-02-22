@@ -352,7 +352,7 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.mobileslideshow   | Photos       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |
 | com.apple.reminders         | Reminders    | Apple     |
-| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Settings     | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
