@@ -62,7 +62,7 @@
 		},		
 		{
 			"source_path": "intune/android-enterprise-settings.md",
-			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
+			"redirect_url": "/intune/device-restrictions-android-for-work#dedicated-device-settings",
 			"redirect_document_id": false
 		},
 		{
@@ -5040,7 +5040,7 @@
 			"redirect_url": "/intune/apple-configurator-enroll-ios",
 			"redirect_document_id": false
 		},
-    {
+    	{
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
 			"redirect_document_id": false
