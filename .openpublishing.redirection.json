@@ -2,6 +2,13 @@
 	"redirections": [
 		{
 
+			"source_path": "intune-user-help/power-saving-mode-android.md",
+			"redirect_url": "https://go.microsoft.com/fwlink/?linkid=2077422&clcid=0x409",
+			"redirect_document_id": false
+			
+		},
+		{
+
 			"source_path": "intune-user-help/using-your-macos-device-with-intune.md",
 			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
 			"redirect_document_id": false
