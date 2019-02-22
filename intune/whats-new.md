@@ -48,7 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 -->     
 
-## Week of February 19, 2019
+## Week of February 18, 2019
 
 #### macOS users are prompted to update their password <!-- 1873216 -->
 
@@ -58,6 +58,9 @@ Any new or existing password policy changes by the administrator prompts end use
 
 Applies to:  
 macOS
+
+#### Power BI Compliance app <!-- 1455231 doc-work-item -->
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
 
 ## Week of February 4, 2019
 
@@ -1409,6 +1412,13 @@ To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
 
 ## Notices
+
+###  Upcoming change to the Intune Data Warehouse API
+We will be making two changes during the 1903 timeframe:
+- Beta Filter Deprecation<br>
+    Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
+- 1.0 changes reflecting back to beta<br>
+    Changes made to our v1.0 collections will now be reflected in beta.  
 
 ### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
 We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 
