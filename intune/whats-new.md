@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,8 +50,43 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 ## Week of February 18, 2019
 
-#### macOS users are prompted to update their password <!-- 1873216 -->
+### App management
 
+#### Intune will leverage Google Play Protect APIs on Android devices <!-- 2577355 eeready wnready -->
+Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
+
+#### Win32 app information available in Troubleshooting blade <!-- 2617342 eeready wnready -->
+You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps-win32-app-management.md#troubleshoot-win32-app-issues).
+
+#### App status details for iOS apps <!-- 3761235 eeready wnready -->
+There are new app installation error messages related to the following:
+- Failure for VPP apps when installing on shared iPad
+- Failure when app store is disabled
+- Failure to find VPP license for app
+- Failure to install system apps with MDM provider
+- Failure to install apps when device is in lost mode or kiosk mode
+- Failure to install app when user is not signed in to the App Store
+
+In Intune, select **Client apps** > **Apps** > "App name" > **Device install status**. New error messages will be available in the **Status details** column.
+
+#### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 wnready -->
+A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
+
+#### Power BI Compliance app <!-- 1455231 doc-work-item -->
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+
+
+### Device configuration
+
+#### PowerShell scripts can run in a 64-bit host on 64-bit devices <!-- 1862675 eeready wnready -->
+When you add a PowerShell script to a device configuration profile, the script always executes in 32-bit, even on 64-bit operating systems. With this update, an administrator can run the script in a 64-bit PowerShell host on 64-bit devices (**Device configuration** > **PowerShell scripts** > **Add** > **Configure** > **Run script in 64 bit PowerShell Host**).
+
+For more details on using PowerShell, see [PowerShell scripts in Intune](intune-management-extension.md).
+
+Applies to:
+Windows 10 and later
+
+#### macOS users are prompted to update their password <!-- 1873216 -->
 Intune is enforcing the **ChangeAtNextAuth** setting on macOS devices. This setting impacts end-users and devices that have compliance password policies or device restriction password profiles. End users are prompted once to update their password. This prompt happens whenever a user first runs a task that requires authentication, such as signing in to the device. Users can also be prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access. 
 
 Any new or existing password policy changes by the administrator prompts end users again to update their password.
@@ -59,8 +94,103 @@ Any new or existing password policy changes by the administrator prompts end use
 Applies to:  
 macOS
 
-#### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+#### Assign SCEP certificates to a userless macOS device    <!-- 2340521  WNready  -->
+You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-scep-configure.md#create-a-scep-certificate-profile) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
+
+#### Intune conditional access UI update   <!-- 2432313  WNready -->
+We've made improvements to the UI for conditional access in the Intune console. These include:
+-  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access]( (which remains an Azure AD technology),from within the Intune console. 
+- We've renamed the *On-premises access* blade to *Exchange access*, and relocated the *Exchange service connector* setup to this renamed blade.  This change consolidates where you [configure and monitor details related to Exchange online and on-premises](exchange-connector-install.md).  
+
+#### Kiosk Browser and Microsoft Edge Browser apps can run on Windows 10 devices in kiosk mode <!-- 2935135 eeready wnready -->
+You can use Windows 10 devices in kiosk mode to run one app, or many apps. This update includes several changes to using browser apps in kiosk mode, including:
+
+- Add the Microsoft Edge Browser or Kiosk Browser to run as apps on the kiosk device (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Kiosk** for profile type).
+- New features and settings are available to allow or restrict (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type), including:
+
+  - Microsoft Edge Browser:​
+    - Use Microsoft Edge kiosk mode​
+    - Refresh browser after idle time​
+​
+ - Favorites and search:​
+    - Allow changes to search engine
+
+For a list of these settings, see:
+
+- [Windows 10 and later device settings to run as a kiosk](kiosk-settings-windows.md)
+- [Microsoft Edge Browser device restrictions](device-restrictions-windows-10.md#microsoft-edge-browser)
+- [Favorites and search device restrictions](device-restrictions-windows-10.md##favorites-and-search)
+
+Applies to:
+Windows 10 and later
+
+#### New device restriction settings for iOS and macOS devices <!-- 3448774 eeready wnready -->
+You can restrict some settings and features on devices running iOS and macOS (**Device configuration** > **Profiles** > **New profile** > **iOS** or **macOS** for platform > **Device restrictions** for profile type). This update adds more features and settings you can control, including setting screen time, changing eSIM settings and cellular plans, and more on iOS devices. Also, delaying the user's visibility of software updates and blocking content caching on macOS devices. 
+
+To see the features and settings you can restrict, see:
+
+- [iOS device restriction settings](device-restrictions-ios.md)
+- [macOS device restriction settings](device-restrictions-macos.md)
+
+Applies to:
+
+- iOS
+- macOS
+
+#### "Kiosk" devices are now called "Dedicated devices" on Android Enterprise devices <!-- 3598402 eeready wnready -->
+To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > ** Device Owner Only > Device Restrictions** > **Dedicated devices**).
+
+To see the available settings, go to [Device settings to allow or restrict features](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Applies to:  
+Android Enterprise
+
+#### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313 eeready wnready -->
+For iOS devices, you can set Safari settings and configure Software Updates. In this update, these settings are moving to different parts of the Intune UI:
+
+- The Safari settings moved from **Safari** (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type) to **[Built-in Apps](device-restrictions-ios.md#built-in-apps)**.
+- The **Delaying user software update visibility for supervised iOS devices** setting (**Software updates** > **Update policies for iOS**) is moving to **Device restrictions** > **[General](device-restrictions-ios.md#general)**.  For details on the impact to existing policies, see [iOS software updates](software-updates-ios.md#configure-the-policy). 
+
+For a list of the settings, see:
+
+- [iOS device restrictions](device-restrictions-ios.md) 
+- [iOS software updates](software-updates-ios.md)
+
+This feature applies to: 
+
+- iOS
+
+#### Enabling restrictions in the device settings is renamed to Screen Time on iOS devices <!-- 3699164 eeready wnready -->
+You can configure the **Enabling restrictions in the device settings** on supervised iOS devices (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type > **General**). In this update, this setting is renamed to **Screen Time (supervised only)**. 
+
+The behavior is the same. Specifically: 
+
+- iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. 
+- iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings, including content & privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore. These settings are in **Screen Time**. 
+
+For a list of the settings, see [iOS device restrictions](device-restrictions-ios.md#general).
+
+Applies to: 
+- iOS
+
+
+### Device management
+
+#### Rename an enrolled Windows device <!-- 1911112 eeready wnready-->
+You can now rename an enrolled Windows 10 device (RS4 or later). To do, choose **Intune** > **Devices** > **All devices** > choose a device > **Rename device**.
+
+#### Auto-assign scope tags to resources created by an admin with that scope <!-- 3173823 eeready wnready-->
+When an admin creates a resource, any scope tags assigned to the admin will automatically be assigned to those new resources.
+
+### Monitor and troubleshoot
+
+#### Failed enrollment report moves to the Device Enrollment blade <!-- 3560202 eeready wnready-->
+The **Failed enrollments** report has been moved to the **Monitor** section of the **Device enrollment** blade. Two new columns (Enrollment Method and OS Version) have been added.
+
+#### Company Portal abandonment report renamed to Incomplete user enrollments <!--3815076 eemiss wnready-->
+The **Company Portal abandonment** report has been renamed to **Incomplete user enrollments**.
+
+
 
 ## Week of February 4, 2019
 
@@ -920,7 +1050,7 @@ To create the profile, open **Device configuration** > **Profiles** > **Create P
 Applies to Windows 10 and later.
 
 #### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
-The [Kiosk feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
+The Kiosk (preview) feature (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
 
 To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
 
