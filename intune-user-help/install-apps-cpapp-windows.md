@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -42,6 +42,7 @@ Install apps on your device from the Company Portal app for Windows.
     * **Home**: Select from a list of your organization's featured apps.  
     * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.  
     * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.  
+    * **App categories**: Select this page in the navigation pane to choose apps based on type or function. Apps are sorted under categories such as **Featured**, **Education**, and **Productivity**.  
     * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
     * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.  
 
