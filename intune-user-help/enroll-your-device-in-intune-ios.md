@@ -49,7 +49,7 @@ To maintain access to work or school information from your device, you must conf
 During initial setup, the app requires that you authenticate yourself with your organization. It then informs you of any device settings you must update. For example, organizations often set minimum or maximum character password requirements that you'll be required to meet.     
 
 ### Protection  
-After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. App protection policies like this one are common in organizations. They often require you to uninstall the untrusted app before you can regain access.  
+After your device is enrolled, the Company Portal app will continue to make sure that your device is protected. If you install an app from an untrusted source, for example, the app will alert you and sometimes revoke access to company data. A policy like this is common in organizations, and often requires you to uninstall the untrusted app before you can regain access.  
 
 ### Setting notifications  
 If after enrollment your organization enforces a new security requirement, such as multi-factor authentication, the Company Portal app will notify you. You'll have the chance to adjust your settings so that you can continue to work from your device.  
@@ -57,7 +57,7 @@ If after enrollment your organization enforces a new security requirement, such 
 To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](https://docs.microsoft.com//intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios).  
 
 ## Enroll your iOS device:
-Go to the App store to download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) to your device. During enrollment you'll also need a Wi-Fi connection and access to Safari. 
+Go to the App store to download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) to your device. During enrollment, you'll also need a Wi-Fi connection and access to Safari. 
 
 If you pause for more than a few minutes during enrollment, the app might close or end setup. If this happens, open the Company Portal app and try again.  
 
@@ -125,6 +125,6 @@ You'll know that setup is complete when all items in the list show a green circl
 > If your organization monitors voice and data limits, or provides you with a company-owned device, you might have a few more steps to complete. If you're prompted to install the **Dataalet**, see [enrolling your device in telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is part of Apple's Device Enrollment Program, find out [how to enroll your company-owned device](enroll-your-device-dep-ios.md).  
 
 ## Next steps  
-Find apps that'll help you at work or school. Learn [how apps are made available](use-managed-apps-on-your-device-ios) to you through Company Portal.  
+Find apps that will help you at work or school. Learn [how apps are made available](use-managed-apps-on-your-device-ios) to you through Company Portal.  
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
