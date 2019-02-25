@@ -55,10 +55,11 @@ The Company Portal app for Windows now lets you initiate a sync directly from th
 Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date and installation status.  
 
 The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations. To see what the new view looks like, see [What's new in the UI](whats-new-app-ui.md).  
-### Improved Company Portal app experience for device enrollment managers  
+
+#### Improved Company Portal app experience for device enrollment managers  
 When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will now only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to show all DEM-enrolled devices.  
 
-### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
+#### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
 The Intune IT admin can enforce a specified list of Android manufacturers, and/or iOS models through Intune App Protection Policies. The IT admin can provide a semicolon separated list of manufacturers for Android policies and device models for iOS policies. Intune App Protection Policies are for Android and iOS only. There are two separate actions that can be performed on this specified list:
 - A block from app access on devices that are not specified.
 - Or, a selective wipe of corporate data on devices that are not specified. 
@@ -67,7 +68,7 @@ The user will be unable to access the targeted application if the requirements t
 
 On end-user devices, the Intune client will take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Client apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
 
-### Access to macOS Company Portal pre-release build <!-- 1734766 -->
+#### Access to macOS Company Portal pre-release build <!-- 1734766 -->
 Using Microsoft AutoUpdate, you can sign up to receive builds early by joining the Insider program. Signing up will enable you to use the updated Company Portal before it’s available to your end users. For more information, see the [Microsoft Intune blog](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
 
 ### Device configuration
