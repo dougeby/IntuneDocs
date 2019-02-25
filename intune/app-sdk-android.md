@@ -259,7 +259,7 @@ above). Javassist is used solely at build time when running the
 plugin. No Javassist code will be added to your app.
 
 > [!NOTE] 
-You must be using version 3.0 or newer of the Android Gradle plugin and Gradle 4.1 or newer.
+> You must be using version 3.0 or newer of the Android Gradle plugin and Gradle 4.1 or newer.
 
 ### Command Line Build Tool
 If your build uses Gradle, skip to the [next section](#class-and-method-replacements).
@@ -798,9 +798,8 @@ To configure your app and enable proper authentication, add the following to the
 ### ADAL metadata
 
 * **Authority** is the AAD authority in use. If this value is absent, the AAD public environment is used.
-> [!NOTE]
-> Do not set this field if your application is sovereign cloud aware.
-
+	> [!NOTE]
+	> Do not set this field if your application is sovereign cloud aware.
 
 * **ClientID** is the AAD ClientID (also known as Application ID) to be used. You should use your own app's ClientID if it is registered with Azure AD. If this value is absent, an Intune default is used.
 
@@ -855,7 +854,7 @@ Authority and NonBrokerRedirectURI may be specified if necessary.
 ### Conditional Access
 
 Conditional Access (CA) is an Azure Active Directory [feature](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) which can be used to control access to AAD resources. [Intune
-administrators can define CA rules](https://docs.microsoft.com/en-us/intune/conditional-access)
+administrators can define CA rules](https://docs.microsoft.com/intune/conditional-access)
 which allow resource access only from devices or apps which are
 managed by Intune. In order to ensure that your app is able to access
 resources when appropriate, it is necessary to follow the steps
@@ -864,14 +863,14 @@ only resources which cannot be CA-protected, you may skip these steps.
 
 1. Follow [ADAL integration guidelines](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    See especially Step 11 for Broker usage.
-2. [Register your application with Azure Active Directory] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
+2. [Register your application with Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    The redirect URI can be found in the ADAL integration guidelines above.
 3. Set the manifest meta-data parameters per [Common ADAL configurations](#common-adal-configurations), item 2, above.
-4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
+4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
     - That sign-in to your app prompts for installation and enrollment of the Intune Company Portal
     - That after enrollment, sign-in to your app completes successfully.
-5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based conditional access](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
-6. Once your app has been added to the approved list, validate by [Configuring app-based CA](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) and ensuring that sign-in to your app completes successfully.
+5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based conditional access](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
+6. Once your app has been added to the approved list, validate by [Configuring app-based CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) and ensuring that sign-in to your app completes successfully.
 
 ## App protection policy without device enrollment
 
@@ -966,21 +965,21 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 
 2. The `acquireToken()` method should acquire the access token for the requested resource ID for the given user. If it can't acquire the requested token, it should return null.
 
-> [!NOTE]
-> Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
+	> [!NOTE]
+	> Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
 
-```
-class MAMAuthCallback implements MAMServiceAuthenticationCallback {
-    public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
-    }
-}
-```
+	```
+	class MAMAuthCallback implements MAMServiceAuthenticationCallback {
+	    public String acquireToken(String upn, String aadId, String resourceId) {
+		return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+	    }
+	}
+	```
 
 3. In case the app is unable to provide a token when the SDK calls `acquireToken()`  -- for example, if silent authentication fails and it is an inconvenient time to show a UI -- the app can provide a token at a later time by calling the `updateToken()` method. The same UPN, AAD ID, and resource ID that were requested by the prior call to `acquireToken()` must be passed to `updateToken()`, along with the token that was finally acquired. The app should call this method as soon as possible after returning null from the provided callback.
 
-> [!NOTE]
-> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is strongly recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
+	> [!NOTE]
+	> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is strongly recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
 
 
 ### Account Registration
@@ -1004,7 +1003,7 @@ Result getRegisteredAccountStatus(String upn);
 
 ### Sovereign Cloud Registration
 
-Applications that are [sovereign cloud aware](https://www.microsoft.com/en-us/trustcenter/cloudservices/nationalcloud) **must** provide the `authority` to `registerAccountForMAM()`.  This can be obtained by providing `instance_aware=true` in ADAL's [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters followed by invoking `getAuthority()` on the AuthenticationCallback AuthenticationResult.
+Applications that are [sovereign cloud aware](https://www.microsoft.com/trustcenter/cloudservices/nationalcloud) **must** provide the `authority` to `registerAccountForMAM()`.  This can be obtained by providing `instance_aware=true` in ADAL's [1.14.0+](https://github.com/AzureAD/azure-activedirectory-library-for-android/releases/tag/v1.14.0) acquireToken extraQueryParameters followed by invoking `getAuthority()` on the AuthenticationCallback AuthenticationResult.
 
 ```java
 mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBehavior.FORCE_PROMPT, "instance_aware=true",
@@ -1179,7 +1178,7 @@ The `getComplianceStatus()` method returns the result of the compliance remediat
 | PENDING | The attempt to remediate compliance failed because the status response had not yet been received from the service when the time limit was exceeded. The app should try its token acquisition again later. |
 | COMPANY_PORTAL_REQUIRED | The Company Portal must be installed on the device in order for compliance remediation to succeed.  If the Company Portal is already installed on the device, the app needs to be restarted.  In this case, a dialog will be shown asking the user to restart the app. |
 
-If the compliance status is `MAMCAComplianceStatus.COMPLIANT`, the app should re-initiate its original token acquisition (for its own resource). If the compliance remediation attempt failed, the `getComplianceErrorTitle()` and `getComplianceErrorMessage()` methods will return localized strings that the app can display to the end user if it chooses.  Most of the error cases aren't remediable by the app, so for the general case it may be best to fail account creation or login and allow the user to try again later.  If a failure is persistent, the MAM logs may help determine the cause.  The end user can submit the logs using the directions found [here](https://docs.microsoft.com/en-us/intune-user-help/send-logs-to-your-it-admin-by-email-android "Email logs to your company support").
+If the compliance status is `MAMCAComplianceStatus.COMPLIANT`, the app should re-initiate its original token acquisition (for its own resource). If the compliance remediation attempt failed, the `getComplianceErrorTitle()` and `getComplianceErrorMessage()` methods will return localized strings that the app can display to the end user if it chooses.  Most of the error cases aren't remediable by the app, so for the general case it may be best to fail account creation or login and allow the user to try again later.  If a failure is persistent, the MAM logs may help determine the cause.  The end user can submit the logs using the directions found [here](https://docs.microsoft.com/intune-user-help/send-logs-to-your-it-admin-by-email-android "Email logs to your company support").
 
 Since `MAMComplianceNotification` extends `MAMUserNotification`, the identity of the user for whom the remediation was attempted is also available.
 
@@ -1211,7 +1210,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### Implementation Notes
 
 > [!NOTE]
-> The app's `MAMServiceAuthenticationCallback.acquireToken()` method must pass *true* for the new `forceRefresh` flag to `acquireTokenSilentSync()` to force a refresh from the broker.  This is to work around a caching issue with tokens in ADAL that can affect MAM Service tokens.  In general, this looks like:
+> The app's `MAMServiceAuthenticationCallback.acquireToken()` method must pass *true* for the new `forceRefresh` flag to `acquireTokenSilentSync()` to force a refresh from the broker.  This is to work around a caching issue with tokens in ADAL that can affect MAM Service tokens. In general, this looks like:
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
 ```
