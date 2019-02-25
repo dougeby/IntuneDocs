@@ -84,4 +84,5 @@ The current version supports the following OData query parameters: `$filter`, `$
 |    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Return data with `DateKey` equal to 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Return data with `DateKey` between 20180214 and 20180220.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Return data with `DateKey` equal to 20180214. `maxhistorydays` is ignored.                            |
-|    `$filter=DateKey ne 20180214`                                 |    N/A                                       |    Bad rquest.                              |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Full                                       |    Return data with `RowLastModifiedDateTimeUTC` is greater than or equal to `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=DateKey ne 20180214`                                 |    N/A                                       |    Bad request.                              |
