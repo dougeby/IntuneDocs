@@ -27,10 +27,12 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
-> [!IMPORTANT]
-> Apple has recently made some changes that affect Company Portal enrollment for devices running iOS 12.1.1 beta.  If you're using 12.1.1 beta, the screens that appear in this article might not match with your experience in Company Portal. For these steps, please use the alternative instructions that are specific to **iOS version 12.1.1 and later**. If you're an IT pro or administrator, and want to learn how you can prepare device users for these changes, see the [Microsoft Tech Community](https://go.microsoft.com/fwlink/?linkid=2078666&clcid=0x409).  
 
-# Set up iOS device access to your company resources
+
+# Set up iOS device access to your company resources  
+
+> [!IMPORTANT]
+> Apple has recently made some changes that affect Company Portal enrollment for devices running iOS 12.1.1 beta.  If you're an IT pro or administrator, and want to learn how you can prepare device users for these changes, see the [Microsoft Tech Community](https://go.microsoft.com/fwlink/?linkid=2078666&clcid=0x409).   
 
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
