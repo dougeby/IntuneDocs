@@ -106,7 +106,7 @@ If prompted, enter your device password and then tap **Install** again.
 
     ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
 
-10. After installation is complete, tap **Done**. To verify that the profile was installed, go to the app's **Profiles & Device Management** settings check that it's listed under **Mobile Device Management**.   
+10. After installation is complete, tap **Done**. To verify that the profile was installed, go to the **Profiles & Device Management** settings. Check that the profile is listed under **Mobile Device Management**.   
 
     ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
 
