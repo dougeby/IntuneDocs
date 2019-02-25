@@ -31,6 +31,191 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+
+<!-- ########################## -->
+## September 2018
+
+### App management
+
+#### Remove duplication of app protection status tiles <!-- 3083391 -->
+The **User status for iOS** and the **User status for Android** tiles were present in both the **Client Apps - Overview** page, as well as the **Client Apps - App protection status** page. The status tiles have been removed from the **Client Apps - Overview** page to avoid duplication. 
+
+### Device configuration
+
+#### Support for more third-party certification authorities (CA) <!-- 3093107 -->
+By using the Simple Certificate Enrollment Protocol (SCEP), you can now issue new certificates and renew certificates on mobile devices using Windows, iOS, Android, and macOS.
+
+### Device enrollment
+
+#### Intune moves to support iOS 10 and later <!-- 2454656 -->  
+Intune enrollment, the Company Portal, and the managed browser now only support iOS devices running iOS 10 and later. To check for devices or users that are affected in your organization, go to Intune in the Azure portal > **Devices** > **All devices**. Filter by OS and then click **Columns** to surface OS version details. Ask these users to upgrade their devices to a supported OS version.  
+
+If you have any of the devices listed below, or want to enroll any of the devices listed below, be aware that they only support iOS 9 and earlier.  To continue to access the Intune Company Portal, you must upgrade these devices to devices that support iOS 10 or later:  
+
+* iPhone 4S 
+* iPod Touch  
+* iPad 2 
+* iPad (3rd Generation) 
+* iPad Mini (1st Generation)  
+
+### Device management
+
+#### Microsoft 365 Device Management administration center <!-- 3078424 -->
+One of the promises of Microsoft 365 is simplified administration, and over the years we’ve integrated the back-end Microsoft 365 services to deliver end-to-end scenarios such as Intune and Azure AD conditional access. The new [Microsoft 365 administration center](http://devicemanagement.microsoft.com) is the place to consolidate, simplify, and integrate the admin experience. The specialist workspace for Device Management provides easy access to all of the device and app management information and tasks that your organization needs. We expect this to become the primary cloud workspace for enterprise end user computing teams.
+
+
+<!-- ########################## -->
+## August 2018
+
+### App management
+
+#### Packet tunnel support for iOS per-app VPN profiles for custom and Pulse Secure connection types <!-- 1520957 -->
+When using iOS per-app VPN profiles, you can choose to use app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). These options are available with the following connection types:
+- Custom VPN
+- Pulse Secure
+If you are not sure which value to use, consult your VPN provider's documentation.
+
+#### Delay when iOS software updates are shown on the device <!-- 1949583 -->
+In Intune > **Software Updates** > **Update policies for iOS**, you can configure the days and times when you don't want devices to install any updates. In a future update, you'll be able to delay when a software update is visibly shown on the device, from 1-90 days. 
+[Configure iOS update policies in Microsoft Intune](software-updates-ios.md) lists the current settings.
+
+#### Office 365 ProPlus version <!-- 2213968 -->
+When assigning the Office 365 ProPlus apps to Windows 10 devices using Intune, you will be able to select the version of Office. In the Azure portal, select **Microsoft Intune** > **Apps** > **Add App**. Then, select **Office 365 ProPlus Suite (Windows 10)** from the **Type** dropdown list. Select **App Suite Settings** to display the associated blade. Set the **Update Channel** to a value, such as **Monthly**. Optionally, remove other version of Office (msi) from end user devices by selecting **Yes**. Select **Specific** to install a specific version of Office for the selected channel on end user devices. At this point, you can select the **Specific version** of Office to use. The available versions will change over time. Therefore, when creating a new deployment, the versions available may be newer and not have certain older versions available. Current deployments will continue to deploy the older version, but the version list will be continually updated per channel. For more information, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
+
+#### Support for Register DNS setting for Windows 10 VPN <!-- 2282852 -->
+With this update, you can configure Windows 10 VPN profiles to dynamically register the IP addresses assigned to the VPN interface with the internal DNS, without needing to use custom profiles.
+For information about the current VPN profile settings available, see [Windows 10 VPN settings](vpn-settings-windows-10.md). 
+
+#### The macOS Company Portal installer now includes the version number in the installer file name <!--2652728-->
+
+#### iOS automatic app updates <!-- 2729759 -->
+Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
+
+### Device configuration
+
+#### Windows Hello will target users and devices <!-- 1106609 -->
+When you create a [Windows Hello for Business](windows-hello.md) policy, it applies to all users within the organization (tenant-wide). With this update, the policy can also be applied to specific users or specific devices using a device configuration policy (**Device Configuration** > **Profiles** > **Create profile** > **Identity Protection** > **Windows Hello for Business**).
+In Intune in the Azure portal, the Windows Hello configuration and settings now exists in both **Device enrollment** and **Device configuration**. **Device enrollment** targets the entire organization (tenant-wide), and supports Windows AutoPilot (OOBE). **Device configuration** targets devices and users using a policy that's applied during check-in.
+This feature applies to:  
+- Windows 10 and later
+- Windows Holographic for Business
+
+#### Zscaler is an available connection for VPN profiles on iOS <!-- 1769858 -->
+When you create an iOS VPN device configuration profile (**Device configuration** > **Profiles** > **Create profile** > **iOS** platform > **VPN** profile type), there are several connection types, including Cisco, Citrix, and more. This update adds Zscaler as a connection type. 
+[VPN settings for devices running iOS](vpn-settings-ios.md) lists the available connection types.
+
+#### FIPS mode for Enterprise Wi-Fi profiles for Windows 10 <!-- 1879077 -->
+You can now enable Federal Information Processing Standards (FIPS) mode for Enterprise Wi-Fi profiles for Windows 10 in the Intune Azure portal. Be sure FIPS mode is enabled on your Wi-Fi infrastructure if you enable it in your Wi-Fi profiles.
+[Wi-Fi settings for Windows 10 and later devices in Intune](wi-fi-settings-windows.md) shows you how to create a Wi-Fi profile.
+
+#### Control S-mode on Windows 10 and later devices - public preview <!-- 1958649 -->
+With this feature update, you can create a device configuration profile that switches a Windows 10 device out of S-mode, or prevent users from switching the device out of S-mode. This feature is in Intune > **Device configuration** > **Profiles** >  **Windows 10 and later** > **Edition upgrade and mode switch**.
+[Introducing Windows 10 in S mode](https://www.microsoft.com/windows/s-mode) provides more information on S mode.
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
+
+#### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
+When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you previously had to download a configuration package, and add it to your configuration profile. With this update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
+Applies to Windows 10 and later.
+
+#### Require users to connect during device setup <!--2311457-->
+You can now set device profiles to require that the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
+
+#### Restricts apps, and block access to company resources on iOS and Android Enterprise devices <!-- 2451462 -->
+In **Device compliance** > **Policies** > **Create policy** > **iOS** > **System Security**, there is a new **Restricted applications** setting. This new setting uses a compliance policy to block access to company resources if certain apps are installed on the device. The device is considered non-compliant until the restricted apps are removed from the device.
+Applies to: iOS
+
+#### Modern VPN support updates for iOS <!-- 2459928, 1819876, and 2650856 -->
+This update adds support the following iOS VPN clients: 
+- F5 Access (version 3.0.1 and higher)
+- Citrix SSO
+- Palo Alto Networks GlobalProtect version 5.0 and higher
+Also in this update:
+- Existing **F5 Access** connection type is renamed to **F5 Access Legacy** for iOS.
+- Existing **Palo Alto Networks GlobalProtect** connection type is renamed to **Palo Alto Networks GlobalProtect (legacy)** for iOS.
+Existing profiles with these connection types continue to work with their respective legacy VPN client. If you're using Cisco Legacy AnyConnect, F5 Access Legacy, Citrix VPN, or Palo Alto Networks GlobalProtect version 4.1 and earlier with iOS, you should move to the new apps. Do this as soon as possible to ensure that VPN access is available for iOS devices as they update to iOS 12.
+For more information about iOS 12 and VPN profiles, see the [Microsoft Intune Support Team Blog](https://go.microsoft.com/fwlink/?linkid=2013806).
+
+#### Export Azure classic portal compliance policies to recreate these policies in the Intune Azure portal <!-- 2469637 -->
+Compliance policies created in the Azure classic portal will be deprecated. You can review and delete any existing compliance policies, however you can't update them. If you need to migrate any compliance policies to the current Intune Azure portal, you can export the policies as a comma-separated file (*.csv* file). Then, use the details in the file to recreate these policies in the Intune Azure portal.
+
+> [!IMPORTANT]
+> When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
+
+#### Better Mobile - New Mobile Threat Defense partner <!-- 22662717 -->
+You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+
+### Device enrollment
+
+#### Lock the Company Portal in single app mode until user sign-in <!--1067692 --> 
+You now have the option to run the Company Portal in Single App mode if you authenticate a user through the Company Portal instead of Setup Assistant during DEP enrollment. This option locks the device immediately after Setup Assistant completes so that a user must sign in to access the device. This process makes sure that the device completes onboarding and is not orphaned in a state without any user tied.
+
+#### Assign a user and friendly name to an Autopilot device <!--1346521 -->
+You can now [assign a user to a single Autopilot device](enrollment-autopilot.md). Admins will also be able to give friendly names to greet the user when setting up their device with Autopilot.
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
+
+#### Use VPP device licenses to pre-provision the Company Portal during DEP enrollment <!-- 1608345 -->
+You can now use Volume Purchase Program (VPP) device licenses to pre-provision the Company Portal during Device Enrollment Program (DEP) enrollments. To do so, when you [create or edit an enrollment profile](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), specify the VPP token that you want to use to install the Company Portal. Make sure that your token doesn't expire and that you have enough licenses for the Company Portal app. In cases where the token expires or runs out of licenses, Intune will push the App Store Company Portal instead (this will prompt for an Apple ID).
+
+#### Confirmation required to delete VPP token that is being used for Company Portal pre-provisioning <!-- 2237634 -->
+A confirmation is now required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
+
+#### Block Windows personal device enrollments <!-- 1849498 -->
+You can [block Windows personal devices](enrollment-restrictions-set.md#set-device-type-restrictions) from enrolling with [mobile device management](windows-enroll.md) in Intune. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature. This feature is rolling out over the next couple weeks so you might not see it immediately in the user interface.
+
+#### Specify machine name patterns in an Autopilot profile <!--1849855-->
+You can [specify a computer name template](enrollment-autopilot.md#create-an-autopilot-deployment-profile) to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
+
+#### For Windows Autopilot profiles, hide the change account options on the company sign-in page and domain error page <!--1901669 -->
+There are [new Windows Autopilot profile options](enrollment-autopilot.md#create-an-autopilot-deployment-profile) for admins to hide the change account options on the company sign-in and domain error pages. Hiding these options requires Company Branding to be configured in Azure Active Directory. 
+Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
+
+### macOS support for Apple Device Enrollment Program <!-- 747651 -->
+Intune now supports enrolling macOS devices into the Apple Device Enrollment Program (DEP). For more information, see [Automatically enroll macOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-macos.md).
+
+### Device management
+
+#### Delete Jamf devices <!-- 2653306-->
+You can delete JAMF-managed devices by going to **Devices** > choose the Jamf device > **Delete**.
+
+#### Change terminology to "retire" and "wipe" <!-- 2175759 -->
+To be consistent with the Graph API, the Intune user interface and documentation has changed the following terms:
+- **Remove company data** will be changed to "retire"
+- **Factory reset** will be changed to **wipe**
+
+#### Confirmation dialog if admin tries to delete MDM Push Certificate <!-- 297909500-->
+If anyone tries to delete an Apple MDM Push certificate, a confirmation dialog box displays the number of related iOS and macOS devices. If the certificate is deleted, these devices will need to be re-enrolled.
+
+#### Additional security settings for Windows installer <!-- 2282430 -->
+You can allow users to control app installs. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue. You can direct the Windows installer to use elevated permissions when it installs any program on a system. Additionally, you can enabled Windows Information Protection (WIP) items to be indexed and the metadata about them stored in an unencrypted location. When the policy is disabled, the WIP protected items are not indexed and do not show up in the results in Cortana or file explorer. The functionality for these options are disabled by default. 
+
+#### New user experience update for the Company Portal website <!--2000968 -->
+We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site&ndash;such as device details, feedback and support, and device overview&ndash;have received a new, modern, responsive design. You'll also see:
+
+- Streamlined workflows across all device platforms
+- Improved device identification and enrollment flows
+- More helpful error messages
+- Friendlier language, less tech jargon
+- Ability to share direct links to apps
+- Improved performance for large app catalogs
+- Increased accessibility for all users  
+
+The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes. To view an example of the app enhancements, see [UI updates for Intune end-user apps](whats-new-app-ui.md).  
+
+### Monitor and troubleshoot
+
+#### Enhanced jailbreak detection in compliance reporting<!-- 2198738 -->
+The enhanced jailbreak detection setting states now appears in all compliance reporting in the admin console.
+
+### Role-based access control
+
+#### Scope tags for policies <!--1081974 -->
+You can [create scope tags](scope-tags.md) to limit access to Intune resources. Add a scope tag to a role assignment and then add the scope tag to a configuration profile. The role will only have access to resources with configuration profiles that have matching scope tags (or no scope tag).
+
+
+
+
+
 <!-- ########################## -->
 ## July 2018
 
