@@ -31,10 +31,31 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+<!-- ########################## -->
+## May 2018
 
+### App management
 
+#### Configuring your app protection policies <!-- 2144597 Part 2 -->
 
+In the Azure portal, instead of going to the Intune App Protection service blade, you now just go to Intune. There is now only one location for app protection policies within Intune. Note that all of your app protection policies are on the **Mobile app** blade in Intune under **App protection policies**. This integration helps to simplify your cloud management administration. Remember, all app protection policies are already in Intune and you can modify any of your previously configured policies. Intune App Policy Protection (APP) and Conditional Access (CA) policies are now under **Conditional access**, which can be found under the **Manage** section in the **Microsoft Intune** blade or under the **Security** section in the **Azure Active Directory** blade. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md)
 
+### Device configuration
+
+#### Require installation of policies, apps, certificate and network profiles <!-- 1553555 -->
+Admins can block end users from accessing the Windows 10 RS4 desktop until Intune installs policies, apps, and certificate and network profiles during the provisioning of AutoPilot devices. For more info, see [Set up an enrollment status page](windows-enrollment-status.md).
+
+### Device enrollment
+
+#### Samsung Knox mobile enrollment support <!--1112863-->
+When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
+
+### Monitor and troubleshoot 
+
+#### Requesting help in the Company Portal for Windows 10 <!-- 1874137 -->
+The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
+
+<!-- ########################## -->
 ## April 2018
 
 ### App management
@@ -223,7 +244,7 @@ For more information see [Send errors for macOS](/intune-user-help/send-errors-m
 #### Intune adapts to Fluent Design System in the Company Portal app for Windows 10 <!-- 1195010 -->
 The Intune Company Portal app for Windows 10 has been updated with the [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). Along the side of the app, you'll notice a static, vertical list of all top-level pages. Click any link to quickly view and switch between pages. This is the first of several updates you'll see as part of our ongoing effort to create a more adaptive, empathetic, and familiar experience in Intune. To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
-
+<!-- ########################## -->
 ## March 2018
 
 ### App management
@@ -434,6 +455,7 @@ As part of our effort to give end users more control over their data and privacy
 - **iOS**: [Remove your iOS device from Intune](/intune-user-help/unenroll-your-device-from-intune-ios)
 - **Windows**: [Remove your Windows device from Intune](/intune-user-help/unenroll-your-device-from-intune-windows)
 
+<!-- ########################## -->
 ## February 2018
 
 ### Device enrollment
@@ -568,7 +590,7 @@ Offline apps that you purchased from the Microsoft Store for Business are now sy
 
 When you deploy the Gmail app into an Android for Work profile, you can now prevent end users from manually adding or removing accounts in the work profile by using the **Add and remove accounts** setting in the Android for Work Device restrictions profile.
 
-
+<!-- ########################## -->
 ## January 2018
 
 ### Device enrollment
@@ -634,6 +656,7 @@ End users can now remotely lock their devices from the Company Portal app for Wi
 #### Easier resolution of compliance issues for the Company Portal app for Windows 10 <!--676546-->
 End users with Windows devices will be able to tap the noncompliance reason in the Company Portal app. When possible, this will take them directly to the correct location in the settings app to fix the issue.
 
+<!-- ########################## -->
 ## December 2017
 
 ### Device configuration
@@ -756,7 +779,7 @@ In this release, we've updated a few of the Graph API's for Intune that are in b
 #### Intune supports Windows Information Protection (WIP) denied apps <!-- 1479103 -->
 You can specify denied apps in Intune. If an app is denied, it is blocked from accessing corporate information, effectively the opposite of the allowed apps list. For more information, see [Recommended deny list for Windows Information Protection](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp?f=255&MSPPError=-2147217396#recommended-deny-list-for-windows-information-protection).
 
-
+<!-- ########################## -->
 ## November 2017
 
 ### Troubleshoot enrollment issues  <!-- 746324 -->
@@ -1050,7 +1073,7 @@ The device setup workflow has been improved in the Company Portal app for iOS. T
 ### User entity contains latest user data in Data Warehouse data model <!-- 1544273 -->
 The first version of the Intune Data Warehouse data model only contained recent, historical Intune data. Report makers could not capture the current state of a user. In this update, the **User entity** is populated with the latest user data.
 
-
+<!-- ########################## -->
 ## October 2017
 
 ### iOS and Android line-of-business app version number is visible <!-- 1380712 -->

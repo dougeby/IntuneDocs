@@ -48,6 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 -->     
 
+<!-- ########################## -->
 ## Week of February 18, 2019
 
 ### App management
@@ -194,7 +195,7 @@ The **Failed enrollments** report has been moved to the **Monitor** section of t
 The **Company Portal abandonment** report has been renamed to **Incomplete user enrollments**.
 
 
-
+<!-- ########################## -->
 ## Week of February 4, 2019
 
 ### App management
@@ -202,6 +203,7 @@ The **Company Portal abandonment** report has been renamed to **Incomplete user 
 #### Intune macOS Company Portal Dark Mode <!-- 3300524  -->
 The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors that reflect that mode.
 
+<!-- ########################## -->
 ## Week of January 21, 2019
 
 ### App management
@@ -313,11 +315,13 @@ If you create a new profile or edit a profile, the selected skip screens need to
 #### Android Enterprise APP-WE app deployment <!-- 1171203 -->
 For Android devices in a non-enrolled App Protection Policy Without Enrollment (APP-WE) deployment scenario, you can now use managed Google Play to deploy store apps and LOB apps to users. Specifically, you can provide end users with an app catalog and installation experience that no longer requires end users to loosen the security posture of their devices by allowing installations from unknown sources. In addition, this deployment scenario will provide an improved end user experience.
 
+<!-- ########################## -->
 ## Week of January 14, 2019
 
 ### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
 Intune now supports fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. For more information, see [Set up Intune enrollment of Android fully managed devices](android-fully-managed-enroll.md) and [Enroll your dedicated devices or fully managed devices](android-dedicated-devices-fully-managed-enroll.md).  Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
+<!-- ########################## -->
 ## Week of January 7, 2019
 
 ### App management
@@ -450,8 +454,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 #### Scope tags for apps <!-- 1081941 -->
 You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (but support will come in the future). For more information, see [Use scope tags to filter policies](scope-tags.md).
 
-
-
+<!-- ########################## -->
 ## Week of December 10, 2018
 
 ### App management
@@ -1320,30 +1323,6 @@ On Microsoft Intune MDM-managed devices, sometimes app installations can fail. W
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
 The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
-
-## Week of May 14, 2018
-
-### App management
-
-#### Require installation of policies, apps, certificate and network profiles <!-- 1553555 -->
-
-Admins can block end users from accessing the Windows 10 RS4 desktop until Intune installs  policies, apps, and certificate and network profiles during the provisioning of AutoPilot devices. For more info, see [Set up an enrollment status page](windows-enrollment-status.md).
-
-#### Configuring your app protection policies <!-- 2144597 Part 2 -->
-
-In the Azure portal, instead of going to the Intune App Protection service blade, you now just go to Intune. There is now only one location for app protection policies within Intune. Note that all of your app protection policies are on the **Mobile app** blade in Intune under **App protection policies**. This integration helps to simplify your cloud management administration. Remember, all app protection policies are already in Intune and you can modify any of your previously configured policies. Intune App Policy Protection (APP) and Conditional Access (CA) policies are now under **Conditional access**, which can be found under the **Manage** section in the **Microsoft Intune** blade or under the **Security** section in the **Azure Active Directory** blade. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md)
-
-## Week of May 7, 2018
-
-### App management
-
-#### Samsung Knox mobile enrollment support <!--1112863-->
-
-When using Intune with Samsung Knox Mobile Enrollment (KME), you can enroll large numbers of company-owned Android devices. Users on WiFi or cellular networks can enroll with just a few taps when they turn on their devices for the first time. When using the Knox Deployment App, devices can be enrolled using Bluetooth or NFC. For more information, see [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
-
-#### Requesting help in the Company Portal for Windows 10 <!-- 1874137 -->
-
-The Company Portal for Windows 10 will now send app logs directly to Microsoft when the user initiates the workflow to get help with an issue. This will make it easier to troubleshoot and resolve issues that are raised to Microsoft.
 
 ## Notices
 
