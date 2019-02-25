@@ -51,10 +51,10 @@ The Company Portal branding page has a new layout, messages, and tooltips.
 
 ### Device configuration
 
-### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
+#### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
-### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
+#### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
 When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates didn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
 
 This update also includes:
@@ -143,14 +143,6 @@ On Microsoft Intune MDM-managed devices, sometimes app installations can fail. W
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
 The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
-
-
-
-
-
-
-
-
 
 <!-- ########################## -->
 ## May 2018
