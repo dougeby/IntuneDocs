@@ -1568,7 +1568,7 @@ https://aka.ms/Delay_visibility_setting_iOS
 ###  Upcoming change to the Intune Data Warehouse API
 We will be making two changes during the 1903 timeframe:
 - Beta Filter Deprecation<br>
-    Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
+    Deprecation of unsupported beta filters instantiated.   
 - 1.0 changes reflecting back to beta<br>
     Changes made to our v1.0 collections will now be reflected in beta.  
 
