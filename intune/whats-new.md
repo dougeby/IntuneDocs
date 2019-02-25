@@ -97,6 +97,9 @@ macOS
 #### Assign SCEP certificates to a userless macOS device    <!-- 2340521    -->
 You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-scep-configure.md#create-a-scep-certificate-profile) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
 
+Applies to: 
+- macOS
+
 #### Intune conditional access UI update   <!-- 2432313   -->
 We've made improvements to the UI for conditional access in the Intune console. These include:
 -  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access](conditional-access.md) (which remains an Azure AD technology), from within the Intune console. 
@@ -138,7 +141,7 @@ Applies to:
 - macOS
 
 #### "Kiosk" devices are now called "Dedicated devices" on Android Enterprise devices <!-- 3598402   -->
-To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > ** Device Owner Only > Device Restrictions** > **Dedicated devices**).
+To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > **Device Owner Only** > **Device Restrictions** > **Dedicated devices**).
 
 To see the available settings, go to [Device settings to allow or restrict features](device-restrictions-android-for-work.md#dedicated-device-settings).
 
