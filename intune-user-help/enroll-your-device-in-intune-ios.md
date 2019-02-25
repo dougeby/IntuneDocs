@@ -34,9 +34,9 @@ ms.collection: M365-identity-device-management
 
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
-Before you can access proprietary data from a coporate or personal device, you're required to get your device managed. After your device becomes managed, your organization will assign policies and apps to the device through a mobile device management (MDM) provider, such as Intune. 
+Before you can access proprietary data from a corporate or personal device, you're required to get your device managed. After your device becomes managed, your organization will assign policies and apps to the device through a mobile device management (MDM) provider, such as Intune. 
 
-To maintain access to work or school information from your device, you must configure your device to match your organization's preferred settings. This article describes how Company Portal helps you enroll, configure, and maintain your device to meet these requirements. 
+To maintain access to work or school information from your device, you must configure your device to match your organization's preferred settings. This article describes how to use Company Portal to enroll you device and maintain your organization's setting requirements. 
 
 > [!NOTE]
 > If you tried to access company email in the Mail app, and received a prompt to get your device managed, you're in the right place. Follow the instructions below to get access to your email and other company resources on your iOS device.  
@@ -63,9 +63,9 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
 ![Example screenshot of Company Portal app, Sign in.](./media/ios-01-cp-enroll-1903.PNG)  
 
-2. When prompted to receive Compant Portal notifications, tap **Allow.** Company Portal might notify you if, for example, your device settings don't meet need to be updated. 
+2. When prompted to receive Company Portal notifications, tap **Allow.** Company Portal might notify you if, for example, your device settings don't meet need to be updated. 
 
-![Example screeenshot of Company Portal home page, "Notifications" prompt.](./media/ios-04-cp-enroll-1903.PNG)  
+![Example screenshot of Company Portal home page, "Notifications" prompt.](./media/ios-04-cp-enroll-1903.PNG)  
 
 3. On the **Set up access** screen, select **Begin.**  
 
@@ -79,7 +79,7 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
 ![Example screenshot of Company Portal app, "What's next", with Continue button.](./media/ios-07-cp-enroll-1903.PNG)
 
-6. Safari opens the Company Portal website and prompts you to download the management profile (also referred to as a *configuration profle*). Tap **Allow**. 
+6. Safari opens the Company Portal website and prompts you to download the management profile. Tap **Allow**. 
 
 ![Example screenshot of Safari prompt to Ignore or Allow configuration profile download.](./media/ios-09-cp-enroll-1903.PNG)  
 
@@ -96,15 +96,15 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
 ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)
 
-![Example screenshot of the Settings app, Management Profile setting, showing the Install button in top right corner.](./media/ios-11-cp-enroll-1903.PNG)  
+![Example screenshot of the Settings app, Management Profile setting, showing the Install button in top-right corner.](./media/ios-11-cp-enroll-1903.PNG)  
 
-9. The next screen that appears is a standard system warning for device management. To learn more about what your organization can and can't see on your device, refer to [this Intune topic](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If prompted to trust remote management, tap **Trust**.  
+9. The next screen that appears is a standard system warning for device management. To learn more about what your organization can and can't see on your device, refer to [this Intune topic](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If you're prompted to trust remote management, tap **Trust**.  
 
 ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
 
 10. After installation is complete, tap **Done**. To verify that the profile was installed, go to the app's **Profiles & Device Management** settings check that it's listed under **Mobile Device Management**.   
 11. Return to the **Company Portal** app's **What's next?** screen and tap **Continue**.  
-1. Company Portal will begin to sync and setup your device. A yellow triangle appears to let you know when you need to adjust a setting on your device. You'll know that setup is complete when all items in the list show a green circle.  
+1. Company Portal will begin to sync and set up your device. A yellow triangle appears if your device still needs to sync or if you need to adjust device settings. You'll know that setup is complete when all items in the list show a green circle.  
 
 ![Example screenshot of Company Portal, "Set up access" screen, with yellow triangle next to setting requirement.](./media/ios-12-cp-enroll-1903.PNG)  
 
