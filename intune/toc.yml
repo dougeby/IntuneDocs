@@ -196,17 +196,17 @@
       items:
       - name: Set up Android enrollment
         href: android-enroll.md
-      - name: Connect Intune to Android enterprise
+      - name: Connect Intune to Android Enterprise
         href: connect-intune-android-enterprise.md
-      - name: Set up Android work profile enrollment
+      - name: Android Enterprise work profile enrollment
         href: android-work-profile-enroll.md
-      - name: Set up Android dedicated device enrollment
+      - name: Android Enterprise dedicated device enrollment
         href: android-kiosk-enroll.md
-      - name: Set up Android fully managed enrollment
+      - name: Android Enterprise fully managed enrollment
         href: android-fully-managed-enroll.md
-      - name: Enroll Android dedicated devices or fully managed devices
+      - name: Enroll Android Enterprise dedicated devices or fully managed devices
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Manage Android work profile devices
+      - name: Manage Android Enterprise work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 
         href: android-samsung-knox-mobile-enroll.md
@@ -226,7 +226,7 @@
         href: device-enrollment-program-enroll-macos.md
     - name: Install Intune software client on Windows PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Abandonment report
+    - name: Incomplete enrollment report
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
@@ -249,6 +249,8 @@
       href: device-remote-lock.md
     - name: Reset passcode
       href: device-passcode-reset.md
+    - name: Rename device
+      href: device-rename.md
     - name: Restart device
       href: device-restart.md
     - name: Logout current user
@@ -577,6 +579,8 @@
             href: app-protection-policies-exception.md
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
+        - name: App protection policy delivery
+          href: app-protection-policy-delivery.md          
         - name: Monitor app protection user status
           href: app-protection-policies-monitor.md
         - name: Get ready for WIP app protection policies
