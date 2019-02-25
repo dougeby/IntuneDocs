@@ -52,13 +52,13 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 
 ### App management
 
-#### Intune will leverage Google Play Protect APIs on Android devices <!-- 2577355 eeready wnready -->
+#### Intune will leverage Google Play Protect APIs on Android devices <!-- 2577355   -->
 Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
 
-#### Win32 app information available in Troubleshooting blade <!-- 2617342 eeready wnready -->
+#### Win32 app information available in Troubleshooting blade <!-- 2617342   -->
 You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps-win32-app-management.md#troubleshoot-win32-app-issues).
 
-#### App status details for iOS apps <!-- 3761235 eeready wnready -->
+#### App status details for iOS apps <!-- 3761235   -->
 There are new app installation error messages related to the following:
 - Failure for VPP apps when installing on shared iPad
 - Failure when app store is disabled
@@ -69,7 +69,7 @@ There are new app installation error messages related to the following:
 
 In Intune, select **Client apps** > **Apps** > "App name" > **Device install status**. New error messages will be available in the **Status details** column.
 
-#### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 wnready -->
+#### New App categories screen in the Company Portal app for Windows 10<!-- 3834780  -->
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
@@ -78,7 +78,7 @@ Access your Intune Data Warehouse in Power BI Online using the [Intune Complianc
 
 ### Device configuration
 
-#### PowerShell scripts can run in a 64-bit host on 64-bit devices <!-- 1862675 eeready wnready -->
+#### PowerShell scripts can run in a 64-bit host on 64-bit devices <!-- 1862675   -->
 When you add a PowerShell script to a device configuration profile, the script always executes in 32-bit, even on 64-bit operating systems. With this update, an administrator can run the script in a 64-bit PowerShell host on 64-bit devices (**Device configuration** > **PowerShell scripts** > **Add** > **Configure** > **Run script in 64 bit PowerShell Host**).
 
 For more details on using PowerShell, see [PowerShell scripts in Intune](intune-management-extension.md).
@@ -94,15 +94,18 @@ Any new or existing password policy changes by the administrator prompts end use
 Applies to:  
 macOS
 
-#### Assign SCEP certificates to a userless macOS device    <!-- 2340521  WNready  -->
+#### Assign SCEP certificates to a userless macOS device    <!-- 2340521    -->
 You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-scep-configure.md#create-a-scep-certificate-profile) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
 
-#### Intune conditional access UI update   <!-- 2432313  WNready -->
+Applies to: 
+- macOS
+
+#### Intune conditional access UI update   <!-- 2432313   -->
 We've made improvements to the UI for conditional access in the Intune console. These include:
--  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access]( (which remains an Azure AD technology),from within the Intune console. 
+-  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access](conditional-access.md) (which remains an Azure AD technology), from within the Intune console. 
 - We've renamed the *On-premises access* blade to *Exchange access*, and relocated the *Exchange service connector* setup to this renamed blade.  This change consolidates where you [configure and monitor details related to Exchange online and on-premises](exchange-connector-install.md).  
 
-#### Kiosk Browser and Microsoft Edge Browser apps can run on Windows 10 devices in kiosk mode <!-- 2935135 eeready wnready -->
+#### Kiosk Browser and Microsoft Edge Browser apps can run on Windows 10 devices in kiosk mode <!-- 2935135   -->
 You can use Windows 10 devices in kiosk mode to run one app, or many apps. This update includes several changes to using browser apps in kiosk mode, including:
 
 - Add the Microsoft Edge Browser or Kiosk Browser to run as apps on the kiosk device (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Kiosk** for profile type).
@@ -124,7 +127,7 @@ For a list of these settings, see:
 Applies to:
 Windows 10 and later
 
-#### New device restriction settings for iOS and macOS devices <!-- 3448774 eeready wnready -->
+#### New device restriction settings for iOS and macOS devices <!-- 3448774   -->
 You can restrict some settings and features on devices running iOS and macOS (**Device configuration** > **Profiles** > **New profile** > **iOS** or **macOS** for platform > **Device restrictions** for profile type). This update adds more features and settings you can control, including setting screen time, changing eSIM settings and cellular plans, and more on iOS devices. Also, delaying the user's visibility of software updates and blocking content caching on macOS devices. 
 
 To see the features and settings you can restrict, see:
@@ -137,15 +140,15 @@ Applies to:
 - iOS
 - macOS
 
-#### "Kiosk" devices are now called "Dedicated devices" on Android Enterprise devices <!-- 3598402 eeready wnready -->
-To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > ** Device Owner Only > Device Restrictions** > **Dedicated devices**).
+#### "Kiosk" devices are now called "Dedicated devices" on Android Enterprise devices <!-- 3598402   -->
+To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > **Device Owner Only** > **Device Restrictions** > **Dedicated devices**).
 
 To see the available settings, go to [Device settings to allow or restrict features](device-restrictions-android-for-work.md#dedicated-device-settings).
 
 Applies to:  
 Android Enterprise
 
-#### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313 eeready wnready -->
+#### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313   -->
 For iOS devices, you can set Safari settings and configure Software Updates. In this update, these settings are moving to different parts of the Intune UI:
 
 - The Safari settings moved from **Safari** (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type) to **[Built-in Apps](device-restrictions-ios.md#built-in-apps)**.
@@ -160,7 +163,7 @@ This feature applies to:
 
 - iOS
 
-#### Enabling restrictions in the device settings is renamed to Screen Time on iOS devices <!-- 3699164 eeready wnready -->
+#### Enabling restrictions in the device settings is renamed to Screen Time on iOS devices <!-- 3699164   -->
 You can configure the **Enabling restrictions in the device settings** on supervised iOS devices (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type > **General**). In this update, this setting is renamed to **Screen Time (supervised only)**. 
 
 The behavior is the same. Specifically: 
@@ -176,18 +179,18 @@ Applies to:
 
 ### Device management
 
-#### Rename an enrolled Windows device <!-- 1911112 eeready wnready-->
+#### Rename an enrolled Windows device <!-- 1911112  -->
 You can now rename an enrolled Windows 10 device (RS4 or later). To do, choose **Intune** > **Devices** > **All devices** > choose a device > **Rename device**.
 
-#### Auto-assign scope tags to resources created by an admin with that scope <!-- 3173823 eeready wnready-->
+#### Auto-assign scope tags to resources created by an admin with that scope <!-- 3173823  -->
 When an admin creates a resource, any scope tags assigned to the admin will automatically be assigned to those new resources.
 
 ### Monitor and troubleshoot
 
-#### Failed enrollment report moves to the Device Enrollment blade <!-- 3560202 eeready wnready-->
+#### Failed enrollment report moves to the Device Enrollment blade <!-- 3560202  -->
 The **Failed enrollments** report has been moved to the **Monitor** section of the **Device enrollment** blade. Two new columns (Enrollment Method and OS Version) have been added.
 
-#### Company Portal abandonment report renamed to Incomplete user enrollments <!--3815076 eemiss wnready-->
+#### Company Portal abandonment report renamed to Incomplete user enrollments <!--3815076 eemiss -->
 The **Company Portal abandonment** report has been renamed to **Incomplete user enrollments**.
 
 
@@ -196,7 +199,7 @@ The **Company Portal abandonment** report has been renamed to **Incomplete user 
 
 ### App management
 
-#### Intune macOS Company Portal Dark Mode <!-- 3300524 eeready -->
+#### Intune macOS Company Portal Dark Mode <!-- 3300524  -->
 The Intune macOS Company Portal now supports Dark Mode for macOS. When you enable Dark Mode on a macOS 10.14+ device, the Company Portal will adjust its appearance to colors that reflect that mode.
 
 ## Week of January 21, 2019
@@ -1543,37 +1546,31 @@ You can now use Intune App Policy Protection (APP) and Conditional Access (CA) t
 
 ## Notices
 
+### Check your “Delay Visibility of Software updates” setting in Intune
+We shared in MC171466 that we were moving a few settings around in the console. With the March update to Intune, we'll completely remove the “Delay Visibility of Software updates” setting from the iOS update policy blade. This will not change the way your scheduled software updates apply but it may affect how long the visibility of an update is delayed for end users. You may need to take action before the end of March if you use this setting.
+
+#### How does this affect me?
+After the February Intune service update, you’ll notice that the setting appears both in Device restriction profiles in the console and in iOS update policies in the Software update blade. When you see this change reflected in the console, here’s what you may need to do.
+• For existing Update policies for iOS: If you have custom configured this setting to anything other than the default 30 days, and want your existing configurations for the Delay visibility setting to continue to apply after the end of March, you’ll have to create a new iOS device restriction profile. Here, the Delay visibility setting will need to have the same values as in the existing iOS update policy and be targeted to the same groups. After the March service update, you will no longer be able to edit values for this setting in existing iOS update policies since it will no longer be visible in this blade. You will configure this setting in the new profiles instead.
+If the value for number of days you can delay visibility does not match in both locations for custom configured setting values, the Delay Visibility setting will not work, and end users will see the update on their devices as soon as it is available. This may have minimal impact for most customers since the other settings in the Software Update Policy blade have always taken precedence over this setting in the console.
+• For new update policies for iOS: If you try to create new policies in the Software updates blade after the Intune February service update, you will see this setting grayed out. You’ll see a note in the console redirecting you to the Device configuration blade if you wish to delay visibility of updates.
+
+#### What can I do to prepare for this change?
+You do not need to take action if you do not use this setting or do not want to delay visibility of software updates for your end users.
+
+If you wish to delay visibility of updates, start configuring the setting in new profiles in the Device Configuration blade under Device Restrictions > General. If you have this setting custom configured in existing iOS update policies, create a new equivalent device restriction profile with the same value for “days” to delay visibility of updates to your users, after the February update and before the March update rolls out.
+You may want to update your IT Pro guidance and inform your helpdesk.
+See our support blog post at Additional Information for details on how to configure this setting.
+ 
+#### Additional Information
+https://aka.ms/Delay_visibility_setting_iOS
+
 ###  Upcoming change to the Intune Data Warehouse API
 We will be making two changes during the 1903 timeframe:
 - Beta Filter Deprecation<br>
-    Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
+    Deprecation of unsupported beta filters instantiated.   
 - 1.0 changes reflecting back to beta<br>
     Changes made to our v1.0 collections will now be reflected in beta.  
-
-### Upcoming password enforcement change for macOS 10.14.2 in Intune <!--1873216-->
-We shared in MC145129 back in July that Intune plans to integrate Apple’s newly released “Change Password at Next Auth” setting for devices running macOS versions 10.13 and above. We currently plan to roll this setting out in February for macOS 10.14.2 and greater. 
-
-#### How does this affect me?
-This impacts you if you have or plan to have devices running macOS 10.14.2 and greater. Now that the Apple has introduced the "Change Password at New Auth" setting, Intune can force users to update their password to one that is compliant when a password policy is pushed. Your macOS users will receive a request to update their password when we integrate this new Apple feature, even if their password is already compliant. Note that if a password is already compliant and you don’t have a requirement against repeating passwords, then end users will be able to update to their existing password. End users will only see a request to update their password when they try to authenticate or log in to their device. 
-If you block company resources until the device is marked compliant, then know that your end users on devices with macOS 10.14.2 may be blocked from accessing company resources such as email or SharePoint sites until they reset their password. In the future, all updates to configuration and compliance password policies will force targeted users to update their passwords. 
-Our customer research prior to implementing this change indicated most customers will not be affected by this change, since end users will typically update their password after receiving a request to enroll with a password or reset their password to remain compliant
-
-#### What can I do to prepare for this change?
-You may want to let your helpdesk know. We’ll update this What’s New page when this change is rolled out. If you do not want this macOS device password policy to be enforced, we recommend you un-assign or delete your existing macOS policy.
-
-###Plan for Change: Update to iOS setting for supervised devices in the Intune console  
-With the February update to the Intune service, the 'Enabling restrictions in the device settings' setting for supervised iOS devices is being renamed to “Screen Time (supervised only)”. After this change, end user experience will change based on iOS version.
-
-####How does this affect me?
-After the setting for “Enabling restrictions in the device settings (supervised only)” is renamed to “Screen Time (supervised only)”, here’s the experience for supervised devices (devices enrolled with Apple’s enrollment programs): 
-
-For devices on iOS 11.4 and prior: This setting can be used to prevent users from modifying device restrictions as before. End users will not see a change in experience.
- 
-For devices on iOS 12 and later: End users will no longer see the Restrictions tab under Settings > General > Device Management > Management Profile > Restrictions.
-Instead, this will be a part of Settings > General > Screen Time. Configuring this setting to “Block” will block users from changing Screen Time settings on their devices, which also  includes content and privacy restrictions.
-
-####What can I do to prepare for this change?
-Update your end user guidance to note the change in experience for devices that are upgraded to iOS 12 and later versions.
 
 
 ###Plan for Change: Workflow changes for iOS 12 enrollment in Intune
@@ -1615,25 +1612,25 @@ You do not need to take any action; these changes will be released in an upcomin
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
 
 
-### Plan for Change: Exchange Online to Intune connector will not be available in Intune <!-- 3105122 -->
-To simplify your experience with Exchange Online and Conditional Access, we will be disabling the Exchange Online to Intune ‘Service to Service’ connector.
-
+### Reminder: Removal of existing Exchange Online to Intune connectors
+We shared in MC165575 that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. With the February update to the Intune service, we’ll disable the button to set up new connectors. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
+ 
 #### How does this affect me?
-You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. With the February update to the Intune service, to make this clear in the console, we’ll disable the button to set up new connectors. Then, in March 2019, all existing Exchange Online to Intune connectors will be disabled.
+You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. 
 
-If you use these connectors in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in March. There is no anticipated impact to your end users during this change.
+The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. You may have been using this connector to understand the usage of Exchange Online prior to applying Conditional Access. This information is already provided by the Microsoft 365 Admin Center. Here, you’ll find provides usage reports for Exchange Online including the app type being used for between 7 and 180 days. For more information see Office 365 Reports in the Admin Center - Email apps usage  
 
+If you use this connector in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in February. There is no anticipated impact to your end users during this change.
+ 
 #### What can I do to prepare for this change?
-
 If you have the Service to Service connector set up and have Exchange Active Sync Only devices, switch to other methods of managing your devices. You have the following options:
-
-- Enroll devices in Mobile Device Management (MDM)
-- Use Intune App Protection Policies to manage your devices
-- Use Exchange controls as outlined in documentation here. 
-
+•	Enroll devices in Mobile Device Management (MDM) 
+•	Use Intune App Protection Policies to manage your devices
+•	Use Exchange controls as outlined in documentation here
+  
 #### Additional Information
-[Configure the Exchange service connector for Intune and Exchange Online](https://docs.microsoft.com/intune/exchange-service-connector-configure)
-
+https://docs.microsoft.com/intune/exchange-service-connector-configure
+ 
 
 
 ### Plan for change: Performance updates to Intune for Education <!--1750215-->
