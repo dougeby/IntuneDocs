@@ -99,7 +99,7 @@ You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using 
 
 #### Intune conditional access UI update   <!-- 2432313   -->
 We've made improvements to the UI for conditional access in the Intune console. These include:
--  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access]( (which remains an Azure AD technology),from within the Intune console. 
+-  Replaced the Intune *Conditional access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [conditional access](conditional-access.md) (which remains an Azure AD technology), from within the Intune console. 
 - We've renamed the *On-premises access* blade to *Exchange access*, and relocated the *Exchange service connector* setup to this renamed blade.  This change consolidates where you [configure and monitor details related to Exchange online and on-premises](exchange-connector-install.md).  
 
 #### Kiosk Browser and Microsoft Edge Browser apps can run on Windows 10 devices in kiosk mode <!-- 2935135   -->
