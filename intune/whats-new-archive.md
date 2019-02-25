@@ -31,6 +31,127 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+
+<!-- ########################## -->
+## June 2018
+
+### App management
+
+#### Microsoft Edge mobile support for Intune app protection policies <!-- 1817882 -->
+The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
+
+#### Retrieve the associated app user model ID (AUMID) for Microsoft Store for Business apps in kiosk mode <!-- 1560077 ! -->
+Intune can now retrieve the app user model ids (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
+
+For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
+
+#### New Company Portal branding page <!-- 1916370 -->
+The Company Portal branding page has a new layout, messages, and tooltips.
+
+
+### Device configuration
+
+### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
+You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+
+### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
+When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates didn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
+
+This update also includes:
+
+- The NDES Certificate connector requires .NET 4.5 Framework, which is automatically included with Windows Server 2016 and Windows Server 2012 R2. Previously, .NET 3.5 Framework was the minimum required version.
+- TLS 1.2 support is included with the NDES Certificate connector. So if the server with NDES Certificate connector installed supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
+
+For more information, see [Configure and use SCEP certificates](certificates-scep-configure.md) and [Configure and use PKCS certificates](certficates-pfx-configure.md).
+
+#### Support for Palo Alto Networks GlobalProtect VPN profiles <!-- 1333680 ! -->
+With this update, you can choose Palo Alto Networks GlobalProtect as a VPN connection type for VPN profiles in Intune (**Device configuration** > **Profiles** > **Create profile** > **Profile type** > **VPN**). In this release, the following platforms are supported: 
+
+- iOS
+- Windows 10
+
+#### Additions to Local Device Security Options settings <!-- 1403702 -->
+You can now configure additional Local Device Security Options settings for Windows 10 devices. Additional settings are available in the areas of Microsoft Network Client, Microsoft Network Server, Network access and security, and Interactive logon. Find these settings in the Endpoint Protection category when you create a Windows 10 device configuration policy.
+
+#### Enable kiosk mode on Windows 10 devices <!-- 1560072 ! -->
+On Windows 10 devices, you can create a configuration profile and enable kiosk mode (**Device Configuration** > **Profiles** > **Create profile** > **Windows 10** > **Device Restrictions** > **Kiosk**). In this update, the **Kiosk (preview)** setting is renamed to **Kiosk (obsolete)**. **Kiosk (obsolete)** is no longer recommended for use, but will continue to function until the July update. **Kiosk (obsolete)** is replaced by the new **Kiosk** profile type (**Create profile** > **Windows 10** > **Kiosk (preview)**), which will contain the settings to configure Kiosks on Windows 10 RS4 and later.
+
+Applies to Windows 10 and later.
+
+#### Device profile graphical user chart is back <!-- 2160133 -->
+While improving the numeric counts shown on the device profile graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**), the graphical user chart was temporarily removed.
+
+With this update, the graphical user chart is back, and shown in the Azure portal.
+
+### Device enrollment
+
+#### Support for Windows Autopilot enrollment without user authentication <!-- 1165118 -->
+Intune now supports Windows Autopilot enrollment without user authentication. This is a new option in the Windows Autopilot deployment profile "Autopilot Deployment mode" set to "Self-Deploying".  The device must be running Windows 10 Insider Preview Build 17672 or later and possess a TPM 2.0 chip to successfully complete this type of enrollment. Since no user authentication is required, you should only assign this option to devices that you have physical control over.
+
+#### New language/region setting when configuring OOBE for Autopilot <!-- 1821766 -->
+A new configuration setting is available to set the language and region for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.
+
+#### New setting for configuring device keyboard <!-- 1821768 -->
+A new setting will be available to configure the keyboard for Autopilot profiles during the Out of Box Experience. To see the new setting, choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > **Create profile** > **Deployment mode** = **Self-deploying** > **Defaults configured**.
+
+#### Autopilot profiles moving to group targeting <!-- 1877935 -->
+AutoPilot deployment profiles can be assigned to Azure AD groups containing AutoPilot devices.
+
+### Device management
+
+#### Set compliance by device location <!-- 851881 ! -->
+In some situations, you may want to restrict access to corporate resources to a specific location, defined by a network connection. You can now create a compliance policy (**Device compliance** > **Locations**) based on the IP address of the device. If the device moves outside the IP range, then the device cannot access corporate resources.
+
+Applies to: Android devices 6.0 and higher, with the updated Company Portal app
+
+#### Prevent consumer apps and experiences on Windows 10 Enterprise RS4 Autopilot devices<!-- 1621980 -->
+You will be able to prevent the installation of consumer apps and experiences on your Windows 10 Enterprise RS4 AutoPilot devices. To see this feature, go to **Intune** > **Device configuration** > **Profiles** > **Create profile** > **Platform** = **Windows 10 or later** > **Profile type** = **Device restrictions** > **Configure** > **Windows Spotlight** > **Consumer features**. 
+
+#### Uninstall the latest from Windows 10 software updates <!-- 1732948 -->
+Should you discover a breaking issue on your Windows 10 machines, you can choose to uninstall (rollback) the latest feature update or the latest quality update. Uninstalling a feature or quality update is only available for the servicing channel the device is on. Uninstalling will trigger a policy to restore the previous update on your Windows 10 machines. For feature updates specifically, you can limit the time from 2-60 days that an uninstall of the latest version can be applied. To set software update uninstall options, select **Software updates** from the **Microsoft Intune** blade within the Azure portal. Then, select **Windows 10 Update Rings** from the **Software updates** blade. You can then choose the **Uninstall** option from the **Overview** section.
+
+#### Search all devices for IMEI and serial number <!-- 1793685 -->
+You can now search for IMEI and serial numbers on the All devices blade (email, UPN, device name, and management name are still available). In Intune, choose **Devices** > **All devices** > enter your search in the search box.
+
+#### Management name field will be editable <!-- 1875989 -->
+You can now edit the management name field on a device’s **Properties** blade. To edit this field, choose **Devices** > **All devices** > choose the device > **Properties**. You can use the management name field to uniquely identify a device.
+
+#### New All devices filter: Device category <!-- 1878520 -->
+You can now filter the **All devices** list by device category. To do so, choose **Devices** > **All devices** > **Filter** > **Device category**.
+
+#### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
+Administrators can now connect to [TeamViewer](device-profile-android-teamviewer.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
+
+#### Multiple Exchange Connector support <!-- 2070451 -->
+You're no longer limited to one Microsoft Intune Exchange Connector per tenant. Intune now supports multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
+
+With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
+
+#### New device hardware detail: CCID <!-- 2156657 -->
+The Chip Card Interface Device (CCID) information is now included for each device. To see it, choose **Devices** > **All devices** > choose a device > **Hardware**> check under **Network details**>
+
+#### Assign all users and all devices as scope groups <!-- 2196803 -->
+You can now assign all users, all devices, and all users and all devices in scope groups. To do this, choose **Intune roles** > **All roles** > **Policy and profile manager** > **Assignments** > choose an assignment > **Scope (groups)**.
+
+#### UDID information now included for iOS and macOS devices <!-- 2219806 -->
+To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **Devices** > **All devices** > choose a device > **Hardware**. UDID is only available for corporate devices (as set under **Devices** > **All devices** > choose a device > **Properties** > **Device ownership**).
+
+### Intune apps
+
+#### Improved troubleshooting for app installation <!-- 928990 -->
+On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
+
+#### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
+
+
+
+
+
+
+
+
+
 <!-- ########################## -->
 ## May 2018
 
@@ -1280,6 +1401,7 @@ Managed apps and the Company Portal app for Android will require Android 4.4 and
 ### Inform end users what device information can be seen on enrolled devices <!--1165314-->
 We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the [What information can your company see?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017).
 
+<!-- ########################## -->
 ## September 2017
 
 ### Intune supports iOS 11 <!--1428975-->
@@ -1309,6 +1431,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 The Windows 10 Company Portal app has been updated to support Windows Information Protection (WIP). The app can be added to the WIP allow policy. With this change, the app no longer has to be added to the **Exempt** list.
 
 
+<!-- ########################## -->
 ## August 2017
 
 ### Improvements to device overview <!-- 1404453 -->  
@@ -1380,8 +1503,7 @@ IT admins can now set app-based conditional policies via the new conditional acc
 
 - Learn more about [app-based conditional access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
-
-
+<!-- ########################## -->
 ## July 2017
 
 ### Restrict Android and iOS device enrollment restriction by OS version  <!--- 1333256,  1245463 --->
@@ -1448,8 +1570,7 @@ End users will be able to customize the color mode for the Company Portal app fo
 ### Enable end users to tag their device group in the Company Portal app for Windows 10 <!---807046-->
 End users are now able to select which group their device belongs to by tagging it directly from within the Company Portal app for Windows 10.
 
-
-
+<!-- ########################## -->
 ## June 2017
 
 ### New role-based administration access for Intune admins   <!-- 1099990 -->  
@@ -1540,6 +1661,7 @@ We updated the design of the app tiles on the homepage to reflect the branding c
 ### Account picker now available for the Company Portal app for iOS
 Users of iOS devices might see our new account picker when they sign into the Company Portal if they use their work or school account to sign into other Microsoft apps. For more information, see [what's new in app UI](whats-new-app-ui.md).
 
+<!-- ########################## -->
 ## May 2017
 
 ### Change your MDM authority without unenrolling managed devices <!--1103950-->
@@ -1631,6 +1753,7 @@ When an Android device is in kiosk mode, you could previously only configure one
 
 
 
+<!-- ########################## -->
 ## April 2017
 
 ### Support for managing the Apple Classroom app
@@ -1738,6 +1861,7 @@ Two new app settings are now available to help you with mobile application manag
 ### Help desk troubleshooting portal <!-- 907448 -->
 The new [troubleshooting portal](help-desk-operators.md) lets help desk operators and Intune administrators view users and their devices, and perform tasks to resolve Intune technical problems.
 
+<!-- ########################## -->
 ## March 2017
 
 ### Support for iOS Lost Mode <!--431695-->
@@ -1779,6 +1903,7 @@ You can also use these reports to drill down into an individual device to view s
 For Intune accounts created after January 2017, Intune has enabled direct access to Apple enrollment scenarios using the Enroll Devices workload in the Azure portal. Previously, the Apple enrollment preview was only accessible from links in the Azure portal. Intune accounts created before January 2017 will require a one-time migration before these features are available in Azure. The schedule for migration has not been announced yet, but details will be made available as soon as possible. We strongly recommend creating a trial account to test out the new experience if your existing account cannot access the preview.
 
 
+<!-- ########################## -->
 ## February 2017
 
 ### Ability to restrict mobile device enrollment <!--747600, 795782-->
