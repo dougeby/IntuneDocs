@@ -31,6 +31,148 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
+<!-- ########################## -->
+## July 2018
+
+### App management
+
+#### Line-of-business (LOB) app support for macOS <!-- 1895847 -->
+Microsoft Intune allows macOS LOB apps to be deployed as **Required** or **Available with enrollment**. End users can get apps deployed as **Available** using the Company Portal for macOS or the [Company Portal website](https://portal.manage.microsoft.com).
+
+#### iOS built-in app support for kiosk mode <!-- 2051098 -->
+In addition to Store Apps and Managed Apps, you can now select a Built-In App (such as Safari) that runs in kiosk mode on an iOS device.
+
+#### Edit your Office 365 Pro Plus app deployments <!-- 2150145 -->
+As the Microsoft Intune admin, you have greater ability to edit your Office 365 Pro Plus app deployments. Additionally, you no longer have to delete your deployments to change any of the suite’s properties. In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps**. From the list of apps, select your Office 365 Pro Plus Suite.  
+
+#### Updated Intune App SDK for Android is now available <!-- 2744271-->
+An updated version of the Intune App SDK for Android is available to support the Android P release. If you are an app developer and use the Intune SDK for Android, you must install the updated version of the Intune app SDK to ensure that Intune functionality within your Android apps continue to work as expected on Android P devices. This version of the Intune App SDK provides a built-in plugin that performs the SDK updates. You do not need to rewrite any existing code that’s integrated. For details, see [Intune SDK for Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android). If you are using the old badging style for Intune, we recommend that you use the briefcase icon. For branding details, see [this GitHub repository](https://github.com/msintuneappsdk/intune-app-partner-badge).
+
+#### More opportunities to sync in the Company portal app for Windows  
+The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync. For a look at the new functionality see [What's new in the UI](whats-new-app-ui.md).   
+
+#### New browsing experiences in the Company portal app for Windows  
+Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date and installation status.  
+
+The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations. To see what the new view looks like, see [What's new in the UI](whats-new-app-ui.md).  
+### Improved Company Portal app experience for device enrollment managers  
+When a device enrollment manager (DEM) signs in to the Company Portal app for Windows, the app will now only list the DEM's current, running device. This improvement will reduce timeouts that previously occurred when the app tried to show all DEM-enrolled devices.  
+
+### Block app access based on unapproved device vendors and models  <!-- 1425689 ! -->
+The Intune IT admin can enforce a specified list of Android manufacturers, and/or iOS models through Intune App Protection Policies. The IT admin can provide a semicolon separated list of manufacturers for Android policies and device models for iOS policies. Intune App Protection Policies are for Android and iOS only. There are two separate actions that can be performed on this specified list:
+- A block from app access on devices that are not specified.
+- Or, a selective wipe of corporate data on devices that are not specified. 
+
+The user will be unable to access the targeted application if the requirements through the policy are not met. Based on settings, the user may either be blocked, or selectively wiped of their corporate data within the app. On iOS devices, this feature requires the participation of applications (such as WXP, Outlook, Managed Browser, Yammer) to integrate the Intune APP SDK for this feature to be enforced with the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. On Android, this feature requires the latest Company Portal. 
+
+On end-user devices, the Intune client will take action based on a simple matching of the strings specified in the Intune blade for Application Protection Policies. This depends entirely on the value that the device reports. As such, the IT administrator is encouraged to ensure that the intended behavior is accurate. This can be accomplished by testing this setting based on a variety of device manufacturers and models targeted to a small user group. In Microsoft Intune, select **Client apps** > **App protection policies** to view and add app protection policies. For more information about app protection policies, see [What are app protection policies](app-protection-policy.md) and [Selectively wipe data using app protection policy access actions in Intune](app-protection-policies-access-actions.md).
+
+### Access to macOS Company Portal pre-release build <!-- 1734766 -->
+Using Microsoft AutoUpdate, you can sign up to receive builds early by joining the Insider program. Signing up will enable you to use the updated Company Portal before it’s available to your end users. For more information, see the [Microsoft Intune blog](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
+
+### Device configuration
+
+#### Create device compliance policy using Firewall settings on macOS devices <!-- 1497640 -->
+When you create a new macOS compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: macOS** > **System security**), there are some new **Firewall** settings available: 
+
+- **Firewall**: Configure how incoming connections are handled in your environment.
+- **Incoming connections**: **Block** all incoming connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This setting also blocks all sharing services.
+- **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests. The device continues to answer incoming requests for authorized apps.
+
+Applies to: macOS 10.12 and later
+
+#### New Wi-Fi device configuration profile for Windows 10 and later <!-- 1879077 -->
+Currently, you can import and export Wi-Fi profiles using XML files. With this update, you can create a Wi-Fi device configuration profile directly in Intune, just like some other platforms.
+
+To create the profile, open **Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Wi-Fi**. 
+
+Applies to Windows 10 and later.
+
+#### Kiosk - obsolete is grayed out, and can't be changed <!-- 2149998 -->
+The Kiosk (preview) feature (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** > **Device restrictions**) is obsolete, and replaced with [Kiosk settings for Windows 10 and later](kiosk-settings.md). With this update, the **Kiosk - Obsolete** feature is grayed out, and the user interface can't be changed or updated. 
+
+To enable kiosk mode, see [Kiosk settings for Windows 10 and later](kiosk-settings.md).
+
+Applies to Windows 10 and later, Windows Holographic for Business
+
+#### APIs to use 3rd party certification authorities <!-- 2184013 -->
+In this update, there is a Java API that enables third-party certificate authorities to integrate with Intune and SCEP. Then, users can add the SCEP certificate to a profile, and apply it to devices using MDM.
+
+Currently, Intune supports [SCEP requests using Active Directory Certificate Services](certificates-scep-configure.md).
+
+#### Toggle to show or not show the End Session button on a Kiosk browser <!-- 2455253 -->
+You can now configure whether or not Kiosk browsers show the End Session button. You can see the control at **Device configuration** > **Kiosk (preview)** > **Kiosk Web Browser**. If turned on, when a user clicks the button, the app prompts for confirmation to end the session. When confirmed, the browser clears all browsing data and navigates back to the default URL.
+
+#### Create an eSIM cellular configuration profile <!-- 2564077 -->
+In **Device configuration**, you can create an eSIM cellular profile. You can import a file that contains cellular activation codes provided by your mobile operator. You can then deploy these profiles to your eSIM LTE enabled Windows 10 devices, such as the Surface Pro LTE and other eSIM capable devices.
+
+Check to see if your [devices support eSIM profiles](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data).
+
+Applies to Windows 10 and later. 
+
+#### Select device categories by using the Access Work or School settings <!-- 1058963 eenotready --> 
+If you've enabled [device group mapping](https://docs.microsoft.com/intune/device-group-mapping), users on Windows 10 will now be prompted to select a device category after enrolling through the **Connect** button in **Settings** > **Accounts** > **Access work or school**. 
+
+#### Use sAMAccountName as the account username for email profiles <!-- 1500307 -->
+You can use the on-premises **sAMAccountName** as the account username for email profiles for Android, iOS, and Windows 10. You can also get the domain from the `domain` or `ntdomain` attribute in Azure Active Directory (Azure AD). Or, enter a custom static domain.
+
+To use this feature, you must sync the `sAMAccountName` attribute from your on-premises Active Directory environment to Azure AD.
+
+Applies to [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md)
+
+#### See device configuration profiles in conflict <!-- 1556983 -->
+In **Device Configuration**, a list of the existing profiles is shown. With this update, a new column is added that provides details on profiles that have a conflict. You can select a conflicting row to see the setting and profile that has the conflict. 
+
+More on [manage configuration profiles](device-profile-monitor.md#view-conflicts).
+
+#### New status for devices in device compliance <!-- 2308882 -->
+In **Device compliance** > **Policies** > select a policy > **Overview**, the following new states are added:
+- succeeded
+- error
+- conflict
+- pending
+- not-applicable
+An image that shows the device count of a different platform is also shown. For example, if you're looking at an iOS profile, the new tile shows the count of non-iOS devices that are also assigned to this profile. See [Device compliance policies](compliance-policy-monitor.md#view-status-of-device-policies).
+
+#### Device compliance supports 3rd party anti-virus solutions <!-- 2325484 -->
+When you create a device compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: Windows 10 and later** > **Settings** > **System Security**), there are new **[Device Security](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** options: 
+- **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
+- **AntiSpyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
+
+Applies to: Windows 10 and later 
+
+### Device enrollment
+
+#### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate". <!-- 2404851 -->
+By default, Android devices enrolled using Samsung Knox Mobile Enrollment are now marked as **corporate** under **Device Ownership**. You don't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
+
+####  Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
+In the enrollment program tokens list, there is a new column showing the number of devices without a profile assigned. This helps admins assign profiles to these devices before handing them out to users. To see the new column, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens**.
+
+### Device management
+
+#### Bulk delete devices on devices blade <!-- 1793693 -->
+You can now delete multiple devices at a time on the Devices blade. Choose **Devices** > **All devices** > select the devices you want to delete > **Delete**. For devices that can't be deleted, an alert will be displayed.
+
+#### Google name changes for Android for Work and Play for Work <!--842873 -->
+Intune has updated "Android for Work" terminology to reflect Google branding changes. The terms "Android for Work" and "Play for Work" are no longer be used. Different terminology is used depending on the context:
+- "Android enterprise" refers to the overall modern Android management stack.
+- "Work profile" or "Profile Owner" refers to BYOD devices managed with work profiles.
+- "Managed Google Play" refers to the Google app store.
+
+#### Rules for removing devices <!-- 1609459 -->
+New rules are available that let you automatically remove devices that haven't checked in for a number of days that you set. To see the new rule, go to the **Intune** pane, select **Devices**, and select **Device cleanup rules**.
+
+#### Corporate-owned, single use support for Android devices <!-- 1630973 -->
+
+Intune now supports highly-managed, locked-down, kiosk-style Android devices. This allows admins to further lock down the usage of a device to a single app or small set of apps, and prevents users from enabling other apps or performing other actions on the device. To set up Android kiosk, go to Intune > **Device enrollment** > **Android enrollment** > **Kiosk and task device enrollments**. For more information, see [Set up enrollment of Android enterprise kiosk devices](android-kiosk-enroll.md).
+
+#### Per-row review of duplicate corporate device identifiers uploaded <!-- 2203794-->
+When uploading corporate IDs, Intune now provides a list of any duplicates and gives you the option to replace or keep the existing information. The report will appear if there are duplicates after you choose **Device enrollment** > **Corporate Device Identifiers** > **Add Identifiers**. 
+
+#### Manually add corporate device identifiers <!-- 2203803 -->
+You can now manually add corporate device IDs. Choose **Device enrollment** > **Corporate Device Identifiers** > **Add**. 
+
 
 <!-- ########################## -->
 ## June 2018
