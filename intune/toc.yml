@@ -695,7 +695,7 @@
         - name: PKCS certificate
           href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Custom
@@ -746,10 +746,6 @@
           href: wi-fi-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
-    - name: Security baselines
-      items:
-      - name: Windows security baseline settings
-        href: security-baseline-settings-windows.md
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings
@@ -786,8 +782,10 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
-      - href: windows-update-settings.md
-        name: Windows update settings
+      - name: Security baseline settings
+        href: security-baseline-settings-windows.md
+      - name: Windows update settings
+        href: windows-update-settings.md        
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions
