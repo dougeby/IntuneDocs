@@ -257,7 +257,7 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
-    - name: Erase device
+    - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
