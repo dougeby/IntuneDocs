@@ -62,8 +62,8 @@ The Intune PowerShell module, which provides support for the Intune API through 
 ### Intune PowerShell module <!-- 951068 wnready -->
 The Intune PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available in the [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
 
-- [Details about how use this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README)
-- [Scenario examples using this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README)
+- [Details about how use this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
+- [Scenario examples using this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
 
 ### App management
 
