@@ -362,7 +362,7 @@
         - name: Data Intune sends to Google
           href: data-intune-sends-to-google.md
         - name: Information shared from Jamf Pro to Intune
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: View and correct personal data
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
