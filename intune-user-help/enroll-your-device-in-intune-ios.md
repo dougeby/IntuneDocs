@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 # Set up iOS device access to your company resources  
 
 > [!IMPORTANT]
-> Apple has recently made some changes that affect Company Portal enrollment for devices running iOS 12.1.1 beta.  If you're an IT pro or administrator, and want to learn how you can prepare device users for these changes, see the [Microsoft Tech Community](https://go.microsoft.com/fwlink/?linkid=2078666&clcid=0x409).   
+> Apple has recently made some changes that affect Company Portal enrollment for devices running iOS 12.1.1 beta.  If you're an IT pro or administrator, and want to learn how you can prepare device users for these changes, go to [Microsoft Tech Community](https://go.microsoft.com/fwlink/?linkid=2078666&clcid=0x409).   
 
 Enroll your iOS device with the Intune Company Portal app to gain secure access to your organization's email, files, and apps.
 
@@ -65,11 +65,13 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
     ![Example screenshot of Company Portal app, Sign in.](./media/ios-01-cp-enroll-1903.PNG)  
 
-2. When prompted to receive Company Portal notifications, tap **Allow.** Company Portal might notify you if, for example, your device settings don't meet need to be updated. 
+2. When prompted to receive Company Portal notifications, tap **Allow.** Company Portal uses notifications to alert you if, for example, your device settings need to be updated. 
 
     ![Example screenshot of Company Portal home page, "Notifications" prompt.](./media/ios-04-cp-enroll-1903.PNG)  
 
 3. On the **Set up access** screen, select **Begin.**  
+
+ ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-05-cp-enroll-1903.PNG)  
 
 4. Read through the list of device information your organization can and can't see. [Additional details about this topic](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md) can be found via the **Learn more** link. When you're done, tap **Continue**.  
 
@@ -77,41 +79,45 @@ If you pause for more than a few minutes during enrollment, the app might close 
  
 5. Read through the information on the **What's next?** screen. Because of recent changes from Apple, this screen might not accurately describe the next steps for your device. If you're on an iOS device that runs:
     * **Version 12.1 and earlier**: This screen accurately describes your next-step experience. 
-    * **Version 12.1.1 and later**: This screen might not accurately describe your next-step experience. In the next steps, refer to any instructions specific to iOS 12.1.1 and later.  
+    * **Version 12.1.1 and later**: This screen might not accurately describe your next-step experience. In the next few steps, use any instructions specific to iOS 12.1.1 and later.  
 
-    ![Example screenshot of Company Portal app, "What's next", with Continue button.](./media/ios-07-cp-enroll-1903.PNG)
+    ![Example screenshot of Company Portal app, "What's next", with Continue button.](./media/ios-07-cp-enroll-1903.PNG)  
 
 6. Safari opens the Company Portal website and prompts you to download the management profile. Tap **Allow**. 
 
     ![Example screenshot of Safari prompt to Ignore or Allow configuration profile download.](./media/ios-09-cp-enroll-1903.PNG)  
 
-7. After you receive confirmation that the profile downloaded, tap **Close**. If you're on an iOS device that runs:
-    * **Version 12.1 and earlier**: You'll be automatically redirected to the **Settings** app on your device.
+7. After you receive confirmation that the profile downloaded, tap **Close**. 
+
+    > [!IMPORTANT]
+    > You must install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment. 
+  
+    If you're on an iOS device that runs:  
+
+    * **Version 12.1 and earlier**: You'll be automatically redirected to the **Settings** app on your device.  
     * **Version 12.1.1 and later**: If you aren't automatically redirected to the **Settings** app, close Safari and manually open the **Settings** app.  
 
     ![Example screenshot of Safari, Profile Downloaded confirmation, with Close button.](./media/ios-08-cp-enroll-1903.PNG)  
 
-> [!IMPORTANT]
-> You must install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment.  
 
 8. In the **Settings** app, tap **Install Downloaded Profile** > **Install**.   
 
     ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)  
 
-If prompted, enter your device password and then tap **Install** again.  
+    If prompted, enter your device password. Then tap **Install**.  
 
-   ![Example screenshot of the Settings app, Management Profile setting, showing the Install button in top-right corner.](./media/ios-11-cp-enroll-1903.PNG)  
+      ![Example screenshot of the Settings app, Management Profile setting, showing the Install button in top-right corner.](./media/ios-11-cp-enroll-1903.PNG)  
 
-9. The next screen is a standard system warning for device management. To learn more about what your organization can and can't see on your device, refer to [this Intune topic](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If you're prompted to trust remote management, tap **Trust**.  
+9. The next screen is a standard system warning for device management. To learn more about what your organization can and can't see on your device, see the relevant [Intune docs article](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If you're prompted to trust remote management, tap **Trust**.  
 
     ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
 
 10. After installation is complete, tap **Done**. To verify that the profile was installed, go to the **Profiles & Device Management** settings. Check that the profile is listed under **Mobile Device Management**.   
 
-    ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Example screenshot of Settings app, Profiles & Device Management settings, showing the management profile.](./media/ios-00-cp-enroll-1903.PNG)  
 
 
-11. Return to the **Company Portal** app's **What's next?** screen and tap **Continue**.  
+11. Return to the **Company Portal** app > **What's next?** screen. Tap **Continue**.  
 
 12. Company Portal will begin to sync and set up your device. A yellow triangle appears if your device still needs to sync or if you need to adjust device settings. 
 
@@ -119,12 +125,12 @@ If prompted, enter your device password and then tap **Install** again.
 
 You'll know that setup is complete when all items in the list show a green circle.  
 
-   ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1902.PNG)  
+   ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1903.PNG)  
 
 > [!Note]
-> If your organization monitors voice and data limits, or provides you with a company-owned device, you might have a few more steps to complete. If you're prompted to install the **Dataalet**, see [enrolling your device in telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is part of Apple's Device Enrollment Program, find out [how to enroll your company-owned device](enroll-your-device-dep-ios.md).  
+> If your organization monitors voice and data limits, or provides you with a company-owned device, you might have a few more steps to complete. If you're prompted to install the **Datalert** app, see [enrolling your device in telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is part of Apple's Device Enrollment Program, find out [how to enroll your company-owned device](enroll-your-device-dep-ios.md).  
 
 ## Next steps  
-Find apps that will help you at work or school. Learn [how apps are made available](use-managed-apps-on-your-device-ios) to you through Company Portal.  
+Find apps that will help you at work or school. Learn [how apps are made available](use-managed-apps-on-your-device-ios.md) to you through Company Portal.  
 
 Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
