@@ -617,7 +617,7 @@
   - name: Get help and support
     items:
     - name: Tenant status
-    href: tenanat-status.md
+      href: tenanat-status.md
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
