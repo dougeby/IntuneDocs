@@ -2180,7 +2180,7 @@
 		{
 			"source_path": "intune/set-device-compliance/monitor-device-compliance.md",
 			"redirect_url": "/intune/compliance-policy-monitor",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/set-device-compliance/monitor-intune-device-compliance-policies.md",
