@@ -71,13 +71,16 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
 3. On the **Set up access** screen, select **Begin.**  
 
- ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-05-cp-enroll-1903.PNG)  
 
 4. Read through the list of device information your organization can and can't see. [Additional details about this topic](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md) can be found via the **Learn more** link. When you're done, tap **Continue**.  
 
     ![Example screenshot of Company Portal app, "What can my organization see", with Continue button.](./media/ios-06-cp-enroll-1903.PNG)  
  
-5. Read through the information on the **What's next?** screen. Because of recent changes from Apple, this screen might not accurately describe the next steps for your device. If you're on an iOS device that runs:
+5. Read through the information on the **What's next?** screen. Because of recent changes from Apple, this screen might not accurately describe the next steps for your device.  
+
+    If you're on an iOS device that runs:  
+
     * **Version 12.1 and earlier**: This screen accurately describes your next-step experience. 
     * **Version 12.1.1 and later**: This screen might not accurately describe your next-step experience. In the next few steps, use any instructions specific to iOS 12.1.1 and later.  
 
@@ -87,10 +90,7 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
     ![Example screenshot of Safari prompt to Ignore or Allow configuration profile download.](./media/ios-09-cp-enroll-1903.PNG)  
 
-7. After you receive confirmation that the profile downloaded, tap **Close**. 
-
-    > [!IMPORTANT]
-    > You must install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment. 
+7. After you receive confirmation that the profile downloaded, tap **Close**.  
   
     If you're on an iOS device that runs:  
 
@@ -100,13 +100,12 @@ If you pause for more than a few minutes during enrollment, the app might close 
     ![Example screenshot of Safari, Profile Downloaded confirmation, with Close button.](./media/ios-08-cp-enroll-1903.PNG)  
 
 
-8. In the **Settings** app, tap **Install Downloaded Profile** > **Install**.   
+8. In the **Settings** app, tap **Install Downloaded Profile** > **Install**.  If prompted, enter your device password. Then tap **Install** again.  
+
+    > [!IMPORTANT]
+    > You must install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment.  
 
     ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)  
-
-    If prompted, enter your device password. Then tap **Install**.  
-
-      ![Example screenshot of the Settings app, Management Profile setting, showing the Install button in top-right corner.](./media/ios-11-cp-enroll-1903.PNG)  
 
 9. The next screen is a standard system warning for device management. To learn more about what your organization can and can't see on your device, see the relevant [Intune docs article](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If you're prompted to trust remote management, tap **Trust**.  
 
@@ -123,9 +122,9 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
     ![Example screenshot of Company Portal, "Set up access" screen, with yellow triangle next to setting requirement.](./media/ios-12-cp-enroll-1903.PNG)  
 
-You'll know that setup is complete when all items in the list show a green circle.  
+    You'll know that setup is complete when all items in the list show a green circle.  
 
-   ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1903.PNG)  
+       ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1903.PNG)  
 
 > [!Note]
 > If your organization monitors voice and data limits, or provides you with a company-owned device, you might have a few more steps to complete. If you're prompted to install the **Datalert** app, see [enrolling your device in telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is part of Apple's Device Enrollment Program, find out [how to enroll your company-owned device](enroll-your-device-dep-ios.md).  
