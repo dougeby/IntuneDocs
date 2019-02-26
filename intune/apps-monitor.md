@@ -54,7 +54,7 @@ The **Essentials** section contains the following information about the app:
 |------------------------|------------------------------------------------------------------|
 | **Publisher**          | The publisher of the app.                                            |
 | **Operating system**   | The app operating system (Windows, iOS, Android, and so on). |
-| **Created**             | The date and time when this revision was created.                         |
+| **Created**             | The date and time when this revision was created. Note: This date is updated whenever an IT admin changes app metadata such as changing the app category or app description.                        |
 | **Assigned**           | Whether the app has been assigned (**Yes** or **No**).                  |
 
 ### Device and user status graphs
