@@ -755,6 +755,8 @@
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Configuration profile settings
         items:
+        - name: Delivery optimization settings
+          href: delivery-optimization-settings.md
         - name: Device restrictions
           href: device-restrictions-windows-10.md
         - name: Device restrictions (Windows 10 Team)
@@ -788,7 +790,7 @@
       - name: Security baseline settings
         href: security-baseline-settings-windows.md
       - name: Windows update settings
-        href: windows-update-settings.md        
+        href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -51,11 +51,17 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 <!-- ########################## -->
 ## Week of February 25, 2019
 
-### Intune PowerShell module <!-- 951068 wnready -->
+### Device configuration
+
+#### Intune PowerShell module <!-- 951068  -->
 The Intune PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available in the [Microsoft PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10).
 
 - [Details about how use this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/README.md)
 - [Scenario examples using this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
+
+#### Improved support for delivery optimization  <!--3183757     -->
+We've expanded the support in Intune for configuring delivery optimization. You can now configure an expanded list of [Delivery Optimization settings](delivery-optimization-settings.md) and target it to your devices right from Intune console.
+
 
 ## Week of February 18, 2019
 
