@@ -362,7 +362,7 @@
         - name: Data Intune sends to Google
           href: data-intune-sends-to-google.md
         - name: Information shared from Jamf Pro to Intune
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: View and correct personal data
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
@@ -375,6 +375,7 @@
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
       - name: Create and assign conditional access policy
+        href: conditional-access-exchange-create.md
       - name: Device-based conditional access policy
         href: create-conditional-access-intune.md
       - name: Reassign conditional access policies from Intune classic portal
@@ -615,6 +616,8 @@
       href: data-google-sends-to-intune.md
   - name: Get help and support
     items:
+    - name: Tenant status
+      href: tenant-status.md
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
@@ -695,7 +698,7 @@
         - name: PKCS certificate
           href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Custom
@@ -784,8 +787,8 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
-      - name: Windows security baselines
-        href: security-baselines.md
+      - name: Security baseline settings
+        href: security-baseline-settings-windows.md
       - name: Windows update settings
         href: windows-update-settings.md
     - name: Windows Holographic for Business
