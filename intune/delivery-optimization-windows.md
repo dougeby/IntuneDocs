@@ -2,12 +2,12 @@
 # required metadata
 
 title: Delivery optimization settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: Configure how software updates are delivered to your devices using the delivery optimization cloud services available with Windows 10 and later devices. In Intune, create a device configuration profile to install updates from the internet. Also see how to replace existing update rings with a delivery optimization profile.
+description: Configure how Windows 10 devices you manage with Intune use delivery optimization. In Intune, create a device configuration profile to install updates from the internet. Also see how to replace existing update rings with a delivery optimization profile.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,22 +22,22 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
+ms.reviewer: kerimh
 ---
 
-# Windows 10 (and newer) delivery optimization settings in Microsoft Intune
+# Delivery optimization settings in Microsoft Intune
+
+With Intune, you can use Delivery optimization settings for your Windows 10 devices to reduce bandwidth consumption when those devices download applications and updates. Delivery optimization is configured as part of your device configuration profiles.  
+
+This article describes how to configure delivery optimization settings as part of a device configuration profile. After you create a profile, you then assign or deploy that profile to your Windows 10 devices. 
+
+For a list of the delivery optimization settings that Intune supports, see [Delivery optimization settings for Intune](delivery-optimization-settings.md).  
+
+To learn about Delivery Optimization on Windows 10, see [Delivery Optimization updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) in the Windows documentation.  
+
 
 > [!NOTE]
-> **Software updates – Windows 10 Update Rings** are replaced by the **Delivery optimization** settings. Your existing update rings can be changed to use the **Delivery optimization** settings. [Move existing update rings to delivery optimization](#move-existing-update-rings-to-delivery-optimization) (in this article) lists the steps. 
-
-
-This feature applies to the following platform:
-
-- Windows 10 and later
-
-This article lists and describes all the delivery optimization settings you can configure for Windows 10 devices. These settings are added to a device configuration profile, and then assigned or deployed to your devices using Microsoft Intune.
-
-[Delivery Optimization updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) is a great resource to learn more about delivery optimization on Windows 10.
-
+> **Software updates – Windows 10 Update Rings** are replaced by the **Delivery optimization** settings. Your existing update rings can be changed to use the **Delivery optimization** settings. [Move existing update rings to delivery optimization](#move-existing-update-rings-to-delivery-optimization) (in this article) 
 ## Create the profile
 
 1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
@@ -53,23 +53,15 @@ This article lists and describes all the delivery optimization settings you can 
         - **Windows 10 and later**
 
     - **Profile type**: Select **Delivery optimization**.
-    - **Settings**: Choose how you want the updates downloaded. Your options: 
-
-        - **Not configured​**: End users update their devices using their own methods, which may be to use the **Windows Updates** or **Delivery Optimization** settings available with the OS.
-        - **HTTP only, no peering​**: Get updates only from the internet. Don't get updates from other computers on your network (called peering or peer-to-peer).
-        - **HTTP blended with peering behind the same NAT**: Get updates from the internet and from other computers on your network. 
-        - **HTTP blended with peering across a private group​**: Peering occurs on devices in the same Active Directory Site (if it exists) or the same domain. When this option is selected, peering crosses your Network Address Translation (NATs) IP addresses.
-        - **HTTP blended with Internet peering​**: Get updates from the internet and from other computers on your network.
-        - **Simple download mode with no peering​**: Gets updates from the internet, directly from the update owner, such as Microsoft. It doesn't contact the delivery optimization cloud services.
-        - **Bypass mode**: Use Background Intelligent Transfer Service (BITS) to get updates. Don't use delivery optimization.
+    - **Settings**: Configure settings that define how you want updates and apps to download. For information about available settings, see [Delivery optimization settings for Intune](delivery-optimization-settings.md).
 
 4. When finished, select **OK** > **Create** to save your changes.
 
-The profile is created, and is shown in the list. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+The profile is created and is shown in the list. Next, [assign the profile](device-profile-assign.md) and then [monitor its status](device-profile-monitor.md).
 
 ## Move existing update rings to delivery optimization
 
-**Software updates – Windows 10 Update Rings** are replaced by the **Delivery optimization** settings. Your existing update rings can be easily changed to use the **Delivery optimization** settings. Steps:
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To do so:
 
 1. Create a delivery optimization configuration profile:
 
@@ -88,7 +80,7 @@ The profile is created, and is shown in the list. Next, [assign the profile](dev
             - **HTTP blended with Internet peering​**
             - **Simple download mode with no peering​**
             - **Bypass mode**
-
+    3. Configure any additional settings you might want to manage.
 2. Assign this new profile to the same devices and users as the existing software update ring. [Assign the profile](device-profile-assign.md) lists the steps.
 
 3. Unconfigure the existing software ring:
@@ -99,4 +91,5 @@ The profile is created, and is shown in the list. Next, [assign the profile](dev
 
 ## Next steps
 
-[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md) its status.
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md) its status.  
+View the [delivery optimization settings](delivery-optimization-settings.md) for Intune.
