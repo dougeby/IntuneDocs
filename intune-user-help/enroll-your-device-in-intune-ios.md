@@ -80,7 +80,7 @@ If you pause for more than a few minutes during enrollment, the app might close 
  
 5. The **What's next?** screen summarizes the remaining steps. These steps could be different depending on your iOS version. If you're on iOS version 12.2 and later, your experience might instead require you to:  
 
-    a. **Allow download of management profile**: Your browser will open the Company Portal webiste, and prompt you to allow the download. The download will be saved in your Settings app.  
+    a. **Allow download of management profile**: Your browser will open the Company Portal website, and prompt you to allow the download. The download will be saved in your Settings app.  
     b. **Open the Settings app and install the profile**: You'll need to go to the Settings app and install the management profile.  
     c. **Return to the Company Portal app**: You'll need to return to the Company Portal app to complete setup.  
 
