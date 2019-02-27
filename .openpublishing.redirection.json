@@ -2,7 +2,7 @@
 	"redirections": [
 		{
 			"source_path": "intune/device-compliance-monitor.md",
-			"redirect_url": "/intune/compliance-policy-monitor.md",
+			"redirect_url": "/intune/compliance-policy-monitor",
 			"redirect_document_id": false
 		},	
 		{
