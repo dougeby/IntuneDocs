@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -78,11 +78,14 @@ If you pause for more than a few minutes during enrollment, the app might close 
 
     ![Example screenshot of Company Portal app, "What can my organization see", with Continue button.](./media/ios-06-cp-enroll-1903.PNG)  
  
-5. The **What's next?** screen summarizes the remaining steps. These steps could be different depending on your iOS version. If you're on iOS version 12.2 and later, your experience might instead require you to:  
+5. The **What's next?** screen summarizes the remaining steps. These steps could be different depending on your iOS version. 
+    * **iOS 12.2 and later**: your experience might instead require you to:  
 
-    a. **Allow download of management profile**: Your browser will open the Company Portal website, and prompt you to allow the download. The download will be saved in your Settings app.  
-    b. **Open the Settings app and install the profile**: You'll need to go to the Settings app and install the management profile.  
-    c. **Return to the Company Portal app**: You'll need to return to the Company Portal app to complete setup.  
+        a. **Allow download of management profile**: Your browser will open the Company Portal website, and prompt you to allow the download. The download will be saved in your Settings app.  
+
+        b. **Open the Settings app and install the profile**: You'll need to go to the Settings app and install the management profile.  
+
+        c. **Return to the Company Portal app**: You'll need to return to the Company Portal app to complete setup.  
 
     When you're ready to download the management profile,tap **Continue**.  
 
@@ -92,7 +95,7 @@ If you pause for more than a few minutes during enrollment, the app might close 
     > [!IMPORTANT]
     > You must go to the **Settings** app and install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment. 
 
-7. In the **Settings** app, tap **Install Downloaded Profile** > **Install**. If **Install Download Profile** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
+7. In the **Settings** app, tap **Install Downloaded Profile** > **Install**. If **Install Downloaded Profile** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
 
     ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)  
     
