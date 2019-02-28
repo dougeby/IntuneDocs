@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,9 +23,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
-# Use the Intune Data Warehouse
+# Use the Microsoft Intune Data Warehouse
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -33,6 +34,8 @@ Use the Intune Data Warehouse to build reports that provide insight into your en
 -	Trend of users enrolling in Intune so you can optimize your license purchases
 -	App and OS versions breakdown so you can review that status of mobile devices
 -	Enrollment and device compliance trends so you can smoothly roll out policy updates
+
+## Data Warehouse benefits
 
 The Data Warehouse provides you access to more information about your mobile environment than the Azure portal. With the Intune Data Warehouse you can access:
 
@@ -47,7 +50,7 @@ The Data Warehouse provides you access to more information about your mobile env
 > You can now use the v1.0 version of the Intune Data Warehouse by setting the query parameter `api-version=v1.0`. Updates to collections in the Data Warehouse are additive in nature and do not break existing scenarios.<br><br>
 > You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
 
-**Next steps**
+## Next steps
 
 - Get a link and use Power BI to get insight. For instructions, see [Connect to the Intune Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
 - With your link, create a custom report with Power BI. For instructions, see [Create a report from the OData feed with Power BI](reports-proc-create-with-odata.md).

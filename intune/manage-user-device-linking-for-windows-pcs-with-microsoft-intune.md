@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
-
+ms.collection: M365-identity-device-management
 ---
 
 # Manage user-device linking for Windows PCs
@@ -47,7 +47,7 @@ To link a user to a PC:
 
    - To leave the PC linked to its current user, if there is one, choose **Cancel**.
 
-   - To remove the link to the current user, if there is one, choose <strong>Remove link **&gt; **OK</strong>.
+   - To remove the link to the current user, if there is one, choose <strong>Remove link **&gt;** OK</strong>.
 
    - To link the PC to a new user, in the **All users** list, select a user. Confirm that the user data is correct, and then choose **OK**.
 

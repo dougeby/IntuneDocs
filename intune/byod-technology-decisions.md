@@ -23,7 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Technology decisions for enabling BYOD with Microsoft Enterprise Mobility + Security (EMS)

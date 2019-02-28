@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,9 +17,10 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
-# Add apps to Microsoft Intune
+# Add apps to Microsoft Intune 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -48,7 +49,7 @@ The following table lists the specific app types and how you can add them in the
 | iOS store apps  | Store app  | Select **iOS** as the **app type**, search for the app, and select the app in Intune. |
 | Windows Phone 8.1 store apps  | Store app  | Select **Windows Phone 8.1** as the **app type**, and enter the Microsoft store URL for the app. |
 | Microsoft store apps  | Store app  | Select **Windows** as the **app type**, and enter the Microsoft store URL for the app. |
-| Android work profile apps | Store app  | Find and approve the Android work profile app from the Managed Google Play store.  |
+| Managed Google Play apps | Store app  | Select **Managed Google Play** as the **app type**, search for the app, and select the app in Intune. |
 | Office 365 apps for Windows 10  | Store app (Office 365) | Select **Windows 10** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app that you want to install.  |
 | Office 365 apps for macOS | Store app (Office 365) | Select **macOS** under the **Office 365 Suite** as the **app type**, and then select the Office 365 app suite. |
 | Android line-of-business (LOB) apps | LOB app | Select **Line-of-business** app as the **app type**, select the **App package file**, and then enter an Android installation file with the extension **.apk**.  |
@@ -115,7 +116,7 @@ Intune-managed apps can also enable app protection without requiring enrollment,
 ### Understanding licensed apps
 In addition to understanding web apps, store apps, and LOB apps, you should also be aware of the destination of volume-purchase-program apps and licensed apps, such as: 
 - **Apple Volume Purchasing Program for Business (iOS)**: The iOS App Store lets you purchase multiple licenses for an app that you want to run in your company. Purchasing multiple copies helps you to efficiently manage apps in your company. For more information, see [Manage iOS volume-purchased apps](vpp-apps-ios.md).
-- **Android work profile**: How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. All apps you install for Android work profiles come from the Managed Google Play store. You sign in to the store, browse for the apps you want, and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
+- **Android work profile**: How you assign apps to Android work profile devices differs from how you assign them to standard Android devices. All apps you install for Android work profiles come from the Managed Google Play store. You use Intune to browse for the apps you want and approve them. The app then appears in the **Licensed apps** node of the Azure portal, and you can manage assignment of the app as you would any other app.
 - **Microsoft Store for Business (Windows 10)**: Microsoft Store for Business gives you a place to find and purchase apps for your organization, individually or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps in the Azure portal. For more information, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
 
     > [!NOTE]

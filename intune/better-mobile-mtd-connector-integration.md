@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.assetid:
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Integrate Better Mobile with Intune
@@ -70,7 +70,7 @@ The Better Mobile app authorization process follows:
 1. Go to the [Better Mobile admin console](https://aad.bmobi.net) and sign in with your credentials.
 2. Choose **Integration** > **EMM/MDM** > **ADD ACCOUNT**.
 
-     ![Better Mobile admin console](media/better_mobile_console.png)
+     ![Image of the Better Mobile admin console](media/better_mobile_console.png)
  
 3. Choose **Intune**.
 4. Next to **ACCOUNT NAME**, type a descriptor. 

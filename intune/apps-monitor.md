@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Monitor app information and assignments with Microsoft Intune
@@ -40,7 +41,7 @@ Intune provides several ways to monitor the properties of apps that you manage a
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
 > [!NOTE]
-> Android Store apps that are deployed as **Available** do not report their installation status.
+> Android Store apps that are deployed as **Available** and Android LOB apps deployed as **Available with or without enrollment** do not report their installation status.
 
 ## App overview pane
 
@@ -84,7 +85,7 @@ A device status list is shown when you select **Device install status** in the *
 | **Device name**      | The name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute isn't available to any other device.                                                                       |
 | **User name**        | The name of the user.                                                                                                                                                                                                                                      |
 | **Platform**         | The operating system of the device (Windows, iOS, Android, and so on).                                                                                                                                                                                           |
-| **Version**          | The version number of the app. For line-of-business apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). |
+| **Version**          | The version number of the app. For line-of-business (LOB) apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). For Store apps, no versions are shown. |
 | **Status**           | The status of the app.                                                                                                                                                                                                                                     |
 | **Status details**   | The details of the status.                                                                                                                                                                                                                                     |
 | **Last check-in**    | The date of the device's last sync with Intune.                                                                                                                                                                                                                  |

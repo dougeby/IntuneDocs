@@ -4,10 +4,10 @@
 title: Use Windows Defender ATP in Microsoft Intune - Azure | Microsoft Docs
 description: See how to enable Windows Defender Advanced Threat Protection (ATP) in an end-to-end scenario, including turning on ATP in Intune and Windows Defender Security Center (ATP portal), onboard devices using an ATP configuration profile, create an Intune device compliance policy, create an Azure AD conditional access policy, and monitor device compliance.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 02/22/2019
 
 ms.topic: article
 ms.prod:
@@ -24,10 +24,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# Enable Windows Defender ATP with conditional access in Intune
+# Enforce compliance for Windows Defender ATP with conditional access in Intune
 
 Windows Defender Advanced Threat Protection (ATP) and Microsoft Intune work together to help prevent security breaches, and help limit the impact of breaches within an organization.
 
@@ -98,7 +98,7 @@ Once you onboard a device using configuration package, then you don't need to do
   - **Windows Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
   
     > [!NOTE] 
-    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you.
+    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you, and the **Windows Defender ATP client configuration package type** setting will not be available.
   
   - **Sample sharing for all files**: **Enable** allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis. **Not configured** doesn't share any samples to Windows Defender ATP.
   - **Expedite telemetry reporting frequency**: For devices that are at high risk, **Enable** this setting so it reports telemetry to the Windows Defender ATP service more frequently.
@@ -131,10 +131,13 @@ The compliance policy determines an acceptable level of risk on a device.
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
-## Create an Azure AD conditional access policy
-The conditional access policy blocks access to resources *if* the device is noncompliant. So if a device exceeds the threat level, you can block access to corporate resources, such as SharePoint or Exchange Online.
+## Create a conditional access policy
+The conditional access policy blocks access to resources *if* the device is noncompliant. So if a device exceeds the threat level, you can block access to corporate resources, such as SharePoint or Exchange Online.  
 
-1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** > **Conditional access** > **New policy**.
+> [!TIP]  
+> Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
+
+1. In the [Azure portal](https://portal.azure.com), open **Intune** > **Conditional access** > **New policy**.
 2. Enter a policy **Name**, and select **Users and groups**. Use the Include or Exclude options to add your groups for the policy, and select **Done**.
 3. Select **Cloud apps**, and choose which apps to protect. For example, choose **Select apps**, and select **Office 365 SharePoint Online** and **Office 365 Exchange Online**.
 

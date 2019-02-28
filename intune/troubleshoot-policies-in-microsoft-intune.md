@@ -2,12 +2,12 @@
 # required metadata
 
 title: Troubleshoot policies in Microsoft Intune - Azure | Microsoft Docs
-description: Common problems or issues and resolutions when using policies in Microsoft Intune
+description: See how to use the built-in troubleshoot feature, and read about Common problems or issues and their resolutions when using compliance policies and configuration profiles in Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,51 +24,127 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot policies in Intune
+# Troubleshoot policies and profiles and in Intune
 
-If you're having problems deploying and managing Intune policies, start here. This article describes some common problems you might experience, and possible solutions.
+Microsoft Intune includes some built-in troubleshooting features. Use these features to help troubleshoot compliance policies and configuration profiles in your environment.
 
-## General Issues
+This article lists some common troubleshooting techniques, and describes some issues you may experience.
 
-### Was a deployed policy applied to the device?
-**Issue:** You're unsure if a policy is correctly applied.
+## Use built-in troubleshooting
 
-In Intune > **Devices** > **All devices** > select the device > **Device configuration**, every device lists its policies. Each policy has a **Status**. The status is applied when all of the policies that apply to the device, including the restrictions and requirements of the hardware and the operating system, are considered together. Possible statuses are:
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+2. Select **Troubleshoot**:
 
-- **Conforms**: The device has received the policy and reports to the service that it conforms to the setting.
+    ![In Intune, go to Help and Support, and select Troubleshoot](./media/help-and-support-troubleshoot.png)
 
-- **Not applicable**: The policy setting isn't applicable. For example, email settings for iOS devices would not apply to an Android device.
+3. Choose **Select user** > select the user having an issue > **Select**.
+4. Confirm that **Intune License** and **Account Status** both show green checks:
 
-- **Pending**: The policy is sent to the device, but hasn't reported the status to the service. For example, encryption on Android requires the user to enable encryption, and might show as pending.
+    ![In Intune, select the user and confirm Account status and Intune license show green checks marks for the status](./media/account-status-intune-license-show-green.png)
+
+    **Helpful links**:
+
+    - [Assign licenses so users can enroll devices](licenses-assign.md)
+    - [Add users to Intune](users-add.md)
+
+5. Under **Devices**, find the device having an issue. Review the different columns:
+
+    - **Managed**: For a device to receive compliance or configuration policies, this property must show **MDM** or **EAS/MDM**.
+
+      - If **Managed** isn't set to **MDM** or **EAS/MDM**, then the device isn't enrolled. It doesn't receive compliance or configuration policies until it's enrolled.
+
+      - App protection policies (mobile application management) don't require devices to be enrolled. For more information, see [create and assign app protection policies](app-protection-policies.md).
+
+    - **Azure AD Join Type**: Should be set to **Workplace** or **AzureAD**.
+ 
+      - If this column is **Not Registered**, there may be an issue with enrollment. Typically, unenrolling and re-enrolling the device resolves this state.
+
+    - **Intune compliant**: Should be **Yes**. If **No** is shown, there may be an issue with compliance policies, or the device isn't connecting to the Intune service. For example, the device may be turned off, or may not have a network connection. Eventually, the device becomes non-compliant, possibly after 30 days.
+
+      For more information, see [get started with device compliance policies](device-compliance-get-started.md).
+
+    - **Azure AD compliant**: Should be **Yes**. If **No** is shown, there may be an issue with compliance policies, or the device isn't connecting to the Intune service. For example, the device may be turned off, or may not have a network connection. Eventually, the device becomes non-compliant, possibly after 30 days.
+
+      For more information, see [get started with device compliance policies](device-compliance-get-started.md).
+
+    - **Last check in**: Should be a recent time and date. By default, Intune devices check in every 8 hours.
+
+      - If **Last check in** is more than 24 hours, there may be an issue with the device. A device that can't check in can't receive your policies from Intune.
+
+      - To force check-in:
+        - On the Android device, open the Company Portal app > **Devices** > Choose the device from list > **Check Device Settings**.
+        - On the iOS device, open the Company portal app > **Devices** > Choose the device from list > **Check Settings**. 
+        - On a Windows device, open **Settings** > **Accounts** > **Access Work or School** > Select the account or MDM enrollment > **Info** > **Sync**.
+
+    - Select the device to see policy-specific information.
+
+      **Device Compliance** shows the states of compliance policies assigned to the device.
+
+      **Device Configuration** shows the states of configuration policies assigned to the device.
+
+      If the expected policies aren't shown under **Device Compliance** or **Device Configuration**, then the policies aren't targeted correctly. Open the policy, and assign the policy to this user or device.
+
+      **Policy states**:
+
+      - **Not Applicable**: This policy isn't supported on this platform. For example, iOS policies don't work on Android. Samsung KNOX policies don't work on Windows devices.
+      - **Conflict**: There's an existing setting on the device that Intune can't override. Or, you deployed two policies with the same setting using different values.
+      - **Pending**: The device hasn't checked into Intune to get the policy. Or, the device received the policy but hasn't reported the status to Intune.
+      - **Errors**: Look up errors and possible resolutions at [Troubleshoot company resource access problems](troubleshoot-company-resource-access-problems.md).
+
+      **Helpful links**: 
+
+      - [Ways to deploy device compliance policies](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies)
+      - [Monitor device compliance policies](compliance-policy-monitor.md)
+
+## You're unsure if a profile is correctly applied
+
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+2. Select **Devices** > **All devices** > select the device > **Device configuration**. 
+
+    Every device lists its profiles. Each profile has a **Status**. The status applies when all of the assigned profiles, including hardware and OS restrictions and requirements, are considered together. Possible statuses include:
+
+    - **Conforms**: The device received the profile and reports to Intune that it conforms to the setting.
+
+    - **Not applicable**: The profile setting isn't applicable. For example, email settings for iOS devices don't apply to an Android device.
+
+    - **Pending**: The profile is sent to the device, but hasn't reported the status to Intune. For example, encryption on Android requires the user to enable encryption, and might show as pending.
+
+**Helpful link**: [Monitor configuration device profiles](device-profile-monitor.md)
 
 > [!NOTE]
 > When two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies.
 
-## Issues with enrolled devices
+## Alert: Saving of Access Rules to Exchange has Failed
 
-### Alert: Saving of Access Rules to Exchange has Failed
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
 
-If you  created policies in the Exchange On-Premises Policy workspace under the Admin Console but are using O365, then the configured policy settings aren't enforced by Intune. Note the policy source from the alert.  Under the Exchange On-premises Policy workspace delete the legacy rules. The legacy rules are Global Exchange rules within Intune for on-premises Exchange, and aren't relevant to O365. Then, create new policy for O365.
+If you create policies in the Exchange On-Premises Policy workspace (Admin console), but are using Office 365, then the configured policy settings aren't enforced by Intune. In the alert, note the policy source. Under the Exchange On-premises Policy workspace, delete the legacy rules. The legacy rules are Global Exchange rules within Intune for on-premises Exchange, and aren't relevant to Office 365. Then, create new policy for Office 365.
 
-### Cannot change security policy for various enrolled devices
-Windows Phone devices don't allow security policies set via MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8  then try to reduce it to 4. The more restrictive policy has already been applied to the device.
+[Troubleshoot the Intune on-premises Exchange connector](troubleshoot-exchange-connector.md) may be a good resource.
 
-Depending on the device platform, if you want to change the policy  to a less secure value you may need to reset security policies.
+## Can't change security policies for enrolled devices
 
-For example, in Windows, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel**, and select **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
+Windows Phone devices don't allow security policies set using MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8, and then try to reduce it to 4. The more restrictive policy is applied to the device.
 
-Other MDM devices, such as Android, Windows Phone 8.1 and later, and iOS, may need to be retired and re-enrolled into the service to apply a less restrictive policy.
+Depending on the device platform, if you want to change the policy to a less secure value, you may need to reset the security policies.
 
-## Issues with PCs that run the Intune software client
+For example, in Windows, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel** > **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
 
-Applies to the classic portal.
+Other MDM devices, such as Android, iOS, and Windows Phone 8.1, may need to be retired and re-enrolled to apply a less restrictive policy.
+
+[Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md) may be a good resource.
+
+## PCs using the Intune software client - classic portal
+
+> [!NOTE]
+> This section applies to the classic portal. 
 
 ### Microsoft Intune policy-related errors in policyplatform.log
-For Windows PCs managed with the Intune software client, policy errors in the policyplatform.log file may be the result of non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
+
+For Windows PCs managed with the Intune software client, policy errors in the `policyplatform.log` file may be from non-default settings in the Windows User Account Control (UAC) on the device. Some non-default UAC settings can affect Microsoft Intune client installations and policy execution.
 
 #### Resolve UAC issues
 
@@ -79,14 +155,16 @@ For Windows PCs managed with the Intune software client, policy errors in the po
     > [!NOTE]
     > Don't attempt to remove the client from Programs and Features.
 
-3. On the start menu type **UAC** to open the User Account Control settings.
+3. On the start menu, type **UAC** to open the User Account Control settings.
 
-4. Move  the notification slider to the default setting.
+4. Move the notification slider to the default setting.
 
 ### ERROR: Cannot obtain the value from the computer, 0x80041013
-Occurs if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions will fail because the time stamps will be invalid.
 
-To resolve this issue, set the local system time as close as possible to Internet time, or to the time set on the domain controllers on the network.
+Occurs if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions fail because the time stamps are invalid.
 
-### Next steps
-If this troubleshooting information didn't help, contact Microsoft Support as described in [get support for Microsoft Intune](get-support.md).
+To resolve this issue, set the local system time as close as possible to Internet time. Or, set it to the time on the domain controllers on the network.
+
+## Next steps
+
+If you still need some help, you can [get support for Microsoft Intune](get-support.md).

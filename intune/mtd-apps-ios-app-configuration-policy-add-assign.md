@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Add and assign MTD apps to Microsoft Intune
-titleSuffix:
+title: Add and assign MTD apps to Microsoft Intune | Microsoft Intune
 description: Use Intune to add Mobile Threat Defense (MTD) apps, Microsoft Authenticator app, and iOS configuration policy in the Azure portal.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add and assign Mobile Threat Defense (MTD) apps with Intune
@@ -33,7 +32,7 @@ ms.custom: intune-azure
 > [!NOTE] 
 > This topic applies to all Mobile Threat Defense partners.
 
-You can use Intune to add and deploy MTD apps so end users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
+You can use Intune to add and deploy Mobile Threat Defense (MTD) apps so that end users can receive notifications when a threat is identified in their mobile devices, and to receive guidance to remediate the threats.
 
 
 ## Before you begin
@@ -43,13 +42,12 @@ The below steps need to be completed in the [Azure portal](https://portal.azure.
   -   [Adding an app into Intune](apps-add.md).
   -   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
   -   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [ Adding an iOS app configuration policy](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
-> The Intune company portal works as the broker on Android devices so users can have their identities checked by Azure AD.
+> The Intune Company Portal works as the broker on Android devices so users can have their identities checked by Azure AD.
 
 ## Configure Microsoft Authenticator for iOS
-For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need the iOS app configuration policy which signals the MTD iOS app to use with Intune.
+For iOS devices, you need the [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) so users can have their identities checked by Azure AD. Additionally, you need an iOS app configuration policy that sets the MTD iOS app you use with Intune.
 
 See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Microsoft Authenticator app store URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) on **step 12** under the **Configure app information** section.
 
@@ -150,11 +148,11 @@ Choose the section that corresponds to your MTD provider:
 
 ### Lookout for Work app configuration policy
 
-- Create the iOS app configuration policy as described in the [using iOS app configuration policy](app-configuration-policies-use-ios.md) topic.
+- Create the iOS app configuration policy as described in the [using iOS app configuration policy](app-configuration-policies-use-ios.md) article.
 
 ### SEP Mobile app configuration policy
 
--   Use the same Azure AD account previously configured in the [Symantec Endpoint Protection Management console](https://aad.skycure.com), which should be the same account used to log in to the Intune classic portal.
+-   Use the same Azure AD account previously configured in the [Symantec Endpoint Protection Management console](https://aad.skycure.com), which should be the same account used to sign in to the Intune classic portal.
 
 -   You need to **download** the iOS app configuration policy file: 
     -   Go to [Symantec Endpoint Protection Management console](https://aad.skycure.com) and sign in with your admin credentials.

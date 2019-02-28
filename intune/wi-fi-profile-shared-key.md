@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
-
+ms.collection: M365-identity-device-management
 ---
 # Use a custom device profile to create a WiFi profile with a pre-shared key - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -39,9 +39,8 @@ Pre-shared keys (PSK) are typically used to authenticates users in WiFi networks
 ## Before you begin
 
 - It may be easier to copy the code from a computer that connects to that network, as described later in this article.
-- For Android, you can also use the [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - You can add multiple networks and keys by adding more OMA-URI settings.
-- For iOS, use Apple Configurator on a Mac station to set up the profile. Or, use [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- For iOS, use Apple Configurator on a Mac station to set up the profile.
 - PSK requires a string of 64 hexadecimal digits, or a passphrase of 8 to 63 printable ASCII characters. Some characters, such as asterisk ( * ), are not supported.
 
 ## Create a custom profile

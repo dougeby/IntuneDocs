@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 07/25/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.assetid:
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 --- 
 
 # Better Mobile Threat Defense connector with Intune
@@ -56,7 +56,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![Malicious apps detected](./media/better_mobile_maliciousapps_blocked.png)
+![Image that shows malicious apps detected](./media/better_mobile_maliciousapps_blocked.png)
 
 **Access granted on remediation:**
 
@@ -72,7 +72,7 @@ Detect threats to your network like **Man-in-the-middle** attacks, and protect a
 
 **Access granted on remediation:**
 
-![Access granted on remediation](./media/better_mobile_network_wifi_unblocked.png)
+![Image that shows access granted on remediation](./media/better_mobile_network_wifi_unblocked.png)
 
 ### Control access to SharePoint Online based on threat to network
 

@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Getting started with Microsoft Intune
+title: What can Microsoft Intune do for my company
 titleSuffix: 
-description: Go through a series of short hands-on quickstarts to learn about Intune.
+description: Common business problems that Microsoft Intune helps solve.
 keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/12/2018
-ms.topic: article
+ms.date: 02/26/2019
+ms.topic: overview
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
+ms.collection: M365-identity-device-management
 ---
 
 # What can Intune do for my company?

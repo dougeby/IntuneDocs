@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Remove devices by using wipe, retire, or manually unenrolling the device
@@ -87,22 +87,20 @@ The following tables describe what data is removed, and the effect of the **Reti
 
 |Data type|iOS|
 |-------------|-------|
-|Company apps and associated data installed by Intune|Apps are uninstalled. Company app data is removed.<br /><br />App data from Microsoft apps that use mobile app management is removed. The app is not removed.|
+|Company apps and associated data installed by Intune|**Apps installed using Company Portal:** For apps that are pinned to the management profile, all app data and the apps are removed. These apps include apps originally installed from App Store and later managed as company apps. <br /><br /> **Microsoft apps that use mobile app management and were installed from App Store:** For apps that are not managed by the Company Portal, company app data that's protected by Mobile Application Management (MAM) encryption within the app local storage is removed. Data that's protected by MAM encryption outside the app remains encrypted and unusable, but isn't removed. Personal app data and the apps are not removed.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|
 |Management agent|The management profile is removed.|
 |Email|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|
-|Outlook|Email that's received by the Microsoft Outlook app for iOS is removed. This requires that the Outlook mobile app be deployed as a Required app to iOS users first.|
 |Azure AD unjoin|The Azure AD record is removed.|
-|Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 
 ### Android
 
 |Data type|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Web links|Removed.|Removed.|
-|Unmanaged Google Play apps|Apps and data remain installed.|Apps and data remain installed.|
+|Unmanaged Google Play apps|Apps and data remain installed. <br /> <br />Company app data that's protected by Mobile Application Management (MAM) encryption within the app local storage is removed. Data that's protected by MAM encryption outside the app remains encrypted and unusable, but isn't removed. |Apps and data remain installed. <br /> <br />Company app data that's protected by Mobile Application Management (MAM) encryption within the app local storage is removed. Data that's protected by MAM encryption outside the app remains encrypted and unusable, but isn't removed.|
 |Unmanaged line-of-business apps|Apps and data remain installed.|Apps are uninstalled and data that's local to the app is removed. No data that's outside the app (for example, on an SD card) is removed.|
 |Managed Google Play apps|App data is removed. The app isn't removed. Data that's protected by Mobile Application Management (MAM) encryption outside the app (for example, an SD card) remains encrypted and unusable, but isn't removed.|App data is removed. The app isn't removed. Data that's protected by MAM encryption outside the app (for example, an SD card) remains encrypted, but isn't removed.|
 |Managed line-of-business apps|App data is removed. The app isn't removed. Data that's protected by MAM encryption outside the app (for example, an SD card) remains encrypted and unusable, but isn't removed.|App data is removed. The app isn't removed. Data that's protected by MAM encryption outside the app (for example, an SD card) remains encrypted and unusable, but isn't removed.|
@@ -111,9 +109,7 @@ The following tables describe what data is removed, and the effect of the **Reti
 |Certificate profile settings|Certificates are revoked but not removed.|Certificates are removed and revoked.|
 |Management agent|Device Administrator privilege is revoked.|Device Administrator privilege is revoked.|
 |Email|N/A (Email profiles aren't supported by Android devices)|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|
-|Outlook|Email that's received by the Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook isn't wiped when the device is unenrolled.|Email that's received by the Outlook app for Android is removed, but only if Outlook is protected by MAM policies. Otherwise, Outlook isn't wiped when the device is unenrolled.|
 |Azure AD unjoin|The Azure AD record is removed.|The Azure AD record is removed.|
-|Contacts |Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.|Contacts that are synced directly from the app to the native address book are removed. Any contacts that are synced from the native address book to another external source can't be removed. <br /> <br />Currently, only the Outlook app is supported.
 
 ### Android work profile
 
@@ -139,7 +135,7 @@ You can only wipe kiosk devices. You can't retire Android kiosk devices.
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8.1 and Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creators Update) and later, Office 365 ProPlus apps aren't removed.|
+|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creators Update) and later, Office 365 ProPlus apps aren't removed. Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|Certificates are removed and revoked.|Not supported.|Certificates are removed and revoked.|
@@ -198,6 +194,10 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 6. Choose **Reassign**.
 
     ![Screenshot for Apple reassign](./media/devices-wipe/apple-reassign.png)
+
+## Fresh Start
+
+Applicable for Windows 10 devices. Read more about [Fresh Start](https://docs.microsoft.com/intune/device-fresh-start).
 
 ## Next steps
 

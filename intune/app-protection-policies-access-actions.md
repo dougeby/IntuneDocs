@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Selectively wipe data using app protection policy access actions
+title: Wipe data using app protection policy access actions
 titleSuffix: Microsoft Intune
 description: Learn how to selectively wipe data using app protection policy access actions in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,8 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Selectively wipe data using app protection policy access actions in Intune
@@ -114,7 +115,7 @@ The following list provides the common list of actions:
 
 In some cases, such as the **Min OS version** setting, you can configure the setting to perform all applicable actions based on different version numbers. 
 
-![Screenshot of the Intune app protection access actions - Min OS version](./media/apps-selective-wipe-access-actions05.png)
+![Screenshot of app protection access actions - Min OS version](./media/apps-selective-wipe-access-actions05.png)
 
 Once a setting is fully configured, the row will appear in a read-only view and be available to be edited at any time. In addition, the row will appear to have a dropdown available for selection in the **Setting** column. Settings that have already been configured and do not allow multiple actions will not be available for selection in the dropdown.
 

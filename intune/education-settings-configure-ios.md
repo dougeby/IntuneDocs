@@ -25,15 +25,16 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 
 # How to configure Intune settings for the iOS Classroom app
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
->[!NOTE]
->Intune settings for the Classroom App have been made obsolete in Intune. This article is only applicable for users with existing education profiles in Intune.
+
+> [!NOTE]
+> Intune settings for the Classroom App are obsolete in Intune. This article is only applicable for users with existing education profiles in Intune.
 
 ## Introduction
 [Classroom](https://itunes.apple.com/app/id1085319084) is an app that helps teachers to guide learning, and control student devices in the classroom. For example, the app enables teachers to:

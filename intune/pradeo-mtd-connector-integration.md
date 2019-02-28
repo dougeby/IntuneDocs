@@ -25,7 +25,7 @@ ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Integrate Pradeo with Intune
@@ -75,7 +75,7 @@ The Pradeo app authorization process follows:
 
 4.  In the **EMM (Enterprise mobility management - Intune** window, under **Step 1**, choose the **Pradeo Connector** button. 
 
-    ![Pradeo EMM Intune window](./media/pradeo_setup.png)
+    ![Screenshot of the Pradeo EMM Intune window](./media/pradeo_setup.png)
 
 5. In the Microsoft Intune connection window, enter your Intune credentials.
 

@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Set up enrollment for macOS devices in Intune
@@ -42,7 +42,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 
 - [Configure domains](custom-domain-name-configure.md)
 - [Set the MDM Authority](mdm-authority-set.md)
-- [Create groups](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Create groups](groups-add.md)
 - [Configure the Company Portal](company-portal-app.md)
 - Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
@@ -74,7 +74,7 @@ By default, Intune lets macOS devices enroll. To block macOS devices from enroll
 
 You can enroll macOS virtual machines for testing using either Parallels Desktop or VMware Fusion. 
 
-For Parallels Desktop, you need to set the hardware type and the serial number for the virtual machines so that Intune can recognize them. Follow Parallels' instructions for [setting hardware type](http://kb.parallels.com/123594) and [serial number](http://kb.parallels.com/123455) to set up the necessary settings for testing. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
+For Parallels Desktop, you need to set the hardware type and the serial number for the virtual machines so that Intune can recognize them. Follow Parallels' instructions for setting hardware type and [serial number](http://kb.parallels.com/123455) to set up the necessary settings for testing. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
 
 For VMware Fusion, you need to [edit the .vmx file](https://kb.vmware.com/s/article/1014782) to set the virtual machine's hardware model and serial number. We recommend that you match the hardware type of the device running the virtual machines to the hardware type of the virtual machines that you're creating. You can find this hardware type in **Apple menu** > **About this Mac** > **System Report** > **Model Identifier**. 
 

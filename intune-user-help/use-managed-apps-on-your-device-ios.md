@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Use managed apps on your iOS device
@@ -38,7 +38,7 @@ When you access company data in a managed app, you see a message like the one be
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### How do I get managed apps?
+## How do I get managed apps?  
 You get managed apps in a couple of different ways:
 
 -   When your device is enrolled in Microsoft Intune, you either install the app from your Company Portal app or Company Portal website, or your company support might install it on your device. To learn about enrolling, see [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) or [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md).
@@ -47,7 +47,16 @@ You get managed apps in a couple of different ways:
 
 Your company support might sometimes purchase multiple licenses for an app you install. If you see a message asking you to accept the Apple Volume Purchase Program agreement, this is normal, and you can accept it. If you don’t accept it, you won’t be able to install the app.
 
-### What can my company support manage in an app?
+## Available apps   
+ Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.   
+
+ Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for iOS, you'll have access to iOS apps, but not Android apps.   
+
+## Request an app for work or school   
+ If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app's **Support** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## What can my company support manage in an app?  
 Here are some examples of options that your company support can manage in an app, and that can affect your interactions with company data on your device:
 
 -   Access to specific websites

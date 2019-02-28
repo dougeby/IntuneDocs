@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Manage transferring data between iOS apps
-titlesuffix: Microsoft Intune
+title: Manage transferring data between iOS apps | Microsoft Intune
 description: Understand how to use mobile app management policies in Microsoft Intune to manage data transfers between apps.
 keywords:
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +25,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to manage data transfer between iOS apps in Microsoft Intune
@@ -44,7 +43,7 @@ Use App protection policies with the iOS **Open in management** feature to prote
 
 -   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only Policy Managed apps**. The *Open-In* behavior in a Policy Managed app presents only other Policy Managed apps as options for sharing. If a user tries to send a policy protected file as an attachment from OneDrive in the native mail app, that file is unreadable.
 
--   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. To specify how you want to allow data transfer to other apps, enable **Allow app to transfer data to other apps** and then choose your preferred level of sharing. To specify how you want to allow an app to receive data from other apps, enable **Allow app to receive data from other apps** and then choose your preferred level of receiving data. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data relocation settings](app-protection-policy-settings-ios.md#data-relocation-settings).   
+-   **Devices managed by Intune:** For devices enrolled in Intune, data transfer between apps with app protection policies and other managed iOS apps deployed through Intune is allowed automatically. To specify how you want to allow data transfer to other apps, enable **Allow app to transfer data to other apps** and then choose your preferred level of sharing. To specify how you want to allow an app to receive data from other apps, enable **Allow app to receive data from other apps** and then choose your preferred level of receiving data. You can use the **Open in management** feature to control data transfer between apps that are deployed through Intune. For more information about receiving and sharing app data, see [Data relocation settings](app-protection-policy-settings-ios.md#data-protection).   
 
 -   **Devices managed by a third-party MDM solution:** You can restrict data transfer to only managed apps by using the iOS **Open in management** feature.
 To make sure that apps you deploy using a third-party MDM solution are also associated with your Intune app protection policies, configure the user UPN setting as described in the following section, [Configure user UPN setting](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). When apps deploy with the user UPN setting, the app protection policies apply to the app when the user signs-in using their work account.
@@ -56,11 +55,15 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2.  Deploy the apps and the email profile that you want managed through Intune or your third-party MDM solution using the following generalized steps. This experience is also covered by *Example 1*.
 
-3.  Deploy the app  with the following app configuration settings:
+3.  Deploy the app with the following app configuration settings to the managed device:
 
-      **key** = IntuneMAMUPN,  **value** = <username@company.com>
+      **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
+       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
 
 4.  Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 
@@ -71,7 +74,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2. In the Application Configuration section, enter the following setting:
 
-   **key** = IntuneMAMUPN,  **value** = <username@company.com>
+   **key** = IntuneMAMUPN, **value** = <username@company.com>
 
    The exact syntax of the key/value pair may differ based on your third-party MDM provider. The following table shows examples of third-party MDM providers and the exact values you should enter for the key/value pair.
 

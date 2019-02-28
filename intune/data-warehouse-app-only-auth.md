@@ -3,12 +3,12 @@
 
 title: Intune Data Warehouse application-only authentication
 titleSuffix: Microsoft Intune
-description: This topic describes Data Warehouse application-only authentication.
+description: This topic describes Data Warehouse application-only authentication for Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Intune Data Warehouse application-only authentication

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/26/2018
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Add app configuration policies for managed Android devices
@@ -48,13 +49,13 @@ Use app configuration policies in Microsoft Intune to supply settings to Android
 6. Select **Android** for **Platform**.
 7. Select **Associated App** to choose the app for which you want to define an app configuration policy. Select from the list of Android work profile apps that you have approved and synchronized with Intune.
 8. Select **Permissions**. You can set configurations by using:
-    - [Configuration designer](#Use-the-configuration-designer)
-    - [JSON editor](#Enter-the-JSON-editor)
+    - [Configuration designer](#use-the-configuration-designer)
+    - [JSON editor](#enter-the-json-editor)
 9. Choose **OK**, and then choose **Add**.
 
 ## Use the configuration designer
 
-You can use the configuration designer for Android apps that support configuration. Configuration will apply on devices that are enrolled in Intune. The designer lets you configure specific configuration values for the settings than an app exposes.
+You can use the configuration designer for Android apps when the app has been designed to support configuration settings. Configuration will apply on devices that are enrolled in Intune. The designer lets you configure specific configuration values for the settings than an app exposes.
 
 Select **Add** to select the list of configuration settings that you want to specify for the app.  
 For each key and value in the configuration, set:
@@ -67,13 +68,17 @@ For each key and value in the configuration, set:
 ### Supported variables for configuration values
 
 You can choose the following options if you choose variable as the value type:
-- User Principal Name — for example, **John@contoso.com**
-- Mail — for example, **John@contoso.com**
-- Partial UPN — for example, **John**
-- Account ID — for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- Device ID — for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
-- User ID — for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
-- User Name —for example, **John Doe**
+
+| Option | Example |
+|----|----|
+| Mail | john@contoso.com |
+| User Principal Name | john@contoso.com |
+| Partial UPN | john |
+| Domain | contoso.com |
+| User name | John Doe |
+| Account ID | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
+| User ID | 3ec2c00f-b125-4519-acf0-302ac3761822 |
+| Device ID | b9841cd9-9843-405f-be28-b2265c59ef97 |
 
 ### Allow only configured organization accounts in multi-identity apps 
 

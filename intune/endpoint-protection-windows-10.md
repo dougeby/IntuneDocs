@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Add endpoint protection on Windows 10 in Microsoft Intune - Azure | Microsoft Docs
+title: Protection settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
 description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: MandiOhlinger
@@ -22,36 +22,40 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
-
+ms.custom: intune-azure; seodec18
+ms.collection: M365-identity-device-management
 ---
 
-# Endpoint protection settings for Windows 10 (and later) in Intune
+# Windows 10 (and later) settings to protect devices using Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The endpoint protection profile lets you control security features on Windows 10 devices, like BitLocker and Windows Defender.
+Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.
 
-Use the information in this article to create endpoint protection profiles. To configure Windows Defender Antivirus, see [Windows 10 Device Restrictions](device-restrictions-windows-10.md#windows-defender-antivirus). 
+To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+## Before you begin
+
+[Create an endpoint protection device configuration profile](endpoint-protection-configure.md).
 
 ## Windows Defender Application Guard
 
 Supported on the following Windows 10 editions:
 
-- Enterprise 
+- Enterprise
 - Professional
 
-While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites are opened in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which can be configured in Device Configuration.
+While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.
 
 Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
 
 - **Application Guard**: **Enable** to turn on this feature, which opens unapproved sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (approved and unapproved) opens on the device.
 - **Clipboard behavior**: Choose what copy/paste actions are allowed between the local PC and the Application Guard virtual browser.
 - **External content on enterprise sites**: **Block** content from unapproved websites from loading. **Not configured** (default) means that non-enterprise sites can open on the device.
-- **Print from virtual browser**: **Allow** to allow PDF, XPS, local, and/or network printers to print content from the virtual browser. **Not configured** (default) disables all print features.
+- **Print from virtual browser**: Choose **Allow** so PDF, XPS, local, and network printers can print content from the virtual browser. **Not configured** (default) disables all print features.
 - **Collect logs**: **Allow** to collect logs for events that occur within an Application Guard browsing session. **Not configured** (default) doesn't collect any logs within the browsing session.
-- **Retain user-generated browser data**: **Allow** saves user data (such as passwords, favorites, and cookies) that is created during an Application Guard virtual browsing session. **Not configured** (default) discards user-downloaded files and data when the device restarts, or when a user signs out.
-- **Graphics acceleration**: **Enable** to load graphic-intensive websites and video faster by getting access to a virtual graphics processing unit. **Not configured** (default) uses the device's CPU for graphics; it doesn't use the virtual graphics processing unit.
+- **Retain user-generated browser data**: **Allow** saves user data (such as passwords, favorites, and cookies) that's created during an Application Guard virtual browsing session. **Not configured** (default) discards user-downloaded files and data when the device restarts, or when a user signs out.
+- **Graphics acceleration**: Choose **Enable** to load graphic-intensive websites and video faster by getting access to a virtual graphics processing unit. **Not configured** (default) uses the device's CPU for graphics; it doesn't use the virtual graphics processing unit.
 - **Download files to host file system**: **Enable** so users download files from the virtualized browser onto the host operating system. **Not configured** (default) keeps the files local on the device, and doesn't download files to the host file system.
 
 ## Windows Defender Firewall
@@ -71,15 +75,15 @@ These settings are applicable to all network types.
 
 - **File Transfer Protocol**: **Block** to disable stateful FTP. When **Not configured** (default), the firewall does stateful FTP filtering to allow secondary connections.
 - **Security association idle time before deletion**: Security associations are deleted after no network traffic is detected for *n* seconds. Enter an idle time in seconds.
-- **Pre-shared key encoding**: **Enable** to use preshared key encoding using UTF-8. **Not configured** (default) uses the local store value.
+- **Pre-shared key encoding**: Choose **Enable** to use preshared key encoding using UTF-8. **Not configured** (default) uses the local store value.
 - **IPsec exemptions**: Configure specific traffic to be exempt from IPsec, including:
   - **Neighbor discover IPv6 ICMP type-codes**
   - **ICMP**
   - **Router discover IPv6 ICMP type-codes**
   - **Both IPv4 and IPv6 DHCP network traffic**
-- **Certificate revocation list verification**: Determine how certificate revocation list verification is enforced, including **Disable CRL verification**, **Fail CRL verification on revoked certificate only**, and **Fail CRL verification on any error encountered**.
+- **Certificate revocation list verification**: Choose how the device verifies the certificate revocation list. Options include **Disable CRL verification**, **Fail CRL verification on revoked certificate only**, and **Fail CRL verification on any error encountered**.
 - **Opportunistically match authentication set per keying module**: **Enable** so keying modules MUST ignore only the authentication suites that they don’t support. When **Not configured**, keying modules MUST ignore the entire authentication set if they don't support all of the authentication suites specified in the set.
-- **Packet queuing**: Enter how software scaling on the receive side is enabled for the encrypted receive and clear text forward for the IPsec tunnel gateway scenario. This setting ensures that packet order is preserved.
+- **Packet queuing**: Enter how software scaling on the receive side is enabled for the encrypted receive and clear text forward for the IPsec tunnel gateway scenario. This setting confirms the packet order is preserved.
 
 ### Network settings
 
@@ -87,19 +91,19 @@ These settings are applicable to specific network types, including **Domain (wor
 
 #### General settings
 
-- **Windows Defender Firewall**: **Enable** to turn on the firewall, and advanced security. **Not configured** (default) allows all network traffic, regardless of any other policy settings.
+- **Windows Defender Firewall**: Choose **Enable** to turn on the firewall, and advanced security. **Not configured** (default) allows all network traffic, regardless of any other policy settings.
 - **Stealth mode**: **Block** the firewall from operating in stealth mode. Blocking stealth mode allows you to also block **IPsec secured packet exemption**. **Not configured** (default) operates the firewall in stealth mode, which helps prevent responses to probing requests.
 - **Shielded**: **Block** turns off this feature. **Not configured** (default) enables this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.
-- **Unicast responses to multicast broadcasts**: When set to **Block**, it disables unicast responses to multicast broadcasts. Typically, you don't want to receive unicast responses to multicast or broadcast messages. These responses can indicate a denial of service (DOS) attack, or an attacker attempting to probe a known live computer. **Not configured** (default) enables this setting.
+- **Unicast responses to multicast broadcasts**: When set to **Block**, it disables unicast responses to multicast broadcasts. Typically, you don't want to receive unicast responses to multicast or broadcast messages. These responses can indicate a denial of service (DOS) attack, or an attacker trying to probe a known live computer. **Not configured** (default) enables this setting.
 - **Inbound notifications**: When set to **Block**, it hides notifications to users when an app is blocked from listening on a port. **Not configured** (default) enables this setting, and may show a notification to users when an app is blocked from listening on a port.
-- **Default action for inbound connections**: When set to **Block**, the default firewall action is not run on inbound connections. When set to **Not configured** (default), the default firewall action is run on inbound connections.
+- **Default action for inbound connections**: When set to **Block**, the default firewall action isn't run on inbound connections. When set to **Not configured** (default), the default firewall action is run on inbound connections.
 
 #### Rule merging
 
-- **Authorized application Windows Defender Firewall rules from the local store**: **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the authorized application firewall rules in the local store are ignored and not enforced.
-- **Global port Windows Defender Firewall rules from the local store**: **Enable** to apply global port firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the global port firewall rules in the local store are ignored and not enforced.
-- **Windows Defender Firewall rules from the local store**: **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the firewall rules from the local store are ignored and not enforced.
-- **IPsec rules from the local store**: **Enable** to apply connection security rules from the local store, regardless of schema or connection security rule versions. When **Not configured** (default), the connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.
+- **Authorized application Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store so they're recognized and enforced. When **Not configured** (default), the authorized application firewall rules in the local store are ignored and not enforced.
+- **Global port Windows Defender Firewall rules from the local store**: Choose **Enable** to apply global port firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the global port firewall rules in the local store are ignored and not enforced.
+- **Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the firewall rules from the local store are ignored and not enforced.
+- **IPsec rules from the local store**: Choose **Enable** to apply connection security rules from the local store, regardless of schema or connection security rule versions. When **Not configured** (default), the connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.
 
 ## Windows Defender SmartScreen settings
 
@@ -147,10 +151,14 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+- Professional
 
 Base settings are universal BitLocker settings for all types of data drives. These settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
 
 - **Warning for other disk encryption**: Select **Block** to disable the warning prompt if another disk encryption service is on the device. **Not configured** (default) allows the warning to be shown.
+    - **Allow standard users to enable encryption during Azure AD Join**: When you choose **Allow**, standard users/non-administrators can enable BitLocker encryption when the user is signed in. This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. **Not configured** only allows Administrators to enable BitLocker encryption on the device.
+      
+      This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. It also requires that the **Warning for other disk encryption** setting be set to **Block**.
 - **Configure encryption methods**: **Enable** this setting to configure encryption algorithms for operating system, data, and removable drives. When **Not configured** (default), BitLocker uses XTS-AES 128 bit as the default encryption method, or uses the encryption method specified by any setup script.
   - **Encryption for operating system drives**: Choose the encryption method for operating system drives. We recommend you use the XTS-AES algorithm.
   - **Encryption for fixed data-drives**: Choose the encryption method for fixed (built-in) data drives. We recommend you use the XTS-AES algorithm.
@@ -163,6 +171,7 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+- Professional
 
 These settings apply specifically to operating system data drives.
 
@@ -174,16 +183,16 @@ These settings apply specifically to operating system data drives.
   - **Compatible TPM startup key and PIN**: Choose to allow, not allow, or require using a startup key and PIN with the TPM chip. Enabling startup key and PIN requires interaction from the end user.
 - **Minimum PIN Length**: **Enable** this setting to configure a minimum length for the TPM startup PIN. When **Not configured** (default), users can configure a startup PIN of any length between 6 and 20 digits.
   - **Minimum characters**: Enter the number of characters required for the startup PIN from **4**-**20**.
-- **OS drive recovery**: **Enable** this setting to control how BitLocker-protected operating system drives are recovered when the required start-up information isn't available. When **Not configured** (default), the default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are specified by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
+- **OS drive recovery**: **Enable** this setting to control how BitLocker-protected operating system drives recover when the required start-up information isn't available. When **Not configured** (default), the default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are chosen by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
   - **Certificate-based data recovery agent**: When set to **Block**, you can't use data recovery agent with BitLocker-protected OS drives. Set to **Not configured** (default) to enable this setting, which allows data recovery agents to be used with BitLocker-protected operating system drives.
   - **User creation of recovery password**: Choose if users are allowed, required, or not allowed to generate a 48-digit recovery password.
   - **User creation of recovery key**: Choose if users are allowed, required, or not allowed to generate a 256-bit recovery key.
   - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information to Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
+  - **Save BitLocker recovery information to AD DS**: Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
   - **BitLocker recovery Information stored to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure Active Directory.
+  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory (AD). **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
 - **Pre-boot recovery message and URL**: **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.
   - **Pre-boot recovery message**: Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**
@@ -199,20 +208,21 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+- Professional
 
 **Settings**:
 
-- **Write access to fixed data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there is read and write access to data drives that aren't BitLocker-protected.
-- **Fixed drive recovery**: **Enable** this setting to control how BitLocker-protected fixed drives are recovered when the required start-up information isn't available. **Not configured** (default) disables this feature.
+- **Write access to fixed data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
+- **Fixed drive recovery**: **Enable** this setting to control how BitLocker-protected fixed drives recover when the required start-up information isn't available. **Not configured** (default) disables this feature.
   - **Data recovery agent**: **Block** the use of data recovery agent with BitLocker-protected fixed drives Policy Editor. **Not configured** (default) enables using data recovery agents with BitLocker-protected fixed drives.
   - **User creation of recovery password**: Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.  
   - **User creation of recovery key**: Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.
   - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: **Enable** to store the BitLocker recovery information in Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
-  - **BitLocker recovery Information to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure Active Directory. Choose from:
+  - **Save BitLocker recovery information to Azure Active Directory**: Choose **Enable** to store the BitLocker recovery information in Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in Azure AD.
+  - **BitLocker recovery Information stored to Azure Active Directory**: Configure what parts of BitLocker recovery information are stored in Azure AD. Your options:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure Active Directory.
+  - **Store recovery information in Azure Active Directory before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.
 
 ### BitLocker removable data-drive settings
 
@@ -222,10 +232,11 @@ Supported on the following Windows 10 editions:
 - Education
 - Mobile
 - Mobile Enterprise
+- Professional
 
 **Settings**:
 
-- **Write access to removable data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there is read and write access to data drives that aren't BitLocker-protected.
+- **Write access to removable data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
   - **Write access to devices configured in another organization**: **Block** allows write access to devices configured in another organization. **Not configured** (default) denies write access.
 
 ## Windows Defender Exploit Guard
@@ -295,7 +306,7 @@ Block outbound connections from any app to low reputation IP/domains.
 
 ### Exploit protection
 
-To enable exploit protection, create an XML file that includes the system and application mitigation settings you want. There are two methods:
+To use exploit protection, create an XML file that includes the system and application mitigation settings you want. There are two methods:
 
  1. PowerShell: Use one or more of the Get-ProcessMitigation, Set-ProcessMitigation, and ConvertTo-ProcessMitigationPolicy PowerShell cmdlets. The cmdlets configure mitigation settings, and export an XML representation of them.
 
@@ -360,7 +371,7 @@ Supported on the following Windows 10 editions:
 - Mobile
 - Mobile Enterprise
 
-Windows Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and perform some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
+Windows Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and run some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
 
 #### Windows Defender Security Center app and notifications
 
@@ -421,7 +432,7 @@ Use these options to configure the local security settings on Windows 10 devices
 
 ### Interactive Logon
 
-- **Minutes of lock screen inactivity until screen saver activates**: Enter the maximum minutes of inactivity on the interactive desktop’s login screen until the screen saver runs.
+- **Minutes of lock screen inactivity until screen saver activates**: Enter the maximum minutes of inactivity on the interactive desktop’s sign in screen until the screen saver starts.
 - **Require CTRL+ALT+DEL to log on**: Set to **Enable** so pressing CTRL+ALT+DEL isn't required for users to sign in. Set to **Not configured** (default) to require users to press CTRL+ALT+DEL before logging on to Windows.
 - **Smart card removal behavior**: Determines what happens when the smart card for a logged-on user is removed from the smart card reader. Your options:
 
@@ -456,7 +467,7 @@ Use these options to configure the local security settings on Windows 10 devices
 ### Recovery console and shutdown
 
 - **Clear virtual memory pagefile when shutting down**: Set to **Enable** to clear the virtual memory pagefile when the device is powered down. **Not configured** doesn't clear the virtual memory.
-- **Shut down without log on**: **Block** hides the shutdown option on the Windows logon screen. Users must sign in to the device, and then shut down. **Not configured** (default) allows users to shut down the device from the Windows logon screen.
+- **Shut down without log on**: **Block** hides the shutdown option on the Windows sign in screen. Users must sign in to the device, and then shut down. **Not configured** (default) allows users to shut down the device from the Windows sign in screen.
 
 ### User account control
 
@@ -498,4 +509,6 @@ Use these options to configure the local security settings on Windows 10 devices
 
 ## Next steps
 
-To assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
+
+Configure endpoint protections settings on [macOS](endpoint-protection-macos.md) devices.

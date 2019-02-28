@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Data security and sharing in Intune
@@ -68,7 +68,7 @@ For information about data shared with certain third parties, see the following 
 - [Data Intune sends to Google](data-intune-sends-to-google.md)
 - [Data Apple sends to Intune](data-apple-sends-to-intune.md)
 - [Data Google sends to Intune](data-google-sends-to-intune.md)
-- [Information shared from Jamf Pro to Intune](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Data Jamf Pro sends to Intune](data-jamf-sends-to-intune.md)
 
 ### System Center Configuration Manager data sharing
 

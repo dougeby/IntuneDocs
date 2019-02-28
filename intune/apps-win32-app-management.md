@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 02/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -17,29 +17,29 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
-# Intune Standalone - Win32 app management (Public Preview)
+# Intune Standalone - Win32 app management
 
 Intune standalone will allow greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This topic provides an overview of the Intune Win32 app management feature and troubleshooting information.
 
-## Prerequisites for public preview
+## Prerequisites
 
-- Windows 10 version 1607 or later (Enterprise)
+- Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
     - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
     - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8 GB per app in the public preview 
-
-> [!NOTE]
-> We are currently testing Pro and Education editions of Windows 10 version 1607 and will be happy to hear your feedback.
-
+- Windows application size is capped at 8 GB per app
 
 ## Prepare the Win32 app content for upload
 
-Use the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) to pre-process Win32 apps. The packaging tool converts application installation files into the *.intunewin* format. The packaging tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
+Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) to pre-process Win32 apps. The tool converts application installation files into the *.intunewin* format. The tool also detects some of the attributes required by Intune to determine the application installation state. After you use this tool on the app installer folder, you will be able to create a Win32 app in Intune console.
 
-You can download the [Microsoft Intune Win32 App Upload Prep Tool](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) from GitHub.
+> [!IMPORTANT]
+> The [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) zips all files and subfolders when it creates the *.intunewin* file. Be sure to keep the Microsoft Win32 Content Prep Tool separate from the installer files and folders, so that you don't include the tool or other unnecessary files and folders in your *.intunewin* file.
+
+You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub.
 
 ### Available command-line parameters 
 
@@ -74,17 +74,21 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 1.	Sign in to the [Azure portal](https://portal.azure.com/).
 2.	Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
-4.	In the **Add** app pane, select **Windows app (Win32) - preview** from the provided drop-down list.
+4.	In the **Add** app pane, select **Windows app (Win32)** from the provided drop-down list.
 
-    ![Screenshot Add app - Add type dropdown box](./media/apps-win32-app-01.png)
+    ![Screenshot of the Add app blade - Add type dropdown box](./media/apps-win32-app-01.png)
 
 ### Step 2: Upload the app package file
 
 1.	In the **Add app** pane, select **App package file** to select a file. The App package file pane will be displayed.
 
-    ![Screenshot App package file](./media/apps-win32-app-02.png)
+    ![Screenshot of the App package file blade](./media/apps-win32-app-02.png)
 
 2.	In the **App package file** pane, select the browse button. Then, select a Windows installation file with the extension *.intunewin*.
+
+    > [!IMPORTANT]
+    > Be sure to use the latest version of the Microsoft Win32 Content Prep Tool. If you don't use the latest version, you will see a warning indicating that the app was packaged using an older version of the Microsoft Win32 Content Prep Tool. 
+
 3.	When you're finished, select **OK**.
 
 ### Step 3: Configure app information
@@ -173,7 +177,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
             
                 ![Screenshot of detection rule pane - registry key exists](./media/apps-win32-app-05.png)    
             
-            2.	Check for registry value exists (**Not available in preview**).
+            2.	Check if registry value exists.
         
                 ![Screenshot of detection rule pane - registry value exists](./media/apps-win32-app-06.png)    
         
@@ -184,21 +188,23 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     - **Use a custom detection script** – Specify the PowerShell script that will be used to detect this app. 
     
         1.	**Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
-        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script using the logged-on end-user's credentials. Select **No** (default) to run the script in the system context.
+
+        2.	**Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+
         3.	**Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
     
-        Intune sidecar checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
-    
-        > [!NOTE]
-        > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
-    
-3.	Once you have added your rule(s), select **Add** > **OK**.
+            Intune agent checks the results from the script. It reads the values written by the script to the standard output (STDOUT) stream, the standard error (STDERR) stream, and the exit code. If the script exits with a nonzero value, the script fails and the application detection status is not installed. If the exit code is zero and STDOUT has data, the application detection status is Installed. 
+
+            > [!NOTE]
+            > When the script exits with the value of 0, the script execution was success. Second output channel indicates app was detected - STDOUT data indicates that the app was found on the client. We do not look for a particular string from STDOUT.
+
+        4.	Once you have added your rule(s), select **Add** > **OK**.
 
 ### Step 7: Configure app return codes
 
 1.	In the **Add app** pane, select **Return codes** to add the return codes used to specify either app installation retry behavior or post-installation behavior. Return code entries are added by default during app creation. However, you can add additional return codes or change existing return codes. 
 2.	In the **Return codes** pane, add additional return codes, or modify existing return codes.
-    - **Failed** – The return value that indicate an app installation failure.
+    - **Failed** – The return value that indicates an app installation failure.
     - **Hard reboot** – The hard reboot return code does not allow next  Win32 apps to be installed on the client without reboot. 
     - **Soft reboot** – The soft reboot return code allows the next Win32 app to be installed without requiring a client reboot. Reboot is necessary to complete installation of the current application.
     - **Retry** – The retry return code agent will attempt to install the app three times. It will wait for 5 minutes between each attempt. 
@@ -226,20 +232,29 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 At this point you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 
+## Delivery Optimization
+
+Windows 10 RS3 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
 ## Install required and available apps on devices
 
-The end-user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
+The end user will see Windows Toast Notifications for the required and available app installations. The following image shows an example toast notification where the app installation is not complete until the device is restarted. 
 
-![Screenshot example of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
+![Screenshot of Windows toast notifications for an app installation](./media/apps-win32-app-08.png)    
 
-The following image notifies the end-user that app changes are being made to the device.
+The following image notifies the end user that app changes are being made to the device.
 
-![Screenshot example of notifying the end-user that app changes are being made to the device](./media/apps-win32-app-09.png)    
+![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
+
+## Toast notifications for Win32 apps 
+If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
 
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Screenshot the Agent logs](./media/apps-win32-app-10.png)    
+![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
+
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ### Troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.

@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Migrate conditional access to Azure portal
-titlesuffix: Microsoft Intune
+title: Migrate conditional access to Azure portal | Microsoft Intune
 description: Reassign the conditional access policies you previously created in the Intune classic portal to the Azure portal.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Reassign conditional access policies from Intune classic portal to the Azure portal
@@ -51,7 +50,7 @@ If you’re ready to move to the Azure portal, follow the steps in this topic to
 			- Gradually remove users from the security groups that have conditional access policies targeted to them in the Intune classic portal.
 			- After you have confirmed the new policy is working for those users, you can disable the policy in the Intune classic portal. 
 <br /><br />
-- If you have your conditional access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the Azure portal**.
+- If you have your conditional access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the Azure portal**.
 
 ### To verify your device-based conditional access policies in the Intune classic portal
 
@@ -86,7 +85,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 4. Under the **Assignments section**, choose **Users and groups** to target the new conditional access policy.
 	
-	![Image showing a user group UI comparison between the Intune and Azure portals](./media/reassign-ca-1.png)
+	![Image that compares user group UI between the Intune and Azure portals](./media/reassign-ca-1.png)
 
 	> [!IMPORTANT] 
 	> The selection you make for the Azure portal should correspond to the selection you made for the Classic portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
@@ -101,7 +100,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 9. Click **Done**.
 
-	![Image showing a cloud app UI comparison between the Intune and Azure portals](./media/reassign-ca-3.png)
+	![Image of a cloud app UI comparison between the Intune and Azure portals](./media/reassign-ca-3.png)
 
 	> [!TIP] 
 	> If you have multiple apps with the same policy, consider consolidating them into a single policy in the Azure portal.
@@ -112,7 +111,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 12. When you are finished choosing the device platforms, click **Done** twice.
 
-	![Image showing a device platform UI comparison between the Intune and Azure portals](./media/reassign-ca-4.png)
+	![Image that compares Device platform UI from the Intune and Azure portals](./media/reassign-ca-4.png)
 
 	> [!TIP] 
 	> If you have chosen individual platforms in the Intune classic portal, choose the individual platforms in the Azure portal.
@@ -126,7 +125,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 15. When you have finished choosing the client app, click **Done** twice.
 
-	![Image showing a client apps UI comparison between the Intune and Azure portals](./media/reassign-ca-6.png)
+	![Image that compares client apps UI between the Intune and Azure portals](./media/reassign-ca-6.png)
 
 16. If you have chosen the browser settings in the Intune classic portal, select both **Browser** and **Mobile apps and desktop clients** in the Azure portal. In case you have not chosen the browser settings in the Intune classic portal, choose **Mobile apps and desktop clients** only. 
 
@@ -140,7 +139,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 21. On the **New** conditional access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
 
-	![Image showing the nable conditional access policy UI comparison between the Intune and Azure portals](./media/reassign-ca-11.png)
+	![Compare Enable conditional access policy UI between Intune and Azure](./media/reassign-ca-11.png)
 
 ## Reassign Intune device-based conditional access policies for EAS clients
 
@@ -154,7 +153,7 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 4. Under the **Assignments** section, choose **Users and groups** to target the new conditional access policy.
 
-	![Image showing a user group UI comparison between the Intune and Azure portals](./media/reassign-ca-12.png)
+	![Image showing a user group UI comparison between the Azure and Intune portals](./media/reassign-ca-12.png)
 
 	> [!IMPORTANT] 
 	> The selection you make for the Azure portal should correspond to the selection you made for the Azure portal. For example, if you have all users selected in the Intune classic portal, select **All users** in the Azure portal. Additionally, if you’ve chosen the **Exempt groups** option in the Intune classic portal, also exclude those select groups in the Azure portal.
@@ -165,14 +164,14 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 7. On the **Cloud apps** blade, click **Select apps**, and choose **Exchange Online**. Then click **Select** and **Done**.
 
-	![Image showing a Cloud apps UI comparison between the Intune and Azure portals](./media/reassign-ca-14.png)
+	![Image of a Cloud apps UI comparison between the Intune and Azure portals](./media/reassign-ca-14.png)
 
 	> [!IMPORTANT] 
 	> Conditional access policies for EAS clients cannot include any other cloud app.
 
 8. On the **Conditions** blade, choose **Client apps**, and then choose the applicable client app. If you have chosen to block clients that aren’t supported by Intune, use the **Apply policy only to supported platforms** option.
 
-	![Image showing a client apps UI comparison between the Intune and Azure portals](./media/reassign-ca-15.png)
+	![Image showing a client apps UI comparison between the Azure and Intune portals](./media/reassign-ca-15.png)
 
 9. When you have finished choosing the client app, click **Done** twice.
 
@@ -180,11 +179,11 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 11. Under **Grant Access Controls**, choose **Require device to be marked as compliant**, and then click **Select**.
 
-	![Image showing a grant access UI comparison between the Intune and Azure portals](./media/reassign-ca-16.png)
+	![Image that compares Grant access UI between the Intune and Azure portals](./media/reassign-ca-16.png)
 
 12. On the **New** conditional access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
 
-	![Image showing Enable conditional access policy UI comparison between the Intune and Azure portals](./media/reassign-ca-17.png)
+	![Comparison of Enable conditional access policy UI between Intune and Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > If you configure **Device platforms**, saving the policy will fail with the error "Policy configuration is not supported." Exchange ActiveSync cannot identify the platform being used by the connecting device. Therefore, configuring specific device platforms is unsupported when creating a policy for Exchange ActiveSync devices.
@@ -206,7 +205,7 @@ After you have reassigned your conditional access policies in the Azure portal, 
 
 4.  Uncheck the option **Enable conditional access policy**, and then click **Save**.
 
-	![Image showing Disable conditional access policies in the Intune classic portal](./media/reassign-ca-18.png)
+	![Image of Disable conditional access policies in the Intune classic portal](./media/reassign-ca-18.png)
 
 ## See also
 

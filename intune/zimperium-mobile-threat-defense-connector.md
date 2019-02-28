@@ -25,14 +25,14 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Zimperium Mobile Threat Defense connector with Intune
 
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Zimperium app.
 
-You can configure conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
+You can configure conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies. Risk assessment policy can allow or block noncompliant devices from accessing corporate resources based on detected threats.
 
 ## How do Intune and Zimperium help protect your company resources?
 
@@ -56,11 +56,11 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![Malicious apps detected](./media/Maliciousapps_blocked_Zimperium.png)
+![Conceptual image of Malicious apps detected](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Access granted on remediation:**
 
-![Malicious apps detected access granted](./media/maliciousapps_unblocked_Zimperium.png)
+![Conceptual image of access granted after remediation](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### Control access based on threat to network
 
@@ -100,7 +100,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 -   Zimperium Mobile Threat Defense subscription
 
-    -   For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips) for more information.
+    -   For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips).
 
 ## Next steps
 

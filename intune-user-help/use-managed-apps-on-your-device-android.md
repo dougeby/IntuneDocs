@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 
@@ -61,7 +61,15 @@ First, you'll need to install the Company Portal and, if required, get your devi
 * Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 
-## What can my company support manage in an app?
+ ## Available apps   
+ Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.   
+
+ Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Android, you'll have access to Android apps, but not iOS apps.   
+
+ ## Request an app for work or school   
+ If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app's **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+## What can my company support manage in an app?  
 The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
 * Access to specific websites  

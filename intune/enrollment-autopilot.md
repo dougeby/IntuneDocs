@@ -25,18 +25,19 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
-# Enroll Windows devices by using the Windows Autopilot  
-The Windows Autopilot simplifies enrolling devices. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+# Enroll Windows devices in Intune by using the Windows Autopilot  
+The Windows Autopilot simplifies enrolling devices in Intune. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 
 ## Prerequisites
-- [Windows automatic enrollment enabled](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [Windows automatic enrollment enabled](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
-## How to get the CSV for Import in InTune
+## How to get the CSV for Import in Intune
 
 See the understanding powershell cmdlet for more information how to use it.
 
@@ -84,20 +85,20 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 3. If you want all devices in the assigned groups to automatically convert to Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**. All non-Autopilot devices in assigned groups will register with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will enroll it. After a device is registered in this way, disabling this option or removing the profile assignment won't remove the device from the Autopilot deployment service. You must instead [remove the device directly](enrollment-autopilot.md#delete-autopilot-devices).
 4. For **Deployment mode**, choose one of these two options:
     - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
-    - **Self-deploying (preview)**: (requires the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/)) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to enroll the device.
+    - **Self-deploying (preview)**: (requires Windows 10, version 1809 or later) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to enroll the device.
 5. In the **Join to Azure AD as** box, choose **Azure AD joined**.
 6. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
-    - **Language (Region)***: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **Automatically configure keyboard***: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose if you want to show the EULA to users.
     - **Privacy settings**: Choose if you want to show privacy settings to users.
-    - **Hide change account options (Windows Insider only)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user).
-    - **Apply computer name template (Windows Insider only)**: Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
+    - **Apply computer name template (requires Windows 10, version 1809 or later)**: Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
 
 6. Choose **Create** to create the profile. The Autopilot deployment profile is now available to assign to devices.
 
-*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (requires the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/)).
+*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (requires Windows 10, version 1809 or later).
 
 
 ## Assign an Autopilot deployment profile to a device group
@@ -105,6 +106,9 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
 2. In the specific profile blade, choose **Assignments**. 
 3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
+
+> [!NOTE]
+> Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment ** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."
 
 ## Edit an Autopilot deployment profile
 After you've created an Autopilot deployment profile, you can edit certain parts of the deployment profile.   
@@ -130,7 +134,7 @@ To see alerts for unassigned devices, in [Intune in the Azure portal](https://ak
 
 You can assign a user to a specific Autopilot device. This assignment pre-fills a user from Azure Active Directory in the [company-branded](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sign-in page during Windows setup. It also lets you set a custom greeting name. It doesn't pre-fill or modify Windows sign-in. Only licensed Intune users can be assigned in this manner.
 
-Prerequisites: Azure Active Directory Company Portal has been configured and the most recent [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/).
+Prerequisites: Azure Active Directory Company Portal has been configured and Windows 10, version 1809 or later.
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices** > choose the device > **Assign user**.
 

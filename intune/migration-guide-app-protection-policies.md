@@ -5,10 +5,10 @@ title: Configure app protection policies during an Intune migration
 titlesuffix: Microsoft Intune
 description: This article provides the necessary steps to set up app protection policies during a Microsoft Intune migration.
 keywords:
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Configure app protection policies (optional)

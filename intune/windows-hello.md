@@ -1,7 +1,6 @@
 ---
 # required metadata
-title: How to integrate Windows Hello for Business with Microsoft Intune
-titleSuffix:
+title: How to integrate Windows Hello for Business with Microsoft Intune | Microsoft Intune
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: brenduns
@@ -22,7 +21,8 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
+ms.reviewer: shpate
 ---
 
 # Integrate Windows Hello for Business with Microsoft Intune

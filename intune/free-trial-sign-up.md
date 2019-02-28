@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Quickstart: Try Microsoft Intune for free 
@@ -55,7 +55,7 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
 2. Create an account using your company name followed by **.onmicrosoft.com**. 
 
-    ![Screenshot of the Microsoft Intune Trial account sign-up web page](./media/account-sign-up-site-user-id.png)
+    ![Screenshot of the Intune trial account new credential process](./media/account-sign-up-site-user-id.png)
 
     If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal described later in this article.
 
@@ -111,13 +111,13 @@ As mentioned above, if your organization has its own custom domain that you want
 
 3. Type your custom domain name. Then, select **Next**.
 
-   ![Screenshot of Office 365 Admin Center with Settings > Domains selected and a new domain name being added](./media/domain-custom-add.png)
+   ![Screenshot of Office 365 Admin Center - Add domain](./media/domain-custom-add.png)
 
 4. Verify that you are the owner of the domain that you entered in the previous. 
     
     Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address then what was provided when the domain was registered.
 
-   ![Screenshot of Office 365 Admin Center - Verify the domain name being added](./media/domain-custom-verify.png)
+   ![Screenshot of Office 365 Admin Center - Verify domain](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > For TXT record verification details, see [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).

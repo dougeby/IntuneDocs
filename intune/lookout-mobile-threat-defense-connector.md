@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Lookout MTD connector with Microsoft Intune
-titlesuffix:
+title: Lookout MTD connector with Microsoft Intune | Microsoft Intune
 description: Learn about integrating Intune with Lookout Mobile Threat Defense (MTD) to control mobile device access to your corporate resources.
 keywords:
 author: brenduns
@@ -25,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Lookout Mobile Threat Defense connector with Intune
@@ -69,34 +68,34 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 **Block when malicious apps are detected:**
 
-![diagram showing conditional access policy blocking access when device is determined to be noncompliant due to malicious apps on the device](./media/malicious-apps-blocked.png)
+![Conceptual image of policy blocking access due to malicious apps](./media/malicious-apps-blocked.png)
 
 **Access granted on remediation:**
 
-![diagram showing conditional access policy granting access when device is determined to be compliant after remediation](./media/malicious-apps-unblocked.png)
+![Conceptual image showing access being granted to devices after remediation](./media/malicious-apps-unblocked.png)
 
 ### Control access based on threat to network
 Detect threats to your network such as man-in-the-middle attacks and protect access to WiFi networks based on the device risk.
 
 **Block network access through WiFi:**
 
-![diagram showing conditional access blocking WiFi access based on network threats](./media/network-wifi-blocked.png)
+![Image showing the blocking of WiFi access based on network threats](./media/network-wifi-blocked.png)
 
 **Access granted on remediation:**
 
-![diagram showing conditional access allowing access on remediation of the threat](./media/network-wifi-unblocked.png)
+![Conceptual image of conditional access allowing access after remediation](./media/network-wifi-unblocked.png)
 ### Control access to SharePoint Online based on threat to network
 
 Detect threats to your network such as Man-in-the-middle attacks, and prevent synchronization of corporate files based on the device risk.
 
 **Block SharePoint Online when network threats are detected:**
 
-![Diagram showing conditional access blocking device access to SharePoint Online based on threat detection](./media/network-spo-blocked.png)
+![Conceptual image of blocking access to SharePoint Online](./media/network-spo-blocked.png)
 
 
 **Access granted on remediation:**
 
-![Diagram showing conditional access allowing access after the network threat is remediated](./media/network-spo-unblocked.png)
+![Conceptual image of allowing access after the network threat is remediated](./media/network-spo-unblocked.png)
 
 ## Next steps
 Here are the main steps you must do to implement this solution:

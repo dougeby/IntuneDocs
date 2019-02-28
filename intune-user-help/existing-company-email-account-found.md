@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,19 +25,28 @@ ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # An existing company email account was found
 
-You've already got an email account with your organization or company, and now you want to access that account on your mobile device. Your company support needs your help to keep your email access secure on its journey from the person who sent it to your device. Your current email may have worked, but taking these steps will keep your information safer.
+You might have had mobile device access to your work or school email account *before* you got your device managed. If your device is now managed, we recommend that you:
 
-1.  Find the **Settings** for your device and remove the connection you previously set up to your company email.  For example, on an iOS device, tap **Settings** > **Mail** > **Accounts**. Select your work email account then tap **Delete**.
+* Disconnect the existing work email account from your device.
+* Resync device settings from the Company Portal app.  
 
-2.  Exit **Settings** and open the Company Portal app on your device.  
+These steps will ensure that your device meets your company's security requirements, and that your emails remain secure.
 
-3. Go to **Device** and select the device you want to update.
+1.  On your device, go to **Settings** and find your connected accounts. On an iOS 11+ device, for example, select **Password & Accounts**.
+ 
+2. Select and remove your work email account.
 
-4. Select **Check Settings**. Within a few moments, your device updates with the new email settings.
+3. Open the Company Portal app on your device.  
+
+4. Under your list of devices, select the device you want to update.
+
+5. Select **Check settings**. Within a few moments, your device will sync your new email settings.
+
+6. Sign in to your work or school email account.
 
 Still need help? Contact your company support. For their contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

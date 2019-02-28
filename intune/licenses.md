@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Intune licenses
+title: Licenses available for Microsoft Intune
 description: Intune is available with these licenses
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,8 +25,8 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
-
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Licenses that include Intune
@@ -46,10 +46,9 @@ The following table shows which version of Intune is available in each license:
 | Microsoft 365 E3 | Intune | [Learn more](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 E5 | Intune | [Learn more](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
 | Microsoft 365 F1 | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Office 365 F1 | None | [Learn more](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Business | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Office 365 Business Premium | None | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory Free, Basic, Premium P1, Premium P2 | None | [Learn more](https://azure.microsoft.com/pricing/details/active-directory/) |
+
+Intune isn't included in licenses not in this list.
 
 A proper license is required if a user benefits directly or indirectly from any feature covered by that license.
 

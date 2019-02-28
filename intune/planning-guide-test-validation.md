@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # Intune testing and validation
@@ -58,7 +58,7 @@ You might experience challenges or issues that require technical guidance or spe
 
 -   [Learn how to get Intune support](get-support.md)
 
--   [Contact assisted phone support for Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Contact assisted phone support for Microsoft Intune](get-support.md)
 
 ## Functional validation testing
 

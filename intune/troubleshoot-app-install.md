@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,13 +23,14 @@ ms.reviewer: mghadial
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot app installation issues
 
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. Microsoft Intune provides app installation failure details that allow help desk operators and Intune administrators to view app information to address user help requests. The troubleshooting pane within Intune provides failure details, including details about managed apps on a user's device. Details about the end-to-end lifecycle of an app are provided under each individual device in the **Managed Apps** pane. You can view installation issues, such as when the app was created, modified, targeted, and delivered to a device. 
 
-## To review app troubleshooting details
+## App troubleshooting details
 
 Intune provides app troubleshooting details based on the apps installed on a specific user's device.
 
@@ -54,6 +55,47 @@ The app installation error details will indicate the problem. You can use these 
 > [!Note]  
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
+## Win32 app installation troubleshooting
+
+Select the Win32 app that was deployed using the Intune management extension. You can select the **Collect logs** option when your Win32 app installation fails. 
+
+> [!IMPORTANT]
+> The **Collect logs** option will not be enabled when the Win32 app has been successfully installed on the device.<p>Before you can collect Win32 app log information, the Intune management extension must be installed on the Windows client. The Intune management extension is installed when a PowerShell script or a Win32 app is deployed to a user or device security group. For more information, see [Intune Management extension - Prerequisites](intune-management-extension.md#prerequisites).
+
+### Collect log file
+
+To collect your Win32 app installation logs, first follow the steps provided in the section [App troubleshooting details](troubleshoot-app-install.md#app-troubleshooting-details). Then, continue with the following steps:
+
+1. Click the **Collect logs** option on the **Installation details** blade.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Provide file paths with log file names to begin the log file collection process and click **OK**.
+    
+    > [!NOTE]
+    > Log collection will take less than two hours. Supported file types: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx, and .evtl*. A maximum of 25 file paths are allowed.
+
+3. Once the log files have been collected, you can select the **logs** link to download the log files.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > A notification will be displayed indicating the success of the app log collection.
+
+#### Win32 log collection requirements
+
+There are specific requirements that must be followed to collect log files:
+
+- You must specify the complete log file path. ​
+- You can specify environment variables for log collection, such as the following:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Only exact file extensions are allowed, such as:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- The maximum log file to upload is 60 MB or 25 files, whichever occurs first. 
+- Win32 app install log collection is enabled for apps that meet the required, available, and uninstall app assignment intent.
+- Stored logs are encrypted to protect any PII information contained in the logs​.
+- While opening support tickets for Win32 app failures, attach the related failure logs using the steps provided above.
+
 ## App installation errors
 
 The following error messages and descriptions provide details about both Android and iOS installation errors. 
@@ -63,30 +105,52 @@ The following error messages and descriptions provide details about both Android
 |    Error   message/code    |    Description    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    The app failed to   install. (0xC7D14FB5)    |    This error message is   displayed when Intune cannot determine the root cause of the Android app installation   error. No information was provided by Android during the failure.       This error is returned when the APK download succeeded, but the app installation   failed. This error may occur more commonly due to a bad APK file that cannot   be installed onto the device. A possible cause can be when Google Play   Protect blocks the install of the app due to security concerns. Another possible   cause of this error is when a device does not support the app. For example,   if the app requires API version 21+ and the device currently has API version 19.         Intune returns this error for both DA and KNOX devices and although there may   be a notification that users can click to retry, if there is an issue with   the APK, it will never continue to fail. If the app is an available app, the   notification can be dismissed. However, if the app is required, it cannot be   dismissed.        |
-|    The app installation was   cancelled because the installation (APK) file was deleted after download, but   before installation. (0xC7D14FBA)    |    The   download of the APK succeeded, but before the user installed the app the file   was removed from the device. This could happen if there was a large time   difference between download/install. For example, the user cancelled the   original install, waited, and then clicked the notification to try again.         This   error message is returned this for only DA scenarios. KNOX scenarios can be   done silently. We do present a notification to retry so the user can accept   instead of cancel. If the   app is an available app, the notification can be dismissed. However, if the   app is required, it cannot be dismissed.    |
-|    The app installation was   cancelled because the process was restarted during installation. (0xC7D14FBB)    |    The   device was rebooted during the APK installation process, resulting in a cancelled   installation.        This   error message is returned for both DA and KNOX devices. Intune presents a   notification that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
+|    The app installation was   canceled because the installation (APK) file was deleted after download, but   before installation. (0xC7D14FBA)    |    The   download of the APK succeeded, but before the user installed the app the file   was removed from the device. This could happen if there was a large time   difference between download/install. For example, the user canceled the   original install, waited, and then clicked the notification to try again.         This   error message is returned this for only DA scenarios. KNOX scenarios can be   done silently. We do present a notification to retry so the user can accept   instead of cancel. If the   app is an available app, the notification can be dismissed. However, if the   app is required, it cannot be dismissed.    |
+|    The app installation was   canceled because the process was restarted during installation. (0xC7D14FBB)    |    The   device was rebooted during the APK installation process, resulting in a canceled   installation.        This   error message is returned for both DA and KNOX devices. Intune presents a   notification that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
 |    The application was not   detected after installation completed successfully. (0x87D1041C)    |    The   user explicitly uninstalled the app. This error is not returned from the   client. It is an error produced when the app was installed at one point, but   then the user uninstalled it. This error should only occur for required   applications. Users can uninstall non-required apps. This error can only   happen in DA. KNOX blocks the uninstall of managed apps.       The   next sync will repost the notification on the device for the user to install.   The user can ignore the notification. This error will continue to be reported   until the user installs the app.    |
 |    The download failed   because of an unknown error. (0xC7D14FB2)    |    This   error occurs when the download fails. This error can commonly occur due to   Wi-Fi issues or slow connections.       This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently. Intune presents a notification   that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
 |    The download failed   because of an unknown error. The policy will be retried the next time the   device syncs. (0xC7D15078)    |    This   error occurs when the download fails. This error can commonly occur due to   Wi-Fi issues or slow connections.       This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently.    |
-|    The end user cancelled   the app installation. (0xC7D14FB1)    |    The   user explicitly uninstalled the app. This error is returned when the Android   OS install activity was cancelled by the user. The user pressed the cancel   button when the OS install prompt was presented or clicked away from the   prompt.        This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently. Intune presents a notification   that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
+|    The end user canceled   the app installation. (0xC7D14FB1)    |    The   user explicitly uninstalled the app. This error is returned when the Android   OS install activity was canceled by the user. The user pressed the cancel   button when the OS install prompt was presented or clicked away from the   prompt.        This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently. Intune presents a notification   that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
 |    The file download   process was unexpectedly stopped. (0xC7D15015)    |    The   OS stopped the download process before it was complete. This error can occur   when the device has low battery or the download is taking too long.       This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently. Intune presents a notification   that users can click to retry. If the app is an available app, the notification can be   dismissed. However, if the app is required, it cannot be dismissed.    |
 |    The file download   service was unexpectedly stopped. The policy will be retried the next time   the device syncs. (0xC7D1507C)    |    The   OS stopped the download process before it was complete. This error can occur   when the device has low battery or the download is taking too long.       This   error is returned for only DA scenarios. For KNOX scenarios, the user is not   prompted to install, this can be done silently.    |
 
 ### iOS errors
 
-|    Error   message/code    |    Description    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    Apple   MDM Agent returned that the installation command failed.        |
-|    (0x87D1313C)    |    The   network connection was lost while the updated download service URL was sent   to the device. Specifically, a server with the specified hostname could not   be found.    |
-|    iOS device is currently   busy. (0x87D11388)    |    The   iOS device was busy, which resulted in an error.    |
-|    The app installation has   failed. (0x87D13B64)    |    An   app installation failure occurred. XCODE logs are needed to troubleshoot this   error.    |
-|    The app is managed, but   has expired or been removed by the user. (0x87D13B66)    |    The   user explicitly uninstalled the app. Or, the app is expired but failed to   download, or the app detection does not match the response from the device.   Additionally, this error could occur based on an iOS 9.2.2 platform bug.    |
-|    The app is scheduled for   installation, but needs a redemption code to complete the transaction.   (0x87D13B60)    |    This   error typically occurs with iOS Store apps which are paid apps.     |
-|    The application was not   detected after installation completed successfully. (0x87D1041C)    |    The   app detection process did not match with the response from the device.    |
-|    The user rejected the   offer to install the app. (0x87D13B62)    |    During   initial app install, the user clicked cancel.    |
-|    The user rejected the   offer to update the app. (0x87D13B63)    |    The   end-user clicked cancel during the update process.     |
-|    Unknown error   (0x87D103E8)    |    An   unknown app installation error occurred. This is the resulting error when the   other error have not occurred.    |
+| Error   message/code | Description/Troubleshooting tips |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Apple MDM Agent   returned that the installation command failed. |
+| (0x87D1313C) | The network connection was lost while the updated download service URL was sent to the device. Specifically, a server with the specified hostname could not be   found. |
+| iOS   device is currently busy. (0x87D11388) | The iOS device   was busy, which resulted in an error. |
+| The   app installation has failed. (0x87D13B64) | An app   installation failure occurred. XCODE logs are needed to troubleshoot this   error. |
+| The   app is managed, but has expired or been removed by the user. (0x87D13B66) | The user   explicitly uninstalled the app. Or, the app is expired but failed to   download, or the app detection does not match the response from the device.   Additionally, this error could occur based on an iOS 9.2.2 platform bug. |
+| The   app is scheduled for installation, but needs a redemption code to complete   the transaction. (0x87D13B60) | This error   typically occurs with iOS Store apps which are paid apps. |
+| The   application was not detected after installation completed successfully.   (0x87D1041C) | The app detection   process did not match with the response from the device. |
+| The   user rejected the offer to install the app. (0x87D13B62) | During initial   app install, the user clicked cancel. |
+| The   user rejected the offer to update the app. (0x87D13B63) | The end user   clicked cancel during the update process. |
+| Unknown   error (0x87D103E8) | An unknown app   installation error occurred. This is the resulting error when other errors have not occurred. |
+| Can only   install VPP apps on Shared iPad (-2016330861). | The   apps must be obtained using Apple Volume Purchase Program to install on a   Shared iPad. |
+| Can't install apps when App Store is   disabled (-2016330860).  | The App Store must be enabled for the user to install   the app. |
+| Can't find VPP license for app   (-2016330859).  | Try revoking and reassigning the app license. |
+| Can't install system apps with your MDM   provider (-2016330858). | Installing apps that are pre-installed by the iOS   operating system is not a supported scenario. |
+| Can't install apps when device is in Lost   Mode (-2016330857). | All use of the device is blocked in Lost Mode.   Disable Lost Mode to install apps. |
+| Can't install apps when device is in   kiosk mode (-2016330856). | Try adding this device to an exclude group for kiosk   mode configuration policy to install apps. |
+| User must sign in to the App Store   (-2016330855). | The user needs to sign in to the App Store before the   app can be installed. |
+| Unknown problem. Please try again   (-2016330854). | The app installation failed due to an unknown reason.   Try again later. |
+| The app installation failed. Intune will   try again the next time the device syncs (-2016330853). | The app installation encountered a device error. Sync   the device to try installing the app again. |
 
+### Other installation errors
+
+|    Error message/code    |    Description    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF,   0x80CF201C (client error)    |    To install this app, you must have a sideloading-enabled system. Make sure that the app package is signed with a trusted signature and installed on a domain-joined device that has the **AllowAllTrustedApps** policy enabled, or a device that has a Windows Sideloading license with the **AllowAllTrustedApps** policy enabled. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).     |
+|    0x80073CF0    |    The package could not be opened. Possible causes:<ul><li> The package is unsigned.</li><li> The publisher name does not match the signing certificate subject.</li></ul> Check the **AppxPackagingOM** event log for information. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CF3    |    The package failed update, dependency, or conflict validation. Possible causes:<ul><li> The incoming package conflicts with an installed package.</li><li> A specified package dependency is not found.</li><li> The package does not support the correct processor architecture.</li></ul> Check the **AppXDeployment-Server** event log for information. For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x80073CFB    |    The provided package is already installed, and reinstallation of the package is blocked. You could receive this error if you are installing a package that is not identical to the package that is already installed. Confirm the digital signature is also part of the package. When a package is rebuilt or re-signed, that package is no longer bitwise identical to the previously installed package. Two possible options to fix this error are as follows:<ul><li> Increment the version number of the app, then rebuild and re-sign the package.</li><li> Remove the old package for every user on the system before you install the new package.</li></ul> For more information, see [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).    |
+|    0x87D1041C    |    Application installation succeeded but application is not detected. The app was deployed successfully by Intune, then subsequently uninstalled. Reasons for the app being uninstalled include:<ul><li> The end user uninstalled the app.</li><li> The identity information in the package does not match what device reports for bad apps.</li><li>For self-updating MSIs, the product version does not match the information of the app after it is updated outside of Intune.</li></ul> Instruct the user to reinstall the app from the company portal. Note that required apps will be reinstalled automatically when the device next checks in.    |
+
+## Troubleshooting apps from the Microsoft Store
+
+The information in the topic [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) helps you troubleshoot common problems you might encounter when installing apps from the Microsoft Store, whether by using Intune, or by any other means.
 
 ## Next steps
 

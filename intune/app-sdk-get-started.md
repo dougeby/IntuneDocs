@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 02/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,28 +24,29 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
-
+ms.collection: M365-identity-device-management
 ---
 
 # Get started with the Microsoft Intune App SDK
 
-This guide will help you quickly enable your mobile app for app protection policies with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK, as explained in the [Intune App SDK overview](app-sdk.md).
+This guide will help you quickly enable your mobile app to support app protection policies with Microsoft Intune. You may find it useful to first understand the benefits of the Intune App SDK, as explained in the [Intune App SDK overview](app-sdk.md).
 
-The Intune App SDK supports similar scenarios across iOS and Android, and is intended to create a consistent experience across the platforms for IT admins. But there are small differences in the support of certain features, because of platform limitations.
+The Intune App SDK supports similar scenarios across iOS and Android, and is intended to create a consistent experience across the platforms for IT admins. But there are small differences in the support of certain features, because of platform differences and limitations.
 
 ## Register your store app with Microsoft
 
 ### If your app is internal to your organization and will not be publicly available:
 
-You *do not need* to register your app. For internal line-of-business apps, the IT administrator will deploy the app internally. Intune will detect that the app has been built with the SDK, and will let the IT administrator apply app protection policy to it. You can skip to the section [Enable your iOS or Android app for app protection policy](#enable-your-iOS-or-Android-app-for-app-protection-policy).
+You _**do not need**_ to register your app. For internal [line-of-business (LOB) apps](apps-add.md#app-types-in-microsoft-intune) that were written by or for your company, the IT administrator will deploy the app internally. Intune will detect that the app has been built with the SDK, and will let the IT administrator apply app protection policies to it. You can skip to the section [Enable your iOS or Android app for app protection policy](#enable-your-iOS-or-Android-app-for-app-protection-policy).
 
 ### If your app will be released to a public app store, like the Apple App Store or Google Play:
 
-You _**must**_ first register your app with Microsoft Intune and agree to the registration terms. IT administrators can then apply app protection policy to the managed app, which will be listed as an Intune app partner.
+You _**must**_ first register your app with Microsoft Intune and agree to the registration terms. IT administrators can then apply an app protection policy to the managed app, which will be listed as an [Intune protected partner app](apps-supported-intune-apps.md#partner-apps).
 
 Until registration has been finished and confirmed by the Microsoft Intune team, Intune administrators will not have the option to apply app protection policy to your app's deep link. Microsoft will also add your app to its [Microsoft Intune Partners page](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). There, the app's icon will be displayed to show that it supports Intune app protection policies.
 
-To begin the registration process, and if you are not already working with a Microsoft contact, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
+### The registration process
+To begin the registration process, and if you are not already working with a Microsoft contact, fill out the [Microsoft Intune App Partner Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR80SNPjnVA1KsGiZ89UxSdVUMEpZNUFEUzdENENOVEdRMjM5UEpWWjJFVi4u).
 
 We will use the email addresses listed in your questionnaire response to reach out and continue the registration process. Additionally, we use your registration email address to contact you if we have any concerns.
 
@@ -98,7 +99,7 @@ You will need one of the following developer guides to help you integrate the In
  
  * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
  
- * The [AAD Client ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#optional-configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
+ * The [AAD Client ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
  
 ## Configure Telemetry for your app
 
@@ -163,6 +164,8 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 	* If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step. The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.
 
 	* If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+	
+	* If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Office Admin Portal website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
 
@@ -193,7 +196,7 @@ This badge indicates to IT administrators, end-users, and potential Intune custo
 
 The badge is a briefcase icon and can be seen in the samples below:
 
-![Badge example 1](./media/badge-example-1.png) ![Badge example 2](./media/badge-example-2.png)
+![Intune app protection policies - Badge example 1](./media/badge-example-1.png) ![Intune app protection policies - Badge example 2](./media/badge-example-2.png)
 
 **What you'll need to badge your app**:
 

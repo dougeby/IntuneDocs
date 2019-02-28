@@ -3,12 +3,12 @@
 
 title: Manually add the Windows 10 Company Portal app
 titleSuffix: Microsoft Intune
-description: Learn how to manually add the Windows 10 Company Portal app.
+description: Learn how your workforce can manually add the Windows 10 Company Portal app to their PC from the Microsoft Store.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Manually add the Windows 10 Company Portal app by using Microsoft Intune
@@ -51,7 +52,7 @@ To manage devices and install apps, your users can install the Company Portal ap
 5. For **Platform**, select **Windows 10 all devices**, and then select the appropriate **Minimum version**, **Architecture**, and **Download app metadata** values. 
 6. Select **Download** to save the file to your local machine.
 
-    !["Windows 10 all devices" and Architecture X86 package details selected for download](./media/Win10CP-all-devices.png)
+    ![Windows 10 devices, where architecture equals X86, is selected](./media/Win10CP-all-devices.png)
 
 7. Download all the packages under “Required Frameworks” by selecting **Download**.  
     This action must be completed for x86, x64, and ARM architectures, a total of 12 packages.

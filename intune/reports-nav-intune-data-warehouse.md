@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -23,9 +23,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
-#  Intune Data Warehouse API
+#  Microsoft Intune Data Warehouse API
 
 The Intune Data Warehouse API lets you access your Intune data in a machine-readable format for use in your favorite analytics tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
 
@@ -68,7 +69,7 @@ OData defines an abstract data model and a protocol that let any client access i
 
 Learn more about working with Azure AD by reading the [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-Find OData resources at [odata.org](http://www.odata.org).
+Find OData resources at [odata.org](https://www.odata.org).
   
 Review the OData Version 4.0 standard at [OData Version 4.0]
-(http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+(https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

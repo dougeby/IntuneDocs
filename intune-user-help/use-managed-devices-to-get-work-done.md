@@ -6,7 +6,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,34 +24,27 @@ ms.reviewer: robstack
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
-# Use managed devices to get work done
-Microsoft Intune is a piece of software that lets organizations manage devices (like smartphones, tablets, and PCs),  apps, and other corporate resources like email. This gets employees access to their work information from virtually anywhere on almost any device while helping to keep corporate information secure.
+# Use managed devices to access work or school resources
+Microsoft Intune is a device management system that lets organizations manage access to devices, apps, and email. Device management enables you, and other employees and students, to access your work information from virtually anywhere, on almost any device. Even when you're working remotely, you and your organization's information stays secure.
 
-When you enroll a device into management with Intune, your IT department can manage those work or school resources, keep the device more secure, while giving you, their employee, the freedom to use your preferred device to get your work done. A primary way this is done is by enrolling the device into management through the Company Portal.
+Microsoft Intune is the software your company uses to configure their security and device requirements. When you're ready to get your device managed, you'll use the Intune Company Portal app. With this app, you can use your preferred device to access work or school resources. 
 
-## What information can my company see when I enroll my device in Intune?
-Your company's support can see information that is relevant to work, but not to your personal information. This is especially important to know if you're enrolling a personal device for use at work. We break down what they [can and can't see in the next article in the user help](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+## What information can my company see when I get my device managed?
+After you're set up in the Company Portal, your company's support can only see information that's relevant to work. They cannot see your personal information. This is especially important to know if you're enrolling a personal device for use at work. Learn exactly what they [can and can't see in the next article](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## How do I get the Company Portal?
-You can get the Company Portal two different ways:
+## How do I get Company Portal?
+Get Company Portal by either:
 
-- By installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your company support can also install the Company Portal app for you.
-- By going to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) that your company support set up.
+- Installing the Company Portal app on your device. You typically get the Company Portal app by going to the app store on your device, but your company support can also install the Company Portal app for you.
+- Going to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) that your company support set up.
 
 ## What's the difference between the app and the website?
-There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
+Each Company Portal app for Windows 10, iOS, macOS, and Android integrates seamlessly with your device's respective platform. The website is accessible from any device and gives you the same, universal experience no matter what device you're using. 
 
-- Enroll your devices into management
-- See the status of your devices
-- Download recommended and required apps for your organization
-- Rename your device
-- Reset your device's PIN or password
-- Contact your IT department for help
-
-To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
+You'll find Company Portal guidance specific to your device's platform, starting with enrollment steps, under the following links:  
 
 - [Using your Android device](using-your-android-device-with-intune.md)
 - [Using your iOS device](using-your-ios-device-with-intune.md)

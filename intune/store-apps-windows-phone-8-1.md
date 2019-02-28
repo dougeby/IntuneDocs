@@ -3,12 +3,12 @@
 
 title: Add Windows Phone 8.1 store apps to Microsoft Intune
 titleSuffix: 
-description: Learn about adding Windows Phone 8.1 store apps to Microsoft Intune.
+description: This topic describes how to add Windows Phone 8.1 store apps to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Add Windows Phone 8.1 store apps to Microsoft Intune

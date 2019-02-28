@@ -3,12 +3,12 @@
 
 title: Create and deploy app protection policies 
 titleSuffix: Microsoft Intune
-description: Learn how to create and assign Microsoft Intune app protection policies.
+description: This topic describes how to create and assign Microsoft Intune app protection policies (APP).
 keywords:
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # How to create and assign app protection policies
@@ -56,7 +57,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
 6. On the **Add a policy** blade, select **Configure required settings** to open **Settings**.
 
    There are three categories of policy settings:
-   - **Data relocation** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
+   - **Data protection** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
    - **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
    - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.
 
@@ -76,12 +77,16 @@ New policies you create aren't deployed to any users until you explicitly do so.
 
 2. In the ***Intune App Protection** pane, select **Assignments** to open the **Intune App Protection - Assignments** pane. On the *Include* tab, select **Select groups to include**. 
 
-   ![Screenshot of the Assignments pane with the Select groups to include menu option highlighted](./media/app-protection-policy-add-users.png)
+   ![Screenshot of the Assignments pane with Select groups to include menu](./media/app-protection-policy-add-users.png)
 
-3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. Choosing **Select**, deploys the policy to users.
+3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. 
 
-    ![Screenshot of the Add user group pane showing the list of Azure Active Directory users](./media/azure-ad-user-group-list.png)
+    ![Screenshot of the Add user group pane with list of Azure AD users](./media/azure-ad-user-group-list.png)
 
+4.  After you include and exclude groups, select **Save** to save the configuration and deploy the policy to users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.   
+ 
+     ![Screenshot showing the save and discard options](./media/save-assignment.png)
+  
 You've now created a policy and deployed it to users.
 
 Only users with assigned Microsoft Intune licenses are affected by the policy. Users in the selected security group that don’t have an assigned Intune license aren't affected.
@@ -113,9 +118,13 @@ To see the effect of the changes immediately, the end user must sign out of the 
 
 2.  In the *Intune App Protection* pane, select **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
 
-3.  To add a new user group to the policy, on the **Include** tab choose **Select groups to include**, and select the user group. Choose **Select** to deploy the policy to the group you selected.
+3.  To add a new user group to the policy, on the *Include* tab choose **Select groups to include**, and select the user group. Choose **Select** to add the group. 
 
-4.  To delete a user group, on the **Exclude** tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.
+4.  To exclude a user group, on the *Exclude* tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.  
+
+5.  To delete groups that were added previously, on either the *Include* or *Exclude* tabs, select the ellipsis (...) and select **Delete**. 
+
+5.  After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
 
 ### To change policy settings
 
@@ -134,7 +143,7 @@ Because Intune app protection policies target a user’s identity, the protectio
 
 To create these policies, browse to **Client apps** > **App protection policies** in the Intune console, and then select **Create Policy**. You can also edit an existing app protection policy. To have the app protection policy apply to both managed and un-managed devices, confirm that **Target to all app types** is set to **Yes**, the default value. If you want to granularly assign base on management state, set **Target to all app types**  to **No**. 
 
-![Screenshot of the Add a policy blade with Target to all app types selected](./media/app-protection-policies-target-all.png)
+![Screenshot of the Add a policy blade with Target to all app types](./media/app-protection-policies-target-all.png)
 
 For iOS, additional app configuration settings are required to target APP settings to apps on Intune enrolled devices:
 - **IntuneMAMUPN** must be configured for all MDM managed applications. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).

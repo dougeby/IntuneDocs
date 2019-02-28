@@ -2,12 +2,13 @@
 # required metadata
 
 title: You need to enable encryption | Microsoft Docs
-description:
+titlesuffix: Microsoft Intune
+description: You need to enable encryption on your device.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/31/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,8 +25,8 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
-ms.custom: intune-enduser
-
+ms.custom: intune-enduser; seodec18
+ms.collection: M365-identity-device-management
 ---
 # You need to enable encryption
 

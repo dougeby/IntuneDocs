@@ -5,8 +5,8 @@ title: Protect devices with Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Learn about some of the ways that Intune can help you protect your devices against unauthorized access and other threats.
 keywords:
-author: ErikjeMS
-ms.author: erikje
+author: brenduns   
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Protect devices with Microsoft Intune

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Configure Windows 10 VPN settings in Microsoft Intune - Azure | Microsoft Docs
-description: Learn and read about the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, conditional access, and DNS and proxy settings for Windows 10 devices and Windows Holographic for Business devices.
+title: Windows 10 VPN settings in Microsoft Intune - Azure | Microsoft Docs
+description: Learn and read about all the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, conditional access, and DNS and proxy settings for Windows 10 and Windows Holographic for Business devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 9/18/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,29 +22,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.reviewer: tycast
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
-
+ms.custom: intune-azure; seodec18
+ms.collection: M365-identity-device-management
 ---
 
-# Windows 10 VPN settings in Intune
+# Windows 10 and Windows Holographic device settings to add VPN connections using Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can configure VPN connections using Intune. This article describes these settings, the traffic rules, conditional access, and DNS & proxy settings.
+You can add and configure VPN connections for devices using Microsoft Intune. This article lists and describes commonly used settings and features when creating virtual private networks (VPNs). These VPN settings and features are used in device configuration profiles in Intune that are pushed or deployed to devices. 
 
-These settings apply to:
+As part of your mobile device management (MDM) solution, use these settings to allow or disable features, including using a VPN vendor, enabling always on, using DNS, adding a proxy, and more.
 
-- Devices running Windows 10
-- Devices running Windows Holographic for Business
+These settings apply to devices running:
+
+- Windows 10
+- Windows Holographic for Business
 
 Depending on the settings you choose, not all values may be configurable.
+
+## Before you begin
+
+[Create a VPN device configuration profile](vpn-settings-configure.md).
 
 ## Base VPN settings
 
 - **Connection name**: Enter a name for this connection. End users see this name when they browse their device for the list of available VPN connections.
 - **Servers**: Add one or more VPN servers that devices connect to. When you add a server, you enter the following information:
   - **Description**: Enter a descriptive name for the server, such as **Contoso VPN server**
-  - **IP address or FQDN**: Enter the IP address or fully qualified domain name of the VPN server that devices connect to, such as **192.168.1.1** or **vpn.contoso.com**
+  - **IP address or FQDN**: Enter the IP address or fully qualified domain name (FQDN) of the VPN server that devices connect to, such as **192.168.1.1** or **vpn.contoso.com**
   - **Default server**: Enables this server as the default server that devices use to establish the connection. Set only one server as the default.
   - **Import**: Browse to a comma-separated file that includes a list of servers in the format: description, IP address or FQDN, Default server. Choose **OK** to import these servers into the **Servers** list.
   - **Export**: Exports the list of servers to a comma-separated-values (csv) file
@@ -65,7 +71,7 @@ Depending on the settings you choose, not all values may be configurable.
   - **PPTP**
 
   When you choose a VPN connection type, you may also be asked for the following settings:  
-    - **Always On**: **Enable** to automatically connect to the VPN connection when the following events happen: 
+    - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
       - Users sign into their devices
       - The network on the device changes
       - The screen on the device turns back on after being turned off 
@@ -130,7 +136,7 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## DNS Settings
 
-- **DNS suffix search list**: In **DNS suffixes**, enter a DNS suffix, and **Add**. You can add multiple suffixes.
+- **DNS suffix search list**: In **DNS suffixes**, enter a DNS suffix, and **Add**. You can add many suffixes.
 
   When using DNS suffixes, you can search for a network resource using its short name, instead of the fully qualified domain name (FQDN). When searching using the short name, the suffix is automatically determined by the DNS server. For example, `utah.contoso.com` is in the DNS suffix list. You ping `DEV-comp`. In this scenario, it resolves to `DEV-comp.utah.contoso.com`.
 
@@ -140,10 +146,17 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
   ![Select the three dots, and click-and-drag to move the dns suffix](./media/vpn-settings-windows10-move-dns-suffix.png)
 
-- **Domain and servers for this VPN connection**: Add domain and DNS server for the VPN to use. You can choose which DNS servers the VPN connection uses after the connection is established. For each server, enter:
-- **Domain**
-- **DNS Server**
-- **Proxy**
+- **Name Resolution Policy table (NRPT) rules**: Name Resolution Policy table (NRPT) rules define how DNS resolves names when connected to the VPN. After the VPN connection is established, you choose which DNS servers the VPN connection uses.
+
+  You can add rules to the table that include the domain, DNS server, proxy, and other details to resolve the domain you enter. The VPN connection uses these rules when users connect to the domains you enter.
+
+  Select **Add** to add a new rule. For each server, enter:
+
+  - **Domain**: Enter the fully qualified domain name (FQDN) or a DNS suffix to apply the rule. You can also enter a period (.) at the beginning for a DNS suffix. For example, enter `contoso.com` or `.allcontososubdomains.com`.
+  - **DNS servers**: Enter the IP address or DNS server that resolves the domain. For example, enter `10.0.0.3` or `vpn.contoso.com`.
+  - **Proxy**: Enter the web proxy server that resolves the domain. For example, enter `http://proxy.com`.
+  - **Automatically connect**: When **Enabled**, the device automatically connects to the VPN when a device connects to a domain you enter, such as `contoso.com`. When **Not configured** (default), the device doesn't automatically connect to the VPN
+  - **Persistent**: When set to **Enabled**, the rule stays in the Name Resolution Policy table (NRPT) until the rule is manually removed from the device, even after the VPN disconnects. When set to **Not configured** (default), NRPT rules in the VPN profile are removed from the device when the VPN disconnects.
 
 ## Proxy settings
 
@@ -156,3 +169,23 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 - **Split tunneling**: **Enable** or **Disable** to let devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but uses the hotel's standard network for regular web browsing.
 - **Split tunneling routes for this VPN connection**: Add optional routes for third-party VPN providers. Enter a destination prefix, and a prefix size for each connection.
+
+## Trusted Network Detection
+
+**Trusted network DNS suffixes**: When users are already connected to a trusted network, you can prevent devices from automatically connecting to other VPN connections.
+
+In **DNS suffixes**, enter a DNS suffix that you want to trust, such as contoso.com, and select **Add**. You can add as many suffixes as you want.
+
+If a user is connected to a DNS suffix in the list, then the user won't automatically connect to another VPN connection. The user continues to use the trusted list of DNS suffixes you enter. The trusted network is still used, even if any autotriggers are set.
+
+For example, if the user is already connected to a trusted DNS suffix, then the following autotriggers are ignored. Specifically, the DNS suffixes in the list cancel all other connection autotriggers, including:
+
+- Always on
+- App-based trigger
+- DNS autotrigger
+
+## Next steps
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
+
+Configure VPN settings on [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), and [macOS](vpn-settings-macos.md) devices.

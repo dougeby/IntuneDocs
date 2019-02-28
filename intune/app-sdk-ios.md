@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/05/2018
+ms.date: 12/13/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: 
-
+ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune App SDK for iOS developer guide
@@ -132,21 +132,21 @@ To enable the Intune App SDK, follow these steps:
 
 4. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
 
-   1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the **first** group.
-
-   2. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
-
-   3. Add `com.microsoft.adalcache` to your existing access groups.
-
-       ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
-
-   4. If you are editing the entitlements file directly, rather than using the Xcode UI shown above to create the keychain access groups, prepend the keychain access groups with `$(AppIdentifierPrefix)` (Xcode handles this automatically). For example:
-
-           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
-
-      > [!NOTE]
-      > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+    1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the **first** group.
+    
+    2. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
+    
+    3. Add `com.microsoft.adalcache` to your existing access groups.
+    
+        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+    
+    4. If you are editing the entitlements file directly, rather than using the Xcode UI shown above to create the keychain access groups, prepend the keychain access groups with `$(AppIdentifierPrefix)` (Xcode handles this automatically). For example:
+    
+        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+    
+        > [!NOTE]
+        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
 
 5. Include each protocol that your app passes to `UIApplication canOpenURL` in the `LSApplicationQueriesSchemes` array of your app's Info.plist file. Be sure to save your changes before proceeding to the next step.
 
@@ -204,8 +204,9 @@ If your app already uses ADAL, the following configurations are required:
 
 3. Also under the **IntuneMAMSettings** dictionary with the key name `ADALRedirectUri`, specify the redirect URI to be used for ADAL calls. Alternatively, you could specify `ADALRedirectScheme` instead, if the application's redirect URI is in the format `scheme://bundle_id`.
 
-
 Additionally, apps can override these Azure AD settings at runtime. To do this, simply set the `aadAuthorityUriOverride`, `aadClientIdOverride`, and `aadRedirectUriOverride` properties on the `IntuneMAMPolicyManager` instance.
+
+4. Ensure the steps to give your iOS app permissions to the app protection policy (APP) service are followed. Use the instructions in the [getting started with the Intune SDK guide](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) under "Give your app access to the Intune app protection service (optional)".  
 
 > [!NOTE]
 > The Info.plist approach is recommended for all settings which are static and do not need to be determined at runtime. Values assigned to the `IntuneMAMPolicyManager` properties take precedence over any corresponding values specified in the Info.plist, and will persist even after the app is restarted. The SDK will continue to use them for policy check-ins until the user is unenrolled or the values are cleared or changed.
@@ -436,7 +437,7 @@ The Intune App SDK has several APIs you can call to get information about the In
 
 Class | Description
 ----- | -----------
-IntuneMAMPolicyManager.h | The IntuneMAMPolicyManager class exposes the Intune APP policy deployed to the application. Notably, it exposes APIs that are useful for [Enabling multi-identity](#-enable-multi-identity-optional). |
+IntuneMAMPolicyManager.h | The IntuneMAMPolicyManager class exposes the Intune APP policy deployed to the application. Notably, it exposes APIs that are useful for [Enabling multi-identity](app-sdk-ios.md#enable-multi-identity-optional). |
 IntuneMAMPolicy.h | The IntuneMAMPolicy class exposes some MAM policy settings that apply to the app. These policy settings are exposed so the app can customize its UI. Most policy settings are enforced by the SDK and not the app. The only one that the app should implement is the Save-as control. This class exposes some APIs needed to implement Save-as. |
 IntuneMAMFileProtectionManager.h | The IntuneMAMFileProtectionManager class exposes APIs the app can use to explicitly secure files and directories based on a supplied identity. The identity can be managed by Intune or unmanaged, and the SDK will apply the appropriate MAM policy. Using this class is optional. |
 IntuneMAMDataProtectionManager.h | The IntuneMAMDataProtectionManager class exposes APIs the app can use to secure data buffers given a supplied identity. The identity can be managed by Intune or unmanaged, and the SDK will apply encryption appropriately. |
@@ -488,7 +489,7 @@ When sharing documents via the `UIActivityViewController` and `UIDocumentInterac
 
 6. Configure the `NSExtensionActivationRule` to support a single file and all types from the application’s `CFBundleDocumentTypes` prefixed with `com.microsoft.intune.mam`. For example, if the application supports public.text and public.image, the activation rule would be:
 
-    ```
+    ```objc
     SUBQUERY (
         extensionItems,
         $extensionItem,
@@ -504,41 +505,41 @@ When sharing documents via the `UIActivityViewController` and `UIDocumentInterac
 
 If your app already contains Share or Action extensions, then their `NSExtensionActivationRule` will have to be modified to allow the Intune types. For each type supported by the extension, add an additional type prefixed with `com.microsoft.intune.mam`. For example, if the existing activation rule is:  
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data"
     ).@count > 0
-    ```
+).@count > 0
+```
 
 It should be changed to:
 
-    ```
+```objc
+SUBQUERY (
+    extensionItems,
+    $extensionItem,
     SUBQUERY (
-        extensionItems,
-        $extensionItem,
-        SUBQUERY (
-            $extensionItem.attachments,
-            $attachment,
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-            ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
-        ).@count > 0
+        $extensionItem.attachments,
+        $attachment,
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
     ).@count > 0
-    ```
+).@count > 0
+```
 
 > [!NOTE]
 > The IntuneMAMConfigurator tool can be used to add the Intune types to the activation rule. If your existing activation rule uses the predefined string constants (e.g. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText, etc.), the predicate syntax can get quite complex. The IntuneMAMConfigurator tool can also be used to convert the activation rule from the string constants to a predicate string while adding the Intune types.
@@ -547,11 +548,11 @@ It should be changed to:
 
 Old UI:
 
-![Old sharing UI](./media/sharing-UI-old.png)
+![Sharing data - iOS old sharing UI](./media/sharing-UI-old.png)
 
 New UI:
 
-![New sharing UI](./media/sharing-UI-new.png)
+![Sharing data - iOS new sharing UI](./media/sharing-UI-new.png)
 
 ## Enable targeted configuration (APP/MAM app config) for your iOS applications
 
@@ -606,7 +607,7 @@ The app is responsible for setting the identities appropriately, whether or not 
 
 At any time, every thread has an effective identity for UI tasks and file tasks. This is the identity that's used to check what policies, if any, should be applied. If the identity is "no identity" or the user is not managed, no policies will be applied. The diagrams below show how the effective identities are determined.
 
-  ![Intune App SDK iOS: linked frameworks and libraries](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: Identity determination process](./media/ios-thread-identities.png)
 
 ### Thread queues
 

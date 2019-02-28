@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Troubleshoot conditional access
+title: Troubleshoot conditional access | Microsoft Intune
 description: What to do when your users fail to get access to resources through Intune conditional access.
 keywords:
 author: brenduns
@@ -23,7 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot conditional access

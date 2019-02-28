@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Device compliance policy for Jamf devices
+title: Device compliance policy for Jamf devices  | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Enforce compliance on Macs managed with Jamf Pro
@@ -35,7 +36,7 @@ You can use Azure Active Directory and Microsoft Intune's conditional access pol
 
 ## Set up device compliance policies in Intune
 
-1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (e.g., sending warning emails) to noncompliant users and groups.
+1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (for example, sending warning emails) to noncompliant users and groups.
 2. Search for your desired groups, then apply the policies to them.
 
 > [!Note]
@@ -61,7 +62,7 @@ You should deploy the Company Portal app for macOS in Jamf Pro as a background i
 ## Create a policy in Jamf Pro to have users register their devices with Azure Active Directory
 
 > [!NOTE]
-> You need to [deploy the Company Portal](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) for macOS before going through the next steps.  
+> You need to [deploy the Company Portal](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) for macOS before going through the next steps.  
 
 End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro. This will require your end users to take action. We recommend that you [contact your end user](end-user-educate.md) through email, Jamf Pro notifications, or any other methods of notifying your end users to click the button in Jamf Self Service.
 

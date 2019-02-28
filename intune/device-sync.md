@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Sync devices to get the latest policies and actions with Intune
@@ -51,6 +51,8 @@ The **Sync** device action forces the selected device to immediately check in wi
 5. To confirm, select **Yes**.
 
 To see the status of the sync action, choose **Devices** > **Device actions**.
+
+You can find standard Intune policy check-in frequencies in the [Frequently asked questions about Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md##frequently-asked-questions-about-intune-policies).
 
 ## Retryable error codes
 

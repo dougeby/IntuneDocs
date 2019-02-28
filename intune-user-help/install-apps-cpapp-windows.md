@@ -2,12 +2,12 @@
 # required metadata
 
 title: Installing apps from Intune Company Portal app for Windows
-description: Learn how to install and share apps from the Company Portal app for Windows
+description: Install and share apps from the Company Portal app for Windows
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,7 +26,7 @@ ms.reviewer:
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Install and share apps on your device
@@ -42,6 +42,7 @@ Install apps on your device from the Company Portal app for Windows.
     * **Home**: Select from a list of your organization's featured apps.  
     * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.  
     * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.  
+    * **App categories**: Select this page in the navigation pane to choose apps based on type or function. Apps are sorted under categories such as **Featured**, **Education**, and **Productivity**.  
     * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
     * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.  
 
@@ -68,4 +69,16 @@ Share and recommend apps to your work or school contacts. The following steps de
 
 After you share, the recipient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+## Available apps  
+
+Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.  
+
+Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
+
+## Request an app for work or school  
+If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Include and exclude app assignments in Microsoft Intune
@@ -55,7 +55,7 @@ To assign an app to groups by using the include and exclude assignment:
 5. Select the app that you want to assign. A dashboard displays information about the app. 
 6. In the **Manage** section of the menu, select **Assignments**. 
 
-    ![Intune app assignments](./media/apps-inc-exl-01.png)
+    ![Include app assignments when assigning apps](./media/apps-inc-exl-01.png)
 7. Select **Add group** to add the groups of users who are assigned the app. 
 8. In the **Add group** pane, select an **Assignment type** from the available assignment types.
 9. For the assignment type, select **Available with or without enrollment**.

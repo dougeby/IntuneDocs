@@ -25,14 +25,15 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Automatically enroll iOS devices with Apple's Device Enrollment Program
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article helps you enable iOS device enrollment for devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
+You can set up Intune to enroll iOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). You can enable DEP enrollment for large numbers of devices without ever touching them. You can ship devices like iPhones and iPads directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
@@ -106,12 +107,21 @@ In Intune in the Azure portal, provide the Apple ID for future reference.
 
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### Step 4. Upload your token.
-In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**, and then choose **Create**. With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
+### Step 4. Upload your token and choose scope tags.
+
+1. In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**.
+2. If you want to apply [scope tags](scope-tags.md) to this DEP token, choose **Scope (tags)**, and select the scope tags that you want. Scope tags applied to a token will be inherited by profiles and devices added to this token.
+3. Choose **Create**.
+
+With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.
 
 ## Create an Apple enrollment profile
 
 Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
+
+> [!NOTE]
+> Devices will be blocked if there are not enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert whne a token is about to expire or licenses are running low.
+ 
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
@@ -194,7 +204,15 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Zoom</strong> | Give the user to the option to zoom the display when they set up the device. |
     | <strong>Siri</strong> | Give the user the option to set up Siri. |
     | <strong>Diagnostic Data</strong> | Display the **Diagnostics** screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
-
+    | <strong>Display Tone</strong> | Give the user the option to turn on Display Tone. |
+    | <strong>Privacy</strong> | Display the Privacy screen to the user. |
+    | <strong>Android Migration</strong> | Give the user the option to migrate date from an Android device. |
+    | <strong>iMessage and FaceTime</strong> | Give the user the option to set up  iMessage and FaceTime. |
+    | <strong>Onboarding</strong> | Display onboarding informational screens for user education, such as Cover Sheet and Multitasking and Control Center. |
+    | <strong>Watch Migration</strong> | Give the user the option to migrate data from a watch device. |
+    | <strong>Screen Time</strong> | Display the Screen Time screen. |
+    | <strong>Software Update</strong> | Display the mandatory software update screen. |
+    | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
 
 14. Choose **OK**.
 

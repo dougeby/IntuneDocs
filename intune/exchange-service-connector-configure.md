@@ -1,14 +1,13 @@
 ---
 # required metadata
 
-title: Intune Exchange connector for Exchange Online
-titleSuffix: 
+title: Intune Exchange connector for Exchange Online | Microsoft Intune
 description: Connect Intune to Office 365 Exchange service to support Exchange ActiveSync mobile device management (MDM).
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,13 +23,15 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Configure the Exchange service connector for Intune and Exchange Online
 This article shows you how to connect the Microsoft Intune service to Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager.
 
 With the **Service to Service Connector** you can manage both Exchange ActiveSync (EAS) and Intune managed devices from a single administrative console.  The connector is not required to enable Conditional Access for Exchange Online.
+
+When planning a rollout of Conditional Access, it is often important to understand which users and number of user will have the new experience. The Office 365 Admin Center provides this in the form of an Exchange Online email app usage report as part of the Activity Reports feature of that portal. These reports can be used to understand mobile email adoption in your environment before and after the deployment of Conditional Access.
 
 ## Service to Service Connector requirements
 The **Service to Service Connector** supports only Exchange Online or Exchange Online Dedicated and has no requirements for an on-premises infrastructure. 
@@ -56,21 +57,19 @@ You must also create an Exchange Online user account that is used by the Intune 
 
 ## Set up the Service to Service Connector
 
-1. Sign in to the [Azure portal](http://portal.azure.com) with a user account that has Exchange admin rights, permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements), a valid Intune license, and the Global Administrator role. Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
+1. Sign in to the [Azure portal](https://portal.azure.com) with a user account that has Exchange admin rights, permissions for the cmdlets [described earlier](#exchange-cmdlet-requirements), a valid Intune license, and the Global Administrator role. Microsoft Intune uses the email address of the currently signed-in user to set up the connection.
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-3. Choose **Intune** to open the Microsoft Intune dashboard. Choose **Conditional access**, and then under **Setup**, choose **Exchange service connector**.
+3. Choose **Intune** to open the Microsoft Intune dashboard. select **Exchange access**, and then under **Setup** select **Exchange online connector**.
 
-4.  On the **Conditional access - Exchange service connector** page, choose **Set Up Service to Service Connector**. 
-   
-     ![Image showing selecting the Set Up Service to Service Connector link](media/exchange_service_connector.png)
+4.  On the **Exchange access - Exchange online connector** page, choose **Set Up Service to Service Connector**. 
 
 The Service to Service Connector automatically configures and synchronizes your Exchange Online or new Exchange Online Dedicated environment.
 
 ## Validate your Exchange connection
 
-After you have successfully configured the Exchange Service to Service Connector, validate the Exchange Connector Server information on the **Conditional access - Exchange service connector** page.
+After you have successfully configured the Exchange Service to Service Connector, validate the Exchange Connector Server information on the **Exchange access - Exchange online connector** page.
 
 You can also check the **Connection status** and the time and date of the last successful synchronization attempt.
 

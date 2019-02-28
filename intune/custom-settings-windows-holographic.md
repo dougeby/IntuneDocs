@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Custom settings for Windows Holographic for Business devices in Microsoft Intune - Azure | Microsoft Docs
+title: Custom settings - Windows Holographic for Business devices - Microsoft Intune
 description: Add or create a custom profile to use the OMA-URI settings for devices running Windows Holographic for Business in Microsoft Intune, including Microsoft Hololens. You can set AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates, and ApplicationLaunchRestrictions policy configuration service provider (CSP) settings.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,8 +22,8 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
-
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 # Use custom settings for Windows Holographic for Business devices in Intune
 

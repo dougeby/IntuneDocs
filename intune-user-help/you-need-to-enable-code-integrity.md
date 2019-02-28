@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,22 +21,23 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
-# You need to enable Code Integrity
+# Enable code integrity
 
-Keeping your organizational information requires different types of security to prevent different types of problems. One way they want to maintain that security is to use Windows Code Integrity, which makes sure that deep-level programs (drivers) and system files haven't been modified.
+Your organization might require your PC to be enabled with a threat protection feature called *code integrity*. Code integrity checks the drivers and system files on your device for signs of corruption or malicious software. For code integrity to work on your device, another security feature called [*Secure Boot*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) must also be enabled. 
 
-Code Integrity is automatically turned on when your system actively uses Secure Boot.
+If your PC isn't compliant because code integrity is disabled, you should contact your organization's IT support team. They'll help you enable Secure Boot, which will trigger code integrity the next time you start up your device. 
 
-> [!Tip]
-> Enabling Secure Boot is an advanced task. We recommend you contact your company support for assistance with this task.
+If you identify yourself as an advanced device user and want to try the steps on your own, see [Re-enable Secure Boot](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-If you feel comfortable with proceeding, read over the section “To re-enable Secure Boot” on the [Disabling Secure Boot](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) page to try enabling Secure Boot yourself.
+## Additional resources for IT administrators  
+If you're an Intune administrator and want to learn more about Intune's device health compliance settings, see [Add a device compliance policy for Windows 10 devices in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). For a detailed look at the compliance actions you can take in Intune, see the [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## Next steps  
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

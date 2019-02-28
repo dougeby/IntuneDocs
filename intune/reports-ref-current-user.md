@@ -2,12 +2,12 @@
 # required metadata
 title: Current User - Intune Data Warehouse
 titlesuffix: Microsoft Intune 
-description: Reference topic for the User category of entity collections in the Intune Data Warehouse API.
+description: Reference topic for the Current User category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,8 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic; seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Reference for Current User entity

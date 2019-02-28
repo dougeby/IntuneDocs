@@ -1,8 +1,7 @@
 ---
 # required metadata
 
-title: Conditional access with Microsoft Intune
-titlesuffix:
+title: Conditional access with Microsoft Intune | Microsoft Intune
 description: Learn how to define the conditions users, devices, and apps must meet to access company resources in Microsoft Intune.
 keywords:
 author: brenduns
@@ -25,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # What's conditional access?

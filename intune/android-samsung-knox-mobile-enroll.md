@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment
+title: Automatically enroll Android devices using Samsung's Knox Mobile Enrollment
 titlesuffix: Microsoft Intune
 description: Learn how to enroll Android devices using Samsung KME
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager:
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,8 +24,8 @@ ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
-
+ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment
@@ -125,6 +125,8 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 ## Frequently asked questions
 
 - **Device Owner support:** Intune supports enrolling devices to only kiosk mode using Android enterprise. Other Android enterprise device owner modes will be supported as they become available in Intune.
+
+- **No work profile support:** KME is a corporate device enrollment method and devices enrolled in Android work profile ensure work and personal data are separate on personal devices. So, device enrollment to work profile using KME is not a supported scenario in Intune.
 
 - **Factory reset to enroll to Android enterprise:** If repurposing devices that have already been set up, devices need to be factory reset when enrolling to Android enterprise.
 

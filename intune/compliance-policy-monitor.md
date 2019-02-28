@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 # Monitor Intune Device compliance policies
 
@@ -62,6 +62,9 @@ As you dig in to this reporting, you can also see any specific compliance polici
 
 The chart shows the compliance states for all Intune enrolled devices. The device compliance states are kept in two different databases: Intune and Azure Active Directory. 
 
+> [!IMPORTANT]
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
 Descriptions of the different device compliance policy states:
 
 - **Compliant**: The device successfully applied one or more device compliance policy settings.
@@ -70,7 +73,12 @@ Descriptions of the different device compliance policy states:
 
   - Learn more about [Actions for noncompliant devices](actions-for-noncompliance.md).
 
-- **Not evaluated**: An initial state for newly enrolled devices. Or, devices that aren't assigned compliance policy and don't have a trigger to check for compliance.
+- **Not evaluated**: An initial state for newly enrolled devices. Other possible reasons for this state include:
+
+  - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance
+  - Devices that haven't checked in since the compliance policy was last updated
+  - Devices not associated to a specifc user
+  - Devices enrolled with a device enrollment manager (DEM) account
 
 - **Not-compliant:** The device failed to apply one or more device compliance policy settings. Or, the user hasn’t complied with the policies.
 

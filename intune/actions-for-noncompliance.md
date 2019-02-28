@@ -22,15 +22,16 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# Automate email and add actions for noncompliant devices - Intune
+# Automate email and add actions for noncompliant devices in Intune
 
-There is an **Actions for noncompliance** feature that configures a time-ordered sequence of actions. These actions apply to devices that don't meet your compliance policy. 
+For devices that don't meet your compliance policies or rules, you can add **Actions for noncompliance**. This feature configures a time-ordered sequence of actions, such as emailing the end user, and more.
 
 ## Overview
-By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device is not compliant, **actions for noncompliance** also gives you flexibility to decide what to do. For example, don't block the device immediately, and give the user a grace period to be compliant.
+
+By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device isn't compliant, **actions for noncompliance** also gives you flexibility to decide what to do. For example, don't block the device immediately, and give the user a grace period to be compliant.
 
 There are several types of actions:
 
@@ -77,14 +78,14 @@ To send email to your users, create a notification message template. When a devi
 
    ![Example of a compliant notification message in Intune](./media/actionsfornoncompliance-1.PNG)
 
-4. Once you're done adding the information, choose **Create**. The Notification message template is ready to use. Note that the logo you upload as part of the Company Portal branding will be used for email templates. For more information about Company Portal branding, see [Company identity branding customization](company-portal-app.md#company-identity-branding-customization).	
+4. Once you're done adding the information, choose **Create**. The Notification message template is ready to use. The logo you upload as part of the Company Portal branding is used for email templates. For more information about Company Portal branding, see [Company identity branding customization](company-portal-app.md#company-identity-branding-customization).
 
 > [!NOTE]
-> You can also edit a Notification template previously created.
+> You can also change or update an existing notification template you previously created.
 
 ## Add actions for noncompliance
 
-When you create a device compliance policy, Intune automatically creates an action for noncompliance. When a device isn't meeting your compliance policy, this action marks the device as not compliant. You can customize how long the device is marked as not compliant. This action can't be removed.
+When you create a device compliance policy, Intune automatically creates an action for noncompliance. If a device isn't meeting your compliance policy, this action marks the device as not compliant. You can customize how long the device is marked as not compliant. This action can't be removed.
 
 You can also add another action when you create a compliance policy, or update an existing policy. 
 
@@ -104,11 +105,12 @@ You can also add another action when you create a compliance policy, or update a
          - Choose the **Message template** you previously created
          - Enter any **Additional recipients** by selecting groups
     
-    - **Remotely lock the noncompliant device**: When the device is noncompliant, lock the device. This forces the user to enter a PIN or passcode to unlock the device. 
+    - **Remotely lock the noncompliant device**: When the device is noncompliant, lock the device. This action forces the user to enter a PIN or passcode to unlock the device. 
     
-    - **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a conditional access policy. If you enter **0** number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
+    - **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a conditional access policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
 
 5. When finished, select **Add** > **OK** to save your changes.
 
 ## Next steps
-[Monitor the device compliance activity](device-compliance-monitor.md).
+
+[Monitor your policies](compliance-policy-monitor.md).
