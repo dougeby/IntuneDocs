@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 02/16/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,6 +54,12 @@ Supported update channels:
 - Release Windows Insider  
 
 If you select an Insider channel, Intune automatically configures the Windows update setting [Update/ManagePreviewBuilds](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds) so that the insider build will work.  
+
+
+> [!IMPORTANT]  
+> Beginning with Windows version 1903, the use of the *Semi-Annual Channel (targeted)* (SAC-T), is retired. With this change, SAC-T merges with the *Semi-Annual Channel*. To learn more about this change and how it affects Windows Update for Business, see the Windows IT Pro Blog post [Windows Update for Business and the retirement of SAC-T](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-and-the-retirement-of-SAC-T/ba-p/339523).
+ 
+
 
 ### Microsoft product updates  
 
