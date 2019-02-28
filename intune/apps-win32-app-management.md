@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 02/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -253,6 +253,17 @@ If needed, you can suppress showing end user toast notifications per app assignm
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:
+
+    **On X64 client machines**:
+    *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*
+    *C:\windows\IMECache*
+     
+    **On X86 machines**:
+    *C:\Program Files\Microsoft Intune Management Extension\Content*
+    *C:\windows\IMECache*
 
 For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
