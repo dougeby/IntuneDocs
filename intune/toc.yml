@@ -307,6 +307,7 @@
       href: device-restrictions-configure.md
     - name: Deliver updates
       href: delivery-optimization-windows.md
+      displayName: delivery optimization; updates
     - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
     - name: Configure email
