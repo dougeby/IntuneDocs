@@ -87,14 +87,16 @@ If you pause for more than a few minutes during enrollment, the app might close 
     When you're ready to download the management profile,tap **Continue**.  
 
 6. Safari opens the Company Portal website. When prompted to download the configuration profile, tap **Allow**.  
-    * **iOS 12.2 and later**: If you aren't automatically redirected to the **Settings** app, wait for the profile to finish downloading and click **Done**. Then open the **Settings** app on your device.  
+    * **iOS 12.2 and later**: Wait for the profile to finish downloading in Safari and tap **Done**. Then open the **Settings** app on your device.  
 
     > [!IMPORTANT]
     > You must go to the **Settings** app and install this profile within 8 minutes of downloading it. If you don't, the profile will be removed and you'll have to restart enrollment. 
 
-7. In the **Settings** app, tap **Install Downloaded Profile** > **Install**. If prompted, enter your device password. Then tap **Install** again.  
+7. In the **Settings** app, tap **Install Downloaded Profile** > **Install**. If **Install Download Profile** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
 
     ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)  
+    
+8. If prompted, enter your device password. Then tap **Install**.      
 
 9. The next screen is a standard system warning for device management. To learn more about what your organization can and can't see on your device, see the relevant [Intune docs article](what-info-can-your-company-see-when-you-enroll-your-device-in-Intune.md). To continue with installation, tap **Install**. If you're prompted to trust remote management, tap **Trust**.  
 
