@@ -9,7 +9,7 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
