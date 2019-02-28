@@ -296,14 +296,13 @@ Block the following to help prevent email threats:
 
 > [!IMPORTANT]
 > To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:
-
-    **On X64 client machines**:
-    *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*
-    *C:\windows\IMECache*
-     
-    **On X86 machines**:
-    *C:\Program Files\Microsoft Intune Management Extension\Content*
-    *C:\windows\IMECache*
+    > **On X64 client machines**:
+    > *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*
+    > *C:\windows\IMECache*
+    >  
+    > **On X86 client machines**:
+    > *C:\Program Files\Microsoft Intune Management Extension\Content*
+    > *C:\windows\IMECache*
 
 ### Controlled folder access
 
