@@ -6,7 +6,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -450,8 +450,9 @@ Use these options to configure the local security settings on Windows 10 devices
 - **Anonymous enumeration of SAM accounts and shares**: **Not configured** (default) means anonymous users can enumerate the names of domain accounts and network shares. To prevent anonymous enumeration of SAM accounts and shares, set to **Block**.
 - **LAN Manager hash value stored on password change**: At the next password change, choose to **Allow** the LAN Manager (LM) to store the hash value for the new password. When set to **Not configured** (default), the hash value isn't stored.
 - **PKU2U authentication requests**: **Block** PKU2U authentication requests to the device to use online identities. **Not configured** (default) allows these requests.
-- **Restrict remote RPC connections to SAM**: **Allow** the default Security Descriptor Definition Language string to deny users and groups to make remote calls to the SAM. **Not configured** (default) the default Security Descriptor Definition Language string to allow users and groups to make remote calls to the SAM.
+- **Restrict remote RPC connections to SAM**: Set to **Allow** to deny users and groups from making remote RPC calls to the Security Accounts Manager (SAM), which stores user accounts and passwords. **Allow** also lets you change the default Security Descriptor Definition Language (SDDL) string to explicitly allow or deny users and groups to make these remote calls. **Not configured** (default) uses the default security descriptor, and may allow users and groups to make remote RPC calls to the SAM.
   - **Security descriptor**
+
 ### Recovery console and shutdown
 
 - **Clear virtual memory pagefile when shutting down**: Set to **Enable** to clear the virtual memory pagefile when the device is powered down. **Not configured** doesn't clear the virtual memory.
@@ -460,7 +461,7 @@ Use these options to configure the local security settings on Windows 10 devices
 ### User account control
 
 - **UIA integrity without secure location**: When set to **Block**, apps in a secure location in the file system run only with UIAccess integrity. **Not configured** (default) enables apps to run with UIAccess integrity, even if the apps aren't in a secure location in the file system.
-- **Virtualize file and registry write failures to per-user locations**: When set to **Enabled**, application write failures are redirected at run time to defined user locations for the file system and registry. When set to **Not configured** (default), applications that write data to protected locations fail.
+- **Virtualize file and registry write failures to per-user locations**: When set to **Enabled**, applications that write data to protected locations fail. When set to **Not configured** (default), application write failures are redirected at run time to defined user locations for the file system and registry.
 - **Only elevate executable files that are signed and validated**: Set to **Enabled** to enforce the PKI certification path validation for an executable file before it can run. Set to **Not configured** (default) to not enforce PKI certification path validation before an executable file can run.
 
 #### UIA elevation prompt behavior settings
@@ -477,7 +478,7 @@ Use these options to configure the local security settings on Windows 10 devices
   - **Prompt for credentials on the secure desktop**
   - **Not configured**: Prompt for credentials
 - **Route elevation prompts to user’s interactive desktop**: **Enable** so all elevation requests go to the interactive user's desktop, not the secure desktop. Any prompt behavior policy settings for administrators and standard users are used. **Not configured** (default) forces all elevation requests go to the secure desktop, regardless of any prompt behavior policy settings for administrators and standard users.
-- **Elevated prompt for app installations**: When set to **Enabled** , application installation packages aren't detected or prompted for elevation. When set to **Not configured** (default), the user is prompted for an administrative user name and password when an application installation package requires elevated privileges.
+- **Elevated prompt for app installations**: When set to **Enabled**, application installation packages aren't detected or prompted for elevation. When set to **Not configured** (default), the user is prompted for an administrative user name and password when an application installation package requires elevated privileges.
 - **UIA elevation prompt without secure desktop**: **Enable** to allow UIAccess apps to prompt for elevation, without using the secure desktop. When **Not configured** (default), the elevation prompts use a secure desktop.
 
 #### Admin Approval Mode settings
