@@ -9,7 +9,7 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
