@@ -662,14 +662,8 @@
           href: device-restrictions-android.md
         - name: Email
           href: email-settings-android.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS imported certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -689,14 +683,8 @@
           href: device-restrictions-android-for-work.md
         - name: Email
           href: email-settings-android-enterprise.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS imported certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
@@ -715,12 +703,8 @@
           href: device-restrictions-ios.md
         - name: Email
           href: email-settings-ios.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -739,8 +723,6 @@
           href: device-restrictions-macos.md
         - name: Endpoint protection
           href: endpoint-protection-macos.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
@@ -771,12 +753,8 @@
           href: identity-protection-windows-settings.md
         - name: Kiosk
           href: kiosk-settings-windows.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -811,8 +789,6 @@
         items:
         - name: Device restrictions
           href: device-restrictions-windows-8-1.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
@@ -829,8 +805,6 @@
           href: device-restrictions-windows-phone-8-1.md
         - name: Email
           href: email-settings-windows-phone-8-1.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
         - name: SCEP certificate
           href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
