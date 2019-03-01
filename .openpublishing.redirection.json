@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
+			"redirect_url": "/intune/device-profile-troubleshoot",
+			"redirect_document_id": false
+		},			
+		{
 			"source_path": "intune/device-compliance-monitor.md",
 			"redirect_url": "/intune/compliance-policy-monitor",
 			"redirect_document_id": false
@@ -1765,7 +1770,7 @@
 		{
 			"source_path": "intune/configure-devices/troubleshoot-device-profiles.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/vpn-for-android.md",
@@ -3024,7 +3029,7 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false
 		},
 		{
@@ -3034,7 +3039,7 @@
 		},		
 		{
 			"source_path": "intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": true
 		},		
 		{
