@@ -304,7 +304,7 @@ In this step, you:
 2. Select **Device configuration** > **Certification Authority** > **Add**
 3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
 
 4. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
 
