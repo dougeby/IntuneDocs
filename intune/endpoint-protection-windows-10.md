@@ -294,6 +294,16 @@ Block the following to help prevent email threats:
 
 - **Files and folder to exclude from attack surface reduction rules**: Import/add a list of locations to exclude from the configured rules.
 
+> [!IMPORTANT]
+> To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:<p>
+> **On X64 client machines**:<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **On X86 client machines**:<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+
 ### Controlled folder access
 
 Help protect valuable data from malicious apps and threats, such as ransomware.

@@ -2,13 +2,13 @@
 # required metadata
 
 title: Device compliance policies in Microsoft Intune - Azure | Microsoft Docs
-description: Requirements to use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
+description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
 keywords:
 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
+ms.date: 02/28/2019
 
 ms.topic: conceptual
 ms.prod:
@@ -28,21 +28,20 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Get started with device compliance policies in Intune
+# Set rules on devices to allow access to resources in your organization using Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, this feature is called "compliance policies". Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with conditional access, administrators can block users and devices that don't meet the rules. For example, an Intune administrator can require:
+Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, this feature is called "compliance policies". Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with conditional access, administrators can block users and devices that don't meet the rules. 
+
+For example, an Intune administrator can require:
 
 - End users use a password to access organizational data on mobile devices
-
 - The device isn't jail-broken or rooted
-
 - A minimum or maximum operating system version on the device
-
 - The device to be at, or under a threat level
 
-You can also use device compliance policies to monitor the compliance status on your devices.
+You can also use this feature to monitor the compliance status on devices in your organization.
 
 > [!IMPORTANT]
 > Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -102,14 +101,26 @@ When a device is enrolled in Intune, the Azure AD registration process starts, a
 
 When checking for compliance, Intune uses the same refresh cycle as configuration profiles. In general, the times are:
 
-- iOS: Every six hours
-- macOS: Every six hours
-- Android: Every eight hours
-- Windows 10 PCs enrolled as devices: Every eight hours
-- Windows Phone: Every eight hours
-- Windows 8.1: Every eight hours
+| Platform | Refresh cycle|
+| --- | --- |
+| iOS | Every 6 hours |
+| macOS | Every 6 hours |
+| Android | Every 8 hours |
+| Windows 10 PCs enrolled as devices | Every 8 hours |
+| Windows Phone | Every 8 hours |
+| Windows 8.1 | Every 8 hours |
 
-A compliance check happens more frequently immediately after a device enrolls.
+If the device recently enrolled, the compliance check-in runs more frequently:
+
+| Platform | Frequency |
+| --- | --- |
+| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
+| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
+| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
+
+At anytime, users can open the Company Portal app, and sync the device to immediately check for a policy.
 
 ### Assign an InGracePeriod status
 
