@@ -7,7 +7,7 @@ author: MandiOhlinger
 ms.author: mandia 
 manager: dougeby 
 ms.date: 09/21/2018 
-ms.topic: article 
+ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.service: 
