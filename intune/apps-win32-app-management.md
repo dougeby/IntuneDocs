@@ -6,13 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-<<<<<<< HEAD
-ms.date: 02/20/2019
-ms.topic: conceptual
-=======
 ms.date: 02/28/2019
-ms.topic: article
->>>>>>> 75531e10435635826b38cbef2811ec1d6d576c74
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
