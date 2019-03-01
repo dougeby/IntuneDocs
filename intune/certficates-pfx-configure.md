@@ -27,7 +27,7 @@ ms.collection: M365-identity-device-management
 ---
 # Configure and use PKCS certificates with Intune
 
-Intune supports the use of private and public key pair (PKCS) certificates. This includes how to export a PKCS certificate, and how to add the certificate to an Intune device configuration profile.
+Intune supports the use of private and public key pair (PKCS) certificates. This article can help you configure the required infrastructure like on-premises certificate connectors, export a PKCS certificate, and then add the certificate to an Intune device configuration profile.
 
 Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. Certificates authenticate and secure access to your corporate resources like a VPN or a WiFi network. You deploy these settings to devices using device configuration profiles in Intune.
 
