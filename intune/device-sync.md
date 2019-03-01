@@ -52,7 +52,7 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 To see the status of the sync action, choose **Devices** > **Device actions**.
 
-You can find standard Intune policy check-in frequencies in the [Refresh cycle times](device-profiles.md#refresh-cycle-times.md).
+You can find standard Intune policy check-in frequencies in the [Refresh cycle times](device-profiles.md).
 
 ## Retryable error codes
 
