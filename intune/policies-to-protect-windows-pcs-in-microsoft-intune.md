@@ -46,6 +46,6 @@ The Windows Firewall helps to keep hackers, malware, and other threats from Wind
 
 As an IT admin, one of your top priorities is to [keep the Windows PCs that you manage free of malware and viruses](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Intune integrates with Endpoint Protection to provide real-time protection against malware threats, keep malware definitions up-to date, and automatically scan computers. Endpoint Protection also provides tools that help you to manage and monitor malware attacks.
 
-# See also
+## See also
 
 [Common questions, issues and resolutions with device policies and profiles](device-profile-troubleshoot.md)
