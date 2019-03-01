@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -88,7 +88,7 @@ The Intune management extension has the following prerequisites:
 > - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
 > - PowerShell scripts in Intune can be targeted to Azure AD user security groups.
 
-The Intune management extension client checks once every hour with Intune. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
+The Intune management extension client checks once every hour and after every reboot with Intune for any new scripts or changes. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported. Once the script executes, it doesn't execute again unless there's a change in the script or policy.
 
 ## Monitor run status
 
