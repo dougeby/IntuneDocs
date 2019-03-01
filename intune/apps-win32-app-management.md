@@ -255,14 +255,14 @@ Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\Intun
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
 
 > [!IMPORTANT]
-> To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:
-    > **On X64 client machines**:
-    > *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*
-    > *C:\windows\IMECache*
-    >  
-    > **On X86 client machines**:
-    > *C:\Program Files\Microsoft Intune Management Extension\Content*
-    > *C:\windows\IMECache*
+> To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:<p>
+> **On X64 client machines**:<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **On X86 client machines**:<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
 
 For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
