@@ -64,6 +64,8 @@ Intune has additional templates you can use to promote device enrollment with yo
 
 -   The [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) can be customized with your company’s logo to promote adoption of Intune and EMS within your organization.
 
+-   Share the [Company Portal app URL](http://go.microsoft.com/fwlink/?LinkID=396941) with your Android, iOS and Windows users. This URL redirects to the appropriate Company Portal app listing on Android, iOS and Windows devices.
+
 ## Next steps
 
 [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md).
