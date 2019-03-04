@@ -1,6 +1,23 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
+			"redirect_url": "/intune/device-profile-troubleshoot",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune/device-compliance-monitor.md",
+			"redirect_url": "/intune/compliance-policy-monitor",
+			"redirect_document_id": false
+		},	
+		{
+
+			"source_path": "intune-user-help/power-saving-mode-android.md",
+			"redirect_url": "https://go.microsoft.com/fwlink/?linkid=2077422&clcid=0x409",
+			"redirect_document_id": false
+			
+		},
+		{
 
 			"source_path": "intune-user-help/using-your-macos-device-with-intune.md",
 			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
@@ -55,7 +72,7 @@
 		},		
 		{
 			"source_path": "intune/android-enterprise-settings.md",
-			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
+			"redirect_url": "/intune/device-restrictions-android-for-work#dedicated-device-settings",
 			"redirect_document_id": false
 		},
 		{
@@ -1753,7 +1770,7 @@
 		{
 			"source_path": "intune/configure-devices/troubleshoot-device-profiles.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/vpn-for-android.md",
@@ -2172,8 +2189,8 @@
 		},
 		{
 			"source_path": "intune/set-device-compliance/monitor-device-compliance.md",
-			"redirect_url": "/intune/device-compliance-monitor",
-			"redirect_document_id": true
+			"redirect_url": "/intune/compliance-policy-monitor",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/set-device-compliance/monitor-intune-device-compliance-policies.md",
@@ -3012,7 +3029,7 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false
 		},
 		{
@@ -3022,7 +3039,7 @@
 		},		
 		{
 			"source_path": "intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": true
 		},		
 		{
@@ -5033,7 +5050,7 @@
 			"redirect_url": "/intune/apple-configurator-enroll-ios",
 			"redirect_document_id": false
 		},
-    {
+    	{
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
 			"redirect_document_id": false

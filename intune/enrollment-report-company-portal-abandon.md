@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Company portal enrollment abandonment in Intune
+title: Incomplete user enrollments report in Intune
 titlesuffix: "Microsoft Intune"
-description: Learn about the company portal abandonment report.
+description: Learn about the Incomplete user enrollments report.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -28,27 +28,27 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# Company portal abandonment report
+# Incomplete user enrollments report
 
-This report tells you where in the Company Portal enrollment users are abandoning the enrollment process.
+This report tells you where in the Company Portal enrollment process users are not completing the enrollment process.
 
-To see the report, choose **Intune** > **Device enrollment** > **Company portal abandonment**.
+To see the report, choose **Intune** > **Device enrollment** > **Incomplete user enrollments**.
 
-Using this abandonment information, you can update your onboarding documents to help users complete enrollment. For example, if many users are quitting at the Terms of Use, you might investigate that area and make it more intuitive for users.
+Using this information, you can update your onboarding documents to help users complete enrollment. For example, if many users are quitting at the Terms of Use, you might investigate that area and make it more intuitive for users.
 
-## What is abandonment?
+## What is an incomplete enrollment?
 
-Abandonment is when a user does any of the following:
+An incomplete enrollment is when a user does any of the following:
 
 -	Explicitly chooses an action to halt enrollment
 -	Closes the Company Portal during enrollment
 -	Spends more than 30 minutes between enrollment sections
 
-If a user chooses to stop enrollment and restart multiple times, it shows up as multiple attempts and multiple abandonments. If a user waits for 30 minutes between different enrollment screens, it is considered multiple abandonments.
+If a user chooses to stop enrollment and restart multiple times, it shows up as multiple attempts and multiple incomplete enrollments. If a user waits for 30 minutes between different enrollment screens, it is considered multiple incomplete enrollments.
 
 ## What does the report show?
 
-The enrollment reports include data for iOS and Android devices.
+The reports include data for iOS and Android devices.
 
 The reports show data for the past two weeks, but you can filter the report to show any period up to 30 days in the past.
 
@@ -56,15 +56,15 @@ You can filter the date range, operating system, and enrollment section by choos
 
 ### Number and percentage tiles
 
-At the top of the report, you can see the number and percentage of abandoned reports in relation to all enrollments.
+At the top of the report, you can see the number and percentage of incomplete enrollments in relation to all enrollments.
 
 -	Initiated enrollments: The number of enrollments attempted.
--	Abandoned enrollments: The number of attempted enrollments that didn’t result in a fully enrolled and compliant device.
--	Abandonment rate: The percentage of enrollment attempts that were abandoned (Abandoned enrollments / Initiated enrollments).
+-	Incomplete enrollments: The number of attempted enrollments that didn’t result in a fully enrolled and compliant device.
+-	Incomplete rate: The percentage of enrollment attempts that were abandoned (Abandoned enrollments / Initiated enrollments).
 
 ### Line graph
 
-The line graph shows the daily abandonments for each of the four core enrollment sections:
+The line graph shows the daily incomplete enrollments for each of the four core enrollment sections:
 
 -	Setup checklist
 -	Platform screens
@@ -73,12 +73,12 @@ The line graph shows the daily abandonments for each of the four core enrollment
 
 ### User abandonment actions
 
-The following tables show the list of user actions that qualify as abandonment. To see examples of enrollment screens, you can watch the [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) and [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) enrollment videos. 
+The following tables show the list of user actions that qualify as prompting an incomplete enrollment. To see examples of enrollment screens, you can watch the [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) and [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment) enrollment videos. 
 
 
 #### Setup checklist section
 
-| Abandonment name | Screen or flow | Platform | Action |
+| Action name | Screen or flow | Platform | Action |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Prompt to open page in Company Portal | iOS/Android | **Cancel** |
 | EnrollmentWrapUp | Enrolling device screen until finish of **Loading company resources** | iOS/Android | Took > 30 minutes |
@@ -88,7 +88,7 @@ The following tables show the list of user actions that qualify as abandonment. 
 
 #### Platform screens section
 
-| Abandonment name | Screen or flow | Platform | Action |
+| Action name | Screen or flow | Platform | Action |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Prompt to show a configuration profile | iOS | **Ignore** |
 | iOSProfileLaunch | Installing profile screen | iOS | **Cancel** |
@@ -101,14 +101,14 @@ The following tables show the list of user actions that qualify as abandonment. 
 
 #### Terms of use section
 
-| Abandonment name | Screen or flow | Platform | Action |
+| Action name | Screen or flow | Platform | Action |
 | ---- |---- |---- |---- |
 | TermsofUse | Terms of use (if admin configured) | iOS/Android | **Decline All** |
 | TermsofUse | Terms of use until **Accept all** | iOS/Android | Took > 30 minutes |
 
 #### Compliance/Activation section
 
-| Abandonment name | Screen or flow | Platform | Action |
+| Action name | Screen or flow | Platform | Action |
 | ---- |---- |---- |---- |
 | Compliance | Device compliance (if admin configured) shows as non-green on access setup post enrollment| iOS/Android | **Postpone** |
 | Compliance | Device compliance shows as non-green until updated to show green | iOS/Android | Took > 30 minutes |
@@ -117,4 +117,4 @@ The following tables show the list of user actions that qualify as abandonment. 
 
 ## Next steps
 
-After checking on your abandonment rates, you can review the [enrollment options](enrollment-options.md) to see if you can make any changes to improve enrollment.
+After checking on your incomplete enrollment rates, you can review the [enrollment options](enrollment-options.md) to see if you can make any changes to improve enrollment.

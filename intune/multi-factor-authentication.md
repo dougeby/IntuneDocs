@@ -8,8 +8,8 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -55,11 +55,10 @@ To require MFA when a device is enrolled, follow these steps:
 >Do not configure **Device based access rules** for Microsoft Intune enrollment.
 
 1. Sign in to your [Microsoft Azure portal](https://portal.azure.com) with your credentials.
-2. In the portal, go to **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. In **Azure Active Directory** under Security, choose **[Conditional access](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. In the portal, go to **Intune** and choose **Conditional access**. The conditional access node accessed from *Intune* is the same node as accessed from *Azure AD*.
 4. Choose **New policy**.
 5. In **New** policy, type a descriptive name for the policy.
-6. In the **Assignments** section, choose **Users and groups**.
+6. In the **Assignments** section, choose **Users and groups**. 
 7. In **Users and groups**, choose **Select users or groups**, and check **Users and groups**. Then select the users and /or groups that will receive this policy, then choose **Done**.
 8. In the **Assignments** section, choose **Cloud apps**.
 9. On the **Include** tab of **Cloud apps**, choose **Select apps**, then choose **Select** > **Microsoft Intune Enrollment**, and then choose **Done**.

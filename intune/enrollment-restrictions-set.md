@@ -9,7 +9,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -133,6 +133,16 @@ You can change the settings for a device limit restriction by following these st
 During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+Device limit restrictions do not apply for the following Windows corporate enrollment types:
+
+- Co-managed enrollments
+- GPO enrollments
+- Azure Active Directory joined enrollments
+- Bulk Azure Active Directory joined enrollments
+- Autopilot enrollments
+
+You can set device limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 

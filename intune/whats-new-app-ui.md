@@ -8,8 +8,8 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/13/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -28,9 +28,19 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 # UI updates for Intune end-user apps
-Learn what updates have been made to the UI for apps that your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.
+Learn what updates have been made to the UI for apps that your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.  
+
+For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## Week of February 19, 2019  
+### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 WNready4Review -->  
+A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about getting apps in Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
+
+
+![Screenshot of Company Portal for Windows 10, App categories screen.](./media/1902_CP_app_categories.png)   
+
 
 ## Week of November 12, 2018
 

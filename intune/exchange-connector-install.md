@@ -7,8 +7,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -77,13 +77,11 @@ You must create an Active Directory user account that is used by the on-premises
 
 1. On a supported Windows Server operating system for the on-premises Exchange connector, open the [Azure portal](https://portal.azure.com) and sign in with a user account that is an administrator in the on-premises Exchange server, and that has a license to use Exchange Server.
 
-2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
+2. Go to **Intune** > **Exchange access**  
 
-3. Choose **Intune**, and when the Intune Dashboard opens, choose **On-premises access**.
+3. Under **Setup**, choose **Exchange ActiveSync on-premises connector**, and then select **Add**.
 
-4. Under **Setup**, choose **Exchange ActiveSync connectors**, and then choose **Download the on-premises connector**.
-
-5.  The on-premises Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
+4. On the **Add Connector** page, select **Download the on-premises connector**. The on-premises Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
 
 	> [!IMPORTANT]
 	> Do not rename or move the files that are in the on-premises Exchange connector folder. Moving or renaming the folder's contents will cause the Exchange connector installation to fail.
@@ -157,8 +155,8 @@ After the Exchange connector creates a connection to Exchange using the specifie
 
 After you have successfully configured Exchange connectors, you can view the status of the connections and the last successful synchronization attempt. To validate the Exchange connector connections:
 
-1. On the Intune Dashboard, choose **On-premises access**.
-2. Under **Setup**, select **Exchange ActiveSync connectors** to verify the connection status for each Exchange connector.
+1. On the Intune Dashboard, choose **Exchange access**.
+2. Under **Setup**, select **Exchange online connector** to verify the connection status for each Exchange connector.
 
 You can also check the time and date of the last successful synchronization attempt.
 
@@ -175,8 +173,8 @@ An on-premises Exchange connector automatically synchronizes EAS and Intune devi
 
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard with the following steps:
 
-   1. On the Intune dashboard, choose **On-premises access**.
-   2. Under **Setup**, choose **Exchange Active Sync Connectors**.
+   1. On the Intune dashboard, choose **Exchange access**.
+   2. Under **Setup**, choose **Exchange online connector**.
    3. Select the connector you want to sync, and then choose **Quick Sync** or **Full Sync**.
 
 ## Next steps

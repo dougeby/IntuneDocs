@@ -8,8 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -78,9 +78,13 @@ While Managed Browser or Microsoft Edge are not managed by Intune, they cannot a
 
 The Managed Browser is now an approved client app for Conditional Access. This means that you can restrict mobile browser access to Azure AD-connected web apps where users can only use the Managed Browser, blocking access from any other unprotected browsers such as Safari or Chrome. This protection can be applied to Azure resources like Exchange Online and SharePoint Online, the Office portal, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
-To restrict Azure AD-connected web apps to use the Intune Managed Browser on mobile platforms, you can create an Azure AD Conditional Access policy requiring approved client applications. 
+To restrict Azure AD-connected web apps to use the Intune Managed Browser on mobile platforms, you can create a Conditional Access policy requiring approved client applications. 
 
-1. In the Azure portal, select **Azure Active Directory** > **Enterprise applications** > **Conditional access** > **New policy**. 
+> [!TIP]  
+> Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
+
+
+1. In the Intune portal, select **Conditional access** > **New policy**. 
 2. Next, select **Grant** from the **Access controls** section of the blade. 
 3. Click **Require approved client app**. 
 4. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
@@ -271,9 +275,9 @@ Use the following information to learn about the allowed formats and wildcards t
 Both the Intune Managed Browser and Microsoft Edge are now considered policy managed browsers/protected browsers. Today, existing app protection policies result in web links from Intune managed apps to open in a specific browser depending on your scenario and platform. 
 
 On Android: 
-* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy managed browser required.  
-* Microsoft Edge if only Microsoft Edge is on the device and is targeted with policy.
-* Managed Browser if only Managed Browser is on the device and is targeted with policy. 
+* Managed Browser will open if a user has both Managed Browser and Microsoft Edge downloaded on their device. To ensure Microsoft Edge is being opened instead of Managed Browser, set the app config setting “com.microsoft.intune.useEdge” to “true” for all Intune managed apps with a policy managed browser required.  
+* Microsoft Edge will open if only Microsoft Edge is on the device and is targeted with policy.
+* Managed Browser will open if only Managed Browser is on the device and is targeted with policy. 
 
 On iOS, for apps that have integrated the Intune SDK for iOS v. 9.0.9+: 
 * Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy managed browser required **or** Microsoft Edge if Microsoft Edge is installed and has recieved policy. 
