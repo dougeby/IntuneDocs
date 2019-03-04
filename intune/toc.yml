@@ -12,6 +12,8 @@
     items:
     - name: What's new in the app UI
       href: whats-new-app-ui.md
+    - name: Features in development
+      href: in-development.md
 - name: Quickstarts
   items:
   - name: Try Intune for free
