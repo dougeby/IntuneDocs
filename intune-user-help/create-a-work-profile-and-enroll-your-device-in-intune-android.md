@@ -37,7 +37,7 @@ Your company support can manage only the work profile, which contains your work 
 
 To create a work profile:
 
-1.  On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account. If you haven't installed the free app yet, download and install it from [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account. If you haven't installed the free app yet, download and install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
 	![Android Company Portal app Welcome screen](./media/and-enroll-0-welcome-screen.png)
 
