@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -234,7 +234,7 @@ At this point you have completed steps to add a Win32 app to Intune. For informa
 
 ## Delivery Optimization
 
-Windows 10 RS3 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 1709 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and via Intune Device configuration. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## Install required and available apps on devices
 
