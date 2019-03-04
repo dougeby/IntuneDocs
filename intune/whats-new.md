@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,14 @@ Learn what’s new each week in Microsoft Intune. You can also find upcoming cha
 -->     
 
 <!-- ########################## -->
+
+## Week of March 4, 2019
+
+### App management
+
+#### User experience update for the Company Portal app for iOS <!-- 2536024 -->
+The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.
+
 ## Week of February 25, 2019
 
 ### Device configuration
