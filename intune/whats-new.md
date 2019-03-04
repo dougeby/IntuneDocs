@@ -757,6 +757,9 @@ The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.app
 #### Windows 10 app deployment using Intune <!-- 2309001 -->
 Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the cloud. This feature is currently in public preview and we expect to add significant new capabilities to the feature over the next few months. 
 
+#### App Protection Policy (APP) settings for web data <!-- 2662995 -->
+APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links. 
+
 #### End user device and app content menu <!-- 2771453 -->
 End users can now use the context menu on device and apps to trigger common actions like renaming a device or checking compliance. 
 
@@ -877,7 +880,8 @@ https://aka.ms/Delay_visibility_setting_iOS
 ###  Upcoming change to the Intune Data Warehouse API
 We will be making two changes during the 1903 timeframe:
 - Beta Filter Deprecation<br>
-    Deprecation of unsupported beta filters instantiated.   
+    Deprecation of unsupported beta filters instantiated.  
+
 - 1.0 changes reflecting back to beta<br>
     Changes made to our v1.0 collections will now be reflected in beta.  
 
