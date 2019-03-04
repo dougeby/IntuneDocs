@@ -38,7 +38,7 @@ If your end users upgrade their devices to iOS 12.2 and above, know that there's
 
 Click Additional Information for detailed information on the enrollment flow.
 
-Devices that are already enrolled and upgrade to iOS 12.2 and above shouldn't be affected unless they're unenrolled and need a fresh enrollment. Enrollment experience on devices running iOS 12.1 or prior won't change with this new release by Apple. Devices enrolled through one or Apple’s corporate enrollment methods (Device Enrollment Program, Apple School Manager or Apple Business Manager) won't be affected.
+Unless they're unenrolled and need a fresh enrollment, devices that are already enrolled and upgrade to iOS 12.2 and above shouldn't be affected. Enrollment experience on devices running iOS 12.1 or earlier won't change with this new release by Apple. Devices enrolled through one or Apple’s corporate enrollment methods (Device Enrollment Program, Apple School Manager or Apple Business Manager) won't be affected.
 
 #### What can I do to prepare for this change?
 You should plan to upgrade your documentation and your end user guidance. You may also want to let your helpdesk know of these changes. We’ll keep you informed through our What’s New page when this change goes live. 
@@ -55,21 +55,21 @@ Apple has announced some changes related to iOS devices enrolling into Mobile De
 
 #### How does this affect me?
 If your end users upgrade their devices to this new version of iOS 12 in the spring, know that there's a modified workflow and they'll need to take additional steps to complete enrollment into Intune. When Apple introduces these changes, end users will have to:
-•            Begin the enrollment process in the Company Portal app to download a management profile
-•            Go to Settings > General > Profiles
-•            Select the correct profile and click through to Install
-•            Return to the Company Portal to complete enrollment 
 
-Devices that are already enrolled and upgrade to the new iOS release shouldn't be affected unless they're unenrolled and need a fresh enrollment.
-Enrollment experience on devices running iOS 12.1 or prior won't change with this new release by Apple.
+- Begin the enrollment process in the Company Portal app to download a management profile
+- Go to Settings > General > Profiles
+- Select the correct profile and click through to Install
+- Return to the Company Portal to complete enrollment 
+
+Unless they're unenrolled and need a fresh enrollment, devices that are already enrolled and upgrade to the new iOS release shouldn't be affected.
+
+Enrollment experience on devices running iOS 12.1 or earlier won't change with this new release by Apple.
 
 #### What can I do to prepare for this change?
 You should plan to upgrade your documentation and your end user guidance. You may also want to let your helpdesk know of these changes. We’ll keep you informed through the Message Center and our What’s New page when this change goes live.
 
-Click Additional Information for a support blog post with screenshots and a video of the expected enrollment flow.
-
 #### Additional Information
-https://aka.ms/iOS_enrollment_changes
+[Support blog post with screenshots and video of the expected enrollment flow](https://aka.ms/iOS_enrollment_changes).
 
 ### Plan for Change: User experience update to Intune Company Portal app for iOS
 We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
@@ -77,10 +77,11 @@ We’re excited to share that Intune will soon be releasing a major user experie
 #### How does this affect me?
 This user experience update, while maintaining current iOS Company Portal functionality, will feature:
 - A home page with native iOS look and feel 
-- Filtering capabilities on content listings and search including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
+- Filtering capabilities on content lists and search, including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
 - Ability to search ebooks
 - Search history for apps and ebooks
-If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You will also have the opportunity to provide feedback directly to the Intune team.  
+
+If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You'll can also provide feedback directly to the Intune team.  
 
 #### What can I do to prepare for this change?
 You don't need to take any action; these changes will be released in an upcoming iOS CP app release. 
@@ -90,11 +91,11 @@ You don't need to take any action; these changes will be released in an upcoming
 
 
 ### Reminder: Removal of existing Exchange Online to Intune connectors <!-- 3105122 -->
-We shared in MC165575 that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. With the February update to the Intune service, we’ll disable the button to set up new connectors. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
+In MC165575, we shared that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. With the February update to the Intune service, we’ll disable the button to set up new connectors. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
  
 #### How does this affect me?
 You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. 
-The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and doesn't support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it's not needed for CA. You may have been using this connector to understand the usage of Exchange Online prior to applying Conditional Access. This information is already provided by the Microsoft 365 Admin Center. Here, you’ll find provides usage reports for Exchange Online including the app type being used for between 7 and 180 days. For more information see [Office 365 Reports in the Admin Center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
+The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and doesn't support on-premises infrastructure. This connector, because of the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it's not needed for CA. You may have been using this connector to understand the usage of Exchange Online before applying Conditional Access. This information is already provided by the Microsoft 365 Admin Center. Here, you’ll find provides usage reports for Exchange Online including the app type being used for between 7 and 180 days. For more information see [Office 365 Reports in the Admin Center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
  
 If you use this connector in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in February. There's no anticipated impact to your end users during this change.
  
