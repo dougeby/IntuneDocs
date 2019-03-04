@@ -10,6 +10,7 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 

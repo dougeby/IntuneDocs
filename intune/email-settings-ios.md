@@ -11,6 +11,7 @@ ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata

@@ -12,6 +12,7 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 
