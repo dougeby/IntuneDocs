@@ -16,7 +16,7 @@ ms.technology:
 
 # optional metadata
 
-#ROBOTS: NOINDEX
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.suite: ems
