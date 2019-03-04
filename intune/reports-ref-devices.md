@@ -8,7 +8,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,6 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # Reference for devices entities
@@ -216,7 +217,10 @@ The **EnrollmentTypes** entity indicates whether a device is corporate, personal
 |---------|------------|--------|
 | ownerTypeID |Unique identifier of the owner type. | |
 | ownerTypeKey |Unique identifier of the owner type in the data warehouse - surrogate key. | |
-| ownerTypeName |Represents the owner type of the devices:  <br>Company - device is enterprise owned. <br>Personal - device is personally owned (BYOD).  <br>Unknown - no information on this device. |Company Personal Unknown |
+| ownerTypeName |Represents the owner type of the devices:  <br>Corporate - device is enterprise owned. <br>Personal - device is personally owned (BYOD).  <br>Unknown - no information on this device. |Corporate Personal Unknown |
+
+> [!Note]  
+> For the `ownerTypeName` in AzureAD when creating Dynamic Groups for devices, you need to set the filter value `deviceOwnership` as `Company`. For more information, see [Rules for devices](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## MdmStatuses
 

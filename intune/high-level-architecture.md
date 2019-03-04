@@ -8,7 +8,7 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 03/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -24,7 +24,7 @@ ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
 # High-level architecture for Microsoft Intune

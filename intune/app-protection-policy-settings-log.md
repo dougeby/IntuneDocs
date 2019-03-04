@@ -3,13 +3,13 @@
 
 title: Review app protection policy logs | Microsoft Intune
 titlesuffix: Microsoft Intune
-description: Learn about the settings you can review in the app protection logs.
+description: This topic describes how to configure Intune app protection policy (APP) logs.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Review client app protection logs

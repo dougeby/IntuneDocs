@@ -11,7 +11,7 @@ manager: dougeby
 ms.date: 10/31/2017
 ms.prod:
 ms.service: microsoft-intune
-ms.topic: article
+ms.topic: conceptual
 ms.technology:
 ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 --- 
 # Protect Office 365 Exchange Online without requiring device management
 

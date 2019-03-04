@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 ms.date: 07/13/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,7 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
-
+ms.collection: M365-identity-device-management
 ---
 
 # Install the Intune software client on Windows PCs

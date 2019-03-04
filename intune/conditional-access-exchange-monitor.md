@@ -8,7 +8,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -24,12 +24,12 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Monitor conditional access compliance for on-premises Exchange and Exchange Online in Intune
 
-Beginning with Intune 1704 release, admins can see reporting information related to Exchange ActiveSync device records that are synchronized with Intune through either the on-premises Exchange Connector or the Intune service-to-service connector (Exchange Online connector). The conditional access compliance reporting provides a summary of devices with different synchronization states:
+Beginning with Intune 1704 release, admins can see reporting information related to Exchange ActiveSync device records that are synchronized with Intune through either the on-premises Exchange Connector or the Intune service-to-service connector (Exchange Online connector). The conditional access compliance reporting provides a summary of devices with different synchronization states:
 
 -   **Allow**
 
@@ -41,11 +41,11 @@ Beginning with Intune 1704 release, admins can see reporting information relate
 
 1.  Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
 
-2.  After you've successfully signed in, you see the **Azure Dashboard**.
+2.  After you've successfully signed in, you see the **Azure Dashboard**.
 
-3.  Choose **All services** from the left menu, then type **Intune** in the text box filter.
+3.  Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-4.  Choose **Intune**, you see the **Intune Dashboard**.
+4.  Choose **Intune**, you see the **Intune Dashboard**.
 
 5.  Choose **Conditional access**, then choose **Overview**.
 
@@ -55,7 +55,7 @@ Beginning with Intune 1704 release, admins can see reporting information relate
 
 Once you choose one of three areas, you can see more details about devices being allowed, blocked, or quarantined.
 
-You can also drill down in specific devices to see more details. For example, the device chosen on the following image is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report pane.
+You can also drill down in specific devices to see more details. For example, the device chosen on the following image is blocked. Intune gives you the option of removing corporate data from the conditional access compliance report pane.
 
 ![Image of Conditional access device detail reporting](./media/CA-reporting-intune-3.png)
 

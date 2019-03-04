@@ -9,7 +9,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,6 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll Android devices
@@ -34,10 +35,10 @@ ms.custom: seodec18
 
 As an Intune administrator, you can manage the following Android devices:
 - Android devices, including Samsung Knox Standard devices.
-- Android enterprise devices, including:
-    - **Android work profile devices**: Personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
-    - **Android dedicated devices**: Corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
-    - **Android fully managed devices**: Corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
+- Android Enterprise devices, including:
+    - **Android Enterprise work profile devices**: Personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
+    - **Android Enterprise dedicated devices**: Corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
+    - **Android Enterprise fully managed devices**: Corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
 
 ## Prerequisite
 
@@ -56,13 +57,13 @@ For information about other user tasks, see these articles:
 
 To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
-## Set up Android enterprise enrollment
+## Set up Android Enterprise enrollment
 
-Android enterprise is a set of Android device features and services that separate personal apps and data from a work profile containing work apps and data. Android enterprise devices include work profile devices, fully managed devices, and dedicated devices. 
+Android Enterprise offers a set of enrollment options that provide users with the most up-to-date and secure features. Android Enterprise enrollment options include work profile, fully managed and dedicated devices.
 
-- [Set up Android work profile enrollments](android-work-profile-enroll.md)
-- [Set up Android dedicated device enrollments](android-kiosk-enroll.md)
-- [Set up Android fully managed enrollments](android-fully-managed-enroll.md)
+- [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
+- [Set up Android Enterprise dedicated device enrollments](android-kiosk-enroll.md)
+- [Set up Android Enterprise fully managed enrollments](android-fully-managed-enroll.md)
 
 ## End user experience when enrolling a Samsung Knox device
 
@@ -80,6 +81,6 @@ There are several considerations when enrolling Samsung Knox devices:
 
 ## Next steps
 
-- [Set up Android work profile enrollments](android-work-profile-enroll.md)
-- [Set up Android dedicated device enrollments](android-kiosk-enroll.md)
-- [Set up Android fully managed enrollments](android-fully-managed-enroll.md)
+- [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
+- [Set up Android Enterprise dedicated device enrollments](android-kiosk-enroll.md)
+- [Set up Android Enterprise fully managed enrollments](android-fully-managed-enroll.md)

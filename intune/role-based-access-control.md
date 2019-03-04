@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Role-based administration control (RBAC) with Microsoft Intune
@@ -33,7 +33,8 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 - **Role definition**: The name of a role, the resources it manages, and the permissions granted for each resource.
 - **Members**: The user groups that are granted the permissions.
-- **Scope**: The user or device groups that the members can manage.
+- **Scope (Groups)**: The user or device groups that the members can manage.
+- **[Scope (Tags)](https://docs.microsoft.com/intune/scope-tags)**: Tags where the role assignment applies.
 - **Assignment**: When the definition, members, and scope have been configured, the role is assigned.
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
@@ -86,20 +87,22 @@ You can assign built-in roles to groups without further configuration. You can't
 
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Roles** > **All roles**.
-4. On the **Intune roles - All roles** pane, choose the built-in role you want to assign.
+3. On the **Intune** blade, choose **Roles** > **All roles**.
+4. On the **Intune roles - All roles** blade, choose the built-in role you want to assign.
 
-5. On the <*role name*> - **Overview** pane, choose **Manage**, then **Assignments**.
+5. On the <*role name*> - **Overview** blade, choose **Manage** > **Assignments**.
 
-6. On the custom role pane, choose **Assign**.
+6. On the custom role blade, choose **Assign**.
 
-7. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment.
+7. On the **Role Assignments** blade, enter an **Assignment name** and optional **Assignment description** for the assignment.
 
-8. For **Members**, choose a group that contains the user you want to give the permissions to.
+8. For **Members (Groups)**, choose a group that contains the user you want to give the permissions to.
 
-9. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
-<br></br>
-10. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
+9. For **Scope (Groups)**, choose a group containing the users who the member above will be allowed to manage.
+
+10. For **Scope (Tags)**, choose tags where this role assigment will be applied.
+
+11. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 
 ### Intune RBAC table
 
@@ -120,31 +123,21 @@ You can create a custom role that includes any permissions required for a specif
 
 2. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-3. Choose **Intune** > **Roles** > **All roles** > **Add custom**.
+3. Choose **Intune** > **Roles** > **All roles** > **Add**.
 
-4. On the **Add Custom Role** pane, enter a name and description for the new role, then click **Permissions**.
+4. On the **Add Custom Role** blade, enter a name and description for the new role, then click **Permissions**.
 
-5. On the **Permissions** pane, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
+5. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
-6. When you're done, choose **OK**.
+6. On the **Scope (Tags)** blade, choose tags where this custom role will be applied.
 
-7. On the **Add Custom Role** pane, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** pane.
+7. When you're done, choose **OK**.
+
+7. On the **Add Custom Role** blade, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** blade.
 
 ### To assign a custom role
 
-1. On the **Intune roles - All roles** pane, choose the custom role you want to assign.
-
-2. On the <*role name*> - **Overview** pane, choose **Manage**, then **Assignments**. On this pane, you can also edit or delete existing roles.
-
-3. On the custom role pane, choose **Assign**.
-
-4. On the **Role Assignments** pane, enter a **Name** and optional **Description** for the assignment.
-
-5. For **Members**, choose a group that contains the user you want to give the permissions to.
-
-6. For **Scope**, choose a group containing the users who the member above will be allowed to manage.
-
-7. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
+Follow the same steps as [To assign a built-in role](https://docs.microsoft.com/intune/role-based-access-control#to-assign-a-built-in-role) and select the custom role.
 
 ## Next steps
 

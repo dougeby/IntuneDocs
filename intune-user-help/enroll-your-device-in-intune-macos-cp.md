@@ -25,7 +25,7 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll your macOS device in Intune with the Company Portal app
@@ -97,4 +97,11 @@ The management profile is what defines the MDM channel connection. As long as th
 
 Also, because those other profiles don’t require individual verifications, they're more quickly generated and delivered to devices. 
 
-Still need help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## Updating the Company Portal app
+
+Updating the Company Portal app is done the same way as any other Office app, through Microsoft AutoUpdate for Mac. Find out more about [updating Microsoft apps for macOS here](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## Next Steps  
+Need additional help? Check in with your company support. You can find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

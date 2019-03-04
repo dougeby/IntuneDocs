@@ -1,15 +1,45 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
+			"redirect_url": "/intune/device-profile-troubleshoot",
+			"redirect_document_id": false
+		},			
+		{
+			"source_path": "intune/device-compliance-monitor.md",
+			"redirect_url": "/intune/compliance-policy-monitor",
+			"redirect_document_id": false
+		},	
+		{
+
+			"source_path": "intune-user-help/power-saving-mode-android.md",
+			"redirect_url": "https://go.microsoft.com/fwlink/?linkid=2077422&clcid=0x409",
+			"redirect_document_id": false
+			
+		},
+		{
+
+			"source_path": "intune-user-help/using-your-macos-device-with-intune.md",
+			"redirect_url": "/intune-user-help/enroll-your-device-in-intune-macos-cp",
+			"redirect_document_id": false
+			
+		},
+		{
 			"source_path": "intune/get-started-apps.md",
 			"redirect_url": "/intune/apps-add",
 			"redirect_document_id": true
+
 		},
+		{
+			"source_path": "intune/get-started-azure.md",
+			"redirect_url": "/intune/tutorial-walkthrough-intune-portal",
+			"redirect_document_id": true
+		},		
 		{
 			"source_path": "intune/airplay-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings",
 			"redirect_document_id": false
-		},		
+		},				
 		{
 			"source_path": "intune/web-content-filter-settings-ios.md",
 			"redirect_url": "/intune/ios-device-features-settings#web-content-filter-settings",
@@ -42,7 +72,7 @@
 		},		
 		{
 			"source_path": "intune/android-enterprise-settings.md",
-			"redirect_url": "/intune/device-restrictions-android-for-work#kiosk-settings",
+			"redirect_url": "/intune/device-restrictions-android-for-work#dedicated-device-settings",
 			"redirect_document_id": false
 		},
 		{
@@ -1740,7 +1770,7 @@
 		{
 			"source_path": "intune/configure-devices/troubleshoot-device-profiles.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/vpn-for-android.md",
@@ -2159,8 +2189,8 @@
 		},
 		{
 			"source_path": "intune/set-device-compliance/monitor-device-compliance.md",
-			"redirect_url": "/intune/device-compliance-monitor",
-			"redirect_document_id": true
+			"redirect_url": "/intune/compliance-policy-monitor",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/set-device-compliance/monitor-intune-device-compliance-policies.md",
@@ -2999,7 +3029,7 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false
 		},
 		{
@@ -3009,7 +3039,7 @@
 		},		
 		{
 			"source_path": "intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": true
 		},		
 		{
@@ -5020,7 +5050,7 @@
 			"redirect_url": "/intune/apple-configurator-enroll-ios",
 			"redirect_document_id": false
 		},
-    {
+    	{
 			"source_path": "intune-user-help/index.md",
 			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
 			"redirect_document_id": false
@@ -5064,7 +5094,11 @@
 			"source_path": "intune/quickstart-create-policy.md",
 			"redirect_url": "/intune/quickstart-set-password-length-android",
 			"redirect_document_id": false
-		}		
-	   
+		},
+		{
+			"source_path": "intune/known-issues.md",
+			"redirect_url": "https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess",
+			"redirect_document_id": false	 
+		}			
 	]
 }

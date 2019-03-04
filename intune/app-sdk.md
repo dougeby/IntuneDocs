@@ -6,8 +6,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -17,13 +17,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune App SDK overview
-The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection policies. It strives to minimize the amount of code changes required from the app developer. You'll find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize the APIs to customize your app behavior for features that require your app participation.
+The Intune App SDK, available for both iOS and Android, enables your app to support Intune [app protection policies](app-protection-policy.md). When your app has app protection policies applied to it, it can be managed by Intune and is recognized by Intune as a managed app. The SDK strives to minimize the amount of code changes required from the app developer. You'll find that you can enable most of the SDK's features without changing your app’s behavior. For enhanced end-user and IT administrator experience, you can utilize the SDK's APIs to customize your app behavior to support features that require your app participation.
 
-Once you have enabled your app for app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.
+Once you have enabled your app to support Intune app protection policies, IT administrators can deploy these policies to protect their corporate data within the app.
 
 ## App protection features
 
@@ -47,13 +47,13 @@ IT administrators can force web links in the app to be opened with the [Intune M
 ### Enforce a PIN policy
 IT administrators can require the end-user to enter a PIN before accessing corporate data in the app. This ensures that the person using the app is the same person who initially signed in with their work or school account. When end users configure their PIN, the Intune App SDK uses Azure Active Directory to verify the credentials of end-users against the enrolled Intune account.
 
-### Require users to sign in with work or school account for app access
+### Require users to sign in with a work or school account for app access
 IT administrators can require users to sign in with their work or school account to access the app. The Intune App SDK uses Azure Active Directory to provide a single sign-on experience, where the credentials, once entered, are reused for subsequent logins. We also support authentication of identity management solutions federated with Azure Active Directory.
 
 ### Check device health and compliance
 IT administrators can a check the health of the device and its compliance with Intune policies before end-users access the app. On iOS, this policy checks if the device has been jailbroken. On Android, this policy checks if the device has been rooted.
 
-### Multi-identity support
+### Support multi-identity
 Multi-identity support is a feature of the SDK that enables coexistence of policy-managed (corporate) and unmanaged (personal) accounts in a single app.
 
 For example, many users configure both corporate and personal email accounts in the Office mobile apps for iOS and Android. When a user accesses data with their corporate account, the IT administrator must be confident that app protection policy will be applied. However, when a user is accessing a personal email account, that data should be outside of the IT administrator's control. The Intune App SDK achieves this by targeting the app protection policy to **only** the corporate identity in the app.
@@ -76,4 +76,4 @@ To learn more about Citrix MDX, see [About the MDX Toolkit](https://docs.citrix.
 
 ## Next steps
 
-- Learn about [app protection policies](app-protection-policy.md).
+- [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md).

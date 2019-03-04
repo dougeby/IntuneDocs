@@ -8,8 +8,8 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/26/2019
+ms.topic: overview
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
+ms.collection: M365-identity-device-management
 ---
 
 # What can Intune do for my company?

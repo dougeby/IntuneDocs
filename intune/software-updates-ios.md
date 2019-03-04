@@ -7,8 +7,8 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
-ms.topic: article
+ms.date: 02/06/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,31 +23,56 @@ ms.technology:
 search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
-
+ms.collection: M365-identity-device-management
 ---
 
-# Configure iOS update policies in Intune
+# Add iOS software update policies in Intune
 
-Software update policies let you force supervised iOS devices to automatically install the latest available OS update. This feature is available only for supervised devices. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
+Software update policies let you force supervised iOS devices to automatically install the latest available OS update. When configuring a policy, you can add the days and times when you don't want devices to install an update. 
+
+This feature applies to:
+
+- iOS 10.3 and later (supervised)
 
 The device checks in with Intune about every 8 hours. If an update is available, and it's not during a restricted time, then the device downloads and installs the latest OS update. There isn't any user interaction needed to update the device. The policy doesn't prevent a user from updating the OS manually.
 
-This feature supports devices that run iOS 10.3 and later versions. The delay setting is available in iOS 11.3 and later versions.
-
 ## Configure the policy
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-3. Select **Software updates** > **Update policies for iOS** > **Create**.
-4. Enter a name and description for the policy.
-5. Select **Settings**. 
 
-    Enter the details for when iOS devices aren't forced to install the latest updates. These settings create a restricted timeframe. You can configure the **Days** of the week, the **Time zone**, the **Start time**, the **End time**, and whether to **Delay visibility of software update (days)** to enter users. You can select a delay range of software updates from 1 to 90 days. When the delay expires, users get a notification to update to the earliest version of OS that was available when the delay was triggered. To opt-out of setting a software update delay, enter 0. These update settings will apply only to supervised iOS devices.
-    
-    For example, if iOS 12.a is available on **January 1** and you have **Delay OS Updates** set to **5 days**, that particular version will not appear as an available update on any end user devices assigned to that profile. On the **sixth day** following release, that update will appear as available and all end users are free to initiate an update.
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+2. Select **Software updates** > **Update policies for iOS** > **Create**.
+3. Enter the following settings:
 
-6. Select **OK** to save your changes. Select **Create** to create the policy.
+    - **Name**: Enter a name for your software updates policy. For example, enter `iOS restricted update times`.
+    - **Description**: Enter a description for your policy. This setting is optional, but recommended.
 
-The profile is created and shown in the policy list. Apple MDM doesn't allow you to force a device to install updates by a certain time or date. 
+4. Select **Settings > Configure**. Enter the following settings:
+
+    - **Select times to prevent update installations**: Enter a restricted time frame when updates aren't forcibly installed. When setting the restricted timeframe, enter the following details:
+
+      - **Days**: Choose the day(s) of week when updates aren't installed. For example, check Monday, Wednesday, and Friday to prevent updates from being installed on these days.
+      - **Time zone**: Choose a time zone.
+      - **Start time**: Choose the start time of the restricted time frame. For example, enter 5 AM so updates aren't installed starting at 5 AM.
+      - **End time**: Choose the end time of the restricted time frame. For example, enter 1 AM so updates can be installed starting at 1 AM.
+
+    - **Delay visibility of software updates to end users with no change to scheduled updates (days)**: 
+
+      **This setting moved to [Device Restrictions](device-restrictions-ios.md#general). It will be removed from this location in the portal**. For a short time, existing policies can be changed here. After about a month, this setting will be removed from existing policies.
+
+      To limit impact, we recommend:
+        - Remove the existing policy from this location in the portal.
+        - Create a new [device restriction policy](device-restrictions-ios.md#general).
+        - Target the same users as the original policy.
+
+      If there's a conflict, this setting does nothing *unless* the two values are identical. To prevent a conflict, be sure to change or remove the existing policy from this location in the portal.
+
+5. Select **OK** > **Create** to save your changes, and create the policy.
+
+The profile is created and shown in the policy list.
+
+For guidance from the Intune support team, see [Delay visibility of software updates in Intune for supervised devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
+
+> [!NOTE]
+> Apple MDM doesn't allow you to force a device to install updates by a certain time or date.
 
 ## Change the restricted times for the policy
 
@@ -77,3 +102,6 @@ The devices used by the users targeted by the policy are evaluated for update co
 <!-- 1352223 -->
 **Software updates** > **Installation failures for iOS devices** shows a list of supervised iOS devices targeted by an update policy, attempted an update, and couldn't be updated. For each device, you can view the status on why the device hasn't been automatically updated. Healthy, up-to-date devices aren't shown in the list. "Up-to-date" devices include the latest update that the device itself supports.
 
+## Next steps
+
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

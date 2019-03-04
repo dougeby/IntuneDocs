@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -25,21 +25,23 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
-# Apply features settings on your devices using device profiles in Microsoft Intune
+# Apply features and settings on your devices using device profiles in Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune includes settings and features you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices, different platforms, including iOS, Android, and Windows, and then use Intune to apply the profile to devices in your organization.
 
-Some profile examples include:
+As part of your mobile device management (MDM) solution, use these configuration profiles to complete different tasks. Some profile examples include:
 
 - On Windows 10 devices, use a profile template that blocks ActiveX controls in Internet Explorer.
 - On iOS and macOS devices, allow users to use AirPrint printers in your organization.
 - Allow or prevent access to bluetooth on the device.
 - Create a WiFi or VPN profile that gives different devices access to your corporate network.
 - Manage software updates, including when they are installed.
-- Run an Android device a dedicated kiosk device that can run one app, or run many apps.
+- Run an Android device as dedicated kiosk device that can run one app, or run many apps.
 
 This article lists the steps to create a profile, and gives an overview of the different types of profiles you can create. Use these profiles to allow or prevent some features on the devices.
 
@@ -98,6 +100,32 @@ This article lists the steps to create a profile, and gives an overview of the d
 
 5. When finished, select **OK** > **Create** to save your changes.
 
+#### Refresh cycle times
+
+Intune uses the following refresh cycles to check for updates to configuration profiles:
+
+| Platform | Refresh cycle|
+| --- | --- |
+| iOS | Every 6 hours |
+| macOS | Every 6 hours |
+| Android | Every 8 hours |
+| Windows 10 PCs enrolled as devices | Every 8 hours |
+| Windows Phone | Every 8 hours |
+| Windows 8.1 | Every 8 hours |
+
+If the device recently enrolled, the check-in runs more frequently:
+
+| Platform | Frequency |
+| --- | --- |
+| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
+| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
+| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
+
+At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
+
+### 
 To learn more about the different profile types, read through the next sections in this article.
 
 ## Administrative templates (Preview)
@@ -169,7 +197,7 @@ This feature supports:
 
 - Windows 10 and later
 
-Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## Email
 
@@ -260,7 +288,7 @@ This feature supports:
 
 ## Shared multi-user device
 
-[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a policy that deletes inactive credentials from Windows HoloLens devices to save space.
+[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a profile that deletes inactive credentials from Windows HoloLens devices to save space.
 
 These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
 
@@ -285,5 +313,5 @@ This feature supports:
 [Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
 
 ## Next steps
-Choose your platform, and get started:
 
+Choose your platform, and get started.

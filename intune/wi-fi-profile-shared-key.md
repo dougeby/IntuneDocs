@@ -8,7 +8,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,7 +25,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
-
+ms.collection: M365-identity-device-management
 ---
 # Use a custom device profile to create a WiFi profile with a pre-shared key - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

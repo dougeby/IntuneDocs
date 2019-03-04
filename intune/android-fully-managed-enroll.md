@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Setup Intune enrollment for Android fully managed devices
+title: Setup Intune enrollment for Android Enterprise fully managed devices
 titlesuffix: "Microsoft Intune"
-description: Learn how to enroll Android fully managed devices in Intune.
+description: Learn how to enroll Android Enterprise fully managed devices in Intune.
 keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -26,34 +26,35 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
-# Set up Intune enrollment of Android fully managed devices (Preview)
+# Set up Intune enrollment of Android Enterprise fully managed devices (Preview)
 
-Android fully managed devices are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles, such as:
-- allow app installation only from managed Google Play
+Android Enterprise fully managed devices are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles, such as:
+- allow app installation only from Managed Google Play
 - block uninstallation of managed apps
 - prevent users from factory resetting devices, and so on.
 
-Intune helps you deploy apps and settings to Android enterprise devices, including Android fully managed devices. For specific details about Android enterprise, see [Android enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune helps you deploy apps and settings to Android Enterprise devices, including Android Enterprise fully managed devices. For specific details about Android Enterprise, see [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## Technical requirements
 
-You must have an Intune standalone tenant to manage Android fully managed devices. Fully managed devcie management isn't available in either hybrid (SCCM-connected) mode or in the legacy Silverlight management console.
+You must have an Intune standalone tenant to manage Android Enterprise fully managed devices. Fully managed device management isn't available in either hybrid (SCCM-connected) mode or in the legacy Silverlight management console.
 
-Devices must meet these requirements to be managed as an Android fully managed device:
+Devices must meet these requirements to be managed as an Android Enterprise fully managed device:
 
 - Android OS version 5.1 and above.
 - Devices must run a build of Android that has Google Mobile Services (GMS) connectivity. Devices must have GMS available and must be able to connect to GMS.
 
 There is no restriction on device manufacturer/OEM if the above requirements are met.
 
-## Set up Android fully managed device management
+## Set up Android Enterprise fully managed device management
 
-To set up Android fully managed device management, follow these steps:
+To set up Android Enterprise fully managed device management, follow these steps:
 
 1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](mdm-authority-set.md). You set this item only once, when you're first setting up Intune for mobile device management.
-2. [Connect your Intune tenant account to your Android enterprise account](connect-intune-android-enterprise.md).
+2. [Connect your Intune tenant account to your Android Enterprise account](connect-intune-android-enterprise.md).
 3. [Enable corporate-owned user devices](#enable-corporate-owned-user-devices)
 4. [Enroll the fully managed devices](#enroll-the-fully-managed-devices).
 
@@ -68,9 +69,9 @@ When this setting is set to **Yes**, it provides you with an enrollment token (a
 You can now [enroll your fully managed devices](android-dedicated-devices-fully-managed-enroll.md).
 
 ## Considerations for this preview feature
-This public preview includes a core set of features for the Android fully managed solution set. We want to hear about your experience using the preview features using any of your current communication channels to the team (like [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
+This public preview includes a core set of features for the Android Enterprise fully managed solution set. We want to hear about your experience using the preview features using any of your current communication channels to the team (like [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
 
-This preview supports the following features for Android fully managed devices:
+This preview supports the following features for Android Enterprise fully managed devices:
 - Device enrollment using NFC, token entry, QR code and Zero Touch
 - Device configuration for user groups
 - App distribution and configuration for user groups
@@ -78,15 +79,15 @@ This preview supports the following features for Android fully managed devices:
 
 When using these preview features, keep the following in mind:
 - Features in preview aren't recommended for mission-critical or production deployments. 
-- Preview features are implemented to Microsoft Intune production standards. However, not all Intune features are available for use with Android fully managed user devices. Preview features are clearly labeled with “(preview)” in the Intune console. 
+- Preview features are implemented to Microsoft Intune production standards. However, not all Intune features are available for use with Android Enterprise fully managed user devices. Preview features are clearly labeled with “(preview)” in the Intune console. 
 - The preview features are fully supported through the usual Intune support channels.
-- Enrolling Android fully managed devices using Samsung Knox Mobile Enrollment isn't supported in preview. 
-- Use of the Intune Company Portal app isn't supported on Android fully managed devices. 
+- Enrolling Android Enterprise fully managed devices using Samsung Knox Mobile Enrollment isn't supported in preview. 
+- Use of the Intune Company Portal app isn't supported on Android Enterprise fully managed devices. 
 - Intune features like Conditional Access, app protection policies, and certificate deployment aren't supported in preview. 
 - Device group targeting of any profile or app isn't supported in preview. Only user group targeting is supported. 
 - There is no first-class UI for configuring email, WiFi, or VPN. Use app configuration policies to configure supported app configuration settings.
 
 ## Next steps
-- [Add Android fully managed device configuration policies](device-restrictions-android-for-work.md#device-owner-only)
-- [Configure app configuration policies for Android fully managed devices](app-configuration-policies-use-android.md)
+- [Add Android Enterprise fully managed device configuration policies](device-restrictions-android-for-work.md#device-owner-only)
+- [Configure app configuration policies for Android Enterprise fully managed devices](app-configuration-policies-use-android.md)
 

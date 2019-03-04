@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 02/25/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -23,6 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 # Intune Data Warehouse API endpoint
 
@@ -57,11 +58,13 @@ The URL contains the following elements:
 
 ## API version information
 
-The current version of the API is: `beta`. 
+You can now use the v1.0 version of the Intune Data Warehouse by setting the query parameter `api-version=v1.0`. Updates to collections in the Data Warehouse are additive in nature and do not break existing scenarios.
+
+You can try out the latest functionality of the Data Warehouse by using the beta version. To use the beta version, your URL must contain the query parameter `api-version=beta`. The beta version offers features before they are made generally available as a supported service. As Intune adds new features, the beta version may change behavior and data contracts. Any custom code or reporting tools dependent on the beta version may break with ongoing updates.
 
 ## OData query options
 
-The current version supports the following OData query parameters: `$filter, $orderby, $select, $skip,` and `$top`.
+The current version supports the following OData query parameters: `$filter`, `$select`, `$skip,` and `$top`. In `$filter`, only `DateKey` or `RowLastModifiedDateTimeUTC` may be supported when the columns are applicable, and other properties would trigger a bad request.
 
 ## DateKey Range Filters
 
@@ -73,15 +76,12 @@ The current version supports the following OData query parameters: `$filter, $or
 ## Filter examples
 
 > [!NOTE]
-> The filter examples assume today is 2/21/2018.
+> The filter examples assume today is 2/21/2019.
 
 |                             Filter                             |           Performance Optimization           |                                          Description                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    Full                                      |    Return data with `DateKey` between 20180214 and 20180221.                                     |
 |    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Return data with `DateKey` equal to 20180214.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Return data with `DateKey` between 20180214 and 20180220.                                     |
-|    `maxhistorydays=7&$filter=Id gt 1`                            |    Partial, Id gt 1 will not be optimized    |    Return data with `DateKey` between 20180214 and 20180221, and Id greater than 1.             |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Return data with `DateKey` equal to 20180214. `maxhistorydays` is ignored.                            |
-|    `$filter=DateKey eq 20180214 and Id gt 1`                     |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost.                              |
-|    `$filter=DateKey ne 20180214`                                 |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost.                              |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    None                                      |    Not treated as `DateKey` range filter, thus no performance boost. `maxhistorydays` ignored.    |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Full                                       |    Return data with `RowLastModifiedDateTimeUTC` is greater than or equal to `2018-02-21T23:18:51.3277273Z`                             |

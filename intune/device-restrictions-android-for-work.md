@@ -2,13 +2,13 @@
 # required metadata
 
 title: Android Enterprise device settings in Microsoft Intune - Azure | Microsoft Docs
-description: On Android Enterprise or Android for Work devices, restrict settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a kiosk to run one app, or multiple apps.
+description: On Android Enterprise or Android for Work devices, restrict settings on the device, including copy and paste, show notifications, app permissions, data sharing, password length, sign-in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a dedicated device kiosk to run one app, or multiple apps.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
-ms.topic: article
+ms.date: 02/20/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -22,12 +22,12 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure, seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Android Enterprise device settings to allow or restrict features using Intune
 
-This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps in kiosk-mode, control security, and more.
+This article lists and describes the different settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, run apps on dedicated devices, control security, and more.
 
 ## Before you begin
 
@@ -73,7 +73,7 @@ This article lists and describes the different settings you can control on Andro
   - **Device Default**: Use the device's default setting.
   - **Automatic**: Updates are automatically installed without user interaction. Setting this policy immediately installs any pending updates.
   - **Postponed**: Updates are postponed for 30 days. At the end of the 30 days, Android prompts the user to install the update. It's possible for device manufacturers or carriers to prevent (exempt) important security updates from being postponed. An exempted update shows a system notification to the user on the device. 
-  - **Maintenance window**: Installs updates automatically during a daily maintenance window that you set in Intune. Installation tries daily for 30 days, and can fail if there's insufficient space or battery levels. After 30 days, Android prompts the user to install. This window is also used to install updates for Play apps. Use this option for dedicated devices, such as kiosks, as single-app kiosk foreground apps can be updated.
+  - **Maintenance window**: Installs updates automatically during a daily maintenance window that you set in Intune. Installation tries daily for 30 days, and can fail if there's insufficient space or battery levels. After 30 days, Android prompts the user to install. This window is also used to install updates for Play apps. Use this option for dedicated devices, such as kiosks, as single-app dedicated device foreground apps can be updated.
 - **App auto-updates**: Choose when automatic updates are installed. Your options:
   - **Not configured**
   - **User choice**
@@ -89,48 +89,48 @@ This article lists and describes the different settings you can control on Andro
 
 - **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
 
-### Kiosk settings
+### Dedicated device settings
 
-You can configure a device to run one app, or many apps. When a device is in kiosk mode, only the apps you add are available. These settings apply to Android dedicated devices but not to Android fully managed dedicated devices.
+Use these settings to configure a kiosk-style experience on your dedicated devices. You can configure a device to run one app, or run many apps. When a device is set with kiosk mode, only the apps you add are available. These settings apply to Android Enterprise dedicated devices. They don't apply to Android Enterprise fully managed devices.
 
-**Kiosk mode**: Choose if the device will run one app or multiple apps.
+**Kiosk mode**: Choose if the device runs one app or runs multiple apps.
 
-- **Single app kiosk**: Users can only access a single app on the device. When the device starts, only the specific app starts. Users are restricted from opening new apps or from changing the running app.
+- **Single app**: Users can only access a single app on the device. When the device starts, only the specific app starts. Users are restricted from opening new apps or from changing the running app.
 
   **Steps**
   1. Choose **Select a managed app**, and select the managed Google Play app from the list. 
 
-      If you don't have any apps listed, then [add some Android apps](apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your kiosk devices](apps-deploy.md).
+      If you don't have any apps listed, then [add some Android apps](apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
 
   2. Choose **OK** > **OK** to add the app.
 
-- **Multi-app kiosk**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
+- **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
-  > [IMPORTANT]
-  > For multi-app kiosk devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
+  > [!IMPORTANT]
+  > For multi-app dedicated devices, the [Managed Home Screen app](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) from Google Play **must be**:
   >   - [Added as a client app](apps-add-android-for-work.md) in Intune
-  >   - [Assigned to the device group](apps-deploy.md) created for your kiosk devices
+  >   - [Assigned to the device group](apps-deploy.md) created for your dedicated devices
   > 
   > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configiration profile are shown as icons on the the **Managed Home Screen** app. 
 
   - Choose **Add**, and select your apps from the list.
 
-    If the **Managed Home Screen** app isn't listed, then [add it from Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Be sure to [assign the app](apps-deploy.md) to the device group created for your kiosk devices.
+    If the **Managed Home Screen** app isn't listed, then [add it from Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Be sure to [assign the app](apps-deploy.md) to the device group created for your dedicated devices.
 
-    You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your kiosk devices](apps-deploy.md).
+    You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
 
-  - **Virtual home button**: Choose **Enable** to show a home button on the kiosk device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
-  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator does the following: 
+  - **Virtual home button**: Choose **Enable** to show a home button on the dedicated device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator: 
   
-    1. Continue to select the back button until the "Exit Kiosk" button is shown. 
-    2. Select the button, and enter the **Leave kiosk mode code** PIN.
+    1. Continues to select the back button until the "Exit kiosk" button is shown. 
+    2. Selects the button, and enters the **Leave kiosk mode code** PIN.
     3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
     
-    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit Kiosk" button, then a message states that a passcode is required.
+    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
     
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
  
-  - **Set custom URL background**: Enter a URL to customize the background screen on the kiosk device.
+  - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
 
 ### Device password settings
 
@@ -293,4 +293,4 @@ These password settings apply to personal profiles on devices that use a work pr
 
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also create kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Windows 10](kiosk-settings.md) devices.
+You can also create dedicated device kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Windows 10](kiosk-settings.md) devices.

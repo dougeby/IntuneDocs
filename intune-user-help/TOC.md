@@ -25,7 +25,6 @@
 
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
-#### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 #### [Update your device to install Outlook](update-device-outlook-android.md)
 
@@ -98,8 +97,8 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-## [Using your macOS device](using-your-macos-device-with-intune.md)
-### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+## Using your macOS device
+### [What happens when you enroll a macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your organization-provided macOS device](enroll-company-device-macos.md)  
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)  

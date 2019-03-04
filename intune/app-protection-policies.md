@@ -3,13 +3,13 @@
 
 title: Create and deploy app protection policies 
 titleSuffix: Microsoft Intune
-description: Learn how to create and assign Microsoft Intune app protection policies.
+description: This topic describes how to create and assign Microsoft Intune app protection policies (APP).
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # How to create and assign app protection policies
@@ -56,7 +57,7 @@ For information about adding your organization's line-of-business (LOB) apps to 
 6. On the **Add a policy** blade, select **Configure required settings** to open **Settings**.
 
    There are three categories of policy settings:
-   - **Data relocation** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
+   - **Data protection** - This group includes the data loss prevention (DLP) controls, like cut, copy, paste, and save-as restrictions. These settings determine how users interact with data in the apps.
    - **Access requirements** - This group contains the per-app PIN options that determine how the end user accesses the apps in a work context.  
    - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.
 

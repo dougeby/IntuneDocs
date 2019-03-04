@@ -11,7 +11,7 @@ manager: dougeby
 ms.date: 11/13/2018
 ms.prod:
 ms.service: microsoft-intune
-ms.topic: article
+ms.topic: conceptual
 ms.technology:
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to validate your app protection policy setup

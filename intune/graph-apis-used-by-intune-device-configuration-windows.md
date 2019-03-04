@@ -8,8 +8,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/01/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,24 +23,26 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Graph APIs and matching Windows 10 CSPs used in Intune
 
-Microsoft Intune uses the [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) to configure devices (**Intune** > **Device configuration**) running Windows 10 and later. The Graph API uses configuration service providers (CSPs) to read, set, change, and/or delete configuration settings on devices.
+Microsoft Intune uses the [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (opens another Docs site) to configure devices (**Intune** > **Device configuration**) running Windows 10 and later. The Graph API uses configuration service providers (CSPs) to read, set, change, and/or delete configuration settings on devices.
 
 This list applies to:
 
 - Windows 10 and later
 
+
 This article lists the Graph entities and their matching Windows 10 CSPs and offset URIs.
 
 This information can be useful for a variety of scenarios including determining what is used by Intune, settings that could become custom OMA-URI configurations deployed via Intune, etc. 
 
+
 ## Windows 10 CSPs
 
-For more information on Windows 10 configuration service providers, see the [configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
+For more information on Windows 10 configuration service providers, see the [configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (opens another Docs site).
 
 ## Graph API properties to CSP mapping
 
@@ -3005,4 +3007,4 @@ Use the Windows 10 configuration service provider reference to determine Windows
 ## Next steps
 
 - [Device configuration overview](device-profiles.md)
-- [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)
+- [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (opens another Docs site)

@@ -8,8 +8,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated
@@ -84,52 +84,54 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 1. Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
 
-1. After you've successfully signed in, you see the **Azure Dashboard**.
+2. Go to **Intune** > **Exchange access**, and then select **Exchange On-premises access**. 
 
-1. Choose **All services** from the left menu, then type **Intune** in the text box filter.
+3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-1. Choose **Intune**, you see the **Intune Dashboard**.
+4. Choose **All services** from the left menu, then type **Intune** in the text box filter.
 
-1. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
+5. Choose **Intune**, you see the **Intune Dashboard**.
 
-1. Under **Manage**, choose **Exchange on-premises access**.
+6. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
 
-1. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
+7. Under **Manage**, choose **Exchange on-premises access**.
+
+8. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
 
   	> [!NOTE]
   	> If you have not configured an Exchange Active Sync on-premises connector, this option is disabled.  You must first install and configure at least one connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)
 
-1. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
+9. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 
-1. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
+10. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
 
-1. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device is not compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
+11. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device is not compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
 	> [!TIP]
 	> To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
 
-1. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps.
+12. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps.
 
-1. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
+8. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
 
    - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
    - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
 
-1. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
+13. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-1. On the **On-premises** pane, click **Save** to save the conditional access policy.
+14. On the **On-premises** pane, click **Save** to save the conditional access policy.
 
 ## Create Azure AD Conditional access policies in Intune
 
-Beginning with Intune 1704 release, admins can create Azure AD conditional access policies from the Intune Azure portal so you don't need to switch between the Azure and Intune workloads.
+Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
 > [!IMPORTANT]
 > You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
 
-### To create Azure AD conditional access policy
+### To create a conditional access policy
 
-1. In the **Intune Dashboard**, choose **Conditional access**.
+1. In the **Intune Dashboard**, select **Conditional access**.
 
-2. In the **Policies** pane, choose **New policy** to create your new Azure AD conditional access policy.
+2. In the **Policies** pane, select **New policy** to create your new Azure AD conditional access policy.
 
 ## See also
 

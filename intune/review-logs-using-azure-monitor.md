@@ -8,7 +8,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -23,12 +23,12 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Send log data to storage, event hubs, or log analytics in Intune (preview)
 
-Microsoft Intune includes built-in logs that provide information about your environment. **Audit Logs** show details on different events or tasks that happen in Intune. **Operational Logs (preview)** show details on users and devices that successfully (or failed) to enroll.
+Microsoft Intune includes built-in logs that provide information about your environment. **Audit Logs** show details on different events or tasks that happen in Intune. **Operational Logs (preview)** show details on users and devices that successfully (or failed) to enroll, as well as details on non-compliant devices.
 
 These logs can also be sent to Azure Monitor services, including storage accounts, event hubs, and log analytics. Specifically, you can:
 
@@ -86,7 +86,7 @@ Depending on where you want to route the audit log data, you need one of the fol
 
       If you choose to use a storage account, then also enter how many days you want to keep the data (retention). To keep data forever, set **Retention (days)** to `0` (zero).
 
-    - **LOG** > **OperationalLogs**: Operational logs (preview) show the success or failure of users and devices that enroll in Intune. Choose this option to send the enrollment logs to your storage account, event hub, or log analytics.
+    - **LOG** > **OperationalLogs**: Operational logs (preview) show the success or failure of users and devices that enroll in Intune, as well as details on non-compliant devices. Choose this option to send the enrollment logs to your storage account, event hub, or log analytics.
 
       If you choose to use a storage account, then also enter how many days you want to keep the data (retention). To keep data forever, set **Retention (days)** to `0` (zero).
 

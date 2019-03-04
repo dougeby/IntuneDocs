@@ -8,8 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Set up app-based conditional access policies with Intune
@@ -37,19 +36,18 @@ Set up app-based conditional access policies for apps that are part of the list 
 > [!IMPORTANT]
 > This article walks through the steps to add an app-based conditional access policy. You can use the same steps when add apps like SharePoint Online, Microsoft Teams, and Microsoft Exchange Online from the list of approved apps.
 
-## Create app-based conditional access policies in Azure AD workload
-
-IT admins can create app-based conditional access policies from the Azure AD workload. This access means you don't need to switch between the Azure and the Intune workloads.
+## Create app-based conditional access policies
+Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*. This means you don't need to switch between Intune and Azure AD to configure policies.
 
 > [!IMPORTANT]
-> You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
+> You need to have an Azure AD Premium license to create conditional access policies from the Intune portal.
 
 ### To create an app-based conditional access policy
 
 > [!IMPORTANT]
 > You need to have [Intune app protection policies](app-protection-policies.md) applied to your apps before using app-based conditional access policies.
 
-1. In the **Intune Dashboard**, choose **Conditional access**.
+1. In the **Intune Dashboard**, select **Conditional access**.
 
 2. In the **Policies** pane, choose **New policy** to create your new app-based conditional access policy.
 

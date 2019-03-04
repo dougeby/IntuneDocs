@@ -8,7 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -24,12 +24,14 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Use scope tags to filter policies
 
 Scope tags let you filter policies with custom tags that you create. You can apply scope tags to roles and apps.
+
+When an admin creates a resource in Intune, any scope tags assigned to that admin will be automatically assigned to the new resource.
 
 For example, create a scope tag called “Engineering Department” and assign it to configuration profiles related to the engineering department. Assign that same tag to an “Engineering Administrators” role. They'll only see the policies with the “Engineering Department” tag.
 

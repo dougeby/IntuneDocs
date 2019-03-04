@@ -8,7 +8,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -25,7 +25,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to manage data transfer between iOS apps in Microsoft Intune
@@ -55,11 +55,15 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
 2.  Deploy the apps and the email profile that you want managed through Intune or your third-party MDM solution using the following generalized steps. This experience is also covered by *Example 1*.
 
-3.  Deploy the app with the following app configuration settings:
+3.  Deploy the app with the following app configuration settings to the managed device:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
+       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
 
 4.  Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 

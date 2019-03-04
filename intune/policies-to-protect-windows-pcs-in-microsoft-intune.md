@@ -8,8 +8,8 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -24,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
-
+ms.collection: M365-identity-device-management
 ---
 
 # Use policies to help protect Windows PCs that run the Intune client software
@@ -46,7 +46,6 @@ The Windows Firewall helps to keep hackers, malware, and other threats from Wind
 
 As an IT admin, one of your top priorities is to [keep the Windows PCs that you manage free of malware and viruses](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Intune integrates with Endpoint Protection to provide real-time protection against malware threats, keep malware definitions up-to date, and automatically scan computers. Endpoint Protection also provides tools that help you to manage and monitor malware attacks.
 
+## See also
 
-
-### See also
-[Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Common questions, issues and resolutions with device policies and profiles](device-profile-troubleshoot.md)
