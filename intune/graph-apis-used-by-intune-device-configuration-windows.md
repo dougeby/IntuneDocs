@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Graph APIs used when configuring devices in Microsoft Intune - Azure | Microsoft Docs
+title: Graph APIs to configure devices in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: See a list of all the Graph APIs with the matching Windows CSP and offset URI on Windows 10 devices and newer used when configuring devices in Microsoft Intune. See the matching API and CSP for shared PCs, endpoint protection, Windows Defender advanced threat protection, identity protection, Windows 10 Teams, kiosk, and Windows Update for Business.
+description: See a list of all the Graph API entities with the matching Windows CSP and offset URI on Windows 10 devices and newer used when configuring devices in Microsoft Intune. See the matching API and CSP for shared PCs, endpoint protection, Windows Defender advanced threat protection, identity protection, Windows 10 Teams, kiosk, and Windows Update for Business.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -16,7 +16,7 @@ ms.technology:
 
 # optional metadata
 
-#ROBOTS: NOINDEX
+#ROBOTS:
 #audience:
 #ms.devlang:
 ms.suite: ems
@@ -28,11 +28,15 @@ ms.collection: M365-identity-device-management
 
 # Graph APIs and matching Windows 10 CSPs used in Intune
 
-Microsoft Intune uses the [Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (opens another Docs site) to configure devices (**Intune** > **Device configuration**) running Windows 10 and later. The Graph API uses configuration service providers (CSPs) to read, set, change, and/or delete configuration settings on devices.
+Microsoft Intune uses the [Graph API entities](https://docs.microsoft.com/graph/api/resources/intune-graph-overview) (opens another Docs site) to configure devices (**Intune** > **Device configuration**) running Windows 10 and later. The Graph API uses configuration service providers (CSPs) to read, set, change, and/or delete configuration settings on devices.
 
 This list applies to:
 
 - Windows 10 and later
+
+This article lists the Graph entities and their matching Windows 10 CSPs and offset URIs.
+
+This information is useful for a variety of scenarios. For example, see what's used by Intune, see settings to include in custom OMA-URI configurations, and so on. 
 
 ## Windows 10 CSPs
 
@@ -40,7 +44,9 @@ For more information on Windows 10 configuration service providers, see the [con
 
 ## Graph API properties to CSP mapping
 
-The following list shows the Graph API properties used by Microsoft Intune for Windows 10 device configuration. It also shows the corresponding Windows 10 CSP and offset URI.
+The following list shows the majority of Graph API entities used by Microsoft Intune for Windows 10 device configuration. It also shows the corresponding Windows 10 CSP and offset URI.
+
+To see the Windows 10 versions the following APIs apply, use the Windows 10 [configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (opens another Docs site).
 
 #### EditionUpgradeConfiguration.License 
 **CSP**: ./Device/Vendor/MSFT/WindowsLicensing  
@@ -239,7 +245,7 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/CredentialsUI/EnumerateAdministrators
 
 #### Windows10EndpointProtectionConfiguration.DefenderAdditionalGuardedFolders 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/Defender/ControlledFolderAccessProtectedFolders
 
 #### Windows10EndpointProtectionConfiguration.DefenderAdvancedRansomewareProtectionType 
@@ -259,7 +265,7 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/Configuration requires Graph properties: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType, windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXml 
-**CSP**: ./Device/Vendor/MSFT/Policy/ 
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### Windows10EndpointProtectionConfiguration.DefenderExploitProtectionXmlFileName 
@@ -267,7 +273,7 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/ExploitGuard/ExploitProtectionSettings
 
 #### Windows10EndpointProtectionConfiguration.DefenderGuardedFoldersAllowedAppPaths 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy 
 **Offset URI**: /Config/Defender/ControlledFolderAccessAllowedApplications
 
 #### Windows10EndpointProtectionConfiguration.DefenderGuardMyFoldersType 
@@ -275,7 +281,7 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/Defender/EnableControlledFolderAccess
 
 #### Windows10EndpointProtectionConfiguration.DefenderNetworkProtectionType 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/Defender/EnableNetworkProtection
 
 #### Windows10EndpointProtectionConfiguration.DefenderOfficeAppsExecutableContentCreationOrLaunch 
@@ -343,7 +349,7 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/Configuration requires Graph properties: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType, windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### Windows10EndpointProtectionConfiguration.DefenderSecurityCenterBlockExploitProtectionOverride 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
 
 #### Windows10EndpointProtectionConfiguration.DefenderSecurityCenterDisableAccountUI 
@@ -419,19 +425,19 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/Defender/AttackSurfaceReductionRules (CSP/Configuration requires Graph properties: windows10endpointprotection/Configuration.defenderOfficeAppsOtherProcessInjectionType, windows10endpointprotection/Configuration.defenderOfficeAppsExecutableContentCreationOrLaunchType, windows10endpointprotection/Configuration.defenderOfficeAppsLaunchChildProcessType, windows10endpointprotection/Configuration.defenderOfficeMacroCodeAllowWin32ImportsType, windows10endpointprotection/Configuration.defenderScriptObfuscatedMacroCodeType, windows10endpointprotection/Configuration.defenderScriptDownloadedPayloadExecutionType, windows10endpointprotection/Configuration.defenderEmailContentExecutionType, windows10endpointprotection/Configuration.defenderPreventCredentialStealingType, windows10endpointprotection/Configuration.defenderUntrustedUSBProcessType
 
 #### Windows10EndpointProtectionConfiguration.DeviceGuardEnableSecureBootWithDMA 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### Windows10EndpointProtectionConfiguration.DeviceGuardEnableVirtualizationBasedSecurity 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy 
 **Offset URI**: /Config/DeviceGuard/EnableVirtualizationBasedSecurity
 
 #### Windows10EndpointProtectionConfiguration.DeviceGuardLaunchSystemGuard 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/DeviceGuard/ConfigureSystemGuardLaunch
 
 #### Windows10EndpointProtectionConfiguration.DeviceGuardLocalSystemAuthorityCredentialGuardSettings 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/DeviceGuard/LsaCfgFlags
 
 #### Windows10EndpointProtectionConfiguration.DmaGuardDeviceEnumerationPolicy 
@@ -871,11 +877,11 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **Offset URI**: /Config/MSSecurityGuide/WDigestAuthentication
 
 #### Windows10EndpointProtectionConfiguration.SmartScreenBlockOverrideForFiles 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/DeviceGuard/RequirePlatformSecurityFeatures
 
 #### Windows10EndpointProtectionConfiguration.SmartScreenEnableInShell 
-**CSP**: ./Device/Vendor/MSFT/Policy/  
+**CSP**: ./Device/Vendor/MSFT/Policy
 **Offset URI**: /Config/SmartScreen/EnableSmartScreenInShell
 
 #### windows10endpointprotectionconfiguration.solicitedRemoteAssistance 
@@ -1033,6 +1039,10 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 #### Windows10EndpointProtectionConfiguration.XboxServicesLiveNetworkingServiceStartupMode 
 **CSP**: ./Vendor/MSFT/Policy  
 **Offset URI**: /Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+
+#### Windows10EnterpriseModernAppManagementConfiguration.UninstallBuiltInApps
+**CSP**: N/A Graph API call only
+**Offset URI**: N/A Graph API call only
 
 #### Windows10GeneralConfiguration.AccountsBlockAddingNonMicrosoftAccountEmail 
 **CSP**: ./Vendor/MSFT/Policy  
@@ -2927,9 +2937,21 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/Update/PauseFeatureUpdatesStartTime
 
+#### WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackStartDateTime
+**CSP**: N/A - Graph API only 
+**Offset URI**: N/A - Graph API only
+
 #### WindowsUpdateForBusinessConfiguration.FeatureUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Rollback/FeatureUpdate
+**CSP**: N/A - Graph API only 
+**Offset URI**: N/A - Graph API only
+
+#### WindowsUpdateForBusinessConfiguration.FeatureUpdatesRollbackWindowInDays
+**CSP**: N/A - Graph API only 
+**Offset URI**: N/A - Graph API only
+
+#### WindowsUpdateForBusinessConfiguration.InstallationSchedule
+**CSP**: ./Device/Vendor/MSFT/Policy
+**Offset URI**: /Config/Update/ActiveHoursStart, /Config/Update/ActiveHoursEnd, /Config/Update/ScheduledInstallDay,  /Config/Update/ScheduledInstallTime
 
 #### WindowsUpdateForBusinessConfiguration.MicrosoftUpdateServiceAllowed 
 **CSP**: ./Device/Vendor/MSFT/Policy  
@@ -2951,9 +2973,13 @@ The following list shows the Graph API properties used by Microsoft Intune for W
 **CSP**: ./Device/Vendor/MSFT/Policy  
 **Offset URI**: /Config/Update/PauseQualityUpdatesStartTime
 
+#### WindowsUpdateForBusinessConfiguration.QualityUpdatesRollbackStartDateTime
+**CSP**: N/A - Graph API only 
+**Offset URI**: N/A - Graph API only
+
 #### WindowsUpdateForBusinessConfiguration.QualityUpdatesWillBeRolledBack 
-**CSP**: ./Device/Vendor/MSFT/Policy  
-**Offset URI**: /Rollback/QualityUpdate
+**CSP**: N/A - Graph API only 
+**Offset URI**: N/A - Graph API only
 
 #### WindowsUpdateForBusinessConfiguration.ScheduleImminentRestartWarningInMinutes 
 **CSP**: ./Device/Vendor/MSFT/Policy  
