@@ -9,7 +9,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:

@@ -7,8 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
 ms.technology:
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 When managing devices in your organization, you want to create a group of settings that are applied to different device groups. For example, you have several device groups. For GroupA, you want to assign a specific set of settings. For GroupB, you want to assign a different set of settings. You also want a simple view of the settings you can configure.
 
-You can complete this task using **Administrative Templates** in Microsoft Intune. The administrative templates include hundreds of settings that control features in Internet Explorer, Microsoft Office programs, remote desktop, access to OneDrive, use a picture password or PIN to sign in, and more. These templates are similar to group policy (GPO) settings in Active Directory (AD), and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) that use XML. But, the templates in Intune are 100% cloud-based. They offer a more simple and straight-forward way to configure the settings, and find the settings you want.
+You can complete this task using **Administrative Templates** in Microsoft Intune. The administrative templates include hundreds of settings that control features in Internet Explorer, Microsoft Office programs, remote desktop, access to OneDrive, use a picture password or PIN to sign in, and more. These templates are similar to group policy (GPO) settings in Active Directory (AD), and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (opens another Docs site) that use XML. But, the templates in Intune are 100% cloud-based. They offer a more simple and straight-forward way to configure the settings, and find the settings you want.
 
 **Administrative Templates** are built in to Intune, and don't require any customizations, including using OMA-URI. As part of your mobile device management (MDM) solution, use these template settings as a one-stop shop to manage your Windows 10 devices.
 
@@ -79,6 +79,8 @@ There are hundreds of settings available in these templates. To make it easier t
   ![Click Path to sort alphabetically](./media/administrative-templates-windows/search-copy-settings.png)
 
   In another example, search for `microsoft word`. You see all the settings you can set for the Microsoft Word program. Search for `explorer` to see all the Internet Explorer settings you can add to your template.
+
+This feature uses [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (opens another Docs site). The CSPs work on different editions of Windows, such as Home, Professional, Enterprise, and so on. To see if a CSP works on a specific edition, go to [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (opens another Docs site).
 
 ## Next steps
 

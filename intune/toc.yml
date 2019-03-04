@@ -74,8 +74,6 @@
     href: windows-information-protection-configure.md  
   - name: MAM FAQ
     href: mam-faq.md
-  - name: Policy & profile FAQ
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: How-to guides
   items:
   - name: Plan deployment
@@ -257,7 +255,7 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
-    - name: Erase device
+    - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@
       href: device-restrictions-configure.md
     - name: Deliver updates
       href: delivery-optimization-windows.md
+      displayName: delivery optimization; updates
     - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
     - name: Configure email
@@ -362,7 +361,7 @@
         - name: Data Intune sends to Google
           href: data-intune-sends-to-google.md
         - name: Information shared from Jamf Pro to Intune
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: View and correct personal data
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
@@ -375,6 +374,7 @@
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
       - name: Create and assign conditional access policy
+        href: conditional-access-exchange-create.md
       - name: Device-based conditional access policy
         href: create-conditional-access-intune.md
       - name: Reassign conditional access policies from Intune classic portal
@@ -615,6 +615,8 @@
       href: data-google-sends-to-intune.md
   - name: Get help and support
     items:
+    - name: Tenant status
+      href: tenant-status.md
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
@@ -635,7 +637,7 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Troubleshoot endpoint protection
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Troubleshoot policies
+      - name: Troubleshoot policies and profiles
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: Troubleshoot conditional access
         href: troubleshoot-conditional-access.md
@@ -659,14 +661,6 @@
           href: device-restrictions-android.md
         - name: Email
           href: email-settings-android.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS imported certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -686,16 +680,8 @@
           href: device-restrictions-android-for-work.md
         - name: Email
           href: email-settings-android-enterprise.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS imported certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Custom
@@ -712,12 +698,6 @@
           href: device-restrictions-ios.md
         - name: Email
           href: email-settings-ios.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -736,26 +716,20 @@
           href: device-restrictions-macos.md
         - name: Endpoint protection
           href: endpoint-protection-macos.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
-    - name: Security baselines
-      items:
-      - name: Windows security baseline settings
-        href: security-baseline-settings-windows.md
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Configuration profile settings
         items:
+        - name: Delivery optimization settings
+          href: delivery-optimization-settings.md
         - name: Device restrictions
           href: device-restrictions-windows-10.md
         - name: Device restrictions (Windows 10 Team)
@@ -770,12 +744,6 @@
           href: identity-protection-windows-settings.md
         - name: Kiosk
           href: kiosk-settings-windows.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: PKCS certificate
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -786,8 +754,10 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
-      - href: windows-update-settings.md
-        name: Windows update settings
+      - name: Security baseline settings
+        href: security-baseline-settings-windows.md
+      - name: Windows update settings
+        href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
       - name: Device restrictions
@@ -808,10 +778,6 @@
         items:
         - name: Device restrictions
           href: device-restrictions-windows-8-1.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Wi-Fi import
@@ -826,10 +792,6 @@
           href: device-restrictions-windows-phone-8-1.md
         - name: Email
           href: email-settings-windows-phone-8-1.md
-        - name: Trusted certificate
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: SCEP certificate
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: Custom
