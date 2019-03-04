@@ -70,13 +70,13 @@ Some Android devices on version 7.0+ encrypt data in ways that are inconsistent 
 If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent version of Android. You can install the updates for these devices by going to **Settings** > **Update**. 
 
 - [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](http://consumer.huawei.com/en/phones/p9/)
+- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
 
 ### Known devices that currently cannot be updated to fix this issue
 
 You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
 
 - [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO devices](http://www.oppo.com/en/smartphones)
+- [OPPO devices](https://www.oppo.com/en/smartphones)
 - [Vivo devices](https://www.vivo.co.in)
 - [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)
