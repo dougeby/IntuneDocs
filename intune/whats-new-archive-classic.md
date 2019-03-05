@@ -124,7 +124,7 @@ We are removing the Intune Partner page from manage.microsoft.com beginning with
 
 If you are a partner administrator, you will no longer be able to view and take action on behalf of your customers from the Intune Partner page, but will instead need to sign in at one of two other partner portals at Microsoft.
 
-Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) will allow you to sign into the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers.
+Both the [Microsoft Partner Center](https://partnercenter.microsoft.com/) and the [Microsoft 365 admin center](https://admin.microsoft.com/) will allow you to sign into the customer accounts you manage. Moving forward as a partner, please use one of these sites to manage your customers.
 
 
 #### Apple to require updates for Application Transport Security <!--748318-->

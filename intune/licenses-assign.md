@@ -34,17 +34,17 @@ ms.collection: M365-identity-device-management
 
 Whether you manually add users or synchronize from your on-premises Active Directory, you must first assign each user an Intune license before users can enroll their devices in Intune. For a list of licenses, see [Licenses that include Intune](licenses.md).
 
-## Assign an Intune license in the Office 365 Admin center
+## Assign an Intune license in the Microsoft 365 admin center
 
-You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+You can use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
-1. Sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials, and then choose **Users** > **Active Users**.
+1. Sign in to the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials, and then choose **Users** > **Active Users**.
 
 2. Select the user account that you want to assign an Intune user license to, and then choose **Product licenses** > **Edit**.
 
 3. Toggle **Intune** or **Enterprise Mobility + Security** to **On**, and choose **Save**.
 
-   ![Screenshot of the Office 365 portal Product licenses section.](./media/office-assign-license.png)
+   ![Screenshot of the Microsoft 365 admin center Product licenses section.](./media/office-assign-license.png)
 
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
