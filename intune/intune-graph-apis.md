@@ -595,7 +595,7 @@ Remember to add the user to other roles as needed. For example, to allow the use
 
 Also:
 
-- Use https://portal.office.com to assign an Intune license to your user account.
+- Use https://admin.microsoft.com to assign an Intune license to your user account.
 
 - Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 
