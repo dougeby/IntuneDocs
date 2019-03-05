@@ -6,6 +6,7 @@ description: Quickstart - Create and assign a custom role for a remote device ma
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje

@@ -17,7 +17,7 @@ ms.assetid:
 
 # optional metadata
 
-ROBOTS: NOINDEX,NOFOLLOW
+
 #audience:
 #ms.devlang:
 ms.reviewer: cacampbell
