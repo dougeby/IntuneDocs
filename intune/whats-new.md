@@ -251,6 +251,8 @@ The setting below appears in the Intune console, but when configured, will not w
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
 
+For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md). 
+
 #### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
 
