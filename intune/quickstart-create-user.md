@@ -7,6 +7,7 @@ services: microsoft-intune
 author: ErikjeMS
 
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje

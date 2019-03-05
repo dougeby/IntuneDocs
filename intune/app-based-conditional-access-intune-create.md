@@ -11,6 +11,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 
