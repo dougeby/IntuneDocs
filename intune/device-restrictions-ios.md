@@ -11,7 +11,8 @@ manager: dougeby
 ms.date: 02/06/2019
 ms.topic: conceptual
 ms.prod:
-ms.service: microsoft-intune; seodec18
+ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -22,7 +23,7 @@ ms.technology:
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ---
 

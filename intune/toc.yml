@@ -875,8 +875,6 @@
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
-  - name: Microsoft Intune documentation guide
-    href: intune-documentation.md  
   - name: Troubleshoot
     items:
     - name: Help users troubleshoot problems

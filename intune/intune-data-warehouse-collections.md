@@ -11,6 +11,7 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 

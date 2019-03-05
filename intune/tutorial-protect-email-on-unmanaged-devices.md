@@ -12,6 +12,7 @@ ms.date: 12/11/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 

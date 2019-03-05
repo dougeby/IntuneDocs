@@ -67,16 +67,15 @@ Some Android devices on version 7.0+ encrypt data in ways that are inconsistent 
 
 ### Known devices that can be updated to fix this issue
 
-If you have one of the following devices, you may experience this issue if you have not updated your device to the most recent version of Android. You can install the updates for these devices by going to **Settings** > **Update**. 
+If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might appear as non compliant until you update:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### Known devices that currently cannot be updated to fix this issue
+The following devices will always appear encrypted and can't be used to access company resources. To access company resources, you must use a different device.  
 
-You cannot resolve this issue for the devices below. You may need to use a different device to access company resources. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [OPPO devices](https://www.oppo.com/en/smartphones)
-- [Vivo devices](https://www.vivo.co.in)
-- [Xiaomi Mi smartphones](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- OPPO devices
+- Vivo devices
+- Xiaomi Mi smartphones
