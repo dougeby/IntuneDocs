@@ -138,7 +138,7 @@ For a quick guide to customize your portal experience, see [Getting started with
 
 ### Before you start
 
-To use Intune in the Azure portal, you must have an Intune admin and tenant account. [Sign up for an account](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) if you don't already have one.
+To use Intune in the Azure portal, you must have an Intune admin and tenant account. [Sign up for an account](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) if you don't already have one.
 
 ### Supported web browsers for the Azure portal
 

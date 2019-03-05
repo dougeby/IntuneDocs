@@ -32,7 +32,7 @@ This article shows you how to connect the Microsoft Intune service to Exchange O
 
 With the **Service to Service Connector** you can manage both Exchange ActiveSync (EAS) and Intune managed devices from a single administrative console.  The connector is not required to enable Conditional Access for Exchange Online.
 
-When planning a rollout of Conditional Access, it is often important to understand which users and number of user will have the new experience. The Office 365 Admin Center provides this in the form of an Exchange Online email app usage report as part of the Activity Reports feature of that portal. These reports can be used to understand mobile email adoption in your environment before and after the deployment of Conditional Access.
+When planning a rollout of Conditional Access, it is often important to understand which users and number of user will have the new experience. The Microsoft 365 admin center provides this in the form of an Exchange Online email app usage report as part of the Activity Reports feature of that portal. These reports can be used to understand mobile email adoption in your environment before and after the deployment of Conditional Access.
 
 ## Service to Service Connector requirements
 The **Service to Service Connector** supports only Exchange Online or Exchange Online Dedicated and has no requirements for an on-premises infrastructure. 
