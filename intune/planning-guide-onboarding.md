@@ -82,7 +82,7 @@ You may need to add users or security groups in Active Directory or Azure Active
 
 ### Task 4: Assign Intune and Office 365 user licenses
 
-All users you target for EMS/Intune and Office 365 rollout need to have a license assigned to them. You can assign EMS/Intune and Office 365 licenses in the Office 365 Admin Center Portal.
+All users you target for EMS/Intune and Office 365 rollout need to have a license assigned to them. You can assign EMS/Intune and Office 365 licenses in the Microsoft 365 admin center.
 
 -   Learn more about [how to assign Intune licenses](licenses-assign.md).
 

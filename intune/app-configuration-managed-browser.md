@@ -77,7 +77,7 @@ While Managed Browser or Microsoft Edge are not managed by Intune, they cannot a
 
 ## Conditional Access for protected browsers
 
-The Managed Browser is now an approved client app for Conditional Access. This means that you can restrict mobile browser access to Azure AD-connected web apps where users can only use the Managed Browser, blocking access from any other unprotected browsers such as Safari or Chrome. This protection can be applied to Azure resources like Exchange Online and SharePoint Online, the Office portal, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
+The Managed Browser is now an approved client app for Conditional Access. This means that you can restrict mobile browser access to Azure AD-connected web apps where users can only use the Managed Browser, blocking access from any other unprotected browsers such as Safari or Chrome. This protection can be applied to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
 To restrict Azure AD-connected web apps to use the Intune Managed Browser on mobile platforms, you can create a Conditional Access policy requiring approved client applications. 
 

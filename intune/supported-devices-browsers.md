@@ -106,7 +106,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Different administrative tasks require that you use one of the following administrative websites.
 
-- [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure portal](https://portal.azure.com/)
 
 The following browsers are supported for these portals:

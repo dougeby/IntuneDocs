@@ -54,7 +54,7 @@ The Help and support experience for Intune is available from the [Microsoft 365 
 ![Intune blades](./media/get-support/intune-blades.png)
 
 
-This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://portal.office.com/AdminPortal/Home), and replaces the [previous Help and support experience](#azure-help-+-support-experience). 
+This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the [previous Help and support experience](#azure-help-+-support-experience). 
 
 To access Help and support, use the following:  
 - **Device Management Dashboard:**
@@ -121,7 +121,7 @@ The following information describes the Azure Help + support experience which re
 
 ### Create an online support ticket
 
-1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to the Azure portal (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
    ![Image of the question mark link with the Help + support link highlighted](./media/azure-get-support.png)
 
@@ -179,12 +179,12 @@ The following information describes the Azure Help + support experience which re
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->If you have a billing or subscription question, you can open a case to get support through the [Office Admin Center](https://portal.office.com/Support/SupportEntry.aspx).
+>If you have a billing or subscription question, you can open a case to get support through the [Microsoft 365 admin center](https://admin.microsoft.com/Support/SupportEntry.aspx).
 
 ### View support requests
 You can view a support request from within the Azure portal. To do so:
 
-1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
+1. Sign in to  Azure (<https://portal.azure.com>) with your Intune admin credentials, select the **?** icon in the upper-right corner of the portal, and then select **Help + support** to go to the [Azure Help + support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) page.
 
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 

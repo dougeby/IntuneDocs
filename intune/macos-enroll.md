@@ -45,7 +45,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - [Set the MDM Authority](mdm-authority-set.md)
 - [Create groups](groups-add.md)
 - [Configure the Company Portal](company-portal-app.md)
-- Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Assign user licenses in the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 
 ## User-owned macOS devices (BYOD)
