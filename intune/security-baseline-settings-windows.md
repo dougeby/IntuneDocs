@@ -586,7 +586,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   This policy setting lets you decide whether VBScript can run on pages in specific Internet Explorer zones. Options include: 
   - *Enable* - VBScript runs on pages in specific zones, without any interaction. 
   - *Prompt* - Employees are prompted whether to allow VBScript to run in the zone. 
-  - *Disable* - VBScript is prevented from running in the zone. If you disable or don’t configure this policy setting, VBScript runs without any interaction in the specified zone. <br><br>
+  - *Disable* - VBScript is prevented from running in the zone. If you disable or don’t configure this policy setting, VBScript runs without any interaction in the specified zone. 
   
   **Default**: Disable  
   
@@ -990,7 +990,7 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   - *Send NTLM response only*: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
   - *Send NTLMv2 response only*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
   - *Send NTLMv2 response only. Refuse LM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). 
-  - *Send NTLMv2 response only. Refuse LM and NTLM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication). <br><br>
+  - *Send NTLMv2 response only. Refuse LM and NTLM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication). 
     
   **Default**: Send NTLMv2 response only. Refuse LM and NTLM
   
@@ -1011,7 +1011,7 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
     - *Prompt for consent on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
     - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
     - *Prompt for consent*: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  <br><br>
+    - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.   
   
   **Default**: Prompt for consent on the secure desktop
   
@@ -1019,8 +1019,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
   - Require NTLMv2 session security: The connection will fail if NTLMv2 protocol isn't negotiated. 
   - *Require 128-bit encryption*: The connection will fail if strong encryption (128-bit) isn't negotiated.
-  - *Require NTLMv2 and 128-bit encryption*.<br><br>
-  
+  - *Require NTLMv2 and 128-bit encryption*. 
+
   **Default**: Require NTLM V2 128 encryption
   
 - **Smart card removal behavior**  
@@ -1244,7 +1244,7 @@ For more information, see [Policy CSP - Search](https://docs.microsoft.com/windo
 - **Disable indexing encrypted items**  
   Allows or disallows the indexing of items. This switch is for the Windows Search Indexer, which controls whether it will index items that are encrypted, such as the Windows Information Protection (WIP) protected files. When the policy is enabled, WIP protected items are indexed and the metadata about them are stored in an unencrypted location. The metadata includes things like file path and date modified. When the policy is disabled, the WIP protected items aren't indexed and don't show up in the results in Cortana or file explorer. There may also be a performance impact on photos and Groove apps if there are many WIP protected media files on the device.
   
-  **Default**: Yes
+**Default**: Yes
   
 ## Smart Screen  
 For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.  
