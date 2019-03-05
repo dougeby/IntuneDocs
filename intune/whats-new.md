@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 # What's new in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Learn what’s new each week in Microsoft Intune. You can also find upcoming changes, [important notices](#notices), and information about [past releases](whats-new-archive.md). 
+Learn what’s new each week in Microsoft Intune. You can also find [upcoming changes](in-development.md), [important notices](#notices), and information about [past releases](whats-new-archive.md). 
 
 > [!Note]
 > Some features may roll out over several weeks and might not be available to all customers in the first week.
