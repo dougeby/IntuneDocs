@@ -6,7 +6,7 @@ titleSuffix: Intune on Azure
 description: "Pradeo connector integration with Intune"
 keywords:
 author: brenduns
-
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/27/2018
 ms.topic: conceptual
