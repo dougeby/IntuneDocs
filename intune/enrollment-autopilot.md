@@ -106,7 +106,9 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
 2. In the specific profile blade, choose **Assignments**. 
-3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
+3. You can assign this profile to all devices or specific groups of devices:
+    - To assign the profile to all devices, choose **All devices**.
+    - To assign the profile to specific groups, choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
 
 > [!NOTE]
 > Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment ** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."
