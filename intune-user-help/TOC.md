@@ -153,7 +153,7 @@
 ### [Install apps](install-apps-cpapp-windows.md) 
 ### [Remote lock device](remote-lock-your-device-cp-app.md)   
 ### [Rename device](rename-your-device-cpapp.md) 
-### [Reset device](reset-device-cpapp.md)
+### [Reset device](reset-device-cp-app.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
 ### [Remote lock device](remote-lock-your-device-cpwebsite.md)  
