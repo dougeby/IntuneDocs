@@ -858,7 +858,7 @@ In **Device compliance** > **Policies** > **Create policy** > **Android** > **Sy
 Applies to: 
 - Android
 
-<!-- ########################## -->
+<!-- ########################### -->
 ## Notices
 
 [!INCLUDE [Intune notices](./includes/intune-notices.md)]
