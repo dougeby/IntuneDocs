@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 
@@ -47,9 +48,9 @@ Think about all the different people in your organization. Every one of them tha
 
 ## Assigning licenses to users
 
-After you've created a user, you need to use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) to assign an Intune license to that user. Without assigning them a license, they can't enroll their device into management.
+After you've created a user, you need to use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) to assign an Intune license to that user. Without assigning them a license, they can't enroll their device into management.
 
-1. Sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) with the same credentials you used to sign in to Intune.
+1. Sign in to the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) with the same credentials you used to sign in to Intune.
 2. Select **Users** > **Active Users**, then select the user you previously created.
 3. You may need to wait a moment for all of the user's information to load. Once it loads, select **Edit** for the user's **Product licenses**.
 4. Assign the user a **Location**, then switch Intune to **on**.

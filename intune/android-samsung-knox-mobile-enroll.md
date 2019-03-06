@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager:
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 

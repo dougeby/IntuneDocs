@@ -7,10 +7,11 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 
@@ -52,7 +53,7 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 To see the status of the sync action, choose **Devices** > **Device actions**.
 
-You can find standard Intune policy check-in frequencies in the [Frequently asked questions about Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md##frequently-asked-questions-about-intune-policies).
+You can find standard Intune policy check-in frequencies in the [Refresh cycle times](device-profiles.md).
 
 ## Retryable error codes
 

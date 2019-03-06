@@ -9,9 +9,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 
@@ -63,6 +64,8 @@ Intune has additional templates you can use to promote device enrollment with yo
 -   The [Intune end-user enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) is customizable Word doc that explains how to enroll Android, iOS, and Mac devices in Intune.
 
 -   The [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) can be customized with your company’s logo to promote adoption of Intune and EMS within your organization.
+
+-   Share the [Company Portal app URL](http://go.microsoft.com/fwlink/?LinkID=396941) with your Android, iOS and Windows users. This URL redirects to the appropriate Company Portal app listing on Android, iOS and Windows devices.
 
 ## Next steps
 

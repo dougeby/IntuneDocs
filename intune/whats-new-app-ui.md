@@ -9,9 +9,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 

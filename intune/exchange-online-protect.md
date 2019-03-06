@@ -11,7 +11,8 @@ manager: dougeby
 ms.date: 10/31/2017
 ms.prod:
 ms.service: microsoft-intune
-ms.topic: article
+ms.localizationpriority: medium
+ms.topic: archived
 ms.technology:
 ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 

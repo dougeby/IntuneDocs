@@ -12,6 +12,7 @@ ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 
@@ -57,7 +58,7 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
     ![Screenshot of the Intune trial account new credential process](./media/account-sign-up-site-user-id.png)
 
-    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Office 365 Admin Portal described later in this article.
+    If your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change that in the Microsoft 365 admin center described later in this article.
 
 3. View your new account information at the end of the sign-up process.
 
@@ -100,24 +101,24 @@ For more information about the MDM authority, see [Set the mobile device managem
 
 ## Configure your custom domain name (Optional)
 
-As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Office 365 Admin Portal. You will add, verify and configure your custom domain name.  
+As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Microsoft 365 admin center. You will add, verify and configure your custom domain name.  
 
 > [!IMPORTANT]
 > You cannot rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
 
-1. Go to [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) and sign in using your administrator account.
+1. Go to [Microsoft 365 admin center](https://admin.microsoft.com) and sign in using your administrator account.
 
 2. In the navigation pane, choose **Setup** > **Domains** > **Add domain**.
 
 3. Type your custom domain name. Then, select **Next**.
 
-   ![Screenshot of Office 365 Admin Center - Add domain](./media/domain-custom-add.png)
+   ![Screenshot of Microsoft 365 admin center - Add domain](./media/domain-custom-add.png)
 
 4. Verify that you are the owner of the domain that you entered in the previous. 
     
     Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address then what was provided when the domain was registered.
 
-   ![Screenshot of Office 365 Admin Center - Verify domain](./media/domain-custom-verify.png)
+   ![Screenshot of Microsoft 365 admin center - Verify domain](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > For TXT record verification details, see [Create DNS records at any DNS hosting provider for Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -126,7 +127,7 @@ As mentioned above, if your organization has its own custom domain that you want
 
 There are two portals that you might use:
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
-- The Office 365 Admin center ([portal.office.com](https://portal.office.com)) is where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
+- The Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com)) is where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
 
 ## Next steps
 
