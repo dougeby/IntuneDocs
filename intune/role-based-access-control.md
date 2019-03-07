@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,21 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
 
-Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
+## Azure Active Directory roles with Intune access
+
+| Azure Active Directory role | All Intune data | Intune audit data | Conditional access policies |
+| --- | --- | --- | --- |
+| Global Administrator | Read/write | Read/write | Read/write | 
+| Intune Service Aministrator | Read/write | Read/write | Read/write | 
+| Conditional Access Administrator | None | None | Read/write | 
+| Security Administrator | Read only | Read only | Read only |
+| Security Operator | Read only | Read only | Read only |
+| Security Reader | Read only | Read only | Read only |
+| Global Reader | Read only | Read only | Read only |
+| Compliance Administrator | None | Read only | None |
+| Compliance Data Administrator | None | Read only | None |
+
+**Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
