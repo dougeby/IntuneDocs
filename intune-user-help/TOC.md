@@ -150,13 +150,14 @@
 
 ## Using the Intune Company Portal app for Windows 
 ### [Check device access](check-device-access-windows-cpapp.md)
-### [Install apps from Company Portal app](install-apps-cpapp-windows.md) 
-### [Remote lock device from Company Portal app](remote-lock-your-device-cp-app.md)   
-### [Rename your device from Company Portal app](rename-your-device-cpapp.md) 
+### [Install apps](install-apps-cpapp-windows.md) 
+### [Remote lock device](remote-lock-your-device-cp-app.md)   
+### [Rename device](rename-your-device-cpapp.md) 
+### [Reset device](reset-device-cp-app.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
-### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
-### [Rename your device](rename-your-device-cpwebsite.md)
-### [Remove your device](remove-your-device-cpwebsite.md)
-### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
-### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)
+### [Remote lock device](remote-lock-your-device-cpwebsite.md)  
+### [Rename device](rename-your-device-cpwebsite.md)  
+### [Remove device](remove-your-device-cpwebsite.md)  
+### [Reset device passcode](reset-your-passcode-cpwebsite.md)  
+### [Reset device](reset-erase-your-device-cpwebsite.md)  
