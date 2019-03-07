@@ -107,7 +107,7 @@ For more information about scope tags, and what you can do, see [Use RBAC and sc
 2. Select **Add** to create a new scope tag. Or, select an existing scope tag from the list.
 3. Select **OK** to save your changes.
 
-## Applicability Rules
+## Applicability rules
 
 Applies to:
 
@@ -148,7 +148,7 @@ When you assign the profile to the groups, the applicability rules act as a filt
     - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
     - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. 
 
-      For example, you can enter `16299` (RS3 or 1709) for min version and `17134` (RS4 or 1803) for max version. Or, you can be more granular and enter `16299.001` for min version and `17134.319` for max version.
+      For example, you can enter `16299` (RS3 or 1709) for minimum version and `17134` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `16299.001` for minimum version and `17134.319` for maximum version.
 
 4. Select **Add** to save your changes.
 
