@@ -113,7 +113,7 @@ Applies to:
 
 - Windows 10 and later
 
-Applicability rules allow administrators to target users or devices in a group. But, the profile applies to devices that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
+Applicability rules allow administrators to target devices in a group that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
 
 To do this task, create an **applicability rule**. These rules are great for the following scenarios:
 
