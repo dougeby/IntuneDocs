@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create device profiles in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure a device configuration profile in Microsoft Intune, including selecting the platform type, configuring the settings, adding a scope tag, creating an applicability rule
+description: Add or configure a device configuration profile in Microsoft Intune. Select the platform type, configure the settings, add a scope tag, and create an applicability rule.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 03/07/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,14 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article lists the steps to create a profile, and gives an overview of the different types of profiles you can create. Use these profiles to allow or prevent some features on the devices.
+Devices profiles allow you to add and configure settings, and then push these settings to devices in your organization. [Apply features and settings on your devices using device profiles](device-profiles.md) goes into more detail, including what you can do.
+
+This article:
+
+- Lists the steps to create a profile.
+- Shows you how to add a scope tag to "filter" the profile.
+- Describes applicability rules on Windows 10 devices, and shows you how to create a rule.
+- Lists the check-in refresh cycle times when devices receive profiles and any profile updates.
 
 ## Create the profile
 
@@ -82,7 +89,7 @@ This article lists the steps to create a profile, and gives an overview of the d
        - [Windows Defender ATP](advanced-threat-protection.md)
        - [Windows Information Protection](windows-information-protection-configure.md)
 
-     For example, if you select **iOS** for the platform, your profile type options look similar to the following:
+     For example, if you select **iOS** for the platform, your profile type options look similar to the following profile:
 
      ![Create iOS profile in Intune](./media/create-device-profile.png)
 
@@ -90,7 +97,7 @@ This article lists the steps to create a profile, and gives an overview of the d
 
 ## Scope tags
 
-After you add the settings, you can also add a scope tag to the profile. Scope tags are a great way to assign and filter policies to specific groups, such as HR or All US-NC employees.
+After you add the settings, you can also add a scope tag to the profile. Scope tags assign and filter policies to specific groups, such as HR or All US-NC employees.
 
 For more information about scope tags, and what you can do, see [Use RBAC and scope tags for distributed IT](scope-tags.md).
 
@@ -106,14 +113,14 @@ Applies to:
 
 - Windows 10 and later
 
-Applicability rules allows administrators to target users or devices in a group, but only apply the profile to devices that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. But, you only want the profile assigned to devices running Windows 10 Enterprise.
+Applicability rules allow administrators to target users or devices in a group. But, the profile applies to devices that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
 
-To do this, create an **applicability rule**. These rules are great for the following scenarios:
+To do this task, create an **applicability rule**. These rules are great for the following scenarios:
 
 - You use Windows 10 Education (EDU). At Bellows College, you want to target all Windows 10 EDU devices between RS3 and RS4.
 - You want to target all users in Human Resources at Contoso, but only want Windows 10 Professional or Enterprise devices.
 
-To approach this, you:
+To approach these scenarios, you:
 
 - Create a devices group that includes all devices at Bellows College. In the profile, add an applicability rule so it applies if the OS minimum version is `16299` and the maximum version is `17134`. Assign this profile to the Bellows College devices group.
 
@@ -123,13 +130,13 @@ To approach this, you:
 
   When it's assigned, the profile applies to devices running Windows 10 Professional or Enterprise. For devices that aren't running these editions, their status shows as **Not applicable**.
 
-When you assign the profile to the groups, the applicability rules acts as a filter, and only targets the devices that meet your criteria.
+When you assign the profile to the groups, the applicability rules act as a filter, and only target the devices that meet your criteria.
 
 ### Add a rule
 
 1. Select **Applicability Rules**. You can choose the **Rule**, **Property**, and **OS edition**:
 
-    ![Add an applicability rules to a device configuration profile in Microsoft Intune](./media/applicability-rules.png)
+    ![Add an applicability rule to a device configuration profile in Microsoft Intune](./media/applicability-rules.png)
 
 2. In **Rule**, choose if you want to include or exclude users or groups. Your options:
 
@@ -141,7 +148,7 @@ When you assign the profile to the groups, the applicability rules acts as a fil
     - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
     - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. 
 
-      For example, you can enter `16299` (RS3 or 1709) for min version and `17134` (RS4 or 1803) for max version. Or, you can more granular and enter `16299.001` for min version and `17134.319` for max version.
+      For example, you can enter `16299` (RS3 or 1709) for min version and `17134` (RS4 or 1803) for max version. Or, you can be more granular and enter `16299.001` for min version and `17134.319` for max version.
 
 4. Select **Add** to save your changes.
 
