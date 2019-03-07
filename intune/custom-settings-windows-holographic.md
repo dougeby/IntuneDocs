@@ -12,7 +12,7 @@ ms.article: article
 ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
-ms.topic: conceptual
+ms.topic: reference
 ms.technology:
 
 # optional metadata
