@@ -113,7 +113,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. Such as:<br>
     'ApplicationName.exe /quite'<br>
     In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
-    For the specific agruments supported by the applicaiton package, contact your application vendor.
+    For the specific agruments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
