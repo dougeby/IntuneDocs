@@ -113,8 +113,12 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 1.	In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
 2.	Add the complete installation command line to install the app. 
 
-    For example, if your app filename is **MyApp123**, add the following:
-    `msiexec /i “MyApp123.msi”`
+    For example, if your app filename is **MyApp123**, add the following:<br>
+    `msiexec /i “MyApp123.msi”`<p>
+    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. Such as:<br>
+    'ApplicationName.exe /quite'<br>
+    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
+    For the specific agruments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
