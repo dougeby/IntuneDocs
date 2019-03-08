@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Use RBAC and scope tags for distributed IT
 
-You can use role-based-access-control (RBAC) and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
+You can use role-based access control (RBAC) and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
 For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do this, you would:
 
@@ -38,7 +38,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
     - Members (Groups) = A security group named Seattle IT admins. All admins in this group will have  permission to manage policies and profiles for users/devices in the Scope (Groups).
     - Scope (Groups) = A security group named Seattle users. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Groups). 
     - Scope (Tags) = Seattle. Admins in the Member (Groups) can see devices that also have the Seattle scope tag.
-3. Add the Seattle scope tag to polices and profiles that you want admins in Members (Groups) to be able to access.
+3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to be able to access.
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
 
@@ -53,7 +53,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 1. In Intune, choose **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
 2. Provide an **Assignment name** and **Description**.
 3. Choose **Members (Groups)** and choose the groups that you want as part of this assignment. Users in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
-4. Choose **Scope (Groups)** and choose the users and/or groups that you want to be part of this assignment. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+4. Choose **Scope (Groups)** and choose the users and groups that you want to be part of this assignment. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
 5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
 6. Choose **Select** > **OK** > **OK**. 
 
@@ -77,11 +77,11 @@ When working with scope tags, remember these details:
     - DEP tokens
     - Additional objects will support scope tags in the future
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
-- Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune regardless of scope tags.
+- Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
 - You can only assign a scope tag that you have in your role assignments.
 - You can only target groups that are listed in the Scope (Groups) of your role assignment.
-- If you have a scope tag assigned to your role, you cannot delete all scope tags on an Intune object. At least one scope tag is required.
+- If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
 - If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:
     - Assign permissions only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions don’t apply to objects in other role assignments unless the other assignment specifically grants them.
     - Other permissions (such as Create and Read), apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
