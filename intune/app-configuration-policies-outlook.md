@@ -40,5 +40,5 @@ When adding a configuration policy in Intune, you can specify settings to config
 For Outlook account setup information and procedural steps for iOS and Android devices in Microsoft Intune, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## Next steps
-[Configure email settings in Intune](email-settings-configure.md)
 
+- For more information, see [App configuration policies for Microsoft Intune](app-configuration-policies-overview.md)
