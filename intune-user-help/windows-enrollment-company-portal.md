@@ -30,13 +30,13 @@ ms.collection: M365-identity-device-management
 
 # Windows device enrollment in Intune Company Portal  
 
-Enroll your Windows device in the Intune Company Portal app to get secure access to work and school apps, emails, and files. If your organization requires or recommendeds certain apps, such as Office or OneDrive, you'll either receive them during enrollment, or they'll be made available to you in Company Portal after enrollment.  
+Enroll your Windows device in the Intune Company Portal app to get secure access to work and school apps, emails, and files. If your organization requires or recommends certain apps, such as Office or OneDrive, you'll either receive them during enrollment, or they'll be available in Company Portal after enrollment.  
 
 ## Supported devices 
 You can enroll Windows 10 devices through the Company Portal website *or* app. If you're enrolling a device with an earlier version of Windows, you must enroll the device through the Company Portal website. 
 
 Company Portal supports the following Windows devices:  
-* Windos 10 desktop  
+* Windows 10 desktop  
 * Windows 10 mobile  
 * Windows 8.1 and Windows RT 8.1  
 * Windows Phone 8.1   

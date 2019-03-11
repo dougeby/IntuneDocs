@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot your Windows 10 device enrollment
-If your enrolled your device, but still can’t access your work or school email and files, try these troubleshooting steps.
+If you've enrolled your device, but still can’t access your work or school email and files, try these troubleshooting steps.  
 
 1.  Look at the next two screens, and find the one that looks like what you see on your device. Follow the steps that go with the screen you see on your device.
 
@@ -48,17 +48,17 @@ If your enrolled your device, but still can’t access your work or school email
 
 2. Do one of the following:
 
-   - If you see a connection that looks similar to the image below, tap it, and then check that you see the Manage, Info and Disconnect options. If you see these option, you’re now enrolled and connected.
+   - If you see a connection that looks similar to the image below, tap it, and then check that you see the Manage, Info and Disconnect options. If you see these options, you’re now enrolled and connected.
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - If you don’t see the connection information shown above, or you do see it, but it’s missing some of the options, tap **Connect**, and then sign in with your work or school credentials. You should now be connected.
+   - If you don’t see the connection information shown above, or you do see it, but it’s missing some of the options, tap **Connect**. Then sign in with your work or school credentials to connect.  
 
 ## Troubleshooting steps to follow if you see "Your account"
 
 If you followed the steps above, but still can't access your work or school email, files, and other data, go back to **Accounts**, and tap **Work access**.
 
-- If you see your work or school account, congratulations. You’re connected.
+- If you see your work or school account listed, you’re connected.  
 
 - If you don’t see your work or school account, tap **Connect**, and then sign in with your work or school credentials.
 

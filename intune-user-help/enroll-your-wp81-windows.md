@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Enroll your Windows Phone 8.1 device in Intune  
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+Enroll your devices to get access to work or school email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
 To enroll your device in Intune, follow the set of instructions that match your permissions or current account status.
 
@@ -61,7 +61,7 @@ Enroll your device:
 
 3.  Swipe to **My Devices**.  
 
-4.  Tap **Tap to enroll or identify this device**.  
+4.  Select **Tap to enroll or identify this device**.  
 
 
     ![Tap to enroll or identify this device screen](./media/WP81-enroll-1-swipe-my-devices.png)  
