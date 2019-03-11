@@ -46,7 +46,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
 1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
 
-![Screenshot of creating a sceopt ag.](./media/scope-tags/create-scope-tag.png)
+    ![Screenshot of creating a scope tag.](./media/scope-tags/create-scope-tag.png)
 
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
@@ -54,6 +54,9 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 ## To assign a scope tag to a role
 
 1. In Intune, choose **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
+
+    ![Screenshot of assign scope to a role.](./media/scope-tags/assign-scope-to-role.png)
+
 2. Provide an **Assignment name** and **Description**.
 3. Choose **Members (Groups)** and choose the groups that you want as part of this assignment. Users in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
 4. Choose **Scope (Groups)** and choose the users and groups that you want to be part of this assignment. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
