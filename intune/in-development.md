@@ -40,6 +40,8 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 > [!Note]
 > These items reflect Microsoft’s current expectations about Intune capabilities coming in a future release. Dates and individual features may change. Not all items in development have a feature description on this page.
 
+**RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
+
 
 <!--
 ## What's coming to Intune in the Azure portal  
