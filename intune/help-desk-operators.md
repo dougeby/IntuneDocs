@@ -72,6 +72,8 @@ You can use the **Troubleshoot** pane to review user information.
 | 4.   | User information  | Use the list to select the details to review in the pane. <br>You can select: <ul><li>Client apps<li>Compliance policies<li> Configuration policies<li>App protection policies <li>Enrollment restrictions</ul>      |
 | 5.   | Group membership  | Shows the current groups the selected user is a member of.       |
 
+<!-- this section needs to be updated
+
 ## Client apps reference
 
 The apps that are running devices
@@ -242,6 +244,8 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Device type | The name of the type of device.                                                       |
 | Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## Enrollment failure reference
 
