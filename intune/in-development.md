@@ -40,6 +40,8 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 > [!Note]
 > These items reflect Microsoft’s current expectations about Intune capabilities coming in a future release. Dates and individual features may change. Not all items in development have a feature description on this page.
 
+**RSS feed**: Get notified when this page is updated by copying and pasting the following URL into your feed reader: `https://docs.microsoft.com/api/search/rss?search=%22in+development+-+microsoft+intune%22&locale=en-us`
+
 
 <!--
 ## What's coming to Intune in the Azure portal  
@@ -86,7 +88,7 @@ Company Portal for iOS will be updating the app's enrollment screens and steps t
 - Open the Settings app to install the management profile on their device.​
 - Return to the Company Portal app to complete enrollment.  ​
 
-For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/]. In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2. 
+For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2. 
 
 ### Support for additional connectors on the Tenant Status page <!-- 3617202     -->
 The Tenant Status page will display status information for additional connectors, including *Windows Defender Advanced Threat Protection* (ATP) and other Mobile Threat Defense connectors.
