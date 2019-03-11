@@ -62,7 +62,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
     ![Screenshot of select member groups.](./media/scope-tags/select-member-groups.png)
 
-4. If you want to manage users/devices in a specific set of groups, choose **Scope (Groups)** > **Selected Groups** > **Select groups to include** > choose the groups > **Select** **OK**. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+4. If you want to manage users/devices in a specific set of groups, choose **Scope (Groups)** > **Selected Groups** > **Select groups to include** > choose the groups > **Select** > **OK**. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
 
     ![Screenshot of select scope groups.](./media/scope-tags/select-scope-groups.png)
 
@@ -70,8 +70,11 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
     ![Screenshot of other options for select scope groups.](./media/scope-tags/scope-group-other-options.png)
     
-5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
-6. Choose **Select** > **OK** > **OK**. 
+5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role > **Select** > **OK**. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
+
+    ![Screenshot of select scope tags.](./media/scope-tags/select-scope-tags.png)
+
+6. Choose **OK**. 
 
 ## To add a scope tag to a configuration profile
 1. In Intune, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)** > **Add**.
