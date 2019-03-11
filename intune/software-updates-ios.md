@@ -8,9 +8,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/06/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -67,7 +68,9 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 5. Select **OK** > **Create** to save your changes, and create the policy.
 
-The profile is created and shown in the policy list. 
+The profile is created and shown in the policy list.
+
+For guidance from the Intune support team, see [Delay visibility of software updates in Intune for supervised devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Delaying-visibility-of-software-updates-in-Intune-for-supervised/ba-p/345753).
 
 > [!NOTE]
 > Apple MDM doesn't allow you to force a device to install updates by a certain time or date.

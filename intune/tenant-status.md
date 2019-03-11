@@ -9,9 +9,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/23/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -63,19 +64,19 @@ When there's more than a single connector of any one type, the status is a summa
 When you select a connector from the list, the portal presents the portal page that is relevant to creating or configuring that connector.  For example, when you select the **VPP Expiry Date** connector, the **iOS Volume-Purchased Program Tokens** page opens where you can view more details about that connector. You can then create a new configuration or edit and fix issues with an existing one.  
 
 ## Intune service health  
-You can view details for active incidents and advisories without having to navigate to the Microsoft 365 Service Health Dashboard or the Message Center, both located in the Microsoft 365 admin center at https://portal.office.com. Only incidents where impact has been noted to affect your tenant are shown.  
+You can view details for active incidents and advisories without having to navigate to the Microsoft 365 Service Health Dashboard or the Message Center, both located in the [Microsoft 365 admin center](https://admin.microsoft.com). Only incidents where impact has been noted to affect your tenant are shown.  
 
 When you select an incident, the incident details are presented directly in the Tenant Status page. To view past advisories and incidents, select **See past Incidents/Advisories**. The Microsoft 365 admin center opens and you can then view advisories and incidents from the last 30 days for your tenant.  
 
-To view information for *Intune Service Health*, your account must have the **Global Administrator** or **Service Administrator** role in Azure Active Directory or the Office Admin portal. To assign these permissions, sign in to the [Microsoft 365 admin center](https://portal.officeppe.com/AdminPortal/Home#/homepage) with Global Administrator permissions. Select **Users > Active Users**, and then select the account that requires access. Select **Edit** for Roles, select *Service Administrator* or *Global Administrator*, and then **Save** your edit to assign the permissions.  
+To view information for *Intune Service Health*, your account must have the **Global Administrator** or **Service Administrator** role in Azure Active Directory or the Microsoft 365 admin center. To assign these permissions, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with Global Administrator permissions. Select **Users > Active Users**, and then select the account that requires access. Select **Edit** for Roles, select *Service Administrator* or *Global Administrator*, and then **Save** your edit to assign the permissions.  
 
 You can only set up your communication preferences for Intune Service Health through the Microsoft 365 admin center.
 
 ## Intune news  
 View informational communications from the Intune service team without having to navigate to the Office Message Center. Communications include messages about changes that have recently happened to the Intune service, or that are on the way for your tenant.  
 
-By default, the last 10 active messages display. To view older messages, select **See past Messages** to open the *Message center* in the Microsoft 365 admin center portal.  
+By default, the last 10 active messages display. To view older messages, select **See past Messages** to open the *Message center* in the Microsoft 365 admin center.  
 
-To view information for Intune News, your account must have the **Global Administrator** or **Service Administrator** role in Azure Active Directory, or the **Message Center reader** role in the Office Admin portal.  To assign this permission, sign in to the [Microsoft 365 admin center](https://portal.officeppe.com/AdminPortal/Home#/homepage) with administrator permissions. Select **Users > Active Users**, and then select the account that requires access. Select **Edit** for *Roles*, select *Teams Communications Administrator*, and then **Save** your edit to assign the permissions.  
+To view information for Intune News, your account must have the **Global Administrator** or **Service Administrator** role in Azure Active Directory, or the **Message Center reader** role in the Microsoft 365 admin center.  To assign this permission, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with administrator permissions. Select **Users > Active Users**, and then select the account that requires access. Select **Edit** for *Roles*, select *Teams Communications Administrator*, and then **Save** your edit to assign the permissions.  
 
 You can only set up your communication preferences for Intune News through the Microsoft 365 admin center.

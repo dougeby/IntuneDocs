@@ -8,9 +8,10 @@ author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/12/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 

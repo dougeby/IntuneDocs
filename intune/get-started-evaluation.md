@@ -8,10 +8,11 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/26/2019
+ms.topic: overview
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 

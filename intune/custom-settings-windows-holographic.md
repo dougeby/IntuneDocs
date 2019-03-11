@@ -11,7 +11,8 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod:
 ms.service: microsoft-intune
-ms.topic: article
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology:
 
 # optional metadata

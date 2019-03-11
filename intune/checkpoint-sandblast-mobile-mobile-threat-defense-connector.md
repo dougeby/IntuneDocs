@@ -9,9 +9,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 07/03/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 

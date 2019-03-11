@@ -9,9 +9,10 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 
@@ -594,7 +595,7 @@ Remember to add the user to other roles as needed. For example, to allow the use
 
 Also:
 
-- Use https://portal.office.com to assign an Intune license to your user account.
+- Use https://admin.microsoft.com to assign an Intune license to your user account.
 
 - Update application code to authenticate to the client's Azure AD tenant domain, rather than your own.
 

@@ -31,16 +31,11 @@ ms.collection: M365-identity-device-management
 
 # Enroll your Windows Phone 8.1 device in Intune
 
-If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+If your company or school uses Microsoft Intune, you can enroll your devices to get access to company email, files, and other resources. When you enroll your devices, your organization can keep corporate data secure. To learn more about enrollment, see [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) and [What your company support can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
+To enroll your device in Intune, follow the set of instructions that match your permissions or current account status.
 
-To enroll your Phone 8.1 device in Intune, follow the instructions that apply to your company or school:
-
--   [If your company lets you use the Company Portal from the Microsoft Store](#if-your-company-lets-you-use-the-company-portal-from-the-windows-store)
-
--   [If you are not allowed to access the Microsoft Store from your Windows Phone, or if you do not have a Microsoft Account](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
-
-## If your company lets you use the Company Portal from the Microsoft Store
+## If your company lets you use the Company Portal from the Microsoft Store  
 Install the Company Portal app on your device:
 
 1.  Tap **Start** &gt; **Store**.

@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 
@@ -366,8 +367,8 @@ To validate that the service is running, open a browser, and enter the following
 5. From the **Profile** type drop-down list, select **SCEP certificate**.
 6. Enter the following settings:
 
-   - **Certificate type**: Choose **User** for user certificates. Choose **Device** for user-less devices, such as kiosks. **Device** certificates are available for the following platforms:  
-     - Android Enterprise
+   - **Certificate type**: Choose **User** for user certificates. A **User** certificate type can contain both user and device attributes in the subject and SAN of the certificate.  Choose **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices, placing the certificate in the Local Computer certificate store. **Device** certificates can only contain device attributes in the subject and SAN of the certificate.  **Device** certificates are available for the following platforms:  
+     - Android Enterprise - Work Profile
      - iOS
      - macOS
      - Windows 8.1 and later
