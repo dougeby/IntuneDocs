@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Windows device enrollment in Intune Company Portal
+# Windows device enrollment in Intune Company Portal  
 
 Enroll your Windows device in the Intune Company Portal app to get secure access to work and school apps, emails, and files. If your organization requires or recommendeds certain apps, such as Office or OneDrive, you'll either receive them during enrollment, or they'll be made available to you in Company Portal after enrollment.  
 
@@ -36,12 +36,12 @@ Enroll your Windows device in the Intune Company Portal app to get secure access
 You can enroll Windows 10 devices through the Company Portal website *or* app. If you're enrolling a device with an earlier version of Windows, you must enroll the device through the Company Portal website. 
 
 Company Portal supports the following Windows devices:  
-* Windos 10 desktop
-* Windows 10 mobile
-* Windows 8.1 and Windows RT 8.1
-* Windows Phone 8.1  
+* Windos 10 desktop  
+* Windows 10 mobile  
+* Windows 8.1 and Windows RT 8.1  
+* Windows Phone 8.1   
 
-## Install Company Portal app
+## Install Company Portal app  
 You might already have the Company Portal app installed on your device. Check for the app in your __All apps__ list.  If you don't see Company Portal in your list of apps, follow these steps to install it.  
 
 1. Open **Microsoft Store** on your device.
@@ -55,37 +55,41 @@ You might already have the Company Portal app installed on your device. Check fo
 ## Find Windows 10 version number  
 Enrollment steps differ for different versions of Windows 10 devices. The following steps describe how to find the version number on Windows 10 desktop and mobile devices. After you know your version, continue to the recommended enrollment steps.  
 
-### Windows 10 Desktop devices
+### Windows 10 Desktop devices  
 
 1. Go to **Start**.
 
-2. In the search bar, type the phrase "about your PC." Select __About your PC__ from the results.
+2. In the search bar, type the phrase "about your PC." Select __About your PC__ from the results.  
 
-   ![search settings for about your pc](media/searching_for_about_your_pc.png)
+
+   ![search settings for about your pc](media/searching_for_about_your_pc.png)  
 
 3. Scroll down to **Windows specifications** to find the **Version** of Windows 10 that's installed on your PC.  
 
-   ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)
 
-4. If your version is
-    *  __1607 or later__: Enroll your device by way of the [**Settings** > **Account** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1607-and-later-device).  
+   ![Windows 10 Desktop About Your PC](media/settings_about_pc.png)  
+
+4. If your version is  
+
+    *  __1607 or later__: Enroll your device by way of the [**Settings** > **Account** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1607-and-later-device).   
     * __1511 or earlier__: Enroll your device by way of the [**Settings** > **Account** > **Your accounts** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1511-and-earlier-device).  
 
 ### Windows 10 Mobile devices		
 
 1.	Go to __All apps__ and select the __Settings__ app.	 
 2.	Select __System__ > __About__.		
-3.	Under __Device information__, find the __Version__.
-4. If your version is
-    *  __1607 or later__: Enroll your device using the [**Settings** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1607-and-later-device).  
+3.	Under __Device information__, find the __Version__.  
+4. If your version is  
+
+    *  __1607 or later__: Enroll your device using the [**Settings** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1607-and-later-device).   
     * __1511 or earlier__: Enroll your device using the [**Settings** > **Accounts** route](enroll-windows-10-device.md#enroll-windows-10-device-version-1511-and-earlier-device).  
 
 ## Enroll non Windows 10 devices  
-Use the following articles to enroll other supported Windows devices through the Company Portal website:  
-* [Windows 8.1. or Windows RT 8.1 device](enroll-your-W81-orre81-windows.md)
-* [Windows Phone 8.1 device](enroll-your-wp81-windows.md)  
+Use the following articles to enroll other supported Windows devices through the Company Portal website:   
+* [Windows 8.1. or Windows RT 8.1 device](enroll-your-W81-orre81-windows.md)  
+* [Windows Phone 8.1 device](enroll-your-wp81-windows.md)    
 
-## Next steps 
+## Next steps  
 Now that you know the supported devices, and your Windows 10 version number, proceed to the recommended enrollment article.  
  
 For more information about device management, Company Portal, and how both are used in schools and at work, see the following articles:  
