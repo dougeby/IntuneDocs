@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/08/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,13 +29,13 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Enroll your device in Intune
+# Enroll your device in Intune Company Portal
 
-If your company or school uses Microsoft Intune, you can enroll your device to get access to company email, files, and other resources. Enrolling your devices enables your organization to keep corporate data secure. To learn more about enrollment and about what your company support can and can't see on your device, check out the links at the bottom of this topic.
+Enroll your device to get access to work or school email, files, and other resources. Enrolling your device enables your organization to keep corporate data secure. Intune Company Portal supports enrollment for Android, iOS, macOS, and Windows devices.  
 
-To see enrollment instructions, use the link that matches the type of device you're using:
+To enroll your device, use the link that matches the type of device you're using:
 
 - [Enroll your Android device in Intune](enroll-your-device-in-Intune-android.md)
 - [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md)
 - [Enroll your macOS device in Intune](enroll-your-device-in-intune-macos.md)
-- [Enroll your Windows device in Intune](enroll-your-device-in-intune-windows.md)
+- [Enroll your Windows device in Intune](windows-enrollment-company-portal.md)
