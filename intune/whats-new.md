@@ -444,8 +444,6 @@ Applies to: Windows 10 and later
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
 More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#enrollment-failure-reference).
 
-
-
 ### Monitor and troubleshoot
 
 #### Tenant Status dashboard  <!-- 1124854 -->
