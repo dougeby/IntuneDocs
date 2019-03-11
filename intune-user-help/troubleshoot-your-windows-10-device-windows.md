@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot your Windows 10 device enrollment
-If you followed the steps in [Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune](enroll-your-w10-phone-or-w10-pc-windows.md), but you still can’t access your work or school email and files, try these troubleshooting steps.
+If your enrolled your device, but still can’t access your work or school email and files, try these troubleshooting steps.
 
 1.  Look at the next two screens, and find the one that looks like what you see on your device. Follow the steps that go with the screen you see on your device.
 

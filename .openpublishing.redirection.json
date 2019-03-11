@@ -1,6 +1,26 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/enroll-your-w10-device-your-account.md",
+			"redirect_url": "/intune/enroll-windows-10-device.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/enroll-your-w10-device-access-work-or-school.md",
+			"redirect_url": "/intune/enroll-windows-10-device.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/enroll-your-W10-phone-or-w10-pc-windows.md",
+			"redirect_url": "/intune/windows-enrollment-company-portal.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/enroll-your-device-in-intune-windows.md",
+			"redirect_url": "/intune/windows-enrollment-company-portal.md",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false

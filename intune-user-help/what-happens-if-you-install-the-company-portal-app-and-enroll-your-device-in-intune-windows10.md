@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# What happens if you install the Company Portal app and enroll your Windows 10 device in Intune?
+# What happens if you install the Company Portal app and enroll your Windows 10 device?
 
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise or Professional device in Intune, you can then use the Company Portal app to:
 
@@ -40,7 +40,7 @@ When you install the Company Portal app and then use the app to enroll your Wind
 
 -   Reset your phone to factory settings if it is lost or stolen.
 
-For the steps to enroll, see [Enroll your Windows 10 Mobile or Windows 10 desktop device in Intune](enroll-your-w10-phone-or-w10-pc-windows.md). To learn about what your company support can see on your device, see [What can my company support see when I enroll my device in Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+When you're ready to install Company Portal and enroll your device, see [Get started with Windows enrollment](windows-enrollment-company-portal.md).  
 
 When you add a computer:
 
