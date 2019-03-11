@@ -104,7 +104,33 @@ If you have the Service to Service connector set up and have Exchange Active Syn
 
 - Enroll devices in Mobile Device Management (MDM) 
 - Use Intune App Protection Policies to manage your devices 
-- Use Exchange controls as outlined in documentation here 
+- Use Exchange controls as outlined in documentation [here](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) 
 
 #### Additional Information  
 https://docs.microsoft.com/intune/exchange-service-connector-configure
+
+
+
+
+### Check your “Delay Visibility of Software updates” setting in Intune 
+
+We shared in MC171466 that we were moving a few settings around in the console. With the March update to Intune, we'll completely remove the “Delay Visibility of Software updates” setting from the iOS update policy blade. This will not change the way your scheduled software updates apply but it may affect how long the visibility of an update is delayed for end users. You may need to take action before the end of March if you use this setting. 
+
+#### How does this affect me?
+After the February Intune service update, you’ll notice that the setting appears both in Device restriction profiles in the console and in iOS update policies in the Software update blade. When you see this change reflected in the console, here’s what you may need to do.
+
+- For existing Update policies for iOS: If you have custom configured this setting to anything other than the default 30 days, and want your existing configurations for the Delay visibility setting to continue to apply after the end of March, you’ll have to create a new iOS device restriction profile. Here, the Delay visibility setting will need to have the same values as in the existing iOS update policy and be targeted to the same groups. After the March service update, you will no longer be able to edit values for this setting in existing iOS update policies since it will no longer be visible in this blade. You will configure this setting in the new profiles instead.
+  If the value for number of days you can delay visibility does not match in both locations for custom configured setting values, the Delay Visibility setting will not work, and end users will see the update on their devices as soon as it is available. This may have minimal impact for most customers since the other settings in the Software Update Policy blade have always taken precedence over this setting in the console.
+- For new update policies for iOS: If you try to create new policies in the Software updates blade after the Intune February service update, you will see this setting grayed out. You’ll see a note in the console redirecting you to the Device configuration blade if you wish to delay visibility of updates.
+
+#### What can I do to prepare for this change?
+You do not need to take action if you do not use this setting or do not want to delay visibility of software updates for your end users.
+
+If you wish to delay visibility of updates, start configuring the setting in new profiles in the Device Configuration blade under Device Restrictions > General. If you have this setting custom configured in existing iOS update policies, create a new equivalent device restriction profile with the same value for “days” to delay visibility of updates to your users, after the February update and before the March update rolls out. 
+
+You may want to update your IT Pro guidance and inform your helpdesk.
+
+See our support blog post at Additional Information for details on how to configure this setting.
+
+#### Additional Information 
+[https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
