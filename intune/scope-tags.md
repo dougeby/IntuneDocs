@@ -86,7 +86,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
     ![Screenshot of add scope tags.](./media/scope-tags/add-scope-tags.png)
 
 3. Under **Select Tags**, choose the tags that you want to add to the profile.
-4m. Choose **Select** > **OK** > **Save**.
+4. Choose **Select** > **OK** > **Save**.
 
 ## Scope tag details
 When working with scope tags, remember these details:
