@@ -45,6 +45,9 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 ## To create a scope tag
 
 1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
+
+![Screenshot of creating a sceopt ag.](./media/scope-tags/create-scope-tag.png)
+
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
 
