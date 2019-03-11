@@ -46,7 +46,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
 1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
 
-    ![Screenshot of creating a scope tag.](./media/scope-tags/create-scope-tag.png)
+    ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
 
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
@@ -58,8 +58,18 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
     ![Screenshot of assign scope to a role.](./media/scope-tags/assign-scope-to-role.png)
 
 2. Provide an **Assignment name** and **Description**.
-3. Choose **Members (Groups)** and choose the groups that you want as part of this assignment. Users in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
-4. Choose **Scope (Groups)** and choose the users and groups that you want to be part of this assignment. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+3. Choose **Members (Groups)** > **Add** > choose the groups that you want as part of this assignment > **Select** > **OK**. mUsers in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
+
+    ![Screenshot of select member groups.](./media/scope-tags/select-member-groups.png)
+
+4. If you want to manage users/devices in a specific set of groups, choose **Scope (Groups)** > **Selected Groups** > **Select groups to include** > choose the groups > **Select** **OK**. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+
+    ![Screenshot of select scope groups.](./media/scope-tags/select-scope-groups.png)
+
+    Alternately, you can choose **All Devices**, **All Users**, or **All Users & All Devices**.
+
+    ![Screenshot of other options for select scope groups.](./media/scope-tags/scope-group-other-options.png)
+    
 5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
 6. Choose **Select** > **OK** > **OK**. 
 
