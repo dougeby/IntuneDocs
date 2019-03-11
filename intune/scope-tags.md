@@ -77,9 +77,16 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 6. Choose **OK**. 
 
 ## To add a scope tag to a configuration profile
-1. In Intune, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)** > **Add**.
-2. Under **Select Tags**, choose the tags that you want to add to the profile.
-3. Choose **Select** > **OK** > **Save**.
+1. In Intune, choose **Device configuration** > **Profiles** > choose a profile.
+
+    ![Screenshot of select profile.](./media/scope-tags/choose-profile.png)
+
+2. Choose **Properties** > **Scope (Tags)** > **Add**.
+
+    ![Screenshot of add scope tags.](./media/scope-tags/add-scope-tags.png)
+
+3. Under **Select Tags**, choose the tags that you want to add to the profile.
+4m. Choose **Select** > **OK** > **Save**.
 
 ## Scope tag details
 When working with scope tags, remember these details:
