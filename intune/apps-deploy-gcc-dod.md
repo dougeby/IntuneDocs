@@ -1,7 +1,7 @@
 ---
 title: Apps for GCC High and DOD environments
 titlesuffix:
-description: Learn about apps involing GCC High and DOD environments.
+description: Learn about apps involving GCC High and DOD environments.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -21,7 +21,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Deploying apps using Intune on the GCC-High and DOD Environments 
+# Deploying apps using Intune on the GCC High and DOD Environments 
 
 Microsoft Intune can be used by tenant administrators to distribute apps to their workforce. The workforce is the company employee, the users of the apps. There are many types of apps that can be deployed from Intune on US Government Community (GCC) High or Department of Defense (DOD) environments. If an administrator needs to upload and distribute a Windows app intended for a GCC High or DOD audience that is custom-made, created by third-party vendors, or as an offline app downloaded from the [Microsoft Store for Business](https://businessstore.microsoft.com/store), the admin may want to distribute it as a [line-of-business app](apps-add.md#app-types-in-microsoft-intune).  
 
@@ -36,11 +36,11 @@ To add a line-of-business app intended for a GCC-High or DOD environment using I
 
 If you need to [download an offline-licensed app](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) from the Microsoft Store for Business, follow these steps to download the application: 
 
-1. Login to the [Store for Business](https://businessstore.microsoft.com/).
+1. Log in to the [Store for Business](https://businessstore.microsoft.com/).
 2. Go to **Manage** > **Settings**
 3. Under **Shopping Experience** set **Show offline apps** to **On**.
 
-When shopping for apps, if an offline version is available, you can choose to change the license type to offline. After getting the app, you can then manage it by selecting **Manage** > **Products & Services** in the [Store for Business](https://businessstore.microsoft.com/). For instance, you can download the app and its dependencies. In additon, you can deploy this downloaded app (and its dependencies) to users using Intune.  
+When shopping for apps, if an offline version is available, you can choose to change the license type to offline. After getting the app, you can then manage it by selecting **Manage** > **Products & Services** in the [Store for Business](https://businessstore.microsoft.com/). For instance, you can download the app and its dependencies. In addition, you can deploy this downloaded app (and its dependencies) to users using Intune.  
 
 ## Syncing Intune to the Store for Business 
 
