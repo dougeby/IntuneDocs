@@ -64,7 +64,7 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 4. Confirm that the Windows 10 **Version** is **1607 or higher**.
 
     > [!IMPORTANT]
-    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-your-w10-device-your-account).
+    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-windows-10-device.md).  
 
 ## Enroll Windows 10 Desktop
 
