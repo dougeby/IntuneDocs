@@ -44,7 +44,7 @@ This article shows you how to read the StageNow logs, and lists some potential i
 
 ## Read the logs
 
-When looking at the logs, there's an error whenever you see `<characteristic-error>` tag. Error details are written to the `<parm-error>` > `desc` property.
+When looking at the logs, there's an error whenever you see the `<characteristic-error>` tag. Error details are written to the `<parm-error>` > `desc` property.
 
 Zebra devices include different error reporting levels:
 
@@ -67,7 +67,7 @@ For example, you have the following input profile:
 </wap-provisioningdoc>
 ```
 
-In the log, the XML is identical to the input. This output means the profile successfully applied to the device with no errors:
+In the log, the XML is identical to the input. This matching output means the profile successfully applied to the device with no errors:
 
 ```xml
 <wap-provisioningdoc>
@@ -116,9 +116,9 @@ This section lists possible issues you may run into when using Zebra devices wit
 
 When older devices sign in using the Company Portal app, the logs show a message that the System WebView component is out of date, and needs upgraded to continue. If the device doesn't have Google Play installed, get the updated version of the component, and apply it to the devices. Or, update to the latest device OS issued by Zebra.
 
-### Management actions taking a long time
+### Management actions take a long time
 
-If Google Play services aren't available, some tasks take up to 8 hours to finish. [Limitations of Intune Company Portal app for Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) may be a good resource.
+If Google Play services aren't available, some tasks take up to 8 hours to finish. [Limitations of Intune Company Portal app for Android](https://support.microsoft.com/help/3211588/limitations-of-intune-company-portal-app-for-android-in-china) (opens another Microsoft web site) may be a good resource.
 
 ### “Device spoofing suspected” shows in Intune
 
@@ -127,3 +127,5 @@ This error means that Intune suspects a non-Zebra Android device is reporting it
 ## Next steps
 
 [Zebra discussion boards](https://developer.zebra.com/community/home/discussions) (opens Zebra's web site)
+
+[Use and manage Zebra devices with Mobility Extensions in Intune](android-zebra-mx-overview.md)
