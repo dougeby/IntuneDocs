@@ -42,6 +42,7 @@ The devices to be enrolled must also:
 - Have access to the internet.
 - Have access to your Active Directory (VPN connection not supported).
 - Undergo the out-of-box experience (OOBE).
+- Be able to ping the domain controller of the domain you are trying to join.
 
 ## Set up Windows 10 automatic enrollment
 
