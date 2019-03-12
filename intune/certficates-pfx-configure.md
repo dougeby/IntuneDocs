@@ -57,15 +57,13 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 
   The NDES certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
-- **PFX Certificate Connector for Microsoft Intune**: If you plan to use S/MIME email encryption, use the Intune portal to download the **PFX Certificate Connector** for Microsoft Intune.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+- **Imported PFX Certificates Connector for Microsoft Intune**: If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
   > [!NOTE]  
-  > In January of 2019, The PFX certificate connector was updated with the capability to automatically update itself when new versions become available. To use this capability, you must:
+  > The PFX certificate connector has the capability to automatically update itself when new versions become available. To use this capability, you must:
   > - Download and update the PFX Certificate Connector on your server.
   > - Open firewalls to allow the connector to reach **autoupdate.msappproxy.net** on port **443**.  
-  > 
-  > If you don't update your connector, or if you install the connector after January 2019 but don't provide firewall access, the connector won't automatically update when new versions are available.  
 
 
 - **Windows Server**: You use a Windows Server to host:
@@ -73,7 +71,7 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   - Microsoft Intune Certificate Connector - for authentication and S/MIME email signing scenarios
   - PFX Certificate Connector for Microsoft Intune - for S/MIME email encryption scenarios.
 
-  You can install both connectors (*Microsoft Intune Certificate Connector* and *PFX Certificate Connector for Microsoft Intune*) on the same server.
+  You can install both connectors (*Microsoft Intune Certificate Connector* and *Imported PFX Certificates Connector*) on the same server.
 
 ## Export the root certificate from the Enterprise CA
 
