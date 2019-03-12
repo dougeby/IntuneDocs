@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/11/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -91,20 +91,20 @@ To set the MDM authority to Intune, follow these steps.
 3. Select the banner indicating that you haven't enabled device management, or if you don't immediately see the banner, select **Device enrollment**. The **Choose MDM Authority** blade will be displayed if you haven't enabled device management yet.
 
     > [!NOTE]
-    > The orange banner is only displayed if you haven't yet set the MDM authority.
+    > If you have set the MDM Authority, you will see the MDM authority value on the **Device enrollment** blade. The orange banner is only displayed if you haven't yet set the MDM authority. 
 
     ![Image of the Choose MDM Authority blade](./media/choose-mdm-authority.png) 
 
-4. Under **Choose MDM Authority**, set your MDM authority to **Intune MDM Authority**.
+4. If your MDM Authority is not set, under **Choose MDM Authority**, set your MDM authority to **Intune MDM Authority**.
 
 For more information about the MDM authority, see [Set the mobile device management authority](mdm-authority-set.md).
 
 ## Configure your custom domain name (Optional)
 
-As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Microsoft 365 admin center. You will add, verify and configure your custom domain name.  
+As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Microsoft 365 admin center. You can add, verify and configure your custom domain name using the following steps.  
 
 > [!IMPORTANT]
-> You cannot rename or remove the initial **onmicrosoft.com** domain name. You can add, verify or remove custom domain names used with Intune to keep your business identity clear.
+> You cannot rename or remove the *initial* **onmicrosoft.com** part of the domain name. However, you can add, verify or remove *custom* domain names used with Intune to keep your business identity clear. For more information, see [Configure a custom domain name](custom-domain-name-configure.md).
 
 1. Go to [Microsoft 365 admin center](https://admin.microsoft.com) and sign in using your administrator account.
 
@@ -116,7 +116,7 @@ As mentioned above, if your organization has its own custom domain that you want
 
 4. Verify that you are the owner of the domain that you entered in the previous. 
     
-    Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address then what was provided when the domain was registered.
+    Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address. Also, the email address may be different then what was provided when the domain was registered.
 
    ![Screenshot of Microsoft 365 admin center - Verify domain](./media/domain-custom-verify.png)
 
