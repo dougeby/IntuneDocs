@@ -54,7 +54,7 @@ The Help and support experience for Intune is available from the [Microsoft 365 
 ![Intune blades](./media/get-support/intune-blades.png)
 
 
-This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the [previous Help and support experience](#azure-help-+-support-experience). 
+This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the previous Help and support experience. 
 
 To access Help and support, use the following:  
 - **Device Management Dashboard:**

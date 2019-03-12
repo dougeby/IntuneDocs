@@ -153,13 +153,13 @@ __Perform user-impacting remote actions on Microsoft Intune devices__ | [DeviceM
 __Read and write Microsoft Intune devices__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Read Microsoft Intune devices__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Read and write Microsoft Intune RBAC settings__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Read Microsoft Intune RBAC settings__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Read Microsoft Intune RBAC settings__ | DeviceManagementRBAC.Read.All
 __Read and write Microsoft Intune apps__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Read Microsoft Intune apps__ | [DeviceManagementApps.Read.All](#app-ro)
-__Read and write Microsoft Intune Device Configuration and Policies__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Read and write Microsoft Intune Device Configuration and Policies__ | DeviceManagementConfiguration.ReadWrite.All
 __Read Microsoft Intune Device Configuration and Policies__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Read and write Microsoft Intune configuration__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Read Microsoft Intune configuration__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Read Microsoft Intune configuration__ | DeviceManagementServiceConfig.Read.All
 
 The table lists the settings as they appear in the Azure portal. The following sections describe the scopes in alphabetical order.
 
