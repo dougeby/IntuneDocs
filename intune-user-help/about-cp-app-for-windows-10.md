@@ -1,4 +1,4 @@
----
+    ---
 # required metadata
 
 title: Installing the Company Portal app for Windows 10 | Microsoft Docs
@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# What happens if you install the Company Portal app and enroll your Windows 10 device?
+# Installing the Company Portal app for Windows 10  
 
 When you install the Company Portal app and then use the app to enroll your Windows 10 Enterprise or Professional device in Intune, you can then use the Company Portal app to:
 

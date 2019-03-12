@@ -35,8 +35,8 @@ Enroll your devices to get access to work or school email, files, and other reso
 
 To enroll your device in Intune, follow the set of instructions that match your permissions or current account status.
 
-## If your company lets you use the Company Portal from the Microsoft Store  
-Install the Company Portal app on your device:
+## Enroll through Company Portal  
+Follow these steps if you can install the Company Portal app from the Microsoft Store. 
 
 1.  Tap **Start** > **Store**.  
 
@@ -81,7 +81,8 @@ Enroll your device:
 
     ![Account added screen](./media/WP81-enroll-4-account-added.png)  
 
-## If you are not allowed to access the Microsoft Store from your Windows Phone or if you do not have a Microsoft Account  
+## Enroll through Settings app  
+Follow these steps if you can't access the Microsoft Store from your Windows Phone device, or if you don't have a Microsoft Account.
 
 1.  Tap  **Settings** &gt; **workplace**.  
 

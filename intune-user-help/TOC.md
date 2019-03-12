@@ -115,7 +115,7 @@
 #### [Trouble getting macOS VM managed](unable-to-get-macOS-device-managed.md) 
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [About Company Portal for Windows 10](about-cp-app-for-windows-10.md)
 #### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### Enroll your Windows device
 #### [Get started with Windows enrollment](windows-enrollment-company-portal.md)
