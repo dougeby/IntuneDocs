@@ -1,7 +1,7 @@
 {
 	"redirections": [
 		{
-			"source_path": "intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md", 
+			"source_path": "intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md", 
 			"redirect_url": "/intune-user-help/about-cp-app-for-windows-10.md",
 			"redirect_document_id": false
 		},
