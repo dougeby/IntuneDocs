@@ -61,8 +61,8 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
 
-  This PFX certificate connector has the capability to automatically update itself when new versions become available. To use the update capability, you must:
-  - Download and update the PFX Certificate Connector on your server.
+  This connector can automatically update itself when new versions become available. To use the update capability, you must:
+  - Install the PFX Certificate Connector on your server.
   - Open firewalls to allow the connector to reach **autoupdate.msappproxy.net** on port **443**.  
 
 
