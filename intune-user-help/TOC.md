@@ -117,7 +117,7 @@
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
 ### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
 #### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Enroll your Windows device]
+### Enroll your Windows device
 #### [Get started with Windows enrollment](windows-enrollment-company-portal.md)
 #### [Enroll Windows 10 device](enroll-windows-10-device.md)
 #### [Enroll Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
