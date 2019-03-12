@@ -1,4 +1,4 @@
-    ---
+---
 # required metadata
 
 title: Installing the Company Portal app for Windows 10 | Microsoft Docs
