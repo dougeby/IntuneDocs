@@ -234,7 +234,7 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
 
 #### Additional settings for Outlook <!-- 3301182  -->
-You can now configure the followiong additional settings for Outlook for iOS and Android using Intune:
+You can now configure the following additional settings for Outlook for iOS and Android using Intune:
 - Only allow work or school accounts to be used in Outlook in iOS and Android
 - Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
 - Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
