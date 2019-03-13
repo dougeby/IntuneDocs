@@ -135,7 +135,7 @@ During BYOD enrollments, users see a notification that tells them when they've m
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
-Device limit restrictions do not apply for the following Windows corporate enrollment types:
+### Device limit restrictions do not apply for the following Windows corporate enrollment types:
 
 - Co-managed enrollments
 - GPO enrollments
