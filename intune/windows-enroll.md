@@ -12,6 +12,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 
@@ -46,8 +47,8 @@ Two factors determine how you can simplify Windows device enrollment:
 
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |User enrollment|
+|**Earlier Windows versions**|User enrollment|User enrollment|
 
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 

@@ -12,6 +12,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 
@@ -43,7 +44,7 @@ Use the following steps to create a new group.
 3. On the **Intune** pane, choose **Groups** and then choose **New group** in the **All groups** pane.
    ![Screenshot of the Azure portal with New Group selected](./media/groups-add-new.png)
 4. For **Group type**, choose one of the following options:
-    - **Security**: Security groups are a good resource to use when you populate user groups. Because security groups define who can access which resources, security groups can translate well to Intune user groups. Security groups that are synced from Active Directory to Azure Active Directory, or which you create directly in Azure Active Directory through the Office 365 admin center or the Azure portal are available to you to use when you create user groups in Intune.
+    - **Security**: Security groups are a good resource to use when you populate user groups. Because security groups define who can access which resources, security groups can translate well to Intune user groups. Security groups that are synced from Active Directory to Azure Active Directory, or which you create directly in Azure Active Directory through the Microsoft 365 admin center or the Azure portal are available to you to use when you create user groups in Intune.
     - **Office 365**
 
 5. Type a **Name** and **Description** for the new group. These properties only appear in the management portal and are not displayed to users.

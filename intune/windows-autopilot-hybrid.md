@@ -12,6 +12,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
  
@@ -41,6 +42,7 @@ The devices to be enrolled must also:
 - Have access to the internet.
 - Have access to your Active Directory (VPN connection not supported).
 - Undergo the out-of-box experience (OOBE).
+- Be able to ping the domain controller of the domain you are trying to join.
 
 ## Set up Windows 10 automatic enrollment
 

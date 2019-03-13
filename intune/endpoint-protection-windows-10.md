@@ -6,10 +6,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2018
-ms.topic: conceptual
+ms.date: 03/04/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 
@@ -49,7 +50,7 @@ While using Microsoft Edge, Windows Defender Application Guard protects your env
 
 Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
 
-- **Application Guard**: **Enable** to turn on this feature, which opens unapproved sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (approved and unapproved) opens on the device.
+- **Application Guard**: **Enabled for Edge** to turn on this feature, which opens untrusted sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (trusted and untrusted) opens on the device.
 - **Clipboard behavior**: Choose what copy/paste actions are allowed between the local PC and the Application Guard virtual browser.
 - **External content on enterprise sites**: **Block** content from unapproved websites from loading. **Not configured** (default) means that non-enterprise sites can open on the device.
 - **Print from virtual browser**: Choose **Allow** so PDF, XPS, local, and network printers can print content from the virtual browser. **Not configured** (default) disables all print features.
@@ -312,7 +313,15 @@ Help protect valuable data from malicious apps and threats, such as ransomware.
 
 ### Network filtering
 
-Block outbound connections from any app to low reputation IP/domains.
+- **Network protection**: Protects outbound connections from any app to low reputation IP addresses or domains. The intent is to protect end users from apps with access to phishing scams, exploit-hosting sites, and malicious content on the Internet. It also prevents third-party browsers from connecting to dangerous sites.
+
+  Your options:
+
+  - **Not configured** (default) disables this feature. Users and apps aren't blocked from connecting to dangerous domains. Administrators can't see this activity in Windows Defender Security Center.
+  - **Enable** turns on network protection, and blocks users and apps from connecting to dangerous domains. Administrators can see this activity in Windows Defender Security Center.
+  - **Audit only**: Users and apps aren't blocked from connecting to dangerous domains. Administrators can see this activity in Windows Defender Security Center.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
 ### Exploit protection
 

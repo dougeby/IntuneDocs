@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
@@ -103,7 +104,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 
 1.  Verify that the MDM Authority has been [set appropriately](mdm-authority-set.md).
     
-2.  Verify that the user’s credentials have synced correctly with Azure Active Directory. You can verify that the user's UPN matches the Active Directory information in the Office 365 portal.
+2.  Verify that the user’s credentials have synced correctly with Azure Active Directory. You can verify that the user's UPN matches the Active Directory information in the Microsoft 365 admin center.
     If the UPN doesn't match the Active Directory information:
 
     1.  Turn off DirSync on the local server.
@@ -136,7 +137,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 ### Unable to create policy or enroll devices if the company name contains special characters
 **Issue:** You can't create policy or enroll devices.
 
-**Resolution:** In the [Office 365 admin center](https://portal.office.com/), remove the special characters from the company name and save the company information.
+**Resolution:** In the [Microsoft 365 admin center](https://admin.microsoft.com/), remove the special characters from the company name and save the company information.
 
 ### Unable to sign in or enroll devices when you have multiple verified domains
 **Issue:** This problem may occur when you add a second verified domain to your ADFS. Users with the user principal name (UPN) suffix of the second domain may not be able to log into the portals or enroll devices.
@@ -231,7 +232,7 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution 1**:
 
-The user might be able to retrieve the missing certificate by following the instructions in [Your device is missing a required certificate](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). If the error persists, try Resolution 2.
+The user might be able to retrieve the missing certificate by following the instructions in [Your device is missing a required certificate](/intune-user-help/your-device-is-missing-a-required-certificate-android). If the error persists, try Resolution 2.
 
 **Resolution 2**:
 

@@ -6,10 +6,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 
@@ -112,8 +113,12 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 1.	In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
 2.	Add the complete installation command line to install the app. 
 
-    For example, if your app filename is **MyApp123**, add the following:
-    `msiexec /i “MyApp123.msi”`
+    For example, if your app filename is **MyApp123**, add the following:<br>
+    `msiexec /i “MyApp123.msi”`<p>
+    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. Such as:<br>
+    'ApplicationName.exe /quite'<br>
+    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
+    For the specific agruments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
@@ -234,7 +239,7 @@ At this point you have completed steps to add a Win32 app to Intune. For informa
 
 ## Delivery Optimization
 
-Windows 10 RS3 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 1709 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and via Intune Device configuration. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## Install required and available apps on devices
 

@@ -4,7 +4,10 @@
   items:
   - name: Intune
     tocHref: /enterprise-mobility-security/intune/index
-    topicHref: /device-mgmt/index
+    topicHref: /device-mgmt/index  
+  - name: Intune user help
+    tocHref: /intune-user-help/
+    topicHref: /intune-user-help
 - name: Device Management
   tocHref: /azure/
   topicHref: /azure/index

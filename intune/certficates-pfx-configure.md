@@ -9,6 +9,7 @@ ms.date: 03/12/2018
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid:
 

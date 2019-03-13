@@ -11,6 +11,7 @@ ms.date: 02/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 
@@ -171,7 +172,7 @@ You can configure Intune to automatically delete devices that appear to be inact
 
 You might need to delete devices from Azure AD due to communication issues or missing devices. You can use the **Delete** action to remove device records from the Azure portal for devices that you know are unreachable and unlikely to communicate with Azure again. The **Delete** action doesn't remove a device from management.
 
-1.  Sign in to [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) by using your admin credentials. You can also sign in to the [Office 365 portal](https://portal.office.com). From the menu, select **Admin centers** > **Azure AD**.
+1.  Sign in to [Azure Active Directory in the Azure portal](http://aka.ms/accessaad) by using your admin credentials. You can also sign in to the [Microsoft 365 admin center](https://admin.microsoft.com). From the menu, select **Admin centers** > **Azure AD**.
 2.  Create an Azure subscription if you don’t have one. This shouldn't require a credit card or payment if you have a paid account (select the **Register your free Azure Active Directory** subscription link).
 3.  Select **Azure Active Directory**, and then select your organization.
 4.  Select the **Users** tab.

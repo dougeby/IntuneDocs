@@ -67,7 +67,7 @@ Complete the following steps to enroll your macOS device in management. If you'r
     * Set up your Mac  
 ## Get the Company Portal app      
 Download the Intune Company Portal app for macOS on your device. The app lets you monitor, sync, add, and remove your device from management, and install apps. These steps also describe how to register your device with Company Portal.  
-1. On your macOS device, go to http://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+1. On your macOS device, go to https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
 2. Sign in to the Company Portal website with your work or school account. 
 3. Click **Get the App** to download the Company Portal installer for macOS.
 4. When prompted, open the .pkg file and complete the installation steps.

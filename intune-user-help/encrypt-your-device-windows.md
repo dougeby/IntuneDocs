@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to protect your Windows device with encryption | Microsoft Docs
-description: Describes how to encrypt a Windows device
+description: Turn on BitLocker to encrypt a Windows 10 device 
 keywords:
 author: lenewsad
 ms.author: lanewsad

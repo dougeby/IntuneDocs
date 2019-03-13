@@ -7,10 +7,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 
@@ -85,12 +86,12 @@ The **MamCheckin** entity represents data gathered when a Mobile Application Man
 | Property | Description | Example |
 |---------|------------|--------|
 | DateKey |Date Key when the MAM app check-in was recorded in the data warehouse. | 20160703 |
-| ApplicationInstanceKey |Key of the app instance associated with this MAM app check-in. |5/2/1900 12:00:00 AM |
-| UserKey |Key of the user associated with this MAM app check-in. |1/12/1900 12:00:00 AM |
-| ApplicationKey |Key of the MAM app that has checked in. |1/10/1900 12:00:00 AM |
-| DeviceHealthKey |Key of DeviceHealth associated with this MAM app check-in. |1/2/1900 12:00:00 AM |
-| PlatformKey |Represents the platform of the device associated with this MAM app check-in. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Represents the effective applied policy associated with the MAM app that has checked in. An effective applied policy results from merging all policies relevant to a particular app and user. |5/2/1900 12:00:00 AM |
+| ApplicationInstanceKey |Key of the app instance associated with this MAM app check-in. | 123 |
+| UserKey |Key of the user associated with this MAM app check-in. | 4323 |
+| ApplicationKey |Key of the MAM app that has checked in. |234 |
+| DeviceHealthKey |Key of DeviceHealth associated with this MAM app check-in. | 321 |
+| PlatformKey |Represents the platform of the device associated with this MAM app check-in. |123 |
+| EffectiveAppliedPolicyKey |Represents the effective applied policy associated with the MAM app that has checked in. An effective applied policy results from merging all policies relevant to a particular app and user. | 322 |
 | LastCheckInDate |Date and time when this MAM app last checked in. Value can be null. |11/23/2016 12:00:00 AM |
 
 ## MamDeviceHealth
@@ -99,8 +100,8 @@ The **MamDeviceHealth** entity represents devices that have Mobile Application M
 
 | Property | Description | Example |
 |---------|------------|--------|
-| DeviceHealthKey |Unique identifier of the device and its associated health in the data warehouse - surrogate key. |1/1/1900 12:00:00 AM |
-| DeviceHealth |Unique identifier of the device and its associated health - similar to DeviceHealthKey, but the identifier is a natural key. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |Unique identifier of the device and its associated health in the data warehouse - surrogate key. |123 |
+| DeviceHealth |Unique identifier of the device and its associated health - similar to DeviceHealthKey, but the identifier is a natural key. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Represents the status of the device. <br>Not available - no information on this device. <br>Healthy - device is not jailbroken. <br>Unhealthy - device is jailbroken. |Not Available Healthy Unhealthy |
 | RowLastModifiedDateTimeUtc |Date and time in UTC when this specific MAM Device Health was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 

@@ -60,7 +60,7 @@ To learn about what your company support can and can't see on your device, use t
 - [Installing the Company Portal app for Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installing the Company Portal app for iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Installing the Company Portal app for macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Installing the Company Portal app for Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [Installing the Company Portal app for Windows](about-cp-app-for-windows-10.md)
 
 ## What kind of computers or devices can you add to the Company Portal?
 -   Apple devices using iOS (such as iPhone and iPad) and macOS (such as MacBook and iMac)

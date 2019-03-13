@@ -9,6 +9,7 @@ ms.date: 03/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 

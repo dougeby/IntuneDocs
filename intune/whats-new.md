@@ -11,6 +11,7 @@ ms.date: 02/27/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 
@@ -30,7 +31,7 @@ ms.collection: M365-identity-device-management
 # What's new in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Learn what’s new each week in Microsoft Intune. You can also find upcoming changes, [important notices](#notices), and information about [past releases](whats-new-archive.md). 
+Learn what’s new each week in Microsoft Intune. You can also find [upcoming changes](in-development.md), [important notices](#notices), and information about [past releases](whats-new-archive.md). 
 
 > [!Note]
 > Some features may roll out over several weeks and might not be available to all customers in the first week.
@@ -88,7 +89,7 @@ In Intune, select **Client apps** > **Apps** > "App name" > **Device install sta
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new-app-ui). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md).
 
 
 ### Device configuration
@@ -249,6 +250,8 @@ The setting below appears in the Intune console, but when configured, will not w
 
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
+
+For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md). 
 
 #### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
@@ -439,9 +442,7 @@ Applies to: Windows 10 and later
 ### Device enrollment
 
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
-More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#configuration-policies-reference).
-
-
+More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#enrollment-failure-reference).
 
 ### Monitor and troubleshoot
 
@@ -569,7 +570,7 @@ If you are using Volume Purchase Program (VPP) to pre-provision the Company Port
 Intune now supports using the Device Enrollment Program on macOS devices for Apple School Manager accounts.  For more information, see [Automatically enroll macOS devices with Apple School Manager or Device Enrollment Program](device-enrollment-program-enroll-macos.md).
 
 ### New Intune device subscription SKU <!--3312071-->
-To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available directly through the Office admin portal, and through the [Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Microsoft Products and Services Agreement](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [Microsoft Open Agreements](https://partner.microsoft.com/licensing/licensing-agreements), and [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
+To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available directly through the Microsoft 365 admin center, and through the [Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Microsoft Products and Services Agreement](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [Microsoft Open Agreements](https://partner.microsoft.com/licensing/licensing-agreements), and [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### Device management
 
@@ -757,6 +758,9 @@ The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.app
 #### Windows 10 app deployment using Intune <!-- 2309001 -->
 Building upon the existing support for line-of-business (LOB) apps and Microsoft Store for Business apps, administrators can use Intune to deploy most of their organization’s existing applications to end users on Windows 10 devices. Administrators can add, install, and uninstall applications for Windows 10 users in a variety of formats, such as MSIs, Setup.exe, or MSP. Intune will evaluate requirement rules before downloading and installing, notifying end users of the status or reboot requirements using the Windows 10 Action Center. This functionality will effectively unblock organizations interested in shifting this workload to Intune and the cloud. This feature is currently in public preview and we expect to add significant new capabilities to the feature over the next few months. 
 
+#### App Protection Policy (APP) settings for web data <!-- 2662995 -->
+APP policy settings for web content on both Android and iOS devices will be updated to better handle both http and https web links, as well as data transfer via iOS Universal Links and Android App Links. 
+
 #### End user device and app content menu <!-- 2771453 -->
 End users can now use the context menu on device and apps to trigger common actions like renaming a device or checking compliance. 
 
@@ -852,119 +856,7 @@ In **Device compliance** > **Policies** > **Create policy** > **Android** > **Sy
 Applies to: 
 - Android
 
-<!-- ########################## -->
+<!-- ########################### -->
 ## Notices
 
-### Check your “Delay Visibility of Software updates” setting in Intune
-We shared in MC171466 that we were moving a few settings around in the console. With the March update to Intune, we'll completely remove the “Delay Visibility of Software updates” setting from the iOS update policy blade. This will not change the way your scheduled software updates apply but it may affect how long the visibility of an update is delayed for end users. You may need to take action before the end of March if you use this setting.
-
-#### How does this affect me?
-After the February Intune service update, you’ll notice that the setting appears both in Device restriction profiles in the console and in iOS update policies in the Software update blade. When you see this change reflected in the console, here’s what you may need to do.
-• For existing Update policies for iOS: If you have custom configured this setting to anything other than the default 30 days, and want your existing configurations for the Delay visibility setting to continue to apply after the end of March, you’ll have to create a new iOS device restriction profile. Here, the Delay visibility setting will need to have the same values as in the existing iOS update policy and be targeted to the same groups. After the March service update, you will no longer be able to edit values for this setting in existing iOS update policies since it will no longer be visible in this blade. You will configure this setting in the new profiles instead.
-If the value for number of days you can delay visibility does not match in both locations for custom configured setting values, the Delay Visibility setting will not work, and end users will see the update on their devices as soon as it is available. This may have minimal impact for most customers since the other settings in the Software Update Policy blade have always taken precedence over this setting in the console.
-• For new update policies for iOS: If you try to create new policies in the Software updates blade after the Intune February service update, you will see this setting grayed out. You’ll see a note in the console redirecting you to the Device configuration blade if you wish to delay visibility of updates.
-
-#### What can I do to prepare for this change?
-You do not need to take action if you do not use this setting or do not want to delay visibility of software updates for your end users.
-
-If you wish to delay visibility of updates, start configuring the setting in new profiles in the Device Configuration blade under Device Restrictions > General. If you have this setting custom configured in existing iOS update policies, create a new equivalent device restriction profile with the same value for “days” to delay visibility of updates to your users, after the February update and before the March update rolls out.
-You may want to update your IT Pro guidance and inform your helpdesk.
-See our support blog post at Additional Information for details on how to configure this setting.
- 
-#### Additional Information
-https://aka.ms/Delay_visibility_setting_iOS
-
-###  Upcoming change to the Intune Data Warehouse API
-We will be making two changes during the 1903 timeframe:
-- Beta Filter Deprecation<br>
-    Deprecation of unsupported beta filters instantiated.   
-- 1.0 changes reflecting back to beta<br>
-    Changes made to our v1.0 collections will now be reflected in beta.  
-
-
-###Plan for Change: Workflow changes for iOS 12 enrollment in Intune
-Apple has announced some changes related to iOS devices enrolling into Mobile Device Management (MDM) services. The change will likely be seen in the spring 2019 release of iOS as well as all future iOS releases.
-
-####How does this affect me?
-If your end users upgrade their devices to this new version of iOS 12 in the spring, know that there is a modified workflow and they will need to take additional steps to complete enrollment into Intune. When Apple introduces these changes, end users will have to:
-•            Begin the enrollment process in the Company Portal app to download a management profile
-•            Go to Settings > General > Profiles
-•            Select the correct profile and click through to Install
-•            Return to the Company Portal to complete enrollment 
-
-Devices that are already enrolled and upgrade to the new iOS release should not be affected unless they are unenrolled and need a fresh enrollment.
-Enrollment experience on devices running iOS 12.1 or prior will not change with this new release by Apple.
-
-####What can I do to prepare for this change?
-You should plan to upgrade your documentation and your end user guidance. You may also want to let your helpdesk know of these changes. We’ll keep you informed through the Message Center and our What’s New page when this change goes live.
-
-Click Additional Information for a support blog post with screenshots and a video of the expected enrollment flow.
-
-####Additional Information
-https://aka.ms/iOS_enrollment_changes
-
-### Plan for Change: User experience update to Intune Company Portal app for iOS
-We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
-
-#### How does this affect me?
-This user experience update, while maintaining current iOS Company Portal functionality, will feature:
-- A home page with native iOS look and feel 
-- Filtering capabilities on content listings and search including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
-- Ability to search ebooks
-- Search history for apps and ebooks
-If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You will also have the opportunity to provide feedback directly to the Intune team.  
-
-#### What can I do to prepare for this change?
-You do not need to take any action; these changes will be released in an upcoming iOS CP app release. 
-
-#### Additional Information
-[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### Reminder: Removal of existing Exchange Online to Intune connectors
-We shared in MC165575 that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. With the February update to the Intune service, we’ll disable the button to set up new connectors. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
- 
-#### How does this affect me?
-You are receiving this message since our records indicate that you may be using the ‘Service to Service’ connector functionality in your environment. 
-
-The ‘Service to Service’ connector supports Intune management of Exchange Active Sync Only devices for Exchange Online and does not support on-premises infrastructure. This connector, due to the way it displayed in the console, appears to be necessary for Conditional Access (CA), when in reality, it is not needed for CA. You may have been using this connector to understand the usage of Exchange Online prior to applying Conditional Access. This information is already provided by the Microsoft 365 Admin Center. Here, you’ll find provides usage reports for Exchange Online including the app type being used for between 7 and 180 days. For more information see Office 365 Reports in the Admin Center - Email apps usage  
-
-If you use this connector in your environment, you won’t be able to monitor or wipe Exchange Active Sync Only devices in Intune after connectors have been disabled in February. There is no anticipated impact to your end users during this change.
- 
-#### What can I do to prepare for this change?
-If you have the Service to Service connector set up and have Exchange Active Sync Only devices, switch to other methods of managing your devices. You have the following options:
-•	Enroll devices in Mobile Device Management (MDM) 
-•	Use Intune App Protection Policies to manage your devices
-•	Use Exchange controls as outlined in documentation here
-  
-#### Additional Information
-https://docs.microsoft.com/intune/exchange-service-connector-configure
- 
-
-
-### Plan for change: Performance updates to Intune for Education <!--1750215-->
-We’re adding some updates to Intune for Education to increase speed and reliability when you assign settings to your users or devices. As part of this change, towards the end of November, we’ll be moving your policies or settings assignments to new groups.
-
-#### How does this affect me?
-
-As an Intune for Education customer, you have two dynamic Azure Active Directory (Azure AD) groups: “All Users” and “All Devices”. With these updates, these “All Users” and “All devices” Azure AD groups will not be visible in the Intune for Education console. They will, however, still be visible in the Intune on Azure console and will be renamed as “All Users (Obsolete, do not use)” and “All Devices (Obsolete, do not use)”.
-
-When the updates roll out, you will no longer need to use Azure AD groups to assign apps and settings in Intune. Instead, we will move your Settings assignments to new groups in the Intune for Education console that we’ll create for you that will still show up as “All Users” and “All Devices” as before. These changes are in the backend, so you will not notice anything different in the Intune for Education console. There is no impact anticipated to your end users or enrolled devices. 
-
-#### What do I need to do to prepare for this change?
-You do not need to do anything while we move your policy assignments. If you currently assign policies in the Intune for Education console, continue doing so.
-
-If you currently assign policies to the Azure AD groups mentioned above in Intune on Azure, start assigning these to the All Users and All Devices group in the Intune for Education console instead. When you see the Azure AD groups renamed as obsolete in the console, stop assigning policies in Azure AD. If you are not currently using the renamed groups for any other purpose, you should delete them.
-
-
-### Take action: Please update your Android device restriction or compliance policy password settings in Intune
-Intune will be removing the available password type “device default” for Android 4.4 and higher devices. Due to differences in Android platforms and device defaults, that policy is often treated as optional by the device. To clear up confusion on when this setting is enforced on Android, we’ll remove this setting from the UI in an upcoming release. 
-#### How does this affect me?
-- If your intent is to require a password on the devices, we recommend instead of using “device default” you edit your Android platform profile(s) to clearly articulate the required password type.
-- If your intent is to let your end user to decide on whether to create a password, select the “Not configured” button. 
-When we remove this setting from the UI, if the setting is still set, you will be prompted to choose a value other than “Device default” on your next edit of the profile.
-What do I need to do to prepare for this change?
-Review the password settings in your Android and Android enterprise device restriction and compliance policies. These are listed under System security for Compliance policies and under either Device password or Work profile settings for Device restrictions. Additional information has a link to more details and screenshots for where these settings are configured.
-#### Additional information
-https://aka.ms/PasswordSettings 
-
+[!INCLUDE [Intune notices](./includes/intune-notices.md)]
