@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/13/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Set up the Intune on-premises Exchange connector in Microsoft Intune Azure
 
-In an on-premises Exchange Server environment, Intune conditional access can be used to allow or block access to Exchange on-premises mailboxes. Use Exchange Active Sync on-premises connectors to connect Intune to your Exchange organizations, and set up Intune conditional access along with device compliance policies. Then, when a device tries to connect to Exchange, Intune determines if the device is enrolled in Intune and is compliant. To determine which devices are enrolled in Intune, the on-premises Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records. For more about how this works, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
+In an on-premises Exchange Server environment, Intune conditional access can be used to allow or block access to Exchange on-premises mailboxes. Use Exchange Active Sync on-premises connectors to connect Intune to your Exchange organizations, and set up Intune conditional access along with device compliance policies. Then, when a device tries to connect to Exchange, Intune determines if the device is enrolled in Intune and is compliant. To determine which devices are enrolled in Intune, the on-premises Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records. For more information, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Intune now supports multiple on-premises Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
@@ -43,22 +43,23 @@ To set up a connection that enables Microsoft Intune to communicate with the on-
 4. Repeat these steps for each Exchange organization you want to connect to Intune.
 
 ## Intune on-premises Exchange connector requirements
-The following table lists the requirements for the computer on which you install the on-premises Exchange connector.
+You'll need an account with an Intune license that can be used by the connector to connect to Exchange. The account is specified when you install the connector.  
 
+The following table lists the requirements for the computer on which you install the on-premises Exchange connector.  
 
-|            Requirement             |                                                                                                                                                                                                        More information                                                                                                                                                                                                        |
-|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         Operating systems          |                                                               Intune supports the on-premises Exchange connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.<br /><br />The connector isn't supported on any Server Core installation.                                                                |
-|         Microsoft Exchange         |                                                                           On-premises connectors require Microsoft Exchange 2010 SP3 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the <strong>new</strong> or <strong>legacy</strong> configuration, contact your account manager.                                                                           |
-| Mobile device management authority |                                                                                                                              [Set the mobile device management authority to Intune](mdm-authority-set.md).                                                                                                                               |
-|              Hardware              |                                                                                                                                                     The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space.                                                                                                                                                      |
-|  Active Directory synchronization  |                                                                                      Before you can use the connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](users-add.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory.                                                                                      |
-|        Additional software         |                                                                                                                                           A full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector.                                                                                                                                           |
-|              Network               | The computer on which you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains that are used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com. |
+|  Requirement  |   More information     |
+|---------------|------------------------|
+|  Operating systems        | Intune supports the on-premises Exchange connector on a computer that runs any edition of Windows Server 2008 SP2 64-bit, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, or Windows Server 2016.<br /><br />The connector isn't supported on any Server Core installation.  |
+| Microsoft Exchange          | On-premises connectors require Microsoft Exchange 2010 SP3 or later or legacy Exchange Online Dedicated. To determine if your Exchange Online Dedicated environment is in the <strong>new</strong> or <strong>legacy</strong> configuration, contact your account manager. |
+| Mobile device management authority           | [Set the mobile device management authority to Intune](mdm-authority-set.md). |
+| Hardware              | The computer on which you install the connector requires a 1.6 GHz CPU with 2 GB of RAM and 10 GB of free disk space. |
+|  Active Directory synchronization             | Before you can use the connector to connect Intune to your Exchange Server, you must [set up Active Directory synchronization](users-add.md) so that your local users and security groups are synchronized with your instance of Azure Active Directory. |
+| Additional software         | A full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0 must be installed on the computer that hosts the connector. |
+| Network               | The computer on which you install the connector must be in a domain that has a trust relationship to the domain that hosts your Exchange Server.<br /><br />The computer requires configurations to enable it to access the Intune service through firewalls and proxy servers over Ports 80 and 443. Domains that are used by Intune include manage.microsoft.com, &#42;manage.microsoft.com, and &#42;.manage.microsoft.com. |
 
 ### Exchange cmdlet requirements
 
-You must create an Active Directory user account that is used by the on-premises Exchange connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
+Create an Active Directory user account that will be used by the on-premises Exchange connector. The account must have permission to run the following required Windows PowerShell Exchange cmdlets:
 
 
  -   Get-ActiveSyncOrganizationSettings, Set-ActiveSyncOrganizationSettings
@@ -120,9 +121,9 @@ Perform the following steps to install the Intune on-premises Exchange connector
 
        4. Choose **OK**.
 
-4. In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server.
+4. In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server. The account you specify must have a license to use Intune. 
 
-5. Provide the necessary credentials to send notifications to a user’s Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to be able to send notifications by email. You can configure these notifications with conditional access policies in Intune.  
+5. Provide the necessary credentials to send notifications to a user’s Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to send notifications by email. You can configure these notifications with conditional access policies in Intune.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -163,10 +164,10 @@ You can also check the time and date of the last successful synchronization atte
 
 ### System Center Operations Manager management pack
 
-Beginning with the Intune 1710 release, you can use the [Operations Manager management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). This gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
+Beginning with the Intune 1710 release, you can use the [Operations Manager management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Using the management pack gives you different ways of monitoring the Exchange connector when you need to troubleshoot issues.
 
 ## Manually force a quick sync or full sync
-An on-premises Exchange connector automatically synchronizes EAS and Intune device records regularly. If the compliance status of a device changes, the automatic sync process regularly updates records so that device access can be blocked or allowed accordingly.
+An on-premises Exchange connector automatically synchronizes EAS and Intune device records regularly. If the compliance status of a device changes, the automatic sync process regularly updates records so that device access can be blocked or allowed.
 
    - **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange conditional access-targeted users that have changed since the last sync.
 
