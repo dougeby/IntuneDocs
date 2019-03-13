@@ -1,6 +1,5 @@
 ---
 # required metadata
-
 title: iOS device settings in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
 description: Add, configure, or create settings on iOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for back up and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
@@ -8,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -109,54 +108,6 @@ These settings are added to a device configuration profile in Intune, and then a
 
     This setting applies to:  
     - iOS 11.3 and later
-
-## Configurations requiring supervision
-
-iOS supervised mode can only be enabled during initial device setup through Apple’s Device Enrollment Program, or by using Apple Configurator. Once supervised mode is enabled, Intune can configure a device with the following functionality:
-
-- App Lock (Single App Mode) 
-- Global HTTP Proxy 
-- Activation Lock Bypass 
-- Autonomous Single App Mode 
-- Web Content Filter 
-- Set background and lock screen 
-- Silent App Push 
-- Always-On VPN 
-- Allow managed app installation exclusively 
-- iBookstore 
-- iMessages 
-- Game Center 
-- AirDrop 
-- AirPlay 
-- Host pairing 
-- Cloud Sync 
-- Spotlight search 
-- Handoff 
-- Erase device 
-- Restrictions UI 
-- Installation of configuration profiles by UI 
-- News 
-- Keyboard shortcuts 
-- Passcode modifications 
-- Device name changes 
-- Automatic app downloads 
-- Changes to enterprise app trust 
-- Apple Music 
-- Mail Drop 
-- Pair with Apple Watch 
-
-> [!NOTE]
-> Apple confirmed that certain settings move to supervised-only in 2019. We recommend taking this into consideration when using these settings, instead of waiting for Apple to migrate them to supervised-only:
-> - App installation by end users
-> - App removal
-> - FaceTime
-> - Safari
-> - iTunes
-> - Explicit content
-> - iCloud documents and data
-> - Multiplayer gaming
-> - Add Game Center friends
-> - Siri
 
 ## Password
 
@@ -342,7 +293,7 @@ To add apps to these lists, you can:
 ## Cloud and Storage
 
 - **Backup to iCloud**: **Not configured** allows the user to back up the device to iCloud. **Block** stops the user from backing up the device to iCloud.
-- **Document sync to iCloud (supervised only)**: **Not configured** allows document and key-value synchronization to your iCloud storage space. **Block** prevents iCloud from syncing documents and data.
+- **Block iCloud Document sync**: **Not configured** allows document and key-value synchronization to your iCloud storage space. **Block** prevents iCloud from syncing documents and data.
 - **Photo stream syncing to iCloud**: **Not configured** lets users enable **My Photo Stream** on their device to sync to iCloud, and have photos available on all the user's devices. **Block** prevents photo stream syncing to iCloud.
 - **Encrypted backup**: **Require** so device backups must be encrypted.
 - **iCloud Photo Library**: Set to **Block** to disable using iCloud photo library to store photos and videos in the cloud. Any photos not fully downloaded from iCloud Photo Library to the device are removed from the device. **Not configured** allows using the iCloud photo library.
@@ -359,15 +310,16 @@ Use these settings to configure iOS devices to run specific apps in autonomous s
 
 To add apps, you can:
 
-- Enter the **App name** and **App Bundle ID**, and select **Add**. [Bundle ID reference for built-in iOS apps](#bundle-id-reference-for-built-in-ios-apps) (in this article) includes some apps with their IDs.
+- Enter the **App name** and **App Bundle ID**, and select **Add**. [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) includes some apps with their IDs.
 - **Import** a CSV file with the list of app names and their bundle IDs. Or, **Export** an existing list that includes the apps.
 
 ## Kiosk (supervised only)
 
-- **App to run in kiosk mode**: Choose the type of apps you want to run in kiosk mode. Your options: 
-  - **Store App**: Enter the URL to an app in the iTunes App store
-  - **Managed App**: Choose an app you added to Intune
-  - **Built-In App**: Enter the [bundle ID](#bundle-id-reference-for-built-in-ios-apps) of the built-in app
+- **App to run in kiosk mode**: Choose the type of apps you want to run in kiosk mode. Your options:
+  - **Not configured**: Kiosk settings aren't applied. The device doesn't run in kiosk-mode.
+  - **Store App**: Enter the URL to an app in the iTunes App store.
+  - **Managed App**: Choose an app you added to Intune.
+  - **Built-In App**: Enter the [bundle ID](#bundle-ids-for-built-in-ios-apps) (in this article) of the built-in app.
 
 - **Assistive touch**: **Require** the Assistive Touch accessibility setting be on the device. This feature helps users with on-screen gestures that might be difficult for them. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Invert colors**: **Require** the Invert Colors accessibility setting so users with visual impairments can change the display screen. **Not configured** doesn't run or enable this feature in kiosk mode.
@@ -390,9 +342,17 @@ To add apps, you can:
 > Before you can configure an iOS device for kiosk mode, you must use the Apple Configurator tool or the Apple Device Enrollment Program to put the device into supervised mode. See Apple's guide on using the Apple Configurator tool.
 > If the iOS app you enter is installed after you assign the profile, then the device doesn't enter kiosk mode until the device is restarted.
 
-## Bundle ID reference for built-in iOS apps
+## Domains
 
-This list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+- **Unmarked email domains** > **Email Domain URL**: Add one or more URLs to the list. When end users receive an email from a domain other than the domains you enter, the email is marked as untrusted in the iOS Mail app.
+
+- **Managed web domains** > **Web Domain URL**; Add one or more URLs to the list. When documents are downloaded from the domains you enter, they're considered managed. This setting applies only to documents downloaded using the Safari browser.
+
+- **Safari password autofill domains** > **Domain URL**: Add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.
+
+## Bundle IDs for built-in iOS apps
+
+The following list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
 | Bundle ID                   | App Name     | Publisher |
 |-----------------------------|--------------|-----------|
@@ -441,19 +401,53 @@ This list shows the bundle ID of some common built-in iOS apps. To find the bund
 | com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | Weather      | Apple     |
 
-## Domains
+## Settings that require supervised mode
 
-### Unmarked email domains
+iOS supervised mode can only be enabled during initial device setup through Apple’s Device Enrollment Program, or by using Apple Configurator. Once supervised mode is enabled, Intune can configure a device with the following functionality:
 
-In **Email Domain URL**, add one or more URLs to the list. When end users receive an email from a domain other than the domains you enter, the email is marked as untrusted in the iOS Mail app.
+- App Lock (Single App Mode) 
+- Global HTTP Proxy 
+- Activation Lock Bypass 
+- Autonomous Single App Mode 
+- Web Content Filter 
+- Set background and lock screen 
+- Silent App Push 
+- Always-On VPN 
+- Allow managed app installation exclusively 
+- iBookstore 
+- iMessages 
+- Game Center 
+- AirDrop 
+- AirPlay 
+- Host pairing 
+- Cloud Sync 
+- Spotlight search 
+- Handoff 
+- Erase device 
+- Restrictions UI 
+- Installation of configuration profiles by UI 
+- News 
+- Keyboard shortcuts 
+- Passcode modifications 
+- Device name changes 
+- Automatic app downloads 
+- Changes to enterprise app trust 
+- Apple Music 
+- Mail Drop 
+- Pair with Apple Watch 
 
-### Managed web domains
-
-In **Web Domain URL**, add one or more URLs to the list. When documents are downloaded from the domains you enter, they're considered managed. This setting applies only to documents downloaded using the Safari browser.
-
-### Safari password autofill domains
-
-In **Domain URL**, add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.
+> [!NOTE]
+> Apple confirmed that certain settings move to supervised-only in 2019. We recommend taking this into consideration when using these settings, instead of waiting for Apple to migrate them to supervised-only:
+> - App installation by end users
+> - App removal
+> - FaceTime
+> - Safari
+> - iTunes
+> - Explicit content
+> - iCloud documents and data
+> - Multiplayer gaming
+> - Add Game Center friends
+> - Siri
 
 ## Next steps
 
