@@ -1,6 +1,36 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md", 
+			"redirect_url": "/intune-user-help/about-cp-app-for-windows-10",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-all.md",
+			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-w10-device-your-account.md",
+			"redirect_url": "/intune-user-help/enroll-windows-10-device",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-w10-device-access-work-or-school.md",
+			"redirect_url": "/intune-user-help/enroll-windows-10-device",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-W10-phone-or-w10-pc-windows.md",
+			"redirect_url": "/intune-user-help/windows-enrollment-company-portal",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-windows.md",
+			"redirect_url": "/intune-user-help/windows-enrollment-company-portal",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false
