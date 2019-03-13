@@ -29,7 +29,7 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
-    - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
+    - joined to Azure Active Directory (AAD) or [hybrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (opens another Docs web site), and
     - enrolled in Intune (MDM-managed)
 - Windows application size is capped at 8 GB per app
 
@@ -255,7 +255,7 @@ The following image notifies the end user that app changes are being made to the
 If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
 
 ## Troubleshoot Win32 app issues
-Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
+Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [Configuration Manager Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
 
