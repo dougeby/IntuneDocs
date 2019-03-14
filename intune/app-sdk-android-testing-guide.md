@@ -52,7 +52,7 @@ New accounts can be created with and without pre-generated data. To create a new
 
 ## Test Cases
 
-The following test cases provide by configuration and confirmation steps. Use this guidance to help troubleshoot Intune-managed Android app issues.
+The following test cases provide configuration and confirmation steps. Use this guidance to help troubleshoot Intune-managed Android app issues.
 
 ### Required PIN and corporate credentials
 
