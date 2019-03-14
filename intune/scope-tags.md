@@ -88,6 +88,11 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 3. Under **Select Tags**, choose the tags that you want to add to the profile.
 4. Choose **Select** > **OK** > **Save**.
 
+## To assign a scope tag to an iOS app provisioning profile
+1. In Intune, choose **Client apps** > **iOS app provisioning profiles** > choose a profile.
+2. Choose **Properties** > **Scope (Tags)** > choose the tags that youw ant to assign to the profile.
+3. Choose **Select** > **OK** > **Save**.
+
 ## Scope tag details
 When working with scope tags, remember these details:
 
