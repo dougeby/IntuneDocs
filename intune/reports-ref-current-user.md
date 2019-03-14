@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Reference for Current User entity
 
-The **Current User** category contains user properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory users that are currently assigned a license. The license could be an Intune license, a Hybrid license, or a Microsoft Office 365 license. If a user has been removed, they will not be represented in the Current User collection. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
+The **Current User** category contains user properties in the data model. The **Current User** entity collection is limited to currently active users. The entity contains all the Azure Active Directory users that are currently assigned a license. The license could be an Intune license, a co-managed license, or a Microsoft Office 365 license. If a user has been removed, they will not be represented in the Current User collection. For a collection that contains a history of changes in user state, see [Reference for user entity](reports-ref-user.md).
 
 
 ## Current User
