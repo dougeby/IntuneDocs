@@ -156,8 +156,12 @@ Follow the same steps as [To assign a built-in role](https://docs.microsoft.com/
 
 ## Next steps
 
-[Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
+- [Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
+
+
 
 ## See also
 
-[Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- Learn about [Microsoft Graph API support for role-based access in Intune](https://docs.microsoft.com/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)
+- Get the [PowerShell SDK for the Intune Graph API](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)
