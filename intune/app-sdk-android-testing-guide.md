@@ -30,7 +30,9 @@ ms.collection: M365-identity-device-management
 
 # Microsoft Intune App SDK for Android developers testing guide
 
-## Test accounts
+The Microsoft Intune App SDK for Android testing guide is designed to help you test your Intune-managed Android app.  
+
+## Prerequisit test accounts
 New accounts can be created with and without pre-generated data. To create a new account:
 1. Navigate to the [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
 2. [Setup Intune](https://docs.microsoft.com/intune/setup-steps) to use enable mobile device management (MDM).
@@ -48,7 +50,9 @@ New accounts can be created with and without pre-generated data. To create a new
 > [!IMPORTANT]
 > For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](https://docs.microsoft.com/intune/app-protection-policy).
 
-## Test
+## Test Cases
+
+The following test cases provide by configuration and confirmation steps. Use this guidence to help troubleshoot Intune-managed Android app issues.
 
 ### Required PIN and corporate credentials
 
@@ -60,7 +64,8 @@ You can require a pin to access corporate resources. Also, you can enforce corpo
     - Failure to present a valid sign-in prompt could be due to an incorrectly configured android manifest, specifically the values for ADAL integration (SkipBroker, ClientID, and Authority).
     - Failure to present any prompt could be due to an incorrectly integrated `MAMActivity` value. For more information about `MAMActivity`, see [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md).
 
-> [!NOTE] If the above test is not working, the tests below will likely also fail. Review [SDK](app-sdk-android.md##sdk-integration) and [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) integration.
+> [!NOTE] 
+> If the above test is not working, the tests below will likely also fail. Review [SDK](app-sdk-android.md##sdk-integration) and [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) integration.
 
 ### Restrict transferring and receiving data with other apps
 You can can control data transfer between corporate managed applications as follows:
