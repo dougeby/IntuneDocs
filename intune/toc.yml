@@ -819,6 +819,8 @@
         href: app-wrapper-prepare-android.md
       - name: Intune App SDK for Android
         href: app-sdk-android.md
+        - name: Intune App SDK for Android testing guide
+          href: app-sdk-android-testing-guide.md        
       - name: Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: Use the Intune Data Warehouse
