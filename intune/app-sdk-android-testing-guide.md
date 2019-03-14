@@ -87,8 +87,7 @@ You can restrict the system clipboard to managed applications as follows:
 ### Prevent **Save As**
 You can  control **save as follows:
 
-1. If your app requires [integrated save as controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted):
-    a. Set **Prevent 'Save As'** to **Yes**.
+1. If your app requires [integrated save as controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), set **Prevent 'Save As'** to **Yes**.
 2. Confirm the following conditions:
     - Save is restricted to only appropriate managed locations.
 
