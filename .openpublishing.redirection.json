@@ -1283,6 +1283,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "intune/ignite-intune-docs.md", 
+			"redirect_url": "/intune/index",
+			"redirect_document_id": true
+		},			
+		{
 			"source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
 			"redirect_url": "/intune/get-support",
 			"redirect_document_id": false
@@ -4347,6 +4352,11 @@
 			"redirect_url": "/intune/get-support",
 			"redirect_document_id": false
 		},		
+		{
+			"source_path": "intune/phone-support-contact.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": true
+		},	
 		{
 			"source_path": "intune/Troubleshoot/device-threat-protection-troubleshooting.md",
 			"redirect_url": "/intune/lookout-mtd-connector-integration",
