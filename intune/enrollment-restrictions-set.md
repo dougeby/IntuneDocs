@@ -142,6 +142,7 @@ During BYOD enrollments, users see a notification that tells them when they've m
 > - Azure Active Directory joined enrollments
 > - Bulk Azure Active Directory joined enrollments
 > - Autopilot enrollments
+>
 > Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
 > You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
