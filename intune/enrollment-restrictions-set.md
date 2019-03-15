@@ -136,14 +136,14 @@ During BYOD enrollments, users see a notification that tells them when they've m
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
 > [!IMPORTANT]
-> Device limit restrictions do not apply for the following Windows corporate enrollment types:
+> Device limit restrictions do not apply for the following Windows enrollment types:
 > - Co-managed enrollments
 > - GPO enrollments
 > - Azure Active Directory joined enrollments
 > - Bulk Azure Active Directory joined enrollments
 > - Autopilot enrollments
-
-You can set device limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
+> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 
