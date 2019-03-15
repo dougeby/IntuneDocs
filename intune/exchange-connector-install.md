@@ -20,7 +20,7 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: chrisgre
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # Set up the Intune on-premises Exchange connector in Microsoft Intune
-The information in this article will help you install and then monitor the Exchange Active Sync on-premises connector for Intune.  You use the Intune on-premises Exchange connector with your [conditional access policies to allow or block access to your Exchange on-premises mailboxes](conditional-access-exchange-create). 
+The information in this article will help you install and then monitor the Exchange Active Sync on-premises connector for Intune.  You use the Intune on-premises Exchange connector with your [conditional access policies to allow or block access to your Exchange on-premises mailboxes](conditional-access-exchange-create.md). 
 
 When a device tries to access your on-premises Exchange, the Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records to check for device enrollment with Intune, and compliance to your device compliance policies. Depending on your conditional access policies, the device can be allowed access, or blocked. For more information, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
 
