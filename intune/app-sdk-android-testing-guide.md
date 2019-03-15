@@ -35,7 +35,7 @@ The Microsoft Intune App SDK for Android testing guide is designed to help you t
 ## Prerequisite test accounts
 New accounts can be created with and without pre-generated data. To create a new account:
 1. Navigate to the [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
-2. [Setup Intune](https://docs.microsoft.com/intune/setup-steps) to enable mobile device management (MDM).
+2. [Set up Intune](https://docs.microsoft.com/intune/setup-steps) to enable mobile device management (MDM).
 3. [Create users](https://docs.microsoft.com/intune/users-add).
 4. [Create groups](https://docs.microsoft.com/intune/groups-add).
 5. [Assign licenses](https://docs.microsoft.com/intune/licenses-assign) as appropriate for your testing.
@@ -85,9 +85,9 @@ You can restrict the system clipboard to managed applications as follows:
     - Copying text from your app into a managed an unmanaged app (for example, Messages) is blocked.
 
 ### Prevent **Save As**
-You can  control **save as follows:
+You can control **save as** functionality as follows:
 
-1. If your app requires [integrated save as controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), set **Prevent 'Save As'** to **Yes**.
+1. If your app requires [integrated 'save as' controls](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted), set **Prevent 'Save As'** to **Yes**.
 2. Confirm the following conditions:
     - Save is restricted to only appropriate managed locations.
 

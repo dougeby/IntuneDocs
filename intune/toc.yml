@@ -253,7 +253,7 @@
       href: device-rename.md
     - name: Restart device
       href: device-restart.md
-    - name: Logout current user
+    - name: Sign out current user
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
