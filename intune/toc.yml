@@ -330,7 +330,7 @@
       href: education-settings-configure.md
     - name: Shared multi-user devices
       href: shared-user-device-settings.md  
-    - name: Mobility extensions on Zebra devices
+    - name: Mobility Extensions on Zebra devices
       href: android-zebra-mx-overview.md
       items:
       - name: StageNow logs and common issues
