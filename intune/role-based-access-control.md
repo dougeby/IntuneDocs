@@ -50,6 +50,7 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
+    >
 	> To be assigned an Intune role, the user must have an Intune license.
 
 	> [!TIP]
