@@ -533,7 +533,7 @@
         href: apps-inc-exl-assignments.md      
       - name: Deploy Windows 10 apps
         href: apps-windows-10-app-deploy.md      
-      - name: Deploy apps to Gov't environments
+      - name: Deploy apps to Government environments
         href: apps-deploy-gcc-dod.md                    
     - name: Monitor apps
       href: apps-monitor.md
