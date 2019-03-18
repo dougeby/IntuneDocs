@@ -224,8 +224,6 @@
       items:
       - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Install Intune software client on Windows PCs
-      href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Incomplete enrollment report
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
@@ -532,7 +530,9 @@
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
       - name: Deploy Windows 10 apps
-        href: apps-windows-10-app-deploy.md            
+        href: apps-windows-10-app-deploy.md      
+      - name: Deploy apps to Government environments
+        href: apps-deploy-gcc-dod.md                    
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -647,8 +647,6 @@
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
-    - name: Known issues
-      href: known-issues.md
     - name: Get support
       href: get-support.md      
 - name: Reference
