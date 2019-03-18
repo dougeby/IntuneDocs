@@ -647,8 +647,6 @@
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
-    - name: Known issues
-      href: known-issues.md
     - name: Get support
       href: get-support.md      
 - name: Reference
