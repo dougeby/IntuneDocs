@@ -36,7 +36,7 @@ To add a line-of-business app intended for a GCC High or DOD environment using I
 
 If you need to [download an offline-licensed app](https://docs.microsoft.com/microsoft-store/distribute-offline-apps#download-an-offline-licensed-app) from the Microsoft Store for Business, follow these steps to download the application: 
 
-1. Log in to the [Store for Business](https://businessstore.microsoft.com/).
+1. Sign in to the [Store for Business](https://businessstore.microsoft.com/).
 2. Select **Manage** > **Settings**.
 3. Under **Shopping Experience**, set **Show offline apps** to **On**.
 
