@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/15/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,7 @@ To sync Intune to your Store for Business account, see [How to manage apps you p
 
 ## Compliance 
 
-Review the privacy and compliance statements of apps and compare them to the compliance, security and privacy objectives of your organization when assessing the appropriate use of these services.   
+Review the privacy and compliance statements of apps and compare them to the compliance, security and privacy requirements of your organization when assessing the appropriate use of these services.   
 
 ## Next steps
 
