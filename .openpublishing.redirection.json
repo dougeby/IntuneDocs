@@ -3215,8 +3215,23 @@
 		{
 			"source_path": "intune-classic/deploy-use/plan-your-user-and-device-groups.md",
 			"redirect_url": "/intune/get-started-groups",
+			"redirect_document_id": false
+		},	
+		{
+			"source_path": "intune/get-started-groups.md",
+			"redirect_url": "/intune/quickstart-create-group",
 			"redirect_document_id": true
 		},		
+		{
+			"source_path": "intune/get-started-enroll.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": true
+		},		
+		{
+			"source_path": "intune/get-started-users.md",
+			"redirect_url": "/intune/quickstart-create-user",
+			"redirect_document_id": true
+		},					
 		{
 			"source_path": "intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md",
 			"redirect_url": "/intune/policies-to-protect-windows-pcs-in-microsoft-intune",
