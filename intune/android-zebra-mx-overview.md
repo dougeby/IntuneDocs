@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Use Zebra Mobility Extensions (MX) on Android devices in Microsoft Intune - Azure | Microsoft Docs
+title: Use Zebra Mobility Extensions on Android devices in Microsoft Intune - Azure | Microsoft Docs
 description: Use Microsoft Intune to manage and use Zebra devices running Android with Zebra Mobility Extensions (MX). See all the steps, including install the Company Portal app, sideload the app, assign device administrator role, create a StageNow profile, and more.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -32,7 +32,9 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In Microsoft Intune, you can use Zebra **Mobility Extensions (MX)** to manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices". You can use MX to create and customize Zebra-specific settings for these devices. 
+Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings are used to manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
+
+If you want to customize or add more Zebra-specific settings, you can also use Zebra **Mobility Extensions (MX)** on these devices. 
 
 This feature applies to:
 
@@ -40,21 +42,21 @@ This feature applies to:
 
 Your company may use Zebra devices for retail, on the factory floor, and more. For example, you're a retailer and your environment includes thousands of Zebra mobile devices used by sales associates. Intune can help manage these devices as part of your mobile device management (MDM) solution.
 
-Intune includes a rich set of features to manage apps and configure device settings. Using Intune, you can enroll Zebra devices to deploy your line-of-business apps to the devices. "Device configuration" profiles let you add or disable settings and features, including creating MX profiles to manage Zebra-specific settings.
+Using Intune, you can enroll Zebra devices to deploy your line-of-business apps to the devices. "Device configuration" profiles let you create MX profiles to manage your Zebra-specific settings.
 
 This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune.
 
 ## Before you begin
 
-- Ensure you have the latest version of the StageNow desktop app from Zebra Technologies.
-- Be sure to check Zebra's [full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) to confirm the profiles you create are compatible with the device's MX version, OS version, and model.
-- Certain devices, such as TC20/25 devices, don't support all of the available MX features in StageNow. Be sure to check Zebra's feature matrix for updated support info.
+- Be sure you have the latest version of the StageNow desktop app from Zebra Technologies.
+- Be sure to check [Zebra's full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) (opens Zebra's web site) to confirm the profiles you create are compatible with the device's MX version, OS version, and model.
+- Certain devices, such as TC20/25 devices, don't support all of the available MX features in StageNow. Be sure to check [Zebra's feature matrix](http://techdocs.zebra.com/mx/tc2x/) (opens Zebra's web site) for updated support info.
 
 ## Step 1: Install the latest Company Portal app
 
 On the device, go to the Google Play store, and download and install the Intune Company Portal app from Microsoft. When installed from Google Play, the Company Portal app gets updates and fixes automatically.
 
-If Google Play isn't available, download the [Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) (opens another Microsoft website), and [sideload it](#sideload-the-company-portal-app). When installed this way, the app doesn't receive updates or fixes automatically. You should regularly update and patch the app manually.
+If Google Play isn't available, download the [Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) (opens another Microsoft website), and [sideload it](#sideload-the-company-portal-app) (in this article). When installed this way, the app doesn't receive updates or fixes automatically. You should regularly update and patch the app manually.
 
 ### Sideload the Company Portal app
 
@@ -71,14 +73,14 @@ The following steps provide an overview. For specific details, see Zebra's docum
     - **Package Name**: `com.microsoft.windowsintune.companyportal`
     - **Class Name**: `com.microsoft.windowsintune.companyportal.views.SplashActivity`
 
-Continue to publish the profile and consume it with the StageNow app on the device. The Company Portal app will be installed and launched on the device.
+Continue to publish the profile, and consume it with the StageNow app on the device. The Company Portal app is installed and opened on the device.
 
 > [!TIP]
 > For more information on StageNow, and what it does, see [StageNow Android device staging](https://www.zebra.com/us/en/products/software/mobile-computers/mobile-app-utilities/stagenow.html) (opens Zebra's web site).
 
 ## Step 2: Confirm the Company Portal app has device administrator role
 
-The Company Portal app requires Device Administrator to manage Android devices. Some Zebra devices include UI on the device to activate the Device Administrator role. If the device includes this UI, the Company Portal app will prompt you to grant Device Administrator during the enrollment process (Step 3).
+The Company Portal app requires Device Administrator to manage Android devices. To activate the Device Administrator role, some Zebra devices include a user interface (UI) on the device. If the device includes a UI, the Company Portal app prompts the end user to grant Device Administrator during [enrollment](#step-3-enroll-the-device-in-to-intune) (in this article).
 
 If a UI isn't available, use the **DevAdmin Manager** in StageNow to create a profile that manually grants Device Administrator to the Company Portal app.
 
@@ -91,11 +93,11 @@ The following steps provide an overview. For specific details, see Zebra's docum
 4. Set **Device Admin Package Name** to `com.microsoft.windowsintune.companyportal`.
 5. Set **Device Admin Class Name** to `com.microsoft.omadm.client.PolicyManagerReceiver`.
 
-Continue to publish the profile and consume it with the StageNow app on the device. The Company Portal app will be granted the Device Administrator role.
+Continue to publish the profile, and consume it with the StageNow app on the device. The Company Portal app is granted the Device Administrator role.
 
 ## Step 3: Enroll the device in to Intune
 
-After completing Steps 1 and 2, the Company Portal app is installed on the device and the device is ready to be enrolled in to Intune.
+After completing the first two steps, the Company Portal app is installed on the device. The device is ready to be enrolled in to Intune.
 
 [Enroll Android devices](android-enroll.md) lists the steps. If you have many Zebra devices, you may want to use a [device enrollment manager account](device-enrollment-manager-enroll.md).
 
@@ -103,10 +105,10 @@ After completing Steps 1 and 2, the Company Portal app is installed on the devic
 
 Use StageNow to create a profile that configures the settings you want to manage on the device. For specific details, see Zebra's documentation. [Profiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (opens Zebra's website) may be a good resource.
 
-When you create the profile in StageNow, select **Export to MDM** on the last step. This generates an XML file. Save this file. You need it in a later step.
+When you create the profile in StageNow, on the last step, select **Export to MDM**. This generates an XML file. Save this file. You need it in a later step.
 
 > [!TIP]
-> It's recommended to test the profile before you deploy it to devices in your organization. To test, use the **Test** options in the last step when creating profiles with StageNow on your computer. Then, consume the file that StageNow generates with the StageNow app on the device. 
+> It's recommended to test the profile before you deploy it to devices in your organization. To test, in the last step when creating profiles with StageNow on your computer, use the **Test** options. Then, consume the StageNow-generated file with the StageNow app on the device. 
 > 
 > The StageNow app on the device shows logs generated when you test the profile. [Use StageNow logs on Zebra devices running Android in Intune](android-zebra-mx-logs-troubleshoot.md) has information on using StageNow logs to understand errors.
 
@@ -130,12 +132,12 @@ In Intune, create a device configuration profile:
     - **Platform**: Select **Android**.
     - **Profile type**: Select **MX profile (Zebra only)**.
 
-4. In **MX profile in .xml format**, add the XML profile file [you exported from StageNow](#step-4-create-a-profile-in-stagenow) (in this article).
+4. In **MX profile in .xml format**, add the XML profile file [you exported from StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in this article).
 5. Select **OK** > **Create** to save your changes. The policy is created and shown in the list.
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-The next time the device checks for configuration updates, the MX profile is deployed to the device. Devices sync with Intune when devices enroll, and then  approximately every 8 hours. You can also [force a sync in the Intune admin console](https://docs.microsoft.com/en-us/intune/device-sync). Alternatively, on the device, open the **Company Portal app** > **Settings** > **Sync**. 
+The next time the device checks for configuration updates, the MX profile is deployed to the device. Devices sync with Intune when devices enroll, and then approximately every 8 hours. You can also [force a sync in Intune](device-sync.md). Or, on the device, open the **Company Portal app** > **Settings** > **Sync**. 
 
 > [!TIP]
 > - For security reasons, you won’t see the profile XML text after you save it. The text is encrypted, and you only see asterisks (`****`). For your reference, it's recommended to save copies of the MX profiles before you add them to Intune.
