@@ -28,7 +28,7 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# Role-based administration control (RBAC) with Microsoft Intune
+# Role-based access control (RBAC) with Microsoft Intune
 
 RBAC helps you control who can perform various Intune tasks within your organization, and who those tasks apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles. A role is defined by:
 
@@ -64,6 +64,7 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
+    >
 	> To be assigned an Intune role, the user must have an Intune license.
 
 	> [!TIP]
