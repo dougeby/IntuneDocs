@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 > [!IMPORTANT]  
 > In MC165575, we shared that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. With the February update to the Intune service. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
 >  
->  For more information about this change, see [Reminder: Removal of existing Exchange Online to Intune connectors](whats-new#reminder-removal-of-existing-exchange-online-to-intune-connectors-)
+>  For more information about this change, see [Reminder: Removal of existing Exchange Online to Intune connectors](whats-new.md#reminder-removal-of-existing-exchange-online-to-intune-connectors-)
 
 This article shows you how to connect the Microsoft Intune service to Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager.
 
