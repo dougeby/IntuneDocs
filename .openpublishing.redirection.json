@@ -3225,7 +3225,7 @@
 		{
 			"source_path": "intune/get-started-enroll.md",
 			"redirect_url": "/intune/device-enrollment",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},		
 		{
 			"source_path": "intune/get-started-users.md",
