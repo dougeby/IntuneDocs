@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -28,6 +28,11 @@ ms.collection: M365-identity-device-management
 ---
 
 # Configure the Exchange service connector for Intune and Exchange Online
+> [!IMPORTANT]  
+> In MC165575, we shared that we would be removing the Exchange Online to Intune ‘Service to Service’ connector functionality in an upcoming update. We are planning to remove all existing Exchange Online to Intune connectors in March 2019.
+>  
+>  For more information about this change, see [Reminder: Removal of existing Exchange Online to Intune connectors](whats-new.md#reminder-removal-of-existing-exchange-online-to-intune-connectors-)
+
 This article shows you how to connect the Microsoft Intune service to Exchange Online or the new Exchange Online Dedicated service. To determine whether your Exchange Online Dedicated environment is the **new** or **legacy** version, contact your account manager.
 
 With the **Service to Service Connector** you can manage both Exchange ActiveSync (EAS) and Intune managed devices from a single administrative console.  The connector is not required to enable Conditional Access for Exchange Online.
