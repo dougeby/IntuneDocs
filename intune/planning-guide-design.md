@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -113,7 +113,7 @@ You can [download a template of the above table](https://gallery.technet.microso
 
 ## Choose an Intune deployment option
 
-Intune offers two deployment options: standalone and hybrid. Standalone refers to Intune service running in the cloud, hybrid refers to the integration of Intune with System Center Configuration Manager. This guide is intended primarily for using the standalone option. [Decide which option fits your business requirements](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
+Intune offers two deployment options: standalone and hybrid. Standalone refers to the Intune service running in the cloud, hybrid refers to the integration of Intune with System Center Configuration Manager. This guide is intended primarily for using the standalone option. [Decide which option fits your business requirements](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
 > [!Important]
 >Onboarding of new hybrid MDM customers has been deprecated. For more information, see the [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog post.
@@ -142,7 +142,7 @@ External dependencies are services and products that are separate from Intune, b
 
 -   Public key infrastructure (PKI)
 
-Let’s explore in more detail these common external dependencies below
+In the following, we explore these common external dependencies in more detail.
 
 ### Identity
 
@@ -408,11 +408,9 @@ Below is an example of how to design a compliance policy:
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your compliance policy needs.
 #### Conditional access policies
 
-Conditional access is used to allow only compliant devices to access email and other company resources. Intune works with Enterprise Mobility + Security (EMS) to control access to company resources. You need to decide if conditional access is required and what must be secured. Learn more about [conditional access](conditional-access.md).
+Conditional access is used to allow only compliant devices to access email and other company resources. Intune works with Enterprise Mobility + Security (EMS) to control access to company resources. Decide if you require conditional access, and what must be secured. Learn more about [conditional access](conditional-access.md).
 
-For online access, decide what platforms, and user groups will be targeted by conditional access policies. Also, determine whether you need to install or configure the Intune service-to-service connector for Exchange Online or Exchange on-premises. Learn more how to install and configure the Intune service-to-service connectors: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+For online access, decide what platforms and user groups you'll target by conditional access policies. Also, determine whether you need to install or configure the Intune connector for Exchange on-premises: 
 
 -   [Exchange on-premises](exchange-connector-install.md)
 
