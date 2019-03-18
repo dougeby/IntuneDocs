@@ -66,24 +66,24 @@ This pane provides the following details:
 - **Profile state summary** – A summary of the profiles that apply to this device. The summary represents the least favorable condition across all applicable profiles. For example, if one profile results in an Error, the Profile state summary will display *Error*.  
 - **Status details** – Advanced details about the device’s encryption state. This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
 
-The following are examples of the status details Intune can report:  
+   The following are examples of the status details Intune can report:  
 
-- The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
-- The encryption method of the OS volume doesn't match the BitLocker policy.  
-- The policy BitLocker requires a TPM protector to protect the OS volume, but a TPM isn't used.  
-- The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.  
-- The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.  
-- The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.  
-- The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.  
-- The OS volume is unprotected.  
-- Recovery key backup failed.  
-- A fixed drive is unprotected.  
-- The encryption method of the fixed drive doesn't match the BitLocker policy.  
-- To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.  
-- Windows Recovery Environment (WinRE) isn't configured.  
-- A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removeable  drive.  
-- The TPM isn't ready for BitLocker.  
-- The network isn't available, which is required for recovery key backup.  
+   - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
+   - The encryption method of the OS volume doesn't match the BitLocker policy.  
+   - The policy BitLocker requires a TPM protector to protect the OS volume, but a TPM isn't used.  
+   - The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.  
+   - The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.  
+   - The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.  
+   - The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.  
+   - The OS volume is unprotected.  
+   - Recovery key backup failed.  
+   - A fixed drive is unprotected.  
+   - The encryption method of the fixed drive doesn't match the BitLocker policy.  
+   - To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.  
+   - Windows Recovery Environment (WinRE) isn't configured.  
+   - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removeable  drive.  
+   - The TPM isn't ready for BitLocker.  
+   - The network isn't available, which is required for recovery key backup.  
 
 
 ## BitLocker recovery keys
@@ -101,4 +101,4 @@ When keys aren't in Azure AD, Intune will display *No BitLocker key found for th
 Information for BitLocker is obtained using the [BitLocker configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). BitLocker CSP is supported on Windows 10 version 1703 and later, and for Windows 10 Pro version 1809 and later. 
 
 ### Next steps
-Create a [device compliance](compliance-policy-create-windows#windows-10-and-later-policy-settings) policy for Windows 10 devices to configure BitLocker and encryption.
+Create a [device compliance](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) policy for Windows 10 devices to configure BitLocker and encryption.
