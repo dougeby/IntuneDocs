@@ -191,6 +191,9 @@ See [Google's documentation on the SafetyNet Attestation](https://developer.andr
 **There are two similiar checks in the Conditional Launch section when creating an Intune App Protection Policy for Android devices. Should I be requiring the 'SafetyNet device attestation' setting or the 'jailbroken/rooted devices' setting?** <br><br>
 Google Play Protect's SafetyNet API checks require the end user being online, atleast for the duration of the time when the "roundtrip" for determining attestation results executes. If end user is offline, IT admin can still expect a result to be enforced from the 'jailbroken/rooted devices' setting. That being said, if the end user has been offline too long, the 'Offline grace period' value comes into play, and all access to work or school data is blocked once that timer value is reached, until network access is available. Turning on both settings allows for a layered approach to keeping end user devices healthy which is important when end users access work or school data on mobile. 
 
+**The app protection policy settings that leverage Google Play Protect APIs require Google Play Services to function. What if Google Play Services are not allowed in the location where the end user may be?**
+Both the 'SafetyNet device attestation', and 'Threat scan on apps' settings require Google determined version of Google Play Services to function correctly. Since these are settings that fall in the area of security, the end user will be blocked if they have been targeted with these settings and are not meeting the appropriate version of Google Play Services or have no access to Google Play Services. 
+
 ## App experience on iOS
 **What happens if I add or remove a fingerprint or face to my device?**
 Intune app protection policies allow control over app access to only the Intune licensed user. One of the ways to control access to the app is to require either Apple's Touch ID or Face ID on supported devices. Intune implements a behavior where if there is any change to the device's biometric database, Intune prompts the user for a PIN when the next inactivity timeout value is met. Changes to biometric data include the addition or removal of a fingerprint, or face. If the Intune user does not have a PIN set, they are led to set up an Intune PIN.
@@ -205,20 +208,13 @@ Intune app protection policies for access will be applied in a specific order on
 
 When dealing with different types of settings, an Intune App SDK version requirement would take precedence, then an app version requirement, followed by the iOS operating system version requirement. Then, any warnings for all types of settings in the same order are checked. We recommend the Intune App SDK version requirement be configured only upon guidance from the Intune product team for essential blocking scenarios.
 
-## App protection policies - Policy refresh
-- Apps check in to the APP service every 30 minutes.
-- The 30-minute threshold is based on a timer.
-    - If the app is active at 30 minutes, it checks in at 30 minutes.
-    - If the app is sleeping at 30 minutes, it checks in on the next focus.
-- If no policy is assigned to a user, check-in occurs every eight hours.
-- If no Intune license is assigned, check-in occurs every 24 hours.
-
 
 ## See also
 - [Implement your Intune plan](planning-guide-onboarding.md)
 - [Intune testing and validation](planning-guide-test-validation.md)
 - [Android mobile app management policy settings in Microsoft Intune](app-protection-policy-settings-android.md)
 - [iOS mobile app management policy settings](app-protection-policy-settings-ios.md)
-- [Validate your app protection policies](app-protection-policies-validate.md)
+- [App protection policies policy refresh](app-protection-policy-delivery.md)
+- [Validate your app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md)
 - [How to get support for Microsoft Intune](get-support.md)
