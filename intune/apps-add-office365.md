@@ -75,7 +75,7 @@ When you choose **Enter XML data** the **Add app** blade with display the **Ente
 
 ![Add Office 365 configuration designer](./media/apps-add-office365/apps-add-office365-01.png)
     
-For more information about the **Enter XML data** option, see [Enter XML data](apps-add-office365.md#enter-xml-data) below.
+For more information about the **Enter XML data** option, see [Enter XML data](apps-add-office365.md#enter-xml-format) below.
 
 ## Configure app suite information
 
