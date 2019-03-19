@@ -38,20 +38,18 @@ You can use the Encryption report (in Pubic Preview) to view details about the E
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
 
 ### Prerequisites:
-To appear in the Encryption report, a device must:  
-- Run Windows version 1607 or later  
-- Have a Trusted Platform Module (TPM)  
+To appear in the Encryption report, a device must run Windows version 1607 or later.  
 
 ### Report details
 The report displays the **Device name** for your Windows 10 devices and high-level details about each, including:  
-- **OS version** – Current version of Windows 10.  
-- **TPM version** – The version of the Trusted Protection Module (TPM) chip on the device.  
+- **OS version** – Version of Windows.  
+- **TPM version** – The version of the Trusted Platform Module (TPM) chip on the device.  
 - **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM.  
 - **Encryption status** – Whether the OS drive is encrypted.  
 
 
 ### Device encryption status
-When you select a device that runs the *Windows 10 April 019 Update* or later, Intune displays the **Device encryption status** pane.  
+When you select a device, Intune displays the **Device encryption status** pane.
 
 This pane provides the following details:  
 - **Device name** – The name of the device you're viewing.  
@@ -64,9 +62,13 @@ This pane provides the following details:
   This list can be of use in locating individual policies for review should the Profile state summary indicate problems.  
 
 - **Profile state summary** – A summary of the profiles that apply to this device. The summary represents the least favorable condition across all applicable profiles. For example, if one profile results in an Error, the Profile state summary will display *Error*.  
-- **Status details** – Advanced details about the device’s encryption state. This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
+- **Status details** – Advanced details about the device’s encryption state. 
+  > [!NOTE]  
+  > Intune only shows *Status details* for devices that run the *Windows 10 April 2019 Update* or later.
+  
+  This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
 
-   The following are examples of the status details Intune can report:  
+  The following are examples of the status details Intune can report:  
 
    - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
    - The encryption method of the OS volume doesn't match the BitLocker policy.  
