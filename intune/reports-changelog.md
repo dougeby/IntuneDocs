@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -32,6 +32,13 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
+
+## 1903
+_Released March 2019_
+
+### V1.0 changes reflecting back to beta 
+
+Changes made to our v1.0 collections will now be reflected in beta.
 
 ## 1902 
 _Released February 2019_
