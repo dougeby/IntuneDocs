@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/18/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -59,7 +59,26 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 5. Select **Add**.
 6. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
 
-You can now configure the app suite.
+## Select settings format
+
+You can choose a method for configuring setting by selecting **Settings format**. Setting format option include:
+- Enter XML data
+- Configuration designer
+
+When you choose **Configuration designer** the **Add app** blade will change to offer two custom options:
+- Configure App Suite
+- App Suite Settings
+
+![Add Offic 365 - Configuration designer](media/apps-add-office365/apps-add-office365-02.png)
+
+When you choose **Enter XML data** the **Add app** blade with offer alternative custom options:
+- Enter XML data
+
+![Add Offic 365 - Configuration designer](media/apps-add-office365/apps-add-office365-01.png)
+
+For more information about the **Enter XML data** option, see [Enter XML data](apps-add-office365.md#enter-xml-data) below.
+
+Once you have selected your **Settings format**, you can now configure the app suite.
 
 ## Configure the app suite
 
@@ -115,6 +134,71 @@ In this step, configure installation options for the app suite. The settings app
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
 	You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## Enter XML format
+
+You can type or paste an XML property list that contains the app configuration settings for devices enrolled in Intune. The format of the XML property list varies depending on the app that you are configuring. For details about the exact format to use, contact the supplier of the app.
+
+Intune validates the XML format. However, Intune does not check that the XML property list (PList) works with the target app.
+
+To learn more about XML property lists:
+
+  -  Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+
+### Example format for an app configuration XML file
+
+When you create an app configuration file, you can specify one or more of the following values by using this format:
+
+```xml
+<dict>
+  <key>userprincipalname</key>
+  <string>{{userprincipalname}}</string>
+  <key>mail</key>
+  <string>{{mail}}</string>
+  <key>partialupn</key>
+  <string>{{partialupn}}</string>
+  <key>accountid</key>
+  <string>{{accountid}}</string>
+  <key>deviceid</key>
+  <string>{{deviceid}}</string>
+  <key>userid</key>
+  <string>{{userid}}</string>
+  <key>username</key>
+  <string>{{username}}</string>
+  <key>serialnumber</key>
+  <string>{{serialnumber}}</string>
+  <key>serialnumberlast4digits</key>
+  <string>{{serialnumberlast4digits}}</string>
+  <key>udidlast4digits</key>
+  <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
+</dict>
+```
+### Supported XML PList data types
+
+Intune supports the following data types in a property list:
+
+- &lt;integer&gt;
+- &lt;real&gt;
+- &lt;string&gt;
+- &lt;array&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; or &lt;false /&gt;
+
+### Tokens used in the property list
+
+Additionally, Intune supports the following token types in the property list:
+- \{\{userprincipalname\}\}—for example, **John@contoso.com**
+- \{\{mail\}\}—for example, **John@contoso.com**
+- \{\{partialupn\}\}—for example, **John**
+- \{\{accountid\}\}—for example, **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- \{\{deviceid\}\}—for example, **b9841cd9-9843-405f-be28-b2265c59ef97**
+- \{\{userid\}\}—for example, **3ec2c00f-b125-4519-acf0-302ac3761822**
+- \{\{username\}\}—for example, **John Doe**
+- \{\{serialnumber\}\}—for example, **F4KN99ZUG5V2** (for iOS devices)
+- \{\{serialnumberlast4digits\}\}—for example, **G5V2** (for iOS devices)
+- \{\{aaddeviceid\}\}—for example, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## Finish up
 
