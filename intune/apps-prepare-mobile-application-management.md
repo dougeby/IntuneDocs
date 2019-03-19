@@ -91,9 +91,9 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Allow app to transfer data to other apps|X|X|
 |Allow app to receive data from other apps|X|X|
 |Restrict cut, copy, and paste with other apps|X|X|
-|Restrict cut, copy, and paste with other apps|X|X|
-|Require simple PIN for access|X|X|
 |Specify the number of characters that may be cut or copied from a managed app|X|X|
+|Require simple PIN for access|X|X|
+|Specify the number of attempts before PIN reset|X|X|
 |Allow fingerprint instead of PIN|X|X|
 |Allow facial recognition instead of PIN (iOS only)|X|X|
 |Require corporate credentials for access|X|X|
