@@ -21,7 +21,7 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -73,7 +73,7 @@ When you choose **Configuration designer** the **Add app** blade will change to 
 
 When you choose **Enter XML data** the **Add app** blade with display the **Enter XML data** option. Select this to display the **Configuration File** blade. 
 
-    ![Add Offic 365 - Configuration designer](./media/apps-add-office365/apps-add-office365-01.png)
+![Add Office 365 configuration designer](./media/apps-add-office365/apps-add-office365-01.png)
     
 For more information about the **Enter XML data** option, see [Enter XML data](apps-add-office365.md#enter-xml-data) below.
 
@@ -160,7 +160,7 @@ When you create an app configuration file, you can specify one or more of the fo
 
 ### Supported XML data types
 
-Intune supports the following data types in a property list:
+Intune supports the following configuration XML data types:
 
 - &lt;integer&gt;
 - &lt;real&gt;
