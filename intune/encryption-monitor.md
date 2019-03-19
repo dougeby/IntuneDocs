@@ -29,10 +29,10 @@ ms.custom: intune-azure
 # Monitor BitLocker and device encryption  
 Intune provides a centralized location to identify the encryption status of your Windows 10 devices, and helps you access important information for BitLocker from your devices, as found in Azure Active Directory (Azure AD).  
 
-- The [Encryption report](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
+- The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
 - [View BitLocker details](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
-## Encryption report
+## Encryption report (in Public Preview)
 You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
 
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
