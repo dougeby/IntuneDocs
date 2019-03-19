@@ -1,6 +1,13 @@
 
 These notices provide important information that can help you prepare for future Intune changes and features. 
 
+###  Upcoming change to the Intune Data Warehouse API <!-- 1455231 doc-work-item -->
+We will be making two changes during the 1903 timeframe:
+- Beta Filter Deprecation<br>
+    Deprecation of unsupported beta filters instantiated. Affected customers have been emailed.   
+- 1.0 changes reflecting back to beta<br>
+    Changes made to our v1.0 collections will now be reflected in beta.  
+
 ### Change in enrollment workflow with Intune Company Portal on corporate iOS devices authenticating with Setup Assistant <!-- 1927359 -->
 There's an upcoming change in workflow for enrollment of iOS devices through one of Apple’s corporate device enrollment methods - Apple Configurator, Apple Business Manager, Apple School Manager, or the Apple Device Enrollment Program (DEP), when using Setup Assistant for authentication. This change applies only to devices enrolled with user affinity.
 
