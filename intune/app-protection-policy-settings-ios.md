@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 03/19/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -48,7 +48,7 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 | **Save copies of Org data** | Select **Block** to disable the use of the *Save As* option in this app. Select **Allow** if you want to allow the use of *Save As*. <br><br>**Note:** *This setting is supported for Microsoft Excel, OneNote, Outlook, PowerPoint, and Word. It can also be supported by third-party and LOB apps.* <br><br> When set to *Block*, you can configure the following setting, *Allow user to save copies to selected services*.   | <br><br> **Allow**   |
 | <ul><ui> **Allow user to save copies to selected services** | Users can save to the selected services (OneDrive for Business, SharePoint, and Local Storage). All other services are blocked.| **0 selected**  |
 | **Restrict cut, copy and paste between other apps** | Specify when cut, copy, and paste actions can be used with this app. Select from: <ul><li>**Blocked**:  Don't allow cut, copy, and paste actions between this app and any other app.</li><li>**Policy managed apps**: Allow cut, copy, and paste actions between this app and other policy-managed apps.</li><li>**Policy managed with paste in**: Allow cut or copy between this app and other policy-managed apps. Allow data from any app to be pasted into this app.</li><li>**Any app**: No restrictions for cut, copy, and paste to and from this app.</ul> | **Any app**   |
-
+| **Cut and copy character limit for any app ** | Specify the number of characters that may be cut or copied from Org data and accounts.  This will allow sharing of the specified number of characters to any application, regardless of the "Restrict cut, copy, and paste with other apps" setting.<p>Default Value = 0<p>**Note**: Requires app to have Intune SDK version 9.0.14 or later.  | **Any app**   |
 
 
 ### Encryption
