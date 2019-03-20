@@ -43,7 +43,7 @@ Using a browser protected with Intune policy (Microsoft Edge or Intune Managed B
 
 ## Microsoft Edge support
 
-You can use Microsoft Edge for enterprise scenarios on iOS and Android devices. Microsoft Edge supports all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. The following Microsoft Edge enterprise features enabled by Intune policies are available. These enterprise features include:
+You can use Microsoft Edge for enterprise scenarios on iOS and Android devices. Microsoft Edge supports all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end-user experience. The following Microsoft Edge enterprise features enabled by Intune policies are available. These enterprise features include:
 
 1. **Dual-Identity** - Users can add both a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins will be able to set the desired policies for a protected browsing experience within the work account. 
 2. **Intune app protection policy integration** - Admins can now target app protection policies to Microsoft Edge, including the control of cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
@@ -57,7 +57,7 @@ Using a browser protected with Intune policy (Microsoft Edge or Intune Managed B
 - Application configuration settings
 - Azure application proxy integration
 
-Microsoft Intune protection policies for Microsoft Edge helps to protect your organization’s data and resources. Intune-protected Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
+Microsoft Intune protection policies for Microsoft Edge help to protect your organization’s data and resources. Intune-protected Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
 
 ## Getting started
 
@@ -291,17 +291,17 @@ Use the following information to learn about the allowed formats and wildcards t
   - `http://www.contoso.com: /*`
 ## Opening links within the Intune Managed Browser vs. Microsoft Edge 
 
-Both the Intune Managed Browser and Microsoft Edge are now considered policy managed browsers/protected browsers. Today, existing app protection policies result in web links from Intune managed apps to open in a specific browser depending on your scenario and platform. 
+Both the Intune Managed Browser and Microsoft Edge are now considered policy-managed browsers/protected browsers. Today, existing app protection policies result in web links from Intune managed apps to open in a specific browser depending on your scenario and platform. 
 
 On Android: 
-* Managed Browser will open if a user has both Managed Browser and Microsoft Edge downloaded on their device. To ensure Microsoft Edge is being opened instead of Managed Browser, set the app config setting “com.microsoft.intune.useEdge” to “true” for all Intune managed apps with a policy managed browser required.  
+* Managed Browser will open if a user has both Managed Browser and Microsoft Edge downloaded on their device. To ensure Microsoft Edge is being opened instead of Managed Browser, set the app config setting “com.microsoft.intune.useEdge” to “true” for all Intune managed apps with a policy-managed browser required.  
 * Microsoft Edge will open if only Microsoft Edge is on the device and is targeted with policy.
 * Managed Browser will open if only Managed Browser is on the device and is targeted with policy. 
 
 On iOS, for apps that have integrated the Intune SDK for iOS v. 9.0.9+: 
-* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy managed browser required **or** Microsoft Edge if Microsoft Edge is installed and has recieved policy. 
-* Microsoft Edge if only Microsoft Edge is on the device, is targeted with, and has recieved policy. 
-* Managed Browser if only Managed Browser is on the device, is targeted with, and has recieved policy.
+* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy-managed browser required **or** Microsoft Edge if Microsoft Edge is installed and has received policy. 
+* Microsoft Edge if only Microsoft Edge is on the device, is targeted with, and has received policy. 
+* Managed Browser if only Managed Browser is on the device, is targeted with, and has received policy.
 
 ## How to access to managed app logs using the Managed Browser on iOS
 
