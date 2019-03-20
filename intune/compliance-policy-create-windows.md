@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -128,7 +128,10 @@ Windows 8.1 PCs return a version of **3**. If the OS version rule is set to Wind
 
 - **Require code integrity**: Code integrity is a feature that validates the integrity of a driver or system file each time it's loaded into memory. Code integrity detects if an unsigned driver or system file is being loaded into the kernel. It also detects if a system file is modified by malicious software run by a user account with administrator privileges.
 
-See [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) for details about how the HAS service works.
+Additional resources:
+
+- [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) has details about how the HAS service works.
+- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ### Device properties
 
