@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -83,3 +83,5 @@ Learn how to protect access to company resource based on device, network, and ap
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
+- Sophos (details coming soon)
+- Wandera (details coming soon)
