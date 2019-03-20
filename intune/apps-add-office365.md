@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/19/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Assign Office 365 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
+This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
 > [!NOTE]
 > You must use Office 365 ProPlus licenses to activate Office 365 ProPlus apps deployed through Microsoft Intune. Currently, Office 365 Business edition is not supported by Intune.
@@ -67,7 +67,7 @@ Select the Office apps that you want to assign to devices.
 
 1. In the **Add App** pane, select **Configure App Suite**.
 2. In the **Configure App Suite** pane, select the standard Office apps that you want to assign to devices.  
-    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them.
+    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them.
 3. Select **OK**.
 
 ## Configure app information
