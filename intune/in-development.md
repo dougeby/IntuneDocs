@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -53,12 +53,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 
 
 <!-- 1903 start-->
-
-### Encryption report  <!-- 2351538 -->
-You'll be able to use a new Encryption report to view details about the encryption status of your devices. Available details will include a devices TPM version, encryption readiness and status, error reporting, and more.  
-
-### Access BitLocker recovery keys from the Intune portal  <!-- 2351547  -->
-We’re adding a new entry point in Devices, where you can view details from Azure Active Directory (AAD) about BitLocker Key ID and BitLocker recovery keys.
 
 ### Scope tags for app configuration policies <!--2371891 -->
 You'll be able to add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag.
