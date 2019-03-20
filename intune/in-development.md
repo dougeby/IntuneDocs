@@ -82,7 +82,7 @@ Company Portal for iOS will be updating the app's enrollment screens and steps t
 - Open the Settings app to install the management profile on their device.​
 - Return to the Company Portal app to complete enrollment.  ​
 
-For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2. 
+For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These doc changes will be live after Apple releases iOS version 12.2. 
 
 ### Support for additional connectors on the Tenant Status page <!-- 3617202     -->
 The Tenant Status page will display status information for additional connectors, including *Windows Defender Advanced Threat Protection* (ATP) and other Mobile Threat Defense connectors.
