@@ -261,8 +261,6 @@
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
-    - name: Install Exchange service connector
-      href: exchange-service-connector-configure.md
     - name: Synchronize device
       href: device-sync.md
     - name: Examine device inventory
@@ -327,7 +325,12 @@
     - name: Education Take a Test app
       href: education-settings-configure.md
     - name: Shared multi-user devices
-      href: shared-user-device-settings.md      
+      href: shared-user-device-settings.md  
+    - name: Mobility Extensions on Zebra devices
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow logs and common issues
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Custom device settings
@@ -447,6 +450,8 @@
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Monitor device encryption
+      href: encryption-monitor.md
     - name: Certificates
       href: certificates-configure.md
       items:
