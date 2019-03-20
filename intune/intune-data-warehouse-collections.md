@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -619,7 +619,7 @@ The **user** entity collection contains user data. These records include user st
 | UserKey                    | Unique identifier of the user in the data warehouse -   surrogate key.                                                                                                                                                         | 123                                  |
 | UserId                     | Unique identifier of the user - similar to UserKey, but is   a natural key.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Email address of the user.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | User principal name of the user.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | User principal name of the user.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Display name of the user.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Specifies if this user is Intune licensed or not.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indicates whether all of the user's licenses have expired   and whether the user was therefore removed from Intune. For a single record,   this flag does not change. Instead, a new record is created for a new user   state. | True/False                           |
