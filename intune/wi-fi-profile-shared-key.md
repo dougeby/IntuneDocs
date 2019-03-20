@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/28/2018
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -80,10 +80,12 @@ The following example includes the XML code for an Android or Windows Wi-Fi prof
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
+> - `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
 >
->  `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
+> - `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
 >  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but the device still contains the profile.
+>
+> - XML has special characters, such as the `&` (ampersand). Using special characters may prevent the XML from working as expected. 
 
 ```
 <!--
