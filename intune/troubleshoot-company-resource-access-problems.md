@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Common error codes and descriptions in Microsoft Intune
 
-This article lists the error, status codes, descriptions, and possible solutions. Use this information to help troubleshoot issues when using Microsoft Intune.
+This article lists common errors, status codes, descriptions, and possible solutions when accessing organization resources. Use this information to help troubleshoot access issues when using Microsoft Intune.
 
 If you need support help, see [get support for Microsoft Intune](get-support.md).
 
