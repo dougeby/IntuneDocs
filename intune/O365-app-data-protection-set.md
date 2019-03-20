@@ -106,7 +106,7 @@ This article uses OneDrive for Business as the example to demonstrate the userâ€
 | Allow app to receive data from other apps | All apps | All apps |
 | Prevent "Save As" | No | No |
 | Restrict cut, copy, and paste with other apps | Any app | Any app |
-| Specify the number of characters that may be cut or copied from a managed app | Any app | Any app |
+| Specify the number of characters that may be cut or copied from a managed app | 0 | 0 |
 | Restrict web content to display in a corporate managed browser | No | No |
 | Encrypt app data | When device is locked | Yes |
 | Disable contacts sync | No | No |
