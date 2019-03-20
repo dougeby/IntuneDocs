@@ -35,7 +35,7 @@ Intune provides a centralized location to identify the encryption status of your
 ## Encryption report 
 *This feature is in Public Preview.*  
 
-You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
+You can use the Encryption report (in Public Preview) to view details about the Encryption status of your Windows 10 devices.  
 
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
 
