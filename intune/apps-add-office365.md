@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -134,40 +134,7 @@ If you selected the **Configuration designer** option under the **Setting format
 
 ## Enter XML format
 
-If you selected the **Enter XML data** option under the **Setting format** dropdown box, you'll see the **Enter XML format** option in the **Add app** blade. You can type or paste an XML property list that contains the app configuration settings for devices enrolled in Intune. The format of the XML property list varies depending on the app that you are configuring. Intune validates the XML format. However, Intune does not check that the XML property list works with the target app.
-
-### Example format for an app configuration XML file
-
-When you create an app configuration file, you can specify one or more of the following values by using this format:
-
-```xml
-<?xml version="1.0"?>​
-<Configuration>​
-    <Add ForceUpgrade="TRUE" AllowCdnFallback="TRUE" Channel="PerpetualVL2019" OfficeClientEdition="64">​
-        <Product ID="Standard2019Volume">​
-            <Language ID="en-us"/>​
-            <ExcludeApp ID="Groove"/>​
-            <ExcludeApp ID="OneNote"/>​
-        </Product>​
-    </Add>​
-    <Property Value="0" Name="SharedComputerLicensing"/>​
-    <Property Value="TRUE" Name="PinIconsToTaskbar"/>​
-    <Property Value="0" Name="SCLCacheOverride"/>​
-    <Updates Enabled="TRUE"/>​
-    <RemoveMSI All="TRUE"/>​
-</Configuration>​
-```
-
-### Supported XML data types
-
-Intune supports the following configuration XML data types:
-
-- &lt;integer&gt;
-- &lt;real&gt;
-- &lt;string&gt;
-- &lt;array&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; or &lt;false /&gt;
+If you selected the **Enter XML data** option under the **Setting format** dropdown box, you'll see the **Enter XML format** option in the **Add app** blade. For more information, see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## Finish up
 
