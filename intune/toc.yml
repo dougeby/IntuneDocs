@@ -447,6 +447,8 @@
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Monitor device encryption
+      href: encryption-monitor.md
     - name: Certificates
       href: certificates-configure.md
       items:
