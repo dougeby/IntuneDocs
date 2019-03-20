@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ If a design component does not exist in at least one test criteria that aligns t
 
 -   **Devices:** Test devices that can be wiped or reset to factory defaults.
 
--   **Integration components:** All integration components (certificate connector, Intune service-to-service connector for hosted Exchange, and Intune on-premises Exchange connector) should be installed and configured if needed.
+-   **Integration components:** All integration components (certificate connectors, and the Intune Exchange on-premises connector) should be installed and configured if needed.
 
 You may need design changes to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a change could be:
 
