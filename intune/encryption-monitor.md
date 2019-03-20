@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.custom: intune-azure
 Intune provides a centralized location to identify the encryption status of your Windows 10 devices, and helps you access important information for BitLocker from your devices, as found in Azure Active Directory (Azure AD).  
 
 - The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
-- [View BitLocker details (in Pubilc Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
+- [View BitLocker details (in Public Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
 ## Encryption report (in Public Preview)
 You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
@@ -102,5 +102,5 @@ When keys aren't in Azure AD, Intune will display *No BitLocker key found for th
 
 Information for BitLocker is obtained using the [BitLocker configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). BitLocker CSP is supported on Windows 10 version 1703 and later, and for Windows 10 Pro version 1809 and later. 
 
-### Next steps
+## Next steps
 Create a [device compliance](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) policy for Windows 10 devices to configure BitLocker and encryption.
