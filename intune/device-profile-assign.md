@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -34,7 +34,7 @@ ms.collection: M365-identity-device-management
 
 You create a profile, and it includes all the settings you entered. The next step is to deploy or "assign" the profile to your Azure Active Directory (Azure AD) user or device groups. When it's assigned, the users and devices receive your profile, and the settings you entered are applied.
 
-This article shows you how to assign a profile, and includes some information on using scope tags and applicability rules on your profiles.
+This article shows you how to assign a profile, and includes some information on using scope tags on your profiles.
 
 ## Assign a device profile
 
@@ -47,13 +47,11 @@ This article shows you how to assign a profile, and includes some information on
 
 5. **Save** your changes.
 
-## Use scope tags or applicability rules
+## Use scope tags
 
-When you create or update a profile, you can also add scope tags and applicability rules to the profile.
+When you create or update a profile, you can also add scope tags to the profile.
 
 **Scope tags** are a great way to assign and filter policies to specific groups, such as Human Resources or All US-NC employees. [Use RBAC and scope tags for distributed IT](scope-tags.md) has more information.
-
-On Windows 10 devices, you can add **applicability rules** so the profile only applies to a specific OS version or a specific Windows edition. [Applicability rules](device-profile-create.md#applicability-rules) has more information.
 
 ## Exclude groups from a profile assignment
 

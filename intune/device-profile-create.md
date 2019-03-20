@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create device profiles in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure a device configuration profile in Microsoft Intune. Select the platform type, configure the settings, add a scope tag, and create an applicability rule.
+description: Add or configure a device configuration profile in Microsoft Intune. Select the platform type, configure the settings, and add a scope tag.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,6 @@ This article:
 
 - Lists the steps to create a profile.
 - Shows you how to add a scope tag to "filter" the profile.
-- Describes applicability rules on Windows 10 devices, and shows you how to create a rule.
 - Lists the check-in refresh cycle times when devices receive profiles and any profile updates.
 
 ## Create the profile
@@ -107,56 +106,6 @@ For more information about scope tags, and what you can do, see [Use RBAC and sc
 2. Select **Add** to create a new scope tag. Or, select an existing scope tag from the list.
 3. Select **OK** to save your changes.
 
-## Applicability rules
-
-Applies to:
-
-- Windows 10 and later
-
-Applicability rules allow administrators to target devices in a group that meet specific criteria. For example, you create a device restrictions profile that applies to the **All Windows 10 devices** group. And, you only want the profile assigned to devices running Windows 10 Enterprise.
-
-To do this task, create an **applicability rule**. These rules are great for the following scenarios:
-
-- You use Windows 10 Education (EDU). At Bellows College, you want to target all Windows 10 EDU devices between RS3 and RS4.
-- You want to target all users in Human Resources at Contoso, but only want Windows 10 Professional or Enterprise devices.
-
-To approach these scenarios, you:
-
-- Create a devices group that includes all devices at Bellows College. In the profile, add an applicability rule so it applies if the OS minimum version is `16299` and the maximum version is `17134`. Assign this profile to the Bellows College devices group.
-
-  When it's assigned, the profile applies to devices between the minimum and maximum versions you enter. For devices that aren't between the minimum and maximum versions you enter, their status shows as **Not applicable**.
-
-- Create a users group that includes all users in Human Resources (HR) at Contoso. In the profile, add an applicability rule so it applies to devices running Windows 10 Professional or Enterprise. Assign this profile to the HR users group.
-
-  When it's assigned, the profile applies to devices running Windows 10 Professional or Enterprise. For devices that aren't running these editions, their status shows as **Not applicable**.
-
-When you assign the profile to the groups, the applicability rules act as a filter, and only target the devices that meet your criteria.
-
-### Add a rule
-
-1. Select **Applicability Rules**. You can choose the **Rule**, **Property**, and **OS edition**:
-
-    ![Add an applicability rule to a device configuration profile in Microsoft Intune](./media/applicability-rules.png)
-
-2. In **Rule**, choose if you want to include or exclude users or groups. Your options:
-
-    - **Assign profile if**
-    - **Don't assign profile if**
-
-3. In **Property**, choose your filter. Your options: 
-
-    - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
-    - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. 
-
-      For example, you can enter `16299` (RS3 or 1709) for minimum version and `17134` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `16299.001` for minimum version and `17134.319` for maximum version.
-
-4. Select **Add** to save your changes.
-
-### Important
-
-- There are two profiles with the exact same rule, such as enabling BitLocker. The second profile has an applicability rule. The profile without the applicability rule is applied.
-- The devices that don't apply to the applicability rule show as **Not applicable**. Intune looks at the device, and evaluates it as **Not applicable**.
-
 ## Refresh cycle times
 
 Intune uses the following refresh cycles to check for updates to configuration profiles:
@@ -175,10 +124,10 @@ If the device recently enrolled, the check-in runs more frequently:
 | Platform | Frequency |
 | --- | --- |
 | iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
+| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
 | Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
 | Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
 
 At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
 
