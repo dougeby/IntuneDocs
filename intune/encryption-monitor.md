@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -29,29 +29,27 @@ ms.custom: intune-azure
 # Monitor BitLocker and device encryption  
 Intune provides a centralized location to identify the encryption status of your Windows 10 devices, and helps you access important information for BitLocker from your devices, as found in Azure Active Directory (Azure AD).  
 
-- The [Encryption report](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
-- [View BitLocker details](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
+- The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
+- [View BitLocker details (in Public Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
-## Encryption report
+## Encryption report (in Public Preview)
 You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
 
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
 
 ### Prerequisites:
-To appear in the Encryption report, a device must:  
-- Run Windows version 1607 or later  
-- Have a Trusted Platform Module (TPM)  
+To appear in the Encryption report, a device must run Windows version 1607 or later.  
 
 ### Report details
 The report displays the **Device name** for your Windows 10 devices and high-level details about each, including:  
-- **OS version** – Current version of Windows 10.  
-- **TPM version** – The version of the Trusted Protection Module (TPM) chip on the device.  
+- **OS version** – Version of Windows.  
+- **TPM version** – The version of the Trusted Platform Module (TPM) chip on the device.  
 - **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM.  
 - **Encryption status** – Whether the OS drive is encrypted.  
 
 
 ### Device encryption status
-When you select a device that runs the *Windows 10 April 019 Update* or later, Intune displays the **Device encryption status** pane.  
+When you select a device, Intune displays the **Device encryption status** pane.
 
 This pane provides the following details:  
 - **Device name** – The name of the device you're viewing.  
@@ -64,9 +62,13 @@ This pane provides the following details:
   This list can be of use in locating individual policies for review should the Profile state summary indicate problems.  
 
 - **Profile state summary** – A summary of the profiles that apply to this device. The summary represents the least favorable condition across all applicable profiles. For example, if one profile results in an Error, the Profile state summary will display *Error*.  
-- **Status details** – Advanced details about the device’s encryption state. This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
+- **Status details** – Advanced details about the device’s encryption state. 
+  > [!NOTE]  
+  > Intune only shows *Status details* for devices that run the *Windows 10 April 2019 Update* or later.
+  
+  This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
 
-   The following are examples of the status details Intune can report:  
+  The following are examples of the status details Intune can report:  
 
    - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
    - The encryption method of the OS volume doesn't match the BitLocker policy.  
@@ -86,9 +88,9 @@ This pane provides the following details:
    - The network isn't available, which is required for recovery key backup.  
 
 
-## BitLocker recovery keys
+## BitLocker recovery keys (in Public Preview)
 As a Public Preview, Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
-1. Sign in to the [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
+1. Sign in to [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
 2. Select a device from the list, and then under *Monitor*, select **Recovery keys – Preview**.  
   
 When keys are available in Azure AD, the following information is available:
@@ -100,5 +102,5 @@ When keys aren't in Azure AD, Intune will display *No BitLocker key found for th
 
 Information for BitLocker is obtained using the [BitLocker configuration service provider](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) (CSP). BitLocker CSP is supported on Windows 10 version 1703 and later, and for Windows 10 Pro version 1809 and later. 
 
-### Next steps
+## Next steps
 Create a [device compliance](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) policy for Windows 10 devices to configure BitLocker and encryption.
