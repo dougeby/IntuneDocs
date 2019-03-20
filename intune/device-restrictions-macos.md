@@ -50,7 +50,7 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - macOS 10.13 and later
 
-- **Defer software updates (supervised only)**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if a macOS update gets released by Apple on a specific date, then that update naturally shows up on the device around the release date.
+- **Defer software updates (supervised only)**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if a macOS update gets released by Apple on a specific date, then that update naturally shows up on the device around the release date. Note that on macOS, seed build updates will be allowed, without delay. 
 
   **Enable** allows you to delay when software updates are shown on devices, from 0-90 days. This setting doesn't control when updates are or aren't installed. 
 
