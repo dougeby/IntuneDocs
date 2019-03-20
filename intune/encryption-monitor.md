@@ -32,7 +32,9 @@ Intune provides a centralized location to identify the encryption status of your
 - The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
 - [View BitLocker details (in Public Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
-## Encryption report (in Public Preview)
+## Encryption report 
+*This feature is in Public Preview.*  
+
 You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
 
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
@@ -88,7 +90,9 @@ This pane provides the following details:
    - The network isn't available, which is required for recovery key backup.  
 
 
-## BitLocker recovery keys (in Public Preview)
+## BitLocker recovery keys 
+*This feature is in Public Preview.*  
+
 As a Public Preview, Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
 1. Sign in to [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
 2. Select a device from the list, and then under *Monitor*, select **Recovery keys – Preview**.  

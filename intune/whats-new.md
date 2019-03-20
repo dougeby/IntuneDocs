@@ -54,11 +54,11 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 #### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
 
-Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report-(in-public-preview)) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
 
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
 
-You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys-(in-public-preview)) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
+You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
 
 ## Week of February 25, 2019
