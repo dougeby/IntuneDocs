@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Assign Office 365 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
+This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
 > [!NOTE]
 > You must use Office 365 ProPlus licenses to activate Office 365 ProPlus apps deployed through Microsoft Intune. Currently, Office 365 Business edition is not supported by Intune.
@@ -65,7 +65,7 @@ You can choose a method for configuring app setting by selecting a **Settings fo
 - Configuration designer
 - Enter XML data
 
-When you choose **Configuration designer** the **Add app** blade will change to offer two alternate settings options:
+When you choose **Configuration designer** the **Add app** blade will change to offer two additional settings options:
 - Configure App Suite
 - App Suite Settings
 
@@ -102,7 +102,7 @@ If you selected the **Configuration designer** option under the **Setting format
 
 1. In the **Add App** pane, select **Configure App Suite**.
 2. In the **Configure App Suite** pane, select the standard Office apps that you want to assign to devices.  
-    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them.
+    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them.
 3. Select **OK**.
 
 ## Configure app suite settings
