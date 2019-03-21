@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/08/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -82,7 +82,7 @@ Only Intune **Service Administrators** users with "Full" permissions get migrate
 You can assign built-in roles to groups without further configuration. You can't delete or edit a built-in role.
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
-- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
+- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, corporate device identifiers, and security baselines.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Can't make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
 - **Intune Role Administrator**: Manages custom Intune roles and adds assignments for built-in Intune roles. It's the only Intune role that can assign permissions to Administrators.
