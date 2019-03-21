@@ -46,7 +46,7 @@ These settings are added to a device configuration profile in Intune, and then a
     This feature applies to:  
     - iOS 9.3.2 and later
 
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. **Not configured** (default) lets the user capture the screen contents as an image.
+- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. In iOS 9.0 and later, this also includes blocking screen recordings. **Not configured** (default) lets the user capture the screen contents as an image or as a video.
   - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Not configured** (default) allows the Apple Classroom app to view the screen.
 
     This feature applies to:  
