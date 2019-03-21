@@ -42,17 +42,17 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 ## Azure Active Directory roles with Intune access
 
-| Azure Active Directory role | All Intune data | Intune audit data | Conditional access policies |
-| --- | --- | --- | --- |
-| Global Administrator | Read/write | Read/write | Read/write | 
-| Intune Service Aministrator | Read/write | Read/write | Read/write | 
-| Conditional Access Administrator | None | None | Read/write | 
-| Security Administrator | Read only | Read only | Read only |
-| Security Operator | Read only | Read only | Read only |
-| Security Reader | Read only | Read only | Read only |
-| Global Reader | Read only | Read only | Read only |
-| Compliance Administrator | None | Read only | None |
-| Compliance Data Administrator | None | Read only | None |
+| Azure Active Directory role | All Intune data | Intune audit data |
+| --- | --- | --- |
+| Global Administrator | Read/write | Read/write |
+| Intune Service Aministrator | Read/write | Read/write |
+| Conditional Access Administrator | None | None |
+| Security Administrator | Read only | Read only |
+| Security Operator | Read only | Read only |
+| Security Reader | Read only | Read only |
+| Global Reader | Read only | Read only |
+| Compliance Administrator | None | Read only |
+| Compliance Data Administrator | None | Read only |
 
 **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
 
