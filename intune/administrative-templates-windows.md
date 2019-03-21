@@ -37,9 +37,6 @@ You can complete this task using **Administrative Templates** in Microsoft Intun
 
 This article lists the steps to create a template for Windows 10 devices, and shows how to filter all the available settings in Microsoft Intune. When you create the template, it creates a device configuration profile. You can then assign or deploy this profile to Windows 10 devices in your organization.
 
-> [!NOTE]
-> Administrative templates are supported for standalone devices. They are currently not supported for System Center Configuration Manager (SCCM) co-managed devices.
-
 ## Create a template
 
 1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
