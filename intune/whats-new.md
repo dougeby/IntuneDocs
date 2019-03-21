@@ -246,14 +246,15 @@ The default settings and number of settings remain the same, but this change all
 
 ### Additional settings for Outlook <!-- 3301182  -->
 You can now configure the following additional settings for Outlook for iOS and Android using Intune:
-Only allow work or school accounts to be used in Outlook in iOS and Android
-Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
-Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-Allow contacts to be saved
-Configure external recipients MailTips
-Configure **Focused Inbox**
-Require biometrics to access Outlook for iOS
-Block external images
+
+- Only allow work or school accounts to be used in Outlook in iOS and Android
+- Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
+- Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
+- Allow contacts to be saved
+- Configure external recipients MailTips
+- Configure **Focused Inbox**
+- Require biometrics to access Outlook for iOS
+- Block external images
 
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
