@@ -90,8 +90,7 @@ These settings are applicable to all network types.
 
 These settings are applicable to specific network types, including **Domain (workplace) network**, **Private (discoverable) network**, and **Public (non-discoverable) network**.
 
-#### General settings
-
+#### General settings  
 - **Windows Defender Firewall**: Choose **Enable** to turn on the firewall, and advanced security. **Not configured** (default) allows all network traffic, regardless of any other policy settings.
 - **Stealth mode**: **Block** the firewall from operating in stealth mode. Blocking stealth mode allows you to also block **IPsec secured packet exemption**. **Not configured** (default) operates the firewall in stealth mode, which helps prevent responses to probing requests.
 - **Shielded**: **Block** turns off this feature. **Not configured** (default) enables this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.
