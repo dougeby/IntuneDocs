@@ -88,6 +88,8 @@ For Android, you will be able to configure actions for the following settings us
 -  Min app version
 -  Min patch version
 -  Device manufacturer(s)
+-  SafetyNet device attestation
+-  Threat scan on apps
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A;Manufacturer B* 
