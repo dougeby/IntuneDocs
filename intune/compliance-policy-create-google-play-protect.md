@@ -63,8 +63,8 @@ The compliance policy that requires these settings can then be targeted to a gro
  - **SafetyNet device attestation**  
    Set the level of SafetyNet device attestation integrity that must be met. Levels include **Not configured**, **Check basic integrity**, and **Check basic integrity & certified devices**.
 
-
-
+> [! NOTE] 
+> For instructions on how to configure Google Play Protect settings using App Protection Policies, see [Intune App Protection Policy settings](https://docs.microsoft.com/en-us/intune/app-protection-policy-settings-android#conditional-launch) on Android. 
 
 ## Next steps
 

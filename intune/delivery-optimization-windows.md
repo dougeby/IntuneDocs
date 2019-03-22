@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -62,7 +62,7 @@ The profile is created and is shown in the list. Next, [assign the profile](devi
 
 ## Move existing update rings to delivery optimization
 
-**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To do so:
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage.
 
 1. Create a delivery optimization configuration profile:
 
@@ -73,7 +73,7 @@ The profile is created and is shown in the list. Next, [assign the profile](devi
         - **Description**: Enter a description for the profile. This setting is optional, but recommended.
         - **Platform**: Select **Windows 10 and later**.
         - **Profile type**: Select **Delivery optimization**.
-        - **Settings**: For **Delivery optimization download mode**, choose the same mode used by the existing software update ring. Your options:
+        - **Settings**: For **Delivery optimization download mode**, choose the same mode that's used by the existing software update ring unless you want to change the settings you apply to your devices. Your options:
             - **Not configured​**
             - **HTTP only, no peering​**
             - **HTTP blended with peering behind the same NAT**
@@ -82,7 +82,7 @@ The profile is created and is shown in the list. Next, [assign the profile](devi
             - **Simple download mode with no peering​**
             - **Bypass mode**
     3. Configure any additional settings you might want to manage.
-2. Assign this new profile to the same devices and users as the existing software update ring. [Assign the profile](device-profile-assign.md) lists the steps.
+1. Assign this new profile to the same devices and users as the existing software update ring. [Assign the profile](device-profile-assign.md) lists the steps.
 
 3. Unconfigure the existing software ring:
     1. In Intune, go to **Software updates** > Windows 10 Update Rings.

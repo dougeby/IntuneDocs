@@ -45,22 +45,48 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 ## To create a scope tag
 
 1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
+
+    ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
+
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
 
 ## To assign a scope tag to a role
 
 1. In Intune, choose **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
+
+    ![Screenshot of assign scope to a role.](./media/scope-tags/assign-scope-to-role.png)
+
 2. Provide an **Assignment name** and **Description**.
-3. Choose **Members (Groups)** and choose the groups that you want as part of this assignment. Users in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
-4. Choose **Scope (Groups)** and choose the users and groups that you want to be part of this assignment. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
-5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
-6. Choose **Select** > **OK** > **OK**. 
+3. Choose **Members (Groups)** > **Add** > choose the groups that you want as part of this assignment > **Select** > **OK**. mUsers in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
+
+    ![Screenshot of select member groups.](./media/scope-tags/select-member-groups.png)
+
+4. If you want to manage users/devices in a specific set of groups, choose **Scope (Groups)** > **Selected Groups** > **Select groups to include** > choose the groups > **Select** > **OK**. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+
+    ![Screenshot of select scope groups.](./media/scope-tags/select-scope-groups.png)
+
+    Alternately, you can choose **All Devices**, **All Users**, or **All Users & All Devices**.
+
+    ![Screenshot of other options for select scope groups.](./media/scope-tags/scope-group-other-options.png)
+    
+5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role > **Select** > **OK**. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
+
+    ![Screenshot of select scope tags.](./media/scope-tags/select-scope-tags.png)
+
+6. Choose **OK**. 
 
 ## To add a scope tag to a configuration profile
-1. In Intune, choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)** > **Add**.
-2. Under **Select Tags**, choose the tags that you want to add to the profile.
-3. Choose **Select** > **OK** > **Save**.
+1. In Intune, choose **Device configuration** > **Profiles** > choose a profile.
+
+    ![Screenshot of select profile.](./media/scope-tags/choose-profile.png)
+
+2. Choose **Properties** > **Scope (Tags)** > **Add**.
+
+    ![Screenshot of add scope tags.](./media/scope-tags/add-scope-tags.png)
+
+3. Under **Select Tags**, choose the tags that you want to add to the profile.
+4. Choose **Select** > **OK** > **Save**.
 
 ## Scope tag details
 When working with scope tags, remember these details:
@@ -75,7 +101,7 @@ When working with scope tags, remember these details:
     - App configuration policies – managed devices
     - Powershell scripts
     - DEP tokens
-    - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
+- When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
 - You can only assign a scope tag that you have in your role assignments.

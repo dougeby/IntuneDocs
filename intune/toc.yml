@@ -224,8 +224,6 @@
       items:
       - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Install Intune software client on Windows PCs
-      href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Incomplete enrollment report
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
@@ -253,7 +251,7 @@
       href: device-rename.md
     - name: Restart device
       href: device-restart.md
-    - name: Logout current user
+    - name: Sign out current user
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
@@ -449,6 +447,8 @@
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Monitor device encryption
+      href: encryption-monitor.md
     - name: Certificates
       href: certificates-configure.md
       items:
@@ -532,7 +532,9 @@
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
       - name: Deploy Windows 10 apps
-        href: apps-windows-10-app-deploy.md            
+        href: apps-windows-10-app-deploy.md      
+      - name: Deploy apps to Government environments
+        href: apps-deploy-gcc-dod.md                    
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -647,8 +649,6 @@
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
-    - name: Known issues
-      href: known-issues.md
     - name: Get support
       href: get-support.md      
 - name: Reference
@@ -819,6 +819,9 @@
         href: app-wrapper-prepare-android.md
       - name: Intune App SDK for Android
         href: app-sdk-android.md
+        items:
+        - name: Intune App SDK for Android testing guide
+          href: app-sdk-android-testing-guide.md        
       - name: Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: Use the Intune Data Warehouse
@@ -850,8 +853,6 @@
             href: reports-ref-user-timeline.md
           - name: Reference for application entities
             href: reports-ref-application.md
-          - name: Reference for current user entity
-            href: reports-ref-current-user.md
           - name: Reference for date entity
             href: reports-ref-date.md
           - name: Reference for devices entities

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/30/2019
+ms.date: 03/13/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -27,9 +27,11 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# iOS device feature settings in Intune
+# iOS device settings to use common iOS features in Intune
 
 Intune includes some built-in settings to allow iOS users to use different Apple features on their devices. For example, administrators can control how iOS users use AirPrint printers, add apps and folders to the dock and pages on the home screen, show app notifications, show asset tag details on the lock screen, use single sign-on authentication, and authenticate users with certificates.
+
+Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
 This article lists these settings, and describes what each setting does.
 
@@ -43,8 +45,8 @@ This feature allows iOS users to print to known AirPrint printers.
 
 1. In **Settings**, select **AirPrint**. Enter the following properties of the AirPrint server:
 
-    - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
-    - **Path**: The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
+    - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. Get the IP address and path (in this article) provides more details.
+    - **Path**: The path is typically `ipp/print` for printers on your network. Get the IP address and path (in this article) provides more details.
     - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
     - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
@@ -309,47 +311,52 @@ You may experience unexpected behavior when a profile with no image is assigned 
 
 The following list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
 
-|||
-|-|-|
-|App name|BundleID|
-|App Store|com.apple.AppStore|
-|Calculator|com.apple.calculator|
-|Calendar|com.apple.mobilecal|
-|Camera|com.apple.camera|
-|Clock|com.apple.mobiletimer|
-|Compass|com.apple.compass|
-|Contacts|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Find Friends|com.apple.mobileme.fmf1|
-|Find iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Health|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Maps|com.apple.Maps|
-|Messages|com.apple.MobileSMS|
-|Music|com.apple.Music|
-|News|com.apple.news|
-|Notes|com.apple.mobilenotes|
-|Numbers|com.apple.Numbers|
-|Pages|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Photos|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Reminders|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Settings|com.apple.Preferences|
-|Stocks|com.apple.stocks|
-|Tips|com.apple.tips|
-|Videos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
-|Weather|com.apple.weather|
+| Bundle ID                   | App Name     | Publisher |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | App Store    | Apple     |
+| com.apple.calculator        | Calculator   | Apple     |
+| com.apple.mobilecal         | Calendar     | Apple     |
+| com.apple.camera            | Camera       | Apple     |
+| com.apple.mobiletimer       | Clock        | Apple     |
+| com.apple.compass           | Compass      | Apple     |
+| com.apple.MobileAddressBook | Contacts     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Files        | Apple     |
+| com.apple.mobileme.fmf1     | Find Friends | Apple     |
+| com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
+| com.apple.gamecenter        | Game Center  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Health       | Apple     |
+| com.apple.Home              | Home         | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.Maps              | Maps         | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
+| com.apple.Music             | Music        | Apple     |
+| com.apple.news              | News         | Apple     |
+| com.apple.mobilenotes       | Notes        | Apple     |
+| com.apple.Numbers           | Numbers      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Photos       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Reminders    | Apple     |
+| com.apple.mobilesafari      | Safari       | Apple     |
+| com.apple.Preferences       | Settings     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
+| com.apple.stocks            | Stocks       | Apple     |
+| com.apple.tips              | Tips         | Apple     |
+| com.apple.TV                | TV           | Apple     |
+| com.apple.videos            | Videos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
+| com.apple.weather           | Weather      | Apple     |
 
 ## Next steps
 

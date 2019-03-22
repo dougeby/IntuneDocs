@@ -91,12 +91,18 @@ This pane provides the following details:
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## BitLocker recovery keys 
 *This feature is in Public Preview.*  
 
 =======
 ## BitLocker recovery keys (in Public Preview)
 >>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
+=======
+## BitLocker recovery keys 
+*This feature is in Public Preview.*  
+
+>>>>>>> 8c748e2d771aa05eb69e22d6c32e7055ad3562d5
 As a Public Preview, Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
 1. Sign in to [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
 2. Select a device from the list, and then under *Monitor*, select **Recovery keys – Preview**.  

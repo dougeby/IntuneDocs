@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,19 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->     
 
 <!-- ########################## -->
+## Week of March 18, 2019
+
+#### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
+
+Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+
+#### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
+
+You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
+
+### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
+
 ## Week of February 25, 2019
 
 ### Device configuration
@@ -89,7 +102,7 @@ In Intune, select **Client apps** > **Apps** > "App name" > **Device install sta
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new-app-ui). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app). For additional Intune Data Warehouse updates, see [Upcoming changes to the Intune Data Warehouse API](whats-new.md#upcoming-change-to-the-intune-data-warehouse-api-).
 
 
 ### Device configuration
@@ -233,25 +246,22 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
 
-#### Additional settings for Outlook <!-- 3301182  -->
-You can now configure the followiong additional settings for Outlook for iOS and Android using Intune:
+### Additional settings for Outlook <!-- 3301182  -->
+You can now configure the following additional settings for Outlook for iOS and Android using Intune:
+
 - Only allow work or school accounts to be used in Outlook in iOS and Android
 - Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
 - Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-
-The following settings are still being rolled out gradually and will be available in your console soon:
 - Allow contacts to be saved
 - Configure external recipients MailTips
 - Configure **Focused Inbox**
 - Require biometrics to access Outlook for iOS
-
-The setting below appears in the Intune console, but when configured, will not work as expected. This issue will be fixed soon:
 - Block external images
 
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
 
-For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md). 
+For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md).
 
 #### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
@@ -355,7 +365,7 @@ Intune provides additional device reporting fields, including App Registration I
 
 #### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
 
-Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
+Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in public preview. With this update:
 
 - Administrative templates include about 300 settings that can be managed in Intune. Previously, these settings only existed in the group policy editor.
 - Administrative templates are available in public preview.
