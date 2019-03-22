@@ -65,7 +65,7 @@ The **AppTypes** entity lists the installation source of an app.
 
 | Property  | Description |
 |---------|------------|
-| AppTypeID |Id for the type |
+| AppTypeID |ID for the type |
 | AppTypeKey |Surrogate key for the key |
 | AppTypeName |App type |
 
