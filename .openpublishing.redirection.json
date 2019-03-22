@@ -3603,6 +3603,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "intune/reports-ref-current-user.md",
+			"redirect_url": "/intune/reports-ref-data-model",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports.md",
 			"redirect_url": "/intune/reports-nav-create-intune-reports",
 			"redirect_document_id": true

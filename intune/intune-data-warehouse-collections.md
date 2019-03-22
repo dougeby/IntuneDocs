@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -57,7 +57,7 @@ The **appType** entity lists the installation source of an app.
 
 |   Property  |        Description        |
 |:-----------:|:-------------------------:|
-| AppTypeID   | Id for the type           |
+| AppTypeID   | ID for the type           |
 | AppTypeKey  | Surrogate key for the key |
 | AppTypeName | App type                  |
 
@@ -233,7 +233,7 @@ The **device** entity lists all enrolled devices under management and their corr
 | DeviceEnrollmentType       | Key of the enrollment type   associated with this device, indicating method of enrollment.                                                                                             |
 | ComplianceStateKey         | Key of the Compliance state   associated with this device.                                                                                                                             |
 | OSVersion                  | Operating system version of the device.                                                                                                                                                |
-| EasDeviceId                | Exchange ActiveSync Id of the device.                                                                                                                                                  |
+| EasDeviceId                | Exchange ActiveSync ID of the device.                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | Unique Identifier for the user   associated with the device.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | Date and time in UTC when this   device was last modified in the data warehouse.                                                                                                       |
@@ -283,7 +283,7 @@ The **deviceType** entity represents the device type referenced by other data wa
 | 12           | ISocConsumer      | iSoc   Consumer device                                |
 | 13           | Unix              | Unix   Device                                         |
 | 14           | MacMDM            | Mac   OS X device managed with the built-in MDM agent |
-| 15           | HoloLens          | Holo   Lens device                                    |
+| 15           | HoloLens          | HoloLens device                                       |
 | 16           | SurfaceHub        | Surface   Hub device                                  |
 | 17           | AndroidForWork    | Android   device-managed using Android Profile Owner  |
 | 18           | AndroidEnterprise | Android   enterprise device.                          |
@@ -313,7 +313,7 @@ The **deviceEnrollmentType** entity indicates how a device was enrolled. The enr
 | 6                | WindowsBulkUserless                | Windows 10 Bulk enrollment through   ICD with certificate.                               |
 | 7                | WindowsAutoEnrollment              | Windows 10 automatic enrollment.   (Add work account)                                    |
 | 8                | WindowsBulkAzureDomainJoin         | Windows 10 bulk Azure AD Join.                                                           |
-| 9                | WindowsCoManagement                | Windows 10 Co-Management triggered   by AutoPilot or Group Policy.                       |
+| 9                | WindowsCoManagement                | Windows 10 co-management triggered   by AutoPilot or Group Policy.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Windows 10 Azure AD Join using   Device Auth.                                            |
 
 ## enrollmentActivities 
@@ -370,8 +370,8 @@ The **EnrollmentFailureCategory** entity indicates why a device enrollment faile
 | BadRequest                      | Client sent a request that is not understood/supported by the service.                                        |
 | FeatureNotSupported             | Feature(s) used by this enrollment are not supported for this account.                                        |
 | EnrollmentRestrictionsEnforced  | Enrollment restrictions configured by admin blocked this enrollment.                                          |
-| ClientDisconnected              | Client timed out or enrollment was aborted by enduser.                                                        |
-| UserAbandonment                 | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)  |
+| ClientDisconnected              | Client timed out or enrollment was aborted by end user.                                                        |
+| UserAbandonment                 | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)  |
 
 ## enrollmentFailureReasons  
 The **EnrollmentFailureReason** entity indicates a more detailed reason for a device enrollment failure within a given failure category.  
@@ -400,7 +400,7 @@ The **EnrollmentFailureReason** entity indicates a more detailed reason for a de
 | EnrollmentCriteriaNotMet         | This device failed to enroll due to a configured enrollment restriction rule.                                                                                                                          |
 | BulkDeviceNotPreregistered       | This device’s international mobile equipment identifier (IMEI) or serial number wasn’t found.  Without this identifier, devices are recognized as personal-owned devices which are currently blocked.  |
 | FeatureNotSupported              | The user was attempting to access a feature that is not yet released for all customers or is not compatible with your Intune configuration.                                                            |
-| UserAbandonment                  | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)                                                                                           |
+| UserAbandonment                  | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)                                                                                           |
 | APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
 
 ## intuneManagementExtensions
@@ -450,7 +450,7 @@ The **managementAgentType** entity represents the agents used to manage a device
 | 5                     | EasIntuneClient                   | The   device is managed by both Exchange Active Sync and the Intune PC agent |
 | 8                     | ConfigManagerClient               | The   device is managed by the System Center Configuration Manager agent     |
 | 10                    | ConfigurationManagerClientMdm     | The device is managed by   Configuration Manager and MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | The device is managed by   Configuration Manager, MDM and Eas.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | The device is managed by   Configuration Manager, MDM and Exchange Active Sync.               |
 | 16                    | Unknown                           | Unknown   management agent type                                              |
 | 32                    | Jamf                              | The device attributes are fetched   from Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  The device is managed by Google's CloudDPC.                                 |
@@ -619,7 +619,7 @@ The **user** entity collection contains user data. These records include user st
 | UserKey                    | Unique identifier of the user in the data warehouse -   surrogate key.                                                                                                                                                         | 123                                  |
 | UserId                     | Unique identifier of the user - similar to UserKey, but is   a natural key.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Email address of the user.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | User principal name of the user.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | User principal name of the user.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Display name of the user.                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Specifies if this user is Intune licensed or not.                                                                                                                                                                              | True/False                           |
 | IsDeleted                  | Indicates whether all of the user's licenses have expired   and whether the user was therefore removed from Intune. For a single record,   this flag does not change. Instead, a new record is created for a new user   state. | True/False                           |

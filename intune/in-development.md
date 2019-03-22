@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -54,6 +54,9 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 
 <!-- 1903 start-->
 
+### Scope tags for app configuration policies <!--2371891 -->
+You'll be able to add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag.
+
 ### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
 You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
 
@@ -70,7 +73,7 @@ Company Portal for iOS will be updating the app's enrollment screens and steps t
 - Open the Settings app to install the management profile on their device.​
 - Return to the Company Portal app to complete enrollment.  ​
 
-For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2. 
+For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These doc changes will be live after Apple releases iOS version 12.2. 
 
 ### Create and use device configuration profiles on Android Zebra devices in Intune <!-- 3895244  -->
 Intune will support configuring Android Zebra devices. Specifically, you'll be able to: 
