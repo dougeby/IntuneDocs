@@ -69,7 +69,7 @@ When you choose **Configuration designer** the **Add app** blade will change to 
 - Configure App Suite
 - App Suite Settings
 
-<img alt="Add Offic 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
 When you choose **Enter XML data** the **Add app** blade with display the **Enter XML data** option. Select this to display the **Configuration File** blade. 
 
