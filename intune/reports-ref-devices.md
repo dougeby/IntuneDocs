@@ -68,7 +68,7 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 11 |Android |Android device-managed using Device Administrator |
 | 12 |ISocConsumer |iSoc Consumer device |
 | 14 |MacMDM |Mac OS X device managed with the built-in MDM agent |
-| 15 |HoloLens |Holo Lens device |
+| 15 |HoloLens |HoloLens device |
 | 16 |SurfaceHub |Surface Hub device |
 | 17 |AndroidForWork |Android device-managed using Android Profile Owner |
 | 100 |Blackberry |Blackberry Device |
@@ -128,8 +128,8 @@ The **EnrollmentFailureCategory** entity indicates why a device enrollment faile
 | BadRequest                      | Client sent a request that is not understood/supported by the service.                                        |
 | FeatureNotSupported             | Feature(s) used by this enrollment are not supported for this account.                                        |
 | EnrollmentRestrictionsEnforced  | Enrollment restrictions configured by admin blocked this enrollment.                                          |
-| ClientDisconnected              | Client timed out or enrollment was aborted by enduser.                                                        |
-| UserAbandonment                 | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)  |
+| ClientDisconnected              | Client timed out or enrollment was aborted by end user.                                                        |
+| UserAbandonment                 | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)  |
 
 ## enrollmentFailureReasons  
 The **EnrollmentFailureReason** entity indicates a more detailed reason for a device enrollment failure within a given failure category.  
@@ -158,7 +158,7 @@ The **EnrollmentFailureReason** entity indicates a more detailed reason for a de
 | EnrollmentCriteriaNotMet         | This device failed to enroll due to a configured enrollment restriction rule.                                                                                                                          |
 | BulkDeviceNotPreregistered       | This device’s international mobile equipment identifier (IMEI) or serial number wasn’t found.  Without this identifier, devices are recognized as personal-owned devices which are currently blocked.  |
 | FeatureNotSupported              | The user was attempting to access a feature that is not yet released for all customers or is not compatible with your Intune configuration.                                                            |
-| UserAbandonment                  | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)                                                                                           |
+| UserAbandonment                  | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)                                                                                           |
 | APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
 ## OwnerTypes
 
