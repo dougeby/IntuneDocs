@@ -853,8 +853,6 @@
             href: reports-ref-user-timeline.md
           - name: Reference for application entities
             href: reports-ref-application.md
-          - name: Reference for current user entity
-            href: reports-ref-current-user.md
           - name: Reference for date entity
             href: reports-ref-date.md
           - name: Reference for devices entities

@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -45,9 +45,6 @@ The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed
 
 | Property | Description | Example |
 |---------|------------|--------|
-| ApplicationKey |Unique identifier of the MAM app in the data warehouse. |123 |
-| ApplicationName |Name of the MAM app. |"Word" |
-| ApplicationId |Application ID of the MAM app. |b66bc706-ffff-7437-0340-032819502773 |
 | IsDeleted |Indicates whether this MAM app record has been updated. <br>True- MAM app has a new record with updated fields in this table. <br>False- the latest record for this MAM app. |True/False |
 | StartDateInclusiveUTC |Date and time in UTC when this MAM app was created in the data warehouse. |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
@@ -61,16 +58,13 @@ The **MamApplicationInstance** entity lists managed Mobile Application Managemen
 |          Property          |                                                                                                  Description                                                                                                  |               Example                |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 |   ApplicationInstanceKey   |                                                               Unique identifier of the MAM app instance in the data warehouse - surrogate key.                                                                |                 123                  |
-|           UserId           |                                                                              User Id of the user who has this MAM app installed.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|           UserId           |                                                                              User ID of the user who has this MAM app installed.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              Unique identifier of the MAM app instance - similar to ApplicationInstanceKey, but the identifier is a natural key.                                              | b66bc706-ffff-7437-0340-032819502773 |
-|       ApplicationId        |                                                                                        Application ID of this MAM app                                                                                         |  com.microsoft.groupies-daily.<IOS>  |
 |     ApplicationVersion     |                                                                                     Application version of this MAM app.                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 Date when this record of the MAM app instance was created. Value can be null.                                                                 |        11/23/2016 12:00:00 AM        |
 |          Platform          |                                                                          Platform of the device on which this MAM app is installed.                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      Platform version of the device on which this MAM app is installed.                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            The MAM SDK version that this MAM app was wrapped with.                                                                            |                 3.2                  |
-|          DeviceId          |                                                                          Device ID of the device on which this MAM app is installed.                                                                          | b66bc706-ffff-7437-0340-032819502773 |
-|         DeviceName         |                                                                         Device name of the device on which this MAM app is installed.                                                                         |              "MyDevice"              |
 |         IsDeleted          | Indicates whether this MAM app instance record has been updated. <br>True- this MAM app instance has a new record with updated fields in this table. <br>False - the latest record for this MAM app instance. |              True/False              |
 |   StartDateInclusiveUtc    |                                                              Date and time in UTC when this MAM app instance was created in the data warehouse.                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             Date and time in UTC when IsDeleted changed to True.                                                                              |        11/23/2016 12:00:00 AM        |
@@ -88,7 +82,6 @@ The **MamCheckin** entity represents data gathered when a Mobile Application Man
 | DateKey |Date Key when the MAM app check-in was recorded in the data warehouse. | 20160703 |
 | ApplicationInstanceKey |Key of the app instance associated with this MAM app check-in. | 123 |
 | UserKey |Key of the user associated with this MAM app check-in. | 4323 |
-| ApplicationKey |Key of the MAM app that has checked in. |234 |
 | DeviceHealthKey |Key of DeviceHealth associated with this MAM app check-in. | 321 |
 | PlatformKey |Represents the platform of the device associated with this MAM app check-in. |123 |
 | EffectiveAppliedPolicyKey |Represents the effective applied policy associated with the MAM app that has checked in. An effective applied policy results from merging all policies relevant to a particular app and user. | 322 |
