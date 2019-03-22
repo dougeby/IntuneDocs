@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -47,6 +47,7 @@ The following table lists the name and an explanation of the settings recorded i
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout​ | x minutes                                                                                                                                                                                                                                                                                                   | [Access] Recheck access requirements - Offline Grace Period<br>Note: This is the time period before access requirements for the app are rechecked if the device is offline.             |
 | AccessRecheckOnlineTimeout​  | _x_ minutes                                                                                                                                                                                                                                                                                                   | [Access] Recheck access requirements - Timeout.<br>Note: This is the time period before access requirements for the app are rechecked after the app is launched if the device is online. |
+| AllowedOutboundClipboardSharingExceptionLength               | x characters                                                                                                                                                                                                                                                                                           | [Access] Specify the number of characters that may be cut or copied from a managed app.  This setting overrides the `AllowedOutboundClipboardSharingLevel` restriction. Default value of '0' means no exception is allowed. 
 | AppPinDisabled​              | 0 = No​<br>1 = Yes                                                                                                                                                                                                                                                                                           | [Access] Disable app PIN when device PIN is managed​.                                                                                                                                     |
 | AppSharingFromLevel​         | 0 = No apps​<br>1 = Managed apps<br>2 = Any app.                                                                                                                                                                                                                                                              | [Data Relocation] Allow this app to receive data from other apps.​                                                                                                                        |
 | AppSharingToLevel​           | 0 = No apps​<br>1 = Managed apps<br>2 = Any app.                                                                                                                                                                                                                                                              | [Data Relocation] Allow this app to transfer data to other apps​..                                                                                                                         |
