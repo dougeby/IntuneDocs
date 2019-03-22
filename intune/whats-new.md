@@ -55,27 +55,30 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 ### App management
 
-#### Deploy Microsoft Visio and Microsoft Project <!-- 3725386 wnready -->
+#### Deploy Microsoft Visio and Microsoft Project <!-- 3725386  -->
 You can now deploy Microsoft Visio Pro for Office 365 and Microsoft Project Online Desktop Client as independent apps to Windows 10 devices using Microsoft Intune, if you own licenses for these apps. From Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. On the **Add app** blade, select **Windows 10** as the **App type**. Then, select **Configure App Suite** to select apps to install. For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
 
-#### Microsoft Visio Pro for Office 365 product name change <!-- 3593653 wnready -->
+#### Microsoft Visio Pro for Office 365 product name change <!-- 3593653  -->
 **Microsoft Visio Pro for Office 365** will now be known as **Microsoft Visio Online Plan 2**.  For more information about Microsoft Visio, see [Visio Online Plan 2](https://products.office.com/visio/visio-online-plan-2). For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
 
-#### Intune app protection policy (APP) character limit setting <!-- 3291302 wnready -->
+#### Intune app protection policy (APP) character limit setting <!-- 3291302  -->
 Intune admins can specify an exception to the Intune APP  **Restrict cut, copy, and paste with other apps** policy setting.  As the admin, you can specify the number of characters that may be cut or copied from a managed app. This setting will allow sharing of the specified number of characters to any app, regardless of the "Restrict cut, copy, and paste with other apps" setting. Note that the Intune Company Portal app version for Android requires version 5.0.4364.0 or later. For more information, see [iOS data protection](app-protection-policy-settings-ios.md#data-protection), [Android data protection](app-protection-policy-settings-android.md#data-protection), and [Review client app protection logs](app-protection-policy-settings-log.md#app-protection-policy-settings).
 
-#### Office Deployment Tool (ODT) XML for Office ProPlus deployment <!-- 3192477 eeready wnready -->
+#### Office Deployment Tool (ODT) XML for Office ProPlus deployment <!-- 3192477   -->
 You will be able to provide Office Deployment Tool (ODT) XML when creating an instance of Office Pro Plus in the Intune admin console. This will allow greater customizability if the existing Intune UI options do not meet your needs. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365) and [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
-#### App icons will now be displayed with an automatically generated background <!-- 1429026 wnready -->
+#### App icons will now be displayed with an automatically generated background <!-- 1429026  -->
 In the Windows Company Portal app, app icons will now be displayed with an automatically generated background based on the dominant color of the icon (if it can be detected). When applicable, this background will replace the gray border that was previously visible on app tiles. Users will see this change in versions of Company Portal later than 10.3.3451.0.
 
-#### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523 eeready wnready -->
+#### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523   -->
 Windows devices that enrolled into Intune using [Windows bulk enrollment](windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+
+#### The Microsoft Teams app can be selected as part of the Office app suite <!-- 3828932  -->
+The Microsoft Teams app can be included or excluded as part of the Office Pro Plus app suite installation. This feature works for Office Pro Plus build number 16.0.11328.20116+. The user must sign out and then sign in to the device for the installation to complete. In Intune, select **Client apps** > **Apps** > **Add**. Select one of the **Office 365 Suite** app types and then select **Configure  App Suite**.
 
 ### Device configuration
 
-#### Operational logs also show details on non-compliant devices <!-- 4063755 wnready -->
+#### Operational logs also show details on non-compliant devices <!-- 4063755  -->
 When routing Intune logs to Azure monitor features, you can also route the operational logs. In this update, the operational logs also provide information on non-compliant devices. 
 
 For more information on this feature, see [Send log data to storage, event hubs, or log analytics in Intune](review-logs-using-azure-monitor.md).
@@ -93,7 +96,7 @@ In Intune, you can route audit and operational logs to events hubs, storage, and
 
 To learn more about routing logs to Azure Monitor, see [send log data to storage, event hubs, or log analytics](review-logs-using-azure-monitor.md).
 
-#### Create and use mobility extensions on Android Zebra devices in Intune <!-- 3305880 eeready wnready -->
+#### Create and use mobility extensions on Android Zebra devices in Intune <!-- 3305880   -->
 In this update, Intune supports configuring Android Zebra devices. Specifically, you can create a device configuration profile, and apply settings to Android Zebra devices using Mobility Extensions (MX) profiles generated by StageNow (**Device configuration** > **Profiles** > **Create profile** > **Android** for platform > **MX profile (Zebra only)** for profile type).
 
 For more information on this feature, see [Use and manage Zebra devices with mobility extensions in Intune](android-zebra-mx-overview.md).
@@ -104,7 +107,7 @@ Applies to:
 ### Device management
 
 
-#### Exchange Online/Intune Connector deprecate support for EAS only devices <!--3105122  WNready  -->
+#### Exchange Online/Intune Connector deprecate support for EAS only devices <!--3105122    -->
 The Intune console no longer supports viewing and managing EAS-only devices connected to Exchane Online with the Intune Connector. Instead, you have the following options:
 - Enroll devices in Mobile Device Management (MDM)
 - Use Intune App Protection Policies to manage your devices
@@ -112,12 +115,12 @@ The Intune console no longer supports viewing and managing EAS-only devices conn
 
 ### Monitor and troubleshoot
 
-#### Support for additional connectors on the Tenant Status page <!-- 3617202   WNready  -->
+#### Support for additional connectors on the Tenant Status page <!-- 3617202     -->
 The [Tenant Status page](tenant-status.md) now displays status information for additional connectors, including *Windows Defender Advanced Threat Protection* (ATP) and other Mobile Threat Defense connectors.
 
 ### Role-based access control
 
-#### Granting Intune read only access to some Azure Active Directory roles <!-- 3637917 eeready wnready-->
+#### Granting Intune read only access to some Azure Active Directory roles <!-- 3637917  -->
 Intune read only access has been granted to the following Azure AD roles. Permissions granted with Azure AD roles supersede permissions granted with Intune role-based access control (RBAC).
 
 Read only access to Intune audit data:
@@ -134,10 +137,10 @@ Read only access to all Intune data:
 
 For more information, see [Role-based access control](role-based-access-control.md).
 
-#### Scope tags for iOS app provisioning profiles <!--2934430 eeready wnready -->
+#### Scope tags for iOS app provisioning profiles <!--2934430   -->
 You can add a scope tag to an iOS app provisioning profile so that only people with roles also assigned that scope tag have access to the iOS app provisioning profile. For more information, see [Use RBAC and scope tags](scope-tags.md).
 
-#### Scope tags for app configuration policies <!--2371891 eeready wnready -->
+#### Scope tags for app configuration policies <!--2371891   -->
 You can add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag. For more information, see [Use RBAC and scope tags](scope-tags.md).
 
 
