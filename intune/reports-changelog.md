@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 03/21/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -36,9 +36,8 @@ Keep current on updates to the Intune Data Warehouse.
 ## 1903
 _Released March 2019_
 
-### V1.0 changes reflecting back to beta 
-
-Changes made to our v1.0 collections will now be reflected in beta.
+### V1.0 changes reflecting back to beta
+When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. Please refer to [API version information](reports-api-url.md) for more information on Data Warehouse API versions and backwards compatibility. 
 
 ## 1902 
 _Released February 2019_
