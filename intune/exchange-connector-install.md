@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/15/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -173,12 +173,13 @@ You might need to reinstall an Exchange connector. Because a single connector is
 
 ## Monitor the Exchange connector activity
 
-After you have successfully configured Exchange connectors, you can view the status of the connections and the last successful synchronization attempt. To validate the Exchange connector connections:
+After you have successfully configured the Exchange connector, you can view the status of the connections and the last successful synchronization attempt. To validate the Exchange connector connection:
 
 1. On the Intune Dashboard, choose **Exchange access**.
-2. Under **Setup**, select **Exchange online connector** to verify the connection status for each Exchange connector.
+2. Select **Exchange on-premises access** to verify the connection status for each Exchange connector.
 
 You can also check the time and date of the last successful synchronization attempt.
+--> 
 
 ### System Center Operations Manager management pack
 
@@ -191,10 +192,11 @@ An on-premises Exchange connector automatically synchronizes EAS and Intune devi
 
    - **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange conditional access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
 
+
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard with the following steps:
 
    1. On the Intune dashboard, choose **Exchange access**.
-   2. Under **Setup**, choose **Exchange online connector**.
+   2. Select **Exchange on-premises access**.
    3. Select the connector you want to sync, and then choose **Quick Sync** or **Full Sync**.
 
 ## Next steps
