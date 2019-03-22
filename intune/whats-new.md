@@ -107,7 +107,7 @@ Applies to:
 
 #### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
 
-Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report&#40;in-public-preview&#41;) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
 
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
 
