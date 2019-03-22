@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 03/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,19 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->     
 
 <!-- ########################## -->
+## Week of March 18, 2019
+
+#### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
+
+Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+
+#### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
+
+You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
+
+### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
+
 ## Week of February 25, 2019
 
 ### Device configuration
@@ -355,7 +368,7 @@ Intune provides additional device reporting fields, including App Registration I
 
 #### Administrative templates are in public preview, and moved to their own configuration profile <!-- 3322847 -->
 
-Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in private preview. With this update:
+Administrative templates in Intune (**Device configuration** > **Administrative templates**) are currently in public preview. With this update:
 
 - Administrative templates include about 300 settings that can be managed in Intune. Previously, these settings only existed in the group policy editor.
 - Administrative templates are available in public preview.
