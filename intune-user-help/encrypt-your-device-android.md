@@ -40,9 +40,9 @@ If you receive a message in Company Portal that you need to encrypt your device,
 > [!Note]
 > Certain Android devices from Huawei, Vivo, and OPPO can't be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-1.  Set a device screen lock.
-    a. Go to **Settings** > **Lock screen and security** > **Screen lock type**.
-    b. Select either **PIN**, **Password**, or **Pattern**.
+1.  Set a device screen lock.  
+    a. Go to **Settings** > **Lock screen and security** > **Screen lock type**.  
+    b. Select either **PIN**, **Password**, or **Pattern**.  
     c. Follow the onscreen instructions to configure your screen lock.  
 
 2. Go back to **Lock screen and security** and select **Secure startup**.
@@ -58,8 +58,6 @@ Devices running Android 4.4 and earlier might not have the **Secure startup** op
 
 2. Follow the onscreen instructions. During encryption, your device could restart several times.
 3. Open the Company Portal app, select your device, and tap **Check device settings**.  
-
-Even after you unenroll your phone, it will remain encrypted.  
 
 ## Troubleshoot  
 **Issue**: You've already encrypted your device and
