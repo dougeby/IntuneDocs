@@ -246,25 +246,22 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 
 The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
 
-#### Additional settings for Outlook <!-- 3301182  -->
+### Additional settings for Outlook <!-- 3301182  -->
 You can now configure the following additional settings for Outlook for iOS and Android using Intune:
+
 - Only allow work or school accounts to be used in Outlook in iOS and Android
 - Deploy modern authentication for Office 365 and hybrid modern authentication on-premises accounts
 - Use `SAMAccountName` for the username field in the email profile when basic authentication is selected
-
-The following settings are still being rolled out gradually and will be available in your console soon:
 - Allow contacts to be saved
 - Configure external recipients MailTips
 - Configure **Focused Inbox**
 - Require biometrics to access Outlook for iOS
-
-The setting below appears in the Intune console, but when configured, will not work as expected. This issue will be fixed soon:
 - Block external images
 
 > [!NOTE]
 > If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
 
-For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md). 
+For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md).
 
 #### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
