@@ -43,7 +43,7 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 ## Azure Active Directory roles with Intune access
 
 | Azure Active Directory role | All Intune data | Intune audit data |
-| --- | --- | --- |
+| --- | :---: | :---: |
 | Global Administrator | Read/write | Read/write |
 | Intune Service Aministrator | Read/write | Read/write |
 | Conditional Access Administrator | None | None |
