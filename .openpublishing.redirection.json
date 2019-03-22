@@ -2879,12 +2879,12 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/intune-service-to-service-exchange-connector.md",
-			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/intune-service-to-service-exchange-connector.md",
-			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": true
 		},		
 		{
@@ -5163,6 +5163,11 @@
 		{
 			"source_path": "intune/early-edition-nda.md",
 			"redirect_url": "/intune/in-development",
+			"redirect_document_id": false
+		 },
+		 {
+			"source_path": "intune/exchange-service-connector-configure.md",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": false
 		 }
 	 ]
