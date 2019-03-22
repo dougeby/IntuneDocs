@@ -60,20 +60,8 @@ You'll be able to use a new Encryption report to view details about the encrypti
 ### Access BitLocker recovery keys from the Intune portal  <!-- 2351547  -->
 We’re adding a new entry point in Devices, where you can view details from Azure Active Directory (AAD) about BitLocker Key ID and BitLocker recovery keys.
 
-### Scope tags for app configuration policies <!--2371891 -->
-You'll be able to add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag.
-
 ### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
 You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
-
-### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523  -->
-Windows devices that enrolled into Intune using [Windows bulk enrollment](windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-### Scope tags for iOS app provisioning profiles <!--2934430 -->
-You'll be able to add a scope tag to an iOS app provisioning profile so that only people with roles also assigned that scope tag have access to the iOS app provisioning profile. 
-
-### Office Deployment Tool (ODT) XML for Office ProPlus deployment <!-- 3192477  -->
-You'll be able to provide Office Deployment Tool (ODT) XML when creating an instance of Office Pro Plus in the Intune admin console. This will allow greater customizability if the existing Intune UI options do not meet your needs. 
 
 ###  Block users from scanning for Windows updates    <!-- 3316758    -->
 We're adding a new Windows update ring setting that you can use that will block users from scanning for Windows updates. This setting won't be available from within the portal, but can be configured by using the Intune Graph API.
@@ -90,9 +78,6 @@ Company Portal for iOS will be updating the app's enrollment screens and steps t
 
 For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2. 
 
-### Support for additional connectors on the Tenant Status page <!-- 3617202     -->
-The Tenant Status page will display status information for additional connectors, including *Windows Defender Advanced Threat Protection* (ATP) and other Mobile Threat Defense connectors.
-
 ### Granting Intune read only access to some Azure Active Directory roles <!-- 3637917 -->
 We'll be granting Intune read only access to the following Azure AD roles. Permissions granted with Azure AD roles supersede permissions granted with Intune role-based access control (RBAC).
 
@@ -107,9 +92,6 @@ Read only access to all Intune data:
 - Security Operator
 - Security Reader
 - Global Reader
-
-### Easier access to Diagnostic Settings   <!-- 3804627   -->
-We’re adding a new option to the **Audit logs** blade in every in every Audit Log workload in the Intune console that you can use to directly open the *Diagnostic Settings* page.
 
 ### Create and use device configuration profiles on Android Zebra devices in Intune <!-- 3895244  -->
 Intune will support configuring Android Zebra devices. Specifically, you'll be able to: 
