@@ -50,9 +50,9 @@ Access your Intune Data Warehouse in Power BI Online using the [Intune Complianc
 > There are two additional filters you can apply to the Intune Compliance app.
 
 #### Add additional filters to the Intune Compliance app
-1. Open the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app in your web browers.
+1. Open the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app in your web browsers.
 2. Click **Non-Compliant Devices** and select **Non-Compliant** in the **complianceStatus** filter. 
-3. Click on **Unkown Devices** and select **Not Yet Available** in the **complianceStatus** filter. 
+3. Click on **Unknown Devices** and select **Not Yet Available** in the **complianceStatus** filter. 
 
 ## 1812 
 _Released December 2018_
