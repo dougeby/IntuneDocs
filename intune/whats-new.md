@@ -107,11 +107,11 @@ Applies to:
 
 #### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
 
-Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report&#40;in-public-preview&#41;) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
 
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
 
-You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
+You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
 ### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
 Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
