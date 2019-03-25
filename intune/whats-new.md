@@ -150,7 +150,8 @@ You can add a scope tag to an iOS app provisioning profile so that only people w
 #### Scope tags for app configuration policies <!--2371891   -->
 You can add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag. For more information, see [Use RBAC and scope tags](scope-tags.md).
 
-<!-- ########################## -->
+### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to the end-user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## Week of February 25, 2019
 

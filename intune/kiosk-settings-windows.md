@@ -180,6 +180,7 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
       Select **OK** to save your changes.
 
+    - **AutoLaunch**: Optional. Choose an application to AutoLaunch when the user signs in. Only a single app can be AutoLaunched.
     - **Tile size**: Required. Choose a Small, Medium, Wide, or Large app tile size.
 
   > [!TIP]
