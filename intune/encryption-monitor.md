@@ -32,10 +32,15 @@ Intune provides a centralized location to identify the encryption status of your
 - The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
 - [View BitLocker details (in Public Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
+<<<<<<< HEAD
 ## Encryption report 
 *This feature is in Public Preview.*  
 
 You can use the Encryption report (in Public Preview) to view details about the Encryption status of your Windows 10 devices.  
+=======
+## Encryption report (in Public Preview)
+You can use the Encryption report (in Pubic Preview) to view details about the Encryption status of your Windows 10 devices.  
+>>>>>>> 0838ae1ad271a8d8c4fcf0fdc0951ad795fd239f
 
 To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
 
@@ -89,6 +94,7 @@ This pane provides the following details:
    - The TPM isn't ready for BitLocker.  
    - The network isn't available, which is required for recovery key backup.  
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 ## BitLocker recovery keys 
@@ -97,6 +103,9 @@ This pane provides the following details:
 =======
 ## BitLocker recovery keys (in Public Preview)
 >>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
+=======
+## BitLocker recovery keys (in Public Preview)
+>>>>>>> 0838ae1ad271a8d8c4fcf0fdc0951ad795fd239f
 As a Public Preview, Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
 1. Sign in to [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
 2. Select a device from the list, and then under *Monitor*, select **Recovery keys – Preview**.  
