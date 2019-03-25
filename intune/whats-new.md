@@ -61,7 +61,7 @@ Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-repor
 You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
 ### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
-Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to the end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## Week of February 25, 2019
 
