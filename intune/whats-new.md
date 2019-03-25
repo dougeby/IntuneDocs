@@ -106,14 +106,12 @@ Applies to:
 ### Device management
 
 #### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
-
-Use the new [Encryption report (Preview)](encryption-monitor.md#encryption-report-&#40;in-public-preview&#41;) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+Use the new [Encryption report (Preview)](encryption-monitor.md) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
 
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
+You can now use Intune to [view details](encryption-monitor.md) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
-You can now use Intune to [view details](encryption-monitor.md#bitlocker-recovery-keys-&#40;in-public-preview&#41;) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
-
-### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
+#### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
 Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### Exchange Online/Intune Connector deprecate support for EAS only devices <!--3105122    -->
@@ -152,9 +150,8 @@ You can add a scope tag to an iOS app provisioning profile so that only people w
 #### Scope tags for app configuration policies <!--2371891   -->
 You can add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag. For more information, see [Use RBAC and scope tags](scope-tags.md).
 
-
 <!-- ########################## -->
->>>>>>> 5e7c086a04b16c159f2ddf9054c8054b4a389872
+
 ## Week of February 25, 2019
 
 ### Device configuration
