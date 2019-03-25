@@ -258,7 +258,7 @@ To add apps to these lists, you can:
   This feature applies to:  
   - iOS 11.0 and later
 
-- **Personal Hotspot**: **Block** prevents the device from being used as a personal hotspot. This setting might not be compatible with some carriers. **Not configured** (default) allows this feature.
+- **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Not configured** (default) keeps the personal hotspot configuration as the default set by the user.
 - **Join Wi-Fi networks only using configuration profiles (supervised only)**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** (default) allows the device to use other Wi-Fi networks.
 - **Cellular usage rules (managed apps only)**: Define the data types that managed apps can use when on cellular networks. Your options:
   - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.
