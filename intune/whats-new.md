@@ -52,13 +52,6 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 <!-- ########################## -->
 ## Week of March 18, 2019
 
-<<<<<<< HEAD
-
-### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
-Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
-
-=======
->>>>>>> 0838ae1ad271a8d8c4fcf0fdc0951ad795fd239f
 ### App management
 
 #### Deploy Microsoft Visio and Microsoft Project <!-- 3725386  -->
@@ -118,7 +111,7 @@ Use the new [Encryption report (Preview)](encryption-monitor.md) to view details
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
 You can now use Intune to [view details](encryption-monitor.md) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
-### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
+#### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
 Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### Exchange Online/Intune Connector deprecate support for EAS only devices <!--3105122    -->
