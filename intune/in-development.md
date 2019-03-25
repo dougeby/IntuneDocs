@@ -60,15 +60,6 @@ You'll be able to add a scope tag to an app configuration policy so that only pe
 ### Assign Autopilot profiles to the All devices virtual group <!--2715522 -->
 You'll be able to assign Autopilot profiles to the All devices virtual group. To do so, choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > choose a profile > **Assignments** > under **Assign to** choose **All devices**. For more information about Autopilot profiles, see [Enroll Windows devices by using Windows Autopilot](enrollment-autopilot.md).
 
-### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523  -->
-Windows devices that enrolled into Intune using [Windows bulk enrollment](windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-### Scope tags for iOS app provisioning profiles <!--2934430 -->
-You'll be able to add a scope tag to an iOS app provisioning profile so that only people with roles also assigned that scope tag have access to the iOS app provisioning profile. 
-
-### Office Deployment Tool (ODT) XML for Office ProPlus deployment <!-- 3192477  -->
-You'll be able to provide Office Deployment Tool (ODT) XML when creating an instance of Office Pro Plus in the Intune admin console. This will allow greater customizability if the existing Intune UI options do not meet your needs. 
-
 ###  Block users from scanning for Windows updates    <!-- 3316758    -->
 We're adding a new Windows update ring setting that you can use to block users from scanning for Windows updates. This setting won't be available from within the portal, but can be configured by using the Intune Graph API.
 

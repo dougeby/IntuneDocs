@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,10 @@ After the profile is assigned, you can monitor the profile, and monitor the base
 This article shows you how to use security baselines to create a profile, assign the profile, and monitor the profile.
 
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
+
+## Prerequisites
+To manage baselines in Intune, your account must have the [Policy and Profile Manager](role-based-access-control.md#built-in-roles) built-in role.
+
 
 ## Co-managed devices
 

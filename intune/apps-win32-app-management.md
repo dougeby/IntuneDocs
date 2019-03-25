@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 03/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -114,9 +114,9 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 2.	Add the complete installation command line to install the app. 
 
     For example, if your app filename is **MyApp123**, add the following:<br>
-    `msiexec /i “MyApp123.msi”`<p>
-    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. Such as:<br>
-    'ApplicationName.exe /quite'<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. <br>For example:<br>
+    `ApplicationName.exe /quite`<br>
     In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
     For the specific agruments supported by the application package, contact your application vendor.
 
