@@ -112,7 +112,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   >   - [Added as a client app](apps-add-android-for-work.md) in Intune
   >   - [Assigned to the device group](apps-deploy.md) created for your dedicated devices
   > 
-  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configiration profile are shown as icons on the the **Managed Home Screen** app. 
+  > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configuration profile are shown as icons on the **Managed Home Screen** app. 
 
   - Choose **Add**, and select your apps from the list.
 
