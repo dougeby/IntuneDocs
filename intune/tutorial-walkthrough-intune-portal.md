@@ -12,6 +12,7 @@ ms.date: 01/31/2019
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: e892d8a3-7f74-498c-98d5-e968a8fbb049
 Customer intent: As an Intune admin, I want to learn where to find the different features in Intune.

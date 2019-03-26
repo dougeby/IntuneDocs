@@ -7,8 +7,9 @@ services: microsoft-intune
 author: ErikjeMS
 
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 11/05/2018
+ms.date: 03/25/2019
 ms.author: erikje
 
 # optional metadata

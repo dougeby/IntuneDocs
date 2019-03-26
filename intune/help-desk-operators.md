@@ -6,10 +6,11 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 
@@ -70,6 +71,8 @@ You can use the **Troubleshoot** pane to review user information.
 | 3.   | User status  | Displays the status of the user's Intune license, number of devices, each device compliance, number of apps, and app compliance.       |
 | 4.   | User information  | Use the list to select the details to review in the pane. <br>You can select: <ul><li>Client apps<li>Compliance policies<li> Configuration policies<li>App protection policies <li>Enrollment restrictions</ul>      |
 | 5.   | Group membership  | Shows the current groups the selected user is a member of.       |
+
+<!-- this section needs to be updated
 
 ## Client apps reference
 
@@ -241,6 +244,8 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | Device type | The name of the type of device.                                                       |
 | Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
 | Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## Enrollment failure reference
 

@@ -11,6 +11,7 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 
@@ -40,7 +41,7 @@ Intune integrates closely with Azure Active Directory (Azure AD) for identity an
 To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](https://docs.microsoft.com/intune/).
 
 ## 30-day free trial
-You can start to use Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [go to the Intune Sign up page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, contact your Microsoft representative to set up your free trial.
+You can start to use Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [go to the Intune Sign up page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, contact your Microsoft representative to set up your free trial.
 
 > [!NOTE]
 > If your organization has a Microsoft Online Services work or school account, and you might continue with this Intune subscription in production after the trial period ends, then choose the **Sign in** option on that page and authenticate by using the Global Administrator account for your organization. This action ensures that your Intune trial links to your existing work or school account.
@@ -62,7 +63,7 @@ Because the mobile device management ecosystem changes frequently with operating
 
 - [What's new in Microsoft Intune](whats-new.md). This topic is updated with the monthly service update and weekly when, for example, apps such as the Company Portal app are released.
 
-- Important service updates are also announced in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device. Learn more about how to work with the [Office 365 Message Center](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
+- Important service updates are also announced in the [Microsoft 365 admin center](https://admin.microsoft.com/) Message Center. If you install the companion [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), you can receive notifications on your mobile device. Learn more about how to work with the [Office 365 Message Center](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     A few helpful hints:
 
@@ -81,7 +82,7 @@ Because the mobile device management ecosystem changes frequently with operating
     - [Intune support blog](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->You can monitor Intune service health in the [Office 365 management portal](https://portal.office.com/Admin/Default.aspx). Choose **Service Health** in the left pane. You can also use the [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) to view service health.
+>You can monitor Intune service health in the [Microsoft 365 admin center](https://admin.microsoft.com). Choose **Service Health** in the left pane. You can also use the [Office 365 Admin mobile app](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) to view service health.
 
 ## Types of notices Microsoft provides about the Intune service
 

@@ -5,13 +5,14 @@ title: Tutorial - Protect Exchange Online email on Intune-managed devices
 titlesuffix: Microsoft Intune
 description: Learn to secure Exchange Online with iOS Intune compliance policies and Azure AD conditional access to require managed devices and the Outlook app.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 
@@ -96,7 +97,7 @@ Now we’ll create a conditional access policy that requires all device platform
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
      
     1. Under **Configure**, select **Yes**.
-    2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+    2. On the **Include** tab, select **Any device**, and then select **Done**. 
     3. Select **Done** again.
    
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

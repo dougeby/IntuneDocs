@@ -1,6 +1,41 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md", 
+			"redirect_url": "/intune-user-help/about-cp-app-for-windows-10",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-all.md",
+			"redirect_url": "/intune-user-help/use-managed-devices-to-get-work-done",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-w10-device-your-account.md",
+			"redirect_url": "/intune-user-help/enroll-windows-10-device",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-w10-device-access-work-or-school.md",
+			"redirect_url": "/intune-user-help/enroll-windows-10-device",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-W10-phone-or-w10-pc-windows.md",
+			"redirect_url": "/intune-user-help/windows-enrollment-company-portal",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-intune-windows.md",
+			"redirect_url": "/intune-user-help/windows-enrollment-company-portal",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
+			"redirect_url": "/intune/device-profile-troubleshoot",
+			"redirect_document_id": false
+		},			
+		{
 			"source_path": "intune/device-compliance-monitor.md",
 			"redirect_url": "/intune/compliance-policy-monitor",
 			"redirect_document_id": false
@@ -1248,6 +1283,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "intune/ignite-intune-docs.md", 
+			"redirect_url": "/intune/index",
+			"redirect_document_id": true
+		},			
+		{
 			"source_path": "intune-azure/introduction/contact-assisted-phone-support-for-microsoft-intune.md",
 			"redirect_url": "/intune/get-support",
 			"redirect_document_id": false
@@ -1765,7 +1805,7 @@
 		{
 			"source_path": "intune/configure-devices/troubleshoot-device-profiles.md",
 			"redirect_url": "/intune/device-profile-troubleshoot",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune/configure-devices/vpn-for-android.md",
@@ -2839,12 +2879,12 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/intune-service-to-service-exchange-connector.md",
-			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "intune-classic/deploy-use/intune-service-to-service-exchange-connector.md",
-			"redirect_url": "/intune/exchange-service-connector-configure",
+			"redirect_url": "/intune/app-protection-policy",
 			"redirect_document_id": true
 		},		
 		{
@@ -3024,7 +3064,7 @@
 		},		
 		{
 			"source_path": "intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": false
 		},
 		{
@@ -3034,7 +3074,7 @@
 		},		
 		{
 			"source_path": "intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md",
-			"redirect_url": "/intune/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies",
+			"redirect_url": "/intune/device-profile-troubleshoot",
 			"redirect_document_id": true
 		},		
 		{
@@ -3180,8 +3220,23 @@
 		{
 			"source_path": "intune-classic/deploy-use/plan-your-user-and-device-groups.md",
 			"redirect_url": "/intune/get-started-groups",
+			"redirect_document_id": false
+		},	
+		{
+			"source_path": "intune/get-started-groups.md",
+			"redirect_url": "/intune/quickstart-create-group",
 			"redirect_document_id": true
 		},		
+		{
+			"source_path": "intune/get-started-enroll.md",
+			"redirect_url": "/intune/device-enrollment",
+			"redirect_document_id": false
+		},		
+		{
+			"source_path": "intune/get-started-users.md",
+			"redirect_url": "/intune/quickstart-create-user",
+			"redirect_document_id": true
+		},					
 		{
 			"source_path": "intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune.md",
 			"redirect_url": "/intune/policies-to-protect-windows-pcs-in-microsoft-intune",
@@ -3547,6 +3602,11 @@
 			"redirect_url": "/intune/reports-nav-create-intune-reports",
 			"redirect_document_id": false
 		},
+		{
+			"source_path": "intune/reports-ref-current-user.md",
+			"redirect_url": "/intune/reports-ref-data-model",
+			"redirect_document_id": false
+		},		
 		{
 			"source_path": "intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports.md",
 			"redirect_url": "/intune/reports-nav-create-intune-reports",
@@ -4312,6 +4372,11 @@
 			"redirect_url": "/intune/get-support",
 			"redirect_document_id": false
 		},		
+		{
+			"source_path": "intune/phone-support-contact.md",
+			"redirect_url": "/intune/get-support",
+			"redirect_document_id": true
+		},	
 		{
 			"source_path": "intune/Troubleshoot/device-threat-protection-troubleshooting.md",
 			"redirect_url": "/intune/lookout-mtd-connector-integration",
@@ -5094,6 +5159,16 @@
 			"source_path": "intune/known-issues.md",
 			"redirect_url": "https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess",
 			"redirect_document_id": false	 
-		}			
-	]
+		},			
+		{
+			"source_path": "intune/early-edition-nda.md",
+			"redirect_url": "/intune/in-development",
+			"redirect_document_id": false
+		 },
+		 {
+			"source_path": "intune/exchange-service-connector-configure.md",
+			"redirect_url": "/intune/app-protection-policy",
+			"redirect_document_id": false
+		 }
+	 ]
 }

@@ -7,10 +7,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2018
-ms.topic: article
+ms.date: 03/11/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 
@@ -35,7 +36,6 @@ Use the Microsoft Intune App Wrapping Tool for Android to change the behavior of
 
 The tool is a Windows command-line application that runs in PowerShell and creates a wrapper around your Android app. After the app is wrapped, you can change the app’s functionality by configuring [mobile application management policies](app-protection-policies.md) in Intune.
 
-
 Before running the tool, review [Security considerations for running the App Wrapping Tool](#security-considerations-for-running-the-app-wrapping-tool). To download the tool, go to the [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) on GitHub.
 
 ## Fulfill the prerequisites for using the App Wrapping Tool
@@ -57,10 +57,12 @@ Before running the tool, review [Security considerations for running the App Wra
 
 - Android requires all app packages (.apk) to be signed. For **reusing** existing certificates and overall signing certificate guidance, see [Reusing signing certificates and wrapping apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). The Java executable keytool.exe is used to generate **new** credentials needed to sign the wrapped output app. Any passwords that are set must be secure, but make a note of them because they're needed to run the App Wrapping Tool.
 
-> [!NOTE]
-> The Intune App Wrapping Tool does not support Google's v2 and upcoming v3 signature schemes for app signing. After you have wrapped the .apk file using the Intune App Wrapping Tool, the recommendation is to use [Google's provided Apksigner tool]( https://developer.android.com/studio/command-line/apksigner). This will ensure that once your app gets to end user devices, it can be launched properly by Android standards. 
+    > [!NOTE]
+    > The Intune App Wrapping Tool does not support Google's v2 and upcoming v3 signature schemes for app signing. After you have wrapped the .apk file using the Intune App Wrapping Tool, the recommendation is to use [Google's provided Apksigner tool]( https://developer.android.com/studio/command-line/apksigner). This will ensure that once your app gets to end user devices, it can be launched properly by Android standards. 
 
-- (Optional) Enable Multidex within the input app. Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX files are a part of the compilation of an Android app. In this scenario, best practice would be to enable Multidex within the app itself. In certain organizations, this may require working with whoever compiles the app (ie. the app build team). 
+- (Optional) Sometimes an app may hit the Dalvik Executable (DEX) size limit due to the Intune MAM SDK classes that are added during wrapping. DEX files are a part of the compilation of an Android app. The Intune App Wrapping Tool automatically handles DEX file overflow during wrapping for apps with a min API level of 21 or higher (as of [v. 1.0.2501.1](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). For apps with a min API level of < 21, best practice would be to increase the min API level using the wrapper's `-UseMinAPILevelForNativeMultiDex` flag. For customers unable to increase the app’s minimum API level, the following DEX overflow workarounds are available. In certain organizations, this may require working with whoever compiles the app (ie. the app build team):
+* Use ProGuard to eliminate unused class references from the app’s primary DEX file.
+* For customers using v3.1.0 or higher of the Android Gradle plugin, disable the [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 
 ## Install the App Wrapping Tool
 
@@ -97,6 +99,7 @@ Note the folder to which you installed the tool. The default location is: C:\Pro
 |**-KeyAlias**&lt;String&gt;|Name of the key to be used for signing.| |
 |**-KeyPassword**&lt;SecureString&gt;|Password used to decrypt the private key that will be used for signing.| |
 |**-SigAlg**&lt;SecureString&gt;| (Optional) The name of the signature algorithm to be used for signing. The algorithm must be compatible with the private key.|Examples: SHA256withRSA, SHA1withRSA|
+|**-UseMinAPILevelForNativeMultiDex**| (Optional) Use this flag to increase the source Android app’s minimum API level to 21. This flag will prompt for confirmation as it will limit who may install this app. Users can skip the confirmation dialog by appending the parameter “-Confirm:$false” to their PowerShell command. The flag should only be used by customers on apps with min API < 21 that fail to wrap successfully due to DEX overflow errors. | |
 | **&lt;CommonParameters&gt;** | (Optional) The command supports common PowerShell parameters like verbose and debug. |
 
 

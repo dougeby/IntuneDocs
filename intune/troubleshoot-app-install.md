@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/19/2019
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 
@@ -134,6 +135,7 @@ The following error messages and descriptions provide details about both Android
 | Can't install system apps with your MDM   provider (-2016330858). | Installing apps that are pre-installed by the iOS   operating system is not a supported scenario. |
 | Can't install apps when device is in Lost   Mode (-2016330857). | All use of the device is blocked in Lost Mode.   Disable Lost Mode to install apps. |
 | Can't install apps when device is in   kiosk mode (-2016330856). | Try adding this device to an exclude group for kiosk   mode configuration policy to install apps. |
+| Can't install 32-bit apps on this device (-2016330852). | The device doesn't support installing 32-bit apps. Try deploying the 64-bit version of the app. |
 | User must sign in to the App Store   (-2016330855). | The user needs to sign in to the App Store before the   app can be installed. |
 | Unknown problem. Please try again   (-2016330854). | The app installation failed due to an unknown reason.   Try again later. |
 | The app installation failed. Intune will   try again the next time the device syncs (-2016330853). | The app installation encountered a device error. Sync   the device to try installing the app again. |

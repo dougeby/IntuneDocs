@@ -7,10 +7,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
-ms.topic: article
+ms.date: 03/19/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 
@@ -90,6 +91,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Allow app to transfer data to other apps|X|X|
 |Allow app to receive data from other apps|X|X|
 |Restrict cut, copy, and paste with other apps|X|X|
+|Specify the number of characters that may be cut or copied from a managed app|X|X|
 |Require simple PIN for access|X|X|
 |Specify the number of attempts before PIN reset|X|X|
 |Allow fingerprint instead of PIN|X|X|

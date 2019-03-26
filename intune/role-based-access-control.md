@@ -7,10 +7,11 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 
@@ -27,7 +28,7 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# Role-based administration control (RBAC) with Microsoft Intune
+# Role-based access control (RBAC) with Microsoft Intune
 
 RBAC helps you control who can perform various Intune tasks within your organization, and who those tasks apply to. You can either use the built-in roles that cover some common Intune scenarios, or you can create your own roles. A role is defined by:
 
@@ -39,7 +40,21 @@ RBAC helps you control who can perform various Intune tasks within your organiza
 
 ![Intune RBAC example](./media/intune-rbac-1.PNG)
 
-Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
+## Azure Active Directory roles with Intune access
+
+| Azure Active Directory role | All Intune data | Intune audit data |
+| --- | :---: | :---: |
+| Global Administrator | Read/write | Read/write |
+| Intune Service Aministrator | Read/write | Read/write |
+| Conditional Access Administrator | None | None |
+| Security Administrator | Read only | Read only |
+| Security Operator | Read only | Read only |
+| Security Reader | Read only | Read only |
+| Global Reader | Read only | Read only |
+| Compliance Administrator | None | Read only |
+| Compliance Data Administrator | None | Read only |
+
+**Azure Active Directory (Azure AD)** provides two Directory Roles which can be used with Intune. These roles are granted full permission to perform all activities in Intune:
 
 - **Global Administrator:** Users with this role have access to all administrative features in Azure AD, as well as services that federate to Azure AD like Exchange Online, SharePoint Online, and Skype for Business Online. The person who signs up for the Azure AD tenant becomes a global administrator. Only global administrators can assign other Azure AD administrator roles. There can be more than one global administrator at your organization. Global admins can reset the password for any user and all other administrators.
 
@@ -49,6 +64,7 @@ Starting at the new Azure portal, **Azure Active Directory (Azure AD)** provides
 
 	> [!IMPORTANT]
 	> The Intune Service Administrator role does not provide the ability to manage Azure AD’s conditional access settings.
+    >
 	> To be assigned an Intune role, the user must have an Intune license.
 
 	> [!TIP]
@@ -66,7 +82,7 @@ Only Intune **Service Administrators** users with "Full" permissions get migrate
 You can assign built-in roles to groups without further configuration. You can't delete or edit a built-in role.
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
-- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, and corporate device identifiers.
+- **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, corporate device identifiers, and security baselines.
 - **Read Only Operator**: Views user, device, enrollment, configuration, and application information. Can't make changes to Intune.
 - **Application Manager**: Manages mobile and managed applications, can read device information and can view device configuration profiles.
 - **Intune Role Administrator**: Manages custom Intune roles and adds assignments for built-in Intune roles. It's the only Intune role that can assign permissions to Administrators.
@@ -141,8 +157,12 @@ Follow the same steps as [To assign a built-in role](https://docs.microsoft.com/
 
 ## Next steps
 
-[Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
+- [Use the Intune Helpdesk operator role with the troubleshooting portal](help-desk-operators.md)
+
+
 
 ## See also
 
-[Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- [Assign roles using Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+- Learn about [Microsoft Graph API support for role-based access in Intune](https://docs.microsoft.com/graph/api/resources/intune-rbac-roledefinition?view=graph-rest-1.0)
+- Get the [PowerShell SDK for the Intune Graph API](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1902.1.10)

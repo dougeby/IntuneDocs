@@ -41,7 +41,7 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
 **To enroll your Android device:**
 
-1. Install the free Intune Company Portal app from [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Install the free Intune Company Portal app from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
 2. Open the Company Portal app.
 

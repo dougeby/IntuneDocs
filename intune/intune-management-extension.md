@@ -7,10 +7,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/05/2019
-ms.topic: article
+ms.date: 03/21/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 
@@ -47,7 +48,7 @@ The Intune management extension supplements the in-box Windows 10 MDM features. 
 
 The Intune management extension has the following prerequisites:
 
-- Devices must be joined or registered to Azure AD and Azure AD is configured for [auto-enrollment into Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). The Intune management extension supports Azure AD joined, hybrid domain joined, and co-managed enrolled Windows devices.
+- Devices must be joined or registered to Azure AD, and Azure AD and Intune configured for [auto-enrollment](quickstart-setup-auto-enrollment.md). The Intune management extension supports Azure AD joined, hybrid Azure AD domain joined, and co-managed enrolled Windows devices.
 - Devices must run Windows 10 version 1607 or later.
 - The Intune management extension agent is installed when a PowerShell script or a Win32 app is deployed to a user or device security group.
 
@@ -88,7 +89,7 @@ The Intune management extension has the following prerequisites:
 > - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
 > - PowerShell scripts in Intune can be targeted to Azure AD user security groups.
 
-The Intune management extension client checks once every hour with Intune. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported.
+The Intune management extension client checks once every hour and after every reboot with Intune for any new scripts or changes. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported. Once the script executes, it doesn't execute again unless there's a change in the script or policy.
 
 ## Monitor run status
 

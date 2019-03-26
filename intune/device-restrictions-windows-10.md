@@ -2,15 +2,16 @@
 # required metadata
 
 title: Device restriction settings for Windows 10 in Microsoft Intune - Azure | Microsoft Docs
-description: See a list of all the settings and their descriptions for creating device restrictions on Windows 10 and later devices. Use these settings in a configuration profile to control screen shots, password requirements, kiosk settings, apps in the store, Edge browser, Windows defender, access to the cloud, start menu, and more in Microsoft Intune.
+description: See a list of all the settings and their descriptions for creating device restrictions on Windows 10 and later devices. Use these settings in a configuration profile to control screenshots, password requirements, kiosk settings, apps in the store, Microsoft Edge browser, Windows defender, access to the cloud, start menu, and more in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -32,7 +33,7 @@ This article lists and describes all the different settings you can control on W
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your Windows 10 devices.
 
 > [!Note]
-> Not all options are available on all editions of Windows
+> Not all options are available on all editions of Windows. To see the supported editions, refer to the [policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (opens another Microsoft web site).
 
 ## Before you begin
 
@@ -62,13 +63,13 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Bluetooth discoverability**: Lets the device be discovered by other Bluetooth-enabled devices.
 - **Bluetooth pre-pairing**: Lets you configure specific Bluetooth devices to automatically pair with a host device.
 - **Bluetooth advertising**: Lets the device receive advertisements over Bluetooth.
-- **Connected devices service**: Lets you choose whether to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
-- **NFC**: Lets the user enable and configure Near Field Communications (NFC) features on the device.
+- **Connected devices service**: Lets you choose to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
+- **NFC**: Lets the user enable and configure near field communications (NFC) features on the device.
 - **Wi-Fi**: Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
 - **Automatically connect to Wi-Fi hotspots**: Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
 - **Manual Wi-Fi configuration**: Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
-- **Wi-Fi scan interval**: Specify how often devices scan for Wi-Fi networks. Specify a value from 1 (most frequent) to 500 (least frequent).
-- **Bluetooth allowed services**: Specify as hex strings, a list of allowed Bluetooth services and profiles.
+- **Wi-Fi scan interval**: Enter how often devices scan for Wi-Fi networks. Enter a value from 1 (most frequent) to 500 (least frequent).
+- **Bluetooth allowed services**: Enter as hex strings, a list of allowed Bluetooth services and profiles.
 
 ## Cloud and Storage
 
@@ -119,7 +120,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Screen capture (mobile only)**: Lets the user capture the device screen as an image.
 - **Copy and paste (mobile only)**: Allow copy and paste actions between apps on the device.
 - **Manual unenrollment**: Lets the user manually delete the workplace account from the device.
-  - This policy setting isn't applied if the computer is Azure AD joined and auto-enrollment is enabled. 
+  - This policy setting doesn't apply if the computer is Azure AD joined and auto-enrollment is enabled. 
   - This policy setting doesn't apply to computers running Windows 10 Home.
 - **Manual root certificate installation (mobile only)**: Stops the user from manually installing root certificates, and intermediate CAP certificates.
 
@@ -141,13 +142,12 @@ These settings are added to a device configuration profile in Intune, and then a
 - **SIM card error dialog (mobile only)**: Blocks an error message from displaying on the device if no SIM card is detected.
 - **Ink Workspace**: Block users from accessing the ink workspace. **Not configured** turns on the ink workspace, and the user is allowed to use it above the lock screen.
 - **Automatic redeployment**: Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
-- **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows Insider build 1809 or later is required to use this setting.
+- **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows insider build 1809 or later is required to use this setting.
 - **Direct Memory Access**: **Block** prevents direct memory access (DMA) for all hot pluggable PCI downstream ports until a user signs into Windows. **Enabled** (default) allows access to DMA, even when a user isn't signed in.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
-
 
 ## Locked screen experience
 
@@ -160,7 +160,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Messaging
 
-- **Message sync (mobile only)**: Disable Messaging Everywhere and text message backup and restore.
+- **Message sync (mobile only)**: Disable Messaging Everywhere and text message back up and restore.
 - **MMS (mobile only)**: Disable the MMS send/receive functionality on the device.
 - **RCS (mobile only)**: Disable the Rich Communication Services send/receive functionality on the device.
 
@@ -171,25 +171,25 @@ These settings are added to a device configuration profile in Intune, and then a
 The available settings change depending on what you choose. Your options:
 
 - **No** (default): Microsoft Edge isn't running in kiosk mode. All Microsoft Edge settings are available for you to change and configure.
-- **Digital/Interactive signage (single app kiosk)**: Filters Edge settings that are applicable for Digital/Interactive signage Edge Kiosk mode for use only on Windows 10 single-app kiosks. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
-- **InPrivate Public browsing (single app kiosk)**: Filters Edge settings that are applicable for InPrivate Public Browsing Edge Kiosk mode for use on Windows 10 single-app kiosks. Runs a multi-tab version of Microsoft Edge.
-- **Normal mode (multi-app kiosk)**: Filters Edge settings that are applicable for Normal Edge Kiosk mode. Runs a full-version of Microsoft Edge with all browsing features.
-- **Public browsing (multi-app kiosk)**: Filters Edge settings that are applicable for Public browsing on a Windows 10 multi-app kiosk.  Runs a multi-tab version of Microsoft Edge InPrivate.
+- **Digital/Interactive signage (single app kiosk)**: Filters Microsoft Edge settings that are applicable for Digital/Interactive signage Microsoft Edge Kiosk mode for use only on Windows 10 single-app kiosks. Choose this setting to open a URL full screen, and only show the content on that website. [Set up digital signs](https://docs.microsoft.com/windows/configuration/setup-digital-signage) provides more information on this feature.
+- **InPrivate Public browsing (single app kiosk)**: Filters Microsoft Edge settings that are applicable for InPrivate Public Browsing Microsoft Edge Kiosk mode for use on Windows 10 single-app kiosks. Runs a multi-tab version of Microsoft Edge.
+- **Normal mode (multi-app kiosk)**: Filters Microsoft Edge settings that are applicable for Normal Microsoft Edge Kiosk mode. Runs a full-version of Microsoft Edge with all browsing features.
+- **Public browsing (multi-app kiosk)**: Filters Microsoft Edge settings that are applicable for Public browsing on a Windows 10 multi-app kiosk.  Runs a multi-tab version of Microsoft Edge InPrivate.
 
 > [!TIP]
 > For more information on what these options do, see [Microsoft Edge kiosk mode configuration types](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 This device restrictions profile is directly related to the kiosk profile you create using the [Windows kiosk settings](kiosk-settings-windows.md). To summarize:
 
-1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. Select Microsoft Edge as the application and set the Edge Kiosk Mode in the Kiosk profile.
-2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same Edge kiosk mode type as selected in your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
+1. Create the [Windows kiosk settings](kiosk-settings-windows.md) profile to run the device in kiosk mode. Select Microsoft Edge as the application and set the Microsoft Edge Kiosk Mode in the Kiosk profile.
+2. Create the device restrictions profile described in this article, and configure specific features and settings allowed in Microsoft Edge. Be sure to choose the same Microsoft Edge kiosk mode type as selected in your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)). 
 
     [Supported kiosk mode settings](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) is a great resource.
 
 > [!IMPORTANT] 
 > Be sure to assign this Microsoft Edge profile to the same devices as your kiosk profile ([Windows kiosk settings](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### Start experience
 
@@ -207,7 +207,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Custom Home button URL**: The option you chose for the **Home button URL** setting opens
   - **Hide Home button**: Hides the home button
 - **User can change Home button**: **Allow** lets users change the home button. The user's changes override any administrator settings to the home button.​ **Not configured** uses the OS default behavior on the device, which may block users from changing how administrator configured the home button.
-- **Show First Run Experience page**: **Block** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, like those enrolled in zero emissions configurations, to block this page. **Not configured** shows the introduction page.
+- **Show First Run Experience page**: **Block** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, like those organizations enrolled in zero emissions configurations, to block this page. **Not configured** shows the introduction page.
   - **First Run Experience URL**: Enter the page URL to show the first time a user runs Microsoft Edge (Windows 10 Mobile only).
 - **Refresh browser after idle time**: Enter the number of idle minutes until the browser is refreshed, from 0-1440 minutes. Default is `5` minutes. When set to `0` (zero), the browser doesn't refresh after being idle.
 
@@ -303,7 +303,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
 - **Password**: Require the end user to enter a password to access the device.
   - **Required password type**: Specifies whether the password must be numeric only, or alphanumeric.
   - **Minimum password length**: Applies to Windows 10 Mobile only.
-  - **Number of sign-in failures before wiping device**: For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign in fails the number of times that you specified. If the device isn't BitLocker enabled, then this setting doesn't apply. For devices running Windows 10 Mobile: After sign in fails the number of times you specify, the device is wiped.
+  - **Number of sign-in failures before wiping device**: For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign in fails the number of times that you specified. If the device isn't BitLocker enabled, then this setting doesn't apply. For devices running Windows 10 Mobile: After sign in fails the number of times you enter, the device is wiped.
   - **Maximum minutes of inactivity until screen locks**: Specifies the length of time a device must be idle before the screen is locked.
   - **Password expiration (days)**: Specifies the length of time after which the device password must be changed.
   - **Prevent reuse of previous passwords**: Specifies the number of previously used passwords that are remembered by the device.
@@ -334,7 +334,7 @@ You can add apps that should have a different privacy behavior from what you def
 - **Phone**: Define whether this app can access the phone.
 - **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
 - **Tasks**: Define whether this app can access your tasks.
-- **Trusted devices**: Choose if this app can use trusted devices, which is hardware you've already connected, or hardware that comes with device. For example, use TVs, projectors, and so on, as trusted devices.
+- **Trusted devices**: Choose if this app can use trusted devices. Trusted devices are hardware you've already connected, or hardware that comes with device. For example, use TVs, projectors, and so on, as trusted devices.
 - **Feedback and diagnostics**: Define whether this app can access diagnostic information.
 - **Sync with devices**: Choose if this app can automatically share and sync info with wireless devices that don't explicitly pair with the device.
 
@@ -355,7 +355,7 @@ You can add apps that should have a different privacy behavior from what you def
 - **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the task switcher.
 - **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity.
 
-You can configure information that all apps on the device can access. You can define exceptions on a per-app basis using **Per-app privacy exceptions**.
+You can configure information that all apps on the device can access. Also, define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
 ### Exceptions
 
@@ -374,7 +374,7 @@ You can configure information that all apps on the device can access. You can de
 - **Phone**: Define whether this app can access the phone.
 - **Radios**: Some apps use radios (for example, Bluetooth) in your device to send and receive data and need to turn these radios on or off. Define whether this app can control these radios.
 - **Tasks**: Define whether this app can access your tasks.
-- **Trusted devices**: Choose if this app can use trusted devices. Trusted devices is hardware you've already connected, or hardware that comes with the device. For example, use TVs, projectors, and so on as trusted devices.
+- **Trusted devices**: Choose if this app can use trusted devices. Trusted devices are hardware you've already connected, or hardware that comes with the device. For example, use TVs, projectors, and so on, as trusted devices.
 - **Feedback and diagnostics**: Choose if this app can access diagnostic information.
 - **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
 
@@ -384,7 +384,7 @@ You can configure information that all apps on the device can access. You can de
 - **Projection to this PC**: Stops other devices from finding the PC for projection.
 - **Require PIN for pairing**: Require a PIN when connecting to a projection device.
 
-## Reporting and Telemetry
+## Reporting and telemetry
 
 - **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
   - Security
@@ -396,7 +396,7 @@ You can configure information that all apps on the device can access. You can de
   - **Only send intranet data**: Allows the administrator to send intranet data history
   - **Only send internet data**: Allows the administrator to send internet data history
   - **Send intranet and internet data**: Allows the administrator to send intranet and internet data history
-- **Telemetry proxy server**: Enter the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if there isn't a proxy entered when this policy is enabled, the Connected User Experiences and Telemetry data isn't sent and stays on the local device.
+- **Telemetry proxy server**: Enter the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if a proxy isn't entered when enabling this policy, the Connected User Experiences and Telemetry data isn't sent, and stays on the local device.
 
   Example formats:
 
@@ -470,25 +470,47 @@ You can configure information that all apps on the device can access. You can de
 - **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
 - **Scan scripts loaded in Microsoft web browsers**: Lets Defender scan scripts that are used in Internet Explorer.
 - **End user access to Defender**: Controls whether the Windows Defender user interface is hidden from end users. When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- **Signature update interval (in hours)**: Specify the interval at which Defender checks for new signature files.
+- **Signature update interval (in hours)**: Enter the interval at which Defender checks for new signature files.
 - **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices.
-- **Days before deleting quarantined malware**: Lets Defender continue to track resolved malware for the number of days you specify so that you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder and isn't automatically removed.
-- **CPU usage limit during a scan**: Lets you limit the amount of CPU that scans are allowed to use (from **1** to **100**).
+- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously-affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed.
+- **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
 - **Scan archive files**: Allows Defender to scan archived files such as Zip or Cab files.
 - **Scan incoming mail messages**: Allows Defender to scan email messages as they arrive on the device.
 - **Scan removable drives during a full scan**: Lets Defender scan removable drives like USB sticks.
 - **Scan mapped network drives during a full scan**: Lets Defender scan files on mapped network drives.
   If the files on the drive are read-only, Defender can't remove any malware found in them.
 - **Scan files opened from network folders**: Lets Defender scan files on shared network drives (for example, files accessed from a UNC path). If the files on the drive are read-only, Defender can't remove any malware found in them.
-- **Cloud protection**: Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information is used to improve the service in the future.
+- **Cloud protection**: Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information improves the service in the future.
 - **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
-- **Time to perform a daily quick scan**: Lets you schedule a quick scan that occurs daily at the time you select.
-- **Type of system scan to perform**: Enter the level of scanning that's ran when you schedule a system scan.
+- **Time to perform a daily quick scan**: Choose the hour to run a daily quick scan. **Not configured** doesn't run a daily scan. If you want more customization, configure the **Type of system scan to perform** setting.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Type of system scan to perform**: Schedule a system scan, including the level of scanning, and the day and time to run the scan. Your options:
+  - **Not configured**: Doesn't schedule a system scan on the device. End users can manually run scans as needed or wanted on their devices.
+  - **Disable**: Disables any system scanning on the device. Choose this option if you're using a partner anti-virus solution that scans devices.
+  - **Quick scan**: Looks at common locations where there could be malware registered, such as registry keys and known Windows startup folders.
+    - **Day scheduled**: Choose the day to run the scan.
+    - **Time scheduled**: Choose the hour to run the scan.
+  - **Full scan**: Looks at common locations where there could be malware registered, and also scans every file and folder on the device.
+    - **Day scheduled**: Choose the day to run the scan.
+    - **Time scheduled**: Choose the hour to run the scan.
+
+  This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:
+
+  - To run a daily quick scan, configure the **Time to perform a daily quick scan** setting.
+  - To run a daily quick scan and a full scan every week, then configure the **Time to perform a daily quick scan**, and set **Type of system scan to perform** to a full scan with the day and time.
+  - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
+  - To run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications from:
   - **Block**
   - **Audit**
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Actions on detected malware threats**: Use this option to choose the actions you want Defender to take for each threat level it detects (Low, Moderate, High, and Severe). Your options:
+- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. Your options:
   - **Clean**
   - **Quarantine**
   - **Remove**

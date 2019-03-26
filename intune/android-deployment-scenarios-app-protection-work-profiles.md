@@ -9,9 +9,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/13/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: chrisbal
 

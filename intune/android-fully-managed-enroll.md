@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 
@@ -40,7 +41,7 @@ Intune helps you deploy apps and settings to Android Enterprise devices, includi
 
 ## Technical requirements
 
-You must have an Intune standalone tenant to manage Android Enterprise fully managed devices. Fully managed device management isn't available in either hybrid (SCCM-connected) mode or in the legacy Silverlight management console.
+You must have an Intune standalone tenant to manage Android Enterprise fully managed devices. Fully managed device management isn't available in either hybrid (Configuration Manager-connected) mode or in the legacy Silverlight management console.
 
 Devices must meet these requirements to be managed as an Android Enterprise fully managed device:
 

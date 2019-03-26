@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: How to protect your Android device with encryption | Microsoft Docs
-description: Protect your Android device
+title: Encrypt Android device for Intune Company Portal | Microsoft Docs
+description: Steps to turn on device encryption on an Android device
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,24 +29,40 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# How to protect your Android device using encryption
+# Encrypting your Android device
 
-When you encrypt a device, you are wrapping the information on it in a layer of protective code that prevents unauthorized people from accessing it. As a step towards making sure your information is secured, your organization is requiring you to encrypt your Android device before you can access company files, email, or data.
+Device encryption protects your files and folders from unauthorized access if your device is lost or stolen. After you turn on device encryption, only individuals with the correct password or pin will be able to sign in to your device. 
+
+Before you can access school or work resources, your organization might require you to encrypt your Android device. Some newer Android devices are encrypted by default, out-of-the-box.  
+
+## Turn on encryption
+
+If you receive a message in Company Portal that you need to encrypt your device, complete the following steps. 
 
 > [!Note]
-> Certain Android devices, including some made by Huawei and those made by Vivo and OPPO, cannot be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
+> Certain Android devices from Huawei, Vivo, and OPPO can't be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-If you unenroll your phone, it will remain encrypted.
+1.  Set a device screen lock.  
+    a. Go to **Settings** > **Lock screen and security** > **Screen lock type**.  
+    b. Select either **PIN**, **Password**, or **Pattern**.  
+    c. Follow the onscreen instructions to configure your screen lock.  
 
-1.  Ensure that a screen lock PIN or password has been set for your device.
+2. Go back to **Lock screen and security** and select **Secure startup**.
+3. Choose **Require PIN when device turns on** > **OK**.
+4. Enter your PIN to confirm and encrypt your device.
+5. Open the Company Portal app, select your device, and tap **Check device settings**.  
 
-2.  In **Settings**, choose **Security** > **Encrypt Device**.
-    (On some phones, you’ll need to choose **Storage** > **Storage encryption** or **Storage** > **Lock screen and security** > **Other security settings** to find the "Encrypt" option).
+Devices running Android 4.4 and earlier might not have the **Secure startup** option. In that case, complete the following steps to encrypt your device.
 
-3.  Follow the onscreen instructions. During encryption, your device might restart several times.
+1. Go to **Settings** > **Security** > **Encrypt Device**. Onscreen labels vary between Android devices. If you don't see the **Encrypt Device** option, check in:
+    * **Storage** > **Storage encryption**
+    * **Storage** > **Lock screen and security** > **Other security settings** 
 
-### What to do if you have issues
-**Issue**: You have already encrypted your device, and you see one of the following:
+2. Follow the onscreen instructions. During encryption, your device could restart several times.
+3. Open the Company Portal app, select your device, and tap **Check device settings**.  
+
+## Troubleshoot  
+**Issue**: You've already encrypted your device and
 
 - The encryption button is disabled.
 - You see a message saying that you still need to encrypt.
@@ -54,20 +70,7 @@ If you unenroll your phone, it will remain encrypted.
 
 **Things to try**
 
-- Make sure that your device is charged and plugged in.
-- Make sure that you've set a PIN or password on your device.
-- If you've already set a PIN or password on your device, try the following steps, which your company support might require to make your device more secure. The menu names that you see might be slightly different from the ones in the steps, depending on the type of Android device you have.
+- Make sure that your device is charged and plugged in.  
+- Make sure that you've set a PIN or password on your device.  
 
-	1. Go to **Settings** > **Lock Screen and Security** > **Screen lock**. Confirm your current PIN or password.
-
-	2. On the **Choose screen lock** screen, choose the type of screen lock you want to use. 
-
-	3. After you've chosen your screen lock, go back to the **Lock Screen and Security** screen and select **Secure Startup**. 
-	
-	4. On the **Secure startup** screen, tap **Require PIN to start device**, and tap **Continue**.
-
-	5. Choose a PIN (you can enter the same one that you entered previously), and tap **Confirm your PIN**.
-
-	6. Open the Company Portal app, select your device, and tap **Check Compliance**.
-
-Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
+Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.  

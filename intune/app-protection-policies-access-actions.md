@@ -9,9 +9,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 
@@ -87,6 +88,8 @@ For Android, you will be able to configure actions for the following settings us
 -  Min app version
 -  Min patch version
 -  Device manufacturer(s)
+-  SafetyNet device attestation
+-  Threat scan on apps
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A;Manufacturer B* 

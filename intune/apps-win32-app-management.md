@@ -6,10 +6,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
-ms.topic: article
+ms.date: 03/25/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 
@@ -28,7 +29,7 @@ Intune standalone will allow greater Win32 app management capabilities. While it
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
-    - joined to Azure Active Directory (AAD) or Hybrid Azure Active Directory, and
+    - joined to Azure Active Directory (AAD) or [hybrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) (opens another Docs web site), and
     - enrolled in Intune (MDM-managed)
 - Windows application size is capped at 8 GB per app
 
@@ -112,8 +113,12 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 1.	In the **Add app** pane, select **Program** to configure the app installation and removal commands for the app.
 2.	Add the complete installation command line to install the app. 
 
-    For example, if your app filename is **MyApp123**, add the following:
-    `msiexec /i “MyApp123.msi”`
+    For example, if your app filename is **MyApp123**, add the following:<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. <br>For example:<br>
+    `ApplicationName.exe /quite`<br>
+    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
+    For the specific agruments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
@@ -234,7 +239,7 @@ At this point you have completed steps to add a Win32 app to Intune. For informa
 
 ## Delivery Optimization
 
-Windows 10 RS3 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 1709 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and via Intune Device configuration. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## Install required and available apps on devices
 
@@ -250,9 +255,19 @@ The following image notifies the end user that app changes are being made to the
 If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
 
 ## Troubleshoot Win32 app issues
-Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [SCCM Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
+Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [Configuration Manager Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
 
 ![Screenshot of the Agent logs on the client machine](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> To allow proper installation and execution of LOB Win32 apps, anti-malware settings should exclude the following directories from being scanned:<p>
+> **On X64 client machines**:<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **On X86 client machines**:<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
 
 For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 

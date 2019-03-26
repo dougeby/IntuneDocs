@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 
@@ -83,6 +84,9 @@ When you have a hybrid MDM environment (Intune integrated with Configuration Man
 1. Delete the user from your local Active Directory (AD). This will stop the user from being synchronized to Azure AD and also discovered by Configuration Manager discovery. 
 2. Delete the user from the Configuration Manager console to remove the user and associated data from Configuration Manager. In the console, go to **Asset and Compliance** > **Users**, right-click the user to delete, and click **Delete**.
 3. [Delete the user from AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad), which removes the user and associated data from both Azure Active Directory and Intune at the same time. When the user is deleted from AAD (hard deleted), Intune receives the delete signal from AAD and then automatically begins purging all of that user’s personal data from the Intune service. The user’s information will be deleted from Intune service within 30 days of the removal action.
+
+> [!Important]
+>Onboarding of new hybrid MDM customers has been deprecated. For more information, see the [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) blog post.
 
 ## Next steps
 

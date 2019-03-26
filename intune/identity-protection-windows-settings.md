@@ -4,13 +4,14 @@
 title: Windows Hello for Business settings in Microsoft Intune - Azure | Microsoft Docs
 description: See a list of all the PIN, biometric, and anti-spoofing settings in an identity protection profile to use and configure Windows Hello for Business on Windows 10 devices in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
-ms.topic: article
+ms.date: 03/14/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -23,13 +24,16 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
+ms.reviewer: shpate
+
 ---
 
-# Windows 10 (and newer) device settings to enable Windows Hello for Business in Intune
+# Windows 10 device settings to enable Windows Hello for Business in Intune
 
-This article lists and describes the Windows Hello for Business settings you can control on Windows 10 devices in Intune. As part of your mobile device management (MDM) solution, use these settings to use a PIN or fingerprint to sign in, and more.
+This article lists and describes the Windows Hello for Business settings you can control on Windows 10 devices in Intune. As an Intune administrator, you can configure and assign these settings to Windows 10 devices as part of your mobile device management (MDM) solution. 
 
-As an Intune administrator, you can create and assign these settings to Windows 10 and later devices.
+You can find additional information about these settings in [Configure Windows Hello for Business Policy settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), in the WIndows Hello documentation.
+
 
 To learn more about Windows Hello for Business profiles in Intune, see [configure identity protection](identity-protection-configure.md).
 
@@ -86,8 +90,7 @@ To learn more about Windows Hello for Business profiles in Intune, see [configur
 - **Certificate for on-premise resources**: 
 
   - **Enable**: Allows Windows Hello for Business to use certificates to authenticate to resources on-premises.
-  - **Not configured** (default): Prevents Windows Hello for Business from using certificates to authenticate to resources on-premises.  
-
+  - **Not configured** (default): Prevents Windows Hello for Business from using certificates to authenticate to resources on-premises. Instead, devices use the default behavior of *key-trust on-premises authentication*. For more information, see [User certificate for on-premises authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in the Windows Hello documentation.  
 ## Next steps
 
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
