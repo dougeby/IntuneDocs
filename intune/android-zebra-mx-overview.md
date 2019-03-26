@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -111,6 +111,13 @@ When you create the profile in StageNow, on the last step, select **Export to MD
 > It's recommended to test the profile before you deploy it to devices in your organization. To test, in the last step when creating profiles with StageNow on your computer, use the **Test** options. Then, consume the StageNow-generated file with the StageNow app on the device. 
 > 
 > The StageNow app on the device shows logs generated when you test the profile. [Use StageNow logs on Zebra devices running Android in Intune](android-zebra-mx-logs-troubleshoot.md) has information on using StageNow logs to understand errors.
+
+> [!NOTE]
+> If you reference apps, update packages, or update other files in your StageNow profile, you want the device to get these updates. To get the updates, the device must connect to the StageNow deployment server when the profile is applied. 
+> 
+> Or, you can use built-in features in Intune to get these changes, including: 
+> - App management features to [add](apps-add.md), [deploy](apps-deploy.md), update, and [monitor](apps-monitor.md) apps.
+> - Manage [system and app updates](device-restrictions-android-for-work.md#device-owner-only) on devices running Android Enterprise
 
 After you test the file, the next step is to deploy the profile to devices using Intune.
 
