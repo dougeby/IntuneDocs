@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -161,7 +161,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** allows store purchases within a running app.
 - **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store.
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** allows the user to download books with the "Erotica" category.
-- **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing non-corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
+- **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
   - **Allow managed apps to write contacts to unmanaged contacts accounts**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
@@ -258,7 +258,7 @@ To add apps to these lists, you can:
   This feature applies to:  
   - iOS 11.0 and later
 
-- **Personal Hotspot**: **Block** prevents the device from being used as a personal hotspot. This setting might not be compatible with some carriers. **Not configured** (default) allows this feature.
+- **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Not configured** (default) keeps the personal hotspot configuration as the default set by the user.
 - **Join Wi-Fi networks only using configuration profiles (supervised only)**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** (default) allows the device to use other Wi-Fi networks.
 - **Cellular usage rules (managed apps only)**: Define the data types that managed apps can use when on cellular networks. Your options:
   - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.

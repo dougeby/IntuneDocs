@@ -2123,6 +2123,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "intune/O365-app-data-protection-set.md",
+			"redirect_url": "/intune/app-protection-policy",
+			"redirect_document_id": false
+		},		
+		{
 			"source_path": "intune/manage-apps/validate-app-protection-policies.md",
 			"redirect_url": "/intune/app-protection-policies-validate",
 			"redirect_document_id": true

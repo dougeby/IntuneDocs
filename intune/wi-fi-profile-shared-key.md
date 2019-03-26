@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -119,9 +119,9 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
         <useOneX>false</useOneX>
       </authEncryption>
       <sharedKey>
-        <keyType>networkKey</keyType>
+        <keyType>passPhrase</keyType>
         <protected>false</protected>
-        <keyMaterial>MyPassword</keyMaterial>
+        <keyMaterial>password</keyMaterial>
       </sharedKey>
       <keyIndex>0</keyIndex>
     </security>
