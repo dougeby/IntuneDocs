@@ -153,6 +153,10 @@
       items:
       - name: Role-based access control
         href: role-based-access-control.md
+      - name: Assign a role to a user
+        href: assign-role.md
+      - name: Create a custom role
+        href: create-custom-role.md
       - name: Use scope tags
         href: scope-tags.md
   - name: Enroll devices

@@ -118,14 +118,6 @@ When working with scope tags, remember these details:
 - You can only assign a scope tag that you have in your role assignments.
 - You can only target groups that are listed in the Scope (Groups) of your role assignment.
 - If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
-- If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:
-    - Assign permissions only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions don’t apply to objects in other role assignments unless the other assignment specifically grants them.
-    - Other permissions (such as Create and Read), apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
-    - Permissions for objects of different types (like policies or apps), don’t apply to each other. A Read permission for a policy, for example, doesn’t provide a Read permission to apps in the user’s assignments.
-
-
-
-
 
 ## Next steps
 
