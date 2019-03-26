@@ -140,7 +140,7 @@ The conditional access policy for Modern Authentication clients is created. Now 
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
      
     1. Under **Configure**, select **Yes**.
-    2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+    2. On the **Include** tab, select **Any device**, and then select **Done**. 
     3. Select **Done** again.
 
 6.	On the **Conditions** pane, select **Client apps**.
