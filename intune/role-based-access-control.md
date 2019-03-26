@@ -45,7 +45,7 @@ To see a role, choose **Intune** > **Roles** > **All roles** > choose a role. Yo
 -	**Permissions**: Lists a long set of toggles defining what permissions the role has.
 -	**Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
-### Built-in Roles
+### Built-in roles
 You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table]((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
