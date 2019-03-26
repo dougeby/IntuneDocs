@@ -29,16 +29,18 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 # UI updates for Intune end-user apps
-Learn what updates have been made to the user interface (UI) for apps your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and updating any custom documentation you have created to support your deployment. It can also help you understand how to better troubleshoot any issues you users are facing should they call your helpdesk for support using the Company Portal.  
+Learn about the most recent updates to the Microsoft Intune apps. We regularly add to and improve the Intune Company Portal app and website. If you're an Intune administrator or support person, this article provides the information you need to:
 
-For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
+* Alert students and employees to app and enrollment changes.
+* Update your organization's documentation or helpdesk procedures.  
+
+If you're an employee or student, be sure to check out the screenshots and links to the Company Portal help documentation. For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## Week of February 19, 2019  
 ### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 WNready4Review -->  
-A new screen called **App categories** has been added to improve the app browsing and selection experience in the Company Portal for Windows 10. Users will now see their apps sorted under App categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about getting apps into the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
-
+A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about installing apps in Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Screenshot of Company Portal for Windows 10, App categories screen.](./media/1902_CP_app_categories.png)   
 
@@ -51,14 +53,12 @@ End users will now be able to trigger app and device actions in the Windows Comp
 ## Week of October 22, 2018
 
 ### Add custom brand image for Company Portal app <!-- 1916266 -->
-As the Microsoft Intune admin, you can upload a custom brand image which will be displayed as a background image on the user's profile page in the iOS Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-
+As the Microsoft Intune admin, you can upload a custom brand image which will be displayed as a background image on the user's profile page in the iOS Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).  
 
 ## Week of August 27, 2018  
 
 ### New user experience update for the Company Portal website <!--2000968 -->  
-Based on feedback from customers, we’ve added new features to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site such as device details, feedback and support, and device overview, have received a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
+We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Specific areas of the site, such as device details, feedback and support, and device overview, now have a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
 
 Updates you'll see include:  
 
