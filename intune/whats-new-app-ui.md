@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -501,23 +501,11 @@ These are the plans for ways we will be improving the user experience by updatin
 ### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 EEready eestaged-->  
 
 The Company Portal app for iOS will be updating the enrollment screens and steps to align with the MDM enrollment changes released in Apple iOS 12.2. The new enrollment experience will prompt users to:  
-* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app. ​
-* Open the Settings app to install the management profile on their device.​
-* Return to the Company Portal app to complete enrollment.  ​
+* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app.  
+* Open the Settings app to install the management profile on their device.  
+* Return to the Company Portal app to complete enrollment.  
 
- We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/]. In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These docs changes will be live after Apple releases iOS version 12.2.  
-
-### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
-
-We’re introducing a new Company Portal website experience starting in August, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
-
-We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
-
--	UI improvements throughout the website
--	Ability to share direct links to apps
-- Improved performance for large app catalogs
-
-You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end-user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.  
+ We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://techcommunity.microsoft.com/]. In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll).   
 
 
 ### See also
