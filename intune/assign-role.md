@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Assign a role to an Intune user
 
-You can assign a [built-in](role-based-access-control.md#built-in-role) or [custom](create-custom-role.md) role to an Intune user.
+You can assign a [built-in](role-based-access-control.md#built-in-roles) or [custom](create-custom-role.md) role to an Intune user.
 
 To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
 - **Global Administrator**
