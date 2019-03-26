@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
@@ -95,8 +95,8 @@ Now we’ll create two conditional access policies to cover all device platforms
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
      
     1. Under **Configure**, select **Yes**.
-    2. On the **Include** tab, select **All platforms (including unsupported)**. 
-    3. Select **Done**.
+    2. On the **Include** tab, select **Any device**.
+    1. Select **Done**.
    
 6.	On the **Conditions** pane, select **Client apps**.
      
