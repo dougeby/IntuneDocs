@@ -969,7 +969,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 	> [!NOTE]
 	> Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
 
-	```
+	```java
 	class MAMAuthCallback implements MAMServiceAuthenticationCallback {
 	    public String acquireToken(String upn, String aadId, String resourceId) {
 		return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
