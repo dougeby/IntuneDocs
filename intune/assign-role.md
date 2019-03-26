@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Assign a role to an Intune user
 
-You can assign a [built-in](role-based-access-control.md@built-in-role) or [custom](create-custom-role.md) role to an Intune user.
+You can assign a [built-in](role-based-access-control.md#built-in-role) or [custom](create-custom-role.md) role to an Intune user.
 
 For a full list of the permissions for each built-in role, see the [Intune RBAC Table]((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 

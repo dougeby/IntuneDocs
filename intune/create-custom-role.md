@@ -56,13 +56,6 @@ You can create a custom Intune role that includes any permissions required for a
 
 8. On the **Add Custom Role** blade, click **Create**. The new role is displayed in the list on the **Intune roles - All roles** blade.
 
-
-You can assign a [built-in](role-based-access-control.md@built-in-role) or [custom](create-custom-role.md) role to an Intune user.
-
-For a full list of the permissions for each built-in role, see the [Intune RBAC Table]((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
-
-
-
 ## Next steps
 - [Assign a role to a user](assign-role.md)
 - [Learn more about role-based access control in Intune](role-based-access-control.md)
