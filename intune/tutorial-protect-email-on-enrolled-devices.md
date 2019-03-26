@@ -97,7 +97,7 @@ Now we’ll create a conditional access policy that requires all device platform
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
      
     1. Under **Configure**, select **Yes**.
-    2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+    2. On the **Include** tab, select **Any device**, and then select **Done**. 
     3. Select **Done** again.
    
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
