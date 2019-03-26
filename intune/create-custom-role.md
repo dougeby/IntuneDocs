@@ -33,10 +33,9 @@ ms.collection: M365-identity-device-management
 You can create a custom Intune role that includes any permissions required for a specific job function. For example, if an IT department group manages applications, policies, and configuration profiles, you can add all those permissions together in one custom role. After creating a custom role, you can [assign](assign-role.md)
  it to any users that need those permissions.
 
-> [!IMPORTANT]
-> To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
-> - **Global Administrator**
-> - **Intune Service Administrator**
+To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+- **Global Administrator**
+- **Intune Service Administrator**
 
 ## To create a custom role
 

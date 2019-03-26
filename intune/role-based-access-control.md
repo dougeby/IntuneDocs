@@ -32,6 +32,10 @@ ms.collection: M365-identity-device-management
 
 Role-based access control (RBAC) helps you manage who has access to your organization’s resources and what they can do with those resources.  By [assigning roles](assign-role.md) to your Intune users, you can limit what they can see and change. Each role has a set of permissions that determine what users with that role can access and change within your organization.
 
+To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
+- **Global Administrator**
+- **Intune Service Administrator**
+
 ## Roles
 A role defines the set of permissions granted to users assigned to that role.
 You can use both the built-in and custom roles. Built-in roles cover some common Intune scenarios. You can [create your own custom roles](create-custom-role.md) with the exact set of permissions you need. Several Azure Active Directory roles have permissions to Intune.
