@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,8 @@ For this quickstart, you'll use Intune to require your workforce's Android users
 3. For **Platform**, select **Android**. 
 4. Select **Settings** > **System Security** to display the Android **System Security** blade.
 5. Click **Require** next to **Require a password to unlock mobile devices**.
-6. Enter **6** next to **Minimum password length**. 
+6. Select **At least numeric** next to **Required password type**.
+7. Enter **6** next to **Minimum password length**. 
 
     ![Screenshot of creating a group in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
