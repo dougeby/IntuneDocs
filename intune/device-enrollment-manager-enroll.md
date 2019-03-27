@@ -43,7 +43,8 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
   - DEM user accounts can’t use Apple Volume Purchase Program (VPP) apps with Apple VPP user licenses because of per-user Apple ID requirements for app management.
   - Devices can install VPP apps if they have Apple VPP device licenses.
   - Devices are blocked for Conditional Access with the exception of Windows 10 1803+
-  - Each device enrolled with a DEM account must have its own Intune device license.
+  - Every device enrolled with DEM accounts needs to be properly licensed to be managed by Intune. The license could be an Intune user license or an Intune device license.
+
 
 
 ## Add a device enrollment manager
