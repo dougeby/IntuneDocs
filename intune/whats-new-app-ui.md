@@ -505,7 +505,7 @@ The Company Portal app for iOS will be updating the enrollment screens and steps
 * Open the Settings app to install the management profile on their device.  
 * Return to the Company Portal app to complete enrollment.  
 
- We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/intune/ios-enroll).   
+ We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
 
 
 ### See also
