@@ -54,6 +54,9 @@ When you monitor the baseline, you get insight into the security state of your d
     - **Does not match baseline**: At least one setting in the baseline doesn't match the recommended settings.
     - **Misconfigured**: At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
     - **Not applicable**: At least one setting isn't applicable, and isn't applied.
+    
+> [!NOTE]
+> If a device has settings in multiple states, the device is classified by the following order of precedence: **Misconfigured**, **Does not match baseline**, **Not applicable**, **Matches baseline**.
 
 4. Select one of the statuses that has devices. For example, select the **Misconfigured** status.
 
