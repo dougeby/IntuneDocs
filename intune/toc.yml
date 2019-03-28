@@ -180,6 +180,8 @@
         href: device-group-mapping.md
     - name: Set up Windows enrollment
       items:
+      - name: Windows enrollment methods
+        href: windows-enrollment-methods.md
       - name: Enrollment method capabilities
         href: enrollment-method-capab.md
       - name: Windows enrollment
