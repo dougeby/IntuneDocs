@@ -8,7 +8,7 @@ keywords:
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 01/31/2019
+ms.date: 03/28/2019
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
@@ -117,7 +117,7 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
 
     You can add users directly to Intune or synchronize users from your on-premises Active Directory. Once added, users can enroll devices and access company resources. You can also give users additional permissions to access Intune. For more information, see [Add users and grant administrative permission to Intune](users-add.md).
 
-9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about the Azure Active Directory (Azure AD) groups included in Intune. As an Intune admin, you use group to manage devices and users. 
+9. From [Intune](https://aka.ms/intuneportal), select **Groups** to display details about the Azure Active Directory (Azure AD) groups included in Intune. As an Intune admin, you use groups to manage devices and users. 
 
     ![Screenshot of the Groups pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-09.png)
 
