@@ -129,6 +129,9 @@ The Intune console no longer supports viewing and managing EAS-only devices conn
 - Use Intune App Protection Policies to manage your devices
 - Use Exchange controls as outlined in [Clients and mobile in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
+### Search the All devices page for an exact device by using [name] <!--4254930 -->
+You can now search for an exact device name. Go to **Intune** > **Devices** > **All devices** > in the search box, surround the device name with {} to search for an exact match. For example, **{Device12345}**.
+
 ### Monitor and troubleshoot
 
 #### Support for additional connectors on the Tenant Status page <!-- 3617202     -->
