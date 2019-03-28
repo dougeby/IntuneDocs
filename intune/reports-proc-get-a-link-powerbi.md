@@ -61,7 +61,9 @@ The Power BI Compliance app contains information for your tenant and a set of pr
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Set up Intune Data Warehouse** blade.
 3.  Select **Get Power BI App** to access and share pre-created Power BI reports for your tenant in the browser.
-    - If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Organizational account** as your authentication method.
+
+> [!NOTE]
+> If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Organizational account** as your authentication method.
 
 ### Add additional filters to the Intune Compliance app
 
