@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 03/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,11 +81,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 1. Sign in to your Enterprise CA with an account that has administrative privileges.
 2. Open a command prompt as an administrator.
 3. Export the Root CA Certificate (.cer) to a location where you can access it later.
-4. After the wizard completes, but before closing the wizard, click **Launch the Certificate Connector UI**.
 
-   `certutil -ca.cert certnew.cer`
-
-   For more information, see [Certutil tasks for managing certificates](https://technet.microsoft.com/library/cc772898.aspx#BKMK_ret_sign).
 
 ## Configure certificate templates on the CA
 
