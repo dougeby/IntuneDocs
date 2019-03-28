@@ -308,7 +308,7 @@ Applies to:
 ### Device management
 
 #### Rename an enrolled Windows device <!-- 1911112  -->
-You can now rename an enrolled Windows 10 device (RS4 or later). To do, choose **Intune** > **Devices** > **All devices** > choose a device > **Rename device**.
+You can now rename an enrolled Windows 10 device (RS4 or later). To do, choose **Intune** > **Devices** > **All devices** > choose a device > **Rename device**. This feature does not currently support renaming hybrid Azure AD Windows devices.
 
 #### Auto-assign scope tags to resources created by an admin with that scope <!-- 3173823  -->
 When an admin creates a resource, any scope tags assigned to the admin will automatically be assigned to those new resources.
