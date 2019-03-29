@@ -6,7 +6,7 @@ description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 09/21/2018 
+ms.date: 03/29/2018 
 ms.topic: conceptual 
 audience: microsoft-business
 ms.prod: microsoft-365-enterprise
@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # What is device management? 
 
-A key task of any Administrator is to protect and secure an organization's resources and data. This task is device management. Users have many devices from which they open and share personal files, visit websites, and install apps and games. These same users are also employees and students, and want to use their devices to access work and school resources, such as email and OneNote. *Device management* enables organizations to protect and secure their resources and data. 
+A key task of any Administrator is to protect and secure an organization's resources and data. This task is *device management*. Users have many devices from which they open and share personal files, visit websites, and install apps and games. These same users are also employees and students, and want to use their devices to access work and school resources, such as email and OneNote. Device management enables organizations to protect and secure their resources and data. 
 
 Using a device management provider, organization's can make sure that only authorized individuals and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their phone, because they know that their device meets their organization's security requirements. As an organization, you might ask - **What should we use to protect our resources?**
 
