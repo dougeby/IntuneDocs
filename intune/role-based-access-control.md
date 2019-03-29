@@ -85,7 +85,7 @@ To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose
 -	**Properties**: The name, description, role, members, scopes, and tags of the assignment.
 -	**Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
 -	**Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
--	**Scope (Tags)**: Users in Members can see the resources that have the same scope tags.
+-	**[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
 If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:

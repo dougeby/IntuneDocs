@@ -49,7 +49,7 @@ To create, edit, or assign roles, your account must have one of the following pe
 
 5. On the **Permissions** blade, choose the permissions you want to use with this role. Use the [Intune RBAC table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) to help you decide which permissions you want to apply.
 
-6. On the **Scope (Tags)** blade, choose tags where this custom role will be applied.
+6. On the **Scope (Tags)** blade, choose the tags for this role. This role can access resources that also have these tags.
 
 7. When you're done, choose **OK**.
 
