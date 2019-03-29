@@ -112,7 +112,7 @@ When working with scope tags, remember these details:
     - App configuration policies – managed devices
     - Powershell scripts
     - DEP tokens
-    - iOS all provisioning profile
+    - iOS app provisioning profile
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
