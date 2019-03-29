@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: RBAC with Microsoft Intune
-description: Learn how Role-Based Access Control (RBAC) lets you control who can perform actions and make changes in Microsoft Intune.
+title: Role-based access control (RBAC) with Microsoft Intune
+description: Learn how RBAC lets you control who can perform actions and make changes in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -62,7 +62,7 @@ You can create your own roles with custom permissions. For more information abou
 | Azure Active Directory role | All Intune data | Intune audit data |
 | --- | :---: | :---: |
 | Global Administrator | Read/write | Read/write |
-| Intune Service Aministrator | Read/write | Read/write |
+| Intune Service Administrator | Read/write | Read/write |
 | Conditional Access Administrator | None | None |
 | Security Administrator | Read only | Read only |
 | Security Operator | Read only | Read only |
@@ -79,7 +79,13 @@ Only Intune **Service Administrators** users with "Full" permissions get migrate
 > You might need to keep the Intune Service Administrator access in the classic portal if your admins still need access to manage PCs using Intune.
 
 ## Role assignments
-A role assignment defines which users are assigned to the role, what resources they can see, and what resources they can change. You can assign both custom and built-in roles to your users. To be assigned an Intune role, the user must have an Intune license.
+A role assignment defines:
+
+- which users are assigned to the role
+- what resources they can see
+- what resources they can change.
+
+You can assign both custom and built-in roles to your users. To be assigned an Intune role, the user must have an Intune license.
 To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose a role > choose an assignment. You’ll see the following pages:
 
 -	**Properties**: The name, description, role, members, scopes, and tags of the assignment.

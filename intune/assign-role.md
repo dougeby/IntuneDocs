@@ -56,7 +56,7 @@ For a full list of the permissions for each built-in role, see the [Intune RBAC 
 
 9. For **Scope (Groups)**, choose a group containing the users/devices that the member above will be allowed to manage.
 
-10. For **Scope (Tags)**, choose tags where this role assigment will be applied.
+10. For **Scope (Tags)**, choose tags where this role assignment will be applied.
 
 11. When you're done, choose **OK**. The new assignment is displayed in the list of assignments.
 

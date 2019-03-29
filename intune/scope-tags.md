@@ -27,9 +27,9 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Use RBAC and scope tags for distributed IT
+# Use role-based access control (RBAC) and scope tags for distributed IT
 
-You can use role-based access control (RBAC) and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
+You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
 For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do this, you would:
 
@@ -89,9 +89,13 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 4. Choose **Select** > **OK** > **Save**.
 
 ## To assign a scope tag to an app configuration policy
-For devices with **Device enrollment type** set to **Managed devices**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Properties** > **Scope (Tags)** > choose the tags you want to assign to the policy.
+For devices with **Device enrollment type** set to **Managed devices**:
+1. Choose **Client apps** > **App configuration policies** > choose an app configuration policy.
+2. Choose **Properties** > **Scope (Tags)** > choose the tags you want to assign to the policy.
 
-For devices with **Device enrollment type** set to **Managed apps**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Scope (Tags)** > choose the tags you want to assign to the policy.
+For devices with **Device enrollment type** set to **Managed apps**:
+1. Choose **Client apps** > **App configuration policies** > choose an app configuration policy.
+2. Choose **Scope (Tags)** > choose the tags you want to assign to the policy.
 
 
 ## To assign a scope tag to an iOS app provisioning profile
