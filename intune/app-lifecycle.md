@@ -11,6 +11,7 @@ ms.date: 12/20/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: apps; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Overview of the app lifecycle in Microsoft Intune

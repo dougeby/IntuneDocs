@@ -12,6 +12,7 @@ ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # What is device enrollment?
@@ -112,9 +113,6 @@ To learn more about iOS enrollment, see:
 
 - [Decide how to enroll iOS devices](enrollment-method-choose-ios.md)
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-direct-enroll-ios.md)
-
-## Mobile device management with Exchange ActiveSync and Intune
-Mobile devices that aren't enrolled, but that connect to Exchange ActiveSync (EAS), can be managed by Intune using EAS MDM policy. Intune uses an Exchange Connector to communicate with EAS, either on-premises or cloud-hosted. More information is coming soon.
 
 ## Mobile device cleanup after MDM certificate expiration
 

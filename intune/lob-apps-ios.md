@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 
@@ -25,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Add an iOS line-of-business app to Microsoft Intune

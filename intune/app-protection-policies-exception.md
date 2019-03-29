@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 
@@ -26,6 +27,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # How to create exceptions to the Intune Mobile Application Management (MAM) data transfer policy

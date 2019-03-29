@@ -8,9 +8,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/18/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
 
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Troubleshoot the Intune on-premises Exchange connector

@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Wi-Fi settings for Android Enterprise and kiosk devices
-titleSuffix: Microsoft Intune
+title: Wi-Fi settings for Android Enterprise and kiosk devices - Microsoft Intune | Microsoft Docs
 description: Create or add a WiFi device configuration profile for Android Enterprise and Android Kiosk. See the different settings, including adding certificates, choosing an EAP type, and selecting an authentication method in Microsoft Intune. For kiosk devices, also enter the Pre-shared key of your network.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
-ms.topic: article
+ms.date: 01/16/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -23,18 +23,18 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add Wi-Fi settings for devices running Android Enterprise and Android kiosk in Microsoft Intune
 
 You can create a profile with specific WiFi settings, and then deploy this profile to your Android Enterprise and Android kiosk devices. Microsoft Intune offers many features, including authenticating to your network, using a pre-shared key, and more.
 
-This article describes these settings.
+This article describes these settings. [Use Wi-Fi on your devices](wi-fi-settings-configure.md) includes more information about the Wi-Fi feature in Microsoft Intune.
 
 ## Before you begin
 
-[Create a device profile](device-profile-create.md).
+[Create a device profile](wi-fi-settings-configure.md#create-a-device-profile).
 
 ## Device owner only - kiosk
 
@@ -71,7 +71,7 @@ Select **OK** to save your changes.
 
   - **EAP-TLS**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. When the client connects to the network, this certificate is presented to the server, and authenticates the connection.
 
       Select **OK** to save your changes.
 
@@ -81,7 +81,7 @@ Select **OK** to save your changes.
 
   - **EAP-TTLS**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. When the client connects to the network, this certificate is presented to the server, and authenticates the connection.
 
       Select **OK** to save your changes.
 
@@ -100,7 +100,7 @@ Select **OK** to save your changes.
 
   - **PEAP**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. When the client connects to the network, this certificate is presented to the server, and authenticates the connection.
 
       Select **OK** to save your changes.
 
@@ -121,9 +121,6 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status.](device-profile-monitor.md).
 
-## More resources
-
-- See the settings available for Android devices at [Wi-Fi settings for devices running Android](wi-fi-settings-android.md).
-- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.
+You can also create Wi-Fi profiles for [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macOS](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md), and [Windows 8.1](wi-fi-settings-import-windows-8-1.md) devices.

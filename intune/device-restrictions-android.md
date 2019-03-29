@@ -8,9 +8,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Android and Samsung Knox Standard device restriction settings lists in Intune
@@ -169,4 +170,4 @@ Kiosk settings apply only to Samsung Knox Standard devices, and only to apps you
 
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also create kiosk profiles for [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) and [Windows 10](kiosk-settings.md) devices.
+You can also create kiosk profiles for [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) and [Windows 10](kiosk-settings.md) devices.

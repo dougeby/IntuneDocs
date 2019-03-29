@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 
@@ -26,6 +27,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll devices in Intune by using a device enrollment manager account
@@ -41,6 +43,8 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
   - DEM user accounts can’t use Apple Volume Purchase Program (VPP) apps with Apple VPP user licenses because of per-user Apple ID requirements for app management.
   - Devices can install VPP apps if they have Apple VPP device licenses.
   - Devices are blocked for Conditional Access with the exception of Windows 10 1803+
+  - Every device enrolled with DEM accounts needs to be properly licensed to be managed by Intune. The license could be an Intune user license or an Intune device license.
+
 
 
 ## Add a device enrollment manager

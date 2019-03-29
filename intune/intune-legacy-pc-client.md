@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/15/2018
-ms.topic: article
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 
 
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Intune on Azure console and legacy Intune PC client

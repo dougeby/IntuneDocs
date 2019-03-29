@@ -8,10 +8,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2018
-ms.topic: article
+ms.date: 01/10/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -23,17 +24,17 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add email settings to devices using Intune
 
-Microsoft Intune includes different email settings you can deploy to devices in your organization. An IT administrator can create email profiles with specific settings to connect to a mail server, such as Office 365 and Gmail. Users then connect, authenticate, and synchronize their organizational email accounts on their mobile devices. By creating and deploying an email profile, you can confirm that settings are standard across many devices. And, help reduce support calls from end users who don't know the correct email settings.
+Microsoft Intune includes different email settings you can deploy to devices in your organization. An IT administrator creates email profiles with specific settings to connect to a mail server, such as Office 365 and Gmail. End users then connect, authenticate, and synchronize their organizational email accounts on their mobile devices. By creating and deploying an email profile, you can confirm settings are standard across many devices. And, help reduce support calls from end users who don't know the correct email settings.
 
 You can use email profiles to configure the built-in email settings for the following devices:
 
 - Android Samsung Knox Standard 4.0 and later
-- Android work profile devices
+- Android Enterprise
 - iOS 8.0 and later
 - Windows Phone 8.1 and later
 - Windows 10 (desktop) and Windows 10 Mobile
@@ -42,23 +43,22 @@ This article shows you how to create an email profile in Microsoft Intune. It al
 
 ## Create a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the email profile.
 4. Choose your **Platform** from the drop-down list. Your options:
 
-	- **Android** (Samsung Android Knox Standard only)
-	- **Android enterprise**
-	- **iOS**
-	- **macOS**
-	- **Windows Phone 8.1**
-	- **Windows 8.1 and later**
-	- **Windows 10 and later**
+    - **Android** (Samsung Android Knox Standard only)
+    - **Android enterprise**
+    - **iOS**
+    - **Windows Phone 8.1**
+    - **Windows 10 and later**
 
 5. In the **Profile** type drop-down list, choose **Email**.
 6. The settings you can configure may be different for each platform. For specific settings, choose your platform:
 
-	- [Android work profile and Samsung Knox Standard settings](email-settings-android.md)
+	- [Android Samsung Knox Standard settings](email-settings-android.md)
+	- [Android Enterprise settings](email-settings-android-enterprise.md)
 	- [iOS settings](email-settings-ios.md)
 	- [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
 	- [Windows 10 settings](email-settings-windows-10.md)
@@ -81,23 +81,24 @@ You can help secure email profiles using the following options:
 
   For more information about how to create and use certificate profiles in Intune, see [How to configure certificates with Intune](certificates-configure.md).
 
-- **User name and password**: The user authenticates to the native mail server by entering a user name and password. The password doesn't exist in the email profile. So, the user needs to enter the password when connecting to email.
+- **User name and password**: The end user authenticates to the native mail server by entering a user name and password. The password doesn't exist in the email profile. So, the end user enters the password when connecting to email.
 
 ## How Intune handles existing email accounts
 
 If the user already configured an email account, then the email profile is assigned differently, depending on the platform.
 
-- **iOS**: An existing, duplicate email profile is detected based on host name and email address. The duplicate email profile blocks the assignment of an Intune profile. In this case, the Company Portal app notifies the user that they aren't compliant, and prompts the user to manually remove the configured profile. To help prevent this scenario, tell your users to enroll *before* installing an email profile, which allows Intune to set up the profile.
+- **iOS**: An existing, duplicate email profile is detected based on host name and email address. The duplicate email profile blocks the assignment of an Intune profile. In this case, the Company Portal app notifies the user that they aren't compliant, and prompts the end user to manually remove the configured profile. To help prevent this scenario, tell your end users to enroll *before* installing an email profile, which allows Intune to set up the profile.
 
-- **Windows:** An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the user.
+- **Windows:** An existing, duplicate email profile is detected based on host name and email address. Intune overwrites the existing email profile created by the end user.
 
-- **Android Samsung Knox Standard**: An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile. Android doesn't use host name to identify the profile. Don't create multiple email profiles using the same email address on different hosts. The profiles will overwrite each other.
+- **Android Samsung Knox Standard**: An existing, duplicate email profile is detected based on the email address, and overwrites it with the Intune profile. Android doesn't use host name to identify the profile. Don't create multiple email profiles using the same email address on different hosts. The profiles overwrite each other.
 
-- **Android work profiles**: Intune provides two Android work email profiles: one for the Gmail app and one for the Nine Work app. These apps are available in the Google Play Store, and install in the device work profile. These apps won't create duplicate profiles. Both apps support connections to Exchange. To use email connectivity, deploy one of these email apps to your users' devices. Then create and deploy the appropriate email profile. Email apps such as Nine Work may not be free. Review the app’s licensing details, or contact the app company with any questions.
+- **Android work profiles**: Intune provides two Android work email profiles: one for the Gmail app, and one for the Nine Work app. These apps are available in the Google Play Store, and install in the device work profile. These apps don't create duplicate profiles. Both apps support connections to Exchange. To use email connectivity, deploy one of these email apps to your users' devices. Then create and deploy the appropriate email profile. Email apps such as Nine Work may not be free. Review the app’s licensing details, or contact the app company with any questions.
 
 ## Changes to assigned email profiles
 
 If you make changes to an email profile you previously assigned, end users may see a message asking them to approve the reconfiguration of their email settings.
 
 ## Next steps
-Once the profile is created, it isn't doing anything yet. Next, [assign the profile to somce devices](device-profile-assign.md).
+
+Once the profile is created, it isn't doing anything yet. Next, [assign the profile to some devices](device-profile-assign.md).

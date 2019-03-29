@@ -25,7 +25,6 @@
 
 ### [Fixing common issues with Android](troubleshoot-your-device-android.md)
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
-#### [Outlook email syncing with battery saver mode](power-saving-mode-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 #### [Update your device to install Outlook](update-device-outlook-android.md)
 
@@ -98,8 +97,8 @@
 ##### [Using SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-## [Using your macOS device](using-your-macos-device-with-intune.md)
-### [What happens when you enroll an macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+## Using your macOS device
+### [What happens when you enroll a macOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
 ### [Enroll your organization-provided macOS device](enroll-company-device-macos.md)  
 ### [Unenrolling your macOS device](unenroll-your-device-from-intune-macos.md)  
@@ -116,13 +115,13 @@
 #### [Trouble getting macOS VM managed](unable-to-get-macOS-device-managed.md) 
 
 ## [Using your Windows device](using-your-windows-device-with-intune.md)
-### [What happens when you enroll a Windows 10 device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+### [About Company Portal for Windows 10](about-cp-app-for-windows-10.md)
 #### [What happens when you enroll other versions of Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-### [Enroll your Windows device](enroll-your-device-in-intune-windows.md)
-#### [Enroll your Windows 10 device](enroll-your-w10-phone-or-w10-pc-windows.md)
-#### [Enroll your Windows 10 device through "Access work or school"](enroll-your-w10-device-access-work-or-school.md)
-#### [Enroll your Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
-#### [Enroll your Windows Phone 8.1 device](enroll-your-wp81-windows.md)
+### Enroll your Windows device
+#### [Get started with Windows enrollment](windows-enrollment-company-portal.md)
+#### [Enroll Windows 10 device](enroll-windows-10-device.md)
+#### [Enroll Windows 8.1 or Windows RT 8.1 device](enroll-your-w81-or-rt81-windows.md)
+#### [Enroll Windows Phone 8.1 device](enroll-your-wp81-windows.md)
 ### [Encrypt your device](encrypt-your-device-windows.md)
 ### [Set or change device password](set-or-change-your-password-windows.md)
 ### [Remove your device from Intune](unenroll-your-device-from-intune-windows.md)
@@ -151,13 +150,14 @@
 
 ## Using the Intune Company Portal app for Windows 
 ### [Check device access](check-device-access-windows-cpapp.md)
-### [Install apps from Company Portal app](install-apps-cpapp-windows.md) 
-### [Remote lock device from Company Portal app](remote-lock-your-device-cp-app.md)   
-### [Rename your device from Company Portal app](rename-your-device-cpapp.md) 
+### [Install apps](install-apps-cpapp-windows.md) 
+### [Remote lock device](remote-lock-your-device-cp-app.md)   
+### [Rename device](rename-your-device-cpapp.md) 
+### [Reset device](reset-device-cp-app.md)
 
 ## [Using the Intune Company Portal website](using-the-intune-company-portal-website.md)
-### [Remotely lock your device](remote-lock-your-device-cpwebsite.md)
-### [Rename your device](rename-your-device-cpwebsite.md)
-### [Remove your device](remove-your-device-cpwebsite.md)
-### [Reset your device passcode](reset-your-passcode-cpwebsite.md)
-### [Reset and erase your device](reset-erase-your-device-cpwebsite.md)
+### [Remote lock device](remote-lock-your-device-cpwebsite.md)  
+### [Rename device](rename-your-device-cpwebsite.md)  
+### [Remove device](remove-your-device-cpwebsite.md)  
+### [Reset device passcode](reset-your-passcode-cpwebsite.md)  
+### [Reset device](reset-erase-your-device-cpwebsite.md)  

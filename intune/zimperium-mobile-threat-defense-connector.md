@@ -9,9 +9,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 12/29/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Zimperium Mobile Threat Defense connector with Intune

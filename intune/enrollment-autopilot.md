@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 
@@ -26,6 +27,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Enroll Windows devices in Intune by using the Windows Autopilot  
@@ -105,6 +107,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
 2. In the specific profile blade, choose **Assignments**. 
 3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
+
 
 > [!NOTE]
 > Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment ** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."

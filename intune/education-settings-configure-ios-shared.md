@@ -3,15 +3,16 @@
 
 title: Intune shared device settings for the iOS Classroom app
 titleSuffix: Microsoft Intune
-description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices.
+description: Learn the Intune settings you can use to control settings for the Classroom app on iOS devices.  
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 

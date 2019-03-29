@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Remotely lock devices with Intune

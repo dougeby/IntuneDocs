@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager
@@ -156,7 +157,7 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>FileVault</strong> | Give the user the option to set up FileVault encryption. |
     | <strong>iCloud Diagnostics</strong> | Give the user the option to send iCloud diagnostic data to Apple. |
     | <strong>Registration</strong>| Require the user to register the device. |
-
+    
    
 
 10. Choose **OK**.

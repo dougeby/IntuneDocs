@@ -2,16 +2,17 @@
 # required metadata
 
 title: Device features and settings in Microsoft Intune - Azure | Microsoft Docs
-description: Overview of the different Microsoft Intune device profiles, including features, restrictions, email, wifi, VPN, education, certificates, upgrade Windows 10, BitLocker and Windows defender, Windows Information Protection, administrative templates, and custom device configuration settings in the Azure portal. Use these profiles to manage and protect data and devices in your company.
+description: Overview of the different Microsoft Intune device profiles. Get info on features, restrictions, email, wifi, VPN, education, certificates, upgrade Windows 10, BitLocker and Windows defender, Windows Information Protection, administrative templates, and custom device configuration settings in the Azure portal. Use these profiles to manage and protect data and devices in your company.
 keywords:
 author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 03/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid:
 
@@ -25,86 +26,31 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
-# Apply features settings on your devices using device profiles in Microsoft Intune
+# Apply features and settings on your devices using device profiles in Microsoft Intune
 
-Microsoft Intune includes settings and features you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices, different platforms, including iOS, Android, and Windows, and then use Intune to apply the profile to devices in your organization.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Some profile examples include:
+Microsoft Intune includes settings and features you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS, Android, and Windows. Then, use Intune to apply or "assign" the profile to the devices.
+
+As part of your mobile device management (MDM) solution, use these configuration profiles to complete different tasks. Some profile examples include:
 
 - On Windows 10 devices, use a profile template that blocks ActiveX controls in Internet Explorer.
 - On iOS and macOS devices, allow users to use AirPrint printers in your organization.
 - Allow or prevent access to bluetooth on the device.
 - Create a WiFi or VPN profile that gives different devices access to your corporate network.
-- Manage software updates, including when they are installed.
-- Run an Android device a dedicated kiosk device that can run one app, or run many apps.
+- Manage software updates, including when they're installed.
+- Run an Android device as dedicated kiosk device that can run one app, or run many apps.
 
-This article lists the steps to create a profile, and gives an overview of the different types of profiles you can create. Use these profiles to allow or prevent some features on the devices.
-
-## Create the profile
-
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
-
-2. Select **Device configuration**. You have the following options:
-
-    - **Overview**: Lists the status of your profiles, and provides additional details on the profiles you assigned to users and devices.
-    - **Manage**: Create device profiles, upload custom [PowerShell scripts](intune-management-extension.md) to run within the profile, and add data plans to devices using [eSIM](esim-device-configuration.md).
-    - **Monitor**: Check the status of a profile for success or failure, and also view logs on your profiles.
-    - **Setup**: Add a SCEP or PFX certificate authority, or enable [Telecom Expense Management](telecom-expenses-monitor.md) in the profile.
-
-3. Select **Profiles** > **Create Profile**. Enter the following properties:
-
-   - **Name**: Enter a descriptive name for the profile.
-   - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-   - **Platform**: Choose the platform of your devices. Your options:  
-
-       - **Android**
-       - **Android enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 and later**
-       - **Windows 10 and later**
-
-   - **Profile type**: Select the type of settings you want to create. The list shown depends on the **platform** you choose:
-
-       - [Administrative templates](administrative-templates-windows.md)
-       - [Custom](custom-settings-configure.md)
-       - [Delivery optimization](delivery-optimization-windows.md)
-       - [Device features](device-features-configure.md)
-       - [Device restrictions](device-restrictions-configure.md)
-       - [Edition upgrade and mode switch](edition-upgrade-configure-windows-10.md)
-       - [Education](education-settings-configure.md)
-       - [Email](email-settings-configure.md)
-       - [Endpoint protection](endpoint-protection-configure.md)
-       - [Identity protection](identity-protection-configure.md)  
-       - [Kiosk](kiosk-settings.md)
-       - [PKCS certificate](certficates-pfx-configure.md)
-       - [SCEP certificate](certificates-scep-configure.md)
-       - [Trusted certificate](certificates-configure.md)
-       - [Update policies](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [Wi-Fi](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Information Protection](windows-information-protection-configure.md)
-
-     For example, if you select **iOS** for the platform, your profile type options look similar to the following:
-
-     ![Create iOS profile in Intune](./media/create-device-profile.png)
-
-4. Select **Settings**. The settings are organized by category. Select a category to see a list of all the settings you can configure.
-
-5. When finished, select **OK** > **Create** to save your changes.
-
-To learn more about the different profile types, read through the next sections in this article.
+This article gives an overview of the different types of profiles you can create. Use these profiles to allow or prevent some features on the devices.
 
 ## Administrative templates (Preview)
 
-[Administrative templates](administrative-templates-windows.md) includes hundreds of settings that you can configure for Internet Explorer, OneDrive, remote desktop, Word, Excel, and other Office programs, and much more.
+[Administrative templates](administrative-templates-windows.md) include hundreds of settings that you can configure for Internet Explorer, OneDrive, remote desktop, Word, Excel, and other Office programs.
 
-These templates give administrators an easy and simplified view of settings similar to group-policy, but they are 100% cloud-based. 
+These templates give administrators a simplified view of settings similar to group-policy, but they're 100% cloud-based.
 
 This feature supports:
 
@@ -129,7 +75,7 @@ This feature supports:
 - Android enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 and later
 - Windows 10 Team
 
 ## Delivery optimization
@@ -169,7 +115,7 @@ This feature supports:
 
 - Windows 10 and later
 
-Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
 ## Email
 
@@ -178,9 +124,10 @@ Kiosk settings also available as device restrictions for [Android](device-restri
 This feature supports: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 and later
 
 ## VPN
 
@@ -191,11 +138,12 @@ Virtual private networks (VPNs) give users secure remote access to your company 
 This feature supports: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 and later
 
 ## Wi-Fi
 
@@ -204,9 +152,11 @@ This feature supports:
 This feature supports: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 (import only)
+- Windows 10 and later
 
 ## eSIM cellular - Public preview
 
@@ -239,15 +189,16 @@ This feature supports:
 
 ## Certificates
 
-[Certificates](certificates-configure.md) configures trusted, SCEP, and PKCS certificates that are assigned to devices, and used to authenticate WiFi, VPN, and email profiles.
+[Certificates](certificates-configure.md) configure trusted, SCEP, and PKCS certificates that are assigned to devices. These certificates authenticate WiFi, VPN, and email profiles.
 
 This feature supports: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 and later
 
 ## Windows Information Protection profile
 
@@ -259,7 +210,7 @@ This feature supports:
 
 ## Shared multi-user device
 
-[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, you can create a policy that deletes inactive credentials from Windows HoloLens devices to save space.
+[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, to save space, you can create a profile that deletes inactive credentials from Windows HoloLens devices.
 
 These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
 
@@ -268,21 +219,30 @@ This feature supports:
 - Windows 10 and later
 - Windows Holographic for Business
 
-## Custom profile
+## Zebra Mobility Extensions (MX)
 
-[Custom settings](custom-settings-configure.md) lets administrators assign device settings that aren't built-into Intune. For example, on Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator. 
+[Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) allows administrators to use and manage Zebra devices in Intune. You create StageNow profiles with your settings, and then use Intune to assign and deploy these profiles to your Zebra devices. The [StageNow logs and common issues](android-zebra-mx-logs-troubleshoot.md) is a great resource to troubleshoot profiles, and see some potential issues when using StageNow.
 
 This feature supports:
 
 - Android
+
+## Custom profile
+
+[Custom settings](custom-settings-configure.md) let administrators assign device settings that aren't built in to Intune. On Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator.
+
+This feature supports:
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## Manage and troubleshoot
 
-[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that contains these settings. [Common issues and resolutions](device-profile-troubleshoot.md) provides a Q&A to help work with profiles, including what happens when a profile is deleted, what causes notifications to be sent to devices, and more.
+[Manage your profiles](device-profile-monitor.md) to check the status of devices, and the profiles assigned. Also help resolve conflicts by seeing the settings that cause a conflict, and the profiles that include these settings. [Common issues and resolutions](device-profile-troubleshoot.md) helps administrators work with profiles. It describes what happens when deleting a profile, what causes notifications to be sent to devices, and more.
 
 ## Next steps
-Choose your platform, and get started:
 
+Choose your platform, and get started.

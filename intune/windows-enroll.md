@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 09/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Set up enrollment for Windows devices
@@ -46,8 +47,8 @@ Two factors determine how you can simplify Windows device enrollment:
 
 ||**Azure AD Premium**|**Other AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Earlier Windows versions**|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|[User enrollment](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatic enrollment](#enable-windows-10-automatic-enrollment) |User enrollment|
+|**Earlier Windows versions**|User enrollment|User enrollment|
 
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 
@@ -87,6 +88,12 @@ The Contoso DNS admin should create the following CNAMEs:
 `EnterpriseEnrollment-s.manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 
 Changes to DNS records might take up to 72 hours to propagate. You can't verify the DNS change in Intune until the DNS record propagates.
+
+## Additional Endpoints Are Supported but Not Recommended
+EnterpriseEnrollment-s.manage.microsoft.com is the preferred FQDN for enrollment, but there are two other endpoints that have been used by customers in the past and are supported. EnterpriseEnrollment.manage.microsoft.com (without the -s) and manage.microsoft.com both work as the target for the auto-discovery server, but the user will have to touch OK on a confirmation message. If you point to EnterpriseEnrollment-s.manage.microsoft.com, the user won’t have to do the additional confirmation step, so this is the recommended configuration
+
+## Alternate Methods of Redirection Are Not Supported
+Using a method other than the CNAME configuration is not supported. For example, using a proxy server to redirect enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc to either enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc or manage.microsoft.com/EnrollmentServer/Discovery.svc is not supported.
 
 **Step 2: Verify CNAME** (optional)<br>
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **CNAME Validation**.

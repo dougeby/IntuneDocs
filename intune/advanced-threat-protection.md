@@ -4,14 +4,15 @@
 title: Use Windows Defender ATP in Microsoft Intune - Azure | Microsoft Docs
 description: See how to enable Windows Defender Advanced Threat Protection (ATP) in an end-to-end scenario, including turning on ATP in Intune and Windows Defender Security Center (ATP portal), onboard devices using an ATP configuration profile, create an Intune device compliance policy, create an Azure AD conditional access policy, and monitor device compliance.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 02/22/2019
 
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: joglocke
 
@@ -24,10 +25,10 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# Enable Windows Defender ATP with conditional access in Intune
+# Enforce compliance for Windows Defender ATP with conditional access in Intune
 
 Windows Defender Advanced Threat Protection (ATP) and Microsoft Intune work together to help prevent security breaches, and help limit the impact of breaches within an organization.
 
@@ -114,12 +115,12 @@ The compliance policy determines an acceptable level of risk on a device.
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level:
+5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
-  - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Windows Defender ATP users the value *Secure*.)
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 
@@ -131,10 +132,13 @@ The compliance policy determines an acceptable level of risk on a device.
 4. Include or exclude your Azure AD groups to assign them the policy.
 5. To deploy the policy to the groups, select **Save**. The user devices targeted by the policy are evaluated for compliance.
 
-## Create an Azure AD conditional access policy
-The conditional access policy blocks access to resources *if* the device is noncompliant. So if a device exceeds the threat level, you can block access to corporate resources, such as SharePoint or Exchange Online.
+## Create a conditional access policy
+The conditional access policy blocks access to resources *if* the device is noncompliant. So if a device exceeds the threat level, you can block access to corporate resources, such as SharePoint or Exchange Online.  
 
-1. In the [Azure portal](https://portal.azure.com), open **Azure Active Directory** > **Conditional access** > **New policy**.
+> [!TIP]  
+> Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
+
+1. In the [Azure portal](https://portal.azure.com), open **Intune** > **Conditional access** > **New policy**.
 2. Enter a policy **Name**, and select **Users and groups**. Use the Include or Exclude options to add your groups for the policy, and select **Done**.
 3. Select **Cloud apps**, and choose which apps to protect. For example, choose **Select apps**, and select **Office 365 SharePoint Online** and **Office 365 Exchange Online**.
 

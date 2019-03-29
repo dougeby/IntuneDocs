@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Data storage and processing in Intune

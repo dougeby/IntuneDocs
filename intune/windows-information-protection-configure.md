@@ -8,9 +8,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 01/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to configure Windows Information Protection in Microsoft Intune

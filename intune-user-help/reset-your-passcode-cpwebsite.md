@@ -25,7 +25,7 @@ ms.reviewer: jieyang
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to reset your device passcode from the Company Portal website
@@ -35,7 +35,7 @@ If you lose your device PIN or password, you can use the [Company Portal website
 If you're using a corporate-enrolled device, you may not see the option to reset your device passcode. Contact your company support to reset the passcode for you.
 
    > [!NOTE]
-   > You cannot reset the passcode for devices with Android 7.0 and later. If you forget a passcode, you must reset tje device to factory settings if you forget your passcode. 
+   > You cannot reset the passcode for devices running Android 7.0 and later. If you forget your passcode, you must reset the device to factory settings. 
 
 ## Reset your passcode
 

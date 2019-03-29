@@ -12,6 +12,7 @@ ms.date: 01/24/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Intune network configuration requirements and bandwidth
@@ -167,6 +168,7 @@ The following tables list the ports and services that the Intune client accesses
 |fef.msuc03.manage.microsoft.com|23.101.0.100|
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 |enterpriseregistration.windows.net|52.175.211.189|
+
 
 ### Apple device network information
 

@@ -8,9 +8,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 12/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Set up Symantec Endpoint Protection Mobile integration with Intune

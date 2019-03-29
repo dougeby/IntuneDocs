@@ -1,17 +1,17 @@
 ---
 # required metadata
 
-title: Configure Intune education settings for Windows 10
-titleSuffix: Microsoft Intune
-description: Learn how to use Intune to configure Windows 10 education settings on devices you manage.
+title: Add or configure education settings in Microsoft Intune - Azure | Microsoft Docs
+description: Use the Take a Test app in a device configuration profile on Windows 10 and later devices in Microsoft Intune. Create a configuration profile using the Education settiings, and enter a test app URL, choose how users sign-in, monitor the screen during the test, and allow or prevent text suggestions during the test.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
-ms.topic: article
+ms.date: 01/10/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 
@@ -25,40 +25,42 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# How to configure Windows 10 education settings in Microsoft Intune
+# Use the Take a Test app on Windows 10 devices in Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Education profiles let you specify details that configure the Windows Take a Test app including account details, and the test URL. When you configure this, the Take a Test app opens with the test you specify, and no other apps can be run on the device until the test is complete.
+Education profiles in Intune are designed for students to take a test or exam on devices. This feature includes the **Take a Test** app and settings to add a test URL, choose how end-users sign in to the test, and more. This feature supports the following platform:
 
-For details about the Take a Test app, see [Take tests in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- Windows 10 and later
 
-## Create a device profile containing education profile settings
+When the user signs in, the Take a Test app automatically opens with the test you entered. No other apps can run on the device while the test is in progress. [Take tests in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10) provides more details on the Take a Test app.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. On the **Intune** pane, choose **Device configuration**.
-2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
-3. On the profiles pane, choose **Create profile**.
-4. On the **Create Profile** pane, enter a **Name** and **Description** for the device restriction profile.
-5. From the **Platform** drop-down list, select **Windows 10 and later**.
-6. From the **Profile type** type drop-down list, choose **Education profile**. 
-7. Choose **Settings > Configure**, then, on the **Take a Test** pane, configure the following:
-	- **Account type** - Select an account type from the drop-down field.
-	- **Account user name** - Enter the user name of the account used with Take a Test. This can be a domain account, an Azure Active Directory (AAD) account, or a local computer account.
-	- **Assessment URL** - Provide the URL of the test you want users to take. For more information, see the Take a Test documentation.
-	- **Screen monitoring** - Specify whether you want to be able to monitor screen activity while users are taking a test.
-	- **Text suggestion** - Allow or block text suggestions while users are taking a test.
-8. When you're done, go back to the **Create profile** pane, and hit **Create**.
+This article lists the steps to create a device configuration profile  in Microsoft Intune. It also includes information to read and learn about the available education settings for your Windows 10 devices.
 
-The profile will be created and appears on the profiles list pane.
+## Create a device profile
+
+1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
+2. Select **Device configuration** > **Profiles** > **Create profile**.
+3. Enter the following properties:
+
+    - **Name**: Enter a descriptive name for the new profile.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Choose **Windows 10 and later**.
+    - **Profile**: Choose **Education profile**.
+
+4. Enter the settings you want to configure:
+
+    - [Windows 10 and later](education-settings-windows.md)
+
+5. Select **OK** > **Create** to save your changes.
+
+After you enter your settings, and create the profile, your profile is shown in the profiles list. Next, [assign this profile to some groups](device-profile-assign.md).
 
 ## Next steps
 
-If you want to go ahead and assign this profile to groups, see [How to assign device profiles](device-profile-assign.md).
+See a list of the [Windows 10 education settings](education-settings-windows.md) and their descriptions.
 
-
-
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

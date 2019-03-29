@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: dab6f5c8-1ebb-42c4-a7a7-7af001f94e15
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Quickstart: Add and assign a client app
@@ -40,7 +41,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Add the client app to Intune
 
@@ -69,7 +70,7 @@ Use the following steps to add an app to Intune:
 After you've added an app to Microsoft Intune, you can assign the app to groups of users or devices.
 
 > [!NOTE]
-> This quickstart build on previous quickstarts in this series. Please see [prerequisites](quickstart-add-assign-app.md#prerequisites) in this quickstart for details.
+> This quickstart builds on previous quickstarts in this series. Please see [prerequisites](quickstart-add-assign-app.md#prerequisites) in this quickstart for details.
 
 Use the following steps to assign an app to a group:
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **Apps**. 

@@ -7,10 +7,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
-ms.topic: article
+ms.date: 01/02/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 
@@ -23,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # Reference for Intune Management Extension

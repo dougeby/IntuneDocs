@@ -12,6 +12,7 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # What is Microsoft Intune app management?

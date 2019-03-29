@@ -11,7 +11,8 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod:
 ms.service: microsoft-intune
-ms.topic: article
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology:
 
 # optional metadata
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 # Use custom settings for Windows Holographic for Business devices in Intune
 

@@ -7,9 +7,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 
@@ -24,6 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Set up a telecom expense management service in Intune

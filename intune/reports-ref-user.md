@@ -7,10 +7,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 
@@ -23,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # Reference for User entity
@@ -40,13 +42,10 @@ The **User** entity collection contains user data. These records include user st
 | UserKey |Unique identifier of the user in the data warehouse - surrogate key. |123 |
 | UserId |Unique identifier of the user  - similar to UserKey, but is a natural key. |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |Email address of the user. |John@constoso.com |
-| UPN | User principal name of the user. | John@constoso.com |
+| userPrincipalName | User principal name of the user. | John@constoso.com |
 | DisplayName |Display name of the user. |John |
 | IntuneLicensed |Specifies if this user is Intune licensed or not. |True/False |
 | IsDeleted | Indicates whether all of the user's licenses have expired and whether the user was therefore removed from Intune. For a single record, this flag does not change. Instead, a new record is created for a new user state. |True/False |
-| StartDateInclusiveUTC |If IsDeleted = FALSE, DateTime in UTC when the user was assigned a license and started having a presence in Intune. If IsDeleted = TRUE, DateTime in UTC when the user had their licenses expired and was removed from Intune. |11/23/2016 12:00:00 AM |
-| EndDateExclusiveUTC |If IsDeleted = FALSE, DateTime in UTC when the user had their license expired and was removed from Intune. The license expired sometime during the previous day. If IsDeleted = TRUE, DateTime in UTC when the user regained a new license and was re-created in Intune.  |11/23/2016 12:00:00 AM |
-| IsCurrent |Indicates whether this record represents the latest state of the user. Multiple records may exist for a single user but only one of them represents the current state.  |True/False |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when the record was last modified in the data warehouse  |11/23/2016 12:00:00 AM |
 
 ## Next steps

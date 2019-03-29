@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
  
@@ -26,6 +27,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.custom: seodec18 
+ms.collection: M365-identity-device-management
 ---
  
 # Set up an enrollment status page
@@ -37,7 +39,7 @@ During device setup using Intune, the Enrollment Status Page displays installati
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
 
-You can also set the priority order for each profile to account for conflicting profile assignments ot the same user or device.
+You can also set the priority order for each profile to account for conflicting profile assignments to the same user or device.
 
  
 ## Turn on default enrollment status page for all users

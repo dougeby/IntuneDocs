@@ -7,10 +7,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 03/21/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 
@@ -23,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # Change log for the Intune Data Warehouse API
@@ -30,6 +32,27 @@ ms.custom: intune-classic
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Keep current on updates to the Intune Data Warehouse.
+
+## 1903
+_Released March 2019_
+
+### V1.0 changes reflecting back to beta
+When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. Please refer to [API version information](reports-api-url.md) for more information on Data Warehouse API versions and backwards compatibility. 
+
+## 1902 
+_Released February 2019_
+
+### Power BI Compliance app 
+
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. 
+
+> [!NOTE]
+> There are two additional filters you can apply to the Intune Compliance app.
+
+#### Add additional filters to the Intune Compliance app
+1. Open the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app in your web browsers.
+2. Click **Non-Compliant Devices** and select **Non-Compliant** in the **complianceStatus** filter. 
+3. Click on **Unknown Devices** and select **Not Yet Available** in the **complianceStatus** filter. 
 
 ## 1812 
 _Released December 2018_
@@ -78,7 +101,7 @@ You can use <code>$select</code> as an OData query parameter. The current versio
 
 ### New entities in the in Data Warehouse data model <!-- 2077804 -->
 
- - The entity, [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus), has been added. The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
+ - The entity, [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md), has been added. The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
  - The entity, [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate), has been added. The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users, or both. 
 
 ## 1710

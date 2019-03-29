@@ -6,8 +6,9 @@ description: Quickstart - Create and assign a custom role for a remote device ma
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 03/26/2019
 ms.author: erikje
 
 # optional metadata
@@ -20,7 +21,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
-
+ms.collection: M365-identity-device-management
 ---
 
 # Quickstart: Create and assign a custom role
@@ -35,7 +36,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator.
+Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create a custom role
 

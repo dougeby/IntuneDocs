@@ -26,7 +26,7 @@ ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Using your Windows device with Intune Company Portal
@@ -50,7 +50,7 @@ Company Portal currently supports devices running the following versions of Wind
 Other versions of Windows, such as [Windows 10 Holographic](https://www.microsoft.com/hololens), are supported in the Company Portal. However, these versions are not covered in this article because they are for very specific uses.
 
 ## Set up your device in the Company Portal
-- [Get my Windows device managed in Company Portal](enroll-your-device-in-intune-windows.md)
+- [Get my Windows device managed in Company Portal](windows-enrollment-company-portal.md)  
 - [What does it mean to get my device *managed*?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [What info can my company see on my device?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Encrypt my device](encrypt-your-device-windows.md)

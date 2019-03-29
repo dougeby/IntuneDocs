@@ -7,10 +7,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 
@@ -23,7 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Frequently asked questions about MAM and app protection
@@ -65,7 +66,7 @@ Any app that has been integrated with the [Intune App SDK](/intune/app-sdk) or w
 
 - The end user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](/intune/licenses-assign) to learn how to assign Intune licenses to end users.
 
-- The end user must belong to a security group that is targeted by an app protection policy. The same app protection policy must target the specific app being used. App protection policies can be created and deployed in the Intune console in the [Azure portal](https://portal.azure.com). Security groups can currently be created in the [Office portal](https://portal.office.com).
+- The end user must belong to a security group that is targeted by an app protection policy. The same app protection policy must target the specific app being used. App protection policies can be created and deployed in the Intune console in the [Azure portal](https://portal.azure.com). Security groups can currently be created in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 - The end user must sign into the app using their AAD account.
 
@@ -80,7 +81,7 @@ Any app that has been integrated with the [Intune App SDK](/intune/app-sdk) or w
 
 **What are the additional requirements to use the [Word, Excel, and PowerPoint](https://products.office.com/business/office) apps?**
 
-- The end user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and can include a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Office portal](https://portal.office.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- The end user must have a license for [Office 365 Business or Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) linked to their Azure Active Directory account. The subscription must include the Office apps on mobile devices and can include a cloud storage account with [OneDrive for Business](https://onedrive.live.com/about/business/). Office 365 licenses can be assigned in the [Microsoft 365 admin center](https://admin.microsoft.com) following these [instructions](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - The end user must have a managed location configured using the granular save as functionality under the "Prevent Save As" application protection policy setting. For example, if the managed location is OneDrive, the [OneDrive](https://onedrive.live.com/about/) app should be configured in the end user's Word, Excel, or PowerPoint app.
 
@@ -173,6 +174,27 @@ Intune app protection policies for access will be applied in a specific order on
 
 When dealing with different types of settings, an app version requirement would take precedence, followed by Android operating system version requirement and Android patch version requirement. Then, any warnings for all types of settings in the same order are checked.
 
+**Intune App Protection Policies provide the capability for admins to require end user devices to pass Google's SafetyNet Attestation for Android devices. How often is a new SafetyNet Attestation result sent to the service?** <br><br> A new Google Play service determination will be reported to the IT admin at an interval determined by the Intune service. How often the service call is made is throttled due to load, thus this value is maintained internally and is not configurable. Any IT admin configured action for the Google SafetyNet Attestation setting will be taken based on the last reported result to the Intune service at the time of conditional launch. If there is no data, access will be allowed depending on no other conditional launch checks failing, and Google Play Service "roundtrip" for determining attestation results will begin in the backend and prompt the user asynchronously if the device has failed. If there is stale data, access will be blocked or allowed depending on the last reported result, and similarly, a Google Play Service "roundtrip" for determining attestation results will begin and prompt the user asynchronously if the device has failed.
+
+**Intune App Protection Policies provide the capability for admins to require end user devices to send signals via Google's Verify Apps API for Android devices. How can an end user turn on the app scan so that they are not blocked from access due to this?**<br><br> The instructions on how to do this vary slightly by device. The general process involves going to the Google Play Store, then clicking on **My apps & games**, clicking on the result of the last app scan which will take you into the Play Protect menu. Ensure the toggle for **Scan device for security threats** is switched to on.
+
+**What does Google's SafetyNet Attestation API actually check on Android devices? What is the difference between the configurable values of 'Check basic integrity' and 'Check basic integrity & certified devices'?** <br><br>
+Intune leverages Google Play Protect SafetyNet APIs to add to our existing root detection checks for unenrolled devices. Google has developed and maintained this API set for Android apps to adopt if they do not want their apps to run on rooted devices. The Android Pay app has incorporated this, for example. While Google does not share publicly the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices. These users can then be blocked from accessing, or their corporate accounts wiped from their policy enabled apps. 'Check basic integrity' tells you about the general integrity of the device. Rooted devices, emulators, virtual devices, and devices with signs of tampering fail basic integrity. 'Check basic integrity & certified devices' tells you about the compatibility of the device with Google's services. Only unmodified devices that have been certified by Google can pass this check. Devices that will fail include the following:
+* Devices that fail basic integrity
+* Devices with an unlocked bootloader
+* Devices with a custom system image/ROM
+* Devices for which the manufacturer didn’t apply for, or pass, Google certification 
+* Devices with a system image built directly from the Android Open Source Program source files
+* Devices with a beta/developer preview system image
+
+See [Google's documentation on the SafetyNet Attestation](https://developer.android.com/training/safetynet/attestation) for technical details.
+
+**There are two similiar checks in the Conditional Launch section when creating an Intune App Protection Policy for Android devices. Should I be requiring the 'SafetyNet device attestation' setting or the 'jailbroken/rooted devices' setting?** <br><br>
+Google Play Protect's SafetyNet API checks require the end user being online, atleast for the duration of the time when the "roundtrip" for determining attestation results executes. If end user is offline, IT admin can still expect a result to be enforced from the 'jailbroken/rooted devices' setting. That being said, if the end user has been offline too long, the 'Offline grace period' value comes into play, and all access to work or school data is blocked once that timer value is reached, until network access is available. Turning on both settings allows for a layered approach to keeping end user devices healthy which is important when end users access work or school data on mobile. 
+
+**The app protection policy settings that leverage Google Play Protect APIs require Google Play Services to function. What if Google Play Services are not allowed in the location where the end user may be?**<br><br>
+Both the 'SafetyNet device attestation', and 'Threat scan on apps' settings require Google determined version of Google Play Services to function correctly. Since these are settings that fall in the area of security, the end user will be blocked if they have been targeted with these settings and are not meeting the appropriate version of Google Play Services or have no access to Google Play Services. 
+
 ## App experience on iOS
 **What happens if I add or remove a fingerprint or face to my device?**
 Intune app protection policies allow control over app access to only the Intune licensed user. One of the ways to control access to the app is to require either Apple's Touch ID or Face ID on supported devices. Intune implements a behavior where if there is any change to the device's biometric database, Intune prompts the user for a PIN when the next inactivity timeout value is met. Changes to biometric data include the addition or removal of a fingerprint, or face. If the Intune user does not have a PIN set, they are led to set up an Intune PIN.
@@ -187,20 +209,13 @@ Intune app protection policies for access will be applied in a specific order on
 
 When dealing with different types of settings, an Intune App SDK version requirement would take precedence, then an app version requirement, followed by the iOS operating system version requirement. Then, any warnings for all types of settings in the same order are checked. We recommend the Intune App SDK version requirement be configured only upon guidance from the Intune product team for essential blocking scenarios.
 
-## App protection policies - Policy refresh
-- Apps check in to the APP service every 30 minutes.
-- The 30-minute threshold is based on a timer.
-    - If the app is active at 30 minutes, it checks in at 30 minutes.
-    - If the app is sleeping at 30 minutes, it checks in on the next focus.
-- If no policy is assigned to a user, check-in occurs every eight hours.
-- If no Intune license is assigned, check-in occurs every 24 hours.
-
 
 ## See also
 - [Implement your Intune plan](planning-guide-onboarding.md)
 - [Intune testing and validation](planning-guide-test-validation.md)
 - [Android mobile app management policy settings in Microsoft Intune](app-protection-policy-settings-android.md)
 - [iOS mobile app management policy settings](app-protection-policy-settings-ios.md)
-- [Validate your app protection policies](app-protection-policies-validate.md)
+- [App protection policies policy refresh](app-protection-policy-delivery.md)
+- [Validate your app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md)
 - [How to get support for Microsoft Intune](get-support.md)

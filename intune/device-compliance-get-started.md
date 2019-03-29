@@ -2,17 +2,18 @@
 # required metadata
 
 title: Device compliance policies in Microsoft Intune - Azure | Microsoft Docs
-description: Requirements to use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
+description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
 keywords:
 
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 03/20/2019
 
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: joglocke
 
@@ -25,28 +26,23 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# Get started with device compliance policies in Intune
+# Set rules on devices to allow access to resources in your organization using Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Compliance requirements are essentially rules, such as requiring a device PIN, or requiring encryption. Device compliance policies define these rules and settings that a device must follow to be considered compliant. These rules include:
+Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet some requirements. In Intune, this feature is called "compliance policies". Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with conditional access, administrators can block users and devices that don't meet the rules. 
 
-- Use a password to access devices
+For example, an Intune administrator can require:
 
-- Encryption
+- End users use a password to access organizational data on mobile devices
+- The device isn't jail-broken or rooted
+- A minimum or maximum operating system version on the device
+- The device to be at, or under a threat level
 
-- Whether the device is jail-broken or rooted
-
-- Minimum OS version required
-
-- Maximum OS version allowed
-
-- Require the device to be at, or under the Mobile Threat Defense level
-
-You can also use device compliance policies to monitor the compliance status in your devices.
+You can also use this feature to monitor the compliance status on devices in your organization.
 
 > [!IMPORTANT]
 > Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
@@ -75,7 +71,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## Prerequisites
-To use device compliance policies, the following are required:
+
+To use device compliance policies, be sure you:
 
 - Use the following subscriptions:
 
@@ -91,30 +88,41 @@ To use device compliance policies, the following are required:
   - Windows Phone 8.1
   - Windows 10
 
-- To report their compliance status, devices must be enrolled in Intune
+- Enroll devices in Intune to see the compliance status
 
-- Devices enrolled to one user or devices with no primary user are supported. Multiple user contexts are not supported.
+- Enroll devices to one user, or enroll without a primary user. Devices enrolled to multiple users aren't supported.
 
-## How Intune device compliance policies work with Azure AD
+## How device compliance policies work with Azure AD
 
 When a device is enrolled in Intune, the Azure AD registration process starts, and updates the device attributes into Azure AD. One key piece of information is the device compliance status. This compliance status is used by conditional access policies to block or allow access to e-mail and other corporate resources.
 
 [Azure AD registration process](https://docs.microsoft.com/azure/active-directory/device-management-introduction) provides more information.
 
-### Assign a resulting device configuration profile status
+## Refresh cycle times
 
-If a device has multiple configuration profiles, and the device has different compliance statuses for two or more of the assigned configuration profiles, then a single resulting compliance status is assigned. This assignment is based on a conceptual severity level assigned to each compliance status. Each compliance status has the following severity level:
+When checking for compliance, Intune uses the same refresh cycle as configuration profiles. In general, the times are:
 
-|Status  |Severity  |
-|---------|---------|
-|Pending     |1|
-|Succeeded     |2|
-|Failed     |3|
-|Error     |4|
+| Platform | Refresh cycle|
+| --- | --- |
+| iOS | Every 6 hours |
+| macOS | Every 6 hours |
+| Android | Every 8 hours |
+| Windows 10 PCs enrolled as devices | Every 8 hours |
+| Windows Phone | Every 8 hours |
+| Windows 8.1 | Every 8 hours |
 
-When a device has multiple configuration profiles, then the highest severity level of all the profiles is assigned to that device.
+If the device recently enrolled, the compliance check-in runs more frequently:
 
-For example, say a device has three profiles assigned to it: one Pending status (severity = 1), one Succeeded status (severity = 2), and one Error status (severity = 4). The Error status has the highest severity level, so all three profiles have the Error compliance status.
+| Platform | Frequency |
+| --- | --- |
+| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
+| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
+| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
+| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+
+At anytime, users can open the Company Portal app, and sync the device to immediately check for a policy.
 
 ### Assign an InGracePeriod status
 
@@ -159,21 +167,21 @@ For example, say a device has three compliance policies assigned to it: one Unkn
 For devices that comply to policy rules, you can give those devices access to email and other corporate resources. If the devices don't comply to policy rules, then they don't get access to corporate resources. This is conditional access.
 
 #### Without conditional access
-You can also use device compliance policies without any conditional access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you can get a report on how many devices are not encrypted, or which devices are jail-broken or rooted. When you use compliance policies without conditional access, there are no access restrictions to company resources.
+You can also use device compliance policies without any conditional access. When you use compliance policies independently, the targeted devices are evaluated and reported with their compliance status. For example, you can get a report on how many devices aren't encrypted, or which devices are jail-broken or rooted. When you use compliance policies without conditional access, there aren't any access restrictions to organization resources.
 
 ## Ways to deploy device compliance policies
 You can deploy compliance policy to users in user groups or devices in device groups. When a compliance policy is deployed to a user, all of the user's devices are checked for compliance. On Windows 10 version 1803 and newer devices, it's recommended to deploy to device groups *if* the primary user didn't enroll the device. Using device groups in this scenario helps with compliance reporting.
 
-A set of built-in **Compliance policy settings** (Azure portal > Device compliance) get evaluated on all Intune-enrolled devices. These include:
+A set of built-in compliance policy settings (**Intune** > **Device compliance**) gets evaluated on all Intune-enrolled devices. These include:
 
 - **Mark devices with no compliance policy assigned as**: This property has two values:
 
   - **Compliant**: security feature off
   - **Not compliant** (default): security feature on
 
-  If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Compliant**. If you use conditional access, we recommended you change the  setting to **Not compliant**. If an end user is not compliant because a policy isn't assigned, then Company Portal lists `No compliance policies have been assigned`.
+  If a device doesn't have a compliance policy assigned, then this device is considered not compliant. By default, devices are marked as **Not compliant**. If you use conditional access, we recommended you change the setting to **Not compliant**. If an end user isn't compliant because a policy isn't assigned, then Company Portal shows `No compliance policies have been assigned`.
 
-- **Enhanced jailbreak detection**: When enabled, this setting causes iOS devices to check-in with Intune more frequently. Enabling this property uses the device’s location services, and impacts battery usage. The user location data is not stored by Intune.
+- **Enhanced jailbreak detection**: When enabled, this setting causes iOS devices to check in with Intune more frequently. Enabling this property uses the device’s location services, and impacts battery usage. The user location data is not stored by Intune.
 
   Enabling this setting requires devices to:
   - Enable location services at the OS level

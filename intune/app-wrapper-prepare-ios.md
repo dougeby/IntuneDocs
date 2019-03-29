@@ -8,9 +8,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Prepare iOS apps for app protection policies with the Intune App Wrapping Tool
@@ -442,7 +443,8 @@ Use the following steps to get logs for your wrapped applications during trouble
 > [!NOTE]
 > The logging functionality is enabled for apps that have wrapped with the Intune App Wrapping Tool version 7.1.13 or above.
 
-### See also
-- [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+## See also
+
+- [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
+- [Common questions, issues, and resolutions with device policies and profiles](device-profile-troubleshoot.md)
 - [Use the SDK to enable apps for mobile application management](app-sdk.md)

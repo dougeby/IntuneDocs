@@ -8,9 +8,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 

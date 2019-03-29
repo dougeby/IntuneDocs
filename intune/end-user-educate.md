@@ -11,6 +11,7 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # How to educate your end users about Microsoft Intune

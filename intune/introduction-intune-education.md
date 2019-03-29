@@ -11,6 +11,7 @@ ms.date: 12/18/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # How is Intune for Education different from the full device management experience in Intune?

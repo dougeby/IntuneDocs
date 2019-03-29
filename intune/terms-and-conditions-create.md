@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 
@@ -26,6 +27,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.custom: seodec18
+ms.collection: M365-identity-device-management
 ---
 
 # Terms and conditions for user access
@@ -34,7 +36,7 @@ ms.custom: seodec18
 
 As an Intune admin, you can require that users accept your company's terms and conditions before using the Company Portal to:
 - enroll devices
-- access resources like company apps and email.
+- access resources like company apps and email.    
 Configuration of terms and conditions is optional.
 
 You can create multiple sets of terms and assign them to different groups, such as to support different languages.

@@ -7,10 +7,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
-ms.topic: article
+ms.date: 01/29/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata
@@ -22,12 +23,12 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Email profile settings for devices running Windows 10 - Intune
 
-Use the email profile settings to configure your devices running Windows 10.
+Use the email profile settings to configure the Mail app on your devices running Windows 10.
 
 - **Email server**: Enter the host name of your Exchange server.
 - **Account name**: Enter the display name for the email account. This name is shown to users on their devices.

@@ -2,13 +2,14 @@
 title: Use SCEP certificates with Microsoft Intune - Azure | Microsoft Docs
 description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, setup the NDES server, and install the Intune Certificate Connector. Then, create a SCEP certificate profile, and then assign this profile to groups. Also, see the different event IDs and their descriptions, and the diagnostic codes for the Intune connector service.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 
@@ -17,11 +18,12 @@ ms.technology:
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Configure and use SCEP certificates with Intune
@@ -38,9 +40,9 @@ This article shows how to configure your infrastructure, then create and assign 
 - **NDES Server**: On a Windows Server 2012 R2 or later, set up the Network Device Enrollment Service (NDES) server role. Intune doesn't support using NDES on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host NDES.
 The NDES server must be joined to a domain within the same forest as the Enterprise CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Download the **Certificate Connector** installer (**NDESConnectorSetup.exe**) from the Intune administration portal. You'll run this installer on the server with the NDES role.  
+- **Microsoft Intune Certificate Connector**: In the Intune portal, go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for SCEP*. Use the download link in the portal to start download of the certificate connector installer **NDESConnectorSetup.exe**.  You'll run this installer on the server with the NDES role.  
 
-  - The NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
+This NDES Certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
 - **Web Application Proxy Server** (optional): Use a server that runs Windows Server 2012 R2 or later as a Web Application Proxy (WAP) server. This configuration:
   - Allows devices to receive certificates using an Internet connection.
@@ -70,7 +72,7 @@ We highly recommend publishing the NDES server through a reverse proxy, such as 
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server. If the certificate has the client and server authentication key usages set (**Enhanced Key Usages**), then you can use the same certificate.|
-|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
@@ -303,7 +305,7 @@ In this step, you:
 2. Select **Device configuration** > **Certification Authority** > **Add**
 3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
 
 4. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
 
@@ -365,11 +367,13 @@ To validate that the service is running, open a browser, and enter the following
 5. From the **Profile** type drop-down list, select **SCEP certificate**.
 6. Enter the following settings:
 
-   - **Certificate type**: Choose **User** for user certificates. Choose **Device** for user-less devices, such as kiosks. **Device** certificates are available for the following platforms:  
+   - **Certificate type**: Choose **User** for user certificates. A **User** certificate type can contain both user and device attributes in the subject and SAN of the certificate.  Choose **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices, placing the certificate in the Local Computer certificate store. **Device** certificates can only contain device attributes in the subject and SAN of the certificate.  **Device** certificates are available for the following platforms:  
+     - Android Enterprise - Work Profile
      - iOS
+     - macOS
      - Windows 8.1 and later
      - Windows 10 and later
-     - Android Enterprise
+
 
    - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
 
@@ -563,5 +567,6 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 
 ## Next steps
 
-- [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web wervice](certificates-symantec-configure.md)
-- [Add a 3rd party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)
+- [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web Service](certificates-symantec-configure.md)
+- [Add a 3rd-party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)
+- For additional assistance, use the [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) guide.

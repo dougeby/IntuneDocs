@@ -9,9 +9,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 53c99d63-c312-442a-8a71-de1b10fcd39b
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic-keep
-
+ms.collection: M365-identity-device-management
 ---
 
 # Manage user-device linking for Windows PCs

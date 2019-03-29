@@ -8,9 +8,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 11/20/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -22,6 +23,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
  
 # Configure device restriction settings in Microsoft Intune
@@ -36,7 +38,7 @@ For example, you can create a device restriction profile that prevents users of 
 
 Learn device restriction profile basics, and then read further articles for each platform to learn about device specifics.
 
-## Create a device profile containing device restriction settings
+## Create the profile
 
 1. In to the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
 2. Select **Device configuration** > **Profiles** > **Create profile**.
@@ -52,7 +54,7 @@ Learn device restriction profile basics, and then read further articles for each
     - **Windows 10 and later**
 
 5. From the **Profile type** drop-down list, choose **Device restrictions**. To create a device restrictions profile for Windows 10 Team devices, such as Surface Hub, then choose **Device restrictions (Windows 10 Team)**.
-6. Depending on the platform you chose, the settings you can configure are different. Choose your platform detailed settings:
+6. Depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
 
     - [Android settings](device-restrictions-android.md)
     - [Android enterprise settings](device-restrictions-android-for-work.md)
@@ -64,13 +66,13 @@ Learn device restriction profile basics, and then read further articles for each
     - [Windows 10 Team settings](device-restrictions-windows-10-teams.md)
     - [Windows Holographic for Business settings](device-restrictions-windows-holographic.md)
 
-7. When you're done, go back to the **Create profile** page, and select **Create**.
+7. When you're done, select **OK** > **Create** to save your changes.
 
-The profile is created and appears on the profiles list page. 
+The profile is created and shown on the profiles list.
 
-## Next step
+## Next steps
 
-After the profile is created, it's ready to be assigned. See [assign device profiles](device-profile-assign.md) for the steps. 
+After the profile is created, it's ready to be assigned. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

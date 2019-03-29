@@ -8,9 +8,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Remotely restart devices with Intune
@@ -38,7 +39,7 @@ The **Restart** device action causes the device you choose to be restarted. The 
 
 - Windows - Supported on Windows 8.1 and later
 - Windows Phone - Supported on Windows Phone 8.1 and later
-- Android kiosk devices - Supported
+- Android kiosk devices - Supported on Android 7.0 and later
 - iOS - Supported
 
     > [!Note]  

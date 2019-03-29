@@ -9,9 +9,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 
@@ -25,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Manually add the Windows 10 Company Portal app by using Microsoft Intune

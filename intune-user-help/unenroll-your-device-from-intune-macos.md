@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Unenroll your macOS device from Intune | Microsoft Docs
-description: "Describes how to unenroll a macOS device from Intune"
+title: Unenroll your macOS device from Intune Company Portal | Microsoft Docs
+description: Describes how to unenroll a macOS device from Company Portal
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -25,19 +25,21 @@ ms.reviewer: elocholi
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 
-# Unenroll your macOS device from Intune
+# Unenroll your macOS device from Company Portal
 
-When you unenroll your macOS device from Intune, your device is no longer able to access company resources.
+When you unenroll your macOS device from Intune, your device can no longer access company resources.
 
 Follow these steps to unenroll your macOS device from management:
 
-1.  In the Company Portal app, under **My Devices**, select the device you want to unenroll.
+1.  Sign in to the Company Portal for macOS.
+2.  Go to **Devices** and select the device you want to unenroll.
 
-2.  Click  **Remove** > **Remove**.
+3.  Select the ellipses menu icon > **Remove**.
+4.  A confirmation message appears. Select **Remove** to unenroll your device. 
 
 When you unenroll your device from Intune, here's what happens:
 

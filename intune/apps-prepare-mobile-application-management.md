@@ -7,10 +7,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
-ms.topic: article
+ms.date: 03/19/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Prepare line-of-business apps for app protection policies
@@ -90,8 +91,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Allow app to transfer data to other apps|X|X|
 |Allow app to receive data from other apps|X|X|
 |Restrict cut, copy, and paste with other apps|X|X|
+|Specify the number of characters that may be cut or copied from a managed app|X|X|
 |Require simple PIN for access|X|X|
-|Replace built-in app PIN with Intune PIN|X||
 |Specify the number of attempts before PIN reset|X|X|
 |Allow fingerprint instead of PIN|X|X|
 |Allow facial recognition instead of PIN (iOS only)|X|X|
@@ -102,8 +103,8 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Specify the offline grace period|X|X|
 |Block screen capture (Android only)|X|X|
 |Support for MAM without device enrollment|X|X|
-|Full Wipe|X|X|
-|Selective Wipe <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
+|Full Wipe of app data|X|X|
+|Selective Wipe of work and school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
 |Targeted Application Configuration|X||
 |Support for Multi-Identity|X||

@@ -12,6 +12,7 @@ ms.date: 01/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid:
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Control access, accounts, and power features on shared PC or multi-user devices using Intune

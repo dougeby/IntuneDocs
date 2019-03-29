@@ -12,6 +12,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -26,7 +27,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune
-
+ms.collection: M365-identity-device-management
 ---
 
 # Tutorial: Use Autopilot to enroll Windows devices in Intune

@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # What are app protection policies?
@@ -54,7 +55,7 @@ App protection policies can be configured for apps that run on devices that are:
 > [!IMPORTANT]
 > You can create mobile app management policies for Office mobile apps that connect to Office 365 services. You can also protect access to Exchange on-premises mailboxes by creating Intune app protection policies for Outlook for iOS and Android enabled with hybrid Modern Authentication. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). App protection policies are not supported for other apps that connect to on-premises Exchange or SharePoint services.
 
-**The important benefits of using App protection policies are**
+**The important benefits of using App protection policies are**:
 
 -   Protecting your company data at the app level. Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
 
@@ -73,8 +74,8 @@ There are additional benefits to using MDM with App protection policies, and com
 ### Supported platforms for app protection policies
 Intune app protection policies platform support aligns with Office mobile application platform support for Android and iOS devices. For details, see the **Mobile apps** section of [Office System Requirements](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Windows devices are currently not supported. However, you can use Windows Information Protection, which offers similar functionality. For details, see [Protect your enterprise data using Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-
+> [!IMPORTANT]
+> The Intune Company Portal is required on the device to recieve App Protection Policies on Android. For more information, see the [Intune Company Portal access apps requirements](end-user-mam-apps-android.md#access-apps).
 
 ## How app protection policies protect app data
 

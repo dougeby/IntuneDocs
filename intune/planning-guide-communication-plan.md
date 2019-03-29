@@ -9,9 +9,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # Develop a rollout communication plan
@@ -60,7 +61,7 @@ You may find this [end-user enrollment guide](https://gallery.technet.microsoft.
 
 There are several delivery methods you can use to communicate Intune rollout information to your targeted organizational groups and users. The following list shows some examples and the wave you can use the method with:
 
--   Organizational-wide in-person or Skype meetings used for kickoff wave
+-   Organizational-wide in-person or Microsoft Teams meetings used for kickoff wave
 
 -   Email used for pre-enrollment, enrollment, and post-enrollment waves
 

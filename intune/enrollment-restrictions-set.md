@@ -9,9 +9,10 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 
@@ -25,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Set enrollment restrictions
@@ -104,7 +106,7 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device is registered with Windows Autopilot but is not an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
  
 The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
  - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
@@ -132,6 +134,17 @@ You can change the settings for a device limit restriction by following these st
 During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> Device limit restrictions do not apply for the following Windows enrollment types:
+> - Co-managed enrollments
+> - GPO enrollments
+> - Azure Active Directory joined enrollments
+> - Bulk Azure Active Directory joined enrollments
+> - Autopilot enrollments
+>
+> Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
+> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 

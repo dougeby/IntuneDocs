@@ -8,9 +8,10 @@ author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/12/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 
@@ -24,7 +25,7 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 # Sign line-of-business apps so they can be deployed to Windows devices with Intune
 

@@ -9,9 +9,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 11/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add built-in apps to Microsoft Intune

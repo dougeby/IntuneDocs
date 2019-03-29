@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 
@@ -25,6 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 
 # Monitor app information and assignments with Microsoft Intune
@@ -53,7 +55,7 @@ The **Essentials** section contains the following information about the app:
 |------------------------|------------------------------------------------------------------|
 | **Publisher**          | The publisher of the app.                                            |
 | **Operating system**   | The app operating system (Windows, iOS, Android, and so on). |
-| **Created**             | The date and time when this revision was created.                         |
+| **Created**             | The date and time when this revision was created. <b>**Note**: This date value is updated when an IT admin changes app metadata, such as changing the app category or app description.                        |
 | **Assigned**           | Whether the app has been assigned (**Yes** or **No**).                  |
 
 ### Device and user status graphs
@@ -84,7 +86,7 @@ A device status list is shown when you select **Device install status** in the *
 | **Device name**      | The name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute isn't available to any other device.                                                                       |
 | **User name**        | The name of the user.                                                                                                                                                                                                                                      |
 | **Platform**         | The operating system of the device (Windows, iOS, Android, and so on).                                                                                                                                                                                           |
-| **Version**          | The version number of the app. For line-of-business apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). |
+| **Version**          | The version number of the app. For line-of-business (LOB) apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). For Store apps, no versions are shown. |
 | **Status**           | The status of the app.                                                                                                                                                                                                                                     |
 | **Status details**   | The details of the status.                                                                                                                                                                                                                                     |
 | **Last check-in**    | The date of the device's last sync with Intune.                                                                                                                                                                                                                  |

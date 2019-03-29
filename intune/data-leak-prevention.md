@@ -9,9 +9,10 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 --- 
 # Prevent data leaks on non-managed devices using Microsoft Intune
 

@@ -7,10 +7,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 
@@ -23,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # User lifetime representation in the Microsoft Intune Data Warehouse

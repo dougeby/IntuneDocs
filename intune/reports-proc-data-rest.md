@@ -8,9 +8,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 
@@ -23,6 +24,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
+ms.collection: M365-identity-device-management
 ---
 
 # Get data from the Intune Data Warehouse API with a REST client
@@ -103,7 +105,7 @@ You also need the endpoint. To get your Data Warehouse endpoint, you will need t
 4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 
 The endpoint follows the following format:
-`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
+`https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 For example, the **dates** entity looks like:
 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
@@ -169,7 +171,7 @@ The following sample contains a simple REST client. The code uses the **httpClie
 
     ![Progam.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
-8. Replace the code in Program.cs with the following code:  
+8. Replace the code in *Program.cs* with the following code:  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

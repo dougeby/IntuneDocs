@@ -9,6 +9,7 @@ ms.service: azure-policy
  ms.date: 04/24/2018
  ms.author: lizross
  ms.custom: include file
+ms.collection: M365-identity-device-management
 ---
 
 >[!Note] 

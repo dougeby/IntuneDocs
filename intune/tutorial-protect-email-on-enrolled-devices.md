@@ -5,13 +5,14 @@ title: Tutorial - Protect Exchange Online email on Intune-managed devices
 titlesuffix: Microsoft Intune
 description: Learn to secure Exchange Online with iOS Intune compliance policies and Azure AD conditional access to require managed devices and the Outlook app.
 keywords:
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
-ms.topic: quickstart
+ms.date: 03/26/2019
+ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Tutorial: Protect Exchange Online email on managed devices
@@ -46,7 +47,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**.
+Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create the iOS device compliance policy
 Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Compliance policies are platform-specific, so you need a separate compliance policy for each device platform you want to evaluate.
@@ -96,7 +97,7 @@ Now we’ll create a conditional access policy that requires all device platform
 5.	Under **Assignments**, select **Conditions** > **Device platforms**.
      
     1. Under **Configure**, select **Yes**.
-    2. On the **Include** tab, select **All platforms (including unsupported)**, and then select **Done**. 
+    2. On the **Include** tab, select **Any device**, and then select **Done**. 
     3. Select **Done** again.
    
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

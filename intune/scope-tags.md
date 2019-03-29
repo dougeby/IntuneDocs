@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 03/08/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -24,33 +24,109 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
-# Use scope tags to filter policies
+# Use RBAC and scope tags for distributed IT
 
-Scope tags let you filter policies with custom tags that you create. You can apply scope tags to roles and apps.
+You can use role-based access control (RBAC) and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
-For example, create a scope tag called “Engineering Department” and assign it to configuration profiles related to the engineering department. Assign that same tag to an “Engineering Administrators” role. They'll only see the policies with the “Engineering Department” tag.
+For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do this, you would:
+
+1. Create a scope tag called Seattle.
+2. Create a role assignment for the Policy and Profile Manager role with: 
+    - Members (Groups) = A security group named Seattle IT admins. All admins in this group will have  permission to manage policies and profiles for users/devices in the Scope (Groups).
+    - Scope (Groups) = A security group named Seattle users. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Groups). 
+    - Scope (Tags) = Seattle. Admins in the Member (Groups) can see devices that also have the Seattle scope tag.
+3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to be able to access.
+4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
+
 
 ## To create a scope tag
 
-Choose **Roles** > **Scope (tags)** > **Create**.
+1. In Intune, choose **Roles** > **Scope (Tags)** > **Create**.
 
-## To add a scope tag to a configuration profile
+    ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
 
-Choose **Device configuration** > **Profiles** > choose a profile > **Properties** > **Scope (Tags)**.
+2. Provide a **Name** and **Description**.
+3. Choose **Create**.
 
 ## To assign a scope tag to a role
 
-Choose **Roles** > **All roles** > **Policy and Profile Manager** > **Assignments** > **Scope (Tags)**.
+1. In Intune, choose **Roles** > **All roles** > choose a role > **Assignments** > **Assign**.
 
-## To assign a scope tag to an app
+    ![Screenshot of assign scope to a role.](./media/scope-tags/assign-scope-to-role.png)
 
-Choose **Client apps** > **Apps** > choose an app > **Properties** > **Scope (Tags)** > **Add** > choose the tags > **Select** > **OK** > **Save**.
+2. Provide an **Assignment name** and **Description**.
+3. Choose **Members (Groups)** > **Add** > choose the groups that you want as part of this assignment > **Select** > **OK**. mUsers in this group will have permissions to manage policies and profiles for users/devices in the Scope (Groups).
+
+    ![Screenshot of select member groups.](./media/scope-tags/select-member-groups.png)
+
+4. If you want to manage users/devices in a specific set of groups, choose **Scope (Groups)** > **Selected Groups** > **Select groups to include** > choose the groups > **Select** > **OK**. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Group).
+
+    ![Screenshot of select scope groups.](./media/scope-tags/select-scope-groups.png)
+
+    Alternately, you can choose **All Devices**, **All Users**, or **All Users & All Devices**.
+
+    ![Screenshot of other options for select scope groups.](./media/scope-tags/scope-group-other-options.png)
+    
+5. Choose **Scope (Tags)** > **Add** > choose the tags that you want to add to this role > **Select** > **OK**. Users in Members (Groups) will have access to the policies and profiles that also have the same scope tag.
+
+    ![Screenshot of select scope tags.](./media/scope-tags/select-scope-tags.png)
+
+6. Choose **OK**. 
+
+## To add a scope tag to a configuration profile
+1. In Intune, choose **Device configuration** > **Profiles** > choose a profile.
+
+    ![Screenshot of select profile.](./media/scope-tags/choose-profile.png)
+
+2. Choose **Properties** > **Scope (Tags)** > **Add**.
+
+    ![Screenshot of add scope tags.](./media/scope-tags/add-scope-tags.png)
+
+3. Under **Select Tags**, choose the tags that you want to add to the profile.
+4. Choose **Select** > **OK** > **Save**.
+
+## To assign a scope tag to an app configuration policy
+For devices with **Device enrollment type** set to **Managed devices**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Properties** > **Scope (Tags)** > choose the tags you want to assign to the policy.
+
+For devices with **Device enrollment type** set to **Managed apps**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Scope (Tags)** > choose the tags you want to assign to the policy.
+
+
+## To assign a scope tag to an iOS app provisioning profile
+1. In Intune, choose **Client apps** > **iOS app provisioning profiles** > choose a profile.
+2. Choose **Properties** > **Scope (Tags)** > choose the tags that you want to assign to the profile.
+3. Choose **Select** > **OK** > **Save**.
+
+## Scope tag details
+When working with scope tags, remember these details:
+
+- You can currently assign scope tags to:
+    - Role assignments
+    - Device compliance policies
+    - Device configuration profiles
+    - Windows 10 updates rings
+    - Managed devices
+    - Apps
+    - App configuration policies – managed devices
+    - Powershell scripts
+    - DEP tokens
+- When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
+- Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
+- Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
+- You can only assign a scope tag that you have in your role assignments.
+- You can only target groups that are listed in the Scope (Groups) of your role assignment.
+- If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
+- If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:
+    - Assign permissions only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions don’t apply to objects in other role assignments unless the other assignment specifically grants them.
+    - Other permissions (such as Create and Read), apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
+    - Permissions for objects of different types (like policies or apps), don’t apply to each other. A Read permission for a policy, for example, doesn’t provide a Read permission to apps in the user’s assignments.
+
+
+
 
 
 ## Next steps
 
 Manage your [roles](role-based-access-control.md) and [profiles](device-profile-assign.md).
-

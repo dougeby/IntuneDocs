@@ -7,10 +7,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
-ms.topic: article
+ms.date: 01/02/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Create and deploy Windows Information Protection (WIP) app protection policy with Intune

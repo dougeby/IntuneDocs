@@ -8,9 +8,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/13/2018
-ms.topic: article
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: 
-
+ms.collection: M365-identity-device-management
 ---
 
 # Microsoft Intune App SDK for iOS developer guide

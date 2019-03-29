@@ -8,9 +8,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic
-
+ms.collection: M365-identity-device-management
 ---
 
 # What to expect when your Android app is managed by app protection policies

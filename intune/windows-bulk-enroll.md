@@ -3,13 +3,14 @@ title: Bulk enrollment for Windows 10
 titlesuffix: Microsoft Intune
 description: Create a bulk enrollment package for Microsoft Intune
 keywords:
-author: Erikje
+author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 
@@ -23,6 +24,7 @@ ms.reviewer: damionw
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
+ms.collection: M365-identity-device-management
 ---
 # Bulk enrollment for Windows devices
 
@@ -30,7 +32,7 @@ ms.custom: intune-azure
 
 As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
 
-Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Windows devices that are enrolled into Intune using Windows bulk enrollment can use the Company Portal app to install available apps. 
 
 ## Prerequisites for Windows devices bulk enrollment
 
@@ -51,8 +53,7 @@ Azure AD users are standard users on these devices and receive assigned Intune p
    - **Description** - An optional description of the project
    ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
-4. Enter a unique name for your devices. Names can include a serial number (%%SERIAL%%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
-
+4. Enter a unique name for your devices. Names can include a serial number (%SERIAL%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
    ![Screenshot of specifying name and product key in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
 5. Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.

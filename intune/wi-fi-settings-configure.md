@@ -7,10 +7,11 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
-ms.topic: article
+ms.date: 01/16/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 
 # optional metadata
@@ -22,20 +23,20 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Add and use Wi-Fi settings on your devices in Microsoft Intune
 
-Use Microsoft Intune Wi-Fi profiles to assign wireless network settings to users and devices in your organization. When you assign a Wi-Fi profile, your users can access your organization's Wi-Fi network without configuring it themselves.
+Wi-Fi is a wireless network that's used by many mobile devices to get network access. Microsoft Intune includes built-in Wi-Fi settings that can be deployed to users and devices in your organization. This group of settings is called a "profile", and can be assigned to different users and groups. Once assigned, your users get access your organization's Wi-Fi network without configuring it themselves.
 
 For example, you install a new Wi-Fi network named Contoso Wi-Fi. You then want to set up all iOS devices to connect to this network. Here's the process:
 
-1. Create a Wi-Fi profile that includes the settings to connect to the Contoso Wi-Fi wireless network.
-2. Assign the profile to a group that contains all users of iOS devices.
+1. Create a Wi-Fi profile that includes the settings that connect to the Contoso Wi-Fi wireless network.
+2. Assign the profile to a group that includes all users of iOS devices.
 3. Users find the new Contoso Wi-Fi network in the list of wireless networks on their device. They can then connect to the network, using the authentication method of your choosing.
 
-Use the steps in this article to create a Wi-Fi profile. Then, review topics on platform-specific settings and details.
+This article lists the steps to create a Wi-Fi profile. It also includes links that describe the different settings for each platform.
 
 ## Supported device platforms
 
@@ -50,7 +51,7 @@ Wi-Fi profiles support the following device platforms:
 > [!NOTE]
 > For devices running Windows 8.1, you can import a Wi-Fi configuration that was previously exported from another device.
 
-## Create a Wi-FI device profile
+## Create a device profile
 
 1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune**, and select **Microsoft Intune**. 
 2. Select **Device configuration** > **Profiles** > **Create profile**.
@@ -61,7 +62,6 @@ Wi-Fi profiles support the following device platforms:
     - **Android enterprise**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 and later**
     - **Windows 10 and later**
 
@@ -85,4 +85,4 @@ Wi-Fi profiles support the following device platforms:
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status.](device-profile-monitor.md).

@@ -8,9 +8,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Enable the Mobile Threat Defense connector in Intune

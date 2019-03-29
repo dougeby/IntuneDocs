@@ -25,16 +25,14 @@ ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
+ms.collection: M365-identity-device-management
 ---
 
 # Sync your Windows device manually
 
 When app installation speed is less than ideal, initiate a manual device sync. Manual syncs force your device to connect with Intune for the latest updates and communications. Installation speed may increase after the device sync is complete.
 
-Intune supports manual sync from the Company Portal app, desktop taskbar or Start menu, and from the device Settings app. 
-
-Company Portal app functionality is supported on Windows 10 devices running the Creator's Update (1703) or later. 
-* [Sync from Company Portal app](#Sync-from-Company-Portal-app-for-Windows)  
+Intune supports manual sync from the Company Portal app, desktop taskbar or Start menu, and from the device Settings app. Company Portal app functionality is supported on Windows 10 devices running the Creator's Update (1703) or later. 
 
 All Windows devices can be synced from the device Settings app, including:
 
@@ -77,11 +75,11 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
 
 3. Multiple versions of Windows 10 exist for desktops. Compare your screen to the screenshots below to determine which set of steps to follow. 
 
-	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school).
+	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school-steps).
 
 	![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access).  
+	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access-steps).  
 
 	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 

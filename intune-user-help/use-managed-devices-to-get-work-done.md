@@ -24,7 +24,7 @@ ms.reviewer: robstack
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
-
+ms.collection: M365-identity-device-management
 ---
 
 # Use managed devices to access work or school resources
@@ -42,16 +42,9 @@ Get Company Portal by either:
 - Going to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) that your company support set up.
 
 ## What's the difference between the app and the website?
-There are a few minor differences between the Company Portal app and the Company Portal website, but you can do most of the same tasks on both. Some tasks you can do are:
+Each Company Portal app for Windows 10, iOS, macOS, and Android integrates seamlessly with your device's respective platform. The website is accessible from any device and gives you the same, universal experience no matter what device you're using. 
 
-- Enroll your devices into management
-- See the status of your devices
-- Download recommended and required apps for your organization
-- Rename your device
-- Reset your device's PIN or password
-- Contact your IT department for help
-
-To see what you can do by using the Company Portal website versus what you can do by using the Company Portal app on your device, choose one of the following links:
+You'll find Company Portal guidance specific to your device's platform, starting with enrollment steps, under the following links:  
 
 - [Using your Android device](using-your-android-device-with-intune.md)
 - [Using your iOS device](using-your-ios-device-with-intune.md)
@@ -67,7 +60,7 @@ To learn about what your company support can and can't see on your device, use t
 - [Installing the Company Portal app for Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 - [Installing the Company Portal app for iOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Installing the Company Portal app for macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
-- [Installing the Company Portal app for Windows](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
+- [Installing the Company Portal app for Windows](about-cp-app-for-windows-10.md)
 
 ## What kind of computers or devices can you add to the Company Portal?
 -   Apple devices using iOS (such as iPhone and iPad) and macOS (such as MacBook and iMac)

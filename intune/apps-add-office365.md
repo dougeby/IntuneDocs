@@ -8,10 +8,11 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 
@@ -20,17 +21,17 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 ---
 
 # Assign Office 365 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
+This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
 > [!NOTE]
 > You must use Office 365 ProPlus licenses to activate Office 365 ProPlus apps deployed through Microsoft Intune. Currently, Office 365 Business edition is not supported by Intune.
@@ -58,18 +59,25 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 5. Select **Add**.
 6. In the **Add apps** pane, in the **App type** list, under **Office 365 Suite**, select **Windows 10**.
 
-You can now configure the app suite.
+## Select settings format
 
-## Configure the app suite
+You can choose a method for configuring app setting by selecting a **Settings format**. Setting format options include:
+- Configuration designer
+- Enter XML data
 
-Select the Office apps that you want to assign to devices.
+When you choose **Configuration designer** the **Add app** blade will change to offer two additional settings options:
+- Configure App Suite
+- App Suite Settings
 
-1. In the **Add App** pane, select **Configure App Suite**.
-2. In the **Configure App Suite** pane, select the standard Office apps that you want to assign to devices.  
-    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Office 365, if you own licenses for them.
-3. Select **OK**.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## Configure app information
+When you choose **Enter XML data** the **Add app** blade with display the **Enter XML data** option. Select this to display the **Configuration File** blade. 
+
+![Add Office 365 configuration designer](./media/apps-add-office365/apps-add-office365-01.png)
+    
+For more information about the **Enter XML data** option, see [Enter XML data](apps-add-office365.md#enter-xml-format) below.
+
+## Configure app suite information
 
 In this step, you provide information about the app suite. This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
 
@@ -88,9 +96,18 @@ In this step, you provide information about the app suite. This information help
 	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
 3. Select **OK**.
 
-## Configure app settings
+## Configure app suite
 
-In this step, configure installation options for the app suite. The settings apply to all apps that you added to the suite.
+If you selected the **Configuration designer** option under the **Setting format** dropdown box, you'll see the **Configure App Suite** option in the **Add app** blade. Select the Office apps that you want to assign to devices.
+
+1. In the **Add App** pane, select **Configure App Suite**.
+2. In the **Configure App Suite** pane, select the standard Office apps that you want to assign to devices.  
+    Additionally, you can install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them.
+3. Select **OK**.
+
+## Configure app suite settings
+
+If you selected the **Configuration designer** option under the **Setting format** dropdown box, you'll see the **App Suite Settings** option in the **Add app** blade. In this step, configure installation options for the app suite. The settings apply to all apps that you added to the suite.
 
 1. In the **Add App** pane, select **App Suite Settings**.
 2. In the **App Suite Settings** pane, do the following:
@@ -114,6 +131,10 @@ In this step, configure installation options for the app suite. The settings app
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
 	You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## Enter XML format
+
+If you selected the **Enter XML data** option under the **Setting format** dropdown box, you'll see the **Enter XML format** option in the **Add app** blade. For more information, see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## Finish up
 

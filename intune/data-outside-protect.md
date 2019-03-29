@@ -9,9 +9,10 @@ ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 
@@ -25,7 +26,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
-
+ms.collection: M365-identity-device-management
 --- 
 # Prevent unauthorized access to company data using Microsoft Intune
 
@@ -52,5 +53,5 @@ You can share details of [how and when to protect documents and emails that cont
 
 As part of next steps, you can learn more about the other ways you can increase the protection of your company's data, including: 
 
-* Learn how to use [Azure Information Protection on iOS and Android devices](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Learn how to use [Azure Information Protection on iOS and Android devices](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
 * For Windows Phone and Mac computers, learn about [Microsoft Rights Management Sharing Application](https://technet.microsoft.com/dn451248).

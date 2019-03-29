@@ -11,6 +11,7 @@ ms.date: 10/31/2017
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 
@@ -24,7 +25,7 @@ ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
-
+ms.collection: M365-identity-device-management
 ---
 
 # Assign licenses to users so they can enroll devices in Intune
@@ -33,17 +34,17 @@ ms.custom: intune-classic; get-started
 
 Whether you manually add users or synchronize from your on-premises Active Directory, you must first assign each user an Intune license before users can enroll their devices in Intune. For a list of licenses, see [Licenses that include Intune](licenses.md).
 
-## Assign an Intune license in the Office 365 Admin center
+## Assign an Intune license in the Microsoft 365 admin center
 
-You can use the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
+You can use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) to manually add cloud-based users and assign licenses to both cloud-based user accounts and accounts synchronized from your on-premises Active Directory to Azure AD.
 
-1. Sign in to the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials, and then choose **Users** > **Active Users**.
+1. Sign in to the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854) using your tenant administrator credentials, and then choose **Users** > **Active Users**.
 
 2. Select the user account that you want to assign an Intune user license to, and then choose **Product licenses** > **Edit**.
 
 3. Toggle **Intune** or **Enterprise Mobility + Security** to **On**, and choose **Save**.
 
-   ![Screenshot of the Office 365 portal Product licenses section.](./media/office-assign-license.png)
+   ![Screenshot of the Microsoft 365 admin center Product licenses section.](./media/office-assign-license.png)
 
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 

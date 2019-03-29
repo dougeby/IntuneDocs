@@ -13,6 +13,7 @@ ms.date: 01/03/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 
@@ -27,7 +28,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-classic; get-started
 ms.custom: seodec18
-
+ms.collection: M365-identity-device-management
 ---
 
 # Supported operating systems and browsers in Intune
@@ -105,7 +106,7 @@ You can manage [Exchange ActiveSync devices](device-enrollment.md#mobile-device-
 
 Different administrative tasks require that you use one of the following administrative websites.
 
-- [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure portal](https://portal.azure.com/)
 
 The following browsers are supported for these portals:
