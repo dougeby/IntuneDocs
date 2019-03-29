@@ -116,7 +116,7 @@ Your app must define an `Android.App.Application` class that inherits from `MAMA
         : base(handle, transfer) { }
 ```
 > [!NOTE]
-> An issue with the MAM Xamarin bindings can cause the application to crash when deployed in Debug mode. As a workaround, the `Debuggable=false` attribute should be added to the `Application` class and the `android:debuggable="true"` flag should be removed from the manifest if it was manually set.
+> An issue with the MAM Xamarin bindings can cause the application to crash when deployed in Debug mode. As a workaround, the `Debuggable=false` attribute must be added to the `Application` class and the `android:debuggable="true"` flag must be removed from the manifest if it was manually set.
 
 #### [Enable features that require app participation](app-sdk-android.md#enable-features-that-require-app-participation)
 Example: Determine if PIN is required for the app
