@@ -15,11 +15,11 @@ These notices provide important information that can help you prepare for future
 There's an upcoming change in workflow for enrollment of iOS devices through one of Apple’s corporate device enrollment methods - Apple Configurator, Apple Business Manager, Apple School Manager, or the Apple Device Enrollment Program (DEP), when using Setup Assistant for authentication. This change applies only to devices enrolled with user affinity.
 
 #### How does this affect me?
-When this change is rolled out in ~~March~~ April, enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. There will be an improved workflow to enroll iOS devices through the methods listed above.
+When this change is rolled out in ~~March~~ April, enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. There will be an improved workflow to enroll iOS devices through the methods listed above. Note:
 
 - When enrolling new devices and authenticating with Setup Assistant, you’ll be able to choose whether or not to deploy the Company Portal app automatically. End users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow.  
 - On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, you must take action if you want to enable Conditional Access. You’ll have to configure an app configuration policy with a specific xml to push the Company Portal down to these devices. Directions to do this are in the blog post at the Additional Information link. If you choose to push the Company Portal in this manner, end users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow. 
-- After this change is rolled out, if you haven't deployed the Company Portal with the app configuration profile mentioned above and if end users download the Company Portal app from the App store, they can sign in, but they'll get an error message. They won't be able to use the app for Conditional Access. 
+- After this change is rolled out, if you haven't deployed the Company Portal with the app configuration profile mentioned above and if end users download the Company Portal app from the App store, they'll can sign in, but they'll get an error message. They won't be able to use the app for Conditional Access. 
 
 #### What do I need to do to prepare for this change?
 If you plan on using the modified workflow, you'll want to update your end user guidance to indicate that:
@@ -34,7 +34,6 @@ See our support blog post at the Additional Information link for more details ab
 #### Additional Information 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
 ### Plan for Change: User experience update to Intune Company Portal app for iOS
 We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
 
@@ -45,7 +44,7 @@ This user experience update, while maintaining current iOS Company Portal functi
 - Ability to search ebooks
 - Search history for apps and ebooks
 
-If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You can also provide feedback directly to the Intune team.  
+If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You'll can also provide feedback directly to the Intune team.  
 
 #### What can I do to prepare for this change?
 You don't need to take any action; these changes will be released in an upcoming iOS CP app release. 
@@ -81,8 +80,8 @@ We're updating the way Intune writes email profiles for Windows 10 in the April 
 
 #### How does this affect me?
 This change impacts you if you use Windows 10 email profiles with
-- The native Mail client on Windows 10 desktops OR
-- The Outlook email client on Windows 10 Mobile
+- The nativeMail client on Windows 10 desktops OR
+- The Outlookemail client on Windows 10 Mobile
 
 This impacts both Intune standalone and hybrid Mobile Device Management (MDM) customers.
 
