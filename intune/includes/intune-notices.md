@@ -80,8 +80,8 @@ We're updating the way Intune writes email profiles for Windows 10 in the April 
 
 #### How does this affect me?
 This change impacts you if you use Windows 10 email profiles with
-- The nativeMail client on Windows 10 desktops OR
-- The Outlookemail client on Windows 10 Mobile
+- The native Mail client on Windows 10 desktops OR
+- The Outlook email client on Windows 10 Mobile
 
 This impacts both Intune standalone and hybrid Mobile Device Management (MDM) customers.
 
@@ -108,3 +108,4 @@ You may need to notify your end users and let your helpdesk know of this change.
 
 #### Additional Information
 https://aka.ms/Win10EmailProfiles
+
