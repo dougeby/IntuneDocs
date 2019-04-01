@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 To assist in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition:
 
-- If we anticipate that you'll need to take action prior to a change, we’ll publish a complimentary Office Message Center post.
+- If we anticipate that you'll need to take action prior to a change, we’ll publish a complementary Office Message Center post.
 - When a feature is launched in production, either as a preview or generally available, the feature description will move off this page and onto the [What's New page](whats-new.md).
 - This page and the [What's New page](whats-new.md) are updated periodically. Check back for additional updates.
 - Refer to the [M365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) for strategic deliverables and timelines.
