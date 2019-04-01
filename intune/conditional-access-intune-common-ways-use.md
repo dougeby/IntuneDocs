@@ -83,7 +83,7 @@ If the EAS record is brand new, and Intune is not aware of it, Intune issues a c
 
 1.  User tries to access corporate email, which is hosted on Exchange on-premises 2010 SP1 or later.
 
-2.  If the device is not managed by Intune, acces to email will be blocked. Intune sends a block notification to the EAS client.
+2.  If the device is not managed by Intune, access to email will be blocked. Intune sends a block notification to the EAS client.
 
 3.  EAS receives the block notification, moves the device to quarantine, and sends the quarantine email with remediation steps that contain links so the users can enroll their devices.
 
