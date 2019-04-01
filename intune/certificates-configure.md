@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -117,7 +117,8 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 
 The profile is created and appears on the list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
-Android devices may display a message that a third party has installed a trusted certificate.
+   >[!NOTE]
+   > Android devices may display a message that a third party has installed a trusted certificate.
 
 ## Step 4: Create SCEP or PKCS certificate profiles
 
