@@ -67,7 +67,7 @@ The Power BI Compliance app contains information for your tenant and a set of pr
 
 ### Add additional filters to the Intune Compliance app
 
-If you would like to use additional filters for your Power BI reports, use the followin steps:
+If you would like to use additional filters for your Power BI reports, use the following steps:
 
 1. Open the [Power BI Compliance](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app in your web browser.
 2. Click **Non-Compliant Devices** and select **Non-Compliant** in the **complianceStatus** filter. 
