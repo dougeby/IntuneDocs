@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune mobile device management migration guide
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This guide walks you through the various details involved in migrating from a third-party MDM provider to Microsoft Intune.
 keywords:
 author: dougeby

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prevent data leaks on non-managed devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Allow access to corporate data on devices and protect data from data leaks using Microsoft Intune. 
 keywords: data protection prevent leaks device O365 Office 365
 ms.author: dougeby

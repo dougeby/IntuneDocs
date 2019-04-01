@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Add iOS store apps to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn about adding iOS store apps to Microsoft Intune. You can assign apps using this method if the apps are free of charge in the App Store.
 keywords: Intune
 author: Erikre

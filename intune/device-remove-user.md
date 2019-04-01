@@ -2,7 +2,7 @@
 # required metadata
 
 title: Remove a user from an iOS device with Microsoft Intune 
-titlesuffix:
+titleSuffix:
 description: Learn how to remove a user from a shared iOS device with Intune.
 keywords:
 author: ErikjeMS

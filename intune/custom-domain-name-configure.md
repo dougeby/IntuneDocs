@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a custom domain name
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Add a custom domain name for your Microsoft Intune subscription
 keywords:
 author: dougeby

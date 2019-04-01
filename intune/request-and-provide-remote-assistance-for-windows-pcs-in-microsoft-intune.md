@@ -2,7 +2,7 @@
 # required metadata
 
 title: Request and provide remote assistance for Windows PCs 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Describes end-user and IT admin steps needed for remote assistance for Windows desktops that are being managed as PCs, and steps for remotely starting a PC.
 keywords:
 author: dougeby

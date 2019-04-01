@@ -2,7 +2,7 @@
 # required metadata
 
 title: Common Windows PC management tasks 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn ways that you can manage Windows PCs that run the Intune software client.
 keywords:
 author: dougeby

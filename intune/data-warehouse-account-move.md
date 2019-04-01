@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Move your Intune Data Warehouse account data  
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Understand how to back up your Intune Data Warehouse data when moving your account.
 keywords: 
 author: Erikre

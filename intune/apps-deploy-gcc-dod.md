@@ -1,6 +1,6 @@
 ---
 title: Apps for GCC High and DoD environments
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn about apps involving GCC High and DoD environments using Microsoft Intune.
 keywords:
 author: Erikre

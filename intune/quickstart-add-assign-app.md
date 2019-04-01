@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quickstart - Add and assign a client app
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to add and assign a client app.
 keywords:
 author: Erikre

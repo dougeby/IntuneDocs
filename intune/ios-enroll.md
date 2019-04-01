@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll iOS devices in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Set up enrollment of iOS devices in Microsoft Intune.
 keywords:
 author: ErikjeMS

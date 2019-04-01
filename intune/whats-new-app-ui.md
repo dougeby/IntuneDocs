@@ -2,7 +2,7 @@
 # required metadata
 
 title: UI updates for Intune end-user apps
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Find out what has changed in UI for apps that work on end-user devices with Microsoft Intune.
 keywords:
 author: lenewsad

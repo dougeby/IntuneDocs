@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -100,6 +100,9 @@ Use the **Dock** settings to add up to six items or folders to the dock of the i
 
       3. Choose **Add**. You can add up to **20** pages for the device dock.
       4. Select **OK** to save your changes.
+
+> [!NOTE]
+> When you add icons using the Dock settings, the icons on the Home Screen and pages are locked, and can’t be moved. This may be by design with iOS and Apple’s MDM policies.
 
 #### Example
 
