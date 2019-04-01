@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new in Microsoft Intune - Azure | Microsoft Docs
-titlesuffix:
+titleSuffix:
 description: Find out what's new in the Intune Azure portal
 keywords:
 author: ErikjeMS  
@@ -49,6 +49,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->     
 
 <!-- ########################## -->
+## Week of March 25, 2019
+
+### Monitor and troubleshoot
+
+### Support for the Power BI Compliance app from the Data Warehouse blade in Microsoft Intune <!-- 4260871 -->
+Previously, the **Download Power BI file** link in the **Intune Data Warehouse** blade downloaded an Intune Data Warehouse report (.pbix file). This report has been replaced with the Power BI Compliance app. The Power BI Compliance app will not require special loading or setup. It will open directly in the Power BI online portal and display data specifically for your Intune tenant based on your credentials. In Intune, select the **Set up Intune Data Warehouse** link on the right side of the Intune blade. Then, click **Get Power BI App**. For more information, see [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
+
 ## Week of March 18, 2019
 
 ### App management

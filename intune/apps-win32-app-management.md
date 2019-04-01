@@ -1,6 +1,6 @@
 ---
 title: Add Win32 apps to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn how to add, deliver, and manage Win32 apps with Microsoft Intune. This topic provides an overview of the Intune Win32 app delivery and management capabilities, as well as Win32 app troubleshooting information. 
 keywords:
 author: Erikre

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get an Apple MDM Push certificate for Intune
-titlesuffix: 
+titleSuffix: 
 description: Get an Apple MDM Push certificate to manage iOS devices with Intune.
 keywords:
 author: ErikjeMS 

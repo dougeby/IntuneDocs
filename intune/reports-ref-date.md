@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Date - Intune Data Warehouse
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: Reference topic for the Date category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre

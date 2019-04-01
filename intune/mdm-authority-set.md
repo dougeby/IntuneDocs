@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set the mobile device management authority
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Set the mobile device management authority in Intune.
 keywords:
 author: ErikjeMS

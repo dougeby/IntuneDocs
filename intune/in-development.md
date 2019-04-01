@@ -2,7 +2,7 @@
 # required metadata
 
 title: In development - Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Microsoft Intune features in development
 keywords:
 author: ErikjeMS 

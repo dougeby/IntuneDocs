@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install Office 365 to macOS devices using Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn how you can use Microsoft Intune to install Office 365 apps on macOS devices.
 keywords:
 author: Erikre

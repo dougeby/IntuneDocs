@@ -1,6 +1,6 @@
 ---
 title: Benefits of Intune App SDK 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: The Intune App SDK is available for both the iOS and Android platforms, and enables mobile app management features with Microsoft Intune.
 keywords:
 author: Erikre

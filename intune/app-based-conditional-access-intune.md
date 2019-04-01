@@ -2,7 +2,7 @@
 # required metadata
 
 title: App-based conditional access with Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how app-based conditional access works with Intune.
 keywords:
 author: brenduns

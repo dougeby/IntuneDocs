@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quickstart - Send notifications to noncompliant devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to send email notifications to noncompliant devices.
 keywords:
 author: Erikre

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Android Enterprise work profile devices in Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Microsoft Intune manages Android Enterprise work profile devices to provide additional management capabilities and privacy when people use their personal Android devices for work.
 keywords:
 author: ErikjeMS 

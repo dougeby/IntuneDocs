@@ -2,7 +2,7 @@
 # required metadata
 
 title: Endpoint Protection for Windows PCs
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Secure your managed computers with Endpoint Protection, which provides real-time protection against malware threats.
 keywords:
 author: dougeby

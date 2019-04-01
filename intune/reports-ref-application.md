@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Reference for Application entities
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Reference topic for the Application category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage volume-purchased apps and books with Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description:  Learn about how you can use Microsoft Intune to manage and monitor your use of volume-purchased apps and books from stores."
 keywords:
 author: Erikre

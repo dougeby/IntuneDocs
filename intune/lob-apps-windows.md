@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a Windows line-of-business app to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn how to add a Windows line-of-business (LOB) app using Microsoft Intune.
 keywords:
 author: Erikre
