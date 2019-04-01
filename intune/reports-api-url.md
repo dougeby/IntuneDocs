@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Intune Data Warehouse API endpoint
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: This reference topic describes the Microsoft Intune Data Warehouse API URL structure. Filter examples are provided.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -54,7 +54,7 @@ The URL contains the following elements:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | The base URL can be found by viewing the Data Warehouse API blade in the Azure portal. |
 | entity-collection | dates | The name of the OData entity collection. For more information on collections and entities in the data model, see [Data Model](reports-ref-data-model.md). |
-| api-version | beta | Version is the version of the API to access. For more information, see [Version](#API-version-information). |
+| api-version | beta | Version is the version of the API to access. For more information, see [Version](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (Optional) The maximum number of days of history to retrieve. This parameter can be supplied to any collection, but will only take effect for collections that include `dateKey` as a part of their key property. See [DateKey Range Filters](reports-api-url.md#datekey-range-filters) for more information. |
 
 ## API version information

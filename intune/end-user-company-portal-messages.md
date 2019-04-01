@@ -2,7 +2,7 @@
 # required metadata
 
 title: Company Portal messages users may see on devices 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Understand the different messages that end users may see in the Company Portal.
 keywords:
 author: lenewsad

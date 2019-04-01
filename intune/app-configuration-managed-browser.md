@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage web access with a policy-protected browser 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use a policy-protected browser to restrict web browsing and web data transferring.
 keywords:
 author: Erikre

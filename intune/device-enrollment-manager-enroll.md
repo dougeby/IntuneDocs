@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll devices using a device enrollment manager account
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Use the device enrollment manager account to enroll devices in Intune.
 keywords:
 author: ErikjeMS

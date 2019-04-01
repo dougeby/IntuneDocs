@@ -2,7 +2,7 @@
 # required metadata
 
 title: Develop a support plan
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps you develop an Intune support plan for a Microsoft Intune deployment.
 keywords:
 author: dougeby

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add groups to organize users and devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Add groups to organize users and devices by geography, department, or hardware specifics.
 keywords:
 author: ErikjeMS

@@ -2,7 +2,7 @@
 # required metadata
 
 title: App configuration policies for Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn how to use app configuration policies on an iOS or Android device in Microsoft Intune.
 keywords:
 author: Erikre

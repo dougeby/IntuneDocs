@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quickstart - Create and assign an app protection policy
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to create and assign and app protection policy.
 keywords:
 author: Erikre

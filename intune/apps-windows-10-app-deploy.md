@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 10 app deployment using Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn about Windows 10 app deployment scenarios available with Microsoft Intune.
 keywords:
 author: Erikre

@@ -1,6 +1,6 @@
 ---
 title: Help desk troubleshooting portal
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Help desk staff use the troubleshooting portal to solve users' technical problems.
 keywords:
 author: dougeby

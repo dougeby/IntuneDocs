@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set enrollment restrictions in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Restrict enrollment by platform and set a device enrollment limit in Intune.
 keywords:
 author: ErikjeMS

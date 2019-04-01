@@ -1,7 +1,7 @@
 ---
 # required metadata
 title:  Intune Date Warehouse API
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: You can use the Intune Date Warehouse API to build reports that provide insight into your enterprise mobile environment.
 keywords: Intune Data Warehouse
 author: Erikre

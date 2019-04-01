@@ -2,7 +2,7 @@
 # required metadata
 
 title: Start an Intune migration campaign
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article provides guidance for how to start a Microsoft Intune migration campaign.
 keywords:
 author: dougeby

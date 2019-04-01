@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up app based conditional access policy with Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to create an app-based conditional access policy with Intune.
 keywords:
 author: brenduns
