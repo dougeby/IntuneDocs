@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -65,6 +65,9 @@ For more information on this feature in Intune, see [Control access, accounts, a
 - **Education policies**: Choose **Enabled** to use the recommended settings for devices used in schools, which are more restrictive. Choose **Disabled** so the default and recommended education policies aren't used. **Not configured** (default) leaves this setting unmanaged by Intune, and doesn't push any policy to control this setting on a device.
 
   For more information on what the education policies do, see [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education).
+
+> [!TIP]
+> [Set up a shared or guest PC](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc) (opens another docs web site) is a great resource on this Windows 10 feature, including concepts and group policies that can be set in shared mode.
 
 ## Next steps
 
