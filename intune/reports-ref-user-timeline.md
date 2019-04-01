@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Data Warehouse User Entity Timeline
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: Learn how the Microsoft Intune Data Warehouse represents Users in a timeline.
 keywords: Intune Data Warehouse
 author: Erikre

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add app configuration policies for managed Android devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android work profile app.
 keywords:
 author: Erikre

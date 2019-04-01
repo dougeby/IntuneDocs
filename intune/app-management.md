@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is app management in Microsoft Intune?
-titlesuffix:
+titleSuffix:
 description: Learn about client app management capabilities by platform for Microsoft Intune.
 keywords:
 author: Erikre

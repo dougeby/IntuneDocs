@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tutorial - Protect Exchange Online email on unmanaged devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn to secure Office 365 Exchange Online with Intune app protection policies and Azure AD conditional access.
 keywords:
 author: brenduns

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title:  Intune Date Warehouse Collections
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: The Intune Data Warehouse collections provide details related to the Data Warehouse API.
 keywords: 
 author: Erikre

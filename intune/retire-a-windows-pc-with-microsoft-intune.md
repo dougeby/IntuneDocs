@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retire a Windows PC 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: How to retire an Intune-managed Windows PC.
 keywords:
 author: dougeby

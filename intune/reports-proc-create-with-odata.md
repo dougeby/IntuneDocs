@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Create a report from the OData feed with Power BI
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Create a treemap visualization using Power BI Desktop with an interactive filter from the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre

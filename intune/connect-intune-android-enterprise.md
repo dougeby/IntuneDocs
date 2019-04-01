@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connect your Intune account to your Managed Google Play account.
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to connect your Intune account to your Managed Google Play account.
 keywords:
 author: ErikjeMS 

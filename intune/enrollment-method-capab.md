@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune enrollment method capabilities for Windows devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Capabilities for each enrollment method for Windows devices.
 keywords:
 author: ErikjeMS

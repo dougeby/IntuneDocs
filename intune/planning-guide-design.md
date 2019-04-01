@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create your Microsoft Intune design
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
 author: dougeby

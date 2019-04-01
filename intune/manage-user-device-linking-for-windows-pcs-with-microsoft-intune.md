@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage user-device linking for Windows PCs 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: How to link a user to an Intune-managed Windows PC.
 keywords:
 author: dougeby

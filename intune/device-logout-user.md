@@ -2,7 +2,7 @@
 # required metadata
 
 title: Log out the user of an iOS device 
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to log out the current user of an iOS device with Intune."
 keywords:
 author: ErikjeMS

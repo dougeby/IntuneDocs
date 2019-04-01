@@ -1,6 +1,6 @@
 ---
 title: Supported Microsoft Intune apps
-titlesuffix:
+titleSuffix:
 description: This topic provides lists of support partner and Microsoft apps that are commonly used with Microsoft Intune. 
 keywords:
 author: Erikre
