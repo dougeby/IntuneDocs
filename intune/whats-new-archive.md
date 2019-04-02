@@ -1280,7 +1280,7 @@ The **SafetyNet device attestation** setting requires the device to connect with
 healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that
 installed apps are verified by Google Play services. If a device is not compliant with Google Play Protect requirements, conditional access might block users from accessing corporate resources.
 
-- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-android).
 
 ### Text protocol allowed from managed Apps <!-- 1414050  -->
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -30,11 +30,14 @@ ms.collection: M365-identity-device-management
 
 # Add a device compliance policy for Android devices in Intune
 
-An Intune device compliance policy for Android specifies the rules and settings that Android devices must meet to be considered compliant. You can use these policies with [conditional access](conditional-access.md) to allow or block access to organiational resources. You can also get device reports and take actions for non-compliance. 
+Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that Android devices must meet to be considered compliant, such as a minimum OS version. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md).
 
-To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
+This feature applies to:  
+- Android
 
-This topic lists the settings you can use within a compliance policy for Android devices.
+You can also get device reports, and take actions for non-compliance, such as sending a notification email to the user. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
+
+This article lists the settings you can use within a compliance policy for devices running Android.
 
 ## Non-compliance and conditional access
 
@@ -56,7 +59,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 **Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
 
-**Quarantined** = The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device is not compliant, the following actions take place:
+**Quarantined** = The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
 
   - The device is blocked if a conditional access policy applies to the user.
   - The company portal notifies the user about any compliance problems.
@@ -75,6 +78,9 @@ The following table describes how noncompliant settings are managed when a compl
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+
+### Google Play protect
+
 - **Google Play Services is configured**: **Require** that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Up-to-date security provider**: **Require** that an up-to-date security provider can protect a device from known vulnerabilities. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Threat scan on apps**: **Require** that the Android **Verify Apps** feature is enabled. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
@@ -86,6 +92,9 @@ The following table describes how noncompliant settings are managed when a compl
   - **Not configured** (default): Setting isn't evaluated for compliance or non-compliance.
   - **Check basic integrity**
   - **Check basic integrity & certified devices**
+
+> [!NOTE]
+> To configure Google Play Protect settings using app protection policies, see [Intune App Protection Policy settings](app-protection-policy-settings-android#conditional-launch.md) on Android.
 
 ## Device property settings
 
@@ -159,7 +168,7 @@ For example, you're using the Locations feature, and add a location in a complia
 
 ## Scope tags
 
-Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add a scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
+Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
 
 ## Assign user groups
 
@@ -172,6 +181,7 @@ Once a policy is created, it's not doing anything until you assign the policy. T
 You've applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
 
 ## Next steps
+
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
 [Compliance policy settings for Android Enterprise](compliance-policy-create-android-for-work.md)
