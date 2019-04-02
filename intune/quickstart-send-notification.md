@@ -87,7 +87,7 @@ The following steps will create a compliance policy for Windows 10 devices.
 5. Set **Require a password to unlock mobile devices** to **Require**. This setting specifies whether to require users to enter a password before access is granted to information on their mobile devices. 
 6. Set **Minimum password length** to **6**. This setting specifies the minimum number of digits or characters in the password.
 
-    ![System Security settings for a new compliance policy](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Click **OK**, **OK**, and **Create** to create your compliance policy.
 8. Select **Properties** > **Action for noncompliance** > **Add**.

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -198,7 +198,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 #### Safari
 
-- **Safari**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
+- **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
 - **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
 - **Cookies**: Choose how cookies are handled on the device. Your options:
   - Allow
@@ -293,7 +293,7 @@ To add apps to these lists, you can:
 ## Cloud and Storage
 
 - **Backup to iCloud**: **Not configured** allows the user to back up the device to iCloud. **Block** stops the user from backing up the device to iCloud.
-- **Block iCloud Document sync**: **Not configured** allows document and key-value synchronization to your iCloud storage space. **Block** prevents iCloud from syncing documents and data.
+- **Block iCloud Document sync (supervised only)**: **Not configured** allows document and key-value synchronization to your iCloud storage space. **Block** prevents iCloud from syncing documents and data.
 - **Photo stream syncing to iCloud**: **Not configured** lets users enable **My Photo Stream** on their device to sync to iCloud, and have photos available on all the user's devices. **Block** prevents photo stream syncing to iCloud.
 - **Encrypted backup**: **Require** so device backups must be encrypted.
 - **iCloud Photo Library**: Set to **Block** to disable using iCloud photo library to store photos and videos in the cloud. Any photos not fully downloaded from iCloud Photo Library to the device are removed from the device. **Not configured** allows using the iCloud photo library.
