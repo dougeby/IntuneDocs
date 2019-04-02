@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,10 @@ ms.collection: M365-identity-device-management
 
 # Add a device compliance policy for Android Enterprise devices in Intune
 
-Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a password length. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md). 
+Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that Android Enterprise devices must meet to be considered compliant, such as a password length. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md).
+
+This feature applies to:  
+- Android Enterprise
 
 You can also get device reports, and take actions for non-compliance, such as sending a notification email to the user. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
 
@@ -73,6 +76,9 @@ The following table describes how noncompliant settings are managed when a compl
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
   - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+
+### Google Play protect
+
 - **Google Play Services is configured**: **Require** that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Up-to-date security provider**: **Require** that an up-to-date security provider can protect a device from known vulnerabilities. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
@@ -80,9 +86,8 @@ The following table describes how noncompliant settings are managed when a compl
   - **Check basic integrity**
   - **Check basic integrity & certified devices**
 
-#### Threat scan on apps
-
-On Android Enterprise devices, the **Threat scan on apps** setting is a configuration policy. See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+> [!NOTE]
+> On Android Enterprise devices, **Threat scan on apps** is a device configuration policy. Using a configuration policy, administrators can enable the setting on a device. See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
 
 ## Device properties settings
 
@@ -152,7 +157,7 @@ You can change the schedule when the device is marked non-compliant, such as aft
 
 ## Scope tags
 
-Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add a scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
+Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
 
 ## Assign user groups
 
@@ -165,6 +170,7 @@ Once a policy is created, it's not doing anything until you assign the policy. T
 You've applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
 
 ## Next steps
+
 [Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
 [Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
 [Compliance policy settings for Android](compliance-policy-create-android.md)
