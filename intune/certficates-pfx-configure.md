@@ -252,7 +252,7 @@ Updates for the two certificate connectors are released periodically. When we up
 
 The *PFX Certificates Connector* [supports automatic updates](#requirements), while the Intune Certificate Connector is updated manually.
  
-### April 4, 2019
+### April 2, 2019
 - **NDES Certificate Connector - version 6.1904.1.0**  
   Changes in this release:  
   - Fixed an issue where the connector might fail to enroll to Intune after signing in to the connector with a global administrator account.  
