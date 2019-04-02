@@ -52,7 +52,7 @@ You will create a group that will be used later in this quickstart series. To cr
 
 1. Once you've opened the **Microsoft Intune** pane, select **Groups** > **New group**.
 2. In the **Group type** dropdown box, select **Security**.
-3. In the **Group name** field, enter the name for the new group for example, **Contoso Testers**
+3. In the **Group name** field, enter the name for the new group for example, **Contoso Testers**.
 4. Add a **Description** for the group.
 5. Set the **Membership type** to **Assigned**. 
 6. Click **Members** and select one or more members for the group from the list.
