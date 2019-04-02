@@ -2,13 +2,13 @@
 # required metadata
 
 title: Quickstart - Create an email device profile for iOS
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to use Microsoft Intune to create an email device profile so iOS devices can securely connect to company email.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -37,7 +37,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. Intune is located in the Azure portal by choosing **All services** > **Intune**.
+Sign in to the [Intune](https://aka.ms/intuneportal) as a Global Administrator or an Intune Service Administrator. If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create an iOS email profile
 1. In Intune, select **Device configuration**, and then select **Profiles**.

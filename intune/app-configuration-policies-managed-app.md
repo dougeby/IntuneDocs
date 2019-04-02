@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration policies for managed apps without device enrollment
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to configure policies for managed apps without device enrollment.
 keywords:
 author: Erikre

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Data Warehouse data model
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: The Microsoft Intune Data Warehouse samples data daily to provide a historical view of your continually changing mobile environment.
 keywords: Intune Data Warehouse
 author: Erikre

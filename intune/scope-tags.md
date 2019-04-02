@@ -27,9 +27,9 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Use RBAC and scope tags for distributed IT
+# Use role-based access control (RBAC) and scope tags for distributed IT
 
-You can use role-based access control (RBAC) and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
+You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
 For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do this, you would:
 
@@ -89,9 +89,13 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 4. Choose **Select** > **OK** > **Save**.
 
 ## To assign a scope tag to an app configuration policy
-For devices with **Device enrollment type** set to **Managed devices**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Properties** > **Scope (Tags)** > choose the tags you want to assign to the policy.
+For devices with **Device enrollment type** set to **Managed devices**:
+1. Choose **Client apps** > **App configuration policies** > choose an app configuration policy.
+2. Choose **Properties** > **Scope (Tags)** > choose the tags you want to assign to the policy.
 
-For devices with **Device enrollment type** set to **Managed apps**, choose **Client apps** > **App configuration policies** > choose an app configuration policy > **Scope (Tags)** > choose the tags you want to assign to the policy.
+For devices with **Device enrollment type** set to **Managed apps**:
+1. Choose **Client apps** > **App configuration policies** > choose an app configuration policy.
+2. Choose **Scope (Tags)** > choose the tags you want to assign to the policy.
 
 
 ## To assign a scope tag to an iOS app provisioning profile
@@ -112,20 +116,13 @@ When working with scope tags, remember these details:
     - App configuration policies – managed devices
     - Powershell scripts
     - DEP tokens
+    - iOS app provisioning profile
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
 - You can only assign a scope tag that you have in your role assignments.
 - You can only target groups that are listed in the Scope (Groups) of your role assignment.
 - If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
-- If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:
-    - Assign permissions only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions don’t apply to objects in other role assignments unless the other assignment specifically grants them.
-    - Other permissions (such as Create and Read), apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
-    - Permissions for objects of different types (like policies or apps), don’t apply to each other. A Read permission for a policy, for example, doesn’t provide a Read permission to apps in the user’s assignments.
-
-
-
-
 
 ## Next steps
 

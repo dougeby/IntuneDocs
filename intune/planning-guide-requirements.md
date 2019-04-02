@@ -2,7 +2,7 @@
 # required metadata
 
 title: Determine use-case scenario requirements
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps you determine Intune use-case, and sub-use-case scenario requirements for an Microsoft Intune cloud-only implementation.
 keywords:
 author: dougeby

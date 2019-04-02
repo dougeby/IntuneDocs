@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: User - Intune Data Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Reference topic for the User category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre

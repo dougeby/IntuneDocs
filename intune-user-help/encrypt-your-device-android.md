@@ -29,11 +29,13 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Encrypt your Android device
+# Encrypting your Android device
 
 Device encryption protects your files and folders from unauthorized access if your device is lost or stolen. After you turn on device encryption, only individuals with the correct password or pin will be able to sign in to your device. 
 
 Before you can access school or work resources, your organization might require you to encrypt your Android device. Some newer Android devices are encrypted by default, out-of-the-box.  
+
+## Turn on encryption
 
 If you receive a message in Company Portal that you need to encrypt your device, complete the following steps. 
 

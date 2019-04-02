@@ -153,6 +153,10 @@
       items:
       - name: Role-based access control
         href: role-based-access-control.md
+      - name: Assign a role to a user
+        href: assign-role.md
+      - name: Create a custom role
+        href: create-custom-role.md
       - name: Use scope tags
         href: scope-tags.md
   - name: Enroll devices
@@ -180,6 +184,8 @@
         href: device-group-mapping.md
     - name: Set up Windows enrollment
       items:
+      - name: Windows enrollment methods
+        href: windows-enrollment-methods.md
       - name: Enrollment method capabilities
         href: enrollment-method-capab.md
       - name: Windows enrollment
@@ -388,8 +394,6 @@
         href: app-based-conditional-access-intune-create.md
       - name: ADAL and Intune
         href: app-modern-authentication-block.md
-      - name: Monitor conditional access compliance
-        href: conditional-access-exchange-monitor.md
       - name: Integrate Jamf Pro with Intune for compliance
         href: conditional-access-integrate-jamf.md
       - name: Enforce compliance on Macs managed with Jamf Pro

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: User Device Association - Intune Data Warehouse
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: The UserDeviceAssociation entity contains user device associations in your organization.
 keywords: Intune Data Warehouse
 author: Erikre
