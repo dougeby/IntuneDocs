@@ -76,7 +76,7 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 
     ![Select Access work school account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Sign in to Intune with your work or school account, and then select **Next**. If you followed the [create a user and assign a license](quickstart-quickstart-create-user.md) quickstart, you can sign in with the user account that you created.
+3. Sign in to Intune with your work or school account, and then select **Next**. If you followed the [create a user and assign a license](quickstart-create-user.md) quickstart, you can sign in with the user account that you created.
 
     > [!NOTE]
     > If you setting up an ".onmicrosoft.com", the user account will have **.onmicrosoft.com** as part of the account address. 
