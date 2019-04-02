@@ -94,7 +94,7 @@ The following table describes how noncompliant settings are managed when a compl
   - **Check basic integrity & certified devices**
 
 > [!NOTE]
-> To configure Google Play Protect settings using app protection policies, see [Intune App Protection Policy settings](app-protection-policy-settings-android#conditional-launch.md) on Android.
+> To configure Google Play Protect settings using app protection policies, see [Intune app protection policy settings](app-protection-policy-settings-android.md#conditional-launch) on Android.
 
 ## Device property settings
 
