@@ -71,7 +71,7 @@ Trying out Intune is free for 30 days. If you already have a work or school acco
 
     ![Image of the Azure portal sign-in page](./media/azure-portal-signin.png)
 
-3. To view Microsoft Intune in the Azure port, select **All services** from the sidebar on the left side of the page.
+3. To view Microsoft Intune in the Azure portal, select **All services** from the sidebar on the left side of the page.
 4. Search for **Microsoft Intune** in the filter box and select it.
 5. Select the **star** to add Intune to the bottom of the list of your favorite services and open the Intune dashboard.
 
@@ -101,7 +101,7 @@ For more information about the MDM authority, see [Set the mobile device managem
 
 ## Configure your custom domain name (Optional)
 
-As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Microsoft 365 admin center. You can add, verify and configure your custom domain name using the following steps.  
+As mentioned above, if your organization has its own custom domain that you want to use without **.onmicrosoft.com**, you can change it in the Microsoft 365 admin center. You can add, verify, and configure your custom domain name using the following steps.  
 
 > [!IMPORTANT]
 > You cannot rename or remove the *initial* **onmicrosoft.com** part of the domain name. However, you can add, verify or remove *custom* domain names used with Intune to keep your business identity clear. For more information, see [Configure a custom domain name](custom-domain-name-configure.md).
@@ -114,7 +114,7 @@ As mentioned above, if your organization has its own custom domain that you want
 
    ![Screenshot of Microsoft 365 admin center - Add domain](./media/domain-custom-add.png)
 
-4. Verify that you are the owner of the domain that you entered in the previous. 
+4. Verify that you are the owner of the domain that you entered in the previous step. 
     
     Selecting **send code via email** will send an email to the registered contact of your domain. After you receive the email, copy the code and enter it in the field labeled **Type your verification code here**. If the verification code matches, the domain will be added to your tenant. The email displayed may not look familiar. Some registrars hide the real email address. Also, the email address may be different then what was provided when the domain was registered.
 
@@ -127,7 +127,7 @@ As mentioned above, if your organization has its own custom domain that you want
 
 There are two portals that you might use:
 - The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
-- The Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com)) is where you can add and manage users, if you are not using Azure Active Directory for that. You can also manage other aspects of your account, including billing and support.
+- The Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com)) is where you can add and manage users, if you are not using Azure Active Directory for this. You can also manage other aspects of your account, including billing and support.
 
 ## Next steps
 
