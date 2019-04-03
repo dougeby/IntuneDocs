@@ -32,11 +32,11 @@ ms.collection: M365-identity-device-management
 
 View the Windows 10 Update settings you can [configure and manage](windows-update-for-business-configure.md) with Microsoft Intune.  
 
-When you configure settings for Windows 10 update rings in Intune, you're configuring the Windows Update settings.  When a Windows update setting has a Windows 10 version dependency, the version dependency is noted in the settings details.  
+When you configure settings for Windows 10 update rings in Intune, you're configuring the Windows Update settings. If a Windows update setting has a Windows 10 version dependency, the version dependency is noted in the settings details.  
 
 ## Update settings  
 
-Update settings control what bits a device will download, and when. Refer to the Windows reference documentation for more information about the behavior of each setting.  
+Update settings control what bits a device will download, and when. For more information about the behavior of each setting, see the Windows reference documentation.  
 
 ### Servicing channel  
 
@@ -44,7 +44,7 @@ Update settings control what bits a device will download, and when. Refer to the
 - **Windows reference documentation**: [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
 Set the channel (branch) from which the device receives Windows updates. Different channels can use different deferral periods before updates are delivered.  
 
-For example, the *Semi-Annual Channel* has a six-month deferral. This means if you use this channel with no additional deferrals from this body of settings, the device installs the update six-months after its release.  
+For example, the *Semi-Annual Channel* has a six-month deferral. If you use this channel with no additional deferrals from this body of settings, the device installs the update six-months after its release.  
 
 Supported update channels:  
 
@@ -107,12 +107,12 @@ Configure a time after which feature updates can't be uninstalled.
 
 After this period expires, the previous update bits are removed from the device, and it can no longer uninstall to a previous update version.  
 
-For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they've removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command prior to exceeding the 20-day uninstall period.  
+For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they've removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command before exceeding the 20-day uninstall period.  
 
 
 ## User experience settings  
 
-User experience settings control the end-user experience for device restart and reminders. Refer to the Windows reference documentation for more information about the behavior of each setting.  
+User experience settings control the end-user experience for device restart and reminders. For more information about the behavior of each setting, see the Windows reference documentation.  
 
 ### Automatic update behavior  
 
@@ -121,11 +121,11 @@ User experience settings control the end-user experience for device restart and 
 
 Choose how automatic updates are installed, and if necessary, when to restart the device.  
 
-Refer to the Windows reference documentation for full disclose of the following supported options:  
+Refer to the Windows reference documentation for full disclosure of the following supported options:  
 
 - **Notify download** – Notify the user before downloading the update. Users choose to download and install updates.  
 
-- **Auto install at maintenance time** – Updates download automatically and then install during Automatic Maintenance when the device is not in use or running on battery power. When restart is required, users are prompted to restart for up to seven days, and then restart is forced.  
+- **Auto install at maintenance time** – Updates download automatically and then install during Automatic Maintenance when the device isn't in use or running on battery power. When restart is required, users are prompted to restart for up to seven days, and then restart is forced.  
 
   This option can restart a device automatically after the update installs. Use the **Active hours** settings to define a period during which the automatic restarts are blocked:  
 
@@ -139,7 +139,7 @@ Refer to the Windows reference documentation for full disclose of the following 
 
 - **Auto install and restart at maintenance time** - Updates download automatically and then install during Automatic Maintenance when the device isn't in use or running on battery power. When restart is required, the device restarts when not being used. (This is the default for unmanaged devices.)  
 
-  This option can restart a device automatically after the update installs. Use of the **Active hours** settings are not described in Windows Update settings but are used by Intune to define a period during which the automatic restarts are blocked:  
+  This option can restart a device automatically after the update installs. Use of the **Active hours** settings aren't described in Windows Update settings but are used by Intune to define a period during which the automatic restarts are blocked:  
 
   - **Active hours start**: Specify a start time for suppressing restarts due to update installations.  
     **Windows reference documentation**:  [Update/ActiveHoursStart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
@@ -176,7 +176,7 @@ Refer to the Windows reference documentation for full disclose of the following 
 This setting has different results depending on the devices version of Windows:  
 
 - Windows version 1703 and earlier: When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.  
-- Beginning with Windows version 1709: During Active Hours, the following processes do not run for updates: scan, download, install, and reboot. After Active Hours, the update processes do run and can wake the device from sleep, scan, download, install, and reboot the device as long as the battery checks and power checks pass. For more information, see [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
+- Beginning with Windows version 1709: During Active Hours, the following processes don't run for updates: scan, download, install, and reboot. After Active Hours, the update processes do run and can wake the device from sleep, scan, download, install, and reboot the device as long as the battery checks and power checks pass. For more information, see [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
 
 ### Block user from pausing Windows updates  
 
@@ -190,18 +190,18 @@ Allow or block a device user from pausing the installation of an update.
 - **Default**: Not configured  
 - **Windows reference documentation**: [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
   
-Select *Required* to require that a user approve a device restart outside of work hours.  
+Select *Required* to require that a user approves a device restart outside of work hours.  
    
 ### Remind user prior to required auto-restart with dismissible reminder (hours)  
 
-- **Default**: *This is not configured by default, and no reminder is presented to users*.  
+- **Default**: *This setting isn't configured by default, and no reminder is presented to users*.  
 - **Windows reference documentation**: [Update/ScheduleRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
 
 Specify how long in advance of an automatic restart to display a dismissible notification to a device user about that restart. Values of **2**, **4**, **8**, **12**, or **24** hours are supported.  
 
 ### Remind user prior to required auto-restart with permanent reminder (minutes)  
 
-- **Default**: *This is not configured by default, and no reminder is presented to users*.  
+- **Default**: *This setting isn't configured by default, and no reminder is presented to users*.  
 - **Windows reference documentation**: [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
 
 Specify how long in advance of an automatic restart to display a non-dismissible warning to a device user about that restart. Values of **15**, **30** or **60** minutes are supported.  
@@ -222,19 +222,19 @@ For more information about this option, see [Engaged restart](https://docs.micro
 The following settings are used to control when engaged restart actions occur.  
 
 - **Transition users to engaged restart after an auto-restart (days)**  
-  - **Default**:  By default, this is not configured but supports a value from **2** to **30**.  
+  - **Default**:  By default, this isn't configured but supports a value from **2** to **30**.  
   - **Windows reference documentation**: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
   Specify how long after the update installs until the device enters the engaged restart behavior. After the configured number of days, users receive a prompt to restart the device.  
 
 - **Snooze engaged restart reminder (days)**  
-  - **Default**:  By default, this is not configured but supports a value from **1** to **3**.  
+  - **Default**:  By default, this setting isn't configured but supports a value from **1** to **3**.  
   - **Windows reference documentation**: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
   Specify for how long a restart prompt can be snoozed.  After the snooze period, the restart prompt is offered again. The user can continue to snooze the reminder until the installation deadline is reached.  
 
 - **Set deadline for pending restarts (days)**  
-  - **Default**:  By default, this is not configured but supports a value from **2** to **30**.  
+  - **Default**:  By default, this setting isn't configured but supports a value from **2** to **30**.  
   - **Windows reference documentation**: [Update/EngagedRestartDeadline](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  Specify a maximum number of days to wait after the engaged restart behavior begins before a device enforces a required restart. This restart will prompt users to save their work
+  Specify a maximum number of days to wait after the engaged restart behavior begins before a device enforces a required restart. This restart will prompt users to save their work.
 
 ### Block user from scanning for Windows updates  
 > [!TIP]  
@@ -246,11 +246,11 @@ Supported values for this setting:
 - *Block* (1)
 - *Allow* (0)
 
-For example, if you configure a value of 1 (block), you enable this policy. When enabled, users cannot access the Windows Update scan, download, and install features. 
+For example, if you configure a value of 1 (block), you enable this policy. When enabled, users can't access the Windows Update scan, download, and install features. 
 
 ### Delivery optimization download mode  
 
-Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they cannot otherwise be modified. 
+Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they can't otherwise be modified. 
 
 To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile.
 
