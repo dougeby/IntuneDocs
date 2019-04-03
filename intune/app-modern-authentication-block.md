@@ -35,17 +35,12 @@ ms.collection: M365-identity-device-management
 
 App-based conditional access with app protection policies rely on applications using [modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a), which is an implementation of OAuth2. Most current Office mobile and desktop applications use modern authentication. However, there are third-party apps and older Office apps that user other authentication methods, like basic authentication, and forms-based authentication.
 
-## Block apps
-
-To block access to apps that do not use modern authentication, we recommend the following methods:
-
-- Use Intune app protection policies to implement condition access. For more information, see [App-based conditional access with Intune](app-based-conditional-access-intune.md).
+To block access to apps that do not use modern authentication, use Intune app protection policies to implement condition access. For more information, see [App-based conditional access with Intune](app-based-conditional-access-intune.md).
 
 For more information about Azure AD Conditional Access, see the following:
 - [What is conditional access in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 - [How app-based conditional access works](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
 - [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
-- 
 
 ## Next steps
 
