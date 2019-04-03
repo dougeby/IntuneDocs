@@ -76,7 +76,7 @@ The following are typical settings to use for a proxy server that caches content
 For information about using a proxy server to cache content, see the documentation for your proxy server solution.
 
 ### Use Background Intelligent Transfer Service on computers
-Intune supports using Background Intelligent Transfer Service (BITS) on a Windows computer to reduce the network bandwidth that is used during the hours that you configure. You can configure policy for BITS on the **Network bandwidth** page of the Intune Agent policy.
+During hours that you configure, you can use Background Intelligent Transfer Service (BITS) on a Windows computer to reduce the network bandwidth. You can configure policy for BITS on the **Network bandwidth** page of the Intune Agent policy.
 
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
@@ -90,9 +90,9 @@ Intune clients can use BranchCache to reduce wide area network (WAN) traffic. Th
 
 To use BranchCache, the client computer must have BranchCache enabled, and then be configured for **distributed cache mode**.
 
-By default, BranchCache and distributed cache mode are enabled on computers when the Intune client is installed. However, if Group Policy has disabled BranchCache, Intune does not override that policy and BranchCache remains disabled.
+When the Intune client is installed on computers, BranchCache and distributed cache mode are enabled by default. However, if Group Policy has disabled BranchCache, Intune doesn't override that policy and BranchCache remains disabled.
 
-If you use BranchCache, work with other administrators in your organization to manage Group Policy and Intune Firewall policy. Ensure they do not deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
+If you use BranchCache, work with other administrators in your organization to manage Group Policy and Intune Firewall policy. Ensure they don't deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## Network communication requirements
 
