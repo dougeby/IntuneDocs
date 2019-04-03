@@ -75,8 +75,8 @@ The following are typical settings to use for a proxy server that caches content
 
 For information about using a proxy server to cache content, see the documentation for your proxy server solution.
 
-### Use Background Intelligent Transfer Service on computers
-During hours that you configure, you can use Background Intelligent Transfer Service (BITS) on a Windows computer to reduce the network bandwidth. You can configure policy for BITS on the **Network bandwidth** page of the Intune Agent policy.
+### Use Background Intelligent Transfer Service (BITS) on computers
+During hours that you configure, you can use BITS on a Windows computer to reduce the network bandwidth. You can configure BITS policy on the **Network bandwidth** page of the Intune Agent policy.
 
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
