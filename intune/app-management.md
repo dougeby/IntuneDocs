@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Add and assign   apps to devices and users | Yes | Yes | Yes | Yes | Yes |
 | Assign apps to   devices not enrolled with Intune | Yes | Yes | No | No | No |
-| Use app   configuration policies to control the startup behavior of apps | No | Yes | No | No | No |
+| Use app   configuration policies to control the startup behavior of apps | Yes | Yes | No | No | No |
 | Use mobile app   provisioning policies to renew expired apps | No | Yes | No | No | No |
 | Protect company   data in apps with app protection policies | Yes | Yes | No | No1 | No |
 | Remove only   corporate data from an installed app (app selective wipe) | Yes | Yes | No | Yes | Yes |
