@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
@@ -89,7 +89,7 @@ The following steps will create a compliance policy for Windows 10 devices.
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Click **OK**, **OK**, and **Create** to create your compliance policy.
+7. Select **OK** > **OK** > **Create** to create your compliance policy.
 8. Select **Properties** > **Action for noncompliance** > **Add**.
 9. In the **Action** drop-down box, confirm **Send email to end users** is selected.
 10. Select **Message template** > **Contoso Admin** > **Select** to select the message template you created earlier in this topic.
