@@ -96,14 +96,14 @@ If you use BranchCache, work with other administrators in your organization to m
 
 ## Network communication requirements
 
-Enable network communications between the devices you manage and the websites required for cloud-based services.
+Enable network communications between the devices you manage and the endpoints required for cloud-based services.
 
-Intune uses no on-premises infrastructure such as servers running Intune software, but there are options to use on-premises infrastructure including Exchange and Active Directory synchronization tools.
+As a cloud-only service, Intune doesn't require on-premises infrastructure such as servers or gateways.
 
-To manage computers behind firewalls and proxy servers, you must enable communication for Intune.
+To manage devices behind firewalls and proxy servers, you must enable communication for Intune.
 
 - The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
-- For some tasks (like downloading software/updaets), Intune requires unauthenticated proxy server access to manage.microsoft.com
+- For some tasks (like downloading software updates), Intune requires unauthenticated proxy server access to manage.microsoft.com
 
 You can modify proxy server settings on individual client computers. You can also use Group Policy settings to change settings for all client computers located behind a specified proxy server.
 
