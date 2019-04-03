@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure device and app compliance during an Intune migration
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article provides the necessary steps to configure device compliance and app management policies during a Microsoft Intune migration.
 keywords:
 author: dougeby

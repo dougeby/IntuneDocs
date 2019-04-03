@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up device-based conditional access with Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to create a device-based conditional access policy based on Microsoft Intune device compliance and mobile app management.
 keywords:
 author: brenduns

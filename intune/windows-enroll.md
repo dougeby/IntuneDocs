@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up enrollment for Windows devices by using Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Set up enrollment for Windows devices.
 keywords:
 author: ErikjeMS

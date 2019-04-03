@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll Android Enterprise dedicated devices or fully managed devices in Intune
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to enroll Android Enterprise dedicated devices or fully managed devices in Intune.
 keywords:
 author: ErikjeMS 

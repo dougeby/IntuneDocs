@@ -1,13 +1,13 @@
 ---
 # required metadata
 title: Get data from the Data Warehouse API with a REST client
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This topic describes how to retrieve data from the Microsoft Intune Data Warehouse using a RESTful API.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -102,13 +102,13 @@ You also need the endpoint. To get your Data Warehouse endpoint, you will need t
 1. Sign into the [Azure portal](https://portal.azure.com).
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
 3. Select **Set up Intune Data Warehouse** under **Other tasks**.
-4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 The endpoint follows the following format:
 `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`
 
 For example, the **dates** entity looks like:
-`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 For more information, see [Intune Data Warehouse API endpoint](reports-api-url.md).
 
@@ -122,7 +122,7 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 2.	Open Postman. Choose the HTTP operation **GET**.
 3.	Paste the endpoint URL into the address. It should look something like:  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.	Choose the **Authorization** tab, and select **OAuth 2.0** from the **Type** list.
 5.	Select **Get New Access Token**.
 6.	Verify that you have already added the Callback URL to your app in Azure. The Callback URL is `https://www.getpostman.com/oauth2/callback`.
@@ -203,7 +203,7 @@ The following sample contains a simple REST client. The code uses the **httpClie
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

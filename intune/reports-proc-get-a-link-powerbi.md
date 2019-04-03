@@ -1,13 +1,13 @@
 ---
 # required metadata
 title: Connect to the Data Warehouse with Power BI
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Microsoft Intune tenant.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can download a file for use with Microsoft Power BI that allows you to load interactive, dynamically generated reports for your Intune tenant. The Data Warehouse Power BI file (pbix) contains connection settings to your tenant, as well as the following sample reports and charts:  
+You can use the Power BI Compliance app to load interactive, dynamically generated reports for your Intune tenant. Additionally, you can load your tenant data in Power BI using the OData link. Intune provides connection settings to your tenant so that you can view the following sample reports and charts related to:  
 
   -  Devices
   -  Enrollment
@@ -49,29 +49,36 @@ The following steps show you how to download the Power BI file and how to use th
 
 ## Install Power BI
 
-Install the latest version of Power BI Desktop. You can download Power BI Desktop from: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Install the latest version of [Power BI Desktop](https://aka.ms/intune/datawarehouseapi/installpowerbi). For more information, see [Power BI Desktop](https://powerbi.microsoft.com/desktop)
 
-## Load the data and reports using the Power BI file (pbix)
+## Load the data and reports using the Power BI Intune Compliance Data Warehouse App
 
-The Power BI file (pbix) contains connection information for your tenant and a set of prebuilt reports based on the Data Warehouse data model. Open the file in Power BI Desktop and sign in to the Azure AD. The report loads the data from your Intune tenant.
+The Power BI [Intune Compliance Data Warehouse app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) contains information for your tenant and a set of prebuilt reports based on the Data Warehouse data model.
 
-> [!Important]  
-> Each Power BI file (pbix) may be different depending on tenant location. If you are managing multiple Intune tenants, then be sure to use the file downloaded from the Azure portal while logged in to that tenant.  
+1.	Navigate to the [Intune Compliance Data Warehouse app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) to begin the installation process.
+2.	When prompted to install the Power BI app from trusted sources, click **Install**.
+3.	Click on the **Intune Compliance Data Warehouse App** tile.
+4.	Click the **Connect data** button. 
+    The **Connect to Intune Compliance Data Warehouse App** dialog is displayed.
+5.	Click the **Sign in** button.
+6.	Sign in with a user account that has access to the Intune Data Warehouse for the tenant that has reports you want to view. 
+7.	Click the **Reports** tab, then click the **Compliance V1.0** report.
+8.	To make it easy to navigate back to these reports later, click the star next to the **Compliance V1.0** report. This will add the report to your Power BI favorites.
 
-1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
-2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
-3.  Select **Download PowerBI file**. The file with a (pbix) extension downloads to the location you specified.
-4.  Open the file with Power BI. The *Intune Data Warehouse Reports* loads, but may take a second to get your tenant data.
-5.  Select **Refresh** to load your tenant data and review the reports.
-6.  If Power BI has not authenticated with your Azure Active Directory credentials, Power BI prompts you to provide your credentials. When selecting your credentials, choose **Organizational account** as your authentication method.
+Alternatively, you can install the app from the Intune portal:
+
+1.	Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for Intune.
+2.	Open the **Set up Intune Data Warehouse** blade.
+3.	Select **Get Power BI App** to access and share pre-created Power BI reports for your tenant in the browser.
+4.	Follow steps 2-8 above.
 
 ## Load the data in Power BI using the OData link
 
 With a client authenticated to Azure AD, the OData URL connects to the RESTful endpoint in the Data Warehouse API that exposes the data model to your reporting client. Follow these instructions to use Power BI Desktop to connect and create your own reports. You are not limited to Power BI Desktop, but can use your favorite analytic tool with the OData URL provided the client supports OAUTH2.0 authentication and the OData v4.0 standard.
 
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
-2.  Open the **Microsoft Intune Data Warehouse API (Preview)** blade.
-3. Retrieve the custom feed URL from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+2.  Open the **Set up Intune Data Warehouse** blade.
+3. Retrieve the custom feed URL from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.
 5. Choose **Home** > **Get Data**. Select **OData feed**.
 6. Choose **Basic**.
@@ -86,7 +93,7 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 
 ## Next steps
 
-You can find the answers to questions about your environment such as the number of devices enrolled by day over the last week. You can gain insight into your Intune tenant and client population using the reports using the Intune Data Warehouse Power BI file (pbix) retrieved from the blade in Azure. However, Intune provides a number of additional ways to extend or reuse the data. There is a lot more that you can do with Power BI and the Intune Data Warehouse API, for example:
+You can find the answers to questions about your environment such as the number of devices enrolled by day over the last week. You can gain insight into your Intune tenant and client population using the Intune Data Warehouse Power BI reports retrieved from the blade in Azure. However, Intune provides a number of additional ways to extend or reuse the data. Power BI and the Intune Data Warehouse API provide additional functionality, for example:
 
 <!-- -  You can use Power BI Desktop to create additional report types with your data. For example, you could create a custom chart representing the ratio of device manufactures in your enterprise. For more information about creating custom reports with Power BI and the Intune Data Warehouse, see `BLOG POST ON POWER BI`. -->
  -  Your tenant data is organized to help you pull insight from your data. For more information about how the data is organized, see [Data Warehouse Data Model](reports-ref-data-model.md).

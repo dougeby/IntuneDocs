@@ -2,7 +2,7 @@
 # required metadata
 
 title: macOS device settings in Microsoft Intune - Azure | Microsoft Docs
-titlesuffix:
+titleSuffix:
 description: Add, configure, or create settings on macOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for backup and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
 keywords:
 author: MandiOhlinger

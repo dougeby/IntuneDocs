@@ -2,7 +2,7 @@
 # required metadata
 
 title: Find out how many users are targeted by a policy
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Find out how many users are targeted by a policy
 keywords:
 author: ErikjeMS

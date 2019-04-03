@@ -2,13 +2,13 @@
 # required metadata
 
 title: Monitor app information and assignments
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: After you've assigned an app to users or devices, use this information to help you monitor the app's status.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune

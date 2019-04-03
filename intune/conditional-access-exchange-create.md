@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Exchange conditional access policy | Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune.
 keywords:
 author: brenduns

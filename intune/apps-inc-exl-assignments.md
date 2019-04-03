@@ -2,7 +2,7 @@
 # required metadata
 
 title: Include and exclude app assignments in Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn how you can use Microsoft Intune to include and exclude app assignments.
 keywords:
 author: Erikre

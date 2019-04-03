@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up enrollment for macOS devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to set up enrollment for macOS devices in Intune.
 keywords:
 author: ErikjeMS

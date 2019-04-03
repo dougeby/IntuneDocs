@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Use the Intune Data Warehouse 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use the Intune Data Warehouse to build reports that provide insight into your enterprise mobile environment. 
 keywords: Intune Data Warehouse
 author: Erikre
