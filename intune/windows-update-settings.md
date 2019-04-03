@@ -265,4 +265,4 @@ This policy allows you to define what Windows Update notifications users see. Th
 Supported values for this setting:
 - 0 - Use the default Windows Update notifications
 - 1 - Turn off all notifications, excluding restart warnings
-- 2 - Turn off all notifications, including restart warning
+- 2 - Turn off all notifications, including restart warnings
