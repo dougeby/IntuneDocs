@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 04/03/2019
 ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -39,12 +39,13 @@ App-based conditional access with app protection policies rely on applications u
 
 To block access to apps that do not use modern authentication, we recommend the following methods:
 
-- Set up ADFS claims rules to block non-modern authentication protocols. Detailed instructions are provided in scenario 3 - [block all access to O365 except browser-based applications](https://technet.microsoft.com/library/dn592182.aspx).
-- For **Exchange and SharePoint Online**, use Conditional Access and use the PowerShell commandlet Set-SPOTenant for SharePoint online. For detailed instructions, see [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+- Use Intune app protection policies to implement condition access. For more information, see [App-based conditional access with Intune](app-based-conditional-access-intune.md).
 
-
->[!IMPORTANT]
->App-based conditional access must not be used with Azure Active Directory (Azure AD) certificate-based authentication. You can only have one of these configured at a time.
+For more information about Azure AD Conditional Access, see the following:
+- [What is conditional access in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+- [How app-based conditional access works](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
+- [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
+- 
 
 ## Next steps
 
