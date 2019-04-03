@@ -236,18 +236,6 @@ The following settings are used to control when engaged restart actions occur.
   - **Windows reference documentation**: [Update/EngagedRestartDeadline](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
   Specify a maximum number of days to wait after the engaged restart behavior begins before a device enforces a required restart. This restart will prompt users to save their work.
 
-### Block user from scanning for Windows updates  
-> [!TIP]  
-> This setting is not available from within the Intune portal UI. Instead, use the [Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) to configure this setting.  
- - **Default**: Allow
- - **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
-
-Supported values for this setting:
-- *Block* (1)
-- *Allow* (0)
-
-For example, if you configure a value of 1 (block), you enable this policy. When enabled, users can't access the Windows Update scan, download, and install features. 
-
 ### Delivery optimization download mode  
 
 Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they can't otherwise be modified. 
@@ -255,3 +243,26 @@ Delivery optimization is no longer configured as part of a Windows 10 Update Rin
 To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile.
 
 
+## Settings that require the Intune Graph API
+The following settings are not available from within the Intune portal UI. Instead, you use the [Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) to configure them.  
+
+### Block user from scanning for Windows updates  
+ - **Default**: Allow
+ - **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+
+Supported values for this setting:
+- *Block* (1)
+- *Allow* (0)
+
+For example, if you configure a value of **1** *(block)*, you enable this policy. When enabled, users can't access the Windows Update scan, download, and install features.  
+
+### Windows Update notification level
+- **Default**: 0 *(Use the default Windows Update notifications)*
+- **Windows reference documentation**: [Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
+
+This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
+
+Supported values for this setting:
+- 0 - Use the default Windows Update notifications
+- 1 - Turn off all notifications, excluding restart warnings
+- 2 - Turn off all notifications, including restart warning
