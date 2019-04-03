@@ -34,7 +34,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can set up Intune to enroll iOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). This lets you enroll large numbers of devices without ever touching them. Devices like iPhones and iPads can be shipped directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
+You can set up Intune to enroll iOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). DEP lets you enroll large numbers of devices without ever touching them. Devices like iPhones and iPads can be shipped directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
 
@@ -179,7 +179,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 11. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-12. You can specify a naming format for devices that is automatically applied when they enroll. To do this, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
+12. You can specify a naming format for devices that is automatically applied when they enroll. To create a naming template, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
 
 13. Choose **OK**.
 
@@ -230,7 +230,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    ![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. If a DEP device is deleted from the Intune portal it should be unassigned from the Apple MDM server in the DEP portal. If it's not unassigned, it won't be reimported to Intune until the full sync is run.   
+   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. If a DEP device is deleted from the Intune portal, it should be unassigned from the Apple MDM server in the DEP portal. If it's not unassigned, it won't be reimported to Intune until the full sync is run.   
    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.   
 
 
