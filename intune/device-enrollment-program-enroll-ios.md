@@ -179,9 +179,11 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 11. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-12. Choose **OK**.
+12. If you want to specify a naming format for devices that is automatically applied when they enroll, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
 
-13. Choose **Setup Assistant customization** to configure the following profile settings:
+13. Choose **OK**.
+
+14. Choose **Setup Assistant customization** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
@@ -217,9 +219,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Software Update</strong> | Display the mandatory software update screen. |
     | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
 
-14. Choose **OK**.
+15. Choose **OK**.
 
-15. To save the profile, choose **Create**.
+16. To save the profile, choose **Create**.
 
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
