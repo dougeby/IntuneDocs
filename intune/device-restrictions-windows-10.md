@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/03/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -142,7 +142,10 @@ These settings are added to a device configuration profile in Intune, and then a
 - **SIM card error dialog (mobile only)**: Blocks an error message from displaying on the device if no SIM card is detected.
 - **Ink Workspace**: Block users from accessing the ink workspace. **Not configured** turns on the ink workspace, and the user is allowed to use it above the lock screen.
 - **Automatic redeployment**: Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
-- **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before proceeding past the Network page during Windows 10 setup. While this feature is in preview, a Windows insider build 1809 or later is required to use this setting.
+- **Require users to connect to network during device setup (Windows Insider only)**: Choose **Require** so the device connects to a network before going past the Network page during Windows 10 setup. While this feature is in preview, a Windows insider build 1809 or later is required to use this setting.
+
+  If a device doesn't have network connectivity during Windows 10 setup, then this setting isn't applied. The setting becomes effective the next time the device is wiped or reset. So, it may not apply to brand new devices. Like any other Intune configuration, the device must be enrolled and managed by Intune to receive configuration settings. But once it's enrolled, and receiving policies, then resetting the device enforces the setting during the next Windows setup.
+
 - **Direct Memory Access**: **Block** prevents direct memory access (DMA) for all hot pluggable PCI downstream ports until a user signs into Windows. **Enabled** (default) allows access to DMA, even when a user isn't signed in.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
