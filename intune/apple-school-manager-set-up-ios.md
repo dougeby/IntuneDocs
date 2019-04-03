@@ -128,9 +128,11 @@ Now that you've installed your token, you can create an enrollment profile for A
 
 10. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-11. Choose **OK**.
+11. If you want to specify a naming format for devices that is automatically applied when they enroll, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
 
-12. Choose **Setup Assistant Settings** to configure the following profile settings:
+12. Choose **OK**.
+
+13. Choose **Setup Assistant Settings** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
@@ -151,9 +153,9 @@ Now that you've installed your token, you can create an enrollment profile for A
     |     <strong>Diagnostic Data</strong>     |                                                                 If enabled, Setup Assistant prompts for this service during activation.                                                                 |
 
 
-13. Choose **OK**.
+14. Choose **OK**.
 
-14. To save the profile, choose **Create**.
+15. To save the profile, choose **Create**.
 
 ## Connect School Data Sync
 (Optional) Apple School Manager supports synchronizing class roster data to the Azure Active Directory (AD) using Microsoft School Data Sync (SDS). You can only sync one token with SDS. If you set up another token with School Data Sync, SDS will be removed from the token that previously had it. A new connection will replace the current token. Complete the following steps to use SDS to sync school data.
