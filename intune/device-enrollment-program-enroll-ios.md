@@ -179,7 +179,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 11. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-12. If can specify a naming format for devices that is automatically applied when they enroll. To do this, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
+12. You can specify a naming format for devices that is automatically applied when they enroll. To do this, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
 
 13. Choose **OK**.
 
@@ -192,7 +192,7 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
     |    <strong>Department Phone</strong>     | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
-  You can choose hide Setup Assistant screens on the device during user set up.
+  You can choose to hide Setup Assistant screens on the device during user setup.
   - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
   - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
@@ -230,7 +230,7 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
    ![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
 
    To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. If a DEP device is deleted from the Intune portal it should be unassigned from the Apple MDM server in the DEP portal. If it's not unassaigned, it won't be reimported to Intune until the full sync is run.   
+   - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. If a DEP device is deleted from the Intune portal it should be unassigned from the Apple MDM server in the DEP portal. If it's not unassigned, it won't be reimported to Intune until the full sync is run.   
    - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.   
 
 

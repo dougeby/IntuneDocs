@@ -88,7 +88,7 @@ Now that you've installed your token, you can create an enrollment profile for A
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
 2. Select a token, choose **Profiles**, and then choose **Create profile**.
 
-3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users do not see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+3. Under **Create Profile**, enter a **Name** and **Description** for the profile for administrative purposes. Users don't see these details. You can use this **Name** field to create a dynamic group in Azure Active Directory. Use the profile name to define the enrollmentProfileName parameter to assign devices with this enrollment profile. Learn more about [Azure Active Directory dynamic groups](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
 
@@ -97,7 +97,7 @@ Now that you've installed your token, you can create an enrollment profile for A
 
     - **Enroll without User Affinity** - Choose this option for devices unaffiliated with a single user, such as a shared device. Use this option for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
 
-5. If you chose **Enroll with User Affinity**, you have the option to let users authenticate with Company Portal instead of the Apple Setup Assistant.
+5. If you chose **Enroll with User Affinity**, you can let users authenticate with Company Portal instead of the Apple Setup Assistant.
 
     ![Authenticate with Company Portal.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
@@ -109,7 +109,7 @@ Now that you've installed your token, you can create an enrollment profile for A
     >
     > These aren't supported when authenticating with Apple Setup Assistant.
 
-6. Choose **Device Management Settings** and select whether or not you want devices using this profile to be supervised.
+6. Choose **Device Management Settings** and choose if you want devices using this profile to be supervised.
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially for organizations that are deploying large numbers of iOS devices.
 
     Users are notified that their devices are supervised in two ways:
@@ -190,4 +190,4 @@ Apple School Manager devices managed by Intune must be assigned an enrollment pr
 
 ## Distribute devices to users
 
-You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your Apple School devices enroll. You can now distribute devices to users. When an iOS Apple School Manager device is turned on, it is enrolled for management by Intune. Profiles can't be applied to activated devices currently in use until the device is wiped.
+You have enabled management and syncing between Apple and Intune, and assigned a profile to  let your Apple School devices enroll. You can now distribute devices to users. When an iOS Apple School Manager device is turned on, it's enrolled for management by Intune. Profiles can't be applied to activated devices currently in use until the device is wiped.
