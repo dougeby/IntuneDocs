@@ -281,8 +281,6 @@
       href: compliance-policy-create-android.md
     - name: Android Enterprise compliance
       href: compliance-policy-create-android-for-work.md
-    - name: Enable Google Play Protect
-      href: compliance-policy-create-google-play-protect.md
     - name: iOS compliance
       href: compliance-policy-create-ios.md
     - name: Windows compliance
