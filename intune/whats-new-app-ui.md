@@ -38,16 +38,20 @@ If you're an employee or student, be sure to check out the screenshots and links
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+
 ## Week of April 1, 2019  
 
 ### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
 The Company Portal for iOS enrollment screens and steps have been updated to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow prompts users to:  
 
-* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app. ​
+* Allow Safari to open the Company Portal website and download the management profile before returning to the Company Portal app. ​
 * Open the Settings app to install the management profile on their device.​
 * Return to the Company Portal app to complete enrollment.  ​
 
 For updated enrollment steps and screens, see [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios).  
+
+### User experience update for the Company Portal app for iOS <!-- 2536024 -->
+The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.  
 
 ## Week of February 19, 2019  
 ### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 WNready4Review -->  
