@@ -34,9 +34,8 @@ ms.collection: M365-identity-device-management
 
 You can use the **Evaluate** button to find out how many users are targeted by a device compliance or device configuration policy. This feature only calculates users, not devices.
 
-1.	In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device compliance** or **Device configuration**, and then choose **Policies**.
-2.	Choose one of the policies, or create a new one, and then choose **Assignments**.
-3.	Choose **Evaluate**. A message displays showing you how many users are targeted by this policy.
+1. In the [Azure portal](https://aka.ms/intuneportal), choose **Device compliance** or **Device configuration**, and then choose **Policies**.
+2. Choose one of the policies, or create a new one, and then choose **Assignments**.
+3. Choose **Evaluate**. A message displays showing you how many users are targeted by this policy.
 
 If the **Evaluate** button is grayed out, make sure that the policy has been assigned to one or more groups.
-
