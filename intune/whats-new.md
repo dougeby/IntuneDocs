@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -51,6 +51,15 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 <!-- ########################## -->
 ## Week of April 1, 2019
 We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+
+### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
+The Company Portal for iOS enrollment screens and steps have been updated to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow prompts users to:  
+
+* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app. ​
+* Open the Settings app to install the management profile on their device.​
+* Return to the Company Portal app to complete enrollment.  ​
+
+For updated enrollment steps and screens, see [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios).  
 
 ## Week of March 25, 2019
 
