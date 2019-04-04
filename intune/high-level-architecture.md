@@ -7,10 +7,11 @@ keywords:
 ms.author: dougeby
 author: dougeby
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 03/11/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 
@@ -26,8 +27,9 @@ search.appverid: MET150
 #ms.custom:
 ms.collection: M365-identity-device-management
 ---
-
 # High-level architecture for Microsoft Intune
 This reference architecture shows options for integrating Microsoft Intune in your Azure environment with Azure Active Directory.  
- 
-![High-level architectural diagram for Microsoft Intune](/intune/media/intunearchitecture.svg)
+
+![High-level architectural diagram for Microsoft Intune](./media/intunearchitecture_wh.svg)
+
+[Image with dark contrast](./media/intunearchitecture.svg)

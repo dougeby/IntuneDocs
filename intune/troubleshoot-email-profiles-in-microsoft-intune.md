@@ -8,9 +8,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ROBOTS:

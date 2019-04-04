@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add app configuration policies for managed iOS devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to use app configuration policies to provide configuration data to an iOS app when it is run.
 keywords:
 author: Erikre
@@ -12,6 +12,7 @@ ms.date: 12/12/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 

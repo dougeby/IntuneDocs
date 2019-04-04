@@ -2,7 +2,7 @@
 # required metadata
 
 title: Drive end-user adoption with conditional access
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to use conditional access to drive enrollment in Microsoft Intune.
 keywords:
 author: dougeby
@@ -12,6 +12,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 

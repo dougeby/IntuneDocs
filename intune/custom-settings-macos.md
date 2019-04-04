@@ -9,9 +9,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/23/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata

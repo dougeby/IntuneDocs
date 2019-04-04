@@ -2,16 +2,17 @@
 # required metadata
 
 title: UI updates for Intune end-user apps
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Find out what has changed in UI for apps that work on end-user devices with Microsoft Intune.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 
@@ -28,21 +29,23 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 # UI updates for Intune end-user apps
-Learn what updates have been made to the UI for apps that your end users will see in this release of Microsoft Intune. Understanding these updates can help you with user communications and any updating custom documentation that you've created to support your deployment. It can also help you understand how to better troubleshoot any issues they're facing should they call helpdesk for support using the Company Portal.  
+Learn about the most recent updates to the Microsoft Intune apps. We regularly add to and improve the Intune Company Portal app and website. If you're an Intune administrator or support person, this article provides the information you need to:
 
-For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
+* Alert students and employees to app and enrollment changes.
+* Update your organization's documentation or helpdesk procedures.  
+
+If you're an employee or student, be sure to check out the screenshots and links to the Company Portal help documentation. For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
-## Week of March 4, 2019
+## Week of April 1, 2019
 ### User experience update for the Company Portal app for iOS <!-- 2536024 -->
 The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.
 
 
 ## Week of February 19, 2019  
 ### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 WNready4Review -->  
-A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about getting apps in Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
-
+A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. For more information about installing apps in Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 ![Screenshot of Company Portal for Windows 10, App categories screen.](./media/1902_CP_app_categories.png)   
 
@@ -55,14 +58,12 @@ End users will now be able to trigger app and device actions in the Windows Comp
 ## Week of October 22, 2018
 
 ### Add custom brand image for Company Portal app <!-- 1916266 -->
-As the Microsoft Intune admin, you can upload a custom brand image which will be displayed as a background image on the user's profile page in the iOS Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-
+As the Microsoft Intune admin, you can upload a custom brand image which will be displayed as a background image on the user's profile page in the iOS Company Portal app. For more information about configuring the Company Portal app, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).  
 
 ## Week of August 27, 2018  
 
 ### New user experience update for the Company Portal website <!--2000968 -->  
-We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Areas of the site&ndash;such as device details, feedback and support, and device overview&ndash;have received a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
+We’ve added new features, based on feedback from customers, to the Company Portal website. You'll experience a significant improvement in existing functionality and usability from your devices. Specific areas of the site, such as device details, feedback and support, and device overview, now have a new, modern, responsive design. The [Intune Company Portal website documentation](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) has been updated to reflect these changes.   
 
 Updates you'll see include:  
 
@@ -82,13 +83,13 @@ Updates you'll see include:
 ## Week of July 16, 2018  
 
 ### More opportunities to sync in the Company portal app for Windows   
-The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon that's pinned to your taskbar or Start menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  
+The Company Portal app for Windows now lets you initiate a sync directly from the Windows taskbar and Start menu. This feature is especially useful if your only task is to sync devices and get access to corporate resources. To access the new feature, right-click the Company portal icon pinned to your taskbar or **Start** menu. In the menu options (also referred to as a jump list), select **Sync this device**. The Company Portal will open to the **Settings** page and initiate your sync.  
 
 ![Screenshot of the Windows task bar on a device's desktop. Company Portal app program icon has been clicked to show a menu with options "Pin to taskbar," "Close window," and "Sync this device" action.](./media/sync-device-from-start-menu-1807.png)  
 
 ### New browsing experiences in the Company portal app for Windows  
 
-Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the newly added **Details** view. The new view lists application details such as name, publisher, publication date and installation status.  
+Now when browsing or searching for apps in the Company Portal app for Windows, you can toggle between the existing **Tiles** view and the new **Details** view. This new view lists application details such as name, publisher, publication date, and installation status.  
 
 The **Apps** page's **Installed** view lets you see details about completed and in-progress app installations.  
 
@@ -502,25 +503,14 @@ These are the plans for ways we will be improving the user experience by updatin
 > [!Note]
 > Please note that the images below may be previews, and the announced product may differ from the presented versions.
 
-### <a name="ui-iwp"></a>New user experience update for the Company Portal website <!--2000968-->
+### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 EEready eestaged-->  
 
-We’re introducing a new Company Portal website experience starting in August, with UI updates, streamlined workflows and accessibility improvements. This will include customer-driven enhancements like app sharing and improved overall performance to bring you a more user-friendly experience.
+The Company Portal app for iOS will be updating the enrollment screens and steps to align with the MDM enrollment changes released in Apple iOS 12.2. The new enrollment experience will prompt users to:  
+* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app.  
+* Open the Settings app to install the management profile on their device.  
+* Return to the Company Portal app to complete enrollment.  
 
-We’ve added some new features, based on feedback from customers like you, that will significantly improve existing functionality and usability:
-
--	UI improvements throughout the website
--	Ability to share direct links to apps
-- Improved performance for large app catalogs
-
-You don't need to take any action to prepare for this change. We’ll let you know when the updated Company Portal website becomes available for you. However, you may eventually need to update end-user docs with updated screenshots. Note that you may also need to update documentation for the Company Portal app on iOS, as the website powers the **Apps** section of the iOS app.  
-
-### UI updates to the Company Portal website <!--1313244 part 2-->
-
-__Updates to Featured Apps__
-We've added a dedicated page to the site where users can browse apps that you've chosen to feature, and made some UI tweaks to the Featured section on the homepage.
-
-![The colorful tiles that show the apps. They are large squares of color underneath each app, where the color is pulled from the primary color within the app logo. The "Featured Apps" section appears across the top of the Company Portal app.](./media/cp_win10_colorful_tiles_after_1708.png)
-
+ We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
 
 
 ### See also

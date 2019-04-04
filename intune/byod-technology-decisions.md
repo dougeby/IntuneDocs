@@ -10,6 +10,7 @@ ms.date: 12/8/2017
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid:
 

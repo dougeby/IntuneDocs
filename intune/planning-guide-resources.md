@@ -2,7 +2,7 @@
 # required metadata
 
 title: Templates and resources to plan and design Intune deployment
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Links to planning templates and additional Intune information that may be helpful during your Microsoft Intune deployment planning and implementation process.
 keywords:
 author: dougeby
@@ -12,6 +12,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 

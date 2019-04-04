@@ -2,16 +2,17 @@
 # required metadata
 
 title: Quickstart - Create a group to manage users
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to create a group based on existing users.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/25/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 
@@ -47,17 +48,18 @@ Sign in to the [Intune portal](https://aka.ms/intuneportal) as a [Global adminis
 
 ## Create a group
 
-You will create a group that will be used later in this quickstart series.
+You will create a group that will be used later in this quickstart series. To create a group:
 
 1. Once you've opened the **Microsoft Intune** pane, select **Groups** > **New group**.
 2. In the **Group type** dropdown box, select **Security**.
-3. Set the **Name** to "Contoso Testers" and add a **Description** for the group.
-4. Set the **Membership type** to **Assigned**. 
-5. Click **Members** and select one or more members for the group from the existing list.
+3. In the **Group name** field, enter the name for the new group (for example, **Contoso Testers**).
+4. Add a **Description** for the group.
+5. Set the **Membership type** to **Assigned**. 
+6. Click **Members** and select one or more members for the group from the list.
 
     ![Screenshot of creating a group in Microsoft Intune](./media/quickstart-use-groups-01.png)
 
-6. Click **Select** > **Create**.
+7. Click **Select** > **Create**.
 
 Once you have successfully created the group, it will appear in the list of **All groups**. 
 

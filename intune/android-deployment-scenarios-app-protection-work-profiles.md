@@ -12,6 +12,7 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: chrisbal
 
@@ -56,7 +57,7 @@ Individual Android apps are enabled for APP in a few ways:
 
     To help, Intune includes the **App Wrapping Tool** tool for existing Android apps (APKs), and creates an app that recognizes APP policies.
 
-    For more information on this tool, see [repare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md).
+    For more information on this tool, see [prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md).
 
 To see a list of apps enabled with APP, see [managed apps with a rich set of mobile application protection policies](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 

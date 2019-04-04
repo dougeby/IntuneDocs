@@ -7,10 +7,11 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 
@@ -76,15 +77,15 @@ When devices do not meet the conditions set, the end user is guided through the 
 
 The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
-If the EAS record is brand new, and Intune is not aware of it, Intune issues a command-let that blocks access to e-mail. Here are more details on how this process works:
+If the EAS record is brand new, and Intune is not aware of it, Intune issues a cmdlet (pronounced "command-let") that blocks access to e-mail. Here are more details on how this process works:
 
 ![Exchange on-premises with CA flow-chart](./media/ca-intune-common-ways-1.png)
 
 1.  User tries to access corporate email, which is hosted on Exchange on-premises 2010 SP1 or later.
 
-2.  If the device is not managed by Intune, it will be blocked access to email. Intune sends block notification to the EAS client.
+2.  If the device is not managed by Intune, access to email will be blocked. Intune sends a block notification to the EAS client.
 
-3.  EAS receives block notification, moves the device to quarantine, and sends the quarantine email with remediation steps that contain links so the users can enroll their devices.
+3.  EAS receives the block notification, moves the device to quarantine, and sends the quarantine email with remediation steps that contain links so the users can enroll their devices.
 
 4.  The Workplace join process happens, which is the first step to have the device managed by Intune.
 
@@ -96,7 +97,7 @@ If the EAS record is brand new, and Intune is not aware of it, Intune issues a c
 
 8.  The Azure AD Device Registration saves the device state information.
 
-9.  If the user meets the conditional access policies, Intune issues a command-let through the Intune Exchange connector that allows the mailbox to sync.
+9.  If the user meets the conditional access policies, Intune issues a cmdlet through the Intune Exchange connector that allows the mailbox to sync.
 
 10. Exchange server sends the notification to EAS client so the user can access e-mail.
 
@@ -106,10 +107,10 @@ Intune evaluates and manages the device state.
 
 #### What’s the Exchange server role?
 
-Exchange server provides API and infrastructure to move devices to its quarantine.
+Exchange server provides API and infrastructure to move devices to quarantine.
 
 > [!IMPORTANT]
-> Keep in mind that the user who’s using the device must have a compliance profile assigned to them so the device to be evaluated for compliance. If no compliance policy is deployed to the user, the device is treated as compliant and no access restrictions are applied.
+> Keep in mind that the user who’s using the device must have a compliance profile assigned to them so the device can be evaluated for compliance. If no compliance policy is deployed to the user, the device is treated as compliant and no access restrictions are applied.
 
 ### Conditional access based on network access control
 
@@ -141,7 +142,7 @@ Conditional access for PCs provides capabilities similar to those available for 
 
 -   **Azure AD domain joined and Intune management:** This scenario is typically geared to Choose Your Own Device (CYOD), and roaming laptop scenarios where these devices are rarely connected to the corporate network. The device joins to the Azure AD and gets enrolled to Intune, which removes any dependency on on-premises AD, and domain controllers. This can be used as a conditional access criteria when accessing corporate resources.
 
--   **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to be a domain-joined PC:
+-   **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to being a domain-joined PC:
 
     -   Is the PC encrypted?
 

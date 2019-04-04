@@ -12,6 +12,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.

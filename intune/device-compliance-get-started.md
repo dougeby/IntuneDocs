@@ -8,11 +8,12 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 03/20/2019
 
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: joglocke
 
@@ -115,10 +116,11 @@ If the device recently enrolled, the compliance check-in runs more frequently:
 | Platform | Frequency |
 | --- | --- |
 | iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
+| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
 | Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
 | Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
+| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
 
 At anytime, users can open the Company Portal app, and sync the device to immediately check for a policy.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set terms and conditions in Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Set terms and conditions that users see in the Company Portal for Intune.
 keywords:
 author: ErikjeMS
@@ -12,6 +12,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 

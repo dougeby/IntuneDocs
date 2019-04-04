@@ -12,6 +12,8 @@
     items:
     - name: What's new in the app UI
       href: whats-new-app-ui.md
+    - name: Features in development
+      href: in-development.md
 - name: Quickstarts
   items:
   - name: Try Intune for free
@@ -151,6 +153,10 @@
       items:
       - name: Role-based access control
         href: role-based-access-control.md
+      - name: Assign a role to a user
+        href: assign-role.md
+      - name: Create a custom role
+        href: create-custom-role.md
       - name: Use scope tags
         href: scope-tags.md
   - name: Enroll devices
@@ -178,6 +184,8 @@
         href: device-group-mapping.md
     - name: Set up Windows enrollment
       items:
+      - name: Windows enrollment methods
+        href: windows-enrollment-methods.md
       - name: Enrollment method capabilities
         href: enrollment-method-capab.md
       - name: Windows enrollment
@@ -222,8 +230,6 @@
       items:
       - name: Device Enrollment Program or Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Install Intune software client on Windows PCs
-      href: install-the-windows-pc-client-with-microsoft-intune.md
     - name: Incomplete enrollment report
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
@@ -251,7 +257,7 @@
       href: device-rename.md
     - name: Restart device
       href: device-restart.md
-    - name: Logout current user
+    - name: Sign out current user
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
@@ -261,8 +267,6 @@
       href: device-profile-android-teamviewer.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
-    - name: Install Exchange service connector
-      href: exchange-service-connector-configure.md
     - name: Synchronize device
       href: device-sync.md
     - name: Examine device inventory
@@ -277,8 +281,6 @@
       href: compliance-policy-create-android.md
     - name: Android Enterprise compliance
       href: compliance-policy-create-android-for-work.md
-    - name: Enable Google Play Protect
-      href: compliance-policy-create-google-play-protect.md
     - name: iOS compliance
       href: compliance-policy-create-ios.md
     - name: Windows compliance
@@ -327,7 +329,12 @@
     - name: Education Take a Test app
       href: education-settings-configure.md
     - name: Shared multi-user devices
-      href: shared-user-device-settings.md      
+      href: shared-user-device-settings.md  
+    - name: Mobility Extensions on Zebra devices
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow logs and common issues
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
     - name: Custom device settings
@@ -385,8 +392,6 @@
         href: app-based-conditional-access-intune-create.md
       - name: ADAL and Intune
         href: app-modern-authentication-block.md
-      - name: Monitor conditional access compliance
-        href: conditional-access-exchange-monitor.md
       - name: Integrate Jamf Pro with Intune for compliance
         href: conditional-access-integrate-jamf.md
       - name: Enforce compliance on Macs managed with Jamf Pro
@@ -447,6 +452,8 @@
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Monitor device encryption
+      href: encryption-monitor.md
     - name: Certificates
       href: certificates-configure.md
       items:
@@ -530,7 +537,9 @@
       - name: Include and exclude apps
         href: apps-inc-exl-assignments.md      
       - name: Deploy Windows 10 apps
-        href: apps-windows-10-app-deploy.md            
+        href: apps-windows-10-app-deploy.md      
+      - name: Deploy apps to Government environments
+        href: apps-deploy-gcc-dod.md                    
     - name: Monitor apps
       href: apps-monitor.md
     - name: Configure apps
@@ -624,7 +633,9 @@
       - name: Troubleshoot company resource access problems
         href: troubleshoot-company-resource-access-problems.md      
       - name: Troubleshoot app installation problems
-        href: troubleshoot-app-install.md          
+        href: troubleshoot-app-install.md 
+      - name: Troubleshoot mobile application management
+        href: troubleshoot-mam.md                  
       - name: Audit logs for Intune activities
         href: monitor-audit-logs.md
       - name: Review logs with Azure Monitor
@@ -643,8 +654,6 @@
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
-    - name: Known issues
-      href: known-issues.md
     - name: Get support
       href: get-support.md      
 - name: Reference
@@ -815,6 +824,9 @@
         href: app-wrapper-prepare-android.md
       - name: Intune App SDK for Android
         href: app-sdk-android.md
+        items:
+        - name: Intune App SDK for Android testing guide
+          href: app-sdk-android-testing-guide.md        
       - name: Intune App SDK Xamarin Bindings
         href: app-sdk-xamarin.md
     - name: Use the Intune Data Warehouse
@@ -846,8 +858,6 @@
             href: reports-ref-user-timeline.md
           - name: Reference for application entities
             href: reports-ref-application.md
-          - name: Reference for current user entity
-            href: reports-ref-current-user.md
           - name: Reference for date entity
             href: reports-ref-date.md
           - name: Reference for devices entities
@@ -873,34 +883,6 @@
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
-  - name: Microsoft Intune documentation guide
-    href: intune-documentation.md  
-  - name: Troubleshoot
-    items:
-    - name: Help users troubleshoot problems
-      href: help-desk-operators.md
-    - name: Troubleshoot company resource access problems
-      href: troubleshoot-company-resource-access-problems.md      
-    - name: Troubleshoot app installation problems
-      href: troubleshoot-app-install.md    
-    - name: Troubleshoot mobile application management
-      href: troubleshoot-mam.md             
-    - name: Audit logs for Intune activities
-      href: monitor-audit-logs.md
-    - name: Review app protection logs
-      href: app-protection-policy-settings-log.md
-    - name: Troubleshoot email profiles
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Troubleshoot software updates
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Troubleshoot endpoint protection
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Troubleshoot policies
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Troubleshoot conditional access
-      href: troubleshoot-conditional-access.md
-    - name: Troubleshoot Exchange connectors
-      href: troubleshoot-exchange-connector.md
   - name: Archive
     items:
     - name: What's new archive

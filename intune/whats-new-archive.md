@@ -1,16 +1,17 @@
 ---
 # required metadata
 title: What's new in previous months in the Microsoft Intune - Azure | Microsoft Docs
-titlesuffix: 
+titleSuffix: 
 description: Review older announcements from the Intune what's new page
 keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
 ms.date: 2/25/2019
-ms.topic: conceptual
+ms.topic: archived
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
 
@@ -369,7 +370,7 @@ You can now manually add corporate device IDs. Choose **Device enrollment** > **
 The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
 
 #### Retrieve the associated app user model ID (AUMID) for Microsoft Store for Business apps in kiosk mode <!-- 1560077 ! -->
-Intune can now retrieve the app user model ids (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
+Intune can now retrieve the app user model IDs (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
 
 For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
 
@@ -470,7 +471,7 @@ To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **De
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Microsoft Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
 
 <!-- ########################## -->
 ## May 2018
@@ -708,7 +709,7 @@ Android Enterprise (formerly known as Android for Work) supports including and e
 ### Export all devices into CSV files in IE, Microsoft Edge, or Chrome <!-- 2258071 -->
 In **Devices** > **All devices**, you can **Export** the devices into a CSV formatted list. Internet Explorer (IE) users with >10,000 devices can successfully export their devices into multiple files. Each file has up to 10,000 devices.
 
-Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
+Microsoft Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
 
 [Manage devices](device-management.md) provides more details on what you can do with devices you manage.
 
@@ -1279,7 +1280,7 @@ The **SafetyNet device attestation** setting requires the device to connect with
 healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that
 installed apps are verified by Google Play services. If a device is not compliant with Google Play Protect requirements, conditional access might block users from accessing corporate resources.
 
-- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-android).
 
 ### Text protocol allowed from managed Apps <!-- 1414050  -->
 
@@ -1384,7 +1385,7 @@ The Microsoft Planner app for iOS and Android is now part of the approved apps f
 Administrators may now remove Per-App VPN requirements for apps on iOS devices; affected devices will after their next Intune check-in, which generally occurs within 15 minutes.  
 
 ### Support for System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
-The System Center Operations Manager (SCOM) management pack for Exchange connector is now available to help you parse the Exchange connector logs. This feature gives you different ways of monitoring the service when you need to troubleshoot issues.
+The System Center Operations Manager management pack for Exchange connector is now available to help you parse the Exchange connector logs. This feature gives you different ways of monitoring the service when you need to troubleshoot issues.
 
 ### Co-management for Windows 10 devices  <!-- 1243445 -->
 Co-management is a solution that provides a bridge from traditional to modern management, and it provides you with a path to make the transition using a phased approach. At its foundation, co-management is a solution where Windows 10 devices are concurrently managed by Configuration Manager and Microsoft Intune, as well as joined to Active Directory (AD) and Azure Active Directory (Azure AD).  This configuration provides you with a path to modernize over time, at the pace that’s right for your organization if you can’t move all at once.  
@@ -1441,7 +1442,7 @@ Using Intune, you can configure the application control policies either in "audi
 ### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->   
 Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of the following components:
 
-- **Attack Surface Reduction (ASR)** provides rules that allow you to prevent macro, script, and email threats.
+- **Attack Surface Reduction** provides rules that allow you to prevent macro, script, and email threats.
 - **Controlled Folder access** automatically blocks access to content to protected folders.
 - **Network Filter** blocks outbound connection from any app to low rep IP/domain
 - **Exploit Protection** provides memory, control flow, and policy restrictions that can be used to protect an application from exploits.
@@ -1581,8 +1582,8 @@ Company apps that have been made available with or without enrollment on the And
 ### Windows AutoPilot Deployment Program support in Microsoft Intune  <!-- 747617  -->
 You can now use Microsoft Intune with Windows AutoPilot Deployment Program to empower your users to provision their corporate devices without involving IT. You can customize the out-of-box experience (OOBE) and guide users to join their device to Azure AD and enroll in Intune. Working together, Microsoft Intune and Windows AutoPilot eliminate the need to deploy, maintain, and manage operating system images. For details, see [Enroll Windows devices using Windows AutoPilot Deployment Program](https://docs.microsoft.com/intune/enrollment-autopilot).
 
-### Quick start for device enrollment  <!-- 1425655 --> 
-Quick start is now available in **Device enrollment** and provides a table of references for managing platforms and configuring the enrollment process. A brief description of each item and links to documentation with step-by-step instructions provides useful documentation to simplify getting started.
+### Quickstart for device enrollment  <!-- 1425655 --> 
+Quickstart is now available in **Device enrollment** and provides a table of references for managing platforms and configuring the enrollment process. A brief description of each item and links to documentation with step-by-step instructions provides useful documentation to simplify getting started.
 
 ### Device categorization <!-- 1427491 -->
 The enrolled devices platform chart of the **Devices > Overview** blade organizes devices by platform, including Android, iOS, macOS, Windows, and Windows Mobile.  Devices running other operating systems are grouped into "Other."  This includes devices manufactured by Blackberry, NOKIA, and others.  
@@ -1904,7 +1905,7 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 ### New remote actions for iOS devices <!-- 854689 -->
 In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
-- 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
+- 	[Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
 - 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
 
@@ -2146,7 +2147,7 @@ You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple vo
 Devices that run Samsung Knox Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
-We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
+We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Microsoft Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 We've added support for [multi-user management](windows-enroll.md) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log into the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
@@ -2163,7 +2164,7 @@ You can now create an [edition upgrade policy to upgrade devices](edition-upgrad
 - Windows 10 Professional Education N
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will join Azure AD, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will join Azure AD, enroll in Intune, and be ready for your Azure AD users to sign in.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
 
 ### New MAM settings for PIN and managed storage locations <!-- 581122, 736644 -->
 Two new app settings are now available to help you with mobile application management (MAM) scenarios:

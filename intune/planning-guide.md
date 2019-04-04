@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune plan and design introduction
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article is an introduction to all Microsoft Intune plan, design, and implementation sections. Tools to help you determine goals, use-case scenarios and requirements, create rollout and communication plans, support, testing, and validation plans.
 keywords:
 author: dougeby
@@ -12,6 +12,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 

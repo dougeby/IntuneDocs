@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom per-app VPN profile for Android
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to create a per-app VPN profile for Android devices managed by Microsoft Intune.
 keywords:
 author: MandiOhlinger
@@ -12,6 +12,7 @@ ms.date: 04/05/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 

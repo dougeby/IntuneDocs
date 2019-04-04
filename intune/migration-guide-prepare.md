@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare Intune for mobile device management
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Evaluate your business and technical requirements before migrating to Microsoft Intune.
 keywords:
 author: dougeby
@@ -12,6 +12,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 58591442-6606-4f39-a06b-f17a1f25af25
 

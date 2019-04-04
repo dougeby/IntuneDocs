@@ -11,6 +11,7 @@ ms.date: 03/04/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 
@@ -64,7 +65,7 @@ If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-
 
 Before you can migrate to Intune, you first need an Intune subscription.
 
--   You can visit [this page](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), which gives you instructions on how to:
+-   You can visit [this page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), which gives you instructions on how to:
 
     -   Create a new Intune subscription linked to a new AAD tenant.
 

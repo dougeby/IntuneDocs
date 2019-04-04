@@ -2,16 +2,17 @@
 # required metadata
 
 title: Microsoft Intune policy to allow/block apps for Samsung Knox
-titlesuffix:
+titleSuffix:
 description: Create a custom profile to allow and block apps for Samsung Knox Standard devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata

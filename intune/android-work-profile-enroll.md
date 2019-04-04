@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll Android Enterprise work profile devices in Intune
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to enroll Android Enterprise work profile devices in Intune.
 keywords:
 author: ErikjeMS 
@@ -12,6 +12,7 @@ ms.date: 6/21/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 

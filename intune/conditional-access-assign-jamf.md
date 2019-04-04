@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device compliance policy for Jamf devices  | Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
 keywords:
 author: brenduns
@@ -12,6 +12,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 

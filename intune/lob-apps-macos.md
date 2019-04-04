@@ -2,7 +2,7 @@
 # required metadata
 
 title: How to add macOS line-of-business apps to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn about how to add macOS line-of-business (LOB) apps to Microsoft Intune.
 keywords:
 author: Erikre
@@ -12,6 +12,7 @@ ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 

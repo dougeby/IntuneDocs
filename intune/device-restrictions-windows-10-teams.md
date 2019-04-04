@@ -2,16 +2,17 @@
 # required metadata
 
 title: Microsoft Intune device restrictions for Windows 10 Team
-titlesuffix:
+titleSuffix:
 description: Learn about the device restrictions available for devices running Windows 10 Team.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 
 # optional metadata

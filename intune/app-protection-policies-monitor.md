@@ -12,6 +12,7 @@ ms.date: 02/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 
@@ -51,7 +52,7 @@ There are three different places to monitor the compliance status of MAM policie
 ![Summary tile on the Intune mobile application management pane](./media/app-protection-user-status-summary.png)
 
 - **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
-- **Flagged users**: The number of users who are experiencing issues. Jailbroken devices are reported under **Flagged users**.
+- **Flagged users**: The number of users who are experiencing issues. Jailbroken (iOS) and rooted (Android) devices are reported under **Flagged users**. Users with devices that are flagged by the Google SafetyNet device attestation check (if turned on by the IT admin) are reported here. 
 - **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
 - **Top Protected iOS Apps**: Based on the most used iOS apps, this information shows the number of protected and unprotected iOS apps.
 - **Top Protected Android Apps**: Based on the most used Android apps, this information shows the number of protected and unprotected Android apps.
@@ -92,7 +93,7 @@ To see the reporting for a user, follow these steps:
 3. Select the user from the list. You can see the details of the compliance status for that user.
 
 ### Flagged users
-The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp.
+The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. Users with devices that are flagged by the Google SafetyNet device attestation check are reported here with the reason as reported by Google.
 
 ## Reporting view
 

@@ -1,16 +1,17 @@
 ---
 # required metadata
 
-title: Troubleshoot company resource access problems | Microsoft Docs
-description: Use the Microsoft Intune error and status codes to help you troubleshoot resource access problems.
+title: Error and status codes in Microsoft Intune - Azure | Microsoft Docs
+description: See a list of the errors, status code, descriptions, and resolutions when using MDM managed devices, getting access to company resources, errors on iOS devices, and OMA response errors in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
-ms.topic: conceptual
+ms.date: 03/20/2019
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 
@@ -26,11 +27,11 @@ ms.custom:
 ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot company resource access problems with Microsoft Intune
+# Common error codes and descriptions in Microsoft Intune
 
-Use the error and status codes in this topic to help you troubleshoot problems when a Microsoft Intune action returns an error code.
+This article lists common errors, status codes, descriptions, and possible solutions when accessing organization resources. Use this information to help troubleshoot access issues when using Microsoft Intune.
 
-If this information does not solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
+If you need support help, see [get support for Microsoft Intune](get-support.md).
 
 ## Status codes for MDM managed Windows devices
 
@@ -387,5 +388,6 @@ If this information does not solve your problem, see [How to get support for Mic
 |-2016345912|0x87D100C8|The SyncML command completed successfully.|
 |-2016346011|0x87D10065|The specified SyncML command is being carried out, but has not yet completed.|
 
-### Next steps
-If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](get-support.md).
+## Next steps
+
+Contact Microsoft Support to [get support for Microsoft Intune](get-support.md).

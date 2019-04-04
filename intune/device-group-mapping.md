@@ -2,7 +2,7 @@
 # required metadata
 
 title: Categorize devices into groups in Intune
-titleSuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to categorize devices into groups for easier management.
 keywords:
 author: ErikjeMS
@@ -12,6 +12,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 

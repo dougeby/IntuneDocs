@@ -8,9 +8,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 
 

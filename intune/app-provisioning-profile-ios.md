@@ -2,7 +2,7 @@
 # required metadata
 
 title: iOS app provisioning profiles in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 keywords:
 author: Erikre
@@ -12,6 +12,7 @@ ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 

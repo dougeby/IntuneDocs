@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incomplete user enrollments report in Intune
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn about the Incomplete user enrollments report.
 keywords:
 author: ErikjeMS
@@ -12,6 +12,7 @@ ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 

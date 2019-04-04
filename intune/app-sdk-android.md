@@ -7,10 +7,11 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
-ms.topic: conceptual
+ms.date: 03/26/2019
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 
@@ -968,7 +969,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 	> [!NOTE]
 	> Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
 
-	```
+	```java
 	class MAMAuthCallback implements MAMServiceAuthenticationCallback {
 	    public String acquireToken(String upn, String aadId, String resourceId) {
 		return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1436,7 +1437,7 @@ All the methods used to set the identity report back result values via `MAMIdent
 |--|--|
 | SUCCEEDED | The identity change was successful. |
 | NOT_ALLOWED  | The identity change is not allowed. This occurs if an attempt is made to set the UI (Context) identity when a different identity is set on the current thread. |
-| CANCELLED | The user cancelled the identity change, generally by pressing the back button on a PIN or authentication prompt. |
+| CANCELLED | The user canceled the identity change, generally by pressing the back button on a PIN or authentication prompt. |
 | FAILED | The identity change failed for an unspecified reason.|
 
 The app should ensure that an identity switch is successful before
@@ -1856,7 +1857,7 @@ the MAM default selective wipe. An app should never register for both
 `WIPE_USER_DATA` and `WIPE_USER_AUXILIARY_DATA`.
 
 The default selective wipe will close the app gracefully, finishing activities and killing the app
-process. If your app overrides the default seletive wipe, you may want to consider closing your
+process. If your app overrides the default selective wipe, you may want to consider closing your
 app manually to prevent the user from accessing in-memory data after a wipe occurs.
 
 
@@ -1897,10 +1898,6 @@ LOGGER.info("Found value " + valueToUse);
 ### Notification
 App config adds a new notification type:
 * **REFRESH_APP_CONFIG**: This notification is sent in a `MAMUserNotification` and informs the app that new app config data is available.
-
-For more information about the capabilities of the Graph API, see the [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
-
-For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android).
 
 ### Further Reading
 For more information about the capabilities of the Graph API, see the [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
@@ -2037,7 +2034,7 @@ The Intune SDK maintains the contract provided by the Android API, though failur
 
 ## Telemetry
 
-The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs telemetry data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII).
+The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs system-generated data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personal data.
 
 > [!NOTE]
 > If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 

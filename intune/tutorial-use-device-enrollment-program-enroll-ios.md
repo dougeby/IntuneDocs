@@ -8,10 +8,11 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 1/30/2019
+ms.date: 03/29/2019
 ms.topic: tutorial
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 
 Customer intent: As an Intune admin, I want to set up the Device Enrollment Program so that users can automatically enroll in Intune.
@@ -57,7 +58,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 
 5. For **MDM Server Name**, enter *TestMDMServer* and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It isn't the name or URL of the Microsoft Intune server.
 
-6. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Choose **Choose File…** to upload the .pem file, and then choose **Next**.
+6. The **Add &lt;ServerName&gt;** dialog box opens, stating **Upload Your Public Key**. Select **Choose File…** to upload the .pem file, and then choose **Next**.
 
 6. Go to  **Deployment Programs** > **Device Enrollment Program** > **Manage Devices**.
 7. Under **Choose Devices By**, choose **Serial Number**. <!--ask Tiffany about this-->

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up enrollment for macOS devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to set up enrollment for macOS devices in Intune.
 keywords:
 author: ErikjeMS
@@ -12,6 +12,7 @@ ms.date: 08/13/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 
@@ -44,7 +45,7 @@ Complete the following prerequisites before setting up macOS device enrollment:
 - [Set the MDM Authority](mdm-authority-set.md)
 - [Create groups](groups-add.md)
 - [Configure the Company Portal](company-portal-app.md)
-- Assign user licenses in the [Office 365 portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- Assign user licenses in the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md)
 
 ## User-owned macOS devices (BYOD)

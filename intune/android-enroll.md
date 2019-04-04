@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll Android devices in Intune
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn how to enroll Android devices in Intune.
 keywords:
 author: ErikjeMS 
@@ -12,6 +12,7 @@ ms.date: 12/31/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 

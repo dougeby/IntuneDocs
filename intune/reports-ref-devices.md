@@ -1,16 +1,17 @@
 ---
 # required metadata
 title: Devices - Intune Data Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Reference topic for the Devices category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 
@@ -67,36 +68,12 @@ The **DeviceTypes** entity represents the device type referenced by other data w
 | 11 |Android |Android device-managed using Device Administrator |
 | 12 |ISocConsumer |iSoc Consumer device |
 | 14 |MacMDM |Mac OS X device managed with the built-in MDM agent |
-| 15 |HoloLens |Holo Lens device |
+| 15 |HoloLens |HoloLens device |
 | 16 |SurfaceHub |Surface Hub device |
 | 17 |AndroidForWork |Android device-managed using Android Profile Owner |
 | 100 |Blackberry |Blackberry Device |
 | 101 |Palm |Palm device |
 | 255 |Unknown |Unknown device type |
-
-## ClientRegistrationStateTypes
-
-The **ClientRegistrationStateTypes** entity represents the registration type referenced by other data warehouse tables.
-
-| Property  | Description |
-|---------|------------|
-| clientRegisterationStateID |Unique identifier for registration state |
-| clientRegisterationStateKey |Unique identifier of the registration state in the data warehouse - surrogate key |
-| clientRegisterationStateName |Registration state |
-
-### Example
-
-| ClientRegisterationStateID  | Name | Description |
-|---------|------------|--------|
-| 0 |NotRegistered |Not registered |
-| 1 |SMSIDConflict |SMS ID conflict |
-| 2 |Registered |Registered |
-| 3 |Revoked |State means the IT administrator has blocked the client, and the client can be unblocked. A device can also be in the Revoked state after it is wiped or retired. |
-| 4 |KeyConflict |Key conflict |
-| 5 |ApprovalPending |Approval pending |
-| 6 |ResetCert |Reset certificate |
-| 7 |NotRegisteredPendingEnrollment |Not registered pending enrollment |
-| 8 |Unknown |Unknown state |
 
 ## enrollmentActivities 
 The **EnrollmentActivity** entity indicates the activity of a device enrollment.
@@ -105,7 +82,6 @@ The **EnrollmentActivity** entity indicates the activity of a device enrollment.
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | Key of the date when this enrollment activity was recorded.               |
 | deviceEnrollmentTypeKey       | Key of the type of the enrollment.                                        |
-| deviceTypeKey                 | Key of the type of device.                                                |
 | enrollmentEventStatusKey      | Key of the status indicating the success or failure of the enrollment.    |
 | enrollmentFailureCategoryKey  | Key of the enrollment failure category (if the enrollment failed).        |
 | enrollmentFailureReasonKey    | Key of the enrollment failure reason (if the enrollment failed).          |
@@ -152,8 +128,8 @@ The **EnrollmentFailureCategory** entity indicates why a device enrollment faile
 | BadRequest                      | Client sent a request that is not understood/supported by the service.                                        |
 | FeatureNotSupported             | Feature(s) used by this enrollment are not supported for this account.                                        |
 | EnrollmentRestrictionsEnforced  | Enrollment restrictions configured by admin blocked this enrollment.                                          |
-| ClientDisconnected              | Client timed out or enrollment was aborted by enduser.                                                        |
-| UserAbandonment                 | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)  |
+| ClientDisconnected              | Client timed out or enrollment was aborted by end user.                                                        |
+| UserAbandonment                 | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)  |
 
 ## enrollmentFailureReasons  
 The **EnrollmentFailureReason** entity indicates a more detailed reason for a device enrollment failure within a given failure category.  
@@ -182,33 +158,8 @@ The **EnrollmentFailureReason** entity indicates a more detailed reason for a de
 | EnrollmentCriteriaNotMet         | This device failed to enroll due to a configured enrollment restriction rule.                                                                                                                          |
 | BulkDeviceNotPreregistered       | This device’s international mobile equipment identifier (IMEI) or serial number wasn’t found.  Without this identifier, devices are recognized as personal-owned devices which are currently blocked.  |
 | FeatureNotSupported              | The user was attempting to access a feature that is not yet released for all customers or is not compatible with your Intune configuration.                                                            |
-| UserAbandonment                  | Enrollment was abandoned by enduser. (Enduser started onboarding but failed to complete it in timely manner)                                                                                           |
+| UserAbandonment                  | Enrollment was abandoned by end user. (End user started onboarding but failed to complete it in timely manner)                                                                                           |
 | APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
-
-## EnrollmentTypes
-
-The **EnrollmentTypes** entity indicates how a device was enrolled. The enrollment type captures the method of enrollment. Examples list the different enrollment types and what they mean.
-
-| Property  | Description |
-|---------|------------|
-| managementStateID |Unique identifier of the management state. |
-| managementStateKey |Unique identifier of the management state in the data warehouse - surrogate key. |
-| managementStateName |Indicates the state of the remote action applied to this device. |
-
-### Example
-
-| enrollmentTypeID  | Name | Description |
-|---------|------------|--------|
-| 0 |Unknown |Enrollment type was not collected |
-| 1 |UserEnrollment |User initiated enrollment |
-| 2 |DeviceEnrollment |Device enrollment with user-less profile |
-| 3 |DeviceEnrollmentWithUDA |Device enrollment with UDA profile. |
-| 4 |AzureDomainJoined |User initiated device enrollment through Azure Active Directory |
-| 5 |UserEnrollmentWithServiceAccount |User initiated enrollment through service account |
-| 6 |DepDeviceEnrollment |DEP Device enrollment with user-less profile |
-| 7 |DepDeviceEnrollmentWithUDA |DEP Device enrollment with UDA profile |
-| 8 |AutoEnrollment |Combined DRS and MDM Enrollment for BYOD scenario |
-
 ## OwnerTypes
 
 The **EnrollmentTypes** entity indicates whether a device is corporate, personally owned, or unknown.
@@ -221,28 +172,6 @@ The **EnrollmentTypes** entity indicates whether a device is corporate, personal
 
 > [!Note]  
 > For the `ownerTypeName` in AzureAD when creating Dynamic Groups for devices, you need to set the filter value `deviceOwnership` as `Company`. For more information, see [Rules for devices](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
-
-## MdmStatuses
-
-The **MdmStatuses** entity indicates compliance state of the device.
-
-| Property  | Description |
-|---------|------------|
-| MdmStatusID |Unique identifier of the compliance state |
-| MdmStatusKey |Unique identifier of compliance state in the data warehouse - surrogate key | 
-| ComplianceStatus |Compliance state of the device, Should have one of the values from the table below | 
-
-
-### Example
-
-| MdmStatusID  | ComplianceStatus | Description |
-|---------|------------|--------|
-| 0 |Unknown |Device's compliance state is unknown. |
-| 1 |Compliant |The device is compliant. |
-| 2 |Noncompliant |The device is noncompliant. |
-| 3 |Conflict |The device's compliance resulted in s conflict. |
-| 4 |Error |There was error in reading the device's compliance state. |
-
 
 ## ManagementStates
 
@@ -270,30 +199,6 @@ The **ManagementStates** entity provides details on the state of the device. Det
 | 9 |WipeCanceled | Wipe command has been canceled. |
 | 10 |RetireCanceled | Retire command has been canceled. |
 | 11 |Discovered | The device is newly discovered by Intune, once it checks in for the first time it moves to -Managed- state. |
-
-## WorkPlaceJoinStateTypes
-
-The **WorkPlaceJoinStateTypes** entity represents the Azure Active Directory Workplace Join state of the device.  The enrollment workflow can use one or more certificates to verify or authenticate. When a device WorkPlace enrolls, these certificates  are used to validate the device and the user. The issuance of certificates is provided through a SCEP (Simple Certificate Enrollment Point) server. The values in The entity indicate various states that a device could be in as it goes through this process. Some of these states include WorkPlace join failing due to the issuance of a required certificate (from a SCEP server) failing. If a device never went through this workflow, the value is set to Unknown.
-
-| Property  | Description |
-|---------|------------|
-| WorkPlaceJoinStateID | Unique identifier of the work place join state |
-| WorkPlaceJoinStateKey | Unique identifier of the work place join state in the data warehouse - surrogate key |
-| WorkPlaceJoinStateName | Work place join state |
-
-### Example
-
-| workPlaceJoinStateID  | Name | Description |
-|---------|------------|--------|
-| 0 |Unknown |If a device is not workplace joined, it is in the Unknown state |
-| 1 |Succeeded |Successfully workplace joined |
-| 2 |FailureToGetScepMetadata |Failure to get SCEP metadata |
-| 3 |FailureToGetScepChallenge |Failure to get SCEP challenge |
-| 4 |DeviceFailureToInstallScepCommand |Failure to install SCEP command on device |
-| 5 |DeviceFailureToGetCertificate |Device failed to get certificate through SCEP |
-| 6 |DeviceScepPending |Pending state; device is still doing SCEP |
-| 7 |DeviceScepFailed |Device failed to install certificate through SCEP |
-| 8 |AADValidationFailed |Failed to validate device exists on AAD |
 
 ## ManagementAgentTypes
 
@@ -327,39 +232,20 @@ The **Devices** entity lists all enrolled devices under management and their cor
 | DeviceId | Unique identifier of the device. |
 | DeviceName | Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
 | DeviceTypeKey | Key of the device type attribute for this device. |
-| ClientRegisterationStateKey | Key of the client registration state attribute for this device. |
 | OwnerTypeKey | Key of the owner type attribute for this device: corporate, personal, or unknown. |
 | objectSourceKey | Ignore this column. |
-| CreatedDate | Date the device was enrolled on. |
-| LastContact | Last known device check-in with Intune. |
-| LastContactNotification | Last time Intune notified the device to check in with Intune. |
-| LastContactWorkplaceJoin | The timestamp indicating last known Workplace Join state for this device. |
 | ManagementAgentKey | Key of the management agent associated with this device. |
 | ManagementStateKey | Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted. |
-| ReferenceId | The device-s ID in Azure Active Directory. |
-| WorkPlaceJoinStateKey | Key of the workplace join state associated with this device. |
-| CategoryId | Ignore this column. |
-| EnrollmentTypeKey | Key of the enrollment type associated with this device, indicating method of enrollment. |
-| CertExpirationDate | Expiry date of the MDM management certificate. |
-| MdmStatusKey | A key to MdmStatus. |
-| OSFamily | OS Family (Windows, iOS, Android, etc.) |
 | OSVersion | OS version |
 | OSMajorVersion | Major version component of the OS version (major.minor.build.revision). |
 | OSMinorVersion | Minor version component of the OS version (major.minor.build.revision). |
 | OSBuildNumber | Build version component of the OS version (major.minor.build.revision). |
 | OSRevisionNumber | Revision version component of the OS version (major.minor.build.revision). |
-| EasID | This devices EAS ID, if the device is managed by Exchange Active Sync. |
-| GraphDeviceIsManaged | The last management status that Intune set in Azure AD. |
-| GraphDeviceIsCompliant | The last compliance state that Intune set in Azure AD. |
 | SerialNumber | Serial number of the device, if available. |
-| EnrolledByUser | The ID of user who enrolled this device that references the userId column in User table. |
 | RowLastModifiedDateTimeUTC | Last time this record was modified. |
-| ProcessorArchitecture | Processor architecture. |
 | DeviceAction | Last device action issued, Ignore for now. |
 | Manufacturer | Manufacturer of the device. |
 | Model | Model of the device. |
-| LastPolicyUpdateUtc | Latest time when policy was updated on the device. |
-| LastExchangeStatusUtc | Last time the device synced with exchange. |
 | IsDeleted | Set to True if the device is not managed by Intune anymore. Preserves the last known state. |
 | AndroidSecurityPatchLevel |The date of the device's most recent security patch. |
 
@@ -372,138 +258,14 @@ The **DevicePropertyHistory** entity has the same properties as the devices tabl
 | DateKey |Reference to date table indicating the day. |
 | DeviceKey |Unique identifier of the device in the data warehouse - surrogate key. This is a reference to the Device table that contains the Intune device ID. |
 | DeviceName |Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
-| DeviceTypeKey |Key of the device type attribute for this device. |
-| ClientRegisterationStateKey |Key of the client registration state attribute for this device. |
 | OwnerTypeKey |Key of the owner type attribute for this device: corporate, personal, or unknown. |
 | objectSourceKey |Ignore this column. |
-| CreatedDate |Date the device was enrolled on. |
-| LastContact |Last known device check-in with Intune. |
-| LastContactNotification |Last time Intune notified the device to check in with Intune. |
-| LastContactWorkplaceJoin |The timestamp indicating last known Workplace Join state for this device. |
-| ManagementAgentKey |Key of the management agent associated with this device. |
 | ManagementStateKey |Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted. |
-| ReferenceId |The device-s ID in Azure Active Directory. |
-| WorkPlaceJoinStateKey |Key of the workplace join state associated with this device. |
-| CategoryId |Ignore this column. |
-| EnrollmentTypeKey |Key of the enrollment type associated with this device, indicating method of enrollment. |
-| CertExpirationDate |Expiry date of the MDM management certificate. |
-| MdmStatusKey |A key to MdmStatus. |
-| OSFamily |OS Family (Windows, iOS, Android, etc.) |
 | OSVersion |OS version. |
 | OSMajorVersion |Major version component of the OS version (major.minor.build.revision). |
 | OSMinorVersion |Minor version component of the OS version (major.minor.build.revision). |
 | OSBuildNumber |Build version component of the OS version (major.minor.build.revision). |
-| OSRevisionNumber |Revision version component of the OS version (major.minor.build.revision). |
-| EasID |This devices EAS ID, if the device is managed by Exchange Active Sync. |
-| GraphDeviceIsManaged |The last management status that Intune set in Azure AD. |
-| GraphDeviceIsCompliant |The last compliance state that Intune set in Azure AD. |
-| SerialNumber |Serial number of the device, if available. |
-| EnrolledByUser |The ID of user who enrolled this device that references the userId column in User table. |
-| RowLastModifiedDateTimeUTC |Last time this record was modified. |
-| ProcessorArchitecture |Processor architecture. |
 | DeviceAction |Last device action issued, Ignore for now. |
-| Manufacturer |Manufacturer of the device. |
-| Model |Model of the device. |
-| LastPolicyUpdateUtc |Latest time when policy was updated on the device. |
-| LastExchangeStatusUtc |Last time the device synced with exchange. |
-
-## MdmDeviceInventoryHistories
-
-The **MdmDeviceInventoryHistories** entity contains daily snapshots of inventory data for MDM-managed devices for the past 90 days. The column DateKey indicates the day for the row. Some properties might not be applicable or populated for all devices so consult this page for further details. For more information see [Understand your devices with inventory in Microsoft Intune](device-inventory.md).
-
-| Property  | Description |
-|---------|------------|
-| DateKey | Reference to date table indicating the day. |
-| DeviceKey |Unique identifier of the device in the data warehouse - surrogate key. This is a reference to the Device table that contains the Intune device ID. |
-| DeviceModel |Model of the device. |
-| OS |OS of the device. |
-| DeviceName |Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
-| SoftwareVersion |In most cases this is the OS version except in Apple platforms where it differs from OS version. |
-| Imei |IMEI number |
-| HardwareInventoryTimeUtc |The first time inventory was reported for this device. |
-| InventoryModifiedTimeUtc |The last time inventory was stored when this snapshot was taken. |
-| InventoryReportingTimeUtc |The last time inventory was collected for this device. |
-| ExchangeActiveSyncId |Exchange ActiveSync Device ID. |
-| ComputerSystemDescription |System description. |
-| ComputerSystemName |System Name. |
-| ComputerSystemManufacturer |System Manufacturer. |
-| ComputerSystemModel |System Model. |
-| UserName |User name. |
-| OSType |OS Type. |
-| OSCaption |OS Caption. |
-| OSName |OS Name. |
-| OSManufacturer |OS Manufacturer. |
-| OSProductSuite |OS Product Suite. |
-| OSProductType |OS Product Type. |
-| Locale |OS Locale. |
-| PhysicalMemoryCapacity |Physical Memory Capacity (in bytes). |
-| PhysicalMemoryRemovable |Physical Removable Memory (in bytes). |
-| SystemEnclosureChassisTypesInnerText |Defines the system chassis type for this device. The numbers indicate the following values:  <br>0 or Empty = Unknown   <br>1 = It is a Desktop   <br>2 = It is a Laptop  <br>3 = It is a Workstation  <br>4 = It is an Enterprise Server  <br>100 = It is a Phone  <br>101 = It is a Tablet  <br>102/103 = Another unknown type of Mobile device |
-| SystemEnclosureModel |System Enclosure model. |
-| SystemEnclosureSerialNumber |System Enclosure Serial number. |
-| NetworkAdapterConfigurationText |Configuration text from network adapter. |
-| MacAddress |MAC address. |
-| SmsID |Intune device ID. |
-| CertExpiry |Expiry date of the MDM management certificate. |
-| DeviceClientAgentVersion |Client Agent Version. |
-| DeviceClientID |Device Client ID. |
-| SerialNumber |Serial Number. |
-| DeviceManufacturer |Device Manufacturer. |
-| DMVersion |DM version. |
-| FirmwareVersion |Firmware Version. |
-| HardwareVersion |Hardware Version. |
-| PlatformType |Platform Type. |
-| ProcessorLevel |Processor level. |
-| ProcessorRevision |Processor Revision. |
-| Product |Product. |
-| ProductVersion |Product version. |
-| OEM |Original Equipment manufacturer. |
-| DeviceBuildVersion |Device Build version. |
-| Meid |Mobile equipment identifier. |
-| PhoneNumber |Phone number. |
-| SubscriberCarrierNetwork |Phone Carrier Network Name. |
-| CellularTechnology |Phone Carrier Network Type (CDMA/GSM). |
-| Imsi |IMSI number. |
-| JailBroken |True if the device is Jail Broken or Rooted. |
-| IsActivationLockEnabled |True Is Activation Lock is Enabled |
-| DeviceType |Device Type |
-| IsSupervised |Is supervised |
-| DeviceDisplayNumberOfColors |Device display Number Of Colors |
-| HorizontalResolution |Device horizontal screen resolution |
-| VerticalResolution |Device vertical screen resolution |
-| StorageFree |Free storage (in bytes) |
-| StorageTotal |Total storage (in bytes) |
-| ProgramFree |Free Program memory (in bytes) |
-| ProgramTotal |Total Program memory (in bytes) |
-| RemovableStorageFree |Free removable storage (in bytes) |
-| RemovableStorageTotal |Total removable storage (in bytes) |
-| DeviceMemoryDeviceCapacity |Device memory capacity |
-| DeviceMemoryAvailableDeviceCapacity |Device memory available capacity |
-| DeviceOSVersion |OS Version |
-| DeviceOSPlatform |OS platform |
-| DeviceOSLanguage |OS language |
-| PasswordMaxAttemptsBeforeWipe |Maximum allowed password attempts allowed before device wipe |
-| PasswordMinComplexChars |Minimum number of complex characters required in the password |
-| PasswordMinLength |Minimum required length of password |
-| PasswordHistory |Password - Minimum historic passwords unaccepted |
-| PasswordEnabled |Password - Enabled? |
-| PasswordExpiration |Password - Expiration date. |
-| AllowRecoveryPassword |Allow password recovery. |
-| PasswordAutoLockTimeout |Password - Auto lock timeout. |
-| PasswordType |Password Type. |
-| BacklightACTimeout |Backlight time out when plugged into power source. |
-| BacklightBatTimeout |Backlight timeout on battery. |
-| PowerBackupPercent |Power backup percent. |
-| BatteryPercent |Remaining battery percent. |
-| PlatformID |Platform ID. |
-| ExchangeDeviceID |Exchange Device ID. |
-| SmsProcessorDescription |Processor description. |
-| OwnerEmailAddress |Owner-s email address. |
-| DeviceOSName |OS Name. |
-| WifiMac |WIFI Mac address. |
-| EthernetMac |Ethernet MAC address. |
-| RequireEncryption |Indicates whether device is encrypted or not. |
-| ActivationLockBypassCode |Activation lock Bypass code. |
 
 ## ApplicationInventory
 

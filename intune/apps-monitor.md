@@ -2,16 +2,17 @@
 # required metadata
 
 title: Monitor app information and assignments
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: After you've assigned an app to users or devices, use this information to help you monitor the app's status.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 
@@ -54,7 +55,7 @@ The **Essentials** section contains the following information about the app:
 |------------------------|------------------------------------------------------------------|
 | **Publisher**          | The publisher of the app.                                            |
 | **Operating system**   | The app operating system (Windows, iOS, Android, and so on). |
-| **Created**             | The date and time when this revision was created.                         |
+| **Created**             | The date and time when this revision was created. <b>**Note**: This date value is updated when an IT admin changes app metadata, such as changing the app category or app description.                        |
 | **Assigned**           | Whether the app has been assigned (**Yes** or **No**).                  |
 
 ### Device and user status graphs

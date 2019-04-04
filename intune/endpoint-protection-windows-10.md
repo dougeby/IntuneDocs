@@ -3,13 +3,14 @@
 title: Protection settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
 description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 
@@ -89,8 +90,7 @@ These settings are applicable to all network types.
 
 These settings are applicable to specific network types, including **Domain (workplace) network**, **Private (discoverable) network**, and **Public (non-discoverable) network**.
 
-#### General settings
-
+#### General settings  
 - **Windows Defender Firewall**: Choose **Enable** to turn on the firewall, and advanced security. **Not configured** (default) allows all network traffic, regardless of any other policy settings.
 - **Stealth mode**: **Block** the firewall from operating in stealth mode. Blocking stealth mode allows you to also block **IPsec secured packet exemption**. **Not configured** (default) operates the firewall in stealth mode, which helps prevent responses to probing requests.
 - **Shielded**: **Block** turns off this feature. **Not configured** (default) enables this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.

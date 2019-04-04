@@ -2,16 +2,17 @@
 # required metadata
 
 title: Troubleshoot mobile application management 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This topic describes some troubleshooting tips for conditional access deployments.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 
@@ -42,7 +43,7 @@ These are common issues an IT administrator may experience when using Intune app
 | -- | -- | -- |
 | Policy not applied to Skype for Business | App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices. | Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype. |
 | Office app policy not applied | App protection policies are not applying to any [supported Office App](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) for any user. | Confirm that the user is licensed for Intune and the Office apps are targeted by a deployed app protection policy. It can take up to 8 hours for a newly deployed app protection policy to be applied. |
-| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure Portal. | The following user roles have access to the Azure Portal: <ul><li>Global administrator, which you can set up in the [Office Portal](https://portal.office.com/)</li><li>Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
+| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure Portal. | The following user roles have access to the Azure Portal: <ul><li>Global administrator, which you can set up in the [Microsoft 365 admin center](https://admin.microsoft.com/)</li><li>Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
 |User accounts missing from app protection policy reports | Admin console reports do not show user accounts to which app protection policy was recently deployed. | If a user is newly targeted by an app protection policy, it can take up to 24 hours for that user to show up in reports as a targeted user. |
 | Policy changes not working | Changes and updates to app protection policy can take up to 8 hours to apply. | If applicable, the end-user can log out of the app and log back in to force sync with service. |
 | App protection policy not working with DEP | App protection policy is not applying to Apple DEP devices. | Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP. <br><br>Refer to [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md) for more information on iOS DEP enrollment.|
@@ -83,7 +84,7 @@ Error message or dialog | Cause | Remediation |
 **App Not Set Up**: This app has not been set up for you to use. Contact your IT administrator for help. | Failure to detect a required app protection policy for the app. |Make sure an iOS app protection policy is deployed to the user's security group and targets this app.
 **Welcome to the Intune Managed Browser**: This app works best when managed by Microsoft Intune. You can always use this app to browse the web, and when it is managed by Microsoft Intune you gain access to additional data protection features. | Failure to detect a required app protection policy for the Intune Managed Browser app. <br><br>The user can still use the app to browse the web, but the app is not managed by Intune. | Make sure an iOS app protection policy is deployed to the user's security group and targets the Intune Managed Browser app.
 **Sign-in Failed**: We can't sign you in right now. Please try again later. | Failure to enroll the user with the MAM service after the user attempts to sign in with their work or school account. | Make sure an iOS app protection policy is deployed to the user's security group and targets this app.
-**Account Not Set Up**: Your organization has not set up your account to access work or school data. Please contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Office portal](https://portal.office.com).
+**Account Not Set Up**: Your organization has not set up your account to access work or school data. Please contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Microsoft 365 admin center](https://admin.microsoft.com).
 **Device Non-Compliant**: This app cannot be used because you are using a jailbroken device. Contact your IT administrator for help. | Intune detected the user is on a jailbroken device. | Reset the device to default factory settings. Follow [these instructions](https://support.apple.com/HT201274) from the Apple support site.
 **Internet Connection Required**: You must be connected to the Internet to verify that you can use this app. | The device is not connected to the Internet. | Connect the device to a WiFi or Data network.
 **Unknown Failure**: Try restarting this app. If the problem persists, contact your IT administrator for help. | An unknown failure occurred. | Wait a while and try again. If the error persists, create a [support ticket](get-support.md#create-an-online-support-ticket) with Intune.
@@ -102,7 +103,7 @@ Dialog/Error message | Cause | Remediation |
 **Sign-in failed**: Try to sign in again. If this problem persists, contact your IT administrator for help. | Failure to authenticate the account with which the user attempted to sign in. | Make sure the user signs in with the work or school account that is already enrolled with the Intune MAM service (the first work or school account that was successfully signed into in this app). <br><br> Clear the app's data. <br><br> Make sure the app version is up-to-date. <br><br> Make sure the Company Portal version is up-to-date.
 **Internet connection required**: You must be connected to the Internet to verify that you can use this app. | The device is not connected to the Internet. | Connect the device to a WiFi or Data network.
 **Device noncompliant**: This app can't be used because you are using a rooted device. Contact your IT administrator for help. | Intune detected the user is on a rooted device. | Reset the device to default factory settings.
-**Account not set up**: This app must be managed by Microsoft Intune, but your account has not been set up. Contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Office portal](https://portal.office.com).
+**Account not set up**: This app must be managed by Microsoft Intune, but your account has not been set up. Contact your IT administrator for help. | The user account does not have an Intune A Direct license. | Make sure the user's account has an Intune license assigned in the [Microsoft 365 admin center](https://admin.microsoft.com).
 **Unable to register the app**: This app must be managed by Microsoft Intune, but we were unable to register this app at this time. Contact your IT administrator for help. | Failure to automatically enroll the app with the MAM service when app protection policy is required. | Clear the app's data. <br><br> Send logs to Intune through the Company Portal app or file a support ticket. For more information, see [How to get support for Microsoft Intune](get-support.md).
 
 ## Next steps

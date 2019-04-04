@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assign apps to groups in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn how to assign an Intune app to groups of users or devices using Microsoft Intune.
 keywords:
 author: Erikre
@@ -12,6 +12,7 @@ ms.date: 01/24/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 

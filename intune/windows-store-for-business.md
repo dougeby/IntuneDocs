@@ -2,16 +2,17 @@
 # required metadata
 
 title: Manage apps from Microsoft Store for Business 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track these apps.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 
@@ -84,7 +85,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Assign apps
 
-You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). However, instead of assigning apps from the **All Apps** page, you assign them from the **Licensed Apps** page.
+You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). 
 
 Offline apps can be targeted to user groups, device groups, or groups with users and devices.
 Offline apps can be installed for a specific user on a device or for all users on a device. 

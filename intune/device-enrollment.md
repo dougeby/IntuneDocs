@@ -2,7 +2,7 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
 author: ErikjeMS
@@ -12,6 +12,7 @@ ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 

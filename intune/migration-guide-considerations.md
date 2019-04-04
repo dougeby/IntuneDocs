@@ -2,7 +2,7 @@
 # required metadata
 
 title: Special migration considerations
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article provides special migration considerations before you start a migration campaign to Microsoft Intune.
 keywords:
 author: dougeby
@@ -12,6 +12,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 

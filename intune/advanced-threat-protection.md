@@ -12,6 +12,7 @@ ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology:
 ms.reviewer: joglocke
 
@@ -114,12 +115,12 @@ The compliance policy determines an acceptable level of risk on a device.
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level:
+5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant.
-  - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
-  - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-  - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Windows Defender ATP users the value *Secure*.)
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 
