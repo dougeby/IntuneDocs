@@ -114,11 +114,11 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
     ![Example screenshot of Settings app, Profiles & Device Management settings, showing the management profile.](./media/ios-00-cp-enroll-1903.PNG)  
 
-9. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**.  
+13. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**.  
 
     ![Example screenshot of Company Portal, "Set up access" screen, with yellow triangle next to setting requirement.](./media/ios-12-cp-enroll-1903.PNG)  
 
-2. You'll know that setup is complete when all items in the list show a green circle. Tap **Done**.   
+14. You'll know that setup is complete when all items in the list show a green circle. Tap **Done**.   
     
     ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1903.PNG)  
 
