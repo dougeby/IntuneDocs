@@ -55,9 +55,7 @@ To learn more about enrollment, see [What happens when I install the Company Por
 
 ## Enroll your iOS device   
 
-> [!IMPORTANT]     
-
-Go to the App store to download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) to your device. During enrollment, you'll also need a Wi-Fi connection and access to Safari. 
+Go to the App store to download and install the [Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) on your device. You'll also need to maintain a Wi-Fi connection and have access to Safari during enrollment. 
 
 Pausing for more than a few minutes during enrollment might cause the app to close or end setup. If this happens, open the Company Portal app and try again.  
 
@@ -83,9 +81,11 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 6. Safari opens the Company Portal website. When prompted to download the configuration profile, tap **Allow**.  
 
+    If you accidentally tap **Ignore**, refresh the page. You'll be prompted to open the Company Portal app. From the app, tap **Download again**.  
+
     ![Example screenshot of Safari browser, configuration profile prompt, with **Ignore** and **Allow** buttons.](./media/ios-1904-allow-download.PNG)  
 
-    If you accidentally tap **Ignore**, refresh the page. You'll be prompted to open the Company Portal app, where you can then tap **Download again**.    
+  
 
 7. When the download is complete, tap **Done**.   
 
