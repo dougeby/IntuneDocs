@@ -49,8 +49,14 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->     
 
 <!-- ########################## -->
+
 ## Week of April 1, 2019
 We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+
+### App management
+
+#### User experience update for the Company Portal app for iOS <!-- 2536024 -->
+The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.
 
 ## Week of March 25, 2019
 
