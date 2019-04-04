@@ -47,10 +47,11 @@ The specific enrollment restrictions that you can create include:
   - iOS
   - macOS
   - Windows
-- Platform operating system version for iOS, Android, Android work profile, and Windows. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
+  - Windows Mobile
+- Platform operating system version for iOS, Android, Android work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows only).
+- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows, and Windows Mobile only).
 
 ## Default restrictions
 
