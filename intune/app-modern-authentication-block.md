@@ -3,7 +3,7 @@
 
 title: Block apps with no modern authentication on Intune
 titleSuffix: Microsoft Intune
-description: Learn about blocking apps that do not use modern authentication (ADAL) using Microsoft Intune.
+description: Learn about app and modern authentication (ADAL) using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -29,7 +29,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Block apps that do not use modern authentication (ADAL)
+# Block apps that don't use modern authentication (ADAL)
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -37,11 +37,11 @@ App-based conditional access with app protection policies rely on applications u
 
 ## Block access to apps
 
-To block access to apps that do not use modern authentication, use Intune app protection policies to implement condition access. For more information, see [App-based conditional access with Intune](app-based-conditional-access-intune.md).
+To block access to apps that don't use modern authentication, use Intune app protection policies to implement condition access. For more information, see [App-based conditional access with Intune](app-based-conditional-access-intune.md).
 
 ## Additional information
 
-For more information about Azure AD Conditional Access, see the following:
+For more information about Azure AD Conditional Access, see the following topics:
 - [What is conditional access in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
 - [How app-based conditional access works](app-based-conditional-access-intune.md#how-app-based-conditional-access-works)
 - [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/conditional-access-for-exo-and-spo)
