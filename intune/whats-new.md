@@ -50,6 +50,10 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 <!-- ########################## -->
 ## Week of April 1, 2019
+
+### Device configuration
+
+#### Updated certificate connectors  <!-- ICM 113304612 -->
 We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ## Week of March 25, 2019
