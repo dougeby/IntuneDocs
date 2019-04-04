@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -61,7 +61,7 @@ The Intune management extension has the following prerequisites:
     - **Description**: Enter a description for the PowerShell script. This setting is optional, but recommended. 
     - **Script location**: Browse to the PowerShell script. The script must be less than 200 KB (ASCII).
 4. Choose **Configure**, and enter the following properties:
-    - **Run this script using the logged on credentials**: Select **Yes** to run the script with the user's credentials on the device. Choose **No** (default) to run the script in the system context. Select **Yes** unless the script is required to run in the system context.
+    - **Run this script using the logged on credentials**: Select **Yes** to run the script with the user's credentials on the device. Choose **No** (default) to run the script in the system context. Many administrators choose **Yes**. If the script is required to run in the system context, choose **No**.
     - **Enforce script signature check**: Select **Yes** if the script must be signed by a trusted publisher. Select **No** (default) if there isn't a requirement for the script to be signed. 
     - **Run script in 64-bit PowerShell host**: Select **Yes** to run the script in a 64-bit PowerShell (PS) host on a 64-bit client architecture. Select **No** (default) runs the script in a 32-bit PowerShell host.
 
