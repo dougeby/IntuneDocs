@@ -218,6 +218,9 @@ It takes about 15 minutes for the device profile status to change from *Not assi
     The profile is created and displayed in the list.
 1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
 
+> [NOTE]
+> The naming capabilities for Windows Autopilot for Hybrid Azure AD Join do not support variables such as %SERIAL% and only support prefixes for the computer name.
+
 ## Next steps
 
 After you configure Windows Autopilot, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](device-management.md).
