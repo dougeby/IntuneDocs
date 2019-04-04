@@ -122,7 +122,7 @@ Add the Company Portal to the **Allowed apps** or **Exempt apps** list in the Wi
 ### Where it appears
 iOS apps developed by your organization that are not available in the App Store are not trusted by your device by default. When you install such apps using Company Portal and launch the app, the following message will be displayed:
 
-<img alt="iOS app message - Untrusted Enterprise Developer" src="./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png" width="300">
+![iOS app message - Untrusted Enterprise Developer](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
 
 ### What it means
 This message means you need to modify your iOS device settings to approve and install an app developed by your company on your iOS device.
@@ -140,7 +140,7 @@ When you install such apps using the Company Portal and launch the app, follow t
 5. Press **Trust _developer name_**.
 6. Confirm the app by selecting **Trust** on the app install pop-up message.
 
-    <img alt="iOS device UI - Trust app message" src="./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png" width="300">
+   ![iOS device UI - Trust app message](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
 
     You should be able to launch and use the company app.
 
