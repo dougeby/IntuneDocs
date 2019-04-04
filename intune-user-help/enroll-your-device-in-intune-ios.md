@@ -79,7 +79,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 > These next steps and screens will differ depending on your iOS version. Follow the steps for your iOS version. 
 
 6. Safari opens the Company Portal website on your device. When prompted to download the configuration profile, tap **Allow**. If you're on a device running:  
-     * *iOS 12.1 and earlier*: You'll be automatically redirected to the Settings app. Skip to *step 9* in this article.  
+     * *iOS 12.1 and earlier*: You'll be automatically redirected to the Settings app. Skip to *step 8* in this article.  
     * *iOS 12.2 and later*: When the download is complete, tap **Done.** Continue to *step 7* in this article.  
 
     If you accidentally tap **Ignore**, refresh the page. You'll be prompted to open the Company Portal app. From the app, you can tap **Download again**.
@@ -91,7 +91,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
     ![Example screenshot of Company Portal, Installing Management Profile screen.](./media/ios-1904-settings-icon.PNG)  
 
-8. *All iOS versions*: Go to the Settings app and tap **Install Downloaded Profile**.  
+8. Go to the Settings app and tap **Install Downloaded Profile**.  
 
     If **Install Downloaded Profile** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
 
