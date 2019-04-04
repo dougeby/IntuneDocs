@@ -39,6 +39,9 @@ You can use Intune to assign these certificates to devices you manage. Intune su
 
 Each of these certificate types has its own prerequisites and infrastructure requirements.
 
+> [!NOTE]
+> Android Dedicated devices do not support certificate profiles.
+
 ## Overview
 
 1. Be sure the correct certificate infrastructure is set up. You can use [SCEP certificates](certificates-scep-configure.md), and [PKCS certificates](certficates-pfx-configure.md).
