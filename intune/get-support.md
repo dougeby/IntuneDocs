@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,21 @@ ms.collection: M365-identity-device-management
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
-As an IT admin, you can use the **Help and Support** option to file an on-line support ticket for Intune from the Azure portal. For information about Azure AD roles and permissions that are required to create a support ticket, see [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+As an Intune admin, you can use the **Help and Support** option to file an on-line support ticket for Intune from the Azure portal. To create and manage a support incident, your account must be assigned an Azure Active Directory (Azure AD) role that includes the *action* **microsoft.office365.supportTickets/allEntities/allTasks**. For information about Azure AD roles and permissions that are required to create a support ticket, see [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
+**Known issues for creating support incidents**
+
+If your account has the required permissions but fails to successfully access Help and Support, or create or manage a support incident, review the following known issues, and resolutions:  
+- Stale user token for your account. To resolve this issue, sign out of all active console sessions, sign in again, and then attempt to create or manage a support incident. 
+- Multiple active sessions. If you are signed in with more than one user or session, sign out all but one console. Then, with a single active session, attempt to create or manage a support incident.
+
+Additional actions that might be necessary to resolve access issues:
+- Clear all cookies for your active browser session, and then retry creating or managing a support incident.
+- Use an InPrivate browsing session to sign in to Intune, and try to create or manage a support incident.  
+
+If the preceding workarounds don't help, go to [Microsoft 365 admin center](https://admin.microsoft.com) and create a support ticket from there. We are currently working on a fix that will be available in late summer. 
+
+
 
 >[!IMPORTANT]  
 > For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
