@@ -513,7 +513,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 These are the plans for ways we will be improving the user experience by updating our user interface.
 
 > [!Note]
-> Please note that the images below may be previews, and the announced product may differ from the presented versions.  
+> The images below may be previews, and the announced product may differ from the presented versions.  
 
 
 ### See also
