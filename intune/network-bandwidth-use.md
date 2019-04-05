@@ -157,15 +157,11 @@ The following tables list the ports and services that the Intune client accesses
 
 ### Apple device network information
 
-|         Hostname         |                                        URL (IP address/subnet)                                        |  Protocol  |     Port     |                          Device                           |
-|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
-|      Admin Console       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS and macOS                    |
-|      Admin Console       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS and macOS                    |
-|      Admin Console       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS and macOS                    |
-|        PI Server         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         For Apple iOS and macOS cloud messaging.          |
-|     Device Services      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
-|     Device Services      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
-|     Device Services      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
-| Devices (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 and 443 | Apple only. &#39;#&#39; is a random number from 0 to 200. |
-| Devices (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 or 443   |                        Apple only                         |
+|         Used for         |                                       Hostname (IP address/subnet)                                        |  Protocol  |     Port     |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|
+|Receiving Push notifications from Intune service via Apple Push Notification Service (APNS). See Apple’s documentation [here](https://support.apple.com/en-us/HT203609)|                                    gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |
+|Sending feedback to Intune service via Apple Push Notification Service (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
+|Retrieving and displaying content from Apple servers|iTunesitunes.apple.com \*.mzstatic.com \*.phobos.apple.com \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
+|Communications with APNS servers|#-courier.push.apple.com (17.0.0.0/8)<br>'#' is a random number from 0 to 50.|    TCP     |  5223 and 443  |
+|Various functionality including accessing the World Wide Web, iTunes store, macOS app store, iCloud, messaging, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 or 443   |
 
