@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/05/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -79,9 +79,9 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 > These next steps and screens will differ depending on your iOS version. Follow the steps for your iOS version. 
 
 6. Safari opens the Company Portal website on your device. When prompted to download the configuration profile, tap **Allow**. If you're on a device running:  
-     * *iOS 12.1 and earlier*: You'll be automatically redirected to the Settings app. Skip to *step 8* in this article.  
-    * *iOS 12.2 and later*: When the download is complete, tap **Done.** Continue to *step 7* in this article.  
-
+    * *iOS 12.2 and later*: When the download is complete, tap **Done.** Continue to *step 7* in this article.
+    * *iOS 12.1 and earlier*: You'll be automatically redirected to the Settings app. Skip to *step 8* in this article.  
+ 
     If you accidentally tap **Ignore**, refresh the page. You'll be prompted to open the Company Portal app. From the app, you can tap **Download again**.
 
   > [!NOTE]
@@ -91,11 +91,11 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
     ![Example screenshot of Company Portal, Installing Management Profile screen.](./media/ios-1904-settings-icon.PNG)  
 
-8. Go to the Settings app and tap **Install Downloaded Profile**.  
+8. Go to the Settings app and tap **Profile Downloaded**.  
 
-    If **Install Downloaded Profile** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
+    If **Profile Downloaded** doesn't appear as an option, go to **General** > **Profiles**. If you still don't see the profile, you may need to download it again.  
 
-    ![Example screenshot of the Settings app, Install Downloaded Profile setting, with a red badge that indicates a recently downloaded profile.](./media/ios-10-cp-enroll-1903.PNG)  
+    ![Example screenshot of the Settings app, Profile Downloaded setting.](./media/ios-1904-settings-badge.PNG)  
 
 9. Tap **Install**.  
     
