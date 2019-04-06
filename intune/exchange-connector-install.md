@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Set up Microsoft Intune on-premises Exchange connector | Microsoft Intune
+title: Set up Microsoft Intune on-premises Exchange connector
+titleSuffix: Microsoft Intune
 description: Use the on-premises Exchange connector to manage device access to Exchange mailboxes based on Intune enrollment and Exchange Active Sync (EAS).
 keywords:
 author: brenduns

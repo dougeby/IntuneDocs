@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: How to educate your end users about Microsoft Intune | Microsoft Intune
+title: How to educate your end users about Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Share information with your device users to make your Intune deployment successful.
 keywords:
 author: lenewsad

@@ -1,6 +1,7 @@
 ---
 # required metadata
-title: Encryption report and BitLocker keys in Microsoft Intune | Microsoft Intune
+title: Encryption report and BitLocker keys in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: View a report on your device encryption status, and access BitLocker recovery keys from within the Microsoft Intune portal.
 keywords:
 author: brenduns
