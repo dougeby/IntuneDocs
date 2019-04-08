@@ -187,15 +187,6 @@ We're adding a new Windows update ring setting that you can use to block users f
 ### Windows Update notifications <!-- 3316782 -->
 We're adding support to the Windows Update ring configurations so you'll be able to configure the Windows Update notifications your users see. This setting won't be available from within the portal, but can be configured by using the Intune Graph API.
 
-### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 --> 
-Company Portal for iOS will be updating the app enrollment screens and steps to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow will now prompt users to:
-
-- Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app.
-- Open the Settings app to install the management profile on their device.
-- Return to the Company Portal app to complete enrollment.
-
-For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These doc changes will be live after Apple releases iOS version 12.2. 
-
 ### Easier access to Diagnostic Settings <!-- 3804627 -->
 We’re adding a new option to the **Audit logs** blade in every Audit Log workload in the Intune console that you can use to directly open the *Diagnostic Settings* page.
 

@@ -2,13 +2,14 @@
 # required metadata
 
 
-title: How to get support for Microsoft Intune | Microsoft Intune
+title: How to get support for Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Get online and telephone support for Microsoft Intune paid and trial subscriptions.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +34,21 @@ ms.collection: M365-identity-device-management
 
 Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune. Support is available both online and by phone for paid and trial subscriptions. Online technical support is available in English and Japanese. Phone support and online billing support are available in additional languages.
 
-As an IT admin, you can use the **Help and Support** option to file an on-line support ticket for Intune from the Azure portal. For information about Azure AD roles and permissions that are required to create a support ticket, see [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+As an Intune admin, you can use the **Help and Support** option to file an on-line support ticket for Intune from the Azure portal. To create and manage a support incident, your account must be assigned an Azure Active Directory (Azure AD) role that includes the *action* **microsoft.office365.supportTickets/allEntities/allTasks**. For information about Azure AD roles and permissions that are required to create a support ticket, see [administrator roles in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
+**Known issues for creating support incidents**
+
+If your account has the required permissions but fails to successfully access Help and Support, or create or manage a support incident, review the following known issues, and resolutions:  
+- Stale user token for your account. To resolve this issue, sign out of all active console sessions, sign in again, and then attempt to create or manage a support incident. 
+- Multiple active sessions. If you are signed in with more than one user or session, sign out all but one console. Then, with a single active session, attempt to create or manage a support incident.
+
+Additional actions that might be necessary to resolve access issues:
+- Clear all cookies for your active browser session, and then retry creating or managing a support incident.
+- Use an InPrivate browsing session to sign in to Intune, and try to create or manage a support incident.  
+
+If the preceding workarounds don't help, go to [Microsoft 365 admin center](https://admin.microsoft.com) and create a support ticket from there. We are currently working on a fix that will be available in late summer. 
+
+
 
 >[!IMPORTANT]  
 > For technical support with third-party products that work with Intune (like Saaswedo, Cisco, or Lookout), contact the supplier of that product first. Before you open a request with Intune support, make sure you configured the other product correctly.
@@ -54,7 +69,7 @@ The Help and support experience for Intune is available from the [Microsoft 365 
 
 This new experience is similar to the experience seen in the [Microsoft 365 admin center](https://admin.microsoft.com/), and replaces the previous Help and support experience. 
 
-To access Help and support, use the following:  
+To access Help and support, use the following options:  
 - **Device Management Dashboard:**
    - Select any available option for **Help and support**
    - Select the **?** icon in the upper-right corner of the portal
@@ -75,7 +90,7 @@ In this view you can do the following actions:
 4. [View support cases](#view-support-cases) you have previously opened using this new workflow  
 
 ### Specify details about an issue
-When you open Help and support from a location that is supported by the new experience, the **Need help?**  page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. You can select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information that can help to solve the issue.
+When you open Help and support from a location that is supported by the new experience, the **Need help?** page opens. On this page, you can specify details about an issue. As you enter details, the console offers common queries based on the keywords you use. Select an offered choice or complete your own issue description. If you enter your own description, select **Get help** to submit it. After you submit a query, the console returns context-sensitive information that can help to solve the issue.
 
 The following are examples of queries you might submit:
   
@@ -89,7 +104,7 @@ After you select an offered choice or submit your own query, context-sensitive r
 ![View-results](./media/get-support/view-results.png)
 
 ### Get support
-If the self-help or web-based guidance doesn’t help you resolve the issue, you can use the console to open an email or phone support issue.  
+If the self-help or web-based guidance doesn’t help you resolve the problem, use the console to open an email or phone support issue.  
 On the **Need help?** page, select the option you want to use.  
 
 - For an email request, provide your email address and optionally, you can add attachments to your submission. Select **Send** to open the request.  
@@ -115,7 +130,7 @@ Select the history button to view the support incidents that you've created.
 
 
 ## Azure Help + support experience
-The following information describes the Azure Help + support experience which remains accessible from the Azure portal when you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the Azure portal. Beginning in January of 2019, you cannot access the Azure *Help + support* experience from *Help and support* as found on the Intune blades.  
+The following information describes the Azure Help + support experience which remains accessible from the Azure portal when you use the left navigation pane **Help + support**, or use the **?** option in the upper-right corner of the Azure portal. Beginning in January of 2019, you can't access the Azure *Help + support* experience from *Help and support* as found on the Intune blades.  
 
 ### Create an online support ticket
 
@@ -133,7 +148,7 @@ The following information describes the Azure Help + support experience which re
    - **Service**: **Microsoft Intune**
    - **Problem type**: Choose your problem type from the drop-down menu.
    - **Problem subtype**: Choose the problem subtype from the drop-down menu.
-   - **Subject**: Briefly describe the issue that you are having.
+   - **Subject**: Briefly describe the issue you want help with.
 
    ![Image of the basics tab on the Help + support - New support request page](./media/get-support/help-new-support-case-basics.png)
 
@@ -144,7 +159,7 @@ The following information describes the Azure Help + support experience which re
 5. On the **Details** tab, fill out the details for your problem, the support method, your contact information, and then click **Next: Review + create**.
 
    ![Image of the details tab on the Help + support - New support request page](./media/get-support/help-new-support-case-details.png)
-6. Review the information, verify that it is correct, and then choose **Create** to submit your support request.
+6. Review the information, verify that it's correct, and then choose **Create** to submit your support request.
 
    ![Image of the review + create tab on the New support request page](./media/get-support/help-new-support-case-create.png)
 
@@ -187,7 +202,6 @@ You can view a support request from within the Azure portal. To do so:
 2. On the **Help + support** page you can view the list of **Recent support requests**, and select them to view additional details.
 
 ## Additional resources
-- [Contact assisted phone support for Microsoft Intune](phone-support-contact.md)
 - [Billing and subscription management support](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volume licensing](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Troubleshoot Intune issues](help-desk-operators.md)

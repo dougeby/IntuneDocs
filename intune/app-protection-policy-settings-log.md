@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Review app protection policy logs | Microsoft Intune
+title: Review app protection policy logs
 titleSuffix: Microsoft Intune
 description: This topic describes how to configure Intune app protection policy (APP) logs.
 keywords:
