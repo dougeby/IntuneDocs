@@ -124,7 +124,7 @@ Select **OK** > **Create** to save your changes.
 
 ## Locations
 
-In your policy, you can force compliance by the locatino of the device. Choose from existing locations. Don't have a location yet? [Use Locations (network fence)](use-network-locations.md) in Intune provides some guidance.
+In your policy, you can force compliance by the location of the device. Choose from existing locations. Don't have a location yet? [Use Locations (network fence)](use-network-locations.md) in Intune provides some guidance.
 
 1. Choose **Locations** > **Select locations**.
 2. From the list, check your location > **Select**.
