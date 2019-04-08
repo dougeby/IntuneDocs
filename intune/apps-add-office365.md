@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Install Office 365 apps to devices using Microsoft Intune
+title: Assign Office 365 apps to Windows 10 devices using Microsoft Intune
 titleSuffix: 
-description: Learn how you can use Microsoft Intune to make it easier to install Office 365 apps on Windows 10 devices.
+description: Learn how you can use Microsoft Intune to install Office 365 apps on Windows 10 devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -25,7 +25,7 @@ ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 

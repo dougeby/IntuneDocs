@@ -2,7 +2,8 @@
 # required metadata
 
 title: Troubleshoot device enrollment
-description: Suggestions for troubleshooting device enrollment issues.
+titleSuffix: Microsoft Intune
+description: Suggestions for troubleshooting device enrollment issues in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -24,13 +25,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot device enrollment in Intune
+# Troubleshoot device enrollment in Microsoft Intune
 
-This article provides suggestions for troubleshooting device enrollment issues. If this information doesn't solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
+This article provides suggestions for troubleshooting [device enrollment](device-enrollment.md) issues. If this information doesn't solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
 
 
 ## Initial troubleshooting steps
