@@ -62,12 +62,12 @@ We’ve released updates for both the [Intune Certificate Connector and the PFX 
 #### User experience update for the Company Portal app for iOS <!-- 2536024 -->
 The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.
 
-### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
+#### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
 The Company Portal for iOS enrollment screens and steps have been updated to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow prompts users to:  
 
-* Allow Safari to open the Company Portal website and download the management profile before returning to the Company Portal app. ​
-* Open the Settings app to install the management profile on their device.​
-* Return to the Company Portal app to complete enrollment.  ​
+* Allow Safari to open the Company Portal website and download the management profile before returning to the Company Portal app.  
+* Open the Settings app to install the management profile on their device.
+* Return to the Company Portal app to complete enrollment.  
 
 For updated enrollment steps and screens, see [Enroll iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
 
