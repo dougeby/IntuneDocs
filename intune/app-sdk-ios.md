@@ -183,7 +183,7 @@ Follow the steps below to link your app to the ADAL binaries:
 
 3. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-4. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` to the keychain access groups.
+4. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` to the keychain access groups.
 
 5. In the case you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<appidprefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
