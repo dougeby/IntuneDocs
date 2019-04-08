@@ -277,18 +277,10 @@
     items:
     - name: Compliance overview
       href: device-compliance-get-started.md    
-    - name: Android compliance
-      href: compliance-policy-create-android.md
-    - name: Android Enterprise compliance
-      href: compliance-policy-create-android-for-work.md
-    - name: iOS compliance
-      href: compliance-policy-create-ios.md
-    - name: Windows compliance
-      href: compliance-policy-create-windows.md
+    - name: Create a policy
+      href: create-compliance-policy.md
     - name: Location-based compliance
       href: use-network-locations.md
-    - name: Evaluate policy
-      href: policy-evaluate.md
     - name: Actions for noncompliance
       href: actions-for-noncompliance.md
     - name: Monitor device compliance
@@ -297,7 +289,7 @@
     items:
     - name: Device configuration overview
       href: device-profiles.md    
-    - name: Device profiles
+    - name: Create a profile
       href: device-profile-create.md
     - name: Administrative templates
       href: administrative-templates-windows.md
@@ -734,7 +726,7 @@
     - name: Windows 10 and later
       items:
       - name: Compliance policy settings
-        href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
+        href: compliance-policy-create-windows.md
       - name: Configuration profile settings
         items:
         - name: Delivery optimization settings
@@ -769,20 +761,24 @@
         href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
-      - name: Device restrictions
-        href: device-restrictions-windows-holographic.md
-      - name: Shared multi-user device
-        href: shared-user-device-settings-windows-holographic.md   
-      - name: Edition upgrade and mode switch
-        href: holographic-upgrade.md
-      - name: Kiosk
-        href: kiosk-settings-holographic.md             
-      - name: Custom
-        href: custom-settings-windows-holographic.md
+      - name: Compliance policy settings
+        href: compliance-policy-create-windows.md#windows-holographic-for-business
+      - name: Configuration profile settings
+        items:
+        - name: Device restrictions
+          href: device-restrictions-windows-holographic.md
+        - name: Shared multi-user device
+          href: shared-user-device-settings-windows-holographic.md 
+        - name: Edition upgrade and mode switch
+          href: holographic-upgrade.md
+        - name: Kiosk
+          href: kiosk-settings-holographic.md
+        - name: Custom
+          href: custom-settings-windows-holographic.md
     - name: Windows 8.1
       items:
       - name: Compliance policy settings
-        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+        href: compliance-policy-create-windows-8-1.md
       - name: Configuration profile settings
         items:
         - name: Device restrictions
@@ -794,7 +790,7 @@
     - name: Windows Phone 8.1
       items:
       - name: Compliance policy settings
-        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+        href: compliance-policy-create-windows-8-1.md
       - name: Configuration profile settings
         items:
         - name: Device restrictions

@@ -38,7 +38,7 @@ The Intune App SDK supports similar scenarios across iOS and Android, and is int
 
 ### If your app is internal to your organization and will not be publicly available:
 
-You _**do not need**_ to register your app. For internal [line-of-business (LOB) apps](apps-add.md#app-types-in-microsoft-intune) that were written by or for your company, the IT administrator will deploy the app internally. Intune will detect that the app has been built with the SDK, and will let the IT administrator apply app protection policies to it. You can skip to the section [Enable your iOS or Android app for app protection policy](#enable-your-iOS-or-Android-app-for-app-protection-policy).
+You _**do not need**_ to register your app. For internal [line-of-business (LOB) apps](apps-add.md#app-types-in-microsoft-intune) that were written by or for your company, the IT administrator will deploy the app internally. Intune will detect that the app has been built with the SDK, and will let the IT administrator apply app protection policies to it. You can skip to the section [Enable your iOS or Android app for app protection policy](#enable-your-ios-or-android-app-for-app-protection-policy).
 
 ### If your app will be released to a public app store, like the Apple App Store or Google Play:
 
