@@ -5,8 +5,8 @@ title: Remove SCEP or PKCS certificates in Microsoft Intune - Azure | Microsoft 
 titleSuffix:
 description: Administrators can use the wipe or retire action to remove certificates from Microsoft Intune. There are some scenarios where the certificates are automatically removed, such as unenrolling a device or removing a compliance policy. There are some scenarios where certificates automatically remain on the device, such as when the Intune license is lost or removed. See the different ways for Android, Android Enterprise, iOS, macOS, and Windows devices.
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns 
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/08/2019
 ms.topic: conceptual
