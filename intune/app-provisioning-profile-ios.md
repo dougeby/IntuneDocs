@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -56,7 +56,7 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 3. In the **Create profile** pane, configure the following values:
 	- **Name** - Provide a name for this mobile provisioning profile.
 	- **Description** - Optionally, provide a description for the policy.
-	- **Upload profile file** - Choose **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the Apple Developer website.
+	- **Upload profile file** - Choose **Open** icon, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the [Apple Developer website](https://developer.apple.com/).
 4. When you are done, choose **Create**.
 
 ## Next steps
