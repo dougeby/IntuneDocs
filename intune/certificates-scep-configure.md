@@ -302,12 +302,13 @@ In this step, you:
 > The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA). It **must** also be installed on the same server as the Network Device Enrollment Service (NDES) role.
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
-2. Select **Device configuration** > **Certification Authority** > **Add**
-3. Download and save the connector file. Save it to a location accessible from the server where you're going to install the connector.
+2. Select **Device configuration** > **Certification Connectors** > **Add**.
+3. Download and save the connector for SCEP file. Save it to a location accessible from the server where you're going to install the connector.
 
-    ![ConnectorDownload](/media/certificates-pfx-configure/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. After the download completes, go to the server hosting the Network Device Enrollment Service (NDES) role. Then:
+
+4. After the download completes, go to the server that hosts your Network Device Enrollment Service (NDES). Then:
 
     1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
     2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
