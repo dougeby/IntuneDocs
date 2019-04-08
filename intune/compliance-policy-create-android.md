@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -121,6 +121,14 @@ As an Intune administrator, use these compliance settings to help protect your o
 - **Restricted apps**: Enter the **App name** and **App bundle ID** for apps that should be restricted. Choose **Add**. A device with at least one restricted app installed is marked as non-compliant.
 
 Select **OK** > **Create** to save your changes.
+
+## Locations
+
+In your policy, you can force compliance by the locatino of the device. Choose from existing locations. Don't have a location yet? [Use Locations (network fence)](use-network-locations.md) in Intune provides some guidance.
+
+1. Choose **Locations** > **Select locations**.
+2. From the list, check your location > **Select**.
+3. **Save** the policy.
 
 ## Next steps
 

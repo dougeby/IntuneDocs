@@ -150,7 +150,7 @@ Android Enterprise fully managed devices
 ### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. A new compliance setting will check if a TPM is on the device.
 
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) lists the current settings.
+[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md) lists the current settings.
 
 Applies to: 
 - Windows 10 and later

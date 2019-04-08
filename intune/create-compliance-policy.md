@@ -92,12 +92,11 @@ To use device compliance policies, be sure you:
     - **Settings**: The following articles list and describe the settings for each platform:
 
         - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise]
-        - [iOS]
-        - [macOS]
-        - [Windows Phone 8.1]
-        - [Windows 8.1 and later]
-        - [Windows 10 and later]
+        - [Android Enterprise](compliance-policy-create-android-for-work.md)
+        - [iOS](compliance-policy-create-ios.md)
+        - [macOS](compliance-policy-create-mac-os.md)
+        - [Windows Phone 8.1, Windows 8.1 and later](compliance-policy-create-windows-8-1.md)
+        - [Windows 10 and later](compliance-policy-create-windows.md)
 
         For example, if you select **iOS** for the platform, your settings look similar to the following settings:
 
