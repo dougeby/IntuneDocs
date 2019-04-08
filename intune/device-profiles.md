@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -196,6 +196,7 @@ This feature supports:
 - Android
 - Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 and later
