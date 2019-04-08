@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Manage apps from Microsoft Store for Business 
+title: Manage volume purchased or free apps from Microsoft Store for Business 
 titleSuffix: Microsoft Intune
-description: Learn how you can sync apps into Intune from the Microsoft Store for Business and then assign and track these apps.
+description: Learn how you can sync purchased (or free) apps into Intune from the Microsoft Store for Business.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -25,16 +25,16 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
-# How to manage apps you purchased from the Microsoft Store for Business with Microsoft Intune
+# How to manage volume purchased (or free) apps from the Microsoft Store for Business with Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For example:
-* You can synchronize the list of apps you have purchased from the store with Intune.
+* You can synchronize the list of apps you have purchased (or that are free) from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
 * Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
