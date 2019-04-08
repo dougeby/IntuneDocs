@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Troubleshoot Exchange connectors | Microsoft Intune
+title: Troubleshoot Exchange connectors
+titleSuffix: Microsoft Intune
 description: Troubleshoot issues related to the Intune on-premises Exchange connector.
 keywords:
 author: brenduns

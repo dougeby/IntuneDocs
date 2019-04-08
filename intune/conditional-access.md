@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Conditional access with Microsoft Intune | Microsoft Intune
+title: Conditional access with Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to define the conditions users, devices, and apps must meet to access company resources in Microsoft Intune.
 keywords:
 author: brenduns
