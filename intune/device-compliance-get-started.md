@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -90,7 +90,7 @@ You can also use device compliance policies without any conditional access. When
 
 You can deploy compliance policy to users in user groups or devices in device groups. When a compliance policy is deployed to a user, all of the user's devices are checked for compliance. On Windows 10 version 1803 and newer devices, it's recommended to deploy to device groups *if* the primary user didn't enroll the device. Using device groups in this scenario helps with compliance reporting.
 
-Intune also includes a set of built-in compliance policy settings. These built-in policies get evaluated on all devices enrolled in Intune. These include:
+Intune also includes a set of built-in compliance policy settings. The following built-in policies get evaluated on all devices enrolled in Intune:
 
 - **Mark devices with no compliance policy assigned as**: This property has two values:
 
@@ -114,23 +114,21 @@ Compliance reports are a great way to check the status of devices. [Monitor comp
 
 ## Non-compliance and conditional access on the different platforms
 
-### Android and Android Enterprise
-
 The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
 
---------------------
+---------------------------
 
-|**Policy setting**| **Android 4.0 and later, Samsung Knox Standard 4.0 and later**</br>**Android Enterprise** |
+|**Policy setting**| **Platform** |
 | --- | ----|
-| **PIN or password configuration** |  Quarantined |
-| **Device encryption** | Quarantined |
-| **Jailbroken or rooted device** | Quarantined (not a setting) |
-| **email profile** | Not applicable |
-| **Minimum OS version** | Quarantined |
-| **Maximum OS version** |   Quarantined |
-| **Windows health attestation** | Not applicable |
+| **PIN or password configuration** | - **Android 4.0 and later**: Quarantined</br>- **Samsung Knox Standard 4.0 and later**: Quarantined</br>- **Android Enterprise**: Quarantined</br></br>- **iOS 8.0 and later**: Remediated</br>- **macOS 10.11 and later**: Remediated</br></br>- **Windows 8.1 and later**: Remediated</br>- **Windows Phone 8.1 and later**: Remediated|
+| **Device encryption** | - **Android 4.0 and later**: Quarantined</br>- **Samsung Knox Standard 4.0 and later**: Quarantined</br>- **Android Enterprise**: Quarantined</br></br>- **iOS 8.0 and later**: Remediated (by setting PIN)</br>- **macOS 10.11 and later**: Remediated (by setting PIN)</br></br>- **Windows 8.1 and later**: Not applicable</br>- **Windows Phone 8.1 and later**: Remediated |
+| **Jailbroken or rooted device** | - **Android 4.0 and later**: Quarantined (not a setting)</br>- **Samsung Knox Standard 4.0 and later**: Quarantined (not a setting)</br>- **Android Enterprise**: Quarantined (not a setting)</br></br>- **iOS 8.0 and later**: Quarantined (not a setting)</br>- **macOS 10.11 and later**: Not applicable</br></br>- **Windows 8.1 and later**: Not applicable</br>- **Windows Phone 8.1 and later**: Not applicable |
+| **Email profile** | - **Android 4.0 and later**: Not applicable</br>- **Samsung Knox Standard 4.0 and later**: Not applicable</br>- **Android Enterprise**: Not applicable</br></br>- **iOS 8.0 and later**: Quarantined</br>- **macOS 10.11 and later**: Quarantined</br></br>- **Windows 8.1 and later**: Not applicable</br>- **Windows Phone 8.1 and later**: Not applicable |
+| **Minimum OS version** | - **Android 4.0 and later**: Quarantined</br>- **Samsung Knox Standard 4.0 and later**: Quarantined</br>- **Android Enterprise**: Quarantined</br></br>- **iOS 8.0 and later**: Quarantined</br>- **macOS 10.11 and later**: Quarantined</br></br>- **Windows 8.1 and later**: Quarantined</br>- **Windows Phone 8.1 and later**: Quarantined |
+| **Maximum OS version** | - **Android 4.0 and later**: Quarantined</br>- **Samsung Knox Standard 4.0 and later**: Quarantined</br>- **Android Enterprise**: Quarantined</br></br>- **iOS 8.0 and later**: Quarantined</br>- **macOS 10.11 and later**: Quarantined</br></br>- **Windows 8.1 and later**: Quarantined</br>- **Windows Phone 8.1 and later**: Quarantined |
+| **Windows health attestation** | - **Android 4.0 and later**: Not applicable</br>- **Samsung Knox Standard 4.0 and later**: Not applicable</br>- **Android Enterprise**: Not applicable</br></br>- **iOS 8.0 and later**: Not applicable</br>- **macOS 10.11 and later**: Not applicable</br></br>- **Windows 10 and Windows 10 Mobile**: Quarantined</br>- **Windows 8.1 and later**: Quarantined</br>- **Windows Phone 8.1 and later**: Not applicable |
 
---------------------------
+---------------------------
 
 **Remediated**: The device operating system enforces compliance. For example, the user is forced to set a PIN.
 
@@ -139,59 +137,6 @@ The following table describes how noncompliant settings are managed when a compl
   - If a conditional access policy applies to the user, the device is blocked.
   - The Company Portal app notifies the user about any compliance problems.
 
-### iOS and macOS
-
-The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
-
----------------------------
-
-| **Policy setting** | **iOS 8.0 and later**</br>**macOS 10.11 and later** |
-| --- | --- |
-| **PIN or password configuration** | Remediated |
-| **Device encryption** | Remediated (by setting PIN) |
-| **Jailbroken or rooted device** | Quarantined (not a setting) (iOS only) |
-| **Email profile** | Quarantined |
-|**Minimum OS version** | Quarantined |
-| **Maximum OS version** | Quarantined |
-| **Windows health attestation** | Not applicable  (iOS only) |
-
----------------------------
-
-**Remediated**: The device operating system enforces compliance. For example, the user is forced to set a PIN.
-
-**Quarantined**: The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
-
-- If a conditional access policy applies to the user, the device is blocked.
-- The Company Portal app notifies the user about any compliance problems.
-
-### Windows
-
-The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
-
----------------------------
-
-| **Policy setting** | **Windows 8.1 and later** | **Windows Phone 8.1 and later** |
-|----| ----| --- |
-| **PIN or password configuration** | Remediated | Remediated |   
-| **Device encryption** | Not applicable | Remediated |   
-| **Jailbroken or rooted device** | Not applicable | Not applicable |  
-| **Email profile** | Not applicable | Not applicable |   
-| **Minimum OS version** | Quarantined | Quarantined |   
-| **Maximum OS version** | Quarantined | Quarantined |   
-| **Windows health attestation** | Quarantined: Windows 10 and Windows 10 Mobile|Not applicable: Windows 8.1 |
-
--------------------------------
-
-**Remediated** = The device operating system enforces compliance. (For example, the user is forced to set a PIN.)
-
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
-
-- The device is blocked if a conditional access policy applies to the user.
-- The company portal notifies the user about any compliance problems.
-
-
-
-
 ## Azure classic portal vs. Azure portal
 
 The main difference when using device compliance policies in the Azure portal:
@@ -199,7 +144,7 @@ The main difference when using device compliance policies in the Azure portal:
 - In the Azure portal, the compliance policies are created separately for each supported platform
 - In the Azure classic portal, one device compliance policy is common to all supported platforms
 
-<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
@@ -210,12 +155,13 @@ To use the device compliance-related features in the Azure portal, you must crea
 ## Next steps
 
 - [Create a policy](create-compliance-policy.md) and view the prerequisites.
-- See the different compliance settings for the different device platforms:
+- See the compliance settings for the different device platforms:
 
   - [Android](compliance-policy-create-android.md)
   - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows](compliance-policy-create-windows.md)
+  - [Windows 10 and later](compliance-policy-create-windows.md)
+  - [Windows 8.1 and Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
 
 - [Reference for policy entities](reports-ref-policy.md) has information about the Intune Data Warehouse policy entities.

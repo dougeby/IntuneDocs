@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,7 +49,7 @@ To use device compliance policies, be sure you:
 - Use the following subscriptions:
 
   - Intune
-  - Intune compliance doesn't use Azure Active Directory (AD). If you use conditional access, then you need Azure AD Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions.
+  - If you use conditional access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions. Intune compliance doesn't require Azure AD.
 
 - Use a supported platform:
 
@@ -115,6 +115,15 @@ Once a policy is created, the next step is to assign the policy to your groups:
 
 You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
 
+### Evaluate how many users are targeted
+
+When you assign the policy, you can also **Evaluate** how many users are affected. This feature calculates users; it doesn't calculate devices.
+
+1. In Intune, select **Device compliance** > **Policies**.
+2. Select a policy > **Assignments** > **Evaluate**. A message shows you how many users are targeted by this policy.
+
+If the **Evaluate** button is grayed out, make sure the policy is assigned to one or more groups.
+
 ## Actions for noncompliance
 
 For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
@@ -151,7 +160,7 @@ If the device recently enrolled, the compliance check-in runs more frequently:
 | Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
 | Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
 
-At anytime, users can open the Company Portal app, and sync the device to immediately check for a policy.
+At any time, users can open the Company Portal app, and sync the device to immediately check for a policy.
 
 ### Assign an InGracePeriod status
 
@@ -188,7 +197,7 @@ If a device has multiple compliance policies, and the device has different compl
 
 When a device has multiple compliance policies, then the highest severity level of all the policies is assigned to that device.
 
-For example, say a device has three compliance policies assigned to it: one Unknown status (severity = 1), one Compliant status (severity = 3), and one InGracePeriod status (severity = 4). The InGracePeriod status has the highest severity level, so all three policies have the InGracePeriod compliance status.
+For example, a device has three compliance policies assigned to it: one Unknown status (severity = 1), one Compliant status (severity = 3), and one InGracePeriod status (severity = 4). The InGracePeriod status has the highest severity level. So, all three policies have the InGracePeriod compliance status.
 
 ## Next steps
 
