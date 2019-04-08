@@ -183,7 +183,13 @@ This setting has different results depending on the devices version of Windows:
 - **Default**: Allow  
 - **Windows reference documentation**: [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
 
-Allow or block a device user from pausing the installation of an update.  
+Allow or block a device user from pausing the installation of an update. 
+
+### Block user from scanning for Windows updates  
+ - **Default**: Allow
+ - **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+
+Specifies whether to allow or block a user’s access to scan Windows Update. For example, if you configure a *block*, users can't access the Windows Update scan, download, and install features.  
 
 ### Require user’s approval to restart outside of work hours  
 
@@ -205,7 +211,13 @@ Specify how long in advance of an automatic restart to display a dismissible not
 - **Windows reference documentation**: [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
 
 Specify how long in advance of an automatic restart to display a non-dismissible warning to a device user about that restart. Values of **15**, **30** or **60** minutes are supported.  
- 
+
+### Windows Update notification level  
+- **Default**: Use the default Windows Update notifications 
+- **Windows reference documentation**: [Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
+
+Specify what level of Windows Update notifications users see. This setting doesn’t control how and when updates are downloaded and installed.
+
 ### Allow user to restart (engaged restart)  
 
 - **Default**: Not configured  
@@ -241,28 +253,3 @@ The following settings are used to control when engaged restart actions occur.
 Delivery optimization is no longer configured as part of a Windows 10 Update Ring under Software Updates. Delivery optimization is now set through device configuration. However, previous configurations remain available in the console. You can remove these previous configurations by editing them to be *Not configured*, but they can't otherwise be modified. 
 
 To avoid conflicts between new and old policy, see [Move from existing update rings to delivery optimization](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) and then move your settings to a Delivery optimization profile.
-
-
-## Settings that require the Intune Graph API
-The following settings are not available from within the Intune portal UI. Instead, you use the [Intune Graph API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) to configure them.  
-
-### Block user from scanning for Windows updates  
- - **Default**: Allow
- - **Windows reference documentation**: [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
-
-Supported values for this setting:
-- *Block* (1)
-- *Allow* (0)
-
-For example, if you configure a value of **1** *(block)*, you enable this policy. When enabled, users can't access the Windows Update scan, download, and install features.  
-
-### Windows Update notification level
-- **Default**: 0 *(Use the default Windows Update notifications)*
-- **Windows reference documentation**: [Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
-
-This policy allows you to define what Windows Update notifications users see. This policy doesn’t control how and when updates are downloaded and installed.
-
-Supported values for this setting:
-- 0 - Use the default Windows Update notifications
-- 1 - Turn off all notifications, excluding restart warnings
-- 2 - Turn off all notifications, including restart warnings
