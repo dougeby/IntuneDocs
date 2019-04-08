@@ -98,10 +98,6 @@ To use device compliance policies, be sure you:
         - [Windows Phone 8.1, Windows 8.1 and later](compliance-policy-create-windows-8-1.md)
         - [Windows 10 and later](compliance-policy-create-windows.md)
 
-        For example, if you select **iOS** for the platform, your settings look similar to the following settings:
-
-        ![Create iOS compliance policy in Intune](./media/create-device-profile.png)
-
 4. When finished, select **OK** > **Create** to save your changes. The policy is created, and shown in the list. Next, assign the policy to your groups.
 
 ## Assign user groups
