@@ -430,7 +430,7 @@ The **IntuneManagementExtensionVersion** entity lists all the versions used by *
 | ExtensionVersionKey | Unique identifier of the IntuneManagementExtension   version. | 1       |
 | ExtensionVersion    | The 4 digit version number.                                   | 1.0.2.0 |
 
-## MamApplication## MamApplication
+## MamApplication
 
 The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
 
