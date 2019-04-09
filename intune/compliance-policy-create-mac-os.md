@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create macOS device compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for macOS devices to use System Integrity Protection, set the minimum and maximum operating system version,  choose your password requirements, and encrypt data storage.
+title: macOS device compliance settings in Microsoft Intune - Azure | Microsoft Docs
+description: See a list of all the settings you can use when setting compliance for your macOS devices in Microsoft Intune. Require Apple's system integrity protection, set password restrictions, require a firewall, allow gatekeeper, and more.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -27,40 +27,25 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Add a device compliance policy for macOS devices with Intune
+# macOS settings to mark devices as compliant or not compliant using Intune
 
-An Intune macOS device compliance policy determines the rules and settings that macOS devices must meet to be compliant. When you use device compliance policies with conditional access, you can allow or block access to company resources. You can also get device reports and take actions for non-compliance. Device compliance policies for each platform can be created in the Intune Azure portal. To learn more about compliance policies, and any prerequisites, see [Get started with device compliance](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy:
+This article lists and describes the different compliance settings you can configure on macOS devices in Intune. As part of your mobile device management (MDM) solution, use these settings to set a minimum or maximum OS version, set passwords to expire, and more.
 
----------------------------
+This feature applies to:
 
-| Policy setting | macOS 10.11 and later |
-| --- | --- |
-| **PIN or password configuration** | Remediated |   
-| **Device encryption** | Remediated (by setting PIN) |
-| **Email profile** | Quarantined |
-|**Minimum OS version** | Quarantined |
-| **Maximum OS version** | Quarantined |
+- macOS
 
----------------------------
+As an Intune administrator, use these compliance settings to help protect your organizational resources. To learn more about compliance policies, and what they do, see [get started with device compliance](device-compliance-get-started.md).
 
-**Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
+## Before you begin
 
-**Quarantined** = The device operating system does not enforce compliance. (For example, Android devices do not force the user to encrypt the device.) When the device is not compliant, the following actions take place:
-
-- The device is blocked if a conditional access policy applies to the user.
-- The company portal notifies the user about any compliance problems.
-
-## Create a device compliance policy
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. For **Platform**, select **macOS**. 
-5. Choose **Settings Configure**, and enter the **Device Health**, **Device Properties**, and **System Security** settings described in this article. When you're done, select **OK**, and **Create**.
+[Create a compliance policy](create-compliance-policy.md#create-the-policy). For **Platform**, select **macOS**.
 
 ## Device Health
 
-- **Require a system integrity protection**: **Require** your macOS devices to have [System Integrity Protection](https://support.apple.com/HT204899) enabled.
+- **Require a system integrity protection**: **Require** your macOS devices to have [System Integrity Protection](https://support.apple.com/HT204899) (opens Apple's web site) enabled. When set to **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 
 ## Device properties
 
@@ -77,13 +62,13 @@ The following table describes how noncompliant settings are managed when a compl
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
-- **Number of non-alphanumeric characters in password**: Enter the minimum number of special characters (&, #, %, !, and so on) that must be included in the password.
+- **Number of non-alphanumeric characters in password**: Enter the minimum number of special characters, such as `&`, `#`, `%`, `!`, and so on, that must be in the password.
 
     Setting a higher number requires the user to create a password that is more complex.
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
-- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that cannot be used.
+- **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 
 	> [!IMPORTANT]
 	> When the password requirement is changed on a macOS device, it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits, and the macOS device currently has a six digits password, then the device remains compliant until the next time the user updates their password on the device.
@@ -93,13 +78,16 @@ The following table describes how noncompliant settings are managed when a compl
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
 
 ### Device Security
+
 Firewall protects devices from unauthorized network access. You can use Firewall to control connections on a per-application basis. 
 
-- **Firewall**: **Enable** to help protect devices from unauthorized access. Enabling this feature allows you to handle incoming internet connections, and use stealth mode. **Not configured** (default) leaves the firewall turned off, and network traffic is allowed (not blocked).
-- **Incoming connections**: **Block** all incoming network connections except those required for basic internet services, such as DHCP, Bonjour, and IPSec. This settings also blocks all sharing services, including screen sharing, remote access, iTunes music sharing, and more. **Not configured** (default) allows incoming connections and sharing services. 
-- **Stealth Mode**: **Enable** stealth mode to prevent the device from responding to probing requests, which can be made my malicious users. When enabled, the device continues to answer incoming requests for authorized apps. **Not configured** (default) leaves stealth mode turned off.
+- **Firewall**: Select **Enable** to help protect devices from unauthorized access. Enabling this feature allows you to handle incoming internet connections, and use stealth mode. **Not configured** (default) leaves the firewall turned off, and network traffic is allowed (not blocked).
+- **Incoming connections**: **Block** all incoming network connections except the connections required for basic internet services, such as DHCP, Bonjour, and IPSec. This setting also blocks all sharing services, including screen sharing, remote access, iTunes music sharing, and more. **Not configured** (default) allows incoming connections and sharing services.
+- **Stealth Mode**: **Enable** stealth mode to prevent devices from responding to probing requests, which can be made my malicious users. When enabled, the device continues to answer incoming requests for authorized apps. **Not configured** (default) leaves stealth mode turned off.
 
 ### Gatekeeper
+
+For more information, see [Gatekeeper on macOS](https://support.apple.com/HT202491) (opens Apple's web site).
 
 **Allow apps downloaded from these locations**: Allows supported applications to be installed on your devices from different locations. Your location options:
 
@@ -108,19 +96,10 @@ Firewall protects devices from unauthorized network access. You can use Firewall
 - **Mac App Store and identified developers**: Install apps for the Mac app store and from identified developers. macOS checks the identity of developers, and does some other checks to verify app integrity. If a user selects Gatekeeper to install apps outside these options, then the device is considered not compliant.
 - **Anywhere**: Apps can be installed from anywhere, and by any developer. This option is the least secure.
 
-For more details in Apple documentation, see [Gatekeeper on macOS](https://support.apple.com/HT202491).
-
-## Assign user groups
-
-1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
-2. Choose the policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
-
-> [!TIP]
-> By default, devices check for compliance every eight hours. But users can force this process through the Intune Company Portal app.
-
-You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
+Select **OK** > **Create** to save your changes.
 
 ## Next steps
-[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
-[Monitor Intune Device compliance policies](compliance-policy-monitor.md)
+
+- [Add actions for noncompliant devices](actions-for-noncompliance.md) and [use scope tags to filter policies](scope-tags.md).
+- [Monitor your compliance policies](compliance-policy-monitor.md).
+- See the [compliance policy settings for iOS](compliance-policy-create-ios.md) devices.

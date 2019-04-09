@@ -1,6 +1,11 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune/policy-evaluate.md", 
+			"redirect_url": "/intune/create-compliance-policy#evaluate-how-many-users-are-targeted",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "intune/compliance-policy-create-google-play-protect.md", 
 			"redirect_url": "/intune/compliance-policy-create-android",
 			"redirect_document_id": false
