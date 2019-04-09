@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Create Android Enterprise compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for Android Enterprise or work profile devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
+title: Android Enterprise compliance settings in Microsoft Intune - Azure | Microsoft Docs
+description: See a list of all the settings you can use when setting compliance for your Android Enterprise devices in Microsoft Intune. Set password rules, choose a minimum or maximum operating system version, restrict specific apps, prevent reusing password, and more.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -20,7 +20,7 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -28,45 +28,21 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Add a device compliance policy for Android Enterprise devices in Intune
+# Android Enterprise settings to mark devices as compliant or not compliant using Intune
 
-Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that Android Enterprise devices must meet to be considered compliant, such as a password length. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This feature applies to:  
+This article lists and describes the different compliance settings you can configure on Android Enterprise devices in Intune. As part of your mobile device management (MDM) solution, use these settings to mark rooted (jailbroken) devices as not compliant, set an allowed threat level, enable Google Play Protect, and more.
+
+This feature applies to:
+
 - Android Enterprise
 
-You can also get device reports, and take actions for non-compliance, such as sending a notification email to the user. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
+As an Intune administrator, use these compliance settings to help protect your organizational resources. To learn more about compliance policies, and what they do, see [get started with device compliance](device-compliance-get-started.md).
 
-This article lists the settings you can use within a compliance policy for devices running Android Enterprise.
+## Before you begin
 
-## Non-compliance and conditional access
-
-The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
-
---------------------------
-
-|**policy setting**| **Android Enterprise profile** |
-| --- | --- |
-| **PIN or password configuration** |  Quarantined |
-| **Device encryption** |  Quarantined |
-| **Jailbroken or rooted device** | Quarantined (not a setting) |
-| **email profile** | Not applicable |
-| **Minimum OS version** | Quarantined |
-| **Maximum OS version** | Quarantined |
-| **Windows health attestation** |Not applicable |
-
-**Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
-
-**Quarantined** = The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
-
-  - If a conditional access policy applies to the user, the device is blocked.
-  - The company portal notifies the user about any compliance problems.
-
-## Create a device compliance policy
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. For **Platform**, select **Android enterprise**. 
-5. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
+[Create a compliance policy](create-compliance-policy.md#create-the-policy). For **Platform**, select **Android Enterprise**.
 
 ## Device health
 
@@ -117,7 +93,7 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Encryption of data storage on device**: Choose **Require** to encrypt data storage on your devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. 
 
-  You don't have to configure this setting because Android work profile devices enforce encryption.
+  You don't have to configure this setting because Android Enterprise devices enforce encryption.
 
 ### Device Security
 
@@ -128,7 +104,7 @@ The following table describes how noncompliant settings are managed when a compl
   > [!IMPORTANT]
   > Side-loading applications require that the **Block apps from unknown sources** setting is enabled. Enforce this compliance policy only if you're not side-loading Android apps on devices.
 
-  You don't have to configure this setting as Android work profile devices always restrict installation from unknown sources.
+  You don't have to configure this setting as Android Enterprise devices always restrict installation from unknown sources.
 
 - **Company portal app runtime integrity**: Choose **Require** to confirm the Company Portal app meets all the following requirements:
 
@@ -141,36 +117,14 @@ The following table describes how noncompliant settings are managed when a compl
 
 - **Block USB debugging on device**: Choose **Block** to prevent devices from using the USB debugging feature. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 
-  You don't have to configure this setting because USB debugging is already disabled on Android work profile devices.
+  You don't have to configure this setting because USB debugging is already disabled on Android Enterprise devices.
 
 - **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that aren't at least at this patch level are noncompliant. The date must be entered in the *YYYY-MM-DD* format.
 
-When done, select **OK** > **OK** to save your changes.
-
-## Actions for noncompliance
-
-Select **Actions for noncompliance**. The default action marks the device as noncompliant immediately.
-
-You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
-
-[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
-
-## Scope tags
-
-Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
-
-## Assign user groups
-
-Once a policy is created, it's not doing anything until you assign the policy. To assign the policy: 
-
-1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
-2. Choose the policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
-
-You've applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
+Select **OK** > **Create** to save your changes.
 
 ## Next steps
 
-[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
-[Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
-[Compliance policy settings for Android](compliance-policy-create-android.md)
+- [Add actions for noncompliant devices](actions-for-noncompliance.md) and [use scope tags to filter policies](scope-tags.md).
+- [Monitor your compliance policies](compliance-policy-monitor.md).
+- See the [compliance policy settings for Android](compliance-policy-create-android.md) devices.

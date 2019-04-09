@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Data JAMF Pro sends to Intune | Microsoft Intune
+title: Data JAMF Pro sends to Intune
+titleSuffix: Microsoft Intune
 description: List of data that Jamf Pro sends to Microsoft Intune 
 keywords:
 author: brenduns
