@@ -90,7 +90,7 @@ To enable the Intune App SDK, follow these steps:
 1. **Option 1 (recommended)**: Link `IntuneMAM.framework` to your project. Drag `IntuneMAM.framework` to the **Embedded Binaries** list of the project target.
 
    > [!NOTE]
-   > If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See [Submit your app to the App Store](#Submit-your-app-to-the-App-Store) for more details.
+   > If you use the framework, you must manually strip out the simulator architectures from the universal framework before you submit your app to the App Store. See [Submit your app to the App Store](#submit-your-app-to-the-app-store) for more details.
 
    **Option 2**: Link to the `libIntuneMAM.a` library. Drag the `libIntuneMAM.a` library to the **Linked Frameworks and Libraries** list of the project target.
 
@@ -183,7 +183,7 @@ Follow the steps below to link your app to the ADAL binaries:
 
 3. If your app does not have any keychain access groups defined, add the app’s bundle ID as the first group.
 
-4. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` and `com.microsoft.workplacejoin` to the keychain access groups.
+4. Enable ADAL single sign-on (SSO) by adding `com.microsoft.adalcache` to the keychain access groups.
 
 5. In the case you are explicitly setting the ADAL shared cache keychain group, make sure it is set to `<appidprefix>.com.microsoft.adalcache`. ADAL will set this for you unless you override it. If you want to specify a custom keychain group to replace `com.microsoft.adalcache`, specify that in the Info.plist file under IntuneMAMSettings, by using the key `ADALCacheKeychainGroupOverride`.
 
@@ -271,7 +271,7 @@ Apps which already use ADAL should call the `registerAndEnrollAccount` method on
 (void)registerAndEnrollAccount:(NSString *)identity;
 ```
 
-By calling the `registerAndEnrollAccount` method, the SDK will register the user account and attempt to enroll the app on behalf of this account. If the enrollment fails for any reason, the SDK will automatically retry the enrollment 24 hours later. For debugging purposes, the app can receive [notifications](#Status-result-and-debug-notifications), via a delegate, about the results of any enrollment requests.
+By calling the `registerAndEnrollAccount` method, the SDK will register the user account and attempt to enroll the app on behalf of this account. If the enrollment fails for any reason, the SDK will automatically retry the enrollment 24 hours later. For debugging purposes, the app can receive [notifications](#status-result-and-debug-notifications), via a delegate, about the results of any enrollment requests.
 
 After this API has been invoked, the app can continue to function as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required. At that time, the user can immediately restart the app.
 
@@ -295,7 +295,7 @@ Apps that do not sign in the user using ADAL can still receive app protection po
 
 By calling this method, the SDK will prompt the user for credentials if no existing token can be found. The SDK will then try to enroll the app with the Intune MAM service on behalf of the supplied user account. The method can be called with "nil" as the identity. In that case, the SDK will enroll with the existing managed user on the device (in the case of MDM), or prompt the user for a user name if no existing user is found.
 
-If the enrollment fails, the app should consider calling this API again at a future time, depending on the details of the failure. The app can receive [notifications](#Status-result-and-debug-notifications), via a delegate, about the results of any enrollment requests.
+If the enrollment fails, the app should consider calling this API again at a future time, depending on the details of the failure. The app can receive [notifications](#status-result-and-debug-notifications), via a delegate, about the results of any enrollment requests.
 
 After this API has been invoked, the app can continue functioning as normal. If the enrollment succeeds, the SDK will notify the user that an app restart is required.
 

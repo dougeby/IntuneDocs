@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -196,6 +196,7 @@ This feature supports:
 - Android
 - Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 and later
@@ -219,13 +220,14 @@ This feature supports:
 - Windows 10 and later
 - Windows Holographic for Business
 
-## Zebra Mobility Extensions (MX)
+## Zebra Mobility Extensions (MX) and OEMConfig
 
-[Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) allows administrators to use and manage Zebra devices in Intune. You create StageNow profiles with your settings, and then use Intune to assign and deploy these profiles to your Zebra devices. The [StageNow logs and common issues](android-zebra-mx-logs-troubleshoot.md) is a great resource to troubleshoot profiles, and see some potential issues when using StageNow.
+[Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) and [OEMConfig](android-oem-configuration-overview.md) allows administrators to use and manage Zebra devices in Intune. You create StageNow profiles with your settings, and then use Intune to assign and deploy these profiles to your Zebra devices. The [StageNow logs and common issues](android-zebra-mx-logs-troubleshoot.md) is a great resource to troubleshoot profiles, and see some potential issues when using StageNow.
 
 This feature supports:
 
-- Android
+- Android (Mobility Extensions)
+- Android Enterprise (OEMConfig)
 
 ## Custom profile
 

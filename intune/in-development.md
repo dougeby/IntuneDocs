@@ -65,9 +65,6 @@ You'll soon be able to use Intune to manage the custom firewall rules on clients
 ### Require App Protection Conditional Access  <!--1634317 -->
 You'll be able to use *Require App Protection policy*, which confirms policy is applied to a user’s app before sign in completes to prevent users from accessing data you protect with conditional access. While policy assurance might slow down the first use experience, it helps to protect against network issues, administrative misconfigurations, or intentional efforts to foil application protection policies. 
 
-### Deployment of online licensed Microsoft Store for Business apps <!-- 16726660 -->
-You'll be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
-
 ### Include and exclude mixture of user groups and device groups when assigning policies and profiles <!-- 1807547 -->
 When assigning compliance policies or configuration profiles, you can assign them to security groups with users or devices. Currently, you can include and exclude only user groups, *or* include and exclude only device groups. You can't include and exclude a mixture of groups, such as include user groups *and* exclude a devices group.
 
@@ -150,7 +147,7 @@ Android Enterprise fully managed devices
 ### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. A new compliance setting will check if a TPM is on the device.
 
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) lists the current settings.
+[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md) lists the current settings.
 
 Applies to: 
 - Windows 10 and later
@@ -186,15 +183,6 @@ We're adding a new Windows update ring setting that you can use to block users f
 
 ### Windows Update notifications <!-- 3316782 -->
 We're adding support to the Windows Update ring configurations so you'll be able to configure the Windows Update notifications your users see. This setting won't be available from within the portal, but can be configured by using the Intune Graph API.
-
-### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 --> 
-Company Portal for iOS will be updating the app enrollment screens and steps to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow will now prompt users to:
-
-- Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app.
-- Open the Settings app to install the management profile on their device.
-- Return to the Company Portal app to complete enrollment.
-
-For more information about how you can prepare for these changes, see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). These doc changes will be live after Apple releases iOS version 12.2. 
 
 ### Easier access to Diagnostic Settings <!-- 3804627 -->
 We’re adding a new option to the **Audit logs** blade in every Audit Log workload in the Intune console that you can use to directly open the *Diagnostic Settings* page.

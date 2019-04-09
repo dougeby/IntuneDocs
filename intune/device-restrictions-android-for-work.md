@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -85,7 +85,6 @@ This article lists and describes the different settings you can control on Andro
 - **Notification windows**: When set to **Disable**, window notifications, including toasts, incoming calls, outgoing calls, system alerts, and system errors are not shown on the device. When set to **Not configured**, the operating system default is used, which may be to show notifications.
 - **Skip first use hints**: Choose **Enable** to hide or skip suggestions from apps to step through tutorials or read any introductory hints when the app starts. When set to **Not configured**, the operating system default is used, which may be to show these suggestions when the app starts.
 
-
 ### System security settings
 
 - **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
@@ -126,12 +125,20 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     1. Continues to select the back button until the "Exit kiosk" button is shown. 
     2. Selects the button, and enters the **Leave kiosk mode code** PIN.
     3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
-    
+
     **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
-    
+
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
- 
+
   - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
+
+  - **Wi-Fi configuration**: Choose **Enable** to allow end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) prevents users from connecting to WiFi networks while in the Managed Home Screen (lock task mode).
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+
+  - **Bluetooth configuration**: Choose **Enable** to allow Bluetooth on the device, and allow end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) prevents users from configuring Bluetooth and pairing devices while in the Managed Home Screen (lock task mode). 
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
 
 ### Device password settings
 
