@@ -259,7 +259,10 @@ The following image notifies the end user that app changes are being made to the
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
 ## Toast notifications for Win32 apps 
-If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. Admins can leverage assignment exclusion to not offer Win32 apps to BYOD Devices.
+If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
+
+> [!NOTE]
+> Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices. Admins can leverage assignment exclusion to not offer Win32 apps to BYOD Devices.
 
 ## Troubleshoot Win32 app issues
 Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. You can leverage `CMTrace.exe` to view these log files. *CMTrace.exe* can be downloaded from [Configuration Manager Client Tools](https://docs.microsoft.com/sccm/core/support/tools). 
