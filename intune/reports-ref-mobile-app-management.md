@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -39,7 +39,7 @@ The **Mobile App Management** category contains entities for mobile apps such as
   -  Enrollment status
   -  Platform types
 
-## MamApplication
+## MamApplication## MamApplication
 
 The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
 
@@ -49,6 +49,10 @@ The **MamApplication** entity lists Line-of-Business (LOB) apps that are managed
 | StartDateInclusiveUTC |Date and time in UTC when this MAM app was created in the data warehouse. |11/23/2016 12:00:00 AM |
 | DeletedDateUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this MAM app was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
+| mamApplicationKey |Unique identifier of the MAM application. | 432 |
+| mamApplicationName |Name of the MAM application. |MAM Application Example Name |
+| mamApplicationId |Application Id of the MAM application. | 123 |
+
 
 ## MamApplicationInstance
 
@@ -69,6 +73,11 @@ The **MamApplicationInstance** entity lists managed Mobile Application Managemen
 |   StartDateInclusiveUtc    |                                                              Date and time in UTC when this MAM app instance was created in the data warehouse.                                                               |        11/23/2016 12:00:00 AM        |
 |       DeletedDateUtc       |                                                                             Date and time in UTC when IsDeleted changed to True.                                                                              |        11/23/2016 12:00:00 AM        |
 | RowLastModifiedDateTimeUtc |                                                           Date and time in UTC when this MAM app instance was last modified in the data warehouse.                                                            |        11/23/2016 12:00:00 AM        |
+| mamApplicationId | Application Id of the Mam Application for which this Mam Application Instance was created.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceId | Device Id of the device with which MAM Application Instance is associated with.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceType | Device type of the device with which MAM Application Instance is associated with.   | 11/23/2016 12:00:00 AM   |
+| mamDeviceName | Device name of the device with which MAM Application Instance is associated with.   | 11/23/2016 12:00:00 AM   |
+
 
 ## MamCheckin
 
@@ -86,6 +95,8 @@ The **MamCheckin** entity represents data gathered when a Mobile Application Man
 | PlatformKey |Represents the platform of the device associated with this MAM app check-in. |123 |
 | EffectiveAppliedPolicyKey |Represents the effective applied policy associated with the MAM app that has checked in. An effective applied policy results from merging all policies relevant to a particular app and user. | 322 |
 | LastCheckInDate |Date and time when this MAM app last checked in. Value can be null. |11/23/2016 12:00:00 AM |
+| mamApplicationKey |Application Key of Application associated with MAM Application check in. | 432 |
+
 
 ## MamDeviceHealth
 
