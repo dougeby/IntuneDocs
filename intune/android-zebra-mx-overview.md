@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -157,5 +157,5 @@ The next time the device checks for configuration updates, the MX profile is dep
 ## Next steps
 
 - [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
-- [Use OEMConfig manage Android Enterprise Zebra devices](android-oem-configuration-overview.md).
+- [Use OEMConfig to manage Android Enterprise Zebra devices](android-oem-configuration-overview.md).
 - [Use StageNow logs to troubleshoot Zebra devices](android-zebra-mx-logs-troubleshoot.md).

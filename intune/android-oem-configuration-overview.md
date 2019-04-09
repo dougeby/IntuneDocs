@@ -110,9 +110,13 @@ The next time the OEMConfig app on the device checks for configuration updates, 
 
 Compared to standard apps, OEMConfig apps expand managed configurations privileges granted by Google. Intune supports the following OEMConfig apps:
 
+-----------------
+
 | OEM | Bundle ID |
 | --- | --- |
 | Samsung | com.samsung.android.knox.kpu |
+
+-----------------
 
 To request a new OEMConfig app be on-boarded, email `IntuneOEMConfig@microsoft.com`.
 
