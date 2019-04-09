@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -53,7 +53,7 @@ This article:
 
 3. Select **Profiles** > **Create Profile**. Enter the following properties:
 
-   - **Name**: Enter a descriptive name for the profile.
+   - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **WP email profile for entire company**.
    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
    - **Platform**: Choose the platform of your devices. Your options:  
 

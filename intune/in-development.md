@@ -65,9 +65,6 @@ You'll soon be able to use Intune to manage the custom firewall rules on clients
 ### Require App Protection Conditional Access  <!--1634317 -->
 You'll be able to use *Require App Protection policy*, which confirms policy is applied to a user’s app before sign in completes to prevent users from accessing data you protect with conditional access. While policy assurance might slow down the first use experience, it helps to protect against network issues, administrative misconfigurations, or intentional efforts to foil application protection policies. 
 
-### Deployment of online licensed Microsoft Store for Business apps <!-- 16726660 -->
-You'll be able to assign required online licensed Microsoft Store for Business apps in the device context. Deploying a Microsoft Store for Business app this way will enable the app to be installed for all users on the device. This is only applicable on Windows 10 RS4+ desktop devices. The option to install in the device context is available in the Client Apps assignment page for MSFB Online Licensed apps.
-
 ### Include and exclude mixture of user groups and device groups when assigning policies and profiles <!-- 1807547 -->
 When assigning compliance policies or configuration profiles, you can assign them to security groups with users or devices. Currently, you can include and exclude only user groups, *or* include and exclude only device groups. You can't include and exclude a mixture of groups, such as include user groups *and* exclude a devices group.
 
@@ -150,7 +147,7 @@ Android Enterprise fully managed devices
 ### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. A new compliance setting will check if a TPM is on the device.
 
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) lists the current settings.
+[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md) lists the current settings.
 
 Applies to: 
 - Windows 10 and later
