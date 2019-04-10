@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -35,18 +35,19 @@ The **User** category contains the **User** entity that defines user properties 
 
 The **User** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
-The **User** entity collection contains user data. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user  is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
+The **User** entity collection contains user data. These records include user states during the data collection period, even if the user has been removed. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data from the prior month. You could create a report that would show the duration of the user's historic presence in your data.
 
-| Property  | Description | Example |
-|---------|------------|--------|
-| UserKey |Unique identifier of the user in the data warehouse - surrogate key. |123 |
-| UserId |Unique identifier of the user  - similar to UserKey, but is a natural key. |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |Email address of the user. |John@constoso.com |
-| userPrincipalName | User principal name of the user. | John@constoso.com |
-| DisplayName |Display name of the user. |John |
-| IntuneLicensed |Specifies if this user is Intune licensed or not. |True/False |
-| IsDeleted | Indicates whether all of the user's licenses have expired and whether the user was therefore removed from Intune. For a single record, this flag does not change. Instead, a new record is created for a new user state. |True/False |
-| RowLastModifiedDateTimeUTC |Date and time in UTC when the record was last modified in the data warehouse  |11/23/2016 12:00:00 AM |
+|          Property          |                                                                                                           Description                                                                                                          |                Example               |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
+| UserKey                    | Unique identifier of the user in the data warehouse -   surrogate key.                                                                                                                                                         | 123                                  |
+| UserId                     | Unique identifier of the user - similar to UserKey, but is   a natural key.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail                  | Email address of the user.                                                                                                                                                                                                     | John@constoso.com                    |
+| userPrincipalName                        | User principal name of the user.                                                                                                                                                                                               | John@constoso.com                    |
+| DisplayName                | Display name of the user.                                                                                                                                                                                                      | John                                 |
+| IntuneLicensed             | Specifies if this user is Intune licensed or not.                                                                                                                                                                              | True/False                           |
+| IsDeleted                  | Indicates whether all of the user's licenses have expired   and whether the user was therefore removed from Intune. For a single record,   this flag does not change. Instead, a new record is created for a new user   state. | True/False                           |
+| RowLastModifiedDateTimeUTC | Date and time in UTC when the record was last modified in   the data warehouse                                                                                                                                                 | 11/23/2016 0:00                      |
+
 
 ## Next steps
  - You can use the **Current User** entity collection to limit the user data to users who are currently active. For more information, see [Reference for current user entity](reports-ref-current-user.md).

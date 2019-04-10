@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -82,6 +82,7 @@ The **EnrollmentActivity** entity indicates the activity of a device enrollment.
 |-------------------------------|---------------------------------------------------------------------------|
 | dateKey                       | Key of the date when this enrollment activity was recorded.               |
 | deviceEnrollmentTypeKey       | Key of the type of the enrollment.                                        |
+| deviceTypeKey                 | Key of the type of device.                                                |
 | enrollmentEventStatusKey      | Key of the status indicating the success or failure of the enrollment.    |
 | enrollmentFailureCategoryKey  | Key of the enrollment failure category (if the enrollment failed).        |
 | enrollmentFailureReasonKey    | Key of the enrollment failure reason (if the enrollment failed).          |
@@ -226,46 +227,61 @@ The **ManagementAgentTypes** entity represents the agents used to manage a devic
 
 The **Devices** entity lists all enrolled devices under management and their corresponding properties.
 
-| Property  | Description |
-|---------|------------|
-| DeviceKey | Unique identifier of the device in the data warehouse - surrogate key. |
-| DeviceId | Unique identifier of the device. |
-| DeviceName | Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
-| DeviceTypeKey | Key of the device type attribute for this device. |
-| OwnerTypeKey | Key of the owner type attribute for this device: corporate, personal, or unknown. |
-| objectSourceKey | Ignore this column. |
-| ManagementAgentKey | Key of the management agent associated with this device. |
-| ManagementStateKey | Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted. |
-| OSVersion | OS version |
-| OSMajorVersion | Major version component of the OS version (major.minor.build.revision). |
-| OSMinorVersion | Minor version component of the OS version (major.minor.build.revision). |
-| OSBuildNumber | Build version component of the OS version (major.minor.build.revision). |
-| OSRevisionNumber | Revision version component of the OS version (major.minor.build.revision). |
-| SerialNumber | Serial number of the device, if available. |
-| RowLastModifiedDateTimeUTC | Last time this record was modified. |
-| DeviceAction | Last device action issued, Ignore for now. |
-| Manufacturer | Manufacturer of the device. |
-| Model | Model of the device. |
-| IsDeleted | Set to True if the device is not managed by Intune anymore. Preserves the last known state. |
-| AndroidSecurityPatchLevel |The date of the device's most recent security patch. |
+|          Property          |                                                                                       Description                                                                                      |
+|:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DeviceKey                  | Unique   identifier of the device in the data warehouse - surrogate key.                                                                                                               |
+| DeviceId                   | Unique   identifier of the device.                                                                                                                                                     |
+| DeviceName                 | Name   of the device on platforms that allow naming a device. On other platforms,   Intune creates a name from other properties. This attribute cannot be   available for all devices. |
+| DeviceTypeKey              | Key   of the device type attribute for this device.                                                                                                                                    |
+| DeviceRegistrationState    | Key   of the client registration state attribute for this device.                                                                                                                      |
+| OwnerTypeKey               | Key   of the owner type attribute for this device: corporate, personal, or unknown.                                                                                                    |
+| EnrolledDateTime           | Date   and time that this device was enrolled.                                                                                                                                         |
+| LastSyncDateTime           | Last known device check-in with   Intune.                                                                                                                                              |
+| ManagementAgentKey         | Key of the management agent   associated with this device.                                                                                                                             |
+| ManagementStateKey         | Key of the management state   associated with this device, indicating latest state of a remote action or if   it was jailbroken/rooted.                                                |
+| AzureADDeviceId            | The   Azure deviceID for this device.                                                                                                                                                  |
+| AzureADRegistered          | Whether the device is Azure Active   Directory registered.                                                                                                                             |
+| DeviceCategoryKey          | Key of the category associated   with this device.                                                                                                                                     |
+| DeviceEnrollmentType       | Key of the enrollment type   associated with this device, indicating method of enrollment.                                                                                             |
+| ComplianceStateKey         | Key of the Compliance state   associated with this device.                                                                                                                             |
+| OSVersion                  | Operating system version of the device.                                                                                                                                                |
+| EasDeviceId                | Exchange ActiveSync ID of the device.                                                                                                                                                  |
+| SerialNumber               | SerialNumber                                                                                                                                                                           |
+| UserId                     | Unique Identifier for the user   associated with the device.                                                                                                                           |
+| RowLastModifiedDateTimeUTC | Date and time in UTC when this   device was last modified in the data warehouse.                                                                                                       |
+| Manufacturer               | Manufacturer of the device                                                                                                                                                             |
+| Model                      | Model of the device                                                                                                                                                                    |
+| OperatingSystem            | Operating system of the device. Windows, iOS,   etc.                                                                                                                                   |
+| IsDeleted                  | Binary   to show whether the device is deleted or not.                                                                                                                                 |
+| AndroidSecurityPatchLevel  | Android security patch level                                                                                                                                                           |
+| MEID                       | MEID                                                                                                                                                                                   |
+| isSupervised               | Device supervised status                                                                                                                                                               |
+| FreeStorageSpaceInBytes    | Free Storage in Bytes.                                                                                                                                                                 |
+| TotalStorageSpaceInBytes   | Total Storage in Bytes.                                                                                                                                                                |
+| EncryptionState            | Encryption state on the   device.                                                                                                                                                      |
+| SubscriberCarrier          | Subscriber carrier of the device                                                                                                                                                       |
+| PhoneNumber                | Phone number of the device                                                                                                                                                             |
+| IMEI                       | IMEI                                                                                                                                                                                   |
+| CellularTechnology         | Cellular technology of the   device                                                                                                                                                    |
+| WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 
 ## DevicePropertyHistory
 
 The **DevicePropertyHistory** entity has the same properties as the devices table and daily snapshots of each device record per day for the past 90 days. The DateKey column indicates the day for each row.
 
-| Property  | Description |
-|---------|------------|
-| DateKey |Reference to date table indicating the day. |
-| DeviceKey |Unique identifier of the device in the data warehouse - surrogate key. This is a reference to the Device table that contains the Intune device ID. |
-| DeviceName |Name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute cannot be available for all devices. |
-| OwnerTypeKey |Key of the owner type attribute for this device: corporate, personal, or unknown. |
-| objectSourceKey |Ignore this column. |
-| ManagementStateKey |Key of the management state associated with this device, indicating latest state of a remote action or if it was jailbroken/rooted. |
-| OSVersion |OS version. |
-| OSMajorVersion |Major version component of the OS version (major.minor.build.revision). |
-| OSMinorVersion |Minor version component of the OS version (major.minor.build.revision). |
-| OSBuildNumber |Build version component of the OS version (major.minor.build.revision). |
-| DeviceAction |Last device action issued, Ignore for now. |
+|          Property          |                                                                                      Description                                                                                     |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| DateKey                    | Reference to date table indicating the day.                                                                                                                                          |
+| DeviceKey                  | Unique identifier of the device in the data warehouse -   surrogate key. This is a reference to the Device table that contains the   Intune device ID.                               |
+| DeviceName                 | Name of the device on platforms that allow naming a   device. On other platforms, Intune creates a name from other properties. This   attribute cannot be available for all devices. |
+| DeviceRegistrationStateKey | Key of the device registration state attribute for this   device.                                                                                                                    |
+| OwnerTypeKey               | Key of the owner type attribute for this device:   corporate, personal, or unknown.                                                                                                  |
+| ManagementStateKey         | Key of the management state associated with this device,   indicating latest state of a remote action or if it was jailbroken/rooted.                                                |
+| AzureADRegistered          | Whether the device is Azure Active Directory registered.                                                                                                                             |
+| ComplianceStateKey         | A key to ComplianceState.                                                                                                                                                            |
+| OSVersion                  | OS version.                                                                                                                                                                          |
+| JailBroken                 | Whether the device is jail broken or rooted.                                                                                                                                         |
+| DeviceCategoryKey          | Key of device category attribute for this device. 
 
 ## ApplicationInventory
 
