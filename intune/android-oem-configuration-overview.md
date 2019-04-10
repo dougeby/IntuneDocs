@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -59,14 +59,14 @@ When using OEMConfig, be aware of the following information:
 
 - Intune exposes the OEMConfig app's schema so you can configure it. Intune doesn't validate or change the schema provided by the app. So if the schema is incorrect, or has inaccurate data, then this data is still sent to devices. If you find a problem that originates in the schema, contact the OEM for guidance.
 - Intune doesn't influence or control the content of the app schema. For example, Intune doesn't have any control over strings, language, the actions allowed, and so on. We recommend contacting the OEM for details and best practices for managing their devices with OEMConfig.
-- At any time, can OEMs update their supported features and schemas, and upload a new app to Google Play. Intune always syncs the latest version of the OEMConfig app from Google Play. Intune doesn't maintain older versions of the schema or the app. If you run into version conflicts, we recommend contacting the OEM for more information.
+- At any time, OEMs can update their supported features and schemas, and upload a new app to Google Play. Intune always syncs the latest version of the OEMConfig app from Google Play. Intune doesn't maintain older versions of the schema or the app. If you run into version conflicts, we recommend contacting the OEM for more information.
 
 ## Prerequisites
 
 To use OEMConfig on your devices, be sure you have the following requirements:
 
 - An Android Enterprise device enrolled in Intune.
-- An OEMConfig app built by the OEM. (The OEMConfig app is uploaded to Google Play. If it's not, contact the OEM for more information.)
+- An OEMConfig app built by the OEM, and uploaded to Google Play. If it's not on Google Play, contact the OEM for more information.
 - The Intune administrator has role-based access control (RBAC) permissions for **Mobile apps** and **DeviceConfigurations**. This is because OEMConfig profiles make use of managed app configurations to manage device configurations.
 
 ## Prepare the OEMConfig app
@@ -77,9 +77,7 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app has been a
 > OEMConfig apps are specific to the OEM. For example, a Sony OEMConfig app installed on a Zebra Technologies device doesn't do anything.
 
 1. Get the OEMConfig app from the Managed Google Play Store. [Add Managed Google Play apps to Android enterprise devices](apps-add-android-for-work.md) lists the steps.
-2. Some OEMs may ship devices with the OEMConfig app pre-installed.
-
-    If the app isn't preinstalled, use Intune to [add and deploy the app to devices](apps-deploy.md).
+2. Some OEMs may ship devices with the OEMConfig app pre-installed. If the app isn't preinstalled, use Intune to [add and deploy the app to devices](apps-deploy.md).
 
 ## Create an OEMConfig profile
 
