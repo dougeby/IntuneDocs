@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -159,7 +159,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
 
 - **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. For example, to change the password after 60 days, enter `60`. When the password expires, users are prompted to create a new password.
-- **Number of passwords required before user can resuse a password**: Enter the number of unique passwords, between 1-24, before a user can reuse a previous password.
+- **Number of passwords required before user can resuse a password**: Enter the number of recent passwords that can't be reused, between 1-24. Use this setting to restrict the user from creating previously used passwords.
 - **Number of sign-in failures before wiping device**: Enter the number, between 4-11, of failed sign-ins to allow before the device is wiped.
 
 ### Power settings
