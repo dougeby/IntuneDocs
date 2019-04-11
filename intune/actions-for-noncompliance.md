@@ -32,7 +32,7 @@ For devices that don't meet your compliance policies or rules, you can add **Act
 
 ## Overview
 
-By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device isn't compliant, **action for noncompliance also gives you flexibility to decide what to do. For example, don't block the device immediately, and give the user a grace period to be compliant.
+By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device isn't compliant, **action for noncompliance** also gives you flexibility to decide what to do. For example, don't block the device immediately, and give the user a grace period to be compliant.
 
 There are several types of actions:
 
@@ -43,6 +43,14 @@ There are several types of actions:
 - **Remotely lock the noncompliant device**: For devices that are noncompliant, you can issue a remote lock. The user is then prompted for a PIN or password to unlock the device. More on the [Remote Lock](device-remote-lock.md) feature. 
 
 - **Mark device non-compliant**: Create a schedule (in number of days) after the device is marked not compliant. You can configure the action to take effect immediately, or give the user a grace period to be compliant.
+
+- **Retire the noncompliant device**: This action removes all company data off the device and removes the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of 30 days. The following platforms support this action:
+   - Android
+   - iOS
+   - macOS
+   - Windows 10 Mobile
+   - Windows Phone 8.1 and later
+  Learn more about [retiring devices()].
 
 This article shows you how to:
 
@@ -108,14 +116,7 @@ You can also add another action when you create a compliance policy, or update a
     
     - **Remotely lock the noncompliant device**: When the device is noncompliant, lock the device. This action forces the user to enter a PIN or passcode to unlock the device. 
 
-    - **Retire the noncompliant device**: This action removes all company data off the device and removes the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of **30** days. The following platforms support this action:
-        - Android
-        - iOS
-        - macOS
-        - Windows 10 Mobile
-        - Windows Phone 8.1 and later
-
-      Learn more about [retiring devices](devices-wipe.md#retire).
+    - **Retire the noncompliant device**: When the device is noncompliant, remove all company data off the device and remove the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of **30** days.  
 
     
 5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. (*Retire the noncompliant device* supports a minimum of 30 days.) After this grace period, you can enforce a conditional access policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
