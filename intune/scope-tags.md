@@ -103,6 +103,11 @@ For devices with **Device enrollment type** set to **Managed apps**:
 2. Choose **Properties** > **Scope (Tags)** > choose the tags that you want to assign to the profile.
 3. Choose **Select** > **OK** > **Save**.
 
+## To assign a scope tag to an Apple Volume Purchase Program (VPP) token
+1. In Intune, choose **Client apps** > **Apple VPP tokens** > choose a VPP token.
+2. Select **Scope (Tags)** > choose the tags that you want to assign to the profile. The VPP apps and ebooks associated with the VPP token inherit the assigned tags.
+3. Choose **Select** > **OK** > **Save**.
+
 ## Scope tag details
 When working with scope tags, remember these details:
 
@@ -117,6 +122,7 @@ When working with scope tags, remember these details:
     - Powershell scripts
     - DEP tokens
     - iOS app provisioning profile
+    - Volume Purchase Program (VPP) tokens
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.
