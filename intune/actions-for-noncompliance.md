@@ -49,8 +49,9 @@ There are several types of actions:
    - iOS
    - macOS
    - Windows 10 Mobile
-   - Windows Phone 8.1 and later
-  Learn more about [retiring devices()].
+   - Windows Phone 8.1 and later  
+
+  Learn more about [retiring devices](devices-wipe.md#retire).
 
 This article shows you how to:
 
