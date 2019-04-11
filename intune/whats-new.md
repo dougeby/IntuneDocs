@@ -50,6 +50,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 <!-- ########################## -->
 
+## Week of April 8, 2019
+
+### Monitor and troubleshoot
+
+#### Changes to Intune Data Warehouse properties and collections <!-- 4403765 -->
+The Intune Data Warehouse has had recent changes. A number of properties and collections have either been removed, replaced, or renamed. For more information, see [Change log for the Intune Data Warehouse API](reports-changelog.md#1904).
+
 ## Week of April 1, 2019
 
 ### Device configuration
