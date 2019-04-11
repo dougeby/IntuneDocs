@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/11/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -41,108 +41,172 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## App Store
 
-- **App store (mobile only)**: Enable or block use of the app store on Windows 10 Mobile devices.
-- **Auto-update apps from store**: Allows apps installed from the Microsoft Store to be automatically updated.
-- **Trusted app installation**: Allows apps signed with a trusted certificate to be sideloaded.
-- **Developer unlock**: Allow Windows developer settings, such as allowing sideloaded apps to be modified by the end user.
-- **Shared user app data**: Allows apps to share data between different users on the same device.
-- **Use private store only**: Enable to only allow end users to download apps from your private store.
-- **Store originated app launch**: Used to disable all apps that were pre-installed on the device, or downloaded from the Microsoft Store.
-- **Install app data on system volume**: Stops apps from storing data on the system volume of the device.
-- **Install apps on system drive**: Stops apps from storing data on the system drive of the device.
-- **Game DVR (desktop only)**: Configures whether recording and broadcasting of games is allowed.
-- **Apps from the store only**: Configures whether users can install apps from places other than the app store.
+These settings use the [ApplicationManagement policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement), which also lists the supported Windows editions.
+
+- **App store** (mobile only): **Not configured** (default) allows end users access to the app store on mobile devices. **Block** prevents using the app store.
+- **Auto-update apps from store**: **Not configured** (default) allows apps installed from the Microsoft Store to be automatically updated. **Block** prevents updates from being automatically installed.
+- **Trusted app installation**: Choose if non-Microsoft Store apps can be installed, also known as sideloading. Sideloading is installing, and then running or testing an app that isn't certified by the Microsoft Store. For example, an app that is internal to your company only. Your options:
+  - **Not configured** (default): Uses the OS default.
+  - **Block**: Prevents sideloading. Non-Microsoft Store apps can't be installed.
+  - **Allow**: Allows sideloading. Non-Microsoft Store apps can be installed.
+- **Developer unlock**: Allow Windows developer settings, such as allowing sideloaded apps to be modified by end users. Your options:
+  - **Not configured** (default): Uses the OS default.
+  - **Block**: Prevents developer mode and sideloading apps.
+  - **Allow**: Allows developer mode and sideloading apps.
+
+  [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development) has more information on this feature.
+
+- **Shared user app data**: Choose **Allow** to share application data between different users on the same device and with other instances of that app. **Not configured** (default) prevents sharing data with other users and other instances of the same app.
+- **Use private store only**: **Allow** only allows apps to be downloaded from a private store, and not downloaded from the public store, including a retail catalog. **Not configured** (default) allows apps to be downloaded from a private store and a public store.
+- **Store originated app launch**: **Block** disables all apps that were pre-installed on the device, or downloaded from the Microsoft Store. **Not configured** (default) allows these apps to open.
+- **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
+- **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
+- **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
+- **Apps from the store only**: **Require** forces end users to only install apps from the Windows App Store. **Not configured** allows end users to install apps from places other than the Windows App Store.
+
+Select **OK** to save your changes.
 
 ## Cellular and Connectivity
 
-- **Cellular data channel**: Stop users from using data, like browsing the web, when they're connected to a cellular network. 
-- **Data roaming**: Allow roaming between networks when accessing data.
-- **VPN over the cellular network**: Controls whether the device can access VPN connections when connected to a cellular network.
-- **VPN roaming over the cellular network**: Controls whether the device can access VPN connections when roaming on a cellular network.
-- **Bluetooth**: Controls whether the user can enable and configure Bluetooth on the device.
-- **Bluetooth discoverability**: Lets the device be discovered by other Bluetooth-enabled devices.
-- **Bluetooth pre-pairing**: Lets you configure specific Bluetooth devices to automatically pair with a host device.
-- **Bluetooth advertising**: Lets the device receive advertisements over Bluetooth.
-- **Connected devices service**: Lets you choose to allow the connected devices service, which enables discovery and connection to other Bluetooth devices.
-- **NFC**: Lets the user enable and configure near field communications (NFC) features on the device.
-- **Wi-Fi**: Lets the user enable and configure Wi-Fi on the device (Windows 10 Mobile only).
-- **Automatically connect to Wi-Fi hotspots**: Lets the device automatically connect to free Wi-Fi hotspots and automatically accept any terms and conditions for the connection.
-- **Manual Wi-Fi configuration**: Controls whether the user can configure their own Wi-Fi connections, or whether they can only use connections configured by a Wi-Fi profile (Windows 10 Mobile only).
-- **Wi-Fi scan interval**: Enter how often devices scan for Wi-Fi networks. Enter a value from 1 (most frequent) to 500 (least frequent).
-- **Bluetooth allowed services**: Enter as hex strings, a list of allowed Bluetooth services and profiles.
+These settings use the following CSPs, which also list the supported Windows editions:
+
+- [Connectivity policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity)
+- [Wifi policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
+
+- **Cellular data channel**: Choose if end users can use data, like browsing the web, when connected to a cellular network. Your options:
+  - **Not configured** (default): Uses the OS default, which may allow the cellular data channel. End users can turn it off.
+  - **Block**: Don't allow the cellular data channel. End users can't turn it on.
+  - **Allow (not editable)**: Allows the cellular data channel. End users can't turn it off.
+
+- **Data roaming**: **Block** prevents cellular data roaming on the device. **Not configured** (default) allows roaming between networks when accessing data.
+- **VPN over the cellular network**: **Block** prevents the device from accessing VPN connections when connected to a cellular network. **Not configured** (default) allows VPN to use any connection, including cellular.
+- **VPN roaming over the cellular network**: **Block** stops the device from accessing VPN connections when roaming on a cellular network. **Not configured** (default) allows VPN connections when roaming.
+- **Connected devices service**: **Block** disables the Connected Devices Platform (CDP) component. CDP enables discovery and connection to other devices (through Bluetooth/LAN or the cloud) to support remote app launching, remote messaging, remote app sessions, and other cross-device experiences. **Not configured** (default) allows the connected devices service, which enables discovery and connection to other Bluetooth devices.
+- **NFC**: **Block** prevents near field communications (NFC) capabilities. **Not configured** (default) allows users to enable and configure NFC features on the device.
+- **Wi-Fi**: **Block** prevents users from and enabling, configuring, and using WiFi connections on the device. **Not configured** (default) allows WiFi connections.
+- **Automatically connect to Wi-Fi hotspots**: **Block** prevents devices from automatically connecting to Wi-Fi hotspots. **Not configured** (default) lets devices automatically connect to free Wi-Fi hotspots, and automatically accept any terms and conditions for the connection.
+- **Manual Wi-Fi configuration**: **Block** prevents devices from connecting to Wi-Fi outside of MDM server-installed networks. **Not configured** (default) allows end users to add and configure their own Wi-Fi connections network SSIDs.
+- **Wi-Fi scan interval**: Enter how often devices scan for Wi-Fi networks. Enter a value from 1 (most frequent) to 500 (least frequent). Default is `0` (zero).
+
+### Bluetooth
+
+These settings use the [Bluetooth policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth); which also lists the supported Windows editions.
+
+- **Bluetooth**: **Block** prevents users from enabling Bluetooth. **Not configured** (default) allows Bluetooth on the device.
+- **Bluetooth discoverability**: **Block** prevents the device from being discoverable by other Bluetooth-enabled devices. **Not configured** (default) allows other Bluetooth-enabled devices, such as a headset, to discover the device.
+- **Bluetooth pre-pairing**: **Block** prevents specific Bluetooth devices to automatically pair with a host device. **Not configured** (default) allows automatic pairing with the host device.
+- **Bluetooth advertising**: **Block** prevents the device from sending out Bluetooth advertisements. **Not configured** (default) allows the device to send out Bluetooth advertisements.
+- **Bluetooth allowed services**: **Add** a list of allowed Bluetooth services and profiles as hex strings, such as `{782AFCFC-7CAA-436C-8BF0-78CD0FFBD4AF}`.
+
+  [ServicesAllowedList usage guide](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) has more information on the service list.
+
+Select **OK** to save your changes.
 
 ## Cloud and Storage
 
-- **Microsoft account**: Lets the user associate a Microsoft account with the device.
-- **Non-Microsoft account**: Lets users add email accounts to the device that aren't associated with a Microsoft account.
-- **Settings synchronization for Microsoft account**: Allow device and app settings that are associated with a Microsoft account to synchronize between devices.
-- **Microsoft Account sign-in assistant**: Choose **Disable** to prevent end users from controlling the Microsoft Sign-in Assistant service (wlidsvc), such as manually stopping or starting the service. When set to **Not configured**, the wlidsvc NT service uses the operating system (OS) default, which may allow end users to start and stop the service. This service is used by the OS to allow users to sign in to their Microsoft account.
+These settings use the [Accounts policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); which also lists the supported Windows editions.
+
+- **Microsoft account**: **Block** prevents end users from associating a Microsoft account with the device. **Not configured** (default) allows adding and using a Microsoft account.
+- **Non-Microsoft account**: **Block** prevents end users from adding non-Microsoft accounts using the user interface. **Not configured** (default) allows users to add email accounts that aren't associated with a Microsoft account.
+- **Settings synchronization for Microsoft account**: **Not configured** (default) allows device and app settings associated with a Microsoft account to synchronize between devices. **Block** prevents this synchronization.
+- **Microsoft Account sign-in assistant**: When set to **Not configured** (default), end users can start and stop the **Microsoft Account Sign-In Assistant** (wlidsvc) service. This operating system service allows users to sign in to their Microsoft account. **Disable** prevents end users from controlling the Microsoft Sign-in Assistant service (wlidsvc).
+
+Select **OK** to save your changes.
 
 ## Cloud Printer
 
-- **Printer discovery URL**: Enter the URL for finding cloud printers.
-- **Printer access authority URL**: Enter the Authentication endpoint URL to get OAuth tokens. For example, enter something like `https://login.microsoftonline.com/your Azure AD Tenant ID`.
-- **Azure native client app GUID**: Enter the GUID of a client application allowed to get OAuth tokens from the OAuthAuthority.
-- **Print service resource URI**: Enter the OAuth resource URI for print service configured in the Azure portal. For example, enter something like `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
-- **Maximum printers to query (Mobile only)**: Enter the maximum number of printers that you want to be queried. For example, enter `10`.
-- **Printer discovery service resource URI**: Enter the OAuth resource URI for printer discovery service configured in the Azure portal. For example, enter something like `http://MopriaDiscoveryService/CloudPrint`.
+These settings use the [EnterpriseCloudPrint policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-enterprisecloudprint); which also lists the supported Windows editions.
+
+- **Printer discovery URL**: Enter the URL for finding cloud printers. For example, enter `https://cloudprinterdiscovery.contoso.com`.
+- **Printer access authority URL**: Enter the authentication endpoint URL to get OAuth tokens. For example, enter `https://azuretenant.contoso.com/adfs`.
+- **Azure native client app GUID**: Enter the GUID of a client application allowed to get OAuth tokens from the OAuthAuthority. For example, enter `E1CF1107-FF90-4228-93BF-26052DD2C714`.
+- **Print service resource URI**: Enter the OAuth resource URI for print service configured in the Azure portal. For example, enter `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Maximum printers to query**: Enter the maximum number of printers that you want to be queried. The default value is `20`.
+- **Printer discovery service resource URI**: Enter the OAuth resource URI for printer discovery service configured in the Azure portal. For example, enter `http://MopriaDiscoveryService/CloudPrint`.
 
 > [!TIP]
-> After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to Windows devices.
+> After you setup a [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), you can configure these settings, and then deploy to your Windows devices.
+
+Select **OK** to save your changes.
 
 ## Control Panel and Settings
 
-- **Settings app**: Block access to the Windows settings app.
-  - **System**: Blocks access to the system area of the settings app.
-    - **Power and sleep settings modification (desktop only)**: Prevents the end user from changing power and sleep settings on the device.
-  - **Devices**: Blocks access to the devices area of the settings app.
-  - **Network Internet**: Blocks access to the network and internet area of the settings app.
-  - **Personalization**: Blocks access to the personalization area of the settings app.
-  - **Accounts**: Blocks access to the accounts area of the settings app.
-  - **Time and Language**: Blocks access to the time and language area of the settings app.
-    - **System Time modification**: Prevents the end user from changing the device date and time.
-    - **Region settings modification (desktop only)**: Prevents the end user from changing the region settings on the device.
-    - **Language settings modification (desktop only)**: Prevents the user from changing the language settings on the device.
-  - **Gaming**: Blocks access to the Gaming app in Settings.
-  - **Ease of Access**: Blocks access to the ease of access area of the settings app.
-  - **Privacy**: Blocks access to the privacy area of the settings app.
-  - **Update and Security**: Blocks access to the updates and security area of the settings app.
+- **Settings app**: **Block** prevents end users from accessing to the Windows settings app. **Not configured** (default) allows users to open the Settings app on the device.
+  - **System**: **Block** prevents access to the System area of the Settings app. **Not configured** (default) allows access.
+    - **Power and sleep settings modification** (desktop only): **Block** prevents end users from changing the power and sleep settings on the device. **Not configured** (default) allows users to change power and sleep settings.
+  - **Devices**: **Block** prevents access to the Devices area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Network Internet**: **Block** prevents access to the Network & Internet area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Personalization**: **Block** prevents access to the Personalization area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Apps**: **Block** prevents access to the Apps area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Accounts**: **Block** prevents access to the Accounts area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Time and Language**: **Block** prevents access to the Time & Language area of the Settings app on the device. **Not configured** (default) allows access.
+    - **System Time modification**: **Block** prevents end users from changing the date and time settings on the device. **Not configured** allows users to change these settings.
+    - **Region settings modification** (desktop only): **Block** prevents end users from changing the region settings on the device. **Not configured** allows users to change these settings.
+    - **Language settings modification (desktop only)**: **Block** prevents end users from changing the language settings on the device. **Not configured** allows users to change these settings.
+
+      [Settings policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
+
+  - **Gaming**: **Block** prevents access to the Gaming area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Ease of Access**: **Block** prevents access to the Ease of Access area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Privacy**: **Block** prevents access to the Privacy area of the Settings app on the device. **Not configured** (default) allows access.
+  - **Update and Security**: **Block** prevents access to the Update & Security area of the Settings app on the device. **Not configured** (default) allows access.
+
+Select **OK** to save your changes.
 
 ## Display
 
-- **Turn on GDI scaling for apps**
-- **Turn off GDI scaling for apps**
+These settings use the [Display policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); which also lists the supported Windows editions.
 
-  GDI DPI Scaling lets apps that aren't DPI aware to become per-monitor DPI aware. Enter the legacy apps that have GDI DPI Scaling turned on. With GDI DPI Scaling configured to turn on and turn off on an app, scaling is turned off for the app.
+GDI DPI scaling enables applications that aren't DPI aware to become per monitor DPI aware.
+
+- **Turn on GDI scaling for apps**: **Add** the legacy apps that you want GDI DPI scaling turned on. For example, enter `filename.exe` or `%ProgramFiles%\Path\Filename.exe`.
+
+  GDI DPI scaling is turned on for all legacy applications in your list.
+
+- **Turn off GDI scaling for apps**: **Add** the legacy apps that you want GDI DPI scaling turned off. For example, enter `filename.exe` or `%ProgramFiles%\Path\Filename.exe`.
+
+  GDI DPI scaling is turned off for all legacy applications in your list.
+
+You can also **Import** a .csv file with the list of apps.
+
+Select **OK** to save your changes.
 
 ## General
 
-- **Screen capture (mobile only)**: Lets the user capture the device screen as an image.
-- **Copy and paste (mobile only)**: Allow copy and paste actions between apps on the device.
-- **Manual unenrollment**: Lets the user manually delete the workplace account from the device.
-  - This policy setting doesn't apply if the computer is Azure AD joined and auto-enrollment is enabled. 
-  - This policy setting doesn't apply to computers running Windows 10 Home.
-- **Manual root certificate installation (mobile only)**: Stops the user from manually installing root certificates, and intermediate CAP certificates.
+These settings use the [Experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); which also lists the supported Windows editions. 
 
-- **Camera**: Allow or block use of the camera on the device.
-- **OneDrive file sync**: Blocks the device from synchronizing files to OneDrive.
-- **Removable storage**: Specifies whether external storage devices, like SD cards can be used with the device.
-- **Geolocation**: Specifies whether the device can use location services information.
-- **Internet sharing**: Allow the use of Internet connection sharing on the device.
-- **Phone reset**: Controls whether the user can do a wipe on their device.
-- **USB connection (mobile only)**: Controls whether devices can access external storage devices through a USB connection.
-- **AntiTheft mode (mobile only)**: Configure whether Windows Antitheft mode is enabled.
-- **Cortana**: Enable or disable the Cortana voice assistant.
-- **Voice recording (mobile only)**: Allow or block use of the device voice recorder.
-- **Device name modification**: Prevents the end user from changing the device name (Windows 10 Mobile only)
-- **Add provisioning packages**: Blocks the run time configuration agent that installs the provisioning packages.
-- **Remove provisioning packages**: Blocks the run time configuration agent that removes the provisioning packages.
-- **Device discovery**: Block a device from being discovered by other devices.
-- **Task Switcher (mobile only)**: Blocks the task switcher on the device.
-- **SIM card error dialog (mobile only)**: Blocks an error message from displaying on the device if no SIM card is detected.
-- **Ink Workspace**: Block users from accessing the ink workspace. **Not configured** turns on the ink workspace, and the user is allowed to use it above the lock screen.
-- **Automatic redeployment**: Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management.
-- **Require users to connect to network during device setup**: Choose **Require** so the device connects to a network before going past the Network page during Windows 10 setup.
+- **Screen capture** (mobile only): **Block** prevents end users from getting screenshots on the device. **Not configured** (default) allows this feature.
+- **Copy and paste (mobile only)**: **Block** prevents end users from using copy-and-paste between apps on the device. **Not configured** (default) allows this feature.
+- **Manual unenrollment**: **Block** prevents end users from deleting the workplace account using the workplace control panel on the device. **Not configured** (default) allows this feature.
+
+  This policy setting doesn't apply if the computer is Azure AD joined and auto-enrollment is enabled.
+
+- **Manual root certificate installation** (mobile only): **Block** prevents end users from manually installing root certificates, and intermediate CAP certificates. **Not configured** (default) allows this feature.
+- **Camera**: **Block** prevents end users from using the camera on the device. **Not configured** (default) allows this feature.
+- **OneDrive file sync**: **Block** prevents end users from synchronizing files to OneDrive from the device. **Not configured** (default) allows this feature.
+- **Removable storage**: **Block** prevents end users from using external storage devices, like SD cards with the device. **Not configured** (default) allows this feature.
+- **Geolocation**: **Block** prevents end users from turning on location services on the device. **Not configured** (default) allows this feature.
+- **Internet sharing**: **Block** prevents Internet connection sharing on the device. **Not configured** (default) allows this feature.
+- **Phone reset**: **Block** prevents end users from wiping or doing a factory reset on the device. **Not configured** (default) allows this feature.
+- **USB connection**: **Block** prevents access to external storage devices through a USB connection on the device. **Not configured** (default) allows this feature. USB charging isn't affected by this setting.
+- **AntiTheft mode** (mobile only): **Block** prevents end users from selecting AntiTheft mode preference on the device. **Not configured** (default) allows this feature.
+- **Cortana**: **Block** disable the Cortana voice assistant on the device. When Cortana is off, users can still search to find items on the device. **Not configured** (default) allows Cortana.
+- **Voice recording** (mobile only): **Block** prevents end users from using the device voice recorder on the device. **Not configured** (default) allows voice recording for apps.
+- **Device name modification** (mobile only): **Block** prevents end users from changing the name of the device. **Not configured** (default) allows this feature.
+- **Add provisioning packages**: **Block** prevents the run time configuration agent that installs provisioning packages on the device. **Not configured** (default) allows this feature.
+- **Remove provisioning packages**: **Block** prevents the run time configuration agent that removes provisioning packages from the device. **Not configured** (default) allows this feature.
+- **Device discovery**: **Block** prevents the device from being discovered by other devices. **Not configured** (default) allows this feature.
+- **Task Switcher** (mobile only): **Block** prevents task switching on the device. **Not configured** (default) allows this feature.
+- **SIM card error dialog** (mobile only): **Block** error messages from showing on the device if no SIM card is detected. **Not configured** (default) shows the error messages.
+- **Ink Workspace**: Choose if and how user access the ink workspace. Your options:
+  - **Not configured** (default): Turns on the ink workspace, and the user is allowed to use it above the lock screen.
+  - **Disabled on lock screen**: The ink workspace is enabled and feature is turned on. But, the user can't access it above the lock screen.
+  - **Disabled**: Access to ink workspace is disabled. The feature is turned off.
+
+  [WindowsInkWorkspace policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace)
+
+- **Automatic redeployment**: Choose **Allow** so users with administrative rights can delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and re-enrolled into management. **Not configured** (default) prevents this feature.
+- **Require users to connect to network during device setup**: Choose **Require** so the device connects to a network before going past the Network page during Windows setup. **Not configured** (default) allows users to go past the Network page, even if it's not connected to a network.
 
   The setting becomes effective the next time the device is wiped or reset. Like any other Intune configuration, the device must be enrolled and managed by Intune to receive configuration settings. But once it's enrolled, and receiving policies, then resetting the device enforces the setting during the next Windows setup.
 
@@ -152,22 +216,46 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **End processes from Task Manager**: This setting determines whether non-administrators can use Task Manager to end tasks. **Block** prevents standard users (non-administrators) from using Task Manager to end a process or task on the device. **Not configured** (default) allows standard users to end a process or task using Task Manager.
 
+Select **OK** to save your changes.
+
 ## Locked screen experience
 
-- **Action center notifications (mobile only)**: Lets Action Center notifications appear on the device lock screen (Windows 10 Mobile only).
-- **Locked screen picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that's used as the Windows lock screen wallpaper. This setting locks the image. The image can't be changed afterwards.
-- **User configurable screen timeout (mobile only)**: Lets users configure the amount of time 
-- **Cortana on locked screen (desktop only)**: Don’t allow the user to interact with Cortana when the device is on the lock screen (Windows 10 desktop only).
-- **Toast notifications on locked screen**: Block alert messages from showing on the device lock screen.
-- **Screen timeout (mobile only)**: Specifies the time in seconds after the screen locks, when it will turn off.
+- **Action center notifications (mobile only)**: **Block** prevents Action Center notifications from showing on the device lock screen. **Not configured** (default) allows users to choose which apps show notifications on the lock screen.
+
+  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+
+- **Locked screen picture URL (desktop only)**: Enter the URL to a picture in JPG, JPEG, or PNG format that's used as the Windows lock screen wallpaper. For example, enter `https://contoso.com/image.png`. This setting locks the image, and can't be changed afterwards.
+- **User configurable screen timeout (mobile only)**: **Allow** lets users configure the screen timeout. **Not configured** (default) doesn't give users this option.
+
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+
+- **Cortana on locked screen** (desktop only): **Block** prevents users from interact with Cortana when the device is on the lock screen. **Not configured** (default) allows interaction with Cortana.
+
+  [AboveLock/AllowCortanaAboveLock CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowcortanaabovelock)
+
+- **Toast notifications on locked screen**: **Block** prevents toast notifications from showing on the device lock screen. **Not configured** (default) allows these notifications.
+
+  [AboveLock/AllowToasts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)
+
+- **Screen timeout (mobile only)**: Set the duration (in seconds) from the screen locking to the screen turning off. Supported values are 11-1800. For example, enter `300` to set this timeout to 5 minutes.
+
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+
+Select **OK** to save your changes.
 
 ## Messaging
 
-- **Message sync (mobile only)**: Disable Messaging Everywhere and text message back up and restore.
-- **MMS (mobile only)**: Disable the MMS send/receive functionality on the device.
-- **RCS (mobile only)**: Disable the Rich Communication Services send/receive functionality on the device.
+These settings use the [Messaging policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); which also lists the supported Windows editions.
+
+- **Message sync (mobile only)**: **Block** disables text messages from being backed up and restored, and from syncing messages between Windows devices. Disabling helps avoid information being stored on servers outside of the organization's control. **Not configured** (default) allows users to change these settings, and sync their messages.
+- **MMS (mobile only)**: **Block** disables MMS send and receive functionality on the device. For enterprises, use this policy to disable MMS on devices as part of the auditing or management requirement. **Not configured** (default) allows MMS send and receive.
+- **RCS (mobile only)**: **Block** disables Rich Communication Services (RCS) send and receive functionality on the device. For enterprises, use this policy to disable RCS on devices as part of the auditing or management requirement. **Not configured** (default) allows RCS send and receive.
+
+Select **OK** to save your changes.
 
 ## Microsoft Edge Browser
+
+These settings use the [Browser policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser), which also lists the supported Windows editions.
 
 ### Use Microsoft Edge kiosk mode
 
@@ -197,98 +285,109 @@ This device restrictions profile is directly related to the kiosk profile you cr
 ### Start experience
 
 - **Start Microsoft Edge with**: Choose which pages open when Microsoft Edge starts. Your options:
-  - **Start pages**: Microsoft Edge start with the default start page defined by the OS
-  - **New Tab page**: Microsoft Edge load whatever is defined in the **New Tab page URL** setting
-  - **Last session’s page**: Microsoft Edge loads the last session page 
-  - **Custom start page**: Microsoft Edge loads the start page defined by the IT administrator
-- **User can change Start pages**: **Allow** lets users change the Start pages. Administrators can use the `EdgeHomepageUrls` to enter the Start pages that users see by default when open Microsoft Edge. **Not configured** blocks users from changing the start pages.
-- **New Tab page URL**: Enter the URL to open on the New Tab page. For example, enter `https://www.bing.com`.
-- **Open web content on New Tab page**: Choose **Block** to stop Microsoft Edge from opening a website on a new tab. When blocked, new tab open blank. **Not configured** uses the OS default behavior on the device, which may allow users to choose what's shown.
-- **Home button**: Choose what happens when the Home button is selected. Your options:
+  - **Custom start pages**: Enter the start pages, such as `http://www.contoso.com`. Microsoft Edge loads the start pages you enter.
+  - **New Tab page**: Microsoft Edge load whatever is entered in the **New Tab URL** setting.
+  - **Last session’s page**: Microsoft Edge loads the last session page.
+  - **Start pages in local app settings**: Microsoft Edge start with the default start page defined by the OS.
+
+- **Allow user to change start pages**: **Yes** lets users change the start pages. Administrators can use the `EdgeHomepageUrls` to enter the start pages that users see by default when open Microsoft Edge. **No** (default) blocks users from changing the start pages.
+- **Allow web content on new tab page​**: When set to **Yes** (default), Microsoft Edge opens the URL entered in the **New Tab URL** setting. If the **New Tab URL** setting is blank, Microsoft Edge opens the new tab page listed in Microsoft Edge settings. UUsers can change it. When set to **No**, Microsoft Edge opens a new tab with a blank page. Users can't change it.​​
+- **New Tab URL**: Enter the URL to open on the New Tab page. For example, enter `https://www.bing.com` or `https://www.contoso.com`.
+
+- **Home button**: Choose what happens when the home button is selected. Your options:
   - **Start pages**: The option you chose for the **Start Microsoft Edge with** setting opens
-  - **New Tab page**: The option you chose for the **New Tab page URL** setting opens
-  - **Custom Home button URL**: The option you chose for the **Home button URL** setting opens
+  - **New Tab page**: The URL you entered in the **New Tab URL** setting opens.
+  - **Home button URL**: Enter the URL to open. For example, enter `https://www.bing.com` or `https://www.contoso.com`.
   - **Hide Home button**: Hides the home button
-- **User can change Home button**: **Allow** lets users change the home button. The user's changes override any administrator settings to the home button.​ **Not configured** uses the OS default behavior on the device, which may block users from changing how administrator configured the home button.
-- **Show First Run Experience page**: **Block** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, like those organizations enrolled in zero emissions configurations, to block this page. **Not configured** shows the introduction page.
-  - **First Run Experience URL**: Enter the page URL to show the first time a user runs Microsoft Edge (Windows 10 Mobile only).
+- **Allow users to change home button**: **Yes** lets users change the home button. The user's changes override any administrator settings to the home button.​ **No** (default) uses the OS default behavior on the device, which may block users from changing how the administrator configured the home button.
+- **Show First Run Experience page (Mobile only)**: **Yes** (default) shows the first use introduction page in Microsoft Edge. **No** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, such as organizations enrolled in zero emissions configurations, to block this page.
+  - **First Run Experience URL list location** (Windows 10 Mobile only): Enter the page URL to show the first time a user runs Microsoft Edge. For example, enter `https://www.contoso.com/sites.xml`.
+
 - **Refresh browser after idle time**: Enter the number of idle minutes until the browser is refreshed, from 0-1440 minutes. Default is `5` minutes. When set to `0` (zero), the browser doesn't refresh after being idle.
 
   This setting is only available when running in [InPrivate Public browsing (single-app kiosk)](#use-microsoft-edge-kiosk-mode).
 
-  CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
-
-- **Pop-ups**: Choose **Block** to stop pop-up windows in the browser. Applies to Windows 10 desktop only. **Not configured** allows pop-ups in the web browser.
-- **Send intranet traffic to Internet Explorer**: **Allow** lets users open intranet websites in Internet Explorer instead of Microsoft Edge (Windows 10 desktop only). **Not configured** allows users to use Microsoft Edge.
-- **Enterprise mode site list location**: Enter the URL that includes a list of web sites that open in Enterprise mode. Users can't change this list. Applies to Windows 10 desktop only.
+- **Allow pop-ups** (desktop only): **Yes** (default) allows pop-ups in the web browser. **No** prevents pop-up windows in the browser.
+- **Send intranet traffic to Internet Explorer** (desktop only): **Yes** lets users open intranet websites in Internet Explorer instead of Microsoft Edge. This setting is for backwards compatibility. **No** (default) allows users to use Microsoft Edge.
+- **Enterprise mode site list location** (desktop only): Enter the URL that includes a list of web sites that open in Enterprise mode. Users can't change this list. For example, enter `https://www.contoso.com/sites.xml`.
 - **Message when opening sites in Internet Explorer**: Use this setting to configure Microsoft Edge to show a notification before a site opens in Internet Explorer 11. Your options:
-  - **Not configured**: The OS default behavior is used, which may not show a message.
-  - **Show message without option to open sites in Microsoft Edge**: Show the message when opening sites in IE. Sites open in IE. There isn't an option to open sites in Microsoft Edge.
-  - **Show message when opening sites in Microsoft Edge**: Show the message when opening sites in IE. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
+  - **Don't show message**: The OS default behavior is used, which may not show a message.
+  - **Show message that site is opened in Internet Explorer 11**: Show the message when opening sites in IE. Sites open in IE. There isn't an option to open sites in Microsoft Edge.
+  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in IE. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
 
   > [!IMPORTANT]
-  > This setting requires you to enable the **Configure the Enterprise Mode Site List** setting, the **Send all intranet sites to Internet Explorer 11** setting, or both settings.
+  > This setting requires you to use the **Enterprise mode site list location** setting, the **Send intranet traffic to Internet Explorer** setting, or both settings.
 
-- **Microsoft compatibility list**: **Block** prevents the Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Microsoft Edge properly display sites with known compatibility issues. **Not configured** allows using a Microsoft compatibility list.
-- **Preload Start pages and New Tab page**: Choose **Block** to prevent Microsoft Edge from preloading start pages and the new tab page. Preloading minimizes the time to start Microsoft Edge, and load a new tab. **Not configured** uses the OS default behavior, which may be to preload these pages.
-- **Prelaunch Start pages and New Tab page**: Choose **Block** to prevent Microsoft Edge from pre-launching the start pages and new tab page. Pre-launching helps the performance of Microsoft Edge, and minimizes the time required to start Microsoft Edge. **Not configured** uses the OS default behavior, which may be to prelaunch these pages.
+- **Allow Microsoft compatibility list**: **Yes** (default) allows using a Microsoft compatibility list. **No** prevents the Microsoft compatibility list in Microsoft Edge. This list from Microsoft helps Microsoft Edge properly display sites with known compatibility issues.
+- **Preload start pages and New Tab page**: **Yes** (default) uses the OS default behavior, which may be to preload these pages. Preloading minimizes the time to start Microsoft Edge, and load new tabs. **No** prevents Microsoft Edge from preloading start pages and the new tab page.
+- **Prelaunch Start pages and New Tab page**: **Yes** (default) uses the OS default behavior, which may be to prelaunch these pages. Pre-launching helps the performance of Microsoft Edge, and minimizes the time required to start Microsoft Edge. **No** prevents Microsoft Edge from pre-launching the start pages and new tab page.
+
+Select **OK** to save your changes.
 
 ### Favorites and search
 
-- **Favorites bar**: Choose what happens to the favorites bar on any Microsoft Edge page. Your options:
-  - **Not configured**: Uses the OS default behavior, which may be to hide the favorites bar on all pages. User can change this setting.
-  - **Hide**: Hides the favorites bar on all pages. User can't change this setting.
-  - **Show**: Shows the favorites bar on all pages. User can't change this setting.
-- **Favorites List**: Add a list of URLs to the favorites file. For example, add `http://contoso.com/favorites.html`.
-- **Restrict changes to Favorites**: **Block** to prevent users from adding, importing, sorting, or editing the Favorites list. **Not configured** uses the OS default, which may allow users to change the list.
-- **Sync favorites between Microsoft browsers (desktop only)**: **Require** forces Windows to synchronize favorites between Internet Explorer and Microsoft Edge. Additions, deletions, modifications, and order changes to favorites are shared between browsers.  **Not configured** uses the OS default, which may give users the choice to sync favorites between the browsers.
+- **Show Favorites bar**: Choose what happens to the favorites bar on any Microsoft Edge page. Your options:
+  - **On start and new tab pages**: Shows the favorites bar when Microsoft Edge starts, and on all tab pages. End users can change this setting.
+  - **On all pages**: Shows the favorites bar on all pages. End users can't change this setting.
+  - **Hidden**: Hides the favorites bar on all pages. End users can't change this setting.
+- **Allow changes to favorites**: **Yes** (default) uses the OS default, which may allow users to change the list. **No** prevents end users from adding, importing, sorting, or editing the Favorites list.
+  - **Favorites List**: Add a list of URLs to the favorites file. For example, add `http://contoso.com/favorites.html`.
+- **Sync favorites between Microsoft browsers** (desktop only): **Yes** forces Windows to synchronize favorites between Internet Explorer and Microsoft Edge. Additions, deletions, modifications, and order changes to favorites are shared between browsers.  **No** (default) uses the OS default, which may give users the choice to sync favorites between the browsers.
 - **Default search engine**: Choose the default search engine on the device. End users can change this value at any time. Your options:
-  - Default
+  - Search engine in client Microsoft Edge settings
   - Bing
   - Google
   - Yahoo
-  - Custom value
-- **Search suggestions**: **Not configured** lets your search engine suggest sites as you type search phrases in the address bar. **Block** prevents this feature.
+  - Custom value: In **OpenSearch Xml URL**, enter an HTTPS URL with the XML file that includes the short name and the URL to the search engine, at minimum. For example, enter `https://www.contoso.com/opensearch.xml`.
+- **Show search suggestions**: **Yes** (default) lets your search engine suggest sites as you type search phrases in the address bar. **No** prevents this feature.
 - **Allow changes to search engine**: **Yes** (default) allows users to add new search engines, or change the default search engine in Microsoft Edge. Choose **No** to prevent users from customizing the search engine.
 
   This setting is only available when running in [Normal mode (multi-app kiosk)](#use-microsoft-edge-kiosk-mode).
 
-  CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
+Select **OK** to save your changes.
 
 ### Privacy and security
 
-- **InPrivate browsing**: **Block** prevents end users from opening InPrivate browsing sessions. **Not configured** allows this feature.
-- **Save browsing history**: **Block** prevents Microsoft Edge from saving the browsing history. **Not configured** allow saving the browsing history.
-- **Clear browsing data on exit (Desktop only)**: **Require** clears history, and browsing data when the user exits Microsoft Edge. **Not configured** uses the OS default, which may cache the browsing data.
+- **Allow InPrivate browsing**: **Yes** (default) allows InPrivate browsing in Microsoft Edge. After closing all InPrivate tabs, Microsoft Edge deletes the browsing data from the device. **No** prevents end users from opening InPrivate browsing sessions.
+- **Save browsing history**: **Yes** (default) allow saving the browsing history in Microsoft Edge. **No** prevents saving the browsing history.
+- **Clear browsing data on exit** (desktop only): **Yes** (default) clears the history, and browsing data when the user exits Microsoft Edge. **No** uses the OS default, which may cache the browsing data.
 - **Sync browser settings between user's devices**: Choose how you want to sync browser settings between devices. Your options:
   - **Allow**: Allow syncing of Microsoft Edge browser settings between user’s devices
   - **Block and enable user override**: Block syncing of Microsoft Edge browser settings between user’s devices. Users can override this setting.
-  - **Block**: Block syncing of Microsoft Edge browser setting between user’s devices. Users can't override this setting.
-- **Password Manager**: **Block** disables the Microsoft Edge Password Manager feature. **Not configured** allows this feature.
+  - **Block**: Block syncing of Microsoft Edge browser setting between users devices. Users can't override this setting.
+
+When "block and enable user override" is selected, user can override admin designation.
+
+- **Allow Password Manager**: **Yes** (default) allows Microsoft Edge to automatically use Password Manager, which allows users to save and manage passwords on the device. **No** prevents Microsoft Edge from using Password Manager.
 - **Cookies**: Choose how cookies are handled in the web browser. Your options:
   - **Allow**: Cookies are stored on the device.
   - **Block all cookies**: Cookies aren't stored on the device.
   - **Block only third party cookies**: Third party or partner cookies aren't stored on the device.
-- **Autofill**: **Block** disables the Autofill feature on the device. **Not configured** allows users to change autocomplete settings in the browser (Windows 10 desktop only).
-- **Send do-not-track headers**: **Not configured** requires devices to send do-not-track headers to websites requesting tracking info (recommended). Choose **Block** to prevent the device from sending these headers, which allows websites to track the user.
-- **WebRtc localhost IP address**: **Block** prevents users localhost IP address being shown when making phone calls using the web RTC protocol. **Not configured** allows users localhost IP address to be shown when making phone calls using this protocol.
-- **Live Tile data collection**: Choose **Block** to stop Windows from collecting information from the Live Tile a site is pinned to the start menu from Microsoft Edge. **Not configured** allows this information to be collected.
-- **User can override certificate errors**: **Block** prevents users from accessing websites that have SSL or TLS errors. **Not configured** allows users to access these sites.
+- **Allow Autofill in forms**: **Yes** (default) allows users to change autocomplete settings in the browser, and populate form fields automatically. **No** disables the Autofill feature in Microsoft Edge.
+- **Send do-not-track headers**: **Yes** (default) allow users to send do-not-track headers to websites requesting tracking info (recommended). **No** prevents users from sending these headers, which allows websites to track the user.
+- **Show WebRtc localhost IP address**: **Yes** (default) allows users' localhost IP address to be shown when making phone calls using this protocol. **No** prevents users' localhost IP address from being shown. 
+- **Allow live tile data collection**: **Yes** (default) allows Microsoft Edge to collect information from Live Tiles pinned to the start menu. **No** prevents collecting this information, which may provide users with a limited experience.
+- **User can override certificate errors**: **Yes** (default) allows users to access websites that have Secure Sockets Layer/Transport Layer Security (SSL/TLS) errors. **No** (recommended for increased security) prevents users from accessing websites with SSL or TLS errors.
+
+Select **OK** to save your changes.
 
 ### Additional
 
-- **Microsoft Edge browser (mobile only)**: Choose **Block** to prevent using Microsoft Edge on the device. If you block Microsoft Edge, the individual settings only apply to desktop. **Not configured** allows using the Microsoft Edge web browser on the device.
-- **Address bar dropdown (desktop only)**: **Block** stops Microsoft Edge from showing a list of suggestions in a drop-down list when you type. This option helps minimize network bandwidth between Microsoft Edge and Microsoft services. **Not configured** allows Microsoft Edge to show a list of suggestions.
-- **Full screen**: Choose **Block** to prevent Microsoft Edge from only showing the web content, and hiding the Microsoft Edge (fullscreen mode). **Not configured** uses the OS default, which allows Microsoft Edge to use fullscreen mode.
-- **About flags**: **Block** prevents end users from accessing the `about:flags` page in Microsoft Edge that includes the developer and experimental settings. **Not configured** uses the OS default, which may allow accessing the `about:flags` page.
-- **Developer tools**: **Block** prevents end users from opening the Microsoft Edge developer tools. **Not configured** allows users to open the developer tools.
-- **Extensions**: **Not configured** allows end users to install Microsoft Edge extensions on the device. **Block** prevents the installation.
-- **Sideloading developer extensions**: **Block** prevents Microsoft Edge from sideloading, which installs and runs unverified extensions using the **Load extensions** feature. **Not configured** uses the OS default, which may allow sideloading.
-- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) lists provides some guidance.
+- **Allow Microsoft Edge browser** (mobile only): **Yes** (default) allows using the Microsoft Edge web browser on the mobile device. **No** prevents using Microsoft Edge on the device. If you choose **No**, the other individual settings only apply to desktop.
+- **Allow address bar dropdown**: **Yes** (default) allows Microsoft Edge to show the address bar drop-down with a list of suggestions. **No** stops Microsoft Edge from showing a list of suggestions in a drop-down list when you type. When set to **No**, you:
+  - Help minimize network bandwidth between Microsoft Edge and Microsoft services.
+  - Disable the **Show search and site suggestions as I type** in Microsoft Edge > Settings.
+- **Allow full screen mode**: **Yes** (default) allows Microsoft Edge to use fullscreen mode, which shows only the web content and hides the Microsoft Edge UI. **No** prevents fullscreen mode in Microsoft Edge.
+- **Allow about flags page**: **Yes** (default) uses the OS default, which may allow accessing the `about:flags` page. The `about:flags` page allows users to change developer settings and enable experimental features. **No** prevents end users from accessing the `about:flags` page in Microsoft Edge.
+- **Allow developer tools**: **Yes** (default) allows users to use the F12 developer tools to build and debug web pages by default. **No** prevents end users from using the F12 developer tools.
+- **Allow JavaScript**: **Yes** (default) allows scripts, such as Javascript, to run in the Microsoft Edge browser. **No** prevents Java scripts in the browser from running.
+- **User can install extensions**: **Yes** (default) allows end users to install Microsoft Edge extensions on the device. **No** prevents the installation.
+- **Allow sideloading of developer extensions**: **Yes** (default) uses the OS default, which may allow sideloading. Sideloading installs and runs unverified extensions. **No** prevents Microsoft Edge from sideloading using the **Load extensions** feature. It doesn't prevent sideloading extensions using other ways, such as PowerShell.
+- **Required extensions**: Choose which extensions can't be turned off by end users in Microsoft Edge. Enter the package family names, and select **Add**. [Find a package family name (PFN)](https://docs.microsoft.com/sccm/protect/deploy-use/find-a-pfn-for-per-app-vpn) provides some guidance.
 
-  You can also **Import** a CSV file that includes the package family names.
+  You can also **Import** a CSV file that includes the package family names. Or, **Export** the package family names you enter.
 
-- **JavaScript**: Choose **Block** to prevent Java scripts in the browser from running on the device. **Not configured** allows scripts, such as Javascript, to run in the Microsoft Edge browser.
+Select **OK** to save your changes.
 
 ## Network proxy
 
@@ -300,6 +399,8 @@ This device restrictions profile is directly related to the kiosk profile you cr
   - **Port number**: Enter the port number of your proxy server.
   - **Proxy exceptions**: Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
   - **Bypass proxy server for local address**: If you don't want to use the proxy server for local addresses on your intranet, enable this option.
+
+Select **OK** to save your changes.
 
 ## Password
 
@@ -332,9 +433,11 @@ This device restrictions profile is directly related to the kiosk profile you cr
 
   [Authentication/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Preferred Azure AD tenant domain**: Enter an existing domain name in your Azure AD organization. When users in this domain sign in, they don't have to type the domain name. For example, enter `contoso.com`. Users in the `contoso.com` domain can sign in using their user name, such as "abby", instead of "abby@contoso.com".
+- **Preferred Azure AD tenant domain**: Enter an existing domain name in your Azure AD organization. When users in this domain sign in, they don't have to type the domain name. For example, enter `contoso.com`. Users in the `contoso.com` domain can sign in using their user name, such as `abby`, instead of `abby@contoso.com`.
 
   [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+
+Select **OK** to save your changes.
 
 ## Per-app privacy exceptions
 
@@ -364,15 +467,21 @@ You can add apps that should have a different privacy behavior from what you def
 - **Feedback and diagnostics**: Define whether this app can access diagnostic information.
 - **Sync with devices**: Choose if this app can automatically share and sync info with wireless devices that don't explicitly pair with the device.
 
+Select **OK** to save your changes.
+
 ## Personalization
 
 - **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change the picture.
+
+Select **OK** to save your changes.
 
 ## Printer
 
 - **Printers**: List of local printers that have been added.
 - **Default printer**: Set the default printer.
 - **User access to add new printers**: Allow or block use of local printers.
+
+Select **OK** to save your changes.
 
 ## Privacy
 
@@ -382,6 +491,8 @@ You can add apps that should have a different privacy behavior from what you def
 - **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity.
 
 You can configure information that all apps on the device can access. Also, define exceptions on a per-app basis using **Per-app privacy exceptions**.
+
+Select **OK** to save your changes.
 
 ### Exceptions
 
@@ -404,11 +515,15 @@ You can configure information that all apps on the device can access. Also, defi
 - **Feedback and diagnostics**: Choose if this app can access diagnostic information.
 - **Sync with devices** -Define whether this app can automatically share and sync info with wireless devices that don't explicitly pair with this PC, tablet, or phone.
 
+Select **OK** to save your changes.
+
 ## Projection
 
 - **User input from wireless display receivers**: Blocks user input from wireless display receivers.
 - **Projection to this PC**: Stops other devices from finding the PC for projection.
 - **Require PIN for pairing**: Require a PIN when connecting to a projection device.
+
+Select **OK** to save your changes.
 
 ## Reporting and telemetry
 
@@ -432,10 +547,14 @@ You can configure information that all apps on the device can access. Also, defi
   FQDN: www.contoso.com:345
   ```
 
+Select **OK** to save your changes.
+
 ## Search
 
 - **Safe Search (mobile only)**: Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
 - **Display web results in search**: Block or allow web results to appear in searches made on the device.
+
+Select **OK** to save your changes.
 
 ## Start
 
@@ -471,11 +590,15 @@ You can configure information that all apps on the device can access. Also, defi
 - **Settings on Start**: Hide or show the Settings app in the Windows Start menu.
 - **Videos on Start**: Hide or show the folder for videos in the Windows Start menu.
 
+Select **OK** to save your changes.
+
 ## Windows Defender Smart Screen
 
 - **SmartScreen for Microsoft Edge**: Enable Microsoft Edge SmartScreen for accessing site and file downloads.
 - **Malicious site access**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
 - **Unverified file download**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
+
+Select **OK** to save your changes.
 
 ## Windows Spotlight
 
@@ -488,6 +611,8 @@ You can configure information that all apps on the device can access. Also, defi
   - **Windows Spotlight personalization**: Stops Windows Spotlight from personalizing results based on the usage of a device.
   - **Windows welcome experience**: Block the Windows welcome experience that shows the user information about new, or updated features.
 
+Select **OK** to save your changes.
+
 ## Windows Defender Antivirus
 
 - **Real-time monitoring**: Enables real-time scanning for malware, spyware, and other unwanted software.
@@ -498,7 +623,7 @@ You can configure information that all apps on the device can access. Also, defi
 - **End user access to Defender**: Controls whether the Windows Defender user interface is hidden from end users. When this setting is changed, it takes effect the next time the end user's PC is restarted.
 - **Signature update interval (in hours)**: Enter the interval at which Defender checks for new signature files.
 - **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices.
-- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously-affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed.
+- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed.
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
 - **Scan archive files**: Allows Defender to scan archived files such as Zip or Cab files.
 - **Scan incoming mail messages**: Allows Defender to scan email messages as they arrive on the device.
@@ -544,11 +669,15 @@ You can configure information that all apps on the device can access. Also, defi
   - **User defined**
   - **Block**
 
+Select **OK** to save your changes.
+
 ### Windows Defender Antivirus Exclusions
 
 - **Files and folders to exclude from scans and real-time protection**: Adds one or more files and folders like **C:\Path** or **%ProgramFiles%\Path\filename.exe** to the exclusions list. These files and folders aren't included in any real-time or scheduled scans.
 - **File extensions to exclude from scans and real-time protection**: Add one or more file extensions like **jpg** or **txt** to the exclusions list. Any files with these extensions aren't included in any real-time or scheduled scans.
 - **Processes to exclude from scans and real-time protection**: Add one or more processes of the type **.exe**, **.com**, or **.scr** to the exclusions list. These processes aren't included in any real-time, or scheduled scans.
+
+Select **OK** to save your changes.
 
 ## Next steps
 
