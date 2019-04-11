@@ -36,7 +36,7 @@ Keep current on updates to the Intune Data Warehouse.
 ## 1904
 _Released April 2019_
 
-### V1.0 changes
+### Beta changes
 
 The following table lists the recent removed collections and the replacements collections in the Intune Data Warehouse.
 
