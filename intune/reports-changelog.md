@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
 Keep current on updates to the Intune Data Warehouse.
 
-## 1904
+## 1903 (Part 2)
 _Released April 2019_
 
 ### Beta changes
