@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -142,7 +142,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 ### Step 5: Configure app requirements
 
 1.	In the **Add app** pane, select **Requirements** to configure the requirements that devices must meet before the app is installed.
-2.	In the **Requirements** pane, configure the following information. Some of the values in this pane might be automatically filled in.
+2.	In the **Add a Requirement rule** pane, configure the following information. Some of the values in this pane might be automatically filled in.
     - **Operating system architecture**: Choose the architectures need to install the app.
     - **Minimum operating system**: Select the minimum operating system needed to install the app.
     - **Disk space required (MB)**: Optionally, add the free disk space needed on the system drive to install the app.
