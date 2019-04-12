@@ -100,8 +100,6 @@ Once the configuration files have been modified, you will need to restart the In
 2. Find and select the **Intune ODJConnector Service**
 3. Click **Restart**
 
-![Intune ODJConnector Service](./media/windows-autopilot-hybrid/odjconnector-service.png)
-
 ## Next steps
 
 [Manage your devices](device-management.md)
