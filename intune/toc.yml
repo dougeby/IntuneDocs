@@ -198,6 +198,8 @@
         href: enrollment-autopilot.md
       - name: Hybrid Active Directory with Autopilot
         href: windows-autopilot-hybrid.md
+      - name: Configure proxy settings for Autopilot
+        href: autopilot-hybrid-connector-proxy.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
