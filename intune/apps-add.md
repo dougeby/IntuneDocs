@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,7 @@ The following table lists the specific app types and how you can add them in the
 | **App-specific type** | **General type** | **App-specific procedures** |
 | --- | --- | --- |
 | Android store apps  | Store app  | Select **Android** as the **app type**, and enter the Google Play store URL for the app. |
+| Android Enterprise apps  | Store app  | Select **Android** as the **app type**, and enter the Managed Google Play store URL for the app. <sup>1</sup> |
 | iOS store apps  | Store app  | Select **iOS** as the **app type**, search for the app, and select the app in Intune. |
 | Windows Phone 8.1 store apps  | Store app  | Select **Windows Phone 8.1** as the **app type**, and enter the Microsoft store URL for the app. |
 | Microsoft store apps  | Store app  | Select **Windows** as the **app type**, and enter the Microsoft store URL for the app. |
@@ -61,6 +62,8 @@ The following table lists the specific app types and how you can add them in the
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
 | Windows app (Win32)  | LOB app  | Select **Windows app (Win32)** as the **app type**, select the **App package file**, and then select an installation file with the extension **.intunewin**.  |
+
+<sup>1</sup> For more information about Android Enterprise and Android work profiles, see [Understanding licensed apps](apps-add.md#understanding-licensed-apps) below.
 
 You can add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane is displayed and allows you to select the **App type**. 
 
