@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -33,7 +33,7 @@ Microsoft Intune lets you manage a range of devices by *enrolling* them into the
 
 This article gives a full list of the capabilities that you get after devices are enrolled.
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the Intune portal.
+Management, inventory, app deployment, provisioning, and retirement are all handled through Intune in the Azure portal.
 
 Users gain access to the company portal, which enables them to install apps, enroll and remove devices, and contact their IT department or helpdesk.
 
