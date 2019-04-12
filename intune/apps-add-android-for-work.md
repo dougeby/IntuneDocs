@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -128,6 +128,10 @@ Periodically visit the managed Google Play console to check for new permissions.
     Any listed apps require new permissions and are not assigned until they are applied.
 
 Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis.
+
+## Additional Managed Google Play app reporting for Android Enterprise work profile devices
+
+For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. 
 
 ## Working with a line-of-business app from the Managed Google Play store
 
