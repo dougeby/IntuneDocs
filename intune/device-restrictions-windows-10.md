@@ -68,9 +68,8 @@ Select **OK** to save your changes.
 
 ## Cellular and Connectivity
 
-These settings use the following CSPs, which also list the supported Windows editions:
+These settings use the [connectivity policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) and [Wifi policy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) CSPs, which also list the supported Windows editions.
 
-- [Connectivity policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity)
 - [Wifi policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **Cellular data channel**: Choose if end users can use data, like browsing the web, when connected to a cellular network. Your options:
@@ -104,7 +103,7 @@ Select **OK** to save your changes.
 
 ## Cloud and Storage
 
-These settings use the [Accounts policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); which also lists the supported Windows editions.
+These settings use the [accounts policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts); which also lists the supported Windows editions.
 
 - **Microsoft account**: **Block** prevents end users from associating a Microsoft account with the device. **Not configured** (default) allows adding and using a Microsoft account.
 - **Non-Microsoft account**: **Block** prevents end users from adding non-Microsoft accounts using the user interface. **Not configured** (default) allows users to add email accounts that aren't associated with a Microsoft account.
@@ -155,7 +154,7 @@ Select **OK** to save your changes.
 
 ## Display
 
-These settings use the [Display policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); which also lists the supported Windows editions.
+These settings use the [display policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display); which also lists the supported Windows editions.
 
 GDI DPI scaling enables applications that aren't DPI aware to become per monitor DPI aware.
 
@@ -173,7 +172,7 @@ Select **OK** to save your changes.
 
 ## General
 
-These settings use the [Experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); which also lists the supported Windows editions. 
+These settings use the [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience); which also lists the supported Windows editions. 
 
 - **Screen capture** (mobile only): **Block** prevents end users from getting screenshots on the device. **Not configured** (default) allows this feature.
 - **Copy and paste (mobile only)**: **Block** prevents end users from using copy-and-paste between apps on the device. **Not configured** (default) allows this feature.
@@ -245,7 +244,7 @@ Select **OK** to save your changes.
 
 ## Messaging
 
-These settings use the [Messaging policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); which also lists the supported Windows editions.
+These settings use the [messaging policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging); which also lists the supported Windows editions.
 
 - **Message sync (mobile only)**: **Block** disables text messages from being backed up and restored, and from syncing messages between Windows devices. Disabling helps avoid information being stored on servers outside of the organization's control. **Not configured** (default) allows users to change these settings, and sync their messages.
 - **MMS (mobile only)**: **Block** disables MMS send and receive functionality on the device. For enterprises, use this policy to disable MMS on devices as part of the auditing or management requirement. **Not configured** (default) allows MMS send and receive.
@@ -255,7 +254,7 @@ Select **OK** to save your changes.
 
 ## Microsoft Edge Browser
 
-These settings use the [Browser policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser), which also lists the supported Windows editions.
+These settings use the [browser policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser), which also lists the supported Windows editions.
 
 ### Use Microsoft Edge kiosk mode
 

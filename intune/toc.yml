@@ -327,7 +327,7 @@
       items:
       - name: StageNow logs and common issues
         href: android-zebra-mx-logs-troubleshoot.md
-    - name: Android Enterprise OEMConfig
+    - name: OEMConfig on Android Enterprise
       href: android-oem-configuration-overview.md
     - name: Monitor telecom expenses
       href: telecom-expenses-monitor.md
