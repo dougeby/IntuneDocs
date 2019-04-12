@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -97,4 +97,4 @@ This capability is useful to avoid getting into a race condition. For instance, 
 
 - Learn more about the ways in which you can monitor the properties and assignment of your app. See [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
+- Learn more about the context of your app in Intune. See [Overview of the app lifecycle in Microsoft Intune](app-lifecycle.md).

@@ -72,11 +72,16 @@ The following are typical settings to use for a proxy server that caches content
 |         Cache size         |             5 GB to 30 GB             | The value varies based on the number of client computers in your network and the configurations you use. To prevent files from being deleted too soon, adjust the size of the cache for your environment. |
 | Individual cache file size |                950 MB                 |                                                                     This setting might not be available in all caching proxy servers.                                                                     |
 |   Object types to cache    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune packages are CAB files retrieved by Background Intelligent Transfer Service (BITS) download over HTTP.                                               |
+> [!NOTE]
+> If you use a proxy server to cache content requests, communication is only encrypted between the client and the proxy and from the proxy to Intune. The connection from the client to Intune will not be encrypted end-to-end.
 
 For information about using a proxy server to cache content, see the documentation for your proxy server solution.
 
 ### Use Background Intelligent Transfer Service (BITS) on computers
 During hours that you configure, you can use BITS on a Windows computer to reduce the network bandwidth. You can configure BITS policy on the **Network bandwidth** page of the Intune Agent policy.
+
+> [!NOTE]
+> For MDM management on Windows, only the OS’s management interface for the MobileMSI app type uses BITS to download. AppX/MsiX use their own non-BITS download stack and Win32 apps via the Intune agent use Delivery Optimization rather than BITS.
 
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
