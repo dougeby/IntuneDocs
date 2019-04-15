@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -127,15 +127,12 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
     For the specific agruments supported by the application package, contact your application vendor.
 
+    You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device. End users are not required to be logged in on the device to install Win32 apps on devices that are not Azure AD joined. You can configure your Win32 apps to be installed in device context for all users on Intune enrolled Azure AD joined devices by setting **Install behavior** to **System**. By setting this value to **System**, the Win32 app will be installed for all users, if supported. The end user must log on to the device using their Azure AD user account and enroll in Intune. Additionally, Intune will install Intune Management extension on the device when the Win32 app is targeted to the device or user.
+
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
     For example:
     `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
-
-    > [!NOTE]
-    > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
-    >
-    > End users are not required to be logged in on the device to install Win32 apps.
 
 4.	When you're finished, select **OK**.
 
