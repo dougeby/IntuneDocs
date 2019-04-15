@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -142,14 +142,32 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 ### Step 5: Configure app requirements
 
 1.	In the **Add app** pane, select **Requirements** to configure the requirements that devices must meet before the app is installed.
-2.	In the **Requirements** pane, configure the following information. Some of the values in this pane might be automatically filled in.
+2.	In the **Add a Requirement rule** pane, configure the following information. Some of the values in this pane might be automatically filled in.
     - **Operating system architecture**: Choose the architectures need to install the app.
     - **Minimum operating system**: Select the minimum operating system needed to install the app.
     - **Disk space required (MB)**: Optionally, add the free disk space needed on the system drive to install the app.
     - **Physical memory required (MB)**: Optionally, add the physical memory (RAM) required to install the app.
     - **Minimum number of logical processors required**: Optionally, add the minimum number of logical processors required to install the app.
     - **Minimum CPU speed required (MHz)**: Optionally, add the minimum CPU speed required to install the app.
-3.	When you're finished, select **OK**.
+
+3. Click **Add** to display the **Add a Requirement rule** blade and configure additional requirement rules. Select the **Requirement type** to choose the type of rule that you will use to determine how a requirement is validated. Requirement rules can be based on file system information, registry values, or PowerShell scripts. 
+    - **File**: When you choose **File** as the **Requirement type**, the requirement rule must detect a file or folder, date, version, or size. 
+        - **Path** – The full path of the folder containing the file or folder to detect.
+        - **File or folder** - The file or folder to detect.
+        - **Property** – Select the type of rule used to validate the presence of the app.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to expand any path environment variables in the 32-bit context on 64-bit clients. Select **No** (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+    - **Registry**: When you choose **Registry** as the **Requirement type**, the requirement rule must detect a registry setting based on value, string, integer, or version.
+        - **Key path** – The full path of the registry entry containing the value to detect.
+        - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
+        - **Registry key requirement** – Select the type of registry key comparison used to determine how the requirement rule is validated.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to search the 32-bit registry on 64-bit clients. Select **No** (default) search the 64-bit registry on 64-bit clients. 32-bit clients will always search the 32-bit registry.
+    - **Script**: Choose **Script** as the **Requirement type**, when you cannot create a requirement rule based on file, registry, or any other method available to you in the Intune console.
+        - **Script file** – For PowerShell script based requirement rule, if exist code is 0, we will detect the STDOUT in more detail. For example, we can detect STDOUT as an integer that has a value of 1.
+        - **Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+        - **Run this script using the logged on credentials**: Select **Yes** to run the script using the signed in device credentials**.
+        - **Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
+        - **Select output data type**: Select the data type used when determining a requirement rule match.
+4.	When you're finished, select **OK**.
 
 ### Step 6: Configure app detection rules
 
