@@ -30,10 +30,12 @@ ms.collection: M365-identity-device-management
 
 # Sign in to Company Portal and Microsoft Intune app <!--User Story 1132123-->
 
-There are two ways to sign in to the Company Portal and Microsoft Intune apps:
+There are three ways to sign in to the Company Portal and Microsoft Intune apps:
 
 * Sign in with your work email address and password.  
+* Sign in with certificate-based authentication.  
 * Sign in from another device.    
+
 
 ## Sign in with your email address and password
 The following steps show screenshots from the Company Portal for iOS. These instructions are the same for other device platforms and for the Microsoft Intune app.  
