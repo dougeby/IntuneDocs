@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -110,16 +110,16 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 	> [!TIP]
 	> To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
 
-12. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps.
+12. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps. To get to the advanced settings pane, on the *Exchange access - Exchange on-premises access* view, select *Exchange ActiveSync - on-premises connector*.
 
-8. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
+13. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
 
    - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
    - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
 
-13. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
+14. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-14. On the **On-premises** pane, click **Save** to save the conditional access policy.
+15. On the **On-premises** pane, click **Save** to save the conditional access policy.
 
 ## Create Azure AD Conditional access policies in Intune
 
