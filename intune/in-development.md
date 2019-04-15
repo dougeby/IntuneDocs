@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -64,16 +64,6 @@ You'll soon be able to use Intune to manage the custom firewall rules on clients
 
 ### Require App Protection Conditional Access  <!--1634317 -->
 You'll be able to use *Require App Protection policy*, which confirms policy is applied to a user’s app before sign in completes to prevent users from accessing data you protect with conditional access. While policy assurance might slow down the first use experience, it helps to protect against network issues, administrative misconfigurations, or intentional efforts to foil application protection policies. 
-
-### Include and exclude mixture of user groups and device groups when assigning policies and profiles <!-- 1807547 -->
-When assigning compliance policies or configuration profiles, you can assign them to security groups with users or devices. Currently, you can include and exclude only user groups, *or* include and exclude only device groups. You can't include and exclude a mixture of groups, such as include user groups *and* exclude a devices group.
-
-You'll be able to include and exclude a mix of user groups and device groups. You can include a group of users, and exclude a group of devices. For example, you can assign or deploy a device configuration profile to a group of users, but exclude personal devices.
-
-[Assign device configuration profiles](device-profile-assign.md) includes more information on assigning profiles to user groups and device groups.
-
-Applies to: 
-All platforms
 
 ### Retire noncompliant devices <!-- 1827291 -->
 We're going to add a new compliance action to retire a noncompliant device. Retiring a noncompliant device removes all company data from it, and also removes the device from being managed by Intune. This action runs when the configured value in days is reached. The minimum value is 30 days. 
