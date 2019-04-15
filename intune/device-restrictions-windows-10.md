@@ -289,30 +289,30 @@ This device restrictions profile is directly related to the kiosk profile you cr
   - **Last session’s page**: Microsoft Edge loads the last session page.
   - **Start pages in local app settings**: Microsoft Edge start with the default start page defined by the OS.
 
-- **Allow user to change start pages**: **Yes** lets users change the start pages. Administrators can use the `EdgeHomepageUrls` to enter the start pages that users see by default when open Microsoft Edge. **No** (default) blocks users from changing the start pages.
-- **Allow web content on new tab page​**: When set to **Yes** (default), Microsoft Edge opens the URL entered in the **New Tab URL** setting. If the **New Tab URL** setting is blank, Microsoft Edge opens the new tab page listed in Microsoft Edge settings. UUsers can change it. When set to **No**, Microsoft Edge opens a new tab with a blank page. Users can't change it.​​
+- **Allow user to change start pages**: **Yes** (default) lets users change the start pages. Administrators can use the `EdgeHomepageUrls` to enter the start pages that users see by default when open Microsoft Edge. **No** blocks users from changing the start pages.
+- **Allow web content on new tab page​**: When set to **Yes** (default), Microsoft Edge opens the URL entered in the **New Tab URL** setting. If the **New Tab URL** setting is blank, Microsoft Edge opens the new tab page listed in Microsoft Edge settings. Users can change it. When set to **No**, Microsoft Edge opens a new tab with a blank page. Users can't change it.​​
 - **New Tab URL**: Enter the URL to open on the New Tab page. For example, enter `https://www.bing.com` or `https://www.contoso.com`.
 
 - **Home button**: Choose what happens when the home button is selected. Your options:
-  - **Start pages**: The option you chose for the **Start Microsoft Edge with** setting opens
-  - **New Tab page**: The URL you entered in the **New Tab URL** setting opens.
+  - **Start pages**: Opens the option you chose in the **Start Microsoft Edge with** setting
+  - **New Tab page**: Opens the URL you entered in the **New Tab URL** setting.
   - **Home button URL**: Enter the URL to open. For example, enter `https://www.bing.com` or `https://www.contoso.com`.
   - **Hide Home button**: Hides the home button
-- **Allow users to change home button**: **Yes** lets users change the home button. The user's changes override any administrator settings to the home button.​ **No** (default) uses the OS default behavior on the device, which may block users from changing how the administrator configured the home button.
+- **Allow users to change home button**: **Yes** lets users change the home button. The user's changes override any administrator settings to the home button.​ **No** (default) blocks users from changing how the administrator configured the home button.
 - **Show First Run Experience page (Mobile only)**: **Yes** (default) shows the first use introduction page in Microsoft Edge. **No** stops the introduction page from showing the first time you run Microsoft Edge. This feature allows enterprises, such as organizations enrolled in zero emissions configurations, to block this page.
-  - **First Run Experience URL list location** (Windows 10 Mobile only): Enter the page URL to show the first time a user runs Microsoft Edge. For example, enter `https://www.contoso.com/sites.xml`.
+- **First Run Experience URL list location** (Windows 10 Mobile only): Enter the URL that points to the XML file containing the first run page URL(s). For example, enter `https://www.contoso.com/sites.xml`.
 
 - **Refresh browser after idle time**: Enter the number of idle minutes until the browser is refreshed, from 0-1440 minutes. Default is `5` minutes. When set to `0` (zero), the browser doesn't refresh after being idle.
 
   This setting is only available when running in [InPrivate Public browsing (single-app kiosk)](#use-microsoft-edge-kiosk-mode).
 
 - **Allow pop-ups** (desktop only): **Yes** (default) allows pop-ups in the web browser. **No** prevents pop-up windows in the browser.
-- **Send intranet traffic to Internet Explorer** (desktop only): **Yes** lets users open intranet websites in Internet Explorer instead of Microsoft Edge. This setting is for backwards compatibility. **No** (default) allows users to use Microsoft Edge.
-- **Enterprise mode site list location** (desktop only): Enter the URL that includes a list of web sites that open in Enterprise mode. Users can't change this list. For example, enter `https://www.contoso.com/sites.xml`.
+- **Send intranet traffic to Internet Explorer** (Desktop only): **Yes** lets users open intranet websites in Internet Explorer instead of Microsoft Edge. This setting is for backwards compatibility. **No** (default) allows users to use Microsoft Edge.
+- **Enterprise mode site list location** (Desktop only): Enter the URL that points to the XML file containing a list of web sites that open in Enterprise mode. Users can't change this list. For example, enter `https://www.contoso.com/sites.xml`.
 - **Message when opening sites in Internet Explorer**: Use this setting to configure Microsoft Edge to show a notification before a site opens in Internet Explorer 11. Your options:
   - **Don't show message**: The OS default behavior is used, which may not show a message.
-  - **Show message that site is opened in Internet Explorer 11**: Show the message when opening sites in IE. Sites open in IE. There isn't an option to open sites in Microsoft Edge.
-  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in IE. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
+  - **Show message that site is opened in Internet Explorer 11**: Show the message when opening sites in IE. Sites open in IE. 
+  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in Edge. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
 
   > [!IMPORTANT]
   > This setting requires you to use the **Enterprise mode site list location** setting, the **Send intranet traffic to Internet Explorer** setting, or both settings.
@@ -326,12 +326,12 @@ Select **OK** to save your changes.
 ### Favorites and search
 
 - **Show Favorites bar**: Choose what happens to the favorites bar on any Microsoft Edge page. Your options:
-  - **On start and new tab pages**: Shows the favorites bar when Microsoft Edge starts, and on all tab pages. End users can change this setting.
+  - **On Start and new Tab pages**: Shows the favorites bar when Microsoft Edge starts, and on all Tab pages. End users can change this setting.
   - **On all pages**: Shows the favorites bar on all pages. End users can't change this setting.
   - **Hidden**: Hides the favorites bar on all pages. End users can't change this setting.
-- **Allow changes to favorites**: **Yes** (default) uses the OS default, which may allow users to change the list. **No** prevents end users from adding, importing, sorting, or editing the Favorites list.
+- **Allow changes to favorites**: **Yes** (default) uses the OS default, which allows users to change the list. **No** prevents end users from adding, importing, sorting, or editing the Favorites list.
   - **Favorites List**: Add a list of URLs to the favorites file. For example, add `http://contoso.com/favorites.html`.
-- **Sync favorites between Microsoft browsers** (desktop only): **Yes** forces Windows to synchronize favorites between Internet Explorer and Microsoft Edge. Additions, deletions, modifications, and order changes to favorites are shared between browsers.  **No** (default) uses the OS default, which may give users the choice to sync favorites between the browsers.
+- **Sync favorites between Microsoft browsers** (Desktop only): **Yes** forces Windows to synchronize favorites between Internet Explorer and Microsoft Edge. Additions, deletions, modifications, and order changes to favorites are shared between browsers.  **No** (default) uses the OS default, which may give users the choice to sync favorites between the browsers.
 - **Default search engine**: Choose the default search engine on the device. End users can change this value at any time. Your options:
   - Search engine in client Microsoft Edge settings
   - Bing
@@ -349,7 +349,7 @@ Select **OK** to save your changes.
 
 - **Allow InPrivate browsing**: **Yes** (default) allows InPrivate browsing in Microsoft Edge. After closing all InPrivate tabs, Microsoft Edge deletes the browsing data from the device. **No** prevents end users from opening InPrivate browsing sessions.
 - **Save browsing history**: **Yes** (default) allow saving the browsing history in Microsoft Edge. **No** prevents saving the browsing history.
-- **Clear browsing data on exit** (desktop only): **Yes** (default) clears the history, and browsing data when the user exits Microsoft Edge. **No** uses the OS default, which may cache the browsing data.
+- **Clear browsing data on exit** (desktop only): **Yes** clears the history, and browsing data when the user exits Microsoft Edge. **No** (default) uses the OS default, which may cache the browsing data.
 - **Sync browser settings between user's devices**: Choose how you want to sync browser settings between devices. Your options:
   - **Allow**: Allow syncing of Microsoft Edge browser settings between user’s devices
   - **Block and enable user override**: Block syncing of Microsoft Edge browser settings between user’s devices. Users can override this setting.
@@ -363,8 +363,8 @@ When "block and enable user override" is selected, user can override admin desig
   - **Block all cookies**: Cookies aren't stored on the device.
   - **Block only third party cookies**: Third party or partner cookies aren't stored on the device.
 - **Allow Autofill in forms**: **Yes** (default) allows users to change autocomplete settings in the browser, and populate form fields automatically. **No** disables the Autofill feature in Microsoft Edge.
-- **Send do-not-track headers**: **Yes** (default) allow users to send do-not-track headers to websites requesting tracking info (recommended). **No** prevents users from sending these headers, which allows websites to track the user.
-- **Show WebRtc localhost IP address**: **Yes** (default) allows users' localhost IP address to be shown when making phone calls using this protocol. **No** prevents users' localhost IP address from being shown. 
+- **Send do-not-track headers**: **Yes** sends do-not-track headers to websites requesting tracking info (recommended). **No** (default) does not send headers which allows websites to track the user. User can configure.
+- **Show WebRTC localhost IP address**: **Yes** (default) allows users' localhost IP address to be shown when making phone calls using this protocol. **No** prevents users' localhost IP address from being shown. 
 - **Allow live tile data collection**: **Yes** (default) allows Microsoft Edge to collect information from Live Tiles pinned to the start menu. **No** prevents collecting this information, which may provide users with a limited experience.
 - **User can override certificate errors**: **Yes** (default) allows users to access websites that have Secure Sockets Layer/Transport Layer Security (SSL/TLS) errors. **No** (recommended for increased security) prevents users from accessing websites with SSL or TLS errors.
 
