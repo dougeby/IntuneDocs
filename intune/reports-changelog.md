@@ -50,7 +50,7 @@ The following table lists the recent removed collections and the replacements co
 |    currentUser                         |    Removed    |    Use the   [users](intune-data-warehouse-collections.md#users) collection instead.                                                                                                                                                                                                                                                                                                      |
 |    mdmDeviceInventoryHistories         |    Removed    |    Many of the properties were   redundant or can now be found in the   [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories)   or [devices](intune-data-warehouse-collections.md#devices) collections. Any **mdmDeviceInventoryHistories** properties not already listed with these two   collections are no longer available. See details below.    |
 
-The following table lists the old property formerly found in the **mdmDeviceInventoryHistories** collection and the change/replacement:
+The following table lists the old properties formerly found in the **mdmDeviceInventoryHistories** collection and the change/replacement. Any properties that were in **mdmDeviceInventoryHistories** but not listed below have been removed.
 
 |    Old property                |    Change/replacement                                                           |
 |--------------------------------|---------------------------------------------------------------------------------|
