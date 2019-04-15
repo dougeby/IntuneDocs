@@ -244,6 +244,18 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 At this point you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 
+## App dependencies
+
+App dependencies are applications that must be installed before your Win32 app can be installed. You can require that other apps are installed as dependencies. Specifically, the device must install the dependent app(s) before it installs the Win32 app. ​There is a maximum of 100 dependencies, which includes the dependencies of any included dependencies, as well as the app itself. 
+
+1. In Intune, select **Client apps** > **Apps** to view your list of added client apps. 
+2. Select an added **Windows app (Win32)** app. 
+3. Select **Dependencies** to add the dependent app(s) that must be installed before the Win32 app can be installed. 
+4. Click **Add** to add an app dependency.
+5. Once you have added the dependent app(s), click **Select**.
+6. Choose whether to automatically install the dependent app by selecting **Yes** or **No** under **Automatically Install**.
+7. Click **Save**.
+
 ## Delivery Optimization
 
 Windows 10 1709 and above clients will download Intune Win32 app content using a delivery optimization component on the Windows 10 client. Delivery optimization provides peer-to-peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and via Intune Device configuration. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
