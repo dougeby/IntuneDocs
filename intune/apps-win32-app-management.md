@@ -149,7 +149,25 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     - **Physical memory required (MB)**: Optionally, add the physical memory (RAM) required to install the app.
     - **Minimum number of logical processors required**: Optionally, add the minimum number of logical processors required to install the app.
     - **Minimum CPU speed required (MHz)**: Optionally, add the minimum CPU speed required to install the app.
-3.	When you're finished, select **OK**.
+
+3. Click **Add** to display the **Add a Requirement rule** blade and configure additional requirement rules. Select the **Requirement type** to choose the type of detection method that you will use to determine how a requirement is validated. Requirement rules can be based on file system information, registry values, or PowerShell scripts. 
+    - **File**: When you choose **File** as the **Requirement type**, the requirement rule must detect a file or folder, date, version, or size. This requirement detection method is used to validate the presence of the app. Additionally, you can choose how path variables will be handled for 32-bit apps on 64-bit clients.
+        - **Path** – The full path of the folder containing the file or folder to detect.
+        - **File or folder** - The file or folder to detect.
+        - **Property** – Select the type of detection method used to validate the presence of the app.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to expand any path environment variables in the 32-bit context on 64-bit clients. Select **No** (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+    - **Registry**: When you choose **Registry** as the **Requirement type**, the requirement rule must detect a registry setting based on value, string, integer, or version.
+        - **Key path** – The full path of the registry entry containing the value to detect.
+        - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
+        - **Registry key requirement** – Select the type of detection comparison method used to validate the presence of the app.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to search the 32-bit registry on 64-bit clients. Select **No** (default) search the 64-bit registry on 64-bit clients. 32-bit clients will always search the 32-bit registry.
+    - **Script**: When you choose **Script** as the **Requirement type**, the requirement rule must detect the presence of the app on the client based on a PowerShell script.
+        - **Script file** – Select a PowerShell script that will detect the presence of the app on the client. The app will be detected when the script both returns a 0 value exit code and writes a string value to STDOUT.
+        - **Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+        - **Run this script using the logged on credentials**: Select **Yes** to run the script using the signed in device credentials**.
+        - **Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
+        - **Select output data type**: Select the data type used when determining a dection meatch requirement.
+4.	When you're finished, select **OK**.
 
 ### Step 6: Configure app detection rules
 
