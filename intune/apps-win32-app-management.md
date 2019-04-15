@@ -34,9 +34,10 @@ To use Win32 app management, be sure you meet the following criteria:
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
-    - joined to Azure Active Directory (AAD) or [hybrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
-    - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8 GB per app
+    - Devices must be joined to Azure AD and auto-enrolled. The Intune management extension supports Azure AD joined, hybrid domain joined, group policy enrolled devices are supported. 
+    > [!NOTE]
+    > For the group policy enrolled scenario - The end user uses the local user account to AAD join their Windows 10 device. The user must log onto the device using their AAD user account and enroll into Intune. Intune will install the Intune Management extension on the device if a PowerShell script or a Win32 app is targeted to the user or device.
+- Windows application size is capped at 8 GB per app.
 
 ## Prepare the Win32 app content for upload
 
@@ -127,12 +128,15 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
     For the specific agruments supported by the application package, contact your application vendor.
 
-    You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device. End users are not required to be logged in on the device to install Win32 apps on devices that are not Azure AD joined. You can configure your Win32 apps to be installed in device context for all users on Intune enrolled Azure AD joined devices by setting **Install behavior** to **System**. By setting this value to **System**, the Win32 app will be installed for all users, if supported. The end user must log on to the device using their Azure AD user account and enroll in Intune. Additionally, Intune will install Intune Management extension on the device when the Win32 app is targeted to the device or user.
-
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
     For example:
     `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
+    >
+    > End users are not required to be logged in on the device to install Win32 apps.
 
 4.	When you're finished, select **OK**.
 
