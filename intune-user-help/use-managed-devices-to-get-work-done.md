@@ -20,7 +20,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: robstack
+ms.reviewer: esmich  
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
