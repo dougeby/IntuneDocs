@@ -35,8 +35,11 @@ If your company or school uses Microsoft Intune, you can enroll your Android dev
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-These enrollment instructions are for native and Samsung Knox Android devices. Samsung Knox is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung Knox device, go to **Settings** > **About device**. If you don't see "Knox version" listed there, you have a native Android device.
+## Supported versions
+The Company Portal currently supports Android 4.4 and later. This includes Samsung Knox devices that run Android 4.4 and later versions. Samsung Knox is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung Knox device, go to **Settings** > **About device**. If you don't see "Knox version" listed there, you have a native Android device.
 
+
+##Enrollment  
 Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your company support uses this category to help check the apps that you have access to.
 
 **To enroll your Android device:**
@@ -128,6 +131,8 @@ Before or after enrolling, you may be asked to choose a category that best descr
 14. On the **Company Access Setup complete** screen, tap **DONE**. Your device is now enrolled.
 
     ![Company access setup complete screen](./media/and-enroll-10-comp-access-setup-complete.png)
+
+## Next steps  
 
 Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
 

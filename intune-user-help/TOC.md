@@ -8,7 +8,7 @@
 
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
-## [Using your Android device](using-your-android-device-with-intune.md)
+## Using your Android device
 ### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Enroll your device](enroll-your-device-in-Intune-android.md)
 #### [Enroll your device with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
