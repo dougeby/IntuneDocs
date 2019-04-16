@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # App configuration policies for Microsoft Intune
 
-Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized. You do not assign these configuration policies directly to users or devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
+Use [app configuration policies](#app_configuration_policies) in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized. You do not assign these configuration policies directly to users or devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
 
 You can assign an app configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
 
