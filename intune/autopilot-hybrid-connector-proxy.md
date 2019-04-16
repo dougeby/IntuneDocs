@@ -32,10 +32,6 @@ ms.collection: M365-identity-device-management
 
 This article explains how to configure the Intune Connector for Active Directory to work with outbound proxy servers. It is intended for customers with network environments that have existing proxies.
 
-We start by looking at these main deployment scenarios:
-* Configure connectors to bypass your on-premises outbound proxies.
-* Configure connectors to use an outbound proxy to access the Intune Connector for Active Directory.
-
 For more information about how connectors work, see [Understand Azure AD Application Proxy connectors](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/application-proxy-connectors).
 
 ## Bypass outbound proxies
