@@ -36,8 +36,8 @@ Enroll your corporate-owned Android device to get secure access to company email
 The Microsoft Intune app supports several enrollment methods. They include:  
 * Near Field Communication (NFC): Tap an NFC-supported devices against a progammer device; for Android devices 5.1 and later.  
 * Token: Manually enter a token during enrollment; for devices running Android 6.0 and later.
-* QR Code – Scan the enrollment profile QR code during enrollment; for devices running Android 7.0 and later.  
-* Google Zero Touch – Turn device on for preconfigured, automatic enrollment; for devices running Android 8.0 and later.  
+* QR Code: Scan the enrollment profile QR code during enrollment; for devices running Android 7.0 and later.  
+* Google Zero Touch: Turn device on for preconfigured, automatic enrollment; for devices running Android 8.0 and later.  
 
 You organization will let you know which method applies to your device. Follow the appropriate steps in this article to enroll your device.  
 
