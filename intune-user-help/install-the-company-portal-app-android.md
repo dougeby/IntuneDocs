@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 # Install the Company Portal app for Android
 
-The Company Portal is an app that gives you access to your company or school apps, email, and Internet connections. This app helps you keep both your organization's information safe by keeping your device secure - for example, by keeping company apps up-to-date, or making sure your device locks itself after a certain amount of time. The Company Portal app is able to do this by helping you to [enroll your device in Microsoft Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md).
+The Company Portal is an app that gives you access to your company or school apps, email, and Internet connections. This app helps you keep both your organization's information safe by keeping your device secure - for example, by keeping company apps up-to-date, or making sure your device locks itself after a certain amount of time. To learn more about the features of Company Portal and its part in device management, see [Why enroll your Android device](why-enroll-android-device.md).  
 
 1.  Tap **Home** > **Play Store**.
 

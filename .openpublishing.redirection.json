@@ -1,8 +1,13 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-user-help/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md", 
+			"redirect_url": "/intune-user-help/why-enroll-android-device",
+			"redirect_document_id": true  
+		},
+		{
 			"source_path": "intune-user-help/using-your-android-device-with-intune.md", 
-			"redirect_url": "/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android",
+			"redirect_url": "/intune-user-help/why-enroll-android-device",
 			"redirect_document_id": true  
 		},
 		{
