@@ -34,7 +34,7 @@ Role-based access control (RBAC) helps you manage who has access to your organiz
 
 To create, edit, or assign roles, your account must have one of the following permissions in Azure AD:
 - **Global Administrator**
-- **Intune Service Administrator**
+- **Intune Service Administrator** (also known as **Intune Administrator**)
 
 ## Roles
 A role defines the set of permissions granted to users assigned to that role.
