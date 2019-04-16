@@ -92,9 +92,12 @@ Be sure to make copies of the original files, in case you need to revert to the 
 
 Once the configuration files have been modified, you will need to restart the Intune Connector service. 
 
-1. Open **services.msc**
-2. Find and select the **Intune ODJConnector Service**
-3. Click **Restart**
+1. Open **services.msc**.
+2. Find and select the **Intune ODJConnector Service**.
+3. Select **Restart**.
+
+![Screenshot of service restart](media/autopilot-hybrid-connector-proxy/service-restart.png)
+
 
 ## Next steps
 
