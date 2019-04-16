@@ -47,7 +47,7 @@ Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?lin
 
 You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub as a zip file. The zipped file contains a folder named **Microsoft-Win32-Content-Prep-Tool-master**. The folder contains the prep tool, the license, a readme, and the release notes. 
 
-If you run `IntuneWinAppUtil.exe` from the command window without parameters, the tool will guide you to input the required parameters step by step. Or, you can add the paramters to the command based on the following available command-line parameters.
+If you run `IntuneWinAppUtil.exe` from the command window without parameters, the tool will guide you to input the required parameters step by step. Or, you can add the parameters to the command based on the following available command-line parameters.
 
 ### Available command-line parameters 
 
@@ -66,7 +66,7 @@ If you run `IntuneWinAppUtil.exe` from the command window without parameters, th
 |    `IntuneWinAppUtil -h`    |    This command will show usage information for the tool.    |
 |    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    This command will generate the `.intunewin` file from the specified source folder and setup file. For the MSI setup file, this tool will retrieve required information for Intune. If `-q` is specified, the command will run in quiet mode, and if the output file already exists, it will be overwritten. Also, if the output folder does not exist, it will be created automatically.    |
 
-When generating an *.intunewin* file, put any files you need to reference into a sub-folder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
+When generating an *.intunewin* file, put any files you need to reference into a subfolder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
 
 **Setup source folder:** *c:\testapp\v1.0*<br>
 **License file:** *c:\testapp\v1.0\licenses\license.txt*
@@ -122,10 +122,10 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
-    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. <br>For example:<br>
+    And, if the application is `ApplicationName.exe`, the command would be the application name followed by the command arguments (switches) supported by the package. <br>For example:<br>
     `ApplicationName.exe /quite`<br>
-    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
-    For the specific agruments supported by the application package, contact your application vendor.
+    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argument.<p> 
+    For the specific arguments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
@@ -242,11 +242,17 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 7.	In the **Add group** pane, select **OK**.
 8.	In the app **Assignments** pane, select **Save**.
 
-At this point you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 
 ## App dependencies
 
-App dependencies are applications that must be installed before your Win32 app can be installed. You can require that other apps are installed as dependencies. Specifically, the device must install the dependent app(s) before it installs the Win32 app. ​There is a maximum of 100 dependencies, which includes the dependencies of any included dependencies, as well as the app itself. 
+App dependencies are applications that must be installed before your Win32 app can be installed. You can require that other apps are installed as dependencies. Specifically, the device must install the dependent app(s) before it installs the Win32 app. ​There is a maximum of 100 dependencies, which includes the dependencies of any included dependencies, as well as the app itself. You can add app dependencies only after your Win32 app has been added and uploaded to Intune. Once your Win32 app has been added, you'll see the **Dependencies** option on the blade for your Win32 app. 
+
+When adding an app dependency, you can search based on the app name and publisher. Additionally, you can sort your added dependencies based on app name and publisher. Previously added app dependencies cannot be selected in the added app dependency list. 
+
+You can choose whether or not to install each dependent app automatically. By default, the **Automatically install** option is set to **Yes** for each dependency. By automatically installing a dependent app, even if the dependent app is not targeted to the user or device, Intune will install the app on the device to satisfy the dependency before installing your Win32 app.​ It's important to note that a dependency can have recursive sub-dependencies, and each sub-dependency will be installed before installing the the main dependency. 
+
+To add an app dependency to your Win32 app, use the following steps:
 
 1. In Intune, select **Client apps** > **Apps** to view your list of added client apps. 
 2. Select an added **Windows app (Win32)** app. 
@@ -255,6 +261,15 @@ App dependencies are applications that must be installed before your Win32 app c
 5. Once you have added the dependent app(s), click **Select**.
 6. Choose whether to automatically install the dependent app by selecting **Yes** or **No** under **Automatically Install**.
 7. Click **Save**.
+
+The end user will see Windows Toast Notifications indicating that dependent apps are being downloaded and installed as part of the Win32 app installation process. Additionally, when a dependent app is not installed, the end user will commonly see one of the following notifications:
+- 1 or more dependent app failed to install​
+- 1 or more dependent app requirements not met​
+- 1 or more dependent app is pending a device reboot
+
+If you choose not to **Automatically install** a dependency, the Win32 app installation will not be attempted. Additionally, app reporting will show that the dependency was flagged as `failed` and also provide a failure reason. You can view the dependency installation failure by clicking on a failure (or warning) provided in the Win 32 app [installation details](troubleshoot-app-install.md#win32-app-installation-troubleshooting).​ 
+
+Each dependency will adhere to Intune Win32 app retry logic (try to install 3 times after waiting for 5 minutes) and the global re-evaluation schedule.​ Also, dependencies are only applicable at the time of installing the Win32 app on the device. Dependencies are not applicable for uninstalling a Win32 app.​ To delete a dependency, you must click on the ellipses (three dots) to the left of the dependent app located at the end of the row of the dependency list.​ 
 
 ## Delivery Optimization
 
@@ -271,7 +286,7 @@ The following image notifies the end user that app changes are being made to the
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
 ## Toast notifications for Win32 apps 
-If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
+If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
 
 > [!NOTE]
 > Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices. Admins can leverage assignment exclusion to not offer Win32 apps to BYOD Devices.
