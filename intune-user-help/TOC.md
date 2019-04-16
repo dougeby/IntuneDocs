@@ -25,7 +25,7 @@
 #### [Unenroll your device](unenroll-your-device-from-intune-android.md)
 #### [Unenroll your device if you declined Terms of Use](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Fixing common issues with Android](troubleshoot-your-device-android.md)
+### Fix common issues with Android
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 #### [Update your device to install Outlook](update-device-outlook-android.md)

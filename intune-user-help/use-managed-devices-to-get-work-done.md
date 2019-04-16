@@ -84,7 +84,7 @@ For you to be able to see a device, it must first be added to the Company Portal
 ## Where else can I go for help?  
 To troubleshoot common problems and questions, check out these platform-specific docs:  
 
-- [Fix common issues with your Android device](troubleshoot-your-device-android.md)
+- [Fix common issues with your Android device](check-compliance-on-your-device-android.md)  
 - [Fix common issues with your iOS device](troubleshoot-your-device-ios.md)
 - [Fix common issues with your macOS device](troubleshoot-your-device-macos.md)
 - [Fix common issues with your Windows device](troubleshoot-your-device-windows.md)
