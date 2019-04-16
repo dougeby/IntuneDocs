@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/03/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,14 +31,14 @@ ms.collection: M365-identity-device-management
 
 # Send logs to your company support using a USB cable
 
-If you get an error while you’re using the Company Portal app on your Android device, you can help your company support troubleshoot the problem by sending them information through email. This information is kept on your device in a special document called a _diagnostic log_.
+Email company support about a problem you experienced in the Company Portal or Microsoft Inune app. Error details are recorded and stored on your device in a special document called a _diagnostic log_. This article describes how to upload the logs from your device to your computer. You'll need a USB cable to complete these steps.   
 
 > [!Note]
-> Before you start, make sure that you have your company support's email address handy. You can find this on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) or in your Company Portal app.
+> Before you start, make sure that you have your support team's email address handy. Find the contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980), in the Company Portal app, or in the Microsoft Intune app.  
 
-1. On the error screen, tap **Send Info**. When you see a message asking which method you want to use to send the logs, choose the option that will save the files to your device.
+1. On the error screen, tap **Send Info**. When you see a message asking which method you want to use to send the logs, choose the option that will save the files to your device.  
 
-2. Connect your device to your computer with the USB cable. This is generally the same cable used to charge your device in a wall outlet.
+2. Connect your device to your computer with the USB cable. 
 
 3. On the computer, look for a directory that has the name of your device. In that directory, find <strong>Android Device\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
