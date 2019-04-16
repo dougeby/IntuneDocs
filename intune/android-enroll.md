@@ -47,7 +47,7 @@ To prepare to manage mobile devices, you must set the mobile device management (
 
 ## Set up Android enrollment
 
-By default, Intune allows enrollment of Android and Samsung Knox Standard devices. After fulfilling the prerequisite, admins merely need to [tell their users how to enroll their devices](/intune-user-help/enroll-your-device-in-intune-android).
+By default, Intune allows enrollment of Android and Samsung Knox Standard devices. After fulfilling the prerequisite, admins merely need to [tell their users how to enroll their devices](/intune-user-help/enroll-device-android-company-portal).
 
 After a user has enrolled, you can begin managing their devices in Intune, including [assigning compliance policies](compliance-policy-create-android.md), [managing apps](app-management.md), and more.
 

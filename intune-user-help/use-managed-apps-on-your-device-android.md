@@ -57,7 +57,7 @@ Examples of commonly required or available managed apps within schools and workp
 
 ## How do I get managed apps?
 First, you'll need to install the Company Portal and, if required, get your device managed. After that, there are three ways you can get managed apps.
-* Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
+* Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](why-enroll-android-device.md).  
 * Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.  
 

@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll your Android device in Intune | Microsoft Docs
-description: Describes how to enroll an Android device in Intune
+title: Enroll Android device with Company Portal | Microsoft Docs
+description: Describes how to enroll an Android device with Intune Company Portal
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -29,24 +29,23 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Enroll your Android device in Intune
+# Enroll your Android device with Intune Company Portal  
+Enroll your personal or corporate-owned Android device to get secure access to company email, apps, and data. Company Portal supports Android devices, including Samsung Knox, running Android 4.4 and later.  
 
-If your company or school uses Microsoft Intune, you can enroll your Android device to get access to company email, files, and other resources. When you enroll your devices, your IT department can manage those work or school resources, keep them secure, and give you the freedom to use your preferred device to get your work done. To learn more about enrollment, see [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md)
+> [!NOTE]
+> Samsung Knox is a type of security that certain Samsung devices use for additional 
+> protection outside of what native Android provides. To check if you have a Samsung Knox device,> go to **Settings** > **About device**. If you don't see **Knox version** listed there, you 
+> have a native Android device.  
 
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
+> [!NOTE]
+> During enrollment, you might be asked to choose a category that best describes how you 
+> use your device. Your company support uses this category to help check the apps that you have 
+> access to.  
 
-## Supported versions
-The Company Portal currently supports Android 4.4 and later. This includes Samsung Knox devices that run Android 4.4 and later versions. Samsung Knox is a type of security that certain Samsung devices use to provide additional protection outside of what native Android provides. To check if you have a Samsung Knox device, go to **Settings** > **About device**. If you don't see "Knox version" listed there, you have a native Android device.
+## Enroll device  
+Make sure to [install the free Intune Company Portal app from Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
 
-
-##Enrollment  
-Before or after enrolling, you may be asked to choose a category that best describes how you use your device. Your company support uses this category to help check the apps that you have access to.
-
-**To enroll your Android device:**
-
-1. Install the free Intune Company Portal app from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
-
-2. Open the Company Portal app.
+1. Open the Company Portal app.  
 
 3. On the Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account.
 
@@ -134,7 +133,7 @@ Before or after enrolling, you may be asked to choose a category that best descr
 
 ## Next steps  
 
-Before you try to install company apps, go to **Settings** &gt; **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.
+Before you try to install company apps, go to **Settings** > **Security**, and turn on **Unknown sources**. If you don't turn on this option before you try to install apps, you'll see the following message: "Install blocked. For security reasons, your device is set to block installations of apps obtained from unknown sources." You can tap **Settings** on the error dialog box to go to the **Unknown sources** option.  
 
 > [!Note]
 > If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).

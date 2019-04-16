@@ -10,8 +10,10 @@
 
 ## Using your Android device
 ### [Why enroll your Android device](why-enroll-android-device.md)
-### [Enroll your device](enroll-your-device-in-Intune-android.md)
-#### [Enroll your device with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+### Enroll your device
+#### [Enroll with Company Portal](enroll-device-android-company-portal.md)  
+#### [Enroll with Microsoft Intune app](enroll-device-android-microsoft-intune-app.md)
+#### [Enroll with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 ### [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 ### [Encrypt your device](encrypt-your-device-android.md)
 ### [Set your PIN or password](set-your-pin-or-password-android.md)
