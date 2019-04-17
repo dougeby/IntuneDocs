@@ -47,7 +47,7 @@ Make sure you have configured Intune and Android work profiles to work together 
 >When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser.
 
 ## Managed Google Play app type
-The **managed Google Play** app type will allow you to specifically add [Managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.
+The **managed Google Play** app type will allow you to specifically add [Managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync, and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.
 
 > [!NOTE]
 > If you prefer to synchronize a Managed Google Play app with Intune, see [Synchronize a Managed Google Play app with Intune](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
@@ -63,7 +63,7 @@ The **managed Google Play** app type will allow you to specifically add [Managed
 7. Select **Managed Google Play - Approve** to open the managed Google Play catalog.
 8. Use the search box to search for apps that you want to include.
 9. Click **Approve** to approve the app in managed Google Play and click **Approve** to accept the app permissions.
-10. Select **Keep approved when app requests new permissions** in the Approval Settings window and then click **Save**. If you do not choose this option, you will need to manually approve any new permissions if the app developer publishes an update.  This will cause installations and updates of the app to stop until permissions are approved. For this reason, it is recommended to select the option to automatically approve new permissions. 
+10. Select **Keep approved when app requests new permissions** in the Approval Settings window and then click **Save**. If you do not choose this option, you will need to manually approve any new permissions if the app developer publishes an update. This will cause installations and updates of the app to stop until permissions are approved. For this reason, it is recommended to select the option to automatically approve new permissions. 
 11. Click **OK** to include the app(s) you have approved.
 12. Click **Sync** on the **App app** pane to sync with the Managed Google Play service.
 
@@ -119,7 +119,7 @@ After you assign the app, it is installed on the devices that you've targeted. T
 
 ### Microsoft Intune app
 
-After you assign an app to a Android fully managed device, the end user must use the **Microsoft Intune** app to install available apps. Using the **Microsoft Intune** app on a Android device only applies to the fully managed scenario. In all other Android management scenarios, the **Company Portal** continues to be the end user app used to manage apps assigned by Intune.   
+After you assign an app to a Android fully managed device, the end user must use the **Microsoft Intune** app to install the available app. Using the **Microsoft Intune** app on a Android device only applies to the fully managed scenario. In all other Android management scenarios, the **Company Portal** continues to be the end user app used to manage apps assigned by Intune.   
 
 The **Microsoft Intune** app will be automatically deployed to all fully managed devices on enrollment. In addition, the **Microsoft Intune** app will allow the user to manage compliance for this device. 
 
