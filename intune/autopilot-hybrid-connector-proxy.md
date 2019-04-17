@@ -4,10 +4,10 @@
 title: Configure proxy settings for the Intune Connector for Active Directory
 description: Covers how to configure the Intune Connector for Active Directory to work with existing on-premises proxy servers.
 keywords:
-author: ErikjeMS    
-ms.author: erikje
+author: master11218    
+ms.author: tanvira
 manager: smantri
-ms.date: 4/12/2019
+ms.date: 4/16/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
