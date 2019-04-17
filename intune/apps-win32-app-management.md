@@ -282,9 +282,9 @@ To add an app dependency to your Win32 app, use the following steps:
 7. Click **Save**.
 
 The end user will see Windows Toast Notifications indicating that dependent apps are being downloaded and installed as part of the Win32 app installation process. Additionally, when a dependent app is not installed, the end user will commonly see one of the following notifications:
-- 1 or more dependent app failed to install​
+- 1 or more dependent apps failed to install​
 - 1 or more dependent app requirements not met​
-- 1 or more dependent app is pending a device reboot
+- 1 or more dependent apps are pending a device reboot
 
 If you choose not to **Automatically install** a dependency, the Win32 app installation will not be attempted. Additionally, app reporting will show that the dependency was flagged as `failed` and also provide a failure reason. You can view the dependency installation failure by clicking on a failure (or warning) provided in the Win 32 app [installation details](troubleshoot-app-install.md#win32-app-installation-troubleshooting).​ 
 
