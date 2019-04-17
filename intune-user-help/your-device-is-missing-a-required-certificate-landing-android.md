@@ -3,12 +3,12 @@
 
 title: Your device is missing a required certificate | Microsoft Docs
 titlesuffix: Microsoft Intune
-description: Your device is missing a certificate required by your company support.
+description: What to do when your device is missing a required certificate.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -22,7 +22,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser; seodec18
@@ -38,7 +38,7 @@ ms.collection: M365-identity-device-management
 
 ## Fixing certificate issues
 
-If your Android device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your company support, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
+If your Android device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your company support, you won’t be able to sign in to the Company Portal or Microsoft Intune app. When you try to sign in, you'll see the following message:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 

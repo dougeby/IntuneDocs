@@ -40,4 +40,4 @@ To turn verbose logging on or off:
 2. Tap **Settings**.
 3. Next to **Verbose Logging**, flip the switch to **On** or **Off**.  
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
