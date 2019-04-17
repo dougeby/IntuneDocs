@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Create and deploy Windows Information Protection (WIP) app protection policy
+title: Windows Information Protection (WIP) app protection policy
 titleSuffix: Microsoft Intune
 description: Create and deploy Windows Information Protection (WIP) app protection policy with Microsoft Intune
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune

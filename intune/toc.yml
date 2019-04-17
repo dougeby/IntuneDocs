@@ -196,8 +196,10 @@
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
-      - name: Hybrid Active Directory with Autopilot
+      - name: Hybrid Azure AD with Autopilot
         href: windows-autopilot-hybrid.md
+      - name: Configure proxy for Intune AD Connector
+        href: autopilot-hybrid-connector-proxy.md
     - name: Set up Android enrollment
       items:
       - name: Set up Android enrollment
