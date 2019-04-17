@@ -7,7 +7,7 @@ description: Learn how to define the conditions users, devices, and apps must me
 keywords:
 author: brenduns
 ms.author: brenduns
-manager: dougeby
+manager: dougeby    
 ms.date: 03/06/2018
 ms.topic: conceptual
 ms.prod:
@@ -40,7 +40,7 @@ Enterprise Mobility + Security (EMS) Conditional Access is not a standalone prod
 You can define conditions that gate access to your corporate data based on location, device, user state, and application sensitivity.
 
 > [!NOTE] 
-> Conditional Access also extends its capabilities to [Office 365 services](https://blogs.technet.microsoft.com/wbaer/2017/02/17/conditional-access-policies-with-sharepoint-online-and-onedrive-for-business/).
+> Conditional Access also extends its capabilities to [Office 365 services](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access).
 
 ![Conditional access architectural diagram](./media/ca-diagram-1.png)
 
