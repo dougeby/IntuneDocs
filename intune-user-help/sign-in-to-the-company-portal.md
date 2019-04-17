@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Sign in to Company Portal and Microsoft Intune app <!--User Story 1132123-->
 
-There are three ways to sign in to the Company Portal and Microsoft Intune apps:
+There are three ways to sign in to the Company Portal app:
 
 * Sign in with your work email address and password.  
 * Sign in with certificate-based authentication.  
@@ -38,7 +38,7 @@ There are three ways to sign in to the Company Portal and Microsoft Intune apps:
 
 
 ## Sign in with your email address and password
-The following steps show screenshots from the Company Portal for iOS. These instructions are the same for other device platforms and for the Microsoft Intune app.  
+The following steps show screenshots from the Company Portal for iOS.  
 
 1. Open the app on your device and tap **Sign In**.  
 
@@ -60,7 +60,7 @@ The following steps show screenshots from the Company Portal for iOS. These inst
 
 ## Sign in with certificate-based authentication
 
-1.	Open the Company Portal or Microsoft Intune app on your device.  
+1.	Open the Company Portal app on your device.  
 
 2.	Enter your **Work or school account**.  
 
@@ -72,8 +72,9 @@ The following steps show screenshots from the Company Portal for iOS. These inst
 
 If your company uses smartcards to access your computers, it's likely that you have to authenticate by signing in from another device.  
 
-1. Open the Company Portal or Microsoft Intune app on your device. Make sure it's the device you'll be using to access your work resources.       
-2. Select **Sign in from another device**.  
+1. Open the Company Portal app on your device. Make sure it's the device you'll be using to access your work resources.       
+
+1. Select **Sign in from another device**.  
 
    ![The Company Portal sign in page prompts user for email adress.  Underneath is the "Next" button and a link to "Sign in from another device." Also includes a link to "Can't access your account?" A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 

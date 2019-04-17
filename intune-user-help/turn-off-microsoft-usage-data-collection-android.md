@@ -36,6 +36,6 @@ To turn off data collection on your Android device:
 
 1. Open the Company Portal or Microsoft Intune app.
 2. Select **Settings**.
-3. Under **Usage data**, you'll see **Automatically send usage data to Microsoft**. Flip the switch to **No**.  
+3. Under the usage data setting, flip the switch to the off position. 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

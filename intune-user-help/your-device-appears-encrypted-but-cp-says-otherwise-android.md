@@ -2,7 +2,7 @@
 # required metadata
 
 title: Your Android device seems to be encrypted | Microsoft Docs
-description: 
+description: Resolve encryption status in Company Portal and Microsoft Intune app
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -29,9 +29,9 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Your Android device seems to be encrypted, but Company Portal says otherwise
+# Device encrypted but apps say otherwise
 
-When you encrypt a device, you are encoding the information on it using a secret key that is known only to you. Encryption prevents unauthorized people from accessing your data. Many organizations require their users to encrypt their Android devices before they can access company files, email, or data. If you're receiving a message that your device isn't encrypted, but you're sure that it is, try the steps in this article. 
+If Company Portal or the Microsoft Intune app are reporting that your device isn't encrypted, but you're sure that it is, try the steps in this article.  
 
 ## Add a startup PIN
 
@@ -39,16 +39,16 @@ Certain Android devices require you to create a startup PIN to make sure that yo
 
 ## Encrypt the entire device
 
-Some devices will give you a choice between encrypting the entire device or just the used space. Choose the option to encrypt the entire device rather than "only used space." If you have already encrypted only the used space:
+This section only applies to the Company Portal app. Some devices will give you a choice between encrypting the entire device or just the used space. Choose the option to encrypt the entire device. If you selected to encrypt only the used space:
 
 1. [Remove this device from the Company Portal](unenroll-your-device-from-intune-android.md).
-2. Decrypt the used space.
-3. Encrypt the entire device.
-4. Re-enroll the device.
+2. Decrypt the used space.  
+3. Encrypt the entire device.  
+4. Re-enroll the device.  
 
 ## Downgrade your version of Android
 
-If your device offers you the option to downgrade to Android 6.0 and later, then do so. There is a risk of data loss if you try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. Get contact information for your company support on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+This section only applies to the Company Portal app. If your device offers you the option to downgrade to Android 6.0 and later, then do so. There is a risk of data loss if you try to downgrade your device. Otherwise, we recommend that you contact your company support to resolve this issue. Get contact information for your company support on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 ## Specific manufacturer issues
 
@@ -57,19 +57,20 @@ Some Android devices on version 7.0 and later encrypt data in ways that are inco
 > [!Note]
 > Microsoft works with manufacturers to address any issues we find while testing, or that users report to us. We update this article whenever new information is available. 
 
-## Known devices
-
-### Known devices that can be updated to fix this issue
+## Known devices that can be updated to fix problem
 
 If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might appear as non compliant until you update:  
 
 - Huawei Honor 8
 - Huawei P9
 
-### Known devices that currently cannot be updated to fix this issue
+## Known devices that can't be updated to fix problem  
 The following devices will always appear encrypted and can't be used to access company resources. To access company resources, you must use a different device.  
 
 - Huawei Mate 8
 - OPPO devices
 - Vivo devices
-- Xiaomi Mi smartphones
+- Xiaomi Mi smartphones  
+
+## Next steps   
+Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.  

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Turn on verbose logging in Intune apps| Microsoft Docs
+title: Configure logging settings in Intune apps| Microsoft Docs
 description: Help your company support fix device issues by using verbose logging
 keywords:
 author: lenewsad
@@ -29,15 +29,27 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Turn on verbose logging
+# Configure logging settings
 
-Turn on *verbose logging* to let the Company Portal app, Microsoft Intune app, and Intune-managed apps record your actions with these apps. If you ever experience and report app problems, your support team will review the logs for error details.  
+Configure the logging settings to let the Company Portal app, Microsoft Intune app, and Intune-managed apps record your actions with these apps. If you ever experience a problem in the app, and then report it, your support team will review these logs for more details. 
 
-Verbose logging is enabled on your device by default. The logs that you send to your support team will include your email address.  
+> [!NOTE]
+> The logs that you send to your support team will include your email address.  
 
-To turn verbose logging on or off:
-1. Sign in to the Company Portal or Microsoft Intune app.
+## Configure Company Portal logging
+Verbose logging records every action you take in the Company Portal app. It's enabled on your device by default. To turn verbose logging off in Company Portal:  
+
+1. Sign in to the Company Portal app.
 2. Tap **Settings**.
-3. Next to **Verbose Logging**, flip the switch to **On** or **Off**.  
+3. Next to **Verbose Logging**, flip the switch to **Off**.
+
+## Configure Microsoft Inune app logging
+In the Microsoft Intune app, you can configure the level of log details. The level defaults to **Important**. To adjust logging detail:  
+
+1. Open the Microsoft Intune app.  
+2. Tap **Settings**.  
+3. Under **Log level detail**, select **Verbose** to increase the level of details recorded, or select **Off** to turn off logging.  
+
+## Next steps  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -50,7 +50,9 @@ If Company Portal or the Microsoft Intune app prompts you to encrypt your device
 2. Go back to **Lock screen and security** and select **Secure startup**.
 3. Choose **Require PIN when device turns on** > **OK**.
 4. Enter your PIN to confirm and encrypt your device.
-5. Open the Company Portal or Microsoft Intune app, select your device, and tap **Check device settings**.  
+5. Open the Company Portal or Microsoft Intune app.
+    * Company Portal users: Select your device and tap **Check device settings**. 
+    * Microsoft Intune users: You'll have to wait until the page updates, but when it does, your encryption status should change to compliant.  
 
 Devices running Android 4.4 and earlier might not have the **Secure startup** option. In that case, complete the following steps to encrypt your device.
 
@@ -59,7 +61,9 @@ Devices running Android 4.4 and earlier might not have the **Secure startup** op
     * **Storage** > **Lock screen and security** > **Other security settings** 
 
 2. Follow the onscreen instructions. During encryption, your device could restart several times.
-3. Open the Company Portal or Microsoft Intune app, select your device, and tap **Check device settings**.  
+3. Open the Company Portal or Microsoft Intune app.
+    * Company Portal users: Select your device and tap **Check device settings**.  
+    * Microsoft Intune users: You'll have to wait until the page updates, but when it does, your encryption status should change to compliant.
 
 ## Troubleshoot  
 **Issue**: You've already encrypted your device and

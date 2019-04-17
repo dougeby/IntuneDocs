@@ -2,7 +2,7 @@
 # required metadata
 
 title: Why enroll your Android device
-description:
+description: Learn why it's important to enroll your device in Intune
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -46,20 +46,24 @@ Examples of policies that your organization might require are:
 * Installing work-required apps  
 
 ## Gives you access to work and school apps, work files, and email  
-During enrollment, Company Portal and the Microsoft Intune app requires you to connect to your work or school account. After you're authenticated, you'll gain access to your work email, and your organization's network, files, and apps. 
+During enrollment, Company Portal and the Microsoft Intune app require you to connect to your work or school account.  After you authenticate and after you've configured your device settings to match your organization's polcies, you'll gain access to your organization's email account, network, files, and apps.  
 
 Organizations sometimes require you to install work or security apps, such as Microsoft Office or Mobile Threat Defense. If these apps are required or become available for you, you'll find them in Company Portal or the Microsoft Intune app.
 
 ## Lets you remotely reset a lost or stolen device (if device supports it)
-If a device is lost or stolen, you can sign in to the Company Portal app, Company Portal website, or Microsoft Intune app on any other device, and reset your phone to factory settings. This feature is helpful if your missing device contains proprietary work data that you don't want anyone else to access. Because the device is enrolled in management, your company support or IT admin can also help reset it.  
+If a device is lost or stolen, you can sign in to the Company Portal app or Company Portal website on any other device, and reset your phone to factory settings. This feature is helpful if your missing device contains proprietary work data that you don't want anyone else to access. Because the device is enrolled in management, your company support or IT admin can also help reset it.  
+
+The reset feature is not available in the Microsoft Intune app.  
 
 ## Notifies you of policy updates and requirements
-The Company Portal or Microsoft Intune app will check in, or sync, with Intune every eight hours. If you want to check in more frequently, you or your company support can initiate a manual sync. During check-in, the app will:  
+The Company Portal or Microsoft Intune app will automatically check in, or sync, with Intune every eight hours. If you're using Company Portal and want to check in more frequently, you or your company support can initiate a manual sync. During check-in, the apps will:  
+
 * Download any policy or app updates that your company support makes available.  
 * Send hardware inventory updates. These updates do not contain personal information.  
 * Send company app inventory updates. These updates do not contain personal information.  
 
-If your device ever becomes out-of-sync with your organization's requirements, the apps will notify you. Each app informs you of the problem and the steps you need to take to fix it. Your access to work and school-related resources might be revoked until your device meets the requirements again. When you don't meet the requirements, the status shows as *Not compliant*.  
+When you're device is out-of-sync or no longer meets the requirements, its status appears as *Not compliant*. Your access to work and school-related resources might be revoked until your device meets the requirements again. The Company Portal app notifies you of these problems and the steps you need to take to fix them.  
+
 
 ## Permits company support access to your device
 When you enroll your device, your company support or IT admin is given access to the device for limited and meaningful reasons. 
@@ -75,7 +79,7 @@ They can:
 
 * Disable the camera. The purpose of this policy is to prevent you from photographing proprietary information, and also to remove distractions from school environments. Schools might disable cameras on classroom devices so that students cannot share test materials.  
 
-* Require that all data on the device is encrypted. If lost or stolen, this policy helps protect the data on your device. It also protects data that is shared between devices or apps.  \
+* Require that all data on the device is encrypted. If lost or stolen, this policy helps protect the data on your device. It also protects data that is shared between devices or apps. 
 
 ## Next steps  
 

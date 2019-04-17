@@ -30,18 +30,19 @@ ms.collection: M365-identity-device-management
 # Enroll device for access to work or school resources
 To enroll your device and get access to email and apps, you'll need to install either the Intune Company Portal app or Microsoft Intune app. When you enroll, the basic management policies that your org has configured, such as password, PIN, and encryption, are applied to your device. Once your device settings meet all of your org's requirements, you can securely access your work information from virtually anywhere.  
 
-The Company Portal and Microsoft Intune apps:  
-* Keep your enrolled device secure by ensuring that your device settings match your org's policies.   
-* Keep your personal and work information separate.  
-* Make it easy to find and install relevant work and school apps.   
+The Company Portal and Microsoft Intune apps keep your enrolled device secure by ensuring that your device settings match your org's policies. 
 
-## Get the Company Portal and Microsoft Intune app
+The Company Portal app also:  
+* Keeps your personal and work information separate.  
+* Makes it easy to find and install relevant work and school apps.   
+
+## Get the apps
 To get Company Portal:
 
 - Install the Company Portal app from the platform-specific app store. In some cases, your organization will install the Company Portal app for you.  
 - Go to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) to access the app from a browser.  
 
-To get the Microsoft Intune app, go to the 
+If you're required to use the Microsoft Intune app, your organization will install it for you.  
 
 
 ## What information can my company see when I enroll?
@@ -63,6 +64,7 @@ The Microsoft Intune app is for corporate-owned Android devices.
 	-   Windows 8.1
 
 ## What kind of devices can you enroll with the Microsoft Intune app?  
+You can enroll corporate-owned Android devices that your organization has set up to use with the app. The app supports Android 6.0 and later. 
 
 ## Can you remove a computer or device from the Company Portal?
 You can either remove or reset a computer or device from the Company Portal. There is a difference between **remove** and **reset**.
@@ -78,8 +80,13 @@ When you reset a computer or device, the Company Portal tries to reset your comp
 
 To learn how to reset your device, see [Reset your device from the Company Portal website](reset-erase-your-device-cpwebsite.md).  
 
-## What if I can't see my device in the Company Portal?
+## Can you remove a computer or device from the Microsoft Intune app?
+No, there's no way for you to remove a corporate-owned device from the Microsoft Intune app.  
+
+## What if I can't see my device in the Company Portal or Microsoft Intune app?
 For you to be able to see a device, it must first be added to the Company Portal. Go to whichever Company Portal was recommended by your admin and follow the steps for your device. You also won’t see devices that are owned and managed by your company.
+
+If you're using the Microsoft Intune app, you'll only see the device you're currently using. Other enrolled devices will not be visible to you in the app.  
 
 ## Where else can I go for help?  
 To troubleshoot common problems and questions, check out these platform-specific docs:  

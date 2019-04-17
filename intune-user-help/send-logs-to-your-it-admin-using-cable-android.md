@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Send logs to your company support using a USB cable | Microsoft Docs
-description: Send data logs by using a USB cable
+title: Upload and email logs using a USB cable | Microsoft Docs
+description: Upload data logs from your device with USB cable 
 keywords:
 author: lenewsad
 ms.author: lanewsad
@@ -29,12 +29,12 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Send logs to your company support using a USB cable
+# Upload and email logs using a USB cable
 
-Email company support about a problem you experienced in the Company Portal or Microsoft Inune app. Error details are recorded and stored on your device in a special document called a _diagnostic log_. This article describes how to upload the logs from your device to your computer. You'll need a USB cable to complete these steps.   
+Email company support about a problem you experienced in the Company Portal app. Error details are recorded and stored on your device in a special document called a _diagnostic log_. This article describes how to upload the logs from your device to your computer. You'll need a USB cable to complete these steps.   
 
 > [!Note]
-> Before you start, make sure that you have your support team's email address handy. Find the contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980), in the Company Portal app, or in the Microsoft Intune app.  
+> Before you start, make sure that you have your support team's email address handy. Find the contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) and in the Company Portal app. 
 
 1. On the error screen, tap **Send Info**. When you see a message asking which method you want to use to send the logs, choose the option that will save the files to your device.  
 

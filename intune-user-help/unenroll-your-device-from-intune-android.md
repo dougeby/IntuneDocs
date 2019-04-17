@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -36,6 +36,9 @@ Remove an enrolled Android device so that it's no longer managed by your organiz
 * The device no longer appears in Company Portal.
 * You can’t install apps from Company Portal.
 * Any settings that were changed on your device when you added it (for example, disabling the camera or requiring a certain password length) no longer apply.  
+
+> [!NOTE]
+> You can't unenroll or remove your corporate-owned device from the Microsoft Intune app. The device was enrolled during initial device setup and must be enrolled to use.  
 
 1. In Company Portal, go to the top-right corner and tap the three vertical dots. The action menu opens.
 
