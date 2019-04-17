@@ -644,6 +644,8 @@
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: Troubleshoot conditional access
         href: troubleshoot-conditional-access.md
+      - name: Troubleshoot certificate connector
+        href: troubleshoot-certificate-connector-events.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
     - name: Get support
