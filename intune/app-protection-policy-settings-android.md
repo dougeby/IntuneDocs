@@ -50,7 +50,7 @@ There are three categories of policy settings: data protection settings, access 
 ### Encryption
 | Setting | How to use | Default value |
 |------|------|------|
-| **Encrypt Org data** | Choose **Require** to enable encryption of work or school data in this app. Intune uses an OpenSSL, 256-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions. <br><br> The encryption method is FIPS 140-2 certified.     |  **Require**|  
+| **Encrypt Org data** | Choose **Require** to enable encryption of work or school data in this app. Intune uses an OpenSSL, 256-bit AES encryption scheme along with the Android Keystore system to securely encrypt app data. Data is encrypted synchronously during file I/O tasks. Content on the device storage is always encrypted. The SDK will continue to provide support of 128-bit keys for compatibility with content and apps that use older SDK versions. <br><br> The encryption method is FIPS 140-2 compliant.     |  **Require**|  
 
 
 
