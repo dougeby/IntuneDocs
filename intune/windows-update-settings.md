@@ -65,21 +65,21 @@ If you select an Insider channel, Intune automatically configures the Windows up
 ### Microsoft product updates  
 
 - **Default**:  Allow
-- **Windows reference documentation**: [Update/AllowMUUpdateService](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
+- **Windows reference documentation**: [Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
 
 Choose *Allow* a scan for app updates from Microsoft Update.    
 
 ### Windows drivers  
 
 - **Default**:  Allow
-- **Windows reference documentation**: [Update/ExcludeWUDriversInQualityUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)
+- **Windows reference documentation**: [Update/ExcludeWUDriversInQualityUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)
 
 Choose *Allow* to include Windows Update drivers during updates
 
 ### Quality update deferral period (days)  
 
 - **Default**: 0  
-- **Windows reference documentation**: [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
+- **Windows reference documentation**: [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
 
 Specify the number of days from 0 to 30 for which Quality Updates are deferred. This period is in addition to any deferral period that is part of the service channel you select. The deferral period begins when the policy is received by the device.  
 
@@ -88,7 +88,7 @@ Quality Updates are typically fixes and improvements to existing Windows functio
 ### Feature update deferral period (days)  
 
 - **Default**: 0  
-- **Windows reference documentation**: [Update/PauseFeatureUpdatesPeriodInDays](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
+- **Windows reference documentation**: [Update/PauseFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
 
 Specify the number of days for which Feature Updates are deferred. This period is in addition to any deferral period that is part of the service channel you select. The deferral period begins when the policy is received by the device.  
 Supported deferral period:  
@@ -101,7 +101,7 @@ Feature Updates are typically new features for Windows.
 ### Set feature update uninstall period (2 – 60 days)  
 
 - **Default**: 10  
-- **Windows reference documentation**:  [Update/ConfigureFeatureUpdateUninstallPeriod](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
+- **Windows reference documentation**:  [Update/ConfigureFeatureUpdateUninstallPeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
 
 Configure a time after which feature updates can't be uninstalled.  
 
@@ -117,7 +117,7 @@ User experience settings control the end-user experience for device restart and 
 ### Automatic update behavior  
 
 - **Default**: Auto install and restart at a scheduled time  
-- **Windows reference documentation**: [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
+- **Windows reference documentation**: [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
 Choose how automatic updates are installed, and if necessary, when to restart the device.  
 
@@ -130,11 +130,11 @@ Refer to the Windows reference documentation for full disclosure of the followin
   This option can restart a device automatically after the update installs. Use the **Active hours** settings to define a period during which the automatic restarts are blocked:  
 
   - **Active hours start**: Specify a start time for suppressing restarts due to update installations.  
-    **Windows reference documentation**:  [Update/ActiveHoursStart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+    **Windows reference documentation**:  [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
     **Default**: 8 AM  
   
   - **Active hours end**: Specify an end time for suppressing reboots due to update installations.  
-    **Windows reference documentation**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+    **Windows reference documentation**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
     **Default**: 5 PM  
 
 - **Auto install and restart at maintenance time** - Updates download automatically and then install during Automatic Maintenance when the device isn't in use or running on battery power. When restart is required, the device restarts when not being used. (This is the default for unmanaged devices.)  
@@ -142,17 +142,17 @@ Refer to the Windows reference documentation for full disclosure of the followin
   This option can restart a device automatically after the update installs. Use of the **Active hours** settings aren't described in Windows Update settings but are used by Intune to define a period during which the automatic restarts are blocked:  
 
   - **Active hours start**: Specify a start time for suppressing restarts due to update installations.  
-    **Windows reference documentation**:  [Update/ActiveHoursStart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+    **Windows reference documentation**:  [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
     **Default**: 8 AM  
 
   - **Active hours end**: Specify an end time for suppressing reboots due to update installations.  
-    **Windows reference documentation**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+    **Windows reference documentation**:  [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
     **Default**: 5 PM  
 
 - **Auto install and restart at scheduled time** – Specify an installation day and time. If unspecified, installation runs at 3 AM daily, followed by a 15-minute countdown to a restart. Logged on uses can delay countdown and restart.  
   
   This option supports additional settings.  
-  **Windows reference documentation**:  [Update/AllowAutoUpdate](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
+  **Windows reference documentation**:  [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
   - **Automatic behavior frequency**: Use this setting to schedule when updates are installed, including the week, the day, and the time.  
     **Default**: Every week
@@ -171,17 +171,17 @@ Refer to the Windows reference documentation for full disclosure of the followin
 ### Restart checks  
 
 - **Default**: Allow  
-- **Windows reference documentation**: [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
+- **Windows reference documentation**: [Update/SetEDURestart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
 
 This setting has different results depending on the devices version of Windows:  
 
 - Windows version 1703 and earlier: When you restart a device, there are some checks that occur, including checking for active users, battery levels, running games, and more. To skip these checks when you restart a device, select **Skip**.  
-- Beginning with Windows version 1709: During Active Hours, the following processes don't run for updates: scan, download, install, and reboot. After Active Hours, the update processes do run and can wake the device from sleep, scan, download, install, and reboot the device as long as the battery checks and power checks pass. For more information, see [Update/SetEDURestart](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
+- Beginning with Windows version 1709: During Active Hours, the following processes don't run for updates: scan, download, install, and reboot. After Active Hours, the update processes do run and can wake the device from sleep, scan, download, install, and reboot the device as long as the battery checks and power checks pass. For more information, see [Update/SetEDURestart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setedurestart).  
 
 ### Block user from pausing Windows updates  
 
 - **Default**: Allow  
-- **Windows reference documentation**: [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
+- **Windows reference documentation**: [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
 
 Allow or block a device user from pausing the installation of an update. 
 
@@ -194,21 +194,21 @@ Specifies whether to allow or block a user’s access to scan Windows Update. Fo
 ### Require user’s approval to restart outside of work hours  
 
 - **Default**: Not configured  
-- **Windows reference documentation**: [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- **Windows reference documentation**: [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
   
 Select *Required* to require that a user approves a device restart outside of work hours.  
    
 ### Remind user prior to required auto-restart with dismissible reminder (hours)  
 
 - **Default**: *This setting isn't configured by default, and no reminder is presented to users*.  
-- **Windows reference documentation**: [Update/ScheduleRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
+- **Windows reference documentation**: [Update/ScheduleRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
 
 Specify how long in advance of an automatic restart to display a dismissible notification to a device user about that restart. Values of **2**, **4**, **8**, **12**, or **24** hours are supported.  
 
 ### Remind user prior to required auto-restart with permanent reminder (minutes)  
 
 - **Default**: *This setting isn't configured by default, and no reminder is presented to users*.  
-- **Windows reference documentation**: [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
+- **Windows reference documentation**: [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning) 
 
 Specify how long in advance of an automatic restart to display a non-dismissible warning to a device user about that restart. Values of **15**, **30** or **60** minutes are supported.  
 
@@ -229,23 +229,23 @@ Specify what level of Windows Update notifications users see. This setting doesn
 
 When set to **Required**, you enable use of the engaged restart options for Windows 10 updates. These options engage the user of a device to help manage when to restart a device after installing an update that requires a restart.  
 
-For more information about this option, see [Engaged restart](https://docs.microsoft.com/en-us/windows/deployment/update/waas-restart#engaged-restart) in the Windows 10 documentation for deploying updates.  
+For more information about this option, see [Engaged restart](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) in the Windows 10 documentation for deploying updates.  
 
 The following settings are used to control when engaged restart actions occur.  
 
 - **Transition users to engaged restart after an auto-restart (days)**  
   - **Default**:  By default, this isn't configured but supports a value from **2** to **30**.  
-  - **Windows reference documentation**: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
+  - **Windows reference documentation**: [Update/EngagedRestartTransitionSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
   Specify how long after the update installs until the device enters the engaged restart behavior. After the configured number of days, users receive a prompt to restart the device.  
 
 - **Snooze engaged restart reminder (days)**  
   - **Default**:  By default, this setting isn't configured but supports a value from **1** to **3**.  
-  - **Windows reference documentation**: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
+  - **Windows reference documentation**: [Update/EngagedRestartSnoozeSchedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
   Specify for how long a restart prompt can be snoozed.  After the snooze period, the restart prompt is offered again. The user can continue to snooze the reminder until the installation deadline is reached.  
 
 - **Set deadline for pending restarts (days)**  
   - **Default**:  By default, this setting isn't configured but supports a value from **2** to **30**.  
-  - **Windows reference documentation**: [Update/EngagedRestartDeadline](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
+  - **Windows reference documentation**: [Update/EngagedRestartDeadline](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
   Specify a maximum number of days to wait after the engaged restart behavior begins before a device enforces a required restart. This restart will prompt users to save their work.
 
 ### Delivery optimization download mode  
