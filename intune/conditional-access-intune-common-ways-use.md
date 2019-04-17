@@ -147,7 +147,7 @@ Conditional access for PCs provides capabilities similar to those available for 
 
     -   Is the PC encrypted?
 
-    -   Is malware installed? Is it up-to-date?
+    -   Is anti-malware installed? Is it up-to-date?
 
     -   Is the device jailbroken or rooted?
 
