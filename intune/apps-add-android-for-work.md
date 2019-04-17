@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/12/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -116,6 +116,8 @@ After you assign the app, it is installed on the devices that you've targeted. T
 ## Assigning a Managed Google Play app to Android Enterprise fully managed devices
 
 [Android Enterprise fully managed devices](android-fully-managed-enroll.md) are corporate-owned devices associated with a single user and used exclusively for work and not personal use. 
+
+### Microsoft Intune app
 
 After you assign an app to a Android fully managed device, the end user must use the **Microsoft Intune** app to install available apps. Using the **Microsoft Intune** app on a Android device only applies to the fully managed scenario. In all other Android management scenarios, the **Company Portal** continues to be the end user app used to manage apps assigned by Intune.   
 
