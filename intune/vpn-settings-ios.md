@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/17/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ Select the VPN connection type from the following list of vendors:
 - **Cisco (IPSec)**
 - **Citrix VPN**
 - **Citrix SSO**
-- **Zscaler**: Requires you to integrate Zscaler Private Access (ZPA) with your Azure AD account if you want integration with Conditional Access or if you want to allow users to bypass the Zscaler login screen. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: To use conditional access, or allow users to bypass the Zscaler login screen, then you must integrate Zscaler Private Access (ZPA) with your Azure AD account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **Custom VPN**
 
 
