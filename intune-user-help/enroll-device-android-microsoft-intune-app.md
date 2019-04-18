@@ -51,7 +51,7 @@ Complete these steps to set up and enroll your device.
 1. Turn on your new or factory-reset device.  
 2. On the **Welcome** screen, select your language. 
     a. If you've been instructed to enroll with a QR code or NFC, follow the step that matches the method:  
-        * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 5.
+        * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 5.  
         * QR code: Complete the steps in [QR code enrollment](#qr-code-enrollment).  
 
     b. If you've been instructed to use another method, continue to step 3.    
