@@ -29,6 +29,8 @@ ms.custom: intune-azure
 ms.custom: seodec18 
 ms.collection: M365-identity-device-management
 ---
+
+
  
 # Set up an enrollment status page
  
@@ -41,7 +43,9 @@ During device setup using Intune, the Enrollment Status Page displays installati
 
 You can also set the priority order for each profile to account for conflicting profile assignments to the same user or device.
 
- 
+> [!NOTE]
+> The Enrollment status page will not appear if only the device is in an assigned group. The user must be in an assigned group for the enrollment status page to appear.
+
 ## Turn on default enrollment status page for all users
 
 To turn on the enrollment status page, follow the steps below.
