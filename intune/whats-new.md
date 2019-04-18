@@ -161,6 +161,9 @@ For more information, see [Automatically enroll macOS devices with the Device En
 #### Bulk device naming when enrolling corporate iOS devices<!--3566569  -->
 When using one of Apple's corporate enrollment methods (DEP/ABM/ASM), you can set a device name format to automatically name incoming iOS devices. You can specify a format that includes the device type and serial number in your template. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > **Select a token** >**Create profile** > **Device naming format**. You can edit existing profiles, but only newly synced devices will have the name applied.
 
+#### Updated default timeout message on Enrollment Status Page <!-- 3959331 -->
+We've updated the default timeout message users see when the Enrollment Status Page (ESP) exceeds the timeout value specified in the ESP profile. The new default message is what users see and helps them understand the next actions to take with their ESP deployment.  
+
 ### Device management
 
 #### Retire noncompliant devices  <!-- 1827291   -->
