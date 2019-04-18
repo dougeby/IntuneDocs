@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->     
 
 <!-- ########################## -->
+
+## Week of April 15, 2019
+
+### Monitor and troubleshoot
+
+#### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
+When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. For more information, see [Change log for the Intune Data Warehouse API](reports-changelog.md#1903-part-2).
 
 ## Week of April 1, 2019
 

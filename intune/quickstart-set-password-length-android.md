@@ -1,14 +1,14 @@
 ---
 # required metadata
 
-title: Quickstart - Create a password compliance policy for Android devices
+title: Quickstart - Password compliance policy for Android devices
 titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to set the length of the password required for Android devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod:
 ms.service: microsoft-intune
