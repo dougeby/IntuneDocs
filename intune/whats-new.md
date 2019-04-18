@@ -83,17 +83,15 @@ On macOS devices, you can create a device configuration profile (**Device config
 To see these settings, go to [macOS device feature settings](macos-device-features-settings.md).
 
 #### Configure WiFi on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!--3041940  -->
-You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can enable WiFi, and allow users to connect to WiFi networks (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **WiFi configuration**). 
+You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can enable users to configure and connect to WiFi networks (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **WiFi configuration**). 
 
 To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
 
 Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
-Applies to: macOS
-
 
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
-You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can enable Bluetooth, and allow users to pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
+You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end-users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
 To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
 
