@@ -57,14 +57,14 @@ Some Android devices on version 7.0 and later encrypt data in ways that are inco
 > [!Note]
 > Microsoft works with manufacturers to address any issues we find while testing, or that users report to us. We update this article whenever new information is available. 
 
-## Known devices that can be updated to fix problem
+## Update known devices   
 
-If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might not appear compliant until you update them: 
+If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might not appear compliant until you update them.  
 
 - Huawei Honor 8
 - Huawei P9
 
-## Known devices that can't be updated to fix problem  
+## Known devices that always appear encrypted  
 The following devices will always appear encrypted and can't be used to access company resources. To access company resources, you must use a different device.  
 
 - Huawei Mate 8
