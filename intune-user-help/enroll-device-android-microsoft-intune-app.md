@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
 Enroll your corporate-owned Android device to get secure access to company email, apps, and other data that your organization makes available. The Microsoft Intune app supports corporate-owned devices running Android 6.0 and later. It will be automatically installed on new and factory-reset devices during enrollment. 
 
-There are four ways to enroll. Your organization should let you know which option to use. 
+There are four ways to enroll. Your organization should let you know which option to use.
  
 * Near Field Communication (NFC)  
 * Token  
@@ -46,26 +46,30 @@ Before you begin enrollment, make sure you're aware of which option you need to 
 Complete these steps to set up and enroll your device.  
 
 > [!NOTE]
-> The Android version or device manufacturer might require you to complete additional steps that aren't covered in this procedure. The colors and text you see in the screenshots might also appeear different on your device.  
+> The Android version or device manufacturer might require you to complete additional steps that aren't covered in this procedure. The colors and text you see in the screenshots might also appear different on your device.  
 
 1. Turn on your new or factory-reset device.  
-2. On the **Welcome** screen, follow the step that matches your enrollment method. If your enrollment method isn't listed, select your language and continue to step 3.     
-    * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 6.   
-    * QR code: Complete the steps in [QR code enrollment](#qr-code-enrollment).     
+2. On the **Welcome** screen, if you've been instructed to enroll with a QR code or NFC, follow the step that matches the method. If you've been instructed to use another method, select your language and continue to step 3.       
+    * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 5.      
+    * QR code: Complete the steps in [QR code enrollment](#qr-code-enrollment).         
 3. Connect to Wi-Fi and tap **NEXT**. Follow the step that matches your enrollment method. 
-    * Google Zero Touch: After you connect to Wi-Fi, your device is recognized by your organization. Continue to step 4 and follow the onscreen prompts until setup is complete.    
-    * Token: When you get to the Google sign-in screen, complete the steps in [Token enrollment](#token-enrollment).  
+
+    * Token: When you get to the Google sign-in screen, complete the steps in [Token enrollment](#token-enrollment).    
+    * Google Zero Touch: After you connect to Wi-Fi, your device will be recognized by your organization. Continue to step 4 and follow the onscreen prompts until setup is complete.    
+ 
+       ![Example image of Google terms screen that you see if you're using Google Zero Touch, highlighting Accept & Continue button.](./media/google-zero-touch-intune-app-01.png)   
+   
 4. Review Google's terms. Then tap **ACCEPT & CONTINUE**.  
 
-   ![Example image of Google terms screen, highlighting Accept & Continue button.](./media/fully-managed-intune-app-04.png)   
+      ![Example image of Google terms screen, highlighting Accept & Continue button.](./media/fully-managed-intune-app-04.png)   
 
 6. Review Chrome's Terms of Service. Then tap **ACCEPT & CONTINUE**.  
 
    ![Example image of Chrome Terms of Service screen, highlighting Accept & Continue button.](./media/fully-managed-intune-app-06.png)   
 
-7. On the sign in screen:  
+7. On the sign in screens, sign in with your work or school account.   
 
-    a. Enter your work or school email. Then tap **Next**.  
+    a. Enter your email. Then tap **Next**.      
     b. Enter your password and tap **Sign in**.  
 
 8. Depending on your organization's requirements, you might be prompted to update settings, such as screen lock or encryption. If you see these prompts, tap **SET** and follow the onscreen instructions.  
@@ -94,8 +98,9 @@ Complete these steps to set up and enroll your device.
 
 
 ## QR code enrollment  
-In this section, you'll scan your company-provided QR code.  When you're done, we'll redirect you back to the device enrollment steps.  
-1. Tap the screen five times to start QR code setup.  
+In this section, you'll scan your company-provided QR code.  When you're done, we'll redirect you back to the device enrollment steps.       
+1. On the Welcome screen, select your language.   
+2. Tap the screen five times to start QR code setup.  
 
    ![Example image of device setup Welcome screen, highlighting instructions to tap screen.](./media/qr-code-intune-app-01.png)  
 
