@@ -47,7 +47,7 @@ Example screenshot of the device details screen:
 
 ![Screenshot of Microsoft Intune app, showing device details for Jane's Android.](./media/1904-intune-app-device-details.png)   
 
-Example screenshot the **Setup access** enrollment screen:  
+Example screenshot the **Setup access** screen:  
 
 ![Screenshot of Microsoft Intune app, showing Setup access enrollment screen.](./media/1904-intune-app-setup-access.png)   
 
