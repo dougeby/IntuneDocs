@@ -52,6 +52,11 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 ## Week of April 15, 2019
 
+### App management
+
+#### OpenSSL encryption for Android app protection policies <!-- 3747362 -->
+Intune app protection policies (APP) on Android devices now uses an OpenSSL encryption library that is FIPS 140-2 compliant. For more information, see the [encryption](app-protection-policy-settings-android.md#encryption) section of [Android app protection policy settings in Microsoft Intune](app-protection-policy-settings-android.md).
+
 ### Monitor and troubleshoot
 
 #### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
