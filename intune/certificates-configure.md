@@ -98,7 +98,7 @@ The profile appears in the list of profiles on the *Device configuration – Pro
 
 ## Next steps
 After you create and assign trusted certificate profiles, create SCEP or PKCS certificate profiles for each platform you want to use. To continue, see the following articles:  
-- [Configure infrastructure to support SCEP certificates with Intune](certficates-scep-configure.md)
+- [Configure infrastructure to support SCEP certificates with Intune](certificates-scep-configure.md)  
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
 
 

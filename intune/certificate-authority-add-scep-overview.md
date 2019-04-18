@@ -116,9 +116,9 @@ The **Tenant ID** is the domain text after the @ sign in your account. For examp
 ### Configure and deploy a SCEP certificate profile
 As the administrator, create a SCEP certificate profile to target to users or devices. Then, assign the profile.
 
-- [Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Create a SCEP certificate profile](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Assign the certificate profile](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Assign the certificate profile](certificates-profile-scep.md#assign-the-scep-certificate-profile)
 
 ## Removing certificates
 
