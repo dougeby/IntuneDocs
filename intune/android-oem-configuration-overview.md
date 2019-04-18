@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -108,8 +108,8 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app has been a
 
 Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
     
-    > [!NOTE]
-    > Assign one profile to each device. The OEMConfig model only supports one policy per device.
+ > [!NOTE]
+ > Assign one profile to each device. The OEMConfig model only supports one policy per device.
 
 The next time the device checks for configuration updates, the OEM-specific settings you configured are applied to the OEMConfig app.
 
