@@ -67,7 +67,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about the app. The URL appears in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for the app. The URL appears in the company portal.
-	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs. An example is **/q**.
+	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs.  An example is **/q**. Do not include the msiexec command or arguments like /i or /x as they are automatically used. See this link for commonly used arguments - https://docs.microsoft.com/en-us/windows/desktop/Msi/command-line-options
 	- **Developer**: Optionally, enter the name of the app developer.
 	- **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
 	- **Notes**: Enter any notes that you want to associate with this app.
