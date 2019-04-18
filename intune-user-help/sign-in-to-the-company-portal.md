@@ -28,7 +28,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Sign in to Company Portal and Microsoft Intune app <!--User Story 1132123-->
+# Sign in to Company Portal  
 
 There are three ways to sign in to the Company Portal app:
 
