@@ -204,7 +204,7 @@ The following procedures can help you configure the Network Device Enrollment Se
 
 1. On the computer that hosts the NDES service, open the **AD CS Configuration** wizard, and then make the following updates:  
 
-   > [!TIP}  
+   > [!TIP]  
    > If you're continuing on from the last procedure and clicked the **Configure Active Directory Certificate Services on the destination server** link, this wizard should already be open. Otherwise, open Server Manager to access the post-deployment configuration for Active Directory Certificate Services.  
 
    - In **Role Services**, select the **Network Device Enrollment Service**.

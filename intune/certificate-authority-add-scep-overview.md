@@ -118,7 +118,7 @@ As the administrator, create a SCEP certificate profile to target to users or de
 
 - [Create a SCEP certificate profile](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Assign the certificate profile](certificates-profile-scep.md#assign-the-scep-certificate-profile)
+- [Assign the certificate profile](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## Removing certificates
 
