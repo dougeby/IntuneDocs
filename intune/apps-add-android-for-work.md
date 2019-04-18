@@ -129,6 +129,10 @@ Periodically visit the managed Google Play console to check for new permissions.
 
 Alternatively, you can configure Google Play to automatically reapprove app permissions on a per-app basis.
 
+## Additional Managed Google Play app reporting for Android Enterprise work profile devices
+
+For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. 
+
 ## Working with a line-of-business app from the Managed Google Play store
 
 1. Sign in to the [Google Play Developer Console](https://play.google.com/apps/publish) with the same account you used to configure the connection between Intune and Android enterprise.  
