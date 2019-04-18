@@ -115,13 +115,11 @@ After you assign the app, it is installed on the devices that you've targeted. T
 
 ## Assigning a Managed Google Play app to Android Enterprise fully managed devices
 
-[Android Enterprise fully managed devices](android-fully-managed-enroll.md) are corporate-owned devices associated with a single user and used exclusively for work and not personal use. 
+[Android Enterprise fully managed devices](android-fully-managed-enroll.md) are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Users on fully managed devices can get their available company apps from the managed Google Play app on their device.
 
 ### Microsoft Intune app
 
-After you assign an app to a Android fully managed device, the end user must use the **Microsoft Intune** app to install the available app. Using the **Microsoft Intune** app on a Android device only applies to the fully managed scenario. In all other Android management scenarios, the **Company Portal** continues to be the end user app used to manage apps assigned by Intune.   
-
-The **Microsoft Intune** app will be automatically deployed to all fully managed devices on enrollment. In addition, the **Microsoft Intune** app will allow the user to manage compliance for this device. 
+The **Microsoft Intune** app will be automatically deployed to all fully managed devices on enrollment. In addition, the **Microsoft Intune** app will allow the user to manage compliance for their device. 
 
 By default, an Android Enterprise fully managed device will not allow employees to install any apps that are not approved by the organization. Also, employees will not be able to remove any installed apps against policy. If you wish to allow users to access the full Google Play store to install apps rather than only having access to the approved apps in Managed Google Play store, you can set the **Allow access to all apps in Google Play store** to **Allow**. With this setting, the user can access all the apps in the Google Play store using their corporate account, however purchases may limited. You can remove the limited purchases restriction by allowing users to add new accounts to the device. Doing so will enable end users to have the ability to purchase apps from the Google Play store using personal accounts, as well as conduct in-app purchases. For more information, see [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md). 
 
