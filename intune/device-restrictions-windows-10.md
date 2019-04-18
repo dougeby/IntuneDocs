@@ -542,8 +542,6 @@ Select **OK** to save your changes.
 
 ## Reporting and telemetry
 
-
-
 - **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
   - **Not configured**: No data is shared.
   - **Security**: Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
@@ -723,9 +721,14 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   - **Prompt before sending personal data**
   - **Never send data**
   - **Send all data without prompting**: Data is sent automatically
+
 - **Time to perform a daily quick scan**: Choose the hour to run a daily quick scan. **Not configured** doesn't run a daily scan. If you want more customization, configure the **Type of system scan to perform** setting.
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+
+  > [!WARNING]
+  > This setting in Intune in the Azure portal may show a Failed status. This is a bug with the reporting feature. After reproducing the behavior and troubleshooting, the Intune product group confirmed that the status is actually a Success. The reporting bug will be fixed in an upcoming release. There isn't a current ETA, as timelines change. Any updates to this feature are announced in [In development for Microsoft Intune](in-development.md).
+
 - **Type of system scan to perform**: Schedule a system scan, including the level of scanning, and the day and time to run the scan. Your options:
   - **Not configured**: Doesn't schedule a system scan on the device. End users can manually run scans as needed or wanted on their devices.
   - **Disable**: Disables any system scanning on the device. Choose this option if you're using a partner anti-virus solution that scans devices.
@@ -746,6 +749,9 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
+  > [!WARNING]
+  > This setting in Intune in the Azure portal may show a Failed status. This is a bug with the reporting feature. After reproducing the behavior and troubleshooting, the Intune product group confirmed that the status is actually a Success. The reporting bug will be fixed in an upcoming release. There isn't a current ETA, as timelines change. Any updates to this feature are announced in [In development for Microsoft Intune](in-development.md).
 
 - **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications. Your options:
   - **Not configured** (default): Windows Defender potentially unwanted applications protection is disabled.
