@@ -74,7 +74,7 @@ The following list describes the settings your company support can manage within
 
 * Access to specific websites  
 
-* Access to internal company websites using Edge and the Azure Active Directory proxy  
+* Access to internal company websites using Microsoft Edge and the Azure Active Directory proxy  
 
 * Minimum version of app, version of OS
 

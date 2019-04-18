@@ -50,10 +50,11 @@ Complete these steps to set up and enroll your device.
 
 1. Turn on your new or factory-reset device.  
 2. On the **Welcome** screen, select your language. 
-    a. If you've been instructed to enroll with a QR code or NFC, follow the step that matches the method:
-        * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 5.      
+    a. If you've been instructed to enroll with a QR code or NFC, follow the step that matches the method:  
+        * NFC: Tap your NFC-supported device against a programmer device to connect to your organization's network. Follow the onscreen prompts. When you reach the screen for Chrome's Terms of Service, continue to step 5.
         * QR code: Complete the steps in [QR code enrollment](#qr-code-enrollment).  
-    b. If you've been instructed to use another method, scontinue to step 3.    
+
+    b. If you've been instructed to use another method, continue to step 3.    
 
 1. Connect to Wi-Fi and tap **NEXT**. Follow the step that matches your enrollment method. 
 
@@ -109,7 +110,7 @@ In this section, you'll scan your company-provided QR code.  When you're done, w
 
 2. Follow any onscreen instructions to connect to Wi-Fi.  
 3. If your device doesn't have a QR code scanner, the setup screens will show the progress as a scanner is installed. Wait for installation to complete.  
-4. When prompted, scan the enrollment profile QR code that you organization gave you.  
+4. When prompted, scan the enrollment profile QR code that your organization gave you.  
 5. Return to [Enroll device](#enroll-device), step 4 to continue setup.  
 
 ## Token enrollment  
