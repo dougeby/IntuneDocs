@@ -93,7 +93,7 @@ Complete these steps to set up and enroll your device.
        ![Example image of Microsoft Intune app, Set up access screen, showing completed tasks.](./media/fully-managed-intune-app-16.png)   
 
 
-### QR code enrollment  
+## QR code enrollment  
 In this section, you'll scan your company-provided QR code.  When you're done, we'll redirect you back to the device enrollment steps.  
 1. Tap the screen five times to start QR code setup.  
 
@@ -104,7 +104,7 @@ In this section, you'll scan your company-provided QR code.  When you're done, w
 4. When prompted, scan the enrollment profile QR code that you organization gave you.  
 5. Return to [Enroll device](#enroll-device), step 4 to continue setup.  
 
-### Token enrollment  
+## Token enrollment  
 In this section, you'll enter your company-provided token. When you're done, we'll redirect you back to the device enrollment steps.  
 
 1. On the Google sign-in screen, in the **Email or phone** box, type **afw#setup**. Tap **Next**. 
