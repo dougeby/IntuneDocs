@@ -36,7 +36,7 @@ In this quickstart, you will use Microsoft Intune to require your workforce's An
 An Intune device compliance policy specifies the rules and settings that devices must meet to be considered compliant. You can use compliance policies with conditional access to allow or block access to company resources. You can also get device reports and take actions for non-compliance.
 
 > [!IMPORTANT]
-> In addition to password settings, you should also consider other system security settings to protect your workforce. For more information, see [System security settings](compliance-policy-create-android-for-work.md#system-security-settings).
+> In addition to password settings, you should also consider other system security settings to protect your workforce. For more information, see [System security settings](compliance-policy-create-android-for-work.md).
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 

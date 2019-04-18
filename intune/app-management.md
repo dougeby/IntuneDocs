@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,26 +45,28 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 ## App management capabilities by platform
 
-|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Add and assign   apps to devices and users | Yes | Yes | Yes | Yes | Yes |
 | Assign apps to   devices not enrolled with Intune | Yes | Yes | No | No | No |
 | Use app   configuration policies to control the startup behavior of apps | Yes | Yes | No | No | No |
 | Use mobile app   provisioning policies to renew expired apps | No | Yes | No | No | No |
-| Protect company   data in apps with app protection policies | Yes | Yes | No | No1 | No |
+| Protect company   data in apps with app protection policies | Yes | Yes | No | No <sup>1</sup> | No |
 | Remove only   corporate data from an installed app (app selective wipe) | Yes | Yes | No | Yes | Yes |
 | Monitor app   assignments | Yes | Yes | Yes | Yes | Yes |
 | Assign and   track volume-purchased apps from an app store | No | No | No | Yes | No |
-| Mandatory   install of apps on devices (required)2 | Yes | Yes | Yes | Yes | Yes |
-| Optional   installation on devices from the Company Portal (available installation) | Yes | Yes | Yes | Yes | Yes |
-| Install   shortcut to an app on the web (web link) | Yes | Yes | Yes | Yes | Yes |
+| Mandatory   install of apps on devices (required) <sup>2</sup> | Yes | Yes | Yes | Yes | Yes |
+| Optional   installation on devices from the Company Portal (available installation) | Yes <sup>3</sup> | Yes | Yes | Yes | Yes |
+| Install   shortcut to an app on the web (web link) | Yes <sup>4</sup> | Yes | Yes | Yes | Yes |
 | In-house   (line-of-business) apps | Yes | Yes | Yes | Yes | No |
 | Apps from a   store | Yes | Yes | No | Yes | Yes |
 | Update apps | Yes | Yes | No | Yes | Yes |
 
-<sup>1</sup> Consider using [Windows Information Protection](windows-information-protection-configure.md) to protect apps on devices that run Windows 10.
+<sup>1</sup> Consider using [Windows Information Protection](windows-information-protection-configure.md) to protect apps on devices that run Windows 10.<br>
+<sup>2</sup> Applies to devices managed by Intune only.<br>
+<sup>3</sup> Intune supports available apps from Managed Google Play store on Android Enterprise devices.<br>
+<sup>4</sup> Intune does not provide installing a shortcut to an app as a web link on standard Android Enterprise devices. However, Web link support is provided for [multi-app dedicated Android Enterprise devices](device-restrictions-android-for-work.md#dedicated-device-settings). 
 
-<sup>2</sup> Applies to devices managed by Intune only.
 
 ## Get started
 
