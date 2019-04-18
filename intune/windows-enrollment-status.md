@@ -44,7 +44,7 @@ During device setup using Intune, the Enrollment Status Page displays installati
 You can also set the priority order for each profile to account for conflicting profile assignments to the same user or device.
 
 > [!NOTE]
-> The Enrollment Status Page doesn't work when assigned to devices.
+> The Enrollment status page will not appear if only the device is in an assigned group. The user must be in an assigned group for the enrollment status page to appear.
 
 ## Turn on default enrollment status page for all users
 
