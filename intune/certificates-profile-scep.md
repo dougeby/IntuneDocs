@@ -51,7 +51,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
       - **User**: *User* certificates can contain both user and device attributes in the subject and SAN of the certificate.  
       - **Device**:  *Device* certificates can only contain device attributes in the subject and SAN of the certificate.  
       
-        Use **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices, placing the certificate in the Local Computer certificate store.  
+        Use **Device** for scenarios such as user-less devices, like kiosks, or for Windows devices. Place the certificate in the Local Computer certificate store.  
 
    - **Subject name format**:  
      Select how Intune automatically creates the subject name in the certificate request. Options for the subject name format depend on the Certificate type you select, either **User** or **Device**.  
