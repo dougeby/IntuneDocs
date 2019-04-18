@@ -456,7 +456,7 @@
         - name: SCEP infrastructure
           href: certificates-scep-configure.md
         - name: SCEP certificate profiles
-          href: certificates-profiles-scep.md
+          href: certificates-profile-scep.md
       - name: PKCS
         href: certficates-pfx-configure.md
       - name: Use S/MIME to encrypt email
