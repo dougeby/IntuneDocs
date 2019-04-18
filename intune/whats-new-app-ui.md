@@ -38,6 +38,27 @@ If you're an employee or student, be sure to check out the screenshots and links
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## Week of April 15, 2019  
+
+### New end user app (Microsoft Intune app) <!--3903244 -->  
+There's a new end-user app for Android fully managed devices called **Microsoft Intune**. This new app is light-weight and modern, and provides similar functionally as the Company Portal app, but for fully managed, corporate devices. For more information, see [Microsoft Intune app on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+
+Example screenshot of the device details screen: 
+
+![Screenshot of Microsoft Intune app, showing device details for Jane's Android.](./media/1904-intune-app-device-details.png)   
+
+Example screenshot the **Setup access** enrollment screen:  
+
+![Screenshot of Microsoft Intune app, showing Setup access enrollment screen.](./media/1904-intune-app-setup-access.png)   
+
+Example screenshot of the app menu:  
+
+![Screenshot of Microsoft Intune app, showing the side menu.](./media/1904-intune-app-navigation-menu.png)   
+
+Example screenshot of the **Help** screen:  
+
+![Screenshot of Microsoft Intune app, Help screen.](./media/1904-intune-app-help.png)   
+
 
 ## Week of April 1, 2019  
 
