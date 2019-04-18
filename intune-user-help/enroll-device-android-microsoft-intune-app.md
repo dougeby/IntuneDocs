@@ -69,7 +69,7 @@ Complete these steps to set up and enroll your device.
 
 7. On the sign in screens, sign in with your work or school account.   
 
-    a. Enter your email. Then tap **Next**.      
+    a. Enter your email and tap **Next**.      
     b. Enter your password and tap **Sign in**.  
 
 8. Depending on your organization's requirements, you might be prompted to update settings, such as screen lock or encryption. If you see these prompts, tap **SET** and follow the onscreen instructions.  
