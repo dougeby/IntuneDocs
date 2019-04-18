@@ -63,8 +63,9 @@ Complete these steps to set up and enroll your device.
 
    ![Example image of Chrome Terms of Service screen, highlighting Accept & Continue button.](./media/fully-managed-intune-app-06.png)   
 
-7. On the sign in screen:
-    a. Enter your work or school email. Then tap **Next**. 
+7. On the sign in screen:  
+
+    a. Enter your work or school email. Then tap **Next**.  
     b. Enter your password and tap **Sign in**.  
 
 8. Depending on your organization's requirements, you might be prompted to update settings, such as screen lock or encryption. If you see these prompts, tap **SET** and follow the onscreen instructions.  
@@ -81,20 +82,20 @@ Complete these steps to set up and enroll your device.
 
 12. On the **Setup access** screen, you'll see a list of pending tasks. Tap **CONTINUE**.  
 
-   ![Example image of Microsoft Intune app, Set up access screen, showing pending tasks.](./media/fully-managed-intune-app-14.png)   
+       ![Example image of Microsoft Intune app, Set up access screen, showing pending tasks.](./media/fully-managed-intune-app-14.png)   
 
 13. When device registration is complete, tap **CONTINUE**. Microsoft Intune might prompt you to update additional device settings.   
 
-   ![Example image of Microsoft Intune app, Update device settings screen.](./media/fully-managed-intune-app-15-2.png)   
+       ![Example image of Microsoft Intune app, Update device settings screen.](./media/fully-managed-intune-app-15-2.png)   
 
 14. Setup is complete when all items in the list show a green circle. You can now access company resources.  
 
-   ![Example image of Microsoft Intune app, Set up access screen, showing completed tasks.](./media/fully-managed-intune-app-16.png)   
+       ![Example image of Microsoft Intune app, Set up access screen, showing completed tasks.](./media/fully-managed-intune-app-16.png)   
 
 
-### QR code enrollment
+### QR code enrollment  
 In this section, you'll scan your company-provided QR code.  When you're done, we'll redirect you back to the device enrollment steps.  
-1. Tap the screen five times to start QR setup.  
+1. Tap the screen five times to start QR code setup.  
 
    ![Example image of device setup Welcome screen, highlighting instructions to tap screen.](./media/qr-code-intune-app-01.png)  
 
