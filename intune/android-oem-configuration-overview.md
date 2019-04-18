@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 04/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -60,6 +60,7 @@ When using OEMConfig, be aware of the following information:
 - Intune exposes the OEMConfig app's schema so you can configure it. Intune doesn't validate or change the schema provided by the app. So if the schema is incorrect, or has inaccurate data, then this data is still sent to devices. If you find a problem that originates in the schema, contact the OEM for guidance.
 - Intune doesn't influence or control the content of the app schema. For example, Intune doesn't have any control over strings, language, the actions allowed, and so on. We recommend contacting the OEM for details and best practices for managing their devices with OEMConfig.
 - At any time, OEMs can update their supported features and schemas, and upload a new app to Google Play. Intune always syncs the latest version of the OEMConfig app from Google Play. Intune doesn't maintain older versions of the schema or the app. If you run into version conflicts, we recommend contacting the OEM for more information.
+- You should only assign one OEMConfig profile to a device. If multiple profiles are assigned to the same device, you may see inconsistent behavior. The OEMConfig model only supports a single policy per device.
 
 ## Prerequisites
 
@@ -106,6 +107,9 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app has been a
 6. Select **OK** > **Add** to save your changes. The policy is created and shown in the list.
 
 Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+    
+ > [!NOTE]
+ > Assign one profile to each device. The OEMConfig model only supports one policy per device.
 
 The next time the device checks for configuration updates, the OEM-specific settings you configured are applied to the OEMConfig app.
 
