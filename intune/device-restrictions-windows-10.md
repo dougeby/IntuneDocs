@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/11/2019
+ms.date: 04/18/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -390,28 +390,38 @@ Select **OK** to save your changes.
 
 ## Network proxy
 
-- **Automatically detect proxy settings**: When enabled, the device tries to find the path to a PAC script.
-- **Use proxy script**: Select this option to enter a path to a PAC script to configure the proxy server.
+These settings use the [NetworkProxy policy CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp), which also lists the supported Windows editions.
+
+- **Automatically detect proxy settings**: **Block** disables the device from automatically detecting a proxy auto config (PAC) script. **Not configured** (default) enables this feature. When enabled, the device tries to find the path to a PAC script.
+- **Use proxy script**: Choose **Allow** to enter a path to your PAC script to configure the proxy server. **Not configured** (default) doesn't let you enter the URL to a PAC script.
   - **Setup script address URL**: Enter the URL of a PAC script you want to use to configure the proxy server.
-- **Use manual proxy server**: Select this option to manually enter proxy server information.
+- **Use manual proxy server**: Choose **Allow** to manually enter the  name or IP address, and TCP port number of a proxy server. **Not configured** (default) doesn't let you manually enter details of a proxy server.
   - **Address**: Enter the name, or IP address of the proxy server.
   - **Port number**: Enter the port number of your proxy server.
   - **Proxy exceptions**: Enter any URLs that must not use the proxy server. Use a semicolon to separate each item.
-  - **Bypass proxy server for local address**: If you don't want to use the proxy server for local addresses on your intranet, enable this option.
+  - **Bypass proxy server for local address**: **Not configured** (default) prevents using a proxy server for local addresses on your intranet. **Allow** uses a proxy server for local addresses.
 
 Select **OK** to save your changes.
 
 ## Password
 
-- **Password**: Require the end user to enter a password to access the device.
-  - **Required password type**: Specifies whether the password must be numeric only, or alphanumeric.
-  - **Minimum password length**: Applies to Windows 10 Mobile only.
-  - **Number of sign-in failures before wiping device**: For devices running Windows 10: If the device has BitLocker enabled, it's put into BitLocker recovery mode after sign in fails the number of times that you specified. If the device isn't BitLocker enabled, then this setting doesn't apply. For devices running Windows 10 Mobile: After sign in fails the number of times you enter, the device is wiped.
-  - **Maximum minutes of inactivity until screen locks**: Specifies the length of time a device must be idle before the screen is locked.
-  - **Password expiration (days)**: Specifies the length of time after which the device password must be changed.
-  - **Prevent reuse of previous passwords**: Specifies the number of previously used passwords that are remembered by the device.
-  - **Require password when device returns from idle state (Mobile only)**: Specifies that the user must enter a password to unlock the device (Windows 10 Mobile only).
-  - **Simple passwords**: Lets you allow the use of simple passwords like 1111 and 1234. This setting also allows or blocks the use of Windows picture passwords.
+These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), which also lists the supported Windows editions.
+
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password.
+  - **Required password type**: Choose the type of password. Your options:
+    - **Not configured**: Password can include numbers and letters.
+    - **Numeric**: Password must only be numbers.
+    - **Alphanumeric**: Password must be a mix of numbers and letters.
+  - **Minimum password length**: Enter the minimum number or characters required, from 4-16. For example, enter `6` to require at least six characters in the password length.
+  - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device is wiped, from 1-11. `0` (zero)  may disable the device wipe functionality.
+
+    This setting has a different impact depending on the edition. For specific details, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+
+  - **Maximum minutes of inactivity until screen locks**: Enter the length of time a device must be idle before the screen is locked.
+  - **Password expiration (days)**: Enter the length of time in days when the device password must be changed, from 1-365. For example, enter `90` to expire the password after 90 days.
+  - **Prevent reuse of previous passwords**: Enter the number of previously used passwords that can't be used, from 1-24. For example, enter `5` so users can't set a new password to their current password or any of their previous four passwords.
+  - **Require password when device returns from idle state** (Mobile and Holographic): Choose **Require** so users must enter a password to unlock the device after being idle. **Not configured** (default) doesn't require a PIN or password when the device resumes from an idle state.
+  - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as `1234` or `1111`. Set to **Not configured** (default) to let users create passwords like `1234` or `1111`. This setting also allows or blocks the use of Windows picture passwords.
 - **Automatic encryption during AADJ**: **Block** prevents automatic BitLocker device encryption when the device is prepared for first use, when the device is Azure AD joined. **Not configured** (default) uses the operating system default, which may enable encryption. More on [BitLocker device encryption](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
@@ -440,7 +450,7 @@ Select **OK** to save your changes.
 
 ## Per-app privacy exceptions
 
-You can add apps that should have a different privacy behavior from what you defined in “Default privacy”.
+You can add apps that should have a different privacy behavior from what you define in “Default privacy”.
 
 - **Package Name**: App package family name.
 - **App Name**: The name of the app.
@@ -470,7 +480,9 @@ Select **OK** to save your changes.
 
 ## Personalization
 
-- **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in JPEG format that you want to use as the Windows desktop wallpaper. Users can't change the picture.
+These settings use the [personalization policy CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), which also lists the supported Windows editions.
+
+- **Desktop background picture URL (Desktop only)**: Enter the URL to a picture in .jpg, .jpeg or .png format that you want to use as the Windows desktop wallpaper. Users can't change the picture. For example, enter `https://contoso.com/logo.png`.
 
 Select **OK** to save your changes.
 
@@ -484,10 +496,12 @@ Select **OK** to save your changes.
 
 ## Privacy
 
-- **Input personalization**: Don’t allow the use of cloud-based speech services for Cortana, dictation, or Microsoft Store apps. If you allow these services, Microsoft might collect voice data to improve the service.
-- **Automatic acceptance of the pairing and privacy user consent prompts**: Allow Windows to automatically accept pairing and privacy consent messages when running apps.
-- **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the task switcher.
-- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity.
+These settings use the [privacy policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy), which also lists the supported Windows editions.
+
+- **Input personalization**: **Block** prevents prevents using voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. It's disabled and users can't enable online speech recognition using settings. **Not configured** (default) lets users choose. If you allow these services, Microsoft may collect voice data to improve the service.
+- **Automatic acceptance of the pairing and privacy user consent prompts**: Choose **Allow** so Windows can automatically accept pairing and privacy consent messages when running apps. **Not configured** (default) prevents the automatic acceptance of the pairing and privacy user consent window when opening apps.
+- **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the activity feed. **Not configured** (default) enables this feature so apps can publish end user activities.
+- **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity. **Not configured** (default) enables this feature.
 
 You can configure information that all apps on the device can access. Also, define exceptions on a per-app basis using **Per-app privacy exceptions**.
 
@@ -518,24 +532,35 @@ Select **OK** to save your changes.
 
 ## Projection
 
-- **User input from wireless display receivers**: Blocks user input from wireless display receivers.
-- **Projection to this PC**: Stops other devices from finding the PC for projection.
-- **Require PIN for pairing**: Require a PIN when connecting to a projection device.
+These settings use the [WirelessDisplay policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), which also lists the supported Windows editions.
+
+- **User input from wireless display receivers**: **Block** prevents user input from wireless display receivers. **Not configured** (default) allows a wireless display to send keyboard, mouse, pen, and touch input back to the source device.
+- **Projection to this PC**: **Block** prevents other devices from finding the device for projection. **Not configured** (default) allows the device to be discoverable, and can project to the device above the lock screen.
+- **Require PIN for pairing**: Choose **Require** to always prompt for a PIN when connecting to a projection device. **Not configured** (default) doesn't require a PIN to pair the device to a projection device.
 
 Select **OK** to save your changes.
 
 ## Reporting and telemetry
 
+
+
 - **Share usage data**: Choose the level of diagnostic data that's submitted. Your options:
-  - Security
-  - Basic
-  - Enhanced
-  - Full
+  - **Not configured**: No data is shared.
+  - **Security**: Information that's required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.
+  - **Basic**: Basic device info, including quality-related data, app compatibility, app usage data, and data from the Security level.
+  - **Enhanced**: Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.
+  - **Full**: All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.
+
+  [System/AllowTelemetry CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
+
 - **Send Microsoft Edge browsing data to Microsoft 365 Analytics**: To use this feature, set the **Share usage data** settings to **Enhanced** or **Full**. This feature controls what data Microsoft Edge sends to Microsoft 365 Analytics for enterprise devices with a configured commercial ID. Your options:
   - **Not configured**: Uses the OS default, which may not send any browsing history data
   - **Only send intranet data**: Allows the administrator to send intranet data history
   - **Only send internet data**: Allows the administrator to send internet data history
   - **Send intranet and internet data**: Allows the administrator to send intranet and internet data history
+
+  [Browser/ConfigureTelemetryForMicrosoft365Analytics CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configuretelemetryformicrosoft365analytics)
+
 - **Telemetry proxy server**: Enter the fully qualified domain name (FQDN) or IP address of a proxy server to forward Connected User Experiences and Telemetry requests, using a Secure Sockets Layer (SSL) connection. The format for this setting is *server*:*port*. If the named proxy fails, or if a proxy isn't entered when enabling this policy, the Connected User Experiences and Telemetry data isn't sent, and stays on the local device.
 
   Example formats:
@@ -546,92 +571,158 @@ Select **OK** to save your changes.
   FQDN: www.contoso.com:345
   ```
 
+  [System/TelemetryProxy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-telemetryproxy)
+
 Select **OK** to save your changes.
 
 ## Search
 
-- **Safe Search (mobile only)**: Control how Cortana filters adult content in search results. You can select **Strict**, **Moderate**, or allow the end user to choose their own settings.
-- **Display web results in search**: Block or allow web results to appear in searches made on the device.
+These settings use the [search policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), which also lists the supported Windows editions. 
+
+- **Safe Search (mobile only)**: Control how Cortana filters adult content in search results. Your options:
+  - **User defined**: Allow end users to choose their own settings.
+  - **Strict**: Highest filtering against adult content.
+  - **Moderate**: Moderate filtering against adult content. Valid search results aren't filtered.
+- **Display web results in search**: When set to **Block**, users can't search, and web results aren't shown in Search. **Not configured** (default) allows users to search the web, and the results are shown on the device.
 
 Select **OK** to save your changes.
 
 ## Start
 
-- **Start menu layout**: To customize the start menu on desktop devices, you can upload an XML file that includes your customizations, including the order the apps are listed, and more. Users can't change the Start menu layout you enter.
+These settings use the [start policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start), which also lists the supported Windows editions.  
+
+- **Start menu layout**: Override the default start layout and customize the start menu on desktop devices. Upload an XML file that includes your customizations, including the order the apps are listed, and more. Users can't change the start menu layout you enter.
 - **Pin websites to tiles in Start menu**: Import images from Microsoft Edge that are shown as links in the Windows Start menu for desktop devices.
-- **Unpin apps from task bar**: Choose **Block** to stop the user from unpinning apps from the task bar.
-- **Fast user switching**: Choose **Block** to prevent switching between users that are logged on simultaneously without logging off.
-- **Most used apps**: Choose **Block** to hide the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
-- **Recently added apps**: Choose **Block** to hide recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app.
-- **Start screen mode**: Choose how the start screen is shown. Choose to show it as **Full screen** or **Non-full screen**.
-- **Recently opened items in Jump Lists**: Choose **Block** to hide recent jump lists from being shown on the start menu and taskbar. It also disables the corresponding toggle in the Settings app.
-- **App list**: Choose how the Settings app is shown. Your options: 
-  - Collapse
-  - Collapse and disable the Settings app 
-  - Removes and disables the Settings app
-- **Power button**: Choose **Block** to hide the power button from showing in the start menu.
-- **User Tile**: Choose **Block** to hide the user tile from showing in the start menu.
-  - **Lock**: Choose **Block** to hide the `Lock` option from showing in the user tile in the start menu.
-  - **Sign out**: Choose **Block** to hide the `Sign out` option from showing in the user tile in the start menu.
-- **Shut Down**: Choose **Block** to hide the `Update and shut down` and `Shut down` options from showing in the power button in the start menu.
-- **Sleep**: Choose **Block** to hide the `Sleep` option from showing in the power button in the start menu.
-- **Hibernate**: Choose **Block** to hide the `Hibernate` option from showing in the power button in the start menu.
-- **Switch Account**: Choose **Block** to hide the `Switch account` from showing in the user tile in the start menu.
-- **Restart Options**:  Choose **Block** to hide the `Update and restart` and `Restart` options from showing in the power button in the start menu.
-- **Documents on Start**: Hide or show the Documents folder in the Windows Start menu.
-- **Downloads on Start**: Hide or show the Downloads folder in the Windows Start menu.
-- **File Explorer on Start**: Hide or show the File Explorer app in the Windows Start menu.
-- **HomeGroup on Start**: Hide or show the HomeGroup folder in the Windows Start menu.
-- **Music on Start**: Hide or show the Music folder in the Windows Start menu.
-- **Network on Start**: Hide or show the Network folder in the Windows Start menu.
-- **Personal folder on Start**: Hide or show the Personal folder in the Windows Start menu.
-- **Pictures on Start**: Hide or show the folder for pictures in the Windows Start menu.
-- **Settings on Start**: Hide or show the Settings app in the Windows Start menu.
-- **Videos on Start**: Hide or show the folder for videos in the Windows Start menu.
+- **Unpin apps from task bar**: **Block** prevents users from unpinning apps from the task bar. **Not configured** (default) allows users to unpin apps from the task bar.
+- **Fast user switching**: **Block** prevents switching between users that are logged on simultaneously without logging off. **Not configured** (default) shows the **Switch user** on the user tile.
+- **Most used apps**: **Block** hides the most used apps from showing on the start menu. It also disables the corresponding toggle in the Settings app. **Not configured** (default) shows the most used apps.
+- **Recently added apps**: **Block** hides recently added apps from showing on the start menu. It also disables the corresponding toggle in the Settings app. **Not configured** (default) shows the recently added apps on the start menu.
+- **Start screen mode**: Choose how the start screen is shown. Your options:
+  - **User defined**: Doesn't force the size of Start. Users can set the size.
+  - **Full screen**: Forces a fullscreen size of Start.
+  - **Non-full screen**: Force non-fullscreen size of Start.
+- **Recently opened items in Jump Lists**: **Block** hides recent jump lists from being shown on the start menu and taskbar. It also disables the corresponding toggle in the Settings app. **Not configured** (default) shows recently opened items in the jumplists.
+- **App list**: Choose how the all apps lists are shown. Your options:
+  - **User defined**: No setting is forced. Users choose how the app list is shown on the device.
+  - **Collapse**: Hide all apps list.
+  - **Collapse and disable the Settings app**: Hide all apps list, and disable **Show app list in Start menu** in the Settings app.
+  - **Removes and disables the Settings app**: Hide all apps list, remove all apps button, and disable **Show app list in Start menu** in the Settings app.
+- **Power button**: **Block** hides the power button from showing in the start menu. **Not configured** (default) shows the power button.
+- **User Tile**: **Block** hides the user tile from showing in the start menu. **Not configured** (default) shows the user tile, and also sets the following settings:
+  - **Lock**: **Block** hides the **Lock** option from showing in the user tile in the start menu. **Not configured** (default) shows the **Lock** option.
+  - **Sign out**: **Block** hides the **Sign out** option from showing in the user tile in the start menu. **Not configured** (default) shows the **Sign out** option.
+- **Shut Down**: **Block** hides the **Update and shut down** and **Shut down** options from showing in the power button in the start menu. **Not configured** (default) shows these options.
+- **Sleep**: **Block** hides the **Sleep** option from showing in the power button in the start menu. **Not configured** (default) shows this option.
+- **Hibernate**: **Block** hides the **Hibernate** option from showing in the power button in the start menu. **Not configured** (default) shows this option.
+- **Switch Account**: **Block** hides the **Switch account** from showing in the user tile in the start menu. **Not configured** (default) shows this option.
+- **Restart Options**:  **Block** hides the **Update and restart** and **Restart** options from showing in the power button in the start menu. **Not configured** (default) shows these options.
+- **Documents on Start**: Hide or show the Documents folder in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Downloads on Start**: Hide or show the Downloads folder in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **File Explorer on Start**: Hide or show File Explorer in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **HomeGroup on Start**: Hide or show the HomeGroup shortcut in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Music on Start**: Hide or show the Music folder in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Network on Start**: Hide or show Network in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Personal folder on Start**: Hide or show Personal folder in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Pictures on Start**: Hide or show the folder for pictures in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Settings on Start**: Hide or show the Settings shortcut in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
+- **Videos on Start**: Hide or show the folder for videos in the Windows Start menu. Your options:
+  - **Not configured** (default): No setting is forced. Users choose to show or hide the shortcut.
+  - **Hide**: The shortcut is hidden, and disables the setting in the Settings app.
+  - **Show**: The shortcut is shown, and disables the setting in the Settings app.
 
 Select **OK** to save your changes.
 
 ## Windows Defender Smart Screen
 
-- **SmartScreen for Microsoft Edge**: Enable Microsoft Edge SmartScreen for accessing site and file downloads.
-- **Malicious site access**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from going to the site.
-- **Unverified file download**: Block users from ignoring the Windows Defender SmartScreen Filter warnings and block them from downloading unverified files.
+- **SmartScreen for Microsoft Edge**: **Require** turns off Windows Defender SmartScreen and prevent users from turning it on. **Not configured** (default) turns on SmartScreen. Helps protect users from potential threats and prevent users from turning it off.
+
+  Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software.
+
+  [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
+
+- **Malicious site access**: **Block** prevents users from ignoring the Windows Defender SmartScreen Filter warnings, and blocks them from going to the site. **Not configured** (default) allows users to ignore the warnings, and continue to the site.
+
+  [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
+
+- **Unverified file download**: **Block** prevents users from ignoring the Windows Defender SmartScreen Filter warnings, and block them from downloading unverified files. **Not configured** (default) allows users to ignore the warnings, and continue to download the unverified files.
+
+  [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
 Select **OK** to save your changes.
 
 ## Windows Spotlight
 
-- **Windows Spotlight**: Use this setting to block all Windows Spotlight functionality on Windows 10 devices. If you block this setting, the following settings aren't available:
-  - **Windows Spotlight on lock screen**: Stop Windows Spotlight from displaying information on the device lock screen.
-  - **Third-party suggestions in Windows Spotlight**: Stop Windows Spotlight from suggesting content that is not published by Microsoft.
-  - **Consumer Features**: Lets you block consumer features like Start menu suggestions, and membership notifications.
-  - **Windows Tips**: Lets you block pop-up tips from displaying in Windows.
-  - **Windows Spotlight in action center**: Block Windows Spotlight suggestions like new app or security content from appearing in the Windows Action Center.
-  - **Windows Spotlight personalization**: Stops Windows Spotlight from personalizing results based on the usage of a device.
-  - **Windows welcome experience**: Block the Windows welcome experience that shows the user information about new, or updated features.
+These settings use the [experience policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), which also lists the supported Windows editions.
+
+- **Windows Spotlight**: **Block** turns off Windows spotlight on the lock screen, Windows Tips, Microsoft consumer features, and other related features. If your goal is to minimize network traffic from devices, set this to **Block**. **Not configured** (default) allows Windows spotlight features and may be controlled by end users. When enabled, you can also allow or block the following settings:
+
+  - **Windows Spotlight on lock screen**: **Block** stops Windows Spotlight from showing information on the device lock screen. **Not configured** (default) enables this feature.
+  - **Third-party suggestions in Windows Spotlight**: **Block** stops Windows Spotlight from suggesting content that isn't published by Microsoft. **Not configured** (default) allows app and content suggestions from partner software publishers in Windows spotlight features, like lock screen spotlight, suggested apps in the Start menu, and Windows tips.
+  - **Consumer Features**: **Block** turns off experiences that are typically for consumers only, such as start suggestions, membership notifications, post-out of box experience app installation, and redirect tiles. **Not configured** (default) allows these features.
+  - **Windows Tips**: **Block** disables pop-up Windows Tips. **Not configured** (default) allows the Windows Tips to show.
+  - **Windows Spotlight in action center**: **Block** prevents Windows spotlight notifications from showing in the Action Center. **Not configured** (default) may show notifications in the Action Center that suggest apps or features to help users be more productive on Windows.
+  - **Windows Spotlight personalization**: **Block** prevents Windows from using diagnostic data to provide customized experiences to the user. **Not configured** (default) allows Microsoft to use diagnostic data to provide personalized recommendations, tips, and offers to tailor Windows for the user's needs.
+  - **Windows welcome experience**: **Block** turns off the Windows spotlight Windows welcome experience feature. The Windows welcome experience won't show  when there are updates and changes to Windows and its apps. **Not configured** (default) allows Windows welcome experience that shows the user information about new, or updated features.
 
 Select **OK** to save your changes.
 
 ## Windows Defender Antivirus
 
-- **Real-time monitoring**: Enables real-time scanning for malware, spyware, and other unwanted software.
-- **Behavior monitoring**: Lets Defender check for certain known patterns of suspicious activity on devices.
+These settings use the [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), which also lists the supported Windows editions.
+
+- **Real-time monitoring**: **Enable** prevents real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
+- **Behavior monitoring**: **Enable** prevents Defender check for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
 - **Network Inspection System (NIS)**: NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
 - **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
-- **Scan scripts loaded in Microsoft web browsers**: Lets Defender scan scripts that are used in Internet Explorer.
-- **End user access to Defender**: Controls whether the Windows Defender user interface is hidden from end users. When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- **Signature update interval (in hours)**: Enter the interval at which Defender checks for new signature files.
+- **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
+- **End user access to Defender**: **Block** hides the Windows Defender user interface from end users. All Windows Defender notifications are also suppressed. **Not configured** (default) allows user access to the Windows Defender UI. When this setting is changed, it takes effect the next time the end user's PC is restarted.
+- **Signature update interval (in hours)**: Enter the interval that Defender checks for new signature files, from 0-24. Your options:
+
+  - **Not configured** (default)
+  - **Do not check**: Defender doesn't check for new signature files.
+  - **1-24**: `1` checks every hour, `2` checks every two hours, `24` checks every day, and so on.
 - **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices.
-- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed.
+- **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed. When set to `90`, quarantine items are stored for 90 days on the system, and then removed.
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
-- **Scan archive files**: Allows Defender to scan archived files such as Zip or Cab files.
-- **Scan incoming mail messages**: Allows Defender to scan email messages as they arrive on the device.
-- **Scan removable drives during a full scan**: Lets Defender scan removable drives like USB sticks.
-- **Scan mapped network drives during a full scan**: Lets Defender scan files on mapped network drives.
-  If the files on the drive are read-only, Defender can't remove any malware found in them.
-- **Scan files opened from network folders**: Lets Defender scan files on shared network drives (for example, files accessed from a UNC path). If the files on the drive are read-only, Defender can't remove any malware found in them.
-- **Cloud protection**: Allows or blocks the Microsoft Active Protection Service from receiving information about malware activity from devices that you manage. This information improves the service in the future.
-- **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft.
+- **Scan archive files**: **Enable** prevents Defender from scan archived files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
+- **Scan incoming mail messages**: **Enable** prevents email scanning. **Not configured** (default) allows Defender to scan email messages as they arrive on the device.
+- **Scan removable drives during a full scan**: **Enable** prevents full scans of removable drives. **Not configured** (default) lets Defender scan removable drives, such as USB sticks.
+- **Scan mapped network drives during a full scan**: **Enable** lets Defender scan files on mapped network drives. **Not configured** (default) prevents the full scan. If the files on the drive are read-only, Defender can't remove any malware found in them.
+- **Scan files opened from network folders**: **Not configured** (default) lets Defender scan files on shared network drives, such as files accessed from a UNC path. **Enable** prevents this scanning. If the files on the drive are read-only, Defender can't remove any malware found in them.
+- **Cloud protection**: **Not configured** (default) allows the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. **Enable** blocks this feature.
+- **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft. Your options:
+  - **Not configured**
+  - **Always prompt**
+  - **Prompt before sending personal data**
+  - **Never send data**
+  - **Send all data without prompting**: Data is sent automatically
 - **Time to perform a daily quick scan**: Choose the hour to run a daily quick scan. **Not configured** doesn't run a daily scan. If you want more customization, configure the **Type of system scan to perform** setting.
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
@@ -648,7 +739,7 @@ Select **OK** to save your changes.
   This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:
 
   - To run a daily quick scan, configure the **Time to perform a daily quick scan** setting.
-  - To run a daily quick scan and a full scan every week, then configure the **Time to perform a daily quick scan**, and set **Type of system scan to perform** to a full scan with the day and time.
+  - To run a daily quick scan and a full scan every week, then configure the **Time to perform a daily quick scan**. Set **Type of system scan to perform** to a full scan with the day and time.
   - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
   - To run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
 
@@ -656,10 +747,13 @@ Select **OK** to save your changes.
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
-- **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications from:
-  - **Block**
-  - **Audit**
+- **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications. Your options:
+  - **Not configured** (default): Windows Defender potentially unwanted applications protection is disabled.
+  - **Block**: Windows Defender detects potentially unwanted applications, and detected items are blocked. These items show in history along with other threats.
+  - **Audit**: Windows Defender detects potentially unwanted applications, but takes no action. You can review information about the applications Windows Defender would take action against. For example, search for events created by Windows Defender in the Event Viewer.
+
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
+
 - **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. Your options:
   - **Clean**
   - **Quarantine**
