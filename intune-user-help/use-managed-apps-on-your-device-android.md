@@ -59,7 +59,7 @@ Examples of commonly required or available managed apps within schools and workp
 There are three ways to get managed apps.  
 * Your organization automatically installs apps to your device at time of enrollment.  
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.    
-* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install available apps. For more information about these apps, see the next section, [Available apps](use-managed-apps-on-your-device-android.md#Available-apps).  
+* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install available apps. For more information about these apps, see the next section, [Available apps](#available-apps).  
 
  ### Available apps   
  Your organization can select apps that are appropriate and useful for you at work or school, and make them available to you in Company Portal.  

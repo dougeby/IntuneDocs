@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Device encrypted but apps say otherwise
 
-If Company Portal or the Microsoft Intune app are reporting that your device isn't encrypted, but you're sure that it is, try the steps in this article.  
+If Company Portal or the Microsoft Intune app say that your device isn't encrypted, but you're sure that it is, try the steps in this article.  
 
 ## Add a startup PIN
 
@@ -59,7 +59,7 @@ Some Android devices on version 7.0 and later encrypt data in ways that are inco
 
 ## Known devices that can be updated to fix problem
 
-If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might appear as non compliant until you update:  
+If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might not appear compliant until you update them: 
 
 - Huawei Honor 8
 - Huawei P9

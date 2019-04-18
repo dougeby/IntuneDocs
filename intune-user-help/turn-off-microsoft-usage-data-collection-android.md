@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Turn off Microsoft usage data collection
 
-Microsoft automatically collects certain data about our products and services. The data is used to improve the reliability and performance of our products, such as the Company Portal and Microsoft Intune app. Even though this data is anonymized, some users may not feel comfortable with this collection. Your company support does not have control over the collection of this data, and they cannot change your selection for the setting.  
+Microsoft automatically collects certain data about products and services. The data is used to improve the reliability and performance of apps, like Company Portal and Microsoft Intune. Even though this data is anonymized, some users may not feel comfortable with this collection. Your organization doesn't have control over the collection of this data, and they can't change your setting selection.   
 
 To turn off data collection on your Android device:  
 

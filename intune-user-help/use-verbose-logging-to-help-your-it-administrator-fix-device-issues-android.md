@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Configure logging settings
 
-Configure the logging settings to let the Company Portal app, Microsoft Intune app, and Intune-managed apps record your actions with these apps. If you ever experience a problem in the app, and then report it, your support team will review these logs for more details. 
+Configure your logging settings to let the Company Portal app, Microsoft Intune app, and Intune-managed apps record app actions. If you ever experience a problem in the app, and then report it, your support team will review these logs for more details. 
 
 > [!NOTE]
 > The logs that you send to your support team will include your email address.  
@@ -43,7 +43,7 @@ Verbose logging records every action you take in the Company Portal app. It's en
 2. Tap **Settings**.
 3. Next to **Verbose Logging**, flip the switch to **Off**.
 
-## Configure Microsoft Inune app logging
+## Configure Microsoft Intune app logging
 In the Microsoft Intune app, you can configure the level of log details. The level defaults to **Important**. To adjust logging detail:  
 
 1. Open the Microsoft Intune app.  

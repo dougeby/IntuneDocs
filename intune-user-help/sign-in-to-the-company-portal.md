@@ -42,7 +42,7 @@ The following steps show screenshots from the Company Portal for iOS.
 
 1. Open the app on your device and tap **Sign In**.  
 
-   ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Underneath is the text "Get access to company resources and keep them secure," and the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
+   ![The Company Portal sign in page, with an icon of a person in front of a graphical representation of a website. Below that is the text "Get access to company resources and keep them secure," and the "Sign in" button. A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_001.png)
 
 
 
@@ -56,7 +56,7 @@ The following steps show screenshots from the Company Portal for iOS.
 
 4. The app will verify your credentials. When done, you can access your organization's resources and install available apps.  
 
-   ![After going through the authentication process, the Company Portal app signs in, noting this with a loading bar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
+   ![After going through the authentication process, the Company Portal app signs in, shows a loading bar.](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## Sign in with certificate-based authentication
 
@@ -76,7 +76,7 @@ If your company uses smartcards to access your computers, it's likely that you h
 
 1. Select **Sign in from another device**.  
 
-   ![The Company Portal sign in page prompts user for email adress.  Underneath is the "Next" button and a link to "Sign in from another device." Also includes a link to "Can't access your account?" A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
+   ![The Company Portal sign in page prompts user for email address.  Shows the "Next" button and a link to "Sign in from another device." Also includes a link to "Can't access your account?" A link at the bottom leads to Microsoft Privacy and Cookies information.](/intune-user-help/media/cp_ios_aad_signin_after_1804_005.png)
 
 2. You receive a unique, one-time code to sign in to the Company Portal. Copy the code.
 

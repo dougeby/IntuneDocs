@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Enroll Android device with Company Portal | Microsoft Docs
+title: Enroll Android device with Intune Company Portal | Microsoft Docs
 description: Describes how to enroll an Android device with Intune Company Portal
 keywords:
 author: lenewsad
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Enroll your device with Intune Company Portal  
+# Enroll your device with Company Portal  
 Enroll your personal or corporate-owned Android device to get secure access to company email, apps, and data. Company Portal supports Android devices, including Samsung Knox, running Android 4.4 and later.  
 
 > [!NOTE]
@@ -48,7 +48,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
    ![The Company Portal app for Android welcome screen, which asks the user to sign in with their required work or school account. It also cautions that Microsoft accounts and other personal accounts are not accepted.](./media/and-enroll-0-welcome-screen.png)   
 
-4. If your company support set up company terms and conditions, tap **ACCEPT** to accept the terms. This screen may differ slightly from the image below based on the version of Android you're currently using.
+4. If prompted to accept your organization's terms and conditions, tap **ACCEPT**. This screen might be slightly different from the example screenshot below. 
 
    ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
@@ -80,7 +80,7 @@ During enrollment, you might be asked to choose a category that best describes h
 
    If you see this message, tap **ALLOW**. It is safe to tap ALLOW because **Microsoft never makes or manages your phone calls**! Google controls the message text, and Microsoft cannot change it. When you allow access, all you're doing is letting your device send your device's international mobile station equipment identity (IMEI) number to Intune. The IMEI number is like a serial number that uniquely identifies a mobile device.
 
-   If you deny access, the message will appear again the next time you sign in to the Company Portal, but you can turn off future messages by tapping the **Never ask again** box. If you later decide to allow access, go to **Settings** &gt; **Apps** &gt; **Company Portal** &gt; **Permissions** &gt; **Phone**, and then turn on the permission.
+   If you deny access, the message will appear again the next time you sign in to the Company Portal. To turn off future messages, select **Never ask again**. To reverse the access permission, go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and then turn on the permission.  
 
    - **Allow Company Portal to access your contacts?**
 
@@ -94,13 +94,11 @@ During enrollment, you might be asked to choose a category that best describes h
 
     ![Activate device administrator screen](./media/and-enroll-5-activate.png)
 
-    The device administrator role is one that the Company Portal needs to manage your device. It allows your admin to see certain things - like how many times you've attempted to unlock your screen - and to take some actions.
+    The device administrator role is one that the Company Portal needs to manage your device. It allows your admin to see certain things - like how many times you've attempted to unlock your screen - and to take some actions.    
 
-    The key to remember is that these are actions that are taken in the name of security. Your company support isn't trying to violate your privacy or erase your information for no reason, but wants to make sure that corporate data is kept safe.
+    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) if you have questions specific to your individual organization's use.  
 
-    Microsoft does not control this message, and we understand that its phrasing can seem somewhat drastic. There's not a way for the Company Portal to display just the restrictions and access that are relevant to your organization. All of them are granted at once on this screen. Contact your company support for more information using the contact information in the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) if you have questions specific to your individual organization's use.
-
-11. Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.
+11. Follow the prompts to enter a PIN or password. If you already set up a PIN or password on this device, you won't see this screen or be required to enter a new PIN or password.  
 
     ![Enter PIN or password](./media/and-enroll-6-PIN-native.png)
 
@@ -135,6 +133,6 @@ Before you try to install company apps, go to **Settings** > **Security**, and t
 > [!Note]
 > If your organization is using telecom expense management software, you will have an additional few steps to complete before your device is fully enrolled. Find out more [here](enroll-your-device-with-telecom-expense-management-android.md).
 
-If you get an error while you try to enroll your device in Intune, you can [send enrollment errors to your company support](send-enrollment-errors-to-your-it-admin-android.md).
+If you get an error while you try to enroll your device in Intune, you can [email your company support](send-logs-to-your-it-admin-by-email-android.md).  
 
 Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.
