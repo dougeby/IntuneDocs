@@ -1,6 +1,31 @@
 {
 	"redirections": [
 		{
+			"source_path": "intune-user-help/send-enrollment-errors-to-your-it-admin-android.md", 
+			"redirect_url": "/intune-user-help/send-logs-to-your-it-admin-by-email-android",
+			"redirect_document_id": true  
+		},
+		{
+			"source_path": "intune-user-help/troubleshoot-your-device-android.md", 
+			"redirect_url": "/intune-user-help/check-compliance-on-your-device-android",
+			"redirect_document_id": true  
+		},
+		{
+			"source_path": "intune-user-help/enroll-your-device-in-Intune-android.md", 
+			"redirect_url": "/intune-user-help/enroll-device-android-company-portal",
+			"redirect_document_id": true  
+		},
+		{
+			"source_path": "intune-user-help/what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md", 
+			"redirect_url": "/intune-user-help/why-enroll-android-device",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "intune-user-help/using-your-android-device-with-intune.md", 
+			"redirect_url": "/intune-user-help/why-enroll-android-device",
+			"redirect_document_id": true  
+		},
+		{
 			"source_path": "intune/policy-evaluate.md", 
 			"redirect_url": "/intune/create-compliance-policy#evaluate-how-many-users-are-targeted",
 			"redirect_document_id": true

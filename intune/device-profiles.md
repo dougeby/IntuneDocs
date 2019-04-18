@@ -226,7 +226,15 @@ This feature supports:
 
 This feature supports:
 
-- Android
+- Android (Mobility Extensions)
+
+## OEMConfig
+
+[OEMConfig](android-oem-configuration-overview.md) is a standard that allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way on Android Enterprise devices. With OEMConfig, an OEM creates a schema that defines OEM-specific management features, and embeds it in an app uploaded to Google Play. Intune reads the schema from the app, allows Intune administrators to configure the settings in the schema.
+
+This feature supports:
+
+- Android Enterprise (OEMConfig)
 
 ## Custom profile
 

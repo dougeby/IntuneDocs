@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -63,9 +63,6 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 | **Sync app with native contacts app** |  Select **Disable** to prevent the app from saving data to the native Contacts app on the device. If you Select **Enable**, the app can save data to the native Contacts app on the device. <br><br>When you perform a selective wipe to remove work, or school data from the app, contacts synced directly from the app to the native Contacts app are removed. Any contacts synced from the native address book to another external source can't be wiped. Currently this applies only to the Microsoft Outlook app.   | **Enable**  |
 | **Printing Org data** | Select **Disable** to prevent the app from printing work or school data.   | **Enable**  |
 | **Share web content with policy managed browsers** | Specify how web content (http/https links) are opened from policy-managed applications. Choose from: <ul><li>**Policy managed browsers**: Allow web content to open only in policy-managed browsers.</li><li>**Any app**: Allow web links in any app </li></ul> If you're using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Policy-managed browsers**<br>If you deploy multiple policy-managed browsers, only one will be launched.  The launch order will be Intune Managed Browser and then Microsoft Edge.<p>If a policy-managed browser is required but not installed, your end users will be prompted to install the Intune Managed Browser.<p>If a policy-managed browser is required, iOS Universal Links are managed by the **Allow app to transfer data to other apps** policy setting. <p>**Intune device enrollment**<br>If you are using Intune to manage your devices, see Manage Internet access using managed browser policies with Microsoft Intune. <p>**Policy-managed Microsoft Edge**<br>The Microsoft Edge browser for mobile devices (iOS and Android) supports Intune app protection policies. Users who sign in with their corporate Azure AD accounts in the Microsoft Edge browser application will be protected by Intune. The Microsoft Edge browser integrates the Intune SDK and supports all of its data protection policies, with the exception of preventing:<br><ul><li>**Save-as**: The Microsoft Edge browser does not allow a user to add direct, in-app connections to cloud storage providers (such as OneDrive).</li><li>**Contact sync**: The Microsoft Edge browser does not save to native contact lists.</li></ul><br>**Note**:<br>The Intune SDK cannot determine if a target app is a browser. On iOS devices, no other managed browser apps are allowed.    | **Not configured**  |
-| **Third party keyboards** | Select **Disable** to prevent the use of third-party keyboards in managed applications. <br><br>When this setting is enabled, the user receives a one-time message stating that the use of third-party keyboards is blocked. This message appears the first time a user interacts with organizational data that requires the use of a keyboard. Only the standard iOS keyboard is available while using managed applications, and all other keyboard options are disabled. This setting doesn't affect the use of third-party keyboards in unmanaged applications. | **Enable** |
-
-
 
 > [!NOTE]  
 > None of the data protection settings control the Apple managed open-in feature on iOS devices. To use manage Apple open-in, see [Manage data transfer between iOS apps with Microsoft Intune](data-transfer-between-apps-manage-ios.md).
