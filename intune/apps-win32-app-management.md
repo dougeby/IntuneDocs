@@ -123,8 +123,8 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
     And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. <br>For example:<br>
-    `ApplicationName.exe /quite`<br>
-    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argrument.<p> 
+    `ApplicationName.exe /quiet`<br>
+    In the above command, the `ApplicationName.exe` package supports the `/quiet` command argrument.<p> 
     For the specific agruments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
