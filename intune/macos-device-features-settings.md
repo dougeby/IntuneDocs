@@ -2,12 +2,12 @@
 # required metadata
 
 title: macOS device feature settings in Microsoft Intune - Azure | Microsoft Docs
-description: See all the settings to configure macOS devices for AirPrint in Microsoft Intune. Also see the steps to get the IP address, path, and port settings of an AirPrint server in your network. Use these settings in a device configuration profile to configure macOS devices to use AirPrint servers in your network.
+description: See the settings to configure macOS devices for AirPrint and customize the Login window to show or hide power buttons in Microsoft Intune. See the steps to get the IP address, path, and port settings of an AirPrint server in your network. Use these settings in a device configuration profile to configure macOS device features.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -29,26 +29,70 @@ ms.collection: M365-identity-device-management
 
 # macOS device feature settings in Intune
 
-Intune includes some built-in settings to allow macOS users to print to AirPrint printers in your network. This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator).
+Intune includes some built-in settings to customize features on your macOS devices. This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator).
+
+This feature applies to:
+
+- macOS
+
+As part of your mobile device management (MDM) solution, use these settings to create a banner, choose how users sign in, add an AirPrint server, and more.
+
+These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
 ## Before you begin
 
 [Create a macOS device configuration profile](device-features-configure.md).
 
-## AirPrint settings
+## AirPrint
 
-1. In **Settings**, select **AirPrint**. Enter the following properties of the AirPrint server:
+- **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use host names to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
+- **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
+- **Port** (iOS 11.0 and later): Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port.
+- **TLS** (iOS 11.0 and later): Select **Enable** to secure AirPrint connections with Transport Layer Security (TLS).
 
-    - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
-    - **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
-    - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
-    - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
+**Add** The AirPrint server. You can add many AirPrint servers.
 
-2. Select **Add**. The AirPrint server is added to the list. You can add many AirPrint servers.
+- **Import** (optional): You can also **Import** a comma-separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
 
-    You can also **Import** a comma-separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
+Select **OK** to save your settings.
 
-3. When finished, select **OK** to save your list.
+## Login window
+
+### Window Layout
+
+- **Show additional information in the menu bar**: When the time area on the menu bar is selected, **Allow** shows the host name and macOS version. **Not configured** (default) doesn't show this information on the menu bar.
+- **Banner**: Enter a message that's shown on the sign in screen on the device. For example, enter your organization information, a welcome message, lost and found information, and so on.
+- **Choose login format**: Choose how users sign in to the device. Your options:
+  - **Prompt for username and password** (default): Requires users to enter a username and password.
+  - **List all users, prompt for password**: Requires users to select their username from a user list, and then enter their password. Also configure:
+
+    - **Local users**: **Hide** doesn't show the local user accounts in the user list, which may include the standard and admin accounts. Only the network and system user accounts are shown. **Not configured** (default) shows the local user accounts in the user list.
+    - **Mobile accounts**: **Hide** doesn't show mobile accounts in the user list. **Not configured** (default) shows the mobile accounts in the user list. Some mobile accounts may show as network users.
+    - **Network users**: Select **Show** to list the network users in the user list. **Not configured** (default) doesn't show the network user accounts in the user list.
+    - **Admin users**: **Hide** doesn't show the administrator user accounts in the user list. **Not configured** (default) shows the administrator user accounts in the user list.
+    - **Other users**: Select **Show** to list **Other...** users in the user list. **Not configured** (default) doesn't show the other user accounts in the user list.
+
+### Login screen power settings
+
+- **Shut Down button**: **Hide** doesn't show the shutdown button on the sign in screen. **Not configured** (default) shows the shutdown button.
+- **Restart button**: **Hide** doesn't show the restart button on the sign in screen. **Not configured** (default) shows the restart button.
+- **Sleep button**: **Hide** doesn't show the sleep button on the sign in screen. **Not configured** (default) shows the sleep button.
+
+### Other
+
+- **Disable user login from Console**: **Disable** hides the macOS command line used to sign in. For typical users, **Disable** this setting. **Not configured** (default) allows advanced users to sign in using the macOS command line. To enter console mode, users enter `>console` in the Username field, and must authenticate in the console window.
+
+### Apple Menu
+
+After users sign in to the devices, the following settings impact what they can do.
+
+- **Disable Shut Down**: **Disable** prevents users from selecting the **Shutdown** option after the user signs in. **Not configured** (default) allows users to select the **Shutdown** menu item on the device.
+- **Disable Restart**: **Disable** prevents users from selecting the **Restart** option after the user signs in. **Not configured** (default) allows users to select the **Restart** menu item on the device.
+- **Disable Power Off**: **Disable** prevents users from selecting the **Power off** option after the user signs in. **Not configured** (default) allows users to select the **Power off** menu item on the device.
+- **Disable Log Out** (macOS 10.13 and later): **Disable** prevents users from selecting the **Log out** option after the user signs in. **Not configured** (default) allows users to select the **Log out** menu item on the device.
+- **Disable Lock Screen** (macOS 10.13 and later): **Disable** prevents users from selecting the **Lock screen** option after the user signs in. **Not configured** (default) allows users to select the **Lock screen** menu item on the device.
+
+Select **OK** to save your settings.
 
 ## Get the IP address and path
 
@@ -68,4 +112,4 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 ## Next steps
 
 - View all the settings for [iOS](ios-device-features-settings.md) devices.
-- Assign this profile to groups; see [assign device profiles](device-profile-assign.md).
+- [Assign this profile](device-profile-assign.md) to your groups and [monitor its status](device-profile-monitor.md).

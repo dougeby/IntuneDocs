@@ -8,10 +8,12 @@
 
 ## [Sign in to the Company Portal](sign-in-to-the-company-portal.md)
 
-## [Using your Android device](using-your-android-device-with-intune.md)
-### [What happens when you enroll an Android device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Enroll your device](enroll-your-device-in-Intune-android.md)
-#### [Enroll your device with Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Using your Android device
+### [Why enroll your Android device](why-enroll-android-device.md)
+### Enroll your device
+#### [Enroll your Android device](enroll-device-android-company-portal.md)  
+#### [Enroll with Android work profile](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Enroll with Microsoft Intune app](enroll-device-android-microsoft-intune-app.md)
 ### [Use managed apps on your device](use-managed-apps-on-your-device-android.md)
 ### [Encrypt your device](encrypt-your-device-android.md)
 ### [Set your PIN or password](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [Unenroll your device](unenroll-your-device-from-intune-android.md)
 #### [Unenroll your device if you declined Terms of Use](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Fixing common issues with Android](troubleshoot-your-device-android.md)
+### Fix common issues with Android
 #### [Checking device compliance](check-compliance-on-your-device-android.md)
 #### [Fixing common issues with Samsung Knox](samsung-knox-errors-android.md)
 #### [Update your device to install Outlook](update-device-outlook-android.md)
 
-#### Using logs to help fix issues
+#### Logging
 ##### [Turn on verbose logging](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [Send logs using email](send-logs-to-your-it-admin-by-email-android.md)
+##### [Upload and email logs](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Send logs using a USB cable](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Submit enrollment errors](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Send errors to Microsoft](send-logs-to-microsoft-android.md)
 
 ### Operating system questions

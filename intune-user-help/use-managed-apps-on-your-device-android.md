@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -56,25 +56,25 @@ Examples of commonly required or available managed apps within schools and workp
 -   Microsoft Word, Excel, and PowerPoint
 
 ## How do I get managed apps?
-First, you'll need to install the Company Portal and, if required, get your device managed. After that, there are three ways you can get managed apps.
-* Your organization automatically installs apps to your device at time of enrollment. To learn about enrollment, see [Enroll your device in Intune](enroll-your-device-in-Intune-android.md).
-* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install these apps. 
-* You install an app from the Google Play store, and then sign in to the app with your work or school account.  
+There are three ways to get managed apps.  
+* Your organization automatically installs apps to your device at time of enrollment.  
+* You install an app from the Google Play store, and then sign in to the app with your work or school account.    
+* Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install available apps. For more information about these apps, see the next section, [Available apps](#available-apps).  
 
- ## Available apps   
- Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.   
+ ### Available apps   
+ Your organization can select apps that are appropriate and useful for you at work or school, and make them available to you in Company Portal.  
 
  Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Android, you'll have access to Android apps, but not iOS apps.   
 
  ## Request an app for work or school   
- If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in the Company Portal app's **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in either app's **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## What can my company support manage in an app?  
 The following list describes the settings your company support can manage within an app. These settings affect how you view, access, and otherwise use work or school data on your device:
 
 * Access to specific websites  
 
-* Access to internal company websites using Edge and the Azure Active Directory proxy  
+* Access to internal company websites using Microsoft Edge and the Azure Active Directory proxy  
 
 * Minimum version of app, version of OS
 
