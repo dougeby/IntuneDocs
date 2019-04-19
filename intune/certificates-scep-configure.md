@@ -42,7 +42,7 @@ Before you proceed, ensure you've [created and deployed a trusted certificate pr
 The following on-premises infrastructure must run on servers that are domain-joined to your Active Directory, with the exception of the Web Application Proxy Server.  
 - **Certification Authority** – Use a Microsoft Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 with service pack 1, or later. The version of Windows Server you use must remain in support by Microsoft. A Standalone CA is not supported.  For more information, see [Install the Certification Authority]( http://technet.microsoft.com/library/jj125375.aspx). If your CA runs Windows Server 2008 R2 SP1, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).  
 
-- **NDES service** – You must configure a Network Device Enrollment Service (NDES) server role on Windows Server 2012 R2 or later. In a later section of this article, we guide you through [installing NDES ](#set-up-ndes).  
+- **NDES service** – You must configure a Network Device Enrollment Service (NDES) server role on Windows Server 2012 R2 or later. In a later section of this article, we guide you through [installing NDES](#set-up-ndes).  
 
   - The server that hosts NDES must be domain-joined and in the same forest as your Enterprise CA.  
   - You can't use NDES that’s installed on the server that hosts the Enterprise CA.  
@@ -321,7 +321,7 @@ To validate that the service is running, open a browser, and enter the following
 > [!NOTE]  
 > The Intune Certificate Connector supports TLS 1.2. If the server that hosts the connector supports TLS 1.2, then TLS 1.2 is used. If the server doesn't support TLS 1.2, then TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
 
-## NExt steps
+## Next steps
 
 [Create a SCEP certificate profile](certificates-profile-scep.md)  
 [Troubleshoot issues for the Intune certificate connector](troubleshoot-certificate-connector-events.md)

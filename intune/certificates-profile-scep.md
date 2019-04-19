@@ -137,13 +137,13 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
         - **{{FullyQualifiedDomainName}}**
         - **{{MEID}}**
 
-        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as **{{FullyQualifiedDomainName}}User1@Contoso.com.**  
+        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as **{{FullyQualifiedDomainName}}User1@Contoso.com**.  
 
-        > [!IMPORTANT]
-        > - When using a device certificate variable, enclose the variable name in curly brackets { }.
-        > - Don’t use curly brackets **{ }**, pipe symbols **|**, and semicolons **;**, in the text that follows the variable. 
-        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.
-        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install
+        > [!IMPORTANT]  
+        > - When using a device certificate variable, enclose the variable name in curly brackets { }.  
+        > - Don’t use curly brackets **{ }**, pipe symbols **|**, and semicolons **;**, in the text that follows the variable.  
+        > - Device properties used in the *subject* or *SAN* of a device certificate, like **IMEI**, **SerialNumber**, and **FullyQualifiedDomainName**, are properties that could be spoofed by a person with access to the device.  
+        > - A device must support all variables specified in a certificate profile for that profile to install on that device.  For example, if **{{IMEI}}** is used in the subject name of a SCEP profile and is assigned to a device that doesn’t have an IMEI number, the profile fails to install.
 
    - **Certificate validity period**:  
      You can enter a value that is lower than the validity period in the certificate template, but not higher. If you configured the certificate template to [support a custom value that can be set from within the Intune console](certificates-scep-configure.md#modify-the-validity-period-of-the-certificate-template), use this setting to specify the amount of remaining time before the certificate expires.  
@@ -151,7 +151,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
      For example, if the certificate validity period in the certificate template is two years, you can enter a value of one year, but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate.
 
    - **Key storage provider (KSP)**:  
-     *(Applies to:  Windows 8.1 and later, and Windows 10 and later.)*  
+     *(Applies to:  Windows 8.1 and later, and Windows 10 and later)*  
      
      Specify where the key to the certificate is stored. Choose from the following values:  
      - **Enroll to Trusted Platform Module (TPM) KSP if present, otherwise Software KSP**
@@ -204,5 +204,6 @@ Assign SCEP certificate profiles the same way you [deploy device profiles](devic
 > [!NOTE]
 > For iOS, expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
 
-## Next steps
-- [Assign profiles](device-profile-assign.md)  
+## Next steps  
+
+[Assign profiles](device-profile-assign.md)  
