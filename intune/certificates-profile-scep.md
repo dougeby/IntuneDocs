@@ -137,7 +137,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
         - **{{FullyQualifiedDomainName}}**
         - **{{MEID}}**
 
-        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as **{{FullyQualifiedDomainName}}User1@Contoso.com**.  
+        To specify a value for an attribute, include the variable name with curly brackets, followed by the text for that variable. For example, a value for the DNS attribute can be added **{{AzureADDeviceId}}.domain.com** where *.domain.com* is the text. For a user named *User1* an Email address might appear as __{{FullyQualifiedDomainName}}User1@Contoso.com__.  
 
         > [!IMPORTANT]  
         > - When using a device certificate variable, enclose the variable name in curly brackets { }.  
