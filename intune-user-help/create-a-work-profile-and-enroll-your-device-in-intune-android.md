@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Enroll your device using a work profile | Microsoft Docs
-description: How to make Android devices safer with work profiles.
+title: Enroll device with Android work profile | Microsoft Docs
+description: How create a work profile and enroll device
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -29,13 +29,11 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Create a work profile and enroll your device in Intune
+# Enroll device with Android work profile
 
-Enrolling your Android device gives you access to company email, apps, and other work data. As part of enrollment, you set up a work profile, which separates the personal data on your device from your work data.
+Enroll your personal Android device to get access to company email, apps, and other work data. During enrollment, you'll set up an Android work profile. This profile separates the personal data on your device from your work data. Your company support only manages the work profile, which consists of work files and data. Your company support can't manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md). 
 
-Your company support can manage only the work profile, which contains your work data. Your company support cannot manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
-
-To create a work profile:
+## Create work profile and enroll device
 
 1.  On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account. If you haven't installed the free app yet, download and install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
@@ -86,5 +84,7 @@ To create a work profile:
 	You can now get company apps from the Play Store for Work.
 
 	![Play Store for Work apps page](./media/andr-afw-tap-work-play-store-icon.png)
+
+## Next steps  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

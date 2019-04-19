@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -34,9 +34,10 @@ To use Win32 app management, be sure you meet the following criteria:
 
 - Windows 10 version 1607 or later (Enterprise, Pro, and Education versions)
 - Windows 10 client needs to be: 
-    - joined to Azure Active Directory (AAD) or [hybrid Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
-    - enrolled in Intune (MDM-managed)
-- Windows application size is capped at 8 GB per app
+    - Devices must be joined to Azure AD and auto-enrolled. The Intune management extension supports Azure AD joined, hybrid domain joined, group policy enrolled devices are supported. 
+    > [!NOTE]
+    > For the group policy enrolled scenario - The end user uses the local user account to AAD join their Windows 10 device. The user must log onto the device using their AAD user account and enroll into Intune. Intune will install the Intune Management extension on the device if a PowerShell script or a Win32 app is targeted to the user or device.
+- Windows application size is capped at 8 GB per app.
 
 ## Prepare the Win32 app content for upload
 
@@ -47,7 +48,7 @@ Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?lin
 
 You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub as a zip file. The zipped file contains a folder named **Microsoft-Win32-Content-Prep-Tool-master**. The folder contains the prep tool, the license, a readme, and the release notes. 
 
-If you run `IntuneWinAppUtil.exe` from the command window without parameters, the tool will guide you to input the required parameters step by step. Or, you can add the paramters to the command based on the following available command-line parameters.
+If you run `IntuneWinAppUtil.exe` from the command window without parameters, the tool will guide you to input the required parameters step by step. Or, you can add the parameters to the command based on the following available command-line parameters.
 
 ### Available command-line parameters 
 
@@ -66,7 +67,7 @@ If you run `IntuneWinAppUtil.exe` from the command window without parameters, th
 |    `IntuneWinAppUtil -h`    |    This command will show usage information for the tool.    |
 |    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    This command will generate the `.intunewin` file from the specified source folder and setup file. For the MSI setup file, this tool will retrieve required information for Intune. If `-q` is specified, the command will run in quiet mode, and if the output file already exists, it will be overwritten. Also, if the output folder does not exist, it will be created automatically.    |
 
-When generating an *.intunewin* file, put any files you need to reference into a sub-folder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
+When generating an *.intunewin* file, put any files you need to reference into a subfolder of the setup folder. Then, use a relative path to reference the specific file you need. For example:
 
 **Setup source folder:** *c:\testapp\v1.0*<br>
 **License file:** *c:\testapp\v1.0\licenses\license.txt*
@@ -122,10 +123,10 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
-    And, if the application is `ApplicationName.exe`, the command would be the applicaiton name followed by the command argruments (switches) supported by the package. <br>For example:<br>
-    `ApplicationName.exe /quiet`<br>
-    In the above command, the `ApplicationName.exe` package supports the `/quiet` command argrument.<p> 
-    For the specific agruments supported by the application package, contact your application vendor.
+    And, if the application is `ApplicationName.exe`, the command would be the application name followed by the command arguments (switches) supported by the package. <br>For example:<br>
+    `ApplicationName.exe /quite`<br>
+    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argument.<p> 
+    For the specific arguments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
 
@@ -142,14 +143,32 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 ### Step 5: Configure app requirements
 
 1.	In the **Add app** pane, select **Requirements** to configure the requirements that devices must meet before the app is installed.
-2.	In the **Requirements** pane, configure the following information. Some of the values in this pane might be automatically filled in.
+2.	In the **Add a Requirement rule** pane, configure the following information. Some of the values in this pane might be automatically filled in.
     - **Operating system architecture**: Choose the architectures need to install the app.
     - **Minimum operating system**: Select the minimum operating system needed to install the app.
     - **Disk space required (MB)**: Optionally, add the free disk space needed on the system drive to install the app.
     - **Physical memory required (MB)**: Optionally, add the physical memory (RAM) required to install the app.
     - **Minimum number of logical processors required**: Optionally, add the minimum number of logical processors required to install the app.
     - **Minimum CPU speed required (MHz)**: Optionally, add the minimum CPU speed required to install the app.
-3.	When you're finished, select **OK**.
+
+3. Click **Add** to display the **Add a Requirement rule** blade and configure additional requirement rules. Select the **Requirement type** to choose the type of rule that you will use to determine how a requirement is validated. Requirement rules can be based on file system information, registry values, or PowerShell scripts. 
+    - **File**: When you choose **File** as the **Requirement type**, the requirement rule must detect a file or folder, date, version, or size. 
+        - **Path** – The full path of the folder containing the file or folder to detect.
+        - **File or folder** - The file or folder to detect.
+        - **Property** – Select the type of rule used to validate the presence of the app.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to expand any path environment variables in the 32-bit context on 64-bit clients. Select **No** (default) to expand any path variables in the 64-bit context on 64-bit clients. 32-bit clients will always use the 32-bit context.
+    - **Registry**: When you choose **Registry** as the **Requirement type**, the requirement rule must detect a registry setting based on value, string, integer, or version.
+        - **Key path** – The full path of the registry entry containing the value to detect.
+        - **Value name** - The name of the registry value to detect. If this value is empty, the detection will happen on the key. The (default) value of a key will be used as detection value if the detection method is other than file or folder existence.
+        - **Registry key requirement** – Select the type of registry key comparison used to determine how the requirement rule is validated.
+        - **Associated with a 32-bit app on 64-bit clients** - Select **Yes** to search the 32-bit registry on 64-bit clients. Select **No** (default) search the 64-bit registry on 64-bit clients. 32-bit clients will always search the 32-bit registry.
+    - **Script**: Choose **Script** as the **Requirement type**, when you cannot create a requirement rule based on file, registry, or any other method available to you in the Intune console.
+        - **Script file** – For PowerShell script based requirement rule, if exist code is 0, we will detect the STDOUT in more detail. For example, we can detect STDOUT as an integer that has a value of 1.
+        - **Run script as 32-bit process on 64-bit clients** - Select **Yes** to run the script in a 32-bit process on 64-bit clients. Select **No** (default) to run the script in a 64-bit process on 64-bit clients. 32-bit clients run the script in a 32-bit process.
+        - **Run this script using the logged on credentials**: Select **Yes** to run the script using the signed in device credentials**.
+        - **Enforce script signature check** - Select **Yes** to verify that the script is signed by a trusted publisher, which will allow the script to run with no warnings or prompts displayed. The script will run unblocked. Select **No** (default) to run the script with end-user confirmation without signature verification.
+        - **Select output data type**: Select the data type used when determining a requirement rule match.
+4.	When you're finished, select **OK**.
 
 ### Step 6: Configure app detection rules
 
@@ -242,7 +261,34 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 7.	In the **Add group** pane, select **OK**.
 8.	In the app **Assignments** pane, select **Save**.
 
-At this point you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+
+## App dependencies
+
+App dependencies are applications that must be installed before your Win32 app can be installed. You can require that other apps are installed as dependencies. Specifically, the device must install the dependent app(s) before it installs the Win32 app. ​There is a maximum of 100 dependencies, which includes the dependencies of any included dependencies, as well as the app itself. You can add Win32 app dependencies only after your Win32 app has been added and uploaded to Intune. Once your Win32 app has been added, you'll see the **Dependencies** option on the blade for your Win32 app. 
+
+When adding an app dependency, you can search based on the app name and publisher. Additionally, you can sort your added dependencies based on app name and publisher. Previously added app dependencies cannot be selected in the added app dependency list. 
+
+You can choose whether or not to install each dependent app automatically. By default, the **Automatically install** option is set to **Yes** for each dependency. By automatically installing a dependent app, even if the dependent app is not targeted to the user or device, Intune will install the app on the device to satisfy the dependency before installing your Win32 app.​ It's important to note that a dependency can have recursive sub-dependencies, and each sub-dependency will be installed before installing the main dependency. Additionally, installation of dependencies does not follow an install order at a given dependency level.
+
+To add an app dependency to your Win32 app, use the following steps:
+
+1. In Intune, select **Client apps** > **Apps** to view your list of added client apps. 
+2. Select an added **Windows app (Win32)** app. 
+3. Select **Dependencies** to add the dependent app(s) that must be installed before the Win32 app can be installed. 
+4. Click **Add** to add an app dependency.
+5. Once you have added the dependent app(s), click **Select**.
+6. Choose whether to automatically install the dependent app by selecting **Yes** or **No** under **Automatically Install**.
+7. Click **Save**.
+
+The end user will see Windows Toast Notifications indicating that dependent apps are being downloaded and installed as part of the Win32 app installation process. Additionally, when a dependent app is not installed, the end user will commonly see one of the following notifications:
+- 1 or more dependent apps failed to install​
+- 1 or more dependent app requirements not met​
+- 1 or more dependent apps are pending a device reboot
+
+If you choose not to **Automatically install** a dependency, the Win32 app installation will not be attempted. Additionally, app reporting will show that the dependency was flagged as `failed` and also provide a failure reason. You can view the dependency installation failure by clicking on a failure (or warning) provided in the Win 32 app [installation details](troubleshoot-app-install.md#win32-app-installation-troubleshooting).​ 
+
+Each dependency will adhere to Intune Win32 app retry logic (try to install 3 times after waiting for 5 minutes) and the global re-evaluation schedule.​ Also, dependencies are only applicable at the time of installing the Win32 app on the device. Dependencies are not applicable for uninstalling a Win32 app.​ To delete a dependency, you must click on the ellipses (three dots) to the left of the dependent app located at the end of the row of the dependency list.​ 
 
 ## Delivery Optimization
 
@@ -259,7 +305,7 @@ The following image notifies the end user that app changes are being made to the
 ![Screenshot notifying the user that app changes are being made](./media/apps-win32-app-09.png)    
 
 ## Toast notifications for Win32 apps 
-If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignemnts** > **Include Groups**. 
+If needed, you can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
 
 > [!NOTE]
 > Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices. Admins can leverage assignment exclusion to not offer Win32 apps to BYOD Devices.

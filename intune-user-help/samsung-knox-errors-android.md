@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Fix common issues with your managed Samsung Knox device | Microsoft Docs
-description: Find out ways to solve common issues with your Samsung Knox device.
+title: Fix common problems with managed Samsung Knox devices | Microsoft Docs
+description: Troubleshoot your Samsung Knox device.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,9 +30,9 @@ ms.collection: M365-identity-device-management
 
 # Fix common issues with your Samsung Knox device
 
-Sometimes issues can occur with your Samsung Knox device that may be able to be fixed through troubleshooting. Some common issues that we've seen that you can first try to fix yourself are listed below. For more complex problems, we recommend that you [contact the Android Company Portal team](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
+Troubleshoot common problems associated with managed Samsung Knox devices. To report a problem that isn't listed here, you can [send your diagnostic logs](send-logs-to-microsoft-android.md) through the Company Portal or Microsoft Intune app. Microsoft developers will look at the app-specific logs to diagnose the problem and find a solution.    
 
-## Network activation error
+## Network activation error  
 
 The message you see might look like:
 
@@ -48,12 +48,12 @@ The message you see might look like:
 |---|---|
 |**Samsung Knox activation error** - The Samsung KNOX license could not be activated. It might be because power saving is turned on. Turn off power saving mode in device settings and try again.|Your device can't get activated for reasons that Microsoft needs to investigate. Send us feedback and we'll look for ways to fix it.|
 
-## Power saving mode error
+## Power-saving mode error
 
 The message you see might look like:
 
 |Error message|What you should try|
 |---|---|
-|**Samsung Knox activation error** - The Samsung KNOX license could not be activated. It might be because power saving is turned on. Turn off power saving mode in device settings and try again. |Your device may not have the right power settings to work with your company resources. Find out more about [setting up power saving mode](power-saving-mode-android.md).|
+|**Samsung Knox activation error** - The Samsung KNOX license could not be activated. It might be because power-saving mode is turned on. Turn off power-saving mode in device settings and try again. |Your device may not have the right power settings to work with your company resources. To learn more about this setting see [power saving mode](power-saving-mode-android.md).|  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
