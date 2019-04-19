@@ -175,6 +175,12 @@ As part of device compliance policies, we’ve added a new action for noncomplia
 #### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
 When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. For more information, see [Change log for the Intune Data Warehouse API](reports-changelog.md#1903-part-2).
 
+### Monitor and troubleshoot
+
+#### Monitor Security Baseline status (public preview) <!-- 3082047 --> 
+When you monitor the *Device status* for your security baselines, the view will organize the status by the baseline categories, like *Above lock*, *BitLocker*, and *Browser*. All available baseline categories will be represented. For each category, you'll see how many devices do not match a specific baseline category, are misconfigured, or are not applicable.
+
+
 ### Role-based access control
 
 #### Scope tags for Apple VPP tokens <!--2371886  -->
