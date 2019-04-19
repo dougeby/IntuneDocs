@@ -72,9 +72,6 @@ You create Windows 10 device configuration profiles (**Device configuration** > 
 Applies to: 
 - Windows 10 and later
 
-### Monitor Security Baseline status (public preview) <!-- 3082047 --> 
-When you monitor the *Device status* for your security baselines, the view will organize the status by the baseline categories, like *Above lock*, *BitLocker*, and *Browser*. All available baseline categories will be represented. For each category, you'll see how many devices do not match a specific baseline category, are misconfigured, or are not applicable.
-
 ###  Intune security tasks for Defender ATP (In public preview) <!-- 3208597 -->
 Coming as a public preview, Intune will soon add security tasks for the newly announced Microsoft Defender Threat & Vulnerability Management.  With this integration, security operations admins in Windows Defender ATP (WDATP) can more effectively communicate the recommended remediations for emerging threats to Intune administrators. The addition of security tasks adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations.
 
