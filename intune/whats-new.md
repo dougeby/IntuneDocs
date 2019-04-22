@@ -160,7 +160,7 @@ We've updated the default timeout message users see when the Enrollment Status P
 ### Device management
 
 #### Retire noncompliant devices  <!-- 1827291   -->
-As part of device compliance policies, we’ve added a new action for noncompliance: [Retire noncompliant devices](actions-for-noncompliance.md#add-actions-for-noncompliance). Use this action to automatically wipe company data from a noncompliant device while also removing that device from being managed by Intune.
+This feature has been delayed and will come in a future release.
 
 
 ### Monitor and troubleshoot
