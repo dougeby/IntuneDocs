@@ -34,7 +34,9 @@ ms.collection: M365-identity-device-management
 
 As part of your mobile device management (MDM) solution, you may want to upgrade your Windows 10 devices. For example, you want to upgrade your Windows 10 Professional devices to Windows 10 Enterprise. Or, you want the device to switch out of S mode.
 
-[Windows 10 S mode](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (opens another Microsoft web site) is designed for security and performance. If your devices only run apps from the Microsoft Store, then you can use S mode to help keep your devices secure. If your devices use apps that aren't available in the Microsoft Store, then you switch out of S mode. Switching out of S mode is one way. And once you switch out of S mode, you can't go back to Windows 10 S mode.
+[Windows 10 S mode](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) (opens another Microsoft web site) is designed for security and performance. You can use Intune to switch out of S mode. Switching out of S mode is one way. And once you switch out of S mode, you can't go back to Windows 10 S mode.
+
+See some [commonly-asked questions](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq) about S mode.
 
 This feature applies to:
 
@@ -123,5 +125,3 @@ The profile is created and shown in the list. Be sure to [assign the profile](de
 After the profile is created, it's ready to be assigned. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 View the upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md) and [Windows Holographic for Business](holographic-upgrade.md) devices.
-
-See some [commonly-asked questions](https://support.microsoft.com/help/4020089/windows-10-in-s-mode-faq) about S mode.
