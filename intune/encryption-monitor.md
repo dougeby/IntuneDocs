@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -46,6 +46,11 @@ The report displays the **Device name** for your Windows 10 devices and high-lev
 - **OS version** – Version of Windows.  
 - **TPM version** – The version of the Trusted Platform Module (TPM) chip on the device.  
 - **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM.  
+
+  To evaluate *Encryption Readiness* Intune relies on the parameters of the OS, OS Version, OS SKU (for some SKUs), and the TPM version.  
+  
+ 
+
 - **Encryption status** – Whether the OS drive is encrypted.  
 
 
