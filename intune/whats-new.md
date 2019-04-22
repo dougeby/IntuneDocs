@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 04/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -117,13 +117,6 @@ On Android Enterprise devices, you can create a device restriction profile to al
 This update includes new password settings, allows full access to apps in Google Play Store for fully managed devices, and more. To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md). 
 
 Applies to: Android Enterprise fully managed devices
-
-#### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671  -->
-Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
-
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
-
-Applies to: Windows 10 and later
 
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
