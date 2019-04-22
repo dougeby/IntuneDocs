@@ -52,7 +52,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 ## Week of April 22, 2019
 
-### Use Compliance Manager to create FFIEC and GDPR assessments for Microsoft Intune<!-- 4404750 wnready -->
+### Use Compliance Manager to create assessments for Microsoft Intune<!-- 4404750 -->
 
 [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) (opens another Microsoft site) is a workflow-based risk assessment tool in the Microsoft Service Trust Portal. It enables you to track, assign, and verify your organization’s regulatory compliance activities related to Microsoft services. You can create your own compliance assessment with Office 365, Azure, Dynamics, Professional Services, and Intune. Intune has two assessments available - FFIEC and GDPR.
 
@@ -68,7 +68,7 @@ In the following example, you can see the breakdown for FFIEC controls. Microsof
 
 In the following example, you see the breakdown for GDPR controls. Microsoft covers 49 controls. You're responsible for the remaining 66 controls.
 
-![See a sample Intune assessment for GDPR, including the customer actions and Microsoft actions](./media/intune-gdpr-assessment-status.png)
+![See a sample Intune assessment for GDPR, including the customer actions and Microsoft actions](./media/intune-assessment-status.png)
 
 ## Week of April 15, 2019
 
