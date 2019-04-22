@@ -46,7 +46,7 @@ The report displays the **Device name** for your Windows 10 devices and high-lev
 - **OS version** – Version of Windows.  
 - **TPM version** – The version of the Trusted Platform Module (TPM) chip on the device.  
 - **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. Devices can be identified as:
-  - **Ready**: The device can be encrypted by using MDM policy, which requires the device has a TPM and meets the following OS and SKU requirements:
+  - **Ready**: The device can be encrypted by using MDM policy, which requires the device has a TPM and meets the following Windows 10 version and SKU requirements:
     - Version 1703 or later, of Business, Enterprise, Education
     - Version 1809 or later, of Pro  
   
