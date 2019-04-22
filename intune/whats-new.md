@@ -138,6 +138,10 @@ This update includes new password settings, allows full access to apps in Google
 
 Applies to: Android Enterprise fully managed devices
 
+#### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
+
+This feature is delayed, and should be included in a future release.
+
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
 
