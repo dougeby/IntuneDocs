@@ -50,7 +50,7 @@ You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.co
 
 ### Process flow to create .intunewin file
 
-    ![Process flow to create a .intunewin file](./media/prepare-win32-app.svg)
+   ![Process flow to create a .intunewin file](./media/prepare-win32-app.svg)
 
 ### Run the Microsoft Win32 Content Prep Tool
 
@@ -86,7 +86,7 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
 
 ### Process flow to add a Win32 app to Intune
 
-    ![Process add a Win32 app to Intune](./media/add-win32-app.svg)
+   ![Process flow to add a Win32 app to Intune](./media/add-win32-app.svg)
 
 ### Add a Win32 app to Intune
 
