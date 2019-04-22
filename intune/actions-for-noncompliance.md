@@ -44,15 +44,6 @@ There are several types of actions:
 
 - **Mark device non-compliant**: Create a schedule (in number of days) after the device is marked not compliant. You can configure the action to take effect immediately, or give the user a grace period to be compliant.
 
-- **Retire the noncompliant device**: This action removes all company data off the device and removes the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of 30 days. The following platforms support this action:
-   - Android
-   - iOS
-   - macOS
-   - Windows 10 Mobile
-   - Windows Phone 8.1 and later  
-
-  Learn more about [retiring devices](devices-wipe.md#retire).
-
 This article shows you how to:
 
 - Create a message notification template
@@ -120,7 +111,7 @@ You can also add another action when you create a compliance policy, or update a
     - **Retire the noncompliant device**: When the device is noncompliant, remove all company data off the device and remove the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of **30** days.  
 
     
-5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. (*Retire the noncompliant device* supports a minimum of 30 days.) After this grace period, you can enforce a conditional access policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
+5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a conditional access policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
 
 6. When finished, select **Add** > **OK** to save your changes.
 
