@@ -312,7 +312,6 @@ Read only access to all Intune data:
 - Security Administrator
 - Security Operator
 - Security Reader
-- Global Reader
 
 For more information, see [Role-based access control](role-based-access-control.md).
 

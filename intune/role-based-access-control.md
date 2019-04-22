@@ -67,7 +67,6 @@ You can create your own roles with custom permissions. For more information abou
 | Security Administrator | Read only | Read only |
 | Security Operator | Read only | Read only |
 | Security Reader | Read only | Read only |
-| Global Reader | Read only | Read only |
 | Compliance Administrator | None | Read only |
 | Compliance Data Administrator | None | Read only |
 
