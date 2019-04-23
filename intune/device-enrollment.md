@@ -74,7 +74,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 | **Device** | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Personal devices**|**[BYOD](#bring-your-own-device)** | No | Yes | No | [More information](~/intune-user-help/enroll-device-android-company-portal.md)|
+|**Personal devices**|**[BYOD](#bring-your-own-device)** | No | Yes | No | [More information](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
 |**Corporate-owned devices**|**[DEM](#device-enrollment-manager)**| No | No | No |[More information](./device-enrollment-manager-enroll.md)|
 |**Devices with pre-declared IMEI or serial number**|**via Company Portal**| No | Yes | No | [More information](./corporate-identifiers-add.md)|
 |**Zebra devices**|**[BYOD](#bring-your-own-device)** or **[DEM](#device-enrollment-manager)**| No | Yes if BYOD, No if DEM | No | [More information](./android-zebra-mx-overview.md)|
