@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -56,6 +56,21 @@ These settings are added to a device configuration profile in Intune, and then a
 
 Select **OK** to save your settings.
 
+### Get the IP address and path
+
+To add AirPrinter servers, you need the IP address of the printer, the resource path, and the port. The following steps show you how to get this information.
+
+1. On a Mac that’s connected to the same local network (subnet) as the AirPrint printers, open **Terminal** (from **/Applications/Utilities**).
+2. In the Terminal app, type `ippfind`, and select enter.
+
+    Note the printer information. For example, it may return something similar to `ipp://myprinter.local.:631/ipp/port1`. The first part is the name of the printer. The last part (`ipp/port1`) is the resource path.
+
+3. In the Terminal, type `ping myprinter.local`, and select enter.
+
+   Note the IP address. For example, it may return something similar to `PING myprinter.local (10.50.25.21)`.
+
+4. Use the IP address and resource path values. In this example, the IP address is `10.50.25.21`, and the resource path is `/ipp/port1`.
+
 ## Login window
 
 ### Window Layout
@@ -94,22 +109,7 @@ After users sign in to the devices, the following settings impact what they can 
 
 Select **OK** to save your settings.
 
-## Get the IP address and path
-
-To add AirPrinter servers, you need the IP address of the printer, the resource path, and the port. The following steps show you how to get this information.
-
-1. On a Mac that’s connected to the same local network (subnet) as the AirPrint printers, open **Terminal** (from **/Applications/Utilities**).
-2. In the Terminal app, type `ippfind`, and select enter.
-
-    Note the printer information. For example, it may return something similar to `ipp://myprinter.local.:631/ipp/port1`. The first part is the name of the printer. The last part (`ipp/port1`) is the resource path.
-
-3. In the Terminal, type `ping myprinter.local`, and select enter.
-
-   Note the IP address. For example, it may return something similar to `PING myprinter.local (10.50.25.21)`.
-
-4. Use the IP address and resource path values. In this example, the IP address is `10.50.25.21`, and the resource path is `/ipp/port1`.
-
 ## Next steps
 
 - View all the settings for [iOS](ios-device-features-settings.md) devices.
-- [Assign this profile](device-profile-assign.md) to your groups and [monitor its status](device-profile-monitor.md).
+- [Assign this profile](device-profile-assign.md) to your groups, and [monitor its status](device-profile-monitor.md).
