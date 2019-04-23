@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -34,12 +34,9 @@ ms.collection: M365-identity-device-management
 
 Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings are used to manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
 
-Intune also offers additional ways to manage settings *specific* to Zebra devices:
+On Android devices, use **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
 
-- On Android Enterprise devices, use **OEMConfig** to configure settings that aren't built-in to Intune. [Use and manage Android Enterprise Zebra devices with OEMConfig](android-oem-configuration-overview.md) has more information.
-- On Android devices, use **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
-
-This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune. To use OEMConfig, go to [Use and manage Android Enterprise Zebra devices with OEMConfig](android-oem-configuration-overview.md).
+This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune.
 
 This feature applies to:
 
@@ -157,5 +154,4 @@ The next time the device checks for configuration updates, the MX profile is dep
 ## Next steps
 
 - [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
-- [Use OEMConfig to manage Android Enterprise Zebra devices](android-oem-configuration-overview.md).
 - [Use StageNow logs to troubleshoot Zebra devices](android-zebra-mx-logs-troubleshoot.md).
