@@ -124,10 +124,10 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter.
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
-  - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint.
+  - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint. If you have a device running iOS 11.0 or later, blocking this setting also prevents using FaceID authentication to unlock the device. 
 - **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** (default) allows passcodes to be added, changed, or removed.
 
-  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device.
+  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device. If you have a device running iOS 11.0 or later, blocking this setting also stops the user from changing, adding, or removing FaceID authentication. 
 
 - **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
 
