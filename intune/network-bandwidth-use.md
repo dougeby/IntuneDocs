@@ -99,6 +99,9 @@ When the Intune client is installed on computers, BranchCache and distributed ca
 
 If you use BranchCache, work with other administrators in your organization to manage Group Policy and Intune Firewall policy. Ensure they don't deploy policy that disables BranchCache or Firewall exceptions. For more about BranchCache, see [BranchCache Overview](http://technet.microsoft.com/library/hh831696.aspx).
 
+> [!NOTE]
+> You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client. Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible. When managed this way, BranchCache is not supported. For more information, see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md).
+
 ## Network communication requirements
 
 Enable network communications between the devices you manage and the endpoints required for cloud-based services.
