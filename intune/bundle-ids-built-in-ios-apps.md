@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 04/24/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -29,6 +29,8 @@ ms.collection: M365-identity-device-management
 # Bundle IDs for built-in iOS apps you can use in Intune
 
 When you configure features on iOS devices, you can also add the built-in apps on iOS devices. This article lists the bundle IDs of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+
+## Bundle IDs
 
 | Bundle ID                   | App Name     | Publisher |
 |-----------------------------|--------------|-----------|
