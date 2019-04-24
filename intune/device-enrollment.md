@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -72,15 +72,19 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 ## Android enrollment methods
 
-| **Device** | **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
+| **Personal** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**Personal devices**|**[BYOD](#bring-your-own-device)** | No | Yes | No | [More information](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
-|**Corporate-owned devices**|**[DEM](#device-enrollment-manager)**| No | No | No |[More information](./device-enrollment-manager-enroll.md)|
-|**Devices with pre-declared IMEI or serial number**|**via Company Portal**| No | Yes | No | [More information](./corporate-identifiers-add.md)|
-|**Zebra devices**|**[BYOD](#bring-your-own-device)** or **[DEM](#device-enrollment-manager)**| No | Yes if BYOD, No if DEM | No | [More information](./android-zebra-mx-overview.md)|
-|**Android Enterprise work profile devices**|**Android work profiles**| No | Yes | No | [More information](./android-work-profile-enroll.md)|
-|**Android Enterprise dedicated devices**|**NFC, Token, QR code, Zero Touch**| Yes | No | Configurable via policy | [More information](./android-kiosk-enroll.md)|
-|**Android Enterprise fully managed devices**|**NFC, Token, QR code, Zero Touch**| Yes | Yes | Configurable via policy | [More information](./android-dedicated-devices-fully-managed-enroll.md)|
+|**Android Device Admin**|**User initiated via Company Portal** | No | Yes | No | [More information](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise Work Profile**|**User initiated via Company Portal**| No | Yes | No | [More information](./android-work-profile-enroll.md)|
+
+
+| **Corporate** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android Device Admin**|**[DEM](#device-enrollment-manager) initiated via Company Portal**| No | No | No |[More information](./device-enrollment-manager-enroll.md)|
+|**Android Device Admin**|**(Pre-declared IMEI or SN) User initiated via Company Portal**| No | Yes | No | [More information](./corporate-identifiers-add.md)|
+|**Android Device Admin with Zebra Mobility Extensions**|**User or [DEM](#device-enrollment-manager) initiated via Company Portal**| No | Yes if user initiated, No if [DEM](#device-enrollment-manager) initiated | No | [More information](./android-zebra-mx-overview.md)|
+|**Android Enterprise Dedicated**|**NFC, Token, QR code, Zero Touch**| Yes | No | Configurable via policy | [More information](./android-kiosk-enroll.md)|
+|**Android Enterprise Fully Managed (Preview)**|**NFC, Token, QR code, Zero Touch**| Yes | Yes | Configurable via policy | [More information](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## Bring your own device
