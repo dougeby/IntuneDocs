@@ -55,7 +55,7 @@ Use the following steps to add an app to Intune:
 4. Click **OK** to accept the default selected apps.
 5. Select **App Suite Information**.
 6. Enter **Microsoft Office 365 app suite** as the **Suite Name**.
-7. Enter **The Microsoft Office 365 app suite.** as the **Suite Description**.
+7. Enter **The Microsoft Office 365 app suite** as the **Suite Description**.
 8. Click **Yes** next to **Display this as a featured app in the Company Portal**.
 9. Click **OK**.
 

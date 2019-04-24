@@ -709,6 +709,8 @@
           href: wi-fi-settings-ios.md
         - name: Custom
           href: custom-settings-ios.md
+        - name: Bundle IDs for built-in apps
+          href: bundle-ids-built-in-ios-apps.md
     - name: macOS
       items:
       - name: Compliance policy settings
