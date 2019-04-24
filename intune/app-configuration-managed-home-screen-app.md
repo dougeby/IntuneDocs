@@ -82,8 +82,7 @@ The following table lists the Managed Home Screen available configuration keys, 
 | Screen saver image | string |   | Set the URL of the screensaver image. If no URL is set,   devices will show the default screen when screensaver is activated.  |
 | Screen saver show time | integer | 0 | Gives option to set the amount of time in seconds the device   will display the screensaver during screensaver mode. If set to 0, the   screensaver will show on screensaver mode indefinitely until the device   becomes active.  |
 | Inactive time to enable   screen saver | integer | 30 | The number of seconds the device is inactive before triggering   the screensaver. If set to 0, the device will never go into screensaver mode. |
-| Media detect before showing screen saver | bool | TRUE | Choose whether the device screen should show   screensaver if audio/video is playing on device. If set to true, the   device will not play audio/video, regardless of the value in    **inactive_time_to_show_scree_saver**.  |
-| If set to false, device   screen will show screensaver according to value set in   **inactive_time_to_show_screen_saver**.  |  |  |  |
+| Media detect before showing screen saver | bool | TRUE | Choose whether the device screen should show   screensaver if audio/video is playing on device. If set to true, the   device will not play audio/video, regardless of the value in **inactive_time_to_show_scree_saver**. If set to false, device  screen will show screensaver according to value set in   **inactive_time_to_show_screen_saver**.   |
 | Enable virtual home button | bool | FALSE | Enable virtual home button |
 | Type of virtual home button | string | Swipe_up | Type of virtual home button. Use **swipe_up** to access home   button with a swipe up gesture. Use **float** the home button is always present   on the screen. |
 | Battery and Signal Strength   indicator bar | bool | True  | Battery and Signal Strength indicator bar |
