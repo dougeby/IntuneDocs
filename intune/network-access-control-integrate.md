@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -67,23 +67,34 @@ The following list is an overview on how NAC integration works when integrated w
 9. Connection is successfully established which allows the device access to corporate resources.
 
 ## Use NAC for VPN on your iOS devices  
-NAC for Cisco Legacy AnyConnect, F5 Access Legacy, and Citrix VPN is supported without needing to enable NAC in the VPN profile.
 
-NAC for Citrix SSO is also supported. To enable NAC for Citrix SSO for iOS:
-- Use Citrix Gateway 12.0.59 or higher.  
-- Users must have Citrix SSO 1.1.6 or later installed.
-- [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
-- On the Base VPN settings configuration, for **Enable Network Access Control (NAC)**, select the check-box for **I agree**.
+- NAC is available on the following VPNs without enabling NAC in the VPN profile:
 
-When you use Citrix SSO for iOS, the VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
+  - NAC for Cisco Legacy AnyConnect
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC is available for Citrix SSO. To enable NAC for Citrix SSO:
 
-**Network access control is not currently supported for the following VPN clients on iOS**:
--	Cisco AnyConnect
--	F5 Access
+  - Use Citrix Gateway 12.0.59 or higher.  
+  - Users must have Citrix SSO 1.1.6 or later installed.
+  - [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
+  - In the VPN profile, select **Base settings** > **Enable Network Access Control (NAC)** > select **I agree**.
 
-We're working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
+  The VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
 
+- NAC is available for F5 Access. To enable NAC for F5 Access:
+
+  - Use F5 BIG-IP 13.1.1.5. BIG-IP 14 isn't supported.
+  - Integrate BIG-IP with Intune for NAC. The [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 guide lists the steps.
+  - In the VPN profile, select **Base settings** > **Enable Network Access Control (NAC)** > select **I agree**.
+
+  The VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
+
+- Network access control isn't supported for the following VPN client on iOS:
+  - Cisco AnyConnect
+
+We're working with our partners to release a NAC solution for these newer clients. When solutions are ready, this article will be updated with additional information.
 
 ## Next steps
 
