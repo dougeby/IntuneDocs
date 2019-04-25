@@ -95,6 +95,9 @@ The Device overview page will show the Primary User, also called the User Device
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
 For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. The same functionality for available apps will be enabled in a future release. 
 
+#### iOS Third Party Keyboards <!-- 4111843 idready eeready -->
+The Intune app protection policy (APP) support for the **Third Party Keyboards** setting for iOS is no longer supported due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
+
 ### Device configuration
 
 #### Set login settings and control restart options on macOS devices <!-- 1210083  -->
