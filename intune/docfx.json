@@ -39,7 +39,13 @@
       "feedback_product_url": "https://microsoftintune.uservoice.com/",  
       "searchScope": ["Intune"]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "featureFlags": {
+        "*.md" : [
+          "show_binary_rating"
+        ]
+      }
+    },
     "template": [],
     "dest": "intune-azure",
     "markdownEngineName": "markdig"
