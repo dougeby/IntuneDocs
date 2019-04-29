@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 04/29/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# In development for Microsoft Intune - April 2019
+# In development for Microsoft Intune - May 2019
 
 To assist in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition:
 
@@ -49,19 +49,63 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
  
 ## Intune in the Azure portal
 
+
+<!-- 1905 start-->
+
+
+### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
+If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
+
+### Baseline support for keyword search  <!-- 3082036         -->
+While creating or editing a security baseline profile, you’ll soon be able to use *search* to filter the settings that display in the console.   
+
+### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
+You'll be able to reset and wipe up to 100 devices in bulk using the Graph API.
+
+### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
+Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
+
+[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
+
+Applies to: Windows 10 and later
+
+### Intune management extension PowerShell scripts  <!-- 3734186    -->
+You'll be able to configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md).
+
+### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS supervised devices <!-- 4097904  --> 
+You create a device restrictions profile on iOS device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type). This update includes new settings you can configure:
+
+- Personal HotSpot
+- Siri server logging
+
+To see the current settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md). 
+
+Applies to: iOS 12.2 and newer
+
+### New classroom app device restriction settings for DEP-enrolled macOS devices <!-- 4097905  --> 
+You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update includes new classroom app settings for DEP-enrolled devices, and the option to disable the iCloud Photo Library.
+
+To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
+
+Applies to: macOS 10.14.4 and newer
+
+### Android Enterprise app management <!-- 4459905 idready -->
+To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
+- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
+- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
+
+Previously, IT admins would need to manually find and approve these apps in the [Managed Google Play store](https://play.google.com/store/apps) as part of setup. This change removes those previously manual steps to make it easier and faster for customers to use Android Enterprise management.
+
+Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service roll out.
+
 <!-- 1904 start-->
 
 ### Advanced settings for Windows Defender Firewall <!-- 1311949 -->
 You'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
 
-### Require App Protection Conditional Access  <!--1634317 -->
-You'll be able to use *Require App Protection policy*, which confirms policy is applied to a user’s app before sign in completes to prevent users from accessing data you protect with conditional access. While policy assurance might slow down the first use experience, it helps to protect against network issues, administrative misconfigurations, or intentional efforts to foil application protection policies. 
-
-### Configure settings for kernel extensions on macOS devices <!-- 2043024 -->
-On macOS devices, you can create a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > choose **macOS** for platform). A new group of settings will let you configure and use kernel extensions on your devices.
-
-Applies to: 
-macOS 10.13.2 and later
 
 ### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
 Company Portal for Windows will list all managed apps&ndash; both required and available&ndash; that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
@@ -81,16 +125,6 @@ To learn more about security tasks in Intune, see the blog post about [using Int
 We're going to add new baseline to help you configure Windows Defender Advanced Threat Protection settings.
 
 
-### iOS Third Party Keyboards <!-- 4111843 -->
-Support for the Intune app protection policy (APP) for the **Third Party Keyboards** setting will end due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
-
-<!-- 1903 start-->
-
-### Windows Update notifications <!-- 3316782 -->
-We're adding support to the Windows Update ring configurations so you'll be able to configure the Windows Update notifications your users see. This setting won't be available from within the portal, but can be configured by using the Intune Graph API.
-
-### Easier access to Diagnostic Settings <!-- 3804627 -->
-We’re adding a new option to the **Audit logs** blade in every Audit Log workload in the Intune console that you can use to directly open the *Diagnostic Settings* page.
 
 ## Notices
 
