@@ -68,7 +68,7 @@ To access Help and support, use the following options:
   - Select any available option for **Help and support**
   - Select the **?** icon in the upper-right corner of the portal
 
-- **In the Azure Portal:**
+- **In the Azure portal:**
   - Select **Help and support** from any Intune blade or page
 
   In the Azure portal, if you select either the **?** icon from the upper-right corner, or **Help + support** from the left-side navigation pane, you open *Help + support* for Azure. From Azure *Help + Support*, you can’t open an Intune support incident directly but you can get to the Intune *Help and support* page by doing the following actions: 
