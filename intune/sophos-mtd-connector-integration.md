@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Sohpos Mobile integration with Intune
+title: Set up Sophos Mobile integration with Intune
 titleSuffix: Intune on Azure
 description: How to set up the Sophos Mobile solution with Microsoft Intune to control mobile device access to your corporate resources.
 keywords:
