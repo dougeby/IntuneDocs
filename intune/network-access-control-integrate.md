@@ -74,7 +74,7 @@ The following list is an overview on how NAC integration works when integrated w
   - F5 Access Legacy
   - Citrix VPN
 
-- NAC is available for Citrix SSO. To enable NAC for Citrix SSO:
+- NAC is also available for Citrix SSO and F5 Access. To enable NAC for Citrix SSO:
 
   - Use Citrix Gateway 12.0.59 or higher.  
   - Users must have Citrix SSO 1.1.6 or later installed.
@@ -83,7 +83,7 @@ The following list is an overview on how NAC integration works when integrated w
 
   The VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
 
-- NAC is available for F5 Access. To enable NAC for F5 Access:
+- To enable NAC for F5 Access:
 
   - Use F5 BIG-IP 13.1.1.5. BIG-IP 14 isn't supported.
   - Integrate BIG-IP with Intune for NAC. The [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 guide lists the steps.
@@ -100,5 +100,6 @@ We're working with our partners to release a NAC solution for these newer client
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Integrate F5 BIG-IP Access Policy Manager with Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [Integrate HP Aruba ClearPass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Integrate Squadra security Removable Media Manager (secRMM) with Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)
