@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/07/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -251,6 +251,11 @@ After importing the certificates to Intune, create a **PKCS imported certificate
 Updates for the two certificate connectors are released periodically. When we update a connector, you can read about the changes here. 
 
 The *PFX Certificates Connector* [supports automatic updates](#requirements), while the Intune Certificate Connector is updated manually.
+
+### May 6, 2019
+- **PFX Certificates Connector - version 6.1905.0.402**  
+  Changes in this release:  
+  - The polling interval for the connector is reduced from 5 minutes to 30 seconds.
  
 ### April 2, 2019
 - **NDES Certificate Connector - version 6.1904.1.0**  
