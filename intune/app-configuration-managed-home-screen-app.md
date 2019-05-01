@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -31,9 +31,14 @@ ms.collection: M365-identity-device-management
 
 # Configure the Microsoft Managed Home Screen app for Android Enterprise
 
-The Managed Home Screen is the application used for corporate-owned Android Enterprise dedicated devices enrolled via Intune and running in multi-app kiosk mode. For these devices, the Managed Home Screen acts as the launcher for other approved apps to run on top of it. Additionally, the Managed Home Screen provides IT admins the ability to customize and restrict the behavior of these devices and the capabilities that the end user can access. 
+The Managed Home Screen is the application used for corporate-owned Android Enterprise dedicated devices enrolled via Intune and running in multi-app kiosk mode. For these devices, the Managed Home Screen acts as the launcher for other approved apps to run on top of it. The Managed Home Screen provides IT admins the ability to customize their devices and to restrict the capabilities that the end user can access. 
 
-Some of the Managed Home Screen settings available are currently only surfaced in the **App configuration policies** blade in the Intune console. Use this document to learn how to configure the different settings either using the configuration designer or a JSON script. 
+## When to configure the Microsoft Managed Home Screen app
+
+Typically, if settings are available to you through Device configuration, configure the settings there. Doing so will save you time, minimize errors, and will give you a better Intune-support experience. However, some of the Managed Home Screen settings are currently only available via the **App configuration policies** blade in the Intune console. Use this document to learn how to configure the different settings either using the configuration designer or a JSON script. 
+
+> [!NOTE]
+> It is currently possible, and advisable, to set whitelisted applications and pinned web links through **Client apps** and **Device configuration**. For the full list of settings available in **Device configuration** that impact Managed Home Screen,  see [Dedicated device settings](device-restrictions-android-for-work.md#dedicated-device-settings).  
 
 First, navigate to the Intune console in Azure portal and go to **Client apps** > **App configuration policies**. Add a configuration policy for **Managed devices** running **Android** and choose **Managed Home Screen** as the associated app. Click on **Configuration settings** to configure the different available Managed Home Screen settings. 
 
@@ -61,8 +66,8 @@ The following table lists the Managed Home Screen available configuration keys, 
 | Set Grid Size | string | Auto | Allows you to set the grid size for apps to be positioned on   the managed home screen. You can set the number of app rows and columns to   define grid size in the following format (`rows;column`). If you define the   grid size, the maximum number of apps that will be shown in a row on the home   screen would be the number of rows you set and the maximum number of apps   that will be shown in a column in the home screen would be the number of   columns you set. |
 | Enable Screen Header | bool | TRUE | Enables the top header for different views that the managed   home screen offers such as the feed or feed cards. If you enable this   setting, the device users will see the header. |
 | -Enable device status bar | bool | TRUE | Enables the status bar in the home screen (top bar that   displays current connections such as wifi and etc.). If you enable this, the   end user will be able to see the icons displayed on the status bars that   represent connections and active apps. |
-| Enable notifications badge | bool | FALSE | Enables the notification badge for app icons that shows the   no. of new notifications on the app. If you enable this setting, end users   will see notification badges on apps that have unread notifications. If you   keep this disabled, the end user will not see any notification badged to apps   that might have unread notifications. |
-| Lock Home Screen | bool | TRUE | Removes the ability of the end user to move around app icons   on the home screen. If you enable this, the app icons on the home screen will   be locked and the end user would not be able to drag and drop to different   grid positions of the home screen. |
+| Enable notifications badge | bool | FALSE | Enables the notification badge for app icons that shows the number. of new notifications on the app. If you enable this setting, end users   will see notification badges on apps that have unread notifications. If you   keep this disabled, the end user will not see any notification badged to apps   that might have unread notifications. |
+| Lock Home Screen | bool | TRUE | Removes the ability of the end user to move around app icons   on the home screen. If you enable this, the app icons on the home screen will   be locked and the end user would not be able to drag and drop to different   grid positions of the home screen. If turned to `false`, end users will be able to move around application and weblink icons on the Managed Home Screen.  |
 | Set device wall paper | string | Default | Allows you to set a wallpaper of your choice by entering the   URL of the image that you want to set as a wallpaper. |
 | Set app icon size | integer | 2 | Allows you to set the icon size for apps displayed on the home   screen. You can choose the following values in this configuration for   different sizes - 0 (Smallest), 1 (Small), 2 (Regular), 3 (Large) and 4   (Largest). |
 | Set app folder icon | integer | 0 | Allows you to define the appearance of app folders on the home   screen. You can choose the appearance from following values: Dark Square(0);   Dark Circle(1); Light Square(2); Light Circle(3). |
@@ -83,12 +88,12 @@ The following table lists the Managed Home Screen available configuration keys, 
 | Screen saver show time | integer | 0 | Gives option to set the amount of time in seconds the device   will display the screensaver during screensaver mode. If set to 0, the   screensaver will show on screensaver mode indefinitely until the device   becomes active.  |
 | Inactive time to enable   screen saver | integer | 30 | The number of seconds the device is inactive before triggering   the screensaver. If set to 0, the device will never go into screensaver mode. |
 | Media detect before showing screen saver | bool | TRUE | Choose whether the device screen should show   screensaver if audio/video is playing on device. If set to true, the   device will not play audio/video, regardless of the value in **inactive_time_to_show_scree_saver**. If set to false, device  screen will show screensaver according to value set in   **inactive_time_to_show_screen_saver**.   |
-| Enable virtual home button | bool | FALSE | Enable virtual home button |
-| Type of virtual home button | string | Swipe_up | Type of virtual home button. Use **swipe_up** to access home   button with a swipe up gesture. Use **float** the home button is always present   on the screen. |
-| Battery and Signal Strength   indicator bar | bool | True  | Battery and Signal Strength indicator bar |
-| Exit lock task mode password | string |   | Exit lock task mode password |
-| Show Wi-Fi setting | bool | FALSE | Show Wi-Fi setting |
-| Show Bluetooth setting | bool | FALSE | Show Bluetooth setting |
+| Enable virtual home button | bool | FALSE | Turn this setting to `True` to allow the end user to have access to a Managed Home Screen home button that will return the user to the Managed Home Screen from the current task they are in.  |
+| Type of virtual home button | string | Swipe_up | Use **swipe_up** to access home button with a swipe up gesture. Use **float** to access a sticky, persistent  home button that can be moved around the screen by the end user. |
+| Battery and Signal Strength   indicator bar | bool | True  | Turning this setting to `True` shows the battery and signal strength indicator bar. |
+| Exit lock task mode password | string |   | Enter a 4-6-digit code to use to temporarily drop out of lock-task mode for troubleshooting. |
+| Show Wi-Fi setting | bool | FALSE | Turning this setting to `True` allows the end-user to turn on or off Wi-Fi, or to connect to different Wi-Fi networks.  |
+| Show Bluetooth setting | bool | FALSE | Turning this setting to `True` allows the end-user to turn on or off Bluetooth and to connect to different Bluetooth-capable devices.   |
 
 ## Enter JSON Data
 
@@ -98,10 +103,11 @@ Enter JSON data to configure all available settings for Managed Home Screen, as 
 
 In addition to the list of configurable settings listed in the **Configuration Designer** table (above), the following table provides the configuration keys you can only configure via JSON data.
 
-|    Configuration Key    |    Value Type    |    Default Value    |    Description    |
-|------------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Set whitelisted applications    |    bundleArray    |    {        "key":   "applications",        "valueBundleArray":   [        {                                    "managedProperty":   [   {         "key":   "package",         "valueString": STRING_VALUE   }   ]        }        ]   },    |    Allows you to define the set of apps visible on the home screen from   amongst the apps installed on the device. You can define the apps by entering   the app package name of the apps that you would like to make visible, e.g.   com.android.settings would make settings accessible on the home screen. The   apps that you whitelist in this section should already be installed on the   device in order to be visible on the home screen.    |
-|    Set pinned web links    |    bundleArray    |    {        "key":   "weblinks",        "valueBundleArray":   [         {               "managedProperty":   [     {          "key":   "link",          "valueString": STRING_VALUE      },      {           "key": "label",           "valueString": STRING_VALUE      }      ]         }         ]   },    |    Allows you to pin websites as quick launch icons on the home screen.   With this configuration you can define the URL and add it to the home screen   for the end user to launch in the browser with a single tap.    |
+|    Configuration   Key    |    Value   Type    |    Default   Value    |    Description    |
+|-------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    Set whitelisted applications    |    bundleArray    | ``` json   {        "key":   "applications",        "valueBundleArray": [        {                                    "managedProperty": [   {         "key": "package",         "valueString":   STRING_VALUE   }   ]        }        ]   },   ``` |    Allows you to define the set of   apps visible on the home screen from amongst the apps installed on the   device. You can define the apps by entering the app package name of the apps   that you would like to make visible, e.g. com.android.settings would make settings   accessible on the home screen. The apps that you whitelist in this section   should already be installed on the device in order to be visible on the home   screen.    |
+|    Set pinned web links    |    bundleArray    | ``` json   {        "key": "weblinks",        "valueBundleArray": [         {               "managedProperty": [     {          "key": "link",          "valueString":   STRING_VALUE      },      {           "key": "label",           "valueString": STRING_VALUE      }      ]         }         ]   },   ``` |    Allows you to pin websites as   quick launch icons on the home screen. With this configuration you can define   the URL and add it to the home screen for the end user to launch in the   browser with a single tap.    |
+|    Create Managed Folder for grouping   apps    |    bundleArray    | ``` json   {        "key": “managed_folders",        "valueBundleArray": [         {               "managedProperty": [     {            "key": "folder_name",            "valueString": STRING_VALUE      },      {             "key": "content",                      "valueBundleArray":   [                        {                             "managedProperty": [                    {                              “key”: “type”,                             “valueString”: STRING_VALUE                    },                    {                              “key”: “label”,                             “valueString”: STRING_VALUE                    },                    {                              “key”: “package”,                             “valueString”: STRING_VALUE                    },                    {                              “key”: “class”,                             “valueString”: STRING_VALUE                    },                    {                              “key”: “link”,                             “valueString”: STRING_VALUE                    }                 ]              }          ]      }              ]          }      ]   },   ``` |    Allows you to create and name   folders and group apps within these folders. End-users will not be able to   move folders, re-name the folders, or move the apps within the folders.   Folders will appear in the order created, and apps within the folders will   appear alphabetically.         Note: all apps that you want to   group into folders must be assigned as required to the device and must have   been added to the Managed Home Screen.     |
 
 The following is an example JSON script with all the available configuration keys included:
 
@@ -181,7 +187,7 @@ The following is an example JSON script with all the available configuration key
                     "managedProperty": [
                         {
                             "key": "package",
-                            "valueString": STRING_VALUE
+                            "valueString": “app package name here”
                         }
                     ]
                 }
@@ -194,11 +200,11 @@ The following is an example JSON script with all the available configuration key
                     "managedProperty": [
                         {
                             "key": "link",
-                            "valueString": STRING_VALUE
+                            "valueString": “link here”
                         },
                         {
                             "key": "label",
-                            "valueString": STRING_VALUE
+                            "valueString": “weblink label here”
                         }
                     ]
                 }
@@ -235,9 +241,73 @@ The following is an example JSON script with all the available configuration key
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "managed_folders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Folder name here"
+                        },
+                        {
+                            "key": "applications",
+                            "valueBundleArray": [
+                                {
+                                    "managedProperty": [
+                                        {
+                                            "key": "package",
+                                            "valueString": "com.microsoft.emmx"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "managedProperty": [
+                                        {
+                                            "key": "package",
+                                            "valueString": "com.microsoft.bing"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "managedProperty": [
+                                        {
+                                            "key": "link",
+                                            "valueString": "https://microsoft.com/"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Example folder name 2"
+                        },
+                        {
+                            "key": "applications",
+                            "valueBundleArray": [
+                                {
+                                    "managedProperty": [
+                                        {
+                                            "key": "package",
+                                            "valueString": "com.microsoft.office.word"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }
+
 ```
 ## Next steps
 
