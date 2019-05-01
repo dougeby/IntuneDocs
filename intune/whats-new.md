@@ -221,7 +221,7 @@ You can now add scope tags to Apple VPP tokens. Only users assigned with the sam
 ### Device configuration
 
 #### Updated certificate connectors  <!-- ICM 113304612 -->
-We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ### App management
 
