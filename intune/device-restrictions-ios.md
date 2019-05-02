@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -238,7 +238,7 @@ In the show or hide apps list, you can configure one of the following lists on s
 
 To add apps to these lists, you can:
 
-- **Add** the iTunes App store URL or Bundle ID and App Name of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **Add** the iTunes App store URL, or Bundle ID and app name of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
@@ -246,7 +246,7 @@ To add apps to these lists, you can:
 
 - Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
-  You can also show or hide built-in apps and line-of-business apps by specifying the Bundle ID and App Name. For a list of built-in apps you can hide, go to https://support.apple.com/en-us/HT208094. That list is for iOS 12 and later. 
+  You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
 
 ## Wireless
 
