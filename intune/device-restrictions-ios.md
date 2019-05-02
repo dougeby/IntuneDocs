@@ -238,13 +238,15 @@ In the show or hide apps list, you can configure one of the following lists on s
 
 To add apps to these lists, you can:
 
-- **Add** the iTunes App store URL of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **Add** the iTunes App store URL or Bundle ID and App Name of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
 - Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
+
+  You can also show or hide built-in apps and line-of-business apps by specifying the Bundle ID and App Name. For a list of built-in apps you can hide, go to https://support.apple.com/en-us/HT208094. That list is for iOS 12 and later. 
 
 ## Wireless
 
