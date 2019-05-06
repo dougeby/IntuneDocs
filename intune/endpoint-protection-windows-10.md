@@ -129,7 +129,7 @@ Custom Firewall rules support the following options:
   
   Specify if this rule applies to **Inbound**, or **Outbound** traffic. When set as **Not configured**, the rule automatically applies to Outbound traffic.  
 
-- **Action** 
+- **Action**  
   **Default**: Not configured  
   Firewall CSP: [FirewallRules/FirewallRuleName/Action](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#action), and [FirewallRules/FirewallRuleName/Action/Type](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#type)  
 
@@ -158,8 +158,9 @@ Custom Firewall rules support the following options:
   - **All**– *No additional configuration is available*.
 
 #### IP address settings  
-- **Local addresses**   Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
+- **Local addresses**    
   **Default**: Any address  
+  Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
 
   Select **Any address** or **Specified address**.  
 
@@ -220,11 +221,12 @@ Custom Firewall rules support the following options:
   - **Local area network**
 
 - **Only allow connections from these users**  
-  **Default**: All users *(Defaults to all uses when no list is specified)*
+  **Default**: All users *(Defaults to all uses when no list is specified)*  
+  Firewall CSP: [FirewallRules/FirewallRuleName/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)  
 
   Specify a list of authorized local users for this rule. A list of authorized users can't be specified if this rule applies to a Windows service.  
 
-  Firewall CSP: [FirewallRules/FirewallRuleName/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)
+
 
 
 ## Windows Defender SmartScreen settings
