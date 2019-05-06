@@ -158,7 +158,7 @@ Custom Firewall rules support the following options:
   - **All**– *No additional configuration is available*.
 
 #### IP address settings  
-- **Local addresses**   Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges]()  
+- **Local addresses**   Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
   **Default**: Any address  
 
   Select **Any address** or **Specified address**.  
@@ -196,7 +196,7 @@ Custom Firewall rules support the following options:
 
 - **Protocol**  
   **Default**: Any  
-  Firewall CSP: [FirewallRules/FirewallRuleName/Protocol]()
+  Firewall CSP: [FirewallRules/FirewallRuleName/Protocol](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#protocol)
  
   Select from the following, and complete any required configurations: 
   - **All** – No additional configuration is available. 
