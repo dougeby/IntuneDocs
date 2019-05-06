@@ -19,7 +19,7 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: ilwu
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -310,11 +310,11 @@ These settings apply specifically to operating system data drives.
   - **User creation of recovery password**: Choose if users are allowed, required, or not allowed to generate a 48-digit recovery password.
   - **User creation of recovery key**: Choose if users are allowed, required, or not allowed to generate a 256-bit recovery key.
   - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to AD DS**: Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (AAD). When **Not configured** (default), the recovery information isn't stored in AAD.
-  - **BitLocker recovery Information stored to AD DS**: Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:
+  - **Save BitLocker recovery information to Azure Active Directory**: Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in AAD.
+  - **BitLocker recovery Information stored to Azure Active Directory**: Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in AD DS before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure Active Directory (AD). **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
+  - **BitLocker recovery Information stored to Azure Active Directory**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
 - **Pre-boot recovery message and URL**: **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.
   - **Pre-boot recovery message**: Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**

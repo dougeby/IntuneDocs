@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -71,7 +71,7 @@ You can decide which MTD toggle options you need to enable according to your org
 - **Number of days until partner is unresponsive**: Number of days of inactivity before Intune considers the partner to be unresponsive because the connection is lost. Intune ignores compliance state for unresponsive MTD partners.
 
 > [!IMPORTANT] 
-> You must add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
+> When possible, we recommend that you add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This helps ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
 
 > [!TIP]
 > You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense pane.
