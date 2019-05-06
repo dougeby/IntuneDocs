@@ -63,6 +63,7 @@ Choose the section that corresponds to your MTD provider:
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### Configure Lookout for Work apps
 
@@ -146,7 +147,18 @@ Choose the section that corresponds to your MTD provider:
 
     - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [ActiveShield app store URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) in **step 12** under the **Configure app information** section.
 
+
+### Configure Sophos apps  
+- **Android**
+
+    - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Sophos app store URL](https://play.google.com/store/apps/details?id=com.sophos.smsec) on **step 7**.
+
+ - **iOS**
+
+    - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [ActiveShield app store URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) in **step 12** under the **Configure app information** section.
+
 ## Configure your MTD apps with an iOS app configuration policy
+
 
 ### Lookout for Work app configuration policy
 
@@ -167,7 +179,7 @@ Choose the section that corresponds to your MTD provider:
 
     - On **step 8**, use the option **Enter XML data**, copy the content from the ***.plist** file, and paste its content into the configuration policy body.
 
-> [!NOTE]
+> [!NOTE]  
 > If you are unable to retrieve the files, contact [Symantec Endpoint Protection Mobile Enterprise Support](https://support.symantec.com/en_US/contact-support.html).
 
 ### Check Point SandBlast Mobile app configuration policy
@@ -212,6 +224,9 @@ Choose the section that corresponds to your MTD provider:
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### Sophos Mobile app configuration policy
+Create the iOS app configuration policy as described in the [using iOS app configuration policy](app-configuration-policies-use-ios.md) article.
 
 ## Assign apps to groups
 

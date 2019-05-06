@@ -138,8 +138,8 @@ The following steps provide guidance to help you add a Windows app to Intune.
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
     And, if the application is `ApplicationName.exe`, the command would be the application name followed by the command arguments (switches) supported by the package. <br>For example:<br>
-    `ApplicationName.exe /quite`<br>
-    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argument.<p> 
+    `ApplicationName.exe /quiet`<br>
+    In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 
@@ -280,9 +280,6 @@ At this point, you have completed steps to add a Win32 app to Intune. For inform
 ## App dependencies
 
 App dependencies are applications that must be installed before your Win32 app can be installed. You can require that other apps are installed as dependencies. Specifically, the device must install the dependent app(s) before it installs the Win32 app. ​There is a maximum of 100 dependencies, which includes the dependencies of any included dependencies, as well as the app itself. You can add Win32 app dependencies only after your Win32 app has been added and uploaded to Intune. Once your Win32 app has been added, you'll see the **Dependencies** option on the blade for your Win32 app. 
-
-> [!NOTE]
-> App dependency functionality will be available only after the Intune Management agent has been upgraded to 1904 version (greater than 1.18.120.0), which could take one or two additional weeks after we upgrade the service to 1904.
 
 When adding an app dependency, you can search based on the app name and publisher. Additionally, you can sort your added dependencies based on app name and publisher. Previously added app dependencies cannot be selected in the added app dependency list. 
 
