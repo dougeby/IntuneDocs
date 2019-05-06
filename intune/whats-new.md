@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -53,6 +53,18 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 ## Week of May 6, 2019 
 
 ### Device configuration
+
+#### Network Access Control (NAC) support for F5 Access for iOS devices <!-- 4500808 -->
+
+F5 released an update to BIG-IP 13 that allows NAC functionality for F5 Access on iOS in Intune. To use this feature:
+
+- Update BIG-IP to 13.1.1.5 refresh. BIG-IP 14 isn't supported.
+- Integrate BIG-IP with Intune for NAC. Steps in [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Check the **Enable Network Access Control (NAC)** setting in the VPN profile in Intune.
+
+To see the available setting, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+
+Applies to: iOS
 
 #### Updated PFX Certificate Connector for Microsoft Intune <!-- doc-vso 1521237  -->  
 We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
@@ -121,7 +133,7 @@ Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
 
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
-You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end-users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
+You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
 To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
 
@@ -137,7 +149,7 @@ To learn more about this feature, go to [Use and manage Android Enterprise devic
 Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
-We've added two *User experience settings* settings to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
+We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
 - Block or allow users to [scan for Windows updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Manage the [Windows Update notification level](windows-update-settings.md#windows-update-notification-level) that users see.
 
