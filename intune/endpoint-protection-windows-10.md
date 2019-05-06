@@ -227,8 +227,6 @@ Custom Firewall rules support the following options:
   Specify a list of authorized local users for this rule. A list of authorized users can't be specified if this rule applies to a Windows service.  
 
 
-
-
 ## Windows Defender SmartScreen settings
 
 Supported on the following Windows 10 editions with Microsoft Edge installed:
