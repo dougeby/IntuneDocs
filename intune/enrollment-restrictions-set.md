@@ -90,6 +90,7 @@ You can change the settings for a device type restriction by following the steps
     - Windows supports major.minor.rev.build for Windows 10 only.
 > [!Note]
 > Windows 10 does not provide the build number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
+
 8. Choose whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 9. Choose **OK**.
 
