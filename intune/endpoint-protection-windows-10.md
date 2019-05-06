@@ -125,19 +125,19 @@ Custom Firewall rules support the following options:
 
 - **Direction**   
   **Default**: Not configured  
-  Windows CSP: [FirewallRules/FirewallRuleName/Direction](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#direction)  
+  Firewall CSP: [FirewallRules/FirewallRuleName/Direction](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#direction)  
   
   Specify if this rule applies to **Inbound**, or **Outbound** traffic. When set as **Not configured**, the rule automatically applies to Outbound traffic.  
 
 - **Action** 
   **Default**: Not configured  
-  Windows CSP: [FirewallRules/FirewallRuleName/Action](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#action), and [FirewallRules/FirewallRuleName/Action/Type](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#type)  
+  Firewall CSP: [FirewallRules/FirewallRuleName/Action](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#action), and [FirewallRules/FirewallRuleName/Action/Type](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#type)  
 
   Select from **Allow** or **Block**. When set as **Not configured**, the rule defaults to allow traffic.  
 
 - **Network type**  
   **Default**: 0 selected  
-  Windows CSP: [FirewallRules/FirewallRuleName/Profiles](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#profiles) 
+  Firewall CSP: [FirewallRules/FirewallRuleName/Profiles](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#profiles) 
 
   Select up to three types of network types to which this rule belongs. Options include **Domain**, **Private**, and **Public**.  If no network types are selected, the rule applies to all three network types.  
 
@@ -148,17 +148,17 @@ Custom Firewall rules support the following options:
   Control connections for an app or program. Select one of the following options, and then complete the additional configuration:  
   - **Package family name** – Specify a package family name. To find the package family name, use the PowerShell command **Get-AppxPackage**.
  
-    Windows CSP: [FirewallRules/FirewallRuleName/App/PackageFamilyName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#packagefamilyname)  
+    Firewall CSP: [FirewallRules/FirewallRuleName/App/PackageFamilyName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#packagefamilyname)  
   - **File path** – You must specify a file path to an app on the client device, which can be an absolute path, or a relative path. For example:  C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe.  
  
-    Windows CSP: [FirewallRules/FirewallRuleName/App/FilePath](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#filepath)  
+    Firewall CSP: [FirewallRules/FirewallRuleName/App/FilePath](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#filepath)  
   - **Windows service** – Specify the Windows service short name if it’s a service and not an application that sends or receives traffic. To find the service short name, use the PowerShell command **Get-Service**.    
    
-    Windows CSP: [FirewallRules/FirewallRuleName/App/ServiceName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#servicename)     
+    Firewall CSP: [FirewallRules/FirewallRuleName/App/ServiceName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#servicename)     
   - **All**– *No additional configuration is available*.
 
 #### IP address settings  
-- **Local addresses**   Windows CSP: [FirewallRules/FirewallRuleName/LocalPortRanges]()  
+- **Local addresses**   Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges]()  
   **Default**: Any address  
 
   Select **Any address** or **Specified address**.  
@@ -172,7 +172,7 @@ Custom Firewall rules support the following options:
 
 - **Remote addresses**  
   **Default**: Any address  
-  Windows CSP: [FirewallRules/FirewallRuleName/RemoteAddressRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteaddressranges)  
+  Firewall CSP: [FirewallRules/FirewallRuleName/RemoteAddressRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteaddressranges)  
  
   Select **Any address** or **Specified address**.  
 
@@ -196,22 +196,22 @@ Custom Firewall rules support the following options:
 
 - **Protocol**  
   **Default**: Any  
-  Windows CSP: [FirewallRules/FirewallRuleName/Protocol]()
+  Firewall CSP: [FirewallRules/FirewallRuleName/Protocol]()
  
   Select from the following, and complete any required configurations: 
   - **All** – No additional configuration is available. 
-  - **TCP** – Configure local and remote ports. Both options support All ports or Specified ports.    Enter Specified ports by using a comma-separated list.
-    - **Local ports** -    Windows CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)
-    - **Remote ports** -   Windows CSP: [FirewallRules/FirewallRuleName/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)
-  - **UDP** – Configure local and remote ports. Both options support All ports or Specified ports.    Enter Specified ports by using a comma-separated list.
-    - **Local ports** -    [Windows CSP: FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)
-    - **Remote ports** -   Windows CSP: [FirewallRules/FirewallRuleName/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)  
+  - **TCP** – Configure local and remote ports. Both options support All ports or Specified ports. Enter Specified ports by using a comma-separated list.
+    - **Local ports** -    Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)
+    - **Remote ports** -   Firewall CSP: [FirewallRules/FirewallRuleName/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)
+  - **UDP** – Configure local and remote ports. Both options support All ports or Specified ports. Enter Specified ports by using a comma-separated list.
+    - **Local ports** -    Firewall CSP: [FirewallRules/FirewallRuleName/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)
+    - **Remote ports** -   Firewall CSP: [FirewallRules/FirewallRuleName/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)  
   - **Custom** – Specify a custom protocol number from 0 to 255. 
 
 #### Advanced configuration  
 - **Interface types**  
   **Default**: All  
-  Windows CSP: [FirewallRules/FirewallRuleName/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
+  Firewall CSP: [FirewallRules/FirewallRuleName/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
 
   Select from the following options:  
   - **Any** 
@@ -224,7 +224,7 @@ Custom Firewall rules support the following options:
 
   Specify a list of authorized local users for this rule. A list of authorized users can't be specified if this rule applies to a Windows service.  
 
-  Windows CSP: [FirewallRules/FirewallRuleName/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)
+  Firewall CSP: [FirewallRules/FirewallRuleName/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)
 
 
 ## Windows Defender SmartScreen settings
