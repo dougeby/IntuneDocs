@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Protection settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
-description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and bitlocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
+description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and BitLocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -39,12 +39,12 @@ To configure Windows Defender Antivirus, see [Windows 10 device restrictions](de
 
 [Create an endpoint protection device configuration profile](endpoint-protection-configure.md).
 
+For more information about configuration service providers (CSPs), see [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference). 
+
 ## Windows Defender Application Guard
 
-Supported on the following Windows 10 editions:
+ [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)  
 
-- Enterprise
-- Professional
 
 While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.
 
@@ -61,14 +61,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 
 ## Windows Defender Firewall
 
-Supported on the following Windows 10 editions:
-- Home
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
+[Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
 
 ### Global settings
 
@@ -107,51 +100,32 @@ These settings are applicable to specific network types, including **Domain (wor
 
 ## Windows Defender SmartScreen settings
 
-Supported on the following Windows 10 editions with Microsoft Edge installed:
-- Home
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
+[Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen)  
+
+Microsoft Edge must be installed on the device. 
+
 
 **Settings**:
 
 - **SmartScreen for apps and files**: **Enable** Windows SmartScreen for file execution, and running apps. SmartScreen is a cloud-based anti-phishing and anti-malware component. **Not configured** (default) disables SmartScreen.
 - **Unverified files execution**: **Block** end users from running files that haven't been verified by Windows SmartScreen. **Not configured** (default) disables this feature, and allows end users to run files that haven't been verified.
 
-## Windows Encryption
+## Windows Encryption  
+
+[BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
 
 ### Windows Settings
-
-Supported on the following Windows 10 editions:
-
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
 
 **Settings**:
 
 - **Encrypt devices**: **Require** to prompt users to enable device encryption. Depending on the Windows edition and system configuration, users may be asked:  
   - To confirm that encryption from another provider isn't enabled
-  - Be required to turn off Bitlocker Drive Encryption, and then turn Bitlocker back on
+  - Be required to turn off BitLocker Drive Encryption, and then turn BitLocker back on
     
     If Windows encryption is turned on while another encryption method is active, the device might become unstable. 
 - **Encrypt storage card (mobile only)**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on. This setting only applies to Windows 10 mobile devices.
 
 ### BitLocker base settings
-
-Supported on the following Windows 10 editions:
-
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
-- Professional
 
 Base settings are universal BitLocker settings for all types of data drives. These settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
 
@@ -165,13 +139,6 @@ Base settings are universal BitLocker settings for all types of data drives. The
   - **Encryption for removable data-drives**: Choose the encryption method for removable data drives. If the removable drive is used with devices that aren't running Windows 10, then we recommend you use the AES-CBC algorithm.
 
 ### BitLocker OS drive settings
-Supported on the following Windows 10 editions:
-
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
-- Professional
 
 These settings apply specifically to operating system data drives.
 
@@ -202,14 +169,6 @@ These settings apply specifically to operating system data drives.
 
 ### BitLocker fixed data-drive settings
 
-Supported on the following Windows 10 editions:
-
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
-- Professional
-
 **Settings**:
 
 - **Write access to fixed data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
@@ -226,14 +185,6 @@ Supported on the following Windows 10 editions:
 
 ### BitLocker removable data-drive settings
 
-Supported on the following Windows 10 editions:
-
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
-- Professional
-
 **Settings**:
 
 - **Write access to removable data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
@@ -241,15 +192,7 @@ Supported on the following Windows 10 editions:
 
 ## Windows Defender Exploit Guard
 
-Supported on the following Windows 10 editions:
-
-- Home
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
+[Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard)
 
 Use [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard) to manage and reduce the attack surface of apps used by your employees.
 
@@ -334,18 +277,7 @@ Block **User editing of the exploit protection interface** by uploading an XML f
 
 ## Windows Defender Application Control
 
-Supported on the following Windows 10 editions:
-
-**Mobile Device Management (MDM)**: 
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
-
-**Group policy management**: 
-- Enterprise
+[WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp)  
 
 Use **Application control code integrity policies** to choose additional apps that are audited, or are trusted to run by Windows Defender Application Control. Windows components and all apps from the Windows store are automatically trusted to run.
 
@@ -355,9 +287,8 @@ Once enabled, Application Control can only be disabled by changing the mode from
 
 ## Windows Defender Credential Guard
 
-Supported on the following Windows 10 editions:
+[Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard)
 
-- Enterprise
 
 Windows Defender Credential Guard protects against credential theft attacks. It isolates secrets so that only privileged system software can access them.
 
@@ -379,15 +310,7 @@ When you enable Credential Guard, the following required features are also enabl
 
 ## Windows Defender Security Center
 
-Supported on the following Windows 10 editions:
-
-- Home
-- Professional
-- Business
-- Enterprise
-- Education
-- Mobile
-- Mobile Enterprise
+[Policy CSP - WindowsDefenderSecurityCenter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter)
 
 Windows Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and run some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
 
@@ -412,13 +335,8 @@ Provide IT contact information to appear in the Windows Defender Security Center
 
 ## Local device security options
 
-Supported on the following Windows 10 editions:
- 
-- Home
-- Professional
-- Business
-- Enterprise
-- Education
+[Policy CSP - LocalPoliciesSecurityOptions](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions)  
+
 
 Use these options to configure the local security settings on Windows 10 devices.
 
