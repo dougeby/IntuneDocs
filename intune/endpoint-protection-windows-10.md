@@ -159,9 +159,9 @@ Custom Firewall rules support the following options:
 
 #### IP address settings  
 - **Local addresses**   Windows CSP: [FirewallRules/FirewallRuleName/LocalPortRanges]()  
-**Default**: Any address  
+  **Default**: Any address  
 
-Select **Any address** or **Specified address**.  
+  Select **Any address** or **Specified address**.  
 
   When you use *Specified address*, you add one or more addresses as a comma-separated list of local addresses that are covered by the rule. Valid tokens include:  
   - Use an asterisk “*” for *any* local address. If you use an asterisk, it must be the only token you use.  
@@ -214,10 +214,10 @@ Select **Any address** or **Specified address**.
   Windows CSP: [FirewallRules/FirewallRuleName/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
 
   Select from the following options:  
-  - Any 
-  - Remote access
-  - Wireless
-  - Local area network
+  - **Any** 
+  - **Remote access**
+  - **Wireless**
+  - **Local area network**
 
 - **Only allow connections from these users**  
   **Default**: All users *(Defaults to all uses when no list is specified)*
