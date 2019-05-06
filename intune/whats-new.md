@@ -50,6 +50,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 <!-- ########################## -->
 
+## Week of May 6, 2019 
+
+### Device configuration
+
+#### Updated PFX Certificate Connector for Microsoft Intune <!-- doc-vso 1521237  -->  
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
+
 ## Week of April 22, 2019
 
 ### Use Compliance Manager to create assessments for Microsoft Intune<!-- 4404750 -->
@@ -214,7 +221,7 @@ You can now add scope tags to Apple VPP tokens. Only users assigned with the sam
 ### Device configuration
 
 #### Updated certificate connectors  <!-- ICM 113304612 -->
-We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ### App management
 
