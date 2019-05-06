@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,25 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 <!-- ########################## -->
 
+## Week of May 6, 2019 
+
+### Device configuration
+
+#### Network Access Control (NAC) support for F5 Access for iOS devices <!-- 4500808 -->
+
+F5 released an update to BIG-IP 13 that allows NAC functionality for F5 Access on iOS in Intune. To use this feature:
+
+- Update BIG-IP to 13.1.1.5 refresh. BIG-IP 14 isn't supported.
+- Integrate BIG-IP with Intune for NAC. Steps in [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Check the **Enable Network Access Control (NAC)** setting in the VPN profile in Intune.
+
+To see the available setting, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+
+Applies to: iOS
+
+#### Updated PFX Certificate Connector for Microsoft Intune <!-- doc-vso 1521237  -->  
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
+
 ## Week of April 22, 2019
 
 ### Use Compliance Manager to create assessments for Microsoft Intune<!-- 4404750 -->
@@ -78,7 +97,7 @@ In the following example, you see the breakdown for GDPR controls. Microsoft cov
 Intune app protection policies (APP) on Android devices now uses an OpenSSL encryption library that is FIPS 140-2 compliant. For more information, see the [encryption](app-protection-policy-settings-android.md#encryption) section of [Android app protection policy settings in Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### Enable Win32 app dependencies <!-- 2617348  -->
-As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](apps-win32-app-management.md). This functionality is available only after the Intune Management agent has been upgraded to 1904 version (greater than 1.18.120.0), which could take one or two additional weeks after we upgrade the service to 1904.
+As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](apps-win32-app-management.md). 
 
 #### App version installation information for Microsoft Store for Business apps <!-- 3537391   -->
 App installation reports include app version information for Microsoft Store for Business apps. In Intune, select **Client apps** > **Apps**. Select a **Microsoft Store for Business app** and then select **Device install status** under the **Monitor** section.
@@ -114,7 +133,7 @@ Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
 
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
-You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end-users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
+You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
 To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
 
@@ -130,7 +149,7 @@ To learn more about this feature, go to [Use and manage Android Enterprise devic
 Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
-We've added two *User experience settings* settings to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
+We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
 - Block or allow users to [scan for Windows updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Manage the [Windows Update notification level](windows-update-settings.md#windows-update-notification-level) that users see.
 
@@ -214,7 +233,7 @@ You can now add scope tags to Apple VPP tokens. Only users assigned with the sam
 ### Device configuration
 
 #### Updated certificate connectors  <!-- ICM 113304612 -->
-We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ### App management
 
@@ -383,7 +402,7 @@ In Intune, select **Client apps** > **Apps** > "App name" > **Device install sta
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new-app-ui). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
 
 
 ### Device configuration
