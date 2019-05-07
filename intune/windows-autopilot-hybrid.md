@@ -199,7 +199,7 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 
 ## (Optional) Turn on the enrollment status page
 
-1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 1. In the **Enrollment Status Page** pane, select **Default** > **Settings**.
 1. In the **Show app and profile installation progress** box, select **Yes**.
 1. Configure the other options as needed.
