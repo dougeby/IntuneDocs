@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -162,6 +162,7 @@ To use the device compliance-related features in the Azure portal, you must crea
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows 10 and later](compliance-policy-create-windows.md)
+  - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
   - [Windows 8.1 and Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
 
 - [Reference for policy entities](reports-ref-policy.md) has information about the Intune Data Warehouse policy entities.
