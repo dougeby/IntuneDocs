@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -191,7 +191,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 3. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
    > [!NOTE]
-   > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
+   > Depending on the platform you chose in **Step 2**, you may or may not have an option to choose the **Destination store** for the certificate.
 
    ![Create a profile and upload a trusted certificate](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
