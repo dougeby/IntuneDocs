@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/02/2019
+ms.date: 05/07/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -157,19 +157,20 @@ These settings are added to a device configuration profile in Intune, and then a
 - **App store**: **Block** prevents access to the app store on supervised devices. **Not configured** allows access.
   - **Installing apps from App Store (supervised only)**: Choose **Block** to block the app store from the device home screen. End users can continue to use iTunes or the Apple Configurator to install apps. **Not configured** allows the app store on the home screen.
   - **Automatic app downloads (supervised only)**: Choose **Block** to prevent automatic downloading of apps bought on other devices. It doesn't affect updates to existing apps. **Not configured** allows apps bought on other iOS devices to download on the device.
-- **Password to access app store**: **Require** the user to enter a password before they can visit the app store. **Not configured** allows access to the app store, without entering a password.
+- **Require iTunes Store password for all purchases**: **Require** the user to enter the Apple ID password for each in-app or ITunes purchase. **Not configured** allows purchases without prompting for a password every time.
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** allows store purchases within a running app.
 - **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store.
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** allows the user to download books with the "Erotica" category.
 - **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
-  - **Allow managed apps to write contacts to unmanaged contacts accounts**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
+  - **Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
+  
+    To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
+
+  - **Allow unmanaged apps to read from managed contacts accounts (supervised only)**: When set to **Allow**, users can add any person's iContacts app contact information into Outlook. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
   
 - **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** allows any document to be viewed in corporate managed apps.
-  - **Allow unmanaged apps to read from managed contacts accounts**: When set to **Allow**, users can add any person's iContacts app contact information into Outlook. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.
-  
-    To use this setting, set the **Viewing non-corporate documents in corporate apps** setting to **Block**.
   
 - **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. It stops managed apps from sending data using Airdrop. 
 - **Adding Game Center friends (supervised only)**: **Block** prevents users from adding Game Center friends. **Not configured** allows the user to add friends in Game Center.
@@ -186,6 +187,11 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Siri while device is locked**: Choose **Block** to prevent access to Siri when the device is locked. **Not configured** allows using the Siri voice assistant on the device when it's locked.
   - **Siri profanity filter (supervised only)**: **Require** prevents Siri from dictating, or speaking profane language.
   - **Siri to query user-generated content from the internet (supervised only)**: **Block** prevents Siri from accessing websites to answer questions. **Not configured** allows Siri to access user-generated content from the internet.
+  - **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side.
+
+    This feature applies to:  
+    - iOS 12.2 and later
+
 - **Apple News (supervised only)**: Choose **Block** to prevent access to the Apple News app on the device. **Not configured** allows using the Apple News app.
 - **iBooks store (supervised only)**: **Block** prevents access to the iBooks store. **Not configured** allows users to browse and buy books from the iBooks store.
 - **Messages app on the device (supervised only)**: Choose **Block** so users can't use the Messages app on the device. **Not configured** allows using the Messages app to send and read text messages.
@@ -261,6 +267,11 @@ To add apps to these lists, you can:
   - iOS 11.0 and later
 
 - **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Not configured** (default) keeps the personal hotspot configuration as the default set by the user.
+- **User modification of Personal Hotspot (supervised only)**: When set to **Block**, the user can't change the personal hotspot setting. **Not configured** (default) allows end users to enable or disable their Personal Hotspot.
+
+  This feature applies to:  
+  - iOS 12.2 and later
+
 - **Join Wi-Fi networks only using configuration profiles (supervised only)**: **Require** forces the device to use only Wi-Fi networks set up through Intune configuration profiles. **Not configured** (default) allows the device to use other Wi-Fi networks.
 - **Cellular usage rules (managed apps only)**: Define the data types that managed apps can use when on cellular networks. Your options:
   - **Block use of cellular data**: Block using cellular data for **All managed apps** or **Choose specific apps**.
