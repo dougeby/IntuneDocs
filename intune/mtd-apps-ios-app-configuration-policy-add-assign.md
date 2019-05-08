@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -208,6 +208,9 @@ Choose the section that corresponds to your MTD provider:
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### Pradeo app configuration policy
+Pradeo doesn't support application configuration policy on iOS.  Instead, to get a configured app, work with Pradeo to implement custom IPA or APK files that are preconfigured with the settings you want.
+
 
 ### Better Mobile app configuration policy
 
