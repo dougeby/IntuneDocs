@@ -68,7 +68,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
   - **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens.
 
-    This setting is available when the **Screenshots** setting is allowed.
+    This setting is available when the **Screenshots** setting is set to not configured and screenshots are allowed.
 
 - **Students must request permission to leave Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever.
 - **Teachers can automatically lock devices or apps in the Classroom app**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets teachers lock a student's device or app without the student's approval. **Not configured** (default) requires the student to agree before the teacher can lock the device or app.
