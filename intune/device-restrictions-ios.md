@@ -267,7 +267,9 @@ To add apps to these lists, you can:
   - iOS 11.0 and later
 
 - **Personal Hotspot**: **Block** turns off the personal hotspot on the users' device with every device sync. This setting might not be compatible with some carriers. **Not configured** (default) keeps the personal hotspot configuration as the default set by the user.
-- **User modification of Personal Hotspot (supervised only)**: When set to **Block**, the user can't change the personal hotspot setting. **Not configured** (default) allows end users to enable or disable their Personal Hotspot.
+- **User modification of Personal Hotspot (supervised only)**: When set to **Block**, the user can't change the personal hotspot setting. **Not configured** (default) allows end users to enable or disable their personal hotspot.
+
+  If you block this setting and block the **Personal Hotspot** setting, the personal hotspot is turned off.
 
   This feature applies to:  
   - iOS 12.2 and later
