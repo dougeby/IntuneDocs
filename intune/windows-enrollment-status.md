@@ -50,14 +50,14 @@ You can also set the priority order for each profile to account for conflicting 
 
 To turn on the enrollment status page, follow the steps below.
  
-1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. In the **Enrollment Status Page** blade, choose **Default** > **Settings**.
 3. For **Show app and profile installation progress**, choose **Yes**.
 4. Choose the other settings that you want to turn on and then choose **Save**.
 
 ## Create enrollment status page profile and assign to a group
 
-1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)** > **Create profile**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page** > **Create profile**.
 2. Provide a **Name** and **Description**.
 3. Choose **Create**.
 4. Choose the new profile in the **Enrollment Status Page** list.
@@ -68,7 +68,7 @@ To turn on the enrollment status page, follow the steps below.
 
 A device or user might be in multiple groups and have multiple enrollment status page profiles. To deal with such conflicts, you can set the priorities for each profile. If someone has more than one enrollment status page profile, only the profile with the highest priority will be applied.
 
-1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. Hover over the profile in the list.
 3. Using the three vertical dots, drag the profile to the desired position on the list.
 
@@ -76,7 +76,7 @@ A device or user might be in multiple groups and have multiple enrollment status
 
 You can specify which apps need to be installed before the user can access the desktop.
 
-1. In Intune, choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In Intune, choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. Choose a profile > **Settings**.
 3. Choose **Yes** for **Show app and profile installation progress**.
 4. Choose **Yes** for **Block device use until all apps and profiles are installed**.
