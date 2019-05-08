@@ -162,7 +162,7 @@ You assign the settings to Azure AD groups of users. If that user has the target
 
 ## How to set Microsoft Edge as the default protected browser for your organization
 
-This setting allows you to configure which browser app your users will be directed to use. This application coonfiguration policy setting should be targeted to Intune managed Apps from which the web link is opened. If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
+This setting allows you to configure which browser app your users will be directed to use. This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened. If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
 - If the user doesn't have either Managed Browser or Microsoft Edge downloaded, this app config setting will determine which app the user will be prompted to download. 
 - If the user has both the Managed Browser and Microsoft Edge downloaded, this app config setting will determine which browser corporate resources will be launched in. 
 
