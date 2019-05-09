@@ -115,7 +115,7 @@ You can now distribute the Windows devices to your users. When they sign in for 
 
 ## Clean up resources
 
-If you don't want to use Autopilot devices any more, you can delete them.
+If you don't want to use Autopilot devices anymore, you can delete them.
 
 1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
