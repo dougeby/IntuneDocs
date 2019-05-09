@@ -1,12 +1,12 @@
 ---
 title: Set up a telecom expense management service in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: 
-description: Integrate Intune with the Saaswedo telecom expense management service.
+description: Integrate Microsoft Intune with the Saaswedo telecom expense management service to monitor data usage and set thresholds or limits on Android and iOS devices.
 keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -32,25 +32,27 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Using Intune, you can manage telecom expenses from data usage on organization-owned mobile devices. Intune integrates with Saaswedo’s [Datalert telecom expense management](http://datalert.biz/get-started) solution, which is a partner software developer. Datalert is real-time telecom expense management software that lets you manage telecom data usage. It helps you avoid costly and unexpected data and roaming overages for your Intune-managed devices.
+Using Intune, you can manage telecom expenses from data usage on organization-owned mobile devices. Intune integrates with Saaswedo’s [Datalert telecom expense management](http://datalert.biz/get-started). Datalert is a real-time telecom expense management solution that manages telecom data usage. It can help avoid costly and unexpected data and roaming charges for your Intune-managed devices.
 
-The integration with Datalert allows you to centrally set, monitor, and enforce roaming and domestic data usage limits. Automated alerts are triggered when the limits exceed your defined thresholds. You can also configure the service to apply different actions to individuals or groups, such as disabling roaming or exceeding the threshold. The Datalert management console includes reports that show data usage and monitoring information.
+The integration with Datalert can set, monitor, and enforce roaming and domestic data usage limits. When the limits exceed your defined thresholds, alerts are automatically triggered. You can also configure the service to apply different actions, such as disabling roaming or exceeding the threshold, to individuals or groups. The Datalert management console includes reports that show data usage and monitoring information.
 
 The following image shows how Intune integrates with Datalert:
 
   ![Diagram of Intune and Datalert integration](./media/tem-datalert-intune-solution-diagram.png)
 
+To use the Datalert service with Intune, there are some configuration settings in Datalert and Intune. This article shows you how to:
 
-Before you use the Datalert service with Intune, you need to configure settings in the Datalert console and in Intune. The connection must be turned on for the Datalert service and for Intune. If the Datalert side of the connection is enabled, but not the Intune side, Intune receives the communication, but ignores it.
-
-This article shows you how to:
-
-- Configure settings in the Datalert console and in Intune
-- Turn on the for the Datalert service and for Intune
+- Configure settings in the Datalert console to connect the Datalert service to Intune.
+- Confirm this connection is active and enabled in Intune.
+- Use Intune to add the Datalert app to your devices.
+- Turn off the Datalert service and for Intune (optional).
 
 ## Supported platforms
 
-- Android 4.4 and newer devices that are KNOX capable (Samsung)
+- Android 4.4 and newer devices that are Knox capable (Samsung)
+
+  [Android versions that support Knox](https://seap.samsung.com/faq/what-versions-android-support-knox-standard-and-knox-premium-sdks-0) (opens Samsung's web site) lists the Knox supported versions.
+
 - iOS 8.0 and later
 
 ## Prerequisites
@@ -58,13 +60,13 @@ This article shows you how to:
 - A subscription to Microsoft Intune, and access to the [Azure portal](https://portal.azure.com)
 - A subscription to [Datalert](http://www.datalert.biz/) (opens Datalert's web site)
 
-## List of telecom expense management providers
+## Telecom expense management providers
 
 Intune integrates with the following telecom expense management provider:
 
 - [Saaswedo Datalert telecom expense management service](http://www.datalert.biz/) (opens Datalert's web site)
 
-## Deploy the Intune and Datalert integrated solution
+## Deploy the Intune and Datalert solution
 
 ### Step 1: Connect the Datalert service to Intune
 
@@ -74,11 +76,11 @@ Intune integrates with the following telecom expense management provider:
 
 3. Select **Unblock**. **Unblock** allows you to change or update the settings on the page.
 
-4. In **Intune / Datalert Connection** > **Server MDM** > select **Microsoft Intune**.
+4. In **Intune / Datalert Connection** > **Server MDM**, select **Microsoft Intune**.
 
 5. For **Azure AD domain**, enter your Azure tenant ID. Select **Connection**.
 
-    When you select **Connection**, the Datalert service checks in with Intune to confirm there aren't any pre-existing Datalert connections. After a few moments, a Microsoft sign in page appears, followed by the Datalert Azure authentication.
+    When you select **Connection**, the Datalert service checks in with Intune. It confirms there aren't any existing Datalert connections. After a few moments, a Microsoft sign in page appears, followed by the Datalert Azure authentication.
 
 6. On the Microsoft authentication page, select **Accept**.
 
@@ -106,9 +108,9 @@ Intune integrates with the following telecom expense management provider:
 
    ![Datalert page showing successful connection](./media/tem-datalert-mdm-profiles.png)
 
-### Step 2: Check that the telecom expense management feature is Active in Intune
+### Step 2: Confirm telecom expense management is active in Intune
 
-After you complete Step 1, your connection is automatically enabled. In Intune, the connection status shows **Active**. The following steps show you how to check the status:
+After you complete Step 1, your connection is automatically enabled. In Intune, the connection status shows **Active**. To confirm the status is active, use the following steps:
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **intune** > select **Intune**. Or, go directly to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
@@ -116,28 +118,28 @@ After you complete Step 1, your connection is automatically enabled. In Intune, 
 
    ![Intune page showing datalert connection status Active](./media/tem-azure-portal-enable-service.png)
 
-### Step 3: Deploy the Datalert app to organization enrolled devices
+### Step 3: Deploy the Datalert app to devices
 
 To confirm that data usage from only organization-owned lines is collected, be sure to:
 
-- Create device categories in Intune
-- Target the Datalert app to only organizational phones
+- Create device categories in Intune.
+- Target the Datalert app to only organizational phones.
 
-#### Define device categories and device groups mapped to the categories
+This section lists these steps.
+
+#### Create device categories and device groups mapped to your categories
 
 Depending on your organizational needs, create at least two device categories, such as Corporate and Personal. Then, create dynamic device groups for each category. You can create more categories for your organization, as needed.
 
-To create device categories, see [map devices to groups](device-group-mapping.md).
+To create device categories in Intune, see [map devices to groups](device-group-mapping.md).
 
-These categories are shown to users during enrollment. Depending on the category users choose, the enrolled device is moved to the corresponding device group.
+These categories are shown to users during enrollment ([enroll Android devices](android-enroll.md)). Depending on the category users choose, the enrolled device is moved to the corresponding device group.
 
   ![Screenshot of the Add a policy pane](./media/tem-dynamic-membership-rules.png)
 
 #### Add the Datalert app to Intune
 
-The following steps add the Datalert app for each platform. As an example, iOS is used.
-
-[Add apps to Microsoft Intune](apps-add.md) has more specific information on these steps.
+The following steps add the Datalert app. As an example, iOS is used. [Add apps](apps-add.md) and [use scope tags](scope-tags.md) have more specific information on these steps.
 
 1. In **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)**, select **Client apps** > **Apps** > **Add**.
 
@@ -151,7 +153,7 @@ The following steps add the Datalert app for each platform. As an example, iOS i
 
 5. Enter any additional properties, such as app information and scope tags:
 
-   ![Enter the app properties, including the name, description, choose the OS, and more settings](./media/tem-steps-to-create-the-app.png)
+   ![Enter the app properties, including the name, description, choose the OS, and more settings to the app in Intune](./media/tem-steps-to-create-the-app.png)
 
 6. Select **OK** > **Add** to save your changes. The Datalert app is shown in the list.
 
@@ -161,23 +163,23 @@ The following steps add the Datalert app for each platform. As an example, iOS i
 
 2. Select **Assignments** > **Add group**. Choose how the app is assigned. [Assign apps to groups in Intune](apps-deploy.md) has more details on these settings.
 
-    Choose to make the app installation required or optional for the group. The following example shows the installation as required. When required, users must install the Datalert app after enrolling their device.
+    In these steps, you'll choose to make the app installation required or optional for the group. The following example shows the installation as required. When required, users must install the Datalert app after enrolling their device.
 
    ![Screenshot of the Add a policy pane](./media/tem-assign-datalert-app-to-device-group.png)
 
-### Step 4: Add corporate paid phone lines to the Datalert console
+### Step 4: Add organization phone lines to the Datalert console
 
-Intune and Datalert services are now configured to communicate with each other. Next, add your organization paid phone lines to the Datalert console, and enter thresholds and actions for any cellular or roaming usage violations. You can manually add corporate paid phone lines to the Datalert console, or automatically add them after the device is enrolled in Intune.
+Intune and Datalert services are now configured to communicate with each other. Next, add your organization paid phone lines to the Datalert console. And, enter thresholds and actions for any cellular or roaming usage violations. You can manually add corporate paid phone lines to the Datalert console, or automatically add them after the device is enrolled in Intune.
 
-To set these items, go to the [Datalert setup for Microsoft Intune page](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup). Under the **Settings** tab, follow the steps in the setup wizard.
+To set these items, go to the [Datalert setup for Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (opens Datalert's web site). Under the **Settings** tab, follow the steps in the setup wizard.
 
   ![Screenshot of the Add a policy pane](./media/tem-add-phone-lines-to-datalert-console.png)
 
 The Datalert service is now active. It starts monitoring data usage, and disabling cellular and roaming data on devices that exceed the configured usage limits.
 
-## Client enrollment experience
+## End user enrollment
 
-For the end-user experience, the following article may help:
+For the end-user experience, the following articles may help:
 
 - [Enroll your iOS device in telecom expense management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
 - [Enroll your Android device in telecom expense management](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
@@ -188,13 +190,12 @@ For the end-user experience, the following article may help:
 2. Set **Enable Telecom Expense Management and block cellular or roaming data on devices that exceed usage quotas you configure** to **Disable**.
 3. **Save** your changes.
 
-#### Important
-
-If you disable the Datalert service in Intune:
-
-- All the actions that are applied to devices due to past violations of the usage limits, are undone.
-- Users are no longer blocked from data access and roaming.
-- Intune still receives the signals coming from the service, but ignores them.
+> [!IMPORTANT]
+> If you disable the Datalert service in Intune:
+>
+> - All the actions that are applied to devices due to past violations of the usage limits, are undone.
+> - Users are no longer blocked from data access and roaming.
+> - Intune still receives the signals coming from the service, but Intune ignores the signals.
 
 ## Next steps
 
