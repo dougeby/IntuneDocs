@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Windows security baselines settings for Intune 
+title: Intune security baselines settings for Windows 10 
 titleSuffix: Microsoft Intune
-description: Windows security baseline settings supported by Intune
+description: Intune security baseline settings for managing Windows 10  
 author: brenduns
 ms.author: brenduns
 manager: dougeby

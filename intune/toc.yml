@@ -768,8 +768,12 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
-      - name: Security baseline settings
-        href: security-baseline-settings-windows.md
+      - name: Security baselines
+        items: 
+        - name: Windows 10 baseline settings
+          href: security-baseline-settings-windows.md
+        - name: Windows Defender ATP baseline settings 
+          href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
         href: windows-update-settings.md
     - name: Windows Holographic for Business
