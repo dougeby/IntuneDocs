@@ -193,7 +193,7 @@ For more information, [BitLocker Group Policy settings](https://docs.microsoft.c
 ## Device Control  
 
 - **Scan removable drives during a full scan**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) -  When set to *Yes*, Windows Defender scans for malicious and unwanted software in removable drives, like flash drives, during a full scan. Windows Defender Antivirus scans all files on USB devices before files on the USB device can run.
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) -  When set to *Yes*, Defender scans for malicious and unwanted software in removable drives, like flash drives, during a full scan. Defender Antivirus scans all files on USB devices before files on the USB device can run.
 
   Related setting in this list: *Defender/AllowFullScanOnMappedNetworkDrives*  
 
@@ -261,13 +261,13 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
 
 - **Expedite telemetry reporting frequency** - *Configuration/TelemetryReportingFrequency*  
 
-  Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.  
+  Expedite Microsoft Defender Advanced Threat Protection telemetry reporting frequency.  
 
   **Default**: Yes
 
 - **Sample sharing for all files** - *Configuration/SampleSharing*  
 
-  Returns or sets the Windows Defender Advanced Threat Protection Sample Sharing configuration parameter.  
+  Returns or sets the Microsoft Defender Advanced Threat Protection Sample Sharing configuration parameter.  
 
   **Default**: Yes
 
@@ -420,7 +420,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: User defined
 
 - **Behavior monitoring**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Set to *Yes* to turn on Windows Defender Behavior Monitoring functionality. Embedded in Windows 10, Windows Defender Behavior Monitoring sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Windows Defender ATP.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Set to *Yes* to turn on Windows Defender Behavior Monitoring functionality. Embedded in Windows 10, Windows Defender Behavior Monitoring sensors collect and process behavioral signals from the operating system and send this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.  
 
   **Default**: Yes
 

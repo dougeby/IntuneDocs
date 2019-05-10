@@ -442,7 +442,7 @@
             items:
             - name: Sophos Mobile and Intune integration
               href: sophos-mtd-connector-integration.md
-      - name: Windows Defender ATP
+      - name: Microsoft Defender ATP
         href: advanced-threat-protection.md    
       - name: Security baselines
         href: security-baselines.md
@@ -772,7 +772,7 @@
         items: 
         - name: Windows 10 baseline settings
           href: security-baseline-settings-windows.md
-        - name: Windows Defender ATP baseline settings 
+        - name: Microsoft Defender ATP baseline settings 
           href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
         href: windows-update-settings.md
