@@ -63,7 +63,7 @@ When you select a device, Intune displays the **Device encryption status** pane.
 
 This pane provides the following details:  
 - **Device name** – The name of the device you're viewing.  
-- **Encryption readiness** - An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM. (See Encryption readiness in he preceding section for more details.)
+- **Encryption readiness** - An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM. (See Encryption readiness in the preceding section for more details.)
 - **Encryption status** - Whether the OS drive is encrypted.  
 - **Profiles** – A list of the *Device configuration* profiles that apply to this device and include the following Profile type and settings:  
   - Profile type = *Endpoint protection*  
