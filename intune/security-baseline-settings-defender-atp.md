@@ -64,13 +64,13 @@ While using Microsoft Edge, Microsoft Defender Application Guard protects your e
     **Default**: Block both  
 
 - **Windows network isolation policy – Enterprise network domain names**  
-  For more informtaion, see [Policy CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) in the Windows documentation.
+  For more information, see [Policy CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) in the Windows documentation.
   
   Specify a list of Enterprise resource as domains, IP address ranges, and network boundaries that are hosted in the cloud that Application Guard treats as enterprise sites.  
 
-  **Defualt**: securitycenter.windows.com
+  **Default**: securitycenter.windows.com
 
-## Applicaton Reputation  
+## Application Reputation  
 
 For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.
 
@@ -87,7 +87,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
 ## Attach Surface Reduction  
 
 - **Office apps launch child process type**  
-  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – When set to *Block*, Office apps won’t be allowed to create child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access. Creating a child process is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.  
+  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – When set to *Block*, Office apps won’t be allowed to create child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access. Creation of a child process is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.  
 
   **Default**: Block
 
@@ -121,7 +121,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
   **Default**: Block
 
 - **Untrusted USB process type**  
-  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – When set to *Block*, unsigned or untrusted executable files from USB removable drives and SD cards can't run.
+  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – When set to *Block*, unsigned, or untrusted executable files from USB removable drives and SD cards can't run.
 
   Executable files include:
   - Executable files (such as .exe, .dll, or .scr)
@@ -135,7 +135,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
   **Default**: Block
 
 - **Office macro code allow Win32 imports type**  
-  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - When set to *Block*, this rule attempts to block Office files that contain macro code that can import Win32 DLLs. Office files include Word, Excel, PowerPoint, and OneNote. Malware can use macro code in Office files to import and load Win32 DLLs, which can then be used to make API calls to allow further infection throughout the system.  
+  [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) - When set to *Block*, this rule attempts to block Office files that contain macro code that can import Win32 DLLs. Office files include Word, Excel, PowerPoint, and OneNote. Malware can use macro code in Office files to import and load Win32 DLLs, which are then used to make API calls to allow further infection throughout the system.  
 
   **Default**: Block
 
@@ -151,7 +151,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
 
   **Default**: Block
 
-## Bitlocker  
+## BitLocker  
 
 For more information, [BitLocker Group Policy settings](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings) in the Windows documentation.  
 
@@ -204,12 +204,12 @@ For more information, [BitLocker Group Policy settings](https://docs.microsoft.c
 
   This policy provides additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices that are incompatible with DMA device memory isolation and sandboxing.
 
-  This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that can't be controlled by policy or by the user of a device. It has to be supported by the system at the time of manufacturing. 
+  This policy only takes effect when Kernel DMA Protection is supported and enabled by the system firmware. Kernel DMA Protection is a platform feature that can't be controlled by policy or by the user of a device. It must be supported by the system at the time of manufacturing. 
 
   To check if the system supports Kernel DMA Protection, run MSINFO32.exe on the system, and review the *Kernel DMA Protection* field on the Summary page.  
 
   Options include: 
-  - *Device default* - After sign-in or screen unlock, devices with DMA remapping compatible drivers are allowed to enumerate at any time. Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen
+  - *Device default* - After sign in or screen unlock, devices with DMA remapping compatible drivers are allowed to enumerate at any time. Devices with DMA remapping incompatible drivers will only be enumerated after the user unlocks the screen
   - *Allow all* - All external DMA capable PCIe devices will be enumerated at any time
   - *Block all* - Devices with DMA remapping compatible drivers are allowed to enumerate at any time. Devices with DMA remapping incompatible drivers will never be allowed to start and perform DMA at any time.
 
@@ -466,7 +466,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: 2 AM
 
 ## Windows Defender Firewall
-For more information, see [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) in the Windows documenation.
+For more information, see [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) in the Windows documentation.
 
 - **Security association idle time before deletion** - *MdmStore/Global/SaIdleTime*   
   Security associations are deleted after network traffic isn't seen for this number of seconds.  
