@@ -2,12 +2,12 @@
 # required metadata
 
 title: Use security baselines in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure recommended group security settings to protect user and data on devices using Microsoft Intune for mobile device management. Enable bitlocker, configure Windows Defender Advanced Threat Protection, control Internet Explorer, use Smart Screen, set local security policies, require a password, block internet downloads, and more.
+description: Add or configure recommended group security settings to protect user and data on devices using Microsoft Intune for mobile device management. Enable BitLocker, configure Windows Defender Advanced Threat Protection, control Internet Explorer, use Smart Screen, set local security policies, require a password, block internet downloads, and more.
 keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/22/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -48,9 +48,19 @@ Security baselines create a "configuration profile" in Intune. This profile incl
 
 After the profile is assigned, you can monitor the profile, and monitor the baseline. For example, you can see which devices match the baseline, or don't match the baseline.
 
-This article shows you how to use security baselines to create a profile, assign the profile, and monitor the profile.
+This article can help you use security baselines to create a profile, assign the profile, and monitor the profile.
 
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
+
+## Available security baselines  
+
+The following security baselines are available for use with Intune.
+- **Preview: MDM Security Baseline for October 2018**  
+  [View the settings](security-baseline-settings-windows.md)
+
+- **PREVIEW: Windows Defender ATP baseline**  
+  [View the settings](security-baseline-settings-defender-atp.md)
+
 
 ## Prerequisites
 To manage baselines in Intune, your account must have the [Policy and Profile Manager](role-based-access-control.md#built-in-roles) built-in role.
@@ -64,51 +74,36 @@ When using co-managed devices, you must switch the **Device configuration** work
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
-2. Select **Device security** > **Security baselines (preview)**. A list of the available baselines is available. As more baselines are added, you'll see them here:
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909) and then select **Device security** > **Security baselines (preview)**. A list of the available baselines is available. 
 
-    ![See a list of the currently available security baselines in Intune](./media/security-baselines/available-baselines.png)
+    ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
 
-3. Select the baseline you'd like to use > **Create profile**.
-4. In **Basics**, enter the following properties:
 
-    - **Name**: Enter a name for your security baselines profile. For example, enter `pilot Windows 10 MDM baseline - Oct 2018`.
+2. Select the baseline you'd like to use, and then select **Create profile**.  
+
+3. On the **Basics** tab, specify the following properties:
+
+    - **Name**: Enter a name for your security baselines profile. For example, enter *Standard profile for Defender ATP*
     - **Description**: Enter some text that describes what this baseline does. The description is for you to enter any text you want. It's optional, but definitely recommended.
 
-5. Expand **Settings**. In the list, you see all the settings in this security baseline, and what the setting is automatically set to. The settings and their values are recommended, and can be changed by you.
+4. Select the **Configuration** tab to view the available groups of **Settings** in this baseline. Select a group to expand it and view the individual settings it contains. The settings have default configurations for the security baseline. Reconfigure the defaults settings to meet your business needs.  
 
-    ![Expand setting to see all the settings in this security baseline in Intune](./media/security-baselines/sample-list-of-settings.png)
+    ![Expand a group to view the settings for that group](./media/security-baselines/sample-list-of-settings.png)
 
-    Expand some of the settings to check their values. For example, expand **Windows Defender**. Notice some of the settings, and what they're set to:
+5. Select the **Assignments** tab to assign the baseline to groups. Assign the baseline to an existing group, or create a new group using the standard process in the Intune console to complete your configuration.  
 
-    ![See what some of the Windows Defender settings are automatically set to in Intune](./media/security-baselines/expand-windows-defender.png)
+   ![Assign a profile](./media/security-baselines/assignments.png)
+  
+6. When you're ready to deploy the baseline, select the **Review + create** tab to review the details for the baseline. Then, select **Save profile** to save, and deploy the profile. 
 
-6. **Create** the profile. 
-7. Select **Profiles**. Your profile is created, and shown in the list. But, it's not doing anything yet. Next, assign the profile.
+   ![Review the baseline](./media/security-baselines/review.png) 
 
-## Assign the profile
+   As soon as you save, the profile is pushed to devices when they check in with Intune. So, it can happen immediately.
 
-After the profile is created, it's ready to be assigned to your users, devices, and groups. Once assigned, the profile and its settings are applied to the users, devices, and groups you choose.
+   > [!TIP]  
+   > You can save a profile without first assigning it to groups. You can edit the profile at a later time to add groups. 
 
-1. In Intune, select **Security Baselines** > choose a baseline > **Profiles**.
-2. Select your profile > **Assignments**.
-
-    ![Choose your security baseline profile in Intune, and click assignments to deploy the profile](./media/security-baselines/assignments.png)
-
-3. In the **Include** tab, add the groups, users, or devices you want this policy to apply.
-
-    > [!TIP]
-    > Notice that you can also **Exclude** groups. If you apply a policy to **All Users**, consider excluding the administrator groups. In case something happens, you and your administrators don’t want to get locked out.
-
-4. **Save** your changes.
-
-As soon as you save, the profile is pushed to devices when they check in with Intune. So, it can happen immediately.
-
-## Available security baselines  
-
-The following security baselines are avaialable for use with Intune.
-- **Preview: MDM Security Baseline**
-  - Version: [October 2018](security-baseline-settings-windows.md)
+7. After you create the profile, you can edit it by going to **Device security** > **Security baselines**, select the baseline you configured, and then select **Profiles**.  Select the profile and then select **Properties** to edit settings, and select **Assignments** to edit the groups that receive this baseline. 
 
 ## Q & A
 
