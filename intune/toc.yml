@@ -449,9 +449,9 @@
         - name: Security tasks
           href: atp-manage-vulnerabilities.md  
       - name: Security baselines
-        href: security-baselines.md
-        - name: Security baselines
-        items:
+        items: 
+        - name: Security baselines 
+          href: security-baselines.md
         - name: Monitor your baselines
           href: security-baselines-monitor.md
       - name: Endpoint protection
