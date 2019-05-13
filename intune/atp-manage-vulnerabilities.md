@@ -52,10 +52,10 @@ An example workflow:
 - Within Microsoft Defender ATP, a vulnerability for an app named Contoso Media Player v4 is discovered and an admin creates a security task to update that app. The Contoso Media player is an unmanaged app that was deployed with Intune.  
 
   This security task appears in the Intune console with a status of Pending:  
-  ![View the list of security tasks in the Intune console](./media/temp-security-tasks.png)
+  ![View the list of security tasks in the Intune console](./media/atp-manage-vulnerabilities/temp-security-tasks.png)
  
 - The Intune admin selects the security task to view details about the task.  The admin then selects **Accept**, which updates the status in Intune, and in ATP to be *Accepted*.  
-  ![Accept or reject a security task](./media/temp-accept-task.png) 
+  ![Accept or reject a security task](./media/atp-manage-vulnerabilities/temp-accept-task.png) 
  
 - The admin then remediates the task based on the guidance provided.  The guidance varies depending on the type of remediation that’s needed. When available, remediation guidance includes links that open relevant panes for configurations in Intune. 
 
