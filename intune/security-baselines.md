@@ -65,7 +65,7 @@ When using co-managed devices, you must switch the **Device configuration** work
 ## Create the profile
 
 1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
-2. Select **Security Baselines (preview)**. A list of the available baselines is available. As more baselines are added, you'll see them here:
+2. Select **Device security** > **Security baselines (preview)**. A list of the available baselines is available. As more baselines are added, you'll see them here:
 
     ![See a list of the currently available security baselines in Intune](./media/security-baselines/available-baselines.png)
 

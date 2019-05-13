@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -107,9 +107,6 @@ You can also add another action when you create a compliance policy, or update a
          - Enter any **Additional recipients** by selecting groups
     
     - **Remotely lock the noncompliant device**: When the device is noncompliant, lock the device. This action forces the user to enter a PIN or passcode to unlock the device. 
-
-    - **Retire the noncompliant device**: When the device is noncompliant, remove all company data off the device and remove the device from Intune management. To prevent accidental wipe of a device, this action supports a minimum schedule of **30** days.  
-
     
 5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a conditional access policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
 
