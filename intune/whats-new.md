@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 05/13/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -49,6 +49,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->  
 
 <!-- ########################## -->
+
+## Week of May 13, 2019
+
+ ### App management
+
+ #### Outlook signature and biometric settings for  iOS and Android devices <!-- 4050557 -->
+You can now specify if the default signature is enabled in Outlook on iOS and Android devices. Additionally, you can choose to allow users to change the biometric setting in Outlook on iOS.
 
 ## Week of May 6, 2019 
 
