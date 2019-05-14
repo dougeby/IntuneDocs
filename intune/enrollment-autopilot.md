@@ -156,15 +156,17 @@ Prerequisites: Azure Active Directory Company Portal has been configured and Win
 
 ## Delete Autopilot devices
 
-You can delete Windows Autopilot devices that aren't enrolled.
+You can delete Windows Autopilot devices that aren't enrolled into Intune:
 
-1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+- Delete the devices from Windows Autopilot at **Device enrollment** > **Windows enrollment** > **Devices**. Choose the devices you want to delete, then choose **Delete**. Windows Autopilot device deletion can take a few minutes to complete.
 
-2. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+Completely removing a device from your tenant requires you to delete the Intune device, the Azure Active Directory device, and the Windows Autopilot device records. This can all be done from Intune:
 
-3. Under **Windows Autopilot devices**, choose the devices you want to delete, and then choose **Delete**.
+1. If the devices are enrolled in Intune, you must first [delete them from the Intune All devices blade](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
+2. Delete the devices in Azure Active Directory devices at **Devices** > **Azure AD devices**.
+
+3. Delete the devices from Windows Autopilot at **Device enrollment** > **Windows enrollment** > **Devices**. Choose the devices you want to delete, then choose **Delete**. Windows Autopilot device deletion can take a few minutes to complete.
 
 ## Using Autopilot in other portals
 If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your Autopilot deployments. When you use Intune and another portal, Intune isn't able to:  
