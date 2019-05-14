@@ -130,6 +130,9 @@ The following third-party certification authorities support Intune:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub open-source version](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
 
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 

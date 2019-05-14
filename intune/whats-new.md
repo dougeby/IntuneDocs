@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,45 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 <!-- ########################## -->
 
+## Week of May 6, 2019 
+
+### Device configuration
+
+#### Network Access Control (NAC) support for F5 Access for iOS devices <!-- 4500808 -->
+
+F5 released an update to BIG-IP 13 that allows NAC functionality for F5 Access on iOS in Intune. To use this feature:
+
+- Update BIG-IP to 13.1.1.5 refresh. BIG-IP 14 isn't supported.
+- Integrate BIG-IP with Intune for NAC. Steps in [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Check the **Enable Network Access Control (NAC)** setting in the VPN profile in Intune.
+
+To see the available setting, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+
+Applies to: iOS
+
+#### Updated PFX Certificate Connector for Microsoft Intune <!-- doc-vso 1521237  -->  
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
+
+## Week of April 22, 2019
+
+### Use Compliance Manager to create assessments for Microsoft Intune<!-- 4404750 -->
+
+[Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) (opens another Microsoft site) is a workflow-based risk assessment tool in the Microsoft Service Trust Portal. It enables you to track, assign, and verify your organization’s regulatory compliance activities related to Microsoft services. You can create your own compliance assessment with Office 365, Azure, Dynamics, Professional Services, and Intune. Intune has two assessments available - FFIEC and GDPR.
+
+Compliance Manager helps you focus your efforts by breaking down controls - controls managed by Microsoft, and controls managed by your organization. You can complete the assessments, and then export and print the assessments.
+
+[Federal Financial Institutions Examination Council (FFIEC)](https://www.microsoft.com/trustcenter/compliance/FFIEC) (opens another Microsoft site) compliance is a set of standards for online banking issued by FFIEC. It's the most requested assessment for financial institutions that use Intune. It interprets how Intune helps meet FFIEC cybersecurity guidelines related to public cloud workloads. Intune’s FFIEC assessment is the second FFIEC assessment in Compliance Manager.
+
+In the following example, you can see the breakdown for FFIEC controls. Microsoft covers 64 controls. You're responsible for the remaining 12 controls.
+
+![See a sample Intune assessment for FFIEC, including the customer actions and Microsoft actions](./media/intune-ffiec-assessment-status.png)
+
+[General Data Protection Regulation (GDPR)](https://www.microsoft.com/trustcenter/privacy/gdpr/gdpr-overview) (opens another Microsoft site) is a European Union (EU) law that helps protect the rights of individuals and their data. GDPR is the most requested assessment to help comply with privacy regulations. 
+
+In the following example, you see the breakdown for GDPR controls. Microsoft covers 49 controls. You're responsible for the remaining 66 controls.
+
+![See a sample Intune assessment for GDPR, including the customer actions and Microsoft actions](./media/intune-assessment-status.png)
+
 ## Week of April 15, 2019
 
 ### App management
@@ -58,10 +97,10 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 Intune app protection policies (APP) on Android devices now uses an OpenSSL encryption library that is FIPS 140-2 compliant. For more information, see the [encryption](app-protection-policy-settings-android.md#encryption) section of [Android app protection policy settings in Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### Enable Win32 app dependencies <!-- 2617348  -->
-As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](apps-win32-app-management.md).
+As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](apps-win32-app-management.md). 
 
 #### App version installation information for Microsoft Store for Business apps <!-- 3537391   -->
-App installation reports includes app version information for Microsoft Store for Business apps. In Intune, select **Client apps** > **Apps**. Select a **Microsoft Store for Business app** and then select **Device install status** under the **Monitor** section.
+App installation reports include app version information for Microsoft Store for Business apps. In Intune, select **Client apps** > **Apps**. Select a **Microsoft Store for Business app** and then select **Device install status** under the **Monitor** section.
 
 #### Additions to Win32 apps requirement rules <!-- 3676883   -->
 You can create requirement rules based on PowerShell scripts, registry values, and file system information. In Intune, select **Client apps** > **Apps** > **Add**. Then select **Windows app (Win32)** as the **App type** in the **Add app** blade.  Select **Requirements** > **Add** to configure additional requirement rules. Then, select either **File type**, **Registry**, or **Script** as the **Requirement type**. For more information, see [Win32 app management](apps-win32-app-management.md).
@@ -74,6 +113,9 @@ The Device overview page will show the Primary User, also called the User Device
 
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
 For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. The same functionality for available apps will be enabled in a future release. 
+
+#### iOS Third Party Keyboards <!-- 4111843 idready eeready -->
+The Intune app protection policy (APP) support for the **Third Party Keyboards** setting for iOS is no longer supported due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
 
 ### Device configuration
 
@@ -91,7 +133,7 @@ Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
 
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
-You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end-users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
+You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
 To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
 
@@ -107,7 +149,7 @@ To learn more about this feature, go to [Use and manage Android Enterprise devic
 Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
-We've added two *User experience settings* settings to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
+We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
 - Block or allow users to [scan for Windows updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - Manage the [Windows Update notification level](windows-update-settings.md#windows-update-notification-level) that users see.
 
@@ -118,12 +160,9 @@ This update includes new password settings, allows full access to apps in Google
 
 Applies to: Android Enterprise fully managed devices
 
-#### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671  -->
-Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
+#### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
-
-Applies to: Windows 10 and later
+This feature is delayed, and should be included in a future release.
 
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
@@ -167,13 +206,16 @@ We've updated the default timeout message users see when the Enrollment Status P
 ### Device management
 
 #### Retire noncompliant devices  <!-- 1827291   -->
-As part of device compliance policies, we’ve added a new action for noncompliance: [Retire noncompliant devices](actions-for-noncompliance.md#add-actions-for-noncompliance). Use this action to automatically wipe company data from a noncompliant device while also removing that device from being managed by Intune.
+This feature has been delayed and will come in a future release.
 
 
 ### Monitor and troubleshoot
 
 #### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
 When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. For more information, see [Change log for the Intune Data Warehouse API](reports-changelog.md#1903-part-2).
+
+#### Monitor Security Baseline status (public preview) <!-- 3082047 --> 
+We've added a [per-category view](security-baselines-monitor.md#per-category-view) to the monitoring of security baselines. (Security baselines remain in preview). The per-category view displays each category from the baseline along with the percentage of devices that fall into each status group for that category. You can now see how many devices don't match the individual categories, are misconfigured, or are not applicable.
 
 ### Role-based access control
 
@@ -191,7 +233,7 @@ You can now add scope tags to Apple VPP tokens. Only users assigned with the sam
 ### Device configuration
 
 #### Updated certificate connectors  <!-- ICM 113304612 -->
-We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ### App management
 
@@ -309,7 +351,6 @@ Read only access to all Intune data:
 - Security Administrator
 - Security Operator
 - Security Reader
-- Global Reader
 
 For more information, see [Role-based access control](role-based-access-control.md).
 
@@ -361,7 +402,7 @@ In Intune, select **Client apps** > **Apps** > "App name" > **Device install sta
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](https://docs.microsoft.com/intune/whats-new-app-ui). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
 
 
 ### Device configuration

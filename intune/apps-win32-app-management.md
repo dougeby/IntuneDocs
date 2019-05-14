@@ -48,6 +48,12 @@ Use the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?lin
 
 You can download the [Microsoft Win32 Content Prep Tool](https://go.microsoft.com/fwlink/?linkid=2065730) from GitHub as a zip file. The zipped file contains a folder named **Microsoft-Win32-Content-Prep-Tool-master**. The folder contains the prep tool, the license, a readme, and the release notes. 
 
+### Process flow to create .intunewin file
+
+   ![Process flow to create a .intunewin file](./media/prepare-win32-app.svg)
+
+### Run the Microsoft Win32 Content Prep Tool
+
 If you run `IntuneWinAppUtil.exe` from the command window without parameters, the tool will guide you to input the required parameters step by step. Or, you can add the parameters to the command based on the following available command-line parameters.
 
 ### Available command-line parameters 
@@ -76,7 +82,15 @@ Refer to the *license.txt* file by using the relative path *licenses\license.txt
 
 ## Create, assign, and monitor a Win32 app
 
-Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Intune. This type of app is typically written in-house or by a 3rd party. The following steps provide guidance to help you add a Windows app to Intune.
+Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Intune. This type of app is typically written in-house or by a 3rd party. 
+
+### Process flow to add a Win32 app to Intune
+
+   ![Process flow to add a Win32 app to Intune](./media/add-win32-app.svg)
+
+### Add a Win32 app to Intune
+
+The following steps provide guidance to help you add a Windows app to Intune.
 
 ### Step 1: Specify the software setup file
 
@@ -124,8 +138,8 @@ Much like a line-of-business (LOB) app, you can add a Win32 app to Microsoft Int
     For example, if your app filename is **MyApp123**, add the following:<br>
     `msiexec /p “MyApp123.msp”`<p>
     And, if the application is `ApplicationName.exe`, the command would be the application name followed by the command arguments (switches) supported by the package. <br>For example:<br>
-    `ApplicationName.exe /quite`<br>
-    In the above command, the `ApplicaitonName.exe` package supports the `/quite` command argument.<p> 
+    `ApplicationName.exe /quiet`<br>
+    In the above command, the `ApplicationName.exe` package supports the `/quiet` command argument.<p> 
     For the specific arguments supported by the application package, contact your application vendor.
 
 3.	Add the complete uninstall command line to uninstall the app based on the app’s GUID. 

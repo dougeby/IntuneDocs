@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -191,7 +191,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 3. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
 
    > [!NOTE]
-   > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
+   > Depending on the platform you chose in **Step 2**, you may or may not have an option to choose the **Destination store** for the certificate.
 
    ![Create a profile and upload a trusted certificate](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -250,16 +250,21 @@ After importing the certificates to Intune, create a **PKCS imported certificate
 ## What's new for Connectors
 Updates for the two certificate connectors are released periodically. When we update a connector, you can read about the changes here. 
 
-The *PFX Certificates Connector* [supports automatic updates](#requirements), while the Intune Certificate Connector is updated manually.
+The *PFX Certificates Connector for Microsoft Intune* [supports automatic updates](#requirements), while the *Intune Certificate Connector* is updated manually.
+
+### May 6, 2019
+- **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.402**  
+  Changes in this release:  
+  - The polling interval for the connector is reduced from 5 minutes to 30 seconds.
  
 ### April 2, 2019
-- **NDES Certificate Connector - version 6.1904.1.0**  
+- **Intune Certificate Connector - version 6.1904.1.0**  
   Changes in this release:  
   - Fixed an issue where the connector might fail to enroll to Intune after signing in to the connector with a global administrator account.  
   - Includes reliability fixes to certificate revocation.  
   - Includes performance fixes to increase how quickly PKCS certificate requests are processed.  
 
-- **PFX Certificates Connector - version 6.1904.0.401**
+- **PFX Certificates Connector for Microsoft Intune - version 6.1904.0.401**
   > [!NOTE]  
   > Automatic update for this version of the PFX connector is not available until April 11th, 2019.  
 

@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -45,7 +45,16 @@ To appear in the Encryption report, a device must run Windows version 1607 or la
 The report displays the **Device name** for your Windows 10 devices and high-level details about each, including:  
 - **OS version** – Version of Windows.  
 - **TPM version** – The version of the Trusted Platform Module (TPM) chip on the device.  
-- **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM.  
+- **Encryption readiness** – An evaluation of the devices readiness to support BitLocker encryption. Devices can be identified as:
+  - **Ready**: The device can be encrypted by using MDM policy, which requires the device has a TPM and meets the following Windows 10 version and SKU requirements:
+    - Version 1703 or later, of Business, Enterprise, Education
+    - Version 1809 or later, of Pro  
+  
+    For more information, see the [BitLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in the Windows documentation.  
+
+  - **Not ready**: The device doesn't have full encryption capabilities, but still supports encryption. For example, the device might be encrypted manually by a user, or through Group Policy that can be set to allow encrypting without a TMP.
+  - **Not applicable**: There is not enough information to classify this device.  
+
 - **Encryption status** – Whether the OS drive is encrypted.  
 
 
@@ -54,11 +63,11 @@ When you select a device, Intune displays the **Device encryption status** pane.
 
 This pane provides the following details:  
 - **Device name** – The name of the device you're viewing.  
-- **Encryption readiness** - An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM.  
+- **Encryption readiness** - An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM. (See Encryption readiness in the preceding section for more details.)
 - **Encryption status** - Whether the OS drive is encrypted.  
 - **Profiles** – A list of the *Device configuration* profiles that apply to this device and include the following Profile type and settings:  
-    - Profile type = *Endpoint protection*  
-    - Settings > Windows Encryption > Encrypt devices = *Required*  
+  - Profile type = *Endpoint protection*  
+  - Settings > Windows Encryption > Encrypt devices = *Required*  
 
   This list can be of use in locating individual policies for review should the Profile state summary indicate problems.  
 

@@ -2,12 +2,12 @@
 # required metadata
 title: iOS device settings in Microsoft Intune - Azure | Microsoft Docs
 titleSuffix:
-description: Add, configure, or create settings on iOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for back up and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
+description: Add, configure, or create settings on iOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for backup and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 05/02/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -46,7 +46,7 @@ These settings are added to a device configuration profile in Intune, and then a
     This feature applies to:  
     - iOS 9.3.2 and later
 
-- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. In iOS 9.0 and later, this also includes blocking screen recordings. **Not configured** (default) lets the user capture the screen contents as an image or as a video.
+- **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. In iOS 9.0 and later, it also blocks screen recordings. **Not configured** (default) lets the user capture the screen contents as an image or as a video.
   - **Remote screen observation by Classroom app (supervised only)**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Not configured** (default) allows the Apple Classroom app to view the screen.
 
     This feature applies to:  
@@ -124,10 +124,10 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter.
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
-  - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint.
+  - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint. If you have a device running iOS 11.0 or later, blocking this setting also prevents using FaceID authentication to unlock the device. 
 - **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** (default) allows passcodes to be added, changed, or removed.
 
-  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device.
+  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device. If you have a device running iOS 11.0 or later, blocking this setting also stops the user from changing, adding, or removing FaceID authentication. 
 
 - **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
 
@@ -238,13 +238,15 @@ In the show or hide apps list, you can configure one of the following lists on s
 
 To add apps to these lists, you can:
 
-- **Add** the iTunes App store URL of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **Add** the iTunes App store URL, or Bundle ID and app name of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
 - Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
+
+  You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
 
 ## Wireless
 
@@ -310,7 +312,7 @@ Use these settings to configure iOS devices to run specific apps in autonomous s
 
 To add apps, you can:
 
-- Enter the **App name** and **App Bundle ID**, and select **Add**. [Bundle IDs for built-in iOS apps](#bundle-ids-for-built-in-ios-apps) (in this article) includes some apps with their IDs.
+- Enter the **App name** and **App Bundle ID**, and select **Add**. [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) includes some apps with their IDs.
 - **Import** a CSV file with the list of app names and their bundle IDs. Or, **Export** an existing list that includes the apps.
 
 ## Kiosk (supervised only)
@@ -319,7 +321,7 @@ To add apps, you can:
   - **Not configured**: Kiosk settings aren't applied. The device doesn't run in kiosk-mode.
   - **Store App**: Enter the URL to an app in the iTunes App store.
   - **Managed App**: Choose an app you added to Intune.
-  - **Built-In App**: Enter the [bundle ID](#bundle-ids-for-built-in-ios-apps) (in this article) of the built-in app.
+  - **Built-In App**: Enter the [bundle ID](bundle-ids-built-in-ios-apps.md) of the built-in app.
 
 - **Assistive touch**: **Require** the Assistive Touch accessibility setting be on the device. This feature helps users with on-screen gestures that might be difficult for them. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Invert colors**: **Require** the Invert Colors accessibility setting so users with visual impairments can change the display screen. **Not configured** doesn't run or enable this feature in kiosk mode.
@@ -349,57 +351,6 @@ To add apps, you can:
 - **Managed web domains** > **Web Domain URL**; Add one or more URLs to the list. When documents are downloaded from the domains you enter, they're considered managed. This setting applies only to documents downloaded using the Safari browser.
 
 - **Safari password autofill domains** > **Domain URL**: Add one or more URLs to the list. Users can only save web passwords from URLs in this list. This setting applies only to the Safari browser, and to iOS 9.3 and later devices in supervised mode. If you don't specify any URLs, then passwords can be saved from all web sites.
-
-## Bundle IDs for built-in iOS apps
-
-The following list shows the bundle ID of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
-
-| Bundle ID                   | App Name     | Publisher |
-|-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
-| com.apple.calculator        | Calculator   | Apple     |
-| com.apple.mobilecal         | Calendar     | Apple     |
-| com.apple.camera            | Camera       | Apple     |
-| com.apple.mobiletimer       | Clock        | Apple     |
-| com.apple.compass           | Compass      | Apple     |
-| com.apple.MobileAddressBook | Contacts     | Apple     |
-| com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Files        | Apple     |
-| com.apple.mobileme.fmf1     | Find Friends | Apple     |
-| com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
-| com.apple.gamecenter        | Game Center  | Apple     |
-| com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | Health       | Apple     |
-| com.apple.Home              | Home         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
-| com.apple.iMovie            | iMovie       | Apple     |
-| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
-| com.apple.MobileStore       | iTunes Store | Apple     |
-| com.apple.itunesu           | iTunes U     | Apple     |
-| com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.Maps              | Maps         | Apple     |
-| com.apple.MobileSMS         | Messages     | Apple     |
-| com.apple.Music             | Music        | Apple     |
-| com.apple.news              | News         | Apple     |
-| com.apple.mobilenotes       | Notes        | Apple     |
-| com.apple.Numbers           | Numbers      | Apple     |
-| com.apple.Pages             | Pages        | Apple     |
-| com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | Photos       | Apple     |
-| com.apple.podcasts          | Podcasts     | Apple     |
-| com.apple.reminders         | Reminders    | Apple     |
-| com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Settings     | Apple     |
-| com.apple.SiriViewService   | Siri         | Apple     |
-| com.apple.stocks            | Stocks       | Apple     |
-| com.apple.tips              | Tips         | Apple     |
-| com.apple.TV                | TV           | Apple     |
-| com.apple.videos            | Videos       | Apple     |
-| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
-| com.apple.Passbook          | Wallet       | Apple     |
-| com.apple.Bridge            | Watch        | Apple     |
-| com.apple.weather           | Weather      | Apple     |
 
 ## Settings that require supervised mode
 

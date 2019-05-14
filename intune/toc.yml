@@ -397,36 +397,6 @@
       - name: Mobile Threat Defense
         href: mobile-threat-defense.md
         items:
-        - name: Set up Lookout
-          href: lookout-mobile-threat-defense-connector.md
-          items:
-          - name: Lookout and Intune integration
-            href: lookout-mtd-connector-integration.md
-        - name: Set up Symantec
-          href: skycure-mobile-threat-defense-connector.md
-          items:
-          - name: Symantec and Intune integration
-            href: skycure-mtd-connector-integration.md
-        - name: Set up Check Point
-          href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-          items:
-          - name: Check Point and Intune integration
-            href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-        - name: Set up Zimperium
-          href: zimperium-mobile-threat-defense-connector.md
-          items:
-          - name: Zimperium and Intune integration
-            href: zimperium-mtd-connector-integration.md
-        - name: Set up Pradeo
-          href: pradeo-mobile-threat-defense-connector.md
-          items:
-          - name: Pradeo and Intune integration
-            href: pradeo-mtd-connector-integration.md
-        - name: Set up Better Mobile
-          href: better-mobile-threat-defense-connector.md
-          items:
-          - name: Better Mobile and Intune integration
-            href: better-mobile-mtd-connector-integration.md
         - name: Set up Intune for MTD
           items:
           - name: Add MTD apps
@@ -435,6 +405,43 @@
             href: mtd-device-compliance-policy-create.md
           - name: Enable MTD in Intune
             href: mtd-connector-enable.md
+        - name: MTD apps
+          items: 
+          - name: Set up Lookout
+            href: lookout-mobile-threat-defense-connector.md
+            items:
+            - name: Lookout and Intune integration
+              href: lookout-mtd-connector-integration.md
+          - name: Set up Symantec
+            href: skycure-mobile-threat-defense-connector.md
+            items:
+            - name: Symantec and Intune integration
+              href: skycure-mtd-connector-integration.md
+          - name: Set up Check Point
+            href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+            items:
+            - name: Check Point and Intune integration
+              href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+          - name: Set up Zimperium
+            href: zimperium-mobile-threat-defense-connector.md
+            items:
+            - name: Zimperium and Intune integration
+              href: zimperium-mtd-connector-integration.md
+          - name: Set up Pradeo
+            href: pradeo-mobile-threat-defense-connector.md
+            items:
+            - name: Pradeo and Intune integration
+              href: pradeo-mtd-connector-integration.md
+          - name: Set up Better Mobile
+            href: better-mobile-threat-defense-connector.md
+            items:
+            - name: Better Mobile and Intune integration
+              href: better-mobile-mtd-connector-integration.md
+          - name: Set up Sophos Mobile
+            href: sophos-mtd-connector.md
+            items:
+            - name: Sophos Mobile and Intune integration
+              href: sophos-mtd-connector-integration.md
       - name: Windows Defender ATP
         href: advanced-threat-protection.md    
       - name: Security baselines
@@ -715,6 +722,8 @@
           href: wi-fi-settings-ios.md
         - name: Custom
           href: custom-settings-ios.md
+        - name: Bundle IDs for built-in apps
+          href: bundle-ids-built-in-ios-apps.md
     - name: macOS
       items:
       - name: Compliance policy settings
