@@ -1,11 +1,11 @@
 ---
-title: Configure infrastructure to support SCEP certificates with Microsoft Intune - Azure | Microsoft Docs
-description: To use SCEP certificates in Microsoft Intune, configure your on-premises AD domain, create a certification authority, set up the NDES server, and install the Intune Certificate Connector. 
+title: Configure infrastructure to support SCEP certificate profiles with Microsoft Intune - Azure | Microsoft Docs
+description: To use SCEP in Microsoft Intune, configure your on-premises AD domain, create a certification authority, set up the NDES server, and install the Intune Certificate Connector. 
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 05/31/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -26,34 +26,35 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Configure infrastructure to support SCEP certificates with Intune  
+# Configure infrastructure to support SCEP with Intune  
   
-Intune supports use of Simple Certificate Enrollment Protocol (SCEP) certificates to [authenticate connections to your corporate resources](certificates-configure.md). When your infrastructure supports SCEP certificates, you can use SCEP certificate profiles (a type of device profile) to deploy the certificates to your devices. The Intune Certificate Connector is required to use SCEP certificates with Intune.
+Intune supports use of the Simple Certificate Enrollment Protocol (SCEP) to [authenticate connections to your corporate resources](certificates-configure.md). SCEP uses the Certification Authority (CA) certificate in order to secure the message exchange for the Certificate Signing Request (CSR). When your infrastructure supports SCEP, you can use Intune *SCEP certificate* profiles (a type of device profile in Intune) to deploy the certificates to your devices. The Intune Certificate Connector is required to use SCEP certificate profiles with Intune.
 
-The information in this article can help you configure your infrastructure to support SCEP certificates. After your infrastructure is configured, you can [create and deploy SCEP certificates](certificates-profile-scep.md) for use with Intune.  
+The information in this article can help you configure your infrastructure to support SCEP. After your infrastructure is configured, you can [create and deploy SCEP certificate profiles](certificates-profile-scep.md) with Intune.  
 
 > [!TIP]  
-> Intune also supports use of [PKCS#12 certificates](certficates-pfx-configure.md) to authenticate connections from users.  
+> Intune also supports use of [Public Key Cryptography Standards #12 certificates](certficates-pfx-configure.md) to authenticate connections from users.  
 
-## Prerequisites for using SCEP certificates  
-Before you proceed, ensure you've [created and deployed a trusted certificate profile](certificates-configure.md#export-the-trusted-root-ca-certificate) to devices that will use SCEP certificates. SCEP certificate profiles directly reference the trusted certificate profile that you use to provision devices with a Trusted Root Certification Authority (CA) certificate.  
+
+## Prerequisites for using SCEP for certificates  
+Before you proceed, ensure you've [created and deployed a *trusted certificate* profile](certificates-configure.md#export-the-trusted-root-ca-certificate) to devices that will use SCEP certificate profiles. SCEP certificate profiles directly reference the trusted certificate profile that you use to provision devices with a Trusted Root CA certificate.  
 
 ### Servers and server roles  
 The following on-premises infrastructure must run on servers that are domain-joined to your Active Directory, with the exception of the Web Application Proxy Server.  
 - **Certification Authority** – Use a Microsoft Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 with service pack 1, or later. The version of Windows Server you use must remain in support by Microsoft. A Standalone CA is not supported.  For more information, see [Install the Certification Authority]( http://technet.microsoft.com/library/jj125375.aspx). If your CA runs Windows Server 2008 R2 SP1, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).  
 
-- **NDES service** – You must configure a Network Device Enrollment Service (NDES) server role on Windows Server 2012 R2 or later. In a later section of this article, we guide you through [installing NDES](#set-up-ndes).  
+- **NDES server role** – You must configure a Network Device Enrollment Service (NDES) server role on Windows Server 2012 R2 or later. In a later section of this article, we guide you through [installing NDES](#set-up-ndes).  
 
   - The server that hosts NDES must be domain-joined and in the same forest as your Enterprise CA.  
   - You can't use NDES that’s installed on the server that hosts the Enterprise CA.  
   - You’ll install the Intune Certificate connector on the same server that hosts NDES.  
 
-  For information about configuring Windows Server 2012 R2 to host NDES, see [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx). For more information, see [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).  
+  To learn more about NDES, see [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) in the Windows Server documentation, and [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx).  
 
-- **Intune Certificate Connector** – The Intune Certificate Connector is required to use SCEP certificates with Intune. This article will guide you through [installing this connector](#install-the-intune-certificate-connector).  
+- **Intune Certificate Connector** – The Intune Certificate Connector is required to use SCEP certificate profiles with Intune. This article will guide you through [installing this connector](#install-the-intune-certificate-connector).  
 
   The Certificate Connector supports Federal Information Processing Standard (FIPS) mode. FIPS isn’t required, but when it's enabled, you can issue and revoke certificates.  
-  - The connector must run on the same server as the NDES service, a server that runs Windows Server 2012 R2 or later.  
+  - The connector must run on the same server as the NDES server role, a server that runs Windows Server 2012 R2 or later.  
   - The .NET 4.5 Framework is required by the connector and is automatically included with Windows Server 2012 R2.  
   - Internet Explorer Enhanced Security Configuration [must be disabled on the server that hosts NDES](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) and the Intune Certificate Connector.  
 

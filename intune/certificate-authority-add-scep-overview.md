@@ -39,13 +39,13 @@ The API is available on the [Intune SCEP API public GitHub repository](http://gi
 [Integrate with Intune SCEP management solution](scep-libraries-apis.md) provides more details on using the API, its methods, and testing the solution you build.
 
 **Part 2 - Create the application and profile**  
-Using an Azure Active Directory (Azure AD) application, you can delegate rights to Intune to handle SCEP requests coming from devices. The Azure AD application includes application ID and authentication key values that are used within the API solution the developer creates. Administrators can then create and deploy SCEP certificates profiles using Intune. You can also view reports on the deployment status on the devices.
+Using an Azure Active Directory (Azure AD) application, you can delegate rights to Intune to handle SCEP requests coming from devices. The Azure AD application includes application ID and authentication key values that are used within the API solution the developer creates. Administrators can then create and deploy SCEP certificate profiles using Intune. You can also view reports on the deployment status on the devices.
 
 This article provides an overview of this feature from an Administrator-perspective, including creating the Azure AD application.
 
 ## Overview
 
-The following steps provide an overview of issuing SCEP certificates in Intune:
+The following steps provide an overview of using SCEP for certificates in Intune:
 
 1. In Intune, an administrator creates a SCEP certificate profile, and then targets the profile to users or devices.
 2. The device checks in to Intune.

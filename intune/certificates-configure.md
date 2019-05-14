@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -59,14 +59,14 @@ Each individual certificate profile you create supports a single platform. For e
 | Windows 10 and later  | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) |
 
 ## Export the trusted root CA certificate  
-To use PKCS and SCEP certificates, devices must trust your root Certification Authority. To establish this trust, you export the Trusted Root Certification Authority (CA) certificate as a public certificate (.cer) from the issuing CA, or from any device that trusts your issuing CA.  
+To use PKCS and SCEP certificates, devices must trust your root Certification Authority. To establish this trust, you export the Trusted Root Certification Authority (CA) certificate as a public certificate (.cer). You can get this certificate from the issuing CA, or from any device that trusts your issuing CA.  
 
 To export the certificate, refer to the documentation for your Certification Authority. You’ll need to export the public certificate as a .cer file.  Don't export the private key, a .pfx file.  
 
 You’ll use this .cer file when you [create trusted certificate profiles](#create-trusted-certificate-profiles) to deploy that certificate to your devices.  
 
 ## Create trusted certificate profiles  
-Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. Deploying a trusted certificate profile ensures each device recognizes the legitimacy of your CA. SCEP certificate profiles directly reference a trusted certificate profile. PKCS certificate profiles don’t directly reference the trusted certificate profile but do directly reference the server that hosts your Certificate Authority. Deploying a trusted certificate profile to devices ensures this trust is established. When a device doesn’t trust the root CA, the SCEP or PKCS certificate profile policy will fail.  
+Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. Deploying a trusted certificate profile ensures each device recognizes the legitimacy of your CA. SCEP certificate profiles directly reference a trusted certificate profile. PKCS certificate profiles don’t directly reference the trusted certificate profile but do directly reference the server that hosts your CA. Deploying a trusted certificate profile to devices ensures this trust is established. When a device doesn’t trust the root CA, the SCEP or PKCS certificate profile policy will fail.  
 
 Create a separate trusted certificate profile for each device platform you want to support, just as you'll do for SCEP and PCKS certificate profiles.  
 
