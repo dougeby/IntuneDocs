@@ -56,7 +56,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 ### Device configuration
 
 ####  Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
-In public preview, you can use Intune to manage [security tasks for Microsoft Defender Advanced Threat Protection (ATP)](atp-manage-vulnerabilities.md). This Integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
+In public preview, you can use Intune to manage security tasks for Microsoft Defender Advanced Threat Protection (ATP). This Integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671   idstaged-->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
