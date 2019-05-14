@@ -442,11 +442,16 @@
             items:
             - name: Sophos Mobile and Intune integration
               href: sophos-mtd-connector-integration.md
-      - name: Windows Defender ATP
-        href: advanced-threat-protection.md    
+      - name: Microsoft Defender ATP
+        items: 
+        - name: Microsoft Defender ATP
+          href: advanced-threat-protection.md  
+        - name: Security tasks
+          href: atp-manage-vulnerabilities.md  
       - name: Security baselines
-        href: security-baselines.md
-        items:
+        items: 
+        - name: Security baselines 
+          href: security-baselines.md
         - name: Monitor your baselines
           href: security-baselines-monitor.md
       - name: Endpoint protection
