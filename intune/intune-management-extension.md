@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -74,6 +74,9 @@ The Intune management extension has the following prerequisites:
 
     ![Add and use PowerShell scripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
 5. Select **OK** > **Create** to save the script.
+
+> [!NOTE]
+> The PowerShell script will run under admin privilege (by default) when the script is set to user context and the end user on the device has admin privileges.
 
 ## Assign the policy
 
