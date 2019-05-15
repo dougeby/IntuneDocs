@@ -55,7 +55,7 @@ Before you create a profile, review the following articles that detail the endpo
 
 8. After you configure applicable settings, select **Create** on the **Create profile** page.
 
-The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
+   The profile is created and appears on the profiles list page. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
 ## Add custom Firewall rules for Windows 10 devices  
 
@@ -69,6 +69,7 @@ When you plan for profiles with custom Firewall rules, consider the following in
 The Firewall rules that Intune can manage are detailed in the Windows [Firewall configuration service provider]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP). To review the list of custom firewall settings for Windows 10 devices that Intune supports, see [Custom Firewall rules](endpoint-protection-windows-10.md#custom-firewall-rules).   
 
 #### To add custom firewall rules to an Endpoint protection profile  
+
 1. In Intune, go to **Device configuration** > **Profiles** > **Create Profile**.  
 
 2. For *Platform*, select **Windows 10 and later**, and then for *Profile type* select **Endpoint protection**.  
@@ -83,11 +84,12 @@ The Firewall rules that Intune can manage are detailed in the Windows [Firewall 
 
 7. To delete a rule from a profile, select the ellipsis **(…)** for the rule, and then select **Delete**.  
 
-To change the order in which rules display, select the *up arrow, down arrow* icon at the top of the rule list.  
+8. To change the order in which rules display, select the *up arrow, down arrow* icon at the top of the rule list.  
 
 
 
 
 
-## Next steps
+## Next steps  
+
 To assign a profile to groups, see [assign device profiles](device-profile-assign.md).
