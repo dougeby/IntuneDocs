@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 05/07/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -150,16 +150,18 @@ Now that you've installed your token, you can create an enrollment profile for D
     >
     > These are not supported when authenticating with Apple Setup Assistant.
 
-6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you can use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID.
+6. If you chose **Yes** for **Authenticate with Company Portal instead of Apple Setup Assistant**, you can use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. You shouldn't configure a policy to require the app for users, Intune will automatically install the Company Portal on devices with this enrollment profile applied. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID. 
 
     ![Screenshot of install company portal with VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
-7. If you chose a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
+7. If you chose **No** for **Authenticate with Company Portal instead of Apple Setup Assistant**, but you also want to use conditional access or deploy company apps on the devices, you must install the Company Portal on the devices. To do so, choose **Yes** for **Install Company Portal**.  If you would like users to receive the Company Portal without having to authenticate into the app store, choose to **Install Company Portal with VPP** and select a VPP token. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app to deploy correctly.
+
+8. If you chose a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
     This feature is only supported for iOS 11.3.1 and later.
 
    ![Screenshot of single app mode.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
 
-8. Choose **Device Management Settings** and choose if you want devices using this profile to be supervised.
+9. Choose **Device Management Settings** and choose if you want devices using this profile to be supervised.
 
     ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -173,17 +175,17 @@ Now that you've installed your token, you can create an enrollment profile for D
      > [!NOTE]
      > A device enrolled without supervision can only be reset to supervised by using the Apple Configurator. Resetting the device in this manner requires connecting an iOS device to a Mac with a USB cable. Learn more about this on [Apple Configurator docs](http://help.apple.com/configurator/mac/2.3).
 
-9. Choose if you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you can't change this setting without wiping the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
+10. Choose if you want locked enrollment for devices using this profile. **Locked enrollment** disables iOS settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you can't change this setting without wiping the device. Such devices must have the **Supervised** Management Mode set to *Yes*. 
 
-10. Choose if you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
+11. Choose if you want the devices using this profile to be able to **Sync with computers**. If you choose **Allow Apple Configurator by certificate**, you must choose a certificate under **Apple Configurator Certificates**.
 
-11. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
+12. If you chose **Allow Apple Configurator by certificate** in the previous step, choose an Apple Configurator Certificate to import.
 
-12. You can specify a naming format for devices that is automatically applied when they enroll. To create a naming template, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
+13. You can specify a naming format for devices that is automatically applied when they enroll. To create a naming template, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number.
 
-13. Choose **OK**.
+14. Choose **OK**.
 
-14. Choose **Setup Assistant customization** to configure the following profile settings:
+15. Choose **Setup Assistant customization** to configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
 
 
@@ -219,9 +221,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Software Update</strong> | Display the mandatory software update screen. |
     | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
 
-15. Choose **OK**.
+16. Choose **OK**.
 
-16. To save the profile, choose **Create**.
+17. To save the profile, choose **Create**.
 
 ## Sync managed devices
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.

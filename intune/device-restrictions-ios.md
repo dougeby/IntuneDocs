@@ -187,7 +187,7 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Siri while device is locked**: Choose **Block** to prevent access to Siri when the device is locked. **Not configured** allows using the Siri voice assistant on the device when it's locked.
   - **Siri profanity filter (supervised only)**: **Require** prevents Siri from dictating, or speaking profane language.
   - **Siri to query user-generated content from the internet (supervised only)**: **Block** prevents Siri from accessing websites to answer questions. **Not configured** allows Siri to access user-generated content from the internet.
-  - **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side.
+- **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side. This setting is not dependent on the Siri setting being blocked or not configured.
 
     This feature applies to:  
     - iOS 12.2 and later

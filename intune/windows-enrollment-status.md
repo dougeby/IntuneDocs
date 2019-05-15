@@ -36,7 +36,7 @@ ms.collection: M365-identity-device-management
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup using Intune, the Enrollment Status Page displays installation information on the device. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
+During device setup using Intune, the Enrollment Status Page displays installation information about Windows 10 (version 1903 and above) devices. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
