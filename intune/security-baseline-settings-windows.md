@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Windows security baselines settings for Intune 
+title: Intune security baselines settings for Windows 10 
 titleSuffix: Microsoft Intune
-description: Windows security baseline settings supported by Intune
+description: Intune security baseline settings for managing Windows 10  
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -1381,7 +1381,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Yes
   
 - **Behavior monitoring**  
-  Allows or disallows Windows Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
+  Allows or disallows Windows Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
   
   **Default**: Yes
 

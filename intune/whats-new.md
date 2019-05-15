@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 05/15/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -47,6 +47,57 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 ### Role-based access control
 
 -->  
+
+
+<!-- ########################## -->
+
+## Week of May 13, 2019 
+
+### Device configuration
+
+####  Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
+In public preview, you can use Intune to manage security tasks for Microsoft Defender Advanced Threat Protection (ATP). This Integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
+
+#### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671   idstaged-->
+Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
+
+[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
+
+Applies to: Windows 10 and later
+
+#### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS devices <!-- 4097904   --> 
+You create a device restrictions profile on iOS device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type). This update includes new settings you can configure:
+
+- **Built-in Apps**: Server-side logging for Siri commands
+- **Wireless**: User modification of Personal Hotspot (supervised only)​
+​
+To see these settings, go to [built-in app settings for iOS](device-restrictions-ios.md#built-in-apps) and [wireless settings for iOS](device-restrictions-ios.md#wireless).
+
+Applies to: iOS 12.2 and newer
+
+#### New classroom app device restriction settings for macOS devices <!-- 4097905   --> 
+You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update include new classroom app settings, the option to block screenshots, and the option to disable the iCloud Photo Library.
+
+To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
+
+Applies to: macOS
+
+#### The iOS Password to access app store setting is renamed<!-- 4557891  -->​
+​The **Password to access app store** setting is renamed to **Require iTunes Store password for all purchases** (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App store, Doc viewing, and Gaming**).​
+​
+To see the available settings, go to [App Store, Doc Viewing, Gaming iOS settings](device-restrictions-ios.md#app-store-doc-viewing-gaming).​
+​
+Applies to: iOS
+
+### Device enrollment
+
+#### Enrollment Status Page (ESP) has been officially released, out of preview <!-- 3605348 -->
+The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md). 
+
+### Monitor and troubleshoot
+
+#### The Encryption report is out of Public Preview   <!-- 4587546      -->
+The [report for BitLocker and device encryption](encryption-monitor.md) is now generally available, and no longer part of the public preview. 
 
 <!-- ########################## -->
 
@@ -114,7 +165,7 @@ The Device overview page will show the Primary User, also called the User Device
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
 For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. The same functionality for available apps will be enabled in a future release. 
 
-#### iOS Third Party Keyboards <!-- 4111843 idready eeready -->
+#### iOS Third Party Keyboards <!-- 4111843   -->
 The Intune app protection policy (APP) support for the **Third Party Keyboards** setting for iOS is no longer supported due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
 
 ### Device configuration
