@@ -71,7 +71,7 @@ The following on-premises infrastructure is optional:
 
   For more information, see [Plan certificates for WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) and [general information about WAP servers](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
 
-### Accounts  
+### Accounts   
 - **NDES service account** - Before you set up NDES, identify a domain user account to use as the NDES service account. You’ll specify this account when you configure templates on your issuing CA, before you configure NDES.  
 
   This account must have the following rights on the server that hosts NDES:  
@@ -79,7 +79,7 @@ The following on-premises infrastructure is optional:
   - **Logon as a Service**  
   - **Logon as a batch job**  
 
-  For more information, see [Create a domain user account to act as the NDES service account]( https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11)#to-create-a-domain-user-account-to-act-as-the-ndes-service-account). 
+  For more information, see [Create a domain user account to act as the NDES service account](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11)#to-create-a-domain-user-account-to-act-as-the-ndes-service-account). 
 - **Access to the computer that hosts the NDES service** - You'll need a domain user account with permissions to install and configure Windows server roles on the server where you install NDES.  
 
 - **Access to the certification authority** - You'll need a domain user account that has rights to manage your certification authority.  
