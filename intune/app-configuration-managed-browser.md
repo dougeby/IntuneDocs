@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -162,13 +162,20 @@ You assign the settings to Azure AD groups of users. If that user has the target
 
 ## How to set Microsoft Edge as the default protected browser for your organization
 
-This setting allows you to configure which browser app your users will be directed to use. This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened. If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
+This setting allows you to configure which browser app your users will be directed to use. **This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened.** If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
 - If the user doesn't have either Managed Browser or Microsoft Edge downloaded, this app config setting will determine which app the user will be prompted to download. 
 - If the user has both the Managed Browser and Microsoft Edge downloaded, this app config setting will determine which browser corporate resources will be launched in. 
+
+Using the above procedure to create a Microsoft Edge app configuration. Supply the following key and value pair when selecting the **Configuration settings** on the **Configuration** blade (step 9):
 
 | Key                              |  Value   |
 |----------------------------------|----------|
 | **com.microsoft.intune.useEdge** | **true** |
+
+> [!NOTE]
+> In the app protection policy that manages Microsoft Edge and associated apps specified in the app configuration, ensure the following data protection policy settings are set:
+> - Send Org data to other apps: **Policy managed apps**
+> - Share web content with policy managed browsers: **Require**
 
 ## How to configure Application Proxy settings for protected browsers
 
