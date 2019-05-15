@@ -90,7 +90,7 @@ Be sure you have the required permissions to register an Azure AD app. See [Requ
    > [!IMPORTANT]  
    > Before you leave this page, copy the value for the client secret and record it for later use with your third-party CA implementation. This value is not shown again. Be sure to review the guidance for your third-party CA on how they want the Application ID, Authentication Key, and Tenant ID configured.  
 
-6. Record you **Tenant ID**. The Tenant ID is the domain text after the @ sign in your account. For example, if your account is *admin@name.onmicrosoft.com*, then your tenant ID is **name.onmicrosoft.com**.  
+6. Record your Tenant ID**. The Tenant ID is the domain text after the @ sign in your account. For example, if your account is *admin@name.onmicrosoft.com*, then your tenant ID is **name.onmicrosoft.com**.  
 
 7. In the navigation pane for the app, go to **API permissions** under **Manage**, and then select **Add a permission**.  
 
