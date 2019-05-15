@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 05/09/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -131,6 +131,10 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 ### Device Security
 
+- **Trusted Platform Module (TPM)**: When set to **Require**, Intune checks the version for compliance. The device is compliant if the TPM chip version is greater than 0 (zero). The device is not compliant if there isn't a TPM version on the device. When **Not configured**, Intune doesn't check the device for a TPM chip version.
+
+  [DeviceStatus CSP - DeviceStatus/TPM/SpecificationVersion node](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
 - **Antispyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
 

@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 ---
  
 
-# Deploy hybrid Azure AD-joined devices by using Intune and Windows Autopilot (Preview)
+# Deploy hybrid Azure AD-joined devices by using Intune and Windows Autopilot
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory (Azure AD)-joined devices. To do so, follow the steps in this article.
 
 ## Prerequisites
@@ -40,7 +40,7 @@ Successfully configure your [hybrid Azure AD-joined devices](https://docs.micros
 The devices to be enrolled must also:
 - Be running Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Have access to the internet.
-- Have access to your Active Directory (VPN connection not supported).
+- Have access to your Active Directory (VPN connection not supported at this time).
 - Undergo the out-of-box experience (OOBE).
 - Be able to ping the domain controller of the domain you are trying to join.
 
@@ -216,7 +216,14 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 1. Select **Settings**, and then provide a **Computer name prefix**, **Domain name**, and (optional) **Organizational unit** in [DN format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Select **OK** > **Create**.  
     The profile is created and displayed in the list.
-1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
+1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile) and assign the profile to the same group used at this step [Create a device group](windows-autopilot-hybrid.md#create-a-device-group)
+   - Deploying multiple Domain Join profiles
+   
+     a. Create a dynamic group that includes all your Autopilot devices with a specific Autopilot deployment profile, enter (device.enrollmentProfileName -eq "Autopilot Profile Name"). 
+     
+     b. Replace 'Autopilot Profile Name' with the display name of the profile created under [Create and assign an Autopilot deployment profile](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Create multiple Autopilot deployment profiles and assign that device to the profile specified in this dynamic group.
 
 > [!NOTE]
 > The naming capabilities for Windows Autopilot for Hybrid Azure AD Join do not support variables such as %SERIAL% and only support prefixes for the computer name.
