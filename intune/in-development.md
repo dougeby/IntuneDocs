@@ -62,26 +62,7 @@ While creating or editing a security baseline profile, you’ll soon be able to 
 ### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
 You'll be able to reset and wipe up to 100 devices in bulk using the Graph API.
 
-### Intune management extension PowerShell scripts  <!-- 3734186    -->
-You'll be able to configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md).
-
-### Android Enterprise app management <!-- 4459905 idready -->
-To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
-
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
-- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
-- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
-
-Previously, IT admins would need to manually find and approve these apps in the [Managed Google Play store](https://play.google.com/store/apps) as part of setup. This change removes those previously manual steps to make it easier and faster for customers to use Android Enterprise management.
-
-Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service roll out.
-
 <!-- 1904 start-->
-
-### Advanced settings for Windows Defender Firewall <!-- 1311949 -->
-You'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
-
 
 ### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
 Company Portal for Windows will list all managed apps&ndash; both required and available&ndash; that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
@@ -91,10 +72,6 @@ You create Windows 10 device configuration profiles (**Device configuration** > 
 
 Applies to: 
 - Windows 10 and later
-
-
-### Windows Defender Advanced Threat Protection baseline <!-- 3754134 -->
-We're going to add new baseline to help you configure Windows Defender Advanced Threat Protection settings.
 
 
 
