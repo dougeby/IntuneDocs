@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -168,7 +168,7 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 	
 	* If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Microsoft 365 admin center website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
+* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md). If your app has integrated the Intune SDK, but is not listed in the Azure portal as a targeted app yet, you can target it with a policy by selecting the "+ More Apps" option and providing the bundle ID (iOS) or package name (Android) in the text box.
 
 * **Troubleshoot**: If you run into any issues while manually testing your app's installation user experience, see [Troubleshoot app installation issues](troubleshoot-app-install.md). 
 
