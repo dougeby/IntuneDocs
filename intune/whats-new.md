@@ -92,7 +92,10 @@ Applies to: iOS
 ### Device enrollment
 
 #### Enrollment Status Page (ESP) has been officially released, out of preview <!-- 3605348 -->
-The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md). 
+The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
+
+#### DEP enrollment profile requirement for conditional access and deploying company apps <!--1927359 -->
+The **Identify your device** screen in the iOS Company Portal is being removed. Therefore, admins who want to enable conditional access or deploy company apps must update the DEP enrollment profile. This requirement only applies if the DEP enrollment is authenticated with Setup Assistant. In that case, you must push the Company Portal onto the device. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > set **Install Company Portal** to **True**.
 
 ### Monitor and troubleshoot
 
