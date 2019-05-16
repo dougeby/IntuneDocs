@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/15/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -67,7 +67,7 @@ On devices already enrolled via Setup Assistant through one of Apple’s corpora
 
 If users install the Company Portal app from the App store, and then try to enroll these devices through it, they will receive an error. These devices will be expected to only use the Company Portal when it's been pushed, automatically, by Intune during enrollment. Enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. If you want your DEP device users to have the Company Portal, you will need to specify your preferences in an enrollment profile. 
 
-In addition, the **Identify your device** screen in the Company Portal app will soon become obsolete.  
+In addition, the **Identify your device** screen in the iOS Company Portal is being removed. Therefore, admins who want to enable conditional access or deploy company apps must update the DEP enrollment profile. This requirement only applies if the DEP enrollment is authenticated with Setup Assistant. In that case, you must push the Company Portal onto the device. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > set **Install Company Portal** to **True**.
 
 To install the Company Portal on already-enrolled DEP devices, you will need to go to Intune > Client apps, and push it as a managed app with app configuration policies. 
 
@@ -136,14 +136,19 @@ We've added a security baseline Preview for [Microsoft Defender Advanced Threat 
 #### Windows Enrollment Status Page (ESP) is now generally available <!-- 3605348 -->
 The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
 
-#### DEP enrollment profile requirement for conditional access and deploying company apps <!--1927359 -->
-The **Identify your device** screen in the iOS Company Portal is being removed. Therefore, admins who want to enable conditional access or deploy company apps must update the DEP enrollment profile. This requirement only applies if the DEP enrollment is authenticated with Setup Assistant. In that case, you must push the Company Portal onto the device. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > set **Install Company Portal** to **True**.
 
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
 The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information see, [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
-#### Enable Autopilot Rest for all Windows devices <!-- 4225665 -->
+#### Enable Autopilot Reset for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
+
+#### Exact IMEI format not required when searching All devices <!--30407680 -->
+You won't need to include spaces in IMEI numbers when you search **All devices**.
+
+#### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
+If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
+
 
 ### Monitor and troubleshoot
 
