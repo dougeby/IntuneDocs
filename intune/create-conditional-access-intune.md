@@ -101,3 +101,5 @@ A conditional access policy specifies the app or services you want to protect, t
 
 ## See also
 [App-based conditional access with Intune](app-based-conditional-access-intune.md)
+
+[Troubleshooting Intune conditional access](https://support.microsoft.com/help/4456106)
