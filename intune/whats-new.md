@@ -152,6 +152,9 @@ The [report for BitLocker and device encryption](encryption-monitor.md) is now g
 
 <!-- ########################## -->
 
+#### Outlook signature and biometric settings for  iOS and Android devices <!-- 4050557 -->
+You can now specify if the default signature is enabled in Outlook on iOS and Android devices. Additionally, you can choose to allow users to change the biometric setting in Outlook on iOS.
+
 ## Week of May 6, 2019 
 
 ### Device configuration
