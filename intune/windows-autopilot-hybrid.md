@@ -124,6 +124,9 @@ The Intune Connector for Active Directory must be installed on a computer that's
 > [!NOTE]
 > After you sign in to the Connector, it might take a couple of minutes to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
 
+### Turn off IE Enhanced Security Configuration
+By default Windows Server has Internet Explorer Enhanced Security Configuration turned on. If you are unable to sign in to the Intune Connector for Active Directory then turn off IE Enhanced Security Configuration for the Administrator. [How To Turn Off Internet Explorer Enhanced Security Configuration](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### Configure web proxy settings
 
 If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](autopilot-hybrid-connector-proxy.md).
