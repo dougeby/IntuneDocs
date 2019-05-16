@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Remove your device from management if you declined Terms of use | Microsoft Docs
+title: Remove your device from management if you declined Terms of Use | Microsoft Docs
 description:
 keywords:
 author: lenewsad
