@@ -62,50 +62,7 @@ While creating or editing a security baseline profile, you’ll soon be able to 
 ### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
 You'll be able to reset and wipe up to 100 devices in bulk using the Graph API.
 
-### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
-Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
-
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
-
-Applies to: Windows 10 and later
-
-### Intune management extension PowerShell scripts  <!-- 3734186    -->
-You'll be able to configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md).
-
-### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS supervised devices <!-- 4097904  --> 
-You create a device restrictions profile on iOS device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type). This update includes new settings you can configure:
-
-- Personal HotSpot
-- Siri server logging
-
-To see the current settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md). 
-
-Applies to: iOS 12.2 and newer
-
-### New classroom app device restriction settings for DEP-enrolled macOS devices <!-- 4097905  --> 
-You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update includes new classroom app settings for DEP-enrolled devices, and the option to disable the iCloud Photo Library.
-
-To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
-
-Applies to: macOS 10.14.4 and newer
-
-### Android Enterprise app management <!-- 4459905 idready -->
-To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
-
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
-- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
-- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
-
-Previously, IT admins would need to manually find and approve these apps in the [Managed Google Play store](https://play.google.com/store/apps) as part of setup. This change removes those previously manual steps to make it easier and faster for customers to use Android Enterprise management.
-
-Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service roll out.
-
 <!-- 1904 start-->
-
-### Advanced settings for Windows Defender Firewall <!-- 1311949 -->
-You'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
-
 
 ### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
 Company Portal for Windows will list all managed apps&ndash; both required and available&ndash; that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
@@ -115,14 +72,6 @@ You create Windows 10 device configuration profiles (**Device configuration** > 
 
 Applies to: 
 - Windows 10 and later
-
-###  Intune security tasks for Defender ATP (In public preview) <!-- 3208597 -->
-Coming as a public preview, Intune will soon add security tasks for the newly announced Microsoft Defender Threat & Vulnerability Management.  With this integration, security operations admins in Windows Defender ATP (WDATP) can more effectively communicate the recommended remediations for emerging threats to Intune administrators. The addition of security tasks adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations.
-
-To learn more about security tasks in Intune, see the blog post about [using Intune security tasks to extend Microsoft Defender ATP’s Threat and Vulnerability Management](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Intune-security-tasks-extend-Microsoft-Defender-ATP-s/ba-p/369857). 
-
-### Windows Defender Advanced Threat Protection baseline <!-- 3754134 -->
-We're going to add new baseline to help you configure Windows Defender Advanced Threat Protection settings.
 
 
 

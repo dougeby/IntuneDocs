@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -151,6 +151,8 @@ The following steps provide guidance to help you add a Windows app to Intune.
     > You can configure a Win32 app to be installed in **User** or **System** context. **User** context refers to only a given user. **System** context refers to all users of a Windows 10 device.
     >
     > End users are not required to be logged in on the device to install Win32 apps.
+    > 
+    > The Win32 app install and uninstall will be executed under admin privilege (by default) when the app is set to install in user context and the end user on the device has admin privileges.
 
 4.	When you're finished, select **OK**.
 
