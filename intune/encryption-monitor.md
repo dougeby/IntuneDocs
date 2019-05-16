@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,13 @@ ms.custom: intune-azure
 # Monitor BitLocker and device encryption  
 Intune provides a centralized location to identify the encryption status of your Windows 10 devices, and helps you access important information for BitLocker from your devices, as found in Azure Active Directory (Azure AD).  
 
-- The [Encryption report (in Public Preview)](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
-- [View BitLocker details (in Public Preview)](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
+- The [Encryption report](#encryption-report) provides details about a device’s encryption status and readiness. The report details can help you identify problems that prevent successful encryption of devices you want to protect.  
+- [View BitLocker details](#bitlocker-recovery-keys) like the Key ID and recovery keys for your devices from within the Intune portal.  
 
 ## Encryption report
-You can use the Encryption report (in Public Preview) to view details about the Encryption status of your Windows 10 devices.  
+You can use the Encryption report to view details about the Encryption status of your Windows 10 devices.  
 
-To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report (Preview)**.  
+To find the report, Sign in to the [Intune](https://aka.ms/intuneportal) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report**.  
 
 ### Prerequisites:
 To appear in the Encryption report, a device must run Windows version 1607 or later.  
@@ -93,14 +93,14 @@ This pane provides the following details:
    - The encryption method of the fixed drive doesn't match the BitLocker policy.  
    - To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.  
    - Windows Recovery Environment (WinRE) isn't configured.  
-   - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removeable  drive.  
+   - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable  drive.  
    - The TPM isn't ready for BitLocker.  
    - The network isn't available, which is required for recovery key backup.  
 
 ## BitLocker recovery keys
-As a Public Preview, Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
+Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
 1. Sign in to [Intune](https://aka.ms/intuneportal), go to **Devices** and then under *Manage*, select **All devices**.
-2. Select a device from the list, and then under *Monitor*, select **Recovery keys – Preview**.  
+2. Select a device from the list, and then under *Monitor*, select **Recovery keys**.  
   
 When keys are available in Azure AD, the following information is available:
 - BitLocker Key ID

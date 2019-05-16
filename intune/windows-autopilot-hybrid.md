@@ -199,7 +199,7 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 
 ## (Optional) Turn on the enrollment status page
 
-1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 1. In the **Enrollment Status Page** pane, select **Default** > **Settings**.
 1. In the **Show app and profile installation progress** box, select **Yes**.
 1. Configure the other options as needed.
@@ -216,7 +216,14 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 1. Select **Settings**, and then provide a **Computer name prefix**, **Domain name**, and (optional) **Organizational unit** in [DN format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Select **OK** > **Create**.  
     The profile is created and displayed in the list.
-1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
+1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile) and assign the profile to the same group used at this step [Create a device group](windows-autopilot-hybrid.md#create-a-device-group)
+   - Deploying multiple Domain Join profiles
+   
+     a. Create a dynamic group that includes all your Autopilot devices with a specific Autopilot deployment profile, enter (device.enrollmentProfileName -eq "Autopilot Profile Name"). 
+     
+     b. Replace 'Autopilot Profile Name' with the display name of the profile created under [Create and assign an Autopilot deployment profile](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Create multiple Autopilot deployment profiles and assign that device to the profile specified in this dynamic group.
 
 > [!NOTE]
 > The naming capabilities for Windows Autopilot for Hybrid Azure AD Join do not support variables such as %SERIAL% and only support prefixes for the computer name.
