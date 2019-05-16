@@ -99,6 +99,10 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 7. Configure the following options:
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose if you want to show the EULA to users.
     - **Privacy settings**: Choose if you want to show privacy settings to users.
+    >[!IMPORTANT]
+    >It is a notice of awareness to the administrator that’s configuring Windows Autopilot on Windows 10, version 1903 and onwards.
+    <br><br>Windows Autopilot deployed device would set Diagnostics data settings default to Full on Windows 10 version 1903 and onwards during OOBE. [Learn more on Windows Diagnostics Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user).
     - **Allow White Glove OOBE**: Choose **Yes** to allow white glove support.
