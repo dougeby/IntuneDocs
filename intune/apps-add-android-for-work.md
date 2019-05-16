@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/13/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -38,6 +38,13 @@ Android Enterprise is a program for Android work profile devices, dedicated/kios
 Additionally, if you have created your own line-of-business (LOB) apps, you can assign them as follows:
 - Sign up for a Google Developer account that lets you publish apps to a private area in the Google Play store.
 - Synchronize the apps with Intune.
+
+To make it easier for you to configure and use Android Enterprise management, upon connecting to Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
+- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
+- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
 
 ## Before you start
 
