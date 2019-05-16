@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 # Windows security baseline settings for Intune  
 
-View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune.  The default configuration of these settings are the recommended baseline configuration for Windows.  The Windows baseline defaults represent the recommended configuration for Windows, and might not match baseline defaults from other security baselines.  
+View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune. The Windows baseline defaults represent the recommended configuration for Windows, and might not match baseline defaults from other security baselines.  
 
 > [!NOTE]  
 > The Windows security baseline settings are in **Preview**. While in Preview, the list of available settings, and order in which this content presents those settings, will vary with what is available in the portal.  
