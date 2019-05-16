@@ -137,3 +137,5 @@ Conditional Access is an Azure Active Directory (Azure AD) technology. The Condi
 ## See also
 
 [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
+
+[Troubleshooting Intune On-Premises Exchange Connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
