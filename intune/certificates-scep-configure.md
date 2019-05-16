@@ -570,4 +570,6 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 
 - [Use PKCS certificates](certficates-pfx-configure.md), or [issue PKCS certificates from a Symantec PKI manager web Service](certificates-symantec-configure.md)
 - [Add a 3rd-party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md)
-- For additional assistance, use the [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune) guide.
+- For additional assistance, use the following guides:
+  - [Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481)
+  - [Troubleshooting NDES configuration for use with Microsoft Intune certificate profiles](https://support.microsoft.com/help/4459540)

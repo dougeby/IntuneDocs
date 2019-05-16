@@ -137,3 +137,9 @@ After you create a trusted certificate profile, create SCEP or PKCS certificate 
 [Assign device profiles](device-profile-assign.md)  
 [Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)  
 [Use third-party certificate authority](certificate-authority-add-scep-overview.md)
+
+## See also
+
+[Troubleshooting NDES configuration for use with Microsoft Intune certificate profiles](https://support.microsoft.com/help/4459540)
+
+[Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481)
