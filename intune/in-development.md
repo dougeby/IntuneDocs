@@ -53,9 +53,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 <!-- 1905 start-->
 
 
-### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
-If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
-
 ### Baseline support for keyword search  <!-- 3082036         -->
 While creating or editing a security baseline profile, you’ll soon be able to use *search* to filter the settings that display in the console.   
 

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/15/2019
+ms.date: 05/16/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -144,6 +144,13 @@ The user interface for creating an Autopilot enrollment profile has been updated
 
 #### Enable Autopilot Rest for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
+
+#### Exact IMEI format not required when searching All devices <!--30407680 -->
+You won't need to include spaces in IMEI numbers when you search **All devices**.
+
+#### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
+If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
+
 
 ### Monitor and troubleshoot
 
