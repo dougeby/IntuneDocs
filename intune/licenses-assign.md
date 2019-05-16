@@ -49,7 +49,7 @@ You can use the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?L
 4. The user account now has the permissions needed to use the service and enroll devices into management.
 
 > [!NOTE]
-> Users will appear in the Admin console only after they have enrolled a device. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.
+> Users will appear in the Classic Intune portal only after they have enrolled a device using the Intune PC client. Also, you can select a group of users to edit at once,  either selecting to add or replace a license for all selected users.
 
 ## Assign an Intune license by using Azure Active Directory
 
@@ -67,7 +67,7 @@ When you assign an Intune for Education license, make sure that Intune A Direct 
 See this [overview of School Data Sync](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) to learn more about SDS.
 
 ## How user and device licenses affect access to services
-* Each **user** that you assign a user software license to may access and use the online services and related software (including System Center software) to manage applications and up to 15 devices.
+* Each **user** that you assign a user software license to may access and use the online services and related software (including System Center software) to manage applications and up to 15 MDM devices. The Intune PC agent allows 5 physical and 1 virtual machine per user license.
 * You can purchase licenses for any devices separately from user licenses. Device licenses do not need to be assigned to the devices. Each device that accesses and uses the online services and related software (including System Center software) must have a device license.
 * If a device is used by more than one user, each requires a device software license or all users require a user software license.
 

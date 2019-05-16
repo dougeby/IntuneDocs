@@ -121,12 +121,12 @@ The following browsers are supported for these portals:
 
 ### Intune classic portal
 
-Intune classic-only features, such as Intune PC software client and integration with Mobile Threat Defense partners, are only available in the Intune classic portal (https://manage.microsoft.com). The Intune classic portal requires Silverlight browser support.
+The Intune classic portal is only used for managing devices enrolled with the Intune PC software client (https://manage.microsoft.com). The Intune classic portal requires Silverlight browser support.
 
 The following Silverlight browsers support the Intune console:
 - Internet Explorer 10 or later
 - Google Chrome (versions prior to version 42)
-- Mozilla Firefox with Silverlight enabled [Learn more](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox with Silverlight enabled (versions prior to version 56)
 
 > [!Note]
 > Microsoft Edge and mobile browsers are not supported for the Intune classic portal because they do not support [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
