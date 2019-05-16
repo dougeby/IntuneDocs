@@ -142,7 +142,7 @@ The **Identify your device** screen in the iOS Company Portal is being removed. 
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
 The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information see, [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
-#### Enable Autopilot Rest for all Windows devices <!-- 4225665 -->
+#### Enable Autopilot Reset for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
 
 ### Monitor and troubleshoot
