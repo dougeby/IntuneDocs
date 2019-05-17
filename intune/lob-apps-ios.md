@@ -88,6 +88,8 @@ The app that you created now appears in the list of apps. From the list, you can
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
+The update to the line-of-business app will be installed automatically.
+
 > [!NOTE]
 > For the Intune service to successfully deploy a new IPA file to the device, you must increment the `CFBundleVersion` string in the Info.plist file in your IPA package.
 
