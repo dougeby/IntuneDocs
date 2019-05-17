@@ -196,6 +196,8 @@ If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also n
 | AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
 
+### Delivery Optimization port requirements
+
 #### Port requirements
 For peer-to-peer traffic, Delivery Optimization uses 7680 for TCP/IP or 3544 for NAT traversal (optionally Teredo). 
 For client-service communication, it uses HTTP or HTTPS over port 80/443.
