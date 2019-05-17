@@ -85,7 +85,7 @@ The app that you created now appears in the list of apps. From the list, you can
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
-If "Check apps from external sources" is enabled on the Android device, the user will be prompted before installing the update. Otherwise the update will be installed automatically.
+If **Check apps from external sources** is enabled on the Android device, the user will be prompted before installing the update. Otherwise the update will be installed automatically.
 
 > [!Note]
 > For the Intune service to successfully deploy a new APK file to the device, you must increment the `android:versionCode` string in the AndroidManifest.xml file in your APK package.
