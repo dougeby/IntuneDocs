@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -85,6 +85,14 @@ During hours that you configure, you can use BITS on a Windows computer to reduc
 
 To learn more about BITS and Windows computers, see [Background Intelligent Transfer Service](http://technet.microsoft.com/library/bb968799.aspx) in the TechNet Library.
 
+### Delivery Optimization
+Delivery Optimization lets you use Intune to reduce bandwidth consumption when your Windows 10 devices download applications and updates. By using a self-organizing distributed cache, downloads can be pulled from traditional servers and alternate sources (like network peers).
+
+To see the full list of Windows 10 versions and content types supported by Delivery Optimization, see the [Delivery Optimization for Windows 10 updates article](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements).
+
+You can [set up Delivery Optimization](delivery-optimization-settings.md) as part of your device configuration profiles.
+
+
 ### Use BranchCache on computers
 Intune clients can use BranchCache to reduce wide area network (WAN) traffic. The following operating systems support BranchCache:
 
@@ -101,6 +109,8 @@ If you use BranchCache, work with other administrators in your organization to m
 
 > [!NOTE]
 > You can use Microsoft Intune to manage Windows PCs either [as mobile devices with mobile device management (MDM)](windows-enroll.md) or as computers with the Intune software client. Microsoft recommends that customers [use the MDM management solution](windows-enroll.md) whenever possible. When managed this way, BranchCache is not supported. For more information, see [Compare managing Windows PCs as computers or mobile devices](pc-management-comparison.md).
+
+
 
 ## Network communication requirements
 
@@ -160,7 +170,7 @@ The following tables list the ports and services that the Intune client accesses
 
 
 ### Network requirements for Powershell scripts and Win32 apps
-If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to the following endpoints.
+If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
 
 |ASU | Storage name | CDN |
 | --- | --- |--- |
@@ -186,8 +196,23 @@ If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also n
 | AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
 
+### Delivery Optimization port requirements
 
+#### Port requirements
+For peer-to-peer traffic, Delivery Optimization uses 7680 for TCP/IP or 3544 for NAT traversal (optionally Teredo). 
+For client-service communication, it uses HTTP or HTTPS over port 80/443.
 
+#### Proxy requirements
+To use Delivery Optimization, you must allow Byte Range requests. For more information, see [Proxy requirements for Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
+
+#### Firewall requirements
+Allow the following hostnames through your firewall to support Delivery Optimization.
+For communication between clients and the Delivery Optimization cloud service:
+- *.do.dsp.mp.microsoft.com
+
+For Delivery Optimization metadata:
+- *.dl.delivery.mp.microsoft.com
+- *.emdl.ws.microsoft.com
 
 ### Apple device network information
 
