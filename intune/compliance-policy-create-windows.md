@@ -122,6 +122,9 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
+	> [!IMPORTANT]
+	> When the password requirement is changed on a Windows Desktop device, it doesn’t take effect until the next time the user logs into the device. Additionally users whose passwords already met the requirement will still be prompted to change their passwords.
+
 ### Encryption
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
