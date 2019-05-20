@@ -1,7 +1,7 @@
 ---
 title: Issue DigiCert PKCS certificates with Microsoft Intune
 titleSuffix: 
-description: Install and configure Intune Certificate Connector to issue PKCS Certificates from DigiCert PKI Manager Web Service Integration to Intune-managed devices.
+description: Install and configure Intune Certificate Connector to issue PKCS Certificates from DigiCert PKI Platform Web Service Integration to Intune-managed devices.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -27,28 +27,28 @@ ms.custom: intune-azure
 
 ms.collection: M365-identity-device-management
 ---
-# Set up Intune Certificate Connector for DigiCert PKI Manager Web Service Integration  
+# Set up Intune Certificate Connector for DigiCert PKI Platform - Web Service Integration  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use the Intune Certificate Connector to issue PKCS Certificates from a DigiCert PKI Manager Web Service Integration to Intune managed devices.
-
+Use the Intune Certificate Connector to issue PKCS Certificates from a DigiCert PKI Platform - Web Service Integration to Intune managed devices. The connector can be used with only a DigiCert Certification Authority CA, or with both a DigiCert and a Microsoft CA.  
 > [!TIP]  
 > DigiCert was formerly known as Symantec. For more information about this change, see [https://support.symantec.com/en_US/article.INFO4722.html](https://support.symantec.com/en_US/article.INFO4722.html).  
 
-The DigiCert PKI Manager Web Service Integration is referred as DigiCert CA throughout this article. If you already use the Intune Certificate Connector to issue certificates from a Microsoft Certification Authority (CA) using PKCS or SCEP, you can use that same connector to configure and issue PKCS Certificates from a DigiCert CA. After completing the additional configuration to support DigiCert CA, the Intune Certificate Connector can issue the following certificates:
+The DigiCert PKI Platform – Web Service Integration is referred as DigiCert CA throughout this article.
+
+If you already use the Intune Certificate Connector to issue certificates from a Microsoft Certification Authority (CA) using PKCS or SCEP, you can use that same connector to configure and issue PKCS Certificates from a DigiCert CA. After completing the additional configuration to support DigiCert CA, the Intune Certificate Connector can issue the following certificates:
 
 * PKCS Certificates from a Microsoft CA
 * PKCS Certificates from a DigiCert CA
 * SCEP Certificates from a Microsoft CA
 
-Before you can configure the connector for use with a DigiCert CA, you must complete [configuration of the Intune Certificate Connector for a Microsoft CA](certificates-configure.md). Then, you can apply the information in this article to configure the connector to also support a DigiCert CA.  
+If you don't have the connector installed, but plan to use it for both a Microsoft CA and a DigiCert CA, complete the connector configuration for the Microsoft CA first. Then, return to this article to configure it to also support DigiCert. For more information about certificate profiles and the connector, see [Configure a certificate profile for your devices in Microsoft Intune](certificates-configure.md).  
 
+If you will use the connector with only the DigiCert CA, you can ues the instructions in this article to install and then configure the connector. 
 
 ## Prerequisites  
 - **An active subscription at the DigiCert CA** - The subscription is required to get a Registration Authorization (RA) certificate from the DigiCert CA.
-- **Intune Certificate Connector** - Before you can configure the connector to support a DigiCert CA, you must complete installation of the connector. If you do not already have a connector installed, this article will guide you through an installation for use with the DigiCert CA.
-
 
 ## Install the DigiCert Registration Authorization Certificate  
  
@@ -160,13 +160,13 @@ Download the latest Intune Certificate Connector from the Intune administration 
 
 3. Select **Download the certificate connector software** and save the download to a location where you can access it from the server where you're going to install it.  
 
-   ![Download the connector software](/media/certificates-digicert-configure/connector-download.png)
-
+   ![Download the connector software](./media/certificates-digicert-configure/connector-download.png)
+   
 4. On the server where you want to install the connector, run *NDESConnectorSetup.exe* with elevated privileges. 
 
 5. On the **Installation Options** screen, select **PFX Distribution**.  
    
-   ![Select PFX Distribution](/media/certificates-digicert-configure/digicert-ca-connector-install.png)
+   ![Select PFX Distribution](./media/certificates-digicert-configure/digicert-ca-connector-install.png)
 
    > [!IMPORTANT]
    > If you'll use the Intune Certificate Connector to issue certificates from a Microsoft CA and a Symantec CA, select **SCEP and PFX Profile Distribution**. 
@@ -204,7 +204,7 @@ By default, the Intune Certificate Connector installs to `%ProgramFiles%\Microso
 
 4. Select **Sign In**, and then select **OK** to confirm a successful enrollment. You can then close the *NDES Connector* user interface.
    
-   ![ConfigureConnector](/media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
+   ![ConfigureConnector](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
 
 
 
@@ -270,7 +270,7 @@ The Certificate Profile OID is associated with a Certificate Profile template in
    | Certificate authority name | DigiCert | This value must be the string **DigiCert**. <br><br> If there's any change to this value, Intune Certificate Connector won't issue PKCS Certificates from the DigiCert CA.|
    | Certificate template name | Certificate Profile OID from DigiCert CA. <br><br> Ex: `2.16.840.1.113733.1.16.1.2.3.1.1.61904612`| This value must be a Certificate Profile OID [obtained in the previous section](#get-the-certificate-profile-oid) from the DigiCert CA Certificate Profile template. <br><br> If Intune Certificate Connector can't find a certificate template associated with this Certificate Profile OID in the DigiCert CA, it won't issue PKCS certificates from the DigiCert CA.|  
 
-   ![ConfigureProfile](/media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)  
+   ![ConfigureProfile](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)  
 
    > [!NOTE]
    > The PKCS Certificate profiles for Windows platforms doesn’t need to associate with a Trusted Certificate profile. But it is required for non-Windows platform profiles such as Android.
