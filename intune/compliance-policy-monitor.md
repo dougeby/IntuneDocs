@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -78,7 +78,9 @@ Descriptions of the different device compliance policy states:
 
   - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance
   - Devices that haven't checked in since the compliance policy was last updated
-  - Devices not associated to a specifc user
+  - Devices not associated to a specific user, such as:
+    - iOS devices purchased through Apple's Device Enrollment Program (DEP) that don't have user affinity
+    - Android kiosk or Android Enterprise dedicated devices
   - Devices enrolled with a device enrollment manager (DEM) account
 
 - **Not-compliant:** The device failed to apply one or more device compliance policy settings. Or, the user hasn’t complied with the policies.
