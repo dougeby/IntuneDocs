@@ -62,7 +62,10 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 - **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
 - **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
 - **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
-- **Apps from the store only**: **Require** forces end users to only install apps from the Windows App Store. **Not configured** allows end users to install apps from places other than the Windows App Store.
+- **Force restart apps on update failure**: **Require** ensures apps are always up-to-date, use this setting to configure a recurring or one time date to restart apps whose update failed due to the app being in use.
+- **User control over installations**: **Block** permits users to change installation options that typically are available only to system administrators. The security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue.
+- **Install apps with elevated privileges**: **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. If you enable this policy setting, privileges are extended to all programs. This enables users to install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
+- **Startup apps**: This policy allows the IT admin to specify a list of applications that users can run after logging on to the device. For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task
 
 Select **OK** to save your changes.
 
@@ -413,6 +416,8 @@ These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/window
     - **Numeric**: Password must only be numbers.
     - **Alphanumeric**: Password must be a mix of numbers and letters.
   - **Minimum password length**: Enter the minimum number or characters required, from 4-16. For example, enter `6` to require at least six characters in the password length.
+  	> [!IMPORTANT]
+	> When the password requirement is changed on a Windows Desktop device, it doesn’t take effect until the next time the user logs into the device. Additionally users whose passwords already met the requirement will still be prompted to change their passwords.
   - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device is wiped, from 1-11. `0` (zero)  may disable the device wipe functionality.
 
     This setting has a different impact depending on the edition. For specific details, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
