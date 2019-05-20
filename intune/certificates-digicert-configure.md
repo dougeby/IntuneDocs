@@ -45,7 +45,7 @@ If you already use the Intune Certificate Connector to issue certificates from a
 
 If you don't have the connector installed, but plan to use it for both a Microsoft CA and a DigiCert CA, complete the connector configuration for the Microsoft CA first. Then, return to this article to configure it to also support DigiCert. For more information about certificate profiles and the connector, see [Configure a certificate profile for your devices in Microsoft Intune](certificates-configure.md).  
 
-If you will use the connector with only the DigiCert CA, you can ues the instructions in this article to install and then configure the connector. 
+If you will use the connector with only the DigiCert CA, you can use the instructions in this article to install and then configure the connector. 
 
 ## Prerequisites  
 - **An active subscription at the DigiCert CA** - The subscription is required to get a Registration Authorization (RA) certificate from the DigiCert CA.
@@ -99,7 +99,7 @@ You must have an active subscription at the DigiCert CA to get the Registration 
     ```
 
 4. Sign in to the DigiCert CA and navigate to **Get an RA Cert** from the tasks.  
-   1. In the text bos, provide the CSR content from step 3.  
+   1. In the text box, provide the CSR content from step 3.  
    2. Provide a friendly name for the certificate.  
    3. Select **Continue**.  
    4. Use the link that is provided to download the RA certificate to your local computer.
