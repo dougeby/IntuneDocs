@@ -54,7 +54,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 #### Autopilot device OrderID attribute name changed to Group Tag <!-- 4659453 -->
 
-To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. Within a few days, OrderID will be re-introduced to accommodate legacy customers or scripts. However, Group Tag will be the standard moving forward.
+To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. OrderID will soon be re-introduced to accommodate legacy customers or scripts. However, Group Tag will be the standard moving forward.
 
 <!-- ########################## -->
 
