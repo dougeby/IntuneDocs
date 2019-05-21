@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,22 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 
 <!-- ########################## -->
+
+## Week of May 20, 2019 
+
+### App management
+
+#### Update your Android Company Portal app to the latest version <!-- 4536963 -->
+
+Intune periodically releases updates to the Android Company Portal App. In November 2018, we released a company portal update which included a back-end switch to prepare for Google’s change from their existing notification platform to Google’s Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their company portal app to at least the November 2018 release to continue communicating with the Google play store.
+
+**How does this affect me?**
+
+Our telemetry indicates there are tenants that have devices with a Company Portal version earlier than 5.0.4269.0. If this version (or later) of the company portal app is not installed, IT pro initiated device actions like wipe, reset password, available and required app installs, and certificate enrollment may not work as expected. If your devices are MDM enrolled in Intune, you can see the company portal versions and users by going to **Client apps** > **Discovered apps**. Selecting earlier versions of the Company Portal will allow you to see which end users have device that haven’t updated the company portal.
+
+**What do I need to do to prepare for this change?**
+
+Ask end users of Android devices that have not updated the Company Portal version to update the company portal through Google play. Notify your help desk in case a user has not kept auto-updating the Company Portal app. For more information about Google’s FCM platform and change, see [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/).
 
 ## Week of May 13, 2019 
 
