@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Manage volume purchased or free apps from Microsoft Store for Business 
+title: Manage VPP apps from Microsoft Store for Business 
 titleSuffix: Microsoft Intune
-description: Learn how you can sync purchased (or free) apps into Intune from the Microsoft Store for Business.
+description: Learn how you can sync apps into Intune from the Microsoft Store for Business.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -29,7 +29,7 @@ ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
-# How to manage volume purchased (or free) apps from the Microsoft Store for Business with Microsoft Intune
+# How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
