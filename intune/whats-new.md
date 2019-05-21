@@ -125,9 +125,6 @@ To see the available settings, go to [App Store, Doc Viewing, Gaming iOS setting
 ​
 Applies to: iOS
 
-#### Advanced settings for Windows Defender Firewall   <!--  1311949 -->
-You can use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports.
-
 ####  Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
 We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings.  
 
