@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -50,6 +50,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 
 <!-- ########################## -->
+
+## Week of May 20, 2019 
+
+### App management
+
+#### Windows Company Portal app <!-- 3316993 -->
+The Windows Company Portal app will now have a new page labelled **Devices**. The **Devices** page will show end users all of their enrolled devices. Users will see this change in the Company Portal when they use version 10.3.4291.0 and later. For information about the configuring the Company Portal, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
 
 ## Week of May 13, 2019 
 
