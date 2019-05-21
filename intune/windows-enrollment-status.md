@@ -127,7 +127,7 @@ For account setup, the enrollment status page tracks the following items if they
 ### Troubleshooting
 Top questions for troubleshooting.
 
-- Why were my applications not installed during Device setup phase during Autopilot deployment that is using Enrollmment status page?
+- Why were my applications not installed during Device setup phase during Autopilot deployment that is using Enrollment status page?
     - To guarantee applications are installed during the Device setup phase during an Autopilot deployment, first, ensure the application is selected to block access in the selected apps list.  Second, ensure you targeting of the applications to the same AAD device group your Autopilot profile was assigned to. 
     
 - Why is the Enrollment status page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-mgmt enrolled device?  
@@ -142,10 +142,10 @@ Top questions for troubleshooting.
          Data type:  Boolean
          Value:  True 
 
-### Known Issues
+### Known issues
 Below are known issues. 
 - A pending reboot will always cause a timeout. Cause of timeout is because the device needs to be rebooted in order to complete the item tracked in Enrollment status page such as an application. A reboot will cause the enrollment status page to exit and after reboot the device will not enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
-- A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserverd during reboot. Have the user enter their credentials then the Enrollment status page can continue. 
+- A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserved during reboot. Have the user enter their credentials then the Enrollment status page can continue. 
 - SCEP certificates with Windows Hello for Business policies will cause timeout because user cannot complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. 
 - Enrollment status page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. Cause is due to Enrollment status page waiting on Azure AD registration to complete, the issue is fixed in Windows 10 version 1903 and newer.  
 
