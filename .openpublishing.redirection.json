@@ -5214,6 +5214,11 @@
 			"source_path": "intune/conditional-access-exchange-monitor.md",
 			"redirect_url": "/intune/conditional-access-exchange-create",
 			"redirect_document_id": false
+		 },
+		 {
+			"source_path": "intune/certificates-symantec-configure.md",
+			"redirect_url": "/intune/certificates-digicert-configure",
+			"redirect_document_id": true
 		 }
 	 ]
 }
