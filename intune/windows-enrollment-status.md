@@ -36,15 +36,15 @@ ms.collection: M365-identity-device-management
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-During device setup using Intune, the Enrollment Status Page displays installation information about Windows 10 (version 1903 and above) devices. Some applications, profiles, and certificates might not be installed by the time a user completes the out-of-box enrollment signs in to the device. An enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups. Profiles can be set to:
+The Enrollment status page displays installation information about Windows 10 devices during initial device enrollment, for example, Autopilot and also when a user uses a managed device for the first time that has the Enrollment status page policy already applied.  The Enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups that contain users. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
 
-You can also set the priority order for each profile to account for conflicting profile assignments to the same user or device.
+You can also set the priority order for each profile to account for conflicting profile assignments to the same user.
 
 > [!NOTE]
-> The Enrollment status page will not appear if only the device is in an assigned group. The user must be in an assigned group for the enrollment status page to appear.
+> The Enrollment status page can only be targeted to a user who belongs to an assigned group and the policy is set on the device at the time of enrollment for all users that use the device.  
 
 ## Turn on default enrollment status page for all users
 
@@ -66,7 +66,7 @@ To turn on the enrollment status page, follow the steps below.
 
 ## Set the enrollment status page priority
 
-A device or user might be in multiple groups and have multiple enrollment status page profiles. To deal with such conflicts, you can set the priorities for each profile. If someone has more than one enrollment status page profile, only the profile with the highest priority will be applied.
+A user might be in multiple groups and have multiple enrollment status page profiles. To deal with such conflicts, you can set the priorities for each profile. If someone has more than one enrollment status page profile, only the profile with the highest priority will be applied for the device they are enrolling at the time of enrollment.
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. Hover over the profile in the list.
@@ -85,11 +85,11 @@ You can specify which apps need to be installed before the user can access the d
 
 ## Enrollment status page tracking information
 
-The status page tracks information for device preparation, device setup, and account setup.
+There are three phases where the Enrollment status page tracks information for; device preparation, device setup, and account setup.
 
 ### Device preparation
 
-For device preparation, the enrollment status page tracks Trusted Platform Module (TPM) key attestations (when applicable), progress in joining Azure Active Directory, and enrolling into Intune.
+For device preparation, the enrollment status page tracks Trusted Platform Module (TPM) key attestations (when applicable), progress in joining Azure Active Directory, enrolling into Intune, and installation of Intune management extensions.
 
 ### Device setup
 
@@ -101,12 +101,13 @@ For device setup, the enrollment status page tracks the following items if they'
     - Per machine Line-of-business (LoB) MSI apps.
     - LoB store apps with installation context = Device.
     - Offline store and LoB store apps with installation context = Device.
+    - Win32 applications (Windows 10 version 1903 and newer only) 
 - Connectivity profiles
     - VPN or Wi-Fi profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
 - Certificate profiles that are assigned to **All Devices** or a device group in which the enrolling device is a member, but only for Autopilot devices
 
 ### Account setup
-For account setup, the enrollment status page tracks the following items:
+For account setup, the enrollment status page tracks the following items if they are assigned to the current logged in user:
 - Security policies
     - One CSP for all enrollments.
     - Actual CSPs configured by Intune aren't tracked here.
@@ -117,10 +118,36 @@ For account setup, the enrollment status page tracks the following items:
         - All Devices
         - All Users
         - a user group in which the user enrolling the device is a member with installation context set to User.
+    - Win32 applications (Windows 10 version 1903 and newer only) 
 - Connectivity profiles
     - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
 - Certificates
     - Certificate profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
+
+### Troubleshooting
+Top questions for troubleshooting.
+
+- Why were my applications not installed during Device setup phase during Autopilot deployment that is using Enrollment status page?
+    - To guarantee applications are installed during the Device setup phase during an Autopilot deployment, first, ensure the application is selected to block access in the selected apps list.  Second, ensure you targeting of the applications to the same AAD device group your Autopilot profile was assigned to. 
+    
+- Why is the Enrollment status page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-mgmt enrolled device?  
+    - The Enrollment status page is designed to provide installation status for all enrollment methods, this includes Autopilot, Configuration Manager co-mgmt and also when any new user logs into the device that has Enrollment status page policy applied for the first time.  
+    
+- How can I disable the Enrollment Status if it has been configured on the device?
+   - Enrollment status page policy is set on a device at the time of enrollment, to disable it you can create a custom OMA-URI setting with the following configurations:
+
+         Name:  DisableESP (choose a name you desire)
+         Description:  (enter a description)
+         OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
+         Data type:  Boolean
+         Value:  True 
+
+### Known issues
+Below are known issues. 
+- A pending reboot will always cause a timeout. Cause of timeout is because the device needs to be rebooted in order to complete the item tracked in Enrollment status page such as an application. A reboot will cause the enrollment status page to exit and after reboot the device will not enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
+- A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserved during reboot. Have the user enter their credentials then the Enrollment status page can continue. 
+- SCEP certificates with Windows Hello for Business policies will cause timeout because user cannot complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. 
+- Enrollment status page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. Cause is due to Enrollment status page waiting on Azure AD registration to complete, the issue is fixed in Windows 10 version 1903 and newer.  
 
 ## Next steps
 After you set up Windows enrollment pages, learn how to manage Windows devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
