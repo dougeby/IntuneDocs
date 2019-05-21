@@ -36,7 +36,7 @@ ms.collection: M365-identity-device-management
 The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.		
 
 > [!IMPORTANT]
-> **To support Google’s Firebase Cloud Messaging (FCM), you must update your Android Company Portal app to the latest version. For more information, see What's New - [Update your Android Company Portal app to the latest version](whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
+> To support Google’s Firebase Cloud Messaging (FCM), you must update your Android Company Portal app to the latest version. For more information, see What's New - [Update your Android Company Portal app to the latest version](whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
 
 > [!Tip]		
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps. Note that users must have an Intune license assigned to access the Company Portal website.
