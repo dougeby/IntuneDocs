@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -41,6 +41,8 @@ There are three different places to monitor the compliance status of MAM policie
 
 > [!NOTE]
 > For information about creating app protection policies, see [How to create and assign app protection policies](app-protection-policies.md).
+
+The retention period for app protection data is 90 days. Any app instances that have checked in to the MAM service within the past 90 days will be included in the App Protection Status report. An app instance is a unique user + app + device. 
 
 ## Summary view
 
