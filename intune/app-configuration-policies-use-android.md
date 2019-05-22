@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Add app configuration policies for managed Android devices
+title: Add app configuration policies for managed Android Enterprise devices
 titleSuffix: Microsoft Intune
-description: Use app configuration policies in Microsoft Intune to supply settings when users run an Android work profile app.
+description: Use app configuration policies in Microsoft Intune to supply settings when users run a Managed Google Play app.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -29,11 +29,11 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Add app configuration policies for managed Android devices
+# Add app configuration policies for managed Android Enterprise devices
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings to Android work profile apps. The app developer must expose Android managed app configuration settings in order to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to supply settings to Managed Google Play apps. The app developer must expose Android managed app configuration settings in order to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
@@ -47,7 +47,7 @@ Use app configuration policies in Microsoft Intune to supply settings to Android
     - **Description** - The  description of the profile that will appear in the Azure portal.
     - **Device enrollment type** - Choose **Managed devices**.
 6. Select **Android** for **Platform**.
-7. Select **Associated App** to choose the app for which you want to define an app configuration policy. Select from the list of Android work profile apps that you have approved and synchronized with Intune.
+7. Select **Associated App** to choose the app for which you want to define an app configuration policy. Select from the list of Managed Google Play apps that you have approved and synchronized with Intune.
 8. Select **Permissions**. You can set configurations by using:
     - [Configuration designer](#use-the-configuration-designer)
     - [JSON editor](#enter-the-json-editor)
@@ -55,7 +55,7 @@ Use app configuration policies in Microsoft Intune to supply settings to Android
 
 ## Use the configuration designer
 
-You can use the configuration designer for Android apps when the app has been designed to support configuration settings. Configuration will apply on devices that are enrolled in Intune. The designer lets you configure specific configuration values for the settings than an app exposes.
+You can use the configuration designer for Managed Google Play apps when the app has been designed to support configuration settings. Configuration will apply on devices that are enrolled in Intune. The designer lets you configure specific configuration values for the settings than an app exposes.
 
 Select **Add** to select the list of configuration settings that you want to specify for the app.  
 For each key and value in the configuration, set:

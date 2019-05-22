@@ -56,9 +56,9 @@ The first step in setting up Windows Autopilot is to add the Windows devices to 
 
 1. In any text editor, create a list of comma-separated values (CSV) that identify the Windows devices. Use the following format:
     
-    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
+    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-Group-Tag*
     
-    The first three items are required, but the order ID is optional.
+    The first three items are required, but the Group Tag (previously known "order ID") is optional.
 
 2. Save the CSV file.
 
