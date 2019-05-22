@@ -143,9 +143,9 @@ The InGracePeriod status for a compliance policy is a value. This value is deter
 
 Specifically, if a device has a NonCompliant status for an assigned compliance policy, and:
 
-- the device has no grace period assigned to it, then the assigned value for the compliance policy is NonCompliant
-- the device has a grace period that is expired, then the assigned value for the compliance policy is NonCompliant
-- the device has a grace period that is in the future, then the assigned value for the compliance policy is InGracePeriod
+- The device has no grace period assigned to it, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's expired, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's in the future, then the assigned value for the compliance policy is InGracePeriod
 
 The following table summarizes these points:
 

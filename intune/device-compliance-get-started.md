@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -43,7 +43,7 @@ For example, an Intune administrator can require:
 You can also use this feature to monitor the compliance status on devices in your organization.
 
 > [!IMPORTANT]
-> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
 <!---### Actions for noncompliance
 
