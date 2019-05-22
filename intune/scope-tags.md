@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2019
 ms.topic: article
-ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 

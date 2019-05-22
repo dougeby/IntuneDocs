@@ -9,7 +9,6 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/31/2017
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.topic: archived

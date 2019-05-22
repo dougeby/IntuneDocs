@@ -9,7 +9,6 @@ ms.author: tanvira
 manager: smantri
 ms.date: 4/16/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

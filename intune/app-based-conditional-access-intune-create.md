@@ -9,7 +9,6 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/22/2019
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

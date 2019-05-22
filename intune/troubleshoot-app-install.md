@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/19/2019
 ms.topic: troubleshooting
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

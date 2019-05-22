@@ -11,7 +11,6 @@ manager: dougeby
 ms.date: 01/03/2018
 
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

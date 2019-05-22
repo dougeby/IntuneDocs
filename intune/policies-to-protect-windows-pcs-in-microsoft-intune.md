@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
