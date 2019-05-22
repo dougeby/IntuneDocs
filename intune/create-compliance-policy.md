@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -133,29 +133,9 @@ Scope tags are a great way to assign and filter policies to specific groups, suc
 
 ## Refresh cycle times
 
-When checking for compliance, Intune uses the same refresh cycle as configuration profiles. In general, the times are:
+Intune uses different refresh cycles to check for updates to compliance policies. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
-| Platform | Refresh cycle|
-| --- | --- |
-| iOS | Every 6 hours |
-| macOS | Every 6 hours |
-| Android | Every 8 hours |
-| Windows 10 PCs enrolled as devices | Every 8 hours |
-| Windows Phone | Every 8 hours |
-| Windows 8.1 | Every 8 hours |
-
-If the device recently enrolled, the compliance check-in runs more frequently:
-
-| Platform | Frequency |
-| --- | --- |
-| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
-| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
-| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-
-At any time, users can open the Company Portal app, and sync the device to immediately check for a policy.
+At any time, users can open the Company Portal app, and sync the device to immediately check for policy updates.
 
 ### Assign an InGracePeriod status
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
@@ -50,40 +50,45 @@ Some additional recommendations:
 - Test connecting to the same Wi-Fi endpoint (as mentioned in the first step) again.
 - Roll out to larger groups and eventually to all expected users in your organization. 
 
-## How long does it take for mobile devices to get a policy or apps after they have been assigned?
+## How long does it take for devices to get a policy, profile, or app after they are assigned?
 
-When a policy or an app is assigned, Intune immediately begins notifying the device to check in with the Intune service. The notification typically takes less than five minutes.
+Intune notifies the device to check in with the Intune service. The notification times vary, including immediately up to a few hours. These notification times also vary between platforms.
 
-If a device doesn't check in to get the policy after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy on its next scheduled check-in with the Intune service, which is:
+If a device doesn't check in to get the policy or profile after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy or profile on its next scheduled check-in with the Intune service, which is estimated at:
 
 | Platform | Refresh cycle|
 | --- | --- |
-| iOS | Every 6 hours |
-| macOS | Every 6 hours |
-| Android | Every 8 hours |
-| Windows 10 PCs enrolled as devices | Every 8 hours |
-| Windows Phone | Every 8 hours |
-| Windows 8.1 | Every 8 hours |
+| iOS | About every 8 hours |
+| macOS | About every 6 hours |
+| Android | About every 8 hours |
+| Windows 10 PCs enrolled as devices | About every 8 hours |
+| Windows Phone | About every 8 hours |
+| Windows 8.1 | About every 8 hours |
 
-If the device recently enrolled, the check-in runs more frequently:
+If the device recently enrolled, the compliance and configuration check-in runs more frequently:
 
 | Platform | Frequency |
 | --- | --- |
-| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| Mac OS X | Every 15 minutes for 6 hours, and then every 6 hours | 
-| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
+| iOS | Every 15 minutes for 1 hour, and then around every 8 hours |  
+| macOS | Every 15 minutes for 6 hours, and then around every 6 hours | 
+| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
+| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then around every 8 hours | 
+| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
+| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
 
-At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
+At any time, users can open the Company Portal app, and sync the device to immediately check for policy or profile updates.
 
-For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day, or more. Intune sends requests at various intervals for a device to check in with Intune. However, it's still up to the device to check in. After initial enrollment, the time it takes a device to complete the check-in is unpredictable. It also depends on the type of device enrollment, and the policies and profiles assigned to a device. After the device enrolls, and all initial policies are applied, the device typically checks for new policies every 6-8 hours.
+For devices without user affinity, the sync frequency immediately following enrollment can vary from hours to a day, or more. Intune sends requests at various intervals for a device to check in with Intune. However, it's still up to the device to check in. After initial enrollment, the time it takes a device to complete the check-in is unpredictable. It also depends on the type of device enrollment, and the policies and profiles assigned to a device. After the device enrolls, and all initial policies and profiles are applied, the device checks for new policies and profiles about every 6-8 hours, based on the time the device enrolls in Intune.
+
+As a best practice, make sure your devices are online for at least eight consecutive hours to get the best results.
 
 ## What actions cause Intune to immediately send a notification to a device?
 
-Devices check in with Intune when they receive a notification to check in, or during the scheduled check-in. When you target a device or user with an action, such as lock, passcode reset, app assignment, profile or policy assignment, then Intune immediately notifies the device to check in to receive these updates.
+There are different actions that trigger a notification, such as when a policy, profile, or app is assigned, updated, deleted, and so on. These action times vary between platforms.
 
-Other changes, such as revising the contact information in the company portal, don't cause an immediate notification to devices.
+Devices check in with Intune when they receive a notification to check in, or during the scheduled check-in. When you target a device or user with an action, such as lock, passcode reset, app, profile or policy assignment, then Intune immediately notifies the device to check in to receive these updates.
+
+Other changes, such as revising the contact information in the Company Portal app, don't cause an immediate notification to devices.
 
 ## If multiple policies are assigned to the same user or device, how do I know which settings gets applied?
 
@@ -111,7 +116,7 @@ When you assign a custom policy, confirm that the configured settings don't conf
 
 ## What happens when a profile is deleted or no longer applicable?
 
-When you delete a profile, or you remove a device from a group that has the profile, the profile and settings are removed from the device as described:
+When you delete a profile, or you remove a device from a group that has the profile, then the profile and settings are removed from the device as described:
 
 - Wi-Fi, VPN, certificate, and email profiles: These profiles are removed from all supported enrolled devices.
 - All other profile types:  
