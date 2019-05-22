@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -146,7 +145,7 @@ During BYOD enrollments, users see a notification that tells them when they've m
 > - Autopilot enrollments
 >
 > Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
-> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 

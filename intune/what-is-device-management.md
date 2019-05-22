@@ -9,7 +9,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual 
 audience: microsoft-business
-ms.prod: microsoft-365-enterprise
 ms.service: 
 ms.technology: 
 ms.custom: microsoft-intune 
