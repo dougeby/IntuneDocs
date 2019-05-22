@@ -40,6 +40,11 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 
 By the way, DEP enrollment doesn't work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
+## DEP and the Company Portal
+DEP enrollments are not compatible with the app store version of the Company Portal app. If you want users to have access to the Company Portal app on a DEP device, you must push the app to the device by using the **Install Company Portal with VPP** option in the DEP profile. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program]( device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+
+ You can install the Company Portal app on devices that have already been enrolled with DEP. To do so, you must deploy the Company Portal app through Intune with an [Application Configuration policy](app-configuration-policies-use-ios.md) applied.
+
 ## What is supervised mode?
 Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it's especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
 
