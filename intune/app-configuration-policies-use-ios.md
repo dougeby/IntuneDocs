@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -179,6 +179,30 @@ Additionally, Intune supports the following token types in the property list:
 - \{\{serialnumber\}\}—for example, **F4KN99ZUG5V2** (for iOS devices)
 - \{\{serialnumberlast4digits\}\}—for example, **G5V2** (for iOS devices)
 - \{\{aaddeviceid\}\}—for example, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
+
+## Configure the Company Portal app to support iOS DEP devices
+
+DEP (Apple's Device Enrollment Program) enrollments are not compatible with the app store version of the Company Portal app. However, you can configure the Company Portal app to support iOS DEP devices using the following steps.
+
+1. In the Intune on Azure portal:
+    - Add the Intune Company Portal if necessary, by going to **Intune** > **Client Apps** > **Apps** > **Add**.
+    - Go to **Client apps** > **App configuration policies**, to create an app configuration policy for the Company Portal app.
+2. Create an app configuration policy with the XML below. More information on how to create an app configuration policy and enter XML data can be found at [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios) or for hybrid MDM, [Apply settings to iOS apps with app configuration policies in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+
+    ``` xml
+    <dict>
+        <key>IntuneCompanyPortalEnrollmentAfterUDA</key>
+        <dict>
+            <key>IntuneDeviceId</key>
+            <string>{{deviceid}}</string>
+            <key>UserId</key>
+            <string>{{userid}}</string>
+        </dict>
+    </dict>
+    ```
+
+3. Deploy the Company Portal to devices with the app configuration policy targeted to desired groups. Be sure to only deploy the policy to groups of devices that are already DEP enrolled.
+4. Tell end users to sign into the Company Portal app when it is automatically installed.
 
 ## Monitor iOS  app configuration status per device 
 Once a configuration policy has been assigned, you can monitor iOS app configuration status for each managed device. From **Microsoft Intune** in the Azure portal, select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a blade for the device. On the device blade, select **App configuration**.  
