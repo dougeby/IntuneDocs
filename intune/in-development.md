@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/29/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 
