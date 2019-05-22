@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
 ms.topic: troubleshooting
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

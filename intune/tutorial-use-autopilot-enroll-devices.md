@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

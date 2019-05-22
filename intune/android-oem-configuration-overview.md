@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/17/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority:
 ms.technology:
