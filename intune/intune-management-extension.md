@@ -61,7 +61,7 @@ The Intune management extension has the following prerequisites. Once these are 
   
     See [Enroll a Windows 10 device automatically using Group Policy](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) for guidance.
   
-  - Co-managed devices devices that use Configuration Manager and Intune. See [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) for guidance.
+  - Co-managed devices that use Configuration Manager and Intune. See [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) for guidance.
 
 - Devices enrolled in Intune. For [bulk auto-enrollment](windows-bulk-enroll.md), devices must run Windows 10 version 1703 or later.
 
@@ -89,7 +89,7 @@ The Intune management extension has the following prerequisites. Once these are 
 5. Select **OK** > **Create** to save the script.
 
 > [!NOTE]
-> The PowerShell script will run under admin privilege (by default) when the script is set to user context and the end user on the device has admin privileges.
+> The PowerShell script runs under admin privilege (by default) when the script is set to user context and the end user on the device has admin privileges.
 
 ## Assign the policy
 
