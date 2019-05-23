@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/22/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -62,10 +62,34 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 - **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
 - **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
 - **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
-- **Force restart apps on update failure**: **Require** ensures apps are always up-to-date, use this setting to configure a recurring or one time date to restart apps whose update failed due to the app being in use.
-- **User control over installations**: **Block** permits users to change installation options that typically are available only to system administrators. The security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If enabled, installations that may otherwise be stopped due to a security violation would be permitted to continue.
-- **Install apps with elevated privileges**: **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. If you enable this policy setting, privileges are extended to all programs. This enables users to install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
-- **Startup apps**: This policy allows the IT admin to specify a list of applications that users can run after logging on to the device. For this policy to work, the Windows apps need to declare in their manifest that they will use the start up task
+- **Apps from store only**: This setting determines the user experience when users install apps from places other than the Microsoft Store. Your options:  
+  - **Not configured** (default): Allows end users to install apps from places other than the Microsoft Store, including apps defined by other policy settings. (RS3+)
+  - **Anywhere**: When installing apps from outside the Microsoft Store, users see a warning advising them that files downloaded outside the store may not be safe. (RS5+) 
+  - **Store only**: Forces end users to only install apps from the Microsoft Store. (RS3+)
+  - **Recommendations**: When installing an app from the web that's available in the Microsoft Store, users see a message recommending they download it from the store. (RS5+) 
+  - **Prefer Store**: NEED DESCRIPTION
+
+  > [!NOTE]
+  > Configuring a device with a setting that isn’t supported on that device’s build is the same as not configuring the setting. 
+
+- **Force restart apps on update failure**: When an app is being used, it may not update. Use this setting to force an app to restart. **Not configured** (default) doesn't force the apps to restart. **Require** allows administrators to force a restart on a specific date and time, or on a recurring schedule. When set to **Require**, also enter:
+
+  - **Start Date/Time**: Choose a specific date and time to restart the apps.
+  - **Recurrence**: Choose a daily, weekly, or monthly restart.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **User control over installations**: When set to **Not configured** (default), Windows Installer prevent users from changing the installation options typically reserved for system administrators, such as entering the directory to install the files. **Block** allows users to change these installation options, and some of the Windows Installer security features are bypassed.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Install apps with elevated privileges**: When set to **Not configured** (default), the system applies the current user's permissions when it installs programs that a system administrator doesn't deploy or offer. **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. These privileges are extended to all programs.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Startup apps**: Enter a list of apps to open after a user signs in to the device. Be sure to use a semi-colon delimited list of Package Family Names (PFN) of Windows applications. For this policy to work, the manifest in the Windows apps must use a startup task.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Select **OK** to save your changes.
 
