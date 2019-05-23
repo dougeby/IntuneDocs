@@ -36,7 +36,7 @@ Organizations often require you to get your device managed before you can access
 
 This article describes how the Intune Company Portal app for macOS helps you enroll, configure, and maintain your device to meet your organization's requirements.  
 </br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk]
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## What to expect from the Company Portal app
 

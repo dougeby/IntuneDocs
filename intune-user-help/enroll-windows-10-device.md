@@ -34,7 +34,7 @@ Use Intune Company Portal to enroll your Windows 10 device under your organizati
 
 Windows 10 is supported across various device types including desktop, phone, and tablet. The enrollment steps are the same on whichever device you're using. However, your screen may look a little different from the images shown in this article.  
 </br>
-> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE]
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
 ## Enroll Windows 10 version 1607 and later device 
 These steps describe how to enroll a device that runs on Windows 10, version 1607 and later.  
