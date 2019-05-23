@@ -40,7 +40,8 @@ There are four ways to enroll. Your organization should let you know which optio
 * QR Code   
 * Google Zero Touch  
 
-Before you begin enrollment, make sure you're aware of which option you need to use so that you can follow the appropriate steps.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
 
 ## Enroll device 
 Complete these steps to set up and enroll your device.  
