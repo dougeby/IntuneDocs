@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -115,11 +115,17 @@ In **PowerShell scripts**, right-click the script, and select **Delete**.
 
 ## Common issues and resolutions
 
-The PowerShell scripts don't run at every sign-in. They run only after reboots, or if the **Microsoft Intune Management Extension** service is restarted. The Intune management extension client check once per hour for any changes in the script or policy in Intune.
+The PowerShell scripts don't run at every sign-in. They run:
+
+- When the script is assigned to a device
+- If you change the script, upload it, and assign the script in a profile 
+- If the **Microsoft Intune Management Extension** service is restarted
+
+The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
 
 #### Issue: Intune management extension doesn't download
 
-**Possible resolutions**:
+**Possible resolutions**: **DOES THIS EVEN APPLY ANYMORE?**
 
 - Be sure the devices are auto-enrolled in Azure AD. To confirm, on the device: 
 
