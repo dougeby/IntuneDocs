@@ -133,7 +133,7 @@ In **PowerShell scripts**, right-click the script, and select **Delete**.
 
 - The device isn't joined to Azure AD. Be sure the devices meet the [prerequisites](#prerequisites) (in this article). 
 - There aren't any PowerShell scripts or Win32 apps assigned to the groups that the user or device belongs.
-- The MDM Agent can't check in
+- The device isn't able to check-in with the Intune service, maybe from being turned off, no internet access, and so on.
 - The device is in S mode. The Intune management extension isn't supported on devices running in S mode. 
 
 To see if the device is auto-enrolled, you can:
