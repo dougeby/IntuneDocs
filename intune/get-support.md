@@ -120,11 +120,16 @@ After you select an offered choice or submit your own query, context-sensitive r
 If the self-help or web-based guidance doesn’t help you resolve the problem, use the console to open an email or phone support issue.  
 On the **Need help?** page, select the option you want to use.  
 
-- For an email request, provide your email address and optionally, you can add attachments to your submission. Select **Send** to open the request.  
+  > [!NOTE] 
+  > Email requests for support are not available for all tenants.  
+
+- For an email request, provide your email address and optionally, you can add attachments to your submission. Select **Send** to open the request. 
 
   ![Email request](./media/get-support/email-support.png)
   
 - For a phone request, provide your phone number. Optionally, you can include your email address and add attachments to your submission. Select Call me to submit the request.  
+
+
 
    ![Phone request](./media/get-support/phone-support.png)
 
