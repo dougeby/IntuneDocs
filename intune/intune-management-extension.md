@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.prod:
 ms.service: microsoft-intune
@@ -46,11 +46,24 @@ The Intune management extension supplements the in-box Windows 10 MDM features. 
 
 ## Prerequisites
 
-The Intune management extension has the following prerequisites:
+The Intune management extension has the following prerequisites. Once these are met, the Intune management extension is installed automatically if a PowerShell script or Win32 app is assigned to the user or device.
 
-- Devices must be joined or registered to Azure AD, and Azure AD and Intune configured for [auto-enrollment](quickstart-setup-auto-enrollment.md). The Intune management extension supports Azure AD joined, hybrid Azure AD domain joined, and co-managed enrolled Windows devices.
-- Devices must run Windows 10 version 1607 or later.
-- The Intune management extension agent is installed when a PowerShell script or a Win32 app is deployed to a user or device security group.
+- Devices running Windows 10 version 1607 or later.
+  
+- Devices joined to Azure Active Directory (AD), including:
+  
+  - Hybrid Azure AD-joined: Devices joined to Azure Active Directory (AD), and also joined to on-premises Active Directory (AD). See [Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) for guidance.
+    
+  - Devices enrolled in a group policy (GPO) scenario, which is: 
+  
+    1. User signs in to the device using a local user account, and then joins the device to Azure AD.
+    2. User signs in to the device using their Azure AD account, and then enrolls in Intune.
+  
+    See [Enroll a Windows 10 device automatically using Group Policy](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) for guidance.
+  
+  - Co-managed devices devices that use Configuration Manager and Intune. See [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) for guidance.
+
+- Devices enrolled in Intune. For [bulk auto-enrollment](windows-bulk-enroll.md), devices must run Windows 10 version 1703 or later.
 
 ## Create a script policy 
 
@@ -89,8 +102,7 @@ The Intune management extension has the following prerequisites:
 
 > [!NOTE]
 > - End users aren't required to sign in to the device to execute PowerShell scripts.
-> - PowerShell scripts in Intune can be targeted to Azure AD device security groups.
-> - PowerShell scripts in Intune can be targeted to Azure AD user security groups.
+> - PowerShell scripts in Intune can be targeted to Azure AD device security groups or Azure AD user security groups.
 
 The Intune management extension client checks once every hour and after every reboot with Intune for any new scripts or changes. After you assign the policy to the Azure AD groups, the PowerShell script runs, and the run results are reported. Once the script executes, it doesn't execute again unless there's a change in the script or policy.
 
@@ -115,31 +127,31 @@ In **PowerShell scripts**, right-click the script, and select **Delete**.
 
 ## Common issues and resolutions
 
-The PowerShell scripts don't run at every sign-in. They run:
-
-- When the script is assigned to a device
-- If you change the script, upload it, and assign the script in a profile 
-- If the **Microsoft Intune Management Extension** service is restarted
-
-The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
-
 #### Issue: Intune management extension doesn't download
 
-**Possible resolutions**: **DOES THIS EVEN APPLY ANYMORE?**
+**Possible resolution**:
 
-- Be sure the devices are auto-enrolled in Azure AD. To confirm, on the device: 
+Be sure the devices meet the [prerequisites](#prerequisites) (in this article). To see if the device is auto-enrolled, you can:
 
   1. Go to **Settings** > **Accounts** > **Access work or school**.
   2. Select the joined account > **Info**.
   3. Under **Advanced Diagnostic Report**, select **Create Report**.
   4. Open the `MDMDiagReport` in a web browser, and go to the **Enrolled configuration sources** section.
-  5. Look for the **MDMDeviceWithAAD** property. If this property doesn't exist, then your device isn't auto enrolled.
+  5. Look for the **MDMDeviceWithAAD** property. If the property exists, the device is auto-enrolled. If this property doesn't exist, then the device isn't auto-enrolled.
 
-    [Enable Windows 10 automatic enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) includes the steps.
+[Enable Windows 10 automatic enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) includes the steps to configure automatic enrollment in Intune.
 
 #### Issue: PowerShell scripts do not run
 
 **Possible resolutions**:
+
+- The PowerShell scripts don't run at every sign-in. They run:
+
+  - When the script is assigned to a device
+  - If you change the script, upload it, and assign the script to a user or device 
+  - If the **Microsoft Intune Management Extension** service is restarted
+
+  The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
 
 - Confirm the Intune management extension is downloaded to `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Scripts don't run on Surface Hubs.
