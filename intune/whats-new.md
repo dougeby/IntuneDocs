@@ -51,18 +51,16 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 ## Week of May 20, 2019 
 
-#### Autopilot device OrderID attribute name changed to Group Tag <!-- 4659453 -->
-
-To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. OrderID will soon be re-introduced to accommodate legacy customers or scripts. However, Group Tag will be the standard moving forward.
-
-<!-- ########################## -->
-
-## Week of May 20, 2019 
-
 ### App management
 
 #### Windows Company Portal app <!-- 3316993 -->
 The Windows Company Portal app will now have a new page labeled **Devices**. The **Devices** page will show end users all of their enrolled devices. Users will see this change in the Company Portal when they use version 10.3.4291.0 and later. For information about the configuring the Company Portal, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+
+### Device enrollment
+
+#### Autopilot device OrderID attribute name changed to Group Tag <!-- 4659453 -->
+
+To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. OrderID will soon be re-introduced to accommodate legacy customers or scripts. However, Group Tag will be the standard moving forward.
 
 ## Week of May 13, 2019 
 
