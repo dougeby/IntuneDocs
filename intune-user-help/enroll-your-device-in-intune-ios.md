@@ -36,8 +36,7 @@ Enroll your iOS device with the Intune Company Portal app to gain secure access 
 After your device is enrolled, it becomes *managed*. Your organization can assign policies and apps to the device through a mobile device management (MDM) provider, such as Intune.  
 
 To maintain access to work or school information from your device, you'll need to configure your device to match your organization's preferred settings. This article describes how to use Company Portal to enroll you device and maintain your organization's setting requirements.
-
-<br/>
+</br>
 > [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c]
 
 > [!NOTE]
