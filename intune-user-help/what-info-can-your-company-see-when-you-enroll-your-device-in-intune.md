@@ -47,7 +47,7 @@ Your organization cannot see your personal information when you enroll a device 
 - Device model, like Google Pixel
 - Device manufacturer, like Microsoft
 - Operating system and version, like iOS 12.0.1
-- App inventory, i.e., App names like Microsoft Word: On personal devices, your organization can only see your managed app inventory. On corporate-owned devices, your organization can see all of your app inventory.
+- App inventory and app names, like Microsoft Word. On personal devices, your organization can only see your managed app inventory. On corporate-owned devices, your organization can see all of your app inventory.
 - Device owner
 - Device name
 - Device serial number
