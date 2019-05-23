@@ -31,12 +31,12 @@ ms.collection: M365-identity-device-management
 # Enroll your device with Company Portal  
 Enroll your personal or corporate-owned Android device to get secure access to company email, apps, and data. Company Portal supports Android devices, including Samsung Knox, running Android 4.4 and later.  
 
+<br/>
+> [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o]
+
 > [!NOTE]
 > Samsung Knox is a type of security that certain Samsung devices use for additional 
 > protection outside of what native Android provides. To check if you have a Samsung Knox device,> go to **Settings** > **About device**. If you don't see **Knox version** listed there, you have a native Android device.
-
-<br/>
-> [!VIDEO https://www.youtube.com/embed/k0Q_sGLSx6o]
 
 ## Enroll device  
 Make sure to [install the free Intune Company Portal app from Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal). 

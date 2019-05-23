@@ -37,11 +37,11 @@ After your device is enrolled, it becomes *managed*. Your organization can assig
 
 To maintain access to work or school information from your device, you'll need to configure your device to match your organization's preferred settings. This article describes how to use Company Portal to enroll you device and maintain your organization's setting requirements.
 
-> [!NOTE]
-> If you tried to access company email in the Mail app, and received a prompt to get your device managed, you're in the right place. Follow the instructions below to get access to your email and other company resources on your iOS device.  
-
 <br/>
 > [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c]
+
+> [!NOTE]
+> If you tried to access company email in the Mail app, and received a prompt to get your device managed, you're in the right place. Follow the instructions below to get access to your email and other company resources on your iOS device.  
 
 ## What to expect from the Company Portal app  
 
