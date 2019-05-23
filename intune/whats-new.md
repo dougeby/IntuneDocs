@@ -60,7 +60,7 @@ The Windows Company Portal app will now have a new page labeled **Devices**. The
 
 #### Autopilot device OrderID attribute name changed to Group Tag <!-- 4659453 -->
 
-To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. OrderID will soon be re-introduced to accommodate legacy customers or scripts. However, Group Tag will be the standard moving forward.
+To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID. Otherwise, the upload will fail. To accomodage legacy customers and scriopts, OrderID will still be accepted. However, Group Tag will be the standard moving forward.
 
 ## Week of May 13, 2019 
 
