@@ -129,9 +129,14 @@ In **PowerShell scripts**, right-click the script, and select **Delete**.
 
 #### Issue: Intune management extension doesn't download
 
-**Possible resolution**:
+**Possible resolutions**:
 
-Be sure the devices meet the [prerequisites](#prerequisites) (in this article). To see if the device is auto-enrolled, you can:
+- The device isn't joined to Azure AD. Be sure the devices meet the [prerequisites](#prerequisites) (in this article). 
+- There aren't any PowerShell scripts or Win32 apps assigned to the groups that the user or device belongs.
+- The MDM Agent can't check in
+- The device is in S mode. The Intune management extension isn't supported on devices running in S mode. 
+
+To see if the device is auto-enrolled, you can:
 
   1. Go to **Settings** > **Accounts** > **Access work or school**.
   2. Select the joined account > **Info**.
@@ -150,6 +155,9 @@ Be sure the devices meet the [prerequisites](#prerequisites) (in this article). 
   - When the script is assigned to a device
   - If you change the script, upload it, and assign the script to a user or device 
   - If the **Microsoft Intune Management Extension** service is restarted
+  
+    > [!TIP]
+    > The **Microsoft Intune Management Extension** is a service that runs on the device, just like any other service listed in the Services app (services.msc). After a device reboots, this service may also restart, and then run any assigned PowerShell scripts. If the service is set to Manual, then the service may not restart after the device reboots. It also depends on any configuration settings added by your IT department, such as the [PowerShell execution policy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6).
 
   The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
 
