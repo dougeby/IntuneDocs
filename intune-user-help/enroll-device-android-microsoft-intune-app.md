@@ -39,7 +39,6 @@ There are four ways to enroll. Your organization should let you know which optio
 * Token  
 * QR Code   
 * Google Zero Touch  
-
 </br>
 > [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
 
