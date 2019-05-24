@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -81,6 +81,9 @@ Enrollment steps differ for different versions of Windows 10 devices. The follow
 Use the following articles to enroll other supported Windows devices through the Company Portal website:   
 * [Windows 8.1. or Windows RT 8.1 device](enroll-your-W81-or-rt81-windows.md)  
 * [Windows Phone 8.1 device](enroll-your-wp81-windows.md)    
+
+## IT administrator support  
+If you're an IT administrator and run in to problems while enrolling devices, see [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4469913). This article lists common errors, their causes, and steps to resolve them.  
 
 ## Next steps  
 Now that you know the supported devices, and your Windows 10 version number, proceed to the recommended enrollment article.  
