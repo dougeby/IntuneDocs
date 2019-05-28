@@ -50,7 +50,7 @@ To manage devices and install apps, your users can install the Company Portal ap
 3. Select **Get the app** to acquire and add the offline Company Portal app to your inventory.
 4. On the **Company portal** app page, select **Manage**.
 5. For **Platform**, select **Windows 10 all devices**, and then select the appropriate **Minimum version**, **Architecture**, and **Download app metadata** values. 
-6. Select **Download** to save the file to your local machine.
+6. Select **Download** under **Package details** to save the file to your local machine.
 
     ![Windows 10 devices, where architecture equals X86, is selected](./media/Win10CP-all-devices.png)
 
