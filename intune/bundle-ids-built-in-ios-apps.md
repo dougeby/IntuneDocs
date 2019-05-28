@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 05/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority:
@@ -62,6 +62,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.mobilenotes       | Notes        | Apple     |
 | com.apple.Numbers           | Numbers      | Apple     |
 | com.apple.Pages             | Pages        | Apple     |
+| com.apple.mobilephone       | Phone        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Photos       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |
