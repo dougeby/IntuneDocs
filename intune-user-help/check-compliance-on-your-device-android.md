@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,8 +32,8 @@ ms.collection: M365-identity-device-management
 
 If your device hasn't checked in with Intune in a while, you might not be able to access your company or school resources. To regain access, try the following:
 
-1. Open the Android Company Portal app on your device.
+1. Open the Company Portal app for Android on your device.
 
-2. Tap **Check Compliance**.
+2. Tap **Check device settings**.
 
 If you are unable to reset your lost or stolen device, ask your company support to reset it for you. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
