@@ -825,6 +825,10 @@
           href: vpn-settings-windows-phone-8-1.md
         - name: Custom
           href: custom-settings-windows-phone-8-1.md
+  - name: Error codes and descriptions
+    items:
+    - name: Software update errors
+      href: software-update-agent-error-codes.md
   - name: Developer guidance
     items:
     - name: API to add third-party certificate authority
