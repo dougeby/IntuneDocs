@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 05/28/2019
 ms.topic: reference
 ms.prod:
 ms.service: microsoft-intune
@@ -122,8 +122,8 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
-	> [!IMPORTANT]
-	> When the password requirement is changed on a Windows Desktop device, it doesn’t take effect until the next time the user logs into the device. Additionally users whose passwords already met the requirement will still be prompted to change their passwords.
+  > [!IMPORTANT]
+  > When the password requirement is changed on a Windows desktop, users are impacted the next time they sign in, as that’s when the device goes from idle to active. Users with passwords that meet the requirement are still prompted to change their passwords.
 
 ### Encryption
 
