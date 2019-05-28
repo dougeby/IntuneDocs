@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -88,7 +88,8 @@ The app is now assigned to the groups that you selected. For more information ab
 
 ## How conflicts between app intents are resolved
 
-Sometimes, the same app is assigned to multiple groups but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
+A single group is prevented from being targetted for multiple app assignment intents, however if a user or a device is a member of multiple groups that are each assigned with different intents it will result in a conflict. Creating assignment conflicts for applications is not recommended.
+The information in the following table can help you understand the resulting intent when a conflict occurs:
 
 | Group 1 intent | Group 2 intent | Resulting intent |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
