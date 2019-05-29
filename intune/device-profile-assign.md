@@ -37,7 +37,7 @@ This article shows you how to assign a profile, and includes some information on
 
 ## Assign a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles**. All the profiles are listed.
 3. Select the profile you want to assign > **Assignments**.
 4. Choose to **Include** groups or **Exclude** groups, and then select your groups. When you select your groups, you're choosing an Azure AD group. To select multiple groups, hold down the **Ctrl** key, and select your groups.

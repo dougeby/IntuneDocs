@@ -300,7 +300,7 @@ In this step, you:
 > [!IMPORTANT] 
 > The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA). It **must** also be installed on the same server as the Network Device Enrollment Service (NDES) role.
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**.
 3. Download and save the connector for SCEP file. Save it to a location accessible from the server where you're going to install the connector.
 
@@ -353,7 +353,7 @@ To validate that the service is running, open a browser, and enter the following
 
 ## Create a SCEP certificate profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the SCEP certificate profile.
 4. From the **Platform** drop-down list, select the device platform for this SCEP certificate. Currently, you can select one of the following platforms for device restriction settings:

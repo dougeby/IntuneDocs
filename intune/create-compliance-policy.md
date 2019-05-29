@@ -66,7 +66,7 @@ To use device compliance policies, be sure you:
 
 ## Create the policy
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance**. You have the following options:
 
     - **Overview**: Shows a summary and number of devices that are compliant, not evaluated, and so on. It also lists the policies and individual settings in your policies. [Monitor Intune device compliance policies](compliance-policy-monitor.md) provides some good information.

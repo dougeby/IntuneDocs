@@ -41,7 +41,7 @@ This article:
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device configuration**. You have the following options:
 
