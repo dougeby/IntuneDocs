@@ -59,7 +59,7 @@ The following security baselines are available for use with Intune.
 
 - **PREVIEW: Windows Defender ATP baseline**  
   [View the settings](security-baseline-settings-defender-atp.md)  
-  *(This baseline is available when your environement meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
+  *(This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
 
 
 ## Prerequisites

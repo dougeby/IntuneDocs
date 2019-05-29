@@ -32,6 +32,11 @@ ms.collection: M365-identity-device-management
 
 View the Microsoft Defender Advanced Threat Protection (formerly Windows Defender Advanced Threat Protection) baseline settings that are supported by Microsoft Intune. The default values in this article represent the default baseline configuration for Intune. These defaults represent the recommended configuration for Intune and might not match the Windows defaults.
 
+  The Microsoft Defender Advanced Threat Protection baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites)).
+
+
+
+
 > [!NOTE]  
 > The WDATP baseline settings are in **Preview**. While in Preview, the list of available settings, and order in which this content presents those settings, might not match what is available in the portal. 
 >
