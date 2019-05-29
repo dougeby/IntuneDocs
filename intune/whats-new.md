@@ -137,7 +137,7 @@ To see the available settings, go to [App Store, Doc Viewing, Gaming iOS setting
 Applies to: iOS
 
 ####  Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
-We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings.  
+We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings. This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
 ### Device enrollment
 
