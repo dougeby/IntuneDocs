@@ -40,7 +40,7 @@ To learn about Delivery Optimization on Windows 10, see [Delivery Optimization u
 > **Software updates – Windows 10 Update Rings** are replaced by the **Delivery optimization** settings. Your existing update rings can be changed to use the **Delivery optimization** settings. [Move existing update rings to delivery optimization](#move-existing-update-rings-to-delivery-optimization) (in this article) 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device configuration** > **Profiles** > **Create Profile**.
 

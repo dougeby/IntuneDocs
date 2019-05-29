@@ -46,7 +46,7 @@ When the profile is created in Intune, you deploy or assign the profile to devic
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create Profile**.
 3. Enter the following properties:
 

@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -58,7 +58,8 @@ The following security baselines are available for use with Intune.
   [View the settings](security-baseline-settings-windows.md)
 
 - **PREVIEW: Windows Defender ATP baseline**  
-  [View the settings](security-baseline-settings-defender-atp.md)
+  [View the settings](security-baseline-settings-defender-atp.md)  
+  *(This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
 
 
 ## Prerequisites
@@ -77,7 +78,8 @@ When using co-managed devices, you must switch the **Device configuration** work
 
     ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > The Windows Defender ATP baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 2. Select the baseline you'd like to use, and then select **Create profile**.  
 
 3. On the **Basics** tab, specify the following properties:

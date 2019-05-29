@@ -39,7 +39,7 @@ This article shows you how to create a custom profile for Android Enterprise dev
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following settings:
 
@@ -74,7 +74,7 @@ This article shows you how to create a custom profile for Android Enterprise dev
 
 In this example, you create a custom profile that restricts copy and paste actions between work and personal apps on Android Enterprise devices.
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following settings:
 

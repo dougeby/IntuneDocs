@@ -88,7 +88,7 @@ Once you onboard a device using configuration package, then you don't need to do
 
 ### Create the configuration profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description**.
 4. For **Platform**, select **Windows 10 and later**
@@ -110,11 +110,11 @@ Once you onboard a device using configuration package, then you don't need to do
 ## Create the compliance policy
 The compliance policy determines an acceptable level of risk on a device.
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Windows Defender ATP users the value *Secure*.)
    - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
@@ -125,7 +125,7 @@ The compliance policy determines an acceptable level of risk on a device.
 
 ## Assign the policy
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Policies**> select your Windows Defender ATP compliance policy.
 3. Select **Assignments**.
 4. Include or exclude your Azure AD groups to assign them the policy.
@@ -158,7 +158,7 @@ The conditional access policy blocks access to resources *if* the device is nonc
 ## Monitor device compliance
 Next, monitor the state of devices that have the Windows Defender ATP compliance policy.
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Policy compliance**.
 3. Find your Windows Defender ATP policy in the list, and see which devices are compliant or noncompliant.
 
