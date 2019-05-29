@@ -43,7 +43,7 @@ This article shows you how to create a device configuration profile. You can als
 
 ## Create a device profile
 
-Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

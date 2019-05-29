@@ -41,7 +41,7 @@ This article:
 
 ## Create the profile
 
-Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device configuration**. You have the following options:
 

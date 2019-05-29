@@ -38,7 +38,7 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 ## Configure the policy
 
-Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Software updates** > **Update policies for iOS** > **Create**.
 3. Enter the following settings:
 
