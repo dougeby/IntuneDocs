@@ -35,7 +35,7 @@ This article lists some common troubleshooting techniques, and describes some is
 
 ## Use built-in troubleshooting
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Troubleshoot**:
 
     ![In Intune, go to Help and Support, and select Troubleshoot](./media/help-and-support-troubleshoot.png)
@@ -101,7 +101,7 @@ This article lists some common troubleshooting techniques, and describes some is
 
 ## You're unsure if a profile is correctly applied
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Devices** > **All devices** > select the device > **Device configuration**. 
 
     Every device lists its profiles. Each profile has a **Status**. The status applies when all of the assigned profiles, including hardware and OS restrictions and requirements, are considered together. Possible statuses include:

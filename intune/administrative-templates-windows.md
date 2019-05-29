@@ -38,7 +38,7 @@ This article lists the steps to create a template for Windows 10 devices, and sh
 
 ## Create a template
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

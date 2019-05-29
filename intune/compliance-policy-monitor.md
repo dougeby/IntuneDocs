@@ -37,7 +37,7 @@ Compliance reports help you review device compliance, and troubleshoot complianc
 
 Open the **Intune Device compliance dashboard**:
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device compliance** > **Overview**. The **Device compliance dashboard** opens.
 

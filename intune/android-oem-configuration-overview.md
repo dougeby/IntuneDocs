@@ -81,7 +81,7 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app has been a
 
 ## Create an OEMConfig profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

@@ -69,7 +69,7 @@ The Intune management extension has the following prerequisites. Once these are 
 
 ## Create a script policy 
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **PowerShell scripts** > **Add**.
 3. Enter the following properties:
     - **Name**: Enter a name for the PowerShell script. 

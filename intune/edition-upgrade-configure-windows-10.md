@@ -99,7 +99,7 @@ The following table lists the supported upgrade paths for the Windows 10 edition
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create Profile**.
 3. Enter the following properties:
 
