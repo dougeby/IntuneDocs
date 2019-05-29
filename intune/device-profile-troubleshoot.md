@@ -84,7 +84,7 @@ As a best practice, make sure your devices are online for at least eight consecu
 
 ## What actions cause Intune to immediately send a notification to a device?
 
-There are different actions that trigger a notification, such as when a policy, profile, or app is assigned, updated, deleted, and so on. These action times vary between platforms.
+There are different actions that trigger a notification, such as when a policy, profile, or app is assigned (or unassigned), updated, deleted, and so on. These action times vary between platforms.
 
 Devices check in with Intune when they receive a notification to check in, or during the scheduled check-in. When you target a device or user with an action, such as lock, passcode reset, app, profile or policy assignment, then Intune immediately notifies the device to check in to receive these updates.
 
