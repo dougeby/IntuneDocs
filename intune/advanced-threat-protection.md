@@ -114,7 +114,7 @@ The compliance policy determines an acceptable level of risk on a device.
 2. Select **Device compliance** > **Policies** > **Create policy**.
 3. Enter a **Name** and **Description**.
 4. In **Platform**, select **Windows 10 and later**.
-5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. In the **Windows Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Windows Defender ATP users the value *Secure*.)
    - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
