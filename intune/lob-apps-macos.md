@@ -65,8 +65,7 @@ You must download an external tool to pre-process your *.pkg* files before you c
 
 ## Step 1 - Specify the software setup file
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 4. In the **Client apps** workload, choose **Manage** > **Apps**.
 5. Above the list of apps, choose **Add**.

@@ -34,8 +34,7 @@ On Microsoft Intune MDM-managed devices, sometimes app installations can fail. W
 
 Intune provides app troubleshooting details based on the apps installed on a specific user's device.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Troubleshoot**.
 4. Click **Select user** to select a user to troubleshoot. The **Select users** pane will be displayed.
 5. Select a user by typing the name or email address. Click **Select** at the bottom of the pane. The troubleshooting information for the user is displayed in the **Troubleshoot** pane. 
