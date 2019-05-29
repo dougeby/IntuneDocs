@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.prod:
 ms.service: microsoft-intune
@@ -54,23 +54,23 @@ Some additional recommendations:
 
 Intune notifies the device to check in with the Intune service. The notification times vary, including immediately up to a few hours. These notification times also vary between platforms.
 
-If a device doesn't check in to get the policy or profile after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy or profile on its next scheduled check-in with the Intune service, which is estimated at:
+If a device doesn't check in to get the policy or profile after the first notification, Intune makes three more attempts. An offline device, such as turned off, or not connected to a network, may not receive the notifications. In this case, the device gets the policy or profile on its next scheduled check-in with the Intune service, which is **estimated** at:
 
 | Platform | Refresh cycle|
 | --- | --- |
 | iOS | About every 8 hours |
-| macOS | About every 6 hours |
+| macOS | About every 8 hours |
 | Android | About every 8 hours |
 | Windows 10 PCs enrolled as devices | About every 8 hours |
 | Windows Phone | About every 8 hours |
 | Windows 8.1 | About every 8 hours |
 
-If the device recently enrolled, the compliance and configuration check-in runs more frequently:
+If the device recently enrolled, the compliance and configuration check-in runs more frequently, which is **estimated** at:
 
 | Platform | Frequency |
 | --- | --- |
 | iOS | Every 15 minutes for 1 hour, and then around every 8 hours |  
-| macOS | Every 15 minutes for 6 hours, and then around every 6 hours | 
+| macOS | Every 15 minutes for 1 hour, and then around every 8 hours | 
 | Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
 | Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then around every 8 hours | 
 | Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then around every 8 hours | 
