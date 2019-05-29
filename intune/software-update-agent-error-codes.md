@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-# Software update agent error codes in Microsoft Intune
+# Software update agent error codes and descriptions in Microsoft Intune
 
 The following table lists the Intune **Update Agent** error codes. If you can't find a specific error code in this table, see [Windows Update error code list](https://support.microsoft.com/help/938205/windows-update-error-code-list).
 
