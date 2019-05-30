@@ -59,7 +59,7 @@ You can manually add users to your Intune subscription via the [Microsoft 365 ad
 6. Choose **Add** to create the new user.
 
 ### Add Intune users in the Azure portal
-1. Sign in to [Azure portal](https://portal.azure.com) and go **All services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Users** > **All users**.
 3. In the Admin center, select **New user**.
    ![Screenshot of add New User](media/intune-add-user.png)

@@ -98,9 +98,8 @@ You need the following information to make a REST call using Postman:
 
 You also need the endpoint. To get your Data Warehouse endpoint, you will need the custom feed URL. You can get the OData endpoint from the Data Warehouse pane.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select **Set up Intune Data Warehouse** under **Other tasks**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Open the **Intune Data Warehouse** pane by selecting the Data Warehouse link under **Other tasks** on the right side of the **Microsoft Intune - Overview** blade.
 4. Copy the custom feed url under **Use third-party reporting services**. It should look something like: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 The endpoint follows the following format:
