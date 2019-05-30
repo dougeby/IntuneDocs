@@ -54,7 +54,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 ### App management
 
 #### Reporting for potentially harmful apps on Android devices <!-- 4223162 -->
-Intune now provides additional reporting information about potentially harmful apps on Android devices. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Device compliance** > **Policies** > **Create Policy** > **Settings** > **Device Health**. 
+Intune now provides additional reporting information about potentially harmful apps on Android devices. 
 
 ## Week of May 20, 2019 
 
