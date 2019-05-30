@@ -34,7 +34,7 @@ This article lists and describes the different settings you can control on iOS d
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
 > [!NOTE]
-> These settings use Apple's MDM settings. For more details on these settings, see [Apple's mobile eevice management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
+> These settings use Apple's MDM settings. For more details on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
 
 ## Before you begin
 
