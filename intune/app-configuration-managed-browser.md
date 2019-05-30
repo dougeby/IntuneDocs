@@ -136,8 +136,7 @@ SSO requires your device to be registered by the Microsoft Authenticator app on 
 >[!IMPORTANT]
 >For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy]( app-protection-policy.md)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  On the **Client apps** blade of the Manage list, choose **App configuration policies**.
 4.  On the **App configuration policies** blade, choose **Add**.
 5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.

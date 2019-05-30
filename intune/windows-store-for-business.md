@@ -68,8 +68,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Configure synchronization
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 1. On the **Client apps** pane, choose **Setup** > **Microsoft Store for Business**.
 2. Click **Enable**.

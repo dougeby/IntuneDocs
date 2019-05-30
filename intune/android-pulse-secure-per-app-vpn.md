@@ -44,8 +44,7 @@ After you assign the policy to your Android device or user groups, users should 
 ## Step 1: Create a VPN profile
 
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
 2. On the list of profiles pane, choose **Create profile**.
@@ -58,8 +57,7 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
 
 ## Step 2: Create a custom configuration policy
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
 3. On the profiles pane, click **Create Profile**.
