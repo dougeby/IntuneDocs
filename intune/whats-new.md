@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -48,6 +48,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 -->  
 
 <!-- ########################## -->
+
+## Week of May 27, 2019 
+
+### App management
+
+#### Reporting for potentially harmful apps on Android devices <!-- 4223162 -->
+Intune now provides additional reporting information about potentially harmful apps on Android devices. 
 
 ## Week of May 20, 2019 
 
