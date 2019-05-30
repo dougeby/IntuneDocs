@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a Wi-Fi profile for devices in Microsoft Intune - Azure | Microsoft Docs
-description: See the steps to create a Wi-Fi device configuration profile in Microsoft Intune. Ceate profiles for Android, Android Enterprise, Android kiosk, iOS, macOS, Windows 10 and later, and Windows Holographic for Business. Use these profiles to create a WiFi connection to use certificates, choose an EAP type, select an authentication method, enable a proxy, and more.
+description: See the steps to create a Wi-Fi device configuration profile in Microsoft Intune. Create profiles for Android, Android Enterprise, Android kiosk, iOS, macOS, Windows 10 and later, and Windows Holographic for Business. Use these profiles to create a WiFi connection to use certificates, choose an EAP type, select an authentication method, enable a proxy, and more.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -52,7 +52,7 @@ Wi-Fi profiles support the following device platforms:
 
 ## Create a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune**, and select **Microsoft Intune**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the Wi-Fi profile.
 4. In the **Platform** drop-down list, select the device platform to apply the Wi-Fi settings. Your options:
