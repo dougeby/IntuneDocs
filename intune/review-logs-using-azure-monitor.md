@@ -57,7 +57,7 @@ Depending on where you want to route the audit log data, you need one of the fol
 
 ## Send logs to Azure monitor
 
-1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Under **Monitoring**, select **Diagnostics settings**. The first time you open it, turn it on:
 
     ![Turn on Diagnostics settings in Intune to send logs to Azure Monitor](media/diagnostics-settings-turn-on.png)
@@ -105,7 +105,7 @@ You can also export the audit logs in other parts of Intune, including enrollmen
 
 For example, to export the audit logs when using device compliance:
 
-1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Monitor** > **Audit logs**:
 
     ![Choose audit logs to route Intune data to Azure Monitor storage, events hubs, or analytics](media/audit-logs-under-monitor-in-compliance.png)

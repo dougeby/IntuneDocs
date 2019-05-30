@@ -91,7 +91,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 
 ## Monitor terms and conditions
 
-1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 1. On the Intune pane, choose **Device enrollment** > **Terms and Conditions**.
 2. In the list of terms and conditions, choose the terms you want to view acceptance for > **Acceptance Reporting**.
 
@@ -101,7 +101,7 @@ You can edit your terms and conditions and manage their versions. Each time you 
 - require users to accept the new terms and conditions
 Keep the current version number if, for example, you're fixing typos or changing formatting.
 
-1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. On the Intune pane, choose **Device enrollment** > **Terms and Conditions** > choose the terms and conditions you want to modify > **Properties**.
 

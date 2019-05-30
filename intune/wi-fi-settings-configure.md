@@ -52,7 +52,7 @@ Wi-Fi profiles support the following device platforms:
 
 ## Create a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune**, and select **Microsoft Intune**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the Wi-Fi profile.
 4. In the **Platform** drop-down list, select the device platform to apply the Wi-Fi settings. Your options:
