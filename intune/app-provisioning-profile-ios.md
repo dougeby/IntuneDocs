@@ -47,8 +47,7 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 
 ## How to create an iOS mobile app provisioning profile
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 1.  In the **Client apps** workload, choose **Manage** > **iOS app provisioning profiles**.
 2.  In the list of profiles pane, choose **Create profile**.

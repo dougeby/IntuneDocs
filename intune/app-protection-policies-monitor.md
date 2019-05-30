@@ -45,8 +45,7 @@ The retention period for app protection data is 90 days. Any app instances that 
 
 ## Summary view
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 4. In the **Client apps** workload, choose **App protection status** from the **Monitor** section, to see the summary view:
 
