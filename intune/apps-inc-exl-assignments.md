@@ -49,7 +49,7 @@ Intune doesn't consider user-to-device association when it excludes groups. Incl
 ## Include and exclude groups when assigning apps 
 To assign an app to groups by using the include and exclude assignment:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. In the **Intune** menu, select **Client apps**.
+3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** pane, select **Apps**. The list of added apps is shown.
 5. Select the app that you want to assign. A dashboard displays information about the app. 
 6. In the **Manage** section of the menu, select **Assignments**. 
