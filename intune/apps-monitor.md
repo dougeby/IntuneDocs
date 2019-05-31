@@ -34,9 +34,8 @@ ms.collection: M365-identity-device-management
 
 Intune provides several ways to monitor the properties of apps that you manage and to manage app assignment status.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** menu, select **Client apps**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. In the **Intune** pane, select **Client apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
