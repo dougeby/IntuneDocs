@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -126,6 +126,10 @@ You can also preconfigure permission for apps to access Android device features.
 9. To assign the app configuration policy, select the app configuration policy, select **Assignment**, and then select **Select groups**.
 10. Select the user groups to assign, and then choose **Select**.
 11. Choose **Save** to assign the policy.
+
+## Additional information
+
+- [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## Next steps
 
