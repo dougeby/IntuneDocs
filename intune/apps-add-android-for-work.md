@@ -61,8 +61,6 @@ The **managed Google Play** app type will allow you to specifically add [Managed
 ## Add a Managed Google Play app using Intune
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**.  
-    Intune is located in the **Monitoring + Management** section.
 3. In the **Intune** pane, select **Client apps** > **Apps**.
 5. In the **Apps** pane, select **Add**.
 6. In the **App type** dropdown box, select **Managed Google Play**.
