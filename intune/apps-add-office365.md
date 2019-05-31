@@ -51,8 +51,7 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 
 ## Get started
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. Select **Add**.

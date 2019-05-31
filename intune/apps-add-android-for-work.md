@@ -104,8 +104,7 @@ If you prefer to synchronize a Managed Google Play app with Intune rather than a
 
 If you have approved an app from the store and don't see it in the **Licensed apps** node of the **Client apps** workload, force an immediate sync as follows:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Setup**, select **Managed Google Play**.
 5. In the **Managed Google Play** pane, choose **Refresh**.  

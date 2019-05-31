@@ -58,8 +58,7 @@ The following table lists the various options for assigning apps to users and de
 
 ## Assign an app
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** menu, select **Client apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the **Apps** pane, select the app you want to assign.
