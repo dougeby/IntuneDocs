@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -237,7 +237,7 @@ You can assign your Win32 apps to be installed on Intune enrolled Azure AD joine
 The Device overview page will show the Primary User, also called the User Device Affinity User (UDA). To see the Primary User for a device, choose **Intune** > **Devices** > **All devices** > choose a device. The Primary User will appear near the top of the **Overview** page.
 
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
-For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. The same functionality for available apps will be enabled in a future release. 
+For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only.  
 
 #### iOS Third Party Keyboards <!-- 4111843   -->
 The Intune app protection policy (APP) support for the **Third Party Keyboards** setting for iOS is no longer supported due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
@@ -287,7 +287,7 @@ Applies to: Android Enterprise fully managed devices
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 
-This feature is delayed, and should be included in a future release.
+This feature is delayed and is planned to be released later.
 
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
@@ -331,7 +331,7 @@ We've updated the default timeout message users see when the Enrollment Status P
 ### Device management
 
 #### Retire noncompliant devices  <!-- 1827291   -->
-This feature has been delayed and will come in a future release.
+This feature has been delayed and is planned for a future release.
 
 
 ### Monitor and troubleshoot
@@ -902,7 +902,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 ### Role-based access control
 
 #### Scope tags for apps <!-- 1081941 -->
-You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (but support will come in the future). For more information, see [Use scope tags to filter policies](scope-tags.md).
+You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (future support is planned). For more information, see [Use scope tags to filter policies](scope-tags.md).
 
 <!-- ########################## -->
 ## Week of December 10, 2018
@@ -932,7 +932,7 @@ Intune now requires macOS version 10.12 or later. Devices using prior macOS vers
 You can remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
 #### Downloading Intune Win32 app content <!-- 2617320 -->
-Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Currently, delivery optimization can be configured by group policy. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### End user device and app content menu <!-- 2771453 -->
 End users can now use context menu on device and apps to trigger common actions like renaming a device or checking compliance.
