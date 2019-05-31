@@ -130,6 +130,14 @@ If you selected the **Configuration designer** option under the **Setting format
 	- **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
 	You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
+## Select scope tags (optional)
+You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](scope-tags.md).
+
+1. Select **Scope (Tags)** > **Add**.
+2. Use the **Select** box to search for scope tags.
+3. Select the check box next to the scope tags you want to assign to this app.
+4. Choose **Select** > **OK**.
+
 ## Enter XML format
 
 If you selected the **Enter XML data** option under the **Setting format** dropdown box, you'll see the **Enter XML format** option in the **Add app** blade. For more information, see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
