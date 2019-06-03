@@ -40,7 +40,7 @@ Intune provides several ways to monitor the properties of apps that you manage a
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
 > [!NOTE]
-> Android Store apps that are deployed as **Available** and Android LOB apps deployed as **Available with or without enrollment** do not report their installation status.
+> Android Store apps that are deployed as **Available** do not report their installation status.
 
 ## App overview pane
 
@@ -73,7 +73,7 @@ The graphs show the number of apps for the following status:
 >    - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
 >    - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
 > 
-> Also, be aware that Android apps deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
+> Also, be aware that Android LOB apps (.APK) deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
 
 ### Device install status
 
