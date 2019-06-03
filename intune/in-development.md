@@ -88,7 +88,7 @@ Applies to: macOS 10.13.2 and later
 While creating or editing a security baseline profile, you’ll soon be able to use *search* to filter the settings that display in the console.   
 
 #### Use "applicability rules" when creating Windows 10 device configuration profiles <!-- 2549910 -->
-You create Windows 10 device configuration profiles (**Device configuration** > **Profiles** > **Create profile** > **Windows 10** for platform). You'll be able to create an **applicability rule** so the profile only applies to a specific edition or specific version. For example, you create a profile that enables some Bitlocker settings. Once you add the profile, use an applicability rule so the profile only applies to devices running Windows 10 Enterprise.
+You create Windows 10 device configuration profiles (**Device configuration** > **Profiles** > **Create profile** > **Windows 10** for platform). You'll be able to create an **applicability rule** so the profile only applies to a specific edition or specific version. For example, you create a profile that enables some BitLocker settings. Once you add the profile, use an applicability rule so the profile only applies to devices running Windows 10 Enterprise.
 
 Applies to: 
 - Windows 10 and later
