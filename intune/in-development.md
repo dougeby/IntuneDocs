@@ -95,7 +95,7 @@ Applies to:
 
 #### Apps from the store only setting for Windows 10 devices includes more configuration options <!-- 2697002  -->
 
-When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only installs apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In a future update, this setting will be expanded to support more options. 
+When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only install apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In a future update, this setting will be expanded to support more options. 
 
 To see the current settings, go to [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#app-store).
 
@@ -131,7 +131,7 @@ Face ID is available in iOS 11.0 and later. To see the current settings, go to [
 
 Applies to: iOS
 
-#### Apps is dependent on ratings region when restricting gaming and app store features on iOS devices <!-- 4593948  -->
+#### Apps feature is dependent on ratings region when restricting gaming and app store features on iOS devices <!-- 4593948  -->
 On iOS devices, you can allow or restrict features related to gaming, the app store, and viewing documents (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**). You can also choose the Ratings region, such as the United States. In a future update, the **Apps** feature will move to be a child to **Ratings region**, and is dependent on **Ratings region**.
 
 To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
