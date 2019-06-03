@@ -30,9 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Network endpoints for Microsoft Intune
 
-You can use the following information to understand IP address and port settings needed for proxy settings.
-
-Enable network communications between the devices you manage and the endpoints required for cloud-based services.
+This page lists IP addresses and port settings needed for proxy settings in your Intune deployments.
 
 As a cloud-only service, Intune doesn't require on-premises infrastructure such as servers or gateways.
 

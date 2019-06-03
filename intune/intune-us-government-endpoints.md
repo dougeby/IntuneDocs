@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # US government endpoints for Microsoft Intune
 
-You can use the following information to understand US government endpoints needed for proxy settings.
+This page lists the US government endpoints needed for proxy settings in your Intune deployments.
 
 To manage devices behind firewalls and proxy servers, you must enable communication for Intune.
 

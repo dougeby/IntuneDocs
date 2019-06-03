@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-This guidance helps Intune admins understand the network requirements for the Intune service. You can use this information to understand bandwidth requirements and IP address and port settings needed for proxy settings.
+You can use this information to understand bandwidth requirements for you Intune deployments.
 
 ## Average network traffic
 This table lists the approximate size and frequency of common content that travels across the network for each client.
