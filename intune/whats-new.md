@@ -164,6 +164,14 @@ You won't need to include spaces in IMEI numbers when you search **All devices**
 #### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
 If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
 
+### The Enrollment Status Page now tracks Win32 apps <!-- 2714451 -->
+This only applies to devices running Windows 10 version 1903 and above. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
+
+### Device management
+
+#### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
+You can now reset and wipe up to 100 devices in bulk using the Graph API.
+
 
 ### Monitor and troubleshoot
 
