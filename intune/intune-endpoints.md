@@ -139,6 +139,6 @@ For Delivery Optimization metadata:
 |Sending feedback to Intune service via Apple Push Notification Service (APNS)|                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |
 |Retrieving and displaying content from Apple servers|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |Communications with APNS servers|#-courier.push.apple.com (17.0.0.0/8)<br>'#' is a random number from 0 to 50.|    TCP     |  5223 and 443  |
-|Various functionality including accessing the World Wide Web, iTunes store, macOS app store, iCloud, messaging, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 or 443   |
+|Various functionalities including accessing the World Wide Web, iTunes store, macOS app store, iCloud, messaging, etc. |phobos.apple.com<br>ocsp.apple.com<br>ax.itunes.apple.com<br>ax.itunes.apple.com.edgesuite.net| HTTP/HTTPS |  80 or 443   |
 
 For more information, see Apple's [TCP and UDP ports used by Apple software products](https://support.apple.com/en-us/HT202944), [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/en-us/HT201999), and [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/en-us/HT203609).
