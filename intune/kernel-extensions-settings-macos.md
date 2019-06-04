@@ -40,13 +40,13 @@ These settings are added to a device configuration profile in Intune, and then a
 
 [Create a device kernel extensions configuration profile](kernel-extensions-overview-macos.md#create-the-profile).
 
-## Kernel Extensions
+## Kernel extensions
 
 - **Allow User Overrides**: **Allow** lets users approve kernel extensions not included in the configuration profile. **Not configured** (default) prevents users from allowing extensions not included in the configuration profile. Meaning, only extensions included in the configuration profile are allowed.
 
   See [user-approved kernel extension loading](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) (opens Apple's web site) for more information on this feature.
 
-- **Allowed Team Identifiers**: Use this setting to whitelist (or allow) one or many team IDs. Any kernel extensions signed with the team IDs you enter are allowed and trusted. In other words, use this option to allow all kernel extensions within the same team ID, which may be a specific developer or partner.
+- **Allowed Team Identifiers**: Use this setting to allow one or many team IDs. Any kernel extensions signed with the team IDs you enter are allowed and trusted. In other words, use this option to allow all kernel extensions within the same team ID, which may be a specific developer or partner.
 
   **Add** a team identifier of valid and signed kernel extensions that you want to load. You can add multiple team identifiers. The team identifier must be alphanumeric (letters and numbers) and have 10 characters. For example, enter `ABCDE12345`.
 
@@ -54,7 +54,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
   [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple's web site) has more information.
 
-- **Allowed Kernel Extensions**: Use this setting to whitelist (or allow) specific kernel extensions. Only the kernel extensions you enter are allowed or trusted. 
+- **Allowed Kernel Extensions**: Use this setting to allow specific kernel extensions. Only the kernel extensions you enter are allowed or trusted. 
 
   **Add** the bundle identifier and team identifier of a kernel extension that you want to load. For unsigned legacy kernel extensions, use an empty team identifier. You can add multiple kernel extensions. The team identifier must be alphanumeric (letters and numbers) and have 10 characters. For example, enter `com.contoso.appname.macos` for **Bundle ID**, and `ABCDE12345` for **Team identifier**.
 
