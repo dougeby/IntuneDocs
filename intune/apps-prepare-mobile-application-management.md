@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -76,6 +76,9 @@ To learn more about the SDK, see the [Overview](app-sdk.md). To get started with
 |------|----|----|
 |**iOS**|Yes – use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
 |**Android**| Yes - use the [Intune App SDK Xamarin Bindings](app-sdk-xamarin.md).|No|
+
+### Not using an app development platform listed above? 
+The Intune SDK development team actively tests and maintains support for apps built with the native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms, and Cordova platforms. While some customers have had success with Intune SDK integration with other platforms such as React Native and NativeScript, we do not provide explicit guidance or plugins for app developers using these platforms. 
 
 ## Feature comparison
 This table lists the settings that you can use for the App SDK and App Wrapping Tool.
