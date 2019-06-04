@@ -45,14 +45,8 @@ The following tables list the ports and services that the Intune client accesses
 
 |**Endpoint**|**IP address**|
 |---------------------|-----------|
-|login.microsoftonline.com | More information [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
-|portal.manage.microsoft.us<br> m.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 |
-| sts.manage.microsoft.us | 52.227.183.12 <br>52.227.180.205 |
-|Manage.microsoft.us <br>i.manage.microsoft.us <br>r.manage.microsoft.us <br>a.manage.microsoft.us <br>p.manage.microsoft.us <br>EnterpriseEnrollment.manage.microsoft.us <br>EnterpriseEnrollment-s.manage.microsoft.us | 52.227.178.107 <br> 13.72.185.168|
-| fef.fxpasu01.manage.microsoft.us | 52.227.173.179 |
+|*.manage.microsoft.us | 52.243.26.209 <br> 52.247.173.11 <br> 52.227.183.12 <br>52.227.180.205 <br> 52.227.178.107 <br> 13.72.185.168 <br> 52.227.173.179 <br> 52.227.175.242 <br> 13.72.39.209 <br> 52.243.26.209 <br> 52.247.173.11 |
 | enterpriseregistration.microsoftonline.us | 13.72.188.239 <br> 13.72.55.179 |
-| wip.mam.manage.microsoft.us | 52.227.175.242 |
-| mam.manage.microsoft.us | 13.72.39.209 | 
 
 ## US Government customer designated endpoints:
 - Azure portal: https://portal.azure.us/ 
