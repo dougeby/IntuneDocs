@@ -54,7 +54,7 @@ If you deploy the app as required to users or devices then you do not need the I
 
 ### Upload the code-signing certificate
 
-If your Windows 10 device does not already trust the certificate authority, then after you have signed your appx package and uploaded it to the Intune service, you need to upload the code signing certifcate to the Intune portal:
+If your Windows 10 device does not already trust the certificate authority, then after you have signed your appx package and uploaded it to the Intune service, you need to upload the code signing certificate to the Intune portal:
 1. Click Client Apps
 2. Click Windows Enterprise Certificates
 3. Select 'Select a file' under code-signing certificate
@@ -62,11 +62,11 @@ If your Windows 10 device does not already trust the certificate authority, then
 
 Now any Windows 10 Desktop & Mobile device with an appx deployment by the Intune service will automatically download the corresponding enterprise certificate and the application will be allowed to launch after installation.
 
-Intune only deploys the latest .cer file that was uploaded. If you have multiple appx files created by different developers that are not associated with your organization, then you will need to either have them provide unsigned appx files for signing with your certificate, or provide them the code signing certificate used by your organizaiton.
+Intune only deploys the latest .cer file that was uploaded. If you have multiple appx files created by different developers that are not associated with your organization, then you will need to either have them provide unsigned appx files for signing with your certificate, or provide them the code signing certificate used by your organization.
 
 ## How to renew the Symantec enterprise code-signing certificate
 
-The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certifcates by following the Windows 10 instructions.
+The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certificates by following the Windows 10 instructions.
 
 ### How to install the updated certificate for line-of-business (LOB) apps
 
@@ -76,7 +76,7 @@ The Intune service can no longer deploy LOB apps for this platform once the exis
 
 Windows 8.1 Desktop/Windows 10 Desktop & Mobile
 
-If the cert period has expired then the appx files may stop launching. You should obtain a new .cer file and follow the instrucitons to code-sign each deployed appx file and re-upload all appx files and the updated .cer file to the Windows Enterprise Certificates section of the Intune portal
+If the cert period has expired then the appx files may stop launching. You should obtain a new .cer file and follow the instructions to code-sign each deployed appx file and re-upload all appx files and the updated .cer file to the Windows Enterprise Certificates section of the Intune portal
 
 ## Manually deploy Windows 10 Company Portal app
 If you do not want to provide access to the Microsoft Store, you can manually deploy the Windows 10 Company Portal app directly from Intune even if you haven’t integrated Intune with the Microsoft Store for Business (MSFB). Alternatively, if you have integrated, then you could deploy the Company Portal app using [deploy apps using MSFB](https://docs.microsoft.com/en-us/intune/store-apps-windows).
@@ -84,7 +84,7 @@ If you do not want to provide access to the Microsoft Store, you can manually de
  > [!NOTE]
  > This option will require deploying manual updates each time an app update is released.
 
-1. Log in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
+1. Sign in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
 ![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
