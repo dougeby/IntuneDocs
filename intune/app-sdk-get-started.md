@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -177,16 +177,13 @@ If your app is using its own custom Azure Active Directory (AAD) settings for au
 
 Once you have registered your app within an Azure tenant, and it is showing up under **All Applications**, you must give your app access to the Intune app protection service (previously known as MAM service). In the Azure portal:
 
-1.	Go to **Azure Active Directory** blade.
-2.	Select the **App registration** set up for the application.
-3.	In **Settings** under the **API Access** heading, select **Required permission**. 
-4.	Click **+ Add**.
-5.	Click **Select an API**. 
-6.	In the search box, enter **Microsoft Mobile Application Management**.
-7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
-8.	Select **Read and Write the User’s App Management Data**.
-9.	Click **Done**.
-10.	Click **Grant permissions**, then click **Yes**. 
+1.	Go to the **Azure Active Directory** blade.
+2.	Under **App registrations**, go to the listing set up for the application.
+3.	Click **+ Add a permission**.
+4.	Click on the **APIs my organization uses**. 
+5.	In the search box, enter **Microsoft Mobile Application Management**.
+6.	Under **Delegated Permissions**, select the **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** checkbox.
+7. Click **Add permissions**.
 
 ### Badge your app (optional)
 
