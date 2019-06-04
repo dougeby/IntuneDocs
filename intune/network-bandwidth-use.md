@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-You can use this information to understand bandwidth requirements for you Intune deployments.
+You can use this information to understand bandwidth requirements for your Intune deployments.
 
 ## Average network traffic
 This table lists the approximate size and frequency of common content that travels across the network for each client.
