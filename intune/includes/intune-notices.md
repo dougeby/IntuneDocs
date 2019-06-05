@@ -20,7 +20,7 @@ Our telemetry indicates you have devices with a Company Portal version earlier t
 #### What do I need to do to prepare for this change?
 Ask end users of Android devices that have not updated to update the company portal through Google play. Notify your help desk in case a user has not kept auto-updating of the company portal app. See the link in Additional Information for more on Google’s FCM platform and change.
 
-#### Additional Information
+#### Additional information
 https://firebase.google.com/docs/cloud-messaging/
 
 
@@ -33,7 +33,7 @@ The full screen experience will be rolled out to Intune both at portal.azure.com
 #### What can I do to prepare for this change?
 You do not need to take any action but can consider updating your IT pro guidance if necessary. We’ll update our documentation as this experience rolls out to various blades in the Intune on Azure portal.
 
-#### Additional Information 
+#### Additional information 
 https://aka.ms/intune_fullscreen
 
 ### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665342-->
@@ -65,5 +65,5 @@ Check your Microsoft, third-party, and line-of-business (LOB) apps. You should e
 
 You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
 
-#### Additional Information
+#### Additional information
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
