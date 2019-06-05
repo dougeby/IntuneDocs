@@ -45,8 +45,7 @@ This feature is not supported for the following:
 
 ## Enable lost mode
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Lost mode** remote action.
 5. In **Lost mode**, enable this feature. Then, enter the message to show, and a contact phone number.
