@@ -57,8 +57,7 @@ To use ATP with Intune, be sure you have the following configured, and ready to 
 
 ## Enable Windows Defender ATP in Intune
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Device compliance** > **Windows Defender ATP** > **Open the Windows Defender Security Center**.
 
     ![Select to open the Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)

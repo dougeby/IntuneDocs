@@ -37,8 +37,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 ## Get to your devices
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices**. This view shows detailed information about the individual devices, and what you can do with them, including:
 
    - **Overview** shows a visual snapshot of the enrolled devices, and also shows how many devices are using the different platforms, including Android, iOS, and more.
