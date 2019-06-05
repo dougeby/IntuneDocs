@@ -60,7 +60,7 @@ With Intune App SDK or App Wrapping integration, you can protect corporate data 
 #### What can I do to prepare for this change?
 Check your Microsoft, third-party, and line-of-business (LOB) apps. You should ensure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
 
-- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For infomration on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md).
+- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For infomration on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
 - For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
 
 You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
