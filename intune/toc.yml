@@ -576,7 +576,7 @@
         href: company-portal-app.md
       - name: Configure the Managed Browser
         href: app-configuration-managed-browser.md
-      - name: Configure the Microsoft Edge
+      - name: Configure Microsoft Edge
         href: manage-microsoft-edge.md        
       - name: Configure Outlook
         href: app-configuration-policies-outlook.md
