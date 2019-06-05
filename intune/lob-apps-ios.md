@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/15/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -87,6 +86,8 @@ The app that you created now appears in the list of apps. From the list, you can
 ## Step 5: Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+The update to the line-of-business app will be installed automatically.
 
 > [!NOTE]
 > For the Intune service to successfully deploy a new IPA file to the device, you must increment the `CFBundleVersion` string in the Info.plist file in your IPA package.

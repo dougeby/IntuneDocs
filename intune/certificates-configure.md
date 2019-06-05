@@ -9,7 +9,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -95,8 +94,7 @@ You import this certificate when you set up a trusted certificate profile.
 ## Step 3: Create trusted certificate profiles
 Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates are similar for each device platform.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Device configuration** > **Manage** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the trusted certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Your options:

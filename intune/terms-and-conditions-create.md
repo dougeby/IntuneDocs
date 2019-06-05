@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/20/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -49,8 +48,7 @@ To learn which method is best for you, check out the [Choosing the right Terms s
 ## Create terms and conditions
 Complete these steps to create terms and conditions. The display name and description are for administrative use while terms properties are displayed to users in the Company Portal.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device enrollment** > **Terms and Conditions**.
 2. Choose **Create**.
 ![Screenshot of the Azure portal showing Create button for terms and conditions](media/terms-create-terms.png)
@@ -92,7 +90,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 
 ## Monitor terms and conditions
 
-1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 1. On the Intune pane, choose **Device enrollment** > **Terms and Conditions**.
 2. In the list of terms and conditions, choose the terms you want to view acceptance for > **Acceptance Reporting**.
 
@@ -102,7 +100,7 @@ You can edit your terms and conditions and manage their versions. Each time you 
 - require users to accept the new terms and conditions
 Keep the current version number if, for example, you're fixing typos or changing formatting.
 
-1. In the Azure portal, choose **All Services** > **Monitoring + Management** > **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. On the Intune pane, choose **Device enrollment** > **Terms and Conditions** > choose the terms and conditions you want to modify > **Properties**.
 

@@ -9,7 +9,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/15/2019
 ms.topic: quickstart
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

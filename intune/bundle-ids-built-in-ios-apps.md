@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/24/2019
+ms.date: 05/30/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority:
 ms.technology:
@@ -28,7 +27,7 @@ ms.collection: M365-identity-device-management
 
 # Bundle IDs for built-in iOS apps you can use in Intune
 
-When you configure features on iOS devices, you can also add the built-in apps on iOS devices. This article lists the bundle IDs of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor.
+When you configure features on iOS devices, you can also add the built-in apps on iOS devices. This article lists the bundle IDs of some common built-in iOS apps. To find the bundle ID of other apps, contact your software vendor. See Apple's list of [iOS bundle IDs](https://support.apple.com/guide/mdm/ios-bundle-ids-mdm90f60c1ce/web) (opens Apple's web site).
 
 ## Bundle IDs
 
@@ -63,6 +62,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.mobilenotes       | Notes        | Apple     |
 | com.apple.Numbers           | Numbers      | Apple     |
 | com.apple.Pages             | Pages        | Apple     |
+| com.apple.mobilephone       | Phone        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
 | com.apple.mobileslideshow   | Photos       | Apple     |
 | com.apple.podcasts          | Podcasts     | Apple     |
@@ -72,7 +72,7 @@ When you configure features on iOS devices, you can also add the built-in apps o
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tips         | Apple     |
-| com.apple.TV                | TV           | Apple     |
+| com.apple.tv                | TV           | Apple     |
 | com.apple.videos            | Videos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 05/30/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -33,6 +32,9 @@ ms.collection: M365-identity-device-management
 This article lists and describes the different settings you can control on iOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
+
+> [!NOTE]
+> These settings use Apple's MDM settings. For more details on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
 
 ## Before you begin
 
@@ -120,8 +122,11 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
   - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters).
   - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 1-11).
+  
+    iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
+  
   - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
-  - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter.
+  - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
   - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint. If you have a device running iOS 11.0 or later, blocking this setting also prevents using FaceID authentication to unlock the device. 
@@ -142,7 +147,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
   This feature applies to:  
   - iOS 11.0 and later
-
+  
 <sup>1</sup>When you configure the **Maximum minutes of inactivity until screen locks** and **Maximum minutes after screen lock before password is required** settings, they're applied in sequence. For example, if you set the value for both settings to **5** minutes, the screen turns off automatically after five minutes, and the device is locked after an additional five minutes. However, if the user turns off the screen manually, the second setting is immediately applied. In the same example, after the user turns off the screen, the device locks five minutes later.
 
 ## Locked Screen Experience
@@ -169,6 +174,8 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Allow unmanaged apps to read from managed contacts accounts (supervised only)**: When set to **Allow**, users can add any person's iContacts app contact information into Outlook. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
+
+  For more information about these two settings, see [Support Tip: Use Intune custom profile settings with the iOS Native Contacts App](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
   
 - **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** allows any document to be viewed in corporate managed apps.
   

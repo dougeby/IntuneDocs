@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -46,8 +45,7 @@ The **Remove user** action deletes a user that you select from the local cache o
 
 ## Remove a user
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Devices**.
 4. In the **Devices** pane, select **All devices**.
 5. In the list of devices that you manage, select an iOS device.

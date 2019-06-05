@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

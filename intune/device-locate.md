@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/24/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -46,8 +45,7 @@ This feature is not supported for the following systems:
 
 ## Locate a lost or stolen device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Locate device** remote action.
 5. After the device is located, its location is shown in **Locate device**.

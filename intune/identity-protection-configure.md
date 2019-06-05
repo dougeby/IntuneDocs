@@ -9,7 +9,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -48,7 +47,7 @@ This article shows you how to create a device configuration profile. For a list 
 
 ## Create the device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

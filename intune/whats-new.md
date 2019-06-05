@@ -7,9 +7,8 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -48,8 +47,27 @@ Learn what’s new each week in Microsoft Intune. You can also find [upcoming ch
 
 -->  
 
-
 <!-- ########################## -->
+
+## Week of May 27, 2019 
+
+### App management
+
+#### Reporting for potentially harmful apps on Android devices <!-- 4223162 -->
+Intune now provides additional reporting information about potentially harmful apps on Android devices. 
+
+## Week of May 20, 2019 
+
+### App management
+
+#### Windows Company Portal app <!-- 3316993 -->
+The Windows Company Portal app will now have a new page labeled **Devices**. The **Devices** page will show end users all of their enrolled devices. Users will see this change in the Company Portal when they use version 10.3.4291.0 and later. For information about the configuring the Company Portal, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+
+### Device enrollment
+
+#### Autopilot device OrderID attribute name changed to Group Tag <!-- 4659453 -->
+
+To make it more intuitive, the **OrderID** attribute name on Autopilot devices has been changed to **Group Tag**. When using CSVs to upload Autopilot device information, you must use Group Tag as the column header, not OrderID.  
 
 ## Week of May 13, 2019 
 
@@ -67,7 +85,7 @@ On devices already enrolled via Setup Assistant through one of Apple’s corpora
 
 If users install the Company Portal app from the App store, and then try to enroll these devices through it, they will receive an error. These devices will be expected to only use the Company Portal when it's been pushed, automatically, by Intune during enrollment. Enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. If you want your DEP device users to have the Company Portal, you will need to specify your preferences in an enrollment profile. 
 
-In addition, the **Identify your device** screen in the Company Portal app will soon become obsolete.  
+In addition, the **Identify your device** screen in the iOS Company Portal is being removed. Therefore, admins who want to enable conditional access or deploy company apps must update the DEP enrollment profile. This requirement only applies if the DEP enrollment is authenticated with Setup Assistant. In that case, you must push the Company Portal onto the device. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > set **Install Company Portal** to **Yes**.
 
 To install the Company Portal on already-enrolled DEP devices, you will need to go to Intune > Client apps, and push it as a managed app with app configuration policies. 
 
@@ -128,24 +146,19 @@ To see the available settings, go to [App Store, Doc Viewing, Gaming iOS setting
 ​
 Applies to: iOS
 
-#### Advanced settings for Windows Defender Firewall   <!--  1311949 -->
-You can use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports.
-
 ####  Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
-We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings.  
+We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings. This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
 ### Device enrollment
 
 #### Windows Enrollment Status Page (ESP) is now generally available <!-- 3605348 -->
 The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
 
-#### DEP enrollment profile requirement for conditional access and deploying company apps <!--1927359 -->
-The **Identify your device** screen in the iOS Company Portal is being removed. Therefore, admins who want to enable conditional access or deploy company apps must update the DEP enrollment profile. This requirement only applies if the DEP enrollment is authenticated with Setup Assistant. In that case, you must push the Company Portal onto the device. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > set **Install Company Portal** to **True**.
 
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
 The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information see, [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
-#### Enable Autopilot Rest for all Windows devices <!-- 4225665 -->
+#### Enable Autopilot Reset for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
 
 #### Exact IMEI format not required when searching All devices <!--30407680 -->
@@ -153,6 +166,14 @@ You won't need to include spaces in IMEI numbers when you search **All devices**
 
 #### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
 If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
+
+### The Enrollment Status Page now tracks Win32 apps <!-- 2714451 -->
+This only applies to devices running Windows 10 version 1903 and above. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
+
+### Device management
+
+#### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
+You can now reset and wipe up to 100 devices in bulk using the Graph API.
 
 
 ### Monitor and troubleshoot
@@ -227,7 +248,7 @@ You can assign your Win32 apps to be installed on Intune enrolled Azure AD joine
 The Device overview page will show the Primary User, also called the User Device Affinity User (UDA). To see the Primary User for a device, choose **Intune** > **Devices** > **All devices** > choose a device. The Primary User will appear near the top of the **Overview** page.
 
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
-For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only. The same functionality for available apps will be enabled in a future release. 
+For Managed Google Play apps deployed to Android Enterprise work profile devices, you can view the specific version number of the app installed on a device. This applies to required apps only.  
 
 #### iOS Third Party Keyboards <!-- 4111843   -->
 The Intune app protection policy (APP) support for the **Third Party Keyboards** setting for iOS is no longer supported due to an iOS platform change. You will not be able to configure this setting in the Intune Admin Console and it will not be enforced on the client in the Intune App SDK.
@@ -277,7 +298,7 @@ Applies to: Android Enterprise fully managed devices
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
 
-This feature is delayed, and should be included in a future release.
+This feature is delayed and is planned to be released later.
 
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
@@ -321,7 +342,7 @@ We've updated the default timeout message users see when the Enrollment Status P
 ### Device management
 
 #### Retire noncompliant devices  <!-- 1827291   -->
-This feature has been delayed and will come in a future release.
+This feature has been delayed and is planned for a future release.
 
 
 ### Monitor and troubleshoot
@@ -892,7 +913,7 @@ For more information, see [How to get support for Microsoft Intune](get-support.
 ### Role-based access control
 
 #### Scope tags for apps <!-- 1081941 -->
-You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (but support will come in the future). For more information, see [Use scope tags to filter policies](scope-tags.md).
+You can create scope tags to limit access for roles and apps. You can add a scope tag to an app so that only people with roles also assigned that scope tag have access to the app. Currently, apps added to Intune from managed Google Play or apps purchased using Apple Volume Purchase Program (VPP) can't be assigned scope tags (future support is planned). For more information, see [Use scope tags to filter policies](scope-tags.md).
 
 <!-- ########################## -->
 ## Week of December 10, 2018
@@ -922,7 +943,7 @@ Intune now requires macOS version 10.12 or later. Devices using prior macOS vers
 You can remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
 #### Downloading Intune Win32 app content <!-- 2617320 -->
-Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Delivery optimization can be configured by group policy and in the future via Intune MDM. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Currently, delivery optimization can be configured by group policy. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### End user device and app content menu <!-- 2771453 -->
 End users can now use context menu on device and apps to trigger common actions like renaming a device or checking compliance.

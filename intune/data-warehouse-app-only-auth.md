@@ -8,9 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -97,10 +96,11 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
 2.	On the left, select **Visual C#** to display all .NET Framework projects.
 3.	Select **Console App (.NET Framework)**, add an app name, and then click **OK** to create the app.
 4.	In **Solution Explorer**, select **Program.cs** to display the code.
-5.	In the pop-up menu, select **Add** > **New item**. The **Add New Item** dialog box is displayed.
-6.	On the left, under **Visual C#**, select **Code**.
-7.	Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs*, and click **Add**.
-8.	Add the following code within the <code>Main</code> method:
+5.	In Solution Explorer, add a reference to the assembly `System.Configuration`.
+6.	In the pop-up menu, select **Add** > **New item**. The **Add New Item** dialog box is displayed.
+7.	On the left, under **Visual C#**, select **Code**.
+8.	Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs*, and click **Add**.
+9.	Add the following code within the <code>Main</code> method:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -115,7 +115,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Add additional namespaces by adding the following code at the top of the code file:
+10. Add additional namespaces by adding the following code at the top of the code file:
 
     ``` csharp
      using System.Security;
@@ -123,7 +123,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
      using System.Configuration;
     ``` 
 
-10.	After the <code>Main</code> method, add the following private method to process and convert the app key:
+11.	After the <code>Main</code> method, add the following private method to process and convert the app key:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -141,10 +141,10 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
     }
     ```
 
-11.	In the **Solution Explorer**, right-click on **References**, then select **Manage NuGet Packages**.
-12.	Search for *Microsoft.IdentityModel.Clients.ActiveDirectory* and install the related Microsoft NuGet package.
-13.	In **Solution Explorer** select and open the *App.config* file.
-14.	Add the <code>appSettings</code> section so that the xml appears as follows:
+12.	In the **Solution Explorer**, right-click on **References**, then select **Manage NuGet Packages**.
+13.	Search for *Microsoft.IdentityModel.Clients.ActiveDirectory* and install the related Microsoft NuGet package.
+14.	In **Solution Explorer** select and open the *App.config* file.
+15.	Add the <code>appSettings</code> section so that the xml appears as follows:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -160,8 +160,8 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
     </configuration>
     ``` 
 
-15.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
-16.	Build your app.
+16.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
+17.	Build your app.
 
     >[!NOTE] 
     > To see additional implementation code, see [Intune-Data-Warehouse code example](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).

@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 08/25/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -71,8 +70,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 
 ## Create a device profile containing VPN settings
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Device configuration** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the VPN profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply VPN settings. Currently, you can choose one of the following platforms for VPN device settings:

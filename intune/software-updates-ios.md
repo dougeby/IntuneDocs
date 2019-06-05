@@ -9,7 +9,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -39,7 +38,7 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 ## Configure the policy
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Software updates** > **Update policies for iOS** > **Create**.
 3. Enter the following settings:
 

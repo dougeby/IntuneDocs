@@ -8,9 +8,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -35,22 +34,22 @@ ms.collection: M365-identity-device-management
 
 This article shows you how to configure conditional access for Exchange on-premises based on device compliance.
 
-If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, please contact your account manager. To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.
+If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, contact your account manager. To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.
 
 ## Before you begin
 
-Before you can configure conditional access, verify the following:
+Before you can configure conditional access, verify the following configurations exist:
 
-- Your Exchange version must be **Exchange 2010 SP1 or later**. Exchange server Client Access Server (CAS) array is supported.
+- Your Exchange version is **Exchange 2010 SP1 or later**. Exchange server Client Access Server (CAS) array is supported.
 
-- You must use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
+- You have installed and use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
-	>[!IMPORTANT]
-	>The on-premises Exchange connector is specific to your Intune tenant and cannot be used with any other tenant. Intune now supports multiple on-premises Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
+	>[!IMPORTANT]  
+    >Intune supports multiple on-premises Exchange connectors per subscription.  However, each on-premises Exchange connector is specific to a single Intune tenant and cannot be used with any other tenant.  If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
+	
+- The connector for an on-premises Exchange organization can install on any machine as long as that machine can communicate with the Exchange server.
 
-- The connector for an on-premises Exchange organization can be installed on any machine as long as that machine is able to communicate with the Exchange server.
-
-- The connector supports **Exchange CAS environment**. You can technically install the connector on the Exchange CAS server directly if you wish to, but it is not recommended, as it increases the load on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
+- The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer due to the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
@@ -58,12 +57,12 @@ Before you can configure conditional access, verify the following:
 	- Either **enrolled** with Intune or is a domain joined PC.
 	- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 <br></br>
-- Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service do not see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
+- Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service don't see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 - **Compliant** with device compliance policies deployed to that device.
 
-- If the device does not meet conditional access settings, the user is presented with one of the following messages when they sign in:
-	- If the device is not enrolled with Intune, or is not registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
+- If the device doesn't meet conditional access settings, the user is presented with one of the following messages when they sign in:
+	- If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
 	- If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
 ### Support for mobile devices
@@ -83,43 +82,39 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 ## Configure Exchange on-premises access
 
-1. Go to the [Azure portal](https://portal.azure.com/), and sign in with your Intune credentials.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)
 
-2. Go to **Intune** > **Exchange access**, and then select **Exchange On-premises access**. 
+2. Go to **Exchange access**, and then select **Exchange On-premises access**. 
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Choose **All services** from the left menu, then type **Intune** in the text box filter.
+4. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
 
-5. Choose **Intune**, you see the **Intune Dashboard**.
+5. Under **Manage**, choose **Exchange on-premises access**.
 
-6. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
+6. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
 
-7. Under **Manage**, choose **Exchange on-premises access**.
+   > [!NOTE]
+   > The option to enable access is disabled until after you [install and configure at least one Intune on-premises Exchange connector](exchange-connector-install.md) for Exchange on-premises.  
 
-8. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
+7. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 
-  	> [!NOTE]
-  	> If you have not configured an Exchange Active Sync on-premises connector, this option is disabled.  You must first install and configure at least one connector before enabling conditional access for Exchange on-premises. For more details, see [Install the Intune On-premises Exchange Connector](exchange-connector-install.md)
+8. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
 
-9. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
+9. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device isn't compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
+   > [!TIP]
+   > To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
 
-10. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
+10. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps. To get to the advanced settings pane, on the *Exchange access - Exchange on-premises access* view, select *Exchange ActiveSync - on-premises connector*.
 
-11. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device is not compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
-	> [!TIP]
-	> To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
+11. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
 
-12. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps. To get to the advanced settings pane, on the *Exchange access - Exchange on-premises access* view, select *Exchange ActiveSync - on-premises connector*.
+    - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
+    - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
 
-13. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
+12. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-   - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
-   - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
-
-14. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
-
-15. On the **On-premises** pane, click **Save** to save the conditional access policy.
+13. On the **On-premises** pane, click **Save** to save the conditional access policy.
 
 ## Create Azure AD Conditional access policies in Intune
 

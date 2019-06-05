@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -85,6 +84,7 @@ Configuring the user UPN setting is **required** for devices that are managed by
    |Microsoft Intune| IntuneMAMUPN | String | {{UserPrincipalName}}|
    |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
    |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
+   |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
 
 

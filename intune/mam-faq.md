@@ -7,9 +7,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -33,7 +32,6 @@ This article provides answers to some frequently asked questions on Intune mobil
 
 ## MAM Basics
 
-
 **What is MAM?**<br></br>
 [Intune mobile application management](/intune/app-lifecycle) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
@@ -49,11 +47,18 @@ Intune MAM supports two configurations:
 
 ## App protection policies
 
-**What are app protection policies**?<br></br>
+**What are app protection policies?**<br></br>
 App protection policies are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app.
 
 **What are examples of app protection policies?**<br></br>
 See the [Android app protection policy settings](app-protection-policy-settings-android.md) and [iOS app protection policy settings](app-protection-policy-settings-ios.md) for detailed information on each app protection policy setting.
+
+**Is it possible to have both MDM and MAM policies applied to the same user at the same time, for different devices? For example, if a user could be able to access their work resources from their own MAM-enabled machine, but also come to work and use an Intune MDM-managed device. Are there any caveats to this idea?**<br></br>
+If you apply a MAM policy to the user without setting the device state, the user will get the MAM policy on both the BYOD device and the Intune-managed device. You can also apply a MAM policy based on the managed state. So when you create an app protection policy, next to Target to all app types, you'd select No. Then do any of the following:
+- Apply a less strict MAM policy to Intune managed devices, and apply a more restrictive MAM policy to non MDM-enrolled devices.
+- Apply a MAM policy to unenrolled devices only.
+
+For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md).
 
 ## Apps you can manage with app protection policies
 
@@ -69,6 +74,13 @@ Any app that has been integrated with the [Intune App SDK](/intune/app-sdk) or w
 - The end user must belong to a security group that is targeted by an app protection policy. The same app protection policy must target the specific app being used. App protection policies can be created and deployed in the Intune console in the [Azure portal](https://portal.azure.com). Security groups can currently be created in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
 - The end user must sign into the app using their AAD account.
+
+**What if I want to enable an app with Intune App Protection but it is not using a supported app development platform?** 
+
+The Intune SDK development team actively tests and maintains support for apps built with the native Android, iOS (Obj-C, Swift), Xamarin, Xamarin.Forms, and Cordova platforms. While some customers have had success with Intune SDK integration with other platforms such as React Native and NativeScript, we do not provide explicit guidance or plugins for app developers using anything other than our supported platforms.
+
+**Does the Intune APP SDK support Microsoft Authentication Library (MSAL), or social accounts?**<br></br>
+The Intune APP SDK uses some advanced ADAL capabilities for both the 1st party and the 3rd party versions of the SDK. As such, MSAL does not work well with many of our core scenarios such as authentication into the Intune App Protection service and conditional launch. Given that the overall guidance from Microsoft's Identity team is to switch to MSAL for all of the Microsoft Office apps, the Intune SDK will eventually need to support it, but there are no plans today.
 
 **What are the additional requirements to use the [Outlook mobile app](https://products.office.com/outlook)?**
 
@@ -161,8 +173,7 @@ Intune app protection depends on the identity of the user to be consistent betwe
 **Is there a secure way to open web links from managed apps?**<br></br>
 Yes! The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](app-configuration-managed-browser.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-managed apps to be opened using the Managed Browser app.
 
-**Does the Intune APP SDK support Microsoft Authentication Library (MSAL), or social accounts?**
-The Intune APP SDK uses some advanced ADAL capabilities for both the 1st party and the 3rd party versions of the SDK. As such, MSAL does not work well with many of our core scenarios such as authentication into the Intune App Protection service and conditional launch. There are no plans today to support it.
+
 
 ## App experience on Android
 
@@ -196,7 +207,7 @@ Google Play Protect's SafetyNet API checks require the end user being online, at
 Both the 'SafetyNet device attestation', and 'Threat scan on apps' settings require Google determined version of Google Play Services to function correctly. Since these are settings that fall in the area of security, the end user will be blocked if they have been targeted with these settings and are not meeting the appropriate version of Google Play Services or have no access to Google Play Services. 
 
 ## App experience on iOS
-**What happens if I add or remove a fingerprint or face to my device?**
+**What happens if I add or remove a fingerprint or face to my device?**<br></br>
 Intune app protection policies allow control over app access to only the Intune licensed user. One of the ways to control access to the app is to require either Apple's Touch ID or Face ID on supported devices. Intune implements a behavior where if there is any change to the device's biometric database, Intune prompts the user for a PIN when the next inactivity timeout value is met. Changes to biometric data include the addition or removal of a fingerprint, or face. If the Intune user does not have a PIN set, they are led to set up an Intune PIN.
  
 The intent of this is to continue keeping your organization's data within the app secure and protected at the app level. This feature is only available for iOS, and requires the participation of applications that integrate the Intune APP SDK for iOS, version 9.0.1 or later. Integration of the SDK is necessary so that the behavior can be enforced on the targeted applications. This integration happens on a rolling basis and is dependent on the specific application teams. Some apps that participate include WXP, Outlook, Managed Browser, and Yammer. 
@@ -216,6 +227,6 @@ When dealing with different types of settings, an Intune App SDK version require
 - [Android mobile app management policy settings in Microsoft Intune](app-protection-policy-settings-android.md)
 - [iOS mobile app management policy settings](app-protection-policy-settings-ios.md)
 - [App protection policies policy refresh](app-protection-policy-delivery.md)
-- [Validate your app protection policies](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
+- [Validate your app protection policies](app-protection-policy-delivery.md)
 - [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md)
 - [How to get support for Microsoft Intune](get-support.md)

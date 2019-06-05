@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 05/17/2019
 ms.topic: article
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -139,7 +138,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 > [!IMPORTANT]  
 > The Microsoft Intune Certificate Connector cannot be installed on the issuing Certificate Authority (CA), and instead must be installed on a separate Windows server.  
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**.
 3. Download and save the connector file to a location you can access from the server where you're going to install the connector.
 
@@ -163,7 +162,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 ### PFX Certificate Connector for Microsoft Intune
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**
 3. Download and save the PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
 4. After the download completes, sign in to the server. Then:

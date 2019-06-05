@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -53,7 +52,9 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 
     ![Screenshot of Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The file should list the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices.
+2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The CSV file should list the serial numbers, optional Windows product IDs, hardware hashes, and optional group tags of the devices. You can have up to 500 rows in the list. Use the header and line format shown below:
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
+    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Screenshot of Adding Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -73,8 +74,8 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 3. If you chose **Assigned** for **Membership type** in the previous step, then in the **Group** blade, choose **Members** and add Autopilot devices to the group.
     Autopilot devices that aren't yet enrolled are devices where the name equals the serial number of the device.
 4. If you chose **Dynamic Devices** for **Membership type** above, then in the **Group** blade, choose **Dynamic device members** and type any of the following code in the **Advanced rule** box.
-    - If you want to create a group that includes all of your Autopilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - If you want to create a group that includes all of your Autopilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - If you want to create a group that includes all of your Autopilot devices, type: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - Intune's group tag field maps to the OrderID attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices with a specific group tag(OrderID) you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
     - If you want to create a group that includes all of your Autopilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     After adding the **Advanced rule** code, choose **Save**.
@@ -99,6 +100,9 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 7. Configure the following options:
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose if you want to show the EULA to users.
     - **Privacy settings**: Choose if you want to show privacy settings to users.
+    >[!IMPORTANT]
+    >For Autopilot deployments on Windows 10 version 1903 devices and later, the Diagnostics Data default is automatically set to Full. For more information, see [Windows Diagnostics Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user).
     - **Allow White Glove OOBE**: Choose **Yes** to allow white glove support.

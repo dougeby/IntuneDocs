@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -67,7 +66,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about the app. The URL appears in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for the app. The URL appears in the company portal.
-	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs.  An example is **/q**. Do not include the msiexec command or arguments, such as **/i** or **/x**, as they are automatically used. For more information, see [Command-Line Options](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
+	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs.  An example is **/q**. Do not include the msiexec command or arguments, such as **/i** or **/x**, as they are automatically used. For more information, see [Command-Line Options](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). If the .MSI file needs additional command-line options consider using [Win32 app management](apps-win32-app-management.md).
 	- **Developer**: Optionally, enter the name of the app developer.
 	- **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
 	- **Notes**: Enter any notes that you want to associate with this app.
@@ -83,6 +82,9 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
+    > [!NOTE]
+    > For the Intune service to successfully deploy a new APPX file to the device, you must increment the `Version` string in the AppxManifest.xml file in your APPX package.
+    
 ## Configure a self-updating mobile MSI app to ignore the version check process
 
 You can configure a known self-updating mobile MSI app to ignore the version check process. 
