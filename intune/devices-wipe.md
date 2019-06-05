@@ -53,8 +53,7 @@ A wipe is useful for resetting a device before you give the device to a new user
 
 ### Wiping a device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices** > **All devices**.
 4. Select the name of the device that you want to wipe.
 5. In the pane that shows the device name, select **Wipe**.
