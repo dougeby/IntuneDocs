@@ -35,8 +35,7 @@ Intune includes some features in the Azure portal to help monitor and manage you
 
 ## View existing profiles
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Device configuration** > **Profiles**.
 
 All of your existing profiles are listed, includes details such as the platform, and shows if the profile is assigned to any devices.
