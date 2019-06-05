@@ -30,9 +30,9 @@ ms.collection: M365-identity-device-management
 
 On macOS devices, you can add features at the kernel-level. These features access parts of the OS that regular programs can't access. Your organization may have specific needs or requirements that aren't available in an app, a device feature, and so on. 
 
-To access the OS kernel, add "kernel extensions" (KEXT) in Microsoft Intune, and then deploy these extensions to your devices.
+To add kernel extensions that will always be allowed to load on your device, add "kernel extensions" (KEXT) in Microsoft Intune, and then deploy these extensions to your devices.
 
-For example, you have a virus scanning program that scans the kernel for malicious content. You can add this virus scanning program as a kernel extension in Intune. Then, "assign" the extension to your macOS devices.
+For example, you have a virus scanning program that scans your device for malicious content. You can add this virus scanning program's kernel extension as an allowed kernel extension in Intune. Then, "assign" the extension to your macOS devices.
 
 With this feature, administrators can allow users to override kernel extensions, add team identifiers, and add specific kernel extensions in Intune.
 
