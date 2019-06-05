@@ -48,7 +48,7 @@ Once you have selected the included groups for your application configuration po
 > -   **Managed iOS app from the app store**
 > -   **App package for iOS**
 >
-> For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).
+> For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md). For more information about incorporating app config into your .ipa App package, see [Appconfig for iOS](https://www.appconfig.org/ios) (open 3rd party site).
 
 ## Create an app configuration policy
 
