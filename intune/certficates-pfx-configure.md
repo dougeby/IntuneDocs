@@ -251,7 +251,7 @@ Updates for the two certificate connectors are released periodically. When we up
 
 The *PFX Certificates Connector for Microsoft Intune* [supports automatic updates](#requirements), while the *Intune Certificate Connector* is updated manually.
 
-### May 16, 2019  
+### May 17, 2019  
 - **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.404**  
   Changes in this release:  
   - Fixed an issue where existing PFX certificates continue to be reprocessed which causes the connector to stop processing new requests. 
