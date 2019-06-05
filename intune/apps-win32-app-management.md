@@ -93,8 +93,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 
 ### Step 1: Specify the software setup file
 
-1.	Sign in to the [Azure portal](https://portal.azure.com/).
-2.	Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
 4.	In the **Add** app pane, select **Windows app (Win32)** from the provided drop-down list.
 
