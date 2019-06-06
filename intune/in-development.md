@@ -102,7 +102,7 @@ To see the current settings, go to [Windows 10 (and newer) device settings to al
 Applies to: Windows 10 and later
 
 #### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
-In Intune, you can use Zebra mobility extensions (MZ) in a device configuration profile to customize settings, or add settings not built-in to Intune. Currently, you can deploy one profile to a single device. In a future update, you'll be able to deploy multiple profiles to:
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings, or add settings not built-in to Intune. Currently, you can deploy one profile to a single device. In a future update, you'll be able to deploy multiple profiles to:
 
 - The same user group
 - The same devices group
