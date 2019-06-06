@@ -60,7 +60,7 @@ You can view these conditions for each device in the Azure portal and in the dev
   > [!NOTE]
   > Some device manufacturers encrypt their devices using a default PIN instead of a PIN set by the user. Intune views encryption using the default PIN as insecure and will mark those devices as noncompliant until the user creates a new, nondefault PIN.
 - An Android device that is enrolled and compliant might still be blocked and receive a quarantine notice when first trying to access corporate resources. If this occurs, make sure the Company Portal app is not running, then click the **Get Started Now** link in the quarantine email to trigger evaluation. This should only need to be done when conditional access is first enabled.
-- An Android device that is enrolled and compliant might prompt the user "No certificates found" and not be granted access to O365 resources. The user must enable the Enable Browser Access option on the enrolled device as follows:
+- An Android device that is enrolled might prompt the user "No certificates found" and not be granted access to O365 resources. The user must enable the Enable Browser Access option on the enrolled device as follows:
 1.Launch the Company Portal app.
 2.Go to the Settings page from the triple dots (...) or the hardware menu button.
 3.Press the Enable Browser Access button.
