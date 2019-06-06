@@ -118,7 +118,8 @@ In this step, you:
    - In **Security**, add the NDES service account, and give it **Enroll** permissions to the template. Intune admins who create SCEP profiles require **Read** rights so that they can browse to the template when creating SCEP profiles.
 
      > [!NOTE]
-     > To revoke certificates, the NDES service account needs *Issue and Manage Certificates* rights for each certificate template used by a certificate profile.
+     > To revoke certificates, the NDES service account needs *Issue and Manage Certificates* rights on the certification authority. To delegate this permission, open the Certificate Authority management console and right-click on the Certificate Authority name. Then, on the Security tab, add or select the account and then select the checkbox for **Issue and Manage Certificates**.
+
 
 3. Review the **Validity period** on the **General** tab of the template. By default, Intune uses the value configured in the template. However, you can configure the CA to allow the requester to enter a different value, which you can then set from within the Intune Administrator console. If you want to always use the value in the template, skip the rest of this step.
 
@@ -302,15 +303,15 @@ In this step, you:
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**.
-3. Download and save the connector for SCEP file. Save it to a location accessible from the server where you're going to install the connector.
+3. Download and save the connector for SCEP file. Save it to a location accessible from the NDES server where you're going to install the connector.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. After the download completes, go to the server that hosts your Network Device Enrollment Service (NDES). Then:
+4. After the download completes, go to the NDES server that hosts your Network Device Enrollment Service (NDES). Then:
 
     1. Be sure .NET 4.5 Framework is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
-    2. Run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
+    2. Use an account with administrative rights to the server to run the installer (**NDESConnectorSetup.exe**). The installer also installs the policy module for NDES and the CRP Web Service. The CRP Web Service, CertificateRegistrationSvc, runs as an application in IIS.
 
     > [!NOTE]
     > When you install NDES for standalone Intune, the CRP service automatically installs with the Certificate Connector. When you use Intune with Configuration Manager, you install the Certificate Registration Point as a separate site system role.
@@ -338,7 +339,7 @@ In this step, you:
 
     If your organization uses a proxy server and the proxy is needed for the NDES server to access the Internet, select **Use proxy server**. Then enter the proxy server name, port, and account credentials to connect.
 
-    Select the **Advanced** tab, and then enter credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority. **Apply** your changes.
+    Select the **Advanced** tab, and then enter credentials for an account that has the **Issue and Manage Certificates** permission on your issuing Certificate Authority. **Apply** your changes. If you delegated this permission to your NDES service account when [configuring your Certification Authority](#configure-the-certification-authority), specify that account here. 
 
     You can now close the Certificate Connector UI.
 
