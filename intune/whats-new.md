@@ -109,8 +109,11 @@ Admins will see these four apps automatically added to their Intune apps list at
 
 ### Device configuration
 
+#### Updated PFX Certificate Connector for Microsoft Intune  <!-- 1533038 -->
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that addresses an issue where existing PFX certificates continue to be reprocessed, which causes the connector to stop processing new requests.
+
 ####  Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
-In public preview, you can use Intune to manage security tasks for Microsoft Defender Advanced Threat Protection (ATP). This Integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
+In public preview, you can use Intune to manage [security tasks for Microsoft Defender Advanced Threat Protection (ATP)](atp-manage-vulnerabilities.md). This integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671   idstaged-->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
@@ -119,7 +122,7 @@ Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. T
 
 Applies to: Windows 10 and later
 
-#### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS devices <!-- 4097904   --> 
+#### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS devices <!-- 4097904   -->  
 You create a device restrictions profile on iOS device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type). This update includes new settings you can configure:
 
 - **Built-in Apps**: Server-side logging for Siri commands
