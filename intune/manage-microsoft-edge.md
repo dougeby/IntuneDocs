@@ -140,7 +140,7 @@ Microsoft Edge and [Azure AD Application Proxy](https://docs.microsoft.com/azure
 These are some examples of the scenarios AD Application Proxy enable: 
 
 - A user is using the Outlook mobile app, which is protected by Intune. They then click a link to an intranet site in an email, and Microsoft Edge recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and conditional access before reaching the intranet site. Users are now able to access internal sites even on their mobile devices, and the link in Outlook works as expected.
-- A user opens Microsoft Edge on their iOS or Android device. If Microsoft Edge I protected with Intune, and Application proxy is enabled, the user can navigate to an intranet site using the internal URL they are used to. Microsoft Edge recognizes that this intranet site has been exposed to the user via the Application Proxy, and the user is automatically routed through the Application Proxy, to authenticate before reaching the intranet site. 
+- A user opens Microsoft Edge on their iOS or Android device. If Microsoft Edge is protected with Intune, and Application proxy is enabled, the user can navigate to an intranet site using the internal URL they are used to. Microsoft Edge recognizes that this intranet site has been exposed to the user via the Application Proxy, and the user is automatically routed through the Application Proxy, to authenticate before reaching the intranet site. 
 
 ### Before you start
 
@@ -181,8 +181,8 @@ Use the below key/value pair to configure a homepage shortcut:
 For ease of access, you can configure bookmarks that you’d like your users to have available when they are using Microsoft Edge. 
 Here are some details:
 
-- These bookmarks will only appear for users when they are using in their corporate mode of Microsoft Edge. 
-- These bookmakers cannot be deleted or modified by users
+- These bookmarks will only appear for users when they are using the corporate mode of Microsoft Edge. 
+- These bookmarks cannot be deleted or modified by users.
 - These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
 - If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
 
@@ -216,7 +216,7 @@ You can use various URL formats to build your allowed/blocked sites lists. These
 - You can specify port numbers in the address. If you do not specify a port number, the values used are:
     - Port 80 for http
     - Port 443 for https
-- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:;` and `http://www.contoso.com: /;` are not supported.
+- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported.
 
     |    URL    |    Details    |    Matches    |    Does not match    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -227,7 +227,7 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     |    `http://www.contoso.com/images`    |    Matches a single folder    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Matches a single page, by using a port   number    |    http://www.contoso.com:80    |         |
     |    `https://www.contoso.com`    |    Matches a single, secure page    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
-    |    `http://www.contoso.com/images/&#42;`    |    Matches a single folder and all subfolders    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
+    |    `http://www.contoso.com/images/*`    |    Matches a single folder and all subfolders    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
 - The following are examples of some of the inputs that you cannot specify:
     - `*.com`
@@ -241,22 +241,17 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
-## Defining behavior for when users try to access a blocked site
+## Defining behavior when users try to access a blocked site
 
 With the dual-identity model built into Microsoft Edge, you can enable a more flexible experience for your end users that was not possible with the Intune Managed Browser. When users hit a blocked site in Microsoft Edge, they can be prompted to open the link in their personal context instead of their work context, which enables them to stay protected, while keeping corporate resources safe. For example, if a user is sent a link to a news article through their Outlook, they will be able to open the link in their personal context or in an InPrivate tab instead of their work context, which does not allow news websites. By default, these transitions are allowed.
 
 Use the below key/value pair to configure if these soft transitions are allowed:
 
-Key	Value
-com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock	True allows Microsoft Edge to transition users to their personal context to open blocked sites
-
-Block prevents Microsoft Edge from transitioning users, and users will simply be shown a message stating the site they are trying to access is blocked.
-
 |    Key    |    Value    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** allows Microsoft Edge to transition users to their   personal context to open blocked sites<p>**Block** prevents Microsoft Edge from transitioning users,   and users will simply be shown a message stating the site they are trying to   access is blocked.    |
 
-## Directing your users to Microsoft Edge instead of the Intune Managed Browser 
+## Directing users to Microsoft Edge instead of the Intune Managed Browser 
 
 Both the Intune Managed Browser and Microsoft Edge are now can be used as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (e.g. Outlook and OneDrive) with the following configuration setting:
 
