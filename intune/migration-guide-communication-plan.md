@@ -29,7 +29,9 @@ ms.collection: M365-identity-device-management
 ---
 
 # Plan communications 
-The communication plan is a key element to an Intune migration. The following tools and templates are provided to assist you in educating end users. The [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit) includes email templates, an Intune Enrollment guide, and links to instructional videos for end user enrollment.  
+The communication plan is a key element to an Intune migration. The following tools and templates are provided to assist you in educating end users. The Intune Adoption Kit includes email templates, an Intune Enrollment guide, and links to instructional videos for end user enrollment.  
+
+Download:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
 
 ## Email templates 
 We recommend the following email communication plan. We’ve provided templates for you to adapt for your communication plan:
