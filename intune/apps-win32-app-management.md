@@ -373,12 +373,12 @@ If you need to get the version information of your Win32 app, you can use the fo
 
 In the above PowerShell command, replace `<path to binary file>` with your file path.
 
-For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
-
-### Troubleshooting areas to consider
+### Additional troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
 - Check OS Version – Windows 10 1607 and above.  
 - Check Windows 10 SKU - Windows 10 S, or Windows versions running with S-mode enabled, do not support MSI installation.
+
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## Next steps
 
