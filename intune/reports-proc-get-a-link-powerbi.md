@@ -58,7 +58,7 @@ The Power BI [Intune Compliance (Data Warehouse)](https://aka.ms/intune/dataware
 2. Click the **Get It Now** button, and then click **Continue**.
 3. When prompted to install the Power BI app, click **Install**.
 4. After the installation completes, click on the **Intune Compliance (Data Warehouse)** app tile.
-5. Click the **Connect data** button. The **Connect to Intune Compliance (Data Warehouse)** dialog is displayed.
+5. Click the **Connect** button. The **Connect to Intune Compliance (Data Warehouse)** dialog is displayed.
 6. Click the **Sign in** button.
 7. Sign in with a user account that has access to the Intune Data Warehouse for the tenant that has reports you want to view.
 8. To view the included dashboard, click the **Dashboards** tab, then click the **Compliance Overview** dashboard.
