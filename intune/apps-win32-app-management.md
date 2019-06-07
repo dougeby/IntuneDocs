@@ -363,7 +363,7 @@ exit 1
 
 ```
 
-If you need to get the version information of your Win32 app, you can use the folloing PowerShell command:
+If you need to get the version information of your Win32 app, you can use the following PowerShell command:
 
 ``` PowerShell
 
