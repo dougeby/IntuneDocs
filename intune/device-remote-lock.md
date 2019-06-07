@@ -53,8 +53,7 @@ The **Remote lock** device action locks the device. To unlock the device, the de
 
 ## Remote lock a device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices** > **All devices**.
 4. In the list of devices, select a device, and then select the **Remote lock** action.
 

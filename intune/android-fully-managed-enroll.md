@@ -60,7 +60,7 @@ To set up Android Enterprise fully managed device management, follow these steps
 
 ### Enable corporate owned user devices
 
-1. Go to the [Intune portal](https://portal.azure.com) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices (Preview)**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and choose **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices (Preview)**.
 2. Under **Allow users to enroll corporate-owned user devices**, choose **Yes**.
 
 When this setting is set to **Yes**, it provides you with an enrollment token (a random string) and a QR code for your Intune tenant. This single enrollment token is valid for all your users and won't expire. Depending on the Android OS and version of the device, you can use either the token or QR code to enroll the kiosk device.
