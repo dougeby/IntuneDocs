@@ -35,7 +35,7 @@ This article describes how to update your version of the Company Portal app when
 * There's a newer version of Company Portal available.
 * Your version of Company Portal is no longer supported.
 
-These steps describe how to update or get the latest version of the app on Android, iOS, and Windows devices.    
+These steps describe how to update or get the latest version of the app on Android, iOS, macOS and Windows devices.    
 
 ## Update the Company Portal app on your Android device  
 
@@ -47,6 +47,10 @@ When a new version is available, an **Update** option appears in your list of in
 
 1. Open the App Store and search for **Intune**.  
 2. When you find the app, tap **Update**.  
+
+## Update the Company Portal app on your macOS device
+
+To automatically get updates as they become available, open Company Portal and go to **Help**. Then click on **Check for updates**. On the Microsoft AutoUpdate window, select **Automatically download and install**. To view available updates, click on **Check for updates**.
 
 ## Update the Company Portal app on your Windows device
 To automatically get updates as they become available, open Microsoft Store and go to  **Settings**. Then turn on **App updates**. To view recent updates, and apps waiting in the download queue, go to **Downloads and updates**.  
