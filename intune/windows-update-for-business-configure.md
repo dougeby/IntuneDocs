@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/12/2019
+ms.date: 06/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -60,7 +60,9 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
 
 - On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to **Basic**, **Enhanced**, or **Full**.  
 
-  You can configure this setting manually or use an Intune device restriction profile for Windows 10 and later. To use the device restriction profile, configure the setting **General** > **Diagnostic data submission** to at least **Basic**. For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).  
+  You can configure the *Diagnostic and usage data* setting for Windows 10 devices manually or use an Intune device restriction profile for Windows 10 and later. If you use a device restriction profile, set the [device restriction setting](device-restrictions-windows-10.md#reporting-and-telemetry) of **Share usage data** to at least **Basic**. This setting is found under the  **Reporting and Telemetry** category when you configure a device restriction policy for Windows 10 or later.
+
+  For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).  
 
 - If you use the Azure classic portal, [migrate your settings to the Azure portal](#migrate-update-settings-to-the-azure-portal).  
 
