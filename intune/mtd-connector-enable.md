@@ -37,11 +37,7 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 ## To enable the MTD connector
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials. After you've successfully signed in, you see the **Azure Dashboard**.
-
-2. On the **Azure Dashboard**, choose **All services** from the left menu, then type **Intune** in the text box filter.
-
-3. Choose **Intune**; the **Intune Dashboard** opens.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 4. On the **Intune Dashboard**, choose **Device compliance**, then choose **Mobile Threat Defense** under the **Setup** section.
 
