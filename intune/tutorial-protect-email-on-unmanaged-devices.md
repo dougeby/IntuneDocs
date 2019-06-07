@@ -48,46 +48,61 @@ Sign in to [Intune](https://aka.ms/intuneportal) as a Global Administrator or an
 ## Create the app protection policy
 For this tutorial, we’ll set up an Intune app protection policy for the Outlook app to put protections in place at the app level. We'll require a PIN to open the app in a work context. We'll also limit data sharing between apps and prevent company data from being saved to a personal location.
 
-1.	In Intune, select **Client apps** > **App protection policies** > **Add a policy**.
-2.	In **Name**, enter **Outlook app policy test**.
-3.	In **Description**, enter **Outlook app policy test**.
-4.	Select **Apps**. In the apps list, select **Outlook**, and then choose **Select**.
-5.	Select **Settings**. 
-6.	Under **Data relocation**, for this tutorial select these settings:
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Client apps** > **App protection policies** > **Create policy**.  
+2. Configure the following setting:  
+   - **Name**: Enter **Outlook app policy test**.  
+   - **Description**: Enter **Outlook app policy test**.  
+   - **Platform**: Select **iOS**.  
+   - **Target to all app types**: Select **No**, and then for **App types**, select the checkbox for **Apps on unmanaged devices**.  
+3. Select **Apps**. In the Apps list, select **Outlook**, and then choose **Select**.
+4. Select **Settings** to open the Settings pane. 
+5. On the Settings pane, select **Data protection**. On the Data protection pane, below *Data Transfer*, configure the following settings for this tutorial:
 
-    - For **Allow app to transfer data to other apps**, select **None**.
-    - For **Allow app to receive data from other apps**, select **None**.
-    - For **Prevent "Save As"**, select **Yes**.
-    - For **Restrict cut, copy, and paste with other apps**, select **Blocked**.
+   - For **Send Org data to other apps**, select **None**.  
+   - For **Receive data from other apps**, select **None**.  
+   - For **Save copies of Org data**, select **Block**.  
+   - For **Restrict cut, copy and paste between other apps**, select **Blocked**. 
+   - Leave all other settings at their default values. 
    
-     ![Select the Outlook app protection policy data relocation settings](media/tutorial-protect-email-on-unmanaged-devices/outlook-app-data-relocation.png)
-    
-7.	Under **Access Actions**, for this tutorial select these settings:
+   ![Select the Outlook app protection policy data relocation settings](media/tutorial-protect-email-on-unmanaged-devices/data-protection-settings.png)
 
-    - For **Require PIN for access**, select **Yes**.
-    - For **Require corporate credentials for access**, select **Yes**.
-    - Leave all other settings at their default values.
+   Select **OK** to return to the Settings pane.  
+
+6. Select **Access requirements** and then configure the following settings:  
+
+   - For **PIN for access**, select **Require**.
+   - For **Work or school account credentials for access**, select **Require**.
+   - Leave all other settings at their default values.
  
-     ![Select the Outlook app protection policy access actions](media/tutorial-protect-email-on-unmanaged-devices/outlook-app-access-actions.png)
+    ![Select the Outlook app protection policy access actions](media/tutorial-protect-email-on-unmanaged-devices/access-requirements-settings.png)
 
-9.	Select **OK**.
-10.	Select **Create**.
+    Select **OK** to return to the Settings pane.  
 
-The app protection policy for Outlook is created. Now you can set up conditional access to require devices to use the Outlook app.
+7.	On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
+
+The app protection policy for Outlook is created. Next, you'll set up conditional access to require devices to use the Outlook app.
 
 ## Create conditional access policies
-Now we’ll create two conditional access policies to cover all device platforms. The first policy will require Modern Authentication clients, like Outlook for iOS and Outlook for Android, to use the approved Outlook app and MFA. The second policy will require Exchange ActiveSync clients to use the approved Outlook app. (Currently, Exchange Active Sync doesn't support conditions other than device platform). You can configure conditional access policies in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.
-### Create an MFA policy for Modern Authentication clients
-1.	In Intune, select **Conditional access** > **Policies** > **New policy**.
-1.  In **Name**, enter **Test policy for modern auth clients**. 
-3.	Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
+Now we’ll create two conditional access policies to cover all device platforms.  
 
-4.	Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll select it by following these steps:
+- The first policy will require that Modern Authentication clients use the approved Outlook app and multi-factor authentication (MFA). Modern Authentication clients include Outlook for iOS and Outlook for Android.  
+
+- The second policy will require that Exchange ActiveSync clients use the approved Outlook app. (Currently, Exchange Active Sync doesn't support conditions other than device platform). You can configure conditional access policies in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.  
+
+### Create an MFA policy for Modern Authentication clients  
+
+1. In Intune, select **Conditional access** > **Policies** > **New policy**.  
+
+2. In **Name**, enter **Test policy for modern auth clients**.  
+
+3. Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
+
+4.	Under **Assignments**, select **Cloud apps or actions**. Because we want to protect Office 365 Exchange Online email, we'll select it by following these steps:
      
     1. On the **Include** tab, choose **Select apps**.
     2. Choose **Select**. 
-    3. In the applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
-    4. Select **Done**.
+    3. In the Applications list, select **Office 365 Exchange Online**, and then choose **Select**. 
+    4. Select **Done** to return to the New policy pane.
   
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-cloud-apps.png)
 
@@ -102,27 +117,30 @@ Now we’ll create two conditional access policies to cover all device platforms
     1. Under **Configure**, select **Yes**.
     2. Select **Mobile apps and desktop clients** and **Modern authentication clients**.
     3. Clear the other check boxes.
-    4. Select **Done**, and then select **Done** again.
+    4. Select **Done** > **Done** to return to the New policy pane.  
     
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7.	Under **Access controls**, select **Grant**. 
      
-    1. On the **Grant** pane, select **Grant access**.
-    2. Select **Require multi-factor authentication**.
-    4. Select **Require approved client app**.
-    5. Under **For multiple controls**, select **Require all the selected controls**. This setting ensures that both requirements you selected are enforced when a device tries to access email.
-    6. Choose **Select**.
+   1. On the **Grant** pane, select **Grant access**.
+   2. Select **Require multi-factor authentication**.
+   3. Select **Require approved client app**.
+   4. Under **For multiple controls**, select **Require all the selected controls**. This setting ensures that both requirements you selected are enforced when a device tries to access email.
+   5. Choose **Select**.
      
-    ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
-8.	Under **Enable policy**, select **On**.
+7. Under **Enable policy**, select **On**, and then select **Create**.  
      
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)
 
-9.	Select **Create**.
+
 
 The conditional access policy for Modern Authentication clients is created. Now you can create a policy for Exchange Active Sync clients.
+
+
+
 
 ### Create a policy for Exchange Active Sync clients
 1.	In Intune, select **Conditional access** > **Policies** > **New policy**.
