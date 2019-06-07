@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/30/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
