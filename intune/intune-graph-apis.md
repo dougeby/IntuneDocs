@@ -65,7 +65,7 @@ To learn more, see:
 
 To register an app to use Microsoft Graph API:
 
-1.  Sign into [the Azure portal](https://portal.azure.com) using administrative credentials.
+1.  Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) using administrative credentials.
 
     As appropriate, you may use:
     - The tenant admin account.

@@ -89,7 +89,7 @@ When you create a device compliance policy, Intune automatically creates an acti
 
 You can also add another action when you create a compliance policy, or update an existing policy. 
 
-1. In the [Azure portal](https://portal.azure.com), open **Microsoft Intune** > **Device compliance**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and select **Device compliance**.
 2. Select **Policies**, choose one of your policies, and then select **Properties**. 
 
     Don't have a policy yet? Create an [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md), or other platform policy.

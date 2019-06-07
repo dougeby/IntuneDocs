@@ -136,7 +136,7 @@ The conditional access policy blocks access to resources *if* the device is nonc
 > [!TIP]  
 > Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
-1. In the [Azure portal](https://portal.azure.com), open **Intune** > **Conditional access** > **New policy**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and select **Conditional access** > **New policy**.
 2. Enter a policy **Name**, and select **Users and groups**. Use the Include or Exclude options to add your groups for the policy, and select **Done**.
 3. Select **Cloud apps**, and choose which apps to protect. For example, choose **Select apps**, and select **Office 365 SharePoint Online** and **Office 365 Exchange Online**.
 
