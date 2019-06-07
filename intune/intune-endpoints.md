@@ -36,8 +36,8 @@ As a cloud-only service, Intune doesn't require on-premises infrastructure such 
 
 To manage devices behind firewalls and proxy servers, you must enable communication for Intune.
 
-- The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols
-- For some tasks (like downloading software updates), Intune requires unauthenticated proxy server access to manage.microsoft.com
+- The proxy server must support both **HTTP (80)** and **HTTPS (443)** because Intune clients use both protocols. Windows Information Protection uses port 444.
+- For some tasks (like downloading software updates for the classic pc agent), Intune requires unauthenticated proxy server access to manage.microsoft.com
 
 You can modify proxy server settings on individual client computers. You can also use Group Policy settings to change settings for all client computers located behind a specified proxy server.
 
