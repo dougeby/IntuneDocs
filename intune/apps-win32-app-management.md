@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -340,12 +340,45 @@ Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\Intun
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### Detecting the Win32 app file version using PowerShell
 
-### Troubleshooting areas to consider
+If you have difficulty detecting the Win32 app file version, consider using or modifying the following PowerShell command:
+
+``` PowerShell
+
+$ssmsVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe").FileVersion
+#The below two lines trims the spaces before and after the version name
+$ssmsVersion = $ssmsVersion.Trim();
+if ("2019.0150.18118.00 ((SSMS_Rel).190420-0019)" -eq $ssmsVersion)
+{
+#Write the version to STDOUT by default
+$ssmsVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+
+If you need to get the version information of your Win32 app, you can use the following PowerShell command:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+In the above PowerShell command, replace `<path to binary file>` with your file path.
+
+### Additional troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
 - Check OS Version – Windows 10 1607 and above.  
 - Check Windows 10 SKU - Windows 10 S, or Windows versions running with S-mode enabled, do not support MSI installation.
+
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## Next steps
 
