@@ -36,9 +36,7 @@ You can explicitly choose to wipe your company’s corporate data from the end u
 
 ## Create an app protection policy using access actions
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**.  
-    Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps** > **App protection Policies**.
 4. Click **Add a policy** (You can also edit an existing policy). 
 5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
