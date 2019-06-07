@@ -363,6 +363,7 @@ exit 1
 ```
 In the above PowerShell command, replace the `<path to binary file>` string with the path to your Win32 app file. An example path would be similar to the following:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
 Also, replace the `<file version of successfully detected file>` string with the file version that you need to detect. An example file version string would be similar to the following:<br>
 `2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
 
