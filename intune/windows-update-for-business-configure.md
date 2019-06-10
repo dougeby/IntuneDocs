@@ -68,8 +68,7 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
 
 ## Create and assign update rings
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and then select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Software updates** > **Windows 10 Update Rings** > **Create**.
 4. Enter a name, a description (optional), and then choose **Configure**.
 5. In **Settings**, configure settings for your business needs. For information about the available settings, see [Windows update settings](windows-update-settings.md).  
