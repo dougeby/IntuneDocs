@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -93,8 +93,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 
 ### Step 1: Specify the software setup file
 
-1.	Sign in to the [Azure portal](https://portal.azure.com/).
-2.	Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.	In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
 4.	In the **Add** app pane, select **Windows app (Win32)** from the provided drop-down list.
 
@@ -340,12 +339,50 @@ Agent logs on the client machine are commonly in `C:\ProgramData\Microsoft\Intun
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### Detecting the Win32 app file version using PowerShell
 
-### Troubleshooting areas to consider
+If you have difficulty detecting the Win32 app file version, consider using or modifying the following PowerShell command:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+In the above PowerShell command, replace the `<path to binary file>` string with the path to your Win32 app file. An example path would be similar to the following:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Also, replace the `<file version of successfully detected file>` string with the file version that you need to detect. An example file version string would be similar to the following:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+If you need to get the version information of your Win32 app, you can use the following PowerShell command:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+In the above PowerShell command, replace `<path to binary file>` with your file path.
+
+### Additional troubleshooting areas to consider
 - Check targeting to make sure agent is installed on the device - Win32 app targeted to a group or PowerShell Script targeted to a group will create agent install policy for security group.
 - Check OS Version – Windows 10 1607 and above.  
 - Check Windows 10 SKU - Windows 10 S, or Windows versions running with S-mode enabled, do not support MSI installation.
+
+For more information about troubleshooting Win32 apps, see [Win32 app installation troubleshooting](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## Next steps
 
