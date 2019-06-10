@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -74,6 +74,10 @@ After you share, the recipient will receive a link and a message to view the app
 Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.  
 
 Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
+
+## Required apps  
+
+Your organization might deploy some apps directly to your device and mark them as **Required**. These apps will automatically be installed for you without intervention.
 
 ## Request an app for work or school  
 If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).    
