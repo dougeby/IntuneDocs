@@ -54,9 +54,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 #### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
 Company Portal for Windows will list all managed apps (both required and available) that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
 
-#### Available Google Play app reporting for Android work profiles <!-- 3041956 -->
-For available app installs on Android work profile devices, you will be able to view app installation status as well as the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
-
 #### Configure which browser is allowed to link to organization data <!-- 3145939 -->
 Intune App Protection Policies (APP) on Android and iOS devices will allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
