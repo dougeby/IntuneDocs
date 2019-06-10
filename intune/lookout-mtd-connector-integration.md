@@ -78,15 +78,15 @@ Use the following steps to gather the information you need to give to the Lookou
 
 2. The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
 
-   ![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
+   ![screenshot of the first time login page of the Lookout console](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 3. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
 
-   ![Image of the Lookout console with the Intune option on the connectors tab](./media/lookout_mtp_setup-intune-connector.png)
+   ![Image of the Lookout console with the Intune option on the connectors tab](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
 4. Go **Connectors** > **Connection Settings** and specify the **Heartbeat Frequency** in minutes.
 
-   ![Image of the connection settings tab with heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
+   ![Image of the connection settings tab with heartbeat frequency configured](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
 ## Configure enrollment groups
 1. As a best practice, create an Azure AD security group in the [Azure AD management portal](https://manage.windowsazure.com) containing a small number of users to test Lookout integration.
@@ -96,11 +96,11 @@ Use the following steps to gather the information you need to give to the Lookou
 
 2. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Enrollment Management** to define a set of users whose devices should be enrolled with Lookout. Add the Azure AD security group **Display Name** for enrollment.
 
-	![screenshot of the Intune connector enrollment page](./media/lookout-mtp-enrollment.png)
+	![screenshot of the Intune connector enrollment page](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)
 
 	>[!IMPORTANT]
 	> The  **Display Name** is case-sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
-	>![Image of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
+	>![Image of the Azure portal, Azure Active Directory service, properties page](./media/lookout-mtd-connector-integration/aad-group-display-name.png)
 
 	>[!NOTE] 
 	>The best practice is to use the default (5 minutes) for the increment of time to check for new devices. Current limitations, **Lookout cannot validate group display names:** Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group. **Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
@@ -115,23 +115,23 @@ In the **State Sync** option, specify the type of data that should be sent to In
 ## Configure error report email recipient information
 In the **Error Management** option, enter the email address that should receive the error reports.
 
-![screenshot of the Intune connector error management page](./media/lookout-mtp-connector-error-notifications.png)
+![screenshot of the Intune connector error management page](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
 ## Configure enrollment settings
 In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
 
-![Lookout enrollment settings on the System module](./media/lookout-console-enrollment-settings.png)
+![Lookout enrollment settings on the System module](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
 
 ## Configure email notifications
 If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com) with the user account that should receive notifications. On the **Preferences** tab of the **System** module, choose the threat levels that should  notifications and set them to **ON**. Save your changes.
 
-![screenshot of the preferences page with the user account displayed](./media/lookout-mtp-email-notifications.png)
+![screenshot of the preferences page with the user account displayed](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
 
 ### Configure threat classification
 Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](https://personal.support.lookout.com/hc/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
 
-![screenshot of the policy page showing threat and classifications](./media/lookout-mtp-threat-classification.png)
+![screenshot of the policy page showing threat and classifications](./media/lookout-mtd-connector-integration/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
 > Risk levels are an important aspect of Mobile Threat Defense because the Intune integration calculates device compliance according to these risk levels at runtime. The Intune administrator sets a rule in policy to identify a device as noncompliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Threat Defense directly drives the device compliance calculation in Intune.
