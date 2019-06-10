@@ -213,10 +213,11 @@ You can use the below key/value pairs to configure either an allowed or blocked 
 You can use various URL formats to build your allowed/blocked sites lists. These permitted patterns are detailed in the table below. Some notes before you get started: 
 - Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
 - You can use the wildcard symbol (*) according to the rules in the following permitted patterns list.
+- A wildcard can only match an entire compoment of the hostname (spearated by periods) or entire parts of the path (separated by forward slashes). For example, `http://*contoso.com` is **not** supported.
 - You can specify port numbers in the address. If you do not specify a port number, the values used are:
     - Port 80 for http
     - Port 443 for https
-- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported.
+- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported. 
 
     |    URL    |    Details    |    Matches    |    Does not match    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -238,6 +239,7 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     - IP addresses
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
