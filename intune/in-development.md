@@ -54,9 +54,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 #### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
 Company Portal for Windows will list all managed apps (both required and available) that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
 
-#### Available Google Play app reporting for Android work profiles <!-- 3041956 -->
-For available app installs on Android work profile devices, you will be able to view app installation status as well as the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
-
 #### Configure which browser is allowed to link to organization data <!-- 3145939 -->
 Intune App Protection Policies (APP) on Android and iOS devices will allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
@@ -102,7 +99,7 @@ To see the current settings, go to [Windows 10 (and newer) device settings to al
 Applies to: Windows 10 and later
 
 #### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
-In Intune, you can use Zebra mobility extensions (MZ) in a device configuration profile to customize settings, or add settings not built-in to Intune. Currently, you can deploy one profile to a single device. In a future update, you'll be able to deploy multiple profiles to:
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings, or add settings not built-in to Intune. Currently, you can deploy one profile to a single device. In a future update, you'll be able to deploy multiple profiles to:
 
 - The same user group
 - The same devices group
