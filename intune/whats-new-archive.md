@@ -448,7 +448,7 @@ You can now edit the management name field on a device’s **Properties** blade.
 You can now filter the **All devices** list by device category. To do so, choose **Devices** > **All devices** > **Filter** > **Device category**.
 
 #### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
-Administrators can now connect to [TeamViewer](device-profile-android-teamviewer.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
+Administrators can now connect to [TeamViewer](teamviewer-support.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
 
 #### Multiple Exchange Connector support <!-- 2070451 -->
 You're no longer limited to one Microsoft Intune Exchange Connector per tenant. Intune now supports multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
