@@ -148,7 +148,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 - have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com).
 
 
-A [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+A [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## Android issues
