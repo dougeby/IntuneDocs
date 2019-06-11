@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/09/2017
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -44,16 +44,18 @@ The compliance policy in Intune includes a rule for Lookout Mobile Threat Defens
 
 If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
 
-## Supported platforms
+## Supported platforms  
 The following platforms are supported for Lookout when enrolled in Intune:
-* **Android 4.1 and later**
-* **iOS 8 and later**
-For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/articles/114094140253).
+* **Android 4.1 and later**  
+* **iOS 8 and later**  
+
+For additional information about platform and language support, visit the [Lookout website](https://personal.support.lookout.com/hc/articles/114094140253).  
 
 ## Prerequisites
-* Microsoft Intune subscription
-* Azure Active Directory
 * Lookout Mobile Endpoint Security enterprise subscription  
+* Microsoft Intune subscription
+* Azure Active Directory Premium
+* Enterprise Mobility and Security (EMS) E3 or E5, with licenses assigned to users.  
 
 For more information, see [Lookout Mobile Endpoint Security](https://www.lookout.com/products/mobile-endpoint-security)
 
