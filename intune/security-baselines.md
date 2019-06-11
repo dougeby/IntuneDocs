@@ -43,7 +43,7 @@ After the profile is assigned, you can monitor the profile, and monitor the base
 Separate baselines can include the same settings that are found in other baselines, but with different values for those settings. It's important to understand what each baseline configures by default, and to modify those settings to fit your organizational needs.  
 
 > [!NOTE]
-> Some security baseline profiles can remain in preview. For a baseline that remains in preview, Microsoft doesn't recommend using the profile in a production environment. The settings in the baseline might change over the course of the preview. When security baselines move from Preview to be generally available, existing profiles won't convert to the baseline profile that releases as generally available. 
+> For a security baseline profile that remains in preview, Microsoft doesn't recommend using the profile in a production environment. The settings in the baseline might change over the course of the preview. When security baselines move from preview to be generally available, profiles created by using the preview baseline won't convert to the generally available baseline. You'll need to create a new baseline profile using the generally available baseline. 
 
 The goal of using security baselines is to provide an end-to-end secure workflow when working with Microsoft 365. Some of the benefits include:
 
@@ -86,7 +86,7 @@ When using co-managed devices, you must switch the **Device configuration** work
 
 3. On the **Basics** tab, specify the following properties:
 
-    - **Name**: Enter a name for your security baselines profile. For example, enter *Standard profile for Defender ATP*
+    - **Name**: Enter a name for your security baselines profile. For example, enter *Standard profile for Defender ATP*.
     - **Description**: Enter some text that describes what this baseline does. The description is for you to enter any text you want. It's optional, but definitely recommended.  
 
    Select **Next** to go to the next tab. After you advanced to a new tab, you can select the tab name to return to a previously viewed tab.  
