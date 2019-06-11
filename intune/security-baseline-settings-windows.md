@@ -7,7 +7,7 @@ description: Intune security baseline settings for managing Windows 10
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -29,15 +29,19 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Windows security baseline settings for Intune  
+# MDM security baseline settings for Intune  
 
-View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune. The Windows baseline defaults represent the recommended configuration for Windows, and might not match baseline defaults from other security baselines.  
+View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
+
+The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)** 
 
 > [!NOTE]  
-> The Windows security baseline settings are in **Preview**. While in Preview, the list of available settings, and order in which this content presents those settings, will vary with what is available in the portal.  
->  
-> When the baseline settings are out of Preview, this content will update with the non-preview list of security baseline settings that Intune supports.  
+> In June of 2019, this security baseline changed from being in preview, to being generally available. Profiles that were created prior to the availability of the MDM Security Baseline for Spring 2019 Update (19H1) baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version that is now generally available version.  
 
+
+<!-- The following settings were availalbe in the Preview Baseline.   
+
+   
 ## Above Lock  
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
 
@@ -194,13 +198,18 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   
   **Default**: Yes  
 
-<!-- not yet available 
+<!-- This setting was never available in teh preview  baseline 
+
 - **Enable secure boot with DMA**  
   Among the commands that follow, you can choose settings for Secure Boot and Secure Boot with DMA. In most situations, we recommend that you choose Secure Boot. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled. In contrast, with Secure Boot with DMA, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs won't have VBS or HVCI protection, although it can still have WDAC enabled.
   
   
   **Default**: Yes  
   -->
+
+<!-- original list of preview settings continues
+
+
 - **Launch system guard**    
   **Default**: Enabled  
 
@@ -364,7 +373,10 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
-<!-- not yet available 
+
+
+
+<!-- Tthe following settings were not made available in the previe baseline:
 - **Scan incoming mail messages**  
   Allows or disallows scanning of email.
   
@@ -384,7 +396,13 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   Defender signature update interval in hours
   
   **Default**: Disabled  
+
+
  -->
+<!-- the list of preview settings continues
+
+
+
 - **Internet Explorer internet zone access to data sources**  
   This policy setting allows you to manage whether Internet Explorer can access data from another security zone using the Microsoft XML Parser (MSXML) or ActiveX Data Objects (ADO). If you enable this policy setting, users can load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you select Prompt in the drop-down box, users are queried to choose whether to allow a page to load in the zone that uses MSXML or ADO to access data from another site in the zone. If you disable this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone. If you don't configure this policy setting, users can't load a page in the zone that uses MSXML or ADO to access data from another site in the zone.
   
@@ -1256,11 +1274,21 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
 
   **Default**: Yes
 
-<!-- Not currently available? - **Block unverified file download**  
+
+
+<!-- This next setting was not available in the Preivew basline:
+
+ - **Block unverified file download**  
   By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).
   
   **Default**: Yes
+
+
  --> 
+<!-- The original preview baseleine list continues
+
+
+
 - **Require SmartScreen for apps and files**  
   Allows IT Admins to configure SmartScreen for Windows.
 
@@ -1438,3 +1466,5 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
   
   **Default**: Enabled
  
+
+End of PReview baseilne list  -->
