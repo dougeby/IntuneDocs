@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -50,7 +50,13 @@ When a new version is available, an **Update** option appears in your list of in
 
 ## Update the Company Portal app on your macOS device
 
-To automatically get updates as they become available, open Company Portal and go to **Help**. Then click on **Check for updates**. On the Microsoft AutoUpdate window, select **Automatically download and install**. To view available updates, click on **Check for updates**.
+Set up Company Portal to automatically install updates as they become available. 
+
+1. Open Company Portal and go to **Help**. 
+2. Select **Check for updates**. 
+3. On the Microsoft AutoUpdate screen, select **Automatically download and install**. 
+
+To view available updates, select **Check for updates**.  
 
 ## Update the Company Portal app on your Windows device
 To automatically get updates as they become available, open Microsoft Store and go to  **Settings**. Then turn on **App updates**. To view recent updates, and apps waiting in the download queue, go to **Downloads and updates**.  
