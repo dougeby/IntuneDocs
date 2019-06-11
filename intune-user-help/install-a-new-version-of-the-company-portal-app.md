@@ -35,7 +35,7 @@ This article describes how to update your version of the Company Portal app when
 * There's a newer version of Company Portal available.
 * Your version of Company Portal is no longer supported.
 
-These steps describe how to update or get the latest version of the app on Android, iOS, macOS and Windows devices.    
+These steps describe how to update or get the latest version of the app on Android, iOS, macOS, and Windows devices.    
 
 ## Update the Company Portal app on your Android device  
 
