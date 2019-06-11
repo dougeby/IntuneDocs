@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/31/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-There are two types of conditional access with Intune: device-based conditional access and app-based conditional access. You need to configure the related compliance policies to drive conditional access compliance at your organization. Conditional access is commonly used to do things like allow or block access to Exchange on-premises, control access to the network, or integrate with a Mobile Threat Defense solution.
+There are two types of conditional access with Intune: device-based conditional access and app-based conditional access. You need to configure the related compliance policies to drive conditional access compliance at your organization. Conditional access is commonly used to do things like allow or block access to Exchange, control access to the network, or integrate with a Mobile Threat Defense solution.
 
 The below information helps you understand how to use the Intune mobile *device* compliance capabilities and the Intune mobile *application* management (MAM) capabilities. 
 
@@ -59,7 +59,58 @@ Device-based conditional access policies for Exchange online and other Office 36
 > 3. Press the **Enable Browser Access** button. 
 > 4. In the Chrome browser, sign out of Office 365 and restart Chrome.
 
-### Conditional access for Exchange on-premises
+
+### Conditional access based on network access control
+
+Intune integrated with partners like Cisco ISE, Aruba Clear Pass, and Citrix NetScaler to provide access controls based on the Intune enrollment and the device compliance state.
+
+Users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources based on whether the device is managed and compliant with Intune device compliance policies.
+
+-   Learn more about the [NAC integration with Intune](network-access-control-integrate.md).
+
+### Conditional access based on device risk
+
+Intune partners with Mobile Threat Defense vendors that provide a security solution to detect malware, Trojans, and other threats on mobile devices.
+
+#### How the Intune and Mobile Threat Defense integration works
+
+When mobile devices have the Mobile Threat Defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
+
+The Intune and mobile threat defense integration plays a factor at the conditional access decisions based on device risk.
+
+-   Learn more about [Intune mobile threat defense](mobile-threat-defense.md).
+
+### Conditional access for Windows PCs
+
+Conditional access for PCs provides capabilities similar to those available for mobile devices. Let’s talk about the ways you can use conditional access when managing PCs with Intune.
+
+#### Corporate-owned
+
+-   **On premises AD domain joined:** This option is commonly used by organizations who are reasonably comfortable with how they’re already managing their PCs through AD group policies and/or System Center Configuration Manager.
+
+-   **Azure AD domain joined and Intune management:** This scenario is intended for organizations that want to be cloud-first (that is, primarily use cloud services, with a goal to reduce use of an on-premises infrastructure) or cloud-only (no on-premises infrastructure). Azure AD Join works well even in a hybrid environment, enabling access to both cloud and on-premises apps and resources. The device joins to the Azure AD and gets enrolled to Intune. This can be used as a conditional access criteria when accessing corporate resources.
+
+-   **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to being a domain-joined PC:
+
+    -   Is the PC encrypted?
+
+    -   Is anti-malware installed? Is it up-to-date?
+
+    -   Is the device jailbroken or rooted?
+
+#### Bring your own device (BYOD)
+
+-   **Workplace join and Intune management:** Here the user can join their personal devices to access corporate resources and services. You can use Workplace join and enroll devices into Intune MDM to receive device-level policies, which is also another option to evaluate conditional access criteria.
+
+Learn more about [Device Management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
+
+## App-based conditional access
+
+Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
+
+-   Learn more about [app-based conditional access with Intune](app-based-conditional-access-intune.md).
+
+### Intune Conditional access for Exchange on-premises
 
 Conditional access can be used to allow or block access to **Exchange on-premises** based on the device compliance policies and enrollment state. When conditional access is used in combination with a device compliance policy, only compliant devices are allowed access to Exchange on-premises.
 
@@ -75,9 +126,9 @@ When devices do not meet the conditions set, the end user is guided through the 
 
 #### How conditional access for Exchange on-premises works
 
-The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
+Conditional access for Exchange on-premises works differently than Azure Conditional Access based policies. You install the Exchange on-premises connector to directly interact with Exchange server. The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
-If the EAS record is brand new, and Intune is not aware of it, Intune issues a cmdlet (pronounced "command-let") that blocks access to e-mail. Here are more details on how this process works:
+If the EAS record is brand new, and Intune is not aware of it, Intune issues a cmdlet (pronounced "command-let") that directs the Exchange server to block access to e-mail. Here are more details on how this process works:
 
 ![Exchange on-premises with CA flow-chart](./media/ca-intune-common-ways-1.png)
 
@@ -110,62 +161,15 @@ Intune evaluates and manages the device state.
 Exchange server provides API and infrastructure to move devices to quarantine.
 
 > [!IMPORTANT]
-> Keep in mind that the user who’s using the device must have a compliance profile assigned to them so the device can be evaluated for compliance. If no compliance policy is deployed to the user, the device is treated as compliant and no access restrictions are applied.
+> Keep in mind that the user who’s using the device must have a compliance profile and Intune license assigned to them so the device can be evaluated for compliance. If no compliance policy is deployed to the user, the device is treated as compliant and no access restrictions are applied.
 
-### Conditional access based on network access control
-
-Intune integrated with partners like Cisco ISE, Aruba Clear Pass, and Citrix NetScaler to provide access controls based on the Intune enrollment and the device compliance state.
-
-Users can be allowed or denied access when trying to access corporate Wi-Fi or VPN resources based on whether the device is managed and compliant with Intune device compliance policies.
-
--   Learn more about the [NAC integration with Intune](network-access-control-integrate.md).
-
-### Conditional access based on device risk
-
-Intune partners with Mobile Threat Defense vendors that provide a security solution to detect malware, Trojans, and other threats on mobile devices.
-
-#### How the Intune and Mobile Threat Defense integration works
-
-When mobile devices have the Mobile Threat Defense agent installed, the agent can send compliance state messages back to Intune reporting if a threat has been found in the mobile device itself.
-
-The Intune and mobile threat defense integration plays a factor at the conditional access decisions based on device risk.
-
--   Learn more about [Intune mobile threat defense](mobile-threat-defense.md).
-
-### Conditional access for Windows PCs
-
-Conditional access for PCs provides capabilities similar to those available for mobile devices. Let’s talk about the ways you can use conditional access when managing PCs with Intune.
-
-#### Corporate-owned
-
--   **On premises AD domain joined:** This option is commonly used by organizations who are reasonably comfortable with how they’re already managing their PCs through AD group policies and/or System Center Configuration Manager.
-
--   **Azure AD domain joined and Intune management:** This scenario is typically geared to Choose Your Own Device (CYOD), and roaming laptop scenarios where these devices are rarely connected to the corporate network. The device joins to the Azure AD and gets enrolled to Intune, which removes any dependency on on-premises AD, and domain controllers. This can be used as a conditional access criteria when accessing corporate resources.
-
--   **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides conditional access capabilities that can evaluate specific compliance criteria, in addition to being a domain-joined PC:
-
-    -   Is the PC encrypted?
-
-    -   Is anti-malware installed? Is it up-to-date?
-
-    -   Is the device jailbroken or rooted?
-
-#### Bring your own device (BYOD)
-
--   **Workplace join and Intune management:** Here the user can join their personal devices to access corporate resources and services. You can use Workplace join and enroll devices into Intune MDM to receive device-level policies, which is also another option to evaluate conditional access criteria.
-
-Learn more about [Device Management in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/overview).
-
-## App-based conditional access
-
-Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
-
--   Learn more about [app-based conditional access with Intune](app-based-conditional-access-intune.md).
 
 ## Next steps
 
 [How to configure conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
-[How to install on-premises Exchange connector with Intune](https://docs.microsoft.com/intune/exchange-connector-install).
+[Set up app-based conditional access policies](app-based-conditional-access-intune-create.md)
+
+[How to install on-premises Exchange connector with Intune](exchange-connector-install.md).
 
 [How to create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
