@@ -62,22 +62,22 @@ If Microsoft Edge is not targeted with Intune policy, users cannot use it to acc
 
 ## Conditional Access for Microsoft Edge
 
-You can leverage Azure AD Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This would restrict mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge, and this would block access from any other unprotected browsers such as Safari or Chrome. Conditional access can be applied to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+You can leverage Azure AD Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This would restrict mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge, and this would block access from any other unprotected browsers such as Safari or Chrome. Conditional Access can be applied to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android, follow the below steps:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Under the Intune node, select **Conditional access** > **New policy**.
+2. Under the Intune node, select **Conditional Access** > **New policy**.
 3. Next, select **Grant** from the **Access controls** section of the blade.
 4. Click **Require approved client app**.
 5. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
-    ![Conditional access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
+    ![Conditional Access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
 6. In the Assignments section, select Conditions > Client apps. The Client apps blade is displayed.
 7. Click Yes under Configure to apply the policy to specific client apps.
 8. Verify that Browser is selected as a client app.
 
-    ![Conditional access policy - Select client apps](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
+    ![Conditional Access policy - Select client apps](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
 
     > [!NOTE]
     > If you want to restrict which native apps (non-browser apps) can access these cloud applications, you can also select **Mobile apps and desktop clients**.
@@ -139,7 +139,7 @@ Microsoft Edge and [Azure AD Application Proxy](https://docs.microsoft.com/azure
 
 These are some examples of the scenarios AD Application Proxy enable: 
 
-- A user is using the Outlook mobile app, which is protected by Intune. They then click a link to an intranet site in an email, and Microsoft Edge recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and conditional access before reaching the intranet site. Users are now able to access internal sites even on their mobile devices, and the link in Outlook works as expected.
+- A user is using the Outlook mobile app, which is protected by Intune. They then click a link to an intranet site in an email, and Microsoft Edge recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and Conditional Access before reaching the intranet site. Users are now able to access internal sites even on their mobile devices, and the link in Outlook works as expected.
 - A user opens Microsoft Edge on their iOS or Android device. If Microsoft Edge is protected with Intune, and Application proxy is enabled, the user can navigate to an intranet site using the internal URL they are used to. Microsoft Edge recognizes that this intranet site has been exposed to the user via the Application Proxy, and the user is automatically routed through the Application Proxy, to authenticate before reaching the intranet site. 
 
 ### Before you start
