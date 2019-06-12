@@ -118,9 +118,9 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 
 -----------------
 
-| OEM | Bundle ID |
-| --- | --- |
-| Samsung | com.samsung.android.knox.kpu |
+| OEM | Bundle ID | OEM Documentation (if available) |
+| --- | --- | ---|
+| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm)
 
 -----------------
 
