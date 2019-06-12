@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -75,7 +75,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Configuration profile changes (supervised only)**: **Block** prevents configuration profile changes on the device. **Not configured** (default) allows the user to install configuration profiles.
 - **Activation Lock (supervised only)**: Choose **Allow** to enable Activation Lock on supervised iOS devices. Activation Lock makes it harder for a lost or stolen device to be reactivated.
 - **Block app removal (supervised only)**: Choose **Block** to prevent users from removing apps. **Not configured** (default) allows users to remove apps from the device.
-- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode blocks USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
+- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode prevents USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
 - **Force automatic date and time (supervised only)**: **Require** forces supervised devices to set the Date & Time automatically. The device's time zone is updated when the device has cellular connections or has Wi-Fi with location services enabled.
 - **Require students to request permission to leave Classroom course (supervised only)**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. **Not configured** (default) doesn't force the student to ask for permission.
 
