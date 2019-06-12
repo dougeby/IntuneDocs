@@ -118,7 +118,7 @@ In the **Error Management** option, enter the email address that should receive 
 ![screenshot of the Intune connector error management page](./media/lookout-mtp-connector-error-notifications.png)
 
 ## Configure enrollment settings
-In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune Conditional Access policies. You can specify values between 1 and 90 days.
 
 ![Lookout enrollment settings on the System module](./media/lookout-console-enrollment-settings.png)
 

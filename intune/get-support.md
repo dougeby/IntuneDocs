@@ -105,7 +105,7 @@ When you open Help and support from a location that is supported by the new expe
 The following are examples of queries you might submit:
   
 - *Can’t restore iOS device*  
-- *Can’t create conditional access policy*  
+- *Can’t create Conditional Access policy*  
 
 ![Specify the issue on the Need Help? page](./media/get-support/describe-the-issue.png)
 

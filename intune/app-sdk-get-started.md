@@ -93,9 +93,9 @@ You will need one of the following developer guides to help you integrate the In
 
 
 
-## Enable your iOS or Android app for app based conditional access
+## Enable your iOS or Android app for app based Conditional Access
  
- In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based conditional access:
+ In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based Conditional Access:
  
  * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
  
