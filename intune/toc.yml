@@ -270,7 +270,7 @@
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
-      href: device-profile-android-teamviewer.md
+      href: teamviewer-support.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
     - name: Synchronize device
