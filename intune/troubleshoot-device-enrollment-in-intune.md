@@ -168,7 +168,7 @@ The following table lists errors that end users might see while enrolling Androi
 
 - They can't receive policy, apps, and remote commands from the Intune service.
 - They show a Management State of **Unhealthy** in the administrator console.
-- Users who are protected by conditional access policies might lose access to corporate resources.
+- Users who are protected by Conditional Access policies might lose access to corporate resources.
 
 Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When the Company Portal is in a deactivated state, it can't run in the background and can't contact the Intune service.
 
@@ -286,7 +286,7 @@ The following table lists errors that end users might see while enrolling iOS de
 
 - They can't receive policy, apps, and remote commands from the Intune service.
 - They show a Management State of **Unhealthy** in the administrator console.
-- Users who are protected by conditional access policies might lose access to corporate resources.
+- Users who are protected by Conditional Access policies might lose access to corporate resources.
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 

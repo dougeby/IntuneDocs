@@ -25,7 +25,7 @@ ms.collection: M365-identity-device-management
 Intune managed apps are enabled with a rich set of mobile application protection policies. Managed apps allow you to:
 - Restrict copy-and-paste and save-as functions
 - Configure web links to open inside the secure Microsoft browser
-- Enable multi-identity use and app-level conditional access
+- Enable multi-identity use and app-level Conditional Access
 - Apply data loss prevention policies without managing the user's device
 - Enable app protection without requiring enrollment
 - Enable app protection on devices managed with 3rd party EMM tools

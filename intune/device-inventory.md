@@ -50,7 +50,7 @@ This article shows you how to view all your devices, and their properties in the
 	    - [Fresh Start](device-fresh-start.md) (Windows only)
      - Start a remote assistance session
    - Use **Properties** to assign a [device category you create](device-group-mapping.md), and change ownership of the device to a personal device, or a corporate device.
-   - **Hardware** includes many details about the device, including the device ID, the operating system and version, storage space, the model and manufacturer, conditional access settings, and more details.
+   - **Hardware** includes many details about the device, including the device ID, the operating system and version, storage space, the model and manufacturer, Conditional Access settings, and more details.
    - **Discovered apps** lists all the apps that Intune found installed on the device, and the app versions. You can also **Export** the app list into a .csv file. This list is updated every 7 days.
    - **Device compliance** lists all assigned compliance policies, and if the device is compliant or not compliant.
    - **Device configuration** shows all device configuration policies assigned to the device, and if the policy succeeded or failed.
