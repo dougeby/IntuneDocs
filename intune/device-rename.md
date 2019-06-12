@@ -32,7 +32,12 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The **Rename device** action lets you rename a corporate-owned Windows device that is enrolled in Intune. The device's name is changed in Intune and on the device. 
+The **Rename device** action lets you rename a device that is enrolled in Intune. The device's name is changed in Intune and on the device.
+
+You can rename the following types of devices:
+- corporate-owned Windows 
+- iOS supervised
+- corporate-owned MacOS 10
 
 This feature doesn't currently support renaming hybrid Azure AD Windows devices.
 
