@@ -425,6 +425,10 @@ Select **OK** to save your changes.
 These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), which also lists the supported Windows editions.
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password.
+
+ > [!Note]
+ > Applies to local accounts only. Domain account passwords remain configured by AD/AAD.
+
   - **Required password type**: Choose the type of password. Your options:
     - **Not configured**: Password can include numbers and letters.
     - **Numeric**: Password must only be numbers.
