@@ -31,13 +31,16 @@ ms.collection: M365-identity-device-management
 
 # MDM security baseline settings for Intune  
 
-View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
+View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
 
 The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)** 
 
 > [!NOTE]  
-> In June of 2019, this security baseline changed from being in preview, to being generally available. Profiles that were created prior to the availability of the MDM Security Baseline for Spring 2019 Update (19H1) baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version that is now generally available version.  
+> In June of 2019, this security baseline changed from being in preview, to being generally available. Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version that is now generally available version.  
+> 
+> View [what's changed](#whats-new-in-the-new-template) between the Preview template and the *MDM Security Baseline for Spring 2019 Update (19H1)* template.
 
+To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md). 
 
    
 ## Above Lock  
@@ -410,8 +413,12 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
 
-- **Explorer internet zone updates to status bar via script**  
-  This policy setting allows you to manage whether script is allowed to update the status bar within the zone. If you enable this policy setting, script is allowed to update the status bar. If you disable or do not configure this policy setting, script is not allowed to update the status bar.  
+- **Internet Explorer restricted zone updates to status bar via script
+**  
+  This policy setting allows you to manage whether script is allowed to update the status bar within the zone. 
+  - *If you enable this policy setting*, script is allowed to update the status bar.
+  - *If you disable or do not configure this policy setting*, script is not allowed to update the status bar.  
+
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067074)  
 
   **Default**: Disabled
@@ -1695,7 +1702,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   
   **Default**: Yes
  
-- **Office communication apps launch I a child process** 
+- **Office communication apps launch in a child process** 
   **Default**:  Enable
 
 - **Office apps executable content creation or launch type**  
@@ -1815,6 +1822,80 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 
   **Default**: Enabled
 
+## What's new in the new template
+The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
+
+### New settings
+The following settings did not appear in the previous template
+
+*[New]* [**Above Lock**](#above-lock):
+-  **Voice activate apps from locked screen**    
+
+*[New]* [**Application Management**](#application-management): 
+- **Block user control over installations**  
+- **Block MSI app installations with elevated privileges**  
+
+*[Removed]* [**Bitlocker**](#bitlocker):  
+- Bit Locker removable drive policy > **Encryption method**
+- **Bit locker fixed drive policy** *(all settings)*
+- **Bit locker system drive policy** *(all settings)*
+
+*[New]* [**Connectivity**](#connectivity):
+- **Configure secure access to UNC paths**
+
+*[New]* [**Device Guard**](#device-guard):
+- **Virtualization based security**
+
+
+*[New]* [**DMA Guard**](#dma-guard):
+- **Enumeration of external devices incompatible with Kernel DMA Protection**  
+
+*[New]* [**Internet Explorer**](#internet-explorer):
+- **Explorer internet zone updates to status bar via script**
+- **Internet Explorer internet zone drag and drop or copy and paste files** 
+- **Internet Explorer restricted zone .NET Framework reliant components**   
+- **Internet Explorer local machine zone do not run antimalware against Active X controls**
+- **Internet Explorer encryption support**  
+
+
+*[New]* [**Remote Assistance**](#remote-assistance):  
+- **Remote Assistance solicited** 
+  - **Remote Assistance solicited permission**
+  - **Maximum ticket time value**  
+  - **Maximum ticket time period**  
+  - **E-Mail invitation method**
+
+
+*[New]* [**WIndows Defender**](#windows-defender):
+- **Adobe Reader Launch in a child process**  
+- **Office communication apps launch in a child process** 
+
+*[New]* [**Windows Defender Firewall**](#windows-defender-firewall)
+- **Firewall profile domain**  
+  - **Inbound connections blocked**  
+  - **Outbound connections required**  
+  - **Inbound notifications blocked**  
+  - **Firewall enabled**  
+- **Firewall profile public**  
+  - **Inbound connections blocked**  
+  - **Outbound connections required**  
+  - **Inbound notifications blocked**  
+  - **Firewall enabled** 
+  - **Connection security rules from group policy not merged**   
+  - **Policy rules from group policy not merged**  
+- **Firewall profile private**  
+  - **Inbound connections blocked**  
+  - **Outbound connections required**  
+  - **Inbound notifications blocked**  
+  - **Firewall enabled**  
+
+*[New]* [**Windows Hello for Business**](#windows-hello-for-business):  
+- **Require enhanced anti-spoofing, when available**  
+- **Configure Windows Hello for Business**  
+- **Require lowercase letters in PIN** 
+- **Require special characters in PIN** 
+- **Minimum PIN length**  
+- **Require uppercase letters in PIN** 
 
 
 

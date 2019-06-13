@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Create a Windows 10 security baseline in Intune
+# Use security baselines to configure Windows 10 devices in Intune
 
 Security baselines are pre-configured groups of settings that help you apply a known group of settings and default values for those settings to the devices you manage that run Windows 10 or later. Use of Intune's security baselines can help you secure and protect your users and devices. This article can help you use security baselines to create a profile, assign the profile, and monitor the profile.
 
