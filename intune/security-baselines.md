@@ -54,9 +54,9 @@ The goal of using security baselines is to provide an end-to-end secure workflow
 
 [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) is a great resource to learn more about this feature. [Mobile device management](https://docs.microsoft.com/windows/client-management/mdm/) (MDM) is a great resource about MDM, and what you can do on Windows devices.
 
-## Available security baselines  
+## Available security baselines 
 
-The following security baselines are available for use with Intune.
+The following security baseline templates are available for use with Intune.
 - **MDM Security Baseline**  
   [View the settings](security-baseline-settings-windows.md)
 
@@ -64,6 +64,7 @@ The following security baselines are available for use with Intune.
   [View the settings](security-baseline-settings-defender-atp.md)  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
 
+You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles. 
 
 ## Prerequisites
 - To manage baselines in Intune, your account must have the [Policy and Profile Manager](role-based-access-control.md#built-in-roles) built-in role.
