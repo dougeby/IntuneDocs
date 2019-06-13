@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 06/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Troubleshoot mobile application management
 
-This topic provides solutions to common problems that have occurred when using Intune mobile application management.
+This topic provides solutions to common problems that have occurred when using Intune App Protection (also referred to as MAM or mobile application management).
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
 
@@ -63,7 +63,15 @@ Common end-user issues are broken down in the following categories:
 Platform | Scenario | Explanation |
 ---| --- | --- |
 iOS | The end-user can use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to **Managed apps only** or **No apps.** Doesn't this leak data? | Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, **Intune encrypts "corporate" data before sharing it outside the app**. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
+iOS | Why is the end-user **prompted to install the Microsoft Authenticator app** | This is needed when App Based Conditional Access is applied, see [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)
 Android | Why does the end-user **need to install the Company Portal app**, even if I'm using MAM app protection without device enrollment?  | On Android, much of app protection functionality is built into the Company Portal app. **Device enrollment is not required even though the Company Portal app is always required**. For app protection without enrollment, the end-user just needs to have the Company Portal app installed on the device.
+iOS/Android | App Protection policy not applied on draft email in the Outlook app | Since Outlook supports both corporate and personal context it does not enforce MAM on draft email.
+iOS/Android | App Protection policy not applied on new documents in WXP (Word,Excel,Powerpoint) | Since WXP supports both corporate and personal context it does not enforce MAM on new documents until they are saved in an identified corporate location like OneDrive
+iOS/Android | Apps not allowing Save As to Local Storage when policy is enabled | The App behavior for this setting is controlled by the App Developer
+Android | Android has more restrictions than iOS on what "native" apps can access MAM protected content | Android is an open platform and the "native" app association can be changed by the end-user to potentially unsafe apps. Apply [Data transfer policy exceptions](app-protection-policies-exception.md) to exempt specific apps.
+Android | Azure Information Protection (AIP) can Save as PDF when Save As is prevented | AIP honors the MAM policy for 'Disable printing' when Save as PDF is used.
+iOS | Opening PDF attachments in Outlook app fails with "Action Not Allowed | This can occur if the user has not authenticated to Acrobat Reader for Intune, or has used thumbprint to authenticate to their organization. Open Acrobat Reader beforehand and authenticate using UPN credentials.
+
 
 ### Normal usage dialogs
 
@@ -87,7 +95,7 @@ Error message or dialog | Cause | Remediation |
 **Device Non-Compliant**: This app cannot be used because you are using a jailbroken device. Contact your IT administrator for help. | Intune detected the user is on a jailbroken device. | Reset the device to default factory settings. Follow [these instructions](https://support.apple.com/HT201274) from the Apple support site.
 **Internet Connection Required**: You must be connected to the Internet to verify that you can use this app. | The device is not connected to the Internet. | Connect the device to a WiFi or Data network.
 **Unknown Failure**: Try restarting this app. If the problem persists, contact your IT administrator for help. | An unknown failure occurred. | Wait a while and try again. If the error persists, create a [support ticket](get-support.md#create-an-online-support-ticket) with Intune.
-**Accessing Your Organization's Data**: The work or school account you specified does not have access to this app. You may have to sign in with a different account. Contact your IT administrator for help. | Intune detects the user attempted to sign in with second work or school account that is different from the MAM enrolled account for the device. Only one work or school account can be managed by MAM at a time per device. | Have the user sign in with the account whose username is pre-populated by the sign-in screen. <br> <br> Or, have the user sign in with the new work or school account and remove the existing MAM enrolled account.
+**Accessing Your Organization's Data**: The work or school account you specified does not have access to this app. You may have to sign in with a different account. Contact your IT administrator for help. | Intune detects the user attempted to sign in with second work or school account that is different from the MAM enrolled account for the device. Only one work or school account can be managed by MAM at a time per device. | Have the user sign in with the account whose username is pre-populated by the sign-in screen. You may need to [configure the user UPN setting for Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) <br> <br> Or, have the user sign in with the new work or school account and remove the existing MAM enrolled account.
 **Connection Issue**: An unexpected connection issue occurred. Check your connection and try again.  |  Unexpected failure. | Wait a while and try again. If the error persists, create a [support ticket](get-support.md#create-an-online-support-ticket) with Intune.
 **Alert**: This app can no longer be used. Contact your IT administrator for more information. | Failure to validate the app's certificate. | Make sure the app version is up-to-date. <br><br> Reinstall the app.
 **Error**: This app has encountered a problem and must close. If this error persists, please contact your IT administrator. | Failure to read the MAM app PIN from the Apple iOS Keychain. | Restart the device. Make sure the app version is up-to-date. <br><br> Reinstall the app.
@@ -108,6 +116,7 @@ Dialog/Error message | Cause | Remediation |
 ## Next steps
 
 - [Validating your mobile application management setup](app-protection-policies-validate.md)
+- Learn how to use log files to troubleshoot Intune App Protection policy, see [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - For additional Intune troubleshooting information, see [Use the troubleshooting portal to help users at your company](help-desk-operators.md). 
 - Learn about any known issues in Microsoft Intune. For more information, see [Known issues in Microsoft Intune](known-issues.md).
 - Need extra help? See [How to get support for Microsoft Intune](get-support.md).
