@@ -42,7 +42,7 @@ Lookout’s mobile app, **Lookout for work**, is installed and run on mobile dev
 
 The compliance policy in Intune includes a rule for Lookout Mobile Threat Defense based on Lookout risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 
-If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online can blocked. Users on blocked devices receive a steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
+If the device is found noncompliant, access to resources like Exchange Online and SharePoint Online can be blocked. Users on blocked devices receive steps to resolve the issue and regain access. Guidance is launched from the Lookout for work app.
 
 ## Supported platforms  
 The following platforms are supported for Lookout when enrolled in Intune:
