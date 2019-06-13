@@ -72,15 +72,15 @@ The ability to allow or block personally owned devices is now managed under the 
 
 New restriction capabilities are added to the Azure portal only.
 
-## Where did my conditional access policies go?
-After your tenant migrates to the Azure portal, your tenant's conditional access policies continue to be enforced. However, you are not able to view or modify them from Intune in the Azure portal.
+## Where did my Conditional Access policies go?
+After your tenant migrates to the Azure portal, your tenant's Conditional Access policies continue to be enforced. However, you are not able to view or modify them from Intune in the Azure portal.
 
-If you would like to view and make changes to conditional access policies from the Azure portal, you will need to remove the old policies from the classic portal. Then recreate them in the Azure portal. For more information about migrating conditional access policies, see [Migrate classic policies in the Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
+If you would like to view and make changes to Conditional Access policies from the Azure portal, you will need to remove the old policies from the classic portal. Then recreate them in the Azure portal. For more information about migrating Conditional Access policies, see [Migrate classic policies in the Azure Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## Where did my compliance policies go?
 After your tenant migrates to the Azure portal, your tenant's compliance policies continue to be enforced. However, you are not able to view or modify them from Intune in the Azure portal.
 
-If you would like to view and make changes to compliance policies from the Azure portal, you will need to remove the old policies from the classic portal. Then recreate them in the Azure portal. For more information about device compliance policies, see [Get started with device compliance policies in Intune](https://docs.microsoft.com/intune/known-issues#compliance). 
+If you would like to view and make changes to compliance policies from the Azure portal, you will need to remove the old policies from the classic portal. Then recreate them in the Azure portal. For more information about device compliance policies, see [Get started with device compliance policies in Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
 
 ## Where did Apple DEP go?
 In the classic portal, you could set up Intune to integrate with Apple’s Device Enrollment Program and manually request synchronization with Apple’s service:

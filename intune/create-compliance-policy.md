@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device compliance policies in Microsoft Intune - Azure | Microsoft Docs
-description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
+description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with Conditional Access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a minimum OS version. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md).
+Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a minimum OS version. If the device isn't compliant, you can then block access to data and resources using [Conditional Access](conditional-access.md).
 
 You can also take actions for non-compliance, such as sending a notification email to the user. For an overview of what compliance policies do, and how they're used, see [get started with device compliance](device-compliance-get-started.md).
 
@@ -48,7 +48,7 @@ To use device compliance policies, be sure you:
 - Use the following subscriptions:
 
   - Intune
-  - If you use conditional access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions. Intune compliance doesn't require Azure AD.
+  - If you use Conditional Access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions. Intune compliance doesn't require Azure AD.
 
 - Use a supported platform:
 

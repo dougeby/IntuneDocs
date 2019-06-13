@@ -73,7 +73,7 @@ Devices configured with user affinity can install and run the Company Portal app
 
 User affinity is required to support the following:
   - Mobile application management (MAM) apps
-  -	Conditional access to email and company data
+  -	Conditional Access to email and company data
   -	Company Portal app
 
 **How users enroll corporate-owned iOS devices with user affinity**

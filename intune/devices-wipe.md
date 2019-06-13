@@ -127,7 +127,7 @@ You can only wipe kiosk devices. You can't retire Android kiosk devices.
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates that were deployed through MDM are removed and revoked.|
 |Management agent|The management profile is removed.|
-|Outlook|If conditional access is enabled, the device doesn't receive new mail.|
+|Outlook|If Conditional Access is enabled, the device doesn't receive new mail.|
 |Azure AD unjoin|The Azure AD record is removed.|
 
 ### Windows

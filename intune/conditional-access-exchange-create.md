@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Create Exchange conditional access policy
+title: Create Exchange Conditional Access policy
 titleSuffix: Microsoft Intune
-description: Configure conditional access for Exchange on-premises and legacy Exchange Online Dedicated in Intune.
+description: Configure Conditional Access for Exchange on-premises and legacy Exchange Online Dedicated in Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -28,17 +28,17 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Create a conditional access policy for Exchange on-premises and legacy Exchange Online Dedicated
+# Create a Conditional Access policy for Exchange on-premises and legacy Exchange Online Dedicated
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article shows you how to configure conditional access for Exchange on-premises based on device compliance.
+This article shows you how to configure Conditional Access for Exchange on-premises based on device compliance.
 
-If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, contact your account manager. To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure conditional access to Exchange on-premises in Intune.
+If you have an Exchange Online Dedicated environment and need to find out whether it is in the new or the legacy configuration, contact your account manager. To control email access to Exchange on-premises or to your legacy Exchange Online Dedicated environment, configure Conditional Access to Exchange on-premises in Intune.
 
 ## Before you begin
 
-Before you can configure conditional access, verify the following configurations exist:
+Before you can configure Conditional Access, verify the following configurations exist:
 
 - Your Exchange version is **Exchange 2010 SP1 or later**. Exchange server Client Access Server (CAS) array is supported.
 
@@ -53,7 +53,7 @@ Before you can configure conditional access, verify the following configurations
 
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
-- When conditional access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
+- When Conditional Access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
 	- Either **enrolled** with Intune or is a domain joined PC.
 	- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 <br></br>
@@ -61,7 +61,7 @@ Before you can configure conditional access, verify the following configurations
 
 - **Compliant** with device compliance policies deployed to that device.
 
-- If the device doesn't meet conditional access settings, the user is presented with one of the following messages when they sign in:
+- If the device doesn't meet Conditional Access settings, the user is presented with one of the following messages when they sign in:
 	- If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
 	- If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
@@ -70,7 +70,7 @@ Before you can configure conditional access, verify the following configurations
 - Windows Phone 8.1 and later
 - Native email app on iOS.
 - EAS mail clients such as Gmail on Android 4 or later.
-- EAS mail clients **Android work profile devices:** Only **Gmail** and **Nine Work for Android Enterprise** in the **work profile** are supported on Android work profile devices. For conditional access to work with Android work profiles, you must deploy an email profile for the Gmail or Nine Work for Android Enterprise app, and also deploy those apps as a required installation.
+- EAS mail clients **Android work profile devices:** Only **Gmail** and **Nine Work for Android Enterprise** in the **work profile** are supported on Android work profile devices. For Conditional Access to work with Android work profiles, you must deploy an email profile for the Gmail or Nine Work for Android Enterprise app, and also deploy those apps as a required installation.
 
 > [!NOTE]
 > Microsoft Outlook for Android and iOS is not supported via the Exchange on-premises connector. If you want to leverage Azure Active Directory Conditional Access policies and Intune App Protection Policies with Outlook for iOS and Android for your on-premises mailboxes, please see [Using hybrid Modern Authentication with Outlook for iOS and Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
@@ -88,7 +88,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Choose **On-premises access**. The **On-premises access** pane shows the status of the conditional access policy and the devices that are affected by it.
+4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Conditional Access policy and the devices that are affected by it.
 
 5. Under **Manage**, choose **Exchange on-premises access**.
 
@@ -97,7 +97,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
    > [!NOTE]
    > The option to enable access is disabled until after you [install and configure at least one Intune on-premises Exchange connector](exchange-connector-install.md) for Exchange on-premises.  
 
-7. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have conditional access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
+7. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have Conditional Access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
 
 8. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
 
@@ -107,27 +107,27 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 10. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps. To get to the advanced settings pane, on the *Exchange access - Exchange on-premises access* view, select *Exchange ActiveSync - on-premises connector*.
 
-11. For a device that is not affected by conditional access or other rules, you can choose to allow it to access Exchange, or block it.
+11. For a device that is not affected by Conditional Access or other rules, you can choose to allow it to access Exchange, or block it.
 
     - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
     - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
 
 12. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-13. On the **On-premises** pane, click **Save** to save the conditional access policy.
+13. On the **On-premises** pane, click **Save** to save the Conditional Access policy.
 
-## Create Azure AD Conditional access policies in Intune
+## Create Azure AD Conditional Access policies in Intune
 
 Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
 > [!IMPORTANT]
-> You need to have an Azure AD Premium license to create Azure AD conditional access policies from the Intune Azure portal.
+> You need to have an Azure AD Premium license to create Azure AD Conditional Access policies from the Intune Azure portal.
 
-### To create a conditional access policy
+### To create a Conditional Access policy
 
-1. In the **Intune Dashboard**, select **Conditional access**.
+1. In the **Intune Dashboard**, select **Conditional Access**.
 
-2. In the **Policies** pane, select **New policy** to create your new Azure AD conditional access policy.
+2. In the **Policies** pane, select **New policy** to create your new Azure AD Conditional Access policy.
 
 ## See also
 
