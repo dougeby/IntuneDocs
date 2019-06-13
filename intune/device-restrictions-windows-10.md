@@ -65,7 +65,7 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 
   - **Not configured** (default): Allows end users to install apps from places other than the Microsoft Store, including apps defined in other policy settings.  
   - **Anywhere**: Turns off app recommendations, and allows users to install apps from any location.  
-  - **Store Only**: Forces end users to only install apps from the Windows App Store.
+  - **Store Only**: Forces end users to only install apps from the Microsoft Store.
   - **Recommendations**: When installing an app from the web that’s available in the Microsoft Store, users see a message recommending they download it from the store.  
   - **Prefer Store**: Warns users when they install apps from places other than the Microsoft Store.
 
