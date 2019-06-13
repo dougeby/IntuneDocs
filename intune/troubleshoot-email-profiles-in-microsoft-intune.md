@@ -31,9 +31,16 @@ ms.collection: M365-identity-device-management
 
 Review some common email profile issues, and how to troubleshoot and resolve them.
 
+- Email profiles can only be deployed for the user who enrolled the device. Intune uses the AAD attributes (specified in the email profile) of the user during enrollment to configure the email profile.
+- After migrating from CM hybrid to Intune Standalone, the email profile from CM hybrid stays on the device for 7 days. This is expected behavior. Contact support if you need the email profile removed sooner.
+- For Android Enterprise, ensure you have also deployed Gmail or Nine for Work using the Managed Play Store [Add Managed Google Play apps](apps-add-android-for-work.md)
+- Microsoft Outlook for iOS and Android doesn't support email profiles, instead deploy an app configuration policy, see [Outlook Configuration setting](app-configuration-policies-outlook.md)
+- Email profile targeted to device group isn't delivered to the device. As long as the device has an associated primary user then device targeting will work. However if the email profile contains user certificates then you will need to target user groups. 
+- Users are prompted repeatedly to enter their password for the email profile. Check all the certs in the chain that is referenced in the email profile. If one of the certs is not targeted to the user, then the Intune service will keep retrying the email profile.
+
 ## Device already has an email profile installed
 
-If users create an email profile before enrolling in Intune, the Intune email profile may not work as expected:
+If users create an email profile before enrolling in Intune or Office 365 MDM, the email profile deployed by Intune may not work as expected:
 
 - **iOS**: Intune detects an existing, duplicate email profile based on hostname and email address. The user-created email profile blocks the deployment of the Intune-created profile. This is a common problem as iOS users typically create an email profile, then enroll. The Company Portal app states that the user isn't compliant, and may prompt the user to remove the email profile.
 
@@ -53,19 +60,17 @@ Review the configuration of your EAS profile for Samsung KNOX and source policy.
 
 ## Unable to send images from  email account
 
-Applies to Intune in the Azure classic portal.
-
 Users who have email accounts automatically configured can't send pictures or images from their devices. This scenario can happen if **Allow e-mail to be sent from third-party applications** isn't enabled.
 
 ### Intune solution
 
-1. Open the Microsoft Intune Administration Console, select **Policy** workload > **Configuration Policy**.
+1. Open the Microsoft Intune Console, select  **Device Configuration** workload.
 
 2. Select the email profile and choose **Edit**.
 
-3. Select **Allow e-mail to be sent from third-party applications.**
+3. Enable the setting **Allow e-mail to be sent from third-party applications.**
 
-### Configuration Manager integrated with Intune solution
+### Configuration Manager hybrid
 
 1. Open the Configuration Manager console > **Assets and Compliance**.
 
