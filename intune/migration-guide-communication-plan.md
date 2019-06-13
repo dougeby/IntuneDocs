@@ -38,7 +38,7 @@ We recommend the following email communication plan. We’ve provided templates 
 - **Email #1**: Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune. 
 
 - **Email #2**: Announce that services are now ready for access through Intune. Tell users to enroll now.  Give users a timeline before their access is affected. Remind users of benefits and strategic reasons for migration.
-After a certain period, you can begin enforcing compliance through conditional access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md).
+After a certain period, you can begin enforcing compliance through Conditional Access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md).
 
 ## Intune Enrollment Guide 
 This PDF attachment can be provided to your users as-is, or you may customize the Word version to include your internal resources and contact information.

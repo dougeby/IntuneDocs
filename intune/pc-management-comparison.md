@@ -37,7 +37,7 @@ Organizations can use Microsoft Intune to manage Windows PCs either as mobile de
 |--------------|-------------------------------|-------------------------------|
 |**Operating systems** |Windows 10, Windows 8+, Windows 7, Windows Vista | Windows 10+ |
 |**Intune Portal support** |[Silverlight console](https://manage.microsoft.com)|[Azure portal](https://portal.azure.com) |
-|**Conditional access**|Not available|Available <br>[What is conditional access?](conditional-access.md)|
+|**Conditional Access**|Not available|Available <br>[What is Conditional Access?](conditional-access.md)|
 |**Bulk enrollment**|Not available|Available <br>[Bulk enrollment for Windows devices](windows-bulk-enroll.md)|
 |**Device profiles**|Not available|Available <br>[What are Microsoft Intune device profiles?](device-profiles.md)|
 |**Agentless enrollment**|Not available |Available<br>[Enroll Windows devices](windows-enroll.md)|
