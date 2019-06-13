@@ -117,7 +117,7 @@ For more information about the above tasks, see [common computer management task
 Some management options, which can be used to manage PCs as mobile devices, cannot not used for PCs that are managed with the Intune client software:
 
 -   Full wipe (selective wipe is available)
--   Conditional access
+-   Conditional Access
 
 Also note that in the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
 

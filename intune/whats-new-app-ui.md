@@ -260,7 +260,7 @@ Additional steps have been improved on Android work profile devices.
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *Combined with previous step* |
 
 
-We've also updated the conditional access email activation screen.
+We've also updated the Conditional Access email activation screen.
 
 |Before|After|
 |---|---|
@@ -285,7 +285,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 
 ### iOS 11 Mail app will support OAuth <!-- 1196951 -->
 
-Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+Conditional Access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
 ![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
 
