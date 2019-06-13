@@ -38,7 +38,7 @@ The most recent baseline version is **MDM Security Baseline for Spring 2019 Upda
 > [!NOTE]  
 > In June of 2019, this security baseline changed from being in preview, to being generally available. Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version that is now generally available version.  
 > 
-> View [what's changed](#whats-new-in-the-new-template) between the Preview template and the *MDM Security Baseline for Spring 2019 Update (19H1)* template.
+> View [what's changed](#whats-changed-in-the-new-template) between the Preview template and the *MDM Security Baseline for Spring 2019 Update (19H1)* template.
 
 To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md). 
 
@@ -1822,7 +1822,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 
   **Default**: Enabled
 
-## What's new in the new template
+## What's changed in the new template
 The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
 
 ### New settings
@@ -1857,6 +1857,8 @@ The following settings did not appear in the previous template
 - **Internet Explorer local machine zone do not run antimalware against Active X controls**
 - **Internet Explorer encryption support**  
 
+*[Revised]* [**Internet Explorer**](#internet-explorer):
+- **Internet Explorer internet zone automatic prompt for file downloads** > *The default value is now **Disabled**. In preview this was set to Enabled.*
 
 *[New]* [**Remote Assistance**](#remote-assistance):  
 - **Remote Assistance solicited** 
