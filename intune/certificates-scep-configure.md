@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/13/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -71,7 +71,7 @@ We highly recommend publishing the NDES server through a reverse proxy, such as 
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server. If the certificate has the client and server authentication key usages set (**Enhanced Key Usages**), then you can use the same certificate.|
-|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /> **NOTE:<br />When a SCEP certificate profile is assigned, be sure to assign the *trusted root certificate profile* referenced in your SCEP certificate profile to the same user or device group.  To create this profile, see [Create a trusted certificate profile](certficates-pfx-configure.md#create-a-trusted-certificate-profile), which is documented in the article on PKCS certificate profiles.** <br/><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each trusted root certificate profile you create. <br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
@@ -490,7 +490,7 @@ To validate that the service is running, open a browser, and enter the following
      - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
    - **Key size (bits)**: Select the number of bits contained in the key
    - **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
-   - **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user and/or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile. Be sure to assign this trusted root certificate profile to the same group assigned in the SCEP certificate profile.
+   - **Root Certificate**: Choose a [trusted root certificate profile](certficates-pfx-configure.md#create-a-trusted-certificate-profile) that you previously created, and assigned to the user and/or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile. Be sure to assign this trusted root certificate profile to the same group assigned in the SCEP certificate profile.
    - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
    - **Enrollment Settings**
      - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
