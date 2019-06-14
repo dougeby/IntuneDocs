@@ -48,7 +48,7 @@ Here's a list of table templates for each section.
 | |  Email Profile | |
 | | Applications | |
 | | Compliance policy | |
-| | Conditional access policy|-|
+| | Conditional Access policy|-|
 
 
 ## Further reading

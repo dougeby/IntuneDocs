@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 You may want to block access to a corporate network if a device leaves a location. The **Locations** feature in Intune provides this functionality. 
 
-You can create a network location-based compliance policy, also known as network fencing. The policy ensures devices must be connected to a work network to be compliant. This policy can be used with conditional access policies so devices have access to work resources *only* when the device is connected to the work network. When the device isn't connected to the work network, the device becomes not compliant, and loses access to work resources.
+You can create a network location-based compliance policy, also known as network fencing. The policy ensures devices must be connected to a work network to be compliant. This policy can be used with Conditional Access policies so devices have access to work resources *only* when the device is connected to the work network. When the device isn't connected to the work network, the device becomes not compliant, and loses access to work resources.
 
 Consider the following scenario:
 

@@ -270,7 +270,7 @@
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
-      href: device-profile-android-teamviewer.md
+      href: teamviewer-support.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
     - name: Synchronize device
@@ -376,22 +376,22 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
-    - name: Conditional access
+    - name: Conditional Access
       href: conditional-access.md
       items:
-      - name: Common ways to use conditional access
+      - name: Common ways to use Conditional Access
         href: conditional-access-intune-common-ways-use.md
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
-      - name: Create and assign conditional access policy
+      - name: Create and assign Conditional Access policy
         href: conditional-access-exchange-create.md
-      - name: Device-based conditional access policy
+      - name: Device-based Conditional Access policy
         href: create-conditional-access-intune.md
-      - name: Reassign conditional access policies from Intune classic portal
+      - name: Reassign Conditional Access policies from Intune classic portal
         href: conditional-access-intune-reassign.md
-      - name: App-based conditional access
+      - name: App-based Conditional Access
         href: app-based-conditional-access-intune.md
-      - name: Set up app-based conditional access
+      - name: Set up app-based Conditional Access
         href: app-based-conditional-access-intune-create.md
       - name: ADAL and Intune
         href: app-modern-authentication-block.md
@@ -669,7 +669,7 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint protection common errors 
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Troubleshoot conditional access
+      - name: Troubleshoot Conditional Access
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -61,7 +61,16 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 - **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
 - **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
 - **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
-- **Apps from the store only**: **Require** forces end users to only install apps from the Windows App Store. **Not configured** allows end users to install apps from places other than the Windows App Store.
+- **Apps from store only**: This setting determines the user experience when users install apps from places other than the Microsoft Store. Your options:
+
+  - **Not configured** (default): Allows end users to install apps from places other than the Microsoft Store, including apps defined in other policy settings.  
+  - **Anywhere**: Turns off app recommendations, and allows users to install apps from any location.  
+  - **Store Only**: Forces end users to only install apps from the Microsoft Store.
+  - **Recommendations**: When installing an app from the web that’s available in the Microsoft Store, users see a message recommending they download it from the store.  
+  - **Prefer Store**: Warns users when they install apps from places other than the Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Force restart apps on update failure**: When an app is being used, it may not update. Use this setting to force an app to restart. **Not configured** (default) doesn't force the apps to restart. **Require** allows administrators to force a restart on a specific date and time, or on a recurring schedule. When set to **Require**, also enter:
 
   - **Start Date/Time**: Choose a specific date and time to restart the apps.
@@ -434,9 +443,9 @@ These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/window
     > [!IMPORTANT]
     > When the password requirement is changed on a Windows desktop, users are impacted the next time they sign in, as that’s when the device goes from idle to active. Users with passwords that meet the requirement are still prompted to change their passwords.
     
-  - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device is wiped, from 1-11. `0` (zero)  may disable the device wipe functionality.
+  - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device may be wiped, up to 11. The valid number you enter depends on the edition. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lists the supported values. `0` (zero) may disable the device wipe functionality.
 
-    This setting has a different impact depending on the edition. For specific details, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    This setting also has a different impact depending on the edition. For specific details on this setting, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Maximum minutes of inactivity until screen locks**: Enter the length of time a device must be idle before the screen is locked.
   - **Password expiration (days)**: Enter the length of time in days when the device password must be changed, from 1-365. For example, enter `90` to expire the password after 90 days.

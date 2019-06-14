@@ -35,7 +35,7 @@ ms.collection: M365-identity-device-management
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-The Enrollment status page displays installation information about Windows 10 devices during initial device enrollment, for example, Autopilot and also when a user uses a managed device for the first time that has the Enrollment status page policy already applied.  The Enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups that contain users. Profiles can be set to:
+The Enrollment status page displays installation information about Windows 10 devices (version 1803 and onwards) during initial device enrollment, for example, Autopilot and also when a user uses a managed device for the first time that has the Enrollment status page policy already applied.  The Enrollment status page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups that contain users. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
@@ -44,6 +44,23 @@ You can also set the priority order for each profile to account for conflicting 
 
 > [!NOTE]
 > The Enrollment status page can only be targeted to a user who belongs to an assigned group and the policy is set on the device at the time of enrollment for all users that use the device.  
+
+## Available settings
+
+ The following settings can be configured to customize behavior of the enrollment status page:
+
+<table>
+<th align="left">Setting<th align="left">Yes<th align="left">No
+<tr><td>Show app and profile installation progress<td>The enrollment status page is displayed.<td>The enrollment status page is not displayed.
+<tr><td>Block device use until all apps and profiles are installed<td>The settings in this table are made available to customize behavior of the enrollment status page, so that the user can address potential installation issues.
+<td>The enrollment status page is displayed with no additional options to address installation failures.
+<tr><td>Allow users to reset device if installation error occurs<td>A <b>Reset device</b> button is displayed if there is an installation failure.<td>The <b>Reset device</b> button is not displayed if there is an installation failure.
+<tr><td>Allow users to use device if installation error occurs<td>A <b>Continue anyway</b> button is displayed if there is an installation failure.<td>The <b>Continue anyway</b> button is not displayed if there is an installation failure.
+<tr><td>Show timeout error when installation takes longer than specified number of minutes<td colspan="2">Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
+<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><b>Installation exceeded the time limit set by your organization. Please try again or contact your IT support person for help.<b>
+<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
+<tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <b>All</b> or <b>Selected</b>. <br><br>If <b>Selected</b> is chosen, a <b>Select apps</b> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
+</table>
 
 ## Turn on default enrollment status page for all users
 
