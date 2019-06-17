@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -83,6 +83,19 @@ Your organization might deploy some apps directly to your device and mark them a
 If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).    
 
   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+## View installed apps  
+View a list of all apps installed on your device. The **Installed Apps** page lists the following details about each app:
+
+* Name: The name of the app. Available apps include a link to the **App Details** page.
+* Assignment type: How the app is assigned and made available to you. 
+* Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
+* Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
+* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
+
+To see your apps go to the navigation menu, and under **Apps** select **Installed Apps**. If you're already on the **Apps** page, select the **Installed** tab. Use **Sort By** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter By** to limit the apps you see by installation status.  
+
+If no apps are available, you'll receive a message that no company apps were installed.  
 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
