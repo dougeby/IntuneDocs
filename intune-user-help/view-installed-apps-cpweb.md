@@ -33,11 +33,11 @@ ms.collection: M365-identity-device-management
 Visit the [Company Portal website](https://portal.manage.microsoft.com) > **Installed Apps** page to view a list of all apps installed on your device. The page lists the following details about each app:
 
 * Name: The name of the app, with a link to the app's details page.
-* Assignment type: The kind of app assignment. Your organization can either make an app available for you to install yourself, or they can require and install an app on your device automatically.  
+* Assignment type: How the app is assigned and made available to you. Your organization can either make an app available for you to install yourself, or they can require and install an app on your device automatically.  
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
 * Status: The current installation status of the app on your device.  
 
-Use **Sort By** to rearrange the apps by name, assignment type, publisher, or chronologically by publish date. Use **Filter By** to view only apps that have a specific status.   
+Use **Sort By** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter By** to limit the apps you see by installation status.      
 
 Need additional help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
