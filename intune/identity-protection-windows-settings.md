@@ -126,12 +126,13 @@ To learn more about Windows Hello for Business profiles in Intune, see [configur
 
     **Default**: Not configured
 
-- **Certificate for on-premise resources**: 
+  - **Certificate for on-premise resources**: 
 
-  - **Enable** - Allows Windows Hello for Business to use certificates to authenticate to resources on-premises.
-  - **Not configured** - Prevents Windows Hello for Business from using certificates to authenticate to resources on-premises. Instead, devices use the default behavior of *key-trust on-premises authentication*. For more information, see [User certificate for on-premises authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in the Windows Hello documentation.  
+    - **Enable** - Allows Windows Hello for Business to use certificates to authenticate to resources on-premises.
+    - **Not configured** - Prevents Windows Hello for Business from using certificates to authenticate to resources on-premises. Instead, devices use the default behavior of *key-trust on-premises authentication*. For more information, see [User certificate for on-premises authentication](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in the Windows Hello documentation.  
 
   **Default**: Not configured
+
 - **Use security keys for sign-in**. This setting is available for devices that run Windows 10 version 1903 or later. Use it to manage support for using Windows Hello security keys for sign-in.  
   - **Enabled** - Users can use a Windows Hello security key as a logon credential for PCs targeted with this policy. 
   - **Disabled** - Security keys are disabled and users cannot use them to sign in to PCs.   
