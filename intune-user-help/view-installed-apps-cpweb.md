@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# View list of all installed apps on your device
+# View list of installed apps  
 Visit the [Company Portal website](https://portal.manage.microsoft.com) > **Installed Apps** page to view a list of all apps installed on your device. The page lists the following details about each app:
 
 * Name: The mane of the app, with a link to the app's details page.
