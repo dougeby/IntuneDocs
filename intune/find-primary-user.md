@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 # Find the primary user of an Intune device
 
 Primary User, also known as User Device Affinity, is a property of each Intune device. 
-An Intune device can have zero or one primary user assigned to it. When there is no Primary User assigned, the device is referred to as a "Shared Device".
+An Intune device can have zero or one primary user assigned to it. When there's no Primary User assigned, the device is referred to as a "Shared Device".
 
 ## How to find a device's primary user
 
@@ -42,7 +42,7 @@ An Intune device can have zero or one primary user assigned to it. When there is
 ## What is the primary user?
 The primary user property is used to map a licensed Intune user to their devices in:
 - the Company Portal app
-- End user website
+- End-user website
 - IT pro experiences, like troubleshooting pages in the Azure portal. These pages map user accounts to devices by using the primary user.    
 
 ### Company Portal app
@@ -52,7 +52,7 @@ The Company Portal app expects that the user account that signed in to the Compa
 
 If an Intune device has no primary user assigned, then the Company Portal app treats this device as operating in a “shared” mode. Devices in shared mode are visually identifiable with a “shared” label appearing on the device tile. In this mode, the Company Portal can still be used to request and install available apps. However, self-service actions (reset/rename/retire) aren't available.  
 
-To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They will be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](https://docs.microsoft.com/en-us/intune/apps-windows-10-app-deploy#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
+To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They'll be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](https://docs.microsoft.com/en-us/intune/apps-windows-10-app-deploy#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
 
 
 ## Who is assigned as the primary user?
@@ -77,7 +77,7 @@ Intune automatically adds primary user to devices during or soon after enrollmen
 | Android | Android Corporate-Owned, Dedicated devices | None | Not applicable |
 
 ## Primary user and Azure AD device owner
-In some cases, the Intune primary user may be different from the Azure AD Device’s **Owner** property that is viewable under **Devices** > **Azure AD Devices**. The Azure AD Device owner is added during a device’s registration into Azure Active Directory.
+In some cases, the Intune primary user may be different from the Azure AD Device’s **Owner** property (viewable under **Devices** > **Azure AD Devices**). The Azure AD Device owner is added during a device’s registration into Azure Active Directory.
 
 ## Next steps
 [Manager your Intune devices.](device-management.md)
