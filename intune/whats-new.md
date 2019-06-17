@@ -33,7 +33,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 > [!Note]
 > Each monthly update may take up to 48 hours to rollout and will be in the following order:
-> - Day 1: Asia Pacfici (APAC)
+> - Day 1: Asia Pacific (APAC)
 > - Day 2: Europe, Middle East, Africa (EMEA)
 > - Day 3: North America
 > 
