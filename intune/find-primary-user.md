@@ -41,7 +41,7 @@ An Intune device can have zero or one primary user assigned to it. When there's 
 
 ## What is the primary user?
 The primary user property is used to map a licensed Intune user to their devices in:
-- the Company Portal app
+- The Company Portal app
 - End-user website
 - IT pro experiences, like troubleshooting pages in the Azure portal. These pages map user accounts to devices by using the primary user.    
 
@@ -50,7 +50,7 @@ The Company Portal app expects that the user account that signed in to the Compa
 
 “This device is already assigned to someone in your organization. Contact company support about becoming the primary device user. You can continue to use Company Portal but functionality will be limited.”
 
-If an Intune device has no primary user assigned, then the Company Portal app treats this device as operating in a “shared” mode. Devices in shared mode are visually identifiable with a “shared” label appearing on the device tile. In this mode, the Company Portal can still be used to request and install available apps. However, self-service actions (reset/rename/retire) aren't available.  
+If an Intune device has no primary user assigned, then the Company Portal app detects it as a shared device. Shared devices are visually identifiable with a “shared” label appearing on the device tile. In this mode, the Company Portal can still be used to request and install available apps. However, self-service actions (reset/rename/retire) aren't available.  
 
 To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They'll be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
 
@@ -71,7 +71,7 @@ Intune automatically adds primary user to devices during or soon after enrollmen
 | Windows | Azure AD join (bulk enrollment token) | None | Not applicable | 
 | Windows | Azure AD join (Autopilot self-deploying mode) | None | Not applicable | 
 | Cross-platform | User driven enrollment with Company Portal App | Enrolling user | During enrollment |
-| iOS, macOS| Device Enrollment Manager (DEM) | Enrolling DEM user | During enrollment |
+| Cross-platform | Device Enrollment Manager (DEM) | Enrolling DEM user | During enrollment |
 | iOS, macOS | Apple Automated Device Enrollment (DEP with User Affinity | Enrolling user | During enrollment |
 | iOS, macOS | Apple Automated Device Enrollment (DEP without User Affinity) | None | Not applicable |
 | Android | Android Corporate-Owned, Dedicated devices | None | Not applicable |
@@ -80,4 +80,4 @@ Intune automatically adds primary user to devices during or soon after enrollmen
 In some cases, the Intune primary user may be different from the Azure AD Device’s **Owner** property (viewable under **Devices** > **Azure AD Devices**). The Azure AD Device owner is added during a device’s registration into Azure Active Directory.
 
 ## Next steps
-[Manager your Intune devices.](device-management.md)
+[Manage your Intune devices.](device-management.md)
