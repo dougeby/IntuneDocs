@@ -83,6 +83,8 @@ Depending on the carrier used by the devices, not all details might be collected
 |Operating system|The operating system used on the device.|Windows, iOS|
 |Operating system version|The version of the operating system on the device.|Windows, iOS|
 |Operating system language|The language set for the operating system on the device.|Windows, iOS|
+|Build number|The operating system's build number|Android|
+|Security patch level|The security patch level for the device|Android|
 |Total storage space|The total storage space on the device (in gigabytes).|Windows, iOS|
 |Free storage space|The unused storage space on the device (in gigabytes).|Windows, iOS|
 |IMEI|The device's International Mobile Equipment Identity.|Windows, iOS, Android|
