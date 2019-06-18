@@ -93,10 +93,11 @@ View a list of all apps installed on your device. The **Installed Apps** page li
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
 * Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
 
-Use **Sort By** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter By** to limit the apps you see by installation status. 
+To get to this page, go to the navigation menu, and select **Installed Apps**. 
 
-### Get to Installed Apps page  
-To see your apps, go to the navigation menu, and under **Apps** select **Installed Apps**. If you're already on the **Apps** page, select the **Installed** tab. If no apps are available, you'll see a message that no company apps were installed.  
+  ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-CP-1906.png)  
 
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Use **Sort By** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter By** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
+
+Need additional help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
