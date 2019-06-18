@@ -664,10 +664,6 @@
         href: troubleshoot-policies-in-microsoft-intune.md        
       - name: Email profile issues and resolutions 
         href: troubleshoot-email-profiles-in-microsoft-intune.md
-      - name: Troubleshoot software updates
-        href: troubleshoot-software-updates-in-microsoft-intune.md
-      - name: Endpoint protection common errors 
-        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
       - name: Troubleshoot Conditional Access
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
@@ -970,6 +966,10 @@
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Resolve policy conflicts
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+      - name: Troubleshoot software updates
+        href: troubleshoot-software-updates-in-microsoft-intune.md
+      - name: Endpoint protection common errors 
+        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online
