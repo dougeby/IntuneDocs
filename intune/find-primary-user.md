@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Find the Primary User of a Microsoft Intune device
+title: Find the primary user of a Microsoft Intune device.
 titleSuffix:
-description: Find the Primary user (or User Device Affinity) of an Intune device.
+description: Find the primary user (or User Device Affinity) of an Intune device.
 keywords:
 author: ErikjeMS
 ms.author: erikje
@@ -52,7 +52,7 @@ The Company Portal app expects that the user account that signed in to the Compa
 
 If an Intune device has no primary user assigned, then the Company Portal app treats this device as operating in a “shared” mode. Devices in shared mode are visually identifiable with a “shared” label appearing on the device tile. In this mode, the Company Portal can still be used to request and install available apps. However, self-service actions (reset/rename/retire) aren't available.  
 
-To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They'll be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](https://docs.microsoft.com/en-us/intune/apps-windows-10-app-deploy#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
+To appear in the Company Portal on shared devices, available apps must be assigned to a user group. They'll be installed in the system context or user context, depending on how the app was configured by the IT administrator. For more information about app context, see [Installing apps on Windows 10 devices](apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Company Portal version 10.3.4651.0 or later is required to use this feature.
 
 
 ## Who is assigned as the primary user?
