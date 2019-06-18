@@ -65,7 +65,7 @@ The Intune management extension has the following prerequisites. Once these are 
     
     - User signs in to the device using their Azure AD account, and then enrolls in Intune.
 
-  - Co-managed devices that use Configuration Manager and Intune. See [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) for guidance.
+  - Co-managed devices that use Configuration Manager and Intune. Requires that the Client Apps workload is enabled. See [What is co-management](https://docs.microsoft.com/sccm/comanage/overview) for guidance.
 
 ## Create a script policy 
 
