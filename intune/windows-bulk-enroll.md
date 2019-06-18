@@ -27,9 +27,7 @@ ms.collection: M365-identity-device-management
 ---
 # Bulk enrollment for Windows devices
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
+As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to sign in.
 
 Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Windows devices that are enrolled into Intune using Windows bulk enrollment can use the Company Portal app to install available apps. 
 
@@ -53,6 +51,7 @@ Azure AD users are standard users on these devices and receive assigned Intune p
    ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
 4. Enter a unique name for your devices. Names can include a serial number (%SERIAL%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
+   
    ![Screenshot of specifying name and product key in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
 5. Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.
