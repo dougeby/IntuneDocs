@@ -2,7 +2,7 @@
 # required metadata
 
 title: Company Portal messages users may see on devices 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Understand the different messages that end users may see in the Company Portal.
 keywords:
 author: lenewsad
@@ -10,7 +10,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -62,7 +61,7 @@ If users allow, but then later deny access, the message appears the next time us
 If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and turn it on.
 
 ### How to explain this to your users
-Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-your-device-in-intune-android) for more information.
+Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-device-android-company-portal) for more information.
 
 ## Allow Company Portal to access your contacts?
 
@@ -83,7 +82,7 @@ If users allow, but then later deny access, the message appears the next time us
 If users later decide to allow access, they can go to **Settings** > **Apps** > **Company Portal** > **Permissions** > **Phone**, and turn it on.
 
 ### How to explain this to your users
-Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-your-device-in-intune-android) for more information.
+Send your users to [Enroll your Android device in Intune](/intune-user-help/enroll-device-android-company-portal) for more information.  
 
 ## Allow Company Portal to access photos, media, and files on your device?
 
@@ -116,6 +115,34 @@ If you haven't added the Company Portal app to the **Allowed apps** or **Exempt 
 ### What it means
 
 Add the Company Portal to the **Allowed apps** or **Exempt apps** list in the Windows Information Protection (WIP) app protection policy. For more information, see [Create and deploy Windows Information Protection (WIP) app protection policy with Intune](windows-information-protection-policy-create.md).
+
+## Approve a iOS company app (line-of-business app) on your iOS device 
+
+### Where it appears
+iOS apps developed by your organization that are not available in the App Store are not trusted by your device by default. When you install such apps using Company Portal and launch the app, the following message will be displayed:
+
+![iOS app message - Untrusted Enterprise Developer](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### What it means
+This message means you need to modify your iOS device settings to approve and install an app developed by your company on your iOS device.
+
+When you install such apps using the Company Portal and launch the app, follow these steps to approve the app after you download it:
+
+1. Upon launching an installed company app (line-of-business app), you will see the "Untrusted Enterprise Developer" message. <br>
+   Press **Cancel**.
+2. Navigate to **Settings** > **General** > **Device Management**.
+
+   ![iOS device UI - Device Management](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Select **Management Profile** > **Enterprise app**.
+4. Select the developer name.
+5. Press **Trust _developer name_**.
+6. Confirm the app by selecting **Trust** on the app install pop-up message.
+
+   ![iOS device UI - Trust app message](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    You should be able to launch and use the company app.
+
 
 ### See also
 [What to tell your end users about using Intune](end-user-educate.md)

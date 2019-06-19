@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intune testing and validation
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: How to test and validate in your Intune cloud-only solution in your environment.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

@@ -9,7 +9,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -870,7 +869,7 @@ only resources which cannot be CA-protected, you may skip these steps.
 4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
     - That sign-in to your app prompts for installation and enrollment of the Intune Company Portal
     - That after enrollment, sign-in to your app completes successfully.
-5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based conditional access](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
+5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based Conditional Access](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
 6. Once your app has been added to the approved list, validate by [Configuring app-based CA](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) and ensuring that sign-in to your app completes successfully.
 
 ## App protection policy without device enrollment

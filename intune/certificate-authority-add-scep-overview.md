@@ -1,13 +1,12 @@
 ---
-title: Use third-party CA with SCEP in Microsoft Intune - Azure | Microsoft Docs
+title: Use third-party certification authorities (CA) with SCEP in Microsoft Intune - Azure | Microsoft Docs
 description: In Microsoft Intune, you can add a vendor or 3rd party certificate authority (CA) to issue certificates to mobile devices using the SCEP protocol. In this overview, an Azure Active Directory (Azure AD) application gives Microsoft Intune permissions to validate certificates. Then, use the application ID, authentication key, and tenant ID of the AAD application in the setup of your SCEP server to issue certificates. 
 keywords:
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 05/16/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -71,47 +70,40 @@ Before integrating third-party certification authorities with Intune, confirm th
 
 To allow a third-party SCEP server to run custom challenge validation with Intune, create an app in Azure AD. This app gives delegated rights to Intune to validate SCEP requests.
 
-Be sure you have the required permissions to register an Azure AD app. [Required permissions](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions) lists the steps.
+Be sure you have the required permissions to register an Azure AD app. See [Required permissions](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#required-permissions), in the Azure AD documentation.
 
-**Step 1: Create an Azure AD application**
+#### Create an application in Azure Active Directory  
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Azure Active Directory** > **App registrations** > **New application registration**.
-3. Enter a name and sign-on URL. Select **Web app / API** for the application type.
-4. Select **Create**.
+1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory** > **App Registrations**, and then select **New registration**.  
 
-[Integrate applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) includes some guidance on creating an app, including tips on the URL and name.
+2. On the **Register an application** page, specify the following details:  
+   - In the **Name** section, enter a meaningful application name.  
+   - For the **Supported account types** section, select **Accounts in any organizational directory**.  
+   - For **Redirect URI**, leave the default of Web, and then specify the sign-on URL for the third-party SCEP server.  
 
-**Step 2: Give permissions**
+3. Select **Register** to create the application and to open the Overview page for the new app.  
 
-After creating your application, give the Microsoft Intune API the required permissions:
+4. On the app **Overview** page, copy the **Application (client) ID** value and record it for later use. You'll need this value later.  
 
-1. In your Azure AD app, open **Settings** > **Required Permissions**.  
-2. Select **Add** > **Select an API** > select **Microsoft Intune API** > **Select**.
-3. In **Select permissions**, choose **SCEP challenge validation** > **Select**.
-4. Select **Done** to save your changes.
+5. In the navigation pane for the app, go to **Certificates & secrets** under **Manage**. Select the **New client secret** button. Enter a value in Description, select any option for **Expires**, and then and choose **Add** to generate a *value* for the client secret. 
+   > [!IMPORTANT]  
+   > Before you leave this page, copy the value for the client secret and record it for later use with your third-party CA implementation. This value is not shown again. Be sure to review the guidance for your third-party CA on how they want the Application ID, Authentication Key, and Tenant ID configured.  
 
-**Step 3: Get the application ID and authentication key**
+6. Record your **Tenant ID**. The Tenant ID is the domain text after the @ sign in your account. For example, if your account is *admin@name.onmicrosoft.com*, then your tenant ID is **name.onmicrosoft.com**.  
 
-Next, get the ID and key values of your Azure AD application. The following values are needed:
+7. In the navigation pane for the app, go to **API permissions** under **Manage**, and then select **Add a permission**.  
 
-- Application ID
-- Authentication Key
-- Tenant ID
+8. On the **Request API permissions** page, select **Intune**, and then select **Application permissions**. Select the checkbox for **scep_challenge_provider** (SCEP challenge validation).  
 
-**To get the application ID and authentication key**:
+   Select **Add permissions** to save this configuration.  
 
-1. In Azure AD, select your new application (**App registrations**).
-2. Copy the **Application ID**, and store it in your application code.
-3. Next generate an authentication key. In your Azure AD app, open **Settings** > **Keys**.
-4. In **Passwords**, enter a description, and choose the duration of the key. **Save** your changes. Copy and save the value shown.
+9. Remain on the **API permissions** page, and select **Grant admin consent for Microsoft**, and then select **Yes**.  
+   
+   The app registration process in Azure AD is complete.
 
-    > [!IMPORTANT]
-    > Copy and save this key immediately, as it's not shown again. This key value is needed with your third-party CA implementation. Be sure to review their guidance on how they want the Application ID, Authentication Key, and Tenant ID configured.
 
-The **Tenant ID** is the domain text after the @ sign in your account. For example, if your account is `admin@name.onmicrosoft.com`, then your tenant ID is **name.onmicrosoft.com**.
 
-[Get application ID and authentication key](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key) lists the steps to get these values, and provides more details on Azure AD apps.
+
 
 ### Configure and deploy a SCEP certificate profile
 As the administrator, create a SCEP certificate profile to target to users or devices. Then, assign the profile.
@@ -130,6 +122,10 @@ The following third-party certification authorities support Intune:
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
 - [EJBCA GitHub open-source version](https://github.com/agerbergt/intune-ejbca-connector)
 - [EverTrust](https://evertrust.fr/en/products/)
+- [GlobalSign](https://downloads.globalsign.com/acton/attachment/2674/f-6903f60b-9111-432d-b283-77823cc65500/1/-/-/-/-/globalsign-aeg-microsoft-intune-integration-guide.pdf)
+- [IDnomic](https://www.idnomic.com/)
+- [Sectigo](https://sectigo.com/products)
+- [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
 
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 

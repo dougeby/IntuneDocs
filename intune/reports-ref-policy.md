@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Reference for Policy entities
-titlesuffix: Microsoft Intune 
+titleSuffix: Microsoft Intune 
 description: Reference topic for the Policy category of entity collections in the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -9,7 +9,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

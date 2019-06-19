@@ -1,16 +1,15 @@
 ---
 # required metadata
 
-title: Install Office 365 apps to devices using Microsoft Intune
-titlesuffix: 
-description: Learn how you can use Microsoft Intune to make it easier to install Office 365 apps on Windows 10 devices.
+title: Assign Office 365 apps to Windows 10 devices using Microsoft Intune
+titleSuffix: 
+description: Learn how you can use Microsoft Intune to install Office 365 apps on Windows 10 devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -25,13 +24,13 @@ ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
 # Assign Office 365 apps to Windows 10 devices with Microsoft Intune
 
-This app type makes it easy for you to assign Office 365 apps to devices you manage that run Windows 10. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
+Before you can assign, monitor, configure, or protect apps, you must add them to Intune. One of the available [app types](apps-add.md#app-types-in-microsoft-intune) is Office 365 apps for Windows 10 devices. By selecting this app type in Intune, you can assign and install Office 365 apps to devices you manage that run Windows 10. You can also assign and install apps for the Microsoft Project Online desktop client and Microsoft Visio Online Plan 2, if you own licenses for them. The available Office 365 apps are displayed as a single entry in the list of apps in the Intune console within Azure.
 
 > [!NOTE]
 > You must use Office 365 ProPlus licenses to activate Office 365 ProPlus apps deployed through Microsoft Intune. Currently, Office 365 Business edition is not supported by Intune.
@@ -52,8 +51,7 @@ This app type makes it easy for you to assign Office 365 apps to devices you man
 
 ## Get started
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. Select **Add**.
@@ -131,6 +129,14 @@ If you selected the **Configuration designer** option under the **Setting format
 	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
 	- **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
 	You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## Select scope tags (optional)
+You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](scope-tags.md).
+
+1. Select **Scope (Tags)** > **Add**.
+2. Use the **Select** box to search for scope tags.
+3. Select the check box next to the scope tags you want to assign to this app.
+4. Choose **Select** > **OK**.
 
 ## Enter XML format
 

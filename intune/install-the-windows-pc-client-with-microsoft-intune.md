@@ -9,7 +9,6 @@ author: ErikjeMS
 ms.author: erikje
 ms.date: 07/13/2017
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

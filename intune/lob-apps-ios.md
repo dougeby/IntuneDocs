@@ -2,15 +2,14 @@
 # required metadata
 
 title: Add an iOS line-of-business app to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn about how to add an iOS line-of-business (LOB) app to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -37,11 +36,12 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 
 >[!NOTE]
 >Users of iOS devices can remove some of the built-in iOS apps, like Stocks and Maps. You cannot use Intune to redeploy these apps. If users delete these apps, they must go to the app store and manually reinstall them.
+>
+>iOS LOB apps have a maximum size limit of 4 GB per app.
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.
@@ -85,6 +85,8 @@ The app that you created now appears in the list of apps. From the list, you can
 ## Step 5: Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+The update to the line-of-business app will be installed automatically.
 
 > [!NOTE]
 > For the Intune service to successfully deploy a new IPA file to the device, you must increment the `CFBundleVersion` string in the Info.plist file in your IPA package.

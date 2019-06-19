@@ -7,9 +7,8 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/21/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -39,7 +38,7 @@ By using the **Retire** or **Wipe** actions, you can remove devices from Intune 
 
 ## Wipe
 
-The **Wipe** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, the drive is securely erased.
+The **Wipe** action restores a device to its factory default settings. The user data is kept if you choose the **Retain enrollment state and user account** checkbox. Otherwise, all data, apps, and settings will be removed.
 
 |Wipe action|**Retain enrollment state and user account**|Removed from Intune management|Description|
 |:-------------:|:------------:|:------------:|------------|
@@ -54,8 +53,7 @@ A wipe is useful for resetting a device before you give the device to a new user
 
 ### Wiping a device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices** > **All devices**.
 4. Select the name of the device that you want to wipe.
 5. In the pane that shows the device name, select **Wipe**.
@@ -129,19 +127,22 @@ You can only wipe kiosk devices. You can't retire Android kiosk devices.
 |Wi-Fi and VPN profile settings|Removed.|
 |Certificate profile settings|Certificates that were deployed through MDM are removed and revoked.|
 |Management agent|The management profile is removed.|
-|Outlook|If conditional access is enabled, the device doesn't receive new mail.|
+|Outlook|If Conditional Access is enabled, the device doesn't receive new mail.|
 |Azure AD unjoin|The Azure AD record is removed.|
 
 ### Windows
 
 |Data type|Windows 8.1 (MDM) and Windows RT 8.1|Windows RT|Windows Phone 8.1 and Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creators Update) and later, Office 365 ProPlus apps aren't removed. Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices.|
+|Company apps and associated data installed by Intune|Keys are revoked for files that are protected by EFS. The user can't open the files.|Company apps aren't removed.|Apps originally installed through the Company Portal are uninstalled. Company app data is removed.|Apps are uninstalled. Sideloading keys are removed.<br>For Windows 10 version 1703 (Creators Update) and later, Office 365 ProPlus apps aren't removed. Intune management extension installed Win32 apps will not be uninstalled on unenrolled devices. Admins can leverage assignment exclusion to not offer Win32 apps to BYOD Devices.|
 |Settings|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|Configurations that were set by Intune policy are no longer enforced. Users can change the settings.|
 |Wi-Fi and VPN profile settings|Removed.|Removed.|Not supported.|Removed.|
 |Certificate profile settings|Certificates are removed and revoked.|Certificates are removed and revoked.|Not supported.|Certificates are removed and revoked.|
 |Email|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows.|Not supported.|Email profiles that are provisioned through Intune are removed. Cached email on the device is deleted.|Removes email that's EFS-enabled. This includes emails and attachments in the Mail app for Windows. Removes mail accounts that were provisioned by Intune.|
-|Azure AD unjoin|No.|No.|The Azure AD record is removed.|Not applicable. On Windows 10, you can't retire Azure AD-joined devices.|
+|Azure AD unjoin|No.|No.|The Azure AD record is removed.|The Azure AD record is removed.|
+
+> [!NOTE]
+> For Windows 10 devices that join Azure AD during initial Setup (OOBE), the retire command will remove all Azure AD accounts from the device. Follow the steps at [Start your PC in Safe mode](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) to login as a local admin and regain access to the user's local data. 
 
 ### Retire
 
@@ -187,12 +188,10 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 1. Sign in to the [Intune in the Azure portal](https://aka.ms/intuneportal).
 2. Choose **Devices** > **All devices** > choose the device > **Retire**.
 ![Screenshot for retire](./media/devices-wipe/retire.png)
-3. Choose **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose the token > **Devices** > choose the check box for the device > **Delete** > **Yes**.
-![Screenshot for delete device](./media/devices-wipe/delete-device.png)
-4. Visit [deploy.apple.com](http://deploy.apple.com) and search for the device by its serial number.
-5. In the **Assigned to** menu, choose **Unassigned**.
+3. Visit [deploy.apple.com](http://deploy.apple.com) and search for the device by its serial number.
+4. In the **Assigned to** menu, choose **Unassigned**.
 
-6. Choose **Reassign**.
+5. Choose **Reassign**.
 
     ![Screenshot for Apple reassign](./media/devices-wipe/apple-reassign.png)
 

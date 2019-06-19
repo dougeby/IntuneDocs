@@ -1,15 +1,15 @@
 ---
 # required metadata
 
-title: Mobile Threat Defense with Microsoft Intune | Microsoft Intune
+title: Mobile Threat Defense with Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use Intune Mobile Threat Defense (MTD) with your Mobile Threat Defense partner to protect access to company resources based on device risk.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # What is Mobile Threat Defense integration with Intune?
-Intune can integrate data from a Mobile Threat Defense vendor as an information source for compliance policies and conditional access rules. You can use this information to help protect corporate resources like Exchange and SharePoint, by blocking access from compromised mobile devices.  
+Intune can integrate data from a Mobile Threat Defense vendor as an information source for compliance policies and Conditional Access rules. You can use this information to help protect corporate resources like Exchange and SharePoint, by blocking access from compromised mobile devices.  
 
 ## What problem does this solve?
 Integrating information from a Mobile Threat Defense vendor can help you protect your corporate resources from threats that affect Mobile platforms.  
@@ -83,5 +83,5 @@ Learn how to protect access to company resource based on device, network, and ap
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
-- Sophos (details coming soon)
+- [Sophos Mobile](sophos-mtd-connector.md)
 - Wandera (details coming soon)

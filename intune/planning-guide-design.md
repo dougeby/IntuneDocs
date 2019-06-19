@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create your Microsoft Intune design
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps you to create a design for a Microsoft Intune cloud-only design and implementation.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 3/22/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -241,7 +240,7 @@ In these sections, we review the following features and capabilities that are al
 
 -   Compliance policy
 
--   Conditional access
+-   Conditional Access
 
 Let’s review each of these areas in more detail.
 
@@ -394,7 +393,7 @@ App protection policies minimize data loss by defining how the application manag
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your app protection policy needs.
 #### Compliance policies
 
-Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or noncompliant. The compliance status can then be used to restrict or allow access to company resources. If conditional access is required, we recommend that you design a [device compliance policy](device-compliance.md).
+Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or noncompliant. The compliance status can then be used to restrict or allow access to company resources. If Conditional Access is required, we recommend that you design a [device compliance policy](device-compliance.md).
 
 Refer to requirements and use cases to determine how many device compliance policies you need and which user groups are the target user groups. Additionally, you need to decide how long a device can be offline without checking in before it’s considered noncompliant.
 
@@ -406,22 +405,22 @@ Below is an example of how to design a compliance policy:
 
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your compliance policy needs.
-#### Conditional access policies
+#### Conditional Access policies
 
-Conditional access is used to allow only compliant devices to access email and other company resources. Intune works with Enterprise Mobility + Security (EMS) to control access to company resources. Decide if you require conditional access, and what must be secured. Learn more about [conditional access](conditional-access.md).
+Conditional Access is used to allow only compliant devices to access email and other company resources. Intune works with Enterprise Mobility + Security (EMS) to control access to company resources. Decide if you require Conditional Access, and what must be secured. Learn more about [Conditional Access](conditional-access.md).
 
-For online access, decide what platforms and user groups you'll target by conditional access policies. Also, determine whether you need to install or configure the Intune connector for Exchange on-premises: 
+For online access, decide what platforms and user groups you'll target by Conditional Access policies. Also, determine whether you need to install or configure the Intune connector for Exchange on-premises: 
 
 -   [Exchange on-premises](exchange-connector-install.md)
 
-Here’s an example of how to document conditional access policies:
+Here’s an example of how to document Conditional Access policies:
 
 | **Service** | **Platforms for Modern Authentication** | **Basic Authentication** | **Use cases** |   
 |:---:|:---:|:---:|:---:|
 | Exchange online | iOS, Android | Block noncompliant devices on platforms supported by Intune | Corporate, BYOD |
 | SharePoint online | iOS, Android |  | Corporate, BYOD |
 
-You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your conditional access policy needs.
+You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your Conditional Access policy needs.
 
 ## Next steps
 

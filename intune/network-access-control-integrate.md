@@ -2,14 +2,13 @@
 # required metadata
 
 title: Network access control integration with Microsoft Intune - Azure | Microsoft Docs
-description: Network access control (NAC) solutions check enrollment and compliance for devices with Intune. NAC includes certain behaviors and works with conditional access. See the steps to get onboarded, and get a list of partner solutions.
+description: Network access control (NAC) solutions check enrollment and compliance for devices with Intune. NAC includes certain behaviors and works with Conditional Access. See the steps to get onboarded, and get a list of partner solutions.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/25/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -46,9 +45,9 @@ Devices that are actively syncing to Intune can't move from **Compliant** / **No
 
 For devices that are blocked from access to resources, the blocking service should redirect all users to the [management portal](https://portal.manage.microsoft.com) to determine why the device is blocked.  If the users visit this page, their devices are synchronously reevaluated for compliance.
 
-## NAC and conditional access
+## NAC and Conditional Access
 
-NAC works with conditional access to provide access control decisions. For more information, see [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md).
+NAC works with Conditional Access to provide access control decisions. For more information, see [Common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md).
 
 ## How the NAC integration works
 
@@ -67,27 +66,39 @@ The following list is an overview on how NAC integration works when integrated w
 9. Connection is successfully established which allows the device access to corporate resources.
 
 ## Use NAC for VPN on your iOS devices  
-NAC for Cisco Legacy AnyConnect, F5 Access Legacy, and Citrix VPN is supported without needing to enable NAC in the VPN profile.
 
-NAC for Citrix SSO is also supported. To enable NAC for Citrix SSO for iOS:
-- Use Citrix Gateway 12.0.59 or higher.  
-- Users must have Citrix SSO 1.1.6 or later installed.
-- [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
-- On the Base VPN settings configuration, for **Enable Network Access Control (NAC)**, select the check-box for **I agree**.
+- NAC is available on the following VPNs without enabling NAC in the VPN profile:
 
-When you use Citrix SSO for iOS, the VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
+  - NAC for Cisco Legacy AnyConnect
+  - F5 Access Legacy
+  - Citrix VPN
 
+- NAC is also available for Citrix SSO and F5 Access. To enable NAC for Citrix SSO:
 
-**Network access control is not currently supported for the following VPN clients on iOS**:
--	Cisco AnyConnect
--	F5 Access
+  - Use Citrix Gateway 12.0.59 or higher.  
+  - Users must have Citrix SSO 1.1.6 or later installed.
+  - [Integrate NetScaler with Intune for NAC](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) as described in the Citrix product documentation.
+  - In the VPN profile, select **Base settings** > **Enable Network Access Control (NAC)** > select **I agree**.
 
-We're working with our partners to release a NAC solution for these newer clients. When we have solutions ready, we will update this article with additional details. 
+  The VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
 
+- To enable NAC for F5 Access:
+
+  - Use F5 BIG-IP 13.1.1.5. BIG-IP 14 isn't supported.
+  - Integrate BIG-IP with Intune for NAC. The [Overview: Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) F5 guide lists the steps.
+  - In the VPN profile, select **Base settings** > **Enable Network Access Control (NAC)** > select **I agree**.
+
+  The VPN connection is disconnected every 24 hours for security reasons. The VPN can immediately be reconnected.
+
+- Network access control isn't supported for the following VPN client on iOS:
+  - Cisco AnyConnect
+
+We're working with our partners to release a NAC solution for these newer clients. When solutions are ready, this article will be updated with additional information.
 
 ## Next steps
 
 - [Integrate Cisco ISE with Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrate Citrix NetScaler with Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
+- [Integrate F5 BIG-IP Access Policy Manager with Intune](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-13-0-0/6.html)
 - [Integrate HP Aruba ClearPass with Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Integrate Squadra security Removable Media Manager (secRMM) with Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

@@ -7,9 +7,8 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -33,7 +32,7 @@ Microsoft Intune lets you manage a range of devices by *enrolling* them into the
 
 This article gives a full list of the capabilities that you get after devices are enrolled.
 
-Management, inventory, app deployment, provisioning, and retirement are all handled through the Intune portal.
+Management, inventory, app deployment, provisioning, and retirement are all handled through Intune in the Azure portal.
 
 Users gain access to the company portal, which enables them to install apps, enroll and remove devices, and contact their IT department or helpdesk.
 
@@ -68,7 +67,7 @@ Users gain access to the company portal, which enables them to install apps, enr
 |Wi-Fi profiles|Deploys wireless network settings to your users. By deploying these settings, you minimize the user effort that's required to connect to the corporate network.|[Wi-Fi connections in Microsoft Intune](wi-fi-settings-configure.md)|
 |Email profiles|Creates and deploys email settings to devices so that users can access corporate email on their personal devices without any required setup on their part.|[Configure access to corporate email using email profiles with Microsoft Intune](email-settings-configure.md)|
 |VPN profiles|Deploys VPN settings to users and devices in your organization. By deploying these settings, you minimize the user effort that's required to connect to resources on the company network.|[VPN connections in Microsoft Intune](device-profiles.md#vpn)|
-|Conditional access policies|Manages access to Microsoft Exchange email and SharePoint Online from devices that are not managed by Intune.|[Restrict access to email and SharePoint with Microsoft Intune](app-based-conditional-access-intune.md)|
+|Conditional Access policies|Manages access to Microsoft Exchange email and SharePoint Online from devices that are not managed by Intune.|[Restrict access to email and SharePoint with Microsoft Intune](app-based-conditional-access-intune.md)|
 
 ## Next steps
 

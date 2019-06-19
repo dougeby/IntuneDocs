@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reduce help desk costs
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Reducing help desk costs with self-service password reset 
 keywords: Azure Active Directory SSPR password reset
 author: MandiOhlinger
@@ -10,7 +10,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

@@ -2,15 +2,14 @@
 # required metadata
 
 title: Manage volume-purchased iOS eBooks
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn about how you can sync books you purchased in volume from the iOS store into Intune and then manage and track their usage.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -60,8 +59,7 @@ Before you start, get a VPP token from Apple and upload it to your Intune accoun
 
 ## To get and upload an Apple VPP token
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 1.  In the **Client apps** workload, choose **Setup** > **iOS VPP Tokens**.
 2.  On the list of VPP tokens pane, click **Create**.

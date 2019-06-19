@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -54,7 +53,7 @@ This article shows you all the Microsoft Intune device restrictions settings tha
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** allows users to access the device without entering a password.
 
     > [!NOTE]
-    > Samsung Knox devices automatically require a 4-digit PIN during MDM enrollment. Native Android devices may automatically require a PIN to become compliant with conditional access.
+    > Samsung Knox devices automatically require a 4-digit PIN during MDM enrollment. Native Android devices may automatically require a PIN to become compliant with Conditional Access.
 
 - **Minimum password length**: Enter the minimum length of password a user must enter (between 4 and 16 characters).
 - **Maximum minutes of inactivity until screen locks**: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. On a device, an end user can’t set a time value greater than the configured time in the profile. An end user can set a lower time value. For example, if the profile is set to 15 minutes, an end user can set the value to 5 minutes. An end user can’t set the value to 30 minutes. 

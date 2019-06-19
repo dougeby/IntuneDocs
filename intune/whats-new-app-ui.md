@@ -2,15 +2,14 @@
 # required metadata
 
 title: UI updates for Intune end-user apps
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Find out what has changed in UI for apps that work on end-user devices with Microsoft Intune.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -37,6 +36,42 @@ Learn about the most recent updates to the Microsoft Intune apps. We regularly a
 If you're an employee or student, be sure to check out the screenshots and links to the Company Portal help documentation. For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## Week of April 15, 2019  
+
+### New end user app (Microsoft Intune app) <!--3903244 -->  
+There's a new end-user app for Android fully managed devices called **Microsoft Intune**. This new app is light-weight and modern, and provides similar functionally as the Company Portal app, but for fully managed, corporate devices. For more information, see [Microsoft Intune app on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).  
+
+Example screenshot of the device details screen: 
+
+![Screenshot of Microsoft Intune app, showing device details for Jane's Android.](./media/1904-intune-app-device-details.png)   
+
+Example screenshot the **Setup access** screen:  
+
+![Screenshot of Microsoft Intune app, showing Setup access enrollment screen.](./media/1904-intune-app-setup-access.png)   
+
+Example screenshot of the app menu:  
+
+![Screenshot of Microsoft Intune app, showing the side menu.](./media/1904-intune-app-navigation-menu.png)   
+
+Example screenshot of the **Help** screen:  
+
+![Screenshot of Microsoft Intune app, Help screen.](./media/1904-intune-app-help.png)   
+
+
+## Week of April 1, 2019  
+
+### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 -->  
+The Company Portal for iOS enrollment screens and steps have been updated to align with the MDM enrollment changes released in Apple iOS 12.2. The updated workflow prompts users to:  
+
+* Allow Safari to open the Company Portal website and download the management profile before returning to the Company Portal app.  
+* Open the Settings app to install the management profile on their device.  
+* Return to the Company Portal app to complete enrollment.  
+
+For updated enrollment steps and screens, see [Enroll iOS device in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios).  
+
+### User experience update for the Company Portal app for iOS <!-- 2536024 -->
+The home page of the Company Portal app for iOS devices has been redesigned. With this change, the home page will better follow iOS UI patterns, and also provide improved discoverability for apps and ebooks.  
 
 ## Week of February 19, 2019  
 ### New App categories screen in the Company Portal app for Windows 10<!-- 3834780 WNready4Review -->  
@@ -225,7 +260,7 @@ Additional steps have been improved on Android work profile devices.
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *Combined with previous step* |
 
 
-We've also updated the conditional access email activation screen.
+We've also updated the Conditional Access email activation screen.
 
 |Before|After|
 |---|---|
@@ -250,7 +285,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 
 ### iOS 11 Mail app will support OAuth <!-- 1196951 -->
 
-Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+Conditional Access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
 ![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
 
@@ -496,16 +531,7 @@ Beginning in February, the Company Portal website will support apps that are tar
 These are the plans for ways we will be improving the user experience by updating our user interface.
 
 > [!Note]
-> Please note that the images below may be previews, and the announced product may differ from the presented versions.
-
-### Changes to Company Portal enrollment for iOS 12 device users <!--3448635 EEready eestaged-->  
-
-The Company Portal app for iOS will be updating the enrollment screens and steps to align with the MDM enrollment changes released in Apple iOS 12.2. The new enrollment experience will prompt users to:  
-* Allow Safari to open the Company Portal website (via Safari) and download the management profile before returning to the Company Portal app.  
-* Open the Settings app to install the management profile on their device.  
-* Return to the Company Portal app to complete enrollment.  
-
- We'll be updating the enrollment sequence and on-screen text prompts to match this experience. For more information about how you can prepare device users for these changes,see the [Microsoft Tech Community post](https://aka.ms/CP_changes_iOS12). In the meantime, to support new iOS enrollments in Company Portal, we've updated the steps in [Enroll iOS device in Intune](https://docs.microsoft.com/en-us/intune-user-help/enroll-your-device-in-intune-ios#enroll-your-ios-device).   
+> The images below may be previews, and the announced product may differ from the presented versions.  
 
 
 ### See also

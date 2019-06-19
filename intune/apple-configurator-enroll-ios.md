@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -124,6 +123,7 @@ After you create the profile and assign serial numbers, you must export the prof
 1. On a Mac computer, open **Apple Configurator 2**. In the menu bar, choose **Apple Configurator 2**, and then choose **Preferences**.
     > [!WARNING]
     > Devices are reset to factory configurations during the enrollment process. As a best practice, reset the device and turn it on. Devices should be at the **Hello** screen when you connect the device.
+    > If the device was already registered with the Apple ID account, the device must be deleted from the Apple iCloud before starting the enrollment process. The prompt error appears as "Unable to activate [Device name]".
 
 2. In the **preferences** pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 3. Enter the **Host name or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  

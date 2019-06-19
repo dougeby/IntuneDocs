@@ -2,7 +2,7 @@
 # required metadata
 
 title: How a typical Intune migration cycle works
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article explains how a Microsoft Intune migration cycle works, and give examples on how you can handle the migration cycles.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -37,8 +36,8 @@ Here’s an example of how your target groups could be scheduled:
 
   | **Migration targeted groups** | **Time period 1** | **Time period 2** | **Time period 3** | **Time period 4** | **...**
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| Limited Pilot IT org (50 users) | Announce Plan | Instruct to enroll | Give deadline | Enforce conditional access |  |                                                        
-| Expanded Pilot IT org (200 users) |  | Announce Plan | Instruct to enroll | Give deadline | Enforce conditional access |
+| Limited Pilot IT org (50 users) | Announce Plan | Instruct to enroll | Give deadline | Enforce Conditional Access |  |                                                        
+| Expanded Pilot IT org (200 users) |  | Announce Plan | Instruct to enroll | Give deadline | Enforce Conditional Access |
 | Migration phase 1 Tech-savvy users (2000) |  |  | Announce Plan | Instruct to enroll | Give deadline |
 | Migration phase 2 Eastern US |  |  |  | Announce Plan | Instruct to enroll |
 | All Regions |  |  |  |  | Announce Plan |
@@ -63,7 +62,7 @@ Track how many users have enrolled devices after each phase so that you can:
 
 -   Evaluate the effectiveness of your communication plan.
 
--   Estimate the impact of enforcing conditional access.
+-   Estimate the impact of enforcing Conditional Access.
 
 
 ## Post-migration

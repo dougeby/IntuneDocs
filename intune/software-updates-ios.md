@@ -7,9 +7,8 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/06/2019
+ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -39,7 +38,7 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 ## Configure the policy
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Software updates** > **Update policies for iOS** > **Create**.
 3. Enter the following settings:
 
@@ -48,7 +47,11 @@ The device checks in with Intune about every 8 hours. If an update is available,
 
 4. Select **Settings > Configure**. Enter the following settings:
 
-    - **Select times to prevent update installations**: Enter a restricted time frame when updates aren't forcibly installed. When setting the restricted timeframe, enter the following details:
+    - **Select times to prevent update installations**: Specify a restricted time frame when updates aren't forcibly installed. 
+      - Overnight blocks aren't supported and might not function. For example, don't configure a policy with a *Start time* of 8 PM and an *End time* of 6 AM.
+      - A policy that starts at 12 AM and ends at 12 AM is evaluated as 0 hours and not 24 hours, which results in no restriction.
+
+      When setting the restricted timeframe, enter the following details:
 
       - **Days**: Choose the day(s) of week when updates aren't installed. For example, check Monday, Wednesday, and Friday to prevent updates from being installed on these days.
       - **Time zone**: Choose a time zone.
@@ -65,6 +68,8 @@ The device checks in with Intune about every 8 hours. If an update is available,
         - Target the same users as the original policy.
 
       If there's a conflict, this setting does nothing *unless* the two values are identical. To prevent a conflict, be sure to change or remove the existing policy from this location in the portal.
+      > [! Important]  
+      > A policy that has a *Start time* and *End time* set to 12 AM is evaluated as 0 hours, and not 24 hours. This results in no restriction.  
 
 5. Select **OK** > **Create** to save your changes, and create the policy.
 
@@ -86,7 +91,7 @@ For guidance from the Intune support team, see [Delay visibility of software upd
     3. Enter the start and end time for the blacklisted hours
 
     > [!NOTE]
-    > If the **Start time** and **End time** are both set to 12am, then the maintenance time check is turned off.
+    > If the **Start time** and **End time** are both set to 12am, then Intune does not check for restrictions on when to install updates. This means than any configurations you have for **Select times to prevent update installations** are ignored, and updates can install at any time.  
 
 ## Assign the policy to users
 

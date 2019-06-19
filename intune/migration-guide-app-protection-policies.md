@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure app protection policies during an Intune migration
-titlesuffix: Microsoft Intune
+title: Configure app protection policies during migration
+titleSuffix: Microsoft Intune
 description: This article provides the necessary steps to set up app protection policies during a Microsoft Intune migration.
 keywords:
 author: Erikre
@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -53,7 +52,7 @@ This period can leave your organization more vulnerable to device theft and corp
 
 Intune can offer corporate data protections during the migration so you can still have security coverage for your corporate data when there’s no device-level management.
 
-As you disable conditional access in the old MDM provider, users can still be productive while you on-board them into Intune.
+As you disable Conditional Access in the old MDM provider, users can still be productive while you on-board them into Intune.
 
 ## Task list for app protection policies
 

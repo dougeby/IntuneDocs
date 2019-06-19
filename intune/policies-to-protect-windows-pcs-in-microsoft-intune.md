@@ -2,7 +2,7 @@
 # required metadata
 
 title: Policies to protect Windows PCs
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use these policies to help you ensure the security of Windows PCs when they are managed by the Intune client software.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2019
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

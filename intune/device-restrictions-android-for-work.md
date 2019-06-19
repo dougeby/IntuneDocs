@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 06/05/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -61,7 +60,7 @@ This article lists and describes the different settings you can control on Andro
 - **Beam data using NFC**: Choose **Block** to prevent using the Near Field Communication (NFC) technology to beam data from apps. **Not configured** allows using NFC to share data between devices.
 - **Debugging features**: Choose **Allow** to let users use debugging features on the device. **Not configured** prevents users from using the debugging features on the device.
 - **Microphone adjustment**: Choose **Block** to prevent users from unmuting the microphone and adjusting the microphone volume. **Not configured** allows the user to use and adjust the volume of the microphone on the device.
-- **Factory reset protection emails**: Choose **Google account email addresses**. Enter the email addresses of device administrators that can unlock the device after it's wiped. Be sure to separate the email addresses with a semi-colon, such as `admin1@gmail.com;admin2@gmail.com`. If an email isn't entered, anyone can unlock the device after it's restored to the factory settings.
+- **Factory reset protection emails**: Choose **Google account email addresses**. Enter the email addresses of device administrators that can unlock the device after it's wiped. Be sure to separate the email addresses with a semi-colon, such as `admin1@gmail.com;admin2@gmail.com`. If an email isn't entered, anyone can unlock the device after it's restored to the factory settings. These emails only apply when a non-user factory reset is ran, such as running a factory reset using the recovery menu.
 - **Network escape hatch**: Choose **Enable** to allow users to turn on the network escape hatch feature. If a network connection isn't made when the device boots, then the escape hatch asks to temporarily connect to a network and refresh the device policy. After applying the policy, the temporary network is forgotten and the device continues booting. This feature connects devices to a network if:
   - There isn't a suitable network in the last policy.
   - The device boots into an app in lock task mode.
@@ -69,26 +68,18 @@ This article lists and describes the different settings you can control on Andro
 
   **Not configured** prevents users from turning on the network escape hatch feature on the device.
 
-- **Allow installation from unknown sources**: Choose **Allow** so users can turn on the **Unknown sources**. This setting allows apps to install from unknown sources. **Not configured** prevents users from turning on **Unknown sources**.
 - **System update**: Choose an option to define how the device handles over-the-air updates:
   - **Device Default**: Use the device's default setting.
   - **Automatic**: Updates are automatically installed without user interaction. Setting this policy immediately installs any pending updates.
   - **Postponed**: Updates are postponed for 30 days. At the end of the 30 days, Android prompts the user to install the update. It's possible for device manufacturers or carriers to prevent (exempt) important security updates from being postponed. An exempted update shows a system notification to the user on the device. 
   - **Maintenance window**: Installs updates automatically during a daily maintenance window that you set in Intune. Installation tries daily for 30 days, and can fail if there's insufficient space or battery levels. After 30 days, Android prompts the user to install. This window is also used to install updates for Play apps. Use this option for dedicated devices, such as kiosks, as single-app dedicated device foreground apps can be updated.
-- **App auto-updates**: Choose when automatic updates are installed. Your options:
-  - **Not configured**
-  - **User choice**
-  - **Never**
-  - **Wi-Fi only**
-  - **Always**
 
 - **Notification windows**: When set to **Disable**, window notifications, including toasts, incoming calls, outgoing calls, system alerts, and system errors are not shown on the device. When set to **Not configured**, the operating system default is used, which may be to show notifications.
 - **Skip first use hints**: Choose **Enable** to hide or skip suggestions from apps to step through tutorials or read any introductory hints when the app starts. When set to **Not configured**, the operating system default is used, which may be to show these suggestions when the app starts.
 
-
 ### System security settings
 
-- **Threat scan on apps**: **Require** enforces that the **Verify Apps** setting is enabled for work and personal profiles.
+- **Threat scan on apps**: **Require** (default) enables Google Play Protect to scan apps before and after they’re installed. If it detects a threat, it may warn the user to remove the app from the device. **Not configured** doesn't enable or run Google Play Protect to scan apps.
 
 ### Dedicated device settings
 
@@ -126,25 +117,58 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     1. Continues to select the back button until the "Exit kiosk" button is shown. 
     2. Selects the button, and enters the **Leave kiosk mode code** PIN.
     3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
-    
+
     **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
-    
+
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
- 
+
   - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
+    
+    > [!NOTE]
+    > For most cases, we recommend starting with images of at least the following sizes:
+    >
+    > - Phone: 1080x1920 px
+    > - Tablet: 1920x1080 px
+    >    
+    > For the best experience and crisp details, it’s suggested that per device image assets be created to the display specifications.
+    >
+    > Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
+  - **Wi-Fi configuration**: Choose **Enable** to allow end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) prevents users from connecting to WiFi networks while in the Managed Home Screen (lock task mode).
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+
+  - **Bluetooth configuration**: Choose **Enable** to allow Bluetooth on the device, and allow end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) prevents users from configuring Bluetooth and pairing devices while in the Managed Home Screen (lock task mode). 
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
 
 ### Device password settings
 
-- **Keyguard**: Choose **Disable** to prevent uses from using Keyguard lock screen feature on the device. **Not configured** allows the user to use the Keyguard features.
-- **Disabled keyguard features**: When keyguard is enabled on the device, choose which features to disable. For example, when **Secure camera** is checked, the camera feature is disabled on the device. Any features not checked are enabled on the device.
+- **Disable lock screen**: Choose **Disable** to prevent users from using Keyguard lock screen feature on the device. **Not configured** allows the user to use the Keyguard features.
+- **Disabled lock screen features**: When keyguard is enabled on the device, choose which features to disable. For example, when **Secure camera** is checked, the camera feature is disabled on the device. Any features not checked are enabled on the device.
+
+  These features are available to users when the device is locked. Users won't see or access features that are checked.
+
 - **Required password type**: Define the type of password required for the device. Your options:
-  - **At least numeric**
-  - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed.
-  - **At least alphabetic**
-  - **At least alphanumeric**
-  - **At least alphanumeric with symbols**
-- **Minimum password length**: Enter the minimum length of password a user must enter (between 4 and 16 characters).
-- **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 1-11).
+  - **Device default**
+  - **Password required, no restrictions**
+  - **Weak biometric**: [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (opens Android's web site)
+  - **Numeric**: Password must only be numbers, such as `123456789`. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **Alphabetic**: Letters in the alphabet are required. Numbers and symbols aren't required. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **Alphanumeric**: Includes uppercase letters, lowercase letters, and numeric characters. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **Alphanumeric with symbols**: Includes uppercase letters, lowercase letters, numeric characters, punctuation marks, and symbols. Also enter:
+
+    - **Minimum password length**: Enter the minimum length the password must have, between 4 and 16 characters.
+    - **Number of characters required**: Enter the number of characters the password must have, between 0 and 16 characters.
+    - **Number of lowercase characters required**: Enter the number of lowercase characters the password must have, between 0 and 16 characters.
+    - **Number of uppercase characters required**: Enter the number of uppercase characters the password must have, between 0 and 16 characters.
+    - **Number of non-letter characters required**: Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 0 and 16 characters.
+    - **Number of numeric characters required**: Enter the number of numeric characters (`1`, `2`, `3`, and so on) the password must have, between 0 and 16 characters.
+    - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
+
+- **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. For example, to change the password after 60 days, enter `60`. When the password expires, users are prompted to create a new password.
+- **Number of passwords required before user can resuse a password**: Enter the number of recent passwords that can't be reused, between 1-24. Use this setting to restrict the user from creating previously used passwords.
+- **Number of sign-in failures before wiping device**: Enter the number, between 4-11, of failed sign-ins to allow before the device is wiped.
 
 ### Power settings
 
@@ -156,6 +180,17 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **Add new users**: Choose **Block** to prevent users from adding new users. Each user has a personal space on the device for custom Home screens, accounts, apps, and settings. **Not configured** allows users to add other users to the device.
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
+
+### Applications
+
+- **Allow installation from unknown sources**: Choose **Allow** so users can turn on **Unknown sources**. This setting allows apps to install from unknown sources, including sources other than the Google Play Store. **Not configured** prevents users from turning on **Unknown sources**.
+- **Allow access to all apps in Google Play store**: When set to **Allow**, users get access to all apps in Google Play store. They don't get access to the apps the administrator blocks in [Client Apps](apps-add-android-for-work.md). **Not configured** forces users to only access the apps the administrator makes available Google Play store, or apps required in [Client Apps](apps-add-android-for-work.md).
+- **App auto-updates**: Choose when automatic updates are installed. Your options:
+  - **Not configured**
+  - **User choice**
+  - **Never**
+  - **Wi-Fi only**
+  - **Always**
 
 ### Connectivity
 
@@ -295,3 +330,7 @@ These password settings apply to personal profiles on devices that use a work pr
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 You can also create dedicated device kiosk profiles for [Android](device-restrictions-android.md#kiosk) and [Windows 10](kiosk-settings.md) devices.
+
+## See also
+
+[Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)

@@ -8,9 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -25,7 +24,7 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 

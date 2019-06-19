@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add groups to organize users and devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Add groups to organize users and devices by geography, department, or hardware specifics.
 keywords:
 author: ErikjeMS
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 06/13/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -39,8 +38,7 @@ You can add the following types of groups:
 ## Add a new group
 
 Use the following steps to create a new group.
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Groups** and then choose **New group** in the **All groups** pane.
    ![Screenshot of the Azure portal with New Group selected](./media/groups-add-new.png)
 4. For **Group type**, choose one of the following options:

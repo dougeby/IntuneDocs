@@ -2,15 +2,14 @@
 # required metadata
 
 title: Troubleshoot mobile application management 
-titlesuffix: Microsoft Intune
-description: This topic describes some troubleshooting tips for conditional access deployments.
+titleSuffix: Microsoft Intune
+description: This topic describes some troubleshooting tips for Conditional Access deployments.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
 ms.topic: troubleshooting
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Determine use-case scenario requirements
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps you determine Intune use-case, and sub-use-case scenario requirements for an Microsoft Intune cloud-only implementation.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -55,7 +54,7 @@ You can [download a template of the above table](https://gallery.technet.microso
 Here are a few more examples that can be used in the "Requirements" column:
 
 - **Secure e-mail**
-	- Conditional access for Exchange Online / on-premises
+	- Conditional Access for Exchange Online / on-premises
 	- Outlook app protection policies
 
 - **Device settings**

@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Set up Microsoft Intune on-premises Exchange connector | Microsoft Intune
+title: Set up Microsoft Intune on-premises Exchange connector
+titleSuffix: Microsoft Intune
 description: Use the on-premises Exchange connector to manage device access to Exchange mailboxes based on Intune enrollment and Exchange Active Sync (EAS).
 keywords:
 author: brenduns
@@ -9,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -29,9 +29,9 @@ ms.collection: M365-identity-device-management
 ---
 
 # Set up the Intune on-premises Exchange connector in Microsoft Intune
-The information in this article will help you install and then monitor the Exchange Active Sync on-premises connector for Intune.  You use the Intune on-premises Exchange connector with your [conditional access policies to allow or block access to your Exchange on-premises mailboxes](conditional-access-exchange-create.md). 
+The information in this article will help you install and then monitor the Exchange Active Sync on-premises connector for Intune.  You use the Intune on-premises Exchange connector with your [Conditional Access policies to allow or block access to your Exchange on-premises mailboxes](conditional-access-exchange-create.md). 
 
-When a device tries to access your on-premises Exchange, the Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records to check for device enrollment with Intune, and compliance to your device compliance policies. Depending on your conditional access policies, the device can be allowed access, or blocked. For more information, see [What are common ways to use conditional access with Intune?](conditional-access-intune-common-ways-use.md)
+When a device tries to access your on-premises Exchange, the Exchange connector maps Exchange Active Sync (EAS) records in Exchange Server to Intune records to check for device enrollment with Intune, and compliance to your device compliance policies. Depending on your Conditional Access policies, the device can be allowed access, or blocked. For more information, see [What are common ways to use Conditional Access with Intune?](conditional-access-intune-common-ways-use.md)
 
 Intune supports installing multiple on-premises Exchange connectors per subscription. If you have more than one on-premises Exchange organization, you can set up a separate connector for each. However, only one connector can be installed for use each individual Exchange organization. 
 
@@ -123,7 +123,7 @@ Perform the following steps to install the Intune on-premises Exchange connector
 
 4. In the **User (Domain\user)** and **Password** fields, enter the credentials that are necessary to connect to your Exchange server. The account you specify must have a license to use Intune. 
 
-5. Provide the necessary credentials to send notifications to a user’s Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to send notifications by email. You can configure these notifications with conditional access policies in Intune.  
+5. Provide the necessary credentials to send notifications to a user’s Exchange Server mailbox. This user can be dedicated to just notifications. The notifications user needs an Exchange mailbox to send notifications by email. You can configure these notifications with Conditional Access policies in Intune.  
 
        Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
@@ -188,9 +188,9 @@ Beginning with the Intune 1710 release, you can use the [Operations Manager mana
 ## Manually force a quick sync or full sync
 An on-premises Exchange connector automatically synchronizes EAS and Intune device records regularly. If the compliance status of a device changes, the automatic sync process regularly updates records so that device access can be blocked or allowed.
 
-   - **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange conditional access-targeted users that have changed since the last sync.
+   - **Quick sync** occurs regularly, several times a day. A quick sync retrieves device information for Intune-licensed and on-premises Exchange Conditional Access-targeted users that have changed since the last sync.
 
-   - **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange conditional access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
+   - **Full sync** occurs once per day by default. A full sync retrieves device information for all Intune-licensed and on-premises Exchange Conditional Access-targeted users. A full sync also retrieves Exchange server information and ensures that the configuration specified by Intune in the Azure portal is updated on the Exchange server. 
 
 
 You can force a connector to run a sync by using the **Quick Sync** or **Full Sync** options on the Intune dashboard with the following steps:
@@ -200,4 +200,4 @@ You can force a connector to run a sync by using the **Quick Sync** or **Full Sy
    3. Select the connector you want to sync, and then choose **Quick Sync** or **Full Sync**.
 
 ## Next steps
-[Create a conditional access policy for Exchange on-premises](conditional-access-exchange-create.md)
+[Create a Conditional Access policy for Exchange on-premises](conditional-access-exchange-create.md)

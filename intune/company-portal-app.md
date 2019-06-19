@@ -8,9 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -33,7 +32,10 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department.		
+The Microsoft Intune company portal is where users access company data and can do common tasks like enrolling devices, installing apps, and locating information for assistance from your IT department. Additionally, the company portal app allows user to securely access company resources. The company portal app provides several different pages, such as Home, Apps, App details, Devices, and Device details. 
+
+> [!IMPORTANT]
+> To support Google’s Firebase Cloud Messaging (FCM), you must update your Android Company Portal app to the latest version. For more information, see What's New - [Update your Android Company Portal app to the latest version](whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
 
 > [!Tip]		
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps. Note that users must have an Intune license assigned to access the Company Portal website.
@@ -95,7 +97,7 @@ Display a brand image that reflects your company brand. After you save your chan
 
 |Field name|More information|
 |---|---|
-|**Upload your brand image**| This option is available to allow you to display a background image on the user's profile page in the Company Portal app.<p>*Note*: The image may be displayed differently for different platforms.<p><ul><li>Recommended image width: Less than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+|**Upload your brand image**| This option allows you to display a brand image. On the iOS Company Portal, it shows as a background image on the user's profile page.<p><ul><li>Recommended image width: Less than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
 The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
 
@@ -141,6 +143,7 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 |  | Remove | Ctrl+D or Delete |
 |  | Check access | Ctrl+M or F9 |
 | App details | Install | Ctrl+I |
+| Devices | Available | Ctrl+D |
 
 End users will also be able to see the available shortcuts in the Windows Company Portal app.
 

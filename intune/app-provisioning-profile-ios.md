@@ -2,15 +2,14 @@
 # required metadata
 
 title: iOS app provisioning profiles in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -48,15 +47,14 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 
 ## How to create an iOS mobile app provisioning profile
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 1.  In the **Client apps** workload, choose **Manage** > **iOS app provisioning profiles**.
 2.  In the list of profiles pane, choose **Create profile**.
 3. In the **Create profile** pane, configure the following values:
 	- **Name** - Provide a name for this mobile provisioning profile.
 	- **Description** - Optionally, provide a description for the policy.
-	- **Upload profile file** - Choose **Import**, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the Apple Developer website.
+	- **Upload profile file** - Choose **Open** icon, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the [Apple Developer website](https://developer.apple.com/).
 4. When you are done, choose **Create**.
 
 ## Next steps

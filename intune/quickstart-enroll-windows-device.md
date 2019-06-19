@@ -7,9 +7,8 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 04/15/2019
 ms.topic: quickstart
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -30,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Quickstart: Enroll your Windows 10 device
 
-In this quickstart, you'll first take the role of an Intune user and enroll your Windows 10 device into Microsoft Intune. Then, you return to Intune and confirm the enrolled device.
+In this quickstart, you'll first take the role of an Intune user and enroll your Windows 10 device into Microsoft Intune. Then, you'll return to Intune and confirm the device enrolled.
 
 Enrolling your devices into Microsoft Intune allows your Windows 10 devices to get access to your organization’s secure data, including email, files, and other resources. This is true for both Windows 10 desktop and Windows 10 Mobile devices. Enrolling your devices helps secure this access for both you and your organization, and helps keep your work data separate from your personal data.
 
@@ -64,7 +63,7 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 4. Confirm that the Windows 10 **Version** is **1607 or higher**.
 
     > [!IMPORTANT]
-    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-windows-10-device.md).  
+    > The steps presented in this quickstart are for Windows 10 version **1607 or higher**, if your version is **1511 or less**, continue with [these steps](/intune-user-help/enroll-windows-10-device).  
 
 ## Enroll Windows 10 Desktop
 
@@ -76,7 +75,7 @@ Before enrolling your Windows 10 Desktop, you must confirm the version of Window
 
     ![Select Access work school account](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Sign in to Intune with your work or school account, and then select **Next**. If you followed the [create a user and assign a license] quickstart, you can sign in with the user account that you created.
+3. Sign in to Intune with your work or school account, and then select **Next**. If you followed the [create a user and assign a license](quickstart-create-user.md) quickstart, you can sign in with the user account that you created.
 
     > [!NOTE]
     > If you setting up an ".onmicrosoft.com", the user account will have **.onmicrosoft.com** as part of the account address. 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prevent unauthorized access to company data
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Prevent unauthorized access to your company data when it is shared outside the company network using Microsoft Intune. 
 keywords: Office 365 O365 Azure Information Protection data protect outside network company data 
 ms.author: dougeby
@@ -10,7 +10,6 @@ author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

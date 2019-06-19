@@ -9,7 +9,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 02/26/2019
 ms.topic: overview
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -90,7 +89,7 @@ When you use Intune with the other services in EMS, you can provide your organiz
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 *	[Multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [App conditional access - allow access if the mobile app contains corporate data](app-based-conditional-access-intune.md)
+* [App Conditional Access - allow access if the mobile app contains corporate data](app-based-conditional-access-intune.md)
 * [Isolating corporate data from personal data inside the same app](app-protection-policy.md)
 * [App protection policy (PIN, encryption, save-as, clipboard, etc.)](app-protection-policies.md)
 * [Corporate data wipe from a mobile app](apps-selective-wipe.md)

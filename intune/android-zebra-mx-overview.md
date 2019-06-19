@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority:
 ms.technology:
@@ -34,7 +33,9 @@ ms.collection: M365-identity-device-management
 
 Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings are used to manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
 
-If you want to customize or add more Zebra-specific settings, you can also use Zebra **Mobility Extensions (MX)** on these devices. 
+On Android devices, use **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
+
+This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune.
 
 This feature applies to:
 
@@ -43,8 +44,6 @@ This feature applies to:
 Your company may use Zebra devices for retail, on the factory floor, and more. For example, you're a retailer and your environment includes thousands of Zebra mobile devices used by sales associates. Intune can help manage these devices as part of your mobile device management (MDM) solution.
 
 Using Intune, you can enroll Zebra devices to deploy your line-of-business apps to the devices. "Device configuration" profiles let you create MX profiles to manage your Zebra-specific settings.
-
-This article shows you how to use Zebra Mobility Extensions (MX) on Zebra devices in Microsoft Intune.
 
 ## Before you begin
 
@@ -99,7 +98,7 @@ Continue to publish the profile, and consume it with the StageNow app on the dev
 
 After completing the first two steps, the Company Portal app is installed on the device. The device is ready to be enrolled in to Intune.
 
-[Enroll Android devices](android-enroll.md) lists the steps. If you have many Zebra devices, you may want to use a [device enrollment manager account](device-enrollment-manager-enroll.md).
+[Enroll Android devices](android-enroll.md) lists the steps. If you have many Zebra devices, you may want to use a [device enrollment manager (DEM) account](device-enrollment-manager-enroll.md). Using a DEM account also removes the option to unenroll from the Company Portal app, so that users can't unenroll the device as easily.
 
 ## Step 4: Create a device management profile in StageNow
 
@@ -130,7 +129,7 @@ After you test the file, the next step is to deploy the profile to devices using
 
 In Intune, create a device configuration profile:
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
@@ -153,6 +152,5 @@ The next time the device checks for configuration updates, the MX profile is dep
 
 ## Next steps
 
-[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
-
-[Use StageNow logs to troubleshoot Zebra devices](android-zebra-mx-logs-troubleshoot.md).
+- [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+- [Use StageNow logs to troubleshoot Zebra devices](android-zebra-mx-logs-troubleshoot.md).

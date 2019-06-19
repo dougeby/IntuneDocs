@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -53,5 +52,5 @@ Intune isn't included in licenses not in this list.
 
 A proper license is required if a user benefits directly or indirectly from any feature covered by that license.
 
-To assign a license to a user, see the [Assign Intune licenses to your user accounts article](licenses-assign.md).
+For information about how user and device licenses affect access to services, as well as how to assign a license to a user, see the [Assign Intune licenses to your user accounts article](licenses-assign.md).
 

@@ -2,15 +2,14 @@
 # required metadata
 
 title: Monitor app information and assignments
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: After you've assigned an app to users or devices, use this information to help you monitor the app's status.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/12/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -35,14 +34,13 @@ ms.collection: M365-identity-device-management
 
 Intune provides several ways to monitor the properties of apps that you manage and to manage app assignment status.
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** menu, select **Client apps**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. In the **Intune** pane, select **Client apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the list of apps, select an app to monitor. You'll then see the app pane, which includes an overview of the device status and the user status.
 
 > [!NOTE]
-> Android Store apps that are deployed as **Available** and Android LOB apps deployed as **Available with or without enrollment** do not report their installation status.
+> Android Store apps that are deployed as **Available** do not report their installation status.
 
 ## App overview pane
 
@@ -75,7 +73,7 @@ The graphs show the number of apps for the following status:
 >    - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
 >    - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
 > 
-> Also, be aware that Android apps deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
+> Also, be aware that Android LOB apps (.APK) deployed as **Available with or without enrollment** only report app installation status for enrolled devices. App installation status is not available for devices that are not enrolled in Intune.
 
 ### Device install status
 
@@ -86,7 +84,7 @@ A device status list is shown when you select **Device install status** in the *
 | **Device name**      | The name of the device on platforms that allow naming a device. On other platforms, Intune creates a name from other properties. This attribute isn't available to any other device.                                                                       |
 | **User name**        | The name of the user.                                                                                                                                                                                                                                      |
 | **Platform**         | The operating system of the device (Windows, iOS, Android, and so on).                                                                                                                                                                                           |
-| **Version**          | The version number of the app. For line-of-business (LOB) apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). For Store apps, no versions are shown. |
+| **Version**          | The version number of the app. For line-of-business (LOB) apps and Microsoft Store for Business apps, the full version number of the app is shown. The full version number identifies a specific release of the app. The number appears as _Version_(_Build_). For example,  2.2(2.2.17560800). For standard Store apps, no versions are shown. |
 | **Status**           | The status of the app.                                                                                                                                                                                                                                     |
 | **Status details**   | The details of the status.                                                                                                                                                                                                                                     |
 | **Last check-in**    | The date of the device's last sync with Intune.                                                                                                                                                                                                                  |

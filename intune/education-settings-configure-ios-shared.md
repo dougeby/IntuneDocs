@@ -10,7 +10,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -73,8 +72,7 @@ You can import information into SDS by using one of the following methods:
 
 ### Configure general settings
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
 5. On the profiles pane, choose **Create profile**.
@@ -144,8 +142,7 @@ The profile is created and appears on the profiles list pane.
 
 ## Step 3 - Create a device category
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device enrollment**.
 4. On the **Device enrollment - Overview** pane, choose **Device categories**.
 5. On the **Device enrollment - Device Categories** pane, choose **Create**.
@@ -156,8 +153,7 @@ The device category is created in the **Enrollment – Device Categories** pane.
 
 ## Step 4 – Create a dynamic group
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Groups**.
 4. On the **Users and Groups – All Groups** pane, choose **New group**.
 5. On the **Group** pane, choose a **Group type** and then enter a **Name** and **Description** for the group.
@@ -174,8 +170,7 @@ The dynamic group is created in the **Users and Groups – All Groups** pane.
 
 ## Step 5 – Assign a device to a category (Carts)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Devices**.
 4. On the **Devices** pane, choose **All devices**.
 5. On the **Devices – All devices** pane, choose a device.
@@ -187,8 +182,7 @@ The device is now associated to the device category. Repeat this process for all
 
 ## Step 6 – Create classroom profiles
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 4. On the **Device configuration** pane, choose **Manage** > **Cart Profiles**.
 5. On the profiles pane, choose **Create Profile**.
@@ -203,8 +197,7 @@ The profile is created and appears on the profiles list pane.
 
 ## Step 7 - Assign the Cart Profile to Classes
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 4. On the **Device configuration** pane, choose **Monitor** > **Assignment status**.
 5. On the **Assignment status** pane, select the **Cart Profile** you created.

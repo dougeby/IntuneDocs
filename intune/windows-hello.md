@@ -1,14 +1,14 @@
 ---
 # required metadata
-title: How to integrate Windows Hello for Business with Microsoft Intune | Microsoft Intune
+title: How to integrate Windows Hello for Business with Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -58,15 +58,12 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 ## Create a Windows Hello for Business policy
 
-1. In the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
+1. Sign in to  [Intune](https://ms.portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) in the Azure portal.
+2. Go to **Device enrollment** > **Windows enrollment** > **Windows Hello for Business**.
 
-2. On the Intune pane, choose **Device enrollment**, and then choose **Windows enrollment** > **Windows Hello for Business**.
+3. On the pane that opens, select **Properties**.
 
-3. On the pane that opens, choose the **Default** settings.
-
-4. On the **All Users** pane, click **Properties** and then enter a **Name** and optional **Description** for the Windows Hello for Business settings.
-
-5. On the **All Users** pane, click **Settings** and then choose from the following options for **Configure Windows Hello for Business**:
+4. Select **Settings** and then on the Settings pane, choose from the following options for **Configure Windows Hello for Business**:
 
 	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
 	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.

@@ -11,101 +11,59 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features. 
 
-### Change in enrollment workflow with Intune Company Portal on corporate iOS devices authenticating with Setup Assistant <!-- 1927359 -->
-There's an upcoming change in workflow for enrollment of iOS devices through one of Apple’s corporate device enrollment methods - Apple Configurator, Apple Business Manager, Apple School Manager, or the Apple Device Enrollment Program (DEP), when using Setup Assistant for authentication. This change applies only to devices enrolled with user affinity.
+### Update your Android Company Portal app to the latest version <!--4536963-->
+Intune periodically releases updates to the Android Company Portal App. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google’s change from their existing notification platform to Google’s Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their company portal app to at least November 2018 release to continue communicating with the Google play store.
 
 #### How does this affect me?
-When this change is rolled out in ~~March~~ April, enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. There will be an improved workflow to enroll iOS devices through the methods listed above.
-
-- When enrolling new devices and authenticating with Setup Assistant, you’ll be able to choose whether or not to deploy the Company Portal app automatically. End users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow.  
-- On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, you must take action if you want to enable Conditional Access. You’ll have to configure an app configuration policy with a specific xml to push the Company Portal down to these devices. Directions to do this are in the blog post at the Additional Information link. If you choose to push the Company Portal in this manner, end users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow. 
-- After this change is rolled out, if you haven't deployed the Company Portal with the app configuration profile mentioned above and if end users download the Company Portal app from the App store, they can sign in, but they'll get an error message. They won't be able to use the app for Conditional Access. 
+Our telemetry indicates you have devices with a Company Portal version earlier than 5.0.4269.0. If this version or later of the company portal app is not installed, IT pro initiated device actions like wipe, reset password, available and required app installs, and certificate enrollment may not work as expected. If your devices are MDM enrolled in Intune, then you can see the company portal versions and users by going to Client apps – Discovered apps. Selecting earlier versions of the Company Portal will allow you to see what end users have the devices that haven’t updated the company portal.
 
 #### What do I need to do to prepare for this change?
-If you plan on using the modified workflow, you'll want to update your end user guidance to indicate that:
+Ask end users of Android devices that have not updated to update the company portal through Google play. Notify your help desk in case a user has not kept auto-updating of the company portal app. See the link in Additional Information for more on Google’s FCM platform and change.
 
-- End users will no longer see the two screens mentioned above in the enrollment flow. 
-- They'll need to sign in to the Company Portal when it's automatically deployed and not download it from the app store. 
-
-You can choose to create an app configuration policy now if needed, in preparation for this change. When this new workflow rolls out, you’ll see updated enrollment profiles in the console. We’ll also inform you of this rollout through the Message Center. After this, you’ll need to take the action so your end users can enroll through DEP by authenticating with Setup Assistant and you can use Company Portal for Conditional Access.
-
-See our support blog post at the Additional Information link for more details about this change.
-
-#### Additional Information 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
+#### Additional information
+https://firebase.google.com/docs/cloud-messaging/
 
 
-### Plan for Change: User experience update to Intune Company Portal app for iOS
-We’re excited to share that Intune will soon be releasing a major user experience update to the iOS Company Portal app. The update will feature a visual redesign of the home page with advanced filters and faster access to apps and books.
+### New Fullscreen experience coming to Intune <!--4593669-->
+We’re rolling out updated create and edit UI experiences to Intune in the Azure portal. This new experience will simplify the existing workflows by using a wizard style format condensed within one blade. This update will do away with “blade sprawl” or any create and edit flows that require you to drill down into deep blade journeys. The create workflows will also be updated to include Assignments (except for App assignment).
 
 #### How does this affect me?
-This user experience update, while maintaining current iOS Company Portal functionality, will feature:
-- A home page with native iOS look and feel 
-- Filtering capabilities on content lists and search, including the ability to filter by content type (apps or ebooks) and availability (device management required or available without enrollment)
-- Ability to search ebooks
-- Search history for apps and ebooks
-
-If you’re part of the Apple TestFlight program, you will be notified about the pre-release version of Intune’s updated iOS Company Portal app when it becomes available. If you’re not part of the Apple TestFlight program, it’s not too late to register. Registering will enable you to use the updated Company Portal app before it’s available to your end users. You can also provide feedback directly to the Intune team.  
+The full screen experience will be rolled out to Intune both at portal.azure.com and devicemanagement.microsoft.com over the next few months. This update to the UI will not impact functionality of your existing policies and profiles, but you will see a slightly modified workflow. When you create new policies, for example, you will be able to set some assignments as part of this flow instead of doing so after creating the policy. See the blog post at Additional information for screenshots of what the new experience will look like in the console.
 
 #### What can I do to prepare for this change?
-You don't need to take any action; these changes will be released in an upcoming iOS CP app release. 
+You do not need to take any action but can consider updating your IT pro guidance if necessary. We’ll update our documentation as this experience rolls out to various blades in the Intune on Azure portal.
 
-#### Additional Information
-[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+#### Additional information 
+https://aka.ms/intune_fullscreen
 
-### Check your “Delay Visibility of Software updates” setting in Intune 
-
-We shared in MC171466 that we were moving a few settings around in the console. With the March update to Intune, we'll completely remove the “Delay Visibility of Software updates” setting from the iOS update policy blade. This will not change the way your scheduled software updates apply but it may affect how long the visibility of an update is delayed for end users. You may need to take action before the end of March if you use this setting. 
-
-#### How does this affect me?
-After the February Intune service update, you’ll notice that the setting appears both in Device restriction profiles in the console and in iOS update policies in the Software update blade. When you see this change reflected in the console, here’s what you may need to do.
-
-- For existing Update policies for iOS: If you have custom configured this setting to anything other than the default 30 days, and want your existing configurations for the Delay visibility setting to continue to apply after the end of March, you’ll have to create a new iOS device restriction profile. Here, the Delay visibility setting will need to have the same values as in the existing iOS update policy and be targeted to the same groups. After the March service update, you will no longer be able to edit values for this setting in existing iOS update policies since it will no longer be visible in this blade. You will configure this setting in the new profiles instead.
-  If the value for number of days you can delay visibility does not match in both locations for custom configured setting values, the Delay Visibility setting will not work, and end users will see the update on their devices as soon as it is available. This may have minimal impact for most customers since the other settings in the Software Update Policy blade have always taken precedence over this setting in the console.
-- For new update policies for iOS: If you try to create new policies in the Software updates blade after the Intune February service update, you will see this setting grayed out. You’ll see a note in the console redirecting you to the Device configuration blade if you wish to delay visibility of updates.
-
-#### What can I do to prepare for this change?
-You do not need to take action if you do not use this setting or do not want to delay visibility of software updates for your end users.
-
-If you wish to delay visibility of updates, start configuring the setting in new profiles in the Device Configuration blade under Device Restrictions > General. If you have this setting custom configured in existing iOS update policies, create a new equivalent device restriction profile with the same value for “days” to delay visibility of updates to your users, after the February update and before the March update rolls out. 
-
-You may want to update your IT Pro guidance and inform your helpdesk.
-
-See our support blog post at Additional Information for details on how to configure this setting.
-
-#### Additional Information 
-[https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
-
-### Plan for change: Upcoming fix for Windows 10 email profiles in Intune <!--3904031-->
-We're updating the way Intune writes email profiles for Windows 10 in the April update to the Intune service to fix a bug as well as to ensure your email profiles continue to work in future versions of Windows 10. There is action you need to take after this fix is deployed.
+### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665342-->
+In September, we expect iOS 13 to be released by Apple. Intune enrollment, the Company Portal, and the Managed Browser will move to support iOS 11 and higher shortly after the iOS 13 release.
 
 #### How does this affect me?
-This change impacts you if you use Windows 10 email profiles with
-- The native Mail client on Windows 10 desktops OR
-- The Outlook email client on Windows 10 Mobile
+Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may not affect you; you’ve likely already upgraded your OS or devices. However, if you have any of the devices listed below, or decide to enroll any of the devices listed below, know that the devices below do not support an OS greater than iOS 10. These devices will need to be upgraded to a device that supports iOS 11 or higher:
 
-This impacts both Intune standalone and hybrid Mobile Device Management (MDM) customers.
+- iPhone 5
+- iPhone 5c
+- iPad (4th Generation)
 
-After the April update rolls out, you’ll need to re-create these profiles in the Intune console (in the Configuration Manager admin console if you’re using hybrid MDM).
-
-If you do not take action, here’s what you’ll see for profiles created before the April update:
-
-- Existing e-mail profiles will show up in error state in the Intune console or Configuration Manager admin console, but end users will still have access to email. However, after a subsequent Windows update rolls out, these profiles will not work. End users on devices targeted with these profiles will lose access to email.
-- Edits made to these profiles after April will not be reflected in targeted devices.
-- Selective wipe will not work for removing these profiles even after the fix is rolled out in April.
-
-If you take action and re-create email profiles, end users will have to go through steps similar to those when an email profile is deployed for the first time. Their email will be blocked from syncing until they accept the update that applies the new profile.
+Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP) you can also set the “Require minimum iOS operating system (Warning only)” access setting.
 
 #### What do I need to do to prepare for this change?
-You need to take action only after the fix is rolled out with the April update. We’ll reach out to you through the Message Center when this change goes live so you can start to re-create your profiles in Intune.
+Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.
 
-If you use Windows 10 email profiles in Intune, you will need to take the following steps:
+### Plan for Change: Support for version 8.1.1 and higher of Intune App SDK for iOS <!-- 3586942-->
+Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13 which is expected to come around September and also been announced in MC181399.
 
-1. Capture existing Win 10 profile settings
-2. Unassign and/or delete existing profiles
-3. Create new profiles using the captured settings and assign the new profiles to the same groups
+#### How does this affect me?
+With Intune App SDK or App Wrapping integration, you can protect corporate data from unapproved applications and users via data encryption. The Intune App SDK for iOS will use 256-bit encryption keys by default when encryption is enabled by Intune App Protection Policies (APP). After this change, any iOS apps on SDK versions prior to 8.1.1, which use 128-bit encryption keys, will no longer be able to share data with applications integrated with SDK 8.1.1 or using the 256-bit keys. All iOS apps will need to have an SDK version 8.1.1 or higher to allow protected data sharing.
 
-You may need to notify your end users and let your helpdesk know of this change. Please refer to the support blog post at Additional Information for error details and instructions for re-creating these profiles.
+#### What can I do to prepare for this change?
+Check your Microsoft, third-party, and line-of-business (LOB) apps. You should ensure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
 
-#### Additional Information
-https://aka.ms/Win10EmailProfiles
+- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For infomration on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
+- For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
+
+You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
+
+#### Additional information
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

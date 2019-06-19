@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: What's new in previous months in the Microsoft Intune - Azure | Microsoft Docs
-titlesuffix: 
+titleSuffix: 
 description: Review older announcements from the Intune what's new page
 keywords:
 author: ErikjeMS  
@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 2/25/2019
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -62,7 +61,7 @@ If you have any of the devices listed below, or want to enroll any of the device
 ### Device management
 
 #### Microsoft 365 Device Management administration center <!-- 3078424 -->
-One of the promises of Microsoft 365 is simplified administration, and over the years we’ve integrated the back-end Microsoft 365 services to deliver end-to-end scenarios such as Intune and Azure AD conditional access. The new [Microsoft 365 administration center](http://devicemanagement.microsoft.com) is the place to consolidate, simplify, and integrate the admin experience. The specialist workspace for Device Management provides easy access to all of the device and app management information and tasks that your organization needs. We expect this to become the primary cloud workspace for enterprise end user computing teams.
+One of the promises of Microsoft 365 is simplified administration, and over the years we’ve integrated the back-end Microsoft 365 services to deliver end-to-end scenarios such as Intune and Azure AD Conditional Access. The new [Microsoft 365 administration center](http://devicemanagement.microsoft.com) is the place to consolidate, simplify, and integrate the admin experience. The specialist workspace for Device Management provides easy access to all of the device and app management information and tasks that your organization needs. We expect this to become the primary cloud workspace for enterprise end user computing teams.
 
 
 <!-- ########################## -->
@@ -144,7 +143,7 @@ Compliance policies created in the Azure classic portal will be deprecated. You 
 > When the Azure classic portal retires, you will no longer be able to access or view your compliance policies. Therefore, be sure to export your policies and recreate them in the Azure portal before the Azure classic portal retires.
 
 #### Better Mobile - New Mobile Threat Defense partner <!-- 22662717 -->
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 ### Device enrollment
 
@@ -322,7 +321,7 @@ In **Device compliance** > **Policies** > select a policy > **Overview**, the fo
 An image that shows the device count of a different platform is also shown. For example, if you're looking at an iOS profile, the new tile shows the count of non-iOS devices that are also assigned to this profile. See [Device compliance policies](compliance-policy-monitor.md#view-status-of-device-policies).
 
 #### Device compliance supports 3rd party anti-virus solutions <!-- 2325484 -->
-When you create a device compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: Windows 10 and later** > **Settings** > **System Security**), there are new **[Device Security](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** options: 
+When you create a device compliance policy (**Device compliance** > **Policies** > **Create policy** > **Platform: Windows 10 and later** > **Settings** > **System Security**), there are new **[Device Security](compliance-policy-create-windows.md)** options: 
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
 - **AntiSpyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with Windows Security Center, such as Symantec and Windows Defender. 
 
@@ -370,7 +369,7 @@ You can now manually add corporate device IDs. Choose **Device enrollment** > **
 The Microsoft Edge browser for mobile devices now supports app protection policies defined in Intune.
 
 #### Retrieve the associated app user model ID (AUMID) for Microsoft Store for Business apps in kiosk mode <!-- 1560077 ! -->
-Intune can now retrieve the app user model ids (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
+Intune can now retrieve the app user model IDs (AUMIDs) for Microsoft Store for Business (WSfB) apps to provide improved configuration of the kiosk profile.
 
 For more information about Microsoft Store for Business apps, see [Manage apps from Microsoft Store for Business](windows-store-for-business.md).
 
@@ -381,7 +380,7 @@ The Company Portal branding page has a new layout, messages, and tooltips.
 ### Device configuration
 
 #### Pradeo - New Mobile Threat Defense partner <!-- 1169249 -->
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Pradeo, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 #### Use FIPS mode with the NDES Certificate connector <!-- 1333688 -->
 When you install the NDES Certificate connector on a computer with Federal Information Processing Standard (FIPS) mode enabled, issuing and revoking certificates didn't work as expected. With this update, support for FIPS is included with the NDES Certificate connector. 
@@ -449,10 +448,10 @@ You can now edit the management name field on a device’s **Properties** blade.
 You can now filter the **All devices** list by device category. To do so, choose **Devices** > **All devices** > **Filter** > **Device category**.
 
 #### Use TeamViewer to screen share iOS and MacOS devices <!-- 1985547 -->
-Administrators can now connect to [TeamViewer](device-profile-android-teamviewer.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
+Administrators can now connect to [TeamViewer](teamviewer-support.md), and start a screen sharing session with iOS and macOS devices. iPhone, iPad, and macOS users can share their screens live with any other desktop or mobile device. 
 
 #### Multiple Exchange Connector support <!-- 2070451 -->
-You're no longer limited to one Microsoft Intune Exchange Connector per tenant. Intune now supports multiple Exchange Connectors so that you can set up Intune conditional access with multiple on-premises Exchange organizations.
+You're no longer limited to one Microsoft Intune Exchange Connector per tenant. Intune now supports multiple Exchange Connectors so that you can set up Intune Conditional Access with multiple on-premises Exchange organizations.
 
 With an Intune on-premises Exchange connector, you can manage device access to your on-premises Exchange mailboxes based on whether a device is enrolled in Intune and complies with Intune device compliance policies. To set up a connector, you download the Intune on-premises Exchange connector from the Azure portal and install it on a server in your Exchange organization. On the Microsoft Intune dashboard, choose **On-premises access**, and then under **Setup**, choose **Exchange ActiveSync connector**. Download the Exchange on-premises connector and install it on a server in your Exchange organization. Now that you're no longer limited to one Exchange connector per tenant, if you have additional Exchange organizations, you can follow this same process to download and install a connector for each additional Exchange organization.
 
@@ -471,7 +470,7 @@ To see the Unique Device Identifier (UDID) for iOS and macOS devices, go to **De
 On Microsoft Intune MDM-managed devices, sometimes app installations can fail. When these app installs fail, it can be challenging to understand the failure reason or troubleshoot the issue. We're shipping a Public Preview of our App Troubleshooting features. You will notice a new node under each individual device called **Managed Apps**. This lists the apps that have been delivered via Intune MDM. Inside the node, you'll see a list of app install states. If you select an individual app, you'll see the troubleshooting view for that specific app. In the troubleshooting view, you'll see the end-to-end lifecycle of the app, such as when the app was created, modified, targeted, and delivered to a device. Additionally, if the app install was not successful, you'll be presented with the error code and a helpful message about the cause of the error. 
 
 #### Intune app protection policies and Microsoft Edge <!-- 1818968 -->
-The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
+The Microsoft Edge browser for mobile devices (iOS and Android) now supports Microsoft Intune app protection policies. Users of iOS and Android devices who sign in with their corporate Azure AD accounts in the Microsoft Edge application will be protected by Intune. On iOS devices, the **Require managed browser for web content** policy will allow users to open links in Microsoft Edge when it is managed.
 
 <!-- ########################## -->
 ## May 2018
@@ -480,7 +479,7 @@ The Microsoft Edge browser for mobile devices (iOS and Android) now supports Mic
 
 #### Configuring your app protection policies <!-- 2144597 Part 2 -->
 
-In the Azure portal, instead of going to the Intune App Protection service blade, you now just go to Intune. There is now only one location for app protection policies within Intune. Note that all of your app protection policies are on the **Mobile app** blade in Intune under **App protection policies**. This integration helps to simplify your cloud management administration. Remember, all app protection policies are already in Intune and you can modify any of your previously configured policies. Intune App Policy Protection (APP) and Conditional Access (CA) policies are now under **Conditional access**, which can be found under the **Manage** section in the **Microsoft Intune** blade or under the **Security** section in the **Azure Active Directory** blade. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md)
+In the Azure portal, instead of going to the Intune App Protection service blade, you now just go to Intune. There is now only one location for app protection policies within Intune. Note that all of your app protection policies are on the **Mobile app** blade in Intune under **App protection policies**. This integration helps to simplify your cloud management administration. Remember, all app protection policies are already in Intune and you can modify any of your previously configured policies. Intune App Policy Protection (APP) and Conditional Access (CA) policies are now under **Conditional Access**, which can be found under the **Manage** section in the **Microsoft Intune** blade or under the **Security** section in the **Azure Active Directory** blade. For more information about modifying Conditional Access policies, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md)
 
 ### Device configuration
 
@@ -523,7 +522,7 @@ In the Azure portal within the Microsoft Intune service, we’re going to tempor
 This change will affect both Intune standalone customers and hybrid (Intune with Configuration Manager) customers. This integration will help simplify your cloud management administration.
 
 **What do I need to do to prepare for this change?**
-Please tag **Intune** as a favorite instead of the **Intune App Protection** service blade and ensure you’re familiar with the App protection policy workflow in the **Mobile** app blade within Intune. We’ll redirect for a short period of time and then remove the **App Protection** blade. Remember, all app protection policies are already in Intune and you can modify any of your conditional access policies. For more information about modifying conditional access policies, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md) 
+Please tag **Intune** as a favorite instead of the **Intune App Protection** service blade and ensure you’re familiar with the App protection policy workflow in the **Mobile** app blade within Intune. We’ll redirect for a short period of time and then remove the **App Protection** blade. Remember, all app protection policies are already in Intune and you can modify any of your Conditional Access policies. For more information about modifying Conditional Access policies, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal). For additional information, see [What are app protection policies?](app-protection-policy.md) 
 
 ### Device configuration
 
@@ -618,11 +617,11 @@ On the Enrollment Overview page, you can view the trend of enrollment failures a
 
 #### Advanced Threat Protection (ATP) and Intune are fully integrated <!-- 1629303 -->
 
-[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) conditional access policy can then block access to different apps within your organization.
+[Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) shows the risk level of Windows 10 devices. In Windows Defender Security Center (ATP portal), you can create a connection to Microsoft Intune. Once created, an Intune compliance policy is used to determine an acceptable threat level. If the threat level is exceeded, an Azure Active Directory (AD) Conditional Access policy can then block access to different apps within your organization.
 
 This feature allows ATP to scan files, detect threats, and report any risk on your Windows 10 devices.
 
-See [Enable ATP with conditional access in Intune](advanced-threat-protection.md).
+See [Enable ATP with Conditional Access in Intune](advanced-threat-protection.md).
 
 #### Support for user-less devices <!-- 1637553 -->
 Intune supports the ability to evaluate compliance on a user-less device, such as the Microsoft Surface Hub. Compliance policy can target specific devices. So compliance (and noncompliance) can be determined for devices that don't have an associated user.
@@ -709,7 +708,7 @@ Android Enterprise (formerly known as Android for Work) supports including and e
 ### Export all devices into CSV files in IE, Microsoft Edge, or Chrome <!-- 2258071 -->
 In **Devices** > **All devices**, you can **Export** the devices into a CSV formatted list. Internet Explorer (IE) users with >10,000 devices can successfully export their devices into multiple files. Each file has up to 10,000 devices.
 
-Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
+Microsoft Edge and Chrome users with >30,000 devices can successfully export their devices into multiple files. Each file has up to 30,000 devices.
 
 [Manage devices](device-management.md) provides more details on what you can do with devices you manage.
 
@@ -846,7 +845,7 @@ Protect files and folders from unauthorized changes by unfriendly apps.<br><br>*
 
 ### Azure Active Directory web sites can require the Intune Managed Browser app and support Single Sign-On for the Managed Browser (Public Preview) <!-- 710595 -->
 
-Using Azure Active Directory (Azure AD), you can now restrict access to web sites on mobile devices to the Intune Managed Browser app. In the Managed Browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy. For additional information, see [Access controls in Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls).
+Using Azure Active Directory (Azure AD), you can now restrict access to web sites on mobile devices to the Intune Managed Browser app. In the Managed Browser, web site data will remain secure and separate from end-user personal data. In addition, the Managed Browser will support Single Sign-On capabilities for sites protected by Azure AD. Signing in to the Managed Browser, or using the Managed Browser on a device with another app managed by Intune, allows the Managed Browser to access corporate sites protected by Azure AD without the user having to enter their credentials. This functionality applies to sites like Outlook Web Access (OWA) and SharePoint Online, as well as other corporate sites like intranet resources accessed through the Azure App Proxy. For additional information, see [Access controls in Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls).
 
 #### Company Portal app for Android visual updates <!--976944 -->
 
@@ -1140,7 +1139,7 @@ When you create a SCEP certificate profile in Intune, you can now use the AAD_DE
 ### Device management
 
 #### Manage Jamf-enrolled macOS devices with Intune's device compliance engine <!-- 1592747 -->
-You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), conditional access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
+You can now use Jamf to send macOS device state information to Intune, which will then evaluate it for compliance with policies defined in the Intune console. Based on the device compliance state as well as other conditions (such as location, user risk, etc.), Conditional Access will enforce compliance for macOS devices accessing cloud and on-premises applications connected with Azure AD, including Office 365. Find out more about [setting up Jamf integration](conditional-access-integrate-jamf.md) and [enforcing compliance for Jamf-managed devices](conditional-access-assign-jamf.md).
 
 #### New iOS device action   <!-- 1424701 -->
 
@@ -1278,9 +1277,9 @@ organizations to run secure apps and secure Android images. Intune now supports 
 remote attestation. Admins can set compliance policy requirements that require Google Play Protect to be configured and healthy.
 The **SafetyNet device attestation** setting requires the device to connect with a Google service to verify that the device is
 healthy and is not compromised. Admins can also set a configuration profile setting for Android for Work to require that
-installed apps are verified by Google Play services. If a device is not compliant with Google Play Protect requirements, conditional access might block users from accessing corporate resources.
+installed apps are verified by Google Play services. If a device is not compliant with Google Play Protect requirements, Conditional Access might block users from accessing corporate resources.
 
-- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-google-play-protect).
+- Learn [How to create a device compliance policy to enable Google Play Protect](https://docs.microsoft.com/intune/compliance-policy-create-android).
 
 ### Text protocol allowed from managed Apps <!-- 1414050  -->
 
@@ -1385,7 +1384,7 @@ The Microsoft Planner app for iOS and Android is now part of the approved apps f
 Administrators may now remove Per-App VPN requirements for apps on iOS devices; affected devices will after their next Intune check-in, which generally occurs within 15 minutes.  
 
 ### Support for System Center Operations Manager management pack for Exchange connector <!-- 885457 -->
-The System Center Operations Manager (SCOM) management pack for Exchange connector is now available to help you parse the Exchange connector logs. This feature gives you different ways of monitoring the service when you need to troubleshoot issues.
+The System Center Operations Manager management pack for Exchange connector is now available to help you parse the Exchange connector logs. This feature gives you different ways of monitoring the service when you need to troubleshoot issues.
 
 ### Co-management for Windows 10 devices  <!-- 1243445 -->
 Co-management is a solution that provides a bridge from traditional to modern management, and it provides you with a path to make the transition using a phased approach. At its foundation, co-management is a solution where Windows 10 devices are concurrently managed by Configuration Manager and Microsoft Intune, as well as joined to Active Directory (AD) and Azure Active Directory (Azure AD).  This configuration provides you with a path to modernize over time, at the pace that’s right for your organization if you can’t move all at once.  
@@ -1442,7 +1441,7 @@ Using Intune, you can configure the application control policies either in "audi
 ### Window Defender Exploit Guard is a new set of intrusion prevention capabilities for Windows 10 <!-- 1063615 -->   
 Window Defender Exploit Guard includes custom rules to reduce the exploitability of applications, prevents macro and script threats, automatically blocks network connections to low reputation IP addresses, and can secure data from ransomware and unknown threats. Windows Defender Exploit Guard consists of the following components:
 
-- **Attack Surface Reduction (ASR)** provides rules that allow you to prevent macro, script, and email threats.
+- **Attack Surface Reduction** provides rules that allow you to prevent macro, script, and email threats.
 - **Controlled Folder access** automatically blocks access to content to protected folders.
 - **Network Filter** blocks outbound connection from any app to low rep IP/domain
 - **Exploit Protection** provides memory, control flow, and policy restrictions that can be used to protect an application from exploits.
@@ -1582,8 +1581,8 @@ Company apps that have been made available with or without enrollment on the And
 ### Windows AutoPilot Deployment Program support in Microsoft Intune  <!-- 747617  -->
 You can now use Microsoft Intune with Windows AutoPilot Deployment Program to empower your users to provision their corporate devices without involving IT. You can customize the out-of-box experience (OOBE) and guide users to join their device to Azure AD and enroll in Intune. Working together, Microsoft Intune and Windows AutoPilot eliminate the need to deploy, maintain, and manage operating system images. For details, see [Enroll Windows devices using Windows AutoPilot Deployment Program](https://docs.microsoft.com/intune/enrollment-autopilot).
 
-### Quick start for device enrollment  <!-- 1425655 --> 
-Quick start is now available in **Device enrollment** and provides a table of references for managing platforms and configuring the enrollment process. A brief description of each item and links to documentation with step-by-step instructions provides useful documentation to simplify getting started.
+### Quickstart for device enrollment  <!-- 1425655 --> 
+Quickstart is now available in **Device enrollment** and provides a table of references for managing platforms and configuring the enrollment process. A brief description of each item and links to documentation with step-by-step instructions provides useful documentation to simplify getting started.
 
 ### Device categorization <!-- 1427491 -->
 The enrolled devices platform chart of the **Devices > Overview** blade organizes devices by platform, including Android, iOS, macOS, Windows, and Windows Mobile.  Devices running other operating systems are grouped into "Other."  This includes devices manufactured by Blackberry, NOKIA, and others.  
@@ -1591,10 +1590,10 @@ The enrolled devices platform chart of the **Devices > Overview** blade organize
 To learn which devices are affected in your tenant, choose **Manage > All devices** and then use **Filter** to limit the **OS** field.
 
 ### Zimperium - New Mobile Threat Defense partner   <!-- 954681 -->  
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Zimperium, a Mobile Threat Defense solution that integrates with Microsoft Intune.
 
 #### How integration with Intune works
-Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS conditional access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
+Risk is assessed based on telemetry collected from devices running Zimperium. You can configure EMS Conditional Access policies based on Zimperium risk assessment enabled through Intune device compliance policies, which you can use to allow or block non-compliant devices to access corporate resources based on detected threats.
 
 ### New settings for Windows 10 device restriction profile  <!--- 978575, 1308849, -->  
 We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
@@ -1634,7 +1633,7 @@ To do this, configure an Android custom policy with the setting URI ./Vendor/MSF
 Set this to **TRUE**, and then assign it to the required groups.
 
 ### BitLocker device configuration <!-- 1397398 -->
-The **Windows Encryption > Base Settings** include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires end user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end user.  The new setting disables the end user warning.
+The **Windows Encryption > Base Settings** include a new **Warning for another disk encryption** setting that lets you disable the [warning prompt](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowwarningforotherdiskencryption) for other disk encryption that might be in use on the user's device.  The warning prompt requires end user consent before setting up BitLocker on the device and blocks BitLocker setup until confirmed by the end user.  The new setting disables the end user warning.
 
 
 ### Volume Purchase Program for Business apps will now sync to your Intune Tenant <!-- 800882 -->  
@@ -1685,7 +1684,7 @@ We've improved the device setup workflow in the Company Portal app for Android. 
 
 ### Improved guidance around the request for access to contacts on Android devices <!--1484985-->
 
-The Company Portal app for Android often requires the end user to accept the Contacts permission. If an end user declines this access, they will now see an in-app notification that alerts them to grant it for conditional access. 
+The Company Portal app for Android often requires the end user to accept the Contacts permission. If an end user declines this access, they will now see an in-app notification that alerts them to grant it for Conditional Access. 
 
 ### Secure startup remediation for Android <!--1490712-->
 
@@ -1720,7 +1719,7 @@ The Company Portal app only attempts to enroll supported Samsung Knox devices. T
 Managed apps and the Company Portal app for Android will require Android 4.4 and higher to access company resources. By December, all enrolled devices will be force-retired in December, resulting in loss of access to company resources. If you are using app protection policies without MDM, apps will not receive updates, and the quality of their experience will diminish over time.
 
 ### Inform end users what device information can be seen on enrolled devices <!--1165314-->
-We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the [What information can your company see?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](https://docs.microsoft.com/intune/whats-new#week-of-september-11-2017).
+We are adding **Ownership Type** to the Device Details screen on all Company Portal apps. This will allow users to find out more about privacy directly from the [What information can your company see?](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) article. This will be rolling out across all Company Portal apps in the near future. We announced this for iOS in [September](#september-2017).
 
 <!-- ########################## -->
 ## September 2017
@@ -1770,14 +1769,14 @@ Additionally, you can use the filter pane to search for devices by phone number.
 
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
 
-### Conditional access support for macOS devices 
+### Conditional Access support for macOS devices 
 <!-- 720172 -->
-You can now set a conditional access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
+You can now set a Conditional Access policy that requires Mac devices to be enrolled into Intune and compliant with its device compliance policies. For example, users can download the Intune Company Portal app for macOS and enroll their Mac devices into Intune. Intune evaluate whether the Mac device is compliant or not with requirements like PIN, encryption, OS version, and System Integrity.
 
-- Learn more about [conditional access support for macOS devices](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+- Learn more about [Conditional Access support for macOS devices](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
 ### Company Portal app for macOS is in public preview <!---1484796--->
-The Company Portal app for macOS is now available as part of the public preview for conditional access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
+The Company Portal app for macOS is now available as part of the public preview for Conditional Access in Enterprise Mobility + Security. This release supports macOS 10.11 and above. Get it at [https://aka.ms/macOScompanyportal](https://aka.ms/macOScompanyportal). 
 
 
 ### New device restriction settings for Windows 10    
@@ -1818,11 +1817,11 @@ In this release, we are adding new [device restriction settings](device-restrict
  
 You can specify the app by URL, package name or from the list of apps you manage.
 
-### New Azure AD app-based conditional access policy UI link from Intune
+### New Azure AD app-based Conditional Access policy UI link from Intune
 <!-- 1016201 -->
-IT admins can now set app-based conditional policies via the new conditional access policy UI in the Azure AD workload. The app-based conditional access that is in the Intune App Protection section in the Azure portal will remain there for the time being and will be enforced side-by-side. There’s also a convenience link to the new conditional access policy UI in the Intune workload.
+IT admins can now set app-based conditional policies via the new Conditional Access policy UI in the Azure AD workload. The app-based Conditional Access that is in the Intune App Protection section in the Azure portal will remain there for the time being and will be enforced side-by-side. There’s also a convenience link to the new Conditional Access policy UI in the Intune workload.
 
-- Learn more about [app-based conditional access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
+- Learn more about [app-based Conditional Access on Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
 <!-- ########################## -->
 ## July 2017
@@ -1847,10 +1846,10 @@ For details, see [Synchronize device](device-sync.md)
 A new policy is available from the Software updates workspace where you can force supervised iOS devices to automatically install the latest available software update. For details see, [Configure iOS update policies](/intune/software-updates-ios)
 
 ### Check Point SandBlast Mobile - New Mobile Threat Defense partner  <!-- 954651, 1172027 -->
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Checkpoint SandBlast Mobile, a mobile threat defense solution that integrates with Microsoft Intune.
 
 #### How integration with Intune works?
-Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS conditional access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block noncompliant devices access to corporate resources based on detected threats.
+Risk is assessed based on telemetry collected from devices running Checkpoint SandBlast Mobile. You can configure EMS Conditional Access policies based on Checkpoint SandBlast Mobile risk assessment enabled through Intune device compliance policies. You can allow or block noncompliant devices access to corporate resources based on detected threats.
 
 
 ### Deploy an app as available in the Microsoft Store for Business <!-- 748101 -->
@@ -1895,7 +1894,7 @@ End users are now able to select which group their device belongs to by tagging 
 ## June 2017
 
 ### New role-based administration access for Intune admins   <!-- 1099990 -->  
-A new conditional access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permission so that they have access to conditional access policies.
+A new Conditional Access admin role is being added to view, create, modify, and delete Azure AD Conditional Access policies. Previously, only global admins and security admins had this permission. Intune admins can be granted with this role permission so that they have access to Conditional Access policies.
 
 
 ### Tag corporate-owned devices with serial number <!-- 1215070 -->  
@@ -1905,7 +1904,7 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 ### New remote actions for iOS devices <!-- 854689 -->
 In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
-- 	[Logout current user](device-logout-user.md) - Logs out the current user of an iOS device you choose.
+- 	[Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
 - 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
 
@@ -1927,7 +1926,7 @@ For more information, see [How to add Office 365 apps for Windows 10](apps-add-o
 Offline apps you purchased from the Microsoft Store for Business will now be synchronized to the Azure portal. You can then deploy these apps to device groups, or user groups. Offline apps are installed by Intune, and not by the store.
 
 ### Microsoft teams is now part of the App-based CA list of approved apps   <!-- 1257019 -->
-The Microsoft Teams app for iOS and Android is now part of approved apps for app-based conditional access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based conditional access.
+The Microsoft Teams app for iOS and Android is now part of approved apps for app-based Conditional Access policies for Exchange and SharePoint Online. The app can be configured through the Intune App Protection blade in the Azure portal to all tenants currently using app-based Conditional Access.
 
 ### Managed browser and app proxy integration <!-- 1287310 -->
 The Intune Managed Browser can now integrate with the Azure AD Application Proxy service to let users access internal web sites even when they are working remotely. Users of the browser simply enter the site URL as they normally would and the Managed Browser routes the request through the application proxy web gateway. For more information, see [Manage Internet access using Managed browser policies](app-configuration-managed-browser.md).
@@ -1970,7 +1969,7 @@ This update is only visible on devices running Windows 10 Anniversary Update (bu
 
 
 ### Microsoft Intune and Conditional Access admin consoles are generally available
-We’re announcing the general availability of both the new Intune in the Azure portal admin console and the Conditional Access admin console. Through Intune in the Azure portal, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
+We’re announcing the general availability of both the new Intune in the Azure portal admin console and the Conditional Access admin console. Through Intune in the Azure portal, you can now manage all Intune MAM and MDM capabilities in one consolidated admin experience, and leverage Azure AD grouping and targeting. Conditional Access in Azure brings rich capabilities across Azure AD and Intune together in one unified console. And from an administrative experience, moving to the Azure platform allows you to use modern browsers.
 
 Intune is now visible without the **preview** label in the Azure portal at portal.azure.com.
 
@@ -2147,7 +2146,7 @@ You can now [synchronize books](vpp-apps-ios.md) you purchased from the Apple vo
 Devices that run Samsung Knox Standard are now supported for [multi-user management](android-enroll.md) by Intune. This means that end users can sign in and out of the device with their Azure Active Directory credentials, and the device is centrally managed whether it’s in use or not.  When end-users sign-in, they have access to apps and get any policies applied to them. When users sign out, all app data is cleared.
 
 ### Additional Windows device restriction settings <!-- 818566 -->
-We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
+We've added support for additional [Windows device restriction settings](device-restrictions-windows-10.md) like additional Microsoft Edge browser support, device lock screen customization, start menu customizations, Windows Spotlight search set wallpaper, and proxy setting.
 
 ### Multi-user support for Windows 10 Creators Update <!-- 822547 -->
 We've added support for [multi-user management](windows-enroll.md) for devices that run the Windows 10 Creators Update and are Azure Active Directory domain-joined. This means that when different standard users log into the device with their Azure AD credentials, they will receive any apps and policies that were assigned to their user name. Users cannot currently use the Company Portal for self-service scenarios like installing apps.
@@ -2164,7 +2163,7 @@ You can now create an [edition upgrade policy to upgrade devices](edition-upgrad
 - Windows 10 Professional Education N
 
 ### Bulk Enroll Windows 10 devices <!-- 747607 -->
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will join Azure AD, enroll in Intune, and be ready for your Azure AD users to log on.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](windows-bulk-enroll.md) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will join Azure AD, enroll in Intune, and be ready for your Azure AD users to sign in.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported currently.
 
 ### New MAM settings for PIN and managed storage locations <!-- 581122, 736644 -->
 Two new app settings are now available to help you with mobile application management (MAM) scenarios:

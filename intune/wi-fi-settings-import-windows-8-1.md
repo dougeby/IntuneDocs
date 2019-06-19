@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 07/18/2018
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -49,7 +48,7 @@ On a Windows computer that already has the required WiFi profile installed, use 
 
 ## Import the Wi-Fi settings into Intune
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the device restriction profile.
 

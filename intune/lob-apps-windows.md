@@ -2,15 +2,14 @@
 # required metadata
 
 title: Add a Windows line-of-business app to Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn how to add a Windows line-of-business (LOB) app using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -37,8 +36,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.
@@ -67,7 +65,7 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
 	- **Information URL**: Optionally, enter the URL of a website that contains information about the app. The URL appears in the company portal.
 	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for the app. The URL appears in the company portal.
-	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs. An example is **/q**.
+	- **Command-line arguments**: Optionally, enter any command-line arguments that you want to apply to the .msi file when it runs.  An example is **/q**. Do not include the msiexec command or arguments, such as **/i** or **/x**, as they are automatically used. For more information, see [Command-Line Options](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). If the .MSI file needs additional command-line options consider using [Win32 app management](apps-win32-app-management.md).
 	- **Developer**: Optionally, enter the name of the app developer.
 	- **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
 	- **Notes**: Enter any notes that you want to associate with this app.
@@ -83,6 +81,9 @@ A line-of-business (LOB) app is one that you add from an app installation file. 
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
+    > [!NOTE]
+    > For the Intune service to successfully deploy a new APPX file to the device, you must increment the `Version` string in the AppxManifest.xml file in your APPX package.
+    
 ## Configure a self-updating mobile MSI app to ignore the version check process
 
 You can configure a known self-updating mobile MSI app to ignore the version check process. 
@@ -97,4 +98,4 @@ This capability is useful to avoid getting into a race condition. For instance, 
 
 - Learn more about the ways in which you can monitor the properties and assignment of your app. See [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
+- Learn more about the context of your app in Intune. See [Overview of the app lifecycle in Microsoft Intune](app-lifecycle.md).

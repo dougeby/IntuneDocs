@@ -2,15 +2,14 @@
 # required metadata
 
 title: Assign apps to groups in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Learn how to assign an Intune app to groups of users or devices using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 05/28/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -59,9 +58,8 @@ The following table lists the various options for assigning apps to users and de
 
 ## Assign an app
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. In the **Intune** menu, select **Client apps**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. In the **Intune** pane, select **Client apps**.
 4. In the **Manage** section of the menu, select **Apps**.
 5. In the **Apps** pane, select the app you want to assign.
 6. In the **Manage** section of the menu, select **Assignments**.
@@ -89,7 +87,8 @@ The app is now assigned to the groups that you selected. For more information ab
 
 ## How conflicts between app intents are resolved
 
-Sometimes, the same app is assigned to multiple groups but with different intents. The information in the following table can help you understand the resulting intent when this occurs:
+A single group is prevented from being targetted for multiple app assignment intents, however if a user or a device is a member of multiple groups that are each assigned with different intents it will result in a conflict. Creating assignment conflicts for applications is not recommended.
+The information in the following table can help you understand the resulting intent when a conflict occurs:
 
 | Group 1 intent | Group 2 intent | Resulting intent |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

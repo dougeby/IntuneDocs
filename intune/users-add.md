@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add users and grant permissions
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description:  Synchronize on-premises users with Azure AD and grant administrator permissions for your Intune subscription.
 keywords:
 author: ErikjeMS
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -60,7 +59,7 @@ You can manually add users to your Intune subscription via the [Microsoft 365 ad
 6. Choose **Add** to create the new user.
 
 ### Add Intune users in the Azure portal
-1. Sign in to [Azure portal](https://portal.azure.com) and go **All services** > **Monitoring + Management** > **Intune**. You can also *search resources* for **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Users** > **All users**.
 3. In the Admin center, select **New user**.
    ![Screenshot of add New User](media/intune-add-user.png)

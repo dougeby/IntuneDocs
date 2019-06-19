@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enroll iOS devices in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Set up enrollment of iOS devices in Microsoft Intune.
 keywords:
 author: ErikjeMS
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -74,7 +73,7 @@ Devices configured with user affinity can install and run the Company Portal app
 
 User affinity is required to support the following:
   - Mobile application management (MAM) apps
-  -	Conditional access to email and company data
+  -	Conditional Access to email and company data
   -	Company Portal app
 
 **How users enroll corporate-owned iOS devices with user affinity**
@@ -90,3 +89,6 @@ Devices that are configured with no user affinity do not support the Company Por
 
 If user affinity is required, be sure that the device’s enrollment profile has **User Affinity** selected before enrolling the device. To change the affinity status on a device, you must retire the device and reenroll it.
 
+## See also
+
+[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809)

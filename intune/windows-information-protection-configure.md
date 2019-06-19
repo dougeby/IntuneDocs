@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Windows Information Protection settings in Microsoft Intune | Microsoft Intune
+title: Windows Information Protection settings in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Learn about the Microsoft Intune settings you can use to manage Windows Information Protection.
 keywords:
 author: brenduns
@@ -9,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

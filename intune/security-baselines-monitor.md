@@ -2,14 +2,13 @@
 # required metadata
 
 title: Check the success or failure of security baselines in Microsoft Intune - Azure | Microsoft Docs
-description: Check the error, conflict and success status when deploying security baselines to users and devices in Microsoft Intune MDM. See how to troubleshoot using client logs, and the report features in Intune.
+description: Check the error, conflict, and success status when deploying security baselines to users and devices in Microsoft Intune MDM. See how to troubleshoot using client logs, and the report features in Intune.
 keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -27,53 +26,63 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Monitor the security baseline and profile in Microsoft Intune
+# Monitor security baseline and profiles in Microsoft Intune  
 
-There are different monitoring options when using security baselines. You can monitor the security baselines profile that applies to your users and devices. You can also monitor the actual baseline, and any devices that match (or don't match) the recommended values.
+Intune provides several options to monitor your security baselines. You can monitor the security baselines profile that applies to your users and devices. You can also monitor the actual baseline, and any devices that match (or don't match) the recommended values.
 
 This article walks you through both monitoring options.
 
 [Security baselines in Intune](security-baselines.md) provides more details on the security baselines feature in Microsoft Intune.
 
-## Monitor the baseline and your devices
+## Monitor the baseline and your devices  
 
-When you monitor the baseline, you get insight into the security state of your devices based on Microsoft's recommendations.
+When you monitor a baseline, you get insight into the security state of your devices based on Microsoft's recommendations. You can view these insights from the Overview pane of the security baseline in the Intune console.  It takes up to 24 hours for data to appear after you first assign a baseline. Later changes take up to six hours to appear.  
 
-> [!NOTE]
-> After a baseline is first assigned, reports may take up to 24 hours to update. After that, they may take up to 6 hours to update.
+To view monitoring data for the baseline and devices, sign in to the [Intune portal](https://go.microsoft.com/fwlink/?linkid=2090973). Next, select **Device security** > **Security Baselines (preview)**, select a baseline, and view the **Overview** pane.
 
-1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
-2. Select **Security Baselines (preview)** > select a baseline.
-3. In **Overview**, the graph shows how many devices are impacted by the baseline you chose, and the different statuses:
+The **Overview** pane provides two methods to monitor status:
+- **Device view** – A summary of how many devices are in each status category for the baseline.  
+- **Per-category** - A view that displays each category in the baseline and includes the percentage of devices for each status group for each baseline category. 
 
-    ![Check the status of the devices](./media/security-baselines-monitor/overview.png)
+Each device is represented by one of the following statuses, which are used in both the *device* view, and the *per-category* views:  
+- **Matches baseline** - All the settings in the baseline match the recommended settings.
+- **Does not match baseline** - At least one setting in the baseline doesn't match the recommended settings.
+- **Misconfigured** - At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
+- **Not applicable** - At least one setting isn't applicable, and isn't applied.
 
-    The following statuses are available:
 
-    - **Matches baseline**: All the settings in the baseline match the recommended settings.
-    - **Does not match baseline**: At least one setting in the baseline doesn't match the recommended settings.
-    - **Misconfigured**: At least one setting isn't properly configured. This status means the setting is in a conflict, error, or a pending state.
-    - **Not applicable**: At least one setting isn't applicable, and isn't applied.
-    
-> [!NOTE]
-> If a device has settings in multiple states, the device is classified by the following order of precedence: **Misconfigured**, **Does not match baseline**, **Not applicable**, **Matches baseline**.
+### Device view
+The Overview pane displays a chart-based summary of how many devices have a specific status for the baseline; **Security baseline posture for assigned Windows 10 devices**.  
 
-4. Select one of the statuses that has devices. For example, select the **Misconfigured** status.
+![Check the status of the devices](./media/security-baselines-monitor/overview.png)
 
-5. A list of all the devices with that status is shown. Select a specific device to get more details. 
+When a device has different status from different categories in the baseline, the device is represented by a single status. The status that represents the device is taken from the following order of precedence: **Misconfigured**, **Does not match baseline**, **Not applicable**, **Matches baseline**.  
 
-    In the following example, select **Device configuration** > Select the profile with an Error state:
+For example, if a device has a setting classified as *misconfigured* and one or more settings classified as *Does not match baseline*, the device is classified as *Misconfigured*.  
 
-    ![Check the status of the devices](./media/security-baselines-monitor/device-configuration-profile-list.png)
+You can click on the chart to drill through and view a list of devices with various statuses. You can then select individual devices from that list to view details about individual devices. For example:
+- Select **Device configuration** > Select the profile with an Error state:
 
-    Select the Error profile. A list of all settings in the profile, and their state is shown. Now, you can scroll to find the setting causing the error:
+  ![Check the status of the devices](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![See the setting causing the error](./media/security-baselines-monitor/profile-with-error-status.png)
+- Select the Error profile. A list of all settings in the profile, and their state is shown. Now, you can scroll to find the setting causing the error:
+
+  ![See the setting causing the error](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Use this reporting to see any settings in a profile that are causing an issue. Also get more details of policies and profiles deployed to devices.
 
 > [!NOTE]
 > When a property is set to **Not configured** in the baseline, the setting is ignored, and no restrictions are enforced. The property isn't shown in any reporting.
+
+### Per category view
+The Overview pane displays a per-category chart for the baseline; **Security baseline posture by category**.  This view displays each category from the baseline and identifies the percentage of devices that fall into a status classification for each of those categories. 
+ 
+![Per-Category view of status](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Status for **Matches baseline** does not display until 100% of devices report that status for the category.   
+
+You can sort the by-category view by each column, by selecting up-down arrow icon at the top of the column.  
+
 
 ## Monitor the profile
 

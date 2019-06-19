@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set the mobile device management authority
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Set the mobile device management authority in Intune.
 keywords:
 author: ErikjeMS
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -53,10 +52,8 @@ Possible configurations are:
 
 If you haven't yet set the MDM authority, follow the steps below. To change from one MDM authority to another, see the [change MDM authority](#prepare-to-change-the-mdm-authority-to-configuration-manager) section below.
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Select the orange banner to open the **Mobile Device Management Authority** setting. The orange banner is only displayed if you haven't yet set the MDM authority.
-4. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), select the orange banner to open the **Mobile Device Management Authority** setting. The orange banner is only displayed if you haven't yet set the MDM authority.
+2. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
    - **Intune MDM Authority**
    - **Configuration Manager MDM Authority**
    - **None**
@@ -131,7 +128,7 @@ The MDM certificate is renewed automatically when mobile devices are communicati
 
 ## Remove MDM authority
 
-The MDM authority can't be changed back to Unknown. The MDM authority is used by Microsoft servers to determine which portal that enrolled devices report to (ConfigMGR, Azure Intune, Office 365 MDM).
+The MDM authority can't be changed back to Unknown. The MDM authority is used by the service to determine which portal enrolled devices report to (Microsoft Intune, Configuration Manager, Office 365 MDM).
 
 ## What to expect after changing the MDM authority
 

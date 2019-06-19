@@ -2,15 +2,14 @@
 # required metadata
 
 title: What is Microsoft Intune device enrollment
-titlesuffix: "Microsoft Intune"
+titleSuffix: Microsoft Intune
 description: Learn about enrollment for iOS, Android, and Windows devices.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 4/24/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -72,11 +71,19 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 ## Android enrollment methods
 
-| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
+| **Personal** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./android-enroll.md)|
-|**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](./device-enrollment-manager-enroll.md)|
-|**Android work profiles**| No | Yes | No| [More information](./android-work-profile-enroll.md) |
+|**Android Device Admin**|**User initiated via Company Portal** | No | Yes | No | [More information](https://docs.microsoft.com/intune-user-help/enroll-device-android-company-portal)|
+|**Android Enterprise Work Profile**|**User initiated via Company Portal**| No | Yes | No | [More information](./android-work-profile-enroll.md)|
+
+
+| **Corporate** | **Enrollment Methods** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Android Device Admin**|**[DEM](#device-enrollment-manager) initiated via Company Portal**| No | No | No |[More information](./device-enrollment-manager-enroll.md)|
+|**Android Device Admin**|**(Pre-declared IMEI or SN) User initiated via Company Portal**| No | Yes | No | [More information](./corporate-identifiers-add.md)|
+|**Android Device Admin with Zebra Mobility Extensions**|**User or [DEM](#device-enrollment-manager) initiated via Company Portal**| No | Yes if user initiated, No if [DEM](#device-enrollment-manager) initiated | No | [More information](./android-zebra-mx-overview.md)|
+|**Android Enterprise Dedicated**|**NFC, Token, QR code, Zero Touch**| Yes | No | Configurable via policy | [More information](./android-kiosk-enroll.md)|
+|**Android Enterprise Fully Managed (Preview)**|**NFC, Token, QR code, Zero Touch**| Yes | Yes | Configurable via policy | [More information](./android-dedicated-devices-fully-managed-enroll.md)|
 
 
 ## Bring your own device
@@ -94,7 +101,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 Learn more about iOS DEP enrollment:
 
 - [Choose how to enroll iOS devices](ios-enroll.md)
-- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
+- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
@@ -107,7 +114,7 @@ Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support Conditional Access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 

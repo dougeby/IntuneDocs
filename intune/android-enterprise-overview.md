@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Android Enterprise work profile devices in Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Microsoft Intune manages Android Enterprise work profile devices to provide additional management capabilities and privacy when people use their personal Android devices for work.
 keywords:
 author: ErikjeMS 
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -63,7 +62,7 @@ Android Enterprise doesn’t provide a default email app or native email profile
 
 Intune provides configuration templates for Gmail and Nine Work apps when managed as work apps. Other email apps that support app configuration profiles can be configured with mobile app configuration policies.
 
-If you are using Exchange ActiveSync conditional access for an Android Enterprise work profile device, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
+If you are using Exchange ActiveSync Conditional Access for an Android Enterprise work profile device, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
 
 ## App protection policies
 

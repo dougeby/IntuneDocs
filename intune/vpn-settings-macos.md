@@ -2,7 +2,7 @@
 # required metadata
 
 title: Microsoft Intune VPN settings for macOS devices 
-titlesuffix:
+titleSuffix:
 description: Learn about the Intune settings you can use to configure VPN connections on macOS devices.
 keywords:
 author: MandiOhlinger
@@ -10,7 +10,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

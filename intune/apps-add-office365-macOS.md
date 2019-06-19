@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install Office 365 to macOS devices using Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn how you can use Microsoft Intune to install Office 365 apps on macOS devices.
 keywords:
 author: Erikre
@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/28/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -45,8 +44,7 @@ Before you begin adding Office 365 to macOS devices, understand the following de
 ## Create and configure the app suite
 
 Add Office 365 from the **Apps** pane.
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All Services** > **Monitoring + Management** > **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Manage**, select **Apps**. 
 5. Select **Add**.

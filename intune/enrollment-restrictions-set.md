@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set enrollment restrictions in Microsoft Intune
-titlesuffix:
+titleSuffix:
 description: Restrict enrollment by platform and set a device enrollment limit in Intune.
 keywords:
 author: ErikjeMS
@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -47,10 +46,11 @@ The specific enrollment restrictions that you can create include:
   - iOS
   - macOS
   - Windows
-- Platform operating system version for iOS, Android, Android work profile, and Windows. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
+  - Windows Mobile
+- Platform operating system version for iOS, Android, Android work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows only).
+- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows, and Windows Mobile only).
 
 ## Default restrictions
 
@@ -78,7 +78,7 @@ You can change the settings for a device type restriction by following the steps
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions**.
-4. Under **Device Type Restrictions** > choose the restriction that you want to set > **Properties** > **Select platforms**. Choose **Allow** or **Block** for each platform listed.
+4. Under **Device Type Restrictions**, choose the restriction that you want to set > **Properties** > **Select platforms**. Choose **Allow** or **Block** for each platform listed.
     ![Screen cap for allowing or blocking a platform](media/enrollment-restrictions-set/platform-allow-block.png)
 5. Choose **OK**.
 6. Choose **Configure platforms**.
@@ -89,6 +89,7 @@ You can change the settings for a device type restriction by following the steps
     - Windows supports major.minor.rev.build for Windows 10 only.
 > [!Note]
 > Windows 10 does not provide the build number during enrollment so for instance if you enter in 10.0.17134.100 and the device is 10.0.17134.174 it will be blocked during enrollment.
+
 8. Choose whether to **Allow** or **Block** **Personally owned** devices for each platform listed.
 9. Choose **OK**.
 
@@ -103,12 +104,12 @@ If you block personally owned Windows devices from enrollment, Intune checks to 
 The following methods qualify as being authorized as a Windows corporate enrollment:
  - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
 - The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
-- The device is registered with Windows Autopilot but is not an MDM enrollment only option from Windows Settings.
+- The device is registered with Windows Autopilot but isn't an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
  
-The following enrollments are marked as corporate by Intune, but since they do not offer the Intune administrator per-device control, they will be blocked:
+The following enrollments are marked as corporate by Intune. But since they don't offer the Intune administrator per-device control, they'll be blocked:
  - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join from Windows Settings](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -131,20 +132,21 @@ You can change the settings for a device limit restriction by following these st
 6. Select **Save**.
 
 
-During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS, it looks like this:
+During BYOD enrollments, users see a notification that tells them when they've met their limit of enrolled devices. For example, on iOS:
 
 ![iOS device limit notification](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
 > [!IMPORTANT]
-> Device limit restrictions do not apply for the following Windows enrollment types:
+> Device limit restrictions don't apply for the following Windows enrollment types:
 > - Co-managed enrollments
 > - GPO enrollments
 > - Azure Active Directory joined enrollments
 > - Bulk Azure Active Directory joined enrollments
 > - Autopilot enrollments
+> - Device Enrollment Manager enrollments
 >
 > Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
-> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 

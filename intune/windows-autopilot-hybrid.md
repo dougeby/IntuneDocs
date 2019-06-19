@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -30,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
  
 
-# Deploy hybrid Azure AD-joined devices by using Intune and Windows Autopilot (Preview)
+# Deploy hybrid Azure AD-joined devices by using Intune and Windows Autopilot
 You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory (Azure AD)-joined devices. To do so, follow the steps in this article.
 
 ## Prerequisites
@@ -40,7 +39,7 @@ Successfully configure your [hybrid Azure AD-joined devices](https://docs.micros
 The devices to be enrolled must also:
 - Be running Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
 - Have access to the internet.
-- Have access to your Active Directory (VPN connection not supported).
+- Have access to your Active Directory (VPN connection not supported at this time).
 - Undergo the out-of-box experience (OOBE).
 - Be able to ping the domain controller of the domain you are trying to join.
 
@@ -124,9 +123,12 @@ The Intune Connector for Active Directory must be installed on a computer that's
 > [!NOTE]
 > After you sign in to the Connector, it might take a couple of minutes to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
 
+### Turn off IE Enhanced Security Configuration
+By default Windows Server has Internet Explorer Enhanced Security Configuration turned on. If you are unable to sign in to the Intune Connector for Active Directory then turn off IE Enhanced Security Configuration for the Administrator. [How To Turn Off Internet Explorer Enhanced Security Configuration](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### Configure web proxy settings
 
-If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+If you have a web proxy in your networking environment, ensure that the Intune Connector for Active Directory works properly by referring to [Work with existing on-premises proxy servers](autopilot-hybrid-connector-proxy.md).
 
 
 ## Create a device group
@@ -142,7 +144,7 @@ If you have a web proxy in your networking environment, ensure that the Intune C
 
 1. If you selected **Dynamic Devices** for the membership type, in the **Group** pane, select **Dynamic device members** and then, in the **Advanced rule** box, do one of the following:
     - To create a group that includes all your Autopilot devices, enter `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - To create a group that includes all your Autopilot devices with a specific order ID, enter `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - Intune's Group Tag field maps to the OrderID attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices with a specific Group Tag(OrderID) you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - To create a group that includes all your Autopilot devices with a specific Purchase Order ID, enter `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Select **Save**.
@@ -199,7 +201,7 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 
 ## (Optional) Turn on the enrollment status page
 
-1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page (Preview)**.
+1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 1. In the **Enrollment Status Page** pane, select **Default** > **Settings**.
 1. In the **Show app and profile installation progress** box, select **Yes**.
 1. Configure the other options as needed.
@@ -216,7 +218,17 @@ It takes about 15 minutes for the device profile status to change from *Not assi
 1. Select **Settings**, and then provide a **Computer name prefix**, **Domain name**, and (optional) **Organizational unit** in [DN format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 1. Select **OK** > **Create**.  
     The profile is created and displayed in the list.
-1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile). 
+1. To assign the profile, follow the steps under [Assign a device profile](device-profile-assign.md#assign-a-device-profile) and assign the profile to the same group used at this step [Create a device group](windows-autopilot-hybrid.md#create-a-device-group)
+   - Deploying multiple Domain Join profiles
+   
+     a. Create a dynamic group that includes all your Autopilot devices with a specific Autopilot deployment profile, enter (device.enrollmentProfileName -eq "Autopilot Profile Name"). 
+     
+     b. Replace 'Autopilot Profile Name' with the display name of the profile created under [Create and assign an Autopilot deployment profile](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile). 
+     
+     c. Create multiple Autopilot deployment profiles and assign that device to the profile specified in this dynamic group.
+
+> [!NOTE]
+> The naming capabilities for Windows Autopilot for Hybrid Azure AD Join do not support variables such as %SERIAL% and only support prefixes for the computer name.
 
 ## Next steps
 

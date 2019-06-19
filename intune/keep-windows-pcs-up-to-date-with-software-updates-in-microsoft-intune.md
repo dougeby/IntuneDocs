@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software updates for Windows PCs 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Intune helps you to keep your managed computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

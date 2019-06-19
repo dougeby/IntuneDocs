@@ -2,15 +2,14 @@
 # required metadata
 
 title: App configuration policies for Microsoft Intune
-titlesuffix: 
+titleSuffix: 
 description: Learn how to use app configuration policies on an iOS or Android device in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -31,20 +30,20 @@ ms.collection: M365-identity-device-management
 
 # App configuration policies for Microsoft Intune
 
-Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized. You do not assign these configuration policies directly to users and devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized. You do not assign these configuration policies directly to users or devices. Instead, you associate a configuration policy with an app, and then assign the app. The configuration policy settings are used when the app checks for them, typically the first time it is run.
 
 You can assign an app configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
 
-For example, an app might require you to specify any of the following details:
+An app configuration setting, for example, might require you to specify any of the following details:
 
 - A custom port number
 - Language settings
 - Security settings
 - Branding settings such as a company logo
 
-If users enter these settings incorrectly, it can increase the burden on your help desk and slow the adoption of new apps.
+If users were to enter these settings instead, they could do this incorrectly, which could increase the burden on your help desk and slow the adoption of new apps.
 
-App configuration policies can help you eliminate these problems by letting you assign these settings to users in a policy before they run the app. The settings are then supplied automatically, and users need to take no action.
+App configuration policies can help you eliminate app setup up problems by letting you assign configation settings to a policy that is assigned to users before they run the app. The settings are then supplied automatically, and users need to take no action.
 
 The configuration settings are used whenever the app checks for them. Typically, an app checks for configuration settings the first time the app is run by the user.
 

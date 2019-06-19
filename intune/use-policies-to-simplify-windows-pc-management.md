@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use policies to simplify Windows PC management 
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Describes the Windows PC management policies and the settings for the Microsoft Intune Center.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:

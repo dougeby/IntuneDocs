@@ -8,9 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -42,10 +41,11 @@ There are three different places to monitor the compliance status of MAM policie
 > [!NOTE]
 > For information about creating app protection policies, see [How to create and assign app protection policies](app-protection-policies.md).
 
+The retention period for app protection data is 90 days. Any app instances that have checked in to the MAM service within the past 90 days will be included in the App Protection Status report. An app instance is a unique user + app + device. 
+
 ## Summary view
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 4. In the **Client apps** workload, choose **App protection status** from the **Monitor** section, to see the summary view:
 

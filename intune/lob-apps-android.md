@@ -2,15 +2,13 @@
 # required metadata
 
 title: Add an Android line-of-business app to Microsoft Intune
-titlesuffix:
 description: Learn about how to add a Android line-of-business (LOB) app to Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -43,8 +41,7 @@ A line-of-business (LOB) app is an app that you add to Intune from an app instal
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.
@@ -85,6 +82,8 @@ The app that you created now appears in the list of apps. From the list, you can
 ## Step 5: Update a line-of-business app
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+If **Check apps from external sources** is enabled on the Android device, the user will be prompted before installing the update. Otherwise the update will be installed automatically.
 
 > [!Note]
 > For the Intune service to successfully deploy a new APK file to the device, you must increment the `android:versionCode` string in the AndroidManifest.xml file in your APK package.

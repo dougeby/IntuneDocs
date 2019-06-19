@@ -2,15 +2,14 @@
 # required metadata
 
 title: Quickstart - Send notifications to noncompliant devices
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to send email notifications to noncompliant devices.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -33,18 +32,18 @@ ms.collection: M365-identity-device-management
 
 In this quickstart, you will use Microsoft Intune to send an email notification to the members of your workforce that have noncompliant devices.
 
-By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AAD) [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device is not compliant, Intune allows you to add actions for noncompliance, which gives you flexibility to decide what to do. For example, you can give users a grace period to be compliant before blocking noncompliant devices.
+By default, when Intune detects a device that isn't compliant, Intune immediately marks the device as noncompliant. Azure Active Directory (AAD) [Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) then blocks the device. When a device is not compliant, Intune allows you to add actions for noncompliance, which gives you flexibility to decide what to do. For example, you can give users a grace period to be compliant before blocking noncompliant devices.
 
 One of the actions you can take when devices don't meet compliance is to send email to those end users. You can also customize an email notification before sending it to end users. Specifically, you can customize the recipients, subject, and message body, including company logo, and contact information. Intune will also include details about the noncompliant device in the email notification.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
-- When using device compliance policies to block devices from corporate resources, AAD conditional access must be set up. If you have completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you are using Azure Active Directory. For more information about AAD, see [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md).
+- When using device compliance policies to block devices from corporate resources, AAD Conditional Access must be set up. If you have completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you are using Azure Active Directory. For more information about AAD, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md).
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). 
+Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](users-add.md#types-of-administrators) or an Intune [Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create a notification message template
 
@@ -55,7 +54,7 @@ To send email to your users, create a notification message template. When a devi
 
    - **Name**: *Contoso Admin*
    - **Subject**: *Device compliance*
-   - **Message**: *Your device is currently not meeting our organizations compliance requirements.*
+   - **Message**: *Your device is currently not meeting our organization's compliance requirements.*
    - **Email header – Include company logo**: Set to **Enabled** to show your organization's logo.
    - **Email footer – Include company name**: Set to **Enabled** to show your organization's name.
    - **Email footer – Include contact information**: Set to **Enabled** to show your organization's contact information.
@@ -87,14 +86,13 @@ The following steps will create a compliance policy for Windows 10 devices.
 5. Set **Require a password to unlock mobile devices** to **Require**. This setting specifies whether to require users to enter a password before access is granted to information on their mobile devices. 
 6. Set **Minimum password length** to **6**. This setting specifies the minimum number of digits or characters in the password.
 
-    ![System Security settings for a new compliance policy](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Click **OK**, **OK**, and **Create** to create your compliance policy.
-8. Select the name of your new policy: **Windows 10 compliance**.
-9. Select **Properties** > **Action for noncompliance** > **Add**.
-10. In the **Action** drop-down box, confirm **Send email to end users** is selected.
-11. Select **Message template** > **Contoso Admin** > **Select** to select the message template you created earlier in this topic.
-12. Select **OK** > **OK** > **Save** to save your changes.
+7. Select **OK** > **OK** > **Create** to create your compliance policy.
+8. Select **Properties** > **Action for noncompliance** > **Add**.
+9. In the **Action** drop-down box, confirm **Send email to end users** is selected.
+10. Select **Message template** > **Contoso Admin** > **Select** to select the message template you created earlier in this topic.
+11. Select **ADD** > **OK** > **Save** to save your changes.
 
 ## Assign the policy
 

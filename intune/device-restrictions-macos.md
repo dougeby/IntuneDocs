@@ -2,15 +2,14 @@
 # required metadata
 
 title: macOS device settings in Microsoft Intune - Azure | Microsoft Docs
-titlesuffix:
+titleSuffix:
 description: Add, configure, or create settings on macOS devices to restrict features, including setting password requirements, control the locked screen, use built-in apps, add restricted or approved apps, handle bluetooth devices, connect to the cloud for backup and storage, enable kiosk mode, add domains, and control how users interact with the Safari web browser in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 05/09/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -56,14 +55,27 @@ These settings are added to a device configuration profile in Intune, and then a
 
   - **Delay visibility of software updates**: Enter a value from 0-90 days. When the delay expires, users get a notification to update to the earliest version of the OS available when the delay was triggered.
 
-    For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update on devices. On the **sixth day** following the release, that update is available, and end users can install it.
+    For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update. On the **sixth day** following the release, that update is available, and end users can install it.
 
     This feature applies to:  
     - macOS 10.13.4 and later
 
+- **Screenshots**: Device must be in Apple's Device Enrollment Program (DEP). When set to **Block**, users can't save a screenshot of the display. It also prevents the Classroom app from observing remote screens. **Not configured** (default) allows users to capture screenshots, and allows the Classroom app to view remote screens.
+  - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens.
+
+    This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
+
+  - **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens.
+
+    This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
+
+- **Students must request permission to leave Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever.
+- **Teachers can automatically lock devices or apps in the Classroom app**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets teachers lock a student's device or app without the student's approval. **Not configured** (default) requires the student to agree before the teacher can lock the device or app.
+- **Students can automatically join Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets students join a class without prompting the teacher. **Not configured** (default) requires teacher approval to join a class.
+
 ## Password
 
-- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) doesn't require a password, and doesn't force any restrictions, such as blocking simple passwords or setting a minimum length.
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) doesn't require a password. It also doesn't force any restrictions, such as blocking simple passwords or setting a minimum length.
   - **Required password type**: Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
   - **Number of non-alphanumeric characters in password**: Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, for example "**?**".
   - **Minimum password length**: Enter the minimum length of password a user must configure (between **4** and **16** characters).
@@ -119,6 +131,7 @@ To configure the list, click **Add**, then specify a name of your choice, option
 - **Block iCloud Reminder Backup**: **Block** prevents iCloud from syncing to the macOS Reminders app. **Not configured** (default) allows Reminders synchronization to iCloud.
 - **Block iCloud Bookmark Backup**: **Block** prevents iCloud from syncing the devices Bookmarks. **Not configured** (default) allows Bookmark synchronization to iCloud.
 - **Block iCloud Notes Backup**: **Block** prevents iCloud from syncing the devices Notes. **Not configured** (default) allows Notes synchronization to iCloud.
+- **Block iCloud Photo Library**: **Block** disables iCloud Photo Library, and prevents iCloud from syncing the devices photos. Any photos not fully downloaded from iCloud Photo Library are removed from local storage on the device. **Not configured** (default) allows syncing photos between the device and the iCloud Photo Library.
 
 ## Domains
 

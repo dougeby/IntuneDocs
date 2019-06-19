@@ -1,15 +1,14 @@
 ---
 # required metadata
 
-title: Create Android Enterprise compliance policy in Microsoft Intune - Azure | Microsoft Docs
-description: Create or configure a Microsoft Intune device compliance policy for Android Enterprise or work profile devices. Choose to allow jailbroken devices, set the acceptable threat level, check for Google Play, enter the minimum and maximum operating system version, choose your password requirements, and allow Side-loading applications.
+title: Android Enterprise compliance settings in Microsoft Intune - Azure | Microsoft Docs
+description: See a list of all the settings you can use when setting compliance for your Android Enterprise devices in Microsoft Intune. Set password rules, choose a minimum or maximum operating system version, restrict specific apps, prevent reusing password, and more.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 06/18/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -20,7 +19,7 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -28,51 +27,79 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Add a device compliance policy for Android Enterprise devices in Intune
+# Android Enterprise settings to mark devices as compliant or not compliant using Intune
 
-Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a password length. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md). 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-You can also get device reports, and take actions for non-compliance, such as sending a notification email to the user. To learn more about compliance policies, and any prerequisites, see [get started with device compliance](device-compliance-get-started.md).
+This article lists and describes the different compliance settings you can configure on Android Enterprise devices in Intune. As part of your mobile device management (MDM) solution, use these settings to mark rooted (jailbroken) devices as not compliant, set an allowed threat level, enable Google Play Protect, and more.
 
-This article lists the settings you can use within a compliance policy for devices running Android Enterprise.
+This feature applies to:
 
-## Non-compliance and conditional access
+- Android Enterprise
 
-The following table describes how noncompliant settings are managed when a compliance policy is used with a conditional access policy.
+As an Intune administrator, use these compliance settings to help protect your organizational resources. To learn more about compliance policies, and what they do, see [get started with device compliance](device-compliance-get-started.md).
 
---------------------------
+> [!IMPORTANT]
+> Compliance policies also apply Android Enterprise dedicated devices. If a compliance policy is assigned to a dedicated device, the device may show as **Not compliant**. Conditional Access and enforcing compliance isn't available on dedicated devices. Be sure to complete any tasks or actions to get dedicated devices compliant with your assigned policies.
 
-|**policy setting**| **Android Enterprise profile** |
-| --- | --- |
-| **PIN or password configuration** |  Quarantined |
-| **Device encryption** |  Quarantined |
-| **Jailbroken or rooted device** | Quarantined (not a setting) |
-| **email profile** | Not applicable |
-| **Minimum OS version** | Quarantined |
-| **Maximum OS version** | Quarantined |
-| **Windows health attestation** |Not applicable |
+## Before you begin
 
-**Remediated** = The device operating system enforces compliance. For example, the user is forced to set a PIN.
+[Create a compliance policy](create-compliance-policy.md#create-the-policy). For **Platform**, select **Android Enterprise**.
 
-**Quarantined** = The device operating system doesn't enforce compliance. For example, Android devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
+## Device owner
 
-  - If a conditional access policy applies to the user, the device is blocked.
-  - The company portal notifies the user about any compliance problems.
+### Device properties
 
-## Create a device compliance policy
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as non-compliant. A link with information on how to upgrade is shown. The end user can upgrade their device, and then access organization resources.
+- **Maximum OS version**: When a device is using an OS version later than the version in the rule, access to organization resources is blocked. The user is asked to contact their IT administrator. Until a rule is changed to allow the OS version, this device can't access organization resources.
 
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. For **Platform**, select **Android enterprise**. 
-5. Choose **Settings Configure**. Enter the **Device Health**, **Device Properties**, and **System Security** settings, as described in this article.
+### System security
 
-## Device health
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+
+  This setting is applied at the device level. If you only need to require a password at the work profile level, then use a configuration policy. See [Android Enterprise device configuration settings](device-restrictions-android-for-work.md).
+
+  - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
+    - **Device default**
+    - **Password required, no restrictions**
+    - **Weak biometric**: [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (opens Android's web site)
+    - **Numeric** (default): Password must only be numbers, such as `123456789`. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+    - **Numeric complex**: Repeated or consecutive numbers, such as "1111" or "1234", aren't allowed. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+    - **Alphabetic**: Letters in the alphabet are required. Numbers and symbols aren't required. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+    - **Alphanumeric**: Includes uppercase letters, lowercase letters, and numeric characters. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+    - **Alphanumeric with symbols**: Includes uppercase letters, lowercase letters, numeric characters, punctuation marks, and symbols. Also enter:
+
+      - **Minimum password length**: Enter the minimum length the password must have, between 4 and 16 characters.
+      - **Number of characters required**: Enter the number of characters the password must have, between 0 and 16 characters.
+      - **Number of lowercase characters required**: Enter the number of lowercase characters the password must have, between 0 and 16 characters.
+      - **Number of uppercase characters required**: Enter the number of uppercase characters the password must have, between 0 and 16 characters.
+      - **Number of non-letter characters required**: Enter the number of non-letters (anything other than letters in the alphabet) the password must have, between 0 and 16 characters.
+      - **Number of numeric characters required**: Enter the number of numeric characters (`1`, `2`, `3`, and so on) the password must have, between 0 and 16 characters.
+      - **Number of symbol characters required**: Enter the number of symbol characters (`&`, `#`, `%`, and so on) the password must have, between 0 and 16 characters.
+
+- **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+- **Number of days until password expires**: Enter the number of days, between 1-365, until the device password must be changed. For example, to change the password after 60 days, enter `60`. When the password expires, users are prompted to create a new password.
+- **Number of passwords required before user can reuse a password**: Enter the number of recent passwords that can't be reused, between 1-24. Use this setting to restrict the user from creating previously used passwords.
+
+- **Encryption of data storage on device**: Choose **Require** to encrypt data storage on your devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+
+  You don't have to configure this setting because Android Enterprise devices enforce encryption.
+
+Select **OK** > **Create** to save your changes.
+
+## Work profile
+
+### Device health
 
 - **Rooted devices**: Choose **Block** to mark rooted (jailbroken) devices as not compliant. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
-- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout MTP solution as a condition for compliance. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. To use this setting, choose the allowed threat level:
+- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout Mobile Endpoint Security solution as a condition for compliance. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. To use this setting, choose the allowed threat level:
   - **Secured**: This option is the most secure, and means that the device can't have any threats. If the device is detected with any level of threats, it's evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
   - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+
+#### Google Play Protect
+
 - **Google Play Services is configured**: **Require** that the Google Play services app is installed and enabled. Google Play services allows security updates, and is a base-level dependency for many security features on certified-Google devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Up-to-date security provider**: **Require** that an up-to-date security provider can protect a device from known vulnerabilities. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
@@ -80,50 +107,46 @@ The following table describes how noncompliant settings are managed when a compl
   - **Check basic integrity**
   - **Check basic integrity & certified devices**
 
-#### Threat scan on apps
+> [!NOTE]
+> On Android Enterprise devices, **Threat scan on apps** is a device configuration policy. Using a configuration policy, administrators can enable the setting on a device. See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
 
-On Android Enterprise devices, the **Threat scan on apps** setting is a configuration policy. See [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+### Device properties
 
-## Device properties settings
+- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as non-compliant. A link with information on how to upgrade is shown. The end user can upgrade their device, and then access organization resources.
+- **Maximum OS version**: When a device is using an OS version later than the version in the rule, access to organization resources is blocked. The user is asked to contact their IT administrator. Until a rule is changed to allow the OS version, this device can't access organization resources.
 
-- **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as noncompliant. A link with information on how to upgrade is displayed. The end user can choose to upgrade their device, and then access company resources.
-- **Maximum OS version**: When a device is using an OS version later than the version in the rule, access to company resources is blocked. And, the user is asked to contact their IT admin. Until a rule is changed to allow the OS version, this device can't access company resources.
-
-## System security settings
-
-### Password
+### System security
 
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. This setting is applied at the device level. If you only need to require a password at the work profile level, then use a configuration policy. See [Android Enterprise device configuration settings](device-restrictions-android-for-work.md).
-- **Minimum password length**: Enter the minimum number of digits or characters the user's password must have.
 - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
   - **Device Default**
   - **Low security biometric**
-  - **At least numeric** (default)
-  - **Numeric complex**
-  - **At least alphabetic**
-  - **At least alphanumeric**
-  - **At least alphanumeric with symbols**
+  - **At least numeric** (default): Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **Numeric complex**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **At least alphabetic**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **At least alphanumeric**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
+  - **At least alphanumeric with symbols**: Enter the **minimum password length** a user must enter, between 4 and 16 characters.
 
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
-- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Number of days until password expires**: Select the number of days before the password expires, and the end user must create a new password.
 - **Number of previous passwords to prevent reuse**: Enter the number of recent passwords that can't be reused. Use this setting to restrict the user from creating previously used passwords.
 
-### Encryption
+#### Encryption
 
 - **Encryption of data storage on device**: Choose **Require** to encrypt data storage on your devices. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. 
 
-  You don't have to configure this setting because Android work profile devices enforce encryption.
+  You don't have to configure this setting because Android Enterprise devices enforce encryption.
 
-### Device Security
+#### Device Security
 
-- **Block apps from unknown sources**: Choose to **block** devices with "Security > Unknown Sources" enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
+- **Block apps from unknown sources**: Choose to **block** devices with **Security** > **Unknown Sources** enabled sources (supported on Android 4.0 – Android 7.x; not supported by Android 8.0 and later). When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 
-  To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy. 
+  To side-load apps, unknown sources must be allowed. If you're not side-loading Android apps, then set this feature to **Block** to enable this compliance policy.
 
   > [!IMPORTANT]
   > Side-loading applications require that the **Block apps from unknown sources** setting is enabled. Enforce this compliance policy only if you're not side-loading Android apps on devices.
 
-  You don't have to configure this setting as Android work profile devices always restrict installation from unknown sources.
+  You don't have to configure this setting as Android Enterprise devices always restrict installation from unknown sources.
 
 - **Company portal app runtime integrity**: Choose **Require** to confirm the Company Portal app meets all the following requirements:
 
@@ -136,35 +159,14 @@ On Android Enterprise devices, the **Threat scan on apps** setting is a configur
 
 - **Block USB debugging on device**: Choose **Block** to prevent devices from using the USB debugging feature. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 
-  You don't have to configure this setting because USB debugging is already disabled on Android work profile devices.
+  You don't have to configure this setting because USB debugging is already disabled on Android Enterprise devices.
 
 - **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that aren't at least at this patch level are noncompliant. The date must be entered in the *YYYY-MM-DD* format.
 
-When done, select **OK** > **OK** to save your changes.
-
-## Actions for noncompliance
-
-Select **Actions for noncompliance**. The default action marks the device as noncompliant immediately.
-
-You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
-
-[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
-
-## Scope tags
-
-Scope tags are a great way to assign policies to specific groups, such as Sales, Engineering, HR, and so on. You can add a scope tags to compliance policies. See [Use scope tags to filter policies](scope-tags.md). 
-
-## Assign user groups
-
-Once a policy is created, it's not doing anything until you assign the policy. To assign the policy: 
-
-1. Choose a policy that you've configured. Existing policies are in **Device compliance** > **Policies**.
-2. Choose the policy, and choose **Assignments**. You can include or exclude Azure Active Directory (AD) security groups.
-3. Choose **Selected groups** to see your Azure AD security groups. Select the user groups you want this policy to apply, and choose **Save** to deploy the policy to users.
-
-You've applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
+Select **OK** > **Create** to save your changes.
 
 ## Next steps
-[Automate email and add actions for noncompliant devices](actions-for-noncompliance.md)  
-[Monitor Intune Device compliance policies](compliance-policy-monitor.md)  
-[Compliance policy settings for Android](compliance-policy-create-android.md)
+
+- [Add actions for noncompliant devices](actions-for-noncompliance.md) and [use scope tags to filter policies](scope-tags.md).
+- [Monitor your compliance policies](compliance-policy-monitor.md).
+- See the [compliance policy settings for Android](compliance-policy-create-android.md) devices.

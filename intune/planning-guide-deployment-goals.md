@@ -2,7 +2,7 @@
 # required metadata
 
 title: Determine deployment goals, objectives, and challenges
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: This article helps to determine deployment goals, objectives, and challenges for an Microsoft Intune cloud-only implementation.
 keywords:
 author: dougeby
@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -71,7 +70,7 @@ Deployment objectives are the actions your organization can take to reach its In
 
 -   **Provide secure access to Exchange and SharePoint Online**
 
-    -   **Implementation:** Apply conditional access for Exchange and SharePoint Online.
+    -   **Implementation:** Apply Conditional Access for Exchange and SharePoint Online.
 
 -   **Prevent corporate data from being stored or forwarded to non-corporate services on the mobile device**
 

@@ -2,14 +2,14 @@
 # required metadata
 
 title: Troubleshoot device enrollment
-description: Suggestions for troubleshooting device enrollment issues.
+titleSuffix: Microsoft Intune
+description: Suggestions for troubleshooting device enrollment issues in Microsoft Intune.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
 ms.topic: troubleshooting
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -24,13 +24,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot device enrollment in Intune
+# Troubleshoot device enrollment in Microsoft Intune
 
-This article provides suggestions for troubleshooting device enrollment issues. If this information doesn't solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
+This article provides suggestions for troubleshooting [device enrollment](device-enrollment.md) issues. If this information doesn't solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
 
 
 ## Initial troubleshooting steps
@@ -148,7 +148,7 @@ To avoid hitting device caps, be sure to remove stale device records.
 - have multiple top-level domains for users' UPN suffixes within their organization (for example, @contoso.com or @fabrikam.com).
 
 
-A [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+A [rollup for AD FS 2.0](http://support.microsoft.com/kb/2607496) works in conjunction with the <strong>SupportMultipleDomain</strong> switch to enable the AD FS server to support this scenario without requiring additional AD FS 2.0 servers. For more information, see [this blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## Android issues
@@ -168,7 +168,7 @@ The following table lists errors that end users might see while enrolling Androi
 
 - They can't receive policy, apps, and remote commands from the Intune service.
 - They show a Management State of **Unhealthy** in the administrator console.
-- Users who are protected by conditional access policies might lose access to corporate resources.
+- Users who are protected by Conditional Access policies might lose access to corporate resources.
 
 Samsung Smart Manager software, which ships on certain Samsung devices, can deactivate the Intune Company Portal and its components. When the Company Portal is in a deactivated state, it can't run in the background and can't contact the Intune service.
 
@@ -286,7 +286,7 @@ The following table lists errors that end users might see while enrolling iOS de
 
 - They can't receive policy, apps, and remote commands from the Intune service.
 - They show a Management State of **Unhealthy** in the administrator console.
-- Users who are protected by conditional access policies might lose access to corporate resources.
+- Users who are protected by Conditional Access policies might lose access to corporate resources.
 
 **Resolution:** Share the following resolutions with your end users to help them regain access to corporate resources.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quickstart - Create and assign an app protection policy
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In this quickstart you will use Microsoft Intune to create and assign and app protection policy.
 keywords:
 author: Erikre
@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/26/2019
 ms.topic: quickstart
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -45,7 +44,7 @@ Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator 
 
 ## Create an app protection policy
 
-Use the following steps create an app protection policy:
+Use the following steps to create an app protection policy:
 
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **App protection policies** > **Create Policy**. 
 2. Enter the following details: 
@@ -76,7 +75,7 @@ Use the following steps to assign the app protection policy:
 3.	Select **Assignments**.
 4.	Click **Select groups to include** in the **Include** tab.
 5.	Select **Contoso Testers** as the group to include.
-6.	Click **Select**. 
+6.	Click **Select** > **Save**. 
 
 You now have assigned the app protection policy.
 

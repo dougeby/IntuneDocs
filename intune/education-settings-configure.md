@@ -2,14 +2,13 @@
 # required metadata
 
 title: Add or configure education settings in Microsoft Intune - Azure | Microsoft Docs
-description: Use the Take a Test app in a device configuration profile on Windows 10 and later devices in Microsoft Intune. Create a configuration profile using the Education settiings, and enter a test app URL, choose how users sign-in, monitor the screen during the test, and allow or prevent text suggestions during the test.
+description: Use the Take a Test app in a device configuration profile on Windows 10 and later devices in Microsoft Intune. Create a configuration profile using the Education settings, and enter a test app URL, choose how users sign-in, monitor the screen during the test, and allow or prevent text suggestions during the test.
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -42,7 +41,7 @@ This article lists the steps to create a device configuration profile  in Micros
 
 ## Create a device profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

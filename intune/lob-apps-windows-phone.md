@@ -2,15 +2,14 @@
 # required metadata
 
 title: Add a Windows Phone line-of-business app to Microsoft Intune 
-titlesuffix: 
+titleSuffix: 
 description: Learn how to add a Windows Phone line-of-business (LOB) app using Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -37,8 +36,7 @@ Use the information in this article to add a Windows Phone line-of-business (LOB
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.

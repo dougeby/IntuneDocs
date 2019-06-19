@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 7/31/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -73,7 +72,6 @@ The following devices have been announced as eSIM-capable, or are in-market toda
 - Surface Pro LTE
 - HP Spectre Folio 13
 - Lenovo Yoga C630
-- Samsung Galaxy Book 2
 
 ## Step 1: Add cellular activation codes
 
