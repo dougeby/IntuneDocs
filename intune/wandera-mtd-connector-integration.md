@@ -34,35 +34,46 @@ Complete the following steps to integrate the Wanadera Mobile Threat Defense sol
 
 ## Before you begin  
 
-Before starting the process of integrating Wandera Mobile Threat Protection with Intune, make sure you have the following:  
+Before you start the process to integrate Wandera Mobile Threat Protection with Intune, make sure you have the following prerequisites in place:
 - Microsoft Intune subscription  
 - Azure Active Directory admin credentials to grant the following permissions:  
   - Sign in and read user profile  
   - Access the directory as the signed-in user  
   - Read directory data  
   - Send device information to Intune  
-- Admin credentials to access the Wandera RADAR console.  
+- Wandera subscription, with the the following:
+  - One or more Wandera accounts that are licensed for EMM Connect 
+  - An account with Super administrator privileges in Wandera
+  - To configure the +WiFi functionallity you'll need an additional license.  See [WiFi Functionality](https://wandera.force.com/Customer/s/article/ka1b0000000g5T7AAI?r=21&ui-comm-runtime-components-aura-components-siteforce-qb.Quarterback.validateRoute=1&ui-communities-components-aura-components-forceCommunity-controller.Headline.getInitData=1&ui-communities-components-aura-components-forceCommunity-seoAssistant.SeoAssistant.getSeoData=1&ui-force-components-controllers-recordGlobalValueProvider.RecordGvp.getRecord=1&ui-self-service-components-controller.ArticleTopicList.getTopics=1&ui-self-service-components-controller.ArticleView.getArticleHeaderDetail=1) in the Wandera Knowledge Base.
+
+
 
 ### Wandera Mobile Threat Defense app authorization  
 
-The Wandera Mobile Threat Defense app authorization process follows:  
+The Wandera Mobile Threat Defense app authorization process:  
 - Allow the Wandera Mobile Threat Defense service to communicate information related to device health state back to Intune.  
 - Wandera syncs with Azure AD Enrollment Group membership to populate its device's database.  
-- Allow the Wandera RADAR admin console to use Azure AD Single Sign On (SSO).  
+- Allow the Wandera RADAR admin portal to to use Azure AD Single Sign On (SSO).  
 - Allow the Wandera Mobile Threat Defense app to sign in using Azure AD SSO.  
 
 
+## To set up Wandera Mobile Threat Defense integration
+Setup of *EMM Connect* requires a one-time configuration process that you complete in both the Intune and Wandera consoles. The configuration process takes about 15 minutes, and you can complete the configuration without coordination with your Wandera technical account or support representative. 
+
+If you run into problems or have questions not answered in this article, reach out for technical support. 
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to  **Device compliance** > **Mobile Threat Defense** > and select **Add**.  
+
+2. On the **Add Connector** page, use the dropdown and select **Wandera**. And then select **Create**.  
+
+3. Select the link *Open the Sophos admin console*.  
 
 
 
 
-### Sophos Mobile app authorization  
-  
-The Sophos Mobile app authorization process follows:  
-- Allow the Sophos Mobile service to communicate information related to device health state back to Intune.  
-- Sophos Mobile syncs with Azure AD Enrollment Group membership to populate its device's database.  
-- Allow the Sophos Mobile admin console to use Azure AD Single Sign On (SSO).  
-- Allow the Sophos Mobile app to sign in using Azure AD SSO.  
+
+
+
 
 
 ## To set up Sophos Mobile integration  
