@@ -1832,9 +1832,9 @@ The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the follo
 
 ### Changes to the baseline settings
 The following settings are either:
-- *New* in this latest version of th baseline.
+- *New* in this latest version of the baseline.
 - *Removed* from this latest baseline version, but were present in the previous version.
-- *Revised* in some way from the how the setting appeared in the previous version. 
+- *Revised* in some way from how the settings appeared in the previous version. 
 
 *[New]* [**Above Lock**](#above-lock):
 -  **Voice activate apps from locked screen**    
@@ -2134,7 +2134,7 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
       **Default**: 10  
   
     - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
+      The Maximum password age policy setting determines how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
       
       **Default**: 60  
   
