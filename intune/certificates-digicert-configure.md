@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -303,7 +303,7 @@ The certificate profile OID is associated with a certificate profile template in
    |PKCS certificate parameter | Value | Description |
    | --- | --- | --- |
    | Certificate authority | pki-ws.symauth.com | This value must be the DigiCert CA base service FQDN without trailing slashes. If you aren't sure whether this is the correct base service FQDN for your DigiCert CA subscription, contact DigiCert customer support. <br><br>*With the change from Symantec to DigiCert, this URL remains unchanged*. <br><br> If this FQDN is incorrect, Intune Certificate Connector won't issue PKCS certificates from the DigiCert CA.| 
-   | Certificate authority name | DigiCert | This value must be the string **DigiCert**. <br><br> If there's any change to this value, Intune Certificate Connector won't issue PKCS certificates from the DigiCert CA.|
+   | Certificate authority name | Symantec | This value must be the string **Symantec**. <br><br> If there's any change to this value, Intune Certificate Connector won't issue PKCS certificates from the DigiCert CA.|
    | Certificate template name | Certificate profile OID from the DigiCert CA. For example: **2.16.840.1.113733.1.16.1.2.3.1.1.61904612**| This value must be a certificate profile OID [obtained in the previous section](#get-the-certificate-profile-oid) from the DigiCert CA certificate profile template. <br><br> If Intune Certificate Connector can't find a certificate template associated with this certificate profile OID in the DigiCert CA, it won't issue PKCS certificates from the DigiCert CA.|  
 
    ![Selections for CA and certificate template](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)  
