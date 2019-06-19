@@ -57,41 +57,65 @@ The Wandera Mobile Threat Defense app authorization process:
 - Allow the Wandera Mobile Threat Defense app to sign in using Azure AD SSO.  
 
 
-## To set up Wandera Mobile Threat Defense integration
-Setup of *EMM Connect* requires a one-time configuration process that you complete in both the Intune and Wandera consoles. The configuration process takes about 15 minutes, and you can complete the configuration without coordination with your Wandera technical account or support representative. 
+## To set up Wandera Mobile Threat Defense integration  
+Setup of *EMM Connect* requires a one-time configuration process that you complete in both the Intune and Wandera consoles. The configuration process takes about 15 minutes, and you can complete the configuration without coordination with your Wandera technical account or support representative.  
 
-If you run into problems or have questions not answered in this article, reach out for technical support. 
-
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to  **Device compliance** > **Mobile Threat Defense** > and select **Add**.  
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device compliance** > **Mobile Threat Defense** > and select **Add**.
 
 2. On the **Add Connector** page, use the dropdown and select **Wandera**. And then select **Create**.  
 
-3. Select the link *Open the Sophos admin console*.  
+3. On the Mobile Threat Defense pane, select the **Wandera** MTD Connector from the list of connectors to open the *Edit connector* pane, and then select **Open the Wandera admin console** to open [RADAR](https://radar.wandera.com/login), the Wandera admin console, and sign in. 
 
+4. In the Wandera console, go to **Settings** > **EMM Integration**, and select the **EMM Connect** tab. Use the *EMM Vendor* drop down and select *Microsoft Intune*.
 
+   ![Select Intune](media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
+5. Select **Grant permissions** to open a connection to the Intune portal. Sign in using your Intune admin credentials, select the checkbox and then **Accept** the permissions request.  
 
+   ![Accept permissions](media/wandera-mtd-connector-integration/permissions.png) 
 
+6. Wandera completes the connection and returns you to the RADAR admin console. Repeat the process to **Grant** access for additional configurations, as needed. 
 
+    While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization in a later step.
 
+   ![Integrations and permissions](media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
+7. Sign back in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), and return to edit the Wandera MTD Connector. Set the available toggles to **On**, and the **Save** the configuration.  
 
-## To set up Sophos Mobile integration  
+   ![Enable Wandera](media/wandera-mtd-connector-integration/enable-wandera.png) 
 
-1. Sign in to the [Azure portal]( https://portal.azure.com/), go **Intune** > **Device compliance** > **Mobile Threat Defense** > and select **Add**.  
-2. On the **Add Connector** page, use the dropdown and select **Sophos**. And then select **Create**.  
-3. Select the link *Open the Sophos admin console*.  
-4. Sign in to the [Sophos admin console](https://central.sophos.com/) with your Sophos credentials.  
-5. Go to **Mobile** > **Settings** > **Setup** > **Sophos setup**.  
-6. On the **Sophos setup** page, select the **Intune MTD** tab.  
-   ![Sophos setup](./media/sophos-mtd-connector-integration/sophos-setup.png) 
+8. In the Intune console, go to **Groups** and select **New group**. Specify the following:
+   - **Group type**: **Security**
+   - **Group name**: Specify the **SyncOnly** name from the Wandera RADAR admin console.
+   - **Members**: Assign the Wandera iOS and Android apps to this group, and add the Managed App Configuration for the iOS app.
+  
+   Select **Create** to save the group. 
  
-7. Select **Bind**, and then select **Yes**. Sophos connects to Intune and requires you to sign in to your Intune subscription. 
-8. In the Microsoft Intune authentication window, enter your Intune credentials and **Accept** the permissions request for *Sophos Mobile Thread Defense*.  
-   ![Intune authentication](./media/sophos-mtd-connector-integration/intune-authentication.png)
 
-9. On the **Sophos setup** page, select **Save** to complete the configuration for Intune:  
-   ![Save Sophos setup](./media/sophos-mtd-connector-integration/save-sophos-configuration.png)  
+
+ 
+
+
+ 
+
+
+
+
+
+
+Next, c
+
+
+
+
+
+
+
+
+
+
+
+
 
 1. When the message **Successful Integration** appears, integration is complete.  
 1. In the Intune console, Sophos is now available.  
