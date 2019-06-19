@@ -31,7 +31,7 @@ ms.reviewer: shpate
 
 This article lists and describes the Windows Hello for Business settings you can control on Windows 10 devices in Intune. As an Intune administrator, you can configure and assign these settings to Windows 10 devices as part of your mobile device management (MDM) solution. 
 
-You can find additional information about these settings in [Configure Windows Hello for Business Policy settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), in the WIndows Hello documentation.
+You can find additional information about these settings in [Configure Windows Hello for Business Policy settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings), in the Windows Hello documentation.
 
 
 To learn more about Windows Hello for Business profiles in Intune, see [configure identity protection](identity-protection-configure.md).
