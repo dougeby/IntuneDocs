@@ -1830,7 +1830,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 ## What's changed in the new template
 The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
 
-### Changes to the baseilene settings
+### Changes to the baseline settings
 The following settings are either:
 - *New* in this latest version of th baseline.
 - *Removed* from this latest baseline version, but were present in the previous version.
