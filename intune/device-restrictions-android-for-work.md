@@ -104,6 +104,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   >   - [Assigned to the device group](apps-deploy.md) created for your dedicated devices
   > 
   > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configuration profile are shown as icons on the **Managed Home Screen** app. 
+  >
+  > When using multi-app kiosk mode with Managed Home Screen, dialer/phone apps may not function properly. 
 
   - Choose **Add**, and select your apps from the list.
 
