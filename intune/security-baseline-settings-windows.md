@@ -33,14 +33,15 @@ ms.collection: M365-identity-device-management
 
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
 
-The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)** 
+The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)**  
+
+To learn about what's changed in the latest version of this baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
 > In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for Spring 2019 Update (19H1)* template, which is generaly available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
-> 
-> View [what's changed](#whats-changed-in-the-new-template) between the Preview template and the *MDM Security Baseline for Spring 2019 Update (19H1)* template.
+  
+To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
 
-To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md). 
 
    
 ## Above Lock  
@@ -1829,8 +1830,11 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 ## What's changed in the new template
 The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
 
-### New settings
-The following settings did not appear in the previous template
+### Changes to the baseline settings
+The following settings are either:
+- *New* in this latest version of the baseline.
+- *Removed* from this latest baseline version, but were present in the previous version.
+- *Revised* in some way from how the settings appeared in the previous version. 
 
 *[New]* [**Above Lock**](#above-lock):
 -  **Voice activate apps from locked screen**    
@@ -1856,8 +1860,8 @@ The following settings did not appear in the previous template
 
 *[New]* [**Internet Explorer**](#internet-explorer):
 - **Explorer internet zone updates to status bar via script**
-- **Internet Explorer internet zone drag and drop or copy and paste files** 
-- **Internet Explorer restricted zone .NET Framework reliant components**   
+- **Internet Explorer internet zone drag and drop or copy and paste files**  
+- **Internet Explorer restricted zone .NET Framework reliant components**  
 - **Internet Explorer local machine zone do not run antimalware against Active X controls**
 - **Internet Explorer encryption support**  
 
@@ -2130,7 +2134,7 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
       **Default**: 10  
   
     - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
+      The Maximum password age policy setting determines how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
       
       **Default**: 60  
   
