@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -191,6 +191,14 @@ Kiosk settings also available as device restrictions for [Android](device-restri
 This feature supports:
 
 - Android Enterprise (OEMConfig)
+
+## PowerShell scripts
+
+[PowerShell scripts on Windows 10 devices](intune-management-extension.md) uses the Intune Management Extension to upload your PowerShell scripts in Intune, and then run these scripts on your devices. Also see what's required to use the extension, how to add them to Intune, and other important information.
+
+This feature supports:
+
+- Windows 10 and later
 
 ## Shared multi-user device
 
