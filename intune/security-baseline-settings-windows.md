@@ -77,7 +77,7 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
 
 - **Block MSI app installations with elevated privileges**  
   This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.  
-  - *If you enable this policy setting*, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
+  - *If you enable this policy setting*, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically)f, or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
   - *If you disable or do not configure this policy setting*, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer. Note: This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders. Caution: Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting is not guaranteed to be secure.  
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067134)    
@@ -140,7 +140,7 @@ For more information, see [Policy CSP - Browser](https://docs.microsoft.com/wind
   
   **Default**: Yes  
   
-- **Block unverified file download**
+- **Block unverified file download**  
   By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
@@ -213,7 +213,7 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
    
   **Default**: Enable with UEFI lock 
 
-- **Enable virtualization based security**  </br>
+- **Enable virtualization based security**   
   Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)  
   
@@ -413,8 +413,7 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
 ## Internet Explorer  
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
 
-- **Internet Explorer restricted zone updates to status bar via script
-**  
+- **Internet Explorer restricted zone updates to status bar via script**  
   This policy setting allows you to manage whether script is allowed to update the status bar within the zone. 
   - *If you enable this policy setting*, script is allowed to update the status bar.
   - *If you disable or do not configure this policy setting*, script is not allowed to update the status bar.  
@@ -712,7 +711,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable java 
   
-- **Internet Explorer intranet zone do not run antimalware against Active X controls**
+- **Internet Explorer intranet zone do not run antimalware against Active X controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067138)  
   
@@ -815,7 +814,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: High safety 
   
-- **Internet Explorer block outdated Active X controls**  </br>
+- **Internet Explorer block outdated Active X controls**   
   This policy setting determines whether Internet Explorer blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone. If you enable this policy setting, Internet Explorer stops blocking outdated ActiveX controls. If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls. For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067203)  
   
@@ -833,7 +832,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Enabled  
   
-- **Internet Explorer trusted zone java permissions**  </br>
+- **Internet Explorer trusted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.  
 	[Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
@@ -845,13 +844,13 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable  
   
-- **Internet Explorer locked down restricted zone java permissions**  </br>
+- **Internet Explorer locked down restricted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067181)  
   
   **Default**: Disable java 
   
-- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**  </br>
+- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**   
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067091)  
   
@@ -875,7 +874,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable 
   
-- **Internet Explorer locked down restricted zone smart screen**  </br>
+- **Internet Explorer locked down restricted zone smart screen**   
   This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067092)  
   
@@ -905,7 +904,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Prompt  
   
-- **Internet Explorer restricted zone allow vbscript to run**  </br>  
+- **Internet Explorer restricted zone allow vbscript to run**   
   This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer. If you selected Enable in the drop-down box, VBScript can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run. If you selected Disable in the drop-down box, VBScript is prevented from running. If you don't configure or disable this policy setting, VBScript is prevented from running.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067173)  
   
@@ -929,7 +928,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone download unsigned Active X controls**  </br>
+- **Internet Explorer restricted zone download unsigned Active X controls**  
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067177)  
   
@@ -941,13 +940,13 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer processes restrict Active X install**  </br>
+- **Internet Explorer processes restrict Active X install**   
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation. If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes. If you disable or don't configure this policy setting, the Web Browser Control won't block automatic prompting of ActiveX control installation for all processes.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067250)  
   
   **Default**: Enabled  
   
-- **Internet Explorer internet zone scriptlets**
+- **Internet Explorer internet zone scriptlets**  
   This policy setting allows you to manage whether the user can run scriptlets. If you enable this policy setting, the user can run scriptlets. If you disable this policy setting, the user can't run scriptlets. If you don't configure this policy setting, the user can enable or disable scriptlets.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -959,13 +958,13 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable  
   
-- **Internet Explorer software when signature is invalid** </br>
+- **Internet Explorer software when signature is invalid**  
   This policy setting allows you to manage whether software, such as ActiveX controls and file downloads, can be installed or run by the user even though the signature is invalid. An invalid signature might indicate that someone has tampered with the file. If you enable this policy setting, users are prompted to install or run files with an invalid signature. If you disable this policy setting, users can't run or install files with an invalid signature. If you don't configure this policy, users can choose to run or install files with an invalid signature.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067201)
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone copy and paste via script** </br> 
+- **Internet Explorer restricted zone copy and paste via script**  
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can't perform a clipboard operation.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067165)  
   
@@ -1001,7 +1000,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable java 
   
-- **Internet Explorer restricted zone do not run antimalware against Active X controls**  </br>
+- **Internet Explorer restricted zone do not run antimalware against Active X controls**   
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067089)
   
@@ -1019,19 +1018,19 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable 
   
-- **Internet Explorer internet zone don't run antimalware against ActiveX controls**  </br>
+- **Internet Explorer internet zone don't run antimalware against ActiveX controls**  
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067162)  
   
   **Default**: Disabled  
   
-- **Internet Explorer internet zone copy and paste via script** </br> 
+- **Internet Explorer internet zone copy and paste via script**  
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can perform a clipboard operation.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067084)  
   
   **Default**: Disable  
   
-- **Internet Explorer use Active X installer service**  </br>
+- **Internet Explorer use Active X installer service**  
   This policy setting allows you to specify how ActiveX controls are installed. If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls. If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067163)
   
@@ -1043,13 +1042,13 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Enabled  
   
-- **Internet Explorer internet zone download unsigned ActiveX controls**  </br>
+- **Internet Explorer internet zone download unsigned ActiveX controls**   
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067325)
   
   **Default**: Disable  
   
-- **Internet Explorer internet zone navigate windows and frames across different domains**  </br>
+- **Internet Explorer internet zone navigate windows and frames across different domains**   
   This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users can't open windows and frames to access applications from different domains. If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067083)  
   
@@ -1061,19 +1060,19 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone include local path when uploading files to server**  </br> 
+- **Internet Explorer restricted zone include local path when uploading files to server**  
   This policy setting controls if local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067085)  
   
   **Default**: Disabled  
   
-- **Internet Explorer processes restrict file download**  </br> 
+- **Internet Explorer processes restrict file download**   
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of file downloads that aren't user initiated. If you enable this policy setting, the Web Browser Control will block automatic prompting of file downloads that aren't user initiated for all processes. If you disable this policy setting, the Web Browser Control won't block automatic prompting of file downloads that aren't user initiated for all processes.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067164)  
   
   **Default**: Enabled  
   
-- **Internet Explorer restricted zone allow only approved domains to use Active X controls**  </br>
+- **Internet Explorer restricted zone allow only approved domains to use Active X controls**   
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067233)  
   
@@ -1169,12 +1168,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Authentication level**  
   This security setting determines which challenge/response authentication protocol is used for network logons. This choice affects the level of authentication protocol used by clients, the level of session security negotiated, and the level of authentication accepted by servers as follows:  
-  - *Send LM and NTLM responses*: Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send LM and NTLM - NTLMv2 if negotiated*: Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLM response only*: Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
-  - *Send NTLMv2 response only. Refuse LM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). 
-  - *Send NTLMv2 response only. Refuse LM and NTLM*: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).  
+  - *Send LM and NTLM responses* - Clients use LM and NTLM authentication and never use NTLMv2 session security; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
+  - *Send LM and NTLM - NTLMv2 if negotiated* - Clients use LM and NTLM authentication and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
+  - *Send NTLM response only* - Clients use NTLM authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
+  - *Send NTLMv2 response only* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers accept LM, NTLM, and NTLMv2 authentication. 
+  - *Send NTLMv2 response only. Refuse LM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM (accept only NTLM and NTLMv2 authentication). 
+  - *Send NTLMv2 response only. Refuse LM and NTLM* - Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).  
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067189)   
     
@@ -1194,12 +1193,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Administrator elevation prompt behavior**  
   This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-    - *Elevate without prompting*: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-    - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-    - *Prompt for consent on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-    - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-    - *Prompt for consent*: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries*: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+    - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
+    - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+    - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+    - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+    - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
+    - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1207,8 +1206,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Minimum session security for NTLM SSP based clients**  
   This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
-  - Require NTLMv2 session security: The connection will fail if NTLMv2 protocol isn't negotiated. 
-  - *Require 128-bit encryption*: The connection will fail if strong encryption (128-bit) isn't negotiated.
+  - *Require NTLMv2 session security* - The connection will fail if NTLMv2 protocol isn't negotiated. 
+  - *Require 128-bit encryption* - The connection will fail if strong encryption (128-bit) isn't negotiated.
   - *Require NTLMv2 and 128-bit encryption*.  
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067324)  
@@ -1244,9 +1243,9 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Standard user elevation prompt behavior**  
   This policy setting controls the behavior of the elevation prompt for standard users. 
-  - *Automatically deny elevation requests*: When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. 
-  - *Prompt for credentials on the secure desktop*: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Prompt for credentials*: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  
+  - *Automatically deny elevation requests* - When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls. 
+  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.  
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067183)  
   
@@ -1254,8 +1253,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Require admin approval mode for administrators**  
   This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer. The options are:   
-  - *Not configured*: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced. 
-  - *Yes*: Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.  
+  - *Not configured* - Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced. 
+  - *Yes* - Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.  
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067184)  
   
@@ -1263,8 +1262,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Prevent anonymous enumeration of SAM accounts**  
   This security setting determines what additional permissions are granted for anonymous connections to the computer. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to grant access to users in a trusted domain that doesn't maintain a reciprocal trust. This security option allows additional restrictions to be placed on anonymous connections as follows: 
-  - *Yes*: Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
-  - *Not configured*: No additional restrictions. Rely on default permissions.  
+  - *Yes* - Don't allow enumeration of SAM accounts. This option replaces Everyone with Authenticated Users in the security permissions for resources.
+  - *Not configured* - No additional restrictions. Rely on default permissions.  
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067318)  
 
@@ -1278,8 +1277,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
 
 - **Use admin approval mode**  
   This policy setting controls the behavior of Admin Approval Mode for the built-in Administrator account. The options are: 
-  - *Yes*: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
-  - *Not Configured*: The built-in Administrator account runs all applications with full administrative privilege. 
+  - *Yes* - The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege will prompt the user to approve the operation. 
+  - *Not Configured* - The built-in Administrator account runs all applications with full administrative privilege. 
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067186)  
 
@@ -1287,8 +1286,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Allow UI access applications for secure locations**  
   This policy setting controls whether User Interface Accessibility (UIAccess or UIA) programs can automatically disable the secure desktop for elevation prompts used by a standard user. 
-  - *Yes*: UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
-  - *Not Configured*: The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.  
+  - *Yes* - UIA programs, including Windows Remote Assistance, automatically disable the secure desktop for elevation prompts. If you don't disable the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting, the prompts appear on the interactive user's desktop instead of the secure desktop. 
+  - *Not Configured*: - The secure desktop can be disabled only by the user of the interactive desktop or by disabling the "User Account Control: Switch to the secure desktop when prompting for elevation" policy setting.  
 
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067185)  
 
@@ -1296,8 +1295,8 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
 
 - **Detect application installations and prompt for elevation**  
   This policy setting controls the behavior of application installation detection for the computer. The options are: 
-  - *Enabled*: When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-  - *Disabled*: Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.  
+  - *Enabled* - When an application installation package is detected that requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+  - *Disabled* - Application installation packages aren't detected and prompted for elevation. Enterprises that are running standard user desktops and use delegated installation technologies such as Group Policy Software Installation or Systems Management Server (SMS) should disable this policy setting. In this case, installer detection is unnecessary.  
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067208)  
 
@@ -1405,14 +1404,17 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
 
   **Default**: Disable Remote Assistance
 
-  When set to *Enable Remote Assistance*, configure the following additional settings:
-  - **Remote Assistance solicited permission**
-    **Default**: View
+  When set to *Enable Remote Assistance*, configure the following additional settings:  
+  - **Remote Assistance solicited permission**  
+    **Default**: View  
+
   - **Maximum ticket time value**  
-    **Default**: *Not configured*
+    **Default**: *Not configured*  
+
   - **Maximum ticket time period**  
-    **Default**: Minutes  
-  - **E-Mail invitation method**
+    **Default**: Minutes    
+
+  - **E-Mail invitation method**  
     **Default**: Simple MAPI
 
   
@@ -1445,9 +1447,9 @@ For more information, see [Policy CSP - RemoteDesktopServices](https://docs.micr
   
 - **Remote desktop services client connection encryption level**  
   Specifies whether to require the use of a specific encryption level to secure communications between client computers and RD Session Host servers during Remote Desktop Protocol (RDP) connections. This policy only applies when you're using native RDP encryption. However, native RDP encryption (as opposed to SSL encryption) isn't recommended. This policy doesn't apply to SSL encryption. If you enable this policy setting, all communications between clients and RD Session Host servers during remote connections must use the encryption method specified in this setting. By default, the encryption level is set to High. The following encryption methods are available:  
-  - *High*: The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that don't support this encryption level can't connect to RD Session Host servers.  
-  - *Client Compatible*: The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that don't support 128-bit encryption.  
-  - *Low*: The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.  
+  - *High* - The High setting encrypts data sent from the client to the server and from the server to the client by using strong 128-bit encryption. Use this encryption level in environments that contain only 128-bit clients (for example, clients that run Remote Desktop Connection). Clients that don't support this encryption level can't connect to RD Session Host servers.  
+  - *Client Compatible* - The Client Compatible setting encrypts data sent between the client and the server at the maximum key strength supported by the client. Use this encryption level in environments that include clients that don't support 128-bit encryption.  
+  - *Low* - The Low setting encrypts only data sent from the client to the server by using 56-bit encryption.  
   
   If you disable or don't configure this setting, the encryption level to be used for remote connections to RD Session Host servers isn't enforced through Group Policy. Important FIPS compliance can be configured through the System cryptography. Use FIPS-compliant algorithms for encryption, hashing, and signing settings in Group Policy (under Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options.) The FIPS-compliant setting encrypts and decrypts data sent from the client to the server and from the server to the client, with the Federal Information Processing Standard (FIPS) 140 encryption algorithms, by using Microsoft cryptographic modules. Use this encryption level when communications between clients and RD Session Host servers requires the highest level of encryption.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067222)  
@@ -1458,7 +1460,7 @@ For more information, see [Policy CSP - RemoteDesktopServices](https://docs.micr
 For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in the Windows documentation.  
 
 - **Block storing run as credentials**  
-  Client basic authentication  
+  Client basic authentication.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067300)  
   
   **Default**: Enabled
@@ -1538,9 +1540,9 @@ For more information, see [Policy CSP - System](https://docs.microsoft.com/windo
 
 - **System boot start driver initialization**  
   This policy setting allows you to specify which boot-start drivers are initialized based on a classification determined by an Early Launch Antimalware boot-start driver. The Early Launch Antimalware boot-start driver can return the following classifications for each boot-start driver: 
-  - *Good*: The driver has been signed and hasn't been tampered with.  
+  - *Good* - The driver has been signed and hasn't been tampered with.  
   - *Bad* - The driver has been identified as malware. We recommend that you don't allow known bad drivers to be initialized. 
-  - *Bad, but required for boot*: The driver has been identified as malware, but the computer can't successfully boot without loading this driver. 
+  - *Bad, but required for boot* - The driver has been identified as malware, but the computer can't successfully boot without loading this driver. 
   - *Unknown* - This driver hasn't been attested to by your malware detection application and hasn't been classified by the Early Launch Antimalware boot-start driver.  
 
   If you enable this policy setting, you can choose which boot-start drivers to initialize the next time the computer is started. If you disable or don't configure this policy setting, the boot start drivers determined to be Good, Unknown, or Bad but Boot Critical are initialized and the initialization of drivers determined to be Bad is skipped. If your malware detection application doesn't include an Early Launch Antimalware boot-start driver or if your Early Launch Antimalware boot-start driver has been disabled, this setting has no effect and all boot-start drivers are initialized.  
@@ -1620,7 +1622,8 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   
   **Default**: Block
 
-- **Adobe Reader Launch in a child process** 
+- **Adobe Reader Launch in a child process**  
+
   **Default**: Enable
 
 - **Network protection type**  
@@ -1702,7 +1705,8 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   
   **Default**: Yes
  
-- **Office communication apps launch in a child process** 
+- **Office communication apps launch in a child process**  
+
   **Default**:  Enable
 
 - **Office apps executable content creation or launch type**  
@@ -1858,7 +1862,7 @@ The following settings did not appear in the previous template
 - **Internet Explorer encryption support**  
 
 *[Revised]* [**Internet Explorer**](#internet-explorer):
-- **Internet Explorer internet zone automatic prompt for file downloads** > *The default value is now **Disabled**. In preview this was set to Enabled.*
+- **Internet Explorer internet zone automatic prompt for file downloads** > The default value is now **Disabled**. In preview this was set to Enabled.
 
 *[New]* [**Remote Assistance**](#remote-assistance):  
 - **Remote Assistance solicited** 
@@ -2055,7 +2059,7 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
    
   **Default**: Enable with UEFI lock 
 
-- **Enable virtualization based security**  </br>
+- **Enable virtualization based security**   
   Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.
   
   **Default**: Yes  
@@ -2531,7 +2535,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: High safety 
   
-- **Internet Explorer block outdated Active X controls**  </br>
+- **Internet Explorer block outdated Active X controls**  
   This policy setting determines whether Internet Explorer blocks specific outdated ActiveX controls. Outdated ActiveX controls are never blocked in the Intranet Zone. If you enable this policy setting, Internet Explorer stops blocking outdated ActiveX controls. If you disable or don't configure this policy setting, Internet Explorer continues to block specific outdated ActiveX controls. For more information, see "Outdated ActiveX Controls" in the Internet Explorer TechNet library.
   
   **Default**: Enabled  
@@ -2546,7 +2550,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Enabled  
   
-- **Internet Explorer trusted zone java permissions**  </br>
+- **Internet Explorer trusted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.
   
   **Default**: High safety  
@@ -2556,12 +2560,12 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable  
   
-- **Internet Explorer locked down restricted zone java permissions**  </br>
+- **Internet Explorer locked down restricted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, Java applets are disabled.
   
   **Default**: Disable java 
   
-- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**  </br>
+- **Internet Explorer internet zone allow only approved domains to use ActiveX controls**   
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
   
   **Default**: Enabled  
@@ -2581,7 +2585,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable 
   
-- **Internet Explorer locked down restricted zone smart screen**  </br>
+- **Internet Explorer locked down restricted zone smart screen**   
   This policy setting controls whether SmartScreen Filter scans pages in this zone for malicious content. If you enable this policy setting, SmartScreen Filter scans pages in this zone for malicious content. If you disable this policy setting, SmartScreen Filter doesn't scan pages in this zone for malicious content. If you don't configure this policy setting, the user can choose whether SmartScreen Filter scans pages in this zone for malicious content. Note: In Internet Explorer 7, this policy setting controls whether Phishing Filter scans pages in this zone for malicious content.
   
   **Default**: Enabled  
@@ -2606,7 +2610,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Prompt  
   
-- **Internet Explorer restricted zone allow vbscript to run**  </br>  
+- **Internet Explorer restricted zone allow vbscript to run**  
   This policy setting allows you to manage whether VBScript can be run on pages from the specified zone in Internet Explorer. If you selected Enable in the drop-down box, VBScript can run without user intervention. If you selected Prompt in the drop-down box, users are asked to choose whether to allow VBScript to run. If you selected Disable in the drop-down box, VBScript is prevented from running. If you don't configure or disable this policy setting, VBScript is prevented from running.
   
   **Default**: Disable  
@@ -2626,7 +2630,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone download unsigned Active X controls**  </br>
+- **Internet Explorer restricted zone download unsigned Active X controls**   
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.
   
   **Default**: Disable  
@@ -2636,7 +2640,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer processes restrict Active X install**  </br>
+- **Internet Explorer processes restrict Active X install**   
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of ActiveX control installation. If you enable this policy setting, the Web Browser Control will block automatic prompting of ActiveX control installation for all processes. If you disable or don't configure this policy setting, the Web Browser Control won't block automatic prompting of ActiveX control installation for all processes.
   
   **Default**: Enabled  
@@ -2651,18 +2655,18 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable  
   
-- **Internet Explorer software when signature is invalid** </br>
+- **Internet Explorer software when signature is invalid**   
   This policy setting allows you to manage whether software, such as ActiveX controls and file downloads, can be installed or run by the user even though the signature is invalid. An invalid signature might indicate that someone has tampered with the file. If you enable this policy setting, users are prompted to install or run files with an invalid signature. If you disable this policy setting, users can't run or install files with an invalid signature. If you don't configure this policy, users can choose to run or install files with an invalid signature.
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone copy and paste via script** </br> 
+- **Internet Explorer restricted zone copy and paste via script**   
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can't perform a clipboard operation.
   
   **Default**: Disable  
   
 - **Internet Explorer restricted zone drag content from different domains across windows**  
-  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.  <br><br>
+  This policy setting allows you to set options for dragging content from one domain to a different domain when the source and destination are in different windows. If you enable this policy setting and click Enable, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting. If you enable this policy setting and click Disable, users can't drag content from one domain to a different domain when both the source and destination are in different windows. Users can't change this setting. In Internet Explorer 10, if you disable this policy setting or don't configure it, users can't drag content from one domain to a different domain when the source and destination are in different windows. Users can change this setting in the Internet Options dialog. In Internet Explorer 9 and earlier versions, if you disable this policy or don't configure it, users can drag content from one domain to a different domain when the source and destination are in different windows. Users can't change this setting.   
   **Default**: Disabled  
   
 - **Internet Explorer users adding sites**  
@@ -2685,7 +2689,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable java 
   
-- **Internet Explorer restricted zone do not run antimalware against Active X controls**  </br>
+- **Internet Explorer restricted zone do not run antimalware against Active X controls**   
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
   
   **Default**: Disabled  
@@ -2700,17 +2704,17 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable 
   
-- **Internet Explorer internet zone don't run antimalware against ActiveX controls**  </br>
+- **Internet Explorer internet zone don't run antimalware against ActiveX controls**   
   This policy setting determines whether Internet Explorer runs antimalware programs against ActiveX controls, to check if they're safe to load on pages. If you enable this policy setting, Internet Explorer won't check with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you disable this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. If you don't configure this policy setting, Internet Explorer always checks with your antimalware program to see if it's safe to create an instance of the ActiveX control. Users can turn this behavior on or off, using Internet Explorer Security settings.
   
   **Default**: Disabled  
   
-- **Internet Explorer internet zone copy and paste via script** </br> 
+- **Internet Explorer internet zone copy and paste via script**  
   This policy setting allows you to manage whether scripts can perform a clipboard operation (for example, cut, copy, and paste) in a specified region. If you enable this policy setting, a script can perform a clipboard operation. If you select Prompt in the drop-down box, users are queried as to whether to perform clipboard operations. If you disable this policy setting, a script can't perform a clipboard operation. If you don't configure this policy setting, a script can perform a clipboard operation.
   
   **Default**: Disable  
   
-- **Internet Explorer use Active X installer service**  </br>
+- **Internet Explorer use Active X installer service**   
   This policy setting allows you to specify how ActiveX controls are installed. If you enable this policy setting, ActiveX controls are installed only if the ActiveX Installer Service is present and has been configured to allow the installation of ActiveX controls. If you disable or don't configure this policy setting, ActiveX controls, including per-user controls, are installed through the standard installation process.
   
   **Default**: Enabled  
@@ -2720,12 +2724,12 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Enabled  
   
-- **Internet Explorer internet zone download unsigned ActiveX controls**  </br>
+- **Internet Explorer internet zone download unsigned ActiveX controls**   
   This policy setting allows you to manage whether users may download unsigned ActiveX controls from the zone. Such code is potentially harmful, especially when coming from an untrusted zone. If you enable this policy setting, users can run unsigned controls without user intervention. If you select Prompt in the drop-down box, users are queried to choose whether to allow the unsigned control to run. If you disable this policy setting, users can't run unsigned controls. If you don't configure this policy setting, users can't run unsigned controls.
   
   **Default**: Disable  
   
-- **Internet Explorer internet zone navigate windows and frames across different domains**  </br>
+- **Internet Explorer internet zone navigate windows and frames across different domains**   
   This policy setting allows you to manage the opening of windows and frames and access of applications across different domains. If you enable this policy setting, users can open windows and frames from other domains and access applications from other domains. If you select Prompt in the drop-down box, users are queried whether to allow windows and frames to access applications from other domains. If you disable this policy setting, users can't open windows and frames to access applications from different domains. If you don't configure this policy setting, users can open windows and frames from other domains and access applications from other domains.
   
   **Default**: Disable  
@@ -2735,17 +2739,17 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disabled  
   
-- **Internet Explorer restricted zone include local path when uploading files to server**  </br> 
+- **Internet Explorer restricted zone include local path when uploading files to server**  
   This policy setting controls if local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.
   
   **Default**: Disabled  
   
-- **Internet Explorer processes restrict file download**  </br> 
+- **Internet Explorer processes restrict file download**   
   This policy setting enables applications hosting the Web Browser Control to block automatic prompting of file downloads that aren't user initiated. If you enable this policy setting, the Web Browser Control will block automatic prompting of file downloads that aren't user initiated for all processes. If you disable this policy setting, the Web Browser Control won't block automatic prompting of file downloads that aren't user initiated for all processes.
   
   **Default**: Enabled  
   
-- **Internet Explorer restricted zone allow only approved domains to use Active X controls**  </br>
+- **Internet Explorer restricted zone allow only approved domains to use Active X controls**   
   This policy setting controls if the user is prompted to allow ActiveX controls to run on websites other than the website that installed the ActiveX control. If you enable this policy setting, the user is prompted before ActiveX controls can run from websites in this zone. The user can choose to allow the control to run from the current site or from all sites. If you disable this policy setting, the user doesn't see the per-site ActiveX prompt, and ActiveX controls can run from all sites in this zone.
   
   **Default**: Enabled  
@@ -2869,7 +2873,7 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
      - *No action*. 
      - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
      - *Force Logoff* - the user is automatically logged off when the smart card is removed.
-     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.  <br><br>
+     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.   
     
   **Default**: Lock workstation
   
