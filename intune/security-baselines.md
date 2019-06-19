@@ -68,14 +68,16 @@ Security baseline profiles also support a [change of the version](#change-the-ba
 
 ## Available security baselines 
 
-The following security baseline instances are available for use with Intune. Use the links to view settings for the most recent instance of each baseline. 
+The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
 - **MDM Security Baseline**
   - [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-windows.md)
+  - Preview: MDM Security Baseline for October 2018
 
 - **Windows Defender ATP baseline**  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
   - [Preview: Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+
 
 ## Prerequisites
 - To manage baselines in Intune, your account must have the [Policy and Profile Manager](role-based-access-control.md#built-in-roles) built-in role.
