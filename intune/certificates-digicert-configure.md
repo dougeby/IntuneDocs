@@ -173,7 +173,7 @@ If you'll use the connector with only the DigiCert CA, you can use the instructi
 
 Download the latest Intune Certificate Connector version from the Intune administration portal and follow these instructions.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909).  
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).  
 
 2. Select **Device configuration** > **Certificate Connectors** > **+ Add**.  
 
@@ -248,7 +248,7 @@ The PKCS certificates you'll deploy for Intune managed devices must be chained w
 
 2. Create a trusted certificate profile in the Intune portal:
 
-   a. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
+   a. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
    b. Select **Device configuration** > **Manage** > **Profiles** > **Create profile**.
 
@@ -288,7 +288,7 @@ The certificate profile OID is associated with a certificate profile template in
 
 ## Create a PKCS certificate profile
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909).  
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).  
 
 2. Go to **Device configuration** >  **Profiles**, and select **Create profile**.
 
