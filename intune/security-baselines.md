@@ -199,6 +199,6 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 ## Next steps
 - View the settings in the latest versions of the available baselines:  
   - [MDM security baseline](security-baseline-settings-windows.md)  
-  - [Windows Devender ATP baseline](security-baseline-settings-defender-atp.md)  
+  - [Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
