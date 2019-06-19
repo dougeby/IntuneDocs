@@ -59,14 +59,13 @@ In the Intune console, you can view which security baselines are available and i
 
 To view information about the baseline versions you use, select a baseline, and then select **Versions**. Intune displays details about the versions in use by your profiles. On the Versions pane, you can select a single version to view deeper details about the profiles that use that version. You can also select two different versions and then choose **Compare baselines** to download a CSV file that details those differences.  
 
-![Compare baselines](./media/security-baselines/compare-baselines.png
-)
+![Compare baselines](./media/security-baselines/compare-baselines.png)
 
 When you create a security baseline *profile*, the profile automatically uses the most recently released security baseline instance.  You can continue to use and edit profiles that you previously created that use an earlier baseline version instance, including baselines created using a Preview version. 
 
-Security baseline profiles also support a [change of the version](#change-the-baseline-instance-for-a-profile) of the baseline that’s in use. This means when a new version comes out, you don’t have to create a new baseline profile to take advantage of it. Instead, when you’re ready, you can select a baseline profile and then use the built-in option to change the instance version for that profile. 
+Security baseline profiles support a [change of the version](#change-the-baseline-instance-for-a-profile) of the baseline that’s in use. This means when a new version comes out, you don’t have to create a new baseline profile to take advantage of it. Instead, when you’re ready, you can select a baseline profile and then use the built-in option to change the instance version for that profile.  
 
-## Available security baselines 
+## Available security baselines  
 
 The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
@@ -145,10 +144,11 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
 
   When a setting is no longer managed by a baseline profile, that setting isn’t reset on the device. Instead, the setting on the device remains set to its last configuration until some other process manages the setting to change it. Examples of processes that can change a setting after you stop managing it include a different baseline profile, a group policy setting, or manual configuration that’s made on the device. 
 
-### To change the instance for a baseline
+### To change the instance for a baseline  
+
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and then select **Device security** > **Security baselines**, and then select the tile for the baseline type that has the profile you want to change.  
 
-2. Next, select **Profiles**, and then select the profile you want to edit, and then select **Change Version**.  
+2. Next, select **Profiles**, and then select the check box for the profile you want to edit, and then select **Change Version**.  
 
    ![select a baseline](./media/security-baselines/select-baseline.png)  
 
@@ -156,11 +156,15 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
 
    ![select a version](./media/security-baselines/select-instance.png)  
  
-4. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are added, removed, and what the default values for these setting are in the updated profile.  
+4. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are added, removed, and what the default values for these settings are in the updated profile.  
 
    When ready, continue to the next step.  
 
-5. Choose one of the two options under **Select a method to update the profile**, and then select **Submit**. The profile updates to the selected baseline version and after the conversion is complete, the baseline immediately redeploys to assigned groups.  
+5. Choose one of the two options for **Select a method to update the profile**: 
+   - **Accept baseline changes but keep my existing setting customizations** - This option keeps the customizations you made to the baseline profile and applies them to the new version you've selected to use.
+   - **Accept baseline changes and discard existing setting customizations** - This option overwrites your original profile completely. The updated profile will use the default values for all settings.  
+
+6. Select **Submit**. The profile updates to the selected baseline version and after the conversion is complete, the baseline immediately redeploys to assigned groups.
 
 ## Remove a security baseline assignment
 When a security baseline setting no longer applies to a device, or settings in a baseline are set to *Not configured*, those settings on a device don’t revert to a pre-managed configuration. Instead, the previously managed settings on the device keep their last configurations as received from the baseline until some other process updates those settings on the device.  
