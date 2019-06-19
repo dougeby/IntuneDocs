@@ -88,7 +88,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
 
   **Default**: Yes
 
-## Attach Surface Reduction  
+## Attack Surface Reduction  
 
 - **Office apps launch child process type**  
   [Attack surface reduction rule](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – When set to *Block*, Office apps won’t be allowed to create child processes. Office apps include Word, Excel, PowerPoint, OneNote, and Access. Creation of a child process is a typical malware behavior, especially for macro-based attacks that attempt to use Office apps to launch or download malicious executables.  
