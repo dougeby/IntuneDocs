@@ -197,5 +197,8 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 - Migrating from on-premises Active Directory group policies to a pure cloud solution using Azure Active Directory (AD) with Microsoft Intune is a journey. To help, there are group policy templates included in the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) that can help manage hybrid AD and Azure AD-joined devices. These devices can get MDM settings from the cloud (Intune) and group policy settings from on-premises domain controllers as needed.
 
 ## Next steps
-- View the [Windows security baseline settings](security-baseline-settings-windows.md) supported by Intune.  
+- View the settings in the latest versions of the available baselines:  
+  - [MDM security baseline](security-baseline-settings-windows.md)  
+  - [Windows Devender ATP baseline](security-baseline-settings-defender-atp.md)  
+
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
