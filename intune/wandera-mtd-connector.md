@@ -32,15 +32,15 @@ ms.collection: M365-identity-device-management
 # Wandera Mobile Threat Defense connector with Intune  
 
 You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Wandera, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune.  Risk is assessed based on telemetry collected from devices by the Wandera service, including:
-- Operating systme vulnerabilities
+- Operating system vulnerabilities
 - Malicious apps installed
-- Malicoius network profiles
+- Malicious network profiles
 - Cryptojacking
 
-You can configure *conditional access* policies that are based on Wandera's risk assessment, enabled through Intune device compliance policies. Risk assessment policy can can allow or block noncompliant devices from accessing corporate resources based on detected threats.  
+You can configure *conditional access* policies that are based on Wandera's risk assessment, enabled through Intune device compliance policies. Risk assessment policy can allow or block noncompliant devices from accessing corporate resources based on detected threats.  
 
 
-## How do Intune and Wandera Mobile Mobile Threat Defense help protect your company resources?  
+## How do Intune and Wandera Mobile Threat Defense help protect your company resources?  
 
 Wandera’s mobile app seamlessly installs using Microsoft Intune. This app captures file system, network stack, and device and application telemetry (where available), and sends it to the Wandera cloud service to assess the device's risk for mobile threats. These risk level classifications are configurable to suit your needs in the Wandera console, RADAR.
 
@@ -59,11 +59,60 @@ For more information about platform and device, see the [Wandera website](https:
 
 ## Prerequisites  
 
-●	Microsoft Intune subscription
-●	Azure Active Directory
-●	Wandera Mobile Threat Defense (formerly Wandera Secure)
+●	Microsoft Intune subscription  
+●	Azure Active Directory  
+●	Wandera Mobile Threat Defense (formerly Wandera Secure)  
+
 For more information, see Wandera Mobile Security
-
-
-
  
+## Sample scenarios
+
+Here are the common scenarios when using Wandera MTD with Intune.
+
+### Control access based on threats from malicious apps  
+
+When malicious apps such as malware are detected on devices, you can block devices from tools such as the following tools, until the threat is resolved:
+- Connecting to corporate e-mail  
+- Syncing corporate files with the OneDrive for Work app  
+- Accessing company apps  
+
+**Block when malicious apps are detected**:
+
+![Conceptual image of Malicious apps detected](./media/wandera-mtd-connector/wandera-malicious-apps-blocked.png)  
+
+**Access granted on remediation**: 
+
+![Conceptual image of access granted after remediation](./media/wandera-mtd-connector/wandera-malicious-apps-unblocked.png)
+
+
+### Control access based on threat to network  
+
+Detect threats to your network such as man-in-the-middle attacks and protect access to Wi-Fi networks based on the device risk.  
+
+**Block network access through Wi-Fi**:  
+
+![Block network access through Wi-Fi](./media/wandera-mtd-connector/wandera-network-wifi-blocked.png)
+
+**Access granted on remediation**:  
+
+![Access granted on remediation](./media/wandera-mtd-connector/wandera-network-wifi-unblocked.png)  
+
+## Control access to SharePoint Online based on threat to network
+
+Detect threats to your network such as Man-in-the-middle attacks, and prevent synchronization of corporate files based on the device risk.
+
+**Block SharePoint Online when network threats are detected**:  
+
+![Block SharePoint Online when network threats are detected](./media/wandera-mtd-connector/wandera-network-spo-blocked.png)  
+
+
+**Access granted on remediation**:  
+
+![Access granted on remediation for SharePoint example](./media/wandera-mtd-connector/wandera-network-spo-unblocked.png)  
+
+## Next steps
+
+- [Integrate Wandera with Intune](Wandera-mtd-connector-integration.md)
+- [Set up Wandera apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Create Wandera device compliance policy](mtd-device-compliance-policy-create.md)
+- [Enable Wandera MTD connector](mtd-connector-enable.md)
