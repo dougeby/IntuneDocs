@@ -33,6 +33,9 @@ Microsoft Intune includes some built-in troubleshooting features. Use these feat
 
 This article lists some common troubleshooting techniques, and describes some issues you may experience.
 
+## Check Tenant Status
+Check the [Tenant Status](tenant-status.md) and confirm the subscription is Active. You can also view details for active incidents and advisories that may impact your policy or profile deployment.
+
 ## Use built-in troubleshooting
 
 1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Troubleshoot**:
@@ -116,6 +119,12 @@ This article lists some common troubleshooting techniques, and describes some is
 > [!NOTE]
 > When two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies.
 
+## Policy Troubleshooting Resources
+- [Troubleshooting iOS or Android policies not applying to devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154)
+- [Troubleshooting Windows 10 Intune policy failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/)
+- [Troubleshoot CSP custom settings for Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune)
+- [Windows 10 Group Policy vs Intune MDM policy](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/)
+
 ## Alert: Saving of Access Rules to Exchange has Failed
 
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
@@ -128,9 +137,11 @@ If you create policies in the Exchange On-Premises Policy workspace (Admin conso
 
 Windows Phone devices don't allow security policies set using MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8, and then try to reduce it to 4. The more restrictive policy is applied to the device.
 
+Windows 10 MDM devices don't always automatically remove security policies when you stop deployment on the policy. You may need to leave the policy deployed and change it back to the default values.
+
 Depending on the device platform, if you want to change the policy to a less secure value, you may need to reset the security policies.
 
-For example, in Windows, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel** > **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
+For example, in Windows 8.1, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel** > **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
 
 Other MDM devices, such as Android, iOS, and Windows Phone 8.1, may need to be retired and re-enrolled to apply a less restrictive policy.
 
@@ -163,6 +174,7 @@ For Windows PCs managed with the Intune software client, policy errors in the `p
 Occurs if the time on the local system is out of sync by five minutes or more. If the time on the local computer is out of sync, secure transactions fail because the time stamps are invalid.
 
 To resolve this issue, set the local system time as close as possible to Internet time. Or, set it to the time on the domain controllers on the network.
+
 
 ## Next steps
 
