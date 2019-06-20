@@ -74,7 +74,7 @@ When using co-managed devices, you must switch the **Device configuration** work
 
 ## Create the profile
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909) and then select **Device security** > **Security baselines (preview)**. A list of the available baselines is available. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and then select **Device security** > **Security baselines (preview)**. A list of the available baselines is available. 
 
     ![Select a security baseline to configure](./media/security-baselines/available-baselines.png)
 

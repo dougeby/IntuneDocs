@@ -49,7 +49,7 @@ The Intune management extension has the following prerequisites. Once these are 
 
 - Devices running Windows 10 version 1607 or later. If the device is enrolled using [bulk auto-enrollment](windows-bulk-enroll.md), devices must run Windows 10 version 1703 or later. The Intune management extension isn't supported on Windows 10 in S mode, as S mode doesn't allow running non-store apps. 
   
-- Devices joined to Azure Active Directory (AD), including:
+- Devices joined to Azure Active Directory (AD), including:  
   
   - Hybrid Azure AD-joined: Devices joined to Azure Active Directory (AD), and also joined to on-premises Active Directory (AD). See [Plan your hybrid Azure Active Directory join implementation](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) for guidance.
 
@@ -59,9 +59,9 @@ The Intune management extension has the following prerequisites. Once these are 
   
   - Devices manually enrolled in Intune, which is when:
   
-    - User signs in to the device using a local user account, and then manually joins the device to Azure AD (and auto-enrollment to Intune is enabled in Azure AD).
+    - [Auto-enrollment to Intune](quickstart-setup-auto-enrollment.md) is enabled in Azure AD. The end user signs in to the device using a local user account, manually joins the device to Azure AD, and then signs in to the device using their Azure AD account.
     
-    Or
+    OR  
     
     - User signs in to the device using their Azure AD account, and then enrolls in Intune.
 
@@ -71,7 +71,8 @@ The Intune management extension has the following prerequisites. Once these are 
     - [Client apps workload](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
     - [Switch Configuration Manager workloads to Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
   
-
+> [!TIP]
+> Be sure devices are [joined](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) to Azure AD. Devices that are only [registered](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD won't receive your scripts.
 
 ## Create a script policy 
 
@@ -97,7 +98,7 @@ The Intune management extension has the following prerequisites. Once these are 
 5. Select **OK** > **Create** to save the script.
 
 > [!NOTE]
-> The PowerShell script runs under admin privilege (by default) when the script is set to user context and the end user on the device has admin privileges.
+> When scripts are set to user context and the end user has administrator rights, by default, the PowerShell script runs under the administrator privilege.
 
 ## Assign the policy
 
@@ -166,6 +167,7 @@ To see if the device is auto-enrolled, you can:
     > [!TIP]
     > The **Microsoft Intune Management Extension** is a service that runs on the device, just like any other service listed in the Services app (services.msc). After a device reboots, this service may also restart, and check for any assigned PowerShell scripts with the Intune service. If the **Microsoft Intune Management Extension** service is set to Manual, then the service may not restart after the device reboots.
 
+- Be sure devices are [joined to Azure AD](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network). Devices that are only joined to your workplace or organization ([registered](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) in Azure AD) won't receive the scripts.
 - The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
 - Confirm the Intune management extension is downloaded to `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Scripts don't run on Surface Hubs or Windows 10 in S mode.
