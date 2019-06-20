@@ -93,7 +93,6 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 > There is no remapper for iOS. Integrating into a Xamarin.Forms app should be the same as for a regular Xamarin.iOS project. 
 
 ## Enabling Intune app protection policies in your Android mobile app
-
 1. Add the [Microsoft.Intune.MAM.Xamarin.Android NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android) to your Xamarin.Android project.
 	1. For a Xamarin.Forms app, add the [Microsoft.Intune.MAM.Remapper.Tasks NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Remapper.Tasks) to your Xamarin.Android project as well. 
 2. Follow the general steps required for [integrating the Intune App SDK](app-sdk-android.md) into an Android mobile app while referring to this document for additional details.
@@ -178,6 +177,14 @@ This is expected because when the Remapper modifies the inheritance of Xamarin c
 
 > [!NOTE]
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to reload and rebuild the project when the Remapper is added for IntelliSense to correctly recognize the changes.
+
+### Company Portal app
+The Intune SDK Xamarin Bindings rely on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android app on the device to enable app protection policies. The Company Portal retrieves app protection policies from the Intune service. When the app initializes, it loads policy and code to enforce that policy from the Company Portal. The user does not need to be signed in.
+
+> [!NOTE]
+> When the Company Portal app is not on the **Android** device, an Intune-managed app behaves the same as a normal app that does not support Intune app protection policies.
+
+For app protection without device enrollment, the user is _**not**_ required to enroll the device by using the Company Portal app.
 
 ## Support
 If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the GitHub issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
