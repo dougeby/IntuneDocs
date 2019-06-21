@@ -41,10 +41,9 @@ Install apps on your device from the Company Portal app for Windows.
 
     * **Home**: Select from a list of your organization's featured apps.  
     * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.  
-    * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.  
+    * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured. View, sort, and filter the apps. Search results are sorted automatically by relevancy.  
     * **App categories**: Select this page in the navigation pane to choose apps based on type or function. Apps are sorted under categories such as **Featured**, **Education**, and **Productivity**.  
     * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
-    * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.  
 
 3. Select an app.   
 4. On the apps details page, click **Install**. After installation is done, you'll see an **Installed** status.  
@@ -55,7 +54,7 @@ Install apps on your device from the Company Portal app for Windows.
 
  Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
-## Share apps with others  
+## Share apps  
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
 
 1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
@@ -69,15 +68,14 @@ Share and recommend apps to your work or school contacts. The following steps de
 
 After you share, the recipient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
-## Available apps  
+## Available and required apps
+Apps are assigned to you by your organization, and labeled in Company Portal as either **Available** or **Required**. 
 
-Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.  
+* Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
 
-Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
+* Required apps: These apps are neccessary for work and school and are deployed directly to your device. These apps are automatically installed for you without intervention. 
 
-## Required apps  
-
-Your organization might deploy some apps directly to your device and mark them as **Required**. These apps will automatically be installed for you without intervention.
+Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.
 
 ## Request an app for work or school  
 If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).    
