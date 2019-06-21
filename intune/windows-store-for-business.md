@@ -35,6 +35,7 @@ ms.collection: M365-identity-device-management
 The [Microsoft Store for Business](https://www.microsoft.com/business-store) gives you a place to find and purchase apps for your organization, individually, or in volume. By connecting the store to Microsoft Intune, you can manage volume-purchased apps from the Azure portal. For example:
 * You can synchronize the list of apps you have purchased (or that are free) from the store with Intune.
 * Apps that are synchronized appear in the Intune administration console; you can assign these apps like any other apps.
+* Both Online and Offline licensed versions of Apps are synchronized to Intune. App names will be appended with "Online" or "Offline" in the portal.
 * You can track how many licenses are available, and how many are being used in the Intune administration console.
 * Intune blocks assignment and installation of apps if there are an insufficient number of licenses available.
 * Apps managed by Microsoft Store for Business will automatically revoke licenses when a user leaves the enterprise, or when the administrator removes the user and the user devices.
