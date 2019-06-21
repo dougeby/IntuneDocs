@@ -81,7 +81,7 @@ Apps are assigned to you by your organization, and labeled as either available o
 
 Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.
 
-## App details  
+## View app details  
 Select an app on the **Apps** or **Installed apps** page to view its details. You'll be taken to **App details**, where you'll find the app's description and requirements. If an app isn't already installed on your device, you can install it from this page. 
 
 ## Next steps
