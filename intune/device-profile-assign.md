@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,9 +55,9 @@ When you assign the profile, you can also **Evaluate** how many users are affect
 
 If the **Evaluate** button is grayed out, make sure the profile is assigned to one or more groups.
 
-## Use scope tags or applicability rules
+## Use scope tags
 
-When you create or update a profile, you can also add scope tags and applicability rules to the profile.
+When you create or update a profile, you can also add scope tags to the profile.
 
 **Scope tags** are a great way to assign and filter policies to specific groups, such as Human Resources or All US-NC employees. [Use RBAC and scope tags for distributed IT](scope-tags.md) has more information.
 

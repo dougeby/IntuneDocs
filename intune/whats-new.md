@@ -60,6 +60,15 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
+#### New features in Microsoft Intune app
+We’ve added new features to the Microsoft Intune app (preview) for Android. Users on fully managed Android devices can now:  
+
+* View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
+* Contact their organization for support.    
+* Send their feedback to Microsoft.    
+* View terms and conditions, if set by their organization.    
+
+
 #### New sample apps showing Intune SDK integration available on GitHub <!-- 2653471 -->
 The msintuneappsdk GitHub account has added new sample applications for iOS (Swift), Android, Xamarin.iOS, Xamarin Forms and Xamarin.Android. These apps are meant to supplement our existing documentation and provide demonstrations of how to integrate the Intune APP SDK into your own mobile apps. If you are an app developer that needs additional Intune SDK guidance, see the following linked samples:
 - [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - A native iOS (Swift) instant messaging app that uses the Azure Active Directory Authentication Library (ADAL) for brokered authentication.
@@ -431,9 +440,6 @@ In the Windows Company Portal app, app icons will now be displayed with an autom
 
 #### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523   -->
 Windows devices that enrolled into Intune using [Windows bulk enrollment](windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
-
-> [!Note]
-> This feature is not yet fully deployed to all customers. If you are not able to use the Company Portal on bulk enrolled devices, you may have to wait until this change rolls out to your account.
 
 #### The Microsoft Teams app can be selected as part of the Office app suite <!-- 3828932  -->
 The Microsoft Teams app can be included or excluded as part of the Office Pro Plus app suite installation. This feature works for Office Pro Plus build number 16.0.11328.20116+. The user must sign out and then sign in to the device for the installation to complete. In Intune, select **Client apps** > **Apps** > **Add**. Select one of the **Office 365 Suite** app types and then select **Configure  App Suite**.
