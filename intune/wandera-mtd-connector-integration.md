@@ -60,6 +60,7 @@ The Wandera Mobile Threat Defense app authorization process:
 ## To set up Wandera Mobile Threat Defense integration  
 Setup of *EMM Connect* requires a one-time configuration process that you complete in both the Intune and Wandera consoles. The configuration process takes about 15 minutes, and you can complete the configuration without coordination with your Wandera technical account or support representative.  
 
+### Enable support for Wandera in Intune
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device compliance** > **Mobile Threat Defense** > and select **Add**.
 
 2. On the **Add Connector** page, use the dropdown and select **Wandera**. And then select **Create**.  
@@ -76,7 +77,18 @@ Setup of *EMM Connect* requires a one-time configuration process that you comple
 
 6. Wandera completes the connection and returns you to the RADAR admin console. Repeat the process to **Grant** access for additional configurations, as needed. 
 
-    While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization in a later step.
+
+### Configure the sycnhronization group  
+
+In the following procedure, you create a group in Intune for use by Wandera synchronization. You add  to this synchronization group the iOS and Android apps for Wandera that you'll assign to devices.  While you don't have to create these apps before creating the group, we recommend doing so. This way you can add the apps to the group when you create it, and won't need to remember to return to edit the group to add them later. 
+
+
+
+To create these apps, see [Add and assign MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md).  
+
+#### To create the synchronization group
+
+    While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization in step 8.
 
    ![Integrations and permissions](media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
@@ -84,42 +96,33 @@ Setup of *EMM Connect* requires a one-time configuration process that you comple
 
    ![Enable Wandera](media/wandera-mtd-connector-integration/enable-wandera.png) 
 
-8. In the Intune console, go to **Groups** and select **New group**. Specify the following:
+8. In the Intune console, go to **Groups** and select **New group**. Specify the following to configure the synchronization group for use by Wandera:
    - **Group type**: **Security**
-   - **Group name**: Specify the **SyncOnly** name from the Wandera RADAR admin console.
-   - **Members**: Assign the Wandera iOS and Android apps to this group, and add the Managed App Configuration for the iOS app.
+   - **Group name**: Specify the **SyncOnly** name you retrieved from the Wandera RADAR admin console in step 6.
+
+
+#### Assign the Wandera apps to the synchronization group  
+Source: [App Push tab within the EMM Integration section in RADAR](https://radar.wandera.com/settings/emm/push?customerId=539fd122-2a9b-4a18-9fb8-2d041e7b489e).
+
+
+   - **Members**: Assign the Wandera iOS and Android apps to this group, and add the Managed App Configuration for the iOS app.  If you didn't [create the apps](#create-the-wandera-apps), you can add them to the group at a later time.  
   
    Select **Create** to save the group. 
  
 
 
+
+
+### Synchronize devices
+
+
+### Use Wandera Threat Intelligence with conditional Access
  
-
-
- 
-
-
-
-
-
-
-Next, c
-
-
-
-
-
-
-
-
-
-
-
-
-
-1. When the message **Successful Integration** appears, integration is complete.  
-1. In the Intune console, Sophos is now available.  
 
 
 ## Next Steps  
-[Configure Sophos client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+[Configure Wandera client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+
+For more information about configuring Wandera integration with Intune, see [EMM Connect Microsoft Intune Configuration Guide](https://wandera.force.com/Customer/s/article/Intune-EMMC) in the Wandera documentation. 
+
+ 
