@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -63,7 +63,7 @@ You can create a custom profile with a pre-shared key for Android, Windows, or a
      > [!NOTE]
      > Be sure to include the dot character at the beginning.
 
-     SSID is the SSID for which you’re creating the policy. For example, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID is the SSID for which you’re creating the policy. For example if the Wi-Fi is named Hotspot-1, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
    e. **Value Field** is where you paste your XML code. See the examples within this article. Update each value to match your network settings. The comments section of the code includes some pointers.
 3. Select **OK**, save, and then assign the policy.
@@ -88,14 +88,14 @@ The following example includes the XML code for an Android or Windows Wi-Fi prof
 
 ```
 <!--
-<Name of wifi profile> = Name of profile
-<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+<Name of wifi profile> = Name of profile displayed to user, could be <name>Your Company's Network</name>
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped
 <nonBroadcast><true/false></nonBroadcast>
 <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
-<Type of encryption> = Type of encryption used by the network
+<Type of encryption> = Type of encryption used by the network, such as AES.
 <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-<password> = Password to connect to the network
-x>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
+<password> = Plain text of password to connect to the network
 -->
 <WLANProfile
 xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -213,14 +213,18 @@ The following example includes the XML code for an EAP-based Wi-Fi profile: The 
 ```
 
 ## Create the XML file from an existing Wi-Fi connection
-You can also create an XML file from an existing Wi-Fi connection using the following steps: 
+In Windows, use netsh wlan to export an existing Wi-Fi profile to an XML file readable by Intune. The key must be exported in plain text to successfully use the profile.
 
-1. On a computer that is connected to, or has recently connected to the wireless network, open the `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` folder.
+On a Windows computer that already has the required WiFi profile installed, use the following steps:
 
-   It’s best to use a computer that hasn't connected to many wireless networks. Otherwise, you may have to search through each profile to find the correct one.
+1. Create a local folder for the exported W-Fi- profiles, such as c:\WiFi.
+2. Open up a Command Prompt as an administrator.
+3. Run the netsh wlan show profiles command, and note the name of the profile you'd like to export. In this example, the profile name is WiFiName.
+4. Run the netsh wlan export profile name="ProfileName" folder=c:\Wifi command. This command creates a Wi-Fi profile file named Wi-Fi-WiFiName.xml in your target folder.
 
-2. Search through the XML files to locate the file with the correct name.
-3. After you have the correct XML file, copy and paste the XML code into the **Data** field of the OMA-URI settings page.
+- If you are exporting a Wi-Fi profile that includes a pre-shared key, you must add key=clear to the command. For example, enter: netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi
+
+After you have the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
 
 ## Best practices
 - Before you deploy a Wi-Fi profile with PSK, confirm that the device can connect to the endpoint directly.
