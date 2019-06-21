@@ -7,7 +7,7 @@ keywords: what is Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
 ms.service: microsoft-intune
 ms.localizationpriority: high
