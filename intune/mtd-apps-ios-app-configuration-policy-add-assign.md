@@ -140,7 +140,7 @@ Choose the section that corresponds to your MTD provider:
   - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Wandera Mobile app store URL](https://play.google.com/store/apps/details?id=com.wandera.android) on **step 7**. For **Minimum operating system**, select **Android 5.0**.
 
 - **iOS**
-  - See the instructions for [adding iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Use this [Wandera Mobile app store URL](https://itunes.apple.com/gb/app/wandera/id605469330?mt=8) on **step 11** for the **Appstore URL**.
+  - See the instructions for [adding iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Use this [Wandera Mobile app store URL](https://itunes.apple.com/app/wandera/id605469330) on **step 11** for the **Appstore URL**.
 
 ## Configure your MTD apps with an iOS app configuration policy  
 
