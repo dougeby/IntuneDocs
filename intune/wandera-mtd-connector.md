@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Wandera Mobile Threat Defense connector with Intune  
 
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Wandera, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune.  Risk is assessed based on telemetry collected from devices by the Wandera service, including:
+Control mobile device access to corporate resources using conditional access based on risk assessment conducted by Wandera. Wandera is a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune.  Risk is assessed based on telemetry collected from devices by the Wandera service, including:
 - Operating system vulnerabilities
 - Malicious apps installed
 - Malicious network profiles
@@ -42,9 +42,9 @@ You can configure *conditional access* policies that are based on Wandera's risk
 
 ## How do Intune and Wandera Mobile Threat Defense help protect your company resources?  
 
-Wandera’s mobile app seamlessly installs using Microsoft Intune. This app captures file system, network stack, and device and application telemetry (where available), and sends it to the Wandera cloud service to assess the device's risk for mobile threats. These risk level classifications are configurable to suit your needs in the Wandera console, RADAR.
+Wandera’s mobile app seamlessly installs using Microsoft Intune. This app captures file system, network stack, and device and application telemetry (where available). This information synchronizes to the Wandera cloud service to assess the device's risk for mobile threats. These risk level classifications are configurable to suit your needs in the Wandera console, RADAR.
 
-The compliance policy in Intune includes a rule for MTD based on Wandera’s risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
+The compliance policy in Intune includes a rule for MTD  based on Wandera’s risk assessment. When this rule is enabled, Intune evaluates device compliance with the policy that you enabled.
 
 For devices that are noncompliant, access to resources like Office 365 can be blocked. Users on blocked devices receive guidance from the Wandera app to resolve the issue and regain access.
 
@@ -59,11 +59,11 @@ For more information about platform and device, see the [Wandera website](https:
 
 ## Prerequisites  
 
-●	Microsoft Intune subscription  
-●	Azure Active Directory  
-●	Wandera Mobile Threat Defense (formerly Wandera Secure)  
+- Microsoft Intune subscription  
+- Azure Active Directory  
+- Wandera Mobile Threat Defense (formerly Wandera Secure)  
 
-For more information, see Wandera Mobile Security
+For more information, see [Wandera Mobile Security](https://www.wandera.com/mobile-security/).
  
 ## Sample scenarios
 
@@ -71,7 +71,7 @@ Here are the common scenarios when using Wandera MTD with Intune.
 
 ### Control access based on threats from malicious apps  
 
-When malicious apps such as malware are detected on devices, you can block devices from tools such as the following tools, until the threat is resolved:
+When malicious apps such as malware are detected on devices, you can block devices from common tools until you can resolve the threat. Common blocks  include:  
 - Connecting to corporate e-mail  
 - Syncing corporate files with the OneDrive for Work app  
 - Accessing company apps  
