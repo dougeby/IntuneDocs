@@ -29,11 +29,15 @@ ms.collection: M365-identity-device-management
 
 # Use custom settings for Android Enterprise devices in Microsoft Intune
 
-Using Microsoft Intune, you can add or create custom settings for your Android Enterprise devices using a "custom profile". Custom profiles are a feature in Intune. They are designed to add device settings and features that aren't built in to Intune.
+Using Microsoft Intune, you can add or create custom settings for your Android Enterprise Work Profile devices using a "custom profile". Custom profiles are a feature in Intune. They are designed to add device settings and features that aren't built in to Intune.
 
 Android Enterprise custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to control features on Android Enterprise devices. These settings are typically used by mobile device manufacturers to control these features.
 
-Intune supports a limited number of Android custom profiles.
+Intune supports a limited number of Android Enterprise custom profiles. If you need additional settings, consider [OEMConfig for Android Enterprise](android-oem-configuration-overview.md)
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings See [Create a Wi-Fi profile with a pre-shared key](wi-fi-profile-shared-key.md) for examples
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList See [Create a per-app VPN profile](android-pulse-secure-per-app-vpn.md) for examples
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste See the heading Example further down the page
 
 This article shows you how to create a custom profile for Android Enterprise devices. It also provides an example of a custom profile that blocks copy-and-paste.
 
