@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -54,7 +54,7 @@ The report displays the **Device name** for your Windows 10 devices and high-lev
   - **Not ready**: The device doesn't have full encryption capabilities, but still supports encryption. For example, the device might be encrypted manually by a user, or through Group Policy that can be set to allow encrypting without a TMP.
   - **Not applicable**: There is not enough information to classify this device.  
 
-- **Encryption status** – Whether the OS drive is encrypted.  
+- **Encryption status** – Whether the OS drive is encrypted. 
 
 
 ### Device encryption status
@@ -63,7 +63,7 @@ When you select a device, Intune displays the **Device encryption status** pane.
 This pane provides the following details:  
 - **Device name** – The name of the device you're viewing.  
 - **Encryption readiness** - An evaluation of the devices readiness to support BitLocker encryption. A device could have an Encryption status of *Encrypted* even though its Encryption readiness is *Not ready*, because it lacks a TPM. (See Encryption readiness in the preceding section for more details.)
-- **Encryption status** - Whether the OS drive is encrypted.  
+- **Encryption status** - Whether the OS drive is encrypted. It can take up to 24 hours for Intune to begin reporting on a devices encryption status or a change to that status.  
 - **Profiles** – A list of the *Device configuration* profiles that apply to this device and include the following Profile type and settings:  
   - Profile type = *Endpoint protection*  
   - Settings > Windows Encryption > Encrypt devices = *Required*  
