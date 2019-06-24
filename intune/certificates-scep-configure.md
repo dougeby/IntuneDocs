@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/13/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -325,9 +325,3 @@ To validate that the service is running, open a browser, and enter the following
 
 [Create a SCEP certificate profile](certificates-profile-scep.md)  
 [Troubleshoot issues for the Intune certificate connector](troubleshoot-certificate-connector-events.md)
-
-
-
-
-
-
