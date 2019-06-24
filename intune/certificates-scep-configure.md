@@ -96,13 +96,17 @@ The following certificates and templates are used when you use SCEP.
 |Object    |Details    |
 |----------|-----------|
 |**SCEP Certificate Template**         |Template you’ll configure on your issuing CA used to fullfil the devices SCEP requests |
-|**Client authentication certificate** |Requested from your issuing CA or public CA;<br /> You install this certificate on the computer that hosts the NDES service and is used by the Intune Certificate Connector.<br /> If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
+|**Client authentication certificate** |Requested from your issuing CA or public CA;<br /> You install this certificate on the computer that hosts the NDES service and it's used by the Intune Certificate Connector.<br /> If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
 |**Server authentication certificate** |Web Server certificate requested from your issuing CA or public CA;<br /> You install and bind this SSL certificate in IIS on the computer that hosts NDES.<br />If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
 |**Trusted Root CA certificate**       |To use a SCEP certificate profile, devices must trust your Trusted Root Certification Authority (CA). Use a *trusted certificate profile* in Intune to provision the Trusted Root CA certificate to users and devices. <br/><br/> **-**  Use a single Trusted Root CA certificate per operating system platform and associate that certificate with each trusted certificate profile you create. <br /><br /> **-**  You can use additional Trusted Root CA certificates when needed. For example, you might use additional certificates to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points. <br/><br/> For information about the trusted certificate profile, see [Export the trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. |
 
 ## Configure the certification authority
 
-In this step, you’ll configure the required template for NDES and then publish them. You will set the required permissions for certificate revocation. The following sections require knowledge of Windows Server 2012 R2 or later, and of Active Directory Certificate Services (AD CS).  
+In the following sections, you’ll:
+- Configure and publish the required template for NDES. 
+- Set the required permissions for certificate revocation. 
+
+The following sections require knowledge of Windows Server 2012 R2 or later, and of Active Directory Certificate Services (AD CS).  
 
 ### Access your Issuing CA
 
@@ -116,7 +120,7 @@ In this step, you’ll configure the required template for NDES and then publish
    - Use the *Certificate Templates* snap-in to create a new custom template.  
    - Copy an existing template (like the User template) and then update the copy to use as the NDES template.
  
-   Configure the following settings on the specified tabs of this template:
+2. Configure the following settings on the specified tabs of the template:
    - **General**:
      - Un-check **Publish certificate in Active Directory**.
      - Specify a friendly **Template display name** so you can identify this template later.  
@@ -151,37 +155,38 @@ In this step, you’ll configure the required template for NDES and then publish
 
      ![Template, issuance requirements tab](./media/certificates-scep-configure/scep_ndes_issuance_reqs.jpg)  
 
-2. Save the certificate template.  
+3. Save the certificate template.  
 
 ### Create client certificate template
 
-Intune Certificate Connector will require a certificate with Client Authentication Enhanced Key Usage and Subject name equal to the FQDN of the machine where the connector is installed, as such a Template with the following properties is required:
+Intune Certificate Connector requires a certificate with the *Client Authentication* Enhanced Key Usage and Subject name equal to the FQDN of the machine where the connector is installed. A template with the following properties is required:
 
 - **Extensions** > **Application Policies** must contain **Client Authentication**
 - **Subject name** > **Supply in the request**.
 
-If you already have a template that respects this properties, it can be reused, otherwise a new template must be created by either duplicating an existing one or creating a custom template.
+If you already have a template that includes these properties, you can reuse it, otherwise create a new template by either duplicating an existing one or creating a custom template.
 
 ### Create server certificate template
 
-Communications between the devices and IIS on the NDES server must be using HTTPS, as such a certificate will be required. This template can be the **Web Server** template, however if you prefer to have a dedicated template, the following must be respected:
+Communications between managed devices and IIS on the NDES server use HTTPS, which requires use of a certificate. You can use the **Web Server** certificate template to issue this certificate. Or, if you prefer to have a dedicated template, the following properties are required:
 
 - **Extensions** > **Application Policies** must contain **Server Authentication**
 - **Subject name** > **Supply in the request**.
 
 > [!NOTE]  
-> If you have a certificate that satisfies both requirements from client and server certificate templates mentioned above, you can use a single certificate for both IIS and Intune Certificate connector.
+> If you have a certificate that satisfies both requirements from the client and server certificate templates, you can use a single certificate for both IIS and the Intune Certificate connector.
 
 ### Grant permissions for certificate revocation
 
-In order for Intune to be able to revoke certificates that are no longer required, you will need to grant permissions in the Certificate Authority. <br />
-On the Intune Certificate connector you will have the option to either use the NDES server **system account** or a specific account such as the **NDES service account**
+For Intune to be able to revoke certificates that are no longer required, you'll need to grant permissions in the Certificate Authority. 
 
-1. On your Certificate Authority console, Right-click the CA name and choose **Properties**
-2. In **Security** tab, click **Add...**
+On the Intune Certificate Connector you can either use the NDES server **system account** or a specific account such as the **NDES service account**
+
+1. On your Certificate Authority console, Right-click the CA name and select **Properties**.
+2. In **Security** tab, click **Add**.
 3. Grant **Issue and Manage Certificates** permission:
-   - If you opted to use the NDES server **system account**, provide the permissions to the NDES server.
-   - If you opted to use a specific, such as **NDES service account**, provide permissions that that account instead.
+   - If you opt to use the NDES server **system account**, provide the permissions to the NDES server.
+   - If you opt to use a the **NDES service account**, provide permissions for that account instead.
 
 ### Modify the validity period of the certificate template
 
