@@ -33,7 +33,11 @@ ms.collection: M365-identity-device-management
 Visit the [Company Portal website](https://portal.manage.microsoft.com) to view and manage apps from your organization. 
 
 ## View all apps  
-From the menu, select **Apps** to see all apps made available by your organization. This page lists the following details about each app:  
+From the menu, select **Apps** to see all apps made available by your organization. 
+
+   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-all-apps-1907.png)  
+
+This page lists the following details about each app:  
 
 * Name: The name of the app, with a link to the app's details page.
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
@@ -45,6 +49,8 @@ From the menu, select **Apps** to see all apps made available by your organizati
 
 Use the search bar to find apps. Search results are sorted automatically by relevancy.  
 
+   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-cp-web-refine-1907.png)  
+
 Select **Refine** to see filter and sort options. Filter the list to show apps with specific criteria, including **Type**, **Availability**, and **Publishers**. Select **Sort** to rearrange the apps by:
 
 * App name, ascending or descending alphabetically 
@@ -52,7 +58,12 @@ Select **Refine** to see filter and sort options. Filter the list to show apps w
 * Publish date, oldest or newest  
 
 ## View installed apps  
-From the menu, select **Installed Apps** to view a list of all apps installed on your device. This page lists the following details about each app:  
+From the menu, select **Installed Apps** to view a list of all apps installed on your device.  
+
+   ![Screenshot of Company Portal website, Installed Apps page.](./media/intune-view-installed-1907.png)  
+
+
+This page lists the following details about each app:  
 
 * Name: The name of the app, with a link to the app's details page.
 * Assignment type: How the app is assigned and made available to you. See Available and required apps for more details. Your organization can either make an app available for you to install yourself, or they can require and install an app on your device automatically.  
@@ -63,6 +74,8 @@ From the menu, select **Installed Apps** to view a list of all apps installed on
 ### Search and refine  
 
 Use the search bar to find apps. Search results are sorted automatically by relevancy.  
+
+   ![Screenshot of Company Portal website, Installed Apps, refine options.](./media/intune-installed-apps-1907.png)  
 
 Select **Refine** to see filter and sort options. Filter the list to show apps with specific criteria, including **Types**, **Publishers**, and **Statuses**. Select **Sort** to rearrange the apps by:
 
@@ -75,6 +88,7 @@ Need additional help? Contact your company support. For contact information, che
 ### Available and required apps
 Apps are assigned to you by your organization, and labeled as either available or required. The **Installed apps** page shows which apps you have under the **Assignment Type** column. 
 
+
 * Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
 
 * Required apps: Your organization might deploy neccessary work and school apps directly to your device. These apps are automatically installed for you without intervention. 
@@ -83,6 +97,9 @@ Apps are also made available to you based on your device type. For example, if y
 
 ## View app details  
 Select an app on the **Apps** or **Installed apps** page to view its details. You'll be taken to **App details**, where you'll find the app's description and requirements. If an app isn't already installed on your device, you can install it from this page. 
+
+
+   ![Screenshot of Company Portal website, App details page.](./media/intune-app-details-1907.png)  
 
 ## Next steps
 Need more help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
