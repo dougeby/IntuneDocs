@@ -83,34 +83,42 @@ The following on-premises infrastructure is optional:
 
 - **Access to the certification authority** - You'll need a domain user account that has rights to manage your certification authority.  
 
-### Network requirements  
+### Network requirements
+
 We recommend publishing the NDES service through a reverse proxy, such as the [Azure AD application proxy, Web Access Proxy](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), or a third-party proxy. If you don't use a reverse proxy, then allow TCP traffic on port 443 from all hosts and IP addresses on the internet to the NDES service.  
 
-Allow all ports and protocols necessary for communication between the NDES service and any supporting infrastructure in your environment. For example, the computer that hosts the NDES service needs to communicate with the CA, DNS servers, domain controllers, and possibly other services or servers within your environment, like Configuration Manager. 
+Allow all ports and protocols necessary for communication between the NDES service and any supporting infrastructure in your environment. For example, the computer that hosts the NDES service needs to communicate with the CA, DNS servers, domain controllers, and possibly other services or servers within your environment, like Configuration Manager.
 
 ### Certificates and templates
+
 The following certificates and templates are used when you use SCEP.
 
 |Object    |Details    |
 |----------|-----------|
-|**Certificate Template**              |You’ll configure this template on your issuing CA. |
-|**Client authentication certificate** |Requested from your issuing CA or public CA; you install this certificate on the computer that hosts the NDES service. If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
-|**Server authentication certificate** |Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the computer that hosts NDES. If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
+|**SCEP Certificate Template**         |Template you’ll configure on your issuing CA used to fullfil the devices SCEP requests |
+|**Client authentication certificate** |Requested from your issuing CA or public CA;<br /> You install this certificate on the computer that hosts the NDES service and is used by the Intune Certificate Connector.<br /> If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
+|**Server authentication certificate** |Web Server certificate requested from your issuing CA or public CA;<br /> You install and bind this SSL certificate in IIS on the computer that hosts NDES.<br />If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
 |**Trusted Root CA certificate**       |To use a SCEP certificate profile, devices must trust your Trusted Root Certification Authority (CA). Use a *trusted certificate profile* in Intune to provision the Trusted Root CA certificate to users and devices. <br/><br/> **-**  Use a single Trusted Root CA certificate per operating system platform and associate that certificate with each trusted certificate profile you create. <br /><br /> **-**  You can use additional Trusted Root CA certificates when needed. For example, you might use additional certificates to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points. <br/><br/> For information about the trusted certificate profile, see [Export the trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. |
 
+## Configure the certification authority
 
-## Configure certificate templates on the certification authority  
-To complete configuration of the templates on the CA, you’ll configure a template for NDES, and then publish that template for NDES. The following sections require knowledge of Windows Server 2012 R2 or later, and of Active Directory Certificate Services (AD CS).  
+In this step, you’ll configure the required template for NDES and then publish them. You will set the required permissions for certificate revocation. The following sections require knowledge of Windows Server 2012 R2 or later, and of Active Directory Certificate Services (AD CS).  
 
-### Create the certificate template  
+### Access your Issuing CA
+
 1. Sign in to your issuing CA with a domain account with rights sufficient to manage the CA.  
-2. Create a v2 Certificate Template (with Windows 2003 compatibility) for use as the NDES certificate template. You can:  
+2. Open the Certification Authority Microsoft Management Console (MMC). Either **Run** 'certsrv.msc' or in **Server Manager**, click **Tools**, and then click **Certification Authority**.
+3. Select the **Certificate Templates** node, click **Action** > **Manage**.
+
+### Create the SCEP certificate template
+
+1. Create a v2 Certificate Template (with Windows 2003 compatibility) for use as the SCEP certificate template. You can:  
    - Use the *Certificate Templates* snap-in to create a new custom template.  
-   - Copy an existing template (like the User template) and then update the copy to use as the NDES template. 
+   - Copy an existing template (like the User template) and then update the copy to use as the NDES template.
  
-   Configure the following settings on the specified tabs of this template: 
+   Configure the following settings on the specified tabs of this template:
    - **General**:
-     - Uncheck **Publish certificate in Active Directory**.
+     - Un-check **Publish certificate in Active Directory**.
      - Specify a friendly **Template display name** so you can identify this template later.  
 
    - **Subject Name**:  
@@ -122,22 +130,20 @@ To complete configuration of the templates on the CA, you’ll configure a templ
        > [!IMPORTANT]  
        > Only add the application policies that you require. Confirm your choices with your security admins.
  
-     - For iOS and macOS certificate templates, also edit **Key Usage** and deselect **Signature is proof of origin**.  
+     - For iOS and macOS certificate templates, also edit **Key Usage** and make sure **Signature is proof of origin** is not selected.
 
      ![Template, extensions tab](./media/certificates-scep-configure/scep_ndes_extensions.jpg)  
 
    - **Security**:  
-     - Add the **NDES service account**. This account requires **Read** and **Enroll** permissions to this template.  
-
-       To revoke certificates, the **NDES service account** requires **Issue** and **Manage Certificates** permissions to each certificate template used by a certificate profile.  
+     - Add the **NDES service account**. This account requires **Read** and **Enroll** permissions to this template.
 
      - Add additional Accounts for Intune administrators who will create SCEP profiles. These accounts require **Read** permissions to the template to enable these admins to browse to this template while creating SCEP profiles.  
-    
+
      ![Template, security tab](./media/certificates-scep-configure/scep_ndes_security.jpg)  
 
    - **Request Handling**:  
       The following image is an example. Your configuration might vary.  
-   
+
      ![Template, request handling tab](./media/certificates-scep-configure/scep_ndes_request_handling.png) 
 
    - **Issuance Requirements**:  
@@ -145,9 +151,40 @@ To complete configuration of the templates on the CA, you’ll configure a templ
 
      ![Template, issuance requirements tab](./media/certificates-scep-configure/scep_ndes_issuance_reqs.jpg)  
 
-3. Save the certificate template.  
+2. Save the certificate template.  
+
+### Create client certificate template
+
+Intune Certificate Connector will require a certificate with Client Authentication Enhanced Key Usage and Subject name equal to the FQDN of the machine where the connector is installed, as such a Template with the following properties is required:
+
+- **Extensions** > **Application Policies** must contain **Client Authentication**
+- **Subject name** > **Supply in the request**.
+
+If you already have a template that respects this properties, it can be reused, otherwise a new template must be created by either duplicating an existing one or creating a custom template.
+
+### Create server certificate template
+
+Communications between the devices and IIS on the NDES server must be using HTTPS, as such a certificate will be required. This template can be the **Web Server** template, however if you prefer to have a dedicated template, the following must be respected:
+
+- **Extensions** > **Application Policies** must contain **Server Authentication**
+- **Subject name** > **Supply in the request**.
+
+> [!NOTE]  
+> If you have a certificate that satisfies both requirements from client and server certificate templates mentioned above, you can use a single certificate for both IIS and Intune Certificate connector.
+
+### Grant permissions for certificate revocation
+
+In order for Intune to be able to revoke certificates that are no longer required, you will need to grant permissions in the Certificate Authority. <br />
+On the Intune Certificate connector you will have the option to either use the NDES server **system account** or a specific account such as the **NDES service account**
+
+1. On your Certificate Authority console, Right-click the CA name and choose **Properties**
+2. In **Security** tab, click **Add...**
+3. Grant **Issue and Manage Certificates** permission:
+   - If you opted to use the NDES server **system account**, provide the permissions to the NDES server.
+   - If you opted to use a specific, such as **NDES service account**, provide permissions that that account instead.
 
 ### Modify the validity period of the certificate template
+
 It's optional to modify the validity period of the certificate template.  
 
 After you [create the certificate template](#create-the-certificate-template), you can edit the template to review the **Validity period** on the **General** tab.  
