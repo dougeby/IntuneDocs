@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage web access using Microsoft Edge with Microsoft Intune 
+title: Manage web access by using Microsoft Edge with Microsoft Intune 
 titleSuffix: 
 description: Use Intune app protection policies with Microsoft Edge to ensure corporate websites are always accessed with safeguards in place. 
 keywords:
@@ -28,80 +28,77 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Manage web access using Microsoft Edge with Microsoft Intune
+# Manage web access by using Microsoft Edge with Microsoft Intune
 
-Using Intune app protection policies with Microsoft Edge can ensure corporate websites are always accessed with safeguards in place. The following Microsoft Edge enterprise features enabled by Intune policies are available. These enterprise features include:
+Using Intune app protection policies with Microsoft Edge helps ensure that corporate websites are always accessed with safeguards in place. The following Microsoft Edge enterprise features enabled by Intune policies are available:
 
-1.	**Dual-Identity** - Users can add both a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins will be able to set the desired policies for a protected browsing experience within the work account.
-2.	**Intune app protection policy integration** – Since Microsoft Edge is integrated with the Intune SDK, you can target app protection policies to ensure data loss protection. These capabilities include the control of cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
-3.	**Azure Application Proxy integration** - You can control access to SaaS apps and web apps, helping ensure browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the Internet.
-4.	**Application configuration** – You can leverage application configuration settings to strengthen your organizations security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed/blocked sites, Azure Application Proxy, and more.
+-	**Dual-Identity.** Users can add a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins can set the desired policies for a protected browsing experience within the work account.
+-	**Intune app protection policy integration.** Because Microsoft Edge is integrated with the Intune SDK, you can target app protection policies to protect against data loss. These capabilities include controlling cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
+-	**Azure Application Proxy integration.** You can control access to software as a service (SaaS) apps and web apps. This helps ensure that browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the internet.
+-	**Application configuration.** You can use application configuration settings to strengthen your organization's security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed or blocked sites, and Azure Application Proxy.
+
 Microsoft Intune protection policies for Microsoft Edge help to protect your organization’s data and resources. Using these policies with Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
 
 ## Getting started
 
 You and your end users can download Microsoft Edge from public app stores for use in your organizations. 
-Operating system requirements for browser policies:
-- Android 4 and later, or
+The operating system requirements for browser policies are either of the following:
+- Android 4 and later
 - iOS 8.0 and later
 
 ## Application protection policies for Microsoft Edge
 
-Because Microsoft Edge is integrated with the Intune SDK, you can apply application protection policies to them, including:
-- Controlling the use of cut, copy, and paste.
-- Preventing screen captures.
-- Ensuring corporate links open only within managed apps and browsers.
+Because Microsoft Edge is integrated with the Intune SDK, you can apply application protection policies to them.
 
-For details, see What are app protection policies?
 You can apply these settings to:
-- Devices that are enrolled with Intune
-- Enrolled with another MDM product
-- Unmanaged devices
+- Devices that are enrolled with Intune.
+- Devices that are enrolled with another mobile device management product.
+- Unmanaged devices.
 
-If Microsoft Edge is not targeted with Intune policy, users cannot use it to access data from other Intune-managed applications such as Office apps. 
+If Microsoft Edge is not targeted with Intune policy, users can't use it to access data from other Intune-managed applications, such as Office apps. 
 
 ## Conditional Access for Microsoft Edge
 
-You can leverage Azure AD Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This would restrict mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge, and this would block access from any other unprotected browsers such as Safari or Chrome. Conditional Access can be applied to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+You can use Azure Active Directory (Azure AD) Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This restricts mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge. This blocks access from any other unprotected browsers, such as Safari or Chrome. You can apply Conditional Access to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
-To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android, follow the below steps:
+To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Under the Intune node, select **Conditional Access** > **New policy**.
-3. Next, select **Grant** from the **Access controls** section of the blade.
-4. Click **Require approved client app**.
-5. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
+3. Select **Grant** from the **Access controls** section of the blade.
+4. Select **Require approved client app**.
+5. Select **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
-    ![Conditional Access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
+    ![Screenshot of Conditional Access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
-6. In the Assignments section, select Conditions > Client apps. The Client apps blade is displayed.
-7. Click Yes under Configure to apply the policy to specific client apps.
-8. Verify that Browser is selected as a client app.
+6. In the Assignments section, select **Conditions** > **Client apps**. The **Client apps** blade appears.
+7. Under **Configure**, select **Yes** to apply the policy to specific client apps.
+8. Verify that **Browser** is selected as a client app.
 
-    ![Conditional Access policy - Select client apps](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
+    ![Screenshot of Conditional Access policy - Select client apps](./media/manage-microsoft-edge/manage-microsoft-edge-02.png)
 
     > [!NOTE]
     > If you want to restrict which native apps (non-browser apps) can access these cloud applications, you can also select **Mobile apps and desktop clients**.
 
-9. In the **Assignments** section, select **Users and groups** and then choose the users or groups you would like to assign this policy.
+9. In the **Assignments** section, select **Users and groups**, and then choose the users or groups you want to assign this policy.
 
     > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
+    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md).
 
 10. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
 
-Once the above policy is configured, users will be forced to use Microsoft Edge to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they will see a message that they must use Microsoft Edge.
+After the above policy is configured, users are forced to use Microsoft Edge to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they receive a message that they must use Microsoft Edge.
 
 > [!TIP]
-> Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from Intune is the same node as accessed from Azure AD.
+> Conditional Access is an Azure AD technology. The Conditional Access node accessed from Intune is the same node as accessed from Azure AD.
 
-## Single Sign-on to Azure AD-connected web apps in policy-protected browsers
+## Single sign-on to Azure AD-connected web apps in policy-protected browsers
 
-Microsoft Edge on iOS and Android can take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. SSO allows users to access Azure AD-connected web apps through Microsoft Edge without having to re-enter their credentials.
+Microsoft Edge on iOS and Android can take advantage of single sign-on (SSO) to all web apps (SaaS and on-premises) that are Azure AD-connected. SSO allows users to access Azure AD-connected web apps through Microsoft Edge, without having to re-enter their credentials.
 
-SSO requires your device to be registered by either the Microsoft Authenticator app for iOS devices, or the Intune Company Portal on Android. When users have the Authenticator app or Intune Company Portal, they will be prompted to register their device when they navigate to an Azure AD-connected web app in a policy-protected browser, if their device has not already been registered yet. Once the device is registered with the user’s account managed by Intune, that account will have SSO enabled for Azure AD-connected web apps.
+SSO requires your device to be registered by either the Microsoft Authenticator app for iOS devices, or the Intune Company Portal on Android. When users have either of these, they are prompted to register their device when they go to an Azure AD-connected web app in a policy-protected browser. (This is only true if their device hasn't already been registered.) After the device is registered with the user’s account managed by Intune, that account has SSO enabled for Azure AD-connected web apps.
 
 > [!NOTE]
-> Device registration is a simple check-in with the Azure AD service. It does not require full device enrollment and does not give IT any additional privileges on the device.
+> Device registration is a simple check-in with the Azure AD service. It doesn't require full device enrollment, and doesn't give IT any additional privileges on the device.
 
 ## Create a protected browser app configuration
 
