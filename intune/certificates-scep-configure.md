@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/13/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -511,6 +511,7 @@ Consider the following before you assign certificate profiles to groups:
 
     > [!NOTE]
     > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
+- If you use co-management for Intune and Configuration Manager, in Configuration Manager s[et the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for *Resource Access Policy* to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.  
 
 For information about how to assign profiles, see [assign device profiles](device-profile-assign.md).
 
