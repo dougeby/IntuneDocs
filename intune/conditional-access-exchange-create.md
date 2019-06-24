@@ -77,8 +77,7 @@ Before you can configure Conditional Access, verify the following configurations
 
 ### Support for PCs
 
-The native **Mail** application on Windows 8.1 and later (when enrolled with Intune)
-
+The native **Mail** application on Windows 8.1 and later (when enrolled into MDM with Intune)
 
 ## Configure Exchange on-premises access
 
@@ -88,7 +87,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Conditional Access policy and the devices that are affected by it.
+4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Exchange on-premises Connector.
 
 5. Under **Manage**, choose **Exchange on-premises access**.
 
@@ -114,23 +113,10 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 12. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-13. On the **On-premises** pane, click **Save** to save the Conditional Access policy.
+13. On the **On-premises** pane, click **Save** to save the Exchange Conditional Access policy.
 
-## Create Azure AD Conditional Access policies in Intune
-
-Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
-
-> [!IMPORTANT]
-> You need to have an Azure AD Premium license to create Azure AD Conditional Access policies from the Intune Azure portal.
-
-### To create a Conditional Access policy
-
-1. In the **Intune Dashboard**, select **Conditional Access**.
-
-2. In the **Policies** pane, select **New policy** to create your new Azure AD Conditional Access policy.
+Next step is to create a compliance policy and assign it to the users for Intune to evaluate their mobile devices, See [Get started with device compliance](device-compliance-get-started.md)
 
 ## See also
-
-[Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
 
 [Troubleshooting Intune On-Premises Exchange Connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
