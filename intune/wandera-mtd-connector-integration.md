@@ -34,7 +34,7 @@ Complete the following steps to integrate the Wandera Mobile Threat Defense solu
 
 ## Before you begin  
 
-Before you start the process to integrate Wandera Mobile Threat Protection with Intune, make sure you have the following prerequisites in place:
+Before you start the process to integrate Wandera with Intune, make sure you have the following prerequisites in place:
 - Microsoft Intune subscription  
 - Azure Active Directory admin credentials to grant the following permissions:  
   - Sign in and read user profile  
@@ -105,7 +105,7 @@ After you create the apps, return here to create the synchronization group and a
 
 ### Create the synchronization group and assign the apps
 
-1. Get the name of the **SyncOnly** group that appears below **EMM Label** from within the Wandera RADAR console. You might have saved this name during step 7 while [enabling support for Wandera in Intune](#enable-support-for-wandera-in-intune) . Use this name as the name of the group in Intune for Wandera synchronization.  
+1. Get the name of the **SyncOnly** group that appears below **EMM Label** from within the Wandera RADAR console. You might have saved this name during step 7 while [enabling support for Wandera in Intune](#enable-support-for-wandera-in-intune). Use this name as the name of the group in Intune for Wandera synchronization.  
 
 2. In the Intune console, go to **Groups** and select **New group**. Specify the following to configure the synchronization group for use by Wandera:
    - **Group type**: **Security**
