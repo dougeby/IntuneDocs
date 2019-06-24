@@ -58,7 +58,7 @@ From the menu, select **Installed Apps** to view a list of all apps installed on
 * Assignment type: How the app is assigned and made available to you. See Available and required apps for more details. Your organization can either make an app available for you to install yourself, or they can require and install an app on your device automatically.  
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
-* Status: The current in## Available apps  
+* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
 
 ### Search and refine  
 
@@ -79,7 +79,7 @@ Apps are assigned to you by your organization, and labeled as either available o
 
 * Required apps: Your organization might deploy neccessary work and school apps directly to your device. These apps are automatically installed for you without intervention. 
 
-Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.
+Apps are also made available to you based on your device type. For example, if you're using the Company Portal website on a Windows device, you'll have access to Windows apps, but not iOS apps.  
 
 ## View app details  
 Select an app on the **Apps** or **Installed apps** page to view its details. You'll be taken to **App details**, where you'll find the app's description and requirements. If an app isn't already installed on your device, you can install it from this page. 
