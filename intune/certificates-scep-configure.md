@@ -122,7 +122,7 @@ The following sections require knowledge of Windows Server 2012 R2 or later, and
  
 2. Configure the following settings on the specified tabs of the template:
    - **General**:
-     - Un-check **Publish certificate in Active Directory**.
+     - Uncheck **Publish certificate in Active Directory**.
      - Specify a friendly **Template display name** so you can identify this template later.  
 
    - **Subject Name**:  
@@ -180,19 +180,19 @@ Communications between managed devices and IIS on the NDES server use HTTPS, whi
 
 For Intune to be able to revoke certificates that are no longer required, you'll need to grant permissions in the Certificate Authority. 
 
-On the Intune Certificate Connector you can either use the NDES server **system account** or a specific account such as the **NDES service account**
+On the Intune Certificate Connector, you can either use the NDES server **system account** or a specific account such as the **NDES service account**
 
 1. On your Certificate Authority console, Right-click the CA name and select **Properties**.
 2. In **Security** tab, click **Add**.
 3. Grant **Issue and Manage Certificates** permission:
    - If you opt to use the NDES server **system account**, provide the permissions to the NDES server.
-   - If you opt to use a the **NDES service account**, provide permissions for that account instead.
+   - If you opt to use the **NDES service account**, provide permissions for that account instead.
 
 ### Modify the validity period of the certificate template
 
 It's optional to modify the validity period of the certificate template.  
 
-After you [create the certificate template](#create-the-certificate-template), you can edit the template to review the **Validity period** on the **General** tab.  
+After you [create the scep certificate template](#create-the-scep-certificate-template), you can edit the template to review the **Validity period** on the **General** tab.  
 
 By default, Intune uses the value configured in the template. However, you can configure the CA to allow the requester to enter a different value, and that value can be set from within the Intune console.  
 
@@ -258,7 +258,7 @@ The following procedures can help you configure the Network Device Enrollment Se
 2. After the wizard completes, update the following registry key on the computer that hosts the NDES service:  
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`  
 
-   To update this key, identify the certificate templates' **Purpose** (found on its **Request Handling** tab). Then, update the corresponding registry entry by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified when you [created the certificate template](#create-the-certificate-template).  
+   To update this key, identify the certificate templates' **Purpose** (found on its **Request Handling** tab). Then, update the corresponding registry entry by replacing the existing data with the name of the certificate template (not the display name of the template) that you specified when you [created the certificate template](#create-the-scep-certificate-template).  
 
    The following table maps the certificate template purpose to the values in the registry:
    
