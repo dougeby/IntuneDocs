@@ -35,7 +35,7 @@ Visit the [Company Portal website](https://portal.manage.microsoft.com) to view 
 ## View all apps  
 From the menu, select **Apps** to see all apps made available by your organization. 
 
-   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-all-apps-1907.png)  
+   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-view-apps-1907.png)  
 
 This page lists the following details about each app:  
 
@@ -49,7 +49,7 @@ This page lists the following details about each app:
 
 Use the search bar to find apps. Search results are sorted automatically by relevancy.  
 
-   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-cp-web-refine-1907.png)  
+   ![Screenshot of Company Portal website, Apps page, showing Refine options.](./media/intune-refine-all-apps-1907.png)  
 
 Select **Refine** to see filter and sort options. Filter the list to show apps with specific criteria, including **Type**, **Availability**, and **Publishers**. Select **Sort** to rearrange the apps by:
 
@@ -60,7 +60,7 @@ Select **Refine** to see filter and sort options. Filter the list to show apps w
 ## View installed apps  
 From the menu, select **Installed Apps** to view a list of all apps installed on your device.  
 
-   ![Screenshot of Company Portal website, Installed Apps page.](./media/intune-view-installed-1907.png)  
+   ![Screenshot of Company Portal website, Installed Apps page.](./media/intune-installed-apps-1907.png)  
 
 
 This page lists the following details about each app:  
@@ -75,7 +75,7 @@ This page lists the following details about each app:
 
 Use the search bar to find apps. Search results are sorted automatically by relevancy.  
 
-   ![Screenshot of Company Portal website, Installed Apps, refine options.](./media/intune-installed-apps-1907.png)  
+   ![Screenshot of Company Portal website, Installed Apps, refine options.](./media/intune-installed-refine-1907.png)  
 
 Select **Refine** to see filter and sort options. Filter the list to show apps with specific criteria, including **Types**, **Publishers**, and **Statuses**. Select **Sort** to rearrange the apps by:
 
