@@ -50,6 +50,8 @@
     href: tutorial-use-autopilot-enroll-devices.md
   - name: Use the DEP to enroll iOS devices 
     href: tutorial-use-device-enrollment-program-enroll-ios.md
+  - name: Configure Slack to use Intune 
+    href: tutorial-configure-slack-enterprise-grid.md    
 - name: Concepts
   items:
   - name: What is device management?
@@ -135,6 +137,10 @@
       items:
       - name: Network configuration
         href: network-bandwidth-use.md
+      - name: Intune endpoints
+        href: intune-endpoints.md
+      - name: Intune US government endpoints
+        href: intune-us-government-endpoints.md
     - name: Sign in to Intune
       href: account-sign-up.md
     - name: Configure domains
@@ -263,10 +269,12 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Find primary user
+      href: find-primary-user.md
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
-      href: device-profile-android-teamviewer.md
+      href: teamviewer-support.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
     - name: Synchronize device
@@ -369,22 +377,22 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
-    - name: Conditional access
+    - name: Conditional Access
       href: conditional-access.md
       items:
-      - name: Common ways to use conditional access
+      - name: Common ways to use Conditional Access
         href: conditional-access-intune-common-ways-use.md
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
-      - name: Create and assign conditional access policy
+      - name: Create and assign Conditional Access policy
         href: conditional-access-exchange-create.md
-      - name: Device-based conditional access policy
+      - name: Device-based Conditional Access policy
         href: create-conditional-access-intune.md
-      - name: Reassign conditional access policies from Intune classic portal
+      - name: Reassign Conditional Access policies from Intune classic portal
         href: conditional-access-intune-reassign.md
-      - name: App-based conditional access
+      - name: App-based Conditional Access
         href: app-based-conditional-access-intune.md
-      - name: Set up app-based conditional access
+      - name: Set up app-based Conditional Access
         href: app-based-conditional-access-intune-create.md
       - name: ADAL and Intune
         href: app-modern-authentication-block.md
@@ -442,11 +450,16 @@
             items:
             - name: Sophos Mobile and Intune integration
               href: sophos-mtd-connector-integration.md
-      - name: Windows Defender ATP
-        href: advanced-threat-protection.md    
+      - name: Microsoft Defender
+        items: 
+        - name: Microsoft Defender ATP
+          href: advanced-threat-protection.md  
+        - name: Security tasks
+          href: atp-manage-vulnerabilities.md  
       - name: Security baselines
-        href: security-baselines.md
-        items:
+        items: 
+        - name: Security baselines 
+          href: security-baselines.md
         - name: Monitor your baselines
           href: security-baselines-monitor.md
       - name: Endpoint protection
@@ -472,8 +485,8 @@
         href: certificates-s-mime-encryption-sign.md
       - name: Use third-party certificate authority with SCEP
         href: certificate-authority-add-scep-overview.md
-      - name: Symantec PKI Manager Web Service
-        href: certificates-symantec-configure.md
+      - name: Use DigiCert PKI
+        href: certificates-digicert-configure.md
       - name: Remove SCEP or PKCS certificates
         href: remove-certificates.md              
     - name: eSIM cellular profiles
@@ -556,6 +569,8 @@
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
+      - name: Configure the Managed Home Screen
+        href: app-configuration-managed-home-screen-app.md        
       - name: Managed apps
         href: app-configuration-policies-managed-app.md
       - name: Use iOS app provisioning profiles
@@ -569,10 +584,12 @@
           href: windows-store-for-business.md
         - name: iOS eBooks
           href: vpp-ebooks-ios.md
-      - name: Configure the Company Portal app
+      - name: Configure the Company Portal
         href: company-portal-app.md
       - name: Configure the Managed Browser
         href: app-configuration-managed-browser.md
+      - name: Configure Microsoft Edge
+        href: manage-microsoft-edge.md        
       - name: Configure Outlook
         href: app-configuration-policies-outlook.md
     - name: Protect apps
@@ -649,15 +666,11 @@
         href: review-logs-using-azure-monitor.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
-      - name: Troubleshoot email profiles
-        href: troubleshoot-email-profiles-in-microsoft-intune.md
-      - name: Troubleshoot software updates
-        href: troubleshoot-software-updates-in-microsoft-intune.md
-      - name: Troubleshoot endpoint protection
-        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
       - name: Troubleshoot policies and profiles
-        href: troubleshoot-policies-in-microsoft-intune.md
-      - name: Troubleshoot conditional access
+        href: troubleshoot-policies-in-microsoft-intune.md        
+      - name: Email profile issues and resolutions 
+        href: troubleshoot-email-profiles-in-microsoft-intune.md
+      - name: Troubleshoot Conditional Access
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot certificate connector
         href: troubleshoot-certificate-connector-events.md
@@ -774,8 +787,12 @@
           href: shared-user-device-settings-windows.md
         - name: Custom
           href: custom-settings-windows-10.md
-      - name: Security baseline settings
-        href: security-baseline-settings-windows.md
+      - name: Security baselines
+        items: 
+        - name: Windows 10 baseline settings
+          href: security-baseline-settings-windows.md
+        - name: Microsoft Defender ATP baseline settings 
+          href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -820,6 +837,10 @@
           href: vpn-settings-windows-phone-8-1.md
         - name: Custom
           href: custom-settings-windows-phone-8-1.md
+  - name: Error codes and descriptions
+    items:
+    - name: Software update errors
+      href: software-update-agent-error-codes.md
   - name: Developer guidance
     items:
     - name: API to add third-party certificate authority
@@ -953,6 +974,10 @@
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Resolve policy conflicts
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+      - name: Troubleshoot software updates
+        href: troubleshoot-software-updates-in-microsoft-intune.md
+      - name: Endpoint protection common errors 
+        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online

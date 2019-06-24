@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -108,7 +107,7 @@ The following methods qualify as being authorized as a Windows corporate enrollm
 - The device is registered with Windows Autopilot but isn't an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
-- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md).
+- The device enrolls through GPO, or [automatic enrollment from SCCM for co-management](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1).
  
 The following enrollments are marked as corporate by Intune. But since they don't offer the Intune administrator per-device control, they'll be blocked:
  - [Automatic MDM enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) with [Azure Active Directory join during Windows setup](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
@@ -144,9 +143,10 @@ During BYOD enrollments, users see a notification that tells them when they've m
 > - Azure Active Directory joined enrollments
 > - Bulk Azure Active Directory joined enrollments
 > - Autopilot enrollments
+> - Device Enrollment Manager enrollments
 >
 > Device limit restrictions are not enforced for these enrollment types because they are considered shared device scenarios.
-> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
+> You can set hard limits for these enrollment types [in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal#configure-device-settings).
 
 ## Change enrollment restriction priority
 

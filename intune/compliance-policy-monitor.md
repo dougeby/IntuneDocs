@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -38,7 +37,7 @@ Compliance reports help you review device compliance, and troubleshoot complianc
 
 Open the **Intune Device compliance dashboard**:
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device compliance** > **Overview**. The **Device compliance dashboard** opens.
 
@@ -64,7 +63,7 @@ As you dig in to this reporting, you can also see any specific compliance polici
 The chart shows the compliance states for all Intune enrolled devices. The device compliance states are kept in two different databases: Intune and Azure Active Directory. 
 
 > [!IMPORTANT]
-> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+> Intune follows the device check-in schedule for all compliance evaluations on the device. [Learn more about the device check-in schedule](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 Descriptions of the different device compliance policy states:
 
@@ -78,7 +77,9 @@ Descriptions of the different device compliance policy states:
 
   - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance
   - Devices that haven't checked in since the compliance policy was last updated
-  - Devices not associated to a specifc user
+  - Devices not associated to a specific user, such as:
+    - iOS devices purchased through Apple's Device Enrollment Program (DEP) that don't have user affinity
+    - Android kiosk or Android Enterprise dedicated devices
   - Devices enrolled with a device enrollment manager (DEM) account
 
 - **Not-compliant:** The device failed to apply one or more device compliance policy settings. Or, the user hasn’t complied with the policies.

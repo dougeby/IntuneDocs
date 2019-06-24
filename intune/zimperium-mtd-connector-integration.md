@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -36,7 +35,7 @@ Complete the following steps to integrate the Zimperium Mobile Threat Defense so
 ## Before you begin
 
 > [!NOTE]
-> The following steps are to be completed in the [Zimperium MTD console](https://sso.zimperium.com/signon/aad/).
+> The following steps are to be completed in the [Zimperium MTD console](https://www.zimperium.com/platform).
 
 Before starting the process of integrating Zimperium with Intune, make sure you have the following subscription and credentials:
 
@@ -71,7 +70,7 @@ For more information about consent and Azure Active Directory applications, see 
 
 ## To set up Zimperium integration
 
-1.  Go to [Zimperium MTD console](https://sso.zimperium.com/signon/aad/) and sign in with your credentials. To perform the Zimperium integration setup process, you must sign in with an Azure Active Directory user who has the Global Administrator role. This one-time setup operation uses the Global Administrator rights to grant permission in your organization for the Zimperium apps to communicate with Intune. 
+1.  Go to [Zimperium MTD console](https://www.zimperium.com/platform) and sign in with your credentials. To perform the Zimperium integration setup process, you must sign in with an Azure Active Directory user who has the Global Administrator role. This one-time setup operation uses the Global Administrator rights to grant permission in your organization for the Zimperium apps to communicate with Intune. 
 
 2.  Choose **Management** from the left menu.
 

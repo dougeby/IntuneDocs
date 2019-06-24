@@ -1,16 +1,15 @@
 ---
 # required metadata
 
-title: Manage volume purchased or free apps from Microsoft Store for Business 
+title: Manage VPP apps from Microsoft Store for Business 
 titleSuffix: Microsoft Intune
-description: Learn how you can sync purchased (or free) apps into Intune from the Microsoft Store for Business.
+description: Learn how you can sync apps into Intune from the Microsoft Store for Business.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 04/15/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -29,7 +28,7 @@ ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
 ---
 
-# How to manage volume purchased (or free) apps from the Microsoft Store for Business with Microsoft Intune
+# How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -69,8 +68,7 @@ You can now continue, and set up synchronization in the Intune console.
 
 ## Configure synchronization
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
 1. On the **Client apps** pane, choose **Setup** > **Microsoft Store for Business**.
 2. Click **Enable**.

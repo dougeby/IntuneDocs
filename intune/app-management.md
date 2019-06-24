@@ -10,7 +10,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/12/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -72,9 +71,7 @@ Intune offers a range of capabilities to help you get the apps you need on the d
 
 You can find most app-related information in the **Client Apps** workload, which you can access by doing the following:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**.  
-    Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Microsoft Intune** pane, select **Client apps**.
 
     ![The "Client apps" workload pane](./media/apps-workload.png)

@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -38,8 +37,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
 ## Get to your devices
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Devices**. This view shows detailed information about the individual devices, and what you can do with them, including:
 
    - **Overview** shows a visual snapshot of the enrolled devices, and also shows how many devices are using the different platforms, including Android, iOS, and more.
@@ -55,7 +53,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
      ![Screenshot of monitor device actions](./media/monitor-device-actions.png)
 
    - **Audit logs** is a record of activities that generate a change in Intune. [Audit logs](monitor-audit-logs.md) provides more details.
-   - **TeamViewer Connector** is a service that allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](device-profile-android-teamviewer.md).
+   - **TeamViewer Connector** is a service that allows users of Intune-managed Android devices to get remote assistance from their IT administrator. Learn more about [TeamViewer](teamviewer-support.md).
    - **Help and Support** provides a shortcut on troubleshooting tips, requesting support, or checking the status of Intune.
 
 ## Available device actions
@@ -73,7 +71,7 @@ The actions available depend on the device platform, and the configuration of th
 	- [Locate device](device-locate.md) (iOS only)
 	- [Restart](device-restart.md) (Windows only)
 	- [Windows 10 PIN reset](device-windows-pin-reset.md)
-	- [Remote control for Android](device-profile-android-teamviewer.md)
+	- [Remote control for Android](teamviewer-support.md)
 	- [Synchronize device](device-sync.md)
 
 ## Next steps

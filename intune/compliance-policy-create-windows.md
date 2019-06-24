@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 05/28/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -122,6 +121,9 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
+  > [!IMPORTANT]
+  > When the password requirement is changed on a Windows desktop, users are impacted the next time they sign in, as that’s when the device goes from idle to active. Users with passwords that meet the requirement are still prompted to change their passwords.
+
 ### Encryption
 
 - **Encryption of data storage on a device**: Choose **Require** to encrypt data storage on your devices.
@@ -131,6 +133,10 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 ### Device Security
 
+- **Trusted Platform Module (TPM)**: When set to **Require**, Intune checks the version for compliance. The device is compliant if the TPM chip version is greater than 0 (zero). The device is not compliant if there isn't a TPM version on the device. When **Not configured**, Intune doesn't check the device for a TPM chip version.
+
+  [DeviceStatus CSP - DeviceStatus/TPM/SpecificationVersion node](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
+  
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
 - **Antispyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Windows Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
 
@@ -143,7 +149,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be non-compliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
   
-  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
+  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with Conditional Access](advanced-threat-protection.md).
 
 Select **OK** > **Create** to save your changes.
 
@@ -157,7 +163,7 @@ To verify device encryption on the Microsoft HoloLens, see [Verify device encryp
 
 ## Surface Hub
 
-Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (requires Azure Active Directory (Azure AD)), and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure AD joined for compliance and conditional access to work.
+Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and Conditional Access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (requires Azure Active Directory (Azure AD)), and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure AD joined for compliance and Conditional Access to work.
 
 See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 

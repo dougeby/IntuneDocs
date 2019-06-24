@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -47,7 +46,7 @@ The main Intune standalone requirements are:
 
 -   Azure AD Connect (for directory synchronization)
 
--   Intune On-Premises Connector for Exchange (for conditional access for Exchange On-Premises, if needed)
+-   Intune On-Premises Connector for Exchange (for Conditional Access for Exchange On-Premises, if needed)
 
 -   Intune Certificate Connector (for SCEP certificate deployment, if needed)
 
@@ -128,11 +127,11 @@ Intune supports compliance policies. Add compliance policies as appropriate and 
 
 -   Learn more about [compliance policies](device-compliance.md).
 
-### Task 12: Enable conditional access policies
+### Task 12: Enable Conditional Access policies
 
-Intune supports conditional access for Exchange Online, Exchange on-premises, SharePoint Online, Skype for Business Online, and Dynamics CRM Online. Enable and configure conditional access as appropriate based on your Intune deployment use cases and requirements.
+Intune supports Conditional Access for Exchange Online, Exchange on-premises, SharePoint Online, Skype for Business Online, and Dynamics CRM Online. Enable and configure Conditional Access as appropriate based on your Intune deployment use cases and requirements.
 
--   Learn more about [conditional access](conditional-access.md).
+-   Learn more about [Conditional Access](conditional-access.md).
 
 ### Task 13: Enroll devices
 

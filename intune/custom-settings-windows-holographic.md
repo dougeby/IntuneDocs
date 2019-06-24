@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 12/06/2018
 ms.article: article
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.topic: reference
@@ -40,7 +39,7 @@ This article shows you how to create a custom profile for Windows Holographic fo
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following settings:
 

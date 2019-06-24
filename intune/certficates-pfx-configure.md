@@ -5,9 +5,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/19/2019
 ms.topic: article
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -139,7 +138,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 > [!IMPORTANT]  
 > The Microsoft Intune Certificate Connector cannot be installed on the issuing Certificate Authority (CA), and instead must be installed on a separate Windows server.  
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**.
 3. Download and save the connector file to a location you can access from the server where you're going to install the connector.
 
@@ -163,7 +162,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 ### PFX Certificate Connector for Microsoft Intune
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Certification Connectors** > **Add**
 3. Download and save the PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
 4. After the download completes, sign in to the server. Then:
@@ -252,12 +251,17 @@ Updates for the two certificate connectors are released periodically. When we up
 
 The *PFX Certificates Connector for Microsoft Intune* [supports automatic updates](#requirements), while the *Intune Certificate Connector* is updated manually.
 
-### May 6, 2019
+### May 17, 2019  
+- **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.404**  
+  Changes in this release:  
+  - Fixed an issue where existing PFX certificates continue to be reprocessed which causes the connector to stop processing new requests. 
+
+### May 6, 2019  
 - **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.402**  
   Changes in this release:  
   - The polling interval for the connector is reduced from 5 minutes to 30 seconds.
  
-### April 2, 2019
+### April 2, 2019  
 - **Intune Certificate Connector - version 6.1904.1.0**  
   Changes in this release:  
   - Fixed an issue where the connector might fail to enroll to Intune after signing in to the connector with a global administrator account.  
@@ -278,6 +282,3 @@ The profile is created, but it's not doing anything yet. Next, [assign the profi
 
 [Use SCEP for certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Download the certificate connector from the Azure portal"  

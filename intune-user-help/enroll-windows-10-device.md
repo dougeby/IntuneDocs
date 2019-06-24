@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -33,8 +33,8 @@ ms.collection: M365-identity-device-management
 Use Intune Company Portal to enroll your Windows 10 device under your organization's management. This article describes how to enroll devices with Windows 10 version 1607 and later, and Windows 10 version 1511 and earlier. Before you begin, make sure you [verify the version on your device](windows-enrollment-company-portal.md#find-windows-10-version-number) so that you can follow the correct steps.  
 
 Windows 10 is supported across various device types including desktop, phone, and tablet. The enrollment steps are the same on whichever device you're using. However, your screen may look a little different from the images shown in this article.  
-
-> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player]  
+</br>
+> [!VIDEO https://www.youtube.com/embed/TKQxEckBHiE?rel=0]
 
 ## Enroll Windows 10 version 1607 and later device 
 These steps describe how to enroll a device that runs on Windows 10, version 1607 and later.  
@@ -93,11 +93,14 @@ These steps describe how to enroll a device that runs on Windows 10, version 151
 
 	![Sign in](./media/W10-enroll-4-sign-in.png)  
 
-Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).   
+Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account-related problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) during enrollment.  
+
+## IT administrator support   
+
+If you're an IT administrator and run in to problems while enrolling devices, see [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4469913). This article lists common errors, their causes, and steps to resolve them. 
 
 ## Next steps  
-
-To get help, contact your company support. You can find your organization's IT information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
+If you need help with Company Portal or enrollment, contact your organization's IT support team. You'll find their contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980). Sign in to the site with your work or school account.  
 
  
 

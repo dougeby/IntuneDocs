@@ -7,9 +7,8 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 06/18/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -63,6 +62,24 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 - **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
 - **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
 - **Apps from the store only**: **Require** forces end users to only install apps from the Windows App Store. **Not configured** allows end users to install apps from places other than the Windows App Store.
+- **Force restart apps on update failure**: When an app is being used, it may not update. Use this setting to force an app to restart. **Not configured** (default) doesn't force the apps to restart. **Require** allows administrators to force a restart on a specific date and time, or on a recurring schedule. When set to **Require**, also enter:
+
+  - **Start Date/Time**: Choose a specific date and time to restart the apps.
+  - **Recurrence**: Choose a daily, weekly, or monthly restart.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **User control over installations**: When set to **Not configured** (default), Windows Installer prevent users from changing the installation options typically reserved for system administrators, such as entering the directory to install the files. **Block** allows users to change these installation options, and some of the Windows Installer security features are bypassed.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Install apps with elevated privileges**: When set to **Not configured** (default), the system applies the current user's permissions when it installs programs that a system administrator doesn't deploy or offer. **Block** directs Windows Installer to use elevated permissions when it installs any program on the system. These privileges are extended to all programs.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Startup apps**: Enter a list of apps to open after a user signs in to the device. Be sure to use a semi-colon delimited list of Package Family Names (PFN) of Windows applications. For this policy to work, the manifest in the Windows apps must use a startup task.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Select **OK** to save your changes.
 
@@ -407,15 +424,20 @@ Select **OK** to save your changes.
 
 These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), which also lists the supported Windows editions.
 
-- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password.
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password. Applies to local accounts only. Domain account passwords remain configured by Active Directory (AD) and Azure AD.
+
   - **Required password type**: Choose the type of password. Your options:
     - **Not configured**: Password can include numbers and letters.
     - **Numeric**: Password must only be numbers.
     - **Alphanumeric**: Password must be a mix of numbers and letters.
   - **Minimum password length**: Enter the minimum number or characters required, from 4-16. For example, enter `6` to require at least six characters in the password length.
-  - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device is wiped, from 1-11. `0` (zero)  may disable the device wipe functionality.
+  
+    > [!IMPORTANT]
+    > When the password requirement is changed on a Windows desktop, users are impacted the next time they sign in, as that’s when the device goes from idle to active. Users with passwords that meet the requirement are still prompted to change their passwords.
+    
+  - **Number of sign-in failures before wiping device**: Enter the number of authentication failures allowed before the device may be wiped, up to 11. The valid number you enter depends on the edition. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) lists the supported values. `0` (zero) may disable the device wipe functionality.
 
-    This setting has a different impact depending on the edition. For specific details, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    This setting also has a different impact depending on the edition. For specific details on this setting, see the [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Maximum minutes of inactivity until screen locks**: Enter the length of time a device must be idle before the screen is locked.
   - **Password expiration (days)**: Enter the length of time in days when the device password must be changed, from 1-365. For example, enter `90` to expire the password after 90 days.
@@ -710,7 +732,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 - **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed. When set to `90`, quarantine items are stored for 90 days on the system, and then removed.
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
 - **Scan archive files**: **Enable** prevents Defender from scan archived files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
-- **Scan incoming mail messages**: **Enable** prevents email scanning. **Not configured** (default) allows Defender to scan email messages as they arrive on the device.
+- **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. **Not configured** (default) prevents email scanning.
 - **Scan removable drives during a full scan**: **Enable** prevents full scans of removable drives. **Not configured** (default) lets Defender scan removable drives, such as USB sticks.
 - **Scan mapped network drives during a full scan**: **Enable** lets Defender scan files on mapped network drives. **Not configured** (default) prevents the full scan. If the files on the drive are read-only, Defender can't remove any malware found in them.
 - **Scan files opened from network folders**: **Not configured** (default) lets Defender scan files on shared network drives, such as files accessed from a UNC path. **Enable** prevents this scanning. If the files on the drive are read-only, Defender can't remove any malware found in them.
@@ -760,7 +782,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. Your options:
+- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. If it's not possible, Windows Defender chooses the best option to ensure the threat is remediated. Your options:
   - **Clean**
   - **Quarantine**
   - **Remove**

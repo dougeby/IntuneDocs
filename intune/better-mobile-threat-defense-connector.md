@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 07/25/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -31,9 +30,9 @@ ms.collection: M365-identity-device-management
 
 # Better Mobile Threat Defense connector with Intune
 
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Better Mobile app.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Better Mobile, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Better Mobile app.
 
-You can configure conditional access policies based on Better Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
+You can configure Conditional Access policies based on Better Mobile risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 ## How do Intune and Better Mobile help protect your company resources?
 

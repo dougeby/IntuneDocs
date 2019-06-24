@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/02/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -56,8 +55,8 @@ Administrators can set up the following methods of enrollment that require no us
 
 - [Hybrid Azure AD Join](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) lets administrators configure Active Directory group policy to automatically enroll devices that are hybrid Azure AD joined. 
 - [Configuration Manager Co-management](https://docs.microsoft.com/sccm/comanage/overview) lets administrators enroll their existing Configuration Manager managed devices into Intune to get the dual benefits of Intune and Configuration Manager. 
-- [Device enrollment manager](device-enrollment-manager-enroll.md) (DEM) is a special service account. DEM accounts have permissions that let authorized users enroll and manage multiple corporate-owned devices. These types of devices are good for point-of-sale or utility apps, for example, but not for users who need to access email or company resources. Also, this method doesn’t allow the use of features such as Conditional Access. 
-- [Bulk enroll](windows-bulk-enroll.md) lets an authorized user join large numbers of new corporate-owned devices to Azure Active Directory and Intune. You create a provisioning package with the Windows Configuration Designer (WCD) app. Then, using USB media during initial Windows OOBE experience or from existing Windows PC, you install the provisioning package to automatically enroll the devices into Intune. 
+- [Device enrollment manager](device-enrollment-manager-enroll.md) (DEM) is a special service account. DEM accounts have permissions that let authorized users enroll and manage multiple corporate-owned devices. These types of devices are good for point-of-sale or utility apps, for example, but not for users who need to access email or company resources. This method does not allow the use of features such as Conditional Access. 
+- [Bulk enroll](windows-bulk-enroll.md) lets an authorized user join large numbers of new corporate-owned devices to Azure Active Directory and Intune. You create a provisioning package with the Windows Configuration Designer (WCD) app. Then, using USB media during initial Windows OOBE experience or from existing Windows PC, you install the provisioning package to automatically enroll the devices into Intune. This method does not allow the use of Conditional Access. 
 
 ## Next steps
 

@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -53,7 +52,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 
 #### Block apps from accessing SharePoint Online <!-- 679339 -->
 
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](app-based-conditional-access-intune-create.md). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
+You can now create an app-based Conditional Access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](app-based-conditional-access-intune-create.md). In the apps-based Conditional Access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
 #### Single sign-on support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
@@ -139,14 +138,14 @@ We have made available a version of the Company Portal app for iOS through the A
 
 #### Support for Skycure
 
-You can now control mobile device access to corporate resources using conditional access based on risk assessment conducted by Skycure, a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running Skycure, including:
+You can now control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Skycure, a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running Skycure, including:
 
 - Physical defense
 - Network defense
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Symantec Endpoint Protection Mobile (Skycure) risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Symantec Endpoint Protection Mobile connector](skycure-mobile-threat-defense-connector.md).
+You can configure EMS Conditional Access policies based on Symantec Endpoint Protection Mobile (Skycure) risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Symantec Endpoint Protection Mobile connector](skycure-mobile-threat-defense-connector.md).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 

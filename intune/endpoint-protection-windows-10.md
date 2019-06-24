@@ -1,14 +1,13 @@
 ---
 # required metadata
 title: Protection settings for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
-description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender feature includes, Application Guard, Firewall, SmartScreen, encryption and BitLocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
+description: On Windows 10 devices, use or configure endpoint protection settings to enable Windows Defender features, including Application Guard, Firewall, SmartScreen, encryption and BitLocker, Exploit Guard, Application Control, Security Center, and security on local devices in Microsoft Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/06/2019
+ms.date: 05/17/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -25,6 +24,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
+ms.reviewer: karthig
 ---
 
 # Windows 10 (and later) settings to protect devices using Intune
@@ -97,6 +97,7 @@ These settings are applicable to specific network types, including **Domain (wor
 - **Global port Windows Defender Firewall rules from the local store**: Choose **Enable** to apply global port firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the global port firewall rules in the local store are ignored and not enforced.
 - **Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the firewall rules from the local store are ignored and not enforced.
 - **IPsec rules from the local store**: Choose **Enable** to apply connection security rules from the local store, regardless of schema or connection security rule versions. When **Not configured** (default), the connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.
+
 
 ## Windows Defender SmartScreen settings
 

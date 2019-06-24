@@ -8,9 +8,8 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 5/13/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -50,18 +49,10 @@ If you're enrolling Android Enterprise work profile devices by using a [Device E
 
 For more information, see [Data Intune sends to Google](data-intune-sends-to-google.md).
 
-## Approve the Company Portal app in the Managed Google Play store
-
-To ensure that users always have access to the most up-to-date version of the Company portal app, you must approve the Company Portal app for Android in the Managed Google Play store. By approving it, you make sure that each user gets automatic updates. If you don't approve it, the Company Portal will eventually become out of date and may not receive important bug fixes or new features when Microsoft releases them.
-
-Follow these steps to approve the Intune Company Portal:
-
-1.  Browse to the Company Portal app on the [Managed Google Play store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
-2.  Sign into the Managed Google Play store with the same Google account that you used to configure the binding for Android Enterprise.
-3.  Click **Approve** and a new dialog will open.
-4.  Review the permissions in this dialog, then click **Approve**. You need these to allow these permissions in order to allow the Company Portal app to manage the work profile on the device.
-5.  Select **Keep approved when app requests new permissions**, then click **Save.**
-
 ## Next steps for Android Enterprise work profiles
 - [Deploy Android Enterprise work profile apps](apps-add-android-for-work.md)
 - [Add Android Enterprise work profile configuration policies](device-profiles.md)
+
+## See also
+
+[Configuring and troubleshooting Android enterprise devices in Microsoft Intune](https://support.microsoft.com/help/4476974)

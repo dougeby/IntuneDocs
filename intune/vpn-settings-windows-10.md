@@ -2,14 +2,13 @@
 # required metadata
 
 title: Windows 10 VPN settings in Microsoft Intune - Azure | Microsoft Docs
-description: Learn and read about all the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, conditional access, and DNS and proxy settings for Windows 10 and Windows Holographic for Business devices.
+description: Learn and read about all the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, Conditional Access, and DNS and proxy settings for Windows 10 and Windows Holographic for Business devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/12/2018
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -127,7 +126,7 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## Conditional Access
 
-- **Conditional access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client communicates with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
+- **Conditional Access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client communicates with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
 
 - **Single sign-on (SSO) with alternate certificate**: For device compliance, use a certificate different from the VPN authentication certificate for Kerberos authentication. Enter the certificate with the following settings:
 

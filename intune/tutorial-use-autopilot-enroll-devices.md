@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -57,9 +56,9 @@ The first step in setting up Windows Autopilot is to add the Windows devices to 
 
 1. In any text editor, create a list of comma-separated values (CSV) that identify the Windows devices. Use the following format:
     
-    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
+    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-Group-Tag*
     
-    The first three items are required, but the order ID is optional.
+    The first three items are required, but the Group Tag (previously known "order ID") is optional.
 
 2. Save the CSV file.
 
@@ -94,23 +93,20 @@ Next, you'll create a device group and put the Autopilot devices you just loaded
 After creating a device group, you must create a deployment profile so that you can configure the Autopilot devices.
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
-2. For **Name**, enter *Autopilot Profile*. For **Description**, enter *Test profile for Autopilot devices*.
+2. On the **Basics** page, tor **Name**, enter *Autopilot Profile*. For **Description**, enter *Test profile for Autopilot devices*.
 3. Set **Convert all targeted devices to Autopilot** to **Yes**. This setting makes sure that all devices in the list get registered with the Autopilot deployment service. Allow 48 hours for the registration to be processed.
-4. For **Deployment mode**, choose **User-driven**. Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
-5. In the **Join to Azure AD as** box, choose **Azure AD joined**.
-6. Choose **Out-of-box experience (OOBE)**, configure the following options and leave others set to the default, and then choose **Save**:
+4. Select **Next**.
+5. On the **Out-of-box experience (OOBE)** page, for **Deployment mode**, choose **User-driven**. Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
+6. In the **Join to Azure AD as** box, choose **Azure AD joined**.
+7. Configure the following options and leave others set to the default:
     - **End-user license agreement (EULA)**: **Hide**
     - **Privacy settings**: **Show**
     - **User account type**: **Standard**
-
-6. Choose **Create** to create the profile. The Autopilot deployment profile is now available to assign to devices.
-
-## Assign an Autopilot deployment profile to a device group
-
-Now that the deployment profile is created, you'll assign it to the device group.
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
-2. In the specific profile blade, choose **Assignments**. 
-3. Choose **Select groups**, then in the **Select groups** blade, choose **Autopilot Group**, then choose **Select**.
+8. Select **Next**.
+9. On the **Assignments** page, choose **Selected groups** for **Assign to**.
+10. Choose **Select groups to include**, choose **Autopilot Group**.
+11. Select **Next**.
+12. On the **Review + Create** page, choose **Create** to create the profile.
 
 ## Distribute devices to users
 
@@ -118,7 +114,7 @@ You can now distribute the Windows devices to your users. When they sign in for 
 
 ## Clean up resources
 
-If you don't want to use Autopilot devices any more, you can delete them.
+If you don't want to use Autopilot devices anymore, you can delete them.
 
 1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 

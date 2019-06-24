@@ -8,9 +8,8 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 5/13/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -34,6 +33,13 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 To support [Android Enterprise work profile](android-work-profile-enroll.md), [Android Enterprise fully managed](android-fully-managed-enroll.md), and [Android Enterprise dedicated devices](android-kiosk-enroll.md), you must connect your Intune tenant account to your Managed Google Play account.  
+
+To make it easier for you to configure and use Android Enterprise management, upon connecting to Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
+
+- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
+- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
+- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
+- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
 
 > [!NOTE]
 > Due to interaction between Google and Microsoft domains, this step may require that you adjust your browser settings.  Make sure that "portal.azure.com" and "play.google.com" are in the same security zone in your browser.
@@ -60,7 +66,7 @@ To support [Android Enterprise work profile](android-work-profile-enroll.md), [A
 
 You can turn off Android Enterprise enrollment and management. To do this, you must first retire any enrolled Android Enterprise work profile devices. Then, choose **Disconnect** in the Intune administration console to remove all enrolled Android Enterprise work profile devices and dedicated devices from enrollment. This also removes the relationship between the Managed Google Play account and Intune.
 
-1. As an Intune administrator, in the [Azure portal](https://portal.azure.com), choose **All Services** > **Monitoring + Management** > **Intune**.
+1. As an Intune administrator, sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Choose **Device enrollment** > **Android enrollment** > **Managed Google Play** > **Disconnect**.
 3. Choose **Yes** to disconnect and unenroll all Android enterprise devices from Intune.
 

@@ -9,7 +9,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 01/06/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -56,15 +55,14 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 > [!Note]  
 > You need permission to **Reports** in Intune. For more information, see [Authorization](reports-api-url.md).
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3. Open the **Intune Data Warehouse** pane.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. Open the **Intune Data Warehouse** pane by selecting the Data Warehouse link under **Other tasks** on the right side of the **Microsoft Intune - Overview** blade.
 4. Copy the custom feed URL. For example:
 `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Open Power BI Desktop.
-6. Choose **Get Data** > **Odata feed**.
-7. Paste the custom feed URL into the URL box in the **OData feed** window.
-8. Select **Basic**.
+1. Open Power BI Desktop.
+2. Choose **Get Data** > **Odata feed**.
+3. Paste the custom feed URL into the URL box in the **OData feed** window.
+4. Select **Basic**.
 
     ![OData feed for the Intune Data Warehouse for your tenant](media/reports-create-01-odatafeed.png)
 

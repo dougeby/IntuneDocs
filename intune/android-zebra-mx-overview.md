@@ -9,7 +9,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/23/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority:
 ms.technology:
@@ -130,7 +129,7 @@ After you test the file, the next step is to deploy the profile to devices using
 
 In Intune, create a device configuration profile:
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 

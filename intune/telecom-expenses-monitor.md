@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/09/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -112,7 +111,7 @@ Intune integrates with the following telecom expense management provider:
 
 After you complete Step 1, your connection is automatically enabled. In Intune, the connection status shows **Active**. To confirm the status is active, use the following steps:
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**. Or, go directly to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device configuration** > **Telecom Expense Management**. Look for the **Active** connection status:
 

@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -54,14 +53,14 @@ For details, see [Set device type restrictions](https://docs.microsoft.com/intun
 Intune MDM device compliance policies provide you the following tools: 
 - Specify compliance rules
 - View compliance status via reporting
-- Act on noncompliance via device quarantine and conditional access
+- Act on noncompliance via device quarantine and Conditional Access
 
 Like enrollment restrictions, device compliance policies include both minimum and maximum operating system versions. Policies also have a compliance timeline to provide your users a grace period to get compliant. Device compliance policies keep your enrolled end-user devices compliant with organizational policy.
 
 ![Device compliance - actions for noncompliant devices](./media/os-version-actions-noncompliance.png) 
 
 ### In practice
-Organizations are using device compliance policies for the same scenarios as enrollment restrictions. These policies keep users on current, validated operating system versions in your organization. When end-user devices fall out of compliance, access to organizational resources can be blocked via conditional access until end users are within the supported operating system range for your organization. End users are notified that they are out of compliance and they are provided the steps to regain access.   
+Organizations are using device compliance policies for the same scenarios as enrollment restrictions. These policies keep users on current, validated operating system versions in your organization. When end-user devices fall out of compliance, access to organizational resources can be blocked via Conditional Access until end users are within the supported operating system range for your organization. End users are notified that they are out of compliance and they are provided the steps to regain access.   
 
 For details, see [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started).
  
@@ -89,7 +88,7 @@ You can use the Intune capabilities described in this article to help you move y
   - You can run a compliance report to identify users that are out of compliance. 
 - **Step 3a**: Use Intune app protection policies to block users when an app opens or resumes if the device is not running operating system v2.
 - **Step 3b**: Use device compliance policies to require operating system v2 as the minimum version for a device to be compliant.
-  - These policies require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device conditional access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
+  - These policies require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device Conditional Access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
 
 ## Next steps
 Use the following resources to manage operating system versions in your organization: 

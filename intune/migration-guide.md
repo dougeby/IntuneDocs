@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -57,7 +56,7 @@ This guide breaks down the migration into two phases, both of which include task
 
     -   [Communication plan](migration-guide-communication-plan.md)
 
-    -   [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md)
+    -   [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md)
 
     -   [Typical migration cycle](migration-guide-cycle.md)
 	    -   [Monitoring migration](migration-guide-cycle.md#monitoring-migration)

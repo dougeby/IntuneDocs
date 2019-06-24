@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -31,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Symantec Endpoint Protection Mobile connector
 
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Symantec Endpoint Protection Mobile (SEP Mobile), a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running SEP Mobile, including:
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Symantec Endpoint Protection Mobile (SEP Mobile), a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running SEP Mobile, including:
 
 -   Physical defense
 
@@ -41,7 +40,7 @@ You can control mobile device access to corporate resources using conditional ac
 
 -   Vulnerabilities defense
 
-You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use conditional access policies to allow or block noncompliant device access to corporate resources based on detected threats.
+You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use Conditional Access policies to allow or block noncompliant device access to corporate resources based on detected threats.
 
 ## How do Intune and SEP Mobile help protect your company resources?
 

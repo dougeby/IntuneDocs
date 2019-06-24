@@ -11,28 +11,6 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features. 
 
-### Change in enrollment workflow with Intune Company Portal on corporate iOS devices authenticating with Setup Assistant <!-- 1927359 -->
-There's an upcoming change in workflow for enrollment of iOS devices through one of Apple’s corporate device enrollment methods - Apple Configurator, Apple Business Manager, Apple School Manager, or the Apple Device Enrollment Program (DEP), when using Setup Assistant for authentication. This change applies only to devices enrolled with user affinity.
-
-#### How does this affect me?
-When this change is rolled out, enrollment profiles in Intune in the Azure portal will be updated so that you can specify how devices authenticate and if they receive the Company Portal app. There will be an improved workflow to enroll iOS devices through the methods listed above. 
-
-- When enrolling new devices and authenticating with Setup Assistant, you’ll be able to choose whether or not to deploy the Company Portal app automatically. End users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow.  
-- On devices already enrolled via Setup Assistant through one of Apple’s corporate device enrollment methods, you must take action if you want to enable Conditional Access. You’ll have to [configure an app configuration policy](https://aka.ms/enrollment_setup_assistant) with a specific xml to push the Company Portal down to these devices.  If you choose to push the Company Portal in this manner, end users will no longer see the “Identify your device” screen and the “Confirm your device” screen in the enrollment flow. 
-- After this change is rolled out, if you haven't deployed the Company Portal with the app configuration profile mentioned above and if end users download the Company Portal app from the App store, they can sign in, but they'll get an error message. They won't be able to use the app for Conditional Access. 
-
-#### What do I need to do to prepare for this change?
-If you plan on using the modified workflow, you'll want to update your end-user guidance to indicate that:
-
-- End users will no longer see the two screens mentioned above in the enrollment flow. 
-- They'll need to sign in to the Company Portal when it's automatically deployed and not download it from the app store. 
-
-You can choose to create an app configuration policy now if needed, in preparation for this change. When this new workflow rolls out, you’ll see updated enrollment profiles in the console. We’ll also inform you of this rollout through the Message Center. Then, you’ll need to take the action so your end users can enroll through DEP by authenticating with Setup Assistant and you can use Company Portal for Conditional Access.
-
-#### Additional Information 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
-
 ### Update your Android Company Portal app to the latest version <!--4536963-->
 Intune periodically releases updates to the Android Company Portal App. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google’s change from their existing notification platform to Google’s Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their company portal app to at least November 2018 release to continue communicating with the Google play store.
 
@@ -42,5 +20,50 @@ Our telemetry indicates you have devices with a Company Portal version earlier t
 #### What do I need to do to prepare for this change?
 Ask end users of Android devices that have not updated to update the company portal through Google play. Notify your help desk in case a user has not kept auto-updating of the company portal app. See the link in Additional Information for more on Google’s FCM platform and change.
 
-#### Additional Information
+#### Additional information
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### New Fullscreen experience coming to Intune <!--4593669-->
+We’re rolling out updated create and edit UI experiences to Intune in the Azure portal. This new experience will simplify the existing workflows by using a wizard style format condensed within one blade. This update will do away with “blade sprawl” or any create and edit flows that require you to drill down into deep blade journeys. The create workflows will also be updated to include Assignments (except for App assignment).
+
+#### How does this affect me?
+The full screen experience will be rolled out to Intune both at portal.azure.com and devicemanagement.microsoft.com over the next few months. This update to the UI will not impact functionality of your existing policies and profiles, but you will see a slightly modified workflow. When you create new policies, for example, you will be able to set some assignments as part of this flow instead of doing so after creating the policy. See the blog post at Additional information for screenshots of what the new experience will look like in the console.
+
+#### What can I do to prepare for this change?
+You do not need to take any action but can consider updating your IT pro guidance if necessary. We’ll update our documentation as this experience rolls out to various blades in the Intune on Azure portal.
+
+#### Additional information 
+https://aka.ms/intune_fullscreen
+
+### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665342-->
+In September, we expect iOS 13 to be released by Apple. Intune enrollment, the Company Portal, and the Managed Browser will move to support iOS 11 and higher shortly after the iOS 13 release.
+
+#### How does this affect me?
+Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may not affect you; you’ve likely already upgraded your OS or devices. However, if you have any of the devices listed below, or decide to enroll any of the devices listed below, know that the devices below do not support an OS greater than iOS 10. These devices will need to be upgraded to a device that supports iOS 11 or higher:
+
+- iPhone 5
+- iPhone 5c
+- iPad (4th Generation)
+
+Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP) you can also set the “Require minimum iOS operating system (Warning only)” access setting.
+
+#### What do I need to do to prepare for this change?
+Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.
+
+### Plan for Change: Support for version 8.1.1 and higher of Intune App SDK for iOS <!-- 3586942-->
+Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13 which is expected to come around September and also been announced in MC181399.
+
+#### How does this affect me?
+With Intune App SDK or App Wrapping integration, you can protect corporate data from unapproved applications and users via data encryption. The Intune App SDK for iOS will use 256-bit encryption keys by default when encryption is enabled by Intune App Protection Policies (APP). After this change, any iOS apps on SDK versions prior to 8.1.1, which use 128-bit encryption keys, will no longer be able to share data with applications integrated with SDK 8.1.1 or using the 256-bit keys. All iOS apps will need to have an SDK version 8.1.1 or higher to allow protected data sharing.
+
+#### What can I do to prepare for this change?
+Check your Microsoft, third-party, and line-of-business (LOB) apps. You should ensure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
+
+- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For infomration on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
+- For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
+
+You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
+
+#### Additional information
+https://docs.microsoft.com/intune/apps-prepare-mobile-application-management

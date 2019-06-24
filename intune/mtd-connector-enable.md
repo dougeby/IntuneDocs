@@ -10,7 +10,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -38,11 +37,7 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 ## To enable the MTD connector
 
-1. Go to the [Azure portal](https://portal.azure.com), and sign in with your Intune credentials. After you've successfully signed in, you see the **Azure Dashboard**.
-
-2. On the **Azure Dashboard**, choose **All services** from the left menu, then type **Intune** in the text box filter.
-
-3. Choose **Intune**; the **Intune Dashboard** opens.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 4. On the **Intune Dashboard**, choose **Device compliance**, then choose **Mobile Threat Defense** under the **Setup** section.
 
@@ -71,7 +66,7 @@ You can decide which MTD toggle options you need to enable according to your org
 - **Number of days until partner is unresponsive**: Number of days of inactivity before Intune considers the partner to be unresponsive because the connection is lost. Intune ignores compliance state for unresponsive MTD partners.
 
 > [!IMPORTANT] 
-> When possible, we recommend that you add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This helps ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
+> When possible, we recommend that you add and assign the MTD apps before creating the device compliance and the Conditional Access policy rules. This helps ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
 
 > [!TIP]
 > You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense pane.

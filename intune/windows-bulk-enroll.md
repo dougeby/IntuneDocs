@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -102,5 +101,5 @@ If a user tries to enroll a previously bulk-enrolled device using the Company Po
 
 Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. You must use [device-level certificates](certificates-configure.md) to manage these connections. 
 
-### Conditional access
-Conditional access is not available for Windows devices enrolled using bulk enrollment.
+### Conditional Access
+Conditional Access is not available for Windows devices enrolled using bulk enrollment.

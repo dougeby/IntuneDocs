@@ -8,9 +8,8 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/03/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 
@@ -27,7 +26,7 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# In development for Microsoft Intune - May 2019
+# In development for Microsoft Intune - June 2019
 
 To assist in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition:
 
@@ -49,83 +48,116 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
  
 ## Intune in the Azure portal
 
+<!-- ***********************************************-->
+### App management
 
-<!-- 1905 start-->
+#### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
+Company Portal for Windows will list all managed apps (both required and available) that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
+
+#### Configure which browser is allowed to link to organization data <!-- 3145939 -->
+Intune App Protection Policies (APP) on Android and iOS devices will allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](app-protection-policy.md).
+
+#### Installed apps page on the Company Portal website  <!-- 4224326 -->
+The [Company Portal website](https://portal.manage.microsoft.com/) will include a new page to show users all of the apps that have been installed on their device. This list includes both the available apps and those apps required by their organization. From this page, users will be able to see the installation and requirement statuses of the apps on their device. For more information about the Company Portal website, see [Using the Intune Company Portal website](/intune-user-help/using-the-intune-company-portal-website) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+
+#### Call Graph API read operations from an application without user credentials <!-- 4655885 -->
+Applications will be able to call Intune Graph API read operations with app identity without user credentials. To learn more, see [Get access without a user](https://docs.microsoft.com/graph/auth-v2-service).
+
+<!-- ***********************************************-->
+### Device configuration
 
 
-### Deleting a device in the Apple portal will be reflected in the Intune portal <!--2489996 -->
-If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
+#### Support for IKEv2 VPN profiles for iOS <!-- 1943438 -->
+You'll be able to create VPN profiles for the iOS native VPN client using the IKEv2 protocol. IKEv2 is a new connection type in **Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **VPN** for profile type > **Settings**.
 
-### Baseline support for keyword search  <!-- 3082036         -->
+These VPN profiles configure the native VPN client. So, no VPN client apps are installed or pushed to managed devices. This feature requires devices be enrolled in Intune (MDM enrollment).
+
+To see the current VPN settings you can configure, go to [Configure VPN settings on iOS devices in Microsoft Intune](vpn-settings-ios.md).
+
+Applies to: iOS
+
+#### Configure settings for kernel extensions on macOS devices <!-- 20430240 -->
+On macOS devices, you can create a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > choose **macOS** for platform). A future update will include a new group of settings that let you configure and use kernel extensions on your devices.
+
+Applies to: macOS 10.13.2 and later
+
+#### Baseline support for keyword search  <!-- 3082036         -->
 While creating or editing a security baseline profile, you’ll soon be able to use *search* to filter the settings that display in the console.   
 
-### Reset and wipe devices in bulk by using the Graph API <!-- 3295288 -->
-You'll be able to reset and wipe up to 100 devices in bulk using the Graph API.
-
-### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671 -->
-Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
-
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
-
-Applies to: Windows 10 and later
-
-### Intune management extension PowerShell scripts  <!-- 3734186    -->
-You'll be able to configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md).
-
-### Prevent end users from modifying their Personal HotSpot and disable Siri server logging on iOS supervised devices <!-- 4097904  --> 
-You create a device restrictions profile on iOS device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type). This update includes new settings you can configure:
-
-- Personal HotSpot
-- Siri server logging
-
-To see the current settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md). 
-
-Applies to: iOS 12.2 and newer
-
-### New classroom app device restriction settings for DEP-enrolled macOS devices <!-- 4097905  --> 
-You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update includes new classroom app settings for DEP-enrolled devices, and the option to disable the iCloud Photo Library.
-
-To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
-
-Applies to: macOS 10.14.4 and newer
-
-### Android Enterprise app management <!-- 4459905 idready -->
-To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
-
-- **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
-- **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
-- [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
-
-Previously, IT admins would need to manually find and approve these apps in the [Managed Google Play store](https://play.google.com/store/apps) as part of setup. This change removes those previously manual steps to make it easier and faster for customers to use Android Enterprise management.
-
-Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service roll out.
-
-<!-- 1904 start-->
-
-### Advanced settings for Windows Defender Firewall <!-- 1311949 -->
-You'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
-
-
-### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
-Company Portal for Windows will list all managed apps&ndash; both required and available&ndash; that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
-
-### Use "applicability rules" when creating Windows 10 device configuration profiles <!-- 2549910 -->
+#### Use "applicability rules" when creating Windows 10 device configuration profiles <!-- 2549910 -->
 You create Windows 10 device configuration profiles (**Device configuration** > **Profiles** > **Create profile** > **Windows 10** for platform). You'll be able to create an **applicability rule** so the profile only applies to a specific edition or specific version. For example, you create a profile that enables some BitLocker settings. Once you add the profile, use an applicability rule so the profile only applies to devices running Windows 10 Enterprise.
 
 Applies to: 
 - Windows 10 and later
 
-###  Intune security tasks for Defender ATP (In public preview) <!-- 3208597 -->
-Coming as a public preview, Intune will soon add security tasks for the newly announced Microsoft Defender Threat & Vulnerability Management.  With this integration, security operations admins in Windows Defender ATP (WDATP) can more effectively communicate the recommended remediations for emerging threats to Intune administrators. The addition of security tasks adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations.
+#### Apps from the store only setting for Windows 10 devices includes more configuration options <!-- 2697002  -->
 
-To learn more about security tasks in Intune, see the blog post about [using Intune security tasks to extend Microsoft Defender ATP’s Threat and Vulnerability Management](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Microsoft-Intune-security-tasks-extend-Microsoft-Defender-ATP-s/ba-p/369857). 
+When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only install apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In a future update, this setting will be expanded to support more options. 
 
-### Windows Defender Advanced Threat Protection baseline <!-- 3754134 -->
-We're going to add new baseline to help you configure Windows Defender Advanced Threat Protection settings.
+To see the current settings, go to [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#app-store).
+
+Applies to: Windows 10 and later
+
+#### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings, or add settings not built-in to Intune. Currently, you can deploy one profile to a single device. In a future update, you'll be able to deploy multiple profiles to:
+
+- The same user group
+- The same devices group
+- A single device
+
+[Use and manage Zebra devices with Zebra Mobility Extensions in Microsoft Intune](android-zebra-mx-overview.md) shows how to use MX in Intune.
+
+Applies to: Android
+
+#### Some kiosk settings on iOS devices are set using "Block", replacing "Allow" <!-- 4404075  -->
+When you create a device restrictions profile on iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Kiosk**), you set the **Auto lock**, **Ringer switch**, **Screen rotation**, **Screen sleep button**, and **Volume buttons**. 
+
+Currently, these settings are configured using **Allow** (blocks the feature) or **Not configured** (allows the feature). In a future update, the values will be **Block** (blocks the feature) or **Not configured** (allows the feature).
+
+To see the current settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md). 
+
+Applies to: iOS
+
+#### Use Face ID for password authentication on iOS devices <!-- 4490704  -->
+When you create a device restrictions profile for iOS devices, you can use a fingerprint for a password. In a future update, the fingerprint password settings will also allow facial recognition (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Password**). As a result, the following settings are changing:
+
+- **Fingerprint unlock** is now **Touch ID and Face ID unlock**.
+- **Fingerprint modification (supervised only)** is now **Touch ID and Face ID modification (supervised only)**.
+
+Face ID is available in iOS 11.0 and later. To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#password).
+
+Applies to: iOS
+
+#### Apps feature is dependent on ratings region when restricting gaming and app store features on iOS devices <!-- 4593948  -->
+On iOS devices, you can allow or restrict features related to gaming, the app store, and viewing documents (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**). You can also choose the Ratings region, such as the United States. In a future update, the **Apps** feature will move to be a child to **Ratings region**, and is dependent on **Ratings region**.
+
+To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+Applies to: iOS
+
+#### Administrative templates for Group Policy     <!--  3510695 -->
+To help improve security for devices in the cloud, we will be releasing administrative templates that will let you use Intune to configure select Group Policy settings for Windows PCs.  These templates use the Policy Configuration Service Provider (CSP) to provide up to 2500 additional settings from Office, Windows, and OneDrive.
+
+####  New settings for the Windows security baseline  <!-- 3534649, 4217151          -->
+We're adding new settings to the Windows security baseline. The first setting is for Virtualization Based Security, which requires Secure Boot. The second setting will let you manage voice activation of Windows apps when the screen is locked.
+
+#### Security Baselines will be generally available  <!--  3785395       -->
+The Security Baselines feature will soon be out of preview, and generally available. 
+
+#### The Windows Security Baseline template will be generally available   <!--  3794072       -->
+The Windows Security Baseline template will soon be out of preview, and generally available. The preview version of the template will be retired and a new template will be available.
+
+<!-- ***********************************************-->
+### Device management
+
+#### Assign scope tags to all managed devices in a security group <!-- 3173810 -->
+Currently, you can assign a scope tag to a device by going into each individual device's **Properties** page and selecting the scope tags. In a future update, you'll be able to assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. To do this, choose **Intune** > **Roles** > **Scope (Tags)** > **Create** > **Scope (Tags)** > choose the groups that you want to assign the scope tag to. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. (In a future update, the current flow to assign scope tags to devices will be made read only.)
+
+#### See the security patch level for Android devices <!-- 4461911  -->
+You'll be able to see the security patch level for Android devices. To do so, choose **Intune** > **Devices** > **All devices** > choose a device > **Monitor** > **Hardware**.
 
 
-
+<!-- ***********************************************-->
 ## Notices
 
 [!INCLUDE [Intune notices](./includes/intune-notices.md)]

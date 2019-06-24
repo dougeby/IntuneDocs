@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/5/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -53,7 +52,9 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 
     ![Screenshot of Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The file should list the serial numbers, Windows product IDs, hardware hashes, and optional order IDs of the devices.
+2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The CSV file should list the serial numbers, optional Windows product IDs, hardware hashes, and optional group tags of the devices. You can have up to 500 rows in the list. Use the header and line format shown below:
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
+    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
 
     ![Screenshot of Adding Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -73,8 +74,8 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 3. If you chose **Assigned** for **Membership type** in the previous step, then in the **Group** blade, choose **Members** and add Autopilot devices to the group.
     Autopilot devices that aren't yet enrolled are devices where the name equals the serial number of the device.
 4. If you chose **Dynamic Devices** for **Membership type** above, then in the **Group** blade, choose **Dynamic device members** and type any of the following code in the **Advanced rule** box.
-    - If you want to create a group that includes all of your Autopilot devices, type `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - If you want to create a group that includes all of your Autopilot devices with a specific order ID, type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - If you want to create a group that includes all of your Autopilot devices, type: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
+    - Intune's group tag field maps to the OrderID attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices with a specific group tag(OrderID) you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
     - If you want to create a group that includes all of your Autopilot devices with a specific Purchase Order ID, type: `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
     
     After adding the **Advanced rule** code, choose **Save**.
@@ -83,32 +84,44 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 ## Create an Autopilot deployment profile
 Autopilot deployment profiles are used to configure the Autopilot devices.
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment Profiles** > **Create Profile**.
-2. Type a **Name** and optional **Description**.
+2. On the **Basics** page, type a **Name** and optional **Description**.
+
+    ![Screenshot of Basics page](media/enrollment-autopilot/create-profile-basics.png)
+
 3. If you want all devices in the assigned groups to automatically convert to Autopilot, set **Convert all targeted devices to Autopilot** to **Yes**. All non-Autopilot devices in assigned groups will register with the Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Autopilot will enroll it. After a device is registered in this way, disabling this option or removing the profile assignment won't remove the device from the Autopilot deployment service. You must instead [remove the device directly](enrollment-autopilot.md#delete-autopilot-devices).
-4. For **Deployment mode**, choose one of these two options:
+4. Select **Next**.
+5. On the **Out-of-box experience (OOBE)** page, for **Deployment mode**, choose one of these two options:
     - **User-driven**: Devices with this profile are associated with the user enrolling the device. User credentials are required to enroll the device.
     - **Self-deploying (preview)**: (requires Windows 10, version 1809 or later) Devices with this profile aren't associated with the user enrolling the device. User credentials aren't required to enroll the device.
-5. In the **Join to Azure AD as** box, choose **Azure AD joined**.
-6. Choose **Out-of-box experience (OOBE)**, configure the following options, and then choose **Save**:
-    - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
-    - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+
+    ![Screenshot of OOBE page](media/enrollment-autopilot/create-profile-outofbox.png)
+
+6. In the **Join to Azure AD as** box, choose **Azure AD joined**.
+7. Configure the following options:
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose if you want to show the EULA to users.
     - **Privacy settings**: Choose if you want to show privacy settings to users.
+    >[!IMPORTANT]
+    >For Autopilot deployments on Windows 10 version 1903 devices and later, the Diagnostics Data default is automatically set to Full. For more information, see [Windows Diagnostics Data](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data) <br>
+    
     - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user).
-    - **Apply computer name template (requires Windows 10, version 1809 or later)**: Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
+    - **Allow White Glove OOBE**: Choose **Yes** to allow white glove support.
+    - **Apply device name template**: Choose **Yes** to create a template to use when naming a device during enrollment. Names must be 15 characters or less, and can have letters, numbers, and hyphens. Names can't be all numbers. Use the [%SERIAL% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a hardware-specific serial number. Or, use the [%RAND:x% macro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) to add a random string of numbers, where x equals the number of digits to add. 
+    - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+    - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
+8. Select **Next**.
+9. On the **Scope tags** page, optionally add the scope tags you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](scope-tags.md).
+10. Select **Next**.
+11. On the **Assignments** page, choose **Selected groups** for **Assign to**.
 
-6. Choose **Create** to create the profile. The Autopilot deployment profile is now available to assign to devices.
+    ![Screenshot of Assignments page](media/enrollment-autopilot/create-profile-assignments.png)
 
-*Both **Language (Region)** and **Automatically configure keyboard** are only available if you chose **Self-deploying (preview)** for **Deployment mode** (requires Windows 10, version 1809 or later).
+12. Choose **Select groups to include**, and choose the groups you want to include in this profile.
+13. If you want to exclude any groups, choose **Select groups to exclude**, and choose the groups you want to exclude.
+14. Select **Next**.
+15. On the **Review + Create** page, choose **Create** to create the profile.
 
-
-## Assign an Autopilot deployment profile to a device group
-
-1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Deployment profiles** > choose a profile.
-2. In the specific profile blade, choose **Assignments**. 
-3. Choose **Select groups**, then in the **Select groups** blade, choose the group(s) that you want to assign the profile to, then choose **Select**.
-
+    ![Screenshot of Review page](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
 > Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment ** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."
@@ -156,15 +169,17 @@ Prerequisites: Azure Active Directory Company Portal has been configured and Win
 
 ## Delete Autopilot devices
 
-You can delete Windows Autopilot devices that aren't enrolled.
+You can delete Windows Autopilot devices that aren't enrolled into Intune:
 
-1. If the devices are enrolled in Intune, you must first [delete them from the Azure Active Directory portal](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+- Delete the devices from Windows Autopilot at **Device enrollment** > **Windows enrollment** > **Devices**. Choose the devices you want to delete, then choose **Delete**. Windows Autopilot device deletion can take a few minutes to complete.
 
-2. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Devices**.
+Completely removing a device from your tenant requires you to delete the Intune device, the Azure Active Directory device, and the Windows Autopilot device records. This can all be done from Intune:
 
-3. Under **Windows Autopilot devices**, choose the devices you want to delete, and then choose **Delete**.
+1. If the devices are enrolled in Intune, you must first [delete them from the Intune All devices blade](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
 
-4. Confirm the deletion by choosing **Yes**. It can take a few minutes to delete.
+2. Delete the devices in Azure Active Directory devices at **Devices** > **Azure AD devices**.
+
+3. Delete the devices from Windows Autopilot at **Device enrollment** > **Windows enrollment** > **Devices**. Choose the devices you want to delete, then choose **Delete**. Windows Autopilot device deletion can take a few minutes to complete.
 
 ## Using Autopilot in other portals
 If you aren't interested in mobile device management, you can use Autopilot in other portals. While using other portals is an option, we recommend you only use Intune to manage your Autopilot deployments. When you use Intune and another portal, Intune isn't able to:  
@@ -177,7 +192,7 @@ If you aren't interested in mobile device management, you can use Autopilot in o
 
 ## Windows Autopilot for existing devices
 
-You can group Windows devices by a correlator ID when enrolling using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. The [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) is automatically set to equal "OfflineAutopilotprofile-\<correlator ID\>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID by using the enrollmentprofileName attribute.
+You can group Windows devices by a correlator ID when enrolling using [Autopilot for existing devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) through Configuration Manager. The correlator ID is a parameter of the Autopilot configuration file. The [Azure AD device attribute enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) is automatically set to equal "OfflineAutopilotprofile-\<correlator ID\>". This allows arbitrary Azure AD dynamic groups to be created based off correlator ID by using the enrollmentprofileName attribute.
 
 >[!WARNING] 
 > Because the correlator ID is not pre-listed in Intune, the device may report any correlator ID they want. If the user creates a correlator ID matching an Autopilot or Apple DEP profile name, the device will be added to any dynamic Azure AD device group based off the enrollmentProfileName attribute. To avoid this conflict:

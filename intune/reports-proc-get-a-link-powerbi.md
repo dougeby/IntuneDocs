@@ -7,9 +7,8 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/06/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -53,24 +52,25 @@ Install the latest version of [Power BI Desktop](https://aka.ms/intune/datawareh
 
 ## Load the data and reports using the Power BI Intune Compliance Data Warehouse App
 
-The Power BI [Intune Compliance Data Warehouse app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) contains information for your tenant and a set of prebuilt reports based on the Data Warehouse data model.
+The Power BI [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app contains information for your tenant and a set of prebuilt reports based on the Data Warehouse data model.
 
-1.	Navigate to the [Intune Compliance Data Warehouse app](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) to begin the installation process.
-2.	When prompted to install the Power BI app from trusted sources, click **Install**.
-3.	Click on the **Intune Compliance Data Warehouse App** tile.
-4.	Click the **Connect data** button. 
-    The **Connect to Intune Compliance Data Warehouse App** dialog is displayed.
-5.	Click the **Sign in** button.
-6.	Sign in with a user account that has access to the Intune Data Warehouse for the tenant that has reports you want to view. 
-7.	Click the **Reports** tab, then click the **Compliance V1.0** report.
-8.	To make it easy to navigate back to these reports later, click the star next to the **Compliance V1.0** report. This will add the report to your Power BI favorites.
+1. Navigate to the **AppSource** page of the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app to begin the installation process.
+2. Click the **Get It Now** button, and then click **Continue**.
+3. When prompted to install the Power BI app, click **Install**.
+4. After the installation completes, click on the **Intune Compliance (Data Warehouse)** app tile.
+5. Click the **Connect** button. The **Connect to Intune Compliance (Data Warehouse)** dialog is displayed.
+6. Click the **Sign in** button.
+7. Sign in with a user account that has access to the Intune Data Warehouse for the tenant that has reports you want to view.
+8. To view the included dashboard, click the **Dashboards** tab, then click the **Compliance Overview** dashboard.
+9. To view all the available reports, click the **Reports** tab, then click the **Compliance V1.0** report. Browse through the report pages by clicking on the tabs at the bottom.
+10. To make it easy to navigate back to these reports later, click the star next to the **Compliance V1.0** report. This will add the report to your Power BI favorites.
 
 Alternatively, you can install the app from the Intune portal:
 
 1.	Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for Intune.
 2.	Open the **Set up Intune Data Warehouse** blade.
 3.	Select **Get Power BI App** to access and share pre-created Power BI reports for your tenant in the browser.
-4.	Follow steps 2-8 above.
+4.	Follow steps 2-10 above.
 
 ## Load the data in Power BI using the OData link
 
@@ -78,7 +78,8 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
 
 1.  Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
 2.  Open the **Set up Intune Data Warehouse** blade.
-3. Retrieve the custom feed URL from the reporting blade, for example `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
+3. Retrieve the custom feed URL from the reporting blade, for example:
+    `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.
 5. Choose **Home** > **Get Data**. Select **OData feed**.
 6. Choose **Basic**.

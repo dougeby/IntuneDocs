@@ -7,9 +7,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 06/04/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -94,9 +93,9 @@ You will need one of the following developer guides to help you integrate the In
 
 
 
-## Enable your iOS or Android app for app based conditional access
+## Enable your iOS or Android app for app based Conditional Access
  
- In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based conditional access:
+ In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based Conditional Access:
  
  * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
  
@@ -168,7 +167,7 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 	
 	* If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Microsoft 365 admin center website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md).
+* **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md). If your app has integrated the Intune SDK, but is not listed in the Azure portal as a targeted app yet, you can target it with a policy by selecting the "+ More Apps" option and providing the bundle ID (iOS) or package name (Android) in the text box.
 
 * **Troubleshoot**: If you run into any issues while manually testing your app's installation user experience, see [Troubleshoot app installation issues](troubleshoot-app-install.md). 
 
@@ -178,16 +177,13 @@ If your app is using its own custom Azure Active Directory (AAD) settings for au
 
 Once you have registered your app within an Azure tenant, and it is showing up under **All Applications**, you must give your app access to the Intune app protection service (previously known as MAM service). In the Azure portal:
 
-1.	Go to **Azure Active Directory** blade.
-2.	Select the **App registration** set up for the application.
-3.	In **Settings** under the **API Access** heading, select **Required permission**. 
-4.	Click **+ Add**.
-5.	Click **Select an API**. 
-6.	In the search box, enter **Microsoft Mobile Application Management**.
-7.	Select **Microsoft Mobile Application Management** in the list of APIs and click select.
-8.	Select **Read and Write the User’s App Management Data**.
-9.	Click **Done**.
-10.	Click **Grant permissions**, then click **Yes**. 
+1.	Go to the **Azure Active Directory** blade.
+2.	Under **App registrations**, go to the listing set up for the application.
+3.	Click **+ Add a permission**.
+4.	Click on the **APIs my organization uses**. 
+5.	In the search box, enter **Microsoft Mobile Application Management**.
+6.	Under **Delegated Permissions**, select the **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data*** checkbox.
+7. Click **Add permissions**.
 
 ### Badge your app (optional)
 

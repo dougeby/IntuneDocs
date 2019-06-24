@@ -9,7 +9,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -36,6 +35,8 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator** (also known as **Intune Administrator**)
 
+For advice and suggestions about Intune RBAC, you can check out this series of five videos  that showcase examples and walkthroughs: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
+
 ## Roles
 A role defines the set of permissions granted to users assigned to that role.
 You can use both the built-in and custom roles. Built-in roles cover some common Intune scenarios. You can [create your own custom roles](create-custom-role.md) with the exact set of permissions you need. Several Azure Active Directory roles have permissions to Intune.
@@ -46,7 +47,7 @@ To see a role, choose **Intune** > **Roles** > **All roles** > choose a role. Yo
 -	**Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
 ### Built-in roles
-You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table]((https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 
 - **Help Desk Operator**: Performs remote tasks on users and devices, and can assign applications or policies to users or devices.
 - **Policy and Profile Manager**: Manages compliance policy, configuration profiles, Apple enrollment, corporate device identifiers, and security baselines.
@@ -71,7 +72,7 @@ You can create your own roles with custom permissions. For more information abou
 | Compliance Data Administrator | None | Read only |
 
 > [!TIP]
-> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional Access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 ### Roles created in the Intune classic portal
 Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You must reassign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
 > [!IMPORTANT]

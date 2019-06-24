@@ -8,9 +8,8 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/14/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -36,7 +35,7 @@ ms.collection: M365-identity-device-management
 Using a browser protected with Intune policy (Microsoft Edge or Intune Managed Browser), you can ensure corporate websites are always accessed with safeguards in place.  When configured with Intune, protected browsers can take advantage of the following:
 
 - Application protection policies
-- Conditional access
+- Conditional Access
 - Single sign-on
 - Application configuration settings
 - Azure application proxy integration
@@ -96,12 +95,12 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 > Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
 
-1. In the Intune portal, select **Conditional access** > **New policy**. 
+1. In the Intune portal, select **Conditional Access** > **New policy**. 
 2. Next, select **Grant** from the **Access controls** section of the blade. 
 3. Click **Require approved client app**. 
 4. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
-    ![Azure AD - Managed Browser conditional access policy](./media/managed-browser-conditional-access-01.png)
+    ![Azure AD - Managed Browser Conditional Access policy](./media/managed-browser-conditional-access-01.png)
 
 5. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** blade is displayed.
 6. Click **Yes** under **Configure** to apply the policy to specific client apps.
@@ -137,8 +136,7 @@ SSO requires your device to be registered by the Microsoft Authenticator app on 
 >[!IMPORTANT]
 >For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy]( app-protection-policy.md)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3.  On the **Client apps** blade of the Manage list, choose **App configuration policies**.
 4.  On the **App configuration policies** blade, choose **Add**.
 5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
@@ -162,20 +160,27 @@ You assign the settings to Azure AD groups of users. If that user has the target
 
 ## How to set Microsoft Edge as the default protected browser for your organization
 
-This setting allows you to configure which browser app your users will be directed to use. This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened. If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
+This setting allows you to configure which browser app your users will be directed to use. **This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened.** If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
 - If the user doesn't have either Managed Browser or Microsoft Edge downloaded, this app config setting will determine which app the user will be prompted to download. 
 - If the user has both the Managed Browser and Microsoft Edge downloaded, this app config setting will determine which browser corporate resources will be launched in. 
+
+Using the above procedure to create a Microsoft Edge app configuration. Supply the following key and value pair when selecting the **Configuration settings** on the **Configuration** blade (step 9):
 
 | Key                              |  Value   |
 |----------------------------------|----------|
 | **com.microsoft.intune.useEdge** | **true** |
 
+> [!NOTE]
+> In the app protection policy that manages Microsoft Edge and associated apps specified in the app configuration, ensure the following data protection policy settings are set:
+> - Send Org data to other apps: **Policy managed apps**
+> - Share web content with policy managed browsers: **Require**
+
 ## How to configure Application Proxy settings for protected browsers
 
 Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) can be used together to support the following scenarios for users of iOS and Android devices:
 
-- A user downloads and signs in to the Microsoft Outlook app. Intune app protection policies are automatically applied. They encrypt saved data and block the user from transferring corporate files to unmanaged apps or locations on the device. When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in a protected browser application, rather than another browser. The protected browser recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.
-- A remote user opens the protected browser application and navigates to an intranet site using the internal URL. The protected browser recognizes that this intranet site has been exposed to the user via the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible.
+- A user downloads and signs in to the Microsoft Outlook app. Intune app protection policies are automatically applied. They encrypt saved data and block the user from transferring corporate files to unmanaged apps or locations on the device. When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in a protected browser application, rather than another browser. The protected browser recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and Conditional Access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.
+- A remote user opens the protected browser application and navigates to an intranet site using the internal URL. The protected browser recognizes that this intranet site has been exposed to the user via the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and Conditional Access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible.
 
 ### Before you start
 

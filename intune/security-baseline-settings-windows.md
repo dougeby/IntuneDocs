@@ -1,15 +1,14 @@
 ---
 # required metadata
 
-title: Windows security baselines settings for Intune 
+title: Intune security baselines settings for Windows 10 
 titleSuffix: Microsoft Intune
-description: Windows security baseline settings supported by Intune
+description: Intune security baseline settings for managing Windows 10  
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: reference
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -32,10 +31,10 @@ ms.collection: M365-identity-device-management
 
 # Windows security baseline settings for Intune  
 
-View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune.  
+View the [Windows security baseline settings](security-baselines.md) that are supported by Microsoft Intune. The Windows baseline defaults represent the recommended configuration for Windows, and might not match baseline defaults from other security baselines.  
 
 > [!NOTE]  
-> The Windows security baseline settings are in Preview. While in Preview, the list of available settings, and order in which this content presents those settings, will vary with what is available in the portal.  
+> The Windows security baseline settings are in **Preview**. While in Preview, the list of available settings, and order in which this content presents those settings, will vary with what is available in the portal.  
 >  
 > When the baseline settings are out of Preview, this content will update with the non-preview list of security baseline settings that Intune supports.  
 
@@ -1381,7 +1380,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Yes
   
 - **Behavior monitoring**  
-  Allows or disallows Windows Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Windows Defender ATP.
+  Allows or disallows Windows Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
   
   **Default**: Yes
 

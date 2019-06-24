@@ -10,7 +10,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -48,7 +47,7 @@ __What level of technology experience do users have?__ Your users' knowledge and
 
 __What does mobility management mean to users?__ Users may not fully understand the access you have--or don't have--to their devices and information. Users likely have concern about IT and leadership potentially tracking their actions. Less experienced device users may believe all activity on their devices is private. 
 
-__How could Intune inconvenience users?__  Recognize and be respectful of the time it takes users to install apps, enroll devices, and maintain compliance. The top priority of all Intune deployments is to secure corporate data. However, user attitudes toward device management may be affected negatively if you push polcies that, for example:  
+__How could Intune inconvenience users?__  Recognize and be respectful of the time it takes users to install apps, enroll devices, and maintain compliance. The top priority of all Intune deployments is to secure corporate data. However, user attitudes toward device management may be affected negatively if you push policies that, for example:  
 * Require unreasonable passcodes on personal devices
 * Send required app updates in the middle of criticial business calls  
 

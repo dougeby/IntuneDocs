@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -19,7 +18,7 @@ Customer intent: As an Intune admin, I want to set up the Apple's corporate devi
 ms.collection: M365-identity-device-management
 ---
 
-# Tutorial: Use Apple's Corpoate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS devices in Intune
+# Tutorial: Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS devices in Intune
 The Device Enrollment features in Apple Business Manager simplifies enrolling devices. Intune also supports Apple's older Device Enrollment Program (DEP) portal, but we encourage you to start fresh with Apple Business Manager. With Microsoft Intune and Apple Corporate Device Enrollment, devices are automatically securely enrolled the first time the user turns on the device. You can therefore ship devices to many users without having to set up each device individually. 
 
 In this tutorial, you'll learn how to:

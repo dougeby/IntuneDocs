@@ -9,7 +9,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/18/2018
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:

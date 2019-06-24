@@ -10,7 +10,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
@@ -57,7 +56,7 @@ Additionally, you can generate reports that show installation and license counts
 ## Add Microsoft Volume Licensing agreements
 Intune Volume Licensing agreements provide license information for software that was purchased through Microsoft Volume Licensing agreements. You can add Microsoft Volume Licensing agreements to Intune by providing matched pairs of agreement numbers. The agreement or authorization numbers must be matched to the correct license or enrollment numbers. Agreement number pairs are obtained when you purchase your license agreements from the [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
-1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), choose **Licenses**.
+1.  In the [Microsoft Intune administrator console](https://admin.manage.microsoft.com/), choose **Licenses**.
 
 2.  On the **Add Agreements** page, under **Choose Agreement Type**, select **Volume Licensing agreement**.
 
@@ -142,7 +141,7 @@ You can also add other types of license agreements to Intune in addition to Micr
 
 ### To add other software agreements
 
-1.  In the [Microsoft Intune administrator console](https://account.manage.microsoft.com/admin/default.aspx), choose **Licenses**.
+1.  In the [Microsoft Intune administrator console](https://admin.manage.microsoft.com/), choose **Licenses**.
 
 2.  Choose **Add Agreements** in the **Other Software Licensing Agreements** section.
 

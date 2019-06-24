@@ -1,16 +1,15 @@
 ---
 # required metadata
 
-title: Migrate conditional access to Azure portal
+title: Migrate Conditional Access to Azure portal
 titleSuffix: Microsoft Intune
-description: Reassign the conditional access policies you previously created in the Intune classic portal to the Azure portal.
+description: Reassign the Conditional Access policies you previously created in the Intune classic portal to the Azure portal.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -29,63 +28,63 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Reassign conditional access policies from Intune classic portal to the Azure portal
+# Reassign Conditional Access policies from Intune classic portal to the Azure portal
 
-Starting in the new Azure portal, conditional access offers support for multiple policies per application, along with more customizability. If you've previously created conditional access policies in the Intune classic portal, you can migrate them to the Azure portal. 
+Starting in the new Azure portal, Conditional Access offers support for multiple policies per application, along with more customizability. If you've previously created Conditional Access policies in the Intune classic portal, you can migrate them to the Azure portal. 
 
 ## Before you begin
 
-If you’re ready to move to the Azure portal, follow the steps in this topic to reassign the conditional access policies you previously created in the Intune classic portal:
+If you’re ready to move to the Azure portal, follow the steps in this topic to reassign the Conditional Access policies you previously created in the Intune classic portal:
 
-- Gather the conditional access policies previously created, so you know what settings you need to reassign later.
+- Gather the Conditional Access policies previously created, so you know what settings you need to reassign later.
 
 - Follow the steps in this topic to re-create these policies in the Azure portal.
 
 - Disable the conditional policies in the Intune classic portal, after you have verified that the new policies are working as expected in the Azure portal.
 <br /><br />
-	- **Before you disable** the conditional access policies in the Intune classic portal, plan how you'll move users over to the new policy. There are two approaches:
+	- **Before you disable** the Conditional Access policies in the Intune classic portal, plan how you'll move users over to the new policy. There are two approaches:
 <br /><br />
 		- **Use the same inclusion group to apply policies created in the Azure portal, and create a new exemption group to use with the policies applied by the Intune classic portal**.
 			- Gradually move some users into the exemption group specified in the classic portal. This prevents the policies targeted by the Intune classic portal from being applied. The policies created and targeted to the same user group in the Azure portal are applied, in addition to the ones applied in the Intune classic portal. 
 <br /><br />
-		- **Create a new group to target the conditional access policies in the Azure portal**. If you choose this approach, you need to do the following:
-			- Gradually remove users from the security groups that have conditional access policies targeted to them in the Intune classic portal.
+		- **Create a new group to target the Conditional Access policies in the Azure portal**. If you choose this approach, you need to do the following:
+			- Gradually remove users from the security groups that have Conditional Access policies targeted to them in the Intune classic portal.
 			- After you have confirmed the new policy is working for those users, you can disable the policy in the Intune classic portal. 
 <br /><br />
-- If you have your conditional access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS conditional access policy settings in the Azure portal**.
+- If you have your Conditional Access policy settings configured to use Exchange ActiveSync (EAS) in the Intune classic portal, see the [instructions in this topic](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) to **reassign EAS Conditional Access policy settings in the Azure portal**.
 
-### To verify your device-based conditional access policies in the Intune classic portal
+### To verify your device-based Conditional Access policies in the Intune classic portal
 
 1.  Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
 
 2.  Choose **Policy** from the left menu.
 
-3.  Choose **Conditional access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) you created a conditional access policy for.
+3.  Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) you created a Conditional Access policy for.
 
-4.  Take note of your conditional access settings, and refer to these when you create the same conditional access policies in the Azure portal.
+4.  Take note of your Conditional Access settings, and refer to these when you create the same Conditional Access policies in the Azure portal.
 
-### App and device-based conditional access policies working together
+### App and device-based Conditional Access policies working together
 
-The **Intune App Protection** blade in the Azure portal enables admins to set app-based conditional rules so that only apps that support the Intune app protection policies are allowed access to corporate resources. You can choose to overlap these app-based conditional access policies by using device-based conditional access policies. You can combine the device-based and app-based conditional policies (logical AND), or you can provide either option (logical OR). If your conditional access policy requirements are to:
+The **Intune App Protection** blade in the Azure portal enables admins to set app-based conditional rules so that only apps that support the Intune app protection policies are allowed access to corporate resources. You can choose to overlap these app-based Conditional Access policies by using device-based Conditional Access policies. You can combine the device-based and app-based conditional policies (logical AND), or you can provide either option (logical OR). If your Conditional Access policy requirements are to:
 
 - Require a compliant device **AND** use the approved app.
-	- You should set your conditional access policy by using the [Azure Active Directory conditional access blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+	- You should set your Conditional Access policy by using the [Azure Active Directory Conditional Access blade](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 <br /><br />
 - Require a compliant device **OR** use the approved app.
-	- You should set your conditional access policy by using the [Intune classic portal](https://manage.microsoft.com) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
+	- You should set your Conditional Access policy by using the [Intune classic portal](https://manage.microsoft.com) and the [Intune App Protection blade](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0).
 
 > [!TIP] 
 > This topic provides screenshots comparing the user experience in both the Intune classic portal and the Azure portal.
 
-## Reassign Intune device-based conditional access policies
+## Reassign Intune device-based Conditional Access policies
 
-1. Go to [Conditional access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), and sign in with your credentials.
+1. Go to [Conditional Access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), and sign in with your credentials.
 
 2. Choose **New policy**.
 
 3. Provide a name for the policy.
 
-4. Under the **Assignments section**, choose **Users and groups** to target the new conditional access policy.
+4. Under the **Assignments section**, choose **Users and groups** to target the new Conditional Access policy.
 	
 	![Image that compares user group UI between the Intune and Azure portals](./media/reassign-ca-1.png)
 
@@ -98,7 +97,7 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 7. On the **Cloud apps** blade, choose **Select apps**.
 
-8. Choose the app you want to apply the new conditional access policy to, and click **Select**.
+8. Choose the app you want to apply the new Conditional Access policy to, and click **Select**.
 
 9. Click **Done**.
 
@@ -139,21 +138,21 @@ The **Intune App Protection** blade in the Azure portal enables admins to set ap
 
 20. If you do not allow Intune enrolled and compliant Windows devices, exempt the Windows policy from the current policy. Then create a separate policy with **Device platforms** set to **Windows**, include the other conditions as set per above, and choose **Require domain joined device** under **Grant Access Controls**.
 
-21. On the **New** conditional access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
+21. On the **New** Conditional Access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
 
-	![Compare Enable conditional access policy UI between Intune and Azure](./media/reassign-ca-11.png)
+	![Compare Enable Conditional Access policy UI between Intune and Azure](./media/reassign-ca-11.png)
 
-## Reassign Intune device-based conditional access policies for EAS clients
+## Reassign Intune device-based Conditional Access policies for EAS clients
 
-If you have configured Exchange ActiveSync settings as part of an Exchange Online policy in the Intune classic portal, you need to create a second conditional access policy in the Azure portal.
+If you have configured Exchange ActiveSync settings as part of an Exchange Online policy in the Intune classic portal, you need to create a second Conditional Access policy in the Azure portal.
 
-1. Go to [Conditional access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), and sign in with your credentials.
+1. Go to [Conditional Access in the Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), and sign in with your credentials.
 
 2. Choose **New policy**.
 
 3. Provide a name for the policy.
 
-4. Under the **Assignments** section, choose **Users and groups** to target the new conditional access policy.
+4. Under the **Assignments** section, choose **Users and groups** to target the new Conditional Access policy.
 
 	![Image showing a user group UI comparison between the Azure and Intune portals](./media/reassign-ca-12.png)
 
@@ -169,7 +168,7 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 	![Image of a Cloud apps UI comparison between the Intune and Azure portals](./media/reassign-ca-14.png)
 
 	> [!IMPORTANT] 
-	> Conditional access policies for EAS clients cannot include any other cloud app.
+	> Conditional Access policies for EAS clients cannot include any other cloud app.
 
 8. On the **Conditions** blade, choose **Client apps**, and then choose the applicable client app. If you have chosen to block clients that aren’t supported by Intune, use the **Apply policy only to supported platforms** option.
 
@@ -183,34 +182,34 @@ If you have configured Exchange ActiveSync settings as part of an Exchange Onlin
 
 	![Image that compares Grant access UI between the Intune and Azure portals](./media/reassign-ca-16.png)
 
-12. On the **New** conditional access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
+12. On the **New** Conditional Access policy blade, turn on the **Enable policy** toggle, and then click **Create**.
 
-	![Comparison of Enable conditional access policy UI between Intune and Azure](./media/reassign-ca-17.png)
+	![Comparison of Enable Conditional Access policy UI between Intune and Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > If you configure **Device platforms**, saving the policy will fail with the error "Policy configuration is not supported." Exchange ActiveSync cannot identify the platform being used by the connecting device. Therefore, configuring specific device platforms is unsupported when creating a policy for Exchange ActiveSync devices.
 
-## Disable conditional access policies in the Intune classic portal
+## Disable Conditional Access policies in the Intune classic portal
 
-After you have reassigned your conditional access policies in the Azure portal, it's important to gradually disable the conditional access policies previously created in the Intune classic portal. Additionally, you might need to use the same security group to apply the conditional access policies created in the Azure portal.
+After you have reassigned your Conditional Access policies in the Azure portal, it's important to gradually disable the Conditional Access policies previously created in the Intune classic portal. Additionally, you might need to use the same security group to apply the Conditional Access policies created in the Azure portal.
 
 > [!NOTE]
-> Before disabling your conditional access policies in the Intune classic portal, see the [Before you begin](#before-you-begin) section at the beginning of this topic.
+> Before disabling your Conditional Access policies in the Intune classic portal, see the [Before you begin](#before-you-begin) section at the beginning of this topic.
 
-### To disable the conditional access policies
+### To disable the Conditional Access policies
 
 1.  Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
 
 2.  Choose **Policy** from the left menu.
 
-3.  Choose **Conditional access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) that you created a conditional access policy for.
+3.  Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) that you created a Conditional Access policy for.
 
-4.  Uncheck the option **Enable conditional access policy**, and then click **Save**.
+4.  Uncheck the option **Enable Conditional Access policy**, and then click **Save**.
 
-	![Image of Disable conditional access policies in the Intune classic portal](./media/reassign-ca-18.png)
+	![Image of Disable Conditional Access policies in the Intune classic portal](./media/reassign-ca-18.png)
 
 ## See also
 
-- [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md)
-- [app-based conditional access with Intune](app-based-conditional-access-intune.md)
-- [Conditional access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
+- [Common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md)
+- [app-based Conditional Access with Intune](app-based-conditional-access-intune.md)
+- [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)

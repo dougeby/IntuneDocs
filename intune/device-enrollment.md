@@ -10,7 +10,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 4/24/2019
 ms.topic: conceptual
-ms.prod:
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -102,7 +101,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 Learn more about iOS DEP enrollment:
 
 - [Choose how to enroll iOS devices](ios-enroll.md)
-- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
+- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
@@ -115,7 +114,7 @@ Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support Conditional Access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 
