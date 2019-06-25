@@ -30,11 +30,11 @@ ms.collection: M365-identity-device-management
 
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# Archive of MDM securit baseline settings  
+# Archive of MDM security baseline settings  
 
 View details for archived versions of the MDM security baseline for Intune.  
 
-When a new MDM security baseline releases, the previous list of settings are moved from the security baseline settings article to this archive. These versions are still supported for use, and this archive is provided to assist in understanding the default settings for older baseline versions.
+When a new MDM security baseline releases, the previous list of settings move from the security baseline settings article to this archive. These versions are still supported for use, and this archive is provided to assist in understanding the default settings for older baseline versions.
 
 When a baseline version is no longer supported for use, it will then be removed from this article.
 
@@ -46,6 +46,7 @@ When a baseline version is no longer supported for use, it will then be removed 
 *This baseline is superseded by [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### Above Lock  
+
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
 
 - **Block display of toast notifications**  
@@ -53,7 +54,8 @@ For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/wi
   
   **Default**: Yes  
 
-### App Runtime    
+### App Runtime  
+
 For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
 ) in the Windows documentation.  
 
@@ -62,7 +64,8 @@ For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/w
   
   **Default**: Enabled  
 
-### Application Management   
+### Application Management  
+
 For more information, see [Policy CSP - ApplicationManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in the Windows documentation.  
 
 - **Block game DVR (desktop only)**  
@@ -70,7 +73,8 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
   
   **Default**: Yes  
 
-### Auto Play   
+### Auto Play  
+
 For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-autoplay) in the Windows documentation.  
 
 - **Auto play default auto run behavior**  
@@ -88,7 +92,8 @@ For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/win
   
   **Default**: Enabled  
 
-### Bitlocker    
+### Bitlocker  
+
 For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
 ) in the Windows documentation.  
 
@@ -118,14 +123,17 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
     **Default**: AES 256bit XTS  
 
 ### Browser  
+
 For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
 
 - **Require SmartScreen for Microsoft Edge**  
+
   Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users can't disable (turn off) Windows Defender SmartScreen. Enabling this policy turns off Windows Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Windows defender SmartScreen on or off.  
   
   **Default**: Yes  
   
 - **Block malicious site access**  
+
   By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.
   
   **Default**: Yes  
@@ -146,6 +154,7 @@ For more information, see [Policy CSP - Browser](https://docs.microsoft.com/wind
   **Default**: Yes  
 
 ### Connectivity  
+
 For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity) in the Windows documentation.  
 
 - **Block Internet download for web publishing and online ordering wizards**  
@@ -159,6 +168,7 @@ For more information, see [Policy CSP - Connectivity](https://docs.microsoft.com
   **Default**: Enabled  
 
 ### Credentials Delegation  
+
 For more information, see [Policy CSP - CredentialsDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
 ) in the Windows documentation.  
 
@@ -169,6 +179,7 @@ For more information, see [Policy CSP - CredentialsDelegation](https://docs.micr
   **Default**: Enabled  
 
 ### Credentials UI  
+
 For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in the Windows documentation.  
 
 - **Enumerate administrators** 
@@ -178,6 +189,7 @@ For more information, see [Policy CSP - CredentialsUI](https://docs.microsoft.co
   **Default**: Disabled  
 
 ### Data Protection  
+
 For more information, see [Policy CSP - DataProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in the Windows documentation.  
 
@@ -188,6 +200,7 @@ For more information, see [Policy CSP - DataProtection](https://docs.microsoft.c
   **Default**: Yes  
 
 ### Device Guard  
+
 For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard
 ) in the Windows documentation.  
 
@@ -205,6 +218,7 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   **Default**: Enabled  
 
 ### Device Installation  
+
 For more information, see [Policy CSP - DeviceInstallation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in the Windows documentation.  
 
 - **Hardware device installation by device identifiers**  
@@ -241,6 +255,7 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
       **Default**: *No default configuration*  
 
 ### Device Lock  
+
 For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
 
 - **Prevent use of camera**  
@@ -303,6 +318,7 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
     **Default**: 1  
 
 ### Event Log Service  
+
 For more information, see [Policy CSP - EventLogService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-eventlogservice) in the Windows documentation.  
 
 - **Security log maximum file size in KB**  
@@ -321,6 +337,7 @@ For more information, see [Policy CSP - EventLogService](https://docs.microsoft.
   **Default**: 32768  
 
 ### Experience  
+
 For more information, see [Policy CSP - Experience](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in the Windows documentation.  
 
 - **Block Windows Spotlight**  
@@ -341,6 +358,7 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
 
 
 ### Exploit Guard  
+
 For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-exploitguard) in the Windows documentation.  
 
 - **Exploit protection XML**  
@@ -349,6 +367,7 @@ For more information, see [Policy CSP - ExploitGuard](https://docs.microsoft.com
   **Default**: *Sample xml is provided* 
  
 ### File Explorer  
+
 For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) in the Windows documentation.  
 
 - **Block data execution prevention**  
@@ -363,6 +382,7 @@ For more information, see [Policy CSP - FileExplorer](https://docs.microsoft.com
     
 
 ### Internet Explorer  
+
 For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-internetexplorer) in the Windows documentation.  
 
 - **Internet Explorer internet zone access to data sources**  
@@ -741,7 +761,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   
@@ -1085,6 +1105,7 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   **Default**: Yes
 
 ### MS Security Guide  
+
 For more information, see [Policy CSP - MSSecurityGuide](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) in the Windows documentation.  
 
 - **Apply UAC restrictions to local accounts on network logon**  
@@ -1103,6 +1124,7 @@ For more information, see [Policy CSP - MSSecurityGuide](https://docs.microsoft.
   **Default**: Enabled
   
 ### MSS Legacy  
+
 For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in the Windows documentation.  
 
 - **Network IP source routing protection level**  
@@ -1118,6 +1140,7 @@ For more information, see [Policy CSP - MSSLegacy](https://docs.microsoft.com/wi
   **Default**: Disabled
   
 ### Power  
+
 For more information, see [Policy CSP - Power](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in the Windows documentation.  
 
 - **Require password on wake while plugged in**  
@@ -1141,6 +1164,7 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
   **Default**: Enabled
   
 ### Remote Desktop Services  
+
 For more information, see [Policy CSP - RemoteDesktopServices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in the Windows documentation.  
 
 - **Block password saving**  
@@ -1174,6 +1198,7 @@ For more information, see [Policy CSP - RemoteDesktopServices](https://docs.micr
   **Default**: High
   
 ### Remote Management  
+
 For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in the Windows documentation.  
 
 - **Block storing run as credentials**  
@@ -1208,6 +1233,7 @@ For more information, see [Policy CSP - RemoteManagement](https://docs.microsoft
   
 
 ### Remote Procedure Call  
+
 For more information, see [Policy CSP - RemoteProcedureCall](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteprocedurecall) in the Windows documentation.  
 
 - **RPC unauthenticated client options**  
@@ -1218,7 +1244,8 @@ For more information, see [Policy CSP - RemoteProcedureCall](https://docs.micros
 
   **Default**: Authenticated
 
-### Search 
+### Search  
+
 For more information, see [Policy CSP - Search](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in the Windows documentation.  
 
 - **Disable indexing encrypted items**  
@@ -1227,6 +1254,7 @@ For more information, see [Policy CSP - Search](https://docs.microsoft.com/windo
 **Default**: Yes
   
 ### Smart Screen  
+
 For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in the Windows documentation.  
 
 - **Block execution of unverified files**  
@@ -1247,6 +1275,7 @@ For more information, see [Policy CSP - SmartScreen](https://docs.microsoft.com/
   **Default**: Yes
   
 ### System  
+
 For more information, see [Policy CSP - System](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system) in the Windows documentation.  
 
 - **System boot start driver initialization**  
@@ -1262,6 +1291,7 @@ For more information, see [Policy CSP - System](https://docs.microsoft.com/windo
 
 
 ### Wi-Fi  
+
 For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi) in the Windows documentation.  
 
 - **Block Internet sharing**  
@@ -1275,6 +1305,7 @@ For more information, see [Policy CSP - Wifi](https://docs.microsoft.com/windows
   **Default**: Yes  
   
 ### Windows Connection Manager  
+
 For more information, see [Policy CSP - WindowsConnectionManager](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsconnectionmanager) in the Windows documentation.  
 
 - **Block connection to non-domain networks**  
@@ -1287,6 +1318,7 @@ For more information, see [Policy CSP - WindowsConnectionManager](https://docs.m
   **Default**: Enabled
   
 ### Windows Defender  
+
 For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
 
 - **Scan incoming mail messages**  
@@ -1400,6 +1432,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Block
 
 ### Windows Ink Workspace  
+
 For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in the Windows documentation.  
 
 - **Ink Workspace**  
@@ -1411,6 +1444,7 @@ For more information, see [Policy CSP - WindowsInkWorkspace](https://docs.micros
   **Default**: Enabled
  
 ### Windows PowerShell  
+
 For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in the Windows documentation.  
 
 - **Power shell shell script block logging**  
@@ -1418,5 +1452,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
   
   **Default**: Enabled
  
-## Next steps
-[Upgrade your baseline version]
+## Next steps  
+
+[View the current baseline version](security-baseline-settings-mdm.md)
+[Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-instance-for-a-profile)
