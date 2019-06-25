@@ -37,7 +37,7 @@ You can use Intune and Windows Autopilot to set up hybrid Azure Active Directory
 Successfully configure your [hybrid Azure AD-joined devices](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Be sure to [verify your device registration]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) by using the Get-MsolDevice cmdlet.
 
 The devices to be enrolled must also:
-- Be running Windows 10 with the [October 2018 update](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
+- Be running Windows 10 v1809 or greater.
 - Have access to the internet.
 - Have access to your Active Directory (VPN connection not supported at this time).
 - Undergo the out-of-box experience (OOBE).
