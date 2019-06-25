@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -63,7 +63,7 @@ You can create a custom profile with a pre-shared key for Android, Windows, or a
      > [!NOTE]
      > Be sure to include the dot character at the beginning.
 
-     SSID is the SSID for which you’re creating the policy. For example if the Wi-Fi is named Hotspot-1, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
+     SSID is the SSID for which you’re creating the policy. For example, if the Wi-Fi is named `Hotspot-1`, enter `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`.
 
    e. **Value Field** is where you paste your XML code. See the examples within this article. Update each value to match your network settings. The comments section of the code includes some pointers.
 3. Select **OK**, save, and then assign the policy.
@@ -77,26 +77,28 @@ The next time each device checks in, the policy is applied, and a Wi-Fi profile 
 
 The following example includes the XML code for an Android or Windows Wi-Fi profile. The example is provided to show proper format and provide more details. It's only an example, and isn't intended as a recommended configuration for your environment.
 
-> [!IMPORTANT]
->
-> - `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
->
-> - `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`.
->  Windows 10 devices may return a false *0x87D1FDE8 Remediation failed* error, but the device still contains the profile.
->
-> - XML has special characters, such as the `&` (ampersand). Using special characters may prevent the XML from working as expected. 
+### Important
 
-```
+- `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
+
+- `<hex>53534944</hex>` should be set to the hexadecimal value of `<name><SSID of wifi profile></name>`. Windows 10 devices may return a false `x87D1FDE8 Remediation failed` error, but the device still contains the profile.
+
+- XML has special characters, such as the `&` (ampersand). Using special characters may prevent the XML from working as expected. 
+
+### Example
+
+``` xml
 <!--
-<hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
-<Name of wifi profile> = Name of profile displayed to user, could be <name>Your Company's Network</name>
-<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped
+<hex>53534944</hex> = The hexadecimal value of <name><SSID of wifi profile></name>
+<Name of wifi profile> = Name of profile shown to users. It could be <name>Your Company's Network</name>.
+<SSID of wifi profile> = Plain text of SSID. Does not need to be escaped. It could be <name>Your Company's Network</name>.
 <nonBroadcast><true/false></nonBroadcast>
 <Type of authentication> = Type of authentication used by the network, such as WPA2PSK.
 <Type of encryption> = Type of encryption used by the network, such as AES.
 <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
-<password> = Plain text of password to connect to the network
+<password> = Plain text of the password to connect to the network
 -->
+
 <WLANProfile
 xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
   <name><Name of wifi profile></name>
@@ -132,7 +134,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 The following example includes the XML code for an EAP-based Wi-Fi profile: The example is provided to show proper format and provide more details. It's only an example, and isn't intended as a recommended configuration for your environment.
 
 
-```
+```xml
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name>testcert</name>
       <SSIDConfig>
@@ -213,20 +215,27 @@ The following example includes the XML code for an EAP-based Wi-Fi profile: The 
 ```
 
 ## Create the XML file from an existing Wi-Fi connection
-In Windows, use netsh wlan to export an existing Wi-Fi profile to an XML file readable by Intune. The key must be exported in plain text to successfully use the profile.
 
-On a Windows computer that already has the required WiFi profile installed, use the following steps:
+You can also create an XML file from an existing Wi-Fi connection. On a Windows computer, use the following steps:
 
 1. Create a local folder for the exported W-Fi- profiles, such as c:\WiFi.
-2. Open up a Command Prompt as an administrator.
-3. Run the netsh wlan show profiles command, and note the name of the profile you'd like to export. In this example, the profile name is WiFiName.
-4. Run the netsh wlan export profile name="ProfileName" folder=c:\Wifi command. This command creates a Wi-Fi profile file named Wi-Fi-WiFiName.xml in your target folder.
+2. Open up a command prompt as an administrator (right-click `cmd` > **Run as administrator**)
+3. Run `netsh wlan show profiles`. The names of all the profiles are listed.
+4. Run `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`. This command creates a file named `Wi-Fi-YourProfileName.xml` in c:\Wifi.
 
-- If you are exporting a Wi-Fi profile that includes a pre-shared key, you must add key=clear to the command. For example, enter: netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi
+    - If you're exporting a Wi-Fi profile that includes a pre-shared key, add `key=clear` to the command:
+  
+      `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
-After you have the correct XML file, copy and paste the XML code into the Data field of the OMA-URI settings page.
+      `key=clear` exports the key in plain text, which is required to successfully use the profile.
+
+After you have the XML file, copy and paste the XML syntax into OMA-URI settings > **Data type**. [Create a custom profile](#create-a-custom-profile) (in this article) lists the steps.
+
+> [!TIP]
+> `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` also includes all the profiles in XML format.
 
 ## Best practices
+
 - Before you deploy a Wi-Fi profile with PSK, confirm that the device can connect to the endpoint directly.
 
 - When rotating keys (passwords or passphrases), expect downtime and plan your deployments accordingly. Consider pushing new Wi-Fi profiles during non-working hours. Also, warn users that connectivity may be impacted.
