@@ -77,7 +77,7 @@ The next time each device checks in, the policy is applied, and a Wi-Fi profile 
 
 The following example includes the XML code for an Android or Windows Wi-Fi profile. The example is provided to show proper format and provide more details. It's only an example, and isn't intended as a recommended configuration for your environment.
 
-### Important
+### Important considerations
 
 - `<protected>false</protected>` must be set to **false**. When **true**, it could cause the device to expect an encrypted password, and then try to decrypt it; which may result in a failed connection.
 
