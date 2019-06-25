@@ -38,8 +38,8 @@ When a new MDM security baseline releases, the previous list of settings move fr
 
 When a baseline version is no longer supported for use, it will then be removed from this article.
 
-- View the settings that are available in [the current MDM security baseline](#security-baseline-settings-mdm.md) 
-- Learn about [security baselines](#security-baselines.md), and how to upgrade the baseline version in your security baseline profiles.
+- View the settings that are available in [the current MDM security baseline](security-baseline-settings-mdm.md) 
+- Learn about [security baselines](security-baselines.md), and how to upgrade the baseline version in your security baseline profiles.
 
 ## Preview: MDM Security Baseline for October 2018  
 
@@ -1454,5 +1454,5 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
  
 ## Next steps  
 
-[View the current baseline version](security-baseline-settings-mdm.md)
+[View the current baseline version](security-baseline-settings-mdm.md)  
 [Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-instance-for-a-profile)
