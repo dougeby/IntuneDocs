@@ -56,7 +56,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
-## Week of June 10, 2019 
+## Week of June 17, 2019   
 
 ### App management
 
@@ -66,8 +66,11 @@ We’ve added new features to the Microsoft Intune app (preview) for Android. Us
 * View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
 * Contact their organization for support.    
 * Send their feedback to Microsoft.    
-* View terms and conditions, if set by their organization.    
+* View terms and conditions, if set by their organization.  
 
+## Week of June 10, 2019 
+
+### App management  
 
 #### New sample apps showing Intune SDK integration available on GitHub <!-- 2653471 -->
 The msintuneappsdk GitHub account has added new sample applications for iOS (Swift), Android, Xamarin.iOS, Xamarin Forms and Xamarin.Android. These apps are meant to supplement our existing documentation and provide demonstrations of how to integrate the Intune APP SDK into your own mobile apps. If you are an app developer that needs additional Intune SDK guidance, see the following linked samples:
