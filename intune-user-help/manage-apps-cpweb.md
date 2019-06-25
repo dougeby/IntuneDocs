@@ -91,7 +91,7 @@ Apps are assigned to you by your organization, and labeled as either available o
 
 * Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
 
-* Required apps: Your organization might deploy neccessary work and school apps directly to your device. These apps are automatically installed for you without intervention. 
+* Required apps: Your organization might deploy necessary work and school apps directly to your device. These apps are automatically installed for you without intervention. 
 
 Apps are also made available to you based on your device type. For example, if you're using the Company Portal website on a Windows device, you'll have access to Windows apps, but not iOS apps.  
 
