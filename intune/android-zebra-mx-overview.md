@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/13/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority:
@@ -122,11 +122,10 @@ After you test the file, the next step is to deploy the profile to devices using
 - You can deploy one or multiple MX profiles to a device.
 - You can also export multiple StageNow profiles, and combine the settings into a single XML file. Then, upload the XML file to Intune to deploy to your devices.
 
-
-    > [!WARNING]
-    > If multiple MX profiles are targeted to the same group, and configure the same property, there will be conflicts on the device.
-    >
-    > If the same property is configured multiple times in a single MX profile, the last configuration wins.
+  > [!WARNING]
+  > If multiple MX profiles are targeted to the same group, and configure the same property, there will be conflicts on the device.
+  >
+  > If the same property is configured multiple times in a single MX profile, the last configuration wins.
 
 ## Step 5: Create a profile in Intune
 
@@ -155,8 +154,8 @@ The next time the device checks for configuration updates, the MX profile is dep
 
 To update the MX-specific configuration of a Zebra device, you can: 
 
-- Create an updated StageNow XML file, edit the existing Intune MX profile, and upload the new StageNow XML file. This new file overwrites the previous policy in the profile, replacing the previous configuration.
-- Create a new StageNow XML file that configures different settings, create a new Intune MX profile, upload the new StageNow XML file and assign it to the same group. Multiple profiles are deployed. If the new profile configures settings that are already present in the existing profiles, conflicts will occur.
+- Create an updated StageNow XML file, edit the existing Intune MX profile, and upload the new StageNow XML file. This new file overwrites the previous policy in the profile, and replaces the previous configuration.
+- Create a new StageNow XML file that configures different settings, create a new Intune MX profile, upload the new StageNow XML file, and assign it to the same group. Multiple profiles are deployed. If the new profile configures settings that already exist in existing profiles, conflicts will occur.
 
 ## Next steps
 
