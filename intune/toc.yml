@@ -784,7 +784,7 @@
       - name: Security baselines
         items: 
         - name: Windows 10 baseline settings
-          href: security-baseline-settings-windows.md
+          href: security-baseline-settings-mdm.md
         - name: Microsoft Defender ATP baseline settings 
           href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
@@ -972,6 +972,10 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint protection common errors 
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Security baselines archive
+      items:  
+      - name: Archived MDM security baselines  
+        href: security-baseline-settings-mdm-archive.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online

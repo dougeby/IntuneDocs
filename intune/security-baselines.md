@@ -55,7 +55,7 @@ This article can help you use security baselines to create a profile, assign the
 
 The following security baselines are available for use with Intune.
 - **Preview: MDM Security Baseline for October 2018**  
-  [View the settings](security-baseline-settings-windows.md)
+  [View the settings](security-baseline-settings-mdm.md)
 
 - **PREVIEW: Windows Defender ATP baseline**  
   [View the settings](security-baseline-settings-defender-atp.md)  
@@ -129,5 +129,5 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 - Migrating from on-premises Active Directory group policies to a pure cloud solution using Azure Active Directory (AD) with Microsoft Intune is a journey. To help, there are companion GPOs published for hybrid AD and Azure AD-joined devices. These devices can get MDM settings from the cloud (Intune) and group policy settings from on-premises domain controllers as needed.
 
 ## Next steps
-- View the [Windows security baseline settings](security-baseline-settings-windows.md) supported by Intune.  
+- View the [Windows security baseline settings](security-baseline-settings-mdm.md) supported by Intune.  
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md).

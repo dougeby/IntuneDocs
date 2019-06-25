@@ -28,7 +28,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-<!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-windows.md.  -->
+<!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
 # Archive of MDM securit baseline settings  
 
@@ -38,12 +38,12 @@ When a new MDM security baseline releases, the previous list of settings are mov
 
 When a baseline version is no longer supported for use, it will then be removed from this article.
 
-- View the settings that are available in [the current MDM security baseline](#security-baseline-settings-windows.md) 
+- View the settings that are available in [the current MDM security baseline](#security-baseline-settings-mdm.md) 
 - Learn about [security baselines](#security-baselines.md), and how to upgrade the baseline version in your security baseline profiles.
 
 ## Preview: MDM Security Baseline for October 2018  
 
-*This baseline is superseded by [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-windows.md)*
+*This baseline is superseded by [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
 
 ### Above Lock  
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
