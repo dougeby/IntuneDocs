@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -159,7 +159,8 @@ Top questions for troubleshooting.
          Value:  True 
 
 - How to collect log files?
-  - There are two ways Enrollment Status Page log files can be collected.  The first method, enable the ability for users to collect logs in the ESP policy, when a timeout occurs in the ESP the end user can choose option to "Collect logs", by inserting a USB drive the log files can be copied to the drive. The second method, open a command prompt by entering Shift-F10 key sequence, then enter the following commandline to generate the log files: mdmdiagnosticstool.exe -area Autopilot -cab <pathToOutputCabFile>.cab 
+  - There are two ways Enrollment Status Page log files can be collected.  The first method, enable the ability for users to collect logs in the ESP policy, when a timeout occurs in the ESP the end user can choose option to "Collect logs", by inserting a USB drive the log files can be copied to the drive. The second method, open a command prompt by entering Shift-F10 key sequence, then enter the following commandline to generate the log files: 
+         mdmdiagnosticstool.exe -area Autopilot -cab <pathToOutputCabFile>.cab 
     
 ### Known issues
 Below are known issues. 
