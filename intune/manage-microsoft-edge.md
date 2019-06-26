@@ -102,102 +102,103 @@ SSO requires your device to be registered by either the Microsoft Authenticator 
 
 ## Create a protected browser app configuration
 
-For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy](app-protection-policy.md).
+For app configurations to apply, the user's protected browser or another app on the device must already be managed by the [Intune app protection policy](app-protection-policy.md).
 
-The following steps are used to create a protected browser app configuration:
+To create a protected browser app configuration:
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Client apps** > **App configuration policies** > **Add**.
 3. On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
 4. For **Device enrollment** type, choose **Managed apps**.
-5. Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** and/or **Edge** for iOS, for Android, or for both.
-6. Choose **OK** to return to the **Add configuration policy** blade.
-7. Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for Microsoft Edge. Use the sections later in this article to learn about the different key and value pairs you can define.
+5. Choose **Select the required app**. Then, on the **Targeted apps** blade, choose the **Managed Browser** or **Edge** for iOS, for Android, or for both.
+6. Select **OK** to return to the **Add configuration policy** blade.
+7. Select **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for Microsoft Edge. Use the sections later in this article to learn about the different key and value pairs you can define.
 
     > [!NOTE]
     > Microsoft Edge uses the same key and value pairs as the Managed Browser. 
 
-8.	When you are done, click **OK**.
-9.	On the **Add configuration policy** blade, choose **Add**.<br>
-	The new configuration is created and displayed on the **App configuration** blade.
+8.	When you are done, select **OK**.
+9.	On the **Add configuration policy** blade, select **Add**.<br>
+	The new configuration is created, and displayed on the **App configuration** blade.
 
 ## Assign the configuration settings you created 
 
-You assign the settings to Azure AD groups of users. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
+You assign the settings to groups of users in Azure AD. If that user has the targeted protected browser app installed, then the app is managed by the settings you specified.
 
-1. On the **Client apps** blade of the Intune mobile application management dashboard, choose **App configuration policies**.
+1. On the **Client apps** blade of the Intune mobile application management dashboard, select **App configuration policies**.
 2. From the list of app configurations, select the one you want to assign.
-3. On the next blade, choose **Assignments**.
-4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
+3. On the next blade, select **Assignments**.
+4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then select **OK**.
 
-## How to configure Application Proxy settings for protected browsers
+## Configure Application Proxy settings for protected browsers
 
-Microsoft Edge and [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) can be used together to give users access to intranet sites on their mobile devices. 
+You can use Microsoft Edge and [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) together to give users access to intranet sites on their mobile devices. 
 
-These are some examples of the scenarios AD Application Proxy enable: 
+These are some examples of the scenarios Azure AD Application Proxy enable: 
 
-- A user is using the Outlook mobile app, which is protected by Intune. They then click a link to an intranet site in an email, and Microsoft Edge recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication and Conditional Access before reaching the intranet site. Users are now able to access internal sites even on their mobile devices, and the link in Outlook works as expected.
-- A user opens Microsoft Edge on their iOS or Android device. If Microsoft Edge is protected with Intune, and Application proxy is enabled, the user can navigate to an intranet site using the internal URL they are used to. Microsoft Edge recognizes that this intranet site has been exposed to the user via the Application Proxy, and the user is automatically routed through the Application Proxy, to authenticate before reaching the intranet site. 
+- A user is using the Outlook mobile app, which is protected by Intune. They then click a link to an intranet site in an email, and Microsoft Edge recognizes that this intranet site has been exposed to the user through Application Proxy. The user is automatically routed through Application Proxy, to authenticate with any applicable multi-factor authentication and Conditional Access, before reaching the intranet site. The user is now able to access internal sites, even on their mobile devices, and the link in Outlook works as expected.
+- A user opens Microsoft Edge on their iOS or Android device. If Microsoft Edge is protected with Intune, and Application Proxy is enabled, the user can go to an intranet site by using the internal URL they are used to. Microsoft Edge recognizes that this intranet site has been exposed to the user through Application Proxy. The user is automatically routed through Application Proxy, to authenticate before reaching the intranet site. 
 
 ### Before you start
 
-- Set up your internal applications through the Azure AD Application Proxy.
+- Set up your internal applications through Azure AD Application Proxy.
     - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
-- Microsoft Edge app must have [Intune app protection policy](app-protection-policy.md) assigned.
+- The Microsoft Edge app must have [Intune app protection policy](app-protection-policy.md) assigned.
 
 > [!NOTE]
 > Updated Application Proxy redirection data can take up to 24 hours to take effect in the Managed Browser and Microsoft Edge.
 
 #### Step 1: Enable automatic redirection to a protected browser from Outlook
-Outlook must be configured with an app protection policy that enables the setting **Share web content with policy managed browsers**.
+Configure Outlook with an app protection policy that enables the setting **Share web content with policy managed browsers**.
 
-![App protection policy - Share web content with policy managed browsers](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
+![Screenshot of App protection policy - Share web content with policy managed browsers](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
 #### Step 2: Set the app configuration setting to enable app proxy
-Target Microsoft Edge with the below key/value pair to enable application proxy for Microsoft Edge:
+Target Microsoft Edge with the following key/value pair, to enable Application Proxy for Microsoft Edge:
 
 |    Key    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
 
-For more information about how Microsoft Edge and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). This blog post references the Intune Managed Browser, but the content applies to Microsoft Edge as well.
+For more information about how to use Microsoft Edge and Azure AD Application Proxy in tandem for seamless (and protected) access to on-premises web apps, see [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access). This blog post references the Intune Managed Browser, but the content applies to Microsoft Edge as well.
 
-## How to configure a homepage shortcut for Microsoft Edge
+## Configure a homepage shortcut for Microsoft Edge
 
-This setting allows you to configure a homepage shortcut for Microsoft Edge.  The homepage shortcut you configure will appear as the first icon beneath the search bar when they open a new tab in Microsoft Edge. The user will not be able to edit or delete this shortcut in their managed context. The homepage shortcut will display your organization's name to distinguish it. 
+This setting allows you to configure a homepage shortcut for Microsoft Edge. The homepage shortcut you configure appears as the first icon beneath the search bar when the user opens a new tab in Microsoft Edge. The user can't edit or delete this shortcut in their managed context. The homepage shortcut displays your organization's name to distinguish it. 
 
-Use the below key/value pair to configure a homepage shortcut:
+Use the following key/value pair to configure a homepage shortcut:
 
 |    Key    |    Value    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.homepage   |    Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>**Example:** `<https://www.bing.com`>
+|    com.microsoft.intune.mam.managedbrowser.homepage   |    Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>**Example:** <`https://www.bing.com`>
     |
 
-## How to configure managed bookmarks for Microsoft Edge
+## Configure managed bookmarks for Microsoft Edge
 
 For ease of access, you can configure bookmarks that you’d like your users to have available when they are using Microsoft Edge. 
+
 Here are some details:
 
-- These bookmarks will only appear for users when they are using the corporate mode of Microsoft Edge. 
-- These bookmarks cannot be deleted or modified by users.
-- These bookmarks display at the top of the list. Any bookmarks that users create are displayed below these bookmarks.
-- If you have enabled App Proxy redirection, you can add App Proxy web apps using either their internal or external URL.
+- These bookmarks only appear for users when they are using the corporate mode of Microsoft Edge. 
+- These bookmarks can't be deleted or modified by users.
+- These bookmarks appear at the top of the list. Any bookmarks that users create appear below these bookmarks.
+- If you have enabled Application Proxy redirection, you can add Application Proxy web apps by using either their internal or external URL.
 
 Use the following key/value pair to configure managed bookmarks:
 
 |    Key    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    The value for this configuration is a   list of bookmarks. Each bookmark consists of the bookmark title, and the   bookmark URL. Separate the title, and URL with the `|` character.      **Example:**<br>`Microsoft Bing|https://www.bing.com`<p>To configure multiple bookmarks, separate each pair with the double character `||`.<p>**Example:**<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    The value for this configuration is a   list of bookmarks. Each bookmark consists of the bookmark title and the   bookmark URL. Separate the title and URL with the `|` character. Example:<br>`Microsoft Bing|https://www.bing.com`<p>To configure multiple bookmarks, separate each pair with the double character `||`. Example:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
-## How to display MyApps within Microsoft Edge bookmarks
+## Display MyApps within Microsoft Edge bookmarks
 
-By default, your users will be shown the MyApps sites that are configured to them within a folder inside Microsoft Edge bookmarks. The folder will be labeled with the name of your organization.
+By default, your users are shown the MyApps sites that are configured to them within a folder inside Microsoft Edge bookmarks. The folder is labeled with the name of your organization.
 
 |    Key    |    Value    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **True** shows MyApps within the Microsoft Edge bookmarks.<p>**False** hides MyApps within Microsoft Edge.    |
 
-## How to specify allowed or blocked sites list for Microsoft Edge
+## Specify allowed or blocked sites list for Microsoft Edge
 You can use app configuration to define which sites your users can access when using their work profile. If you use an allow list, your users will only be able to access the sites you’ve explicitly listed. If you use a blocked list, your users will be able to access all sites except for the sites you’ve explicitly blocked. You should only impose either an allowed or block list, not both. If both are targeted to the device, the allowed list will be honored.  
 
 You can use the below key/value pairs to configure either an allowed or blocked site list for Microsoft Edge. Continue reading for more info about valid URL formats. 
