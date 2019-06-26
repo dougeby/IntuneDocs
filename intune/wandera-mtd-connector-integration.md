@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 06/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -43,12 +43,9 @@ Before you start the process to integrate Wandera with Intune, make sure you hav
   - Send device information to Intune  
 
 - Wandera subscription:
-  - One or more Wandera accounts that are licensed for EMM Connect 
-  - An account with Super administrator privileges in Wandera
-  - To configure the +WiFi functionality, you'll need an additional license.  See [WiFi Functionality](https://wandera.force.com/Customer/s/article/ka1b0000000g5T7AAI?r=21&ui-comm-runtime-components-aura-components-siteforce-qb.Quarterback.validateRoute=1&ui-communities-components-aura-components-forceCommunity-controller.Headline.getInitData=1&ui-communities-components-aura-components-forceCommunity-seoAssistant.SeoAssistant.getSeoData=1&ui-force-components-controllers-recordGlobalValueProvider.RecordGvp.getRecord=1&ui-self-service-components-controller.ArticleTopicList.getTopics=1&ui-self-service-components-controller.ArticleView.getArticleHeaderDetail=1) in the Wandera Knowledge Base.
-
-
-
+  - One or more Wandera accounts that are licensed for EMM Connect  
+  - An account with Super administrator privileges in Wandera  
+ 
 ### Wandera Mobile Threat Defense app authorization  
 
 The Wandera Mobile Threat Defense app authorization process:  
@@ -80,7 +77,7 @@ Setup of *EMM Connect* for Wandera requires a one-time configuration process tha
 
    ![Integrations and permissions](media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-7. While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization with Wandera
+7. While in the RADAR console, copy the name of the **SyncOnly** group that appears below **EMM Label**. You'll use this name to configure a group in Intune for synchronization with Wandera.
 
    ![Integrations and permissions](media/wandera-mtd-connector-integration/sync-group-name.png) 
 
@@ -91,13 +88,13 @@ Setup of *EMM Connect* for Wandera requires a one-time configuration process tha
 Intune and Wandera are now connected.  
 
 ## Configure the Wandera applications and synchronization group  
-You'll create apps in Intune to deploy the Wandera app to your Android and iOS device. You'll also create a single group in Intune for use by Wandera synchronization, and use that group to assign the apps to devices.  
+To deploy Wandera, you will add the Wandera mobile apps for the platforms you use (iOS and Android) to Intune, and assign them to a specific group for synchronization; the *SyncOnly* group. 
 
 The following sections and procedures will guide you through this process.
 
 For more information about this process from Wandera, sign in to Wandera [RADAR](https://radar.wandera.com/login). Go to **Settings** > **EMM Integration**, select the **App Push** tab, and then select **Microsoft Intune**. The App Push tab updates with instructions that are specific to Intune.  
 
-### Create the Wandera apps for Android and iOS  
+### Add the Wandera apps  
 Create client apps in Intune to deploy the Wandera app to Android and iOS devices. See [Add MTD apps](mtd-apps-ios-app-configuration-policy-add-assign.md) for the procedures and custom details specific to the Wandera apps.  
 
 After you create the apps, return here to create the synchronization group and assign the apps.  
@@ -132,9 +129,5 @@ Repeat the following procedure for the Wandera app you created for iOS and for A
  
 
 ## Next Steps  
-Learn more about managing and configuring Wandera, open the Wandera Knowledge Base, and go to [EMM Connect Microsoft Intune Configuration Guide](https://wandera.force.com/Customer/s/article/Intune-EMMC) in the Wandera documentation. Additional subjects include:  
-- manual synchronization
-- device removal
-- sync refresh intervals
-- using Wandera Threat Intelligence with conditional Access
+Now that you have configured the Integration, you can start configuring policies, set up advanced conditional access, and view reports in the Wandera admin console. To learn more about managing and configuring Wandera, see the [Support Center Getting Started Guide](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) in the Wandera documentation.  
  
