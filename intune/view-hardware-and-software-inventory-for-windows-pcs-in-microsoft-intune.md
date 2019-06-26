@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 06/26/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -31,19 +31,22 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
-Intune collects detailed information about the hardware and software of desktops that you manage as PCs by using the Intune software client. Use the information in the following procedures to learn how to create:
+> [!NOTE]
+> The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client. If you want to view inventory for Windows PCs enrolled as mobile devices, see [View device details in Intune](device-inventory.md).
+
+Intune collects detailed information about the hardware and software for desktops you manage as PCs by using the Intune software client. Use the information in the following procedures to learn how to create:
 
 -   A report that lists information about the hardware capabilities of PCs you manage.
 
 -   A report that lists the software installed on each PC.
 
--   How to refresh a PCs inventory to ensure that the data in the report is current.
+-   How to refresh a PC's inventory to ensure that the data in the report is current.
 
 ## To display information about PCs you manage
 
 1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Reports** &gt; **Computer Inventory Reports**.
 
-2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, you could select that only PCs that run Windows 8.1 will be displayed in the report.
+2.  On the **Create New Report** page, accept the default values or customize them to filter the results that will be returned by the report. For example, you could select that only PCs that run Windows 8.1 are displayed in the report.
 
 3.  Choose **View Report** to open the **Computer Inventory Report** in a new window.
 

@@ -47,8 +47,10 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
     ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
 
-2. Provide a **Name** and **Description**.
-3. Choose **Create**.
+3. If you want all devices in specific groups, choose **Assign scope tag to all devices in selected groups**.
+    1. In the **Select groups to include** page, choose the groups containing the devices that you want to assign this scope tag to.
+    2. Choose **Select**.
+4. Choose **Create**.
 
 ## To assign a scope tag to a role
 
