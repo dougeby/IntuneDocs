@@ -85,19 +85,19 @@ If there's an app you need, but don't see in Company Portal, request it. Find co
   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
 ## View installed apps  
-View a list of all apps installed on your device. The **Installed Apps** page lists the following details about each app:
+View a list of all apps installed on your device. The **Installed apps** page lists the following details about each app:
 
-* Name: The name of the app. Available apps include a link to the **App Details** page.
+* Name: The name of the app. Available apps include a link to the **App details** page.
 * Assignment type: How the app is assigned and made available to you. 
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
 * Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
 
-To get to this page, go to the navigation menu and select **Installed Apps**. 
+To get to this page, go to the navigation menu and select **Installed apps**. 
 
   ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-CP-1906.png)  
 
 
-Use **Sort By** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter By** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
+Use **Sort by** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter by** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
 
 Need additional help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
