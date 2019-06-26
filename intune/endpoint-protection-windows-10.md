@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -27,39 +27,106 @@ ms.collection: M365-identity-device-management
 ms.reviewer: karthig
 ---
 
-# Windows 10 (and later) settings to protect devices using Intune
+# Windows 10 (and later) settings to protect devices using Intune  
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.
+Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
 
-To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#windows-defender-antivirus).
+To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#windows-defender-antivirus).  
 
-## Before you begin
+## Before you begin  
 
-[Create an endpoint protection device configuration profile](endpoint-protection-configure.md).
+[Create an endpoint protection device configuration profile](endpoint-protection-configure.md).  
 
-For more information about configuration service providers (CSPs), see [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference). 
+For more information about configuration service providers (CSPs), see [Configuration service provider reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).  
 
-## Windows Defender Application Guard
+## Windows Defender Application Guard  
 
  [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp)  
 
 
-While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.
+While using Microsoft Edge, Windows Defender Application Guard protects your environment from sites that aren't trusted by your organization. When users visit sites that aren’t listed in your isolated network boundary, the sites open in a Hyper-V virtual browsing session. Trusted sites are defined by a network boundary, which are configured in Device Configuration.  
 
-Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.
+Application Guard is only available for Windows 10 (64-bit) devices. Using this profile installs a Win32 component to activate Application Guard.  
 
-- **Application Guard**: **Enabled for Edge** to turn on this feature, which opens untrusted sites in a Hyper-V virtualized browsing container. **Not configured** (default) means that any site (trusted and untrusted) opens on the device.
-- **Clipboard behavior**: Choose what copy/paste actions are allowed between the local PC and the Application Guard virtual browser.
-- **External content on enterprise sites**: **Block** content from unapproved websites from loading. **Not configured** (default) means that non-enterprise sites can open on the device.
-- **Print from virtual browser**: Choose **Allow** so PDF, XPS, local, and network printers can print content from the virtual browser. **Not configured** (default) disables all print features.
-- **Collect logs**: **Allow** to collect logs for events that occur within an Application Guard browsing session. **Not configured** (default) doesn't collect any logs within the browsing session.
-- **Retain user-generated browser data**: **Allow** saves user data (such as passwords, favorites, and cookies) that's created during an Application Guard virtual browsing session. **Not configured** (default) discards user-downloaded files and data when the device restarts, or when a user signs out.
-- **Graphics acceleration**: Choose **Enable** to load graphic-intensive websites and video faster by getting access to a virtual graphics processing unit. **Not configured** (default) uses the device's CPU for graphics; it doesn't use the virtual graphics processing unit.
-- **Download files to host file system**: **Enable** so users download files from the virtualized browser onto the host operating system. **Not configured** (default) keeps the files local on the device, and doesn't download files to the host file system.
+- **Application Guard**  
+  **Default**: Not configured  
+   Application Guard CSP: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
-## Windows Defender Firewall
+  - **Enabled for Edge** - Turns on tis feature, which opens untrusted sites in a Hyper-V virtualized browsing container.  
+  - **Not configured** - Any site (trusted and untrusted) can open on the device.  
+
+- **Clipboard behavior**  
+  **Default**: Not configured  
+   Application Guard CSP: [Settings/ClipboardSettings](https://go.microsoft.com/fwlink/?linkid=872351)  
+
+  Choose what copy and paste actions are allowed between the local PC and the Application Guard virtual browser.  
+  - **Not configured**  
+  - **Allow copy and paste from PC to browser only**  
+  - **Allow copy and paste from browser to PC only**  
+  - **Allow copy and paste between PC and browser**  
+  - **Block copy and paste between PC and browser**  
+
+- **Clipboard content**  
+  **Default**: Not configured  
+  Application Guard CSP: [Settings/ClipboardFileType](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#clipboardfiletype)  
+
+  Select the allowed clipboard content.  
+  - **Not configured**  
+  - **Text**  
+  - **Images**  
+  - **Text and images**  
+
+- **External content on enterprise sites**  
+  **Default**: Not configured  
+  Application Guard CSP: [Settings/BlockNonEnterpriseContent](https://go.microsoft.com/fwlink/?linkid=872352)  
+
+  - **Block** - Block content from unapproved websites from loading.  
+  - **Not configured** - Non-enterprise sites can open on the device.  
+ 
+- **Print from virtual browser**  
+  **Default**: Not configured  
+  Application Guard CSP: [Settings/PrintingSettings](https://go.microsoft.com/fwlink/?linkid=872354)  
+
+  - **Allow** - Allows the printing of selected content from the virtual browser.  
+  - **Not configured** Disable all print features.  
+
+  When you *Allow* printing, you then select one or more of the following options:  
+  - PDF  
+  - XPS  
+  - Local  printers
+  - Network printers
+
+- **Collect logs**  
+  **Default**: Not configured  
+  Application Guard CSP: [Audit/AuditApplicationGuard](https://go.microsoft.com/fwlink/?linkid=872418)  
+
+  - **Allow** - Collect logs for events that occur within an Application Guard browsing session.  
+  - **Not configured** - Don't collect any logs within the browsing session.  
+
+- **Retain user-generated browser data**  
+  **Default**: Not configured  
+  Application Guard CSP: [Settings/AllowPersistence](https://go.microsoft.com/fwlink/?linkid=872419)  
+
+  - **Allow** Save user data (such as passwords, favorites, and cookies) that's created during an Application Guard virtual browsing session. 
+  - **Not configured** Discard user-downloaded files and data when the device restarts, or when a user signs out.  
+
+- **Graphics acceleration**  
+ **Default**: Not configured  
+  Application Guard CSP: [Settings/AllowVirtualGPU](https://go.microsoft.com/fwlink/?linkid=872420)  
+      
+  - **Enable** - Load graphic-intensive websites and video faster by getting access to a virtual graphics processing unit.  
+  - **Not configured** Use the device's CPU for graphics; Don't use the virtual graphics processing unit.  
+
+- **Download files to host file system**  
+  **Default**: Not configured  
+  Application Guard CSP: [Settings/SaveFilesToHost](https://go.microsoft.com/fwlink/?linkid=872421)  
+
+  - **Enable** - Users can download files from the virtualized browser onto the host operating system. 
+  - **Not configured** - Keeps the files local on the device, and doesn't download files to the host file system.
+
+## Windows Defender Firewall  
 
 [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
 
@@ -67,102 +134,546 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
 
 These settings are applicable to all network types.
 
-- **File Transfer Protocol**: **Block** to disable stateful FTP. When **Not configured** (default), the firewall does stateful FTP filtering to allow secondary connections.
-- **Security association idle time before deletion**: Security associations are deleted after no network traffic is detected for *n* seconds. Enter an idle time in seconds.
-- **Pre-shared key encoding**: Choose **Enable** to use preshared key encoding using UTF-8. **Not configured** (default) uses the local store value.
-- **IPsec exemptions**: Configure specific traffic to be exempt from IPsec, including:
-  - **Neighbor discover IPv6 ICMP type-codes**
-  - **ICMP**
-  - **Router discover IPv6 ICMP type-codes**
-  - **Both IPv4 and IPv6 DHCP network traffic**
-- **Certificate revocation list verification**: Choose how the device verifies the certificate revocation list. Options include **Disable CRL verification**, **Fail CRL verification on revoked certificate only**, and **Fail CRL verification on any error encountered**.
-- **Opportunistically match authentication set per keying module**: **Enable** so keying modules MUST ignore only the authentication suites that they don’t support. When **Not configured**, keying modules MUST ignore the entire authentication set if they don't support all of the authentication suites specified in the set.
-- **Packet queuing**: Enter how software scaling on the receive side is enabled for the encrypted receive and clear text forward for the IPsec tunnel gateway scenario. This setting confirms the packet order is preserved.
+- **File Transfer Protocol**  
+  **Default**: Not configured  
+   Firewall CSP: [MdmStore/Global/DisableStatefulFtp](https://go.microsoft.com/fwlink/?linkid=872536)  
 
-### Network settings
+  - **Block** - Disable stateful FTP.  
+  - **Not configured** - The firewall does stateful FTP filtering to allow secondary connections.  
 
-These settings are applicable to specific network types, including **Domain (workplace) network**, **Private (discoverable) network**, and **Public (non-discoverable) network**.
+- **Security association idle time before deletion**    
+  **Default**: *Not configured*  
+   Firewall CSP: [MdmStore/Global/SaIdleTime](https://go.microsoft.com/fwlink/?linkid=872539)  
+
+   Specify an idle time in seconds, after which security associations are deleted.
+
+- **Pre-shared key encoding**  
+  **Default**: Not configured  
+   Firewall CSP: [MdmStore/Global/PresharedKeyEncoding](https://go.microsoft.com/fwlink/?linkid=872541) 
+
+   - **Enable** - Encode prsheared keys using UTF-8.  
+   - **Not configured** - Encode prsheared keys using the local store value.  
+
+- **IPsec exemptions**  
+  **Default**: *0 selected*  
+   Firewall CSP: [MdmStore/Global/IPsecExempt](https://go.microsoft.com/fwlink/?linkid=872547)
+
+   Select one or more of the following types of traffic to be exempt from IPsec:  
+   - **Neighbor discover IPv6 ICMP type-codes**
+   - **ICMP**
+   - **Router discover IPv6 ICMP type-codes**
+   - **Both IPv4 and IPv6 DHCP network traffic**  
+
+- **Certificate revocation list verification**  
+  **Default**: Not configured  
+  Firewall CSP: [MdmStore/Global/CRLcheck](https://go.microsoft.com/fwlink/?linkid=872548)  
+
+  Choose how the device verifies the certificate revocation list. Options include:  
+  - **Disable CRL verification**, 
+  - **Fail CRL verification on revoked certificate only**, and 
+  - **Fail CRL verification on any error encountered**.
+ 
+
+- **Opportunistically match authentication set per keying module**  
+  **Default**: Not configured  
+  Firewall CSP: [MdmStore/Global/OpportunisticallyMatchAuthSetPerKM](https://go.microsoft.com/fwlink/?linkid=872550)  
+  
+  - **Enable** Keying modules must ignore only the authentication suites that they don’t support.  
+  - **Not configured**, Keying modules must ignore the entire authentication set if they don't support all of the authentication suites specified in the set.  
+
+
+- **Packet queuing**  
+  **Default**: Not configured  
+  Firewall CSP: [MdmStore/Global/EnablePacketQueue](https://go.microsoft.com/fwlink/?linkid=872551)  
+
+  Specify how software scaling on the receive side is enabled for the encrypted receive and clear text forward for the IPsec tunnel gateway scenario. This setting confirms the packet order is preserved. Options include:  
+  - **Not configured**  
+  - **Disable all packet queuing**  
+  - **Queue inbound encrypted packets only**  
+  - **Queue packaets after decryption is performed for forwarding only**  
+  - **Configure both inbound and outbound packaets**  
+
+### Network settings  
+
+The following settings are each listed in this article a single time, but all apply to the three specific network types:  
+- **Domain (workplace) network**  
+- **Private (discoverable) network**  
+- **Public (non-discoverable) network**  
 
 #### General settings  
-- **Windows Defender Firewall**: Choose **Enable** to turn on the firewall, and advanced security. **Not configured** (default) allows all network traffic, regardless of any other policy settings.
-- **Stealth mode**: **Block** the firewall from operating in stealth mode. Blocking stealth mode allows you to also block **IPsec secured packet exemption**. **Not configured** (default) operates the firewall in stealth mode, which helps prevent responses to probing requests.
-- **Shielded**: **Block** turns off this feature. **Not configured** (default) enables this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.
-- **Unicast responses to multicast broadcasts**: When set to **Block**, it disables unicast responses to multicast broadcasts. Typically, you don't want to receive unicast responses to multicast or broadcast messages. These responses can indicate a denial of service (DOS) attack, or an attacker trying to probe a known live computer. **Not configured** (default) enables this setting.
-- **Inbound notifications**: When set to **Block**, it hides notifications to users when an app is blocked from listening on a port. **Not configured** (default) enables this setting, and may show a notification to users when an app is blocked from listening on a port.
-- **Default action for inbound connections**: When set to **Block**, the default firewall action isn't run on inbound connections. When set to **Not configured** (default), the default firewall action is run on inbound connections.
+
+- **Windows Defender Firewall**  
+  **Default**: Not configured  
+  Firewall CSP: [/EnableFirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
+  
+  - **Enable** - Turn on the firewall, and advanced security. 
+  - **Not configured** Allows all network traffic, regardless of any other policy settings.
+
+- **Stealth mode**  
+  **Default**: Not configured  
+  Firewall CSP: [/DisableStealthMode](https://go.microsoft.com/fwlink/?linkid=872559)  
+  - **Not configured**  
+  - **Block** - Firewall is blocked from operating in stealth mode. Blocking stealth mode allows you to also block **IPsec secured packet exemption**.  
+  - **Allow** - The firewall operates in stealth mode, which helps prevent responses to probing requests.
+
+- **IPsec secured packet exemption with Stealth Mode**  
+  **Default**: Not configured  
+  Firewall CSP: [/DisableStealthModeIpsecSecuredPacketExemption](https://go.microsoft.com/fwlink/?linkid=872560)  
+
+  This option is ignored if *Stealth mode* is set to *Block*.
+
+  - **Not configured**
+  - **Block** - IPSec secured packets do not receive exemptions.  
+  - **Allow** - Enable exemptions. The firewall's stealth mode MUST NOT prevent the host computer from responding to unsolicited network traffic that is secured by IPsec.  
+
+- **Shielded**  
+  **Default**: Not configured  
+  Firewall CSP: [/Shielded](https://go.microsoft.com/fwlink/?linkid=872561)  
+    - **Not configured**  
+    - **Block** - Turn off this feature.  
+    - **Allow** - Enable this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.  
+  
+
+- **Unicast responses to multicast broadcasts**  
+  **Default**: Not configured  
+  Firewall CSP: [/DisableUnicastResponsesToMulticastBroadcast](https://go.microsoft.com/fwlink/?linkid=872562)  
+  
+  Typically, you don't want to receive unicast responses to multicast or broadcast messages. These responses can indicate a denial of service (DOS) attack, or an attacker trying to probe a known live computer.  
+  - **Not configured**  
+  - **Block** - Disable unicast responses to multicast broadcasts.
+  - **Allow** - Allow unicast responses to multicast broadcasts.
+
+- **Inbound notifications**  
+  **Default**: Not configured  
+  Firewall CSP: [/DisableInboundNotifications](https://go.microsoft.com/fwlink/?linkid=8725630)  
+
+  - **Not configured**  
+  - **Block** - Hide notifications to uses when an app is blocked from listening on a port.  
+  - **Allow** - Enables this setting, and may show a notification to users when an app is blocked from listening on a port.  
+
+- **Default action for outbound connections**  
+  **Default**: Not configured  
+  Firewall CSP: [/DefaultOutboundAction](https://aka.ms/intune-firewall-outboundaction)  
+  
+  Configure the default action firewall performs on outbound connections. This setting will get applied to Windows version 1809 and above.
+
+  - **Not configured**  
+  - **Block** - The default firewall action isn't run on outbound traffic unless its explicitly specified not to block.
+  - **Allow** - Default firewall actions run on outbound connections.
+
+- **Default action for inbound connections**  
+  **Default**: Not configured  
+  Firewall CSP: [/DefaultInboundAction](https://go.microsoft.com/fwlink/?linkid=872564)  
+ 
+  - **Not configured**  
+  - **Block** - The default firewall action isn't run on inbound connections.
+  - **Allow** - Default firewall actions run on inbound connections.
 
 #### Rule merging
 
-- **Authorized application Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store so they're recognized and enforced. When **Not configured** (default), the authorized application firewall rules in the local store are ignored and not enforced.
-- **Global port Windows Defender Firewall rules from the local store**: Choose **Enable** to apply global port firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the global port firewall rules in the local store are ignored and not enforced.
-- **Windows Defender Firewall rules from the local store**: Choose **Enable** to apply firewall rules in the local store to be recognized and enforced. When **Not configured** (default), the firewall rules from the local store are ignored and not enforced.
-- **IPsec rules from the local store**: Choose **Enable** to apply connection security rules from the local store, regardless of schema or connection security rule versions. When **Not configured** (default), the connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.
+- **Authorized application Windows Defender Firewall rules from the local store**  
+  **Default**: Not configured  
+  Firewall CSP: [/AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)
+
+  - **Not configured**  
+  - **Block** - The authorized application firewall rules in the local store are ignored and not enforced.  
+  - **Allow** -
+   Choose **Enable** Applies firewall rules in the local store so they're recognized and enforced. 
+
+- **Global port Windows Defender Firewall rules from the local store**  
+  **Default**: Not configured  
+  Firewall CSP: [/GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)
+
+  - **Not configured**  
+  - **Block** - The global port firewall rules in the local store are ignored and not enforced.  
+  - **Allow** - Apply global port firewall rules in the local store to be recognized and enforced.  
+
+- **Windows Defender Firewall rules from the local store**  
+  **Default**: Not configured  
+  Firewall CSP: [/AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)
+
+  - **Not configured**  
+  - **Block** - Firewall rules from the local store are ignored and not enforced.
+  - **Allow** - Apply firewall rules in the local store to be recognized and enforced.  
+
+- **IPsec rules from the local store**  
+  **Default**: Not configured  
+  Firewall CSP: [/AllowLocalIpsecPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872568)
+
+  - **Not configured**  
+  - **Block** -  The connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version..
+  - **Allow** - Apply connection security rules from the local store, regardless of schema or connection security rule versions.
+
+### Firewall rules (preview)  
+
+You can **Add** one or more custom Firewall rules. For more information, see [Add custom firewall rules for Windows 10 devices](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices).  
+
+Custom Firewall rules support the following options:  
+
+#### General settings:  
+
+- **Name**  
+  **Default**: *No name*  
+
+  Specify a friendly name for your rule. This name will appear in the list of rules to help you identify it.  
+
+- **Description**  
+  **Default**: *No description*  
+
+  Provide a description of the rule.  
+
+- **Direction**   
+  **Default**: Not configured  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/Direction](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#direction)  
+  
+  Specify if this rule applies to **Inbound**, or **Outbound** traffic. When set as **Not configured**, the rule automatically applies to Outbound traffic.  
+
+- **Action**  
+  **Default**: Not configured  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/Action](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#action), and [FirewallRules/*FirewallRuleName*/Action/Type](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#type)  
+
+  Select from **Allow** or **Block**. When set as **Not configured**, the rule defaults to allow traffic.  
+
+- **Network type**  
+  **Default**: 0 selected  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/Profiles](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#profiles)  
+
+  Select up to three types of network types to which this rule belongs. Options include **Domain**, **Private**, and **Public**.  If no network types are selected, the rule applies to all three network types.  
+
+#### Application settings  
+- **Application(s)**  
+  **Default**: All  
+
+  Control connections for an app or program. Select one of the following options, and then complete the additional configuration:  
+  - **Package family name** – Specify a package family name. To find the package family name, use the PowerShell command **Get-AppxPackage**.   
+    Firewall CSP: [FirewallRules/*FirewallRuleName*/App/PackageFamilyName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#packagefamilyname)  
+     
+  - **File path** – You must specify a file path to an app on the client device, which can be an absolute path, or a relative path. For example:  C:\Windows\System\Notepad.exe or %WINDIR%\Notepad.exe.   
+    Firewall CSP: [FirewallRules/*FirewallRuleName*/App/FilePath](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#filepath)  
+
+  - **Windows service** – Specify the Windows service short name if it’s a service and not an application that sends or receives traffic. To find the service short name, use the PowerShell command **Get-Service**.     
+    Firewall CSP: [FirewallRules/*FirewallRuleName*/App/ServiceName](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#servicename)  
+
+  - **All**– *No additional configuration is available*.  
+
+#### IP address settings  
+Specify the local and remote addresses to which this rule applies.
+
+- **Local addresses**    
+  **Default**: Any address  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
+
+  Select **Any address** or **Specified address**.  
+
+  When you use *Specified address*, you add one or more addresses as a comma-separated list of local addresses that are covered by the rule. Valid tokens include:  
+  - Use an asterisk “*” for *any* local address. If you use an asterisk, it must be the only token you use.  
+  - To specify a subnet use either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.  
+  - A valid IPv6 address.  
+  - An IPv4 address range in the format of "start address - end address" with no spaces included.  
+  - An IPv6 address range in the format of "start address - end address" with no spaces included.  
+
+- **Remote addresses**  
+  **Default**: Any address  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/RemoteAddressRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteaddressranges)  
+ 
+  Select **Any address** or **Specified address**.  
+
+  When you use *Specified address*, you add one or more addresses as a comma-separated list of remote addresses that are covered by the rule. Tokens aren't case-sensitive. Valid tokens include:  
+  - Use an asterisk “*” for *any* remote address. If you use an asterisk, it must be the only token you use.  
+  - "Defaultgateway"  
+  - "DHCP"  
+  - "DNS"  
+  - "WINS"  
+  - "Intranet" (supported on Windows versions 1809 and later)  
+  - "RmtIntranet" (supported on Windows versions 1809 and later)  
+  - "Internet" (supported on Windows versions 1809 and later)  
+  - "Ply2Renders" (supported on Windows versions 1809 and later)  
+  - "LocalSubnet" indicates any local address on the local subnet.  
+  - To specify a subnet use either the subnet mask or network prefix notation. If neither a subnet mask nor a network prefix is specified, the subnet mask defaults to 255.255.255.255.  
+  - A valid IPv6 address.  
+  - An IPv4 address range in the format of "start address - end address" with no spaces included.  
+  - An IPv6 address range in the format of "start address - end address" with no spaces included.  
+
+#### Port and protocol settings  
+Specify the local and remote ports to which this rule applies.
+
+- **Protocol**  
+  **Default**: Any  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/Protocol](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#protocol)  
+  Select from the following, and complete any required configurations:  
+  - **All** – No additional configuration is available.  
+  - **TCP** – Configure local and remote ports. Both options support All ports or Specified ports. Enter Specified ports by using a comma-separated list.
+    - **Local ports** -    Firewall CSP: [FirewallRules/*FirewallRuleName*/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
+    - **Remote ports** -   Firewall CSP: [FirewallRules/*FirewallRuleName*/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)  
+  - **UDP** – Configure local and remote ports. Both options support All ports or Specified ports. Enter Specified ports by using a comma-separated list.
+    - **Local ports** -    Firewall CSP: [FirewallRules/*FirewallRuleName*/LocalPortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#localportranges)  
+    - **Remote ports** -   Firewall CSP: [FirewallRules/*FirewallRuleName*/RemotePortRanges](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#remoteportranges)  
+  - **Custom** – Specify a custom **protocol** number from 0 to 255.  
+
+#### Advanced configuration  
+- **Interface types**  
+  **Default**: 0 selected  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/InterfaceTypes](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp#interfacetypes)  
+
+  Select from the following options:  
+  - **Remote access**
+  - **Wireless**
+  - **Local area network**
+
+- **Only allow connections from these users**  
+  **Default**: All users *(Defaults to all uses when no list is specified)*  
+  Firewall CSP: [FirewallRules/*FirewallRuleName*/LocalUserAuthorizationList](https://aka.ms/intunefirewallauthorizedusers)  
+
+  Specify a list of authorized local users for this rule. A list of authorized users can't be specified if this rule applies to a Windows service.  
 
 
 ## Windows Defender SmartScreen settings
 
 [Policy CSP - SmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen)  
 
-Microsoft Edge must be installed on the device. 
+Microsoft Edge must be installed on the device.  
 
+- **SmartScreen for apps and files**  
+  **Default**: Not configured  
+   SmartScreen CSP: [SmartScreen/EnableSmartScreenInShell](https://go.microsoft.com/fwlink/?linkid=872784) 
 
-**Settings**:
+  - **Not configured** - Disables use of SmartScreen.  
+  - **Enable** - Enbale Windows SmartScreen for file execution, and running apps. SmartScreen is a cloud-based anti-phishing and anti-malware component.  
 
-- **SmartScreen for apps and files**: **Enable** Windows SmartScreen for file execution, and running apps. SmartScreen is a cloud-based anti-phishing and anti-malware component. **Not configured** (default) disables SmartScreen.
-- **Unverified files execution**: **Block** end users from running files that haven't been verified by Windows SmartScreen. **Not configured** (default) disables this feature, and allows end users to run files that haven't been verified.
+- **Unverified files execution**  
+  **Default**: Not configured  
+   SmartScreen CSP: [SmartScreen/PreventOverrideForFilesInShell](https://go.microsoft.com/fwlink/?linkid=872783)
+
+  - **Not configured** - Disables this feature, and allows end users to run files that haven't been verified.  
+  - **Block** - Prevent end users from running files that haven't been verified by Windows SmartScreen.  
 
 ## Windows Encryption  
 
 [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
+### Windows Settings  
 
-### Windows Settings
+These encryption settings apply to all versions of Windows 10.  
 
-**Settings**:
+- **Encrypt devices**  
+  **Default**: Not configured  
+  BitLocker CSP: [RequireDeviceEncryption](https://go.microsoft.com/fwlink/?linkid=872523)  
 
-- **Encrypt devices**: **Require** to prompt users to enable device encryption. Depending on the Windows edition and system configuration, users may be asked:  
-  - To confirm that encryption from another provider isn't enabled
-  - Be required to turn off BitLocker Drive Encryption, and then turn BitLocker back on
-    
-    If Windows encryption is turned on while another encryption method is active, the device might become unstable. 
-- **Encrypt storage card (mobile only)**: **Require** to encrypt any removable storage cards used by the device. **Not configured** (default) doesn't require storage card encryption, and doesn't prompt the user to turn it on. This setting only applies to Windows 10 mobile devices.
+  - **Require** - Prompt users to enable device encryption. Depending on the Windows edition and system configuration, users may be asked:  
+    - To confirm that encryption from another provider isn't enabled.  
+    - Be required to turn off BitLocker Drive Encryption, and then turn BitLocker back on.  
+  - **Not configured**  
+  
+  If Windows encryption is turned on while another encryption method is active, the device might become unstable.  
+
+- **Encrypt storage card (mobile only)**  
+  *This setting only applies to Windows 10 mobile.*  
+  **Default**: Not configured  
+  BitLocker CSP: [RequireStorageCardEncryption](https://go.microsoft.com/fwlink/?linkid=872524)  
+
+  - **Require** to encrypt any removable storage cards used by the device.  
+  - **Not configured** - Don't require storage card encryption, and don't prompt the user to turn it on.  
 
 ### BitLocker base settings
 
 Base settings are universal BitLocker settings for all types of data drives. These settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
 
-- **Warning for other disk encryption**: Select **Block** to disable the warning prompt if another disk encryption service is on the device. **Not configured** (default) allows the warning to be shown.
-    - **Allow standard users to enable encryption during Azure AD Join**: When you choose **Allow**, standard users/non-administrators can enable BitLocker encryption when the user is signed in. This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. **Not configured** only allows Administrators to enable BitLocker encryption on the device.
-      
-      This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. It also requires that the **Warning for other disk encryption** setting be set to **Block**.
-- **Configure encryption methods**: **Enable** this setting to configure encryption algorithms for operating system, data, and removable drives. When **Not configured** (default), BitLocker uses XTS-AES 128 bit as the default encryption method, or uses the encryption method specified by any setup script.
-  - **Encryption for operating system drives**: Choose the encryption method for operating system drives. We recommend you use the XTS-AES algorithm.
-  - **Encryption for fixed data-drives**: Choose the encryption method for fixed (built-in) data drives. We recommend you use the XTS-AES algorithm.
-  - **Encryption for removable data-drives**: Choose the encryption method for removable data drives. If the removable drive is used with devices that aren't running Windows 10, then we recommend you use the AES-CBC algorithm.
+- **Warning for other disk encryption**  
+  **Default**: Not configured  
+  BitLocker CSP: [AllowWarningForOtherDiskEncryption](https://go.microsoft.com/fwlink/?linkid=872525)  
+
+  - **Block** - Disable the warning prompt if another disk encryption service is on the device.  
+  - **Not configured** - Allow the warning for other disk encryption to be shown.
+
+  When set to *Block*, you can configure the following setting:  
+
+  - **Allow standard users to enable encryption during Azure AD Join**  
+    *This setting only applies to Azure Active Directory Joined (Azure ADJ) devices*.  
+    **Default**: Not configured  
+
+     - **Allow** - Standard users (non-administrators) can enable BitLocker encryption when signed in.  
+     - **Not configured** only Administrators can enable BitLocker encryption on the device.  
+
+- **Configure encryption methods**  
+  **Default**: Not configured  
+  BitLocker CSP: [EncryptionMethodByDriveType](https://go.microsoft.com/fwlink/?linkid=872526)  
+
+  - **Enable** - Configure encryption algorithms for operating system, data, and removable drives.  
+  - **Not configured** - BitLocker uses XTS-AES 128 bit as the default encryption method, or uses the encryption method specified by any setup script.  
+
+  When set to  *Enable*, you can configure the following settings:
+
+  - **Encryption for operating system drives**  
+    **Default**: XTS-AES 128-bit  
+    BitLocker CSP: [EncryptionMethodByDriveType](https://go.microsoft.com/fwlink/?linkid=872526)  
+
+    Choose the encryption method for operating system drives. We recommend you use the XTS-AES algorithm.  
+    - **AES-CBC 128-bit**
+    - **AES-CBC 256-bit**
+    - **XTS-AES 128-bit**
+    - **XTS-AES 256-bit**
+- 
+  - **Encryption for fixed data-drives**  
+    **Default**: AES-CBC 128-bit    
+    BitLocker CSP: [EncryptionMethodByDriveType](https://go.microsoft.com/fwlink/?linkid=872526)  
+
+    Choose the encryption method for fixed (built-in) data drives. We recommend you use the XTS-AES algorithm.
+    - **AES-CBC 128-bit**
+    - **AES-CBC 256-bit**
+    - **XTS-AES 128-bit**
+    - **XTS-AES 256-bit**
+
+  - **Encryption for removable data-drives**  
+    **Default**: AES-CBC 128-bit    
+    BitLocker CSP: [EncryptionMethodByDriveType](https://go.microsoft.com/fwlink/?linkid=872526)  
+
+    Choose the encryption method for removable data drives. If the removable drive is used with devices that aren't running Windows 10, then we recommend you use the AES-CBC algorithm.
+    - **AES-CBC 128-bit**
+    - **AES-CBC 256-bit**
+    - **XTS-AES 128-bit**
+    - **XTS-AES 256-bit**
 
 ### BitLocker OS drive settings
 
 These settings apply specifically to operating system data drives.
 
-- **Additional authentication at startup**: Select **Require** to configure the authentication requirements for computer startup, including the use of Trusted Platform Module (TPM). Select **Not configured** (default) to configure only basic options on devices with a TPM.
-  - **BitLocker with non-compatible TPM chip**: **Block** (disable) using BitLocker when a device doesn't have a compatible TPM chip. When **Not configured**, users can use BitLocker without a compatible TPM chip. BitLocker may require a password or a startup key.
-  - **Compatible TPM startup**: Choose to allow, not allow, or require the TPM chip.
-  - **Compatible TPM startup PIN**: Choose to allow, not allow, or require using a startup PIN with the TPM chip. Enabling a startup PIN requires interaction from the end user. 
-  - **Compatible TPM startup key**: Choose to allow, not allow, or require using a startup key with the TPM chip. Enabling a startup key requires interaction from the end user. 
-  - **Compatible TPM startup key and PIN**: Choose to allow, not allow, or require using a startup key and PIN with the TPM chip. Enabling startup key and PIN requires interaction from the end user.
-- **Minimum PIN Length**: **Enable** this setting to configure a minimum length for the TPM startup PIN. When **Not configured** (default), users can configure a startup PIN of any length between 6 and 20 digits.
-  - **Minimum characters**: Enter the number of characters required for the startup PIN from **4**-**20**.
-- **OS drive recovery**: **Enable** this setting to control how BitLocker-protected operating system drives recover when the required start-up information isn't available. When **Not configured** (default), the default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are chosen by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.
-  - **Certificate-based data recovery agent**: When set to **Block**, you can't use data recovery agent with BitLocker-protected OS drives. Set to **Not configured** (default) to enable this setting, which allows data recovery agents to be used with BitLocker-protected operating system drives.
-  - **User creation of recovery password**: Choose if users are allowed, required, or not allowed to generate a 48-digit recovery password.
-  - **User creation of recovery key**: Choose if users are allowed, required, or not allowed to generate a 256-bit recovery key.
-  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to Azure Active Directory**: Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in AAD.
-  - **BitLocker recovery Information stored to Azure Active Directory**: Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:
+- **Additional authentication at startup**  
+  **Default**: Not configured  
+  BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+  - **Require** - Configure the authentication requirements for computer startup, including the use of Trusted Platform Module (TPM).  
+  - **Not configured** - Configure only basic options on devices with a TPM.  
+
+  When set to *Require*, you can configure the following settings:  
+
+  - **BitLocker with non-compatible TPM chip**  
+    **Default**: Not configured   
+    BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+    - **Block** - Disable use of BitLocker when a device doesn't have a compatible TPM chip.  
+    - **Not configured** - Users can use BitLocker without a compatible TPM chip. BitLocker may require a password or a startup key.  
+
+  - **Compatible TPM startup**  
+    **Default**: Allow TPM  
+    BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+    Configure if TPM is allowed, required or not allowed.  
+
+    - **Allow TPM**  
+    - **Do not allow TPM**  
+    - **Require TPM**
+
+  - **Compatible TPM startup PIN**  
+    **Default**: Allow startup PIN with TPM  
+    BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+    Choose to allow, not allow, or require using a startup PIN with the TPM chip. Enabling a startup PIN requires interaction from the end user.  
+
+    - **Allow startup PIN with TPM**  
+    - **Do not allow startup PIN with TPM**  
+    - **Require startup PIN with TPM**
+
+  - **Compatible TPM startup key**  
+    **Default**: Allow startup key with TPM   
+    BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+    Choose to allow, not allow, or require using a startup key with the TPM chip. Enabling a startup key requires interaction from the end user.  
+
+    - **Allow startup key with TPM**  
+    - **Do not allow startup key with TPM**  
+    - **Require startup key with TPM**  
+
+  - **Compatible TPM startup key and PIN**  
+    **Default**: Allow startup key and PIN with TPM  
+    BitLocker CSP: [SystemDrivesRequireStartupAuthentication](https://go.microsoft.com/fwlink/?linkid=872527)  
+
+    Choose to allow, not allow, or require using a startup key and PIN with the TPM chip. Enabling startup key and PIN requires interaction from the end user.  
+    - **Allow startup key and PIN with TPM**  
+    - **Do not allow startup key and PIN with TPM**  
+    - **Require startup key and PIN with TPM** 
+
+- **Minimum PIN Length**  
+    **Default**: Not configured  
+    BitLocker CSP: [SystemDrivesMinimumPINLength](https://go.microsoft.com/fwlink/?linkid=872528)   
+
+    - **Enable** Configure a minimum length for the TPM startup PIN.  
+    - **Not configured** - Users can configure a startup PIN of any length between 6 and 20 digits.  
+
+  When set to *Enable*, you can configure the following setting:  
+
+  - **Minimum characters**  
+    **Default**: *Not configured* 
+    BitLocker CSP: [SystemDrivesMinimumPINLength](https://go.microsoft.com/fwlink/?linkid=872528)  
+
+    Enter the number of characters required for the startup PIN from **4**-**20**.  
+
+- **OS drive recovery**  
+  **Default**: Not configured   
+  BitLocker CSP: [SystemDrivesRecoveryOptions](https://go.microsoft.com/fwlink/?linkid=872529)  
+
+  - **Enable** - Control how BitLocker-protected operating system drives recover when the required start-up information isn't available.  
+  - **Not configured** - Default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are chosen by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.  
+
+  When set to *Enable*, you can configure the following setting:  
+
+  - **Certificate-based data recovery agent**  
+    **Default**: Not configured  
+     
+    - **Block** - Prevent use of data recovery agent with BitLocker-protected OS drives.  
+    - **Not configured** - Allow data recovery agents to be used with BitLocker-protected operating system drives.  
+
+  - **User creation of recovery password**  
+    **Default**: Allow 48-digit recovery password  
+
+    Choose if users are allowed, required, or not allowed to generate a 48-digit recovery password.
+    - **Allow 48-digit recovery password**  
+    - **Do not allow 48-digit recovery password**  
+    - **Require 48-digit recovery password**  
+
+  - **User creation of recovery key**  
+    **Default**: Allow 256-bit recovery key
+
+    Choose if users are allowed, required, or not allowed to generate a 256-bit recovery key.
+    - **Allow 256-bit recovery key**  
+    - **Do not allow 256-bit recovery key**  
+    - **Require 256-bit recovery key**  
+
+  - **Recovery options in the BitLocker setup wizard**  
+    **Default**: Not configured  
+
+    - **Block** - Users can't see and change the recovery options. When set to 
+    - **Not configured** - Users can see and change the recovery options when they turn on BitLocker.
+<!-- Continue here  -->
+  - **Save BitLocker recovery information to Azure Active Directory**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in AAD.
+
+  - **BitLocker recovery Information stored to Azure Active Directory**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from: 
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **BitLocker recovery Information stored to Azure Active Directory**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
-- **Pre-boot recovery message and URL**: **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.
-  - **Pre-boot recovery message**: Configure how the pre-boot recovery message displays to users. Choose from:
+
+  - **BitLocker recovery Information stored to Azure Active Directory**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
+
+- **Pre-boot recovery message and URL**  
+  **Default**:  
+  BitLocker CSP: ()  
+
+  **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.  
+
+  - **Pre-boot recovery message**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**
     - **Use empty recovery message and URL**
     - **Use custom recovery message**
@@ -172,24 +683,77 @@ These settings apply specifically to operating system data drives.
 
 **Settings**:
 
-- **Write access to fixed data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
-- **Fixed drive recovery**: **Enable** this setting to control how BitLocker-protected fixed drives recover when the required start-up information isn't available. **Not configured** (default) disables this feature.
-  - **Data recovery agent**: **Block** the use of data recovery agent with BitLocker-protected fixed drives Policy Editor. **Not configured** (default) enables using data recovery agents with BitLocker-protected fixed drives.
-  - **User creation of recovery password**: Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.  
-  - **User creation of recovery key**: Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.
-  - **Recovery options in the BitLocker setup wizard**: Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.
-  - **Save BitLocker recovery information to Azure Active Directory**: Choose **Enable** to store the BitLocker recovery information in Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in Azure AD.
-  - **BitLocker recovery Information stored to Azure Active Directory**: Configure what parts of BitLocker recovery information are stored in Azure AD. Your options:
+- **Write access to fixed data-drive not protected by BitLocker**  
+  **Default**:  
+  BitLocker CSP: ()  
+
+  Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
+
+- **Fixed drive recovery**  
+  **Default**:  
+  BitLocker CSP: ()  
+
+  **Enable** this setting to control how BitLocker-protected fixed drives recover when the required start-up information isn't available. **Not configured** (default) disables this feature.
+
+  - **Data recovery agent**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    **Block** the use of data recovery agent with BitLocker-protected fixed drives Policy Editor. **Not configured** (default) enables using data recovery agents with BitLocker-protected fixed drives.  
+
+  - **User creation of recovery password**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Configure whether users are allowed, required, or not allowed to generate a 48-digit recovery password.  
+ 
+  - **User creation of recovery key**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Configure whether users are allowed, required, or not allowed to generate a 256-bit recovery key.
+
+  - **Recovery options in the BitLocker setup wizard**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Set to **Block** so users can't see and change the recovery options. When set to **Not configured** (default), users can see and change the recovery options when they turn on BitLocker.  
+
+  - **Save BitLocker recovery information to Azure Active Directory**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Choose **Enable** to store the BitLocker recovery information in Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in Azure AD.  
+
+  - **BitLocker recovery Information stored to Azure Active Directory**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    Configure what parts of BitLocker recovery information are stored in Azure AD. Your options:
     - **Backup recovery passwords and key packages**
     - **Backup recovery passwords only**
-  - **Store recovery information in Azure Active Directory before enabling BitLocker**: **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.
+
+  - **Store recovery information in Azure Active Directory before enabling BitLocker**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information is not successfully stored in Azure AD.  
 
 ### BitLocker removable data-drive settings
 
 **Settings**:
 
-- **Write access to removable data-drive not protected by BitLocker**: Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.
-  - **Write access to devices configured in another organization**: **Block** allows write access to devices configured in another organization. **Not configured** (default) denies write access.
+- **Write access to removable data-drive not protected by BitLocker**  
+  **Default**:  
+  BitLocker CSP: ()  
+
+  Set to **Block** to give read-only access to data drives that aren't BitLocker-protected. When **Not configured** (default), there's read and write access to data drives that aren't BitLocker-protected.  
+
+  - **Write access to devices configured in another organization**  
+    **Default**:  
+    BitLocker CSP: ()  
+
+    **Block** allows write access to devices configured in another organization. **Not configured** (default) denies write access.
 
 ## Windows Defender Exploit Guard
 
