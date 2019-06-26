@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,6 +55,42 @@ This feature supports:
 
 - Windows 10 and later
 
+## Certificates
+
+[Certificates](certificates-configure.md) configure trusted, SCEP, and PKCS certificates that are assigned to devices. These certificates authenticate WiFi, VPN, and email profiles.
+
+This feature supports: 
+
+- Android
+- Android Enterprise
+- iOS
+- macOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10 and later
+
+## Custom profile
+
+[Custom settings](custom-settings-configure.md) let administrators assign device settings that aren't built in to Intune. On Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator.
+
+This feature supports:
+
+- Android
+- Android Enterprise
+- iOS
+- macOS
+- Windows Phone 8.1
+
+## Delivery optimization
+
+[Delivery optimization](delivery-optimization-windows.md) provides a better experience to delivery software updates. These settings are replacing the **Software Updates** > **Windows 10 update ring** settings.
+
+Use these settings to control how software updates are downloaded to devices in your organization. For example, you can let users get their own updates, or get updates using the delivery optimization cloud services in a device profile.
+
+This feature supports:
+
+- Windows 10 and later
+
 ## Device features
 
 [Device features](device-features-configure.md) controls features on iOS and macOS devices, such as AirPrint, notifications, and lock screen messages.
@@ -77,14 +113,30 @@ This feature supports:
 - Windows 10 and later
 - Windows 10 Team
 
-## Delivery optimization
+## Edition upgrade
 
-[Delivery optimization](delivery-optimization-windows.md) provides a better experience to delivery software updates. These settings are replacing the **Software Updates** > **Windows 10 update ring** settings.
-
-Use these settings to control how software updates are downloaded to devices in your organization. For example, you can let users get their own updates, or get updates using the delivery optimization cloud services in a device profile.
+[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
 
 This feature supports:
 
+- Windows 10 and later
+
+## Education
+
+[Education settings - Windows 10](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
+
+[Education settings - iOS](education-settings-configure-ios-shared.md) uses the iOS Classroom app to guide learning, and control student devices in the classroom. You can configure iPad devices so many students can share a single device.
+
+## Email
+
+[Email settings](email-settings-configure.md) creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help with consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
+
+This feature supports: 
+
+- Android
+- Android Enterprise
+- iOS
+- Windows Phone 8.1
 - Windows 10 and later
 
 ## Endpoint protection
@@ -96,6 +148,22 @@ To onboard Windows Defender Advanced Threat Protection (WDATP) with Microsoft In
 This feature supports:
 
 - Windows 10 and later
+
+## eSIM cellular - Public preview
+
+[eSIM cellular profiles](esim-device-configuration.md) lets administrators configure cellular data plans on your managed devices for internet and data access. After getting activation codes from your mobile operator, use Intune to import these activation codes, and then assign to your eSIM capable devices.
+
+This feature supports:
+
+- Windows 10 Fall Creators Update and later
+
+## Extensions
+
+[Kernel extensions](kernel-extensions-overview-macos.md) allows administrators to add features or programs at the kernel-level on macOS devices. Configure these settings to trust all extensions from a specific developer or partner, or allow specific kernel extensions.
+
+This feature supports:
+
+- macOS
 
 ## Identity protection
 
@@ -116,17 +184,44 @@ This feature supports:
 
 Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
 
-## Email
+## OEMConfig
 
-[Email settings](email-settings-configure.md) creates, assigns, and monitors Exchange ActiveSync email settings on the devices. Email profiles help with consistency, reduce support calls, and let end-users access company email on their personal devices, without any required setup on their part. 
+[OEMConfig](android-oem-configuration-overview.md) is a standard that allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way on Android Enterprise devices. With OEMConfig, an OEM creates a schema that defines OEM-specific management features, and embeds it in an app uploaded to Google Play. Intune reads the schema from the app, allows Intune administrators to configure the settings in the schema.
 
-This feature supports: 
+This feature supports:
 
-- Android
-- Android Enterprise
-- iOS
-- Windows Phone 8.1
+- Android Enterprise (OEMConfig)
+
+## PowerShell scripts
+
+[PowerShell scripts on Windows 10 devices](intune-management-extension.md) uses the Intune Management Extension to upload your PowerShell scripts in Intune, and then run these scripts on your devices. Also see what's required to use the extension, how to add them to Intune, and other important information.
+
+
+This feature supports:
+
 - Windows 10 and later
+- Windows Holographic for Business
+
+## Shared multi-user device
+
+[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, to save space, you can create a profile that deletes inactive credentials from Windows HoloLens devices.
+
+These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
+
+This feature supports:
+
+- Windows 10 and later
+- Windows Holographic for Business
+
+## Update policies
+
+[iOS update policies](software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
+
+For update policies on Windows devices, see [Delivery optimization](delivery-optimization-windows.md). 
+
+This feature supports:
+
+- iOS
 
 ## VPN
 
@@ -157,49 +252,6 @@ This feature supports:
 - Windows 8.1 (import only)
 - Windows 10 and later
 
-## eSIM cellular - Public preview
-
-[eSIM cellular profiles](esim-device-configuration.md) lets administrators configure cellular data plans on your managed devices for internet and data access. After getting activation codes from your mobile operator, use Intune to import these activation codes, and then assign to your eSIM capable devices.
-
-This feature supports:
-- Windows 10 Fall Creators Update and later
-
-## Education
-
-[Education settings - Windows 10](education-settings-configure.md) configure options for the [Windows Take a Test app](https://education.microsoft.com/gettrained/win10takeatest). When you configure these options, no other apps can run on the device until the test is complete.
-
-[Education settings - iOS](education-settings-configure-ios-shared.md) uses the iOS Classroom app to guide learning, and control student devices in the classroom. You can configure iPad devices so many students can share a single device.
-
-## Edition upgrade
-
-[Windows 10 edition upgrades](edition-upgrade-configure-windows-10.md) automatically upgrades devices that run some versions of Windows 10 to a newer edition.
-
-This feature supports: 
-- Windows 10 and later
-
-## Update policies
-
-[iOS update policies](software-updates-ios.md) shows you how to create and assign iOS policies to install software updates on your iOS devices. You can also review the installation status.
-
-For update policies on Windows devices, see [Delivery optimization](delivery-optimization-windows.md). 
-
-This feature supports:
-- iOS
-
-## Certificates
-
-[Certificates](certificates-configure.md) configure trusted, SCEP, and PKCS certificates that are assigned to devices. These certificates authenticate WiFi, VPN, and email profiles.
-
-This feature supports: 
-
-- Android
-- Android Enterprise
-- iOS
-- macOS
-- Windows Phone 8.1
-- Windows 8.1
-- Windows 10 and later
-
 ## Windows Information Protection profile
 
 [Windows Information Protection](windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. Using Windows Information Protection doesn't require changes to your environment or other apps.
@@ -208,17 +260,6 @@ This feature supports:
 
 - Windows 10 and later
 
-## Shared multi-user device
-
-[Windows 10](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md) includes settings to manage devices with multiple users, also known as shared devices or shared PCs. When a user signs in to the device, you choose if the user can change the sleep options, or save files on the device. In another example, to save space, you can create a profile that deletes inactive credentials from Windows HoloLens devices.
-
-These shared multi-user device settings allow an administrator to control some of the device features, and manage these shared devices using Intune.
-
-This feature supports:
-
-- Windows 10 and later
-- Windows Holographic for Business
-
 ## Zebra Mobility Extensions (MX)
 
 [Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) allows administrators to use and manage Zebra devices in Intune. You create StageNow profiles with your settings, and then use Intune to assign and deploy these profiles to your Zebra devices. The [StageNow logs and common issues](android-zebra-mx-logs-troubleshoot.md) is a great resource to troubleshoot profiles, and see some potential issues when using StageNow.
@@ -226,26 +267,6 @@ This feature supports:
 This feature supports:
 
 - Android (Mobility Extensions)
-
-## OEMConfig
-
-[OEMConfig](android-oem-configuration-overview.md) is a standard that allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way on Android Enterprise devices. With OEMConfig, an OEM creates a schema that defines OEM-specific management features, and embeds it in an app uploaded to Google Play. Intune reads the schema from the app, allows Intune administrators to configure the settings in the schema.
-
-This feature supports:
-
-- Android Enterprise (OEMConfig)
-
-## Custom profile
-
-[Custom settings](custom-settings-configure.md) let administrators assign device settings that aren't built in to Intune. On Android devices, you can enter OMA-URI values. For iOS devices, you can import a configuration file you created in the Apple Configurator.
-
-This feature supports:
-
-- Android
-- Android Enterprise
-- iOS
-- macOS
-- Windows Phone 8.1
 
 ## Manage and troubleshoot
 
