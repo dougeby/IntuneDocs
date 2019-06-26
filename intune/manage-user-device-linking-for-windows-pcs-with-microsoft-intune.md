@@ -35,6 +35,8 @@ The information in this topic applies only to Windows desktops that you are mana
 
 Before you can deploy software to a user, you must link the user to a PC. You can link a user to multiple PCs, but each PC can be linked to only one user. Users are automatically linked to any PCs that they enroll in Intune by using the company portal.
 
+For more information about a device's primary user, see [Find primary user](find-primary-user.md).
+
 To link a user to a PC:
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to link to a user).

@@ -269,6 +269,8 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Find primary user
+      href: find-primary-user.md
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
@@ -305,6 +307,7 @@
       href: device-features-configure.md
     - name: Restrict device settings and features
       href: device-restrictions-configure.md
+      displayName: Device restrictions
     - name: Deliver updates
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
@@ -326,6 +329,8 @@
       items:
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
+    - name: Extensions on macOS
+      href: kernel-extensions-overview-macos.md
     - name: Education Take a Test app
       href: education-settings-configure.md
     - name: Shared multi-user devices
@@ -750,6 +755,8 @@
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
+        - name: Extensions
+          href: kernel-extensions-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
     - name: Windows 10 and later
