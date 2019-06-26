@@ -31,6 +31,9 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
+> [!NOTE]
+> The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client.
+
 Intune uses policies that help you manage settings on Windows PCs. For example, you can use a policy to control settings for the Windows Firewall on PCs. Many Intune settings are similar to settings that you might configure with Windows Group Policy. However, it is possible that, at times, the two methods might conflict with each another.
 
 When conflicts happen, domain-level Group Policy takes precedence over Intune policy, unless the PC can’t sign in to the domain. In this case, Intune policy is applied to the client PC.

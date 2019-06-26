@@ -63,15 +63,15 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 1. Open Company Portal and sign in with your work or school account. 
 
-    ![Example screenshot of Company Portal app, Sign in.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Example screenshot of Company Portal app, Sign in.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. When prompted to receive Company Portal notifications, tap **Allow.** Company Portal uses notifications to alert you if, for example, your device settings need to be updated. 
 
-    ![Example screenshot of Company Portal home page, "Notifications" prompt.](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Example screenshot of Company Portal home page, "Notifications" prompt.](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. On the **Set up access** screen, select **Begin.**  
 
-     ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Example screenshot of Company Portal, "Set up access" screen.](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Read through the list of device information your organization can and can't see. Then tap **Continue**.  
 
@@ -91,7 +91,7 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
 
 7. iOS 12.2 and later only: When prompted to open Company Portal, tap **Open**. The **Installing Management Profile** screen lists the steps to install the profile.
 
-    ![Example screenshot of Company Portal, Installing Management Profile screen.](./media/ios-1904-settings-icon.PNG)  
+    ![Example screenshot of Company Portal, Installing Management Profile screen.](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Go to the Settings app and tap **Profile Downloaded**.  
 
@@ -103,24 +103,24 @@ Pausing for more than a few minutes during enrollment might cause the app to clo
     
 10. Enter your device password. Then tap **Install**.    
 
-    ![Example screenshot of the Settings app, Installing Profile screen, with a cursor on the **Install** button.](./media/ios-1904-password-install.PNG)  
+    ![Example screenshot of the Settings app, Installing Profile screen, with a cursor on the **Install** button.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. The next screen is a standard system warning for device management. To continue with installation, tap **Install**. If prompted to trust remote management, tap **Trust**.  
 
-    ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Example screenshot of Settings app, standard system warning screen for root certificate and mobile device management.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. After installation is complete, tap **Done**. To verify that the profile was installed, go to the **Profiles & Device Management** settings. You should see the profile listed under **Mobile Device Management**.   
 
-    ![Example screenshot of Settings app, Profiles & Device Management settings, showing the management profile.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Example screenshot of Settings app, Profiles & Device Management settings, showing the management profile.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Return to the Company Portal app. Company Portal will begin to sync and set up your device. Company Portal might prompt you to update additional device settings. If it does, tap **Continue**.  
 
-    ![Example screenshot of Company Portal, "Set up access" screen, with yellow triangle next to setting requirement.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Example screenshot of Company Portal, "Set up access" screen, with yellow triangle next to setting requirement.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. You'll know that setup is complete when all items in the list show a green circle. Tap **Done**.   
     
-    ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Example screenshot of Company Portal, "You're all set!" screen, showing all green circles.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > If your organization monitors voice and data limits, or provides you with a company-owned device, you might have a few more steps to complete. If you're prompted to install the **Datalert** app, see [enrolling your device in telecom expense management](enroll-your-device-with-telecom-expense-management-ios.md). If your organization is part of Apple's Device Enrollment Program, find out [how to enroll your company-owned device](enroll-your-device-dep-ios.md).  
