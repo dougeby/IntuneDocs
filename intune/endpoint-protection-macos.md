@@ -83,10 +83,10 @@ Use the firewall to control connections per-application, rather than per-port. U
 
     **Default**: Not configured  
 
-## FireVault  
+## FileVault  
 
-- **FireVault**  
-  You can *enable* Full Disk Encryption using XTS-AES 128 with FireVault 2 on devices that run macOS 10.13 and later.  
+- **FileVault**  
+  You can *enable* Full Disk Encryption using XTS-AES 128 with FileVault on devices that run macOS 10.13 and later.  
   - **Not configured**  
   - **Enable**  
 
@@ -107,11 +107,11 @@ Use the firewall to control connections per-application, rather than per-port. U
     **Default**: Not configured  
 
   - **Number of times allowed to bypass**  
-    Set the number of times a user can ignore prompts to enable FireVault before FireVault is required for the user to sign in.  
+    Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
 
     - **Not configured** - Encryption on the device is required before the next sign-in is allowed.  
     -  **1** to **10** - Allow a user to ignore the prompt from 1 to 10 times before requiring encryption on the device.  
-    - **No limit, always prompt** - The user is prompted to enable FireVault but encryption is never required.  
+    - **No limit, always prompt** - The user is prompted to enable FileVault but encryption is never required.  
  
     **Default**: Not configured  
 
