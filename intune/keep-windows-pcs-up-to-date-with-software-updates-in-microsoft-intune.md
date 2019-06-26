@@ -31,6 +31,9 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
+> [!NOTE]
+> The information in this topic applies only to Windows desktops that you are managing as PCs by using the Intune software client. If you want to manage updates for Windows PCs enrolled as mobile devices, see [Manage software updates in Intune](windows-update-for-business-configure.md).
+
 Microsoft Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed.
 
 If you have not yet installed the Intune client on your computers, see [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
