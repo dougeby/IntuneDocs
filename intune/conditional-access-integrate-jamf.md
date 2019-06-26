@@ -84,7 +84,7 @@ To connect Intune with Jamf Pro you:
 
 ## Enable Intune to integrate with Jamf Pro
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909), and go to **Microsoft Intune** > **Device Compliance** > **Partner device management**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), and go to **Microsoft Intune** > **Device Compliance** > **Partner device management**.
 
 2. Enable the Compliance Connector for Jamf by pasting the Application ID you saved during the previous procedure into the **Jamf Azure Active Directory App ID** field.
 

@@ -41,7 +41,7 @@ This document discusses both device level passcode reset as well as work profile
 | Android devices on version 6.x or earlier | Yes |
 | Android enterprise devices in kiosk mode | Yes |
 | iOS devices | Yes |
-| Android devices enrolled with a work profile, version 7.0 and earlier | No |
+| Android devices enrolled with a work profile | No |
 | Android devices on version 7.0 or later | No |
 | macOS | No |
 | Windows | No |
