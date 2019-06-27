@@ -85,7 +85,7 @@ The following header files include the APIs, data types, and protocols which the
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
 
-Developers can make the contents of all the above headers available by just importing IntuneMAM.h
+Developers can make the contents of all the previous headers available by just importing IntuneMAM.h
 
 
 ## How the Intune App SDK works
@@ -109,8 +109,8 @@ To enable the Intune App SDK, follow these steps:
     ![Intune App SDK iOS: linked frameworks and libraries](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     Add `-force_load {PATH_TO_LIB}/libIntuneMAM.a` to either of the following, replacing `{PATH_TO_LIB}` with the Intune App SDK location:
-   * The project’s `OTHER_LDFLAGS` build configuration setting
-   * The Xcode UI’s **Other Linker Flags**
+   * The project’s `OTHER_LDFLAGS` build configuration setting.
+   * The Xcode UI’s **Other Linker Flags**.
 
      > [!NOTE]
      > To find `PATH_TO_LIB`, select the file `libIntuneMAM.a` and choose **Get Info** from the **File** menu. Copy and paste the **Where** information (the path) from the **General** section of the **Info** window.
@@ -148,7 +148,7 @@ To enable the Intune App SDK, follow these steps:
 4. Enable keychain sharing (if it isn't already enabled) by choosing **Capabilities** in each project target and enabling the **Keychain Sharing** switch. Keychain sharing is required for you to proceed to the next step.
 
    > [!NOTE]
-   > Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard. For example:
+   > Your provisioning profile needs to support new keychain sharing values. The keychain access groups should support a wildcard character. You can check this by opening the .mobileprovision file in a text editor, searching for **keychain-access-groups**, and ensuring that you have a wildcard character. For example:
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -156,17 +156,17 @@ To enable the Intune App SDK, follow these steps:
    >  </array>
    >  ```
 
-5. After you enable keychain sharing, follow these steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow the steps below:
+5. After you enable keychain sharing, follow the steps to create a separate access group in which the Intune App SDK will store its data. You can create a keychain access group by using the UI or by using the entitlements file. If you are using the UI to create the keychain access group, make sure to follow these steps:
 
-    1. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the **first** group.
+     a. If your mobile app does not have any keychain access groups defined, add the app’s bundle ID as the **first** group.
     
-    2. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
+    b. Add the shared keychain group `com.microsoft.intune.mam` to your existing access groups. The Intune App SDK uses this access group to store data.
     
-    3. Add `com.microsoft.adalcache` to your existing access groups.
+    c. Add `com.microsoft.adalcache` to your existing access groups.
     
         ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
     
-    4. If you are editing the entitlements file directly, rather than using the Xcode UI shown above to create the keychain access groups, prepend the keychain access groups with `$(AppIdentifierPrefix)` (Xcode handles this automatically). For example:
+    d. If you are editing the entitlements file directly, rather than using the Xcode UI shown above to create the keychain access groups, prepend the keychain access groups with `$(AppIdentifierPrefix)` (Xcode handles this automatically). For example:
     
         - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
         - `$(AppIdentifierPrefix)com.microsoft.adalcache`
