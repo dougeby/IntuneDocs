@@ -613,7 +613,7 @@ These settings apply specifically to operating system data drives.
   - **Enable** - Control how BitLocker-protected operating system drives recover when the required start-up information isn't available.  
   - **Not configured** - Default recovery options are supported for BitLocker recovery. By default, a DRA is allowed, the recovery options are chosen by the user, including the recovery password and recovery key, and recovery information isn't backed up to AD DS.  
 
-  When set to *Enable*, you can configure the following setting:  
+  When set to *Enable*, you can configure the following settings:  
 
   - **Certificate-based data recovery agent**  
     **Default**: Not configured  
@@ -642,43 +642,46 @@ These settings apply specifically to operating system data drives.
 
     - **Block** - Users can't see and change the recovery options. When set to 
     - **Not configured** - Users can see and change the recovery options when they turn on BitLocker.
-<!-- Continue here  -->
+ 
   - **Save BitLocker recovery information to Azure Active Directory**  
-    **Default**:  
-    BitLocker CSP: ()  
+    **Default**: Not configured  
 
-    Choose **Enable** to store the BitLocker recovery information to Azure Active Directory (Azure AD). When **Not configured** (default), the recovery information isn't stored in AAD.
-
-  - **BitLocker recovery Information stored to Azure Active Directory**  
-    **Default**:  
-    BitLocker CSP: ()  
-
-    Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from: 
-    - **Backup recovery passwords and key packages**
-    - **Backup recovery passwords only**
+    - **Enable** - Store the BitLocker recovery information to Azure Active Directory (Azure AD). When 
+    - **Not configured** - BitLocker recovery information isn't stored in AAD.
 
   - **BitLocker recovery Information stored to Azure Active Directory**  
-    **Default**:  
-    BitLocker CSP: ()  
+    **Default**:Backup recovery passwords and key packages  
 
-    **Require** this setting to stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD. **Not configured** (default) allows users to turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
+    Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:  
+    - **Backup recovery passwords and key packages**  
+    - **Backup recovery passwords only**  
+
+  - **Store recovery information in Azure Active Directory before enabling BitLocker**  
+    **Default**: Not configured  
+ 
+     Prevent users from enabling BitLocker unless the computer successfully backs up the BitLocker recovery information to Azure Active Directory. Selecting "Require" will ensure the recovery keys are successfully stored in Azure Active Directory before enabling encryption. By selecting "Not configured", a device may become encrypted without recovery information stored in Azure Active Directory.
+
+    - **Require** - Stop users from turning on BitLocker unless the BitLocker recovery information is successfully stored in Azure AD.
+    - **Not configured** - Users can turn on BitLocker, even if recovery information isn't successfully stored in Azure AD.
 
 - **Pre-boot recovery message and URL**  
-  **Default**:  
-  BitLocker CSP: ()  
+  **Default**: Not configured  
+  BitLocker CSP: [SystemDrivesRecoveryMessage](https://go.microsoft.com/fwlink/?linkid=872530)  
 
-  **Enable** this setting to configure the message and URL that are displayed on the pre-boot key recovery screen. **Not configured** (default) disables this feature.  
-
+  - **Enable** - Configure the message and URL that are displayed on the pre-boot key recovery screen.  
+  - **Not configured** - Disable this feature.  
+  
+  When set to *Enable*, you can configure the following setting:
   - **Pre-boot recovery message**  
-    **Default**:  
-    BitLocker CSP: ()  
-
+    **Default**: Use default recovery message and URL 
+ 
     Configure how the pre-boot recovery message displays to users. Choose from:
     - **Use default recovery message and URL**
     - **Use empty recovery message and URL**
     - **Use custom recovery message**
     - **Use custom recovery URL**
 
+<!-- Continue here -->
 ### BitLocker fixed data-drive settings
 
 **Settings**:
