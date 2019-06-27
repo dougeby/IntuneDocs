@@ -83,7 +83,7 @@ To learn more about this feature, see [kernel extensions overview](kernel-extens
 Applies to: macOS 10.13.2 and later
 
 #### Apps from the store only setting for Windows 10 devices includes more configuration options <!-- 2697002 -->
-When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only installs apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In this update, this setting is expanded to support more options. 
+When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only install apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In this update, this setting is expanded to support more options. 
 
 To see the new setting, go to [Windows 10 (and newer) device settings to allow or restrict features](device-restrictions-windows-10.md#app-store).
 
@@ -141,7 +141,7 @@ You can now see the security patch level for Android devices. To do so, choose *
  The patch level is listed in the **Operating System** section.
 
 #### Assign scope tags to all managed devices in a security group <!-- 3173810 -->
-You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more infomration, see [Use RBAC and scope tags for distributed IT](scope-tags.md). (In a future update, the current flow to assign scope tags to devices will be made read only.)
+You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md). (In a future update, the current flow to assign scope tags to devices will be made read only.)
 
 ### Device security
 
@@ -161,7 +161,7 @@ In addition to being a new template, the *MDM Security Baseline for Spring 2019 
 The *MDM Security Baseline for Spring 2019 Update (19H1)* also includes the addition of several new settings, the removal of others, and a revision of the default value of one setting. For a detailed list of the changes from Preview to GA, see **What’s changed in the new template**.
 
 #### Security baseline versioning  <!-- 3194322 -->
-Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions you're profiles use, and when the the latest release of a specific security baseline was  For more information, see **Security Baselines**.
+Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions your profiles use, and when the the latest release of a specific security baseline was.  For more information, see **Security Baselines**.
 
 #### The Use security keys for sign-in setting has moved  <!-- 4501151 -->
 The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information see [Identity protection](identity-protection-windows-settings.md).
@@ -172,7 +172,7 @@ The device configuration setting for identity protection named **Use security ke
 Intune's built-in School Administrator role now has create, read, update, and delete (CRUD) permissions for Managed Apps. This update means that if you're assigned as a group admin in Intune for Education, you can now create, view, update, and delete the iOS MDM Push Certificate, iOS MDM server tokens, and iOS VPP tokens along with [all of the existing permissions you have](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). To take any of these actions, go to **Tenant settings** > **iOS Device Management**.  
 
 #### Applications can use the Graph API to call read operations without user credentials <!-- 4655885 -->
-Applications can call Intune Graph API read operations with app identity without user credentials. For more information about accessing the Microsoft Graph API for Intune, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+Applications can call Intune Graph API read operations with app identity without user credentials. For more information about accessing the Microsoft Graph API for Intune, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
 
 #### Apply scope tags to Microsoft Store for Business apps <!-- 4392555 -->
 You can now apply scope tags to Microsoft Store for Business apps. For more information about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](scope-tags.md).
