@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -207,7 +207,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Apple News (supervised only)**: Choose **Block** to prevent access to the Apple News app on the device. **Not configured** allows using the Apple News app.
 - **iBooks store (supervised only)**: **Block** prevents access to the iBooks store. **Not configured** allows users to browse and buy books from the iBooks store.
-- **Messages app on the device (supervised only)**: Choose **Block** so users can't use the Messages app on the device. **Not configured** allows using the Messages app to send and read text messages.
+- **Messages app on the device (supervised only)**: **Block** prevents users from using the Messages app for iMessage. If the device supports text messaging, the user can still send and receive text messages using SMS. **Not configured** allows using the Messages app to send and read messages over the internet.
 - **Podcasts (supervised only)**: **Block** prevents users using the Podcasts app. **Not configured** allows using the Podcasts app.
 - **Music service (supervised only)**: **Block** reverts the Music app to classic mode and disables the Music service. **Not configured** allows using the Apple Music app.
 - **iTunes Radio service (supervised only)**: **Block** prevents users from using the iTunes Radio app. **Not configured** allows using the iTunes Radio app.
