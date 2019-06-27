@@ -182,7 +182,7 @@ To see if the device is auto-enrolled, you can:
 - The Intune management extension client checks once per hour for any changes in the script or policy in Intune.
 - Confirm the Intune management extension is downloaded to `%ProgramFiles(x86)%\Microsoft Intune Management Extension`.
 - Scripts don't run on Surface Hubs or Windows 10 in S mode.
-- Review the logs for any errors. See [troubleshoot scripts](#troubleshoot-scripts) (in this article).
+- Review the logs for any errors. See [Intune management extension logs](#intune-management-extension-logs) (in this article).
 - For possible permission issues, be sure the properties of the PowerShell script are set to `Run this script using the logged on credentials`. Also check that the signed in user has the appropriate permissions to run the script.
 
 - To isolate scripting problems, do the following steps:
