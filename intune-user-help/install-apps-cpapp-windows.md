@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,7 +52,10 @@ Install apps on your device from the Company Portal app for Windows.
     
     ![The Company Portal app for Windows 10, app details page, "Installed" status showing after app is installed. Install button changes to read Reinstall.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
- Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
+> [!IMPORTANT]
+> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.   
+
+Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
 
 ## Share apps  
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
@@ -89,10 +92,7 @@ View a list of all apps installed on your device. The **Installed apps** page li
 * Assignment type: How the app is assigned and made available to you. 
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
-* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
-
-> [!IMPORTANT]
-> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.  
+* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed. Required apps could take up to 10 minutes to show an up-to-date status. See the note under [Install apps](#install-apps) for important details about installing a required app. 
 
 To get to this page, go to the navigation menu and select **Installed apps**. 
 
