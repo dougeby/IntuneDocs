@@ -72,7 +72,7 @@ This page lists the following details about each app:
 * Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.
 
 > [!IMPORTANT]
-> If a required app fails to install and your organizations has made it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.  
+> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.  
 
 ### Search and refine  
 
