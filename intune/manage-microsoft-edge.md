@@ -35,7 +35,7 @@ Using Intune app protection policies with Microsoft Edge helps ensure that corpo
 -	**Dual-Identity.** Users can add a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins can set the desired policies for a protected browsing experience within the work account.
 -	**Intune app protection policy integration.** Because Microsoft Edge is integrated with the Intune SDK, you can target app protection policies to protect against data loss. These capabilities include controlling cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
 -	**Azure Application Proxy integration.** You can control access to software as a service (SaaS) apps and web apps. This helps ensure that browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the internet.
--	**Application configuration.** You can use application configuration settings to strengthen your organization's security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed or blocked sites, and Azure Application Proxy.
+-	**Application configuration.** You can use application configuration settings to strengthen your organization's security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed or blocked sites, and Azure Active Directory (Azure AD) Application Proxy.
 
 Microsoft Intune protection policies for Microsoft Edge help to protect your organization’s data and resources. Using these policies with Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
 
@@ -59,7 +59,7 @@ If Microsoft Edge is not targeted with Intune policy, users can't use it to acce
 
 ## Conditional Access for Microsoft Edge
 
-You can use Azure Active Directory (Azure AD) Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This restricts mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge. This blocks access from any other unprotected browsers, such as Safari or Chrome. You can apply Conditional Access to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
+You can use Azure AD Conditional Access to redirect your users to access corporate content only through Microsoft Edge. This restricts mobile browser access to Azure AD-connected web apps to policy-protected Microsoft Edge. This blocks access from any other unprotected browsers, such as Safari or Chrome. You can apply Conditional Access to Azure resources like Exchange Online and SharePoint Online, the Microsoft 365 admin center, and even on-premises sites that you have exposed to external users via the [Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started).
 
 To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -199,22 +199,22 @@ By default, your users are shown the MyApps sites that are configured to them wi
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **True** shows MyApps within the Microsoft Edge bookmarks.<p>**False** hides MyApps within Microsoft Edge.    |
 
 ## Specify allowed or blocked sites list for Microsoft Edge
-You can use app configuration to define which sites your users can access when using their work profile. If you use an allow list, your users will only be able to access the sites you’ve explicitly listed. If you use a blocked list, your users will be able to access all sites except for the sites you’ve explicitly blocked. You should only impose either an allowed or block list, not both. If both are targeted to the device, the allowed list will be honored.  
+You can use app configuration to define which sites your users can access when using their work profile. If you use an allow list, your users are only able to access the sites you’ve explicitly listed. If you use a blocked list, your users can access all sites except for those you’ve explicitly blocked. You should only impose either an allowed or a blocked list, not both. If you impose both, the allowed list is honored.  
 
-You can use the below key/value pairs to configure either an allowed or blocked site list for Microsoft Edge. Continue reading for more info about valid URL formats. 
+Use the following key/value pairs to configure either an allowed or blocked site list for Microsoft Edge. 
 
 |    Key    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Choose from:<p>1. Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Specify blocked URLs (all other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe `|` character.<p>**Examples:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Choose from:<p><li> Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p><li> Specify blocked URLs (all other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe `|` character.<p>**Examples:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### URL formats for allowed and blocked site list 
-You can use various URL formats to build your allowed/blocked sites lists. These permitted patterns are detailed in the table below. Some notes before you get started: 
+You can use various URL formats to build your allowed/blocked sites lists. These permitted patterns are detailed in the following table. Some notes before you get started: 
 - Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
 - You can use the wildcard symbol (*) according to the rules in the following permitted patterns list.
-- You can specify port numbers in the address. If you do not specify a port number, the values used are:
+- You can specify port numbers in the address. If you don't specify a port number, the values used are:
     - Port 80 for http
     - Port 443 for https
-- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported.
+- Using wildcards for the port number isn't supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` aren't supported.
 
     |    URL    |    Details    |    Matches    |    Does not match    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -223,11 +223,11 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     |    `http://www.contoso.com/&#42;`   |    Matches all URLs that begin with `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
     |    `http://*.contoso.com/*`    |    Matches all subdomains under `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |
     |    `http://www.contoso.com/images`    |    Matches a single folder    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
-    |    `http://www.contoso.com:80`    |    Matches a single page, by using a port   number    |    http://www.contoso.com:80    |         |
+    |    `http://www.contoso.com:80`    |    Matches a single page, by using a port   number    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Matches a single, secure page    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
     |    `http://www.contoso.com/images/*`    |    Matches a single folder and all subfolders    |    `www.contoso.com/images/dogs`<br>`www.contoso.com/images/cats`    |    `www.contoso.com/videos`    |
   
-- The following are examples of some of the inputs that you cannot specify:
+- The following are examples of some of the inputs that you can't specify:
     - `*.com`
     - `*.contoso/*`
     - `www.contoso.com/*images`
@@ -239,42 +239,42 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
-## Defining behavior when users try to access a blocked site
+## Define behavior when users try to access a blocked site
 
-With the dual-identity model built into Microsoft Edge, you can enable a more flexible experience for your end users that was not possible with the Intune Managed Browser. When users hit a blocked site in Microsoft Edge, they can be prompted to open the link in their personal context instead of their work context, which enables them to stay protected, while keeping corporate resources safe. For example, if a user is sent a link to a news article through their Outlook, they will be able to open the link in their personal context or in an InPrivate tab instead of their work context, which does not allow news websites. By default, these transitions are allowed.
+With the dual-identity model built into Microsoft Edge, you can enable a more flexible experience for your end users than was possible with the Intune Managed Browser. When users hit a blocked site in Microsoft Edge, you can prompt them to open the link in their personal context instead of their work context. This enables them to stay protected, while keeping corporate resources safe. For example, if a user is sent a link to a news article through Outlook, they can open the link in their personal context or in an InPrivate tab. Their work context doesn't allow news websites. By default, these transitions are allowed.
 
-Use the below key/value pair to configure if these soft transitions are allowed:
+Use the following key/value pair to configure whether these soft transitions are allowed:
 
 |    Key    |    Value    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** allows Microsoft Edge to transition users to their   personal context to open blocked sites<p>**Block** prevents Microsoft Edge from transitioning users,   and users will simply be shown a message stating the site they are trying to   access is blocked.    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** allows Microsoft Edge to transition users to their   personal context to open blocked sites.<p>**Block** prevents Microsoft Edge from transitioning users. Users are simply shown a message stating that the site they are trying to   access is blocked.    |
 
-## Directing users to Microsoft Edge instead of the Intune Managed Browser 
+## Direct users to Microsoft Edge instead of the Intune Managed Browser 
 
-Both the Intune Managed Browser and Microsoft Edge are now can be used as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (e.g. Outlook and OneDrive) with the following configuration setting:
+You can use either the Intune Managed Browser or Microsoft Edge as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (for example, Outlook and OneDrive) with the following configuration setting:
 
 |    Key    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    The value `true` will direct your users to use Microsoft Edge.<p>The value `false` will direct your users to use the Intune Managed Browser.    |
+|    `com.microsoft.intune.useEdge`    |    The value `true` directs your users to use Microsoft Edge.<p>The value `false` directs your users to use the Intune Managed Browser.    |
 
-If this app configuration value is not set, the following logic will define which browser will be used to open corporate links.
+If this app configuration value isn't set, the following logic defines which browser will be used to open corporate links.
 
 On Android:
-- The Intune Managed Browser will launch if a user has both the Intune Managed Browser and Microsoft Edge downloaded on their device. 
-- Microsoft Edge will open if only Microsoft Edge is downloaded on the device and is targeted with Intune policy.
-- Managed Browser will open if only Managed Browser is on the device and is targeted with Intune policy.
+- The Intune Managed Browser launches if a user has both the Intune Managed Browser and Microsoft Edge downloaded on their device. 
+- Microsoft Edge launches if only Microsoft Edge is downloaded on the device, and is targeted with Intune policy.
+- Managed Browser launches if only Managed Browser is on the device, and is targeted with Intune policy.
 
 On iOS, for apps that have integrated the Intune SDK for iOS v. 9.0.9+:
-- The Intune Managed Browser will launch if both the Managed Browser and Microsoft Edge are on the device.  
-- Microsoft Edge will launch if only Microsoft Edge is on the device and is targeted with Intune policy.
-- Managed Browser if only Managed Browser is on the device and is targeted with Intune policy.
+- The Intune Managed Browser launches if both the Managed Browser and Microsoft Edge are on the device.  
+- Microsoft Edge launches if only Microsoft Edge is on the device, and is targeted with Intune policy.
+- Managed Browser launches if only Managed Browser is on the device, and is targeted with Intune policy.
 
-## Using Microsoft Edge on iOS to access managed app logs 
+## Use Microsoft Edge on iOS to access managed app logs 
 
-End users with Microsoft Edge installed on their iOS device can view the management status of all Microsoft published apps. They can send logs for troubleshooting their managed iOS apps.
+Users with Microsoft Edge installed on their iOS device can view the management status of all Microsoft published apps. They can send logs for troubleshooting their managed iOS apps. Here's how:
 1. Open Microsoft Edge on your iOS device.
 2. Type `about:intunehelp` in the address box. 
-3. Troubleshooting mode will be launched from within Microsoft Edge.
+3. Microsoft Edge launches troubleshooting mode.
 
 For a list of the settings stored in the app logs, see [Review app protection logs in the Managed Browser](app-protection-policy-settings-log.md).
 
@@ -282,14 +282,13 @@ To see how to view logs on Android devices, see [Send logs to your IT admin by e
 
 ## Security and privacy for Microsoft Edge
 
-Additional security and privacy considerations for Microsoft Edge:
+The following are additional security and privacy considerations for Microsoft Edge:
 
-- Microsoft Edge does not consume settings that users set for the native browser on their devices, because Microsoft Edge cannot access to these settings.
-- If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with Microsoft Edge, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
-- Microsoft Edge can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
-- To allow authentication, and access to Intune documentation, ***.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
-Turn off usage data
-Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data. On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
+- Microsoft Edge doesn't consume settings that users set for the native browser on their devices, because Microsoft Edge can't access these settings.
+- You can configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with Microsoft Edge. If a user selects the help link on the authentication page, they can browse any internet sites, regardless of whether they were added to a blocked list in the policy.
+- Microsoft Edge can block access to sites only when they are accessed directly. It doesn't block access when users use intermediate services (such as a translation service) to access the site.
+- To allow authentication, and access to Intune documentation, ***.microsoft.com** is exempt from the allow or block list settings. It's always allowed.
+- Users can turn off data collection. Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data. On iOS devices, websites that users visit that have an expired or untrusted certificate can't be opened.
 
 ## Next steps
 
