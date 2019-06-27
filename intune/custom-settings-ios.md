@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Use custom settings for iOS devices in Microsoft Intune
 
-Using Microsoft Intune, you can add or create custom settings for your iOS devices using "custom profiles". Custom profiles are a feature in Intune. They' re designed to add device settings and features that aren't built in to Intune.
+Using Microsoft Intune, you can add or create custom settings for your iOS devices using "custom profiles". Custom profiles are a feature in Intune. They're designed to add device settings and features that aren't built in to Intune.
 
 When using iOS devices, there are two ways to get custom settings into Intune:
 
