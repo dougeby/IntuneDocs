@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -199,7 +199,7 @@ This feature supports supervised devices running iOS 9.3 and later.
   Device tokens can also be used to add device-specific information to these fields. For example, to show the serial number, enter `Serial Number: {{serialnumber}}`. On the lock screen, the text shows similar to `Serial Number 123456789ABC`. When entering variables, be sure to use curly brackets `{{ }}`. [App configuration tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includes a list of variables that can be used. You can also use `deviceName` or any other device-specific value.
 
   > [!NOTE]
-  > Variables aren't validated in the UI. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{Devicename}}` instead of `{{devicename}}`, then the literal string is shown instead of the device’s unique name.
+  > Variables aren't validated in the UI, and are case sensitive. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{DeviceID}}` instead of `{{deviceid}}`, then the literal string is shown instead of the device’s unique ID. Be sure to enter the correct information.
 
 Select **OK** to save your changes.
 
