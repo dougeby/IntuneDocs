@@ -91,6 +91,9 @@ View a list of all apps installed on your device. The **Installed apps** page li
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
 * Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
 
+> [!IMPORTANT]
+> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.  
+
 To get to this page, go to the navigation menu and select **Installed apps**. 
 
   ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-CP-1906.png)  

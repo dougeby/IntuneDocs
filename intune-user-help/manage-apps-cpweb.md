@@ -69,10 +69,7 @@ This page lists the following details about each app:
 * Assignment type: How the app is assigned and made available to you. See Available and required apps for more details. Your organization can either make an app available for you to install yourself, or they can require and install an app on your device automatically.  
 * Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
 * Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
-* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.
-
-> [!IMPORTANT]
-> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.  
+* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed.  
 
 ### Search and refine  
 
