@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 06/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 Using Microsoft Intune, you can add or create custom settings for your Windows Phone 8.1 devices using "custom profiles". Custom profiles are a feature in Intune. They're designed to add device settings and features that aren't built in to Intune.
 
-Windows Phone 8.1 custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features. These settings are typically used by mobile device manufacturers to control features on the device.
+Windows Phone 8.1 custom profiles use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure different features. These settings are typically used by mobile device manufacturers to control features on the device. [Windows Phone 8.1 MDM protocol documentation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-phone/dn499787(v=technet.10)) lists the settings.
 
 This article shows you how to create a custom profile for Windows Phone 8.1 devices. 
 
@@ -66,6 +66,16 @@ This article shows you how to create a custom profile for Windows Phone 8.1 devi
 
 5. Select **OK** to save your changes. Continue to add more settings as needed.
 6. When finished, choose **OK** > **Create** to create the Intune profile. When complete, your profile is shown in the **Device configuration - Profiles** list.
+
+## Example
+
+In the following example, Windows 8.1 phone devices are prevented from changing cellular networks when travelling outside the carrier coverage area.
+
+- **Name**: Allow Cellular Data Roaming
+- **Description**: Allow or disallow cellular data roaming
+- **OMA-URI** (case sensitive): ./Vendor/MSFT/PolicyManager/My/Connectivity/AllowCellularDataRoaming
+- **Data type**: Integer
+- **Value**: 0
 
 ## Next steps
 
