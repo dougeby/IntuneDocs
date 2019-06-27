@@ -96,7 +96,7 @@ View a list of all apps installed on your device. The **Installed apps** page li
 
 To get to this page, go to the navigation menu and select **Installed apps**. 
 
-  ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-CP-1906.png)  
+  ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-cp-1906.png)  
 
 
 Use **Sort by** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter by** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
