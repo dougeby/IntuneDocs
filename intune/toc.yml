@@ -198,7 +198,7 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
-      - name: Enrollment status page
+      - name: Enrollment Status Page
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
