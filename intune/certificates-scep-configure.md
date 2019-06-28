@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/24/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -510,7 +510,8 @@ Consider the following before you assign certificate profiles to groups:
 - Although you assign each profile separately, you also need to assign the Trusted Root CA and the SCEP or PKCS profile. Otherwise, the SCEP or PKCS certificate policy fails.
 
     > [!NOTE]
-    > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
+    > On iOS devices, when a SCEP certificate profile is associated with an additional profile, like a Wi-Fi or VPN profile, the device receives a certificate for each of those additional profiles. This results in the iOS device having multiple certificates delivered by the SCEP certificate request.  
+
 - If you use co-management for Intune and Configuration Manager, in Configuration Manager s[et the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for *Resource Access Policy* to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.  
 
 For information about how to assign profiles, see [assign device profiles](device-profile-assign.md).
