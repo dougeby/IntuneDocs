@@ -31,11 +31,11 @@ ms.collection: M365-identity-device-management
 
 
  
-# Set up an enrollment status page
+# Set up an Enrollment Status Page
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-The Enrollment Status Page (ESP) displays installation information about Windows 10 devices (version 1803 and onwards) during initial device enrollment, for example, Autopilot and also when a user uses a managed device for the first time that has the EEnrollment Status Page policy already applied.  The Enrollment Status Page can help users understand the status of their device during device setup. You can create multiple enrollment status page profiles and apply them to different groups that contain users. Profiles can be set to:
+The Enrollment Status Page (ESP) displays installation information about Windows 10 devices (version 1803 and later) during initial device enrollment. For example, when using [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/) or any time a managed device is started for the first time after an Enrollment Status Page policy has been applied.  The Enrollment Status Page can help users understand the status of their device during device setup. You can create multiple Enrollment Status Page profiles and apply them to different groups that contain users. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
@@ -133,7 +133,7 @@ For account setup, the Enrollment Status Page tracks the following items if they
     - LoB store apps, online store apps, and offline store apps that are assigned to any of the following:
         - All Devices
         - All Users
-        - a user group in which the user enrolling the device is a member with installation context set to User.
+        - A user group in which the user enrolling the device is a member with installation context set to User.
     - Win32 applications (Windows 10 version 1903 and newer only) 
 - Connectivity profiles
     - VPN or Wi-Fi profiles that are assigned to All Users or a user group in which the user enrolling the device is a member.
@@ -158,17 +158,17 @@ Top questions for troubleshooting.
          Data type:  Boolean
          Value:  True 
 
-- How to collect log files?
+- How can I collect log files?
   - There are two ways Enrollment Status Page log files can be collected.  The first method, enable the ability for users to collect logs in the ESP policy, when a timeout occurs in the ESP the end user can choose option to "Collect logs", by inserting a USB drive the log files can be copied to the drive. The second method, open a command prompt by entering Shift-F10 key sequence, then enter the following commandline to generate the log files: 
        mdmdiagnosticstool.exe -area Autopilot -cab <pathToOutputCabFile>.cab 
     
 ### Known issues
 Below are known issues. 
 - Disabling the ESP profile does not remove ESP policy from devices and users still get ESP when they login to device for first time. ESP policy is not removed when the ESP profile is disabled, you must deploy OMA-URI to disable the ESP, see above for instructions on how to disable ESP using OMA-URI. 
-- A pending reboot will always cause a timeout. Cause of timeout is because the device needs to be rebooted in order to complete the item tracked in Enrollment status page such as an application. A reboot will cause the enrollment status page to exit and after reboot the device will not enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
-- A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserved during reboot. Have the user enter their credentials then the Enrollment status page can continue. 
+- A pending reboot will always cause a timeout. Cause of timeout is because the device needs to be rebooted in order to complete the item tracked in Enrollment Status Page such as an application. A reboot will cause the Enrollment Status Page to exit and after reboot the device will not enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
+- A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserved during reboot. Have the user enter their credentials then the Enrollment Status Page can continue. 
 - SCEP certificates with Windows Hello for Business policies will cause timeout because user cannot complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. Fix ETA is Summer 2019. 
-- Enrollment status page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. Cause is due to Enrollment status page waiting on Azure AD registration to complete, the issue is fixed in Windows 10 version 1903 and newer.  
+- Enrollment Status Page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. Cause is due to Enrollment Status Page waiting on Azure AD registration to complete, the issue is fixed in Windows 10 version 1903 and newer.  
 - Hybrid Azure AD Autopilot deployment with ESP takes longer than the timeout duration defined in the ESP profile. On Hybrid Azure AD Autopilot deployments the ESP will take 40 minutes longer than the value set in the ESP profile to allow for on-prem AD connector to create the new device record to Azure AD. 
 - Windows logon page is not pre-populate with username in Autopilot User Driven Mode.If there is a reboot during Device Setup phase of ESP the user credentials are not preserved and they will need to enter them before transitioning from Device Setup phase of ESP to the Account setup phase.  
 - ESP is stuck for a very long time or never completes “Identifying” phase. The identifying phase is when Intune is computing the ESP policies, a device may never complete computing ESP policies if the current user does not have an Intune licensed assigned.  
