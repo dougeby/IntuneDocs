@@ -103,7 +103,7 @@ If your application is already configured to use ADAL or MSAL, and has its own c
 A complete overview for integrating the Intune App SDK can be found in the [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md). As you read through the guide and integrate the Intune App SDK with your Xamarin app the following sections are intended to highlight differences between the implementation for a native Android app developed in Java and a Xamarin app developed in C#. These sections should be treated as supplemental and cannot act as a substitute for reading the guide in its entirety.
 
 #### Remapper
-Beginning with the 1.4428.1 release, the `Microsoft.Intune.MAM.Remapper` package can be added to a Xamarin.Android application as [build tooling]((app-sdk-android.md#build-tooling)) to perform the MAM class, method, and systems services replacements. If the Remapper is included, the MAM equivalent replacement portions of the Renamed Methods and MAM Application sections will be automatically performed when the application is built.
+Beginning with the 1.4428.1 release, the `Microsoft.Intune.MAM.Remapper` package can be added to a Xamarin.Android application as [build tooling](app-sdk-android.md#build-tooling) to perform the MAM class, method, and systems services replacements. If the Remapper is included, the MAM equivalent replacement portions of the Renamed Methods and MAM Application sections will be automatically performed when the application is built.
 
 To exclude a class from MAM-ification by the Remapper the following property can be added in your projects `.csproj` file.
 ```xml
