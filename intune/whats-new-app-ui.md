@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -47,7 +47,8 @@ A new **Installed Apps** page lists all managed apps (both required and availabl
 ![Screenshot of Company Portal website, Installed Apps page.](/intune-user-help/media/intune-installed-apps-1907.png)   
 
 **Company Portal website**  
-![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-CP-1906.png)  
+
+![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-cp-1906.png)  
 
 ## Week of June 17, 2019  
 
