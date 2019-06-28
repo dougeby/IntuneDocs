@@ -71,7 +71,10 @@ The **All apps** page now includes labeling to identify Microsoft Store for Busi
 Users can now access the Company Portal app on shared devices. End users will see a **Shared** label on the device tile. This applies to Company Portal app version 10.3.45609.0 and later.
 
 #### View all installed apps from new Company Portal web page <!-- 4224326 -->
-The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's device. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
+The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
+
+#### New view lets app users see all managed apps installed on device <!-- 2352913 -->  
+The Company Portal app for Windows now lists all managed apps (both required and available) that are installed on a user's device. Users can also see attempted and pending app installations, and their current statuses. If you haven't made apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the Company Portal navigation pane and select **Apps** > **Installed Apps**.    
 
 ### Device configuration
 
