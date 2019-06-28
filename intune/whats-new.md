@@ -116,7 +116,7 @@ Face ID is available in iOS 11.0 and later. To see the settings, go to [iOS devi
 
 Applies to: iOS
 
-#### The Apps feature is dependent on ratings region when restricting gaming and app store features on iOS devices <!-- 4593948 -->
+#### Restricting gaming and app store features on iOS devices is now dependent on ratings region <!-- 4593948 -->
 On iOS devices, you can allow or restrict features related to gaming, the app store, and viewing documents (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**). You can also choose the Ratings region, such as the United States. 
 
 In this update, the **Apps** feature is moved to be a child to **Ratings region**, and is dependent on **Ratings region**. To see the settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
