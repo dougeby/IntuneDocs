@@ -299,7 +299,8 @@ The following settings are each listed in this article a single time, but all ap
   - **Block** -  The connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.  
   - **Allow** - Apply connection security rules from the local store, regardless of schema or connection security rule versions.  
 
-### Firewall rules (preview)  
+### Custom firewall rules  
+***Custom firewall rules are in Public Preview.***  
 
 You can **Add** one or more custom Firewall rules. For more information, see [Add custom firewall rules for Windows 10 devices](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices).  
 
