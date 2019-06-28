@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -205,7 +205,7 @@ Assign SCEP certificate profiles the same way you [deploy device profiles](devic
 
 
 > [!NOTE]
-> For iOS, expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
+> On iOS devices, when a SCEP certificate profile is associated with an additional profile, like a Wi-Fi or VPN profile, the device receives a certificate for each of those additional profiles. This results in the iOS device having multiple certificates delivered by the SCEP certificate request.  
 
 ## Next steps  
 
