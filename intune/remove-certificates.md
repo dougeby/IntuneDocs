@@ -8,7 +8,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -29,15 +29,20 @@ ms.reviewer: lacranda
 
 # Remove SCEP and PKCS certificates in Microsoft Intune
 
-In Microsoft Intune, you can add Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) certificates to devices. These certificates can also be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. 
+In Microsoft Intune, you can use Simple Certificate Enrollment Protocol (SCEP) and Public Key Cryptography Standards (PKCS) profiles to add certificates to devices.
 
-There are some other scenarios where certificates are automatically removed, and some scenarios where certificates stay on the device. This article lists some common scenarios, and the impact on PKCS and SCEP certificates.
+These certificates can be removed when you [wipe](devices-wipe.md#wipe) or [retire](devices-wipe.md#retire) the device. There are also scenarios where certificates are automatically removed, and scenarios where certificates stay on the device. This article lists several common scenarios, and the impact on certificates provisioned through SCEP or PKCS.
 
 > [!NOTE]
 > To remove and revoke certificates for a user who's being removed from on-premises Active Directory or Azure Active Directory (Azure AD), follow these steps in order:
 >
 > 1. Wipe or retire the user's device.
 > 2. Remove the user from on-premises Active Directory or Azure AD.
+
+## Manually deleted certificates  
+Manual deletion of a certificate is a scenario that applies across platforms and certificates provisioned by SCEP or PKCS certificate profiles. For example, a user might delete a certificate from a device, when the device remains targeted by a certificate policy.  
+
+In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.  
 
 ## Windows devices
 
@@ -205,5 +210,5 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 
 #### PKCS certificates
 
-PKCS certificates are not supported on macOS.
+PKCS certificates aren't supported on macOS.
 
