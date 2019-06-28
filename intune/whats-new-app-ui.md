@@ -40,19 +40,14 @@ If you're an employee or student, be sure to check out the screenshots and links
 ## Week of June 24, 2019  
 
 ### View all installed apps from new Company Portal web page <!-- 4224326 -->
-The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
+The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.   
+
+![Screenshot of Company Portal website, Installed Apps page.](/intune-user-help/media/intune-installed-apps-1907.png)     
 
 ### New view lets app users see all managed apps installed on device <!-- 2352913 -->
 The Company Portal app for Windows now lists all managed apps (both required and available) that are installed on a user's device. Users can also see attempted and pending app installations, and their current statuses. If you haven't made apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the Company Portal navigation pane and select **Apps** > **Installed Apps**.   
 
 ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-cp-1906.png)  
-
-
-#### View all installed apps from new Company Portal web page <!-- 4224326 -->
-The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
-  
-![Screenshot of Company Portal website, Installed Apps page.](/intune-user-help/media/intune-installed-apps-1907.png)   
-
 
 
 ## Week of June 17, 2019  
