@@ -51,7 +51,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
   **Default**: Not configured  
    Application Guard CSP: [Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
-  - **Enabled for Edge** - Turns on tis feature, which opens untrusted sites in a Hyper-V virtualized browsing container.  
+  - **Enabled for Edge** - Turns on this feature, which opens untrusted sites in a Hyper-V virtualized browsing container.  
   - **Not configured** - Any site (trusted and untrusted) can open on the device.  
 
 - **Clipboard behavior**  
@@ -253,7 +253,7 @@ The following settings are each listed in this article a single time, but all ap
   Configure the default action firewall performs on outbound connections. This setting will get applied to Windows version 1809 and above.  
 
   - **Not configured**  
-  - **Block** - The default firewall action isn't run on outbound traffic unless its explicitly specified not to block.  
+  - **Block** - The default firewall action isn't run on outbound traffic unless it's explicitly specified not to block.  
   - **Allow** - Default firewall actions run on outbound connections.  
 
 - **Default action for inbound connections**  
@@ -546,7 +546,7 @@ These settings apply specifically to operating system data drives.
   - **Compatible TPM startup**  
     **Default**: Allow TPM  
 
-    Configure if TPM is allowed, required or not allowed.  
+    Configure if TPM is allowed, required, or not allowed.  
 
     - **Allow TPM**  
     - **Do not allow TPM**  
@@ -637,7 +637,7 @@ These settings apply specifically to operating system data drives.
     - **Not configured** - BitLocker recovery information isn't stored in AAD.  
 
   - **BitLocker recovery Information stored to Azure Active Directory**  
-    **Default**:Backup recovery passwords and key packages  
+    **Default**: Backup recovery passwords and key packages  
 
     Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:  
     - **Backup recovery passwords and key packages**  
@@ -655,7 +655,7 @@ These settings apply specifically to operating system data drives.
   **Default**: Not configured  
   BitLocker CSP: [SystemDrivesRecoveryMessage](https://go.microsoft.com/fwlink/?linkid=872530)  
 
-  - **Enable** - Configure the message and URL that are displayed on the pre-boot key recovery screen.  
+  - **Enable** - Configure the message and URL that display on the pre-boot key recovery screen.  
   - **Not configured** - Disable this feature.  
   
   When set to *Enable*, you can configure the following setting:  
@@ -723,7 +723,7 @@ These settings apply specifically to fixed data drives.
     - **Not configured** - BitLocker recovery information isn't stored in AAD.
 
   - **BitLocker recovery Information stored to Azure Active Directory**  
-    **Default**:Backup recovery passwords and key packages  
+    **Default**: Backup recovery passwords and key packages  
 
     Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:  
     - **Backup recovery passwords and key packages**  
@@ -780,7 +780,7 @@ For information about the *Attack Surface Reduction* rules, see [Reduce attack s
   Exploit Guard: [Attack surface reduction rules](https://go.microsoft.com/fwlink/?linkid=853979)  
 
   - **Not configured**  
-  - **Enable** - Block child process that are created from Adobe Reader.  
+  - **Enable** - Block child processes that are created from Adobe Reader.  
   - **Audit only**  
 
 #### Rules to prevent Office Macro threats  
@@ -881,7 +881,7 @@ Block the following to help prevent email threats:
   [Exploit Guard documentation](https://go.microsoft.com/fwlink/?linkid=872980)  
 
   - **Not configured**  
-  - **Block** - Block execution of executable content (exe, dll, ps, js, vbs, etc) dropped from email (webmail/mail-client).  
+  - **Block** - Block execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail-client).  
   - **Audit only**  
 
 #### Rules to protect against ransomware  
@@ -899,7 +899,7 @@ Block the following to help prevent email threats:
 - **Files and folder to exclude from attack surface reduction rules**  
   Defender CSP: [AttackSurfaceReductionOnlyExclusions](https://go.microsoft.com/fwlink/?linkid=872981)  
 
-  - **Import** a. .csv file that contains files and folders to exclude from attack surface reduction rules.  
+  - **Import** a .csv file that contains files and folders to exclude from attack surface reduction rules.  
   - **Add** local files or folders manually.  
 
 > [!IMPORTANT]  
@@ -961,7 +961,7 @@ Block outbound connections from any app to IP addresses or domains with low repu
 - **Upload XML**  
   **Default**: *Not configured*  
 
-  To use exploit protection to [protect devices from exploits](https://go.microsoft.com/fwlink/?linkid=853982 ), create an XML file that includes the system and application mitigation settings you want. There are two methods to create teh XML file:  
+  To use exploit protection to [protect devices from exploits](https://go.microsoft.com/fwlink/?linkid=853982 ), create an XML file that includes the system and application mitigation settings you want. There are two methods to create the XML file:  
 
   - *PowerShell* - Use one or more of the *Get-ProcessMitigation*, *Set-ProcessMitigation*, and *ConvertTo-ProcessMitigationPolicy* PowerShell cmdlets. The cmdlets configure mitigation settings, and export an XML representation of them.  
 
@@ -970,6 +970,7 @@ Block outbound connections from any app to IP addresses or domains with low repu
 - **User editing of the exploit protection interface**  
   **Default**: Not configured  
   ExploitGuard CSP: [ExploitProtectionSettings](https://go.microsoft.com/fwlink/?linkid=872887)  
+
 
   - **Block** -  Upload an XML file that allows you to configure memory, control flow, and policy restrictions. The settings in the XML file can be used to block an application from exploits.  
   - **Not configured** - No custom configuration is used.  
@@ -980,7 +981,7 @@ Choose additional apps that either need to be audited by, or can be trusted to r
 
 
 - **Application control code integrity policies**  
-  **Defualt**: Not configured  
+  **Default**: Not configured  
    CSP: [AppLocker CSP](https://go.microsoft.com/fwlink/?linkid=874543)  
 
   - **Enforce** - Choose the application control code integrity policies for your users' devices.  
@@ -995,7 +996,7 @@ Choose additional apps that either need to be audited by, or can be trusted to r
 Windows Defender Credential Guard protects against credential theft attacks. It isolates secrets so that only privileged system software can access them.  
 
 - **Credential Guard**  
-  **Defualt**: Disable  
+  **Default**: Disable  
   [DeviceGuard CSP](https://go.microsoft.com/fwlink/?linkid=872424)  
 
   - **Disable** - Turn off Credential Guard remotely, if it was previously turned on with the **Enabled without UEFI lock** option.​  
@@ -1008,8 +1009,11 @@ Windows Defender Credential Guard protects against credential theft attacks. It 
   - **Enable without UEFI lock** - Allows Credential Guard to be disabled remotely by using Group Policy. The devices that use this setting must be running Windows 10 version 1511 and newer.​  
 
   When you *enable* Credential Guard, the following required features are also enabled:  
-  - **Virtualization-based Security** (VBS): Turns on during the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
-  - **Secure Boot with Directory Memory Access**: Turns on VBS with Secure Boot and direct memory access (DMA) protections. DMA protections require hardware support, and are only enabled on correctly configured devices.  
+  
+  - **Virtualization-based Security** (VBS)  
+    Turns on during the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
+  - **Secure Boot with Directory Memory Access**  
+    Turns on VBS with Secure Boot and direct memory access (DMA) protections. DMA protections require hardware support, and are only enabled on correctly configured devices.  
 
 ## Windows Defender Security Center  
 
@@ -1086,7 +1090,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
   **Default**: Not configured  
   WindowsDefenderSecurityCenter CSP: [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  Configure if end users can view the Family options area in the Windows Defender Security center. Hiding this section will also block all notifications related Family options.  
+  Configure if end users can view the Family options area in the Windows Defender Security center. Hiding this section will also block all notifications-related to Family options.  
   
   - **Not configured**  
   - **Hide**  
@@ -1171,12 +1175,14 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [Accounts_BlockMicrosoftAccounts](https://go.microsoft.com/fwlink/?linkid=867916)  
 
+
   - **Block** Prevent users from adding new Microsoft accounts to the device.  
   - **Not configured** - Users can use Microsoft accounts on the device.  
 
 - **Remote log on without password**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867890)  
+
 
    - **Block** - Allow only local accounts with blank passwords to sign in using the device's keyboard.  
    - **Not configured** - Allow local accounts with blank passwords to sign in from locations other than the physical device.  
@@ -1187,12 +1193,14 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [Accounts_LimitLocalAccountUseOfBlankPasswordsToConsoleLogonOnly](https://go.microsoft.com/fwlink/?linkid=867850)  
 
+
   - **Block** Prevent use of a local admin account.  
   - **Not configured**  
 
 - **Rename admin account**  
   **Default**: *Not configured*  
   LocalPoliciesSecurityOptions CSP: [Accounts_RenameAdministratorAccount](https://go.microsoft.com/fwlink/?linkid=867917)  
+ 
 
   Define a different account name to be associated with the security identifier (SID) for the account “Administrator”.  
 
@@ -1216,27 +1224,31 @@ Use these options to configure the local security settings on Windows 10 devices
 - **Undock device without logon**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [Devices_AllowUndockWithoutHavingToLogon](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-devices-allowundockwithouthavingtologon)  
+
   
   - **Block** - Users can press a docked portable device's physical eject button to safely undock the device.  
   - **Not configured** - A user must sign in to the device, and receive permission to undock the device.  
 
 - **Install printer drivers for shared printers**  
   **Default**:  Not configured  
-  LocalPoliciesSecurityOptions CSP: [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](https://go.microsoft.com/fwlink/?linkid=867921) 
+  LocalPoliciesSecurityOptions CSP: [Devices_PreventUsersFromInstallingPrinterDriversWhenConnectingToSharedPrinters](https://go.microsoft.com/fwlink/?linkid=867921)  
+
 
   - **Enabled** - Any user can install a printer driver as part of connecting to a shared printer.  
   - **Not configured** - Only Administrators can install a printer driver as part of connecting to a shared printer.  
 
 - **Restrict CD-ROM access to local active user**  
   **Default**:  Not configured  
-  CSP: [Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly](https://go.microsoft.com/fwlink/?linkid=867922) 
+  CSP: [Devices_RestrictCDROMAccessToLocallyLoggedOnUserOnly](https://go.microsoft.com/fwlink/?linkid=867922)  
+
 
   - **Enabled** - Only the interactively logged-on user can use the CD-ROM media. If this policy is enabled, and no one is logged on interactively, then the CD-ROM is accessed over the network.  
   - **Not configured** - Anyone has access to the CD-ROM.  
 
 - **Format and eject removable media**  
   **Default**: Administrators  
-  CSP: [Devices_AllowedToFormatAndEjectRemovableMedia](https://go.microsoft.com/fwlink/?linkid=867920) 
+  CSP: [Devices_AllowedToFormatAndEjectRemovableMedia](https://go.microsoft.com/fwlink/?linkid=867920)  
+ 
 
   Define who is allowed to format and eject removable NTFS media:  
   - **Not configured**  
@@ -1256,6 +1268,7 @@ Use these options to configure the local security settings on Windows 10 devices
 - **Require CTRL+ALT+DEL to log on**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotRequireCTRLALTDEL](https://go.microsoft.com/fwlink/?linkid=867951)  
+
 
   - **Enable** - Pressing CTRL+ALT+DEL isn't required for users to sign in.  
   - **Not configured** Require users to press CTRL+ALT+DEL before logging on to Windows.  
@@ -1288,12 +1301,14 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayLastSignedIn](https://go.microsoft.com/fwlink/?linkid=868437)  
   
+  
   - **Enable** - Hide the username.  
   - **Not configured** - Show the last username.  
 
 - **Hide username at sign-in**
-  **Default**: Not Confiured  
-  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959) 
+  **Default**: Not Configured  
+  LocalPoliciesSecurityOptions CSP: [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
+
   
   - **Enable** - Hide the username.  
   - **Not configured** - Show the last username.  
@@ -1338,12 +1353,13 @@ Use these options to configure the local security settings on Windows 10 devices
   LocalPoliciesSecurityOptions CSP: [NetworkSecurity_DoNotStoreLANManagerHashValueOnNextPasswordChange](https://go.microsoft.com/fwlink/?linkid=868431)  
    
   Determine if the hash value for passwords is stored the next time the password is changed. 
-  - **Not configured** - The hash value isn't stored   
+  - **Not configured** - The hash value isn't stored  
   - **Block** - The LAN Manager (LM) stores the hash value for the new password.  
 
 - **PKU2U authentication requests**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [NetworkSecurity_AllowPKU2UAuthenticationRequests](https://go.microsoft.com/fwlink/?linkid=867892)  
+
   - **Not configured**- Allow PU2U requests.  
   - **Block** - Block PKU2U authentication requests to the device.  
 
@@ -1355,7 +1371,7 @@ Use these options to configure the local security settings on Windows 10 devices
   - **Allow** - Deny users and groups from making remote RPC calls to the Security Accounts Manager (SAM), which stores user accounts and passwords. **Allow** also lets you change the default Security Descriptor Definition Language (SDDL) string to explicitly allow or deny users and groups to make these remote calls.  
 
     - **Security descriptor**  
-      **DEfault**: *Not configured*  
+      **Default**: *Not configured*  
     
 - **Minimum Session Security For NTLM SSP Based Clients**  
   **Default**: None  
@@ -1383,6 +1399,7 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: LM and NTLM  
   LocalPoliciesSecurityOptions CSP: [NetworkSecurity_LANManagerAuthenticationLevel](https://aka.ms/policy-csp-localpoliciessecurityoptions-lanmanagerauthenticationlevel)  
 
+
   - **LM and NTLM**  
   - **LM, NTLM and NTLMv2**  
   - **NTLM**  
@@ -1405,12 +1422,14 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
    LocalPoliciesSecurityOptions CSP: [Shutdown_ClearVirtualMemoryPageFile](https://go.microsoft.com/fwlink/?linkid=867914)  
 
+
   - **Enable** - Clear the virtual memory pagefile when the device is powered down.  
   - **Not configured** - Doesn't clear the virtual memory.  
 
 - **Shut down without log on**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [Shutdown_AllowSystemToBeShutDownWithoutHavingToLogOn](https://go.microsoft.com/fwlink/?linkid=867912)  
+
   
   - **Block** - Hide the shutdown option on the Windows sign in screen. Users must sign in to the device, and then shut down.  
   - **Not configured** - Allow users to shut down the device from the Windows sign in screen.  
@@ -1469,6 +1488,7 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not Configured  
   LocalPoliciesSecurityOptions CSP: [UserAccountControl_SwitchToTheSecureDesktopWhenPromptingForElevation](https://go.microsoft.com/fwlink/?linkid=867899)  
 
+
   - **Enabled** - All elevation requests to go to the interactive user's desktop rather than the secure desktop. Any prompt behavior policy settings for administrators and standard users are used.  
   - **Not configured** - Force all elevation requests go to the secure desktop, regardless of any prompt behavior policy settings for administrators and standard users.
 
@@ -1492,12 +1512,13 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not Configured  
   LocalPoliciesSecurityOptions CSP: [UserAccountControl_UseAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867902)  
 
-- **Enabled** - Allow the built-in Administrator account to use Admin Approval Mode. Any operation that requires elevation of privilege prompts the user to approve the operation.  
-- **Not configured** - runs all apps with full admin privileges.  
+  - **Enabled** - Allow the built-in Administrator account to use Admin Approval Mode. Any operation that requires elevation of privilege prompts the user to approve the operation.  
+  - **Not configured** - runs all apps with full admin privileges.  
 
 - **Run all admins in Admin Approval Mode**  
   **Default**: Not Configured  
   LocalPoliciesSecurityOptions CSP: [UserAccountControl_RunAllAdministratorsInAdminApprovalMode](https://go.microsoft.com/fwlink/?linkid=867898)  
+
 
   - **Enabled**- Enable Admin Approval Mode.  
   - **Not configured** - Disable Admin Approval Mode and all related UAC policy settings.  
@@ -1516,12 +1537,14 @@ Use these options to configure the local security settings on Windows 10 devices
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [MicrosoftNetworkClient_SendUnencryptedPasswordToThirdPartySMBServers](https://go.microsoft.com/fwlink/?linkid=868426)  
 
+
   - **Block** - The Server Message Block (SMB) redirector can send plaintext passwords to non-Microsoft SMB servers that don't support password encryption during authentication.  
   - **Not configured** - Block sending of plaintext passwords. The passwords are encrypted.  
 
 - **Digitally sign communications (always)**  
   **Default**: Not configured  
   LocalPoliciesSecurityOptions CSP: [MicrosoftNetworkClient_DigitallySignCommunicationsAlways](https://go.microsoft.com/fwlink/?linkid=868425)  
+
 
   - **Enable** - The Microsoft network client doesn't communicate with a Microsoft network server unless that server agrees to SMB packet signing.  
   - **Not configured** - SMB packet signing is negotiated between the client and server.  
