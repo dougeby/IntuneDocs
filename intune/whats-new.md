@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -48,6 +48,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### Device configuration
 ### Device enrollment
 ### Device management
+### Device security
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
@@ -56,7 +57,127 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
-## Week of June 17, 2019   
+## Week of June 24, 2019 
+
+### App management
+
+#### Configure which browser is allowed to link to organization data <!-- 3145939 -->
+Intune App Protection Policies (APP) on Android and iOS devices now allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](app-protection-policy.md).
+
+#### All apps page identifies online/offline Microsoft Store for Business apps<!--4089647 -->
+The **All apps** page now includes labeling to identify Microsoft Store for Business (MSFB) apps as online or offline apps. Each MSFB app now includes a suffix for **Online** or **Offline**. The app details page also includes **License Type** and **Supports device context installation** (offline licensed  apps only) information.
+
+#### Company Portal app on shared devices <!--4393553 -->
+Users can now access the Company Portal app on shared devices. End users will see a **Shared** label on the device tile. This applies to Company Portal app version 10.3.45609.0 and later.
+
+#### View all installed apps from new Company Portal web page <!-- 4224326 -->
+The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's device. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
+
+### Device configuration
+
+#### Configure settings for kernel extensions on macOS devices <!-- 2043024 -->
+On macOS devices, you can create a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > choose **macOS** for platform). This update includes a new group of settings that let you configure and use kernel extensions on your devices. You can add specific extensions, or allow all extensions from a specific partner or developer.
+
+To learn more about this feature, see [kernel extensions overview](kernel-extensions-overview-macos.md) and [kernel extension settings](kernel-extensions-settings-macos.md).
+
+Applies to: macOS 10.13.2 and later
+
+#### Apps from the store only setting for Windows 10 devices includes more configuration options <!-- 2697002 -->
+When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only install apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In this update, this setting is expanded to support more options. 
+
+To see the new setting, go to [Windows 10 (and newer) device settings to allow or restrict features](device-restrictions-windows-10.md#app-store).
+
+Applies to: Windows 10 and later
+
+#### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built-in to Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
+- The same user group
+- The same devices group
+- A single device
+
+[Use and manage Zebra devices with Zebra Mobility Extensions in Microsoft Intune](android-zebra-mx-overview.md) shows how to use MX in Intune.
+
+Applies to: Android
+
+#### Some kiosk settings on iOS devices are set using "Block", replacing "Allow" <!-- 4404075  -->
+When you create a device restrictions profile on iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Kiosk**), you set the **Auto lock**, **Ringer switch**, **Screen rotation**, **Screen sleep button**, and **Volume buttons**. 
+
+In this update, the values are **Block** (blocks the feature) and **Not configured** (allows the feature). To see the settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md#kiosk-supervised-only). 
+
+Applies to: iOS
+
+#### Use Face ID for password authentication on iOS devices <!-- 4490704 -->
+When you create a device restrictions profile for iOS devices, you can use a fingerprint for a password. In this update, the fingerprint password settings also allow facial recognition (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Password**). As a result, the following settings changed:
+
+- **Fingerprint unlock** is now **Touch ID and Face ID unlock**.
+- **Fingerprint modification (supervised only)** is now **Touch ID and Face ID modification (supervised only)**.
+
+Face ID is available in iOS 11.0 and later. To see the settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#password).
+
+Applies to: iOS
+
+#### The Apps feature is dependent on ratings region when restricting gaming and app store features on iOS devices <!-- 4593948 -->
+On iOS devices, you can allow or restrict features related to gaming, the app store, and viewing documents (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**). You can also choose the Ratings region, such as the United States. 
+
+In this update, the **Apps** feature is moved to be a child to **Ratings region**, and is dependent on **Ratings region**. To see the settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+
+Applies to: iOS
+
+### Device enrollment
+
+#### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
+When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user.
+
+#### Windows Autopilot supoprt for Hybrid Azure AD Join <!-- 4809146-->
+Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
+Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
+
+
+
+### Device management
+
+#### See the security patch level for Android devices <!-- 4461911 -->
+You can now see the security patch level for Android devices. To do so, choose **Intune** > **Devices** > **All devices** > choose a device > **Hardware**.
+ The patch level is listed in the **Operating System** section.
+
+#### Assign scope tags to all managed devices in a security group <!-- 3173810 -->
+You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md). (In a future update, the current flow to assign scope tags to devices will be made read only.)
+
+### Device security
+
+#### Use keyword search with Security Baselines <!-- WNready -->
+When you create or edit [Security Baseline profiles](security-baselines.md#create-the-profile), you can specify keywords in the new *Search* bar to filter the available groups of settings to those that contain your search criteria. 
+
+#### The Security Baselines feature is now generally available  <!-- 3785395 -->
+The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the features is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
+
+#### The MDM Security Baseline template is now generally available   <!-- 3794072, 4217151,  3534649 -->
+The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for Spring 2019 Update (19H1)**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](security-baselines.md#available-security-baselines).  
+
+In addition to being a new template, the *MDM Security Baseline for Spring 2019 Update (19H1)* template includes the two settings that we recently announced in our In Development topic:  
+- Above Lock: Voice activate apps from a locked screen  
+- DeviceGuard: Use virtualization-based security (VBS) at the next reboot of devices.  
+
+The *MDM Security Baseline for Spring 2019 Update (19H1)* also includes the addition of several new settings, the removal of others, and a revision of the default value of one setting. For a detailed list of the changes from Preview to GA, see **What’s changed in the new template**.
+
+#### Security baseline versioning  <!-- 3194322 -->
+Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions your profiles use, and when the the latest release of a specific security baseline was.  For more information, see **Security Baselines**.
+
+#### The Use security keys for sign-in setting has moved  <!-- 4501151 -->
+The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information see [Identity protection](identity-protection-windows-settings.md).
+
+### Role-based access control
+
+#### New permissions for assigned group admins   <!-- 4504437   -->
+Intune's built-in School Administrator role now has create, read, update, and delete (CRUD) permissions for Managed Apps. This update means that if you're assigned as a group admin in Intune for Education, you can now create, view, update, and delete the iOS MDM Push Certificate, iOS MDM server tokens, and iOS VPP tokens along with [all of the existing permissions you have](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions). To take any of these actions, go to **Tenant settings** > **iOS Device Management**.  
+
+#### Applications can use the Graph API to call read operations without user credentials <!-- 4655885 -->
+Applications can call Intune Graph API read operations with app identity without user credentials. For more information about accessing the Microsoft Graph API for Intune, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+
+#### Apply scope tags to Microsoft Store for Business apps <!-- 4392555 -->
+You can now apply scope tags to Microsoft Store for Business apps. For more information about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](scope-tags.md).
+
+## Week of June 17, 2019 
 
 ### App management
 
@@ -66,11 +187,11 @@ We’ve added new features to the Microsoft Intune app (preview) for Android. Us
 * View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
 * Contact their organization for support.    
 * Send their feedback to Microsoft.    
-* View terms and conditions, if set by their organization.  
+* View terms and conditions, if set by their organization.    
 
 ## Week of June 10, 2019 
 
-### App management  
+### App management
 
 #### New sample apps showing Intune SDK integration available on GitHub <!-- 2653471 -->
 The msintuneappsdk GitHub account has added new sample applications for iOS (Swift), Android, Xamarin.iOS, Xamarin Forms and Xamarin.Android. These apps are meant to supplement our existing documentation and provide demonstrations of how to integrate the Intune APP SDK into your own mobile apps. If you are an app developer that needs additional Intune SDK guidance, see the following linked samples:
