@@ -63,7 +63,7 @@ For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/w
 
 - **Microsoft accounts optional for Windows Store apps**  
   This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account.  
-	[Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Default**: Enabled  
 
@@ -74,7 +74,7 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
   This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-	**Default**: Yes
+  **Default**: Yes
 
 - **Block MSI app installations with elevated privileges**  
   This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.  
@@ -835,7 +835,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
 - **Internet Explorer trusted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.  
-	[Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Default**: High safety  
   

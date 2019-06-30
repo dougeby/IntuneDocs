@@ -155,7 +155,7 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 1.  From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
 
-	![Screenshot of the Learning Mode pane](./media/learning-mode-sc1.png)
+    ![Screenshot of the Learning Mode pane](./media/learning-mode-sc1.png)
 
 1.  Select a setting and then choose **Save**.
 
@@ -193,7 +193,7 @@ After you created your WIP app protection policy, you need to deploy it to your 
 
 1.  On the **App policy** blade, choose your newly created app protection policy, choose **User groups** > **Add user group**.
 
-	A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
+    A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 
 2.  Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
 

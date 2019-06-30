@@ -78,7 +78,7 @@ For this tutorial, we’ll set up an Intune app protection policy for the Outloo
 
     Select **OK** to return to the Settings pane.  
 
-7.	On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
+7. On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
 
 The app protection policy for Outlook is created. Next, you'll set up Conditional Access to require devices to use the Outlook app.
 

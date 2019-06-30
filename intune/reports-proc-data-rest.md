@@ -116,27 +116,27 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 
 #### Add the information used to request the token
 
-1.	Download Postman if you do not already have it installed. To download Postman, see [www.getpostman](https://www.getpostman.com).
-2.	Open Postman. Choose the HTTP operation **GET**.
-3.	Paste the endpoint URL into the address. It should look something like:  
+1. Download Postman if you do not already have it installed. To download Postman, see [www.getpostman](https://www.getpostman.com).
+2. Open Postman. Choose the HTTP operation **GET**.
+3. Paste the endpoint URL into the address. It should look something like:  
 
     `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
-4.	Choose the **Authorization** tab, and select **OAuth 2.0** from the **Type** list.
-5.	Select **Get New Access Token**.
-6.	Verify that you have already added the Callback URL to your app in Azure. The Callback URL is `https://www.getpostman.com/oauth2/callback`.
-7.	Type Bearer for the **Token Name**.
-8.	Add the **Auth URL**. It should look something like:  
+4. Choose the **Authorization** tab, and select **OAuth 2.0** from the **Type** list.
+5. Select **Get New Access Token**.
+6. Verify that you have already added the Callback URL to your app in Azure. The Callback URL is `https://www.getpostman.com/oauth2/callback`.
+7. Type Bearer for the **Token Name**.
+8. Add the **Auth URL**. It should look something like:  
 
     `https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.manage.microsoft.com/`
-9.	Add the **Access Token URL**. It should look something like:  
+9. Add the **Access Token URL**. It should look something like:  
 
      `https://login.microsoftonline.com/common/oauth2/token`
 
-10.	Add the **Client ID** from the native app that you created in Azure and named `Intune Data Warehouse Client`. It should look something like:  
+10. Add the **Client ID** from the native app that you created in Azure and named `Intune Data Warehouse Client`. It should look something like:  
 
      `88C8527B-59CB-4679-A9C8-324941748BB4`
 
-11.	Select **Authorization Code**, and Request access token locally.
+11. Select **Authorization Code**, and Request access token locally.
 
 12. Select **Request Token**.
 
@@ -147,8 +147,8 @@ To get a new access token for Postman, you must add the Azure AD authorization U
 
 #### Send the call to the endpoint using Postman
 
-1.	Select **Send**.
-2.	The return data appears in the Postman response body.
+1. Select **Send**.
+2. The return data appears in the Postman response body.
 
     ![Postman client status equals 200 OK](./media/reports-postman_200OK.png)
 

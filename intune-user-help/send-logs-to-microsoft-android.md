@@ -41,8 +41,8 @@ To send logs to Microsoft:
 
 2.  Tap **Menu** > **Help** > **Email Support**.
 
-	> [!NOTE]
-	> **Menu** could be a software button or a hardware button, depending on which Android device you have.
+    > [!NOTE]
+    > **Menu** could be a software button or a hardware button, depending on which Android device you have.
 
 3.  Tap **Upload Logs Only**.
 

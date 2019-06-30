@@ -39,11 +39,11 @@ Intune provides app troubleshooting details based on the apps installed on a spe
 4. Click **Select user** to select a user to troubleshoot. The **Select users** pane will be displayed.
 5. Select a user by typing the name or email address. Click **Select** at the bottom of the pane. The troubleshooting information for the user is displayed in the **Troubleshoot** pane. 
 6. Select the device that you want to troubleshoot from the **Devices** list.
-	![The Intune Troubleshooting pane.](media/troubleshoot-app-install-01.png)
+    ![The Intune Troubleshooting pane.](media/troubleshoot-app-install-01.png)
 7. Select **Managed Apps** from selected device pane. A list of managed apps is displayed.
-	![Details of a specific device managed by Intune.](media/troubleshoot-app-install-02.png)
+    ![Details of a specific device managed by Intune.](media/troubleshoot-app-install-02.png)
 8. Select an app from the list where **Installation Status** indicates a failure.
-	![A selected app that shows installation failure details.](media/troubleshoot-app-install-03.png)
+    ![A selected app that shows installation failure details.](media/troubleshoot-app-install-03.png)
 
     > [!Note]  
     > The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>

@@ -29,9 +29,9 @@ New, more specific error messages will now be displayed within the Company Porta
 #### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
 New improvements for app installs started in the Windows 10 Company Portal app include:
--	Faster install progress reporting for MSI packages
--	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
--	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
+- Faster install progress reporting for MSI packages
+- Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
+- New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
 
 You can see the new progress bar on the [what's new in Intune app UI page](/intune/whats-new-app-ui).
 

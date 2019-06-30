@@ -56,9 +56,9 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 5. Sign in to Intune with your work or school account.  
 
 
-	![Add a work or school account](./media/w10-enroll-rs1-enter-your-credentials.png)  
+    ![Add a work or school account](./media/w10-enroll-rs1-enter-your-credentials.png)  
 
-	You’ll eventually see a message that your company or school is registering your device.
+    You’ll eventually see a message that your company or school is registering your device.
 
 6. If your organization requires you to set up a PIN for Windows Hello, you'll be prompted to enter a verification code. Enter the code and continue through the on-screen steps to create a PIN.  
 
@@ -67,7 +67,7 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 8. To double-check your connection, go back to **Settings** > **Accounts** > **Access work or school**.  Your account should now be listed.  
 
 
-	![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
+    ![Validate that the connection was set up correctly](./media/w10-enroll-rs1-validate-successful-enrollment.png)  
 
 Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).  
 
@@ -86,12 +86,12 @@ These steps describe how to enroll a device that runs on Windows 10, version 151
 5. Select **Add a work or school account**.  
 
 
-	![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)  
+    ![Select add a work or school account](./media/w10-enroll-3-add-work-school-acct.png)  
 
 6. Sign in with your work or school credentials.  
 
 
-	![Sign in](./media/W10-enroll-4-sign-in.png)  
+    ![Sign in](./media/W10-enroll-4-sign-in.png)  
 
 Still can't access your work or school email, files, or other data? Learn how to [troubleshoot account-related problems](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account) during enrollment.  
 

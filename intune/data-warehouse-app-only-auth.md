@@ -45,18 +45,18 @@ The following process uses a private method to process and convert an app key. T
 
 In this section, you provide details about the Web app you would like to point to at Intune. A web app is a client-server application. The server provides the web app, which includes the UI, content, and functionality. This type of app is separately maintained on the Web. You use Intune to grant a web app access to Intune. The data flow is initiated by the web app. 
 
-1.	Sign in to the [Azure portal](https://portal.azure.com).
-2.	Using **Search resources, services and docs** field near the top of the Azure portal, search for **Azure Active Directory**.
-3.	In the dropdown menu, select **Azure Active Directory** under **Services**.
-4.	Select **App registrations**.
-5.	Click **New application registration** to display the **Create** blade.
-6.	In the **Create** blade, add your app details:
+1. Sign in to the [Azure portal](https://portal.azure.com).
+2. Using **Search resources, services and docs** field near the top of the Azure portal, search for **Azure Active Directory**.
+3. In the dropdown menu, select **Azure Active Directory** under **Services**.
+4. Select **App registrations**.
+5. Click **New application registration** to display the **Create** blade.
+6. In the **Create** blade, add your app details:
 
     - An app name, such as *Intune App-Only Auth*.
     - The **Application type**. Choose **Web app / API** to add an app that represents a web application, a web API, or both.
     - The **Sign-on URL** of the application. This is the location users automatically navigate to during the authentication process. They are required to prove that they are who they say they are. For more information, see [What is application access and single sign-on with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)
 
-7.	Click **Create** at the bottom of the **Create** blade.
+7. Click **Create** at the bottom of the **Create** blade.
 
     >[!NOTE] 
     > Copy the **Application ID** from the **Registered app** blade to use later.
@@ -65,12 +65,12 @@ In this section, you provide details about the Web app you would like to point t
 
 In this section, Azure AD generates a key value for your app.
 
-1.	On the **App registrations** blade, select your newly created app to display the app blade.
-2.	Select **Settings** near the top of the blade to display the **Settings** blade.
-3.	Select **Keys** on the **Settings** blade.
-4.	Add the key **Description**, an **Expires** duration, and **Value** for the key.
-5.	Click **Save** to save and update the application's keys.
-6.	You must copy the generated key value (base64 encoded).
+1. On the **App registrations** blade, select your newly created app to display the app blade.
+2. Select **Settings** near the top of the blade to display the **Settings** blade.
+3. Select **Keys** on the **Settings** blade.
+4. Add the key **Description**, an **Expires** duration, and **Value** for the key.
+5. Click **Save** to save and update the application's keys.
+6. You must copy the generated key value (base64 encoded).
 
     >[!NOTE] 
     > The key value disappears after you leave the **keys** blade. You cannot retrieve the key from this blade later. Copy it to use later.
@@ -79,28 +79,28 @@ In this section, Azure AD generates a key value for your app.
 
 In this section, you grant permissions to the applications.
 
-1.	Select **Required permissions** on the **Settings** blade.
-2.	Click **Add**.
-3.	Select **Add an API** to display the **Select an API** blade.
-4.	Select **Microsoft Intune API (MicrosoftIntuneAPI)** and then click **Select** from the **Select an API** blade. The **Select permissions** step is selected and the **Enable Access** blade is displayed.
-5.	Choose the **Get data warehouse information from Microsoft Intune** option from the **Application Permissions** section.
-6.	Click **Select** from the **Enable Access** blade.
-7.	Click **Done** from the **Add API access** blade.
-8.	Click **Grant Permissions** from the **Required permissions** blade and click **Yes** when promoted to update any existing permissions this application already has.
+1. Select **Required permissions** on the **Settings** blade.
+2. Click **Add**.
+3. Select **Add an API** to display the **Select an API** blade.
+4. Select **Microsoft Intune API (MicrosoftIntuneAPI)** and then click **Select** from the **Select an API** blade. The **Select permissions** step is selected and the **Enable Access** blade is displayed.
+5. Choose the **Get data warehouse information from Microsoft Intune** option from the **Application Permissions** section.
+6. Click **Select** from the **Enable Access** blade.
+7. Click **Done** from the **Add API access** blade.
+8. Click **Grant Permissions** from the **Required permissions** blade and click **Yes** when promoted to update any existing permissions this application already has.
 
 ## Generate token
 
 Using Visual Studio, create a Console App (.NET Framework) project that supports the .NET Framework and uses C# as the coding language.
 
-1.	Select **File** > **New** > **Project** to display the **New Project** dialog box.
-2.	On the left, select **Visual C#** to display all .NET Framework projects.
-3.	Select **Console App (.NET Framework)**, add an app name, and then click **OK** to create the app.
-4.	In **Solution Explorer**, select **Program.cs** to display the code.
-5.	In Solution Explorer, add a reference to the assembly `System.Configuration`.
-6.	In the pop-up menu, select **Add** > **New item**. The **Add New Item** dialog box is displayed.
-7.	On the left, under **Visual C#**, select **Code**.
-8.	Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs*, and click **Add**.
-9.	Add the following code within the <code>Main</code> method:
+1. Select **File** > **New** > **Project** to display the **New Project** dialog box.
+2. On the left, select **Visual C#** to display all .NET Framework projects.
+3. Select **Console App (.NET Framework)**, add an app name, and then click **OK** to create the app.
+4. In **Solution Explorer**, select **Program.cs** to display the code.
+5. In Solution Explorer, add a reference to the assembly `System.Configuration`.
+6. In the pop-up menu, select **Add** > **New item**. The **Add New Item** dialog box is displayed.
+7. On the left, under **Visual C#**, select **Code**.
+8. Select **Class**, change the name of the class to *IntuneDataWarehouseClass.cs*, and click **Add**.
+9. Add the following code within the <code>Main</code> method:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -123,7 +123,7 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
      using System.Configuration;
     ``` 
 
-11.	After the <code>Main</code> method, add the following private method to process and convert the app key:
+11. After the <code>Main</code> method, add the following private method to process and convert the app key:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -141,10 +141,10 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
     }
     ```
 
-12.	In the **Solution Explorer**, right-click on **References**, then select **Manage NuGet Packages**.
-13.	Search for *Microsoft.IdentityModel.Clients.ActiveDirectory* and install the related Microsoft NuGet package.
-14.	In **Solution Explorer** select and open the *App.config* file.
-15.	Add the <code>appSettings</code> section so that the xml appears as follows:
+12. In the **Solution Explorer**, right-click on **References**, then select **Manage NuGet Packages**.
+13. Search for *Microsoft.IdentityModel.Clients.ActiveDirectory* and install the related Microsoft NuGet package.
+14. In **Solution Explorer** select and open the *App.config* file.
+15. Add the <code>appSettings</code> section so that the xml appears as follows:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -160,8 +160,8 @@ Using Visual Studio, create a Console App (.NET Framework) project that supports
     </configuration>
     ``` 
 
-16.	Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
-17.	Build your app.
+16. Update the <code>appId</code>, <code>appKey</code>, and <code>tenantDomain</code> values to match your unique app-related values.
+17. Build your app.
 
     >[!NOTE] 
     > To see additional implementation code, see [Intune-Data-Warehouse code example](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
