@@ -38,7 +38,7 @@ The most recent baseline version is **MDM Security Baseline for Spring 2019 Upda
 To learn about what's changed in the latest version of this baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for Spring 2019 Update (19H1)* template, which is generaly available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
+> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for Spring 2019 Update (19H1)* template, which is generaly available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
   
 To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
 
