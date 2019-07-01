@@ -253,13 +253,13 @@ Use the below key/value pair to configure if these soft transitions are allowed:
 
 ## Directing users to Microsoft Edge instead of the Intune Managed Browser 
 
-Both the Intune Managed Browser and Microsoft Edge are now can be used as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (e.g. Outlook and OneDrive) with the following configuration setting:
+Both the Intune Managed Browser and Microsoft Edge are now can be used as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (e.g. Outlook, OneDrive, and SharePoint) with the following configuration setting:
 
 |    Key    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    The value `true` will direct your users to use Microsoft Edge.<p>The value `false` will direct your users to use the Intune Managed Browser.    |
+|    `com.microsoft.intune.useEdge`    |    The value `true` will direct your users to download and use Microsoft Edge.<p>The value `false` will allow your users to use the Intune Managed Browser.    |
 
-If this app configuration value is not set, the following logic will define which browser will be used to open corporate links.
+If this app configuration value is **not** set, the following logic will define which browser will be used to open corporate links.
 
 On Android:
 - The Intune Managed Browser will launch if a user has both the Intune Managed Browser and Microsoft Edge downloaded on their device. 
