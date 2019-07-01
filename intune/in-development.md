@@ -61,8 +61,6 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 <!-- ***********************************************-->
 ## App management
 
-### Device users can view all managed apps they've installed or tried to install <!-- 2352913 -->
-Company Portal for Windows will list all managed apps (both required and available) that are installed on a user's device. Users will be able to view attempted and pending app installations, and their current statuses. If your organization doesn't make apps required or available, users will see a message explaining that no company apps have been installed. Users will also be able to sort or filter their apps by installation status.
 
 ### Customized notifications for users and groups    <!-- 16766574   -->
 You'll soon be able to send custom ad-hoc push notifications from the Company Portal application to users on iOS and Android devices you manage with Intune. These custom notifications are not tied to particular Intune features and can be used for any purpose you require, including general notifications you want to send to some or all your employees.  

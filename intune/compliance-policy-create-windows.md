@@ -63,7 +63,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 More resources:
 
 - [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) has details about how the HAS service works.
-- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
+- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ## Device properties
 
