@@ -66,8 +66,8 @@ Intune automatically adds primary user to devices during or soon after enrollmen
 | Windows | Azure AD join (out of box experience) | Enrolling user | During enrollment | 
 | Windows | Azure AD join (Autopilot out of box experience) | Enrolling user | During enrollment | 
 | Windows | Enroll in MDM only | Enrolling user | During enrollment | 
-| Windows | Hybrid AADJ + automatic enrollment GPO | First user to sign in | When first user signs in | 
-| Windows | Co-management | First user to sign in | When first user signs in | 
+| Windows | Hybrid AADJ + automatic enrollment GPO | First user to sign in to Company Portal | When first user signs in to Company Portal| 
+| Windows | Co-management | First user to sign in to Company Portal | When first user signs in to Company Portal | 
 | Windows | Azure AD join (bulk enrollment token) | None | Not applicable | 
 | Windows | Azure AD join (Autopilot self-deploying mode) | None | Not applicable | 
 | Cross-platform | User driven enrollment with Company Portal App | Enrolling user | During enrollment |
