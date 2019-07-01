@@ -161,7 +161,7 @@ The following sample contains a simple REST client. The code uses the **httpClie
 
 1. Open **Microsoft Visual Studio**.
 2. Choose **File** > **New Project**. Expand **Visual C#**, and choose **Console App (.Net Framework)**.
-3. Name the project ` IntuneDataWarehouseSamples`, browse to where you would like to save the project, and then select **OK**.
+3. Name the project `IntuneDataWarehouseSamples`, browse to where you would like to save the project, and then select **OK**.
 4. Right-click the name of the solution in the Solution Explorer, and then select **Manage NuGet Packages for Solution**. Select **Browse**, and then type `Microsoft.IdentityModel.Clients.ActiveDirectory` in the search box.
 5. Choose the package, select the **IntuneDataWarehouseSamples** project under Manage Packages for Your Solution, and then select **Install**.
 6. Select **I Accept** to accept the NuGet package license.
