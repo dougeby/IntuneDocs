@@ -1441,7 +1441,7 @@ You can apply Autopilot profiles to enrolled Win 10 devices that have not alread
 You can now [create and assign](windows-enrollment-status.md) multiple Enrollment Status Page profiles to Azure ADD groups.
 
 #### Migration from Device Enrollment Program to Apple Business Manager in Intune <!--2748613-->
-Apple Business Manager (ABM) works in Intune and you can upgrade your account from Device Enrollment Program (DEP) to ABM. The process in Intune is the same. To upgrade your Apple account from DEP to ABM, go to [ https://support.apple.com/HT208817]( https://support.apple.com/HT208817).
+Apple Business Manager (ABM) works in Intune and you can upgrade your account from Device Enrollment Program (DEP) to ABM. The process in Intune is the same. To upgrade your Apple account from DEP to ABM, go to [https://support.apple.com/HT208817]( https://support.apple.com/HT208817).
 
 ### Alert and enrollment status tabs on the Device enrollment overview page <!--2748656-->
 Alerts and enrollment failures now appear on separate tabs on the Device enrollment overview page.
