@@ -124,7 +124,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
     ![Screenshot of Review page](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment ** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."
+> Intune will periodically check for new devices in the assigned groups, and then begin the process of assigning profiles to those devices. This process can take several minutes to complete. Before deploying a device, ensure that this process has completed.  You can check under **Device enrollment** > **Windows enrollment** > **Devices** where you should see the profile status change from "Unassigned" to "Assigning" and finally to "Assigned."
 
 ## Edit an Autopilot deployment profile
 After you've created an Autopilot deployment profile, you can edit certain parts of the deployment profile.   
