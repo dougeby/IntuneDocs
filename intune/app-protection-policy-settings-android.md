@@ -34,7 +34,7 @@ There are three categories of policy settings: data protection settings, access 
 > [!IMPORTANT]
 > The Intune Company Portal is required on the device to recieve App Protection Policies for Android devices. For more information, see the [Intune Company Portal access apps requirements](end-user-mam-apps-android.md).
 
-##  Data protection 
+## Data protection 
 ### Data Transfer
 | Setting | How to use | Default value |
 |------|------|------|
@@ -66,11 +66,11 @@ There are three categories of policy settings: data protection settings, access 
 |<ul><ui>**Unmanaged Browser Name** | Enter the application name for browser associated with the **Unmanaged Browser ID**. This name will be displayed to users if the specified browser is not installed.  | **Blank** |
 
 
-  ## Data transfer exemptions
+## Data transfer exemptions
 
   There are some exempt apps and platform services that Intune app protection policy may allow data transfer to and from. For example, all Intune-managed apps on Android must be able to transfer data to and from the Google Text-to-speech, so that text from your mobile device screen can be read aloud. This list is subject to change and reflects the services and apps considered useful for secure productivity.
 
-  ### Full exemptions
+### Full exemptions
 
   These apps and services are fully allowed for data transfer to and from Intune-managed apps.
 
@@ -87,7 +87,7 @@ There are three categories of policy settings: data protection settings, access 
   | com.azure.authenticator | Azure Authenticator app, which is required for successful authentication in many scenarios. |
   | com.microsoft.windowsintune.companyportal | Intune Company Portal|
 
-  ### Conditional exemptions
+### Conditional exemptions
   These apps and services are only allowed for data transfer to and from Intune-managed apps under certain conditions.
 
   |App/service name | Description | Exemption condition|
@@ -99,7 +99,7 @@ There are three categories of policy settings: data protection settings, access 
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
 
-##  Access requirements
+## Access requirements
 
 | Setting | How to use |  
 |------|------| 

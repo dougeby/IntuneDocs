@@ -39,7 +39,7 @@ To help protect company data, restrict file transfers to only the apps that you 
 
 The **Open in management** feature for iOS devices can limit file transfers between apps that are deployed through the **MDM channel**. Set *Open in management* restrictions in configuration settings and then deploy them using your MDM solution.  When a user installs the deployed app, the restrictions you set are applied.
 
-##  Use app protection with iOS apps
+## Use app protection with iOS apps
 Use App protection policies with the iOS **Open in management** feature to protect company data in the following ways:
 
 -   **Employee owned devices not managed by any MDM solution:** You can set the app protection policy settings to **Allow app to transfer data to only Policy Managed apps**. The *Open-In* behavior in a Policy Managed app presents only other Policy Managed apps as options for sharing. If a user tries to send a policy protected file as an attachment from OneDrive in the native mail app, that file is unreadable.
