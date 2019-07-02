@@ -112,7 +112,7 @@ If you have approved an app from the store and don't see it in the **Licensed ap
 
 ## Assigning a Managed Google Play app to Android Enterprise work profile devices
 
-When the app is displayed in the **App licenses** node of the **Client apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps) by assigning the the app to groups of users.
+When the app is displayed in the **App licenses** node of the **Client apps** workload pane, you can [assign it just as you would assign any other app](/intune-azure/manage-apps/deploy-apps) by assigning the app to groups of users.
 
 After you assign the app, it is installed on the devices that you've targeted. The user of the device is not asked to approve the installation. For more information about Android Enterprise work profile devices, see [Set up enrollment of Android Enterprise work profile devices](android-work-profile-enroll.md).
 

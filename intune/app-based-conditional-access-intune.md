@@ -47,7 +47,7 @@ Before you create an app-based Conditional Access policy, you must have:
 - **Enterprise Mobility + Security (EMS)** or an **Azure Active Directory (AD) Premium subscription**
 - Users must be licensed for EMS or Azure AD
 
-For more information, see [Enterprise Mobility pricing ](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+For more information, see [Enterprise Mobility pricing](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Supported apps
 

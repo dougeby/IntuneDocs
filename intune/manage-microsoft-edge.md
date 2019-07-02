@@ -188,7 +188,7 @@ Use the following key/value pair to configure managed bookmarks:
 
 |    Key    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    The value for this configuration is a   list of bookmarks. Each bookmark consists of the bookmark title and the   bookmark URL. Separate the title and URL with the `|` character. Example:<br>`Microsoft Bing|https://www.bing.com`<p>To configure multiple bookmarks, separate each pair with the double character `||`. Example:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
+|    com.microsoft.intune.mam.managedbrowser.bookmarks    |    The value for this configuration is a   list of bookmarks. Each bookmark consists of the bookmark title and the   bookmark URL. Separate the title and URL with the `|` character.      Example:<br>`Microsoft Bing|https://www.bing.com`<br>To configure multiple bookmarks, separate each pair with the double character `||`.<p>Example:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
 ## Display MyApps within Microsoft Edge bookmarks
 
@@ -205,16 +205,17 @@ Use the following key/value pairs to configure either an allowed or blocked site
 
 |    Key    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Choose from:<p><li> Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p><li> Specify blocked URLs (all other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe `|` character.<p>**Examples:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Choose from:<p>1. Specify allowed URLs (only these URLs are allowed; no other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Specify blocked URLs (all other sites can be accessed):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    The corresponding value for the key is a list of URLs. You enter all the URLs you want to allow or block as a single value, separated by a pipe `|` character.<br>**Examples:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### URL formats for allowed and blocked site list 
 You can use various URL formats to build your allowed/blocked sites lists. These permitted patterns are detailed in the following table. Some notes before you get started: 
 - Ensure that you prefix all URLs with **http** or **https** when entering them into the list.
-- You can use the wildcard symbol (*) according to the rules in the following permitted patterns list.
-- You can specify port numbers in the address. If you don't specify a port number, the values used are:
+- You can use the wildcard symbol (\*) according to the rules in the following permitted patterns list.
+- A wildcard can only match an entire compoment of the hostname (separated by periods) or entire parts of the path (separated by forward slashes). For example, `http://*contoso.com` is **not** supported.
+- You can specify port numbers in the address. If you do not specify a port number, the values used are:
     - Port 80 for http
     - Port 443 for https
-- Using wildcards for the port number isn't supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` aren't supported.
+- Using wildcards for the port number is **not** supported. For example, `http://www.contoso.com:*` and `http://www.contoso.com:*/` are not supported. 
 
     |    URL    |    Details    |    Matches    |    Does not match    |
     |-------------------------------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -236,6 +237,7 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     - IP addresses
     - `https://*`
     - `http://*`
+    - `https://*contoso.com`
     - `http://www.contoso.com:*`
     - `http://www.contoso.com: /*`
   
@@ -251,13 +253,13 @@ Use the following key/value pair to configure whether these soft transitions are
 
 ## Direct users to Microsoft Edge instead of the Intune Managed Browser 
 
-You can use either the Intune Managed Browser or Microsoft Edge as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (for example, Outlook and OneDrive) with the following configuration setting:
+Both the Intune Managed Browser and Microsoft Edge can be used as policy-protected browsers. To ensure that your users are being directed to use the correct browser app, target all of your Intune-managed apps (for example, Outlook, OneDrive, and SharePoint) with the following configuration setting:
 
 |    Key    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.useEdge`    |    The value `true` directs your users to use Microsoft Edge.<p>The value `false` directs your users to use the Intune Managed Browser.    |
+|    `com.microsoft.intune.useEdge`    |    The value `true` will direct your users to download and use Microsoft Edge.<br>The value `false` will allow your users to use the Intune Managed Browser.    |
 
-If this app configuration value isn't set, the following logic defines which browser will be used to open corporate links.
+If this app configuration value is **not** set, the following logic will define which browser will be used to open corporate links.
 
 On Android:
 - The Intune Managed Browser launches if a user has both the Intune Managed Browser and Microsoft Edge downloaded on their device. 
