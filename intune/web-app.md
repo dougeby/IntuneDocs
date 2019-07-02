@@ -49,18 +49,18 @@ To add an app to Intune as a shortcut to an app on the web, do the following:
 6. In the **Add app** pane, in the **App type** drop-down list, select the **Web link** type.
 7. Select **Configure**.
 8. In the **App information** pane, add the following information:
-	- **Name**:  Enter the name of the app as it is to be displayed in the company portal. 
-	
+    - **Name**:  Enter the name of the app as it is to be displayed in the company portal. 
+
         > [!NOTE]
         > If you change the name of the app through the Intune azure portal after you have deployed and installed the app, the app will no longer be able to be targeted using commands.
-	
-	- **Description**: Enter a description for the app. This description is displayed to users in the company portal.
-	- **Publisher**: Enter the name of the publisher of this app.
-	- **App URL**: Enter the URL of the website that hosts the app that you want to assign.
-	- **Category**: Optionally, select one or more of the built-in app categories, or a category that you created. Doing so makes it easier for users to find the app when they browse the company portal.
-	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
-	- **Require a managed browser to open this link**: Select this option to assign to your users a link to a website or web app that they can open in the Intune managed browser. This browser must be installed on their device.
-	- **Logo**: Upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
+
+    - **Description**: Enter a description for the app. This description is displayed to users in the company portal.
+    - **Publisher**: Enter the name of the publisher of this app.
+    - **App URL**: Enter the URL of the website that hosts the app that you want to assign.
+    - **Category**: Optionally, select one or more of the built-in app categories, or a category that you created. Doing so makes it easier for users to find the app when they browse the company portal.
+    - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
+    - **Require a managed browser to open this link**: Select this option to assign to your users a link to a website or web app that they can open in the Intune managed browser. This browser must be installed on their device.
+    - **Logo**: Upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
 9. Select **OK**.
 10. In the **Add app** pane, select **Add**.
 

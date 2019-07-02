@@ -91,7 +91,7 @@ You need to add an Azure AD security group that contains all devices running SEP
 
 -  Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
 
-    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
+    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile syncs the devices running its Mobile Threat Defense service with the Azure AD security groups.
 
@@ -130,25 +130,25 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
 4. In the **Directory ID** box, paste the Directory ID you copied from Azure Active Directory in the previous section and save the settings.
 
-    ![Image showing Directory ID in the SEP Mobile portal](./media/symantec-portal-directory-ID.png)	 
+    ![Image showing Directory ID in the SEP Mobile portal](./media/symantec-portal-directory-ID.png)
 
 5. Go to the **Settings** > **Integrations** > **Intune** > **Basic Setup** section.
 
 6. Next to **iOS App**, choose the **Add to Active Directory** button.
 
-    ![Image showing adding the iOS app to Active Directory](./media/symantec-portal-basic-add.png)	 
+    ![Image showing adding the iOS app to Active Directory](./media/symantec-portal-basic-add.png)
 
-7.	Sign in using the Azure Active Directory credentials for the Office 365 account that manages the directory.
+7. Sign in using the Azure Active Directory credentials for the Office 365 account that manages the directory.
 
-8.	Choose the **Accept** button to add the SEP Mobile iOS app to Azure Active Directory.
+8. Choose the **Accept** button to add the SEP Mobile iOS app to Azure Active Directory.
 
-    ![Image showing the accept button](./media/symantec-portal-basic-accept.png)	 
+    ![Image showing the accept button](./media/symantec-portal-basic-accept.png)
 
-9.	Repeat the same process for the **Android app** and the **Management App**.
+9. Repeat the same process for the **Android app** and the **Management App**.
 
-10.	Select all user groups that need to run the SEP Mobile apps, for example, the security group you created earlier.
+10. Select all user groups that need to run the SEP Mobile apps, for example, the security group you created earlier.
 
-    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
+    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 
 11.  SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
 

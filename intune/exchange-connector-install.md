@@ -85,8 +85,8 @@ Create an Active Directory user account that will be used by the on-premises Exc
 
 4. On the **Add Connector** page, select **Download the on-premises connector**. The on-premises Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder to a secure location.
 
-	> [!IMPORTANT]
-	> Do not rename or move the files that are in the on-premises Exchange connector folder. Moving or renaming the folder's contents will cause the Exchange connector installation to fail.
+    > [!IMPORTANT]
+    > Do not rename or move the files that are in the on-premises Exchange connector folder. Moving or renaming the folder's contents will cause the Exchange connector installation to fail.
 
 ## Install and configure the Intune on-premises Exchange connector
 Perform the following steps to install the Intune on-premises Exchange connector. If you have multiple Exchange organizations, repeat these steps for each additional Exchange connector you want to set up.

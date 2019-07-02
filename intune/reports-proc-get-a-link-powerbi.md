@@ -67,10 +67,10 @@ The Power BI [Intune Compliance (Data Warehouse)](https://aka.ms/intune/dataware
 
 Alternatively, you can install the app from the Intune portal:
 
-1.	Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for Intune.
-2.	Open the **Set up Intune Data Warehouse** blade.
-3.	Select **Get Power BI App** to access and share pre-created Power BI reports for your tenant in the browser.
-4.	Follow steps 2-10 above.
+1. Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for Intune.
+2. Open the **Set up Intune Data Warehouse** blade.
+3. Select **Get Power BI App** to access and share pre-created Power BI reports for your tenant in the browser.
+4. Follow steps 2-10 above.
 
 ## Load the data in Power BI using the OData link
 
