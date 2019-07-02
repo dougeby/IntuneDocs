@@ -266,7 +266,7 @@ Admins will see these four apps automatically added to their Intune apps list at
 #### Updated PFX Certificate Connector for Microsoft Intune  <!-- 1533038 -->
 We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that addresses an issue where existing PFX certificates continue to be reprocessed, which causes the connector to stop processing new requests.
 
-####  Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
+#### Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
 In public preview, you can use Intune to manage [security tasks for Microsoft Defender Advanced Threat Protection (ATP)](atp-manage-vulnerabilities.md). This integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671   idstaged-->
@@ -300,7 +300,7 @@ To see the available settings, go to [App Store, Doc Viewing, Gaming iOS setting
 ​
 Applies to: iOS
 
-####  Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
+#### Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
 We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings. This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
 
 ### Device enrollment
@@ -395,7 +395,7 @@ App installation reports include app version information for Microsoft Store for
 #### Additions to Win32 apps requirement rules <!-- 3676883   -->
 You can create requirement rules based on PowerShell scripts, registry values, and file system information. In Intune, select **Client apps** > **Apps** > **Add**. Then select **Windows app (Win32)** as the **App type** in the **Add app** blade.  Select **Requirements** > **Add** to configure additional requirement rules. Then, select either **File type**, **Registry**, or **Script** as the **Requirement type**. For more information, see [Win32 app management](apps-win32-app-management.md).
 
- #### Configure your Win32 apps to be installed on Intune enrolled Azure AD joined devices <!-- 3695227  -->
+#### Configure your Win32 apps to be installed on Intune enrolled Azure AD joined devices <!-- 3695227  -->
 You can assign your Win32 apps to be installed on Intune enrolled Azure AD joined devices. For more information about Win32 apps in Intune, see [Win32 app management](apps-win32-app-management.md).
 
 #### Device overview shows Primary User <!--794259  -->
@@ -1349,7 +1349,7 @@ You can now create an Outlook iOS and Android app configuration policy for iOS a
 #### Office 365 Pro Plus language packs <!-- 1833450 -->
 As the Intune admin, you will be able to deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade.
 
-####  Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
+#### Windows line-of-business (LOB) apps file extensions <!-- 1884873 -->
 The file extensions for Windows LOB apps will now include *.msi*, *.appx*, *.appxbundle*, *.msix*, and *.msixbundle*. You can add an app in Microsoft Intune by selecting **Client apps** > **Apps** > **Add**. The **Add app** pane is displayed which allows you to select the **App type**. For Windows LOB apps, select **Line-of-business** app as the app type, select the **App package file**, and then enter an installation file with the appropriate extension.
 
 #### Windows 10 app deployment using Intune <!-- 2309001 -->
