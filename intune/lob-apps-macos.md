@@ -82,18 +82,18 @@ You must download an external tool to pre-process your *.pkg* files before you c
 
 1. On the **Add app** pane, choose **App information**.
 2. On the **App information** pane, add the details for your app. Depending on the app you have chosen, some of the values in this pane might have been automatically filled-in:
-	- **Name** - Enter the name of the app to be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
-	- **Description** - Enter a description for the app to be displayed to users in the company portal.
-	- **Publisher** - Enter the name of the publisher of the app.
-	- **Minimum Operating System** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
-	- **Category** - Select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app when they browse the company portal.
-	- **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
-	- **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-	- **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-	- **Developer** - Optionally, enter the name of the app developer.
-	- **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
-	- **Notes** - Enter any notes you would like to associate with this app.
-	- **Logo** - Upload an icon that is associated with the app. This is the icon that is displayed with the app when users browse the company portal.
+    - **Name** - Enter the name of the app to be displayed in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps will be displayed to users in the company portal.
+    - **Description** - Enter a description for the app to be displayed to users in the company portal.
+    - **Publisher** - Enter the name of the publisher of the app.
+    - **Minimum Operating System** - From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
+    - **Category** - Select one or more of the built-in app categories, or a category you created. This makes it easier for users to find the app when they browse the company portal.
+    - **Display this as a featured app in the Company Portal** - Display the app prominently on the main page of the company portal when users browse for apps.
+    - **Information URL** - Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+    - **Privacy URL** - Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
+    - **Developer** - Optionally, enter the name of the app developer.
+    - **Owner** - Optionally, enter a name for the owner of this app, for example, **HR department**.
+    - **Notes** - Enter any notes you would like to associate with this app.
+    - **Logo** - Upload an icon that is associated with the app. This is the icon that is displayed with the app when users browse the company portal.
 3. When you are finished, choose **OK**.
 
 ## Step 4 - Finish up

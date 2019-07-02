@@ -1904,8 +1904,8 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 ### New remote actions for iOS devices <!-- 854689 -->
 In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
-- 	[Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
-- 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
+- [Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
+- [Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
 
 ### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->

@@ -60,8 +60,8 @@ The retention period for app protection data is 90 days. Any app instances that 
 - **Top Configured iOS Apps Without Enrollment**: Based on the most used iOS apps for unenrolled devices, this information shows the number of configured iOS apps.
 - **Top Configured Android Apps Without Enrollment**: Based on the most used Android apps for unenrolled devices, this information shows the number of configured Android apps.
 
-	> [!NOTE]
-	> If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy is assigned to them.
+    > [!NOTE]
+    > If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy is assigned to them.
 
 ## Detailed view
 You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), and the **Flagged users** tile.
@@ -85,7 +85,7 @@ To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **User status** summary tile.
 
-	![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
+    ![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** pane that opens, choose **Select user** to search for an Azure Active Directory user.
 
@@ -139,11 +139,11 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
-	![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
+    ![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
 
 2. Choose **Yes** to save your report, then choose **Save As** and select the folder you want to save the report in.
 
-	![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
+    ![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)

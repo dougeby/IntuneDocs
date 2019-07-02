@@ -80,8 +80,8 @@ For more information about consent and Azure Active Directory applications, see 
 
 5.  After you set Microsoft Intune as the MDM service, the **Microsoft Intune Configuration** window pops up, choose the **Add Azure Active Directory** for each option: **Zimperium zConsole**, **zIPS iOS and Android apps** to authorize Zimperium to communicate with Intune and Azure AD through Azure AD Single Sign-On.
 
-	> [!IMPORTANT]  
-	> You must add the Zimperium zConsole, zIPS iOS and Android apps to complete the integration process with Intune.
+    > [!IMPORTANT]  
+    > You must add the Zimperium zConsole, zIPS iOS and Android apps to complete the integration process with Intune.
 
 6.  Choose **Accept** to authorize the Zimperium app to communicate with Intune and Azure Active Directory.
 

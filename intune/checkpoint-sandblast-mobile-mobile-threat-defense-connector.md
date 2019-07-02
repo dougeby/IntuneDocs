@@ -100,7 +100,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 -   Microsoft Intune subscription
 
 -   Check Point SandBlast Mobile Threat Defense subscription
-	-   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
 
 ## Next steps
 
