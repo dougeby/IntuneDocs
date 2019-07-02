@@ -38,7 +38,7 @@ Your organization cannot see your personal information when you enroll a device 
 - Email and text messages
 - Contacts
 - Calendar
--	Passwords
+- Passwords
 - Pictures, including what's in the photos app or camera roll
 - Files
 

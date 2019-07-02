@@ -75,13 +75,13 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
 
 3. Multiple versions of Windows 10 exist for desktops. Compare your screen to the screenshots below to determine which set of steps to follow. 
 
-	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school-steps).
+    * If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school-steps).
 
-	![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+    ![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access-steps).  
+    * If your screen reads **Work access**, skip to the steps under [Work access](#work-access-steps).  
 
-	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
+    ![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
 #### Access work or school steps
 

@@ -59,8 +59,8 @@ This guide breaks down the migration into two phases, both of which include task
     -   [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md)
 
     -   [Typical migration cycle](migration-guide-cycle.md)
-	    -   [Monitoring migration](migration-guide-cycle.md#monitoring-migration)
-	    -   [Post migration](migration-guide-cycle.md#post-migration)
+        -   [Monitoring migration](migration-guide-cycle.md#monitoring-migration)
+        -   [Post migration](migration-guide-cycle.md#post-migration)
 
 ## Assumptions
 

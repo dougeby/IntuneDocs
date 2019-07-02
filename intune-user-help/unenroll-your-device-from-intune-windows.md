@@ -94,8 +94,8 @@ Complete the following steps to remove a Windows 8.1 phone from Intune.
 
 There are two kinds of data that the Company Portal stores on your Windows device:
 
--	**Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
--	**Application cache**: Support files that are required for the app to work, such as icons and settings.
+- **Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
+- **Application cache**: Support files that are required for the app to work, such as icons and settings.
 
 To delete the stored logs and cache, complete one of the following steps:
 

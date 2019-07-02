@@ -35,7 +35,7 @@ When you unenroll your Android device from Intune:
 
 -   Your company support doesn’t manage the device anymore.
 
--	You lose access to company data and resources.
+-   You lose access to company data and resources.
 
 -   Your device doesn’t appear in the Company Portal anymore.
 

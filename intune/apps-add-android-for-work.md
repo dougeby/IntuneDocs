@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/13/2019
+ms.date: 07/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -44,6 +44,9 @@ To make it easier for you to configure and use Android Enterprise management, up
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** -  Helps you sign-in to your accounts if you use two-factor verification.
 - **[Intune Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - Used for App Protection Policies (APP) and Android Enterprise work profile scenarios.
 - [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - Used for Android Enterprise dedicated/kiosk scenarios.
+
+>[!NOTE]
+>When an end user enrolls their Android Enterprise fully managed device, the Intune Company Portal app is automatically installed and the application icon may be visible to the end user. If the end user attempts to launch the Intune Company Portal app, the end user will be redirected to the Microsoft Intune app and the Company Portal app icon will be subsequently hidden.
 
 ## Before you start
 
