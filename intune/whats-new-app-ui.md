@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -36,6 +36,29 @@ Learn about the most recent updates to the Microsoft Intune apps. We regularly a
 If you're an employee or student, be sure to check out the screenshots and links to the Company Portal help documentation. For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## Week of June 24, 2019  
+
+### View all installed apps from new Company Portal web page <!-- 4224326 -->
+The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.   
+
+![Screenshot of Company Portal website, Installed Apps page.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### New view lets app users see all managed apps installed on device <!-- 2352913 -->
+The Company Portal app for Windows now lists all managed apps (both required and available) that are installed on a user's device. Users can also see attempted and pending app installations, and their current statuses. If you haven't made apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the Company Portal navigation pane and select **Apps** > **Installed Apps**.   
+
+![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## Week of June 17, 2019  
+
+#### New features in Microsoft Intune app
+We’ve added new features to the Microsoft Intune app (preview) for Android. Users on fully managed Android devices can now:  
+
+* View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
+* Contact their organization for support.    
+* Send their feedback to Microsoft.    
+* View terms and conditions, if set by their organization. 
 
 ## Week of April 15, 2019  
 
