@@ -332,7 +332,7 @@ Applies to: Windows 10 and later
 #### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate". <!-- 2404851 -->
 By default, Android devices enrolled using Samsung Knox Mobile Enrollment are now marked as **corporate** under **Device Ownership**. You don't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
 
-####  Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
+#### Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
 In the enrollment program tokens list, there is a new column showing the number of devices without a profile assigned. This helps admins assign profiles to these devices before handing them out to users. To see the new column, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens**.
 
 ### Device management
@@ -526,7 +526,7 @@ Please tag **Intune** as a favorite instead of the **Intune App Protection** ser
 
 ### Device configuration
 
-####  Device profile chart and status list show all devices in a group <!-- 1449153 -->
+#### Device profile chart and status list show all devices in a group <!-- 1449153 -->
 When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
 
 With this update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) only shows the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
@@ -576,7 +576,7 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
-####  Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
+#### Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
 Two new properties are available to block when you configure device restrictions for Android devices: 
 - Camera: Blocks access to all cameras on the device
 - Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
@@ -665,7 +665,7 @@ You'll also see:
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
 #### Protect on-premises Exchange data using Intune APP and CA <!-- 1056954 -->
-You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
+You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx).
 
 
 ### User interface
@@ -786,7 +786,7 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
 
-####  Detailed error codes and messages <!-- 1376342 -->
+#### Detailed error codes and messages <!-- 1376342 -->
 
 In your Device Configuration, there are more detailed error codes and error messages available to see. This improved reporting shows the settings, the state of these settings, and details on troubleshooting.
 
@@ -1471,7 +1471,7 @@ A new device configuration profile called **Network boundary** can be found with
 
 You can define enterprise cloud resources, IP address ranges, and internal proxy servers that you want to be considered trusted. Once defined, the network boundary can be consumed by other features such as Windows Defender Application Guard and Windows Information Protection.
 
-###  Two additional settings for Windows Defender Antivirus <!-- 1338409 -->  
+### Two additional settings for Windows Defender Antivirus <!-- 1338409 -->  
 **File blocking level**
 
 | | |
@@ -1657,7 +1657,7 @@ You will be able to specify the country locale during the creation of an Apple A
 > [!Note]  
 > Currently, you can only create Apple App Store managed apps that are present in the US country store.
 
-###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
+### Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune
 will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 
@@ -2105,7 +2105,7 @@ For more information, see [Device restrictions for Android for Work](device-rest
 You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa files) and [Android](lob-apps-android.md) (.apk files) to users or devices.
 
 
-###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
+### New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 - **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
 - **Connections to AirPrint devices** - Controls which [AirPrint devices](air-print-settings-ios-macos.md) (network printers) that end users of iOS device can connect to.

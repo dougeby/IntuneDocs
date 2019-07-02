@@ -61,7 +61,7 @@ If you run `IntuneWinAppUtil.exe` from the command window without parameters, th
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Help    |
 |    `-c <setup_folder>`     |    Folder for all setup files. All files in this folder will be compressed into *.intunewin* file.    |
-|   ` -s <setup_file>`     |    Setup file (such as *setup.exe* or *setup.msi*).    |
+|    `-s <setup_file>`     |    Setup file (such as *setup.exe* or *setup.msi*).    |
 |    `-o <output_folder>`     |    Output folder for the generated *.intunewin* file.    |
 |    `-q`       |    Quiet   mode    |
 
