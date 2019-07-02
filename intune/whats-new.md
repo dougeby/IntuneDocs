@@ -67,8 +67,8 @@ Intune App Protection Policies (APP) on Android and iOS devices now allow you to
 #### All apps page identifies online/offline Microsoft Store for Business apps<!--4089647 -->
 The **All apps** page now includes labeling to identify Microsoft Store for Business (MSFB) apps as online or offline apps. Each MSFB app now includes a suffix for **Online** or **Offline**. The app details page also includes **License Type** and **Supports device context installation** (offline licensed  apps only) information.
 
-#### Company Portal app on shared devices <!--4393553 -->
-Users can now access the Company Portal app on shared devices. End users will see a **Shared** label on the device tile. This applies to Company Portal app version 10.3.45609.0 and later.
+#### Company Portal app on Windows shared devices <!--4393553 -->
+Users can now access the Company Portal app on Windows shared devices. End users will see a **Shared** label on the device tile. This applies to the Windows Company Portal app version 10.3.45609.0 and later.
 
 #### View all installed apps from new Company Portal web page <!-- 4224326 -->
 The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.  
