@@ -52,7 +52,7 @@ The actual error details are kept on your device in a special document called a 
 5. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you came across.    
 
 
- ## Upload and email logs from Microsoft Intune app   
+## Upload and email logs from Microsoft Intune app   
 
 1.  In the Microsoft Intune app, there are two ways to initiate email support.  
     * From the home screen: Tap **Menu** > **Help** > **Get Support**.  

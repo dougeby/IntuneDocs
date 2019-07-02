@@ -105,7 +105,7 @@ Deleting a ring from Intune doesn't modify the settings on devices that were ass
 Select **Pause** to prevent assigned devices from receiving Feature Updates or Quality Updates for up to 35 days from the time you pause the ring. After the maximum days have passed, pause functionality automatically expires and the device scans Windows Updates for applicable updates. Following this scan, you can pause the updates again. 
 If you resume a paused update ring, and then pause that ring again, the pause period resets to 35 days.  
 
- #### To pause a ring  
+#### To pause a ring  
 1. While viewing the overview page for an Update Ring, select **Pause**.  
 2. Select either **Feature** or **Quality** to pause that type of update, and then select **OK**.  
 3. After pausing one update type, you can select Pause again to pause the other update type.  
