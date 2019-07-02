@@ -192,5 +192,5 @@ When the test policies are no longer needed, you can remove them.
 4. Select **Conditional Access** > **Policies**.  
 5. In the **Policy Name** list, select the context menu (**...**) for each of your test policies, and then select **Delete**. Select **Yes** to confirm.  
 
- ## Next steps  
+## Next steps  
 In this tutorial, you created app protection policies to limit what the user can do with the Outlook app, and you created Conditional Access policies to require the Outlook app and require MFA for Modern Authentication clients. To learn about using Intune with Conditional Access to protect other apps and services, see [Set up Conditional Access](conditional-access.md).
