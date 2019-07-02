@@ -99,26 +99,28 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app is added t
 
 5. In **Configure settings with**, choose to use the **Configuration designer** or **JSON editor**:
 
-    - **Configuration designer**: When you select this option, the properties available within the app are shown. These properties are made available from the OEM app, and are configurable.
+    > [!TIP]
+    > Read the OEM documentation to make sure you're configuring the properties correctly. These app properties are included by the OEM, not Intune. Intune provides minimal validation of the properties, or what you enter. For example, if you enter `abcd` for a port number, the profile saves as-is, and is deployed to your devices with the values you configure. Be sure you enter the correct information.
 
-      **What you need to know**  
+    - **Configuration designer**: When you select this option, the properties available within the app schema are shown for you to configure.
 
-      - Read the OEM app documentation to make sure you're configuring the properties correctly. These app properties are included by the OEM, not Intune. Intune doesn't validate the properties, or what you enter. For example, if you enter `abcd` for a port number, the profile saves as-is, and is deployed to your devices with the values you configure. Be sure you enter the correct information.
+      - Context menus in the configuration designer indicate that more options are available. For example, the context menu might let you add, delete and reorder settings. These options are included by the OEM. Be sure to read the OEM app documentation to learn how these options should be used to create profiles.
 
-      - Any changes made in the Configuration designer are also made in the JSON syntax, automatically.
+      - Many settings have default values supplied by the OEM. To see if there's a default value, hover over the info icon next to a setting title. A tooltip appears that shows the default values for that setting (if applicable) and more details provided by the OEM.
 
-      - The context menu on the app may include more options. If the app allows it, you can move items up or down, add settings, delete settings, and more. The options are included by the OEM. Be sure to read the OEM app documentation for these features.
+      - Clicking **Clear** deletes a setting from the profile. If a setting isn't present in the profile, its value on the device won't change when the profile is applied.
+        
+      - If you create an empty (unconfigured) bundle in the configuration designer, it will be deleted when switching to the JSON editor.
 
-      - Many settings have default values. To see if there's a default value, hover over the tooltip. The tooltip may also include more details provided by the OEM.
+    - **JSON editor**: When you select this option, a JSON editor opens with a template for the full configuration schema embedded in the app. In the editor, customize the template with values for the different configuration settings. If you use the **Configuration designer** to edit your values, the JSON editor overwrites the template with values from the configuration designer.
+    
+      - If you're editing an existing profile, the JSON editor shows the settings that were last saved with the profile.
 
-      - Clicking **Clear** deletes a setting from the profile. When you click **Clear**, the device setting stays the value you or the OEM originally set.
+      - OEMConfig schemas can be large and complex. If you prefer to update these settings using a different editor, download the template with the **Download JSON template** button. Use an editor of your choice to add your configuration values to the template. Then, copy and paste your updated JSON in to this property.
+      
+      - You can use the JSON editor to create a backup of your configuration. After you configure your settings, use this feature to get the JSON settings with your values. Copy and paste the JSON to a file, and save it. Now you have a backup file.
 
-    - **JSON editor**: A JSON editor opens with a template for the configuration schema embedded in the app. In the editor, customize the template with values for the different configuration settings. When you use the **Configuration designer** to add your values, the updated settings are also shown in this JSON editor, automatically.
-
-      Use the **Download JSON template** button to:
-
-      - OEMConfig schemas can be large and complex. If you prefer to update these settings using JSON, then download the template. Use an editor of your choice to add your configuration values. Then, copy and paste your updated JSON in to this property.
-      - Create a backup of your configuration. After you configure your settings, use this feature to get the JSON settings with your values. Copy and paste the JSON text to a file, and save it. Now you have a backup file.
+    Any changes made in the configuration designer are also made automatically in the JSON editor. Likewise, any changes made in the JSON editor are automatically made in the configuration designer. If your input contains invalid values, you won't be able to switch between the configuration designer and JSON editor until you fix the issues.
 
 6. Select **OK** > **Add** to save your changes. The policy is created and shown in the list.
 
