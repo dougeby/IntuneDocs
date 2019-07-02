@@ -128,6 +128,8 @@
           href: migration-guide-drive-adoption.md
         - name: Typical migration cycle
           href: migration-guide-cycle.md
+    - name: Plan communications
+      href: migration-guide-communication-plan.md
   - name: Set up Intune
     items:
     - name: Steps to set up Intune
@@ -198,7 +200,7 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
-      - name: Enrollment status page
+      - name: Enrollment Status Page
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
