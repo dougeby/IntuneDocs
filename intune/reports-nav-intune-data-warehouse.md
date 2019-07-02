@@ -26,7 +26,7 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-#  Microsoft Intune Data Warehouse API
+# Microsoft Intune Data Warehouse API
 
 The Intune Data Warehouse API lets you access your Intune data in a machine-readable format for use in your favorite analytics tool. You can use the API to build reports that provide insight into your enterprise mobile environment. The API uses the OData protocol, which follows standard patterns for:
 

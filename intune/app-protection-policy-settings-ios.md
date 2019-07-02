@@ -28,14 +28,14 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-#  iOS app protection policy settings
+# iOS app protection policy settings
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article describes the app protection policy settings for iOS devices. The policy settings that are described can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal when you make a new policy.
 
 There are three categories of policy settings: *Data relocation*, *Access requirements*, and *Conditional launch*. In this article, the term ***policy-managed apps*** refers to apps that are configured with app protection policies.
 
-##  Data protection
+## Data protection
 
 ### Data Transfer
 | Setting | How to use | Default value |
@@ -118,7 +118,7 @@ By default, several settings are provided with pre-configured values and actions
 
 
 
-##  Add-ins for Outlook app
+## Add-ins for Outlook app
 
 Outlook recently brought add-ins to Outlook for iOS, which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. The Intune SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
 
@@ -133,7 +133,7 @@ These instructions apply to Office 365, Exchange 2016, Exchange 2013 across Outl
 - Learn more about [add-ins for Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
 - Learn more about [how to specify the administrators and users who can install and manage add-ins for Outlook app](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
 
-##  LinkedIn account connections for Microsoft apps
+## LinkedIn account connections for Microsoft apps
 
 LinkedIn account connections allow users to see public LinkedIn profile information within certain Microsoft apps. By default, your users can choose to connect their LinkedIn and Microsoft work or school accounts to see additional LinkedIn profile information. 
 

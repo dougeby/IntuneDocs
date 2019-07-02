@@ -34,7 +34,7 @@ There are three categories of policy settings: data protection settings, access 
 > [!IMPORTANT]
 > The Intune Company Portal is required on the device to recieve App Protection Policies for Android devices. For more information, see the [Intune Company Portal access apps requirements](end-user-mam-apps-android.md).
 
-##  Data protection 
+## Data protection 
 ### Data Transfer
 | Setting | How to use | Default value |
 |------|------|------|
@@ -99,7 +99,7 @@ There are three categories of policy settings: data protection settings, access 
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
 
-##  Access requirements
+## Access requirements
 
 | Setting | How to use |  
 |------|------| 
