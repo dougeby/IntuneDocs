@@ -97,7 +97,7 @@ The following procedure assumes you've previously created a user group in Azure 
 
 3. Select **Enrollment Management**, and for **Use the following Azure AD security groups to identify devices that should be enrolled in Lookout for Work**, specify the *Group name* of an Azure AD group to use with Lookout, and then select **Save changes**.
 
-	![screenshot of the Intune connector enrollment page](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
+    ![screenshot of the Intune connector enrollment page](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
    **About the groups you use**:
    - As a best practice, start with an Azure AD security group that contains a small number of users to test Lookout integration.

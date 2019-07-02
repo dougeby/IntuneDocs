@@ -51,7 +51,7 @@ Windows Information Protection (WIP) policies can be deployed without requiring 
 
 2.  Choose **All services**, type **Intune** in the filter textbox, and select **Intune**. The Intune pane opens, choose the **Client apps** pane.
 
-	![Screenshot of the Microsoft Intune pane](./media/apps-selective-wipe01.png)
+    ![Screenshot of the Microsoft Intune pane](./media/apps-selective-wipe01.png)
 
 3.  On the **Client apps pane**, choose **App selective wipe**.
 
@@ -73,7 +73,7 @@ You can have a summarized report that shows the overall status of the wipe reque
 
 1.  On the **Client Apps - App selective wipe** pane, you can see the list of your requests grouped by users. Because the system creates a wipe request for each protected app running on the device, you might see multiple requests for a user. The status indicates whether a wipe request is **pending**, **failed**, or **successful**.
 
-	![Screenshot of the wipe request status in the App selective wipe pane](./media/wipe-request-status-1.png)
+    ![Screenshot of the wipe request status in the App selective wipe pane](./media/wipe-request-status-1.png)
 
 Additionally, you are able to see the device name, and its device type, which can be helpful when reading the reports.
 
@@ -88,7 +88,7 @@ Wipes with pending status are displayed until you manually delete them. To manua
 
 2.  From the list, right-click on the wipe request you want to delete, then choose **Delete wipe request**.
 
-	![Screenshot of the wipe request list in the App selective wipe pane](./media/delete-wipe-request.png)
+    ![Screenshot of the wipe request list in the App selective wipe pane](./media/delete-wipe-request.png)
 
 3.  You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 
