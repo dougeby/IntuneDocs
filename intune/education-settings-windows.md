@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # Configure the Take a Test app on Windows 10 devices using Intune
 
-The Take a Test app lets you securely administer online tests on your classroom's Windows 10 devices. To set up the Take a Test app, create a device configuration profile in Intune and configure the **Secure assessment (Education)** settings. This article describes the settings you'll find for the Take a Test app. 
+The Take a Test app lets you securely administer online tests on your classroom's Windows 10 devices. To set up the Take a Test app, you'll need to create a device configuration profile in Intune and configure the secure assessment settings. This article describes the settings you'll find for the Take a Test app. 
 
 After you've configured the profile, assign and deploy it to your students. 
 
@@ -40,7 +40,7 @@ After you've configured the profile, assign and deploy it to your students.
 [Create a device configuration profile](education-settings-configure.md#create-a-device-profile).
 
 ## Take a test settings
-After you create a device configuration profile, go to **Profile type** and select **Secure assessment (Education)** to find these settings.  
+After you create a device configuration profile, go to **Profile type** and select **Secure assessment (Education)**. You'll find the following Take a Test app settings. 
 
 - **Account type**: Choose how users sign in to the test. Your options:
   - Azure AD account
@@ -60,4 +60,4 @@ After you create a device configuration profile, go to **Profile type** and sele
 
 ## Next steps
 
-The profile is created, but it may not be doing anything yet. Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
+Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
