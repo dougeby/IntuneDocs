@@ -72,9 +72,9 @@ You now have an app defined in Azure. Grant access from the native app to the Mi
     ![Enable access - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
 9. Select **Select**.
-0. Select **Done**.
-1. Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-2. Select **Yes**.
+10. Select **Done**.
+11. Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12. Select **Yes**.
 
 ## Get data from the Microsoft Intune API with Postman
 
