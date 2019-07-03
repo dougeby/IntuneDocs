@@ -1326,7 +1326,7 @@ The Data Backup guide specifies a general algorithm for restoring your applicati
 By default, the Intune App SDK will apply policy  to the app as a whole. Multi-identity is an optional Intune app protection feature that can be enabled to allow policy to be applied on a per-identity level. This requires significantly more app participation than other app protection features.
 
 > [!NOTE]
->  A lack of the correct app participation can result in data leaks and other security issues.
+> A lack of the correct app participation can result in data leaks and other security issues.
 
 Once the user enrolls the device or the app, the SDK registers this identity and considers it the primary Intune managed identity. Other users in the app will be treated as unmanaged, with unrestricted policy settings.
 
