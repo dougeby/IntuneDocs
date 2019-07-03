@@ -59,11 +59,11 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ## Week of July 8, 2019
 
-### New Office and OneDrive settings in Windows 10 administrative templates <!-- 3510695 -->
+### New Office, Windows and OneDrive settings in Windows 10 administrative templates <!-- 3510695 -->
 
 You can create Administrative templates in Intune that mimic on-premises group policy management (**Device management** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Administrative template** for profile type).
 
-In addition to configuring Windows settings, this update includes more Office and OneDrive settings you can add to your templates. With these new settings, you can now configure over 2500 settings that are 100% cloud-based.
+This update includes more Office, Windows and OneDrive settings you can add to your templates. With these new settings, you can now configure over 2500 settings that are 100% cloud-based.
 
 To learn more about this feature, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
 
