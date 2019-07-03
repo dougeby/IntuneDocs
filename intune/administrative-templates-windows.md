@@ -88,7 +88,7 @@ There are hundreds of settings available in these templates. To make it easier t
 
 - In your template, use the **Search** box to find specific settings. For example, search for `copy`. All the settings with `copy` are shown:
 
-  ![Search for copy to show all the Windows and Office settings in administrative templates in Intune](./media/administrative-templates-windows/search-copy-settings.png)
+  ![Search for copy to show all the Windows and Office settings in administrative templates in Intune] You can search by title of setting or by setting path. (./media/administrative-templates-windows/search-copy-settings.png) 
 
   In another example, search for `microsoft word`. You see all the settings you can set for the Microsoft Word program. Search for `explorer` to see all the Internet Explorer settings you can add to your template.
 
