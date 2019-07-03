@@ -39,17 +39,17 @@ Before running the tool, review [Security considerations for running the App Wra
 
 ## Fulfill the prerequisites for using the App Wrapping Tool
 
--   You must run the App Wrapping Tool on a Windows computer running Windows 7 or later.
+- You must run the App Wrapping Tool on a Windows computer running Windows 7 or later.
 
--   Your input app must be a valid Android application package with the file extension .apk and:
+- Your input app must be a valid Android application package with the file extension .apk and:
 
-    -   It cannot be encrypted.
-    -   It must not have previously been wrapped by the Intune App Wrapping Tool.
-    -   It must be written for Android 4.0 or later.
+    - It cannot be encrypted.
+    - It must not have previously been wrapped by the Intune App Wrapping Tool.
+    - It must be written for Android 4.0 or later.
 
--   The app must be developed by or for your company. You cannot use this tool on apps downloaded from the Google Play Store.
+- The app must be developed by or for your company. You cannot use this tool on apps downloaded from the Google Play Store.
 
--   To run the App Wrapping Tool, you must install the latest version of the [Java Runtime Environment](https://java.com/download/) and then ensure that the Java path variable has been set to C:\ProgramData\Oracle\Java\javapath in your Windows environment variables. For more help, see the [Java documentation](https://java.com/download/help/).
+- To run the App Wrapping Tool, you must install the latest version of the [Java Runtime Environment](https://java.com/download/) and then ensure that the Java path variable has been set to C:\ProgramData\Oracle\Java\javapath in your Windows environment variables. For more help, see the [Java documentation](https://java.com/download/help/).
 
     > [!NOTE]
     > In some cases, the 32-bit version of Java may result in memory issues. It's a good idea to install the 64-bit version.
@@ -65,9 +65,9 @@ Before running the tool, review [Security considerations for running the App Wra
 
 ## Install the App Wrapping Tool
 
-1.  From the [GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), download the installation file InstallAWT.exe for the Intune App Wrapping Tool for Android to a Windows computer. Open the installation file.
+1. From the [GitHub repository](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android), download the installation file InstallAWT.exe for the Intune App Wrapping Tool for Android to a Windows computer. Open the installation file.
 
-2.  Accept the license agreement, then finish the installation.
+2. Accept the license agreement, then finish the installation.
 
 Note the folder to which you installed the tool. The default location is: C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
@@ -145,15 +145,15 @@ If the app has been deployed previously with a different signing certificate, th
 ## Security considerations for running the App Wrapping Tool
 To prevent potential spoofing, information disclosure, and elevation of privilege attacks:
 
--   Ensure that the input line-of-business (LOB) application, output application, and Java KeyStore are on the same Windows computer where the App Wrapping Tool is running.
+- Ensure that the input line-of-business (LOB) application, output application, and Java KeyStore are on the same Windows computer where the App Wrapping Tool is running.
 
--   Import the output application to Intune on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more about the Java keytool.
+- Import the output application to Intune on the same machine where the tool is running. See [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) for more about the Java keytool.
 
--   If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, set up the environment to be secure by using [Internet Protocol Security (IPsec)](https://wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/kb/887429).
+- If the output application and the tool are on a Universal Naming Convention (UNC) path and you are not running the tool and input files on the same computer, set up the environment to be secure by using [Internet Protocol Security (IPsec)](https://wikipedia.org/wiki/IPsec) or [Server Message Block (SMB) signing](https://support.microsoft.com/kb/887429).
 
--   Ensure that the application is coming from a trusted source.
+- Ensure that the application is coming from a trusted source.
 
--   Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
+- Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
 ### See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)

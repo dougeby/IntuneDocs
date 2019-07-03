@@ -1837,7 +1837,7 @@ The following settings are either:
 - *Revised* in some way from how the settings appeared in the previous version. 
 
 *[New]* [**Above Lock**](#above-lock):
--  **Voice activate apps from locked screen**    
+- **Voice activate apps from locked screen**    
 
 *[New]* [**Application Management**](#application-management): 
 - **Block user control over installations**  
