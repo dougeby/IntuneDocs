@@ -42,7 +42,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
 For information about adding your organization's line-of-business (LOB) apps to Microsoft Intune to prepare for app protection policies, see [Add apps to Microsoft Intune](apps-add.md).
 
-##  Create an app protection policy
+## Create an app protection policy
 1. In Intune portal, go to **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Select **Create Policy**.
 
@@ -98,7 +98,7 @@ End users can download the apps from the App store or Google Play. For more info
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
 
-##  Change existing policies
+## Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies, users who are already signed in to the apps won’t see the changes for an eight-hour period.
 
 To see the effect of the changes immediately, the end user must sign out of the app, and then sign back in.

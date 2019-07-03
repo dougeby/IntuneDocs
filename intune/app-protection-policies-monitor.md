@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -53,14 +53,15 @@ The retention period for app protection data is 90 days. Any app instances that 
 
 - **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
 - **Flagged users**: The number of users who are experiencing issues. Jailbroken (iOS) and rooted (Android) devices are reported under **Flagged users**. Users with devices that are flagged by the Google SafetyNet device attestation check (if turned on by the IT admin) are reported here. 
+- **Users with potentially harmful apps**: The number of users who may have a harmful app on their Android device detected by Google Play Protect. 
 - **User status for iOS** and **User status for Android**: The number of users who have used an app who have a policy assigned to them in a work context for the related platform. This information shows the number of users managed by the policy, as well as the number of users who are using an app that is not targeted by any policy in a work context. You might consider adding these users to the policy.
 - **Top Protected iOS Apps**: Based on the most used iOS apps, this information shows the number of protected and unprotected iOS apps.
 - **Top Protected Android Apps**: Based on the most used Android apps, this information shows the number of protected and unprotected Android apps.
 - **Top Configured iOS Apps Without Enrollment**: Based on the most used iOS apps for unenrolled devices, this information shows the number of configured iOS apps.
 - **Top Configured Android Apps Without Enrollment**: Based on the most used Android apps for unenrolled devices, this information shows the number of configured Android apps.
 
-	> [!NOTE]
-	> If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy is assigned to them.
+    > [!NOTE]
+    > If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy is assigned to them.
 
 ## Detailed view
 You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), and the **Flagged users** tile.
@@ -84,7 +85,7 @@ To see the reporting for a user, follow these steps:
 
 1.  To select a user, choose the **User status** summary tile.
 
-	![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
+    ![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** pane that opens, choose **Select user** to search for an Azure Active Directory user.
 
@@ -138,11 +139,11 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
-	![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
+    ![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
 
 2. Choose **Yes** to save your report, then choose **Save As** and select the folder you want to save the report in.
 
-	![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
+    ![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)

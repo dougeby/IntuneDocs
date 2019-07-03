@@ -80,8 +80,8 @@ To assign a device compliance policy to users, choose a policy that you have pre
 
 2. Choose **Select groups to include** to open the pane that displays the Azure AD security groups.  Choosing **Select**  deploys the policy to users.
 
-	> [!NOTE] 
-	> You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
+    > [!NOTE] 
+    > You have applied the policy to users. The devices used by the users who are targeted by the policy are evaluated for compliance.
 
 ## Next steps
 

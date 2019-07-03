@@ -37,10 +37,10 @@ This article provides suggestions for troubleshooting [device enrollment](device
 
 Before you begin troubleshooting, check to make sure that you've configured Intune properly to enable enrollment. You can read about those configuration requirements in:
 
--	[Get ready to enroll devices in Microsoft Intune](setup-steps.md)
--	[Set up iOS and Mac device management](ios-enroll.md)
--	[Set up Windows device management](windows-enroll.md)
--	[Set up Android device management](android-enroll.md) - No additional steps required
+- [Get ready to enroll devices in Microsoft Intune](setup-steps.md)
+- [Set up iOS and Mac device management](ios-enroll.md)
+- [Set up Windows device management](windows-enroll.md)
+- [Set up Android device management](android-enroll.md) - No additional steps required
 
 You can also make sure that the time and date on the user's device are set correctly:
 
@@ -242,17 +242,17 @@ The certificate error occurs because Android devices require intermediate certif
 
 To fix the issue, import the certificates into the Computers Personal Certificates on the AD FS server or proxies as follows:
 
-1.	On the ADFS and proxy servers, right-click **Start** > **Run** > **certlm.msc** to launch the Local Machine Certificate Management Console.
-2.	Expand **Personal** and choose **Certificates**.
-3.	Find the certificate for your AD FS service communication (a publicly signed certificate), and double-click to view its properties.
-4.	Choose the **Certification Path** tab to see the certificate’s parent certificate/s.
-5.	On each parent certificate, choose **View Certificate**.
-6.	Choose **Details** > **Copy to file…**.
-7.	Follow the wizard prompts to export or save the public key of the parent certificate to the a file location of your choice.
-8.	Right-click **Certificates** > **All Tasks** > **Import**.
-9.	Follow the wizard prompts to import the parent certificate(s) to **Local Computer\Personal\Certificates**.
-10.	Restart the AD FS servers.
-11.	Repeat the above steps on all of your AD FS and proxy servers.
+1. On the ADFS and proxy servers, right-click **Start** > **Run** > **certlm.msc** to launch the Local Machine Certificate Management Console.
+2. Expand **Personal** and choose **Certificates**.
+3. Find the certificate for your AD FS service communication (a publicly signed certificate), and double-click to view its properties.
+4. Choose the **Certification Path** tab to see the certificate’s parent certificate/s.
+5. On each parent certificate, choose **View Certificate**.
+6. Choose **Details** > **Copy to file…**.
+7. Follow the wizard prompts to export or save the public key of the parent certificate to the a file location of your choice.
+8. Right-click **Certificates** > **All Tasks** > **Import**.
+9. Follow the wizard prompts to import the parent certificate(s) to **Local Computer\Personal\Certificates**.
+10. Restart the AD FS servers.
+11. Repeat the above steps on all of your AD FS and proxy servers.
 
 To verify a proper certificate installation, you can use the diagnostics tool available on [https://www.digicert.com/help/](https://www.digicert.com/help/). In the **Server Address** box, enter your ADFS server’s FQDN (IE: sts.contso.com) and click **Check Server**.
 

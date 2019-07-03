@@ -37,6 +37,10 @@ Using Intune app protection policies with Microsoft Edge helps ensure that corpo
 -	**Azure Application Proxy integration.** You can control access to software as a service (SaaS) apps and web apps. This helps ensure that browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the internet.
 -	**Application configuration.** You can use application configuration settings to strengthen your organization's security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed or blocked sites, and Azure Active Directory (Azure AD) Application Proxy.
 
+1. **Dual-Identity** - Users can add both a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins will be able to set the desired policies for a protected browsing experience within the work account.
+2. **Intune app protection policy integration** – Since Microsoft Edge is integrated with the Intune SDK, you can target app protection policies to ensure data loss protection. These capabilities include the control of cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
+3. **Azure Application Proxy integration** - You can control access to SaaS apps and web apps, helping ensure browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the Internet.
+4. **Application configuration** – You can leverage application configuration settings to strengthen your organizations security posture and configure ease-of-use features for your end users. For example, you can define bookmarks, a homepage shortcut, allowed/blocked sites, Azure Application Proxy, and more.
 Microsoft Intune protection policies for Microsoft Edge help to protect your organization’s data and resources. Using these policies with Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
 
 ## Getting started
@@ -117,9 +121,9 @@ To create a protected browser app configuration:
     > [!NOTE]
     > Microsoft Edge uses the same key and value pairs as the Managed Browser. 
 
-8.	When you are done, select **OK**.
-9.	On the **Add configuration policy** blade, select **Add**.<br>
-	The new configuration is created, and displayed on the **App configuration** blade.
+8. When you are done, select **OK**.
+9. On the **Add configuration policy** blade, choose **Add**.<br>
+    The new configuration is created and displayed on the **App configuration** blade.
 
 ## Assign the configuration settings you created 
 

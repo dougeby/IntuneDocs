@@ -60,8 +60,8 @@ Once you have selected the included groups for your application configuration po
     - **Description** - The description of the profile that appears in the Azure portal.
     - **Device enrollment type** - Choose **Managed devices** for devices that have been enrolled in Intune.
 6. Select **iOS** for **Platform**.
-7.	Choose **Associated app**. Then, on the **Associated app** pane, choose the managed app to which you want to apply the configuration and select **OK**.
-8.	On the **Add configuration policy** pane, choose **Configuration settings**.
+7. Choose **Associated app**. Then, on the **Associated app** pane, choose the managed app to which you want to apply the configuration and select **OK**.
+8. On the **Add configuration policy** pane, choose **Configuration settings**.
 9. Select **Configuration settings format**. Select one of the following methods to add configuration information:
     - **Use configuration designer**
     - **Enter XML data**<br><br>
