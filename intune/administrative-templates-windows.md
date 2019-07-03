@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/02/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -86,9 +86,9 @@ There are hundreds of settings available in these templates. To make it easier t
 
   ![Click path to show all the settings grouped by the group policy or ADMX path in administrative templates in Intune](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- In your template, use the **Search** box to find specific settings. For example, search for `copy`. All the settings with `copy` are shown:
+- In your template, use the **Search** box to find specific settings. You can search by setting title, or path. For example, search for `copy`. All the settings with `copy` are shown:
 
-  ![Search for copy to show all the Windows and Office settings in administrative templates in Intune](./media/administrative-templates-windows/search-copy-settings.png)
+  ![Search for copy to show all the Windows and Office settings in administrative templates in Intune](./media/administrative-templates-windows/search-copy-settings.png) 
 
   In another example, search for `microsoft word`. You see all the settings you can set for the Microsoft Word program. Search for `explorer` to see all the Internet Explorer settings you can add to your template.
 
