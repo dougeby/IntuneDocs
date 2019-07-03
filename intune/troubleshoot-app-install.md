@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -55,15 +55,16 @@ The app installation error details will indicate the problem. You can use these 
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
 
 ## User Group targeted app installation does not reach device
-- If the app does not display in the Company Portal, ensure it is deployed with 'Available' intent and that user is accessing Company Portal with the device type supported by the app
-- For Windows BYOD devices, the user needs to add a Work account to the device
-- Check if the user is over the AAD device limit
-  1. Navigate to [Azure Active Directory Device Settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)
-  2. Make note of the value set for "Maximum devices per user"
-  3. Navigate to [Azure Active Directory Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)
-  4. Select the affected user and click 'Devices'
-  5. If user is over the set limit then delete any stale records that are no longer needed
-- For iOS DEP devices, ensure that the user is listed as'Enrolled by User' in Intune Device Overview blade. If it shows NA then deploy a config policy for the Intune Company Portal, see [Configure the Company Portal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices)
+The following actions should be considered when you have problems installing apps:
+- If the app does not display in the Company Portal, ensure the app is deployed with **Available** intent and that the user is accessing the Company Portal with the device type supported by the app.
+- For Windows BYOD devices, the user needs to add a Work account to the device.
+- Check if the user is over the AAD device limit:
+  1. Navigate to [Azure Active Directory Device Settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Make note of the value set for **Maximum devices per user**.
+  3. Navigate to [Azure Active Directory Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Select the affected user and click **Devices**.
+  5. If user is over the set limit then delete any stale records that are no longer needed.
+- For iOS DEP devices, ensure that the user is listed as **Enrolled by User** in Intune Device Overview blade. If it shows NA, then deploy a config policy for the Intune Company Portal. For more information, see [Configure the Company Portal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## Win32 app installation troubleshooting
 
