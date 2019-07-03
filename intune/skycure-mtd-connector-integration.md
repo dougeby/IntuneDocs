@@ -89,7 +89,7 @@ SEP Mobile supports two modes of integration with Intune:
 
 You need to add an Azure AD security group that contains all devices running SEP Mobile.
 
-- Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
+- Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
 
     ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 

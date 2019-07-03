@@ -40,11 +40,11 @@ Your Intune design is based on the information you collect and decisions you mak
 
 - Device platform considerations
 
-- Requirements to be delivered  
+- Requirements to be delivered  
 
 Although there’s minimal on-premises infrastructure requirements, a design plan is still helpful to make sure you have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Let’s review each of these areas in more detail. 
+Let’s review each of these areas in more detail. 
 
 ## Record your current environment
 Additionally, it’s common to have design changes during the implementation and testing phases. Use your design plan to document these changes and the rationale behind them as they occur.
