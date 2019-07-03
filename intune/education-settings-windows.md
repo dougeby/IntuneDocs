@@ -19,7 +19,7 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: kakyker  
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -29,9 +29,9 @@ ms.collection: M365-identity-device-management
 
 # Configure the Take a Test app on Windows 10 devices using Intune
 
-The Take a Test app lets you securely administer online tests on your classroom's Windows 10 devices. To start a test, students sign in to a test profile that you've set up for them and then click the assessment URL to launch the test. 
+The Take a Test app lets you securely administer online tests on your classroom's Windows 10 devices. To set up the Take a Test app, create a device configuration profile in Intune and configure the **Secure assessment (Education)** settings. This article describes the settings you'll find for the Take a Test app. 
 
-To set up the Take a Test app, you must create a device configuration profile in Intune and configure the Take a Test settings. You can then assign and deploy the profile to your students.  
+After you've configured the profile, assign and deploy it to your students. 
 
 [Take a Test app in Intune](education-settings-configure.md) provides more information on this feature.
 
@@ -54,8 +54,9 @@ After you create a device configuration profile, go to **Profile type** and sele
   - `computerName\username`
 - **Account name**: To set up a local guest account type, enter the name of the account used with the Take a Test app. The account name will appear as a tile on the sign-in screen. Students click the tile to launch the test.​  
 - **Assessment URL**: Enter the URL of the test you want users to take. For more information on getting the URL, see the [Take a Test documentation](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- **Printer connection**: Choose **Require** to only allow access to the Take a Test app from devices that are connected to a printer. This setting also makes the app’s print button available to test-takers. **Not configured** allows students to access the app from devices that aren't connected to a printer.​  
 - **Screen monitoring**: Choose **Allow** to monitor the screen activity while users are taking a test. **Not configured** prevents you from monitoring the screen during the test.
-- **Text suggestion**: Choose **Allow** so test takers can see text suggestions. **Not configured** blocks text suggestions while users are taking a test.
+- **Text suggestions**: Choose **Allow** so test takers can see text suggestions. **Not configured** blocks text suggestions while users are taking a test.
 
 ## Next steps
 
