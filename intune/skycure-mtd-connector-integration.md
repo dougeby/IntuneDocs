@@ -150,7 +150,7 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
     ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 
-1. SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
+11. SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
 
      ![Image showing SEP Mobile full integration completed](media/symantec-portal-basic-status.PNG)
 ## Next steps
