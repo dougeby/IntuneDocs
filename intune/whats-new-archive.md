@@ -797,7 +797,7 @@ In your Device Configuration, there are more detailed error codes and error mess
    This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
   - configd - implements DHCP and other network configuration services
   - mDNSResponder - implements Bonjour
-  - racoon -  implements IPSec
+  - racoon - implements IPSec
 
     To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
 
@@ -1451,9 +1451,9 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
 ### New device restriction settings for Windows 10      <!-- 1308850 -->
--    Messaging (mobile only) - disable testing or MMS messages
--    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
--    Display - settings to turn on or off GDI Scaling for legacy apps
+- Messaging (mobile only) - disable testing or MMS messages
+- Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
+- Display - settings to turn on or off GDI Scaling for legacy apps
 
 ### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
 You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
@@ -1761,10 +1761,10 @@ Improvements to the device overview now display enrolled devices but excludes de
 <!-- 961134, 1104426, 1281327, 1333543 -->
 In this release, we’ve made the following improvements to the inventory information collected by devices you manage:
  
--   For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
--   When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
--   We’ve made improvements to the filter used by the **Last Check-in Date** item.
--   In the device list, you can now display the phone number of corporate owned devices.
+- For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
+- When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
+- We’ve made improvements to the filter used by the **Last Check-in Date** item.
+- In the device list, you can now display the phone number of corporate owned devices.
 Additionally, you can use the filter pane to search for devices by phone number.
 
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
@@ -1783,16 +1783,16 @@ The Company Portal app for macOS is now available as part of the public preview 
 <!--1063965, 1308850  -->
 In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
 
--   Windows Defender SmartScreen
--   App store
+- Windows Defender SmartScreen
+- App store
 
 ### Updates to the Windows 10 endpoint protection device profile for BitLocker settings
 <!--1459533 -->    
 In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
  
--   Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
--   Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
--   Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
+- Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
+- Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
+- Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
 For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
 
 
@@ -1942,13 +1942,13 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 ### New settings for Windows 10 device restriction profile <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
 In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
 
--  Windows Defender
--  Cellular and connectivity
--  Locked screen experience
--  Privacy
--  Search
--  Windows Spotlight
--  Microsoft Edge browser
+- Windows Defender
+- Cellular and connectivity
+- Locked screen experience
+- Privacy
+- Search
+- Windows Spotlight
+- Microsoft Edge browser
 
 For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 

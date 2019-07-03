@@ -55,13 +55,13 @@ If you’re ready to move to the Azure portal, follow the steps in this topic to
 
 ### To verify your device-based Conditional Access policies in the Intune classic portal
 
-1.  Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
+1. Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
 
-2.  Choose **Policy** from the left menu.
+2. Choose **Policy** from the left menu.
 
-3.  Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) you created a Conditional Access policy for.
+3. Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) you created a Conditional Access policy for.
 
-4.  Take note of your Conditional Access settings, and refer to these when you create the same Conditional Access policies in the Azure portal.
+4. Take note of your Conditional Access settings, and refer to these when you create the same Conditional Access policies in the Azure portal.
 
 ### App and device-based Conditional Access policies working together
 
@@ -198,13 +198,13 @@ After you have reassigned your Conditional Access policies in the Azure portal, 
 
 ### To disable the Conditional Access policies
 
-1.  Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
+1. Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
 
-2.  Choose **Policy** from the left menu.
+2. Choose **Policy** from the left menu.
 
-3.  Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) that you created a Conditional Access policy for.
+3. Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) that you created a Conditional Access policy for.
 
-4.  Uncheck the option **Enable Conditional Access policy**, and then click **Save**.
+4. Uncheck the option **Enable Conditional Access policy**, and then click **Save**.
 
     ![Image of Disable Conditional Access policies in the Intune classic portal](./media/reassign-ca-18.png)
 

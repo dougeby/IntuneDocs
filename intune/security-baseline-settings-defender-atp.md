@@ -197,7 +197,7 @@ For more information, [BitLocker Group Policy settings](https://docs.microsoft.c
 ## Device Control  
 
 - **Scan removable drives during a full scan**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) -  When set to *Yes*, Defender scans for malicious and unwanted software in removable drives, like flash drives, during a full scan. Defender Antivirus scans all files on USB devices before files on the USB device can run.
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) - When set to *Yes*, Defender scans for malicious and unwanted software in removable drives, like flash drives, during a full scan. Defender Antivirus scans all files on USB devices before files on the USB device can run.
 
   Related setting in this list: *Defender/AllowFullScanOnMappedNetworkDrives*  
 
