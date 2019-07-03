@@ -70,7 +70,7 @@ You can manually add users to your Intune subscription via the [Microsoft 365 ad
    Choose **OK** to continue.
 5. Optionally, you can specify the following user properties:
    - **Profile** - Work information including **Job title** and **Department**
-   -  **Groups** - Select groups to add for the user
+   - **Groups** - Select groups to add for the user
    - **Directory role** - Give the user administrative permissions including an Intune service administrator role.
 
    Select **Create** to add the new user to Intune.
