@@ -374,13 +374,13 @@ To review the existing entitlements of a signed app and provisioning profile:
 3. Use the codesign tool to check the entitlements on the .app bundle, where `YourApp.app` is the actual name of your .app bundle.:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4. Use the security tool to check the entitlements of the app's embedded provisioning profile, where `YourApp.app` is the actual name of your .app bundle.
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### Remove entitlements from an app by using the –e parameter
