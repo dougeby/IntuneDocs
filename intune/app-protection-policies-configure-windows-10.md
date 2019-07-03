@@ -56,7 +56,7 @@ Enable mobile application management (MAM) for Windows 10 by setting the MAM pro
    **MAM compliance URL**  
    The MAM compliance URL is not supported for Microsoft Intune. This input box must be left blank for protection policies to apply. 
 
-5.  Click **Save**.
+5. Click **Save**.
 
 ## Next steps
 

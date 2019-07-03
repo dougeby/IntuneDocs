@@ -44,9 +44,9 @@ All Windows devices can be synced from the device Settings app, including:
 ## Sync directly from Company Portal app for Windows
 Complete these steps to manually sync any Windows 10 device running Creator's Update (version 1703) or later.
 
-1.  Open the Company Portal app on your device.
+1. Open the Company Portal app on your device.
 
-2.  Select **Settings** > **Sync**.
+2. Select **Settings** > **Sync**.
 
     ![Screenshot home page of Company Portal app, Settings highlighted](./media/RS1_homePage_settings_04.png)  
     
@@ -75,13 +75,13 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
 
 3. Multiple versions of Windows 10 exist for desktops. Compare your screen to the screenshots below to determine which set of steps to follow. 
 
-	* If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school-steps).
+    * If your screen reads **Access work or school**, skip to the steps in [Access work or school](#access-work-or-school-steps).
 
-	![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+    ![Access work or school option in settings app](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-	* If your screen reads **Work access**, skip to the steps under [Work access](#work-access-steps).  
+    * If your screen reads **Work access**, skip to the steps under [Work access](#work-access-steps).  
 
-	![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
+    ![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
 #### Access work or school steps
 
@@ -99,7 +99,7 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
 
 #### Work access steps
 
-1.  Click **Work access**.
+1. Click **Work access**.
 
     ![Choosing work access as the account type](./media/win10pc-sync-3-work-access.png)
 
@@ -131,12 +131,12 @@ Complete these steps to manually sync your Microsoft HoloLens, Windows 10 deskto
        ![Choosing the Sync icon](./media/win10m-sync-4-tap-sync.png)  
 ### Microsoft HoloLens  
 These instructions apply to HoloLens devices running the Windows 10 Anniversary Update (also known as RS1). 
-1.  Open the Settings app on your device.  
+1. Open the Settings app on your device.  
 
-2.  Select **Accounts** > **Work Access**.  
+2. Select **Accounts** > **Work Access**.  
     ![Screenshot HoloLens settings app, accounts link highlighted](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-3.  Select your connected account > **Sync**.
+3. Select your connected account > **Sync**.
     ![Screenshot HoloLens settings app, sync button highlighted](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
 
 ### Windows Phone 8.1

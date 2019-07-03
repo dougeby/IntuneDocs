@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/14/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -38,9 +38,9 @@ You can use Intune to add and deploy Mobile Threat Defense (MTD) apps so that en
 ## Before you begin    
 The below steps need to be completed in the [Azure portal](https://portal.azure.com/). Make sure you’re familiar with the process of:
 
--   [Adding an app into Intune](apps-add.md).
--   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
--   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Adding an app into Intune](apps-add.md).
+- [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
 
 > [!TIP]
 > The Intune Company Portal works as the broker on Android devices so users can have their identities checked by Azure AD.
@@ -60,6 +60,7 @@ Choose the section that corresponds to your MTD provider:
 - [Pradeo](#configure-pradeo-apps)
 - [Better Mobile](#configure-better-mobile-apps)
 - [Sophos Mobile](#configure-sophos-apps)
+- [Wandera](#configure-wandera-apps)
 
 ### Configure Lookout for Work apps  
 - **Android**  
@@ -133,6 +134,14 @@ Choose the section that corresponds to your MTD provider:
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [ActiveShield app store URL](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) on **step 11** for the **Appstore URL**.
 
+### Configure Wandera apps  
+ 
+- **Android**
+  - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Wandera Mobile app store URL](https://play.google.com/store/apps/details?id=com.wandera.android) on **step 7**. For **Minimum operating system**, select **Android 5.0**.
+
+- **iOS**
+  - See the instructions for [adding iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Use this [Wandera Mobile app store URL](https://itunes.apple.com/app/wandera/id605469330) on **step 11** for the **Appstore URL**.
+
 ## Configure your MTD apps with an iOS app configuration policy  
 
 ### Lookout for Work app configuration policy  
@@ -200,6 +209,27 @@ Pradeo doesn't support application configuration policy on iOS.  Instead, to get
 
 ### Sophos Mobile app configuration policy  
 Create the iOS app configuration policy as described in the [using iOS app configuration policy](app-configuration-policies-use-ios.md) article.
+
+### Wandera app configuration policy  
+See the instructions for [using Microsoft Intune app configuration policies for iOS](app-configuration-policies-use-ios.md) to add the Wandera iOS app configuration policy.
+- On **step 8**, use the option **Enter XML data**. Sign in to your RADAR Wandera portal and browse to **Settings** > **EMM Integration** > **App Push**. Select **Intune**, and then copy the content below and paste it into the configuration policy body.  
+
+  ```
+  <dict><key>secretKey</key>
+  <string>SeeRADAR</string>
+  <key>apiKey</key>
+  <string> SeeRADAR </string>
+  <key>customerId</key>
+  <string> SeeRADAR </string>
+  <key>email</key>
+  <string>{{mail}}</string>
+  <key>firstName</key>
+  <string>{{username}}</string>
+  <key>lastName</key>
+  <string></string>
+  <key>activationType</key>
+  <string>PROVISION_THEN_AWP</string></dict>  
+  ```
 
 ## Assign apps to groups  
 - This step applies to all MTD partners. See instructions for [assigning apps to groups with Intune](apps-deploy.md).

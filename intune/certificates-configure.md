@@ -45,13 +45,13 @@ Each of these certificate types has its own prerequisites and infrastructure req
 
 2. Install a root certificate or an intermediate Certification Authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To install the certificate, create and assign a **trusted certificate profile** to each device. When you assign this profile, the Intune-managed devices request and receive the root certificate. You must create a separate profile for each platform. Trusted certificate profiles are available for the following platforms:
 
-	- iOS 8.0 and later
-	- macOS 10.11 and later
-	- Android 4.0 and later
-	- Android Enterprise  
-	- Windows 8.1 and later
-	- Windows Phone 8.1 and later
-	- Windows 10 and later
+    - iOS 8.0 and later
+    - macOS 10.11 and later
+    - Android 4.0 and later
+    - Android Enterprise  
+    - Windows 8.1 and later
+    - Windows Phone 8.1 and later
+    - Windows 10 and later
 
     > [!NOTE]  
     > Certificate profiles are not supported on devices that run *Android Enterprise for dedicated devices*.
@@ -99,21 +99,21 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 4. Enter a **Name** and **Description** for the trusted certificate profile.
 5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Your options:
 
-	- **Android**
-	- **Android Enterprise**
-	- **iOS**
-	- **macOS**
-	- **Windows Phone 8.1**
-	- **Windows 8.1 and later**
-	- **Windows 10 and later**
+    - **Android**
+    - **Android Enterprise**
+    - **iOS**
+    - **macOS**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 and later**
+    - **Windows 10 and later**
 
 6. From the **Profile type** drop-down list, choose **Trusted certificate**.
 7. Browse to the certificate you saved in [Step 2: Export your trusted root CA certificate](#step-2-export-your-trusted-root-ca-certificate), then select **OK**.
 8. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
 
-	- **Computer certificate store - Root**
-	- **Computer certificate store - Intermediate**
-	- **User certificate store - Intermediate**
+    - **Computer certificate store - Root**
+    - **Computer certificate store - Intermediate**
+    - **User certificate store - Intermediate**
 
 9. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 

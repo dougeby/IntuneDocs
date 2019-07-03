@@ -106,6 +106,6 @@ Keep the current version number if, for example, you're fixing typos or changing
 
 4. On the **Properties** pane, choose **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, choose **Require users to re-accept, and increment the version number to**
 
-4.  Choose **OK** > **Save**.
+4. Choose **OK** > **Save**.
 
 Users only have to accept updated terms and conditions once. Users with multiple devices don't have to accept terms and conditions on each device.

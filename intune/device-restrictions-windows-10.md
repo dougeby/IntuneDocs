@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -61,7 +61,16 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 - **Install app data on system volume**: **Block** stops apps from storing data on the system volume of the device. **Not configured** (default) allows apps to store data on the system disk volume.
 - **Install apps on system drive**: **Block** prevents apps from installing on the system drive on the device. **Not configured** (default) allows apps to install on the system drive.
 - **Game DVR** (desktop only): **Block** disables Windows Game recording and broadcasting. **Not configured** (default) allows recording and broadcasting of games.
-- **Apps from the store only**: **Require** forces end users to only install apps from the Windows App Store. **Not configured** allows end users to install apps from places other than the Windows App Store.
+- **Apps from store only**: This setting determines the user experience when users install apps from places other than the Microsoft Store. Your options:
+
+  - **Not configured** (default): Allows end users to install apps from places other than the Microsoft Store, including apps defined in other policy settings.  
+  - **Anywhere**: Turns off app recommendations, and allows users to install apps from any location.  
+  - **Store Only**: Forces end users to only install apps from the Microsoft Store.
+  - **Recommendations**: When installing an app from the web that’s available in the Microsoft Store, users see a message recommending they download it from the store.  
+  - **Prefer Store**: Warns users when they install apps from places other than the Microsoft Store.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Force restart apps on update failure**: When an app is being used, it may not update. Use this setting to force an app to restart. **Not configured** (default) doesn't force the apps to restart. **Require** allows administrators to force a restart on a specific date and time, or on a recurring schedule. When set to **Require**, also enter:
 
   - **Start Date/Time**: Choose a specific date and time to restart the apps.
@@ -424,7 +433,8 @@ Select **OK** to save your changes.
 
 These settings use the [DeviceLock policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), which also lists the supported Windows editions.
 
-- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password.
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows access to the device without a password. Applies to local accounts only. Domain account passwords remain configured by Active Directory (AD) and Azure AD.
+
   - **Required password type**: Choose the type of password. Your options:
     - **Not configured**: Password can include numbers and letters.
     - **Numeric**: Password must only be numbers.
@@ -519,7 +529,7 @@ Select **OK** to save your changes.
 
 These settings use the [privacy policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy), which also lists the supported Windows editions.
 
-- **Input personalization**: **Block** prevents prevents using voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. It's disabled and users can't enable online speech recognition using settings. **Not configured** (default) lets users choose. If you allow these services, Microsoft may collect voice data to improve the service.
+- **Input personalization**: **Block** prevents using voice for dictation and to talk to Cortana and other apps that use Microsoft cloud-based speech recognition. It's disabled and users can't enable online speech recognition using settings. **Not configured** (default) lets users choose. If you allow these services, Microsoft may collect voice data to improve the service.
 - **Automatic acceptance of the pairing and privacy user consent prompts**: Choose **Allow** so Windows can automatically accept pairing and privacy consent messages when running apps. **Not configured** (default) prevents the automatic acceptance of the pairing and privacy user consent window when opening apps.
 - **Publish user activities**: **Block** prevents shared experiences and discovery of recently used resources in the activity feed. **Not configured** (default) enables this feature so apps can publish end user activities.
 - **Local activities only**: **Block** prevents shared experiences and the discovery of recently used resources in task switcher, based only on local activity. **Not configured** (default) enables this feature.
