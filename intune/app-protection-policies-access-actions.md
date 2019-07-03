@@ -56,13 +56,13 @@ The app protection policy settings table has columns for **Setting**, **Value**,
 
 ### iOS policy settings
 For iOS, you will be able to configure actions for the following settings using the **Setting** dropdown:
--  Max PIN attempts
--  Offline grace period
--  Jailbroken/rooted devices
--  Min OS version
--  Min app version
--  Min SDK version
--  Device model(s)
+- Max PIN attempts
+- Offline grace period
+- Jailbroken/rooted devices
+- Min OS version
+- Min app version
+- Min SDK version
+- Device model(s)
 
 To use the **Device model(s)** setting, input a semi-colon separated list of iOS model identifiers. You can find an iOS model identifier under the Device Type column in [HockeyApp's support documentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Example input: *iPhone5,2;iPhone5,3*
@@ -78,15 +78,15 @@ When conflicts arise between two app protection policies for configured values, 
 ### Android policy settings
 
 For Android, you will be able to configure actions for the following settings using the **Setting** dropdown:
--  Max PIN attempts
--  Offline grace period
--  Jailbroken/rooted devices
--  Min OS version
--  Min app version
--  Min patch version
--  Device manufacturer(s)
--  SafetyNet device attestation
--  Threat scan on apps
+- Max PIN attempts
+- Offline grace period
+- Jailbroken/rooted devices
+- Min OS version
+- Min app version
+- Min patch version
+- Device manufacturer(s)
+- SafetyNet device attestation
+- Threat scan on apps
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A;Manufacturer B* 
@@ -109,9 +109,9 @@ By default, the table will have populated rows as settings configured for **Offl
 To configure a setting, select a setting from the dropdown under the **Setting** column. Once a setting is selected, the editable text box will become enabled under the **Value** column in the same row, if a value is required to be set. Also, the dropdown will become enabled under the **Action** column with the set of conditional launch actions applicable to the setting. 
 
 The following list provides the common list of actions:
--  **Block access** – Block the end user from accessing the corporate app.
--  **Wipe data** – Wipe the corporate data from the end user’s device.
--  **Warn** – Provide dialog to end user as a warning message.
+- **Block access** – Block the end user from accessing the corporate app.
+- **Wipe data** – Wipe the corporate data from the end user’s device.
+- **Warn** – Provide dialog to end user as a warning message.
 
 In some cases, such as the **Min OS version** setting, you can configure the setting to perform all applicable actions based on different version numbers. 
 

@@ -38,9 +38,9 @@ You can use Intune to add and deploy Mobile Threat Defense (MTD) apps so that en
 ## Before you begin    
 The below steps need to be completed in the [Azure portal](https://portal.azure.com/). Make sure you’re familiar with the process of:
 
--   [Adding an app into Intune](apps-add.md).
--   [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
--   [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Adding an app into Intune](apps-add.md).
+- [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+- [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
 
 > [!TIP]
 > The Intune Company Portal works as the broker on Android devices so users can have their identities checked by Azure AD.

@@ -37,7 +37,7 @@ Enroll your personal Android device to get access to company email, apps, and ot
 
 ## Create work profile and enroll device
 
-1.  On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account. If you haven't installed the free app yet, download and install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with your work or school account. If you haven't installed the free app yet, download and install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Android Company Portal app Welcome screen](./media/and-enroll-0-welcome-screen.png)
 
@@ -45,15 +45,15 @@ Enroll your personal Android device to get access to company email, apps, and ot
 
     ![Company Access Setup screen](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  On the **Why create a work profile?** screen, read about what you'll be able to do, and then tap **CONTINUE**.
+3. On the **Why create a work profile?** screen, read about what you'll be able to do, and then tap **CONTINUE**.
 
     ![Why create a work profile](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.
+4. Review a list of what your company support can and can't see on your device, and tap **CONTINUE**.
 
     ![What your company support can and can't see on your device](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
+5. On the **What's next?** screen, read about what happens during enrollment, and then tap **ENROLL**.
 
     ![What's next screen](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

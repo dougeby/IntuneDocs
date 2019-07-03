@@ -40,15 +40,15 @@ You must understand a few concepts when adding a WIP policy:
 
 ### List of allowed and exempt apps
 
--   **Protected apps:** These apps are the apps that need to adhere to this policy.
+- **Protected apps:** These apps are the apps that need to adhere to this policy.
 
--   **Exempt apps:** These apps are exempt from this policy and can access corporate data without restrictions.
+- **Exempt apps:** These apps are exempt from this policy and can access corporate data without restrictions.
 
 ### Types of apps
 
--   **Recommended apps:** A pre-populated list of (mostly Microsoft Office) apps that allow you easily import into policy.
--   **Store apps:** You can add any app from the Windows store to the policy.
--   **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
+- **Recommended apps:** A pre-populated list of (mostly Microsoft Office) apps that allow you easily import into policy.
+- **Store apps:** You can add any app from the Windows store to the policy.
+- **Windows desktop apps:** You can add any traditional Windows desktop apps to the policy (for example, .exe, .dll)
 
 ## Prerequisites
 
@@ -59,8 +59,8 @@ You must configure the MAM provider before you can create a WIP app protection p
 
 Additionally, you need to have the following license and update:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
--   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) license
+- [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -84,7 +84,7 @@ After you set up Intune in your organization, you can create a WIP-specific poli
     - **Description:** (Optional) Type a description.
     - **Platform:** Choose **Windows 10** as the supported platform for your app protection policy.
     - **Enrollment state:** Choose **Without enrollment** as the enrollment state for your policy.
-7.  Choose **Create**. The policy is created and appears in the table on the **App protection policies** blade.
+7. Choose **Create**. The policy is created and appears in the table on the **App protection policies** blade.
 
 ## To add recommended apps to your protected apps list
 
@@ -153,11 +153,11 @@ After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on th
 
 ### Add a protection mode
 
-1.  From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
+1. From the **App policy** blade, choose the name of your policy, then choose **Required settings**.
 
     ![Screenshot of the Learning Mode pane](./media/learning-mode-sc1.png)
 
-1.  Select a setting and then choose **Save**.
+1. Select a setting and then choose **Save**.
 
 ### Use WIP Learning
 
@@ -191,11 +191,11 @@ In addition to setting the **Allow Windows Search Indexer to search encrypted it
 
 After you created your WIP app protection policy, you need to deploy it to your organization using MAM.
 
-1.  On the **App policy** blade, choose your newly created app protection policy, choose **User groups** > **Add user group**.
+1. On the **App policy** blade, choose your newly created app protection policy, choose **User groups** > **Add user group**.
 
     A list of user groups, made up of all the security groups in your Azure Active Directory, opens in the **Add user group** blade.
 
-2.  Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
+2. Choose the group you want your policy to apply to, then choose **Select** to deploy the policy.
 
 ## Next steps
 
