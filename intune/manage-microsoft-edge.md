@@ -66,7 +66,7 @@ To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android
 2. Under the Intune node, select **Conditional Access** > **New policy**.
 3. Select **Grant** from the **Access controls** section of the blade.
 4. Select **Require approved client app**.
-5. Select **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
+5. Choose **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
     ![Screenshot of Conditional Access policy - Grant](./media/manage-microsoft-edge/manage-microsoft-edge-01.png)
 
