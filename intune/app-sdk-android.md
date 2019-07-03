@@ -163,10 +163,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 By default, the plugin will operate **only** on `project` dependencies.
 Test compilation not affected. Configuration may be provided to list
-*  Projects to exclude
-*  [External dependencies to include](#usage-of-includeexternallibraries) 
-*  Specific classes to exclude from processing
-*  Variants to exclude from processing. These can refer to either a
+* Projects to exclude
+* [External dependencies to include](#usage-of-includeexternallibraries) 
+* Specific classes to exclude from processing
+* Variants to exclude from processing. These can refer to either a
    complete variant name or a single flavor. For example
      * if your app has build types `debug` and `release` with flavors
        {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
@@ -1486,7 +1486,7 @@ In addition to the app's ability to set the identity, a thread, or a context's i
 
   1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
 
-  2.  For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
+  2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
 
   3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
 
@@ -1976,8 +1976,8 @@ Enable default enrollment with the following steps:
 
 For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an issue. Specifically, the following limitations may occur:
 
-1.  The 65-K limit on fields.
-2.  The 65-K limit on methods.
+1. The 65-K limit on fields.
+2. The 65-K limit on methods.
 
 ### Policy enforcement limitations
 

@@ -34,8 +34,8 @@ To protect your company or school data, your company support might require you t
 
 If you have a desktop device, follow the instructions below to encrypt it.
 
-1.  Search for, and then start, the **Manage BitLocker** app.
+1. Search for, and then start, the **Manage BitLocker** app.
 
-2.  Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
+2. Click **Turn on BitLocker**, and then follow the instructions shown to encrypt each of your drives.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

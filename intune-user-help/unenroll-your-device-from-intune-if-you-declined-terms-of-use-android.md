@@ -41,11 +41,11 @@ Before you can uninstall the Company Portal app, you have to go to the **Device 
 
 To remove your device from Intune and uninstall the Company Portal app:
 
-1.  Go to **Settings** &gt; **Security &amp; Screen Lock** &gt; **Device administrators**.
+1. Go to **Settings** &gt; **Security &amp; Screen Lock** &gt; **Device administrators**.
 
     Completing this step immediately unenrolls your device.
 
-2.  Uncheck the box next to, or turn off, **Company Portal**.
+2. Uncheck the box next to, or turn off, **Company Portal**.
 
     You can now uninstall the Company Portal app.
 

@@ -45,8 +45,8 @@ Once you have selected the included groups for your application configuration po
 > [!TIP]
 > This policy type is currently available only for devices running iOS 8.0 and later. It supports the following app installation types:
 >
-> -   **Managed iOS app from the app store**
-> -   **App package for iOS**
+> - **Managed iOS app from the app store**
+> - **App package for iOS**
 >
 > For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md). For more information about incorporating app config into your .ipa App package, see [Appconfig for iOS](https://www.appconfig.org/ios) (open 3rd party site).
 
@@ -121,7 +121,7 @@ Intune validates the XML format. However, Intune does not check that the XML pro
 
 To learn more about XML property lists:
 
-  -  Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+  - Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
 
 ### Example format for an app configuration XML file
 
