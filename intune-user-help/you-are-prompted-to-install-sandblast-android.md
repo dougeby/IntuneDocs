@@ -54,7 +54,7 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 9. If SandBlast Mobile Protect finds a security threat on your device, you will see instructions about how to fix the issue.
 
-0. If no threats are found, all three threat types will appear green.
+10. If no threats are found, all three threat types will appear green.
 
 11. The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
