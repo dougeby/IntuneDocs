@@ -123,9 +123,9 @@ Users install the Intune client software by going to the [Company Portal website
 
 If users haven't been assigned an Intune license or if the organization's MDM Authority hasn't been set to Intune, users aren't shown any options to enroll.
 
-If users have been assigned an Intune license, and the organization's MDM Authority has been set to Intune:
+If users have been assigned an Intune license, and the organization's MDM Authority has been set to Intune:
 
-- Windows 7 or Windows 8 PC users are shown ONLY the option to enroll to Intune by downloading and installing the PC client software that is unique to their organization.
+- Windows 7 or Windows 8 PC users are shown ONLY the option to enroll to Intune by downloading and installing the PC client software that is unique to their organization.
 
 - Windows 10 or Windows 8.1 PC users are shown two enrollment options:
 
@@ -262,7 +262,7 @@ Check "%ProgramFiles%\Microsoft\OnlineManagement" and ensure that only the follo
 
 The unenrollment process does not remove the OnlineManagement folder. Wait 30 minutes after the uninstall, and then run this command. If you run it too soon, the uninstall could be left in an unknown state. To remove the folder, start an elevated prompt and run:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### Next steps
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
