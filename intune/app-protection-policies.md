@@ -42,7 +42,7 @@ If you're looking for a list of MAM supported apps, see [MAM apps list](https://
 
 For information about adding your organization's line-of-business (LOB) apps to Microsoft Intune to prepare for app protection policies, see [Add apps to Microsoft Intune](apps-add.md).
 
-##  Create an app protection policy
+## Create an app protection policy
 1. In Intune portal, go to **Client apps** > **App protection policies**. This selection opens the **App protection policies** details, where you create new policies and edit existing policies.
 2. Select **Create Policy**.
 
@@ -79,11 +79,11 @@ New policies you create aren't deployed to any users until you explicitly do so.
 
    ![Screenshot of the Assignments pane with Select groups to include menu](./media/app-protection-policy-add-users.png)
 
-3.  A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. 
+3. A list of all the security groups in your **Azure Active Directory** is displayed. Select the user groups that you want this policy to apply to, and then choose **Select**. 
 
     ![Screenshot of the Add user group pane with list of Azure AD users](./media/azure-ad-user-group-list.png)
 
-4.  After you include and exclude groups, select **Save** to save the configuration and deploy the policy to users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.   
+4. After you include and exclude groups, select **Save** to save the configuration and deploy the policy to users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.   
  
      ![Screenshot showing the save and discard options](./media/save-assignment.png)
   
@@ -98,43 +98,43 @@ End users can download the apps from the App store or Google Play. For more info
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
 
-##  Change existing policies
+## Change existing policies
 You can edit an existing policy and apply it to the targeted users. However, when you change existing policies, users who are already signed in to the apps won’t see the changes for an eight-hour period.
 
 To see the effect of the changes immediately, the end user must sign out of the app, and then sign back in.
 
 ### To change the list of apps associated with the policy
 
-1.  In the **App protection policies** pane, select the policy you want to change.
+1. In the **App protection policies** pane, select the policy you want to change.
 
-2.  In the *Intune App Protection* pane, select **Targeted apps** to open the list of apps.
+2. In the *Intune App Protection* pane, select **Targeted apps** to open the list of apps.
 
-3.  Remove or add apps from the list and then select the **Save** icon to save your changes.
+3. Remove or add apps from the list and then select the **Save** icon to save your changes.
 
 ### To change the list of user groups
 
 
-1.  In  the **App protection policies** pane, select the policy you want to change.
+1. In  the **App protection policies** pane, select the policy you want to change.
 
-2.  In the *Intune App Protection* pane, select **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
+2. In the *Intune App Protection* pane, select **Assignments** to open the **Intune App Protection - Assignments** pane that shows the list of current user groups who have this policy.
 
-3.  To add a new user group to the policy, on the *Include* tab choose **Select groups to include**, and select the user group. Choose **Select** to add the group. 
+3. To add a new user group to the policy, on the *Include* tab choose **Select groups to include**, and select the user group. Choose **Select** to add the group. 
 
-4.  To exclude a user group, on the *Exclude* tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.  
+4. To exclude a user group, on the *Exclude* tab choose **Select groups to exclude**, and select the user group. Choose **Select** to remove the user group.  
 
-5.  To delete groups that were added previously, on either the *Include* or *Exclude* tabs, select the ellipsis (...) and select **Delete**. 
+5. To delete groups that were added previously, on either the *Include* or *Exclude* tabs, select the ellipsis (...) and select **Delete**. 
 
-5.  After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
+5. After your changes to the assignments are ready, select **Save** to save the configuration and deploy the policy to the new set of users. If you select **Discard** before you save your configuration, you will discard all changes you've made to the *Include* and *Exclude* tabs.
 
 ### To change policy settings
 
-1.  In the **App protection policies** pane, choose the policy you want to change.
+1. In the **App protection policies** pane, choose the policy you want to change.
 
-2.  In the *Intune App Protection* pane, select **Properties** to open the list of settings areas you can edit. 
+2. In the *Intune App Protection* pane, select **Properties** to open the list of settings areas you can edit. 
 
-3.  Select the settings area with the settings you want to change, like **Data relocation** or **Access requirements**. Then change the settings to new values.
+3. Select the settings area with the settings you want to change, like **Data relocation** or **Access requirements**. Then change the settings to new values.
 
-4.  Select the **Save** icon to save your changes. Repeat the process to select a settings area and modify and then save your changes, until all your changes are complete. You can then close the *Intune App Protection - Properties* pane. 
+4. Select the **Save** icon to save your changes. Repeat the process to select a settings area and modify and then save your changes, until all your changes are complete. You can then close the *Intune App Protection - Properties* pane. 
 
 ## Target app protection policies based on device management state
 In many organizations, it’s common to allow end users to use both Intune Mobile Device Management (MDM) managed devices, such as corporate owned devices, and un-managed devices protected with only Intune app protection policies. Unmanaged devices are often known as Bring Your Own Devices (BYOD).

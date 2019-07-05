@@ -332,7 +332,7 @@ Applies to: Windows 10 and later
 #### Automatically mark Android devices enrolled by using Samsung Knox Mobile Enrollment as "corporate". <!-- 2404851 -->
 By default, Android devices enrolled using Samsung Knox Mobile Enrollment are now marked as **corporate** under **Device Ownership**. You don't need to manually identify corporate devices using IMEI or serial numbers prior to enrolling using Knox Mobile Enrollment.
 
-####  Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
+#### Devices without profiles column in the list of enrollment program tokens <!-- 1853904 -->
 In the enrollment program tokens list, there is a new column showing the number of devices without a profile assigned. This helps admins assign profiles to these devices before handing them out to users. To see the new column, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens**.
 
 ### Device management
@@ -526,7 +526,7 @@ Please tag **Intune** as a favorite instead of the **Intune App Protection** ser
 
 ### Device configuration
 
-####  Device profile chart and status list show all devices in a group <!-- 1449153 -->
+#### Device profile chart and status list show all devices in a group <!-- 1449153 -->
 When you configure a device profile (**Device configuration** > **Profiles**), you choose the device profile, such as iOS. You assign this profile to a group that includes iOS devices and non-iOS devices. The graphical chart count shows that the profile is applied to the iOS *and* the non-iOS devices (**Device configuration** > **Profiles** > select an existing profile > **Overview**). When you select the graphical chart in the **Overview** tab, the **Device status** lists all the devices in the group, instead of only the iOS devices. 
 
 With this update, the graphical chart (**Device configuration** > **Profiles** > select an existing profile > **Overview**) only shows the count for the specific device profile. For example, if the configuration device profile applies to iOS devices, the chart only lists the count of the iOS devices. Selecting the graphical chart, and opening the **Device status** only lists the iOS devices.
@@ -576,7 +576,7 @@ The following dependent technologies are automatically enabled when configuring 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
 
-####  Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
+#### Block camera and screen captures on Android Enterprise work profiles <!-- 1098977 -->
 Two new properties are available to block when you configure device restrictions for Android devices: 
 - Camera: Blocks access to all cameras on the device
 - Screen capture: Blocks the screen capture, and also prevents the content from being shown on display devices that don't have a secure video output
@@ -665,7 +665,7 @@ You'll also see:
 To see the updated look, go to [What's new in the app UI](whats-new-app-ui.md).
 
 #### Protect on-premises Exchange data using Intune APP and CA <!-- 1056954 -->
-You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx).
+You can now use Intune App Policy Protection (APP) and Conditional Access (CA) to protect access to on-premises Exchange data with Outlook Mobile. To add or modify an app protection policy within the Azure portal, select **Microsoft Intune** > **Client apps** > **App protection policies**. Before using this feature, make sure you meet the [Outlook for iOS and Android requirements](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx).
 
 
 ### User interface
@@ -786,7 +786,7 @@ Once you enable the Firewall setting, you can configure the firewall using two s
 
    You can allow or block specific apps from receiving incoming connections. You can also enable stealth mode to prevent responses to probing requests.
 
-####  Detailed error codes and messages <!-- 1376342 -->
+#### Detailed error codes and messages <!-- 1376342 -->
 
 In your Device Configuration, there are more detailed error codes and error messages available to see. This improved reporting shows the settings, the state of these settings, and details on troubleshooting.
 
@@ -797,7 +797,7 @@ In your Device Configuration, there are more detailed error codes and error mess
    This blocks all sharing services (such as File Sharing and Screen Sharing) from receiving incoming connections. The system services that are still allowed to receive incoming connections are:
   - configd - implements DHCP and other network configuration services
   - mDNSResponder - implements Bonjour
-  - racoon -  implements IPSec
+  - racoon - implements IPSec
 
     To use sharing services, ensure **Incoming connections** is set to **Not configured** (not **Block**).
 
@@ -1451,9 +1451,9 @@ Window Defender Exploit Guard includes custom rules to reduce the exploitability
 The Intune management extension lets you upload PowerShell scripts in Intune to run on Windows 10 devices. The extension supplements Windows 10 mobile device management (MDM) capabilities and makes it easier for you to move to modern management. For details, see [Manage PowerShell scripts in Intune for Windows 10 devices](intune-management-extension.md).
 
 ### New device restriction settings for Windows 10      <!-- 1308850 -->
--    Messaging (mobile only) - disable testing or MMS messages
--    Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
--    Display - settings to turn on or off GDI Scaling for legacy apps
+- Messaging (mobile only) - disable testing or MMS messages
+- Password - settings to enable FIPS and the use of Windows Hello devices secondary devices for authentication 
+- Display - settings to turn on or off GDI Scaling for legacy apps
 
 ### Windows 10 kiosk mode device restrictions <!-- 1308872 -->   
 You can restrict Windows 10 device users to kiosk mode, which limits users to a set of predefined apps.  To do so, create a Windows 10 device restriction profile and set the Kiosk settings.
@@ -1471,7 +1471,7 @@ A new device configuration profile called **Network boundary** can be found with
 
 You can define enterprise cloud resources, IP address ranges, and internal proxy servers that you want to be considered trusted. Once defined, the network boundary can be consumed by other features such as Windows Defender Application Guard and Windows Information Protection.
 
-###  Two additional settings for Windows Defender Antivirus <!-- 1338409 -->  
+### Two additional settings for Windows Defender Antivirus <!-- 1338409 -->  
 **File blocking level**
 
 | | |
@@ -1657,7 +1657,7 @@ You will be able to specify the country locale during the creation of an Apple A
 > [!Note]  
 > Currently, you can only create Apple App Store managed apps that are present in the US country store.
 
-###  Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
+### Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune
 will detect the VPP app updates inside the app store and automatically push them to the device when the device checks-in.
 
@@ -1761,10 +1761,10 @@ Improvements to the device overview now display enrolled devices but excludes de
 <!-- 961134, 1104426, 1281327, 1333543 -->
 In this release, we’ve made the following improvements to the inventory information collected by devices you manage:
  
--   For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
--   When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
--   We’ve made improvements to the filter used by the **Last Check-in Date** item.
--   In the device list, you can now display the phone number of corporate owned devices.
+- For Android devices, you can now add a column to device inventory that shows the latest patch level for each device. Add the **Security patch level** column to your device list to see this.
+- When you filter the device view, you can now filter devices by their enrollment date. For example, you could display only devices that were enrolled after a date you specify.
+- We’ve made improvements to the filter used by the **Last Check-in Date** item.
+- In the device list, you can now display the phone number of corporate owned devices.
 Additionally, you can use the filter pane to search for devices by phone number.
 
 For more details about device inventory, see [How to view Intune device inventory](device-inventory.md).
@@ -1783,16 +1783,16 @@ The Company Portal app for macOS is now available as part of the public preview 
 <!--1063965, 1308850  -->
 In this release, we’ve added new settings for the [Windows 10 device restriction profile](/intune/device-restrictions-windows-10) in the following categories:
 
--   Windows Defender SmartScreen
--   App store
+- Windows Defender SmartScreen
+- App store
 
 ### Updates to the Windows 10 endpoint protection device profile for BitLocker settings
 <!--1459533 -->    
 In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
  
--   Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
--   Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
--   Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
+- Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
+- Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
+- Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
 For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
 
 
@@ -1904,8 +1904,8 @@ Intune now supports uploading iOS, macOS, and Android serial numbers as Corporat
 ### New remote actions for iOS devices <!-- 854689 -->
 In this release, we've added two new remote device actions for shared iPad devices that manage the Apple Classroom app:
 
-- 	[Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
-- 	[Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
+- [Logout current user](device-logout-user.md) - Signs out the current user of an iOS device you choose.
+- [Remove user](device-remove-user.md) - Deletes a user you choose from the local cache on an iOS device.
 
 
 ### Support for shared iPads with the iOS Classroom app <!-- 1044681 -->
@@ -1942,13 +1942,13 @@ For more information, see [Endpoint protection settings for Windows 10 and later
 ### New settings for Windows 10 device restriction profile <!--- 978527,  978550, 978569, 1050031, 1058611,  --->
 In this release, we've added new settings for the Windows 10 device restriction profile, in the following categories:
 
--  Windows Defender
--  Cellular and connectivity
--  Locked screen experience
--  Privacy
--  Search
--  Windows Spotlight
--  Microsoft Edge browser
+- Windows Defender
+- Cellular and connectivity
+- Locked screen experience
+- Privacy
+- Search
+- Windows Spotlight
+- Microsoft Edge browser
 
 For more information about Windows 10 settings, see [Windows 10 and later device restriction settings](device-restrictions-windows-10.md).
 
@@ -2105,7 +2105,7 @@ For more information, see [Device restrictions for Android for Work](device-rest
 You can now assign line of business (LOB) apps for [iOS](lob-apps-ios.md) (.ipa files) and [Android](lob-apps-android.md) (.apk files) to users or devices.
 
 
-###  New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
+### New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
 - **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
 - **Connections to AirPrint devices** - Controls which [AirPrint devices](air-print-settings-ios-macos.md) (network printers) that end users of iOS device can connect to.

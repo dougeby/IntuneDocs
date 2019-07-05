@@ -41,7 +41,7 @@ If you already have a work or school account, **sign in** with that account and 
 >[!WARNING]
 >You can't combine an existing work or school account after you sign up for a new account.
 
-## How to sign up or sign in to Intune
+## How to sign up for Intune
 
 1. Visit the [Intune Sign-up page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20).
 
@@ -53,3 +53,32 @@ If you already have a work or school account, **sign in** with that account and 
 After you sign up for a new subscription, you receive an email message that contains your account information at the email address that you provided during the sign-up process. This email confirms your subscription is active.
 
 After completing the sign-up process you are directed to the Microsoft 365 admin center, used to add users and assign them licenses. If you only have cloud-based accounts using your default onmicrosoft.com domain name, then you can go ahead and add users and assign licenses at this point. However, if you plan to use your organization's [custom domain name](custom-domain-name-configure.md) or [synchronize user account information](users-add.md#sync-active-directory-and-add-users-to-intune) from on-premises Active Directory, then you can close that browser window.
+
+## Sign in to Microsoft Intune
+Once you have signed up for Intune, you can use any device with a [supported browser](https://docs.microsoft.com/intune/supported-devices-browsers#intune-supported-web-browsers) to sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) to administer the service.
+
+By default, your account must have one of the following permissions in Azure AD:
+- Global Administrator
+- Intune Service Administrator (also known as Intune Administrator)
+
+To grant access to administer the service for users with other permissions, then See [Role Based Access Control](role-based-access-control.md)
+
+### Intune Admin portal URL
+
+Microsoft 365 Admin Center: https://devicemanagement.microsoft.com
+
+Intune Azure portal: https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade
+
+Intune for Education: https://intuneeducation.portal.azure.com
+
+Intune classic portal: https://manage.microsoft.com
+The Intune classic portal is only used for managing devices enrolled with the Intune PC software client
+
+### URLs for Intune services provided by Office 365
+
+Microsoft 365 Business: https://portal.microsoft.com/adminportal
+
+Office 365 Mobile Device Management: https://portal.office.com/adminportal/home#/MifoDevices
+
+## See also
+[You can't sign in to Office 365, Azure, or Intune](https://support.microsoft.com/help/2412085)

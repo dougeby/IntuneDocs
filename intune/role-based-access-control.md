@@ -42,9 +42,9 @@ A role defines the set of permissions granted to users assigned to that role.
 You can use both the built-in and custom roles. Built-in roles cover some common Intune scenarios. You can [create your own custom roles](create-custom-role.md) with the exact set of permissions you need. Several Azure Active Directory roles have permissions to Intune.
 To see a role, choose **Intune** > **Roles** > **All roles** > choose a role. You’ll see the following pages:
 
--	**Properties**: The name, description, type, assignments, and scope tags for the role. 
--	**Permissions**: Lists a long set of toggles defining what permissions the role has.
--	**Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
+- **Properties**: The name, description, type, assignments, and scope tags for the role. 
+- **Permissions**: Lists a long set of toggles defining what permissions the role has.
+- **Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
 ### Built-in roles
 You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -88,10 +88,10 @@ A role assignment defines:
 You can assign both custom and built-in roles to your users. To be assigned an Intune role, the user must have an Intune license.
 To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose a role > choose an assignment. You’ll see the following pages:
 
--	**Properties**: The name, description, role, members, scopes, and tags of the assignment.
--	**Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
--	**Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
--	**[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
+- **Properties**: The name, description, role, members, scopes, and tags of the assignment.
+- **Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
+- **Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
+- **[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
 If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:

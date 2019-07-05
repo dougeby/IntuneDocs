@@ -52,13 +52,13 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
 8. SandBlast Mobile Protect starts to check right away for security threats on your device.
 
-9.  If SandBlast Mobile Protect finds a security threat on your device, you will see instructions about how to fix the issue.
+9. If SandBlast Mobile Protect finds a security threat on your device, you will see instructions about how to fix the issue.
 
-10.  If no threats are found, all three threat types will appear green.
+10. If no threats are found, all three threat types will appear green.
 
 11. The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
+    ![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
 **If the installation doesn't work**
 

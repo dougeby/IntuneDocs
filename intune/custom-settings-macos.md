@@ -62,7 +62,7 @@ This article shows you how to create a custom profile for macOS devices. It also
     - **Name**: Enter a name for the profile, such as `macos custom profile`.
     - **Description**: Enter a description for the profile.
     - **Platform**: Choose **macOS**.
-	- **Profile type**: Choose **Custom**.
+    - **Profile type**: Choose **Custom**.
 
 4. In **Custom configuration**, enter the following settings:
 

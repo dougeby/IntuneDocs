@@ -68,7 +68,7 @@ Additionally, you can use Graph API to accomplish app configuration tasks. For d
 
 ### Managed devices
 
- - Learn how to use app configuration with your iOS devices.  See [ Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
+ - Learn how to use app configuration with your iOS devices.  See [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
  - Learn how to use app configuration with your Android devices.  See [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md).
 
 ### Managed apps

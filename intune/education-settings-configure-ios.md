@@ -85,11 +85,11 @@ You can import information into SDS by using one of the following methods:
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Device configuration**.
 2. On the **Device configuration** pane under the **Manage** section, choose **Profiles**.
-5.	On the profiles pane, choose **Create profile**.
-6.	On the **Create profile** pane, enter a **Name** and **Description** for the iOS education profile.
-7.	From the **Platform** drop-down list, choose **iOS**.
-8.	From the **Profile type** drop-down list, choose **Education**.
-9.	Choose **Settings** > **Configure**.
+5. On the profiles pane, choose **Create profile**.
+6. On the **Create profile** pane, enter a **Name** and **Description** for the iOS education profile.
+7. From the **Platform** drop-down list, choose **iOS**.
+8. From the **Profile type** drop-down list, choose **Education**.
+9. Choose **Settings** > **Configure**.
 
 
 In the next section, you'll create certificates to establish a trust relationship between teacher and student iPads. Certificates are used to seamlessly and silently authenticate connections between devices without having to enter user names and passwords.
@@ -127,8 +127,8 @@ When you're finished configuring certificates, choose **OK**.
 
 ### Configure student certificates
 
-1.	On the **Education** pane, choose **Student certificates**.
-2.	On the **Student certificates** pane, from the **Student device certificates** type list, choose **1:1**.
+1. On the **Education** pane, choose **Student certificates**.
+2. On the **Student certificates** pane, from the **Student device certificates** type list, choose **1:1**.
 
 #### Configure student root certificate
 
@@ -140,7 +140,7 @@ Under **Student root certificate**, choose the browse button. Select the root ce
 
 Under **Student PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** -  Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
+- **Subject name format** - Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 
@@ -152,9 +152,9 @@ When you're finished configuring certificates, choose **OK**.
 
 ## Finish up
 
-1.	On the **Education** pane, choose OK.
-2.	On the **Create profile** pane, choose **Create**.
-	
+1. On the **Education** pane, choose OK.
+2. On the **Create profile** pane, choose **Create**.
+
 The profile is created and appears on the profiles list pane.
 
 Assign the profile to student devices in the classroom groups that were created when you synchronized your school data with Azure AD (see [How to assign device profiles](device-profile-assign.md).
