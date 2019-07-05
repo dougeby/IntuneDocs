@@ -47,7 +47,7 @@ You can use app configuration policies with managed apps that support the Intune
       The  description of the profile that will appear in the Azure portal.
     - **Device enrollment type**  
       Choose **Manage apps**.
-6. Select **Associated app** to choose the app that you are going to configure. Select the app from the list of apps that you have approved and synchronized with Intune.
+6. Select **Associated app** to choose the app that you are going to configure. Select the app from the list of apps that you have approved and synchronized with Intune.
 7. For each configuration setting that the app supports, type the **Name** and **Value**, and choose the ellipsis (**…**).  
     To delete a configuration, choose the ellipsis (**…**) and select **Delete**.  
     

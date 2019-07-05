@@ -77,7 +77,7 @@ Create an Active Directory user account that will be used by the on-premises Exc
 
 ## Download the on-premises Exchange connector software installation package
 
-1. On a supported Windows Server operating system for the on-premises Exchange connector, open the [Azure portal](https://portal.azure.com) and sign in with a user account that is an administrator in the on-premises Exchange server, and that has a license to use Exchange Server.
+1. On a supported Windows Server operating system for the on-premises Exchange connector, open the [Azure portal](https://portal.azure.com) and sign in with a user account that is an administrator in the on-premises Exchange server, and that has a license to use Exchange Server.
 
 2. Go to **Intune** > **Exchange access**  
 
