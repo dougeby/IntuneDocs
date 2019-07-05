@@ -144,7 +144,7 @@ If you have a web proxy in your networking environment, ensure that the Intune C
 
 1. If you selected **Dynamic Devices** for the membership type, in the **Group** pane, select **Dynamic device members** and then, in the **Advanced rule** box, do one of the following:
     - To create a group that includes all your Autopilot devices, enter `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
-    - Intune's Group Tag field maps to the OrderID attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices with a specific Group Tag(OrderID) you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Intune's Group Tag field maps to the OrderID attribute on Azure AD devices. If you want to create a group that includes all of your Autopilot devices with a specific Group Tag(OrderID) you must type: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - To create a group that includes all your Autopilot devices with a specific Purchase Order ID, enter `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
 1. Select **Save**.
