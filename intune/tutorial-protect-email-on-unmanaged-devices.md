@@ -78,7 +78,7 @@ For this tutorial, we’ll set up an Intune app protection policy for the Outloo
 
     Select **OK** to return to the Settings pane.  
 
-7.	On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
+7. On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
 
 The app protection policy for Outlook is created. Next, you'll set up Conditional Access to require devices to use the Outlook app.
 
@@ -192,5 +192,5 @@ When the test policies are no longer needed, you can remove them.
 4. Select **Conditional Access** > **Policies**.  
 5. In the **Policy Name** list, select the context menu (**...**) for each of your test policies, and then select **Delete**. Select **Yes** to confirm.  
 
- ## Next steps  
+## Next steps  
 In this tutorial, you created app protection policies to limit what the user can do with the Outlook app, and you created Conditional Access policies to require the Outlook app and require MFA for Modern Authentication clients. To learn about using Intune with Conditional Access to protect other apps and services, see [Set up Conditional Access](conditional-access.md).

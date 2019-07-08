@@ -52,7 +52,7 @@ The following are minimum hardware requirements for installing the Intune client
 |---------------|--------------------|
 |Network|The client requires the PC to have Internet connectivity.|
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
-|Disk space|200 MB available disk space before the client software is installed.|
+|Disk space|200 MB available disk space before the client software is installed.|
 
 **Software**:  
 The following are software requirements for installing the client software:
@@ -73,16 +73,16 @@ As an Intune admin, you can make the Intune software client available to users i
 ## Computer management capabilities with the Intune client software
 In most scenarios, you will enroll your devices with Microsoft Intune, which provides a greater set of capabilities. However, you can also manage PCs by using the Intune software client, which provides the following features:
 
--   **[Software update management](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - You can keep PCs up-to-date and decide when updates are applied.
+- **[Software update management](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** - You can keep PCs up-to-date and decide when updates are applied.
 
--   **[Windows Firewall policy](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
+- **[Windows Firewall policy](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** - This helps to ensure that no PC that's used in your company has an inactive or improperly-configured Windows Firewall.
 
--   **[Anti-malware protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
+- **[Anti-malware protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** - Intune includes Endpoint Protection, which helps protect your PCs from malware.
 
--   **[Remote assistance](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
+- **[Remote assistance](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** - Intune lets users contact IT support staff, who can then provide assistance by using a remote desktop feature that is included with Intune (requires TeamViewer software).
 
--   **[Software license management](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Track how many software licenses are available, and how many available licenses are being used.
--   **[App deployment](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
+- **[Software license management](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** - Track how many software licenses are available, and how many available licenses are being used.
+- **[App deployment](add-apps-for-windows-pcs-in-microsoft-intune.md)** - Deploy software to PCs that you manage. Some app management features are not available when you manage PCs with the software client.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -116,8 +116,8 @@ For more information about the above tasks, see [common computer management task
 
 Some management options, which can be used to manage PCs as mobile devices, cannot not used for PCs that are managed with the Intune client software:
 
--   Full wipe (selective wipe is available)
--   Conditional Access
+- Full wipe (selective wipe is available)
+- Conditional Access
 
 Also note that in the Intune admin console, certain sections, such as **Updates**, **Protection**, and **Licenses** appear only if you have enrolled devices using the Intune client software.
 

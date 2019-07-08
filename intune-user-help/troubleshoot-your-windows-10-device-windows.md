@@ -32,15 +32,15 @@ ms.collection: M365-identity-device-management
 # Troubleshoot your Windows 10 device enrollment
 If you've enrolled your device, but still can’t access your work or school email and files, try these troubleshooting steps.  
 
-1.  Look at the next two screens, and find the one that looks like what you see on your device. Follow the steps that go with the screen you see on your device.
+1. Look at the next two screens, and find the one that looks like what you see on your device. Follow the steps that go with the screen you see on your device.
 
-	If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Access work or school](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Access work or school](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
     ![settings-accounts-access-work-or-school](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 
-	If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Your account](#troubleshooting-steps-to-follow-if-you-see-your-account).
+    If you see this screen, follow the steps in [Troubleshooting steps to follow if you see Your account](#troubleshooting-steps-to-follow-if-you-see-your-account).
 
-	![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
+    ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
 ## Troubleshooting steps to follow if you see "Access work or school"
 

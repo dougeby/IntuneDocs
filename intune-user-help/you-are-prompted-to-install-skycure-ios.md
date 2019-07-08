@@ -34,7 +34,7 @@ Before you can access your work, your company needs you to install the Symantec 
 
 ## What you need to do
 
-1.	If you see the following prompt, tap **Install** to allow SEP Mobile to be installed on your device.
+1. If you see the following prompt, tap **Install** to allow SEP Mobile to be installed on your device.
 
 2. When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.
 

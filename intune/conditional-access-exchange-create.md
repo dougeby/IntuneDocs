@@ -44,9 +44,9 @@ Before you can configure Conditional Access, verify the following configurations
 
 - You have installed and use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
-	>[!IMPORTANT]  
+    >[!IMPORTANT]  
     >Intune supports multiple on-premises Exchange connectors per subscription.  However, each on-premises Exchange connector is specific to a single Intune tenant and cannot be used with any other tenant.  If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
-	
+
 - The connector for an on-premises Exchange organization can install on any machine as long as that machine can communicate with the Exchange server.
 
 - The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer due to the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
@@ -54,16 +54,16 @@ Before you can configure Conditional Access, verify the following configurations
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
 - When Conditional Access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
-	- Either **enrolled** with Intune or is a domain joined PC.
-	- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
+    - Either **enrolled** with Intune or is a domain joined PC.
+    - **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
 <br></br>
 - Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service don't see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 - **Compliant** with device compliance policies deployed to that device.
 
 - If the device doesn't meet Conditional Access settings, the user is presented with one of the following messages when they sign in:
-	- If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
-	- If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
+    - If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
+    - If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
 ### Support for mobile devices
 
@@ -77,8 +77,7 @@ Before you can configure Conditional Access, verify the following configurations
 
 ### Support for PCs
 
-The native **Mail** application on Windows 8.1 and later (when enrolled with Intune)
-
+The native **Mail** application on Windows 8.1 and later (when enrolled into MDM with Intune)
 
 ## Configure Exchange on-premises access
 
@@ -88,7 +87,7 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Conditional Access policy and the devices that are affected by it.
+4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Exchange on-premises Connector.
 
 5. Under **Manage**, choose **Exchange on-premises access**.
 
@@ -114,23 +113,10 @@ The native **Mail** application on Windows 8.1 and later (when enrolled with Int
 
 12. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
 
-13. On the **On-premises** pane, click **Save** to save the Conditional Access policy.
+13. On the **On-premises** pane, click **Save** to save the Exchange Conditional Access policy.
 
-## Create Azure AD Conditional Access policies in Intune
-
-Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
-
-> [!IMPORTANT]
-> You need to have an Azure AD Premium license to create Azure AD Conditional Access policies from the Intune Azure portal.
-
-### To create a Conditional Access policy
-
-1. In the **Intune Dashboard**, select **Conditional Access**.
-
-2. In the **Policies** pane, select **New policy** to create your new Azure AD Conditional Access policy.
+Next step is to create a compliance policy and assign it to the users for Intune to evaluate their mobile devices, See [Get started with device compliance](device-compliance-get-started.md)
 
 ## See also
-
-[Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)
 
 [Troubleshooting Intune On-Premises Exchange Connector in Microsoft Intune](https://support.microsoft.com/help/4471887)
