@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -30,7 +30,9 @@ ms.collection: M365-identity-device-management
 
 # App configuration policies for Microsoft Intune
 
-Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized, and are used when the app checks for them, typically the first time it is run. You can assign an app configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
+Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized by using an industry standard approach to app configuration and management. The configuration policy settings are used when the app checks for them, typically the first time it is run.
+
+You can assign an app configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
 
 An app configuration setting, for example, might require you to specify any of the following details:
 
@@ -54,9 +56,11 @@ You have two options for how to use app configurations with Intune:
 
 ## Apps that support app configuration
 
-You can use app configuration polices for apps that support it. To support app configuration in Intune, apps must have been written to support the use of app configurations. Consult your app vendor for details.
+### Managed devices
+You can use app configuration polices for apps that support it. To support app configuration in Intune, apps must have been written to support the use of app configurations as defined by the [Appconfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
 
-You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it is developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app configuration policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
+### Managed apps
+You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it is developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection configuration policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
 
 ## Graph API support for app configuration
 
