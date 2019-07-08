@@ -148,10 +148,10 @@ Users can track the installation progress of [Office ProPlus](apps-add-office365
 #### Alerts for expiring VPP token or Company Portal license running low <!-- 2237572 -->
 If you are using Volume Purchase Program (VPP) to pre-provision the Company Portal during DEP enrollment, Intune will alert you when the VPP token is about to expire and when the licenses for the Company Portal are running low.
 
-### macOS Device Enrollment Program support for Apple School Manager accounts <!--3006133 -->
+#### macOS Device Enrollment Program support for Apple School Manager accounts <!--3006133 -->
 Intune now supports using the Device Enrollment Program on macOS devices for Apple School Manager accounts.  For more information, see [Automatically enroll macOS devices with Apple School Manager or Device Enrollment Program](device-enrollment-program-enroll-macos.md).
 
-### New Intune device subscription SKU <!--3312071-->
+#### New Intune device subscription SKU <!--3312071-->
 To help lower the cost of managing devices in enterprises, a new device-based subscription SKU is now available. This Intune device SKU is licensed per device on a monthly basis. Price varies by the licensing program. It's available directly through the Microsoft 365 admin center, and through the [Enterprise Agreement](https://www.microsoft.com/licensing/licensing-programs/enterprise?activetab=enterprise-tab:primaryr2) (EA), [Microsoft Products and Services Agreement](https://www.microsoft.com/licensing/mpsa/default) (MPSA), [Microsoft Open Agreements](https://partner.microsoft.com/licensing/licensing-agreements), and [Cloud Solution Provider](https://www.microsoftpartnercommunity.com/t5/Partnership-101/What-is-the-Cloud-Solution-Provider-CSP-program/td-p/2453) (CSP).
 
 ### Device management
@@ -367,8 +367,6 @@ Intune app protection policies allow you to configure various data protection se
 - **Conditional launch** - This group holds settings like the minimum OS settings, jailbreak and rooted device detection, and offline grace periods.  
   
 The functionality of the settings doesn’t change, but it will be easier to find them when you work in the policy authoring flow.
-
-### Device management
 
 #### Restricts apps, and block access to company resources on Android devices <!-- 2451462  -->  
 In **Device compliance** > **Policies** > **Create policy** > **Android** > **System Security**, there is a new setting under the *Device Security* section, named **Restricted apps**. The **Restricted apps** setting uses a compliance policy to block access to company resources if certain apps are installed on the device. The device is considered non-compliant until the restricted apps are removed from the device.
