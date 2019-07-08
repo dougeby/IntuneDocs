@@ -55,7 +55,10 @@ To manage devices and install apps, your users can install the Company Portal ap
     ![Windows 10 devices, where architecture equals X86, is selected](./media/Win10CP-all-devices.png)
 
 7. Download all the packages under “Required Frameworks” by selecting **Download**.  
-    This action must be completed for x86, x64, and ARM architectures, a total of 15 packages.
+
+    This action must be completed for x86, x64, and ARM architectures:<br> 
+    *There are 9 Required Framework Packages when selecting 1507 as the minimum OS Version, 12 packages when selecting 1511, and 15 packages when selecting 1607.*
+
 8. Before you upload the Company Portal app to Intune, create a folder (for example: C:\Company Portal) with the packages structured in the following way:
    - Place the Company Portal package into C:\Company Portal. Create a *Dependencies* subfolder in this location as well.  
 
