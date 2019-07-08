@@ -47,9 +47,9 @@ You can start to use Intune with a 30-day free trial that includes 100 user lice
 
 <!--- For a list of settings that you can set up on mobile devices, see:
 
--   [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
+- [Enrolled device management capabilities of Microsoft Intune](introduction-intune.md)
 
--   [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
+- [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management)
 
 For more about System Center Configuration Manager, see [Documentation  for System Center Configuration Manager](/sccm/index).--->
 ## Intune Onboarding benefit

@@ -61,7 +61,7 @@ As already mentioned, Conditional Access can drive a user to enroll their device
 
 * Which user is attempting the access
 * Whether the location is trusted or untrusted
-*	Sign-in risk level
+* Sign-in risk level
 * Device platform
 
 Still, many organizations often have specific risks they’re concerned about.  The table below lists the common concerns and MDM vs MAM response to that concern.

@@ -78,24 +78,24 @@ Complete the following steps to remove a Windows 10 device from management.
 ## Remove your Windows 8.1 computer
 Complete the following steps to remove a Windows 8.1 computer from Intune.
 
-1.  Go to **PC Settings** > **Network** > **Workplace**.
-2.  Under **Workplace Join**, select **Leave**.
-3.  Under **Turn on device management,** select **Turn off**.
-4.  On the popup window that opens, select **Turn off**.
+1. Go to **PC Settings** > **Network** > **Workplace**.
+2. Under **Workplace Join**, select **Leave**.
+3. Under **Turn on device management,** select **Turn off**.
+4. On the popup window that opens, select **Turn off**.
 
 ## Remove your Windows 8.1 phone
 Complete the following steps to remove a Windows 8.1 phone from Intune.
 
-1.  Go to **Settings** > **Workplace**.
-2.  Tap the workplace account that you want to unenroll.
-3.  Tap **Delete** at the bottom of the screen.
-4.  On the **Delete account** dialog box, tap **Delete**.  
+1. Go to **Settings** > **Workplace**.
+2. Tap the workplace account that you want to unenroll.
+3. Tap **Delete** at the bottom of the screen.
+4. On the **Delete account** dialog box, tap **Delete**.  
 ## Removing your personal information after removing the Company Portal  
 
 There are two kinds of data that the Company Portal stores on your Windows device:
 
--	**Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
--	**Application cache**: Support files that are required for the app to work, such as icons and settings.
+- **Diagnostic logs**: Standard app activity data that Microsoft collects. This is automatically erased when you uninstall the Company Portal app. App activity data is, for example, data about how long the app was open or if the app crashed.
+- **Application cache**: Support files that are required for the app to work, such as icons and settings.
 
 To delete the stored logs and cache, complete one of the following steps:
 

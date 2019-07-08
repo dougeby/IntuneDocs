@@ -49,11 +49,11 @@ DEM user accounts and devices that are enrolled with a DEM user account have the
 
 ## Add a device enrollment manager
 
-1.  In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Device enrollment managers**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Device enrollment managers**.
 
-2.  Select **Add**.
+2. Select **Add**.
 
-3.  On the **Add User** blade, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
+3. On the **Add User** blade, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
 
 ## Permissions for DEM
 

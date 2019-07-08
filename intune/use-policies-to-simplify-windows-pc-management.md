@@ -38,13 +38,13 @@ To manage Windows desktops as PCs, by running the Intune software client on them
 ### Manage the Microsoft Intune Center
 Users see the Intune software client as the **Microsoft Intune Center**. The Microsoft Intune Center lets users:
 
--   Get applications from the company portal.
+- Get applications from the company portal.
 
--   Check for updates.
+- Check for updates.
 
--   Manage Microsoft Intune Endpoint Protection.
+- Manage Microsoft Intune Endpoint Protection.
 
--  Request remote assistance.
+- Request remote assistance.
 
 The Microsoft Intune Center is installed on all managed computers. You can configure the following settings in an Intune policy, and these are displayed to users in the Microsoft Intune Center:
 

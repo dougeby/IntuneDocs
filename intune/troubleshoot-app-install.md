@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -39,11 +39,11 @@ Intune provides app troubleshooting details based on the apps installed on a spe
 4. Click **Select user** to select a user to troubleshoot. The **Select users** pane will be displayed.
 5. Select a user by typing the name or email address. Click **Select** at the bottom of the pane. The troubleshooting information for the user is displayed in the **Troubleshoot** pane. 
 6. Select the device that you want to troubleshoot from the **Devices** list.
-	![The Intune Troubleshooting pane.](media/troubleshoot-app-install-01.png)
+    ![The Intune Troubleshooting pane.](media/troubleshoot-app-install-01.png)
 7. Select **Managed Apps** from selected device pane. A list of managed apps is displayed.
-	![Details of a specific device managed by Intune.](media/troubleshoot-app-install-02.png)
+    ![Details of a specific device managed by Intune.](media/troubleshoot-app-install-02.png)
 8. Select an app from the list where **Installation Status** indicates a failure.
-	![A selected app that shows installation failure details.](media/troubleshoot-app-install-03.png)
+    ![A selected app that shows installation failure details.](media/troubleshoot-app-install-03.png)
 
     > [!Note]  
     > The same app could be assigned to multiple groups but with different intended actions (intents) for the app. For instance, a resolved intent for an app will show **excluded** if the app is excluded for a user during app assignment. For more information, see [How conflicts between app intents are resolved](apps-deploy.md#how-conflicts-between-app-intents-are-resolved).<br><br>
@@ -53,6 +53,18 @@ The app installation error details will indicate the problem. You can use these 
 
 > [!Note]  
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+
+## User Group targeted app installation does not reach device
+The following actions should be considered when you have problems installing apps:
+- If the app does not display in the Company Portal, ensure the app is deployed with **Available** intent and that the user is accessing the Company Portal with the device type supported by the app.
+- For Windows BYOD devices, the user needs to add a Work account to the device.
+- Check if the user is over the AAD device limit:
+  1. Navigate to [Azure Active Directory Device Settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Make note of the value set for **Maximum devices per user**.
+  3. Navigate to [Azure Active Directory Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Select the affected user and click **Devices**.
+  5. If user is over the set limit then delete any stale records that are no longer needed.
+- For iOS DEP devices, ensure that the user is listed as **Enrolled by User** in Intune Device Overview blade. If it shows NA, then deploy a config policy for the Intune Company Portal. For more information, see [Configure the Company Portal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## Win32 app installation troubleshooting
 

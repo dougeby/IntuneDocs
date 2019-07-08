@@ -57,8 +57,8 @@ You can add an Android store app to Intune from the Azure portal by doing the fo
 	- **Owner**: Optionally, enter a name for the owner of this app, for example, *HR department*.
 	- **Notes**: Optionally, enter any notes that you want to associate with this app.
 	- **Logo**: Optionally, upload an icon that will be associated with the app. This icon is displayed with the app when users browse the company portal.
-1. Select **OK**.
-2. Select **Add**.
+8. Select **OK**.
+9. Select **Add**.
 
 The app you've created is displayed in the apps list, where you can assign it to the groups that you select. 
 

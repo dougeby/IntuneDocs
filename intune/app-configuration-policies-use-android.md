@@ -106,7 +106,7 @@ When the assigned app is run on a device, it runs with the settings that you con
 
 ## Preconfigure the permissions grant state for apps
 
-You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions—such as access to location or the device camera—prompt users to accept or deny permissions. For example, if an app uses the device's microphone, the user is prompted to grant the app permission to use the microphone.
+You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions—such as access to location or the device camera—prompt users to accept or deny permissions. For example, if an app uses the device's microphone, the user is prompted to grant the app permission to use the microphone.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Choose **Client apps**.
