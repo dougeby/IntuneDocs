@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Wipe data using app protection policy access actions
+title: Wipe data using app protection policy conditional launch actions
 titleSuffix: Microsoft Intune
-description: Learn how to selectively wipe data using app protection policy access actions in Microsoft Intune.
+description: Learn how to selectively wipe data using app protection policy conditional launch actions in Microsoft Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -28,21 +28,19 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# Selectively wipe data using app protection policy access actions in Intune
+# Selectively wipe data using app protection policy conditional launch actions in Intune
 
 Using Intune app protection policies, you can configure settings to block end users from accessing a corporate app or account. These settings target data relocation and access requirements set by your organization for things like jail-broken devices and minimum OS versions.
  
 You can explicitly choose to wipe your company’s corporate data from the end user’s device as an action to take for non-compliance by using these settings. For some settings, you will be able to configure multiple actions, such as block access and wipe data based on different specified values.
 
-## Create an app protection policy using access actions
+## Create an app protection policy using conditional launch actions
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**.  
-    Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps** > **App protection Policies**.
 4. Click **Add a policy** (You can also edit an existing policy). 
 5. Click **Configure required settings** to see the list of settings available to be configured for the policy. 
-6. By scrolling down in the Settings pane, you will see a section titled **Access Actions** with an editable table.
+6. By scrolling down in the Settings pane, you will see a section titled **Conditional launch** with an editable table.
 
     ![Screenshot of the Intune app protection access actions](./media/apps-selective-wipe-access-actions01.png)
 
@@ -58,13 +56,13 @@ The app protection policy settings table has columns for **Setting**, **Value**,
 
 ### iOS policy settings
 For iOS, you will be able to configure actions for the following settings using the **Setting** dropdown:
--  Max PIN attempts
--  Offline grace period
--  Jailbroken/rooted devices
--  Min OS version
--  Min app version
--  Min SDK version
--  Device model(s)
+- Max PIN attempts
+- Offline grace period
+- Jailbroken/rooted devices
+- Min OS version
+- Min app version
+- Min SDK version
+- Device model(s)
 
 To use the **Device model(s)** setting, input a semi-colon separated list of iOS model identifiers. You can find an iOS model identifier under the Device Type column in [HockeyApp's support documentation](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Example input: *iPhone5,2;iPhone5,3*
@@ -80,15 +78,15 @@ When conflicts arise between two app protection policies for configured values, 
 ### Android policy settings
 
 For Android, you will be able to configure actions for the following settings using the **Setting** dropdown:
--  Max PIN attempts
--  Offline grace period
--  Jailbroken/rooted devices
--  Min OS version
--  Min app version
--  Min patch version
--  Device manufacturer(s)
--  SafetyNet device attestation
--  Threat scan on apps
+- Max PIN attempts
+- Offline grace period
+- Jailbroken/rooted devices
+- Min OS version
+- Min app version
+- Min patch version
+- Device manufacturer(s)
+- SafetyNet device attestation
+- Threat scan on apps
 
 To use the **Device manufacturer(s)** setting, input a semi-colon separated list of Android manufacturers. You can find the Android manufacturer of a device under the device settings.<br>
 Example input: *Manufacturer A;Manufacturer B* 
@@ -111,9 +109,9 @@ By default, the table will have populated rows as settings configured for **Offl
 To configure a setting, select a setting from the dropdown under the **Setting** column. Once a setting is selected, the editable text box will become enabled under the **Value** column in the same row, if a value is required to be set. Also, the dropdown will become enabled under the **Action** column with the set of conditional launch actions applicable to the setting. 
 
 The following list provides the common list of actions:
--  **Block access** – Block the end user from accessing the corporate app.
--  **Wipe data** – Wipe the corporate data from the end user’s device.
--  **Warn** – Provide dialog to end user as a warning message.
+- **Block access** – Block the end user from accessing the corporate app.
+- **Wipe data** – Wipe the corporate data from the end user’s device.
+- **Warn** – Provide dialog to end user as a warning message.
 
 In some cases, such as the **Min OS version** setting, you can configure the setting to perform all applicable actions based on different version numbers. 
 

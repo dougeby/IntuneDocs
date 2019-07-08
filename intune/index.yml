@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 05/30/2019
+  ms.date: 07/03/2019
   ms.topic: landing-page
   ms.devlang: 
   ms.service: microsoft-intune
@@ -80,7 +80,7 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/ZncVbETBXnM]"
+    text: ">[!VIDEO https://www.youtube.com/embed/DnmnLr2NUXk]"
   - type: paragraph
     text: ' '    
   - type: markdown
@@ -116,7 +116,7 @@ sections:
     - html: <a href="/intune/app-management">Manage apps</a>
     - html: <a href="/intune/device-profiles">Configure devices</a>
     - html: <a href="/intune/device-compliance-get-started">Set device compliance</a>
-    - html: <a href="/intune/conditional-access">Set up conditional access</a>
+    - html: <a href="/intune/conditional-access">Set up Conditional Access</a>
     - html: <a href="/intune/app-protection-policy">Protect apps</a>
     - html: <a href="/intune/mobile-threat-defense">Set up mobile threat defense</a>
     - html: <a href="/intune/network-access-control-integrate">Integrate network access control</a>

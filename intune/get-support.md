@@ -9,7 +9,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/15/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -80,13 +80,13 @@ To access Help and support, use the following options:
 > If your instance of Intune is hosted on the Government Compute Cloud (GCC), also known as a sovereign cloud like Azure Government, see Intune support for Government Compute Cloud, later in this article. The Intune *Help and support* experience won’t be available on the GCC until later this year. 
 
 
-When you open *Help and support*, the portal displays the **Need help?** page, as seen in the following image from the Device Management dashboard.
-
-> [!TIP] 
-> **Premier support** customers see the following additional elements on the Need help? page: 
-> - After the page title **Need Help?**, you’ll see the Premier Support banner:  
->   ![Premier support banner](./media/get-support/premier-banner.png)
-> - In the **Get support** section of the page, you can set the initial **Severity** level when you create a service request by phone.
+When you open *Help and support*, the portal displays a view that depends on whether or not you have active support incidents, and when you have Premier Support, some additional elements and options:
+- **No active support incidents**: You'll see the **Need help?** page, as seen in the following image from the Device Management dashboard.  
+- **Active support incidents**: You’ll see the [Support tickets](#view-support-cases) page, which displays the list of your active incidents.  
+- **Premier support contract**: Your experience is the same as the first two options, though you'll see the following additional elements on the Need help? page: 
+  - After the page title **Need Help?**, you’ll see the Premier Support banner:  
+    ![Premier support banner](./media/get-support/premier-banner.png)
+  - In the **Get support** section of the page, you can set the initial **Severity** level when you create a service request by phone.
 
 
 ![Device Management dashboard and the Need Help? page](./media/get-support/help-support-dashboard.png)
@@ -105,7 +105,7 @@ When you open Help and support from a location that is supported by the new expe
 The following are examples of queries you might submit:
   
 - *Can’t restore iOS device*  
-- *Can’t create conditional access policy*  
+- *Can’t create Conditional Access policy*  
 
 ![Specify the issue on the Need Help? page](./media/get-support/describe-the-issue.png)
 

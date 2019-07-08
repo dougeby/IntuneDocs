@@ -18,7 +18,7 @@ An update to the Android Company Portal app shows a sign-in progress indicator w
 
 #### Block apps from accessing SharePoint Online <!-- 679339 -->
 
-You can now create an app-based conditional access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based conditional access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
+You can now create an app-based Conditional Access policy to block apps, which don't have app protection policies applied to them, from accessing [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online). In the apps-based Conditional Access scenario, you can specify the apps that you want to have access to SharePoint Online using the Azure portal.
 
 #### Single sign-in support from the Company Portal for iOS to Outlook for iOS <!--834012-->
 Users no longer have to sign in to the Outlook app if they are signed in to the Company Portal app for iOS on the same device with the same account. When users launch the Outlook app, they will be able to select their account and automatically sign in. We are also working toward adding this functionality for other Microsoft apps.
@@ -29,15 +29,15 @@ New, more specific error messages will now be displayed within the Company Porta
 #### Improved app install status for the Windows 10 Company Portal app <!--676495-->
 
 New improvements for app installs started in the Windows 10 Company Portal app include:
--	Faster install progress reporting for MSI packages
--	Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
--	New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
+- Faster install progress reporting for MSI packages
+- Faster install progress reporting for modern apps on devices running the Windows 10 Anniversary Update and beyond
+- New progress bar for modern app installs on devices running the Windows 10 Anniversary Update and beyond
 
 You can see the new progress bar on the [what's new in Intune app UI page](/intune/whats-new-app-ui).
 
 #### Bulk Enroll Windows 10 devices <!-- 747607 -->
 
-You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](/intune-classic/deploy-use/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to sign in.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
+You can now join large numbers of devices that run the Windows 10 Creators update to Azure Active Directory and Intune with Windows Configuration Designer (WCD). To enable [bulk MDM enrollment](/intune-classic/deploy-use/bulk-enroll-windows) for your Azure AD tenant, create a provisioning package that joins devices to your Azure AD tenant using Windows Configuration Designer, and apply the package to corporate-owned devices you'd like to bulk enroll and manage. Once the package is applied to your devices, they will Azure AD join, enroll in Intune, and be ready for your Azure AD users to sign in.  Azure AD users are standard users on these devices and receive assigned policies and required apps. Self-service and Company Portal scenarios are not supported at this time.
 
 ### What's new in the public preview of the Intune admin experience on Azure <!--736542-->
 
@@ -73,7 +73,7 @@ After migration, you will need to re-upload the appx again as a PC appx if you w
 
 #### Administration roles being replaced in Azure portal
 
-The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to re-assign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
+The existing mobile application management (MAM) administration roles (Contributor, Owner, and Read-Only) used in the Intune classic portal (Silverlight) are being replaced with a full set of new role-based administration controls (RBAC) in the Intune Azure portal. Once you are migrated to the Azure portal, you will need to re-assign your admins to these new administration roles. For more information about RBAC and the new roles, see [Role-based access control for Microsoft Intune](/intune/role-based-access-control).
 
 ### What's coming
 
@@ -104,14 +104,14 @@ We have made available a version of the Company Portal app for iOS through the A
 
 #### Support for Skycure
 
-You can now control mobile device access to corporate resources using conditional access based on risk assessment conducted by Skycure, a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running Skycure, including:
+You can now control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Skycure, a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running Skycure, including:
 
 - Physical defense
 - Network defense
 - Application defense
 - Vulnerabilities defense
 
-You can configure EMS conditional access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+You can configure EMS Conditional Access policies based on Skycure risk assessment enabled through Intune device compliance policies. You can use these policies to allow or block noncompliant devices access to corporate resources based on detected threats. For more information, see [Skycure Mobile Threat Defense connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### New user experience for the Company Portal app for Android <!--621622-->
 
@@ -327,7 +327,7 @@ From mid-December 2016 on, users will no longer be able to use the Intune AV Pla
 __New Microsoft Intune Company Portal available for Windows 10 devices__
 Microsoft has released a new [Microsoft Intune Company Portal app for Windows 10 devices](https://www.microsoft.com/store/apps/9wzdncrfj3pz). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
 
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Microsoft Store. For more details, go to [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
+The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Microsoft Store. For more details, go to [aka.ms/intunecp_universalapp](https://aka.ms/intunecp_universalapp).
 
 > [!IMPORTANT]
 > __An Update on Intune and Android for Work__

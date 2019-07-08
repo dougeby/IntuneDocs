@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use app configuration policies in Microsoft Intune to supply settings to Managed Google Play apps. The app developer must expose Android managed app configuration settings in order to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
+Use app configuration policies in Microsoft Intune to supply settings to Managed Google Play apps on managed Android Enterprise devices. The app developer must expose Android managed app configuration settings as defined by the [AppConfig Community](https://www.appconfig.org/members) (opens 3rd party site) in order for Intune to specify configuration settings for the app. Assign the app configuration policy to the user group for which you want the settings to apply.  The policy settings are used when the app checks for them, typically the first time it is run.
 
 > [!Note]  
 > Not every app supports app configuration. Check with the app developer to see whether they have built their app to support app configuration policies.
@@ -106,7 +106,7 @@ When the assigned app is run on a device, it runs with the settings that you con
 
 ## Preconfigure the permissions grant state for apps
 
-You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions—such as access to location or the device camera—prompt users to accept or deny permissions. For example, if an app uses the device's microphone, the user is prompted to grant the app permission to use the microphone.
+You can also preconfigure permission for apps to access Android device features. By default, Android apps that require device permissions—such as access to location or the device camera—prompt users to accept or deny permissions. For example, if an app uses the device's microphone, the user is prompted to grant the app permission to use the microphone.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Choose **Client apps**.
@@ -126,6 +126,10 @@ You can also preconfigure permission for apps to access Android device features.
 9. To assign the app configuration policy, select the app configuration policy, select **Assignment**, and then select **Select groups**.
 10. Select the user groups to assign, and then choose **Select**.
 11. Choose **Save** to assign the policy.
+
+## Additional information
+
+- [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## Next steps
 

@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
  This topic describes the user experience when using apps with app protection policies applied to. App protection policies are applied only when apps are used in the work context; for example, when the user is accessing apps with a work account or accessing files that are stored in a company OneDrive for business location.
 
-##  Access apps
+## Access apps
 
 If the device is **not enrolled in Intune**, the user is asked to restart the app when they first use it. A restart is required so that app protection polices can be applied to the app.
 
@@ -44,7 +44,7 @@ If the device is **not enrolled in Intune**, the user is asked to restart the ap
 
 For devices that are **enrolled for management in Intune**, the user sees a message that their app is now managed.
 
-##  Use apps with multi-identity support
+## Use apps with multi-identity support
 
 Apps that support multi-identity let you use different accounts (work and personal) to access the same apps, while app protection policies are applied only when the apps are used in the work context.  
 
@@ -54,13 +54,13 @@ For example, the user gets a PIN prompt when accessing work data. For the **Outl
 
 App protection polices are only applied in the work context. Therefore, the app might behave differently depending on whether the context is work or personal.
 
-##  Manage user accounts on the device
+## Manage user accounts on the device
 
 Multi-identity applications allow users to add multiple accounts.  Intune APP supports only one managed account.  Intune APP does not limit the number of unmanaged accounts.
 
 When there is a managed account in an application:
-*	If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
-*	If the IT admin adds policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
+* If a user attempts to add a second managed account, the user is asked to select which managed account to use.  The other account is removed.
+* If the IT admin adds policy to a second existing account, the user is asked to select which managed account to use.  The other account is removed.
 
 Read the following example scenario to get a deeper understanding of how multiple user accounts are treated.
 

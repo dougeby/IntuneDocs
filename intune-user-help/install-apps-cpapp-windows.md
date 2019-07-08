@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 06/27/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -41,10 +41,9 @@ Install apps on your device from the Company Portal app for Windows.
 
     * **Home**: Select from a list of your organization's featured apps.  
     * **Show all**: From the **Home page** > **Apps** section, click **Show all** to view all available apps.  
-    * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured.  
+    * **All apps**: Select this page in the navigation pane to see all available apps, including installed and featured. View, sort, and filter the apps. Search results are sorted automatically by relevancy.  
     * **App categories**: Select this page in the navigation pane to choose apps based on type or function. Apps are sorted under categories such as **Featured**, **Education**, and **Productivity**.  
     * **Search for apps**: A static search bar sits in the app's navigation pane.  To find your available apps, search by app name or publisher.  
-    * **All apps**: View, sort, and filter all available apps. Search results are sorted automatically by relevancy.  
 
 3. Select an app.   
 4. On the apps details page, click **Install**. After installation is done, you'll see an **Installed** status.  
@@ -53,9 +52,12 @@ Install apps on your device from the Company Portal app for Windows.
     
     ![The Company Portal app for Windows 10, app details page, "Installed" status showing after app is installed. Install button changes to read Reinstall.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
- Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
+> [!IMPORTANT]
+> If a required app fails to install and your organization makes it available for you to manually install, select **Retry**. It could take up to ten minutes to see the updated status. If you select **Retry** again during this time and get an error, that's okay. Continue to wait the ten minutes for an updated status.   
 
-## Share apps with others  
+Depending on the size of your company, you might see multiple versions of Office available to download from Company Portal. For specific information about the Office suite for Windows devices, see [Installing Office 365 on your Windows device](./install-office-windows.md).
+
+## Share apps  
 Share and recommend apps to your work or school contacts. The following steps describe how to share a link directly from Company Portal.
 
 1. In Company Portal, right-click or press and hold on any app to open its [context menu](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus).  
@@ -69,16 +71,34 @@ Share and recommend apps to your work or school contacts. The following steps de
 
 After you share, the recipient will receive a link and a message to view the app's details. The link opens the Company Portal **App details** page. 
 
-## Available apps  
+## Available and required apps
+Apps are assigned to you by your organization, and labeled in Company Portal as either **Available** or **Required**. 
 
-Your organization selects apps that are appropriate and useful for you at work or school. These apps are the only ones you'll find in the Company Portal.  
+* Available apps: These apps are selected by your organization, and are appropriate and useful for work or school. They are optional to install, and are the only apps you'll find in the Company Portal to install. 
 
-Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.  
+* Required apps: These apps are necessary for work and school and are deployed directly to your device. These apps are automatically installed for you without intervention. 
+
+Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Windows, you'll have access to Windows apps, but not iOS apps.
 
 ## Request an app for work or school  
 If there's an app you need, but don't see in Company Portal, request it. Find contact details for your **Helpdesk** in the Company Portal app, on the help & support page. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).    
 
   ![The Company Portal app for Windows 10, Help & Support page, highlighting Helpdesk details. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
+## View installed apps  
+View a list of all apps installed on your device. The **Installed apps** page lists the following details about each app:
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+* Name: The name of the app. Available apps include a link to the **App details** page.
+* Assignment type: How the app is assigned and made available to you. 
+* Publisher: The name of the developer or company that distributed the app. A publisher is typically a software vendor or your organization.  
+* Date Published: The date that the app was made available to download. Publish date could show an app’s initial release or an app’s most recent update.
+* Status: The current installation status of the app on your device. Apps can show as installing, installed, and install failed. Required apps could take up to 10 minutes to show an up-to-date status. See the note under [Install apps](#install-apps) for important details about installing a required app. 
+
+To get to this page, go to the navigation menu and select **Installed apps**. 
+
+  ![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](./media/installed-apps-cp-1906.png)  
+
+
+Use **Sort by** to rearrange the apps assignment type, publisher, alphabetically by name, or chronologically by publish date. Use **Filter by** to limit the apps you see by installation status.  If no apps are available, you'll see a message that no company apps were installed.  
+
+Need additional help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

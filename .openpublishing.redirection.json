@@ -5219,6 +5219,16 @@
 			"source_path": "intune/certificates-symantec-configure.md",
 			"redirect_url": "/intune/certificates-digicert-configure",
 			"redirect_document_id": true
+		 },
+		 {
+			"source_path": "intune/device-profile-android-teamviewer.md",
+			"redirect_url": "/intune/teamviewer-support",
+			"redirect_document_id": true
+		 },
+		 {
+			"source_path": "intune/security-baseline-settings-windows.md",
+			"redirect_url": "/intune/security-baseline-settings-mdm",
+			"redirect_document_id": true
 		 }
-	 ]
+		]
 }

@@ -63,7 +63,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 More resources:
 
 - [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) has details about how the HAS service works.
-- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy ](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
+- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643)
 
 ## Device properties
 
@@ -149,7 +149,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
   - **Medium**: The device is evaluated as compliant if existing threats on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be non-compliant.
   - **High**: This option is the least secure, and allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
   
-  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with conditional access](advanced-threat-protection.md).
+  To set up Windows Defender ATP (Advanced Threat Protection) as your defense threat service, see [Enable Windows Defender ATP with Conditional Access](advanced-threat-protection.md).
 
 Select **OK** > **Create** to save your changes.
 
@@ -163,7 +163,7 @@ To verify device encryption on the Microsoft HoloLens, see [Verify device encryp
 
 ## Surface Hub
 
-Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and conditional access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (requires Azure Active Directory (Azure AD)), and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure AD joined for compliance and conditional access to work.
+Surface Hub uses the **Windows 10 and later** platform. Surface Hubs are supported for both compliance and Conditional Access. To enable these features on Surface Hubs, we recommend you [enable Windows 10 automatic enrollment](windows-enroll.md) in Intune (requires Azure Active Directory (Azure AD)), and target the Surface Hub devices as device groups. Surface Hubs are required to be Azure AD joined for compliance and Conditional Access to work.
 
 See [set up enrollment for Windows devices](windows-enroll.md) for guidance.
 

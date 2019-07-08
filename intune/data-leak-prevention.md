@@ -26,7 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
---- 
+---
 # Prevent data leaks on non-managed devices using Microsoft Intune
 
 If you allow access to company data hosted by Office 365, you can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service. 

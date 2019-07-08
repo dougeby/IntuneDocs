@@ -51,8 +51,7 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 
 ## Get started
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All Services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Manage**, select **Apps**.
 5. Select **Add**.
@@ -82,17 +81,17 @@ In this step, you provide information about the app suite. This information help
 
 1. In the **Add App** pane, select **App Suite Information**.
 2. In the **App Suite Information** pane, do the following:
-	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
-	- **Suite Description**: Enter a description for the app suite. For example, you could list the apps you've selected to include.
-	- **Publisher**: Microsoft appears as the publisher.
-	- **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app suite when they browse the company portal.
-	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
-	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-	- **Developer**: Microsoft appears as the developer.
-	- **Owner**: Microsoft appears as the owner.
-	- **Notes**: Enter any notes that you want to associate with this app.
-	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
+    - **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
+    - **Suite Description**: Enter a description for the app suite. For example, you could list the apps you've selected to include.
+    - **Publisher**: Microsoft appears as the publisher.
+    - **Category**: Optionally, select one or more of the built-in app categories or a category that you created. This setting makes it easier for users to find the app suite when they browse the company portal.
+    - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
+    - **Developer**: Microsoft appears as the developer.
+    - **Owner**: Microsoft appears as the owner.
+    - **Notes**: Enter any notes that you want to associate with this app.
+    - **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
 3. Select **OK**.
 
 ## Configure app suite
@@ -110,14 +109,14 @@ If you selected the **Configuration designer** option under the **Setting format
 
 1. In the **Add App** pane, select **App Suite Settings**.
 2. In the **App Suite Settings** pane, do the following:
-	- **Office version**: Choose whether you want to assign the 32-bit or 64-bit version of Office. You can install the 32-bit version on both 32-bit and 64-bit devices, but you can install the 64-bit version on 64-bit devices only.
-	- **Update Channel**: Choose how Office is updated on devices. For information about the various update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choose from:
-		- **Monthly**
-		- **Monthly (Targeted)**
-		- **Semi-Annual**
-		- **Semi-Annual (Targeted)**
+    - **Office version**: Choose whether you want to assign the 32-bit or 64-bit version of Office. You can install the 32-bit version on both 32-bit and 64-bit devices, but you can install the 64-bit version on 64-bit devices only.
+    - **Update Channel**: Choose how Office is updated on devices. For information about the various update channels, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Choose from:
+        - **Monthly**
+        - **Monthly (Targeted)**
+        - **Semi-Annual**
+        - **Semi-Annual (Targeted)**
 
-		After you choose a channel, you can optionally select **Specific** to install a specific version of Office for the selected channel on end user devices. Then, select the **Specific version** of Office to use.
+        After you choose a channel, you can optionally select **Specific** to install a specific version of Office for the selected channel on end user devices. Then, select the **Specific version** of Office to use.
         
         The available versions will change over time. Therefore, when creating a new deployment, the versions available may be newer and not have certain older versions available. Current deployments will continue to deploy the older version, but the version list will be continually updated per channel.
         
@@ -126,10 +125,18 @@ If you selected the **Configuration designer** option under the **Setting format
         For more information, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
     - **Remove MSI from end-user devices** - Choose whether you want to remove pre-existing Office .MSI apps from end-user devices. The installation won’t succeed if there are pre-existing .MSI apps on end-user devices. The apps to be uninstalled are not limited to the apps selected for installation in **Configure App Suite**, as it will remove all Office (MSI) apps from the end user device. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). When Intune reinstalls Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations. 
-	- **Automatically accept the app end user license agreement**: Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
-	- **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
-	- **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
-	You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+    - **Automatically accept the app end user license agreement**: Select this option if you don't require end users to accept the license agreement. Intune then automatically accepts the agreement.
+    - **Use shared computer activation**: Select this option when multiple users share a computer. For more information, see [Overview of shared computer activation for Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
+    - **Languages**: Office is automatically installed in any of the supported languages that are installed with Windows on the end-user's device. Select this option if you want to install additional languages with the app suite. <p></p>
+    You can deploy additional languages for Office 365 Pro Plus apps managed through Intune. The list of available languages includes the **Type** of language pack (core, partial, and proofing). In the Azure portal, select **Microsoft Intune** > **Client apps** > **Apps** > **Add**. In the **App type** list of the **Add app** blade, select **Windows 10** under **Office 365 Suite**. Select **Languages** in the **App Suite Settings** blade. For additional information, see [Overview of deploying languages in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## Select scope tags (optional)
+You can use scope tags to determine who can see client app information in Intune. For full details about scope tags, see [Use role-based access control and scope tags for distributed IT](scope-tags.md).
+
+1. Select **Scope (Tags)** > **Add**.
+2. Use the **Select** box to search for scope tags.
+3. Select the check box next to the scope tags you want to assign to this app.
+4. Choose **Select** > **OK**.
 
 ## Enter XML format
 

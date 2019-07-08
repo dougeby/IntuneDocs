@@ -36,8 +36,8 @@ Here’s an example of how your target groups could be scheduled:
 
   | **Migration targeted groups** | **Time period 1** | **Time period 2** | **Time period 3** | **Time period 4** | **...**
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| Limited Pilot IT org (50 users) | Announce Plan | Instruct to enroll | Give deadline | Enforce conditional access |  |                                                        
-| Expanded Pilot IT org (200 users) |  | Announce Plan | Instruct to enroll | Give deadline | Enforce conditional access |
+| Limited Pilot IT org (50 users) | Announce Plan | Instruct to enroll | Give deadline | Enforce Conditional Access |  |                                                        
+| Expanded Pilot IT org (200 users) |  | Announce Plan | Instruct to enroll | Give deadline | Enforce Conditional Access |
 | Migration phase 1 Tech-savvy users (2000) |  |  | Announce Plan | Instruct to enroll | Give deadline |
 | Migration phase 2 Eastern US |  |  |  | Announce Plan | Instruct to enroll |
 | All Regions |  |  |  |  | Announce Plan |
@@ -60,9 +60,9 @@ Intune provides several ways that you can monitor your migration:
 
 Track how many users have enrolled devices after each phase so that you can:
 
--   Evaluate the effectiveness of your communication plan.
+- Evaluate the effectiveness of your communication plan.
 
--   Estimate the impact of enforcing conditional access.
+- Estimate the impact of enforcing Conditional Access.
 
 
 ## Post-migration
