@@ -40,7 +40,7 @@ The Windows Autopilot simplifies enrolling devices in Intune. Building and maint
 
 ## How to get the CSV for Import in Intune
 
-For more infomration, see the understanding powershell cmdlet.
+For more information, see the understanding powershell cmdlet.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
