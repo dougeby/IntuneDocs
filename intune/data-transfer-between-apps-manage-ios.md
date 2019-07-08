@@ -59,9 +59,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
       Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
       
-       > [!NOTE]
-       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
-       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
+     > [!NOTE]
+     > In Intune, the App Configuration policy enrollment type must be set to **Managed Devices**.
+     > Additionally, the app needs to be either installed from the Intune Company Portal (if set as available) or pushed as required to the device. 
 
 4. Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 
