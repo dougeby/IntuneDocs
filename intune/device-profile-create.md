@@ -2,12 +2,12 @@
 # required metadata
 
 title: Create device profiles in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure a device configuration profile in Microsoft Intune. Select the platform type, configure the settings, and add a scope tag.
+description: Add or configure a device configuration profile in Microsoft Intune. Select the platform type, configure the settings, add a scope tag.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -41,7 +41,7 @@ This article:
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 2. Select **Device configuration**. You have the following options:
 
@@ -107,27 +107,7 @@ For more information about scope tags, and what you can do, see [Use RBAC and sc
 
 ## Refresh cycle times
 
-Intune uses the following refresh cycles to check for updates to configuration profiles:
-
-| Platform | Refresh cycle|
-| --- | --- |
-| iOS | Every 6 hours |
-| macOS | Every 6 hours |
-| Android | Every 8 hours |
-| Windows 10 PCs enrolled as devices | Every 8 hours |
-| Windows Phone | Every 8 hours |
-| Windows 8.1 | Every 8 hours |
-
-If the device recently enrolled, the check-in runs more frequently:
-
-| Platform | Frequency |
-| --- | --- |
-| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
-| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
-| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
+Intune uses different refresh cycles to check for updates to configuration profiles. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
 At any time, users can open the Company Portal app, and sync the device to immediately check for profile updates.
 

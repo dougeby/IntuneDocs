@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,15 +45,14 @@ Once you have selected the included groups for your application configuration po
 > [!TIP]
 > This policy type is currently available only for devices running iOS 8.0 and later. It supports the following app installation types:
 >
-> -   **Managed iOS app from the app store**
-> -   **App package for iOS**
+> - **Managed iOS app from the app store**
+> - **App package for iOS**
 >
-> For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md).
+> For more information about app installation types, see [How to add an app to Microsoft Intune](apps-add.md). For more information about incorporating app config into your .ipa App package, see [Appconfig for iOS](https://www.appconfig.org/ios) (open 3rd party site).
 
 ## Create an app configuration policy
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Choose the **Client apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
@@ -61,8 +60,8 @@ Once you have selected the included groups for your application configuration po
     - **Description** - The description of the profile that appears in the Azure portal.
     - **Device enrollment type** - Choose **Managed devices** for devices that have been enrolled in Intune.
 6. Select **iOS** for **Platform**.
-7.	Choose **Associated app**. Then, on the **Associated app** pane, choose the managed app to which you want to apply the configuration and select **OK**.
-8.	On the **Add configuration policy** pane, choose **Configuration settings**.
+7. Choose **Associated app**. Then, on the **Associated app** pane, choose the managed app to which you want to apply the configuration and select **OK**.
+8. On the **Add configuration policy** pane, choose **Configuration settings**.
 9. Select **Configuration settings format**. Select one of the following methods to add configuration information:
     - **Use configuration designer**
     - **Enter XML data**<br><br>
@@ -122,7 +121,7 @@ Intune validates the XML format. However, Intune does not check that the XML pro
 
 To learn more about XML property lists:
 
-  -  Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+  - Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
 
 ### Example format for an app configuration XML file
 
@@ -205,6 +204,10 @@ DEP (Apple's Device Enrollment Program) enrollments are not compatible with the 
 
 ## Monitor iOS  app configuration status per device 
 Once a configuration policy has been assigned, you can monitor iOS app configuration status for each managed device. From **Microsoft Intune** in the Azure portal, select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a blade for the device. On the device blade, select **App configuration**.  
+
+## Additional information
+
+- [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## Next steps
 

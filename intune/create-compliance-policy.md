@@ -2,12 +2,12 @@
 # required metadata
 
 title: Device compliance policies in Microsoft Intune - Azure | Microsoft Docs
-description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with conditional access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
+description: Get started with use device compliance policies, overview of status and severity levels, using the InGracePeriod status, working with Conditional Access, handling devices without an assigned policy, and the differences in compliance in the Azure portal and classic portal in Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 05/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a minimum OS version. If the device isn't compliant, you can then block access to data and resources using [conditional access](conditional-access.md).
+Device compliance policies are a key feature when using Intune to protect your organization's resources. In Intune, you can create rules and settings that devices must meet to be considered compliant, such as a minimum OS version. If the device isn't compliant, you can then block access to data and resources using [Conditional Access](conditional-access.md).
 
 You can also take actions for non-compliance, such as sending a notification email to the user. For an overview of what compliance policies do, and how they're used, see [get started with device compliance](device-compliance-get-started.md).
 
@@ -48,7 +48,7 @@ To use device compliance policies, be sure you:
 - Use the following subscriptions:
 
   - Intune
-  - If you use conditional access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions. Intune compliance doesn't require Azure AD.
+  - If you use Conditional Access, then you need Azure Active Directory (AD) Premium edition. [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/) lists what you get with the different editions. Intune compliance doesn't require Azure AD.
 
 - Use a supported platform:
 
@@ -66,7 +66,7 @@ To use device compliance policies, be sure you:
 
 ## Create the policy
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance**. You have the following options:
 
     - **Overview**: Shows a summary and number of devices that are compliant, not evaluated, and so on. It also lists the policies and individual settings in your policies. [Monitor Intune device compliance policies](compliance-policy-monitor.md) provides some good information.
@@ -132,29 +132,9 @@ Scope tags are a great way to assign and filter policies to specific groups, suc
 
 ## Refresh cycle times
 
-When checking for compliance, Intune uses the same refresh cycle as configuration profiles. In general, the times are:
+Intune uses different refresh cycles to check for updates to compliance policies. If the device recently enrolled, the check-in runs more frequently. [Policy and profile refresh cycles](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) lists the estimated refresh times.
 
-| Platform | Refresh cycle|
-| --- | --- |
-| iOS | Every 6 hours |
-| macOS | Every 6 hours |
-| Android | Every 8 hours |
-| Windows 10 PCs enrolled as devices | Every 8 hours |
-| Windows Phone | Every 8 hours |
-| Windows 8.1 | Every 8 hours |
-
-If the device recently enrolled, the compliance check-in runs more frequently:
-
-| Platform | Frequency |
-| --- | --- |
-| iOS | Every 15 minutes for 6 hours, and then every 6 hours |  
-| macOS | Every 15 minutes for 6 hours, and then every 6 hours | 
-| Android | Every 3 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 10 PCs enrolled as devices | Every 3 minutes for 30 minutes, and then every 8 hours | 
-| Windows Phone | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-| Windows 8.1 | Every 5 minutes for 15 minutes, then every 15 minutes for 2 hours, and then every 8 hours | 
-
-At any time, users can open the Company Portal app, and sync the device to immediately check for a policy.
+At any time, users can open the Company Portal app, and sync the device to immediately check for policy updates.
 
 ### Assign an InGracePeriod status
 
@@ -162,9 +142,9 @@ The InGracePeriod status for a compliance policy is a value. This value is deter
 
 Specifically, if a device has a NonCompliant status for an assigned compliance policy, and:
 
-- the device has no grace period assigned to it, then the assigned value for the compliance policy is NonCompliant
-- the device has a grace period that is expired, then the assigned value for the compliance policy is NonCompliant
-- the device has a grace period that is in the future, then the assigned value for the compliance policy is InGracePeriod
+- The device has no grace period assigned to it, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's expired, then the assigned value for the compliance policy is NonCompliant
+- The device has a grace period that's in the future, then the assigned value for the compliance policy is InGracePeriod
 
 The following table summarizes these points:
 

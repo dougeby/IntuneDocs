@@ -34,10 +34,10 @@ Intune supports a wide range of app types. The available options differ for each
 
 | App types | Installation | Updates |
 |---|---|---|
-| Apps from the store (store apps) | Intune installs the app on the device.  | App updates are automatic. 	|
-| Apps written in-house (line-of-business) 	| Intune installs the app on the device (you supply the installation file). 	| You must update the app. 	|
-| Apps that are built-in (built-in apps) 	| Intune installs the app on the device.  | App updates are automatic. 	|
-| Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. 	| App updates are automatic. 	|
+| Apps from the store (store apps) | Intune installs the app on the device.  | App updates are automatic. |
+| Apps written in-house (line-of-business) | Intune installs the app on the device (you supply the installation file). | You must update the app. |
+| Apps that are built-in (built-in apps) | Intune installs the app on the device.  | App updates are automatic. |
+| Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. | App updates are automatic. |
 
 ### Specific app type details
  
@@ -61,6 +61,8 @@ The following table lists the specific app types and how you can add them in the
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
 | Windows app (Win32)  | LOB app  | Select **Windows app (Win32)** as the **app type**, select the **App package file**, and then select an installation file with the extension **.intunewin**.  |
+| macOS LOB apps | LOB app  | Select **Line-of-business** as the **app type**, select the **App package file**, and then select an installation file with the extension **.intunemac**.  |
+
 
 <sup>1</sup> For more information about Android Enterprise and Android work profiles, see [Understanding licensed apps](apps-add.md#understanding-licensed-apps) below.
 
@@ -100,7 +102,7 @@ Use the [Intune deployment planning, design and implementation guide](planning-g
 
 You can choose from the following app types:
 - **Apps from the store**: Apps that have been uploaded to either the Microsoft store, the iOS store, or the Android store are store apps. The provider of a store app maintains and provides updates to the app. You select the app in the store list and add it by using Intune as an available app for your users.
-- **Apps written in-house (line-of-business)**: Apps that are created in-house are line-of-business (LOB) apps. The functionality of this type of app has been created for one of the Intune supported platforms, such as Windows, iOS, or Android. Your organization creates and provides you with updates as a separate file. You provide updates of the app to users by adding and deploying the updates using Intune.
+- **Apps written in-house (line-of-business)**: Apps that are created in-house are line-of-business (LOB) apps. The functionality of this type of app has been created for one of the Intune supported platforms, such as Windows, iOS, macOS, or Android. Your organization creates and provides you with updates as a separate file. You provide updates of the app to users by adding and deploying the updates using Intune.
 - **Apps on the web**: Web apps are client-server applications. The server provides the web app, which includes the UI, content, and functionality. Additionally, modern web hosting platforms commonly offer security, load balancing, and other benefits. This type of app is separately maintained on the web. You use Intune to point to this app type. You also assign which groups of users can access the app. Note that Android does not support web apps.
 
 As you're determining which apps your organization needs, consider how the apps integrate with cloud services, what data the apps access, whether the apps are available to BYOD users, and whether the apps require internet access.
@@ -112,7 +114,7 @@ Intune lets you modify the functionality of apps that you deploy to help align t
 
 - Restricting copy-and-paste and save-as functions.
 - Configuring web links to open inside the Intune Managed Browser app.
-- Enabling multi-identity use and app-level conditional access.
+- Enabling multi-identity use and app-level Conditional Access.
 
 Intune-managed apps can also enable app protection without requiring enrollment, which gives you the choice of applying data loss-prevention policies without managing the user's device. Additionally, you can incorporate mobile-app management in your mobile and line-of-business apps by using the Intune App SDK and App Wrapping Tool. For more information about these tools, see [Intune App SDK overview](app-sdk.md).
 
@@ -151,15 +153,14 @@ App categories can be used to help you sort apps to make them easier for users t
 
 When you add an app to Intune, you are given the option to select the category you want. Use the platform-specific topics to add an app and assign categories. To create and edit your own categories, use the following procedure:
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload pane, under **Setup**, select **App categories**.  
     The **App categories** pane displays a list of current categories. 
 5. Do either of the following:
-	- To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
+    - To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
     Names can be entered in one language only, and they are not translated by Intune.
-	- To edit a category, select the ellipsis (**...**) next to the category, and then select **Pin to dashboard** or **Delete**.
+    - To edit a category, select the ellipsis (**...**) next to the category, and then select **Pin to dashboard** or **Delete**.
 6. Select **Create**.
 
 ## Apps that are added automatically by Intune
@@ -191,6 +192,7 @@ To learn how to add apps for each platform to Intune, see:
 - [Android LOB apps](lob-apps-android.md)
 - [iOS store apps](store-apps-ios.md)
 - [iOS LOB apps](lob-apps-ios.md)
+- [macOS LOB apps](lob-apps-macos.md)
 - [Web apps (for all platforms)](web-app.md)
 - [Windows Phone 8.1 store apps](store-apps-windows-phone-8-1.md)
 - [Windows Phone LOB apps](lob-apps-windows-phone.md)

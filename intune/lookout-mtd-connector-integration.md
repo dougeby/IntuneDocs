@@ -3,12 +3,12 @@
 
 title: Set up your Lookout integration with Microsoft Intune
 titleSuffix: Microsoft Intune
-description: Learn about integrating Intune with Lookout Mobile Threat Defense to control mobile device access to your corporate resources.
+description: Learn about integrating Intune with Lookout Mobile Endpoint Security, as a Mobile Threat Defense solution, to control mobile device access to your corporate resources.
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -20,7 +20,7 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: heenamac
+ms.reviewer: davera
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -28,116 +28,145 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Set up your Lookout Mobile Threat Defense integration with Intune
-
-The following steps are required to set up Lookout Mobile Threat Defense subscription:
-
-| #        |Step  |
-| ------------- |:-------------|
-| 1 | [Collect Azure AD information](#collect-azure-ad-information) |
-| 2 | [Configure your subscription](#configure-your-subscription) |
-| 3 | [Configure enrollment groups](#configure-enrollment-groups) |
-| 4 | [Configure state sync](#configure-state-sync) |
-| 5 | [Configure error report email recipient information](#configure-error-report-email-recipient-information) |
-| 6 | [Configure enrollment settings](#configure-enrollment-settings) |
-| 7 | [Configure email notifications](#configure-email-notifications) |
-| 8 | [Configure threat classification](#configure-threat-classification) |
-| 9 | [Watching enrollment](#watching-enrollment) |
+# Set up Lookout Mobile Endpoint Security integration with Intune
+With an environment that meets the [prerequisites](lookout-mobile-threat-defense-connector.md#prerequisites), you can integrate Lookout Mobile Endpoint Security with Intune. The information in this article will guide you in setting up integration and configuring important settings in Lookout for use with Intune.  
 
 > [!IMPORTANT]
 > An existing Lookout Mobile Endpoint Security tenant that is not already associated with your Azure AD tenant cannot be used for the integration with Azure AD and Intune. Contact Lookout support to create a new Lookout Mobile Endpoint Security tenant. Use the new tenant to onboard your Azure AD users.
 
-## Collect Azure AD information
-Your Lookout Mobility Endpoint Security tenant will be associated with your Azure AD subscription to integrate Lookout with Intune. To enable your Lookout Mobile Threat Defense service subscription, Lookout support (enterprisesupport@lookout.com) needs the following information:
+## Collect Azure AD information  
+To integrated Lookout with Intune, you associate your Lookout Mobility Endpoint Security tenant with your Azure Active Directory (AD) subscription.
 
-* **Azure AD Tenant ID**
-* **Azure AD Group Object ID** for **full** Lookout console access
-* **Azure AD Group Object ID** for **restricted** Lookout console access (optional)
+To enable your Lookout Mobile Endpoint Security subscription integration with Intune, you provide the following information to Lookout support (enterprisesupport@lookout.com):  
 
-Use the following steps to gather the information you need to give to the Lookout support team.
+- **Azure AD tenant Directory ID**  
 
-1. Sign in to the [Azure portal](https://portal.azure.com) and select your subscription. 
+- **Azure AD group Object ID** for the group with **full** Lookout Mobile Endpoint Security (MES) Console access.  
+  You create this user group in Azure AD to contain the users that have *full access* to sign in to the **Lookout console**. Users must be members of this group, or the optional *restricted access* group, to sign in to the Lookout Console. 
 
-2. When you choose the name of your subscription, the resulting URL includes the subscription ID.  If you have any issues finding your subscription ID, see this [Microsoft support article](https://support.office.com/article/Find-your-Office-365-tenant-ID-6891b561-a52d-4ade-9f39-b492285e2c9b) for tips on finding your subscription ID.
+- **Azure AD group Object ID** for the group with **restricted** Lookout MES Console access *(optional group)*. 
+  You create this optional user group in Azure AD to contain users that shouldn't have access to several configuration and enrollment-related modules of the Lookout console. Instead, these users have read-only access to the **Security Policy** module of the Lookout console. Users must be members of this optional group, or the required *full access* group, to sign in to the Lookout Console.
 
-3. Find your Azure AD Group ID. The Lookout console supports 2 levels of access:  
-   * **Full Access:** The Azure AD admin can create a group for users that have Full Access and optionally create a group for users that will have Restricted Access.  Only users in these groups will be able to login to the **Lookout console**.
-   * **Restricted Access:** The users in this group will have no access to several configuration and enrollment-related modules of the Lookout console, and have read-only access to the **Security Policy** module of the Lookout console.  
+ > [!TIP] 
+ > For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/articles/114094105653) on the Lookout website.
 
-     > [!TIP] 
-     > For more details on the permissions, read [this article](https://personal.support.lookout.com/hc/articles/114094105653) on the Lookout website.
+### Collect information from Azure AD 
 
-     > [!NOTE] 
-     > The **Group Object ID** is on the **Properties** page of the group in the **Azure AD management portal**.
+1. Sign in to the [Azure portal](https://portal.azure.com) with a Global Administrator account.
 
-4. Once you have gathered this information, contact Lookout support (email: enterprisesupport@lookout.com). Lookout Support will work with your primary contact to onboard your subscription and create your Lookout Enterprise account, using the information that you collected.
+2. Go to **Azure Active Directory** > **Properties** and locate your **Directory ID**. Use the *Copy* button to copy the Directory ID, and then save it in a text file.
 
-## Configure your subscription
+   ![Azure AD properties](./media/lookout-mtd-connector-integration/azure-ad-properties.png)  
 
-1. After Lookout support creates your Lookout Enterprise account, an email from Lookout is sent to the primary contact for your company with a link to the login url:<https://aad.lookout.com/les?action=consent>.
+3. Next, find the Azure AD Group ID for the accounts you use to grant Azure AD users access to the Lookout Console. One group is for *full access*, and the second group, for *restricted access* is optional. To get the *Object ID*, for each account:  
+   1. Go to **Azure Active Directory** > **Groups** to open the *Groups - All groups* pane.  
 
-2. The first login to the Lookout console must be by with a user account with the Azure AD role of Global Admin to register your Azure AD tenant. Later, sign in doesn't this level of Azure AD privilege. A consent page is displayed. Choose **Accept** to complete the registration. Once you have accepted and consented, you are redirected to the Lookout Console.
+   2. Select the group you created for *full access* to open its *Overview* pane.  
 
-   ![screenshot of the first time login page of the Lookout console](./media/lookout_mtp_initial_login.png)
+   3. Use the *Copy* button to copy the Object ID, and then save it in a text file.  
 
-3. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Intune**.
+   4. Repeat the process for the *restricted access* group if you use that group.  
 
-   ![Image of the Lookout console with the Intune option on the connectors tab](./media/lookout_mtp_setup-intune-connector.png)
+      ![Azure AD group Object ID](./media/lookout-mtd-connector-integration/azure-ad-group-id.png)  
 
-4. Go **Connectors** > **Connection Settings** and specify the **Heartbeat Frequency** in minutes.
+   After you gather this information, contact Lookout support (email: enterprisesupport@lookout.com). Lookout Support will work with your primary contact to onboard your subscription and create your Lookout Enterprise account, using the information that you provide.  
 
-   ![Image of the connection settings tab with heartbeat frequency configured](./media/lookout-mtp-connection-settings.png)
+## Configure your Lookout subscription  
+After Lookout support creates your Lookout Enterprise account, Lookout support sends an email to the primary contact for your company with a link to the sign-in url: https://aad.lookout.com/les?action=consent. 
 
-## Configure enrollment groups
-1. As a best practice, create an Azure AD security group in the [Azure AD management portal](https://manage.windowsazure.com) containing a small number of users to test Lookout integration.
+### Initial sign-in  
+The first sign-in to the Lookout MES Console displays a consent page (https://aad.lookout.com/les?action=consent). An Azure AD Global Administrator just sign-in and **Accept**. Subsequent sign-in doesn't require the user to have this level of Azure AD privilege. 
 
-	> [!NOTE] 
-	> All the Lookout-supported, Intune-enrolled devices of users in an enrollment group in Azure AD that are identified and supported are enrolled and eligible for activation in Lookout MTD console.
+ A consent page is displayed. Choose **Accept** to complete the registration. 
+   ![screenshot of the first-time sign-in page of the Lookout console](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
-2. In the [Lookout Console](https://aad.lookout.com), from the **System** module, choose the **Connectors** tab, and select **Enrollment Management** to define a set of users whose devices should be enrolled with Lookout. Add the Azure AD security group **Display Name** for enrollment.
+When you accept and consent, you're redirected to the Lookout Console.
 
-	![screenshot of the Intune connector enrollment page](./media/lookout-mtp-enrollment.png)
+After the initial sign-in and consent is complete, users that sign in from https://aad.lookout.com are redirected to the MES Console. If consent wasn't yet granted, all sign-in attempts result in a Bad Login Error.
 
-	>[!IMPORTANT]
-	> The  **Display Name** is case-sensitive as shown the in the **Properties** of the security group in the Azure portal. As shown in the image below, the **Display Name** of the security group is camel case while the title is all lower case. In the Lookout console match the **Display Name** case for the security group.
-	>![Image of the Azure portal, Azure Active Directory service, properties page](./media/aad-group-display-name.png)
+### Configure the Intune Connector  
+The following procedure assumes you've previously created a user group in Azure AD for testing your Lookout deployment. The best practice is to start with a small group of users to allow your Lookout and Intune admins to become familiar with the product integrations. After they're familiar, you can extend the enrollment to additional groups of users.
 
-	>[!NOTE] 
-	>The best practice is to use the default (5 minutes) for the increment of time to check for new devices. Current limitations, **Lookout cannot validate group display names:** Ensure the **DISPLAY NAME** field in the Azure portal exactly matches the Azure AD security group. **Creating nest groups is not supported:**  Azure AD security groups used in Lookout must contain users only. They cannot contain other groups.
+1. Sign in to the [Lookout MES Console](https://aad.lookout.com) and go to **System** > **Connectors**, and then select  **Add Connector**.  Select **Intune**.
 
-3.  Once a group is added, the next time a user opens the Lookout for Work app on their supported device, the device is activated in Lookout.
+   ![Image of the Lookout console with the Intune option on the connectors tab](./media/lookout-mtd-connector-integration/lookout_mtp_setup-intune-connector.png)
 
-4.  Once you are satisfied with your results, extend enrollment to additional user groups.
+2. On the *Microsoft Intune* pane, select **Connection Settings** and specify the **Heartbeat Frequency** in minutes. 
 
-## Configure state sync
-In the **State Sync** option, specify the type of data that should be sent to Intune.  Both device status and threat status are required for the Lookout Intune integration to work correctly. These settings are enabled by default.
+   ![Image of the connection settings tab with heartbeat frequency configured](./media/lookout-mtd-connector-integration/lookout-mtp-connection-settings.png)
 
-## Configure error report email recipient information
-In the **Error Management** option, enter the email address that should receive the error reports.
+3. Select **Enrollment Management**, and for **Use the following Azure AD security groups to identify devices that should be enrolled in Lookout for Work**, specify the *Group name* of an Azure AD group to use with Lookout, and then select **Save changes**.
 
-![screenshot of the Intune connector error management page](./media/lookout-mtp-connector-error-notifications.png)
+    ![screenshot of the Intune connector enrollment page](./media/lookout-mtd-connector-integration/lookout-mtp-enrollment.png)  
 
-## Configure enrollment settings
-In the **System** module, on the **Connectors** page, specify the number of days before a device is considered as disconnected.  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+   **About the groups you use**:
+   - As a best practice, start with an Azure AD security group that contains a small number of users to test Lookout integration.
+   - The  **Group name** is case-sensitive as shown in the **Properties** of the security group in the Azure portal.  
+   - The groups you specify for **Enrollment Management** define the set of users whose devices will be enrolled with Lookout. When a user is in an enrollment group, their devices in Azure AD are enrolled and eligible for activation in Lookout MES. The first time a user opens the *Lookout for Work* application on a supported device, they're prompted to activate it.
 
-![Lookout enrollment settings on the System module](./media/lookout-console-enrollment-settings.png)
+4. Select **State Sync** and ensure both *device status* and *threat status* are set to **On**.  Both are required for the Lookout Intune integration to work correctly.  
 
-## Configure email notifications
-If you want to receive email alerts for threats, sign in to the [Lookout console](https://aad.lookout.com) with the user account that should receive notifications. On the **Preferences** tab of the **System** module, choose the threat levels that should  notifications and set them to **ON**. Save your changes.
+5. Select **Error Management**, specify the email address that should receive the error reports, and then select **Save changes**.
+ 
+   ![screenshot of the Intune connector error management page](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
-![screenshot of the preferences page with the user account displayed](./media/lookout-mtp-email-notifications.png)
-If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
+6. Select **Create connector** to complete configuration of the connector. Later, when you're satisfied with your results, you can extend enrollment to additional user groups.
 
-### Configure threat classification
-Lookout Mobile Threat Defense classifies mobile threats of various types. The [Lookout threat classifications](https://personal.support.lookout.com/hc/articles/114094130693) have default risk levels associated with them. These can be changed at any time to suit your company requirements.
+## Configure Intune to use Lookout as a Mobile Threat Defense provider
+After you configure Lookout MES, you must set up a connection to Lookout in Intune.  
 
-![screenshot of the policy page showing threat and classifications](./media/lookout-mtp-threat-classification.png)
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+
+2. Go to **Device compliance** > **Mobile Threat Defense** and select **Add**.
+
+3. On the *Add Connector* pane, use the drop-down and select **Lookout for Work**.  
+
+4. Select **Create**. After the connector establishes contact with Lookout MES, the *Connector Settings* become available.
+
+5. Set **Enable App Sync for iOS Devices** to **On**. 
+
+6. Select **Save** to complete the configuration.  Intune and Lookout MES are now integrated and ready for use.
+
+
+## Additional settings in the Lookout MES Console
+The following are additional settings you can configure in the Lookout MES Console.  
+
+### Configure Enrollment settings
+In the Lookout MES Console, select **System** > **Manage Enrollment** > **Enrollment settings**.  
+
+- For **Disconnected Status**, specify the number of days before an unconnected device is marked as disconnected.  
+
+  Disconnected devices are considered as noncompliant and will be blocked from accessing your company applications based on the Intune conditional access policies. You can specify values between 1 and 90 days.
+
+  ![Lookout enrollment settings on the System module](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
+
+### Configure Email Notifications
+To receive email alerts for threats, sign in to the [Lookout MES Console](https://aad.lookout.com) with the user account that should receive notifications.  
+
+- Go to **Preferences** and then set the notifications you want to receive to **ON**, and then **Save** the changes.  
+
+- If you no longer want to receive email notifications, set the notifications to **OFF** and save your changes.
+
+  ![screenshot of the preferences page with the user account displayed](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
+
+
+
+## Configure threat classifications  
+Lookout Mobile Endpoint Security  classifies mobile threats of various types. The Lookout threat classifications have default risk levels associated with them. The risk levels can be changed at any time to suit your company requirements.
+
+For information about the threat level classifications, and how to manage the risk levels associated with them, see [Lookout Threat Reference](https://enterprise.support.lookout.com/hc/articles/360011812974).
 
 >[!IMPORTANT]
-> Risk levels are an important aspect of Mobile Threat Defense because the Intune integration calculates device compliance according to these risk levels at runtime. The Intune administrator sets a rule in policy to identify a device as noncompliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Threat Defense directly drives the device compliance calculation in Intune.
+> Risk levels are an important aspect of Mobile Endpoint Security because the Intune integration calculates device compliance according to these risk levels at runtime.  
+> 
+> The Intune administrator sets a rule in policy to identify a device as noncompliant if the device has an active threat with a minimum level of **High**, **Medium**, or **Low**. The threat classification policy in Lookout Mobile Endpoint Security directly drives the device compliance calculation in Intune.  
 
-## Watching enrollment
-Once the setup is complete, Lookout Mobile Threat Defense starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about the devices enrolled on the Devices module.  The initial status for devices is shown as pending.  The device status changes once the Lookout for Work app is installed, opened, and activated on the device.  For details on how to get the Lookout for Work app pushed to the device, see [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
+## Monitor enrollment
+After setup is complete, Lookout Mobile Endpoint Security starts to poll Azure AD for devices that correspond to the specified enrollment groups.  You can find information about enrolled devices by going to **Devices** in the Lookout MES Console.  
+- Initial status for devices is *pending*.  
+- The device status updates after the *Lookout for Work* app is installed, opened, and activated on the device.
+
+For details on how to get the *Lookout for Work* app deployed to a device, see [Add Lookout for work apps with Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
 ## Next steps
 

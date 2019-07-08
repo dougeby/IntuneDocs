@@ -48,14 +48,14 @@ On a Windows computer that already has the required WiFi profile installed, use 
 
 ## Import the Wi-Fi settings into Intune
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description** for the device restriction profile.
 
     > [!IMPORTANT]
     > - The name **must** be the same as the name attribute in the Wi-Fi profile xml. Otherwise, it fails.
     > - If you are exporting a Wi-Fi profile that includes a pre-shared key, you **must** add `key=clear` to the command. For example, enter:
-    >    `netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi`
+    >   `netsh wlan export profile name="ProfileName" key=clear folder=c:\Wifi`
     > - Using a pre-shared key with Windows 10 causes a remediation error to appear in Intune. When this happens, the Wi-Fi profile is properly assigned to the device, and the profile works as expected.
     > - If you export a Wi-Fi profile that includes a pre-shared key, be sure the file is protected. The key is in plain text, so it's your responsibility to protect the key.
 

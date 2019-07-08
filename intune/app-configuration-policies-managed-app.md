@@ -37,8 +37,7 @@ You can use app configuration policies with managed apps that support the Intune
 > [!NOTE]
 > Apps must be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Choose the **Client apps** workload.
 4. Choose **App configuration policies** in the **Manage** group, and then choose **Add**.
 5. Set the following details:
@@ -48,7 +47,7 @@ You can use app configuration policies with managed apps that support the Intune
       The  description of the profile that will appear in the Azure portal.
     - **Device enrollment type**  
       Choose **Manage apps**.
-6. Select **Associated app** to choose the app that you are going to configure. Select the app from the list of apps that you have approved and synchronized with Intune.
+6. Select **Associated app** to choose the app that you are going to configure. Select the app from the list of apps that you have approved and synchronized with Intune.
 7. For each configuration setting that the app supports, type the **Name** and **Value**, and choose the ellipsis (**…**).  
     To delete a configuration, choose the ellipsis (**…**) and select **Delete**.  
     

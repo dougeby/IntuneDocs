@@ -41,7 +41,7 @@ Before you create a profile, review the following articles that detail the endpo
 
 ## Create a device profile containing endpoint protection settings
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909).
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. Select **Device configuration** > **Profiles** > **Create profile**.
 4. Enter a **Name** and **Description** for the endpoint protection profile.
 5. From the **Platform** drop-down list, select the device platform to which you want to apply custom settings. Currently, you can choose one of the following platforms for device restriction settings:

@@ -3,7 +3,7 @@
 
 title: Integrate Jamf Pro with Microsoft Intune for compliance
 titleSuffix: Microsoft Intune
-description: Use Microsoft Intune compliance policies with Azure Active Directory conditional access to help secure Jamf-managed devices.
+description: Use Microsoft Intune compliance policies with Azure Active Directory Conditional Access to help secure Jamf-managed devices.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -32,11 +32,11 @@ ms.collection: M365-identity-device-management
 
 Applies to: Intune in the Azure portal
 
-If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end-users Macs, you can use Microsoft Intune compliance policies with Azure Active Directory conditional access to ensure that devices in your organization are compliant.
+If your organization uses [Jamf Pro](https://www.jamf.com) to manage your end-users Macs, you can use Microsoft Intune compliance policies with Azure Active Directory Conditional Access to ensure that devices in your organization are compliant.
 
 ## Prerequisites
 
-You need the following to configure conditional access with Jamf Pro:
+You need the following to configure Conditional Access with Jamf Pro:
 
 - Jamf Pro 10.1.0 or later
 - [Company Portal app for macOS](https://aka.ms/macoscompanyportal)
@@ -48,7 +48,7 @@ To connect Intune with Jamf Pro you:
 
 1. Create a new application in Azure
 2. Enable Intune to integrate with Jamf Pro
-3. Configure conditional access in Jamf Pro
+3. Configure Conditional Access in Jamf Pro
 
 ## Create an application in Azure Active Directory
 
@@ -80,11 +80,11 @@ To connect Intune with Jamf Pro you:
 
 
     > [!NOTE]
-    > If the client secret expires, you must create a new client secret in Azure and then update the conditional access data in Jamf Pro. Azure allows you to have both the old secret and new key active to prevent service disruptions.
+    > If the client secret expires, you must create a new client secret in Azure and then update the Conditional Access data in Jamf Pro. Azure allows you to have both the old secret and new key active to prevent service disruptions.
 
 ## Enable Intune to integrate with Jamf Pro
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=20909), and go to **Microsoft Intune** > **Device Compliance** > **Partner device management**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), and go to **Microsoft Intune** > **Device Compliance** > **Partner device management**.
 
 2. Enable the Compliance Connector for Jamf by pasting the Application ID you saved during the previous procedure into the **Jamf Azure Active Directory App ID** field.
 

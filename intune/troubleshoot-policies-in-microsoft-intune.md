@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 06/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -33,15 +33,17 @@ Microsoft Intune includes some built-in troubleshooting features. Use these feat
 
 This article lists some common troubleshooting techniques, and describes some issues you may experience.
 
+## Check tenant status
+Check the [Tenant Status](tenant-status.md) and confirm the subscription is Active. You can also view details for active incidents and advisories that may impact your policy or profile deployment.
+
 ## Use built-in troubleshooting
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
-2. Select **Troubleshoot**:
+1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Troubleshoot**:
 
     ![In Intune, go to Help and Support, and select Troubleshoot](./media/help-and-support-troubleshoot.png)
 
-3. Choose **Select user** > select the user having an issue > **Select**.
-4. Confirm that **Intune License** and **Account Status** both show green checks:
+2. Choose **Select user** > select the user having an issue > **Select**.
+3. Confirm that **Intune License** and **Account Status** both show green checks:
 
     ![In Intune, select the user and confirm Account status and Intune license show green checks marks for the status](./media/account-status-intune-license-show-green.png)
 
@@ -50,7 +52,7 @@ This article lists some common troubleshooting techniques, and describes some is
     - [Assign licenses so users can enroll devices](licenses-assign.md)
     - [Add users to Intune](users-add.md)
 
-5. Under **Devices**, find the device having an issue. Review the different columns:
+4. Under **Devices**, find the device having an issue. Review the different columns:
 
     - **Managed**: For a device to receive compliance or configuration policies, this property must show **MDM** or **EAS/MDM**.
 
@@ -101,7 +103,7 @@ This article lists some common troubleshooting techniques, and describes some is
 
 ## You're unsure if a profile is correctly applied
 
-1. In the [Azure portal](https://portal.azure.com), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Devices** > **All devices** > select the device > **Device configuration**. 
 
     Every device lists its profiles. Each profile has a **Status**. The status applies when all of the assigned profiles, including hardware and OS restrictions and requirements, are considered together. Possible statuses include:
@@ -117,6 +119,13 @@ This article lists some common troubleshooting techniques, and describes some is
 > [!NOTE]
 > When two policies with different levels of restriction apply to the same device or user, the more restrictive policy applies.
 
+## Policy troubleshooting resources
+
+- [Troubleshooting iOS or Android policies not applying to devices](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (opens another Microsoft site)
+- [Troubleshooting Windows 10 Intune policy failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (opens a blog)
+- [Troubleshoot CSP custom settings for Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (opens another Microsoft site)
+- [Windows 10 Group Policy vs Intune MDM policy](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (opens another Microsoft site)
+
 ## Alert: Saving of Access Rules to Exchange has Failed
 
 **Issue**: You receive the alert **Saving of Access Rules to Exchange has Failed**  in the admin console.
@@ -129,11 +138,13 @@ If you create policies in the Exchange On-Premises Policy workspace (Admin conso
 
 Windows Phone devices don't allow security policies set using MDM or EAS to be reduced in security once you've set them. For example, you set a **Minimum number of character password** to 8, and then try to reduce it to 4. The more restrictive policy is applied to the device.
 
+Windows 10 devices may not remove security policies when you unassign the policy (stop deployment). You may need to leave the policy assigned, and then change the security settings back to the default values.
+
 Depending on the device platform, if you want to change the policy to a less secure value, you may need to reset the security policies.
 
-For example, in Windows, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel** > **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
+For example, in Windows 8.1, on the desktop, swipe in from right to open the **Charms** bar. Choose **Settings** > **Control Panel** > **User Accounts**. On the left, select **Reset Security Policies** link, and choose **Reset Policies**.
 
-Other MDM devices, such as Android, iOS, and Windows Phone 8.1, may need to be retired and re-enrolled to apply a less restrictive policy.
+Other platforms, such as Android, iOS, and Windows Phone 8.1, may need to be retired and re-enrolled to apply a less restrictive policy.
 
 [Troubleshoot device enrollment](troubleshoot-device-enrollment-in-intune.md) may be a good resource.
 
@@ -165,6 +176,9 @@ Occurs if the time on the local system is out of sync by five minutes or more. I
 
 To resolve this issue, set the local system time as close as possible to Internet time. Or, set it to the time on the domain controllers on the network.
 
+
 ## Next steps
 
-If you still need some help, you can [get support for Microsoft Intune](get-support.md).
+[Common issues and resolutions with email profiles](troubleshoot-email-profiles-in-microsoft-intune.md)
+
+Get [support help from Microsoft](get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

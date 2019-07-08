@@ -128,7 +128,7 @@ The MDM certificate is renewed automatically when mobile devices are communicati
 
 ## Remove MDM authority
 
-The MDM authority can't be changed back to Unknown. The MDM authority is used by Microsoft servers to determine which portal that enrolled devices report to (ConfigMGR, Azure Intune, Office 365 MDM).
+The MDM authority can't be changed back to Unknown. The MDM authority is used by the service to determine which portal enrolled devices report to (Microsoft Intune, Configuration Manager, Office 365 MDM).
 
 ## What to expect after changing the MDM authority
 
@@ -152,7 +152,7 @@ The MDM authority can't be changed back to Unknown. The MDM authority is used by
   > [!TIP]    
   > As a best practice, you should create all management settings and configurations, as well as deployments, shortly after the change to the MDM authority has completed. This helps ensure that devices are protected and actively managed during the interim period.
 
--  After you change the MDM authority, perform the following steps to validate that new devices are enrolled successfully to the new authority:   
+- After you change the MDM authority, perform the following steps to validate that new devices are enrolled successfully to the new authority:   
     - Enroll a new device
     - Make sure the newly enrolled device shows up in the Configuration Manager console.
     - Perform an action, such as Remote Lock, from the administration console to the device. If it's successful, the device is being managed by the new MDM authority.

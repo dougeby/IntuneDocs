@@ -46,7 +46,7 @@ Users with the following permissions can review audit logs:
 
 You can review audit logs in the monitoring group for each Intune workload:
 
-1. In the [Azure portal](https://portal.azure.com/), select **All services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Choose the workload you want to review audit logs. For example, select **Devices**.
 3. Under **Monitoring**, choose **Audit logs**.
 

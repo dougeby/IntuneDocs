@@ -47,13 +47,13 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 3. At the far right of the browser's address bar, choose the symbol that looks like a padlock, as shown in the following screenshot.
 
-	![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
+    ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-	If you don't see the padlock symbol, stop and contact your company support. The lock means that you are securely signed in, so you should not proceed unless you see that symbol.
+    If you don't see the padlock symbol, stop and contact your company support. The lock means that you are securely signed in, so you should not proceed unless you see that symbol.
 
 4. Choose **View certificates**.
 
-	![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
+    ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
 5. In the **Certificate** dialog box, choose the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the previous example screenshot.
 
@@ -69,7 +69,7 @@ To fix this issue and get the required certificate, there are two main steps tha
 
 5. Ensure that **Credential Use** is set to **Used for VPN and apps**, and then tap **OK**.
 
-	![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
+    ![screenshot-certificate-name-dialog-showing-certificate-name](./media/andr-missing-cert-cert-name.png)
 
 6. Close the Company Portal app.
 

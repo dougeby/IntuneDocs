@@ -35,7 +35,7 @@ ms.collection: M365-identity-device-management
 Using a browser protected with Intune policy (Microsoft Edge or Intune Managed Browser), you can ensure corporate websites are always accessed with safeguards in place.  When configured with Intune, protected browsers can take advantage of the following:
 
 - Application protection policies
-- Conditional access
+- Conditional Access
 - Single sign-on
 - Application configuration settings
 - Azure application proxy integration
@@ -95,12 +95,12 @@ To restrict Azure AD-connected web apps to use the Intune Managed Browser on mob
 > Conditional Access is an Azure Active Directory (Azure AD) technology. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*.  
 
 
-1. In the Intune portal, select **Conditional access** > **New policy**. 
+1. In the Intune portal, select **Conditional Access** > **New policy**. 
 2. Next, select **Grant** from the **Access controls** section of the blade. 
 3. Click **Require approved client app**. 
 4. Click **Select** on the **Grant** blade. This policy must be assigned to the cloud apps that you want to be accessible to only the Intune Managed Browser app.
 
-    ![Azure AD - Managed Browser conditional access policy](./media/managed-browser-conditional-access-01.png)
+    ![Azure AD - Managed Browser Conditional Access policy](./media/managed-browser-conditional-access-01.png)
 
 5. In the **Assignments** section, select **Conditions** > **Client apps**. The **Client apps** blade is displayed.
 6. Click **Yes** under **Configure** to apply the policy to specific client apps.
@@ -122,7 +122,7 @@ Once the above policy is configured, users will be forced to use the Intune Mana
 
 The Managed Browser does not support classic Conditional Access policies. For more information, see [Migrate classic policies in the Azure portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration).
 
-##  Single Sign-on to Azure AD-connected web apps in policy-protected browsers
+## Single Sign-on to Azure AD-connected web apps in policy-protected browsers
 
 Microsoft Edge and Intune Managed Browser on iOS and Android can take advantage of SSO to all web apps (SaaS and on-prem) that are Azure AD-connected. When the Microsoft Authenticator app is present on iOS or the Intune Company Portal app on Android, users of a policy-protected browser will be able to access Azure AD-connected web apps without having to re-enter their credentials.
 
@@ -136,15 +136,14 @@ SSO requires your device to be registered by the Microsoft Authenticator app on 
 >[!IMPORTANT]
 >For app configurations to apply, the user's protected browser or another app on the device must already be managed by [Intune app protection policy]( app-protection-policy.md)
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3.  On the **Client apps** blade of the Manage list, choose **App configuration policies**.
-4.  On the **App configuration policies** blade, choose **Add**.
-5.  On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
-6.  For **Device enrollment** type, choose **Managed apps**.
-7.  Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** and/or **Edge** for iOS, for Android, or for both.
-8.  Choose **OK** to return to the **Add configuration policy** blade.
-9.  Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. On the **Client apps** blade of the Manage list, choose **App configuration policies**.
+4. On the **App configuration policies** blade, choose **Add**.
+5. On the **Add configuration policy** blade, enter a **Name** and optional **Description** for the app configuration settings.
+6. For **Device enrollment** type, choose **Managed apps**.
+7. Choose **Select the required app** and then, on the **Targeted apps** blade, choose the **Managed Browser** and/or **Edge** for iOS, for Android, or for both.
+8. Choose **OK** to return to the **Add configuration policy** blade.
+9. Choose **Configuration settings**. On the **Configuration** blade, you define key and value pairs to supply configurations for the Managed Browser. Use the sections later in this article to learn about the different key and value pairs you can define.
 10. When you are done, choose **OK**.
 11. On the **Add configuration policy** blade, choose **Add**.
 12. The new configuration is created, and displayed on the **App configuration** blade.
@@ -180,8 +179,8 @@ Using the above procedure to create a Microsoft Edge app configuration. Supply t
 
 Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) can be used together to support the following scenarios for users of iOS and Android devices:
 
-- A user downloads and signs in to the Microsoft Outlook app. Intune app protection policies are automatically applied. They encrypt saved data and block the user from transferring corporate files to unmanaged apps or locations on the device. When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in a protected browser application, rather than another browser. The protected browser recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.
-- A remote user opens the protected browser application and navigates to an intranet site using the internal URL. The protected browser recognizes that this intranet site has been exposed to the user via the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and conditional access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible.
+- A user downloads and signs in to the Microsoft Outlook app. Intune app protection policies are automatically applied. They encrypt saved data and block the user from transferring corporate files to unmanaged apps or locations on the device. When the user then clicks a link to an intranet site in Outlook, you can specify that the link opens in a protected browser application, rather than another browser. The protected browser recognizes that this intranet site has been exposed to the user through the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and Conditional Access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible and the link in Outlook works as expected.
+- A remote user opens the protected browser application and navigates to an intranet site using the internal URL. The protected browser recognizes that this intranet site has been exposed to the user via the Application Proxy. The user is automatically routed through the Application Proxy, to authenticate with any applicable multi-factor authentication, and Conditional Access before reaching the intranet site. This site, which could previously not be found while the user was remote, is now accessible.
 
 ### Before you start
 
@@ -257,9 +256,9 @@ Use the following information to learn about the allowed formats and wildcards t
 
 - You can specify port numbers in the address. If you do not specify a port number, the values used are:
 
-  -   Port 80 for http
+  - Port 80 for http
 
-  -   Port 443 for https
+  - Port 443 for https
 
   Using wildcards for the port number is not supported. For example, `http://www.contoso.com:;` and `http://www.contoso.com: /;` are not supported.
 
@@ -331,18 +330,18 @@ For a list of the settings stored in the app logs, see [Review app protection lo
 
 ## Security and privacy for the Managed Browser
 
--   The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
+- The Managed Browser does not use settings that users make for the built-in browser on their devices. The Managed Browser cannot access to these settings.
 
--   If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
+- If you configure the option **Require simple PIN for access** or **Require corporate credentials for access** in an app protection policy associated with the Managed Browser, and a user selects the help link on the authentication page, they can browse any Internet sites regardless of whether they were added to a block list in the policy.
 
--   The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
+- The Managed Browser can block access to sites only when they are accessed directly. It does not block access when intermediate services (such as a translation service) are used to access the site.
 
--   To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
+- To allow authentication, and access to Intune documentation, **&#42;.microsoft.com** is exempt from the allow or block list settings. It is always allowed.
 
 ### Turn off usage data
 Microsoft automatically collects anonymous data about the performance and use of the Managed Browser to improve Microsoft products and services. Users can turn off data collection by using the **Usage Data** setting on their devices. You have no control over the collection of this data.
 
--   On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
+- On iOS devices, websites that users visit that have an expired or untrusted certificate cannot be opened.
 
 ## Next steps
 

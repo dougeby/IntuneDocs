@@ -81,7 +81,7 @@ Be sure the device supports OEMConfig, that the correct OEMConfig app has been a
 
 ## Create an OEMConfig profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All Services** > filter on **Intune** > select **Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
@@ -118,9 +118,9 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 
 -----------------
 
-| OEM | Bundle ID |
-| --- | --- |
-| Samsung | com.samsung.android.knox.kpu |
+| OEM | Bundle ID | OEM Documentation (if available) |
+| --- | --- | ---|
+| Samsung | com.samsung.android.knox.kpu | [Knox Service Plugin Admin Guide](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm)
 
 -----------------
 

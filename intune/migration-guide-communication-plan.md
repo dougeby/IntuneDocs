@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,44 +28,31 @@ search.appverid: MET150
 ms.collection: M365-identity-device-management
 ---
 
-# Plan communications
+# Plan communications 
+The communication plan is a key element to an Intune migration. The following tools and templates are provided to assist you in educating end users. The Intune Adoption Kit includes email templates, an Intune Enrollment guide, and links to instructional videos for end user enrollment.  
 
-The communication plan is a key element in an Intune migration. You can follow the same communication plan for each phase of your migration.
+Download:  [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
-## Email templates
+## Email templates 
+We recommend the following email communication plan. We’ve provided templates for you to adapt for your communication plan:
+- **Email #1**: Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune. 
 
-We recommend the following email communication plan. We've provided templates for you to adapt for your communication plan:
+- **Email #2**: Announce that services are now ready for access through Intune. Tell users to enroll now.  Give users a timeline before their access is affected. Remind users of benefits and strategic reasons for migration.
+After a certain period, you can begin enforcing compliance through Conditional Access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md).
 
--   **Email \#1:** Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune.<br/><br/>
+## Intune Enrollment Guide 
+This PDF attachment can be provided to your users as-is, or you may customize the Word version to include your internal resources and contact information.
 
-
-    -   [Download email \#1 template](https://gallery.technet.microsoft.com/Intune-migration-guide-end-e3209b35)
-<br></br>
-
--   **Email \#2:** Announce that services are now ready for access through Intune. Tell users to enroll now. Remind users of benefits and strategic reasons for migration.<br/><br/>
-
-
-    -   [Download email \#2 template](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
-<br></br>
-
--   **Email \#3:** Give users a timeline before their access is affected. Again, remind users of benefits and strategic reasons for migration. Email timing should have a sliding window to match your phases. For example, in June send email \#1 to phase 1 users, email \#2 to phase 2 users, and email \#3 to phase 3 users.<br/><br/>
-
-    -   [Download email \#3 template](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5)
-
-After a certain period, you can begin enforcing compliance through conditional access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md).
-
-## Additional communication templates
-
-Intune has additional templates you can use to promote device enrollment with your users:
-
--   [How to educate your end users about Microsoft Intune](end-user-educate.md) breaks out enrollment steps by mobile OS platform.
-
--   The [Intune end-user enrollment template for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) is customizable Word doc that explains how to enroll Android, iOS, and Mac devices in Intune.
-
--   The [FastTrack for EMS how to guides & emails](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) can be customized with your company’s logo to promote adoption of Intune and EMS within your organization.
-
--   Share the [Company Portal app URL](http://go.microsoft.com/fwlink/?LinkID=396941) with your Android, iOS and Windows users. This URL redirects to the appropriate Company Portal app listing on Android, iOS and Windows devices.
+## Instructional videos
+We have created short, step-by-step videos to aid your users in easily enrolling their devices in Intune.
+- [Enroll your Android device](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
+- [Enroll your Android Work Profile device](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
+- [Enroll your iOS device](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [Enroll your macOS device](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
+- [Enroll your Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
 ## Next steps
-
-[Drive end-user adoption with conditional access](migration-guide-drive-adoption.md).
+Intune has additional resources you can use to promote device enrollment with your users:
+- [How to educate your end users about Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate) breaks out enrollment steps by mobile OS platform. 
+- The [Intune device enrollment for IT administrators](https://docs.microsoft.com/intune/device-enrollment) explains how to enroll Android, iOS, and Mac devices in Intune.
+- Share the [Company Portal app URL](http://go.microsoft.com/fwlink/?LinkID=396941) with your Android, iOS and Windows users. This URL redirects to the appropriate Company Portal app listing on Android, iOS and Windows devices.

@@ -50,6 +50,8 @@
     href: tutorial-use-autopilot-enroll-devices.md
   - name: Use the DEP to enroll iOS devices 
     href: tutorial-use-device-enrollment-program-enroll-ios.md
+  - name: Configure Slack to use Intune 
+    href: tutorial-configure-slack-enterprise-grid.md    
 - name: Concepts
   items:
   - name: What is device management?
@@ -126,6 +128,8 @@
           href: migration-guide-drive-adoption.md
         - name: Typical migration cycle
           href: migration-guide-cycle.md
+    - name: Plan communications
+      href: migration-guide-communication-plan.md
   - name: Set up Intune
     items:
     - name: Steps to set up Intune
@@ -135,6 +139,10 @@
       items:
       - name: Network configuration
         href: network-bandwidth-use.md
+      - name: Intune endpoints
+        href: intune-endpoints.md
+      - name: Intune US government endpoints
+        href: intune-us-government-endpoints.md
     - name: Sign in to Intune
       href: account-sign-up.md
     - name: Configure domains
@@ -192,7 +200,7 @@
         href: windows-enroll.md
       - name: Bulk enroll
         href: windows-bulk-enroll.md
-      - name: Enrollment status page
+      - name: Enrollment Status Page
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment Program
         href: enrollment-autopilot.md
@@ -263,10 +271,12 @@
       href: device-logout-user.md
     - name: Remove user
       href: device-remove-user.md
+    - name: Find primary user
+      href: find-primary-user.md
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
-      href: device-profile-android-teamviewer.md
+      href: teamviewer-support.md
     - name: Windows 10 PIN reset
       href: device-windows-pin-reset.md
     - name: Synchronize device
@@ -299,6 +309,7 @@
       href: device-features-configure.md
     - name: Restrict device settings and features
       href: device-restrictions-configure.md
+      displayName: Device restrictions
     - name: Deliver updates
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
@@ -320,6 +331,8 @@
       items:
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
+    - name: Extensions on macOS
+      href: kernel-extensions-overview-macos.md
     - name: Education Take a Test app
       href: education-settings-configure.md
     - name: Shared multi-user devices
@@ -369,22 +382,22 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
-    - name: Conditional access
+    - name: Conditional Access
       href: conditional-access.md
       items:
-      - name: Common ways to use conditional access
+      - name: Common ways to use Conditional Access
         href: conditional-access-intune-common-ways-use.md
       - name: Install Exchange on-premises connector
         href: exchange-connector-install.md
-      - name: Create and assign conditional access policy
+      - name: Create and assign Conditional Access policy
         href: conditional-access-exchange-create.md
-      - name: Device-based conditional access policy
+      - name: Device-based Conditional Access policy
         href: create-conditional-access-intune.md
-      - name: Reassign conditional access policies from Intune classic portal
+      - name: Reassign Conditional Access policies from Intune classic portal
         href: conditional-access-intune-reassign.md
-      - name: App-based conditional access
+      - name: App-based Conditional Access
         href: app-based-conditional-access-intune.md
-      - name: Set up app-based conditional access
+      - name: Set up app-based Conditional Access
         href: app-based-conditional-access-intune-create.md
       - name: ADAL and Intune
         href: app-modern-authentication-block.md
@@ -407,41 +420,46 @@
             href: mtd-connector-enable.md
         - name: MTD apps
           items: 
-          - name: Set up Lookout
-            href: lookout-mobile-threat-defense-connector.md
-            items:
-            - name: Lookout and Intune integration
-              href: lookout-mtd-connector-integration.md
-          - name: Set up Symantec
-            href: skycure-mobile-threat-defense-connector.md
-            items:
-            - name: Symantec and Intune integration
-              href: skycure-mtd-connector-integration.md
-          - name: Set up Check Point
-            href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-            items:
-            - name: Check Point and Intune integration
-              href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-          - name: Set up Zimperium
-            href: zimperium-mobile-threat-defense-connector.md
-            items:
-            - name: Zimperium and Intune integration
-              href: zimperium-mtd-connector-integration.md
-          - name: Set up Pradeo
-            href: pradeo-mobile-threat-defense-connector.md
-            items:
-            - name: Pradeo and Intune integration
-              href: pradeo-mtd-connector-integration.md
           - name: Set up Better Mobile
             href: better-mobile-threat-defense-connector.md
             items:
             - name: Better Mobile and Intune integration
               href: better-mobile-mtd-connector-integration.md
+          - name: Set up Check Point
+            href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+            items:
+            - name: Check Point and Intune integration
+              href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+          - name: Set up Lookout
+            href: lookout-mobile-threat-defense-connector.md
+            items:
+            - name: Lookout and Intune integration
+              href: lookout-mtd-connector-integration.md
+          - name: Set up Pradeo
+            href: pradeo-mobile-threat-defense-connector.md
+            items:
+            - name: Pradeo and Intune integration
+              href: pradeo-mtd-connector-integration.md
           - name: Set up Sophos Mobile
             href: sophos-mtd-connector.md
             items:
             - name: Sophos Mobile and Intune integration
               href: sophos-mtd-connector-integration.md
+          - name: Set up Symantec
+            href: skycure-mobile-threat-defense-connector.md
+            items:
+            - name: Symantec and Intune integration
+              href: skycure-mtd-connector-integration.md
+          - name: Set up Wandera
+            href: wandera-mtd-connector.md
+            items:
+            - name: Wandera and Intune integration
+              href: wandera-mtd-connector-integration.md
+          - name: Set up Zimperium
+            href: zimperium-mobile-threat-defense-connector.md
+            items:
+            - name: Zimperium and Intune integration
+              href: zimperium-mtd-connector-integration.md     
       - name: Microsoft Defender
         items: 
         - name: Microsoft Defender ATP
@@ -572,10 +590,12 @@
           href: windows-store-for-business.md
         - name: iOS eBooks
           href: vpp-ebooks-ios.md
-      - name: Configure the Company Portal app
+      - name: Configure the Company Portal
         href: company-portal-app.md
       - name: Configure the Managed Browser
         href: app-configuration-managed-browser.md
+      - name: Configure Microsoft Edge
+        href: manage-microsoft-edge.md        
       - name: Configure Outlook
         href: app-configuration-policies-outlook.md
     - name: Protect apps
@@ -652,15 +672,11 @@
         href: review-logs-using-azure-monitor.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
-      - name: Troubleshoot email profiles
-        href: troubleshoot-email-profiles-in-microsoft-intune.md
-      - name: Troubleshoot software updates
-        href: troubleshoot-software-updates-in-microsoft-intune.md
-      - name: Troubleshoot endpoint protection
-        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
       - name: Troubleshoot policies and profiles
-        href: troubleshoot-policies-in-microsoft-intune.md
-      - name: Troubleshoot conditional access
+        href: troubleshoot-policies-in-microsoft-intune.md        
+      - name: Email profile issues and resolutions 
+        href: troubleshoot-email-profiles-in-microsoft-intune.md
+      - name: Troubleshoot Conditional Access
         href: troubleshoot-conditional-access.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
@@ -741,6 +757,8 @@
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
+        - name: Extensions
+          href: kernel-extensions-settings-macos.md
         - name: Custom
           href: custom-settings-macos.md
     - name: Windows 10 and later
@@ -778,7 +796,7 @@
       - name: Security baselines
         items: 
         - name: Windows 10 baseline settings
-          href: security-baseline-settings-windows.md
+          href: security-baseline-settings-mdm.md
         - name: Microsoft Defender ATP baseline settings 
           href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
@@ -825,6 +843,10 @@
           href: vpn-settings-windows-phone-8-1.md
         - name: Custom
           href: custom-settings-windows-phone-8-1.md
+  - name: Error codes and descriptions
+    items:
+    - name: Software update errors
+      href: software-update-agent-error-codes.md
   - name: Developer guidance
     items:
     - name: API to add third-party certificate authority
@@ -958,6 +980,14 @@
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Resolve policy conflicts
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+      - name: Troubleshoot software updates
+        href: troubleshoot-software-updates-in-microsoft-intune.md
+      - name: Endpoint protection common errors 
+        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Security baselines archive
+      items:  
+      - name: Archived MDM security baselines  
+        href: security-baseline-settings-mdm-archive.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online

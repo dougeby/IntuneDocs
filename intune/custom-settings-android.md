@@ -46,14 +46,14 @@ This article shows you how to create a custom profile for Android devices.
 
 ## Create the profile
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following settings:
 
     - **Name**: Enter a name for the profile, such as `android custom profile`.
     - **Description**: Enter a description for the profile.
     - **Platform**: Choose **Android**.
-	- **Profile type**: Choose **Custom**.
+    - **Profile type**: Choose **Custom**.
 
 4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
 

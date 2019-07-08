@@ -6,10 +6,10 @@ description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual 
 audience: microsoft-business
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.custom: microsoft-intune 
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -67,7 +67,7 @@ A key task of any device management solution is to provide security and protecti
     - Enable [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) to look for suspicious activity in files and apps on mobile devices. 
     - Use [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
 
-- **Conditional access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [conditional access](https://docs.microsoft.com/intune/conditional-access), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
+- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](https://docs.microsoft.com/intune/conditional-access), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
 
 ## Choose the device management solution that's right for you
 

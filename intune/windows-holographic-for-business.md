@@ -57,7 +57,7 @@ Using the Company Portal app, you can also run the following actions:
 ## Compliance policy
 **[Create a device compliance policy](compliance-policy-create-windows.md)**
 
-Compliance policies are rules and settings that devices must meet to be compliant. Use these policies with conditional access to block access to company resources for devices that are not-compliant. In Intune, create compliance policies to allow or block access for devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
+Compliance policies are rules and settings that devices must meet to be compliant. Use these policies with Conditional Access to block access to company resources for devices that are not-compliant. In Intune, create compliance policies to allow or block access for devices running Windows Holographic for Business. For example, you can create a policy that requires Bitlocker be enabled.
 
 See also **[Get started with compliance policies](device-compliance-get-started.md)**.
 

@@ -86,22 +86,21 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 
 ## To get and upload an Apple VPP token
 
-1. Sign into the [Azure portal](https://portal.azure.com).
-2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
-3.	On the **Intune** pane, choose **Client apps** > **iOS VPP tokens** under **Setup**.
-4.  On the list of VPP tokens pane, select **Create**.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+3. On the **Intune** pane, choose **Client apps** > **iOS VPP tokens** under **Setup**.
+4. On the list of VPP tokens pane, select **Create**.
 5. On the **Create VPP token** pane, specify the following information:
-	- **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
-	- **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
-	- **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
-	    > [!WARNING]  
-	    > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
+    - **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
+    - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
+    - **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
+        > [!WARNING]  
+        > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
 
-	- **Type of VPP account** - Choose from **Business** or **Education**.
-	- **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
-	
+    - **Type of VPP account** - Choose from **Business** or **Education**.
+    - **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.
+
         > [!NOTE]
-		> Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
+        > Automatic app updates work for both device and user licensed apps for iOS Version 11.0 and above.
 6. When you are done, select **Create**.
 
 The token is displayed in the list of tokens pane.
@@ -110,13 +109,13 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 ## To assign a volume-purchased app
 
-1.	On the **Intune** pane, choose **Client apps** > **Apps** under **Manage**.
-2.	On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
-3.	On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
-5.	For each group you selected, choose the following settings:
-	- **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
-	- **License type** - Choose from **User licensing**, or **Device licensing**.
-6.	Once you are done, choose **Save**.
+1. On the **Intune** pane, choose **Client apps** > **Apps** under **Manage**.
+2. On the list of apps pane, choose the app you want to assign, and then choose **Assignments**.
+3. On the ***App name*** - **Assignments** pane, choose **Add group** then, on the **Add group** pane, choose an **Assignment type** and choose the Azure AD user or device groups to which you want to assign the app.
+5. For each group you selected, choose the following settings:
+    - **Type** - Choose whether the app will be **Available** (end users can install the app from the Company Portal), or **Required** (end user devices will automatically get the app installed).
+    - **License type** - Choose from **User licensing**, or **Device licensing**.
+6. Once you are done, choose **Save**.
 
 
 >[!NOTE]
