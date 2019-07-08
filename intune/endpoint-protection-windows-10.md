@@ -479,11 +479,12 @@ Base settings are universal BitLocker settings for all types of data drives. The
   - **Block** - Disable the warning prompt if another disk encryption service is on the device.  
   - **Not configured** - Allow the warning for other disk encryption to be shown.  
 
-  When set to *Block*, you can configure the following setting:  
+  When set to *Block*, you can then configure the following setting:  
 
   - **Allow standard users to enable encryption during Azure AD Join**  
-    *This setting only applies to Azure Active Directory Joined (Azure ADJ) devices*.  
+    *This setting only applies to Azure Active Directory Joined (Azure ADJ) devices, and is depends on the previous setting, `Warning for other disk encryption`.*  
     **Default**: Not configured  
+    BitLocker CSP: [AllowStandardUserEncryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
      - **Allow** - Standard users (non-administrators) can enable BitLocker encryption when signed in.  
      - **Not configured** only Administrators can enable BitLocker encryption on the device.  
