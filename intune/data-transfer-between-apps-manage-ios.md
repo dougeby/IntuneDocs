@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -87,8 +87,8 @@ Configuring the user UPN setting is **required** for devices that are managed by
    |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
 
-[!Note]  
-For Outlook App in iOS if you deploy an App Configuration Policy with the option "Using configuration designer" the configuration key IntuneMAMUPN is configured automatically behind the scenes for the policy. More details about see FAQ section from [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
+> [!NOTE]  
+> For Outlook App in iOS if you deploy an App Configuration Policy with the option "Using configuration designer" the configuration key IntuneMAMUPN is configured automatically behind the scenes for the policy. More details about see FAQ section from [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### Example 2: End-user experience
