@@ -46,6 +46,7 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 - This installation method is not supported on Windows 10 S, Windows Home, Windows Team, Windows Holographic, or Windows Holographic for Business devices.
 - Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
 - Multiple required or available app assignments are not additive. A later app assignment will overwrite pre-existing installed app assignments. For example, if the first set of Office apps contains Word, and the later one does not, Word will be uninstalled. This condition does not apply to any Visio or Project applications.
+- Mutiple Office 365 deployments are not currently supported. Only one deployment will be delivered to the device
 - **Office version** - Choose whether you want to assign the 32-bit or 64-bit version of Office. You can install the 32-bit version on both 32-bit and 64-bit devices, but you can install the 64-bit version on 64-bit devices only.
 - **Remove MSI from end-user devices** - Choose whether you want to remove pre-existing Office .MSI apps from end-user devices. The installation won’t succeed if there are pre-existing .MSI apps on end-user devices. The apps to be uninstalled are not limited to the apps selected for installation in **Configure App Suite**, as it will remove all Office (MSI) apps from the end user device. For more information, see [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version). When Intune reinstalls Office on your end user's machines, end users will automatically get the same language packs that they had with previous .MSI Office installations.
 
@@ -146,7 +147,14 @@ If you selected the **Enter XML data** option under the **Setting format** dropd
 
 When you're done, in the **Add App** pane, select **Add**. The app you've created is displayed in the apps list.
 
+## Troubleshooting
+Intune uses the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) to download and deploy Office 365 ProPlus to your client computers using the [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks). Reference the best practices outlined in [Managing Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) to ensure that your network configuration permits clients to access the CDN directly rather than routing CDN traffic through central proxies to avoid introducing unnecessary latency.
+
+Run the [Microsoft Support and Recovery Assistant for Office 365](https://diagnostics.office.com) on a targeted device if you encounter installation or run-time issues.
+
 ## Errors during installation of the app suite
+
+See [How to enable Office 365 ProPlus ULS logging](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) for information on how to view verbose installation logs.
 
 The following tables list common error codes you might encounter and their meaning.
 
