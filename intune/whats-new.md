@@ -734,11 +734,11 @@ You can use Windows 10 devices in kiosk mode to run one app, or many apps. This 
 - Add the Microsoft Edge Browser or Kiosk Browser to run as apps on the kiosk device (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Kiosk** for profile type).
 - New features and settings are available to allow or restrict (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type), including:
 
-  - Microsoft Edge Browser:​
+- Microsoft Edge Browser:​
   - Use Microsoft Edge kiosk mode​
   - Refresh browser after idle time​
 ​
- - Favorites and search:​
+- Favorites and search:​
   - Allow changes to search engine
 
 For a list of these settings, see:
