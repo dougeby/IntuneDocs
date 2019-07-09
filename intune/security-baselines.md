@@ -157,9 +157,8 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
    ![select a baseline](./media/security-baselines/select-baseline.png)  
 
 3. On the **Change Version** pane, use the **Select a security baseline to update to** dropdown, and select the version instance you want to use.  
-   <!-- 
+
    ![select a version](./media/security-baselines/select-instance.png)  
-   -->
    
 4. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are added, removed, and what the default values for these settings are in the updated profile.  
 
