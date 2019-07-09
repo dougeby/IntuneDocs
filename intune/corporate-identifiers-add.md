@@ -47,7 +47,16 @@ After enrollment, you can [change the ownership setting](#change-device-ownershi
 
 ## Identify corporate-owned devices with IMEI or serial number
 
-As an Intune admin, you can create and import a comma-separated value (.csv) file that lists 14-digit IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate during device enrollment. You can declare IMEI numbers for all supported platforms. You can only declare serial number for iOS, macOS, and Android devices. Each IMEI or serial number can have details specified in the list for administrative purposes.
+As an Intune admin, you can create and import a comma-separated value (.csv) file that lists 14-digit IMEI numbers or serial numbers. Intune uses these identifiers to specify device ownership as corporate during device enrollment. Each IMEI or serial number can have details specified in the list for administrative purposes.
+
+This feature is supported for the following platforms:
+
+| Platform | IMEI numbers | Serial numbers |
+|---|---|---|
+| Windows | Supported | Supported |
+| iOS/macOS | Not supported | Supported |
+| legacy-managed Android Q | Not supported | Not supported |
+| Other Android | Not supported | Supported |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
