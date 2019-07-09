@@ -26,34 +26,34 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-# Reference for Intune Management Extension
+# Reference for Intune Management Extensions
 
-The **intuneManagementExtension** category contains entities for mobile devices that track information such as:
+The **intuneManagementExtensions** category contains entities for mobile devices that track information such as:
 
-  - Versions of an IntuneManagementExtension
-  - Installation status of an IntuneManagementExtension
+  - Versions of an intuneManagementExtension
+  - Installation status of an intuneManagementExtension
 
-## intuneManagementExtensionVersion
+## intuneManagementExtensionVersions
 
-The **intuneManagementExtensionVersion** entity lists all the versions used by intuneManagementExtension.
+The **intuneManagementExtensionVersion** entity lists all the versions used by intuneManagementExtensions.
 
 | Property  | Description | Example |
 |---------|------------|--------|
-| extensionVersionKey |Unique identifier of the intuneManagementExtension version. | 1 |
+| extensionVersionKey |Unique identifier of the intuneManagementExtensions version. | 1 |
 | extensionVersion |The 4 digit version number. |1.0.2.0 |
 
-## intuneManagementExtensionHealthState
+## intuneManagementExtensionHealthStates
 
-The **intuneManagementExtensionHealthState** lists all possible health states of the intuneManagementExtension.
+The **intuneManagementExtensionHealthState** lists all possible health states of the intuneManagementExtensions.
 
 | Property  | Description | Example |
 |---------|------------|--------|
 | extensionStateKey |Unique identifier of health state. | 2 |
 | extensionState |Health state of a IntuneManagementExtension. | Healthy |
 
-## intuneManagementExtension
+## intuneManagementExtensions
 
-The **intuneManagementExtension** lists the IntuneManagementExtension health on each Windows 10 device per day.
+The **intuneManagementExtension** lists the IntuneManagementExtensions health on each Windows 10 device per day.
 The data is retained for the last 60 days. 
 
 

@@ -38,7 +38,7 @@ The **Mobile App Management** category contains entities for mobile apps such as
   - Enrollment status
   - Platform types
 
-## mamApplication
+## mamApplications
 
 The **mamApplication** entity lists Line-of-Business (LOB) apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
 
@@ -53,7 +53,7 @@ The **mamApplication** entity lists Line-of-Business (LOB) apps that are managed
 | rowLastModifiedDateTimeUTC |Date and time in UTC when this MAM app was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
 
-## mamApplicationInstance
+## mamApplicationInstances
 
 The **mamApplicationInstance** entity lists managed Mobile Application Management (MAM) apps as singular instances per user per device. All users and devices listed with in the entity are protected, as in, they have at least one MAM Policy assigned to them.
 
@@ -78,7 +78,7 @@ The **mamApplicationInstance** entity lists managed Mobile Application Managemen
 | rowLastModifiedDateTimeUtc |                                                           Date and time in UTC when this MAM app instance was last modified in the data warehouse.                                                            |        11/23/2016 12:00:00 AM        |
 
 
-## mamCheckin
+## mamCheckins
 
 The **mamCheckin** entity represents data gathered when a Mobile Application Management (MAM) app instance has checked in with the Intune Service. 
 
@@ -108,7 +108,7 @@ The **mamDeviceHealth** entity represents devices that have Mobile Application M
 | deviceHealthName |Represents the status of the device. <br>Not available - no information on this device. <br>Healthy - device is not jailbroken. <br>Unhealthy - device is jailbroken. |Not Available Healthy Unhealthy |
 | rowLastModifiedDateTimeUtc |Date and time in UTC when this specific MAM Device Health was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
-## mamEffectivePolicy
+## mamEffectivePolicies
 
 The **mamEffectivePolicy** entity lists all Mobile Application Management (MAM) effective policies applied in your organization. An effective applied policy results from merging all policies relevant to a particular app and user.
 
@@ -118,19 +118,7 @@ The **mamEffectivePolicy** entity lists all Mobile Application Management (MAM) 
 | realPolicyKey |Unique identifier of the MAM policy authored by the IT Pro. |1 |
 | rowCreatedDateTimeUtc |Date and time in UTC when this MAM effective policy was created in the data warehouse. |11/23/2016 12:00:00 AM |
 
-## mamGlobalApplication
-
-The **mamGlobalApplication** entity lists store apps that are managed through Mobile Application Management (MAM) without enrollment in your enterprise.
-
-
-|          Property          |                                               Description                                               |           Example            |
-|----------------------------|---------------------------------------------------------------------------------------------------------|------------------------------|
-|       applicationKey       |          Unique identifier of the store app in the data warehouse, known as the surrogate key.          |             123              |
-|       applicationId        | Unique identifier of the store app. The identifier is similar to applicationKey, but is a natural key.  | com.microsoft.skydrive.<ios> |
-|      applicationName       |                                      MAM Global Application Name.                                       |           Skydrive           |
-| rowLastModifiedDateTimeUtc | Date and time in UTC when this specific MAM Global Application was last modified in the data warehouse. |    11/23/2016 12:00:00 AM    |
-
-## mamPlatform
+## mamPlatforms
 
 The **mamPlatform** entity lists platform names and types on which a Mobile Application Management (MAM) app was installed.
 

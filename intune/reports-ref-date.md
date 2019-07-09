@@ -26,11 +26,11 @@ ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ---
 
-# Reference for Date entity
+# Reference for Dates entity
 
-The **date** category contains the **date** entity used to define date references in the data model.
+The **dates** category contains the **date** entity used to define date references in the data model.
 
-## date
+## dates
 
 The **date** entity represents dates that are referenced across multiple data warehouse entities.
 

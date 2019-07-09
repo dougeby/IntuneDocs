@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -27,14 +27,14 @@ ms.collection: M365-identity-device-management
 
 # Reference for Policy entities
 
-The **policy** category contains entities for mobile devices that track information such as:
+The **policies** category contains entities for mobile devices that track information such as:
 
   - Inventory of device configuration profiles, app configuration profiles, and compliance policies  
   - Number of devices in the succeeded, pending, failed, or error state per day  
   - Number of users in the succeeded, pending, failed, or error state per day  
   - Cumulative number of devices in the succeeded, pending, failed, or error state  
 
-## policy
+## policies
 
 The **policy** entity lists device configuration profiles, app configuration profiles, and compliance policies. You can assign the policies with Mobile Device Management (MDM) to a group in your enterprise.
 
@@ -49,7 +49,7 @@ The **policy** entity lists device configuration profiles, app configuration pro
 | deletedDateUTC |Date and time in UTC when IsDeleted changed to True. |11/23/2016 12:00:00 AM |
 | rowLastModifiedDateTimeUTC |Date and time in UTC when the policy was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
-## policyType
+## policyTypes
 
 The **policyType** entity lists types of device configuration profiles, app configuration profiles, and Compliance policies. You can assign the policies with Mobile Device Management (MDM) to a group in your enterprise.
 
@@ -81,7 +81,7 @@ The **deviceConfigurationProfileUserActivity** entity lists the number of **user
 | error |Number of unique Users in error state. |10 |
 | failed |Number of unique Users in failed state. |2 |
 
-## policyTypeActivity
+## policyTypeActivities
 
 The **policyTypeActivity** entity lists the cumulative number of devices in the succeeded, pending, failed, or error state. It lists these states with respect to a device configuration profile, app configuration profile, or compliance policy per day.
 
@@ -143,7 +143,7 @@ The following table contains the platform types of all assigned policies. Polici
 |policyPlatformTypeId      |The unique identifier for the policy platform type.|1|
 |policyPlatformTypeName      |The name for the policy platform type.|AndroidForWork |
 
-### policyDeviceActivity
+### policyDeviceActivities
 
 The following table lists the number of devices in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a device is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The policyDeviceActivity entity lists how many devices are in which state on a given day over the last 30 days.
 
@@ -156,7 +156,7 @@ The following table lists the number of devices in the succeeded, pending, faile
 |error|Number of unique Devices in error state.|10|
 |failed|Number of unique Devices in failed state.|2|
 
-### policyUserActivity 
+### policyUserActivities
 
 The following table lists the number of users in the succeeded, pending, failed, or error state per day. The number reflects the data per Policy Type profiles. For example, if a user is in the succeeded state for all their assigned policies, it moves up the succeeded counter by one for that day. If a user has two profiles assigned to them, one in the succeeded state and the other is in an error state, the user in the error state is counted. The PolicyUserActivity entity lists how many users are in which state on a given day over the last 30 days.
 

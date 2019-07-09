@@ -162,7 +162,7 @@ The **EnrollmentFailureReason** entity indicates a more detailed reason for a de
 | APNSCertificateExpired           | Apple devices cannot be managed with an expired Apple MDM push certificate.                                                                                                                            |
 ## ownerTypes
 
-The **enrollmentTypes** entity indicates whether a device is corporate, personally owned, or unknown.
+The **enrollmentType** entity indicates whether a device is corporate, personally owned, or unknown.
 
 | Property  | Description | Example |
 |---------|------------|--------|
@@ -202,7 +202,7 @@ The **managementStates** entity provides details on the state of the device. Det
 
 ## managementAgentTypes
 
-The **,anagementAgentTypes** entity represents the agents used to manage a device.
+The **ManagementAgentType** entity represents the agents used to manage a device.
 
 | Property  | Description |
 |---------|------------|
@@ -283,7 +283,7 @@ The **devicePropertyHistory** entity has the same properties as the devices tabl
 | jailBroken                 | Whether the device is jail broken or rooted.                                                                                                                                         |
 | deviceCategoryKey          | Key of device category attribute for this device. 
 
-## applicationInventory
+## applicationInventories
 
 The **applicationInventory** entity lists the apps found on the device at the time of inventory collection.
 

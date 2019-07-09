@@ -28,9 +28,9 @@ ms.collection: M365-identity-device-management
 
 # Reference for User entity
 
-The **User** category contains the **user** entity that defines user properties in the data model.
+The **Users** category contains the **user** entity that defines user properties in the data model.
 
-## user
+## users
 
 The **user** entity lists all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise.
 
