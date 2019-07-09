@@ -74,6 +74,7 @@ The following header files include the APIs, data types, and protocols which the
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -739,6 +740,10 @@ Yes, the IT admin can send a selective wipe command to the application. This wil
 ### Is there a sample app that demonstrates how to integrate the SDK?
 
 Yes! We just recently revamped our open-source sample app [Wagr for iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App). Wagr is now enabled for app protection policy using the Intune App SDK.
+
+### How can I troubleshoot my app?
+
+The Intune SDK for iOS 9.0.3+ supports the ability to add a diagnostics console within the mobile app for testing policies and logging errors. `IntuneMAMDiagnosticConsole.h` defines the `IntuneMAMDiagnosticConsole` class interface, which developers can use to display the Intune diagnostic console. This allows end users or developers during test to collect and share Intune logs to help diagnose any issue they may have. This API is optional for integrators.
 
 ## Submit your app to the App Store
 

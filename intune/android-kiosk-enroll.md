@@ -112,8 +112,8 @@ Only apps that have Assignment type [set to Required](apps-deploy.md#assign-an-a
 Apps are automatically updated on managed devices when the app developer publishes an update to Google Play.
 
 To remove an app from Android Enterprise dedicated devices, you can do either of the following:
--   Delete the Required app deployment.
--   Create an uninstall deployment for the app.
+- Delete the Required app deployment.
+- Create an uninstall deployment for the app.
 
 ## Next steps
 - [Deploy Android apps](apps-deploy.md)

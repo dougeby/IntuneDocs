@@ -38,12 +38,12 @@ A Conditional Access policy specifies the app or services you want to protect, t
 
 ## Create Conditional Access policy
 
-1.	In the Intune portal, select **Conditional Access** > **Policies** > **New policy**.
+1. In the Intune portal, select **Conditional Access** > **Policies** > **New policy**.
    
     ![Create a new Conditional Access policy](media/create-conditional-access-intune/create-ca.png)
  
-2.	Under **Assignments**, select **Users and groups**. 
-3.	On the **Include** tab, identify the users or groups to whom you want this Conditional Access policy to apply. Once you’ve chosen whom to include, you can use the **Exclude** tab if there are any users, roles, or groups you want to exclude from this policy.  
+2. Under **Assignments**, select **Users and groups**. 
+3. On the **Include** tab, identify the users or groups to whom you want this Conditional Access policy to apply. Once you’ve chosen whom to include, you can use the **Exclude** tab if there are any users, roles, or groups you want to exclude from this policy.  
     - **All users**: Select this option to apply the policy to all users and groups, including internal and guest users.
   
     - **Select users and groups**: Select this option and specify one or more of the following options:
@@ -56,9 +56,9 @@ A Conditional Access policy specifies the app or services you want to protect, t
      
        > [!TIP]  
        > Test the policy against a smaller group of users to make sure it works as expected.
-4.	Select **Done**.
-5.	Under **Assignments**, select **Cloud apps**. 
-6.	On the **Include tab**, identify the apps and services you want to protect with this Conditional Access policy. Then you can use the **Exclude** tab if there are any apps or services you want to exclude from this policy.
+4. Select **Done**.
+5. Under **Assignments**, select **Cloud apps**. 
+6. On the **Include tab**, identify the apps and services you want to protect with this Conditional Access policy. Then you can use the **Exclude** tab if there are any apps or services you want to exclude from this policy.
     - **All cloud apps**: Select this option to apply the policy to all apps.
       > [!IMPORTANT]  
       > The Microsoft Azure Management app for access to the Azure portal is included in this list. Be sure to use the **Exclude** tab either here or in the **Users and groups** options to make sure you (or the users or groups you designate) will be able to sign in to the Azure portal. 
@@ -67,8 +67,8 @@ A Conditional Access policy specifies the app or services you want to protect, t
     
       ![Create a new Conditional Access policy](media/create-conditional-access-intune/create-ca-select-apps.png)
 
-7.	Select **Done**.
-8.	Under **Assignments**, select **Conditions**.
+7. Select **Done**.
+8. Under **Assignments**, select **Conditions**.
     - **Sign-in risk**: Choose Yes to use Azure AD Identity Protection sign-in risk detection with this policy, and then choose the sign-in risk levels the policy should apply to.
     - **Device platforms**: On the **Include** tab, identify the device platforms you want to this Conditional Access policy to apply to. Use the **Exclude** tab to exclude platforms from this policy.
     - **Locations**: On the **Include** tab, specify whether the policy applies to any location, trusted network locations that are under the control of your IT department, or specific network locations. Use the **Exclude** tab to exclude network locations from this policy. 
@@ -80,8 +80,8 @@ A Conditional Access policy specifies the app or services you want to protect, t
       > [!TIP]  
       > If you want to protect both **Modern authentication** clients and **Exchange ActiveSync clients**, create two separate Conditional Access policies, one for each client type. Although Exchange ActiveSync supports modern authentication, the only condition that is supported by Exchange ActiveSync is platform. Other conditions, including multi-factor authentication, are not supported. To effectively protect access to Exchange Online from Exchange ActiveSync, create a Conditional Access policy that specifies the cloud app Office 365 Exchange Online and the client app Exchange ActiveSync with Apply policy only to supported platforms selected.
 
-9.	Select **Done**.
-10.	Under **Access controls**, select **Grant**. Configure what happens based on the conditions you’ve set up.  You can select from the following options:
+9. Select **Done**.
+10. Under **Access controls**, select **Grant**. Configure what happens based on the conditions you’ve set up.  You can select from the following options:
     - **Block access**: The users specified in this policy will be denied access to the apps under the conditions you’ve specified.
     - **Grant access**: The users specified in this policy will be granted access, but you can require any of the following further actions:
       - **Require multi-factor authentication**: The user will need to complete additional security requirements, like a phone call or text.
@@ -92,11 +92,11 @@ A Conditional Access policy specifies the app or services you want to protect, t
     
       ![Access controls Grant settings](media/create-conditional-access-intune/create-ca-grant-access-settings.png)
  
-11.	Under **Enable policy**, select **On**.
+11. Under **Enable policy**, select **On**.
      
      ![Enable the policy](media/create-conditional-access-intune/enable-policy.png)
 
-12.	Select **Create**.
+12. Select **Create**.
 
 ## See also
 [App-based Conditional Access with Intune](app-based-conditional-access-intune.md)

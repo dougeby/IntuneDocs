@@ -40,9 +40,9 @@ Using this information, you can update your onboarding documents to help users c
 
 An incomplete enrollment is when a user does any of the following:
 
--	Explicitly chooses an action to halt enrollment
--	Closes the Company Portal during enrollment
--	Spends more than 30 minutes between enrollment sections
+- Explicitly chooses an action to halt enrollment
+- Closes the Company Portal during enrollment
+- Spends more than 30 minutes between enrollment sections
 
 If a user chooses to stop enrollment and restart multiple times, it shows up as multiple attempts and multiple incomplete enrollments. If a user waits for 30 minutes between different enrollment screens, it is considered multiple incomplete enrollments.
 
@@ -58,18 +58,18 @@ You can filter the date range, operating system, and enrollment section by choos
 
 At the top of the report, you can see the number and percentage of incomplete enrollments in relation to all enrollments.
 
--	Initiated enrollments: The number of enrollments attempted.
--	Incomplete enrollments: The number of attempted enrollments that didn’t result in a fully enrolled and compliant device.
--	Incomplete rate: The percentage of enrollment attempts that were abandoned (Abandoned enrollments / Initiated enrollments).
+- Initiated enrollments: The number of enrollments attempted.
+- Incomplete enrollments: The number of attempted enrollments that didn’t result in a fully enrolled and compliant device.
+- Incomplete rate: The percentage of enrollment attempts that were abandoned (Abandoned enrollments / Initiated enrollments).
 
 ### Line graph
 
 The line graph shows the daily incomplete enrollments for each of the four core enrollment sections:
 
--	Setup checklist
--	Platform screens
--	Terms of use
--	Compliance/Activation
+- Setup checklist
+- Platform screens
+- Terms of use
+- Compliance/Activation
 
 ### User abandonment actions
 

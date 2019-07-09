@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -52,20 +52,20 @@ Add Office 365 from the **Apps** pane.
 7. To get information about the app suite, select **App Suite Information**.  
     This information helps you to identify the app suite in Intune, and it helps users to find the app suite in the company portal.
 8. Enter the following information:
-	- **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
-	- **Suite Description**: Enter a description for the app suite.
-	- **Publisher**: Microsoft appears as the publisher.
-	- **Category**: Select one or more of the built-in app categories, or a category you created. This setting makes it easier for users to find the app suite when they browse the company portal.
-	- **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
-	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
-	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
-	- **Developer**: Microsoft appears as the developer.
-	- **Owner**: Microsoft appears as the owner.
-	- **Notes**: Optionally, enter any notes that you want to associate with this app.
-	- **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
+    - **Suite Name**: Enter the name of the app suite as it is displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
+    - **Suite Description**: Enter a description for the app suite.
+    - **Publisher**: Microsoft appears as the publisher.
+    - **Category**: Select one or more of the built-in app categories, or a category you created. This setting makes it easier for users to find the app suite when they browse the company portal.
+    - **Display this as a featured app in the Company Portal**: Select this option to display the app suite prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL is displayed to users in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL is displayed to users in the company portal.
+    - **Developer**: Microsoft appears as the developer.
+    - **Owner**: Microsoft appears as the owner.
+    - **Notes**: Optionally, enter any notes that you want to associate with this app.
+    - **Logo**: The Office 365 logo is displayed with the app when users browse the company portal.
 9. Select **OK**.
 10. On the **Add app** pane, select **Add**.  
-	The suite appears in the list of apps as a single entry.
+    The suite appears in the list of apps as a single entry.
 
 ## Configure app assignments
 
