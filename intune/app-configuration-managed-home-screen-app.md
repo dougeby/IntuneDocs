@@ -386,8 +386,8 @@ The following is an example JSON script with all the available configuration key
         }
     ]
 }
-
 ```
+
 ## Next steps
 
 - For more information about Android Enterprise dedicated devices, see [Set up Intune enrollment of Android Enterprise dedicated devices](android-kiosk-enroll.md).
