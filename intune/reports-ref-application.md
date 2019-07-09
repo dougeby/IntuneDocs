@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -36,9 +36,9 @@ The **Application** category contains entities for mobile devices that track inf
   - Managed software types for an app, for example **sidecar** or **desktop**
   - Volume Purchasing Program (VPP) state of an app
 
-## AppRevision
+## appRevision
 
-The **AppRevision** entity lists all the versions of apps.
+The **appRevision** entity lists all the versions of apps.
 
 | Property  | Description | Example |
 |---------|------------|--------|
@@ -58,9 +58,9 @@ The **AppRevision** entity lists all the versions of apps.
 | IsCurrent |Indicates whether this App version is current or not in the data warehouse. |True/False |
 | RowLastModifiedDateTimeUTC |Date and time in UTC when this app version was last modified in the data warehouse. |11/23/2016 12:00:00 AM |
 
-## AppTypes
+## appTypes
 
-The **AppTypes** entity lists the installation source of an app.
+The **appTypes** entity lists the installation source of an app.
 
 | Property  | Description |
 |---------|------------|
@@ -87,9 +87,9 @@ The **AppTypes** entity lists the installation source of an app.
 | 12 |Windows Phone LOB app | A Windows phone line-of-business app. |
 
 
-## VppProgramTypes
+## vppProgramTypes
 
-The **VppProgramTypes** entity lists possible VPP program types for an app.
+The **vppProgramTypes** entity lists possible VPP program types for an app.
 
 | Property  | Description |
 |---------|------------|
@@ -107,9 +107,9 @@ The **VppProgramTypes** entity lists possible VPP program types for an app.
 
 
 
-## ApplicationInventory
+## applicationInventory
 
-The **ApplicationInventory** entity lists the applications found on the device at the time of inventory collection.
+The **applicationInventory** entity lists the applications found on the device at the time of inventory collection.
 
 | Property  | Description |
 |---------|------------|
@@ -119,9 +119,9 @@ The **ApplicationInventory** entity lists the applications found on the device a
 | ApplicationVersion | Version of the application. |
 | BundleSize | The size of the app in bytes. |
 
-## MobileAppInstallState
+## mobileAppInstallState
 
-The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
+The **mobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users or both.
 
 | Property | Description |
 |---|---|
