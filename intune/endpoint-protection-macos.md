@@ -84,6 +84,7 @@ Use the firewall to control connections per-application, rather than per-port. U
     **Default**: Not configured  
 
 ## FileVault  
+For more information about Apple FileVault settings, see [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) in the Apple developer content. 
 
 - **FileVault**  
   You can *enable* Full Disk Encryption using XTS-AES 128 with FileVault on devices that run macOS 10.13 and later.  
