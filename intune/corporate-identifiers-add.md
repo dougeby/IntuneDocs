@@ -55,7 +55,7 @@ This feature is supported for the following platforms:
 |---|---|---|
 | Windows | Supported | Supported |
 | iOS/macOS | Not supported | Supported |
-| legacy-managed Android Q | Not supported | Not supported |
+| Legacy-managed Android Q | Not supported | Not supported |
 | Other Android | Not supported | Supported |
 
 <!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
@@ -106,7 +106,7 @@ This .csv file when viewed in a text editor appears as:
 
 2. In the **Add identifiers** blade, specify the identifier type: **IMEI** or **Serial**.
 
-3. Enter the **Identifer** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
+3. Enter the **Identifier** and **Details** for each identifier you want to add. When you're done entering identifiers, choose **Add**.
 
 5. If you entered corporate identifiers that are already in Intune, but have different details, the **Review duplicate identifiers** popup appears. Select the identifiers that you want to overwrite into Intune and choose **Ok** to add the identifiers. For each identifier, only the first duplicate will be compared.
 
