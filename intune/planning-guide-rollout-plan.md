@@ -97,16 +97,16 @@ Here’s an updated example of the above Intune rollout plan to include enrollme
 
 | **Rollout phase** | **July** | **August** | **September** | **October** |
 |:---:|:---:|:---:|:---:|:---:|
-| Limited Pilot |  |  |  |  |                                                         
+| Limited Pilot |  |  |  |  |
 | Self-service | IT |  |  |  |
-| Expanded Pilot |  |  |  |  |                                                         
+| Expanded Pilot |  |  |  |  |
 | Self-service | IT |  |  |  |
 | White glove | IT Executives |  |  |  |
 | Production rollout phase 1 |  | Sales, Marketing |  |  |
 | Self-service |  | Sales and Marketing |  |  |
 | Production rollout phase 2 |  |  | Retail |  |
-| Self-service |  |  |  |  |
-| Production rollout phase 3 |  |  | Retail |  |
+| Self-service |  |  | Retail |  |
+| Production rollout phase 3 |  |  |  | Executives, HR, Finance |
 | Self-service |  |  |  | HR, Finance |
 | White glove |  |  |  | Executives |
 
