@@ -41,7 +41,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 | **Method** | **Reset Required** | [**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Devices are wiped during enrollment. | Associates each device with a user.| Users can’t unenroll devices. | |
+| | Devices are wiped during enrollment. | Associates each device with a user.| If yes, users can’t unenroll devices. | |
 |**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No | [More information](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](./device-enrollment-program-enroll-ios.md)|
