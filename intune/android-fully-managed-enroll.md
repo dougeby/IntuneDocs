@@ -32,9 +32,9 @@ ms.collection: M365-identity-device-management
 # Set up Intune enrollment of Android Enterprise fully managed devices (Preview)
 
 Android Enterprise fully managed devices are corporate-owned devices associated with a single user and used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles, such as:
-- allow app installation only from Managed Google Play
-- block uninstallation of managed apps
-- prevent users from factory resetting devices, and so on.
+- Allow app installation only from Managed Google Play.
+- Block uninstallation of managed apps.
+- Prevent users from factory resetting devices, and so on.
 
 Intune helps you deploy apps and settings to Android Enterprise devices, including Android Enterprise fully managed devices. For specific details about Android Enterprise, see [Android Enterprise requirements](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
