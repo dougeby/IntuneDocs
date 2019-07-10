@@ -151,7 +151,7 @@ You can now see the security patch level for Android devices. To do so, choose *
  The patch level is listed in the **Operating System** section.
 
 #### Assign scope tags to all managed devices in a security group <!-- 3173810 -->
-You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md). (In a future update, the current flow to assign scope tags to devices will be made read only.)
+You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md).
 
 ### Device security
 
