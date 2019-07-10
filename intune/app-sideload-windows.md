@@ -87,16 +87,16 @@ If you do not want to provide access to the Microsoft Store, you can manually de
 1. Sign in to your account in the [Microsoft Store for Business](https://www.microsoft.com/business-store) and acquire the **offline license** version of the Company Portal app.  
 2. Once the app has been acquired, select the app in the **Inventory** page.  
 3. Select **Windows 10 all devices** as the **Platform**, then the appropriate **Architecture** and download. An app license file is not needed for this app.
-![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
+   ![Image of Windows 10 X86 Package details for Download](./media/Win10CP-all-devices.png)
 4. Download all the packages under “Required Frameworks”. This must be done for x86, x64 and ARM architectures – resulting in a total of 9 packages as shown below.
 
-![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
+   ![Image of dependency files to Download ](./media/Win10CP-dependent-files.png)
 5. Before uploading the Company Portal app to Intune, create a folder (e.g., C:&#92;Company Portal) with the packages structured in the following way:
    1. Place the Company Portal package into C:\Company Portal. Create a Dependencies subfolder in this location as well.  
-   ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
+      ![Image of Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
    2. Place the nine dependencies packages in the Dependencies folder.  
-   If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
-   ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
+      If the dependencies are not placed in this format, Intune will not be able to recognize and upload them during the package upload, causing the upload to fail with the following error.  
+      ![Error message - The Windows app dependency must be provided.](./media/Win10CP-error-message.png)
 6. Return to Intune, then upload the Company Portal app as a new app. Deploy it as a required app to the desired set of target users.  
 
 See [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) for more information about how Intune handles dependencies for Universal apps.  
