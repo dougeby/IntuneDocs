@@ -65,7 +65,7 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 4. Select **Settings** and then on the Settings pane, choose from the following options for **Configure Windows Hello for Business**:
 
-    - **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
+    - **Disabled**. If you don't want to use Windows Hello for Business, select this setting. If disabled, users cannot provision Windows Hello for Business except on Azure Active Directory joined mobile phones where provisioning may be required.
     - **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
     - **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.
 
