@@ -61,7 +61,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
-AAD and APP on Android Enterprise devices <!-- 3574267 -->
+#### AAD and APP on Android Enterprise devices <!-- 3574267 -->
 When onboarding fully managed Android Enterprise devices, you can enable Azure Active Directory (AAD) registration before Intune onboarding is completed. In addition, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 ## Week of June 24, 2019 
