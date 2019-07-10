@@ -268,38 +268,38 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
   
   **Default**: Yes  
   
-    When *Require password* is set to *Yes*, the following settings are available.
+  When *Require password* is set to *Yes*, the following settings are available.
 
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1. 
-      
-      **Default**: 3  
+  - **Password minimum character set count**  
+    The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1. 
+    
+    **Default**: 3  
   
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.
-        
-      **Default**: 10  
+  - **Number of sign-in failures before wiping device**  
+    The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.
+    
+    **Default**: 10  
   
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
-      
-      **Default**: 60  
+  - **Password expiration (days)**  
+    The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.
+    
+    **Default**: 60  
   
-    - **Required password type**  
-      Determines the type of PIN or password required.
-      
-      **Default**: Alphanumeric  
+  - **Required password type**  
+    Determines the type of PIN or password required.
+    
+    **Default**: Alphanumeric  
   
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
+  - **Minimum password length**  
+    The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.
+    
+    **Default**: 8  
+
+  - **Block simple passwords**  
+    Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.
+    
+    **Default**: Yes  
+      *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.
@@ -351,10 +351,10 @@ For more information, see [Policy CSP - Experience](https://docs.microsoft.com/w
     Specifies whether to allow app and content suggestions from third-party software publishers in Windows spotlight features like lock screen spotlight, suggested apps in the Start menu, and Windows tips. Users may still see suggestions for Microsoft features, apps, and services.
       
     **Default**: Yes  
-   - **Block consumer specific features**  
-      Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
-      
-     **Default**: Yes  
+  - **Block consumer specific features**  
+    Allows IT admins to turn on experiences that are typically for consumers only, such as Start suggestions, Membership notifications, Post-OOBE app install, and redirect tiles.
+    
+    **Default**: Yes  
 
 
 ### Exploit Guard  

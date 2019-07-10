@@ -61,7 +61,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
-AAD and APP on Android Enterprise devices <!-- 3574267 -->
+#### AAD and APP on Android Enterprise devices <!-- 3574267 -->
 When onboarding fully managed Android Enterprise devices, you can enable Azure Active Directory (AAD) registration before Intune onboarding is completed. In addition, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 ## Week of June 24, 2019 
@@ -734,11 +734,11 @@ You can use Windows 10 devices in kiosk mode to run one app, or many apps. This 
 - Add the Microsoft Edge Browser or Kiosk Browser to run as apps on the kiosk device (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Kiosk** for profile type).
 - New features and settings are available to allow or restrict (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type), including:
 
-  - Microsoft Edge Browser:​
+- Microsoft Edge Browser:​
   - Use Microsoft Edge kiosk mode​
   - Refresh browser after idle time​
 ​
- - Favorites and search:​
+- Favorites and search:​
   - Allow changes to search engine
 
 For a list of these settings, see:
