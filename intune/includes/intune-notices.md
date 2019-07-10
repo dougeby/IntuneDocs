@@ -73,7 +73,7 @@ Starting with the August release to the Intune service or 1908, we’re adding i
 
 #### How does this affect me?
 If you manage Windows 10 devices in your environment: 
-- With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged restart settings
+- With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged restart settings.
 - When both these old and new settings are configured, the deadline settings values will override the engaged restart setting values.
 - Deadline settings will replace the “Allow user to restart (engaged restart) option in the console in the 1910 update.
 
