@@ -68,7 +68,7 @@ You should also update your documentation or developer guidance if applicable to
 #### Additional information
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
-### Plan for change: New Windows updates settings in Intune
+### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
 Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings” which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
 
 #### How does this affect me?
