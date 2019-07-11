@@ -72,7 +72,7 @@ Check to see that the user isn't assigned more than the maximum number of device
 
 3. If the user's number of enrolled devices already equals their device limit restriction, they can't enroll any more until:
     - [Existing devices are removed](devices-wipe.md), or
-    - You increase the device limit by [setting device restrictions](enrollment-restrictions-set.md#set-device-limit-restrictions).
+    - You increase the device limit by [setting device restrictions](enrollment-restrictions-set.md).
 
 To avoid hitting device caps, be sure to remove stale device records.
 
