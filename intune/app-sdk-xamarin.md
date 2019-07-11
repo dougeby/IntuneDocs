@@ -112,6 +112,7 @@ A complete overview for integrating the Intune App SDK can be found in the [Micr
 Beginning with the 1.4428.1 release, the `Microsoft.Intune.MAM.Remapper` package can be added to a Xamarin.Android application as [build tooling](app-sdk-android.md#build-tooling) to perform the MAM class, method, and systems services replacements. If the Remapper is included, the MAM equivalent replacement portions of the Renamed Methods and MAM Application sections will be automatically performed when the application is built.
 
 To exclude a class from MAM-ification by the Remapper the following property can be added in your projects `.csproj` file.
+
 ```xml
   <PropertyGroup>
     <ExcludeClasses>Semicolon separated list of relative class paths to exclude from MAM-ification</ExcludeClasses>
