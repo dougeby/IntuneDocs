@@ -35,6 +35,7 @@ ms.collection: M365-identity-device-management
 As an Intune administrator, you can create and manage enrollment restrictions that define what devices can enroll into management with Intune, including the:
 - number of devices
 - operating systems and versions
+
 You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
 
 >[!NOTE]
