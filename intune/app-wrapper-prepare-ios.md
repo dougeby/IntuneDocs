@@ -172,9 +172,9 @@ You will need the following to distribute apps wrapped by Intune:
 
 ## Download the App Wrapping Tool
 
-1.  Download the files for the App Wrapping Tool from [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) to a macOS computer.
+1. Download the files for the App Wrapping Tool from [GitHub](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) to a macOS computer.
 
-2.  Double-click **Microsoft Intune App Wrapping Tool for iOS.dmg**. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
+2. Double-click **Microsoft Intune App Wrapping Tool for iOS.dmg**. A window with the End User License Agreement (EULA) will appear. Read the document carefully.
 
 3. Choose **Agree** to accept EULA, which mounts the package to your computer.
 
@@ -288,15 +288,16 @@ If the app wrapping tool fails to finish successfully, one of the following erro
 ### Log files for the App Wrapping Tool
 Apps that have been wrapped by using the App Wrapping Tool generate logs that are written to the iOS client device console. This information is useful when you are having problems with the application and need to determine if the issue is related to the App Wrapping Tool. To retrieve this information, use the following steps:
 
-1.  Reproduce the issue by running the app.
+1. Reproduce the issue by running the app.
 
-2.  Collect the console output by following Apple's instructions for [Debugging Deployed iOS Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
+2. Collect the console output by following Apple's instructions for [Debugging Deployed iOS Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3.  Filter the saved logs for App Restrictions output by entering the following script into the console:
+3. Filter the saved logs for App Restrictions output by entering the following script into the console:
 
     ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
+
     You can submit the filtered logs to Microsoft.
 
     > [!NOTE]
@@ -334,7 +335,7 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
 ### Steps to enable entitlements
 
-1.  Enable capabilities in your app:
+1. Enable capabilities in your app:
 
     a.  In Xcode, go to your app’s target, and click **Capabilities**.
 
@@ -344,7 +345,7 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
     d.  Build and sign your app to be wrapped.
 
-2.  Enable entitlements in your provisioning profile:
+2. Enable entitlements in your provisioning profile:
 
     a.  Sign in to the Apple Developer Member Center.
 
@@ -354,7 +355,7 @@ Before wrapping your app, you can grant *entitlements* to give the app additiona
 
     d.  Finish the provisioning profile wizard and download your file.
 
-3.  Ensure that you have satisfied all the prerequisites, and then wrap the app.
+3. Ensure that you have satisfied all the prerequisites, and then wrap the app.
 
 ### Troubleshoot common errors with entitlements
 If the App Wrapping Tool for iOS shows an entitlement error, try the following troubleshooting steps.
@@ -367,20 +368,20 @@ If the App Wrapping Tool for iOS shows an entitlement error, try the following t
 ### Find the existing entitlements of a signed app
 To review the existing entitlements of a signed app and provisioning profile:
 
-1.  Find the .ipa file and change its the extension to .zip.
+1. Find the .ipa file and change its the extension to .zip.
 
-2.  Expand the .zip file. This will produce a Payload folder containing your .app bundle.
+2. Expand the .zip file. This will produce a Payload folder containing your .app bundle.
 
-3.  Use the codesign tool to check the entitlements on the .app bundle, where `YourApp.app` is the actual name of your .app bundle.:
+3. Use the codesign tool to check the entitlements on the .app bundle, where `YourApp.app` is the actual name of your .app bundle.:
 
     ```bash
-    $ codesign -d --entitlements :- "Payload/YourApp.app"
+    codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
-4.  Use the security tool to check the entitlements of the app's embedded provisioning profile, where `YourApp.app` is the actual name of your .app bundle.
+4. Use the security tool to check the entitlements of the app's embedded provisioning profile, where `YourApp.app` is the actual name of your .app bundle.
 
     ```bash
-    $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### Remove entitlements from an app by using the –e parameter
@@ -393,19 +394,19 @@ This command removes any enabled capabilities in the app that are not in the ent
 ## Security and privacy for the App Wrapping Tool
 Use the following security and privacy best practices when you use the App Wrapping Tool.
 
--   The signing certificate, provisioning profile, and the line-of-business app you specify must be on the same macOS machine that you use to run the app wrapping tool. If the files are on a UNC path, ensure that these are accessible from the macOS machine. The path must be secured via IPsec or SMB signing.
+- The signing certificate, provisioning profile, and the line-of-business app you specify must be on the same macOS machine that you use to run the app wrapping tool. If the files are on a UNC path, ensure that these are accessible from the macOS machine. The path must be secured via IPsec or SMB signing.
 
     The wrapped application imported into the admin console should be on the same computer that you run the tool on. If the file is on a UNC path, ensure that it is accessible on the computer running the admin console. The path must be secured via IPsec or SMB signing.
 
--   The environment where the App Wrapping Tool is downloaded from the GitHub repository needs to be secured via IPsec or SMB signing.
+- The environment where the App Wrapping Tool is downloaded from the GitHub repository needs to be secured via IPsec or SMB signing.
 
--   The app you process must come from a trustworthy source to ensure protection against attacks.
+- The app you process must come from a trustworthy source to ensure protection against attacks.
 
--   Ensure that the output folder you specify in the App Wrapping Tool is secured, particularly if it is a remote folder.
+- Ensure that the output folder you specify in the App Wrapping Tool is secured, particularly if it is a remote folder.
 
--   iOS apps that include a file upload dialog box can allow users to circumvent, cut, copy, and paste restrictions applied to the app. For example, a user could use the file upload dialog box to upload a screenshot of the app data.
+- iOS apps that include a file upload dialog box can allow users to circumvent, cut, copy, and paste restrictions applied to the app. For example, a user could use the file upload dialog box to upload a screenshot of the app data.
 
--   When you monitor the documents folder on your device from within a wrapped app, you might see a folder named .msftintuneapplauncher. If you change or delete this file, it might affect the correct functioning of restricted apps.
+- When you monitor the documents folder on your device from within a wrapped app, you might see a folder named .msftintuneapplauncher. If you change or delete this file, it might affect the correct functioning of restricted apps.
 
 ## Intune App Wrapping Tool for iOS with Citrix MDX mVPN
 This feature is an integration with the Citrix MDX app wrapper for iOS. The integration is simply an additional, optional command-line flag, `-citrix` to the general Intune App Wrapping Tools.
@@ -421,11 +422,13 @@ To use the `-citrix` flag, you will also need to install the [Citrix MDX app wra
 Simply run your general app wrapping command and with the `-citrix` flag appended. The `-citrix` flag currently does not take any arguments.
 
 **Usage format**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Example command**:
+
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```

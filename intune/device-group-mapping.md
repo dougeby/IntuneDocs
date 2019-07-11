@@ -69,11 +69,11 @@ After you configure device groups, and users enroll their device, they are prese
 
 ### View the categories of devices that you manage
 
-1.	In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices**.
+1. In [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Devices**.
 
-2.	Under **Manage**, select **All devices**.
+2. Under **Manage**, select **All devices**.
 
-3.	In the list of devices, examine the **Device category** column.
+3. In the list of devices, examine the **Device category** column.
 
 If the **Device category** column isn’t shown, select **Columns**. Choose **Device category** from the list, and then select **Apply**.
 

@@ -38,33 +38,33 @@ A successful Microsoft Intune deployment starts with having a good plan and desi
 
 This guide includes sections that will walk you through the end-to-end process of deploying Intune. Start with Section 1 to clarify your goals, objectives, and challenges. Then move on to Sections 2 – 7 in the order that best meets your needs. You don't need to work through these sections sequentially; you can complete them in parallel.
 
--   [Section 1: Determine deployment goals, objectives, and challenges](planning-guide-deployment-goals.md)
+- [Section 1: Determine deployment goals, objectives, and challenges](planning-guide-deployment-goals.md)
 
--   [Section 2: Identify use case scenarios](planning-guide-scenarios.md)
+- [Section 2: Identify use case scenarios](planning-guide-scenarios.md)
 
--   [Section 3: Determine use case requirements](planning-guide-requirements.md)
+- [Section 3: Determine use case requirements](planning-guide-requirements.md)
 
--   [Section 4: Develop a rollout plan](planning-guide-rollout-plan.md)
+- [Section 4: Develop a rollout plan](planning-guide-rollout-plan.md)
 
--   [Section 5: Develop a rollout communication plan](planning-guide-communication-plan.md)
+- [Section 5: Develop a rollout communication plan](planning-guide-communication-plan.md)
 
--   [Section 6: Develop a support plan](planning-guide-support-plan.md)
+- [Section 6: Develop a support plan](planning-guide-support-plan.md)
 
--   [Section 7: Create an Intune design](planning-guide-design.md)
+- [Section 7: Create an Intune design](planning-guide-design.md)
 
--   [Section 8: Intune implementation](planning-guide-onboarding.md)
+- [Section 8: Intune implementation](planning-guide-onboarding.md)
 
--   [Section 9: Testing and validation](planning-guide-test-validation.md)
+- [Section 9: Testing and validation](planning-guide-test-validation.md)
 
 This guide also provides additional technical information and table templates that can be used to assist you with the Intune deployment planning, design, and implementation process.
 
--   [Additional resources: Links and table templates](planning-guide-resources.md)
+- [Additional resources: Links and table templates](planning-guide-resources.md)
 
 ## Assumptions
 
--   You've already evaluated Intune in a proof of concept (PoC) environment, and have decided to use it as the mobile device management solution in your organization.
+- You've already evaluated Intune in a proof of concept (PoC) environment, and have decided to use it as the mobile device management solution in your organization.
 
--   You're already familiar with Intune and its features.
+- You're already familiar with Intune and its features.
 
 ## Next steps
 

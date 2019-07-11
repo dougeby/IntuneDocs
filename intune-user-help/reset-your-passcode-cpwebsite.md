@@ -39,7 +39,7 @@ If you're using a corporate-enrolled device, you may not see the option to reset
 
 ## Reset your passcode
 
-1.  Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
+1. Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
 
 2. Select the device that needs a passcode reset.  
 
@@ -82,7 +82,7 @@ This section describes the passcode reset and the temporary password behavior fo
 **iOS**: Removes the existing passcode and does not create a temporary passcode. If you use the Touch ID fingerprint scanner to open your device or make purchases, you must set it up again.  
 
 **Windows 10 Mobile**: Removes the existing passcode and creates a temporary passcode made up of letters and numbers. If set up, Windows Hello facial recognition will still work with the device.
-	
+
 **Windows Phone 8.1**: Removes the existing passcode and creates a temporary passcode made up of numbers.  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -37,12 +37,12 @@ You can integrate Windows Hello for Business (formerly Microsoft Passport for Wo
 
 Intune integrates with Hello for Business in two ways:
 
--   An Intune policy can be created under **Device enrollment**. This policy targets the entire organization (tenant-wide). It supports the Windows AutoPilot out-of-box-experience (OOBE) and is applied when a device enrolls. 
--  An identity protection profile can be created under **Device configuration**. This profile targets assigned users and devices, and is applied during check-in. 
+- An Intune policy can be created under **Device enrollment**. This policy targets the entire organization (tenant-wide). It supports the Windows AutoPilot out-of-box-experience (OOBE) and is applied when a device enrolls. 
+- An identity protection profile can be created under **Device configuration**. This profile targets assigned users and devices, and is applied during check-in. 
 
 Use this article to create a default Windows Hello for Business policy that targets your entire organization. To create an identity protection profile that is applied to select user and device groups, see [Configure an identity protection profile](identity-protection-configure.md).  
 
-<!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
+<!--- - You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
 > [!IMPORTANT]
 > In Windows 10 desktop and mobile versions prior to the Anniversary Update, you could set two different PINS that could be used to authenticate to resources:
@@ -65,26 +65,26 @@ Use this article to create a default Windows Hello for Business policy that targ
 
 4. Select **Settings** and then on the Settings pane, choose from the following options for **Configure Windows Hello for Business**:
 
-	- **Disabled**. If you don't want to use Windows Hello for Business, select this setting. All other settings on the screen are then unavailable.
-	- **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
-	- **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.
+    - **Disabled**. If you don't want to use Windows Hello for Business, select this setting. If disabled, users cannot provision Windows Hello for Business except on Azure Active Directory joined mobile phones where provisioning may be required.
+    - **Enabled**. Select this setting if you want to configure Windows Hello for Business settings.
+    - **Not configured**. Select this setting if you don't want to use Intune to control Windows Hello for Business settings. Any existing Windows Hello for Business settings on Windows 10 devices is not changed. All other settings on the pane are unavailable.
 
 6. If you selected **Enabled** in the previous step, configure the required settings that are applied to all enrolled Windows 10 and Windows 10 Mobile devices.
 
    - **Use a Trusted Platform Module (TPM)**. A TPM chip provides an additional layer of data security.<br>Choose one of the following values:
 
-	 - **Required** (default). Only devices with an accessible TPM can provision Windows Hello for Business.
-	 - **Preferred**. Devices first attempt to use a TPM. If this is not available, they can use software encryption.
+     - **Required** (default). Only devices with an accessible TPM can provision Windows Hello for Business.
+     - **Preferred**. Devices first attempt to use a TPM. If this is not available, they can use software encryption.
 
    - **Minimum PIN length**/**Maximum PIN length**. Configures devices to use the minimum and maximum PIN lengths that you specify to help ensure secure sign-in. The default PIN length is six characters, but you can enforce a minimum length of four characters. The maximum PIN length is 127 characters.
 
    - **Lowercase letters in PIN**/**Uppercase letters in PIN**/**Special characters in PIN**. You can enforce a stronger PIN by requiring the use of uppercase letters, lowercase letters, and special characters in the PIN. Choose from:
 
-	 - **Allowed**. Users can use the character type in their PIN, but it is not mandatory.
+     - **Allowed**. Users can use the character type in their PIN, but it is not mandatory.
 
-	 - **Required**. Users must include at least one of the character types in their PIN. For example, it's common practice to require at least one uppercase letter and one special character.
+     - **Required**. Users must include at least one of the character types in their PIN. For example, it's common practice to require at least one uppercase letter and one special character.
 
-	 - **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)<br>Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
+     - **Not allowed** (default). Users must not use these character types in their PIN. (This is also the behavior if the setting is not configured.)<br>Special characters include: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
 
    - **PIN expiration (days)**. It's a good practice to specify an expiration period for a PIN, after which users must change it. The default is 41 days.
 
@@ -92,8 +92,8 @@ Use this article to create a default Windows Hello for Business policy that targ
 
    - **Allow biometric authentication**. Enables biometric authentication, such as facial recognition or fingerprint, as an alternative to a PIN for Windows Hello for Business. Users must still configure a work PIN in case biometric authentication fails. Choose from:
 
-	 - **Yes**. Windows Hello for Business allows biometric authentication.
-	 - **No**. Windows Hello for Business prevents biometric authentication (for all account types).
+     - **Yes**. Windows Hello for Business allows biometric authentication.
+     - **No**. Windows Hello for Business prevents biometric authentication (for all account types).
 
    - **Use enhanced anti-spoofing, when available**. Configures whether the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).<br>If this is set to **Yes**, Windows requires all users to use anti-spoofing for facial features when that is supported.
 

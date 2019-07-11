@@ -157,16 +157,17 @@ buildscript {
 ```
 
 Then, in the `build.gradle` file for your APK project, simply apply the plugin as
+
 ```groovy
 apply plugin: 'com.microsoft.intune.mam'
 ```
 
 By default, the plugin will operate **only** on `project` dependencies.
 Test compilation not affected. Configuration may be provided to list
-*  Projects to exclude
-*  [External dependencies to include](#usage-of-includeexternallibraries) 
-*  Specific classes to exclude from processing
-*  Variants to exclude from processing. These can refer to either a
+* Projects to exclude
+* [External dependencies to include](#usage-of-includeexternallibraries) 
+* Specific classes to exclude from processing
+* Variants to exclude from processing. These can refer to either a
    complete variant name or a single flavor. For example
      * if your app has build types `debug` and `release` with flavors
        {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
@@ -196,8 +197,8 @@ intunemam {
     excludeClasses = ['com.contoso.SplashActivity']
     excludeVariants=['savory']
 }
-
 ```
+
 This would have the following effects:
 * `:product:FooLib` is not rewritten because it is included in `excludeProjects`
 * `:product:foo-project` is rewritten, except for `com.contoso.SplashActivity` which is skipped because it's in `excludeClasses`
@@ -361,7 +362,7 @@ automatically by the SDK [build tooling](#build-tooling).
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 | android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
 | android.widget.TextView | MAMTextView |
-| android.widget.AutoCompleteTextView |	MAMAutoCompleteTextView |
+| android.widget.AutoCompleteTextView | MAMAutoCompleteTextView |
 | android.widget.CheckedTextView | MAMCheckedTextView |
 | android.widget.EditText | MAMEditText |
 | android.inputmethodservice.ExtractEditText | MAMExtractEditText |
@@ -388,7 +389,7 @@ automatically by the SDK [build tooling](#build-tooling).
 |--|--|
 | android.support.v7.app.AlertDialog.Builder | MAMAlertDialogBuilder |
 | android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
-| android.support.v7.widget.AppCompatAutoCompleteTextView |	MAMAppCompatAutoCompleteTextView |
+| android.support.v7.widget.AppCompatAutoCompleteTextView | MAMAppCompatAutoCompleteTextView |
 | android.support.v7.widget.AppCompatCheckedTextView | MAMAppCompatCheckedTextView |
 | android.support.v7.widget.AppCompatEditText | MAMAppCompatEditText |
 | android.support.v7.widget.AppCompatMultiAutoCompleteTextView | MAMAppCompatMultiAutoCompleteTextView |
@@ -798,8 +799,8 @@ To configure your app and enable proper authentication, add the following to the
 ### ADAL metadata
 
 * **Authority** is the AAD authority in use. If this value is absent, the AAD public environment is used.
-	> [!NOTE]
-	> Do not set this field if your application is sovereign cloud aware.
+    > [!NOTE]
+    > Do not set this field if your application is sovereign cloud aware.
 
 * **ClientID** is the AAD ClientID (also known as Application ID) to be used. You should use your own app's ClientID if it is registered with Azure AD. If this value is absent, an Intune default is used.
 
@@ -965,21 +966,21 @@ void updateToken(String upn, String aadId, String resourceId, String token);
 
 2. The `acquireToken()` method should acquire the access token for the requested resource ID for the given user. If it can't acquire the requested token, it should return null.
 
-	> [!NOTE]
-	> Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
+    > [!NOTE]
+    > Ensure that your app utilizes the `resourceId` and `aadId` parameters passed to `acquireToken()` so that the correct token is acquired.
 
-	```java
-	class MAMAuthCallback implements MAMServiceAuthenticationCallback {
-	    public String acquireToken(String upn, String aadId, String resourceId) {
-		return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
-	    }
-	}
-	```
+    ```java
+    class MAMAuthCallback implements MAMServiceAuthenticationCallback {
+        public String acquireToken(String upn, String aadId, String resourceId) {
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+        }
+    }
+    ```
 
 3. In case the app is unable to provide a token when the SDK calls `acquireToken()`  -- for example, if silent authentication fails and it is an inconvenient time to show a UI -- the app can provide a token at a later time by calling the `updateToken()` method. The same UPN, AAD ID, and resource ID that were requested by the prior call to `acquireToken()` must be passed to `updateToken()`, along with the token that was finally acquired. The app should call this method as soon as possible after returning null from the provided callback.
 
-	> [!NOTE]
-	> The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is strongly recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
+    > [!NOTE]
+    > The SDK will call `acquireToken()` periodically to get the token, so calling `updateToken()` is not strictly required. However, it is strongly recommended as it can help enrollments and app protection policy check-ins complete in a timely manner.
 
 
 ### Account Registration
@@ -1136,20 +1137,20 @@ Here is a sample of receiving the policy-required error in the `AuthenticationCa
 
 ```java
 public void onError(@Nullable Exception exc) {
-	if (exc instanceof AuthenticationException && 
-		((AuthenticationException) exc).getCode() == ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED) {
+    if (exc instanceof AuthenticationException && 
+        ((AuthenticationException) exc).getCode() == ADALError.AUTH_FAILED_INTUNE_POLICY_REQUIRED) {
 
-		final IntuneAppProtectionPolicyRequiredException policyRequiredException = 
-			(IntuneAppProtectionPolicyRequiredException) ex;
+        final IntuneAppProtectionPolicyRequiredException policyRequiredException = 
+            (IntuneAppProtectionPolicyRequiredException) ex;
 
-		final String upn = policyRequiredException.getAccountUpn();
-		final String aadId = policyRequiredException.getAccountUserId();
-		final String tenantId = policyRequiredException.getTenantId();
-		final String authority = policyRequiredException.getAuthorityURL();
+        final String upn = policyRequiredException.getAccountUpn();
+        final String aadId = policyRequiredException.getAccountUserId();
+        final String tenantId = policyRequiredException.getTenantId();
+        final String authority = policyRequiredException.getAuthorityURL();
 
-		MAMComplianceManager complianceManager = MAMComponents.get(MAMComplianceManager.class);
-		complianceManager.remediateCompliance(upn, aadId, tenantId, authority, showUX);
-	}
+        MAMComplianceManager complianceManager = MAMComponents.get(MAMComplianceManager.class);
+        complianceManager.remediateCompliance(upn, aadId, tenantId, authority, showUX);
+    }
 }
 ```
 
@@ -1159,9 +1160,9 @@ If the app registers for notifications of type **COMPLIANCE_STATUS**, a `MAMComp
 
 ```java
 public interface MAMComplianceNotification extends MAMUserNotification {
-	MAMCAComplianceStatus getComplianceStatus();
-	String getComplianceErrorTitle();
-	String getComplianceErrorMessage();
+    MAMCAComplianceStatus getComplianceStatus();
+    String getComplianceErrorTitle();
+    String getComplianceErrorMessage();
 }
 ```
 
@@ -1211,9 +1212,10 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 
 > [!NOTE]
 > The app's `MAMServiceAuthenticationCallback.acquireToken()` method must pass *true* for the new `forceRefresh` flag to `acquireTokenSilentSync()` to force a refresh from the broker.  This is to work around a caching issue with tokens in ADAL that can affect MAM Service tokens. In general, this looks like:
-```java
-AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
-```
+>
+> ```java
+> AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ true);
+> ```
 
 > [!NOTE]
 > If you want to show a custom blocking UX during the remediation attempt, you should pass *false* for the showUX parameter to `remediateCompliance()`. You must ensure that you show your UX and register your notification listener first before calling `remediateCompliance()`.  This will prevent a race condition where the notification could be missed if `remediateCompliance()` fails very quickly.  For example, the `onCreate()` or `onMAMCreate()` method of an Activity subclass is the ideal place to register the notification listener and then call `remediateCompliance()`.  The parameters for `remediateCompliance()` can be passed to your UX as Intent extras.  When the compliance status notification is received, you can display the result or simply finish the activity.
@@ -1326,7 +1328,7 @@ The Data Backup guide specifies a general algorithm for restoring your applicati
 By default, the Intune App SDK will apply policy  to the app as a whole. Multi-identity is an optional Intune app protection feature that can be enabled to allow policy to be applied on a per-identity level. This requires significantly more app participation than other app protection features.
 
 > [!NOTE]
->  A lack of the correct app participation can result in data leaks and other security issues.
+> A lack of the correct app participation can result in data leaks and other security issues.
 
 Once the user enrolls the device or the app, the SDK registers this identity and considers it the primary Intune managed identity. Other users in the app will be treated as unmanaged, with unrestricted policy settings.
 
@@ -1486,7 +1488,7 @@ In addition to the app's ability to set the identity, a thread, or a context's i
 
   1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
 
-  2.  For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
+  2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
 
   3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
 
@@ -1595,6 +1597,7 @@ To use `MAMAsyncTask`, simply inherit from it instead of `AsyncTask` and replace
   Executor wrappedExecutor = MAMIdentityExecutors.wrapExecutor(originalExecutor, activity);
   ExecutorService wrappedService = MAMIdentityExecutors.wrapExecutorService(originalExecutorService, activity);
 ```
+
 ### File Protection
 
 Every file has an identity associated with it at the time of creation, based on thread and process identity. This identity will be used for both file encryption and selective wipe. Only files whose identity is managed and has policy requiring encryption will be encrypted. The SDK's default selective functionality wipe will only wipe files associated with the managed identity for which a wipe has been requested. The app may query or change a file’s identity using the `MAMFileProtectionManager` class.
@@ -1609,12 +1612,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    * 		Identity to set.
+    *        Identity to set.
     * @param file
-    * 		File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    * 		If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1875,6 +1878,7 @@ the same key.
 > Configurations setup for delivery via MAM-WE can not be delievered in `offline`.  Only Android Enterprise AppRestrictions will be delivered via a `MAMUserNotification` on an empty identity in this case.
 
 ### Example
+
 ```java
 MAMAppConfigManager configManager = MAMComponents.get(MAMAppConfigManager.class);
 String identity = "user@contoso.com"
@@ -1910,6 +1914,7 @@ Views generated by the MAM SDK can be visually customized to more closely match 
 
 ### How to customize
 In order to have style changes apply to the Intune MAM views, you must first create a style override XML file. This file should be placed in the “/res/xml” directory of your app and you may name it whatever you like. Below is an example of the format this file needs to follow.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1956,16 +1961,20 @@ Enable default enrollment with the following steps:
    following [common ADAL configuration](#common-adal-configurations) #2. If not, you may skip this step.
    
 2. Enable default enrollment by putting the following value in the manifest:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
    ```
+
    > [!NOTE] 
    > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
 3. Enable MAM policy required by putting the following value in the manifest:
+
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
    ```
+
    > [!NOTE] 
    > This forces the user to download the Company Portal on the device and complete the default enrollment flow before use.
 
@@ -1976,8 +1985,8 @@ Enable default enrollment with the following steps:
 
 For large code bases that run without [ProGuard](http://proguard.sourceforge.net/), the limitations of the Dalvik executable file format become an issue. Specifically, the following limitations may occur:
 
-1.  The 65-K limit on fields.
-2.  The 65-K limit on methods.
+1. The 65-K limit on fields.
+2. The 65-K limit on methods.
 
 ### Policy enforcement limitations
 
@@ -1985,9 +1994,11 @@ For large code bases that run without [ProGuard](http://proguard.sourceforge.net
 access the content provider in another app. This will cause `ContentResolver` methods to return null or throw a failure value (for
 example, `openOutputStream` will throw `FileNotFoundException` if blocked). The app can determine whether a failure to write data
 through a content resolver was caused by policy (or would be caused by policy) by making the call:
+
     ```java
     MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(contentURI);
     ```
+
     or if there is no associated activity
 
     ```java

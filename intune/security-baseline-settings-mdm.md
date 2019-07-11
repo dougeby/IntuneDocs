@@ -63,7 +63,7 @@ For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/w
 
 - **Microsoft accounts optional for Windows Store apps**  
   This policy setting lets you control whether Microsoft accounts are optional for Windows Store apps that require an account to sign in. This policy only affects Windows Store apps that support it. If you enable this policy setting, Windows Store apps that typically require a Microsoft account to sign in will allow users to sign in with an enterprise account instead. If you disable or don't configure this policy setting, users must sign in with a Microsoft account.  
-	[Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Default**: Enabled  
 
@@ -74,7 +74,7 @@ For more information, see [Policy CSP - ApplicationManagement](https://docs.micr
   This policy setting permits users to change installation options that typically are available only to system administrators. If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation. If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed. If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user. This policy setting is designed for less restrictive environments. It can be used to circumvent errors in an installation program that prevents software from being installed.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-	**Default**: Yes
+  **Default**: Yes
 
 - **Block MSI app installations with elevated privileges**  
   This policy setting directs Windows Installer to use elevated permissions when it installs any program on the system.  
@@ -277,44 +277,44 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
   
   **Default**: Yes  
   
-    When *Require password* is set to *Yes*, the following settings are available.
+  When *Require password* is set to *Yes*, the following settings are available.
 
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Password minimum character set count**  
+    The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Default**: 3  
+
+  - **Number of sign-in failures before wiping device**  
+    The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Default**: 3  
-  
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Default**: 10  
-  
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Default**: 60  
-  
-    - **Required password type**  
-      Determines the type of PIN or password required.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Default**: Alphanumeric  
-  
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
+    **Default**: 10  
+
+  - **Password expiration (days)**  
+    The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Default**: 60  
+
+  - **Required password type**  
+    Determines the type of PIN or password required.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Default**: Alphanumeric  
+
+  - **Minimum password length**  
+    The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Default**: 8  
+
+  - **Block simple passwords**  
+    Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Default**: Yes  
+      *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.  
@@ -835,7 +835,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
 - **Internet Explorer trusted zone java permissions**   
   This policy setting allows you to manage permissions for Java applets. If you enable this policy setting, you can choose options from the drop-down box. Custom, to control permissions settings individually. Low Safety enables applets to perform all operations. Medium Safety enables applets to run in their sandbox (an area in memory outside of which the program can't make calls), plus capabilities like scratch space (a safe and secure storage area on the client computer) and user-controlled file I/O. High Safety enables applets to run in their sandbox. Disable Java to prevent any applets from running. If you disable this policy setting, Java applets can't run. If you don't configure this policy setting, the permission is set to Low Safety.  
-	[Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Default**: High safety  
   
@@ -1761,7 +1761,7 @@ For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for private networks.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Inbound connections blocked**  
+  - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  
@@ -1837,7 +1837,7 @@ The following settings are either:
 - *Revised* in some way from how the settings appeared in the previous version. 
 
 *[New]* [**Above Lock**](#above-lock):
--  **Voice activate apps from locked screen**    
+- **Voice activate apps from locked screen**    
 
 *[New]* [**Application Management**](#application-management): 
 - **Block user control over installations**  

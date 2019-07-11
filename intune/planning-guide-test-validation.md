@@ -38,17 +38,17 @@ We recommend that you incorporate your IT support and helpdesk staff in the test
 
 We recommend that you document the following:
 
--   **Test criteria:** Identify the benchmarks to be measured against.
+- **Test criteria:** Identify the benchmarks to be measured against.
 
--   **Design components:** Must exist in at least one testing criteria.
+- **Design components:** Must exist in at least one testing criteria.
 
 If a design component does not exist in at least one test criteria that aligns to a requirement or scenario, consider whether the design component is required or not. In addition, make sure to have the following items:
 
--   **Accounts:** Test accounts that are licensed for EMS and Office 365 to test all use-case scenarios.
+- **Accounts:** Test accounts that are licensed for EMS and Office 365 to test all use-case scenarios.
 
--   **Devices:** Test devices that can be wiped or reset to factory defaults.
+- **Devices:** Test devices that can be wiped or reset to factory defaults.
 
--   **Integration components:** All integration components (certificate connectors, and the Intune Exchange on-premises connector) should be installed and configured if needed.
+- **Integration components:** All integration components (certificate connectors, and the Intune Exchange on-premises connector) should be installed and configured if needed.
 
 You may need design changes to accommodate unforeseen difficulties. In addition, all design changes should be fully documented with the reason for each change. Here's an example to illustrate what a change could be:
 
@@ -56,9 +56,9 @@ You may need design changes to accommodate unforeseen difficulties. In addition,
 
 You might experience challenges or issues that require technical guidance or specialized troubleshooting during the testing and validation process. We recommend that you seek assistance through the Microsoft support channels.
 
--   [Learn how to get Intune support](get-support.md)
+- [Learn how to get Intune support](get-support.md)
 
--   [Contact assisted phone support for Microsoft Intune](get-support.md)
+- [Contact assisted phone support for Microsoft Intune](get-support.md)
 
 ## Functional validation testing
 

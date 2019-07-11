@@ -72,44 +72,45 @@ On the computer(s) on which the client software is going to be installed, go to 
 
 ## Deploy the client software by using Group Policy
 
-1.  In the folder that contains the files **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, run the following command to extract the Windows Installer-based installation programs for 32-bit and 64-bit computers:
+1. In the folder that contains the files **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, run the following command to extract the Windows Installer-based installation programs for 32-bit and 64-bit computers:
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  Copy the **Microsoft_Intune_x86.msi** file, the **Microsoft_Intune_x64.msi** file, and the **MicrosoftIntune.accountcert** file to a network location that can be accessed by all computers on which the client software is going to be installed.
+2. Copy the **Microsoft_Intune_x86.msi** file, the **Microsoft_Intune_x64.msi** file, and the **MicrosoftIntune.accountcert** file to a network location that can be accessed by all computers on which the client software is going to be installed.
 
     > [!IMPORTANT]
     > Do not separate or rename the files or the client software installation will fail.
 
-3.  Use Group Policy to deploy the software to computers on your network.
+3. Use Group Policy to deploy the software to computers on your network.
 
     For more information about how to use Group Policy to automatically deploy software, see [Group Policy for Beginners](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## Deploy the client software as part of an image
 You can deploy the Intune client software to computers as part of an operating system image by using the following procedure as a guide:
 
-1.  Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
+1. Copy the client installation files, **Microsoft_Intune_Setup.exe** and **MicrosoftIntune.accountcert**, to the **%Systemdrive%\Temp\Microsoft_Intune_Setup** folder on the reference computer.
 
-2.  Create the **WindowsIntuneEnrollPending** registry entry by adding the following command to the **SetupComplete.cmd** script:
+2. Create the **WindowsIntuneEnrollPending** registry entry by adding the following command to the **SetupComplete.cmd** script:
 
-    ```
+    ```cmd
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  Add the following command to **setupcomplete.cmd** to run the enrollment package with the /PrepareEnroll command-line argument:
+3. Add the following command to **setupcomplete.cmd** to run the enrollment package with the /PrepareEnroll command-line argument:
 
-    ```
+    ```cmd
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
     ```
+
     > [!TIP]
     > The **SetupComplete.cmd** script enables Windows Setup to make modifications to the system before a user signs on. The **/PrepareEnroll** command-line argument prepares a targeted computer to be automatically enrolled in Intune after Windows Setup finishes.
 
-4.  Put **SetupComplete.cmd** in the **%Windir%\Setup\Scripts** folder on the reference computer.
+4. Put **SetupComplete.cmd** in the **%Windir%\Setup\Scripts** folder on the reference computer.
 
-5.  Capture an image of the reference computer and then deploy this to targeted computers.
+5. Capture an image of the reference computer and then deploy this to targeted computers.
 
     When the targeted computer restarts at the completion of Windows Setup, the **WindowsIntuneEnrollPending** registry key is created. The enrollment package checks to see if the computer is enrolled. If the computer is enrolled, no further action is taken. If the computer is not enrolled, the enrollment package creates a Microsoft Intune Automatic Enrollment Task.
 
@@ -123,13 +124,13 @@ Users install the Intune client software by going to the [Company Portal website
 
 If users haven't been assigned an Intune license or if the organization's MDM Authority hasn't been set to Intune, users aren't shown any options to enroll.
 
-If users have been assigned an Intune license, and the organization's MDM Authority has been set to Intune:
+If users have been assigned an Intune license, and the organization's MDM Authority has been set to Intune:
 
-- Windows 7 or Windows 8 PC users are shown ONLY the option to enroll to Intune by downloading and installing the PC client software that is unique to their organization.
+- Windows 7 or Windows 8 PC users are shown ONLY the option to enroll to Intune by downloading and installing the PC client software that is unique to their organization.
 
 - Windows 10 or Windows 8.1 PC users are shown two enrollment options:
 
-  -  **Enroll PC as a mobile device**: Users choose the **Find Out How to Enroll** button and are taken to instructions on how to enroll their PC as a mobile device. This button is prominently displayed, because MDM enrollment is considered to be the default and preferred enrollment option. However, the MDM option is not applicable to this topic, which covers only the client software installation.
+  - **Enroll PC as a mobile device**: Users choose the **Find Out How to Enroll** button and are taken to instructions on how to enroll their PC as a mobile device. This button is prominently displayed, because MDM enrollment is considered to be the default and preferred enrollment option. However, the MDM option is not applicable to this topic, which covers only the client software installation.
   - **Enroll PC using the Intune client software**: You'll need to tell your users to select the **Click here to download it** link, which takes them through the client software installation.
 
 The following table summarizes the options.
@@ -175,19 +176,19 @@ Use one of the following procedures to help you monitor and validate successful 
 
 ### To verify the installation of the client software from the Microsoft Intune administrator console
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Computers**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Groups** &gt; **All Devices** &gt; **All Computers**.
 
-2.  In the list, find the computers that are communicating with Intune, or search for a specific managed computer by typing the computer name (or any part of the name) in the **Search devices** box.
+2. In the list, find the computers that are communicating with Intune, or search for a specific managed computer by typing the computer name (or any part of the name) in the **Search devices** box.
 
-3.  Examine the status of the computer in the bottom pane of the console. Resolve any errors.
+3. Examine the status of the computer in the bottom pane of the console. Resolve any errors.
 
 ### To create a computer inventory report to display all enrolled computers
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Reports** &gt; **Computer Inventory Reports**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Reports** &gt; **Computer Inventory Reports**.
 
-2.  On the **Create New Report** page, leave the default values in all fields (unless you want to apply filters), and then click **View Report**.
+2. On the **Create New Report** page, leave the default values in all fields (unless you want to apply filters), and then click **View Report**.
 
-3.  The **Computer Inventory Report** page opens in a new window that displays all computers that are successfully enrolled in Intune.
+3. The **Computer Inventory Report** page opens in a new window that displays all computers that are successfully enrolled in Intune.
 
     > [!TIP]
     > Click any column heading in the report to sort the list by the contents of that column.
@@ -262,7 +263,7 @@ Check "%ProgramFiles%\Microsoft\OnlineManagement" and ensure that only the follo
 
 The unenrollment process does not remove the OnlineManagement folder. Wait 30 minutes after the uninstall, and then run this command. If you run it too soon, the uninstall could be left in an unknown state. To remove the folder, start an elevated prompt and run:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### Next steps
 [Common Windows PC management tasks with the Intune software client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

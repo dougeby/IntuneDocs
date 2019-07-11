@@ -50,7 +50,7 @@ You use the ABM or DEP portal to create a Device Enrollment token. You also use 
 
 4. Choose **Create a token for Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
 
-5.  In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**. Your process may be slightly different than the following steps in [Apple Business Manager](https://business.apple.com).
+5. In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**. Your process may be slightly different than the following steps in [Apple Business Manager](https://business.apple.com).
 
 4. On the **Manage Servers** page, choose **Add MDM Server**.
 
