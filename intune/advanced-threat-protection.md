@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 07/12/2019
 
 ms.topic: conceptual
 ms.service: microsoft-intune
@@ -58,20 +58,20 @@ To use ATP with Intune, be sure you have the following configured, and ready to 
 ## Enable Windows Defender ATP in Intune
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Select **Device compliance** > **Windows Defender ATP** > **Open the Windows Defender Security Center**.
+2. Select **Device compliance** > **Microsoft Defender ATP**, and then below *Connector Settings*, select **Open the Windows Defender Security Center**.
 
-    ![Select to open the Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
+    ![Select to open the Windows Defender Security Center](./media/advanced-threat-protection/atp-device-compliance-open-microsoft-defender.png)
 
-4. In the **Windows Defender Security Center**:
+3. In the **Windows Defender Security Center**:
     1. Select **Settings** > **Advanced features**.
     2. For **Microsoft Intune connection**, choose **On**:
 
-        ![Enable the connection to Intune](./media/atp-security-center-intune-toggle.png)
+        ![Enable the connection to Intune](./media/advanced-threat-protection/atp-security-center-intune-toggle.png)
 
     3. Select **Save preferences**.
 
-5. Go back to Intune, **Device compliance** > **Windows Defender ATP**. Set **Connect Windows devices version 10.0.15063 and above to Windows Defender ATP** to **On**.
-6. Select **Save**.
+4. Go back to Intune, **Device compliance** > **Microsoft Defender ATP**. Set **Connect Windows devices version 10.0.15063 and above to Microsoft Defender ATP** to **On**.
+5. Select **Save**.
 
 You typically do this task once. So if ATP is already enabled in your Intune resource, then you don't need to do it again.
 
@@ -91,13 +91,13 @@ Once you onboard a device using configuration package, then you don't need to do
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description**.
 4. For **Platform**, select **Windows 10 and later**
-5. For **Profile type**, select **Windows Defender ATP (Windows 10 Desktop)**.
+5. For **Profile type**, select **Microsoft Defender ATP (Windows 10 Desktop)**.
 6. Configure the settings:
 
-  - **Windows Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
+  - **Microsoft Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
   
     > [!NOTE] 
-    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you, and the **Windows Defender ATP client configuration package type** setting will not be available.
+    > If you've properly established a connection with Windows Defender ATP, Intune will automatically **Onboard** the configuration profile for you, and the **Microsoft Defender ATP client configuration package type** setting will not be available.
   
   - **Sample sharing for all files**: **Enable** allows samples to be collected, and shared with Windows Defender ATP. For example, if you see a suspicious file, you can submit it to Windows Defender ATP for deep analysis. **Not configured** doesn't share any samples to Windows Defender ATP.
   - **Expedite telemetry reporting frequency**: For devices that are at high risk, **Enable** this setting so it reports telemetry to the Windows Defender ATP service more frequently.
