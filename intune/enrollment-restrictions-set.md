@@ -32,7 +32,11 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-As an Intune administrator, you can create and manage enrollment restrictions that define the number and types of devices that can enroll into management with Intune. You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
+As an Intune administrator, you can create and manage enrollment restrictions that define what devices can enroll into management with Intune, including the:
+- number of devices
+- operating systems and versions
+
+You can create multiple restrictions and apply them to different user groups. You can set the [priority order](#change-enrollment-restriction-priority) for your different restrictions.
 
 >[!NOTE]
 >Enrollment restrictions are not security features. Compromised devices can misrepresent their character. These restrictions are a best-effort barrier for non-malicious users.
@@ -56,20 +60,47 @@ The specific enrollment restrictions that you can create include:
 
 Default restrictions are automatically provided for both device type and device limit enrollment restrictions. You can change the options for the defaults. Default restrictions apply to all user and userless enrollments. You can override these defaults by creating new restrictions with higher priorities.
 
-## Create a restriction
+## Create a device type restriction
 
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
-3. Select **Device enrollment** > **Enrollment restrictions**.
-4. Select **Create restriction**.
-5. Give the restriction a name and description.
-6. Choose a **Restriction type**, and then select **Create**.
-7. For device limit restrictions, select **Device limit** to set the maximum number of devices that a user can enroll.
-8. For device type restrictions, select **Platforms** and **Platform configurations** to allow or block various platforms and versions.
-9. Select **Assignments** > **+ Select groups**.
-10. Under **Select groups**, select one or more groups, and then choose **Select**. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect.
-11. Select **Save**.
-12. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+3. Select **Device enrollment** > **Enrollment restrictions** > **Create restriction** > **Device type restriction**.
+    ![Screen cap for creating a device type restriction](media/enrollment-restrictions-set/create-device-type-restriction.png)
+4. On the **Basics** page, give the restriction a **Name** and optional **Description**.
+5. Choose **Next** to go to the **Platform settings** page.
+6. Under **Platform**, choose **Allow** for the platforms that you want this restriction to allow.
+    ![Screen cap for choosing platform settings](media/enrollment-restrictions-set/choose-platform-settings.png)
+7. Under **Versions**, choose the minimum and maximum versions that you want the allowable platforms to support. Version restrictions only apply to devices enrolled with the Company Portal.
+8. Under **Personally owned**, choose **Allow** for the platforms that you want to permit as personally owned devices.
+9. Choose **Next** to go to the **Assignments** page.
+10. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
+    ![Screen cap for choosing platform settings](media/enrollment-restrictions-set/select-groups.png)
+11. Select **Next** to go to the **Review + create** page.
+12. Select **Create** to create the restriction.
+13. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+
+
+## Create a device type restriction
+
+1. Sign in to the Azure portal.
+2. Select **More Services**, search for **Intune**, and then choose **Intune**.
+3. Select **Device enrollment** > **Enrollment restrictions** > **Create restriction** > **Device limit restriction**.
+    ![Screen cap for creating a device limit restriction](media/enrollment-restrictions-set/create-device-limit-restriction.png)
+4. On the **Basics** page, give the restriction a **Name** and optional **Description**.
+5. Choose **Next** to go to the **Device limit** page.
+6. For **Device limit**, select the maximum number of devices that a user can enroll.
+    ![Screen cap for choosing device limit](media/enrollment-restrictions-set/choose-device-limit.png)
+7. Choose **Next** to go to the **Assignments** page.
+8. Choose **Select groups to include** and then use the search box to find groups that you want to include in this restriction. The restriction applies only to groups to which it's assigned. If you don't assign a restriction to at least one group, it won't have any effect. Then choose **Select**. 
+    ![Screen cap for selecting groups](media/enrollment-restrictions-set/select-groups-device-limit.png)
+11. Select **Next** to go to the **Review + create** page.
+12. Select **Create** to create the restriction.
+13. The new restriction is created with a priority just above the default. You can [change the priority](#change-enrollment-restriction-priority).
+
+
+
+
+
 
 ## Set device type restrictions
 
@@ -103,7 +134,7 @@ If you block personally owned Windows devices from enrollment, Intune checks to 
 
 The following methods qualify as being authorized as a Windows corporate enrollment:
 - The enrolling user is using a [device enrollment manager account]( device-enrollment-manager-enroll.md).
-- The device enrolls through [Windows AutoPilot](enrollment-autopilot.md).
+- The device enrolls through [Windows Autopilot](enrollment-autopilot.md).
 - The device is registered with Windows Autopilot but isn't an MDM enrollment only option from Windows Settings.
 - The device’s IMEI number is listed in **Device enrollment** > **[Corporate device identifiers](corporate-identifiers-add.md)**. (Not supported for Windows Phone 8.1.)
 - The device enrolls through a [bulk provisioning package](windows-bulk-enroll.md).
