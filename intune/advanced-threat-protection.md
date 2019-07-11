@@ -163,6 +163,7 @@ Next, monitor the state of devices that have the Microsoft Defender ATP complian
 
 ## More good stuff
 [Microsoft Defender ATP Conditional Access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)  
-[Microsoft Defender ATP risk dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/dashboard)  
+[Microsoft Defender ATP risk dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
+
 [Get started with device compliance policies](device-compliance-get-started.md)  
 [Conditional Access in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
