@@ -51,8 +51,8 @@ Managed devices require configurations that let **All Users** access services th
 
 The following tables list the ports and services that the Intune client accesses:
 
-|**Domains**|**IP address**|
-|---------------------|-----------|
+|Domains    |IP address      |
+|-----------|----------------|
 |login.microsoftonline.com | More information [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 |
 | sts.manage.microsoft.com | 13.93.223.241 <br>52.170.32.182 <br>52.164.224.159 <br>52.174.178.4 <br>13.75.122.143 <br>52.163.120.84|
@@ -133,11 +133,11 @@ To use Delivery Optimization, you must allow Byte Range requests. For more infor
 
 Allow the following hostnames through your firewall to support Delivery Optimization.
 For communication between clients and the Delivery Optimization cloud service:
-- *.do.dsp.mp.microsoft.com
+- \*.do.dsp.mp.microsoft.com
 
 For Delivery Optimization metadata:
-- *.dl.delivery.mp.microsoft.com
-- *.emdl.ws.microsoft.com
+- \*.dl.delivery.mp.microsoft.com
+- \*.emdl.ws.microsoft.com
 
 ## Apple device network information  
 
@@ -153,7 +153,7 @@ For more information, see Apple's [TCP and UDP ports used by Apple software prod
 
 The server that hosts the Microsoft Intune Certificate Connector must have access using **TCP** port **443** to the public IP locations that are listed in the following table.  
 
-|**IP address** |**Domains**                           |
+|IP address     |Domains                               |
 |---------------|--------------------------------------|
 |104.40.82.19   | <!-- Pending validation of IP and domain --> |
 |13.76.177.110  |Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com |
