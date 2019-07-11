@@ -137,7 +137,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
     ![Profile name and description.](./media/device-enrollment-program-enroll-ios/image05.png)
 
-4. Select **Next** to go to the **Device Management Settings** page.
+4. Select **Next: Device Management Settings**.
 
 5. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the Company Portal for services like installing apps. If using ADFS and the enrollment profile has **Authenticate with Company Portal instead of Setup Assistant** set to **No**, [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) is required.
@@ -172,7 +172,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 9. If you want devices using this profile to be supervised, choose **Yes** for **Supervised**.
 
-    ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
+    ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-ios/supervisedmode.png)
 
     **Supervised** devices give you more management options and disabled Activation Lock by default. Microsoft recommends using DEP as the mechanism for enabling supervised mode, especially if you're deploying large numbers of iOS devices.
 
@@ -192,7 +192,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 
 13. You can specify a naming format for devices that is automatically applied when they enroll and upon each successive checkin. To create a naming template, select **Yes** under **Apply device name template**. Then, in the **Device Name Template** box, enter the template to use for the names using this profile. You can specify a template format that includes the device type and serial number. 
 
-14. Choose **Next**.
+14. Choose **Next: Setup Assistant Customization**.
 
 15. On the **Setup Assistant customization** page, configure the following profile settings:
     ![Setup Assistant Customization.](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png)
