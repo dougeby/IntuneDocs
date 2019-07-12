@@ -97,7 +97,7 @@ You can specify which apps need to be installed before the user can access the d
 3. Choose **Yes** for **Show app and profile installation progress**.
 4. Choose **Yes** for **Block device use until all apps and profiles are installed**.
 5. Choose **Selected** for **Block device use until these required apps are installed if they are assigned to the user/device**.
- 6. Choose **Select apps** > choose the apps > **Select** > **Save**.
+6. Choose **Select apps** > choose the apps > **Select** > **Save**.
 
 ## Enrollment Status Page tracking information
 

@@ -359,8 +359,8 @@ else
 #Exit with non-zero failure code
 exit 1
 }
-
 ```
+
 In the above PowerShell command, replace the `<path to binary file>` string with the path to your Win32 app file. An example path would be similar to the following:<br>
 `C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
 

@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -74,9 +74,9 @@ The following security baseline instances are available for use with Intune. Use
   - [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)
   - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-archive.md)
 
-- **Windows Defender ATP baseline**  
+- **Microsoft Defender ATP baseline**  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
-  - [Preview: Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+  - [Preview: Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
 You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles. 
 
@@ -159,7 +159,7 @@ Upon saving, after the conversion is complete, the baseline is immediately redep
 3. On the **Change Version** pane, use the **Select a security baseline to update to** dropdown, and select the version instance you want to use.  
 
    ![select a version](./media/security-baselines/select-instance.png)  
- 
+   
 4. Select **Review update** to download a CSV file that displays the difference between the profiles current instance version and the new version you’ve selected. Review this file so that you understand which settings are added, removed, and what the default values for these settings are in the updated profile.  
 
    When ready, continue to the next step.  
@@ -204,6 +204,6 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 ## Next steps
 - View the settings in the latest versions of the available baselines:  
   - [MDM security baseline](security-baseline-settings-mdm.md)  
-  - [Windows Defender ATP baseline](security-baseline-settings-defender-atp.md)  
+  - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md).

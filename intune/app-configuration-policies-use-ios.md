@@ -153,6 +153,7 @@ When you create an app configuration file, you can specify one or more of the fo
   <string>{{aaddeviceid}}</string>
 </dict>
 ```
+
 ### Supported XML PList data types
 
 Intune supports the following data types in a property list:

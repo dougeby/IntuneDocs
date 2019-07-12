@@ -56,7 +56,7 @@ Before you can configure Conditional Access, verify the following configurations
 - When Conditional Access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
     - Either **enrolled** with Intune or is a domain joined PC.
     - **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
-<br></br>
+
 - Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service don't see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 - **Compliant** with device compliance policies deployed to that device.

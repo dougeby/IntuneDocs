@@ -277,44 +277,44 @@ For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/w
   
   **Default**: Yes  
   
-    When *Require password* is set to *Yes*, the following settings are available.
+  When *Require password* is set to *Yes*, the following settings are available.
 
-    - **Password minimum character set count**  
-      The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Password minimum character set count**  
+    The number of complex element types (uppercase and lowercase letters, numbers, and punctuation) required for a strong PIN or password. PIN enforces the following behavior for desktop and mobile devices: 1 - Digits only 2 - Digits and lowercase letters are required 3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop. The default value is 1.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Default**: 3  
+
+  - **Number of sign-in failures before wiping device**  
+    The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Default**: 3  
-  
-    - **Number of sign-in failures before wiping device**  
-      The number of authentication failures allowed before the device is wiped. A value of 0 disables device wipe functionality.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Default**: 10  
-  
-    - **Password expiration (days)**  
-      The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Default**: 60  
-  
-    - **Required password type**  
-      Determines the type of PIN or password required.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Default**: Alphanumeric  
-  
-    - **Minimum password length**  
-      The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Default**: 8  
-  
-    - **Block simple passwords**  
-      Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
-      [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Default**: Yes  
-        *A setting of Yes prevents use of simple passwords.* 
+    **Default**: 10  
+
+  - **Password expiration (days)**  
+    The Maximum password age policy setting determines the how long (in days) that a password can be used before the system requires the user to change it. You can set passwords to expire after a number of days between 1 and 999, or you can specify that passwords never expire by setting the number of days to 0. If Maximum password age is between 1 and 999 days, the minimum password age must be less than the maximum password age. If Maximum password age is set to 0, Minimum password age can be any value between 0 and 998 days.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Default**: 60  
+
+  - **Required password type**  
+    Determines the type of PIN or password required.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Default**: Alphanumeric  
+
+  - **Minimum password length**  
+    The Minimum password length policy setting determines the least number of characters that can make up a password for a user account. You can set a value of between 1 and 14 characters, or you can establish that no password is required by setting the number of characters to 0.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Default**: 8  
+
+  - **Block simple passwords**  
+    Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords.  
+    [Learn more](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Default**: Yes  
+      *A setting of Yes prevents use of simple passwords.* 
 
   - **Prevent reuse of previous passwords**  
     Specifies how many passwords can be stored in the history that can’t be used. The value includes the user's current password. For example, with a setting of *1* the user can't reuse their current password when choosing a new password. A setting of *5* means that a user can't set their new password to their current password or any of their previous four passwords.  
@@ -1761,7 +1761,7 @@ For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for private networks.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Inbound connections blocked**  
+  - **Inbound connections blocked**  
     **Default**: Yes
 
   - **Outbound connections required**  
