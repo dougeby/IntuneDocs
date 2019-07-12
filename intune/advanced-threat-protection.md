@@ -82,7 +82,7 @@ When an end-user enrolls in Intune, you can push different settings to the devic
 
 Microsoft Defender ATP includes an onboarding configuration package that communicates with [Microsoft Defender ATP services](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan files, detect threats, and report the risk to Microsoft Defender ATP.
 
-When you onboard, Intune gets an auto-generated configuration package from Microsoft Defender ATP. When the profile is pushed or deployed to the device, this configuration package is also pushed to the device. This allows Microsoft Defender ATP to monitor the device for the threats.
+When you onboard, Intune gets an auto-generated configuration package from Microsoft Defender ATP. Intune pushes the configuration package to the device when it sends the configuration profile to the device, which allows Microsoft Defender ATP to monitor the device for the threats.
 
 Once you onboard a device using configuration package, then you don't need to do it again. You can also onboard devices using a [group policy or System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -116,10 +116,10 @@ The compliance policy determines an acceptable level of risk on a device.
 4. In **Platform**, select **Windows 10 and later**.
 5. In the **Microsoft Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
-   - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Microsoft Defender ATP users the value *Secure*.)
-   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Clear**: This level is the most secure. The device can't have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Microsoft Defender ATP users the value *Secure*.)
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels aren't compliant.
    - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium, or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 
