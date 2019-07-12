@@ -168,10 +168,6 @@ The server that hosts the Microsoft Intune Certificate Connector must have acces
 |52.174.26.23   | .manage.microsoft.com |
 |52.175.12.209  | portal.fei.msuc01.manage.microsoft.com <br> m.fei.msuc01.manage.microsoft.com <br> portal.fei.msuc02.manage.microsoft.com <br> m.fei.msuc02.manage.microsoft.com <br> portal.fei.msuc03.manage.microsoft.com <br> m.fei.msuc03.manage.microsoft.com <br> portal.fei.msuc05.manage.microsoft.com <br> m.fei.msuc05.manage.microsoft.com |
 
-You'll also need to provide the connector access to the IP addresses for the scale units that you use:  
-
-|**IP address** |**Domain**                      |
-|---------------|--------------------------------|
 |138.91.243.97 	|fef.msua01.manage.microsoft.com |
 |52.177.194.236	|fef.msua02.manage.microsoft.com |
 |23.96.112.28	|fef.msua04.manage.microsoft.com |
