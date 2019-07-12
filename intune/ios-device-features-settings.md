@@ -257,7 +257,7 @@ Select **OK** to save your changes.
 
 ## Web content filter settings
 
-These settings control browser URL access on iOS devices.
+These settings control browser URL access on supervised iOS devices.
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 
