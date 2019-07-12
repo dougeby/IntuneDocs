@@ -7,13 +7,14 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 07/12/2019
 
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
 ms.reviewer: joglocke
+
 
 # optional metadata
 
@@ -27,7 +28,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune
+# Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune  
 
 Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) and Microsoft Intune work together to help prevent security breaches, and help limit the impact of breaches within an organization.
 
@@ -58,20 +59,20 @@ To use Microsoft Defender ATP with Intune, be sure you have the following config
 ## Enable Microsoft Defender ATP in Intune
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Select **Device compliance** > **Windows Defender ATP** > **Open the Windows Defender Security Center**.
+2. Select **Device compliance** > **Microsoft Defender ATP**, and then below *Connector Settings*, select **Open the Microsoft Defender Security Center**.
 
-    ![Select to open the Microsoft Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
+    ![Select to open the Microsoft Defender Security Center](./media/advanced-threat-protection/atp-device-compliance-open-microsoft-defender.png)
 
 4. In **Microsoft Defender Security Center**:
     1. Select **Settings** > **Advanced features**.
     2. For **Microsoft Intune connection**, choose **On**:
 
-        ![Enable the connection to Intune](./media/atp-security-center-intune-toggle.png)
+        ![Enable the connection to Intune](./media/advanced-threat-protection/atp-security-center-intune-toggle.png)
 
     3. Select **Save preferences**.
 
-5. Go back to Intune, **Device compliance** > **Windows Defender ATP**. Set **Connect Windows devices version 10.0.15063 and above to Windows Defender ATP** to **On**.
-6. Select **Save**.
+4. Go back to Intune, **Device compliance** > **Microsoft Defender ATP**. Set **Connect Windows devices version 10.0.15063 and above to Microsoft Defender ATP** to **On**.
+5. Select **Save**.
 
 You typically do this task once. So if Microsoft Defender ATP is already enabled in your Intune resource, then you don't need to do it again.
 
@@ -81,7 +82,7 @@ When an end-user enrolls in Intune, you can push different settings to the devic
 
 Microsoft Defender ATP includes an onboarding configuration package that communicates with [Microsoft Defender ATP services](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) to scan files, detect threats, and report the risk to Microsoft Defender ATP.
 
-When you onboard, Intune gets an auto-generated configuration package from Microsoft Defender ATP. When the profile is pushed or deployed to the device, this configuration package is also pushed to the device. This allows Microsoft Defender ATP to monitor the device for the threats.
+When you onboard, Intune gets an auto-generated configuration package from Microsoft Defender ATP. Intune pushes the configuration package to the device when it sends the configuration profile to the device, which allows Microsoft Defender ATP to monitor the device for the threats.
 
 Once you onboard a device using configuration package, then you don't need to do it again. You can also onboard devices using a [group policy or System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
@@ -91,12 +92,12 @@ Once you onboard a device using configuration package, then you don't need to do
 2. Select **Device Configuration** > **Profiles** > **Create profile**.
 3. Enter a **Name** and **Description**.
 4. For **Platform**, select **Windows 10 and later**
-5. For **Profile type**, select **Windows Defender ATP (Windows 10 Desktop)**.
+5. For **Profile type**, select **Microsoft Defender ATP (Windows 10 Desktop)**.
 6. Configure the settings:
 
-  - **Windows Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
+  - **Microsoft Defender ATP client configuration package type**: Select **Onboard** to add the configuration package to the profile. Select **Offboard** to remove the configuration package from the profile.
   
-    > [!NOTE] 
+    > [!NOTE]  
     > If you've properly established a connection with Microsoft Defender ATP, Intune will automatically **Onboard** the configuration profile for you, and the **Microsoft Defender ATP client configuration package type** setting will not be available.
   
   - **Sample sharing for all files**: **Enable** allows samples to be collected, and shared with Microsoft Defender ATP. For example, if you see a suspicious file, you can submit it to Microsoft Defender ATP for deep analysis. **Not configured** doesn't share any samples to Microsoft Defender ATP.
@@ -115,10 +116,10 @@ The compliance policy determines an acceptable level of risk on a device.
 4. In **Platform**, select **Windows 10 and later**.
 5. In the **Microsoft Defender ATP** settings, set **Require the device to be at or under the machine risk score** to your preferred level. Threat level classifications are [determined by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
-   - **Clear**: This level is the most secure. The device cannot have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Microsoft Defender ATP users the value *Secure*.)
-   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels are not compliant.
+   - **Clear**: This level is the most secure. The device can't have any existing threats and still access company resources. If any threats are found, the device is evaluated as noncompliant. (Microsoft Defender ATP users the value *Secure*.)
+   - **Low**: The device is compliant if only low-level threats exist. Devices with medium or high threat levels aren't compliant.
    - **Medium**: The device is compliant if the threats found on the device are low or medium. If high-level threats are detected, the device is determined as noncompliant.
-   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium or low threat levels are considered compliant.
+   - **High**: This level is the least secure, and allows all threat levels. So devices that with high, medium, or low threat levels are considered compliant.
 
 6. Select **OK**, and **Create** to save your changes (and create the policy).
 
