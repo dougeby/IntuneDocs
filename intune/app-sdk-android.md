@@ -1486,48 +1486,48 @@ In addition to the app's ability to set the identity, a thread, or a context's i
 
 #### Examples
 
-  1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
+1. If an activity is launched from an `Intent` sent by another MAM app, the activity’s identity will be set based on the effective identity in the other app at the point the `Intent` was sent.
 
-  2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
+2. For services, the thread identity will be set similarly for the duration of an `onStart` or `onBind` call. Calls into the `Binder` returned from `onBind` will also temporarily set the thread identity.
 
-  3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
-
-
-  In addition, user interaction with an activity may cause an implicit identity switch.
-
-  **Example:** A user canceling out of an authorization prompt during `Resume` will result in an implicit switch to an empty identity.
-
-  The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. `MAMService` and `MAMContentProvider` expose the following method that subclasses may override:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  In the `MAMActivity` class, an additional parameter is present in the method:
-
-  ```java
-  public void onMAMIdentitySwitchRequired(final String identity,
-    final AppIdentitySwitchReason reason,
-    final AppIdentitySwitchResultCallback callback);
-  ```
-
-  * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
+3. Calls into a `ContentProvider` will similarly set the thread identity for their duration.
 
 
-  * The `AppIdentitySwitchResultCallback` is as follows:
+    In addition, user interaction with an activity may cause an implicit identity switch.
+
+    **Example:** A user canceling out of an authorization prompt during `Resume` will result in an implicit switch to an empty identity.
+
+    The app is given an opportunity to be made aware of these changes, and, if it must, the app can forbid them. `MAMService` and `MAMContentProvider` expose the following method that subclasses may override:
 
     ```java
-    public interface AppIdentitySwitchResultCallback {
-        /**
-         * @param result
-         *            whether the identity switch can proceed.
-         */
-        void reportIdentitySwitchResult(AppIdentitySwitchResult result);
-    }
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchResultCallback callback);
     ```
 
-    Where ```AppIdentitySwitchResult``` is either `SUCCESS` or `FAILURE`.
+    In the `MAMActivity` class, an additional parameter is present in the method:
+
+    ```java
+    public void onMAMIdentitySwitchRequired(final String identity,
+      final AppIdentitySwitchReason reason,
+      final AppIdentitySwitchResultCallback callback);
+    ```
+
+    * The `AppIdentitySwitchReason` captures the source of the implicit switch, and can accept the values `CREATE`, `RESUME_CANCELLED`, and `NEW_INTENT`.  The `RESUME_CANCELLED` reason is used when activity resume causes PIN, authentication, or other compliance UI to be displayed and the user attempts to cancel out of that UI, generally though use of the back button.
+
+
+    * The `AppIdentitySwitchResultCallback` is as follows:
+
+      ```java
+      public interface AppIdentitySwitchResultCallback {
+          /**
+            * @param result
+            *            whether the identity switch can proceed.
+            */
+          void reportIdentitySwitchResult(AppIdentitySwitchResult result);
+        }
+        ```
+
+      Where ```AppIdentitySwitchResult``` is either `SUCCESS` or `FAILURE`.
 
 The method `onMAMIdentitySwitchRequired` is called for all implicit identity changes except for those made through a Binder returned from `MAMService.onMAMBind`. The default implementations of `onMAMIdentitySwitchRequired` immediately call:
 
@@ -1689,14 +1689,14 @@ this identity (using `MAMActivity.switchMAMIdentity` or
 data from the file *must not* be displayed.
 
 An example flow might look something like the following:
-  * User selects a document to open in the app.
-  * During the open flow, prior to reading data from disk, the app confirms the identity that should be used to display the content
-    * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
-    * if(info) 
-        MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
-    * The app waits until a result is reported to callback
-    * If the reported result is a failure, the app does not display the document.
-  * The app opens and renders the file.
+* User selects a document to open in the app.
+* During the open flow, prior to reading data from disk, the app confirms the identity that should be used to display the content
+  * MAMFileProtectionInfo info = MAMFileProtectionManager.getProtectionInfo(docPath)
+  * if(info) 
+      MAMPolicyManager.setUIPolicyIdentity(activity, info.getIdentity(), callback)
+  * The app waits until a result is reported to callback
+  * If the reported result is a failure, the app does not display the document.
+* The app opens and renders the file.
   
 #### Single-Identity to Multi-Identity Transition
 If an app which previously released with single-identity Intune
@@ -1714,11 +1714,11 @@ they were encrypted).
 
 File identity tagging is sensitive to offline mode. The following points should be taken into account:
 
-  * If the Company Portal is not installed, files cannot be identity-tagged.
+* If the Company Portal is not installed, files cannot be identity-tagged.
 
-  * If the Company Portal is installed, but the app does not have Intune MAM policy, files cannot be reliably tagged with identity.
+* If the Company Portal is installed, but the app does not have Intune MAM policy, files cannot be reliably tagged with identity.
 
-  * When file identity tagging becomes available, all previously created files are treated as personal/unmanaged (belonging to the empty-string identity) unless the app was previously installed as a single-identity managed app in which case they are treated as belonging to the enrolled user.
+* When file identity tagging becomes available, all previously created files are treated as personal/unmanaged (belonging to the empty-string identity) unless the app was previously installed as a single-identity managed app in which case they are treated as belonging to the enrolled user.
 
 ### Directory Protection
 

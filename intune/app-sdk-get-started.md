@@ -94,13 +94,13 @@ You will need one of the following developer guides to help you integrate the In
 
 
 ## Enable your iOS or Android app for app based Conditional Access
- 
- In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based Conditional Access:
- 
- * App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
- 
- * The [AAD Client ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
- 
+
+In addition to enabling your app for app protection policy, the following is required for your app to properly function with Azure ActiveDirectory (AAD) app based Conditional Access:
+
+* App is built with the [Azure ActiveDirectory Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) and enabled for AAD broker authentication.
+
+* The [AAD Client ID](https://docs.microsoft.com/azure/app-service/app-service-mobile-how-to-configure-active-directory-authentication#configure-a-native-client-application) for your app must be unique across iOS and Android platforms.
+
 ## Configure Telemetry for your app
 
 Microsoft Intune collects data on usage statistics for your app.
@@ -123,11 +123,11 @@ The full version number identifies a specific release of the app. The number app
 
 The full version number has two components:
 
- - **Version**  
-   The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
+- **Version**  
+  The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
 
- - **Build Number**  
-    The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
+- **Build Number**  
+  The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
 
 ### Version and build number in Android and iOS
 
@@ -143,16 +143,16 @@ Build number|CFBundleVersion|PackageVersionCode |This number is used to indicate
 #### iOS
 
 - **CFBundleShortVersionString**  
-    Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.
+  Specifies the release version number of the bundle. This number identifies a released version of the app. The number is used by end users to reference the app.
 - **CFBundleVersion**  
-    The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
+  The build version of the bundle, which identifies an iteration of the bundle. The number may be identify a release or unreleased bundle. The number is used for app detection.
 
 #### Android
 
- - **PackageVersionName**  
-    The version number shown to users. This attribute can be set as a raw string or as a reference to a string resource. The string has no other purpose than to be displayed to users.
- - **PackageVersionCode**  
-    An internal version number. This number is used only to determine whether one version is more recent than another, with higher numbers indicating more recent versions. This is not the version 
+- **PackageVersionName**  
+  The version number shown to users. This attribute can be set as a raw string or as a reference to a string resource. The string has no other purpose than to be displayed to users.
+- **PackageVersionCode**  
+  An internal version number. This number is used only to determine whether one version is more recent than another, with higher numbers indicating more recent versions. This is not the version 
 
 ## Next steps after integration
 

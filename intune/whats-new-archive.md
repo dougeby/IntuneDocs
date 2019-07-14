@@ -259,8 +259,8 @@ New device certificate variables:
 ```
 
 > [!NOTE]
->  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
->  - When specifying device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device. 
+> - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
+> - When specifying device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device. 
 
 [Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile) lists the current variables when creating an SCEP configuration profile. 
 
@@ -939,8 +939,8 @@ With this update, [Windows Defender Credential Guard](https://docs.microsoft.com
 
 The following dependent technologies are automatically enabled when configuring Credential Guard: 
 
-  - **Enable Virtualization-based Security (VBS)**: Turns on virtualization-based security (VBS) at next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services, and requires Secure Boot.
-  - **Secure Boot with Direct Memory Access (DMA)**: Turns on VBS with Secure Boot and direct memory access. DMA protection require hardware support, and is only enabled on properly configured devices. 
+- **Enable Virtualization-based Security (VBS)**: Turns on virtualization-based security (VBS) at next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services, and requires Secure Boot.
+- **Secure Boot with Direct Memory Access (DMA)**: Turns on VBS with Secure Boot and direct memory access. DMA protection require hardware support, and is only enabled on properly configured devices. 
 
 #### Use a custom subject name on SCEP certificate <!-- 2064190 -->
 You can use the **OnPremisesSamAccountName** the common name in a custom subject on an SCEP certificate profile. For example, you can use `CN={OnPremisesSamAccountName})`.
@@ -1666,14 +1666,14 @@ Intune collects app inventory information from both personal and corporate-owned
 **App inventory**  
 Inventories from both corporate-owned iOS 11+ and personally owned devices are sent to your MTD service provider. Data in the app inventory includes:
 
- - App ID
- - App Version
- - App Short Version
- - App Name
- - App Bundle Size
- - App Dynamic Size
- - App is validated or not
- - App is managed or not
+- App ID
+- App Version
+- App Short Version
+- App Name
+- App Bundle Size
+- App Dynamic Size
+- App is validated or not
+- App is managed or not
 
 ### Migrate hybrid MDM users and devices to Intune standalone <!-- 1463747 wnready -->
 New processes and tools are now available for moving users and their devices from hybrid MDM to Intune in the Azure portal, allowing you to do the following tasks:
@@ -1895,11 +1895,11 @@ The full version number identifies a specific release of the app. The number app
 
 The full version number has two components:
 
- - **Version**  
-   The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
+- **Version**  
+  The version number is the human-readable release number of the app. This is used by end users to identify different releases of the app.
 
- - **Build Number**  
-    The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
+- **Build Number**  
+  The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
 
 Learn more about version numbers and developing line-of-business apps in [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md#line-of-business-app-version-numbers).
 

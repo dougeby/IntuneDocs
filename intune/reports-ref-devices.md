@@ -30,14 +30,14 @@ ms.collection: M365-identity-device-management
 
 The **Devices** category contains entities for mobile devices that track information such as:
 
-  - Device type
-  - Device enrollment and registration status
-  - Device ownership
-  - Device management state
-  - Device membership to Azure AD status
-  - Enrollment status
-  - Historic information about the device
-  - Inventory of apps on the device
+- Device type
+- Device enrollment and registration status
+- Device ownership
+- Device management state
+- Device membership to Azure AD status
+- Enrollment status
+- Historic information about the device
+- Inventory of apps on the device
 
 ## DeviceTypes
 
