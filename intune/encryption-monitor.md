@@ -79,22 +79,22 @@ This pane provides the following details:
 
   The following are examples of the status details Intune can report:  
 
-   - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
-   - The encryption method of the OS volume doesn't match the BitLocker policy.  
-   - The policy BitLocker requires a TPM protector to protect the OS volume, but a TPM isn't used.  
-   - The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.  
-   - The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.  
-   - The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.  
-   - The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.  
-   - The OS volume is unprotected.  
-   - Recovery key backup failed.  
-   - A fixed drive is unprotected.  
-   - The encryption method of the fixed drive doesn't match the BitLocker policy.  
-   - To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.  
-   - Windows Recovery Environment (WinRE) isn't configured.  
-   - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable  drive.  
-   - The TPM isn't ready for BitLocker.  
-   - The network isn't available, which is required for recovery key backup.  
+  - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
+  - The encryption method of the OS volume doesn't match the BitLocker policy.  
+  - The policy BitLocker requires a TPM protector to protect the OS volume, but a TPM isn't used.  
+  - The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.  
+  - The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.  
+  - The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.  
+  - The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.  
+  - The OS volume is unprotected.  
+  - Recovery key backup failed.  
+  - A fixed drive is unprotected.  
+  - The encryption method of the fixed drive doesn't match the BitLocker policy.  
+  - To encrypt drives, the BitLocker policy requires either the user to sign in as an Administrator or, if the device is joined to Azure AD, the AllowStandardUserEncryption policy must be set to 1.  
+  - Windows Recovery Environment (WinRE) isn't configured.  
+  - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable  drive.  
+  - The TPM isn't ready for BitLocker.  
+  - The network isn't available, which is required for recovery key backup.  
 
 ## BitLocker recovery keys
 Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 

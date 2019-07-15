@@ -57,11 +57,23 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
+## Week of July 8, 2019
+
+### New Office, Windows, and OneDrive settings in Windows 10 administrative templates <!-- 3510695 -->
+
+You can create Administrative templates in Intune that mimic on-premises group policy management (**Device management** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Administrative template** for profile type).
+
+This update includes more Office, Windows, and OneDrive settings you can add to your templates. With these new settings, you can now configure over 2500 settings that are 100% cloud-based.
+
+To learn more about this feature, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
+
+Applies to: Windows 10 and later
+
 ## Week of July 1, 2019 
 
 ### App management
 
-AAD and APP on Android Enterprise devices <!-- 3574267 -->
+#### AAD and APP on Android Enterprise devices <!-- 3574267 -->
 When onboarding fully managed Android Enterprise devices, you can enable Azure Active Directory (AAD) registration before Intune onboarding is completed. In addition, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 ## Week of June 24, 2019 
@@ -136,7 +148,7 @@ Applies to: iOS
 ### Device enrollment
 
 #### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
-When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user.
+This feature has been delayed and will be released in an upcoming sprint.    
 
 #### Windows Autopilot support for Hybrid Azure AD Join <!-- 4809146-->
 Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
@@ -151,7 +163,7 @@ You can now see the security patch level for Android devices. To do so, choose *
  The patch level is listed in the **Operating System** section.
 
 #### Assign scope tags to all managed devices in a security group <!-- 3173810 -->
-You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md). (In a future update, the current flow to assign scope tags to devices will be made read only.)
+You can now assign scope tags to a security group and all devices in the security group will also be associated with those scope tags. All devices in these groups will also be assigned the scope tag. The scope tags set with this feature will overwrite the scope tags set with the current device scope tags flow. For more information, see [Use RBAC and scope tags for distributed IT](scope-tags.md).
 
 ### Device security
 
@@ -159,12 +171,12 @@ You can now assign scope tags to a security group and all devices in the securit
 When you create or edit [Security Baseline profiles](security-baselines.md#create-the-profile), you can specify keywords in the new *Search* bar to filter the available groups of settings to those that contain your search criteria. 
 
 #### The Security Baselines feature is now generally available  <!-- 3785395 -->
-The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the features is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
+The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the feature is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
 
 #### The MDM Security Baseline template is now generally available   <!-- 3794072, 4217151,  3534649 -->
 The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for Spring 2019 Update (19H1)**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](security-baselines.md#available-security-baselines).  
 
-In addition to being a new template, the *MDM Security Baseline for Spring 2019 Update (19H1)* template includes the two settings that we recently announced in our In Development topic:  
+In addition to being a new template, the *MDM Security Baseline for Spring 2019 Update (19H1)* template includes the two settings that we recently announced in our In Development article:  
 - Above Lock: Voice activate apps from a locked screen  
 - DeviceGuard: Use virtualization-based security (VBS) at the next reboot of devices.  
 
@@ -174,7 +186,7 @@ The *MDM Security Baseline for Spring 2019 Update (19H1)* also includes the addi
 Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions your profiles use, and when the latest release of a specific security baseline was.  For more information, see **Security Baselines**.
 
 #### The Use security keys for sign-in setting has moved  <!-- 4501151 -->
-The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information see [Identity protection](identity-protection-windows-settings.md).
+The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information, see [Identity protection](identity-protection-windows-settings.md).
 
 ### Role-based access control
 
@@ -204,7 +216,7 @@ We’ve added new features to the Microsoft Intune app (preview) for Android. Us
 ### App management
 
 #### New sample apps showing Intune SDK integration available on GitHub <!-- 2653471 -->
-The msintuneappsdk GitHub account has added new sample applications for iOS (Swift), Android, Xamarin.iOS, Xamarin Forms and Xamarin.Android. These apps are meant to supplement our existing documentation and provide demonstrations of how to integrate the Intune APP SDK into your own mobile apps. If you are an app developer that needs additional Intune SDK guidance, see the following linked samples:
+The msintuneappsdk GitHub account has added new sample applications for iOS (Swift), Android, Xamarin.iOS, Xamarin Forms, and Xamarin.Android. These apps are meant to supplement our existing documentation and provide demonstrations of how to integrate the Intune APP SDK into your own mobile apps. If you are an app developer that needs additional Intune SDK guidance, see the following linked samples:
 - [Chatr](https://github.com/msintuneappsdk/Chatr-Sample-Intune-iOS-App) - A native iOS (Swift) instant messaging app that uses the Azure Active Directory Authentication Library (ADAL) for brokered authentication.
 - [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App) - A native Android todo list app that uses ADAL for brokered authentication.
 - [Taskr](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) - A Xamarin.Android todo list app that uses ADAL for brokered authentication, this repository also has the Xamarin.Forms app.
@@ -257,7 +269,7 @@ You can now configure where your end users can get an updated version of a line-
 You can configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md) and [Win32 app management](apps-win32-app-management.md).
 
 #### Android Enterprise app management <!-- 4459905 -->
-To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following:
+To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following apps:
 
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - Used for Android Enterprise fully managed scenarios.
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - Helps you sign-in to your accounts if you use two-factor verification.
@@ -294,7 +306,7 @@ To see these settings, go to [built-in app settings for iOS](device-restrictions
 Applies to: iOS 12.2 and newer
 
 #### New classroom app device restriction settings for macOS devices <!-- 4097905   --> 
-You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update include new classroom app settings, the option to block screenshots, and the option to disable the iCloud Photo Library.
+You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update includes new classroom app settings, the option to block screenshots, and the option to disable the iCloud Photo Library.
 
 To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
 
@@ -317,7 +329,7 @@ The Enrollment Status Page is now out of preview. For more information, see [Set
 
 
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
-The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information see, [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
+The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information, see [Create an Autopilot enrollment profile](https://docs.microsoft.com/intune/enrollment-autopilot#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
 #### Enable Autopilot Reset for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
@@ -734,11 +746,11 @@ You can use Windows 10 devices in kiosk mode to run one app, or many apps. This 
 - Add the Microsoft Edge Browser or Kiosk Browser to run as apps on the kiosk device (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Kiosk** for profile type).
 - New features and settings are available to allow or restrict (**Device configuration** > **Profiles** > **New profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type), including:
 
-  - Microsoft Edge Browser:​
+- Microsoft Edge Browser:​
   - Use Microsoft Edge kiosk mode​
   - Refresh browser after idle time​
 ​
- - Favorites and search:​
+- Favorites and search:​
   - Allow changes to search engine
 
 For a list of these settings, see:

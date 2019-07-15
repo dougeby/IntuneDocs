@@ -30,13 +30,13 @@ ms.collection: M365-identity-device-management
 
 The **Mobile App Management** category contains entities for mobile apps such as:
 
-  - Apps
-  - Instances
-  - Check-in status
-  - Health status
-  - Policy status
-  - Enrollment status
-  - Platform types
+- Apps
+- Instances
+- Check-in status
+- Health status
+- Policy status
+- Enrollment status
+- Platform types
 
 ## mamApplications
 
