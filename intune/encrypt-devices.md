@@ -56,8 +56,8 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 2. Set the following options:  
 
-   1. Platform: macOS  
-   2. Profile type: Endpoint protection  
+   - Platform: macOS  
+   - Profile type: Endpoint protection  
 
 3. Select **Settings** > **FileVault**.
 

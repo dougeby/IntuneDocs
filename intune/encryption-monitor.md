@@ -86,6 +86,7 @@ When you select a device from the Encryption report, Intune displays the **Devic
   - macOS:
     - Profile type = *Endpoint protection*  
     - Settings > FileVault > FileVault = *Enable*
+
   - Windows 10:
     - Profile type = *Endpoint protection*  
     - Settings > Windows Encryption > Encrypt devices = *Required*  
