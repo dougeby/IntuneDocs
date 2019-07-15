@@ -127,9 +127,8 @@ You can change the settings for an enrollment restriction by following the steps
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions** > choose the restriction that you want to change > **Properties**.
-4. Choose **Edit** next to the settings you want to change.
-    ![Screen cap for editing restrictions](media/enrollment-restrictions-set/platform-allow-block.png)
-5. On the **Edit** page, make the changes you want and proceed to the **Review + save** page, then choose **Save**.
+4. Choose **Edit** next to the settings that you want to change.
+5. On the **Edit** page, make the changes that you want and proceed to the **Review + save** page, then choose **Save**.
 
 
 ## Blocking personal Android devices
