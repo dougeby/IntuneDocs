@@ -30,11 +30,11 @@ ms.collection: M365-identity-device-management
 
 The **Application** category contains entities for mobile devices that track information such as:
 
-  - Versions of an app
-  - Installation source of an app
-  - Type of developers who created an app
-  - Managed software types for an app, for example **sidecar** or **desktop**
-  - Volume Purchasing Program (VPP) state of an app
+- Versions of an app
+- Installation source of an app
+- Type of developers who created an app
+- Managed software types for an app, for example **sidecar** or **desktop**
+- Volume Purchasing Program (VPP) state of an app
 
 ## AppRevision
 

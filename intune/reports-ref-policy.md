@@ -29,10 +29,10 @@ ms.collection: M365-identity-device-management
 
 The **Policy** category contains entities for mobile devices that track information such as:
 
-  - Inventory of device configuration profiles, app configuration profiles, and compliance policies  
-  - Number of devices in the succeeded, pending, failed, or error state per day  
-  - Number of users in the succeeded, pending, failed, or error state per day  
-  - Cumulative number of devices in the succeeded, pending, failed, or error state  
+- Inventory of device configuration profiles, app configuration profiles, and compliance policies  
+- Number of devices in the succeeded, pending, failed, or error state per day  
+- Number of users in the succeeded, pending, failed, or error state per day  
+- Cumulative number of devices in the succeeded, pending, failed, or error state  
 
 ## Policy
 

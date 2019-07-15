@@ -122,8 +122,8 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   For Bit locker removable drive policy, configure the following setting:
 
-    - **Require encryption for write access**  
-      **Default**: Yes  
+  - **Require encryption for write access**  
+    **Default**: Yes  
   
 
 ## Browser  
@@ -233,17 +233,17 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-  
-    - **Remove matching hardware devices**   
+  When *Block hardware device installation* is selected, the following settings are available.
+
+  - **Remove matching hardware devices**   
     This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes
-  
-    - **Hardware device identifiers that are blocked**  
-       This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
-      
-      **Default**: Yes  
+    
+    **Default**: Yes
+
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by device identifiers* is set to *Block hardware device installation*.
+    
+    **Default**: Yes  
   
 - **Hardware device installation by setup classes**  
   This policy setting allows you to specify a list of device setup class globally unique identifiers (GUIDs) for device drivers that Windows is prevented from installing. This policy setting takes precedence over any other policy setting that allows Windows to install a device. If you enable this policy setting, Windows is prevented from installing or updating device drivers whose device setup class GUIDs appear in the list you create. If you enable this policy setting on a remote desktop server, the policy setting affects redirection of the specified devices from a remote desktop client to the remote desktop server. If you disable or don't configure this policy setting, Windows can install and update devices as allowed or prevented by other policy settings.  
@@ -251,16 +251,16 @@ For more information, see [Policy CSP - DeviceInstallation](https://docs.microso
   
   **Default**: Block hardware device installation  
 
-    When *Block hardware device installation* is selected, the following settings are available.
-    - **Remove matching hardware devices**    
+  When *Block hardware device installation* is selected, the following settings are available.
+  - **Remove matching hardware devices**    
     This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.  
 
-      **Default**: *No default configuration*  
-  
-    - **Hardware device identifiers that are blocked**  
-      This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
-      
-      **Default**: *No default configuration*  
+    **Default**: *No default configuration*  
+
+  - **Hardware device identifiers that are blocked**  
+    This setting is available only when *Hardware device installation by setup classes* is set to *Block hardware device installation*.
+    
+    **Default**: *No default configuration*  
 
 ## Device Lock  
 For more information, see [Policy CSP - DeviceLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) in the Windows documentation.  
@@ -1194,12 +1194,12 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   
 - **Administrator elevation prompt behavior**  
   This policy setting controls the behavior of the elevation prompt for administrators. The options are: 
-    - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
-    - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
-    - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
-    - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
-    - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
-    - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+  - *Elevate without prompting* - Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. Note: Use this option only in the most constrained environments. 
+  - *Prompt for credentials on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege. 
+  - *Prompt for consent on the secure desktop* - When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
+  - *Prompt for credentials* - When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege. 
+  - *Prompt for consent* - When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.  
+  - *Prompt for consent for non-Windows binaries* - When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege. 
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067215)   
   
@@ -1216,11 +1216,11 @@ For more information, see [Policy CSP - LocalPoliciesSecurityOptions](https://do
   **Default**: Require NTLM V2 128 encryption
   
 - **Smart card removal behavior**  
-    This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
-     - *No action*. 
-     - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
-     - *Force Logoff* - the user is automatically logged off when the smart card is removed.
-     - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
+  This security setting determines what happens when the smart card for a logged-on user is removed from the smart card reader. The options are:
+  - *No action*. 
+  - *Lock Workstation* - The workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
+  - *Force Logoff* - the user is automatically logged off when the smart card is removed.
+  - *Disconnect Remote Desktop session* - Removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
   
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067331) 
     
