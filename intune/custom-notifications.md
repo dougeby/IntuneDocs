@@ -91,4 +91,4 @@ On iOS devices, if the Company Portal app is open when the notification is recei
 The notification remains until the user dismisses it.  
 
 ## Next steps  
-
+[Manage devices](device-management.md)
