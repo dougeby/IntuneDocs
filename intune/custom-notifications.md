@@ -42,19 +42,24 @@ Intune custom notifications aren’t supported by Windows devices, and users of 
 
 ## Considerations for using custom notifications  
 
-- Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications.  The Company Portal will prompt users to permit notifications.
+**Device configuration**:  
+- Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications. The Company Portal will prompt users to permit notifications.  
 - On Android, Google Play Services is a required dependency.  
-- Intune and the Company Portal app can’t guarantee delivery of a custom notification. Custom notifications might show up after several hours of delay, if at all, so they shouldn't be used for urgent messages.  
-- Custom notifications can be visible on lock screens on both iOS and Android devices depending on device settings.  
-- On Android devices, other apps might have access to the data in your custom notifications. Don't use them for sensitive communications.  
-- Custom notification messages from Intune appear on devices as standard push notifications. If the Company Portal app is open on an iOS device when it receives the notification, the notification displays in the app instead of being a push notification.  
-- Intune attempts delivery for up to one hour after the notification is sent.  
-- As a push notification, there's no guarantee of delivery.  
+
+**Creating notifications**:  
+- To create a message, your account must have the ? permission.
+- Custom notifications are limited to 50-character titles and 500-character messages.  
 - Intune doesn’t save sent messages. To resend a message, you must recreate that message.  
 - You can only send up to 25 messages per hour. This restriction is at the tenant level.  
 - Each notification can directly target up to 25 groups. Nested groups don't count against this total.  
 - Groups can include users or devices, but messages are sent only to users, and are sent to each iOS or Android device that the user has registered.  
-- Custom notifications are limited to 50-character titles and 500-character messages.  
+
+**Delivery**:  
+- Intune attempts delivery for up to one hour after a notification is sent.  
+- Intune and the Company Portal app can’t guarantee delivery of a custom notification. Custom notifications might show up after several hours of delay, if at all, so they shouldn't be used for urgent messages.  
+- Custom notification messages from Intune appear on devices as standard push notifications. If the Company Portal app is open on an iOS device when it receives the notification, the notification displays in the app instead of being a push notification.  
+- Custom notifications can be visible on lock screens on both iOS and Android devices depending on device settings.  
+- On Android devices, other apps might have access to the data in your custom notifications. Don't use them for sensitive communications.  
 - Users of a device that was recently unenrolled, or users that were removed from a group, might still receive a custom notification that is subsequently sent to that group.  Likewise, if you add a user to a group after a custom notification is sent to the group, it's possible for the newly added use to receive that previously sent notification message.  
 
 ## Send a custom notification  
