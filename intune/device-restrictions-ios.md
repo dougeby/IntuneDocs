@@ -268,7 +268,7 @@ To add apps to these lists, you can:
   You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
 
 > [!IMPORTANT]  
-> For devices running iOS 13.0 and later, use ***iTunes*** instead of ***apps*** for the apple.com portion of the URL. Use of *apps* will fail. We are working on a fix for this in a future release. When fixed, you'll be able to use either *iTunes* or *apps* in the URL.  
+> For devices running iOS 12.2 and 12.3.1 use ***iTunes*** instead of ***apps*** for the apple.com portion of the URL. Use of *apps* will fail. We are working on a fix for this in a future release. When fixed, you'll be able to use either *iTunes* or *apps* in the URL.  
 >  
 > Example for MS Word:  
 > - With the following URL, the app is *visible* or *hidden* on the device (works): 
