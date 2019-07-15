@@ -49,11 +49,11 @@ Enroll your personal Android device to get access to company email, apps, and ot
 
     ![Screenshot of the What's next screen](./media/android-wp-04-1908.png)
 
-5. On the next screen, read the terms for creating a work profile. Then tap **ACCEPT & CONTINUE**. The appearance of the screen might vary based on your device's Android version. 
+5. The next screen shows the Google terms for creating a work profile. Read the terms and then tap **ACCEPT & CONTINUE**. The appearance of this screen will vary based on your device's Android version. 
 
     ![Screenshot of Google's work profile terms](./media/android-wp-05-1908.png)  
 
-    The app will begin setting up your work profile.
+    Your work profile will begin setup. 
 
      ![Screenshot of "Setting up work profile" screen.](./media/android-wp-05a-1908.png) 
 
