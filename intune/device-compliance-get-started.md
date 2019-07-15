@@ -133,8 +133,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 **Quarantined**: The device operating system doesn't enforce compliance. For example, Android and Android Enterprise devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
 
-  - If a Conditional Access policy applies to the user, the device is blocked.
-  - The Company Portal app notifies the user about any compliance problems.
+- If a Conditional Access policy applies to the user, the device is blocked.
+- The Company Portal app notifies the user about any compliance problems.
 
 ## Azure classic portal vs. Azure portal
 
