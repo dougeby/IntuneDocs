@@ -121,7 +121,7 @@ Intune validates the XML format. However, Intune does not check that the XML pro
 
 To learn more about XML property lists:
 
-  - Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
+- Refer to [Understand XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) in the iOS Developer Library.
 
 ### Example format for an app configuration XML file
 

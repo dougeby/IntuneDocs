@@ -36,9 +36,9 @@ ms.collection: M365-identity-device-management
 As an Intune administrator, you can manage the following Android devices:
 - Android devices, including Samsung Knox Standard devices and [Zebra devices](android-zebra-mx-overview.md).
 - Android Enterprise devices, including:
-    - **Android Enterprise work profile devices**: Personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
-    - **Android Enterprise dedicated devices**: Corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
-    - **Android Enterprise fully managed devices**: Corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
+  - **Android Enterprise work profile devices**: Personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
+  - **Android Enterprise dedicated devices**: Corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
+  - **Android Enterprise fully managed devices**: Corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
 
 ## Prerequisites
 
