@@ -71,15 +71,15 @@ Depending on the settings you choose, not all values may be configurable.
   - **PPTP**
 
   When you choose a VPN connection type, you may also be asked for the following settings:  
-    - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
-      - Users sign into their devices
-      - The network on the device changes
-      - The screen on the device turns back on after being turned off 
+  - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
+    - Users sign into their devices
+    - The network on the device changes
+    - The screen on the device turns back on after being turned off 
 
-    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
-    - **Remember credentials at each logon**: Choose to cache the authentication credentials.
-    - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
-    - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
+  - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
+  - **Remember credentials at each logon**: Choose to cache the authentication credentials.
+  - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
+  - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
 
 #### Pulse Secure example
 

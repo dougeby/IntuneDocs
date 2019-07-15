@@ -107,11 +107,11 @@ Microsoft Intune collects data on usage statistics for your app.
 
 * **Intune App SDK for iOS**: The SDK logs SDK telemetry data on usage events by default. This data is sent to Microsoft Intune.
 
-    * If you choose not to send SDK telemetry data to Microsoft Intune from your app, you must disable telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the IntuneMAMSettings dictionary.
+  * If you choose not to send SDK telemetry data to Microsoft Intune from your app, you must disable telemetry transmission by setting the property `MAMTelemetryDisabled` to "YES" in the IntuneMAMSettings dictionary.
 
 * **Intune App SDK for Android**: The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs telemetry data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personally identifiable information (PII). 
 
-    * If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+  * If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## Line-of-business app version numbers
 
@@ -161,11 +161,11 @@ After you finish the necessary steps to integrate your iOS or Android app with t
 
 * **Microsoft Intune test account**: To test your Intune-managed app against Intune app protection features, you will need a Microsoft Intune account.
 
-    * If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step. The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.
+  * If you are an ISV enabling your iOS or Android store apps for Intune app protection policy, you will receive a promo code after you finish the registration with Microsoft Intune, as outlined in the registration step. The promo code will let you sign up for a Microsoft Intune trial for one year of extended use.
 
-    * If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
+  * If you are developing a line-of-business app that will not be shipped to the store, you are expected to have access to Microsoft Intune through your organization. You can also sign up for a one-month free trial in [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0).
 
-    * If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Microsoft 365 admin center website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/intune/licenses-assign).
+  * If you are testing your app on a mobile device using an end user account, ensure that you have given that account an Intune license by in the Microsoft 365 admin center website after logging in with an admin account, see [Assign Microsoft Intune license](https://docs.microsoft.com/intune/licenses-assign).
 
 * **Intune app protection policies**: To test your app against all the Intune app protection policies, you should know what the expected behavior is for each policy setting. See the descriptions for [iOS app protection policies](app-protection-policy-settings-ios.md) and [Android app protection policies](app-protection-policy-settings-android.md). If your app has integrated the Intune SDK, but is not listed in the Azure portal as a targeted app yet, you can target it with a policy by selecting the "+ More Apps" option and providing the bundle ID (iOS) or package name (Android) in the text box.
 

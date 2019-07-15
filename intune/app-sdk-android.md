@@ -168,11 +168,11 @@ Test compilation not affected. Configuration may be provided to list
 * [External dependencies to include](#usage-of-includeexternallibraries) 
 * Specific classes to exclude from processing
 * Variants to exclude from processing. These can refer to either a
-   complete variant name or a single flavor. For example
-     * if your app has build types `debug` and `release` with flavors
-       {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
-     * `savory` to exclude all variants with the savory flavor or
-       `savoryVanillaRelease` to exclude only that exact variant.
+  complete variant name or a single flavor. For example
+  * if your app has build types `debug` and `release` with flavors
+    {`savory`, `sweet`} and {`vanilla`, `chocolate`} you could specify
+  * `savory` to exclude all variants with the savory flavor or
+    `savoryVanillaRelease` to exclude only that exact variant.
 
 #### Example partial build.gradle
 
@@ -806,15 +806,15 @@ To configure your app and enable proper authentication, add the following to the
 
 * **NonBrokerRedirectURI** is the AAD redirect URI to use in broker-less cases. If none is specified, a default value of `urn:ietf:wg:oauth:2.0:oob` is used. This default is suitable for most apps.
 
-    * The NonBrokerRedirectURI is only used when SkipBroker is "true".
+  * The NonBrokerRedirectURI is only used when SkipBroker is "true".
 
 * **SkipBroker** is used to override the default ADAL SSO participation behavior. SkipBroker should only be specified for apps that specify a ClientID **and** do not support brokered authentication/device-wide SSO. In this case it should be set to "true". Most apps should not set the SkipBroker parameter.
 
-    * A ClientID **must** be specified in the manifest to specify a SkipBroker value.
+  * A ClientID **must** be specified in the manifest to specify a SkipBroker value.
 
-    * When a ClientID is specified, the default value is "false".
+  * When a ClientID is specified, the default value is "false".
 
-    * When SkipBroker is "true," the NonBrokerRedirectURI will be used. Apps that do not integrate ADAL (and therefore have no ClientID) will also default to "true".
+  * When SkipBroker is "true," the NonBrokerRedirectURI will be used. Apps that do not integrate ADAL (and therefore have no ClientID) will also default to "true".
 
 ### Common ADAL configurations
 

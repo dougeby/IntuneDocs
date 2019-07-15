@@ -1532,33 +1532,33 @@ When administrators want to update the resource account on a device, they must p
 The following are the settings administrators can configure:
 
 - **Resource account**
-   - **Active Directory user**
+  - **Active Directory user**
 
-      Domainname\username or User Principle Name (UPN): user@domainname.com
+    Domainname\username or User Principle Name (UPN): user@domainname.com
 
-   - **Password**
+  - **Password**
 
 - **Optional resource account parameters** (must be set using the specified resource account)
 
-   - **Password rotation period**
+  - **Password rotation period**
 
-     Ensures the account password is updated automatically by the Surface Hub every week for security reasons. To configure any parameters after this has been enabled, the account in Azure Active Directory must have the password reset first.
+    Ensures the account password is updated automatically by the Surface Hub every week for security reasons. To configure any parameters after this has been enabled, the account in Azure Active Directory must have the password reset first.
 
-   - **SIP (Session Initiation Protocol) address**
+  - **SIP (Session Initiation Protocol) address**
 
-     Only used when autodiscovery fails.
+    Only used when autodiscovery fails.
 
-   - **Email**
+  - **Email**
 
-     Email address of the device/resource account.
+    Email address of the device/resource account.
 
-   - **Exchange server**
+  - **Exchange server**
 
-     Only required when autodiscovery fails.
+    Only required when autodiscovery fails.
 
-   - **Calendar sync**
+  - **Calendar sync**
 
-     Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
+    Specifies whether calendar sync and other Exchange server services are enabled. For example: meeting sync.
 
 #### Install Office apps on macOS devices <!-- 1494311 -->
 You will now be able to install Office apps on macOS devices. This new app type will allow you to install Word, Excel, PowerPoint, Outlook, and OneNote. These apps also come with the Microsoft AutoUpdate (MAU), to help keep your apps secure and up-to-date.
