@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 07/18/2019  
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -35,47 +35,50 @@ Enroll your personal Android device to get access to company email, apps, and ot
 
 ## Create work profile and enroll device
 
-1. On the Company Portal for Android welcome screen, tap **Sign in**. Sign in with your work or school account. If you haven't installed the free app, download and install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Sign in to the Company Portal for Android app with your work or school account. If you haven't installed the free app, install it from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).  
 
-    ![Android Company Portal app Welcome screen](./media/and-enroll-0-welcome-screen.png)
+2. On the **Company Access Setup** screen, tap **CONTINUE**.  
 
-2. On the **Company Access Setup** screen, tap **CONTINUE**.
+    ![Screenshot of Company Access Setup screen](./media/android-wp-02-1908.png)  
 
-    ![Company Access Setup screen](/intune/media/android_cp_enroll_01_1709_new.png)  
+3. Read the list of what your company support can and can't see on your device. Then tap **CONTINUE**.   
 
-3. Read the list of what your company support can and can't see on your device. Then tap **CONTINUE**.  
+    ![Screenshot of privacy screen](./media/android-wp-03-1908.png)  
 
-    ![What your company support can and can't see on your device](/intune/media/android_cp_enroll_02_after_1710.png)  
+4. On the **What's next?** screen, read about what will happen during enrollment. Then tap **NEXT**.  
 
-5. On the **What's next?** screen, read about what happens during enrollment. Then tap **NEXT**.
+    ![Screenshot of the What's next screen](./media/android-wp-04-1908.png)
 
-    ![What's next screen](/intune/media/android_work_cp_enroll_03_after_1710.png)
+5. On the next screen, read the terms for creating a work profile. Then tap **ACCEPT & CONTINUE**. The appearance of the screen might vary based on your device's Android version. 
 
-6. Review the Google screen that describes what your company support can do when you create a work profile, and then tap **OK**.
+    ![Screenshot of Google's work profile terms](./media/android-wp-05-1908.png)  
 
-    ![Review Google's information about work profiles](./media/andr-afw-google-screen-what-it-can-do.png)
+    The app will begin setting up your work profile.
 
-    You'll see a couple of messages that say "Setting up your work profile" and "Enrolling your device."
+     ![Screenshot of "Setting up work profile" screen.](./media/android-wp-05a-1908.png) 
 
-8. On the **You're Halfway There!** screen, wait a few seconds until the Company Portal app opens.
+     Depending on your Android version, you might see an additional screen that indicates you're halfway through setup. If you see this screen, wait a few moments until you're redirected and signed in to the Company Portal app.  
 
-    ![Tap the Company Portal app with the badge](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
+     ![Screenshot of "You're halfway there" screen with redirection message.](./media/android-wp-05b-1908.png) 
 
-9. On the Android Company Portal **Welcome** screen, tap **Sign in**, and then sign in with the same work or school account that you used to sign in earlier in this process.
+6. On the **Company Access Setup** screen, check that your work profile is created. Then tap **CONTINUE**.  
 
-10. On the **Company Access Setup** screen, note that your Work Profile Setup is now complete, and then tap **CONTINUE**.
+    ![Screenshot of Company Access Setup showing work profile is created.](./media/android-wp-06-1908.png)  
 
-    ![Company Access Setup shows work profile setup is complete](./media/andr-afw-work-profile-now-set-up.png)
+7. Check that your work profile is active. Then tap **CONTINUE**. 
 
-    You'll briefly see the message "Enrolling your device."
+    ![Screenshot of Company Access Setup showing work profile is active.](./media/android-wp-07-1908.png)  
 
-11. When the **You're all set!** screen shows that everything has been set up correctly, tap **DONE**.
+8. Your organization might require that you update your device settings, such as setting a password. After you’ve done that, tap **CONTINUE**.  
 
-    ![Company Access Setup shows work profile and enrollment are complete](/intune/media/android_work_cp_enroll_04_after_1710.png)
+    ![Screenshot of Update device settings screen.](./media/android-wp-08-1908.png) 
 
-    You can now get company apps from the Play Store for Work.
+9. When you see the **You're all set!** screen, tap **DONE**.  
 
-    ![Play Store for Work apps page](./media/andr-afw-tap-work-play-store-icon.png)
+    ![Company Access Setup shows work profile and enrollment are complete](./media/android-wp-09-1908.png)  
+
+
+You can now install company apps on your device. Go to the managed Google Play store to find and install these apps. 
 
 ## Next steps  
 
