@@ -26,7 +26,7 @@ ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ---
 
-# Integrate Windows Hello for Business with Microsoft Intune
+# Integrate Windows Hello for Business with Microsoft Intune  
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -105,7 +105,7 @@ Use this article to create a default Windows Hello for Business policy that targ
    - **Use enhanced anti-spoofing, when available**:  
      Configures whether the anti-spoofing features of Windows Hello are used on devices that support it (for example, detecting a photograph of a face instead of a real face).  
 
-     If this is set to **Yes**, Windows requires all users to use anti-spoofing for facial features when that is supported.
+     When set to **Yes**, Windows requires all users to use anti-spoofing for facial features when that is supported.
 
    - **Allow phone sign-in**:  
      If this option is set to **Yes**, users can use a remote passport to serve as a portable companion device for desktop computer authentication. The desktop computer must be Azure Active Directory joined, and the companion device must be configured with a Windows Hello for Business PIN.
