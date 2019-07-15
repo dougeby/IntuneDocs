@@ -164,12 +164,12 @@ You can monitor and view a detailed list of devices you can view in Device Statu
 1. Select **Device configuration** > **eSIM cellular profiles** > Select an existing subscription.
 2. Select **Device Status**. Intune shows additional details about the device:
 
-  - **Device Name**: Name of the device that is targeted
-  - **User**: User of the enrolled device
-  - **ICCID**: Unique code provided by the mobile operate within the activation code installed on the device
-  - **Activation Status**: Intune delivery and installation status of the activation code on the device
-  - **Cellular status**: State provided by the mobile operator. Follow up with mobile operator to troubleshoot.
-  - **Last Check-In**: Date the device last communicated with Intune
+    - **Device Name**: Name of the device that is targeted
+    - **User**: User of the enrolled device
+    - **ICCID**: Unique code provided by the mobile operate within the activation code installed on the device
+    - **Activation Status**: Intune delivery and installation status of the activation code on the device
+    - **Cellular status**: State provided by the mobile operator. Follow up with mobile operator to troubleshoot.
+    - **Last Check-In**: Date the device last communicated with Intune
 
 #### Monitor eSIM profile details on the actual device
 
