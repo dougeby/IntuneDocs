@@ -34,7 +34,7 @@ Configure disk encryption as part of a device configuration profile for endpoint
 - macOS: FileVault2   
 - Windows 10 and later: BitLocker  
 
-Intune also provides a built-in [encryption report](encryption-monitor.md#encryption-report) that presents details about the encryption status of devices, across all your managed devices.  
+Intune also provides a built-in [encryption report](encryption-monitor.md) that presents details about the encryption status of devices, across all your managed devices.  
 
 ## FileVault encryption for macOS  
 
@@ -75,7 +75,7 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 ###  Manage FileVault  
 
-After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md#encryption-report).  
+After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md).  
 
 ## BitLocker encryption for Windows 10  
 
@@ -103,18 +103,18 @@ Configure BitLocker when you create a [device configuration profile](device-prof
 
 ### Manage BitLocker  
 
-After Intune encrypts a Windows 10 device with BitLocker, you can view and retrieve BitLocker recovery keys when you view the Intune [encryption report](encryption-monitor.md#encryption-report).  
+After Intune encrypts a Windows 10 device with BitLocker, you can view and retrieve BitLocker recovery keys when you view the Intune [encryption report](encryption-monitor.md).  
 
 ## Next steps  
 
-Create [a device compliance](compliance-policy-create-windows policy.md)  
+Create [a device compliance](compliance-policy-create-windows.md) policy  
 
 Use the encryption report, to manage:  
 - [BitLocker recovery keys](encryption-monitor.md#bitlocker-recovery-keys)
 - [FileVault recovery keys](encryption-monitor.md#filevault-recovery-keys)
 
-Review the encryption settings you can configure with Intune for:   
-- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)
-- [FileVault](endpoint-protection-macos.md#filevault)
+Review the encryption settings you can configure with Intune for:  
+- [BitLocker](endpoint-protection-windows-10.md#windows-encryption)  
+- [FileVault](endpoint-protection-macos.md#filevault)  
  
  
