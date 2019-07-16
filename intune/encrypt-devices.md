@@ -31,16 +31,16 @@ ms.custom: intune-azure
 Use Intune to manage a devices built-in disk or drive encryption to protect data on your devices.  
 
 Configure disk encryption as part of a device configuration profile for endpoint protection. The following platforms and encryption technologies are supported by Intune:  
-- macOS: FileVault2   
+- macOS: FileVault   
 - Windows 10 and later: BitLocker  
 
 Intune also provides a built-in [encryption report](encryption-monitor.md) that presents details about the encryption status of devices, across all your managed devices.  
 
 ## FileVault encryption for macOS  
 
-Use Intune to configure FileVault2 disk encryption on devices that run macOS. Then, use the Intune encryption report to view encryption details for those devices and to manage recovery keys for FileVault encrypted devices.  
+Use Intune to configure FileVault disk encryption on devices that run macOS. Then, use the Intune encryption report to view encryption details for those devices and to manage recovery keys for FileVault encrypted devices.  
 
-FileVault2 is a whole-disk encryption program that is included with macOS. You can use Intune to configure FileVault2 on devices that run **macOS 10.13 or later**.  
+FileVault is a whole-disk encryption program that is included with macOS. You can use Intune to configure FileVault on devices that run **macOS 10.13 or later**.  
 
 To configure FileVault, create a [device configuration profile](device-profile-create.md) for endpoint protection for the macOS platform. FileVault settings are one of the available settings categories for macOS endpoint protection.  
 
@@ -61,7 +61,7 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 3. Select **Settings** > **FileVault**.
 
-4. For *FileVault*, select **Enable**.   
+4. For *FileVault*, select **Enable**.  
 
 5. For *Recovery key type*, only **Personal key** is supported.  
 
