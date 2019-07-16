@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/16/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -95,9 +95,9 @@ The following certificates and templates are used when you use SCEP.
 
 |Object    |Details    |
 |----------|-----------|
-|**SCEP Certificate Template**         |Template you’ll configure on your issuing CA used to fullfil the devices SCEP requests |
-|**Client authentication certificate** |Requested from your issuing CA or public CA;<br /> You install this certificate on the computer that hosts the NDES service and it's used by the Intune Certificate Connector.<br /> If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
-|**Server authentication certificate** |Web Server certificate requested from your issuing CA or public CA;<br /> You install and bind this SSL certificate in IIS on the computer that hosts NDES.<br />If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
+|**SCEP Certificate Template**         |Template you’ll configure on your issuing CA used to fullfil the devices SCEP requests. |
+|**Client authentication certificate** |Requested from your issuing CA or public CA.<br /> You install this certificate on the computer that hosts the NDES service and it's used by the Intune Certificate Connector.<br /> If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
+|**Server authentication certificate** |Web Server certificate requested from your issuing CA or public CA.<br /> You install and bind this SSL certificate in IIS on the computer that hosts NDES.<br />If the certificate has the *client* and *server authentication* key usages set (**Enhanced Key Usages**), then you can use the same certificate for server and client authentication. |
 |**Trusted Root CA certificate**       |To use a SCEP certificate profile, devices must trust your Trusted Root Certification Authority (CA). Use a *trusted certificate profile* in Intune to provision the Trusted Root CA certificate to users and devices. <br/><br/> **-**  Use a single Trusted Root CA certificate per operating system platform and associate that certificate with each trusted certificate profile you create. <br /><br /> **-**  You can use additional Trusted Root CA certificates when needed. For example, you might use additional certificates to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points. <br/><br/> For information about the trusted certificate profile, see [Export the trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. |
 
 ## Configure the certification authority
@@ -157,16 +157,16 @@ The following sections require knowledge of Windows Server 2012 R2 or later, and
 
 3. Save the certificate template.  
 
-### Create client certificate template
+### Create the client certificate template
 
-Intune Certificate Connector requires a certificate with the *Client Authentication* Enhanced Key Usage and Subject name equal to the FQDN of the machine where the connector is installed. A template with the following properties is required:
+The Intune Certificate Connector requires a certificate with the *Client Authentication* Enhanced Key Usage and Subject name equal to the FQDN of the machine where the connector is installed. A template with the following properties is required:
 
 - **Extensions** > **Application Policies** must contain **Client Authentication**
 - **Subject name** > **Supply in the request**.
 
 If you already have a template that includes these properties, you can reuse it, otherwise create a new template by either duplicating an existing one or creating a custom template.
 
-### Create server certificate template
+### Create the server certificate template
 
 Communications between managed devices and IIS on the NDES server use HTTPS, which requires use of a certificate. You can use the **Web Server** certificate template to issue this certificate. Or, if you prefer to have a dedicated template, the following properties are required:
 
@@ -180,7 +180,7 @@ Communications between managed devices and IIS on the NDES server use HTTPS, whi
 
 For Intune to be able to revoke certificates that are no longer required, you'll need to grant permissions in the Certificate Authority. 
 
-On the Intune Certificate Connector, you can either use the NDES server **system account** or a specific account such as the **NDES service account**
+On the Intune Certificate Connector, you can either use the NDES server **system account** or a specific account such as the **NDES service account**.
 
 1. On your Certificate Authority console, Right-click the CA name and select **Properties**.
 2. In **Security** tab, click **Add**.
@@ -277,7 +277,7 @@ The following procedures can help you configure the Network Device Enrollment Se
       - **Maximum URL length (Bytes)** = 65534  
       - **Maximum query string (Bytes)** = 65534  
    3. Select **OK** to save this configuration and close IIS manager.  
-   4. Validate this configuration by viewing the following g registry key to confirm it has the indicated values:  
+   4. Validate this configuration by viewing the following registry key to confirm it has the indicated values:  
 
       `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\HTTP\Parameters`    
 
@@ -294,7 +294,7 @@ The following procedures can help you configure the Network Device Enrollment Se
   
 ### Install and bind certificates on the server that hosts NDES  
 > [!TIP]  
-> In the following procedure, you can use a single certificate for both *server authentication* and *client authentication* when that certificate is configured to meet the criteria of both uses. The criteria for each use are described in step 1, and step 3.  
+> In the following procedure, you can use a single certificate for both *server authentication* and *client authentication* when that certificate is configured to meet the criteria of both uses. The criteria for each use are described in steps 1 and 3 of the following procedure.  
 
 1. Request a **server authentication** certificate from your internal CA or public CA, and then install the certificate on the server.  
 
