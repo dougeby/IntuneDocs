@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -387,6 +387,10 @@ The following is an example JSON script with all the available configuration key
     ]
 }
 ```
+
+## Android Device Policy on Android Enterprise dedicated devices
+
+You can access the Android Device Policy from the Managed Home Screen app's debug screen. To access the Managed Home Screen's debug screen, you must click the **back** button until the debug screen is displayed (click the **back** button 15 times). The Managed Home Screen app is only used by devices enrolled in Intune as Andriod Enterprise (AE) dedicated devices and running in multi-app kiosk mode. 
 
 ## Next steps
 

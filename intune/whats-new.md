@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of July 15, 2019 
+
+### App management
+
+#### Android Device Policy on Android Enterprise dedicated devices <!-- 4918136 -->
+You can access the Android Device Policy from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Andriod Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
 
 ## Week of July 8, 2019
 
