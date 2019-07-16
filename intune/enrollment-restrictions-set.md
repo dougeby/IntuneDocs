@@ -44,16 +44,16 @@ The specific enrollment restrictions that you can create include:
 
 - Maximum number of enrolled devices.
 - Device platforms that can enroll:
-  - Android
-  - Android work profile
+  - Android device administrator
+  - Android Enterprise work profile
   - iOS
   - macOS
   - Windows
   - Windows Mobile
-- Platform operating system version for iOS, Android, Android work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
+- Platform operating system version for iOS, Android device administrator, Android Enterprise work profile, Windows, and Windows Mobile. (Only Windows 10 versions can be used. Leave this blank if Windows 8.1 is allowed.)
   - Minimum version.
   - Maximum version.
-- Restrict personally owned devices (iOS, Android, Android work profile, macOS, Windows, and Windows Mobile only).
+- Restrict personally owned devices (iOS, Android device administrator, Android Enterprise work profile, macOS, Windows, and Windows Mobile only).
 
 ## Default restrictions
 
@@ -71,7 +71,7 @@ Default restrictions are automatically provided for both device type and device 
     ![Screen cap for choosing platform settings](media/enrollment-restrictions-set/choose-platform-settings.png)
 7. Under **Versions**, choose the minimum and maximum versions that you want the allowable platforms to support. Version restrictions only apply to devices enrolled with the Company Portal.
      Supported version formats include:
-    - Android work profile support major.minor.rev.build.
+    - Android device administrator and Enterprise work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
     - Windows supports major.minor.rev.build for Windows 10 only.
     > [!Note]
@@ -127,15 +127,14 @@ You can change the settings for an enrollment restriction by following the steps
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for **Intune**, and then choose **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions** > choose the restriction that you want to change > **Properties**.
-4. Choose **Edit** next to the settings you want to change.
-    ![Screen cap for editing restrictions](media/enrollment-restrictions-set/platform-allow-block.png)
-5. On the **Edit** page, make the changes you want and proceed to the **Review + save** page, then choose **Save**.
+4. Choose **Edit** next to the settings that you want to change.
+5. On the **Edit** page, make the changes that you want and proceed to the **Review + save** page, then choose **Save**.
 
 
 ## Blocking personal Android devices
-- If you block personally owned Android devices from enrollment, personally owned Android work profile devices can still enroll.
-- By default, your Android work profile devices settings are the same as your settings for your Android devices. After you change your Android work profile settings, that's no longer the case.
-- If you block personal Android work profile enrollment, only corporate Android devices can enroll as Android work profile.
+- If you block personally owned Android devices from enrollment, personally owned Android Enterprise work profile devices can still enroll.
+- By default, your Android Enterprise work profile devices settings are the same as your settings for your Android devices. After you change your Android Enterprise work profile settings, that's no longer the case.
+- If you block personal Android Enterprise work profile enrollment, only corporate Android devices can enroll as Android work profile.
 
 ## Blocking personal Windows devices
 If you block personally owned Windows devices from enrollment, Intune checks to make sure that each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.
