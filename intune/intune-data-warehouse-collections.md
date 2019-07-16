@@ -26,7 +26,7 @@ ms.custom: intune
 ms.collection: M365-identity-device-management
 ---
 
-#  Intune Data Warehouse Collections
+# Intune Data Warehouse Collections
 
 The following Intune Data Warehouse collections provides the properties, descriptions, and examples for v1.0 collections of the Data Warehouse API entities. 
 

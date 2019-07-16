@@ -56,11 +56,11 @@ This article shows you how to create an email profile in Microsoft Intune. It al
 5. In the **Profile** type drop-down list, choose **Email**.
 6. The settings you can configure may be different for each platform. For specific settings, choose your platform:
 
-	- [Android Samsung Knox Standard settings](email-settings-android.md)
-	- [Android Enterprise settings](email-settings-android-enterprise.md)
-	- [iOS settings](email-settings-ios.md)
-	- [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
-	- [Windows 10 settings](email-settings-windows-10.md)
+    - [Android Samsung Knox Standard settings](email-settings-android.md)
+    - [Android Enterprise settings](email-settings-android-enterprise.md)
+    - [iOS settings](email-settings-ios.md)
+    - [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
+    - [Windows 10 settings](email-settings-windows-10.md)
 
 After you enter your settings, and create the profile, your profile is shown in the profiles list. Next, [assign this profile to some groups](device-profile-assign.md).
 

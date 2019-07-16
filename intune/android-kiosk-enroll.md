@@ -90,8 +90,8 @@ You can replace or remove tokens and QR codes.
 
 - **Replace token**: You can generate a new token/QR code when one nears expiration by using Replace Token.
 - **Revoke token**: You can immediately expire the token/QR code. From this point on, the token/QR code is no longer usable. You might use this option if you:
-    - accidentally share the token/QR code with an unauthorized party
-    - complete all enrollments and no longer need the token/QR code
+  - accidentally share the token/QR code with an unauthorized party
+  - complete all enrollments and no longer need the token/QR code
 
 Replacing or revoking a token/QR code won't have any effect on devices that are already enrolled.
 
@@ -112,8 +112,8 @@ Only apps that have Assignment type [set to Required](apps-deploy.md#assign-an-a
 Apps are automatically updated on managed devices when the app developer publishes an update to Google Play.
 
 To remove an app from Android Enterprise dedicated devices, you can do either of the following:
--   Delete the Required app deployment.
--   Create an uninstall deployment for the app.
+- Delete the Required app deployment.
+- Create an uninstall deployment for the app.
 
 ## Next steps
 - [Deploy Android apps](apps-deploy.md)

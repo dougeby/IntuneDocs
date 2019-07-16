@@ -44,12 +44,12 @@ Before you can access your work, your company needs you to install the Mobile Th
 
 Mobile Threat Defense is a way for companies to make sure that your devices are kept safe from apps that could be trying to steal corporate information. Adding this protection requires extra information to be reported about the apps on your devices to the Mobile Threat Defense service that your company is using. Your company can't see the data in your personal apps. All of the apps on your device are added to [what your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) when they use a Mobile Threat Defense service. These are the parts of the app that your company can see:
 
-*	App name
+* App name
 * App ID: the unique name that identifies the app in the App Store
-*	App version and short version number: the specific release numbers for an app
+* App version and short version number: the specific release numbers for an app
 * App bundle and dynamic size: the amount of space an app uses on your device
 * App validity: whether an app is approved for use
-*	App management state: whether an app is managed by your company or if it is a personal app
+* App management state: whether an app is managed by your company or if it is a personal app
 
 ## If the installation doesn't work
 

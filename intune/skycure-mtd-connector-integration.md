@@ -36,7 +36,7 @@ Complete the following steps to integrate the Symantec Endpoint Protection Mobil
 
 ### Azure AD account used to integrate Intune and SEP Mobile
 
--   Make sure you have the Azure AD account properly configured in the [Symantec Endpoint Protection Mobile Management console](https://aad.skycure.com) before starting the SEP Mobile Basic setup process.
+- Make sure you have the Azure AD account properly configured in the [Symantec Endpoint Protection Mobile Management console](https://aad.skycure.com) before starting the SEP Mobile Basic setup process.
 - The Azure AD account must be a global administrator account to perform the integration.
 ### Network Setup
 
@@ -46,40 +46,40 @@ You can make sure your network is properly configured for integration with SEP M
 
 SEP Mobile supports two modes of integration with Intune:
 
--   **Read-only integration (Basic setup):** Only inventories devices from Azure Active Directory and populates them in the Symantec Endpoint Protection Mobile Management console.
+- **Read-only integration (Basic setup):** Only inventories devices from Azure Active Directory and populates them in the Symantec Endpoint Protection Mobile Management console.
 <br>
-    -   If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Symantec Endpoint Protection Mobile Management console, the integration is read-only and therefore will never change a device's state (compliant or noncompliant) in Intune.
+  - If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Symantec Endpoint Protection Mobile Management console, the integration is read-only and therefore will never change a device's state (compliant or noncompliant) in Intune.
 <br></br>
--   **Full integration:** Allows SEP Mobile to report devices on risk and security incident details to Intune, which creates a bi-directional communication between both cloud services.
+- **Full integration:** Allows SEP Mobile to report devices on risk and security incident details to Intune, which creates a bi-directional communication between both cloud services.
 
 ### How are the SEP Mobile apps used with Azure AD and Intune?
 
--   **iOS app:** Allows end-users to sign in to Azure AD using an iOS app.
+- **iOS app:** Allows end-users to sign in to Azure AD using an iOS app.
 
--   **Android app:** Allows end-users to sign in to Azure AD using an Android app.
+- **Android app:** Allows end-users to sign in to Azure AD using an Android app.
 
--   **Management app:** This is the SEP Mobile Azure AD multi-tenant app which enables service-to-service communication with Intune.
+- **Management app:** This is the SEP Mobile Azure AD multi-tenant app which enables service-to-service communication with Intune.
 
 ## To set up the read-only integration between Intune and SEP Mobile
 
 > [!IMPORTANT]
 > The SEP Mobile admin credentials must consist of an e-mail account that belongs to a valid user in the Azure Active Directory, otherwise the login will fail. SEP Mobile uses Azure Active Directory to authenticate its admin using Single Sign On (SSO).
 
-1.  Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
+1. Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
 
-2.  Enter your **SEP Mobile admin credentials**, and then choose **Continue**.
+2. Enter your **SEP Mobile admin credentials**, and then choose **Continue**.
 
-3.  Go to **Settings**, and under **Intune Integration**, choose **Basic Setup**.
+3. Go to **Settings**, and under **Intune Integration**, choose **Basic Setup**.
 
-4.  Next to **iOS App**, choose **Add to Active Directory**.
+4. Next to **iOS App**, choose **Add to Active Directory**.
 
     ![Image of the Symantec Endpoint Protection Mobile Management Console](./media/symantec-portal-basic-add.png)
 
-5.  When the login page opens, enter your Intune credentials, and then choose **Accept**.
+5. When the login page opens, enter your Intune credentials, and then choose **Accept**.
 
     ![Image of the iOS app Intune login prompt](./media/symantec-portal-basic-accept.png)
 
-6.  After the app is added to Azure AD, you'll see an indication that the app was added successfully.
+6. After the app is added to Azure AD, you'll see an indication that the app was added successfully.
 
     ![Image of the iOS app completion screen](./media/symantec-portal-basic-added.png)
 
@@ -89,9 +89,9 @@ SEP Mobile supports two modes of integration with Intune:
 
 You need to add an Azure AD security group that contains all devices running SEP Mobile.
 
--  Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
+- Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
 
-    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
+    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 
 SEP Mobile syncs the devices running its Mobile Threat Defense service with the Azure AD security groups.
 
@@ -122,35 +122,35 @@ SEP Mobile syncs the devices running its Mobile Threat Defense service with the 
 
 ### Set up the integration between Symantec Endpoint Protection Mobile and Intune
 
-1.  Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
+1. Go to [Symantec Endpoint Protection Mobile Management Console](https://aad.skycure.com).
 
-2.  Enter your **SEP Mobile admin credentials**, then choose **Continue**.
+2. Enter your **SEP Mobile admin credentials**, then choose **Continue**.
 
-3.  Go to the **Settings** > **Integrations** > **Intune** > **EMM Integration Selection** section.
+3. Go to the **Settings** > **Integrations** > **Intune** > **EMM Integration Selection** section.
 
 4. In the **Directory ID** box, paste the Directory ID you copied from Azure Active Directory in the previous section and save the settings.
 
-    ![Image showing Directory ID in the SEP Mobile portal](./media/symantec-portal-directory-ID.png)	 
+    ![Image showing Directory ID in the SEP Mobile portal](./media/symantec-portal-directory-ID.png)
 
 5. Go to the **Settings** > **Integrations** > **Intune** > **Basic Setup** section.
 
 6. Next to **iOS App**, choose the **Add to Active Directory** button.
 
-    ![Image showing adding the iOS app to Active Directory](./media/symantec-portal-basic-add.png)	 
+    ![Image showing adding the iOS app to Active Directory](./media/symantec-portal-basic-add.png)
 
-7.	Sign in using the Azure Active Directory credentials for the Office 365 account that manages the directory.
+7. Sign in using the Azure Active Directory credentials for the Office 365 account that manages the directory.
 
-8.	Choose the **Accept** button to add the SEP Mobile iOS app to Azure Active Directory.
+8. Choose the **Accept** button to add the SEP Mobile iOS app to Azure Active Directory.
 
-    ![Image showing the accept button](./media/symantec-portal-basic-accept.png)	 
+    ![Image showing the accept button](./media/symantec-portal-basic-accept.png)
 
-9.	Repeat the same process for the **Android app** and the **Management App**.
+9. Repeat the same process for the **Android app** and the **Management App**.
 
-10.	Select all user groups that need to run the SEP Mobile apps, for example, the security group you created earlier.
+10. Select all user groups that need to run the SEP Mobile apps, for example, the security group you created earlier.
 
-    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)	 
+    ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 
-11.  SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
+11. SEP Mobile syncs the devices in the selected groups and starts reporting information to Intune. You can view this data in the Full Integration section. Go to the **Settings** > **Integrations** > **Intune** > **Full Integration** section.
 
      ![Image showing SEP Mobile full integration completed](media/symantec-portal-basic-status.PNG)
 ## Next steps

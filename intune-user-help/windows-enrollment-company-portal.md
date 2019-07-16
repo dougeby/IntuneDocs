@@ -64,17 +64,17 @@ Enrollment steps differ for different versions of Windows 10 devices. The follow
 
 4. If your version is  
 
-    *  __1607 or later__: Enroll your device by way of the [**Settings** > **Account** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 or later__: Enroll your device by way of the [**Settings** > **Account** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 or earlier__: Enroll your device by way of the [**Settings** > **Account** > **Your accounts** route](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### Windows 10 Mobile devices		
+### Windows 10 Mobile devices
 
-1.	Go to __All apps__ and select the __Settings__ app.	 
-2.	Select __System__ > __About__.		
-3.	Under __Device information__, find the __Version__.  
+1. Go to __All apps__ and select the __Settings__ app.
+2. Select __System__ > __About__.
+3. Under __Device information__, find the __Version__.  
 4. If your version is  
 
-    *  __1607 or later__: Enroll your device using the [**Settings** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 or later__: Enroll your device using the [**Settings** > **Access work or school** route](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 or earlier__: Enroll your device using the [**Settings** > **Accounts** route](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## Enroll non Windows 10 devices  

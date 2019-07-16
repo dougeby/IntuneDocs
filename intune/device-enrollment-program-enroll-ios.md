@@ -87,7 +87,7 @@ You use the Apple DEP portal to create a DEP token. You also use the DEP portal 
 ### Step 2. Use your key to download a token from Apple.
 
 1. Choose **Create a token for Apple's Device Enrollment Program** to open Apple's Deployment Program portal, and sign in with your company Apple ID. You can use this Apple ID to renew your DEP token.
-2.  In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**.
+2. In Apple's [Deployment Programs portal](https://deploy.apple.com), choose **Get Started** for **Device Enrollment Program**.
 
 3. On the **Manage Servers** page, choose **Add MDM Server**.
 4. Enter the **MDM Server Name**, and then choose **Next**. The server name is for your reference to identify the mobile device management (MDM) server. It isn't the name or URL of the Microsoft Intune server.
@@ -201,9 +201,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Department Name</strong> | Appears when users tap <strong>About Configuration</strong> during activation. |
     |    <strong>Department Phone</strong>     | Appears when the user clicks the <strong>Need Help</strong> button during activation. |
 
-  You can choose to hide Setup Assistant screens on the device during user setup.
-  - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
-  - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
+    You can choose to hide Setup Assistant screens on the device during user setup.
+    - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
+    - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
 
 
     | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |

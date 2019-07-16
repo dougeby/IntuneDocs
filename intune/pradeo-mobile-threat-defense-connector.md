@@ -26,7 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
 ms.collection: M365-identity-device-management
---- 
+---
 
 # Pradeo Mobile Threat Defense connector with Intune
 
@@ -48,11 +48,11 @@ Here are some common scenarios.
 
 When malicious apps such as malware are detected on devices, you can block devices from the following actions until the threat is resolved:
 
--   Connecting to corporate e-mail
+- Connecting to corporate e-mail
 
--   Syncing corporate files with the OneDrive for Work app
+- Syncing corporate files with the OneDrive for Work app
 
--   Accessing company apps
+- Accessing company apps
 
 **Block when malicious apps are detected:**
 
@@ -88,19 +88,19 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 ## Supported platforms
 
--   **Android 4.0.3 and later**
+- **Android 4.0.3 and later**
 
--   **iOS 7 and later**
+- **iOS 7 and later**
 
 ## Prerequisites
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune subscription
+- Microsoft Intune subscription
 
--   Pradeo Security for Mobile Threat Defense subscription
+- Pradeo Security for Mobile Threat Defense subscription
 
-    -   For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
+  - For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## Next steps
 

@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -123,5 +123,5 @@ You now have an interactive filter that can be used to toggle between company ow
 
 ## Next steps
 
- - Learn more about [creating and managing relationships](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in the Power BI Desktop in the Power BI documentation.
- - Consult the [Intune Data Warehouse Model](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Learn more about [creating and managing relationships](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in the Power BI Desktop in the Power BI documentation.
+- Consult the [Intune Data Warehouse Model](https://docs.microsoft.com/intune/reports-ref-data-model).

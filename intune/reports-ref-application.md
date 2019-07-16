@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,11 +30,11 @@ ms.collection: M365-identity-device-management
 
 The **Application** category contains entities for mobile devices that track information such as:
 
-  -  Versions of an app
-  -  Installation source of an app
-  -  Type of developers who created an app
-  -  Managed software types for an app, for example **sidecar** or **desktop**
-  -  Volume Purchasing Program (VPP) state of an app
+- Versions of an app
+- Installation source of an app
+- Type of developers who created an app
+- Managed software types for an app, for example **sidecar** or **desktop**
+- Volume Purchasing Program (VPP) state of an app
 
 ## AppRevision
 

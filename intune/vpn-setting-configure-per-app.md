@@ -154,16 +154,16 @@ With your per-app VPN set-up and associated with your app, verify the connection
 
 ### Before you attempt to connect
 
- - Make sure you deploy all of the above mentioned policies to the same group. Otherwise, the per-app VPN experience won't work.
- - If you're using the Pulse Secure VPN app or a custom VPN client app, you can choose to use app-layer or packet-layer tunneling. Set the **ProviderType** value to **app-proxy** for app-layer tunneling, or **packet-tunnel** for packet-layer tunneling. Check your VPN provider's documentation to make sure you're using the right value.
+- Make sure you deploy all of the above mentioned policies to the same group. Otherwise, the per-app VPN experience won't work.
+- If you're using the Pulse Secure VPN app or a custom VPN client app, you can choose to use app-layer or packet-layer tunneling. Set the **ProviderType** value to **app-proxy** for app-layer tunneling, or **packet-tunnel** for packet-layer tunneling. Check your VPN provider's documentation to make sure you're using the right value.
 
 ### Connect using the per-app VPN
 
 Verify the zero-touch experience by connecting without having to select the VPN or type your credentials. The zero-touch experience means:
 
- - The device doesn't ask you to trust the VPN server. That is, the user doesn't see the **Dynamic Trust** dialog box.
- - The user doesn't have to type credentials.
- - The user's device is connected to the VPN when the user opens one of the associated apps.
+- The device doesn't ask you to trust the VPN server. That is, the user doesn't see the **Dynamic Trust** dialog box.
+- The user doesn't have to type credentials.
+- The user's device is connected to the VPN when the user opens one of the associated apps.
 
 <!-- ## Troubleshooting the per-app VPN
 

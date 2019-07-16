@@ -36,28 +36,28 @@ Enabling Conditional Access features with Intune, such as blocking email for une
 
 Here is a typical approach to enhancing a migration campaign with Conditional Access:
 
-1.  Set Conditional Access rules to be enforced for all users but specifically exclude the users who need to migrate from the old MDM provider. You can create an Azure AD user group with all Conditional Access excluded users.
+1. Set Conditional Access rules to be enforced for all users but specifically exclude the users who need to migrate from the old MDM provider. You can create an Azure AD user group with all Conditional Access excluded users.
 
-2.  As users migrate, remove them from the Conditional Access exclusion group.
+2. As users migrate, remove them from the Conditional Access exclusion group.
 
-3.  After migration completes, configure all Conditional Access policies to block by default unless Intune allows access.
+3. After migration completes, configure all Conditional Access policies to block by default unless Intune allows access.
 
 ### Advantages
 
--   Provides access control for new user accounts or user account who were not managed by the previous solution.
+- Provides access control for new user accounts or user account who were not managed by the previous solution.
 
--   Provides grace period for users of previous solution to migration.
+- Provides grace period for users of previous solution to migration.
 
--   Minimizes loss of productivity
+- Minimizes loss of productivity
 
 ### Disadvantages
 
--   Users of previous solution could potentially access resources using unmanaged devices until Conditional Access is enabled for those users.
+- Users of previous solution could potentially access resources using unmanaged devices until Conditional Access is enabled for those users.
 
 
 This is one approach among many. You may choose a simpler process that defers all Conditional Access until after every phase has been instructed to enroll, or a stricter process that enforces Conditional Access from the very beginning and requires full compliance for all access.
 
--   Learn more about [Conditional Access](conditional-access.md).
+- Learn more about [Conditional Access](conditional-access.md).
 
 ## Task list for Conditional Access
 
@@ -69,15 +69,15 @@ This is one approach among many. You may choose a simpler process that defers al
 
 Choose one of the following options:
 
--   [Configure Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Configure Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Install on-premises Exchange connector with Intune](exchange-connector-install.md)
+- [Install on-premises Exchange connector with Intune](exchange-connector-install.md)
 
--   [Set up app-based Conditional Access policies for Exchange Online](app-based-conditional-access-intune-create.md)
+- [Set up app-based Conditional Access policies for Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Set up app-based Conditional Access policies for SharePoint Online](app-based-conditional-access-intune-create.md)
+- [Set up app-based Conditional Access policies for SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Block apps that do not use modern authentication (ADAL)](app-modern-authentication-block.md)
+- [Block apps that do not use modern authentication (ADAL)](app-modern-authentication-block.md)
 
 ## Next steps
 

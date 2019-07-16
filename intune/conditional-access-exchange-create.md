@@ -44,9 +44,9 @@ Before you can configure Conditional Access, verify the following configurations
 
 - You have installed and use the [Exchange Active Sync on-premises Exchange connector](exchange-connector-install.md), which connects Intune to on-premises Exchange.
 
-	>[!IMPORTANT]  
+    >[!IMPORTANT]  
     >Intune supports multiple on-premises Exchange connectors per subscription.  However, each on-premises Exchange connector is specific to a single Intune tenant and cannot be used with any other tenant.  If you have more than one on-premises Exchange organization, you can set up a separate connector for each Exchange organization.
-	
+
 - The connector for an on-premises Exchange organization can install on any machine as long as that machine can communicate with the Exchange server.
 
 - The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer due to the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
@@ -54,16 +54,16 @@ Before you can configure Conditional Access, verify the following configurations
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
 - When Conditional Access policies are configured and targeted to a user, before a user can connect to their email, the **device** they use must be:
-	- Either **enrolled** with Intune or is a domain joined PC.
-	- **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
-<br></br>
+  - Either **enrolled** with Intune or is a domain joined PC.
+  - **Registered in Azure Active Directory**. Additionally, the client Exchange ActiveSync ID must be registered with Azure Active Directory.
+
 - Azure AD Device Registration Service (DRS) is activated automatically for Intune and Office 365 customers. Customers who have already deployed the ADFS Device Registration Service don't see registered devices in their on-premises Active Directory. **This does not apply to Windows PCs and Windows Phone devices**.
 
 - **Compliant** with device compliance policies deployed to that device.
 
 - If the device doesn't meet Conditional Access settings, the user is presented with one of the following messages when they sign in:
-	- If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
-	- If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
+  - If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
+  - If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
 ### Support for mobile devices
 

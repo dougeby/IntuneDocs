@@ -62,7 +62,7 @@ This article shows you how to create a custom profile for iOS devices. It also p
     - **Name**: Enter a name for the profile, such as `ios custom profile`.
     - **Description**: Enter a description for the profile.
     - **Platform**: Choose **iOS**.
-	- **Profile type**: Choose **Custom**.
+    - **Profile type**: Choose **Custom**.
 
 4. In **Custom configuration**, enter the following settings:
 

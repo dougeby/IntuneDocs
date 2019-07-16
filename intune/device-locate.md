@@ -49,7 +49,7 @@ This feature is not supported for the following systems:
 3. Select **Devices**, and then select **All devices**.
 4. From the list of devices you manage, choose an iOS device, and choose **...More**. Then choose the **Locate device** remote action.
 5. After the device is located, its location is shown in **Locate device**.
-	![Screenshot of Locate device using Intune in Azure](./media/locate-device.png)
+    ![Screenshot of Locate device using Intune in Azure](./media/locate-device.png)
 
 >[!NOTE]
 >For privacy reasons, the distance you can zoom into the map is limited to a 300 meter radius.

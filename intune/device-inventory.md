@@ -42,13 +42,13 @@ This article shows you how to view all your devices, and their properties in the
 
    - **Overview** shows the device name, and lists some key properties of the device, like whether it's a bring-your-own-device (BYOD) device, check in time, and more. You can do the following on the device:
       - [Retire](devices-wipe.md#retire)
-	    - [Wipe](devices-wipe.md#wipe)
-	    - [Remote lock](device-remote-lock.md)
-	    - [Synchronize device](device-sync.md)
-	    - [Reset passcode](device-passcode-reset.md)
-	    - [Restart](device-restart.md) (Windows only)
-	    - [Fresh Start](device-fresh-start.md) (Windows only)
-     - Start a remote assistance session
+      - [Wipe](devices-wipe.md#wipe)
+      - [Remote lock](device-remote-lock.md)
+      - [Synchronize device](device-sync.md)
+      - [Reset passcode](device-passcode-reset.md)
+      - [Restart](device-restart.md) (Windows only)
+      - [Fresh Start](device-fresh-start.md) (Windows only)
+      - Start a remote assistance session
    - Use **Properties** to assign a [device category you create](device-group-mapping.md), and change ownership of the device to a personal device, or a corporate device.
    - **Hardware** includes many details about the device, like the device ID, operating system and version, storage space, and more details.
    - **Discovered apps** lists all the apps that Intune found installed on the device, and the app versions. You can also **Export** the app list into a .csv file. This list is updated every seven days.

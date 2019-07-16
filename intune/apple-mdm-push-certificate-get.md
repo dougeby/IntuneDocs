@@ -55,7 +55,7 @@ Select **I agree.** to give Microsoft permission to send data to Apple.
 ### Step 2. Download the Intune certificate signing request required to create an Apple MDM push certificate
 Select **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-  ### Step 3. Create an Apple MDM push certificate
+### Step 3. Create an Apple MDM push certificate
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID, and then click **Create a Certificate**. Select **Choose File** and browse to the certificate signing request file, and then choose **Upload**. On the Confirmation page, choose **Download** to the download the certificate (.pem)  file, and save the file locally.
 
 > [!NOTE]

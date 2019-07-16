@@ -69,8 +69,8 @@ As an Intune administrator, use these compliance settings to help protect your o
 - **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 
-	> [!IMPORTANT]
-	> When the password requirement is changed on a macOS device, it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits, and the macOS device currently has a six digits password, then the device remains compliant until the next time the user updates their password on the device.
+    > [!IMPORTANT]
+    > When the password requirement is changed on a macOS device, it doesn’t take effect until the next time the user changes their password. For example, if you set the password length restriction to eight digits, and the macOS device currently has a six digits password, then the device remains compliant until the next time the user updates their password on the device.
 
 ### Encryption
 

@@ -28,14 +28,14 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-#  iOS app protection policy settings
+# iOS app protection policy settings
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article describes the app protection policy settings for iOS devices. The policy settings that are described can be [configured](app-protection-policies.md) for an app protection policy on the **Settings** blade in the Azure portal when you make a new policy.
 
 There are three categories of policy settings: *Data relocation*, *Access requirements*, and *Conditional launch*. In this article, the term ***policy-managed apps*** refers to apps that are configured with app protection policies.
 
-##  Data protection
+## Data protection
 
 ### Data Transfer
 | Setting | How to use | Default value |
@@ -60,7 +60,7 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 | Setting | How to use | Default value |
 |------|----------|-------|
 | **Sync app with native contacts app** |  Select **Disable** to prevent the app from saving data to the native Contacts app on the device. If you Select **Enable**, the app can save data to the native Contacts app on the device. <br><br>When you perform a selective wipe to remove work, or school data from the app, contacts synced directly from the app to the native Contacts app are removed. Any contacts synced from the native address book to another external source can't be wiped. Currently this applies only to the Microsoft Outlook app.   | **Enable**  |
-| **Printing Org data** | Select **Disable** to prevent the app from printing work or school data.   | **Enable**  |
+| **Printing Org data** | Select **Disable** to prevent the app from printing work or school data. If you leave this setting to **Enable**, the default value, users will be able to export and print all Org data.  | **Enable**  |
 | **Share web content with policy managed browsers** | Specify how web content (http/https links) are opened from policy-managed applications. Choose from: <ul><li>**Policy managed browsers**: Allow web content to open only in policy-managed browser.</li><li>**Unmanaged browser**: Allow web content to open only in the unmanaged browser defined by **Unmanaged browser protocol** setting. The web content will be unmanaged in the target browser.<br>**Note**: Requires app to have Intune SDK version 11.0.2 or later.</li><li>**Any app**: Allow web links in any app </li></ul> If you're using Intune to manage your devices, see [Manage Internet access using managed browser policies with Microsoft Intune](app-configuration-managed-browser.md).<br><br>**Policy-managed browsers**<br>If you deploy multiple policy-managed browsers, only one will be launched.  The launch order will be Intune Managed Browser and then Microsoft Edge.<p>If a policy-managed browser is required but not installed, your end users will be prompted to install the Intune Managed Browser.<p>If a policy-managed browser is required, iOS Universal Links are managed by the **Allow app to transfer data to other apps** policy setting. <p>**Intune device enrollment**<br>If you are using Intune to manage your devices, see Manage Internet access using managed browser policies with Microsoft Intune. <p>**Policy-managed Microsoft Edge**<br>The Microsoft Edge browser for mobile devices (iOS and Android) supports Intune app protection policies. Users who sign in with their corporate Azure AD accounts in the Microsoft Edge browser application will be protected by Intune. The Microsoft Edge browser integrates the Intune SDK and supports all of its data protection policies, with the exception of preventing:<br><ul><li>**Save-as**: The Microsoft Edge browser does not allow a user to add direct, in-app connections to cloud storage providers (such as OneDrive).</li><li>**Contact sync**: The Microsoft Edge browser does not save to native contact lists.</li></ul><br>**Note**:<br>The Intune SDK cannot determine if a target app is a browser. On iOS devices, no other managed browser apps are allowed.    | **Not configured**  |
 |<ul><ui>**Unmanaged Browser Protocol** | Enter the protocol for a single unmanaged browser. Web content (http/https links) from policy managed applications will open in any app that supports this protocol. The web content will be unmanaged in the target browser. **NOTE**: Include only the protocol prefix. If your browser requires links of the form `mybrowser://www.microsoft.com`, enter `mybrowser`.  | **Blank**  |
 
@@ -85,8 +85,8 @@ There are some exempt apps and platform services that Intune app protection poli
 | Setting | How to use | Default value |
 |------|----------|-------|
 | **PIN for access** | Select **Require** to require a PIN to use this app. The user is prompted to set up this PIN the first time they run the app in a work or school context. The PIN is applied when working either online or offline.    <br><br> You can configure the PIN strength using the settings available under the **PIN for access** section.   | **Require** |
-| <ul><ui>**PIN type** | Set a requirement for either numeric or passcode type PINs before accessing an app that has app protection policies applied. Numeric requirements involve only numbers, while a passcode can be defined with at least 1 alphabetical letter **or** at least 1 special character.  <br><br> **Note:** *To configure passcode type, it requires app to have Intune SDK version 7.1.12 or above. Numeric type has no Intune SDK version restriction. Special characters allowed include the special characters and symbols on the iOS English language keyboard.*  | **Numeric**  |
-| <ul><ui> **Simple PIN** | Select **Allow** to allow users to use simple PIN sequences like 1234, 1111, abcd or aaaa. Select **Block** to prevent them from using simple sequences. <br><br>**Note**: *If Passcode type PIN is configured, and Allow simple PIN is set to Yes, the user needs at least 1 letter **or** at least 1 special character in their PIN. If Passcode type PIN is configured, and Allow simple PIN is set to No, the user needs at least 1 number **and** 1 letter **and** at least 1 special character in their PIN.*   |**Allow**  |
+| <ul><ui> **PIN type** | Set a requirement for either numeric or passcode type PINs before accessing an app that has app protection policies applied. Numeric requirements involve only numbers, while a passcode can be defined with at least 1 alphabetical letter **or** at least 1 special character.  <br><br> **Note:** *To configure passcode type, it requires app to have Intune SDK version 7.1.12 or above. Numeric type has no Intune SDK version restriction. Special characters allowed include the special characters and symbols on the iOS English language keyboard.*  | **Numeric**  |
+| <ul><ui> **Simple PIN** | Select **Allow** to allow users to use simple PIN sequences like 1234, 1111, abcd or aaaa. Select **Block** to prevent them from using simple sequences. Simple sequences are checked in 3 character sliding windows. If **Block** is configured, 1235 or 1112 would not be accepted as PIN set by the end user, but 1122 would be allowed. <br><br>**Note**: *If Passcode type PIN is configured, and Allow simple PIN is set to Yes, the user needs at least 1 letter **or** at least 1 special character in their PIN. If Passcode type PIN is configured, and Allow simple PIN is set to No, the user needs at least 1 number **and** 1 letter **and** at least 1 special character in their PIN.*   |**Allow**  |
 | <ul><ui> **Select minimum PIN length** | Specify the minimum number of digits in a PIN sequence.  | **4**  |
 | <ul><ui> **Touch ID instead of PIN for access (iOS 8+)** | Select **Allow** to allow the user to use [Touch ID](https://support.apple.com/HT201371) instead of a PIN for app access.    | **Allow**  |
 |<ul><ui><ul><ui>**Override Touch ID with PIN after timeout**|  To use this setting, select **Require** and then configure an inactivity timeout.  |**Require**  |
@@ -118,7 +118,7 @@ By default, several settings are provided with pre-configured values and actions
 
 
 
-##  Add-ins for Outlook app
+## Add-ins for Outlook app
 
 Outlook recently brought add-ins to Outlook for iOS, which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. The Intune SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
 
@@ -133,7 +133,7 @@ These instructions apply to Office 365, Exchange 2016, Exchange 2013 across Outl
 - Learn more about [add-ins for Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
 - Learn more about [how to specify the administrators and users who can install and manage add-ins for Outlook app](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
 
-##  LinkedIn account connections for Microsoft apps
+## LinkedIn account connections for Microsoft apps
 
 LinkedIn account connections allow users to see public LinkedIn profile information within certain Microsoft apps. By default, your users can choose to connect their LinkedIn and Microsoft work or school accounts to see additional LinkedIn profile information. 
 

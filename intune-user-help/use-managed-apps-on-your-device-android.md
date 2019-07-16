@@ -49,11 +49,11 @@ When you first access work or school data in a managed app, you'll receive a mes
 ## Commonly managed apps  
 Examples of commonly required or available managed apps within schools and workplaces are:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel, and PowerPoint
+- Microsoft Word, Excel, and PowerPoint
 
 ## How do I get managed apps?
 There are three ways to get managed apps.  
@@ -61,12 +61,12 @@ There are three ways to get managed apps.
 * You install an app from the Google Play store, and then sign in to the app with your work or school account.    
 * Your organization makes managed apps available to you in Company Portal. Go to the Company Portal app or website to search, view, and install available apps. For more information about these apps, see the next section, [Available apps](#available-apps).  
 
- ### Available apps   
+### Available apps   
  Your organization can select apps that are appropriate and useful for you at work or school, and make them available to you in Company Portal.  
 
  Apps are also made available to you based on your device type. For example, if you're using the Company Portal app for Android, you'll have access to Android apps, but not iOS apps.   
 
- ## Request an app for work or school   
+## Request an app for work or school   
  If there's an app you need, but don't see in Company Portal, you can request it. Find contact details for your **Helpdesk** in either app's **Contact IT** tab. You'll find the same contact information on the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).   
 
 ## What can my company support manage in an app?  

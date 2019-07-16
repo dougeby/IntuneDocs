@@ -34,11 +34,11 @@ If you receive an error that your computer is already enrolled, your computer ha
 
 To link your computer:
 
-1.  On the computer that you want to link to your account, choose **Start**, and then choose **Microsoft Intune Center**.
+1. On the computer that you want to link to your account, choose **Start**, and then choose **Microsoft Intune Center**.
 
-2.  Open the Company Portal.
+2. Open the Company Portal.
 
-3.  Follow the prompts to link the computer to your user account.
+3. Follow the prompts to link the computer to your user account.
 
 If you prefer to unenroll your device, use the instructions for the type of device you have: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md), or [Windows](unenroll-your-device-from-intune-windows.md).
 

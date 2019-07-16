@@ -51,6 +51,10 @@ Two factors determine how you can simplify Windows device enrollment:
 
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 
+## Device enrollment prequisites
+
+Before an administrator can enroll devices to Intune for management, licenses should have already been assigned to the administrator's account. [Read about assigning licenses for device enrollment](licenses-assign.md)
+
 ## Multi-user support
 
 Intune supports multi-management for devices that run the Windows 10 Creator's update and are Azure Active Directory domain-joined. When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Users can't currently use the Company Portal for self-service scenarios like installing apps.
@@ -82,7 +86,7 @@ The Contoso DNS admin should create the following CNAMEs:
 |----------|---------------|---------------|---|
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hour|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 hour|
-|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hour|
+|CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 hour|
 
 `EnterpriseEnrollment-s.manage.microsoft.com` – Supports a redirect to the Intune service with domain recognition from the email’s domain name
 

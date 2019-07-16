@@ -32,13 +32,13 @@ ms.collection: M365-identity-device-management
 
 Having an Intune support plan can help you identify and resolve Intune related issues more effectively. This, in turn, improves your users' overall Intune experience. Here are some questions to consider as you develop your Intune support plan:
 
--   Which teams will be responsible for providing Intune support?
+- Which teams will be responsible for providing Intune support?
 
--   What process will be used to provide Intune support?
+- What process will be used to provide Intune support?
 
--   How you plan to provide Intune support training?
+- How you plan to provide Intune support training?
 
--   What are the opportunities to involve the support team early in the Intune deployment process?
+- What are the opportunities to involve the support team early in the Intune deployment process?
 
 Let’s review each area in more detail.
 
@@ -54,23 +54,23 @@ Learn more about [Intune support](/intune/get-support).
 
 For the initial production rollout phases, you could have all three tiers participating in a bridge or Skype call. Here’s one example of how an organization could implement their IT support or helpdesk work-flows:
 
-1.  End-user contacts IT support or helpdesk tier 1 with an enrollment issue.
+1. End-user contacts IT support or helpdesk tier 1 with an enrollment issue.
 
-2.  IT support or helpdesk tier 1 is unable to determine the root cause and escalates to tier 2.
+2. IT support or helpdesk tier 1 is unable to determine the root cause and escalates to tier 2.
 
-3.  IT support or helpdesk tier 2 investigates, but is unable to resolve the issue and escalates to tier 3, providing additional information to assist with the investigation.
+3. IT support or helpdesk tier 2 investigates, but is unable to resolve the issue and escalates to tier 3, providing additional information to assist with the investigation.
 
-4.  IT support or helpdesk tier 3 investigates further, determines the root cause, and communicates the resolution to tier 2 and 1.
+4. IT support or helpdesk tier 3 investigates further, determines the root cause, and communicates the resolution to tier 2 and 1.
 
-5.  IT support/helpdesk tier 1 then contacts the customer and resolves their issue.
+5. IT support/helpdesk tier 1 then contacts the customer and resolves their issue.
 
 This type of approach, especially in early stages of the Intune rollout, adds many benefits, including:
 
--   Assisting in technology learning and ramp up.
+- Assisting in technology learning and ramp up.
 
--   Quickly identifying issues and resolution.
+- Quickly identifying issues and resolution.
 
--   Improving the overall user experience.
+- Improving the overall user experience.
 
 ## How you plan to provide Intune support training?
 
@@ -78,15 +78,15 @@ It’s important to provide Intune technical training for your IT support or hel
 
 An example of an Intune support training agenda is provided below.
 
--   Intune support plan review
+- Intune support plan review
 
--   Intune overview
+- Intune overview
 
--   Troubleshooting common issues
+- Troubleshooting common issues
 
--   Tools and resources
+- Tools and resources
 
--   Q & A
+- Q & A
 
 The [Intune documentation](https://docs.microsoft.com/intune/) provides an Intune overview,  detailed feature descriptions, and some troubleshooting information. The [Intune forum](https://social.technet.microsoft.com/Forums/home) is a community-based resource for questions and topics not covered in the Intune documentation.
 

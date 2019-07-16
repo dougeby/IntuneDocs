@@ -35,30 +35,30 @@ This article shows you the Microsoft Intune device restrictions settings that yo
 
 ## General
 
-- 	**Camera** - Enables or blocks the device's camera.
-- 	**Copy and paste** - Enables or blocks copy and paste functionality on devices.
-- 	**Removable storage** - Lets the device use removable storage such as SD cards.
-- 	**Geolocation** - Enables the device to utilize location information.
-- 	**Microsoft account** - Enable or block the user from linking a Microsoft account to the device.
-- 	**Screen capture** - Lets the user capture the contents of the screen as an image file.
-- 	**Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.
-- 	**Custom email accounts sync** - Enables the device to connect to non-Microsoft email accounts.
+- **Camera** - Enables or blocks the device's camera.
+- **Copy and paste** - Enables or blocks copy and paste functionality on devices.
+- **Removable storage** - Lets the device use removable storage such as SD cards.
+- **Geolocation** - Enables the device to utilize location information.
+- **Microsoft account** - Enable or block the user from linking a Microsoft account to the device.
+- **Screen capture** - Lets the user capture the contents of the screen as an image file.
+- **Diagnostic data submission** - Enables the device to submit diagnostic information to Microsoft.
+- **Custom email accounts sync** - Enables the device to connect to non-Microsoft email accounts.
 
 ## Password
 
-- 	**Password** - Require the end user to enter a password to access the device.
-	- 	**Required password type** - Specifies the type of password that is required, such as alphanumeric or numeric only.
-	- 	**Minimum password length** - Specifies the minimum number of characters that are required in the password.
-	- 	**Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
-	- 	**Number of sign-in failures before wiping device** - Specifies the number of times an incorrect password can be entered before the device is wiped.
-	- 	**Maximum minutes of inactivity until screen locks** - Specifies the amount of time a device must remain idle before the screen is automatically locked.
-	- 	**Password expiration (days)** - Specifies the number of days before the device password must be changed.
-	- 	**Prevent reuse of previous passwords** - Specifies how many previously used passwords are remembered.
-- 	**Encryption** - Requires that the data on supported mobile devices be encrypted.
+- **Password** - Require the end user to enter a password to access the device.
+  - **Required password type** - Specifies the type of password that is required, such as alphanumeric or numeric only.
+  - **Minimum password length** - Specifies the minimum number of characters that are required in the password.
+  - **Simple passwords** - Specifies that simple passwords such as ‘0000’ and ‘1234’ can be used.
+  - **Number of sign-in failures before wiping device** - Specifies the number of times an incorrect password can be entered before the device is wiped.
+  - **Maximum minutes of inactivity until screen locks** - Specifies the amount of time a device must remain idle before the screen is automatically locked.
+  - **Password expiration (days)** - Specifies the number of days before the device password must be changed.
+  - **Prevent reuse of previous passwords** - Specifies how many previously used passwords are remembered.
+- **Encryption** - Requires that the data on supported mobile devices be encrypted.
 
 ## App Store
 
-- 	**App store** - Lets users connect to the app store from the device.
+- **App store** - Lets users connect to the app store from the device.
 
 ## Restricted apps
 
@@ -88,13 +88,13 @@ You can also click **Import** to populate the list from a csv file in the format
 
 ## Browser
 
-- 	**Web browser** - Enables or blocks the built-in web browser on devices.
+- **Web browser** - Enables or blocks the built-in web browser on devices.
 
 ## Cellular and Connectivity
 
-- 	**Wi-Fi** - Enables or disables the Wi-Fi functionality of the device.
-- 	**Wi-Fi tethering** - Enables the use of Wi-Fi tethering on the device.
-- 	**Automatically connect to Wi-Fi hotspots** - Enables the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.
-- 	**Wi-Fi hotspot reporting** - Sends information about Wi-Fi connections to help the user discover nearby connections.
-- 	**NFC** - Enables or disables operations that use near field communication on devices that support it.
-- 	**Bluetooth** - Enables or disables the Bluetooth functionality of the device.
+- **Wi-Fi** - Enables or disables the Wi-Fi functionality of the device.
+- **Wi-Fi tethering** - Enables the use of Wi-Fi tethering on the device.
+- **Automatically connect to Wi-Fi hotspots** - Enables the device to automatically connect to free Wi-Fi hotspots and automatically accept any terms of use.
+- **Wi-Fi hotspot reporting** - Sends information about Wi-Fi connections to help the user discover nearby connections.
+- **NFC** - Enables or disables operations that use near field communication on devices that support it.
+- **Bluetooth** - Enables or disables the Bluetooth functionality of the device.

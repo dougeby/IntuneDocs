@@ -60,9 +60,9 @@ Intune provides several ways that you can monitor your migration:
 
 Track how many users have enrolled devices after each phase so that you can:
 
--   Evaluate the effectiveness of your communication plan.
+- Evaluate the effectiveness of your communication plan.
 
--   Estimate the impact of enforcing Conditional Access.
+- Estimate the impact of enforcing Conditional Access.
 
 
 ## Post-migration

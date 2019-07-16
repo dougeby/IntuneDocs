@@ -82,13 +82,13 @@ From the **Actions** menu of the **TeamViewer** window, choose **End Session**.
 ## Remotely restart a Windows PC
 When helping your users with issues, you might need to remotely restart their PC from time to time. Use the following steps to remotely restart a Windows PC.
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to restart).
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Groups** &gt; **All Devices** (or another group that contains the PC you want to restart).
 
-2.  Select one or more PCs, and then choose **Remote Tasks** &gt; **Restart Computer**.
+2. Select one or more PCs, and then choose **Remote Tasks** &gt; **Restart Computer**.
 
-3.  To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
+3. To view the task status, choose **Remote Tasks** in the bottom right corner of the page.
 
-4.  In the **Task Status** dialog box, review the current remote tasks, task status, device name, and any reported errors.
+4. In the **Task Status** dialog box, review the current remote tasks, task status, device name, and any reported errors.
 
 ### See also
 

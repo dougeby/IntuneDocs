@@ -35,10 +35,10 @@ When you upload the logs in the Company Portal app, they're first sent to the Mi
 
 If you get errors on your iOS device while using the Company Portal app, you can send information to help your company support troubleshoot the problem. You can send error information in different ways:
 
--   On error alert messages, tap **Report**.
+- On error alert messages, tap **Report**.
 
--   In the **More** tab of the Company Portal app, tap **Get Help**.
+- In the **More** tab of the Company Portal app, tap **Get Help**.
 
--   In the Company Portal app, shake your device, then tap **Send Diagnostic Report** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
+- In the Company Portal app, shake your device, then tap **Send Diagnostic Report** when the diagnostics alert appears. If the alert doesn’t appear when you shake the device, open **Settings** > **Company Portal**, and make sure that the **Shake Gesture** option is on.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

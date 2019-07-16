@@ -32,68 +32,68 @@ ms.collection: M365-identity-device-management
 
 Your Intune design is based on the information you collect and decisions you make when completing other [sections of this guide](planning-guide.md). It helps you bring together:
 
--   The current environment
+- The current environment
 
--   Intune deployment options
+- Intune deployment options
 
--   Identity requirements for external dependencies
+- Identity requirements for external dependencies
 
--   Device platform considerations
+- Device platform considerations
 
--   Requirements to be delivered  
+- Requirements to be delivered  
 
 Although there’s minimal on-premises infrastructure requirements, a design plan is still helpful to make sure you have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Let’s review each of these areas in more detail. 
+Let’s review each of these areas in more detail. 
 
 ## Record your current environment
 Additionally, it’s common to have design changes during the implementation and testing phases. Use your design plan to document these changes and the rationale behind them as they occur.
 
 Your current environment can influence design decisions and should be documented and referenced when you make other Intune design decisions. Below are few examples of how to record the current environment:
 
--   **Identity in the cloud**
+- **Identity in the cloud**
 
-    -   Do you use DirSync or Azure Active Directory (Azure AD) Connect?
+  - Do you use DirSync or Azure Active Directory (Azure AD) Connect?
 
-    -   Is your environment federated?
+  - Is your environment federated?
 
-    -   Is multi-factor authentication (MFA) enabled?
+  - Is multi-factor authentication (MFA) enabled?
 
--   **Email environment**
+- **Email environment**
 
-    -   Do you use Exchange? Is it on-premises or in the cloud?
+  - Do you use Exchange? Is it on-premises or in the cloud?
 
-    -   Are you in the middle of a project to migrate Exchange to the cloud?
+  - Are you in the middle of a project to migrate Exchange to the cloud?
 
--   **Current mobile device management (MDM) solution**
+- **Current mobile device management (MDM) solution**
 
-    -   Are you currently using other MDM solutions?
+  - Are you currently using other MDM solutions?
 
-    -   What MDM solutions are you using for corporate and BYOD use-case scenarios?
+  - What MDM solutions are you using for corporate and BYOD use-case scenarios?
 
-    -   What capabilities are you using (for example: app device settings, Wi-Fi configurations)?
+  - What capabilities are you using (for example: app device settings, Wi-Fi configurations)?
 
-    -   What device platforms are supported?
+  - What device platforms are supported?
 
-    -   What groups and how many users are using the MDM solution?
+  - What groups and how many users are using the MDM solution?
 
--   **Certificate solution**
+- **Certificate solution**
 
-    -   Have you implemented a certificate solution?
+  - Have you implemented a certificate solution?
 
-    -   What type of certificates do you use?
+  - What type of certificates do you use?
 
--   **Systems management**
+- **Systems management**
 
-    -   How are you managing your PC and server environment?
+  - How are you managing your PC and server environment?
 
-    -   Are you using System Center Configuration Manager? Are you using a third-party system management platform?
+  - Are you using System Center Configuration Manager? Are you using a third-party system management platform?
 
--   **VPN solution**
+- **VPN solution**
 
-    -   What is your VPN solution?
+  - What is your VPN solution?
 
-    -   Do you use it for both corporate and BYOD use-case scenarios?
+  - Do you use it for both corporate and BYOD use-case scenarios?
 
 Make sure to note any projects or any other plans in place that could affect your environment when recording the current MDM environment. Below is an example of a way to record the current environment when creating your Intune design:
 
@@ -122,11 +122,11 @@ Intune offers two deployment options: standalone and hybrid. Standalone refers t
 
 If your organization has global presence, make sure to plan where your tenant resides when you subscribe to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world, which are listed below:
 
--   North America
+- North America
 
--   Europe, Middle East, and Africa
+- Europe, Middle East, and Africa
 
--   Asia and Pacific
+- Asia and Pacific
 
 >[!IMPORTANT]
 > It’s not possible to change the country and tenant location later.
@@ -135,11 +135,11 @@ If your organization has global presence, make sure to plan where your tenant re
 
 External dependencies are services and products that are separate from Intune, but are either a requirement of Intune, or might integrate with Intune. It’s important to identify requirements for any external dependencies and how to configure them. Some examples of common external dependencies are:
 
--   Identity
+- Identity
 
--   User and device groups
+- User and device groups
 
--   Public key infrastructure (PKI)
+- Public key infrastructure (PKI)
 
 In the following, we explore these common external dependencies in more detail.
 
@@ -161,9 +161,9 @@ User and device groups determine the target of a deployment, including policies,
 
 We recommend that you create all groups in the on-premises Active Directory, then synchronize to Azure AD. Learn more about user and device group planning and creation:
 
--   [Plan your user and device groups](users-add.md).
+- [Plan your user and device groups](users-add.md).
 
--   [Create user and device groups](groups-add.md).
+- [Create user and device groups](groups-add.md).
 
 ### Public key infrastructure (PKI)
 Public key infrastructure supplies certificates to devices or users to securely authenticate to a service. Intune supports a Microsoft PKI infrastructure. Device and user certificates can be issued to a mobile device to satisfy certificate-based authentication requirements. Before you use certificates, you need to determine if you need them, if the network infrastructure can support certificate-based authentication, and if certificates are currently used in the existing environment.
@@ -174,11 +174,11 @@ In addition, if SCEP certificate profiles will be used, you need to determine wh
 
 Learn more about:
 
--   [How to configure Intune certificate profiles](certificates-configure.md)
+- [How to configure Intune certificate profiles](certificates-configure.md)
 
--   [How to configure the certificate infrastructure for SCEP](certificates-scep-configure.md)
+- [How to configure the certificate infrastructure for SCEP](certificates-scep-configure.md)
 
--   [How to configure the certificate infrastructure for PFX](certficates-pfx-configure.md)
+- [How to configure the certificate infrastructure for PFX](certficates-pfx-configure.md)
 
 
 
@@ -187,13 +187,13 @@ Learn more about:
 
 Take a closer look at the following aspects of your devices to understand how to manage them correctly.
 
--   Supported device platforms
+- Supported device platforms
 
--   Devices
+- Devices
 
--   Device ownership
+- Device ownership
 
--   Bulk enrollment
+- Bulk enrollment
 
 Let’s review these areas in more detail.
 
@@ -230,17 +230,17 @@ Refer to [Section 3: Determine use case scenario requirements](planning-guide-re
 
 In these sections, we review the following features and capabilities that are aligned with your use case scenario requirements:
 
--   Terms and conditions policies
+- Terms and conditions policies
 
--   Configuration policies
+- Configuration policies
 
--   Resource profiles
+- Resource profiles
 
--   Apps
+- Apps
 
--   Compliance policy
+- Compliance policy
 
--   Conditional Access
+- Conditional Access
 
 Let’s review each of these areas in more detail.
 
@@ -278,13 +278,13 @@ You can [download a template of the above table](https://gallery.technet.microso
 
 Use profiles to help the end user connect to company data. Intune supports many types of profiles. Refer to the use cases and requirements to determine when the profiles will be configured. All device profiles are categorized by platform type and should be included in the design documentation.
 
--   Certificate profiles
+- Certificate profiles
 
--   Wi-Fi profile
+- Wi-Fi profile
 
--   VPN profile
+- VPN profile
 
--   Email profile
+- Email profile
 
 Let’s review each type of profile in more detail.
 
@@ -292,11 +292,11 @@ Let’s review each type of profile in more detail.
 
 Certificate profiles allow Intune to issue a certificate to a user or device. Intune supports the following:
 
--   Simple Certificate Enrollment Protocol (SCEP)
+- Simple Certificate Enrollment Protocol (SCEP)
 
--   Trusted Root Certificate
+- Trusted Root Certificate
 
--   PFX certificate.
+- PFX certificate.
 
 We recommend that you document which user group needs a certificate, how many certificate profiles you need, and which user groups to deploy them to.
 
@@ -357,27 +357,27 @@ You can [download a template of the above table](https://gallery.technet.microso
 
 You can use Intune to deliver apps to the users or devices in several ways. The type of application includes software installer apps, apps from a public app store, external links, or managed iOS apps. In addition to individual app deployments, you can manage and deploy volume-purchased apps obtained through the volume-purchase programs for iOS and Windows. Learn more about:
 
--   [The types of apps you can deliver](app-management.md)
+- [The types of apps you can deliver](app-management.md)
 
--   [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
+- [iOS Volume Purchase Program for Business (VPP)](vpp-apps-ios.md)
 
--   [Microsoft Store for Business apps](windows-store-for-business.md)
+- [Microsoft Store for Business apps](windows-store-for-business.md)
 
 #### App type requirements
 
 Since apps can be deployed to users and devices, we recommend that you decide which applications will be managed by Intune. While gathering the list, try to answer the following questions:
 
--   Do the apps require integration with cloud services?
+- Do the apps require integration with cloud services?
 
--   Will all apps be available to BYOD users?
+- Will all apps be available to BYOD users?
 
--   What are the deployment options available for these apps?
+- What are the deployment options available for these apps?
 
--   Does your company need to provide access to Software-as-a-service (SaaS) apps data for their partners?
+- Does your company need to provide access to Software-as-a-service (SaaS) apps data for their partners?
 
--   Do the apps require internet access from user’s devices?
+- Do the apps require internet access from user’s devices?
 
--   Are the apps publicly available in an app store, or are they custom line-of-business (LOB) apps?
+- Are the apps publicly available in an app store, or are they custom line-of-business (LOB) apps?
 
 
 #### App protection policies
@@ -411,7 +411,7 @@ Conditional Access is used to allow only compliant devices to access email and o
 
 For online access, decide what platforms and user groups you'll target by Conditional Access policies. Also, determine whether you need to install or configure the Intune connector for Exchange on-premises: 
 
--   [Exchange on-premises](exchange-connector-install.md)
+- [Exchange on-premises](exchange-connector-install.md)
 
 Here’s an example of how to document Conditional Access policies:
 

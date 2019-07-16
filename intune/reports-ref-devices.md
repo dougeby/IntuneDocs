@@ -30,14 +30,14 @@ ms.collection: M365-identity-device-management
 
 The **Devices** category contains entities for mobile devices that track information such as:
 
-  -  Device type
-  -  Device enrollment and registration status
-  -  Device ownership
-  -  Device management state
-  -  Device membership to Azure AD status
-  -  Enrollment status
-  -  Historic information about the device
-  -  Inventory of apps on the device
+- Device type
+- Device enrollment and registration status
+- Device ownership
+- Device management state
+- Device membership to Azure AD status
+- Enrollment status
+- Historic information about the device
+- Inventory of apps on the device
 
 ## DeviceTypes
 
@@ -271,7 +271,7 @@ The **DevicePropertyHistory** entity has the same properties as the devices tabl
 |          Property          |                                                                                      Description                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | Reference to date table indicating the day.                                                                                                                                          |
-| DeviceKey                  | Unique identifier of the device in the data warehouse -   surrogate key. This is a reference to the Device table that contains the   Intune device ID.                               |
+| DeviceKey                  | Unique identifier of the device in the data warehouse -  surrogate key. This is a reference to the Device table that contains the   Intune device ID.                               |
 | DeviceName                 | Name of the device on platforms that allow naming a   device. On other platforms, Intune creates a name from other properties. This   attribute cannot be available for all devices. |
 | DeviceRegistrationStateKey | Key of the device registration state attribute for this   device.                                                                                                                    |
 | OwnerTypeKey               | Key of the owner type attribute for this device:   corporate, personal, or unknown.                                                                                                  |
