@@ -29,11 +29,9 @@ ms.collection: M365-identity-device-management
 
 # Send custom notifications in Intune  
 
-Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app on a user’s device, just as notifications from other applications on the device appear.  
+Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by Windows devices.   
 
-Custom notification messages include a short title and a message body of 500 characters or less.  Because these messages aren’t tied to specific features in Intune, you can use them for any general communication purpose.
-
-Intune custom notifications aren’t supported by Windows devices, and users of Windows devices won’t see them.  
+Custom notification messages include a short title and a message body of 500 characters or less. These messages can be customized for any general communication purpose.
 
 ## Common scenarios for sending custom notifications  
 
@@ -47,7 +45,7 @@ Intune custom notifications aren’t supported by Windows devices, and users of 
 - On Android, Google Play Services is a required dependency.  
 
 **Creating notifications**:  
-- To create a message, your account must have the ? permission.
+- To create a message, use an account that is assigned an Intune role that includes the **Update** permission for **Organization**. To assign permissions to a user, see [Role assignments](role-based-access-control.md#role-assignments)  
 - Custom notifications are limited to 50-character titles and 500-character messages.  
 - Intune doesn’t save sent messages. To resend a message, you must recreate that message.  
 - You can only send up to 25 messages per hour. This restriction is at the tenant level.  
@@ -64,7 +62,7 @@ Intune custom notifications aren’t supported by Windows devices, and users of 
 
 ## Send a custom notification  
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Devices** > **Send custom notifications**.  
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) with an account that has permissions to create and send notifications, and go to **Devices** > **Send custom notifications**.  
 
 2. On the Basics tab, specify the following, and then select **Next** to continue.  
    - **Title** – Specify a title for this notification. Titles are limited to 50 characters.  
