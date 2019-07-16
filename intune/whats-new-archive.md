@@ -262,7 +262,7 @@ New device certificate variables:
 > - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
 > - When specifying device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device. 
 
-[Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile) lists the current variables when creating an SCEP configuration profile. 
+[Create a SCEP certificate profile](certificates-profile-scep.md#create-a-scep-certificate-profile) lists the current variables when creating an SCEP configuration profile. 
 
 Applies to: Windows 10 and later and iOS, supported for Wi-Fi
 
