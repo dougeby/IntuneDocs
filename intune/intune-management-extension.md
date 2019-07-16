@@ -136,7 +136,7 @@ In **PowerShell scripts**, right-click the script, and select **Delete**.
 
 ## Common issues and resolutions
 
-#### Issue: Intune management extension doesn't download
+### Issue: Intune management extension doesn't download
 
 **Possible resolutions**:
 
@@ -155,7 +155,7 @@ To see if the device is auto-enrolled, you can:
 
 [Enable Windows 10 automatic enrollment](windows-enroll.md#enable-windows-10-automatic-enrollment) includes the steps to configure automatic enrollment in Intune.
 
-#### Issue: PowerShell scripts do not run
+### Issue: PowerShell scripts do not run
 
 **Possible resolutions**:
 

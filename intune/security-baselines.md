@@ -181,19 +181,19 @@ Other processes that might later change settings on the device include a differe
 
 ## Q & A
 
-#### Why these settings?
+### Why these settings?
 
 The Microsoft security team has years of experience working directly with Windows developers and the security community to create these recommendations. The settings in this baseline are considered the most relevant security-related configuration options. In each new build of Windows, the team adjusts its recommendations based on newly released features.
 
-#### Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
+### Is there a difference in the recommendations for Windows security baselines for group policy vs. Intune?
 
 The same Microsoft security team chose and organized the settings for each baseline. Intune includes all the relevant settings in the Intune security baseline. There are some settings in the group policy baseline that are specific to an on-premises domain controller. These settings are excluded from Intune's recommendations. All the other settings are the same.
 
-#### Are the Intune security baselines CIS or NSIT compliant?
+### Are the Intune security baselines CIS or NSIT compliant?
 
 Strictly speaking, no. The Microsoft security team consults organizations, such as CIS, to compile its recommendations. But, there isn't a one-to-one mapping between “CIS-compliant” and Microsoft baselines.
 
-#### What certifications does Microsoft’s security baselines have? 
+### What certifications does Microsoft’s security baselines have? 
 
 - Microsoft continues to publish security baselines for group policies (GPOs) and the [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10), as it has for many years. These baselines are used by many organizations. The recommendations in these baselines are from the Microsoft security team’s engagement with enterprise customers and external agencies, including the Department of Defense (DoD), National Institute of Standards and Technology (NIST), and more. We share our recommendations and baselines with these organizations. These organizations also have their own recommendations that closely mirror Microsoft's recommendations. As mobile device management (MDM) continues to grow into the cloud, Microsoft created equivalent MDM recommendations of these group policy baselines. These additional baselines are built in to Microsoft Intune, and include compliance reports on users, groups, and devices that follow (or don't follow) the baseline.
 

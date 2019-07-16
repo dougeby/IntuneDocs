@@ -42,17 +42,17 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
   >Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authrity. See [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing)
 
 
-### Code sign your app
+## Code sign your app
 
 First step is to code sign your appx package, See [sign app package using signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
 
-### Upload your app
+## Upload your app
 
 Next, you would upload the signed appx file as described at [upload LOB Windows app](lob-apps-windows.md)
 
 If you deploy the app as required to users or devices then you do not need the Inutne Company Portal app. However if you deploy the app as available to users, then they can either use the Company Portal app from the Public Microsoft Store, use the Company Portal app from the Private Microsoft Store for Business, or you will need to sign and manually deploy the Intune Company Portal app.
 
-### Upload the code-signing certificate
+## Upload the code-signing certificate
 
 If your Windows 10 device does not already trust the certificate authority, then after you have signed your appx package and uploaded it to the Intune service, you need to upload the code signing certificate to the Intune portal:
 1. Click Client Apps
@@ -68,7 +68,7 @@ Intune only deploys the latest .cer file that was uploaded. If you have multiple
 
 The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certificates by following the Windows 10 instructions.
 
-### How to install the updated certificate for line-of-business (LOB) apps
+## How to install the updated certificate for line-of-business (LOB) apps
 
 Windows Phone 8.1
 
