@@ -58,6 +58,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 <!-- ########################## -->
 
 ## Week of July 15, 2019
+
 ### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
 When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user. This feature will be rolled out to all customers over the next few days.
 
