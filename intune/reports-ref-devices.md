@@ -30,14 +30,14 @@ ms.collection: M365-identity-device-management
 
 The **devices** category contains entities for mobile devices that track information such as:
 
-  - Device type
-  - Device enrollment and registration status
-  - Device ownership
-  - Device management state
-  - Device membership to Azure AD status
-  - Enrollment status
-  - Historic information about the device
-  - Inventory of apps on the device
+- Device type
+- Device enrollment and registration status
+- Device ownership
+- Device management state
+- Device membership to Azure AD status
+- Enrollment status
+- Historic information about the device
+- Inventory of apps on the device
 
 ## deviceTypes
 
@@ -265,7 +265,7 @@ The **devices** entity lists all enrolled devices under management and their cor
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
 | ICCD                       | Integrated Circuit Card Identifier                                                                                                                                                     |
 
-## devicePropertyHistory
+## devicePropertyHistories
 
 The **devicePropertyHistory** entity has the same properties as the devices table and daily snapshots of each device record per day for the past 90 days. The DateKey column indicates the day for each row.
 
@@ -282,17 +282,4 @@ The **devicePropertyHistory** entity has the same properties as the devices tabl
 | OSVersion                  | OS version.                                                                                                                                                                          |
 | jailBroken                 | Whether the device is jail broken or rooted.                                                                                                                                         |
 | deviceCategoryKey          | Key of device category attribute for this device. 
-
-## applicationInventories
-
-The **applicationInventory** entity lists the apps found on the device at the time of inventory collection.
-
-
-|      Property      |                       Description                        |
-|--------------------|----------------------------------------------------------|
-|     deviceKey      |              A reference to devices table.               |
-|   applicationKey   | ? (copied from ExchangeDeviceService\DeviceApplication). |
-|  applicationName   | ? (copied from ExchangeDeviceService\DeviceApplication). |
-| applicationVersion | ? (copied from ExchangeDeviceService\DeviceApplication). |
-|     bundleSize     | ? (copied from ExchangeDeviceService\DeviceApplication). |
 

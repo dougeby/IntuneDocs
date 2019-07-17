@@ -29,10 +29,10 @@ ms.collection: M365-identity-device-management
 
 The **policies** category contains entities for mobile devices that track information such as:
 
-  - Inventory of device configuration profiles, app configuration profiles, and compliance policies  
-  - Number of devices in the succeeded, pending, failed, or error state per day  
-  - Number of users in the succeeded, pending, failed, or error state per day  
-  - Cumulative number of devices in the succeeded, pending, failed, or error state  
+- Inventory of device configuration profiles, app configuration profiles, and compliance policies  
+- Number of devices in the succeeded, pending, failed, or error state per day  
+- Number of users in the succeeded, pending, failed, or error state per day  
+- Cumulative number of devices in the succeeded, pending, failed, or error state  
 
 ## policies
 
@@ -59,9 +59,9 @@ The **policyType** entity lists types of device configuration profiles, app conf
 | policyTypeKey |Unique identifier of the policy in the data warehouse. |1 |
 | policyTypeName |Name of the policy type. |Windows 10 Compliance policy. |
 
-## deviceConfiguration
+## Device Configuration
 
-The *deviceConfigurationProfileDeviceActivity** entity lists the number of **devices** in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a **device** is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The entity lists how many devices are in which state on a given day over the last 30 days.
+The **deviceConfigurationProfileDeviceActivity** entity lists the number of **devices** in the succeeded, pending, failed, or error state per day. The number reflects the Device configuration profiles assigned to the entity. For example, if a **device** is in the succeeded state for all its assigned policies, it increments the succeeded counter up one for that day. If a device has two profiles assigned to it, one in the succeeded state and another in an error state, the entity increments the Succeeded counter and place the device in the error state. The entity lists how many devices are in which state on a given day over the last 30 days.
 
 | Property  | Description | Example |
 |---------|------------|--------|

@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 The **userDeviceAssociation** entity contains user device associations in your organization.
 
-## userDeviceAssociation
+## userDeviceAssociations
 
 
 |        Name        |                                           Description                                            |        Example         |

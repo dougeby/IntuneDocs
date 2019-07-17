@@ -134,8 +134,8 @@ If a URL appears in a markdown file, it will be transformed into a clickable lin
 - This 
 - bulleted 
 - list
-    - Mrs. Peacock
-    - Mr. Green
+  - Mrs. Peacock
+  - Mr. Green
 - contains  
 - other
     1. Colonel Mustard

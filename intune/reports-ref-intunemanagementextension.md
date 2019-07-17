@@ -30,8 +30,8 @@ ms.collection: M365-identity-device-management
 
 The **intuneManagementExtensions** category contains entities for mobile devices that track information such as:
 
-  - Versions of an intuneManagementExtension
-  - Installation status of an intuneManagementExtension
+- Versions of an IntuneManagementExtension
+- Installation status of an IntuneManagementExtension
 
 ## intuneManagementExtensionVersions
 
