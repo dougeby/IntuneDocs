@@ -38,8 +38,7 @@ As an Intune administrator, you can manage the following Android devices:
     - **Android Enterprise work profile devices**: Personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
     - **Android Enterprise dedicated devices**: Corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
     - **Android Enterprise fully managed devices**: Corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
-- **Android device administrator devices**, including Samsung Knox Standard devices and [Zebra devices](android-zebra-mx-overview.md). Android device administrator capabilities have been deprecated by Android. While you can use device administrator enrollment, we recommend that you use Android Enterprise instead. For more information, see the Android article [Device admin deprecation](https://developers.google.com/android/work/device-admin-deprecation).
-
+- **Android device administrator devices**, including Samsung Knox Standard devices and [Zebra devices](android-zebra-mx-overview.md). 
 
 ## Prerequisites
 
@@ -49,7 +48,7 @@ For devices manufactured by Zebra Technologies, you may need to grant the Compan
 
 ## Set up Android enrollment
 
-By default, Intune allows enrollment of Android, Samsung Knox Standard and Zebra devices. After fulfilling the prerequisites, admins merely need to [tell their users how to enroll their devices](/intune-user-help/enroll-your-device-in-intune-android).
+By default, Intune allows enrollment of Android device administrator, Samsung Knox Standard and Zebra devices. After fulfilling the prerequisites, admins merely need to [tell their users how to enroll their devices](/intune-user-help/enroll-your-device-in-intune-android).
 
 After a user has enrolled, you can begin managing their devices in Intune, including [assigning compliance policies](compliance-policy-create-android.md), [managing apps](app-management.md), and more.
 
@@ -58,7 +57,7 @@ For information about other user tasks, see these articles:
 - [Resources about the end-user experience with Microsoft Intune](end-user-educate.md)
 - [Using your Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
 
-To block Android devices, or to block only personally owned Android devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
+To block Android device administrator devices, or to block only personally owned Android device administrator devices from enrollment, see [Set device type restrictions](enrollment-restrictions-set.md).
 
 ## Set up Android Enterprise enrollment
 
