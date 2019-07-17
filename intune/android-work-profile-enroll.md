@@ -37,9 +37,9 @@ Intune helps you deploy apps and settings to Android Enterprise work profile dev
 To set up Android Enterprise work profile management, follow these steps:
 
 1. [Connect your Intune tenant account to your Android Enterprise account](connect-intune-android-enterprise.md).
-2. Specify Android Enterprise work profile enrollment settings. Android Enterprise work profiles are [supported on only certain Android devices](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android Enterprise work profiles also supports conventional Android management. Intune lets you specify how devices that support Android Enterprise work profiles should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
-    - **Block (set by default)**:  All Android devices, including devices that support Android Enterprise work profiles, will be enrolled as conventional Android devices.
-    - **Allow**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as a conventional Android device.
+2. Specify Android Enterprise work profile enrollment settings. Android Enterprise work profiles are [supported on only certain Android devices](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Any device that supports Android Enterprise work profiles also supports Android device administrator management. Intune lets you specify how devices that support Android Enterprise work profiles should be managed from within [Enrollment Restrictions](enrollment-restrictions-set.md).
+    - **Block**:  All Android devices, including devices that support Android Enterprise work profiles, will be enrolled as Android device administrator devices.
+    - **Allow (set by default)**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as an Android device administrator device.
 3. [Tell your users how to enroll their devices](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
 
