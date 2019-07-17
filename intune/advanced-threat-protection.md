@@ -5,7 +5,7 @@ title: Use Microsoft Defender ATP in Microsoft Intune - Azure | Microsoft Docs
 description: See how to enable Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP) in an end-to-end scenario, including turning on Microsoft Defender ATP in Intune and Microsoft Defender Security Center, onboard devices using a Microsoft Defender ATP configuration profile, create an Intune device compliance policy, create an Azure AD Conditional Access policy, and monitor device compliance.
 keywords:
 author: brenduns 
-ms.author: brenduns
+
 manager: dougeby
 ms.date: 07/12/2019
 

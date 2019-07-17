@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -50,14 +50,14 @@ The Encryption report pane displays a list of the devices you manage with high
 - **OS** – The device platform, such as Windows or macOS.  
 - **OS version** – The version of Windows or macOS on the device.  
 - **TPM version** *(Applies to Windows 10 only)* – The version of the Trusted Platform Module (TPM) chip on the Windows 10 device.  
-- **Encryption readiness** – An evaluation of the devices readiness to support an applicable encryption technology, like BitLocker or FileVault encryption. Devices are identified as:
+- **Encryption readiness** – An evaluation of the devices readiness to support an applicable encryption technology, like BitLocker or FileVault encryption. Devices are identified as:  
   - **Ready**: The device can be encrypted by using MDM policy, which requires the device meets the following requirements:  
     
-    **For macOS devices**:
-    - MacOS version 10.13 or later
+    **For macOS devices**:  
+    - MacOS version 10.13 or later  
 
-    **For WIndows 10 devices**:
-    - Version 1703 or later, of *Business*, *Enterprise*, *Education*, or version 1809 or later of *Pro* 
+    **For WIndows 10 devices**:  
+    - Version 1703 or later, of *Business*, *Enterprise*, *Education*, or version 1809 or later of *Pro*  
     - The device must have a TPM chip  
     
     For more information, see the [BitLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in the Windows documentation.  
@@ -75,7 +75,7 @@ When you select a device from the Encryption report, Intune displays the **Devic
 
 - **Device name** – The name of the device you're viewing.  
 
-- **Encryption readiness** -  An evaluation of the devices readiness to support encryption through the MDM policy.  
+- **Encryption readiness** - An evaluation of the devices readiness to support encryption through the MDM policy.  
   
   For example: When a Windows 10 device has a readiness of *Not ready*, it might still support encryption. To have the *Ready* designation, the Windows 10 device must have a TPM chip. TPM chips aren't required to support encryption. (See Encryption readiness in the preceding section for more details.)  
 
@@ -104,7 +104,7 @@ When you select a device from the Encryption report, Intune displays the **Devic
   The following are examples of the status details Intune can report:  
   
   **macOS**:
-  - The profile can't be installed currently, as we're waiting on a prerequisite. 
+  - The profile can't be installed currently, as we're waiting on a prerequisite.  
  
     *Consider: This result doesn't necessarily represent an error condition but a temporary state that could be due to timing on the device where escrow for recovery keys must be set up before the encryption request is sent to the device. This might also indicate the device remains locked or hasn’t checked in with Intune recently. Finally, because FileVault encryption doesn’t start until a device is plugged in (charging), it’s possible for a user to receive a recovery key for a device that isn't yet encrypted*.  
 
@@ -126,21 +126,21 @@ When you select a device from the Encryption report, Intune displays the **Devic
 
   **Windows 10**:  
   - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
-
+  
   - The encryption method of the OS volume doesn't match the BitLocker policy.  
-
+  
   - The policy BitLocker requires a TPM protector to protect the OS volume, but a TPM isn't used.  
-
+  
   - The BitLocker policy requires a TPM-only protector for the OS volume, but TPM protection isn't used.  
-
+  
   - The BitLocker policy requires TPM+PIN protection for the OS volume, but a TPM+PIN protector isn't used.  
-
+  
   - The BitLocker policy requires TPM+startup key protection for the OS volume, but a TPM+startup key protector isn't used.  
-    
+  
   - The BitLocker policy requires TPM+PIN+startup key protection for the OS volume, but a TPM+PIN+startup key protector isn't used.  
-
+  
   - The OS volume is unprotected.  
-   
+  
   - Recovery key backup failed.  
   
   - A fixed drive is unprotected.  
@@ -168,7 +168,7 @@ This report can be of use in identifying problems for groups of devices. For exa
 ## FileVault recovery keys   
 When Intune first encrypts a macOS device with FileVault, a personal recovery key is created. Upon encryption, the device displays the personal key a single time to the end-user.  
  
-For managed devices, Intune can escrow a copy of the personal recovery key. Escrow of keys enables Intune administrators to rotate keys to help protect devices, and users to recover a lost or rotated personal recovery key.    
+For managed devices, Intune can escrow a copy of the personal recovery key. Escrow of keys enables Intune administrators to rotate keys to help protect devices, and users to recover a lost or rotated personal recovery key.  
  
 Intune supports multiple options to rotate and recover personal recovery keys. One reason to rotate a key is if the current personal key is lost thought to be at risk.  
  
@@ -192,11 +192,12 @@ Intune supports multiple options to rotate and recover personal recovery keys. O
 ### Recover recovery keys  
 - **Administrator**: Administrators can't view personal recovery keys for devices that are encrypted with FileVault.  
 
-- **End-user**: End-users use the company portalCompany Portal website from any device to view the current personal recovery key for any of their managed devices.  You can't view recovery keys from the Company Portal app.  
+- **End-user**: End-users use the Company Portal website from any device to view the current personal recovery key for any of their managed devices. You can't view recovery keys from the Company Portal app.  
 
  
   To view a recovery key:  
-  1. Sign in to the *Intune company Company portal Portal* website from any device.  2. In the portal, go to **Devices** and select the  macOS device that is encrypted with FileVault. device that has FileVault enabled.  
+  1. Sign in to the *Intune Company Portal* website from any device.  
+  2. In the portal, go to **Devices** and select the  macOS device that is encrypted with FileVault.  
   3. Select **Get recovery key**. The current recovery key is displayed.  
   
      On an iPhone, you must select the *three* dots before the *Get recovery key* option appears.  
