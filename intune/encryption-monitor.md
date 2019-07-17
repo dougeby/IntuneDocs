@@ -55,7 +55,8 @@ The Encryption report pane displays a list of the devices you manage with high
     
     **For macOS devices**:  
     - MacOS version 10.13 or later  
-indows 10 devices**:  
+    
+    **For Windows 10 devices**:  
     - Version 1703 or later, of *Business*, *Enterprise*, *Education*, or version 1809 or later of *Pro*  
     - The device must have a TPM chip  
     
