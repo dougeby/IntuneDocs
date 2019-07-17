@@ -207,29 +207,37 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
+|**-aa**|(Optional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
+|**-ac**|(Optional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>`  |
+|**-ar**|(Optional) `<Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
 |**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
 |**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See [Setting app entitlements](#setting-app-entitlements) for more details.|
 |**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See  [Setting app entitlements](#setting-app-entitlements) for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
-|**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
 |**-b**|(Optional) Use -b without an argument if you want the wrapped output app to have the same bundle version as the input app (not recommended). <br/><br/> Use `-b <custom bundle version>` if you want the wrapped app to have a custom CFBundleVersion. If you choose to specify a custom CFBundleVersion, it's a good idea to increment the native app’s CFBundleVersion by the least significant component, like 1.0.0 -> 1.0.1. |
+|**-citrix**|(Optional) Include the Citrix XenMobile App SDK (network-only variant). You must have the [Citrix MDX Toolkit](https://docs.citrix.com/en-us/mdx-toolkit/about-mdx-toolkit.html) installed to use this option. |
+|**-f**|(Optional) `<Path to a plist file specifying arguments.>` Use this flag in front of the [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file if you choose to use the plist template to specify the rest of the IntuneMAMPackager properties like -i, -o, and -p. See Use a plist to input arguments. |
 
 ### Use a plist to input arguments
 An easy way to run the App Wrapping Tool is to put all the command arguments into a [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) file. Plist is a file format similar to XML that you can use to input your command line arguments using a form interface.
 
 In the IntuneMAMPackager/Contents/MacOS folder, open `Parameters.plist` (a blank plist template) with a text editor or Xcode. Enter your arguments for the following keys:
 
-| Plist key |  Default value| Notes |
-|------------------|--------------|-----|
-| Input Application Package Path  |empty| Same as -i|
-| Output Application Package Path |empty| Same as -o|
-| Provisioning Profile Path |empty| Same as -p|
-| SHA-1 Certificate Hash |empty| Same as -c|
-| Verbose Enabled |false| Same as -v|
-| Remove Missing Entitlements | false| Same as -c|
-| Prevent Default Build |false | Equivalent to using -b without arguments|
-|Build String Override | empty| The custom CFBundleVersion of the wrapped output app |
-|Extension Provisioning Profile Paths | empty| An array of extension provisioning profiles for the app.
+| Plist key | Type |  Default Value | Notes |
+|------------------|-----|--------------|-----|
+| Input Application Package Path |String|empty| Same as -i|
+| Output Application Package Path |String|empty| Same as -o|
+| Provisioning Profile Path |String|empty| Same as -p|
+| SHA-1 Certificate Hash |String|empty| Same as -c|
+| ADAL Authority |String|empty| Same as -aa|
+| ADAL Client ID |String|empty| Same as -ac|
+| ADAL Reply URI |String|empty| Same as -ar|
+| Verbose Enabled |Boolean|false| Same as -v|
+| Remove Missing Entitlements |Boolean|false| Same as -c|
+| Prevent Default Build Update |Boolen|false| Equivalent to using -b without arguments|
+| Build String Override |String|empty| The custom CFBundleVersion of the wrapped output app|
+| Include Citrix XenMobile App SDK (network-only variant)|Boolean|false| Same as -citrix|
+| Extension Provisioning Profile Paths |Array of Strings|empty| An array of extension provisioning profiles for the app.
 
 
 Run the IntuneMAMPackager with the plist as the sole argument:
