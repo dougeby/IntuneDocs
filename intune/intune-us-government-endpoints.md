@@ -57,6 +57,6 @@ The following tables list the ports and services that the Intune client accesses
 - AAD Sync service: https:\//syncservice.gov.us.microsoftonline.com/DirectoryService.svc
 - Evo STS: https:\//login.microsoftonline.us
 - Directory Proxy: https:\//directoryproxy.microsoftazure.us/DirectoryProxy.svc
-- AAD Graph: https:\//directory.microsoftazure.us* and *https:\//graph.microsoftazure.us
+- AAD Graph: https:\//directory.microsoftazure.us and https:\//graph.microsoftazure.us
 - MS Graph: https:\//graph.microsoft.us
 - ADRS: https:\//enterpriseregistration.microsoftonline.us
