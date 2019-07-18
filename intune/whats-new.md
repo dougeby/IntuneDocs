@@ -61,6 +61,9 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
+#### Managed Home Screen and Managed Settings icons <!-- 4918107 -->
+The Managed Home Screen app icon and the **Managed Settings** icon have been updated. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information about the Managed Home Screen app, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+
 #### Android Device Policy on Android Enterprise dedicated devices <!-- 4918136 -->
 You can access the Android Device Policy application from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
 
