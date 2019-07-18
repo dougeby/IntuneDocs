@@ -225,9 +225,8 @@ The following settings are each listed in this article a single time, but all ap
   **Default**: Not configured  
   Firewall CSP: [Shielded](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **Not configured**  
-    - **Block** - Turn off this feature.  
-    - **Allow** - Enable this setting. When this setting and the Windows Defender Firewall are turned on, then all incoming traffic is blocked, regardless of any other policy settings.  
-  
+    - **Block** - When the Windows Defender Firewall is on this setting is set to Block, *all* incoming traffic is blocked, regardless of other policy settings. 
+    - **Allow** - When set to *Allow*, this setting is turned off - and incoming traffic is allowed based on other policy settings.
 
 - **Unicast responses to multicast broadcasts**  
   **Default**: Not configured  
