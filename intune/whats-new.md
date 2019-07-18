@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -63,6 +63,9 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 #### Android Device Policy on Android Enterprise dedicated devices <!-- 4918136 -->
 You can access the Android Device Policy application from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+
+#### iOS Company Portal updates <!-- 3902931 -->
+Your company name on iOS app management prompts will replace the current "i.manage.microsoft.com" text. For instance, users will see their company name instead of "i.manage.microsoft.com" when users attempt to install an iOS app from the Company Portal or when users allow management of the app. This will be rolled out to all customers over the next few days.
 
 ### Device enrollment
 
