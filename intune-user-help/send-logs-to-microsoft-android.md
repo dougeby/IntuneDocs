@@ -37,16 +37,16 @@ Sometimes the Company Portal app may close unexpectedly. App developers want to 
 
 To send logs to Microsoft:
 
-1.  Open the Company Portal app.
+1. Open the Company Portal app.
 
-2.  Tap **Menu** > **Help** > **Email Support**.
+2. Tap **Menu** > **Help** > **Email Support**.
 
     > [!NOTE]
     > **Menu** could be a software button or a hardware button, depending on which Android device you have.
 
-3.  Tap **Upload Logs Only**.
+3. Tap **Upload Logs Only**.
 
-4.  After the upload is complete, you will receive an incident ID. Save the ID for your records.
+4. After the upload is complete, you will receive an incident ID. Save the ID for your records.
 
 To directly contact the Company Portal team for Android, email <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 

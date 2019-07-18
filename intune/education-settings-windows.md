@@ -42,6 +42,7 @@ After you've configured the profile, assign and deploy it to your students.
 ## Take a test settings
 After you create a device configuration profile, go to **Profile type** and select **Secure assessment (Education)**. You'll find the following Take a Test app settings. 
 
+
 - **Account type**: Choose how users sign in to the test. Your options:
   - Azure AD account
   - Domain account

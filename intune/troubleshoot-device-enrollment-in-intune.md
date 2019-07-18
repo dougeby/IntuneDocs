@@ -87,48 +87,48 @@ To avoid hitting device caps, be sure to remove stale device records.
 
 **Resolution:**
 
-1.  Remove the Intune Company Portal app from the device.
+1. Remove the Intune Company Portal app from the device.
 
-2.  On the device, open the browser, browse to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), and try a user login.
+2. On the device, open the browser, browse to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), and try a user login.
 
-3.  If the user fails to sign in, they should try another network.
+3. If the user fails to sign in, they should try another network.
 
-4.  If that fails, validate that the user’s credentials have synced correctly with Azure Active Directory.
+4. If that fails, validate that the user’s credentials have synced correctly with Azure Active Directory.
 
-5.  If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device, you'll need to manually install the Intune Company Portal app, after which you can retry enrolling.
+5. If the user successfully logs in, an iOS device will prompt you to install the Intune Company Portal app and enroll. On an Android device, you'll need to manually install the Intune Company Portal app, after which you can retry enrolling.
 
 ### MDM authority not defined
 **Issue:** A user receives an **MDM authority not defined** error.
 
 **Resolution:**
 
-1.  Verify that the MDM Authority has been [set appropriately](mdm-authority-set.md).
+1. Verify that the MDM Authority has been [set appropriately](mdm-authority-set.md).
     
-2.  Verify that the user’s credentials have synced correctly with Azure Active Directory. You can verify that the user's UPN matches the Active Directory information in the Microsoft 365 admin center.
+2. Verify that the user’s credentials have synced correctly with Azure Active Directory. You can verify that the user's UPN matches the Active Directory information in the Microsoft 365 admin center.
     If the UPN doesn't match the Active Directory information:
 
-    1.  Turn off DirSync on the local server.
+    1. Turn off DirSync on the local server.
 
-    2.  Delete the mismatched user from the **Intune Account Portal** user list.
+    2. Delete the mismatched user from the **Intune Account Portal** user list.
 
-    3.  Wait about one hour to allow the Azure service to remove the incorrect data.
+    3. Wait about one hour to allow the Azure service to remove the incorrect data.
 
-    4.  Turn on DirSync again and check if the user is now synced properly.
+    4. Turn on DirSync again and check if the user is now synced properly.
 
-3.  In a scenario where you're using System Center Configuration Manager with Intune, verify that the user has a valid Cloud User ID:
+3. In a scenario where you're using System Center Configuration Manager with Intune, verify that the user has a valid Cloud User ID:
 
-    1.  Open SQL Management Studio.
+    1. Open SQL Management Studio.
 
-    2.  Connect to the appropriate DB.
+    2. Connect to the appropriate DB.
 
-    3.  Open the databases folder and find and open the **CM_DBName** folder, where DBName is the name of the customer database.
+    3. Open the databases folder and find and open the **CM_DBName** folder, where DBName is the name of the customer database.
 
-    4.  At the top, choose **New Query**  and execute the following queries:
+    4. At the top, choose **New Query**  and execute the following queries:
 
-        -   To see all users:
+        - To see all users:
             `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   To see Specific Users, use the following query, where %testuser1% is a placeholder for username@domain.com for the user you want to look up:
+        - To see Specific Users, use the following query, where %testuser1% is a placeholder for username@domain.com for the user you want to look up:
             `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
         After writing the query, choose **!Execute**.
@@ -217,13 +217,13 @@ If Resolution #2 doesn't work, have your users follow these steps to make Smart 
 
 **Resolution:**
 
-1.  Confirm that the user is assigned an appropriate license for the version of the Intune service that you're using.
+1. Confirm that the user is assigned an appropriate license for the version of the Intune service that you're using.
 
-2.  Confirm that the device isn't already enrolled with another MDM provider.
+2. Confirm that the device isn't already enrolled with another MDM provider.
 
 3. Confirm that the device doesn't already have a management profile installed.
 
-4.  Confirm that Chrome for Android is the default browser and that cookies are enabled.
+4. Confirm that Chrome for Android is the default browser and that cookies are enabled.
 
 ### Android certificate issues
 
@@ -327,15 +327,15 @@ For more information, see [Best practices for securing Active Directory Federati
 
 ### Troubleshooting steps for failed profile installation
 
-1.  Confirm that the user is assigned an appropriate license for the version of the Intune service that you're using.
+1. Confirm that the user is assigned an appropriate license for the version of the Intune service that you're using.
 
-2.  Confirm that the device isn't already enrolled with another MDM provider.
+2. Confirm that the device isn't already enrolled with another MDM provider.
 
 3. Confirm the device doesn't already have a management profile installed.
 
-4.  Navigate to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) and try to install the profile when prompted.
+4. Navigate to [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) and try to install the profile when prompted.
 
-5.  Confirm that Safari for iOS is the default browser and that cookies are enabled.
+5. Confirm that Safari for iOS is the default browser and that cookies are enabled.
 
 ### Enrolled iOS device doesn't appear in console when using System Center Configuration Manager with Intune
 **Issue:** User enrolls iOS device but it doesn't appear in the Configuration Manager admin console. The device doesn't indicate that it's been enrolled. Possible causes:
@@ -434,17 +434,17 @@ To validate and check which process or user account removed the device from the 
 
 #### Check how device was removed
 
-1.  In the Configuration Manager admin console, select **Monitoring** &gt; **System Status** &gt; **Status Message Queries**.
+1. In the Configuration Manager admin console, select **Monitoring** &gt; **System Status** &gt; **Status Message Queries**.
 
-2.  Right-click **Collection Member Resources Manually Deleted** and select **Show Messages**.
+2. Right-click **Collection Member Resources Manually Deleted** and select **Show Messages**.
 
-3.  Pick an appropriate time/date or the last 12 hours.
+3. Pick an appropriate time/date or the last 12 hours.
 
-4.  Find the device in question and review how the device was removed. The Example below shows that the account SCCMInstall deleted the device via an Unknown Application.
+4. Find the device in question and review how the device was removed. The Example below shows that the account SCCMInstall deleted the device via an Unknown Application.
 
     ![Screenshot for device deletion diagnosis](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
 
-5.  Check that Configuration Manager doesn't have a scheduled task, script, or other process, which could be automatically purging non-domain, mobile, or related devices.
+5. Check that Configuration Manager doesn't have a scheduled task, script, or other process, which could be automatically purging non-domain, mobile, or related devices.
 
 ### Other iOS enrollment errors
 A list of iOS enrollment errors is provided in our documentation, in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).

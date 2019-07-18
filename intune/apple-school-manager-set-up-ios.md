@@ -60,15 +60,15 @@ Before you can enroll corporate-owned iOS devices with Apple School Manager, you
 
 ### Step 2. Download a token and assign devices
 1. Choose **Create a token via Apple School Manager**, and sign in to Apple School with your company Apple ID. You can use this Apple ID to renew your Apple School Manager token.
-2.  In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then choose **Add MDM Server** (upper right).
-3.  Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It isn't the name or URL of the Microsoft Intune server.
+2. In the [Apple School Manager portal](https://school.apple.com), go to **MDM Servers**, and then choose **Add MDM Server** (upper right).
+3. Enter the **MDM Server Name**. The server name is for your reference to identify the mobile device management (MDM) server. It isn't the name or URL of the Microsoft Intune server.
    ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-server-assignment.png)
 
-4.  Choose **Upload File...** in the Apple portal, browse to the .pem file, and choose **Save MDM Server** (lower right).
-5.  Choose **Get Token** and then download the server token (.p7m) file to your computer.
+4. Choose **Upload File...** in the Apple portal, browse to the .pem file, and choose **Save MDM Server** (lower right).
+5. Choose **Get Token** and then download the server token (.p7m) file to your computer.
 6. Go to  **Device Assignments**, and **Choose Device** by manual entry of **Serial Numbers**, **Order Number**, or **Upload CSV File**.
      ![Screenshot of Apple School Manager portal with Serial Number option selected](./media/asm-device-assignment.png)
-7.  Choose the action **Assign to Server**, and choose the **MDM Server** you created.
+7. Choose the action **Assign to Server**, and choose the **MDM Server** you created.
 8. Specify how to **Choose Devices**, then provide device information and details.
 9. Choose **Assign to Server** and choose the &lt;ServerName&gt; specified for Microsoft Intune, and then choose **OK**.
 
@@ -170,12 +170,12 @@ Now that you've installed your token, you can create an enrollment profile for A
 After Intune has been assigned permission to manage your Apple School Manager devices, synchronize Intune with the Apple service to see your managed devices in Intune.
 
 In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
-  ![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
+![Screenshot of the Enrollment Program Devices node and Sync link.](./media/device-enrollment-program-enroll-ios/image06.png)
 
-  To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
-  - A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that aren't already listed in Intune.
-  - Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
-  - Intune syncs new and removed devices with Apple every 24 hours.
+To follow Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
+- A full sync can run no more than once every seven days. During a full sync, Intune refreshes every Apple serial number assigned to Intune. If a full sync is attempted within seven days of the previous full sync, Intune only refreshes serial numbers that aren't already listed in Intune.
+- Any sync request is given 15 minutes to finish. During this time or until the request succeeds, the **Sync** button is disabled.
+- Intune syncs new and removed devices with Apple every 24 hours.
 
 >[!NOTE]
 >You can also assign Apple School Manager serial numbers to profiles from the **Enrollment Program Devices** blade.

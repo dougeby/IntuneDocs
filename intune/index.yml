@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: dougeby
-  ms.date: 05/30/2019
+  ms.date: 07/03/2019
   ms.topic: landing-page
   ms.devlang: 
   ms.service: microsoft-intune
@@ -80,7 +80,7 @@ sections:
 - title: Videos
   items:
   - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/ZncVbETBXnM]"
+    text: ">[!VIDEO https://www.youtube.com/embed/DnmnLr2NUXk]"
   - type: paragraph
     text: ' '    
   - type: markdown

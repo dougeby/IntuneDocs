@@ -42,7 +42,7 @@ If Company Portal or the Microsoft Intune app prompts you to encrypt your device
 > [!Note]
 > Certain Android devices from Huawei, Vivo, and OPPO can't be encrypted. Find out more [here](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-1.  Set a device screen lock.  
+1. Set a device screen lock.  
     a. Go to **Settings** > **Lock screen and security** > **Screen lock type**.  
     b. Select either **PIN**, **Password**, or **Pattern**.  
     c. Follow the onscreen instructions to configure your screen lock.  

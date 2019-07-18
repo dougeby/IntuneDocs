@@ -49,11 +49,11 @@ Here are some common scenarios:
 
 When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
 
--   Connecting to corporate e-mail
+- Connecting to corporate e-mail
 
--   Syncing corporate files with the OneDrive for Work app
+- Syncing corporate files with the OneDrive for Work app
 
--   Accessing company apps
+- Accessing company apps
 
 **Block when malicious apps are detected:**
 
@@ -65,7 +65,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 ### Control access based on threat to network
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
 
 **Block network access through Wi-Fi:**
 
@@ -77,7 +77,7 @@ Detect threats like **Man-in-the-middle** in network, and protect access to Wi
 
 ### Control access to SharePoint Online based on threat to network
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
 
 **Block SharePoint Online when network threats are detected:**
 
@@ -89,18 +89,18 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 ## Supported platforms
 
--   **Android 4.1 and later**
+- **Android 4.1 and later**
 
--   **iOS 8 and later**
+- **iOS 8 and later**
 
 ## Pre-requisites
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune subscription
+- Microsoft Intune subscription
 
--   Check Point SandBlast Mobile Threat Defense subscription
-    -   See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
+- Check Point SandBlast Mobile Threat Defense subscription
+  - See [CheckPoint SandBlast website](https://www.checkpoint.com/) for more information.
 
 ## Next steps
 

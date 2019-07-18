@@ -51,13 +51,13 @@ When you specify these actions, Intune will automatically initiate them in the s
 actions for a device that continues to be in the noncompliant status for
 a week:
 
--   When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
+- When the device is first determined to be noncompliant, an email with noncompliant notification is sent to the user.
 
--   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+- 3 days after initial noncompliance state, a follow up reminder is sent to the user.
 
--   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+- 5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
 
--   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have Conditional Access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+- 7 days after initial noncompliance state, access to company resources is blocked. This requires that you have Conditional Access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
 
 ### Grace Period
 
@@ -133,8 +133,8 @@ The following table describes how noncompliant settings are managed when a compl
 
 **Quarantined**: The device operating system doesn't enforce compliance. For example, Android and Android Enterprise devices don't force the user to encrypt the device. When the device isn't compliant, the following actions take place:
 
-  - If a Conditional Access policy applies to the user, the device is blocked.
-  - The Company Portal app notifies the user about any compliance problems.
+- If a Conditional Access policy applies to the user, the device is blocked.
+- The Company Portal app notifies the user about any compliance problems.
 
 ## Azure classic portal vs. Azure portal
 
@@ -143,9 +143,9 @@ The main difference when using device compliance policies in the Azure portal:
 - In the Azure portal, the compliance policies are created separately for each supported platform
 - In the Azure classic portal, one device compliance policy is common to all supported platforms
 
-<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
--   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
 
 Device compliance policies created in the [classic portal](https://manage.microsoft.com) don't appear in the [Azure portal](https://portal.azure.com). However, they’re still targeted to users and manageable using the classic portal.
 

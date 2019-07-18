@@ -56,9 +56,9 @@ App protection policies can be configured for apps that run on devices that are:
 
 **The important benefits of using App protection policies are**:
 
--   Protecting your company data at the app level. Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
+- Protecting your company data at the app level. Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management.
 
--   End-user productivity isn't affected and policies don't apply when using the app in a personal context. The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
+- End-user productivity isn't affected and policies don't apply when using the app in a personal context. The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
 
 There are additional benefits to using MDM with App protection policies, and companies can use App protection policies with and without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by App protection policies while the personal device is protected by App protection policies only.
 
@@ -105,19 +105,19 @@ The preceding illustration shows the layers of protection that MDM and App prote
 
 The MDM solution:
 
--   Enrolls the device
+- Enrolls the device
 
--   Deploys the apps to the device
+- Deploys the apps to the device
 
--   Provides ongoing device compliance and management
+- Provides ongoing device compliance and management
 
 **App protection policies add value by:**
 
--   Helping protect company data from leaking to consumer apps and services
+- Helping protect company data from leaking to consumer apps and services
 
--   Applying restrictions like *save-as*, *clipboard*, or *PIN*, to client apps
+- Applying restrictions like *save-as*, *clipboard*, or *PIN*, to client apps
 
--   Wipe company data from apps without removing those apps from the device
+- Wipe company data from apps without removing those apps from the device
 
 
 ### Data protection with app protection policies for devices without enrollment
@@ -129,11 +129,11 @@ The preceding diagram illustrates how the data protection policies work at the a
 For BYOD devices not enrolled in any MDM solution, App protection policies can help protect company data at the app level.
 However, there are some limitations to be aware of, like:
 
--   You can't deploy apps to the device. The end user has to get the apps from the store.
+- You can't deploy apps to the device. The end user has to get the apps from the store.
 
--   You can't provision certificate profiles on these devices.
+- You can't provision certificate profiles on these devices.
 
--   You can't provision company Wi-Fi and VPN settings on these devices.
+- You can't provision company Wi-Fi and VPN settings on these devices.
 
 ## App protection Global policy
 

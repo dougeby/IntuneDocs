@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2019
+ms.date: 07/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -78,21 +78,24 @@ The following table lists the Managed Home Screen available configuration keys, 
 | Enable home screen feed | bool | FALSE | Enables the feed of the home screen, which can be seen by   swiping left of the home screen. This feed displays different type of content   such as news, calendar, frequently user apps, and Cortana voice assistant card   etc. If you enable this, the end user will be able to navigate to the feed by   swiping left on the home screen. |
 | Enable overview mode | bool | FALSE | Enables the end users to add or remove different pages on the   home screen that can be accessed by swiping right from the default screen. If   you enable this, the end user will be able to add paged to the right of the   default page of the home screen, will also be able to change the default page,   and will also be able to access the settings on the Managed Home Screen. |
 | Enable device telemetry | bool | FALSE | Enables all the telemetry that is being captured for the   managed home screen. If you enable this, Microsoft will be able to capture device usage telemetry, such as the number of times a particular app is launched on this device. |
-| Set whitelisted applications | bundleArray | FALSE | Allows you to define the set of apps visible on the home screen from amongst the apps installed on the device. You can define the apps   by entering the app package name of the apps that you would like to make   visible, for example com.android.settings would make settings accessible on the home   screen. The apps that you allow-list in this section should already be installed on the device in order to be visible on the home screen. |
+| Set allow-listed applications | bundleArray | FALSE | Allows you to define the set of apps visible on the home screen from amongst the apps installed on the device. You can define the apps   by entering the app package name of the apps that you would like to make   visible, for example com.microsoft.emmx would make settings accessible on the home   screen. The apps that you allow-list in this section should already be installed on the device in order to be visible on the home screen. |
 | Set pinned web links | bundleArray | FALSE | Allows you to pin websites as quick launch icons on the home   screen. With this configuration, you can define the URL and add it to the home   screen for the end user to launch in the browser with a single tap. |
 | Enable search bar | bool | FALSE | Enables the search bar on home screen. If you enable this,   users of the device will see the search bar on the home screen where they   would be able to enter whatever they want to search on the web. |
 | Disable settings app | bool | FALSE | Disables the settings page for the Managed Home Screen. If you   disable this, the end user of the device will not be able to get to the   settings of the Managed Home Screen. |
-| Enable screen saver | bool | FALSE | To enable screensaver mode or not. If set to true, you can   configure **screen_saver_image**, **screen_saver_show_time**,   **inactive_time_to_show_screen_saver**, and   **media_detect_screen_saver**. |
-| Screen saver image | string |   | Set the URL of the screensaver image. If no URL is set,   devices will show the default screen when screensaver is activated.  |
-| Screen saver show time | integer | 0 | Gives option to set the amount of time in seconds the device   will display the screensaver during screensaver mode. If set to 0, the   screensaver will show on screensaver mode indefinitely until the device   becomes active.  |
-| Inactive time to enable   screen saver | integer | 30 | The number of seconds the device is inactive before triggering   the screensaver. If set to 0, the device will never go into screensaver mode. |
-| Media detect before showing screen saver | bool | TRUE | Choose whether the device screen should show   screensaver if audio/video is playing on device. If set to true, the   device will not play audio/video, regardless of the value in **inactive_time_to_show_scree_saver**. If set to false, device  screen will show screensaver according to value set in   **inactive_time_to_show_screen_saver**.   |
+| Enable screen saver | bool | FALSE | To enable screen saver mode or not. If set to true, you can   configure **screen_saver_image**, **screen_saver_show_time**,   **inactive_time_to_show_screen_saver**, and   **media_detect_screen_saver**. |
+| Screen saver image | string |   | Set the URL of the screen saver image. If no URL is set,   devices will show the default screen saver image when screen saver is activated. The default image shows the Managed Home Screen app icon.  |
+| Screen saver show time | integer | 0 | Gives option to set the amount of time in seconds the device   will display the screen saver during screen saver mode. If set to 0, the   screen saver will show on screen saver mode indefinitely until the device   becomes active.  |
+| Inactive time to enable   screen saver | integer | 30 | The number of seconds the device is inactive before triggering   the screen saver. If set to 0, the device will never go into screen saver mode. |
+| Media detect before showing screen saver | bool | TRUE | Choose whether the device screen should show   screen saver if audio/video is playing on device. If set to true, the   device will not play audio/video, regardless of the value in **inactive_time_to_show_scree_saver**. If set to false, device  screen will show screen saver according to value set in   **inactive_time_to_show_screen_saver**.   |
 | Enable virtual home button | bool | FALSE | Turn this setting to `True` to allow the end user to have access to a Managed Home Screen home button that will return the user to the Managed Home Screen from the current task they are in.  |
 | Type of virtual home button | string | swipe_up | Use **swipe_up** to access home button with a swipe up gesture. Use **float** to access a sticky, persistent  home button that can be moved around the screen by the end user. |
 | Battery and Signal Strength   indicator bar | bool | True  | Turning this setting to `True` shows the battery and signal strength indicator bar. |
 | Exit lock task mode password | string |   | Enter a 4-6-digit code to use to temporarily drop out of lock-task mode for troubleshooting. |
 | Show Wi-Fi setting | bool | FALSE | Turning this setting to `True` allows the end user to turn on or off Wi-Fi, or to connect to different Wi-Fi networks.  |
 | Show Bluetooth setting | bool | FALSE | Turning this setting to `True` allows the end user to turn on or off Bluetooth and to connect to different Bluetooth-capable devices.   |
+| Applications in folder are ordered by name | bool | TRUE | Turning this setting to `False` allows items in a folder to appear in the order in which they are specified. Otherwise, they will appear in the folder alphabetically.   |
+| Application order enabled | bool | FALSE | Turning this setting to `True` allows enables the ability to set the order of applications, weblinks, and folders on the Managed Home Screen. Once enabled, set the ordering with **app_order**.the end user to turn on or off Bluetooth and to connect to different Bluetooth-capable devices.   |
+| Application order | bundleArray | FALSE | Allows you to specify the order of applications, weblinks and folders on the Managed Home Screen. To use this setting, **Lock Home Screen** must be enabled, **Set grid size** must be defined and **Application order enabled** must be set to `True`.   |
 
 ## Enter JSON Data
 
@@ -115,10 +118,6 @@ The following is an example JSON script with all the available configuration key
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -242,6 +241,87 @@ The following is an example JSON script with all the available configuration key
             "valueBool": false
         },
         {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "key": "managed_folders",
             "valueBundleArray": [
                 {
@@ -306,8 +386,12 @@ The following is an example JSON script with all the available configuration key
         }
     ]
 }
-
 ```
+
+## Managed Home Screen debug screen on Android Enterprise dedicated devices
+
+You can access the Managed Home Screen's debug screen by clicking the **back** button until the debug screen is displayed (click the **back** button 15 times or more). From this debug screen, you are able to launch the Android Device Policy application, view and upload logs, or temporarily leave the Managed Home Screen with a code you define in the console (**Leave kiosk mode code** in [Dedicated device settings](https://docs.microsoft.com/intune/device-restrictions-android-for-work#dedicated-device-settings). 
+
 ## Next steps
 
 - For more information about Android Enterprise dedicated devices, see [Set up Intune enrollment of Android Enterprise dedicated devices](android-kiosk-enroll.md).

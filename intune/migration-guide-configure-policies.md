@@ -34,13 +34,13 @@ The main goal when migrating to Intune is to have all devices enrolled in Intune
 
 Each device platform may offer different settings, but Intune device policies work with each device platform by providing the following mobile device management capabilities:
 
--   Regulate numbers of devices each user enrolls.
+- Regulate numbers of devices each user enrolls.
 
--   Manage devices settings (for example, device-level encryption, password length, camera usage).
+- Manage devices settings (for example, device-level encryption, password length, camera usage).
 
--   Deliver apps, email profiles, VPN profiles, and so on.
+- Deliver apps, email profiles, VPN profiles, and so on.
 
--   Evaluate device-level criteria for security compliance policies.
+- Evaluate device-level criteria for security compliance policies.
 
 > [!IMPORTANT]
 > Device management policies are not assigned directly to individual devices or users, but instead are assigned to user groups. The policies may be directly applied to a user group, and thereby to the user's device, or the policies may be applied to a device group, and thereby to group members.
@@ -65,9 +65,9 @@ You need to create a device configuration profile to enforce device-level settin
 
 #### Directly import iOS configuration profiles (optional)
 
--   **Apple Configurator iOS profiles (iOS 7.1 and later):** If your existing MDM solution uses Apple Configurator profiles (.mobileconfig files), Intune can directly import them as custom configuration policies.
+- **Apple Configurator iOS profiles (iOS 7.1 and later):** If your existing MDM solution uses Apple Configurator profiles (.mobileconfig files), Intune can directly import them as custom configuration policies.
 
--   **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
+- **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
 
 - Learn how to add a custom policy for [iOS](custom-settings-ios.md).
 
@@ -75,25 +75,25 @@ You need to create a device configuration profile to enforce device-level settin
 
 Device compliance policies evaluate security-oriented settings, and provide reporting that shows whether the devices are compliant with corporate standards or not. Such settings include:
 
--   PIN length
+- PIN length
 
--   Jail-broken status
+- Jail-broken status
 
--   OS version
+- OS version
 
 See additional resources for device compliance settings:
 
--   Learn about [device compliance policies](device-compliance.md).
+- Learn about [device compliance policies](device-compliance.md).
 
--   Learn [how to create a device compliance policy](device-compliance-get-started.md).
+- Learn [how to create a device compliance policy](device-compliance-get-started.md).
 
 ### Task 5: Publish and deploy apps
 
 When using Intune MDM, you can supply apps by either requiring their automatic installation, or making them available in the Company Portal.
 
--   [How to add apps](apps-add.md).
+- [How to add apps](apps-add.md).
 
--   [How to deploy apps](apps-deploy.md).
+- [How to deploy apps](apps-deploy.md).
 
 ### Task 6: Enable device enrollment
 

@@ -49,11 +49,11 @@ When you first access work or school data in a managed app, you'll receive a mes
 ## Commonly managed apps  
 Examples of commonly required or available managed apps within schools and workplaces are:
 
--   Microsoft Edge
+- Microsoft Edge
 
--   Microsoft Outlook
+- Microsoft Outlook
 
--   Microsoft Word, Excel, and PowerPoint
+- Microsoft Word, Excel, and PowerPoint
 
 ## How do I get managed apps?
 There are three ways to get managed apps.  

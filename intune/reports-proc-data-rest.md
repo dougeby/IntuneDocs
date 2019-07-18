@@ -46,11 +46,11 @@ running on your local machine references the Intune Data Warehouse API when the 
 1. Sign in to the Azure portal for your tenant. Choose **Azure Active Directory** > **App Registrations** to open the **App registrations** pane.
 2. Select **New app registration**.
 3. Type the app details.
-    1.  Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
-    2.  Select **Native** for the **Application type**.
-    3.  Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type
+    1. Type a friendly name, such as Intune Data Warehouse Client, for the **Name**.
+    2. Select **Native** for the **Application type**.
+    3. Type a URL for the **Sign-on URL**. The Sign-on URL will depend on the specific scenario, however if you plan on using Postman, type
      `https://www.getpostman.com/oauth2/callback`. You will use the callback for client authentication step when authenticating to Azure AD.
-4.  Select **Create**.
+4. Select **Create**.
 
      ![Intune Data Warehouse client app](./media/reports-get_rest_data_client_overview.png)
 
@@ -60,21 +60,21 @@ running on your local machine references the Intune Data Warehouse API when the 
 
 You now have an app defined in Azure. Grant access from the native app to the Microsoft Intune API.
 
-1.  Select the native app. You named the app something such as **Intune Data Warehouse Client**.
-2.  Select **Required permissions** from the **Settings** pane
-3.  Select **Add** in the **Required permissions** pane.
-4.  Select **Select an API**.
-5.  Search for the web app name. It is named **Microsoft Intune API**.
-6.  Select the app in the list.
-7.  Select **Select**.
-8.  Check the **Delegated Permissions** box to add **Get data warehouse information from Microsoft Intune**.
+1. Select the native app. You named the app something such as **Intune Data Warehouse Client**.
+2. Select **Required permissions** from the **Settings** pane
+3. Select **Add** in the **Required permissions** pane.
+4. Select **Select an API**.
+5. Search for the web app name. It is named **Microsoft Intune API**.
+6. Select the app in the list.
+7. Select **Select**.
+8. Check the **Delegated Permissions** box to add **Get data warehouse information from Microsoft Intune**.
 
     ![Enable access - Microsot Intune API](./media/reports-get_rest_data_client_access.png)
 
-9.  Select **Select**.
-10.  Select **Done**.
-11.  Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
-12.  Select **Yes**.
+9. Select **Select**.
+10. Select **Done**.
+11. Optionally, Select **Grant Permissions** in the Required permissions pane. This will grant access to all accounts in the current directory. This will prevent the consent dialog box from appearing for every user in the tenant. For more information, see [Integrating applications with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications).
+12. Select **Yes**.
 
 ## Get data from the Microsoft Intune API with Postman
 
@@ -167,9 +167,10 @@ The following sample contains a simple REST client. The code uses the **httpClie
 6. Select **I Accept** to accept the NuGet package license.
 7. Open `Program.cs` from the Solution Explorer.
 
-    ![Progam.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
+    ![Program.cs and Solution Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
 8. Replace the code in *Program.cs* with the following code:  
+
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

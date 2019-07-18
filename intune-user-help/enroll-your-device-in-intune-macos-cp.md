@@ -66,7 +66,7 @@ Use the following steps to enroll macOS devices running OS X El Capitan 10.11 an
     * If you don't have any devices, the banner reads: **You don't have any managed devices. Add this one by tapping here.** Click the banner to add your device.  
 
      ![A screenshot of the Devices page, with a red square around the banner option to highlight  where to click.](./media/CP-enroll-MACOS-1808.png)  
-5.  Complete the step below that matches the message you currently see in the Company Portal.  
+5. Complete the step below that matches the message you currently see in the Company Portal.  
     * If you're adding a device for the first time, you'll be prompted to download the Company Portal app on your device. Click **Download** to continue.  
 
          ![Example screenshot of the prompt screen to download the macOS Company Portal app. User has the option to select click the blue Download button in the bottom left of the prompt, or the gray Cancel button in the bottom right.](./media/CP-enroll-download-macOS-1808.png)  

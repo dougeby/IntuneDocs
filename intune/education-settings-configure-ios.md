@@ -140,7 +140,7 @@ Under **Student root certificate**, choose the browse button. Select the root ce
 
 Under **Student PKCS#12 certificate**, configure the following values:
 
-- **Subject name format** -  Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
+- **Subject name format** - Intune automatically prefixes common names for teacher certificates with **leader**. Common names for Student certificates are prefixed with **member**.
 - **Certification authority** - An Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. 
 - **Certification authority name** - Enter the name of your certification authority.
 - **Certificate template name** - Enter the name of a certificate template that has been added to an issuing CA. 

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -53,6 +53,18 @@ The app installation error details will indicate the problem. You can use these 
 
 > [!Note]  
 > You can also access the **troubleshooting** pane by pointing your browser to: [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting).
+
+## User Group targeted app installation does not reach device
+The following actions should be considered when you have problems installing apps:
+- If the app does not display in the Company Portal, ensure the app is deployed with **Available** intent and that the user is accessing the Company Portal with the device type supported by the app.
+- For Windows BYOD devices, the user needs to add a Work account to the device.
+- Check if the user is over the AAD device limit:
+  1. Navigate to [Azure Active Directory Device Settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  2. Make note of the value set for **Maximum devices per user**.
+  3. Navigate to [Azure Active Directory Users](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  4. Select the affected user and click **Devices**.
+  5. If user is over the set limit then delete any stale records that are no longer needed.
+- For iOS DEP devices, ensure that the user is listed as **Enrolled by User** in Intune Device Overview blade. If it shows NA, then deploy a config policy for the Intune Company Portal. For more information, see [Configure the Company Portal app](https://docs.microsoft.com/intune/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## Win32 app installation troubleshooting
 
@@ -152,8 +164,14 @@ The following error messages and descriptions provide details about both Android
 
 The information in the topic [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) helps you troubleshoot common problems you might encounter when installing apps from the Microsoft Store, whether by using Intune, or by any other means.
 
+## App troubleshoooting resources
+- [Deploying Visio and Project as part of your Office Pro Plus Deployment](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
+- [Take Action to Ensure MSfB Apps deployed through Intune install on Windows 10 1903](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
+- [Troubleshooting MSI app deployments in Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
+- [Best practices for software distribution to Intune classic Windows PC agent](https://support.microsoft.com/en-us/help/2583929/best-practices-for-intune-software-distribution-to-windows-pc)
+
 ## Next steps
 
 - For additional Intune troubleshooting information, see [Use the troubleshooting portal to help users at your company](help-desk-operators.md). 
-- Learn about any known issues in Microsoft Intune. For more information, see [Known issues in Microsoft Intune](known-issues.md).
+- Learn about any known issues in Microsoft Intune. For more information, see [Intune Customer Success](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess).
 - Need extra help? See [How to get support for Microsoft Intune](get-support.md).

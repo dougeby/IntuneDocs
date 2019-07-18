@@ -40,29 +40,29 @@ The actual error details are kept on your device in a special document called a 
 
 ## Upload and email logs from Company Portal  
 
-1.  In the Company Portal app, there are two ways to initiate email support.
+1. In the Company Portal app, there are two ways to initiate email support.
     * From the home screen: Tap **Menu** > **Help** > **Email Support**.  
     * From an error message: Tap **HELP** or **SEND INFO**, if available.  
 
     > [!NOTE]
     > **Menu** could be a software button or a hardware button, depending on which Android device you have.  
 
-3.  Tap **Send Email & Upload Logs**.  
-4.  After the upload is complete, tap your email app. 
+3. Tap **Send Email & Upload Logs**.  
+4. After the upload is complete, tap your email app. 
 5. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you came across.    
 
 
 ## Upload and email logs from Microsoft Intune app   
 
-1.  In the Microsoft Intune app, there are two ways to initiate email support.  
+1. In the Microsoft Intune app, there are two ways to initiate email support.  
     * From the home screen: Tap **Menu** > **Help** > **Get Support**.  
     * From an error message: Tap **HELP** or **SEND INFO**, if available.  
 
     > [!NOTE]
     > **Menu** could be a software button or a hardware button, depending on which Android device you have.
 
-3.  Tap **UPLOAD LOGS**.  
-4.  After the upload is complete, tap **EMAIL** and select your email app.  
+3. Tap **UPLOAD LOGS**.  
+4. After the upload is complete, tap **EMAIL** and select your email app.  
 5. An email message will open with the incident ID pre-populated in the subject field. In the body of the email, describe the problem that you came across.  
 
 ## Next steps  

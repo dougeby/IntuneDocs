@@ -39,10 +39,10 @@ In this tutorial, you'll learn how to:
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
 ## Prerequisites
-  - You'll need a test tenant with the following subscriptions for this tutorial:
-    - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
-  - Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
+- You'll need a test tenant with the following subscriptions for this tutorial:
+  - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- Before you begin, create a test device profile for iOS devices by following the steps in [Quickstart: Create an email device profile for iOS](quickstart-email-profile.md).
 
 ## Sign in to Intune
 
@@ -57,7 +57,7 @@ Set up an Intune device compliance policy to set the conditions that a device mu
 4. Under **Platform**, select **iOS**. 
 5. Select **Settings** > **Email**. 
      
-    1.  Next to **Require mobile devices to have a managed email profile**, select **Require**.
+    1. Next to **Require mobile devices to have a managed email profile**, select **Require**.
     2. Select **OK**.
 
     ![Set the email compliance policy to require a managed email profile](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -81,7 +81,7 @@ Set up an Intune device compliance policy to set the conditions that a device mu
 ## Create the Conditional Access policy
 Now we’ll create a Conditional Access policy that requires all device platforms to enroll in Intune and comply with our Intune compliance policy before they can access Exchange Online. We'll also require the Outlook app for email access. Conditional Access policies are configurable in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.
 1. In Intune, select **Conditional Access** > **Policies** > **New policy**.
-1.  In **Name**, enter **Test policy for Office 365 email**. 
+1. In **Name**, enter **Test policy for Office 365 email**. 
 3. Under **Assignments**, select **Users and groups**. On the **Include** tab, select **All users**, and then select **Done**.
 
 4. Under **Assignments**, select **Cloud apps**. Because we want to protect Office 365 Exchange Online email, we'll select it by following these steps:

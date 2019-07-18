@@ -131,9 +131,9 @@ Microsoft Edge must be installed on the device.
 Base settings are universal BitLocker settings for all types of data drives. These settings manage what drive encryption tasks or configuration options the end user can modify across all types of data drives.
 
 - **Warning for other disk encryption**: Select **Block** to disable the warning prompt if another disk encryption service is on the device. **Not configured** (default) allows the warning to be shown.
-    - **Allow standard users to enable encryption during Azure AD Join**: When you choose **Allow**, standard users/non-administrators can enable BitLocker encryption when the user is signed in. This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. **Not configured** only allows Administrators to enable BitLocker encryption on the device.
-      
-      This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. It also requires that the **Warning for other disk encryption** setting be set to **Block**.
+  - **Allow standard users to enable encryption during Azure AD Join**: When you choose **Allow**, standard users/non-administrators can enable BitLocker encryption when the user is signed in. This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. **Not configured** only allows Administrators to enable BitLocker encryption on the device.
+
+    This setting only applies to Azure Active Directory Joined (Azure ADJ) devices. It also requires that the **Warning for other disk encryption** setting be set to **Block**.
 - **Configure encryption methods**: **Enable** this setting to configure encryption algorithms for operating system, data, and removable drives. When **Not configured** (default), BitLocker uses XTS-AES 128 bit as the default encryption method, or uses the encryption method specified by any setup script.
   - **Encryption for operating system drives**: Choose the encryption method for operating system drives. We recommend you use the XTS-AES algorithm.
   - **Encryption for fixed data-drives**: Choose the encryption method for fixed (built-in) data drives. We recommend you use the XTS-AES algorithm.

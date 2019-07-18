@@ -36,39 +36,39 @@ Choose a migration approach that is most suitable for your organization's needs 
 
 These are the keys to migrating successfully from a third-party MDM provider to Intune:
 
--   Clear and helpful communication can minimize end-user downtime and dissatisfaction.
+- Clear and helpful communication can minimize end-user downtime and dissatisfaction.
 
--   Be sure to have specific and concrete migration instructions.
+- Be sure to have specific and concrete migration instructions.
 
--   All managed devices must be unenrolled from your existing MDM provider before they can be enrolled in Intune.
+- All managed devices must be unenrolled from your existing MDM provider before they can be enrolled in Intune.
 
--   Provide guidance from your existing MDM provider to end-users for how to unenroll their devices.
+- Provide guidance from your existing MDM provider to end-users for how to unenroll their devices.
 
--   Use a phased approach. Start with a small group of pilot users and incrementally add more groups of users until you reach full scale deployment.
+- Use a phased approach. Start with a small group of pilot users and incrementally add more groups of users until you reach full scale deployment.
 
--   Monitor the helpdesk load and enrollment success of each cycle. Leave time in the schedule to ensure success criteria can be evaluated for each group before migrating the next. Your pilot deployment should validate the following:
+- Monitor the helpdesk load and enrollment success of each cycle. Leave time in the schedule to ensure success criteria can be evaluated for each group before migrating the next. Your pilot deployment should validate the following:
 
-    -   Enrollment success and failure rates are within expectations.
+  - Enrollment success and failure rates are within expectations.
 
-    -   User productivity:
+  - User productivity:
 
-        -   Corporate resources such as VPN, Wi-Fi, email, and certificates are working.
+    - Corporate resources such as VPN, Wi-Fi, email, and certificates are working.
 
-        -   Provisioned apps are accessible.
+    - Provisioned apps are accessible.
 
-    -   Data security:
+  - Data security:
 
-        -   Compliance reporting is occurring.
+    - Compliance reporting is occurring.
 
-        -   Mobile app protections are enforced.
+    - Mobile app protections are enforced.
 
 When you are satisfied with the first phase of migrations, repeat the [migration cycle](migration-guide-cycle.md) for the next phase.
 
--   Repeat phased cycles until all users are migrated to Intune.
+- Repeat phased cycles until all users are migrated to Intune.
 
--   Ensure the helpdesk team is ready to support end users throughout the migration campaign. Run a voluntary migration until you can estimate support call workload.
+- Ensure the helpdesk team is ready to support end users throughout the migration campaign. Run a voluntary migration until you can estimate support call workload.
 
--   Don’t set deadlines for enrollment until the remaining population can be handled by your helpdesk
+- Don’t set deadlines for enrollment until the remaining population can be handled by your helpdesk
 
 > [!IMPORTANT]
 > Do not configure both Intune and your existing third party MDM solution to apply access controls to resources such as Exchange or SharePoint Online. Additionally, devices should only be enrolled in one solution at a time.

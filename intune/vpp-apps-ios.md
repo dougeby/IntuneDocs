@@ -163,6 +163,13 @@ You can renew an Apple VPP token by downloading a new token from Apple Volume Pu
 
 Currently, you cannot delete an iOS VPP app from Microsoft Intune.
 
+## Assigning custom role permissions for VPP
+
+Access to iOS VPP tokens and iOS VPP apps can be controlled independently using permissions assigned to custom administrator roles in Intune.
+
+* To allow an Intune custom role to manage iOS VPP tokens under **Client apps** > **iOS VPP tokens**, assign permissions for **Managed apps**.
+* To allow an Intune custom role to manage apps purchased using iOS VPP tokens under **Client apps** > **Apps**, assign permissions for **Mobile apps**. 
+
 ## Additional information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.

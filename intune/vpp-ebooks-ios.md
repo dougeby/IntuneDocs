@@ -61,9 +61,9 @@ Before you start, get a VPP token from Apple and upload it to your Intune accoun
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
-1.  In the **Client apps** workload, choose **Setup** > **iOS VPP Tokens**.
-2.  On the list of VPP tokens pane, click **Create**.
-3.  On the **New VPP Token** pane, specify the following information:
+1. In the **Client apps** workload, choose **Setup** > **iOS VPP Tokens**.
+2. On the list of VPP tokens pane, click **Create**.
+3. On the **New VPP Token** pane, specify the following information:
     - **VPP token file** - Ensure you have signed for the Volume Purchase Program for Business or the Volume Purchase Program for Education. Then, download the Apple VPP token for your account and select it here.
     - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
     - **Type of VPP account** - Choose from **Business** or **Education**.

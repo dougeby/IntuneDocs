@@ -37,15 +37,15 @@ After you assess your environment, it’s time to set up Microsoft Intune.
 
 Intune requires Azure Active Directory (AAD) as the identity and user grouping provider. Learn more about:
 
--  [Identity requirements](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+- [Identity requirements](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [Directory synchronization requirements](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+- [Directory synchronization requirements](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Multi-factor authentication (MFA)](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
--   [Planning your user and device groups](users-add.md)
+- [Planning your user and device groups](users-add.md)
 
--   [How to create user and device groups](groups-get-started.md)
+- [How to create user and device groups](groups-get-started.md)
 
 If your organization is already using Office 365, Intune must use the same Azure Active Directory environment.
 
@@ -53,9 +53,9 @@ If your organization is already using Office 365, Intune must use the same Azure
 
 If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-mail profiles with Intune, you’ll need to make sure that you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles. Learn more about configuring certificates in Intune:
 
--   [How to configure the certificate infrastructure for SCEP](/intune/certificates-scep-configure)
+- [How to configure the certificate infrastructure for SCEP](/intune/certificates-scep-configure)
 
--   [How to configure the certificate infrastructure for PFX](/intune/certficates-pfx-configure).
+- [How to configure the certificate infrastructure for PFX](/intune/certficates-pfx-configure).
 
 
 ## Task list for an Intune setup
@@ -64,17 +64,17 @@ If you're planning to use certificate-based authentication for VPN, Wi-Fi, or e-
 
 Before you can migrate to Intune, you first need an Intune subscription.
 
--   You can visit [this page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), which gives you instructions on how to:
+- You can visit [this page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0), which gives you instructions on how to:
 
-    -   Create a new Intune subscription linked to a new AAD tenant.
+  - Create a new Intune subscription linked to a new AAD tenant.
 
-    -   Link the Intune subscription by signing into an existing AAD tenant.
+  - Link the Intune subscription by signing into an existing AAD tenant.
 
 ### Task 2: Assign Intune user licenses
 
--   Learn [how to assign Intune user licenses](licenses-assign.md).
+- Learn [how to assign Intune user licenses](licenses-assign.md).
 
--   If you have created a new Azure Active Directory tenant, learn [how to create new users or sync user from your on-premises Active Directory (AD).](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
+- If you have created a new Azure Active Directory tenant, learn [how to create new users or sync user from your on-premises Active Directory (AD).](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)
 
 ### Task 3: Set your MDM authority to Intune
 

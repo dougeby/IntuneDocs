@@ -39,7 +39,7 @@ If you're using a corporate-enrolled device, you may not see the option to reset
 
 ## Reset your passcode
 
-1.  Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
+1. Open the [Company Portal website](https://portal.manage.microsoft.com) and select the __Menu__ button > __Devices__.  
 
 2. Select the device that needs a passcode reset.  
 

@@ -39,31 +39,31 @@ Complete the following steps to integrate the Better Mobile Threat Defense solut
 
 Before starting the process of integrating Better Mobile with Intune, make sure you have the following:
 
--   Microsoft Intune subscription
+- Microsoft Intune subscription
 
--   Azure Active Directory admin credentials to grant the following permissions:
+- Azure Active Directory admin credentials to grant the following permissions:
 
-    -   Sign in and read user profile
+  - Sign in and read user profile
 
-    -   Access the directory as the signed-in user
+  - Access the directory as the signed-in user
 
-    -   Read directory data
+  - Read directory data
 
-    -   Send device information to Intune
+  - Send device information to Intune
 
--   Admin credentials to access the Better Mobile admin console.
+- Admin credentials to access the Better Mobile admin console.
 
 ### Better Mobile app authorization
 
 The Better Mobile app authorization process follows:
 
--   Allow the Better Mobile service to communicate information related to device health state back to Intune.
+- Allow the Better Mobile service to communicate information related to device health state back to Intune.
 
--   Better Mobile syncs with Azure AD Enrollment Group membership to populate its device's database.
+- Better Mobile syncs with Azure AD Enrollment Group membership to populate its device's database.
 
--   Allow the Better Mobile admin console to use Azure AD Single Sign On (SSO).
+- Allow the Better Mobile admin console to use Azure AD Single Sign On (SSO).
 
--   Allow the Better Mobile app to sign in using Azure AD SSO.
+- Allow the Better Mobile app to sign in using Azure AD SSO.
 
 ## To set up Better Mobile integration
 
@@ -82,4 +82,4 @@ The Better Mobile app authorization process follows:
 
 ## Next steps
 
--   [Set up Better Client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Set up Better Client apps](mtd-apps-ios-app-configuration-policy-add-assign.md)

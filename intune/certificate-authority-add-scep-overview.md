@@ -126,6 +126,7 @@ The following third-party certification authorities support Intune:
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 

@@ -34,9 +34,9 @@ ms.collection: M365-identity-device-management
 You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users from the Intune app protection pane in the [Azure portal](https://portal.azure.com). Additionally, you can find information about the users affected by MAM policies, MAM policy compliance status, and any issues that your users might be experiencing.
 
 There are three different places to monitor the compliance status of MAM policies:
--   Summary view
--   Detailed view
--   Reporting view
+- Summary view
+- Detailed view
+- Reporting view
 
 > [!NOTE]
 > For information about creating app protection policies, see [How to create and assign app protection policies](app-protection-policies.md).
@@ -83,7 +83,7 @@ You can search for a single user and check the compliance status for that user. 
 
 To see the reporting for a user, follow these steps:
 
-1.  To select a user, choose the **User status** summary tile.
+1. To select a user, choose the **User status** summary tile.
 
     ![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
 
@@ -112,12 +112,12 @@ The **Reports** blade provides several reports based on user and app, including 
 
 - **App report**: In addition to selecting the platform and app, this report provides two different app protection statuses that you can select before generating the report. The statuses can be **Protected** or **Unprotected**.
 
-    -   User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per user basis. It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
-    -   User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
-        -   These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
-        -   All apps are checked in, but aren't getting any MAM policies.
+  - User status for managed MAM activity (**Protected**): This report outlines the activity of each managed MAM app, on a per user basis. It shows all apps targeted by MAM policies for each user, and break down the status of each app as checked in with MAM policies, or that was targeted with a MAM policy but the app was never checked in.
+  - User status for unmanaged MAM activity (**Unprotected**): This report outlines the activity of MAM-enabled apps that are currently unmanaged, on a per user basis. This might happen according to the following reasons:
+    - These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
+    - All apps are checked in, but aren't getting any MAM policies.
 
-        ![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
+    ![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
 
 - **User configuration report**: Based on a selected user, this report provides details about any app configurations the user has received.
 - **App configuration report**: Base on the selected platform and app, this report provides details about which users have received configurations for the selected app.

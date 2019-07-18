@@ -36,8 +36,8 @@ With Intune, you can use device configuration profiles to manage common endpoint
 For example, you can create an endpoint protection profile that only allows macOS users to install apps from the Mac App Store. Or, enable Windows SmartScreen when running apps on Windows 10 devices.
 
 Before you create a profile, review the following articles that detail the endpoint protection settings Intune can manage for each supported platform: 
-   - [macOS settings](endpoint-protection-macos.md)
-   - [Windows 10 settings](endpoint-protection-windows-10.md)
+- [macOS settings](endpoint-protection-macos.md)
+- [Windows 10 settings](endpoint-protection-windows-10.md)
 
 ## Create a device profile containing endpoint protection settings
 
