@@ -241,7 +241,7 @@ You can use <code>$select</code> as an OData query parameter. The current versio
 ### New entities in the in Data Warehouse data model <!-- 2077804 -->
 
 - The entity, [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md), has been added. The **MobileAppDeviceUserInstallStatus** represents a mobile app install status for a given device and user.
-- The entity, [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate), has been added. The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users, or both. 
+- The entity, [**MobileAppInstallStates**](reports-ref-application.md#mobileappinstallstates), has been added. The **MobileAppInstallState** entity represents the install state for a mobile application after it has been assigned to a group containing devices, users, or both. 
 
 ## 1710
 _Released November  2017_
