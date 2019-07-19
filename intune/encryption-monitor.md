@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -96,7 +96,10 @@ When you select a device from the Encryption report, Intune displays the **Devic
 - **Profile state summary** – A summary of the profiles that apply to this device. The summary represents the least favorable condition across the applicable profiles. For example, if only one out of several applicable profiles results in an error, the *Profile state summary* will display *Error*.  
 
 - **Status details** – Advanced details about the device’s encryption state.  
-  > [!NOTE]  
+  > [!NOTE]
+  > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, device status details and device encryption details for macOS might not accurately display in the encryption report.
+
+  > [!IMPORTANT]  
   > For Windows 10 devices, Intune only shows *Status details* for devices that run the *Windows 10 April 2019 Update* or later.  
   
   This field displays information for each applicable error that can be detected. You can use this information to understand why a device might not be encryption ready.  
