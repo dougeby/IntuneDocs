@@ -100,12 +100,17 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
       
      - **Personal recovery key rotation** - Specify how frequently the personal recovery key for a device will rotate. You can select the default of **Not configured**, or a value of **1** to **12** months.  
 
-  - **Defer FileVault until sign out**  
+  - **Defer FileVault until sign out** 
+    > [!NOTE]
+    > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.   
+
     FileVault will not be enabled until the user signs out. A local user or mobile account user will be prompted to enable FileVault on sign out or the next sign in.  
     - **Not configured**  
     - **Enable**  
     
     **Default**: Not configured  
+
+
 
     - **Disable prompt at sign out**  
       Prevent the prompt to the user that requests they enable FileVault when they sign out.  

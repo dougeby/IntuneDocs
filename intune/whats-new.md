@@ -77,7 +77,12 @@ You can use Intune to [manage FileVault key encryption for macOS devices](encryp
 
 Our support for FileVault includes encrypting unencrypted devices, escrow of a devices personal recovery key, automatic or manual rotation of personal encryption keys, and key retrieval for your corporate devices. End users can also use the Company Portal website to get the personal recovery key for their encrypted devices. 
 
-We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place.  
+We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
+
+  > [!NOTE]
+  > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete:
+   > - If you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
+   > - Device status details and device encryption details for macOS might not accurately display in the encryption report.
 
 
 ### Device enrollment
