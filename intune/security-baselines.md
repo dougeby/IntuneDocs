@@ -78,6 +78,9 @@ The following security baseline instances are available for use with Intune. Use
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
   - [Preview: Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
+  > [!NOTE]
+  > The Microsoft Defender ATP security baseline has been optimized for physical devices and is currently not recommended for use on virtual machines (VMs) or VDI endpoints. Certain baseline settings can impact remote interactive sessions on virtualized environments.  For more information, see [Increase compliance to the Microsoft Defender ATP security baseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines) in the Windows documentation.
+
 You can continue to use and edit profiles that you previously created based on a preview template, even when that preview template is no longer available for creating new profiles. 
 
 ## Prerequisites
@@ -206,4 +209,5 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
   - [MDM security baseline](security-baseline-settings-mdm.md)  
   - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
-- Check the status and monitor the [baseline and profile](security-baselines-monitor.md).
+- Check the status and monitor the [baseline and profile](security-baselines-monitor.md)
+
