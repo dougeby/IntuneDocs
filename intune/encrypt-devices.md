@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -70,6 +70,9 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
    For example: To retrieve a lost or recently rotated recovery key, sign in to the Intune Company Portal website from any device. In the portal, go to *Devices* and select the device that has FileVault enabled, and then select *Get recovery key*. The current recovery key is displayed.  
 
 6. Configure the remaining settings to meet your business needs, and then select **OK**.  
+
+   > [!NOTE]
+   > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
 
 7. Complete configuration of additional settings, and then save the profile.  
 
