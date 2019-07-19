@@ -54,7 +54,7 @@ Custom notification messages include a short title and a message body of 500 cha
 
 **Delivery**:  
 - Intune attempts delivery for up to one hour after a notification is sent.  
-- Intune sends the message to the Company Portal app, which then creates the push notification on the device. Users don't need to be signed into the app or a device for the notification to be pushed on the device.  
+- Intune sends messages to the users' Company Portal app, which then creates the push notification. Users don't need to be signed into the app for the notification to be pushed on the device.  
 - Intune and the Company Portal app can’t guarantee delivery of a custom notification. Custom notifications might show up after several hours of delay, if at all, so they shouldn't be used for urgent messages.  
 - Custom notification messages from Intune appear on devices as standard push notifications. If the Company Portal app is open on an iOS device when it receives the notification, the notification displays in the app instead of being a push notification.  
 - Custom notifications can be visible on lock screens on both iOS and Android devices depending on device settings.  
