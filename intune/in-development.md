@@ -90,9 +90,6 @@ You create Windows 10 device configuration profiles (**Device configuration** > 
 Applies to: 
 - Windows 10 and later
 
-### Manage FileVault for macOS   <!--  3858502 + 1210104   -->
-You’ll be able to use an Intune endpoint protection device configuration profile to manage FileVault key encryption for macOS devices. This includes escrow of, viewing of and rotating the encryption keys of your corporate devices. End users will be able to retrieve those keys through the Company Portal website.
-
 ### Advanced settings for Windows Defender Firewall   <!--  1311949     -->
 As a public preview, you'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender.  
 
