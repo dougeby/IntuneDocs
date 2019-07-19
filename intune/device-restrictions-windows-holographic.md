@@ -96,7 +96,7 @@ A kiosk device typically runs a specific app. Users are prevented from accessing
   
     When you add apps for a multi-app kiosk experience, you also add a start menu layout file. [Start menu layout file](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) includes sample XML that can be used in Intune. 
 
-#### Single app kiosks
+### Single app kiosks
 
 Enter the following settings:
 

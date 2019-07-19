@@ -315,7 +315,7 @@ When you enable Credential Guard, the following required features are also enabl
 
 Windows Defender Security Center operates as a separate app or process from each of the individual features. It displays notifications through the Action Center. It acts as a collector or single place to see the status and run some configuration for each of the features. Find out more in the [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) docs.
 
-#### Windows Defender Security Center app and notifications
+### Windows Defender Security Center app and notifications
 
 Block end-user access to the various areas of the Windows Defender Security Center app. Hiding a section also blocks related notifications.
 
@@ -326,7 +326,7 @@ Block end-user access to the various areas of the Windows Defender Security Cent
 - **Family options**
 - **Notifications from the displayed areas of app**: Choose which notifications to display to end users. Non-critical notifications include summaries of Windows Defender Antivirus activity, including notifications when scans have completed. All other notifications are considered critical.
 
-#### IT contact Information
+### IT contact Information
 
 Provide IT contact information to appear in the Windows Defender Security Center app and the app notifications. You can choose to **Display in app and in notifications**, **Display only in app**, **Display only in notifications**, or **Don't display**. Enter the **IT organization name**, and at least one of the following contact options:
 

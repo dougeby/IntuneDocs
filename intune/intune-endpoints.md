@@ -85,7 +85,7 @@ The following tables list the ports and services that the Intune client accesses
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
 
-### Network requirements for Powershell scripts and Win32 apps
+## Network requirements for Powershell scripts and Win32 apps
 If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
 
 |ASU | Storage name | CDN |
@@ -112,19 +112,19 @@ If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also n
 | AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
 | AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
-### Windows Push Notification Services (WNS)
+## Windows Push Notification Services (WNS)
 For Intune-managed Windows devices managed using Mobile Device Management (MDM), device actions and other immediate activities require the use of Windows Push Notification Services (WNS). For more information see [Allowing Windows Notification traffic through enterprise firewalls](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    
 
-### Delivery Optimization port requirements
+## Delivery Optimization port requirements
 
-#### Port requirements
+### Port requirements
 For peer-to-peer traffic, Delivery Optimization uses 7680 for TCP/IP or 3544 for NAT traversal (optionally Teredo). 
 For client-service communication, it uses HTTP or HTTPS over port 80/443.
 
-#### Proxy requirements
+### Proxy requirements
 To use Delivery Optimization, you must allow Byte Range requests. For more information, see [Proxy requirements for Windows Update](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting).
 
-#### Firewall requirements
+### Firewall requirements
 Allow the following hostnames through your firewall to support Delivery Optimization.
 For communication between clients and the Delivery Optimization cloud service:
 - *.do.dsp.mp.microsoft.com
@@ -133,7 +133,7 @@ For Delivery Optimization metadata:
 - *.dl.delivery.mp.microsoft.com
 - *.emdl.ws.microsoft.com
 
-### Apple device network information
+## Apple device network information
 
 
 |Used for|Hostname (IP address/subnet)|Protocol|Port|

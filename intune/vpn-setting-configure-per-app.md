@@ -52,7 +52,7 @@ Zscaler Private Access (ZPA) integrates with Azure Active Directory (Azure AD) f
 
 To prove its identity, the VPN server presents the certificate that must be accepted without a prompt by the device. To confirm the automatic approval of the certificate, create a trusted certificate profile that contains the VPN server's root certificate issued by the Certification Authority (CA). 
 
-#### Export the certificate and add the CA
+### Export the certificate and add the CA
 
 1. On your VPN server, open the administration console.
 2. Confirm that your VPN server uses certificate-based authentication. 

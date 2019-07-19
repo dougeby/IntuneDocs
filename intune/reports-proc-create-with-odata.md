@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 This article explains how to create a treemap visualization using Power BI Desktop with an interactive filter. For example, your CFO might like to how the overall distribution of devices compares to just company owned to personal devices. The treemap provides insight into the total number of device types. You can review the number of iOS, Android, and Windows devices that are either company owned or personally owned.
 
-### Overview of creating the chart
+## Overview of creating the chart
 
 To create this chart, you must:
 1. Install Power BI Desktop if you don't already have it.
