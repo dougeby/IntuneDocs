@@ -215,7 +215,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Spotlight search to return results from internet (supervised only)**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** allows Spotlight search connect to the Internet to provide search results.
 - **Block removal of system apps from device (supervised only)**: Choosing **Block** disables the ability to remove system apps from the device. **Not configured** allows users to remove system apps.
 
-#### Safari
+### Safari
 
 - **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
 - **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
