@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -70,9 +70,24 @@ You can access the Android Device Policy application from the Managed Home Scree
 #### iOS Company Portal updates <!-- 3902931 -->
 Your company name on iOS app management prompts will replace the current "i.manage.microsoft.com" text. For instance, users will see their company name instead of "i.manage.microsoft.com" when users attempt to install an iOS app from the Company Portal or when users allow management of the app. This will be rolled out to all customers over the next few days.
 
+### Device configuration
+
+#### Manage FileVault for macOS   <!--  3858502 + 4557986 + 1210104  -->
+You can use Intune to [manage FileVault key encryption for macOS devices](encrypt-devices.md). To encrypt devices, you use an endpoint protection device configuration profile.
+
+Our support for FileVault includes encrypting unencrypted devices, escrow of a devices personal recovery key, automatic or manual rotation of personal encryption keys, and key retrieval for your corporate devices. End users can also use the Company Portal website to get the personal recovery key for their encrypted devices. 
+
+We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
+
+  > [!NOTE]
+  > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete:
+   > - If you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
+   > - Device status details and device encryption details for macOS might not accurately display in the encryption report.
+
+
 ### Device enrollment
 
-### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
+#### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
 When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user. This feature will be rolled out to all customers over the next few days.
 
 ## Week of July 8, 2019
