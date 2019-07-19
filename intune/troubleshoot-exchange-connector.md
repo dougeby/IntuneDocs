@@ -54,5 +54,5 @@ Check the [Intune on-premises Exchange connector setup](exchange-connector-insta
 - To get a list of SMTP addresses for a mailbox, use Get-Mailbox -Identity user | select emailaddresses | fl
 - To get detailed information about a device's access state, use Get-CASMailbox <upn> | fl
 
-### Next steps
+## Next steps
 If this information doesn't help you, you can also [get support for Microsoft Intune](get-support.md).

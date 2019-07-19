@@ -81,19 +81,19 @@ Depending on the settings you choose, not all values may be configurable.
   - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
   - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
 
-#### Pulse Secure example
+### Pulse Secure example
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### F5 Edge Client example
+### F5 Edge Client example
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### SonicWALL Mobile Connect example
+### SonicWALL Mobile Connect example
 **Login group or domain**: This property can't be set in the VPN profile. Instead, Mobile Connect parses this value when the user name and domain are entered in the `username@domain` or `DOMAIN\username` formats.
 
 Example:
@@ -102,13 +102,13 @@ Example:
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### CheckPoint Mobile VPN example
+### CheckPoint Mobile VPN example
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### Writing custom XML
+### Writing custom XML
 For more information about writing custom XML commands, see each manufacturer's VPN documentation.
 
 For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
