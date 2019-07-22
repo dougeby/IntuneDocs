@@ -112,6 +112,9 @@ Be sure to [assign the profile](device-profile-assign.md) and [monitor its statu
 
 The next time the device checks for configuration updates, the OEM-specific settings you configured are applied to the OEMConfig app.
 
+> [!NOTE]
+> The OEMConfig standard doesn't currently include status reporting, so profiles will show a status of **Pending** by default.
+
 ## Supported OEMConfig apps
 
 Compared to standard apps, OEMConfig apps expand the managed configurations privileges granted by Google to support more complex schemas. Intune currently supports the following OEMConfig apps:
