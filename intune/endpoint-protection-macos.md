@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -100,31 +100,20 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
       
     - **Personal recovery key rotation** - Specify how frequently the personal recovery key for a device will rotate. You can select the default of **Not configured**, or a value of **1** to **12** months.  
 
-  - **Defer FileVault until sign out**  
-    > [!NOTE]
-    > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.   
-
-    FileVault will not be enabled until the user signs out. A local user or mobile account user will be prompted to enable FileVault on sign out or the next sign in.  
+  - **Disable prompt at sign out**  
+    Prevent the prompt to the user that requests they enable FileVault when they sign out.  When set to disabled, the prompt at sign-out is disabled and instead, the user is prompted when they sign in.  
     - **Not configured**  
-    - **Enable**  
+    - **Disable**  
+
     **Default**: Not configured  
 
+  - **Number of times allowed to bypass**  
+  Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
 
-
-    - **Disable prompt at sign out**  
-      Prevent the prompt to the user that requests they enable FileVault when they sign out.  
-      - **Not configured**  
-      - **Enable**  
-
-      **Default**: Not configured  
-
-    - **Number of times allowed to bypass**  
-    Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
-
-      - **Not configured** - Encryption on the device is required before the next sign-in is allowed.  
-      -  **1** to **10** - Allow a user to ignore the prompt from 1 to 10 times before requiring encryption on the device.  
-      - **No limit, always prompt** - The user is prompted to enable FileVault but encryption is never required.  
+    - **Not configured** - Encryption on the device is required before the next sign-in is allowed.  
+    -  **1** to **10** - Allow a user to ignore the prompt from 1 to 10 times before requiring encryption on the device.  
+    - **No limit, always prompt** - The user is prompted to enable FileVault but encryption is never required.  
  
-      **Default**: Not configured  
+    **Default**: Not configured  
 
 
