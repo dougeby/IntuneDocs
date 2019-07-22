@@ -449,3 +449,4 @@ Use these options to configure the local security settings on Windows 10 devices
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
 
 Configure endpoint protections settings on [macOS](endpoint-protection-macos.md) devices.
+  
