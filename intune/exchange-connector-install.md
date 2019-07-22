@@ -166,7 +166,7 @@ When you support 5,000 or more devices with Exchange ActiveSync, you can configu
 2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
 3. Locate **EnableParallelCommandSupport** and set the value to **true**:  
      
-       <EnableParallelCommandSupport>**true**</EnableParallelCommandSupport>
+       <EnableParallelCommandSupport>true</EnableParallelCommandSupport>
 4. Save the file, and then restart the Microsoft Intune Exchange connector service.
 
 ## Reinstall the on-premises Exchange connector
