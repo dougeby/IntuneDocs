@@ -66,7 +66,7 @@ You can now configure both general app and data protection configuration setting
 
 ### Device configuration
 
-#### Intune PowerShell SDK <!-- 4924113 wnready --> 
+#### Intune PowerShell SDK <!-- 4924113 --> 
 
 The Intune PowerShell SDK, which provides support for the Intune API through Microsoft Graph, has been updated to version 6.1907.1.0. The SDK now supports the following:
 - Works with Azure Automation.
