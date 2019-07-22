@@ -107,7 +107,6 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     FileVault will not be enabled until the user signs out. A local user or mobile account user will be prompted to enable FileVault on sign out or the next sign in.  
     - **Not configured**  
     - **Enable**  
-
     **Default**: Not configured  
 
 
