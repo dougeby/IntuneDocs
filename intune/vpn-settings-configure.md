@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/25/2018
+ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -64,6 +64,7 @@ You can create VPN profiles using the following connection types:
 |Custom VPN|No|Yes|Yes|No|No|No|
 
 <sup>1</sup> These VPN client apps can be configured using app configuration policy for Android Enterprise. See [Add app configuration policies for managed Android Enterprise devices](app-configuration-policies-use-android.md).
+
 > [!IMPORTANT]
 > Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](app-management.md) article to help you assign the app by using Intune.  
 
