@@ -144,11 +144,11 @@ Conditional Access for PCs provides capabilities similar to those available for 
 
 - **AD domain joined and System Center Configuration Manager:** As of current branch, System Center Configuration Manager provides Conditional Access capabilities that can evaluate specific compliance criteria, in addition to being a domain-joined PC:
 
-    - Is the PC encrypted?
+  - Is the PC encrypted?
 
-    - Is anti-malware installed? Is it up-to-date?
+  - Is anti-malware installed? Is it up-to-date?
 
-    - Is the device jailbroken or rooted?
+  - Is the device jailbroken or rooted?
 
 #### Bring your own device (BYOD)
 

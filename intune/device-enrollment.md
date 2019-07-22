@@ -105,8 +105,8 @@ Learn more about iOS DEP enrollment:
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
-  - Locked enrollment
-  - Kiosk mode and other advanced configurations and restrictions
+- Locked enrollment
+- Kiosk mode and other advanced configurations and restrictions
 
 Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 

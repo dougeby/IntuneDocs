@@ -54,10 +54,10 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 You can decide which MTD toggle options you need to enable according to your organization's requirements. Here are more details:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-    - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have iOS 8.0+ devices reporting security risk back to Intune.
-    - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Enable App Sync for iOS Devices**: Allows this Mobile Threat Defense partner to request metadata of iOS applications from Intune to use for threat analysis purposes.
 

@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -57,6 +57,39 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
+## Week of July 15, 2019 
+
+### App management
+
+#### Managed Home Screen and Managed Settings icons <!-- 4918107 -->
+The Managed Home Screen app icon and the **Managed Settings** icon have been updated. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information about the Managed Home Screen app, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+
+#### Android Device Policy on Android Enterprise dedicated devices <!-- 4918136 -->
+You can access the Android Device Policy application from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+
+#### iOS Company Portal updates <!-- 3902931 -->
+Your company name on iOS app management prompts will replace the current "i.manage.microsoft.com" text. For instance, users will see their company name instead of "i.manage.microsoft.com" when users attempt to install an iOS app from the Company Portal or when users allow management of the app. This will be rolled out to all customers over the next few days.
+
+### Device configuration
+
+#### Manage FileVault for macOS   <!--  3858502 + 4557986 + 1210104  -->
+You can use Intune to [manage FileVault key encryption for macOS devices](encrypt-devices.md). To encrypt devices, you use an endpoint protection device configuration profile.
+
+Our support for FileVault includes encrypting unencrypted devices, escrow of a devices personal recovery key, automatic or manual rotation of personal encryption keys, and key retrieval for your corporate devices. End users can also use the Company Portal website to get the personal recovery key for their encrypted devices. 
+
+We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
+
+  > [!NOTE]
+  > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete:
+   > - If you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
+   > - Device status details and device encryption details for macOS might not accurately display in the encryption report.
+
+
+### Device enrollment
+
+#### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
+When Autopilot reset is used on a device, the device's primary user will be removed. The next user who signs in after the reset will be set as the primary user. This feature will be rolled out to all customers over the next few days.
+
 ## Week of July 8, 2019
 
 ### New Office, Windows, and OneDrive settings in Windows 10 administrative templates <!-- 3510695 -->
@@ -74,7 +107,9 @@ Applies to: Windows 10 and later
 ### App management
 
 #### AAD and APP on Android Enterprise devices <!-- 3574267 -->
-When onboarding fully managed Android Enterprise devices, you can enable Azure Active Directory (AAD) registration before Intune onboarding is completed. In addition, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+When onboarding fully managed Android Enterprise devices, users will now register with Azure Active Directory (AAD) during the initial setup of their new or factory reset device. Previously for a fully managed device, after setup was complete, the user had to manually launch the Microsoft Intune app to start AAD registration. Now when the user lands on the device home page after initial setup, the device is both enrolled and registered.
+
+In addition to the AAD updates, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 ## Week of June 24, 2019 
 

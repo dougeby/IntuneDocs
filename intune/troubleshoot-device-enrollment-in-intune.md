@@ -505,5 +505,5 @@ The account certificate of the previous account is still present on the computer
 
 
 
-### Next steps
+## Next steps
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](get-support.md).
