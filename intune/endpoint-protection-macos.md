@@ -96,7 +96,7 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
   - **Recovery key type**  
     *Personal key* recovery keys are created for devices. Configure the following settings for the personal key.  
 
-    - **Location of personal recovery key** - Specify a short message to the user that explains how they can retrieve their personal recovery key. This text is inserted into the message the user sees when enabling FileVault.  
+    - **Location of personal recovery key** - Specify a short message to the user that explains how and where they can retrieve their personal recovery key. This text is inserted into the message the user sees on their log in screen when prompted to enter their personal recovery key if a password is forgotten.  
       
     - **Personal recovery key rotation** - Specify how frequently the personal recovery key for a device will rotate. You can select the default of **Not configured**, or a value of **1** to **12** months.  
 
