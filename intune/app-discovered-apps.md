@@ -46,7 +46,7 @@ Intune provides a list of detected apps on the Intune enrolled devices in your t
 
 The following list provides the app platform type, the apps that are monitored for personal devices, the apps that are monitored for company-owned devices, and the refresh cycle. For more information about app types supported by Intune, see [App types in Microsoft Intune](apps-add.md#app-types-in-microsoft-intune).
 
-| Platform | For Personal-owned Devices | For Company-owned devices | Refresh Cycle |
+| Platform | For personally-owned devices | For company-owned devices | Refresh cycle |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
 | Windows 10 (Win32 Apps) NOTE: [Requires Intune Management Extension](intune-management-extension.md) on device | Not Applicable | All Win32 Apps found in Add Remove Programs list | Every 24 hours from device enrollment |
 | Windows 10 (Modern Apps) | Only managed modern apps | All modern apps installed on the device | Every 7 days from device enrollment |
