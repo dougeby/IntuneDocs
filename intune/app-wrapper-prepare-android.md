@@ -43,9 +43,9 @@ Before running the tool, review [Security considerations for running the App Wra
 
 - Your input app must be a valid Android application package with the file extension .apk and:
 
-    - It cannot be encrypted.
-    - It must not have previously been wrapped by the Intune App Wrapping Tool.
-    - It must be written for Android 4.0 or later.
+  - It cannot be encrypted.
+  - It must not have previously been wrapped by the Intune App Wrapping Tool.
+  - It must be written for Android 4.0 or later.
 
 - The app must be developed by or for your company. You cannot use this tool on apps downloaded from the Google Play Store.
 
@@ -159,7 +159,7 @@ To prevent potential spoofing, information disclosure, and elevation of privileg
 
 - Secure the output directory that has the wrapped app. Consider using a user-level directory for the output.
 
-### See also
+## See also
 - [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Microsoft Intune App SDK for Android developer guide](app-sdk-android.md)

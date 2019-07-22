@@ -382,6 +382,8 @@
         href: privacy-data-view-correct.md
       - name: Audit, export, delete
         href: privacy-data-audit-export-delete.md
+    - name: Encrypt devices
+      href: encrypt-devices.md
     - name: Conditional Access
       href: conditional-access.md
       items:
@@ -997,4 +999,6 @@
     - name: Prevent unauthorized access
       href: data-outside-protect.md
     - name: Prevent data leaks on non-managed devices
-      href: data-leak-prevention.md
+      href: data-leak-prevention.md  
+  - name: Intune end user documentation  
+    href: /intune-user-help/use-managed-devices-to-get-work-done  
