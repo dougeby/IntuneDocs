@@ -388,9 +388,8 @@ The following is an example JSON script with all the available configuration key
 }
 ```
 
-## Managed Home Screen debug screen on Android Enterprise dedicated devices
-
-You can access the Managed Home Screen's debug screen by clicking the **back** button until the debug screen is displayed (click the **back** button 15 times or more). From this debug screen, you are able to launch the Android Device Policy application, view and upload logs, or temporarily leave the Managed Home Screen with a code you define in the console (**Leave kiosk mode code** in [Dedicated device settings](https://docs.microsoft.com/intune/device-restrictions-android-for-work#dedicated-device-settings). 
+## Google's Android Device Policy app
+The Managed Home Screen app now provides access to Google's Android Device Policy app. The Managed Home Screen app is a custom launcher used for devices enrolled in Intune as Android Enterprise (AE) dedicated devices using multi-app kiosk mode. You can access the Android Device Policy app, or guide users to the Android Device Policy app, for support and debug purposes. This launching capability is available at the time the device enrolls and locks into Managed Home Screen. No additional installations are needed to use this functionality.
 
 ## Next steps
 
