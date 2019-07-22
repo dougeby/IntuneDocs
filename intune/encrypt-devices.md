@@ -59,24 +59,24 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
    - Platform: macOS  
    - Profile type: Endpoint protection  
 
-3. Select **Settings** > **FileVault**.
+3. Select **Settings** > **FileVault**.  
 
 4. For *FileVault*, select **Enable**.  
 
 5. For *Recovery key type*, only **Personal key** is supported.  
 
    Consider adding a message to help guide end-users on how to retrieve the recovery key for their device. This information can be useful for your end-users when you use the setting for Personal recovery key rotation, which can automatically generate a new recovery key for a device periodically.  
-   
-   For example:  To retrieve a lost or recently rotated recovery key, sign in to the Intune Company Portal website from any device. In the portal, go to *Devices* and select the device that has FileVault enabled, and then select *Get recovery key*. The current recovery key is displayed.  
+
+   For example: To retrieve a lost or recently rotated recovery key, sign in to the Intune Company Portal website from any device. In the portal, go to *Devices* and select the device that has FileVault enabled, and then select *Get recovery key*. The current recovery key is displayed.  
 
 6. Configure the remaining settings to meet your business needs, and then select **OK**.  
-   
+
    > [!NOTE]
-   > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.   
+   > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
 
 7. Complete configuration of additional settings, and then save the profile.  
 
-###  Manage FileVault  
+### Manage FileVault  
 
 After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md).  
 
@@ -96,7 +96,7 @@ Configure BitLocker when you create a [device configuration profile](device-prof
 
 2. Set the following options:  
    - Platform: Windows 10 and later  
-   - Profile type: Endpoint protection   
+   - Profile type: Endpoint protection  
 
 3. Select **Settings** > **Windows Encryption**.
 

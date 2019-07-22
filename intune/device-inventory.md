@@ -100,6 +100,7 @@ Depending on the carrier used by the devices, not all details might be collected
 |Last contact|The date and time that the device last connected to Intune.|Windows, iOS, Android|
 |Activation lock bypass code|The code that can be used to bypass the activation lock.|Windows, iOS, Android|
 |Azure AD registered|If **Yes**, the device is registered with Azure Directory.|Windows, iOS, Android|
+|Intune registered|If **Yes**, the device is registtered with Intune|Windows, iOS, Android|
 |Compliance|The device's compliance state.|Windows, iOS, Android|
 |EAS activated|If **Yes**, then the device is synchronized with an Exchange mailbox.|Windows, iOS, Android|
 |EAS activation ID|The device's Exchange ActiveSync identifier.|Windows, iOS, Android|

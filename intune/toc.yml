@@ -273,6 +273,8 @@
       href: device-remove-user.md
     - name: Find primary user
       href: find-primary-user.md
+    - name: Send notifications
+      href: custom-notifications.md
     - name: Erase macOS device
       href: device-erase.md
     - name: Remote control mobile devices
