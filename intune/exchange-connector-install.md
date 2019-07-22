@@ -156,11 +156,11 @@ High availability for the on-premises Exchange connector means that should the E
 To accomplish failover, after the connector creates a successful connection to Exchange using the specified CAS, the connector discovers additional CASs for that Exchange organization. Knowledge of additional CASs enables the connector to failover to another CAS if one is available, until the primary CAS becomes available. By default, discovery of additional CASs is enabled. You can turn off failover by using the following procedure:  
 1. On the server where the Exchange connector is installed, go to %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
 2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.    
+3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.  
  
-## Optional Performance tuning for the Exchange connector 
+## Optional Performance tuning for the Exchange connector  
 
-When you support 5,000 or more devices with Exchange ActiveSync, you can configure the following optional settings to improve performance of the connector. These settings are not suitable for connector thats installed on older or slower hardware.  
+When you support 5,000 or more devices with Exchange ActiveSync, you can configure the following optional settings to improve performance of the connector. These settings are not suitable for connectors that run on older or slower hardware.  
 
 1. On the server where the connector installed, open the connectors installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
 2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
