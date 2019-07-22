@@ -45,7 +45,7 @@ Intune provides a list of detected apps on the Intune enrolled devices in your t
 ## Details of discovered apps
 
 | Platform | For Personal-owned Devices | For Company-owned devices | Refresh Cycle |
-|:----------------------------------------------------------------------:|:--------------------------------:|:------------------------------------------------:|:-------------------------------------:|
+|------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
 | Windows 10 (Win32 Apps)*Requires Intune Management Extension on device | Not Applicable | All Win32 Apps found in Add Remove Programs list | Every 24 hours from device enrollment |
 | Windows 10 (Modern Apps) | Only managed modern apps | All modern apps installed on the device | Every 7 days from device enrollment |
 | Windows 8.1 | Only managed apps | Only managed apps | Every 7 days from device enrollment |
@@ -56,12 +56,11 @@ Intune provides a list of detected apps on the Intune enrolled devices in your t
 | Android | Only managed apps | All apps installed on the device | Every 7 days from device enrollment |
 | Android Enterprise | Only managed apps | Only apps installed in the Work Profile | Every 7 days from device enrollment |
 
-> [!NOTE]
-> The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
-> - A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
-> - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
-> - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
+The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
+- A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
+- Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
+- Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.
 
 ## Next steps
 
-- [Add an app to Microsoft Intune](apps-add.md)
+- [Monitor app information and assignments with Microsoft Intune](apps-monitor.md)
