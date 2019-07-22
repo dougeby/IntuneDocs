@@ -6,7 +6,7 @@ description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual 
 audience: microsoft-business
 ms.service: microsoft-intune
