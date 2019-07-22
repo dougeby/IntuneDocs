@@ -71,9 +71,6 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 6. Configure the remaining [FileVault settings](endpoint-protection-macos.md#filevault) to meet your business needs, and then select **OK**.  
 
-   > [!NOTE]
-   > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete, if you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
-
 7. Complete configuration of additional settings, and then save the profile.  
 
 ### Manage FileVault  
