@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Intune discovered apps
 
-Intune **discovered apps** is a list of detected apps on the Intune enrolled devices in your tenant. It acts as a software inventory for your tenant. **Discovered apps** is a separate report from the app installation reports. For personal devices, Intune never collects information on applications that are unmanaged. On corporate devices, any app whether it is a managed app or not is collected for this report. Below is the table mapping the expected behavior. In general, the report refreshes every 7 days from the time of enrollment (not a weekly refresh for the entire tenant). The only exception to this refresh period is application information collected through the Intune Management Extension for Win32 Apps, which is collected every 24 hours.
+Intune **discovered apps** is a list of detected apps on the Intune enrolled devices in your tenant. It acts as a software inventory for your tenant. **Discovered apps** is a separate report from the [app installation](apps-monitor.md) reports. For personal devices, Intune never collects information on applications that are unmanaged. On corporate devices, any app whether it is a managed app or not is collected for this report. Below is the table mapping the expected behavior. In general, the report refreshes every 7 days from the time of enrollment (not a weekly refresh for the entire tenant). The only exception to this refresh period is application information collected through the Intune Management Extension for Win32 Apps, which is collected every 24 hours.
 
 ## Monitor discovered apps with Intune
 
@@ -40,13 +40,15 @@ Intune provides a list of detected apps on the Intune enrolled devices in your t
 2. In the **Intune** pane, select **Client apps** > **Discovered apps**.
 
 >[!NOTE]
->You can export the list of discovered apps to a .csv file by selecting **Export** in the **Discovered apps** blade.
+>You can export the list of discovered apps to a .csv file by selecting **Export** from the **Discovered apps** blade.
 
 ## Details of discovered apps
 
+The following list provides the app platform type, the apps that are monitored for personal devices, the apps that are monitored for company-owned devices, and the refresh cycle. For more information about app types supported by Intune, see [App types in Microsoft Intune](apps-add.md#app-types-in-microsoft-intune).
+
 | Platform | For Personal-owned Devices | For Company-owned devices | Refresh Cycle |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (Win32 Apps)*Requires Intune Management Extension on device | Not Applicable | All Win32 Apps found in Add Remove Programs list | Every 24 hours from device enrollment |
+| Windows 10 (Win32 Apps) NOTE: [Requires Intune Management Extension](intune-management-extension.md) on device | Not Applicable | All Win32 Apps found in Add Remove Programs list | Every 24 hours from device enrollment |
 | Windows 10 (Modern Apps) | Only managed modern apps | All modern apps installed on the device | Every 7 days from device enrollment |
 | Windows 8.1 | Only managed apps | Only managed apps | Every 7 days from device enrollment |
 | Windows Phone 8 | Only managed apps | Only managed apps | Every 7 days from device enrollment |
@@ -63,4 +65,5 @@ The number of discovered apps may not match the app install status count. Possib
 
 ## Next steps
 
+- [App types in Microsoft Intune](apps-add.md#app-types-in-microsoft-intune)
 - [Monitor app information and assignments with Microsoft Intune](apps-monitor.md)
