@@ -45,7 +45,6 @@ Manual deletion of a certificate is a scenario that applies across platforms and
 
 In this scenario, after the certificate is deleted, the next time the device checks in with Intune it's found to be out of compliance as it is missing the expected certificate. Intune then issues a new certificate to restore the device to compliance. No additional action is needed to restore the certificate.
 
-
 ## Windows devices
 
 ### SCEP certificates
@@ -212,5 +211,5 @@ SCEP certificates *stay* on the device (certificates aren't revoked or removed) 
 
 ### PKCS certificates
 
-PKCS certificates are not supported on macOS.
+PKCS certificates aren't supported on macOS.
 
