@@ -158,6 +158,16 @@ To accomplish failover, after the connector creates a successful connection to E
 2. Using a text editor, open **OnPremisesExchangeConnectorServiceConfiguration.xml**.
 3. Change &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; to &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; to disable the feature.    
  
+## Optional Performance tuning for the Exchange connector 
+
+When you support 5,000 or more devices with Exchange ActiveSync, you can configure the following optional settings to improve performance of the connector. These settings are not suitable for connector thats installed on older or slower hardware.  
+
+1. On the server where the connector installed, open the connectors installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Locate **EnableParallelCommandSupport** and set the value to **true**:  
+     
+       <EnableParallelCommandSupport>**true**</EnableParallelCommandSupport>
+4. Save the file, and then restart the Microsoft Intune Exchange connector service.
 
 ## Reinstall the on-premises Exchange connector
 You might need to reinstall an Exchange connector. Because a single connector is supported to connect to each Exchange organization, if you install a second connector for an organization, the new connector you install replaces the original connector.
