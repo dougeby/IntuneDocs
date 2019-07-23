@@ -66,21 +66,21 @@ Take note of the **Connection Name** value you specify when creating the VPN pro
 6. From the **Profile type** drop-down list, choose **Custom**.
 7. Choose **Settings** > **Configure**.
 3. On the **Custom OMA-URI Settings** pane, choose **Add**.
-	- Enter a setting name.
-	- For **OMA-URI**, specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, where *Name* is the connection name you noted in Step 1. In this example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-	- For **Data type**, specify **String**.
-	- For **Value**, create a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter **com.microsoft.office.excel;com.android.chrome**.
+    - Enter a setting name.
+    - For **OMA-URI**, specify this string: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, where *Name* is the connection name you noted in Step 1. In this example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - For **Data type**, specify **String**.
+    - For **Value**, create a semicolon-separated list of packages to associate with the profile. For example, if you want Excel and the Google Chrome browser to use the VPN connection, enter **com.microsoft.office.excel;com.android.chrome**.
 
 ![Example Android per-app VPN custom policy](./media/android_per_app_vpn_oma_uri.png)
 
 ### Set your app list to blacklist or whitelist (optional)
   You can specify a list of apps that *cannot* use the VPN connection by using the **BLACKLIST** value. All other apps connect through the VPN.
   Alternatively, you can use the **WHITELIST** value to specify a list of apps that *can* use the VPN connection. Apps that are not on the list do not connect through the VPN.
-  1.	On the **Custom OMA-URI Settings** pane, choose **Add**.
-  2.	Enter a setting name.
-  3.	For **OMA-URI**, use this string: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, where *Name* is the VPN profile name you noted in Step 1. In our example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-  4.	For **Data type**, specify **String**.
-  5.	For **Value**, enter **BLACKLIST** or **WHITELIST**.
+  1. On the **Custom OMA-URI Settings** pane, choose **Add**.
+  2. Enter a setting name.
+  3. For **OMA-URI**, use this string: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, where *Name* is the VPN profile name you noted in Step 1. In our example, the string would be **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  4. For **Data type**, specify **String**.
+  5. For **Value**, enter **BLACKLIST** or **WHITELIST**.
 
 
 

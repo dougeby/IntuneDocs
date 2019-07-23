@@ -15,14 +15,14 @@ We **want and encourage contributions** from our community (users, customers, pa
 * **Use your browser**: There are two options: 
 
     **Option 1: Edit directly from docs.microsoft.com**  
-    1. Go to the topic, such as [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
+    1. Go to the topic, such as [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
     2. Select **Edit** (top right). This shows the markdown file in the GitHub repository.
     3. Select the pencil icon. When you hover over the pencil icon, you'll see the **Edit this file** tooltip. 
     4. Make your changes, and then **commit** your changes. 
     5. Create the pull request.
     
     **Option 2: Find the article in this repository, and update**  
-    1.  Most topics are in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In this folder, search for the topic name, such as `troubleshoot-policies-in-microsoft-intune`. 
+    1. Most topics are in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In this folder, search for the topic name, such as `troubleshoot-policies-in-microsoft-intune`. 
     2. Select the link, and click the pencil icon. When you hover over the pencil icon, you'll see the **Edit this file** tooltip. 
     3. Make your changes, and then **commit** your changes. 
     4. Create the pull request. 

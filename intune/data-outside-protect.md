@@ -26,7 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
---- 
+---
 # Prevent unauthorized access to company data using Microsoft Intune
 
 You can classify, label, and protect Office 365 documents and emails so only authorized users have access to the data. The settings are managed automatically after IT administrators or users set the rules and conditions. Alternatively, the IT team can provide recommended settings for users to follow. Administrators and users can also revoke access to data already shared with others without assistance from another authority. The result of this work is to control who opens or updates protected data, even when the data leaves the company's network. 

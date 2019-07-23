@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Learn about the settings you can review in the app protection logs. Access logs 
 
 The process to enable and collect logs varies by platform:
 - **Android devices** - Use the *Company Portal*. See [Email logs to your company support](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **iOS deices** - Use a Managed Browser, or *Microsoft Edge* to collect logs. For details, see the Intune support team blog [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
+- **iOS devices** - Use a Managed Browser, or *Microsoft Edge* to collect logs. For details, see the Intune support team blog [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021). 
 - **Windows 10 devices** - Use *MDMDiag* and event logs. See, [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) in the Windows client management content, and the blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures)
 
 
@@ -76,5 +76,5 @@ The following table lists the name and an explanation of the settings recorded i
 
 ## Next steps
 
- - To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
- - Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](help-desk-operators.md).
+- To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
+- Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](help-desk-operators.md).

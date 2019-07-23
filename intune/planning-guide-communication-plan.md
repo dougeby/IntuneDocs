@@ -32,13 +32,13 @@ ms.collection: M365-identity-device-management
 
 Good change management relies on clear and helpful communications about the upcoming changes. To smooth the path of your Intune deployment, your rollout communication plan should include four areas:
 
--   What information is to be communicated
+- What information is to be communicated
 
--   The delivery method used for the communications
+- The delivery method used for the communications
 
--   Who receives the communications
+- Who receives the communications
 
--   The timeline for communications
+- The timeline for communications
 
 Let’s review each area in more detail.
 
@@ -60,13 +60,13 @@ You may find this [end-user enrollment guide](https://gallery.technet.microsoft.
 
 There are several delivery methods you can use to communicate Intune rollout information to your targeted organizational groups and users. The following list shows some examples and the wave you can use the method with:
 
--   Organizational-wide in-person or Microsoft Teams meetings used for kickoff wave
+- Organizational-wide in-person or Microsoft Teams meetings used for kickoff wave
 
--   Email used for pre-enrollment, enrollment, and post-enrollment waves
+- Email used for pre-enrollment, enrollment, and post-enrollment waves
 
--   Organization web sites used for all waves
+- Organization web sites used for all waves
 
--   Yammer, posters, and flyers used for kickoff and pre-enrollment waves
+- Yammer, posters, and flyers used for kickoff and pre-enrollment waves
 
 ## Communications timeline
 

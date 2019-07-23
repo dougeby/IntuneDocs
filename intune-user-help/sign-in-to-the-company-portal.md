@@ -60,13 +60,13 @@ The following steps show screenshots from the Company Portal for iOS.
 
 ## Sign in with certificate-based authentication
 
-1.	Open the Company Portal app on your device.  
+1. Open the Company Portal app on your device.  
 
-2.	Enter your **Work or school account**.  
+2. Enter your **Work or school account**.  
 
-3.	Tap the **Sign in with a certificate** link.  
+3. Tap the **Sign in with a certificate** link.  
 
-4.	Tap **Continue** to use the certificate.  
+4. Tap **Continue** to use the certificate.  
 
 ## Sign in from another device
 

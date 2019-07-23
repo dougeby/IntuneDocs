@@ -45,7 +45,7 @@ When a push certificate expires, you must renew it. When renewing, make sure to 
 
 
 ## Steps to get your certificate
-In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in the [Azure portal](https://portal.azure.com).
+Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), choose **Device enrollment** > **Apple Enrollment** > **Apple MDM Push Certificate**, and then follow these steps in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 
 ### Step 1. Grant Microsoft permission to send user and device information to Apple
 Select **I agree.** to give Microsoft permission to send data to Apple.
@@ -55,7 +55,7 @@ Select **I agree.** to give Microsoft permission to send data to Apple.
 ### Step 2. Download the Intune certificate signing request required to create an Apple MDM push certificate
 Select **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 
-  ### Step 3. Create an Apple MDM push certificate
+### Step 3. Create an Apple MDM push certificate
 Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Sign in with your company Apple ID, and then click **Create a Certificate**. Select **Choose File** and browse to the certificate signing request file, and then choose **Upload**. On the Confirmation page, choose **Download** to the download the certificate (.pem)  file, and save the file locally.
 
 > [!NOTE]
@@ -72,7 +72,7 @@ The Apple MDM push certificate is valid for one year and must be renewed annuall
 
 The certificate is associated with the Apple ID used to create it. Renew the MDM push certificate with the same Apple ID used to create it.
 
-1. In the [Azure portal](https://portal.azure.com), choose **Device enrollment** > **Apple Enrollment**, and then choose the **Apple MDM Push Certificate** tile in the details area.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), choose **Device enrollment** > **Apple Enrollment**, and then choose the **Apple MDM Push Certificate** tile in the details area.
 2. Choose **Download your CSR** to download and save the request file locally. The file is used to request a trust relationship certificate from the Apple Push Certificates Portal.
 3. Select **Create your MDM push Certificate** to go to the Apple Push Certificates Portal. Find the certificate you want to renew and select **Renew**.
 4. On the **Renew Push Certificate** screen, provide notes to help you identify the certificate in the future, select **Choose File** to browse to the new request file you downloaded, and choose **Upload**.
@@ -80,6 +80,6 @@ The certificate is associated with the Apple ID used to create it. Renew the MDM
    > A Certificate can be identified by its UID. Examine the **Subject ID** in the certificate details to find the GUID portion of the UID. Or, on an enrolled iOS device, go to **Settings** > **General** > **Device** **Management** > **Management Profile** > **More Details** > **Management Profile**. The second line item, **Topic**, contains the unique GUID that you can match up to the certificate in the Apple Push Certificates portal.
  
 6. On the **Confirmation** screen, select **Download** and save the .pem file locally.
-7. In the [Azure portal](https://portal.azure.com), select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
+7. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select the **Apple MDM push certificate** browse icon, select the .pem file downloaded from Apple, and choose **Upload**.
 
 Your Apple MDM push certificate appears **Active** and has 365 days until expiration.

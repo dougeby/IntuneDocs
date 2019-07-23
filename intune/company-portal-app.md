@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -37,18 +37,20 @@ The Microsoft Intune company portal is where users access company data and can d
 > [!IMPORTANT]
 > To support Google’s Firebase Cloud Messaging (FCM), you must update your Android Company Portal app to the latest version. For more information, see What's New - [Update your Android Company Portal app to the latest version](whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
 
-> [!Tip]		
+> [!Tip]
 > When you customize the Company Portal, the configurations apply to both the Company Portal website and Company Portal apps. Note that users must have an Intune license assigned to access the Company Portal website.
 
-By customizing the Company Portal, you will help provide a familiar and helpful experience for your end users. To do this, in the Intune portal, select **Client apps** > **Branding and customization**, and then configure the required settings.	
+By customizing the Company Portal, you will help provide a familiar and helpful experience for your end users. To do this, in the Intune portal, select **Client apps** > **Branding and customization**, and then configure the required settings.
 
-> [!Note]		
+When a user is installing an iOS application from the Company Portal they will receive a prompt. This occurs when the iOS app is linked to the app store, linked to a volume-purchase program (VPP), or linked to a line-of-business (LOB) app. The prompt allows the users to accept the action or allow management of the app. The prompt will display your company name, or when your company name is unavailable, **Company Portal** will be displayed. 
+
+> [!Note]
 > If you are using Azure Government, app logs are offered to the end user to decide how they will share when they initiate the process to get help with an issue. However, if you are not using Azure Government, the Company Portal for Windows 10 will send app logs directly to Microsoft when the user initiates the process to get help with an issue. Sending the app logs to Microsoft will make it easier to troubleshoot and resolve issues. 
 
-## Company information and privacy statement		
+## Company information and privacy statement
 The company name is displayed as the Company Portal title. The privacy statement is displayed when a user clicks on the privacy link.
 
-Fields marked with an asterisk (*) are mandatory.		
+Fields marked with an asterisk (*) are mandatory.
 
 
 | Field name | Max length | More information |
@@ -56,8 +58,8 @@ Fields marked with an asterisk (*) are mandatory.
 |**Company name**| 40 | This name is displayed as the title of the Company Portal and appears as text throughout the Intune user experience. |
 | **Privacy statement URL** |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format `<https://www.contoso.com>`. |
 
-## Support information		
-Enter your company's support information to provide your employee with a contact for Intune-related questions.  		
+## Support information
+Enter your company's support information to provide your employee with a contact for Intune-related questions.
 
 |Field name|Max length|More information|
 |---|---|---|
@@ -69,8 +71,8 @@ Enter your company's support information to provide your employee with a contact
 | **Additional information**| 120 | Displayed on the **Contact IT** page. |
 
 
-## Company identity branding customization		
-You can customize your Company Portal with your company logo, company name, theme color and background. 	
+## Company identity branding customization
+You can customize your Company Portal with your company logo, company name, theme color and background.
 
 ### Theme color and logo in the Company Portal
 Apply a theme color to the Company Portal. Select a standard color or enter a six-digit hex code for a custom color.
@@ -97,7 +99,7 @@ Display a brand image that reflects your company brand. After you save your chan
 
 |Field name|More information|
 |---|---|
-|**Upload your brand image**| This option allows you to display a brand image. On the iOS Company Portal, it shows as a background image on the user's profile page.<p><ul><li>Recommended image width: Less than 1125px, but no less than 640px</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
+|**Upload your brand image**| This option allows you to display a brand image. On the iOS Company Portal, it shows as a background image on the user's profile page.<p><ul><li>Recommended image width: Greater than 1125px (required to be at least 650 px)</li><li>Max image size: 1.3 MB</li><li>File type: PNG, JPG, or JPEG</li></ul>|
 
 The right brand image can enhance the user’s trust in Company Portal by presenting a strong sense of your company’s brand. Here are some tips you may want to consider for acquiring, choosing, and optimizing the image for Company Portal. 
 

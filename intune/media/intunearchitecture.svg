@@ -842,11 +842,11 @@
 		</g>
 		<g id="shape187-182" v:mID="187" v:groupContext="shape" transform="translate(599.019,-494.09)">
 			<title>Sheet.187</title>
-			<desc>Conditional access</desc>
+			<desc>Conditional Access</desc>
 			<v:textBlock v:margins="rect(4,4,4,4)"/>
 			<v:textRect cx="32.9784" cy="723.7" width="65.96" height="10.0991"/>
 			<rect x="0" y="718.651" width="65.9569" height="10.0991" class="st7"/>
-			<text x="4.4" y="725.8" class="st23" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Conditional access</text>		</g>
+			<text x="4.4" y="725.8" class="st23" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Conditional Access</text>		</g>
 		<g id="shape195-185" v:mID="195" v:groupContext="shape" v:layerMember="0" transform="translate(624.379,-575.371)">
 			<title>Dynamic connector.4575</title>
 			<path d="M-10.68 719.75 L-11.04 719.75 L-132.96 719.75" class="st33"/>

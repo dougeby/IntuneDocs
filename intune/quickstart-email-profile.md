@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Quickstart: Create an email device profile for iOS
 
-In this quickstart, you’ll see how to create an email device profile for iOS devices. This profile specifies the settings that are required for the built-in email app on the iOS device to connect to company email. Email device profiles help standardize settings across devices, and they let end users access company email on their personal devices without any required setup on their part. To further safeguard your email, you can use an email profile to determine if devices are compliant, and then set up conditional access to allow only compliant devices to access email. For details about email profiles, see [How to configure email settings in Microsoft Intune](email-settings-configure.md)
+In this quickstart, you’ll see how to create an email device profile for iOS devices. This profile specifies the settings that are required for the built-in email app on the iOS device to connect to company email. Email device profiles help standardize settings across devices, and they let end users access company email on their personal devices without any required setup on their part. To further safeguard your email, you can use an email profile to determine if devices are compliant, and then set up Conditional Access to allow only compliant devices to access email. For details about email profiles, see [How to configure email settings in Microsoft Intune](email-settings-configure.md)
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
@@ -75,7 +75,7 @@ If you don’t intend to use the profile you created for additional tutorials or
 
 ## Next steps
 
-In this quickstart, you created an email profile for iOS devices. Now you can use this profile to determine whether an iOS device is compliant by creating a compliance policy that marks as noncompliant any iOS devices that don't match the profile. For further protection, you can create a conditional access policy that blocks noncompliant iOS devices from accessing email. For more information about device compliance policies, see [Get started with device compliance policies in Intune](device-compliance-get-started.md).
+In this quickstart, you created an email profile for iOS devices. Now you can use this profile to determine whether an iOS device is compliant by creating a compliance policy that marks as noncompliant any iOS devices that don't match the profile. For further protection, you can create a Conditional Access policy that blocks noncompliant iOS devices from accessing email. For more information about device compliance policies, see [Get started with device compliance policies in Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
 > [Tutorial: Protect Exchange Online email on managed devices](tutorial-protect-email-on-enrolled-devices.md)

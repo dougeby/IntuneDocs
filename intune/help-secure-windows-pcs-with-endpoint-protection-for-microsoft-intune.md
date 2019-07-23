@@ -49,15 +49,15 @@ As an IT admin, one of your top priorities is keeping the computers that you man
 
 To switch from your current endpoint protection application to Microsoft Intune Endpoint Protection, do the following:
 
-1.  Leave your current endpoint protection application running while you deploy the Intune client software to those computers.
+1. Leave your current endpoint protection application running while you deploy the Intune client software to those computers.
 
-2.  Confirm that Microsoft Intune Endpoint Protection is installed and is helping to secure client computers.
+2. Confirm that Microsoft Intune Endpoint Protection is installed and is helping to secure client computers.
 
-3.  Remove the third-party endpoint protection software by:
+3. Remove the third-party endpoint protection software by:
 
-    -   Using Intune software distribution to deploy a software removal tool that's provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy apps with Microsoft Intune](apps-deploy.md).
+    - Using Intune software distribution to deploy a software removal tool that's provided by the manufacturer of the third-party endpoint protection application. For more information, see [Deploy apps with Microsoft Intune](apps-deploy.md).
 
-    -   Removing the third-party endpoint protection application manually.
+    - Removing the third-party endpoint protection application manually.
 
 > [!NOTE]
 > Intune will not automatically uninstall third-party endpoint protection applications.
@@ -65,9 +65,9 @@ To switch from your current endpoint protection application to Microsoft Intune 
 ## Configure Microsoft Intune Endpoint Protection
 Use the following steps to help you configure Endpoint Protection for Microsoft Intune.
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** > **Add Policy**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** > **Add Policy**.
 
-2.  Expand **Computer Management**, and then select **Microsoft Intune Agent Settings**. Select **Create and Deploy a Custom Policy** to specify a policy for Endpoint Protection settings. Then choose the **Create Policy** button.
+2. Expand **Computer Management**, and then select **Microsoft Intune Agent Settings**. Select **Create and Deploy a Custom Policy** to specify a policy for Endpoint Protection settings. Then choose the **Create Policy** button.
 
 You can use the recommended settings or customize the settings. If you need more information about how to create and deploy policies, see the topic [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -148,8 +148,8 @@ The setting **File extensions to exclude when running a scan or using real-time 
 
 ### Specify Microsoft Active Protection Service Settings
 Microsoft Active Protection Service is an online community that helps you decide how to respond to potential threats. The community also helps stop the spread of new malware infections. You can **Join Microsoft Active Protection Service** by selecting **Yes**, and then specifying your **Membership Level**:
-  - **Basic** - Sends basic information to Microsoft about detected malware. This includes where the software came from, the actions that you apply or that Endpoint Protection applies automatically, and whether the actions were successful.
-  - **Advanced** - Sends more information to Microsoft about malware, spyware, and potentially unwanted software. This includes information about the location of the software, file names, how the software operates, and how it has affected your computer.
+- **Basic** - Sends basic information to Microsoft about detected malware. This includes where the software came from, the actions that you apply or that Endpoint Protection applies automatically, and whether the actions were successful.
+- **Advanced** - Sends more information to Microsoft about malware, spyware, and potentially unwanted software. This includes information about the location of the software, file names, how the software operates, and how it has affected your computer.
 
 You can also **Receive dynamic definitions based on Microsoft Active Protection Service reports**.
 
@@ -171,7 +171,7 @@ You monitor the status of malware on your computers by using the **Protection** 
   - **Computers with malware that need follow-up** – Click the link to see all computers with unresolved malware issues, as well as the follow-up action that needs to be taken to resolve the issue.
   - **Devices that are not protected** – Click the link to see computers that are not protected by any endpoint protection software, either because no software is installed, or because there is an error. Select a computer to view more details.
   - **Devices with another endpoint protection application running** – Click the link to see computers that are running a third-party endpoint protection application.
-- **All Malware** -  Displays a list of all active malware that's found on your computers. You can explore this list to see all computers that are affected by a particular piece of malware, or you can select one of the following tasks:
+- **All Malware** - Displays a list of all active malware that's found on your computers. You can explore this list to see all computers that are affected by a particular piece of malware, or you can select one of the following tasks:
   - **View Properties** – Opens a page with more information about the selected malware.
   - **Learn About This Malware** – Opens a topic from the Microsoft Malware Protection Center with more information about the malware.
 
@@ -200,5 +200,5 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### See Also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

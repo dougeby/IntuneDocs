@@ -42,8 +42,8 @@ If you don’t have an Intune subscription, [sign up for a free trial account](f
 ## Prerequisites
 Before setting up Microsoft Intune, review the following requirements:
 
-   - [Supported operating systems and browsers](supported-devices-browsers.md) 
-   - [Network configuration requirements and bandwidth](network-bandwidth-use.md)
+- [Supported operating systems and browsers](supported-devices-browsers.md) 
+- [Network configuration requirements and bandwidth](network-bandwidth-use.md)
 
 ## Sign up for a Microsoft Intune free trial
 
@@ -104,11 +104,11 @@ Follow the steps below to better understand Intune in the Azure portal. Once you
     
     As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. Additionally, you might want to assign and manage apps on devices that are not enrolled with Intune. Intune offers a range of capabilities to help you get the apps you need on the devices you want. For more information about adding and assigning apps, see [Add apps to Microsoft Intune](apps-add.md) and [Assign apps to groups with Microsoft Intune](apps-deploy.md).
 
-7. From [Intune](https://aka.ms/intuneportal), select **Conditional access** to display details about access policies.
+7. From [Intune](https://aka.ms/intuneportal), select **Conditional Access** to display details about access policies.
 
-    ![Screenshot of the conditional access pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
+    ![Screenshot of the Conditional Access pane](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    Conditional access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based conditional access, and find common scenarios for using conditional access with Intune, see [What's conditional access?](conditional-access.md)
+    Conditional Access refers to ways you can control the devices and apps that are allowed to connect to your email and company resources. To learn about device-based and app-based Conditional Access, and find common scenarios for using Conditional Access with Intune, see [What's Conditional Access?](conditional-access.md)
 
 8. From [Intune](https://aka.ms/intuneportal), select **Users** to display details about the users that you have included in Intune. These users are your company's workforce. 
  

@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/08/2019
+ms.date: 06/19/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -251,12 +251,17 @@ Updates for the two certificate connectors are released periodically. When we up
 
 The *PFX Certificates Connector for Microsoft Intune* [supports automatic updates](#requirements), while the *Intune Certificate Connector* is updated manually.
 
-### May 6, 2019
+### May 17, 2019  
+- **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.404**  
+  Changes in this release:  
+  - Fixed an issue where existing PFX certificates continue to be reprocessed which causes the connector to stop processing new requests. 
+
+### May 6, 2019  
 - **PFX Certificates Connector for Microsoft Intune - version 6.1905.0.402**  
   Changes in this release:  
   - The polling interval for the connector is reduced from 5 minutes to 30 seconds.
  
-### April 2, 2019
+### April 2, 2019  
 - **Intune Certificate Connector - version 6.1904.1.0**  
   Changes in this release:  
   - Fixed an issue where the connector might fail to enroll to Intune after signing in to the connector with a global administrator account.  
@@ -275,8 +280,6 @@ The *PFX Certificates Connector for Microsoft Intune* [supports automatic update
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-[Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
+[Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Digicert PKI manager web service](certificates-digicert-configure.md).
 
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Download the certificate connector from the Azure portal"  
+

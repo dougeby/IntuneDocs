@@ -36,8 +36,7 @@ Use the information in this article to add a Windows Phone line-of-business (LOB
 
 ## Step 1: Specify the software setup file
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services** > **Intune**. Intune is in the **Monitoring + Management** section.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps**.
 4. In the **Client apps** workload, select **Manage** > **Apps**.
 5. Above the list of apps, select **Add**.
@@ -54,17 +53,17 @@ Use the information in this article to add a Windows Phone line-of-business (LOB
 
 1. In the **Add app** pane, select **App information**.
 2. In the **App information** pane, configure the app information. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
-	- **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
-	- **Description**: Enter a description for the app. The description appears in the company portal.
-	- **Publisher**: Enter the name of the publisher of the app.
-	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
-	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
-	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
-	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
-	- **Developer**: Optionally, enter the name of the app developer.
-	- **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
-	- **Notes**: Enter any notes that you want to associate with this app.
-	- **Logo**: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
+    - **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
+    - **Description**: Enter a description for the app. The description appears in the company portal.
+    - **Publisher**: Enter the name of the publisher of the app.
+    - **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
+    - **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
+    - **Developer**: Optionally, enter the name of the app developer.
+    - **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
+    - **Notes**: Enter any notes that you want to associate with this app.
+    - **Logo**: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
 3. When you're finished, select **OK**.
 
 ## Step 4: Finish up

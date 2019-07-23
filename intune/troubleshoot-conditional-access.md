@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Troubleshoot conditional access
+title: Troubleshoot Conditional Access
 titleSuffix: Microsoft Intune
-description: What to do when your users fail to get access to resources through Intune conditional access.
+description: What to do when your users fail to get access to resources through Intune Conditional Access.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -27,13 +27,15 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Troubleshoot conditional access
+# Troubleshoot Conditional Access
 
-You can protect access to Office 365 services like Exchange Online, SharePoint Online, Skype for Business Online, Exchange on-premises, and other services by using Intune and conditional access. This capability allows you to make sure that access to company resources is restricted to devices that are enrolled with Intune and compliant with the conditional access rules that you set either in the Intune admin console or Azure Active Directory. This article describes what to do when your users fail to get access to resources protected with conditional access, or when users can access protected resources but should be blocked.
+You can protect access to Office 365 services like Exchange Online, SharePoint Online, Skype for Business Online, Exchange on-premises, and other services by using Intune and Conditional Access. This capability allows you to make sure that access to company resources is restricted to devices that are enrolled with Intune and compliant with the Conditional Access rules that you set either in the Intune admin console or Azure Active Directory. This article describes what to do when your users fail to get access to resources protected with Conditional Access, or when users can access protected resources but should be blocked.
 
-## Requirements for conditional access
+## Requirements for Conditional Access
 
-The following requirements must be met for device-based conditional access to work:
+
+The following requirements must be met for Conditional Access to work:
+
 
 - The device must be enrolled into MDM and managed by Intune.
 - Both the user and the device must be compliant with the assigned Intune compliance policies.
@@ -41,6 +43,7 @@ The following requirements must be met for device-based conditional access to wo
 -	Exchange ActiveSync must be activated on the device if the user is using the device's native mail client rather than Outlook. This happens automatically for iOS, Windows Phone, and Android Knox devices.
 -	For on-premise Exchange, your Intune Exchange Connector must be properly configured. See [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) for more information.
 - For on-premise Skype, you must configure Hybrid Modern Authentication. See [Hybrid Modern Auth Overview](https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview)
+
 
 You can view these conditions for each device in the Azure portal and in the device inventory report.
 
@@ -57,14 +60,17 @@ You can view these conditions for each device in the Azure portal and in the dev
 
   If the problem remains, contact Microsoft Support as described in [get support for Microsoft Intune](get-support.md).
 - Certain Android devices might appear to be encrypted, however the Company Portal app recognizes these devices as not encrypted, thus marking them as noncompliant. In this scenario, the user will see a notification in the Company Portal app asking them to set a start-up passcode for the device. After tapping the notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen, then tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted. 
+
   > [!NOTE]
   > Some device manufacturers encrypt their devices using a default PIN instead of a PIN set by the user. Intune views encryption using the default PIN as insecure and will mark those devices as noncompliant until the user creates a new, nondefault PIN.
+
 - An Android device that is enrolled and compliant might still be blocked and receive a quarantine notice when first trying to access corporate resources. If this occurs, make sure the Company Portal app is not running, then click the **Get Started Now** link in the quarantine email to trigger evaluation. This should only need to be done when conditional access is first enabled.
 - An Android device that is enrolled might prompt the user "No certificates found" and not be granted access to O365 resources. The user must enable the Enable Browser Access option on the enrolled device as follows:
-1.Launch the Company Portal app.
-2.Go to the Settings page from the triple dots (...) or the hardware menu button.
-3.Press the Enable Browser Access button.
-4.In the Chrome browser, sign out of Office 365 and restart Chrome.
+  1. Open the Company Portal app.
+  2. Go to the Settings page from the triple dots (...) or the hardware menu button.
+  3. Select the Enable Browser Access button.
+  4. In the Chrome browser, sign out of Office 365 and restart Chrome.  
+
 
 ## Devices are blocked and no quarantine email is received
 
@@ -74,7 +80,7 @@ You can view these conditions for each device in the Azure portal and in the dev
 
 ## Devices are noncompliant but users are not blocked
 
-- For Windows PCs, conditional access only blocks the native email app, Office 2013 with Modern Authentication, or Office 2016. Blocking earlier versions of Outlook or all mail apps on Windows PCs require AAD Device Registration and Active Directory Federation Services (AD FS) configurations as per [Set up SharePoint Online and Exchange Online for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- For Windows PCs, Conditional Access only blocks the native email app, Office 2013 with Modern Authentication, or Office 2016. Blocking earlier versions of Outlook or all mail apps on Windows PCs require AAD Device Registration and Active Directory Federation Services (AD FS) configurations as per [Set up SharePoint Online and Exchange Online for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - If the device is selectively wiped or retired from Intune, it might continue to have access for several hours after retirement. This is because Exchange caches access rights for 6 hours. Consider other means of protecting data on retired devices in this scenario.
 - Surface Hub, Bulk-Enrolled, and DEM enrolled Windows devices can support conditional access when a user who has been assigned a license for Intune is signed in; however, you must deploy the compliance policy to device groups (not user groups) for correct evaluation.
 - Check the assignments for your compliance policies and your conditional access policies. If a user isn't in the group that is assigned the policies, or is in a group being excluded, the user will not be blocked. Only devices for users in an assigned group are checked for compliance.

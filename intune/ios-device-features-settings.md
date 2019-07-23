@@ -2,12 +2,12 @@
 # required metadata
 
 title: iOS device feature settings in Microsoft Intune - Azure | Microsoft Docs
-description: See all the settings to configure iOS devices for AirPrint, layout of the home screen, app notifications, shared device, single sign-in, and web content filter settings in Microsoft Intune. Use these settings in a device configuration profile to configure iOS devices to use these different Apple features in your organization.
+description: See all the settings to configure iOS devices for AirPrint, layout of the home screen, app notifications, shared device, single sign-in, and web content filter settings in Microsoft Intune. Use these settings in a device configuration profile to configure iOS devices to use these Apple features in your organization.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -45,7 +45,7 @@ This article lists these settings, and describes what each setting does.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. You can add many AirPrint servers. You can also **Import** a comma-separated file (.csv) with this information. After you create the list, you can also **Export** your list of AirPrint servers.
+**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
 
 Select **OK** to save your list.
 
@@ -199,7 +199,7 @@ This feature supports supervised devices running iOS 9.3 and later.
   Device tokens can also be used to add device-specific information to these fields. For example, to show the serial number, enter `Serial Number: {{serialnumber}}`. On the lock screen, the text shows similar to `Serial Number 123456789ABC`. When entering variables, be sure to use curly brackets `{{ }}`. [App configuration tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) includes a list of variables that can be used. You can also use `deviceName` or any other device-specific value.
 
   > [!NOTE]
-  > Variables aren't validated in the UI. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{Devicename}}` instead of `{{devicename}}`, then the literal string is shown instead of the device’s unique name.
+  > Variables aren't validated in the UI, and are case sensitive. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{DeviceID}}` instead of `{{deviceid}}`, then the literal string is shown instead of the device’s unique ID. Be sure to enter the correct information.
 
 Select **OK** to save your changes.
 
@@ -257,7 +257,7 @@ Select **OK** to save your changes.
 
 ## Web content filter settings
 
-These settings control browser URL access on iOS devices.
+These settings control browser URL access on supervised iOS devices.
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 

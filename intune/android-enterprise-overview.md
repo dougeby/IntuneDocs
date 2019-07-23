@@ -62,7 +62,7 @@ Android Enterprise doesn’t provide a default email app or native email profile
 
 Intune provides configuration templates for Gmail and Nine Work apps when managed as work apps. Other email apps that support app configuration profiles can be configured with mobile app configuration policies.
 
-If you are using Exchange ActiveSync conditional access for an Android Enterprise work profile device, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
+If you are using Exchange ActiveSync Conditional Access for an Android Enterprise work profile device, consider using either the Gmail or Nine Work email app. The Microsoft Outlook for Android app, or any other email app that uses modern authentication via ADAL, is also supported. For more information, see [How to configure email settings in Microsoft Intune](email-settings-configure.md).
 
 ## App protection policies
 
@@ -72,20 +72,20 @@ App protection policies applied are fully supported in the work profile and in t
 
 VPN support is similar to Android VPN profiles. The same VPN providers and basic configuration options are available for Android Enterprise management with two differences:
 
--  **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android Enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android Enterprise VPN settings](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **Work profile-scoped VPN** – VPN connections are limited to just the apps deployed to the work profile. Only Android Enterpise-managed apps can use the VPN connection. Personal apps on the device cannot use a managed VPN connection. For more information, see [Android Enterprise VPN settings](vpn-settings-android.md#android-enterprise-vpn-settings).
 
--  **App-specific VPN** – App-specific VPN can be configured in Intune if the VPN provider supports:
-    - configuration for app-specific VPN
-    - the capability to configure per-app VPN via the Android Enterprise app configuration profile.
-    For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
+- **App-specific VPN** – App-specific VPN can be configured in Intune if the VPN provider supports:
+  - configuration for app-specific VPN
+  - the capability to configure per-app VPN via the Android Enterprise app configuration profile.
+  For more information, see [Use a Microsoft Intune custom profile to create a per-app VPN profile for Android devices](android-pulse-secure-per-app-vpn.md).
 
 ## Certificate profiles
 
 The same certificate profile configuration options that are available to Android management are available on Android Enterprise work profile devices. Android Enterprise provides enhanced certificate management APIs. Enhanced certificate management provides the following functionality:
 
--  Ensures that cert deployment is silent and seamless for the user.
--  Ensures that deployed certs are removed when a device is retired from Intune and the work profile is removed.
--  Provides improved messaging that informs users that the certificate was deployed and configured by their IT department via their management service.
+- Ensures that cert deployment is silent and seamless for the user.
+- Ensures that deployed certs are removed when a device is retired from Intune and the work profile is removed.
+- Provides improved messaging that informs users that the certificate was deployed and configured by their IT department via their management service.
 
 For more information, see [Configure a certificate profile for your devices in Microsoft Intune](certificates-configure.md).
 

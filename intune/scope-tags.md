@@ -47,8 +47,10 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 
     ![Screenshot of create a scope tag.](./media/scope-tags/create-scope-tag.png)
 
-2. Provide a **Name** and **Description**.
-3. Choose **Create**.
+3. If you want all devices in specific groups, choose **Assign scope tag to all devices in selected groups**.
+    1. In the **Select groups to include** page, choose the groups containing the devices that you want to assign this scope tag to.
+    2. Choose **Select**.
+4. Choose **Create**.
 
 ## To assign a scope tag to a role
 
@@ -111,17 +113,17 @@ For devices with **Device enrollment type** set to **Managed apps**:
 When working with scope tags, remember these details:
 
 - You can currently assign scope tags to:
-    - Role assignments
-    - Device compliance policies
-    - Device configuration profiles
-    - Windows 10 updates rings
-    - Managed devices
-    - Apps
-    - App configuration policies – managed devices
-    - Powershell scripts
-    - DEP tokens
-    - iOS app provisioning profile
-    - Volume Purchase Program (VPP) tokens
+  - Role assignments
+  - Device compliance policies
+  - Device configuration profiles
+  - Windows 10 updates rings
+  - Managed devices
+  - Apps
+  - App configuration policies – managed devices
+  - Powershell scripts
+  - DEP tokens
+  - iOS app provisioning profile
+  - Volume Purchase Program (VPP) tokens
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
 - Administrators in a role assignment with scope tags can also see Intune objects with no scope tags.

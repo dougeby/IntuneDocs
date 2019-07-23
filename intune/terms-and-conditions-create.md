@@ -35,7 +35,8 @@ ms.collection: M365-identity-device-management
 
 As an Intune admin, you can require that users accept your company's terms and conditions before using the Company Portal to:
 - enroll devices
-- access resources like company apps and email.    
+- access resources like company apps and email.
+
 Configuration of terms and conditions is optional.
 
 You can create multiple sets of terms and assign them to different groups, such as to support different languages.
@@ -43,6 +44,7 @@ You can create multiple sets of terms and assign them to different groups, such 
 There are two ways to create your company terms and conditions:
 - by using Intune as described in this article.
 - by using the [Azure Active Directory terms of use feature](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)
+
 To learn which method is best for you, check out the [Choosing the right Terms solution for your organization blog post](https://go.microsoft.com/fwlink/?linkid=2010506&clcid=0x409). 
 
 ## Create terms and conditions
@@ -98,6 +100,7 @@ You can assign terms and conditions to groups of user who must accept them befor
 You can edit your terms and conditions and manage their versions. Each time you make a significant change to your terms and conditions, you should:
 - increase the version number
 - require users to accept the new terms and conditions
+
 Keep the current version number if, for example, you're fixing typos or changing formatting.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
@@ -106,6 +109,6 @@ Keep the current version number if, for example, you're fixing typos or changing
 
 4. On the **Properties** pane, choose **Terms and Conditions** and then modify the **Title**, **Summary of Terms**, and **Terms and Conditions** as needed. If your changes make it necessary for users to reaccept the new terms, choose **Require users to re-accept, and increment the version number to**
 
-4.  Choose **OK** > **Save**.
+4. Choose **OK** > **Save**.
 
 Users only have to accept updated terms and conditions once. Users with multiple devices don't have to accept terms and conditions on each device.

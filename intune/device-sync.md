@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Sync devices with Microsoft Intune - Azure | Micrososft Docs
+title: Sync devices with Microsoft Intune - Azure | Microsoft Docs
 description: Synchronize devices that are registered or managed with Microsoft Intune to get the latest policies and actions. Includes the steps to sync by using the Azure portal, and lists the error codes that can be retried.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-The **Sync** device action forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
+The **Sync** device action forces the selected device to immediately check in with Intune. When a device checks in, it immediately receives any pending actions or policies that have been assigned to it. This feature can help you immediately validate and troubleshoot policies you’ve assigned, without waiting for the next scheduled check-in.
 
 ## Supported platforms
 
@@ -44,10 +44,9 @@ The **Sync** device action forces the selected device to immediately check in wi
 
 ## Sync a device
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **All services**, filter for **Intune**, and then select **Microsoft Intune**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973). 
 3. In **Intune**, select **Devices** > **All devices**.
-4. In the list of devices you manage, select a device, select **More**, and then select **Sync**.
+4. In the list of devices you manage, select a device to open its *Overview* pane, and then select **Sync**.
 5. To confirm, select **Yes**.
 
 To see the status of the sync action, choose **Devices** > **Device actions**.

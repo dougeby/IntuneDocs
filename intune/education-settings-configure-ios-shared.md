@@ -188,7 +188,7 @@ The device is now associated to the device category. Repeat this process for all
 5. On the profiles pane, choose **Create Profile**.
 6. On the **Create Association** pane, enter a **Name** and **Description**.
 7. Choose **Select Classes** > **Configure** to associate groups to the Cart Profile.
-8. Choose the classes to include to the Cart Profile then choose **Select**. 
+8. Choose the classes to include to the Cart Profile then choose **Select**. 
 9. Choose **Select Carts** > **Configure** to associate groups to the Cart Profile.
 10. Choose the groups to include to the Cart Profile then choose **Select**.
 11. On the **Create Association** pane, choose **Save** to save the Cart Profile.
@@ -202,7 +202,7 @@ The profile is created and appears on the profiles list pane.
 4. On the **Device configuration** pane, choose **Monitor** > **Assignment status**.
 5. On the **Assignment status** pane, select the **Cart Profile** you created.
 6. On the **Cart Profile** pane choose **Assignments** and then, under **Include** choose **Select groups to include**.
-7. Select the classes you want the cart profile to target (do not select a group), then choose **Select**. 
+7. Select the classes you want the cart profile to target (do not select a group), then choose **Select**. 
 8. When you are finished, choose **Save**.
 
 The assignment completes, and Intune deploys the Classroom profile to the targeted devices based on the classroom assignment.

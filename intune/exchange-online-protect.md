@@ -26,7 +26,7 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
---- 
+---
 # Protect Office 365 Exchange Online without requiring device management
 
 If you want to give employees access to their work email without the overhead of setting up a device management system, you can. You can give access to Office 365 Exchange Online through Intune. To complete the necessary steps, confirm you have licenses for Microsoft 365, or Azure Active Directory (premium) and Intune. Employees need to have a [supported iOS or Android device](supported-devices-browsers.md). 
@@ -35,11 +35,11 @@ If you decide to set up a device management system, you can. This type of app pr
 
 ## Action plan
 
-1. [Learn about conditional access](conditional-access.md). 
-2. [Learn about app-based conditional access](app-based-conditional-access-intune.md).
-3. [Set up app-based conditional access policies for Exchange Online](app-based-conditional-access-intune-create.md).
+1. [Learn about Conditional Access](conditional-access.md). 
+2. [Learn about app-based Conditional Access](app-based-conditional-access-intune.md).
+3. [Set up app-based Conditional Access policies for Exchange Online](app-based-conditional-access-intune-create.md).
 4. [Block apps that cannot be managed](app-modern-authentication-block.md), specifically apps that do not use the Azure Active Directory Authentication Library (ADAL).
-5. (Optional) [Set up app-based conditional access policies for SharePoint Online](app-based-conditional-access-intune-create.md). These policies block access to your company data from apps that cannot be managed and secured. The policies also limit access through SharePoint mobile. 
+5. (Optional) [Set up app-based Conditional Access policies for SharePoint Online](app-based-conditional-access-intune-create.md). These policies block access to your company data from apps that cannot be managed and secured. The policies also limit access through SharePoint mobile. 
 
 ## What to tell employees and students
 
@@ -48,9 +48,9 @@ If you decide to set up a device management system, you can. This type of app pr
 
 ## Next steps
 
-You have used app-based conditional access to increase the security of company data. As part of next steps, you can learn more about the other ways you can increase the protection of your company's data, including: 
+You have used app-based Conditional Access to increase the security of company data. As part of next steps, you can learn more about the other ways you can increase the protection of your company's data, including: 
 
-* Setting up [conditional access based on device compliance, device risk, location, and user attributes in Active Directory and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
+* Setting up [Conditional Access based on device compliance, device risk, location, and user attributes in Active Directory and Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).  
 * Setting up app protection policies to help you protect your company data against intentional or unintentional data leaks. 
 * Leveraging Azure Information Protection to protect company data outside your network. 
 

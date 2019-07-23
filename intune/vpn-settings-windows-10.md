@@ -2,7 +2,7 @@
 # required metadata
 
 title: Windows 10 VPN settings in Microsoft Intune - Azure | Microsoft Docs
-description: Learn and read about all the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, conditional access, and DNS and proxy settings for Windows 10 and Windows Holographic for Business devices.
+description: Learn and read about all the available VPN settings in Microsoft Intune, what they are used for, and what they do, including traffic rules, Conditional Access, and DNS and proxy settings for Windows 10 and Windows Holographic for Business devices.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -71,29 +71,29 @@ Depending on the settings you choose, not all values may be configurable.
   - **PPTP**
 
   When you choose a VPN connection type, you may also be asked for the following settings:  
-    - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
-      - Users sign into their devices
-      - The network on the device changes
-      - The screen on the device turns back on after being turned off 
+  - **Always On**: Choose **Enable** to automatically connect to the VPN connection when the following events happen: 
+    - Users sign into their devices
+    - The network on the device changes
+    - The screen on the device turns back on after being turned off 
 
-    - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
-    - **Remember credentials at each logon**: Choose to cache the authentication credentials.
-    - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
-    - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
+  - **Authentication method**: Select how you want users to authenticate to the VPN server. Using **certificates** provides enhanced features, such as zero-touch experience, on-demand VPN, and per-app VPN.
+  - **Remember credentials at each logon**: Choose to cache the authentication credentials.
+  - **Custom XML**: Enter any custom XML commands that configure the VPN connection.
+  - **EAP Xml**: Enter any EAP XML commands that configure the VPN connection
 
-#### Pulse Secure example
+### Pulse Secure example
 
 ```
 <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
 ```
 
-#### F5 Edge Client example
+### F5 Edge Client example
 
 ```
 <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-#### SonicWALL Mobile Connect example
+### SonicWALL Mobile Connect example
 **Login group or domain**: This property can't be set in the VPN profile. Instead, Mobile Connect parses this value when the user name and domain are entered in the `username@domain` or `DOMAIN\username` formats.
 
 Example:
@@ -102,13 +102,13 @@ Example:
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 ```
 
-#### CheckPoint Mobile VPN example
+### CheckPoint Mobile VPN example
 
 ```
 <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
 ```
 
-#### Writing custom XML
+### Writing custom XML
 For more information about writing custom XML commands, see each manufacturer's VPN documentation.
 
 For more information about creating custom EAP XML, see [EAP configuration](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
@@ -126,7 +126,7 @@ For more information about creating custom EAP XML, see [EAP configuration](http
 
 ## Conditional Access
 
-- **Conditional access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client communicates with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
+- **Conditional Access for this VPN connection**: Enables device compliance flow from the client. When enabled, the VPN client communicates with Azure Active Directory (AD) to get a certificate to use for authentication. The VPN should be set up to use certificate authentication, and the VPN server must trust the server returned by Azure AD.
 
 - **Single sign-on (SSO) with alternate certificate**: For device compliance, use a certificate different from the VPN authentication certificate for Kerberos authentication. Enter the certificate with the following settings:
 

@@ -30,17 +30,17 @@ ms.collection: M365-identity-device-management
 
 # Symantec Endpoint Protection Mobile connector
 
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Symantec Endpoint Protection Mobile (SEP Mobile), a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running SEP Mobile, including:
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Symantec Endpoint Protection Mobile (SEP Mobile), a mobile threat defense solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running SEP Mobile, including:
 
--   Physical defense
+- Physical defense
 
--   Network defense
+- Network defense
 
--   Application defense
+- Application defense
 
--   Vulnerabilities defense
+- Vulnerabilities defense
 
-You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use conditional access policies to allow or block noncompliant device access to corporate resources based on detected threats.
+You can enable SEP Mobile risk assessment through Intune device compliance policies, and then use Conditional Access policies to allow or block noncompliant device access to corporate resources based on detected threats.
 
 ## How do Intune and SEP Mobile help protect your company resources?
 
@@ -52,9 +52,9 @@ If the device is found noncompliant, access to resources like Exchange Online an
 
 Intune supports two modes of integration with SEP Mobile:
 
--   **Basic setup** which is a read only mode that allows SEP Mobile visibility for devices in Intune.
+- **Basic setup** which is a read only mode that allows SEP Mobile visibility for devices in Intune.
 
--   **Full integration** which allows SEP Mobile to report device risk and security incident details to Intune.
+- **Full integration** which allows SEP Mobile to report device risk and security incident details to Intune.
 
 ## Sample scenarios
 
@@ -64,11 +64,11 @@ Here are some common scenarios:
 
 When malicious apps such as malware are detected on devices, you can block devices until the threat is resolved:
 
--   Connecting to corporate e-mail
+- Connecting to corporate e-mail
 
--   Syncing corporate files with the OneDrive for Work app
+- Syncing corporate files with the OneDrive for Work app
 
--   Accessing company apps
+- Accessing company apps
 
 **Block when malicious apps are detected:**
 
@@ -104,17 +104,17 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizatio
 
 ## Supported platforms
 
--   **Android 4.1 and later**
+- **Android 4.1 and later**
 
--   **iOS 8 and later**
+- **iOS 8 and later**
 
 ## Pre-requisites
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune subscription
+- Microsoft Intune subscription
 
--   Symantec Endpoint Protection Mobile subscription
+- Symantec Endpoint Protection Mobile subscription
 
 For more information, check [Symantec website](https://www.skycure.com/skycure-microsoft-integration/).
 

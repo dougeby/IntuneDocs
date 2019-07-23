@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/28/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -33,10 +33,10 @@ This article shows how to configure your infrastructure, then create and assign 
 
 - **Active Directory domain**: All servers listed in this section (except for the Web Application Proxy Server) must be joined to your Active Directory domain.
 
-- **Certification Authority** (CA): Must be a Microsoft Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For details, see [Install the Certification Authority](http://technet.microsoft.com/library/jj125375.aspx).
+- **Certification Authority** (CA): Must be a Microsoft Enterprise Certification Authority (CA) that runs on an Enterprise edition of Windows Server 2008 R2 or later. A Standalone CA is not supported. For details, see [Install the Certification Authority](https://technet.microsoft.com/library/jj125375.aspx).
     If your CA runs Windows Server 2008 R2, you must [install the hotfix from KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **NDES Server**: On a Windows Server 2012 R2 or later, set up the Network Device Enrollment Service (NDES) server role. Intune doesn't support using NDES on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](http://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host NDES.
+- **NDES Server**: On a Windows Server 2012 R2 or later, set up the Network Device Enrollment Service (NDES) server role. Intune doesn't support using NDES on a server that also runs the Enterprise CA. See [Network Device Enrollment Service Guidance](https://technet.microsoft.com/library/hh831498.aspx) for instructions on how to configure Windows Server 2012 R2 to host NDES.
 The NDES server must be joined to a domain within the same forest as the Enterprise CA. More information about deploying the NDES server in a separate forest, isolated network, or internal domain can be found in [Using a Policy Module with the Network Device Enrollment Service](https://technet.microsoft.com/library/dn473016.aspx). It's not possible to use an NDES server that's already being used with another MDM.
 
 - **Microsoft Intune Certificate Connector**: In the Intune portal, go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for SCEP*. Use the download link in the portal to start download of the certificate connector installer **NDESConnectorSetup.exe**.  You'll run this installer on the server with the NDES role.  
@@ -49,7 +49,7 @@ This NDES Certificate connector also supports Federal Information Processing Sta
   
 - **Azure AD Application Proxy** (optional): The Azure AD Application Proxy can be used instead of a dedicated Web Application Proxy (WAP) Server to publish the NDES Server to the Internet. For more information, see [How to provide secure remote access to on-premises applications](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
-#### Additional
+### Additional
 
 - The server that hosts WAP [must install an update](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) that enables support for the long URLs that are used by the Network Device Enrollment Service. This update is included with the [December 2014 update rollup](http://support.microsoft.com/kb/3013769), or individually from [KB3011135](http://support.microsoft.com/kb/3011135).
 - The WAP server must have an SSL certificate that matches the name being published to external clients, and trust the SSL certificate used on the NDES server. These certificates enable the WAP server to terminate the SSL connection from clients, and create a new SSL connection to the NDES server.
@@ -71,7 +71,7 @@ We highly recommend publishing the NDES server through a reverse proxy, such as 
 |**Certificate Template**|Configure this template on your issuing CA.|
 |**Client authentication certificate**|Requested from your issuing CA or public CA; you install this certificate on the NDES Server.|
 |**Server authentication certificate**|Requested from your issuing CA or public CA; you install and bind this SSL certificate in IIS on the NDES server. If the certificate has the client and server authentication key usages set (**Enhanced Key Usages**), then you can use the same certificate.|
-|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /><b>NOTE:<b />When a SCEP certificate profile is assigned, be sure to assign the Trusted root certificate profile referenced in your SCEP certificate profile to the same user or device group.<br /><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each Trusted Root Certificate profile you create.<br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
+|**Trusted Root CA certificate**|You export this certificate as a **.cer** file from the root CA or any device that trusts the root CA. Then, assign it to users, devices, or both using the Trusted CA certificate profile.<br /> **NOTE:<br />When a SCEP certificate profile is assigned, be sure to assign the *trusted root certificate profile* referenced in your SCEP certificate profile to the same user or device group.  To create this profile, see [Create a trusted certificate profile](certficates-pfx-configure.md#create-a-trusted-certificate-profile), which is documented in the article on PKCS certificate profiles.** <br/><br />You use a single Trusted Root CA certificate per operating system platform, and associate it with each trusted root certificate profile you create. <br /><br />You can use additional Trusted Root CA certificates when needed. For example, you might do this to provide a trust to a CA that signs the server authentication certificates for your Wi-Fi access points.|
 
 ### Accounts
 
@@ -82,17 +82,17 @@ We highly recommend publishing the NDES server through a reverse proxy, such as 
 ## Configure your infrastructure
 Before you can configure certificate profiles, complete the following steps. These steps require knowledge of Windows Server 2012 R2 or later, and Active Directory Certificate Services (ADCS):
 
-#### Step 1 - Create an NDES service account
+### Step 1 - Create an NDES service account
 
 Create a domain user account to use as the NDES service account. You enter this account when you configure templates on the issuing CA before you install and configure NDES. Make sure the user has the default rights, **Logon Locally**, **Logon as a Service** and **Logon as a batch job** rights. Some organizations have hardening policies that disable those rights.
 
-#### Step 2 - Configure certificate templates on the certification authority
+### Step 2 - Configure certificate templates on the certification authority
 In this step, you:
 
 - Configure a certificate template for NDES
 - Publish the certificate template for NDES
 
-##### Configure the certification authority
+#### Configure the certification authority
 
 1. Sign in as an enterprise administrator.
 
@@ -153,7 +153,7 @@ Configure the CA to allow the requester to enter the validity period:
 
 3. Validate that the template published by viewing it under the **Certificate Templates** folder.
 
-#### Step 3 - Configure prerequisites on the NDES server
+### Step 3 - Configure prerequisites on the NDES server
 In this step, you:
 
 - Add NDES to a Windows Server and configure IIS to support NDES
@@ -193,7 +193,7 @@ In this step, you:
 
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
-#### Step 4 - Configure NDES for use with Intune
+### Step 4 - Configure NDES for use with Intune
 In this step, you:
 
 - Configure NDES for use with the issuing CA
@@ -244,7 +244,7 @@ In this step, you:
 
     If you get a **503 Service unavailable**, check the event viewer. It's likely that the application pool is stopped due to a missing right for the NDES user. Those rights are described in Step 1.
 
-##### Install and bind certificates on the NDES Server
+#### Install and bind certificates on the NDES Server
 
 1. On your NDES Server, request and install a **server authentication** certificate from your internal CA or public CA. You then bind this SSL certificate in IIS.
 
@@ -270,7 +270,7 @@ In this step, you:
 
     - **Subject Name**: The value must be equal to the DNS name of the server where you're installing the certificate (the NDES Server)
 
-##### Configure IIS request filtering
+#### Configure IIS request filtering
 
 1. On the NDES Server, open **IIS Manager**, select the **Default Web Site** in the **Connections** pane, and then open **Request Filtering**.
 
@@ -290,13 +290,13 @@ In this step, you:
 
 4. Reboot the NDES server. The server is now ready to support the Certificate Connector.
 
-#### Step 5 - Enable, install, and configure the Intune certificate connector
+### Step 5 - Enable, install, and configure the Intune certificate connector
 In this step, you:
 
 - Enable support for NDES in Intune.
 - Download, install, and configure the Certificate Connector on the server hosting the Network Device Enrollment Service (NDES) role a server in your environment. To increase the scale of the NDES implementation in your organization, you can install multiple NDES servers with a Microsoft Intune Certificate Connector on each NDES server.
 
-##### Download, install, and configure the certificate connector
+#### Download, install, and configure the certificate connector
 
 > [!IMPORTANT] 
 > The Microsoft Intune Certificate Connector **must** be installed on a separate Windows server. It can't be installed on the issuing Certificate Authority (CA). It **must** also be installed on the same server as the Network Device Enrollment Service (NDES) role.
@@ -432,7 +432,7 @@ To validate that the service is running, open a browser, and enter the following
         >  - In the static text of the subject, curly brackets **{ }** not enclosing a variable will resolve to an error. 
         >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
         >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
-        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
         >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail. 
 
 
@@ -475,7 +475,7 @@ To validate that the service is running, open a browser, and enter the following
         >  - In the static text of the SAN, curly brackets **{ }**, pipe symbols **|**, and semicolons **;** don't work. 
         >  - When using a device certificate variable, enclose the variable in curly brackets **{ }**.
         >  - `{{FullyQualifiedDomainName}}` only works for Windows and domain-joined devices. 
-        >  -  When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
+        >  - When use device properties such as IMEI, Serial Number, and Fully Qualified Domain Name in the subject or SAN for a device certificate, be aware that these properties could be spoofed by a person with access to the device.
         >  - Profile will not install on device if the device variables specified are not supported. For example, if {{IMEI}} is used in the subject alternative name of the SCEP profile assigned to a device that does not have an IMEI number, the profile installation will fail.  
 
    - **Certificate validity period**: If you ran the `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` command on the issuing CA, which allows a custom validity period, you can enter the amount of remaining time before the certificate expires.<br>You can enter a value that is lower than the validity period in the certificate template, but not higher. For example, if the certificate validity period in the certificate template is two years, you can enter a value of one year, but not a value of five years. The value must also be lower than the remaining validity period of the issuing CA's certificate. 
@@ -490,7 +490,7 @@ To validate that the service is running, open a browser, and enter the following
      - **Digital signature**: Allow key exchange only when a digital signature helps protect the key
    - **Key size (bits)**: Select the number of bits contained in the key
    - **Hash algorithm** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
-   - **Root Certificate**: Choose a root CA certificate profile you previously configured and assigned to the user and/or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile. Be sure to assign this trusted root certificate profile to the same group assigned in the SCEP certificate profile.
+   - **Root Certificate**: Choose a [trusted root certificate profile](certficates-pfx-configure.md#create-a-trusted-certificate-profile) that you previously created, and assigned to the user and/or device. This CA certificate must be the root certificate for the CA that issues the certificate that you are configuring in this certificate profile. Be sure to assign this trusted root certificate profile to the same group assigned in the SCEP certificate profile.
    - **Extended key usage**: **Add** values for the certificate's intended purpose. In most cases, the certificate requires **Client Authentication** so that the user or device can authenticate to a server. However, you can add any other key usages as required.
    - **Enrollment Settings**
      - **Renewal threshold (%)**: Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.
@@ -510,7 +510,9 @@ Consider the following before you assign certificate profiles to groups:
 - Although you assign each profile separately, you also need to assign the Trusted Root CA and the SCEP or PKCS profile. Otherwise, the SCEP or PKCS certificate policy fails.
 
     > [!NOTE]
-    > For iOS, you should expect to see multiple copies of the certificate in the management profile if you deploy multiple resource profiles that use the same certificate profile.
+    > On iOS devices, when a SCEP certificate profile is associated with an additional profile, like a Wi-Fi or VPN profile, the device receives a certificate for each of those additional profiles. This results in the iOS device having multiple certificates delivered by the SCEP certificate request.  
+
+- If you use co-management for Intune and Configuration Manager, in Configuration Manager s[et the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for *Resource Access Policy* to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.  
 
 For information about how to assign profiles, see [assign device profiles](device-profile-assign.md).
 
@@ -555,7 +557,7 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Success  | Success |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Certification authority is not valid or is unreachable. Verify that the certification authority is available, and that your server can communicate with it. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec Client Auth certificate was not found in the local cert store. See the article [Install the Symantec registration authorization certificate](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) for more information.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec Client Auth certificate was not found in the local cert store. See the article [Set up Intune Certificate Connector for DigiCert PKI Platform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting) for more information.  |
 | 0x00000402 | RevokeCert_AccessDenied  | The specified account does not have permissions to revoke a certificate from CA. See CA Name field in the event message details to determine the issuing CA.  |
 | 0x00000403 | CertThumbprint_NotFound  | Could not find a certificate that matched your input. Enroll the certificate connector and try again. |
 | 0x00000404 | Certificate_NotFound  | Could not find a certificate that matched the input supplied. Re-enroll the certificate connector and try again. |

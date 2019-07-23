@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority:
@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings are used to manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
+Intune includes a rich set of features, including managing apps and configuring device settings. These built-in features and settings manage Android devices manufactured by Zebra Technologies, also known as "Zebra devices".
 
 On Android devices, use **Mobility Extensions (MX)** profiles to customize or add more Zebra-specific settings.
 
@@ -55,7 +55,7 @@ Using Intune, you can enroll Zebra devices to deploy your line-of-business apps 
 
 On the device, go to the Google Play store, and download and install the Intune Company Portal app from Microsoft. When installed from Google Play, the Company Portal app gets updates and fixes automatically.
 
-If Google Play isn't available, download the [Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) (opens another Microsoft website), and [sideload it](#sideload-the-company-portal-app) (in this article). When installed this way, the app doesn't receive updates or fixes automatically. You should regularly update and patch the app manually.
+If Google Play isn't available, download the [Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) (opens another Microsoft website), and [sideload it](#sideload-the-company-portal-app) (in this article). When installed this way, the app doesn't receive updates or fixes automatically. Be sure to regularly update and patch the app manually.
 
 ### Sideload the Company Portal app
 
@@ -104,26 +104,28 @@ After completing the first two steps, the Company Portal app is installed on the
 
 Use StageNow to create a profile that configures the settings you want to manage on the device. For specific details, see Zebra's documentation. [Profiles](http://techdocs.zebra.com/stagenow/3-2/stagingprofiles/) (opens Zebra's website) may be a good resource.
 
-When you create the profile in StageNow, on the last step, select **Export to MDM**. This generates an XML file. Save this file. You need it in a later step.
+When you create the profile in StageNow, on the last step, select **Export to MDM**. This step generates an XML file. Save this file. You need it in a later step.
 
-> [!TIP]
-> It's recommended to test the profile before you deploy it to devices in your organization. To test, in the last step when creating profiles with StageNow on your computer, use the **Test** options. Then, consume the StageNow-generated file with the StageNow app on the device. 
-> 
-> The StageNow app on the device shows logs generated when you test the profile. [Use StageNow logs on Zebra devices running Android in Intune](android-zebra-mx-logs-troubleshoot.md) has information on using StageNow logs to understand errors.
+- It's recommended to test the profile before you deploy it to devices in your organization. To test, in the last step when creating profiles with StageNow on your computer, use the **Test** options. Then, consume the StageNow-generated file with the StageNow app on the device.
 
-> [!NOTE]
-> If you reference apps, update packages, or update other files in your StageNow profile, you want the device to get these updates. To get the updates, the device must connect to the StageNow deployment server when the profile is applied. 
-> 
-> Or, you can use built-in features in Intune to get these changes, including: 
-> - App management features to [add](apps-add.md), [deploy](apps-deploy.md), update, and [monitor](apps-monitor.md) apps.
-> - Manage [system and app updates](device-restrictions-android-for-work.md#device-owner-only) on devices running Android Enterprise
+  The StageNow app on the device shows logs generated when you test the profile. [Use StageNow logs on Zebra devices running Android in Intune](android-zebra-mx-logs-troubleshoot.md) has information on using StageNow logs to understand errors.
+
+- If you reference apps, update packages, or update other files in your StageNow profile, you want the device to get these updates. To get the updates, the device must connect to the StageNow deployment server when the profile is applied. 
+
+  Or, you can use built-in features in Intune to get these changes, including:
+
+  - App management features to [add](apps-add.md), [deploy](apps-deploy.md), update, and [monitor](apps-monitor.md) apps.
+  - Manage [system and app updates](device-restrictions-android-for-work.md#device-owner-only) on devices running Android Enterprise
 
 After you test the file, the next step is to deploy the profile to devices using Intune.
 
-> [!NOTE]
-> Deploy one profile to each device. If there are multiple StageNow profiles you want to deploy on the devices, then export the StageNow profiles, and combine the settings into a single XML file before you add it to Intune. 
-> 
-> You don’t want two settings that configure the same property in the same XML file. The goal is to prevent conflicts between settings on the device.
+- You can deploy one or multiple MX profiles to a device.
+- You can also export multiple StageNow profiles, and combine the settings into a single XML file. Then, upload the XML file to Intune to deploy to your devices.
+
+  > [!WARNING]
+  > If multiple MX profiles are targeted to the same group, and configure the same property, there will be conflicts on the device.
+  >
+  > If the same property is configured multiple times in a single MX profile, the last configuration wins.
 
 ## Step 5: Create a profile in Intune
 
@@ -141,14 +143,19 @@ In Intune, create a device configuration profile:
 4. In **MX profile in .xml format**, add the XML profile file [you exported from StageNow](#step-4-create-a-device-management-profile-in-stagenow) (in this article).
 5. Select **OK** > **Create** to save your changes. The policy is created and shown in the list.
 
+    > [!TIP]
+    > For security reasons, you won’t see the profile XML text after you save it. The text is encrypted, and you only see asterisks (`****`). For your reference, it's recommended to save copies of the MX profiles before you add them to Intune.
+
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 The next time the device checks for configuration updates, the MX profile is deployed to the device. Devices sync with Intune when devices enroll, and then approximately every 8 hours. You can also [force a sync in Intune](device-sync.md). Or, on the device, open the **Company Portal app** > **Settings** > **Sync**. 
 
-> [!TIP]
-> - For security reasons, you won’t see the profile XML text after you save it. The text is encrypted, and you only see asterisks (`****`). For your reference, it's recommended to save copies of the MX profiles before you add them to Intune.
-> 
-> - To update a profile after it's assigned to Zebra devices, create an updated StageNow XML file, edit the existing Intune profile, and add the new StageNow XML file. This new file overwrites the previous StageNow policy in the profile.
+## Update a Zebra MX configuration after it's assigned
+
+To update the MX-specific configuration of a Zebra device, you can: 
+
+- Create an updated StageNow XML file, edit the existing Intune MX profile, and upload the new StageNow XML file. This new file overwrites the previous policy in the profile, and replaces the previous configuration.
+- Create a new StageNow XML file that configures different settings, create a new Intune MX profile, upload the new StageNow XML file, and assign it to the same group. Multiple profiles are deployed. If the new profile configures settings that already exist in existing profiles, conflicts will occur.
 
 ## Next steps
 

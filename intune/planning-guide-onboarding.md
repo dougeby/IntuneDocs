@@ -38,17 +38,17 @@ The following section provides an overview of the Intune implementation process 
 
 The main Intune standalone requirements are:
 
--   Enterprise Mobility + Security (EMS)/Intune subscription
+- Enterprise Mobility + Security (EMS)/Intune subscription
 
--   Office 365 subscription (for Office apps and app-protection-policy managed apps)
+- Office 365 subscription (for Office apps and app-protection-policy managed apps)
 
--   Apple APNs Certificate (to enable iOS device platform management)
+- Apple APNs Certificate (to enable iOS device platform management)
 
--   Azure AD Connect (for directory synchronization)
+- Azure AD Connect (for directory synchronization)
 
--   Intune On-Premises Connector for Exchange (for conditional access for Exchange On-Premises, if needed)
+- Intune On-Premises Connector for Exchange (for Conditional Access for Exchange On-Premises, if needed)
 
--   Intune Certificate Connector (for SCEP certificate deployment, if needed)
+- Intune Certificate Connector (for SCEP certificate deployment, if needed)
 
 >[!TIP]
 > See the list of [supported devices](supported-devices-browsers.md) for a complete list of devices you can manage with Intune.
@@ -61,20 +61,20 @@ We've identified 13 discrete tasks for implementing an Intune deployment. Depend
 
 As indicated in the Intune requirements section above, you need an EMS or Intune subscription. If your organization does not have one, contact Microsoft or your Microsoft account team regarding your interest in purchasing Enterprise Mobility + Security (EMS) or Intune.
 
--   Learn more about [how to buy Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
+- Learn more about [how to buy Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
 ### Task 2: Add Office 365 subscription
 
 This step is optional. You need an Office 365 subscription if you plan to use Exchange Online and manage Office mobile apps with app protection policies. If your organization does not have an Office 365 subscription, contact Microsoft or your Microsoft account team regarding your interest in purchasing Office 365.
 
--   Learn more about [how to buy Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
+- Learn more about [how to buy Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
 ### Task 3: Add users groups in Azure AD
 
 You may need to add users or security groups in Active Directory or Azure Active Directory based on your Intune deployment use-case scenarios and requirements. Review your current users and security groups in Active Directory or Azure Active Directory and determine if they fully meet your needs. When adding new users and security groups, we recommend adding them in Active Directory and synchronizing with Azure Active Directory using Azure AD Connect.
 
 
--   Learn more about [how to add users/groups in Intune](users-permissions-add.md).
+- Learn more about [how to add users/groups in Intune](users-permissions-add.md).
 <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
 
 
@@ -83,61 +83,61 @@ You may need to add users or security groups in Active Directory or Azure Active
 
 All users you target for EMS/Intune and Office 365 rollout need to have a license assigned to them. You can assign EMS/Intune and Office 365 licenses in the Microsoft 365 admin center.
 
--   Learn more about [how to assign Intune licenses](licenses-assign.md).
+- Learn more about [how to assign Intune licenses](licenses-assign.md).
 
 ### Task 5: Set mobile device management authority to Intune
 
 Before you can begin to set up, configure, manage and enroll devices using Intune, you must set the device management authority to Intune.
 
--   Learn more about [how to set the device management authority](mdm-authority-set.md).
+- Learn more about [how to set the device management authority](mdm-authority-set.md).
 
 ### Task 6: Enable device platforms
 
 By default, most device platforms are enabled except for Apple devices (iOS and Mac). Before iOS devices can be enrolled and managed in Intune, the device platform must be enabled. To do so, you need to create an MDM Push certificate, and add it to Intune.
 
--   Learn more about [how to enable Apple devices for enrollment](apple-mdm-push-certificate-get.md).
+- Learn more about [how to enable Apple devices for enrollment](apple-mdm-push-certificate-get.md).
 
 ### Task 7: Add and deploy terms and conditions policies
 
 Intune supports terms and conditions policies. Add terms and conditions policies as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [how to add and deploy terms and condition policies](terms-and-conditions-create.md).
+- Learn more about [how to add and deploy terms and condition policies](terms-and-conditions-create.md).
 
 ### Task 8: Add and deploy configuration policies
 
 Intune supports two types of configuration policies, general and custom. Add the configuration policies as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [how to add and deploy configuration policies](device-profiles.md).
+- Learn more about [how to add and deploy configuration policies](device-profiles.md).
 
 ### Task 9: Add and deploy resource profiles
 
 Intune supports email, Wi-Fi, and VPN profiles. Add these profiles as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [how to enable access to company resources with Intune](device-profiles.md).
+- Learn more about [how to enable access to company resources with Intune](device-profiles.md).
 
 ### Task 10: Add and deploy apps
 
 Intune supports the deployment of web, line-of-business, and public Store apps. You can also manage apps that have integrated the Intune SDK by associating them with app protection policies. Add apps as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [adding and deploying apps](app-management.md).
+- Learn more about [adding and deploying apps](app-management.md).
 
 ### Task 11: Add and deploy compliance policies
 
 Intune supports compliance policies. Add compliance policies as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
--   Learn more about [compliance policies](device-compliance.md).
+- Learn more about [compliance policies](device-compliance.md).
 
-### Task 12: Enable conditional access policies
+### Task 12: Enable Conditional Access policies
 
-Intune supports conditional access for Exchange Online, Exchange on-premises, SharePoint Online, Skype for Business Online, and Dynamics CRM Online. Enable and configure conditional access as appropriate based on your Intune deployment use cases and requirements.
+Intune supports Conditional Access for Exchange Online, Exchange on-premises, SharePoint Online, Skype for Business Online, and Dynamics CRM Online. Enable and configure Conditional Access as appropriate based on your Intune deployment use cases and requirements.
 
--   Learn more about [conditional access](conditional-access.md).
+- Learn more about [Conditional Access](conditional-access.md).
 
 ### Task 13: Enroll devices
 
 Intune supports iOS, Mac OS, Android, Windows desktop, and Windows mobile device platforms. Enroll mobile device platforms as appropriate based on your Intune deployment use cases and requirements.
 
--   Learn more about [how to enroll devices](device-enrollment.md).
+- Learn more about [how to enroll devices](device-enrollment.md).
 
 
 ## Next steps

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 07/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ This article lists and describes the different settings you can control on iOS d
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
 > [!NOTE]
-> These settings use Apple's MDM settings. For more details on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
+> These settings use Apple's MDM settings. For more information on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
 
 ## Before you begin
 
@@ -64,7 +64,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
   This setting was renamed from **Enabling restrictions in the device settings**. Impact of this change:  
   
-  - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. This is the same; and there are no changes for end users.
+  - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. The behavior is the same; and there are no changes for end users.
   - iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings (Settings > General > Screen Time), including content and privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore (Settings > General > Device Management > Management Profile > Restrictions). These settings are in **Screen Time**.
   
 - **Use of the erase all content and settings option on the device (supervised only)**: Choose **Block** so users can't use the erase all content and settings option on the device (supervised only). **Not configured** (default) gives users access to these settings.
@@ -75,7 +75,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Configuration profile changes (supervised only)**: **Block** prevents configuration profile changes on the device. **Not configured** (default) allows the user to install configuration profiles.
 - **Activation Lock (supervised only)**: Choose **Allow** to enable Activation Lock on supervised iOS devices. Activation Lock makes it harder for a lost or stolen device to be reactivated.
 - **Block app removal (supervised only)**: Choose **Block** to prevent users from removing apps. **Not configured** (default) allows users to remove apps from the device.
-- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode blocks USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
+- **Blocks USB Restricted mode (supervised only)**: Choose **Block** to disable USB Restricted mode on supervised devices. USB Restricted mode prevents USB accessories from exchanging data with a device that's locked for over an hour. **Not configured** (default) allows USB Restricted mode.
 - **Force automatic date and time (supervised only)**: **Require** forces supervised devices to set the Date & Time automatically. The device's time zone is updated when the device has cellular connections or has Wi-Fi with location services enabled.
 - **Require students to request permission to leave Classroom course (supervised only)**: **Require** forces students enrolled in an unmanaged course using the Classroom app to request permission from the teacher to leave the course. **Not configured** (default) doesn't force the student to ask for permission.
 
@@ -121,7 +121,7 @@ These settings are added to a device configuration profile in Intune, and then a
     - **Alphanumeric**
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
   - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters).
-  - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 1-11).
+  - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 2-11).
   
     iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
   
@@ -129,12 +129,17 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
   - **Password expiration (days)**: Enter the number of days before the device password must be changed.
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
-  - **Fingerprint unlock**: Choose **Block** to prevent using a fingerprint to unlock the device. **Not configured** allows the user to unlock the device using a fingerprint. If you have a device running iOS 11.0 or later, blocking this setting also prevents using FaceID authentication to unlock the device. 
+  - **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
+
+    Face ID is available on iOS 11.0 and later. Blocking this setting also prevents using FaceID authentication to unlock the device.
+
 - **Passcode modification (supervised only)**: Choose **Block** to stop the passcode from being changed, added, or removed. Changes to passcode restrictions are ignored on supervised devices after blocking this feature. **Not configured** (default) allows passcodes to be added, changed, or removed.
 
-  - **Fingerprint modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints. **Not configured** (default) allows the user update the TouchID fingerprints on the device. If you have a device running iOS 11.0 or later, blocking this setting also stops the user from changing, adding, or removing FaceID authentication. 
+  - **Touch ID and Face ID modification (supervised only)**: **Block** stops the user from changing, adding, or removing TouchID fingerprints and Face ID. **Not configured** (default) allows the user to update the TouchID fingerprints and Face ID on the device.
 
-- **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also does the following:
+    Face ID is available on iOS 11.0 and later. Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+
+- **Block password AutoFill (supervised only)**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also has the following impact:
 
   - Users aren't prompted to use a saved password in Safari or in any apps.
   - Automatic Strong Passwords are disabled, and strong passwords aren't suggested to users.
@@ -164,14 +169,16 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Automatic app downloads (supervised only)**: Choose **Block** to prevent automatic downloading of apps bought on other devices. It doesn't affect updates to existing apps. **Not configured** allows apps bought on other iOS devices to download on the device.
 - **Require iTunes Store password for all purchases**: **Require** the user to enter the Apple ID password for each in-app or ITunes purchase. **Not configured** allows purchases without prompting for a password every time.
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** allows store purchases within a running app.
-- **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store.
+- **Explicit iTunes music, podcast, or news content**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** allows the device to access content rated as adult from the store. iOS 13 and newer may require supervised only devices. 
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** allows the user to download books with the "Erotica" category.
 - **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
-  - **Allow managed apps to write contacts to unmanaged contacts accounts (supervised only)**: When set to **Allow**, users can add or synchronize any person's Outlook contact information, including business and corporate contacts, to the built-in Contacts app on the device. When set to **Not configured**, users can't add Outlook contacts to the built-in Contacts app on the device.
+  - **Allow managed apps to write contacts to unmanaged contacts accounts**: When set to **Allow**, managed apps, such as the Outlook mobile app, can save or sync contact information, including business and corporate contacts, to the built-in iOS Contacts app. When set to **Not configured**, managed apps can't save or sync contact information to the built-in iOS Contacts app on the device.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
 
-  - **Allow unmanaged apps to read from managed contacts accounts (supervised only)**: When set to **Allow**, users can add any person's iContacts app contact information into Outlook. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.
+  - **Allow unmanaged apps to read from managed contacts accounts**: When set to **Allow**, unmanaged apps, such as the built-in iOS Contacts app, can read and access contact information from managed apps, including the Outlook mobile app. **Not configured** prevents reading, including removing duplicates, from the built-in Contacts app on the device.  
+  
+    This setting allows or prevents reading contact information. It doesn't control syncing contacts between the apps.
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
 
@@ -183,8 +190,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Adding Game Center friends (supervised only)**: **Block** prevents users from adding Game Center friends. **Not configured** allows the user to add friends in Game Center.
 - **Game Center (supervised only)**: **Block** the use of the Game Center app. **Not configured** allows using the Game Center app on the device.
 - **Multiplayer gaming (supervised only)**: Choose **Block** to prevent multiplayer gaming. **Not configured** allows the user to play multiplayer games on the device.
-- **Ratings region**: Choose the ratings region you want to use for allowed downloads. And then choose the allowed ratings for **Movies** and **TV Shows**.
-- **Apps**: Choose the allowed age rating of apps that users can download, or you can choose **Allow All Apps**.
+- **Ratings region**: Choose the ratings region you want to use for allowed downloads. And then choose the allowed ratings for **Movies**, **TV Shows**, and **Apps**.
 
 ## Built-in Apps
 
@@ -196,12 +202,12 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Siri to query user-generated content from the internet (supervised only)**: **Block** prevents Siri from accessing websites to answer questions. **Not configured** allows Siri to access user-generated content from the internet.
 - **Server-side logging for Siri commands**: When set to **Disable**, server-side Siri logging is turned off. It can also prevent logging user requests on Siri servers. **Not configured** (default) logs Siri commands on the server-side. This setting is not dependent on the Siri setting being blocked or not configured.
 
-    This feature applies to:  
-    - iOS 12.2 and later
+  This feature applies to:  
+  - iOS 12.2 and later
 
 - **Apple News (supervised only)**: Choose **Block** to prevent access to the Apple News app on the device. **Not configured** allows using the Apple News app.
 - **iBooks store (supervised only)**: **Block** prevents access to the iBooks store. **Not configured** allows users to browse and buy books from the iBooks store.
-- **Messages app on the device (supervised only)**: Choose **Block** so users can't use the Messages app on the device. **Not configured** allows using the Messages app to send and read text messages.
+- **Messages app on the device (supervised only)**: **Block** prevents users from using the Messages app for iMessage. If the device supports text messaging, the user can still send and receive text messages using SMS. **Not configured** allows using the Messages app to send and read messages over the internet.
 - **Podcasts (supervised only)**: **Block** prevents users using the Podcasts app. **Not configured** allows using the Podcasts app.
 - **Music service (supervised only)**: **Block** reverts the Music app to classic mode and disables the Music service. **Not configured** allows using the Apple Music app.
 - **iTunes Radio service (supervised only)**: **Block** prevents users from using the iTunes Radio app. **Not configured** allows using the iTunes Radio app.
@@ -209,7 +215,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Spotlight search to return results from internet (supervised only)**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** allows Spotlight search connect to the Internet to provide search results.
 - **Block removal of system apps from device (supervised only)**: Choosing **Block** disables the ability to remove system apps from the device. **Not configured** allows users to remove system apps.
 
-#### Safari
+### Safari
 
 - **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** allows users to use the Safari browser.
 - **Autofill**: **Block** disables the autofill feature in Safari on the device. **Not configured** allows users to change autocomplete settings in the web browser.
@@ -261,6 +267,19 @@ To add apps to these lists, you can:
 
   You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
 
+> [!IMPORTANT]  
+> For devices running iOS 12.2 and 12.3.1 use ***iTunes*** instead of ***apps*** for the apple.com portion of the URL. Use of *apps* will fail. We are working on a fix for this in a future release. When fixed, you'll be able to use either *iTunes* or *apps* in the URL.  
+>  
+> Example for MS Word:  
+> - With the following URL, the app is *visible* or *hidden* on the device (works): 
+>   - https://**itunes**.apple.com/de/app/microsoft-word/id586447913  
+>
+> - With the following URL, the app isn't *visible* or *hidden* on the device (doesn't work): 
+>   - https://**apps**.apple.com/de/app/microsoft-word/id586447913  
+
+ 
+
+
 ## Wireless
 
 - **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** (default) allows data roaming when the device is on a cellular network.
@@ -298,7 +317,7 @@ To add apps to these lists, you can:
   - **Block storage of AirPrint credentials in Keychain (supervised only)**: **Block** prevents using Keychain storage for username and password on the device. **Not configured** (default) allows storing the AirPrint username and password in the Keychain app.
   - **Require a trusted TLS certificate for AirPrint (supervised only)**: **Require** forces the device to use trusted certificates for TLS printing communication.
   - **Block iBeacon discovery of AirPrint printers (supervised only)**: **Block** prevents malicious AirPrint Bluetooth beacons from phishing for network traffic. **Not configured** (default) allows advertising AirPrint printers on the device.
-- **Block setting up new nearby devices (supervised only)**: **Block** disables the prompt to setup new devices that are nearby. **Not configured** (default) allows prompts for users to connect to other nearby Apple devices.
+- **Block setting up new nearby devices (supervised only)**: **Block** disables the prompt to set up new devices that are nearby. **Not configured** (default) allows prompts for users to connect to other nearby Apple devices.
 
   This feature applies to:  
   - iOS 11.0 and later
@@ -348,12 +367,12 @@ To add apps, you can:
 - **Mono audio**: **Require** the Mono audio accessibility setting be on the device. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **VoiceOver**: **Require** the VoiceOver accessibility setting be on the device to read text on the screen out loud. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Zoom**: **Require** the Zoom setting be on the device to let users use touch to zoom in on the screen. **Not configured** doesn't run or enable this feature in kiosk mode.
-- **Auto lock**: **Allow** automatic locking of the device. **Not configured** disables this feature.
-- **Ringer switch**: **Allow** the ringer (mute) switch on the device. **Not configured** disables this feature.
-- **Screen rotation**: **Allow** changing the screen orientation when the user rotates the device. **Not configured** disables this feature.
-- **Screen sleep button**: Choose **Allow** to disable the screen sleep wake button on the device. **Not configured** enables this feature.
+- **Auto lock**: **Block** prevents automatic locking of the device. **Not configured** allows this feature.
+- **Ringer switch**: **Block** disables the ringer (mute) switch on the device. **Not configured** allows this feature.
+- **Screen rotation**: **Block** prevents changing the screen orientation when the user rotates the device. **Not configured** allows this feature.
+- **Screen sleep button**: Choose **Block** to disable the screen sleep wake button on the device. **Not configured** allows this feature.
 - **Touch**: **Block** disables the touchscreen on the device. **Not configured** allows the user to use the touchscreen.
-- **Volume buttons**: **Allow** using the volume buttons on the device. **Not configured** disables the volume buttons.
+- **Volume buttons**: **Block** prevents using the volume buttons on the device. **Not configured** allows the volume buttons.
 - **Assistive touch control**: **Allow** let users use the assistive touch function. **Not configured** disables this feature.
 - **Invert colors control**: **Allow** invert color changes to let users adjust the invert colors function. **Not configured** disables this feature.
 - **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. This feature reads text that the user selects out loud. **Not configured** disables this feature.

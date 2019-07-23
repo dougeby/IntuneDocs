@@ -2,7 +2,7 @@
 # required metadata
 
 title: Network access control integration with Microsoft Intune - Azure | Microsoft Docs
-description: Network access control (NAC) solutions check enrollment and compliance for devices with Intune. NAC includes certain behaviors and works with conditional access. See the steps to get onboarded, and get a list of partner solutions.
+description: Network access control (NAC) solutions check enrollment and compliance for devices with Intune. NAC includes certain behaviors and works with Conditional Access. See the steps to get onboarded, and get a list of partner solutions.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -43,11 +43,11 @@ If the device is enrolled and compliant with Intune, the NAC solution should all
 
 Devices that are actively syncing to Intune can't move from **Compliant** / **Noncompliant** to **Not Synched** (or **Unknown**). The **Unknown** state is reserved for newly enrolled devices that haven't been evaluated for compliance yet.
 
-For devices that are blocked from access to resources, the blocking service should redirect all users to the [management portal](https://portal.manage.microsoft.com) to determine why the device is blocked.  If the users visit this page, their devices are synchronously reevaluated for compliance.
+For devices that are blocked from access to resources, the blocking service should redirect all users to the [management portal](https://portal.manage.microsoft.com) to determine why the device is blocked.  If the users visit this page, their devices are synchronously reevaluated for compliance.
 
-## NAC and conditional access
+## NAC and Conditional Access
 
-NAC works with conditional access to provide access control decisions. For more information, see [Common ways to use conditional access with Intune](conditional-access-intune-common-ways-use.md).
+NAC works with Conditional Access to provide access control decisions. For more information, see [Common ways to use Conditional Access with Intune](conditional-access-intune-common-ways-use.md).
 
 ## How the NAC integration works
 
