@@ -38,7 +38,6 @@ As an Intune administrator, you can enroll Android devices in the following ways
     - **Android Enterprise work profile**: For personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
     - **Android Enterprise dedicated**: For corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
     - **Android Enterprise fully managed**: For corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
-- [**Android device administrator**](android-enroll-device-administrator.md), including Samsung Knox Standard devices and [Zebra devices](android-zebra-mx-overview.md). 
 
 ## Prerequisites
 
@@ -73,4 +72,3 @@ There are several considerations when enrolling Samsung Knox devices:
 - [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
 - [Set up Android Enterprise dedicated device enrollments](android-kiosk-enroll.md)
 - [Set up Android Enterprise fully managed enrollments](android-fully-managed-enroll.md)
-- [Set up Android device administrator enrollment](android-enroll-device-administrator.md)
