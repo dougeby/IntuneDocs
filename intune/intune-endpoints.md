@@ -149,7 +149,7 @@ For Delivery Optimization metadata:
 
 For more information, see Apple's [TCP and UDP ports used by Apple software products](https://support.apple.com/en-us/HT202944), [About macOS, iOS, and iTunes server host connections and iTunes background processes](https://support.apple.com/en-us/HT201999), and [If your macOS and iOS clients aren't getting Apple push notifications](https://support.apple.com/en-us/HT203609).  
 
-## Intune Certificate Connector  
+## Microsoft Intune Certificate Connector  
 
 The server that hosts the Microsoft Intune Certificate Connector must have access using **TCP** port **443** to the public IP locations that are listed in the following table.  
 
