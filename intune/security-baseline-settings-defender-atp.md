@@ -298,7 +298,7 @@ For more information, see [WindowsAdvancedThreatProtection CSP](https://docs.mic
 
   **Default**: Audit mode
 
-## Web Network Protection  
+## Web & Network Protection  
 
 - **Network protection type**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - This policy allows you to turn network protection on or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites.  
