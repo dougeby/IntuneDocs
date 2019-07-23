@@ -158,11 +158,20 @@ You assign the settings to Azure AD groups of users. If that user has the target
 3. On the next blade, choose **Assignments**.
 4. On the **Assignments** blade, select the Azure AD group to which you want to assign the app configuration, and then choose **OK**.
 
-## How to set Microsoft Edge as the default protected browser for your organization
+## How to set Microsoft Edge as the protected browser for your organization
 
-This setting allows you to configure which browser app your users will be directed to use. **This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened.** If this setting is set to "True," Microsoft Edge will be set as the browser your users are prompted to use. If the value is set to "False," your users will continue to be directed to use the Managed Browser.
-- If the user doesn't have either Managed Browser or Microsoft Edge downloaded, this app config setting will determine which app the user will be prompted to download. 
-- If the user has both the Managed Browser and Microsoft Edge downloaded, this app config setting will determine which browser corporate resources will be launched in. 
+This setting allows you to configure if your users will be directed to Microsoft Edge or the Intune Managed Browser, assuming both browsers are targeted with app protection policy. **This application configuration policy setting should be targeted to Intune managed Apps from which the web link is opened.** 
+
+If this setting is set to "True":
+
+- Your users will directed to Microsoft Edge when opening links from Intune managed apps targeted with this setting. 
+- If they do not have the app yet, they will be prompted to download Microsoft Edge from the store, regardless of if they have the Intune Managed Browser downloaded.
+
+If this setting is set to "False":
+
+- If your users have **both** the Managed Browser and Microsoft Edge downloaded, the Managed Browser will launch. 
+- If your users have **either** the Managed Browser **or** Microsoft Edge downloaded, that browser app will launch. 
+- If your users do not have either browser app downloaded, they will be prompted to download the Managed Browser.
 
 Using the above procedure to create a Microsoft Edge app configuration. Supply the following key and value pair when selecting the **Configuration settings** on the **Configuration** blade (step 9):
 
@@ -185,7 +194,8 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 ### Before you start
 
 - Set up your internal applications through the Azure AD Application Proxy.
-    - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
+  - To configure Application Proxy and publish applications, see the [setup documentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy). 
+  - [Users must be assigned](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing) to the Enterprise Application for which the redirection is to occur. This must be done even if the application is set to Passthrough mode for Pre-Authentication, and if the user assignment requirement has been turned off in the Application Proxy settings.
 - You must be using minimum version 1.2.0 of the Managed Browser app.
 - Users of the Managed Browser or Microsoft Edge app have an [Intune app protection policy](app-protection-policy.md) assigned to the app.
 
@@ -219,7 +229,7 @@ Using the procedure to create a Microsoft Edge or Managed Browser app configurat
 
 |                                Key                                |                                                           Value                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: `<https://www.bing.com>` |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>Example: `https://www.bing.com` |
 
 ## How to configure bookmarks for a protected browser
 
@@ -296,19 +306,18 @@ Use the following information to learn about the allowed formats and wildcards t
   - `http://www.contoso.com:*`
 
   - `http://www.contoso.com: /*`
-## Opening links within the Intune Managed Browser vs. Microsoft Edge 
+  
+## Soft transitions from work to personal accounts
 
-Both the Intune Managed Browser and Microsoft Edge are now considered policy-managed browsers/protected browsers. Today, existing app protection policies result in web links from Intune managed apps to open in a specific browser depending on your scenario and platform. 
+The cornerstone of the Microsoft Edge mobile enterprise experience is the dual-identity model, meaning Microsoft Edge supports both work and personal identities. As with the Office 365 and Outlook apps, this dual-identity model allows end users to use Microsoft Edge for all browsing needs and easily move between the two experiences based on the content policies defined by the administrator. Browsing in the personal context is unaffected and corporate information is kept completely contained to the work context within Microsoft Edge. 
 
-On Android: 
-* Managed Browser will open if a user has both Managed Browser and Microsoft Edge downloaded on their device. To ensure Microsoft Edge is being opened instead of Managed Browser, set the app config setting “com.microsoft.intune.useEdge” to “true” for all Intune managed apps with a policy-managed browser required.  
-* Microsoft Edge will open if only Microsoft Edge is on the device and is targeted with policy.
-* Managed Browser will open if only Managed Browser is on the device and is targeted with policy. 
+One of the benefits of this model is that when users try to open a link (such as a newspaper article, etc.) to a site that is not  allowed by your organization, they are able to do so in their personal context, which is kept entirely separate from their work context. These soft transitions from are enabled by default. 
 
-On iOS, for apps that have integrated the Intune SDK for iOS v. 9.0.9+: 
-* Managed Browser if both MB and Edge are on the device, unless app config setting “com.microsoft.intune.useEdge” is set to “true” for all Intune managed apps with a policy-managed browser required **or** Microsoft Edge if Microsoft Edge is installed and has received policy. 
-* Microsoft Edge if only Microsoft Edge is on the device, is targeted with, and has received policy. 
-* Managed Browser if only Managed Browser is on the device, is targeted with, and has received policy.
+Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
+
+| Key                                                                | Value                                                 |
+|--------------------------------------------------------------------|-------------------------------------------------------|
+| **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** blocks these soft transitions from occuring |
 
 ## How to access to managed app logs using the Managed Browser on iOS
 

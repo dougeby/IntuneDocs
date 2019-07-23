@@ -48,7 +48,7 @@ SEP Mobile supports two modes of integration with Intune:
 
 - **Read-only integration (Basic setup):** Only inventories devices from Azure Active Directory and populates them in the Symantec Endpoint Protection Mobile Management console.
 <br>
-    - If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Symantec Endpoint Protection Mobile Management console, the integration is read-only and therefore will never change a device's state (compliant or noncompliant) in Intune.
+  - If the **Report the health and risk of devices to Intune**, and **Also report security incidents to Intune** boxes are not selected in the Symantec Endpoint Protection Mobile Management console, the integration is read-only and therefore will never change a device's state (compliant or noncompliant) in Intune.
 <br></br>
 - **Full integration:** Allows SEP Mobile to report devices on risk and security incident details to Intune, which creates a bi-directional communication between both cloud services.
 
@@ -89,7 +89,7 @@ SEP Mobile supports two modes of integration with Intune:
 
 You need to add an Azure AD security group that contains all devices running SEP Mobile.
 
-- Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
+- Enter and select all the security groups of devices that are running SEP Mobile, and then save the changes.
 
     ![Image showing user groups for SEP Mobile apps](./media/symantec-portal-basic-groups.png)
 

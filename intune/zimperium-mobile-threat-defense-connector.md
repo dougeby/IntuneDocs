@@ -64,7 +64,7 @@ When malicious apps such as malware are detected on devices, you can block devic
 
 ### Control access based on threat to network
 
-Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
+Detect threats like **Man-in-the-middle** in network, and protect access to Wi-Fi networks based on the device risk.
 
 **Block network access through Wi-Fi:**
 
@@ -76,7 +76,7 @@ Detect threats like **Man-in-the-middle** in network, and protect access to Wi
 
 ### Control access to SharePoint Online based on threat to network
 
-Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
+Detect threats like **Man-in-the-middle** in network, and prevent synchronization of corporate files based on the device risk.
 
 **Block SharePoint Online when network threats are detected:**
 
@@ -100,7 +100,7 @@ Detect threats like **Man-in-the-middle** in network, and prevent synchronizat
 
 - Zimperium Mobile Threat Defense subscription
 
-    - For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips).
+  - For more information, see [Zimperium website](https://www.zimperium.com/zips-mobile-ips).
 
 ## Next steps
 

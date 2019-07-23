@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -57,11 +57,11 @@ Configuring the user UPN setting is **required** for devices that are managed by
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
-      Example: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      Example: [‘IntuneMAMUPN’, ‘janellecraig@contoso.com’]
       
-       > [!NOTE]
-       > In Intune, the App Configuration policy has to be for enrollment type "Managed Devices".
-       > Addicionally, the App needs to be either installed from the Intune Company Portal if set as available or pushed as required to the device. 
+     > [!NOTE]
+     > In Intune, the App Configuration policy enrollment type must be set to **Managed Devices**.
+     > Additionally, the app needs to be either installed from the Intune Company Portal (if set as available) or pushed as required to the device. 
 
 4. Deploy the **Open in management** policy using Intune or your third-party MDM provider to enrolled devices.
 
@@ -83,6 +83,9 @@ Configuring the user UPN setting is **required** for devices that are managed by
    |MobileIron | IntuneMAMUPN | String | ${userUPN} **or** ${userEmailAddress} |
    |Citrix Endpoint Management | IntuneMAMUPN | String | ${user.userprincipalname} |
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | String | %upn% |
+
+> [!NOTE]  
+> For Outlook App in iOS if you deploy an App Configuration Policy with the option "Using configuration designer" the configuration key IntuneMAMUPN is configured automatically behind the scenes for the policy. More details about see FAQ section from [New Outlook for iOS and Android App Configuration Policy Experience – General App Configuration](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481). 
 
 
 ### Example 2: End-user experience
@@ -111,5 +114,5 @@ For example, the **Require app PIN** policy setting is easy to test. When the po
 First,  [create and assign an app protection policy](app-protection-policies.md) to the iOS app. For more information on how to test app protection policy, See [Validate app protection policies](app-protection-policies-validate.md).
 
 
-### See also
+## See also
 [What is Intune app protection policy](app-protection-policy.md)

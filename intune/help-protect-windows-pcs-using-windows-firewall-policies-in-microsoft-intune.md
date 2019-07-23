@@ -46,7 +46,7 @@ The Windows Firewall policy lets you create and deploy settings that control Win
 > [!NOTE]
 > If Microsoft Intune policy and Group Policy are configured to manage the same setting on the PC, the Group Policy setting overrides the Microsoft Intune policy. For information about how to avoid conflicts between Intune policy and Group Policy, see [Resolve GPO and Microsoft Intune policy conflicts](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> If you want to deploy Windows Firewall settings to computers that run Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
+> If you want to deploy Windows Firewall settings to computers that run Windows Vista, you must first install [Hotfix KB971800](http://support2.microsoft.com/kb/971800) on these computers.
 
 > [!IMPORTANT]
 > To manage Windows Firewall by using Intune, ensure that the following two services are enabled on the computers that you manage:
@@ -87,7 +87,7 @@ These policy settings configure Windows Firewall to block incoming network traff
 The default value for each of these settings is **Yes**, which is the most secure value.
 
 > [!IMPORTANT]
-> If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update that's associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or disable the **Block all incoming connections** policy settings in policies that are deployed to those computers.
+> If your environment includes managed computers that are running Windows Vista with no service packs installed, you must either install the update that's associated with [article 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in the Microsoft Knowledge Base or disable the **Block all incoming connections** policy settings in policies that are deployed to those computers.
 
 ### Notify the user when Windows Firewall blocks a new program
 
@@ -143,5 +143,5 @@ You can configure exceptions that allow specific types of network traffic throug
 |**Windows Virtual PC**<br>(Windows 7 or later)|Lets virtual machines communicate with other computers.|
 |**Wireless Portable Devices**|Enables the transfer of media from a network-enabled camera or media device to managed computers with Media Transfer Protocol (MTP). This setting uses SSDP and UPnP network protocols.|
 
-### See also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -40,11 +40,11 @@ Your Intune design is based on the information you collect and decisions you mak
 
 - Device platform considerations
 
-- Requirements to be delivered  
+- Requirements to be delivered  
 
 Although there’s minimal on-premises infrastructure requirements, a design plan is still helpful to make sure you have the right mobile device management solution that meets your goals, objectives, and requirements.
 
-Let’s review each of these areas in more detail. 
+Let’s review each of these areas in more detail. 
 
 ## Record your current environment
 Additionally, it’s common to have design changes during the implementation and testing phases. Use your design plan to document these changes and the rationale behind them as they occur.
@@ -53,47 +53,47 @@ Your current environment can influence design decisions and should be documented
 
 - **Identity in the cloud**
 
-    - Do you use DirSync or Azure Active Directory (Azure AD) Connect?
+  - Do you use DirSync or Azure Active Directory (Azure AD) Connect?
 
-    - Is your environment federated?
+  - Is your environment federated?
 
-    - Is multi-factor authentication (MFA) enabled?
+  - Is multi-factor authentication (MFA) enabled?
 
 - **Email environment**
 
-    - Do you use Exchange? Is it on-premises or in the cloud?
+  - Do you use Exchange? Is it on-premises or in the cloud?
 
-    - Are you in the middle of a project to migrate Exchange to the cloud?
+  - Are you in the middle of a project to migrate Exchange to the cloud?
 
 - **Current mobile device management (MDM) solution**
 
-    - Are you currently using other MDM solutions?
+  - Are you currently using other MDM solutions?
 
-    - What MDM solutions are you using for corporate and BYOD use-case scenarios?
+  - What MDM solutions are you using for corporate and BYOD use-case scenarios?
 
-    - What capabilities are you using (for example: app device settings, Wi-Fi configurations)?
+  - What capabilities are you using (for example: app device settings, Wi-Fi configurations)?
 
-    - What device platforms are supported?
+  - What device platforms are supported?
 
-    - What groups and how many users are using the MDM solution?
+  - What groups and how many users are using the MDM solution?
 
 - **Certificate solution**
 
-    - Have you implemented a certificate solution?
+  - Have you implemented a certificate solution?
 
-    - What type of certificates do you use?
+  - What type of certificates do you use?
 
 - **Systems management**
 
-    - How are you managing your PC and server environment?
+  - How are you managing your PC and server environment?
 
-    - Are you using System Center Configuration Manager? Are you using a third-party system management platform?
+  - Are you using System Center Configuration Manager? Are you using a third-party system management platform?
 
 - **VPN solution**
 
-    - What is your VPN solution?
+  - What is your VPN solution?
 
-    - Do you use it for both corporate and BYOD use-case scenarios?
+  - Do you use it for both corporate and BYOD use-case scenarios?
 
 Make sure to note any projects or any other plans in place that could affect your environment when recording the current MDM environment. Below is an example of a way to record the current environment when creating your Intune design:
 

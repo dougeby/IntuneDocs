@@ -52,7 +52,7 @@ The following are minimum hardware requirements for installing the Intune client
 |---------------|--------------------|
 |Network|The client requires the PC to have Internet connectivity.|
 |Processor and Memory|Refer to the processor and RAM requirements for the PC's operating system.|
-|Disk space|200 MB available disk space before the client software is installed.|
+|Disk space|200 MB available disk space before the client software is installed.|
 
 **Software**:  
 The following are software requirements for installing the client software:

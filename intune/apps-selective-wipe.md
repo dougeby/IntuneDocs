@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -92,7 +92,7 @@ Wipes with pending status are displayed until you manually delete them. To manua
 
 3. You're prompted to confirm the deletion, choose **Yes** or **No**, then click **OK**.
 
-### See also
+## See also
 [What's app protection policy](app-protection-policy.md)
 
 [What's app management](app-management.md)

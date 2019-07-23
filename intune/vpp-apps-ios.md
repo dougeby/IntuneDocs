@@ -43,13 +43,13 @@ Microsoft Intune helps you manage multiple copies of apps purchased through this
 
 There are two methods you can use to assign volume-purchased apps:
 
-### Device licensing
+## Device licensing
 
 When you assign an app to devices, one app license is used, and remains associated with the device to which you assigned it.
 
 When you assign volume-purchased apps to a device, the end user of the device does not have to supply an Apple ID to access the store.
 
-### User licensing
+## User licensing
 
 When you assign an app to a user, one app license is used for and is associated with the user. The app can be run on multiple devices that the user owns (with a limit controlled by Apple).
 
@@ -163,6 +163,13 @@ You can renew an Apple VPP token by downloading a new token from Apple Volume Pu
 
 Currently, you cannot delete an iOS VPP app from Microsoft Intune.
 
+## Assigning custom role permissions for VPP
+
+Access to iOS VPP tokens and iOS VPP apps can be controlled independently using permissions assigned to custom administrator roles in Intune.
+
+* To allow an Intune custom role to manage iOS VPP tokens under **Client apps** > **iOS VPP tokens**, assign permissions for **Managed apps**.
+* To allow an Intune custom role to manage apps purchased using iOS VPP tokens under **Client apps** > **Apps**, assign permissions for **Mobile apps**. 
+
 ## Additional information
 
 When a user with an eligible device first tries to install a VPP app to a device, they are asked to join the Apple Volume Purchase program. They must join before the app installation proceeds. The invitation to join the Apple Volume Purchase program requires that the user can use the iTunes app on the iOS device. If you have set a policy to disable the iTunes Store app, user-based licensing for VPP apps does not work. The solution is to either allow the iTunes app by removing the policy, or use device-based licensing.
@@ -173,13 +180,13 @@ If **Assigned to external MDM** is indicated in the Intune portal, then you (the
 
 ## Frequently asked questions
 
-#### How long does the portal take to update the license count once an app is installed or removed from the device?
+### How long does the portal take to update the license count once an app is installed or removed from the device?
 The license should be updated within a few hours after installing or uninstalling an app. Note that if the end user removes the app from the device, the license is still assigned to that user or device.
 
-#### Is it possible to oversubscribe an app and, if so, in what circumstance?
+### Is it possible to oversubscribe an app and, if so, in what circumstance?
 Yes. The Intune admin can oversubscribe an app. For example, if the admin purchases 100 licenses for app XYZ, and then targets the app to a group with 500 members in it. The first 100 members (users or devices) will get the license assigned to them, the rest of the members will fail on license assignment.
 
-#### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
+### I understand Intune automatically syncs app licenses each day with Apple, is that correct?
 Intune syncs app licenses twice a day with Apple.
 
 ## Next steps
