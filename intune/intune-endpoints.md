@@ -86,9 +86,9 @@ The following tables list the ports and services that the Intune client accesses
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180|
 
-## Network requirements for Powershell scripts and Win32 apps  
+## Network requirements for PowerShell scripts and Win32 apps  
 
-If you're using Intune to deploy Powershell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
+If you're using Intune to deploy PowerShell scripts or Win32 apps, you'll also need to grant access to endpoints in which your tenant currently resides.
 
 |ASU | Storage name | CDN |
 | --- | --- |--- |
