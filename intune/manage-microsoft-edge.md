@@ -81,11 +81,6 @@ To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android
 
 9. In the **Assignments** section, select **Users and groups**, and then choose the users or groups you want to assign this policy.
 
-
-    > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md).
-
-
 10. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
 
 After the above policy is configured, users are forced to use Microsoft Edge to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they receive a message that they must use Microsoft Edge.
@@ -104,11 +99,7 @@ SSO requires your device to be registered by either the Microsoft Authenticator 
 
 ## Create a protected browser app configuration
 
-
-For app configurations to apply, the user's protected browser or another app on the device must already be managed by the [Intune app protection policy](app-protection-policy.md).
-
 To create app configuration for Microsoft Edge:
-
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Client apps** > **App configuration policies** > **Add**.
