@@ -160,13 +160,11 @@ To accomplish failover, after the connector creates a successful connection to E
  
 ## Optional Performance tuning for the Exchange connector  
 
-When you support 5,000 or more devices with Exchange ActiveSync, you can configure the following optional settings to improve the performance of the connector.  
+When you support 5,000 or more devices with Exchange ActiveSync, you can configure an optional setting to improve the performance of the connector. Increased performance is achieved by enabling Exchange to use multiple instances of a PowerShell command run-space. 
 
-Increased performance is achieved by enabling Exchange to use multiple instances of a PowerShell command run-space. 
+Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. This is because Exchange has a limit of 18 run-spaces per account, most of which will be used by the connector. 
 
-Before you make this change, ensure the account you use to run the Exchange connector is not used for other Exchange management purposes. This is because Exchange has a limit of 18 run-spaces per account, most of which will be used by the connector. 
-
-This performance change is not suitable for connectors that run on older or slower hardware.  
+This performance change isn't suitable for connectors that run on older or slower hardware.  
 
 1. On the server where the connector installed, open the connectors installation directory.  The default location is *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
 2. Edit the file *OnPremisesExchangeConnectorServiceConfiguration.xml*.
