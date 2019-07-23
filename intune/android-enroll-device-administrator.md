@@ -47,6 +47,8 @@ For more information about Google's Android Enterprise features, see these artic
 - [Google’s guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google’s documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation)
 
+For more information about Intune support for Android device administrator support, see the [Notices section](whats-new.md#notices).
+
 ## Set up device administrator enrollment
 
 Intune by default allows enrollment of Android devices with device administrator capabilities.
