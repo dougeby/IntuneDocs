@@ -49,12 +49,12 @@ As the admin, you can include and exclude security groups to assign iOS app prov
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. On the **Intune** pane, choose **Client apps**.
-1.  In the **Client apps** workload, choose **Manage** > **iOS app provisioning profiles**.
-2.  In the list of profiles pane, choose **Create profile**.
+1. In the **Client apps** workload, choose **Manage** > **iOS app provisioning profiles**.
+2. In the list of profiles pane, choose **Create profile**.
 3. In the **Create profile** pane, configure the following values:
-	- **Name** - Provide a name for this mobile provisioning profile.
-	- **Description** - Optionally, provide a description for the policy.
-	- **Upload profile file** - Choose **Open** icon, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the [Apple Developer website](https://developer.apple.com/).
+    - **Name** - Provide a name for this mobile provisioning profile.
+    - **Description** - Optionally, provide a description for the policy.
+    - **Upload profile file** - Choose **Open** icon, and then choose an Apple Mobile Configuration Profile file (with the extension `.mobileprovision`) that you downloaded from the [Apple Developer website](https://developer.apple.com/).
 4. When you are done, choose **Create**.
 
 ## Next steps

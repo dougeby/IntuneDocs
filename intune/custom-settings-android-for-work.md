@@ -52,7 +52,7 @@ This article shows you how to create a custom profile for Android Enterprise dev
     - **Name**: Enter a name for the profile, such as `android enterprise custom profile`
     - **Description**: Enter a description for the profile
     - **Platform**: Choose **Android Enterprise**
-	- **Profile type**: Choose **Custom**
+    - **Profile type**: Choose **Custom**
 
 4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
 
@@ -87,7 +87,7 @@ In this example, you create a custom profile that restricts copy and paste actio
     - **Name**: Enter a name for the profile, such as `android ent block copy paste custom profile`.
     - **Description**: Enter a description for the profile.
     - **Platform**: Choose **Android Enterprise**.
-	- **Profile type**: Choose **Custom**.
+    - **Profile type**: Choose **Custom**.
 
 4. In **Custom OMA-URI Settings**, select **Add**. Enter the following settings:
 

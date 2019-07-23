@@ -36,10 +36,10 @@ Learn about using app protection policies with Conditional Access to protect Exc
 > * Create Azure Active Directory (Azure AD) Conditional Access policies that allow only the Outlook app to access company email in Exchange Online. You'll also require multi-factor authentication (MFA) for Modern authentication clients, like Outlook for iOS and Android.
 
 ## Prerequisites
-  - You'll need a test tenant with the following subscriptions for this tutorial:
-    - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune subscription ([free trial](free-trial-sign-up.md))
-    - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- You'll need a test tenant with the following subscriptions for this tutorial:
+  - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune subscription ([free trial](free-trial-sign-up.md))
+  - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## Sign in to Intune
 
@@ -78,7 +78,7 @@ For this tutorial, we’ll set up an Intune app protection policy for the Outloo
 
     Select **OK** to return to the Settings pane.  
 
-7.	On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
+7. On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
 
 The app protection policy for Outlook is created. Next, you'll set up Conditional Access to require devices to use the Outlook app.
 

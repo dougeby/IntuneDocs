@@ -70,12 +70,12 @@ After you've created an app protection policy in Intune, you can assign to group
 
 Use the following steps to assign the app protection policy:
 
-1.	In [Intune](https://aka.ms/intuneportal), select **Intune** > **Client apps** > **App protection policies**. 
-2.	Select the app protection policy you created earlier. In this quickstart, the policy is **Windows 10 content protection**.
-3.	Select **Assignments**.
-4.	Click **Select groups to include** in the **Include** tab.
-5.	Select **Contoso Testers** as the group to include.
-6.	Click **Select** > **Save**. 
+1. In [Intune](https://aka.ms/intuneportal), select **Intune** > **Client apps** > **App protection policies**. 
+2. Select the app protection policy you created earlier. In this quickstart, the policy is **Windows 10 content protection**.
+3. Select **Assignments**.
+4. Click **Select groups to include** in the **Include** tab.
+5. Select **Contoso Testers** as the group to include.
+6. Click **Select** > **Save**. 
 
 You now have assigned the app protection policy.
 

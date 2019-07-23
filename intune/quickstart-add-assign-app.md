@@ -73,7 +73,7 @@ After you've added an app to Microsoft Intune, you can assign the app to groups 
 
 Use the following steps to assign an app to a group:
 1. In [Intune](https://aka.ms/intuneportal), select **Client apps** > **Apps**. 
-2. Select the app that you want to assign to a group.	
+2. Select the app that you want to assign to a group.
 3. Click **Assignments** > **Add group** to display the **Add group** blade.
 4. Select **Available for enrolled devices** in the **Assignment type** dropdown box. 
 5. Click **Included Groups** > **Select groups to include** > **Contoso Testers**.

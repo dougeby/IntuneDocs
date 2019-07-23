@@ -34,40 +34,40 @@ ms.collection: M365-identity-device-management
 
 When you install the Company Portal app and enroll your iOS device in Intune, you can use the Company Portal app to:
 
--   Access the company’s network, and your email and work files.
+- Access the company’s network, and your email and work files.
 
--   Get company apps from the Company Portal.
+- Get company apps from the Company Portal.
 
--   Remotely reset your phone to factory settings if it is lost or stolen.
+- Remotely reset your phone to factory settings if it is lost or stolen.
 
--   Automatically set up your company email account.
+- Automatically set up your company email account.
 
 When you enroll your device in Intune, you are giving your company support permission to manage your device to help protect the company information on the device.
 
 When your device is enrolled, your company support can:
 
--   Reset your device back to manufacturer’s default settings if the device is lost or stolen.
+- Reset your device back to manufacturer’s default settings if the device is lost or stolen.
 
--   Remove all installed company-related data and business apps. Your personal data and settings aren’t removed.
+- Remove all installed company-related data and business apps. Your personal data and settings aren’t removed.
 
--   Require you to have a password or PIN on the device.
+- Require you to have a password or PIN on the device.
 
--   Require you to accept terms and conditions.
+- Require you to accept terms and conditions.
 
--   Disable the camera on your device to prevent you from taking pictures of sensitive company data.
+- Disable the camera on your device to prevent you from taking pictures of sensitive company data.
 
--   Enable or disable web browsing on your device.
+- Enable or disable web browsing on your device.
 
--   Enable or disable backup to iCloud.
+- Enable or disable backup to iCloud.
 
--   Enable or disable document sync to iCloud.
+- Enable or disable document sync to iCloud.
 
--   Enable or disable Photo Stream to iCloud.
+- Enable or disable Photo Stream to iCloud.
 
--   Enable or disable data roaming on your device. If data roaming is allowed, you might incur roaming charges.
+- Enable or disable data roaming on your device. If data roaming is allowed, you might incur roaming charges.
 
--   Enable or disable voice roaming on your device. If voice roaming is allowed, you might incur roaming charges.
+- Enable or disable voice roaming on your device. If voice roaming is allowed, you might incur roaming charges.
 
--   Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
+- Enable or disable automatic file synchronization while in roaming mode on your device. If automatic file synchronization is allowed, you might incur roaming charges.
 
 If you have questions, contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

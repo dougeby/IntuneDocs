@@ -35,7 +35,7 @@ Troubleshoot your app problems in the Company Portal app for Windows 10. If you 
 When you request help, a prepopulated email opens where you can describe the problem in detail. It also includes a diagnostic log ID. If your support team can't resolve the problem based on your description, they'll contact Microsoft for help. Microsoft will need the diagnostic ID to reference the app's logs.   
 
 
-> [!Note]		
+> [!Note]
 > After you click **Get help**, the Company Portal will automatically send your logs to Microsoft's support team. This step is a proactive one that makes it easier to troubleshoot and resolve problems that are escalated to Microsoft support. As mentioned above, Microsoft's support team can pull up logs using the diagnostic ID in your email.  
 
 ## What is a diagnostic log?

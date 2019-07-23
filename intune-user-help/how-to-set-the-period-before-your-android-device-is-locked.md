@@ -34,18 +34,18 @@ To reconnect to your work, you’ll need to set the password timeout on your dev
 
 ## Native (non-Samsung Knox) device
 
-1.  In **Settings** on your device, tap **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).
+1. In **Settings** on your device, tap **Security** &gt; **Automatically Lock** (this appears as **Lock phone after** on some devices).
 
     If **Automatically Lock** (**Lock phone after** on some devices) is not displayed, ensure that you have set a valid password under **Settings** &gt; **Screen Lock** &gt; **Password**.
 
-2.  Select the password timeout value.
+2. Select the password timeout value.
 
 ## Samsung Knox device
 
-1.  In **Settings** on your device, tap **Lock screen and security** &gt; **Lock automatically**.
+1. In **Settings** on your device, tap **Lock screen and security** &gt; **Lock automatically**.
 
     If **Lock automatically Lock** (**Lock phone after** on some devices) is not displayed, ensure that you have set a valid password under **Settings** &gt; **Screen Lock** &gt; **Password**.
 
-2.  Select a password timeout value.
+2. Select a password timeout value.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

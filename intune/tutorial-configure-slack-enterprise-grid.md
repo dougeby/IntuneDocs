@@ -58,105 +58,105 @@ Add the iOS app Slack for EMM to your Intune tenant and create an app configurat
 
 ### Add Slack for EMM to Intune
 Add Slack for EMM as a managed iOS app in Intune and assign your Slack users. Apps are platform-specific, so you need to add a separate Intune app for your Slack users on Android devices.
-1.	In Intune, select **Client apps** > **Apps** > **Add**.
-2.	Under App type, select **Store app - iOS**.
-3.	Select **Search the App Store**. Enter the search term "Slack for EMM" and select the app.
-4.	Select **App information** and configure any changes as you see fit.
-5.	Select **Add**.
-6.	In the search bar, enter "Slack for EMM" and select the app you just added.
-7.	From Manage, select **Assignments**.
-8.	Select **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
-    -  **Available for enrolled devices** if you chose "All members (including guests)" OR
-    -  **Available with or without enrollment** if you chose "All members (excluding guests)" or "Optional".
-9.	Select **Included Groups** and under Make this app available to all users select **Yes**.
-10.	Click **OK**, and then click **OK** again.
-11.	Click **Save**.
+1. In Intune, select **Client apps** > **Apps** > **Add**.
+2. Under App type, select **Store app - iOS**.
+3. Select **Search the App Store**. Enter the search term "Slack for EMM" and select the app.
+4. Select **App information** and configure any changes as you see fit.
+5. Select **Add**.
+6. In the search bar, enter "Slack for EMM" and select the app you just added.
+7. From Manage, select **Assignments**.
+8. Select **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
+    - **Available for enrolled devices** if you chose "All members (including guests)" OR
+    - **Available with or without enrollment** if you chose "All members (excluding guests)" or "Optional".
+9. Select **Included Groups** and under Make this app available to all users select **Yes**.
+10. Click **OK**, and then click **OK** again.
+11. Click **Save**.
 
 ### Add an app configuration policy for Slack for EMM
 Add an app configuration policy for the Slack for EMM iOS. App configuration policies for managed devices are platform-specific, so you need to add a separate policy for your Slack users on Android devices.
-1.	In Intune, select **Client apps** > **App configuration policies** > **Add**.
-2.	In Name, enter Slack app configuration policy test.
-3.	Under Device enrollment type, select **Managed devices**.
-4.	Under Platform, select **iOS**.
-5.	Select **Associated app**.
-6.	In the search bar, enter "Slack for EMM" and select the app.
-7.	Click **OK**, and then select **Configuration settings**. 
-    -   For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
-8.	Select **OK**, and then select **Add**.
-9.	In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
-10.	From Manage, select **Assignments**.
-11.	Under Assign to, select **All Users + All Devices**.
-12.	Click **Save**.
+1. In Intune, select **Client apps** > **App configuration policies** > **Add**.
+2. In Name, enter Slack app configuration policy test.
+3. Under Device enrollment type, select **Managed devices**.
+4. Under Platform, select **iOS**.
+5. Select **Associated app**.
+6. In the search bar, enter "Slack for EMM" and select the app.
+7. Click **OK**, and then select **Configuration settings**. 
+    - For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
+8. Select **OK**, and then select **Add**.
+9. In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
+10. From Manage, select **Assignments**.
+11. Under Assign to, select **All Users + All Devices**.
+12. Click **Save**.
 
 ### (Optional) Create an iOS device compliance policy
 Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for iOS devices. Compliance policies are platform-specific, so you need to create a separate policy for your Slack users on Android devices.
-1.	In Intune, select **Device compliance** > **Policies** > **Create Policy**.
-2.	In Name, enter "iOS compliance policy test".
-3.	In Description, enter "iOS compliance policy test".
-4.	Under Platform, select **iOS**.
-5.	Select **Device Health**. Next to Jailbroken devices, select **Block**, and then select **OK**.
-6.	Select **System Security** and enter Password settings. For this tutorial, select the following recommended settings:
-    -   For Require a password to unlock mobile devices, select **Require**.
-    -   For Simple passwords, select **Block**.
-    -   For Minimum password length, enter 4.
-    -   For Required password type, choose **Alphanumeric**.
-    -   For Maximum minutes after screen lock before password is required, choose **Immediately**.
-    -   For Password expiration (days), enter 41.
-    -   For Number of previous passwords to prevent reuse, enter 5.
-7.	Click **OK**, and then select **OK** again.
-8.	Click **Create**.
+1. In Intune, select **Device compliance** > **Policies** > **Create Policy**.
+2. In Name, enter "iOS compliance policy test".
+3. In Description, enter "iOS compliance policy test".
+4. Under Platform, select **iOS**.
+5. Select **Device Health**. Next to Jailbroken devices, select **Block**, and then select **OK**.
+6. Select **System Security** and enter Password settings. For this tutorial, select the following recommended settings:
+    - For Require a password to unlock mobile devices, select **Require**.
+    - For Simple passwords, select **Block**.
+    - For Minimum password length, enter 4.
+    - For Required password type, choose **Alphanumeric**.
+    - For Maximum minutes after screen lock before password is required, choose **Immediately**.
+    - For Password expiration (days), enter 41.
+    - For Number of previous passwords to prevent reuse, enter 5.
+7. Click **OK**, and then select **OK** again.
+8. Click **Create**.
 
 ## Set up Slack on Android work profile devices
 Add the Slack Managed Google Play app to your Intune tenant and create an app configuration policy to enable your organizations’ Android users to access Slack with Intune as an EMM provider.
 
 ### Add Slack to Intune
 Add Slack as a Managed Google play app in Intune and assign your Slack users. Apps are platform-specific, so you need to add a separate Intune app for your Slack users on iOS devices.
-1.	In Intune, select **Client apps** > **Apps** > **Add**.
-2.	Under App type, select **Store app – Managed Google Play**.
-3.	Select **Managed Google Play - Approve**. Enter the search term "Slack for EMM" and select the app.
-4.	Select **Approve**.
-5.	In the search bar, enter "Slack" and select the app you just added.
-6.	From Manage, select **Assignments**.
-7.	Select **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
-    -   **Available for enrolled devices** if you chose "All members (including guests)" OR
-    -   **Available with or without enrollment** if you chose "All members (excluding guests)" or "Optional".
-8.	Select Included Groups and under Make this app available to all users select **Yes**.
-9.	Click **OK**, and then click **OK** again.
-10.	Click **Save**.
+1. In Intune, select **Client apps** > **Apps** > **Add**.
+2. Under App type, select **Store app – Managed Google Play**.
+3. Select **Managed Google Play - Approve**. Enter the search term "Slack for EMM" and select the app.
+4. Select **Approve**.
+5. In the search bar, enter "Slack" and select the app you just added.
+6. From Manage, select **Assignments**.
+7. Select **Add group**. Depending on who you chose to be affected when you turned on EMM for Slack, under **Assignment type** you may wish to select:
+    - **Available for enrolled devices** if you chose "All members (including guests)" OR
+    - **Available with or without enrollment** if you chose "All members (excluding guests)" or "Optional".
+8. Select Included Groups and under Make this app available to all users select **Yes**.
+9. Click **OK**, and then click **OK** again.
+10. Click **Save**.
 
 ### Add an app configuration policy for Slack
 Add an app configuration policy for Slack. App configuration policies for managed devices are platform-specific, so you need to add a separate policy for your Slack users on iOS devices.
-1.	In Intune, select **Client apps** > **App configuration policies** > **Add**.
-2.	In Name, enter Slack app configuration policy test.
-3.	Under Device enrollment type, select **Managed devices**.
-4.	Under Platform, select **Android**.
-5.	Select **Associated app**.
-6.	In the search bar, enter "Slack" and select the app.
-7.	Select **OK**, and then select **Configuration settings**.
-    -   For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
-8.	Click **OK**, and then select **Add**.
-9.	In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
-10.	From Manage, select **Assignments**.
-11.	Under Assign to, select **All Users + All Devices**.
-12.	Click **Save**.
+1. In Intune, select **Client apps** > **App configuration policies** > **Add**.
+2. In Name, enter Slack app configuration policy test.
+3. Under Device enrollment type, select **Managed devices**.
+4. Under Platform, select **Android**.
+5. Select **Associated app**.
+6. In the search bar, enter "Slack" and select the app.
+7. Select **OK**, and then select **Configuration settings**.
+    - For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
+8. Click **OK**, and then select **Add**.
+9. In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
+10. From Manage, select **Assignments**.
+11. Under Assign to, select **All Users + All Devices**.
+12. Click **Save**.
 
 ### (Optional) Create an Android device compliance policy
 Set up an Intune device compliance policy to set the conditions that a device must meet to be considered compliant. For this tutorial, we’ll create a device compliance policy for Android devices. Compliance policies are platform-specific, so you need to create a separate policy for your Slack users on iOS devices.
-1.	In Intune, select **Device compliance** > **Policies** > **Create Policy**.
-2.	In Name, enter "Android compliance policy test".
-3.	In Description, enter "Android compliance policy test".
-4.	Under Platform, select **Android Enterprise**.
-5.	Under Profile type, select **Work profile**.
-6.	Select **Device Health**. Next to Rooted devices, select **Block**, and then select **OK**.
-7.	Select **System Security** and enter **Password settings**. For this tutorial, select the following recommended settings:
-    -   For Require a password to unlock mobile devices, select **Require**.
-    -   For Required password type, select **At least alphanumeric**.
-    -   For Minimum password length, enter 4.
-    -   For Maximum minutes after screen lock before password is required, choose **15 Minutes**.
-    -   For Password expiration (days), enter 41.
-    -   For Number of previous passwords to prevent reuse, enter 5.
-8.	Click **OK**, and then click **OK** again.
-9.	Click **Create**.
+1. In Intune, select **Device compliance** > **Policies** > **Create Policy**.
+2. In Name, enter "Android compliance policy test".
+3. In Description, enter "Android compliance policy test".
+4. Under Platform, select **Android Enterprise**.
+5. Under Profile type, select **Work profile**.
+6. Select **Device Health**. Next to Rooted devices, select **Block**, and then select **OK**.
+7. Select **System Security** and enter **Password settings**. For this tutorial, select the following recommended settings:
+    - For Require a password to unlock mobile devices, select **Require**.
+    - For Required password type, select **At least alphanumeric**.
+    - For Minimum password length, enter 4.
+    - For Maximum minutes after screen lock before password is required, choose **15 Minutes**.
+    - For Password expiration (days), enter 41.
+    - For Number of previous passwords to prevent reuse, enter 5.
+8. Click **OK**, and then click **OK** again.
+9. Click **Create**.
 
 ## Launch Slack
 

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use the information in this article to help you add an iOS line-of-business (LOB) app to Microsoft Intune.
+Use the information in this article to help you add an iOS line-of-business (LOB) app to Microsoft Intune. A line-of-business (LOB) app is an app that you add to Intune from an IPA app installation file. This kind of app is typically written in-house. You will first need to join the iOS Developer Enterprise Program. For more information about how to do this see [Apple's website](https://developer.apple.com/programs/ios/enterprise/).
 
 >[!NOTE]
 >Users of iOS devices can remove some of the built-in iOS apps, like Stocks and Maps. You cannot use Intune to redeploy these apps. If users delete these apps, they must go to the app store and manually reinstall them.
@@ -58,18 +58,18 @@ Use the information in this article to help you add an iOS line-of-business (LOB
 
 1. In the **Add app** pane, select **App information**.
 2. In the **App information** pane, add the details for your app. Depending on the app that you chose, some of the values in this pane might be automatically filled in.
-	- **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
-	- **Description**: Enter a description for the app. The description appears in the company portal.
-	- **Publisher**: Enter the name of the publisher of the app.
-	- **Minimum Operating System**: From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
-	- **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
-	- **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
-	- **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
-	- **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
-	- **Developer**: Optionally, enter the name of the app developer.
-	- **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
-	- **Notes**: Enter any notes that you want to associate with this app.
-	- **Logo**: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
+    - **Name**: Enter the name of the app as it appears in the company portal. Make sure all app names that you use are unique. If the same app name exists twice, only one of the apps appears in the company portal.
+    - **Description**: Enter a description for the app. The description appears in the company portal.
+    - **Publisher**: Enter the name of the publisher of the app.
+    - **Minimum Operating System**: From the list, choose the minimum operating system version on which the app can be installed. If you assign the app to a device with an earlier operating system, it will not be installed.
+    - **Category**: Select one or more of the built-in app categories, or select a category that you created. Categories make it easier for users to find the app when they browse through the company portal.
+    - **Display this as a featured app in the Company Portal**: Display the app prominently on the main page of the company portal when users browse for apps.
+    - **Information URL**: Optionally, enter the URL of a website that contains information about this app. The URL appears in the company portal.
+    - **Privacy URL**: Optionally, enter the URL of a website that contains privacy information for this app. The URL appears in the company portal.
+    - **Developer**: Optionally, enter the name of the app developer.
+    - **Owner**: Optionally, enter a name for the owner of this app. An example is **HR department**.
+    - **Notes**: Enter any notes that you want to associate with this app.
+    - **Logo**: Upload an icon that is associated with the app. This icon is displayed with the app when users browse through the company portal.
 3. When you're finished, select **OK**.
 
 ## Step 4: Finish up

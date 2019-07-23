@@ -52,9 +52,9 @@ Before you begin to create and approve software updates, configure and deploy po
 
 ### To configure update policy settings
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Overview** &gt; **Add Policy**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Policy** &gt; **Overview** &gt; **Add Policy**.
 
-2.  Configure and deploy a **Microsoft Intune Agent Settings** policy for the update settings. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Configure and deploy a **Microsoft Intune Agent Settings** policy for the update settings. You can use recommended settings or customize the settings. If you need more information about how to create and deploy policies, see [Common Windows PC management tasks with the Microsoft Intune computer client](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 The following table shows the values you can configure in the policy and also the recommended values that will be used if you don’t customize the policy. You can find these settings in the **Updates** section.
 
@@ -73,49 +73,49 @@ The following table shows the values you can configure in the policy and also th
 ## Update software made by Microsoft
 Updating Microsoft software requires very little work from you. However, before you start, there are two things you should configure:
 
--   **Product categories and update classifications** – Defines the categories and classifications of the updates you want to make available to computers. For example, you might decide that you only want critical updates for Microsoft Office to be installed.
+- **Product categories and update classifications** – Defines the categories and classifications of the updates you want to make available to computers. For example, you might decide that you only want critical updates for Microsoft Office to be installed.
 
--   **Automatic approval rules** – These rules automatically approve specified types of update and reduce your administrative overhead. For example, you might want to automatically approve all critical software updates.
+- **Automatic approval rules** – These rules automatically approve specified types of update and reduce your administrative overhead. For example, you might want to automatically approve all critical software updates.
 
 Use the following two procedures to help you get ready to use software updates:
 
 ### Configure the product categories and update classifications you want to make available to managed computers
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
-2.  On the **Service Settings: Updates** page, in the **Product Category** list, select the update categories that you want to make available to computers. Note that the most common updates are selected by default.
+2. On the **Service Settings: Updates** page, in the **Product Category** list, select the update categories that you want to make available to computers. Note that the most common updates are selected by default.
 
     > [!IMPORTANT]
     > To ensure that computers receive the updates that have been approved by the admin, the Windows Server Update Services (WSUS) Group Policy setting, **Specify Intranet Microsoft update service location** must not be applied to computers that have been enrolled with Intune.
 
-3.  In the **Update Classification** list, select the classes of update that you want to make available to managed computers. Again, the most common options are selected by default.
+3. In the **Update Classification** list, select the classes of update that you want to make available to managed computers. Again, the most common options are selected by default.
 
-4.  Choose **Save** to store your selections.
+4. Choose **Save** to store your selections.
 
 ### To configure automatic approval rules for software updates
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
-2.  In the **Automatic Approval Rules** section of the **Server Settings: Updates** page, choose **New**.
+2. In the **Automatic Approval Rules** section of the **Server Settings: Updates** page, choose **New**.
 
-3.  On the **General** page of the Create Automatic Approval Rule Wizard, specify a name and optional description for the rule.
+3. On the **General** page of the Create Automatic Approval Rule Wizard, specify a name and optional description for the rule.
 
-4.  On the **Product Categories** page, select any products for which you want to have updates approved automatically.
+4. On the **Product Categories** page, select any products for which you want to have updates approved automatically.
 
-5.  On the **Update Classifications** page, specify the update classifications that you want to have approved automatically.
+5. On the **Update Classifications** page, specify the update classifications that you want to have approved automatically.
 
-6.  On the **Deployment** page, do the following:
+6. On the **Deployment** page, do the following:
 
-    -   Select the computer groups to which you want to deploy the new rule, and then choose **Add**.
+    - Select the computer groups to which you want to deploy the new rule, and then choose **Add**.
 
-    -   To specify an installation deadline for the updates, select the **Enforce an installation deadline for these updates** check box, and then on the **Installation deadline** list, select the installation deadline.
+    - To specify an installation deadline for the updates, select the **Enforce an installation deadline for these updates** check box, and then on the **Installation deadline** list, select the installation deadline.
 
         > [!NOTE]
         > If you specify an installation deadline, the managed computer might require one or more restarts after the deadline interval has passed.
 
-    -   When you are finished, Choose **Next**.
+    - When you are finished, Choose **Next**.
 
-7.  On the **Summary** page, review the settings for the new rule, and then choose **Finish**.
+7. On the **Summary** page, review the settings for the new rule, and then choose **Finish**.
 
 The new rule is shown in the **Automatic Approval Rules** section of the **Service Settings: Updates** page.
 
@@ -125,15 +125,15 @@ The new rule is shown in the **Automatic Approval Rules** section of the **Servi
 
 ### To edit, run, or delete an automatically approved update rule
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Admin** &gt; **Updates**.
 
-2.  In the **Automatic Approval Rules** section, select a rule, and then do one of the following:
+2. In the **Automatic Approval Rules** section, select a rule, and then do one of the following:
 
-    -   To edit the rule, choose **Edit**, and then change the rule’s parameters in the **Update Auto Approval Rule Wizard**.
+    - To edit the rule, choose **Edit**, and then change the rule’s parameters in the **Update Auto Approval Rule Wizard**.
 
-    -   To run the rule, choose **Run Selected**.
+    - To run the rule, choose **Run Selected**.
 
-    -   To delete the rule, choose **Delete**.
+    - To delete the rule, choose **Delete**.
 
         > [!NOTE]
         > Deleting a rule does not affect previous updates that were approved by the deleted rule.
@@ -143,40 +143,40 @@ You can deploy updates for software that is not made by Microsoft. You do this b
 
 ### To upload and configure a third-party update
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **Upload**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **Upload**.
 
-2.  On the **Update files** page, choose **Browse** to select the setup files that are required to install the update package. The file can be a Windows Installer (.msi) file, a Windows Installer patch (.msp) file, or a .exe program file. You can also include any additional files or folders that are in the same folder as the setup file.
+2. On the **Update files** page, choose **Browse** to select the setup files that are required to install the update package. The file can be a Windows Installer (.msi) file, a Windows Installer patch (.msp) file, or a .exe program file. You can also include any additional files or folders that are in the same folder as the setup file.
 
     The total size of the selected files to upload is displayed. Note that this size does not include the uncompressed or expanded sizes of installation files.
 
-3.  After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that Intune extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Choose **Next** when you are done.
+3. After you specify the setup files, the **Update description** page displays the name, description, and classification for software information that Intune extracted from the software setup files. You can select a classification to label the type of update you are deploying (Updates, Critical Updates, Security Updates, Update Rollups or Service Packs). Choose **Next** when you are done.
 
-4.  On the **Requirements** page of the wizard, choose the architecture (32-bit, 64-bit, or both), and the operating systems of the managed computers to which this update will be applicable.
+4. On the **Requirements** page of the wizard, choose the architecture (32-bit, 64-bit, or both), and the operating systems of the managed computers to which this update will be applicable.
 
-5.  On the **Detection rules** page, specify how Intune determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, Intune always installs the update package on each targeted computer once.
+5. On the **Detection rules** page, specify how Intune determines whether the update already exists on managed computers. If you use the default option, **Use the default detection rules**, Intune always installs the update package on each targeted computer once.
 
     > [!NOTE]
     > If the update setup file that you specified is a Windows Installer or .msp file, the **Detection rules** page of the wizard does not appear. This is because Windows Installer and .msp files contain their own instructions for detecting previous update installations.
 
     Select one or more of the following rules to determine whether the update is already installed on managed computers:
 
-    -   **File exists**
+    - **File exists**
 
-    -   **MSI product code exists**
+    - **MSI product code exists**
 
-    -   **Registry key exists**
+    - **Registry key exists**
 
-6.  Provide any further information that is required to configure the detection rule such as a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
+6. Provide any further information that is required to configure the detection rule such as a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
 
-7.  On the **Prerequisites** page of the wizard, you specify any software that must already be installed before this update can be installed. You can specify **None**, select a software package that has already been added to, and is managed by Intune, or you can specify one of the following rules to describe the software:
+7. On the **Prerequisites** page of the wizard, you specify any software that must already be installed before this update can be installed. You can specify **None**, select a software package that has already been added to, and is managed by Intune, or you can specify one of the following rules to describe the software:
 
-    -   **File exists**
+    - **File exists**
 
-    -   **MSI product code exists**
+    - **MSI product code exists**
 
-    -   **Registry key exists**
+    - **Registry key exists**
 
-8.  Provide any further information that is required to configure the detection rule like a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
+8. Provide any further information that is required to configure the detection rule like a file path and name, Windows Installer product code, or a registry key, and then choose **Next**.
 
 9. On the **Command line arguments** page of the wizard, you can add any required installation properties to the installation command line to modify the behavior of the setup file. For example, some software supports the **/q** property to enable silent installation. Refer to the documentation for your software package to learn about any supported command line arguments. Specify any command line arguments you need and then choose **Next**.
 
@@ -219,49 +219,49 @@ When you select an update from the list, further commands are available that let
 
 ### To approve updates
 
-1.  In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **New updates to approve**.
+1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), choose **Updates** &gt; **Overview** &gt; **New updates to approve**.
 
     In the **Updates** workspace, choose **Overview** &gt; **New updates to approve**.
 
     > [!NOTE]
     > The **New updates to approve** link appears in the **Updates Status** area only when there is at least one managed computer that needs an update to be approved.
 
-2.  Select an update, review the update properties at the bottom of the page to ensure that you want to approve the update, and then choose **Approve**. You can select multiple updates by holding down the **CTRL** key as you select each item.
+2. Select an update, review the update properties at the bottom of the page to ensure that you want to approve the update, and then choose **Approve**. You can select multiple updates by holding down the **CTRL** key as you select each item.
 
-3.  On the **Select Groups** page, select a group that you want to deploy the updates to, and then choose **Add**. When you have finished specifying groups, choose **Next**.
+3. On the **Select Groups** page, select a group that you want to deploy the updates to, and then choose **Add**. When you have finished specifying groups, choose **Next**.
 
-4.  On the **Deployment Action** page, do the following for each group in the list:
+4. On the **Deployment Action** page, do the following for each group in the list:
 
-    -   On the **Approval** list, select one of the following:
+    - On the **Approval** list, select one of the following:
 
-        -   **Required Install** - Installs the update on computers in the specified group.
+        - **Required Install** - Installs the update on computers in the specified group.
 
-        -   **Do Not Install** - Reports applicability only and does not install the update.
+        - **Do Not Install** - Reports applicability only and does not install the update.
 
-        -   **Available Install** – The user can install the application on demand from the Company Portal.
+        - **Available Install** – The user can install the application on demand from the Company Portal.
 
-        -   **Uninstall** - Removes updates from computers in the targeted group.
+        - **Uninstall** - Removes updates from computers in the targeted group.
 
             > [!IMPORTANT]
             > The update is removed even if it was not installed by Intune.
 
-    -   On the **Deadline** list, select one of the following:
+    - On the **Deadline** list, select one of the following:
 
-        -   **None** - Indicates that no deadline is enforced for the installation of the update and users may decline the update continually.
+        - **None** - Indicates that no deadline is enforced for the installation of the update and users may decline the update continually.
 
-        -   **As soon as possible** - Installs the update at the next opportunity on targeted computers.
+        - **As soon as possible** - Installs the update at the next opportunity on targeted computers.
 
-        -   **Custom** - Specifies the date and time that approved updates are installed.
+        - **Custom** - Specifies the date and time that approved updates are installed.
 
-        -   **One week**, **Two weeks**, **One month** – Installs the update within the specified time period.
+        - **One week**, **Two weeks**, **One month** – Installs the update within the specified time period.
 
-5.  Choose **Finish** to save the settings, or **Cancel** to discard the settings and return to the updates list.
+5. Choose **Finish** to save the settings, or **Cancel** to discard the settings and return to the updates list.
 
     > [!IMPORTANT]
     > Unless the action **Do Not Install**, **Required Install**, or **Uninstall** was explicitly configured for a child group, an action configured for a parent group is inherited by all its children.
 
-6.  You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
+6. You can check the details pane at the bottom of the **All Updates** page for reminder messages about the update.
 
 
-### See also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

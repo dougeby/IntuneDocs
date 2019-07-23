@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS 
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology:
@@ -89,12 +89,6 @@ You create Windows 10 device configuration profiles (**Device configuration** > 
 
 Applies to: 
 - Windows 10 and later
-
-### Administrative templates for Group Policy     <!--  3510695 -->
-To help improve security for devices in the cloud, we will be releasing administrative templates that will let you use Intune to configure select Group Policy settings for Windows PCs.  These templates use the Policy Configuration Service Provider (CSP) to provide up to 2500 additional settings from Office, Windows, and OneDrive.
-
-### Manage FileVault for macOS   <!--  3858502 + 1210104   -->
-You’ll be able to use an Intune endpoint protection device configuration profile to manage FileVault key encryption for macOS devices. This includes escrow of, viewing of and rotating the encryption keys of your corporate devices. End users will be able to retrieve those keys through the Company Portal website.
 
 ### Advanced settings for Windows Defender Firewall   <!--  1311949     -->
 As a public preview, you'll soon be able to use Intune to manage the custom firewall rules on clients for Windows Defender.  
