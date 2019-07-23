@@ -224,7 +224,9 @@
         href: android-fully-managed-enroll.md
       - name: Enroll Android Enterprise dedicated devices or fully managed devices
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Manage Android Enterprise work profile devices
+      - name: Android device administrator enrollment
+        href: android-enroll-device-administrator.md
+        - name: Manage Android Enterprise work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 
         href: android-samsung-knox-mobile-enroll.md
