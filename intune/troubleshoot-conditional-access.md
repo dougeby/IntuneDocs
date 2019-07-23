@@ -51,7 +51,7 @@ The following requirements must be met for Conditional Access to work:
 
 - For on-premise Exchange, your Intune Exchange Connector must be properly configured. For more information, see [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
-- For on-premise Skype, you must configure Hybrid Modern Authentication. See [Hybrid Modern Auth Overview](https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview).
+- For on-premise Skype, you must configure Hybrid Modern Authentication. See [Hybrid Modern Auth Overview](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview).
 
 You can view these conditions for each device in the Azure portal and in the device inventory report.
 
