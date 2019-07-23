@@ -13,7 +13,7 @@ These notices provide important information that can help you prepare for future
 
 
 ### Decreasing support for Android device administrator 
-Android device administrator (sometimes referred to as “legacy” Android management) is the technical term for a way to manage Android devices that has been available since Android 2.2. It was the only way to manage Android devices until Google introduced Android Enterprise in 2014 with the launch of Android 5.0. Now that Android Enterprise provides improved management functionality, Google is moving forward with decreasing device administrator support in new Android releases. This plan is an effort to move the ecosystem to modern, more functional, and more secure methods of management.
+Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways: 
