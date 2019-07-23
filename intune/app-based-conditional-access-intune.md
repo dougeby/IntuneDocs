@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: App-based conditional access with Intune
+title: App-based Conditional Access with Intune
 titleSuffix: Microsoft Intune
-description: Learn how app-based conditional access works with Intune.
+description: Learn how app-based Conditional Access works with Intune.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -28,13 +28,13 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# App-based conditional access with Intune
+# App-based Conditional Access with Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Intune app protection policies](app-protection-policy.md) help protect your company data on devices that are enrolled into Intune. You can also use app protection policies on employee owned devices that are not enrolled for management in Intune. In this case, even though your company doesn't manage the device, you still need to make sure that company data and resources are protected.
 
-App-based conditional access and client app management add a security layer by making sure only client apps that support Intune app protection policies can access Exchange online and other Office 365 services.
+App-based Conditional Access and client app management add a security layer by making sure only client apps that support Intune app protection policies can access Exchange online and other Office 365 services.
 
 > [!NOTE]
 > A managed app is an app that has app protection policies applied to it, and can be managed by Intune.
@@ -42,27 +42,27 @@ App-based conditional access and client app management add a security layer by m
 You can block the built-in mail apps on iOS and Android when you allow only the Microsoft Outlook app to access Exchange Online. Additionally, you can block apps that don’t have Intune app protection policies applied from accessing SharePoint Online.
 
 ## Prerequisites
-Before you create an app-based conditional access policy, you must have:
+Before you create an app-based Conditional Access policy, you must have:
 
 - **Enterprise Mobility + Security (EMS)** or an **Azure Active Directory (AD) Premium subscription**
 - Users must be licensed for EMS or Azure AD
 
-For more information, see [Enterprise Mobility pricing ](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+For more information, see [Enterprise Mobility pricing](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) or [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## Supported apps
 
-A list of apps that support app-based conditional access can be found in the [Azure Active Directory conditional access technical reference documentation.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)
+A list of apps that support app-based Conditional Access can be found in the [Azure Active Directory Conditional Access technical reference documentation.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference)
 
-App-based conditional access [also supports line-of-business (LOB) apps](app-modern-authentication-block.md), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a). 
+App-based Conditional Access [also supports line-of-business (LOB) apps](app-modern-authentication-block.md), but these apps need to use [Office 365 modern authentication](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a). 
 
-## How app-based conditional access works
+## How app-based Conditional Access works
 
-In this example, the admin has applied app protection policies to the Outlook app followed by a conditional access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
+In this example, the admin has applied app protection policies to the Outlook app followed by a Conditional Access rule that adds the Outlook app to an approved list of apps that can be used when accessing corporate e-mail.
 
 > [!NOTE]
 > The flowchart structure below can be used for other managed apps.
 
-![App-based conditional access process illustrated in a flow-chart](./media/ca-intune-common-ways-3.png)
+![App-based Conditional Access process illustrated in a flow-chart](./media/ca-intune-common-ways-3.png)
 
 1. The user tries to authenticate to Azure AD from the Outlook app.
 
@@ -72,7 +72,7 @@ In this example, the admin has applied app protection policies to the Outlook ap
 
 3. The broker app gets installed on the device.
 
-4. The broker app starts the Azure AD registration process, which creates a device record in Azure AD. This isn't the same as the mobile device management (MDM) enrollment process, but this record is necessary so the conditional access policies can be enforced on the device.
+4. The broker app starts the Azure AD registration process, which creates a device record in Azure AD. This isn't the same as the mobile device management (MDM) enrollment process, but this record is necessary so the Conditional Access policies can be enforced on the device.
 
 5. The broker app verifies the identity of the app. There’s a security layer so the broker app can validate if the app is authorized for use by the user.
 
@@ -89,6 +89,6 @@ In this example, the admin has applied app protection policies to the Outlook ap
 11. Corporate e-mail is delivered to the user's mailbox.
 
 ## Next steps
-[Create an app-based conditional access policy](app-based-conditional-access-intune-create.md)
+[Create an app-based Conditional Access policy](app-based-conditional-access-intune-create.md)
 
 [Block apps that do not have modern authentication](app-modern-authentication-block.md)

@@ -42,9 +42,9 @@ A role defines the set of permissions granted to users assigned to that role.
 You can use both the built-in and custom roles. Built-in roles cover some common Intune scenarios. You can [create your own custom roles](create-custom-role.md) with the exact set of permissions you need. Several Azure Active Directory roles have permissions to Intune.
 To see a role, choose **Intune** > **Roles** > **All roles** > choose a role. You’ll see the following pages:
 
--	**Properties**: The name, description, type, assignments, and scope tags for the role. 
--	**Permissions**: Lists a long set of toggles defining what permissions the role has.
--	**Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
+- **Properties**: The name, description, type, assignments, and scope tags for the role. 
+- **Permissions**: Lists a long set of toggles defining what permissions the role has.
+- **Assignments**: A list of [role assignments]( assign-role.md) defining which users have access to which users/devices. A role can have multiple assignments, and a user can be in multiple assignments.
 
 ### Built-in roles
 You can assign built-in roles to groups without further configuration. You can't delete or edit the name, description, type, or permissions of a built-in role. For a full list of the permissions for each built-in role, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -72,7 +72,7 @@ You can create your own roles with custom permissions. For more information abou
 | Compliance Data Administrator | None | Read only |
 
 > [!TIP]
-> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
+> Intune also shows three Azure AD extensions: **Users**, **Groups**, and **Conditional Access**, which are controlled using Azure AD RBAC. Additionally, the **User Account Administrator** only performs AAD user/group activities and does not have full permissions to perform all activities in Intune. For more information, see [RBAC with Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles).
 ### Roles created in the Intune classic portal
 Only Intune **Service Administrators** users with "Full" permissions get migrated from the Intune classic portal to Intune in the Azure portal. You must reassign Intune **Service Administrators** users with "Read-Only" or "Helpdesk" access into the Intune roles in the Azure portal, and remove them from the classic portal.
 > [!IMPORTANT]
@@ -88,10 +88,10 @@ A role assignment defines:
 You can assign both custom and built-in roles to your users. To be assigned an Intune role, the user must have an Intune license.
 To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose a role > choose an assignment. You’ll see the following pages:
 
--	**Properties**: The name, description, role, members, scopes, and tags of the assignment.
--	**Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
--	**Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
--	**[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
+- **Properties**: The name, description, role, members, scopes, and tags of the assignment.
+- **Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
+- **Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
+- **[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
 If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:

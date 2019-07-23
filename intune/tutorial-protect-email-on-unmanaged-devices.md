@@ -3,7 +3,7 @@
 
 title: Tutorial - Protect Exchange Online email on unmanaged devices
 titleSuffix: Microsoft Intune
-description: Learn to secure Office 365 Exchange Online with Intune app protection policies and Azure AD conditional access.
+description: Learn to secure Office 365 Exchange Online with Intune app protection policies and Azure AD Conditional Access.
 keywords:
 author: brenduns
 ms.author: brenduns
@@ -29,17 +29,17 @@ ms.collection: M365-identity-device-management
 
 # Tutorial: Protect Exchange Online email on unmanaged devices
 
-Learn about using app protection policies with conditional access to protect Exchange Online, even when devices aren't enrolled in a device management solution like Intune. In this tutorial, you'll learn how to: 
+Learn about using app protection policies with Conditional Access to protect Exchange Online, even when devices aren't enrolled in a device management solution like Intune. In this tutorial, you'll learn how to: 
 
 > [!div class="checklist"]
 > * Create an Intune app protection policy for the Outlook app. You'll limit what the user can do with app data by preventing "Save As" and restrict cut, copy, and paste actions. 
-> * Create Azure Active Directory (Azure AD) conditional access policies that allow only the Outlook app to access company email in Exchange Online. You'll also require multi-factor authentication (MFA) for Modern authentication clients, like Outlook for iOS and Android.
+> * Create Azure Active Directory (Azure AD) Conditional Access policies that allow only the Outlook app to access company email in Exchange Online. You'll also require multi-factor authentication (MFA) for Modern authentication clients, like Outlook for iOS and Android.
 
 ## Prerequisites
-  - You'll need a test tenant with the following subscriptions for this tutorial:
-    - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune subscription ([free trial](free-trial-sign-up.md))
-    - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
+- You'll need a test tenant with the following subscriptions for this tutorial:
+  - Azure Active Directory Premium ([free trial](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune subscription ([free trial](free-trial-sign-up.md))
+  - Office 365 Business subscription that includes Exchange ([free trial](https://go.microsoft.com/fwlink/p/?LinkID=510938))
 
 ## Sign in to Intune
 
@@ -78,20 +78,20 @@ For this tutorial, we’ll set up an Intune app protection policy for the Outloo
 
     Select **OK** to return to the Settings pane.  
 
-7.	On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
+7. On the Settings pane, select **OK**, and then on the Create policy pane, select **Create**.
 
-The app protection policy for Outlook is created. Next, you'll set up conditional access to require devices to use the Outlook app.
+The app protection policy for Outlook is created. Next, you'll set up Conditional Access to require devices to use the Outlook app.
 
-## Create conditional access policies
-Now we’ll create two conditional access policies to cover all device platforms.  
+## Create Conditional Access policies
+Now we’ll create two Conditional Access policies to cover all device platforms.  
 
 - The first policy will require that Modern Authentication clients use the approved Outlook app and multi-factor authentication (MFA). Modern Authentication clients include Outlook for iOS and Outlook for Android.  
 
-- The second policy will require that Exchange ActiveSync clients use the approved Outlook app. (Currently, Exchange Active Sync doesn't support conditions other than device platform). You can configure conditional access policies in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.  
+- The second policy will require that Exchange ActiveSync clients use the approved Outlook app. (Currently, Exchange Active Sync doesn't support conditions other than device platform). You can configure Conditional Access policies in either the Azure AD portal or the Intune portal. Since we’re already in the Intune portal, we’ll create the policy here.  
 
 ### Create an MFA policy for Modern Authentication clients  
 
-1. In Intune, select **Conditional access** > **Policies** > **New policy**.  
+1. In Intune, select **Conditional Access** > **Policies** > **New policy**.  
 
 2. For **Name**, enter **Test policy for modern auth clients**.  
 
@@ -133,10 +133,10 @@ Now we’ll create two conditional access policies to cover all device platforms
      
     ![Select the Office 365 Exchange Online app](media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
-The conditional access policy for Modern Authentication clients is created. Now you can create a policy for Exchange Active Sync clients.
+The Conditional Access policy for Modern Authentication clients is created. Now you can create a policy for Exchange Active Sync clients.
 
 ### Create a policy for Exchange Active Sync clients  
-1. In Intune, select **Conditional access** > **Policies** > **New policy**.  
+1. In Intune, select **Conditional Access** > **Policies** > **New policy**.  
 2. For **Name**, enter **Test policy for EAS clients**.  
 3. Under **Assignments**, select **Users and groups**.  
 4. On the *Include* tab, select **All users**, and then select **Done**.  
@@ -170,7 +170,7 @@ The conditional access policy for Modern Authentication clients is created. Now 
 
 9. Select **Create**.  
 
-Your app protection policies and conditional access are now in place and ready to test.  
+Your app protection policies and Conditional Access are now in place and ready to test.  
 
 ## Try it out  
 With the policies you’ve created, devices will need to enroll in Intune and use the Outlook mobile app to access Office 365 email. To test this scenario on an iOS device, try signing in to Exchange Online using credentials for a user in your test tenant.  
@@ -192,5 +192,5 @@ When the test policies are no longer needed, you can remove them.
 4. Select **Conditional Access** > **Policies**.  
 5. In the **Policy Name** list, select the context menu (**...**) for each of your test policies, and then select **Delete**. Select **Yes** to confirm.  
 
- ## Next steps  
-In this tutorial, you created app protection policies to limit what the user can do with the Outlook app, and you created conditional access policies to require the Outlook app and require MFA for Modern Authentication clients. To learn about using Intune with conditional access to protect other apps and services, see [Set up conditional access](conditional-access.md).
+## Next steps  
+In this tutorial, you created app protection policies to limit what the user can do with the Outlook app, and you created Conditional Access policies to require the Outlook app and require MFA for Modern Authentication clients. To learn about using Intune with Conditional Access to protect other apps and services, see [Set up Conditional Access](conditional-access.md).

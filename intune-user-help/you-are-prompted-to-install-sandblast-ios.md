@@ -34,7 +34,7 @@ Before you can access your work, your company support needs you to install the S
 
 **What you need to do:**
 
-1.	If you see a following prompt, tap **Install** to allow SandBlast Mobile Protect to be installed on your device.
+1. If you see a following prompt, tap **Install** to allow SandBlast Mobile Protect to be installed on your device.
 
 2. When you see the following message, tap **Settings**, turn on **Location Services**, and then tap **Continue**.
 

@@ -74,7 +74,7 @@ If you have trouble with the installation, try the troubleshooting steps at the 
 
    The Device Details screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
 
-	![your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
+    ![your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
 
    If Lookout for Work finds a security threat on your device, you will see instructions about how to fix the issue.
 

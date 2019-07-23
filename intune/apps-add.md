@@ -34,10 +34,10 @@ Intune supports a wide range of app types. The available options differ for each
 
 | App types | Installation | Updates |
 |---|---|---|
-| Apps from the store (store apps) | Intune installs the app on the device.  | App updates are automatic. 	|
-| Apps written in-house (line-of-business) 	| Intune installs the app on the device (you supply the installation file). 	| You must update the app. 	|
-| Apps that are built-in (built-in apps) 	| Intune installs the app on the device.  | App updates are automatic. 	|
-| Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. 	| App updates are automatic. 	|
+| Apps from the store (store apps) | Intune installs the app on the device.  | App updates are automatic. |
+| Apps written in-house (line-of-business) | Intune installs the app on the device (you supply the installation file). | You must update the app. |
+| Apps that are built-in (built-in apps) | Intune installs the app on the device.  | App updates are automatic. |
+| Apps on the web (web link) | Intune creates a shortcut to the web app on the device home screen. | App updates are automatic. |
 
 ### Specific app type details
  
@@ -114,7 +114,7 @@ Intune lets you modify the functionality of apps that you deploy to help align t
 
 - Restricting copy-and-paste and save-as functions.
 - Configuring web links to open inside the Intune Managed Browser app.
-- Enabling multi-identity use and app-level conditional access.
+- Enabling multi-identity use and app-level Conditional Access.
 
 Intune-managed apps can also enable app protection without requiring enrollment, which gives you the choice of applying data loss-prevention policies without managing the user's device. Additionally, you can incorporate mobile-app management in your mobile and line-of-business apps by using the Intune App SDK and App Wrapping Tool. For more information about these tools, see [Intune App SDK overview](app-sdk.md).
 
@@ -158,9 +158,9 @@ When you add an app to Intune, you are given the option to select the category y
 4. In the **Client apps** workload pane, under **Setup**, select **App categories**.  
     The **App categories** pane displays a list of current categories. 
 5. Do either of the following:
-	- To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
+    - To add a category, in the **Create category** pane, select **Add**, and then enter a name for the category.  
     Names can be entered in one language only, and they are not translated by Intune.
-	- To edit a category, select the ellipsis (**...**) next to the category, and then select **Pin to dashboard** or **Delete**.
+    - To edit a category, select the ellipsis (**...**) next to the category, and then select **Pin to dashboard** or **Delete**.
 6. Select **Create**.
 
 ## Apps that are added automatically by Intune

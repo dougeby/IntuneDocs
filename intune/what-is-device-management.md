@@ -6,10 +6,10 @@ description: Microsoft 365 Enterprise includes Microsoft Intune. See how Intune 
 author: MandiOhlinger 
 ms.author: mandia 
 manager: dougeby 
-ms.date: 03/29/2019
+ms.date: 07/22/2019
 ms.topic: conceptual 
 audience: microsoft-business
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.custom: microsoft-intune 
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -64,10 +64,10 @@ A key task of any device management solution is to provide security and protecti
 
 - **Windows Defender** includes many security features to help protect Windows 10 devices. For example, using Intune and Windows Defender together, you can: 
 
-    - Enable [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) to look for suspicious activity in files and apps on mobile devices. 
-    - Use [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
+  - Enable [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) to look for suspicious activity in files and apps on mobile devices. 
+  - Use [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
 
-- **Conditional access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [conditional access](https://docs.microsoft.com/intune/conditional-access), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
+- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](https://docs.microsoft.com/intune/conditional-access), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
 
 ## Choose the device management solution that's right for you
 
@@ -79,11 +79,11 @@ You can also use a combination of [MDM and MAM](https://docs.microsoft.com/intun
 
 When you set up Intune, you also choose to work solely in the Azure portal to manage devices, or use Intune and Microsoft 365 together to manage devices. [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) is a Microsoft IT case study. In this case study, see how Microsoft IT chose a modern device management approach, and read the lessons learned.
 
-## Simplify IT tasks using the Device Management dashboard
+## Simplify IT tasks using the Device Management specialist workspace
 
-The [Device Management dashboard](https://devicemanagement.portal.azure.com/) is a one-stop shop to manage and complete tasks for your mobile devices. This dashboard includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps. 
+The [Device Management specialist workspace](https://devicemanagement.portal.azure.com/) is a one-stop shop to manage and complete tasks for your mobile devices. This workspace includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps. 
 
-On the Device Management dashboard, you can:
+On the Device Management specialist workspace, you can:
 
 - [Enroll devices](https://docs.microsoft.com/intune/device-enrollment)
 - [Set device compliance](https://docs.microsoft.com/intune/device-compliance-get-started)

@@ -38,7 +38,7 @@ Before you can access your work, your company needs you to install the Lookout f
 
 ## What you need to do
 
-1.	If you see the following prompt, tap **Install** to allow Lookout for Work to be installed on your device.
+1. If you see the following prompt, tap **Install** to allow Lookout for Work to be installed on your device.
 
       ![Screenshot of App Installation prompt with a Cancel and Install buttons.](/intune-user-help/media/ios-mts-install-app-request-after-1804.png)
 

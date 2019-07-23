@@ -26,13 +26,13 @@ search.appverid: MET150
 #ms.tgt_pltfrm:
 #ms.custom:
 ms.collection: M365-identity-device-management
---- 
+---
 
 # Pradeo Mobile Threat Defense connector with Intune
 
-You can control mobile device access to corporate resources using conditional access based on risk assessment conducted by Pradeo, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Pradeo app.
+You can control mobile device access to corporate resources using Conditional Access based on risk assessment conducted by Pradeo, a Mobile Threat Defense (MTD) solution that integrates with Microsoft Intune. Risk is assessed based on telemetry collected from devices running the Pradeo app.
 
-You can configure conditional access policies based on Pradeo risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
+You can configure Conditional Access policies based on Pradeo risk assessment enabled through Intune device compliance policies, which you can use to allow or block noncompliant devices to access corporate resources based on detected threats.
 
 ## How do Intune and Pradeo help protect your company resources?
 
@@ -48,11 +48,11 @@ Here are some common scenarios.
 
 When malicious apps such as malware are detected on devices, you can block devices from the following actions until the threat is resolved:
 
--   Connecting to corporate e-mail
+- Connecting to corporate e-mail
 
--   Syncing corporate files with the OneDrive for Work app
+- Syncing corporate files with the OneDrive for Work app
 
--   Accessing company apps
+- Accessing company apps
 
 **Block when malicious apps are detected:**
 
@@ -88,19 +88,19 @@ Detect threats to your network like **Man-in-the-middle** attacks, and prevent s
 
 ## Supported platforms
 
--   **Android 4.0.3 and later**
+- **Android 4.0.3 and later**
 
--   **iOS 7 and later**
+- **iOS 7 and later**
 
 ## Prerequisites
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune subscription
+- Microsoft Intune subscription
 
--   Pradeo Security for Mobile Threat Defense subscription
+- Pradeo Security for Mobile Threat Defense subscription
 
-    -   For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
+  - For more information, see the [Pradeo website](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## Next steps
 

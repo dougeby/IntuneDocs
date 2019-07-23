@@ -27,9 +27,7 @@ ms.collection: M365-identity-device-management
 ---
 # Bulk enrollment for Windows devices
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to log on.
+As an administrator, you can join large numbers of new Windows devices to Azure Active Directory and Intune. To bulk enroll devices for your Azure AD tenant, you create a provisioning package with the Windows Configuration Designer (WCD) app. Applying the provisioning package to corporate-owned devices joins the devices to your Azure AD tenant and enrolls them for Intune management. Once the package is applied, it's ready for your Azure AD users to sign in.
 
 Azure AD users are standard users on these devices and receive assigned Intune policies and required apps. Windows devices that are enrolled into Intune using Windows bulk enrollment can use the Company Portal app to install available apps. 
 
@@ -53,6 +51,7 @@ Azure AD users are standard users on these devices and receive assigned Intune p
    ![Screenshot of specifying name, project folder, and description in the Windows Configuration Designer app](media/bulk-enroll-name.png)
 
 4. Enter a unique name for your devices. Names can include a serial number (%SERIAL%) or a random set of characters. Optionally, you can also enter a product key if you are upgrading the edition of Windows, configure the device for shared use, and remove pre-installed software.
+   
    ![Screenshot of specifying name and product key in the Windows Configuration Designer app](media/bulk-enroll-device.png)
 
 5. Optionally, you can configure the Wi-Fi network devices connect to when they first start.  If the network devices aren't configured, a wired network connection is required when the device is first started.
@@ -94,12 +93,9 @@ Provisioning is intended to be used on new Windows devices. Provisioning failure
 - A provisioning package that attempts to join an Active Directory domain or Azure Active Directory tenant that does not create a local account could make the device unreachable if the domain-join process fails due to lack of network connectivity.
 - Scripts run by the provisioning package are run in system context. The scripts are able to make arbitrary changes to the device file system and configurations. A malicious or bad script could put the device in a state that can only be recovered by reimaging or wiping the device.
 
-### Problems with bulk enrollment and Company Portal
-If a user tries to enroll a previously bulk-enrolled device using the Company Portal, they will receive a warning that their device needs further actions, either setup or enrollment. The device is enrolled, but the enrollment is not recognized by the Company Portal app or website.
-
 ### Bulk enrollment with Wi-Fi 
 
 Bulk enrolled devices are unable to use to user-targeted certificates and Wi-Fi deployment. You must use [device-level certificates](certificates-configure.md) to manage these connections. 
 
-### Conditional access
-Conditional access is not available for Windows devices enrolled using bulk enrollment.
+### Conditional Access
+Conditional Access is not available for Windows devices enrolled using bulk enrollment.

@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -31,14 +31,14 @@ ms.collection: M365-identity-device-management
 # Plan communications 
 The communication plan is a key element to an Intune migration. The following tools and templates are provided to assist you in educating end users. The Intune Adoption Kit includes email templates, an Intune Enrollment guide, and links to instructional videos for end user enrollment.  
 
-Download:  [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit)
+Download:  [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## Email templates 
 We recommend the following email communication plan. We’ve provided templates for you to adapt for your communication plan:
 - **Email #1**: Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune. 
 
 - **Email #2**: Announce that services are now ready for access through Intune. Tell users to enroll now.  Give users a timeline before their access is affected. Remind users of benefits and strategic reasons for migration.
-After a certain period, you can begin enforcing compliance through conditional access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with conditional access](migration-guide-drive-adoption.md).
+After a certain period, you can begin enforcing compliance through Conditional Access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md).
 
 ## Intune Enrollment Guide 
 This PDF attachment can be provided to your users as-is, or you may customize the Word version to include your internal resources and contact information.

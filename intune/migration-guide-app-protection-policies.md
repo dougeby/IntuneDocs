@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -52,7 +52,7 @@ This period can leave your organization more vulnerable to device theft and corp
 
 Intune can offer corporate data protections during the migration so you can still have security coverage for your corporate data when there’s no device-level management.
 
-As you disable conditional access in the old MDM provider, users can still be productive while you on-board them into Intune.
+As you disable Conditional Access in the old MDM provider, users can still be productive while you on-board them into Intune.
 
 ## Task list for app protection policies
 

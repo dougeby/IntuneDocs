@@ -35,33 +35,33 @@ Intune lets you manage your workforce’s devices and apps and how they access y
 
 As you can see in the following tables, there are several methods to enroll your workforce’s devices. Each method depends on the device's ownership (personal or corporate), device type (iOS, Windows, Android), and management requirements (resets, affinity, locking).
 
-By default, devices for all platforms are allowed to enroll in Intune. However, you can [restrict devices by platform](enrollment-restrictions-set.md#set-device-type-restrictions).
+By default, devices for all platforms are allowed to enroll in Intune. However, you can [restrict devices by platform](enrollment-restrictions-set.md#create-a-device-type-restriction).
 
 ## iOS enrollment methods
 
-| **Method** |	**Reset Required** |	[**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)	|	**Locked** | **Details** |
+| **Method** | **Reset Required** | [**User Affinity**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) | **Locked** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| |	Devices are wiped during enrollment. |	Associates each device with a user.| Users can’t unenroll devices.	| |
-|**[BYOD](#bring-your-own-device)** | No|	Yes |	No | [More information](./apple-mdm-push-certificate-get.md)|
-|**[DEM](#device-enrollment-manager)**|	No |No |No	| [More information](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-ios.md)|
-|**[USB-SA](#usb-sa)**|	Yes |	Optional |	No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
-|**[USB-Direct](#usb-direct)**|	No |	No	| No|[More information](./apple-configurator-direct-enroll-ios.md)|
+| | Devices are wiped during enrollment. | Associates each device with a user.| If yes, users can’t unenroll devices. | |
+|**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./apple-mdm-push-certificate-get.md)|
+|**[DEM](#device-enrollment-manager)**| No |No |No | [More information](./device-enrollment-program-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](./device-enrollment-program-enroll-ios.md)|
+|**[USB-SA](#usb-sa)**| Yes | Optional | No| [More information](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[USB-Direct](#usb-direct)**| No | No | No|[More information](./apple-configurator-direct-enroll-ios.md)|
 
 ## macOS enrollment methods
 | **Method** |  **Reset Required** |  **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No| Yes | No | [More information](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No  | [More information](./device-enrollment-manager-enroll.md)|
-|**[DEP](#apple-device-enrollment-program)**|	Yes |	Optional |	Optional|[More information](./device-enrollment-program-enroll-macos.md)|
+|**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](./device-enrollment-program-enroll-macos.md)|
 
 
 ## Windows enrollment methods
 
-| **Method** |	**Reset Required** |	**User Affinity**	|	**Locked** | **Details**|
+| **Method** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | No |	Yes |	No | [More information](windows-enroll.md)|
-|**[DEM](#device-enrollment-manager)**|	No |No |No	|[More information](device-enrollment-manager-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | No | Yes | No | [More information](windows-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| No |No |No |[More information](device-enrollment-manager-enroll.md)|
 |**Auto-enroll** | No |Yes |No | [More information](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
 |**Autopilot** |Yes |Yes |No | [More information](enrollment-autopilot.md)
 |**Bulk enroll** |No |No |No | [More information](./windows-bulk-enroll.md) |
@@ -101,12 +101,12 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 Learn more about iOS DEP enrollment:
 
 - [Choose how to enroll iOS devices](ios-enroll.md)
-- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-restrictions-ios#device-enrollment-program)
+- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they are then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:
-  -	Locked enrollment
-  -	Kiosk mode and other advanced configurations and restrictions
+- Locked enrollment
+- Kiosk mode and other advanced configurations and restrictions
 
 Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 
@@ -114,7 +114,7 @@ Learn more about iOS Apple Configurator enrollment with Setup Assistant:
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### USB-Direct
-For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support conditional access, jailbreak detection, or mobile application management.
+For direct enrollment, the admin must enroll each device manually by creating an enrollment policy and exporting it to Apple Configurator. USB-connected, corporate-owned devices are enrolled directly and don't require a wipe. Devices are managed as user-less devices. They are not locked or supervised and cannot support Conditional Access, jailbreak detection, or mobile application management.
 
 To learn more about iOS enrollment, see:
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -68,7 +68,7 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
 - **Applications**: Add the apps to run on the kiosk device. Remember, you can add several apps.
 
-  - **Add Store apps**: Select an existing app you added using [Client Apps](apps-add.md). If you don't have any apps listed, then you can get apps, and [add them to Intune](store-apps-windows.md).
+  - **Add Store apps**: Select an existing app you added or deployed to Intune as [Client Apps](apps-add.md), including LOB apps. If you don't have any apps listed, Intune supports many [app types](apps-add.md) that you [add to Intune](store-apps-windows.md).
   - **Add Win32 app**: Not supported on Windows Holographic for Business.
   - **Add by AUMID**: Use this option to add inbox Windows apps. Enter the following properties: 
 

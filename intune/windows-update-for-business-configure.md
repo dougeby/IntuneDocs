@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/07/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -52,11 +52,12 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
     Windows Holographic for Business supports a subset of settings for Windows updates, including:
     - **Automatic update behavior**
     - **Microsoft product updates**
-    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options  
+    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options. For more information, see [Manage Windows Holographic](windows-holographic-for-business.md).  
 
-    For more information, see [Manage Windows Holographic](windows-holographic-for-business.md)  
-  
-  Devices running Windows 10 Mobile aren't supported.
+    > [!NOTE]  
+    > **Unsupported versions and editions**:
+    > - Windows 10 Mobile  
+    > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) does not currently support *Long Term Service Channel* releases. Plan to use alternative patching methods, like WSUS or Configuration Manager.  
 
 - On Windows devices, **Feedback & diagnostics** > **Diagnostic and usage data** must be set to **Basic**, **Enhanced**, or **Full**.  
 
@@ -65,6 +66,7 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
   For more information about device profiles, see [configure device restriction settings](device-restrictions-configure.md).  
 
 - If you use the Azure classic portal, [migrate your settings to the Azure portal](#migrate-update-settings-to-the-azure-portal).  
+
 
 ## Create and assign update rings
 
@@ -95,7 +97,7 @@ In addition to viewing assignment status, you can select the following actions f
 ### Delete  
 Select **Delete** to stop enforcing the settings of the selected Windows 10 update ring. Deleting a ring removes its configuration from Intune so that Intune no longer applies and enforces those settings.  
 
-Deleting a ring from Intune doesn't modify the settings on devices that were assigned the update ring.  Instead, the device retains its current settings. This is because devices do not maintain a historical record of what settings were previously in place, and because the device might receive settings from additional update rings that remain active.  
+Deleting a ring from Intune doesn't modify the settings on devices that were assigned the update ring.  Instead, the device keeps its current settings. This is because devices don't maintain a historical record of what settings were previously in place, and because the device might receive settings from additional update rings that remain active.  
 
 #### To delete a ring  
 1. While viewing the overview page for an Update Ring, select **Delete**.  
@@ -105,7 +107,7 @@ Deleting a ring from Intune doesn't modify the settings on devices that were ass
 Select **Pause** to prevent assigned devices from receiving Feature Updates or Quality Updates for up to 35 days from the time you pause the ring. After the maximum days have passed, pause functionality automatically expires and the device scans Windows Updates for applicable updates. Following this scan, you can pause the updates again. 
 If you resume a paused update ring, and then pause that ring again, the pause period resets to 35 days.  
 
- #### To pause a ring  
+#### To pause a ring  
 1. While viewing the overview page for an Update Ring, select **Pause**.  
 2. Select either **Feature** or **Quality** to pause that type of update, and then select **OK**.  
 3. After pausing one update type, you can select Pause again to pause the other update type.  
@@ -132,7 +134,7 @@ While an update ring is paused, you can select **Extend** to reset the pause per
 3. After extending the pause for one update type, you can select Extend again to extend the other update type.  
 
 ### Uninstall  
-An Intune administrator can use **Uninstall** to uninstall (roll back) the latest *feature* update or the latest *quality* update for an active or paused update ring. After uninstalling one type, you can then uninstall the other type. Intune does not support or manage the ability of users to uninstall updates.  
+An Intune administrator can use **Uninstall** to uninstall (roll back) the latest *feature* update or the latest *quality* update for an active or paused update ring. After uninstalling one type, you can then uninstall the other type. Intune doesn't support or manage the ability of users to uninstall updates.  
 
 For Uninstall to be successful:  
 - A device must run the Windows 10 April 2018 update (version 1803) or later.  
@@ -146,7 +148,7 @@ Consider the following when you use Uninstall:
 
 - On a Windows 10 device, after a quality update is successfully rolled back, end-users continue to see the update listed in **Windows settings** > **Updates** > **Update History**.  
 
-- For Feature updates specifically, the time you can uninstall the feature update is limited from 2-60 days, as configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)**. You can't roll back a feature update thats been installed on a device after the feature update has been installed for longer than the configured uninstall period.  
+- For Feature updates specifically, the time you can uninstall the feature update is limited from 2-60 days, as configured by the update rings Update setting **Set feature update uninstall period (2 – 60 days)**. You can't roll back a feature update that's been installed on a device after the feature update has been installed for longer than the configured uninstall period.  
 
   For example, consider an update ring with a feature update uninstall period of 20 days. After 25 days you decide to roll back the latest feature update and use the Uninstall option.  Devices that installed the feature update over 20 days ago can't uninstall it as they have removed the necessary bits as part of their maintenance. However, devices that only installed the feature update up to 19 days ago can uninstall the update if they successfully check in to receive the uninstall command prior to exceeding the 20-day uninstall period.  
 
@@ -158,7 +160,7 @@ For more information about Windows Update policies, see [Update CSP](https://doc
 3. After triggering the uninstall for one update type, you can select Uninstall again to uninstall the remaining update type.  
 
 ## Migrate update settings to the Azure portal  
-The Azure classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured when you migrate to the Azure portal, we strongly recommend that you do the following:  
+The Azure classic portal also has a limited number of other Windows 10 updates settings in the device configuration profile. If you have any of these settings configured when you migrate to the Azure portal, we strongly recommend that you do the following actions:  
 
 1. Create Windows 10 update rings in the Azure portal with the settings that you need. The **Allow pre-release features** setting isn't supported in the Azure portal because it's no longer applicable to the latest Windows 10 builds. You can configure the other three settings, as well as other Windows 10 updates settings, when you create update rings.  
 
@@ -171,4 +173,6 @@ The Azure classic portal also has a limited number of other Windows 10 updates s
 [Windows update settings supported by Intune](windows-update-settings.md)  
 
 [Intune compliance reports for updates](windows-update-compliance-reports.md)
+
+[Troubleshooting Windows 10 update rings](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
 

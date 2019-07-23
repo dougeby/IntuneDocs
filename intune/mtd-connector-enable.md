@@ -45,7 +45,7 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 
 6. Choose your MTD solution as the **Mobile Threat Defense connector to setup** from the drop-down list.
 
-	![MTD setup in Intune Azure portal](./media/enable-mtd-connector-1.png)
+    ![MTD setup in Intune Azure portal](./media/enable-mtd-connector-1.png)
 
 7. Enable the toggle options according to your organization's requirements. Toggle options visible will vary depending on the MTD partner.
 
@@ -54,10 +54,10 @@ During Mobile Threat Defense (MTD) setup, you've configured a policy for classif
 You can decide which MTD toggle options you need to enable according to your organization's requirements. Here are more details:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have Android 4.1+ devices reporting security risk back to Intune.
-	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Connect iOS 8.0+ devices to [MTD partner name] for Work MTD**: When you enable this option, you can have iOS 8.0+ devices reporting security risk back to Intune.
-	- **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
+  - **Mark as noncompliant if no data is received**: If Intune doesn't receive data about a device on this platform from the MTD partner, consider the device noncompliant.
 <br></br>
 - **Enable App Sync for iOS Devices**: Allows this Mobile Threat Defense partner to request metadata of iOS applications from Intune to use for threat analysis purposes.
 
@@ -66,7 +66,7 @@ You can decide which MTD toggle options you need to enable according to your org
 - **Number of days until partner is unresponsive**: Number of days of inactivity before Intune considers the partner to be unresponsive because the connection is lost. Intune ignores compliance state for unresponsive MTD partners.
 
 > [!IMPORTANT] 
-> When possible, we recommend that you add and assign the MTD apps before creating the device compliance and the conditional access policy rules. This helps ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
+> When possible, we recommend that you add and assign the MTD apps before creating the device compliance and the Conditional Access policy rules. This helps ensures that the MTD app is ready and available for end users to install before they can get access to email or other company resources.
 
 > [!TIP]
 > You can see the **Connection status** and the **Last synchronized** time between Intune and the MTD partner from the Mobile Threat Defense pane.

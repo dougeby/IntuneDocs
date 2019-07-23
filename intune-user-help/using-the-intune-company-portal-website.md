@@ -33,20 +33,20 @@ Use the [Company Portal website](https://portal.manage.microsoft.com) to view, e
 
 From the Company Portal website, you can take any of the following actions:
 
--   [Rename your device](rename-your-device-cpwebsite.md)
+- [Rename your device](rename-your-device-cpwebsite.md)
 
--   [Remove your device](remove-your-device-cpwebsite.md)
+- [Remove your device](remove-your-device-cpwebsite.md)
 
--   [Reset your device](reset-erase-your-device-cpwebsite.md)
+- [Reset your device](reset-erase-your-device-cpwebsite.md)
 
--   [Reset your device passcode](reset-your-passcode-cpwebsite.md)
+- [Reset your device passcode](reset-your-passcode-cpwebsite.md)
 
--   [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
+- [Remotely lock a device](remote-lock-your-device-cpwebsite.md)
 
--   Find the company support's contact information, if you configured it
+- Find the company support's contact information, if you configured it
 
--   Check compliance status
+- Check compliance status
 
--   Remotely manage a PC
+- Remotely manage a PC
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

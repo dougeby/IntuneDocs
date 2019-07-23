@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/30/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 ---
 
 # What is Mobile Threat Defense integration with Intune?
-Intune can integrate data from a Mobile Threat Defense vendor as an information source for compliance policies and conditional access rules. You can use this information to help protect corporate resources like Exchange and SharePoint, by blocking access from compromised mobile devices.  
+Intune can integrate data from a Mobile Threat Defense vendor as an information source for compliance policies and Conditional Access rules. You can use this information to help protect corporate resources like Exchange and SharePoint, by blocking access from compromised mobile devices.  
 
 ## What problem does this solve?
 Integrating information from a Mobile Threat Defense vendor can help you protect your corporate resources from threats that affect Mobile platforms.  
@@ -51,14 +51,14 @@ This service is opt-in; no app inventory information is shared by default. An In
 **App inventory**  
 If you enable App Sync for iOS devices, inventories from both corporate and personally owned iOS devices are sent to your MTD service provider. Data in the app inventory includes:
 
- - App ID
- - App Version
- - App Short Version
- - App Name
- - App Bundle Size
- - App Dynamic Size
- - Whether the app is validated or not
- - Whether the app is managed or not
+- App ID
+- App Version
+- App Short Version
+- App Name
+- App Bundle Size
+- App Dynamic Size
+- Whether the app is validated or not
+- Whether the app is managed or not
 
 ## Sample scenarios
 
@@ -84,4 +84,4 @@ Learn how to protect access to company resource based on device, network, and ap
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
 - [Sophos Mobile](sophos-mtd-connector.md)
-- Wandera (details coming soon)
+- [Wandera Mobile Threat Defense](wandera-mtd-connector.md)

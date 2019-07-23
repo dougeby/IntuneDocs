@@ -37,9 +37,9 @@ Let’s discuss a few examples to help your organization identify Intune use-cas
 ## Device ownership
 You can begin by referring to your organization's Intune deployment goals and objectives to help identity the main use-case scenarios for your deployment. Within the scope of your Intune deployment plan, answer the following questions:
 
--   Are you planning to support corporate owned devices?
+- Are you planning to support corporate owned devices?
 
--   Are you planning to support personally owned devices (BYOD)?
+- Are you planning to support personally owned devices (BYOD)?
 
 These are not either/or options. You may find you need to support both forms of device ownership to meet your organizational goals. The sub-use-cases will help clarify where to apply the different device management policies.
 
@@ -47,11 +47,11 @@ These are not either/or options. You may find you need to support both forms of 
 
 Determine if each use-case scenario also includes sub-use-cases. For example, your organization may have identified requirements to support a corporate use-case scenario that includes additional sub-use-cases based on user type or device role, such as:
 
--   Information worker
+- Information worker
 
--   Executive
+- Executive
 
--   Kiosk
+- Kiosk
 
 Here are a few examples of use-case and sub-use-case scenarios:
 

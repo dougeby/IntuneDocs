@@ -33,11 +33,11 @@ ms.collection: M365-identity-device-management
 
 If your company support has configured a VPN application to enable you to  connect to your company's resources, you'll see a notification on your Android device indicating that you need to install a VPN app. Follow these steps to install the VPN app:
 
-1.  Pull down the notification drawer, and tap **Tap to install this required app**.
+1. Pull down the notification drawer, and tap **Tap to install this required app**.
 
-2.  In the **Play Store**, click **INSTALL** and follow the prompts to install the app.
+2. In the **Play Store**, click **INSTALL** and follow the prompts to install the app.
 
-3.  Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
+3. Tap **Install corporate VPN profile** and follow the prompts. The installation steps may be slightly different, depending on which VPN provider your company is using.
 
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

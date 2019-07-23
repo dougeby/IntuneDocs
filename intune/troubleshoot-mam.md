@@ -3,12 +3,12 @@
 
 title: Troubleshoot mobile application management 
 titleSuffix: Microsoft Intune
-description: This topic describes some troubleshooting tips for conditional access deployments.
+description: This topic describes some troubleshooting tips for Conditional Access deployments.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 # Troubleshoot mobile application management
 
-This topic provides solutions to common problems that have occurred when using Intune mobile application management.
+This topic provides solutions to common problems that have occurred when using Intune App Protection (also referred to as MAM or mobile application management).
 
 If this information does not solve your problem, see [How to get support for Microsoft Intune](get-support.md) to find more ways to get help.
 
@@ -42,7 +42,7 @@ These are common issues an IT administrator may experience when using Intune app
 | -- | -- | -- |
 | Policy not applied to Skype for Business | App protection policy without device enrollment, made in the Azure portal, is not applying to the Skype for Business app on iOS and Android devices. | Skype for Business must be set up for modern authentication.  Please follow instructions in [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) to set up modern authentication for Skype. |
 | Office app policy not applied | App protection policies are not applying to any [supported Office App](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) for any user. | Confirm that the user is licensed for Intune and the Office apps are targeted by a deployed app protection policy. It can take up to 8 hours for a newly deployed app protection policy to be applied. |
-| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure Portal. | The following user roles have access to the Azure Portal: <ul><li>Global administrator, which you can set up in the [Microsoft 365 admin center](https://admin.microsoft.com/)</li><li>Owner, which you can set up in the [Azure Portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure Portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
+| Admin can't configure app protection policy in Azure portal | IT administrator user is unable to configure app protection policies in Azure portal. | The following user roles have access to the Azure portal: <ul><li>Global administrator, which you can set up in the [Microsoft 365 admin center](https://admin.microsoft.com/)</li><li>Owner, which you can set up in the [Azure portal](https://portal.azure.com/).</li><li>Contributor, which you can set up in the [Azure portal](https://portal.azure.com/).</li></ul> Refer to [Role-based administration control (RBAC) with Microsoft Intune](role-based-access-control.md) for help setting up these roles.|
 |User accounts missing from app protection policy reports | Admin console reports do not show user accounts to which app protection policy was recently deployed. | If a user is newly targeted by an app protection policy, it can take up to 24 hours for that user to show up in reports as a targeted user. |
 | Policy changes not working | Changes and updates to app protection policy can take up to 8 hours to apply. | If applicable, the end-user can log out of the app and log back in to force sync with service. |
 | App protection policy not working with DEP | App protection policy is not applying to Apple DEP devices. | Please ensure you are using User Affinity with Apple Device Enrollment Program (DEP). User Affinity is required for any app that requires user authentication under DEP. <br><br>Refer to [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md) for more information on iOS DEP enrollment.|
@@ -63,7 +63,15 @@ Common end-user issues are broken down in the following categories:
 Platform | Scenario | Explanation |
 ---| --- | --- |
 iOS | The end-user can use the iOS share extension to open work or school data in unmanaged apps, even with the data transfer policy set to **Managed apps only** or **No apps.** Doesn't this leak data? | Intune app protection policy cannot control the iOS share extension without managing the device. Therefore, **Intune encrypts "corporate" data before sharing it outside the app**. You can validate this by attempting to open the "corporate" file outside of the managed app. The file should be encrypted and unable to be opened outside the managed app.
+iOS | Why is the end-user **prompted to install the Microsoft Authenticator app** | This is needed when App Based Conditional Access is applied, see [Require approved client app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access).
 Android | Why does the end-user **need to install the Company Portal app**, even if I'm using MAM app protection without device enrollment?  | On Android, much of app protection functionality is built into the Company Portal app. **Device enrollment is not required even though the Company Portal app is always required**. For app protection without enrollment, the end-user just needs to have the Company Portal app installed on the device.
+iOS/Android | App Protection policy not applied on draft email in the Outlook app | Since Outlook supports both corporate and personal context, it does not enforce MAM on draft email.
+iOS/Android | App Protection policy not applied on new documents in WXP (Word,Excel,PowerPoint) | Since WXP supports both corporate and personal context, it does not enforce MAM on new documents until they are saved in an identified corporate location like OneDrive.
+iOS/Android | Apps not allowing Save As to Local Storage when policy is enabled | The App behavior for this setting is controlled by the App Developer.
+Android | Android has more restrictions than iOS on what "native" apps can access MAM protected content | Android is an open platform and the "native" app association can be changed by the end-user to potentially unsafe apps. Apply [Data transfer policy exceptions](app-protection-policies-exception.md) to exempt specific apps.
+Android | Azure Information Protection (AIP) can Save as PDF when Save As is prevented | AIP honors the MAM policy for 'Disable printing' when Save as PDF is used.
+iOS | Opening PDF attachments in Outlook app fails with "Action Not Allowed | This can occur if the user has not authenticated to Acrobat Reader for Intune, or has used thumbprint to authenticate to their organization. Open Acrobat Reader beforehand and authenticate using UPN credentials.
+
 
 ### Normal usage dialogs
 
@@ -87,7 +95,7 @@ Error message or dialog | Cause | Remediation |
 **Device Non-Compliant**: This app cannot be used because you are using a jailbroken device. Contact your IT administrator for help. | Intune detected the user is on a jailbroken device. | Reset the device to default factory settings. Follow [these instructions](https://support.apple.com/HT201274) from the Apple support site.
 **Internet Connection Required**: You must be connected to the Internet to verify that you can use this app. | The device is not connected to the Internet. | Connect the device to a WiFi or Data network.
 **Unknown Failure**: Try restarting this app. If the problem persists, contact your IT administrator for help. | An unknown failure occurred. | Wait a while and try again. If the error persists, create a [support ticket](get-support.md#create-an-online-support-ticket) with Intune.
-**Accessing Your Organization's Data**: The work or school account you specified does not have access to this app. You may have to sign in with a different account. Contact your IT administrator for help. | Intune detects the user attempted to sign in with second work or school account that is different from the MAM enrolled account for the device. Only one work or school account can be managed by MAM at a time per device. | Have the user sign in with the account whose username is pre-populated by the sign-in screen. <br> <br> Or, have the user sign in with the new work or school account and remove the existing MAM enrolled account.
+**Accessing Your Organization's Data**: The work or school account you specified does not have access to this app. You may have to sign in with a different account. Contact your IT administrator for help. | Intune detects the user attempted to sign in with second work or school account that is different from the MAM enrolled account for the device. Only one work or school account can be managed by MAM at a time per device. | Have the user sign in with the account whose username is pre-populated by the sign-in screen. You may need to [configure the user UPN setting for Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Or, have the user sign in with the new work or school account and remove the existing MAM enrolled account.
 **Connection Issue**: An unexpected connection issue occurred. Check your connection and try again.  |  Unexpected failure. | Wait a while and try again. If the error persists, create a [support ticket](get-support.md#create-an-online-support-ticket) with Intune.
 **Alert**: This app can no longer be used. Contact your IT administrator for more information. | Failure to validate the app's certificate. | Make sure the app version is up-to-date. <br><br> Reinstall the app.
 **Error**: This app has encountered a problem and must close. If this error persists, please contact your IT administrator. | Failure to read the MAM app PIN from the Apple iOS Keychain. | Restart the device. Make sure the app version is up-to-date. <br><br> Reinstall the app.
@@ -108,6 +116,7 @@ Dialog/Error message | Cause | Remediation |
 ## Next steps
 
 - [Validating your mobile application management setup](app-protection-policies-validate.md)
+- Learn how to use log files to troubleshoot Intune App Protection policy, see [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - For additional Intune troubleshooting information, see [Use the troubleshooting portal to help users at your company](help-desk-operators.md). 
 - Learn about any known issues in Microsoft Intune. For more information, see [Known issues in Microsoft Intune](known-issues.md).
 - Need extra help? See [How to get support for Microsoft Intune](get-support.md).

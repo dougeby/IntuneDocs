@@ -128,8 +128,8 @@ After you create the profile and assign serial numbers, you must export the prof
 2. In the **preferences** pane, select **Servers** and choose the plus symbol (+) to launch the MDM Server wizard. Choose **Next**.
 3. Enter the **Host name or URL** and **enrollment URL** for the MDM server under Setup Assistant enrollment for iOS devices with Microsoft Intune. For the Enrollment URL, enter the enrollment profile URL exported from Intune. Choose **Next**.  
     You can safely disregard a warning stating "server URL is not verified." To continue, choose **Next** until the wizard is finished.
-4.  Connect the iOS mobile devices to the Mac computer with a USB adapter.
-5.  Select the iOS devices you want to manage, and then choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual**, and then choose **Next**.
+4. Connect the iOS mobile devices to the Mac computer with a USB adapter.
+5. Select the iOS devices you want to manage, and then choose **Prepare**. On the **Prepare iOS Device** pane, select **Manual**, and then choose **Next**.
 6. On the **Enroll in MDM Server** pane, select the server name you created, and then choose **Next**.
 7. On the **Supervise Devices** pane, select the level of supervision, and then choose **Next**.
 8. On the **Create an Organization** pane, choose the **Organization** or create a new organization, and then choose **Next**.

@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/04/2019
+ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -36,6 +36,29 @@ Learn about the most recent updates to the Microsoft Intune apps. We regularly a
 If you're an employee or student, be sure to check out the screenshots and links to the Company Portal help documentation. For more information about how to use the Company Portal app, see the [Company Portal user help documentation](https://docs.microsoft.com/intune-user-help/).  
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
+
+## Week of June 24, 2019  
+
+### View all installed apps from new Company Portal web page <!-- 4224326 -->
+The Company Portal website's new **Installed Apps** page lists all managed apps (both required and available) that are installed on a user's devices. In addition to assignment type, users can see the app's publisher, date published, and current installation status. If you haven't made any apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new page on the web, go to the [Company Portal website](https://portal.manage.microsoft.com) and click **Installed Apps**.   
+
+![Screenshot of Company Portal website, Installed Apps page.](/intune-user-help/media/intune-installed-apps-1907.png)     
+
+### New view lets app users see all managed apps installed on device <!-- 2352913 -->
+The Company Portal app for Windows now lists all managed apps (both required and available) that are installed on a user's device. Users can also see attempted and pending app installations, and their current statuses. If you haven't made apps required or available to your users, they'll see a message explaining that no company apps have been installed. To see the new view, go to the Company Portal navigation pane and select **Apps** > **Installed Apps**.   
+
+![Example screenshot of the Company Portal app for Windows 10, Installed apps page. ](/intune-user-help/media/installed-apps-cp-1906.png)  
+
+
+## Week of June 17, 2019  
+
+### New features in Microsoft Intune app
+We’ve added new features to the Microsoft Intune app (preview) for Android. Users on fully managed Android devices can now:  
+
+* View and manage the devices they've enrolled through the Intune Company Portal or Microsoft Intune app.    
+* Contact their organization for support.    
+* Send their feedback to Microsoft.    
+* View terms and conditions, if set by their organization. 
 
 ## Week of April 15, 2019  
 
@@ -226,7 +249,7 @@ We're still fine-tuning the way relevance is tracked, so please let us know how 
 ## Week of October 16, 2017
 
 ### Search improvements to the Company Portal website <!-- 1331697 -->
-We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
+We're improving our app search capabilities, starting with the [Company Portal website](https://portal.manage.microsoft.com). Searches will now be performed on app categories in addition to the Name and Description fields. The results will be sorted, by default, in decreasing order of relevance. 
 
 iOS users will also receive this change, as the Company Portal website is also used as part of the Company Portal app for iOS. The Company Portal apps for Android and Windows will receive similar updates in the coming months.
 
@@ -240,7 +263,7 @@ This release fixes a known issue with how the iOS Company Portal displays icons 
 ## Week of October 2, 2017
 
 ### Improvements to device setup workflow in Company Portal <!-- 1490692 -->
-We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
+We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. 
 
 |Before|After|
 |---|---|
@@ -260,7 +283,7 @@ Additional steps have been improved on Android work profile devices.
 |![08](./media/android_work_cp_enroll_05_before_1710.png)| *Combined with previous step* |
 
 
-We've also updated the conditional access email activation screen.
+We've also updated the Conditional Access email activation screen.
 
 |Before|After|
 |---|---|
@@ -268,7 +291,7 @@ We've also updated the conditional access email activation screen.
 
 ## Week of September 11, 2017
 
-### Easier-to-understand phrasing for the Company Portal app for Android <!-- 1396349 -->  
+### Easier-to-understand phrasing for the Company Portal app for Android <!-- 1396349 -->  
 
 The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end-users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images below:
 
@@ -285,7 +308,7 @@ The enrollment process for the Company Portal app for Android has been simplifie
 
 ### iOS 11 Mail app will support OAuth <!-- 1196951 -->
 
-Conditional access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
+Conditional Access with Intune supports more secure authentication on iOS devices with OAuth. To support this, there will now be a different flow on the Company Portal app for iOS to allow for more secure authentication. When end users try to sign in to a new Exchange account in the Mail app, they will see a web view prompt. Upon enrollment in Intune, users will see a prompt to allow the native Mail app to access a certificate. Most end users will not see any more quarantined emails. Existing mail accounts will continue to use basic authentication protocol, so these users will still have quarantine emails delivered to them. This sign in experience for end users is similar to the one on Office mobile apps.
 
 ![Selecting account type in native mail app.](./media/ios-11-ca-email-after-1708-01.png)
 
@@ -534,7 +557,7 @@ These are the plans for ways we will be improving the user experience by updatin
 > The images below may be previews, and the announced product may differ from the presented versions.  
 
 
-### See also
+## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
 * [What's new in Intune](https://docs.microsoft.com/intune/whats-new)

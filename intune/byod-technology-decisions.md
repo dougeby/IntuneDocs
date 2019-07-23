@@ -37,7 +37,7 @@ In this topic, we examine the simple use case of enabling BYOD access to corpora
 * Your email accounts are hosted in Exchange Online
 
 ## Common reasons to manage the device (MDM)
-You can easily drive users to enroll their devices into device management by deploying a [conditional access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) policy on Exchange Online. Here are the reasons you might want to manage personal devices:
+You can easily drive users to enroll their devices into device management by deploying a [Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) policy on Exchange Online. Here are the reasons you might want to manage personal devices:
 
 **WiFi/VPN** – If your users need a corporate connectivity profile to be productive, this can be seamlessly configured.
 
@@ -46,7 +46,7 @@ You can easily drive users to enroll their devices into device management by dep
 **Compliance** – Some organizations need to comply with regulatory or other policies that call out specific MDM controls. For example, you need MDM to encrypt the entire device or to produce a report of all apps on the device.
 
 ## Common reasons to only manage the apps (MAM)
-MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a conditional access policy on Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
+MAM without MDM is very popular for organizations that support BYOD. You can drive users to access email from Outlook Mobile (which supports MAM protections) by deploying a Conditional Access policy on Exchange Online. Here are the reasons you might want to only manage apps on personal devices:
 
 **User experience** – MDM enrollment includes many warning prompts (enforced by the platform) that often result in the user deciding they would rather not access their email on their personal device after all. MAM is much less alarming to users, as they simply get a pop-up one time to let them know MAM protections are in place.
 
@@ -57,11 +57,11 @@ MAM without MDM is very popular for organizations that support BYOD. You can dri
 Learn more about [device management and app management lifecycles](introduction-device-app-lifecycles.md).
 
 ## MDM vs MAM capability comparison
-As already mentioned, conditional access can drive a user to enroll their device or use a managed app like Outlook Mobile. Many other conditions can be applied in either case, including:
+As already mentioned, Conditional Access can drive a user to enroll their device or use a managed app like Outlook Mobile. Many other conditions can be applied in either case, including:
 
 * Which user is attempting the access
 * Whether the location is trusted or untrusted
-*	Sign-in risk level
+* Sign-in risk level
 * Device platform
 
 Still, many organizations often have specific risks they’re concerned about.  The table below lists the common concerns and MDM vs MAM response to that concern.

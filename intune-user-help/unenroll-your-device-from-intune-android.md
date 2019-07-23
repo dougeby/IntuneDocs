@@ -26,7 +26,7 @@ ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
----  
+---
 
 # Unenroll your Android device from management  
 
@@ -55,8 +55,8 @@ Remove an enrolled Android device so that it's no longer managed by your organiz
 
 To remove all data that the Company Portal app for Android stores on your device:
 
--	Clear app data by tapping **Applications** > **[*name of app*]** > **Clear data**.
--	Delete the following folder: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
+- Clear app data by tapping **Applications** > **[*name of app*]** > **Clear data**.
+- Delete the following folder: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
 ## Uninstall the Company Portal app  
 Company Portal is a device management app. It can't be uninstalled until you unenroll your device from its management. After that's complete, tap and hold the Company Portal app icon until you see **Uninstall**. Tap **Uninstall** to remove the app from your device.  
