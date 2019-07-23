@@ -79,11 +79,11 @@ You can also use a combination of [MDM and MAM](https://docs.microsoft.com/intun
 
 When you set up Intune, you also choose to work solely in the Azure portal to manage devices, or use Intune and Microsoft 365 together to manage devices. [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) is a Microsoft IT case study. In this case study, see how Microsoft IT chose a modern device management approach, and read the lessons learned.
 
-## Simplify IT tasks using the Device Management specialist workspace
+## Simplify IT tasks using the Device Management admin center
 
-The [Device Management specialist workspace](https://devicemanagement.portal.azure.com/) is a one-stop shop to manage and complete tasks for your mobile devices. This workspace includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps. 
+The [Device Management admin center](https://devicemanagement.portal.azure.com/) is a one-stop shop to manage and complete tasks for your mobile devices. This workspace includes the services used for device management, including Intune and Azure Active Directory, and to also manage client apps. 
 
-On the Device Management specialist workspace, you can:
+On the Device Management admin center, you can:
 
 - [Enroll devices](https://docs.microsoft.com/intune/device-enrollment)
 - [Set device compliance](https://docs.microsoft.com/intune/device-compliance-get-started)
