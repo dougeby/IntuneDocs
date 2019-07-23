@@ -33,18 +33,23 @@ You can protect access to Office 365 services like Exchange Online, SharePoint O
 
 ## Requirements for Conditional Access
 
+
 The following requirements must be met for Conditional Access to work:
 
-- The device must be enrolled and managed by Intune.
+
+- The device must be enrolled into MDM and managed by Intune.
 - Both the user and the device must be compliant with the assigned Intune compliance policies.
 - By default, the user must be assigned a device compliance policy. This can depend on the how the setting **Mark devices with no compliance policy assigned as** is configured under **Device Compliance** > **Compliance Policy Settings** in the Intune admin portal.
-- Exchange ActiveSync must be activated on the device if the user is using the device's native mail client rather than Outlook. This happens automatically for iOS, Windows Phone, and Android devices.
-- Your Intune Exchange Connector must be properly configured. See [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) for more information.
+-	Exchange ActiveSync must be activated on the device if the user is using the device's native mail client rather than Outlook. This happens automatically for iOS, Windows Phone, and Android Knox devices.
+-	For on-premise Exchange, your Intune Exchange Connector must be properly configured. See [Troubleshooting the Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md) for more information.
+- For on-premise Skype, you must configure Hybrid Modern Authentication. See [Hybrid Modern Auth Overview](https://docs.microsoft.com/en-us/office365/enterprise/hybrid-modern-auth-overview)
+
 
 You can view these conditions for each device in the Azure portal and in the device inventory report.
 
 ## Devices appear compliant but users are still blocked
 
+- Ensure that the user has an Intune license assigned for proper compliance evaluation.
 - Non-Knox Android devices will not be granted access until the user clicks the **Get Started Now** link in the quarantine email they receive. This applies even if the user is already enrolled in Intune. If the user does not get the email with the link on their phone, they can use a PC to access their email and forward it to an email account on their device.
 - When a device is first enrolled, it might take some time for compliance information to be registered for a device. Wait a few minutes and try again.
 - For iOS devices, an existing email profile might block the deployment of an Intune admin-created email profile assigned to that user, thus making the device noncompliant. In this scenario, the Company Portal app will notify the user that they are not compliant because of their manually-configured email profile, and it will prompt the user to remove that profile. Once the user removes the existing email profile, the Intune email profile will then be successfully deployed. To prevent this problem, instruct your users to remove any existing email profiles on their device before enrolling.
@@ -55,9 +60,17 @@ You can view these conditions for each device in the Azure portal and in the dev
 
   If the problem remains, contact Microsoft Support as described in [get support for Microsoft Intune](get-support.md).
 - Certain Android devices might appear to be encrypted, however the Company Portal app recognizes these devices as not encrypted, thus marking them as noncompliant. In this scenario, the user will see a notification in the Company Portal app asking them to set a start-up passcode for the device. After tapping the notification and confirming the existing PIN or password, choose the **Require PIN to start device** option on the **Secure start-up** screen, then tap the **Check Compliance** button for the device from the Company Portal app. The device should now be detected as encrypted. 
+
   > [!NOTE]
   > Some device manufacturers encrypt their devices using a default PIN instead of a PIN set by the user. Intune views encryption using the default PIN as insecure and will mark those devices as noncompliant until the user creates a new, nondefault PIN.
-- An Android device that is enrolled and compliant might still be blocked and receive a quarantine notice when first trying to access corporate resources. If this occurs, make sure the Company Portal app is not running, then click the **Get Started Now** link in the quarantine email to trigger evaluation. This should only need to be done when Conditional Access is first enabled.
+
+- An Android device that is enrolled and compliant might still be blocked and receive a quarantine notice when first trying to access corporate resources. If this occurs, make sure the Company Portal app is not running, then click the **Get Started Now** link in the quarantine email to trigger evaluation. This should only need to be done when conditional access is first enabled.
+- An Android device that is enrolled might prompt the user "No certificates found" and not be granted access to O365 resources. The user must enable the Enable Browser Access option on the enrolled device as follows:
+  1. Open the Company Portal app.
+  2. Go to the Settings page from the triple dots (...) or the hardware menu button.
+  3. Select the Enable Browser Access button.
+  4. In the Chrome browser, sign out of Office 365 and restart Chrome.  
+
 
 ## Devices are blocked and no quarantine email is received
 
@@ -69,8 +82,8 @@ You can view these conditions for each device in the Azure portal and in the dev
 
 - For Windows PCs, Conditional Access only blocks the native email app, Office 2013 with Modern Authentication, or Office 2016. Blocking earlier versions of Outlook or all mail apps on Windows PCs require AAD Device Registration and Active Directory Federation Services (AD FS) configurations as per [Set up SharePoint Online and Exchange Online for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
 - If the device is selectively wiped or retired from Intune, it might continue to have access for several hours after retirement. This is because Exchange caches access rights for 6 hours. Consider other means of protecting data on retired devices in this scenario.
-- Surface Hub devices support Conditional Access; however, you must deploy the compliance policy to device groups (not user groups) for correct evaluation.
-- Check the assignments for your compliance policies and your Conditional Access policies. If a user isn't in the group that is assigned the policies, or is in a group being excluded, the user will not be blocked. Only devices for users in an assigned group are checked for compliance.
+- Surface Hub, Bulk-Enrolled, and DEM enrolled Windows devices can support conditional access when a user who has been assigned a license for Intune is signed in; however, you must deploy the compliance policy to device groups (not user groups) for correct evaluation.
+- Check the assignments for your compliance policies and your conditional access policies. If a user isn't in the group that is assigned the policies, or is in a group being excluded, the user will not be blocked. Only devices for users in an assigned group are checked for compliance.
 
 ## Noncompliant device is not blocked
 
