@@ -36,7 +36,6 @@ Therefore, to avoid such reduced functionality, we advise against enrolling new 
 
 For the same reasons, we also recommend that you migrate devices off of device administrator management if the devices are going to update to Android 10. 
 
-
 If you still decide to have users enroll their Android devices with device administrator management, continue to the next section.  
  
 > [!Note]  
