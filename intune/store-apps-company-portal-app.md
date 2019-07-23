@@ -64,9 +64,9 @@ To manage devices and install apps, your users can install the Company Portal ap
 9. Under 'Select dependency app files' select all the dependecies you downloaded in step 7 by using shift-click, and verify that the 'Added' column displays Yes for the architectures you need.
 
      > [!NOTE]
-     > If the dependencies are not added, the app might not install on the specified device types
+     > If the dependecies are not added, the app might not install on the specified device types
 
-10. Click Ok, enter in any desired App Informaiton, and click Add
+10. Click Ok, enter in any desired App Information, and click Add
 
 11. Assign the Company Portal app as a required app to your selected set of user or device groups.  
 
