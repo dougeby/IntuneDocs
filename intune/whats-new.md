@@ -170,12 +170,6 @@ Our support for FileVault includes encrypting unencrypted devices, escrow of a d
 
 We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
 
-  > [!NOTE]
-  > Support for FileVault is limited until the July release completes rollout in a few days. Until rollout is complete:
-   > - If you configure FileVault, you must set *Defer FileVault until sign out* to **Enable**.  
-   > - Device status details and device encryption details for macOS might not accurately display in the encryption report.
-
-
 ### Device enrollment
 
 #### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
