@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Troubleshoot iOS device enrollment problems in Microsoft Intune
 
-This article is only intended for Intune administrators, technical support agents, and IT professionals. If you're and end user looking for help with an Intune enrollment problem, you can [ask the Microsoft Community](https://answers.microsoft.com).
+This article is only intended for Intune administrators, technical support agents, and IT professionals. If you're an end user looking for help with an Intune enrollment problem, you can [ask the Microsoft Community](https://answers.microsoft.com).
 
 This article helps Intune administrators understand and troubleshoot problems when enrolling iOS devices in Intune.
 
@@ -64,7 +64,7 @@ Collect the following information about the problem:
 1. Sign in to the Azure portal.
 2. Select **More Services**, search for Intune, and then select **Intune**.
 3. Select **Device enrollment** > **Enrollment restrictions**.
-4. Under **Device Type Restrictions**, select the restriction that you want to set, select **Properties** > **Select platforms**, select **Allow** for **iOS**, and then click **OK**.
+4. Under **Device Type Restrictions**, select the restriction that you want to set > **Properties** > **Select platforms** > select **Allow** for **iOS**, and then click **OK**.
 5. Select **Configure platforms**, select **Allow** for personally owned iOS devices, and then click **OK**.
 6. Re-enroll the device.
 
@@ -138,7 +138,7 @@ Collect the following information about the problem:
 
 ### NoEnrollmentPolicy
 
-**Cause:** The Apple Push Notification Service (APNs) certificate is missing, invalid or expired.
+**Cause:** The Apple Push Notification Service (APNs) certificate is missing, invalid, or expired.
 
 #### Resolution
 Verify that a valid APNs certificate is added to Intune. For more information, see [Set up iOS and Mac device management](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune). 
@@ -187,8 +187,8 @@ When you turn on a DEP-managed device that is assigned an enrollment profile, th
 1. Edit the enrollment profile. You can make any change to the profile. The purpose is to update the modification time of the profile.
 2. Synchronize DEP-managed devices: Open the Intune portal > **Admin** > **Mobile Device Management** > **iOS** > **Device Enrollment Program** > **Sync now**. A sync request is sent to Apple.
 
-### DEP enrollment stucks at user login
-When you turn on a DEP-managed device that is assigned an enrollment profile, the initial setup stucks after you enter credentials.
+### DEP enrollment stuck at user login
+When you turn on a DEP-managed device that is assigned an enrollment profile, the initial setup sticks after you enter credentials.
 
 **Cause:** Multi-Factor authentication (MFA) is enabled. Currently MFA doesn't work during enrollment on DEP devices.
 
