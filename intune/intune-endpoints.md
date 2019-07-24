@@ -151,7 +151,7 @@ For more information, see Apple's [TCP and UDP ports used by Apple software prod
 
 ## Microsoft Intune Certificate Connector  
 
-The server that hosts the Microsoft Intune Certificate Connector must have access using **TCP** port **443** to the public IP locations that are listed in the following table.  
+The server that hosts the Microsoft Intune Certificate Connector must have access using **TCP** port **443** to the public IP locations that are listed in the following table. For more information about certificates, see [Configure and use PKCS certificates with Intune](certficates-pfx-configure.md) and [Configure and use SCEP certificates with Intune](certificates-scep-configure.md).
 
 |Domains                             |IP address       |
 |---------------|--------------------------------------|
