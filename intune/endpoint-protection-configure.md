@@ -76,7 +76,7 @@ The Firewall rules that Intune can manage are detailed in the Windows [Firewall 
 
 3. Select **Windows Defender Firewall** to open the configuration page, and then for *Firewall rules* select **Add** to open the **Create Rule** page.  
 
-4. Specify settings for the Firewall rule, and then select **OK** to save it. To review the available custom firewall rule options in documentation, see [Custom Firewall rules](endpoint-protection-windows-10.md#custom-firewall-rules).  
+4. Specify settings for the Firewall rule, and then select **OK** to save it. To review the available custom firewall rule options in documentation, see [Custom Firewall rules](endpoint-protection-windows-10.md#firewall-rules).  
 
 5. After you save the rule, it appears on the *Windows Defender Firewall* page in the list of rules.  
 
