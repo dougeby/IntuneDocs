@@ -376,7 +376,14 @@ To validate that the service is running, open a browser, and enter the following
      - Windows 10 and later
 
 
-   - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type. 
+   - **Subject name format**: Select how Intune automatically creates the subject name in the certificate request. The options change if you choose a **User** certificate type or **Device** certificate type.  
+
+     > [!NOTE]  
+     > There is a [known issue](#avoid-certificate-signing-requests-with-escaped-special-characters) for using SCEP to get certificates when the subject name in the resulting Certificate Signing Request (CSR) includes one of the following characters as an escaped character (proceeded by a backslash \\):
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **User certificate type**  
 
@@ -498,6 +505,42 @@ To validate that the service is running, open a browser, and enter the following
      - Select **OK**, and **Create** your profile.
 
 The profile is created and appears on the profiles list pane.
+
+### Avoid certificate signing requests with escaped special characters
+There's a known issue for SCEP certificate requests that include a Subject Name (CN) with one or more of the following special characters as an escaped character. Subject names that include one of the special characters as an escaped character result in a CSR with an incorrect subject name which in turn results in the Intune SCEP challenge validation failing and no certificate issued.  
+
+The special characters are:
+- \+
+- ,
+- ;
+- =
+
+When your subject name includes one of the special characters, use one of the following options to work around this limitation:  
+- Encapsulate the CN value that contains the special character with quotes.  
+- Remove the special character from the CN value.  
+
+**For example**, you have a Subject Name that appears as *Test user (TestCompany, LLC)*.  A CSR that includes a CN that has the comma between *TestCompany* and *LLC* presents a problem.  The problem can be avoided by placing quotes around the entire CN, or by removing of the comma from between *TestCompany* and *LLC*:
+- **Add quotes**: *CN=*”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Remove the comma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ However, attempts to escape the comma by using a backslash character will fail with an error in the CRP logs:  
+- **Escaped comma**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+The error is similar to the following error: 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## Assign the certificate profile
 
