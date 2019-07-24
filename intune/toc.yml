@@ -5,6 +5,7 @@
   items:
   - name: What is Intune?
     href: what-is-intune.md 
+    displayName: ems; emm; azure ad; active directory; ad
   - name: What can Intune do for my company?
     href: get-started-evaluation.md   
   - name: What's new
@@ -18,6 +19,7 @@
   items:
   - name: Try Intune for free
     href: free-trial-sign-up.md    
+    displayName: tenant; trial; get started, start; help
   - name: Create a user
     href: quickstart-create-user.md
   - name: Create a group
@@ -56,6 +58,7 @@
   items:
   - name: What is device management?
     href: what-is-device-management.md
+    displayName: teamviewer
   - name: What is Intune for Education?
     href: introduction-intune-education.md      
   - name: High-level architecture
@@ -70,6 +73,7 @@
     href: byod-technology-decisions.md    
   - name: App protection policies and work profiles (Android)
     href: android-deployment-scenarios-app-protection-work-profiles.md
+    displayName: app-we; without; without enrollment
   - name: Manage operating system versions
     href: manage-os-versions.md
   - name: Manage Windows Holographic
@@ -134,6 +138,7 @@
     items:
     - name: Steps to set up Intune
       href: setup-steps.md    
+      displayName: fasttrack
     - name: Supported configurations
       href: supported-devices-browsers.md
       items:
@@ -188,6 +193,7 @@
         displayName: COD
       - name: Multi-factor authentication
         href: multi-factor-authentication.md
+        displayName: mfa; multifactor        
       - name: Device enrollment manager
         href: device-enrollment-manager-enroll.md
       - name: Map devices to groups
@@ -214,20 +220,24 @@
       items:
       - name: Set up Android enrollment
         href: android-enroll.md
+        displayName: wpj
       - name: Connect Intune to Android Enterprise
         href: connect-intune-android-enterprise.md
       - name: Android Enterprise work profile enrollment
         href: android-work-profile-enroll.md
       - name: Android Enterprise dedicated device enrollment
         href: android-kiosk-enroll.md
+        displayName: gms
       - name: Android Enterprise fully managed enrollment
         href: android-fully-managed-enroll.md
+        displayName: gms
       - name: Enroll Android Enterprise dedicated devices or fully managed devices
         href: android-dedicated-devices-fully-managed-enroll.md
       - name: Manage Android Enterprise work profile devices
         href: android-enterprise-overview.md        
       - name: Samsung Knox Mobile Enrollment 
         href: android-samsung-knox-mobile-enroll.md
+        displayName: kda; kme
     - name: Set up iOS enrollment
       href: ios-enroll.md
       items:
@@ -246,9 +256,11 @@
       href: enrollment-report-company-portal-abandon.md
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
+      displayName: sso
   - name: Manage devices
-    href: device-management.md
     items:
+    - name: Device management overview
+      href: device-management.md
     - name: Device management capabilities
       href: device-management-capabilities.md
     - name: Bypass activation lock
@@ -332,6 +344,7 @@
         href: vpn-setting-configure-per-app.md
     - name: Add a wireless Wi-Fi network
       href: wi-fi-settings-configure.md
+      displayName: wifi
       items:
       - name: Wi-Fi with a pre-shared key
         href: wi-fi-profile-shared-key.md
@@ -343,6 +356,7 @@
       href: shared-user-device-settings.md  
     - name: Mobility Extensions on Zebra devices
       href: android-zebra-mx-overview.md
+      displayName: mx
       items:
       - name: StageNow logs and common issues
         href: android-zebra-mx-logs-troubleshoot.md
@@ -361,7 +375,8 @@
   - name: Protect device data
     items:
     - name: Device protection overview
-      href: device-protect.md    
+      href: device-protect.md  
+      displayName: compliant; noncompliant; mfa 
     - name: Privacy and personal data
       href: privacy-personal-data.md
       items:
@@ -389,8 +404,10 @@
     - name: Encrypt devices
       href: encrypt-devices.md
     - name: Conditional Access
-      href: conditional-access.md
       items:
+      - name: Conditional Access overview
+        href: conditional-access.md
+        displayName: ca
       - name: Common ways to use Conditional Access
         href: conditional-access-intune-common-ways-use.md
       - name: Install Exchange on-premises connector
@@ -431,6 +448,7 @@
             items:
             - name: Better Mobile and Intune integration
               href: better-mobile-mtd-connector-integration.md
+              displayName: sso
           - name: Set up Check Point
             href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
             items:
@@ -491,14 +509,18 @@
       items:
       - name: SCEP
         href: certificates-scep-configure.md
+        displayName: ksp        
       - name: PKCS
         href: certficates-pfx-configure.md
+        displayName: ksp
       - name: Use S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
       - name: Use third-party certificate authority with SCEP
         href: certificate-authority-add-scep-overview.md
+        displayName: csr
       - name: Use DigiCert PKI
         href: certificates-digicert-configure.md
+        displayName: ca; pkcs; pki; ra; registration authority
       - name: Remove SCEP or PKCS certificates
         href: remove-certificates.md              
     - name: eSIM cellular profiles
@@ -519,6 +541,7 @@
       href: app-management.md    
     - name: Add apps
       href: apps-add.md
+      displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
       items:
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
@@ -559,6 +582,7 @@
           href: lob-apps-macos.md          
       - name: Web apps
         href: web-app.md
+        displayName: web; web link; weblink; web-link
       - name: Built-in apps
         href: apps-add-built-in.md      
       - name: PowerShell scripts
@@ -594,9 +618,11 @@
         href: app-configuration-policies-managed-app.md
       - name: Use iOS app provisioning profiles
         href: app-provisioning-profile-ios.md
-      - name: Work with volume-purchased apps and books
-        href: vpp-apps.md
+      - name: Volume-purchased apps and books
         items:
+        - name: Manage VPP apps and books
+          href: vpp-apps.md
+          displayName: vpp; volume purchased
         - name: iOS VPP apps
           href: vpp-apps-ios.md
         - name: Microsoft Store for Business apps
@@ -616,11 +642,15 @@
       - name: Selectively wipe apps
         href: apps-selective-wipe.md
       - name: Use app protection policies
-        href: app-protection-policy.md
         items:
+        - name: Understand app protection policies
+          href: app-protection-policy.md
+          displayName: app; protection; policy
         - name: Create app protection policies
-          href: app-protection-policies.md
           items:
+          - name: General settings
+            href: app-protection-policies.md
+            displayName: dlp; data loss prevention
           - name: Android settings
             href: app-protection-policy-settings-android.md
           - name: iOS settings
@@ -877,6 +907,7 @@
         href: app-sdk-ios.md
       - name: App Wrapping Tool for Android
         href: app-wrapper-prepare-android.md
+        displayName: dex
       - name: Intune App SDK for Android
         href: app-sdk-android.md
         items:
