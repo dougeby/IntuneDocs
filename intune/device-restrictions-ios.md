@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/23/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -268,17 +268,14 @@ To add apps to these lists, you can:
   You can also show or hide built-in apps and line-of-business apps by entering the Bundle ID and app name. For a list of built-in apps you can hide, see [built-in Apple apps](https://support.apple.com/HT208094) (opens Apple's web site).
 
 > [!IMPORTANT]  
-> For devices running iOS 12.3.1 and earlier, use ***iTunes*** instead of ***apps*** for the apple.com portion of the URL. Use of *apps* will fail. We are working on a fix for this in a future release. When fixed, you'll be able to use either *iTunes* or *apps* in the URL.  
+> For all supported iOS versions, use `iTunes` with the `apple.com` portion of the URL. If you use `apps`, it fails. This is a known issue, and is being fixed in a future release. When fixed, you can use `iTunes` or `apps` in the URL.
 >  
-> Example for MS Word:  
+> MS Word example:  
 > - With the following URL, the app is *visible* or *hidden* on the device (works): 
 >   - https://**itunes**.apple.com/de/app/microsoft-word/id586447913  
 >
 > - With the following URL, the app isn't *visible* or *hidden* on the device (doesn't work): 
->   - https://**apps**.apple.com/de/app/microsoft-word/id586447913  
-
- 
-
+>   - https://**apps**.apple.com/de/app/microsoft-word/id586447913 
 
 ## Wireless
 

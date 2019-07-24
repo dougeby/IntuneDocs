@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 07/22/2019
 
 ms.topic: conceptual
 ms.service: microsoft-intune
@@ -58,6 +58,17 @@ To use Microsoft Defender ATP with Intune, be sure you have the following config
 
 ## Enable Microsoft Defender ATP in Intune
 
+When you integrate a new application to Intune Mobile Threat Defense and enable the connection, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, like [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy.  These policies can be ignored, but should not be edited, deleted, or disabled.
+
+Classic conditional access policies for MTD apps: 
+
+- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID. The ID is required so that devices and can successfully report their status to Intune.  
+- Are distinct from conditional access policies you might create to help manage MTD.
+- By default, don’t interact with other conditional access policies you use for evaluation.  
+
+To view classic conditional access policies, in [Azure](https://portal.azure.com/#home), go to **Azure Active Directory** > **Conditional Access** > **Classic policies**.
+
+### To enable Defender ATP
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Microsoft Defender ATP**, and then below *Connector Settings*, select **Open the Microsoft Defender Security Center**.
 
