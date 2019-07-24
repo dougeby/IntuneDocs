@@ -47,7 +47,7 @@ Collect the following information about the problem:
 
 ## Error messages
 
-### "Profile Installation Failed. A Network Error Has Occurred."
+### Profile Installation Failed. A Network Error Has Occurred.
 
 **Cause:** There's an unspecified problem with iOS on the device.
 
@@ -56,7 +56,7 @@ Collect the following information about the problem:
 2. Put the device in recovery mode and then restore it. Make sure that you set it up as a new device. For more information about how to restore iOS devices, see [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
 3. Re-enroll the device.
 
-### "Profile Installation Failed. Connection to the server could not be established."
+### Profile Installation Failed. Connection to the server could not be established.
 
 **Cause:** Your Intune tenant is configured to only allow corporate-owned devices. 
 
@@ -68,7 +68,7 @@ Collect the following information about the problem:
 5. Select **Configure platforms**, select **Allow** for personally owned iOS devices, and then click **OK**.
 6. Re-enroll the device.
 
-### "This Service is not supported. No Enrollment Policy."
+### This Service is not supported. No Enrollment Policy.
 
 **Cause**: An Apple MDM push certificate isn't configured in Intune, or the certificate is invalid. 
 
@@ -77,7 +77,7 @@ Collect the following information about the problem:
 - If the MDM push certificate isn't configured, follow the steps in [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
 - If the MDM push certificate is invalid, follow the steps in [Renew Apple MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
 
-### "Company Portal Temporarily Unavailable. The Company Portal app encountered a problem. If the problem persists, contact your system administrator."
+### Company Portal Temporarily Unavailable. The Company Portal app encountered a problem. If the problem persists, contact your system administrator.
 
 **Cause:** The Company Portal app is out of date or corrupted.
 
