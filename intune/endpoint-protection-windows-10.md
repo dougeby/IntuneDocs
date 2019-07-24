@@ -1565,6 +1565,52 @@ Use these options to configure the local security settings on Windows 10 devices
   - **Enable** - The Microsoft network server doesn't communicate with a Microsoft network client unless that client agrees to SMB packet signing.  
   - **Not configured** - SMB packet signing is negotiated between the client and server.  
 
+## Xbox services
+
+- **Xbox Game Save Task**  
+  **Default**: Not configured  
+  CSP: [TaskScheduler/EnableXboxGameSaveTask](https://go.microsoft.com/fwlink/?linkid=875480)  
+   
+  This setting determines whether the Xbox Game Save Task is Enabled or Disabled.  
+  - **Enabled**
+  - **Not configured**
+
+- **Xbox Accessory Management Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875481)  
+
+  This setting determines the Accessory Management Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+
+- **Xbox Live Auth Manager Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875482)  
+ 
+  This setting determines the Live Auth Manager Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+ 
+- **Xbox Live Game Save Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875483)  
+
+  This setting determines the Live Game Save Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+
+- **Xbox Live Networking Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875484)  
+
+  This setting determines the Networking Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+
 ## Next steps
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).  
