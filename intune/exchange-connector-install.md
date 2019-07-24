@@ -162,7 +162,7 @@ To accomplish failover, after the connector creates a successful connection to E
 
 When you support 5,000 or more devices with Exchange ActiveSync, you can configure an optional setting to improve the performance of the connector. Increased performance is achieved by enabling Exchange to use multiple instances of a PowerShell command run-space. 
 
-Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. This is because Exchange has a limit of 18 run-spaces per account, most of which will be used by the connector. 
+Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. This is because Exchange has a limited number of run-spaces per account, most of which will be used by the connector. 
 
 This performance change isn't suitable for connectors that run on older or slower hardware.  
 

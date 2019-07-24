@@ -31,7 +31,11 @@ ms.collection: M365-identity-device-management
 
 # Enroll device with Android work profile
 
-Enroll your personal Android device to get access to company email, apps, and other work data. During enrollment, you'll set up an Android work profile. This profile separates the personal data on your device from your work data. Your company support only manages the work profile, which consists of work files and data. Your company support can't manage the personal data on your device. Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).  
+Enroll your personal Android device to get access to company email, apps, and other work data. During enrollment, you'll set up an Android work profile. This profile separates the personal data on your device from your work data. Your company support only manages the work profile, which consists of work files and data. Your company support can't manage the personal data on your device.
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI]
+
+Find out more about [what happens when you create a work profile](what-happens-when-you-create-a-work-profile-android.md).
 
 ## Create work profile and enroll device
 
