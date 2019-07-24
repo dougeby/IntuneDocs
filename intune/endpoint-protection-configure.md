@@ -66,7 +66,7 @@ When you plan for profiles with custom Firewall rules, consider the following in
 - For each profile, if a single rule fails to apply, all rules in that profile are failed and none of the rules are applied to the device.  
 - When a rule fails to apply, all rules in the profile are reported as failed. Intune cannot identify which individual rule failed.  
 
-The Firewall rules that Intune can manage are detailed in the Windows [Firewall configuration service provider]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP). To review the list of custom firewall settings for Windows 10 devices that Intune supports, see [Custom Firewall rules](endpoint-protection-windows-10.md#custom-firewall-rules).  
+The Firewall rules that Intune can manage are detailed in the Windows [Firewall configuration service provider]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) (CSP). To review the list of custom firewall settings for Windows 10 devices that Intune supports, see [Custom Firewall rules](endpoint-protection-windows-10.md#firewall-rules).  
 
 ### To add custom firewall rules to an Endpoint protection profile  
 
