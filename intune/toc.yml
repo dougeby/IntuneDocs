@@ -671,7 +671,7 @@
       href: tenant-status.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot
+      - name: Troubleshoot enrollment
         items:
           - name: Troubleshoot iOS device enrollment
             href: troubleshoot-ios-enrollment-errors.md
