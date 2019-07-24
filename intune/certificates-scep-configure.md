@@ -30,6 +30,7 @@ ms.collection: M365-identity-device-management
 Intune supports use of the Simple Certificate Enrollment Protocol (SCEP) to [authenticate connections to your corporate resources](certificates-configure.md). SCEP uses the Certification Authority (CA) certificate in order to secure the message exchange for the Certificate Signing Request (CSR). When your infrastructure supports SCEP, you can use Intune *SCEP certificate* profiles (a type of device profile in Intune) to deploy the certificates to your devices. The Intune Certificate Connector is required to use SCEP certificate profiles with Intune.
 
 The information in this article can help you configure your infrastructure to support SCEP. After your infrastructure is configured, you can [create and deploy SCEP certificate profiles](certificates-profile-scep.md) with Intune.  
+>>> ac2c1bddac96d05a341fcc98daf438653476e9af
 
 > [!TIP]  
 > Intune also supports use of [Public Key Cryptography Standards #12 certificates](certficates-pfx-configure.md) to authenticate connections from users.  

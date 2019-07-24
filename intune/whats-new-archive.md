@@ -530,7 +530,7 @@ You can now use Volume Purchase Program (VPP) device licenses to pre-provision t
 A confirmation is now required to delete a Volume Purchase Program (VPP) token if it is being used to pre-provision the Company Portal during DEP enrollment.
 
 #### Block Windows personal device enrollments <!-- 1849498 -->
-You can [block Windows personal devices](enrollment-restrictions-set.md#set-device-type-restrictions) from enrolling with [mobile device management](windows-enroll.md) in Intune. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature. This feature is rolling out over the next couple weeks so you might not see it immediately in the user interface.
+You can [block Windows personal devices](enrollment-restrictions-set.md) from enrolling with [mobile device management](windows-enroll.md) in Intune. Devices enrolled with [Intune PC agent](manage-windows-pcs-with-microsoft-intune.md) can't be blocked with this feature. This feature is rolling out over the next couple weeks so you might not see it immediately in the user interface.
 
 #### Specify machine name patterns in an Autopilot profile <!--1849855-->
 You can [specify a computer name template](enrollment-autopilot.md#create-an-autopilot-deployment-profile) to generate and set the [computer name](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) during Autopilot enrollment. Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
@@ -2159,8 +2159,8 @@ In this release, we’ve added new settings for the [Windows 10 device restricti
 <!--1459533 -->    
 In this release, we’ve made the following improvements to how BitLocker settings work in a Windows 10 endpoint protection device profile:
  
-- Under **Bitlocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
-- Under **Bitlocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
+- Under **BitLocker OS drive settings**, for the setting **BitLocker with non-compatible TPM chip**, when you select **Block**, previously, this would cause BitLocker to actually be allowed. We have now fixed this to block BitLocker when it is selected.
+- Under **BitLocker OS drive settings**, for the setting **Certificate-based data recovery agent**, you can now explicitly block the certificate-based data recovery agent. By default, however, the agent is allowed.
 - Under **BitLocker fixed data-drive settings**, for the setting **Data recovery agent**, you can now explicitly block the data recovery agent.
 For more information, see [Endpoint protection settings for Windows 10 and later](endpoint-protection-windows-10.md).
 

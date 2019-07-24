@@ -200,5 +200,5 @@ Intune can run either a full or quick malware scan by using Endpoint Protection 
 ## Need more help?
 For further help and support, see [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md).
 
-### See Also
+## See also
 [Policies to protect Windows PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
