@@ -18,8 +18,8 @@ Android device administrator (sometimes referred to “legacy” Android managem
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways: 
 - Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through Summer 2020. This date is when the next major version of Android is expected to release.  
-- Device administrator-managed devices that are running Android 10 or later after summer 2020 can no longer be fully managed.    
-- Device administrator-managed Android devices that remain on Android versions below Android 10 are not impacted and can continue to be fully managed with device administrator.  
+- Device administrator-managed devices that are running Android 10 or later after summer 2020 will no longer be able to be fully managed.    
+- Device administrator-managed Android devices that remain on Android versions below Android 10 will not be impacted and can continue to be fully managed with device administrator.  
 - For all Android 10 and later devices, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This impacts the following Intune features after a device updates to Android 10 or later: 
     - Network access control for VPN will no longer work.  
     - Identifying devices as corporate-owned with IMEI or serial number will not automatically mark devices as corporate-owned. 
@@ -28,7 +28,7 @@ Because of these changes by Google, Intune users will be impacted in the followi
         > This only impacts device administrator-managed devices on Android 10 and later, and does not affect devices being managed as Android Enterprise. 
 
 #### What do I need to do to prepare for this change?
-To avoid the reduction in functionality coming in Summer 2020 from Google, we recommend the following:
+To avoid the reduction in functionality coming in Summer 2020, we recommend the following:
 - Don’t onboard new devices into device administrator management.
 - If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.
 
