@@ -28,8 +28,6 @@ ms.collection: M365-identity-device-management
 
 # Troubleshoot iOS device enrollment problems in Microsoft Intune
 
-This article is only intended for Intune administrators, technical support agents, and IT professionals. If you're an end user looking for help with an Intune enrollment problem, you can [ask the Microsoft Community](https://answers.microsoft.com).
-
 This article helps Intune administrators understand and troubleshoot problems when enrolling iOS devices in Intune.
 
 ## Prerequisites
@@ -199,5 +197,5 @@ Disable MFA, and then re-enroll the device.
 
 - [Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
 - [Ask a question on the Intune forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
-- [Check the Microsoft Intune Support Team Blog](https://blogs.technet.microsoft.com/intunesupport/)
-- [Check the Microsoft Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/2017/02/22/announcing-the-public-preview-of-azure-ad-group-based-license-management-for-office-365-and-more/)
+- [Check the Microsoft Intune Support Team Blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
+- [Check the Microsoft Enterprise Mobility and Security Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
