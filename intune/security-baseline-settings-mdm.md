@@ -1781,7 +1781,7 @@ For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   **Default**: Yes
 
 - **Configure Windows Hello for Business**   
-    Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.
+    Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 

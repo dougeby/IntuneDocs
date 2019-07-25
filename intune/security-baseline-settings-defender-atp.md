@@ -605,7 +605,7 @@ For more information, see [Firewall CSP](https://docs.microsoft.com/windows/clie
 For more information, see [PassportForWork CSP](https://docs.microsoft.com/windows/client-management/mdm/passportforwork-csp) in the Windows documentation.
 
 - **Configure Windows Hello for Business** - *TenantId/Policies/UsePassportForWork*    
-  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.
+  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
 
   - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
   - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
