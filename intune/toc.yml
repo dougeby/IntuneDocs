@@ -701,6 +701,10 @@
       href: tenant-status.md
     - name: Troubleshoot
       items:
+      - name: Troubleshoot enrollment
+        items:
+          - name: Troubleshoot iOS device enrollment
+            href: troubleshoot-ios-enrollment-errors.md
       - name: Help users troubleshoot problems
         href: help-desk-operators.md
       - name: Troubleshoot company resource access problems
