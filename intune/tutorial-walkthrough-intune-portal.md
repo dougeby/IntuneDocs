@@ -5,10 +5,10 @@ title: Tutorial - Walkthrough Intune in the Azure portal
 titleSuffix: Microsoft Intune
 description: In this tutorial, you will tour Microsoft Intune to better understand how to accomplish tasks.
 keywords:
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/28/2019
+ms.date: 07/24/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.localizationpriority: high
