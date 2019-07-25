@@ -110,7 +110,7 @@ Collect the following information about the problem:
 **Cause:** The user who is trying to enroll the device does not have a valid Intune license.
 
 #### Resolution
-1. Go to the [Office 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
+1. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
 2. Select the affected user account > **Product licenses** > **Edit**.
 3. Verify that a valid Intune license is assigned to this user.
 4. Re-enroll the device.
@@ -119,7 +119,7 @@ Collect the following information about the problem:
 
 **Cause:** The user who is trying to enroll the device does not have a valid Intune license.
 
-1. Go to the [Office 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
+1. Go to the [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage), and then choose **Users** > **Active Users**.
 2. Select the affected user account, and then choose **Product licenses** > **Edit**.
 3. Verify that a valid Intune license is assigned to this user.
 4. Re-enroll the device.
