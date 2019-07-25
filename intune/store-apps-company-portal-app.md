@@ -59,18 +59,16 @@ To manage devices and install apps, your users can install the Company Portal ap
     This action must be completed for x86, x64, and ARM architectures:<br> 
     *There are 9 Required Framework Packages when selecting 1507 as the minimum OS Version, 12 packages when selecting 1511, and 15 packages when selecting 1607.*
 
-8. Before you upload the Company Portal app to Intune, create a folder (for example: C:\Company Portal) with the packages structured in the following way:
-   - Place the Company Portal package into C:\Company Portal. Create a *Dependencies* subfolder in this location as well.  
+8. In Microsoft Intune in the Azure portal, upload the Company Portal app as a new app. You add the application by selecting Line-of-business app as the App type in the Add app pane. You then select the app package file (extension .AppxBundle).
 
-     ![Dependencies folder saved with APPXBUN file](./media/Win10CP-Dependencies-save.png)
-
-   - Place the dependency packages in the *Dependencies* folder. 
+9. Under 'Select dependency app files' select all the dependecies you downloaded in step 7 by using shift-click, and verify that the 'Added' column displays Yes for the architectures you need.
 
      > [!NOTE]
-     > If the dependencies are not placed in the correct format, Intune cannot recognize and upload the files during the package upload, which causes the upload to fail and display and error.
+     > If the dependecies are not added, the app might not install on the specified device types
 
-9. In Microsoft Intune in the Azure portal, upload the Company Portal app as a new app. 
-10. Assign the Company Portal app as a required app to your selected set of target users.  
+10. Click Ok, enter in any desired App Information, and click Add
+
+11. Assign the Company Portal app as a required app to your selected set of user or device groups.  
 
 For more information about how Intune handles dependencies for Universal apps, see [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/).  
 

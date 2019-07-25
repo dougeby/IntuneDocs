@@ -66,6 +66,7 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
   - **Block copy and paste between PC and browser**  
 
 - **Clipboard content**  
+  This setting is available only when *Clipboard behavior* is set to one of the *allow* settings.  
   **Default**: Not configured  
   Application Guard CSP: [Settings/ClipboardFileType](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#clipboardfiletype)  
 
@@ -89,11 +90,13 @@ Application Guard is only available for Windows 10 (64-bit) devices. Using this 
   - **Allow** - Allows the printing of selected content from the virtual browser.  
   - **Not configured** Disable all print features.  
 
-  When you *Allow* printing, you then select one or more of the following options:  
-  - PDF  
-  - XPS  
-  - Local printers
-  - Network printers  
+  When you *Allow* printing, you then can configure the following setting:
+  - **Printing type(s)**
+    Select one or more of the following options:  
+    - PDF  
+    - XPS  
+    - Local printers
+    - Network printers  
 
 - **Collect logs**  
   **Default**: Not configured  
@@ -298,7 +301,7 @@ The following settings are each listed in this article a single time, but all ap
   - **Block** -  The connection security rules from the local store are ignored and not enforced, regardless of the schema version and connection security rule version.  
   - **Allow** - Apply connection security rules from the local store, regardless of schema or connection security rule versions.  
 
-### Custom firewall rules  
+### Firewall rules  
 ***Custom firewall rules are in Public Preview.***  
 
 You can **Add** one or more custom Firewall rules. For more information, see [Add custom firewall rules for Windows 10 devices](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices).  
@@ -988,7 +991,8 @@ Choose additional apps that either need to be audited by, or can be trusted to r
   
     After being enabled on a device, Application Control can only be disabled by changing the mode from *Enforce* to *Audit only*. Changing the mode from *Enforce* to *Not Configured* results in Application Control continuing to be enforced on assigned devices.  
 
-  - **Not Configured** - Application Control is not added to devices. However, settings that were previously added continue to be enforced on assigned devices.  
+  - **Not Configured** - Application Control is not added to devices. However, settings that were previously added continue to be enforced on assigned devices. 
+ 
   - **Audit only** - Applications aren't blocked. All events are logged in the local client's logs.  
 
 ## Windows Defender Credential Guard  
@@ -1564,6 +1568,52 @@ Use these options to configure the local security settings on Windows 10 devices
 
   - **Enable** - The Microsoft network server doesn't communicate with a Microsoft network client unless that client agrees to SMB packet signing.  
   - **Not configured** - SMB packet signing is negotiated between the client and server.  
+
+## Xbox services
+
+- **Xbox Game Save Task**  
+  **Default**: Not configured  
+  CSP: [TaskScheduler/EnableXboxGameSaveTask](https://go.microsoft.com/fwlink/?linkid=875480)  
+   
+  This setting determines whether the Xbox Game Save Task is Enabled or Disabled.  
+  - **Enabled**
+  - **Not configured**
+
+- **Xbox Accessory Management Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875481)  
+
+  This setting determines the Accessory Management Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+
+- **Xbox Live Auth Manager Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875482)  
+ 
+  This setting determines the Live Auth Manager Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+ 
+- **Xbox Live Game Save Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875483)  
+
+  This setting determines the Live Game Save Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
+
+- **Xbox Live Networking Service**  
+  **Default**: Manual  
+  CSP: [SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode](https://go.microsoft.com/fwlink/?linkid=875484)  
+
+  This setting determines the Networking Service's start type.  
+  - **Manual**
+  - **Automatic**
+  - **Disabled**
 
 ## Next steps
 
