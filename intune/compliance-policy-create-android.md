@@ -81,7 +81,7 @@ As an Intune administrator, use these compliance settings to help protect your o
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
 - **Minimum password length**: Enter the minimum number of digits or characters that the user's password must have.
 - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
-  - **Device Default**
+  - **Device Default**: In order for password compliance to be evaluated, you must select a password strength other than "Device Default."  
   - **Low security biometric**
   - **At least numeric** (default)
   - **Numeric complex**: Repeated or consecutive numerals, such as `1111` or `1234`, aren't allowed.
