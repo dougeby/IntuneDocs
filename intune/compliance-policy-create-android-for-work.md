@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -60,7 +60,7 @@ As an Intune administrator, use these compliance settings to help protect your o
   This setting is applied at the device level. If you only need to require a password at the work profile level, then use a configuration policy. See [Android Enterprise device configuration settings](device-restrictions-android-for-work.md).
 
   - **Required password type**: Choose if a password should include only numeric characters, or a mix of numerals and other characters. Your options:
-    - **Device default**
+    - **Device default**: To evaluate password compliance, be sure to select a password strength other than **Device default**.  
     - **Password required, no restrictions**
     - **Weak biometric**: [Strong vs. weak biometrics](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (opens Android's web site)
     - **Numeric** (default): Password must only be numbers, such as `123456789`. Enter the **minimum password length** a user must enter, between 4 and 16 characters.
