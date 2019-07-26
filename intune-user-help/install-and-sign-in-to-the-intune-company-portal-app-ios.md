@@ -37,7 +37,7 @@ Install the Company Portal app on your iOS device to get access to your work and
 
 2. Download the **Intune Company Portal** app.
 
-    ![Screenshot of how the Intune Company Portal app appears in the App Store.](./media/cp-ios-redesign-after-1904.PNG)
+    ![Screenshot of how the Intune Company Portal app appears in the App Store.](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. Open the Company Portal app, enter your work or school email address and password, and then tap **Sign in**.
 
