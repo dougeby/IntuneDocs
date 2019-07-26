@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -34,13 +34,22 @@ Intune **discovered apps** is a list of detected apps on the Intune enrolled dev
 
 ## Monitor discovered apps with Intune
 
-Intune provides a list of detected apps on the Intune enrolled devices in your tenant.
+Intune provides an aggregated list of detected apps on the Intune enrolled devices in your tenant.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In the **Intune** pane, select **Client apps** > **Discovered apps**.
 
 >[!NOTE]
 >You can export the list of discovered apps to a .csv file by selecting **Export** from the **Discovered apps** blade.
+>
+>For discovered Win32 apps, there currently is no aggregate count. This type of data can only be viewed on a per-device basis.
+
+Intune also provides the list of discovered apps for the individual device in your tenant. 
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. In the Intune pane, select **Devices** > **All Devices**.
+3. Select a device.
+4. To view detected apps for this device, select **Discovered Apps** in the **Monitor** section. 
 
 ## Details of discovered apps
 
