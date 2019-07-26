@@ -46,19 +46,19 @@ Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may no
 - iPhone 5c
 - iPad (4th Generation)
 
-Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP) you can also set the “Require minimum iOS operating system (Warning only)” access setting.
+Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP), you can also set the “Require minimum iOS operating system (Warning only)” access setting.
 
 #### What do I need to do to prepare for this change?
 Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.
 
 ### Plan for Change: Support for version 8.1.1 and higher of Intune App SDK for iOS <!-- 3586942-->
-Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13 which is expected to come around September and also been announced in MC181399.
+Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13, which is expected to come around September and also been announced in MC181399.
 
 #### How does this affect me?
 With Intune App SDK or App Wrapping integration, you can protect corporate data from unapproved applications and users via data encryption. The Intune App SDK for iOS will use 256-bit encryption keys by default when encryption is enabled by Intune App Protection Policies (APP). After this change, any iOS apps on SDK versions prior to 8.1.1, which use 128-bit encryption keys, will no longer be able to share data with applications integrated with SDK 8.1.1 or using the 256-bit keys. All iOS apps will need to have an SDK version 8.1.1 or higher to allow protected data sharing.
 
 #### What can I do to prepare for this change?
-Check your Microsoft, third-party, and line-of-business (LOB) apps. You should ensure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
+Check your Microsoft, third-party, and line-of-business (LOB) apps. Make sure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
 
 - For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For information on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
 - For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
@@ -69,7 +69,7 @@ You should also update your documentation or developer guidance if applicable to
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
 
 ### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
-Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings” which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
+Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
 
 #### How does this affect me?
 If you manage Windows 10 devices in your environment: 
@@ -78,7 +78,7 @@ If you manage Windows 10 devices in your environment:
 - Deadline settings will replace the “Allow user to restart (engaged restart) option in the console in the 1910 update.
 
 #### What can I do to prepare for this change?
-Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged restart setting to “Not configured” to prepare for these being removed from the console in October.
+Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged restart setting to “Not configured” to prepare for these settings being removed from the console in October.
 
 Update your documentation and any automation scripts if needed. 
 
@@ -88,9 +88,9 @@ We’ll keep you updated and post a reminder to the Message center before we rem
 Intune will be moving to support Android 5.x (Lollipop) and higher in October. Update any wrapped apps with the latest Intune App SDK and update your devices.
 
 #### How does this affect me?
-If you’re not using or plan to use either the SDK or APP for Android, this won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time. 
+If you’re not using or plan to use either the SDK or APP for Android, this change won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time. 
 
-Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices,  take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. Note that this list is not exhaustive of all devices that may need to be evaluated:
+Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices,  take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. This list is not exhaustive of all devices that may need to be evaluated:
 - Samsung SM-T561  
 - Samsung SM-T365 
 - Samsung GT-I9195 
