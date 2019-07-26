@@ -40,7 +40,8 @@ To be successful, you use the following configurations in concert:
 
 In addition, when you integrate Intune with Microsoft Defender ATP, you can take advantage of ATPs Threat & Vulnerability Management (TVM) and [use Intune to remediate endpoint weakness identified by TVM](atp-manage-vulnerabilities.md).
 
-## Example of using Microsoft Defender ATP with Intune
+## Example of using Microsoft Defender ATP with Intune  
+
 The following example helps explain how these solutions work together to help protect your organization. For this example, Microsoft Defender ATP and Intune are already integrated.  
 
 Consider an event where someone sends a Word attachment with embedded malicious code to a user within your organization.  
@@ -66,7 +67,8 @@ To use Microsoft Defender ATP with Intune, be sure you have the following config
 
 The first step you take is to set up the service-to-service connection between Intune and Microsoft Defender ATP. This requires administrative access to both the Microsoft Defender Security Center, and to Intune.  
 
-### To enable Defender ATP
+### To enable Defender ATP  
+
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Microsoft Defender ATP**, and then below *Connector Settings*, select **Open the Microsoft Defender Security Center**.
 
@@ -175,14 +177,16 @@ The Conditional Access policy blocks access to resources for devices that exceed
 
 
 
-## Monitor device compliance
+## Monitor device compliance  
+
 Next, monitor the state of devices that have the Microsoft Defender ATP compliance policy.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device compliance** > **Policy compliance**.
 3. Find your Microsoft Defender ATP policy in the list, and see which devices are compliant or noncompliant.
 
-## Next steps:
+## Next steps  
+
 [Microsoft Defender ATP Conditional Access](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/conditional-access)   
 [Microsoft Defender ATP risk dashboard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)  
 [Use security tasks with ATPs Vulnerability Management to remediate issues on devices](atp-manage-vulnerabilities.md).  
