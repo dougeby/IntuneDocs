@@ -83,3 +83,22 @@ Start using the deadline settings in 1908 by configuring them with your desired 
 Update your documentation and any automation scripts if needed. 
 
 We’ll keep you updated and post a reminder to the Message center before we remove the engaged restart settings.
+
+### Plan for change: Intune App SDK and app protection policies for Android moving to support Android 5.0 and higher in October <!--4911065 -->
+Intune will be moving to support Android 5.x (Lollipop) and higher in October. Update any wrapped apps with the latest Intune App SDK and update your devices.
+
+#### How does this affect me?
+If you’re not using or plan to use either the SDK or APP for Android, this won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, , and the quality of their experience will diminish over time. 
+
+Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices,  take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. Note that this list is not exhaustive of all devices that may need to be evaluated:
+- Samsung SM-T561  
+- Samsung SM-T365 
+- Samsung GT-I9195 
+- Samsung SM-G800F
+- Samsung SM-G357FZ
+- Motorola XT1080
+- Samsung GT-I9305
+- Samsung SM-T231
+
+#### What do I need to do to prepare for this change?
+Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
