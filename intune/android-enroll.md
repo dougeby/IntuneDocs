@@ -46,22 +46,6 @@ To prepare to manage mobile devices, you must set the mobile device management (
 
 For devices manufactured by Zebra Technologies, you may need to grant the Company Portal additional permissions depending on the capabilities of the specific device. [Mobility Extensions on Zebra devices](android-zebra-mx-overview.md) has more details.
 
-
-
-## End user experience when enrolling a Samsung Knox device
-
-Samsung Knox Standard devices are supported for multi-user management by Intune. This means that users can sign in and out of a device with their Azure AD credentials. The device is centrally managed whether it’s in use or not. When users sign in, they have access to apps and additionally get any policies applied to them. When users sign out all app data is cleared.
-
-There are several considerations when enrolling Samsung Knox devices:
-- Even if no policies require a PIN, the device must have at least a four-digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
-- There is no user interaction for Workplace Join Certificates (WPJ).
-- The user is prompted with Service Enrollment info and what the app can do.
-- The user is prompted with Knox Enrollment info and what Knox can do.
-- If an Encryption Policy is enforced, users are required to set a six Character Complex password for the device passcode.
-- There are no additional user prompts to install certificates pushed by a service for Company Resource Access.
-- Some older Knox devices will prompt the user for additional certificates used for Company Resource Access.
-- If a Samsung Mini device fails to install the WPJ with either the **Certificate Not Found** or **Unable to Register Device** errors, install the latest Samsung Firmware Updates.
-
 ## Next steps
 
 - [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
