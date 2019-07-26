@@ -36,7 +36,7 @@ To be successful, you use the following configurations in concert:
 - **Establish a service-to-service connection between Intune and Microsoft Defender ATP**. This connection lets Microsoft Defender ATP collect data about machine risk from Windows 10 devices you manage with Intune.  
 - **Use a device configuration profile to onboard devices with Microsoft Defender ATP**. You onboard devices to configure them to communicate with Microsoft Defender ATP and to provide data that helps assess their risk level.  
  - **Use a device compliance policy to set the level of risk you want to allow**. Risk levels are reported by Microsoft Defender ATP.  Devices that exceed the allowed risk level are identified as non-compliant.  
-- U**se a conditional access policy** to block users from accessing corporate resources from devices that are non-compliant.  
+- **Use a conditional access policy** to block users from accessing corporate resources from devices that are non-compliant.  
 
 In addition, when you integrate Intune with Microsoft Defender ATP, you can take advantage of ATPs Threat & Vulnerability Management (TVM) and [use Intune to remediate endpoint weakness identified by TVM](atp-manage-vulnerabilities.md).
 
