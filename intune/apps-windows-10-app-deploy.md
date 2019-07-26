@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,7 +45,7 @@ Windows 10 LOB apps are signed and uploaded to the Intune admin console and can 
 
 ## Microsoft Store for Business apps
 
-Microsoft Store for Business apps that are modern apps purchased from the Microsoft Store for Business admin portal and are then synced over to Microsoft Intune for management. The apps can either be **online licensed** or **offline licensed**. Updates of Microsoft Store for Business apps are managed directly by the Microsoft Store, with no additional action required by the admin. The admin can also prevent updates to specific apps using custom Uniform Resource Identifier (URI). For more information, see [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). On the device, the end user can also disable updates for all Microsoft Store for Business apps on the device. 
+Microsoft Store for Business apps are modern apps purchased from the Microsoft Store for Business admin portal and are then synced over to Microsoft Intune for management. The apps can either be **online licensed** or **offline licensed**. Updates of Microsoft Store for Business apps are managed directly by the Microsoft Store, with no additional action required by you, the admin. You can also prevent updates to specific apps using a custom Uniform Resource Identifier (URI). For more information, see [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). On the device, the end user can also disable updates for all Microsoft Store for Business apps on the device. 
 
 ## Installing apps on Windows 10 devices
 Depending on the app type, the app can be installed on a Windows 10 device in one of two ways:
