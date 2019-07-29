@@ -83,7 +83,7 @@ Applies to: Windows 10 and later
 #### Use tokens to add device-specific information in custom profiles for iOS and macOS devices <!-- 3330008  -->
 You can use custom profiles on iOS and macOS devices to configure settings and features not built in to Intune (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform > **Custom** for profile type). In this update, you can add tokens to your `.mobileconfig` files to add device-specific information. For example, you can add `Serial Number: {{serialnumber}}` to your configuration file to show the serial number of the device.
 
-To create a custom profile, see [iOS custom settings](custom-settings-ios.md) or [macOS customer settings](custom-settings-macos.md).
+To create a custom profile, see [iOS custom settings](custom-settings-ios.md) or [macOS custom settings](custom-settings-macos.md).
 
 Applies to:
 - iOS
