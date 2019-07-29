@@ -132,9 +132,9 @@ You can change the settings for an enrollment restriction by following the steps
 
 
 ## Blocking personal Android devices
-- If you block personally owned Android devices from enrollment, personally owned Android Enterprise work profile devices can still enroll.
-- By default, your Android Enterprise work profile devices settings are the same as your settings for your Android devices. After you change your Android Enterprise work profile settings, that's no longer the case.
-- If you block personal Android Enterprise work profile enrollment, only corporate Android devices can enroll as Android work profile.
+- If you block personally owned Android device administrator devices from enrollment, personally owned Android Enterprise work profile devices can still enroll.
+- By default, your Android Enterprise work profile devices settings are the same as your settings for your Android device administrator devices. After you change your Android Enterprise work profile or your Android device administrator settings, that's no longer the case.
+- If you block personal Android Enterprise work profile enrollment, only corporate Android devices can enroll with Android Enterprise work profiles.
 
 ## Blocking personal Windows devices
 If you block personally owned Windows devices from enrollment, Intune checks to make sure that each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.
