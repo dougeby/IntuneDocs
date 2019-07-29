@@ -46,6 +46,8 @@ To prepare to manage mobile devices, you must set the mobile device management (
 
 For devices manufactured by Zebra Technologies, you may need to grant the Company Portal additional permissions depending on the capabilities of the specific device. [Mobility Extensions on Zebra devices](android-zebra-mx-overview.md) has more details.
 
+For Samsung Knox Standard devices, there are [more prerequisites](android-samsung-knox-mobile-enroll.md).
+
 ## Next steps
 
 - [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
