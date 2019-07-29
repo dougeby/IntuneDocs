@@ -62,7 +62,7 @@ Error 80180003: "Something went wrong. This user is not authorized to enroll. Yo
 There are several possible solutions to this issue:
 
 ##### Remove devices that were enrolled
-1. Sign in to the [Azure Intune portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
+1. Sign in to the [Azure portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).    
 2. Go to **Users** > **All Users**.    
 3. Select the affected user account, and then click **Devices**.    
 4. Select any unused or unwanted devices, and then click **Delete**. 
@@ -72,12 +72,12 @@ There are several possible solutions to this issue:
 > [!NOTE]
 > This method increases the device enrollment limit for all users, not just the affected user.
 
-1. Sign in to the [Azure Intune portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
+1. Sign in to the [Azure portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview).
 2. Go to **Device Enrollment** > **Enrollment Restrictions**, and then select **Device Limit Restrictions**.    
 3. Increase the value of **Device Limit**. 
 
 ##### Check device type restrictions
-1. Sign in to the [Intune Azure Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) with a global administrator account.
+1. Sign in to the [Intune Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) with a global administrator account.
 2. Go to **Device Enrollment** > **Enrollment Restrictions**, and then select the **Default** restriction under **Device Type Restrictions**.    
 3. Select **Platforms**, and then select **Allow** for **Windows (MDM)**.
 
@@ -156,7 +156,7 @@ Go to the [Microsoft 365 Admin Center](https://portal.office.com/adminportal/ho
   4. Choose **Save**.    
 
 
-### Something went wrong
+### Something went wrong.
 
 Error 80180026: "Something went wrong. Confirm you are using the correct sign-in information and that your organization uses this feature. You can try to do this again or contact your system administrator with the error code 80180026."
 
