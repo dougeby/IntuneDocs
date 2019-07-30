@@ -28,7 +28,7 @@ search.appverid: MET150
 ms.collection: M365-identity-device-management
 ---
 
-# Integrate Pradeo with Intune
+# Integrate Pradeo Mobile Threat Defense with Intune
 
 Complete the following steps to integrate the Pradeo Mobile Threat Defense solution with Intune.
 

@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Monitor device encryption  
+# Monitor device encryption with Intune   
 
 The Microsoft Intune encryption report is a centralized location to view details about the encryption status of your managed devices. View details about a device’s encryption status and find options to manage device recovery keys. The recovery key options that are available depend on the type of device you're viewing.  
 
