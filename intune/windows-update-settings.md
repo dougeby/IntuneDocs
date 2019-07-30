@@ -225,7 +225,7 @@ User experience settings control the end-user experience for device restart and 
 - **Allow user to restart (engaged restart)**  
   **Default**: Not configured  
   > [!IMPORTANT]  
-  > *Engaged restart* settings are no longer recommended to use. Instead, use the new *deadline* settings which supersede the *engaged restart* settings. Intune will deprecate support for *engaged restart* settings in a future update.
+  > *Engaged restart* settings are no longer recommended to use. Instead, use the new *deadline* settings which supersede the *engaged restart* settings. Intune will [deprecate support for *engaged restart*](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) settings in a future update.
 
   Engaged restart is supported for Windows 10 version 1803 and later. 
 
@@ -260,7 +260,7 @@ User experience settings control the end-user experience for device restart and 
 - **Use deadline settings**  
   **Default**: Not configured  
   > [!IMPORTANT]  
-  > Beginning with the August update for Intune, we recommend use of the following deadline settings that supersede the engaged restart settings. Intune will deprecate support for *engaged restart* settings in a future update to Intune.  
+  > Beginning with the August update for Intune, we recommend use of the following deadline settings that supersede the engaged restart settings. Intune will [deprecate support for *engaged restart*](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) settings in a future update to Intune.  
 
   Allows user to use deadline settings.  
 
