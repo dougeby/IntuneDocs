@@ -2,6 +2,7 @@
 # required metadata
 
 title: Privacy and personal data in Intune
+titleSuffix: Microsoft Intune
 description: Learn what personal data is collected and processed in Intune.
 keywords:
 author: brenduns

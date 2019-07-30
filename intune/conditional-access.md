@@ -28,7 +28,7 @@ ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
 ---
 
-# What's Conditional Access?
+# Learn about Conditional Access and Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -43,7 +43,7 @@ You can define conditions that gate access to your corporate data based on locat
 
 ![Conditional Access architectural diagram](./media/ca-diagram-1.png)
 
-## Conditional Access with Intune
+## Use Conditional Access with Intune
 
 Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. 
 
