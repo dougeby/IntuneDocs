@@ -40,7 +40,7 @@ You can use Azure Active Directory and Microsoft Intune's Conditional Access pol
 2. Select the policy > Assignments. You can include or exclude Azure Active Directory (AD) security groups.
 3. Choose Selected groups to see your Azure AD security groups. Select the user groups you want this policy to apply > Choose Save to deploy the policy to users.
 
-You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
+You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance and marked as compliantfor the setting "Require device to be marked as compliant" in Azure Active Directory.
 
 > [!Note]
 > Intune requires full disk encryption to be compliant.
