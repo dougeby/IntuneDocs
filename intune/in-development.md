@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 To assist in your readiness and planning, this page lists Intune UI updates and features that are in development but not yet released. In addition:
 
-- If we anticipate that you'll need to take action prior to a change, we’ll publish a complementary Office Message Center post.
+- If we anticipate that you'll need to take action before a change, we’ll publish a complementary Office Message Center post.
 - When a feature is launched in production, either as a preview or generally available, the feature description will move off this page and onto the [What's New page](whats-new.md).
 - This page and the [What's New page](whats-new.md) are updated periodically. Check back for additional updates.
 - Refer to the [M365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) for strategic deliverables and timelines.
@@ -65,12 +65,12 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 Admins will be able to manage whether an app is removed or retained on a device when the device is unenrolled at a user or device group level. 
 
 ### Categorize Microsoft Store for Business apps <!-- 3926922 -->
-You will be able to categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop-down menu, assign a category.
+You'll be able to categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop-down menu, assign a category.
 ### Configure app notification content for organization accounts <!-- 2576686 -->
 Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
 ### Available Google Play app reporting for Android work profiles <!-- 3041956  -->
-For available app installs on Android work profile devices, you can view app installation status as well as the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
+For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
 
 <!-- ***********************************************-->
 ## Device configuration
@@ -129,7 +129,7 @@ Applies to:
 - macOS
 
 ### New features for Android Enterprise dedicated devices in multi-app mode <!-- 3755304 3041943 3041946  -->
-You'll be able to control features and settings in a kiosk-style experience on your Android Enterprise dedicated devices (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner only, Device restrictions** for profile type).
+You'll be able to control features and settings in a kiosk-style experience on your Android Enterprise dedicated devices. To do so, choose **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner only, Device restrictions** for profile type.
 
 The following features will be added:
 - **Dedicated devices** > **Multi-app**: The **Virtual home button** can be shown by swiping up on the device, or floating on the screen so users can move it.
@@ -169,6 +169,7 @@ Applies to: iOS
 You'll be able to set Device Enrollment Program profiles to skip the following Setup Assistant screens: 
 - Screen Time
 - Touch ID Setup
+
 To do so, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Edit** next to **Setup Assistant Customization**.
 For more information about Setup Assistant customization, see [Create an Apple enrollment profile ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
@@ -197,7 +198,7 @@ A new built-in default scope tag will be available. All untagged Intune objects 
 ## Security
 
 ### Import and export security baselines    <!--3408610          -->  
-We’re adding the capability to export and import security baselines so you can take your customizations with you and share them between Intune environments.
+We’re adding the capability to export and import security baselines. This feature will let you take your customizations with you and share them between Intune environments.
 
 <!-- ***********************************************-->
 ## Notices
