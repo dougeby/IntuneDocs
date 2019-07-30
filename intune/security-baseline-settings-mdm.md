@@ -33,12 +33,12 @@ ms.collection: M365-identity-device-management
 
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
 
-The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)**  
+The most recent baseline version is **MDM Security Baseline for May 2019**  
 
 To learn about what's changed in the latest version of this baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for Spring 2019 Update (19H1)* template, which is generaly available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
+> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
   
 To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
 
@@ -1833,7 +1833,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
   **Default**: Enabled
 
 ## What's changed in the new template
-The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
+The *MDM Security Baseline for May 2019* template has the following changes from the *preview* template.
 
 ### Changes to the baseline settings
 The following settings are either:
