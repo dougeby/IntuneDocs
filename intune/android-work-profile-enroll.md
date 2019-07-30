@@ -42,8 +42,8 @@ To set up Android Enterprise work profile management, follow these steps:
     - **Allow (set by default)**: All devices that support Android Enterprise work profiles are enrolled as Android Enterprise work profile devices. Any Android device that does not support Android Enterprise work profiles is enrolled as an Android device administrator device, unless Android device administrator enrollment is blocked. 
 > [!NOTE]
 > The default set to **Allow** is true for new tenants as of July 2019. All previous tenants will experience no change to their Enrollment Restrictions, and will see whatever policies they have set in Enrollment Restrictions. For previous tenants that never had Enrollment Restrictions changes, **Block** will still be the default for Android Enterprise work profiles.
-3. [Tell your users how to enroll their devices](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
+3. [Tell your users how to enroll their devices](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android).  
 
 If you want to enroll devices using Android Enterprise work profiles, but those devices were already enrolled with Android device administrator, those devices must first unenroll and then re-enroll.
 
