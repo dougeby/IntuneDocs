@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use security baselines in Microsoft Intune - Azure | Microsoft Docs
-description: Add or configure recommended windows security settings to protect user and data on devices with Microsoft Intune for mobile device management. Enable BitLocker, configure Microsoft Defender Advanced Threat Protection, control Internet Explorer, use Smart Screen, set local security policies, require a password, block internet downloads, and more.
+description: Use the recommended windows security settings to protect user and data on devices with Microsoft Intune for mobile device management. Enable encryption, configure Microsoft Defender Advanced Threat Protection, control Internet Explorer, set local security policies, require a password, block internet downloads, and more.
 keywords:
 author: brenduns 
 ms.author: brenduns
