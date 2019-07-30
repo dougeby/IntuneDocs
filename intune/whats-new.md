@@ -129,6 +129,10 @@ In Android Q (v10), Google will remove the ability for MDM agents on legacy-mana
 #### Icons have changed for Android Enterprise enrollments (work profile, dedicated devices, and fully managed devices) <!-- 4977730 -->
 The icons for Android Enterprise enrollment profiles have changed. To see the new icons, go to **Intune** > **Enrollment** > **Android enrollment** > look under **Enrollment profiles**.
 
+
+#### Windows Diagnostic Data collection change <!-- 4113859 -->
+The default value for diagnostic data collection has changed for devices running Windows 10, version 1903 and later. Starting with Windows 10 1903, diagnostic data collection is enabled by default. Windows diagnostic data is vital technical data from Windows devices about the device and how Windows and related software are performing. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization). Autopilot devices are also opted into to “Full” telemetry unless otherwise set in the Autopilot profile with [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry).
+
 ### Device management
 
 #### Improve device location<!-- 3855417  -->
