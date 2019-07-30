@@ -37,7 +37,10 @@ You can use Azure Active Directory and Microsoft Intune's Conditional Access pol
 ## Set up device compliance policies in Intune
 
 1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (for example, sending warning emails) to noncompliant users and groups.
-2. Search for your desired groups, then apply the policies to them.
+2. Select the policy > Assignments. You can include or exclude Azure Active Directory (AD) security groups.
+3. Choose Selected groups to see your Azure AD security groups. Select the user groups you want this policy to apply > Choose Save to deploy the policy to users.
+
+You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance.
 
 > [!Note]
 > Intune requires full disk encryption to be compliant.
