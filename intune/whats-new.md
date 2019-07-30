@@ -582,8 +582,8 @@ Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
 We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
-- Block or allow users to [scan for Windows updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
-- Manage the [Windows Update notification level](windows-update-settings.md#windows-update-notification-level) that users see.
+- Block or allow users to [scan for Windows updates](windows-update-settings.md##user-experience-settings).
+- Manage the [Windows Update notification level](windows-update-settings.md##user-experience-settings) that users see.
 
 #### New device restriction settings for Android Enterprise, Device Owner <!-- 3574254  -->
 On Android Enterprise devices, you can create a device restriction profile to allow or restrict features, set password rules, and more (**Device configuration** > **Profiles** > **Create profile** > choose **Android Enterprise** for platform > **Device owner only > Device restrictions** for profile type). 
