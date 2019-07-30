@@ -1,12 +1,12 @@
 ---
 title: Send custom notifications to users with Microsoft Intune 
-titleSuffix: 
+titleSuffix: Microsoft Intune
 description: Use Intune to create and send custom push notifications to users of iOS and Android devices
 keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high

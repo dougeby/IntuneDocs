@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title:  Windows 10 Delivery Optimization settings for Intune | Microsoft Docs
+title:  Windows 10 Delivery Optimization settings for Intune 
+titleSuffix: Microsoft Intune
 description: Delivery Optimization settings for Windows 10 devices that you can deploy using Intune.
 keywords:
 author: brenduns
