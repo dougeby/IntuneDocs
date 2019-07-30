@@ -65,7 +65,7 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 Admins will be able to manage whether an app is removed or retained on a device when the device is unenrolled at a user or device group level. 
 
 ### Categorize Microsoft Store for Business apps <!-- 3926922 -->
-You will be able to categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop down menu, assign a category.
+You will be able to categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop-down menu, assign a category.
 ### Configure app notification content for organization accounts <!-- 2576686 -->
 Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
@@ -118,7 +118,7 @@ Applies to:
 - macOS 10.15 and newer
 - iOS 13 and newer
 
-### Control the apps, files, documents, and folders that open when user sign in to macOS devices <!--3914202  -->
+### Control the apps, files, documents, and folders that open when user signs in to macOS devices <!--3914202  -->
 You'll be able to enable and configure features on macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device features** for profile type). 
 
 There will be new Login Items settings to control which apps, files, documents, and folders open when a user signs in to the enrolled device. 
@@ -170,7 +170,7 @@ You'll be able to set Device Enrollment Program profiles to skip the following S
 - Screen Time
 - Touch ID Setup
 To do so, go to **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Properties** > **Edit** next to **Setup Assistant Customization**.
-For more information about Setup Assistant customerization, see [Create an Apple enrollment profile ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+For more information about Setup Assistant customization, see [Create an Apple enrollment profile ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
 ### Android enrollment device administrator support <!-- 4869749  -->
 The Android device administrator enrollment option will be added to the Android enrollment page (**Intune** > **Device enrollment** > **Android enrollment**). Android device administrator will still be enabled by default for all tenants.  
@@ -191,7 +191,7 @@ You'll be able to set the automatic device clean-up time limit as short as 30 da
 ## Role-based access control
 
 ### Default scope tag <!-- 3702875 -->
-A new built in default scope tag will be available. All un-tagged Intune objects that support scope tags will be automatically assigned to the default scope tag. The **Default** scope tag will be added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with default scope tags, remove the default scope tag from the role assignment. This features is similar to the security scopes feature in System Center Configiuration Manager.
+A new built-in default scope tag will be available. All untagged Intune objects that support scope tags will be automatically assigned to the default scope tag. The **Default** scope tag will be added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with default scope tags, remove the default scope tag from the role assignment. This feature is similar to the security scopes feature in System Center Configuration Manager.
 
 <!-- ***********************************************-->
 ## Security
