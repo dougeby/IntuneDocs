@@ -119,6 +119,9 @@ To exclude a class from MAM-ification by the Remapper the following property can
   </PropertyGroup>
 ```
 
+> [!NOTE]
+> At this time, an issue with the Remapper prevents debugging in Xamarin.Android apps. Manual integration is recommended to debug your application until this issue is resolved.
+
 #### [Renamed Methods](app-sdk-android.md#renamed-methods)
 In many cases, a method available in the Android class has been marked as final in the MAM replacement class. In this case, the MAM replacement class provides a similarly named method (suffixed with `MAM`) that you should override instead. For example, when deriving from `MAMActivity`, instead of overriding `OnCreate()` and calling `base.OnCreate()`, `Activity` must override `OnMAMCreate()` and call `base.OnMAMCreate()`.
 
@@ -182,7 +185,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 For `Xamarin.Forms` applications the `Microsoft.Intune.MAM.Remapper` package performs MAM class replacement automatically by injecting `MAM` classes into the class hierarchy of commonly used `Xamarin.Forms` classes. 
 
 > [!NOTE]
-> The Xamarin.Forms integration is to be done in addition to the Xamarin.Android integration detailed above.
+> The Xamarin.Forms integration is to be done in addition to the Xamarin.Android integration detailed above. The Remapper behaves differently for Xamarin.Forms apps so the manual MAM replacements will still need to be done.
 
 Once the Remapper is added to your project you will need to perform the MAM equivalent replacements. For example, `FormsAppCompatActivity` and `FormsApplicationActivity` can continue to be used in your application provided overrides to `OnCreate` and `OnResume` are replaced with the MAM equivalents `OnMAMCreate` and `OnMAMResume` respectively.
 
@@ -205,6 +208,9 @@ This is expected because when the Remapper modifies the inheritance of Xamarin c
 
 > [!NOTE]
 > The Remapper re-writes a dependency that Visual Studio uses for IntelliSense auto-completion. Therefore, you may need to reload and rebuild the project when the Remapper is added for IntelliSense to correctly recognize the changes.
+
+#### Troubleshooting
+* If you are encountering a blank, white screen in your application on launch then you may need to force the navigation calls to execute on the main thread.
 
 ### Company Portal app
 The Intune SDK Xamarin Bindings rely on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android app on the device to enable app protection policies. The Company Portal retrieves app protection policies from the Intune service. When the app initializes, it loads policy and code to enforce that policy from the Company Portal. The user does not need to be signed in.
