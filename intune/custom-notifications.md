@@ -41,8 +41,9 @@ Custom notification messages include a short title and a message body of 500 cha
 ## Considerations for using custom notifications  
 
 **Device configuration**:  
-- Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications. The Company Portal will prompt users to permit notifications.  
+- Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications. The Company Portal will prompt users to permit notifications any time it is installed or updated.  
 - On Android, Google Play Services is a required dependency.  
+- The device must be MDM enrolled.
 
 **Creating notifications**:  
 - To create a message, use an account that is assigned an Intune role that includes the **Update** permission for **Organization**. To assign permissions to a user, see [Role assignments](role-based-access-control.md#role-assignments)  

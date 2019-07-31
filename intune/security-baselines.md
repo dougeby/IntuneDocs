@@ -71,7 +71,7 @@ Security baseline profiles support a [change of the version](#change-the-baselin
 The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
 - **MDM Security Baseline**
-  - [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)
+  - [MDM Security Baseline for May 2019](security-baseline-settings-mdm.md)
   - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP baseline**  
