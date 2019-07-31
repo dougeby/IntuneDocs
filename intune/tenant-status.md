@@ -24,7 +24,7 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
-# Intune Tenant Status page
+# Use the Intune Tenant Status page
 The Tenant Status page is a centralized hub where you can view current and important details about your tenant. Details include license availability and use, connector status, and important communications about the Intune service.  
 
 To view the dashboard, in the Azure portal go to **Intune > Tenant Status**.  Tenant Status appears under the **Help and support group**.  

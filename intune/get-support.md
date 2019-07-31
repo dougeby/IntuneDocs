@@ -55,7 +55,7 @@ If the preceding workarounds don't help, go to [Microsoft 365 admin center](http
 
 ## Help and support experience  
 
-The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
+The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
 ![Intune blades](./media/get-support/intune-blades.png)
 

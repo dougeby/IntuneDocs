@@ -3,7 +3,7 @@
 
 title: Intune security baselines settings for Windows 10 
 titleSuffix: Microsoft Intune
-description: Intune security baseline settings for managing Windows 10  
+description: Review defaults and availalbe settings that are found in the Windows MDM security baseline for Windows 10 devices you manage with Intune. 
 author: brenduns
 ms.author: brenduns
 manager: dougeby

@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: How to integrate Windows Hello for Business with Microsoft Intune
+title: Integrate Windows Hello for Business with Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:

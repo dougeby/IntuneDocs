@@ -11,6 +11,27 @@ ms.custom: include file
 
 These notices provide important information that can help you prepare for future Intune changes and features. 
 
+
+### Decreasing support for Android device administrator 
+Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
+
+#### How does this affect me?
+Because of these changes by Google, Intune users will be impacted in the following ways: 
+- Intune will only be able to provide support for device administrator-managed Android devices running Android 10 and later (also known as Android Q) through Summer 2020. This date is when the next major version of Android is expected to release.  
+- Device administrator-managed devices that are running Android 10 or later after summer 2020 will no longer be able to be entirely managed.    
+- Device administrator-managed Android devices that remain on Android versions below Android 10 will not be impacted and can continue to be entirely managed with device administrator.  
+- For all Android 10 and later devices, Google has restricted the ability for device administrator management agents like Company Portal to access device identifier information. This impacts the following Intune features after a device updates to Android 10 or later: 
+    - Network access control for VPN will no longer work.  
+    - Identifying devices as corporate-owned with IMEI or serial number will not automatically mark devices as corporate-owned. 
+    - IMEI and serial number will no longer be visible to IT admins in the Intune. 
+        > [!Note]
+        > This only impacts device administrator-managed devices on Android 10 and later, and does not affect devices being managed as Android Enterprise. 
+
+#### What do I need to do to prepare for this change?
+To avoid the reduction in functionality coming in Summer 2020, we recommend the following:
+- Don’t onboard new devices into device administrator management.
+- If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.
+
 ### Update your Android Company Portal app to the latest version <!--4536963-->
 Intune periodically releases updates to the Android Company Portal App. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google’s change from their existing notification platform to Google’s Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their company portal app to at least November 2018 release to continue communicating with the Google play store.
 

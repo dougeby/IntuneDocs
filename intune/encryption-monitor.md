@@ -26,7 +26,7 @@ ms.custom: intune-azure
 
 ---
 
-# Monitor device encryption  
+# Monitor device encryption with Intune   
 
 The Microsoft Intune encryption report is a centralized location to view details about the encryption status of your managed devices. View details about a device’s encryption status and find options to manage device recovery keys. The recovery key options that are available depend on the type of device you're viewing.  
 
@@ -62,7 +62,7 @@ The Encryption report pane displays a list of the devices you manage with high
     
     For more information, see the [BitLocker configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) in the Windows documentation.  
 
-  - **Not ready**: The device doesn't have full encryption capabilities, but still supports encryption. For example, a Windows device might be encrypted manually by a user, or through Group Policy that can be set to allow encrypting without a TMP.
+  - **Not ready**: The device doesn't have full encryption capabilities, but still supports encryption. For example, a Windows device might be encrypted manually by a user, or through Group Policy that can be set to allow encrypting without a TPM.
   - **Not applicable**: There isn't enough information to classify this device.  
 
 - **Encryption status** – Whether the OS drive is encrypted.  
