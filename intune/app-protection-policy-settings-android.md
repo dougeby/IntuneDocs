@@ -96,6 +96,7 @@ There are three categories of policy settings: data protection settings, access 
   | com.skype.raider | Skype | The Skype app is allowed only for certain actions that result in a phone call. |
   | com.android.providers.media | Android media content provider | The media content provider allowed only for the ringtone selection action. |
   | com.google.android.gms; com.google.android.gsf | Google Play Services packages | These packages are allowed for Google Cloud Messaging actions, such as push notifications. |
+  | com.google.android.apps.maps | Google Maps | Addresses are allowed for navigation |
 
 For more information, see [Data transfer policy exceptions for apps](app-protection-policies-exception.md).
 
