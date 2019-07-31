@@ -38,6 +38,8 @@ Line-of-business (LOB) apps and Microsoft Store for Business apps are the app ty
 > The minimum needed Windows 10 updates to deploy modern apps are as follows:
 > - For Windows 10 1803, [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - For Windows 10 1709, [June 21, 2018—KB4284822 (OS Build 16299.522)](https://support.microsoft.com/help/4284822).
+>
+> Only Windows 10 1803 and above support installing apps when there is no primary user associated.
 
 ## Windows 10 Line-of-business apps
 
