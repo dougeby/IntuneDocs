@@ -104,7 +104,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
     - **End-user license agreement (EULA)**: (Windows 10, version 1709 or later) Choose if you want to show the EULA to users.
     - **Privacy settings**: Choose if you want to show privacy settings to users.
     >[!IMPORTANT]
-    >For Autopilot deployments on Windows 10 version 1903 devices and later, the Diagnostics Data default is automatically set to Full. For more information, see [Windows Diagnostics Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
+    >The default value for the Diagnostic Data setting varies between Windows versions. For devices running Windows 10, version 1903, the default value is set to Full during the out-of-box experience. For more information, see [Windows Diagnostics Data](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data) <br>
     
     - **Hide change account options (requires Windows 10, version 1809 or later)**: Choose **Hide** to prevent change account options from displaying on the company sign-in and domain error pages. This option requires [company branding to be configured in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
     - **User account type**: Choose the user's account type (**Administrator** or **Standard** user).
