@@ -43,7 +43,7 @@ When a baseline version is no longer supported for use, it will then be removed 
 
 ## Preview: MDM Security Baseline for October 2018  
 
-*This baseline is superseded by [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
+*This baseline is superseded by [MDM Security Baseline for May 2019](security-baseline-settings-mdm.md)*
 
 ### Above Lock  
 
