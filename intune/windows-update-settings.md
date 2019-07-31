@@ -112,7 +112,7 @@ User experience settings control the end-user experience for device restart and 
   **Default**: Auto install at maintenance time  
   Windows Update CSP: [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
-  Choose how automatic updates are installed, and if necessary, when to restart the device.  
+  Choose how automatic updates are installed and, if necessary, when to restart the device.  
 
   Supported options:  
 
@@ -291,7 +291,7 @@ User experience settings control the end-user experience for device restart and 
     **Default**:  Yes
     Windows Update CSP: [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
-    Specifies if the device should auto reboot before deadline.
+    Specifies whether the device should auto reboot before deadline.
     - **Yes**
     - **No**
 
