@@ -30,7 +30,11 @@ Because of these changes by Google, Intune users will be impacted in the followi
 #### What do I need to do to prepare for this change?
 To avoid the reduction in functionality coming in Summer 2020, we recommend the following:
 - Don’t onboard new devices into device administrator management.
-- If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.
+- If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.\
+
+#### Additional information
+- [Google’s guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
+- [Google’s documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation)
 
 ### Update your Android Company Portal app to the latest version <!--4536963-->
 Intune periodically releases updates to the Android Company Portal App. In November 2018 we released a company portal update, which included a back-end switch to prepare for Google’s change from their existing notification platform to Google’s Firebase Cloud Messaging (FCM). When Google retires their existing notification platform and moves to FCM, end users will need to have updated their company portal app to at least November 2018 release to continue communicating with the Google play store.
