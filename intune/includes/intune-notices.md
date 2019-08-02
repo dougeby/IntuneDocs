@@ -30,7 +30,7 @@ Because of these changes by Google, Intune users will be impacted in the followi
 #### What do I need to do to prepare for this change?
 To avoid the reduction in functionality coming in Summer 2020, we recommend the following:
 - Don’t onboard new devices into device administrator management.
-- If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.\
+- If a device is expected to receive an update to Android 10, migrate it off of device administrator management to Android Enterprise management and/or App Protection Policies.
 
 #### Additional information
 - [Google’s guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
