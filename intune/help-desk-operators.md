@@ -60,7 +60,7 @@ In the troubleshooting pane, choose **Select user** to view user information. Us
 
 You can use the **Troubleshoot** pane to review user information.
 
-![](/intune/media/troubleshooting-dash.png)
+![Troubleshooting dashboard, with numbered areas described by following table](/intune/media/troubleshooting-dash.png)
 
 | Area | Name | Description |
 | ---  | ---  | ---         |
