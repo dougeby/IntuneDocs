@@ -703,18 +703,20 @@
       href: tenant-status.md
     - name: Troubleshoot
       items:
+      - name: Help users troubleshoot problems
+        href: help-desk-operators.md
       - name: Troubleshoot enrollment
         items:
           - name: Troubleshoot iOS device enrollment
             href: troubleshoot-ios-enrollment-errors.md
           - name: Troubleshoot Windows device enrollment
             href: troubleshoot-windows-enrollment-errors.md
-      - name: Help users troubleshoot problems
-        href: help-desk-operators.md
       - name: Troubleshoot company resource access problems
         href: troubleshoot-company-resource-access-problems.md      
       - name: Troubleshoot app installation problems
         href: troubleshoot-app-install.md 
+      - name: Troubleshoot device actions
+        href: troubleshoot-device-actions.md                  
       - name: Troubleshoot mobile application management
         href: troubleshoot-mam.md                  
       - name: Audit logs for Intune activities
