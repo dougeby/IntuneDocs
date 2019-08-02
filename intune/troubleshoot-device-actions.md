@@ -53,7 +53,7 @@ No. And you don't need to enter the dashes.
 
 ## Remove devices action
 
-### How do I tell who initiated a Retire/Wipe?
+### How do I tell who started a Retire/Wipe?
 Go to **Intune** > **Devices** > **Device actions** > check the **Initiated By** column.
 If you don't see an entry, the most likely person to have initiated the action is the user of the device. They probably used the Company Portal app or portal.manage.microsoft.com.
 
@@ -66,32 +66,32 @@ Because it wasn't considered a managed application. In this context, a managed a
 This is expected behavior. Google doesn't allow Factory Resetting of Work Profile devices from the MDM Provider.
 
 ### Why can I sign back into my Office apps after my device was retired?
-Because a retire doesn't revoke access tokens. This can be mitigated with Conditional Access policies.
+Because retiring a device doesn't revoke access tokens. You can use Conditional Access policies to mitigate this condition.
 
 ### How can I monitor a Retire/Wipe action after it was issued?
 Go to **Intune** > **Devices** > **Device Actions**.
 
 ### Why do wipes sometimes show as Pending indefinitely?
-Devices don't always report their status back to the Intune service before the reset was initiated. So, the action shows as Pending. If you have confirmed the action was successful, delete the device from the service.
+Devices don't always report their status back to the Intune service before the reset was started. So, the action shows as Pending. If you've confirmed the action was successful, delete the device from the service.
 
-### What happens if I initiate a retire/wipe on a device that is offline or hasn't communicated with the service in a while?
-The device will remain in **Retire/Wipe Pending** state until the MDM certificate expires. The MDM certificate lasts for one year from enrollment, and auto-renews every year. If the device checks in before the MDM certificate expires, it will be retired/wiped. If the device doesn't check in before the MDM certificate expires, it won't be able to check in to the service. 180 days after the MDM certificate expires, the device will be automatically removed from the Azure Portal.
+### What happens if I start a retire/wipe on an offline device or a device that hasn't communicated with the service in a while?
+The device will remain in **Retire/Wipe Pending** state until the MDM certificate expires. The MDM certificate lasts for one year from enrollment, and automatically renews every year. If the device checks in before the MDM certificate expires, it will be retired/wiped. If the device doesn't check in before the MDM certificate expires, it won't be able to check in to the service. 180 days after the MDM certificate expires, the device will be automatically removed from the Azure portal.
 
 
 ## Reset Passcode action
 
 ### Why is the Reset Passcode action greyed out on my Android Device Admin enrolled device?
-Because it's running Android version 7.0 or higher. To combat Ransomware, Google removed the  passcode reset feature on the Device Admin API.
+To combat Ransom ware, Google removed the  passcode reset feature on the Device Admin API (applies to Android version 7.0 or higher devices).
 
 ### Why do I get a "Not Supported" message when I issue a passcode reset to my Android 8.0 or later Work Profile enrolled device?
 Because the Reset Token hasn't been activated on the device. To activate the Reset Token:
 1. You must require a Work Profile passcode in your Configuration Policy.
-2. The end-user must set an appropriate Work Profile passcode.
-3. The end-user must accept the secondary prompt to allow passcode reset.
+2. The end user must set an appropriate Work Profile passcode.
+3. The end user must accept the secondary prompt to allow passcode reset.
 After these steps are complete, you should no longer receive this response.
 
 ### Why am I prompted to set a new passcode on my iOS device when I issue the Remove Passcode action?
-Because one of your compliance policies requiers a passcode.
+Because one of your compliance policies requires a passcode.
 
 ## Next steps
 
