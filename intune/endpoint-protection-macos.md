@@ -108,9 +108,11 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     **Default**: Not configured  
 
      > [!IMPORTANT]  
-     > There is a known issue when the setting **Disable prompt at sign out** is set to *Enable*. When set to *Enable*, the setting for **Number of times allowed to bypass** must be set to a value and should not be set as *Not configured*. If set to *Not configured*, the device is unable to report a correct **Profile State Summary** and instead reports **Error** with further details.
+     > There is a known issue when the setting **Disable prompt at sign out** is set to *Enable*. When set to *Enable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports its a **Profile State Summary** as **Error** without further details.
      > 
      > When **Disable prompt at sign out** is set to *Not configured*, **Number of times allowed to bypass** can be *Not configured* or have a value.  
+     > 
+     > This issue will be resolved in a future update. 
 
   - **Number of times allowed to bypass**  
   Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
