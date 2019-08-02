@@ -41,7 +41,9 @@ The most likely reasons include:
 - The code has expired and been cleared from the service.
 - The device isn't Supervised with the Device Restriction Policy to allow Activation Lock.
 
-You can check on the code in Graph Explorer with the following query: GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.
+You can check on the code in Graph Explorer with the following query:
+
+```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
 ### Why is the Bypass Activation Lock action greyed out for my iOS device?
 The most likely reasons include: 
