@@ -101,9 +101,9 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     - **Personal recovery key rotation** - Specify how frequently the personal recovery key for a device will rotate. You can select the default of **Not configured**, or a value of **1** to **12** months.  
 
   - **Disable prompt at sign out**  
-    Prevent the prompt to the user that requests they enable FileVault when they sign out.  When set to disabled, the prompt at sign-out is disabled and instead, the user is prompted when they sign in.  
+    Prevent the prompt to the user that requests they enable FileVault when they sign out.  When set to Enable, the prompt at sign-out is disabled and instead, the user is prompted when they sign in.  
     - **Not configured**  
-    - **Enable**  
+    - **Enable** - Disable the prompt at sign-out.
 
     **Default**: Not configured  
 
