@@ -272,6 +272,119 @@ If **MDM user scope** is set to **None**, follow these steps:
 4. Set **MAM User scope** to **None**.
 
 
+### An error occurred while creating Autopilot profile.
+
+**Cause:** The device name template's specified naming format doesn't meet the requirements. For example, you use lowercase for the serial macro, such as %serial% instead of %SERIAL%.
+
+#### Resolution
+
+Make sure that the naming format meets the following requirements:
+
+- Create a unique name for your devices. Names must be 15 characters or less, and can contain letters (a-z, A-Z), numbers (0-9), and hyphens (‐).
+- Names can't be all numbers.
+- Names can’t contain blank space.
+- Use the %SERIAL% macro to add a hardware-specific serial number. Or, use the %RAND:<# of digits>% macro to add a random string of numbers, the string contains <# of digits> digits. For example, MYPC-%RAND:6% generates a name such as MYPC-123456.
+
+### Something went wrong. OOBEIDPS.
+
+**Cause:** This issue occurs if there's a proxy, firewall, or other network device that's blocking access to the Identity Provider (IdP).
+
+#### Resolution
+Make sure that the required access to internet-based services for Autopilot isn’t blocked. For more information, see [Windows Autopilot networking requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements-network).
+
+
+### Registering your device for mobile management (Failed:3, 0x801C03EA).
+
+**Cause:** The device has a TPM chip that supports version 2.0, but hasn’t yet been upgraded to version 2.0.
+
+#### Resolution
+Upgrade the TPM chip to version 2.0.
+
+If the issue persists, check whether the same device is in two assigned groups, with each group being assigned a different Autopilot profile. If it is in two groups, determine which Autopilot profile should be applied to the device, and then remove the other profile's assignment.
+
+For more information about how to deploy a Windows device in kiosk mode with Autopilot, see [Deploying a kiosk using Windows Autopilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### Securing your hardware (Failed: 0x800705b4).
+
+Error 800705b4: 
+```
+Securing your hardware (Failed: 0x800705b4)
+Joining your organization's network (Previous step failed)
+Registering your device for mobile management (Previous step failed)
+```
+
+**Cause:** The targeted Windows device doesn’t meet either of the following requirements:
+
+- The device must have a physical TPM 2.0 chip. Devices with virtual TPMs (for example, Hyper-V VMs) or TPM 1.2 chips don’t work with self-deploying mode.
+- The device must be running one of the following versions of Windows:
+    - Windows 10 build 1703 or a later version.
+    - If Hybrid Azure AD Join is used, Windows 10 build 1809 or a later version.
+
+
+#### Resolution
+Make sure that the targeted device meets both requirements that are described in the **Cause** section.
+
+For more information about how to deploy a Windows device in kiosk mode with Autopilot, see [Deploying a kiosk using Windows Autopilot](https://blogs.technet.microsoft.com/mniehaus/2018/06/07/deploying-a-kiosk-using-windows-autopilot/).
+
+
+### Something went wrong. Error Code 80070774.
+
+Error 0x80070774: Something went wrong. Confirm you are using the correct sign-in information and that your organization uses this feature. You can try to do this again or contact your system administrator with the error code 80070774.
+
+This issue typically occurs before the device is restarted in a Hybrid Azure AD Autopilot scenario, when the device times out during the initial Sign in screen. It means that the domain controller can’t be found or successfully reached because of connectivity issues. Or that the device has entered a state which can’t join the domain.
+
+**Cause:** The most common cause is that Hybrid Azure AD Join is being used and the Assign user feature is configured in the Autopilot profile. Using the Assign user feature performs an Azure AD join on the device during the initial sign-in screen which puts the device in a state where it can’t join your on-premises domain. Therefore, the Assign user feature should only be used in standard Azure AD Join Autopilot scenarios.  The feature should be used in Hybrid Azure AD Join scenarios.
+
+#### Resolution
+
+1. Go to **Intune** >  **Device Enrollment** > **Windows Enrollment** > **Devices**.
+2. Select the device which is experiencing the issue > click the ellipsis (…) on the rightmost side.
+3. Select **Unassign user** and wait for the process to finish.
+4. Verify that the Hybrid Azure AD Autopilot profile is assigned before re-attempting OOBE.
+
+#### Second resolution
+If the issue persists, on the server that hosts the Offline Domain Join Intune Connector, check to see if Event ID 30312 is logged within the ODJ Connector Service log. Event 30312 resembles the following:
+
+```
+Log Name:      ODJ Connector Service
+Source:        ODJ Connector Service Source
+Event ID:      30132
+Level:         Error
+Description:
+{
+          "Metric":{
+                   "Dimensions":{
+                             "RequestId":"<RequestId>",
+                             "DeviceId":"<DeviceId>",
+                             "DomainName":"contoso.com",
+                             "ErrorCode":"5",
+                             "RetryCount":"1",
+                              "ErrorDescription":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation",
+                              "InstanceId":"<InstanceId>",
+                              "DiagnosticCode":"0x00000800",
+                              "DiagnosticText":"Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation [Exception Message: \"DiagnosticException: 0x00000800. Failed to get the ODJ Blob. The ODJ connector does not have sufficient privileges to complete the operation\"] [Exception Message: \"Failed to call NetProvisionComputerAccount machineName=<ComputerName>\"]"
+                   },
+                   "Name":"RequestOfflineDomainJoinBlob_Failure",
+                   "Value":0
+          }
+}
+```
+
+This issue is usually caused by incorrectly delegating permissions to the organizational unit where the Windows Autopilot devices are created. For more information, see [Increase the computer account limit in the Organizational Unit](windows-autopilot-hybrid.md#increase-the-computer-account-limit-in-the-organizational-unit).
+
+1. Open **Active Directory Users and Computers (DSA.msc)**.
+2. Right-click the organizational unit that you will use to create hybrid Azure AD-joined computers > **Delegate Control**.
+3. In the **Delegation of Control** wizard, select **Next** > **Add** > **Object Types**.
+4. In the **Object Types** pane, select the **Computers** check box > **OK**.
+5. In the **Select Users**, **Computers**, or **Groups** pane, in the **Enter the object names to select** box, enter the name of the computer where the Connector is installed.
+6. Select **Check Names** to validate your entry > **OK** > **Next**.
+7. Select **Create a custom task to delegate** > **Next**.
+8. Select the **Only the following objects in the folder** check box, and then select the **Computer objects**, **Create selected objects in this folder**, and **Delete selected objects in this folder** check boxes.
+9. Select **Next**.
+10. Under **Permissions**, select the **Full Control** check box. This action selects all the other options.
+11. Select **Next** > **Finish**.
+
 ## Next steps
 
 - [Troubleshoot device enrollment in Intune](troubleshoot-device-enrollment-in-intune.md)
