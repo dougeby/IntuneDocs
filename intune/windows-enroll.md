@@ -51,7 +51,7 @@ Two factors determine how you can simplify Windows device enrollment:
 
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 
-## Device enrollment prequisites
+## Device enrollment prerequisites
 
 Before an administrator can enroll devices to Intune for management, licenses should have already been assigned to the administrator's account. [Read about assigning licenses for device enrollment](licenses-assign.md)
 
