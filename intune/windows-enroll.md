@@ -61,7 +61,7 @@ Intune supports multiple users on devices that both:
 - run the Windows 10 Creator's update
 - are Azure Active Directory domain-joined.
 
-When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Only the device’s [Primary user](fund-primary-user.md) is able to use the Company Portal for self-service scenarios like installing apps and performing device actions (Remove, Reset). For shared Windows 10 devices that do not have a primary user assigned, the Company Portal may still be used to install Available apps.
+When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Only the device’s [Primary user](fund-primary-user.md) can use the Company Portal for self-service scenarios like installing apps and performing device actions (Remove, Reset). For shared Windows 10 devices that do not have a primary user assigned, the Company Portal can still be used to install Available apps.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
