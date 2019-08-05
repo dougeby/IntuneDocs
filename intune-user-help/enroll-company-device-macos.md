@@ -43,10 +43,10 @@ Your organization might have purchased their devices through something called th
 Complete the following steps to enroll your macOS device in management. If you're using your own device, rather than an org-provided device, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-macos-cp.md).  
 
 1. Power on your macOS device. 
-2. Choose your country and click **Continue**.  
+2. Choose your country/region and click **Continue**.  
 
    ![Screenshot of macOS device Setup Assistant Welcome screen, showing a list of languages to select from.](./media/macos-dep-welcome-1808.png)   
-3. Choose a keyboard layout. The list shows one or more options based off your selected country. To see all layout options, regardless of your selected country, click **Show All**. When you're done, click **Continue.**  
+3. Choose a keyboard layout. The list shows one or more options based off your selected country/region. To see all layout options, regardless of your selected country/region, click **Show All**. When you're done, click **Continue.**  
 
    ![Screenshot of macOS device Setup Assistant Keyboard Layout screen, showing a list of keyboard languages to select from, an unchecked Show All option, and a Back and Continue button.](./media/macos-dep-keyboard-1808.png)  
 4. Select your Wi-Fi network. You must have an internet connection to continue setup. If you do not see your network, or if you need to connect over a wired network, click **Other Network Options**. When you're done, click **Continue**.  

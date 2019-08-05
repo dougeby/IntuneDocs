@@ -120,7 +120,7 @@ Intune offers two deployment options: standalone and hybrid. Standalone refers t
 
 ## Intune tenant location
 
-If your organization has global presence, make sure to plan where your tenant resides when you subscribe to the service. The country is defined when you sign up for an Intune subscription for the first time, and map to regions around the world, which are listed below:
+If your organization has global presence, make sure to plan where your tenant resides when you subscribe to the service. The country/region is defined when you sign up for an Intune subscription for the first time, and map to countries/regions around the world, which are listed below:
 
 - North America
 
@@ -129,7 +129,7 @@ If your organization has global presence, make sure to plan where your tenant re
 - Asia and Pacific
 
 >[!IMPORTANT]
-> It’s not possible to change the country and tenant location later.
+> It’s not possible to change the country/region and tenant location later.
 
 ## External dependencies
 
