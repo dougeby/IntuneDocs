@@ -367,7 +367,7 @@ To add apps to these lists, you can:
 - **Keyboard spell-check (supervised only)**: **Not configured** (default) allows using spellchecker on the device. **Block** allows spell checker.
 - **Keyboard shortcuts (supervised only)**: **Not configured** (default) allows using keyboard shortcuts on the device. **Block** stops the user from using keyboard shortcuts.
 - **Dictation (supervised only)**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
-- **QuickPath (supervised only)**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. 
+- **QuickPath (supervised only)**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device's keyboard. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. 
 
   This feature applies to:  
   - iOS 13.0 and newer
