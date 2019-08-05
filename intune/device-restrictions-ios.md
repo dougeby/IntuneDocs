@@ -367,7 +367,10 @@ To add apps to these lists, you can:
 - **Keyboard spell-check (supervised only)**: **Not configured** (default) allows using spellchecker on the device. **Block** allows spell checker.
 - **Keyboard shortcuts (supervised only)**: **Not configured** (default) allows using keyboard shortcuts on the device. **Block** stops the user from using keyboard shortcuts.
 - **Dictation (supervised only)**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
-- **QuickPath (supervised only)**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. Available on iOS 13.0 and newer.
+- **QuickPath (supervised only)**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. 
+
+  This feature applies to:  
+  - iOS 13.0 and newer
 
 ## Cloud and Storage
 
@@ -384,7 +387,7 @@ To add apps to these lists, you can:
 - **iCloud Photo Library**: Set to **Block** to disable using iCloud photo library to store photos and videos in the cloud. Any photos not fully downloaded from iCloud Photo Library to the device are removed from the device. **Not configured** (default) allows using the iCloud photo library.
 - **Managed apps sync to cloud**: **Not configured** (default) allows your Intune-manages apps to sync data to the user's iCloud account. **Block** prevents this data sync to iCloud.
 - **Shared photo stream**: Choose **Block** to disable **iCloud Photo Sharing** on the device. **Not configured** (default) allows shared photo streaming.
-- **Handoff**: **Not configured** (default) allows users to continue work they started on an iOS device on another iOS or macOS device (Handoff). **Block** prevents this handoff.
+- **Handoff**: **Not configured** (default) allows users to start work on an iOS device, and then continue the work they started on another iOS or macOS device. **Block** prevents this handoff.
 - **Block iCloud Keychain sync (supervised only)**: Choose **Block** to disable syncing credentials stored in the Keychain to iCloud. **Not configured** (default) allows users to sync these credentials.
 
   Starting with iOS 13.0 and newer, this setting requires supervised devices.
