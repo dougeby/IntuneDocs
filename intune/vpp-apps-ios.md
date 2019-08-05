@@ -92,9 +92,9 @@ Before you start, you need to get a VPP token from Apple and upload it to your I
 5. On the **Create VPP token** pane, specify the following information:
     - **VPP token file** - If you haven't already, sign up for the Volume Purchase Program for Business or the program for Education. After you sign up, download the Apple VPP token for your account and select it here.
     - **Apple ID** - Enter the Apple ID of the account associated with the volume-purchase program.
-    - **Country/Region** - Select the VPP country store.  Intune synchronizes VPP apps for all locales from the specified VPP country store.
+    - **Country/Region** - Select the VPP country/region store.  Intune synchronizes VPP apps for all locales from the specified VPP country/region store.
         > [!WARNING]  
-        > Changing the country will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country store.
+        > Changing the country/region will update the apps metadata and store URL on next sync with the Apple service for apps created with this token. The app will not be updated if it does not exist in the new country/region store.
 
     - **Type of VPP account** - Choose from **Business** or **Education**.
     - **Automatic app updates** - Choose from **On** or **Off** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in. Automatic app updates for Apple VPP apps will automatically update only apps deployed with **Required** install intent. For apps deployed with **Available** install intent, the automatic update generates a notification for you (the admin) informing you that a new version of the app is available. The user must click install to install the newer version of the app. Additionally, the user will see that the app as not installed on Company Portal, even though an earlier version of the app is installed. In this case, the user can reinstall the app.

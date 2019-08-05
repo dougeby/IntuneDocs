@@ -48,7 +48,7 @@ A list of device identifiers (serial numbers and IMEIs) are automatically added 
 ## Prerequisites
 
 To enroll into Intune using KME, you must first register your company on the Samsung Knox portal by following these steps:
-1. [Make sure KME is available in your region](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is available in over 55 countries. Ensure that your country of deployment is supported.
+1. [Make sure KME is available in your country/region](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is available in over 55 countries/regions. Ensure that your country/region of deployment is supported.
 
 2. [Supported devices](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME is available on all Samsung devices with a minimum of Knox 2.4 for Android enrollment and a minimum of Knox 2.8 for Android enterprise enrollment.
 
