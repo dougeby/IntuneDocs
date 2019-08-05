@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -61,17 +61,17 @@ These settings are added to a device configuration profile in Intune, and then a
     - macOS 10.13.4 and later
 
 - **Screenshots**: Device must be in Apple's Device Enrollment Program (DEP). When set to **Block**, users can't save a screenshot of the display. It also prevents the Classroom app from observing remote screens. **Not configured** (default) allows users to capture screenshots, and allows the Classroom app to view remote screens.
-  - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens. This setting only applies to devices enrolled through DEP (Automated Device Enrollment). 
+  - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens. Applies to devices enrolled through Apple's Automated Device Enrollment (DEP). 
 
     This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
 
-  - **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens. This setting only applies to devices enrolled through DEP (Automated Device Enrollment). 
+  - **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens. Applies to devices enrolled through Apple's Automated Device Enrollment (DEP). 
 
     This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
 
-- **Students must request permission to leave Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever. This setting only applies to devices enrolled through DEP (Automated Device Enrollment). 
-- **Teachers can automatically lock devices or apps in the Classroom app**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets teachers lock a student's device or app without the student's approval. **Not configured** (default) requires the student to agree before the teacher can lock the device or app. This setting only applies to devices enrolled through DEP (Automated Device Enrollment). 
-- **Students can automatically join Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets students join a class without prompting the teacher. **Not configured** (default) requires teacher approval to join a class. This setting only applies to devices enrolled through DEP (Automated Device Enrollment). 
+- **Students must request permission to leave Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever. Applies to devices enrolled through Apple's Automated Device Enrollment (DEP).  
+- **Teachers can automatically lock devices or apps in the Classroom app**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets teachers lock a student's device or app without the student's approval. **Not configured** (default) requires the student to agree before the teacher can lock the device or app. Applies to devices enrolled through Apple's Automated Device Enrollment (DEP).
+- **Students can automatically join Classroom class**: Device must be in Apple's Device Enrollment Program (DEP). **Allow** lets students join a class without prompting the teacher. **Not configured** (default) requires teacher approval to join a class. Applies to devices enrolled through Apple's Automated Device Enrollment (DEP). 
 
 ## Password
 
