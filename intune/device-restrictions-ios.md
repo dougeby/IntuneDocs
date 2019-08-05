@@ -166,7 +166,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **App store (supervised only)**: **Block** prevents access to the app store on supervised devices. **Not configured** (default) allows access.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
   - **Installing apps from App Store (supervised only)**: Choose **Block** to block the app store from the device home screen. End users can continue to use iTunes or the Apple Configurator to install apps. **Not configured** (default) allows the app store on the home screen.
   - **Automatic app downloads (supervised only)**: Choose **Block** to prevent automatic downloading of apps bought on other devices. It doesn't affect updates to existing apps. **Not configured** (default) allows apps bought on other iOS devices to download on the device.
@@ -174,7 +174,7 @@ These settings are added to a device configuration profile in Intune, and then a
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** (default) allows store purchases within a running app.
 - **Explicit iTunes music, podcast, or news content (supervised only)**: Choose **Block** to prevent explicit iTunes music, podcast, or news content. **Not configured** (default) allows the device to access content rated as adult from the store. iOS 13 and newer may require supervised only devices. 
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Download content from iBook store flagged as 'Erotica'**: Choose **Block** to prevent stops users from downloading media from the iBook store that's tagged as erotica. **Not configured** (default) allows the user to download books with the "Erotica" category.
 - **Viewing corporate documents in unmanaged apps**: **Block** prevents viewing corporate documents in unmanaged apps. **Not configured** (default) allows corporate documents to be viewed in any app. For example, you want to prevent users from saving files from the OneDrive app to Dropbox. Configure this setting as **Block**. After the device receives the policy (for example, after a restart), it no longer allows saving.
@@ -195,12 +195,12 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. It stops managed apps from sending data using Airdrop. 
 - **Adding Game Center friends (supervised only)**: **Block** prevents users from adding Game Center friends. **Not configured** (default) allows the user to add friends in Game Center.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Game Center (supervised only)**: **Block** the use of the Game Center app. **Not configured** (default) allows using the Game Center app on the device.
 - **Multiplayer gaming (supervised only)**: Choose **Block** to prevent multiplayer gaming. **Not configured** (default) allows the user to play multiplayer games on the device.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Ratings region**: Choose the ratings region you want to use for allowed downloads. And then choose the allowed ratings for **Movies**, **TV Shows**, and **Apps**.
 
@@ -208,11 +208,11 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Camera (supervised only)**: Choose **Block** to prevent access to the camera on the device. **Not configured** (default) allows access to the device's camera.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
   - **FaceTime (supervised only)**: **Block** to prevent access to the FaceTime app. **Not configured** (default) allows access to the FaceTime app on the device.
 
-    Starting with iOS 13.0 and newer, this setting requires supervised devices.
+    Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Siri**: **Block** prevents access to Siri. **Not configured** (default) allows using the Siri voice assistant on the device.
   - **Siri while device is locked**: Choose **Block** to prevent access to Siri when the device is locked. **Not configured** (default) allows using the Siri voice assistant on the device when it's locked.
@@ -252,11 +252,11 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Safari (supervised only)**: **Block** using the Safari browser on the device. **Not configured** (default) allows users to use the Safari browser.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Autofill (supervised only)**: **Block** disables the autofill feature in Safari on the device. **Not configured** (default) allows users to change autocomplete settings in the web browser.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Cookies**: Choose how cookies are handled on the device. Your options:
   - Allow
@@ -376,11 +376,11 @@ To add apps to these lists, you can:
 
 - **Backup to iCloud (supervised only)**: **Not configured** (default) allows the user to back up the device to iCloud. **Block** stops the user from backing up the device to iCloud.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Block iCloud Document sync (supervised only)**: **Not configured** (default) allows document and key-value synchronization to your iCloud storage space. **Block** prevents iCloud from syncing documents and data.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Photo stream syncing to iCloud**: **Not configured** (default) lets users enable **My Photo Stream** on their device to sync to iCloud, and have photos available on all the user's devices. **Block** prevents photo stream syncing to iCloud.
 - **Encrypted backup**: **Require** so device backups must be encrypted.
@@ -390,7 +390,7 @@ To add apps to these lists, you can:
 - **Handoff**: **Not configured** (default) allows users to start work on an iOS device, and then continue the work they started on another iOS or macOS device. **Block** prevents this handoff.
 - **Block iCloud Keychain sync (supervised only)**: Choose **Block** to disable syncing credentials stored in the Keychain to iCloud. **Not configured** (default) allows users to sync these credentials.
 
-  Starting with iOS 13.0 and newer, this setting requires supervised devices.
+  Starting with iOS 13.0, this setting requires supervised devices.
 
 - **Block Enterprise Book Backup**: Choose **Block** to prevent users from backing up enterprise books. **Not configured** (default) allows users to back up these books.
 - **Block enterprise book metadata sync (notes and highlights)**: **Block** prevents syncing notes and highlights in enterprise books. **Not configured** (default) allows the syncing.
