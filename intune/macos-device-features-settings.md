@@ -74,9 +74,14 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 - **Files, folders, and custom apps**: **Add** the path of a file, folder, custom app, or system app you want to open when a user signs in to the device. System apps, or apps built or customized for your organization are typically in the `Applications` folder, with a path similar to `/Applications/AppName.app`. 
 
-  For example, enter `/Applications/Calculator.app`, `/Applications`, or `/Applications/Microsoft Office/root/Office16/winword.exe`. 
-
-  You can add many files, folders, and apps. When adding system apps, be sure to enter the correct path.
+  You can add many files, folders, and apps. For example, enter:  
+  
+  - `/Applications/Calculator.app`
+  - `/Applications`
+  - `/Applications/Microsoft Office/root/Office16/winword.exe`
+  - `/Users/UserName/music/itunes.app`
+  
+  When adding any app, folder, or file, be sure to enter the correct path. Not all items are in the `Applications` folder. If a user moves an item from one location to another, then the path changes. This moved item won't be opened when the user signs in.
 
 ## Login window
 
