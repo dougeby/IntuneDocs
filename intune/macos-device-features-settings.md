@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 08/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -69,6 +69,14 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
    Note the IP address. For example, it may return something similar to `PING myprinter.local (10.50.25.21)`.
 
 4. Use the IP address and resource path values. In this example, the IP address is `10.50.25.21`, and the resource path is `/ipp/port1`.
+
+## Login items
+
+- **Files, folders, and custom apps**: **Add** the path of a file, folder, custom app, or system app you want to open when a user signs in to the device. System apps, or apps built or customized for your organization are typically in the `Applications` folder, with a path similar to `/Applications/AppName.app`. 
+
+  For example, enter `/Applications/Calculator.app`, `/Applications`, or `/Applications/Microsoft Office/root/Office16/winword.exe`. 
+
+  You can add many files, folders, and apps. When adding system apps, be sure to enter the correct path.
 
 ## Login window
 
