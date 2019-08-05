@@ -1539,7 +1539,7 @@ The method `onMAMIdentitySwitchRequired` is called for all implicit identity cha
 
   * If an identity switch is blocked, the result is the same as if `Receive` sharing settings had prohibited the data ingress.
 
-  * If a Service is running on the main thread, `reportIdentitySwitchResult` **must** be called synchronously or the UI thread will hang.
+  * If a Service is running on the main thread, `reportIdentitySwitchResult` **must** be called synchronously or the UI thread stops responding.
 
   * For **`Activity`** creation, `onMAMIdentitySwitchRequired` will be called before `onMAMCreate`. If the app must show UI to determine whether to allow the identity switch, that UI must be shown using a *different* activity.
 
