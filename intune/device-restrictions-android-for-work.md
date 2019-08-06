@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -89,12 +89,9 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
 - **Single app**: Users can only access a single app on the device. When the device starts, only the specific app starts. Users are restricted from opening new apps or from changing the running app.
 
-  **Steps**
-  1. Choose **Select a managed app**, and select the managed Google Play app from the list. 
+  - **Select a managed app**: Select the managed Google Play app from the list.
 
-      If you don't have any apps listed, then [add some Android apps](apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
-
-  2. Choose **OK** > **OK** to add the app.
+    If you don't have any apps listed, then [add some Android apps](apps-add-android-for-work.md) to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
 
 - **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
@@ -107,41 +104,69 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   >
   > When using multi-app kiosk mode with Managed Home Screen, dialer/phone apps may not function properly. 
 
-  - Choose **Add**, and select your apps from the list.
+  - **Add**: Select your apps from the list.
 
     If the **Managed Home Screen** app isn't listed, then [add it from Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Be sure to [assign the app](apps-deploy.md) to the device group created for your dedicated devices.
 
     You can also add other [Android apps](apps-add-android-for-work.md) and [web apps](web-app.md) created by your organization to the device. Be sure to [assign the app to the device group created for your dedicated devices](apps-deploy.md).
 
-  - **Virtual home button**: Choose **Enable** to show a home button on the dedicated device. When selected, it returns the user to the device's home screen so users can easily switch between apps. On some Android devices, users may need to swipe up on the screen to show the home button. **Disable** doesn't show a home button, so users must use the back button to switch between apps.
-  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator: 
+  - **Virtual home button**: A soft-key button that returns users to the Managed Home Screen so users can switch between apps. Your options:
+
+    - **Not configured** (default): A home button isn't shown. Users must use the back button to switch between apps.
+    - **Swipe up**: A home button shows when a user swipes up on the device.
+    - **Floating**: Shows a persistent, floating home button on the device.
+
+  - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator:
   
     1. Continues to select the back button until the "Exit kiosk" button is shown. 
-    2. Selects the button, and enters the **Leave kiosk mode code** PIN.
-    3. When done making changes, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode. 
+    2. Selects the **Exit kiosk** button, and enters the **Leave kiosk mode code** PIN.
+    3. When finished, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode.
 
     **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
 
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
 
   - **Set custom URL background**: Enter a URL to customize the background screen on the dedicated device.
-    
+
     > [!NOTE]
     > For most cases, we recommend starting with images of at least the following sizes:
     >
     > - Phone: 1080x1920 px
     > - Tablet: 1920x1080 px
-    >    
+    >
     > For the best experience and crisp details, it’s suggested that per device image assets be created to the display specifications.
     >
     > Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
-  - **Wi-Fi configuration**: Choose **Enable** to allow end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) prevents users from connecting to WiFi networks while in the Managed Home Screen (lock task mode).
+
+  - **Wi-Fi configuration**: **Enable** shows the Wi-Fi control on the Managed Home Screen, and allows end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Wi-Fi control on the Managed Home Screen. It prevents users from connecting to Wi-Fi networks while in the Managed Home Screen (lock task mode).
 
     More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
 
-  - **Bluetooth configuration**: Choose **Enable** to allow Bluetooth on the device, and allow end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) prevents users from configuring Bluetooth and pairing devices while in the Managed Home Screen (lock task mode). 
+  - **Bluetooth configuration**: **Enable** shows the Bluetooth control on the Managed Home Screen, and allows end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Bluetooth control on the Managed Home Screen. It prevents users from configuring Bluetooth and pairing devices while in the Managed Home Screen (lock task mode).
 
     More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+
+  - **Flashlight access**: **Enable** shows the flashlight control on the Managed Home Screen, and allows end users to turn the flashlight on or off. **Not configured** (default) doesn't show the flashlight control on Managed Home Screen. It prevents users from using the flashlight while in the Managed Home Screen (lock task mode).
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+
+  - **Media volume control**: **Enable** shows the media volume control on the Managed Home Screen, and allows end users to adjust the volume using a slider. **Not configured** (default) doesn't show the media volume control on Managed Home Screen. It prevents users from adjusting the volume while in the Managed Home Screen (lock task mode).
+
+    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+
+  - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen. When enabled, also configure:
+
+    - **Set custom screen saver image**: Enter the URL to a custom image. For example, enter:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      If you don't enter a URL, then the device's default image is used, if there is a default image.
+
+    - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to `0`, the screen saver is active until a user interacts with the device.
+    - **Number of seconds the device is inactive before showing screen saver**: Choose how long the device is idle before showing the screensaver. Enter a value between 1-9999999 seconds. Default is `30` seconds. You must enter a number greater than zero (`0`).
+    - **Detect media before starting screen saver**: **Enable** (default) doesn't show the screen saver if audio or video is playing on the device. **Not configured** shows the screen saver, even if audio or video is playing.
 
 ### Device password settings
 
