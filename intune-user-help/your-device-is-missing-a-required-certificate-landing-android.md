@@ -19,7 +19,7 @@ searchScope:
 
 # optional metadata
 
-ROBOTS:  
+ROBOTS: NOINDEX, NOFOLLOW  
 #audience:
 #ms.devlang:
 ms.reviewer: esmich
