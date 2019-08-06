@@ -30,18 +30,20 @@ ms.collection: M365-identity-device-management
 
 You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
-For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do this, you would:
+For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do set up this access, you would:
 
 1. Create a scope tag called Seattle.
 2. Create a role assignment for the Policy and Profile Manager role with: 
     - Members (Groups) = A security group named Seattle IT admins. All admins in this group will have  permission to manage policies and profiles for users/devices in the Scope (Groups).
     - Scope (Groups) = A security group named Seattle users. All users/devices in this group can have their profiles and policies managed by the admins in the Members (Groups). 
     - Scope (Tags) = Seattle. Admins in the Member (Groups) can see devices that also have the Seattle scope tag.
-3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to be able to access.
+3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to have access to.
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
 ## Default scope tag
-All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The default scope tag is added to all existing role assignments to maintain parity with the admin experience. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
+The default scope tag is automatically added to all untagged objects that support scope tags. If you don't want admins to see Intune objects with a default scope tag, remove the default scope tag from the role assignment.
+
+The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
 
 ## To create a scope tag
 
