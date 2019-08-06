@@ -118,11 +118,11 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
   - **Leave kiosk mode**: Choose **Enable** to allow Administrators to temporarily pause kiosk mode to update the device. To use this feature, the administrator:
   
-    1. Continues to select the back button until the "Exit kiosk" button is shown. 
+    1. Continues to select the back button until the **Exit kiosk** button is shown. 
     2. Selects the **Exit kiosk** button, and enters the **Leave kiosk mode code** PIN.
     3. When finished, select the **Managed Home Screen** app. This step relocks the device into multi-app kiosk mode.
 
-    **Disable** doesn't give the ability to pause kiosk mode. If the administrator continues to select the back button, and selects the "Exit kiosk" button, then a message states that a passcode is required.
+      When set to **Not configured**, administrators can't pause kiosk mode. If the administrator continues to select the back button, and selects the **Exit kiosk** button, then a message states that a passcode is required.
 
     - **Leave kiosk mode code**: Enter a 4-6 digit numeric PIN. The administrator uses this PIN to temporarily pause kiosk mode.
 
@@ -154,7 +154,9 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
     More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
 
-  - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen. When enabled, also configure:
+  - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen.
+
+    When enabled, also configure:
 
     - **Set custom screen saver image**: Enter the URL to a custom image. For example, enter:
 
@@ -164,7 +166,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
       If you don't enter a URL, then the device's default image is used, if there is a default image.
 
-    - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to `0`, the screen saver is active until a user interacts with the device.
+    - **Number of seconds the device shows screen saver before turning off screen**: Choose how long the device shows the screensaver. Enter a value between 0-9999999 seconds. Default is `0` seconds. When left blank, or set to zero (`0`), the screen saver is active until a user interacts with the device.
     - **Number of seconds the device is inactive before showing screen saver**: Choose how long the device is idle before showing the screensaver. Enter a value between 1-9999999 seconds. Default is `30` seconds. You must enter a number greater than zero (`0`).
     - **Detect media before starting screen saver**: **Enable** (default) doesn't show the screen saver if audio or video is playing on the device. **Not configured** shows the screen saver, even if audio or video is playing.
 
