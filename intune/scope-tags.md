@@ -41,7 +41,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
 ## Default scope tag
-The default scope tag is automatically added to all untagged objects that support scope tags. To preven admins from seeing objects with a default scope tag, remove the default scope tag from the role assignment.
+The default scope tag is automatically added to all untagged objects that support scope tags. To prevent admins from seeing objects with a default scope tag, remove the default scope tag from the role assignment.
 
 The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
 
