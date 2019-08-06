@@ -76,7 +76,7 @@ For available app installs on Android work profile devices, you can view app ins
 ## Device configuration
 
 ### Some unsupervised iOS device restrictions will become supervised-only with the iOS 13.0 release <!-- 4867809  -->
-Some settings will apply to supervised-only devices with the iOS 13.0 release. These settings include:
+Some settings will apply to supervised devices starting with the iOS 13.0 release. These settings include:
 
 - App Store, Doc Viewing, Gaming
   - App store
