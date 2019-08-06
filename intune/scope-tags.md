@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Filter policies with scope tags in Microsoft Intune - Azure | Microsoft Docs
+title: Use role-based access control (RBAC) and scope tags for distributed IT in Intune | Microsoft Docs
 description: Use scope tags to filter configuration profiles to specific roles.
 keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/08/2019
+ms.date: 08/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.technology:
@@ -40,6 +40,8 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 3. Add the Seattle scope tag to policies and profiles that you want admins in Members (Groups) to be able to access.
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
+## Default scope tag
+All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The default scope tag is added to all existing role assignments to maintain parity with the admin experience. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
 
 ## To create a scope tag
 
