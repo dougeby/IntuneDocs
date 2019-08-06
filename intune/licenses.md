@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -29,28 +29,33 @@ ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# Licenses that include Intune
+# Microsoft Intune licensing
+Microsoft Intune is available for different customer needs and organization sizes, from a simple-to-use management experience for schools and small businesses, to more advanced functionality required by enterprise customers. Most licenses that include Microsoft Intune also grant the rights to use System Center Configuration Manager, as long as the subscription remains active. Microsoft unified endpoint management is integral to the security and operations of the modern workplace.
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+## Microsoft Intune
+Intune is included in the following licenses:
 
-The following table shows which version of Intune is available in each license:
+- Microsoft 365 E5
+- Microsoft 365 E3
+- Enterprise Mobility + Security E5
+- Enterprise Mobility + Security E3
+- Microsoft 365 Business
+- Microsoft 365 F1
 
-| License | Intune version included | Price and feature comparison |
-|-----------------------------------------------------------------------|-------------------------------------------------------------|---|
-| Intune | Intune | [Learn more](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E3 | Intune | [Learn more](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Enterprise Mobility + Security E5 | Intune | [Learn more](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) |
-| Microsoft 365 Education A1 | Intune for Education | [Learn more](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A3 | Intune for Education | [Learn more](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 Education A5 | Intune for Education | [Learn more](https://www.microsoft.com/en-us/education/buy-license/microsoft365/default.aspx#) |
-| Microsoft 365 E3 | Intune | [Learn more](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 E5 | Intune | [Learn more](https://www.microsoft.com/en-US/microsoft-365/enterprise) |
-| Microsoft 365 F1 | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
-| Microsoft 365 Business | Intune | [Learn more](https://www.microsoft.com/en-us/microsoft-365/business) |
 
-Intune isn't included in licenses not in this list.
 
-A proper license is required if a user benefits directly or indirectly from any feature covered by that license.
+## Microsoft Intune for Education
+Intune for Education is included in the following licenses:
+
+- Microsoft 365 Education A5
+- Microsoft 365 Education A3
+
+## Additional information
+- A Microsoft Intune user and device subscription is available as a standalone, in addition to the bundles listed above.
+- A Microsoft Intune device-only subscription is available for kiosk-type scenarios where no user-affinity features are used.
+- The appropriate Microsoft Intune license is required if a user or device benefits directly or indirectly from the Microsoft Intune service, including access to the Microsoft Intune service through a [Microsoft API](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use).
+- Intune isn't included in licenses not in the previous tables.
+
+Visit the [Microsoft Licensing](https://www.microsoft.com/licensing/default) page for the latest information about product editions, product licensing updates, volume licensing plans, and other information related to your specific use cases.  
 
 For information about how user and device licenses affect access to services, as well as how to assign a license to a user, see the [Assign Intune licenses to your user accounts article](licenses-assign.md).
-
