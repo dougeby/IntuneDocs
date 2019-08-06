@@ -85,3 +85,7 @@ Complete these steps to manually identify and install the certificate on your de
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your company support.
 
 If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your company support will need to help you install. Contact your company support for help using contact information available at the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+
+## Next steps  
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
