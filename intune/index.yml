@@ -68,7 +68,7 @@ conceptualContent:
           text: Windows enrollment methods
       footerLink:
         text: See more
-        url: device-enrollment.md
+        url: ./enrollment/index.yml
     - title: Manage devices
       links:
         - url: device-management.md
