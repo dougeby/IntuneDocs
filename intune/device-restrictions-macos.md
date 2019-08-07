@@ -156,7 +156,7 @@ To configure the list, click **Add**, then specify a name of your choice, option
 - **Block iCloud Bookmark Backup**: **Block** prevents iCloud from syncing the devices Bookmarks. **Not configured** (default) allows Bookmark synchronization to iCloud.
 - **Block iCloud Notes Backup**: **Block** prevents iCloud from syncing the devices Notes. **Not configured** (default) allows Notes synchronization to iCloud.
 - **Block iCloud Photo Library**: **Block** disables iCloud Photo Library, and prevents iCloud from syncing the devices photos. Any photos not fully downloaded from iCloud Photo Library are removed from local storage on the device. **Not configured** (default) allows syncing photos between the device and the iCloud Photo Library.
-- **Handoff**: **Not configured** (default) allows users to start work on a macOS device, and then continue the work they started on another iOS or macOS device. **Block** prevents this handoff.
+- **Handoff**: **Not configured** (default) allows users to start work on a macOS device, and then continue the work they started on another iOS or macOS device. **Block** prevents the Handoff feature on the device. 
 
   This feature applies to:  
   - macOS 10.15 and newer
