@@ -57,6 +57,7 @@ You cannot rename or remove the initial onmicrosoft.com domain name. You can add
 4. The **Verify domain** dialog box opens giving you the values to create the TXT record in your DNS hosting provider.
     - **GoDaddy users**: Microsoft 365 admin center redirects you to GoDaddy's login page. After you enter your credentials and accept the domain change permission agreement, the TXT record is created automatically. You can alternatively [create the TXT record](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
     - **Register.com users**: Follow the [step-by-step instructions](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) to create the TXT record.
+5. [You may need to create additional DNS records for Intune enrollments](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium).
 
 The steps to add and verify a custom domain can also be [performed in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
