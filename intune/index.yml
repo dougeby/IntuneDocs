@@ -19,16 +19,19 @@ highlightedContent:
     - title: What's new
       itemType: whats-new
       url: whats-new.md
-    - title: Get started
+    - title: Common scenarios
+      itemType: learn
+      url: common-scenarios.md    
+    - title: What can Intune do for my company?
+      itemType: get-started
+      url: get-started-evaluation.md        
+    - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
     - title: Get support
       itemType: reference
       url: get-support.md
-
 conceptualContent:
-  title: Conceptual title
-  summary: conceptual summary
   items:
     - title: Intune adoption hub
       links:
@@ -40,7 +43,7 @@ conceptualContent:
           text: Intune migration guide
         - url: migration-guide-communication-plan.md
           itemType: concept
-          text: Plan communications for Intune adoption
+          text: Communication plan for your users
     - title: Set up Intune
       links:
         - url: setup-steps.md
