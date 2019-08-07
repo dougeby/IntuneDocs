@@ -109,7 +109,7 @@ conceptualContent:
         - url: app-management.md
           itemType: concept
           text: App management overview
-        - url: Add apps.md
+        - url: add-apps.md
           itemType: concept
           text: Add apps to Intune
         - url: apps-deploy.md
