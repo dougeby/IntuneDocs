@@ -26,27 +26,35 @@ highlightedContent:
       itemType: reference
       url: get-support.md
 
-productDirectory:
-  title: Product directory
-  summary: product directory section summary
-  items:
-    - title: product dir 1
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/app-types.png
-      links:
-        - url: whats-new.md
-          text: what's new link
-    - title: product dir 2
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/app-types.png
-      links:
-        - url: whats-new.md
-          text: what's new link
-
 conceptualContent:
   title: Conceptual title
   summary: conceptual summary
   items:
+    - title: Intune adoption hub
+      links:
+        - url: planning-guide.md
+          itemType: concept
+          text: Intune planning guide 
+        - url: migration-guide.md
+          itemType: concept
+          text: Intune migration guide
+        - url: windows-enrollment-methods.md
+          itemType: concept
+          text: Windows enrollment methods
+        - url: migration-guide-communication-plan.md
+          itemType: concept
+          text: Plan communications for Intune adoption
+    - title: Set up Intune
+      links:
+        - url: setup-steps.md
+          itemType: how-to-guide
+          text: Steps to set up Intune
+        - url: supported-devices-browsers.md
+          itemType: reference
+          text: Supported operating systems and browsers
+        - url: network-bandwidth-use.md
+          itemType: reference
+          text: Network configuration requirements
     - title: Enroll devices
       links:
         - url: device-enrollment.md
@@ -61,14 +69,6 @@ conceptualContent:
       footerLink:
         text: See more
         url: device-enrollment.md
-    - title: Manage devices2
-      links:
-        - url: device-management.md
-          itemType: concept
-          text: Device management overview
-        - url: device-management-capabilities.md
-          itemType: concept
-          text: Device management capabilities
     - title: Manage devices
       links:
         - url: device-management.md
@@ -77,3 +77,49 @@ conceptualContent:
         - url: device-management-capabilities.md
           itemType: concept
           text: Device management capabilities
+    - title: Set device compliance
+      links:
+        - url: device-compliance-get-started.md
+          itemType: concept
+          text: Device compliance overview
+        - url: create-compliance-policy.md
+          itemType: concept
+          text: Create a compliance policy
+    - title: Configure device settings
+      links:
+        - url: device-profiles.md
+          itemType: concept
+          text: Device configuration overview
+        - url: device-profile-create.md
+          itemType: how-to-guide
+          text: Create a device profile 
+    - title: Protect device data
+      links:
+        - url: device-protect.md
+          itemType: concept
+          text: Device protection overview
+        - url: conditional-access.md
+          itemType: concept
+          text: Conditional access overview
+        - url: mobile-threat-defense.md
+          itemType: concept
+          text: Mobile Threat Defense integration with Intune
+    - title: Manage apps
+      links:
+        - url: app-management.md
+          itemType: concept
+          text: App management overview
+        - url: Add apps.md
+          itemType: concept
+          text: Add apps to Intune
+        - url: apps-deploy.md
+          itemType: concept
+          text: Assign apps to groups
+        - url: app-protection-policy.md
+          itemType: concept
+          text: App protection policies
+    - title: Troubleshooting
+      links:
+        - url: help-desk-operators.md
+          itemType: concept
+          text: Help users troubleshoot problems
