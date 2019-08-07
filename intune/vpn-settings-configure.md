@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -51,16 +51,16 @@ You can create VPN profiles using the following connection types:
 |-|-|
 |Automatic|Windows 10|
 |Check Point Capsule VPN|- Android<br/>- Android Enterprise work profiles<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise fully managed<br/>- iOS<br/>- macOS|
+|Cisco AnyConnect|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise device owner (fully managed)<br/>- iOS<br/>- macOS|
 |Cisco (IPSec)|iOS|
 |Citrix SSO|- Android<br/>- Android Enterprise work profiles: Use [app configuration policy](app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |Custom VPN|- iOS<br/>- macOS|
-|F5 Access|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise fully managed<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|F5 Access|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise device owner (fully managed)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2|Windows 10|
 |L2TP|Windows 10|
 |Palo Alto Networks GlobalProtect|- Android Enterprise work profiles: Use [app configuration policy](app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise fully managed<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Pulse Secure|- Android<br/>- Android Enterprise work profiles<br/>- Android Enterprise device owner (fully managed)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |SonicWall Mobile Connect|- Android<br/>- Android Enterprise work profiles<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Zscaler|- Android Enterprise work profiles: Use [app configuration policy](app-configuration-policies-use-android.md)<br/>- iOS|
 
@@ -79,7 +79,8 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
     - **Platform**: Choose the platform of your devices. Your options:
 
       - **Android**
-      - **Android enterprise**
+      - **Android Enterprise** > **Device owner only**
+      - **Android Enterprise** > **Work profile only**
       - **iOS**
       - **macOS**
       - **Windows Phone 8.1**
