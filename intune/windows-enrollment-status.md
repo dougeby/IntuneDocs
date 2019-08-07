@@ -86,7 +86,7 @@ To turn on the Enrollment Status Page, follow the steps below.
 
 ## Set the enrollment status page priority
 
-A user might be in multiple groups and have multiple Enrollment Status Page profiles. To deal with such conflicts, you can set the priorities for each profile. At the time of enrollment, if someone has more than one Enrollment Status Page profile, only the highest priority profile is applied to the enrolling device.
+A user can be in many groups and have mumany Enrollment Status Page profiles. To handle such conflicts, you can set the priorities for each profile. At the time of enrollment, if someone has more than one Enrollment Status Page profile, only the highest priority profile is applied to the enrolling device.
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. Hover over the profile in the list.
@@ -185,7 +185,7 @@ Top questions for troubleshooting.
 ### Known issues
 Below are known issues. 
 - Disabling the ESP profile doesn't remove ESP policy from devices and users still get ESP when they log in to device for first time. The policy isn't removed when the ESP profile is disabled. You must deploy OMA-URI to disable the ESP. See above for instructions on how to disable ESP using OMA-URI. 
-- A pending reboot will always cause a timeout. The timeout occurs because the device needs to be rebooted. The reboot is required to allow tiem for the item tracked in Enrollment Status Page to complete. A reboot will cause the Enrollment Status Page to exit and after reboot the device won't enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
+- A pending reboot will always cause a timeout. The timeout occurs because the device needs to be rebooted. The reboot is required to allow time for the item tracked in Enrollment Status Page to complete. A reboot will cause the Enrollment Status Page to exit and after reboot the device won't enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
 - A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase. User credentials aren't preserved during reboot. Have the user enter their credentials then the Enrollment Status Page can continue. 
 - SCEP certificates with Windows Hello for Business policies will cause timeout because user can't complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. Fix ETA is Summer 2019. 
 - Enrollment Status Page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. The Enrollment Status Page waits for Azure AD registration to complete. The issue is fixed in Windows 10 version 1903 and newer.  
@@ -195,7 +195,7 @@ Below are known issues.
     - the user must enter the credentials again before proceeding from Device Setup phase to the Account setup phase
 - ESP is stuck for a long time or never completes the “Identifying” phase. Intune computes the ESP policies during the identifying phase. A device may never complete computing ESP policies if the current user doesn't have an Intune licensed assigned.  
 - Configuring Windows Defender Application Control causes a prompt to reboot during Autopilot. Configuring Windows Defender Application (AppLocker CSP) requires a reboot. When this policy is configured, it may cause a device to reboot during Autopilot. Currently, there's no way to suppress or postpone the reboot.
-- When the DeviceLock policy (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) is enabled as part of an ESP profile, the autologon from OOBE, and/or to the user's desktop, could fail unexpectantly for two reasons.
+- When the DeviceLock policy (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) is enabled as part of an ESP profile, the OOBE or user desktop autologon could fail unexpectantly for two reasons.
   - If the device didn't reboot before exiting the ESP Device setup phase, the user may be prompted to enter their Azure AD credentials. This prompt occurs instead of a successful autologon where the user sees the Windows first log in animation.
   - The autologn will fail if the device rebooted after the user entered their Azure AD credentials but before exiting the ESP Device setup phase. This failure occurs because the ESP Device setup phase never completed. The workaround is to reset the device.
 
