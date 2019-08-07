@@ -138,21 +138,13 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
     >
     > Modern displays have higher pixel densities and can display equivalent 2K/4K definition images.
 
-  - **Wi-Fi configuration**: **Enable** shows the Wi-Fi control on the Managed Home Screen, and allows end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Wi-Fi control on the Managed Home Screen. It prevents users from connecting to Wi-Fi networks while in the Managed Home Screen (lock task mode).
+  - **Wi-Fi configuration**: **Enable** shows the Wi-Fi control on the Managed Home Screen, and allows end users to connect the device to different WiFi networks. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Wi-Fi control on the Managed Home Screen. It prevents users from connecting to Wi-Fi networks while using the Managed Home Screen.
 
-    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+  - **Bluetooth configuration**: **Enable** shows the Bluetooth control on the Managed Home Screen, and allows end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Bluetooth control on the Managed Home Screen. It prevents users from configuring Bluetooth and pairing devices while using the Managed Home Screen.
 
-  - **Bluetooth configuration**: **Enable** shows the Bluetooth control on the Managed Home Screen, and allows end users to pair devices over Bluetooth. Enabling this feature also turns on device location. **Not configured** (default) doesn't show the Bluetooth control on the Managed Home Screen. It prevents users from configuring Bluetooth and pairing devices while in the Managed Home Screen (lock task mode).
+  - **Flashlight access**: **Enable** shows the flashlight control on the Managed Home Screen, and allows end users to turn the flashlight on or off. **Not configured** (default) doesn't show the flashlight control on Managed Home Screen. It prevents users from using the flashlight while using the Managed Home Screen.
 
-    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
-
-  - **Flashlight access**: **Enable** shows the flashlight control on the Managed Home Screen, and allows end users to turn the flashlight on or off. **Not configured** (default) doesn't show the flashlight control on Managed Home Screen. It prevents users from using the flashlight while in the Managed Home Screen (lock task mode).
-
-    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
-
-  - **Media volume control**: **Enable** shows the media volume control on the Managed Home Screen, and allows end users to adjust the volume using a slider. **Not configured** (default) doesn't show the media volume control on Managed Home Screen. It prevents users from adjusting the volume while in the Managed Home Screen (lock task mode).
-
-    More on [lock task mode](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (opens Android's web site).
+  - **Media volume control**: **Enable** shows the media volume control on the Managed Home Screen, and allows end users to adjust the device's media volume using a slider. **Not configured** (default) doesn't show the media volume control on Managed Home Screen. It prevents users from adjusting the device's media volume while using the Managed Home Screen, unless their hardware buttons support it. 
 
   - **Screen saver mode**: **Enable** shows a screensaver on the Managed Home Screen when the device is locked or times out. **Not configured** (default) doesn't show a screensaver on the Managed Home Screen.
 
