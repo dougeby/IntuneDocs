@@ -61,12 +61,9 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### Zebra Technologies is a supported OEM for OEMConfig on Android Enterprise devices  <!-- 4843713 -->
 
-In Intune, you can create device configuration profiles, and apply settings to Android Enterprise Zebra devices using OEMConfig (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **OEMConfig** for profile type).
+In Intune, you can create device configuration profiles, and apply settings to Android Enterprise devices using OEMConfig (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **OEMConfig** for profile type).
 
 In this update, Zebra Technologies is a supported original equipment manufacturer (OEM) for OEMConfig. For more information on OEMConfig, see [Use and manage Android Enterprise devices with OEMConfig](android-oem-configuration-overview.md).
-
-> [!NOTE]
-> OEMConfig supports one profile per device. 
 
 Applies to:  
 - Android enterprise
