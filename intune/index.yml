@@ -38,9 +38,6 @@ conceptualContent:
         - url: migration-guide.md
           itemType: concept
           text: Intune migration guide
-        - url: windows-enrollment-methods.md
-          itemType: concept
-          text: Windows enrollment methods
         - url: migration-guide-communication-plan.md
           itemType: concept
           text: Plan communications for Intune adoption
