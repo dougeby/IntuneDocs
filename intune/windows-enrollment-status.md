@@ -109,7 +109,7 @@ For device preparation, the enrollment status page tracks Trusted Platform Modul
 
 ### Device setup
 
-For device setup, the Enrollment Status Page tracks the following items if they're assigned to All Devices:
+For device setup, the Enrollment Status Page tracks the following items if they're assigned to All Devices or a device group in which the enrolling device is a member:
 - Security policies
   - One configuration service provider (CSP) for all enrollments.
   - Actual CSPs configured by Intune aren't tracked here.
