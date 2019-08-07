@@ -152,7 +152,7 @@ You can zoom in to the exact coordinates of a device using the **Locate device**
 
 ### Device security
 
-#### Advanced settings for Windows Defender Firewall  (public preview )  <!--  1311949     -->  
+#### Advanced settings for Windows Defender Firewall  (public preview)  <!--  1311949     -->  
 Use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
 
 #### Updated UI for managing security baselines   <!-- 4091125     -->
@@ -250,7 +250,7 @@ To see the new setting, go to [Windows 10 (and newer) device settings to allow o
 Applies to: Windows 10 and later
 
 #### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
-In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built-in to Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built into Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
 - The same user group
 - The same devices group
 - A single device
