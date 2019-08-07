@@ -37,7 +37,7 @@ ms.collection: M365-identity-device-management
  
 The Enrollment Status Page (ESP) displays installation information about Windows 10 devices (version 1803 and later) during initial device enrollment. For example:
 - when using [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/) 
-- or any time a managed device is started for the first time after an Enrollment Status Page policy has been applied. 
+- or anytime a managed device is started for the first time after an Enrollment Status Page policy has been applied. 
 
 The Enrollment Status Page can help users understand the status of their device during device setup. You can create multiple Enrollment Status Page profiles and apply them to different groups that contain users. Profiles can be set to:
 - Show installation progress.
@@ -61,8 +61,8 @@ You can also set the priority order for each profile to account for conflicting 
 <tr><td>Allow users to reset device if installation error occurs<td>A <b>Reset device</b> button is displayed if there is an installation failure.<td>The <b>Reset device</b> button is not displayed if there is an installation failure.
 <tr><td>Allow users to use device if installation error occurs<td>A <b>Continue anyway</b> button is displayed if there is an installation failure.<td>The <b>Continue anyway</b> button is not displayed if there is an installation failure.
 <tr><td>Show timeout error when installation takes longer than specified number of minutes<td colspan="2">Specify the number of minutes to wait for installation to complete. A default value of 60 minutes is entered.
-<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display in case of an installation error.<td>The default message is displayed: <br><b>Installation exceeded the time limit set by your organization. Please try again or contact your IT support person for help.<b>
-<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
+<tr><td>Show custom message when an error occurs<td>A text box is provided where you can specify a custom message to display if an installation error occurs.<td>The default message is displayed: <br><b>Installation exceeded the time limit set by your organization. Try again or contact your IT support person for help.<b>
+<tr><td>Allow users to collect logs about installation errors<td>If there is an installation error, a <b>Collect logs</b> button is displayed. <br>If the user clicks this button, they are asked to choose a location to save the log file <b>MDMDiagReport.cab</b><td>The <b>Collect logs</b> button is not displayed if there is an installation error.
 <tr><td>Block device use until these required apps are installed if they are assigned to the user/device<td colspan="2">Choose <b>All</b> or <b>Selected</b>. <br><br>If <b>Selected</b> is chosen, a <b>Select apps</b> button is displayed that enables you to choose which apps must be installed prior to enabling device use.
 </table>
 
@@ -134,7 +134,7 @@ For account setup, the Enrollment Status Page tracks the following items if they
 - Applications
   - Per user LoB MSI apps that are assigned to All Devices, All Users, or a user group in which the user enrolling the device is a member.
   - Per machine LoB MSI apps that are assigned to All Users or a user group in which the user enrolling device is a member.
-  - LoB store apps, online store apps, and offline store apps that are assigned to any of the following:
+  - LoB store apps, online store apps, and offline store apps that are assigned to any of the following objects:
     - All Devices
     - All Users
     - A user group in which the user enrolling the device is a member with installation context set to User.
@@ -150,8 +150,8 @@ Top questions for troubleshooting.
 - Why were my applications not installed during Device setup phase during Autopilot deployment that is using Enrollment Status Page?
   - To guarantee applications are installed during the Device setup phase during an Autopilot deployment, first, ensure the application is selected to block access in the selected apps list.  Second, ensure you targeting of the applications to the same AAD device group your Autopilot profile was assigned to. 
 
-- Why is the Enrollment Status Page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-mgmt enrolled device?  
-  - The Enrollment status page is designed to provide installation status for all enrollment methods, this includes Autopilot, Configuration Manager co-mgmt and also when any new user logs into the device that has Enrollment status page policy applied for the first time.  
+- Why is the Enrollment Status Page showing for non-Autopilot deployments, for example when a user logs in for the first time on a Configuration Manager co-management enrolled device?  
+  - The Enrollment status page is designed to provide installation status for all enrollment methods, including Autopilot, Configuration Manager co-management and also when any new user logs into the device that has Enrollment status page policy applied for the first time.  
 
 - How can I disable the Enrollment Status Page if it has been configured on the device?
   - Enrollment status page policy is set on a device at the time of enrollment, to disable it you can create a custom OMA-URI setting with the following configurations:
@@ -178,9 +178,9 @@ Below are known issues.
 - A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase.  Cause is user credentials are not preserved during reboot. Have the user enter their credentials then the Enrollment Status Page can continue. 
 - SCEP certificates with Windows Hello for Business policies will cause timeout because user cannot complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. Fix ETA is Summer 2019. 
 - Enrollment Status Page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. Cause is due to Enrollment Status Page waiting on Azure AD registration to complete, the issue is fixed in Windows 10 version 1903 and newer.  
-- Hybrid Azure AD Autopilot deployment with ESP takes longer than the timeout duration defined in the ESP profile. On Hybrid Azure AD Autopilot deployments the ESP will take 40 minutes longer than the value set in the ESP profile to allow for on-prem AD connector to create the new device record to Azure AD. 
-- Windows logon page isn't pre-populated with username in Autopilot User Driven Mode. If there is a reboot during Device Setup phase of ESP the user credentials are not preserved and they will need to enter them before transitioning from Device Setup phase of ESP to the Account setup phase.  
-- ESP is stuck for a very long time or never completes “Identifying” phase. The identifying phase is when Intune is computing the ESP policies, a device may never complete computing ESP policies if the current user does not have an Intune licensed assigned.  
+- Hybrid Azure AD Autopilot deployment with ESP takes longer than the timeout duration defined in the ESP profile. On Hybrid Azure AD Autopilot deployments, the ESP will take 40 minutes longer than the value set in the ESP profile to allow for on-prem AD connector to create the new device record to Azure AD. 
+- Windows logon page isn't pre-populated with username in Autopilot User Driven Mode. If there is a reboot during Device Setup phase of ESP, the user credentials are not preserved and they will need to enter them before transitioning from Device Setup phase of ESP to the Account setup phase.  
+- ESP is stuck for a long time or never completes “Identifying” phase. The identifying phase is when Intune is computing the ESP policies, a device may never complete computing ESP policies if the current user does not have an Intune licensed assigned.  
 - Configuring Windows Defender Application Control causes a prompt to reboot during Autopilot. Configuring Windows Defender Application (AppLocker CSP) requires a reboot in order to and when this policy is configured it may cause a device to reboot during Autopilot.   There is no way to suppress or postpone the reboot currently.
 - When the DeviceLock policy (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) is enabled as part of an ESP profile, the autologon from OOBE and/or to the user's desktop could fail unexpectantly for two reasons.  First, if the device was not rebooted prior to the exit of ESP Device setup phase, the user may be prompted to enter in their AAD credentials instead of the autologon successfully executing and the user seeing the Windows first logged in animation. Second, if the device was rebooted prior to the exit of ESP Device setup phase (and after the user had entered in AAD credentials), the autologon will fail because the ESP Device setup phase never completed, the workaround is to reset the device.
 
