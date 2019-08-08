@@ -229,4 +229,19 @@ additionalContent:
           url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
         - text: Intune for Education
           url: https://docs.microsoft.com/intune-education/what-is-intune-for-education         
-  footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
+    - title: Community resources
+      summary: Check out even more resources
+      items:
+      - title: Intune technical forums
+        links: 
+        - text: Ask your questions and find answers on the Intune forums
+          url: https://docs.microsoft.com/microsoft-365/
+      - title: Get Intune news on Twitter
+        links: 
+        - text: Twitter 
+          url: https://docs.microsoft.com/microsoft-365/
+      - title: Another thing to follow...
+        links: 
+        - text: This thing...
+          url: https://docs.microsoft.com/microsoft-365/     
+footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
