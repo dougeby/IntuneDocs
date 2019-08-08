@@ -87,7 +87,7 @@ Use the firewall to control connections per-application, rather than per-port. U
 For more information about Apple FileVault settings, see [FDEFileVault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) in the Apple developer content. 
 
 > [!IMPORTANT]  
-     > As of macOS 10.15, FileVault configuration requires user approved MDM enrollment. 
+> As of macOS 10.15, FileVault configuration requires user approved MDM enrollment. 
 
 - **FileVault**  
   You can *enable* Full Disk Encryption using XTS-AES 128 with FileVault on devices that run macOS 10.13 and later.  
