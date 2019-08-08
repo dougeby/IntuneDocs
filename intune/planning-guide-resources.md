@@ -50,17 +50,14 @@ Here's a list of table templates for each section.
 | | Compliance policy | |
 | | Conditional Access policy|-|
 
-
 ## Further reading
 
 Check out these resources for additional information that may be helpful during the Intune deployment planning, design, and implementation process.
 
-- [Microsoft Intune documentation](/intune/) - The full set of Intune documentation.
+- [Microsoft Intune documentation](http://docs.microsoft.com/intune/) - The full set of Intune documentation.
 
-- [Intune blog](https://blogs.technet.microsoft.com/enterprisemobility/) - Posts to help you understand how Intune fits into the larger Enterprise Mobility picture.
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter) - Learn Microsoft's approach to security, privacy, compliance, and transparency in all Microsoft cloud products and services.
 
-- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter) - Learn Microsoft's approach to security, privacy, compliance, and transparency in all Microsoft cloud products and services.
+- [Intune User Voice](https://microsoftintune.uservoice.com/) - Want to request a feature or vote with other customers for features? Provide feedback on Intune through User Voice. We're listening.
 
-- [Intune User Voice](http://microsoftintune.uservoice.com/) - Want to request a feature or vote with other customers for features? Provide feedback on Intune through User Voice. We're listening.
-
-- [Enrollment guide](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) - A set of docs you can use as is or modify as part of your communication plan with your end users to help them understand what it means to have their personal device enrolled in Intune.
+- [Plan communication](planning-guide-resources.md) - The communication plan is a key element to an Intune adoption. In this article, you can download the Intune Adoption Kit that includes email templates, an Intune Enrollment guide, and links to instructional videos to assist you in educating your end users on enrollment.
