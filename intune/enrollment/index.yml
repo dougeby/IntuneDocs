@@ -48,9 +48,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Use Autopilot to enroll Windows devices
-            url: ../tutorial-use-autopilot-enroll-devices.md
-          - text: Use Apple's Corporate Device Enrollment features to enroll iOS devices
-            url: ../tutorial-use-device-enrollment-program-enroll-ios.md                        
+            url: ../tutorial-use-autopilot-enroll-devices.md                 
       - linkListType: how-to-guide
         links:
           - text: Set up Windows enrollment

@@ -147,3 +147,12 @@ productDirectory:
           text: US government endpoints
         - url: https://azure.microsoft.com/global-infrastructure/government/  
           text: Microsoft Azure Government site
+additionalContent:
+  sections:
+    - items:
+      - title: Microsoft 365
+        summary: Explore Microsoft 365, a complete solution that includes Intune.
+        url: https://docs.microsoft.com/microsoft-365/
+      - title: Intune for Education
+        summary: Learn about Intune for Education 
+        url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
