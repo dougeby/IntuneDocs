@@ -158,6 +158,7 @@ productDirectory:
           text: US government endpoints
         - url: https://azure.microsoft.com/global-infrastructure/government/  
           text: Microsoft Azure Government site
+
 additionalContent:
   sections:
     - title: Other Intune documentation
@@ -228,20 +229,19 @@ additionalContent:
         - text: Intune for Education
           url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
         - text: Intune for Education
-          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education         
-    - title: Community resources
-      summary: Check out even more resources
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education        
+    - title: Single button
+      summary: Let's see if this works for a single button
+      imageSrc: ./media/ca-diagram-1.png
       items:
-      - title: Intune technical forums
-        links: 
-        - text: Ask your questions and find answers on the Intune forums
-          url: https://docs.microsoft.com/microsoft-365/
-      - title: Get Intune news on Twitter
-        links: 
-        - text: Twitter 
-          url: https://docs.microsoft.com/microsoft-365/
-      - title: Another thing to follow...
-        links: 
-        - text: This thing...
-          url: https://docs.microsoft.com/microsoft-365/     
+        - title: first care
+          summary: this is the first summary
+          url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
+        - title: first care
+          summary: this is the first summary
+          url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description        
+        - title: first care
+          summary: this is the first summary
+          url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
+
   footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
