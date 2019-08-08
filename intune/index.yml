@@ -244,4 +244,4 @@ additionalContent:
         links: 
         - text: This thing...
           url: https://docs.microsoft.com/microsoft-365/     
-footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
+  footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
