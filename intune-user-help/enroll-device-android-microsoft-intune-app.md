@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -54,9 +54,9 @@ Complete these steps to set up and enroll your device.
 
      If you've been instructed to use another method, continue to step 3.    
 
-1. Connect to Wi-Fi and tap **NEXT**. Follow the step that matches your enrollment method. 
+3. Connect to Wi-Fi and tap **NEXT**. Follow the step that matches your enrollment method. 
 
-    * Token: When you get to the Google sign-in screen, complete the steps in [Token enrollment](#token-enrollment).    
+    * Token: When you get to the Google sign-in screen, complete the steps in [Token enrollment](#token-enrollment).  
     * Google Zero Touch: After you connect to Wi-Fi, your device will be recognized by your organization. Continue to step 4 and follow the onscreen prompts until setup is complete.    
  
        ![Example image of Google terms screen that you see if you're using Google Zero Touch, highlighting Accept & Continue button.](./media/google-zero-touch-intune-app-01.png)   
@@ -82,21 +82,19 @@ Complete these steps to set up and enroll your device.
 
    ![Example image of Set up your work phone screen, highlighting Install button.](./media/fully-managed-intune-app-11.png)   
 
-10. When you get the message that your device is ready, tap **DONE**. 
+10. Tap **START** to open the Microsoft Intune app and register your device. 
 
-11. Go to your apps and open the Microsoft Intune app. Select **SIGN IN**. 
+    ![Example image of Set up your work phone screen, highlighting Start button.](./media/fully-managed-intune-app-17.png)   
 
-12. On the **Setup access** screen, you'll see a list of pending tasks. Tap **CONTINUE**.  
+11. Tap **SIGN IN** and then tap **NEXT** to begin registration. When you see the message that registration is complete, tap **DONE**.  
 
-       ![Example image of Microsoft Intune app, Set up access screen, showing pending tasks.](./media/fully-managed-intune-app-14.png)   
+    ![Example image of Set up access, register your device screen, highlighting Done button.](./media/fully-managed-intune-app-19.png)   
 
-13. When device registration is complete, tap **CONTINUE**. Microsoft Intune might prompt you to update additional device settings.   
+10. When you see the message that your device is ready, tap **DONE**.  
 
-       ![Example image of Microsoft Intune app, Update device settings screen.](./media/fully-managed-intune-app-15-2.png)   
+    ![Example image of Set up your work phone screen, highlighting Done button.](./media/fully-managed-intune-app-18.png)   
 
-14. Setup is complete when all items in the list show a green circle. You can now access company resources.  
-
-       ![Example image of Microsoft Intune app, Set up access screen, showing completed tasks.](./media/fully-managed-intune-app-16.png)   
+If you have trouble accessing your organization's resources, you might need to update additional settings on your device. Sign in to the Microsoft Intune app to check for required updates.   
 
 
 ## QR code enrollment  
@@ -122,11 +120,7 @@ In this section, you'll enter your company-provided token. When you're done, we'
 
 3. On the **Enroll this device** screen, select **Next**.  
 
-   ![Example image of Enroll this device screen. Shows illustration of a QR code; highlights Next button.](./media/token-intune-app-02.png)  
-
-4. Select **Enter code**.
-
-   ![Example screenshot of an active QR code scanner. Highlights Enter code button.](./media/token-intune-app-03.png)  
+4. Select **Enter code**.  
 
 5. On the **Scan or enter code** screen, type in the code that your organization gave you.  Then click **Next**.  
 
