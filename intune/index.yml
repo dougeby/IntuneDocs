@@ -160,6 +160,8 @@ productDirectory:
           text: Microsoft Azure Government site
 additionalContent:
   sections:
+    - title: Other Intune documentation
+      summary: Check out documentation for other areas of Intune
     - items:
       - title: Microsoft 365
         summary: Explore Microsoft 365, a complete solution that includes Intune.
@@ -170,4 +172,35 @@ additionalContent:
       - title: Intune for Education
         summary: Learn about Intune for Education 
         url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
-        
+
+additionalContent:
+  sections:
+    - title: Other Resources
+      summary: Check out resources
+      items:
+      - title: Microsoft 365
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+      - title: Intune for Education
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+      - title: Government 
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+  footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
+  
