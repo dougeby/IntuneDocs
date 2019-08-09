@@ -82,6 +82,9 @@ You can now continue, and set up synchronization in the Intune console.
 1. In the **Client apps** workload, choose **Setup** > **Microsoft Store for Business**.
 2. Click **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
+> [!NOTE]
+> Apps with encrypted app packages are currently not supported and will not be synchronized to Intune
+
 ## Assign apps
 
 You assign apps from the store in the same way you assign any other Intune app. For more information, see [How to assign apps to groups with Microsoft Intune](apps-deploy.md). 
