@@ -10,6 +10,20 @@
     href: ../device-management-capabilities.md
   - name: Enrollment options
     href: ../enrollment-options.md  
+- name: Quickstarts
+  items:
+  - name: Set up automatic enrollment
+    href: quickstart-setup-auto-enrollment.md
+  - name: Enroll your Windows 10 device
+    href: quickstart-enroll-windows-device.md
+- name: Tutorials
+  items:
+  - name: Use Autopilot to enroll Windows devices
+    href: tutorial-use-autopilot-enroll-devices.md
+  - name: Use the DEP to enroll iOS devices 
+    href: tutorial-use-device-enrollment-program-enroll-ios.md
+- name: Concepts
+  items:
   - name: Terms and conditions
     href: ../terms-and-conditions-create.md
   - name: Restrictions
@@ -26,18 +40,6 @@
     href: ../device-enrollment-manager-enroll.md
   - name: Map devices to groups
     href: ../device-group-mapping.md    
-- name: Quickstarts
-  items:
-  - name: Set up automatic enrollment
-    href: quickstart-setup-auto-enrollment.md
-  - name: Enroll your Windows 10 device
-    href: quickstart-enroll-windows-device.md
-- name: Tutorials
-  items:
-  - name: Use Autopilot to enroll Windows devices
-    href: tutorial-use-autopilot-enroll-devices.md
-  - name: Use the DEP to enroll iOS devices 
-    href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: How-to guides
   items:
   - name: Set up Windows enrollment
