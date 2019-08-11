@@ -28,9 +28,9 @@ highlightedContent:
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
-    - title: Role-based access control
-      itemType: overview
-      url: role-based-access-control.md
+#    - title: Role-based access control
+#      itemType: overview
+#      url: role-based-access-control.md
 conceptualContent:
   items:
     - title: Plan for Intune adoption
@@ -124,45 +124,46 @@ conceptualContent:
           itemType: concept
           text: Help users troubleshoot problems
 
-productDirectory:
-  items:
+
+# productDirectory:
+#  items:
     # Card
-    - title: Intune for Education
+#    - title: Intune for Education
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/logo-intune.png
-      links:
-        - url: ../introduction-intune-education
-          text: How is Intune for Education different from the full version
-        - url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
-          text: What is Intune for Education
-        - url: https://www.microsoft.com/education/intune/default.aspx
-          text: Intune for Education site 
+#      imageSrc: ./media/logo-intune.png
+#      links:
+#        - url: ../introduction-intune-education
+#          text: How is Intune for Education different from the full version
+#        - url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+#          text: What is Intune for Education
+#        - url: https://www.microsoft.com/education/intune/default.aspx
+#          text: Intune for Education site 
     # Card
-    - title: iOS device management
+#    - title: iOS device management
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/apple.png
-      links:
-        - url: ../introduction-intune-education
-          text: Something about iOS
-        - url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
-          text: iOS stuff 2
-        - url: https://www.microsoft.com/education/intune/default.aspx
-          text: iOS stuff 3
+#      imageSrc: ./media/apple.png
+#      links:
+#        - url: ../introduction-intune-education
+#          text: Something about iOS
+#        - url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+#          text: iOS stuff 2
+#        - url: https://www.microsoft.com/education/intune/default.aspx
+#          text: iOS stuff 3
     # Card
-    - title: Government
-      imageSrc: ./media/logo-gov.png
-      links:
-        - url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
-          text: Enterprise Mobility + Security for US Government Service Description
-        - url: https://docs.microsoft.com/intune/intune-us-government-endpoints
-          text: US government endpoints
-        - url: https://azure.microsoft.com/global-infrastructure/government/  
-          text: Microsoft Azure Government site
+#    - title: Government
+#      imageSrc: ./media/logo-gov.png
+#      links:
+#        - url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
+#          text: Enterprise Mobility + Security for US Government Service Description
+#        - url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+#          text: US government endpoints
+#        - url: https://azure.microsoft.com/global-infrastructure/government/  
+#          text: Microsoft Azure Government site
 
 additionalContent:
   sections:
     - title: Other Resources
-      summary: Check out resources
+      summary:
       items:
       - title: Microsoft 365
         links: 
@@ -224,10 +225,10 @@ additionalContent:
           url: https://docs.microsoft.com/microsoft-365/
       - title: Get Intune news on Twitter
         links: 
-        - text: Twitter 
+        - text: Intune User Voice
           url: https://docs.microsoft.com/microsoft-365/
       - title: Another thing to follow...
         links: 
-        - text: This thing...
+        - text: Twitter
           url: https://docs.microsoft.com/microsoft-365/     
   footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
