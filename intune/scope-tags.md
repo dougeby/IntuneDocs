@@ -41,7 +41,7 @@ For example, let’s say that a Seattle regional office admin is assigned the Po
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
 ## Default scope tag
-The default scope tag is automatically added to all untagged objects that support scope tags. To prevent admins from seeing objects with a default scope tag, remove the default scope tag from the role assignment.
+The default scope tag is automatically added to all untagged objects that support scope tags. You can prevent admins from seeing objects with a default scope tag. To do so, remove the default scope tag from the role assignment.
 
 The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
 
@@ -114,7 +114,7 @@ When working with scope tags, remember these details:
 - Device Enrollment Program (DEP) devices and DEP profiles associated with the DEP token inherit the scope tags assigned to the associated DEP token.
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
-- If a role assignment has no scope tag, that IT admin can see all objects based on the IT admins permissions. This means that having no scope tags means that you essentially have all scope tags.
+- If a role assignment has no scope tag, that IT admin can see all objects based on the IT admins permissions. Therefore, having no scope tags means that you essentially have all scope tags.
 - You can only assign a scope tag that you have in your role assignments.
 - You can only target groups that are listed in the Scope (Groups) of your role assignment.
 - If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
