@@ -89,8 +89,8 @@ You can assign both custom and built-in roles to your users. To be assigned an I
 To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose a role > choose an assignment. You’ll see the following pages:
 
 - **Properties**: The name, description, role, members, scopes, and tags of the assignment.
-- **Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
-- **Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
+- **Members**: All users in the listed Azure security groups have permission to manage the users/devices that are listed in Scope (Groups).
+- **Scope (Groups)**: All users/devices in these Azure security groups can be managed by the users in Members.
 - **[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
