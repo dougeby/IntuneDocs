@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 08/15/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,15 +55,19 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 - **Root certificate**:  
   An exported copy of your root certificate from your Enterprise CA.
 
-- **Intune Certificate Connector** (also called the *NDES Certificate Connector*):  
+- **Microsoft Intune Certificate Connector** (also called the *NDES Certificate Connector*):  
   In the Intune portal, go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install the connector for PKCS #12*. Use the download link in the portal to start download of the certificate connector installer **NDESConnectorSetup.exe**.  
+
+  Intune supports multiple instances of this connector as long as each instance is on a separate Windows server. You can install an instance of this connector on the same server as an instance of the PFX Certificate Connector for Microsoft Intune. Multiple connectors support high availability and load balancing as each connector instance can process PKCS certificate requests.
 
   This connector processes PKCS certificate requests used for authentication or S/MIME email signing.
 
   The NDES certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
 - **PFX Certificate Connector for Microsoft Intune**:  
-   If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+  If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+
+  Intune supports only one instance of this connector. You can install this connector on the same serer as an instance of the Microsoft Intune Certificate connector.
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
 
