@@ -163,16 +163,26 @@ Top questions for troubleshooting.
       - when any new user logs into the device that has Enrollment Status Page policy applied for the first time
 
 - How can I disable the Enrollment Status Page if it has been configured on the device?
-  - Enrollment status page policy is set on a device at the time of enrollment. To disable it, you can create a custom OMA-URI setting with the following configurations:
+  - Enrollment status page policy is set on a device at the time of enrollment. To disable the Enrollment Status Page, you must disable user and device Enrollment Status Page sections. You can do this by creating custom OMA-URI settings with the following configurations.
 
-    ```
-    Name:  DisableESP (choose a name you desire)
-    Description:  (enter a description)
-    OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
-    Data type:  Boolean
-    Value:  True 
-    ```
+      Disable user Enrollment Status Page:
 
+      ```
+      Name:  Disable User ESP (choose a name you desire)
+      Description:  (enter a description)
+      OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
+      Data type:  Boolean
+      Value:  True 
+      ```
+      Disable device Enrollment Status Page:
+      
+      ```
+      Name:  Disable Device ESP (choose a name you desire)
+      Description:  (enter a description)
+      OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipDeviceStatusPage
+      Data type:  Boolean
+      Value:  True 
+      ```
 - How can I collect log files?
   - There are two ways Enrollment Status Page log files can be collected:
       - Enable the ability for users to collect logs in the ESP policy. When a timeout occurs in the Enrollment Status Page, the end user can choose the option to **Collect logs**. By inserting a USB drive, the log files can be copied to the drive
