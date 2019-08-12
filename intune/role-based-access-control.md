@@ -94,7 +94,7 @@ To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose
 - **[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
-If a user has multiple role assignments, permissions. and scope tags, those role assignments extend to different objects as follows:
+If a user has multiple role assignments, permissions, and scope tags, those role assignments extend to different objects as follows:
 
 - Assign permissions and scope tags only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions and scope tags don’t apply to objects in other role assignments unless the other assignment specifically grants them.
 - Other permissions (such as Create, Read, Update, Delete) and scope tags apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.

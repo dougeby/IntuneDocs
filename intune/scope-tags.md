@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 You can use role-based access control and scope tags to make sure that the right admins have the right access and visibility to the right Intune objects. Roles determine what access admins have to which objects. Scope tags determine which objects admins can see.
 
-For example, let’s say that a Seattle regional office admin is assigned the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To do set up this access, you would:
+For example, let’s say a Seattle regional office admin has the Policy and Profile Manager role. You want this admin to see and manage only the profiles and policies that only apply to Seattle devices. To set up this access, you would:
 
 1. Create a scope tag called Seattle.
 2. Create a role assignment for the Policy and Profile Manager role with: 
@@ -114,7 +114,7 @@ When working with scope tags, remember these details:
 - Device Enrollment Program (DEP) devices and DEP profiles associated with the DEP token inherit the scope tags assigned to the associated DEP token.
 - When an admin creates an object in Intune, all scope tags assigned to that admin will be automatically assigned to the new object.
 - Intune RBAC doesn't apply to Azure Active Directory roles. So, the Intune Service Admins and Global Admins roles have full admin access to Intune no matter what scope tags they have.
-- If a role assignment has no scope tag, that IT admin can see all objects based on the IT admins permissions. Therefore, having no scope tags means that you essentially have all scope tags.
+- If a role assignment has no scope tag, that IT admin can see all objects based on the IT admins permissions. Admins that have no scope tags essentially have all scope tags.
 - You can only assign a scope tag that you have in your role assignments.
 - You can only target groups that are listed in the Scope (Groups) of your role assignment.
 - If you have a scope tag assigned to your role, you can't delete all scope tags on an Intune object. At least one scope tag is required.
