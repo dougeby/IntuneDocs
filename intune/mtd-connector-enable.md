@@ -35,11 +35,12 @@ ms.collection: M365-identity-device-management
 
 During Mobile Threat Defense (MTD) setup, you've configured a policy for classifying threats in your MTD partner console and you've created the device compliance policy in Intune. If you've already configured the Intune connector in the MTD partner console, you can now enable the MTD connection for MTD partner applications.
 
-When you integrate a new application to Intune Mobile Threat Defense and enable the connection, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, like [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy.  These policies can be ignored, but should not be edited, deleted, or disabled.
+When you integrate a new application to Intune Mobile Threat Defense and enable the connection to Intune, Intune creates a classic conditional access policy in Azure Active Directory. Each MTD app you integrate, including [Defender ATP](advanced-threat-protection.md) or any of our additional [MTD partners](mobile-threat-defense.md#mobile-threat-defense-partners), creates a new classic conditional access policy. These policies can be ignored, but should not be edited, deleted, or disabled.
 
 Classic conditional access policies for MTD apps: 
 
-- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID. The ID is required so that devices and can successfully report their status to Intune.  
+- Are used by Intune MTD to require that devices are registered in Azure AD so that they have a device ID before communicating to MTD partners. The ID is required so that devices and can successfully report their status to Intune.  
+- Have no effect on any other Cloud apps or Resources.  
 - Are distinct from conditional access policies you might create to help manage MTD.
 - By default, don’t interact with other conditional access policies you use for evaluation.  
 
