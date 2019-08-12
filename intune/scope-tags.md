@@ -41,7 +41,7 @@ For example, let’s say a Seattle regional office admin has the Policy and Prof
 4. Add the Seattle scope tag to devices that you want visible to admins in the Members (Groups). 
 
 ## Default scope tag
-The default scope tag is automatically added to all untagged objects that support scope tags. You can prevent admins from seeing objects with a default scope tag. To do so, remove the default scope tag from the role assignment.
+The default scope tag is automatically added to all untagged objects that support scope tags.
 
 The default scope tag feature is similar to the security scopes feature in System Center Configuration Manager. 
 
@@ -98,10 +98,10 @@ For objects that support scope tags, scope tags usually appear under **Propertie
 
 
 ## Scope tag details
-When working with scope tags, remember these details:
+When working with scope tags, remember these details: 
 
 - You can assign scope tags to an Intune object type if the tenant can have multiple versions of that object (such as role assignments or apps).
-  The following Intune objects are exceptions to this rule and don't support scope tags:
+  The following Intune objects are exceptions to this rule and don't currently support scope tags:
     - Windows ESP profiles
     - Device Categories
     - Enrollment Restrictions
