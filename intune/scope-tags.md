@@ -98,7 +98,7 @@ For objects that support scope tags, scope tags usually appear under **Propertie
 
 
 ## Scope tag details
-When working with scope tags, remember these details:
+When working with scope tags, remember these details: 
 
 - You can assign scope tags to an Intune object type if the tenant can have multiple versions of that object (such as role assignments or apps).
   The following Intune objects are exceptions to this rule and don't currently support scope tags:
