@@ -50,9 +50,6 @@ When a user is installing an iOS application from the Company Portal they will r
 ## Company information and privacy statement
 The company name is displayed as the Company Portal title. The privacy statement is displayed when a user clicks on the privacy link.
 
-Fields marked with an asterisk (*) are mandatory.
-
-
 | Field name | Max length | More information |
 |---|---|---|
 |**Company name**| 40 | This name is displayed as the title of the Company Portal and appears as text throughout the Intune user experience. |
@@ -63,12 +60,12 @@ Enter your company's support information to provide your employee with a contact
 
 |Field name|Max length|More information|
 |---|---|---|
-|**Contact name** | 40 | This name is displayed on the **Contact IT** page. |
-|**Phone number** | 20 | This contact number is displayed on the **Contact IT** page to enable employees to contact you for support. |
-|**Email address**| 40 | This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format `alias@domainname.com`. |
-|**Website name**| 40 | This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Contact IT** page in the Company Portal. |
-|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format `https://www.contoso.com`. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal. |
-| **Additional information**| 120 | Displayed on the **Contact IT** page. |
+|**Contact name** | 40 | This name is displayed on the **Help and Support** page. |
+|**Phone number** | 20 | This contact number is displayed on the **Help and Support** page to enable employees to contact you for support. |
+|**Email address**| 40 | This contact address is displayed on the **Help and Support** page. You must enter a valid email address in the format `alias@domainname.com`. |
+|**Website name**| 40 | This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Help and Support** page in the Company Portal. |
+|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format `https://www.contoso.com`. If you don't specify a URL, nothing is displayed for the support website on the **Help and Support** page in the Company Portal. |
+| **Additional information**| 120 | Displayed on the **Help and Support** page. |
 
 
 ## Company identity branding customization
@@ -168,7 +165,7 @@ Some platforms and configurations do not allow self-service device actions. This
 
 |     Platform    |    Retire    |    Wipe     |    Rename<sup>(4)</sup>    |    Sync    |    Remote Lock    |    Reset Passcode    |    Key Recovery    |
 |------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10(<sup>(2)</sup><sup>(3)</sup>    |    Available<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Windows Phone only    |    Windows Phone only    |    NA    |
+|    Windows 10<sup>(3)</sup>    |    Available<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Windows Phone only    |    Windows Phone only    |    NA    |
 |    iOS<sup>(3)</sup>    |    Available    |    Available    |    Available    |    Available    |    Available    |    Available    |    NA    |
 |    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Available    |    NA    |    Available    |    Available    |    Available    |    NA    |    Available<sup>(2)</sup>    |
 |    Android<sup>(3)</sup>    |    Available<sup>(7)</sup>    |    Available<sup>(7)</sup>    |    Available    |    Available    |    Available    |    Available<sup>(6)</sup>    |    NA    |
@@ -181,7 +178,6 @@ Some platforms and configurations do not allow self-service device actions. This
 <sup>(5)</sup> Remote Wipe is not available on MacOS devices.<br>
 <sup>(6)</sup> Passcode reset is not supported on some Android and Android Enterprise configurations. For more information, see [Reset or remove a device passcode in Intune](device-passcode-reset.md).<br>
 <sup>(7)</sup> Retire and Wipe is not available on Android Enterprise Device Owner scenarios (COPE, COBO, COSU).<br> 
-<sup>(8)</sup> Rename only changes the device name in the Company Portal App or website, not on the device.<br>
 
 ## Next steps
 
