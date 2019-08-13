@@ -124,7 +124,7 @@ Still need help? Check out the complete [Knox Mobile Enrollment User Guide](http
 
 ## Frequently asked questions
 
-- **Device Owner support:** Intune supports enrolling devices to only kiosk mode using Android enterprise. Other Android enterprise device owner modes will be supported as they become available in Intune.
+- **Device Owner support:** - **Device Owner support:** Intune supports enrolling Dedicated and Fully Managed devices by using the KME portal. Other Android enterprise device owner modes will be supported as they become available in Intune.
 
 - **No work profile support:** KME is a corporate device enrollment method and devices enrolled in Android work profile ensure work and personal data are separate on personal devices. So, device enrollment to work profile using KME is not a supported scenario in Intune.
 
