@@ -212,27 +212,27 @@ Now that you've installed your token, you can create an enrollment profile for D
     |------------------------------------------|------------------------------------------|
     | <strong>Passcode</strong> | Prompt the user for a passcode. Always require a passcode for unsecured devices unless access is controlled in some other manner (like kiosk mode that restricts the device to one app). |
     | <strong>Location Services</strong> | Prompt the user for their location. |
-    | <strong>Restore</strong> | Display the **Apps & Data** screen. This screen gives the user the option to restore or transfer data from iCloud Backup when they set up the device. |
-    | <strong>iCloud and Apple ID</strong> | Give the user the options to sign in with their **Apple ID** and use **iCloud**.                         |
+    | <strong>Restore</strong> | Display the Apps & Data screen. This screen gives the user the option to restore or transfer data from iCloud Backup when they set up the device. |
+    | <strong>iCloud and Apple ID</strong> | Give the user the options to sign in with their Apple ID and use iCloud.                         |
     | <strong>Terms and Conditions</strong> | Require the user to accept Apple's terms and conditions. |
     | <strong>Touch ID</strong> | Give the user the option to set up fingerprint identification for the device. |
     | <strong>Apple Pay</strong> | Give the user the option to set up Apple Pay on the device. |
     | <strong>Zoom</strong> | Give the user to the option to zoom the display when they set up the device. |
     | <strong>Siri</strong> | Give the user the option to set up Siri. |
-    | <strong>Diagnostic Data</strong> | Display the **Diagnostics** screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
+    | <strong>Diagnostic Data</strong> | Display the Diagnostics screen to the user. This screen gives the user the option to send diagnostic data to Apple. |
     | <strong>Display Tone</strong> | Give the user the option to turn on Display Tone. |
     | <strong>Privacy</strong> | Display the Privacy screen to the user. |
     | <strong>Android Migration</strong> | Give the user the option to migrate date from an Android device. |
-    | <strong>iMessage and FaceTime</strong> | Give the user the option to set up  iMessage and FaceTime. |
+    | <strong>iMessage and FaceTime</strong> | Give the user the option to set up iMessage and FaceTime. |
     | <strong>Onboarding</strong> | Display onboarding informational screens for user education, such as Cover Sheet and Multitasking and Control Center. |
     | <strong>Watch Migration</strong> | Give the user the option to migrate data from a watch device. |
     | <strong>Screen Time</strong> | Display the Screen Time screen. |
     | <strong>Software Update</strong> | Display the mandatory software update screen. |
     | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
-    | <strong>Appearance</strong> | Display the **Appearance** screen to the user. |
-    | <strong>Express Language</strong>| Display the **Express Language** screen to the user. |
+    | <strong>Appearance</strong> | Display the Appearance screen to the user. |
+    | <strong>Express Language</strong>| Display the Express Language screen to the user. |
     | <strong>Preferred Language</strong> | Give the user the option to choose their  **Preferred Language**. |
-    | <strong>Device to Device Migration</strong> | Give the user the option to migrate date from their old device to this device.|
+    | <strong>Device to Device Migration</strong> | Give the user the option to migrate data from their old device to this device.|
     
 
 16. Choose **Next** to go to the **Review + Create** page.
