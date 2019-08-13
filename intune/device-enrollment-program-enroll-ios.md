@@ -31,8 +31,6 @@ ms.collection: M365-identity-device-management
 
 # Automatically enroll iOS devices with Apple's Device Enrollment Program
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
 You can set up Intune to enroll iOS devices purchased through Apple's [Device Enrollment Program (DEP)](https://deploy.apple.com). DEP lets you enroll large numbers of devices without ever touching them. Devices like iPhones and iPads can be shipped directly to users. When the user turns on the device, Setup Assistant runs with preconfigured settings and the device enrolls into management.
 
 To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list of serial numbers or a purchase order number is required so you can assign devices to Intune for management. You create DEP enrollment profiles containing settings that applied to devices during enrollment.
@@ -40,9 +38,9 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 By the way, DEP enrollment doesn't work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 ## DEP and the Company Portal
-DEP enrollments are not compatible with the app store version of the Company Portal app. If you want users to have access to the Company Portal app on a DEP device, you must push the app to the device by using the **Install Company Portal with VPP** option in the DEP profile. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
+DEP enrollments aren't compatible with the app store version of the Company Portal app. You can give users access to the Company Portal app on a DEP device. To give them access, push the app to the device using **Install Company Portal with VPP** (Volume Purchase Program) in the DEP profile. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
- You can install the Company Portal app on devices that have already been enrolled with DEP. To do so, you must deploy the Company Portal app through Intune with an [Application Configuration policy](app-configuration-policies-use-ios.md) applied.
+ You can install the Company Portal app on devices already enrolled with DEP. To do so,  deploy the Company Portal app through Intune with an [Application Configuration policy](app-configuration-policies-use-ios.md) applied.
 
 ## What is supervised mode?
 Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it's especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
@@ -125,7 +123,7 @@ With the push certificate, Intune can enroll and manage iOS devices by pushing p
 Now that you've installed your token, you can create an enrollment profile for DEP devices. A device enrollment profile defines the settings applied to a group of devices during enrollment.
 
 > [!NOTE]
-> Devices will be blocked if there are not enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert when a token is about to expire or licenses are running low.
+> Devices will be blocked if there aren't enough Company Portal licenses for a VPP token, or if the token has expired. Intune will display an alert when a token is about to expire or licenses are running low.
  
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens**.
@@ -142,7 +140,7 @@ Now that you've installed your token, you can create an enrollment profile for D
 5. For **User Affinity**, choose whether devices with this profile must enroll with or without an assigned user.
     - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the Company Portal for services like installing apps. If using ADFS and the enrollment profile has **Authenticate with Company Portal instead of Setup Assistant** set to **No**, [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints) [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint) is required.
 
-    - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this option for devices that perform tasks without accessing local user data. Apps like the Company Portal app don’t work.
+    - **Enroll without User Affinity** - Choose this option for device unaffiliated with a single user. Use this option for devices that don't access local user data. Apps like the Company Portal app don’t work.
 
 5. If you chose **Enroll with User Affinity**, you can let users authenticate with Company Portal instead of the Apple Setup Assistant.
 
@@ -154,9 +152,9 @@ Now that you've installed your token, you can create an enrollment profile for D
     >    - prompt users who need to change their password when they first sign in
     >    - prompt users to reset their expired passwords during enrollment
     >
-    > These are not supported when authenticating with Apple Setup Assistant.
+    > These aren't supported when authenticating with Apple Setup Assistant.
 
-6. If you chose **Company Portal** for **Select where users must authenticate**, you can use a Volume Purchase Program (VPP) token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Requires that the Company Portal has already been added to the VPP token. Don't configure a policy to require the app for users, Intune will automatically install the Company Portal on devices with this enrollment profile applied. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID. 
+6. If you chose **Company Portal** for **Select where users must authenticate**, you can use a VPP token to automatically install the Company Portal on the device. In this case, the user doesn't have to supply an Apple ID. To install the Company Portal with a VPP token, choose a token under **Install Company Portal with VPP**. Requires that the Company Portal has already been added to the VPP token. Don't configure a policy to require the app for users, Intune will automatically install the Company Portal on devices with this enrollment profile applied. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app. If the token expires or runs out of licenses, Intune installs the App Store Company Portal instead and prompts for an Apple ID. 
 
     > [!NOTE]
     > When **Select where users must authenticate** is to **Company Portal**, make sure that the device enrollment process is performed within the first 24 hours of the company portal being downloaded to the DEP device. Otherwise enrollment might fail, and a factory reset will be needed to enroll the device.
@@ -166,6 +164,9 @@ Now that you've installed your token, you can create an enrollment profile for D
 7. If you chose **Setup Assistant** for **Select where users must authenticate**, but you also want to use Conditional Access or deploy company apps on the devices, you must install the Company Portal on the devices. To do so, choose **Yes** for **Install Company Portal**.  If you would like users to receive the Company Portal without having to authenticate into the app store, choose to **Install Company Portal with VPP** and select a VPP token. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app to deploy correctly.
 
 8. If you chose a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
+
+    Multi-factor authentication isn't supported on a single device locked in Single App Mode. This limitation exists because the device can’t switch to a different app to complete the second factor of authentication. Therefore, if you want multifactor authentication on a Single App Mode device, the second factor must be on a different device.
+
     This feature is only supported for iOS 11.3.1 and later.
 
    ![Screenshot of single app mode.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
