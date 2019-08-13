@@ -42,7 +42,7 @@ To enable Intune enrollment using Samsung KME, you use both the Intune and Samsu
 3. [Distribute the devices](#distribute-devices).
 
 
-A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
+A list of device identifiers (serial numbers and IMEIs) is automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
 
 
 ## Prerequisites
@@ -72,7 +72,7 @@ When your company is successfully registered, you can create your MDM profile fo
 |MDM Agent APK      | Yes       |https://aka.ms/intune_kme_deviceowner 
 |Enable this app as a Google Device Owner | Yes | Choose this option to enroll to Android enterprise. 
 |Supported MDM      | Yes       |Microsoft Intune 
-|Leave all system apps enabled | No | Choose this option to ensure all apps are enabled and available to the profile. If this option isn't selected, only a limited set of system apps display in the device's apps tray. Apps such as the Email app remain hidden. 
+|Leave all system apps enabled | No | Choose this option to ensure all apps are enabled and available to the profile. If this option isn't selected, only a limited set of system apps displays in the device's apps tray. Apps such as the Email app remain hidden. 
 |Custom JSON        | No        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. Learn [how to create an enrollment profile](android-kiosk-enroll.md). 
 | Add legal agreements | No | Leave this blank. 
 
