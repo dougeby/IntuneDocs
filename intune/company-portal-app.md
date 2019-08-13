@@ -3,12 +3,12 @@
 
 title: How to configure the Company Portal app
 titleSuffix: Microsoft Intune
-description: Learn how you can apply company specific branding to the Intune Company Portal app.
+description: Learn how you can apply company-specific branding to the Intune Company Portal app.
 keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 08/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -50,9 +50,6 @@ When a user is installing an iOS application from the Company Portal they will r
 ## Company information and privacy statement
 The company name is displayed as the Company Portal title. The privacy statement is displayed when a user clicks on the privacy link.
 
-Fields marked with an asterisk (*) are mandatory.
-
-
 | Field name | Max length | More information |
 |---|---|---|
 |**Company name**| 40 | This name is displayed as the title of the Company Portal and appears as text throughout the Intune user experience. |
@@ -63,12 +60,12 @@ Enter your company's support information to provide your employee with a contact
 
 |Field name|Max length|More information|
 |---|---|---|
-|**Contact name** | 40 | This name is displayed on the **Contact IT** page. |
-|**Phone number** | 20 | This contact number is displayed on the **Contact IT** page to enable employees to contact you for support. |
-|**Email address**| 40 | This contact address is displayed on the **Contact IT** page. You must enter a valid email address in the format `alias@domainname.com`. |
-|**Website name**| 40 | This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Contact IT** page in the Company Portal. |
-|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format `https://www.contoso.com`. If you don't specify a URL, nothing is displayed for the support website on the **Contact IT** page in the Company Portal. |
-| **Additional information**| 120 | Displayed on the **Contact IT** page. |
+|**Contact name** | 40 | This name is displayed on the **Help and Support** page. |
+|**Phone number** | 20 | This contact number is displayed on the **Help and Support** page to enable employees to contact you for support. |
+|**Email address**| 40 | This contact address is displayed on the **Help and Support** page. You must enter a valid email address in the format `alias@domainname.com`. |
+|**Website name**| 40 | This name is the friendly name that is displayed for the URL to the support website. If you specify a support website URL and no friendly name, then Go to IT website is displayed on the **Help and Support** page in the Company Portal. |
+|**Website URL**| 150 | If you have a support website that you want your users to use, specify the URL here. The URL must be in the format `https://www.contoso.com`. If you don't specify a URL, nothing is displayed for the support website on the **Help and Support** page in the Company Portal. |
+| **Additional information**| 120 | Displayed on the **Help and Support** page. |
 
 
 ## Company identity branding customization
@@ -150,6 +147,37 @@ The following keyboard shortcuts are available in the Windows Company Portal app
 End users will also be able to see the available shortcuts in the Windows Company Portal app.
 
 ![Screenshot of the available shortcuts in the Windows Company Portal](media/company-portal-app/company-portal-app-01.png)
+
+## User self-service device actions from the Company Portal
+
+Users can perform actions on their local or remote devices via the Company Portal app or Website. The actions that a user can perform varies based on device platform and configuration. In all cases, the remote device actions can only be performed by device’s Primary User.
+- **Retire** – Removes the device from Intune Management. In the company portal app and website, this shows as **Remove**.
+- **Wipe** – This action initiates a device reset. In the company portal website this is shown as **Reset**, or **Factory Reset** in the iOS Company Portal App.
+- **Rename** – This action changes the device name that the user can see in the Company Portal. It does not change the local device name, only the listing in the Company Portal.
+- **Sync** – This action initiates a device check-in with the Intune service. This shows as **Check Status** in the Company Portal.
+- **Remote Lock** – This locks the device, requiring a PIN to unlock it.
+- **Reset Passcode** – This action is used to reset device passcode. The passcode will be removed and the end user will be required to enter a new code in settings.
+- **Key Recovery** – This action is used to recover an Encryption key for encrypted devices.
+
+### Self Service Actions
+
+Some platforms and configurations do not allow self-service device actions. This table below provides further details about self service actions:
+
+|     Platform    |    Retire    |    Wipe     |    Rename<sup>(4)</sup>    |    Sync    |    Remote Lock    |    Reset Passcode    |    Key Recovery    |
+|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
+|    Windows 10<sup>(3)</sup>    |    Available<sup>(1)</sup>    |    Available    |    Available    |    Available    |    Windows Phone only    |    Windows Phone only    |    NA    |
+|    iOS<sup>(3)</sup>    |    Available    |    Available    |    Available    |    Available    |    Available    |    Available    |    NA    |
+|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    Available    |    NA    |    Available    |    Available    |    Available    |    NA    |    Available<sup>(2)</sup>    |
+|    Android<sup>(3)</sup>    |    Available<sup>(7)</sup>    |    Available<sup>(7)</sup>    |    Available    |    Available    |    Available    |    Available<sup>(6)</sup>    |    NA    |
+
+
+<sup>(1)</sup> Retire is always blocked on Azure AD Joined Windows devices.<br>
+<sup>(2)</sup> Key Recovery for MacOS is only available via the Web Portal.<br>
+<sup>(3)</sup> All remote actions are disabled if using a Device Enrollment Manager enrollment.<br>
+<sup>(4)</sup> Rename only changes the device name in the Company Portal App or website, not on the device.<br>
+<sup>(5)</sup> Remote Wipe is not available on MacOS devices.<br>
+<sup>(6)</sup> Passcode reset is not supported on some Android and Android Enterprise configurations. For more information, see [Reset or remove a device passcode in Intune](device-passcode-reset.md).<br>
+<sup>(7)</sup> Retire and Wipe is not available on Android Enterprise Device Owner scenarios (COPE, COBO, COSU).<br> 
 
 ## Next steps
 
