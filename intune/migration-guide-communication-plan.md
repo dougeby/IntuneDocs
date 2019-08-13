@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,7 +45,7 @@ After a certain period, you can begin enforcing compliance through Conditional A
 
 ## Intune Enrollment Guide
 
-You can provide the PDF to your users as-is, or you may customize the Word version to include your internal resources and contact information.
+We provide a PDF and Word version of the Intune Enrollment Guide. You can provide the PDF to your users as-is, or you may customize the Word version to include your internal resources and contact information.
 
 ## Instructional videos
 
