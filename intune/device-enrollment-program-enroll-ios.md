@@ -229,6 +229,11 @@ Now that you've installed your token, you can create an enrollment profile for D
     | <strong>Screen Time</strong> | Display the Screen Time screen. |
     | <strong>Software Update</strong> | Display the mandatory software update screen. |
     | <strong>SIM Setup</strong> | Give the user the option to add a cellular plan. |
+    | <strong>Appearance</strong> | Display the **Appearance** screen to the user. |
+    | <strong>Express Language</strong>| Display the **Express Language** screen to the user. |
+    | <strong>Preferred Language</strong> | Give the user the option to choose their  **Preferred Language**. |
+    | <strong>Device to Device Migration</strong> | Give the user the option to migrate date from their old device to this device.|
+    
 
 16. Choose **Next** to go to the **Review + Create** page.
 

@@ -159,6 +159,8 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>Display Tone</strong> | Give the user the option to turn on Display Tone. |
     | <strong>Appearance</strong> | Display the Appearance screen to the user. |
     | <strong>Registration</strong>| Require the user to register the device. |
+    | <strong>Privacy</strong>| Display the **Privacy** screen to the user. |
+    | <strong>Screen Time</strong>| Display the **Screen Time** screen to the user. |
    
 
 10. Choose **OK**.
