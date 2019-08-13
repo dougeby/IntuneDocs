@@ -166,6 +166,9 @@ Now that you've installed your token, you can create an enrollment profile for D
 7. If you chose **Setup Assistant** for **Select where users must authenticate**, but you also want to use Conditional Access or deploy company apps on the devices, you must install the Company Portal on the devices. To do so, choose **Yes** for **Install Company Portal**.  If you would like users to receive the Company Portal without having to authenticate into the app store, choose to **Install Company Portal with VPP** and select a VPP token. Make sure that the token doesn't expire and that you have enough device licenses for the Company Portal app to deploy correctly.
 
 8. If you chose a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Choose **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in using the Company Portal.
+
+    Multi-factor authentication isn't supported on devices locked in Single App Mode. This limitation exists because the device can’t switch to a different app to complete the second factor of authentication.
+
     This feature is only supported for iOS 11.3.1 and later.
 
    ![Screenshot of single app mode.](./media/device-enrollment-program-enroll-ios/single-app-mode.png)
