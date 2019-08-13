@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -38,70 +38,62 @@ This article describes these settings.
 
 [Create a device profile](device-profile-create.md).
 
-## Basic profile
+## Basic
 
 - **Wi-Fi type**: Choose **Basic**.
-- **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to.
+- **SSID**: Enter the **service set identifier**, which is the real name of the wireless network that devices connect to. However, users only see the **network name** you configured when they choose the connection.
 - **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
 - **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
 
-## Enterprise profile
+## Enterprise
 
 - **Wi-Fi type**: Choose **Enterprise**.
-- **SSID**: Short for **service set identifier**. This setting is the real name of the wireless network that devices connect to.
+- **SSID**: Enter the **service set identifier**, which is the real name of the wireless network that devices connect to. However, users only see the **network name** you configured when they choose the connection.
 - **Connect automatically**: Choose **Enable** to automatically connect to this network when the device is in range. Choose **Disable** to prevent devices from automatically connecting.
 - **Hidden network**: Choose **Enable** to hide this network from the list of available networks on the device. The SSID isn't broadcasted. Choose **Disable** to show this network in the list of available networks on the device.
 - **EAP type**: Choose the Extensible Authentication Protocol (EAP) type used to authenticate secured wireless connections. Your options: 
 
   - **EAP-TLS**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
-
-      Select **OK** to save your changes.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network. It authenticates the connection.
 
     - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
-      Select **OK** to save your changes.
+    - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.​
 
   - **EAP-TTLS**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network. It authenticates the connection.
 
-      Select **OK** to save your changes.
-
-    - **Client Authentication** - Choose an **Authentication method**. Your options:
+    - **Client Authentication**: Choose an **Authentication method**. Your options:
 
       - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
-        - **Non-EAP method (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
+        - **Non-EAP method (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network. Your options:
 
-          Your options: **Unencrypted password (PAP)**, **Challenge Handshake Authentication Protocol (CHAP)**, **Microsoft CHAP (MS-CHAP)**, or **Microsoft CHAP Version 2 (MS-CHAP v2)**
+          - **Unencrypted password (PAP)**
+          - **Challenge Handshake Authentication Protocol (CHAP)**
+          - **Microsoft CHAP (MS-CHAP)**
+          - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
-
-        Select **OK** to save your changes.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
   - **PEAP**: Also enter:
 
-    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
+    - **Server Trust** - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network. It authenticates the connection.
 
-      Select **OK** to save your changes.
-
-    - **Client Authentication** - Choose an **Authentication method**. Your options:
+    - **Client Authentication**: Choose an **Authentication method**. Your options:
 
       - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. Also enter:
-        - **Non-EAP method for authentication (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network.
+        - **Non-EAP method for authentication (inner identity)**: Choose how you authenticate the connection. Be sure you choose the same protocol that's configured on your Wi-Fi network. Your options:
 
-          Your options: **None** or **Microsoft CHAP Version 2 (MS-CHAP v2)**
+          - **None**
+          - **Microsoft CHAP Version 2 (MS-CHAP v2)**
 
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
-        Select **OK** to save your changes.
-
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
-
-Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
 
 ## Next steps
 
@@ -111,4 +103,4 @@ The profile is created, but it's not doing anything. Next, [assign this profile]
 
 - [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.
 
-- Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and Android kiosk](wi-fi-settings-android-enterprise.md).
+- Using Android Enterprise or Android Kiosk devices? If yes, then look at [Wi-Fi settings for devices running Android Enterprise and dedicated devices](wi-fi-settings-android-enterprise.md).

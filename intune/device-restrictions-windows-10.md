@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -757,9 +757,6 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > This setting in Intune in the Azure portal may show a Failed status. This is a bug with the reporting feature. After reproducing the behavior and troubleshooting, the Intune product group confirmed that the status is actually a Success. The reporting bug will be fixed in an upcoming release. There isn't a current ETA, as timelines change. Any updates to this feature are announced in [In development for Microsoft Intune](in-development.md).
-
 - **Type of system scan to perform**: Schedule a system scan, including the level of scanning, and the day and time to run the scan. Your options:
   - **Not configured**: Doesn't schedule a system scan on the device. End users can manually run scans as needed or wanted on their devices.
   - **Disable**: Disables any system scanning on the device. Choose this option if you're using a partner anti-virus solution that scans devices.
@@ -780,9 +777,6 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > This setting in Intune in the Azure portal may show a Failed status. This is a bug with the reporting feature. After reproducing the behavior and troubleshooting, the Intune product group confirmed that the status is actually a Success. The reporting bug will be fixed in an upcoming release. There isn't a current ETA, as timelines change. Any updates to this feature are announced in [In development for Microsoft Intune](in-development.md).
 
 - **Detect potentially unwanted applications**: Choose the level of protection when Windows detects potentially unwanted applications. Your options:
   - **Not configured** (default): Windows Defender potentially unwanted applications protection is disabled.
