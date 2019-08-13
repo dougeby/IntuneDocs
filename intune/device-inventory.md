@@ -58,6 +58,9 @@ This article shows you how to view all your devices, and their properties in the
 ## Hardware device details
 Depending on the carrier used by the devices, not all details might be collected
 
+> [!Note]  
+> Hardware and Software inventory is refreshed in the Intune service every 7 days.
+
 |Detail|Description|Platform| 
 |--------------|----------------------|----|  
 |Name|The name of the device.|Windows, iOS|
