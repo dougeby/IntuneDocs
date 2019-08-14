@@ -52,7 +52,7 @@ This section only applies to the Company Portal app. If your device offers you t
 
 ## Specific manufacturer issues
 
-Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These encryption methods put device information at risk. As a result, Company Portal is not supported on these devices.
+Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These encryption methods put device information at risk. As a result, these devices aren't supported. 
 
 For a non-exhaustive list of supported Android devices, see the article [Supported operating systems and browsers in Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). If your device isn't listed, refer to the device manufacturer or contact your support person. 
 
