@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -96,6 +96,9 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 
   2. Choose **OK** > **OK** to add the app.
 
+  > [!IMPORTANT]
+  > When using single-app kiosk mode, dialer/phone apps may not function properly. 
+  
 - **Multi-app**: Users can access a limited set of apps on the device. When the device starts, only the apps you add start. You can also add some web links that users can open. When the policy is applied, users see icons for the allowed apps on the home screen.
 
   > [!IMPORTANT]
@@ -105,7 +108,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
   > 
   > The **Managed Home Screen** app isn't required to be in the configuration profile, but it is required to be added as a client app. When the **Managed Home Screen** app is added as a client app, any other apps you add in the configuration profile are shown as icons on the **Managed Home Screen** app. 
   >
-  > When using multi-app kiosk mode with Managed Home Screen, dialer/phone apps may not function properly. 
+  > When using multi-app kiosk mode, dialer/phone apps may not function properly. 
 
   - Choose **Add**, and select your apps from the list.
 
