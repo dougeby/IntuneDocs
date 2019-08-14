@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/14/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -52,25 +52,16 @@ This section only applies to the Company Portal app. If your device offers you t
 
 ## Specific manufacturer issues
 
-Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These devices may appear encrypted even when they are brand new. Intune recognizes that these devices' encryption methods put the device's information at risk. This risk primarily stems from malicious users who have physical access to the device.
+Some Android devices on version 7.0 and later encrypt data in ways that are inconsistent with certain Android platform standards. These encryption methods put device information at risk. As a result, these devices aren't supported. 
+
+For a non-exhaustive list of supported Android devices, see the article [Supported operating systems and browsers in Intune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). If your device isn't listed, refer to the device manufacturer or contact your support person. 
 
 > [!Note]
-> Microsoft works with manufacturers to address any issues we find while testing, or that users report to us. We update this article whenever new information is available. 
+> Microsoft works with manufacturers to address any issues we find while testing or that users report to us. We update this article whenever new information is available. 
 
-## Update known devices   
+## Update devices   
 
-If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**. These devices might not appear compliant until you update them.  
-
-- Huawei Honor 8
-- Huawei P9
-
-## Known devices that always appear encrypted  
-The following devices will always appear encrypted and can't be used to access company resources. To access company resources, you must use a different device.  
-
-- Huawei Mate 8
-- OPPO devices
-- Vivo devices
-- Xiaomi Mi smartphones  
+If you haven't updated your device to the most recent version of Android, go to your device's **Settings** app and select **Update**.  
 
 ## Next steps   
 Still need help? Contact your company support (check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information), or write the <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android team</a>.  
