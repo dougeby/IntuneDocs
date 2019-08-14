@@ -111,9 +111,9 @@ Create a trusted certificate profile before you can create a SCEP or PKCS certif
 7. Browse to the certificate you saved in [Step 2: Export your trusted root CA certificate](#step-2-export-your-trusted-root-ca-certificate), then select **OK**.
 8. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
 
-    - **Computer certificate store - Root**
-    - **Computer certificate store - Intermediate**
-    - **User certificate store - Intermediate**
+    - **Computer certificate store - Root** (SCEP)
+    - **Computer certificate store - Intermediate** (SCEP)
+    - **User certificate store - Intermediate** (PKCS,SCEP)
 
 9. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
