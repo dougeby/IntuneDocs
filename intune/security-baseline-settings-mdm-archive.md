@@ -1455,4 +1455,4 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 ## Next steps  
 
 [View the current baseline version](security-baseline-settings-mdm.md)  
-[Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-version-for-a-profile)

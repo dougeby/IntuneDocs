@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,17 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of August 5, 2019
+
+### Zebra Technologies is a supported OEM for OEMConfig on Android Enterprise devices  <!-- 4843713 -->
+
+In Intune, you can create device configuration profiles, and apply settings to Android Enterprise devices using OEMConfig (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **OEMConfig** for profile type).
+
+In this update, Zebra Technologies is a supported original equipment manufacturer (OEM) for OEMConfig. For more information on OEMConfig, see [Use and manage Android Enterprise devices with OEMConfig](android-oem-configuration-overview.md).
+
+Applies to:  
+- Android enterprise
 
 ## Week of July 22, 2019 
 
@@ -141,7 +152,7 @@ You can zoom in to the exact coordinates of a device using the **Locate device**
 
 ### Device security
 
-#### Advanced settings for Windows Defender Firewall  (public preview )  <!--  1311949     -->  
+#### Advanced settings for Windows Defender Firewall  (public preview)  <!--  1311949     -->  
 Use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
 
 #### Updated UI for managing security baselines   <!-- 4091125     -->
@@ -239,7 +250,7 @@ To see the new setting, go to [Windows 10 (and newer) device settings to allow o
 Applies to: Windows 10 and later
 
 #### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
-In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built-in to Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built into Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
 - The same user group
 - The same devices group
 - A single device
