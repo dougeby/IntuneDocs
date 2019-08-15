@@ -8,7 +8,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology:
 ms.assetid: 
