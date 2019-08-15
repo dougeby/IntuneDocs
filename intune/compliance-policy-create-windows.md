@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/12/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -105,13 +105,18 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 - **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
-- **Password type**: Choose if a password should have only **Numeric** characters, or if there should be a mix of numbers and other characters (**Alphanumeric**).
+- **Password type**: Choose if a password or PIN should have only **Numeric** characters, or **Alphanumeric** (a mix of numbers and other characters).
 
-  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password must contain. The four character sets are:
-    - Lowercase letters
-    - Uppercase letters
-    - Symbols
-    - Numbers
+  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password or PIN must contain. Your options:
+  
+    - 0 (Not recommended, as it may remove any password or PIN requirements)
+    - 1 (Complex password, or numeric PIN)
+    - 2 (Complex password, or PIN with digits and lowercase letters)
+    - 3 (Complex password, or alphanemeric PIN)
+    - 4 (Complex password, or complex PIN)
+  
+    [DeviceLock/AlphanumericDevicePasswordRequired](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)  
+    [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)  
 
     Setting a higher number requires the user to create a password that is more complex.
 
