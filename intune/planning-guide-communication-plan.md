@@ -54,7 +54,7 @@ Determining what information to be communicated depends on when in the Intune ro
 
 **Post enrollment wave**<br/> Communications targeting organization groups and users that have enrolled in Intune. These should provide additional resources that might be helpful to the user, and collect feedback about their experience during and after enrollment.
 
-You may find this [end-user enrollment guide](/enterprise-mobility-security/solutions/fasttrack-intune-enduser-enrollment-instructions) helpful. You can use it as is or modify for your organization.
+You may find this [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) helpful. You can use it as-is or modify for your organization.
 
 ## Communication delivery methods
 
