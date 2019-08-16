@@ -64,7 +64,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 #### Control iOS app uninstall behavior at device unenrollment <!-- 3504144   -->
 Admins can manage whether an app is removed or retained on a device when the device is unenrolled at a user or device group level. 
 
-#### Categorize Microsoft Store for Business apps <!-- 3926922 ->
+#### Categorize Microsoft Store for Business apps <!-- 3926922 -->
 You can categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop down menu, assign a category.
 
 #### Customized notifications for Microsoft Intune app users <!-- 4843354  -->
