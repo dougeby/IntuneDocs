@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -105,15 +105,15 @@ When you select a device from the Encryption report, Intune displays the **Devic
   The following are examples of the status details Intune can report:  
   
   **macOS**:
-  - The profile can't be installed currently, as we're waiting on a prerequisite.  
+  - The recovery key hasn't been retrieved and stored yet. Most likely, the device hasn't been unlocked, or it hasn't checked in.  
  
-    *Consider: This result doesn't necessarily represent an error condition but a temporary state that could be due to timing on the device where escrow for recovery keys must be set up before the encryption request is sent to the device. This might also indicate the device remains locked or hasn’t checked in with Intune recently. Finally, because FileVault encryption doesn’t start until a device is plugged in (charging), it’s possible for a user to receive a recovery key for a device that isn't yet encrypted*.  
+    *Consider: This result doesn't necessarily represent an error condition but a temporary state that could be because of timing on the device where escrow for recovery keys must be set up before the encryption request is sent to the device. This status might also indicate the device remains locked or hasn’t checked in with Intune recently. Finally, because FileVault encryption doesn’t start until a device is plugged in (charging), it’s possible for a user to receive a recovery key for a device that isn't yet encrypted*.  
 
-  - FileVault profile is installed but FileVault is not enabled on the device.  
+  - The user is deferring encryption or is currently in the process of encryption.  
  
     *Consider: Either the user hasn't yet logged out after receiving the encryption request, which is necessary before FileVault can encrypt the device, or the user has manually decrypted the device. Intune can't prevent a user from decrypting their device.*  
 
-  - FileVault is already enabled by the user so Intune can't manage its recovery.  
+  - The device is already encrypted. Device user must decrypt the device to continue.  
  
     *Consider: Intune can’t set up FileVault on a device that is already encrypted. Instead, the user needs to manually decrypt their device before it can be managed by a device configuration policy and Intune*. 
  
@@ -121,9 +121,9 @@ When you select a device from the Encryption report, Intune displays the **Devic
  
     *Consider: Beginning with MacOS version 10.15 (Catalina), user approved enrollment settings can result in the requirement that users manually approve FileVault encryption. For more information, see [User Approved enrollment](macos-enroll.md) in the Intune documentation*.  
 
-  - iOS device has returned a NotNow (it's locked).  
+  - Unknown.  
 
-    *Consider: The device is currently locked, and Intune can’t start the escrow or encryption process. After the device is unlocked, progress can continue*.  
+    *Consider: One possible cause for an unknown status is that the device is locked and Intune can’t start the escrow or encryption process. After the device is unlocked, progress can continue*.  
 
   **Windows 10**:  
   - The BitLocker policy requires user consent to launch the BitLocker Drive Encryption Wizard to start encryption of the OS volume but the user didn't consent.  
@@ -152,7 +152,7 @@ When you select a device from the Encryption report, Intune displays the **Devic
   
   - Windows Recovery Environment (WinRE) isn't configured.  
   
-  - A TPM isn't available for BitLocker, either because it isn't present, it has been made unavailable in the Registry, or the OS is on a removable drive.  
+  - A TPM isn't available for BitLocker, either because it isn't present, it's been made unavailable in the Registry, or the OS is on a removable drive.  
   
   - The TPM isn't ready for BitLocker.  
   
@@ -164,7 +164,7 @@ While viewing the Encryption report pane, you can select **Export** to create a 
   
 ![Export details](./media/encryption-monitor/export.png) 
  
-This report can be of use in identifying problems for groups of devices. For example, you might use the report to identify a list of macOS devices that all report *FileVault is already enabled by the user*, which indicates devices that must be manually decrypted before Intune can start to manage their FileVault settings.  
+This report can be of use in identifying problems for groups of devices. For example, you might use the report to identify a list of macOS devices that all report *FileVault is already enabled by the user*, which indicates devices that must be manually decrypted before Intune can manage their FileVault settings.  
  
 ## FileVault recovery keys   
 When Intune first encrypts a macOS device with FileVault, a personal recovery key is created. Upon encryption, the device displays the personal key a single time to the end-user.  
@@ -205,7 +205,7 @@ Intune supports multiple options to rotate and recover personal recovery keys. O
 
 ## BitLocker recovery keys  
 
-Intune provides access the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
+Intune provides access to the Azure AD blade for BitLocker so you can view BitLocker Key IDs and recovery keys for your Windows 10 devices, from within the Intune portal.  To be accessible, the device must have its keys escrowed to Azure AD. 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), go to **Devices** and then under *Manage*, select **All devices**.  
 
 2. Select a device from the list, and then under *Monitor*, select **Recovery keys**.  
