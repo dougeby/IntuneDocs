@@ -118,7 +118,7 @@ When you don’t’ configure *deadlines*, devices continue to use their *engage
 Plan to use *deadlines* for all your Windows 10 devices. After settings for *deadlines* are in place, you can change your Intune configurations for *engaged restart* to be Not configured. When set to Not configured, Intune stops managing those settings on devices but doesn’t remove the last configurations for the setting from the device. Therefore, the last configurations that were set for *engaged restart* remain active and in use on devices until those settings are modified by a method other than Intune. Later, when the devices version of Windows changes or when Intune support for *deadlines* expands to the devices Windows version, the device will begin to use the new settings, which are already in place.
 
 #### Support for multiple Microsoft Intune Certificate Connectors   <!--   4704642      -->
-Intune now supports install and use of multiple [Microsoft Intune Certificate Connectors for PKCS operations](certificates-pfx-configure.md). This change supports load balancing and high availability of the connector. Each connector instance can process certificate requests from Intune.  If one connector is unavailable, other connectors continue to process requests. 
+Intune now supports install and use of multiple [Microsoft Intune Certificate Connectors for PKCS operations](certficates-pfx-configure.md). This change supports load balancing and high availability of the connector. Each connector instance can process certificate requests from Intune.  If one connector is unavailable, other connectors continue to process requests. 
 
 To use multiple connectors, you don’t need to upgrade to the latest version of the connector software.  
 
@@ -201,7 +201,7 @@ For more information about Setup Assistant customization, see [Create an Apple e
 
 #### Add a user column to the Autopilot device CSV upload process <!-- 3823054 -->
 You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. The new format for the rows in the CSV looks like this:
-serial-number, windows-product-id, hardware-hash, optional-group-tag, optional-assigned-user. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot).
+serial-number, windows-product-id, hardware-hash, optional-group-tag, optional-assigned-user. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
 
 
 ### Device management
