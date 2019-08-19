@@ -188,6 +188,22 @@ Use the following key/value pair to configure a homepage shortcut:
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>**Example:** <`https://www.bing.com`>
     |
 
+## Configure your organization's logo and brand color for new tab pages in Microsoft Edge
+
+These settings allow you to customize the New Tab Page for Microsoft Edge to display your organization's logo and brand color as the page background.
+
+To upload your organization's logo and color, first complete the following steps:
+- Within the Azure portal, navigate to Intune -> Client apps -> Branding and customization -> Company Identity Branding
+- To set your brand's logo, under "Display", choose "Company Logo only". Transparent background logos are recommended. 
+- To set your brand's background color, under "Display" choose "Theme Color". Microsoft Edge applies a lighter shade of the color on the New Tab Page, which ensures the page has high readability. 
+
+Next, use the following key/value pairs to pull your organizations branding into Microsoft Edge:
+
+|    Key    |    Value    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
+
 ## Configure managed bookmarks for Microsoft Edge
 
 For ease of access, you can configure bookmarks that you’d like your users to have available when they are using Microsoft Edge. 
