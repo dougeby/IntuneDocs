@@ -5,13 +5,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-<<<<<<< HEAD
-ms.date: 06/19/2019
-ms.topic: conceptual
-=======
 ms.date: 08/15/2019
-ms.topic: article
->>>>>>> 0cf87b42b935e31c8f5974d3b89d976031915953
+ms.topic: conceptual 
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
