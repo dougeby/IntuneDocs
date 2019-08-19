@@ -16,24 +16,31 @@ highlightedContent:
     - title: What is Intune?
       itemType: learn
       url: what-is-intune.md
-    - title: What's new
-      itemType: whats-new
-      url: whats-new.md
-    - title: Common scenarios
-      itemType: learn
-      url: common-scenarios.md    
     - title: What can Intune do for my company?
       itemType: get-started
-      url: get-started-evaluation.md        
+      url: get-started-evaluation.md
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
-    - title: Get support
-      itemType: reference
-      url: get-support.md
+    - title: What's new
+      itemType: whats-new
+      url: whats-new.md
+    - title: Device enrollment
+      itemType: get-started
+      url: device-enrollent.md
+    - title: Device compliance
+      itemType: get-started
+      url: device-compliance-get-started.md
+    - title: App protection policies
+      itemType: get-started
+      url: app-protection-policy.md
+    - title: Conditional Access
+      itemType: get-started
+      url: conditional-access-intune-common-ways-use.md
+
 conceptualContent:
   items:
-    - title: Intune adoption hub
+    - title: Plan for Intune adoption
       links:
         - url: planning-guide.md
           itemType: concept
@@ -66,9 +73,6 @@ conceptualContent:
         - url: windows-enrollment-methods.md
           itemType: concept
           text: Windows enrollment methods
-      footerLink:
-        text: See more
-        url: device-enrollment.md
     - title: Manage devices
       links:
         - url: device-management.md
@@ -93,7 +97,7 @@ conceptualContent:
         - url: device-profile-create.md
           itemType: how-to-guide
           text: Create a device profile 
-    - title: Protect device data
+    - title: Protect devices and data
       links:
         - url: device-protect.md
           itemType: concept
@@ -123,3 +127,103 @@ conceptualContent:
         - url: help-desk-operators.md
           itemType: concept
           text: Help users troubleshoot problems
+    - title: Developer
+      links:
+        - url: intune-graph-apis.md
+          itemType: concept
+          text: How to use Azure AD to access the Intune APIs in Microsoft Graph
+        - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
+          itemType: concept
+          text: Use PowerShell cmdlets to automate actions in Intune.
+        - url: reports-nav-create-intune-reports.md
+          itemType: concept
+          text: Use the Microsoft Intune Data Warehouse
+    - title: Intune user help
+      links: 
+        - url: https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done
+          itemType: concept
+          text: Enroll device for access to work or school resources
+        - url: https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune
+          itemType: overview
+          text: What information can my organization see when I enroll my device?
+        - url: https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal
+          itemType: overview
+          text: Sign in to Company Portal
+
+additionalContent:
+  sections:
+    - title: Additional resources to manage devices
+      summary: 
+      items:
+      - title: Intune for Education
+        links: 
+        - text: What is Intune for Education?
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: What's new?
+          url: https://docs.microsoft.com/intune-education/whats-new-in-edu
+        - text: How is Intune for Education different from the full version?
+          url: https://docs.microsoft.com/intune-education/introduction-intune-education          
+      - title: Intune for Government
+        links: 
+        - text: Enterprise Mobility + Security for US Government Service Description
+          url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
+        - text: US government endpoints for Intune
+          url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+        - text: Azure Government
+          url: https://azure.microsoft.com/global-infrastructure/government/
+      - title: Microsoft 365 
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Microsoft 365 Enterprise foundation infrastructure
+          url: https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+    - title: MORE Resources
+      summary: Check out even more resources
+      items:
+      - title: D
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+      - title: Intune for Education
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+      - title: Government 
+        links: 
+        - text: Explore Microsoft 365, a complete solution that includes Intune.
+          url: https://docs.microsoft.com/microsoft-365/
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
+        - text: Intune for Education
+          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education         
+
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Intune community & support
+      items:
+        # Card
+        - title: Intune technical forums
+          summary: Ask your questions and find answers on the Intune forums.
+          url: https://social.technet.microsoft.com/forums/home?forum=microsoftintuneprod
+        # Card
+        - title: Microsoft Intune Feedback
+          summary: All of the feedback that you share in these forums will be monitored and reviewed by the Microsoft engineering teams responsible for building Microsoft Intune, though we can’t promise to reply to all posts.
+          url: https://microsoftintune.uservoice.com/forums/291681-ideas
+        # Card
+        - title: How to get support for Microsoft Intune?
+          summary: Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune.
+          url: get-support.md
+
+
+  footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
