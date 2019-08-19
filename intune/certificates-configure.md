@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -92,30 +92,35 @@ Export the Trusted Root Certification Authorities (CA) certificate as a public c
 You import this certificate when you set up a trusted certificate profile.
 
 ## Step 3: Create trusted certificate profiles
+
 Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates are similar for each device platform.
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-3. Select **Device configuration** > **Manage** > **Profiles** > **Create profile**.
-4. Enter a **Name** and **Description** for the trusted certificate profile.
-5. From the **Platform** drop-down list, select the device platform for this trusted certificate. Your options:
+1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Device configuration** > **Manage** > **Profiles** > **Create profile**.
+2. Enter the following properties:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 and later**
-    - **Windows 10 and later**
+    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **Trusted certificate profile for Android Enterprise device owner devices** or **Trusted certificate profile for iOS devices**.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Choose the platform of your devices. Your options:
 
-6. From the **Profile type** drop-down list, choose **Trusted certificate**.
-7. Browse to the certificate you saved in [Step 2: Export your trusted root CA certificate](#step-2-export-your-trusted-root-ca-certificate), then select **OK**.
-8. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
+      - **Android**
+      - **Android Enterprise** > **Device Owner only**
+      - **Android Enterprise** > **Work Profile only**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 and later**
+      - **Windows 10 and later**
+
+    - **Profile type**: Choose **Trusted certificate**.
+
+3. Browse to the certificate you saved in [Step 2: Export your trusted root CA certificate](#step-2-export-your-trusted-root-ca-certificate), then select **OK**.
+4. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
 
     - **Computer certificate store - Root**
     - **Computer certificate store - Intermediate**
     - **User certificate store - Intermediate**
 
-9. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
+5. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
 
 The profile is created and appears on the list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
@@ -132,6 +137,7 @@ See one of the following articles for help with configuring and assigning each t
 After you create a trusted certificate profile, create SCEP or PKCS certificate profiles for each platform you want to use. When you create a SCEP certificate profile, enter a trusted certificate profile for that same platform. This step links the two certificate profiles, but you still must assign each profile separately.
 
 ## Next steps
+
 [Assign device profiles](device-profile-assign.md)  
 [Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)  
 [Use third-party certificate authority](certificate-authority-add-scep-overview.md)

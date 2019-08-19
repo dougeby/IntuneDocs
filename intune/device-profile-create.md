@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -129,6 +129,12 @@ To approach these scenarios, you:
 
   When it's assigned, the profile applies to devices running Windows 10 Professional or Enterprise. For devices that aren't running these editions, their status shows as **Not applicable**.
 
+- If there are two profiles with the exact same settings, then the profile without an applicability rule is applied. 
+
+  For example, ProfileA targets the Windows 10 devices group, enables BitLocker, and doesn’t have an applicability rule. ProfileB targets the same Windows 10 devices group, enables BitLocker, and has an applicability rule to only apply the profile to Windows 10 Enterprise.
+
+  When both profiles are assigned, ProfileA is applied because it doesn’t have an applicability rule. 
+
 When you assign the profile to the groups, the applicability rules act as a filter, and only target the devices that meet your criteria.
 
 ### Add a rule
@@ -145,16 +151,11 @@ When you assign the profile to the groups, the applicability rules act as a filt
 3. In **Property**, choose your filter. Your options: 
 
     - **OS edition**: In the list, check the Windows 10 editions you want to include (or exclude) in your rule.
-    - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. 
+    - **OS version**: Enter the **min** and **max** Windows 10 version numbers of you want to include (or exclude) in your rule. Both values are required.
 
-      For example, you can enter `16299` (RS3 or 1709) for minimum version and `17134` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `16299.001` for minimum version and `17134.319` for maximum version.
+      For example, you can enter `10.0.16299.0` (RS3 or 1709) for minimum version and `10.0.17134.0` (RS4 or 1803) for maximum version. Or, you can be more granular and enter `10.0.16299.001` for minimum version and `10.0.17134.319` for maximum version.
 
 4. Select **Add** to save your changes.
-
-### Important
-
-- There are two profiles with the exact same rule, such as enabling BitLocker. The second profile has an applicability rule. The profile without the applicability rule is applied.
-- The devices that don't apply to the applicability rule show as **Not applicable**. Intune looks at the device, and evaluates it as **Not applicable**.
 
 ## Refresh cycle times
 

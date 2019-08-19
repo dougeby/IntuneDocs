@@ -750,7 +750,7 @@
         - name: Email
           href: email-settings-android.md
         - name: VPN
-          href: vpn-settings-android.md#android-vpn-settings
+          href: vpn-settings-android.md
         - name: Wi-Fi
           href: wi-fi-settings-android.md
         - name: Custom
@@ -769,7 +769,7 @@
         - name: Email
           href: email-settings-android-enterprise.md
         - name: VPN
-          href: vpn-settings-android.md#android-enterprise-vpn-settings
+          href: vpn-settings-android-enterprise.md
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Custom

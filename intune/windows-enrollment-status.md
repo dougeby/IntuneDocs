@@ -39,7 +39,7 @@ The Enrollment Status Page (ESP) displays installation information about Windows
 - when using [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/) 
 - or anytime a managed device is started for the first time after an Enrollment Status Page policy has been applied. 
 
-The Enrollment Status Page can help users understand the status of their device during device setup. You can create multiple Enrollment Status Page profiles and apply them to different groups that contain users. Profiles can be set to:
+The Enrollment Status Page helps users understand the status of their device during device setup. You can create multiple Enrollment Status Page profiles and apply them to different groups that contain users. Profiles can be set to:
 - Show installation progress.
 - Block usage until installation completes.
 - Specify what a user can do if device setup fails.
@@ -86,7 +86,7 @@ To turn on the Enrollment Status Page, follow the steps below.
 
 ## Set the enrollment status page priority
 
-A user can be in many groups and have many Enrollment Status Page profiles. To handle such conflicts, you can set the priorities for each profile. At the time of enrollment, if someone has more than one Enrollment Status Page profile, only the highest priority profile is applied to the enrolling device.
+A user can be in many groups and have many Enrollment Status Page profiles. To handle such conflicts, you can set the priorities for each profile. While enrolling, if someone has more than one Enrollment Status Page profile, only the highest priority profile is applied to the enrolling device.
 
 1. In [Intune](https://aka.ms/intuneportal), choose **Device enrollment** > **Windows enrollment** > **Enrollment Status Page**.
 2. Hover over the profile in the list.
@@ -163,16 +163,26 @@ Top questions for troubleshooting.
       - when any new user logs into the device that has Enrollment Status Page policy applied for the first time
 
 - How can I disable the Enrollment Status Page if it has been configured on the device?
-  - Enrollment status page policy is set on a device at the time of enrollment. To disable it, you can create a custom OMA-URI setting with the following configurations:
+  - Enrollment status page policy is set on a device at the time of enrollment. To disable the Enrollment Status Page, you must disable user and device Enrollment Status Page sections. You disable the sections by creating custom OMA-URI settings with the following configurations.
 
-    ```
-    Name:  DisableESP (choose a name you desire)
-    Description:  (enter a description)
-    OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
-    Data type:  Boolean
-    Value:  True 
-    ```
+      Disable user Enrollment Status Page:
 
+      ```
+      Name:  Disable User ESP (choose a name you desire)
+      Description:  (enter a description)
+      OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipUserStatusPage
+      Data type:  Boolean
+      Value:  True 
+      ```
+      Disable device Enrollment Status Page:
+
+      ```
+      Name:  Disable Device ESP (choose a name you desire)
+      Description:  (enter a description)
+      OMA-URI:  ./Vendor/MSFT/DMClient/Provider/MS DM Server/FirstSyncStatus/SkipDeviceStatusPage
+      Data type:  Boolean
+      Value:  True 
+      ```
 - How can I collect log files?
   - There are two ways Enrollment Status Page log files can be collected:
       - Enable the ability for users to collect logs in the ESP policy. When a timeout occurs in the Enrollment Status Page, the end user can choose the option to **Collect logs**. By inserting a USB drive, the log files can be copied to the drive
@@ -188,7 +198,7 @@ Below are known issues.
 - A pending reboot will always cause a timeout. The timeout occurs because the device needs to be rebooted. The reboot is required to allow time for the item tracked in Enrollment Status Page to complete. A reboot will cause the Enrollment Status Page to exit and after reboot the device won't enter during Account setup after reboot.  Consider not requiring a reboot with application installation. 
 - A reboot during Device setup will force the user to enter their credentials before transitioning to Account setup phase. User credentials aren't preserved during reboot. Have the user enter their credentials then the Enrollment Status Page can continue. 
 - SCEP certificates with Windows Hello for Business policies will cause timeout because user can't complete configuring Hello pin to allow the competition of the SCEP certificate installation.  No workaround. Fix ETA is Summer 2019. 
-- Enrollment Status Page will always timeout during an Add work and school account enrollment on Windows 10 versions less than 1903. The Enrollment Status Page waits for Azure AD registration to complete. The issue is fixed in Windows 10 version 1903 and newer.  
+- Enrollment Status Page will always time out during an Add work and school account enrollment on Windows 10 versions less than 1903. The Enrollment Status Page waits for Azure AD registration to complete. The issue is fixed in Windows 10 version 1903 and newer.  
 - Hybrid Azure AD Autopilot deployment with ESP takes longer than the timeout duration defined in the ESP profile. On Hybrid Azure AD Autopilot deployments, the ESP will take 40 minutes longer than the value set in the ESP profile. This delay gives time for the on-prem AD connector to create the new device record to Azure AD. 
 - Windows logon page isn't pre-populated with the username in Autopilot User Driven Mode. If there's a reboot during the Device Setup phase of ESP:
     - the user credentials aren't preserved
@@ -196,7 +206,7 @@ Below are known issues.
 - ESP is stuck for a long time or never completes the “Identifying” phase. Intune computes the ESP policies during the identifying phase. A device may never complete computing ESP policies if the current user doesn't have an Intune licensed assigned.  
 - Configuring Windows Defender Application Control causes a prompt to reboot during Autopilot. Configuring Windows Defender Application (AppLocker CSP) requires a reboot. When this policy is configured, it may cause a device to reboot during Autopilot. Currently, there's no way to suppress or postpone the reboot.
 - When the DeviceLock policy (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) is enabled as part of an ESP profile, the OOBE or user desktop autologon could fail unexpectantly for two reasons.
-  - If the device didn't reboot before exiting the ESP Device setup phase, the user may be prompted to enter their Azure AD credentials. This prompt occurs instead of a successful autologon where the user sees the Windows first log in animation.
+  - If the device didn't reboot before exiting the ESP Device setup phase, the user may be prompted to enter their Azure AD credentials. This prompt occurs instead of a successful autologon where the user sees the Windows first login animation.
   - The autologn will fail if the device rebooted after the user entered their Azure AD credentials but before exiting the ESP Device setup phase. This failure occurs because the ESP Device setup phase never completed. The workaround is to reset the device.
 
 ## Next steps

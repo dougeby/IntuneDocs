@@ -47,7 +47,7 @@ These settings are added to a device configuration profile in Intune, and then a
   For more information on content caching on macOS, see [Manage content caching on Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (opens another website).
 
   This feature applies to:  
-  - macOS 10.13 and later
+  - macOS 10.13 and newer
 
 - **Defer software updates**: When set to **Not configured** (default), software updates are shown on the device as Apple releases them. For example, if a macOS update gets released by Apple on a specific date, then that update naturally shows up on the device around the release date. Seed build updates are allowed without delay.
 
@@ -58,13 +58,13 @@ These settings are added to a device configuration profile in Intune, and then a
     For example, if a macOS update is available on **January 1**, and **Delay visibility** is set to **5 days**, then the update isn't shown as an available update. On the **sixth day** following the release, that update is available, and end users can install it.
 
     This feature applies to:  
-    - macOS 10.13.4 and later
+    - macOS 10.13.4 and newer
 
 - **Screenshots**: Device must be enrolled in Apple's Automated Device Enrollment (DEP). When set to **Block**, users can't save a screenshot of the display. It also prevents the Classroom app from observing remote screens. **Not configured** (default) allows users to capture screenshots, and allows the Classroom app to view remote screens.
   - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens. 
   
     This feature applies to:  
-     - Devices enrolled through Apple's Automated Device Enrollment (DEP)
+    - Devices enrolled through Apple's Automated Device Enrollment (DEP)
 
     This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
 
@@ -75,7 +75,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
     This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
 
-- **Students must request permission to leave Classroom class**: **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever. 
+- **Students must request permission to leave Classroom class**: **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever the student chooses.
 
   This feature applies to:  
   - Devices enrolled through Apple's Automated Device Enrollment (DEP)
@@ -93,7 +93,11 @@ These settings are added to a device configuration profile in Intune, and then a
 ## Password
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) doesn't require a password. It also doesn't force any restrictions, such as blocking simple passwords or setting a minimum length.
-  - **Required password type**: Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers). This setting is supported only on Mac OS X version 10.10.3 and later.
+  - **Required password type**: Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers).
+
+    This feature applies to:  
+    - macOS 10.10.3 and newer
+
   - **Number of non-alphanumeric characters in password**: Specify the number of complex characters required in the password (**0** to **4**).<br>A complex character is a symbol, for example "**?**".
   - **Minimum password length**: Enter the minimum length of password a user must configure (between **4** and **16** characters).
   - **Simple passwords**: Allow the use of simple passwords such as **0000** or **1234**.
@@ -122,7 +126,10 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Block Camera**: Choose **Block** to prevent access to the camera on the device. **Not configured** (default) allows access to the device's camera.
 - **Block Apple Music**: **Block** reverts the Music app to classic mode and disables the Music service. **Not configured** (default) allows using the Apple Music app.
 - **Block Spotlight Internet Search Results**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** (default) allows Spotlight search connect to the Internet to provide search results.
-- **Block File Transfer using iTunes**: **Block** disables application file sharing services. Available in macOS 10.13 and later. **Not configured** (default) allows application file sharing services.
+- **Block File Transfer using iTunes**: **Block** disables application file sharing services. **Not configured** (default) allows application file sharing services.
+
+  This feature applies to:  
+  - macOS 10.13 and newer
 
 ## Restricted apps
 
@@ -149,6 +156,10 @@ To configure the list, click **Add**, then specify a name of your choice, option
 - **Block iCloud Bookmark Backup**: **Block** prevents iCloud from syncing the devices Bookmarks. **Not configured** (default) allows Bookmark synchronization to iCloud.
 - **Block iCloud Notes Backup**: **Block** prevents iCloud from syncing the devices Notes. **Not configured** (default) allows Notes synchronization to iCloud.
 - **Block iCloud Photo Library**: **Block** disables iCloud Photo Library, and prevents iCloud from syncing the devices photos. Any photos not fully downloaded from iCloud Photo Library are removed from local storage on the device. **Not configured** (default) allows syncing photos between the device and the iCloud Photo Library.
+- **Handoff**: **Not configured** (default) allows users to start work on a macOS device, and then continue the work they started on another iOS or macOS device. **Block** prevents the Handoff feature on the device. 
+
+  This feature applies to:  
+  - macOS 10.15 and newer
 
 ## Domains
 
