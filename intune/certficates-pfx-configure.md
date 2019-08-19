@@ -225,6 +225,9 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 4. Select **OK** > **Create** to save your profile.
 5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
+   > [!NOTE]
+   > On devices with an Android Enterprise profile, certificates installed using a PKCS certificate profile are not visible on the device. To confirm successful certificate deployment, check the status of the profile in the Intune console.
+
 ## Create a PKCS imported certificate profile
 
 You can import certificates previously issued to a specific user from any CA in to Intune. Imported certificates are installed on each device that a user enrolls. S/MIME email encryption is the most common scenario for importing existing PFX certificates in to Intune. A user may have many certificates to encrypt email. The private keys of those certificates must exist on all of a user's devices so they can decrypt previously encrypted email.
