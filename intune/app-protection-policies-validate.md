@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: conceptual

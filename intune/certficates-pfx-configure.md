@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 08/15/2019
-ms.topic: article
+ms.topic: conceptual 
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -224,6 +224,9 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 
 4. Select **OK** > **Create** to save your profile.
 5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
+
+   > [!NOTE]
+   > On devices with an Android Enterprise profile, certificates installed using a PKCS certificate profile are not visible on the device. To confirm successful certificate deployment, check the status of the profile in the Intune console.
 
 ## Create a PKCS imported certificate profile
 
