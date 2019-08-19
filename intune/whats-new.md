@@ -445,9 +445,6 @@ Applies to: iOS
 
 ### Device enrollment
 
-#### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
-This feature has been delayed and will be released in an upcoming sprint.    
-
 #### Windows Autopilot support for Hybrid Azure AD Join <!-- 4809146-->
 Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
 Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
@@ -715,7 +712,7 @@ You can create requirement rules based on PowerShell scripts, registry values, a
 #### Configure your Win32 apps to be installed on Intune enrolled Azure AD joined devices <!-- 3695227  -->
 You can assign your Win32 apps to be installed on Intune enrolled Azure AD joined devices. For more information about Win32 apps in Intune, see [Win32 app management](apps-win32-app-management.md).
 
-#### Device overview shows Primary User <!--794259  -->
+#### Device overview shows Primary User <!--3794259  -->
 The Device overview page will show the Primary User, also called the User Device Affinity User (UDA). To see the Primary User for a device, choose **Intune** > **Devices** > **All devices** > choose a device. The Primary User will appear near the top of the **Overview** page.
 
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
