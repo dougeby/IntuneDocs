@@ -34,7 +34,7 @@ This article describes app protection policies for extensions in Microsoft Intun
 
 ## Add-ins for Outlook app
 
-Outlook recently brought add-ins to Outlook for iOS, which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. The Intune SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
+Outlook add-ins let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for Android and iOS. The Intune APP SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
 
 If you want to stop your end users from accessing and installing Outlook add-ins (this affects all Outlook clients), make sure you have the following changes to roles in the Exchange admin center:
 
