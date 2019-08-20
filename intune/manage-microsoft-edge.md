@@ -186,7 +186,6 @@ Use the following key/value pair to configure a homepage shortcut:
 |    Key    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>**Example:** <`https://www.bing.com`>
-    |
 
 ## Configure your organization's logo and brand color for new tab pages in Microsoft Edge
 
