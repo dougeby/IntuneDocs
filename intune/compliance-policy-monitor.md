@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -155,7 +155,9 @@ The **Device compliance** > **Setting compliance** report shows you, per complia
 When you select a specific setting, you can see the **compliance status**, **user’s email alias**, **device model**, and **location** for each device targeted by that setting.
 
 > [!NOTE]
-> Windows 10 devices that are Azure AD joined may show the System Account as a non-compliant user. This is expected behavior and doesn't affect the overall device compliance. 
+> A policy can be assigned to a device, and a user on that same device. In some scenarios, a device may sync before the user signs in, such as when the device reboots. Compliance may evaluate this user, and show the device as non compliant. This behavior may also show the System Account as a non-compliant user.
+>
+> This is a known issue with multi-user Windows 10 devices. Any changes or updates on this behavior are announced in [in development](in-development.md) and/or [what's new](whats-new.md).
 
 ## View status of device policies
 
