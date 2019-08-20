@@ -3,7 +3,7 @@
 
 title: App protection policies for extensions
 titleSuffix: Microsoft Intune
-description: This topic describes the app protection policy (APP) for extenions.
+description: This topic describes the app protection policy (APP) for extensions.
 keywords:
 author: Erikre
 ms.author: erikre
