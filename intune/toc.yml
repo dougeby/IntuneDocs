@@ -664,7 +664,9 @@
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
         - name: App protection policy delivery
-          href: app-protection-policy-delivery.md          
+          href: app-protection-policy-delivery.md
+        - name: Protecting app extensions
+          href: app-protection-policy-extensions.md                    
         - name: Monitor app protection user status
           href: app-protection-policies-monitor.md
         - name: Get ready for WIP app protection policies
