@@ -101,6 +101,15 @@ Runs only one app on the device.
   - **Add Store app**: Select **Add a store app**, and choose an app from the list.
 
     Don't have any apps listed? Add some using the steps at [Client Apps](apps-add.md).
+    
+ - **Specify Maintenance Window for App Restarts**: Default is "Not Configured," select "Require" to check for apps that require a restart to complete installation.
+ 
+     If using Kiosk browser or other Microsoft Store for business app, decide how often to check for app updates that require restart in order to complete the application install. If not configured, Microsoft Store for Business apps will restart at an unscheduled time 3 days after an app update is installed.
+     
+     - **Maintenance Window Start Time**: Select the date and time of day to begin checking clients for any app updates that require restart.  The default start time is midnight, or zero minutes.
+     
+     - **Maintenance Window Recurrence**: Default is daily 
+     Set how often Maintenance windows for app updates will take place. Recommendation is daily to avoid unscheduled app restarts.
 
 ## Multi-app kiosks
 
