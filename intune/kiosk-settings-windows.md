@@ -111,6 +111,8 @@ Runs only one app on the device.
      - **Maintenance Window Recurrence**: Default is daily 
      Set how often Maintenance windows for app updates will take place. Recommendation is daily to avoid unscheduled app restarts.
 
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
 ## Multi-app kiosks
 
 Apps in this mode are available on the start menu. These apps are the only apps the user can open. If an app has a dependency on another app, both must be included in the allowed apps list. For example, Internet Explorer 64-bit has a dependency on Internet Explorer 32-bit, so you must allow both "C:\Program Files\internet explorer\iexplore.exe" and “C:\Program Files (x86)\Internet Explorer\iexplore.exe”. 
