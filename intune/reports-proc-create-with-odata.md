@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Create a Intune report from the OData feed with Power BI
+title: Create an Intune report from the OData feed with Power BI
 titleSuffix: Microsoft Intune
 description: Create a treemap visualization using Power BI Desktop with an interactive filter from the Intune Data Warehouse API.
 keywords: Intune Data Warehouse
@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 
 # Create an Intune report from the OData feed with Power BI
 
-This article explains how to create a treemap visualization of your Intune data using Power BI Desktop that users an interactive filter. For example, your CFO might like to know how the overall distribution of devices compares between company owned deviceds and personal devices. The treemap provides insight into the total number of device types. You can review the number of iOS, Android, and Windows devices that are either company owned or personally owned.
+This article explains how to create a treemap visualization of your Intune data using Power BI Desktop that users an interactive filter. For example, your CFO might like to know how the overall distribution of devices compares between company-owned devices and personal devices. The treemap provides insight into the total number of device types. You can review the number of iOS, Android, and Windows devices that are either company owned or personally owned.
 
 ## Overview of creating the chart
 
@@ -79,18 +79,18 @@ Install the latest version of Power BI Desktop. You can download Power BI Deskto
 
 ## Create a relationship
 
-You can import multiple tables to analyze not just the data in a single table but related data across tables.  PowerBI has a feature called **autodetect** that attempts to find and create relationships for you. The tables in the Data Warehouse have been built to work with PowerBI's autodetect feature. However, even if PowerBI doesn't automatically find the relationships, you can still manage the relationships.
+You can import multiple tables to analyze not just the data in a single table but related data across tables. Power BI has a feature called **autodetect** that attempts to find and create relationships for you. The tables in the Data Warehouse have been built to work with the autodetect feature in Power BI. However, even if Power BI doesn't automatically find the relationships, you can still manage the relationships.
 
 ![Manage relationships of related data across tables](media/reports-create-03-managerelationships.png)
 
 1. Select **Manage Relationships**.
-2. Select **Autodetect...** if PowerBI has not already detected the relationships.
+2. Select **Autodetect...** if Power BI has not already detected the relationships.
 
 The relationship is displayed in a From column to a To column. In this example, the data field **ownerTypeKey** in the **devices** table links to the data field **ownerTypeKey** in the **ownerTypes** table. You use the relationship to look up the plain name of the device type code in the **devices** table.
 
 ## Create a treemap visualization
 
-A treemap chart shows hierarchical data as boxes within boxes. Each branch of the hierarchy is a box contains smaller boxes showing sub-branches. You can use Power BI desktop to create a treemap of your Intune tenant data that shows relative amounts of device manufacturer types.
+A treemap chart shows hierarchical data as boxes within boxes. Each branch of the hierarchy is a box contains smaller boxes showing subbranches. You can use Power BI desktop to create a treemap of your Intune tenant data that shows relative amounts of device manufacturer types.
 
 ![Power BI treemap visualizations](media/reports-create-03-treemap.png)
 
