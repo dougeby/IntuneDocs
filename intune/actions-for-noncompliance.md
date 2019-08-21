@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -107,7 +107,11 @@ You can also add another action when you create a compliance policy, or update a
     
     - **Remotely lock the noncompliant device**: When the device is noncompliant, lock the device. This action forces the user to enter a PIN or passcode to unlock the device. 
     
-5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a Conditional Access policy. If you enter **0** (zero) number of days, then Conditional Access takes effect **immediately**. For example, you can block access to corporate resources immediately if a device is noncompliant.
+5. Configure a **Schedule**: Enter the number of days (0 to 365) after noncompliance to trigger the action on users' devices. After this grace period, you can enforce a [conditional access](conditional-access-intune-common-ways-use.md) policy. If you enter **0** (zero) number of days, then conditional access takes effect **immediately**. For example, if a device is noncompliant, you can block access to email, SharePoint, and other organization resources immediately.
+
+    When you create a compliance policy, the **Mark device noncompliant** action is automatically created, and automatically set to **0** days (immediately). With this action, when the device checks-in, the device is evaluated as non-compliant immediately. If also using conditional access, then it kicks in immediately.
+    
+    For example, in your compliance policy, you add the **Send email to end user** action. On this **Send email** action, you set the **Schedule** to 2 days. If the device/end user is still evaluated as non-compliant on day 2, then your email is sent on day 2.
 
 6. When finished, select **Add** > **OK** to save your changes.
 
