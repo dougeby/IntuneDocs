@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -112,7 +112,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
     - 0 (Not recommended, as it may remove any password or PIN requirements)
     - 1 (Complex password, or numeric PIN)
     - 2 (Complex password, or PIN with digits and lowercase letters)
-    - 3 (Complex password, or alphanemeric PIN)
+    - 3 (Complex password, or alphanumeric PIN)
     - 4 (Complex password, or complex PIN)
   
     [DeviceLock/AlphanumericDevicePasswordRequired](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)  
@@ -138,12 +138,28 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 ### Device Security
 
+- **Firewall**: Set to **Require** to turn on the Microsoft Defender Firewall, and prevent users from turning it off. **Not configured** (default) doesn't control the Microsoft Defender Firewall, nor change existing settings.
+
+  [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
 - **Trusted Platform Module (TPM)**: When set to **Require**, Intune checks the version for compliance. The device is compliant if the TPM chip version is greater than 0 (zero). The device is not compliant if there isn't a TPM version on the device. When **Not configured**, Intune doesn't check the device for a TPM chip version.
 
   [DeviceStatus CSP - DeviceStatus/TPM/SpecificationVersion node](https://docs.microsoft.com/windows/client-management/mdm/devicestatus-csp)
   
 - **Antivirus**: When set to **Require**, you can check compliance using antivirus solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Microsoft Defender. When **Not configured**, Intune doesn't check for any AV solutions installed on the device.
 - **Antispyware**: When set to **Require**, you can check compliance using antispyware solutions that are registered with [Windows Security Center](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/), such as Symantec and Microsoft Defender. When **Not configured**, Intune doesn't check for any antispyware solutions installed on the device.
+
+### Defender
+
+- **Microsoft Defender Antimalware**: Set to **Require** to turn on the Microsoft Defender anti-malware service, and prevent users from turning it off. **Not configured** (default) doesn't control the service, nor change existing settings.
+- **Microsoft Defender Antimalware minimum version**: Enter the minimum allowed version of Microsoft Defender anti-malware service. For example, enter `4.11.0.0`.
+- **Microsoft Defender Antimalware security intelligence up-to-date**: Controls the Windows Security virus and threat protection updates on the devices. **Require** forces the Microsoft Defender security intelligence be up-to-date. **Not configured** (default) doesn't enforce any requirements.
+
+  [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates) has more information on the security intelligence.
+
+- **Real-time protection**: **Require** turns on real-time protection, which scans for malware, spyware, and other unwanted software. **Not configured** (default) doesn't control this feature, nor change existing settings.
+
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
 ## Microsoft Defender ATP
 
