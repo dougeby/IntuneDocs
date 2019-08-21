@@ -7,7 +7,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -60,9 +60,11 @@ Xamarin apps built with the Intune App SDK Xamarin Bindings can now receive Intu
 
 Review the [license terms](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf). Print and retain a copy of the license terms for your records. By downloading and using the Intune App SDK Xamarin Bindings, you agree to such license terms. If you do not accept them, do not use the software.
 
-The SDK relies on [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
+The Intune SDK relies on [Active Directory Authentication Library (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) for its [authentication](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) and conditional launch scenarios, which require apps to be configured with [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). 
 
 If your application is already configured to use ADAL or MSAL, and has its own custom client ID used to authenticate with Azure Active Directory, ensure the steps to give your Xamarin app permissions to the Intune Mobile Application Management (MAM) service are followed. Use the instructions in the "[Give your app access to the Intune app protection service](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)" section of the [getting started with the Intune SDK guide](app-sdk-get-started.md).
+
+
 
 ## Enabling Intune app protection polices in your iOS mobile app
 1. Add the [Microsoft.Intune.MAM.Xamarin.iOS NuGet package](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.iOS) to your Xamarin.iOS project.
@@ -88,13 +90,15 @@ If your application is already configured to use ADAL or MSAL, and has its own c
       IntuneMAMEnrollmentManager.Instance.RegisterAndEnrollAccount(string identity);
       ```
 
-      Apps can determine the result of an enrollment attempt by implementing the EnrollmentRequestWithStatus method in a subclass of IntuneMAMEnrollmentDelegate and setting the IntuneMAMEnrollmentManager's Delegate property to an instance of that class. Please refer to our [sample Xamarin.iOS application](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) for an example.
+      Apps can determine the result of an enrollment attempt by implementing the EnrollmentRequestWithStatus method in a subclass of IntuneMAMEnrollmentDelegate and setting the IntuneMAMEnrollmentManager's Delegate property to an instance of that class. 
 
       Upon a successful enrollment, apps can determine the UPN of the enrolled account (if previously unknown) by querying the following property: 
 
       ```csharp
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
+### Sample Applications
+Sample applications highlighting MAM functionality in Xamarin.iOS apps are available on [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios).
 
 > [!NOTE] 
 > There is no remapper for iOS. Integrating into a Xamarin.Forms app should be the same as for a regular Xamarin.iOS project. 
@@ -211,6 +215,7 @@ This is expected because when the Remapper modifies the inheritance of Xamarin c
 
 #### Troubleshooting
 * If you are encountering a blank, white screen in your application on launch then you may need to force the navigation calls to execute on the main thread.
+* The Intune SDK Xamarin Bindings do not support apps that are using a cross-platform framework such as MvvmCross due to conflicts between MvvmCross and Intune MAM classes. While some customers may have had success with integration after moving their apps to plain Xamarin.Forms, we do not provide explicit guidance or plugins for app developers using MvvmCross.
 
 ### Company Portal app
 The Intune SDK Xamarin Bindings rely on the presence of the [Company Portal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android app on the device to enable app protection policies. The Company Portal retrieves app protection policies from the Intune service. When the app initializes, it loads policy and code to enforce that policy from the Company Portal. The user does not need to be signed in.
@@ -221,7 +226,7 @@ The Intune SDK Xamarin Bindings rely on the presence of the [Company Portal](htt
 For app protection without device enrollment, the user is _**not**_ required to enroll the device by using the Company Portal app.
 
 ### Sample Applications
-Sample applications highlighting MAM functionality in Xamarin.Android and Xamarin Forms apps are available on [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
+Sample applications highlighting MAM functionality in Xamarin.Android and Xamarin.Forms apps are available on [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps).
 
 ## Support
-If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the GitHub issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) and we will help as soon as we can. 
+If your organization is an existing Intune customer, please work with your Microsoft support representative to open a support ticket and create an issue [on the GitHub issues page](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues). We will help as soon as we can. 

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -72,7 +72,7 @@ The following table lists the various options for assigning apps to users and de
 
      > [!NOTE]
      > **For iOS apps only**:
-     > - To configure what happens to managed apps when devices are no longer managed, you can select the intended setting under **Uninstall on device removal**. For more information, see **App uninstall setting for iOS managed apps**.
+     > - To configure what happens to managed apps when devices are no longer managed, you can select the intended setting under **Uninstall on device removal**. For more information, see [App uninstall setting for iOS managed apps](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
      > - If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
      >
      > **For Android apps only**: If you deploy an Android app as **Available with or without enrollment**, reporting status will only be available on enrolled devices.
