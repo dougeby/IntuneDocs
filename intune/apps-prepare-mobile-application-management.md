@@ -99,6 +99,7 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Allow fingerprint instead of PIN|X|X|
 |Allow facial recognition instead of PIN (iOS only)|X|X|
 |Require corporate credentials for access|X|X|
+|Set a PIN expiry|X|X|
 |Block managed apps from running on jailbroken or rooted devices|X|X|
 |Encrypt app data|X|X|
 |Recheck the access requirements after a specified number of minutes|X|X|
@@ -108,16 +109,18 @@ This table lists the settings that you can use for the App SDK and App Wrapping 
 |Full Wipe of app data|X|X|
 |Selective Wipe of work and school data in multi-identity scenarios <br><br>**Note:** For iOS, when the management profile is removed, the app is also removed.|X||
 |Prevent “Save as”|X||
-|Targeted Application Configuration|X||
+|Targeted Application Configuration (or app config through the "MAM channel")|X|X|
 |Support for Multi-Identity|X||
 |Customizable Style |X|||
 |On-demand application VPN connections with Citrix mVPN|X|X| 
 |Disable contact sync|X|X|
 |Disable printing|X|X|
 |Require minimum app version|X|X|
-|Require minimum operating system (iOS and Android)|X|X|
+|Require minimum operating system|X|X|
 |Require minimum Android security patch version (Android only)|X|X|
 |Require minimum Intune SDK for iOS (iOS only)|X|X|
+|SafetyNet device attestation (Android only)|X|X|
+|Threat scan on apps (Android only)|X|X|
 
 ## Next steps
 
