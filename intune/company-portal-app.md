@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/09/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -54,6 +54,9 @@ The company name is displayed as the Company Portal title. The privacy statement
 |---|---|---|
 |**Company name**| 40 | This name is displayed as the title of the Company Portal and appears as text throughout the Intune user experience. |
 | **Privacy statement URL** |     79     | You can specify your own company privacy statement that appears when users click the privacy links from the Company Portal. You must enter a valid URL in the format `<https://www.contoso.com>`. |
+
+> [!NOTE]
+> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
 
 ## Support information
 Enter your company's support information to provide your employee with a contact for Intune-related questions.

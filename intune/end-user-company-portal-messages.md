@@ -40,6 +40,9 @@ Understand the different app messages that end users may see in the Company Port
 - __Allow Company Portal to make and manage phone calls?__
 - __Allow Company Portal to access photos, media, and files on your device?__
 
+> [!NOTE]
+> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
+
 ## Allow Company Portal to make and manage phone calls?
 
 ### Where it appears

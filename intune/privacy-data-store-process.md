@@ -31,6 +31,9 @@ ms.collection: M365-identity-device-management
 
 After Intune [collects the data](privacy-data-collect.md), storage and processing of that data proceeds as detailed below.
 
+> [!NOTE]
+> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
+
 ## Storing personal data
 
 All non-telemetry data collected is processed through the Intune service and is stored in one or more of the following storage locations: 
