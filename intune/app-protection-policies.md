@@ -151,6 +151,9 @@ To create these policies, browse to **Client apps** > **App protection policies*
 - **Apps on Intune managed devices**: Managed devices are managed by Intune MDM.
 - **Apps in Android Work Profile**: Managed devices that have been enrolled as Android Enterprise work profile devices.
 
+> Note
+> Android devices will prompt to install the Intune Company Portal app regardless of which App type is chosen. For example, if you select 'Apps on Intune managed devices' then users with unmanaged Android devices will still be prompted.
+
 For iOS, additional app configuration settings are required to target app protection policy (APP) settings to apps on Intune enrolled devices:
 - **IntuneMAMUPN** must be configured for all MDM managed applications. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **IntuneMAMDeviceID** must be configured for all Third-party and LOB MDM managed applications. The **IntuneMAMDeviceID** should be configured to the device ID token. For example, `key=IntuneMAMDeviceID, value={{deviceID}}`. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
