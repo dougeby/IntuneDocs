@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -113,7 +113,7 @@ You can also add another action when you create a compliance policy, or update a
     
     In your compliance policy, for example, you also want to notify the user. You can add the **Send email to end user** action. On this **Send email** action, you set the **Schedule** to 2 days. If the device or end user is still evaluated as non-compliant on day 2, then your email is sent on day 2. If you want to email the user again on day 5 of noncompliance, then add another action, and set the **Schedule** to 5 days.
 
-    For more information on compliance, and the built-in actions, see the [compliance overview](device-compliance-get-started.md)
+    For more information on compliance, and the built-in actions, see the [compliance overview](device-compliance-get-started.md).
 
 6. When finished, select **Add** > **OK** to save your changes.
 
