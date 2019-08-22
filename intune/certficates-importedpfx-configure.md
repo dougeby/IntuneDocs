@@ -54,71 +54,35 @@ To use Imported PKCS certificates with Intune, you'll need the following infrast
 
   You can install both connectors (*Microsoft Intune Certificate Connector* and *Imported PFX Certificate Connector*) on the same server.
 
-## Download, install, and configure the certificate connectors
+## How it works
 
-### Microsoft Intune Certificate Connector
+TODO
 
-> [!IMPORTANT]  
-> The Microsoft Intune Certificate Connector cannot be installed on the issuing Certificate Authority (CA), and instead must be installed on a separate Windows server.  
+## Importing the PFX Certificates to Intune
 
-1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune** > select **Intune**.
-2. Select **Device configuration** > **Certification Connectors** > **Add**.
-3. Download and save the connector file to a location you can access from the server where you're going to install the connector.
+TODO
 
-    ![NDES connector download](media/certificates-pfx-configure/download-ndes-connector.png)
- 
-
-4. After the download completes, sign in to the server. Then:
-
-    1. Be sure .NET 4.5 Framework or higher is installed, as it's required by the NDES Certificate connector. .NET 4.5 Framework is automatically included with Windows Server 2012 R2 and newer versions.
-    2. Run the installer (NDESConnectorSetup.exe), and accept the default location. It installs the connector to `\Program Files\Microsoft Intune\NDESConnectorUI`. In Installer Options, select **PFX Distribution**. Continue and complete the installation.
-    3. By default, the connector service runs under the local system account. If a proxy is required to access the internet, confirm that the local service account can access the proxy settings on the server.
-
-5. The NDES Connector opens the **Enrollment** tab. To enable the connection to Intune, **Sign In**, and enter an account with global administrative permissions.
-6. On the **Advanced** tab, it's recommended to leave **Use this computer's SYSTEM account (default)** selected.
-7. **Apply** > **Close**
-8. Go back to the Intune portal (**Intune** > **Device Configuration** > **Certification Connectors**). After a few moments, a green check mark is shown, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
-9. If you have a web proxy in your networking environment, you might need additional configurations to enable the connector to work. For more information, see [Work with existing on-premises proxy servers](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers) in the Azure Active Directory documentation.
-
-> [!NOTE]  
-> The Microsoft Intune Certificate Connector supports TLS 1.2. If TLS 1.2 is installed on the server that hosts the Connector, the connector uses TLS 1.2. Otherwise, TLS 1.1 is used. Currently, TLS 1.1 is used for authentication between the devices and server.
-
-### PFX Certificate Connector for Microsoft Intune
+## Download, install, and configure the Imported PFX Certificate Connector for Microsoft Intune
 
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device configuration** > **Certification Connectors** > **Add**
-3. Download and save the PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
+
+    ![Imported PFX connector download](media/certificates-importedpfx-configure/download-importedPFXConnector.png)
+
+3. Download and save the Imported PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
 4. After the download completes, sign in to the server. Then:
 
-    1. Be sure .NET 4.6 Framework or higher is installed, as it's required by the PFX Certificate Connector for Microsoft Intune. If .NET 4.6 Framework isn't installed, the installer installs it automatically.
+    1. Be sure .NET 4.6 Framework or higher is installed, as it's required by the Imported PFX Certificate Connector for Microsoft Intune. If .NET 4.6 Framework isn't installed, the installer installs it automatically.
     2. Run the installer (PfxCertificateConnectorBootstrapper.exe), and accept the default location, which installs the connector to `Program Files\Microsoft Intune\PFXCertificateConnector`.
     3. The connector service runs under the local system account. If a proxy is required for internet access, then confirm that the local service account can access the proxy settings on the server.
 
 5. The PFX Certificate Connector for Microsoft Intune opens the **Enrollment** tab after installation. To enable the connection to Intune, **Sign In**, and enter an account with Azure global administrator or Intune administrator permissions.
+
+    > [!WARNING]
+        > In Windows Server, **IE Enhanced Security Configuration** by default is set to **On**, this can cause issues with the login to Office 365.
+
 6. Close the window.
 7. Go back to the Azure portal (**Intune** > **Device Configuration** > **Certification Connectors**). After a few moments, a green check mark is shown, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
-
-## Create a trusted certificate profile
-
-1. In the [Azure portal](https://portal.azure.com), go to **Intune** > **Device configuration** > **Profiles** > **Create profile**.
-    ![Navigate to Intune and create a new profile for a trusted certificate](media/certificates-pfx-configure/certificates-pfx-configure-profile-new.png)
-
-2. Enter the following properties:
-
-    - **Name** for the profile
-    - Optionally set a description
-    - **Platform** to deploy the profile to
-    - Set **Profile type** to **Trusted certificate**
-
-3. Go to **Settings**, and enter the .cer file Root CA Certificate you previously exported.
-
-   > [!NOTE]
-   > Depending on the platform you chose in **Step 3**, you may or may not have an option to choose the **Destination store** for the certificate.
-
-   ![Create a profile and upload a trusted certificate](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
-
-4. Select **OK** > **Create** to save your profile.
-5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
 ## Create a PKCS imported certificate profile
 
