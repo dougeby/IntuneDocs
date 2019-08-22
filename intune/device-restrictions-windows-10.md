@@ -71,13 +71,6 @@ These settings use the [ApplicationManagement policy CSP](https://docs.microsoft
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **Force restart apps on update failure**: When an app is being used, it may not update. Use this setting to force an app to restart. **Not configured** (default) doesn't force the apps to restart. **Require** allows administrators to force a restart on a specific date and time, or on a recurring schedule. When set to **Require**, also enter:
-
-  - **Start Date/Time**: Choose a specific date and time to restart the apps.
-  - **Recurrence**: Choose a daily, weekly, or monthly restart.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
-
 - **User control over installations**: When set to **Not configured** (default), Windows Installer prevent users from changing the installation options typically reserved for system administrators, such as entering the directory to install the files. **Block** allows users to change these installation options, and some of the Windows Installer security features are bypassed.
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
