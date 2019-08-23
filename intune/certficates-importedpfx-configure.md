@@ -1,6 +1,6 @@
 ---
 title: Use private and public key certificates in Microsoft Intune - Azure | Microsoft Docs
-description: Add Imported Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, including the steps import the certificates, configure the certificate template, download, and install the Intune Imported PFX Certificate Connector and create a Imported PKCS Certificate profile in Azure.
+description: Add Imported Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, including the steps import the certificates, configure the certificate template, download, and install the Intune Imported PFX Certificate Connector and create an Imported PKCS Certificate profile in Azure.
 keywords:
 author: rimarram
 ms.author: rimarram
@@ -28,8 +28,8 @@ ms.collection: M365-identity-device-management
 ---
 # Configure and use Imported PKCS certificates with Intune
 
-With Email profiles in Intune there is the option to enable S/MIME where you can define a S/MINE Signing Cert and S/MINE Encryption Cert.
-For more information in regards to using S/MINE with Intune, [Use S/MIME to encrypt email](certificates-s-mime-encryption-sign.md).
+With Email profiles in Intune there is the option to enable S/MIME where you can define an S/MINE Signing Cert and S/MINE Encryption Cert.
+For more information regarding using S/MINE with Intune, [Use S/MIME to encrypt email](certificates-s-mime-encryption-sign.md).
 
 The challenge is with handling the S/MINE Encryption certificates, since revoking or deleting such certificate would result on loosing the email contents it encrypted.
 As such, it's not possible to use the normal [SCEP](certificates-scep-configure.md) or [PKCS](certficates-pfx-configure.md) profiles for this purpose, as when the device is unenrolled, the certificates issues with those profiles are revoked.
@@ -58,7 +58,7 @@ To use Imported PKCS certificates with Intune, you'll need the following infrast
 
 ## How it works
 
-When deploying a **Imported PFX certificate** to a user device via Intune, other than the device itself there is 2 components at play:
+When deploying an **Imported PFX certificate** to a user device via Intune, other than the device itself there are 2 components at play:
 
 - **Intune Service**: Stores the PFX certificates in an encrypted state and handles the deployment of the certificate to the user device.
 - **Imported PFX Certificate Connector**: Decrypts the PFX certificates using a local key.
