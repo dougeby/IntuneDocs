@@ -34,7 +34,7 @@ ms.collection: M365-identity-device-management
 
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. A managed app is an app that has app protection policies applied to it, and can be managed by Intune.
 
-Mobile Application Management (MAM) app protection policies allows you to manage and protects your organization's data within an application. With **MAM without enrollment** (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any [device](app-management.md#app-management-capabilities-by-platform), including personal devices in **bring-your-own-device** (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](apps-supported-intune-apps.md) available for public use.
+Mobile Application Management (MAM) app protection policies allows you to manage and protect your organization's data within an application. With **MAM without enrollment** (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any [device](app-management.md#app-management-capabilities-by-platform), including personal devices in **bring-your-own-device** (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Microsoft Intune protected apps](apps-supported-intune-apps.md) available for public use.
 
 ## How you can protect app data
 Your employees use mobile devices for both personal and work tasks. While making sure your employees can be productive, you want to prevent data loss, intentional and unintentional. You'll also want to protect company data that is accessed from devices that are not managed by you.
@@ -142,7 +142,9 @@ The Intune SDK development team actively tests and maintains support for apps bu
 
 The Intune APP SDK uses some advanced modern authentication capabilities from the Azure Active Directory Authentication Libraries (ADAL) for both the 1st party and the 3rd party versions of the SDK. As such, Microsoft Authentication Library (MSAL) does not work well with many of our core scenarios such as authentication into the Intune App Protection service and conditional launch. Given that the overall guidance from Microsoft's Identity team is to switch to MSAL for all of the Microsoft Office apps, the Intune SDK will eventually need to support it, but there are no plans today.
 
-### Requirements to use app protection policies on an Intune-managed app:
+## End user requirements to use app protection policies
+
+The following list provides the end user requirements to use app protection policies on an Intune-managed app:
 
 - The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](/intune/users-permissions-add) to learn how to create Intune users in Azure Active Directory.
 
@@ -152,7 +154,9 @@ The Intune APP SDK uses some advanced modern authentication capabilities from th
 
 - The end user must sign into the app using their AAD account.
 
-## App protection policies and Microsoft Office apps
+## App protection policies for Microsoft Office apps
+
+There are a few additional requirements that you want to be aware of when using App protection policies with Microsoft Office apps.
 
 ### Outlook mobile app
 The additional requirements to use the [Outlook mobile app](https://products.office.com/outlook) include the following:
