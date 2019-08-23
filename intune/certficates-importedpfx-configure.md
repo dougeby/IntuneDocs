@@ -210,10 +210,5 @@ After importing the certificates to Intune, create a **PKCS imported certificate
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) to your email configuration policy and [monitor its status](device-profile-monitor.md).
 
-[Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
-
-[NavigateIntune]: ./media/certificates-pfx-configure-profile-new.png "Navigate to Intune in the Azure portal and create a new profile for a trusted certificate"
-[ProfileSettings]: ./media/certificates-pfx-configure-profile-fill.png "Create a profile and upload a trusted certificate"
-[ConnectorDownload]: ./media/certificates-download-connector.png "Download the certificate connector from the Azure portal"  
