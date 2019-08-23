@@ -41,7 +41,9 @@ This article describes OEMConfig, lists the prerequisites, shows how to create a
 
 ## Overview
 
-OEMConfig policies are a special type of device configuration policy similar to [app configuration policy](app-configuration-policies-overview.md). OEMConfig is a standard defined by the [AppConfig community](https://www.appconfig.org/android-oemconfig/) (opens another web site). This standard allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way. Historically, EMMs, such as Intune, manually build support for OEM-specific features after they're introduced by the OEM. This approach leads to duplicated efforts and slow adoption.
+OEMConfig policies are a special type of device configuration policy similar to [app configuration policy](app-configuration-policies-overview.md). OEMConfig is a standard defined by the [AppConfig community](https://www.appconfig.org/android-oemconfig/) (opens another web site). This standard allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way. You can learn more about OEMConfig [here](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
+
+Historically, EMMs, such as Intune, manually build support for OEM-specific features after they're introduced by the OEM. This approach leads to duplicated efforts and slow adoption.
 
 With OEMConfig, an OEM creates a schema that defines OEM-specific management features. The OEM embeds the schema into an app, and then puts this app on Google Play. The EMM reads the schema from the app, and exposes the schema in the EMM administrator console. The console allows Intune administrators to configure the settings in the schema.
 
@@ -147,10 +149,10 @@ Compared to standard apps, OEMConfig apps expand the managed configurations priv
 
 -----------------
 
-To request a new OEMConfig app be on-boarded, email `IntuneOEMConfig@microsoft.com`.
+If an OEMConfig application exists for your device, but it isn’t in the table above, or isn't showing up in the Intune console, please email `IntuneOEMConfig@microsoft.com`.
 
 > [!NOTE]
-> OEMConfig apps must on-boarded by Intune before they can be configured with OEMConfig profiles.
+> OEMConfig apps must on-boarded by Intune before they can be configured with OEMConfig profiles. Once an app is supported, you don't need to contact Microsoft about setting it up in your tenant. Just follow the instructions on this page.
 
 ## Next steps
 
