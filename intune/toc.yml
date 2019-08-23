@@ -541,7 +541,7 @@
     items:
     - name: What is Intune app management?
       href: app-management.md    
-    - name: Add apps
+    - name: Add apps overview
       href: apps-add.md
       displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
       items:
@@ -645,7 +645,7 @@
         href: apps-selective-wipe.md
       - name: Use app protection policies
         items:
-        - name: Understand app protection policies
+        - name: App protection policies overview
           href: app-protection-policy.md
           displayName: app; protection; policy
         - name: Create app protection policies

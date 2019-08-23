@@ -22,7 +22,7 @@ ms.collection: M365-identity-device-management
 
 # Microsoft Intune protected apps  
 
-Intune managed apps are enabled with a rich set of mobile application protection policies. Managed apps allow you to:
+The apps listed in this topic are supported partner and Microsoft apps that are commonly used with Microsoft Intune. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
 - Restrict copy-and-paste and save-as functions
 - Configure web links to open inside the secure Microsoft browser
 - Enable multi-identity use and app-level Conditional Access
