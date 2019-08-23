@@ -2,7 +2,7 @@
 title: Use private and public key certificates in Microsoft Intune - Azure | Microsoft Docs
 description: Add Imported Public Key Cryptography Standards (PKCS) certificates with Microsoft Intune, including the steps import the certificates, configure the certificate template, download, and install the Intune Imported PFX Certificate Connector and create an Imported PKCS Certificate profile in Azure.
 keywords:
-author: rimarram
+author: ralms
 ms.author: rimarram
 manager: elstoene
 ms.date: 08/22/2019
