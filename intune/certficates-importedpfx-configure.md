@@ -28,7 +28,7 @@ ms.collection: M365-identity-device-management
 ---
 # Configure and use Imported PKCS certificates with Intune
 
-With Email profiles in Intune there is the option to enable S/MIME where you can define an S/MINE Signing Cert and S/MINE Encryption Cert.
+With Email profiles in Intune, there is the option to enable S/MIME where you can define an S/MINE Signing Cert and S/MINE Encryption Cert.
 For more information regarding using S/MINE with Intune, [Use S/MIME to encrypt email](certificates-s-mime-encryption-sign.md).
 
 The challenge is with handling the S/MINE Encryption certificates, since revoking or deleting such certificate would result on loosing the email contents it encrypted.
@@ -58,7 +58,7 @@ To use Imported PKCS certificates with Intune, you'll need the following infrast
 
 ## How it works
 
-When deploying an **Imported PFX certificate** to a user device via Intune, other than the device itself there are 2 components at play:
+When deploying an **Imported PFX certificate** to a user device via Intune, other than the device itself there are two components at play:
 
 - **Intune Service**: Stores the PFX certificates in an encrypted state and handles the deployment of the certificate to the user device.
 - **Imported PFX Certificate Connector**: Decrypts the PFX certificates using a local key.
@@ -120,7 +120,7 @@ PFX Certificates are imported to Intune encrypted, as such a public key is requi
 
 Although the Powershell module provides methods to create a key, other tools can be used.
 
-To start, please copy the folder with Powershell module generated from Visual Studio to the server itself where the **Imported PFX Certificate Connector** is installed.
+To start, copy the folder with Powershell module generated from Visual Studio to the server itself where the **Imported PFX Certificate Connector** is installed.
 
 1. On the server, open Powershell as Administrator and navigate to where the folder with the Powershell module is located.
 2. Import the module with `Import-Module .\IntunePfxImport.psd1`
@@ -171,7 +171,7 @@ With the folder generated from Visual Studio with the cmdlets, in order to impor
 5. Create a **UserPFXCertificate** object with
 `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "<FullPathPFXToCert>" $SecureFilePassword "<UserUPN>" "<ProviderName>" "<KeyName>" "<IntendedPurpose>" "<PaddingScheme>"`
 
-    E.g.: `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
+    For example: : `$userPFXObject = New-IntuneUserPfxCertificate -PathToPfxFile "C:\temp\userA.pfx" $SecureFilePassword "userA@contoso.com" "Microsoft Software Key Storage Provider" "PFXEncryptionKey" "smimeEncryption" "pkcs1"`
 
     > [!NOTE]
         > In order to import the certificate from your Workstation and not the server, the key file path needs to be specified on the previous mentioned command.
