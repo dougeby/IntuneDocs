@@ -681,7 +681,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 - **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
 - **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
 
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+  [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
 - **End user access to Defender**: **Block** hides the Windows Defender user interface from end users. All Windows Defender notifications are also suppressed. **Not configured** (default) allows user access to the Windows Defender UI. When this setting is changed, it takes effect the next time the end user's PC is restarted.
 
