@@ -27,7 +27,7 @@ highlightedContent:
       url: whats-new.md
     - title: Device enrollment
       itemType: get-started
-      url: device-enrollent.md
+      url: device-enrollment.md
     - title: Device compliance
       itemType: get-started
       url: device-compliance-get-started.md
