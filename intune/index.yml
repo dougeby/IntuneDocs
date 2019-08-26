@@ -81,6 +81,9 @@ conceptualContent:
         - url: device-management-capabilities.md
           itemType: concept
           text: Device management capabilities
+        - url: devices-wipe.md
+          itemType: concept
+          text: Remove devices
     - title: Set device compliance
       links:
         - url: device-compliance-get-started.md
@@ -122,11 +125,20 @@ conceptualContent:
         - url: app-protection-policy.md
           itemType: concept
           text: App protection policies
-    - title: Troubleshooting
+     - title: Troubleshooting
       links:
         - url: help-desk-operators.md
           itemType: concept
           text: Help users troubleshoot problems
+        - url: monitor-audit-logs.md
+          itemType: concept
+          text: Audit logs
+        - url: troubleshoot-app-install.md
+          itemType: concept
+          text: Troubleshoot app installation issues
+        - url: troubleshoot-policies-in-microsoft-intune.md
+          itemType: concept
+          text: Troubleshoot policies and profiles in Intune
     - title: Developer
       links:
         - url: intune-graph-apis.md
