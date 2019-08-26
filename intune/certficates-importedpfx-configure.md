@@ -70,7 +70,7 @@ Whenever a user targeted by a **PFX Imported Certificate profile** in Intune, In
 1. In the [Azure portal](https://portal.azure.com), select **All services**, filter on **Intune**, and select **Microsoft Intune**.
 2. Select **Device configuration** > **Certification Connectors** > **Add**
 
-    ![Imported PFX connector download](media/certificates-importedpfx-configure/download-importedPFXConnector.png)
+    ![Imported PFX connector download](media/certificates-importedpfx-configure/download-imported-pfxconnector.png)
 
 3. Download and save the Imported PFX Certificate Connector for Microsoft Intune. Save it to a location accessible from the server where you're going to install the connector.
 4. After the download completes, sign in to the server. Then:
