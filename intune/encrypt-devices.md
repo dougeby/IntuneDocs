@@ -84,7 +84,7 @@ For details about the FileVault setting you can manage with Intune, see [FileVau
 
 After Intune encrypts a macOS device with FileVault, you can view and manage the FileVault recovery keys when you view the Intune [encryption report](encryption-monitor.md).  
 
-After Intune encrypted a macOS device with FileVault, end users can view that device's personal recovery key from the web Company Portal on any device. Once in the web Company Portal, users can choose the encrypted macOS device, and choose to "Get recovery key" as a remote device action. 
+After Intune encrypts a macOS device with FileVault, you can view that device's personal recovery key from the web Company Portal on any device. Once in the web Company Portal, choose the encrypted macOS device, and then choose to "Get recovery key" as a remote device action. 
 
 ## BitLocker encryption for Windows 10  
 
