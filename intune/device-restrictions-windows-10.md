@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -715,36 +715,65 @@ These settings use the [experience policy CSP](https://docs.microsoft.com/window
 
 Select **OK** to save your changes.
 
-## Windows Defender Antivirus
+## Microsoft Defender Antivirus
 
 These settings use the [defender policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), which also lists the supported Windows editions.
 
-- **Real-time monitoring**: **Enable** prevents real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
-- **Behavior monitoring**: **Enable** prevents Defender check for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
+- **Real-time monitoring**: **Enable** turns off real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
+
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Behavior monitoring**: **Enable** turns off Defender checks for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
+
+  [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
 - **Network Inspection System (NIS)**: NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
 - **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
 - **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
 - **End user access to Defender**: **Block** hides the Windows Defender user interface from end users. All Windows Defender notifications are also suppressed. **Not configured** (default) allows user access to the Windows Defender UI. When this setting is changed, it takes effect the next time the end user's PC is restarted.
-- **Signature update interval (in hours)**: Enter the interval that Defender checks for new signature files, from 0-24. Your options:
 
-  - **Not configured** (default)
-  - **Do not check**: Defender doesn't check for new signature files.
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Security intelligence update interval (in hours)**: Enter the interval that Defender checks for new security intelligence, from 0-24. Your options:
+
+  - **Not configured** (default): Check for updates every 8 hours.
+  - **Do not check**: Defender doesn't check for new security intelligence updates.
   - **1-24**: `1` checks every hour, `2` checks every two hours, `24` checks every day, and so on.
-- **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices.
+  
+  [Defender/SignatureUpdateInterval](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Monitor file and program activity**: Allows Defender to monitor file and program activity on devices. Your options:
+
+  - **Not configured** (default): Monitors all files
+  - **Monitoring disabled**
+  - **Monitor all files**
+  - **Monitor incoming files only**
+  - **Monitor outgoing files only**
+
+  [Defender/RealTimeScanDirection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
 - **Days before deleting quarantined malware**: Continue tracking resolved malware for the number of days you enter so you can manually check previously affected devices. If you set the number of days to **0**, malware stays in the Quarantine folder, and isn't automatically removed. When set to `90`, quarantine items are stored for 90 days on the system, and then removed.
 - **CPU usage limit during a scan**: Limit the amount of CPU that scans are allowed to use, from **1** to **100**.
-- **Scan archive files**: **Enable** prevents Defender from scan archived files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
+- **Scan archive files**: **Enable** turns off Defender from scanning archive files, such as Zip or Cab files. **Not configured** (default) allows this scanning.
 - **Scan incoming mail messages**: **Enable** allows Defender to scan email messages as they arrive on the device. **Not configured** (default) prevents email scanning.
 - **Scan removable drives during a full scan**: **Enable** prevents full scans of removable drives. **Not configured** (default) lets Defender scan removable drives, such as USB sticks.
+
+  During a quick scan, removable drives may still be scanned.
+
 - **Scan mapped network drives during a full scan**: **Enable** lets Defender scan files on mapped network drives. **Not configured** (default) prevents the full scan. If the files on the drive are read-only, Defender can't remove any malware found in them.
+
+  During a quick scan, mapped drives may still be scanned.
+
 - **Scan files opened from network folders**: **Not configured** (default) lets Defender scan files on shared network drives, such as files accessed from a UNC path. **Enable** prevents this scanning. If the files on the drive are read-only, Defender can't remove any malware found in them.
 - **Cloud protection**: **Not configured** (default) allows the Microsoft Active Protection Service to receive information about malware activity from devices that you manage. **Enable** blocks this feature.
+
 - **Prompt users before sample submission**: Controls whether potentially malicious files that might require further analysis are automatically sent to Microsoft. Your options:
-  - **Not configured**
+
+  - **Not configured** (default): Send safe samples automatically.
   - **Always prompt**
   - **Prompt before sending personal data**
   - **Never send data**
-  - **Send all data without prompting**: Data is sent automatically
+  - **Send all data without prompting**: Data is sent automatically.
 
 - **Time to perform a daily quick scan**: Choose the hour to run a daily quick scan. **Not configured** doesn't run a daily scan. If you want more customization, configure the **Type of system scan to perform** setting.
 
@@ -778,15 +807,15 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   For more information about potentially unwanted apps, see [Detect and block potentially unwanted applications](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. If it's not possible, Windows Defender chooses the best option to ensure the threat is remediated. Your options:
+- **Actions on detected malware threats**: Choose the actions you want Defender to take for each threat level it detects: low, moderate, high, and severe. If it's not possible, Windows Defender chooses the best option to ensure the threat is remediated. 
+
+**Not configured** (default): Microsoft Defender chooses the best option. When set to **Enable**, your options:
   - **Clean**
   - **Quarantine**
   - **Remove**
   - **Allow**
   - **User defined**
   - **Block**
-
-Select **OK** to save your changes.
 
 ### Windows Defender Antivirus Exclusions
 
