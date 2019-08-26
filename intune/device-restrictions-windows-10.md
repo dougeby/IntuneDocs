@@ -762,12 +762,16 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
     - **Day scheduled**: Choose the day to run the scan.
     - **Time scheduled**: Choose the hour to run the scan.
 
-  This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:
-
-  - To run a daily quick scan, configure the **Time to perform a daily quick scan** setting.
-  - To run a daily quick scan and a full scan every week, then configure the **Time to perform a daily quick scan**. Set **Type of system scan to perform** to a full scan with the day and time.
-  - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
-  - To run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
+  > [!TIP]
+  > This setting may conflict with the **Time to perform a daily quick scan** setting. Some recommendations:  
+  >
+  > - If you want to schedule a daily quick scan, and a weekly full scan, then:
+  >   - Configure the **Time to perform a daily quick scan** setting.
+  >   - Configure the **Type of system scan to perform** to do a full scan.
+  > 
+  > - If you only want one quick scan daily (no full scan), then use either setting: **Time to perform a daily quick scan** or **Type of system scan to perform**. For example, to run a quick scan every Tuesday at 6 AM, configure the **Type of system scan to perform** setting.
+  > 
+  > - Don't configure the **Time to perform a daily quick scan** setting simultaneously with the **Type of system scan to perform** set to **Quick scan**. These settings may conflict, and a scan may not run.
 
   [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
