@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 08/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -152,7 +152,7 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 ### Defender
 
 - **Microsoft Defender Antimalware**: Set to **Require** to turn on the Microsoft Defender anti-malware service, and prevent users from turning it off. **Not configured** (default) doesn't control the service, nor change existing settings.
-- **Microsoft Defender Antimalware minimum version**: Enter the minimum allowed version of Microsoft Defender anti-malware service. For example, enter `4.11.0.0`.
+- **Microsoft Defender Antimalware minimum version**: Enter the minimum allowed version of Microsoft Defender anti-malware service. For example, enter `4.11.0.0`. When left blank, any version of the Microsoft Defender anti-malware service can be used.
 - **Microsoft Defender Antimalware security intelligence up-to-date**: Controls the Windows Security virus and threat protection updates on the devices. **Require** forces the Microsoft Defender security intelligence be up-to-date. **Not configured** (default) doesn't enforce any requirements.
 
   [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates) has more information on the security intelligence.
