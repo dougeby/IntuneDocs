@@ -125,7 +125,7 @@ conceptualContent:
         - url: app-protection-policy.md
           itemType: concept
           text: App protection policies
-     - title: Troubleshooting
+    - title: Troubleshooting
       links:
         - url: help-desk-operators.md
           itemType: concept
