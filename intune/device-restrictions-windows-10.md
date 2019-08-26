@@ -671,7 +671,7 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
 - **Real-time monitoring**: **Enable** turns off real-time scanning for malware, spyware, and other unwanted software. **Not configured** (default) allows this feature.
 
-  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+  [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
 - **Behavior monitoring**: **Enable** turns off Defender checks for certain known patterns of suspicious activity on devices. **Not configured** (default) allows Windows Defender Behavior Monitoring.
 
