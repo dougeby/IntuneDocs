@@ -59,31 +59,37 @@ conceptualContent:
         - url: supported-devices-browsers.md
           itemType: reference
           text: Supported operating systems and browsers
-        - url: network-bandwidth-use.md
+        - url: role-based-access-control.md
           itemType: reference
-          text: Network configuration requirements
+          text: Role-based access control
     - title: Enroll devices
       links:
         - url: device-enrollment.md
           itemType: concept
           text: What is device enrollment?
-        - url: enrollment-options.md
+        - url: windows-enroll.md
           itemType: concept
-          text: Enrollment options
-        - url: windows-enrollment-methods.md
+          text: Set up enrollment for Windows
+        - url: ios-enroll.md
           itemType: concept
-          text: Windows enrollment methods
-    - title: Manage devices
+          text: Set up enrollment for iOS devices        
+        - url: android-enroll.md
+          itemType: concept
+          text: Set up enrollment for Android devices
+    - title: Remotely manage devices
       links:
         - url: device-management.md
           itemType: concept
           text: Device management overview
         - url: device-management-capabilities.md
           itemType: concept
-          text: Device management capabilities
-        - url: devices-wipe.md
+          text: Send custom notifications
+        - url: custom-notifications.md
           itemType: how-to-guide
           text: Remove devices
+        - url: devices-wipe.md
+          itemType: how-to-guide
+          text: Remove devices          
     - title: Set device compliance
       links:
         - url: device-compliance-get-started.md
