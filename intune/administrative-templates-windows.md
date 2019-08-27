@@ -2,12 +2,12 @@
 # required metadata
 
 title: Use templates for Windows 10 devices in Microsoft Intune - Azure | Microsoft Docs
-description: Use Administrative templates in Microsoft Intune to create groups of settings for Windows 10 devices. Use these settings in a device configuration profile to control Office programs, secure features in Internet Explorer, control access to OneDrive, use remote desktop features, enable Auto-Play, set power management settings, use HTTP printing, use different user sign in options, and control the event log size.
+description: Use Administrative templates in Microsoft Intune to create groups of settings for Windows 10 devices. Use these settings in a device configuration profile to control Office programs, Microsoft Edge, secure features in Internet Explorer, control access to OneDrive, use remote desktop features, enable Auto-Play, set power management settings, use HTTP printing, use different user sign in options, and control the event log size.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,11 +28,11 @@ ms.collection: M365-identity-device-management
 
 # Use Windows 10 templates to configure group policy settings in Microsoft Intune
 
-When managing devices in your organization, you want to create a group of settings that are applied to different device groups. For example, you have several device groups. For GroupA, you want to assign a specific set of settings. For GroupB, you want to assign a different set of settings. You also want a simple view of the settings you can configure.
+When managing devices in your organization, you want to create groups of settings that apply to different device groups. For example, you have several device groups. For GroupA, you want to assign a specific set of settings. For GroupB, you want to assign a different set of settings. You also want a simple view of the settings you can configure.
 
-You can complete this task using **Administrative Templates** in Microsoft Intune. The administrative templates include hundreds of settings that control features in Internet Explorer, Microsoft Office programs, remote desktop, OneDrive, passwords and PINs, and more. These settings allow group administrators to manage group policies using the cloud.
+You can complete this task using **Administrative Templates** in Microsoft Intune. The administrative templates include hundreds of settings that control features in Microsoft Edge, Internet Explorer, Microsoft Office programs, remote desktop, OneDrive, passwords and PINs, and more. These settings allow group administrators to manage group policies using the cloud.
 
-The Windows settings are similar to group policy (GPO) settings in Active Directory (AD). These settings are built in to Windows, and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (opens another Microsoft site) that use XML. The Office settings are ADMX-ingested, and use the ADMX settings in [Office administrative template files](https://www.microsoft.com/download/details.aspx?id=49030). But, the Intune templates are 100% cloud-based. They offer a simple and straight-forward way to configure the settings, and find the settings you want.
+The Windows settings are similar to group policy (GPO) settings in Active Directory (AD). These settings are built in to Windows, and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) that use XML. The Office settings are ADMX-ingested, and use the ADMX settings in [Office administrative template files](https://www.microsoft.com/download/details.aspx?id=49030). But, the Intune templates are 100% cloud-based. They offer a simple and straight-forward way to configure the settings, and find the settings you want.
 
 **Administrative Templates** are built in to Intune, and don't require any customizations, including using OMA-URI. As part of your mobile device management (MDM) solution, use these template settings as a one-stop shop to manage your Windows 10 devices.
 
@@ -42,7 +42,7 @@ This article lists the steps to create a template for Windows 10 devices, and sh
 
 - Some of these settings are available starting with Windows 10 version 1703 (RS2). For the best experience, it's suggested to use Windows 10 Enterprise version 1903 (19H1) and newer.
 
-- The Windows settings use [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (opens another Microsoft site). The CSPs work on different editions of Windows, such as Home, Professional, Enterprise, and so on. To see if a CSP works on a specific edition, go to [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (opens another Microsoft site).
+- The Windows settings use [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies). The CSPs work on different editions of Windows, such as Home, Professional, Enterprise, and so on. To see if a CSP works on a specific edition, go to [Windows policy CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## Create a template
 
@@ -62,7 +62,7 @@ This article lists the steps to create a template for Windows 10 devices, and sh
     > [!TIP]
     > The Windows settings in Intune correlate to the on-premises group policy path you see in Local Group Policy Editor (`gpedit`).
 
-5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, or only show **Office** settings:
+5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Microsoft Edge** settings:
 
     ![Filter the list to show all Windows or all Office settings in administrative templates in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
@@ -73,9 +73,10 @@ Continue to go through the list of settings, and configure the settings you want
 
 - Use the **VBA Macro Notification Settings** setting to handle VBA macros in different Microsoft Office programs, including Word and Excel.
 - Use the **Allow file downloads** setting to allow or prevent downloads from Internet Explorer.
-- Use the **Require a password when a computer wakes (plugged in)** setting to prompt users for a password when devices wake from sleep mode.
+- Use **Require a password when a computer wakes (plugged in)** to prompt users for a password when devices wake from sleep mode.
 - Use the **Download unsigned ActiveX controls** setting to block users from downloading unsigned ActiveX controls from Internet Explorer.
 - Use the **Turn off System Restore** setting to allow or prevent users from running a system restore on the device.
+- Use the **Allow importing of favorites** setting to allow or block users from importing favorites from another browser into Microsoft Edge.
 - And much more...
 
 ## Find some settings
