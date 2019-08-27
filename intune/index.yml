@@ -207,5 +207,4 @@ additionalContent:
         - title: How to get support for Microsoft Intune?
           summary: Learn about the different ways that Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune.
           url: get-support.md
-
-footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
+  footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
