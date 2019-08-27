@@ -16,10 +16,10 @@ highlightedContent:
     - title: What is Intune?
       itemType: learn
       url: what-is-intune.md
-    - title: What can Intune do for my company?
+    - title: Common scenarios
       itemType: learn
-      url: get-started-evaluation.md
-    - title: What's new
+      url: common-scenarios.md
+    - title: What's new in Intune
       itemType: learn
       url: whats-new.md
     - title: Try Intune for free
@@ -113,7 +113,7 @@ conceptualContent:
           text: Device protection overview
         - url: conditional-access.md
           itemType: concept
-          text: Conditional access overview
+          text: Conditional access with Intune
         - url: mobile-threat-defense.md
           itemType: concept
           text: Mobile Threat Defense integration with Intune
