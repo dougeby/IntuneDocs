@@ -17,14 +17,14 @@ highlightedContent:
       itemType: learn
       url: what-is-intune.md
     - title: What can Intune do for my company?
-      itemType: get-started
+      itemType: learn
       url: get-started-evaluation.md
+    - title: What's new
+      itemType: learn
+      url: whats-new.md
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
-    - title: What's new
-      itemType: whats-new
-      url: whats-new.md
     - title: Device enrollment
       itemType: get-started
       url: device-enrollment.md
@@ -82,7 +82,7 @@ conceptualContent:
           itemType: concept
           text: Device management capabilities
         - url: devices-wipe.md
-          itemType: concept
+          itemType: how-to-guide
           text: Remove devices
     - title: Set device compliance
       links:
@@ -90,7 +90,7 @@ conceptualContent:
           itemType: concept
           text: Device compliance overview
         - url: create-compliance-policy.md
-          itemType: concept
+          itemType: how-to-guide
           text: Create a compliance policy
     - title: Configure device settings
       links:
@@ -117,36 +117,39 @@ conceptualContent:
           itemType: concept
           text: App management overview
         - url: add-apps.md
-          itemType: concept
+          itemType: how-to-guide
           text: Add apps to Intune
         - url: apps-deploy.md
-          itemType: concept
+          itemType: how-to-guide
           text: Assign apps to groups
         - url: app-protection-policy.md
           itemType: concept
           text: App protection policies
-    - title: Troubleshooting
+    - title: Help and support
       links:
         - url: help-desk-operators.md
           itemType: concept
           text: Help users troubleshoot problems
         - url: monitor-audit-logs.md
           itemType: concept
-          text: Audit logs
+          text: Use audit logs to track and monitor events
         - url: troubleshoot-app-install.md
           itemType: concept
           text: Troubleshoot app installation issues
         - url: troubleshoot-policies-in-microsoft-intune.md
           itemType: concept
           text: Troubleshoot policies and profiles in Intune
+        - url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
+          itemType: concept
+          text: Get help on the Intune Customer Success site   
     - title: Developer
       links:
         - url: intune-graph-apis.md
           itemType: concept
-          text: How to use Azure AD to access the Intune APIs in Microsoft Graph
+          text: Access the Intune APIs in Microsoft Graph
         - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
           itemType: concept
-          text: Use PowerShell cmdlets to automate actions in Intune.
+          text: Use PowerShell cmdlets to automate actions.
         - url: reports-nav-create-intune-reports.md
           itemType: concept
           text: Use the Microsoft Intune Data Warehouse
@@ -154,7 +157,7 @@ conceptualContent:
       links: 
         - url: https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done
           itemType: concept
-          text: Enroll device for access to work or school resources
+          text: Enroll device to access work or school resources
         - url: https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune
           itemType: overview
           text: What information can my organization see when I enroll my device?
@@ -186,10 +189,10 @@ additionalContent:
         links: 
         - text: Explore Microsoft 365, a complete solution that includes Intune
           url: https://docs.microsoft.com/microsoft-365/
+        - text: Microsoft 365 Enterprise documentation
+          url: https://docs.microsoft.com/microsoft-365/enterprise/         
         - text: Microsoft 365 Enterprise foundation infrastructure
           url: https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure
-        - text: Intune for Education
-          url: https://docs.microsoft.com/intune-education/what-is-intune-for-education    
     - title: Intune community & support
       items:
         # Card
@@ -198,11 +201,11 @@ additionalContent:
           url: https://social.technet.microsoft.com/forums/home?forum=microsoftintuneprod
         # Card
         - title: Microsoft Intune Feedback
-          summary: All of the feedback that you share in these forums will be monitored and reviewed by the Microsoft engineering teams responsible for building Microsoft Intune, though we can’t promise to reply to all posts.
+          summary: Provide product feedback that's monitored and reviewed by the Microsoft engineering teams responsible for building Microsoft Intune.
           url: https://microsoftintune.uservoice.com/forums/291681-ideas
         # Card
         - title: How to get support for Microsoft Intune?
-          summary: Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune.
+          summary: Learn about the different ways that Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune.
           url: get-support.md
 
-  footer: "This is the footer text [link text](https://docs.microsoft.com/intune)"
+footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
