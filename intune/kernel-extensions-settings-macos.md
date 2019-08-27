@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/04/2019
+ms.date: 08/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -58,8 +58,17 @@ These settings are added to a device configuration profile in Intune, and then a
 
   **Add** the bundle identifier and team identifier of a kernel extension that you want to load. For unsigned legacy kernel extensions, use an empty team identifier. You can add multiple kernel extensions. The team identifier must be alphanumeric (letters and numbers) and have 10 characters. For example, enter `com.contoso.appname.macos` for **Bundle ID**, and `ABCDE12345` for **Team identifier**.
 
-> [!TIP]
-> You don't have add team identifiers and kernel extensions. You can configure one or the other.
+  > [!TIP]
+  > To get the Bundle ID of a kernel extension (Kext) on a macOS device, you can:
+  >
+  > 1. In the Terminal, run `kextstat | grep -v com.apple`, and note the output. Install the software or Kext that you want. Run `kextstat | grep -v com.apple` again, and look for changes.
+  >
+  >    In the Terminal, `kextstat` lists all the kernel extensions on the OS. 
+  >
+  > 2. On the device, open the Information Property List file (Info.plist) for a Kext. The bundle ID is shown. Each Kext has an Info.plist file stored inside. 
+
+> [!NOTE]
+> You don't have to add team identifiers and kernel extensions. You can configure one or the other.
 
 ## Next steps
 
