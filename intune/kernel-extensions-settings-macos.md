@@ -61,6 +61,14 @@ These settings are added to a device configuration profile in Intune, and then a
 > [!TIP]
 > You don't have add team identifiers and kernel extensions. You can configure one or the other.
 
+> [!TIP]
+> Here are some ways you can locate the Bundle ID of a Ktext on a macOS device. 
+1) In the Terminal, Run kextstat | grep -v com.apple and record the output. Install the software/kext that you are interested in. Run kextstat | grep -v com.apple again and look for changes.
+2) Open the Info.plist for a ktext on the macOS device and the bundle ID is in there. Each ktext has an Info.plist file stored inside. 
+
+FYI - In the Terminal, run kextstat to list all of the kernel extensions on the OS. 
+
+
 ## Next steps
 
 [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
