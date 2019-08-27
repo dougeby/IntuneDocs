@@ -69,6 +69,12 @@ You can choose to [change of the version](#change-the-baseline-version-for-a-pro
 
 ## Available security baselines 
 
+ You can one or more of the available baselines in your Intune environment at the same time. You can also use multiple instances of the same security baselines that have different customizations. 
+
+When you use multiple security baselines, review the settings in each one to identify when different baselines introduce conflicting values for the same setting. Because you can deploy security baselines that are designed for different intents, and deploy multiple instances of the same baseline that includes customized settings, you might create configuration [conflicts for devices that must be investigated and resolved](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Also be aware of your [device configuration profiles, which can configure many of the same settings as security baselines. 
+
+
+
 The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
 - **MDM Security Baseline**
