@@ -68,13 +68,13 @@ conceptualContent:
           itemType: concept
           text: What is device enrollment?
         - url: windows-enroll.md
-          itemType: concept
+          itemType: how-to-guide
           text: Set up enrollment for Windows
         - url: ios-enroll.md
-          itemType: concept
+          itemType: how-to-guide
           text: Set up enrollment for iOS devices        
         - url: android-enroll.md
-          itemType: concept
+          itemType: how-to-guide
           text: Set up enrollment for Android devices
     - title: Remotely manage devices
       links:
@@ -83,13 +83,13 @@ conceptualContent:
           text: Device management overview
         - url: device-management-capabilities.md
           itemType: concept
-          text: Send custom notifications
+          text: Device management capabilities
         - url: custom-notifications.md
           itemType: how-to-guide
-          text: Remove devices
+          text: Send custom notifications
         - url: devices-wipe.md
           itemType: how-to-guide
-          text: Remove devices          
+          text: Remove devices      
     - title: Set device compliance
       links:
         - url: device-compliance-get-started.md
