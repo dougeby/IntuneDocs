@@ -197,10 +197,6 @@ By default, there can only be one **Global** policy per tenant. However, you can
 
 While the **Global** policy applies to all users in your tenant, any standard Intune app protection policy will override these settings.
 
-## Examples of app protection policies
-
-To learn more about examples of app protection policies, see the [Android app protection policy settings](app-protection-policy-settings-android.md) and [iOS app protection policy settings](app-protection-policy-settings-ios.md) for detailed information on each app protection policy setting.
-
 ## App protection features
 
 ### Multi-identity
@@ -296,6 +292,10 @@ Intune app protection depends on the identity of the user to be consistent betwe
 
 **Secure way to open web links from managed apps**<br>
 The IT administrator can deploy and set app protection policy for the [Intune Managed Browser app](app-configuration-managed-browser.md), a web browser developed by Microsoft Intune that can be managed easily with Intune. The IT administrator can require all web links in Intune-managed apps to be opened using the Managed Browser app.
+
+## Examples of app protection policies
+
+To learn more about app protection policies examples and to see detailed information on each app protection policy setting, see the [Android app protection policy settings](app-protection-policy-settings-android.md) and [iOS app protection policy settings](app-protection-policy-settings-ios.md).
 
 ## Next steps
 
