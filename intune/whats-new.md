@@ -67,7 +67,7 @@ To learn more about administrative templates, see [Use Windows 10 templates to c
 
 Applies to:
 
-- Windows 10 and newer
+- Windows 10 and newer (Windows RS4+)
 
 ## Week of August 12, 2019
 
