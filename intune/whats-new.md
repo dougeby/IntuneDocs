@@ -57,7 +57,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
-## Week of August 27, 2019
+## Week of August 26, 2019
 
 ### Configure Microsoft Edge settings using administrative templates for Windows 10 and newer <!-- 5228061 -->
 
