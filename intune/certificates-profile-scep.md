@@ -80,7 +80,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
            To use the *{{OnPrem_Distinguished_Name}}* variable, be sure to sync the *onpremisesdistinguishedname* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
-         - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called *onPremisesSamAccountName*. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: *DomainName\testUser*, or only *testUser*.
+         - **CN={{onPremisesSamAccountName}}**: Admins can sync the samAccountName attribute from Active Directory to Azure AD using Azure AD connect into an attribute called *onPremisesSamAccountName*. Intune can substitute that variable as part of a certificate issuance request in the subject of a certificate. The samAccountName attribute is the user sign-in name used to support clients and servers from a previous version of Windows (pre-Windows 2000). The user sign in name format is: *DomainName\testUser*, or only *testUser*.
 
             To use the *{{onPremisesSamAccountName}}* variable, be sure to sync the *onPremisesSamAccountName* user attribute using [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) to your Azure AD.
 
@@ -181,16 +181,16 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
      Select one of the available hash algorithm types to use with this certificate. Select the strongest level of security that the connecting devices support.
 
    - **Root Certificate**:  
-     Select the *trusted certificate profile* you previously configured and assigned to applicable users and devices for this SCEP certificate profile. The trusted certificate profile is used to provision users and devices with the Trusted Root CA certificate. For information about the trusted certificate profile, see [Export your trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*.  If you have a root Certification Authority and an issuing Certification Authority, select the Trusted Root certificate profile that is associated with the issuing Certification Authority.
+     Select the *trusted certificate profile* you previously configured and assigned to applicable users and devices for this SCEP certificate profile. The trusted certificate profile is used to provision users and devices with the Trusted Root CA certificate. For information about the trusted certificate profile, see [Export your trusted root CA certificate](certificates-configure.md#export-the-trusted-root-ca-certificate) and [Create trusted certificate profiles](certificates-configure.md#create-trusted-certificate-profiles) in *Use certificates for authentication in Intune*. If you have a root Certification Authority and an issuing Certification Authority, select the Trusted Root certificate profile that is associated with the issuing Certification Authority.
 
    - **Extended key usage**:  
      Add values for the certificate's intended purpose. In most cases, the certificate requires *client authentication* so that the user or device can authenticate to a server. You can add additional key usages as required.
 
    - **Renewal threshold (%)**:  
-     Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate.  For example, if you enter 20, the renewal of the certificate will be attempted when the certificate is 80% expired until successful.  Renewal will generate a new certificate which will result in a new public/private key pair.
+     Enter the percentage of the certificate lifetime that remains before the device requests renewal of the certificate. For example, if you enter 20, the renewal of the certificate will be attempted when the certificate is 80% expired and continues to be attempted until renewal is successful. Renewal generates a new certificate, which results in a new public/private key pair.
 
    - **SCEP Server URLs**:  
-     Enter one or more URLs for the NDES Servers that issue certificates via SCEP. For example, enter something like *https://ndes.contoso.com/certsrv/mscep/mscep.dll*.  You can add additional SCEP URLs for load balancing as needed as URLs are randomly pushed to the device with the profile.  If one of the SCEP servers is not available, the SCEP request will fail, and it is possible that on subsequent device checkins, the cert request could be made against the same server that is down.
+     Enter one or more URLs for the NDES Servers that issue certificates via SCEP. For example, enter something like *https://ndes.contoso.com/certsrv/mscep/mscep.dll*. You can add additional SCEP URLs for load balancing as needed as URLs are randomly pushed to the device with the profile. If one of the SCEP servers isn't available, the SCEP request will fail and it's possible that on subsequent device check-ins, the cert request could be made against the same server that is down.
 
 7. Select **OK**, and then select **Create**. The profile is created and appears on the *Device configuration - Profiles* list.
 
@@ -241,7 +241,7 @@ Assign SCEP certificate profiles the same way you [deploy device profiles](devic
 
 - If you use co-management for Intune and Configuration Manager, in Configuration Manager [set the workload slider](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) for Resource Access Policy to **Intune** or **Pilot Intune**. This setting allows Windows 10 clients to start the process of requesting the certificate.
 
-- Although you create and assign the trusted certificate profile and the SCEP certificate profile separately, both must be assigned. Without both installed on a device, the SCEP certificate policy fails.  You should ensure that any trusted root certificate profiles are also deployed to the same groups as the SCEP profile.
+- Although you create and assign the trusted certificate profile and the SCEP certificate profile separately, both must be assigned. Without both installed on a device, the SCEP certificate policy fails. Ensure that any trusted root certificate profiles are also deployed to the same groups as the SCEP profile.
 
 
 > [!NOTE]
