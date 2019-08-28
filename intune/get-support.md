@@ -9,7 +9,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/04/2019
+ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,7 +55,7 @@ If the preceding workarounds don't help, go to [Microsoft 365 admin center](http
 
 ## Help and support experience  
 
-The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](http://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
+The Help and support experience for Intune is available from the [Microsoft 365 Device Management portal](https://devicemanagement.microsoft.com) and from all of the blades (or pages) under Intune in the Azure portal. 
 
 ![Intune blades](./media/get-support/intune-blades.png)
 
@@ -64,8 +64,17 @@ The *Help and support* experience is similar to the experience seen in the [Micr
 
 To access Help and support, use the following options:  
 - **Device Management Dashboard:**
-  - Select any available option for **Help and support**
-  - Select the **?** icon in the upper-right corner of the portal
+  - After you've selected a feature area for Intune, select the option for **Help and support**.
+  - From any node in the Device Management portal, select the **?** icon in the upper-right corner of the portal, and then use the drop-down to select the service you want help with. The **?** icon in the Device Management portal supports multiple services, and you must select the specific service you want assistance for.  
+
+    ![Select your service](./media/get-support/select-a-service.png)
+
+    After you select a service, you'll see the *Help and support* page for that service where you can then [specify details](#specify-details-about-an-issue) about the specific problem you want help with.  
+
+    If the results of your search don't seem to match expectations for your service, check to ensure the correct service was selected. The service selection appears just after *Help and support*.  If the right service wasn't selected, click on *Select a service* to return to the service selection drop-down.   
+
+    ![Confirm your service](./media/get-support/confirm-your-service-selection.png) 
+
 
 - **In the Azure portal:**
   - Select **Help and support** from any Intune blade or page

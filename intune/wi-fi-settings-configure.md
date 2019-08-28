@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -44,7 +44,7 @@ Wi-Fi profiles support the following device platforms:
 - Android 4 and later
 - Android Enterprise and kiosk
 - iOS 8.0 and later
-- macOS (Mac OS X 10.11 and later)
+- macOS X 10.11 and newer
 - Windows 10 and later, Windows 10 Mobile, and Windows Holographic for Business
 
 > [!NOTE]
@@ -52,35 +52,39 @@ Wi-Fi profiles support the following device platforms:
 
 ## Create a device profile
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device configuration** > **Profiles** > **Create profile**.
-3. Enter a **Name** and **Description** for the Wi-Fi profile.
-4. In the **Platform** drop-down list, select the device platform to apply the Wi-Fi settings. Your options:
+1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Device configuration** > **Profiles** > **Create profile**.
+2. Enter the following properties:
 
-    - **Android**
-    - **Android enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 and later**
-    - **Windows 10 and later**
+    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **WiFi profile for entire company**.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Choose the platform of your devices. Your options:
 
-5. In **Profile Type**, choose **Wi-Fi**.
+      - **Android**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 and later**
+      - **Windows 10 and later**
 
-    - For **Android Enterprise** devices running as a kiosk, you can choose **Device owner only** > **Wi-Fi**.
-    - For **Windows 8.1 and later**, you can choose **Wi-Fi import**. This option lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
+    - **Profile Type**: Select **Wi-Fi**.
 
-6. Some of the Wi-Fi settings are different for each platform. To see the settings for a specific platform, choose:
+      > [!TIP]
+      >
+      > - For **Android Enterprise** devices running as a dedicated device (kiosk), choose **Device owner only** > **Wi-Fi**.
+      > - For **Windows 8.1 and later**, you can choose **Wi-Fi import**. This option lets you import Wi-Fi settings as an XML file that you previously exported from a different device.
+
+3. Some of the Wi-Fi settings are different for each platform. To see the settings for a specific platform, choose your platform:
 
     - [Android](wi-fi-settings-android.md)
-    - [Android Enterprise and kiosk](wi-fi-settings-android-enterprise.md)
+    - [Android Enterprise](wi-fi-settings-android-enterprise.md), including dedicated devices
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 and later](wi-fi-settings-windows.md)
     - [Windows 8.1 and later](wi-fi-settings-import-windows-8-1.md), including Windows Holographic for Business
 
-    Most platforms have **Basic** and **Enterprise** settings. **Basic** includes features such as the network name and the SSID. **Enterprise** lets you supply more advanced information, such as the Extensible Authentication Protocol (EAP).
+4. When you're done, select **Create Profile** > **Create**.
 
-7. When finished adding your Wi-Fi settings, select **Create Profile** > **Create** to add the configuration profile. The profile is created and is shown in the profiles list (**Device configuration** > **Profiles**).
+The profile is created, and shown in the profiles list (**Device configuration** > **Profiles**).
 
 ## Next steps
 

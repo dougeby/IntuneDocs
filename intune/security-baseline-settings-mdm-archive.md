@@ -43,7 +43,7 @@ When a baseline version is no longer supported for use, it will then be removed 
 
 ## Preview: MDM Security Baseline for October 2018  
 
-*This baseline is superseded by [MDM Security Baseline for Spring 2019 (19H1)](security-baseline-settings-mdm.md)*
+*This baseline is superseded by [MDM Security Baseline for May 2019](security-baseline-settings-mdm.md)*
 
 ### Above Lock  
 
@@ -1455,4 +1455,4 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 ## Next steps  
 
 [View the current baseline version](security-baseline-settings-mdm.md)  
-[Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Upgrade profiles to use a new baseline version](security-baselines.md#change-the-baseline-version-for-a-profile)

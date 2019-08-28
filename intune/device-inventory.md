@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -55,21 +55,11 @@ This article shows you how to view all your devices, and their properties in the
    - **Device compliance** lists all assigned compliance policies, and if the device is compliant or not compliant.
    - **Device configuration** shows all device configuration policies assigned to the device, and if the policy succeeded or failed.
 
-Intune collects an app list only on corporate-owned devices. Apps aren't checked on personal devices. For Windows 10 PCs, only modern apps are listed for corporate-owned devices. Intune doesn't collect information about Win32 apps on the device unless you're using the [Intune Management Extension](https://docs.microsoft.com/intune/intune-management-extension). This only works on corporate owned devices. Depending on the carrier used by the devices, not all apps might be collected. There's no aggregated view and the data can only be viewed on a per-device basis currently.
-
-|Platform|For Personal-owned Devices|For Company-owned devices|  
-|--------------|---------------------------------|--------------------------------|  
-|Windows 10 (without the Configuration Manager client)|Only managed modern apps|All modern apps installed on the device|
-|Windows 8.1 (without the Configuration Manager client)|Only managed apps|Only managed apps|  
-|Windows Phone 8|Only managed apps|Only managed apps|  
-|Windows RT|Only managed apps|Only managed apps|  
-|iOS|Only managed apps|All apps installed on the device|
-|macOS|All apps installed on the device|All apps installed on the device|  
-|Android|Only managed apps|All apps installed on the device|  
-|Android Enterprise|Only managed apps|Only apps installed in the Work Profile|  
-
 ## Hardware device details
 Depending on the carrier used by the devices, not all details might be collected
+
+> [!Note]  
+> Hardware and Software inventory is refreshed in the Intune service every 7 days.
 
 |Detail|Description|Platform| 
 |--------------|----------------------|----|  

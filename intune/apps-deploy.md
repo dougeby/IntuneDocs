@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -71,7 +71,9 @@ The following table lists the various options for assigning apps to users and de
    - **Uninstall**: The app is uninstalled from devices in the selected groups if Intune has previously installed the application onto the device via an "Available for enrolled devices" or "Required" assignment using the same deployment. Web links cannot be removed after deployment.
 
      > [!NOTE]
-     > **For iOS apps only**: If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
+     > **For iOS apps only**:
+     > - To configure what happens to managed apps when devices are no longer managed, you can select the intended setting under **Uninstall on device removal**. For more information, see [App uninstall setting for iOS managed apps](apps-deploy.md#app-uninstall-setting-for-ios-managed-apps).
+     > - If you have created an iOS VPN profile that contains per-app VPN settings, you can select the VPN profile under **VPN**. When the app is run, the VPN connection is opened. For more information, see [VPN settings for iOS devices](vpn-settings-ios.md).
      >
      > **For Android apps only**: If you deploy an Android app as **Available with or without enrollment**, reporting status will only be available on enrolled devices.
      >
@@ -128,7 +130,8 @@ The information in the following table can help you understand the resulting int
 
 > [!NOTE]
 > For managed iOS store apps only, when you add these apps to Microsoft Intune and assign them as **Required**, the apps are automatically created with both **Required** and **Available** intents.<br><br>
-> iOS Store apps (not iOS VPP apps) that are targeted with required intent will be enforced on the device at the time of the device check-in and will also show in the Company Portal app.
+> iOS Store apps (not iOS VPP apps) that are targeted with required intent will be enforced on the device at the time of the device check-in and will also show in the Company Portal app.<br><br>
+> When conflicts occur in **Uninstall on device removal** setting, the app is not removed from the device when the device is no longer managed.
 
 ## Managed Google Play app deployment to unmanaged devices
 For Android devices in a non-enrolled App Protection Policy Without Enrollment (APP-WE) deployment scenario, you can use Managed Google Play to deploy store apps and line-of-business (LOB) apps to users. Managed Google Play apps targeted as **Available with or without enrollment** will appear in the Play Store app on the end user's device, and not in the Company Portal app. End user will browse and install apps deployed in this manner from the Play app. Because the apps are being installed from managed Google Play, the end user will not need to alter their device settings to allow app installation from unknown sources, which means the devices will be more secure. If the app developer publishes a new version of an app to Play that was installed on a user's device, the app will be automatically updated by Play. 
@@ -143,6 +146,23 @@ Steps to assign a Managed Google Play app to unmanaged devices:
 6. The end user can expand the context menu within the Play Store app and switch between their personal Google account (where they see their personal apps), and their work account (where they will see store and LOB apps targeted to them). End users install the apps by tapping Install in the Play Store app.
 
 When an APP selective wipe is issued in the Intune console, the work account will be automatically removed from the Play Store app and the end user will from that point no longer see work apps in the Play Store app catalog. When the work account is removed from a device, apps installed from the Play Store will remain installed on the device and will not uninstall. 
+
+## App uninstall setting for iOS managed apps
+For iOS devices, you can choose what happens to managed apps on unenrolling the device from Intune or removing the management profile using **Uninstall on device removal** setting. This setting only applies to apps after the device is enrolled and apps are installed as managed. The setting cannot be configured for web apps or web links. 
+
+Default values for the setting are prepopulated for new assignments as follows:
+
+|iOS app type | Default setting for "Uninstall on device removal" |
+|--------------------|----------------|
+| Line-of-business app | Yes |
+| Store app | No |
+| VPP app | No |
+| Buit-in app | No |
+
+>[!NOTE]
+>**"Available" assignment types:** If you're updating this setting for "available for enrolled devices" or "available with or without enrollment" groups, users who already have the managed app won't get the updated setting until they sync the device with Intune and re-install the app. 
+>
+>**Pre-existing assignments:** Assignments that existed prior to the introduction of this setting are unmodified and all managed apps will be removed on device removal from management.
 
 ## Next steps
 

@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -43,7 +43,7 @@ Before you can assign, monitor, configure, or protect apps, you must add them to
 - Devices to which you deploy these apps must be running the Windows 10 Creators Update or later.
 - Intune supports adding Office apps from the Office 365 suite only.
 - If any Office apps are open when Intune installs the app suite, the installation might fail, and users might lose data from unsaved files.
-- This installation method is not supported on Windows 10 S, Windows Home, Windows Team, Windows Holographic, or Windows Holographic for Business devices.
+- This installation method is not supported on Windows Home, Windows Team, Windows Holographic, or Windows Holographic for Business devices.
 - Intune does not support installing Office 365 desktop apps from the Microsoft Store (known as Office Centennial apps) on a device to which you have already deployed Office 365 apps with Intune. If you install this configuration, it might cause data loss or corruption.
 - Multiple required or available app assignments are not additive. A later app assignment will overwrite pre-existing installed app assignments. For example, if the first set of Office apps contains Word, and the later one does not, Word will be uninstalled. This condition does not apply to any Visio or Project applications.
 - Mutiple Office 365 deployments are not currently supported. Only one deployment will be delivered to the device

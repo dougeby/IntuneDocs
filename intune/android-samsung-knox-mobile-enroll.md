@@ -42,13 +42,13 @@ To enable Intune enrollment using Samsung KME, you use both the Intune and Samsu
 3. [Distribute the devices](#distribute-devices).
 
 
-A list of device identifiers (serial numbers and IMEIs) are automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
+A list of device identifiers (serial numbers and IMEIs) is automatically added to the Knox Portal when purchasing devices from authorized resellers participating in the Knox Deployment Program.
 
 
 ## Prerequisites
 
 To enroll into Intune using KME, you must first register your company on the Samsung Knox portal by following these steps:
-1. [Make sure KME is available in your region](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is available in over 55 countries. Ensure that your country of deployment is supported.
+1. [Make sure KME is available in your country/region](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME is available in over 55 countries/regions. Ensure that your country/region of deployment is supported.
 
 2. [Supported devices](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME is available on all Samsung devices with a minimum of Knox 2.4 for Android enrollment and a minimum of Knox 2.8 for Android enterprise enrollment.
 
@@ -56,7 +56,7 @@ To enroll into Intune using KME, you must first register your company on the Sam
 
 4. [Register for a Samsung account](https://www2.samsungknox.com/en/user/register): A Samsung account is needed to register and enable KME and manage all Knox Enterprise entitlements in a single place.
 
-5. Registration Review: After your profile is completed and submitted, Samsung performs a review of your application and either approves it immediately or puts it in a pending review status for further follow-up. After your account is approved, you can proceed to further steps.
+5. Registration Review: After your profile is completed and submitted, Samsung reviews your application and either approves it immediately or puts it in a pending review status for further follow-up. After your account is approved, you can continue to further steps.
 
 ## Create MDM profile
 
@@ -72,7 +72,7 @@ When your company is successfully registered, you can create your MDM profile fo
 |MDM Agent APK      | Yes       |https://aka.ms/intune_kme_deviceowner 
 |Enable this app as a Google Device Owner | Yes | Choose this option to enroll to Android enterprise. 
 |Supported MDM      | Yes       |Microsoft Intune 
-|Leave all system apps enabled | No | Choose this option to ensure all apps are enabled and available to the profile. If this option is not selected, only a very limited set of system apps display in the device's apps tray. Apps such as the Email app remain hidden. 
+|Leave all system apps enabled | No | Choose this option to ensure all apps are enabled and available to the profile. If this option isn't selected, only a limited set of system apps displays in the device's apps tray. Apps such as the Email app remain hidden. 
 |Custom JSON        | No        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Enter Intune enrollment token string"}. Learn [how to create an enrollment profile](android-kiosk-enroll.md). 
 | Add legal agreements | No | Leave this blank. 
 
@@ -86,17 +86,17 @@ For step-by-step guidance, see the [Samsung Knox Profile Setup Wizard](https://d
 |Profile Name       | Yes       |Enter a profile name of your choice.
 |description        | No        |Enter text describing the Profile.
 |MDM Agent APK      | Yes       |https://aka.ms/intune_kme
-|Enable this app as a Google Device Owner | No | Leave this option unselected for Android. This only applies to Android enterprise.
-|Skip Setup wizard  | No        |Choose this option to skip standard device setup prompts on behalf of the end user.
+|Enable this app as a Google Device Owner | No | Leave this option unselected for Android. This option only applies to Android enterprise.
+|Skip Setup wizard  | No        |Choose this option to skip standard device setup prompts for the end user.
 |Allow End User to Cancel Enrollment | No | Choose this option to allow users to cancel KME.
 |Custom JSON        | No        |Leave this blank.
 | Add legal agreements | No | Leave this blank.
-Associate a Knox license with this profile | No | Leave this option unselected. Enrolling to Intune using KME does not require a Knox license.
+Associate a Knox license with this profile | No | Leave this option unselected. Enrolling to Intune using KME doesn't require a Knox license.
 
 ## Add devices
 
 To assign MDM Profiles to devices, supported Samsung Knox devices must be added to the Knox Portal using one of the following methods:
-- **Using Samsung-Approved Reseller(s):** Use this method if you are purchasing devices from one of the Samsung-approved resellers. Resellers can auto-upload devices for you when approved. [Visit the Samsung Knox Enrollment User Guide to learn how to add resellers](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
+- **Using Samsung-Approved Reseller(s):** Use this method if you're purchasing devices from one of the Samsung-approved resellers. Resellers can auto-upload devices for you when approved. [Visit the Samsung Knox Enrollment User Guide to learn how to add resellers](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
 
 - **Using the Knox Deployment App (KDA):** Use this method if you have existing devices that need to be enrolled using KME. You can either use Bluetooth or NFC to add devices to the Knox Portal using this method. [Visit the Samsung Knox Enrollment User Guide to learn about using the KDA](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
 
@@ -107,9 +107,9 @@ You must assign an MDM profile to added devices in the Knox Portal before they c
 
 For devices enrolled in Intune using KME for Android, you can configure how an end user signs in as follows:
 
-- **Without user name association:** In the Knox Portal under **Device details**, leave the **User ID** and **Password** fields blank for the added devices. This requires the end user to enter both user name and password when enrolling to Intune.
+- **Without user name association:** In the Knox Portal under **Device details**, leave the **User ID** and **Password** fields blank for the added devices. This option requires the end user to enter both user name and password when enrolling to Intune.
 
-- **With user name association:** In the Knox Portal under **Device details**, provide a **User ID** (such as a user name for the assigned user or a [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) account) for the added devices. This prepopulates the user name and requires the end user to enter a password when enrolling to Intune.
+- **With user name association:** In the Knox Portal under **Device details**, provide a **User ID** (such as a user name for the assigned user or a [Device Enrollment Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll) account) for the added devices. This option prepopulates the user name and requires the end user to enter a password when enrolling to Intune.
 
 > [!NOTE]
 >
@@ -120,19 +120,19 @@ For devices enrolled in Intune using KME for Android, you can configure how an e
 
 After creating and assigning an MDM profile, associating a user name, and identifying the devices as corporate-owned in Intune, you can distribute devices to users.
 
-Still need help? Check out the complete [Knox Mobile Enrollment User Guide](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm).
+Still need help? Check out the complete [KME User Guide](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm).
 
 ## Frequently asked questions
 
-- **Device Owner support:** Intune supports enrolling devices to only kiosk mode using Android enterprise. Other Android enterprise device owner modes will be supported as they become available in Intune.
+- **Device Owner support:** - **Device Owner support:** Intune supports enrolling Dedicated and Fully Managed devices by using the KME portal. Other Android enterprise device owner modes will be supported as they become available in Intune.
 
-- **No work profile support:** KME is a corporate device enrollment method and devices enrolled in Android work profile ensure work and personal data are separate on personal devices. So, device enrollment to work profile using KME is not a supported scenario in Intune.
+- **No work profile support:** KME is a corporate device enrollment method and devices enrolled in Android work profile ensure work and personal data are separate on personal devices. So, device enrollment to work profile using KME isn't a supported scenario in Intune.
 
 - **Factory reset to enroll to Android enterprise:** If repurposing devices that have already been set up, devices need to be factory reset when enrolling to Android enterprise.
 
-- **Updates using Google Play account:** Google Play account is not necessary for enrolling the device to Microsoft Intune. But future updates to the Intune Company Portal app may require a Google Play account on the device. Google Play account is not required when enrolling to Google Device Owner.
+- **Updates using Google Play account:** Google Play account isn't necessary for enrolling the device to Microsoft Intune. But future updates to the Intune Company Portal app may require a Google Play account on the device. Google Play account isn't required when enrolling to Google Device Owner.
 
-- **"Password" field is ignored:** If the **password** field is populated in **Device details** in the Knox Portal, it is ignored by the Intune Company Portal app during Android enrollment. The end user must enter a password on the device to complete device enrollment.
+- **"Password" field is ignored:** If the **password** field is populated in **Device details** in the Knox Portal, it's ignored by the Intune Company Portal app during Android enrollment. The end user must enter a password on the device to complete device enrollment.
 
 
 ## Getting support

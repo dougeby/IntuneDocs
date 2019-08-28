@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -57,6 +57,177 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 <!-- ########################## -->
 
+## Week of August 12, 2019
+
+### App management
+
+#### Control iOS app uninstall behavior at device unenrollment <!-- 3504144   -->
+Admins can manage whether an app is removed or retained on a device when the device is unenrolled at a user or device group level. 
+
+#### Categorize Microsoft Store for Business apps <!-- 3926922 -->
+You can categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop down menu, assign a category.
+
+#### Customized notifications for Microsoft Intune app users <!-- 4843354  -->
+The Microsoft Intune app for Android now supports the display of custom push notifications, aligning it with the support recently added in the Company Portal apps for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+
+### Device configuration
+
+#### New features for Android Enterprise dedicated devices in multi-app mode <!-- 3755304 3041943 3041946   -->
+In Intune, you can control features and settings in a kiosk-style experience on your Android Enterprise dedicated devices (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner only, Device restrictions** for profile type).
+
+In this update, the following features are being added:
+
+- **Dedicated devices** > **Multi-app**: The **Virtual home button** can be shown by swiping up on the device, or floating on the screen so users can move it.
+- **Dedicated devices** > **Multi-app**: **Flashlight access** allows users to use the flashlight. 
+- **Dedicated devices** > **Multi-app**: **Media volume control** allows users to control the device's media volume using a slider. 
+- **Dedicated devices** > **Multi-app**:  **Enable a screensaver**, upload a custom image, and control when the screensaver is shown.
+
+To see the current settings, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Applies to:  
+- Android Enterprise dedicated devices
+
+#### New app and configuration profiles for Android Enterprise fully managed devices <!-- 3574215 3574238 3574235 3574232   -->
+Using profiles, you can configure settings that apply VPN, email, and Wi-Fi settings to your Android Enterprise device owner (fully managed) devices. In this update, you can:
+
+- Use [app configuration policies](app-configuration-policies-use-android.md) to deploy Outlook, Gmail, and Nine Work email settings.
+- Use device configuration profiles to deploy [trusted root certificate settings](certificates-configure.md).
+- Use device configuration profiles to deploy [VPN](vpn-settings-android-enterprise.md) and [Wi-Fi](wi-fi-settings-android-enterprise.md) settings.
+
+> [!IMPORTANT]
+> With this feature, users authenticate with their username and password for VPN, Wi-Fi, and e-mail profiles. Currently, certificate-based authentication isn't available. 
+
+Applies to:  
+- Android Enterprise device owner (fully managed)
+
+#### Control the apps, files, documents, and folders that open when users sign in to macOS devices <!--3914202   -->
+You can enable and configure features on macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device features** for profile type). 
+
+In this update, there's a new Login Items setting to control which apps, files, documents, and folders open when a user signs in to the enrolled device. 
+
+To see the current settings, go to [macOS device feature settings in Intune](macos-device-features-settings.md).
+
+Applies to:  
+- macOS
+
+#### Deadlines replace Engaged restart settings for Windows Update rings   <!-- 4464404        -->
+To align with recent [Windows servicing changes](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing), Intune's Windows 10 Update rings now [support settings for deadlines](windows-update-settings.md). *Deadlines* determine when a device installs feature and security updates.  On devices that run Windows 10 1903 or later, *deadlines* supersede configurations for *engaged restart*.  In the future, *deadlines* will supersede *engaged restart* on earlier versions of Windows 10 as well.  
+
+When you don’t’ configure *deadlines*, devices continue to use their *engaged restart* settings, however [Intune will deprecate support for engaged restart settings](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) in a future update.  
+
+Plan to use *deadlines* for all your Windows 10 devices. After settings for *deadlines* are in place, you can change your Intune configurations for *engaged restart* to be Not configured. When set to Not configured, Intune stops managing those settings on devices but doesn’t remove the last configurations for the setting from the device. Therefore, the last configurations that were set for *engaged restart* remain active and in use on devices until those settings are modified by a method other than Intune. Later, when the devices version of Windows changes or when Intune support for *deadlines* expands to the devices Windows version, the device will begin to use the new settings, which are already in place.
+
+#### Support for multiple Microsoft Intune Certificate Connectors   <!--   4704642      -->
+Intune now supports install and use of multiple [Microsoft Intune Certificate Connectors for PKCS operations](certficates-pfx-configure.md). This change supports load balancing and high availability of the connector. Each connector instance can process certificate requests from Intune.  If one connector is unavailable, other connectors continue to process requests. 
+
+To use multiple connectors, you don’t need to upgrade to the latest version of the connector software.  
+
+#### New settings, and changes to existing settings to restrict features on iOS and macOS devices <!-- 4867699 4867709   -->
+You can create profiles to restrict settings on devices running iOS and macOS (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform type > **Device restrictions**). This update includes the following features:
+
+- On **macOS** > **Device restrictions** > **Cloud and storage**, use the new **Handoff** setting to block users from starting work on one macOS device, and continue working on another macOS or iOS device.
+
+  To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
+
+- On **iOS** > **Device restrictions**, there are a few changes:
+
+  - **Built-in apps** > **Find my iPhone (supervised only)**: New setting that blocks this feature in the Find My app feature. 
+  - **Built-in apps** > **Find my Friends (supervised only)**: New setting that blocks this feature in the Find My app feature. ​
+  - **Wireless** > **Modification of Wi-Fi state (supervised only)**: New setting that prevents users from turning on or turning off Wi-Fi on the device.
+  - **Keyboard and Dictionary** > **QuickPath (supervised only)**: New setting that blocks the QuickPath feature.
+  - **Cloud and storage**: **Activity continuation** is renamed to **Handoff**.
+
+  To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md).
+
+Applies to:  
+- macOS 10.15 and newer
+- iOS 13 and newer
+
+#### Some unsupervised iOS device restrictions will become supervised-only with the iOS 13.0 release <!-- 4867809   -->
+In this update, some settings apply to supervised-only devices with the iOS 13.0 release. If these settings are configured and assigned to unsupervised devices prior to the iOS 13.0 release, the settings are still applied to those unsupervised devices. They also still apply after the devices upgrade to iOS 13.0. These restrictions are removed on unsupervised devices that are backed up and restored. 
+
+These settings include:
+
+- App Store, Doc Viewing, Gaming
+  - App store
+  - Explicit iTunes, music, podcast, or news content
+  - Adding Game Center friends
+  - Multiplayer gaming
+- Built-in Apps
+  - Camera
+    - FaceTime
+  - Safari
+    - Autofill
+- Cloud and Storage
+  - Backup to iCloud
+  - Block iCloud Document sync
+  - Block iCloud Keychain sync
+
+To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md).
+
+Applies to:  
+- iOS 13.0 and newer
+
+#### Improved device status for macOS FileVault encryption  <!-- 4944983         -->
+We've updated several of the [device status messages](encryption-monitor.md#device-encryption-status) for FileVault encryption on macOS devices.
+
+#### Some Windows Defender Antivirus scan settings in the reporting show a Failed status <!-- 5119229 -->
+In Intune, you can create policies to use Windows Defender Antivirus to scan your Windows 10 devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type > **Windows Defender Antivirus**). The **Time to perform a daily quick scan** and **Type of system scan to perform** reporting shows a failed status, when it’s actually a success status. 
+
+In this update, this behavior is fixed. So, the **Time to perform a daily quick scan** and **Type of system scan to perform** settings shows a success status when the scans complete successfully, and show a failed status when the settings fail to apply. 
+
+For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+
+### Device enrollment
+
+#### Default scope tags <!-- 3702875  -->
+A new built-in default scope tag is now available. All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The **Default** scope tag is added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. This features is similar to the security scopes feature in System Center Configuration Manager. For more information, see [Use RBAC and scope tags to for distributed IT](scope-tags.md).
+
+#### Android enrollment device administrator support <!-- 4869749   -->
+The Android device administrator enrollment option has been added to the Android enrollment page (**Intune** > **Device enrollment** > **Android enrollment**). Android device administrator will still be enabled by default for all tenants.  For more information, see [Android device administrator enrollment](android-enroll-device-administrator.md).
+
+#### Skip more screens in Setup Assistant <!--4877451  -->
+You can set Device Enrollment Program profiles to skip the following Setup Assistant screens:
+- For iOS
+    - Appearance
+    - Express Language
+    - Preferred Language
+    - Device to Device Migration
+- For macOS
+    - Screen Time
+    - Touch ID Setup
+
+For more information about Setup Assistant customization, see [Create an Apple enrollment profile for iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) and [Create an Apple enrollment profile for macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
+
+#### Add a user column to the Autopilot device CSV upload process <!-- 3823054 -->
+You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. The new format for the rows in the CSV looks like this:
+serial-number, windows-product-id, hardware-hash, optional-group-tag, optional-assigned-user. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
+
+
+### Device management
+
+#### Configure automatic device clean-up time limit down to 30 days <!--4231059  -->
+You can set the automatic device clean-up time limit as short as 30 days (instead of previous limit of 90 days) after the last sign-in. To do so, go to **Intune** > **Devices** > **Setup** > **Device Clean Up Rules**.
+
+#### Build number included on Android device Hardware page <!-- 4461910   -->
+A new entry on the Hardware page for each Android device includes the device's operating system build number. For more information, see [View device details in Intune](device-inventory.md).
+
+
+<!-- ########################## -->
+
+## Week of August 5, 2019
+
+### Zebra Technologies is a supported OEM for OEMConfig on Android Enterprise devices  <!-- 4843713 -->
+
+In Intune, you can create device configuration profiles, and apply settings to Android Enterprise devices using OEMConfig (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **OEMConfig** for profile type).
+
+In this update, Zebra Technologies is a supported original equipment manufacturer (OEM) for OEMConfig. For more information on OEMConfig, see [Use and manage Android Enterprise devices with OEMConfig](android-oem-configuration-overview.md).
+
+Applies to:  
+- Android enterprise
+
+<!-- ########################## -->
+
 ## Week of July 22, 2019 
 
 ### App management
@@ -83,7 +254,7 @@ Applies to: Windows 10 and later
 #### Use tokens to add device-specific information in custom profiles for iOS and macOS devices <!-- 3330008  -->
 You can use custom profiles on iOS and macOS devices to configure settings and features not built in to Intune (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform > **Custom** for profile type). In this update, you can add tokens to your `.mobileconfig` files to add device-specific information. For example, you can add `Serial Number: {{serialnumber}}` to your configuration file to show the serial number of the device.
 
-To create a custom profile, see [iOS custom settings](custom-settings-ios.md) or [macOS customer settings](custom-settings-macos.md).
+To create a custom profile, see [iOS custom settings](custom-settings-ios.md) or [macOS custom settings](custom-settings-macos.md).
 
 Applies to:
 - iOS
@@ -126,6 +297,13 @@ Both of the following processes use a wizard-style user interface:
 #### Handling pre-configuration of corporate device identifiers for Android Q devices <!-- 4711509  idmiss -->
 In Android Q (v10), Google will remove the ability for MDM agents on legacy-managed (device administrator) Android devices to collect device identifier information.  Intune has a feature that enables IT admins to [pre-configure a list of device serial numbers or IMEIs](https://docs.microsoft.com/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number) in order to automatically tag these devices as corporate-owned. This feature won't work for Android Q devices that are device admin-managed.  Regardless of whether the serial number or IMEI for the device is uploaded, it will always be considered to be personal during Intune enrollment.  You can manually switch ownership to corporate after enrollment.  This affects new enrollments only, and existing enrolled devices are not affected.  Android devices managed with work profiles are not affected by this change and will continue working as they do today.  Additionally, Android Q devices enrolled as device administrator will no longer be able to report serial number or IMEI in the Intune console as device properties.
 
+#### Icons have changed for Android Enterprise enrollments (work profile, dedicated devices, and fully managed devices) <!-- 4977730 -->
+The icons for Android Enterprise enrollment profiles have changed. To see the new icons, go to **Intune** > **Enrollment** > **Android enrollment** > look under **Enrollment profiles**.
+
+
+#### Windows Diagnostic Data collection change <!-- 4113859 -->
+The default value for diagnostic data collection has changed for devices running Windows 10, version 1903 and later. Starting with Windows 10 1903, diagnostic data collection is enabled by default. Windows diagnostic data is vital technical data from Windows devices about the device and how Windows and related software are performing. For more information, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization). Autopilot devices are also opted into “Full” telemetry unless otherwise set in the Autopilot profile with [System/AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry).
+
 ### Device management
 
 #### Improve device location<!-- 3855417  -->
@@ -134,7 +312,7 @@ You can zoom in to the exact coordinates of a device using the **Locate device**
 
 ### Device security
 
-#### Advanced settings for Windows Defender Firewall  (public preview )  <!--  1311949     -->  
+#### Advanced settings for Windows Defender Firewall  (public preview)  <!--  1311949     -->  
 Use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
 
 #### Updated UI for managing security baselines   <!-- 4091125     -->
@@ -232,7 +410,7 @@ To see the new setting, go to [Windows 10 (and newer) device settings to allow o
 Applies to: Windows 10 and later
 
 #### Deploy multiple Zebra mobility extensions device profiles to a device, same user group, or same devices group <!-- 4089955 -->
-In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built-in to Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
+In Intune, you can use Zebra mobility extensions (MX) in a device configuration profile to customize settings for Zebra devices that aren't built into Intune. Currently, you can deploy one profile to a single device. In this update, you can deploy multiple profiles to:
 - The same user group
 - The same devices group
 - A single device
@@ -267,9 +445,6 @@ Applies to: iOS
 
 ### Device enrollment
 
-#### Windows Autopilot reset removes the device's primary user <!-- 4156123 -->
-This feature has been delayed and will be released in an upcoming sprint.    
-
 #### Windows Autopilot support for Hybrid Azure AD Join <!-- 4809146-->
 Windows Autopilot for existing devices now supports Hybrid Azure AD Join (in addition to the existing Azure AD Join support). Applies to Windows 10 version 1809 and above devices. For more information, see [
 Windows Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
@@ -294,13 +469,13 @@ When you create or edit [Security Baseline profiles](security-baselines.md#creat
 The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the feature is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
 
 #### The MDM Security Baseline template is now generally available   <!-- 3794072, 4217151,  3534649 -->
-The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for Spring 2019 Update (19H1)**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](security-baselines.md#available-security-baselines).  
+The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for May 2019**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](security-baselines.md#available-security-baselines).  
 
-In addition to being a new template, the *MDM Security Baseline for Spring 2019 Update (19H1)* template includes the two settings that we recently announced in our In Development article:  
+In addition to being a new template, the *MDM Security Baseline for May 2019* template includes the two settings that we recently announced in our In Development article:  
 - Above Lock: Voice activate apps from a locked screen  
 - DeviceGuard: Use virtualization-based security (VBS) at the next reboot of devices.  
 
-The *MDM Security Baseline for Spring 2019 Update (19H1)* also includes the addition of several new settings, the removal of others, and a revision of the default value of one setting. For a detailed list of the changes from Preview to GA, see **What’s changed in the new template**.
+The *MDM Security Baseline for May 2019* also includes the addition of several new settings, the removal of others, and a revision of the default value of one setting. For a detailed list of the changes from Preview to GA, see **What’s changed in the new template**.
 
 #### Security baseline versioning  <!-- 3194322 -->
 Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions your profiles use, and when the latest release of a specific security baseline was.  For more information, see **Security Baselines**.
@@ -537,7 +712,7 @@ You can create requirement rules based on PowerShell scripts, registry values, a
 #### Configure your Win32 apps to be installed on Intune enrolled Azure AD joined devices <!-- 3695227  -->
 You can assign your Win32 apps to be installed on Intune enrolled Azure AD joined devices. For more information about Win32 apps in Intune, see [Win32 app management](apps-win32-app-management.md).
 
-#### Device overview shows Primary User <!--794259  -->
+#### Device overview shows Primary User <!--3794259  -->
 The Device overview page will show the Primary User, also called the User Device Affinity User (UDA). To see the Primary User for a device, choose **Intune** > **Devices** > **All devices** > choose a device. The Primary User will appear near the top of the **Overview** page.
 
 #### Additional Managed Google Play app reporting for Android Enterprise work profile devices <!-- 4105925  -->
@@ -579,8 +754,8 @@ Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
 We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
-- Block or allow users to [scan for Windows updates](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
-- Manage the [Windows Update notification level](windows-update-settings.md#windows-update-notification-level) that users see.
+- Block or allow users to [scan for Windows updates](windows-update-settings.md).
+- Manage the [Windows Update notification level](windows-update-settings.md) that users see.
 
 #### New device restriction settings for Android Enterprise, Device Owner <!-- 3574254  -->
 On Android Enterprise devices, you can create a device restriction profile to allow or restrict features, set password rules, and more (**Device configuration** > **Profiles** > **Create profile** > choose **Android Enterprise** for platform > **Device owner only > Device restrictions** for profile type). 

@@ -34,10 +34,11 @@ ms.collection: M365-identity-device-management
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 As an Intune administrator, you can enroll Android devices in the following ways:
-- Android Enterprise, including:
-    - **Android Enterprise work profile**: For personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
-    - **Android Enterprise dedicated**: For corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
-    - **Android Enterprise fully managed**: For corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
+- Android Enterprise (offering a set of enrollment options that provide users with the most up-to-date and secure features):
+    - [**Android Enterprise work profile**](android-work-profile-enroll.md): For personal devices granted permission to access corporate data. Admins can manage work accounts, apps, and data. Personal data on the device is kept separate from work data and admins don't control personal settings or data. 
+    - [**Android Enterprise dedicated**](android-kiosk-enroll.md): For corporate-owned, single use devices, such as digital signage, ticket printing, or inventory management. Admins lock down the usage of a device for a limited set of apps and web links. It also prevents users from adding other apps or taking other actions on the device.
+    - [**Android Enterprise fully managed**](android-fully-managed-enroll.md): For corporate-owned, single user devices used exclusively for work and not personal use. Admins can manage the entire device and enforce policy controls unavailable to work profiles. 
+- [**Android device administrator**](android-enroll-device-administrator.md), including Samsung Knox Standard devices and [Zebra devices](android-zebra-mx-overview.md). 
 
 ## Prerequisites
 
@@ -45,30 +46,12 @@ To prepare to manage mobile devices, you must set the mobile device management (
 
 For devices manufactured by Zebra Technologies, you may need to grant the Company Portal additional permissions depending on the capabilities of the specific device. [Mobility Extensions on Zebra devices](android-zebra-mx-overview.md) has more details.
 
-## Set up Android Enterprise enrollment
-
-Android Enterprise offers a set of enrollment options that provide users with the most up-to-date and secure features. Android Enterprise enrollment options include work profile, fully managed and dedicated devices.
-
-- [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
-- [Set up Android Enterprise dedicated device enrollments](android-kiosk-enroll.md)
-- [Set up Android Enterprise fully managed enrollments](android-fully-managed-enroll.md)
-
-## End user experience when enrolling a Samsung Knox device
-
-Samsung Knox Standard devices are supported for multi-user management by Intune. This means that users can sign in and out of a device with their Azure AD credentials. The device is centrally managed whether it’s in use or not. When users sign in, they have access to apps and additionally get any policies applied to them. When users sign out all app data is cleared.
-
-There are several considerations when enrolling Samsung Knox devices:
-- Even if no policies require a PIN, the device must have at least a four-digit PIN to enroll. If the device does not have a PIN, the user will be prompted to create one.
-- There is no user interaction for Workplace Join Certificates (WPJ).
-- The user is prompted with Service Enrollment info and what the app can do.
-- The user is prompted with Knox Enrollment info and what Knox can do.
-- If an Encryption Policy is enforced, users are required to set a six Character Complex password for the device passcode.
-- There are no additional user prompts to install certificates pushed by a service for Company Resource Access.
-- Some older Knox devices will prompt the user for additional certificates used for Company Resource Access.
-- If a Samsung Mini device fails to install the WPJ with either the **Certificate Not Found** or **Unable to Register Device** errors, install the latest Samsung Firmware Updates.
+For Samsung Knox Standard devices, there are [more prerequisites](android-samsung-knox-mobile-enroll.md).
 
 ## Next steps
 
 - [Set up Android Enterprise work profile enrollments](android-work-profile-enroll.md)
 - [Set up Android Enterprise dedicated device enrollments](android-kiosk-enroll.md)
 - [Set up Android Enterprise fully managed enrollments](android-fully-managed-enroll.md)
+- [Set up Android device administrator enrollment](android-enroll-device-administrator.md)
+

@@ -3,11 +3,11 @@
 
 title: Intune security baselines settings for Windows 10 
 titleSuffix: Microsoft Intune
-description: Intune security baseline settings for managing Windows 10  
+description: Review defaults and availalbe settings that are found in the Windows MDM security baseline for Windows 10 devices you manage with Intune. 
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -33,12 +33,12 @@ ms.collection: M365-identity-device-management
 
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
 
-The most recent baseline version is **MDM Security Baseline for Spring 2019 Update (19H1)**  
+The most recent baseline version is **MDM Security Baseline for May 2019**  
 
 To learn about what's changed in the latest version of this baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for Spring 2019 Update (19H1)* template, which is generaly available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for Spring 2019 Update (19H1)* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for Spring 2019 Update (19H1) version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
+> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
   
 To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
 
@@ -1781,7 +1781,12 @@ For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/o
   **Default**: Yes
 
 - **Configure Windows Hello for Business**   
-  Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards. If you enable or do not configure this policy setting, the device provisions Windows Hello for Business. If you disable this policy setting, the device does not provision Windows Hello for Business for any user.
+    Windows Hello for Business is an alternative method for signing into Windows by replacing passwords, Smart Cards, and Virtual Smart Cards.  
+
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+
+  You cannot disable Windows Hello for Business through this baseline. You can disable Windows Hello for Business when you configure [Windows enrollment](windows-hello.md), or as part of a device configuration profile for [identity protection](identity-protection-configure.md).  
 
   **Default**: Yes
 
@@ -1828,7 +1833,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
   **Default**: Enabled
 
 ## What's changed in the new template
-The *MDM Security Baseline for Spring 2019 Update (19H1)* template has the following changes from the *preview* template.
+The *MDM Security Baseline for May 2019* template has the following changes from the *preview* template.
 
 ### Changes to the baseline settings
 The following settings are either:

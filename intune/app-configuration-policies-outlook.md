@@ -6,13 +6,13 @@ description: Create a configuration policy to set Microsoft Outlook settings run
 keywords:
 author: Erikre
 ms.author: erikre
-ms.reviewer: smithre4
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
+ms.reviewer: smithre4
 
 # optional metadata
 

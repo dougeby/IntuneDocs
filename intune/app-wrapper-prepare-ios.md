@@ -7,7 +7,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -206,11 +206,11 @@ You can use the following command line parameters with the App Wrapping Tool:
 |**-o**|`<Path of the wrapped output application>` |
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
-|**-h**|Shows detailed usage information about the available command line properties for the App Wrapping Tool.|
-|**-aa**|(Optional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
-|**-ac**|(Optional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>`  |
-|**-ar**|(Optional) `<Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>`  |
-|**-v**|(Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors.|
+|**-h**| Shows detailed usage information about the available command line properties for the App Wrapping Tool. |
+|**-aa**|(Optional) `<Authority URI of the input app if the app uses the Azure Active Directory Authentication Library>` i.e `login.windows.net/common` |
+|**-ac**|(Optional) `<Client ID of the input app if the app uses the Azure Active Directory Authentication Library>` This is the guid in the Client ID field is from your app's listing in the App Registration blade. |
+|**-ar**|(Optional) `<Redirect/Reply URI of the input app if the app uses the Azure Active Directory Authentication Library>` This is the Redirect URI configured in your App Registration. Typically it would be the URL protocol of the application that the Microsoft Authenticator app would return to after brokered authentication. |
+|**-v**| (Optional) Outputs verbose messages to the console. It is recommended to use this flag to debug any errors. |
 |**-e**| (Optional) Use this flag to have the App Wrapping Tool remove missing entitlements as it processes the app. See [Setting app entitlements](#setting-app-entitlements) for more details.|
 |**-xe**| (Optional) Prints information about the iOS extensions in the app and what entitlements are required to use them. See  [Setting app entitlements](#setting-app-entitlements) for more details. |
 |**-x**| (Optional) `<An array of paths to extension provisioning profiles>`. Use this if your app needs extension provisioning profiles.|
@@ -389,7 +389,7 @@ To review the existing entitlements of a signed app and provisioning profile:
 4. Use the security tool to check the entitlements of the app's embedded provisioning profile, where `YourApp.app` is the actual name of your .app bundle.
 
     ```bash
-    security -D -i "Payload/YourApp.app/embedded.mobileprovision"
+    security cms -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### Remove entitlements from an app by using the –e parameter

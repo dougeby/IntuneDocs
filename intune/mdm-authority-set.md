@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/30/2018
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,17 +45,15 @@ Possible configurations are:
 
 - **Mobile Device Management for Office 365** - integration of Office 365 with the Intune cloud solution. You configure Intune from your Microsoft 365 admin center. Includes a subset of the capabilities that are available with Intune Standalone. Set the MDM authority in Microsoft 365 admin center.
 
-> [!IMPORTANT]
-> In Configuration Manager version 1610 or later and Microsoft Intune version 1705, you change the MDM authority without having to contact Microsoft Support, and without having to unenroll and reenroll your existing managed devices. For details, see [Prepare to change the MDM authority to Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
+- **Office 365 MDM Coexistence** You can activate and use both MDM for Office 365 and Intune concurrently on your tenant and set the management authority to either Intune or MDM for Office 365 for each user to dictate which service will be used to manage their mobile devices. User’s management authority is defined based on the license assigned to the user. For more information, see [Microsoft Intune Co-existence with MDM for Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)
 
 ## Set MDM authority to Intune
 
-If you haven't yet set the MDM authority, follow the steps below. To change from one MDM authority to another, see the [change MDM authority](#prepare-to-change-the-mdm-authority-to-configuration-manager) section below.
+If you haven't yet set the MDM authority, follow the steps below. To change from SCCM, see [Migrate hybrid MDM users and devices to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
 1. In [Intune in the Azure portal](https://aka.ms/intuneportal), select the orange banner to open the **Mobile Device Management Authority** setting. The orange banner is only displayed if you haven't yet set the MDM authority.
 2. Under **Mobile Device Management Authority**, choose your MDM authority from the following options:
    - **Intune MDM Authority**
-   - **Configuration Manager MDM Authority**
    - **None**
 
    ![Screenshot of Intune set mobile device management authority screen](media/set-mdm-auth.png)
@@ -81,42 +79,9 @@ After you switch to the new MDM authority, there will likely be transition time 
 - When the same device categories exist in both Intune and Configuration Manager, any device category assignments for devices are not carried over after you switch to the new MDM authority. To continue using device categories, migrated devices have to be manually added to the appropriate collections after the MDM authority is changed and the devices display in the Configuration Manager console.
 - Devices that don't have associated users (typically when you have iOS Device Enrollment Program or bulk enrollment scenarios) are not migrated to the new MDM authority. For those devices, you need to call support for assistance to move them to the new MDM authority.
 
-## Prepare to change the MDM authority to Configuration Manager
-
-Review the following information to prepare for the change to the MDM authority:
-- You must have Configuration Manager version 1610 or higher for the option to change the MDM authority to be available.
-- It can take up to eight hours for a device to connect to the service after you change to the new MDM authority.
-- Create a Configuration Manager user collection with all users currently managed by Intune standalone that you will use when you set up the Intune subscription in the Configuration Manager console. This collection helps to ensure that the user and their devices will have a Configuration Manager license assigned and be managed in the hybrid environment after the change to the MDM authority.
-- Make sure that the IT Admin user is in this user collection too.  
-- Before the change, the MDM Authority will show as **Set to Microsoft Intune** (standalone) in the Intune administration console.
-- The MDM authority should display **Set to Microsoft Intune** (standalone tenant) in the Microsoft Intune administration console prior to the change in MDM authority.
-    > [!NOTE]    
-    > If your MDM authority displays **Managed by Intune and Office 365**, then your Office 365 managed MDM devices are no longer be managed when you change your MDM authority to **Configuration Manager** (hybrid). We recommend that you license those users for Intune or Enterprise Mobility Suite before you change the MDM authority.   
-
-- In the [Microsoft Intune administration console](http://manage.microsoft.com), remove the Device Enrollment Manager role. For details, see [Delete a device enrollment manager from Intune](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions).
-- Turn off any device group mappings that are configured. For details, see [Categorize devices with device group mapping in Microsoft Intune](device-group-mapping.md).
-- There should be no noticeable impact to end users during the change in MDM authority. However, you might want to communicate this change to users to make sure that their devices are powered on and that they connect with the service soon after the change. This precaution makes sure that as many devices as possible connect and register with the service through the new authority as soon as possible.
-- If you're using Intune standalone to manage iOS devices prior to the change in MDM authority, you must make sure that the same Apple Push Notification service (APNs) certificate that was previously used in Intune is renewed and used to set up the tenant again in Configuration Manager (hybrid).    
-
-    > [!IMPORTANT]  
-    > If a different APNs certificate is used for hybrid, then ALL previously enrolled iOS devices become unenrolled and you have to go through the process to reenroll them. Prior to making the MDM authority change, make sure that you know exactly what APNs certificate was used to manage iOS devices in Intune. Find the same certificate listed in Apple Push Certificates Portal (https://identity.apple.com) and make sure the user whose Apple ID was used to create the original APNs certificate is identified and available to renew the same APNs certificate as part of the change to the new MDM authority.
-
-## Change the MDM authority to Configuration Manager
-
-1. In the Configuration Manager console, go to **Administration** &gt; **Overview** &gt; **Cloud Services** &gt; **Microsoft Intune Subscription**, and select to add an Intune subscription.
-2. Sign in to the Intune tenant that you originally used when you set the MDM authority in Intune, and click **Next**.
-3. Select **Change my MDM Authority to Configuration Manager**, and click **Next**.
-4. Select the user collection to contain all of the users that continue to be managed by the new hybrid MDM authority.
-5. Click **Next** and complete the wizard. The MDM authority is now changed to **Configuration Manager**.
-6. Sign in to the [Microsoft Intune administration console](http://manage.microsoft.com) using the same Intune tenant and confirm that the MDM authority has been changed to **Set to Configuration Manager**.
-7. After changing the MDM authority to Configuration manager, you can set up [iOS enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) and [Android enrollment](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
-8. In the Configuration Manager console, configure and deploy new settings and apps from the new MDM authority (hybrid).
-
-The next time devices connect to the service, it synchronizes and receives the new settings from the new MDM authority.
-
 ## Change MDM authority to Office 365
 
-To activate Office 365 MDM in addition to your existing Intune Service, go to [https://protection.office.com](https://protection.office.com), choose **Data Loss Prevention** > **Device Security Policies** > **View list of Managed Devices** > **Let's get started**.
+To activate Office 365 MDM (or to enable MDM coexistence in addition to your existing Intune Service), go to [https://protection.office.com](https://protection.office.com), choose **Data Loss Prevention** > **Device Security Policies** > **View list of Managed Devices** > **Let's get started**.
 
 For more information, see [Set up Mobile Device Management (MDM) in Office 365](https://support.office.com/en-us/article/Set-up-Mobile-Device-Management-MDM-in-Office-365-dd892318-bc44-4eb1-af00-9db5430be3cd).
 
@@ -128,7 +93,7 @@ The MDM certificate is renewed automatically when mobile devices are communicati
 
 ## Remove MDM authority
 
-The MDM authority can't be changed back to Unknown. The MDM authority is used by the service to determine which portal enrolled devices report to (Microsoft Intune, Configuration Manager, Office 365 MDM).
+The MDM authority can't be changed back to Unknown. The MDM authority is used by the service to determine which portal enrolled devices report to (Microsoft Intune or Office 365 MDM).
 
 ## What to expect after changing the MDM authority
 

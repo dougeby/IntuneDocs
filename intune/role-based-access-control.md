@@ -89,16 +89,16 @@ You can assign both custom and built-in roles to your users. To be assigned an I
 To see a role assignment, choose **Intune** > **Roles** > **All roles** > choose a role > choose an assignment. You’ll see the following pages:
 
 - **Properties**: The name, description, role, members, scopes, and tags of the assignment.
-- **Members**: All users in listed groups have permission to manage the users/devices that are listed in Scope (Groups).
-- **Scope (Groups)**: All users/devices in these groups can be managed by the users in Members.
+- **Members**: All users in the listed Azure security groups have permission to manage the users/devices that are listed in Scope (Groups).
+- **Scope (Groups)**: All users/devices in these Azure security groups can be managed by the users in Members.
 - **[Scope (Tags)](scope-tags.md)**: Users in Members can see the resources that have the same scope tags.
 
 ### Multiple role assignments
-If a user has multiple role assignments, permissions in those role assignments extend to different objects as follows:
+If a user has multiple role assignments, permissions, and scope tags, those role assignments extend to different objects as follows:
 
-- Assign permissions only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions don’t apply to objects in other role assignments unless the other assignment specifically grants them.
-- Other permissions (such as Create and Read), apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
-- Permissions for objects of different types (like policies or apps), don’t apply to each other. A Read permission for a policy, for example, doesn’t provide a Read permission to apps in the user’s assignments.
+- Assign permissions and scope tags only apply to the objects (like policies or apps) in that role’s assignment Scope (Groups). Assign permissions and scope tags don’t apply to objects in other role assignments unless the other assignment specifically grants them.
+- Other permissions (such as Create, Read, Update, Delete) and scope tags apply to all objects of the same type (like all policies or all apps) in any of the user’s assignments.
+- Permissions and scope tags for objects of different types (like policies or apps), don’t apply to each other. A Read permission for a policy, for example, doesn’t provide a Read permission to apps in the user’s assignments.
 
 ## Next steps
 - [Assign a role to a user](assign-role.md)

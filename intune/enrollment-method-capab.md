@@ -53,10 +53,12 @@ There are several methods to enroll your workforce’s devices in Intune. Each m
 |Users must not be admins on their devices               |![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Ability to configure the device setup experience        |![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Ability to enroll devices without user interaction      |![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|
-|Ability to run PowerShell scripts                       |![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)| 
+|Ability to run PowerShell scripts                       |![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/checkmark.png)\*| 
 |Supports automatic enrollment after AD domain join      |![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|
 |Supports automatic enrollment after Hybrid Azure AD join|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|
 |Supports automatic enrollment after Azure AD join       |![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![Checkmark](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
+
+\* Client apps workloads in Configuration Manager must be moved to Intune Pilot or Intune.
 
 ## Next steps
 

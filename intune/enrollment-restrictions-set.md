@@ -71,7 +71,7 @@ Default restrictions are automatically provided for both device type and device 
     ![Screen cap for choosing platform settings](media/enrollment-restrictions-set/choose-platform-settings.png)
 7. Under **Versions**, choose the minimum and maximum versions that you want the allowable platforms to support. Version restrictions only apply to devices enrolled with the Company Portal.
      Supported version formats include:
-    - Android device administrator and Enterprise work profile support major.minor.rev.build.
+    - Android device administrator and Android Enterprise work profile support major.minor.rev.build.
     - iOS supports major.minor.rev. Operating system versions don't apply to Apple devices that enroll with the Device Enrollment Program, Apple School Manager, or the Apple Configurator app.
     - Windows supports major.minor.rev.build for Windows 10 only.
     > [!Note]
@@ -132,9 +132,9 @@ You can change the settings for an enrollment restriction by following the steps
 
 
 ## Blocking personal Android devices
-- If you block personally owned Android devices from enrollment, personally owned Android Enterprise work profile devices can still enroll.
-- By default, your Android Enterprise work profile devices settings are the same as your settings for your Android devices. After you change your Android Enterprise work profile settings, that's no longer the case.
-- If you block personal Android Enterprise work profile enrollment, only corporate Android devices can enroll as Android work profile.
+- If you block personally owned Android device administrator devices from enrollment, personally owned Android Enterprise work profile devices can still enroll.
+- By default, your Android Enterprise work profile devices settings are the same as your settings for your Android device administrator devices. After you change your Android Enterprise work profile or your Android device administrator settings, that's no longer the case.
+- If you block personal Android Enterprise work profile enrollment, only corporate-owned Android devices can enroll with Android Enterprise work profiles.
 
 ## Blocking personal Windows devices
 If you block personally owned Windows devices from enrollment, Intune checks to make sure that each new Windows enrollment request has been authorized as a corporate enrollment. Unauthorized enrollments will be blocked.

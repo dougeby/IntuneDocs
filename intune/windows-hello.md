@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: How to integrate Windows Hello for Business with Microsoft Intune
+title: Integrate Windows Hello for Business with Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Learn how to create a policy for controlling use of Windows Hello for Business on managed devices."
 keywords:
@@ -124,4 +124,4 @@ Windows Holographic for Business supports the following Windows Hello for Busine
 - Remember PIN history
 
 ## Further information
-For more information about Microsoft Passport, see [the guide](https://technet.microsoft.com/library/mt589441.aspx) in the Windows 10 documentation.
+For more information about Windows Hello for Business, see [the guide](https://technet.microsoft.com/library/mt589441.aspx) in the Windows 10 documentation.

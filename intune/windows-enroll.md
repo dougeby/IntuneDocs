@@ -8,7 +8,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2018
+ms.date: 08/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -51,13 +51,17 @@ Two factors determine how you can simplify Windows device enrollment:
 
 Organizations that can use automatic enrollment can also configure [bulk enroll devices](windows-bulk-enroll.md) by using the Windows Configuration Designer app.
 
-## Device enrollment prequisites
+## Device enrollment prerequisites
 
 Before an administrator can enroll devices to Intune for management, licenses should have already been assigned to the administrator's account. [Read about assigning licenses for device enrollment](licenses-assign.md)
 
 ## Multi-user support
 
-Intune supports multi-management for devices that run the Windows 10 Creator's update and are Azure Active Directory domain-joined. When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Users can't currently use the Company Portal for self-service scenarios like installing apps.
+Intune supports multiple users on devices that both:
+- run the Windows 10 Creator's update
+- are Azure Active Directory domain-joined.
+
+When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Only the device’s [Primary user](find-primary-user.md) can use the Company Portal for self-service scenarios like installing apps and performing device actions (Remove, Reset). For shared Windows 10 devices that do not have a primary user assigned, the Company Portal can still be used to install Available apps.
 
 [!INCLUDE [AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 

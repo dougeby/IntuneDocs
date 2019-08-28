@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 08/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -1539,7 +1539,7 @@ The method `onMAMIdentitySwitchRequired` is called for all implicit identity cha
 
   * If an identity switch is blocked, the result is the same as if `Receive` sharing settings had prohibited the data ingress.
 
-  * If a Service is running on the main thread, `reportIdentitySwitchResult` **must** be called synchronously or the UI thread will hang.
+  * If a Service is running on the main thread, `reportIdentitySwitchResult` **must** be called synchronously or the UI thread stops responding.
 
   * For **`Activity`** creation, `onMAMIdentitySwitchRequired` will be called before `onMAMCreate`. If the app must show UI to determine whether to allow the identity switch, that UI must be shown using a *different* activity.
 
@@ -1960,7 +1960,7 @@ Enable default enrollment with the following steps:
    [configure ADAL](#configure-azure-active-directory-authentication-library-adal)
    following [common ADAL configuration](#common-adal-configurations) #2. If not, you may skip this step.
    
-2. Enable default enrollment by putting the following value in the manifest:
+2. Enable default enrollment by adding the following value in the manifest under the `<application>` tag:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />
@@ -1969,7 +1969,7 @@ Enable default enrollment with the following steps:
    > [!NOTE] 
    > This must be the only MAM-WE integration in the app. If there are any other attempts to call MAMEnrollmentManager APIs, conflicts will arise.
 
-3. Enable MAM policy required by putting the following value in the manifest:
+3. Enable MAM policy required by adding the following value in the manifest under the `<application>` tag:
 
    ```xml 
    <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />

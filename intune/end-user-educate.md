@@ -61,7 +61,7 @@ Read the following list of tips to make your organization's Intune deployment ea
 
 * __Be accessible.__ Tell users where they can seek help for their device problems. When you [customize the Company Portal](company-portal-customize.md), be sure to include your IT administrator's contact information.
 
-* __Be personal.__ Provide instructions that are specific to your organization's deployment. This action demonstrates to users that you care about their experience. Use this [customizable, Intune user enrollment template](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) to create your own enrollment instructions for your users.
+* __Be personal.__ Provide instructions that are specific to your organization's deployment. This action demonstrates to users that you care about their experience. Use this customizable [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) to create your own enrollment instructions for your users.
 
 * __Find different ways to communicate.__ Users have [different learning styles](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) and preferred ways to consume information. For visual learners, Intune provides [video versions of how to enroll various device types](https://channel9.msdn.com/Series/IntuneEnrollment) on Channel 9. Videos can be embedded directly into your own [SharePoint site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). You can also download local copies of the video or audio track.
 

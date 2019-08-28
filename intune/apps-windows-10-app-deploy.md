@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -38,6 +38,8 @@ Line-of-business (LOB) apps and Microsoft Store for Business apps are the app ty
 > The minimum needed Windows 10 updates to deploy modern apps are as follows:
 > - For Windows 10 1803, [May 23, 2018—KB4100403 (OS Build 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
 > - For Windows 10 1709, [June 21, 2018—KB4284822 (OS Build 16299.522)](https://support.microsoft.com/help/4284822).
+>
+> Only Windows 10 1803 and above support installing apps when there is no primary user associated.
 
 ## Windows 10 Line-of-business apps
 
@@ -45,7 +47,14 @@ Windows 10 LOB apps are signed and uploaded to the Intune admin console and can 
 
 ## Microsoft Store for Business apps
 
-Microsoft Store for Business apps that are modern apps purchased from the Microsoft Store for Business admin portal and are then synced over to Microsoft Intune for management. The apps can either be **online licensed** or **offline licensed**. Updates of Microsoft Store for Business apps are managed directly by the Microsoft Store, with no additional action required by the admin. The admin can also prevent updates to specific apps using custom Uniform Resource Identifier (URI). For more information, see [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). On the device, the end user can also disable updates for all Microsoft Store for Business apps on the device. 
+Microsoft Store for Business apps are modern apps purchased from the Microsoft Store for Business admin portal and are then synced over to Microsoft Intune for management. The apps can either be **online licensed** or **offline licensed**. Updates of Microsoft Store for Business apps are managed directly by the Microsoft Store, with no additional action required by you, the admin. You can also prevent updates to specific apps using a custom Uniform Resource Identifier (URI). For more information, see [Enterprise app management - Prevent app from automatic updates](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management#prevent-app-from-automatic-updates). On the device, the end user can also disable updates for all Microsoft Store for Business apps on the device. 
+
+### Categorize Microsoft Store for Business apps 
+To categorize Microsoft Store for Business apps, use the following steps: 
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Select **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. 
+3. Select a category from the drop down menu.
 
 ## Installing apps on Windows 10 devices
 Depending on the app type, the app can be installed on a Windows 10 device in one of two ways:

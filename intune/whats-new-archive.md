@@ -483,7 +483,7 @@ With this feature update, you can create a device configuration profile that swi
 Applies to: the most recent [Windows Insider](https://docs.microsoft.com/windows-insider/at-work-pro/) build (while in preview).
 
 #### Windows Defender ATP configuration package automatically added to configuration profile <!-- 2144658 -->
-When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) devices in Intune, you previously had to download a configuration package, and add it to your configuration profile. With this update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
+When using [Advanced Threat Protection and onboarding](advanced-threat-protection.md#onboard-devices-by-using-a-configuration-profile) devices in Intune, you previously had to download a configuration package, and add it to your configuration profile. With this update, Intune automatically gets the package from Windows Defender Security Center, and adds it to your profile.
 Applies to Windows 10 and later.
 
 #### Require users to connect during device setup <!--2311457-->
@@ -2010,21 +2010,21 @@ Third-party developers can privately distribute apps to authorized Volume Purcha
 
 With this release, the VPP for Business apps purchased by the end user will now start syncing to their Intune tenants.
 
-### Select Apple country store to sync VPP apps  <!-- 1332311 -->  
-You can configure the Volume Purchase Program (VPP) country store when uploading your VPP token. Intune synchronizes VPP apps for all locales from the specified VPP country store.
+### Select Apple country/region store to sync VPP apps  <!-- 1332311 -->  
+You can configure the Volume Purchase Program (VPP) country/region store when uploading your VPP token. Intune synchronizes VPP apps for all locales from the specified VPP country/region store.
 
 > [!NOTE]  
-> Today, Intune only synchronizes VPP apps from the VPP country store that match the Intune locale in which the Intune tenant was created.
+> Today, Intune only synchronizes VPP apps from the VPP country/region store that match the Intune locale in which the Intune tenant was created.
 
 
 ### Block copy and paste between work and personal profiles in Android for Work <!-- 1098994 -->
 With this release, you are able to configure the work profile for  Android for Work to block copy and paste between work and personal apps. You can find this new setting in the **Device restrictions** profile for the **Android for Work** Platform in **Work profile settings**.
 
 ### Create iOS apps limited to specific regional Apple App Stores <!-- 1281692 -->
-You will be able to specify the country locale during the creation of an Apple App Store managed app.
+You will be able to specify the country/region locale during the creation of an Apple App Store managed app.
 
 > [!Note]  
-> Currently, you can only create Apple App Store managed apps that are present in the US country store.
+> Currently, you can only create Apple App Store managed apps that are present in the US country/region store.
 
 ### Update iOS VPP user and device licensed apps  <!-- 1305564 -->  
 You will be able to configure the iOS VPP token to update all apps purchased for that token through the Intune service. Intune

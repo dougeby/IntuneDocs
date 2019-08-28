@@ -1,7 +1,8 @@
 ---
 # required metadata
 
-title: Use Update Compliance reports for Windows Updates in Microsoft Intune | Microsoft Docs
+title: Use Update Compliance reports for Windows Updates in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use OMS Update Compliance to view report data for Windows Updates you deploy with Intune.
 keywords:
 author: brenduns

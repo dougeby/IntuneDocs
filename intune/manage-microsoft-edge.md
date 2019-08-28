@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -81,9 +81,6 @@ To restrict Azure AD-connected web apps to use Microsoft Edge on iOS and Android
 
 9. In the **Assignments** section, select **Users and groups**, and then choose the users or groups you want to assign this policy.
 
-    > [!NOTE]
-    > Users must also be targeted with Intune App Protection policy in order to receive App Configuration policies. For more information about creating Intune App Protection policies, see [What are app protection policies?](app-protection-policy.md).
-
 10. In the **Assignments** section, select **Cloud apps** to choose which apps to protect with this policy.
 
 After the above policy is configured, users are forced to use Microsoft Edge to access the Azure AD-connected web apps you have protected with this policy. If users attempt to use an unmanaged browser in this scenario, they receive a message that they must use Microsoft Edge.
@@ -101,8 +98,6 @@ SSO requires your device to be registered by either the Microsoft Authenticator 
 > Device registration is a simple check-in with the Azure AD service. It doesn't require full device enrollment, and doesn't give IT any additional privileges on the device.
 
 ## Create a protected browser app configuration
-
-For app configurations to apply, the user's protected browser or another app on the device must already be managed by the [Intune app protection policy](app-protection-policy.md).
 
 To create app configuration for Microsoft Edge:
 
@@ -191,7 +186,22 @@ Use the following key/value pair to configure a homepage shortcut:
 |    Key    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Specify a valid URL. Incorrect URLs are blocked as a security measure.<br>**Example:** <`https://www.bing.com`>
-    |
+
+## Configure your organization's logo and brand color for new tab pages in Microsoft Edge
+
+These settings allow you to customize the New Tab Page for Microsoft Edge to display your organization's logo and brand color as the page background.
+
+To upload your organization's logo and color, first complete the following steps:
+- Within the Azure portal, navigate to Intune -> Client apps -> Branding and customization -> Company Identity Branding
+- To set your brand's logo, under "Display", choose "Company Logo only". Transparent background logos are recommended. 
+- To set your brand's background color, under "Display" choose "Theme Color". Microsoft Edge applies a lighter shade of the color on the New Tab Page, which ensures the page has high readability. 
+
+Next, use the following key/value pairs to pull your organizations branding into Microsoft Edge:
+
+|    Key    |    Value    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    True    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    True    |
 
 ## Configure managed bookmarks for Microsoft Edge
 
@@ -242,7 +252,8 @@ You can use various URL formats to build your allowed/blocked sites lists. These
     |    `http://www.contoso.com`    |    Matches a single page    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Matches a single page    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    Matches all URLs that begin with `www.contoso.com`    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Matches all subdomains under `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Matches all subdomains ending with `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    Matches all subdomains under `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    Matches all subdomains ending with `contoso.com/`    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Matches a single folder    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Matches a single page, by using a port   number    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Matches a single, secure page    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |

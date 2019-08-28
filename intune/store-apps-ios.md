@@ -7,7 +7,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -48,7 +48,7 @@ You can assign apps by using this method only if they are free of charge in the 
 5. In the **Apps** pane, select **Add**.
 6. In the **App type** list, under the **Store app** types, select **iOS**.
 7. Select **Search the App Store**.
-8. In the **Search the App Store** pane, select the App Store country locale.
+8. In the **Search the App Store** pane, select the App Store country/region locale.
 9. In the **Search** box, type the name (or part of the name) of the app.  
     Intune searches the store and returns a list of relevant results.
 10. In the results list, select the app you want, and then select **Select**.

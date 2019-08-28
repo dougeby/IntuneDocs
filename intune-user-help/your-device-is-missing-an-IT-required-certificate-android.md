@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ searchScope:
 
 # optional metadata
 
-ROBOTS:  
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: arnab
@@ -28,18 +28,29 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Your Android device is missing a certificate required by your company support
+# Install missing certificate required by your organization  
 
-If your device isn’t enrolled in Intune, and it’s missing a certain certificate that is required by your company support, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
+If your device isn’t enrolled in Intune, and it’s missing a required certificate, you won’t be able to sign in to the Company Portal app. When you try to sign in, you'll see the following message:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-To fix this issue and get the required certificate, there are two main steps that you need to do:
+There are two options you can try to download the required certificate and get your device enrolled. 
 
-- Identify the missing certificate by looking on a company or school PC.
-- Use your device to download the missing certificate from the Internet.
+- Enable browser access in Company Portal app.
+- Identify the missing certificate on a company or school PC. Then search the internet to download the missing certificate. 
 
-## Identify the missing certificate by looking on a company or school PC
+Complete the steps for enabling browser access first. After that, if you still can't enroll your device, follow the steps to locate the certificate on the internet. 
+
+## Enable browser access
+Complete these steps to enable browser access. After you've enabled access, Company Portal will install the appropriate certificate and continue enrollment.    
+
+1. In the Company Portal app, go to the right-hand corner and select the menu.  
+2. Select **Settings**.  
+3. Next to **Enable Browser Access** select **Enable**.  
+4. On the Device Administrator screen, select **ACTIVATE**. 
+
+## Identify and download the missing certificate through web search
+Complete these steps to manually identify and install the certificate on your device.  
 
 1. On a PC, open Internet Explorer. If you don't have a PC to use for this purpose, contact your company support. For your company support's contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
@@ -55,15 +66,13 @@ To fix this issue and get the required certificate, there are two main steps tha
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. In the **Certificate** dialog box, choose the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the previous example screenshot.
+5. Choose the **Certification path** tab, and then identify the certificate that you need to get from the Internet. The name of the certificate that you need will be in the same position as the one that is highlighted in the previous example screenshot.
 
-## Download and install the missing certificate on your Android mobile device
+6. Using a search engine like Bing or Google, search for the name of the missing certificate that you identified in the previous section. The certificate may end in different "extensions," like ".crt" or ".pem", etc.
 
-1. Using a search engine like Bing or Google, search for the name of the missing certificate that you identified in the previous section. The certificate may end in different "extensions," like ".crt" or ".pem", etc.
+7. Download the root certificate from the website.
 
-2. Download the root certificate from the website.
-
-3. After the certificate downloads, drag down from the top of your device to open your notifications, and then tap the name of the certificate in the list of notifications.
+8. After the certificate downloads, drag down from the top of your device to open your notifications, and then tap the name of the certificate in the list of notifications.
 
 4. In the **Name the Certificate** dialog box shown in the following screenshot, accept the default certificate name.
 
@@ -76,3 +85,7 @@ To fix this issue and get the required certificate, there are two main steps tha
 7. Reopen the Company Portal app. You should now be able to sign in to the Company Portal app. If you need help, contact your company support.
 
 If you see the same "missing certificate" message as the one shown previously, and you have already followed the procedure, there is probably still another certificate that your company support will need to help you install. Contact your company support for help using contact information available at the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
+
+## Next steps  
+
+Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  

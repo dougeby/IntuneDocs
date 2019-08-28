@@ -39,8 +39,8 @@
 ### Operating system questions
 #### [Update your device](you-need-to-update-your-android-device.md)
 #### [Unsupported version](your-android-version-isnt-yet-supported.md)
-#### [Your device is rooted and you can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Missing a required certificate](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Device rooted and can't connect](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Missing a required certificate](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Turn off unknown sources](you-need-to-turn-off-unknown-sources-android.md)
 #### [Turn off USB debugging](you-need-to-turn-off-usb-debugging-android.md)
 #### [Turn on scanning for security threats](you-need-to-turn-on-scanning-for-security-threats-android.md)
