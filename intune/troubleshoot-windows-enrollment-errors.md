@@ -334,7 +334,7 @@ Error 0x80070774: Something went wrong. Confirm you are using the correct sign-i
 
 This issue typically occurs before the device is restarted in a Hybrid Azure AD Autopilot scenario, when the device times out during the initial Sign in screen. It means that the domain controller can’t be found or successfully reached because of connectivity issues. Or that the device has entered a state which can’t join the domain.
 
-**Cause:** The most common cause is that Hybrid Azure AD Join is being used and the Assign user feature is configured in the Autopilot profile. Using the Assign user feature performs an Azure AD join on the device during the initial sign-in screen which puts the device in a state where it can’t join your on-premises domain. Therefore, the Assign user feature should only be used in standard Azure AD Join Autopilot scenarios.  The feature should be used in Hybrid Azure AD Join scenarios.
+**Cause:** The most common cause is that Hybrid Azure AD Join is being used and the Assign user feature is configured in the Autopilot profile. Using the Assign user feature performs an Azure AD join on the device during the initial sign-in screen which puts the device in a state where it can’t join your on-premises domain. Therefore, the Assign user feature should only be used in standard Azure AD Join Autopilot scenarios.  The feature should be not used in Hybrid Azure AD Join scenarios.
 
 #### Resolution
 
