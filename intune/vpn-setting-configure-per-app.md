@@ -111,7 +111,7 @@ The VPN profile contains the SCEP or PKCS certificate with the client credential
     - **Authentication certificate**: Select an existing SCEP or PKCS certificate > **OK**.      
     - **Split tunneling**: Select **Disable** to force all traffic to use the VPN tunnel when the VPN connection is active. 
 
-      ![In a per-app VPN profile, enter a connection, IP address or FQDN, authentication method, and split tunning in Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
+      ![In a per-app VPN profile, enter a connection, IP address or FQDN, authentication method, and split tunneling in Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
 
     For information on the other settings, see [iOS VPN settings](vpn-settings-ios.md).
 

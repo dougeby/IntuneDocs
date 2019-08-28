@@ -47,19 +47,19 @@ Each individual certificate profile you create supports a single platform. For e
 - If you use SCEP with one of our certification authority partners, you'll need to [integrate it with Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
 - Both SCEP and PKCS certificate profiles require you to download, install, and configure the Microsoft Intune Certificate Connector. 
 - PCKS imported certificates require you to download, install, and configure the PFX Certificate Connector for Microsoft Intune.
-- PKCS imported certificates require that you export certificates from your certification authority and import them to Microsoft Intune. See [the PFXImport PowerShell project]https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
+- PKCS imported certificates require that you export certificates from your certification authority and import them to Microsoft Intune. See [the PFXImport PowerShell project](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
 - For a device to use SCEP, PCKS, or PKCS imported certificate profiles, that device must trust your root Certification Authority. You use a *trusted certificate profile* to deploy your Trusted Root CA certificate to devices.  
 
 ## Supported platforms and certificate profiles  
 | Platform              | Trusted certificate profile | PKCS certificate profile | SCEP certificate profile | PKCS imported certificate profile  |
 |--|--|--|--|---|
-| Android               | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png)|  ![Supported](./media/certificates-configure/green_check.png) |
-| Android enterprise    | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) |
-| iOS                   | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) |
-| macOS                 | ![Supported](./media/certificates-configure/green_check.png) |   |![Supported](./media/certificates-configure/green_check.png)|![Supported](./media/certificates-configure/green_check.png)|
-| Windows Phone 8.1     |![Supported](./media/certificates-configure/green_check.png)  |  | ![Supported](./media/certificates-configure/green_check.png)| ![Supported](./media/certificates-configure/green_check.png) |
-| Windows 8.1 and later |![Supported](./media/certificates-configure/green_check.png)  |  |![Supported](./media/certificates-configure/green_check.png) |   |
-| Windows 10 and later  | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) | ![Supported](./media/certificates-configure/green_check.png) |
+| Android               | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png)|  ![Supported](./media/certificates-configure/green-check.png) |
+| Android enterprise    | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
+| iOS                   | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
+| macOS                 | ![Supported](./media/certificates-configure/green-check.png) |   |![Supported](./media/certificates-configure/green-check.png)|![Supported](./media/certificates-configure/green-check.png)|
+| Windows Phone 8.1     |![Supported](./media/certificates-configure/green-check.png)  |  | ![Supported](./media/certificates-configure/green-check.png)| ![Supported](./media/certificates-configure/green-check.png) |
+| Windows 8.1 and later |![Supported](./media/certificates-configure/green-check.png)  |  |![Supported](./media/certificates-configure/green-check.png) |   |
+| Windows 10 and later  | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
 
 ## Export the trusted root CA certificate  
 To use PKCS,  SCEP, and PKCS imported certificates, devices must trust your root Certification Authority. To establish this trust, you export the Trusted Root Certification Authority (CA) certificate, as well as any intermediate or issuing Certification Authority certificates, as a public certificate (.cer). You can get these certificates from the issuing CA, or from any device that trusts your issuing CA.  
