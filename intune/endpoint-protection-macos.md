@@ -126,4 +126,5 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
  
     **Default**: Not configured  
 
+See here for more information about FileVault in general: https://docs.microsoft.com/en-us/intune/encryption-monitor#filevault-recovery-keys
 
