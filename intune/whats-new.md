@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,18 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of August 26, 2019
+
+### Configure Microsoft Edge settings using administrative templates for Windows 10 and newer <!-- 5228061 -->
+
+On Windows 10 and newer devices, you can create administrative templates to configure group policy settings in Intune. In this update, you can configure settings that apply to Microsoft Edge version 77 and newer.
+
+To learn more about administrative templates, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
+
+Applies to:
+
+- Windows 10 and newer (Windows RS4+)
 
 ## Week of August 12, 2019
 
