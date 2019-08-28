@@ -30,13 +30,9 @@ ms.collection: M365-identity-device-management
 
 # App configuration policies for Microsoft Intune
 
-Use app configuration policies in Microsoft Intune to provide configuration settings for an iOS or Android app. These configuration settings allow an app to be customized by using an industry standard approach to app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end users trying to configure settings on their own.
+App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to users before they run the app. The settings are then supplied automatically when the app is configured, and users need to take no action. The configuration settings are unique for each app. 
 
-The available configuration parameters are ultimately decided by the app developers of what can and cannot be configured. Documentation from the application vendor should be reviewed to see if an app supports configuration and what configurations are available. For some applications, Intune will populate what configurations are available. In the Managed Google Play Store, apps that support configuration will be marked as such:
-
-![Screenshot of a configured app](./media/app-configuration-policy-overview/configured-app.png)
-
-You can assign an app configuration policy to a group of users and devices by using a combination of include and exclude assignments. Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the groups of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
+You can create and use app configuration policies to provide configuration settings for both iOS or Android apps. These configuration settings allow an app to be customized by using an [industry standard approach](https://www.appconfig.org/) to app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. 
 
 An app configuration setting, for example, might require you to specify any of the following details:
 
@@ -45,34 +41,37 @@ An app configuration setting, for example, might require you to specify any of t
 - Security settings
 - Branding settings such as a company logo
 
-If users were to enter these settings instead, they could do this incorrectly, which could increase the burden on your help desk and slow the adoption of new apps.
+If users were to enter these settings instead, they could do this incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end-users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be quicker.
 
-App configuration policies can help you eliminate app setup up problems by letting you assign configation settings to a policy that is assigned to users before they run the app. The settings are then supplied automatically, and users need to take no action.
-
-The configuration settings are used whenever the app checks for them. Typically, an app checks for configuration settings the first time the app is run by the user.
-
-You have two options for how to use app configurations with Intune:
-- **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider.
-- **Managed apps** - An app is managed without device enrollment. These apps must be targeted with an Intune App Protection policy.  Apps that support Intune App Protection policies have the Intune SDK-enabled.
+The available configuration parameters are ultimately decided by the developers of the app. Documentation from the application vendor should be reviewed to see if an app supports configuration and what configurations are available. For some applications, Intune will populate what configurations are available. 
 
 > [!NOTE]
-> As the Microsoft Intune admin, you can control which user accounts are added to Microsoft Office applications on managed devices. You can limit access to only allowed organization user accounts and block personal accounts on enrolled devices. The supporting applications process the app configuration and remove and block unapproved accounts.
+> In the Managed Google Play Store, apps that support configuration will be marked as such:
+> 
+> ![Screenshot of a configured app](./media/app-configuration-policy-overview/configured-app.png)
+>
+> You will only see apps from [Managed Google Play store](https://play.google.com/work), not the [Google Play store](https://play.google.com/store/apps), when using Managed Devices as the Enrollment Type for Android devices. Managed Google Play Store, which you may also know as Android for Work (AfW) and Android Enterprise, are the apps in the Work Profile that contain the app versions that support app configuration.
 
-You will only see apps from [Managed Google Play store](https://play.google.com/work), and not the standard [Google Play store](https://play.google.com/store/apps), when using Managed Devices as the Enrollment Type. Managed Google Play Store, which you may also know as Android for Work (AfW) and Android Enterprise, are the apps in the Work Profile that contain the app versions that support app configuration.
+You can assign an app configuration policy to a group of users and devices by using a combination of [include and exclude assignments](apps-inc-exl-assignments.md). Once you add an app configuration policy, you can set the assignments for the app configuration policy. When you set the assignments for the policy, you can choose to include and exclude the [groups](groups-add.md) of users for which the policy applies. When you choose to include one or more groups, you can choose to select specific groups to include or select built-in groups. Built-in groups include **All Users**, **All Devices**, and **All Users + All Devices**.
+
+You have two options to use app configuration policies with Intune:
+- **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider. The app must be designed to support the app configuration.
+- **Managed apps** - An app that has been developed to integrate the Intune App SDK. This is known as Mobile Application Management without enrollment ([MAM-WE](app-management.md#mobile-application-management-mam-basics)). You can also wrap an app to implement and support the Intune App SDK. For more information about wrapping an app, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md).
 
 ## Apps that support app configuration
 
 ### Managed devices
-You can use app configuration polices for apps that support it. To support app configuration in Intune, apps must have been written to support the use of app configurations as defined by the [Appconfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
+You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the [AppConfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
 
 ### Managed apps
-You can prepare your line-of-business apps by either incorporating the Intune App SDK into the app, or wrapping the app after it is developed. The Intune App SDK, available for both iOS and Android, enables your app for Intune app protection configuration policies. It strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
+You can prepare your line-of-business apps by either incorporating the [Intune App SDK](app-sdk.md) into the app, or wrapping the app after it is developed using the [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). The Intune App SDK strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
 
-Selecting **Managed apps** as the **Device Enrollment Type** specifically refers to apps protected by Intune App Protection policies on a device that is not enrolled in device management, whereas **Managed devices** applies to apps deployed through the MDM channel and thus are managed by Intune. Select the appropriate choice based on these descriptions. 
+Selecting **Managed apps** as the **Device Enrollment Type** specifically refers to apps configured by Intune configuration policies on a device that is not enrolled in device management, whereas **Managed devices** applies to apps deployed through the MDM channel and thus are managed by Intune. Select the appropriate choice based on these descriptions. 
 
 ![Device enrollment type](./media/app-configuration-policy-overview/device-enrollment-type.png)
 
-For multi-identity apps like Outlook, user preferences may be considered. Focused Inbox, for example, will respect the user setting and not change the configuration. Other parameters do let you control if a user may or may not change the setting.
+> [!NOTE]
+> For multi-identity apps, such as Microsoft Outlook, user preferences may be considered. Focused Inbox, for example, will respect the user setting and not change the configuration. Other parameters do let you control whether a user can or cannot change the setting.
 
 ## Validate the applied app configuration policy
 
