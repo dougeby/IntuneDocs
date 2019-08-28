@@ -62,9 +62,12 @@ This article lists the steps to create a template for Windows 10 devices, and sh
     > [!TIP]
     > The Windows settings in Intune correlate to the on-premises group policy path you see in Local Group Policy Editor (`gpedit`).
 
-5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Microsoft Edge** settings:
+5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Microsoft Edge** (Windows RS4 and newer) settings:
 
     ![Filter the list to show all Windows or all Office settings in administrative templates in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > Microsoft Edge settings apply to Windows 10 RS4 and newer with [KB](NEED KB NUMBER) installed.
 
 6. Select any setting. For example, filter on **Office**, and select **Activate Restricted Browsing**. A detailed description of the setting is shown. Choose **Enabled**, **Disabled**, or leave the setting as **Not configured** (default). The detailed description also explains what happens when you choose **Enabled**, **Disabled**, or **Not configured**.
 7. Select **OK** to save your changes.
