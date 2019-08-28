@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 08/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -678,6 +678,11 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **Network Inspection System (NIS)**: NIS helps to protect devices against network-based exploits. It uses the signatures of known vulnerabilities from the Microsoft Endpoint Protection Center to help detect and block malicious traffic.
+
+  **Not configured** (default) disables this feature. Users aren't blocked from connecting to known vulnerabilities. When set to **Enable**, network protection and network blocking are turned on, and users can't turn it off. Users are blocked from connecting to known vulnerabilities.
+
+  [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
 - **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
 - **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
 
