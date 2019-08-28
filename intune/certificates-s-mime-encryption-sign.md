@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Sign and encrypt email using S/MIME - Microsoft Intune - Azure | Micrososft Docs
+title: Sign and encrypt email using S/MIME - Microsoft Intune - Azure | Microsoft Docs
 description: Learn how to use email digital certificates in Microsoft Intune to sign and encrypt emails on devices. These certificates are called S/MIME and are configured using device configuration profiles. Signing and encryption certificates use PKCS, or private certificates, and use a connector to import certificates.
 keywords:
 author: MandiOhlinger
@@ -84,7 +84,7 @@ Once you have created S/MIME signing and encryption certificate profiles, you ca
 
 ## Next steps
 
-- [Use SCEP certificates](certificates-scep-configure.md)
+- [Use SCEP for certificates](certificates-scep-configure.md)
 - [Use PKCS certificates](certficates-pfx-configure.md)
 - [Use a partner CA](certificate-authority-add-scep-overview.md)
 - [Issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md)
