@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Route audit logs in Azure monitor using Microsoft Intune - Azure | Microsoft Docs
+title: Route logs to Azure Monitor using Microsoft Intune - Azure | Microsoft Docs
 description: Use Diagnostics Settings to send audit logs and operational logs in Microsoft Intune to Azure storage account, event hubs, or log analytics. Choose how long you want to keep the data, and see some estimated costs for different size tenants.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,7 +28,11 @@ ms.collection: M365-identity-device-management
 
 # Send log data to storage, event hubs, or log analytics in Intune (preview)
 
-Microsoft Intune includes built-in logs that provide information about your environment. **Audit Logs** show details on different events or tasks that happen in Intune. **Operational Logs (preview)** show details on users and devices that successfully (or failed) to enroll, as well as details on non-compliant devices.
+Microsoft Intune includes built-in logs that provide information about your environment:
+
+- **Audit Logs** show details on different events or tasks that happen in Intune.
+- **Operational Logs (preview)** show details on users and devices that successfully (or failed) to enroll, and details on non-compliant devices.
+- **Device Compliance Organizational Logs (preview)** show an organizational report for device compliance in Intune, and details on non-compliant devices.
 
 These logs can also be sent to Azure Monitor services, including storage accounts, event hubs, and log analytics. Specifically, you can:
 
@@ -39,7 +43,7 @@ These logs can also be sent to Azure Monitor services, including storage account
 
 These features are part of the **Diagnostics Settings** in Intune.
 
-This article shows you how to use **Diagnostics Settings** to send log data to different services, gives examples and estimates of costs, and answers some common questions.
+This article shows you how to use **Diagnostics Settings** to send log data to different services, gives examples and estimates of costs, and answers some common questions. Once you enable this feature, your logs are routed to the Azure Monitor service you choose.
 
 ## Prerequisites
 
@@ -58,7 +62,7 @@ Depending on where you want to route the audit log data, you need one of the fol
 ## Send logs to Azure monitor
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Under **Monitoring**, select **Diagnostics settings**. The first time you open it, turn it on:
+2. Under **Monitoring**, select **Diagnostics settings**. The first time you open it, turn it on. Otherwise, add a setting.
 
     ![Turn on Diagnostics settings in Intune to send logs to Azure Monitor](media/diagnostics-settings-turn-on.png)
 
@@ -91,7 +95,14 @@ Depending on where you want to route the audit log data, you need one of the fol
       If you choose to use a storage account, then also enter how many days you want to keep the data (retention). To keep data forever, set **Retention (days)** to `0` (zero).
 
       > [!NOTE]
-      > Operational logs are in preview. To provide feedback, including information included in the operational logs, go to [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (opens a new website).
+      > Operational logs are in preview. To provide feedback, including information in the operational logs, go to [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
+
+    - **LOG** > **DeviceComplianceOrg**: Device compliance organizational logs (preview) show the organizational report for Device Compliance in Intune, and details of non-compliant devices. Choose this option to send the compliance logs to your storage account, event hub, or log analytics.
+
+      If you choose to use a storage account, then also enter how many days you want to keep the data (retention). To keep data forever, set **Retention (days)** to `0` (zero).
+ 
+      > [!NOTE]
+      > Device compliance organizational logs are in preview. To provide feedback, including information in the report, go to [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback).
 
     When finished, your settings look similar to the following settings: 
 
