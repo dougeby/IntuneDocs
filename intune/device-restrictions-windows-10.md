@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -683,7 +683,10 @@ These settings use the [defender policy CSP](https://docs.microsoft.com/windows/
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **Scan all downloads**: Controls whether Defender scans all files downloaded from the Internet.
+- **Scan all downloads**: **Not configured** (default) has Defender scans all files downloaded from the Internet. When set to **Enable**, this feature is disabled. So, Defender doesn't scan all downloaded Internet files.
+
+  [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
 - **Scan scripts loaded in Microsoft web browsers**: **Not configured** (default) lets Defender scan scripts that are used in Internet Explorer. **Enable** prevents this scanning.
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
