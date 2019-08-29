@@ -34,9 +34,9 @@ highlightedContent:
     - title: App protection policies
       itemType: get-started
       url: app-protection-policy.md
-    - title: Conditional Access
+    - title: Security baselines
       itemType: get-started
-      url: conditional-access-intune-common-ways-use.md
+      url: security-baselines.md
 
 conceptualContent:
   items:
@@ -122,7 +122,7 @@ conceptualContent:
         - url: app-management.md
           itemType: concept
           text: App management overview
-        - url: add-apps.md
+        - url: apps-add.md
           itemType: how-to-guide
           text: Add apps to Intune
         - url: apps-deploy.md
