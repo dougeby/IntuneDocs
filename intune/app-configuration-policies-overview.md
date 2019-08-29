@@ -99,7 +99,7 @@ You can use Graph API to accomplish app configuration tasks. For details, see [G
 ## Troubleshooting
 
 ### Using logs to show a configuration parameter
-When the logs show a configuration parameter that is confirmed to be applying but doesn't seem to work, there may be an issue with the configuration implementation by the app developer. Reaching out to that app developer first, or checking their knowledge base, may save you a support call with Microsoft. If it is an issue with the how the configuration is being handled within an app, it would have to be addressed in a future updated version of that app.
+When the logs show a configuration parameter that is confirmed to be applying but doesn't seem to work, there may be an issue with the configuration implementation by the app developer. Reaching out to that app developer first, or checking their knowledge base, may save you a support call with Microsoft. If it is an issue with how the configuration is being handled within an app, it would have to be addressed in a future updated version of that app.
 
 ## Next steps
 
