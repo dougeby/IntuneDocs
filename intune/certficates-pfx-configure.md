@@ -5,7 +5,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual 
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -65,6 +65,19 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   This connector processes PKCS certificate requests used for authentication or S/MIME email signing.
 
   The Microsoft Intune Certificate Connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
+
+- **PFX Certificate Connector for Microsoft Intune**:  
+  If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+
+  Each Intune tenant supports a single instance of this connector. You can install this connector on the same server as an instance of the Microsoft Intune Certificate connector.
+
+  This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
+
+  This connector can automatically update itself when new versions become available. To use the update capability, you must:
+  - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.  
+  - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.   
+
+  For more information about all the network endpoints that the connector must be able to access, see [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
 
 - **Windows Server**:  
   You use a Windows Server to host:
@@ -232,9 +245,8 @@ The *PFX Certificates Connector for Microsoft Intune* [supports automatic update
 
 
 ## Next steps
-
+f
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-[Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Digicert PKI manager web service](certificates-digicert-configure.md).
-
+[Use SCEP for certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
 

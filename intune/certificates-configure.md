@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 08/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -27,123 +27,79 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Configure a certificate profile for your devices in Microsoft Intune
+# Use certificates for authentication in Microsoft Intune  
 
-You give users access to corporate resources through VPN, Wi-Fi, or email profiles. Using certificates, you can authenticate these connections. When you use certificates, your end users don't need to enter user names and passwords to authenticate.
+Use certificates with Intune to authenticate your users to applications and corporate resources through VPN, Wi-Fi, or email profiles. When you use certificates to authenticate these connections, your end users won't need to enter usernames and passwords, which helps to make their access seamless. Certificates are also used for signing and encryption of email using S/MIME.
 
-You can use Intune to assign these certificates to devices you manage. Intune supports assigning and managing the following certificate types:
+Intune supports the following certificate types:  
 
-- Simple Certificate Enrollment Protocol (SCEP)
-- PKCS#12 (or PFX)
+- Simple Certificate Enrollment Protocol (SCEP)  
+- PKCS#12 (or PFX)  
+- PKCS imported certificates
 
-Each of these certificate types has its own prerequisites and infrastructure requirements.
+To deploy these certificates, you’ll create and assign certificate profiles to devices.  
 
+Each individual certificate profile you create supports a single platform. For example, if you use PKCS certificates, you’ll create PKCS certificate profile for Android and a separate PKCS certificate profile for iOS. If you also use SCEP certificates for those two platforms, you’ll create a SCEP certificate profile for Android, and another for iOS.  
 
-## Overview
+**General considerations**:  
+- If you don't have an Enterprise Certification Authority (CA), you must create one or use one from [one of our supported partners](certificate-authority-add-scep-overview.md#third-party-certification-authority-partners).
+- If you use SCEP certificate profiles using Microsoft Active Directory Certificate Services, you’ll configure a Network Device Enrollment Service (NDES) server.
+- If you use SCEP with one of our certification authority partners, you'll need to [integrate it with Intune](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
+- Both SCEP and PKCS certificate profiles require you to download, install, and configure the Microsoft Intune Certificate Connector. 
+- PCKS imported certificates require you to download, install, and configure the PFX Certificate Connector for Microsoft Intune.
+- PKCS imported certificates require that you export certificates from your certification authority and import them to Microsoft Intune. See [the PFXImport PowerShell project](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell)
+- For a device to use SCEP, PCKS, or PKCS imported certificate profiles, that device must trust your root Certification Authority. You use a *trusted certificate profile* to deploy your Trusted Root CA certificate to devices.  
 
-1. Be sure the correct certificate infrastructure is set up. You can use [SCEP certificates](certificates-scep-configure.md), and [PKCS certificates](certficates-pfx-configure.md).
+## Supported platforms and certificate profiles  
+| Platform              | Trusted certificate profile | PKCS certificate profile | SCEP certificate profile | PKCS imported certificate profile  |
+|--|--|--|--|---|
+| Android               | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png)|  ![Supported](./media/certificates-configure/green-check.png) |
+| Android enterprise    | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
+| iOS                   | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
+| macOS                 | ![Supported](./media/certificates-configure/green-check.png) |   |![Supported](./media/certificates-configure/green-check.png)|![Supported](./media/certificates-configure/green-check.png)|
+| Windows Phone 8.1     |![Supported](./media/certificates-configure/green-check.png)  |  | ![Supported](./media/certificates-configure/green-check.png)| ![Supported](./media/certificates-configure/green-check.png) |
+| Windows 8.1 and later |![Supported](./media/certificates-configure/green-check.png)  |  |![Supported](./media/certificates-configure/green-check.png) |   |
+| Windows 10 and later  | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) | ![Supported](./media/certificates-configure/green-check.png) |
 
-2. Install a root certificate or an intermediate Certification Authority (CA) certificate on each device so that the device recognizes the legitimacy of your CA. To install the certificate, create and assign a **trusted certificate profile** to each device. When you assign this profile, the Intune-managed devices request and receive the root certificate. You must create a separate profile for each platform. Trusted certificate profiles are available for the following platforms:
+## Export the trusted root CA certificate  
+To use PKCS,  SCEP, and PKCS imported certificates, devices must trust your root Certification Authority. To establish this trust, you export the Trusted Root Certification Authority (CA) certificate, as well as any intermediate or issuing Certification Authority certificates, as a public certificate (.cer). You can get these certificates from the issuing CA, or from any device that trusts your issuing CA.  
 
-    - iOS 8.0 and later
-    - macOS 10.11 and later
-    - Android 4.0 and later
-    - Android Enterprise  
-    - Windows 8.1 and later
-    - Windows Phone 8.1 and later
-    - Windows 10 and later
+To export the certificate, refer to the documentation for your Certification Authority. You’ll need to export the public certificate as a .cer file.  Don't export the private key, a .pfx file.  
 
-    > [!NOTE]  
-    > Certificate profiles are not supported on devices that run *Android Enterprise for dedicated devices*.
+You’ll use this .cer file when you [create trusted certificate profiles](#create-trusted-certificate-profiles) to deploy that certificate to your devices.  
 
-3. Create certificate profiles so that devices request a certificate to be used for authentication of VPN, Wi-Fi, and email access. The following profile types are available for different platforms:  
+## Create trusted certificate profiles  
+Create a trusted certificate profile before you can create a SCEP, PKCS, or PKCS imported certificate profile. Deploying a trusted certificate profile ensures each device recognizes the legitimacy of your CA. SCEP certificate profiles directly reference a trusted certificate profile. PKCS certificate profiles don’t directly reference the trusted certificate profile but do directly reference the server that hosts your CA. PKCS imported certificate profiles don't directly reference the trusted certificate profile but may utilize it on the device. Deploying a trusted certificate profile to devices ensures this trust is established. When a device doesn’t trust the root CA, the SCEP or PKCS certificate profile policy will fail.  
 
-   | Platform     |PKCS certificate|SCEP certificate| PKCS imported certificate | 
-   |--------------|----------------|----------------|-------------------|
-   | Android                | Yes    | Yes    | Yes    |
-   | Android Enterprise     | Yes    | Yes    | Yes    |
-   | iOS                    | Yes    | Yes    | Yes    |
-   | macOS                  |        | Yes    | Yes    |
-   | Windows Phone 8.1      |        | Yes    | Yes    |
-   | Windows 8.1 and later  |        | Yes    |        |
-   | Windows 10 and later   | Yes    | Yes    | Yes    |
-
-   Be sure to create a separate profile for each device platform. When you create the profile, associate it with the trusted root certificate profile that you've already created.
-
-### Further considerations
-
-- If you don't have an Enterprise Certification Authority, you must create one
-- If you use SCEP profiles, configure a Network Device Enrollment Service (NDES) server
-- Whether you plan to use SCEP or PKCS profiles, download and configure the Microsoft Intune Certificate Connector
+Create a separate trusted certificate profile for each device platform you want to support, just as you'll do for SCEP, PCKS, and PKCS imported certificate profiles.  
 
 
-## Step 1: Configure your certificate infrastructure
+### To create a trusted certificate profile  
 
-See one of the following articles for help with configuring the infrastructure for each type of certificate profile:
+1. Sign in to the [Intune portal](https://aka.ms/intuneportal).  
+2. Select **Device configuration** > **Manage** > **Profiles** > **Create profile**.  
+3. Enter a **Name and Description** for the trusted certificate profile.  
+4. From the **Platform** drop-down list, select the device platform for this trusted certificate.  
+5. From the **Profile type** drop-down list, choose **Trusted certificate**.  
+6. Browse to the trusted root CA certificate .cer file you exported for use with this certificate profile, and then select **OK**.  
+7. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:  
+   - **Computer certificate store - Root**
+   - **Computer certificate store - Intermediate**
+   - **User certificate store - Intermediate**
+8. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
+The profile appears in the list of profiles on the *Device configuration – Profiles* view pane, with a profile type of **Trusted certificate**.  Be sure to assign this profile to devices that will use SCEP or PCKS certificates. To assign the profile to groups, see [assign device profiles](device-profile-assign.md).
 
-- [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
-- [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
+> [!NOTE]  
+> Android devices might display a message that a third party has installed a trusted certificate.  
 
+## Additional resources  
+- [Assign device profiles](device-profile-assign.md)  
+- [Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)  
+- [Use third-party certification authority](certificate-authority-add-scep-overview.md)  
 
-## Step 2: Export your trusted root CA certificate
+## Next steps  
+After you create and assign trusted certificate profiles, create SCEP, PKCS, or PKCS imported certificate profiles for each platform you want to use. To continue, see the following articles:  
+- [Configure infrastructure to support SCEP certificates with Intune](certificates-scep-configure.md)  
+- [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)  
+- [Create a PKCS imported certificate profile](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 
-Export the Trusted Root Certification Authorities (CA) certificate as a public certificate (.cer) from the issuing CA, or from any device that trusts your issuing CA. Don't export the private key (.pfx).
-
-You import this certificate when you set up a trusted certificate profile.
-
-## Step 3: Create trusted certificate profiles
-
-Create a trusted certificate profile before you can create a SCEP or PKCS certificate profile. A trusted certificate profile and a SCEP or PKCS profile are needed for each device platform. The steps to create trusted certificates are similar for each device platform.
-
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), select **Device configuration** > **Manage** > **Profiles** > **Create profile**.
-2. Enter the following properties:
-
-    - **Name**: Enter a descriptive name for the profile. Name your profiles so you can easily identify them later. For example, a good profile name is **Trusted certificate profile for Android Enterprise device owner devices** or **Trusted certificate profile for iOS devices**.
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-    - **Platform**: Choose the platform of your devices. Your options:
-
-      - **Android**
-      - **Android Enterprise** > **Device Owner only**
-      - **Android Enterprise** > **Work Profile only**
-      - **iOS**
-      - **macOS**
-      - **Windows Phone 8.1**
-      - **Windows 8.1 and later**
-      - **Windows 10 and later**
-
-    - **Profile type**: Choose **Trusted certificate**.
-
-3. Browse to the certificate you saved in [Step 2: Export your trusted root CA certificate](#step-2-export-your-trusted-root-ca-certificate), then select **OK**.
-4. For Windows 8.1 and Windows 10 devices only, select the **Destination Store** for the trusted certificate from:
-
-    - **Computer certificate store - Root** (SCEP)
-    - **Computer certificate store - Intermediate** (SCEP)
-    - **User certificate store - Intermediate** (PKCS,SCEP)
-
-5. When you're done, choose **OK**, go back to the **Create profile** pane, and select **Create**.
-
-The profile is created and appears on the list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
-
-   >[!NOTE]
-   > Android devices may display a message that a third party has installed a trusted certificate.
-
-## Step 4: Create SCEP or PKCS certificate profiles
-
-See one of the following articles for help with configuring and assigning each type of certificate profile:
-
-- [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
-- [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
-
-After you create a trusted certificate profile, create SCEP or PKCS certificate profiles for each platform you want to use. When you create a SCEP certificate profile, enter a trusted certificate profile for that same platform. This step links the two certificate profiles, but you still must assign each profile separately.
-
-## Next steps
-
-[Assign device profiles](device-profile-assign.md)  
-[Use S/MIME to sign and encrypt emails](certificates-s-mime-encryption-sign.md)  
-[Use third-party certificate authority](certificate-authority-add-scep-overview.md)
-
-## See also
-
-[Troubleshooting NDES configuration for use with Microsoft Intune certificate profiles](https://support.microsoft.com/help/4459540)
-
-[Troubleshooting SCEP certificate profile deployment in Microsoft Intune](https://support.microsoft.com/help/4457481)

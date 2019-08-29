@@ -170,7 +170,7 @@ Public key infrastructure supplies certificates to devices or users to securely 
 
 If you're planning to use certificates with VPN, Wi-Fi, or e-mail profiles with Intune, make sure you have a supported [PKI infrastructure in place](certificates-configure.md), ready to create and deploy certificate profiles.
 
-In addition, if SCEP certificates will be issued, you need to determine which server will host the Network Device Enrollment Service (NDES) feature, and how the communication will happen.
+In addition, if SCEP certificate profiles will be used, you need to determine which server will host the Network Device Enrollment Service (NDES) feature, and how the communication will happen.
 
 Learn more about:
 
@@ -301,7 +301,7 @@ Certificate profiles allow Intune to issue a certificate to a user or device. In
 We recommend that you document which user group needs a certificate, how many certificate profiles you need, and which user groups to deploy them to.
 
 >[!NOTE]
-> Remember that the trusted root certificate is required for the SCEP certificate, so make sure all users targeted for the SCEP certificate also receive a trusted root certificate. If you need SCEP certificates, design and document what SCEP certificate templates you need.
+> Remember that the trusted root certificate is required for the SCEP certificate profile, so make sure all users targeted for the SCEP certificate profile also receive a trusted root certificate. If you need SCEP certificates, design and document what SCEP certificate templates you need.
 
 Here’s an example how you can document the certificates during the design:
 
