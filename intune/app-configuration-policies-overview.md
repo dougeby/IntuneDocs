@@ -58,20 +58,23 @@ You have two options to use app configuration policies with Intune:
 - **Managed devices** - The device is managed by Intune as the mobile device management (MDM) provider. The app must be designed to support the app configuration.
 - **Managed apps** - An app that has been developed to integrate the Intune App SDK. This is known as Mobile Application Management without enrollment ([MAM-WE](app-management.md#mobile-application-management-mam-basics)). You can also wrap an app to implement and support the Intune App SDK. For more information about wrapping an app, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md).
 
+    > [!NOTE]
+    > Intune managed apps will check-in with an interval of 30 minutes for Intune App Configuration Policy status, when deployed in conjunction with an Intune App Protection Policy. If an Intune App Protection Policy isn't assigned to the user, then the Intune App Configuration Policy check-in interval is set to 720 minutes.
+
 ## Apps that support app configuration
 
 ### Managed devices
 You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the [AppConfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
 
 ### Managed apps
-You can prepare your line-of-business apps by either incorporating the [Intune App SDK](app-sdk.md) into the app, or wrapping the app after it is developed using the [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). The Intune App SDK strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md).
+You can prepare your line-of-business apps by either incorporating the [Intune App SDK](app-sdk.md) into the app, or wrapping the app after it is developed using the [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). The Intune App SDK strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md). For a comparison between the Intune App SDK and the Intune App Wrapping Tool, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md#feature-comparison).
 
 Selecting **Managed apps** as the **Device Enrollment Type** specifically refers to apps configured by Intune configuration policies on a device that is not enrolled in device management, whereas **Managed devices** applies to apps deployed through the MDM channel and thus are managed by Intune. Select the appropriate choice based on these descriptions. 
 
 ![Device enrollment type](./media/app-configuration-policy-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> For multi-identity apps, such as Microsoft Outlook, user preferences may be considered. Focused Inbox, for example, will respect the user setting and not change the configuration. Other parameters do let you control whether a user can or cannot change the setting.
+> For multi-identity apps, such as Microsoft Outlook, user preferences may be considered. Focused Inbox, for example, will respect the user setting and not change the configuration. Other parameters do let you control whether a user can or cannot change the setting. For more information, see [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## Validate the applied app configuration policy
 
