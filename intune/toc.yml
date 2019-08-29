@@ -545,6 +545,7 @@
     items:
     - name: What is Intune app management?
       href: app-management.md    
+      displayName: mam-we
     - name: Add apps overview
       href: apps-add.md
       displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
