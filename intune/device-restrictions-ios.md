@@ -188,9 +188,11 @@ These settings are added to a device configuration profile in Intune, and then a
   
     To use this setting, set the **Viewing corporate documents in unmanaged apps** setting to **Block**.
 
-  For more information about these two settings, see [Support Tip: Use Intune custom profile settings with the iOS Native Contacts App](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
+  For more information about these two settings and their impact on Outlook for iOS contact export synchronization, see [Support Tip: Enabling Outlook iOS Contact Sync with iOS12 MDM Controls](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
   
 - **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** (default) allows any document to be viewed in corporate managed apps.
+
+    Setting to **Viewing non-corporate documents in corporate apps** to **Block** will prevent contact export synchronization in Outlook for iOS. For more information, see see [Support Tip: Enabling Outlook iOS Contact Sync with iOS12 MDM Controls](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453).
   
 - **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. It stops managed apps from sending data using Airdrop. 
 - **Adding Game Center friends (supervised only)**: **Block** prevents users from adding Game Center friends. **Not configured** (default) allows the user to add friends in Game Center.
