@@ -59,7 +59,12 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ## Week of August 26, 2019
 
-### Configure Microsoft Edge settings using administrative templates for Windows 10 and newer <!-- 5228061 -->
+### App management
+
+#### Company Portal experience <!-- 1473353 -->
+The Company Portal app has been updated. You can now filter apps on the Apps page within the Company Portal.
+
+#### Configure Microsoft Edge settings using administrative templates for Windows 10 and newer <!-- 5228061 -->
 
 On Windows 10 and newer devices, you can create administrative templates to configure group policy settings in Intune. In this update, you can configure settings that apply to Microsoft Edge version 77 and newer.
 
