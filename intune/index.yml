@@ -133,6 +133,9 @@ conceptualContent:
           text: App protection policies
     - title: Help and support
       links:
+        - url: get-support.md
+          itemType: concept
+          text: How to get support for Microsoft Intune?
         - url: help-desk-operators.md
           itemType: concept
           text: Help users troubleshoot problems
@@ -203,14 +206,19 @@ additionalContent:
       items:
         # Card
         - title: Intune technical forums
-          summary: Ask your questions and find answers on the Intune forums.
-          url: https://social.technet.microsoft.com/forums/home?forum=microsoftintuneprod
+          summary: Ask technical questions in the product forums
+          url: https://social.technet.microsoft.com/Forums/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc
         # Card
-        - title: Microsoft Intune Feedback
-          summary: Provide product feedback that's monitored and reviewed by the Microsoft engineering teams responsible for building Microsoft Intune.
+        - title: UserVoice product feedback
+          summary: Share product ideas with the engineering team
           url: https://microsoftintune.uservoice.com/forums/291681-ideas
         # Card
-        - title: How to get support for Microsoft Intune?
-          summary: Learn about the different ways that Microsoft provides global technical, pre-sales, billing, and subscription support for Microsoft Intune.
-          url: get-support.md
+        - title: Intune blog
+          summary: News and announcements
+          url: https://techcommunity.microsoft.com/t5/Microsoft-Intune/bd-p/Microsoft-Intune
+        # Card
+        - title: "#Intune on Twitter"
+          summary: Keep current with the active Twitter community
+          url: https://twitter.com/hashtag/intune
+
   footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
