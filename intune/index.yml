@@ -9,14 +9,14 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 08/06/2019
+  ms.date: 08/29/2019
 
 highlightedContent:
   items:
     - title: What is Intune?
       itemType: learn
       url: what-is-intune.md
-    - title: Common scenarios
+    - title: Common scenarios that use Intune
       itemType: learn
       url: common-scenarios.md
     - title: What's new in Intune
@@ -25,16 +25,10 @@ highlightedContent:
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
-    - title: Device enrollment
+    - title: Apply region-specific settings with scope tags
       itemType: get-started
-      url: device-enrollment.md
-    - title: Device compliance
-      itemType: get-started
-      url: device-compliance-get-started.md
-    - title: App protection policies
-      itemType: get-started
-      url: app-protection-policy.md
-    - title: Security baselines
+      url: scope-tags.md
+    - title: Secure Windows devices with Microsoft-recommended settings
       itemType: get-started
       url: security-baselines.md
 
@@ -90,22 +84,31 @@ conceptualContent:
         - url: devices-wipe.md
           itemType: how-to-guide
           text: Remove devices      
-    - title: Set device compliance
+    - title: Create compliance rules for users and devices
       links:
         - url: device-compliance-get-started.md
           itemType: concept
-          text: Device compliance overview
-        - url: create-compliance-policy.md
+          text: Compliance overview
+        - url: use-network-locations.md
           itemType: how-to-guide
-          text: Create a compliance policy
-    - title: Configure device settings
+          text: Network fencing + compliance on Android
+        - url: actions-for-noncompliance.md
+          itemType: how-to-guide
+          text: Actions for non-compliant devices
+    - title: Control device features and settings
       links:
         - url: device-profiles.md
           itemType: concept
           text: Device configuration overview
-        - url: device-profile-create.md
+        - url: device-restrictions-configure.md
           itemType: how-to-guide
-          text: Create a device profile 
+          text: Restrict settings and features
+        - url: vpn-settings-configure.md
+          itemType: how-to-guide
+          text: Add a VPN to devices
+        - url: administrative-templates-windows.md
+          itemType: how-to-guide
+          text: Configure group policy ADMX settings
     - title: Protect devices and data
       links:
         - url: device-protect.md
