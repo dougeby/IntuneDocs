@@ -37,6 +37,6 @@ This option is only available for devices that've been encrypted by your organiz
 1. Go to the [Company Portal website](https://portal.manage.microsoft.com) and select the **Menu** button > **Devices**.  
 2. Select a device.
 3. Select **Get recovery key**. If you don't see this option at the top of the page, select **More (…)** > **Get recovery key**.  
-4. Your recovery key will apppear. For security reasons, the key will disappear after five minutes. To see the key again, repeat step 3. 
+4. Your recovery key will apppear. For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.  
 
 If a key isn't found but your device is properly encrypted, contact your organization's support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
