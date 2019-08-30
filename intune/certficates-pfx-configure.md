@@ -31,7 +31,7 @@ Intune supports the use of private and public key pair (PKCS) certificates. This
 
 Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. Certificates authenticate and secure access to your corporate resources like a VPN or a WiFi network. You deploy these settings to devices using device configuration profiles in Intune.
 
-For Imported PKCS certificates, see [Imported PFX Certificates](certficates-importedpfx-configure.md).
+For information about using imported PKCS certificates, see [Imported PFX Certificates](certficates-importedpfx-configure.md).
 
 
 ## Requirements
@@ -85,8 +85,8 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   - Microsoft Intune Certificate Connector - for authentication and S/MIME email signing scenarios
   - PFX Certificate Connector for Microsoft Intune - for S/MIME email encryption scenarios.
 
-  You can install both connectors (*Microsoft Intune Certificate Connector* and *PFX Certificate Connector*) on the same server.
-
+  Intune supports install of the *Imported PFX Certificate Connector* on the same server as the *Microsoft Intune Certificate Connector*.
+  
 ## Export the root certificate from the Enterprise CA
 
 To authenticate a device with VPN, WiFi, or other resources, a device needs a root or intermediate CA certificate. The following steps explain how to get the required certificate from your Enterprise CA.
