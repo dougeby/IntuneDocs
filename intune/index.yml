@@ -61,7 +61,7 @@ conceptualContent:
       links:
         - url: device-enrollment.md
           itemType: concept
-          text: What is device enrollment?
+          text: Device enrollment overview
         - url: windows-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Windows
@@ -71,6 +71,9 @@ conceptualContent:
         - url: android-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Android devices
+      footerLink:
+        text: See more
+        url: device-enrollment.md
     - title: Remotely manage devices
       links:
         - url: device-management.md
@@ -84,7 +87,10 @@ conceptualContent:
           text: Send custom notifications
         - url: devices-wipe.md
           itemType: how-to-guide
-          text: Remove devices      
+          text: Remove devices
+      footerLink:
+        text: See more
+        url: device-management.md       
     - title: Create compliance rules for users and devices
       links:
         - url: device-compliance-get-started.md
@@ -92,7 +98,7 @@ conceptualContent:
           text: Compliance overview
         - url: use-network-locations.md
           itemType: how-to-guide
-          text: Network fencing + compliance on Android
+          text: "Network fencing + compliance on Android"
         - url: actions-for-noncompliance.md
           itemType: how-to-guide
           text: Actions for non-compliant devices
