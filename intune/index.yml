@@ -152,9 +152,6 @@ conceptualContent:
         - url: troubleshoot-policies-in-microsoft-intune.md
           itemType: concept
           text: Troubleshoot policies and profiles in Intune
-        - url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
-          itemType: concept
-          text: Get help on the Intune Customer Success site   
     - title: Developer
       links:
         - url: intune-graph-apis.md
@@ -206,7 +203,17 @@ additionalContent:
           url: https://docs.microsoft.com/microsoft-365/enterprise/         
         - text: Microsoft 365 Enterprise foundation infrastructure
           url: https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure
-    - title: Intune community & support
+      - title: Azure 
+        links: 
+        - text: Azure AD user management 
+          url: https://docs.microsoft.com/azure/active-directory/users-groups-roles/
+        - text: Azure AD authentication
+          url: https://docs.microsoft.com/azure/active-directory/authentication/
+        - text: Azure AD device identity
+          url: https://docs.microsoft.com/azure/active-directory/devices/
+        - text: Azure AD hybrid identity
+          url: https://docs.microsoft.com/azure/active-directory/hybrid/
+    - title: Intune community resources
       items:
         # Card
         - title: Intune technical forums
@@ -224,5 +231,9 @@ additionalContent:
         - title: "#Intune on Twitter"
           summary: Keep current with the active Twitter community
           url: https://twitter.com/hashtag/intune
+        # Card
+        - title: Intune Customer Success
+          summary: Get help on the Intune Customer Success site  
+          url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
 
-  footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
+ # footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
