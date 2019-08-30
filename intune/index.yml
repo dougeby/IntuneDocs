@@ -17,12 +17,12 @@ highlightedContent:
     - title: What is Intune?
       itemType: overview
       url: what-is-intune.md
-    - title: Common scenarios that use Intune
-      itemType: concept
-      url: common-scenarios.md
     - title: What's new in Intune
       itemType: overview
       url: whats-new.md
+    - title: What's in development?
+      itemType: overview
+      url: in-development.md    
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
@@ -163,17 +163,6 @@ conceptualContent:
         - url: reports-nav-create-intune-reports.md
           itemType: concept
           text: Use the Microsoft Intune Data Warehouse
-    - title: Intune user help
-      links: 
-        - url: ../intune-user-help/use-managed-devices-to-get-work-done.md
-          itemType: concept
-          text: Enroll device to access work or school resources
-        - url: ../intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md
-          itemType: overview
-          text: What information can my organization see when I enroll my device?
-        - url: ../intune-user-help/sign-in-to-the-company-portal.md
-          itemType: overview
-          text: Sign in to Company Portal
 
 additionalContent:
   sections:
@@ -203,15 +192,15 @@ additionalContent:
           url: https://docs.microsoft.com/microsoft-365/enterprise/         
         - text: Microsoft 365 Enterprise foundation infrastructure
           url: https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure
-      - title: Azure 
+      - title: Azure Active Directory
         links: 
-        - text: Azure AD user management 
+        - text: User management documentation
           url: https://docs.microsoft.com/azure/active-directory/users-groups-roles/
-        - text: Azure AD authentication
+        - text: Authentication documentation
           url: https://docs.microsoft.com/azure/active-directory/authentication/
-        - text: Azure AD device identity
+        - text: Device identity documentation
           url: https://docs.microsoft.com/azure/active-directory/devices/
-        - text: Azure AD hybrid identity
+        - text: Hybrid identity documentation
           url: https://docs.microsoft.com/azure/active-directory/hybrid/
     - title: Intune community resources
       items:
