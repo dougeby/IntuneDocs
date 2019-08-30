@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Microsoft Intune
+title: Microsoft Intune documentation
 summary: Official product documentation for Microsoft Intune
 
 metadata:
@@ -15,13 +15,13 @@ metadata:
 highlightedContent:
   items:
     - title: What is Intune?
-      itemType: learn
+      itemType: overview
       url: what-is-intune.md
     - title: Common scenarios that use Intune
-      itemType: learn
+      itemType: concept
       url: common-scenarios.md
     - title: What's new in Intune
-      itemType: learn
+      itemType: overview
       url: whats-new.md
     - title: Try Intune for free
       itemType: get-started
@@ -71,9 +71,6 @@ conceptualContent:
         - url: android-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Android devices
-      footerLink:
-        text: See more
-        url: device-enrollment.md
     - title: Remotely manage devices
       links:
         - url: device-management.md
@@ -87,10 +84,7 @@ conceptualContent:
           text: Send custom notifications
         - url: devices-wipe.md
           itemType: how-to-guide
-          text: Remove devices
-      footerLink:
-        text: See more
-        url: device-management.md       
+          text: Remove devices     
     - title: Create compliance rules for users and devices
       links:
         - url: device-compliance-get-started.md
@@ -171,13 +165,13 @@ conceptualContent:
           text: Use the Microsoft Intune Data Warehouse
     - title: Intune user help
       links: 
-        - url: https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done
+        - url: ../intune-user-help/use-managed-devices-to-get-work-done.md
           itemType: concept
           text: Enroll device to access work or school resources
-        - url: https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune
+        - url: ../intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md
           itemType: overview
           text: What information can my organization see when I enroll my device?
-        - url: https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal
+        - url: ../intune-user-help/sign-in-to-the-company-portal.md
           itemType: overview
           text: Sign in to Company Portal
 
@@ -192,7 +186,7 @@ additionalContent:
         - text: What's new in Intune for Education?
           url: https://docs.microsoft.com/intune-education/whats-new-in-edu
         - text: How is Intune for Education different from the full version?
-          url: https://docs.microsoft.com/intune-education/introduction-intune-education          
+          url: ../introduction-intune-education.md
       - title: Intune for Government
         links: 
         - text: Enterprise Mobility + Security for US Government service description
@@ -201,7 +195,7 @@ additionalContent:
           url: https://docs.microsoft.com/intune/intune-us-government-endpoints
         - text: Azure Government site
           url: https://azure.microsoft.com/global-infrastructure/government/
-      - title: Microsoft 365 
+      - title: Microsoft 365
         links: 
         - text: Explore Microsoft 365, a complete solution that includes Intune
           url: https://docs.microsoft.com/microsoft-365/
