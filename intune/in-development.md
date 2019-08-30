@@ -62,7 +62,7 @@ To assist in your readiness and planning, this page lists Intune UI updates and 
 ## App management
 
 ### Managed Google Play private LOB apps <!-- 1464182  -->
-Intune will allow IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Currently, IT admins need to publish LOB apps directly to Google's Play publishing console, which requires many steps and is very time consuming.  This new features allows for easy publishing of LOB apps with a minimal set of steps without needing to leave the Intune console.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices).  From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+Intune will allow IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Currently, IT admins need to publish LOB apps directly to Google's Play publishing console, which requires many steps and is very time consuming.  This new feature allows for easy publishing of LOB apps with a minimal set of steps without needing to leave the Intune console.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices).  From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 ### Company Portal app installation status messages <!-- 2514416  -->
 The Company Portal app will show additional app installation status messages to end users. The following conditions will apply to new Win32 dependency features:
@@ -77,20 +77,17 @@ Intune will provide support for adding and managing web links directly in the  I
 macOS apps you have purchased using Apple Business Manager will be displayed in the console when Apple VPP tokens are synced in Intune. You can assign, revoke and reassign device and user-based licenses for groups using the console. Microsoft Intune helps you manage VPP apps purchased for use at your company by:
 - Reporting license information from the app store.
 - Tracking how many of the licenses you have used.
-- Helping you not install more copies of the app than you own.
+- Helping you to not install more copies of the app than you own.
 For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
 
 ### macOS support for web apps <!-- 3174427  -->
 You'll be able to install Web apps, which allow you to add a shortcut to a URL on the web, to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md).
 
 #### Assign Microsoft Edge beta for macOS <!-- 4678761  -->
-You'll be able to add and assign the latest version of Microsoft Edge beta to Intune for macOS devices. From Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. Then, assign Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Edge up-to-date. For more information about Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](manage-microsoft-edge.md).
+You'll be able to add and assign the latest version of Microsoft Edge beta to Intune for macOS devices. From Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. Then, assign Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Microsoft Edge up-to-date. For more information about Microsoft Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](manage-microsoft-edge.md).
 
 ### Read and write Graph API operations for Intune apps <!-- 5031704  -->
 Applications will be able to call the Intune Graph API with both read and write operations using app identity without user credentials. For more information about accessing the Microsoft Graph API for Intune, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
-
-### Assign Microsoft Edge beta for macOS <!-- 4678761  -->
-You'll be able to add and assign the latest version of Microsoft Edge beta to Intune for macOS devices. From Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. Then, assign Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Edge up-to-date. For more information about Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](manage-microsoft-edge.md).
 
 ### Configure app notification content for organization accounts <!-- 2576686 -->
 Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
@@ -220,7 +217,7 @@ We'll be adding the following support for Android Fully Managed devices:
     - link SCEP certificates to DO Wi-Fi profile for authentication
     - link SCEP certificates to DO VPN profiles for authentication
     - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
-- System apps will be supported on Android Enterprise devices. In Intune, you will add a Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information about adding apps to Intune, see [Add apps to Microsoft Intune](apps-add.md). <!-- 4062195 -->
+- System apps will be supported on Android Enterprise devices. In Intune, you will add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information about adding apps to Intune, see [Add apps to Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you'll be able to create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
 - On Android Enterprise fully managed devices, the mobile threat defense providers will be supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
 
