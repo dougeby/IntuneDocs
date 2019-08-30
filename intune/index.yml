@@ -57,6 +57,9 @@ conceptualContent:
         - url: role-based-access-control.md
           itemType: reference
           text: Role-based access control
+        - url: licenses.md
+          itemType: concept
+          text: Intune licensing
     - title: Enroll devices
       links:
         - url: device-enrollment.md
