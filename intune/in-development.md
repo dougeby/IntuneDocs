@@ -194,7 +194,7 @@ Android's device administrator capabilities have been superseded by Android Ente
 
 Existing tenants will experience no change in their environments. 
 
-For more information about Android device administrator in Intune, see [Android device administrator enrollment](https://docs.microsoft.com/en-us/intune/android-enroll-device-administrator).
+For more information about Android device administrator in Intune, see [Android device administrator enrollment](https://docs.microsoft.com/intune/android-enroll-device-administrator).
 
 ### For iOS devices, customize the enrollment process privacy screen of the Company Portal <!-- 4394993  -->
 Using markdown, you'll be able to customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device.
