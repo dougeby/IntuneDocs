@@ -175,7 +175,7 @@ additionalContent:
         - text: What's new in Intune for Education?
           url: https://docs.microsoft.com/intune-education/whats-new-in-edu
         - text: How is Intune for Education different from the full version?
-          url: ../introduction-intune-education.md
+          url: introduction-intune-education.md
       - title: Intune for Government
         links: 
         - text: Enterprise Mobility + Security for US Government service description
