@@ -189,17 +189,17 @@ additionalContent:
         links: 
         - text: What is Intune for Education?
           url: https://docs.microsoft.com/intune-education/what-is-intune-for-education
-        - text: What's new?
+        - text: What's new in Intune for Education?
           url: https://docs.microsoft.com/intune-education/whats-new-in-edu
         - text: How is Intune for Education different from the full version?
           url: https://docs.microsoft.com/intune-education/introduction-intune-education          
       - title: Intune for Government
         links: 
-        - text: Enterprise Mobility + Security for US Government Service Description
+        - text: Enterprise Mobility + Security for US Government service description
           url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
         - text: US government endpoints for Intune
           url: https://docs.microsoft.com/intune/intune-us-government-endpoints
-        - text: Azure Government
+        - text: Azure Government site
           url: https://azure.microsoft.com/global-infrastructure/government/
       - title: Microsoft 365 
         links: 
