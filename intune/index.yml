@@ -134,6 +134,9 @@ conceptualContent:
         - url: apps-deploy.md
           itemType: how-to-guide
           text: Assign apps to groups
+        - url: app-configuration-policies-overview.md
+          itemType: overview
+          text: App configuration policies
         - url: app-protection-policy.md
           itemType: concept
           text: App protection policies
@@ -161,11 +164,16 @@ conceptualContent:
           text: Access the Intune APIs in Microsoft Graph
         - url: https://github.com/Microsoft/Intune-PowerShell-SDK/
           itemType: concept
-          text: Use PowerShell cmdlets to automate actions.
+          text: Use PowerShell cmdlets to automate actions
         - url: reports-nav-create-intune-reports.md
           itemType: concept
           text: Use the Microsoft Intune Data Warehouse
-
+        - url: https://docs.microsoft.com/intune/app-sdk
+          itemType: overview
+          text: Microsoft Intune App SDK overview
+        - url: reports-nav-create-intune-reports.md
+          itemType: concept
+          text: Use the Microsoft Intune Data Warehouse
 additionalContent:
   sections:
     - title: Additional resources to manage devices
