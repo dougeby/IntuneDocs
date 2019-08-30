@@ -10,7 +10,6 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.date: 08/29/2019
 
 highlightedContent:
   items:
@@ -20,16 +19,16 @@ highlightedContent:
     - title: What's new in Intune
       itemType: overview
       url: whats-new.md
-    - title: What's in development?
+    - title: Features in development
       itemType: overview
       url: in-development.md    
     - title: Try Intune for free
       itemType: get-started
       url: free-trial-sign-up.md
-    - title: Apply region-specific settings with scope tags
+    - title: Apply region settings with scope tags
       itemType: get-started
       url: scope-tags.md
-    - title: Secure Windows devices with Microsoft-recommended settings
+    - title: Secure Windows devices with Microsoft recommended settings
       itemType: get-started
       url: security-baselines.md
 
