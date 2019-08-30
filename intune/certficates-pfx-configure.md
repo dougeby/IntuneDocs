@@ -31,7 +31,7 @@ Intune supports the use of private and public key pair (PKCS) certificates. This
 
 Microsoft Intune includes built-in settings to use PKCS certificates for access and authentication to your organizations resources. Certificates authenticate and secure access to your corporate resources like a VPN or a WiFi network. You deploy these settings to devices using device configuration profiles in Intune.
 
-For information about using imported PKCS certificates, see [Imported PFX Certificates](certficates-importedpfx-configure.md).
+For information about using imported PKCS certificates, see [Imported PFX Certificates](certificates-importedpfx-configure.md).
 
 
 ## Requirements

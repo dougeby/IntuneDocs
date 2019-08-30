@@ -143,6 +143,7 @@ The following process uses the Powershell cmdlets as an example on how to import
 
 Options include:  
 - Intended Purpose:  
+
   0. unassigned
   1. smimeEncryption
   2. smimeSigning
