@@ -223,12 +223,12 @@ additionalContent:
           summary: Share product ideas with the engineering team
           url: https://microsoftintune.uservoice.com/forums/291681-ideas
         # Card
-        - title: Intune blog
-          summary: News and announcements
+        - title: Intune tech community conversations
+          summary: Check out active conversations from the technical community
           url: https://techcommunity.microsoft.com/t5/Microsoft-Intune/bd-p/Microsoft-Intune
         # Card
         - title: "#Intune on Twitter"
-          summary: Keep current with the active Twitter community
+          summary: Stay current with the active Twitter community
           url: https://twitter.com/hashtag/msintune
         # Card
         - title: Intune Customer Success
