@@ -206,17 +206,12 @@ Microsoft Edge and the Intune Managed Browser and [Azure AD Application Proxy]( 
 #### Step 1: Enable automatic redirection to a protected browser from Outlook
 Outlook must be configured with an app protection policy that enables the setting **Restrict web content to display in the Managed Browser**.
 
-#### Step 2: Assign an app configuration policy assigned for the protected browser.
-This procedure configures the Managed Browser or Microsoft Edge app to use app proxy redirection. Using the procedure to create a Microsoft Edge or Managed Browser app configuration, supply the following key and value pair:
+#### Step 2: Assign an app configuration policy assigned for the protected browser
+This procedure configures the Managed Browser or Microsoft Edge app to use app proxy redirection. 
 
-| Key                                                             | Value    |
-|-----------------------------------------------------------------|----------|
-| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
+Open the **Edge** tab in the configuration settings for the policy and select **Enable** for the Application proxy redirection value. Enabling this setting will give users access to corporate links and on-premises web apps published through the Azure application proxy.
 
 For more information about how the Managed Browser, Microsoft Edge, and Azure AD Application Proxy can be used in tandem for seamless (and protected) access to on-premises web apps, see the Enterprise Mobility + Security blog post [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
-
-> [!NOTE]
-> Microsoft Edge uses the same key and value pairs as the Managed Browser. 
 
 ## How to configure the homepage for a protected browser
 
