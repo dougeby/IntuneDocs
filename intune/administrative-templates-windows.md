@@ -71,6 +71,7 @@ This article lists the steps to create a template for Windows 10 devices, and sh
     >
     > - Windows 10 RS4 and newer with [KB 4512509](https://support.microsoft.com/kb/4512509) installed.
     > - Windows 10 RS5 and newer with [KB 4512534](https://support.microsoft.com/kb/4512534) installed.
+    > - Windows 10 19H1 and newer with [KB 4512941](https://support.microsoft.com/kb/4512941) installed.
 
 6. Select any setting. For example, filter on **Office**, and select **Activate Restricted Browsing**. A detailed description of the setting is shown. Choose **Enabled**, **Disabled**, or leave the setting as **Not configured** (default). The detailed description also explains what happens when you choose **Enabled**, **Disabled**, or **Not configured**.
 7. Select **OK** to save your changes.
