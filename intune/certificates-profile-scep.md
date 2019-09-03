@@ -43,7 +43,7 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 5. From the **Profile type** drop-down list, select **SCEP certificate**.  
 
    > [!NOTE]  
-   > For the **Android Enterprise** platform *Profile type* is divided into two categories, *Device Owner Only* and *Work Profile Only*.  SCEP certificate profiles are only supported for *Work Profile Only*.
+   > For the **Android Enterprise** platform, *Profile type* is divided into two categories: *Device Owner Only* and *Work Profile Only*.  SCEP certificate profiles are only supported for *Work Profile Only*.
 
 6. Select **Settings**, and then complete the following configurations:
 
