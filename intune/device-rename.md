@@ -39,8 +39,6 @@ You can rename the following types of devices:
 - iOS supervised
 - corporate-owned MacOS 10
 
-When renaming a device, the name can't include any of the following characters: space and { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *
-
 This feature doesn't currently support renaming hybrid Azure AD Windows devices.
 
 ## Rename a device
