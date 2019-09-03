@@ -5,7 +5,7 @@ keywords:
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -141,11 +141,13 @@ The following process uses the Powershell cmdlets as an example of how to import
 
 Options include:  
 - Intended Purpose:  
+
   0. unassigned
   1. smimeEncryption
   2. smimeSigning
 
 - Padding Scheme:  
+
   1. pkcs1
   2. oaepSha1
   3. oaepSha256
