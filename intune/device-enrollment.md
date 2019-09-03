@@ -87,7 +87,7 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 
 
 ## Bring your own device
-Bring your own devices (BYOD) include personal phones, tables, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
+Bring your own devices (BYOD) include personal phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. This program lets users access company resources like email.
 
 ## Corporate-owned device
 [Corporate-owned devices (COD)](corporate-identifiers-add.md) include phones, tablets, and PCs owned by the organization and distributed to the workforce. COD enrollment supports scenarios like automatic enrollment, shared devices, or pre-authorized enrollment requirements. A common way to enroll CODs is for an administrator or manager to use the device enrollment manager (DEM). iOS devices can be enrolled directly through the Device Enrollment Program (DEP) tools that are provided by Apple. Devices with an IMEI number can also be identified and tagged as corporate-owned.

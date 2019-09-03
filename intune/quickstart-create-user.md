@@ -27,7 +27,7 @@ ms.collection: M365-identity-device-management
 
 # Quickstart: Create a user in Intune and assign them a license
 
-In this quickstart, you will create a user and then assign them an Intune. When using Intune, each person you want to have access to company data must have their own user account. Intune admins can configure users later to manage access control.
+In this quickstart, you will create a user and then assign them an Intune license. When using Intune, each person you want to have access to company data must have their own user account. Intune admins can configure users later to manage access control.
 
 If you don’t have an Intune subscription, [sign up for a free trial account](free-trial-sign-up.md).
 
