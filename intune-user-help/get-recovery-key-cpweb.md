@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 09/03/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,13 +30,29 @@ ms.collection: M365-identity-device-management
 ---
 
 # Get recovery key for macOS device 
-Get a recovery key for your macOS device from the Intune Company Portal website. If you forget your device password, you can use the recovery key to sign back in. 
+Use the Company Portal website to get a recovery key for your locked macOS device. If you forget your device password, you can sign in to the Company Portal from another device to retrieve your key.  
 
 This option is only available for devices that've been encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted. 
 
-1. Go to the [Company Portal website](https://portal.manage.microsoft.com) and select the **Menu** button > **Devices**.  
-2. Select a device.
-3. Select **Get recovery key**. If you don't see this option at the top of the page, select **More (…)** > **Get recovery key**.  
-4. Your recovery key will apppear. For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.  
+1. On any device, sign in to the [Company Portal website](https://portal.manage.microsoft.com) and select the **Menu** button > **Devices**.  
+2. Select the encrypted macOS device.  
+3. Select **Get recovery key**.  
+
+
+    ![Screenshot of Company Portal website, highlighting Get recovery key section.](./media/1907-recovery-cpweb-intune.PNG)  
+
+    If you don't see this option, go to the top of the page and select **More (…)** > **Get recovery key**.  
+
+    ![Screenshot of Company Portal website, highlighting the More menu where Get recovery option will be.](./media/1907-recovery2-cpweb-intune.PNG)   
+    
+1. Your recovery key will apppear. For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.  
 
 If a key isn't found but your device is properly encrypted, contact your organization's support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+## IT pro support  
+If you're an IT support person and want to configure and manage FileVault encryption for macOS devices, see [Use device Encryption with Intune](encrypt-devices.md).    
+
+## Next steps  
+Find out what else you can do from the Company Portal website. See [Using the Intune Company Portal website](using-the-intune-company-portal-website.md) for the list of actions.  
+
+Still need help? Contact your IT support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
