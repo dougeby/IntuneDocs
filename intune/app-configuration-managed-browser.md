@@ -42,12 +42,12 @@ Using a browser protected with Intune policy (Microsoft Edge or Intune Managed B
 
 ## Microsoft Edge support
 
-You can use Microsoft Edge for enterprise scenarios on iOS and Android devices. Microsoft Edge supports all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end-user experience. The following Microsoft Edge enterprise features enabled by Intune policies are available. These enterprise features include:
+You can use Microsoft Edge for enterprise scenarios on iOS and Android devices. Microsoft Edge supports all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end-user experience. The following Microsoft Edge enterprise features that are enabled by Intune policies include:
 
-1. **Dual-Identity** - Users can add both a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins will be able to set the desired policies for a protected browsing experience within the work account. 
-2. **Intune app protection policy integration** - Admins can now target app protection policies to Microsoft Edge, including the control of cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
-3. **Azure Application Proxy integration** - Admins can control access to SaaS apps and web apps, helping ensure browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the Internet. 
-4. **Managed Favorites and Home Page shortcuts** - For ease of access, admins can set URLs to appear under favorites when end users are in their corporate context. Admins can set a homepage shortcut, which will show as the primary shortcut when the corporate user opens a new page or a new tab in Microsoft Edge.
+- **Dual-Identity** - Users can add both a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to the architecture and experience in Office 365 and Outlook. Intune admins will be able to set the desired policies for a protected browsing experience within the work account. 
+- **Intune app protection policy integration** - Admins can now target app protection policies to Microsoft Edge, including the control of cut, copy, and paste, preventing screen captures, and ensuring that user-selected links open only in other managed apps.
+- **Azure Application Proxy integration** - Admins can control access to SaaS apps and web apps, helping ensure browser-based apps only run in the secure Microsoft Edge browser, whether end users connect from the corporate network or connect from the Internet. 
+- **Managed Favorites and Home Page shortcuts** - For ease of access, admins can set URLs to appear under favorites when end users are in their corporate context. Admins can set a homepage shortcut, which will show as the primary shortcut when the corporate user opens a new page or a new tab in Microsoft Edge.
 
 Microsoft Intune protection policies for Microsoft Edge help to protect your organization’s data and resources. Intune-protected Microsoft Edge ensures that your company’s resources are protected not only within natively installed apps, but also when accessed through the web browser.
 
