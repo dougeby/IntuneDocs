@@ -126,6 +126,9 @@ conceptualContent:
         - url: mobile-threat-defense.md
           itemType: concept
           text: Mobile Threat Defense integration with Intune
+      footerLink:
+        text: See more
+        url: ./protect/index.yml
     - title: Manage apps
       links:
         - url: app-management.md
