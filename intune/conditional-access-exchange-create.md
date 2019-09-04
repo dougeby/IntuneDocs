@@ -101,7 +101,7 @@ Before you can use the following procedure to set up Exchange on-premises access
    > [!TIP]
    > To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
  
-   Select **OK** to save your edits.
+   Select **OK** to save your edits to complete configuration of Exchange on-premises access.
 
 8. Next, select **Advanced Exchange Active Sync access settings** to open the *Advanced Exchange ActiveSync access settings* pane where you configure device access rules:  
 
