@@ -33,7 +33,7 @@ ms.reviewer: karthig
 
 Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
 
-To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#windows-defender-antivirus).  
+To configure Windows Defender Antivirus, see [Windows 10 device restrictions](device-restrictions-windows-10.md#microsoft-defender-antivirus).  
 
 ## Before you begin  
 
