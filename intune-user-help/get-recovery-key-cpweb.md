@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Get recovery key for macOS device from Intune Company Portal website  
+title: Get a recovery key for a macOS device from the Intune Company Portal website  
 description: View the recovery key for an enrolled, managed macOS device.   
 keywords:
 author: lenewsad
@@ -29,7 +29,7 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Get recovery key for macOS device 
+# Get a recovery key for a macOS device 
 Use the Company Portal website to get a recovery key for your locked macOS device. If you forget your device password, you can sign in to the Company Portal from another device to retrieve your key.  
 
 This option is only available for devices that were encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted. 
