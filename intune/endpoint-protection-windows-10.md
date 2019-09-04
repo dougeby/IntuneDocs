@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -1132,6 +1132,14 @@ Block end-user access to the various areas of the Windows Defender Security Cent
 
   - **Not configured**  
   - **Hide**  
+
+- **Tamper Protection**  
+  **Default**: Not configured
+
+  Turn Tamper Protection on or off on devices. To use Tamper Protection, you must [integrate Microsoft Defender Advanced Threat Protection with Intune](advanced-threat-protection.md), and have [Enterprise Mobility + Security E5 Licenses](licenses.md).  
+  - **Not configured** - No change is made to device settings.
+  - **Enabled** - Tamper Protection is turned on and restrictions are enforced on devices.
+  - **Disabled** - Tamper Protection is turned off and restrictions are not enforced.
 
 ### IT contact Information  
 
