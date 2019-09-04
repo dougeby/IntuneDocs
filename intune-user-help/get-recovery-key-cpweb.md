@@ -40,7 +40,11 @@ This option is only available for devices that were encrypted by your organizati
 
     ![Screenshot of Company Portal website, highlighting Get recovery key section.](./media/1907-recovery2-cpweb-intune.PNG)  
     
-1. Your recovery key will appear. For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.  
+1. Your recovery key will appear.   
+
+    ![Screenshot of Company Portal website, showing recovery key.](./media/1907-recovery-cpweb-intune.PNG)  
+
+    For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.
 
 If a key isn't found but your device is properly encrypted, contact your organization's support person. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
