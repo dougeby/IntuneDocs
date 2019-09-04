@@ -49,7 +49,7 @@ Policies can be applied to devices that:
 
 - **Definition Lookup**: **Block** prevents user from highlighting a word, and then looking up its definition on the device. **Not configured** (default) allows access to the definition lookup feature.
 - **Dictation**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
-- **content caching**: Choose **Not configured** (default) to enable content caching. Content caching stores app data, web browser data, downloads, and more locally on the device. Select **Block** to prevent this data from being stored in the cache.
+- **Content caching**: Choose **Not configured** (default) to enable content caching. Content caching stores app data, web browser data, downloads, and more locally on the device. Select **Block** to prevent this data from being stored in the cache.
 
   For more information on content caching on macOS, see [Manage content caching on Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (opens another website).
 
@@ -137,8 +137,8 @@ Policies can be applied to devices that:
 - **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. Your options:
 
   - **Not configured** (default): There are no restrictions from Intune. Users have access to apps you assign, and built-in apps.
-  - **Prohibited apps**: Apps not managed by Intune that users aren't allowed to install and run. Users aren't prevented from installing a prohibited app. But if they do, it's reported to the administrator.
-  - **Approved apps**: Apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But if they do, it's reported to the administrator.
+  - **Prohibited apps**: Apps not managed by Intune that you don't want installed on the device. Users aren't prevented from installing a prohibited app. But if a user installs an app from this list, it's reported in Intune.
+  - **Approved apps**: Apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But if they do, it's reported in Intune.
 - **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **Publisher**: Enter the publisher of the app you want.

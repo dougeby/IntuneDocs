@@ -329,10 +329,11 @@ Policies can be applied to devices that:
 
 ### Device enrollment and automated device enrollment (supervised)
 
-In the restricted apps list, you can configure one of the following lists:
+- **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. Your options:
 
-- **Prohibited apps**: A list of apps not managed by Intune that you don't want installed on the device. If a user installs an app from this list, you're notified by Intune.
-- **Approved apps**: A list of apps that users are allowed to install. To stay compliant, users must not install other apps. Apps that are managed by Intune are automatically allowed. If a user installs an app from this list, you're notified by Intune.
+  - **Not configured** (default): There are no restrictions from Intune. Users have access to apps you assign, and built-in apps.
+  - **Prohibited apps**: Apps not managed by Intune that you don't want installed on the device. Users aren't prevented from installing a prohibited app. But if a user installs an app from this list, it's reported in Intune.
+  - **Approved apps**: Apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But if they do, it's reported in Intune.
 
 To add apps to these lists, you can:
 
@@ -342,7 +343,7 @@ To add apps to these lists, you can:
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
 
-- Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
+- **Import** a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the restricted apps list in the same format.
 
 > [!IMPORTANT]
 > Device profiles that use the restricted app settings must be assigned to groups of users.

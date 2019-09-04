@@ -92,8 +92,6 @@ You can add up to **six** items (apps and folders combined) for the device dock.
     - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
     - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-    Select **OK** to save your changes.
-
   - **Folder**: Choose this option to add a folder to the dock on the screen.
 
     Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -144,8 +142,6 @@ You can add up to **40** pages on a device.
         - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
         - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-      Select **OK** to save your changes.
-
       - **Folder**: Choose this option to add a folder to the dock on the screen.
 
         Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -189,8 +185,6 @@ Choose how installed apps on iOS devices send notifications. These settings supp
       - **Modal**: The notification is shown and the user must manually dismiss it before continuing to use the device.
     - **Badge on app icon**: Select **Enable** to add a badge to the app icon. The badge means the app sent a notification.
     - **Sounds**: Select **Enable** to play a sound when a notification is delivered.
-
-Select **OK** to save your changes.
 
 ## Lock screen message settings
 
@@ -278,11 +272,7 @@ These settings control browser URL access on supervised iOS devices.
       > [!NOTE]
         > The URLs you enter are the URLs you don't want evauluated by the Apple web filter. These URLs aren't a list of allowed web sites. To create a list of allowed websites, set the **Filter Type** to **Specific websites only**.
 
-      Select **OK** to save your changes.
-
     - **Blocked URLs**: **Add** the URLs you want to stop from opening, regardless of the Apple web filter settings.
-
-      Select **OK** to save your changes.
 
   - **Specific websites only** (for the Safari web browser only): These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be opened. Use this option only if you know the exact list of URLs that users can access.
 
