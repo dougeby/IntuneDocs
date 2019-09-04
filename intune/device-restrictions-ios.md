@@ -25,11 +25,11 @@ ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# iOS device settings to allow or restrict features using Intune
+# iOS and iPadOS device settings to allow or restrict features using Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This article lists and describes the different settings you can control on iOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
+This article lists and describes the different settings you can control on iOS and iPadOS devices. As part of your mobile device management (MDM) solution, use these settings to allow or disable features, set password rules, allow or restrict specific apps, and more.
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
@@ -44,7 +44,7 @@ Policies can be applied to devices that:
 
 ## Before you begin
 
-[Create a device restrictions configuration profile](device-restrictions-configure.md#create-the-profile).
+[Create a device restrictions configuration profile](device-restrictions-configure.md).
 
 ## General
 

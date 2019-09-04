@@ -26,7 +26,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# iOS device settings to use common iOS features in Intune
+# iOS and iPadOS device settings to use common iOS features in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -34,11 +34,17 @@ Intune includes some built-in settings to allow iOS users to use different Apple
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
+Policies can be applied to devices that:
+
+- Enrolled in Intune through device enrollment.
+- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
+- Supervised devices enrolled in Intune using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
+
 This article lists these settings, and describes what each setting does.
 
 ## Before you begin
 
-[Create an iOS device configuration profile](device-features-configure.md#create-a-device-profile).
+[Create an iOS device configuration profile](device-features-configure.md).
 
 ## AirPrint
 

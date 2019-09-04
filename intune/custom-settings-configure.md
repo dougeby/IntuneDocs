@@ -43,7 +43,7 @@ Custom profiles are created similar to built-in profiles, and are available on t
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -55,7 +55,7 @@ Choose your platform, and get started:
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)

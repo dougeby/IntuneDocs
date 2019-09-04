@@ -2,7 +2,7 @@
 # required metadata
 
 title: Restrict devices features using policy in Microsoft Intune - Azure | Microsoft Docs
-description: Add a device profile to restrict features on Android, macOS, iOS, Windows Phone, and Windows 10 devices in Microsoft Intune
+description: Add a device profile to restrict features on Android, macOS, iOS, iPadOS, Windows Phone, and Windows 10 devices in Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -29,16 +29,17 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Device restriction policies are a key feature when using Intune to protect your organization's resources. These restrictions let you control a wide range of settings and features, including:
+Intune includes device restriction policies that help administrators control Android, iOS, macOS, and Windows devices. These restrictions let you control a wide range of settings and features to protect your organization's resources. For example, administrators can:
 
-- Security
-- Browser
-- Hardware
-- Data sharing settings
+- Allow or block the device camera
+- Control access to Google Play, app stores, viewing documents, and gaming
+- Block built-in apps, or create a list of apps that allowed or prohibited
+- Allow or prevent backing up files to cloud and storage accounts
+- Set a minimum password length, and block simple passwords
 
-For example, you can block the device camera, allow access to Google Play, block built-in apps, and more.
+These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you can then push or deploy the profile to devices in your organization.
 
-This article shows you how to create the profile, and gives quick links to different platforms settings you can control.
+This article shows you how to create a device restrictions profile. You can also see all the available settings for the different platforms.
 
 ## Create the profile
 
@@ -52,7 +53,7 @@ This article shows you how to create the profile, and gives quick links to diffe
 
         - **Android**
         - **Android enterprise**
-        - **iOS**
+        - **iOS/iPadOS**
         - **macOS**
         - **Windows Phone 8.1**
         - **Windows 8.1 and later**
@@ -66,7 +67,7 @@ This article shows you how to create the profile, and gives quick links to diffe
 
     - [Android settings](device-restrictions-android.md)
     - [Android enterprise settings](device-restrictions-android-for-work.md)
-    - [iOS settings](device-restrictions-ios.md)
+    - [iOS/iPadOS settings](device-restrictions-ios.md)
     - [macOS settings](device-restrictions-macos.md)
     - [Windows Phone 8.1 settings](device-restrictions-windows-phone-8-1.md)
     - [Windows 8.1](device-restrictions-windows-8-1.md)

@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,15 +34,22 @@ This article lists and describes the different settings you can control on macOS
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
+Policies can be applied to devices that:
+
+- Enrolled in Intune through device enrollment.
+- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
+
 ## Before you begin
 
-[Create a device restrictions configuration profile](device-restrictions-configure.md#create-the-profile).
+[Create a device restrictions configuration profile](device-restrictions-configure.md).
 
 ## General
 
-- **Block Definition Lookup**: **Block** prevents user from highlighting a word, and then looking up its definition on the device. **Not configured** (default) allows access to the definition lookup feature.
-- **Block Dictation**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
-- **Block content caching**: Choose **Not configured** (default) to enable content caching. Content caching stores app data, web browser data, downloads, and more locally on the device. Select **Block** to prevent this data from being stored in the cache.
+### Device enrollment
+
+- **Definition Lookup**: **Block** prevents user from highlighting a word, and then looking up its definition on the device. **Not configured** (default) allows access to the definition lookup feature.
+- **Dictation**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
+- **content caching**: Choose **Not configured** (default) to enable content caching. Content caching stores app data, web browser data, downloads, and more locally on the device. Select **Block** to prevent this data from being stored in the cache.
 
   For more information on content caching on macOS, see [Manage content caching on Mac](https://support.apple.com/guide/mac-help/manage-content-caching-on-mac-mchl3b6c3720/mac) (opens another website).
 
@@ -61,36 +68,26 @@ These settings are added to a device configuration profile in Intune, and then a
     - macOS 10.13.4 and newer
 
 - **Screenshots**: Device must be enrolled in Apple's Automated Device Enrollment (DEP). When set to **Block**, users can't save a screenshot of the display. It also prevents the Classroom app from observing remote screens. **Not configured** (default) allows users to capture screenshots, and allows the Classroom app to view remote screens.
-  - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens. 
-  
-    This feature applies to:  
-    - Devices enrolled through Apple's Automated Device Enrollment (DEP)
 
-    This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
+### Automated device enrollment
 
-  - **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens.
+- **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens.
 
-    This feature applies to:  
-    - Devices enrolled through Apple's Automated Device Enrollment (DEP)
+  To use this setting, set the **Screenshots** setting to **Not configured** (screenshots are allowed).
 
-    This setting is available when the **Screenshots** setting is set to **Not configured** (screenshots are allowed).
+- **Unprompted screen observation by Classroom app**: **Allow** lets teachers see their students’ screens without requiring the student to agree. **Not configured** (default) requires the student to agree before the teacher can see the screens.
+
+  To use this setting, set the **Screenshots** setting to **Not configured** (screenshots are allowed).
 
 - **Students must request permission to leave Classroom class**: **Require** forces students enrolled in an unmanaged Classroom course to get teacher approval to leave the course. **Not configured** (default) allows student to leave the course whenever the student chooses.
 
-  This feature applies to:  
-  - Devices enrolled through Apple's Automated Device Enrollment (DEP)
-
 - **Teachers can automatically lock devices or apps in the Classroom app**: **Allow** lets teachers lock a student's device or app without the student's approval. **Not configured** (default) requires the student to agree before the teacher can lock the device or app.
 
-  This feature applies to:  
-  - Devices enrolled through Apple's Automated Device Enrollment (DEP)
-
-- **Students can automatically join Classroom class**: **Allow** lets students join a class without prompting the teacher. **Not configured** (default) requires teacher approval to join a class. 
-
-  This feature applies to:  
-  - Devices enrolled through Apple's Automated Device Enrollment (DEP)
+- **Students can automatically join Classroom class**: **Allow** lets students join a class without prompting the teacher. **Not configured** (default) requires teacher approval to join a class.
 
 ## Password
+
+### Device enrollment
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) doesn't require a password. It also doesn't force any restrictions, such as blocking simple passwords or setting a minimum length.
   - **Required password type**: Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers).
@@ -122,6 +119,8 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Built-in Apps
 
+### Device enrollment
+
 - **Block Safari AutoFill**: **Block** disables the autofill feature in Safari on the device. **Not configured** (default) allows users to change autocomplete settings in the web browser.
 - **Block Camera**: Choose **Block** to prevent access to the camera on the device. **Not configured** (default) allows access to the device's camera.
 - **Block Apple Music**: **Block** reverts the Music app to classic mode and disables the Music service. **Not configured** (default) allows using the Apple Music app.
@@ -133,19 +132,30 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Restricted apps
 
-In the restricted apps list, you can configure one of the following lists:
+### Device enrollment
 
-- A **Prohibited apps** list: List the apps not managed by Intune that users aren't allowed to install and run. Users aren't prevented from installing a prohibited app, but if they do, it's reported to the administrator.
-- An **Approved apps** list: List the apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But, if they do, it's reported to the administrator.
+- **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. Your options:
 
-To configure the list, click **Add**, then specify a name of your choice, optionally the app publisher, and the bundle ID of the app (for example *com.apple.calculator*).
+  - **Not configured** (default): There are no restrictions from Intune. Users have access to apps you assign, and built-in apps.
+  - **Prohibited apps**: Apps not managed by Intune that users aren't allowed to install and run. Users aren't prevented from installing a prohibited app. But if they do, it's reported to the administrator.
+  - **Approved apps**: Apps that users are allowed to install. Users must not install apps that aren't listed. Apps that are managed by Intune are automatically allowed. Users aren't prevented from installing an app that isn't on the approved list. But if they do, it's reported to the administrator.
+- **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
+- **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
+- **Publisher**: Enter the publisher of the app you want.
+- **Add**: Select to create your list of apps.
+
+You can also **Import** a CSV file with details about the app, including the URL. Use the `<app bundle ID>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the apps list in the same format.
 
 ## Connected devices
+
+### Device enrollment
 
 - **Block AirDrop**: **Block** prevents using AirDrop on the device. **Not configured** (default) allows using the AirDrop feature to exchange content with nearby devices.
 - **Block Apple Watch Auto Unlock**: **Block** prevents users from unlocking their macOS device with their Apple Watch. **Not configured** (default) allows users to unlock their macOS device with their Apple Watch.
 
 ## Cloud and storage
+
+### Device enrollment
 
 - **Block iCloud Keychain sync**: Choose **Block** to disable syncing credentials stored in the Keychain to iCloud. **Not configured** (default) allows users to sync these credentials.
 - **Block iCloud Document Sync**: **Block** prevents iCloud from syncing documents and data. **Not configured** (default) allows document and key-value synchronization to your iCloud storage space.
@@ -163,7 +173,9 @@ To configure the list, click **Add**, then specify a name of your choice, option
 
 ## Domains
 
-- **Email Domain URL**: Add one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the MacOS Mail app.
+### Device enrollment
+
+- **Email Domain URL**: **Add** one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the macOS Mail app.
 
 ## Next steps
 
