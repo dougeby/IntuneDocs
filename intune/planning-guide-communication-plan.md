@@ -54,7 +54,7 @@ Determining what information to be communicated depends on when in the Intune ro
 
 **Post enrollment wave**<br/> Communications targeting organization groups and users that have enrolled in Intune. These should provide additional resources that might be helpful to the user, and collect feedback about their experience during and after enrollment.
 
-You may find this [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit) helpful. You can use it as-is or modify for your organization.
+You may find this [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) helpful. You can use it as-is or modify for your organization.
 
 ## Communication delivery methods
 
@@ -76,8 +76,8 @@ For example, the initial Intune project kickoff communications can target the en
 
   | **Communication plan** | **July** | **August** | **September** | **October** |
 |:---:|:---:|:---:|:---:|:---:|
-| Wave 1  | All |  |  |  |                                                         
-| Kickoff meeting | First week |  |  |  |                                                         
+| Wave 1  | All |  |  |  |
+| Kickoff meeting | First week |  |  |  |
 | Wave 2 | IT | Sales and Marketing | Retail | HR, Finance, and Executives |
 | Pre-rollout Email 1 | First week | First week | First week | First week |
 | Wave 3 | IT | Sales and Marketing | Retail | HR, Finance, and Executives |

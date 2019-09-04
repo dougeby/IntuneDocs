@@ -7,7 +7,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -76,8 +76,8 @@ Alternatively, you can install the app from the Intune portal:
 
 With a client authenticated to Azure AD, the OData URL connects to the RESTful endpoint in the Data Warehouse API that exposes the data model to your reporting client. Follow these instructions to use Power BI Desktop to connect and create your own reports. You are not limited to Power BI Desktop, but can use your favorite analytic tool with the OData URL provided the client supports OAUTH2.0 authentication and the OData v4.0 standard.
 
-1. Sign in to the Azure portal and choose **Monitoring + Management** > **Intune**. You can also search resources for **Intune**.  
-2. Open the **Set up Intune Data Warehouse** blade.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Click **Set up Intune Data Warehouse** under the **Other tasks** section on the right side of the Overview blade. The **Intune Data Warehouse** blade will be displayed.
 3. Retrieve the custom feed URL from the reporting blade, for example:
     `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Open **Power BI Desktop**.

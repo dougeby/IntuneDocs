@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -112,54 +112,10 @@ By default, several settings are provided with pre-configured values and actions
 | **Max PIN attempts** | Specify the number of tries the user has to successfully enter their PIN before the configured action is taken. This policy setting format supports a positive whole number. *Actions* include: <br><ul><li>**Reset PIN** - The user must reset their PIN.</li></ul> <ul><li>**Wipe data** - The user account that is associated with the application is wiped from the device.  </li></ul></li></ul> Default value = **5** |
 | **Offline grace period** | The number of minutes that MAM apps can run offline. Specify the time (in minutes) before the access requirements for the app are rechecked. *Actions* include: <br><ul><li>**Block access (minutes)** - The number of minutes that MAM apps can run offline. Specify the time (in minutes) before the access requirements for the app are rechecked. After the configured period expires, the app blocks access to work or school data until network access is available. This policy-setting format supports a positive whole number.<br><br>Default value = **720** minutes (12 hours) </li></ul> <ul><li>**Wipe data (days)** - After this many days (defined by the admin) of running offline, the app will require the user to connect to the network and reauthenticate. If the user successfully authenticates, they can continue to access their data and the offline interval will reset.  If the user fails to authenticate, the app will perform a selective wipe of the users' account and data.  See [How to wipe only corporate data from Intune-managed apps](https://docs.microsoft.com/intune/apps-selective-wipe) for more information on what data is removed with a selective wipe. This policy setting format supports a positive whole number. <br><br> Default value = **90 days** </li></ul>  This entry can appear multiple times, with each instance supporting a different action. |
 | **Jailbroken/rooted devices** | There is no value to set for this setting. *Actions* include: <br><ul><li>**Block access** - Prevent this app from running on jailbroken or rooted devices. The user continues to be able to use this app for personal tasks, but must use a different device to access work or school data in this app.</li></ul> <ul><li>**Wipe data**  - The user account that is associated with the application is wiped from the device. </li></ul> |
-| **Min app version** | Specify a value for the minimum operating system value. *Actions* include: <br><ul><li>**Warn** - The user sees a notification if the app version on the device doesn't meet the requirement. This notification can be dismissed.</li></ul> <ul><li>**Block access** - The user is blocked from access if the app version on the device doesn't meet the requirement. </li></ul> <ul><li>**Wipe data** - The user account that is associated with the application is wiped from the device. </li></ul> </li></ul>   As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, *Outlook version policy*).<br><br> This entry can appear multiple times, with each instance supporting a different action.<br><br> This policy setting format supports either major.minor, major.minor.build, major.minor.build.revision.<br><br> **Note:** *Requires app to have Intune SDK version 7.0.1 or above.*<br><br> Additionally, you can configure **where** your end users can get an updated version of a line-of-business (LOB) app. End users will see this in the **min app version** conditional launch dialog, which will prompt end users to update to a minimum version of the LOB app. On iOS, this feature requires the app to be integrated (or wrapped using the wrapping tool) with the Intune SDK for iOS v. 10.0.7 or above. To configure where an end user should update a LOB app, the app needs a managed [app configuration policy](https://docs.microsoft.com/en-us/intune/app-configuration-policies-managed-app) sent to it with the key, `com.microsoft.intune.myappstore`. The value sent will define which store the end user will download the app from. If the app is deployed via the Company Portal, the value must be `CompanyPortal`. For any other store, you must enter a complete URL. |
+| **Min app version** | Specify a value for the minimum operating system value. *Actions* include: <br><ul><li>**Warn** - The user sees a notification if the app version on the device doesn't meet the requirement. This notification can be dismissed.</li></ul> <ul><li>**Block access** - The user is blocked from access if the app version on the device doesn't meet the requirement. </li></ul> <ul><li>**Wipe data** - The user account that is associated with the application is wiped from the device. </li></ul> </li></ul>   As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, *Outlook version policy*).<br><br> This entry can appear multiple times, with each instance supporting a different action.<br><br> This policy setting format supports either major.minor, major.minor.build, major.minor.build.revision.<br><br> **Note:** *Requires app to have Intune SDK version 7.0.1 or above.*<br><br> Additionally, you can configure **where** your end users can get an updated version of a line-of-business (LOB) app. End users will see this in the **min app version** conditional launch dialog, which will prompt end users to update to a minimum version of the LOB app. On iOS, this feature requires the app to be integrated (or wrapped using the wrapping tool) with the Intune SDK for iOS v. 10.0.7 or above. To configure where an end user should update a LOB app, the app needs a managed [app configuration policy](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) sent to it with the key, `com.microsoft.intune.myappstore`. The value sent will define which store the end user will download the app from. If the app is deployed via the Company Portal, the value must be `CompanyPortal`. For any other store, you must enter a complete URL. |
 | **Min SDK version** | Specify a minimum value for the Intune SDK version. *Actions* include: <br><ul><li>**Block access** - The user is blocked from access if the app’s Intune app protection policy SDK version doesn't meet the requirement. <br> <br> To learn more about the Intune app protection policy SDK, see [Intune App SDK overview](app-sdk.md).</li></ul> <ul><li>**Wipe data** - The user account that is associated with the application is wiped from the device. </li></ul>  </li></ul> As apps often have distinct versioning schemes between them, create a policy with one minimum app version targeting one app (for example, *Outlook version policy*). <br><br> This entry can appear multiple times, with each instance supporting a different action.|
 | **Device model(s)** | Specify a device model that is required to use this app. *Actions* include: <br><ul><li>**Allow specified (Block non-specified)** - Only devices that match the specified device model can use the app. All other device models are blocked. </li></ul> <ul><li>**Allow specified (Wipe non-specified)** - The user account that is associated with the application is wiped from the device.</li></ul>  For more information on using this setting, see [Conditional Launch actions](app-protection-policies-access-actions.md#ios-policy-settings). |
 
-
-
-## Add-ins for Outlook app
-
-Outlook recently brought add-ins to Outlook for iOS, which let you integrate popular apps with the email client. Add-ins for Outlook are available on the web, Windows, Mac, and Outlook for iOS. The Intune SDK and Intune app protection policies do not include support for managing add-ins for Outlook, but there are other ways to limit their use. Since add-ins are managed via Microsoft Exchange, users will be able to share data and messages across Outlook and unmanaged add-in applications unless add-ins are turned off for the user by their Exchange.
-
-If you want to stop your end users from accessing and installing Outlook add-ins (this affects all Outlook clients), make sure you have the following changes to roles in the Exchange admin center:
-
-- To prevent users from installing Office Store add-ins, remove the My Marketplace role from them.
-- To prevent users from side loading add-ins, remove the My Custom Apps role from them.
-- To prevent users from installing all add-ins, remove both, My Custom Apps and My Marketplace roles from them.
-
-These instructions apply to Office 365, Exchange 2016, Exchange 2013 across Outlook on the web, Windows, Mac, and mobile.
-
-- Learn more about [add-ins for Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
-- Learn more about [how to specify the administrators and users who can install and manage add-ins for Outlook app](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
-
-## LinkedIn account connections for Microsoft apps
-
-LinkedIn account connections allow users to see public LinkedIn profile information within certain Microsoft apps. By default, your users can choose to connect their LinkedIn and Microsoft work or school accounts to see additional LinkedIn profile information. 
-
-> [!NOTE]
-> LinkedIn integration is currently unavailable for United States Government customers and for organizations with Exchange Online mailboxes hosted in Australia, Canada, China, France, Germany, India, South Korea, United Kingdom, Japan, and South Africa.
-
-The Intune SDK and Intune app protection policies don't include support for managing LinkedIn account connections, but there are other ways to manage them. You can disable LinkedIn account connections for your entire organization, or you can enable LinkedIn account connections for selected user groups in your organization. These settings affect LinkedIn connections across Office 365 apps on all platforms (web, mobile, and desktop). You can:
-
-- Enable or disable LinkedIn account connections for your tenant in the Azure portal. 
-- Enable or disable LinkedIn account connections for your organization's Office 2016 apps using Group Policy.
-
-If LinkedIn integration is enabled for your tenant, when users in your organization connect their LinkedIn and Microsoft work or school accounts, they have two options: 
-
-- They can give permission to share data between both accounts. This means that they give permission for their LinkedIn account to share data with their Microsoft work or school account, as well as their Microsoft work or school account to share data with their LinkedIn account. Data that is shared with LinkedIn leaves the online services. 
-- They can give permission to share data only from their LinkedIn account to their Microsoft work and school account
-
-If a user consents to sharing data between accounts, as with Office add-ins, LinkedIn integration uses existing Microsoft Graph APIs. LinkedIn integration uses only a subset of the APIs available to Office add-ins and supports various exclusions.
-
-
-|Microsoft Graph permissions  |Description  |
-|---------|---------|
-|Read permissions for [People](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)     |Allows the app to read a scored list of people relevant to the signed-in user. The list can include local contacts, contacts from social networking or your organization's directory, and people from recent communications (such as email and Skype).         |
-|Read permissions for [Calendars](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)     |Allows the app to read events in user calendars. Includes the meetings in signed-in user calendars, their times, locations, and attendees.         |
-|Read permissions for [User Profile](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)     |Allows users to sign in to the app, and allows the app to read the profile of signed-in users. It also allows the app to read basic company information for signed-in users.         |
-|Subscriptions     |This scope isn't available and not yet in use. It includes subscriptions provided by the user's organization to Microsoft apps and services, such as Office 365.         |
-|Insights     |This scope isn't available and not yet in use. It includes the interests associated with the signed-in user's account based on their use of Microsoft services.         |
 
 ### Learn more
 

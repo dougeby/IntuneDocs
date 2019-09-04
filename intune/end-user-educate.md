@@ -61,7 +61,7 @@ Read the following list of tips to make your organization's Intune deployment ea
 
 * __Be accessible.__ Tell users where they can seek help for their device problems. When you [customize the Company Portal](company-portal-customize.md), be sure to include your IT administrator's contact information.
 
-* __Be personal.__ Use this customizable [Intune Adoption Kit](http://aka.ms/IntuneAdoptionKit) to create your own enrollment instructions for your users.
+* __Be personal.__ Provide instructions that are specific to your organization's deployment. This action demonstrates to users that you care about their experience. Use this customizable [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) to create your own enrollment instructions for your users.
 
 * __Find different ways to communicate.__ Users have [different learning styles](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) and preferred ways to consume information. For visual learners, Intune provides [video versions of how to enroll various device types](https://channel9.msdn.com/Series/IntuneEnrollment) on Channel 9. Videos can be embedded directly into your own [SharePoint site](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581). You can also download local copies of the video or audio track.
 
@@ -81,7 +81,7 @@ Read the following list of tips to make your organization's Intune deployment ea
 
 * __Be forthcoming.__ Be clear about what you're going to manage on user devices. Tell users what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and believes that this philosophy can greatly increase user satisfaction with Intune.
 
->[!Note]
+> [!Note]
 > Transparency, wherever possible, is fundamental to the success of your deployment.
 
 It's important to combine trust with well-crafted compliance policies. Users should know that even if you *could* look at certain types of personal data, that you don't *want* to. Help them understand that there is liability that you could incur for invading their privacy. Creating a statement with your legal and HR departments may further alleviate employee concerns about privacy.

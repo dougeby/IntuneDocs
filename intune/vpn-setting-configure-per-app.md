@@ -87,7 +87,7 @@ The trusted root certificate profile allows the device to automatically trust th
 
 To configure and assign the client authentication certificate, see one of the following articles:
 
-- [Configure and manage SCEP certificates with Intune](certificates-scep-configure.md)
+- [Configure infrastructure to support SCEP with Intune](certificates-scep-configure.md)
 - [Configure and manage PKCS certificates with Intune](certficates-pfx-configure.md)
 
 Be sure to configure the certificate for client authentication. You can set this directly in SCEP certificate profiles (**Extended key usage** list > **Client authentication**). For PKCS, set client authentication in the certificate template in the certificate authority (CA).
@@ -111,7 +111,7 @@ The VPN profile contains the SCEP or PKCS certificate with the client credential
     - **Authentication certificate**: Select an existing SCEP or PKCS certificate > **OK**.      
     - **Split tunneling**: Select **Disable** to force all traffic to use the VPN tunnel when the VPN connection is active. 
 
-      ![In a per-app VPN profile, enter a connection, IP address or FQDN, authentication method, and split tunning in Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
+      ![In a per-app VPN profile, enter a connection, IP address or FQDN, authentication method, and split tunneling in Microsoft Intune](./media/vpn-per-app-create-vpn-profile.png)
 
     For information on the other settings, see [iOS VPN settings](vpn-settings-ios.md).
 

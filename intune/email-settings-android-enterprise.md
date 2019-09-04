@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 08/07/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -20,12 +20,15 @@ ms.technology:
 #ms.devlang:
 ms.suite: ems
 search.appverid: MET150
+ms.reviewer: maholdaa
 #ms.tgt_pltfrm:
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ---
 
 # Android Enterprise device settings to configure email, authentication, and synchronization in Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 This article lists and describes the different email settings you can control on Android Enterprise devices. As part of your mobile device management (MDM) solution, use these settings to configure an email server, use SSL to encrypt emails, and more.
 
@@ -35,7 +38,7 @@ To learn more about email profiles in Intune, see [configure email settings](ema
 
 ## Before you begin
 
-[Create a device configuration profile](email-settings-configure.md#create-a-device-profile), and choose the work profile.
+Create a [device configuration profile](email-settings-configure.md#create-a-device-profile) (choose the work profile), or create an [app configuration policy](app-configuration-policies-use-android.md).
 
 ## Android Enterprise
 

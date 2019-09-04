@@ -5,8 +5,8 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
-ms.topic: article
+ms.date: 08/26/2019
+ms.topic: conceptual 
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology:
@@ -55,22 +55,27 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 - **Root certificate**:  
   An exported copy of your root certificate from your Enterprise CA.
 
-- **Intune Certificate Connector** (also called the *NDES Certificate Connector*):  
+- **Microsoft Intune Certificate Connector** (also called the *NDES Certificate Connector*):  
   In the Intune portal, go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install the connector for PKCS #12*. Use the download link in the portal to start download of the certificate connector installer **NDESConnectorSetup.exe**.  
+
+  Intune supports up to 100 instances of this connector per tenant, with each instance on a separate Windows server. You can install an instance of this connector on the same server as an instance of the PFX Certificate Connector for Microsoft Intune. When you use multiple connectors the connector infrastructure supports high availability and load balancing as any available connector instance can process your PKCS certificate requests. 
 
   This connector processes PKCS certificate requests used for authentication or S/MIME email signing.
 
-  The NDES certificate connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
+  The Microsoft Intune Certificate Connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
 - **PFX Certificate Connector for Microsoft Intune**:  
-   If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+  If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+
+  Each Intune tenant supports a single instance of this connector. You can install this connector on the same server as an instance of the Microsoft Intune Certificate connector.
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
 
   This connector can automatically update itself when new versions become available. To use the update capability, you must:
-  - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.
-  - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.  
+  - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.  
+  - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.   
 
+  For more information about all the network endpoints that the connector must be able to access, see [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
 
 - **Windows Server**:  
   You use a Windows Server to host:
@@ -89,7 +94,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
  
 2. Go to **Start** > **Run**, and then enter **Cmd** to open command prompt. 
     
-3. Specify **certutil  -ca.cert ca_name.cer** to export the Root certificate as a file named *ca_name.cer*.
+3. Specify **certutil -ca.cert ca_name.cer** to export the Root certificate as a file named *ca_name.cer*.
 
 
 
@@ -142,7 +147,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 2. Select **Device configuration** > **Certification Connectors** > **Add**.
 3. Download and save the connector file to a location you can access from the server where you're going to install the connector.
 
-    ![NDES connector download](media/certificates-pfx-configure/download-ndes-connector.png)
+    ![Microsoft Intune Certificate Connector download](media/certificates-pfx-configure/download-ndes-connector.png)
  
 
 4. After the download completes, sign in to the server. Then:
@@ -151,7 +156,7 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
     2. Run the installer (NDESConnectorSetup.exe), and accept the default location. It installs the connector to `\Program Files\Microsoft Intune\NDESConnectorUI`. In Installer Options, select **PFX Distribution**. Continue and complete the installation.
     3. By default, the connector service runs under the local system account. If a proxy is required to access the internet, confirm that the local service account can access the proxy settings on the server.
 
-5. The NDES Connector opens the **Enrollment** tab. To enable the connection to Intune, **Sign In**, and enter an account with global administrative permissions.
+5. The Microsoft Intune Certificate Connector opens the **Enrollment** tab. To enable the connection to Intune, **Sign In**, and enter an account with global administrative permissions.
 6. On the **Advanced** tab, it's recommended to leave **Use this computer's SYSTEM account (default)** selected.
 7. **Apply** > **Close**
 8. Go back to the Intune portal (**Intune** > **Device Configuration** > **Certification Connectors**). After a few moments, a green check mark is shown, and the **Connection status** is **Active**. Your connector server can now communicate with Intune.
@@ -221,6 +226,9 @@ To authenticate a device with VPN, WiFi, or other resources, a device needs a ro
 4. Select **OK** > **Create** to save your profile.
 5. To assign the new profile to one or more devices, see [assign Microsoft Intune device profiles](device-profile-assign.md).
 
+   > [!NOTE]
+   > On devices with an Android Enterprise profile, certificates installed using a PKCS certificate profile are not visible on the device. To confirm successful certificate deployment, check the status of the profile in the Intune console.
+
 ## Create a PKCS imported certificate profile
 
 You can import certificates previously issued to a specific user from any CA in to Intune. Imported certificates are installed on each device that a user enrolls. S/MIME email encryption is the most common scenario for importing existing PFX certificates in to Intune. A user may have many certificates to encrypt email. The private keys of those certificates must exist on all of a user's devices so they can decrypt previously encrypted email.
@@ -280,6 +288,5 @@ The *PFX Certificates Connector for Microsoft Intune* [supports automatic update
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-[Use SCEP certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Digicert PKI manager web service](certificates-digicert-configure.md).
-
+[Use SCEP for certificates](certificates-scep-configure.md), or [issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md).
 

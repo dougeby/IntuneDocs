@@ -8,7 +8,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -36,16 +36,19 @@ Download:  [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit)
 
 ## Email templates
 
-We recommend the following email communication plan. We’ve provided templates for you to adapt for your communication plan:
+We recommend the following email communication plan. You may edit the text to align to your users' operating system and environment. We’ve provided templates for you to adapt for your communication plan:
 
 - **Email #1**: Explain the benefits, expectations, and schedule. Take this opportunity to showcase any other new services whose access will be granted on devices managed by Intune.
 
-- **Email #2**: Announce that services are now ready for access through Intune. Tell users to enroll now.  Give users a timeline before their access is affected. Remind users of benefits and strategic reasons for migration.
+- **Email #2**: Announce that services are now ready for access through Intune. Tell users to enroll now. Give users a timeline before their access is affected. Remind users of benefits and strategic reasons for migration.
+
 After a certain period, you can begin enforcing compliance through Conditional Access policies and use it as criteria to access corporate data, as explained in [Drive end-user adoption with Conditional Access](migration-guide-drive-adoption.md).
 
 ## Intune Enrollment Guide
 
-This PDF attachment can be provided to your users as-is, or you may customize the Word version to include your internal resources and contact information.
+We provide both PDF and Word versions of the Intune Enrollment Guide. You can provide the PDF to your users as-is, or customize the Word version to include your internal resources and contact information. You are encouraged to edit the Enrollment Guide to reflect the appropriate operating systems that are applicable to your users' environment.
+
+The End User Enrollment Guide includes links to more detailed instructions associated with each operating system, and the videos mentioned below.
 
 ## Instructional videos
 

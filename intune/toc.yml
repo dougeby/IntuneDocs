@@ -510,8 +510,12 @@
       href: certificates-configure.md
       items:
       - name: SCEP
-        href: certificates-scep-configure.md
-        displayName: ksp        
+        items:
+        - name: SCEP infrastructure
+          href: certificates-scep-configure.md
+          displayName: ksp   
+        - name: SCEP certificate profiles
+          href: certificates-profile-scep.md
       - name: PKCS
         href: certficates-pfx-configure.md
         displayName: ksp
@@ -541,7 +545,8 @@
     items:
     - name: What is Intune app management?
       href: app-management.md    
-    - name: Add apps
+      displayName: mam-we
+    - name: Add apps overview
       href: apps-add.md
       displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
       items:
@@ -645,7 +650,7 @@
         href: apps-selective-wipe.md
       - name: Use app protection policies
         items:
-        - name: Understand app protection policies
+        - name: App protection policies overview
           href: app-protection-policy.md
           displayName: app; protection; policy
         - name: Create app protection policies
@@ -664,7 +669,9 @@
         - name: Validate app protection policies
           href: app-protection-policies-validate.md
         - name: App protection policy delivery
-          href: app-protection-policy-delivery.md          
+          href: app-protection-policy-delivery.md
+        - name: Protecting app extensions
+          href: app-protection-policy-extensions.md                    
         - name: Monitor app protection user status
           href: app-protection-policies-monitor.md
         - name: Get ready for WIP app protection policies
@@ -731,6 +738,8 @@
         href: troubleshoot-email-profiles-in-microsoft-intune.md
       - name: Troubleshoot Conditional Access
         href: troubleshoot-conditional-access.md
+      - name: Troubleshoot certificate connector
+        href: troubleshoot-certificate-connector-events.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
     - name: Get support
@@ -750,7 +759,7 @@
         - name: Email
           href: email-settings-android.md
         - name: VPN
-          href: vpn-settings-android.md#android-vpn-settings
+          href: vpn-settings-android.md
         - name: Wi-Fi
           href: wi-fi-settings-android.md
         - name: Custom
@@ -769,7 +778,7 @@
         - name: Email
           href: email-settings-android-enterprise.md
         - name: VPN
-          href: vpn-settings-android.md#android-enterprise-vpn-settings
+          href: vpn-settings-android-enterprise.md
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Custom

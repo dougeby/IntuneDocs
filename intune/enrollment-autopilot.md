@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 # Enroll Windows devices in Intune by using the Windows Autopilot  
 The Windows Autopilot simplifies enrolling devices in Intune. Building and maintaining customized operating system images is a time-consuming process. You might also spend time applying these custom operating system images to new devices to prepare them for use before giving them to your end users. With Microsoft Intune and Autopilot, you can give new devices to your end users without the need to build, maintain, and apply custom operating system images to the devices. When you use Intune to manage Autopilot devices, you can manage policies, profiles, apps, and more after they're enrolled. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-There are four types of Autopilot deployment: [Self Deploying Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) for kiosks, digital signage, or a shared device, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready, [Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) enables you to easily deploy the latest version of Windows 10 to your existing devices, and [User Driven Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) for traditional users. 
+There are four types of Autopilot deployment: [Self Deploying Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) for kiosks, digital signage, or a shared device, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) enables partners or IT staff to pre-provision a Windows 10 PC so that it is fully configured and business-ready, [Autopilot for existing devices](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) enables you to easily deploy the latest version of Windows 10 to your existing devices, and [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) for traditional users. 
 
 
 ## Prerequisites
@@ -54,12 +54,15 @@ You can add Windows Autopilot devices by importing a CSV file with their informa
 
     ![Screenshot of Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The CSV file should list the serial numbers, Windows product IDs, hardware hashes, and optional group tags. You can have up to 500 rows in the list. Use the header and line format shown below:
+2. Under **Add Windows Autopilot devices**, browse to a CSV file listing the devices that you want to add. The CSV file should list the serial numbers, Windows product IDs, hardware hashes, optional group tags, and optional assigned user. You can have up to 500 rows in the list. Use the header and line format shown below:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
-    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Screenshot of Adding Windows Autopilot devices](media/enrollment-autopilot/autopilot-import-device2.png)
+
+    >[!IMPORTANT]
+    > When you use CSV upload to assign a user, make sure that you assign valid UPNs. If you assign an invalid UPN (incorrect username), your device may be inaccessible until you remove the invalid assignment. During CSV upload the only validation we perform on the **Assigned User** column is to check that the domain name is valid. We're unable to perform individual UPN validation to ensure that you're assigning an existing or correct user.
 
 3. Choose **Import** to start importing the device information. Importing can take several minutes.
 
