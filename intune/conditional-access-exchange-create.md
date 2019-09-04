@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -20,7 +20,7 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer:
+ms.reviewer: stama
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -81,41 +81,47 @@ The native **Mail** application on Windows 8.1 and later (when enrolled into MDM
 
 ## Configure Exchange on-premises access
 
+Before you can use the following procedure to set up Exchange on-premises access control, you must install and configure at least one [Intune on-premises Exchange connector](exchange-connector-install.md) for Exchange on-premises.
+
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)
 
 2. Go to **Exchange access**, and then select **Exchange On-premises access**. 
 
 3. On the **Exchange on-premises access** pane, choose **Yes** to *Enable Exchange on-premises access control*.
 
-4. Choose **On-premises access**. The **On-premises access** pane shows the status of the Exchange on-premises Connector.
+4. Under **Assignment**, choose **Select groups to include**, and then select one or more groups to configure access. 
 
-5. Under **Manage**, choose **Exchange on-premises access**.
+   Members of the groups you select have the Conditional Access policy for Exchange on-premises access applied to them. Users who receive this policy must enroll their devices in Intune and be compliant with the compliance profiles before they can access Exchange on-premises.
 
-6. On the **Exchange on-premises access** pane, choose **Yes** to enable Exchange on-premises access control.
+5. To exclude groups, choose **Select groups to exclude**, and then select one or more groups that are exempt from requirements to enroll devices and be compliant with the compliance profiles before accessing Exchange on-premises. 
 
-   > [!NOTE]
-   > The option to enable access is disabled until after you [install and configure at least one Intune on-premises Exchange connector](exchange-connector-install.md) for Exchange on-premises.  
+6. Next, configure settings for the Intune on-premises Exchange connector.  Under **Setup** on the **Exchange access pane**, select **Exchange ActiveSync on-premises connector** and then select the connector for the Exchange organization that you want to configure.
 
-7. Under **Assignment**, choose **Groups Included**.  Use the security user group that should have Conditional Access applied to it. This action would require the users to enroll their devices in Intune and be compliant with the compliance profiles.
-
-8. If you want to exclude certain groups of users, you can do so by choosing **Groups Excluded** and selecting a user group that you want to be exempt from requiring device enrollment and compliance.
-
-9. Under **Settings**, choose **User notifications** to modify the default email message. This message is sent to users if their device isn't compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
+7. Under **Settings**, choose **User notifications** to modify the default email message that’s sent to users if their device isn't compliant and they want to access Exchange on-premises. The message template uses Markup language.  You can also see the preview of how the message looks as you type.
    > [!TIP]
    > To learn more about Markup language see this Wikipedia [article](https://en.wikipedia.org/wiki/Markup_language).
+ 
+   Select **OK** to save your edits.
 
-10. On the **Advanced Exchange Active Sync access settings** pane, set the global default rule for access from devices that are not managed by Intune, and for platform-level rules as described in the next two steps. To get to the advanced settings pane, on the *Exchange access - Exchange on-premises access* view, select *Exchange ActiveSync - on-premises connector*.
+8. Next, select **Advanced Exchange Active Sync access settings** to open the *Advanced Exchange ActiveSync access settings* pane where you configure device access rules:  
 
-11. For a device that is not affected by Conditional Access or other rules, you can choose to allow it to access Exchange, or block it.
+   - For **Unmanaged device access**, set the global default rule for access from devices that are not affected by Conditional Access or other rules:
 
-    - When you set this to allow access, all devices are able to access Exchange on-premises immediately.  Devices that belong to the users in the **Groups Included**, are blocked if they are subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
-    - When you set this to block access, all devices are immediately blocked from accessing Exchange on-premises initially.  Devices that belong to users in the **Groups Included** get access once the device is enrolled in Intune and is evaluated as compliant. On Android devices that do not run Samsung Knox standard is always blocked as they do not support this setting.
+     - **Allow access** - All devices can access Exchange on-premises immediately. Devices that belong to the users in the groups you configured as included in the previous procedure are blocked if they're subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
 
-12. Under **Device platform exceptions**, choose **Add** to specify the platforms. If the **unmanaged device access** setting is set to **blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block. Choose **Ok** to save the settings.
+     - **Block access** and **Quarantine** – All devices are immediately blocked from accessing Exchange on-premises initially. Devices that belong to users in the groups you configured as included in the previous procedure get access after the device enrolls in Intune and is evaluated as compliant. 
 
-13. On the **On-premises** pane, click **Save** to save the Exchange Conditional Access policy.
+       Android devices that *do not* run Samsung Knox standard don’t support this setting and are always blocked.
 
-Next step is to create a compliance policy and assign it to the users for Intune to evaluate their mobile devices, See [Get started with device compliance](device-compliance-get-started.md)
+   -  For **Device platform exceptions**, select **Add**, and then specify platform details as needed for your environment. 
+   
+      If the **Unmanaged device access** setting is set to **Blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block them.  
+   
+   Select **OK** to save your edits.
+
+9. Select **Save** to save the Exchange Conditional Access policy.
+
+Next, create a compliance policy and assign it to the users for Intune to evaluate their mobile devices, See [Get started with device compliance](device-compliance-get-started.md).
 
 ## See also
 
