@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 08/30/2019
+  ms.date: 09/04/2019
 
 highlightedContent:
   items:
@@ -73,6 +73,9 @@ conceptualContent:
         - url: android-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Android devices
+      footerLink:
+        text: See more
+        url: ./enrollment/index.yml
     - title: Remotely manage devices
       links:
         - url: device-management.md
@@ -123,6 +126,9 @@ conceptualContent:
         - url: mobile-threat-defense.md
           itemType: concept
           text: Mobile Threat Defense integration with Intune
+      footerLink:
+        text: See more
+        url: ./protect/index.yml
     - title: Manage apps
       links:
         - url: app-management.md
