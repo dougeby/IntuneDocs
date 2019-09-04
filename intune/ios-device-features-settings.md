@@ -169,6 +169,8 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
+### Automated device enrollment
+
 Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
 - **Add**: Add notifications for apps:
@@ -194,7 +196,7 @@ Select **OK** to save your changes.
 
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
 
-This feature supports supervised devices running iOS 9.3 and later.
+This feature supports iOS 9.3 and later.
 
 ### Automated device enrollment (supervised)
 

@@ -182,7 +182,7 @@ This feature supports:
 
 - Windows 10 and later
 
-Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk).
 
 ## OEMConfig
 
