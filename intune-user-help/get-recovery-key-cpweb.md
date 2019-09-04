@@ -38,12 +38,7 @@ This option is only available for devices that were encrypted by your organizati
 2. Select the encrypted macOS device.  
 3. Select **Get recovery key**.  
 
-
-    ![Screenshot of Company Portal website, highlighting Get recovery key section.](./media/1907-recovery-cpweb-intune.PNG)  
-
-    If you don't see this option, go to the top of the page and select **More (…)** > **Get recovery key**.  
-
-    ![Screenshot of Company Portal website, highlighting the More menu where Get recovery option will be.](./media/1907-recovery2-cpweb-intune.PNG)   
+    ![Screenshot of Company Portal website, highlighting Get recovery key section.](./media/1907-recovery2-cpweb-intune.PNG)  
     
 1. Your recovery key will appear. For security reasons, the key will disappear after five minutes. To see the key again, select **Get recovery key**.  
 
