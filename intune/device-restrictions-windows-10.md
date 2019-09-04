@@ -313,7 +313,7 @@ This device restrictions profile is directly related to the kiosk profile you cr
 - **Message when opening sites in Internet Explorer**: Use this setting to configure Microsoft Edge to show a notification before a site opens in Internet Explorer 11. Your options:
   - **Don't show message**: The OS default behavior is used, which may not show a message.
   - **Show message that site is opened in Internet Explorer 11**: Show the message when opening sites in IE. Sites open in IE. 
-  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in Edge. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
+  - **Show message with option to open sites in Microsoft Edge**: Show the message when opening sites in Microsoft Edge. The message includes a **Keep going in Microsoft Edge** link so users can choose Microsoft Edge instead of IE.
 
   > [!IMPORTANT]
   > This setting requires you to use the **Enterprise mode site list location** setting, the **Send intranet traffic to Internet Explorer** setting, or both settings.
