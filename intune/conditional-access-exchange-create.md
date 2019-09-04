@@ -49,7 +49,7 @@ Before you can configure Conditional Access, verify the following configurations
 
 - The connector for an on-premises Exchange organization can install on any machine as long as that machine can communicate with the Exchange server.
 
-- The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer due to the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
+- The connector supports **Exchange CAS environment**. Intune supports installing the connector on the Exchange CAS server directly, but we recommend you install it on a separate computer because of the additional load the connector puts on the server. When configuring the connector, you must set it up to communicate to one of the Exchange CAS servers.
 
 - **Exchange ActiveSync** must be configured with certificate-based authentication, or user credential entry.
 
@@ -62,8 +62,8 @@ Before you can configure Conditional Access, verify the following configurations
 - **Compliant** with device compliance policies deployed to that device.
 
 - If the device doesn't meet Conditional Access settings, the user is presented with one of the following messages when they sign in:
-  - If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message is displayed with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
-  - If the device is not compliant, a message is displayed that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
+  - If the device isn't enrolled with Intune, or isn't registered in Azure Active Directory, a message displays with instructions about how to install the Company Portal app, enroll the device, and activate email. This process also associates the device's Exchange ActiveSync ID with the device record in Azure Active Directory.
+  - If the device isn't compliant, a message displays that directs the user to the Intune Company Portal website, or the Company Portal app where they can find information about the problem and how to remediate it.
 
 ### Support for mobile devices
 
@@ -107,7 +107,7 @@ Before you can use the following procedure to set up Exchange on-premises access
 
    - For **Unmanaged device access**, set the global default rule for access from devices that are not affected by Conditional Access or other rules:
 
-     - **Allow access** - All devices can access Exchange on-premises immediately. Devices that belong to the users in the groups you configured as included in the previous procedure are blocked if they're subsequently evaluated as not compliant with the compliant policies or not enrolled in Intune.
+     - **Allow access** - All devices can access Exchange on-premises immediately. Devices that belong to the users in the groups you configured as included in the previous procedure are blocked if they're later evaluated as not compliant with the compliant policies or not enrolled in Intune.
 
      - **Block access** and **Quarantine** – All devices are immediately blocked from accessing Exchange on-premises initially. Devices that belong to users in the groups you configured as included in the previous procedure get access after the device enrolls in Intune and is evaluated as compliant. 
 
@@ -115,7 +115,7 @@ Before you can use the following procedure to set up Exchange on-premises access
 
    -  For **Device platform exceptions**, select **Add**, and then specify platform details as needed for your environment. 
    
-      If the **Unmanaged device access** setting is set to **Blocked**, devices that are enrolled and compliant are allowed even if there is a platform exception to block them.  
+      If the **Unmanaged device access** setting is set to **Blocked**, devices that are enrolled and compliant are allowed even if there's a platform exception to block them.  
    
    Select **OK** to save your edits.
 
