@@ -3,8 +3,6 @@
 - name: Overview
   expanded: true
   items:
-  - name: Protect device data
-    items:
     - name: Device protection overview
       href: device-protect.md
       displayName: compliant; noncompliant; mfa 
