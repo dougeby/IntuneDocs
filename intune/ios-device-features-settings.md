@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,17 +34,21 @@ Intune includes some built-in settings to allow iOS users to use different Apple
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune through device enrollment.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-- Supervised devices enrolled in Intune using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 This article lists these settings, and describes what each setting does.
 
 ## Before you begin
 
 [Create an iOS device configuration profile](device-features-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User enrollment
+> - Device enrollment
+> - Automated device enrollment (supervised)
+> - All enrollment types, which includes user enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## AirPrint
 
@@ -165,7 +169,7 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
-### Automated device enrollment
+### Automated device enrollment (supervised)
 
 Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
@@ -216,7 +220,7 @@ To use single sign-on, be sure you have:
 
 ![Single Sign On pane](./media/sso-blade.png)
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Username attribute from AAD**: Intune looks for this attribute for each user in Azure AD. Intune then populates the respective field (such as UPN) before generating the XML that gets installed on the device. Your options:
 

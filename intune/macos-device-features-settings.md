@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -40,15 +40,19 @@ As part of your mobile device management (MDM) solution, use these settings to c
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune through device enrollment.
-- Enrolled in Intune with user approval.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 ## Before you begin
 
 [Create a macOS device configuration profile](device-features-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User approved enrollment
+> - Device enrollment
+> - Automated device enrollment
+> - All enrollment types, which includes user approved enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## AirPrint
 
