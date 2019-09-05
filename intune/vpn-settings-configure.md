@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -81,7 +81,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
       - **Android**
       - **Android Enterprise** > **Device owner only**
       - **Android Enterprise** > **Work profile only**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows Phone 8.1**
       - **Windows 8.1 and later**
@@ -93,7 +93,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 
     - [Android settings](vpn-settings-android.md)
     - [Android Enterprise settings](vpn-settings-android-enterprise.md)
-    - [iOS settings](vpn-settings-ios.md)
+    - [iOS/iPadOS settings](vpn-settings-ios.md)
     - [macOS settings](vpn-settings-macos.md)
     - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
     - [Windows 8.1 settings](vpn-settings-windows-8-1.md)

@@ -8,7 +8,7 @@ author: MandiOhlinger
 
 ms.author: mandia
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -63,7 +63,7 @@ This feature supports:
 
 - Android
 - Android Enterprise
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
@@ -77,7 +77,7 @@ This feature supports:
 
 - Android
 - Android Enterprise
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows Phone 8.1
 
@@ -97,7 +97,7 @@ This feature supports:
 
 This feature supports:
 
-- iOS 
+- iOS/iPadOS
 - macOS
 
 ## Device restrictions
@@ -108,7 +108,7 @@ This feature supports:
 
 - Android
 - Android enterprise
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 10 and later
 - Windows 10 Team
@@ -135,7 +135,7 @@ This feature supports:
 
 - Android
 - Android Enterprise
-- iOS
+- iOS/iPadOS
 - Windows Phone 8.1
 - Windows 10 and later
 
@@ -182,7 +182,7 @@ This feature supports:
 
 - Windows 10 and later
 
-Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk-supervised-only).
+Kiosk settings also available as device restrictions for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [ios](device-restrictions-ios.md#kiosk).
 
 ## OEMConfig
 
@@ -221,7 +221,7 @@ For update policies on Windows devices, see [Delivery optimization](delivery-opt
 
 This feature supports:
 
-- iOS
+- iOS/iPadOS
 
 ## VPN
 
@@ -233,7 +233,7 @@ This feature supports:
 
 - Android
 - Android Enterprise
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
@@ -247,7 +247,7 @@ This feature supports:
 
 - Android
 - Android Enterprise
-- iOS
+- iOS/iPadOS
 - macOS
 - Windows 8.1 (import only)
 - Windows 10 and later
