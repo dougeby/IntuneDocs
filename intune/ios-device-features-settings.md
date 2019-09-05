@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -26,7 +26,9 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# iOS device settings to use common iOS features in Intune
+# iOS and iPadOS device settings to use common iOS features in Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune includes some built-in settings to allow iOS users to use different Apple features on their devices. For example, administrators can control how iOS users use AirPrint printers, add apps and folders to the dock and pages on the home screen, show app notifications, show asset tag details on the lock screen, use single sign-on authentication, and authenticate users with certificates.
 
@@ -36,18 +38,31 @@ This article lists these settings, and describes what each setting does.
 
 ## Before you begin
 
-[Create an iOS device configuration profile](device-features-configure.md#create-a-device-profile).
+[Create an iOS device configuration profile](device-features-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User enrollment
+> - Device enrollment
+> - Automated device enrollment (supervised)
+> - All enrollment types, which includes user enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## AirPrint
+
+### All enrollment types
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. Get the IP address and path (in this article) provides more details.
 - **Path**: The path is typically `ipp/print` for printers on your network. Get the IP address and path (in this article) provides more details.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
+To add AirPrint servers, you can:
 
-Select **OK** to save your list.
+- **Add** adds the AirPrint server to the list. Many AirPrint servers can be added.
+- **Import** a comma-separated file (.csv) with this information. Or, **Export** to create a list of the AirPrint servers you added.
 
 ### Get server IP address, resource path, and port
 
@@ -68,6 +83,8 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 These settings configure the app layout and folders on the dock and home screens of iOS devices. To use this feature, iOS devices must be in supervised mode and run iOS 9.3 or later.
 
+### Automated device enrollment (supervised)
+
 ### Dock
 
 Use the **Dock** settings to add up to six items or folders to the dock of the iOS screen. Many devices support fewer items. For example, iPhone devices support up to four items. In this case, only the first four items you add are shown on the device.
@@ -82,8 +99,6 @@ You can add up to **six** items (apps and folders combined) for the device dock.
     - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
     - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-    Select **OK** to save your changes.
-
   - **Folder**: Choose this option to add a folder to the dock on the screen.
 
     Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -96,8 +111,6 @@ You can add up to **six** items (apps and folders combined) for the device dock.
       - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
       You can add up to **20** pages for the device dock.
-
-    Select **OK** to save your changes.
 
 > [!NOTE]
 > When you add icons using the Dock settings, the icons on the Home Screen and pages are locked, and can’t be moved. This may be by design with iOS and Apple’s MDM policies.
@@ -136,8 +149,6 @@ You can add up to **40** pages on a device.
         - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
         - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-      Select **OK** to save your changes.
-
       - **Folder**: Choose this option to add a folder to the dock on the screen.
 
         Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -148,8 +159,6 @@ You can add up to **40** pages on a device.
           - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
-
-      Select **OK** to save your changes.
 
 #### Example
 
@@ -162,6 +171,8 @@ When you assign the policy to an iPhone, the page looks similar to the following
 ![iOS device with modified home screen](./media/Bd37PHa.png)
 
 ## App notifications settings
+
+### Automated device enrollment (supervised)
 
 Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
@@ -182,13 +193,14 @@ Choose how installed apps on iOS devices send notifications. These settings supp
     - **Badge on app icon**: Select **Enable** to add a badge to the app icon. The badge means the app sent a notification.
     - **Sounds**: Select **Enable** to play a sound when a notification is delivered.
 
-Select **OK** to save your changes.
-
 ## Lock screen message settings
 
-Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
+Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
 
-This feature supports supervised devices running iOS 9.3 and later.
+This feature applies to:  
+- iOS 9.3 and later
+
+### Automated device enrollment (supervised)
 
 - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp` or `Serial Number: {{serialnumber}}`.
 
@@ -201,8 +213,6 @@ This feature supports supervised devices running iOS 9.3 and later.
   > [!NOTE]
   > Variables aren't validated in the UI, and are case sensitive. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{DeviceID}}` instead of `{{deviceid}}`, then the literal string is shown instead of the device’s unique ID. Be sure to enter the correct information.
 
-Select **OK** to save your changes.
-
 ## Single sign-on settings
 
 Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
@@ -213,6 +223,8 @@ To use single sign-on, be sure you have:
 - Intune configured for iOS device single sign-on.
 
 ![Single Sign On pane](./media/sso-blade.png)
+
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Username attribute from AAD**: Intune looks for this attribute for each user in Azure AD. Intune then populates the respective field (such as UPN) before generating the XML that gets installed on the device. Your options:
 
@@ -253,11 +265,11 @@ To use single sign-on, be sure you have:
 
 - **Credential renewal certificate**: If using certificates for authentication (not passwords), select the existing SCEP or PFX certificate as the authentication certificate. Typically, this certificate is the same certificate that's deployed to the user for other profiles, such as VPN, Wi-Fi, or email.
 
-Select **OK** to save your changes.
-
 ## Web content filter settings
 
 These settings control browser URL access on supervised iOS devices.
+
+### Automated device enrollment (supervised)
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 
@@ -268,11 +280,7 @@ These settings control browser URL access on supervised iOS devices.
       > [!NOTE]
         > The URLs you enter are the URLs you don't want evauluated by the Apple web filter. These URLs aren't a list of allowed web sites. To create a list of allowed websites, set the **Filter Type** to **Specific websites only**.
 
-      Select **OK** to save your changes.
-
     - **Blocked URLs**: **Add** the URLs you want to stop from opening, regardless of the Apple web filter settings.
-
-      Select **OK** to save your changes.
 
   - **Specific websites only** (for the Safari web browser only): These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be opened. Use this option only if you know the exact list of URLs that users can access.
 
@@ -282,13 +290,13 @@ These settings control browser URL access on supervised iOS devices.
 
     If you don't enter any URLs, then end users can't access any websites except for `microsoft.com`, `microsoft.net`, and `apple.com`. These URLs are automatically allowed by Intune.
 
-    Select **OK** to save your changes.
-
 ## Wallpaper settings
 
 Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use a company logo on the lock screen.
 
 You may experience unexpected behavior when a profile with no image is assigned to devices with an existing image. For example, you create a profile without an image. This profile is assigned to devices that already have an image. In this scenario, the image may change to the device default, or the original image may stay on the device. This behavior is controlled and limited by Apple's MDM platform.
+
+### Automated device enrollment (supervised)
 
 - **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
   - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.

@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -44,23 +44,29 @@ This article shows you how to create an email profile in Microsoft Intune. It al
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. Select **Device configuration** > **Profiles** > **Create profile**.
-3. Enter a **Name** and **Description** for the email profile.
-4. Choose your **Platform** from the drop-down list. Your options:
+3. Enter the following properties:
 
-    - **Android** (Samsung Android Knox Standard only)
-    - **Android enterprise**
-    - **iOS**
-    - **Windows Phone 8.1**
-    - **Windows 10 and later**
+    - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **Email settings for all Windows devices**.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Choose the platform of your devices. Your options:
 
-5. In the **Profile** type drop-down list, choose **Email**.
-6. The settings you can configure may be different for each platform. For specific settings, choose your platform:
+        - **Android** (Samsung Android Knox Standard only)
+        - **Android enterprise**
+        - **iOS/iPadOS**
+        - **Windows Phone 8.1**
+        - **Windows 10 and later**
+
+    - **Profile type**: Select **Email**.
+
+4. Depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
 
     - [Android Samsung Knox Standard settings](email-settings-android.md)
     - [Android Enterprise settings](email-settings-android-enterprise.md)
-    - [iOS settings](email-settings-ios.md)
+    - [iOS/iPadOS settings](email-settings-ios.md)
     - [Windows Phone 8.1 settings](email-settings-windows-phone-8-1.md)
     - [Windows 10 settings](email-settings-windows-10.md)
+
+5. When you're done, select **OK** > **Create** to save your changes.
 
 After you enter your settings, and create the profile, your profile is shown in the profiles list. Next, [assign this profile to some groups](device-profile-assign.md).
 
