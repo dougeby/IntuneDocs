@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-This document discusses both device level passcode reset as well as work profile passcode reset on Android enterprise (formerly called Android for Work, or AfW) devices. It is important to note this distinction as requirements for each can vary. A device level passcode reset resets the passcode for the entire device. A work profile passcode reset resets the passcode only for the user’s work profile on Android enterprise devices.
+This document discusses both device level passcode reset and work profile passcode reset on Android enterprise (formerly called Android for Work, or AfW) devices. It's important to note this distinction as requirements for each can vary. A device level passcode reset resets the passcode for the entire device. A work profile passcode reset resets the passcode only for the user’s work profile on Android enterprise devices.
 
 ## Supported platforms for device level passcode reset
 
@@ -46,7 +46,7 @@ This document discusses both device level passcode reset as well as work profile
 | macOS | No |
 | Windows | No |
 
-For Android devices, this effectively means that device level passcode reset is only supported on devices running 6.x or earlier, or on Android enterprise devices running in Kiosk mode. This is because Google removed support for resetting an Android 7 device’s passcode/password from within a Device Administrator granted app and applies to all MDM vendors.
+For Android devices, this means that device level passcode reset is only supported on devices running 6.x or earlier, or on Android enterprise devices running in Kiosk mode. This is because Google removed support for resetting an Android 7 device’s passcode/password from within a Device Administrator granted app and applies to all MDM vendors.
 
 ## Supported platforms for Android enterprise work profile passcode reset
 
