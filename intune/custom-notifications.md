@@ -94,8 +94,8 @@ Intune doesn’t track the custom notifications you send, and devices don’t lo
 
 4. Select the **Send Custom Notification** device action to open the *Send Custom Notification* pane where you specify the following message details:  
 
-   a. **Title** – Specify a title for this notification. Titles are limited to 50 characters.
-   b. **Body** – Specify the message. Messages are limited to 500 characters.  
+   - **Title** – Specify a title for this notification. Titles are limited to 50 characters.  
+   - **Body** – Specify the message. Messages are limited to 500 characters.  
 
 5. Select **Send** to send the custom notification to the device. Unlike notifications you send to groups, you don't configure an assignment or review the message before sending it.  
 
