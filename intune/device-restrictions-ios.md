@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -33,18 +33,22 @@ This article lists and describes the different settings you can control on iOS a
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your iOS devices.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune through device enrollment.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-- Supervised devices enrolled in Intune using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
-> [!NOTE]
+> [!TIP]
 > These settings use Apple's MDM settings. For more information on these settings, see [Apple's mobile device management settings](https://support.apple.com/guide/mdm/welcome/web) (opens Apple's web site).
 
 ## Before you begin
 
 [Create a device restrictions configuration profile](device-restrictions-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User enrollment
+> - Device enrollment
+> - Automated device enrollment (supervised)
+> - All enrollment types, which includes user enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## General
 
@@ -54,7 +58,7 @@ Policies can be applied to devices that:
 
 - **Screen capture**: Choose **Block** to prevent screenshots or screen captures on the device. In iOS 9.0 and newer, it also blocks screen recordings. **Not configured** (default) lets the user capture the screen contents as an image or as a video.
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Untrusted TLS certificates**: Choose **Block** to prevent untrusted Transport Layer Security (TLS) certificates on the device. **Not configured** (default) allows TLS certificates.
 - **Allow over-the-air PKI updates**: **Allow** lets your users  receive software updates without connecting their devices to a computer.
@@ -156,7 +160,10 @@ Policies can be applied to devices that:
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
   - **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
 
-    Face ID is available on iOS 11.0 and newer. Blocking this setting also prevents using FaceID authentication to unlock the device.
+    Blocking this setting also prevents using FaceID authentication to unlock the device.
+
+    Face ID applies to:  
+    - iOS 11.0 and newer
 
 ### Automated device enrollment (supervised)
 
@@ -164,7 +171,10 @@ Policies can be applied to devices that:
 
   - **Touch ID and Face ID modification**: **Block** stops the user from changing, adding, or removing TouchID fingerprints and Face ID. **Not configured** (default) allows the user to update the TouchID fingerprints and Face ID on the device.
 
-    Face ID is available on iOS 11.0 and newer. Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+    Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+
+    Face ID applies to:  
+    - iOS 11.0 and newer
 
 - **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also has the following impact:
 
@@ -190,7 +200,7 @@ Policies can be applied to devices that:
 - **Notifications while device locked**: **Block** prevents access to notifications when the device is locked. **Not configured** (default) allows the user to access the notifications without unlocking the device.
 - **Today view while device locked**: **Block** prevents access to the Today view when the device is locked. **Not configured** (default) allows the user to see the Today view when the device is locked.
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Wallet notifications while device locked**: **Block** prevents access to the Wallet app when the device is locked. **Not configured** (default) allows the user to access the Wallet app while the device is locked.
 
@@ -211,7 +221,7 @@ Policies can be applied to devices that:
 - **Treat AirDrop as an unmanaged destination**: **Require** forces AirDrop to be considered an unmanaged drop target. It stops managed apps from sending data using Airdrop. 
 - **Viewing non-corporate documents in corporate apps**: **Block** prevents viewing non-corporate documents in corporate apps. **Not configured** (default) allows any document to be viewed in corporate managed apps.
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Require iTunes Store password for all purchases**: **Require** the user to enter the Apple ID password for each in-app or ITunes purchase. **Not configured** (default) allows purchases without prompting for a password every time.
 - **In-app purchases**: Choose **Block** to prevent in-app purchases from the store. **Not configured** (default) allows store purchases within a running app.
@@ -253,7 +263,7 @@ Policies can be applied to devices that:
 
 - **Safari fraud warnings**: **Require** fraud warnings to be shown in the web browser on the device. **Not configured** (default) disables this feature.
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Spotlight search to return results from internet**: **Block** stops Spotlight from returning any results from an Internet search. **Not configured** (default) allows Spotlight search connect to the Internet to provide search results.
 
@@ -327,7 +337,7 @@ Policies can be applied to devices that:
 
 ## Restricted apps
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. Your options:
 
@@ -359,7 +369,11 @@ Applies to devices running iOS 9.3 or newer.
   - **Hidden apps**: Enter a list of apps that are hidden from users. Users can't view, or open these apps.
   - **Visible apps**: Enter a list of apps that users can view and launch. No other apps can be viewed or launched.
 
-- **App URL**: Enter the store app URL of the app you want to show or hide. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **App URL**: Enter the store app URL of the app you want to show or hide. For example:
+
+  - To add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`. 
+
+  - To add the Microsoft Word app, enter `https://itunes.apple.com/de/app/microsoft-word/id586447913` or `https://apps.apple.com/de/app/microsoft-word/id586447913`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
@@ -368,24 +382,15 @@ Applies to devices running iOS 9.3 or newer.
 - **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **Publisher**: Enter the publisher of the app you want.
+
+To add apps, you can:
+
 - **Add**: Select to create your list of apps.
-
-You can also **Import** a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the restricted apps list in the same format.
-
-> [!IMPORTANT]  
-> For all supported iOS versions, use `iTunes` with the `apple.com` portion of the URL. If you use `apps`, it fails. This is a known issue, and is being fixed in a future release. When fixed, you can use `iTunes` or `apps` in the URL.
->  
-> MS Word example:  
->
-> - With the following URL, the app is *visible* or *hidden* on the device (works): 
->   - https://**itunes**.apple.com/de/app/microsoft-word/id586447913  
->
-> - With the following URL, the app isn't *visible* or *hidden* on the device (doesn't work): 
->   - https://**apps**.apple.com/de/app/microsoft-word/id586447913 
+- **Import** a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, **Export** to create a list of the restricted apps you added, in the same format.
 
 ## Wireless
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Data roaming**: Choose **Block** to prevent data roaming over the cellular network. **Not configured** (default) allows data roaming when the device is on a cellular network.
 - **Global background fetch while roaming**: **Block** prevents using the global background fetch feature when roaming over the cellular network. **Not configured** (default) allows the device to fetch data, such as email, when it's roaming on a cellular network.
@@ -420,7 +425,7 @@ You can also **Import** a CSV file with details about the app, including the URL
 
 - **Wrist detection for paired Apple watch**: **Require** forces a paired Apple watch to use wrist detection. When required, the Apple Watch won't display notifications when it's not being worn. 
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Require AirPlay outgoing requests pairing password**: **Require** a pairing password when the user uses AirPlay to stream content to other Apple devices. **Not configured** (default) allows the user to stream content using AirPlay without entering a password.
 
@@ -463,7 +468,7 @@ You can also **Import** a CSV file with details about the app, including the URL
 - **Block Enterprise Book Backup**: Choose **Block** to prevent users from backing up enterprise books. **Not configured** (default) allows users to back up these books.
 - **Block enterprise book metadata sync (notes and highlights)**: **Block** prevents syncing notes and highlights in enterprise books. **Not configured** (default) allows the syncing.
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Photo stream syncing to iCloud**: **Not configured** (default) lets users enable **My Photo Stream** on their device to sync to iCloud, and have photos available on all the user's devices. **Block** prevents photo stream syncing to iCloud.
 - **iCloud Photo Library**: Set to **Block** to disable using iCloud photo library to store photos and videos in the cloud. Any photos not fully downloaded from iCloud Photo Library to the device are removed from the device. **Not configured** (default) allows using the iCloud photo library.
@@ -492,7 +497,7 @@ Use these settings to configure iOS devices to run specific apps in autonomous s
 
 - **App name**: Enter the name of the app you want.
 - **App Bundle ID**: Enter the [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want.
-**Add**: Select to create your list of apps.
+- **Add**: Select to create your list of apps.
 
 You can also **Import** a CSV file with the list of app names and their bundle IDs. Or, **Export** an existing list that includes the apps.
 
@@ -509,6 +514,10 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Assistive touch**: **Require** the Assistive Touch accessibility setting be on the device. This feature helps users with on-screen gestures that might be difficult for them. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Invert colors**: **Require** the Invert Colors accessibility setting so users with visual impairments can change the display screen. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Mono audio**: **Require** the Mono audio accessibility setting be on the device. **Not configured** doesn't run or enable this feature in kiosk mode.
+- **Voice control**: **Require** enables voice control on the device, and allows users to fully control the OS using Siri commands. **Not configured** disables voice control on the device.
+
+  Starting with iOS 13.0, this setting requires supervised devices.
+
 - **VoiceOver**: **Require** the VoiceOver accessibility setting be on the device to read text on the screen out loud. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Zoom**: **Require** the Zoom setting be on the device to let users use touch to zoom in on the screen. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Auto lock**: **Block** prevents automatic locking of the device. **Not configured** allows this feature.
@@ -520,6 +529,10 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Assistive touch control**: **Allow** let users use the assistive touch function. **Not configured** disables this feature.
 - **Invert colors control**: **Allow** invert color changes to let users adjust the invert colors function. **Not configured** disables this feature.
 - **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. This feature reads text that the user selects out loud. **Not configured** disables this feature.
+- **Voice control modification**: **Allow** users to change the state of voice control on their devices. **Not configured** blocks users from changing the state of voice control on their devices.
+
+  Starting with iOS 13.0, this setting requires supervised devices.
+
 - **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Not configured** prevents voiceover changes.
 - **Zoom control**: **Allow** zoom changes by the user. **Not configured** prevents zoom changes.
 
@@ -529,7 +542,7 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 
 ## Domains
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Unmarked email domains** > **Email Domain URL**: Add one or more URLs to the list. When end users receive an email from a domain other than the domains you enter, the email is marked as untrusted in the iOS Mail app.
 

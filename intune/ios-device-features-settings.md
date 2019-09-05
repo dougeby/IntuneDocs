@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,17 +34,21 @@ Intune includes some built-in settings to allow iOS users to use different Apple
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune through device enrollment.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-- Supervised devices enrolled in Intune using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 This article lists these settings, and describes what each setting does.
 
 ## Before you begin
 
 [Create an iOS device configuration profile](device-features-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User enrollment
+> - Device enrollment
+> - Automated device enrollment (supervised)
+> - All enrollment types, which includes user enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## AirPrint
 
@@ -55,7 +59,10 @@ This article lists these settings, and describes what each setting does.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
+To add AirPrint servers, you can:
+
+- **Add** adds the AirPrint server to the list. Many AirPrint servers can be added.
+- **Import** a comma-separated file (.csv) with this information. Or, **Export** to create a list of the AirPrint servers you added.
 
 ### Get server IP address, resource path, and port
 
@@ -165,7 +172,7 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
-### Automated device enrollment
+### Automated device enrollment (supervised)
 
 Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
@@ -188,9 +195,10 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 ## Lock screen message settings
 
-Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
+Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
 
-This feature supports iOS 9.3 and later.
+This feature applies to:  
+- iOS 9.3 and later
 
 ### Automated device enrollment (supervised)
 
@@ -216,7 +224,7 @@ To use single sign-on, be sure you have:
 
 ![Single Sign On pane](./media/sso-blade.png)
 
-### Device enrollment and automated device enrollment (supervised)
+### Device enrollment, and Automated device enrollment (supervised)
 
 - **Username attribute from AAD**: Intune looks for this attribute for each user in Azure AD. Intune then populates the respective field (such as UPN) before generating the XML that gets installed on the device. Your options:
 

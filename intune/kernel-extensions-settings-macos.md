@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -36,18 +36,23 @@ To learn more about kernel extensions in Intune, and any prerequisites, see [add
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune with user approval.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 ## Before you begin
 
 [Create a device kernel extensions configuration profile](kernel-extensions-overview-macos.md).
 
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User approved enrollment
+> - Device enrollment
+> - Automated device enrollment
+> - All enrollment types, which includes user approved enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+
 ## Kernel extensions
 
-### User approved and automated device enrollment
+### User approved, and Automated device enrollment
 
 - **Allow User Overrides**: **Allow** lets users approve kernel extensions not included in the configuration profile. **Not configured** (default) prevents users from allowing extensions not included in the configuration profile. Meaning, only extensions included in the configuration profile are allowed.
 

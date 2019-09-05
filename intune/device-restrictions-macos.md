@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,14 +34,19 @@ This article lists and describes the different settings you can control on macOS
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune through device enrollment.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 ## Before you begin
 
 [Create a device restrictions configuration profile](device-restrictions-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User approved enrollment
+> - Device enrollment
+> - Automated device enrollment
+> - All enrollment types, which includes user approved enrollment, device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## General
 
@@ -142,9 +147,11 @@ Policies can be applied to devices that:
 - **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **Publisher**: Enter the publisher of the app you want.
-- **Add**: Select to create your list of apps.
 
-You can also **Import** a CSV file with details about the app, including the URL. Use the `<app bundle ID>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the apps list in the same format.
+To add apps to these lists, you can:
+
+- **Add**: Select to create your list of apps.
+- **Import** a CSV file with details about the app, including the URL. Use the `<app bundle ID>, <app name>, <app publisher>` format. Or, **Export** to create a list of apps you added, in the same format.
 
 ## Connected devices
 
