@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ When managing devices in your organization, you want to create groups of setting
 
 You can complete this task using **Administrative Templates** in Microsoft Intune. The administrative templates include hundreds of settings that control features in Microsoft Edge, Internet Explorer, Microsoft Office programs, remote desktop, OneDrive, passwords and PINs, and more. These settings allow group administrators to manage group policies using the cloud.
 
-The Windows settings are similar to group policy (GPO) settings in Active Directory (AD). These settings are built in to Windows, and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) that use XML. The Office settings are ADMX-ingested, and use the ADMX settings in [Office administrative template files](https://www.microsoft.com/download/details.aspx?id=49030). But, the Intune templates are 100% cloud-based. They offer a simple and straight-forward way to configure the settings, and find the settings you want.
+The Windows settings are similar to group policy (GPO) settings in Active Directory (AD). These settings are built in to Windows, and are [ADMX-backed settings](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) that use XML. The Office and Microsoft Edge settings are ADMX-ingested, and use the ADMX settings in [Office administrative and Microsoft Edge administrative template files](https://www.microsoft.com/download/details.aspx?id=49030). But, the Intune templates are 100% cloud-based. They offer a simple and straight-forward way to configure the settings, and find the settings you want.
 
 **Administrative Templates** are built in to Intune, and don't require any customizations, including using OMA-URI. As part of your mobile device management (MDM) solution, use these template settings as a one-stop shop to manage your Windows 10 devices.
 
@@ -62,16 +62,17 @@ This article lists the steps to create a template for Windows 10 devices, and sh
     > [!TIP]
     > The Windows settings in Intune correlate to the on-premises group policy path you see in Local Group Policy Editor (`gpedit`).
 
-5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Microsoft Edge** settings:
+5. By default, the drop-down list shows **All products**. From the list, you can also filter the settings to only show **Windows** settings, only show **Office** settings, or only show **Edge version 77 or later** settings:
 
     ![Filter the list to show all Windows or all Office settings in administrative templates in Intune](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge settings apply to:
     >
-    > - Windows 10 RS4 and newer with [KB 4512509](https://support.microsoft.com/kb/4512509) installed.
-    > - Windows 10 RS5 and newer with [KB 4512534](https://support.microsoft.com/kb/4512534) installed.
-    > - Windows 10 19H1 and newer with [KB 4512941](https://support.microsoft.com/kb/4512941) installed.
+    > - Edge version 77 and later
+    > - Windows 10 RS4 and newer with [KB 4512509](https://support.microsoft.com/kb/4512509) installed
+    > - Windows 10 RS5 and newer with [KB 4512534](https://support.microsoft.com/kb/4512534) installed
+    > - Windows 10 19H1 and newer with [KB 4512941](https://support.microsoft.com/kb/4512941) installed
 
 6. Select any setting. For example, filter on **Office**, and select **Activate Restricted Browsing**. A detailed description of the setting is shown. Choose **Enabled**, **Disabled**, or leave the setting as **Not configured** (default). The detailed description also explains what happens when you choose **Enabled**, **Disabled**, or **Not configured**.
 7. Select **OK** to save your changes.
