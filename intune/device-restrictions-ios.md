@@ -516,7 +516,9 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Mono audio**: **Require** the Mono audio accessibility setting be on the device. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Voice control**: **Require** enables voice control on the device, and allows users to fully control the OS using Siri commands. **Not configured** disables voice control on the device.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  Available for devices running iOS 13.0 and iPadOS 13.0 and later.
+  
+  Tip - If you have LOB apps available for your organization and they are not Voice Control ready for Day 0 when iOS 13.0 comes out, we recommend you leave Voice Control as "not configured". 
 
 - **VoiceOver**: **Require** the VoiceOver accessibility setting be on the device to read text on the screen out loud. **Not configured** doesn't run or enable this feature in kiosk mode.
 - **Zoom**: **Require** the Zoom setting be on the device to let users use touch to zoom in on the screen. **Not configured** doesn't run or enable this feature in kiosk mode.
@@ -531,7 +533,7 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Speak on selected text**: **Allow** the Speak Selection accessibility settings be on the device. This feature reads text that the user selects out loud. **Not configured** disables this feature.
 - **Voice control modification**: **Allow** users to change the state of voice control on their devices. **Not configured** blocks users from changing the state of voice control on their devices.
 
-  Starting with iOS 13.0, this setting requires supervised devices.
+  Available for devices running iOS 13.0 and iPadOS 13.0 and later.
 
 - **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Not configured** prevents voiceover changes.
 - **Zoom control**: **Allow** zoom changes by the user. **Not configured** prevents zoom changes.
