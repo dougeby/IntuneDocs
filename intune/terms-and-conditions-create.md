@@ -59,7 +59,7 @@ Complete these steps to create terms and conditions. The display name and descri
    - **Name**: The name for the terms in the Azure portal. Users don't see this name.
    - **Description**: Optional details that help you identify this set of terms in the Azure portal.
 
-![Screenshot of the Azure portal showing the Basics page for terms and conditions](media/terms-basics-page.png)
+    ![Screenshot of the Azure portal showing the Basics page for terms and conditions](media/terms-basics-page.png)
 
 5. Choose **Next** to go to the **Terms** page and provide the following information:
 
