@@ -160,7 +160,10 @@ These settings are added to a device configuration profile in Intune, and then a
   - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
   - **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
 
-    Face ID is available on iOS 11.0 and newer. Blocking this setting also prevents using FaceID authentication to unlock the device.
+    Blocking this setting also prevents using FaceID authentication to unlock the device.
+
+    Face ID applies to:  
+    - iOS 11.0 and newer
 
 ### Automated device enrollment (supervised)
 
@@ -168,7 +171,10 @@ These settings are added to a device configuration profile in Intune, and then a
 
   - **Touch ID and Face ID modification**: **Block** stops the user from changing, adding, or removing TouchID fingerprints and Face ID. **Not configured** (default) allows the user to update the TouchID fingerprints and Face ID on the device.
 
-    Face ID is available on iOS 11.0 and newer. Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+    Blocking this setting also stops the user from changing, adding, or removing FaceID authentication.
+
+    Face ID applies to:  
+    - iOS 11.0 and newer
 
 - **Block password AutoFill**: Choose **Block** to prevent using the AutoFill Passwords feature on iOS. Choosing **Block** also has the following impact:
 
@@ -485,7 +491,7 @@ Use these settings to configure iOS devices to run specific apps in autonomous s
 
 - **App name**: Enter the name of the app you want.
 - **App Bundle ID**: Enter the [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want.
-**Add**: Select to create your list of apps.
+- **Add**: Select to create your list of apps.
 
 You can also **Import** a CSV file with the list of app names and their bundle IDs. Or, **Export** an existing list that includes the apps.
 

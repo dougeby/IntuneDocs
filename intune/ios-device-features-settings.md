@@ -59,7 +59,10 @@ This article lists these settings, and describes what each setting does.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
+To add AirPrint servers, you can:
+
+- **Add** adds the AirPrint server to the list. Many AirPrint servers can be added.
+- **Import** a comma-separated file (.csv) with this information. Or, **Export** to create a list of the AirPrint servers you added.
 
 ### Get server IP address, resource path, and port
 
@@ -192,9 +195,10 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 ## Lock screen message settings
 
-Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
+Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
 
-This feature supports iOS 9.3 and later.
+This feature applies to:  
+- iOS 9.3 and later
 
 ### Automated device enrollment (supervised)
 

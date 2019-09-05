@@ -36,11 +36,6 @@ To learn more about kernel extensions in Intune, and any prerequisites, see [add
 
 These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
 
-Policies can be applied to devices that:
-
-- Enrolled in Intune with user approval.
-- Enrolled using Apple School Manager or Apple Business Manager with automated device enrollment (formerly DEP).
-
 ## Before you begin
 
 [Create a device kernel extensions configuration profile](kernel-extensions-overview-macos.md).

@@ -147,9 +147,11 @@ These settings are added to a device configuration profile in Intune, and then a
 - **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **Publisher**: Enter the publisher of the app you want.
-- **Add**: Select to create your list of apps.
 
-You can also **Import** a CSV file with details about the app, including the URL. Use the `<app bundle ID>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the apps list in the same format.
+To add apps to these lists, you can:
+
+- **Add**: Select to create your list of apps.
+- **Import** a CSV file with details about the app, including the URL. Use the `<app bundle ID>, <app name>, <app publisher>` format. Or, **Export** to create a list of apps you added, in the same format.
 
 ## Connected devices
 
