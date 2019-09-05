@@ -369,7 +369,11 @@ Applies to devices running iOS 9.3 or newer.
   - **Hidden apps**: Enter a list of apps that are hidden from users. Users can't view, or open these apps.
   - **Visible apps**: Enter a list of apps that users can view and launch. No other apps can be viewed or launched.
 
-- **App URL**: Enter the store app URL of the app you want to show or hide. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`. To add the Microsoft Word app, enter `https://itunes.apple.com/de/app/microsoft-word/id586447913` or `https://apps.apple.com/de/app/microsoft-word/id586447913`.
+- **App URL**: Enter the store app URL of the app you want to show or hide. For example:
+
+  - To add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`. 
+
+  - To add the Microsoft Word app, enter `https://itunes.apple.com/de/app/microsoft-word/id586447913` or `https://apps.apple.com/de/app/microsoft-word/id586447913`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
@@ -378,9 +382,11 @@ Applies to devices running iOS 9.3 or newer.
 - **App Bundle ID**: Enter the app [bundle ID](bundle-ids-built-in-ios-apps.md) of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **App name**: Enter the app name of the app you want. You can show or hide built-in apps and line-of-business apps. Apple's web site has a list of [built-in Apple apps](https://support.apple.com/HT208094).
 - **Publisher**: Enter the publisher of the app you want.
-- **Add**: Select to create your list of apps.
 
-You can also **Import** a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, **Export** an existing list that includes the restricted apps list in the same format.
+To add apps, you can:
+
+- **Add**: Select to create your list of apps.
+- **Import** a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, **Export** to create a list of the restricted apps you added, in the same format.
 
 ## Wireless
 
