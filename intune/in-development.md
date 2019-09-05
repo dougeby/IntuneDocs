@@ -135,7 +135,7 @@ In a future update, there will be new settings you can control:
 - **Voice control**: Enables Voice Control on the device while in kiosk mode.
 - **Modification of voice control**: Allow users to change the Voice Control setting on the device while in kiosk mode.
 
-To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk-supervised-only).
+To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk).
 
 Applies to:
 
@@ -170,7 +170,7 @@ You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8​`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8​`
 ​
-For more information on these settings, see [Show or hide apps (supervised only)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+For more information on these settings, see [Show or hide apps](device-restrictions-ios.md#show-or-hide-apps).
 
 Applies to:
 

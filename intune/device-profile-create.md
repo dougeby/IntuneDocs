@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -59,7 +59,7 @@ This article:
 
        - **Android**
        - **Android enterprise**
-       - **iOS**
+       - **iOS/iPadOS**
        - **macOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 and later**
@@ -88,7 +88,7 @@ This article:
        - [Windows Defender ATP](advanced-threat-protection.md)
        - [Windows Information Protection](windows-information-protection-configure.md)
 
-     For example, if you select **iOS** for the platform, your profile type options look similar to the following profile:
+     For example, if you select **iOS/iPadOS** for the platform, your profile type options look similar to the following profile:
 
      ![Create iOS profile in Intune](./media/create-device-profile.png)
 
