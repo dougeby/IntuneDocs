@@ -10,9 +10,11 @@
       "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "ContextObject: "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -25,6 +27,7 @@
       "monikers": [],
       "open_to_public_contributors": true,
       "type_mapping": {
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
