@@ -13,7 +13,7 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid:
-zone_pivot_groups: security-baseline-settings-one
+zone_pivot_groups: security-baseline-settings-one,windows-mdm-versions
 
 # optional metadata
 
@@ -36,15 +36,13 @@ This article provides a list of the settings and defaults for current and archiv
 
 
 <!-- Windows MDM start ========================================================================= -->  
-::: zone pivot="windows"  
- 
+::: zone pivot="windows-mdm,mdm-preview"  
+## Placeholder for Preview: Windows MDM baseline settings.  
 
-::: zone pivot="mdm-preview"  
-## Placeholder for Preview: Windows MDM baseline settings.
 ::: zone-end
 
 ::: zone pivot="mdm-may-2019"  
-## Place holder for the May 2019 baseleine - the most recently released baseline"
+## Place holder for the May 2019 baseleine - the most recently released baseline"  
 ::: zone-end
 
 <!-- Microsoft Defender ATP start  ====================================  -->
