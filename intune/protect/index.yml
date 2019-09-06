@@ -2,8 +2,6 @@
 
 title: Protect Data and Devices with Intune
 summary: Intune helps protect devices and your corporate data with tools like security baselines, Azure AD conditional access, and partners for Mobile Threat Defense.
-
-
 metadata:
   title: Protect Data and Devices with Intune
   description: Intune helps protect devices and your corporate data with tools like security baselines, Azure AD conditional access, and partners for Mobile Threat Defense.
@@ -65,22 +63,6 @@ landingContent:
           - text: Windows Hello for Business
             url: ../windows-hello.md
 
-
-
-  # Card
-  - title: Manage software updates
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-#     - text: Android
-#     - url: not-yet-supported.md
-          - text: iOS
-            url: ../software-updates-ios.md
-#     - text: macOS
-#     - url: not-yet-supported.md
-          - text: Windows
-            url: ../windows-update-for-business-configure.md
-
   # Card
   - title: Protect devices and networks
     linkLists:
@@ -104,6 +86,20 @@ landingContent:
             url: ../network-access-control-integrate.md
           - text: Encrypt devices
             url: ../encrypt-devices.md
+
+  # Card
+  - title: Manage software updates
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+#     - text: Android
+#     - url: not-yet-supported.md
+          - text: iOS
+            url: ../software-updates-ios.md
+#     - text: macOS
+#     - url: not-yet-supported.md
+          - text: Windows
+            url: ../windows-update-for-business-configure.md
 
   # Card
   - title: Use Conditional Access
