@@ -1,6 +1,5 @@
 ### YamlMime:ZonePivotGroups
 groups:
-
 - id: security-baseline-settings-one
   title: Security baselines
   prompt: Choose your security baseline
