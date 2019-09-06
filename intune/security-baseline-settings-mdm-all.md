@@ -1948,6 +1948,7 @@ For more information, see [Policy CSP - WindowsPowerShell](https://docs.microsof
 
   **Default**: Enabled
 
+::: zone-end
 ::: zone pivot="mdm-may-2019"  
 ## What's changed in the new template
 The *MDM Security Baseline for May 2019* template has the following changes from the *preview* template.
