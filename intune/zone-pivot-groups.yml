@@ -1,0 +1,11 @@
+### YamlMime:ZonePivotGroups
+groups:
+
+- id: security-baseline-settings-one
+  title: Security baselines
+  prompt: Choose your security baseline
+  pivots:
+    - id: Windows-MDM
+      title: Windows MDM
+    - id: Microsoft-Defender-ATP
+      title: Microsoft Defender Advanced Threat Protection
