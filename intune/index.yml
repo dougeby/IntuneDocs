@@ -89,7 +89,10 @@ conceptualContent:
           text: Send custom notifications
         - url: devices-wipe.md
           itemType: how-to-guide
-          text: Remove devices     
+          text: Remove devices
+      footerLink:
+        text: See more
+        url: ./remote-actions/index.yml           
     - title: Create compliance rules for users and devices
       links:
         - url: device-compliance-get-started.md
