@@ -49,9 +49,9 @@ For more information, see [Where your data is located?](https://www.microsoft.co
 
 ### Personal data retention
 
-In general, personal data is retained by Intune until thirty days after the user is removed from Intune management.
+In general, personal data is retained by Intune until 30 days after the user is removed from Intune management.
 
-Telemetry data collected as part of Intune usage is retained for a maximum of thirty days.
+Telemetry data collected as part of Intune usage is retained for a maximum of 30 days.
 
 Audit logs are retained for up to one year.
 
