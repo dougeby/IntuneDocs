@@ -48,8 +48,9 @@ After you [configure your infrastructure](certificates-scep-configure.md) to sup
 
    1. The following variables are not supported:  
 
-     - CN={{OnPrem_Distinguished_Name}}  
-     - CN={{onPremisesSamAccountName}}  
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
    2. Under Monitoring, certificate reporting is not available for Device Owner SCEP certificate profiles.
    
    3. Revocation of Device Only SCEP certificates isn’t supported through Intune, but can be managed through an external process or directly with the certification authority.
