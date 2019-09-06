@@ -8,3 +8,17 @@ groups:
       title: Windows MDM
     - id: microsoft-defender-atp
       title: Microsoft Defender Advanced Threat Protection
+- id: windows-mdm-versions
+  title: Windows MDM baseline versions
+  prompt: Choose a version
+  pivots:
+    - id: preview
+      title: Preview: MDM Security Baseline for October 2018
+    - id: may-2019
+      title: MDM Security Baseline for May 2019
+- id: mdatp-versions
+  title: Microsoft Defender ATP baseline versions
+  prompt: Choose a version
+  pivots:
+    - id: 
+      title: Preview: Microsoft Defender ATP baseline

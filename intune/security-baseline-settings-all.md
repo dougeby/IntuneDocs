@@ -34,25 +34,24 @@ ms.collection: M365-identity-device-management
 
 This article provides a list of the settings and defaults for current and archived versions of the different security baselines you can use with Microsoft Intune.
 
-> [!NOTE]  
-> Initial design includes only the most recent (current) baseline settings for available baselines. Archived versions ofthe available security baselines will be added in a future update.  
-
-</br>
 
 <!-- Windows MDM start ========================================================================= -->  
 ::: zone pivot="windows"  
  
-   
-## Actual content would follow, but is pending a successful pivot.  
-Placeholder for Windows MDM baseline settings.
 
+::: zone pivot="preview"  
+## Placeholder for Preview: Windows MDM baseline settings.
+::: zone-end
+
+::: zone pivot="may-2019"  
+## Place holder for the May 2019 baseleine - the most recently released baseline"
 ::: zone-end
 
 <!-- Microsoft Defender ATP start  ====================================  -->
 ::: zone pivot="microsoft-defender-atp,all"
 
-## MDATP content is pending a successful Pivot test. 
-Placeholder for MDATP baseline settings.
+## Placeholder for MDATP baseline settings.
+Only the Preview vesion is availalbe, so no deeper selection here.
 
 ::: zone-end
 
