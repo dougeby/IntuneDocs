@@ -33,10 +33,11 @@ ms.collection: M365-identity-device-management
 
 Your organization might require you to create a more secure password before allowing you access to work or school resources. This article describes common password requirements for Windows 10, iOS, macOS, and Android devices. Your organization might not enforce all of these requirements.  
 
-> [!IMPORTANT]
-> If you've changed your password to meet the requirements but are still receiving notifications, restart your device.  
 
 When a password or passcode no longer meets the requirements, you'll receive a message from Company Portal. It will describe the changes you need to make. If no details are provided in the message, use this article to compare the requirements to your current password.  
+
+> [!IMPORTANT]
+> If you've changed your password to meet the requirements but are still receiving notifications, restart your device.  
 
 For additional help or to find out your organization's specific requirements, contact your IT support person. Check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) for contact information.  
 
@@ -47,7 +48,7 @@ For additional help or to find out your organization's specific requirements, co
 | Password is required. | Set a password. Your organization requires that you enter a password to unlock your device. |
 | Password is too simple. |  Make sure that your password doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
 | Password is too short.| Update or set a password with more characters. Your organization requires that your password is a certain length. What they actually choose will vary, but the minimum length they can require is 4 characters, and the maximum is 16. |
-| Password must only contain numbers. | Set a password, or PIN, that only contains numbers.|
+| Password must only contain numbers. | Set a password that only contains numbers.|
 | Password must only contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
 | Password must contain complex characters. | Add complex characters such as numbers, capital letters, and symbols like `$`, `%`, and `#`. Your organization requires a mix of letters, numbers, and non-alphanumeric characters to make it harder for others to guess the password.|  
 | Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
@@ -73,7 +74,7 @@ For additional help or to find out your organization's specific requirements, co
 | Password is required. | Set a password. Your organization requires that you enter a password to unlock your device. |
 | Password is too simple.|  Make sure that your password doesn't contain sequential or repeating numbers, such as 1234 or 1111. |
 | Password is too short. | Update or set a password with more characters. Your organization requires that your password is a certain length.|
-| Password must only contain numbers. | Set a password, or PIN, that only contains numbers.|
+| Password must only contain numbers. | Set a password that only contains numbers.|
 | Password must only contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
 | Password must contain non-alphanumeric characters. | Add special characters such as `&`, `!`, `$`, `%`, and `#`. Your organization requires a mix of letters, numbers, and non-alphanumeric characters to make it harder for others to guess the password.|
 | Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
