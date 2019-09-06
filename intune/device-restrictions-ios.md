@@ -68,21 +68,21 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Diagnostics submission settings modification**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in **Diagnostics and Usage** (device Settings). **Not configured** (default) allows the user to change these device settings.
 
-  This setting requires **Share usage data** be enabled.
+  This setting requires **Share usage data** be set to blocked.
 
   This feature applies to:  
   - iOS 9.3.2 and newer
 
 - **Remote screen observation by Classroom app**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Not configured** (default) allows the Apple Classroom app to view the screen.
 
-  This setting requires **Screen capture** be enabled.
+  This setting requires **Screen capture** be set to blocked.
 
   This feature applies to:  
   - iOS 9.3 and newer
 
 - **Unprompted screen observation by Classroom app**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** (default) prevents this feature.
 
-    This setting requires **Screen capture** be enabled.
+    This setting requires **Screen capture** be set to blocked.
 
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** (default) lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** (default) allows users to change these settings.
@@ -314,12 +314,12 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Find my iPhone**: **Not configured** (default) allows using this Find My app feature to get the approximate location of the device. **Block** prevents this feature in the Find My app. 
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS 13.0 and iPadOS 13.0 and newer
 
 - **Find my Friends**: **Not configured** (default) allows using this Find My app feature to find family and friends from an Apple device or iCloud.com. **Block** prevents this feature in the Find My app.
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS 13.0 and iPadOS 13.0 and newer
 
 - **Changes to the Find My Friends app settings**: **Block** prevents changes to the Find My Friends app settings. **Not configured** (default) allows the user to change settings for the Find My Friends app.
 
@@ -347,7 +347,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 To add apps to these lists, you can:
 
-- **Add** the iTunes App store URL of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`.
+- **Add** the iTunes App store URL of the app you want. For example, to add the Microsoft Work Folders app, enter `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` or `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`.
 
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
@@ -457,7 +457,7 @@ To add apps, you can:
 - **QuickPath**: **Not configured** (default) allows users to use QuickPath, which allows a continuous input on the device's keyboard. Users can type by swiping across the keys to create words. **Block** prevents users from using QuickPath. 
 
   This feature applies to:  
-  - iOS 13.0 and newer
+  - iOS 13.0 and iPadOS 13.0 and newer
 
 ## Cloud and Storage
 
