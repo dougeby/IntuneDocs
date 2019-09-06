@@ -74,9 +74,8 @@ To learn about what's changed in this version of the baseline from the previous 
 
 ::: zone pivot="mdm-preview"
 **Preview - MDM Security Baseline for October 2018**  
-
-View details for the preview MDM security baseline, released in October 2018.
-This baseline is replaced by the MDM security baseline for May 2019.  
+> [!NOTE]  
+> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template. 
 ::: zone-end
 
 ::: zone pivot="mdm-may-2019,mdm-preview"
