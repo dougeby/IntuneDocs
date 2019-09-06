@@ -60,7 +60,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### Monitor and troubleshoot
 
-#### Intune user interface update – Tenant Status dashboard  <!-- 5273210 WNReady -->
+#### Intune user interface update – Tenant Status dashboard  <!-- 5273210  -->
 The user interface for the Tenant Status dashboard has been updated to align with Azure user interface styles. For more information, see  [Tenant status](tenant-status.md).
 
 
