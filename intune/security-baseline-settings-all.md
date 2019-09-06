@@ -40,32 +40,19 @@ This article provides a list of the settings and defaults for current and archiv
 </br>
 
 <!-- Windows MDM start ========================================================================= -->  
-::: zone pivot="Windows,all"  
-
-
-View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
-
-The most recent baseline version is **MDM Security Baseline for May 2019**  
-
-To learn about what's changed in the latest version of this baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
-
-> [!NOTE]  
-> In June of 2019, the preview MDM security baseline was replaced by the release of the *MDM Security Baseline for May 2019* template, which is generally available (not in preview). Profiles that were created prior to the availability of the *MDM Security Baseline for May 2019* baseline won't update to reflect the settings and values that are in the MDM Security Baseline for May 2019 version.  Although you cannot create new profiles based on the preview template, you can edit and continue to use profiles you previously created that are based on the preview template.   
-  
-To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
+::: zone pivot="windows"  
  
    
 ## Actual content would follow, but is pending a successful pivot.  
+Placeholder for Windows MDM baseline settings.
 
 ::: zone-end
 
 <!-- Microsoft Defender ATP start  ====================================  -->
-::: zone pivot="Microsoft-Defender-ATP"
+::: zone pivot="microsoft-defender-atp"
 
 ## MDATP content is pending a successful Pivot test. 
+Placeholder for MDATP baseline settings.
 
 ::: zone-end
 
-
-
-This is always present, below the list of settings.
