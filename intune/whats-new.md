@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+## Week of September 2, 2019
+
+### Monitor and troubleshoot
+
+#### Intune user interface update – Tenant Status dashboard  <!-- 5273210  -->
+The user interface for the Tenant Status dashboard has been updated to align with Azure user interface styles. For more information, see  [Tenant status](tenant-status.md).
+
 
 ## Week of August 26, 2019
 
@@ -188,7 +195,7 @@ In Intune, you can create policies to use Windows Defender Antivirus to scan you
 
 In this update, this behavior is fixed. So, the **Time to perform a daily quick scan** and **Type of system scan to perform** settings shows a success status when the scans complete successfully, and show a failed status when the settings fail to apply. 
 
-For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### Device enrollment
 
