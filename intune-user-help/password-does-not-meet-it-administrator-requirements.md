@@ -31,10 +31,10 @@ ms.collection: M365-identity-device-management
 
 # Device password requirements for enrolled devices
 
-Your organization might require you to create a more secure password before allowing you access to work or school resources. This article describes common password requirements for Windows 10, iOS, macOS, and Android devices. Your organization might not enforce all of these requirements.  
+Your organization can require you to create a more secure password before allowing you access to work or school resources. This article describes common password requirements for Windows 10, iOS, macOS, and Android devices. Your organization might not enforce all of these requirements.  
 
 
-When a password or passcode no longer meets the requirements, you'll receive a message from Company Portal. It will describe the changes you need to make. If no details are provided in the message, use this article to compare the requirements to your current password.  
+When a password or passcode no longer meets a requirement, you'll receive a message from Company Portal. It will describe the changes you need to make. If no details are provided in the message, use this article as a reference to compare to your current password.  
 
 > [!IMPORTANT]
 > If you've changed your password to meet the requirements but are still receiving notifications, restart your device.  
