@@ -40,7 +40,7 @@ This article provides a list of the settings and defaults for current and archiv
 </br>
 
 <!-- Windows MDM start ========================================================================= -->  
-::: zone pivot="windows"  
+::: zone pivot="windows,all"  
  
    
 ## Actual content would follow, but is pending a successful pivot.  
@@ -49,7 +49,7 @@ Placeholder for Windows MDM baseline settings.
 ::: zone-end
 
 <!-- Microsoft Defender ATP start  ====================================  -->
-::: zone pivot="microsoft-defender-atp"
+::: zone pivot="microsoft-defender-atp,all"
 
 ## MDATP content is pending a successful Pivot test. 
 Placeholder for MDATP baseline settings.
