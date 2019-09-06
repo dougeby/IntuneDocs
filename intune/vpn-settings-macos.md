@@ -77,7 +77,7 @@ If you selected **Custom VPN**, configure these further settings:
 - **Address**: Enter the proxy server address (as an IP address).
 - **Port number**: Enter the port number associated with the proxy server.
 
-## Next step
+## Next steps
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
