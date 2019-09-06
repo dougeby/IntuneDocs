@@ -39,7 +39,7 @@ This article provides a list of the settings and defaults for current and archiv
 
 </br>
 
-<!-- Windows-MDM start  ====================================  -->
+<!-- Windows start ========================================================================= -->
 ::: zone pivot="Windows MDM,all"  
 
 
