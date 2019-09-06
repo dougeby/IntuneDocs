@@ -214,7 +214,7 @@ If you're using a proxy, configure the following settings. Proxy settings aren't
 - **Address**: Enter the IP address of fully qualified host name of the proxy server.
 - **Port number**: Enter the port number associated with the proxy server.
 
-## Next step
+## Next steps
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
