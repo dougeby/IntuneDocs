@@ -39,7 +39,7 @@ This article provides a list of the settings and defaults for current and archiv
 ::: zone pivot="windows"  
  
 
-::: zone pivot="preview"  
+::: zone pivot="preview-mdm"  
 ## Placeholder for Preview: Windows MDM baseline settings.
 ::: zone-end
 
