@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
+title: Configure Email settings for iOS devices in Microsoft Intune - Azure | Microsoft Docs
 description: See a list of all the email settings you can configure and add to iOS devices in Microsoft Intune, including using Exchange servers, and getting attributes from Azure Active Directory. You can also enable SSL, authenticate users with certificates or username/password, and synchronize email on iOS devices using device configuration profiles in Microsoft Intune.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -25,7 +25,9 @@ ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ---
 
-# Email profile settings for iOS devices in Intune
+# Add e-mail settings for iOS devices in Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In Microsoft Intune, you can create and configure email to connect to an email server, choose how users authenticate, use S/MIME for encryption, and more.
 
@@ -33,7 +35,16 @@ This article lists and describes all the email settings available for devices ru
 
 ## Before you begin
 
-[Create a device configuration profile](email-settings-configure.md#create-a-device-profile).
+[Create a device configuration profile](email-settings-configure.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - User enrollment
+> - Device enrollment
+> - Automated device enrollment (supervised)
+>
+> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## Email settings
 
@@ -102,4 +113,4 @@ This article lists and describes all the email settings available for devices ru
 
 The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-Configure email settings on [Android](email-settings-android.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
+Configure email settings on [Android](email-settings-android.md), [Android Enterprise](email-settings-android-enterprise.md), [Windows 10](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md) devices.
