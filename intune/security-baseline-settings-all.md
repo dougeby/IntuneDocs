@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 ---
 
 
-## Security baseline settings
+# Security baseline settings
 
 This article provides a list of the settings and defaults for current and archived versions of the different security baselines you can use with Microsoft Intune.
 

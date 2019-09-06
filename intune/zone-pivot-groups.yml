@@ -4,7 +4,7 @@ groups:
   title: Security baselines
   prompt: Choose your security baseline
   pivots:
-    - id: Windows
+    - id: windows
       title: Windows MDM
-    - id: Microsoft-Defender-ATP
+    - id: microsoft-defender-atp
       title: Microsoft Defender Advanced Threat Protection
