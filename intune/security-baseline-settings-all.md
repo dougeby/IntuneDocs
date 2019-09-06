@@ -39,11 +39,11 @@ This article provides a list of the settings and defaults for current and archiv
 ::: zone pivot="windows"  
  
 
-::: zone pivot="preview-mdm"  
+::: zone pivot="mdm-preview"  
 ## Placeholder for Preview: Windows MDM baseline settings.
 ::: zone-end
 
-::: zone pivot="may-2019"  
+::: zone pivot="mdm-may-2019"  
 ## Place holder for the May 2019 baseleine - the most recently released baseline"
 ::: zone-end
 
@@ -51,7 +51,7 @@ This article provides a list of the settings and defaults for current and archiv
 ::: zone pivot="microsoft-defender-atp,all"
 
 ## Placeholder for MDATP baseline settings.
-Only the Preview vesion is availalbe, so no deeper selection here.
+Only the Preview version is available, so no deeper selection here.
 
 ::: zone-end
 
