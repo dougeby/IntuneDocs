@@ -39,8 +39,8 @@ This article provides a list of the settings and defaults for current and archiv
 
 </br>
 
-<!-- Windows MDM security baseline start  ====================================  -->
-::: zone pivot="WIndows MDM,all"  
+<!-- Windows-MDM start  ====================================  -->
+::: zone pivot="Windows MDM,all"  
 
 
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines.  
@@ -1926,10 +1926,10 @@ The following settings are either:
 
 ::: zone-end
 
-<!-- Microsoft Defender ATP security baseline start  ====================================  -->
+<!-- Microsoft-Defender-ATP start  ====================================  -->
 ::: zone pivot="Microsoft Defender ATP,all"
 
-
+Pending addition of first test build
 
 ::: zone-end
 
