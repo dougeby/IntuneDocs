@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 # Windows MDM security baseline settings for Intune
 View the MDM security baseline settings that are supported by Microsoft Intune for devices that run Windows 10 or later. The default values for settings in this baseline represent the recommended configuration for applicable devices, and might not match baseline defaults from other security baselines, or from other versions of this baseline.
 
-- To learn about using security baselines with Intune, see [Use security baselines](security-baselines.md).  
+- To learn about using security baselines with Intune and how to upgrade the baseline version in your security baseline profiles, see [Use security baselines](security-baselines.md).  
 - The most recent baseline version is **MDM Security Baseline for May 2019**  
    
 Be sure to select the version of the baseline that you want to view.   
@@ -72,7 +72,14 @@ This has both tags for:
 To learn about what's changed in this version of the baseline from the previous version, see [What's changed in the new template](#whats-changed-in-the-new-template).  
 ::: zone-end
 
-::: zone pivot="mdm-may-2019,all"
+::: zone pivot="mdm-preview"
+**Preview - MDM Security Baseline for October 2018**  
+
+View details for the preview MDM security baseline, released in October 2018.
+This baseline is replaced by the MDM security baseline for May 2019.  
+::: zone-end
+
+::: zone pivot="mdm-may-2019,mdm-preview"
 ## Above Lock  
 For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock) in the Windows documentation.  
 
@@ -88,7 +95,7 @@ For more information, see [Policy CSP - AboveLock](https://docs.microsoft.com/wi
   **Default**: Disabled
 ::: zone-end
 
-::: zone pivot="mdm-may-2019,all"  
+::: zone pivot="mdm-may-2019,mdm-preview"  
 ## App Runtime    
 For more information, see [Policy CSP - AppRuntime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-appruntime
 ) in the Windows documentation.  
