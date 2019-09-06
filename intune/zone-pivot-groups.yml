@@ -13,7 +13,7 @@ groups:
   prompt: Choose a version
   pivots:
     - id: preview-mdm
-      title: Preview: MDM Security Baseline for October 2018
+      title: Preview - MDM Security Baseline for October 2018
     - id: may-2019
       title: MDM Security Baseline for May 2019
 - id: mdatp-versions
@@ -21,4 +21,4 @@ groups:
   prompt: Choose a version
   pivots:
     - id: preview-atp
-      title: Preview: Microsoft Defender ATP baseline
+      title: Preview - Microsoft Defender ATP baseline
