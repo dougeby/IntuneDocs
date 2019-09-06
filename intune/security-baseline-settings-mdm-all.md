@@ -1,9 +1,9 @@
 ---
 # required metadata
 
-title: Intune security baselines settings for Windows 10 
+title: Intune security baselines settings for Windows 10 MDM
 titleSuffix: Microsoft Intune
-description: Review the defaults and available settings for all the security baselines you can manage with Microsoft Intune, including current and archived versions of the Windows MDM and Microsoft Defender Advanced Threat Protection baselines. 
+description: Review the defaults and available settings for the different versions of the Windows MDM scurity baseline that you can manage with Microsoft Intune.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -13,7 +13,7 @@ ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology:
 ms.assetid:
-zone_pivot_groups: security-baseline-settings-one,windows-mdm-versions
+zone_pivot_groups: windows-mdm-versions
 
 # optional metadata
 
@@ -36,20 +36,21 @@ This article provides a list of the settings and defaults for current and archiv
 
 
 <!-- Windows MDM start ========================================================================= -->  
-::: zone pivot="windows-mdm,mdm-preview"  
+::: zone pivot="mdm-may-2019,mdm-preview"  
 ## Placeholder for Preview: Windows MDM baseline settings.  
-
+This has both tags and there for should be in both
+- May 2019
+- Preview
 ::: zone-end
 
 ::: zone pivot="mdm-may-2019"  
 ## Place holder for the May 2019 baseleine - the most recently released baseline"  
+This is tagged for only:
+- May 2019
 ::: zone-end
-
-<!-- Microsoft Defender ATP start  ====================================  -->
-::: zone pivot="microsoft-defender-atp,all"
-
-## Placeholder for MDATP baseline settings.
-Only the Preview version is available, so no deeper selection here.
-
+ 
+::: zone pivot="mdm-preview"  
+## Placeholder for Preview: Windows MDM baseline settings.  
+This has both tags for:
+- Preview
 ::: zone-end
-
