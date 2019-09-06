@@ -28,11 +28,11 @@ ms.collection: M365-identity-device-management
 ---
 # Configure and use imported PKCS certificates with Intune
 
-Microsoft Intune supports the use of imported public key pair (PKCS) certificates, commonly used for S/MIME with Email profiles. Email profiles in Intune support an option to enable S/MIME where you can define an S/MINE Signing Cert and S/MINE Encryption Cert.
+Microsoft Intune supports the use of imported public key pair (PKCS) certificates, commonly used for S/MIME encryption with Email profiles. Certain email profiles in Intune support an option to enable S/MIME where you can define an S/MINE signing certificate and S/MIME encryption cert.
 
-The challenge is with handling the S/MINE Encryption certificates as revoking or deleting such a certificate results in the loss of the email contents that the certificate encrypted. As such, it's not possible to use [SCEP](certificates-scep-configure.md) or [PKCS](certficates-pfx-configure.md) certificate profiles for this purpose. When a device is unenrolled, certificates issued with SCEP or PKCS certificate profiles are revoked.
+S/MIME encryption is challenging because email is encrypted with a specific certificate.  You must have the private key of the certificate that encrypted the email on the device where you are reading the email so it can be decrypted.  Encryption certificates are renewed regularly which means that you may need your encryption history on all of your devices to ensure that you can read older email.  Since the same certificate needs to be used across devices, it's not possible to use [SCEP](certificates-scep-configure.md) or [PKCS](certficates-pfx-configure.md) certificate profiles for this purpose as those certificate delivery mechanisms deliver unique certificates per device. 
 
-For more information about using S/MINE with Intune, [Use S/MIME to encrypt email](certificates-s-mime-encryption-sign.md).
+For more information about using S/MIME with Intune, [Use S/MIME to encrypt email](certificates-s-mime-encryption-sign.md).
 
 ## Requirements
 
@@ -43,19 +43,15 @@ To use imported PKCS certificates with Intune, you'll need the following infrast
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
 
-  This connector can automatically update itself when new versions become available. To use the update capability, you must:
-  - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.
-  - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.  
+  This connector can automatically update itself when new versions become available. To use the update capability, you must ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.  
 
-  For more information about all the network endpoints that the connector accesses, see [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
+  For more information about all the network endpoints that the connector accesses, see [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/en-us/intune/network-bandwidth-use).
 
 
 - **Windows Server**:  
-  You use a Windows Server to host:
+  You use a Windows Server to host the PFX Certificate Connector for Microsoft Intune.  The connector is used to process requests for certificates imported to Intune.
 
-  - Imported PFX Certificate Connector for Microsoft Intune - for S/MIME email signing or encryption scenarios.
-
-  Intune supports install of the *Microsoft Intune Certificate Connector* on the same server as the *Imported PFX Certificate Connector*.
+  Intune supports install of the *Microsoft Intune Certificate Connector* on the same server as the *PFX Certificate Connector for Microsoft Intune*.
 
   To support the connector, the server must run .NET 4.6 Framework or higher. If .NET 4.6 Framework isn't installed when you start the installation of the connector, the connector installation will install it automatically.
 
@@ -64,18 +60,16 @@ To use imported PKCS certificates with Intune, you'll need the following infrast
 
 ## How it works
 
-When you use Intune to deploy an **Imported PFX certificate** to a user, there are two components at play in addition to the device: 
+When you use Intune to deploy an **imported PFX certificate** to a user, there are two components at play in addition to the device: 
 
-- **Intune Service**: Stores the PFX certificates in an encrypted state and handles the deployment of the certificate to the user device.
-- **Connector for Imported PFX certificates**: Decrypts the PFX certificates using a local key.
+- **Intune Service**: Stores the PFX certificates in an encrypted state and handles the deployment of the certificate to the user device.  The passwords protecting the private keys of the certificates are encrypted before they are uploaded using either an hardware security module (HSM) or Windows Cryptography, ensuring that Intune cannot access the private key at any time.
+- **PFX Certificate Connector for Microsoft Intune**: When a device requests a PFX certificate thaty has been imported to Intune, the encrypted password, the certificate, and the device's public key are sent to the connector.  The connector decrypts the password using the on-prem private key, and then re-encrypts the password (and any plist profiles if using iOS) with the device key before sending the certificate back to Intune.  Intune then delivers the certificate to the device and the device is able to decrypt it with the device's private key and install the certificate.
 
-When you target a user with a **PKCS imported certificate** profile in Intune, Intune looks for a certificate for that user that was imported with Graph. If a certificate is found, Intune requests the Connector for Imported PFX certificates to decrypt that certificate. After being decrypted, the certificate is pushed to the device by Intune.
-
-## Download, install, and configure the Imported PFX Certificate Connector for Microsoft Intune
+## Download, install, and configure the PFX Certificate Connector for Microsoft Intune
 
 1. In the [[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portal, select **Device configuration** > **Certification Connectors** > **Add**
 
-   ![Imported PFX connector download](media/certificates-importedpfx-configure/download-imported-pfxconnector.png)
+   ![PFX Certificate Connector for Microsoft Intune download](media/certificates-importedpfx-configure/download-imported-pfxconnector.png)
 
 2. Download and save the Connector for Imported PFX certificates to a location that's accessible from the server where you're going to install the connector.
 3. After the download completes, sign in to the server and run the installer (PfxCertificateConnectorBootstrapper.exe).  
