@@ -40,7 +40,7 @@ This article provides a list of the settings and defaults for current and archiv
 </br>
 
 <!-- Windows MDM start ========================================================================= -->  
-::: zone pivot="windows,all"  
+::: zone pivot="windows"  
  
    
 ## Actual content would follow, but is pending a successful pivot.  
