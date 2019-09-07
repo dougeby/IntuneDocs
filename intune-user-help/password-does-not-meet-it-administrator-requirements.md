@@ -90,6 +90,7 @@ For additional help or to find out your organization's specific requirements, co
 | Password must contain letters. | Set a password that contains letters from the alphabet.|
 | Password must contain alphanumeric characters. | Set a password that contains a mix of numbers and letters.|
 | Password must contain alphanumeric characters and symbols. | Set a password that contains a mix of letters, numbers, and special characters such as `&`, `!`, `$`, `%`, and `#`. |
+| Password must use biometric technology.| Set up your device to use biometric authentication, such as fingerprint or facial recognition.
 | Password has expired. | Set a new password. Your organization requires you to change your password after a certain number of days. |
 | Your password was used too recently. | Choose a password you haven't used before. Your organization requires that a certain amount of time passes before you reuse a password. |
 
