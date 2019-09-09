@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -204,6 +204,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **Add new users**: Choose **Block** to prevent users from adding new users. Each user has a personal space on the device for custom Home screens, accounts, apps, and settings. **Not configured** allows users to add other users to the device.
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
+
+  This setting isn't used on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
 
 ### Applications
 
