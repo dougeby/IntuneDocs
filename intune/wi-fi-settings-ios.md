@@ -42,13 +42,7 @@ This article describes these settings.
 [Create a device profile](device-profile-create.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - User enrollment
-> - Device enrollment
-> - Automated device enrollment (supervised)
->
-> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## Basic profiles
 

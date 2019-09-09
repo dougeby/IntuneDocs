@@ -41,13 +41,7 @@ This article describes these settings.
 [Create a device profile](device-profile-create.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - Device enrollment
-> - Device enrollment with user approval: Only in per-app mode
-> - Automated device enrollment
->
-> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Basic profiles
 
