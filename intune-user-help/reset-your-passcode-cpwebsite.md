@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,12 +30,13 @@ ms.collection: M365-identity-device-management
 
 # How to reset your device passcode from the Company Portal website
 
-If you lose your device PIN or password, you can use the [Company Portal website](https://portal.manage.microsoft.com) to reset it.  
+If you lose your device PIN or password, you can use the [Company Portal website](https://portal.manage.microsoft.com) to reset it. 
 
-If you're using a corporate-enrolled device, you may not see the option to reset your device passcode. Contact your company support to reset the passcode for you.
+The reset passcode option might not appear for a corporate-enrolled device. In this case, contact your company support to have it reset for you.  
 
-   > [!NOTE]
-   > You cannot reset the passcode for devices running Android 7.0 and later. If you forget your passcode, you must reset the device to factory settings. 
+Passcode reset isn't available for all iOS devices. If you're an IT support person and want to find out what's supported, see [Supported platforms for device level passcode reset](https://docs.microsoft.com/intune/reset-erase-your-device-cpwebsite). 
+
+Passcode reset also isn't available for devices running Android 7.0 and later. If you forget your passcode on one of these devices, you must reset it to factory settings.  
 
 ## Reset your passcode
 

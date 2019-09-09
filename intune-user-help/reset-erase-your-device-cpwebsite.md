@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -21,7 +21,7 @@ searchScope:
 ROBOTS:  
 #audience:
 #ms.devlang:
-ms.reviewer: jieyang
+ms.reviewer: coferro
 ms.suite: ems
 #ms.tgt_pltfrm:
 ms.custom: intune-enduser
@@ -29,14 +29,16 @@ ms.collection: M365-identity-device-management
 ---
 
 
-# Reset your device from the Company Portal website
+# Reset device from Company Portal website
 
-Learn how to reset a used, lost, or stolen device to factory default settings from the Company Portal website.  
+Reset a used, lost, or stolen device to factory default settings from the Company Portal website.  
 
-After you reset a device, it no longer appears in the Company Portal. Previously existing apps and files are erased and the device is restored to its factory default settings.
+After you reset a device, it no longer appears in the Company Portal. Previously existing apps and files are erased and the device is restored to its factory default settings. 
+
+Device reset isn't available for all iOS devices. If you're an IT support person and want to find out more about device reset and its limitations, see [Remove devices by using wipe, retire, or manually unenrolling the device](https://docs.microsoft.com/intune/devices-wipe).  
 
 > [!Note]
-> You can also perform the following steps from another device that you've enrolled. Open the Company Portal app on that device and go through similar steps to complete the reset.  
+> You can also perform these steps from another device that you've enrolled. Open the Company Portal app and complete the steps for a similar reset experience. 
 
 1. Open the Company Portal website and select the __Menu__ button > __Devices__.  
 

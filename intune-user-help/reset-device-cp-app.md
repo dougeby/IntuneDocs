@@ -7,7 +7,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/06/2019
+ms.date: 09/20/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,6 +34,7 @@ ms.collection: M365-identity-device-management
 Reset a used, lost, or stolen device to its factory settings from the Company Portal app.  
 
 After you reset a device, it will no longer appear in Company Portal. Its existing apps and files will be erased, and it will be restored to its out-of-box settings.  
+
 
 1. Open Company Portal.  
 2. Under **My Devices**, select the device you want to reset.   
