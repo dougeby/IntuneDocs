@@ -68,21 +68,21 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Diagnostics submission settings modification**: **Block** prevents the user from changing the diagnostic submission and app analytics settings in **Diagnostics and Usage** (device Settings). **Not configured** (default) allows the user to change these device settings.
 
-  This setting requires **Share usage data** be set to **Block.
+  To use this setting, set the **Share usage data** setting to **Block**.
 
   This feature applies to:  
   - iOS 9.3.2 and newer
 
 - **Remote screen observation by Classroom app**: Choose **Block** to prevent the Classroom app from remotely viewing the screen on the device. **Not configured** (default) allows the Apple Classroom app to view the screen.
 
-  This setting requires **Screen capture** be set to **Block.
+  To use this setting, set the **Screen capture** setting to **Block**.
 
   This feature applies to:  
   - iOS 9.3 and newer
 
 - **Unprompted screen observation by Classroom app**: If set to **Allow**, teachers can silently observe the screen of students iOS devices using the Classroom app without the students' knowledge. Student devices enrolled in a class using the Classroom app automatically give permission to that course’s teacher. **Not configured** (default) prevents this feature.
 
-    This setting requires **Screen capture** be set to **Block.
+  To use this setting, set the **Screen capture** setting to **Block**.
 
 - **Enterprise app trust**: Choose **Block** to remove the **Trust Enterprise Developer** button in Settings > General > Profiles & Device Management on the device. **Not configured** (default) lets the user choose to trust apps that aren't downloaded from the app store.
 - **Account modification**: When set to **Block**, the user can't update the device-specific settings from the iOS settings app. For example, the user can't create new device accounts, or change the user name or password. **Not configured** (default) allows users to change these settings.
