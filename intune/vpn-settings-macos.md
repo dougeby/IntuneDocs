@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -40,8 +40,8 @@ Depending on the settings you choose, not all values in the following list are c
 > [!NOTE]
 > These settings can apply to the following enrollment types:
 >
-> - User approved enrollment: Only in per-app mode
 > - Device enrollment
+> - Device enrollment with user approval: Only in per-app mode
 > - Automated device enrollment
 >
 > For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
