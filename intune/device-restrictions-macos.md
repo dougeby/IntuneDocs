@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -44,7 +44,7 @@ These settings are added to a device configuration profile in Intune, and then a
 > - Device enrollment
 > - Device enrollment with user approval
 > - Automated device enrollment
-> - All enrollment types, which includes user approved device enrollment, device enrollment, and automated device enrollment (formerly DEP).
+> - All enrollment types, which includes device enrollment, user-approved device enrollment, and automated device enrollment (formerly DEP).
 >
 > For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
