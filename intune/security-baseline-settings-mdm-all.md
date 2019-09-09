@@ -289,16 +289,19 @@ For more information, see [Policy CSP - DeviceGuard](https://docs.microsoft.com/
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067044)
    
   **Default**: Enable with UEFI lock 
-
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-- **Enable virtualization based security**   
+
+- **virtualization based security** 
+  **Default**: Enable VBS with secure boot
+::: zone-end
+::: zone pivot="mdm-preview,mdm-may-2019"
+
+- **Enable virtualization based security**  
   Turns on virtualization-based security (VBS) at the next reboot. Virtualization-based security uses the Windows Hypervisor to provide support for security services.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067066)  
   
   **Default**: Yes  
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
 
 - **Launch system guard**    
   **Default**: Enabled  
@@ -1158,16 +1161,12 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   
   **Default**: Disable  
 
-::: zone-end
-::: zone pivot="mdm-may-2019"
 - **Internet Explorer internet zone updates to status bar via script**  
   This policy setting allows you to manage whether a script can update the status bar within the zone. If you enable this policy setting, scripts can update the status bar. If you disable or don't configure this policy setting, script isn't allowed to update the status bar.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067087)  
   
   **Default**: Disabled  
-::: zone-end
-::: zone pivot="mdm-preview,mdm-may-2019"
-
+ 
 - **Internet Explorer restricted zone include local path when uploading files to server**  
   This policy setting controls if local path information is sent when the user is uploading a file via an HTML form. If the local path information is sent, some information may be unintentionally revealed to the server. For instance, files sent from the user's desktop may contain the user name as a part of the path. If you enable this policy setting, path information is sent when the user is uploading a file via an HTML form. If you disable this policy setting, path information is removed when the user is uploading a file via an HTML form. If you don't configure this policy setting, the user can choose whether path information is sent when they are uploading a file via an HTML form. By default, path information is sent.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067085)  
