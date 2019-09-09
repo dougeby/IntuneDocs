@@ -13,7 +13,7 @@ groups:
   prompt: Choose a version
   pivots:
     - id: mdm-may-2019
-      title: MDM Security Baseline for May 2019
+      title: May 2019
     - id: mdm-preview
-      title: Preview - MDM Security Baseline for October 2018
+      title: Preview - October 2018
 
