@@ -519,7 +519,7 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Voice control**: **Require** enables voice control on the device, and allows users to fully control the OS using Siri commands. **Not configured** disables voice control on the device.
 
   This setting applies to:  
-  - iOS 13 and newer
+  - iOS 13.0 and newer
   - iPadOS 13.0 and newer
   
   > [!TIP]
@@ -539,7 +539,7 @@ You can also **Import** a CSV file with the list of app names and their bundle I
 - **Voice control modification**: **Allow** users to change the state of voice control on their devices. **Not configured** blocks users from changing the state of voice control on their devices.
 
   This setting applies to:  
-  - iOS 13 and newer
+  - iOS 13.0 and newer
   - iPadOS 13.0 and newer
 
 - **VoiceOver control**: **Allow** voiceover changes to let users update the VoiceOver function, such as how fast on-screen text is read out loud. **Not configured** prevents voiceover changes.
