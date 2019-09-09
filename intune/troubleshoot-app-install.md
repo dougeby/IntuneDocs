@@ -104,7 +104,7 @@ There are specific requirements that must be followed to collect log files:
   *.log, .txt, .dmp, .cab, .zip, .xml*
 - The maximum log file to upload is 60 MB or 25 files, whichever occurs first. 
 - Win32 app install log collection is enabled for apps that meet the required, available, and uninstall app assignment intent.
-- Stored logs are encrypted to protect any PII information contained in the logs​.
+- Stored logs are encrypted to protect any personal identifiable information contained in the logs​.
 - While opening support tickets for Win32 app failures, attach the related failure logs using the steps provided above.
 
 ## App installation errors
@@ -112,6 +112,8 @@ There are specific requirements that must be followed to collect log files:
 The following error messages and descriptions provide details about both Android and iOS installation errors. 
 
 ### Android errors
+
+This section mentions both Device Administrator (DA) and Samsung Knox enrollment. For more information, see [Android device administrator enrollment](android-enroll-device-administrator.md) and [Automatically enroll Android devices by using Samsung's Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md). 
 
 | Error message/code | Description |
 |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -124,10 +126,10 @@ The following error messages and descriptions provide details about both Android
 | The end user canceled the app installation. (0xC7D14FB1) | The user explicitly uninstalled the app. This error is returned when the Android OS install activity was canceled by the user. The user pressed the cancel button when the OS install prompt was presented or clicked away from the prompt. This error is returned for only DA scenarios. For KNOX scenarios, the user is not prompted to install, this can be done silently. Intune presents a notification that users can click to retry. If the app is an available app, the notification can be dismissed. However, if the app is required, it cannot be dismissed. Ask the user not to cancel the install. |
 | The file download process was unexpectedly stopped. (0xC7D15015) | The OS stopped the download process before it was complete. This error can occur when the device has low battery or the download is taking too long. This error is returned for only DA scenarios. For KNOX scenarios, the user is not prompted to install, this can be done silently. Intune presents a notification that users can click to retry. If the app is an available app, the notification can be dismissed. However, if the app is required, it cannot be dismissed. Ensure the device has a reliable network connection.  |
 | The file download service was unexpectedly stopped. The policy will be retried the next time the device syncs. (0xC7D1507C) | The OS ended the download process before it was completed. This error can occur when the device has low battery or the download is taking too long. This error is returned for only DA scenarios. For KNOX scenarios, the user is not prompted to install, this can be done silently. Manually sync the device or wait for 24 hours and check the status. |
-| The app failed to uninstall. (0xc7d14fb8) | This error is a generic uninstall failure. The OS did not specify why the app failed to uninstall. Some admin apps cannot simply be uninstalled. Check to ensure the app can be uninstalled manually and collect the Company Portal logs if the unistall fails. |
+| The app failed to uninstall. (0xc7d14fb8) | This error is a generic uninstall failure. The OS did not specify why the app failed to uninstall. Some admin apps cannot simply be uninstalled. Check to ensure the app can be uninstalled manually and collect the Company Portal logs if the uninstall fails. |
 | The app installation APK file used for the upgrade does not match the signature for the current app on the device. (0xc7d14fb7) | Android OS has the limitation of requiring the signing cert for the upgrade version to be exactly the same as the cert used to sign the existing version. If the developer cannot use the same cert to sign the new version, you will need to uninstall the existing app and re-deploy the new app rather than upgrade the existing app. |
-| The end user cancelled the app installation. (0xc7d14fb9) | Educate the user to accept the Intune deployed app and install the app when prompted. |
-| Uninstall of the app was cancelled because the process was restarted during installation. (0xc7d14fbc) | The app install process was terminated by the OS or the device was restarted. Retry the install and collect Company Portal logs if this error occurs again. |
+| The end user canceled the app installation. (0xc7d14fb9) | Educate the user to accept the Intune deployed app and install the app when prompted. |
+| Uninstall of the app was canceled because the process was restarted during installation. (0xc7d14fbc) | The app install process was terminated by the OS or the device was restarted. Retry the install and collect Company Portal logs if this error occurs again. |
 | The app installation APK file cannot be installed because it was not signed. (0xc7d14fb6) | By default, Android OS requires apps to be signed. Ensure the app is signed before deployment. |
 
 ### iOS errors
@@ -179,7 +181,7 @@ The following error messages and descriptions provide details about both Android
 
 The information in the topic [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) helps you troubleshoot common problems you might encounter when installing apps from the Microsoft Store, whether by using Intune, or by any other means.
 
-## App troubleshoooting resources
+## App troubleshooting resources
 - [Deploying Visio and Project as part of your Office Pro Plus Deployment](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Deploying-Visio-and-Project-as-part-of-your-Office/ba-p/701795)
 - [Take Action to Ensure MSfB Apps deployed through Intune install on Windows 10 1903](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Take-Action-to-Ensure-MSfB-Apps-deployed-through/ba-p/658864)
 - [Troubleshooting MSI app deployments in Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-MSI-App-deployments-in-Microsoft/ba-p/359125)
