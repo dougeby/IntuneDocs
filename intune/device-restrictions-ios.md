@@ -301,6 +301,8 @@ To add apps to these lists, you can:
   To find the URL of an app, open the iTunes App Store, and search for the app. For example, search for `Microsoft Remote Desktop` or `Microsoft Word`. Select the app, and copy the URL.
 
   You can also use iTunes to find the app, and then use the **Copy Link** task to get the app URL.
+  
+  For more information about locating a Bundle ID, see [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).
 
 - Import a CSV file with details about the app, including the URL. Use the `<app url>, <app name>, <app publisher>` format. Or, Export an existing list that includes the restricted apps list in the same format.
 
