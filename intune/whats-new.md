@@ -63,10 +63,10 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 #### Updates to Microsoft Intune app <!-- 4997846 -->
 The Microsoft Intune app for Android has been updated with the following improvements:
-Updated and improved the layout to include bottom navigation for the most important actions.
-Added an additional page that shows the user's profile.
-Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
-Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+- Updated and improved the layout to include bottom navigation for the most important actions.
+- Added an additional page that shows the user's profile.
+- Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
+- Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
 
 ## Week of September 2, 2019
 
