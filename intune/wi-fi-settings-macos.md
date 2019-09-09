@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -28,6 +28,8 @@ ms.collection: M365-identity-device-management
 
 # Add Wi-Fi settings for macOS devices in Microsoft Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
 You can create a profile with specific WiFi settings, and then deploy this profile to your macOS devices. Microsoft Intune offers many features, including authenticating to your network, adding a PKS or SCEP certificate, and more.
 
 These Wi-Fi settings are separated in to two categories: Basic settings and Enterprise-level settings.
@@ -37,6 +39,15 @@ This article describes these settings.
 ## Before you begin
 
 [Create a device profile](device-profile-create.md).
+
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - Device enrollment
+> - Device enrollment with user approval: Only in per-app mode
+> - Automated device enrollment
+>
+> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
 
 ## Basic profiles
 
@@ -78,18 +89,12 @@ This article describes these settings.
     - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
     - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
 
-      Select **OK** to save your changes.
-
     - **Client Authentication** - **Client certificate for client authentication (Identity certificate)**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
-
-      Select **OK** to save your changes.
 
   - **EAP-TTLS**: Also enter:
 
     - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
     - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
-
-      Select **OK** to save your changes.
 
     - **Client Authentication** - Choose an **Authentication method**. Your options:
 
@@ -100,8 +105,6 @@ This article describes these settings.
 
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
 
-        Select **OK** to save your changes.
-
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
   - **LEAP**
@@ -111,15 +114,11 @@ This article describes these settings.
     - **Server Trust** - **Certificate server names**: **Add** one or more common names used in the certificates issued by your trusted certificate authority (CA). When you enter this information, you can bypass the dynamic trust window displayed on user's devices when they connect to this Wi-Fi network.
     - **Root certificate for server validation**: Choose an existing trusted root certificate profile. This certificate is presented to the server when the client connects to the network, and is used to authenticate the connection.
 
-      Select **OK** to save your changes.
-
     - **Client Authentication** - Choose an **Authentication method**. Your options:
 
       - **Username and Password**: Prompt the user for a user name and password to authenticate the connection. 
 
       - **Certificates**: Choose the SCEP or PKCS client certificate profile that is also deployed to the device. This certificate is the identity presented by the device to the server to authenticate the connection.
-
-        Select **OK** to save your changes.
 
       - **Identity privacy (outer identity)**: Enter the text sent in the response to an EAP identity request. This text can be any value, such as `anonymous`. During authentication, this anonymous identity is initially sent, and then followed by the real identification sent in a secure tunnel.
 
@@ -128,12 +127,8 @@ This article describes these settings.
   - **Manual**: Enter the **Proxy server address** as an IP address, and its **Port number**.
   - **Automatic**: Use a file to configure the proxy server. Enter the **Proxy server URL** (for example `http://proxy.contoso.com`) that contains the configuration file.
 
-Select **OK** > **Create** to save your changes. The profile is created and is shown in the profiles list.
-
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-## More resources
-
-[Wi-Fi settings overview](wi-fi-settings-configure.md), including other available platforms.
+Configure Wi-Fi settings on [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [iOS](wi-fi-settings-ios.md), and [Windows 10](wi-fi-settings-windows.md) devices.

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/05/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -28,6 +28,8 @@ ms.collection: M365-identity-device-management
 
 # macOS device feature settings in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
 Intune includes some built-in settings to customize features on your macOS devices. This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator).
 
 This feature applies to:
@@ -42,18 +44,28 @@ These settings are added to a device configuration profile in Intune, and then a
 
 [Create a macOS device configuration profile](device-features-configure.md).
 
+> [!NOTE]
+> These settings can apply to the following enrollment types:
+>
+> - Device enrollment
+> - Device enrollment with user approval
+> - Automated device enrollment
+> - All enrollment types, which includes device enrollment, user-approved device enrollment, and automated device enrollment (formerly DEP).
+>
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+
 ## AirPrint
+
+### Device enrollment
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use host names to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
 - **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
 - **Port** (iOS 11.0 and later): Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port.
 - **TLS** (iOS 11.0 and later): Select **Enable** to secure AirPrint connections with Transport Layer Security (TLS).
 
-**Add** The AirPrint server. You can add many AirPrint servers.
+- **Add** The AirPrint server. You can add many AirPrint servers.
 
-- **Import** (optional): You can also **Import** a comma-separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
-
-Select **OK** to save your settings.
+You can also **Import** a comma-separated file (.csv) that includes a list of AirPrint printers. Also, after you add AirPrint printers in Intune, you can **Export** this list.
 
 ### Get the IP address and path
 
@@ -72,6 +84,8 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login items
 
+### All enrollment types
+
 - **Files, folders, and custom apps**: **Add** the path of a file, folder, custom app, or system app you want to open when a user signs in to the device. System apps, or apps built or customized for your organization are typically in the `Applications` folder, with a path similar to `/Applications/AppName.app`. 
 
   You can add many files, folders, and apps. For example, enter:  
@@ -85,7 +99,9 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login window
 
-### Window Layout
+### Device enrollment
+
+#### Window Layout
 
 - **Show additional information in the menu bar**: When the time area on the menu bar is selected, **Allow** shows the host name and macOS version. **Not configured** (default) doesn't show this information on the menu bar.
 - **Banner**: Enter a message that's shown on the sign in screen on the device. For example, enter your organization information, a welcome message, lost and found information, and so on.
@@ -99,17 +115,17 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
     - **Admin users**: **Hide** doesn't show the administrator user accounts in the user list. **Not configured** (default) shows the administrator user accounts in the user list.
     - **Other users**: Select **Show** to list **Other...** users in the user list. **Not configured** (default) doesn't show the other user accounts in the user list.
 
-### Login screen power settings
+#### Login screen power settings
 
 - **Shut Down button**: **Hide** doesn't show the shutdown button on the sign in screen. **Not configured** (default) shows the shutdown button.
 - **Restart button**: **Hide** doesn't show the restart button on the sign in screen. **Not configured** (default) shows the restart button.
 - **Sleep button**: **Hide** doesn't show the sleep button on the sign in screen. **Not configured** (default) shows the sleep button.
 
-### Other
+#### Other
 
 - **Disable user login from Console**: **Disable** hides the macOS command line used to sign in. For typical users, **Disable** this setting. **Not configured** (default) allows advanced users to sign in using the macOS command line. To enter console mode, users enter `>console` in the Username field, and must authenticate in the console window.
 
-### Apple Menu
+#### Apple Menu
 
 After users sign in to the devices, the following settings impact what they can do.
 
@@ -119,9 +135,8 @@ After users sign in to the devices, the following settings impact what they can 
 - **Disable Log Out** (macOS 10.13 and later): **Disable** prevents users from selecting the **Log out** option after the user signs in. **Not configured** (default) allows users to select the **Log out** menu item on the device.
 - **Disable Lock Screen** (macOS 10.13 and later): **Disable** prevents users from selecting the **Lock screen** option after the user signs in. **Not configured** (default) allows users to select the **Lock screen** menu item on the device.
 
-Select **OK** to save your settings.
-
 ## Next steps
 
-- View all the settings for [iOS](ios-device-features-settings.md) devices.
-- [Assign this profile](device-profile-assign.md) to your groups, and [monitor its status](device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+You can also configure device features on [iOS](ios-device-features-settings.md).
