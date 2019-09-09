@@ -205,7 +205,8 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
 
-  This setting isn't used on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
+  > [!NOTE]
+  > This setting isn't used on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
 
 ### Applications
 
