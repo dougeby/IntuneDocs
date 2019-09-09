@@ -857,8 +857,8 @@
           href: custom-settings-windows-10.md
       - name: Security baselines
         items: 
-        - name: Windows 10 baseline settings
-          href: security-baseline-settings-mdm.md
+        - name: Windows 10 MDM baseline settings
+          href: security-baseline-settings--all.md&pivot=mdm-may-2019
         - name: Microsoft Defender ATP baseline settings 
           href: security-baseline-settings-defender-atp.md
       - name: Windows update settings
@@ -1050,7 +1050,7 @@
     - name: Security baselines archive
       items:  
       - name: Archived MDM security baselines  
-        href: security-baseline-settings-mdm-archive.md
+        href: security-baseline-settings-mdm-all.md&pivot=mdm-preview
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online
