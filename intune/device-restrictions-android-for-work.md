@@ -206,7 +206,7 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
 
   > [!NOTE]
-  > This setting isn't used on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
+  > This setting isn't honored on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
 
 ### Applications
 
