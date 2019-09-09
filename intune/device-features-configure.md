@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,6 +28,8 @@ ms.collection: M365-identity-device-management
 
 # Add iOS or macOS device feature settings in Intune
 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+
 Intune includes many features and settings that help administrators control iOS and macOS devices. For example, administrators can:
 
 - Allow users access to AirPrint printers in your network
@@ -47,20 +49,21 @@ This article shows you how to create a device configuration profile. You can als
 2. Select **Device configuration** > **Profiles** > **Create profile**.
 3. Enter the following properties:
 
-    - **Name**: Enter a descriptive name for the new profile.
+    - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **macOS: Configures login screen**.
     - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-    - **Platform**: Select your platform:
-        - **iOS**
+    - **Platform**: Choose the platform of your devices. Your options:  
+        - **iOS/iPadOS**
         - **macOS**
     - **Profile type**: Select **Device features**.
-    - **Settings**: Enter the settings you want to configure. For a list of all settings, and what they do, see:
 
-        - [iOS](ios-device-features-settings.md)
-        - [macOS](macos-device-features-settings.md)
+4. Depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
 
-4. When you're done, select **OK**, and choose **Create** to save your changes.
+    - [iOS/iPadOS](ios-device-features-settings.md)
+    - [macOS](macos-device-features-settings.md)
 
-The profile is created and shown in the list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+5. When you're done, select **OK** > **Create** to save your changes.
+
+The profile is created and shown in the profiles list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 ## Next steps
 
