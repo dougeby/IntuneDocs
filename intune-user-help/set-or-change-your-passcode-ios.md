@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Set or change your passcode
 
-Create a new passocode or change an existing one to meet your organization's requirements. The passcode will prevent unauthorized people from unlocking and using your device. 
+Create a new passcode or change an existing one to meet your organization's requirements. The passcode will prevent unauthorized people from unlocking and using your device. 
 
 Your organization can set more than one passcode requirement. For a list of common password requirements, see [Device password requirements for enrolled devices](password-does-not-meet-it-administrator-requirements.md).  
 

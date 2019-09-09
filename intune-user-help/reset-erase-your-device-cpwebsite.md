@@ -44,14 +44,14 @@ Device reset isn't available for all iOS devices. If you're an IT support person
 
 2. Select the device you want to reset.
 
-    ![A screenshot of the Devices page, with 2 tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they are using or add a new one.](./media/rename-reset-device-step2-1808.png)  
+    ![A screenshot of the Devices page, with two tiles that show unidentified, generically named devices. A gray banner sits directly below the devices and prompts user to identify the device they're using or add a new one.](./media/rename-reset-device-step2-1808.png)  
 
 3. Select **Reset**. If the reset option isn't visible at the top of your page, select **More (…)** > **Reset**.  
 
      ![Device details page for a selected device on the Company Portal website, with a list of links at the top showing Rename, Remove, Reset Device, Reset Passcode, and Remote Lock. ](./media/rename-reset-device-1808.png)  
 
-    ![Zoomed in view of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Screenshot of the More icon, highlighted with a red arrow.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. A message appears to warn that you are about to erase all content on your device. Tap **Reset** to confirm.  
+4. A message warns you that you're about to erase all content on your device. Tap **Reset** to confirm.  
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).
