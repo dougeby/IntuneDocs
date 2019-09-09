@@ -41,10 +41,10 @@ These settings are added to a device configuration profile in Intune, and then a
 > [!NOTE]
 > These settings can apply to the following enrollment types:
 >
-> - User approved enrollment
 > - Device enrollment
+> - Device enrollment with user approval
 > - Automated device enrollment
-> - All enrollment types, which includes user approved enrollment, device enrollment, and automated device enrollment (formerly DEP).
+> - All enrollment types, which includes user approved device enrollment, device enrollment, and automated device enrollment (formerly DEP).
 >
 > For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
