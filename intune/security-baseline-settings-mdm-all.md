@@ -38,31 +38,8 @@ View the MDM security baseline settings that are supported by Microsoft Intune f
    
 Be sure to select the version of the baseline that you want to view.   
 
-> [!IMPORTANT]  
-> This article requires the use of cookies to enable the correct display of version specific details. When cookies are blocked details for all versions display without identification of which version a setting or its configuration applies to. 
+<!-- Cookies might be required to enable some browsers to display the zone options --> 
  
-<!--  Version and display mapping 
-::: zone pivot="mdm-may-2019,mdm-preview"  
-#### Placeholder for Preview: Windows MDM baseline settings.  
-This has both tags and there for should be in both
-- May 2019
-- Preview
-::: zone-end
-
-::: zone pivot="mdm-may-2019"  
-#### Place holder for the May 2019 baseleine - the most recently released baseline"  
-This is tagged for only:
-- May 2019
-::: zone-end
- 
-::: zone pivot="mdm-preview"  
-#### Placeholder for Preview: Windows MDM baseline settings.  
-This has both tags for:
-- Preview
-::: zone-end
--->
-
-<!-- Begin list of settings - tagged for versions -->
 
 ::: zone pivot="mdm-may-2019"  
 **MDM Security Baseline for May 2019** 

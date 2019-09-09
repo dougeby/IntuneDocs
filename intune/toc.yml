@@ -1047,10 +1047,6 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint protection common errors 
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Security baselines archive
-      items:  
-      - name: Archived MDM security baselines  
-        href: security-baseline-settings-mdm-all.md
   - name: Scenario implementation guides 
     items:
     - name: Protect Exchange Online
