@@ -67,11 +67,15 @@ Complete these steps to create terms and conditions. The display name and descri
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
    - **Summary of Terms**: Text that explains what it means when users accept the terms. For example, "By enrolling your device, you're agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
 
-6. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
+6. Choose **Next** to go to the **Scope tags** page.
+
+7. Choose **Select scope tags**, select the scope tags that you want to assign to these terms and conditions, and then choose **Select**. 
+
+8. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
     - **All users**: Choose this option to assign these terms and conditions to all users.
     - **Select groups**: Choose this option to assign these terms and conditions to everyone in the groups that you identify by choosing **Select groups to include**.
 
-6. Choose **Next** > **Create**.
+9. Choose **Next** > **Create**.
 
 ## See how terms are displayed to your users
 The following example shows the **Title** and **Summary of Terms** in the admin console and Company Portal.
