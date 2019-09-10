@@ -47,7 +47,7 @@ This article describes these settings.
 > - Device enrollment with user approval: Only in per-app mode
 > - Automated device enrollment
 >
-> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Basic profiles
 
