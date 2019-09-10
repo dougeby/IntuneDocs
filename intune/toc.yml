@@ -546,10 +546,11 @@
     - name: What is Intune app management?
       href: app-management.md    
       displayName: mam-we
-    - name: Add apps overview
-      href: apps-add.md
-      displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+    - name: Add apps 
       items:
+      - name: Add apps overview
+        href: apps-add.md
+        displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app      
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
       - name: Store apps
@@ -561,9 +562,10 @@
         - name: Windows Phone 8.1 store apps
           href: store-apps-windows-phone-8-1.md
         - name: Microsoft Store apps
-          href: store-apps-windows.md
           items:
-          - name: Manually add Company Portal app
+          - name: Windows apps
+            href: store-apps-windows.md
+          - name: Company Portal app
             href: store-apps-company-portal-app.md
         - name: Managed Google Play apps
           href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
           href: apps-add-office365.md
         - name: Office 365 apps for macOS
           href: apps-add-office365-macos.md
+      - name: Web apps
+        href: web-app.md
+        displayName: web; web link; weblink; web-link
+      - name: Built-in apps
+        href: apps-add-built-in.md     
       - name: Build your app (LOB)
         items:
-        - name: Win32 app management
-          href: apps-win32-app-management.md
         - name: Android LOB apps
           href: lob-apps-android.md
         - name: iOS LOB apps
@@ -587,11 +592,8 @@
           href: app-sideload-windows.md          
         - name: macOS LOB apps
           href: lob-apps-macos.md          
-      - name: Web apps
-        href: web-app.md
-        displayName: web; web link; weblink; web-link
-      - name: Built-in apps
-        href: apps-add-built-in.md      
+      - name: Win32 app management
+        href: apps-win32-app-management.md
       - name: PowerShell scripts
         href: intune-management-extension.md          
     - name: Assign apps
@@ -849,7 +851,7 @@
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
           href: wi-fi-settings-windows.md
-        - name: Education
+        - name: Secure assessment
           href: education-settings-windows.md
         - name: Shared multi-user device
           href: shared-user-device-settings-windows.md
