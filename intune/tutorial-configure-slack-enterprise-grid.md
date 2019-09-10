@@ -5,10 +5,10 @@ title: Tutorial - Configure Slack to use Intune for EMM and app configuration
 titleSuffix: Microsoft Intune
 description: In this tutorial you will configure Slack to use Intune for EMM and app configuration.
 keywords:
-author: ErikRe
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/11/2019
+ms.date: 09/09/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.localizationpriority: high
