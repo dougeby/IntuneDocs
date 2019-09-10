@@ -591,7 +591,9 @@
         href: web-app.md
         displayName: web; web link; weblink; web-link
       - name: Built-in apps
-        href: apps-add-built-in.md      
+        href: apps-add-built-in.md    
+      - name: Android Enterprise system apps
+        href: apps-add-built-in.md               
       - name: PowerShell scripts
         href: intune-management-extension.md          
     - name: Assign apps
