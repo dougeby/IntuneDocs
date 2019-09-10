@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -41,18 +41,11 @@ This article lists these settings, and describes what each setting does.
 [Create an iOS device configuration profile](device-features-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - User enrollment
-> - Device enrollment
-> - Automated device enrollment (supervised)
-> - All enrollment types, which includes user enrollment, device enrollment, and automated device enrollment (formerly DEP).
->
-> For more information on these enrollment types, see [iOS enrollment](ios-enroll.md).
+> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## AirPrint
 
-### All enrollment types
+### Settings apply to: All enrollment types
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. Get the IP address and path (in this article) provides more details.
 - **Path**: The path is typically `ipp/print` for printers on your network. Get the IP address and path (in this article) provides more details.
@@ -83,7 +76,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 These settings configure the app layout and folders on the dock and home screens of iOS devices. To use this feature, iOS devices must be in supervised mode and run iOS 9.3 or later.
 
-### Automated device enrollment (supervised)
+### Settings apply to: Automated device enrollment (supervised)
 
 ### Dock
 
@@ -172,7 +165,7 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
-### Automated device enrollment (supervised)
+### Settings apply to: Automated device enrollment (supervised)
 
 Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
 
@@ -200,7 +193,7 @@ Use these settings to show a custom message or text on the sign in window and lo
 This feature applies to:  
 - iOS 9.3 and later
 
-### Automated device enrollment (supervised)
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp` or `Serial Number: {{serialnumber}}`.
 
@@ -224,7 +217,7 @@ To use single sign-on, be sure you have:
 
 ![Single Sign On pane](./media/sso-blade.png)
 
-### Device enrollment, and Automated device enrollment (supervised)
+### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
 - **Username attribute from AAD**: Intune looks for this attribute for each user in Azure AD. Intune then populates the respective field (such as UPN) before generating the XML that gets installed on the device. Your options:
 
@@ -269,7 +262,7 @@ To use single sign-on, be sure you have:
 
 These settings control browser URL access on supervised iOS devices.
 
-### Automated device enrollment (supervised)
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 
@@ -277,7 +270,7 @@ These settings control browser URL access on supervised iOS devices.
 
     - **Permitted URLs**: **Add** the URLs you want to allow. These URLs bypass Apple's web filter.
 
-      > [!NOTE]
+        > [!NOTE]
         > The URLs you enter are the URLs you don't want evauluated by the Apple web filter. These URLs aren't a list of allowed web sites. To create a list of allowed websites, set the **Filter Type** to **Specific websites only**.
 
     - **Blocked URLs**: **Add** the URLs you want to stop from opening, regardless of the Apple web filter settings.
@@ -296,7 +289,7 @@ Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For exam
 
 You may experience unexpected behavior when a profile with no image is assigned to devices with an existing image. For example, you create a profile without an image. This profile is assigned to devices that already have an image. In this scenario, the image may change to the device default, or the original image may stay on the device. This behavior is controlled and limited by Apple's MDM platform.
 
-### Automated device enrollment (supervised)
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
   - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.

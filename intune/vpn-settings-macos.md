@@ -38,13 +38,7 @@ Depending on the settings you choose, not all values in the following list are c
 [Create a device configuration profile](vpn-settings-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - Device enrollment
-> - Device enrollment with user approval: Only in per-app mode
-> - Automated device enrollment
->
-> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Base VPN settings
 
