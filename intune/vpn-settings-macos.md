@@ -44,7 +44,7 @@ Depending on the settings you choose, not all values in the following list are c
 > - Device enrollment with user approval: Only in per-app mode
 > - Automated device enrollment
 >
-> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
+> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Base VPN settings
 
