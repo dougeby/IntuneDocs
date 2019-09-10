@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -45,18 +45,11 @@ These settings are added to a device configuration profile in Intune, and then a
 [Create a macOS device configuration profile](device-features-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - Device enrollment
-> - Device enrollment with user approval
-> - Automated device enrollment
-> - All enrollment types, which includes device enrollment, user-approved device enrollment, and automated device enrollment (formerly DEP).
->
-> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## AirPrint
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use host names to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
 - **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
@@ -84,7 +77,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login items
 
-### All enrollment types
+### Settings apply to: All enrollment types
 
 - **Files, folders, and custom apps**: **Add** the path of a file, folder, custom app, or system app you want to open when a user signs in to the device. System apps, or apps built or customized for your organization are typically in the `Applications` folder, with a path similar to `/Applications/AppName.app`. 
 
@@ -99,7 +92,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login window
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 #### Window Layout
 

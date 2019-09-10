@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -39,18 +39,11 @@ These settings are added to a device configuration profile in Intune, and then a
 [Create a device restrictions configuration profile](device-restrictions-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - Device enrollment
-> - Device enrollment with user approval
-> - Automated device enrollment
-> - All enrollment types, which includes device enrollment, user-approved device enrollment, and automated device enrollment (formerly DEP).
->
-> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+> These settings apply to different enrollment types. For more information on the different enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## General
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Definition Lookup**: **Block** prevents user from highlighting a word, and then looking up its definition on the device. **Not configured** (default) allows access to the definition lookup feature.
 - **Dictation**: **Block** stops the user from using voice input to enter text. **Not configured** (default) allows the user to use dictation input.
@@ -74,7 +67,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 - **Screenshots**: Device must be enrolled in Apple's Automated Device Enrollment (DEP). When set to **Block**, users can't save a screenshot of the display. It also prevents the Classroom app from observing remote screens. **Not configured** (default) allows users to capture screenshots, and allows the Classroom app to view remote screens.
 
-### Automated device enrollment
+### Settings apply to: Automated device enrollment
 
 - **Remote screen observation through Classroom app**: **Disable** prevents teachers from using the Classroom app to see their students' screens. **Not configured** (default) allows teachers to see their students' screens.
 
@@ -92,7 +85,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Password
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) doesn't require a password. It also doesn't force any restrictions, such as blocking simple passwords or setting a minimum length.
   - **Required password type**: Specify whether the password can be Numeric only, or whether it must be Alphanumeric (contain letters and numbers).
@@ -124,7 +117,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Built-in Apps
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Block Safari AutoFill**: **Block** disables the autofill feature in Safari on the device. **Not configured** (default) allows users to change autocomplete settings in the web browser.
 - **Block Camera**: Choose **Block** to prevent access to the camera on the device. **Not configured** (default) allows access to the device's camera.
@@ -137,7 +130,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Restricted apps
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Type of restricted apps list**: Create a list of apps that users aren't allowed to install or use. Your options:
 
@@ -155,14 +148,14 @@ To add apps to these lists, you can:
 
 ## Connected devices
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Block AirDrop**: **Block** prevents using AirDrop on the device. **Not configured** (default) allows using the AirDrop feature to exchange content with nearby devices.
 - **Block Apple Watch Auto Unlock**: **Block** prevents users from unlocking their macOS device with their Apple Watch. **Not configured** (default) allows users to unlock their macOS device with their Apple Watch.
 
 ## Cloud and storage
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Block iCloud Keychain sync**: Choose **Block** to disable syncing credentials stored in the Keychain to iCloud. **Not configured** (default) allows users to sync these credentials.
 - **Block iCloud Document Sync**: **Block** prevents iCloud from syncing documents and data. **Not configured** (default) allows document and key-value synchronization to your iCloud storage space.
@@ -180,7 +173,7 @@ To add apps to these lists, you can:
 
 ## Domains
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **Email Domain URL**: **Add** one or more URLs to the list. When users receive an email from a domain other than one you configured, the email is marked as untrusted in the macOS Mail app.
 
