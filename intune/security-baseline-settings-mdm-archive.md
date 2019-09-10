@@ -16,7 +16,7 @@ ms.assetid:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX 
 
 #audience:
 #ms.devlang:
@@ -38,7 +38,7 @@ When a new MDM security baseline releases, the previous list of settings move fr
 
 When a baseline version is no longer supported for use, it will then be removed from this article.
 
-- View the settings that are available in [the current MDM security baseline](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). These settings are also available in [MDM security baseline settings](security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
+- View the settings that are available in [the current MDM security baseline](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019). 
 - Learn about [security baselines](security-baselines.md), and how to upgrade the baseline version in your security baseline profiles.
 
 ## Preview: MDM Security Baseline for October 2018  
