@@ -67,17 +67,17 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   The Microsoft Intune Certificate Connector also supports Federal Information Processing Standard (FIPS) mode. FIPS isn't required, but you can issue and revoke certificates when it's enabled.
 
 - **PFX Certificate Connector for Microsoft Intune**:  
-  If you plan to use S/MIME email encryption, use the Intune portal to download the connector for *Imported PFX certificates*.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
+  If you plan to use S/MIME email encryption, use the Intune portal to download the *PFX Certificate Connector* that supports import of PFX certificates.  Go to **Device configuration** > **Certificate Connectors** > **Add**, and follow the *Steps to install connector for Imported PFX certificates*. Use the download link in the portal to start download of the installer **PfxCertificateConnectorBootstrapper.exe**. 
 
   Each Intune tenant supports a single instance of this connector. You can install this connector on the same server as an instance of the Microsoft Intune Certificate connector.
 
   This connector handles requests for PFX files imported to Intune for S/MIME email encryption for a specific user.  
 
   This connector can automatically update itself when new versions become available. To use the update capability, you must:
-  - Install the Imported PFX Certificate Connector for Microsoft Intune on your server.  
+  - Install the PFX Certificate Connector for Microsoft Intune on your server.  
   - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.   
 
-  For more information about all the network endpoints that the connector must be able to access, see [Microsoft Intune Certificate Connector](intune-endpoints.md#microsoft-intune-certificate-connector).
+  For more information about network endpoints that Intune and the connector must be able to access, see [Network endpoints for Microsoft Intune](intune-endpoints.md).
 
 - **Windows Server**:  
   You use a Windows Server to host:

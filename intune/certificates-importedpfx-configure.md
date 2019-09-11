@@ -116,7 +116,7 @@ The PowerShell module provides methods to create a key using Windows cryptograph
 
 #### To create the encryption key using Windows cryptography
 
-1. Copy the *Release* folder that's created by Visual Studio to the server where you installed the **Connector for Imported PFX certificates**. This folder contains the PowerShell module.  
+1. Copy the *Release* folder that's created by Visual Studio to the server where you installed the **PFX Certificate Connector for Microsoft Intune**. This folder contains the PowerShell module.  
 2. On the server, open *PowerShell* as an Administrator and then navigate to the *Release* folder that contains the PowerShell module.
 3. To import the module, run `Import-Module .\IntunePfxImport.psd1` to import the module.
 4. Next, run `Add-IntuneKspKey "Microsoft Software Key Storage Provider" "PFXEncryptionKey"`
