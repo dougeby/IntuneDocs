@@ -79,6 +79,7 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
 
   For more information about network endpoints that Intune and the connector must be able to access, see [Network endpoints for Microsoft Intune](intune-endpoints.md).
 
+
 - **Windows Server**:  
   You use a Windows Server to host:
 
