@@ -44,7 +44,7 @@ This article provides an overview of this feature from an Administrator-perspect
 
 ## Overview
 
-The following steps provide an overview of issuing SCEP certificates in Intune:
+The following steps provide an overview of using SCEP for certificates in Intune:
 
 1. In Intune, an administrator creates a SCEP certificate profile, and then targets the profile to users or devices.
 2. The device checks in to Intune.
@@ -108,9 +108,9 @@ Be sure you have the required permissions to register an Azure AD app. See [Requ
 ### Configure and deploy a SCEP certificate profile
 As the administrator, create a SCEP certificate profile to target to users or devices. Then, assign the profile.
 
-- [Create a SCEP certificate profile](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Create a SCEP certificate profile](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Assign the certificate profile](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Assign the certificate profile](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## Removing certificates
 

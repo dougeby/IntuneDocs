@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -28,7 +28,7 @@ ms.custom: intune-azure
 
 # Monitor device encryption with Intune   
 
-The Microsoft Intune encryption report is a centralized location to view details about the encryption status of your managed devices. View details about a device’s encryption status and find options to manage device recovery keys. The recovery key options that are available depend on the type of device you're viewing.  
+The Microsoft Intune encryption report is a centralized location to view details about a device’s encryption status and find options to manage device recovery keys. The recovery key options that are available depend on the type of device you're viewing.  
 
 To find the report, Sign in to the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device Configuration**, and then under *Monitor*, select **Encryption report**.  
 
@@ -51,7 +51,7 @@ The Encryption report pane displays a list of the devices you manage with high
 - **OS version** – The version of Windows or macOS on the device.  
 - **TPM version** *(Applies to Windows 10 only)* – The version of the Trusted Platform Module (TPM) chip on the Windows 10 device.  
 - **Encryption readiness** – An evaluation of the devices readiness to support an applicable encryption technology, like BitLocker or FileVault encryption. Devices are identified as:  
-  - **Ready**: The device can be encrypted by using MDM policy, which requires the device meets the following requirements:  
+  - **Ready**: The device can be encrypted by using MDM policy, which requires the device meet the following requirements:  
     
     **For macOS devices**:  
     - MacOS version 10.13 or later  
@@ -67,7 +67,7 @@ The Encryption report pane displays a list of the devices you manage with high
 
 - **Encryption status** – Whether the OS drive is encrypted.  
 
-- **User Principle Name** - The primary user of the device.  
+- **User Principal Name** - The primary user of the device.  
 
 ### Device encryption status  
 
@@ -77,9 +77,11 @@ When you select a device from the Encryption report, Intune displays the **Devic
 
 - **Encryption readiness** - An evaluation of the devices readiness to support encryption through the MDM policy.  
   
-  For example: When a Windows 10 device has a readiness of *Not ready*, it might still support encryption. To have the *Ready* designation, the Windows 10 device must have a TPM chip. TPM chips aren't required to support encryption. (See Encryption readiness in the preceding section for more details.)  
+  For example: When a Windows 10 device has a readiness of *Not ready*, it might still support encryption. To have the *Ready* designation, the Windows 10 device must have a TPM chip. TPM chips aren't required to support encryption. (For more information, see *Encryption readiness* in the preceding section.)  
 
-- **Encryption status** - Whether the OS drive is encrypted. It can take up to 24 hours for Intune to report on a device’s encryption status or a change to that status.  
+- **Encryption status** - Whether the OS drive is encrypted. It can take up to 24 hours for Intune to report on a device’s encryption status or a change to that status. This time includes time for the OS to encrypt, plus time for the device to report back to Intune.  
+
+  To speed up the reporting of FileVault encryption status before device check-in normally occurs, have users sync their devices after encryption completes.  
 
 - **Profiles** – A list of the *Device configuration* profiles that apply to this device and are configured with the following values:  
 
@@ -89,11 +91,13 @@ When you select a device from the Encryption report, Intune displays the **Devic
 
   - Windows 10:
     - Profile type = *Endpoint protection*  
-    - Settings > Windows Encryption > Encrypt devices = *Required*  
+    - Settings > Windows Encryption > Encrypt devices = *Require*  
 
   You can use the list of profiles to identify individual policies for review should the *Profile state summary* indicate problems.  
 
 - **Profile state summary** – A summary of the profiles that apply to this device. The summary represents the least favorable condition across the applicable profiles. For example, if only one out of several applicable profiles results in an error, the *Profile state summary* will display *Error*.  
+  
+  To view more details of a status, go to **Intune** > **Device configuration** > **Profiles**, and select the profile. Optionally, select **Device status** and then select a device.  
 
 - **Status details** – Advanced details about the device’s encryption state.  
 
@@ -171,7 +175,7 @@ When Intune first encrypts a macOS device with FileVault, a personal recovery ke
  
 For managed devices, Intune can escrow a copy of the personal recovery key. Escrow of keys enables Intune administrators to rotate keys to help protect devices, and users to recover a lost or rotated personal recovery key.  
  
-Intune supports multiple options to rotate and recover personal recovery keys. One reason to rotate a key is if the current personal key is lost thought to be at risk.  
+Intune supports multiple options to rotate and recover personal recovery keys. One reason to rotate a key is if the current personal key is lost or thought to be at risk.  
  
 > [!IMPORTANT]  
 >  Devices that are encrypted by users, and not by Intune, cannot be managed by Intune. This means that Intune can't escrow the personal recovery of these devices, nor manage the rotation of the recovery key.  Before Intune can manage FileVault and recovery keys for the device, the user must decrypt their device, and then let Intune encrypt the device.  
@@ -180,7 +184,7 @@ Intune supports multiple options to rotate and recover personal recovery keys. O
 
 - **Automatic rotation**: As an admin, you can configure the FileVault setting Personal recovery key rotation to automatically generate new recovery key’s periodically.  When a new key is generated for a device, the key isn’t displayed to the user. Instead, the user must get the key either from an admin, or by using the company portal app.  
 
-- **Manual rotation**: As an admin, you can view information for a device that you manage with Intune and that’s is encrypted with FileVault. You can then choose to manually rotate that the recovery key for corporate devices. You can’t rotate recovery keys for personal devices.  
+- **Manual rotation**: As an admin, you can view information for a device that you manage with Intune and that’s encrypted with FileVault. You can then choose to manually rotate the recovery key for corporate devices. You can’t rotate recovery keys for personal devices.  
 
   To rotate a recovery key: 
   1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973), go to **Devices** and then under Manage, select **All devices**.  
@@ -200,8 +204,7 @@ Intune supports multiple options to rotate and recover personal recovery keys. O
   1. Sign in to the *Intune Company Portal* website from any device.  
   2. In the portal, go to **Devices** and select the  macOS device that is encrypted with FileVault.  
   3. Select **Get recovery key**. The current recovery key is displayed.  
-  
-     On an iPhone, you must select the *three* dots before the *Get recovery key* option appears.  
+ 
 
 ## BitLocker recovery keys  
 

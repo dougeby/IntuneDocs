@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -119,7 +119,7 @@ You can synchronize the data held by Apple with Intune at any time by choosing *
 
 
 >[!NOTE]
->The list of apps displayed is associated with a token. If you have an app that is associated with multiple VPP tokens, you see the same app being displayed multiple times; once for each token.
+>The Available deployment intent is not supported for device groups, only user groups are supported. The list of apps displayed is associated with a token. If you have an app that is associated with multiple VPP tokens, you see the same app being displayed multiple times; once for each token.
 
 ## End-User Prompts for VPP
 

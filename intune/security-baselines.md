@@ -7,7 +7,7 @@ keywords:
 author: brenduns 
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -69,11 +69,17 @@ You can choose to [change of the version](#change-the-baseline-version-for-a-pro
 
 ## Available security baselines 
 
+ You can use one or more of the available baselines in your Intune environment at the same time. You can also use multiple instances of the same security baselines that have different customizations. 
+
+When you use multiple security baselines, review the settings in each one to identify when different baselines introduce conflicting values for the same setting. Because you can deploy security baselines that are designed for different intents, and deploy multiple instances of the same baseline that includes customized settings, you might create configuration [conflicts for devices that must be investigated and resolved](security-baselines-monitor.md#troubleshoot-using-per-setting-status).  Also be aware of your [device configuration profiles](device-profiles.md), which can configure many of the same settings as security baselines. 
+
+
+
 The following security baseline instances are available for use with Intune. Use the links to view the settings for the most recent instance of each baseline. 
 
 - **MDM Security Baseline**
-  - [MDM Security Baseline for May 2019](security-baseline-settings-mdm.md)
-  - [Preview: MDM Security Baseline for October 2018](security-baseline-settings-mdm-archive.md)
+  - [MDM Security Baseline for May 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Preview: MDM Security Baseline for October 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP baseline**  
   *(To use this baseline your environment must meet the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites))*.
@@ -213,7 +219,7 @@ Strictly speaking, no. The Microsoft security team consults organizations, such 
 
 ## Next steps
 - View the settings in the latest versions of the available baselines:  
-  - [MDM security baseline](security-baseline-settings-mdm.md)  
+  - [MDM security baseline](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP baseline](security-baseline-settings-defender-atp.md)  
 
 - Check the status and monitor the [baseline and profile](security-baselines-monitor.md)

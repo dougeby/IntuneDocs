@@ -104,14 +104,14 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     - **Personal recovery key rotation** - Specify how frequently the personal recovery key for a device will rotate. You can select the default of **Not configured**, or a value of **1** to **12** months.  
 
   - **Disable prompt at sign out**  
-    Prevent the prompt to the user that requests they enable FileVault when they sign out.  When set to Enable, the prompt at sign-out is disabled and instead, the user is prompted when they sign in.  
+    Prevent the prompt to the user that requests they enable FileVault when they sign out.  When set to Disable, the prompt at sign-out is disabled and instead, the user is prompted when they sign in.  
     - **Not configured**  
-    - **Enable** - Disable the prompt at sign-out.
+    - **Disable** - Disable the prompt at sign-out.
 
     **Default**: Not configured  
 
      > [!IMPORTANT]  
-     > There is a known issue when the setting **Disable prompt at sign out** is set to *Enable*. When set to *Enable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports its a **Profile State Summary** as **Error** without further details.
+     > There is a known issue when the setting **Disable prompt at sign out** is set to *Disable*. When set to *Disable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports its a **Profile State Summary** as **Error** without further details.
      > 
      > When **Disable prompt at sign out** is set to *Not configured*, **Number of times allowed to bypass** can be *Not configured* or have a value.  
      > 
@@ -126,4 +126,5 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
  
     **Default**: Not configured  
 
+For more information about FileVault with Intune, see [FileVault recovery keys](encryption-monitor.md#filevault-recovery-keys).
 

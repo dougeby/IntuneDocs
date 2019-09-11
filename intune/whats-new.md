@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,37 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of September 9, 2019
+
+### App management
+
+#### Updates to Microsoft Intune app <!-- 4997846 -->
+The Microsoft Intune app for Android has been updated with the following improvements:
+- Updated and improved the layout to include bottom navigation for the most important actions.
+- Added an additional page that shows the user's profile.
+- Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
+- Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+
+## Week of September 2, 2019
+
+### Monitor and troubleshoot
+
+#### Intune user interface update – Tenant Status dashboard  <!-- 5273210  -->
+The user interface for the Tenant Status dashboard has been updated to align with Azure user interface styles. For more information, see  [Tenant status](tenant-status.md).
+
+
+## Week of August 26, 2019
+
+### Configure Microsoft Edge settings using administrative templates for Windows 10 and newer <!-- 5228061 -->
+
+On Windows 10 and newer devices, you can create administrative templates to configure group policy settings in Intune. In this update, you can configure settings that apply to Microsoft Edge version 77 and newer.
+
+To learn more about administrative templates, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
+
+Applies to:
+
+- Windows 10 and newer (Windows RS4+)
 
 ## Week of August 12, 2019
 
@@ -176,7 +207,7 @@ In Intune, you can create policies to use Windows Defender Antivirus to scan you
 
 In this update, this behavior is fixed. So, the **Time to perform a daily quick scan** and **Type of system scan to perform** settings shows a success status when the scans complete successfully, and show a failed status when the settings fail to apply. 
 
-For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### Device enrollment
 
@@ -1024,8 +1055,8 @@ Any new or existing password policy changes by the administrator prompts end use
 Applies to:  
 macOS
 
-#### Assign SCEP certificates to a userless macOS device  <!-- 2340521  -->
-You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-scep-configure.md#create-a-scep-certificate-profile) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
+#### Assign SCEP certificates to a userless macOS device    <!-- 2340521    -->
+You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-profile-scep.md) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
 
 Applies to: 
 - macOS
