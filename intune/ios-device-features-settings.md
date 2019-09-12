@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/11/2019
+ms.date: 09/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Intune includes some built-in settings to allow iOS users to use different Apple
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
-This article lists these settings, and describes what each setting does.
+This article lists these settings, and describes what each setting does. For more information on these features, go to [Add iOS or macOS device feature settings](device-features-configure.md).
 
 ## Before you begin
 
@@ -282,7 +282,7 @@ This feature applies to:
 
 - **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
 
-  - **Not configured**: **??**
+  - **Not configured**: App extensions aren't used.
   - **Credential**: Use a generic, customizable credential app extension to perform SSO. Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.
   - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on iOS 13.0 and newer and iPadOS. This option is a Kerberos-specific version of the **Credential** app extension.
 
@@ -296,10 +296,10 @@ This feature applies to:
 
 - **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
 
-- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO, such as `contoso.com`. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
 
   - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
-  - These domains aren't case sensitive.
+  - These domains aren't case-sensitive.
 
 - **Additional Configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
   - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
@@ -313,9 +313,12 @@ This feature applies to:
 
 - **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.
 - **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
-- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. Enable this setting if you're configuring multiple Kerberos app extensions in your organization. **Not configured** (default) 
+- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
 
-  **WHAT DOES NOT CONFIGURED DO??**
+  > [!TIP]
+  > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
+  > - **Enable** this setting if you're using multiple realms. It set the **Realm** value you entered as the default realm.
+  > - If you only have on realm, leave it **Not configured** (default).
 
 - **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
 - **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.

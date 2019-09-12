@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/11/2019
+ms.date: 09/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -39,31 +39,9 @@ Intune includes many features and settings that help administrators control iOS 
 - Give users a secure single sign-on experience to share credentials between apps
 - Filter web sites that use adult language and allow or block specific web sites
 
-These features are available in Intune, and are configurable by the administrator. Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you can then push or deploy the profile to iOS and macOS devices in your organization.
+Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, you then push or deploy the profile to iOS and macOS devices in your organization.
 
-This article shows you how to create a device configuration profile. You can also see all the available settings for [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) devices.
-
-## Create a device profile
-
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
-2. Select **Device configuration** > **Profiles** > **Create profile**.
-3. Enter the following properties:
-
-    - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **macOS: Configures login screen**.
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
-    - **Platform**: Choose the platform of your devices. Your options:  
-        - **iOS/iPadOS**
-        - **macOS**
-    - **Profile type**: Select **Device features**.
-
-4. Depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
-
-    - [iOS/iPadOS](ios-device-features-settings.md)
-    - [macOS](macos-device-features-settings.md)
-
-5. When you're done, select **OK** > **Create** to save your changes.
-
-The profile is created and shown in the profiles list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+This article describes the different features you can configure, and shows you how to create a device configuration profile. You can also see all the available settings for [iOS](ios-device-features-settings.md) and [macOS](macos-device-features-settings.md) devices.
 
 ## Airprint
 
@@ -81,7 +59,7 @@ Applies to:
 
 ## App Notifications
 
-Choose how apps on your iOS and iPad devices receive notifications. For example, from Intune, you can send app notifications so they show in the notification center, on the lock screen, or play a sound.
+Choose how apps on your iOS and iPad devices receive notifications. For example, from Intune, send app notifications so they show in the notification center, on the lock screen, or play a sound.
 
 For a list of the settings you can configure in Intune, see [App notifications on iOS](ios-device-features-settings.md#app-notifications-settings).
 
@@ -97,9 +75,7 @@ Applies to:
 Associated domains allow you to create a relationship between your domain, such as `contoso.com`, and your apps. This feature allows you to:
 
 - Share data and sign in credentials between apps and websites in your organization.
-- Use app features that are based on your website, such as **NEED EXAMPLE??**.
-
-Use this feature with single sign-on app extension, universal links, and password autofill.
+- Use app features that are based on your website, such as a password. Use this feature with single sign-on app extension, universal links, and password autofill. For example, create an associated domain to allow password autofill to recommend credentials, such as a password, for websites associated with your app.
 
 For a list of the settings you can configure in Intune, see [Associated domains on macOS](ios-device-features-settings.md#associated-domains).
 
@@ -214,7 +190,7 @@ Applies to:
 
 ## Web Content Filter
 
-These settings can use Apple’s built in AutoFilter algorithm to evaluate web pages, and block adult content and adult language. You can also create a list of allowed web links and restricted web links. For example, you can allow only `contoso` web sites to open.
+These settings can use Apple’s built-in AutoFilter algorithm to evaluate web pages, and block adult content and adult language. You can also create a list of allowed web links and restricted web links. For example, you can allow only `contoso` web sites to open.
 
 For a list of the settings you can configure in Intune, see [Web content filter on iOS](ios-device-features-settings.md#web-content-filter-settings).
 
@@ -222,6 +198,28 @@ Applies to:
 
 - iOS
 - iPadOS
+
+## Create a device profile
+
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
+2. Select **Device configuration** > **Profiles** > **Create profile**.
+3. Enter the following properties:
+
+    - **Name**: Enter a descriptive name for the policy. Name your policies so you can easily identify them later. For example, a good policy name is **macOS: Configures login screen**.
+    - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+    - **Platform**: Choose the platform of your devices. Your options:  
+        - **iOS/iPadOS**
+        - **macOS**
+    - **Profile type**: Select **Device features**.
+
+4. Depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
+
+    - [iOS/iPadOS](ios-device-features-settings.md)
+    - [macOS](macos-device-features-settings.md)
+
+5. When you're done, select **OK** > **Create** to save your changes.
+
+The profile is created and shown in the profiles list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 ## Next steps
 
