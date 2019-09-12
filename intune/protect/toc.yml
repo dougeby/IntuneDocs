@@ -185,7 +185,7 @@
     - name: Security baselines
       items: 
       - name: Windows 10 MDM baseline settings
-       href: security-baseline-settings-mdm-all.md
+        href: security-baseline-settings-mdm-all.md
       - name: Microsoft Defender ATP baseline settings 
         href: security-baseline-settings-defender-atp.md
     - name: Windows update settings
