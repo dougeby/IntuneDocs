@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 09/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -34,7 +34,7 @@ Intune includes some built-in settings to allow iOS users to use different Apple
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
-This article lists these settings, and describes what each setting does.
+This article lists these settings, and describes what each setting does. For more information on these features, go to [Add iOS or macOS device feature settings](device-features-configure.md).
 
 ## Before you begin
 
@@ -74,7 +74,9 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Home screen layout settings
 
-These settings configure the app layout and folders on the dock and home screens of iOS devices. To use this feature, iOS devices must be in supervised mode and run iOS 9.3 or later.
+This feature applies to:
+
+- iOS 9.3 or newer
 
 ### Settings apply to: Automated device enrollment (supervised)
 
@@ -167,8 +169,6 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ### Settings apply to: Automated device enrollment (supervised)
 
-Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
-
 - **Add**: Add notifications for apps:
 
     ![Add app notification in iOS profile in Intune](./media/ios-macos-app-notifications.png)
@@ -188,9 +188,8 @@ Choose how installed apps on iOS devices send notifications. These settings supp
 
 ## Lock screen message settings
 
-Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information.
+This feature applies to:
 
-This feature applies to:  
 - iOS 9.3 and later
 
 ### Settings apply to: Automated device enrollment (supervised)
@@ -207,15 +206,6 @@ This feature applies to:
   > Variables aren't validated in the UI, and are case sensitive. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{DeviceID}}` instead of `{{deviceid}}`, then the literal string is shown instead of the device’s unique ID. Be sure to enter the correct information.
 
 ## Single sign-on settings
-
-Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
-
-To use single sign-on, be sure you have:
-
-- An app that's coded to look for the user credential store in single sign-on on the device.
-- Intune configured for iOS device single sign-on.
-
-![Single Sign On pane](./media/sso-blade.png)
 
 ### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
@@ -260,8 +250,6 @@ To use single sign-on, be sure you have:
 
 ## Web content filter settings
 
-These settings control browser URL access on supervised iOS devices.
-
 ### Settings apply to: Automated device enrollment (supervised)
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
@@ -283,9 +271,62 @@ These settings control browser URL access on supervised iOS devices.
 
     If you don't enter any URLs, then end users can't access any websites except for `microsoft.com`, `microsoft.net`, and `apple.com`. These URLs are automatically allowed by Intune.
 
-## Wallpaper settings
+## Single sign-on app extension
 
-Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use a company logo on the lock screen.
+This feature applies to:
+
+- iOS 13.0 and later
+- iPadOS
+
+### Settings apply to: All enrollment types
+
+- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+
+  - **Not configured**: App extensions aren't used.
+  - **Credential**: Use a generic, customizable credential app extension to perform SSO. Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.
+  - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on iOS 13.0 and newer and iPadOS. This option is a Kerberos-specific version of the **Credential** app extension.
+
+  > [!TIP]
+  > With the **Credential** type, you add your own configuration values to pass through the extension. Instead, consider using built-in configuration settings provided by Apple in the the **Kerberos** type.
+
+- **Extension ID** (Credential only): Enter the bundle identifier that identifies your SSO app extension, such as `com.apple.extensiblesso`.
+- **Team ID** (Credential only): Enter the team identifier of your SSO app extension. A team identifier is a 10-character alphanumerical (numbers and letters) string generated by Apple, such as `ABCDE12345`.
+
+  [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
+
+- **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+
+- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+
+  - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
+  - These domains aren't case-sensitive.
+
+- **Additional Configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
+  - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
+  - **Value type**: Enter the type of data. Your options:
+
+    - String
+    - Boolean: In **Configuration value**, enter `True` or `False`.
+    - Integer: In **Configuration value**, enter a number.
+
+  - **Add**: Select to add your configuration keys.
+
+- **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.
+- **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
+- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
+
+  > [!TIP]
+  > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
+  > - **Enable** this setting if you're using multiple realms. It set the **Realm** value you entered as the default realm.
+  > - If you only have on realm, leave it **Not configured** (default).
+
+- **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
+- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
+- **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.
+- **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
+- **Domain realm mapping** (Kerberos only): **Add** the domain DNS suffixes that should map to your realm. Use this setting when the DNS names of the hosts don’t match the realm name. You most likely don't need to create this custom domain-to-realm mapping.
+
+## Wallpaper settings
 
 You may experience unexpected behavior when a profile with no image is assigned to devices with an existing image. For example, you create a profile without an image. This profile is assigned to devices that already have an image. In this scenario, the image may change to the device default, or the original image may stay on the device. This behavior is controlled and limited by Apple's MDM platform.
 
