@@ -152,9 +152,11 @@
   - name: Certificates
     href: certificates-configure.md
     items:
-    - name: SCEP
+    - name: SCEP infrastructure
       href: certificates-scep-configure.md
       displayName: ksp        
+    - name: SCEP certificate profiles
+      href: certificates-profile-scep.md
     - name: PKCS
       href: certficates-pfx-configure.md
       displayName: ksp
@@ -182,8 +184,8 @@
     items:
     - name: Security baselines
       items: 
-      - name: Windows 10 baseline settings
-        href: security-baseline-settings-mdm.md
+      - name: Windows 10 MDM baseline settings
+       href: security-baseline-settings-mdm-all.md
       - name: Microsoft Defender ATP baseline settings 
         href: security-baseline-settings-defender-atp.md
     - name: Windows update settings
