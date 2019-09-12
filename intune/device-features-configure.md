@@ -75,9 +75,11 @@ Applies to:
 Associated domains allow you to create a relationship between your domain, such as `contoso.com`, and your apps. This feature allows you to:
 
 - Share data and sign in credentials between apps and websites in your organization.
-- Use app features that are based on your website, such as a password. Use this feature with single sign-on app extension, universal links, and password autofill. For example, create an associated domain to allow password autofill to recommend credentials, such as a password, for websites associated with your app.
+- Use app features that are based on your website, such as a password. Use this feature with single sign-on app extension, universal links, and password autofill.
 
-For a list of the settings you can configure in Intune, see [Associated domains on macOS](ios-device-features-settings.md#associated-domains).
+  For example, create an associated domain to allow password autofill to recommend credentials, such as a password, for websites associated with your app.
+
+For a list of the settings you can configure in Intune, see [Associated domains on macOS](macos-device-features-settings.md#associated-domains).
 
 For more information on this feature, see [Setting Up an App’s Associated Domains](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) on Apple's web site.
 
@@ -103,7 +105,7 @@ Applies to:
 
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message, and show asset tag information.
 
-For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](macos-device-features-settings.md#lock-screen-message-settings).
+For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](ios-device-features-settings.md#lock-screen-message-settings).
 
 For more information on Lock Screen Message, see [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) on Apple's web site.
 
@@ -134,7 +136,7 @@ Applies to:
 
 ## Single Sign On
 
-Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
+Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
 
 To use single sign-on, be sure you have:
 
@@ -152,7 +154,7 @@ Applies to:
 
 ## Single sign-on app extension
 
-These settings configure an app extension that enables single sign-on (SSO) for your iOS, iPadOS, and macOS devices. Most Line of Business (LOB) apps and organization websites require some level of secure user authentication. In many cases, authentication requires users to enter the same credentials repeatedly, which can be frustrating. SSO gives users access to apps and websites after entering their credentials once. After they sign-in, users can access apps and websites automatically, or use Face ID, Touch ID, or Apple passcode.
+These settings configure an app extension that enables single sign-on (SSO) for your iOS, iPadOS, and macOS devices. Most Line of Business (LOB) apps and organization websites require some level of secure user authentication. In many cases, authentication requires users to enter the same credentials repeatedly. SSO gives users access to apps and websites after entering their credentials once. After they sign-in, users can access apps and websites automatically, or use Face ID, Touch ID, or Apple passcode.
 
 In Intune, use these settings to configure Apple’s built-in Kerberos extension, or configure an SSO app extension created by your organization. The SSO app extension handles authentication for your users. These settings configure credential-type SSO app extensions, which are ideal for challenge-and-response authentication flows. You can choose between a Kerberos-specific credential extension provided by Apple, or use a generic credential extension.
 
