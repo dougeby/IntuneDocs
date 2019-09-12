@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 09/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -103,26 +103,26 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
 
 ### Password
 
-- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device.
+- **Require a password to unlock mobile devices**: **Require** users to enter a password before they can access their device. When **Not configured**, Intune doesn't evaluate the device for password settings for compliance.
 - **Simple passwords**: Set to **Block** so users can't create simple passwords, such as **1234** or **1111**. Set to **Not configured** to let users create passwords like **1234** or **1111**.
-- **Password type**: Choose if a password or PIN should have only **Numeric** characters, or **Alphanumeric** (a mix of numbers and other characters).
+- **Password type**: Choose the type of password or PIN required. Your options:
 
-  - **Number of non-alphanumeric characters in password**: If **Required password type** is set to **Alphanumeric**, this setting specifies the minimum number of character sets that the password or PIN must contain. Your options:
-  
-    - 0 (Not recommended, as it may remove any password or PIN requirements)
-    - 1 (Complex password, or numeric PIN)
-    - 2 (Complex password, or PIN with digits and lowercase letters)
-    - 3 (Complex password, or alphanumeric PIN)
-    - 4 (Complex password, or complex PIN)
-  
-    [DeviceLock/AlphanumericDevicePasswordRequired](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)  
-    [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)  
+  - **Device default**: Require a password, numeric PIN, or alphanumeric PIN
+  - **Numeric**: Require a password or numeric PIN
+  - **Alphanumeric**: Require a password, or alphanumeric PIN. Also choose the **Password complexity**: 
+    
+    - **Require digits and lowercase letters**
+    - **Require digits, lowercase letters, and uppercase letters**
+    - **Require digits, lowercase letters, uppercase letters, and special characters**
 
-    Setting a higher number requires the user to create a password that is more complex.
+  We recommend you use **Alphanumeric** and **Require digits and lowercase letters**.
+
+  [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)  
+  [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
-- **Password expiration (days)**: Select the number of days before the password expires, and they must create a new one.
+- **Password expiration (days)**: Enter the number of days before the password expires, and they must create a new one, from 1-730.
 - **Number of previous passwords to prevent reuse**: Enter the number of previously used passwords that can't be used.
 - **Require password when device returns from idle state (Mobile and Holographic)**: Force users to enter the password every time the device returns from an idle state.
 
