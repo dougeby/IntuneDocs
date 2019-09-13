@@ -16,7 +16,7 @@
     - name: Features in development
       href: in-development.md
   - name: Using the Microsoft Intune docs
-    href: using-docs.md    
+    href: use-docs.md    
 - name: Quickstarts
   items:
   - name: Try Intune for free
