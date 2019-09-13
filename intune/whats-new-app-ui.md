@@ -47,10 +47,10 @@ The Microsoft Intune app for Android has been updated with the following improve
 - Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
 - Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
 
-User's profile UI example:<br>
+    User profile example:<br>
     <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
 
-Device notification example:<br>
+    Notifications and bottom navigation example:<br>
     <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notfication" width="300">   
 
 
