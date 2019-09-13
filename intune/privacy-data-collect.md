@@ -39,7 +39,7 @@ When users enroll their corporate or personal devices using Intune, Intune colle
 From these sources, Intune collects information that falls into the following three categories: [identified](#identified-data), [pseudonymized](#pseudonymized-data), and [aggregated](#aggregated-data).
 
 > [!NOTE]
-> Consistent with Microsoft and Apple policy, we do not sell any data collected by our service to any third parties for any reason.
+> We do not sell any data collected by our service to any third parties for any reason.
 
 ## Identified data
 
