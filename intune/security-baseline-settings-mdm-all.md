@@ -134,8 +134,6 @@ For more information, see [Policy CSP - Autoplay](https://docs.microsoft.com/win
 For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
 ) in the Windows documentation.  
 
-
-
 - **Bit locker removable drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
   [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140) 
@@ -156,17 +154,16 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   - **Require encryption for write access**  
     **Default**: Yes  
-::: zone-end
-::: zone pivot="mdm-preview"
-    - **Encryption method**  
-      **Default**: AES 256bit CBC  
+
+  - **Encryption method**  
+    **Default**: AES 256bit CBC  
 
 - **Bit locker fixed drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
  
-   For Bit locker fixed drive policy, configure the following settings: 
-   - **Encryption method**
-     **Default**: AES 256bit XTS  
+  For Bit locker fixed drive policy, configure the following settings: 
+  - **Encryption method**
+    **Default**: AES 256bit XTS  
 
 - **Bit locker system drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
