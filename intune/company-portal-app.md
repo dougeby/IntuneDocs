@@ -123,6 +123,15 @@ The following image shows an example iPhone branding image:
 
 ![Screenshot of example iPad branding image](media/company-portal-app/company-portal-app-02.png)
 
+## Privacy statement customization
+
+You can customize the privacy statement that appears for your organization on managed iOS devices. This message lists the items that your organization can't see or do on managed iOS devices.
+
+Under **Company Portal customization** > **Device management and privacy message**, you can:
+
+- Accept the **Default** to use the list as shown, or
+- Choose **Custom** to customize the the list of items that your organization can’t see or do on managed iOS devices. You can use [markdown](https://daringfireball.net/projects/markdown/) to add bullets, bolding, italics, and links.
+
 ## Windows Company Portal keyboard shortcuts
 
 End users can trigger navigation, app, and device actions in the Windows Company Portal using keyboard shortcuts (accelerators).
