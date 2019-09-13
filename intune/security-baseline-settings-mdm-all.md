@@ -1489,7 +1489,9 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## Remote Assistance
+## Remote Assistance   
+For more information, see [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) in the Windows documentation.  
+
 - **Remote Assistance solicited**  
   This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer. 
   - *If you enable this policy setting*, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings. 
@@ -1824,7 +1826,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 ## Windows Defender Firewall  
-For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
+For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
 
 - **Firewall profile domain**  
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for networks that are connected to domains.  
