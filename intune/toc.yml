@@ -744,7 +744,7 @@
         href: troubleshoot-certificate-connector-events.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
-    - name: Using the Microsoft Intune docs
+    - name: Using the Intune docs
       href: use-docs.md 
     - name: Get support
       href: get-support.md  
